@@ -1,0 +1,114 @@
+* xref:decidim:ROOT:index.adoc[Welcome!]
+
+* Why Decidim
+// * ALT: Assess Decidim, Evaluate Decidim
+** xref:decidim:ROOT:vision.adoc[Vision]
+// Intro to Admin Manual, but updated with links to governance and Social Contract.
+** xref:decidim:ROOT:whats-new.adoc[What's new]
+// Summary of the last releases.
+// Emphasize that now can be used by private organizations.
+** xref:features:ROOT:index.adoc[Functions and features]
++
+--
+include::features:ROOT:partial$nav.adoc[]
+--
+** xref:decidim:ROOT:experiences.adoc[Inspiring experiences]
+// ** ALT: Real experiences
+// Testimonials
+** xref:decidim:ROOT:similar.adoc[Comparison to similar platforms]
+
+* Decidim in detail
+** xref:decidim:ROOT:license.adoc[License]
+** xref:whitepaper:ROOT:index.adoc[Whitepaper]
++
+--
+include::whitepaper:ROOT:partial$nav.adoc[]
+--
+** xref:decidim:ROOT:governance.adoc[Project governance]
+** xref:social-contract:ROOT:index.adoc[Social contract]
+** xref:decidim:ROOT:history.adoc[History of the project]
+** xref:decidim:ROOT:research.adoc[Research]
+// Links to LAB videos and pages in Meta. Also ongoing research as groups in UB.
+** xref:decidim:ROOT:publications.adoc[Publications]
+
+* Try Decidim
+** xref:decidim:ROOT:visit.adoc[Visit some public instances]
+// Maybe ref to https://demo.decidim.org
+** link:https://decidim.org/demo/[Online Demo (try admin capabilities),window=_blank]
+// Sandbox (Democratize Westeros!) vs. Fresh online demo
+
+* Get Decidim
+** xref:decidim:ROOT:get.adoc[Installation and service options]
+// ALT: Instance Dashboard quick start
+// ALT: Initial configuration with the _Instance Dashboard_
+// Managed service, consultancy
+** xref:config-tutorial:ROOT:index.adoc[Configuration Quick Start]
++
+--
+include::config-tutorial:ROOT:partial$nav.adoc[]
+--
+** xref:decidim:ROOT:personalize[Personalize your Decidim site]
+// CSS, etc.
+
+* Manage a Decidim site
+// For participation technicians, participation promoters, participation dynamizers, participations boosters
+** xref:admin-manual:ROOT:index.adoc[Administration manual]
++
+--
+* How to access to the _Instance Dashboard_
+
+include::admin-manual:ROOT:partial$nav.adoc[]
+--
+** xref:decidim:ROOT:authentication-and-permissions.adoc[Authentication and permissions]
+** xref:decidim:ROOT:enhance-democracy.adoc[Resources to enhance democracy in your community or organization (all languages)]
+// ** ALT: Design participation spaces and processes
+// Put link to "Inspiring experiences"
+*** xref:decidim:ROOT:public-organization-guidelines.adoc[Guidelines for cities and public organizations]
+*** xref:decidim:ROOT:private-organization-guidelines.adoc[Guidelines for private organizations and communities]
+
+// For sysadmins
+* Sysadmin tasks
+// * ALT: Install & operate Decidim (sysadmin tasks)
+** xref:decidim:sysadmin:install.adoc[Install Decidim]
+// Links to Configuration Quick Start and "Personalize ..."
+*** xref:decidim:sysadmin:deploy-check-list.adoc[Deployment check-list]
+** xref:decidim:sysadmin:system-dashboard.adoc[System Dashboard (multi-tenant installation)]
+// ** ALT: System Dashboard overview
+** Integrate Decidim with other tools
+*** xref:decidim:integrate:matomo.adoc[Matomo]
+*** xref:decidim:integrate:civicrm.adoc[CiviCRM]
+*** xref:decidim:integrate:nvotes.adoc[NVotes]
+*** xref:decidim:integrate:authentication.adoc[Authentication methods]
+** xref:decidim:sysadmin:upgrade.adoc[Upgrade Decidim]
+** xref:decidim:sysadmin:backup.adoc[Backup and restore]
+** xref:decidim:sysadmin:troubleshoot.adoc[Troubleshoot Decidim]
+
+* Contribute to Decidim
+// ** ALT: Quality and evolution of Decidim
+** xref:decidim:ROOT:bug-or-request.adoc[Report a bug or a feature request]
+** xref:decidim:ROOT:document.adoc[Document]
+// i18n, l10n, localization
+** xref:decidim:ROOT:translate.adoc[Translate and localize]
+// Includes link to a Roadmap, probably in GitHub
+** xref:decidim:ROOT:strengthen-the-community.adoc[Strengthen the Decidim community]
+// E.g., guidelines for organizing events, like Decidim Day
+** xref:decidim:develop:index.adoc[Develop (RoR)]
+
+* xref:press:ROOT:index.adoc[_Press_]
+// ** Executive dossier
+// ** Press articles
+// Interviews, opinion pieces, dissemination. Some of these can also be in "Publications"
+// ** Blog
+// ** Press releases
+// ** Press kit
+
+* xref:decidim:ROOT:graphic-resources.adoc[_Graphic Resources_]
+// - Logos
+// - Templates for posters and banners
+// - Graphic identity manual for the Decidim Project
+
+* xref:decidim:ROOT:faq.adoc[_FAQ_]
+
+* xref:decidim:glossary:index.adoc[_Glossary_]
+
+* xref:decidim:releases:index.adoc[_Release Notes_]
