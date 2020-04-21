@@ -28,7 +28,6 @@ include::whitepaper:ROOT:partial$nav.adoc[]
 ** xref:social-contract:ROOT:index.adoc[Social contract]
 ** xref:decidim:ROOT:history.adoc[History of the project]
 ** xref:decidim:ROOT:research.adoc[Research]
-// Links to LAB videos and pages in Meta. Also ongoing research as groups in UB.
 ** xref:decidim:ROOT:publications.adoc[Publications]
 
 * Try Decidim
@@ -94,6 +93,16 @@ include::admin-manual:ROOT:partial$nav.adoc[]
 // E.g., guidelines for organizing events, like Decidim Day
 ** xref:decidim:develop:index.adoc[Develop (RoR)]
 
+* Decidim Research
+// Links to LAB videos and pages in Meta. Also ongoing research as groups in UB.
+** Projects
+** Publications
+*** Academic publications
+*** Reports
+** Interviews
+// And other things
+** Decidim LAB
+
 * xref:press:ROOT:index.adoc[_Press_]
 // ** Executive dossier
 // ** Press articles
@@ -101,6 +110,11 @@ include::admin-manual:ROOT:partial$nav.adoc[]
 // ** Blog
 // ** Press releases
 // ** Press kit
+//
+// Announcements
+
+* Learning resources
+// * Educational resources
 
 * xref:decidim:ROOT:graphic-resources.adoc[_Graphic Resources_]
 // - Logos
@@ -112,3 +126,4 @@ include::admin-manual:ROOT:partial$nav.adoc[]
 * xref:decidim:glossary:index.adoc[_Glossary_]
 
 * xref:decidim:releases:index.adoc[_Release Notes_]
+
