@@ -1,5 +1,8 @@
 name: decidim
 title: "Decidim Documentation"
 version: master
+asciidoc:
+  attributes:
+    page-lang: en@
 nav:
-- modules/ROOT/nav-global.adoc
+- modules/ROOT/nav.adoc
