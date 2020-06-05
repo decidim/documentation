@@ -2,11 +2,8 @@
 
 * Why Decidim
 // * ALT: Assess Decidim, Evaluate Decidim
-** xref:decidim:ROOT:vision.adoc[Vision]
-// Intro to Admin Manual, but updated with links to governance and Social Contract.
-** xref:decidim:ROOT:whats-new.adoc[What's new]
-// Summary of the last releases.
-// Emphasize that now can be used by private organizations.
+** xref:decidim:ROOT:vision.adoc[]
+** xref:decidim:ROOT:whats-new.adoc[]
 ** xref:features:ROOT:index.adoc[Functions and features]
 +
 --
@@ -28,7 +25,7 @@ include::whitepaper:ROOT:partial$nav.adoc[]
 ** xref:social-contract:ROOT:index.adoc[Social contract]
 ** xref:decidim:ROOT:history.adoc[History of the project]
 ** xref:decidim:ROOT:research.adoc[Research]
-** xref:decidim:ROOT:publications.adoc[Publications]
+** xref:publications:ROOT:index.adoc[]
 
 * Try Decidim
 ** xref:decidim:ROOT:visit.adoc[Visit some public instances]
@@ -97,9 +94,9 @@ include::admin-manual:ROOT:partial$nav.adoc[]
 // Links to LAB videos and pages in Meta. Also ongoing research as groups in UB.
 ** Projects
 ** Publications
-*** Academic publications
-*** Reports
-** Interviews
+*** xref:publications:ROOT:academic.adoc[]
+*** xref:publications:ROOT:technical.adoc[]
+** xref:publications:ROOT:interviews.adoc[]
 // And other things
 ** Decidim LAB
 
