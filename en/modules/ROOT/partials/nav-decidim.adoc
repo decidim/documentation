@@ -4,28 +4,15 @@
 // * ALT: Assess Decidim, Evaluate Decidim
 ** xref:decidim:ROOT:vision.adoc[]
 ** xref:decidim:ROOT:whats-new.adoc[]
-** xref:features:ROOT:index.adoc[Functions and features]
+** xref:features:ROOT:index.adoc[]
 +
 --
-include::features:ROOT:partial$nav.adoc[]
+include::features:ROOT:partial$nav-features.adoc[]
 --
 ** xref:decidim:ROOT:experiences.adoc[Inspiring experiences]
 // ** ALT: Real experiences
 // Testimonials
 ** xref:decidim:ROOT:similar.adoc[Comparison to similar platforms]
-
-* Decidim in detail
-** xref:decidim:ROOT:license.adoc[License]
-** xref:whitepaper:ROOT:index.adoc[Whitepaper]
-+
---
-include::whitepaper:ROOT:partial$nav.adoc[]
---
-** xref:decidim:ROOT:governance.adoc[Project governance]
-** xref:social-contract:ROOT:index.adoc[Social contract]
-** xref:decidim:ROOT:history.adoc[History of the project]
-** xref:decidim:ROOT:research.adoc[Research]
-** xref:publications:ROOT:index.adoc[]
 
 * Try Decidim
 ** xref:decidim:ROOT:visit.adoc[Visit some public instances]
@@ -45,6 +32,19 @@ include::config-tutorial:ROOT:partial$nav.adoc[]
 --
 ** xref:decidim:ROOT:personalize[Personalize your Decidim site]
 // CSS, etc.
+
+* Decidim in detail
+** xref:decidim:ROOT:license.adoc[License]
+** xref:whitepaper:ROOT:index.adoc[Whitepaper]
++
+--
+include::whitepaper:ROOT:partial$nav.adoc[]
+--
+** xref:decidim:ROOT:governance.adoc[Project governance]
+** xref:social-contract:ROOT:index.adoc[Social contract]
+** xref:decidim:ROOT:history.adoc[History of the project]
+** xref:decidim:ROOT:research.adoc[Research]
+** xref:publications:ROOT:index.adoc[]
 
 * Manage a Decidim site
 // For participation technicians, participation promoters, participation dynamizers, participations boosters
