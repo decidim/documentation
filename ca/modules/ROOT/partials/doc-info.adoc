@@ -1,0 +1,88 @@
+= {page-component-title}
+include::translations::partial$attributes.adoc[]
+
+ifeval::["{page-subtitle}" != ""]
+[.lead]
+{page-subtitle}
+endif::[]
+
+ifeval::["{description}" != ""]
+[abstract]
+{description}
+endif::[]
+
+== Metadades del document
+
+[cols="20,80"]
+|===
+| *Títol*                               | *{page-component-title}*
+
+ifeval::["{page-subtitle}" != ""]
+| Subtítol                              | {page-subtitle}
+endif::[]
+
+ifeval::["{page-component-version}" != "master"]
+| Versió                                | {page-component-version}
+endif::[]
+
+ifeval::["{revdate}" != ""]
+| Data                                  | {revdate}
+endif::[]
+
+ifeval::["{page-editors}" != ""]
+| Edició                                | {page-editors}
+endif::[]
+
+| *Autoria*                             | *{authors}*
+
+ifeval::["{page-contributors}" != ""]
+| Contribució                           | {page-contributors}
+endif::[]
+
+ifeval::["{page-proofreaders}" != ""]
+| Revisió                               | {page-proofreaders}
+endif::[]
+
+ifeval::["{page-participants}" != ""]
+| Participació                          | {page-participants}
+endif::[]
+
+ifeval::["{page-translators}" != ""]
+| Traducció                             | {page-translators}
+endif::[]
+
+| Paraules clau                         | {keywords}
+
+ifeval::["{page-history}" != ""]
+| Història del document                 | {page-history}
+endif::[]
+
+ifeval::["{page-zotero-id}" != ""]
+| Com es cita                           | {page-zotero-id}
+endif::[]
+
+| Copyleft
+a| _{page-copyright-ownership}_, sota
+ifeval::["{page-license-alternative}" == ""]
+una llicència _{page-license}_.
+endif::[]
+ifeval::["{page-license-alternative}" != ""]
+les llicències _{page-license}_ i _{page-license-alternative}_.
+endif::[]
+
+[discrete]
+=== Creative Commons Reconeixement-CompartirIgual 4.0 Internacional (CC-BY-SA-4.0)
+
+Sou lliures de copiar i redistribuir el material en qualsevol mitjà o format, remesclar, transformar i crear a partir del material, per a qualsevol finalitat, fins i tot comercial.
+El llicenciador no pot revocar aquestes llibertats mentre compliu amb els termes de la llicència.
+Sota les condicions següents: a) Reconeixement: heu de reconèixer adequadament l'autoria, proporcionar un enllaç a la llicència i indicar si s'hi han fet canvis.
+Podeu fer-ho de qualsevol manera raonable, però no d'una manera que suggereixi que teniu el suport del llicenciador o el rebeu per l'ús que en feu; b) Compartir igual: si remescleu, transformeu o creeu a partir del material, haureu de difondre les vostres contribucions sota la mateixa llicència que l'original.
+No hi ha restriccions addicionals, no podeu aplicar termes legals o mesures tecnològiques que legalment restringeixin fer allò que la llicència permet.
+Podeu trobar les llicències completes en els enllaços següents: https://creativecommons.org/licenses/by-sa/4.0/deed.ca.
+
+[discrete]
+=== Llicència de documentació lliure de GNU (GFDL-1.3-or-later)
+
+Es concedeix permís per copiar, distribuir o modificar aquest document sota els termes de la llicència de documentació lliure GNU, versió 1.3 o qualsevol altra versió posterior publicada per la Free Software Foundation; sense seccions invariants ni textos de coberta davantera, tampoc textos de contraportada.
+Una còpia de la llicència es pot trobar a http://www.gnu.org/copyleft/fdl.html.
+|===
