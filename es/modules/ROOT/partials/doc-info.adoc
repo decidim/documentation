@@ -1,5 +1,5 @@
 = {page-component-title}
-include::translations::partial$attributes.adoc[]
+include::decidim::partial$l10n.adoc[]
 
 ifeval::["{page-subtitle}" != ""]
 [.lead]
