@@ -4,11 +4,13 @@
 // * ALT: Assess Decidim, Evaluate Decidim
 ** xref:decidim:ROOT:vision.adoc[]
 ** xref:decidim:ROOT:whats-new.adoc[]
-** xref:features:ROOT:index.adoc[]
-+
---
-include::features:ROOT:partial$nav-features.adoc[]
---
+** xref:decidim:features:general-description.adoc[Features]
+*** xref:decidim:features:participatory-spaces.adoc[Participatory spaces]
+*** xref:decidim:features:components.adoc[Components]
+*** xref:decidim:features:participants.adoc[Participants]
+*** xref:decidim:features:general-features.adoc[General features]
+*** xref:decidim:features:doc-info.adoc[_Document information_]
+*** xref:decidim:features:contributing.adoc[_Authorship criteria and how to contribute to this document_]
 ** xref:decidim:ROOT:experiences.adoc[Inspiring experiences]
 // ** ALT: Real experiences
 // Testimonials
