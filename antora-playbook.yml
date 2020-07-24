@@ -1,0 +1,17 @@
+site:
+  title: Decidim Docs
+  url: https://docs.decidim.org
+  start_page: en@init::index.adoc
+content:
+  sources: 
+  - url: &landing .
+    branches: [HEAD]
+    start_path: /en
+ui: 
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    #url: https://github.com/decidim/docs.decidim.org-ui/releases/download/v3/ui-bundle.zip
+    snapshot: true
+
+
+
