@@ -1,0 +1,8 @@
+{
+  "name": "decidim-documentation",
+  "private": true,
+  "devDependencies": {
+    "@antora/cli": "^2.3.0",
+    "@antora/site-generator-default": "^2.3.0"
+  }
+}
