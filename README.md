@@ -42,15 +42,13 @@ xdg-open build/site/decidim/index.html
 
 ### Docker
 
-You can also work with this repository manually. For this you'll need nodeJS installed. We recommend using nvm for managing versions.
+You can check this locally and install with Docker.
 
 ```bash
 git clone https://github.com/decidim/docs-base
 cd docs-base
-npm i -g @antora/cli @antora/site-generator-default
-antora antora-playbook.yml
-cd build/site/decidim/
-xdg-open index.html
+docker run -u $(id -u) -v $PWD:/antora:Z --rm -t antora/antora antora-playbook.yml
+xdg-open build/site/decidim/index.html
 ```
 
 ## Roadmap 
