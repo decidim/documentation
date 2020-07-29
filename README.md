@@ -11,19 +11,36 @@ For working with it, you can do it several ways:
 
 ## Install locally 
 
-### Docker
+### Manually
 
-You can check this locally and install with Docker. For doing this, you'll need to have Docker and docker-compose installed. 
+##### [Install antora](https://docs.antora.org/antora/2.3/install-and-run-quickstart/) with software dependencies.
+
+```bash
+# Install Node & npm using nvm
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+nvm install node
+
+# Install Antora Command Line Interface (cli)
+sudo npm i -g @antora/cli @antora/site-generator-default
+```
+
+If antora installation succeed, `antora -v` will return antora's version.
+
+##### Clone repository and build documentation website.
 
 ```bash
 git clone https://github.com/decidim/docs-base
 cd docs-base
-docker-compose up
-cd build/site/decidim/
-xdg-open index.html
+antora antora-playbook.yml
 ```
 
-### Manually
+Website source code will be create under ```docs-base/build/site/decidim``` folder. Serve ```index.html``` with any application or http server.
+
+```bash
+xdg-open build/site/decidim/index.html
+```
+
+### Docker
 
 You can also work with this repository manually. For this you'll need nodeJS installed. We recommend using nvm for managing versions.
 
