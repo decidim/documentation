@@ -1,0 +1,49 @@
+== Users
+:experimental:
+:icons: font
+:page-partial:
+:source-highlighter: highlightjs
+
+ifndef::env-site,env-github[]
+include::_attributes.adoc[] 
+endif::[]
+
+include::{partialsdir}/README.adoc[tag=metadata] 
+
+// Start writing here
+
+Managing administration users involves such tasks as: registering other administrators; validating user groups (organisations/ collectives) that have been registered and whose effective existence has been confirmed; managing temporary users created from Citizen Help and Information Offices to enable people who have no internet to take part in Decidim: recognising that a person has a certain position in the organisation (Oficializations) and authenticating that the person taking part is who they say they are (Verifications).footnote:[The *Verifications* function is currently under development.]
+
+To manage users, click on *USERS* in the *DASHBOARD* menu. The *USERS* window will open (<<users-fig>>).
+
+[#users-fig]
+._Users_.
+image::image46.png[image]
+
+To register an administrator, click on *Admins* in the *USERS* submenu. A list of those that are already administrators will appear; click on *New* in the upper right of the screen. A screen will open (<<invite-user-as-administrator-fig>>) whose *Name* and *Email* fields have to be filled in and *Role* selected from the (*Admin* or *User manager*) drop-down menu. To finish, click *Invite*.
+
+[#invite-user-as-administrator-fig]
+._Invite user as administrator_.
+image::image51.png[image]
+
+To validate a user group, go to *User groups* in the *USERS* submenu. A new window will open (<<user-groups-fig>>) displaying a list with all the user groups that have been registered, respective numbers of documents, telephone numbers, user numbers, creation date, status (verified, rejected or pending) and possible initiatives (*Verify* or *Reject*).
+
+[#user-groups-fig]
+._User groups_.
+image::image5.png[image]
+
+User groups can be directly validated in this window, once their existence has been confirmed, by clicking on the corresponding *Verify* icon. To facilitate management the user groups can be filtered according to whether they are verified, rejected or pending, by selecting from the *Filter by* drop-down menu.
+
+To publicly accredit (officialise) that a person has a certain position/ post in the organisation, click on *Oficializations* in the Users submenu. The *OFICIALIZATIONS* window (<<officializations-fig>>) will open, displaying a list with some of the users and the initiatives that can be carried out: *Officialize*, and where the person has already been officialised, *Reofficialize* or *Unofficialize*.
+
+[#officializations-fig]
+._Officializations_.
+image::image2.png[image]
+
+To officialise a person and post, filter by name and click on the *Officialize* action. The Officialize User “X” window will open (<<officialize-user-fig>>), where you will have to insert the *Officialization badge* (the position that is recognised).
+
+[#officialize-user-fig]
+._Officialize user_.
+image::image25.png[image]
+
+To manage managed users (impersonally temporary with previous identification), click on *Managed Users* in the *USERS* submenu [the appropriate authorisation has to be granted from management of administrators before this action can be carried out.

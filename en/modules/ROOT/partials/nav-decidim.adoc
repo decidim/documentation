@@ -1,128 +1,96 @@
 * xref:decidim:ROOT:index.adoc[Welcome!]
 
-* Why Decidim
-// * ALT: Assess Decidim, Evaluate Decidim
-** xref:decidim:ROOT:vision.adoc[]
-** xref:decidim:ROOT:whats-new.adoc[]
+* xref:decidim:installing:index.adoc[Installing]
+** xref:decidim:installing:manual.adoc[Manual Installing]
+
+* xref:decidim:installing:upgrading.adoc[Upgrading]
+
+* xref:decidim:configuring:index.adoc[Configuring]
+** xref:decidim:customising:index.adoc[Customising]
+*** xref:decidim:customising:modules.adoc[Modules]
+*** xref:decidim:customising:styles.adoc[Styles]
+*** xref:decidim:customising:images.adoc[Images]
+*** xref:decidim:customising:texts.adoc[Texts]
+*** xref:decidim:customising:users_registration_mode.adoc[User registration mode]
+*** xref:decidim:customising:advanced.adoc[Advanced]
+**** xref:decidim:customising:authorizations.adoc[Authorizations]
+**** xref:decidim:customising:code.adoc[Code]
+**** xref:decidim:customising:gemfile.adoc[Gemfile]
+**** xref:decidim:customising:javascript.adoc[Javascript]
+**** xref:decidim:customising:oauth.adoc[OAuth]
+**** xref:decidim:customising:views.adoc[Views]
+*** xref:decidim:configuring:services:index.adoc[Services]
+**** xref:decidim:services:activejob.adoc[Active Job]
+**** xref:decidim:services:analytics.adoc[Analytics]
+**** xref:decidim:services:etherpad.adoc[Etherpad]
+*** xref:decidim:services:geocoding.adoc[Geocoding]
+**** xref:decidim:services:social_providers.adoc[Social Providers]
+
+* xref:decidim:running:index.adoc[Running]
+** xref:decidim:running:introduction.adoc[Introduction]
+** xref:decidim:running:what-is-decidim.adoc[What is Decidim]
+** xref:decidim:running:administering-decidim.adoc[Administering Decidim]
+*** xref:decidim:running:how-to-access-administrator-menu.adoc[How to access the administrator menu]
+*** xref:decidim:running:configuring-local-authorities-decidim.adoc[Configuring a local authority’s Decidim platform]
+** xref:decidim:running:pages.adoc[Pages]
+** xref:decidim:running:users.adoc[Users]
+** xref:decidim:running:processess.adoc[Processes]
+** xref:decidim:running:assemblies.adoc[Assemblies]
+** xref:decidim:running:initiatives.adoc[Initiatives]
+** xref:decidim:running:newsletters.adoc[Newsletters]
+** Appendixes
+*** xref:decidim:running:information-pages.adoc[Information pages]
+
+* xref:decidim:developing:index.adoc[Developing]
+** xref:decidim:developing:guide.adoc[Guide]
+** xref:decidim:developing:guide.adoc[Advanced]
+*** xref:decidim:developing:activity_log.adoc[Activity Log]
+*** xref:decidim:developing:add_authorizable_action.adoc[Authorizable]
+*** xref:decidim:developing:adding_fixtures_aka_dummy_content.adoc[Fixtures]
+*** xref:decidim:developing:api.adoc[API]
+*** xref:decidim:developing:authorship.adoc[Authorship]
+*** xref:decidim:developing:components.adoc[Components]
+*** xref:decidim:developing:content_blocks.adoc[Content Blocks]
+*** xref:decidim:developing:content_processors.adoc[Content Processors]
+*** xref:decidim:developing:data-picker.adoc[Data Picker]
+*** xref:decidim:developing:deploy.adoc[Deploy]
+*** xref:decidim:developing:embeddable.adoc[Embeddable]
+*** xref:decidim:developing:endorsable.adoc[Endorsable]
+*** xref:decidim:developing:followers.adoc[Followers]
+*** xref:decidim:developing:how_to_create_a_module.adoc[Module]
+*** xref:decidim:developing:how_to_fix_metrics.adoc[Fix Metrics]
+*** xref:decidim:developing:managing_translations_i18n.adoc[i18n]
+*** xref:decidim:developing:metrics.adoc[Metrics]
+*** xref:decidim:developing:modules.adoc[Modules]
+*** xref:decidim:developing:newsletter_templates.adoc[Newsletter Templates]
+*** xref:decidim:developing:notifications.adoc[Notifications]
+*** xref:decidim:developing:open-data.adoc[Open Data]
+*** xref:decidim:developing:permissions.adoc[Permissions]
+*** xref:decidim:developing:profiling.adoc[Profiling]
+*** xref:decidim:developing:releases.adoc[Releases]
+*** xref:decidim:developing:testing.adoc[Testing]
+*** xref:decidim:developing:tradeoffs.adoc[Tradeoffs]
+*** xref:decidim:developing:view_hooks.adoc[View Hooks]
+*** xref:decidim:developing:view_models_aka_cells.adoc[Cells (View Models)]
+
+* xref:decidim:understanding:index.adoc[Understanding]
 ** xref:decidim:features:general-description.adoc[Features]
 *** xref:decidim:features:participatory-spaces.adoc[Participatory spaces]
 *** xref:decidim:features:components.adoc[Components]
 *** xref:decidim:features:participants.adoc[Participants]
 *** xref:decidim:features:general-features.adoc[General features]
-*** xref:decidim:features:doc-info.adoc[_Document information_]
-*** xref:decidim:features:contributing.adoc[_Authorship criteria and how to contribute to this document_]
-** xref:decidim:ROOT:experiences.adoc[Inspiring experiences]
-// ** ALT: Real experiences
-// Testimonials
-** xref:decidim:ROOT:similar.adoc[Comparison to similar platforms]
-
-* Try Decidim
-** xref:decidim:ROOT:visit.adoc[Visit some public instances]
-// Maybe ref to https://demo.decidim.org
-** link:https://decidim.org/demo/[Online Demo (try admin capabilities),window=_blank]
-// Sandbox (Democratize Westeros!) vs. Fresh online demo
-
-* Get Decidim
-** xref:decidim:ROOT:get.adoc[Installation and service options]
-// ALT: Instance Dashboard quick start
-// ALT: Initial configuration with the _Instance Dashboard_
-// Managed service, consultancy
-** xref:config-tutorial:ROOT:index.adoc[Configuration Quick Start]
-+
---
-include::config-tutorial:ROOT:partial$nav.adoc[]
---
-** xref:decidim:ROOT:personalize[Personalize your Decidim site]
-// CSS, etc.
-
-* Decidim in detail
-** xref:decidim:ROOT:license.adoc[License]
-** xref:whitepaper:ROOT:index.adoc[Whitepaper]
-+
---
-include::whitepaper:ROOT:partial$nav.adoc[]
---
-** xref:decidim:ROOT:governance.adoc[Project governance]
-** xref:social-contract:ROOT:index.adoc[]
-** xref:decidim:ROOT:history.adoc[History of the project]
-** xref:decidim:ROOT:research.adoc[Research]
-** xref:publications:ROOT:index.adoc[]
-
-* Manage a Decidim site
-// For participation technicians, participation promoters, participation dynamizers, participations boosters
-** xref:admin-manual:ROOT:index.adoc[Administration manual]
-+
---
-* How to access to the _Instance Dashboard_
-
-include::admin-manual:ROOT:partial$nav.adoc[]
---
-** xref:decidim:ROOT:authentication-and-permissions.adoc[Authentication and permissions]
-** xref:decidim:ROOT:enhance-democracy.adoc[Resources to enhance democracy in your community or organization (all languages)]
-// ** ALT: Design participation spaces and processes
-// Put link to "Inspiring experiences"
-*** xref:decidim:ROOT:public-organization-guidelines.adoc[Guidelines for cities and public organizations]
-*** xref:decidim:ROOT:private-organization-guidelines.adoc[Guidelines for private organizations and communities]
-
-// For sysadmins
-* Sysadmin tasks
-// * ALT: Install & operate Decidim (sysadmin tasks)
-** xref:decidim:sysadmin:install.adoc[Install Decidim]
-// Links to Configuration Quick Start and "Personalize ..."
-*** xref:decidim:sysadmin:deploy-check-list.adoc[Deployment check-list]
-** xref:decidim:sysadmin:system-dashboard.adoc[System Dashboard (multi-tenant installation)]
-// ** ALT: System Dashboard overview
-** Integrate Decidim with other tools
-*** xref:decidim:integrate:matomo.adoc[Matomo]
-*** xref:decidim:integrate:civicrm.adoc[CiviCRM]
-*** xref:decidim:integrate:nvotes.adoc[NVotes]
-*** xref:decidim:integrate:authentication.adoc[Authentication methods]
-** xref:decidim:sysadmin:upgrade.adoc[Upgrade Decidim]
-** xref:decidim:sysadmin:backup.adoc[Backup and restore]
-** xref:decidim:sysadmin:troubleshoot.adoc[Troubleshoot Decidim]
-
-* Contribute to Decidim
-// ** ALT: Quality and evolution of Decidim
-** xref:decidim:ROOT:bug-or-request.adoc[Report a bug or a feature request]
-** xref:decidim:ROOT:document.adoc[Document]
-// i18n, l10n, localization
-** xref:decidim:ROOT:translate.adoc[Translate and localize]
-// Includes link to a Roadmap, probably in GitHub
-** xref:decidim:ROOT:strengthen-the-community.adoc[Strengthen the Decidim community]
-// E.g., guidelines for organizing events, like Decidim Day
-** xref:decidim:develop:index.adoc[Develop (RoR)]
-
-* Decidim Research
-// Links to LAB videos and pages in Meta. Also ongoing research as groups in UB.
-** Projects
-** Publications
-*** xref:publications:ROOT:academic.adoc[]
-*** xref:publications:ROOT:technical.adoc[]
-** xref:publications:ROOT:interviews.adoc[]
-// And other things
-** Decidim LAB
-
-* xref:press:ROOT:index.adoc[_Press_]
-// ** Executive dossier
-// ** Press articles
-// Interviews, opinion pieces, dissemination. Some of these can also be in "Publications"
-// ** Blog
-// ** Press releases
-// ** Press kit
-//
-// Announcements
-
-* Learning resources
-// * Educational resources
-
-* xref:decidim:ROOT:graphic-resources.adoc[_Graphic Resources_]
-// - Logos
-// - Templates for posters and banners
-// - Graphic identity manual for the Decidim Project
-
-* xref:decidim:ROOT:faq.adoc[_FAQ_]
-
-* xref:decidim:glossary:index.adoc[_Glossary_]
-
-* xref:decidim:releases:index.adoc[_Release Notes_]
+*** xref:decidim:whitepaper:index.adoc[Whitepaper]
+*** xref:decidim:whitepaper:decidim-a-brief-overview.adoc[Decidim: a brief overview]
+** xref:decidim:understanding:social-contract.adoc[Social Contract]
+// ** xref:decidim:understanding:governance.adoc[Project governance]
+// ** xref:decidim:understanding:history.adoc[History of the project]
+// ** xref:decidim:understanding:research.adoc[Research]
+** xref:decidim:publications:index.adoc[Publications]
+*** xref:decidim:publications:academic.adoc[Academic]
+*** xref:decidim:publications:interviews.adoc[Interviews]
+*** xref:decidim:publications:media.adoc[Media]
+*** xref:decidim:publications:media-mentions.adoc[Media Mentions]
+*** xref:decidim:publications:presentations.adoc[Presentations]
+*** xref:decidim:publications:technical.adoc[Technical]
+*** xref:decidim:publications:video-talks.adoc[Video Talks]
 

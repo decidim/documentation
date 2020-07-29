@@ -1,0 +1,52 @@
+include::README.adoc[tag=metadata]
+
+:toc: left
+:toclevels: 2
+
+:sectnums!:
+include::README.adoc[tag=metadata-table]
+<<<
+
+include::README.adoc[tag=contributing]
+<<<
+
+// include::SUMMARY.adoc[]
+// <<<
+
+:leveloffset: +1
+// ADD HERE THE LIST OF *UNNUMBERED* CHAPTERS OR SECTIONS
+
+
+:sectnums:
+// ADD HERE THE LIST OF *NUMBERED* CHAPTERS OR SECTIONS
+include::introduction.adoc[]
+
+include::what-is-decidim.adoc[]
+
+include::administering-decidim.adoc[]
+
+include::how-to-access-administrator-menu.adoc[]
+
+include::configuring-local-authorities-decidim.adoc[]
+
+include::pages.adoc[]
+
+include::users.adoc[]
+
+include::processess.adoc[]
+
+include::assemblies.adoc[]
+
+include::initiatives.adoc[]
+
+include::newsletters.adoc[]
+
+// ADD HERE THE LIST OF APPENDIXES. Every appendix must be preceded by a line with the
+// string "[appendix]"
+[appendix]
+include::information-pages.adoc[]
+
+
+// END OF THE LIST OF CHAPTERS, SECTIONS OR APPENDIXES
+
+:leveloffset: -1

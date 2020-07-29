@@ -1,0 +1,31 @@
+== Pages
+:experimental:
+:icons: font
+:page-partial:
+:source-highlighter: highlightjs
+
+ifndef::env-site,env-github[]
+include::_attributes.adoc[] 
+endif::[]
+
+include::{partialsdir}/README.adoc[tag=metadata] 
+
+// Start writing here
+
+This refers to the static pages that contain general information on the Decidim platform such as FAQs (What is decidim? How can I take part? How do I create and verify my account? What are participatory processes? etc.,) terms and conditions of use (legal and user information) and aspects relating to the platform’s accessibility. Users and participants will be able to access this information from the *More information* tab (on the main menu), and from the footer.
+
+To create and edit static pages, click on *PAGES* in the *DASHBOARD* menu. Then click on *Create* in the *PAGES* submenu or directly on the window that opens displaying the list of static pages once they have been created (<<pages-fig>>).
+
+[#pages-fig]
+._Pages_.
+image::image7.png[image]
+
+If you click on the icons on the right, the list allows you to *View public page* how the pages will look as well as *Edit* and *Destroy* each of the pages.
+
+When a page is configured you will have to fill in its fields (<<new-page-fig>>): its *Title*, *Content* (the text it refers to) and the *URL slug* that identifies the page (for example, if the page is on accessibility: the word “accessibility” will appear at the end of the webpage address, https://www.google.com/url?q=https://decidim.diba.cat/pages/accessibility&sa=D&ust=1526042251787000[https://decidim.diba.cat/pages/accessibility]). To finish, click *Create*.
+
+For the purposes of drafting the content of the static pages you can view and freely use the texts in Annexe I.
+
+[#new-page-fig]
+._New page_.
+image::image53.png[image]
