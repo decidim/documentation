@@ -9,8 +9,7 @@ content:
     start_path: /en
 ui: 
   bundle:
-    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
-    #url: https://github.com/decidim/docs.decidim.org-ui/releases/download/v3/ui-bundle.zip
+    url: https://github.com/decidim/documentation-antora-ui/releases/download/v0.1/ui-bundle.zip
     snapshot: true
 
 
