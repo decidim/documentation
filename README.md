@@ -12,7 +12,13 @@ Feel free to join us on [gitter](https://gitter.im/decidim/decidim).
 
 _Documentation built with [Antora](https://antora.org), with XYZ licence._
 
-## Install locally
+## Index
+
+- [Build source](#build-source)
+- [Site overview](#site-overview)
+- [Roadmap](#roadmap)
+
+## Build source
 
 - [Manually](#manually)
 - [Docker](#docker)
@@ -32,19 +38,12 @@ sudo npm i -g @antora/cli @antora/site-generator-default
 
 If antora installation succeed, `antora -v` will return antora's version.
 
-##### Clone repository and build documentation website.
+##### Build documentation website.
 
 ```bash
-git clone https://github.com/decidim/docs-base
-cd docs-base
 antora antora-playbook.yml
 ```
-
-Website source code will be create under ```docs-base/build/site/decidim``` folder. Serve ```index.html``` with any application or http server.
-
-```bash
-xdg-open build/site/decidim/index.html
-```
+Jump to [site overview](#site-overview)
 
 ### Docker
 
@@ -52,6 +51,15 @@ You can check this locally and install with Docker.
 
 ```bash
 docker run -u $(id -u) -v $PWD:/antora:Z --rm -t antora/antora antora-playbook.yml
+```
+Jump to [site overview](#site-overview)
+
+## Site overview
+
+When [sources are built](#build-source), documentation will be available under `build/site/decidim/index.html` by default.
+You will have to serve `index.html` with any application or http server.  
+_Example :_ 
+```Bash
 xdg-open build/site/decidim/index.html
 ```
 
