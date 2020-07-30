@@ -45,8 +45,6 @@ xdg-open build/site/decidim/index.html
 You can check this locally and install with Docker.
 
 ```bash
-git clone https://github.com/decidim/docs-base
-cd docs-base
 docker run -u $(id -u) -v $PWD:/antora:Z --rm -t antora/antora antora-playbook.yml
 xdg-open build/site/decidim/index.html
 ```
