@@ -5,9 +5,10 @@
 **Source code** of the **[Decidim Documentation website](https://decidim-docs.netlify.app/en/decidim/)**.
 
 **Newcomers** will find a **[getting started](#decidim-documentation)** section, with different **[tutorials](#decidim-documentation)** to **learn decidim basics**.  
-**Detailled information** will be available in  **[administrator](#decidim-documentation)**/**[developper](#decidim-documentation)**/**[deployement](#decidim-documentation)** guides.
+**Detailed information** will be available in  **[administrator](#decidim-documentation)**/**[developper](#decidim-documentation)**/**[deployement](#decidim-documentation)** guides.
 
-**As a community**, you will find our **[social contract](#decidim-documentation)** and **[contribution guideline](#decidim-documentation)** to use or participate to decidim. There is a [wide number of way](#decidim-documentation) to give an appreciable help ! Feel free to join us on [gitter](https://gitter.im/decidim/decidim).
+**As a community**, you will find our **[social contract](#decidim-documentation)** and **[contribution guideline](#decidim-documentation)** to use or participate to decidim. There is a [wide number of way](#decidim-documentation) to give an appreciable help !  
+Feel free to join us on [gitter](https://gitter.im/decidim/decidim).
 
 _Documentation built with [Antora](https://antora.org), with XYZ licence._
 
