@@ -12,7 +12,7 @@ Feel free to join us on [gitter](https://gitter.im/decidim/decidim).
 
 _Documentation built with [Antora](https://antora.org), with XYZ licence._
 
-## Index
+**Index**
 
 - [Build source](#build-source)
 - [Site overview](#site-overview)
