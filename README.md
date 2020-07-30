@@ -47,7 +47,7 @@ Jump to [site overview](#site-overview)
 
 ### Docker
 
-You can check this locally and install with Docker.
+Clone the repository and launch
 
 ```bash
 docker run -u $(id -u) -v $PWD:/antora:Z --rm -t antora/antora antora-playbook.yml
