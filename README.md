@@ -1,11 +1,10 @@
 
 # Decidim Documentation 
+**[WORK IN PROGRESS]**
 
 This is the new repository for the [Decidim Documentation website](https://antora.org/):
 
 Is built with [Antora](https://antora.org/), although for this version we're going to try to not have multi-repositories, as it's a hassle to work with. The idea is to have all the documents living on this same repository. 
-
-This project is on active development and it's not on production yet.
 
 For working with it, you can do it several ways: 
 
