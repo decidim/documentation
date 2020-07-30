@@ -1,6 +1,6 @@
 [build]
   base = "netlify/"
-  publish = "build/site/"
+  publish = "/build/site/"
   command = "node_modules/.bin/antora --stacktrace --fetch --html-url-extension-style=indexify ../antora-playbook.yml"
 
 [build.environment]
