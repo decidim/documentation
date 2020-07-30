@@ -1,0 +1,76 @@
+== Configuring a local authority’s Decidim platform
+:experimental:
+:icons: font
+:page-partial:
+:source-highlighter: highlightjs
+
+ifndef::env-site,env-github[]
+include::_attributes.adoc[] 
+endif::[]
+
+include::{partialsdir}/README.adoc[tag=metadata] 
+
+// Start writing here
+
+To configure a local authority’s Decidim platform, click on *SETTINGS*  on the lower part of the *DASHBOARD*. A form will appear with information that has to be filled in and images that can be uploaded (<<Configuration-window-fig>>).
+
+[#Configuration-window-fig]
+._Configuration window_.
+image::image16.png[image]
+
+The platform is multi-language although it is not automatically translated. If it has been decided that the platform is to be in two languages, for example, Catalan and Spanish, the fields will have to be filled in for both languages. For each of the text fields you will have to click on “*CA*” to enter Catalan text and “*ES*” to enter Spanish text.
+
+The fields that have to be filled in are:
+
+- Configuration window (<<Configuration-window-fig>>):
+
+* *Name*: the name of the platform, for example Formació Decidim.
+* *Social*: the social media profile name(Twitter, Facebook, Instagram, YouTube, GitHub). Only the ones that are used.
+* *Default locale*: select the default language the platform is to be opened with.
+* *Reference prefix*: unique identifier or acronym of the local authority’s name that appears with the proposals, in face-to-face meetings, results etc.
+
+- Appearance window (<<Appearance-window-fig>>):
+
+* *Show statistics*: tick if you want statistics shown.
+* *Description*: a brief introductory text beneath the main image.
+* *Welcome text*: slogan (brief phrase) which appears on the main image. In the example here: “Benvingut/da a la Formació Decidim!”.
+* *Call to action button path*: You can overwrite where the Call To Action button in the homepage links to. Use partial paths, not full URLs here. Accepts letters, numbers, dashes and slashes, and must start with a letter. The Call To Action button is shown in the homepage between the welcome text and the description. Example: https://meta.decidim.barcelona/processes/welcome
+* *Call to action button text*: You can overwrite the Call To Action button text in the homepage for each available language in your organization. If not set, the default value will be used. The Call To Action button is shown in the homepage between the welcome text and the description.
+* *Highlighted content banner*: Tick if you want the highlighted content banner shown. Also you are able to add the *Title*, a *Short description, Action button title, action button subtitle, Action button URL*, an  *Image*. Also you are able to remove the file if you tick the *Remove this file* option.
+* *Edit omnipresent*: Tick if you want the omnipresent banner shown. Also you are able to add a *Title*, a *Short description* and a *URL*.
+* *Official organization URL*: institution's institutional website address.
+* *Header snippets*: use this field to add things to the HTML header. The must usual use is to integrate third-party services that require JavaScript or additional CSS code. What is more, you can use it to attach additional meta-labels to the HTML. Note that this will only be displayed on public pages and not in the administration section.
+
+As for images, you are advised to see their availability beforehand on some of the Decidim platforms. The following images have to be uploaded:
+
+* *Homepage image*: homepage photograph/ image, at least 2880px wide x 1800px high. Also you are able to remove the file if you tick the *Remove this file* option.
+* *Logo*: the Decidim platform’s corporate image, at least 456px wide x 148px high. Also you are able to remove the file if you tick the *Remove this file* option.
+* *Icon*: a page favicon or icon that enables the webpage to be identified, at least 80px wide x 74px high. Also you are able to remove the file if you tick the *Remove this file* option.
+* *Official logo header*: corresponds to the local authority’s isotype, it will appear on the upper right part of every page on the platform, at least 271px wide x 88px high.
+* *Official logo footer*: local authority’s isotype, appears in the lower left part of every page, at least 64px wide x 64px high.
+
+Once you have finished, click on *Update*.
+
+[#Appearance-window-fig]
+._Appearance window_.
+image::image52.png[image]
+
+To finish configuring the platform you will need to specify the areas, that is, the territorial organisation (districts, neighbourhoods, etc.,) and/or sectoral areas that the participatory processes can be linked to. The areas can be classed according to *scopes* where appropriate.
+
+To configure scope types, go to the *SETTINGS*, submenu click on *Scope types* and then click on *ADD*. Fill in the fields *Name* and *Plural* (in Catalan and in Spanish) and click on *Create scope type* (<<Scope-types-fig>>).
+
+[#Scope-types-fig]
+._Scope types_.
+image::image10.png[image]
+
+To configure scopes, go to the *SETTINGS* submenu and click on *Scopes*, and then add the areas one by one by clicking on *ADD*. For each of the areas you have to fill in the *Name* and *Code* fields (in Catalan and in Spanish), and select scope type from the *Scope type* drop-down menu. Then click on *Create scope* (<<New-scope-fig>>).
+
+[#New-scope-fig]
+._New Scope_.
+image::image15.png[image]
+
+Once created, the areas will appear on a list (scope name and type). If you click the icons on the right, the list allows you to *Browse*, *Edit* and *Destroy* each of the scopes (<<scopes-fig>>).
+
+[#scopes-fig]
+._Scopes_.
+image::image19.png[image]

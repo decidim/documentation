@@ -1,0 +1,146 @@
+// tag::metadata[]
+:lang: en
+//
+// MANDATORY. URL pointing to a Git repository with the source code of the
+// document. Something like 'https://github.com/decidim/docs-features'.
+:_public_repo_url: https://github.com/decidim/docs-features
+//
+// MANDATORY. Title of the document. In web format, It appears as a heading of
+// level 1. In PDF format, it appears in a title page.
+:doctitle: Decidim's Functions and Features
+//
+// OPTIONAL. Subtitle of the document.
+:_subtitle: Roadmap 2017/2018
+//
+// MANDATORY. Numeric revision in X.Y.Z format, where X, Y and Z are numbers,
+// and Z is optional.
+:revnumber: 1.0
+//
+// OPTIONAL. Publication date of the revision. When the default value
+// ("{docdate}") is used, the current date in format YYYY-MM-DD is automatically
+// inserted in this field every time the formatted document (web or PDF) is
+// generated. It's also possible to manually write here a fixed date.
+:revdate: {docdate}
+//
+// MANDATORY. See this field description in file CONTRIBUTING.adoc.
+// below.
+:authors: Xabier E. Barandiaran, Carolina Romero
+//
+// OPTIONAL. See this field description in file CONTRIBUTING.adoc.
+// below.
+:_editors: Xabier E. Barandiaran, Carolina Romero
+//
+// OPTIONAL. See this field description in file CONTRIBUTING.adoc.
+// below.
+:_contributors: Asier Amezaga, Andrés Pereira de Lucena
+//
+// OPTIONAL. See this field description in file CONTRIBUTING.adoc.
+// below.
+:_proofreaders: Andrés Pereira de Lucena, Marta Almela, Juan Linares
+//
+// OPTIONAL. See this field description in file CONTRIBUTING.adoc.
+// below.
+:_participants: Josan Minguela, Joana Guijarro
+//
+// MANDATORY. Summary of the contents of the document. This would correspond to
+// the "abstract" in an academic publication. Do not intercalate empty lines.
+:_summary: Decidim [https://decidim.org] is a digital infrastructure for participatory democracy written on free software (Ruby on Rails), which enables the creation of citizen participation portals. Users of the platform (participants) interact through participatory mechanisms known as components which provide specific functions for the various participatory spaces. In other words, participatory spaces such as Initiatives, Assemblies, Processes and Consultations have components at their disposal which work together as participatory mechanisms. The more notable components include in-person meetings, surveys, proposals, votes, results monitoring and comments. For example, the various stages of a specific participatory process, such as the preparation of participatory budgets, can incorporate various components to: convene and capture the results of in-person meetings with citizens, conduct a survey, make proposals and, during the final stages of the process, hold a vote to decide on the projects with a budget expenditure system (always after a period for commentary and debate), conduct an assessment survey and, finally, monitor the implementation of the projects selected.
+//
+// MANDATORY. Comma-separated list of terms to help classifying and searching
+// the document. In web format, this terms are integrated as SEO enabling
+// metadata. In PDF format, they are shown near the other metadata.
+:keywords: Decidim, a democratic participatory platform, components, participatory spaces, software, e-democracy, participation, assemblyism, citizen participation, neighbourhood councils, citizen consultations, accountability, proposals, e-voting, transparency
+//
+// OPTIONAL. Document's history. Do not intercalate empty lines.
+:_dochistory:
+//
+// MANDATORY. When the document is not in its 1.0 release, yet, we can write "WE
+// URGE YOU NOT TO CITE THIS YET UNTIL REVISION 1.0" Variables like {doctitle},
+// {authors}, {_subtitle}, {revnumber} or {docyear} can be used here.
+:_citation: Barandiaran, X.E. & Romero, C. (2017) {doctitle}. v{revnumber}.
+//
+// MANDATORY. Copyright ownership.
+:_copyleft: Barcelona City Council and the authors of the text
+//
+// MANDATORY. Distribution license.
+:_license_1: Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA-4.0)
+//
+// OPTIONAL. Alternative distribution license.
+:_license_2: GNU Free Documentation (GFDL-1.3-or-later)
+//
+// end::metadata[]
+
+= {doctitle}
+
+[.lead]
+{_subtitle}
+
+[abstract]
+{_summary}
+
+This document is part of the https://docs.decidim.org[Decidim documentation].
+
+== Metadata
+
+// tag::metadata-table[]
+
+[cols="20,80"]
+|===
+| Title                                 | {doctitle}
+ifeval::["{_subtitle}" != ""]
+| Subtitle                              | {_subtitle}
+endif::[]
+| Version                               | {revnumber}
+ifeval::["{_revdate}" != ""]
+| Date                                  | {revdate}
+endif::[]
+ifeval::["{_editors}" != ""]
+| Editors                               | {_editors}
+endif::[]
+| Authors                               | {authors}
+ifeval::["{_contributors}" != ""]
+| Contributors                          | {_contributors}
+endif::[]
+ifeval::["{_proofreaders}" != ""]
+| Proofreaders                          | {_proofreaders}
+endif::[]
+ifeval::["{_participants}" != ""]
+| Participants                          | {_participants}
+endif::[]
+| Summary                               | {_summary}
+| Keywords                              | {keywords}
+ifeval::["{_dochistory}" != ""]
+| Document history                      | {_dochistory}
+endif::[]
+| How to cite                           | {_citation}
+| Copyleft
+a| {_copyleft}, under a
+ifeval::["{_license_2}" == ""]
+{_license_1} license.
+endif::[]
+ifeval::["{_license_2}" != ""]
+{_license_1} license and a {_license_2} license.
+endif::[]
+
+[discrete]
+==== Creative Commons Attribution-ShareAlike 4.0 International License (CC-BY-SA-4.0)
+
+You are free to copy and redistribute the material in any medium or format, remix, transform and build upon material, for any purpose, even commercially.
+The licensor may not revoke these freedoms as long as you comply with the licence's terms.
+Under the following conditions: a) Attribution: you must provide an appropriate acknowledgement of the authorship, provide a link to the licence and state whether any changes have been made.
+You may do that in any reasonable way, but not in a way that would suggest you have the licensor's support or receive it for the use you are making; b) ShareAlike: where you remix change or create from the material, you will have to disseminate your contributions under the same licence as the original.
+There are no additional restrictions, you may not apply legal terms or technological measures that legally restrict others from doing anything the licence permits.
+You can find full licences on the following links: https://creativecommons.org/licenses/by-sa/4.0/deed.
+
+[discrete]
+==== GNU Free Documentation Licence (GFDL-1.3-or-later)
+
+You are permitted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation Licence, version 1.3 or any other version subsequently published by the Free Software Foundation; without Invariant Sections or Front-Cover Texts, or Back-Cover Texts either.
+You can find a copy of the licence on http://www.gnu.org/copyleft/fdl.html.
+|===
+
+// end::metadata-table[]
+
+== How to contribute
+
+See link:./CONTRIBUTING.adoc[Contributing].

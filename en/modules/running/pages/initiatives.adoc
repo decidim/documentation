@@ -1,0 +1,45 @@
+== Initiatives
+:experimental:
+:icons: font
+:page-partial:
+:source-highlighter: highlightjs
+
+ifndef::env-site,env-github[]
+include::_attributes.adoc[] 
+endif::[]
+
+include::{partialsdir}/README.adoc[tag=metadata] 
+
+// Start writing here
+
+Initiatives (in the case of public, citizen and communal authorities) are distinguished from the other participation spaces because they are participatory tools or mechanisms promoted by citizens. In other words, the initiatives are mechanisms for semi-direct democracy through which citizens can promote a certain action of common interest to the authority, by collecting a specific number of signatures.
+
+In this case, what the authority has to do is enable the promotion of these initiatives and offer the necessary technical support and advice to the people concerned. The role of the platform’s administrator, then, is somewhat different from that of the other participation spaces. In the first place, you will have to configure the various forms of initiatives provided for under the regulations (municipal rules), specifying the number of signatures required for processing the various types of citizen initiatives. An initiative for incorporating one or several items into the Municipal Council’s agenda evidently requires fewer signatures than another initiative for promoting a citizen consultation.
+
+To configure the initiative type, click on *INITIATIVES* on the menu to the left of the *DASHBOARD*, then click on *Initiative types* from the Initiative submenu and then on *NEW* (<<initiative-types-fig>>).
+
+[#initiative-types-fig]
+._Initiative types_.
+image::image57.png[image]
+
+The *New initiative type* window will open (<<new-initiative-type-fig>>), where you need to enter the *Title, Description* of the initiative and upload a *Banner image*. To finish, click on *Create*.
+
+[#new-initiative-type-fig]
+._New initiative type_.
+image::image13.png[image]
+
+A window will immediately open with the information just created on the initiative type, where the number of signatures required has to be specified according to possible scopes (city, neighbourhood/ district). (See <<initiative-type-window-fig>> at the very bottom)
+
+[#initiative-type-window-fig]
+._Initiative type's window_.
+image::image61.png[image]
+
+Second, the administrator will have to monitor the initiatives created by users and check whether all the information presented is correct. Go to the initiative submenu (<<initiative-types-fig>>) and click first on *Initiatives* and then on the corresponding initiative. On the left of the submenu for that initiative (<<submenu-of-a-specific-initiative-fig>>), you can: configure the *Committee members*, the *Meetings* and create a *Page* and *Attachments*. The procedure for configuring these functions is identical to the one used in other participation spaces, such as participatory processes and assemblies.
+
+[#submenu-of-a-specific-initiative-fig]
+._Submenu of a specific initiative_.
+image::image30.png[image]
+
+To carry out these monitoring actions click on *Information* in the initiative's submenu. The following buttons will appear at the very bottom: *Update, Send to technical validation, Publish (Unpublish* where it has already been published), *Discard initiative, Export supports* (in .csv, visible when the initiative has been published).
+
+For example, an initiative can be rejected where it limits or restricts fundamental rights and freedoms and, in the case of local authorities, where it does not refer to matters under municipal jurisdiction.
