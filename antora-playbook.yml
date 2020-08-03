@@ -3,6 +3,7 @@ site:
   url: https://docs.decidim.org
   start_page: master@en:ROOT:index.adoc
 content:
+  edit_url: '{web_url}/blob/{refname}/{path}'
   sources: 
   - url: &landing .
     branches: [HEAD]
