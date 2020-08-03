@@ -4,14 +4,6 @@
 :page-partial:
 :source-highlighter: highlightjs
 
-ifndef::env-site,env-github[]
-include::_attributes.adoc[] 
-endif::[]
-
-include::{partialsdir}/README.adoc[tag=metadata] 
-
-// Start writing here
-
 == Citizen participation in the Network Society
 
 Becoming a network(ed) society. Information and communication technologies (henceforth, ICTs) and their associated practices are bringing about irreversible changes to the social and political landscape. From the smallest residents’ association to the most intensive electoral campaign, from a neighbourhood organisation or social movement to the European Union, political relations are being increasingly determined by the use of digital devices and technologies. It seems that the future of democratic participation and collective action will be through the development of digital platforms and hybrid processes, which renovate traditional practices and combine them with digital ones (Fuchs, 2007).
