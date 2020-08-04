@@ -31,12 +31,12 @@ If antora installation succeed, `antora -v` will return antora's version.
 ##### Clone repository and build documentation website.
 
 ```bash
-git clone https://github.com/decidim/docs-base
-cd docs-base
+git clone https://github.com/decidim/documentation
+cd documentation
 antora antora-playbook.yml
 ```
 
-Website source code will be create under ```docs-base/build/site/decidim``` folder. Serve ```index.html``` with any application or http server.
+Website source code will be create under ```documentation/build/site/decidim``` folder. Serve ```index.html``` with any application or http server.
 
 ```bash
 xdg-open build/site/decidim/index.html
@@ -47,12 +47,12 @@ xdg-open build/site/decidim/index.html
 You can check this locally and install with Docker.
 
 ```bash
-git clone https://github.com/decidim/docs-base
-cd docs-base
+git clone https://github.com/decidim/documentation
+cd documentation
 docker run -u $(id -u) -v $PWD:/antora:Z --rm -t antora/antora antora-playbook.yml
 xdg-open build/site/decidim/index.html
 ```
 
 ## Roadmap 
 
-This is a work in progress. This will be on production when we finish all the issues on the [MVP Milestone](https://github.com/decidim/docs-base/milestone/1).
+This is a work in progress. This will be on production when we finish all the issues on the [MVP Milestone](https://github.com/decidim/documentation/milestone/1).
