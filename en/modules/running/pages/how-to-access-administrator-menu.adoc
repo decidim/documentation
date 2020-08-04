@@ -4,14 +4,6 @@
 :page-partial:
 :source-highlighter: highlightjs
 
-ifndef::env-site,env-github[]
-include::_attributes.adoc[] 
-endif::[]
-
-include::{partialsdir}/README.adoc[tag=metadata] 
-
-// Start writing here
-
 First you need to start the session. Go to the top right part of Decidim webpage (<<MetaDecidim-home-page-fig>>) and click on Sign In. Only those whose administrator authorisation has been configured can access the Dashboard.
 
 [#MetaDecidim-home-page-fig]

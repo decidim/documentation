@@ -4,14 +4,6 @@
 :page-partial:
 :source-highlighter: highlightjs
 
-ifndef::env-site,env-github[]
-include::_attributes.adoc[] 
-endif::[]
-
-include::{partialsdir}/README.adoc[tag=metadata] 
-
-// Start writing here
-
 This refers to the static pages that contain general information on the Decidim platform such as FAQs (What is decidim? How can I take part? How do I create and verify my account? What are participatory processes? etc.,) terms and conditions of use (legal and user information) and aspects relating to the platform’s accessibility. Users and participants will be able to access this information from the *More information* tab (on the main menu), and from the footer.
 
 To create and edit static pages, click on *PAGES* in the *DASHBOARD* menu. Then click on *Create* in the *PAGES* submenu or directly on the window that opens displaying the list of static pages once they have been created (<<pages-fig>>).

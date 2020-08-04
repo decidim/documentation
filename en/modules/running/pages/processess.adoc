@@ -4,14 +4,6 @@
 :page-partial:
 :source-highlighter: highlightjs
 
-ifndef::env-site,env-github[]
-include::_attributes.adoc[] 
-endif::[]
-
-include::{partialsdir}/README.adoc[tag=metadata] 
-
-// Start writing here
-
 To configure participatory processes on the Decidim platform, click on *PROCESSES* in the *DASHBOARD*. A list will appear with the existing processes, if there are any (<<participatory-processes-fig>>).
 
 [#participatory-processes-fig]

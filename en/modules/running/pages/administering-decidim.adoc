@@ -6,14 +6,6 @@
 :page-partial:
 :source-highlighter: highlightjs
 
-ifndef::env-site,env-github[]
-include::_attributes.adoc[] 
-endif::[]
-
-include::{partialsdir}/README.adoc[tag=metadata] 
-
-// Start writing here
-
 Deploying Decidim means taking account of all the activities that play a part in the configuration of the platform and the deployment of the participatory processes. Acquiring knowledge in administering Decidim enables control over fundamental matters such as configuring a participatory process, activating a voting stage and receiving votes, moderating the platform, managing associated legal texts, managing authorisation from the administrators and monitoring and verifying organisations. None of these aspects are strictly technical but they do involve a series of political decisions over how we want Decidim to be, what messages and contents it has to contain, what the moderation policy for comments and debates has to be and, above all, how a specific participatory process has to be, and what functions it has to have active. This is why it is essential to understand the socio-technical implications of the Decidim platform’s administration and management when it comes to deploying the platform.
 
 To understand how Decidim works, we need to distinguish between participatory spaces and components and features. The participatory spaces are the channels that citizens can participate through when public decisions are being taken, such as participatory processes, citizen initiatives, public consultations and assemblies and Councils. Whereas participatory components and features are mechanisms that enable interaction between users of the platform and the various participatory spaces. Participatory components include proposals, surveys, voting, results, pages, meetings, etc.

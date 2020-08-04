@@ -4,14 +4,6 @@
 :page-partial:
 :source-highlighter: highlightjs
 
-ifndef::env-site,env-github[]
-include::_attributes.adoc[] 
-endif::[]
-
-include::{partialsdir}/README.adoc[tag=metadata] 
-
-// Start writing here
-
 Initiatives (in the case of public, citizen and communal authorities) are distinguished from the other participation spaces because they are participatory tools or mechanisms promoted by citizens. In other words, the initiatives are mechanisms for semi-direct democracy through which citizens can promote a certain action of common interest to the authority, by collecting a specific number of signatures.
 
 In this case, what the authority has to do is enable the promotion of these initiatives and offer the necessary technical support and advice to the people concerned. The role of the platform’s administrator, then, is somewhat different from that of the other participation spaces. In the first place, you will have to configure the various forms of initiatives provided for under the regulations (municipal rules), specifying the number of signatures required for processing the various types of citizen initiatives. An initiative for incorporating one or several items into the Municipal Council’s agenda evidently requires fewer signatures than another initiative for promoting a citizen consultation.

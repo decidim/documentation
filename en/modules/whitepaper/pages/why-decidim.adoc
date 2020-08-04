@@ -4,13 +4,6 @@
 :page-partial:
 :source-highlighter: highlightjs
 
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
-
-include::{partialsdir}/README.adoc[tag=metadata]
-
-
 The context that has given birth to Decidim is defined by two interconnected phenomena, each of which displays two poles. On the one hand, the last decades have witnessed a crisis of representative democracy (weakening of the Welfare State, subordination to market forces, inability to deal with global problems such as climate change, etc.) as well as the essay with some alternatives, such as grassroots organizations, new parties and institutional forms. On the other, the rise of cognitive capitalism, a system where the exploitation of information, knowledge, affects, and social relations has become core to the generation of economic value, is opposed by the emergence of free software, knowledge and culture. Both phenomena are deeply intertwined, and Decidim is born right at their very intersection, responding to the challenges and opportunities that they open for democracy. In this section, we briefly analyze these two phenomena, with a special focus on the way they impact contemporary democracy.
 
 == The contemporary crisis of democracy and its alternatives

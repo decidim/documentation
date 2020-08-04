@@ -4,14 +4,6 @@
 :page-partial:
 :source-highlighter: highlightjs
 
-ifndef::env-site,env-github[]
-include::_attributes.adoc[] 
-endif::[]
-
-include::{partialsdir}/README.adoc[tag=metadata] 
-
-// Start writing here
-
 Managing administration users involves such tasks as: registering other administrators; validating user groups (organisations/ collectives) that have been registered and whose effective existence has been confirmed; managing temporary users created from Citizen Help and Information Offices to enable people who have no internet to take part in Decidim: recognising that a person has a certain position in the organisation (Oficializations) and authenticating that the person taking part is who they say they are (Verifications).footnote:[The *Verifications* function is currently under development.]
 
 To manage users, click on *USERS* in the *DASHBOARD* menu. The *USERS* window will open (<<users-fig>>).

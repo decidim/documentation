@@ -4,12 +4,6 @@
 :page-partial:
 :source-highlighter: highlightjs
 
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
-
-include::{partialsdir}/README.adoc[tag=metadata]
-
 .Video: https://youtu.be/zhMMW0TENNA[Decidim: Free Open-Source participatory democracy for cities and organizations].
 video::f6JMgJAQ2tc[youtube, width=720, height=390]
 

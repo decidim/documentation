@@ -1,12 +1,6 @@
 = Participatory spaces
 :page-partial:
 
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
-
-include::{partialsdir}/README.adoc[tag=metadata]
-
 Participatory spaces define the main participatory channels. They are displayed in the platform's main upper menu.
 
 The basic logic behind Decidim's structure is that *components work together in the participatory spaces*. There are different types of spaces (initiatives, processes, consultations and assemblies) and various instances within each type (a process for an election and another for participatory budgets, council body for neighbourhoods and another for workers, an initiative to call for a change in legislation and another for something to be included in a plenary meeting agenda, etc.).

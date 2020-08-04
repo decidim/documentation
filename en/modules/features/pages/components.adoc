@@ -1,12 +1,6 @@
 = Components
 :page-partial:
 
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
-
-include::{partialsdir}/README.adoc[tag=metadata]
-
 Decidim’s components are basic participatory mechanisms that are activated and configured for the various participatory spaces or subspaces (stages of a process, the work groups of a body, etc.).
 
 == Proposals

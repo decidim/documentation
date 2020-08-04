@@ -4,14 +4,6 @@
 :page-partial:
 :source-highlighter: highlightjs
 
-ifndef::env-site,env-github[]
-include::_attributes.adoc[] 
-endif::[]
-
-include::{partialsdir}/README.adoc[tag=metadata] 
-
-// Start writing here
-
 Here we offer you three informative pages that you can use as a template or re-use replacing the text highlighted in yellow with the correct text. You can find the same documents in spanish or catalan in their respective Administering Decidim document.
 
 == Information/FAQs

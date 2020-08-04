@@ -4,14 +4,6 @@
 :page-partial:
 :source-highlighter: highlightjs
 
-ifndef::env-site,env-github[]
-include::_attributes.adoc[] 
-endif::[]
-
-include::{partialsdir}/README.adoc[tag=metadata] 
-
-// Start writing here
-
 Newsletters are emails with information on the platform (new developments, processes that are sent to everyone who has been registered with the platform and who has ticked the box for receiving relevant information on the processes there are on the platform.
 
 To create a newsletter, click on *NEWSLETTERS* from the menu on the left of the *DASHBOARD*. Click immediately afterwards on *New* in the submenu on the left. The *NEW NEWSLETTER* window will open (<<new-newsletter-fig>>), where the *Subject* (Title of the newsletter) and *Body* (text) fields have to be filled in, both in Catalan and in Spanish. To finish, click on *Save* on the lower part of the window.

@@ -4,14 +4,6 @@
 :page-partial:
 :source-highlighter: highlightjs
 
-ifndef::env-site,env-github[]
-include::_attributes.adoc[] 
-endif::[]
-
-include::{partialsdir}/README.adoc[tag=metadata] 
-
-// Start writing here
-
 To configure a local authority’s Decidim platform, click on *SETTINGS*  on the lower part of the *DASHBOARD*. A form will appear with information that has to be filled in and images that can be uploaded (<<Configuration-window-fig>>).
 
 [#Configuration-window-fig]

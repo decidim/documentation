@@ -1,12 +1,6 @@
 = Participants
 :page-partial:
 
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
-
-include::{partialsdir}/README.adoc[tag=metadata]
-
 == Registration and verification
 
 Any visitor can access all of the website’s content directly. However, anyone who wishes to submit proposals or comments will have to *register*. Users may register *directly* on the platform or through gateways of other *social networks* (Facebook, Twitter or Google+). To register directly, users will need to associate a email account and a password to the user-account.

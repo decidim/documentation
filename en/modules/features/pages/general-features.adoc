@@ -1,12 +1,6 @@
 = General features
 :page-partial:
 
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
-
-include::{partialsdir}/README.adoc[tag=metadata]
-
 Below, we will outline a series of the platform’s general features and characteristics which do not appear in the spaces or components, or in the features directly associated with participants.
 
 == Installation and settings
