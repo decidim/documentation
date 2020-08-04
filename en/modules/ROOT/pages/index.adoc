@@ -1,20 +1,18 @@
-= Decidim Documentation
+= Welcome to Decidim Documentation
 
 This is the documentation site to Decidim, a participatory democracy platform created initially by Barcelona City Hall.
 
 == New to Decidim?
 
-You’ve found the documentation for Decidim.
+You’ve found the documentation for Decidim. Learn about the project at decidim.org[https://decidim.org].
 
-* Learn about the project at decidim.org[decidim.org].
+// * Read the xref:en:ROOT:getting-started.adoc[Getting Started guide]
 
-* Read the xref:getting-started.adoc[Getting Started guide]
+The documentation covers xref:en:installing:index.adoc[installing], xref:en:customising:index.adoc[customising], and xref:en:running:index.adoc[running] your own Decidim site.
 
-The documentation covers xref:installing.adoc[installing], xref:customising.adoc[customising], and xref:running.adoc[running] your own Decidim site.
-
-If you’re making changes to the source code, we have documentation for xref:developing.adoc[developers] too.
+If you want to make changes to the source code, we have documentation for xref:en:developing:guide.adoc[developers] too.
 
 If you are an organisation who wants to use Decidim, or a developer who is interested in collaborating on the software, please https://decidim.org/contact[get in touch].
 
-Decidim is a community effort, as such if you find any errors on these guides please let us know at hola [at] decidim [dot] org. Every help is welcome. If you're tech savy you can even make a Pull Request through GitHub to help us improve this website.
+Decidim is a community effort, as such if you find any errors on these guides please let us know at hola [at] decidim [dot] org. Every help is welcome. If you've a GitHub user then you can even propose changes to this website with the Edit link on every page.
 
