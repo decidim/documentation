@@ -22,8 +22,8 @@ For working with it, you can do it several ways:
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 nvm install node
 
-# Install Antora Command Line Interface (cli)
-sudo npm i -g @antora/cli @antora/site-generator-default
+# Install Antora and dependencies
+npm install
 ```
 
 If antora installation succeed, `antora -v` will return antora's version.
@@ -33,7 +33,7 @@ If antora installation succeed, `antora -v` will return antora's version.
 ```bash
 git clone https://github.com/decidim/documentation
 cd documentation
-antora antora-playbook.yml
+./bin/build
 ```
 
 Website source code will be create under ```documentation/build/site/decidim``` folder. Serve ```index.html``` with any application or http server.
