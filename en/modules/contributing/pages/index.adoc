@@ -17,8 +17,11 @@ If you haven't already, come find us in https://gitter.im/decidim/decidim[Gitter
 
 == Do you intend to add a new feature or change an existing one?
 
-* Suggest your change in https://meta.decidim.barcelona/processes/roadmap[Metadecidim] and start writing code.
-* Do not open an issue on GitHub until you have collected positive feedback about the change. GitHub issues are primarily intended for bug reports, fixes and already discussed features on https://meta.decidim.barcelona/processes/roadmap[Metadecidim].
+. Suggest your change in https://meta.decidim.barcelona/processes/roadmap[Metadecidim]
+. Wait until Product Team reviews and accept the feature, as it's important to be consistent with the rest of the software, comply with the Social Contract, etc.
+. Then you can make the Pull Request. If you make the PR without Product Team approval then you could get rejected (after investing lots of time on developing). 
+
+image::workflow-features.png[new feature workflow process]
 
 == Do you have questions about the source code?
 
