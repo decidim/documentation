@@ -35,8 +35,8 @@ Once created you are ready to:
 
 The Decidim respository follows the GitFlow branching model. There are good documentations on it at:
 
-* the original post: https://nvie.com/posts/a-successful-git-branching-model/
-* provided by Atlassian: https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow.
+* https://nvie.com/posts/a-successful-git-branching-model/[the original post]
+* https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow[Atlassian tutorial]
 
 This model introduces the `develop` branch as a kind of queue for new features to enter into the next release.
 
@@ -194,4 +194,4 @@ This project uses https://github.com/markdownlint/markdownlint[markdownlint] to 
 
 == Testing
 
-Refer to the xref:advanced/testing.adoc[testing] guide.
+Refer to the xref:developing:testing.adoc[testing] guide.
