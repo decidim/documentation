@@ -1,6 +1,8 @@
 
 # Decidim Documentation 
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d20ee965-1821-49c9-8e5a-f428133b5c39/deploy-status)](https://app.netlify.com/sites/decidim-documentation/deploys)
+
 This is the new repository for the [Decidim Documentation website](https://antora.org/):
 
 Is built with [Antora](https://antora.org/), although for this version we're going to try to not have multi-repositories, as it's a hassle to work with. The idea is to have all the documents living on this same repository. 
