@@ -17,33 +17,33 @@
   to = "/en/understanding/social-contract/"
 
 [[redirects]]
-  from = /features/en/* 
-  to = /en/features/:splat
+  from = "/features/en/*"
+  to = "/en/features/:splat"
 
 [[redirects]]
-  from = /features/es/* 
-  to = /en/features/:splat
+  from = "/features/es/*"
+  to = "/en/features/:splat"
 
 [[redirects]]
-  from = /features/ca/* 
-  to = /en/features/:splat
+  from = "/features/ca/*"
+  to = "/en/features/:splat"
 
 [[redirects]]
-  from = /whitepaper/en/*
-  to = /en/whitepaper/
+  from = "/whitepaper/en/*"
+  to = "/en/whitepaper/"
 
 [[redirects]]
-  from = /deploy-and-admin/en/get-decidim/
-  to = /en/installing/
+  from = "/deploy-and-admin/en/get-decidim/"
+  to = "/en/installing/"
 
 [[redirects]]
-  from = /admin-manual/en/*
-  to = /en/running/:splat
+  from = "/admin-manual/en/*"
+  to = "/en/running/:splat"
 
 [[redirects]]
-  from = /develop/en/
-  to = /en/developing/guide/
+  from = "/develop/en/"
+  to = "/en/developing/guide/"
 
 [[redirects]]
-  from = /develop/en/advanced/*
-  to = /en/developing/:splat
+  from = "/develop/en/advanced/*"
+  to = "/en/developing/:splat"
