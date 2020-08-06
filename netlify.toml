@@ -29,6 +29,10 @@
   to = "/en/features/:splat"
 
 [[redirects]]
+  from = "/features/"
+  to = "/en/features/"
+
+[[redirects]]
   from = "/whitepaper/en/*"
   to = "/en/whitepaper/"
 
