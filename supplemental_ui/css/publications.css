@@ -1,0 +1,23 @@
+.publications .doc .exampleblock {
+  margin: 0rem 0 0;
+}
+
+.publications .doc .exampleblock .title {
+  display: none;
+}
+
+.publications .doc .exampleblock > .content {
+  background: var(--body-background);
+  border: none;
+  font-size: 0.85rem;
+  margin-left: 0.8rem;
+}
+
+.publications .doc .exampleblock > .content > :first-child {
+  margin-top: 0rem;
+}
+
+.publications .doc .exampleblock > .content > :first-child p::before {
+  content: "Abstract. ";
+  font-style: italic;
+}
