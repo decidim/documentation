@@ -1,14 +1,14 @@
 site:
   title: Decidim Docs
-  url: https://beta.docs.decidim.org
+  url: https://docs.decidim.org
   start_page: master@en:ROOT:index.adoc
 content:
   edit_url: 'https://github.com/decidim/documentation/edit/{refname}/{path}'
-  sources: 
+  sources:
   - url: &landing .
     branches: [master]
     start_path: /en
-ui: 
+ui:
   bundle:
     url: https://github.com/decidim/documentation-antora-ui/releases/download/v0.2/ui-bundle.zip
     snapshot: true
