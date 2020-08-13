@@ -1,7 +1,12 @@
 <header class="header" role="banner">
   <nav class="navbar">
     <div class="navbar-brand">
-      <a class="navbar-item" href="{{or site.url (or siteRootUrl siteRootPath)}}">{{site.title}}</a>
+      <div class="navbar-item__brand-wrapper">
+        <a class="navbar-item__brand" href="http://decidim.org">
+          <img class="navbar-item__logo" src="{{{uiRootPath}}}/img/decidim/decidim-logo-topbar.svg" alt="Decidim">
+        </a>
+        <a class="navbar-item" href="{{{or site.url (or siteRootUrl siteRootPath)}}}">{{site.title}}</a>
+      </div>
       {{#if env.DOCSEARCH_ENABLED}}
         <div class="navbar-item">
           <input id="search-input" type="text" placeholder="Search docs">
@@ -15,20 +20,8 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="#">Home</a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="#">Services</a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="#">Service A</a>
-            <a class="navbar-item" href="#">Service B</a>
-            <a class="navbar-item" href="#">Service C</a>
-          </div>
-        </div>
-        <div class="navbar-item">
-          <span class="control">
-            <a class="button is-primary" href="#">Download</a>
-          </span>
-        </div>
+        <a class="navbar-item" href="https://decidim.org">decidim.org</a>
+        <a class="navbar-item" href="https://docs.decidim.org">Docs Home</a>
       </div>
     </div>
   </nav>
