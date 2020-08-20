@@ -23,7 +23,7 @@ If you want to extend Decidim, the prefered way should be by having a Module. Th
 gem "decidim-debates", path: "decidim-debates"
 ----
 
-* Publishing on a git reposotory and pointing in on the Gemfile. For instance:
+* Publishing on a git repository and pointing in on the Gemfile. For instance:
 
 [source,ruby]
 ----
