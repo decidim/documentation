@@ -1,6 +1,6 @@
 = How to profile a Decidim app
 
-The developmen_app includes a bunch of gems that profile the application. Run the following command in the decidim root's folder:
+The development_app includes a bunch of gems that profile the application. Run the following command in the decidim root's folder:
 
 [source,bash]
 ----
@@ -11,7 +11,7 @@ and then move into it and boot the server
 
 [source,bash]
 ----
-cd developmen_app
+cd development_app
 bundle exec rails s
 ----
 
