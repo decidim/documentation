@@ -51,3 +51,7 @@
 [[redirects]]
   from = "/develop/en/advanced/*"
   to = "/en/developing/:splat"
+
+[[redirects]]
+  from = "/init/en/"
+  to = "/en/"
