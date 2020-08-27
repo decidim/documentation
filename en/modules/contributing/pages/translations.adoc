@@ -1,0 +1,73 @@
+= Translations
+
+For translating Decidim we use a web platform called Crowdin, accesible in https://translate.decidim.org/ 
+
+At the moment is translated  in more than 18 languages: 
+
+* Catalan
+* Czech
+* Dutch
+* Finnish
+* French
+* German
+* Greek
+* Hungarian
+* Italian
+* Japanese
+* Latvian
+* Norwegian
+* Polish
+* Portuguese
+* Romanian
+* Slovak
+* Spanish
+* Swedish
+
+As Decidim is a living and in constant development process is necessary to maintain, improve and specially update the translations when there's a new release. For doing so:
+
+== Existing language
+
+You can ask for permission in the language of your choosing, for instance for Esperanto:
+
+image::translation-join-01.png[Join to Decidim Translations]
+
+image::translation-join-02.png[Message in Join Decidim Translations]
+
+== New language
+
+If your language isn't created yet, then we need to do it as it's necessary to make some adjustments. You need to contact us by the https://decidim.org/contact[contact form].
+
+== How it works
+
+If you're curios, in the technical level we have a bot (the great decidim-bot) that periodically makes a PR to the relevant branches (last releases and develop).
+
+image::translation-bot.png[Decidim Bot in GitHub]
+
+If you want to try a new translation before it gets released, then you can do so by pointing to the xref:en:installing:update.adoc#_from_git_repositories[relevant branch], for instance `chore/l10n/develop`.
+
+=== Checking locales
+
+You can make sure new translations are complete for all languages in your application with:
+
+[source,console]
+----
+bin/rails decidim:check_locales
+----
+
+By default this will check against develop branch. If you're pointing to other branch in your Gemfile, then you can use the TARGET_BRANCH environment variable:
+
+[source,console]
+----
+TARGET_BRANCH=release/0.22-stable bin/rails decidim:check_locales
+----
+
+Be aware that this task might not be able to detect everything, so make sure you also manually check your application before upgrading.
+
+If you have 100% in your Crowdin language then you can be pretty sure that everything is translated.
+
+== Rules
+
+* All the translations always start from English. If you want to propose changes to the English language then you need to do it in the Ruby on Rails translations files directly (like `decidim-core/config/locales/en.yml`)
+* For every language (except English), you can't do changes in the Ruby on Rails translations files directly (for instance `decidim-core/config/locales/es.yml`) as these translations could get invalidated by decidim-bot in the future. See "How it works" section.
+* We try to speak of Participants instead of Users when it's possible
+* On Spanish and Catalan we follow https://en.wikipedia.org/wiki/Gender_neutrality_in_Spanish[Gender Neutrality]
