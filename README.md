@@ -39,7 +39,7 @@ cd documentation
 Website source code will be create under ```documentation/build/site/decidim``` folder. Serve ```index.html``` with any application or http server.
 
 ```bash
-xdg-open build/site/decidim/index.html
+xdg-open build/site/index.html
 ```
 
 ### Docker
@@ -50,7 +50,7 @@ You can check this locally and install with Docker.
 git clone https://github.com/decidim/documentation
 cd documentation
 docker run -u $(id -u) -v $PWD:/antora:Z --rm -t antora/antora antora-playbook.yml
-xdg-open build/site/decidim/index.html
+xdg-open build/site/index.html
 ```
 
 ## Roadmap 
