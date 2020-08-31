@@ -1,10 +1,4 @@
-= Technical tradeoffs
-
-== Architecture
-
-This is not your typical Ruby on Rails Vanilla App. We've tried using http://decide.es[Consul] but we found some problems on reutilization, adaptation, modularization and configuration. You can read more about that on "https://www.gitbook.com/book/alabs/propuesta-de-cambios-en-la-arquitectura-de-consul/details[Propuesta de Cambios de Arquitectura de Consul]".
-
-== Turbolinks
+= Turbolinks
 
 Decidim doesn't support `turbolinks` so it isn't included on our generated apps and it's removed for existing Rails applications which install the Decidim engine.
 
