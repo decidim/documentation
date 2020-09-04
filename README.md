@@ -49,7 +49,7 @@ You can check this locally and install with Docker.
 ```bash
 git clone https://github.com/decidim/documentation
 cd documentation
-docker run -u $(id -u) -v $PWD:/antora:Z --rm -t antora/antora antora-playbook.yml
+docker run -u $(id -u) -e DOCSEARCH_ENABLED=true -e DOCSEARCH_ENGINE=lunr -v $PWD:/antora:Z --rm -t antora/antora --generator antora-site-generator-lunr antora-playbook.yml
 xdg-open build/site/index.html
 ```
 
