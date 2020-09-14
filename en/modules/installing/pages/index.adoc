@@ -111,9 +111,8 @@ You can configure it with `crontab -e`, for instance if you've created your Deci
 
 We also have other guides on how to configure some extra components:
 
-* xref:en:services:activejob.adoc[ActiveJob]
-* xref:en:services:analytics.adoc[Analytics]: How to enable analytics
-* xref:en:services:geocoding.adoc[Geocoding]: How to enable geocoding for proposals and meetings
+* xref:en:services:activejob.adoc[ActiveJob]: For background jobs (like sending emails).
+* xref:en:services:geocoding.adoc[Geocoding]: How to enable geocoding for proposals and meetings.
 * xref:en:services:social_providers.adoc[Social providers integration]: Enable sign up from social networks.
 
 == Deploy
