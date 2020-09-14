@@ -1,11 +1,12 @@
 = Developing Decidim
 
-* xref:developing:guide_development_app.adoc[Development App]
 * xref:developing:guide_architecture.adoc[Architecture]
-* xref:developing:guide_git_conventions.adoc[Git conventions]
-* xref:developing:guide_semver.adoc[Semantic Versioning]
 * xref:developing:guide_changelog.adoc[Changelog]
 * xref:developing:guide_commands.adoc[Commands]
+* xref:developing:guide_development_app.adoc[Development App]
+* xref:developing:guide_git_conventions.adoc[Git conventions]
+* xref:developing:guide_github_projects.adoc[GitHub Projects Workflow]
+* xref:developing:guide_semver.adoc[Semantic Versioning]
 
 == Good to know
 
