@@ -8,7 +8,7 @@ If you haven't already, come find us in https://gitter.im/decidim/decidim[Gitter
 
 * *Do not open up a GitHub issue if the bug is a security vulnerability in Decidim*, and instead send us an email to security [at] decidim.org. See https://github.com/decidim/decidim/blob/develop/SECURITY.md[full security policy].
 * *Ensure the bug was not already reported* by searching on GitHub under https://github.com/decidim/decidim/issues[Issues] and on https://meta.decidim.org/processes/bug-report/f/210/proposals[Metadecidim].
-* If you're unable to find an open issue addressing the problem, https://meta.decidim.org/processes/bug-report/f/210/proposals/new[open a new one on Metadecidim]. Be sure to include a *title and clear description*, as much relevant information as possible, and a *code sample* or an *executable test case* demonstrating the expected behavior that is not occurring.
+* If you're unable to find an open issue addressing the problem, https://github.com/decidim/decidim/issues/new?template=Bug_report.md[open a new one on GitHub]. Be sure to include a *title and clear description*, as much relevant information as possible, and a *code sample* or an *executable test case* demonstrating the expected behavior that is not occurring.
 
 == Did you write a patch that fixes a bug?
 
@@ -18,10 +18,10 @@ If you haven't already, come find us in https://gitter.im/decidim/decidim[Gitter
 == Do you intend to add a new feature or change an existing one?
 
 . Suggest your change in https://meta.decidim.barcelona/processes/roadmap[Metadecidim]
-. Wait until Product Team reviews and accept the feature, as it's important to be consistent with the rest of the software, comply with the Social Contract, etc.
-. Then you can make the Pull Request. If you make the PR without Product Team approval then you could get rejected (after investing lots of time on developing). 
+. Wait until Product Team reviews and accept the feature
+. Make the Pull Request.
 
-image::workflow-features.png[new feature workflow process]
+You can read in detail about this process in xref:en:ROOT:governance.adoc[Governance]
 
 == Do you have questions about the source code?
 
@@ -35,10 +35,11 @@ image::workflow-features.png[new feature workflow process]
 
 * Go to the https://github.com/decidim/decidim/tree/master/decidim_app-design[Decidim design folder] and propose the changes that you want.
 
-== Do you want to improve or add a new language for Decidim?
+== Do you want to improve an existing language in Decidim?
 
-* Add a new issue asking for adding a user to the Crowdin project (https://github.com/decidim/decidim/issues/2073[example issue]).
+* You can do so in https://translate.decidim.org[Decidim Translations]. See more in xref:en:contributing:translations[Translations].
 
-Thanks! :heart: :heart: :heart:
+== Do you want to add a new language to Decidim?
 
-Decidim Team
+* https://decidim.org/contact[Contact] with us. See more in xref:en:contributing:translations[Translations].
+
