@@ -43,7 +43,7 @@ If you're curios, in the technical level we have a bot (the great decidim-bot) t
 
 image::translation-bot.png[Decidim Bot in GitHub]
 
-If you want to try a new translation before it gets released, then you can do so by pointing to the xref:en:installing:update.adoc#_from_git_repositories[relevant branch], for instance `chore/l10n/develop`.
+If you want to try a new translation before it gets released, then you can do so by pointing to the xref:install:update.adoc#_from_git_repositories[relevant branch], for instance `chore/l10n/develop`.
 
 === Checking locales
 

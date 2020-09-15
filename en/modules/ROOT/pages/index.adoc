@@ -6,11 +6,11 @@ This is the documentation site to Decidim, a participatory democracy platform cr
 
 You’ve found the documentation for Decidim. Learn about the project at https://decidim.org[decidim.org].
 
-// * Read the xref:en:ROOT:getting-started.adoc[Getting Started guide]
+// * Read the xref:ROOT:getting-started.adoc[Getting Started guide]
 
-The documentation covers xref:en:installing:index.adoc[installing], xref:en:configuring:index.adoc[configuring], and xref:en:running:index.adoc[running] your own Decidim site.
+The documentation covers xref:install:index.adoc[installing], xref:configure:index.adoc[configuring], and xref:admin:index.adoc[running] your own Decidim site.
 
-If you want to make changes to the source code, we have documentation for xref:en:developing:guide.adoc[developers] too.
+If you want to make changes to the source code, we have documentation for xref:develop:guide.adoc[developers] too.
 
 If you are an organisation who wants to use Decidim, or a developer who is interested in collaborating on the software, please https://decidim.org/contact[get in touch].
 

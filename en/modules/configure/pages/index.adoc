@@ -33,22 +33,22 @@ We try to let most of the things defined through Environment Variables, as https
 |API key for Geocoder HERE.com
 
 |OMNIAUTH_FACEBOOK_APP_ID
-|App ID for enabling access through Facebook.com accounts. See xref:en:services:social_providers.adoc[Social Providers].
+|App ID for enabling access through Facebook.com accounts. See xref:services:social_providers.adoc[Social Providers].
 
 |OMNIAUTH_FACEBOOK_APP_SECRET
-|App Secret for enabling access through Facebook.com accounts. See xref:en:services:social_providers.adoc[Social Providers].
+|App Secret for enabling access through Facebook.com accounts. See xref:services:social_providers.adoc[Social Providers].
 
 |OMNIAUTH_GOOGLE_CLIENT_ID
-|Client ID for enabling access through Google.com accounts. See xref:en:services:social_providers.adoc[Social Providers].
+|Client ID for enabling access through Google.com accounts. See xref:services:social_providers.adoc[Social Providers].
 
 |OMNIAUTH_GOOGLE_CLIENT_SECRET
-|Client Secret for enabling access through Google.com accounts. See xref:en:services:social_providers.adoc[Social Providers].
+|Client Secret for enabling access through Google.com accounts. See xref:services:social_providers.adoc[Social Providers].
 
 |OMNIAUTH_TWITTER_API_KEY
-|API Key for enabling access through Google.com accounts. See xref:en:services:social_providers.adoc[Social Providers].
+|API Key for enabling access through Google.com accounts. See xref:services:social_providers.adoc[Social Providers].
 
 |OMNIAUTH_TWITTER_API_SECRET
-|API Secret for enabling access through Google.com accounts. See xref:en:services:social_providers.adoc[Social Providers].
+|API Secret for enabling access through Google.com accounts. See xref:services:social_providers.adoc[Social Providers].
 
 |PORT
 |Specifies the `port` that Puma will listen on to receive requests. Default is 3000.
@@ -63,16 +63,16 @@ We try to let most of the things defined through Environment Variables, as https
 |Secret key base for the Application. It's specially important that this is kept secret from the outside word; do NOT publish it on GitHub/GitLab/BitBucket.
 
 |SMTP_ADDRESS
-|Hostname for the SMTP server, for sending emails. See xref:en:services:smtp.adoc[SMTP]
+|Hostname for the SMTP server, for sending emails. See xref:services:smtp.adoc[SMTP]
 
 |SMTP_DOMAIN
-|Domain for the SMTP server, for sending emails. See xref:en:services:smtp.adoc[SMTP]
+|Domain for the SMTP server, for sending emails. See xref:services:smtp.adoc[SMTP]
 
 |SMTP_PASSWORD
-|Password for the SMTP server, for sending emails. See xref:en:services:smtp.adoc[SMTP]
+|Password for the SMTP server, for sending emails. See xref:services:smtp.adoc[SMTP]
 
 |SMTP_USERNAME
-|Username for the SMTP server, for sending emails. See xref:en:services:smtp.adoc[SMTP]
+|Username for the SMTP server, for sending emails. See xref:services:smtp.adoc[SMTP]
 
 |===
 

@@ -23,7 +23,7 @@ gem install decidim
 decidim decidim_application
 ----
 
-You can see the xref:en:installing:manual.adoc[official manual installation tutorial], and also you have https://platoniq.github.io/decidim-install/[another manual installation tutorial] made by the nice people of http://www.platoniq.net/[Platoniq].
+You can see the xref:install:manual.adoc[official manual installation tutorial], and also you have https://platoniq.github.io/decidim-install/[another manual installation tutorial] made by the nice people of http://www.platoniq.net/[Platoniq].
 
 === B. Installation script [experimental]
 
@@ -111,9 +111,9 @@ You can configure it with `crontab -e`, for instance if you've created your Deci
 
 We also have other guides on how to configure some extra components:
 
-* xref:en:services:activejob.adoc[ActiveJob]: For background jobs (like sending emails).
-* xref:en:services:geocoding.adoc[Geocoding]: How to enable geocoding for proposals and meetings.
-* xref:en:services:social_providers.adoc[Social providers integration]: Enable sign up from social networks.
+* xref:services:activejob.adoc[ActiveJob]: For background jobs (like sending emails).
+* xref:services:geocoding.adoc[Geocoding]: How to enable geocoding for proposals and meetings.
+* xref:services:social_providers.adoc[Social providers integration]: Enable sign up from social networks.
 
 == Deploy
 
@@ -135,12 +135,12 @@ You can check the https://github.com/decidim/decidim/tree/master/decidim-system/
 
 == Checklist
 
-There are several things you need to check before making your putting your application on production. See the xref:installing:checklist.adoc[checklist].
+There are several things you need to check before making your putting your application on production. See the xref:install:checklist.adoc[checklist].
 
 == Contributing
 
 We always welcome new contributors of all levels to the project. If you are not confident enough with Ruby or web development you can look for https://github.com/decidim/decidim/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22[issues labeled `good first issue`] to start contibuting and learning the internals of the project by doing easy jobs.
 
-We also have a xref:developing:guide.adoc[developer's reference] that will help you getting started with your environment and our daily commands, routines, etc.
+We also have a xref:develop:guide.adoc[developer's reference] that will help you getting started with your environment and our daily commands, routines, etc.
 
 Finally, you can also find other ways of helping us on our xref:contributing:index.adoc[contribution guide].
