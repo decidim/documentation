@@ -14,7 +14,7 @@
 
 [[redirects]]
   from = "/social-contract/en/*"
-  to = "/en/understanding/social-contract/"
+  to = "/en/understand/social-contract/"
 
 [[redirects]]
   from = "/features/en/*"
@@ -38,19 +38,19 @@
 
 [[redirects]]
   from = "/deploy-and-admin/en/get-decidim/"
-  to = "/en/installing/"
+  to = "/en/install/"
 
 [[redirects]]
   from = "/admin-manual/en/*"
-  to = "/en/running/:splat"
+  to = "/en/admin/:splat"
 
 [[redirects]]
   from = "/develop/en/"
-  to = "/en/developing/guide/"
+  to = "/en/develop/guide/"
 
 [[redirects]]
   from = "/develop/en/advanced/*"
-  to = "/en/developing/:splat"
+  to = "/en/develop/:splat"
 
 [[redirects]]
   from = "/init/en/"
