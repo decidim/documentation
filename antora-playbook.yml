@@ -9,6 +9,10 @@ content:
     branches:
       - HEAD
     start_path: /en
+  - url: https://github.com/decidim/decidim
+    start_path: docs
+    branches:
+      - doc/antora-docs
 ui:
   bundle:
     url: https://github.com/decidim/documentation-antora-ui/releases/download/v0.2/ui-bundle.zip
