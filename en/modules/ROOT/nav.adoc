@@ -25,7 +25,8 @@
 *** xref:services:social_providers.adoc[Social Providers]
 
 * xref:admin:index.adoc[Admin]
-** xref:admin:index.adoc[Administering Decidim]
+** xref:admin:index.adoc[Introduction]
+*** xref:admin:system.adoc[System panel]
 *** xref:admin:how-to-access-administrator-menu.adoc[How to access the administrator menu]
 *** xref:admin:configuring-local-authorities-decidim.adoc[Configuring a local authority’s Decidim platform]
 ** xref:admin:pages.adoc[Pages]
