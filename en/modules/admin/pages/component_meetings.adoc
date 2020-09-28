@@ -1,0 +1,63 @@
+= Meetings
+
+To add face-to-face events, you must first configure the *Meetings* function. Go to the *Add feature/ component* drop-down menu (<<add-feature-component-fig>>) and click on *Meetings*. The *ADD FEATURES/ COMPONENTS: MEETINGS* window will open (<<meetings-fig>>).
+
+You need to give a *Name* to the Trobades function, select *Weight* (position in the process's menu), and enter *Announcement*, where appropriate, in *Global settings* and *Step settings*, and tick (by clicking) *Comments enabled* so that the process’s participants can make comments on the meetings or *Comments blocked*.
+
+Click on *Add feature/ Component* immediately after.
+
+Once the *Meetings* function has been configured, you can create meetings. Go to the submenu on the left of the participatory process, to *Features/ Components* and click on *MeetingName* (the name that the function has been given). The *MEETINGS* window will open with the list of meetings that have been previously created (<<meetings-fig>>).
+
+[#meetings-fig]
+._Meetings_.
+image::image1.png[image]
+
+The window allows you to perform the following actions by clicking on the icons:
+
+* *Preview* how the publication of the meeting will look
+* *Edit*
+* *Registrations* settings
+* *Close* the meeting once it is finished
+* Add *Attachments*
+* Add *Collections*
+* *Delete*
+
+To create a meeting, click on *NEW* in the upper right part of the *MEETINGS* window (<<add-features-compoents-meetings-fig>>). The *ADD FEATURES/ COMPONENTS: MEETINGS* window will open:
+
+[#add-features-compoents-meetings-fig]
+._Add Features/ Components: Meetings_.
+image::image62.png[image]
+
+The information that has to be edited where a meeting is created is (<<create-meeting-fig>>):
+
+* *Title*
+* *Description*
+* *Address*: Street name, number, post code and city)
+* *Location*: Name of the building and room where the meeting will be held etc.
+* *Location hints*: where necessary, how to get there, floor, block etc.
+* *Start time*: select the date and time on the calendar it appears on by clicking on the field.
+* *End time*: as above
+* *Category*: where necessary, select the category from the drop-down menu.
+
+[#create-meeting-fig]
+._Create meeting_.
+image::image60.png[image]
+
+To activate meeting registrations, go to the *MEETINGS* window (<<meetings-fig>>), and click on the *Registrations* icon. An *Inscripcions* window will open (<<registrations-fig>>), where you need to click on *Registrations enabled*, select the available seating capacity from the *Available slots* drop-down menu (leave it at 0 if there is an unlimited number), and enter the details in *Registration terms*. To finish, click *Save*. The window lets you export the registrations in CSV, JSON or EXCEL format, which you can select from the *Export* drop-down menu.
+
+[#registrations-fig]
+._Registrations_.
+image::image9.png[image]
+
+If you wish to attach a file to the information on the meeting, go to the *MEETINGS* window (<<meetings-fig>>) and click on the *Attachments* icon. The *Attachments* window will open (<<attachments-fig), where a list will appear if there are other attached files and where you can *Edit* or *Delete* the attached files.
+
+[#attachments-fig]
+._Attachments_.
+image::image44.png[image]
+
+Click on *NEW* to attach a file. Then, in the *NEW ATTACHMENT* window (<<new-attachment-meetings-fig>>), enter the *Title* and *Description*, upload the file (by clicking on *Seleccionar archivo*). To finish, click on *Create attachment*.
+
+[#new-attachment-meetings-fig]
+._New attachment_.
+image::image17.png[image]
+
