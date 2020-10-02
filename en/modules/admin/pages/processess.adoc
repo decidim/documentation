@@ -1,8 +1,6 @@
 == Processes
-:experimental:
-:icons: font
-:page-partial:
-:source-highlighter: highlightjs
+
+include::partial$legacy.adoc[]
 
 To configure participatory processes on the Decidim platform, click on *PROCESSES* in the *DASHBOARD*. A list will appear with the existing processes, if there are any (<<participatory-processes-fig>>).
 

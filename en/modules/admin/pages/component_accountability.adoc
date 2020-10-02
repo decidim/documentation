@@ -1,4 +1,7 @@
 = Accountability
+
+include::partial$legacy.adoc[]
+
 The *Accountability* component allows people who visit the platform to view the level of execution (global, by categories and / or subcategories), of the results of a participatory process. That is to say, the proposals that have ended up being the result of the decision making in the Decidim, either directly (through the result of the application of a voting system) or mediated by meetings, assemblies, technical or political team, and its degree of execution.
 
 The results can be converted into projects or decomposed into subprojects, which can be described in more detail and for which the execution status can be defined, ranging from 0% execution to 100%. The results, projects and states can be updated through a CVS and manually through the administration interface.

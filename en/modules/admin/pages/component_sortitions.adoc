@@ -1,5 +1,7 @@
 = Sortitions
 
+include::partial$legacy.adoc[]
+
 The *Sortitions* function allows you to randomly select a certain number of proposals from a series, for example, to determine at random which people will form part of a group (such as a committee) from a larger group, where each person would be a nomination.
 
 To configure the *Sortitions* function in the *PROCESSES* submenu, click first on *Features/ Components* and then click on *Add feature* in the upper right part of the window and select *Sortitions*. The *ADD FEATURE/ COMPONENTS: SORTITIONS* (<<add-feature-components-sortitions-fig>>).

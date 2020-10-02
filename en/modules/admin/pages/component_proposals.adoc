@@ -1,5 +1,7 @@
 = Proposals
 
+include::partial$legacy.adoc[]
+
 To configure the *Proposals* function, go to the *PROCESSES* submenu and click on *Features/ Components*, then click on *Add feature/ Component* in the upper right part of the window and select *Proposals*. The *ADD FEATURE/ COMPONENT: PROPOSALS* window will open (<<add-feature-component-proposals-fig>>). The information you need to enter when the proposal function is configured is:
 
 * *Name*: Name of the proposal

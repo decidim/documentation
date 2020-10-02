@@ -1,5 +1,7 @@
 = Budgets
 
+include::partial$legacy.adoc[]
+
 To configure the participatory budget function, go to the *PROCESSES* submenu, click on *Features/Components* click on *Add feature/ Component* in the upper right part of the window and select *BUDGETS*. The *ADD FEATURES/ COMPONENTS: BUDGETS* (<<add-feature-component-budgets-fig>>) window will open. You need to fill in the following fields:
 
 * *Name*: name of the function.

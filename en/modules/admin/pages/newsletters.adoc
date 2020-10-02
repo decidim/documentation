@@ -1,8 +1,6 @@
 == Newsletters
-:experimental:
-:icons: font
-:page-partial:
-:source-highlighter: highlightjs
+
+include::partial$legacy.adoc[]
 
 Newsletters are emails with information on the platform (new developments, processes that are sent to everyone who has been registered with the platform and who has ticked the box for receiving relevant information on the processes there are on the platform.
 

@@ -1,4 +1,7 @@
 = Debates
+
+include::partial$legacy.adoc[]
+
 The feature/ component *Debate* allows you to open questions or discussions about specific topics defined by the administrators or the participants. +
 To configure the *Debate* Feature/ Component, in the submenu of *PARTICIPATORY PROCESSES*, click on *features/ components*. Then click on *Add feature/ component* in the upper right corner of the window and select Debates. The window opens *ADD FEATURE/ COMPLEMENT: DEBATES* (<<add-feature-components-debates-fig>>).
 

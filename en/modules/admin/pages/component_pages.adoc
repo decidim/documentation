@@ -1,5 +1,7 @@
 = Page
 
+include::partial$legacy.adoc[]
+
 These are pages with information on the various processes that may describe the process and its stages, participation methods, goals etc.
 
 To add a page, click *Page* in the *Add feature/ Component* drop-down menu. The *ADD A FEATURE/ COMPONENT: PAGE* window will open: where the following fields have to be filled in (<<add-feature-component-page-fig>>):

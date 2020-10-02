@@ -1,8 +1,7 @@
 == How to access the administrator menu
-:experimental:
-:icons: font
-:page-partial:
-:source-highlighter: highlightjs
+
+include::partial$legacy.adoc[]
+
 
 First you need to start the session. Go to the top right part of Decidim webpage (<<MetaDecidim-home-page-fig>>) and click on Sign In. Only those whose administrator authorisation has been configured can access the Dashboard.
 

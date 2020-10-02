@@ -1,4 +1,7 @@
 = Surveys
+
+include::partial$legacy.adoc[]
+
 This component allows you to design and carry out surveys, as well as to visualize the results of the surveys. It is useful to be able to know the opinion of the citizens.
 
 To configure the component (feature) of the surveys, in the *PROCESS* sub-menu, click on *Features / Components*, then click *Add feature/ component* in the upper right corner of the window and select *Survey*. Opens the window *ADD FEATURE/ COMPONENT: SURVEY* (<<add-features-components-survey-fig>>).

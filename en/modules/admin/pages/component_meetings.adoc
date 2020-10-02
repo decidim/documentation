@@ -1,5 +1,7 @@
 = Meetings
 
+include::partial$legacy.adoc[]
+
 To add face-to-face events, you must first configure the *Meetings* function. Go to the *Add feature/ component* drop-down menu (<<add-feature-component-fig>>) and click on *Meetings*. The *ADD FEATURES/ COMPONENTS: MEETINGS* window will open (<<meetings-fig>>).
 
 You need to give a *Name* to the Trobades function, select *Weight* (position in the process's menu), and enter *Announcement*, where appropriate, in *Global settings* and *Step settings*, and tick (by clicking) *Comments enabled* so that the process’s participants can make comments on the meetings or *Comments blocked*.
