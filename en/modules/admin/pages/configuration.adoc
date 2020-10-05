@@ -17,12 +17,12 @@ These are:
 image::settings_configuration_social.png[Social networks configuration in Decidim]
 
 * **Default locale**. Required. 
-* **Time Zone**. Required. In which Time Zone is your organization. Used by things like calendar in Meetings.
+* **Time Zone**. Required. In which Time Zone is your organization. Used by things like calendars in Meetings.
 * **Reference prefix**. Required. 
-* **Enable badges**. Wheter you want or not that your participants have badges as a gamification mechanism, for instance for creating proposals or making comments. See xref:admin:badges.adoc[Badges documentation]
-* **Enable groups**.  Wheter you want or not that your participants have the possibility to create User Groups. Useful for example for Associations. See xref:admin:users_groups.adoc[User Groups documentation]
-* **Enable rich text editor for participants**.  Wheter you want or not that your participants have the possibility to have a https://en.wikipedia.org/wiki/WYSIWYG[What You See Is What You Get (WYSIWYG) editor]. In some text areas, participants will be able to insert some HTML tags by using the rich text editor.
-* **Send welcome notification**. Wheter you want or not that your participants receive a notification when their first created their account. If enabled you can customize this notification. 
+* **Enable badges**. Whether you want or not that your participants have badges as a gamification mechanism, for instance for creating proposals or making comments. See xref:admin:badges.adoc[Badges documentation]
+* **Enable groups**.  Whether you want or not that your participants have the possibility to create User Groups. Useful for example for Associations. See xref:admin:users_groups.adoc[User Groups documentation]
+* **Enable rich text editor for participants**.  Whether you want or not that your participants have the possibility to have a https://en.wikipedia.org/wiki/WYSIWYG[What You See Is What You Get (WYSIWYG) editor]. In some text areas, participants will be able to insert some HTML tags by using the rich text editor.
+* **Send welcome notification**. Whether you want or not that your participants receive a notification when their first created their account. If enabled you can customize this notification. 
 ** **Customize welcome notification**. 
 ** **Welcome notification subject**. 
 ** **Welcome notification body**.  

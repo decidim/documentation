@@ -38,7 +38,7 @@ IMPORTANT: Please don't use this password, is really insecure!
 
 == 2. Access the Dashboard
 
-After you've succesfully logged in, you'll see an empty dashboard: 
+After you've logged in, you'll see an empty dashboard: 
 
 image::system-dashboard.png[system empty dashboard]
 
@@ -46,7 +46,7 @@ image::system-dashboard.png[system empty dashboard]
 
 Inside of the system panel, you need to create your Organization through the form:
 
-TIP: Please mind that some of this fields can't change through the System Form, as changing them could potentially leave your database in a broken state. You can change it through the console, but you'll be in your own.
+TIP: Please mind that some of these fields can't change through the System Form, as changing them could potentially leave your database in a broken state. You can change it through the console, but you'll be in your own.
 
 .System New Organization form
 |===
@@ -58,7 +58,7 @@ TIP: Please mind that some of this fields can't change through the System Form, 
 
 |Reference prefix
 |Required
-|The reference prefix is used to uniquely identify resources across all organization. It's an identificator for different resources inside of Decidim. For instance, "BCN". You can change how it's created this reference through xref:configure:initializer.adoc[Decidim's initializer] (see **Custom resource reference**).
+|The reference prefix is used to uniquely identify resources across all organizations. It's for identifying different resources inside of Decidim. For instance, "BCN". You can change how it's created this reference through xref:configure:initializer.adoc[Decidim's initializer] (see **Custom resource reference**).
 
 
 |Host
@@ -67,7 +67,7 @@ TIP: Please mind that some of this fields can't change through the System Form, 
 
 |Secondary hosts
 |Optional
-|Another hosts that goes for this same installation. Normally this shouldn't be used. Enter each one of them in a new line. For instance, "example.com"
+|Others domains or subdomains that point to this same installation. Normally this shouldn't be used. Enter each one of them in a new line. For instance, "example.com"
 
 |Organization admin name
 |Required
@@ -106,11 +106,11 @@ TIP: Please mind that some of this fields can't change through the System Form, 
 
 ==== Allow participants to register and login
 
-Most of the installations use this settings. Means that everyone can register a participant account and login, without restrictions, only with an email account confirmation (and you can disable that cofirmation also if you want to through xref:configure:initializer.adoc[Decidim's initializer])
+Most of the installations use this setting. Means that everyone can register a participant account and login, without restrictions, only with an email account confirmation (and you can disable that confirmation also if you want to through xref:configure:initializer.adoc[Decidim's initializer])
 
 ==== Don't allow participants to register, but allow existing participants to login
 
-This is for when you make a manual import of participants account.
+This is for when you make a manual import of participants' accounts.
 
 ==== Access only can be done with external accounts
 

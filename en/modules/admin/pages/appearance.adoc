@@ -8,17 +8,17 @@ image::admin_appearance.png[Decidim Admin Appearance]
 
 ---
 
-NOTE: This is a legacy setting that will be removed in a next version. https://github.com/decidim/decidim/pull/6575[See PR].
+NOTE: This is a legacy setting that will be removed in the next version. https://github.com/decidim/decidim/pull/6575[See PR].
 
-* **Show statistics**: wheter you want to show or not the statistics sections in the homepage.
-
----
-
-* **Description**: What's the description of this site. Used for metatags for Google and Twitter embeds. Also used by the "SubHero" ContentBlock in Homepage.
+* **Show statistics**: whether you want to show or not the statistics sections in the homepage.
 
 ---
 
-NOTE: These area legacy settings that will be removed in a next version. https://github.com/decidim/decidim/pull/6284[See PR].
+* **Description**: What's the description of this site. Used for metatags for Google and Twitter embeds. Also used by the "SubHero" ContentBlock in the Homepage.
+
+---
+
+NOTE: These area legacy settings that will be removed in the next version. https://github.com/decidim/decidim/pull/6284[See PR].
 
 * **Call To Action button path**: You can overwrite where the Call To Action button in the homepage links to. Use partial paths, not full URLs here. Accepts letters, numbers, dashes and slashes, and must start with a letter. The Call To Action button is shown in the homepage between the welcome text and the description. Example: https://meta.decidim.org/conferences/decidimfest2020/
 
@@ -27,7 +27,7 @@ NOTE: These area legacy settings that will be removed in a next version. https:/
 ---
 
 
-NOTE: This is a legacy setting that will be removed in a next version. There's no PR yet.
+NOTE: This is a legacy setting that will be removed in the next version. There's no PR yet.
 
 
 * **Highligted content banner**
@@ -63,7 +63,7 @@ This subsection defines the images for the layout that will be visible in almost
 
 --- 
 
-* **Organization colors**: What are the colors for your organization. Please notice that this could generate accessibility problems, for instance with people that doesn't have good contrast notion. You can set 
+* **Organization colors**: What are the colors for your organization. Please notice that this could generate accessibility problems, for instance with people that doesn't have a good contrast notion. You can set 
 ** Primary
 ** Secondary
 ** Success

@@ -26,7 +26,7 @@ At the admin this is handled with:
 
 // TODO: add screenshot
 
-In your installation you could have other content blocks, as this depends on which modules you have active. Please put you in touch of your system admininstrator if you see something different here, like a missing content block.
+In your installation you could have other content blocks, as this depends on which modules you have active. Please contact your system administrator if you see something different here, like a missing content block.
 
 == Content blocks
 
@@ -34,7 +34,7 @@ These are the different content blocks enabled with the official Decidim modules
 
 === Hero image
 
-NOTE: These area legacy settings that will be removed in a next version. https://github.com/decidim/decidim/pull/6284[See PR]. In this next version you're going to be able to change the button and path for this button from this same content block. 
+NOTE: These area legacy settings that will be removed in the next version. https://github.com/decidim/decidim/pull/6284[See PR]. In this next version you're going to be able to change the button and path for this button from this same content block. 
 
 image::homepage_hero_image_back.png[Hero image in Homepage backend content block]
 
