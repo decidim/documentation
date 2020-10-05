@@ -1,0 +1,37 @@
+= Sortitions
+
+include::partial$legacy.adoc[]
+
+The *Sortitions* function allows you to randomly select a certain number of proposals from a series, for example, to determine at random which people will form part of a group (such as a committee) from a larger group, where each person would be a nomination.
+
+To configure the *Sortitions* function in the *PROCESSES* submenu, click first on *Features/ Components* and then click on *Add feature* in the upper right part of the window and select *Sortitions*. The *ADD FEATURE/ COMPONENTS: SORTITIONS* (<<add-feature-components-sortitions-fig>>).
+
+[#add-feature-components-sortitions-fig]
+._Add Feature/ Components: Sortitions_.
+image::image45.png[image]
+
+The following fields have to be filled in:
+
+* *Name*: Name of the sortition
+* *Weight*: the order in which the *Sortition* component will be displayed in the participatory process’s menu.
+* *Gobal settings*: Tick *Comments enabled* if there is a need for comments to be made.
+
+To finish, click on *Add feature/ Component*.
+
+To carry out a draw, click on *NEW* from the *SORTITIONS* window (to access it click on *Sortitions* from the participatory process's *Features/ Components* submenu). +
+The *NEW SORTITION* window (<<new-sortition-fig>>) will open.
+
+The fields that have to be filled in for configuring a new draw are as follows:
+
+* *Title*
+* *Proposals set*: select the series of proposals (in this case, the people who may form part of the group/ committee) that are included in the draw.
+* *Categories of the set of proposals in which you want to apply the draw*: select, where necessary, the categories of the series of proposals that you wish the draw to apply to.
+* *Number of proposals to be selected*: select the number of proposals (from the drop-down menu) which you want to be selected by means of a random draw of the previously selected series of proposals.
+* *Witnesses*: Enter the names of the people who will be witnesses.
+* *Sortition information*: fill in if further information is deemed relevant.
+* *Result of die roll*: To further guarantee the randomness of the result, you will need to throw a 6-sided die (or look for another random way of generating a number from 1 to 6) before witnesses and enter the resulting number in the drop-down menu.
+
+[#new-sortition-fig]
+._New Sortition_.
+image::image4.png[image]
+

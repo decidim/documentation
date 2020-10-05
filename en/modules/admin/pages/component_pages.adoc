@@ -1,0 +1,29 @@
+= Page
+
+include::partial$legacy.adoc[]
+
+These are pages with information on the various processes that may describe the process and its stages, participation methods, goals etc.
+
+To add a page, click *Page* in the *Add feature/ Component* drop-down menu. The *ADD A FEATURE/ COMPONENT: PAGE* window will open: where the following fields have to be filled in (<<add-feature-component-page-fig>>):
+
+* *Name*: name of the page.
+* *Weight*: This corresponds to the order in which the components (in this case, the page) are displayed in the participatory process menu.
+* *Global settings*: enter the content of the message here only if you want to display an *Announcement* on the *Page* (highlighted message).
+* *Step settings*: enter the content of the message in the stage it is meant to appear in, if you only want to display an *Announcement* on the *Page* (highlighted message) during the execution of a stage.
+
+Then click on *Add feature/ Component*.
+
+[#add-feature-component-page-fig]
+._Add Feature/ Component: Page_.
+image::image72.png[image]
+
+To create/ edit the contents of the configured page, go to the submenu on the left of the participation process, *Features/ Component*, and click on the *page name* (the name that the page has been given).
+
+The Edit page will open. Enter the page's content in the *Body* box. Once you have done that, click on *Update* (<<edit-page-fig>>).
+
+[#edit-page-fig]
+._Edit page_.
+image::image75.png[image]
+
+You can also edit the page or change its settings from the *Features/ Component* window (<<features-components-fig>>), by clicking the corresponding (*Manage* and *Configure*) icons. This window will likewise allow you to *Publish/ Unpublish* or *Destroy* the page.
+

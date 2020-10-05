@@ -1,0 +1,27 @@
+= Participants Impersonations
+
+For participants that don't have the knowledge or don't have an email for registering an account, there's the Impersonation feature.
+
+This allows an 'Administrator' or 'Participant manager' to search through a Verification system for an already existing participant and also to create a participant without email. 
+
+NOTE: At the code and the User Interface we say both *Impersonation* and *Managed Participants*. Is the same thing.
+
+## Panel
+
+image::participants_impersonations.png[Admin's Impersonations panel]
+
+This is the panel where you can find all the participants: 
+* by filtering by managed or not managed participants 
+* by searching by name 
+
+After you've clicked in `Manage new participant` you'll go to the form to enter the personal data to check against the verification: 
+
+image::participants_impersonations_form.png[Admin's Impersonations form]
+
+After this data is confirmed then there'll be a session for the participant for 30 minutes:
+
+image::participants_impersonations_user.png[Impersonated user session]
+ 
+Finally, it's also possible to Promote a participant, meaning that after a participant has been managed, an administrator can add the email and send her an Invitation:
+
+image::participants_impersonations_promotion.png[Admin's promotion Impersonations]

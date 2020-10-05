@@ -1,8 +1,6 @@
 == Assemblies
-:experimental:
-:icons: font
-:page-partial:
-:source-highlighter: highlightjs
+
+include::partial$legacy.adoc[]
 
 To configure bodies such as municipal Councils or city Assemblies, click on *ASSEMBLIES* in the menu on the left of the *DASHBOARD* (<<assemblies-fig>>).
 

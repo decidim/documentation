@@ -1,0 +1,81 @@
+= Appearance
+
+In this page you can configure the look and feel of your Decidim instance.
+
+Please mind that this would be incompatible with some of the changes that your implementers could change in your general installation. For instance if there were changes in the xref:customize:styles.adoc[Styles] this could not work.
+
+image::admin_appearance.png[Decidim Admin Appearance]
+
+---
+
+NOTE: This is a legacy setting that will be removed in the next version. https://github.com/decidim/decidim/pull/6575[See PR].
+
+* **Show statistics**: whether you want to show or not the statistics sections in the homepage.
+
+---
+
+* **Description**: What's the description of this site. Used for metatags for Google and Twitter embeds. Also used by the "SubHero" ContentBlock in the Homepage.
+
+---
+
+NOTE: These area legacy settings that will be removed in the next version. https://github.com/decidim/decidim/pull/6284[See PR].
+
+* **Call To Action button path**: You can overwrite where the Call To Action button in the homepage links to. Use partial paths, not full URLs here. Accepts letters, numbers, dashes and slashes, and must start with a letter. The Call To Action button is shown in the homepage between the welcome text and the description. Example: https://meta.decidim.org/conferences/decidimfest2020/
+
+* **Call To Action button text**:  You can overwrite the Call To Action button text in the homepage for each available language in your organization. If not set, the default value will be used. The Call To Action button is shown in the homepage between the welcome text and the description.
+
+---
+
+
+NOTE: This is a legacy setting that will be removed in the next version. There's no PR yet.
+
+
+* **Highligted content banner**
+** *Show the highlighted content banner*
+** *Title*
+** *Short description*
+** *Action button title*
+** *Action button subtitle*
+** *Action button URL*
+** *Image*
+
+---
+
+* *Edit omnipresent banner*
+** **Show omnipresent banner**
+** **Title**
+** **Short description**
+** **URL**
+
+---
+
+* **Edit layout appearance**
+
+This subsection defines the images for the layout that will be visible in almost all the pages. These are: 
+
+** Icon 
+** Logo
+** Official logo header
+** Official logo footer 
+** Official organization URL 
+
+// TODO: Add examples 
+
+--- 
+
+* **Organization colors**: What are the colors for your organization. Please notice that this could generate accessibility problems, for instance with people that doesn't have a good contrast notion. You can set 
+** Primary
+** Secondary
+** Success
+** Warning
+** Alert
+** Highlight
+** Highlight, alternative
+
+// TODO: Add examples 
+
+--- 
+
+* **Header snippets**: Use this field to add things to the HTML head. The most common use is to integrate third-party services that require some extra JavaScript or CSS. Also, you can use it to add extra meta tags to the HTML. Note that this will only be rendered in public pages, not in the admin section.
+
+// TODO: reference to HTML snippet setting

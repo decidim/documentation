@@ -1,0 +1,17 @@
+= Dashboard
+
+After you've logged in as user Administrator, you'll see the Dashboard, were you'll have a summary of the last activity of the platform. 
+
+image::admin_dashboard.png[Decidim Admin Dashboard]
+
+You'll have three blocks: 
+
+1. Activity: participants and admins that had logged in in last month, last week and last day. 
+2. Metrics: the graphics for the evolution of multiple things inside of Decidim: 
+  * Participants
+  * Proposals
+  * Comments
+  * Meetings
+  * Accepted proposals
+  * Results
+3. Admin log: last actions made by Administrator users in the platform.

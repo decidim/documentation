@@ -1,0 +1,61 @@
+= Budgets
+
+include::partial$legacy.adoc[]
+
+To configure the participatory budget function, go to the *PROCESSES* submenu, click on *Features/Components* click on *Add feature/ Component* in the upper right part of the window and select *BUDGETS*. The *ADD FEATURES/ COMPONENTS: BUDGETS* (<<add-feature-component-budgets-fig>>) window will open. You need to fill in the following fields:
+
+* *Name*: name of the function.
+* *Weight*: this corresponds to the order in which you wish to display the component in the process menu.
+* Go to *Global settings*
+
+** *Total budget*: select the figure from the drop-down menu.
+** *Vote threshold percent*: select the percentage from the drop-down menu.
+** *Comments enabled*: tick to enable comments to be made.
+** *Announcement*: enter whether you wish to display a notice.
+
+* *Default step settings*: for each stage, tick the appropriate options:
+
+** *Comments blocked*: tick if there is no need for being able to make comments.
+** *Votes enabled*: Votes for projects may be collected.
+** *Show votes*: This shows the number of times that a project has been selected.
+** *Announcement*: enter whether you wish to show a notice at some stage.
+
+To finish, click on *Add feature/ Components*.
+
+[#add-feature-component-budgets-fig]
+._Add Feature/ Component: Budgets_.
+image::image76.png[image]
+
+Once the budget function has been configured, the projects that will be put to the vote need to be created. Go to the participatory process's submenu, to *Features/ Components* and select *Budgedname* (the name that is given to the function), and click *New*.
+
+The *NEW RESULT* window will open (<<new-budget-result-fig>>). The fields that appear in the file are as follows:
+
+* *Title*
+* *Description*
+* *Budget*
+* *Scope*: select the scope from the drop-down menu.
+* *Category*: where necessary, select the category from the drop-down menu.
+* *Related proposals*: select proposals relating to the project.
+
+[#new-budget-result-fig]
+._New budget result_.
+image::image11.png[image]
+
+To edit projects for voting on, go to the participatory process's submenu, then go to *Features/ Components* and select *Budgetname* (the name that the function has been given). The *PROJECTS* window (<<list-of-projects-for-voting-on-fig>>) will open. Click on the corresponding icons: *Preview* to see how they will look, *Edit, Collections* and *Attachments* for adding documents or *Delete*. This window also lets you see the votes that the various projects have received. (Number of votes) and the total number of votes (*Finished votes* and *Pending votes*, that is, that a participant has started voting but has still not cast their vote).
+
+[#list-of-projects-for-voting-on-fig]
+._List of projects for voting on_.
+image::image41.png[image]
+
+Besides creating the projects, you also have to specify who can vote for them. Go to the *PROCESSES* submenu and click first on *Features/ Components* and then on the *Permissions* icon from *Budgets*. (<<budget-permissions-icon-fig>>).
+
+[#budget-permissions-icon-fig]
+._Budget permissions icon_.
+image::image26.png[image]
+
+The *Editing Permissions* window opens, in which the criterion must be selected in the drop-down so people can vote. These criteria vary depending on the instance and must be defined when the Decide is installed, although they can be modified later by a programmer. In the example (<<budget-edit-permissions-fig>>), the criteria are: *Everyone, Identify documents (Multy-Step), Code by postal letter (Multi-Step)* and *Example authorization (Direct)*.
+
+[#budget-edit-permissions-fig]
+._Budget edit permissions_.
+image::image66.png[image]
+
