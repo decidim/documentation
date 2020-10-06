@@ -21,8 +21,9 @@
 *** xref:customize:views.adoc[Views]
 ** xref:configure:services:index.adoc[Services]
 *** xref:services:activejob.adoc[Active Job]
+*** xref:services:elections_bulletin_board.adoc[Elections Bulletin Board]
 *** xref:services:etherpad.adoc[Etherpad]
-*** xref:services:geocoding.adoc[Geocoding]
+*** xref:services:maps.adoc[Maps]
 *** xref:services:smtp.adoc[SMTP]
 *** xref:services:social_providers.adoc[Social Providers]
 
@@ -67,6 +68,8 @@
 *** xref:develop:content_processors.adoc[Content Processors]
 *** xref:develop:deploy.adoc[Deploy]
 *** xref:develop:docker.adoc[Docker]
+*** xref:develop:fixing_locales.adoc[Fixing locales]
+*** xref:develop:maps.adoc[Maps]
 *** xref:develop:managing_translations_i18n.adoc[i18n]
 *** xref:develop:metrics.adoc[Metrics]
 *** xref:develop:modules.adoc[Modules]
@@ -75,6 +78,7 @@
 *** xref:develop:permissions.adoc[Permissions]
 *** xref:develop:profiling.adoc[Profiling]
 *** xref:develop:releases.adoc[Releases]
+*** xref:develop:templates.adoc[Templates]
 *** xref:develop:testing.adoc[Testing]
 *** xref:develop:turbolinks.adoc[Turbolinks]
 *** Views
