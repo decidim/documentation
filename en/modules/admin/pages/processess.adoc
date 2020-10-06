@@ -1,243 +1,224 @@
-== Processes
+= Processes
 
 include::partial$legacy.adoc[]
 
-To configure participatory processes on the Decidim platform, click on *PROCESSES* in the *DASHBOARD*. A list will appear with the existing processes, if there are any (<<participatory-processes-fig>>).
+A participatory process is a sequence of participatory activities (e.g. first filling out a survey, then making proposals, discussing them in face-to-face or virtual meetings, and finally prioritizing them) with the aim of defining and making a decision on a specific topic.
 
-[#participatory-processes-fig]
-._Participatory processes_.
-image::image29.png[image]
+Examples of participatory processes are: a process of electing committee members (where candidatures are first presented, then debated and finally a candidacy is chosen), participatory budgets (where proposals are made, valued economically and voted on with the money available), a strategic planning process, the collaborative drafting of a regulation or norm, the design of an urban space or the production of a public policy plan.
 
-The created at date is shown for each of the processes, whether or not published, and the following actions can be performed by clicking on the corresponding icons: duplicate the process; configure and preview how it will look once published.
+A really important concept for making good use of Decidim is to understand the relationship between Phases and Components in a participatory process in Decidim:
 
-The information on the processes can be edited by clicking on the *Configure* icon or name of the process.
+image::process_steps_components.png[Relation between Steps and Components in a Process in Decidim]
 
-To create a new process, click on *New* in the *PARTICIPATORY PROCESSES* submenu or on the upper right part of the window (<<participatory-processes-fig>>). A window will open where you have to enter general information on the process (See 5.1 Information). The process (stages, users, functions etc.,) is configured through the submenu of the process that appears when you click on a process on the process list screen (<<participatory-process-submenu-fig>>). This submenu is on the left of the process window.
+What this diagram is showing is that for a participatory process you can have 7 phases:
 
-[#participatory-process-submenu-fig]
-._Participatory process submenu_.
-image::image31.png[image]
+. Configuration & Presentation
+. Diagnostic
+. Proposal Creation
+. Proposal Selection 
+. Results
+. Evaluation
+. Monitoring 
 
-[[h.46r0co2]]
-=== Information
+Inside of every one of these Phases, there are some components (like Blog, Meetings, Survey, Debates, Proposals, Results). Some of these Components allows some features depending in the Phase that we are. 
 
-You first have to fill in the fields with general information on the process. Click on *PROCESSES* in the *DASHBOARD* and click on *New* in the *PARTICIPATORY PROCESS* submenu on the upper right of the window that appears with the list of processes. A *NEW PARTICIPATORY PROCESS* window will open (<<new-participatory-process-fig>>).
+In this section we'll understand how we can configure a Participatory Process in Decidim. 
 
-[#new-participatory-process-fig]
-._New participatory process_.
-image::image55.png[image]
+== List
 
-Fill in the following fields (remember that where the platform is in two or more languages, you will need to fill in the information in all the languages):
+To configure participatory processes on the Decidim platform, click on btn:[Processes] in the admin sidebar menu. A list will appear with the existing processes if there are any:
 
-* *Title*: enter the name of the participatory process
-* *Subtitle*: enter the name of the subtitle.
-* *URL slug*: word identifying the webpage where there is general information on the process. For example, “nomdelprocés”, https://decidim.nomdelmunicipi.com/processes/nomdelprocés.
-* *Hashtag*: a tag for social networks. The same one that will be used on network campaigns, Twitter, Facebook, Instagram, etc. (a single word).
-* *Start date*: select the corresponding date on the calendar that appears when the Data d’inici box is clicked on.
-* *End date*:  select the corresponding date on the calendar.
-* *Promoted*: tick whether you wish to highlight the process on the platform’s home page.
-* *Short description*: 600 characters maximum, explaining the participatory actions.
-* *Description*: from 1600 characters “llegir més” (read more) is displayed.
-* *Home image*: image associated with the participatory process that appears on the general process page (<<image-of-genera-processes-front-pate-fig>>) and on Decidim's home page, where the *promoted* option has been ticked (<<image-of-decidim-homepage-front-page-img>>). Minimum sizes: 1015 px. wide x 667 px. high.
-* *Banner image*: image for all the pages of the process, published on the upper part of the pages, from left to right (<<banner-image-fig>>). Minimum sizes: 1200 px. wide x 300 px. high.
-* *Developer group*: manager and person politically responsible for the participatory process, can only be the City Council or a group made up of City Council professionals and politicians and associations, enterprises, city residents and other entities.
-* *Local area*: areas of the City Council involved in the participatory process.
-* *Scope metadata*: this is not displayed, being internal information about which area of the city the process is aimed at.
-* *Target*: individuals the participatory process is aimed at.
-* *Scopes enabled*: tick whether you wish to identify with a sphere of action (municipal, district 1, district 2 and so on).
-* *Scope*: select the corresponding scope from the drop-down menu. The scopes will need to have been created beforehand.footnote:[On creating scopes, see point 2.]
-* *Participatory scope*: explanation of the decision margin or limits that citizens will have in this process.
-* *Participatory structure*: promoter group, monitoring committee, working group, entities that will be taking part in the participatory process’s various workshops and meetings.
-* *Processes group*: where this is a process within a group, select the corresponding process group from the drop-down menu. For example, an Action Plan by District, within a Municipal Action Plan. The group must have been created beforehand. If it is not part of any group, select *None* from the drop-down menu.
-* *Show statistics*: tick whether you wish to display the process’s statistics (Number of meetings, proposals and so on) on the process’ main page.
-* *Announcement*: if you want a paragraph displayed with a specific announcement (for example, if a new stage begins in any participatory process).
+image::processes_list.png[Participatory processes list]
 
-[#image-of-genera-processes-front-pate-fig]
-._Image of general processes' front page_.
-image::image63.png[imatge]
+You can filter by the ones that are:
+* Published / Unpublished
+* Public / Private
 
-[#image-of-decidim-homepage-front-page-img]
-._Image of Decidim homepage's front page_.
-image::image43.png[image]
+image::processes_list_filter.png[Participatory processes list filtered]
 
-[#banner-image-fig]
-._Banner image_.
-image::image47.png[image]
+You can also search by title and control how many elements are in the list. 
 
-To finish, click on *Create*. You can see how all this information will be displayed by clicking on the process’s corresponding *Preview* icon.
+You have 4 possible actions in this list after a Participatory Process is created: 
+1. Export: send by email the configuration for a given process. Can be imported in other Decidim installation.
+2. Duplicate: to duplicate this process.
+3. Configure: to edit the metadata and configuration for a process.
+4. Preview: how it will look once published.
 
-To finish configuring the process, click on the project’s name in the window with the list of processes. A window with general information on the process will open and the process's submenu will appear, allowing you to configure the process's stages, functions, categories, users, moderations and attached information.
+== New process form 
 
-[[h.4k668n3]]
-=== Stages of the process
+image::processes_new_form.png[New participatory process form]
 
-A participatory process will be reflected on the Decidim platform at different stages, each with a start date and finish date, both pre-established at the beginning, so that citizens are clear about where the process is at and how they can take part in it at any time.
+.System New Organization form: General information
+|===
+|Field |Type |Description
 
-As a guideline, the standard structure of a participatory process may be as follows: Stage 1: presentation; Stage 2: diagnosis; Stage 3: proposal creation and debate; Stage 4: prioritisation of proposals; Stage 5: selection of results; Stage 6: assessment; Stage 7: monitoring.
+|Title
+|Required
+|Title of the participatory process. For instance, "Participatory Budgeting 2020".
 
-To configure the stages of the process, click on *Steps* in the *PARTICIPATORY PROCESS* submenu and then click *NEW*. A *NEW PARTICIPATORY PROCESS STEP* window will open (<<new-participatory-process-step-fig>>).
+|Subtitle
+|Required
+|Subtitle. For instance, "Let's decide our priorities together"
 
-You need to enter the following for each of the stages:
+|URL slug
+|Required
+|URL slugs are used to generate the URLs that point to this process. Only accepts letters, numbers and dashes, and must start with a letter. Example: if your domain is 'example.org' and your slug 'participatory-budget-2020' then your URL will be https://example.org/processes/participatory-budget-2020 
+ 
+|Hashtag
+|Optional
+|Hashtag for Twitter
 
-* *Title*
-* *Description*
-* *Start date and end date*
+|Short description
+|Required
+|A short explanation of what's your participatory process about.
 
-Once you have done that, click on *Create*.
+|Description
+|Required
+|A long explanation of what's your participatory process about.
 
-[#new-participatory-process-step-fig]
-._New participatory process step_.
-image::image32.png[image]
+|Announcement
+|Optional
+|The text you enter here will be shown to the user right below the process information.
 
-To activate the stage the process is at, click on *Steps* from the *PARTICIPATORY PROCESS* submenu. A window will open showing all the stages of the process that have been configured and the icons that enable you to *Activate*, *Edit* and *Destroy* each of them. Click on *Activate* at the corresponding stage (<<process-steps-fig>>).
+|=== 
 
-[#process-steps-fig]
-._Process steps_.
-image::image40.png[image]
+.System New Organization form: Duration
+|===
+|Field |Type |Description
 
-Users will be able to display the various stages and descriptions that have been configured, by clicking on *View steps* (in the flag image, on the right). The stage that is active will be highlighted in red (<<displaying-steps-of-the-participating-user-process-fig>>).
+|Start date
+|Optional
+|When this process start. You have a calendar widget to choose the day. Expected format: dd/mm/yyyy
 
-[#displaying-steps-of-the-participating-user-process-fig]
-._Displaying steps of the participating user process_.
-image::image14.png[image]
+|End date
+|Optional
+|When this process start. You have a calendar widget to choose the day. Expected format: dd/mm/yyyy
 
-[[h.2dlolyb]]
-=== Categories
+|=== 
 
-Categories (and subcategories) are used for classing contents within the various participatory spaces/ processes, as well as enabling users to filter contents. They are defined for each of the instances of the spaces.  For example, a participatory space can include several categories and subcategories and meetings, surveys, proposals and other components of the process can be classed under these categories. A category could be Environment and two of its subcategories Mobility and Air quality. <<categories-and-subcagetories-in-the-barcelona-PAM-for-20016-fig>> shows the categories and subcategories that were used in the participatory process for drafting the Barcelona Municipal Action Plan (PAM) for 2016.
+.System New Organization form: Images
+|===
+|Field |Type |Description
 
-[#categories-and-subcagetories-in-the-barcelona-PAM-for-20016-fig]
-._Categories and subcategories in the Barcelona PAM for 2016_.
-image::image65.png[image]
+|Home image
+|Optional
+|Image that will be use in presentation cards of this process. Guidance for file: Has to be an image or a document. For images, use preferably landscape images, the service crops the image. Maximum file size: 10MB
 
-Note that once the categories have been defined, you cannot change them as they become the index that structures the contents inside a participation space. For example, if there is a participatory process for electing candidates, the categories could identify lists or types of candidacies. And where the process is for defining a Plan, the categories would coincide with the index for this Plan.
+|Banner image
+|Optional
+|Image that will be use inside of the process. Guidance for file: Has to be an image or a document. For images, use preferably landscape images, the service crops the image. Maximum file size: 10MB
 
-Note too that when it comes to classing contents, Decidim also allows scopes and labels (or tags) to be distinguished and configured. Unlike categories, (territorial or thematic) scopes are general throughout the platform and are defined during the configuration of the Decidim platform of the local authority/ entity.footnote:[On how to create scopes, see point 2.2.] Whereas labels (or tags) are freely defined by participants and can apply to any instance or component. The administration panel also allows you to create and nest labels.
+|=== 
 
-For configuring categories, click on *Categories* in the *PARTICIPATIVE PROCESS* submenu. Then click on *NEW* below. You need to enter the following for each of the categories/ subcategories (<<new-category-fig>>): *Name* and *Description* and, where a subcategory is involved, select the category it corresponds to from the *Parent* drop-down menu. To finish, click on *Create category*.
+.System New Organization form: Metadata
+|===
+|Field |Type |Description
 
-[#new-category-fig]
-._New category_.
-image::image21.png[image]
+|Promoter group
+|Optional
+|Information that's displayed in the process metadata sidebar.
 
-[[h.hujj6qjwvw9u]]
-=== Attachments: Collections and Files
-When a participatory process is launched, it is important to provide citizens with as much information as possible about them so that they can participate with knowledge. That is why it is helpful to add files (Attachments) with the information that is considered relevant.
+|Organization area
+|Optional
+|Information that's displayed in the process metadata sidebar.
 
-These documents can be classified/ grouped in *Collections*. For example, for a process of remodeling a place, collections could be created with information about possible uses, with plans, with economic information, etc.
+|Scope metadata
+|Optional
+|Information that's displayed in the process metadata sidebar.
 
-First you need to create the collections to be able to place the attachments later. Click *Collections* in the submenu of the *PARTICIPATORY PROCESS*, the window is shown *ADVANCED COLLECTIONS* (<<attachment-collections-fig>>).
+|Who participates
+|Optional
+|Information that's displayed in the process metadata sidebar.
 
-[#attachment-collections-fig]
-._Attachment collections_.
-image::image39.png[image]
+|What is decided
+|Optional
+|Information that's displayed in the process metadata sidebar.
 
-Then click on *NEW* to create a new collection. Add *Name*, *Weight* and a *Description*. To finish, click *Create attachment* (<<new-collecion-fig>>).
+|Promoter group
+|Optional: How is it decided
+|Information that's displayed in the process metadata sidebar.
 
-[#new-collecion-fig]
-._New collection_.
-image::image17.png[image]
+|===
 
-Once the collections have been created, the attachments can be added. Click *Files* in the sub-menu of the *PARTICIPATORY PROCESS* and click *NEW* to add the files. The *NEW ATTACHMENT* window opens (<<new-attachment-fig>>). Write the *Title* and the *Description*, select the *Weight* and the *Collection* which you want to associate the file, and upload the file by filling the *File* option. To finish click *Create attachment*.
+image::process_frontend_metadata.png[Process frontend metadata]
 
-[#new-attachment-fig]
-._New attachment_.
-image::image37.png[image]
+image::process_backend_metadata.png[Process backend metadata]
 
-[[h.2r0uhxc]]
-=== Process' users
+.System New Organization form: Filters
+|===
+|Field |Type |Description
 
-Authorisation may be given to other individuals, besides the platform’s general administrators, so that they can administer or collaborate in a certain process or moderate where there are contents that have been reported.
+|Scopes enabled
+|Optional
+|Check if you want to have Scopes filtering in this process.
 
-The process *administrators* can configure/ edit a process whereas *collaborators* can only see what is on the administrator menu of the process without being able to configure/ edit.
+|Scope
+|Optional
+|Which xref:admin:scopes.adoc[Scope] does this process belongs to.
 
-To register administrators, collaborators and/or moderators of a process, in the process's submenu, go to *Process users* and click on *NEW*.
+|Scope filter depth
+|Optional
+|Restrict the scope filter depth; The filter will show from general to the selected scope type. This is only relevant if you have complex relations in Scopes children (like a Russian Doll). For instance if you have a Grandmother -> Mother -> Child, this setting allows you to choose the Mother, so the participants can only choose the Child. This would be the case for instance if you have Provinces -> Cities -> Districts, and the process is about a particular City.
 
-A *NEW PARTICIPATORY PROCESS USER* window will open (<<new-participatory-process-user-fig>>).
+|Area
+|Optional
+|Which xref:admin:areas.adoc[Area] does this process belongs to.
 
-[#new-participatory-process-user-fig]
-._New participatory process user_.
-image::image38.png[image]
+|===
 
-You need to fill in the following fields: *Name*, *Email* and *Role* (select from the *Administrator*, *Collaborator* or *Moderator* drop-down menu). Click on *Create* immediately afterwards
+.System New Organization form: Visibility
+|===
+|Field |Type |Description
 
-[[h.3q5sasy]]
-=== Moderating
+|Processes group
+|Optional
+|Enables to make groups of multiple participatory processes. Ideally for processes that are related between them, for instance multiple squares in a City or multiple documents using the same participatory rules.  
 
-The *Moderation* function allows you to moderate debates and ensure they are democratic and constructive. Making use of this function, administrators, collaborators and the moderator of a process can hide the contents/ contributions that have been reported, where the complaint is deemed appropriate, or delete the complaint.
+|Private space
+|Optional
+|Check if this process should only be accessible by xref:admin:process_private_participants.adoc[Private Participants]
 
-Contents are generally deemed reportable where they are offensive, can be regarded as spam (advertising posts whether or not related to the discussion topic, links to malicious websites, trolling, abusive or unsolicited information), or have nothing to do with the subject under discussion.
+|Promoted
+|Optional
+|Check if you want the process to have more visibility in the Process public list. It'll also be visible in the ParticpipatoryProcess Content Block in the xref:admin:homepage.adoc[Homepage] configuration. This is accessible in the btn:[Edit] action in a Process. 
 
-To manage reported contents, click on *Moderations* from the process's submenu. A screen will appear with all the comments that have been reported pending moderation and the following information for each of them (<<moderations-fig>>):
+|===
 
-* *Reportable*: where this concerns a *Proposal* or *Comment*.
-* *Reported content URL*: link for seeing the content reported and the reasons for the complaint.
-* *Reports*: why it has been reported. It could be: because: it has nothing to do with the discussion (“does_not_belong”), it is spam or it is an offensive comment).
-* *Count*: Number of times it has been reported by different users
-* *Actions*: by clicking on the items on the right you can *Unreport* or *Hide*.
+.System New Organization form: Filters
+|===
+|Field |Type |Description
 
-[#moderations-fig]
-._Modeations_.
-image::image42.png[image]
+|Related processes
+|Optional
+|Select other participatory processes that are related to this one.
 
-Reported contents that have already been concealed can be seen by clicking *NOT HIDDEN* (in the upper right of the moderator box). A list of concealed reported contents will appear, with the following information for each of them (<<hidden-content-fig>>): REPORTABLE, REPORTED CONTENT URL, REPORTS, COUNT, HIDDEN AT date (date the content was concealed on), ACTIONS (in this case the action available is *Unreport*).
+|===
 
-To return to visible reported contents, click on *NOT HIDDEN* on the upper right of the moderations.
+.System New Organization form: Filters
+|===
+|Field |Type |Description
 
-[#hidden-content-fig]
-._Hidden content_.
-image::image50.png[image]
+|Show statistics
+|Optional
+|Check if you want to show the Statistics section. 
 
-[[h.34g0dwd]]
-=== Features/ Components
+|Show metrics
+|Optional
+|Check if you want to show the Metrics section. 
 
-Participatory processes currently have the following components:
+|===
 
-* xref:admin:component_pages.adoc[*PAGE*]: Static pages with multi-language support which optionally allow comments and iframes to be added.
-* xref:admin:component_meetings.adoc[*MEETINGS*]: meetings in person, in other words face-to-face events included in a process.
-* xref:admin:component_proposals.adoc[*PROPOSALS*]: written contributions posted by users on the platform, which can be voted on.
-* xref:admin:component_budgets.adoc[*BUDGETS*]: a specific module for deploying a participatory budget process. This allows a minimum percentage of  the total budget to be set for supporting submitted projects.
-* xref:admin:component_surveys.adoc[*SURVEY*]: for conducting surveys.
-* xref:admin:component_accountability.adoc[*ACCOUNTABILITY*]: follow-up files for initiatives, projects, plans etc. This enables other components such as proposals and face-to-face meetings to be added.
-* xref:admin:component_debates.adoc[*DEBATES*]: for conducting debates.
-* xref:admin:component_sortitions.adoc[*SORTITIONS*]: This allows the people who will form part of a group (such as a committee) to be selected at random from a larger group.
+After you've initially created your process you have a submenu where you need to keep configuring more information about your participatory process. 
 
-To configure components, click on *Features/ Components* from the *PROCESSES* submenu. A list will appear showing the functions that have already been configured by the process (the *FEATURE/ COMPONENT NAME* (which it is given) and the *FEATURE/ COMPONENT TYPE* that has been used for creating it (<<features-components-fig>>).
+image::process_submenu.png[Process submenu in admin]
 
-The icons in this list enable you to carry out the following actions: *Manage, Publish/ Unpublish, Configure*, and configure *Permissions* and *Destroy* the feature/ component.
+Here you can keep configuring your process: 
 
-[#features-components-fig]
-._Features/ Components_.
-image::image56.png[image]
-
-To configure a new function, click on *Add feature/ component* from the upper right part of the window and select the type of function you wish to configure from the drop-down menu (<<add-feature-component-fig>>).
-
-[#add-feature-component-fig]
-._Add Feature/ Component_.
-image::image54.png[image]
-
-[[process-groups]]
-=== Process groups
-
-A group of processes proves useful for subdividing large participatory processes into subprocesses according to scope (territorial areas of organisation, such as districts and neighbourhoods, or sectoral scopes). An example are the Municipal Action Plans (PAMs) where Action Plans can be grouped by District.
-
-To configure participatory process groups, click on *PROCESS GROUP* from the menu on the left of the *DASHBOARD*.
-
-[#process-groups-fig]
-._Process groups_.
-image::image3.png[image]
-
-Then click on *New* in the *PARTICIPATORY PROCESS GROUPS* window (<<process-groups-fig>>), which will display the list of *Process groups* when they have been created.
-
-The *NEW PROCESS GROUP* (<<new-process-group-fig>>) window will open, where the following has to be entered:
-
-* *Name*
-* *Description*
-* *Related processes*: select the processes that have to be grouped (use the *ctrl* function).
-* *Imatge*: (upload the image that is meant to be associated with the process group).
-
-To finish, click on *Create*.
-
-[#new-process-group-fig]
-._New process group_.
-image::image23.png[image]
+. Info: the same form that we explained in this page.
+. xref:admin:process_phases.adoc[Pĥases]
+. xref:admin:process_components.adoc[Components]
+. xref:admin:process_categories.adoc[Categories]
+. xref:admin:process_attachments.adoc[Attachments]
+. xref:admin:process_admins.adoc[Process admins]
+. xref:admin:process_private_participants.adoc[Private participants]
+. xref:admin:process_moderations.adoc[Moderations]

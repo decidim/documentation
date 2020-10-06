@@ -1,0 +1,33 @@
+= Phases
+
+include::partial$legacy.adoc[]
+
+A participatory process will be reflected on the Decidim platform at different stages, each with a start date and finish date, both pre-established at the beginning, so that citizens are clear about where the process is at and how they can take part in it at any time.
+
+As a guideline, the standard structure of a participatory process may be as follows: Stage 1: presentation; Stage 2: diagnosis; Stage 3: proposal creation and debate; Stage 4: prioritisation of proposals; Stage 5: selection of results; Stage 6: assessment; Stage 7: monitoring.
+
+To configure the stages of the process, click on *Steps* in the *PARTICIPATORY PROCESS* submenu and then click *NEW*. A *NEW PARTICIPATORY PROCESS STEP* window will open (<<new-participatory-process-step-fig>>).
+
+You need to enter the following for each of the stages:
+
+* *Title*
+* *Description*
+* *Start date and end date*
+
+Once you have done that, click on *Create*.
+
+[#new-participatory-process-step-fig]
+._New participatory process step_.
+image::image32.png[image]
+
+To activate the stage the process is at, click on *Steps* from the *PARTICIPATORY PROCESS* submenu. A window will open showing all the stages of the process that have been configured and the icons that enable you to *Activate*, *Edit* and *Destroy* each of them. Click on *Activate* at the corresponding stage (<<process-steps-fig>>).
+
+[#process-steps-fig]
+._Process steps_.
+image::image40.png[image]
+
+Users will be able to display the various stages and descriptions that have been configured, by clicking on *View steps* (in the flag image, on the right). The stage that is active will be highlighted in red (<<displaying-steps-of-the-participating-user-process-fig>>).
+
+[#displaying-steps-of-the-participating-user-process-fig]
+._Displaying steps of the participating user process_.
+image::image14.png[image]

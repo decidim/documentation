@@ -1,0 +1,25 @@
+= Attachments
+
+include::partial$legacy.adoc[]
+
+When a participatory process is launched, it is important to provide citizens with as much information as possible about them so that they can participate with knowledge. That is why it is helpful to add files (Attachments) with the information that is considered relevant.
+
+These documents can be classified/ grouped in *Collections*. For example, for a process of remodeling a place, collections could be created with information about possible uses, with plans, with economic information, etc.
+
+First you need to create the collections to be able to place the attachments later. Click *Collections* in the submenu of the *PARTICIPATORY PROCESS*, the window is shown *ADVANCED COLLECTIONS* (<<attachment-collections-fig>>).
+
+[#attachment-collections-fig]
+._Attachment collections_.
+image::image39.png[image]
+
+Then click on *NEW* to create a new collection. Add *Name*, *Weight* and a *Description*. To finish, click *Create attachment* (<<new-collecion-fig>>).
+
+[#new-collecion-fig]
+._New collection_.
+image::image17.png[image]
+
+Once the collections have been created, the attachments can be added. Click *Files* in the sub-menu of the *PARTICIPATORY PROCESS* and click *NEW* to add the files. The *NEW ATTACHMENT* window opens (<<new-attachment-fig>>). Write the *Title* and the *Description*, select the *Weight* and the *Collection* which you want to associate the file, and upload the file by filling the *File* option. To finish click *Create attachment*.
+
+[#new-attachment-fig]
+._New attachment_.
+image::image37.png[image]

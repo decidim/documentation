@@ -1,0 +1,17 @@
+= Process Admins
+
+include::partial$legacy.adoc[]
+
+Authorisation may be given to other individuals, besides the platform’s general administrators, so that they can administer or collaborate in a certain process or moderate where there are contents that have been reported.
+
+The process *administrators* can configure/ edit a process whereas *collaborators* can only see what is on the administrator menu of the process without being able to configure/ edit.
+
+To register administrators, collaborators and/or moderators of a process, in the process's submenu, go to *Process users* and click on *NEW*.
+
+A *NEW PARTICIPATORY PROCESS USER* window will open (<<new-participatory-process-user-fig>>).
+
+[#new-participatory-process-user-fig]
+._New participatory process user_.
+image::image38.png[image]
+
+You need to fill in the following fields: *Name*, *Email* and *Role* (select from the *Administrator*, *Collaborator* or *Moderator* drop-down menu). Click on *Create* immediately afterwards

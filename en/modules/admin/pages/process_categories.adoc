@@ -1,0 +1,19 @@
+= Categories
+
+include::partial$legacy.adoc[]
+
+Categories (and subcategories) are used for classing contents within the various participatory spaces/ processes, as well as enabling users to filter contents. They are defined for each of the instances of the spaces.  For example, a participatory space can include several categories and subcategories and meetings, surveys, proposals and other components of the process can be classed under these categories. A category could be Environment and two of its subcategories Mobility and Air quality. <<categories-and-subcagetories-in-the-barcelona-PAM-for-20016-fig>> shows the categories and subcategories that were used in the participatory process for drafting the Barcelona Municipal Action Plan (PAM) for 2016.
+
+[#categories-and-subcagetories-in-the-barcelona-PAM-for-20016-fig]
+._Categories and subcategories in the Barcelona PAM for 2016_.
+image::image65.png[image]
+
+Note that once the categories have been defined, you cannot change them as they become the index that structures the contents inside a participation space. For example, if there is a participatory process for electing candidates, the categories could identify lists or types of candidacies. And where the process is for defining a Plan, the categories would coincide with the index for this Plan.
+
+Note too that when it comes to classing contents, Decidim also allows scopes and labels (or tags) to be distinguished and configured. Unlike categories, (territorial or thematic) scopes are general throughout the platform and are defined during the configuration of the Decidim platform of the local authority/ entity.footnote:[On how to create scopes, see point 2.2.] Whereas labels (or tags) are freely defined by participants and can apply to any instance or component. The administration panel also allows you to create and nest labels.
+
+For configuring categories, click on *Categories* in the *PARTICIPATIVE PROCESS* submenu. Then click on *NEW* below. You need to enter the following for each of the categories/ subcategories (<<new-category-fig>>): *Name* and *Description* and, where a subcategory is involved, select the category it corresponds to from the *Parent* drop-down menu. To finish, click on *Create category*.
+
+[#new-category-fig]
+._New category_.
+image::image21.png[image]
