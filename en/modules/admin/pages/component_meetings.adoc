@@ -1,65 +1,209 @@
 = Meetings
 
-include::partial$legacy.adoc[]
+Meetings are where people come together to discuss or inform about a given topic. All the meetings have a given location (where the meeting will happen) and start and end date and time (when the meeting will happen).
 
-To add face-to-face events, you must first configure the *Meetings* function. Go to the *Add feature/ component* drop-down menu (<<add-feature-component-fig>>) and click on *Meetings*. The *ADD FEATURES/ COMPONENTS: MEETINGS* window will open (<<meetings-fig>>).
+== Types
 
-You need to give a *Name* to the Trobades function, select *Weight* (position in the process's menu), and enter *Announcement*, where appropriate, in *Global settings* and *Step settings*, and tick (by clicking) *Comments enabled* so that the process’s participants can make comments on the meetings or *Comments blocked*.
+[NOTE]
+====
+These different types of Meetings are still in development. At the moment you only have "In-person" and "Official" meetings. Status:
 
-Click on *Add feature/ Component* immediately after.
+. https://github.com/decidim/decidim/pull/6572[Online meetings proposed PR]
+. https://github.com/decidim/decidim/pull/6095[Meetings by participants or groups merged PR]. This will be available in v0.23.
+====
 
-Once the *Meetings* function has been configured, you can create meetings. Go to the submenu on the left of the participatory process, to *Features/ Components* and click on *MeetingName* (the name that the function has been given). The *MEETINGS* window will open with the list of meetings that have been previously created (<<meetings-fig>>).
+Regarding the *location*, depending on the configuration of the Component, you can have:
 
-[#meetings-fig]
-._Meetings_.
-image::image1.png[image]
+* In-person meetings: where you get together in a given location
+* Online meetings: where you get together using an external service (for instance Jitsi Meet)
 
-The window allows you to perform the following actions by clicking on the icons:
+There's also two kinds of meetings, depending on who's the one that's making the call:
 
-* *Preview* how the publication of the meeting will look
-* *Edit*
-* *Registrations* settings
-* *Close* the meeting once it is finished
-* Add *Attachments*
-* Add *Collections*
-* *Delete*
+* Official meetings: the meetings created by the organization (created by an administrator through the panel)
+* User meetings: the meetings created by someone external (an User or an UserGroup).
 
-To create a meeting, click on *NEW* in the upper right part of the *MEETINGS* window (<<add-features-compoents-meetings-fig>>). The *ADD FEATURES/ COMPONENTS: MEETINGS* window will open:
+== Add the component
 
-[#add-features-compoents-meetings-fig]
-._Add Features/ Components: Meetings_.
-image::image62.png[image]
+For adding the Component, you need to:
 
-The information that has to be edited where a meeting is created is (<<create-meeting-fig>>):
+. go the Components submenu in a Space
+. click in the button "Add a component"
+. select the "Meeting" option
+. configure the meeting component by filling the form
 
-* *Title*
-* *Description*
-* *Address*: Street name, number, post code and city)
-* *Location*: Name of the building and room where the meeting will be held etc.
-* *Location hints*: where necessary, how to get there, floor, block etc.
-* *Start time*: select the date and time on the calendar it appears on by clicking on the field.
-* *End time*: as above
-* *Category*: where necessary, select the category from the drop-down menu.
+image:process_add_component.png[Add a component in a Process]
 
-[#create-meeting-fig]
-._Create meeting_.
-image::image60.png[image]
+== General configuration
 
-To activate meeting registrations, go to the *MEETINGS* window (<<meetings-fig>>), and click on the *Registrations* icon. An *Inscripcions* window will open (<<registrations-fig>>), where you need to click on *Registrations enabled*, select the available seating capacity from the *Available slots* drop-down menu (leave it at 0 if there is an unlimited number), and enter the details in *Registration terms*. To finish, click *Save*. The window lets you export the registrations in CSV, JSON or EXCEL format, which you can select from the *Export* drop-down menu.
+For configuring the meeting component you have these settings:
 
-[#registrations-fig]
-._Registrations_.
-image::image9.png[image]
+image:meetings_add_component.png[Add a meetings component]
 
-If you wish to attach a file to the information on the meeting, go to the *MEETINGS* window (<<meetings-fig>>) and click on the *Attachments* icon. The *Attachments* window will open (<<attachments-fig), where a list will appear if there are other attached files and where you can *Edit* or *Delete* the attached files.
+.Add component - Meetings form
+|===
+|Field |Type |Description
 
-[#attachments-fig]
-._Attachments_.
-image::image44.png[image]
+|Name
+|Required
+|What is the name of this component.
 
-Click on *NEW* to attach a file. Then, in the *NEW ATTACHMENT* window (<<new-attachment-meetings-fig>>), enter the *Title* and *Description*, upload the file (by clicking on *Seleccionar archivo*). To finish, click on *Create attachment*.
+|Weight
+|Optional
+|What'll be the order in the process menu.
+|===
 
-[#new-attachment-meetings-fig]
-._New attachment_.
-image::image17.png[image]
+.Add component - Meetings form: Global settings
+|===
+|Field |Type |Description
 
+|Announcement
+|Optional
+|A general announcement that'll be visible in the general meetings list.
+
+|Default registration terms
+|Optional
+|What'll be the registration terms of service that the participant would need to accept when registering.
+
+|Comments enabled
+|Optional
+|Whether you want to have comments in the meetings.
+
+|Actions permissions can be set for each meeting
+|Optional
+|If you want more granular permissions inside of every one of the Meetings.
+
+|Enable pads creation
+|Optional
+|If you want an Etherpad embedded in your meetings. Must have the xref:services:etherpad.adoc[Etherpad] integration configurated.
+|===
+
+.Add component - Meetings form: Step settings
+|===
+|Field |Type |Description
+
+|Announcement
+|Optional
+|A general announcement that'll be visible in the general meetings list.
+
+|Comments enabled
+|Optional
+|Whether you want to have comments in the meetings.
+|===
+
+== Create a new meeting
+
+image:meetings_new_form.png[Create a new meeting form]
+
+.Create meeting
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|What is the title for this meeting.
+
+|Description
+|Required
+|A description of what will be discussed in this meeting, like the topics.
+
+|Address
+|Required
+|Address: used by Geocoder to find the location
+
+|Location
+|Required
+|Location: message directed to the users implying the spot to meet at
+
+|Location hints
+|Optional
+|Location hints: additional info. Example: the floor of the building
+
+|Start Time
+|Required
+|Which day and time will the meeting start. Expected format: dd/mm/yyyy hh:ii
+
+|End Time
+|Required
+|Which day and time will the meeting start. Expected format: dd/mm/yyyy hh:ii
+
+|Category
+|Optional
+|Which Category has the meeting. Used for filtering in the meetings list.
+
+|Organizer
+|Optional
+|Who is the organizer of this meeting.
+
+|Private meeting
+|Optional
+|Check if the meeting shouldn't be visible for all the visitors.
+
+|Transparent
+|Optional
+|Related to "Private meeting", check if the meeting should be visible for all the visitors but they shouldn't be able to participate in.
+|===
+
+You can also define *Services* inside of a Meeting. These are for instance if there's a place for children, deaf assistance, translations, etc. You can have multiple services inside of a Meeting.
+
+.Create meeting - Services
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|Title of the service.
+
+|Description
+|Optional
+|Description of the service.
+|===
+
+== Actions
+
+|===
+|Icon |Name |Definition
+
+|image:action_preview.png[Preview icon]
+|Preview
+|To see how it's shown in the frontend to participants.
+
+|image:action_duplicate.png[Duplicate icon]
+|Duplicate
+|Allows an admin to duplicate a Meeting.
+
+|image:action_edit.png[Edit icon]
+|Edit
+|Edit form for a Meeting. It's the same form as "Create a new meeting".
+
+|image:action_registrations.png[Registrations icon]
+|xref:admin:component_meetings_registrations.adoc[Registrations]
+|Allows to define who can register for attending to the Meeting.
+
+|image:action_minutes.png[Minutes icon]
+|xref:admin:component_meetings_minutes.adoc[Minutes]
+|Minutes are the registry or what has happened in the Meeting.
+
+|image:action_agenda.png[Agenda icon]
+|xref:admin:component_meetings_agenda.adoc[Agenda]
+|To add the topics that will be discussed in the Meeting.
+
+|image:action_close.png[Close icon]
+|xref:admin:component_meetings_close.adoc[Close]
+|Allows and admin to Close the meeting and add extra information.
+
+|image:action_folder.png[Folders icon]
+|Folders
+|For classifying Attachments.
+
+|image:action_attachments.png[Attachments icon]
+|Attachments
+|Documents that are related to the Meeting.
+
+|image:action_permissions.png[Permissions icon]
+|Permissions
+|To handle the permissions of this meeting, depending on the verification a participant has. Allows an admin to configure who can *Join* a meeting.
+
+|image:action_delete.png[Delete icon]
+|Delete
+|To delete this meeting.
+|===
