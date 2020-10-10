@@ -2,7 +2,7 @@
 
 In Decidim, notifications may mean two things:
 
-* he concept of notifying an event to a user. This is the wider use of "notification".
+* the concept of notifying an event to a user. This is the wider use of "notification".
 * the notification's participant space, which lists the ``Decidim::Notification``s she has received.
 
 So, in the wider sense, notifications are messages that are sent to the users, admins or participants, when something interesting occurs in the platform.
