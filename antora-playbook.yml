@@ -1,7 +1,7 @@
 site:
   title: Decidim Docs
   url: https://docs.decidim.org
-  start_page: master@en:ROOT:index.adoc
+  start_page: main@en:ROOT:index.adoc
 content:
   edit_url: 'https://github.com/decidim/documentation/edit/{refname}/{path}'
   sources:
