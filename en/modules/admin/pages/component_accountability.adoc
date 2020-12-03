@@ -1,0 +1,53 @@
+= Accountability
+
+include::partial$legacy.adoc[]
+
+The *Accountability* component allows people who visit the platform to view the level of execution (global, by categories and / or subcategories), of the results of a participatory process. That is to say, the proposals that have ended up being the result of the decision making in the Decidim, either directly (through the result of the application of a voting system) or mediated by meetings, assemblies, technical or political team, and its degree of execution.
+
+The results can be converted into projects or decomposed into subprojects, which can be described in more detail and for which the execution status can be defined, ranging from 0% execution to 100%. The results, projects and states can be updated through a CVS and manually through the administration interface.
+
+To configure the *Accountability* component, go to the *PROCESSES* submenu and click first on *Features/ Components* then click on *Add feature/ Component* in the upper right part of the window and select *Accountability*. The *ADD FEATURE/ COMPONENT: ACCOUNTABILITY* window will open (<<add-features-components-accountability-fig>>).
+
+The following fields have to be filled in:
+
+* *Name*
+* *Weight*: the order in which you wish to display the components in the participatory process's menu.
+* *Global settings*:
+
+** Mark Comments enabled if they should be able to comment on the results
+** And fill in the fields: *Intro, Name for "Categories", Name for "Subcategories", Name for "Results", Name for "Projects"*.
+** Click *Display progress* to show the execution status
+
+* *Default step settings*: For each of the stages (1. Information, 2. Make your proposal, 3. Projects, 4. Budget, 5. Results, 6. Evaluation of the process) tick *Comments blocked* if appropriate (no comments can be made at this stage).
+
+To finish, click on *Add feature/ Component*.
+
+[#add-features-components-accountability-fig]
+._Add Features/ Components: Accountability_.
+image::image28.png[image]
+
+To create a new result, click on *NEW RESULT* from the *ACCOUNTABILITY* window (to access it, click on *Accountability* from the participatory process's *Features/ Components* submenu). The *NEW RESULT* window will open (<<new-result-fig>>).
+
+[#new-result-fig]
+._New result_.
+image::image12.png[image]
+
+Featuring the following fields:
+
+* *Title*
+* *Description*
+* *Scope*: if necessary, select from the drop-down menu
+* *Category*: if necessary, select from the drop-down menu
+* *Start date*: select the date from the menu
+* *End date*: select the date from the menu
+* *Status*: select the status from the drop-down menu
+* *Progress*: Define the degree of progression
+* *Add proposals*: Go to the drop-down menu and select the proposals it includes (use the *ctrl* function to select more than one proposal).
+* *Included projects*: select from the drop-down menu
+
+To manage the *Accountability*, click on *_Acountabilityname_* from the *Processes* submenu. The *ACCOUNTABILITY* window will open displaying a list of the results and possible *ACTIONS (Preview, New result, Project evolution, Edit* and *Delete*) (<<results-fig>>).
+
+[#results-fig]
+._Results_.
+image::image18.png[image]
+

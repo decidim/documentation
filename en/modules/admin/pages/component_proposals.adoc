@@ -1,0 +1,53 @@
+= Proposals
+
+include::partial$legacy.adoc[]
+
+To configure the *Proposals* function, go to the *PROCESSES* submenu and click on *Features/ Components*, then click on *Add feature/ Component* in the upper right part of the window and select *Proposals*. The *ADD FEATURE/ COMPONENT: PROPOSALS* window will open (<<add-feature-component-proposals-fig>>). The information you need to enter when the proposal function is configured is:
+
+* *Name*: Name of the proposal
+* *Weight*: the order in which the *Proposals* component is meant to be displayed on the participatory process’s menu.
+* *Global settings*:
+
+** *Vote limit per user*: Select, where necessary, the limit on the number of votes that a user can give.
+** *Proposal limit per user*: Maximum number of proposals that can be made by the users.
+** *Maximum proposal body length*: Select the maximum number of characters that the text of the proposal can have in the menu. 500 characters come by default.
+** *Proposals can be edited by authors before this many minutes passes*: time limit during which the authors of the proposals can modify them. By default it is 5 minutes, it is advisable not to leave too much time because if someone supports the proposal or makes a comment it will no longer be modifiable.
+** *Maximum votes per proposal/ Threshold per proposal*: maximum number of votes that can receive the proposals.
+** Tick the options that you want activated for the general configuration of the Proposals function: *Can accumulate supports beyond threshold, Proposal answering enabled, Comments enabled, Geocoding enabled, Allow attachments*.
+** *Announcement*: enter whether you wish to display a notice when users are making a proposal.
+** *New proposal help text*: Write if you want to show when the user is making a proposal.
+** *Proposal wizard "Create" step help text*: Idem.
+** *Proposal wizard "Compare" step help text*: write when similar proposals are shown.
+** *Proposal wizard "Publish" step help text*: notice that comes before publishing the proposal, in case you want to edit.
+
+* Default step settings:
+
+** Tick the options you wish to activate for each of the stages: *Endorsements enabled, Endorsements blocked, Votes enabled, Votes blocked, Votes hidden, Comments blocked, Proposal creation enabled, Proposal answering enabled*.
+** *Announcement*: enter whether you want to display a notice when users are making a proposal.
+
+To finish, click on *Afegir feature/ Component*.
+
+[#add-feature-component-proposals-fig]
+._Add Feature/ Component: Proposals
+image::image77.png[image]
+
+To manage proposals, that is, to accept/ reject proposals made by participants during the process, click on *PROPOSALS* from the *PROCESSES* submenu. A *PROPOSALS* window will open (<<proposals-fig>>), where there is a list with all the proposals and a series of pieces of information for each one (*TITLE, CATEGORY, ESTATE*, in other words, if it is *Accepted, Withdraw, Not answered*, or *Evaluating*, and the possible *ACTIONS (Private notes, Answer, and Preview)*.
+
+[#proposals-fig]
+._Proposals_.
+image::image24.png[image]
+
+To respond to proposals, click on the *Answer* icon, the *ANSWER FOR PROPOSAL* (<<answer-for-proposal-fig>>) window will open where you need to tick *Accepted, Rejected*,  or *Evaluating* and enter the reason or response that you wish to give in the *Answer box*.
+
+[#answer-for-proposal-fig]
+._Answer for proposal_.
+image::image33.png[image]
+
+You can also export proposals and/ or comments in CSV, JSON or EXCEL formats, by clicking on *EXPORT* in the upper right part.
+
+To create a new proposal, in other words, to make official proposals, click on *NEW* in the upper right part of the *PROPOSALS* window (<<proposals-fig>>), and the *CREATE PROPOSAL* window (<<create-proposal-fig>>) will open up, where you need to enter: *Title* and *Body*. Then click on *Create*.
+
+[#create-proposal-fig]
+._Create proposal_.
+image::image35.png[image]
+

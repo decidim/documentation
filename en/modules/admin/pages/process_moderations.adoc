@@ -1,0 +1,27 @@
+= Moderation
+
+include::partial$legacy.adoc[]
+
+The *Moderation* function allows you to moderate debates and ensure they are democratic and constructive. Making use of this function, administrators, collaborators and the moderator of a process can hide the contents/ contributions that have been reported, where the complaint is deemed appropriate, or delete the complaint.
+
+Contents are generally deemed reportable where they are offensive, can be regarded as spam (advertising posts whether or not related to the discussion topic, links to malicious websites, trolling, abusive or unsolicited information), or have nothing to do with the subject under discussion.
+
+To manage reported contents, click on *Moderations* from the process's submenu. A screen will appear with all the comments that have been reported pending moderation and the following information for each of them (<<moderations-fig>>):
+
+* *Reportable*: where this concerns a *Proposal* or *Comment*.
+* *Reported content URL*: link for seeing the content reported and the reasons for the complaint.
+* *Reports*: why it has been reported. It could be: because: it has nothing to do with the discussion (“does_not_belong”), it is spam or it is an offensive comment).
+* *Count*: Number of times it has been reported by different users
+* *Actions*: by clicking on the items on the right you can *Unreport* or *Hide*.
+
+[#moderations-fig]
+._Modeations_.
+image::image42.png[image]
+
+Reported contents that have already been concealed can be seen by clicking *NOT HIDDEN* (in the upper right of the moderator box). A list of concealed reported contents will appear, with the following information for each of them (<<hidden-content-fig>>): REPORTABLE, REPORTED CONTENT URL, REPORTS, COUNT, HIDDEN AT date (date the content was concealed on), ACTIONS (in this case the action available is *Unreport*).
+
+To return to visible reported contents, click on *NOT HIDDEN* on the upper right of the moderations.
+
+[#hidden-content-fig]
+._Hidden content_.
+image::image50.png[image]

@@ -1,0 +1,28 @@
+= Components
+
+include::partial$legacy.adoc[]
+
+Participatory processes currently have the following components:
+
+* xref:admin:component_pages.adoc[*PAGE*]: Static pages with multi-language support which optionally allow comments and iframes to be added.
+* xref:admin:component_meetings.adoc[*MEETINGS*]: meetings in person, in other words face-to-face events included in a process.
+* xref:admin:component_proposals.adoc[*PROPOSALS*]: written contributions posted by users on the platform, which can be voted on.
+* xref:admin:component_budgets.adoc[*BUDGETS*]: a specific module for deploying a participatory budget process. This allows a minimum percentage of  the total budget to be set for supporting submitted projects.
+* xref:admin:component_surveys.adoc[*SURVEY*]: for conducting surveys.
+* xref:admin:component_accountability.adoc[*ACCOUNTABILITY*]: follow-up files for initiatives, projects, plans etc. This enables other components such as proposals and face-to-face meetings to be added.
+* xref:admin:component_debates.adoc[*DEBATES*]: for conducting debates.
+* xref:admin:component_sortitions.adoc[*SORTITIONS*]: This allows the people who will form part of a group (such as a committee) to be selected at random from a larger group.
+
+To configure components, click on *Features/ Components* from the *PROCESSES* submenu. A list will appear showing the functions that have already been configured by the process (the *FEATURE/ COMPONENT NAME* (which it is given) and the *FEATURE/ COMPONENT TYPE* that has been used for creating it (<<features-components-fig>>).
+
+The icons in this list enable you to carry out the following actions: *Manage, Publish/ Unpublish, Configure*, and configure *Permissions* and *Destroy* the feature/ component.
+
+[#features-components-fig]
+._Features/ Components_.
+image::image56.png[image]
+
+To configure a new function, click on *Add feature/ component* from the upper right part of the window and select the type of function you wish to configure from the drop-down menu (<<add-feature-component-fig>>).
+
+[#add-feature-component-fig]
+._Add Feature/ Component_.
+image::image54.png[image]

@@ -1,0 +1,45 @@
+= Debates
+
+include::partial$legacy.adoc[]
+
+The feature/ component *Debate* allows you to open questions or discussions about specific topics defined by the administrators or the participants. +
+To configure the *Debate* Feature/ Component, in the submenu of *PARTICIPATORY PROCESSES*, click on *features/ components*. Then click on *Add feature/ component* in the upper right corner of the window and select Debates. The window opens *ADD FEATURE/ COMPLEMENT: DEBATES* (<<add-feature-components-debates-fig>>).
+
+[#add-feature-components-debates-fig]
+._Add Feature/ Components: Debates_.
+image::image49.png[image]
+
+The following items must be filled:
+
+* *Name*: Name of the debate
+* *Weight*: the order in which the *Debate* component will be displayed in the participatory process menu.
+* *Global settings*: Mark *Comments enabled* so they can comment.
+* *Step settings*: for each step, click *Debate creation by users enabled* (when users want to open debates), and only if necessary, click *Comments blocked*.
+
+Finally, click on *Add feature/ component*.
+
+To open a new debate, click on *NEW DEBATE* in the *DEBATES* window (to access it, click on *Debates* in the submenu *features/components* of the participatory process). The *NEW DEBATE* window opens (<<new-debate-fig>>).
+
+The items to fill in to configure a new debate are:
+
+* *Title*: title of the debate
+* *Description*: description of the debate
+* *Instructions to participate*: steps to follow in order to participate in the debate
+* *Starts at*: date in which the debate begins
+* *Ends at*: the date on which the debate ends
+* *Decidim category*: select the category if applicable
+
+Finally, click on *Create a debate*.
+
+[#new-debate-fig]
+._New debate_.
+image::image34.png[image]
+
+[[h.vnx1y0ifive7]]Once created, to view the list of debates, click *Debates* in the menu of *features/ components* of the corresponding *Participatory Process*. In this way, we access the *Debates* window (<<debates-fig>>).
+
+[#debates-fig]
+._Debates_.
+image::image36.png[image]
+
+[[h.2szc72q]]For each of the debates, the title, the start date, the end date and the actions that can be made with each debate (*Edit* and *Delete*) are shown.
+

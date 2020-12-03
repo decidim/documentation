@@ -1,12 +1,56 @@
 == Initiatives
-:experimental:
-:icons: font
-:page-partial:
-:source-highlighter: highlightjs
 
-Initiatives (in the case of public, citizen and communal authorities) are distinguished from the other participation spaces because they are participatory tools or mechanisms promoted by citizens. In other words, the initiatives are mechanisms for semi-direct democracy through which citizens can promote a certain action of common interest to the authority, by collecting a specific number of signatures.
+include::partial$legacy.adoc[]
+
+Initiatives are distinguished from the other participation spaces because they are participatory tools or mechanisms promoted by citizens. In other words, the initiatives are mechanisms for semi-direct democracy through which citizens can promote a certain action of common interest to the authority, by collecting a specific number of signatures.
 
 In this case, what the authority has to do is enable the promotion of these initiatives and offer the necessary technical support and advice to the people concerned. The role of the platform’s administrator, then, is somewhat different from that of the other participation spaces. In the first place, you will have to configure the various forms of initiatives provided for under the regulations (municipal rules), specifying the number of signatures required for processing the various types of citizen initiatives. An initiative for incorporating one or several items into the Municipal Council’s agenda evidently requires fewer signatures than another initiative for promoting a citizen consultation.
+
+
+@startuml
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/cerulean/puml-theme-cerulean.puml
+(*) --> "Create a new initiative"
+if "Has only one type?" then
+--> [Yes] "Fill initiative form"
+else
+--> [No] "Select initiative type"
+--> "Fill initiative form"
+Endif
+partition Created {
+  if "Is the User a UserGroup?" then
+  --> [Yes] "Send to Technical Validation"
+  else
+  --> [No] Collect the minimum number of committee members (2 by default)
+  --> "Send to Technical Validation"
+  Endif
+}
+partition Validating {
+  if "Has passed the maximum time for validation (60 days by default)?" then
+    --> [Yes] "Expired"
+  else
+    --> [No] if "Is accepted by an administrator?" then
+      --> [No] "Discarded"
+      else
+      --> [Yes] "Publish"
+      endIf
+  endIf
+}
+partition Published {
+  --> "Signature process"
+  if "Has passed the configured time window for validation (60 days by default)?"
+    --> [Yes] "Expired"
+  else
+    --> [No] Export PDF to signatures
+    --> Check signatures with offline signatures for duplicates (if the Initiative has them)
+    --> if "Has the initiative get the number of signatures required?" then
+      --> [No] Rejected
+    else
+      --> [Yes] Accepted
+    endIf
+  endIf
+}
+--> (*)
+@enduml
 
 To configure the initiative type, click on *INITIATIVES* on the menu to the left of the *DASHBOARD*, then click on *Initiative types* from the Initiative submenu and then on *NEW* (<<initiative-types-fig>>).
 

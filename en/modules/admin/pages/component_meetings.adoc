@@ -1,0 +1,209 @@
+= Meetings
+
+Meetings are where people come together to discuss or inform about a given topic. All the meetings have a given location (where the meeting will happen) and start and end date and time (when the meeting will happen).
+
+== Types
+
+[NOTE]
+====
+These different types of Meetings are still in development. At the moment you only have "In-person" and "Official" meetings. Status:
+
+. https://github.com/decidim/decidim/pull/6572[Online meetings proposed PR]
+. https://github.com/decidim/decidim/pull/6095[Meetings by participants or groups merged PR]. This will be available in v0.23.
+====
+
+Regarding the *location*, depending on the configuration of the Component, you can have:
+
+* In-person meetings: where you get together in a given location
+* Online meetings: where you get together using an external service (for instance Jitsi Meet)
+
+There's also two kinds of meetings, depending on who's the one that's making the call:
+
+* Official meetings: the meetings created by the organization (created by an administrator through the panel)
+* User meetings: the meetings created by someone external (an User or an UserGroup).
+
+== Add the component
+
+For adding the Component, you need to:
+
+. go the Components submenu in a Space
+. click in the button "Add a component"
+. select the "Meeting" option
+. configure the meeting component by filling the form
+
+image:process_add_component.png[Add a component in a Process]
+
+== General configuration
+
+For configuring the meeting component you have these settings:
+
+image:meetings_add_component.png[Add a meetings component]
+
+.Add component - Meetings form
+|===
+|Field |Type |Description
+
+|Name
+|Required
+|What is the name of this component.
+
+|Weight
+|Optional
+|What'll be the order in the process menu.
+|===
+
+.Add component - Meetings form: Global settings
+|===
+|Field |Type |Description
+
+|Announcement
+|Optional
+|A general announcement that'll be visible in the general meetings list.
+
+|Default registration terms
+|Optional
+|What'll be the registration terms of service that the participant would need to accept when registering.
+
+|Comments enabled
+|Optional
+|Whether you want to have comments in the meetings.
+
+|Actions permissions can be set for each meeting
+|Optional
+|If you want more granular permissions inside of every one of the Meetings.
+
+|Enable pads creation
+|Optional
+|If you want an Etherpad embedded in your meetings. Must have the xref:services:etherpad.adoc[Etherpad] integration configurated.
+|===
+
+.Add component - Meetings form: Step settings
+|===
+|Field |Type |Description
+
+|Announcement
+|Optional
+|A general announcement that'll be visible in the general meetings list.
+
+|Comments enabled
+|Optional
+|Whether you want to have comments in the meetings.
+|===
+
+== Create a new meeting
+
+image:meetings_new_form.png[Create a new meeting form]
+
+.Create meeting
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|What is the title for this meeting.
+
+|Description
+|Required
+|A description of what will be discussed in this meeting, like the topics.
+
+|Address
+|Required
+|Address: used by Geocoder to find the location
+
+|Location
+|Required
+|Location: message directed to the users implying the spot to meet at
+
+|Location hints
+|Optional
+|Location hints: additional info. Example: the floor of the building
+
+|Start Time
+|Required
+|Which day and time will the meeting start. Expected format: dd/mm/yyyy hh:ii
+
+|End Time
+|Required
+|Which day and time will the meeting start. Expected format: dd/mm/yyyy hh:ii
+
+|Category
+|Optional
+|Which Category has the meeting. Used for filtering in the meetings list.
+
+|Organizer
+|Optional
+|Who is the organizer of this meeting.
+
+|Private meeting
+|Optional
+|Check if the meeting shouldn't be visible for all the visitors.
+
+|Transparent
+|Optional
+|Related to "Private meeting", check if the meeting should be visible for all the visitors but they shouldn't be able to participate in.
+|===
+
+You can also define *Services* inside of a Meeting. These are for instance if there's a place for children, deaf assistance, translations, etc. You can have multiple services inside of a Meeting.
+
+.Create meeting - Services
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|Title of the service.
+
+|Description
+|Optional
+|Description of the service.
+|===
+
+== Actions
+
+|===
+|Icon |Name |Definition
+
+|image:action_preview.png[Preview icon]
+|Preview
+|To see how it's shown in the frontend to participants.
+
+|image:action_duplicate.png[Duplicate icon]
+|Duplicate
+|Allows an admin to duplicate a Meeting.
+
+|image:action_edit.png[Edit icon]
+|Edit
+|Edit form for a Meeting. It's the same form as "Create a new meeting".
+
+|image:action_registrations.png[Registrations icon]
+|xref:admin:component_meetings_registrations.adoc[Registrations]
+|Allows to define who can register for attending to the Meeting.
+
+|image:action_minutes.png[Minutes icon]
+|xref:admin:component_meetings_minutes.adoc[Minutes]
+|Minutes are the registry or what has happened in the Meeting.
+
+|image:action_agenda.png[Agenda icon]
+|xref:admin:component_meetings_agenda.adoc[Agenda]
+|To add the topics that will be discussed in the Meeting.
+
+|image:action_close.png[Close icon]
+|xref:admin:component_meetings_close.adoc[Close]
+|Allows and admin to Close the meeting and add extra information.
+
+|image:action_folder.png[Folders icon]
+|Folders
+|For classifying Attachments.
+
+|image:action_attachments.png[Attachments icon]
+|Attachments
+|Documents that are related to the Meeting.
+
+|image:action_permissions.png[Permissions icon]
+|Permissions
+|To handle the permissions of this meeting, depending on the verification a participant has. Allows an admin to configure who can *Join* a meeting.
+
+|image:action_delete.png[Delete icon]
+|Delete
+|To delete this meeting.
+|===

@@ -1,0 +1,54 @@
+= Configuration
+
+In this page you can configure general settings from Decidim. 
+
+image::admin_configuration.png[Decidim Admin Configuration]
+
+These are: 
+
+* **Name**. Required. The name that the platform has. Visible at title, emails, etc. 
+* **Social**. Social handlers for different social networks. Visible at the footer in every page. This are: 
+** Twitter
+** Facebook
+** Instagram
+** YouTube
+** GitHub
+
+image::settings_configuration_social.png[Social networks configuration in Decidim]
+
+* **Default locale**. Required. 
+* **Time Zone**. Required. In which Time Zone is your organization. Used by things like calendars in Meetings.
+* **Reference prefix**. Required. 
+* **Enable badges**. Whether you want or not that your participants have badges as a gamification mechanism, for instance for creating proposals or making comments. See xref:admin:badges.adoc[Badges documentation]
+* **Enable groups**.  Whether you want or not that your participants have the possibility to create User Groups. Useful for example for Associations. See xref:admin:users_groups.adoc[User Groups documentation]
+* **Enable rich text editor for participants**.  Whether you want or not that your participants have the possibility to have a https://en.wikipedia.org/wiki/WYSIWYG[What You See Is What You Get (WYSIWYG) editor]. In some text areas, participants will be able to insert some HTML tags by using the rich text editor.
+* **Send welcome notification**. Whether you want or not that your participants receive a notification when their first created their account. If enabled you can customize this notification. 
+** **Customize welcome notification**. 
+** **Welcome notification subject**. 
+** **Welcome notification body**.  
+
+.Welcome notification
+[welcome]
+====
+Hi {{name}}, thanks for joining {{organization}} and welcome!
+
+If you want to get a quick idea of what you can do here, have a look at the Help section.
+Once you have read it you will get your first badge. Here's a list of all the badges you can get as you participate in {{organization}}
+Last but not least, join other people, share with them the experience of being engaged and participating in {{organization}}. Make proposals, comments, debate, think about how to contribute to the common good, provide arguments to convince, listen and read to be convinced, express your ideas in a concrete and direct way, respond with patience and decision, defend your ideas and keep an open mind to collaborate and join other people's ideas.
+====
+
+image::settings_configuration_welcome.png[Welcome notification configuration in Decidim]
+
+* **Admin terms of use body**. Which message an Administrator user will see when accessing for the first time to the Administration panel.
+
+.Admin terms of use
+[admin_tos]
+====
+ADMIN TERMS OF USE
+
+We trust you have received the usual lecture from the local System Administrator. It usually boils down to these three things:
+
+* Respect the privacy of others.
+* Think before you click.
+* With great power comes great responsibility.
+====

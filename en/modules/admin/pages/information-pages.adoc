@@ -1,8 +1,6 @@
 = Information pages
-:experimental:
-:icons: font
-:page-partial:
-:source-highlighter: highlightjs
+
+include::partial$legacy.adoc[]
 
 Here we offer you three informative pages that you can use as a template or re-use replacing the text highlighted in yellow with the correct text. You can find the same documents in spanish or catalan in their respective Administering Decidim document.
 

@@ -1,0 +1,41 @@
+= Surveys
+
+include::partial$legacy.adoc[]
+
+This component allows you to design and carry out surveys, as well as to visualize the results of the surveys. It is useful to be able to know the opinion of the citizens.
+
+To configure the component (feature) of the surveys, in the *PROCESS* sub-menu, click on *Features / Components*, then click *Add feature/ component* in the upper right corner of the window and select *Survey*. Opens the window *ADD FEATURE/ COMPONENT: SURVEY* (<<add-features-components-survey-fig>>).
+
+The following items must be filled:
+
+* *Name*: name of the survey.
+* *Weight*: the order in which you wish to display the components in the participatory process's menu.
+* *Global settings*: It is used to display an *Announcement* (highlighted message) on all pages of the process. Write the content of the message when appropriate.
+* *Step settings*: Mark *Allow answers* when the survey opens. If you want to show an outstanding message in any of the phases by reference to the survey, write the message content to *Announcement* in the corresponding phase.
+
+Finally click on *Add feature/ component*.
+
+[#add-features-components-survey-fig]
+._Add Features/ Components: Survey_.
+image::image20.png[image]
+
+[[h.d3rrn28vkmsl]]To edit the survey, click *Survey* in the *Featuress/ Components* submenu of the participatory process. A window opens in which the general information about the survey should be put (<<create-survey-fig>>):
+
+* [[h.mwxxoyjoip7u]]*Title*: Title of the survey
+* [[h.r35xjk94reiz]]*Description*: Description of the survey
+* [[h.wgbyysv7wmi9]]*Terms of service*: information on how the survey data will be processed, etc.
+
+From this window, the results of the survey can also be exported in formats CSV, JSON or EXCEL, by clicking *EXPORT* on the upper right.
+
+Then click *Add question*. For each of the questions, the following fields must be filled:
+
+* *Statement*: Statement of the question.
+* *Mandatory*: Click if the question has to be answered obligatorily.
+* *Type*: select the type of response from the menu (short answer, long answer, single option, multiple option). In the case of a multiple choice, you will have to write the *Statements* of the different *ANSWER OPTIONS* by clicking successively *Add Answer Option*.
+
+Click again *Add question* to configure the rest of the questions. The same procedure is repeated for each of the questions in the survey. When you finish click *Save*.
+
+[#create-survey-fig]
+._Create survey_.
+image::image64.png[image]
+

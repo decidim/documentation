@@ -1,0 +1,103 @@
+= Homepage
+
+include::partial$under-construction.adoc[]
+
+You can control how it's the Homepage of your organization. To do so you have the Settings -> Homepage section through the Administration panel: 
+
+image::admin_homepage.png[Decidim Admin Homepage]
+
+---
+
+== How this works 
+
+This means that every section in the Homepage is called **content block**.
+
+For instance, this is the *How to participate* content block: 
+
+image::homepage_how_to_participate.png[How to participate example]
+
+For managing these contents you need to Drag and Drop the contents between the two columns, on the left are the Active and in the Right are the Inactive content blocks. 
+
+As an example, here you can see how your page will look with only the *Hero image* content block: 
+
+// TODO: add screenshot
+
+At the admin this is handled with: 
+
+// TODO: add screenshot
+
+In your installation you could have other content blocks, as this depends on which modules you have active. Please contact your system administrator if you see something different here, like a missing content block.
+
+== Content blocks
+
+These are the different content blocks enabled with the official Decidim modules:
+
+=== Hero image
+
+NOTE: These area legacy settings that will be removed in the next version. https://github.com/decidim/decidim/pull/6284[See PR]. In this next version you're going to be able to change the button and path for this button from this same content block. 
+
+image::homepage_hero_image_back.png[Hero image in Homepage backend content block]
+
+image::homepage_hero_image_front.png[Hero image in Homepage frontend content block]
+
+=== Sub hero banner
+
+Displays the description text of the instance. See xref:admin:appearance.adoc[Appearance].
+
+image::homepage_sub_hero_banner.png[Sub hero banner in Homepage content block]
+
+=== Footer sub hero banner
+
+// TODO: I think this should be changed with an HTML text and probably removed 
+
+image::homepage_footer_sub_hero_banner.png[Hero image in Homepage content block]
+
+=== How to participate
+
+// TODO: I think this should be changed with an HTML text and probably removed 
+
+image::homepage_how_to_participate.png[How to participate in Homepage content block]
+
+=== Upcoming events
+
+image::homepage_upcoming_events.png[Upcoming events in Homepage content block]
+
+=== Last activity
+
+image::homepage_last_activity.png[Last activity in Homepage content block]
+
+=== HTML block
+
+image::homepage_html_block.png[HTML block in Homepage content block]
+
+=== Highlighted processes
+
+image::homepage_highlighted_processes.png[Highlighted processes in Homepage content block]
+
+=== Highlighted assemblies
+
+image::homepage_highlighted_assemblies.png[Highlighted assemblies in Homepage content block]
+
+=== Highlighted initiatives
+
+image::homepage_highlighted_initiatives.png[Highlighted initiatives in Homepage content block]
+
+=== Highlighted consultations
+
+image::homepage_highlighted_consultations.png[Highlighted consultations in Homepage content block]
+
+=== Highlighted conferences
+
+image::homepage_highlighted_conferences.png[Highlighted conferences in Homepage content block]
+
+=== Highlighted content banner
+
+image::homepage_highlighted_content_banner.png[Highlighted content banner in Homepage content block]
+
+=== Organization statistics
+
+image::homepage_organization_statistics.png[Organizations statistics in Homepage content block]
+
+=== Organization metrics
+
+image::homepage_organization_metrics.png[Organzation metrics in Homepage content block]
