@@ -1,0 +1,26 @@
+= Process groups
+
+include::partial$legacy.adoc[]
+
+A group of processes proves useful for subdividing large participatory processes into subprocesses according to scope (territorial areas of organisation, such as districts and neighbourhoods, or sectoral scopes). An example are the Municipal Action Plans (PAMs) where Action Plans can be grouped by District.
+
+To configure participatory process groups, click on *PROCESS GROUP* from the menu on the left of the *DASHBOARD*.
+
+[#process-groups-fig]
+._Process groups_.
+image::image3.png[image]
+
+Then click on *New* in the *PARTICIPATORY PROCESS GROUPS* window (<<process-groups-fig>>), which will display the list of *Process groups* when they have been created.
+
+The *NEW PROCESS GROUP* (<<new-process-group-fig>>) window will open, where the following has to be entered:
+
+* *Name*
+* *Description*
+* *Related processes*: select the processes that have to be grouped (use the *ctrl* function).
+* *Imatge*: (upload the image that is meant to be associated with the process group).
+
+To finish, click on *Create*.
+
+[#new-process-group-fig]
+._New process group_.
+image::image23.png[image]
