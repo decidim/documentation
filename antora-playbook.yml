@@ -1,12 +1,13 @@
 site:
   title: Decidim Docs
   url: https://docs.decidim.org
+  start_page: master@en:ROOT:index.adoc
 content:
   edit_url: 'https://github.com/decidim/documentation/edit/{refname}/{path}'
   sources:
   - url: &landing .
     start_path: /en
-    branches: main
+    branches: master
   - url: https://github.com/decidim/decidim
     start_path: docs
     branches: develop
