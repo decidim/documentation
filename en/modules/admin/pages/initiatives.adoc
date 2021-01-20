@@ -57,7 +57,7 @@ image:admin_initiative_type.png[New initiative type form]
 
 |Enable attachments
 |Optional
-|Wheter it'll allow to upload attachments to initiatives.
+|Whether it'll allow to upload attachments to initiatives.
 
 |Enable participants to undo their online signatures
 |Optional
@@ -81,7 +81,7 @@ image:admin_initiative_type.png[New initiative type form]
 
 |Enable promoting committee
 |Optional
-|Wheter if it will allow individual initiatives (made by only one person) or it will always have to have a collective (multiple promoters, being multiple individuals or a user group).
+|Whether it will only allow individual initiatives (made by only one person) or it will always have to have a collective (multiple promoters, being multiple individuals or a user group).
 
 |Minimum of committee members
 |Optional
@@ -207,10 +207,23 @@ each request, by opening the Admin Dashboard link in the user menu, editing thei
 initiative, clicking "Committee members" and then approving each member.
 
 image:initiative_commitee_members_send_to_technical_false.png[Initiative promotor committee: edit screen]
+
+The initiative cannot be sent to technical validation until it meets the minimum number of committee members required. You can find the invitation link in the edit form.
+
 image:initiative_edit_commitee_members.png[Initiative promotor committee: edit screen]
-image:initiative_commitee_members_sent.png[Initiative promotor committee: edit screen]
+
+Share the invitation link with the people you'd like to have on your committee. 
+
 image:initiative_commitee_members_ask.png[Initiative promotor committee: edit screen]
+
+The people invited with the link will be able to read the initiative and ask to be part of the committee.
+
+image:initiative_commitee_members_sent.png[Initiative promotor committee: edit screen]
+
+The request is sent and the author can then and accept or refuse it in the initiative edit form. 
+
 image:initiative_commitee_members_approve.png[Initiative promotor committee: edit screen]
+
 image:initiative_commitee_members_send_to_technical_true.png[Initiative promotor committee: edit screen]
 
 Once enough people have joined the promoter committee the initiative author can send it for
