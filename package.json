@@ -1,6 +1,9 @@
 {
   "name": "decidim-documentation",
   "private": true,
+  "scripts": {
+    "build": "DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr antora --generator antora-site-generator-lunr antora-playbook.yml $@"
+  },
   "devDependencies": {
     "@antora/cli": "^2.3.0",
     "@antora/site-generator-default": "^2.3.0"
