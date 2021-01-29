@@ -1,4 +1,102 @@
 = Scopes
 
-include::partial$under-construction.adoc[]
+A scope is all the territories or subjects that an Organization have. One scope can have children scopes.
 
+For instance, in the case of the city of Barcelona the scopes are its districts, and the children of a district are its neighborhoods. They can also have types, so it can be configured, for example, by thematic and also territorial scopes.
+
+Most of the components and spaces in Decidim allow you to configure Scopes in one way or another. There are mainly three ways of using Scopes:
+
+To configure Scope on the Decidim platform, go to menu:Settings[Scopes] in the admin sidebar menu. A list will appear with the existing scopes if there are any:
+
+image:scopes_list.png[Scopes list]
+
+If you need so, you need to first configure the Scope type.
+
+== Form
+
+image:scopes_types_new_form.png[New scope type form]
+
+.Admin New Scope Type form
+|===
+|Field |Type |Description
+
+|Singular
+|Required
+|Name of the scope type in singular.
+
+|Plural
+|Required
+|Name of the scope type in plural.
+
+|===
+
+image:scopes_new_form.png[New scope form]
+
+.Admin New Scope Form
+|===
+|Field |Type |Description
+
+|Name
+|Required
+|Name of the scope.
+
+|Code
+|Required
+|(Internal) name of the scope.
+
+|Scope type
+|Required
+|Which type of scope it's.
+
+|===
+
+== Actions
+
+You have 3 possible actions in this list after a Scope is created:
+
+|===
+|Icon |Name |Definition
+
+|image:action_browse.png[Browse icon]
+|Browse
+|See and configure the children scopes for this Scope.
+
+|image:action_edit.png[Edit icon]
+|Edit
+|Edit form for a Scope. It's the same form as "Create a new scope".
+
+|image:action_delete.png[Delete icon]
+|Delete
+|To delete this meeting.
+
+|===
+
+== Features
+
+The main features related with scopes are:
+. Filtering
+. User interests and Newsletters
+
+=== Filtering
+
+For filtering. Most of the spaces and components allows an administrator or a participant to associate them to a scope. This allows to filter by scopes when exploring them.
+
+image:scopes_filter_initiatives.png[Initiatives scopes filtering]
+
+image:scopes_filter_processes.png[Processes scopes filtering]
+
+Some examples:
+
+* With Accountability module, so it's possible to filter Results
+* Assemblies and Processes can have Scopes. It's used for filtering multiple assemblies in the main listing page (/assemblies or /processes).
+* Filtering in the sidebar is possible in Budgets Projects, Initiatives and Proposals.
+
+=== User interests and Newsletters
+
+A Participant can choose which Scopes she wants to follow in its account.
+
+image:account_my_interests.png[Account: my interests]
+
+This is used by the xref:admin:newsletters.adoc[Newsletters], in the "Select recipients to deliver" step, "Filter for users having activated any selected scope in their account's My Interests settings." section.
+
+image:newsletter_select_recipients.png[Newsletter: select recipients]
