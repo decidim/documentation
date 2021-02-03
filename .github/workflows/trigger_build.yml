@@ -10,4 +10,4 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Trigger build"
-          commit_options: '--allow-empty"
+          commit_options: "--allow-empty"
