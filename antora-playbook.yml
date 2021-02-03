@@ -10,7 +10,7 @@ content:
       branches: HEAD
     - url: https://github.com/decidim/decidim
       start_path: docs
-      branches: develop
+      branches: main
     - url: https://github.com/decidim/decidim-bulletin-board
       start_path: docs
       branches: develop
