@@ -47,6 +47,8 @@ Featuring the following fields:
 
 To manage the *Accountability*, click on *_Acountabilityname_* from the *Processes* submenu. The *ACCOUNTABILITY* window will open displaying a list of the results and possible *ACTIONS (Preview, New result, Project evolution, Edit* and *Delete*) (<<results-fig>>).
 
+The results can be filtered by 'Scope', 'Category' or 'Status', searched by 'ID' or 'Title', ordered by column values, and paginated to 15, 50 or 100 results per page.
+
 [#results-fig]
 ._Results_.
 image::image18.png[image]
