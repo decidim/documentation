@@ -3,14 +3,17 @@ site:
   url: https://docs.decidim.org
   start_page: master@en:ROOT:index.adoc
 content:
-  edit_url: 'https://github.com/decidim/documentation/edit/{refname}/{path}'
+  edit_url: "https://github.com/decidim/documentation/edit/{refname}/{path}"
   sources:
-  - url: &landing .
-    start_path: /en
-    branches: HEAD
-  - url: https://github.com/decidim/decidim
-    start_path: docs
-    branches: develop
+    - url: &landing .
+      start_path: /en
+      branches: HEAD
+    - url: https://github.com/decidim/decidim
+      start_path: docs
+      branches: develop
+    - url: https://github.com/decidim/decidim-bulletin-board
+      start_path: docs
+      branches: develop
 ui:
   bundle:
     url: https://github.com/decidim/documentation-antora-ui/releases/download/v0.3/ui-bundle.zip
@@ -19,6 +22,6 @@ ui:
 asciidoc:
   attributes:
     kroki-fetch-diagram: true
-    page-pagination: ''
+    page-pagination: ""
   extensions:
     - asciidoctor-kroki
