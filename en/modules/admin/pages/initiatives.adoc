@@ -1,20 +1,20 @@
 = Initiatives
 
-An initiative is a proposal that can be promoted by anyone on their own initiative (independently of other channels or participation spaces) through the collection of (digital) signatures for the organization to carry out a specific action (modify a regulation, initiate a project, change the name of a department or a street, etc.).
+An initiative is a special type of participatory process that can be promoted by anyone (independently of other channels or participation spaces) through the collection of (online and in-person) signatures for the organization to carry out a specific action (modify a regulation, initiate a project, change the name of a department or a street, etc.).
 
 The promoters of an initiative can define its objectives, gather support, debate, disseminate it and define meeting points where signatures can be collected from the attendees or debates open to other participants.
 
-Examples: An initiative can collect signatures to convene a consultation among all the people of an organization, or to create or convene an assembly, or to initiate a process of budget increase for a territory or area of the organization. During the process of collecting signatures, more people can add to this demand and carry it forward in the organization.
+Examples: An initiative can collect signatures to call for a consultation among all the people of an organization, or to create an assembly, or to call for a process of budget increase for a territory or area of the organization. During the process of collecting signatures, more people can add to this demand and carry it forward in the organization.
 
-Initiatives are distinguished from the other participation spaces because they are participatory tools or mechanisms promoted by participants. In other words, the initiatives are mechanisms for semi-direct democracy through which participants can promote a certain action of common interest to the organization, by collecting a specific number of signatures. In this case, what the organization has to do is enable the promotion of these initiatives and offer the necessary technical support and advice to the people concerned. The role of the platform’s administrator, then, is somewhat different from that of the other participation spaces.
+Initiatives are to be distinguished from the other participation spaces because they can be used as a participatory tool or mechanism promoted by participants. In other words, the initiatives are mechanisms for semi-direct democracy through which participants can promote a certain action of common interest to the organization, by collecting a specific number of signatures. In this case, what the organization has to do is enable the promotion of these initiatives and offer the necessary technical support and advice to the people concerned. The role of the platform’s administrator, then, is somewhat different from that of the other participation spaces.
 
 In the first place, you will have to configure the various forms of initiatives. This could be specified in a regulation (like a municipal normative or state law), specifying the number of signatures required for processing the various types of initiatives. For example, an initiative for incorporating one or several items into the Municipal Council’s agenda evidently requires fewer signatures than another initiative for promoting a binding consultation.
 
 == 0. Initiative setup
 
-How initiatives work depends in two things: how the initiative module is configured through the xref:admin:initiatives_initializer.adoc[initializer] (in code) and how the initiative type is configured in the administration panel.
+How initiatives work depends on two things: how the initiative module is configured through the xref:admin:initiatives_initializer.adoc[initializer] (in code) and how the initiative type is configured in the administration panel.
 
-Regarding initiatives type, **an administrator** need to define one. There must be at least one type for initiatives to work. If there's only one then the participant will not get the possibility to choose the initiative type.
+Regarding initiatives type, **an administrator** needs to define one. For Initiatives to work on an organization there must be at least one initiative type created and configured with at least one initiative type scope. If there's only one type then the participant will not get the possibility to choose the initiative type, this step will be skipped in the initiative creation wizard.
 
 Some real examples from the city of Barcelona are:
 
@@ -61,7 +61,7 @@ image:admin_initiative_type.png[New initiative type form]
 
 |Enable participants to undo their online signatures
 |Optional
-|Can a participant undo the signature once it have already signed?
+|Can a participant undo its signature when they already signed?
 
 |Enable authors to choose the end of the signature collection period
 |Optional
@@ -77,23 +77,23 @@ image:admin_initiative_type.png[New initiative type form]
 
 |Only allow global scope initiatives creation
 |Optional
-|Tick this flag if you enabled "Child scope signature" and configured the global scope as your parent scope. By enabling this, initiative type selection will be skipped in the initiative creation wizard.
+|Tick this flag if you enabled "Child scope signature" and configured the global scope as your parent scope. By enabling this, scope selection will be skipped in the initiative creation wizard.
 
 |Enable promoting committee
 |Optional
-|Whether it will only allow individual initiatives (made by only one person) or it will always have to have a collective (multiple promoters, being multiple individuals or a user group).
+|Whether it will only allow individual initiatives (made by only one person) or allow collective initiatives (multiple promoters, being multiple individuals or a user group).
 
 |Minimum of committee members
 |Optional
-|Depends on whether the "Enable promoting committee" option is checked
+|When "Enable promoting committee" option is checked, defines the minimum number of promoter's committee member to send the initiative to technical validation
 
 |Collect participant personal data on signature
 |Optional
-|When a participant is the signature process, it'll ask for some personal data. This will be used with the PDF export action after the recollection period has ended.
+|Adds a step to the signature process. When a participant clicks on the signature button, she'll be redirected to a form asking for some personal data. This will be used with the PDF export action after the recollection period has ended.
 
 |Legal information about the collection of personal data
 |Depends on whether the option "Collect participant personal data on the signature" is checked
-|Text that it'll show the participant during the signature process, for privacy notice and terms of use of this personal data.
+|Privacy notice and terms of use for the participant personal data during the signature process.
 
 |===
 
@@ -103,7 +103,7 @@ image:admin_initiative_type.png[New initiative type form]
 
 |Authorization to verify document number on signatures
 |Optional
-|When a participant is making the signature process, will she be asked for authorization?
+|When a participant is making the signature process, will she be asked for an authorization?
 
 |Add SMS code validation step to the signature process
 |
@@ -111,9 +111,9 @@ image:admin_initiative_type.png[New initiative type form]
 
 |===
 
-=== New scope initiative type form
+=== New initiative type scope form
 
-An initiative type can also have scopes associated.
+An initiative type can also have scopes associated. For Initiatives it needs at least one scope configured.
 
 image:admin_initiative_type_scope.png[New initiative type form]
 
@@ -150,7 +150,7 @@ image:initiative_new_step2.png[Initiative creation: step 2]
 
 === 1.3 [Optional] Similarity comparison
 
-Checks the rest of the initiatives if there is any other similar initiative. If there's one, the system will show it before continuing. This is a way to stop duplicates.
+Checks the rest of the initiatives if there are other similar initiatives. If there are, the system will show them before continuing. This is a way to avoid duplicates.
 
 === 1.4 Finish
 
@@ -192,19 +192,13 @@ This action is done by **the author**.
 
 After it has been reviewed by the author, it can be sent to "Technical validation", but it depends in the configuration of the initiative type, in whether the options "Enable promoting committee" and "Minimum of committee members" are configured.
 
-=== Promotion committee
+=== Promoter's committee
 
-An initiative type can optionally be supported by a promotion committee, with a minimum
-number of committee members. Once the user has created the initiative and before it can be
-sent for technical validation they need to invite committee members to promote it.
+An initiative type can optionally be supported by a promoter's committee, with a minimum number of committee members. Once the user has created the initiative and before it can be sent for technical validation they need to invite committee members to promote it.
 
-When the user has created the initiative they will be given a link to share with possible
-committee members, which will look something like `/initiatives/.../committee_requests/new`
+When the user has created the initiative they will be given a link to share with possible committee members, which will look something like `/initiatives/.../committee_requests/new`
 
-When a prospective committee member opens the link, they can click a button which allows
-them to request to be part of the committee. The initiative author then needs to approve
-each request, by opening the Admin Dashboard link in the user menu, editing their
-initiative, clicking "Committee members" and then approving each member.
+When a prospective committee member opens the link, they can click a button which allows them to request to be part of the committee. The initiative author then needs to approve each request. The author can approve them by clicking on the "Edit" button of their initiative at the bottom of the form they can approve or reject committee members.
 
 image:initiative_commitee_members_send_to_technical_false.png[Initiative promotor committee: edit screen]
 
@@ -212,7 +206,7 @@ The initiative cannot be sent to technical validation until it meets the minimum
 
 image:initiative_edit_commitee_members.png[Initiative promotor committee: edit screen]
 
-Share the invitation link with the people you'd like to have on your committee. 
+Share the invitation link with the people you'd like to have on your committee.
 
 image:initiative_commitee_members_ask.png[Initiative promotor committee: edit screen]
 
@@ -220,7 +214,7 @@ The people invited with the link will be able to read the initiative and ask to 
 
 image:initiative_commitee_members_sent.png[Initiative promotor committee: edit screen]
 
-The request is sent and the author can then and accept or refuse it in the initiative edit form. 
+The request is sent and the author can then and accept or refuse it in the initiative edit form.
 
 image:initiative_commitee_members_approve.png[Initiative promotor committee: edit screen]
 
