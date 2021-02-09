@@ -1,6 +1,6 @@
 = Scopes
 
-A scope is all the territories or subjects that an Organization have. One scope can have children scopes.
+Scopes are the set of territories or subjects that an Organization has. A scope may have child scopes.
 
 For instance, in the case of the city of Barcelona the scopes are its districts, and the children of a district are its neighborhoods. They can also have types, so it can be configured, for example, by thematic and also territorial scopes.
 
