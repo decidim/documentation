@@ -24,6 +24,12 @@ the personal data to check against the verification:
 
 image::participants_impersonations_form.png[Admin's Impersonations form]
 
+NOTE: If you don't see the `Manage new participant` button, is because this feature
+only works in some cases, when you have a Verification of kind `direct` (also knwon
+as `form authorizations`). See in your xref:admin:system.adoc[system panel] which
+`Available authorizations` are enabled. You can learn more regarding how to program
+your own form authorizartion in https://github.com/decidim/decidim/blob/develop/decidim-verifications/README.md[decidim-verification README].
+
 After this data is confirmed then there'll be a session for the participant for
 30 minutes:
 
