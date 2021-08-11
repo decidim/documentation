@@ -1,33 +1,90 @@
 = Phases
 
-include::partial$legacy.adoc[]
+A participatory process is a sequence of phases ordered in time. Depending on which phase of the process timeline you
+are, then you can enable or disable some features.
 
-A participatory process will be reflected on the Decidim platform at different stages, each with a start date and finish date, both pre-established at the beginning, so that citizens are clear about where the process is at and how they can take part in it at any time.
+Ideally, the Phases of a Participatory Process are always the same and are not changed, so participants can know what are
+the rules and timeframe and can organize their lives to know when it'd be best for them to participate in this process.
 
-As a guideline, the standard structure of a participatory process may be as follows: Stage 1: presentation; Stage 2: diagnosis; Stage 3: proposal creation and debate; Stage 4: prioritisation of proposals; Stage 5: selection of results; Stage 6: assessment; Stage 7: monitoring.
+As a guideline, the standard structure of a participatory process may be as follows:
 
-To configure the stages of the process, click on *Steps* in the *PARTICIPATORY PROCESS* submenu and then click *NEW*. A *NEW PARTICIPATORY PROCESS STEP* window will open (<<new-participatory-process-step-fig>>).
+. Presentation
+. Diagnosis
+. Proposal creation and debate
+. Proposals prioritization
+. Proposals evaluation
+. Monitoring
 
-You need to enter the following for each of the stages:
+Participants can find the link to different phases of a participatory process in the header of the participatory process,
+in the link "Process phases". Here they can see the full description and explanation of the phases. The active phase
+will be highlighted.
 
-* *Title*
-* *Description*
-* *Start date and end date*
+image:process_phases_header.png[Header with processes phases link]
 
-Once you have done that, click on *Create*.
+image:process_phases.png[Process phases explanation]
 
-[#new-participatory-process-step-fig]
-._New participatory process step_.
-image::image32.png[image]
+== Create a new phase
 
-To activate the stage the process is at, click on *Steps* from the *PARTICIPATORY PROCESS* submenu. A window will open showing all the stages of the process that have been configured and the icons that enable you to *Activate*, *Edit* and *Destroy* each of them. Click on *Activate* at the corresponding stage (<<process-steps-fig>>).
+image:process_phases_list.png[Phases of a participatory process]
 
-[#process-steps-fig]
-._Process steps_.
-image::image40.png[image]
+For creating a new phase of a participatory process:
 
-Users will be able to display the various stages and descriptions that have been configured, by clicking on *View steps* (in the flag image, on the right). The stage that is active will be highlighted in red (<<displaying-steps-of-the-participating-user-process-fig>>).
+. Sign in as administrator
+. Go to the participatory process section in the sidebar
+. Click on the participatory process Edit action
+. Click on the Phases link in the sidebar
+. Click on the "New phase" button
 
-[#displaying-steps-of-the-participating-user-process-fig]
-._Displaying steps of the participating user process_.
-image::image14.png[image]
+image:process_phases_new_form.png[Create a new participatory process phase form]
+
+.Create meeting
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|What is the title for this phase.
+
+|Description
+|
+|A long description explaining what's this phase for.
+
+|Start date
+|
+|Which day this phase will start. Expected format: dd/mm/yyyy
+
+|End date
+|
+|Which day this phase will end. Expected format: dd/mm/yyyy
+
+|Call to Action path
+|
+|Where will the button link to. For instance, it could point to the new proposal creation form. Use partial paths, not full
+URLs here. Accepts letters, numbers, dashes, and, slashes, and must start with a letter. If not set, the button will not be shown.
+
+|Call to Action text
+|
+|What will the button say. For instance, it could be "Create a proposal". If not set, the button will not be shown.
+
+|===
+
+== Actions
+
+After a phase was created you have these actions:
+
+|===
+|Icon |Name |Definition
+
+|image:action_activate.png[Activate icon]
+|Activate
+|To make this phase the active one.
+
+|image:action_edit.png[Edit icon]
+|Edit
+|To edit this phase.
+
+|image:action_delete.png[Delete icon]
+|Delete
+|To delete this phase.
+
+|===
