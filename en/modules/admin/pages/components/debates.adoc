@@ -1,0 +1,230 @@
+= Debate
+
+The Debate component allows people to have discussions, without voting nor prioritzation. It also allows to close them,
+by adding conclusions or a summary of what the discussion was about.
+
+From this starting point, there could be other configurations, such as:
+
+* To allow debates creation by participants
+* To have debates with a fixed started and ending date or open
+* To show endorsements (public supports) or not
+
+Some examples of where this component was used:
+
+* https://meta.decidim.org/processes/roadmap/f/219/[Propose new functionalities for Decidim software in Metadecidim]
+
+image:components/debates/example01.png[Debates listing example]
+image:components/debates/example02.png[Debate example]
+
+To configure the Debate component:
+
+. Sign in as admin
+. Go to admin panel
+. In the main sidebar, click in the button for the space that you want to configure the component for.
+For instance, it could be "Processes", "Assemblies" or "Conferences".
+. Go to components
+. Click on "Add component" button
+. Click on "Debate"
+. Fill the xref:_add_component[Add component] form
+
+== Add component
+
+image:components/debates/component.png[Add component form]
+
+.Add component: Debate form
+|===
+|Field |Type |Description
+
+|Name
+|Required
+|What is the title of this component. For instance, "Debates"
+
+|Order position
+|Optional
+|Which order will it have in relation to the other debates. Having a lower number means a higher priority.
+For instance, if you have two debates, "Debate a" with weight "10" and "Debate b" with weight "0", then "Debate b" will be first when ordering.
+
+|===
+
+.Add component: Debate form - Global settings
+|===
+|Field |Type |Description
+
+|Scopes enabled
+|Optional
+|Check if you want to have Scopes filtering in this component.
+
+|Scope
+|Optional
+|Which xref:admin:scopes.adoc[Scope] does this component belongs to.
+
+|Global scope
+|Optional
+|
+
+|Comments enabled
+|Optional
+|Whether you want to have comments in the meetings.
+
+|Comments max length
+|Optional
+|What is the characters limit that participants will have when making comments. Leave 0 for default value.
+
+|Announcement
+|Optional
+|A general announcement that'll be visible on the general debates landing page.
+
+|===
+
+In the cases where the space that this component will be used has xref:admin:process_phases.adoc[Phases], for instance, in
+xref:admin:processess.adoc[Participatory Processes], then you can also define different behaviors per Step.
+
+.Add component: Debates form - Step settings
+|===
+|Field |Type |Description
+
+|Endorsements enabled
+|Optional
+|Check if you want that participants show public support for these debates.
+
+|Endorsements blocked
+|Optional
+|
+
+|Debate creation by participants enabled
+|Optional
+|Check if you want to allow the creation of new debates by participants.
+
+|Comments blocked
+|Optional
+|Whether you want to enable comments for this phase.
+
+|Announcement
+|Optional
+|A general announcement that'll be visible on the general debate landing page.
+
+|===
+
+== Permissions
+
+An administrator can choose which kind of xref:admin:authorizations.adoc[Authorizations] a participant need to have to make
+certain actions in the debates:
+
+* Create
+* Endorse
+
+== Manage debates
+
+image:components/debates/manage_debates.png[Manage debates table]
+
+=== Export all
+
+Allows exporting the comments in the debates in different formats.
+
+* Comments as CSV
+* Comments as JSON
+* Comments as Excel
+
+=== New debate form
+
+image:components/debates/new_debate_backend.png[New debate backend form]
+
+.New debate form
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|What is the title of this debate. For instance, "How can we improve this process?"
+
+|Description
+|Required
+|What is the description of this debate.
+
+|Instructions to participate
+|Required
+|Add a message for the participants.
+
+|Information updates
+|Optional
+|Add a message for the participants.
+
+|xref:_debate_types[Debate type]
+|Required
+|Choose between Finite and Open. Finite means that the debate has a starting and ending date and time, Open means that
+there isn't any timeframe.
+
+|Starts at
+|Required if the debate type is Finite
+|Expected format: dd/mm/yyyy hh:ii
+
+|Ends at
+|Required if the debate type is Finite
+|Expected format: dd/mm/yyyy hh:ii
+
+|Category
+|Optional
+|Which category has the debate. Used for filtering in the debates list.
+
+|===
+
+==== Debate types
+
+It's possible to have two kinds of debates:
+
+. Finite: with a start and end date
+. Open: without a start and end date
+
+This is shown publically in the debate list.
+
+image:components/debates/debates_list.png[Debates list]
+image:components/debates/debate_finite.png[Finite debate]
+
+==== Actions
+
+.Actions
+|===
+|Icon |Name |Definition
+
+|image:action_edit.png[Edit icon]
+|Edit
+|Edit form for a debate. It's the same form as "New debate".
+
+|image:action_close.png[Close icon]
+|Close
+|Close form for a debate. For adding conclusions.
+
+|image:action_permissions.png[Permissions icon]
+|Permissions
+|To handle the permissions of this debate, depending on the verification a participant has.
+
+|image:action_delete.png[Delete icon]
+|Delete
+|To delete this debate. Only can be done when there aren't any projects.
+
+|===
+
+=== Close debate form
+
+A debate can be closed. This is useful for adding conclusions. After a debate was closed it can't be edited nor commented any more
+
+image:components/debates/close_debate_backend.png[Close debate backend form]
+
+Take in account that if the debate was created by a participant then only that
+participant can close it.
+
+image:components/debates/close_debate_frontend.png[Close debate frontend form]
+
+.Close debate form
+|===
+|Field |Type |Description
+
+|Conclusions
+|Required
+|What is the conclusion for this debate.
+
+|===
+
+The conclusions are shown publicly with the close date and time.
+
+image:components/debates/debate_closed.png[Closed debate]
