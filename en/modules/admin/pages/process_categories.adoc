@@ -1,19 +1,57 @@
 = Categories
 
-include::partial$legacy.adoc[]
 
-Categories (and subcategories) are used for classing contents within the various participatory spaces/ processes, as well as enabling users to filter contents. They are defined for each of the instances of the spaces.  For example, a participatory space can include several categories and subcategories and meetings, surveys, proposals and other components of the process can be classed under these categories. A category could be Environment and two of its subcategories Mobility and Air quality. <<categories-and-subcagetories-in-the-barcelona-PAM-for-20016-fig>> shows the categories and subcategories that were used in the participatory process for drafting the Barcelona Municipal Action Plan (PAM) for 2016.
+Categories (and subcategories) are used for classifying resources inside of a participatory process.
 
-[#categories-and-subcagetories-in-the-barcelona-PAM-for-20016-fig]
-._Categories and subcategories in the Barcelona PAM for 2016_.
-image::image65.png[image]
+An administrator can define them, can be assigned to when creating resources, and then participants can filter the
+different resources by these categories. For instance, they can be set up in proposals, meetings and debates.
 
-Note that once the categories have been defined, you cannot change them as they become the index that structures the contents inside a participation space. For example, if there is a participatory process for electing candidates, the categories could identify lists or types of candidacies. And where the process is for defining a Plan, the categories would coincide with the index for this Plan.
+As an example of this mechanism in action you can see it in https://meta.decidim.org/processes/roadmap/f/122/[Propose new functionalities for Decidim software] process:
 
-Note too that when it comes to classing contents, Decidim also allows scopes and labels (or tags) to be distinguished and configured. Unlike categories, (territorial or thematic) scopes are general throughout the platform and are defined during the configuration of the Decidim platform of the local authority/ entity.footnote:[On how to create scopes, see point 2.2.] Whereas labels (or tags) are freely defined by participants and can apply to any instance or component. The administration panel also allows you to create and nest labels.
+. Administrators have defined the categories in the process.
+. Participants can create proposals that have one category.
+. Participants can filter by these categories and navigate among all the proposals.
 
-For configuring categories, click on *Categories* in the *PARTICIPATIVE PROCESS* submenu. Then click on *NEW* below. You need to enter the following for each of the categories/ subcategories (<<new-category-fig>>): *Name* and *Description* and, where a subcategory is involved, select the category it corresponds to from the *Parent* drop-down menu. To finish, click on *Create category*.
+image:process_categories_sidebar.png[Filter categories in proposals]
 
-[#new-category-fig]
-._New category_.
-image::image21.png[image]
+image:process_categories_form.png[Select a category when creating a proposal]
+
+NOTE: Once a category is in use it cannot be removed, as there are resources that are using it.
+
+Decidim has other ways to classify resources, for instance xref:admin:scopes.adoc[Scopes] and xref:admin:hashtags.adoc[Hashtags].
+The main difference is that Categories can be defined in a given process, Scopes are global for all the platform, and Hashtags
+are defined by the participants.
+
+Categories can be nested, meaning that a category can have subcategories.
+
+== Create a new category
+
+For configuring a new category, go to the participatory process admin panel and click on the "Categories" tab.
+
+image:process_categories.png[View categories in a process admin page]
+
+Then click in "Add category" and fill the form.
+
+image:process_categories_new_form.png[Create a new category form]
+
+.Create category
+|===
+|Field |Type |Description
+
+|Name
+|Required
+|What is the name for this category.
+
+|Weight
+|Optional
+|Which order will it have in relation to the other categories. Having a lower number means a higher priority. For instance, if you have two categories, "Category a" with weight "10" and "Category b" with weight "0", then "Category b" will be first when ordering.
+
+|Description
+|Required
+|A long description explaining what this category is about.
+
+|Parent
+|Optional
+|What is the parent category.
+|===
+

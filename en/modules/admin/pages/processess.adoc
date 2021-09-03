@@ -1,12 +1,15 @@
 = Processes
 
-include::partial$legacy.adoc[]
+A participatory process is a sequence of participatory activities (e.g. first filling out a survey, then making proposals,
+discussing them in face-to-face or virtual meetings, and finally prioritizing them) with the aim of defining and making a decision on a specific topic.
 
-A participatory process is a sequence of participatory activities (e.g. first filling out a survey, then making proposals, discussing them in face-to-face or virtual meetings, and finally prioritizing them) with the aim of defining and making a decision on a specific topic.
+Examples of participatory processes are: a process of electing committee members (where candidatures are first presented,
+then debated and finally a candidacy is chosen), participatory budgets (where proposals are made, valued economically,
+and voted on with the money available), a strategic planning process, the collaborative drafting of a regulation or norm,
+the design of an urban space or the production of a public policy plan.
 
-Examples of participatory processes are: a process of electing committee members (where candidatures are first presented, then debated and finally a candidacy is chosen), participatory budgets (where proposals are made, valued economically and voted on with the money available), a strategic planning process, the collaborative drafting of a regulation or norm, the design of an urban space or the production of a public policy plan.
-
-A really important concept for making good use of Decidim is to understand the relationship between Phases and Components in a participatory process in Decidim:
+A really important concept for making good use of Decidim is to understand the relationship between Phases and Components
+in a participatory process in Decidim:
 
 image::process_steps_components.png[Relation between Steps and Components in a Process in Decidim]
 
@@ -15,40 +18,44 @@ What this diagram is showing is that for a participatory process you can have 7 
 . Configuration & Presentation
 . Diagnostic
 . Proposal Creation
-. Proposal Selection 
+. Proposal Selection
 . Results
 . Evaluation
-. Monitoring 
+. Monitoring
 
-Inside of every one of these Phases, there are some components (like Blog, Meetings, Survey, Debates, Proposals, Results). Some of these Components allows some features depending in the Phase that we are. 
+Inside of every one of these Phases, there are some components (like Blog, Meetings, Survey, Debates, Proposals, Results).
+Some of these Components allow some features depending on the Phase that we are.
 
-In this section we'll understand how we can configure a Participatory Process in Decidim. 
+In this section, we'll explain how we can configure a Participatory Process in Decidim.
 
 == List
 
-To configure participatory processes on the Decidim platform, click on btn:[Processes] in the admin sidebar menu. A list will appear with the existing processes if there are any:
+To configure participatory processes on the Decidim platform, click on btn:[Processes] in the admin sidebar menu. A list
+will appear with the existing processes if there are any:
 
 image::processes_list.png[Participatory processes list]
 
 You can filter by the ones that are:
+
 * Published / Unpublished
 * Public / Private
 
 image::processes_list_filter.png[Participatory processes list filtered]
 
-You can also search by title and control how many elements are in the list. 
+You can also search by title and control how many elements are in the list.
 
-You have 4 possible actions in this list after a Participatory Process is created: 
+You have 4 possible actions in this list after a Participatory Process is created:
+
 1. Export: send by email the configuration for a given process. Can be imported in other Decidim installation.
 2. Duplicate: to duplicate this process.
 3. Configure: to edit the metadata and configuration for a process.
 4. Preview: how it will look once published.
 
-== New process form 
+== New process form
 
 image::processes_new_form.png[New participatory process form]
 
-.System New Organization form: General information
+.New participatory process form: General information
 |===
 |Field |Type |Description
 
@@ -62,8 +69,10 @@ image::processes_new_form.png[New participatory process form]
 
 |URL slug
 |Required
-|URL slugs are used to generate the URLs that point to this process. Only accepts letters, numbers and dashes, and must start with a letter. Example: if your domain is 'example.org' and your slug 'participatory-budget-2020' then your URL will be https://example.org/processes/participatory-budget-2020 
- 
+|URL slugs are used to generate the URLs that point to this process. Only accepts letters, numbers and dashes, and must
+start with a letter. Example: if your domain is 'example.org' and your slug 'participatory-budget-2020' then your URL will
+be https://example.org/processes/participatory-budget-2020
+
 |Hashtag
 |Optional
 |Hashtag for Twitter
@@ -80,9 +89,9 @@ image::processes_new_form.png[New participatory process form]
 |Optional
 |The text you enter here will be shown to the user right below the process information.
 
-|=== 
+|===
 
-.System New Organization form: Duration
+.New participatory process form: Duration
 |===
 |Field |Type |Description
 
@@ -94,23 +103,25 @@ image::processes_new_form.png[New participatory process form]
 |Optional
 |When this process start. You have a calendar widget to choose the day. Expected format: dd/mm/yyyy
 
-|=== 
+|===
 
-.System New Organization form: Images
+.New participatory process form: Images
 |===
 |Field |Type |Description
 
 |Home image
 |Optional
-|Image that will be use in presentation cards of this process. Guidance for file: Has to be an image or a document. For images, use preferably landscape images, the service crops the image. Maximum file size: 10MB
+|Image that will be used in presentation cards of this process. Guidance for file: Has to be an image or a document.
+For images, use preferably landscape images, the service crops the image. Maximum file size: 10MB
 
 |Banner image
 |Optional
-|Image that will be use inside of the process. Guidance for file: Has to be an image or a document. For images, use preferably landscape images, the service crops the image. Maximum file size: 10MB
+|Image that will be used inside of the process. Guidance for file: Has to be an image or a document.
+For images, use preferably landscape images, the service crops the image. Maximum file size: 10MB
 
-|=== 
+|===
 
-.System New Organization form: Metadata
+.New participatory process form: Metadata
 |===
 |Field |Type |Description
 
@@ -134,8 +145,8 @@ image::processes_new_form.png[New participatory process form]
 |Optional
 |Information that's displayed in the process metadata sidebar.
 
-|Promoter group
-|Optional: How is it decided
+|How is it decided
+|Optional
 |Information that's displayed in the process metadata sidebar.
 
 |===
@@ -144,7 +155,7 @@ image::process_frontend_metadata.png[Process frontend metadata]
 
 image::process_backend_metadata.png[Process backend metadata]
 
-.System New Organization form: Filters
+.New participatory process form: Filters
 |===
 |Field |Type |Description
 
@@ -158,7 +169,10 @@ image::process_backend_metadata.png[Process backend metadata]
 
 |Scope filter depth
 |Optional
-|Restrict the scope filter depth; The filter will show from general to the selected scope type. This is only relevant if you have complex relations in Scopes children (like a Russian Doll). For instance if you have a Grandmother -> Mother -> Child, this setting allows you to choose the Mother, so the participants can only choose the Child. This would be the case for instance if you have Provinces -> Cities -> Districts, and the process is about a particular City.
+|Restrict the scope filter depth; The filter will show from general to the selected scope type. This is only relevant if
+you have complex relations in Scopes children (like a Russian Doll). For instance if you have a Grandmother -> Mother ->
+Child, this setting allows you to choose the Mother, so the participants can only choose the Child. This would be the
+case for instance if you have Provinces -> Cities -> Districts, and the process is about a particular City.
 
 |Area
 |Optional
@@ -166,13 +180,14 @@ image::process_backend_metadata.png[Process backend metadata]
 
 |===
 
-.System New Organization form: Visibility
+.New participatory process form: Visibility
 |===
 |Field |Type |Description
 
 |Processes group
 |Optional
-|Enables to make groups of multiple participatory processes. Ideally for processes that are related between them, for instance multiple squares in a City or multiple documents using the same participatory rules.  
+|Enables to make groups of multiple participatory processes. Ideally for processes that are related between them, for
+instance multiple squares in a City or multiple documents using the same participatory rules.
 
 |Private space
 |Optional
@@ -180,11 +195,13 @@ image::process_backend_metadata.png[Process backend metadata]
 
 |Promoted
 |Optional
-|Check if you want the process to have more visibility in the Process public list. It'll also be visible in the ParticpipatoryProcess Content Block in the xref:admin:homepage.adoc[Homepage] configuration. This is accessible in the btn:[Edit] action in a Process. 
+|Check if you want the process to have more visibility in the Process public list. It'll also be visible in the
+Participatory Process Content Block in the xref:admin:homepage.adoc[Homepage] configuration. This is accessible in the
+btn:[Edit] action in a Process.
 
 |===
 
-.System New Organization form: Filters
+.New participatory process form: Filters
 |===
 |Field |Type |Description
 
@@ -194,28 +211,29 @@ image::process_backend_metadata.png[Process backend metadata]
 
 |===
 
-.System New Organization form: Filters
+.New participatory process form: Filters
 |===
 |Field |Type |Description
 
 |Show statistics
 |Optional
-|Check if you want to show the Statistics section. 
+|Check if you want to show the Statistics section.
 
 |Show metrics
 |Optional
-|Check if you want to show the Metrics section. 
+|Check if you want to show the Metrics section.
 
 |===
 
-After you've initially created your process you have a submenu where you need to keep configuring more information about your participatory process. 
+After you've initially created your process you have a submenu where you need to keep configuring more information
+about your participatory process.
 
 image::process_submenu.png[Process submenu in admin]
 
-Here you can keep configuring your process: 
+Here you can keep configuring your process:
 
 . Info: the same form that we explained in this page.
-. xref:admin:process_phases.adoc[Pĥases]
+. xref:admin:process_phases.adoc[Phases]
 . xref:admin:process_components.adoc[Components]
 . xref:admin:process_categories.adoc[Categories]
 . xref:admin:process_attachments.adoc[Attachments]

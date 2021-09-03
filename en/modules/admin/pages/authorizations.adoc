@@ -1,0 +1,40 @@
+= Authorizations
+
+This section allows you to manage participants' authorizations. It depends on which Authorizations you have configured and
+enabled by your developers. To understand more what are authorizations and how to configure them, please refer to the
+xref:customize:authorizations.adoc[Authorizations section in the Customize Guide].
+
+With authorizations an administrator can define different permissions so participants can make some actions in a component.
+For instance you can configure that only participants who have verified herselves by their identity documents can vote on
+proposals in a participatory process.
+
+A participant can see which authorizations does she have available in her account settings.
+
+image:authorizations_account.png[Authorizations in participants account]
+
+== Authorizations revocation
+
+A default Decidim installation will not have verified participants.
+
+image:authorizations_admin_default.png[Authorizations in a default installation]
+
+In the moment that there are some participants verified, an administrator can revoke all the authorizations, as the attributes
+that give permissions to those participants could be changed in time and the platform didn't receive these changes in the
+participants statuses. For instance, an identity document of a participant could be expired, or if a participant have been
+authorized by the "code by postal letter", that participant could move in the meantime.
+
+image:authorizations_admin_revocation.png[Authorizations revocation]
+
+It's possible to revoke all the authorizations with "Revoke all", or to only revoke authorizations before a given date.
+Another possiblity is to revoke only the xref:admin:impersonations.adoc[impersonated participants].
+
+== Verification methods
+
+Some of the available authorizations by default are:
+
+* xref:admin:authorizations_identity_documents.adoc[Identity documents]
+* xref:admin:authorizations_code_postal_letter.adoc[Code by postal letter]
+* xref:admin:authorizations_census.adoc[Organization's census]
+
+If any of these authorizations are not useful for your needs, talk with your implementer to see other alternatives. Learn
+more about xref:customize:authorizations.adoc[Authorizations in the Customize Guide section].

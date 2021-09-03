@@ -1,4 +1,21 @@
-= Administrators Users
+= Admins
 
-include::partial$under-construction.adoc[]
+In the administrator listing page you can see all the administrators of the platform:
 
+image:admins.png[Admins list]
+
+Here you can:
+
+* invite new administrators
+* revoke administrators permissions
+* see when was the last time an administrator logged in
+
+For inviting a new administrator, you need to go to the button "New user" and fill
+the form with the admin username, email and which role will she have:
+
+* Admin: to give full access to the platform
+* Participant manager: to give permission to only do xref:admin:impersonations.adoc[Impersonations]
+
+image:admins_invite.png[Invite participant as administrator form]
+
+You can invite an already registered or a non registered participant.
