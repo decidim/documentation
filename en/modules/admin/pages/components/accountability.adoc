@@ -1,0 +1,277 @@
+= Accountability
+
+The Accountability component allows people who visit the platform to view the level of execution (global, by categories and/or subcategories),
+of the results of a participatory space. It allows to keep track of the results or decisions made in the platform,
+and also to relate them to the proposals and meetings that helped to make them.
+
+The results can be converted into projects or decomposed into subprojects. Administrators can define execution status,
+ranging from 0% to 100%. The results, projects and states can be updated manually through the admin panel or through a CSV.
+
+You can see an example of the Accountability component in the https://www.decidim.barcelona/processes/pam/f/8/[2016-2019 Municipal Action Plan (Pla d'Actuació Municipal 2016-2019) in Decidim Barcelona].
+
+image:components/accountability/example_landing.png[Example landing page for Accountability]
+
+image:components/accountability/example_result.png[Example result page for Accountability]
+
+To configure the Accountability component:
+
+. Sign in as admin
+. Go to admin panel
+. In the main sidebar, click in the button for the space that you want to configure the component for.
+For instance, it could be "Processes", "Assemblies" or "Conferences".
+. Go to components
+. Click on "Add component" button
+. Click on "Accountability"
+. Fill the xref:_add_component[Add component] form
+
+== Add component
+
+image:components/accountability/component.png[Add component form]
+
+.Add component: Accountability form
+|===
+|Field |Type |Description
+
+|Name
+|Required
+|What is the title of this component. For instance "Accountability"
+
+|Order position
+|
+|
+
+|===
+
+.Add component: Accountability form - Global settings
+|===
+|Field |Type |Description
+
+|Scopes enabled
+|
+|
+
+|Scope
+|
+|
+
+|Comments enabled
+|
+|
+
+|Comments max length (Leave 0 for default value)
+|
+|
+
+|Intro
+|
+|
+
+|Name for "Categories"
+|
+|
+
+|Name for "Subcategories"
+|
+|
+
+|Name for "Results"
+|
+|
+
+|Name for "Projects"
+|
+|
+
+|Display progress
+|
+|
+
+|===
+
+.Add component: Accountability form - Step settings
+|===
+|Field |Type |Description
+
+|Comments blocked
+|
+|
+|===
+
+== Permissions
+
+
+Edit permissions
+Comment\
+
+==  Manage Results
+
+=== New Result
+
+image:components/accountability/new_result.png[New result form]
+
+.New result form
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|
+
+|Description
+|Optional
+|
+
+|Scope
+|
+|
+
+|Category
+|
+|
+
+|Start date
+|
+|Expected format: dd/mm/yyyy
+
+|End date
+|
+|Expected format: dd/mm/yyyy
+
+|Status
+|
+|
+
+|Progress
+|
+|
+
+|Included proposals
+|
+|
+
+|Choose proposals
+|
+|
+
+|Included projects
+|
+|
+
+|===
+
+=== Actions
+
+.Actions
+|===
+|Icon |Name |Definition
+
+|image:action_preview.png[Preview icon]
+|Preview
+|To see how it's shown in the frontend to participants.
+
+|image:action_plus.png[New result icon]
+|New result
+|Allows add a result related to this result.
+
+|image:action_clock.png[Project evolution icon]
+|xref:_project_evolution[Project evolution]
+|Allows you to manage the project evolution.
+
+|image:action_edit.png[Edit icon]
+|Edit
+|Edit form for a Result. It's the same form as "New result".
+
+|image:action_folder.png[Folders icon]
+|Folders
+|For classifying Attachments.
+
+|image:action_attachments.png[Attachments icon]
+|Attachments
+|Documents that are related to the result.
+
+|image:action_permissions.png[Permissions icon]
+|Permissions
+|To handle the permissions of this result, depending on the verification a participant has. Allows an admin to configure who can *Comment* a result.
+
+|image:action_delete.png[Delete icon]
+|Delete
+|To delete this result.
+
+|===
+
+=== Project evolution
+
+Project timeline entries
+
+image:components/accountability/new_entry.png[New entry form]
+
+.New entry form
+|===
+|Field |Type |Description
+
+|Date
+|Required
+|Expected format: dd/mm/yyyy
+
+|Description
+|Required
+|
+
+|===
+
+=== Statuses
+
+image:components/accountability/new_status.png[New status form]
+
+.New status form
+|===
+|Field |Type |Description
+
+|Key
+|Required
+|Used as the unique identifier for the xref:_import_csv[Import CSV].
+
+|Name
+|Required
+|Name for this status.
+
+|Description
+|Optional
+|
+
+|Progress
+|Opional
+|Number with percentage (from 0 to 100) of the execution.
+
+|===
+
+=== Export all
+
+* Results as CSV
+* Results as JSON
+* Results as Excel
+* Comments as CSV
+* Comments as JSON
+* Comments as Excel
+
+=== Import CSV
+
+image:components/accountability/import_csv.png[Import results from CSV form]
+
+We recommend that you follow these steps:
+
+. Create the xref:_statuses[Statuses] for the Results that you want to add
+. Create at least one xref:_new_result[Result] manually through this Admin panel before using Import, for having a better understanding of
+the format and what you'll need to fill out.
+. Download the xref:_export_all[Export with CSV format]
+. Make the changes locally. You can only change the following columns of the CSV:
+** category/id: ID for the Category
+** scope/id: ID for the Scope
+** parent/id: ID of the parent (for related Results). Optional
+** title/I18N: Title on X language
+** description/I18N: Description on X language
+** start_date: date when the result starts execution (format YYYY-MM-DD)
+** end_date: date when the result ends execution (format YYYY-MM-DD)
+** status/id: ID of the Status for this result
+** progress: Percentage (from 0 to 100) of the execution
+** proposals_ids: internal ID of the related proposals (separated with a comma). It gets automatically converted to proposal_url
