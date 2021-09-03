@@ -1,3 +1,12 @@
 = Spaces
 
-include::partial$under-construction.adoc[]
+The participatory spaces are the channels that citizens can participate through when public decisions are being taken. By default
+the platform is provided with participatory processes, initiatives, consultations, conferences, votings and assemblies, but
+any organization can develop its own mechanisms through xref:develop:modules.adoc[Modules].
+
+They are accessible through the main sidebar in the administration panel, and also through the main navigation menu in the
+public interface.
+
+image:spaces_admin.png[Spaces in admin sidebar]
+
+image:spaces_visitor.png[Spaces visible in the public interface]
