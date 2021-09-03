@@ -1,17 +1,65 @@
 = Process Admins
 
-include::partial$legacy.adoc[]
+You can give permissions to users with special rights in a participatory process,
+so they can only have access to some of the administration pages in this process.
+These roles are administrators, moderators, collaborators, or valuators.
 
-Authorisation may be given to other individuals, besides the platform’s general administrators, so that they can administer or collaborate in a certain process or moderate where there are contents that have been reported.
+* Process administrators: they can administer the process and change the process settings.
+* Process collaborators: they can see the process and its components before it's published and view the process settings.
+They can't change anything.
+* Process moderators: they can see the reported contents of the process and hide or unhide them.
+* Process valuators: they can evaluate proposals. Used by participatory budgeting processes.
 
-The process *administrators* can configure/ edit a process whereas *collaborators* can only see what is on the administrator menu of the process without being able to configure/ edit.
+To invite them, in the process's submenu, go to *Process admins* and click on *New process admin*.
 
-To register administrators, collaborators and/or moderators of a process, in the process's submenu, go to *Process users* and click on *NEW*.
+== New process admin form
 
-A *NEW PARTICIPATORY PROCESS USER* window will open (<<new-participatory-process-user-fig>>).
+image:process_admins_form.png[New process admin form]
 
-[#new-participatory-process-user-fig]
-._New participatory process user_.
-image::image38.png[image]
+.New process admin form
+|===
+|Field |Type |Description
 
-You need to fill in the following fields: *Name*, *Email* and *Role* (select from the *Administrator*, *Collaborator* or *Moderator* drop-down menu). Click on *Create* immediately afterwards
+|Name
+|Required
+|What is the name of the new admin.
+
+|Email
+|Required
+|What is the email of the new admin, so she can receive the invitation.
+
+|Role
+|Required
+|Which role does this admin will have in the participatory process? Can be any of Administrator, Collaborator, Moderator, or Valuator.
+|===
+
+== Roles
+
+=== Process administrators
+
+A process administrator can administer the process and change the process settings. It can also invite new process administrators.
+
+image:process_admins_role_admin01.png[Process administrators view 01]
+
+image:process_admins_role_admin02.png[Process administrators view 02]
+
+=== Process collaborators
+
+A process collaborator can only see the process before it's published.
+
+image:process_admins_role_collaborator.png[Process collaborators view]
+
+=== Process moderators
+
+A process moderator can review the reported contents of the process and hide or unhide them.
+
+image:process_admins_role_moderator.png[Process moderators view]
+
+=== Process valuators
+
+A process valuator can review the proposals of the process. She can:
+
+* change the status of the proposals, by accepting or rejecting them
+* add a monetary value to the proposals, so they can be voted with the budget component.
+
+image:process_admins_role_valuator.png[Process valuators view]
