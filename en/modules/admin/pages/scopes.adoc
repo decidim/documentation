@@ -72,8 +72,8 @@ You have 3 possible actions in this list after a Scope is created:
 |===
 
 == Features
-
 The main features related with scopes are:
+
 . Filtering
 . User interests and Newsletters
 
@@ -91,8 +91,8 @@ Some examples:
 * Assemblies and Processes can have Scopes. It's used for filtering multiple assemblies in the main listing page (/assemblies or /processes).
 * Filtering in the sidebar is possible in Budgets Projects, Initiatives and Proposals.
 
-You can also configure a participatory space so the filtering will only concern one scope and its children scopes. For example, let's imagine your organization have 3 different scopes for 3 cities, each of them having children scopes for the cities neighbourhoods. 
-On a participatory space which concerns only one of the cities, you will be able to select only this scope and its children so that users do not see the scopes of other cities in the filter options. 
+You can also configure a participatory space so the filtering will only concern one scope and its children scopes. For example, let's imagine your organization have 3 different scopes for 3 cities, each of them having children scopes for the cities neighbourhoods.
+On a participatory space which concerns only one of the cities, you will be able to select only this scope and its children so that users do not see the scopes of other cities in the filter options.
 
 === User interests and Newsletters
 
