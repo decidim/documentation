@@ -26,15 +26,15 @@ authorized by the "code by postal letter", that participant could move in the me
 image:authorizations_admin_revocation.png[Authorizations revocation]
 
 It's possible to revoke all the authorizations with "Revoke all", or to only revoke authorizations before a given date.
-Another possiblity is to revoke only the xref:admin:impersonations.adoc[impersonated participants].
+Another possiblity is to revoke only the xref:admin:participants/impersonations.adoc[impersonated participants].
 
 == Verification methods
 
 Some of the available authorizations by default are:
 
-* xref:admin:authorizations_identity_documents.adoc[Identity documents]
-* xref:admin:authorizations_code_postal_letter.adoc[Code by postal letter]
-* xref:admin:authorizations_census.adoc[Organization's census]
+* xref:admin:participants/authorizations/identity_documents.adoc[Identity documents]
+* xref:admin:participants/authorizations/code_postal_letter.adoc[Code by postal letter]
+* xref:admin:participants/authorizations/census.adoc[Organization's census]
 
 If any of these authorizations are not useful for your needs, talk with your implementer to see other alternatives. Learn
 more about xref:customize:authorizations.adoc[Authorizations in the Customize Guide section].

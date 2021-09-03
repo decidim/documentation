@@ -4,7 +4,7 @@ There are cases depending on which kind of verifications you've enabled that the
 
 For instance:
 
-. A participant get xref:admin:impersonations.adoc[impersonated], and she doesn't provide an email
+. A participant get xref:admin:participants/impersonations.adoc[impersonated], and she doesn't provide an email
 . Then she creates an account and tries to verify herself with the Census verification
 
 For security, we try to be extra cautious in these cases, and we want that an administrator reviews these verifications.

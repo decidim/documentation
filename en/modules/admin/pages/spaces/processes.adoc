@@ -233,10 +233,10 @@ image::process_submenu.png[Process submenu in admin]
 Here you can keep configuring your process:
 
 . Info: the same form that we explained in this page.
-. xref:admin:process_phases.adoc[Phases]
-. xref:admin:process_components.adoc[Components]
-. xref:admin:process_categories.adoc[Categories]
-. xref:admin:process_attachments.adoc[Attachments]
-. xref:admin:process_admins.adoc[Process admins]
-. xref:admin:process_private_participants.adoc[Private participants]
-. xref:admin:process_moderations.adoc[Moderations]
+. xref:admin:spaces/processes/phases.adoc[Phases]
+. xref:admin:spaces/processes/components.adoc[Components]
+. xref:admin:spaces/processes/categories.adoc[Categories]
+. xref:admin:spaces/processes/attachments.adoc[Attachments]
+. xref:admin:spaces/processes/admins.adoc[Process admins]
+. xref:admin:spaces/processes/private_participants.adoc[Private participants]
+. xref:admin:spaces/processes/moderations.adoc[Moderations]

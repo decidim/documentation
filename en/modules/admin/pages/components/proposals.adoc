@@ -194,8 +194,8 @@ image::components/proposals/setting_geocoding.png[Example of geocoding setting]
 
 ---
 
-In the cases where the space that this component will be used has xref:admin:process_phases.adoc[Phases], for instance, in
-xref:admin:processess.adoc[Participatory Processes], then you can also define different behaviors per Step.
+In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
+xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
 
 .Add component: Proposals form - Step settings
 |===
@@ -282,7 +282,7 @@ image::components/proposals/setting_hashtag.png[Example of hashtag setting]
 
 == Permissions
 
-An administrator can choose which kind of xref:admin:authorizations.adoc[Authorizations] a participant need to have to make
+An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
 certain actions in the proposals:
 
 * Endorse

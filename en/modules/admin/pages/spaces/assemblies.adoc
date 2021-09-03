@@ -11,7 +11,7 @@ executive bodies by vote), an equality advisory council (which meets every two m
 gender relations in the organisation), an evaluation commission (which meets every month to monitor a process) or a guarantee
 body (which collects incidents, abuses or proposals to improve decision-making procedures) are all examples of assemblies.
 
-The main difference between xref:admin:processess.adoc[participatory processes] and assemblies is that assemblies don't
+The main difference between xref:admin:spaces/processes.adoc[participatory processes] and assemblies is that assemblies don't
 have phases, meaning that they don't have timelines.
 
 You can see a real world usage of assemblies in https://www.decidim.barcelona/assemblies[Decidim Barcelona], where you
@@ -211,7 +211,7 @@ Assembly Content Block in the xref:admin:homepage.adoc[Homepage] configuration.
 
 |Private space
 |Optional
-|Check if this assembly should only be accessible by xref:admin:assembly_private_participants.adoc[Private Participants]
+|Check if this assembly should only be accessible by xref:admin:spaces/assemblies/private_participants.adoc[Private Participants]
 
 |Is transparent
 |Optional
@@ -256,13 +256,13 @@ image:assembly_submenu.png[Assembly submenu in admin]
 Here you can keep configuring your process:
 
 . Info: the same form that we explained in this page.
-. xref:admin:assembly_components.adoc[Components]
-. xref:admin:assembly_categories.adoc[Categories]
-. xref:admin:assembly_attachments.adoc[Attachments]
-. xref:admin:assembly_members.adoc[Members]
-. xref:admin:assembly_admins.adoc[Assembly admins]
-. xref:admin:assembly_private_participants.adoc[Private participants]
-. xref:admin:assembly_moderations.adoc[Moderations]
+. xref:admin:spaces/assemblies/components.adoc[Components]
+. xref:admin:spaces/assemblies/categories.adoc[Categories]
+. xref:admin:spaces/assemblies/attachments.adoc[Attachments]
+. xref:admin:spaces/assemblies/members.adoc[Members]
+. xref:admin:spaces/assemblies/admins.adoc[Assembly admins]
+. xref:admin:spaces/assemblies/private_participants.adoc[Private participants]
+. xref:admin:spaces/assemblies/moderations.adoc[Moderations]
 
 == Assemblies types
 

@@ -53,8 +53,8 @@ For instance, if you have two pages, "Page a" with weight "10" and "Page b" with
 
 |===
 
-In the cases where the space that this component will be used has xref:admin:process_phases.adoc[Phases], for instance, in
-xref:admin:processess.adoc[Participatory Processes], then you can also define different behaviors per Step.
+In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
+xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
 
 .Add component: Pages form - Step settings
 |===
