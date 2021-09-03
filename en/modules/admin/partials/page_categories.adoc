@@ -1,7 +1,7 @@
 = Categories
 
 
-Categories (and subcategories) are used for classifying resources inside of a participatory process.
+Categories (and subcategories) are used for classifying resources inside of a space.
 
 An administrator can define them, can be assigned to when creating resources, and then participants can filter the
 different resources by these categories. For instance, they can be set up in proposals, meetings and debates.
@@ -12,27 +12,27 @@ As an example of this mechanism in action you can see it in https://meta.decidim
 . Participants can create proposals that have one category.
 . Participants can filter by these categories and navigate among all the proposals.
 
-image:process_categories_sidebar.png[Filter categories in proposals]
+image:spaces/categories_sidebar.png[Filter categories in proposals]
 
-image:process_categories_form.png[Select a category when creating a proposal]
+image:spaces/categories_form.png[Select a category when creating a proposal]
 
 NOTE: Once a category is in use it cannot be removed, as there are resources that are using it.
 
 Decidim has other ways to classify resources, for instance xref:admin:scopes.adoc[Scopes] and xref:admin:hashtags.adoc[Hashtags].
-The main difference is that Categories can be defined in a given process, Scopes are global for all the platform, and Hashtags
+The main difference is that Categories can be defined in a given space, Scopes are global for all the platform, and Hashtags
 are defined by the participants.
 
 Categories can be nested, meaning that a category can have subcategories.
 
 == Create a new category
 
-For configuring a new category, go to the participatory process admin panel and click on the "Categories" tab.
+For configuring a new category, go to the space admin panel and click on the "Categories" tab.
 
-image:process_categories.png[View categories in a process admin page]
+image:spaces/categories.png[View categories in a space admin page]
 
 Then click in "Add category" and fill the form.
 
-image:process_categories_new_form.png[Create a new category form]
+image:spaces/categories_new_form.png[Create a new category form]
 
 .Create category
 |===

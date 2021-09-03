@@ -1,30 +1,30 @@
 = Attachments
 
-Attachments allow an administrator to upload static files to a participatory process.
+Attachments allow an administrator to upload static files to a space.
 
-When a participatory process is launched, it is important to provide citizens with as much information as possible about them so that they can participate with knowledge. That is why it is helpful to add files (Attachments) with the information that is considered relevant.
+When a space is launched, it is important to provide citizens with as much information as possible about them so that they can participate with knowledge. That is why it is helpful to add files (Attachments) with the information that is considered relevant.
 
-Optionally, these documents can be grouped in *Folders*. For example, for a process of remodeling a square, folders could be created with information about possible uses, with plans, with economic information, etc.
+Optionally, these documents can be grouped in *Folders*. For example, for a participatory process of remodeling a square, folders could be created with information about possible uses, with plans, with economic information, etc.
 
-They can be found on the Process homepage:
+They can be found on the Space homepage:
 
-image:process_attachments_folder.png[View the folder attachments of a process in the public interface]
+image:spaces/attachments_folder.png[View the folder attachments in the public interface]
 
-image:process_attachments.png[View the attachments of a process in the public interface]
+image:spaces/attachments.png[View the attachments in the public interface]
 
 == Create a new attachment
 
-image:process_attachments_admin.png[View the attachments of a process in the admin interface]
+image:spaces/attachments_admin.png[View the attachments in the admin interface]
 
-For creating a new phase of a participatory process:
+For creating a new attachment of a space:
 
 . Sign in as administrator
-. Go to the participatory process section in the sidebar
-. Click on the participatory process Edit action
+. Go to the space section in the sidebar
+. Click on the space Edit action
 . Click on the Attachments link in the sidebar
 . Click on the "New attachment" button
 
-image:process_attachments_new_form.png[Create a new attachment form]
+image:spaces/attachments_new_form.png[Create a new attachment form]
 
 .Create attachment
 |===
@@ -55,7 +55,7 @@ file extensions depends in your server configuration.
 
 == Create a new folder
 
-image:process_attachments_new_folder_form.png[Create a new folder for attachments form]
+image:spaces/attachments_new_folder_form.png[Create a new folder for attachments form]
 
 .Create folder
 |===

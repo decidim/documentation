@@ -1,22 +1,23 @@
-= Process Admins
+= Space Admins
 
-You can give permissions to users with special rights in a participatory process,
-so they can only have access to some of the administration pages in this process.
+You can give permissions to users with special rights in a space,
+so they can only have access to some of the administration pages in this space.
 These roles are administrators, moderators, collaborators, or valuators.
 
-* Process administrators: they can administer the process and change the process settings.
-* Process collaborators: they can see the process and its components before it's published and view the process settings.
+* Administrators: they can administer the space and change the space settings.
+* Collaborators: they can see the space and its components before it's published and view the space settings.
 They can't change anything.
-* Process moderators: they can see the reported contents of the process and hide or unhide them.
-* Process valuators: they can evaluate proposals. Used by participatory budgeting processes.
+* Moderators: they can see the reported contents of the space and hide or unhide them.
+* Valuators: they can evaluate proposals. Used by participatory budgeting processes.
 
-To invite them, in the process's submenu, go to *Process admins* and click on *New process admin*.
+To invite them, in the space's submenu, go to *Space admins* and click on *New space admin*. This depends in the kind of space
+that you're, for instance for participatory processes it'd be *Process admins* and *New process admin*.
 
-== New process admin form
+== New space admin form
 
-image:process_admins_form.png[New process admin form]
+image:spaces/admins_form.png[New space admin form]
 
-.New process admin form
+.New space admin form
 |===
 |Field |Type |Description
 
@@ -35,31 +36,31 @@ image:process_admins_form.png[New process admin form]
 
 == Roles
 
-=== Process administrators
+=== Administrators
 
-A process administrator can administer the process and change the process settings. It can also invite new process administrators.
+A space administrator can administer the space and change the space settings. It can also invite new space administrators.
 
-image:process_admins_role_admin01.png[Process administrators view 01]
+image:spaces/admins_role_admin01.png[Process administrators view 01]
 
-image:process_admins_role_admin02.png[Process administrators view 02]
+image:spaces/admins_role_admin02.png[Process administrators view 02]
 
-=== Process collaborators
+=== Collaborators
 
-A process collaborator can only see the process before it's published.
+A space collaborator can only see the space before it's published.
 
-image:process_admins_role_collaborator.png[Process collaborators view]
+image:spaces/admins_role_collaborator.png[Process collaborators view]
 
-=== Process moderators
+=== Moderators
 
-A process moderator can review the reported contents of the process and hide or unhide them.
+A space moderator can review the reported contents of the space and hide or unhide them.
 
-image:process_admins_role_moderator.png[Process moderators view]
+image:spaces/admins_role_moderator.png[Process moderators view]
 
 === Process valuators
 
-A process valuator can review the proposals of the process. She can:
+A space valuator can review the proposals of the space. She can:
 
 * change the status of the proposals, by accepting or rejecting them
 * add a monetary value to the proposals, so they can be voted with the budget component.
 
-image:process_admins_role_valuator.png[Process valuators view]
+image:spaces/admins_role_valuator.png[Process valuators view]

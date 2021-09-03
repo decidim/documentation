@@ -1,22 +1,22 @@
 = Private participants
 
-There are cases where you want to have a closed census of the participants in a process. For instance this could be a process
-for a small group of people, for instance the members of a comission inside of a big organization. For these cases you can
+There are cases where you want to have a closed census of the participants in a space. For instance this could be a space
+for a small group of people, or the members of a comission inside of a big organization. For these cases you can
 use the private participants feature.
 
-image:process_private_participants.png[Private participants list]
+image:spaces/private_participants.png[Private participants list]
 
-For inviting private participants of a participatory process:
+For inviting private participants of a space:
 
 . Sign in as administrator
-. Go to the participatory process section in the sidebar
-. Click on the participatory process Edit action
+. Go to the space's section in the sidebar
+. Click on the space Edit action
 . Click on the "Private participants" link in the sidebar
 . Click on the "New participatory space private user" or "Import via CSV" buttons
 
 == New participatory space private user
 
-image:process_private_participants_new_form.png[New private participant form]
+image:spaces/private_participants_new_form.png[New private participant form]
 
 .New participatory space private user form
 |===
@@ -34,9 +34,9 @@ image:process_private_participants_new_form.png[New private participant form]
 
 == Import via CSV
 
-image:process_private_participants_csv_import.png[Import private participants via CSV]
+image:spaces/private_participants_csv_import.png[Import private participants via CSV]
 
-This form allows you to bulk import the participants of a participatory process.
+This form allows you to bulk import the participants of a space.
 
 It must have two columns with email in the first column of the file and the name in the last column of the file (email, name)
 of the users that you want to add to the participatory space. Some tips:
@@ -49,7 +49,7 @@ of the users that you want to add to the participatory space. Some tips:
 
 After the participants has been invited, you can resend or delete the invitation.
 
-image:process_private_participants_actions.png[Private participants actions]
+image:spaces/private_participants_actions.png[Private participants actions]
 
 |===
 |Icon |Name |Definition
@@ -68,9 +68,9 @@ image:process_private_participants_actions.png[Private participants actions]
 
 When a participant was invited she'll get an email with a link for accepting the invitation:
 
-image:process_private_participants_email_invite.png[Email invitation of a private participant]
+image:spaces/private_participants_email_invite.png[Email invitation of a private participant]
 
 After clicking in this email, she'll have to fill a form for setting her password, accepting the Terms of Service and giving
 her consent if she wants to receive newsletters.
 
-image:process_private_participants_user_registration_form.png[User registration form of a private participant]
+image:spaces/private_participants_user_registration_form.png[User registration form of a private participant]

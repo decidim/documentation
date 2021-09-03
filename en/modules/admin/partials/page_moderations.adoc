@@ -1,9 +1,9 @@
 = Moderation
 
-Moderations inside of a participatory process work like xref:global_moderations.adoc[Global moderations].
+Moderations inside of a space work like xref:global_moderations.adoc[Global moderations].
 
 The main difference is that if you want so you can invite Moderators of this specific
-participatory process and they will only have access to the reports made for
-contents of this participatory process.
+space and they will only have access to the reports made for
+contents of this space.
 
-Moderators are a kind of xref:process_admins.adoc[Process admins].
+Moderators are a kind of space admins. See it for instance for xref:spaces/process/admins.adoc[participatory processes admins].
