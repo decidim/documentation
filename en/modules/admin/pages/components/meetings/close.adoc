@@ -1,0 +1,103 @@
+= Close
+
+After a meeting has passed it's possible and recommened to close the meeting. This allows to adds the minutes, the notes
+that gives a summary on what was discussed during the meeting, the agreements reached, decisions made, etc.
+
+This allows to bring transparency to the meeting and also serves as a record of the different meetings.
+
+It's also possible to add other kind of metadata to the meeting, such as what organizations has attended, how many attendees
+and contributions were, and what proposals were discussed.
+
+image:components/meetings/close/frontend.png[Close report in the frontend]
+
+== Close meeting form
+
+=== Official meetings
+
+To close a meeting:
+
+. Sign in as admin
+. Go to admin panel
+. In the main sidebar, click in the button for the space that you want to configure the component for.
+For instance, it could be "Processes", "Assemblies", or "Conferences"
+. Click on "Meetings"
+. Search the meeting that you want to close
+. Click on the "Close" button image:action_close.png[Close button]
+. Fill the form
+
+image:components/meetings/close/form_backend.png[Close meeting form in the backend]
+
+.Close meeting form (backend)
+|===
+|Field |Type |Description
+
+|Minutes
+|Required
+|Description of what happened in the meeting.
+
+|List of organizations that attended
+|Optional
+|Metadata that gets shown in the sidebar of the meeting.
+
+|Number of attendees
+|Required
+|Metadata that gets shown in the sidebar of the meeting. Must be a number.
+
+|Number of contributions
+|Optional
+|Metadata that gets shown in the sidebar of the meeting. Must be a number.
+
+|Proposals
+|Optional
+|Choose proposals from this space that were discussed in this meeting
+
+|Video URL
+|Optional
+|It's not used for anything. It will be removed in the future.
+
+|Audio URL
+|Optional
+|It's not used for anything. It will be removed in the future.
+
+|Is visible
+|Optional
+|Check if you want to publish the close report
+
+|===
+
+=== Citizens meetings
+
+Just like participants can create meetings, they can also close a meeting. They have fewer fields to fill.
+
+To close a a meeting:
+
+. Sign in as the participant that created the meeting
+. Go to the meeting page
+. Click on "Close". This will only be visible after the meeting has passed
+. Fill the form
+
+image:components/meetings/close/form_frontend.png[Close meeting form in the frontend]
+
+.Close meeting form (frontend)
+|===
+|Field |Type |Description
+
+|Minutes
+|Required
+|Description of what happened in the meeting.
+
+|Number of attendees
+|Required
+|Metadata that gets shown in the sidebar of the meeting. Must be a number.
+
+|Proposals
+|Optional
+|Choose proposals from this space that were discussed in this meeting
+
+|===
+
+== Proposals
+
+If you relate a proposal to a meeting, the meeting also will be shown in the proposal.
+
+image:components/meetings/close/related_proposal.png[Related meeting in a proposal]
