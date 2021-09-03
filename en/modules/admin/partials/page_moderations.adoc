@@ -1,1 +1,9 @@
-TODO: DRY
+= Moderation
+
+Moderations inside of a participatory process work like xref:global_moderations.adoc[Global moderations].
+
+The main difference is that if you want so you can invite Moderators of this specific
+participatory process and they will only have access to the reports made for
+contents of this participatory process.
+
+Moderators are a kind of xref:process_admins.adoc[Process admins].

@@ -1,1 +1,69 @@
-TODO: DRY
+= Components
+
+Participatory processes currently have the following components:
+
+* xref:admin:component_accountability.adoc[*Accountability*]: allows to keep track of the results execution of a process.
+It allows administrators to also relate them to the proposals and meetings that originated them.
+* xref:admin:component_blog.adoc[*Blog*]: allows administrators to publish posts with news regarding a process.
+* xref:admin:component_budgets.adoc[*Budgets*]: allows participants to vote in projects with amounts predefined. Used for
+participatory budgeting processes. Allows to define different kind of rules, for instance a minimum percentage of the total budget or a minimum amount of projects.
+* xref:admin:component_debates.adoc[*Debates*]: allows participants to have debates. Debates can be time limited or not.
+* xref:admin:component_elections.adoc[*Elections*]: to have end-to-end auditable elections in a process. Uses the same
+external system as xref:admin:votings.adoc[Votings] space.
+* xref:admin:component_meetings.adoc[*Meetings*]: gatherings in person or online through videoconferences platforms.
+* xref:admin:component_pages.adoc[*Page*]: static pages with multi-language support.
+* xref:admin:component_proposals.adoc[*Proposals*]: contributions posted by participants which can be given support.
+* xref:admin:component_sortitions.adoc[*Sortitions*]: this allows different kind of proposals to be selected randomly.
+For instance the proposals could be candidates who form part of a group (such as a committee).
+* xref:admin:component_surveys.adoc[*Survey*]: for conducting surveys with different kinds of questions.
+
+In the cases where your needs are not covered by one of the above components, you can create your own component through a xref:develop:modules.adoc[Module].
+
+To configure components, click on *Components* from the *Processes* submenu. A list will appear showing the components
+that have already been configured for the process.
+
+image::process_components.png[Components of a Participatory Process]
+
+To configure a new component, click on *Add component* from the upper right part of the screen and select the type of
+component you wish to configure from the drop-down menu.
+
+image::process_components_new_dropdown.png[Add a component in a Participatory Process]
+
+== Actions
+
+|===
+|Icon |Name |Definition
+
+|image:action_manage.png[Manage icon]
+|Manage
+|To manage all the resources inside of a component. For instance, all the Proposals of a Proposal component, the Meetings
+in a Meeting component, etc.
+
+|image:action_publish.png[Publish icon]
+|Publish
+|To publish a component. This means that the component will be visible to the public.
+
+|image:action_unpublish.png[Unpublish icon]
+|Unpublish
+|To unpublish a component. This means that the component will be invisible to the public.
+
+|image:action_configure.png[Configure icon]
+|Configure
+|To configure a component with the specific rules. Depends in the component type. For instance, in the case of Meetings:
+are comments enabled, participants can create meetings, etc.
+
+|image:action_permissions.png[Permissions icon]
+|Permissions
+|To configure which xref:customize:authorizations.adoc[Authorization] will be necessary to make certain actions in
+this component. For instance, in the case of Proposals, which Verification will be necessary to create a new proposal or
+to give supports.
+
+|image:action_share.png[Share icon]
+|Share
+|To share privately before publishing this component. Useful for reviewing with other people inside of your organization.
+
+|image:action_delete.png[Delete icon]
+|Delete
+|To delete this component. If there are contents most of the components will not let you delete them so it doesn't break
+relations with other resources. In those cases it's recommended to just unpublish the component.
+|===
