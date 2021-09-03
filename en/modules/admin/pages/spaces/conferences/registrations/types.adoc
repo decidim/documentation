@@ -1,0 +1,59 @@
+= Registration types
+
+You can enable registrations in conferences, so it's easier to register to the whole conference, or by days, rather than
+going meeting by meeting to enable registration for that particular event.
+
+After enabling registrations participants will have a button to register to the conference in the landing and the conference's header.
+
+image:spaces/conferences/registration_landing01.png[Registration button on landing page]
+
+image:spaces/conferences/registration_landing02.png[Registration button on landing page]
+
+If you want to enable registration you'll need to define and publish at least one registration type.
+
+image:spaces/conferences/registration_types_frontend_wo_user.png[Select registration type without a user account]
+
+== Create a new registration type
+
+For adding a new registration type, you need to:
+
+. Sign in as administrator
+. Go to the conferences section in the sidebar
+. Click on the conference Edit action
+. Click on the "Registration types" link in the sidebar
+. Click on the "New Registration type" button
+. Fill the form
+. Publish the registration type
+
+image:spaces/conferences/new_registration_type.png[Create a new registration type form]
+
+image:spaces/conferences/registration_types_backend.png[Manage registration types]
+
+.Create a new registration type
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|What is the title of this registration type.
+
+|Weight
+|Which order will it have in relation to the other types. Having a lower number means a higher priority. For instance, if you have two types, "Day 1" with weight "10" and "Day 2" with weight "0", then "Day 2" will be first when ordering.
+
+|Description
+|Required
+|Description for this registration type
+
+|Price
+|Optional
+|Define a price for this registration type. If you don't define a price, the price will be "Free".
+
+|Select conference meetings
+|Optional
+|Which meetings defined in the program will this registration type have access to.
+
+|===
+
+If the participant is already logged in then she'll see her username and email in the registration page.
+
+image:spaces/conferences/registration_types_frontend_w_user.png[Select registration type with user account]
