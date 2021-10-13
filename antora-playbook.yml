@@ -6,6 +6,8 @@ content:
   sources:
     - url: &landing .
       start_path: /en
+      branches: master
+      edit_url: "https://github.com/decidim/documentation/edit/{refname}/{path}"
     - url: https://github.com/decidim/decidim
       start_path: docs
       branches: develop
