@@ -6,6 +6,9 @@ You can find all the releases (with minor and patches) at
 https://rubygems.org/gems/decidim/versions[RubyGems.org] and
 https://github.com/decidim/decidim/releases[GitHub].
 
+* https://decidim.org/blog/2021-10-07-new-version-0-25-0/[Version 0.25 (2021-10-07)]
+** xref:develop:guide_migrate_webpacker_module.adoc[Migrate to Webpacker a module]
+** xref:develop:guide_migrate_webpacker_app.adoc[Migrate to Webpacker an instance app]
 * https://decidim.org/blog/2021-03-26-new-version-0-24-0/[Version 0.24 (2021-03-26)]
 * https://decidim.org/blog/2020-11-12-new-version-0-23-0/[Version 0.23 (2020-11-12)]
 * https://decidim.org/blog/2020-09-02-new-version-0-22-0/[Version 0.22 (2020-09-02)]
