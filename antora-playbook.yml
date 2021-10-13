@@ -7,7 +7,6 @@ content:
   sources:
     - url: &landing .
       start_path: /en
-      branches: HEAD
     - url: https://github.com/decidim/decidim
       start_path: docs
       branches: develop
