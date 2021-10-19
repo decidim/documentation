@@ -1,0 +1,37 @@
+= Comments
+
+Comments are public messages left to the rest of the community. It allows participants to share information or opinions
+about a proposal, debate, meeting, initiative, etc.
+
+image:features/comments/example01.png[Comments example]
+
+== Create a comment
+
+. Sign in as a participant
+. Go to the content that you want to leave a comment
+. Go to the bottom of the page
+. Fill the "Add comment" form
+
+Depending on the component settings, this feature can be disabled.
+
+image:features/comments/form.png[Comments form]
+
+After a comment is created, the author can "Report", "Get link", "Edit" and "Delete". Other participants can "Report" and "Get link".
+
+image:features/comments/actions.png[Comments actions]
+
+Once a comment is deleted is not longer visible.
+
+image:features/comments/deleted_comment.png[Deleted comment]
+
+Once a comment is edited then it's shown that was edited. It doesn't have a version history of the changes made.
+
+image:features/comments/edited_comment.png[Edited comment]
+
+Comments can be ordered by "Best rated", "Recent", "Older" or "More discussed".
+
+image:features/comments/order_by.png[Order comments]
+
+It's possible to add emojis to comments
+
+image:features/comments/emoji_selector.png[Emoji selector in comments]
