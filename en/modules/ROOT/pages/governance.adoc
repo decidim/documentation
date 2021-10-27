@@ -9,7 +9,7 @@ If you want to add a new feature or a change on the codebase, the process is:
 . Suggest your change in https://meta.decidim.barcelona/processes/roadmap[Metadecidim]
 . Wait until Product Team reviews and accept the feature, as it's important to be consistent with the rest of the software, comply with the Social Contract, etc.
 . Then you can make the Pull Request.
-. The PR will get reviewed by: 
+. The PR will get reviewed by:
 .. Product Team: will review the functionality
 .. Mantainers: will review the code quality
 
@@ -17,7 +17,7 @@ image::workflow-features.png[new feature workflow process]
 
 Some things that you need to take in account about this process:
 
-* If you make the PR without Product Team approval then you could get rejected (after investing lots of time on developing). 
+* If you make the PR without Product Team approval then you could get rejected (after investing lots of time on developing).
 * Proposals can receive endorsements, although these are not decisive for a proposal to be included on the roadmap. The endorsements serve as indicators of the interest of the proposal or the need it covers. The comments to the proposals are also enabled, to collectively elaborate the initial idea and bring it to a productive result.
 * Every Thursday the Product team reviews all new proposals that have been published the previous week
 * If no funding is available it is included in the backlog of the corresponding component or module.
@@ -30,7 +30,7 @@ Since our first version in 2017 we've detected that it's necessary for the susta
 
 Making this kind of open source software from the public institutions and through public contracting law is really difficult and one other issue that we want to tackle with this new organization is about having resources for contracting in-house developers.
 
-With all this on mind, we started with the https://meta.decidim.org/processes/decidim-gov[Metadecidim Governance participatory process] starting in November 2017: 
+With all this on mind, we started with the https://meta.decidim.org/processes/decidim-gov[Metadecidim Governance participatory process] starting in November 2017:
 
 ****
 A process open to the entire Community regarding the decision-making and representative bodies that we must equip ourselves with in order to build an autonomous, transparent and democratic organisation for the Decidim Project.
@@ -40,4 +40,6 @@ The objective is to define an organizational and representation system (internal
 The Decidim project needs a system of its own governance that allows it to enjoy sufficient autonomy to continue growing in a sustainable manner, which is why it has to be provided with decision-making and conflict resolution bodies.
 ****
 
-After this, on February 2019 the Decidim Association was created and from that date is signing agreements with the city of Barcelona and other public institutions to get funding and in-house developers. You can read more about the https://meta.decidim.org/assemblies/general-assembly-association[General Assembly of the Decidim Association].
+As a result of this participatory process, on February 2019 the Decidim Free Software Association (_Associació de Software Lliure Decidim_ in catalan) was created. You can read more about the https://meta.decidim.org/assemblies/general-assembly-association[General Assembly of the Decidim Association].
+
+On 2021, the Decidim Association https://decidim.org/blog/2021-02-09-the-government-of-catalonia-barcelona-city-council-and-the-free-software-association-decidim-sign-a-collaboration-agreement-to-promote-democratic-participation-with-free-and-open-technologies/[has signed a collaboration agreement  with the Government of Catalonia and Barcelona City Council to promote the development of the platform].
