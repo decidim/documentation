@@ -1,0 +1,21 @@
+= Delete my account
+
+In this section participants will be able to delete their own accounts. This means that they will be unable to access the system anymore. This action is irreversible. All the contributions will be anonymized.
+
+image:features/my_account/delete_my_account.png[Delete my account form]
+
+To delete the account:
+
+. Sign in as a participant
+. Click in the name of the participant in the header
+. Click in "My account"
+. Click in "Delete my account" in the sidebar
+. Optionally, she can provide a reason for the deletion
+. Click in "Delete my account"
+. Click in "Yes, I want to delete my account"
+
+image:features/my_account/delete_my_account_confirm.png[Confirm account deletion]
+
+After the account has been deleted, the contributions (such as comments, proposals, etc), will be still visible but all the authorship information will be anonymized, belonging to an special kind of author called "Participant deleted":
+
+image:features/my_account/delete_my_account_deleted.png[Deleted participant contribution]
