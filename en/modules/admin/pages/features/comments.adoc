@@ -20,9 +20,11 @@ image:features/comments/form.png[Comments form]
 
 It's possible to:
 
-. mention a participant or user group. They'll receive a notification.
-. add a hashtag (like #Example). This will link to the general search.
+. mention a participant or user group (like @admin). They'll receive a notification
+. add a hashtag (like #Example). This will link to the general search
 . make a quote of a comment (like > this is a quote)
+. if an URL is entered, then it'll be linked automatically
+. if HTML is added, it'll be escaped and not shown 
 . add emojis to comments
 
 image:features/comments/emoji_selector.png[Emoji selector in comments]
