@@ -16,22 +16,37 @@ Depending on the component settings, this feature can be disabled.
 
 image:features/comments/form.png[Comments form]
 
+=== Form
+
+It's possible to:
+
+. mention a participant or user group. They'll receive a notification.
+. add a hashtag (like #Example). This will link to the general search.
+. make a quote of a comment (like > this is a quote)
+. add emojis to comments
+
+image:features/comments/emoji_selector.png[Emoji selector in comments]
+
+== Sort
+
+Comments can be sorted by "Best rated", "Recent", "Older" or "More discussed".
+
+image:features/comments/order_by.png[Order comments]
+
+== Actions
+
 After a comment is created, the author can "Report", "Get link", "Edit" and "Delete". Other participants can "Report" and "Get link".
 
 image:features/comments/actions.png[Comments actions]
+
+=== Delete
 
 Once a comment is deleted is not longer visible.
 
 image:features/comments/deleted_comment.png[Deleted comment]
 
+=== Edit
+
 Once a comment is edited then it's shown that was edited. It doesn't have a version history of the changes made.
 
 image:features/comments/edited_comment.png[Edited comment]
-
-Comments can be ordered by "Best rated", "Recent", "Older" or "More discussed".
-
-image:features/comments/order_by.png[Order comments]
-
-It's possible to add emojis to comments
-
-image:features/comments/emoji_selector.png[Emoji selector in comments]
