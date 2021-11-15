@@ -24,9 +24,13 @@ It's possible to:
 . add a hashtag (like #Example). This will link to the general search
 . make a quote of a comment (like > this is a quote)
 . if an URL is entered, then it'll be linked automatically
-. if HTML is added, it'll be escaped and not shown 
+image:features/comments/rich_text_write.png[Comments with rich text (write)]
+image:features/comments/rich_text_read.png[Comments with rich text (read)]
+image:features/comments/hashtag_search.png[Hashtags in comments]
+. if HTML is added, it'll be escaped and not shown
+image:features/comments/xss_write.png[XSS in comments (write)]
+image:features/comments/xss_read.png[XSS in comments (read)]
 . add emojis to comments
-
 image:features/comments/emoji_selector.png[Emoji selector in comments]
 
 == Sort
