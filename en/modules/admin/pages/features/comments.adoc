@@ -41,9 +41,15 @@ image:features/comments/order_by.png[Order comments]
 
 == Actions
 
-After a comment is created, the author can "Report", "Get link", "Edit" and "Delete". Other participants can "Report" and "Get link".
+After a comment is created, the author can "Reply", "Report", "Get link", "Edit" and "Delete". Other participants can "Reply",  "Report" and "Get link". Some of these actions are visible in the three dots menu:
 
 image:features/comments/actions.png[Comments actions]
+
+=== Reply
+
+It's possible to reply to comments until the 4th anidation level.
+
+image:features/comments/anidation_levels.png[Anidation levels for comments]
 
 === Delete
 
