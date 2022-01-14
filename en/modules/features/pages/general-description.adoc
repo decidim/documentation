@@ -1,21 +1,30 @@
 = How Decidim works
 :page-partial:
 
-[#functional-architecture-fig]
-._Decidim Functional Architecture._
-image::functional-architecture-en.svg[width=2000]
-
-
-Users of the platform (*Participants*) interact in *Participatory Spaces* through mechanisms known as *Components*. 
-
-*Participatory Spaces* and *Components* can be developed, activated and deactivated independently.
-Decidim architecture is modular, scalable, easy to configure and integrate with other tools or apps (data analysis, maps, SMS, mail, social networks, etc.). 
-
-
 [#spaces-components-fig]
 ._Decidim Interface._
 image::spaces-components.png[]
 
-The *Home Page* of the platform is fully customizable: it can display different types of banners, call-to-action buttons, it can also display statistics and interactive visualizations, activity streams, and maps with the upcoming meetings.
+The *Home Page* of Decidim is fully customizable: it can display different types of banners, call-to-action buttons, it can also display statistics and interactive visualizations, activity streams, and maps with the upcoming meetings.
+
+Users of the platform (*Participants*) interact in *Participatory Spaces* through mechanisms known as *Components*. 
 
 Decidim displays *Participatory Spaces* on the top menu (dark). *Components* are displayed on the bottom menu (white).
+
+[#functional-architecture-fig]
+._Decidim Functional Architecture._
+image::functional-architecture-en.svg[width=2000]
+
+Decidim architecture is modular, scalable, easy to configure and integrate with other tools or apps (data analysis, maps, SMS, mail, social networks, etc.). *Participatory Spaces* and *Components* can be developed, activated and deactivated independently.
+
+
+*Administrators*
+
+There are different types of administrators in Decidim: 
+
+* *administrators* of the whole platform or of specific spaces and components
+
+* *moderators*, with the exclusive power of moderating proposals, comments or debates
+
+* *collaborators*, who can read unpublished content, create notes and responses to proposals
+
