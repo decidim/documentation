@@ -1,15 +1,15 @@
 = Participants
 :page-partial:
 
-== Registration and verification
+*Participants* of Decidim can be grouped into three different categories:
 
-Any visitor can access all of the website’s content directly. However, anyone who wishes to submit proposals or comments will have to *register*. Users may register *directly* on the platform or through gateways of other *social networks* (Facebook, Twitter or Google+). To register directly, users will need to associate a email account and a password to the user-account.
+* *Visitors* have access to all of the platform's content without having to sign up or provide any information.
+* *Registered* participants can submit proposals and comments, sign-up for meetings, endorse content, follow other Participants and receive notifications, mentions and private messages. 
+  Users may register *directly* on the platform or through gateways of other *social networks* (Facebook, Twitter or Google+). To register directly, users will need to associate a email account and a password to the user-account.
+   Registered participants can also have their account officialized (meaning their username is accompanied by a special symbol indicating they really are who they claim they are on their profile).
+* *Verified* participants can make decisions. Decidim offers different ways to carry out this verification. 
 
-Decision-orientated features (endorsements, votes, etc.) require *verification*. The main verification method cross-checks against the municipal register or other databases of registered people with whom Decidim can communicate via API. Users may also be verified *by text* or using a special *code* sent by post or other means. A participant can also be *manually verified* from the administration dashboard.
-
-Besides the verification process, participants can also ask to have their user name *made official*. Once made official, their user name will appear with a symbol that allows third parties to acknowledge that this user name corresponds to the person it claims to be.
-
-*Associations and organisations* whose identity can be verified in some way can also be registered and verified. The official name status will be automatically verified.
+Administrators can *manage permissions* for *Registered* users and *Verified* users selectively. For example, _proposal creation_ can be activated for both Registered and Verified users but _supports to proposals_ only for Verified users.
 
 == Public registration of administrative activity
 
@@ -33,6 +33,12 @@ Besides automated notifications, participants can decide to **follow any element
 
 *Mentions* can also be added (in the comments section) to any registered user and a notification will be automatically sent.
 
+== User groups
+
+Participants can register with the platform as members of one or several organisations/collectives. Once the organisation and membership status have been verified, participants can carry out actions (make proposals or submit comments, etc.), with their user or with the organisation name.
+
+User groups can also manage user permissions and administration roles assigned to groups, as well as private debate spaces or share information among group users, for example, who attended an in-person meeting. [Feature currently missing]
+
 == Engagement
 
 Decidim has a series of features geared to _gamifying_ the platform, to *attract and keep a growing number of participants interested*, as well as to promote practices that boost democratic quality and collective intelligence in participation [the gamification system is expected for 2018Q2-3, AjB-Lote1].
@@ -44,9 +50,3 @@ The gamification system includes two modes, one centred on users and the other o
 The combination of these and other indicators is used for generating gamification routes for each user and defining threads such as: most participatory person in the district, leadership in discussions and debates, etc.
 
 * Gamification *centred on proposals/initiatives* allows promoters, signatories and followers to boost interaction with them by incorporating several *metrics* (number of times that the proposal is shared in social networks, degree of controversy (number of positive and negative comments), quality of deliberation (depth of observation tree), number of hits received, etc.
-
-== User groups
-
-Participants can register with the platform as members of one or several organisations/collectives. Once the organisation and membership status have been verified, participants can carry out actions (make proposals or submit comments, etc.), with their user or with the organisation name.
-
-User groups can also manage user permissions and administration roles assigned to groups, as well as private debate spaces or share information among group users, for example, who attended an in-person meeting. [Feature currently missing]
