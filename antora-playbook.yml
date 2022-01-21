@@ -25,3 +25,4 @@ asciidoc:
     page-pagination: ""
   extensions:
     - asciidoctor-kroki
+    - asciidoctor-mathjax

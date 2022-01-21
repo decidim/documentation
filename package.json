@@ -11,6 +11,7 @@
   "dependencies": {
     "antora-lunr": "^0.7.1",
     "antora-site-generator-lunr": "^0.5.0",
-    "asciidoctor-kroki": "^0.9.2"
+    "asciidoctor-kroki": "^0.9.2",
+    "asciidoctor-mathjax": "0.0.5"
   }
 }
