@@ -1,15 +1,15 @@
 
-# Decidim Documentation 
+# Decidim Documentation
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d20ee965-1821-49c9-8e5a-f428133b5c39/deploy-status)](https://app.netlify.com/sites/decidim-documentation/deploys)
 
-This is the new repository for the [Decidim Documentation website](https://docs.decidim.org/). Is built with [Antora](https://antora.org/). 
+This is the repository for the [Decidim Documentation website](https://docs.decidim.org/). Is built with [Antora](https://antora.org/).
 
-## Install locally 
+## Install locally
 
 ### Manually
 
-##### [Install antora](https://docs.antora.org/antora/2.3/install-and-run-quickstart/) with software dependencies.
+[Install antora](https://docs.antora.org/antora/2.3/install-and-run-quickstart/) with software dependencies.
 
 ```bash
 # Install Node & npm using nvm
@@ -18,21 +18,15 @@ nvm install node
 
 # Install Antora and dependencies
 npm install
-```
 
-If antora installation succeed, `antora -v` will return antora's version.
+# If antora installation succeed, `antora -v` will return antora's version.
 
-##### Clone repository and build documentation website.
-
-```bash
+# Clone repository and build documentation website.
 git clone https://github.com/decidim/documentation
 cd documentation
-./bin/build
-```
+npm run build
 
-The generated website will be create under ```build/site/``` folder. Open ```index.html``` with any browser.
-
-```bash
+# The generated website will be create under ```build/site/``` folder. Open ```index.html``` with any browser.
 xdg-open build/site/index.html
 ```
 
@@ -46,3 +40,4 @@ cd documentation
 ./bin/dbuild
 xdg-open build/site/index.html
 ```
+
