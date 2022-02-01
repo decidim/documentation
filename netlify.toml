@@ -10,7 +10,7 @@
   DOCSEARCH_ENGINE = "lunr"
 
 [context.deploy-preview]
-  command = "node_modules/.bin/antora --generator antora-site-generator-lunr --stacktrace --fetch --html-url-extension-style=indexify --url $DEPLOY_PRIME_URL antora-playbook.yml"
+  command = "sed -i'' -e 's;branches: master;branches: HEAD;g' antora-playbook.yml && node_modules/.bin/antora --generator antora-site-generator-lunr --stacktrace --fetch --html-url-extension-style=indexify --url $DEPLOY_PRIME_URL antora-playbook.yml"
 
 [[redirects]]
   from = "/social-contract/en/*"
