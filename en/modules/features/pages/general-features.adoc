@@ -5,9 +5,9 @@ Below, we will outline a series of the platform’s general features and charact
 
 == Installation and settings
 
-Decidim **can be easily installed **using the command prompt in any GNU/Linux server with the following installed services: PostgreSQL 9.4+, Ruby 2.4.1, NodeJS with yarn (JavaScript dependency manage), ImageMagick and PhantomJS. An automatic installation script allows you to deploy the whole dependency system, libraries, databases and other automatically required services in Heroku or Docker [feature expected for 2018Q4].
+Decidim **can be easily installed** using the command prompt in any GNU/Linux server with the following installed services: PostgreSQL, Ruby, NodeJS and ImageMagick. An automatic installation script allows you to deploy the whole dependency system, libraries, databases and other automatically required services in Heroku or Docker [feature expected for 2022Q4].
 
-The portal’s *settings* are **customisable **in the following fields that are filled out on a form from the administration panel: Name of the portal, social network profiles (Twitter, Facebook, Instagram, YouTube, Github); brief description; welcome text; default language; home image; the organisation’s logo; favicon; reference prefix (unique identifier that will apply to the portal’s elements) and the organisation’s URL.
+The portal’s *settings* are **customisable** in the following fields that are filled out on a form from the administration panel: Name of the portal, social network profiles (Twitter, Facebook, Instagram, YouTube, Github); brief description; welcome text; default language; home image; the organisation’s logo; favicon; reference prefix (unique identifier that will apply to the portal’s elements) and the organisation’s URL.
 
 == Integration with other services and compatibility/creation of additional services
 
