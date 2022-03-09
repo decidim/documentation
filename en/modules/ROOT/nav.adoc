@@ -19,7 +19,7 @@
 *** xref:customize:texts.adoc[Texts]
 *** xref:customize:users_registration_mode.adoc[User registration mode]
 *** xref:customize:views.adoc[Views]
-** xref:configure:services:index.adoc[Services]
+** xref:services:index.adoc[Services]
 *** xref:services:activejob.adoc[Active Job]
 *** xref:services:elections_bulletin_board.adoc[Elections Bulletin Board]
 *** xref:services:etherpad.adoc[Etherpad]
@@ -140,8 +140,9 @@
 *** xref:admin:information-pages.adoc[Information pages]
 
 * xref:contribute:index.adoc[Contribute]
-** xref:ROOT:governance.adoc[Governance]
+** xref:contribute:governance.adoc[Governance]
 ** xref:contribute:translations.adoc[Translations]
+** xref:contribute:documentation.adoc[Documentation]
 
 * xref:develop:index.adoc[Develop]
 ** xref:develop:guide.adoc[Guide]
