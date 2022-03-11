@@ -16,14 +16,16 @@ This is the repository for the [Decidim Documentation website](https://docs.deci
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 nvm install node
 
-# Install Antora and dependencies (some system will need to prefix `sudo`)
-npm install -g antora
-
 # If antora installation succeed, `antora -v` will return antora's version.
 
 # Clone repository and build documentation website.
 git clone https://github.com/decidim/documentation
 cd documentation
+
+# Install Antora and dependencies
+npm install
+
+# build the static site
 npm run build
 
 # The generated website will be create under ```build/site/``` folder. Open ```index.html``` with any browser.
