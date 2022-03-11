@@ -12,7 +12,7 @@ This is the repository for the [Decidim Documentation website](https://docs.deci
 [Install antora](https://docs.antora.org/antora/2.3/install-and-run-quickstart/) with software dependencies.
 
 ```bash
-# Install Node an Npm, for instance using nvm:
+# Install Node and Npm, for instance using nvm:
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 nvm install node
 
