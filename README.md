@@ -12,12 +12,12 @@ This is the repository for the [Decidim Documentation website](https://docs.deci
 [Install antora](https://docs.antora.org/antora/2.3/install-and-run-quickstart/) with software dependencies.
 
 ```bash
-# Install Node & npm using nvm
+# Install Node an Npm, for instance using nvm:
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 nvm install node
 
-# Install Antora and dependencies
-npm install
+# Install Antora and dependencies (some system will need to prefix `sudo`)
+npm install -g antora
 
 # If antora installation succeed, `antora -v` will return antora's version.
 
