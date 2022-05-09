@@ -26,6 +26,5 @@ asciidoc:
   attributes:
     kroki-fetch-diagram: true
     page-pagination: ""
-      #  extensions:
-      #    - asciidoctor-kroki
-      #    - asciidoctor-mathjax
+  extensions:
+    - asciidoctor-kroki
