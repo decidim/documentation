@@ -16,9 +16,12 @@ content:
       branches: develop
 ui:
   bundle:
-    url: https://github.com/decidim/documentation-antora-ui/releases/download/v0.3/ui-bundle.zip
+    url: https://github.com/decidim/documentation-antora-ui/releases/download/v0.4/ui-bundle.zip
     snapshot: true
   supplemental_files: ./supplemental_ui
+antora:
+  extensions:
+    - require: '@antora/lunr-extension'
 asciidoc:
   attributes:
     kroki-fetch-diagram: true
