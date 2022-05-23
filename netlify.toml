@@ -1,6 +1,6 @@
 [build]
   publish = "build/site/"
-  command = "node_modules/.bin/antora --generator antora-site-generator-lunr --stacktrace --fetch --html-url-extension-style=indexify antora-playbook.yml"
+  command = "npm run build"
 
 [build.environment]
   NODE_VERSION = "14"
@@ -10,7 +10,7 @@
   DOCSEARCH_ENGINE = "lunr"
 
 [context.deploy-preview]
-  command = "sed -i'' -e 's;branches: master;branches: HEAD;g' antora-playbook.yml && node_modules/.bin/antora --generator antora-site-generator-lunr --stacktrace --fetch --html-url-extension-style=indexify --url $DEPLOY_PRIME_URL antora-playbook.yml"
+  command = "sed -i'' -e 's;branches: master;branches: HEAD;g' antora-playbook.yml && npm run build"
 
 [[redirects]]
   from = "/social-contract/en/*"
