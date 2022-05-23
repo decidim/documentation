@@ -87,3 +87,27 @@ image:components/proposals/proposal_answer_state_accepted.png[Proposal answer st
 === Rejected
 
 image:components/proposals/proposal_answer_state_rejected.png[Proposal answer state: Rejected]
+
+== Publication
+
+You can control when the answers will be published by using the "Publish proposal answers immediately" checkbox.
+
+For enabling automatic publication, you'll need to check it.
+
+On the other hand, if you want to control when to publish the answer a proposal or multiple proposals, you'll need to follow these steps:
+
+. Sign in as admin or valuator
+. Go to admin panel
+. In the main sidebar, click in the button for the space that you want to configure the component for.
+For instance, it could be "Processes", "Assemblies", or "Conferences"
+. Click in the "Proposals" component
+. Search the proposal you want to answer
+. Click in the left checkbox of the proposal that you want to publish
+. Click on the "Actions" button
+. Click on the "Publish answers" option
+image:components/proposals/proposal_answer_publish.png[Proposal answer publication: action]
+. Click on "Publish" button
+image:components/proposals/proposal_answer_publish_button.png[Proposal answer publication: publish button]
+
+NOTE: If you have unchecked the "Publish proposal answers immediately", answered the proposals and then checked the option again, the answers will not be
+published automatically. You'll still need to publish the answers manually with the "Actions" button.
