@@ -18,7 +18,7 @@ image:spaces/categories_form.png[Select a category when creating a proposal]
 
 NOTE: Once a category is in use it cannot be removed, as there are resources that are using it.
 
-Decidim has other ways to classify resources, for instance xref:admin:scopes.adoc[Scopes] and xref:admin:hashtags.adoc[Hashtags].
+Decidim has other ways to classify resources, for instance xref:admin:scopes.adoc[Scopes] and xref:admin:features/hashtags.adoc[Hashtags].
 The main difference is that Categories can be defined in a given space, Scopes are global for all the platform, and Hashtags
 are defined by the participants.
 

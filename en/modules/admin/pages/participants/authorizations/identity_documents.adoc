@@ -16,7 +16,7 @@ image:authorizations_id_document_configuration.png[ID document authorization con
 
 NOTE: As you can see, this authorization is based in the original implementers reality, in this case in the Spanish identities document types.
 For instance, we're giving as options for document types "DNI, NIE or Passport" or we're asking for "Document number (with letter)"
-You can change this by xref:customize:code.adoc[code customizing or overriding] these things. We also accept xref:ROOT:governance.adoc[Pull Request contributions]
+You can change this by xref:customize:code.adoc[code customizing or overriding] these things. We also accept xref:contribute:governance.adoc[Pull Request contributions]
 so it's possible to configure this.
 
 .ID Documents authorization configuration

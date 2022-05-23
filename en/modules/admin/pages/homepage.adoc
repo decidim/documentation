@@ -34,8 +34,6 @@ These are the different content blocks enabled with the official Decidim modules
 
 === Hero image
 
-NOTE: These area legacy settings that will be removed in the next version. https://github.com/decidim/decidim/pull/6284[See PR]. In this next version you're going to be able to change the button and path for this button from this same content block. 
-
 image::homepage_hero_image_back.png[Hero image in Homepage backend content block]
 
 image::homepage_hero_image_front.png[Hero image in Homepage frontend content block]
@@ -58,9 +56,9 @@ image::homepage_footer_sub_hero_banner.png[Hero image in Homepage content block]
 
 image::homepage_how_to_participate.png[How to participate in Homepage content block]
 
-=== Upcoming events
+=== Upcoming meetings
 
-image::homepage_upcoming_events.png[Upcoming events in Homepage content block]
+image::homepage_upcoming_meetings.png[Upcoming meetings in Homepage content block]
 
 === Last activity
 

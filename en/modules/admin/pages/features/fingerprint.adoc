@@ -1,6 +1,6 @@
 = Fingerprint
 
-Although the platform should show the xref:admin:features/versions.doc[Versions] for almost all of the contents, it'd be
+Although the platform should show the xref:admin:features/versions.adoc[Versions] for almost all of the contents, it'd be
 still possible to manipulate the content by directly editing the database.
 
 As mitigation for this risk, the platform shows a fingerprint for some important fields, for instance, a proposal body and title.
