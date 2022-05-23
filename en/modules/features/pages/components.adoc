@@ -118,18 +118,17 @@ Some of the meeting component’s advanced features include:
 
 *The search engine* allows participants to perform searches across all of the platform’s indexable content, both generally and specifically, by searching within a specific participatory process or inside its components (proposals, results, etc.), through advanced searches.
 
-
-= Secondary components
+== Secondary components
 
 There are other components that only exist on top of basic components are. These components are:
 
-== Comments
+=== Comments
 
 The *comments* component enables participants to take part on a deliberative process on an issue or proposal.
 Participants can respond to them, endorse them and receive notifications about responses. 
 Comments can be *ranked* in chronological order or by number of votes in favour.
 
-== Participatory texts
+=== Participatory texts
 
 Participatory texts are defined as an ordered collection of proposals that make up a document with complete text. Participation in the text stems from interaction with the proposals that form it. This component basically allows three operations:
 
@@ -137,8 +136,8 @@ Participatory texts are defined as an ordered collection of proposals that make 
 * *Composition of proposals in a unified text*: based on a series of proposals, these may be ordered and generate a unified and downloadable text.
 * *Viewing and interacting* with documents composed of proposals: A collection of proposals will be shown as a unified text and may be amended or comments can be added in the margin.
 
-== Accountability
- 
+=== Accountability
+
 The *accountability* component works like a project management system built into the platform. . It offers the possibility of:
 
 * subdividing results into projects or sub-projects
@@ -147,7 +146,7 @@ The *accountability* component works like a project management system built into
 
 Results, projects and statuses can be updated through a CVS, or manually by the administration interface.
 
-== Conferences
+=== Conferences
 
 The *conference* component allows an organization to join up a series predefined meetings (chats, workshops etc.) related to a participatory space.
 
@@ -162,6 +161,7 @@ Configuration settings include:
 * Automatic links to digital-media websites covering the event.
 * The ability to following events through *social networks* (e.g. by incorporating a Twitter feed).
 
+== Participatory Spaces and Components
 
 
 = Participatory Spaces and Components
@@ -178,7 +178,7 @@ For example, the various phases of a Participatory Budgeting Process (Participat
 8. Finally, the *Accountability* component may be activated to monitor the degree of execution of the selected projects, and people can comment on it. 
 
 
-= Displaying components: Cards
+== Displaying components: Cards
 
 Component items have their individual page but are also displayed as *cards* throughout the platform. 
 
