@@ -27,7 +27,7 @@
 *** xref:services:smtp.adoc[SMTP]
 *** xref:services:social_providers.adoc[Social Providers]
 
-* xref:admin:index.adoc[Admin]
+* Admin
 ** xref:admin:index.adoc[Introduction]
 *** xref:admin:system.adoc[System panel]
 *** xref:admin:dashboard.adoc[Dashboard]
@@ -104,7 +104,7 @@
 **** xref:admin:components/proposals/participatory_texts.adoc[Participatory texts]
 *** xref:admin:components/sortitions.adoc[Sortitions]
 *** xref:admin:components/surveys.adoc[Surveys]
-** xref:admin:features.adoc[Features]
+** Features
 *** xref:admin:features/badges.adoc[Badges]
 *** xref:admin:features/comments.adoc[Comments]
 *** xref:admin:features/conversations.adoc[Conversations]
@@ -144,7 +144,7 @@
 ** xref:contribute:translations.adoc[Translations]
 ** xref:contribute:documentation.adoc[Documentation]
 
-* xref:develop:index.adoc[Develop]
+* Develop
 ** xref:develop:guide.adoc[Guide]
 *** xref:develop:guide_example_apps.adoc[1. Example Applications]
 *** xref:develop:guide_development_app.adoc[2. Development App]
@@ -152,7 +152,7 @@
 *** xref:develop:guide_conventions.adoc[4. Conventions]
 *** xref:develop:guide_architecture.adoc[5. Architecture]
 ** xref:develop:security.adoc[Security]
-** xref:develop:index.adoc[Advanced]
+** Advanced
 *** Concerns
 **** xref:develop:authorable.adoc[Authorable]
 **** xref:develop:embeddable.adoc[Embeddable]
@@ -205,14 +205,14 @@
 ** xref:understand:social-contract.adoc[Social Contract]
 *** xref:understand:social-contract-ca.adoc[Català]
 *** xref:understand:social-contract-es.adoc[Castellano]
-** xref:publications:index.adoc[Publications]
+** Publications
 *** xref:publications:catalan.adoc[Catalan]
 *** xref:publications:english.adoc[English]
 *** xref:publications:french.adoc[French]
 *** xref:publications:german.adoc[German]
 *** xref:publications:italian.adoc[Italian]
 *** xref:publications:spanish.adoc[Spanish]
-** xref:whitepaper:index.adoc[Whitepaper]
+** Whitepaper
 *** xref:whitepaper:decidim-a-brief-overview.adoc[Decidim: a brief overview]
 
 * xref:releases:index.adoc[Release Notes]
