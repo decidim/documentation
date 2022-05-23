@@ -9,7 +9,7 @@ on:
 
 jobs:
   check:
-    name: Run Antora CI
+    name: Install and run Antora CI
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -20,5 +20,5 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Run build script
-        run: npm build
+        run: npm run build
 
