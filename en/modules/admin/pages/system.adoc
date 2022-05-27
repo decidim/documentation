@@ -1,6 +1,6 @@
 = System 
 
-Every Decidim is multi-tenant by default. That means that you can have multiple organizations inside of your same installation. This is being used for instance for the Barcelona and Girona Provincials Governments, for offering Decidim installations to many small cities, or by the City of Barcelona, for giving service to lots of organizations (NGOs, cooperatives, etc). For instance, you can have 
+Every Decidim is multi-tenant by default. That means that you can have multiple organizations inside of your same installation. This is being used for instance for the Barcelona and Girona Provincials Governments, for offering Decidim installations to many small cities, or by the City of Barcelona, for giving service to lots of organizations (NGOs, cooperatives, etc).
 
 Even if you only have one Organization you also need to create one through the System Panel. It's available after you've installed Decidim, at `/system`. For instance if you domain is `example.org`, then it should be available at `http://example.org/system`.
 
