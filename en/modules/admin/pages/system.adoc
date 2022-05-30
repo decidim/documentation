@@ -10,14 +10,14 @@ image::system-log_in.png[system panel log in]
 
 == 1. Create an admin account
 
-For accessing in this dashboard, you'll need to create a system admin account from your terminal:
+For logging in to this dashboard, you'll need to create a system admin account from your terminal:
 
 [source, console]
 ....
 bin/rails decidim_system:create_admin
 ....
 
-You'll be asked for an email and a password. For security, the password'll not get displayed back at you and you'll need to confirm it. 
+You'll be asked for an email and a password. For security, the password will not get displayed back at you and you'll need to confirm it. 
 
 == 2. Access the Dashboard
 
