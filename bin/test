@@ -4,7 +4,7 @@ stderrlog=$(mktemp)
 
 npm run build 2> $stderrlog
 
-if [ -e "$stderrlog" ];
+if [ -e "$stderrlog" ] && [ -s "$stderrlog" ];
 then
   cat $stderrlog
   exit 1
