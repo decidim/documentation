@@ -1,0 +1,10 @@
+= Accountability
+
+The Accountability component allows people to follow project implementations. It works like a project management system built into the platform. It offers the following features:
+
+* creating results that represent projects to be implemented
+* subdividing results into projects or sub-projects
+* defining and applying progress in implementation statuses (0% to 100% implemented) around their implementation
+* displaying the extent of the results’ implementation grouped by categories and scopes
+
+Results, projects and statuses can be updated through a CVS, or manually by the administration interface.
