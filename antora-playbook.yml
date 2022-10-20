@@ -4,7 +4,7 @@ site:
   start_page: v0.27@en:ROOT:index.adoc
 content:
   sources:
-    - url:
+    - url: .
       start_path: en
       branches:
         - release/0.27-stable
