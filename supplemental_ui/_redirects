@@ -1,0 +1,11 @@
+/social-contract/en/*                 /en/understand/social-contract/
+/features/en/*			                  /en/features/:splat
+/features/es/*			                  /en/features/:splat
+/features/ca/*			                  /en/features/:splat
+/features/			                      /en/features/general-description/
+/whitepaper/en/*			                /en/whitepaper/
+/deploy-and-admin/en/get-decidim/			/en/install/
+/admin-manual/en/*	              		/en/admin/:splat
+/develop/en/			                    /en/develop/guide/
+/develop/en/advanced/*			          /en/develop/:splat
+/init/en/	                        		/en/
