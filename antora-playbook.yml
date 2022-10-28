@@ -17,9 +17,9 @@ content:
         - release/0.27-stable
         - release/0.26-stable
         #        - develop
-        #    - url: https://github.com/decidim/decidim-bulletin-board
-        #      start_path: docs
-        #      branches: develop
+    - url: https://github.com/decidim/decidim-bulletin-board
+      start_path: docs
+      branches: develop
 ui:
   bundle:
     url: https://github.com/decidim/documentation-antora-ui/releases/download/v0.4/ui-bundle.zip
