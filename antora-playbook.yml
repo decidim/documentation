@@ -8,7 +8,7 @@ content:
       start_path: en
       branches:
         - release/0.27-stable
-          # - release/0.26-stable
+        - release/0.26-stable
           #        - develop
       edit_url: "https://github.com/decidim/documentation/edit/{refname}/{path}"
         #    - url: https://github.com/decidim/decidim
