@@ -4,6 +4,11 @@
 /en/contribute/*                      /en/develop/contribute/:splat
 /en/develop/*                         /en/develop/develop/:splat
 /en/understand/*                      /en/develop/understand/:splat
+
+/en/v0.27/index.html                  /en/v0.27/
+/en/v0.26/index.html                  /en/v0.26/
+/en/develop/index.html                /en/develop/
+
 /social-contract/en/*                 /en/understand/social-contract/
 /features/en/*                        /en/features/:splat
 /features/es/*                        /en/features/:splat
