@@ -1,10 +1,14 @@
-/en/install/*                         /en/develop/install/:splat
-/en/configure/*                       /en/develop/configure/:splat
-/en/customize/*                       /en/develop/customize/:splat
 /en/admin/*                           /en/develop/admin/:splat
+/en/configure/*                       /en/develop/configure/:splat
 /en/contribute/*                      /en/develop/contribute/:splat
+/en/customize/*                       /en/develop/customize/:splat
 /en/develop/*                         /en/develop/develop/:splat
+/en/features/*                        /en/develop/features/:splat
+/en/install/*                         /en/develop/install/:splat
+/en/publications/*                    /en/develop/publications/:splat
+/en/releases/*                        /en/develop/releases/:splat
 /en/understand/*                      /en/develop/understand/:splat
+/en/whitepaper/*                      /en/develop/whitepaper/:splat
 
 /en/v0.27/index.html                  /en/v0.27/
 /en/v0.26/index.html                  /en/v0.26/
