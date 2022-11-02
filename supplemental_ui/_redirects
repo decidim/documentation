@@ -1,5 +1,6 @@
 /en/install/*                         /en/develop/install/:splat
-/en/configure                         /en/develop/configure/:splat
+/en/configure/*                       /en/develop/configure/:splat
+/en/customize/*                       /en/develop/customize/:splat
 /en/admin/*                           /en/develop/admin/:splat
 /en/contribute/*                      /en/develop/contribute/:splat
 /en/develop/*                         /en/develop/develop/:splat
