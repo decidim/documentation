@@ -12,3 +12,5 @@ jobs:
           skip_dirty_check: true
           commit_message: "Trigger build"
           commit_options: "--allow-empty"
+          commit_user_name: decidim-bot
+          commit_user_email: decidim-bot@users.noreply.github.com
