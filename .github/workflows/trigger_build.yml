@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.0.0
+        with:
+          token: ${{ secrets.WORKFLOW_PAT }}
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           skip_dirty_check: true
