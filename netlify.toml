@@ -1,3 +1,6 @@
+[build]
+  command = "npm run build -- --fetch"
+
 [build.environment]
   NODE_VERSION = "16.14.2"
   BUILD_ONLY = "true"
