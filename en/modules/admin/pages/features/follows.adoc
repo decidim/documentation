@@ -5,7 +5,7 @@ of the activity being made by the thing you're following.
 
 You can control these notifications in the xref:features/my_account/notifications_settings.adoc[settings of your account].
 
-The activity of the things that you're following is visible in your xref:features/my_public_profile/timeline.adoc[profile timeline].
+The activity of the things that you're following is visible in your profile timeline.
 
 For following a thing:
 
@@ -24,4 +24,4 @@ image:button_stop_following.png[Stop following button]
 Administrators by default follow all the new spaces that are created in the Decidim platform.
 
 A participant can also follow another participants. This is public and it's visible in the profile sections
-xref:features/my_public_profile/follows.adoc[follows] and xref:features/my_public_profile/follows.adoc[followers].
+follows and followers.
