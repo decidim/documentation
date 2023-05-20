@@ -6,7 +6,7 @@ This is done through the button in the sidebar. Administrators can enable or dis
 
 == Supports v endorsements
 
-Supports differ from :xref:endorsements.adoc[] in the following ways:
+Supports differ from :xref:features/endorsements.adoc[endorsements] in the following ways:
 * Supports can be made private (hidden from public view) whereas endorsements are always public
 * Supports are counted as a formal vote, whereas endorsements are considered a public show of support, similar to a 'like' as used on social networks
 * Supports are available on non-voting areas of Dedicim such as blog posts
