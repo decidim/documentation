@@ -1,0 +1,11 @@
+= Supports
+
+Through supports, participants can vote for a particular content, for instance, a proposal.
+
+This is done through the button in the sidebar. Administrators can enable or disable them by step in a given participatory process, and they can also define permissions with authorizations.
+
+== Supports v endorsements
+
+Supports differ from :xref:endorsements.adoc[] in the following ways:
+* Supports can be made private (hidden from public view) whereas endorsements are always public
+* Supports are counted as a formal vote, whereas endorsements are considered a 'like' (as used on social networks)
