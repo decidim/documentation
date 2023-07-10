@@ -16,11 +16,12 @@ let url;
 console.log(process.env);
 
 if (process.env.CI === "true") {
-  headRef = process.env.GITHUB_HEAD_REF;
-  baseRef = process.env.GITHUB_BASE_REF;
+  headRef = process.env.HEAD;
+  // FIXME: change this depending on the branch
+  baseRef = "develop";
 } else {
   headRef = "HEAD";
-  baseRef = "develop"
+  baseRef = "develop";
   url = ".";
 }
 
@@ -30,10 +31,11 @@ fs.readFile(antoraPlaybook, "utf8", function (err,data) {
   }
 
   let result = data.replace(baseRef, headRef);
-  console.log(url);
   if (url != undefined) {
     result = result.replace("https://github.com/decidim/documentation", url);
   }
+
+  console.log(result);
 
   fs.writeFile(antoraPlaybook, result, "utf8", function (err) {
     if (err) {
