@@ -1,0 +1,167 @@
+= Skeleton
+
+The Skeleton component allows people to XXX
+
+From this starting point, there could be other configurations, such as:
+
+*
+
+Some examples of where this component was used:
+
+*
+
+image:components/skeleton/example01.png[]
+image:components/skeleton/example02.png[]
+image:components/skeleton/example03.png[]
+image:components/skeleton/example04.png[]
+
+To configure the Skeleton component:
+
+. Sign in as admin
+. Go to admin panel
+. In the main sidebar, click in the button for the space that you want to configure the component for.
+For instance, it could be "Processes", "Assemblies" or "Conferences".
+. Go to components
+. Click on "Add component" button
+. Click on "Skeleton"
+. Fill the xref:_add_component[Add component] form
+
+== Add component
+
+image:components/skeleton/component.png[Add component form]
+
+
+.Add component: Skeleton form
+|===
+|Field |Type |Description
+
+|Name
+|Required
+|What is the title of this component. For instance, "Skeletons"
+
+|Order position
+|Optional
+|Which order will it have in relation to the other skeletons. Having a lower number means a higher priority.
+For instance, if you have two skeletons, "Skeleton a" with weight "10" and "Skeleton b" with weight "0", then "Skeleton b" will be first when ordering.
+|===
+
+
+.Add component: Skeleton form - Global settings
+|===
+|Field |Type |Description
+
+|Scopes enabled
+|Optional
+|Check if you want to have Scopes filtering in this component.
+
+|Scope
+|Optional
+|Which xref:admin:scopes.adoc[Scope] does this component belongs to.
+
+|Global scope
+|Optional
+|
+
+|Comments enabled
+|Optional
+|Whether you want to have comments in the meetings.
+
+|Comments max length
+|Optional
+|What is the characters limit that participants will have when making comments. Leave 0 for default value.
+
+|Actions permissions can be set for each skeleton
+|Optional
+|Whether you want to be able to set permissions for every one of the skeletons. Most of the time you will want to leave this option disabled.
+
+|Announcement
+|Optional
+|A general announcement that'll be visible on the general skeletons landing page.
+|===
+
+In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
+xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
+
+
+.Add component: Skeletons form - Step settings
+|===
+|Field |Type |Description
+
+|Comments blocked
+|Optional
+|Whether you want to enable comments for this phase.
+
+|Announcement
+|Optional
+|A general announcement that'll be visible on the general skeleton landing page.
+|===
+
+== Permissions
+
+An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
+certain actions in the skeletons:
+
+* Create
+* Endorse
+
+== Manage skeletons
+
+image:components/skeleton/manage_skeletons.png[Manage skeletons table]
+
+=== Export all
+
+Allows exporting the skeletons in different formats.
+
+* Skeletons as CSV
+* Skeletons as JSON
+* Skeletons as Excel
+* Comments as CSV
+* Comments as JSON
+* Comments as Excel
+
+=== New skeleton form
+
+image:components/skeleton/new_skeleton.png[New skeleton form]
+
+
+.New skeleton form
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|What is the title of this skeleton. For instance, "District A"
+
+|Order position
+|Optional
+|Which order will it have in relation to the other skeletons. Having a lower number means a higher priority.
+For instance, if you have two skeletons, "Skeleton a" with weight "10" and "Skeleton b" with weight "0", then "Skeleton b" will be first when ordering.
+
+|Description
+|Optional
+|What is the description of this skeleton.
+|===
+
+==== Actions
+
+
+.Actions
+|===
+|Icon |Name |Definition
+
+|image:action_preview.png[Preview icon]
+|Preview
+|To see how it's shown in the frontend to participants.
+
+|image:action_list.png[Manage projects icon]
+|xref:_manage_projects[Manage projects]
+|Allows you to manage the projects of a skeleton.
+
+|image:action_edit.png[Edit icon]
+|Edit
+|Edit form for a skeleton. It's the same form as "New skeleton".
+
+|image:action_delete.png[Delete icon]
+|Delete
+|To delete this skeleton. Only can be done when there aren't any projects.
+|===
