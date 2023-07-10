@@ -1,3 +1,7 @@
+# This file is changed during the build process, so if you want to save your changes
+# You'd need to commit them before running the `npm run build` script, or
+# just comment the `postbuild` script that restores this file
+#
 site:
   title: Decidim Docs
   url: https://docs.decidim.org
