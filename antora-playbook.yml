@@ -4,19 +4,13 @@ site:
   start_page: v0.27@en:ROOT:index.adoc
 content:
   sources:
-    - url: https://github.com/decidim/documentation
+    - url: .
       start_path: en
-      branches:
-        - release/0.27-stable
-        - release/0.26-stable
-        - develop
+      branches: [release/0.27-stable, release/0.26-stable, HEAD]
       edit_url: "https://github.com/decidim/documentation/edit/{refname}/{path}"
     - url: https://github.com/decidim/decidim
       start_path: docs
-      branches:
-        - release/0.27-stable
-        - release/0.26-stable
-        - develop
+      branches: [release/0.27-stable, release/0.26-stable, develop]
     - url: https://github.com/decidim/decidim-bulletin-board
       start_path: docs
       branches: develop
