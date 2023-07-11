@@ -4,16 +4,30 @@
 // Changes the playbook accordingly to its environment
 //
 
-const fs = require('fs')
+const fs = require('fs');
+const exec = require('child_process').exec;
 
-const scriptName = process.argv[1];
-const antoraPlaybook = "antora-playbook.yml";
-
-let headRef;
-let baseRef;
-let url;
-
-console.log(process.env);
+// Executes a command and returns the output as a Promise
+//
+// @param {string} command - The command to run
+// @returns {Promise} The output of the command
+function executeCommand(command) {
+  return new Promise((resolve, reject) => {
+    exec(command, (error, stdout, stderr) => {
+      if (error) {
+        console.error(`Error: ${error.message}`);
+        reject(error);
+        return;
+      }
+      if (stderr) {
+        console.error(`Command execution error: ${stderr}`);
+        reject(new Error(stderr));
+        return;
+      }
+      resolve(stdout);
+    });
+  });
+}
 
 // Infers base branch reference according to the head reference
 //
@@ -25,8 +39,9 @@ console.log(process.env);
 function baseFromHead(headRef) {
   let baseRef;
 
+  console.log("HEAD => ", headRef);
   if (headRef.startsWith("v0.")) {
-    const version = headRef.split("/")[0].replace("v");
+    const version = headRef.split("/")[0].replace("v", "");
     baseRef = `release/${version}-stable`;
   } else {
     baseRef = "develop";
@@ -35,40 +50,66 @@ function baseFromHead(headRef) {
   return baseRef;
 }
 
-if (process.env.CONTEXT === "deploy-preview" || process.env.RUNNER_ENVIRONMENT == "github-hosted") {
-  // We're in CI and we need to adapt the head of the playbook
-  headRef = process.env.HEAD || process.env.GITHUB_HEAD_REF;
-  if (process.env.GITHUB_BASE_REF != undefined) {
-    baseRef = process.env.GITHUB_BASE_REF
+// Get metatada from the environment
+//
+// Gets the head reference and the base reference by checking out environment variables
+//
+// @returns {object}
+async function getMetadataFromEnvironment() {
+  let headRef;
+  let baseRef;
+
+  if (process.env.CONTEXT === "deploy-preview" || process.env.RUNNER_ENVIRONMENT == "github-hosted") {
+    // We're in CI and we need to change the head of the playbook
+    headRef = process.env.HEAD || process.env.GITHUB_HEAD_REF;
+    if (process.env.GITHUB_BASE_REF != undefined) {
+      baseRef = process.env.GITHUB_BASE_REF
+    } else {
+      baseRef = baseFromHead(headRef);
+    }
+  } else if (process.env.CI === "true") {
+    // We're in production so we don't need to change anything
+    return;
   } else {
-    baseRef = baseFromHead(headRef);
+    // We're in development and we need to change the head
+    headRef = "HEAD";
+    const branch = await executeCommand("git branch --show-current");
+    baseRef = baseFromHead(branch);
   }
-} else if (process.env.CI === "true") {
-  // We're in production so we don't need to change anything
-  return;
-} else {
-  // We're in development and we need to adapt the head and also the URL
-  headRef = "HEAD";
-  baseRef = "develop";
-  url = ".";
+
+  return {
+    headRef,
+    baseRef,
+  }
 }
 
-fs.readFile(antoraPlaybook, "utf8", function (err,data) {
-  if (err) {
-    return console.err(err);
-  }
-
-  let result = data.replace(baseRef, headRef);
-  if (url != undefined) {
-    result = result.replace("https://github.com/decidim/documentation", url);
-  }
-
-  console.log(result);
-
-  fs.writeFile(antoraPlaybook, result, "utf8", function (err) {
+function writeToFile(antoraPlaybookFile, metadata) {
+  fs.readFile(antoraPlaybookFile, "utf8", function (err,data) {
     if (err) {
       return console.err(err);
     }
-  });
-});
 
+    let result = data.replace(metadata.baseRef, metadata.headRef);
+    if (metadata.headRef === "HEAD") {
+      result = result.replace("https://github.com/decidim/documentation", ".");
+    }
+
+    console.log(result);
+
+    fs.writeFile(antoraPlaybookFile, result, "utf8", function (err) {
+      if (err) {
+        return console.err(err);
+      }
+    });
+  });
+}
+
+(async function() {
+  const ANTORA_PLAYBOOK = "antora-playbook.yml";
+  const metadata = await getMetadataFromEnvironment();
+
+  console.log(process.env);
+  console.log(metadata);
+
+  writeToFile(ANTORA_PLAYBOOK, metadata);
+}());
