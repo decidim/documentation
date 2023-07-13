@@ -39,7 +39,6 @@ function executeCommand(command) {
 function baseFromHead(headRef) {
   let baseRef;
 
-  console.log("HEAD => ", headRef);
   if (headRef.startsWith("v0.")) {
     const version = headRef.split("/")[0].replace("v", "");
     baseRef = `release/${version}-stable`;
@@ -101,7 +100,10 @@ function writeToFile(antoraPlaybookFile, metadata) {
       result = result.replace(antoraDocumentationUrl, ".");
     }
 
+    console.log("********************************")
+    console.log(antoraPlaybookFile);
     console.log(result);
+    console.log("********************************")
 
     fs.writeFile(antoraPlaybookFile, result, "utf8", function (err) {
       if (err) {
@@ -114,9 +116,6 @@ function writeToFile(antoraPlaybookFile, metadata) {
 (async function() {
   const ANTORA_PLAYBOOK = "antora-playbook.yml";
   const metadata = await getMetadataFromEnvironment();
-
-  console.log(process.env);
-  console.log(metadata);
 
   writeToFile(ANTORA_PLAYBOOK, metadata);
 }());
