@@ -59,7 +59,11 @@ async function getMetadataFromEnvironment() {
   let headRef;
   let baseRef;
 
-  if (process.env.CONTEXT === "deploy-preview" || process.env.RUNNER_ENVIRONMENT == "github-hosted") {
+  const isNetlifyDeployPreview = process.env.CONTEXT === "deploy-preview";
+  const isGithubActionCI = process.env.RUNNER_ENVIRONMENT == "github-hosted";
+  const isProductionEnvironment = process.env.CI === "true";
+
+  if (isNetlifyDeployPreview || isGithubActionCI) {
     // We're in CI and we need to change the head of the playbook
     headRef = process.env.HEAD || process.env.GITHUB_HEAD_REF;
     if (process.env.GITHUB_BASE_REF != undefined) {
@@ -67,7 +71,7 @@ async function getMetadataFromEnvironment() {
     } else {
       baseRef = baseFromHead(headRef);
     }
-  } else if (process.env.CI === "true") {
+  } else if (isProductionEnvironment) {
     // We're in production so we don't need to change anything
     return;
   } else {
@@ -90,8 +94,11 @@ function writeToFile(antoraPlaybookFile, metadata) {
     }
 
     let result = data.replace(metadata.baseRef, metadata.headRef);
-    if (metadata.headRef === "HEAD") {
-      result = result.replace("https://github.com/decidim/documentation", ".");
+
+    const isDevelopment = metadata.headRef === "HEAD";
+    if (isDevelopment) {
+      const antoraDocumentationUrl = "https://github.com/decidim/documentation";
+      result = result.replace(antoraDocumentationUrl, ".");
     }
 
     console.log(result);
