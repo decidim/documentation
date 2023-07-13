@@ -86,6 +86,15 @@ async function getMetadataFromEnvironment() {
   }
 }
 
+// Given an antora-playbook.yml file, and a metadata object
+// Replaces the contents of the file depending in the metadata
+//
+// @param {string} antoraPlaybookFile - the path of the antora-playbook.yml file
+// @param {object} metadata - an object with the metadata
+// @param {string} metadata.baseRef - the base branch from where this branch was created
+//                                    It can be `develop` or the release branch (i.e. `release/0.27-stable`)
+// @param {string} metadata.headRef - the head reference of git
+//                                    It's the name of the current branch
 function writeToFile(antoraPlaybookFile, metadata) {
   fs.readFile(antoraPlaybookFile, "utf8", function (err,data) {
     if (err) {
