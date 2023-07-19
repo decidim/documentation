@@ -1,12 +1,12 @@
 = Agenda
 
-The agenda feature allows an administrator to define the schedule for a meeting. It's possible to define agenda items and
-sub-items, with every one of the topics that will be discussed in the meeting, along with a description and the duration
-of every item and sub-item.
+O recurso de agenda permite que um administrador defina o calendário para uma reunião. É possível definir itens da agenda e
+sub-itens com cada um dos tópicos que serão discutidos na reunião, junto com uma descrição e a duração
+de cada item e subitem.
 
 image:components/meetings/agenda/agenda_frontend.png[Agenda in the frontend]
 
-== New agenda form
+== Novo formulário de agenda
 
 To define an agenda for a meeting:
 
@@ -22,7 +22,7 @@ For instance, it could be "Processes", "Assemblies", or "Conferences"
 image:components/meetings/agenda/new_agenda_form.png[New agenda form in the backend]
 
 
-.New agenda form
+.Novo formulário de agenda
 |===
 |Field |Type |Description
 
