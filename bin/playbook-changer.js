@@ -121,6 +121,10 @@ function writeToFile(antoraPlaybookFile, metadata) {
 }
 
 (async function() {
+  console.log("********************************")
+  console.log(process.env);
+  console.log("********************************")
+
   const ANTORA_PLAYBOOK = "antora-playbook.yml";
   const metadata = await getMetadataFromEnvironment();
 
