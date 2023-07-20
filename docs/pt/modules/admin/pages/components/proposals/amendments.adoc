@@ -1,16 +1,16 @@
 = Amendments
 
-With the amendment feature, participants can propose changes to an already published proposal.
+Com o recurso da emenda, os participantes podem propor alterações a uma proposta já publicada.
 
-It's useful to propose improvements or corrections, specially useful when redacting laws or normatives with xref:components/proposals/participatory_texts.adoc[Participatory Texts].
+É útil propor melhorias ou correções, especialmente úteis ao redigir leis ou normas com xref:components/propostas/participatory_texts.adoc[Texto Participativo].
 
-It has similarities with xref:components/proposals/collaborative_drafts.adoc[Collaborative Drafts], but the main difference
-is that with amendments there is no need to trust the other authors intentions, as every change is reviewed and must be
-approved by the author of the original proposal.
+Ele tem semelhanças com xref:components/propostas/collaborative_drafts. doc[Rascunhos colaborativos], mas a principal diferença
+é que com emendas não há necessidade de confiar nas intenções dos outros autores como cada mudança é revisada e deve ser
+aprovado pelo autor da proposta original.
 
 image:components/proposals/amendments/amendment.png[Amendment of a proposal]
 
-To configure "Amendments" in proposals component:
+Para configurar alterações no componente das "propostas":
 
 . Sign in as admin
 . Go to admin panel
