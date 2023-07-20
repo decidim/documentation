@@ -37,13 +37,11 @@ function executeCommand(command) {
 // @param {string} headRef - The head reference. Examples: "v0.26/fix/preview" or "fix/preview"
 // @returns {string} The base reference. Examples "release/0.26-stable" or "develop"
 function baseFromHead(headRef) {
-  let baseRef;
+  let baseRef = "develop";
 
   if (headRef.startsWith("v0.")) {
     const version = headRef.split("/")[0].replace("v", "");
     baseRef = `release/${version}-stable`;
-  } else {
-    baseRef = "develop";
   };
 
   return baseRef;
