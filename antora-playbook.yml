@@ -1,16 +1,16 @@
 site:
   title: Decidim Docs
   url: https://docs.decidim.org
-  start_page: master@en:ROOT:index.adoc
+  start_page: v0.27@en:ROOT:index.adoc
 content:
   sources:
-    - url: &landing .
-      start_path: /en
-      branches: master
+    - url: https://github.com/decidim/documentation
+      start_path: docs/en
+      branches: [release/0.27-stable, release/0.26-stable, develop]
       edit_url: "https://github.com/decidim/documentation/edit/{refname}/{path}"
     - url: https://github.com/decidim/decidim
       start_path: docs
-      branches: develop
+      branches: [release/0.27-stable, release/0.26-stable, develop]
     - url: https://github.com/decidim/decidim-bulletin-board
       start_path: docs
       branches: develop

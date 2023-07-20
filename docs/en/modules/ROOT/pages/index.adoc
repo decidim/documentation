@@ -8,6 +8,11 @@ Decidim is a framework that allows anybody to create and configure a website pla
 
 You’ve found the documentation for Decidim. Learn about the project at https://decidim.org[decidim.org].
 
+[NOTE]
+====
+This is the documentation for the `0.27` version. You can see this same documentation site for other versions: xref:v0.26@ROOT:index.adoc[v0.26] and xref:develop@ROOT:index.adoc[develop]
+====
+
 // * Read the xref:ROOT:getting-started.adoc[Getting Started guide]
 
 The documentation covers xref:install:index.adoc[installing], xref:configure:index.adoc[configuring], and xref:admin:index.adoc[running] your own Decidim site.
