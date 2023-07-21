@@ -130,5 +130,9 @@ function writeToFile(antoraPlaybookFile, metadata) {
   const ANTORA_PLAYBOOK = "antora-playbook.yml";
   const metadata = await getMetadataFromEnvironment();
 
+  console.log("********************************")
+  console.log(metadata);
+  console.log("********************************")
+
   writeToFile(ANTORA_PLAYBOOK, metadata);
 }());
