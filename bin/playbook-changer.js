@@ -70,6 +70,8 @@ async function getMetadataFromEnvironment() {
     }
   } else if (isProductionEnvironment) {
     // We're in production so we don't need to change anything
+    headRef = "develop";
+    baseRef = "develop";
     return;
   } else {
     // We're in development and we need to change the head
