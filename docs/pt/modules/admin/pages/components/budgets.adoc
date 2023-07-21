@@ -1,0 +1,357 @@
+= Budgets
+
+:page-toclevels: 4
+
+The Budgets component allows people to vote by selecting projects of their choosing. Depending on the needs and normative
+of the organization, this could be configured so people have assigned a total budget (for instance, 100.000 EUR) and then
+every project has assigned a value (for instance, 10.000 EUR). Then when people vote on projects, they have a progress bar
+where they see how much remaining budget they have to allocate in this voting.
+
+From this starting point, there could be other configurations, such as:
+
+* A minimum percentage of budget to be allocated
+* A minimum number of projects to be allocated
+* Multiple budgets, one for each district or neighborhood
+
+Some examples of where this component was used:
+
+* https://www.decidim.barcelona/processes/PressupostosParticipatius[2020/2021 Participatory Budgeting Process in Decidim Barcelona].
+The  city of Barcelona (Spain) has allocated a budget of 30.000.000 EUR so people can present, define, prioritize, vote
+and choose which investment projects the city goverment should execute.
+* https://ecrivons.angers.fr/processes/BP2021[2021 Participatory Budgeting Process in Angers]. The city of Angers (France) has allocated
+a budget of 1.000.000 EUR so people from 11 years can propose maximum of 3 ideas and then vote for their 5 favorite projects.
+* https://omastadi.hel.fi/[2021 Participatory Budgeting Process in Helsinki]. Helsinki has allocated 8.8 million euros to realising
+residents’ wishes. The ideas are developed together into proposals that Helsinki residents can vote on. The proposals with the
+most votes are realised by the City.
+
+image:components/budgets/example01.png[Budgets example voting]
+image:components/budgets/example02.png[Budgets example error messagge when exceding the amount of budget]
+image:components/budgets/example03.png[Budgets vote confirmation]
+image:components/budgets/example04.png[Budgets after voting]
+
+To configure the Budgets component:
+
+. Sign in as admin
+. Go to admin panel
+. In the main sidebar, click in the button for the space that you want to configure the component for.
+For instance, it could be "Processes", "Assemblies" or "Conferences".
+. Go to components
+. Click on "Add component" button
+. Click on "Budgets"
+. Fill the xref:_add_component[Add component] form
+
+== Add component
+
+image:components/budgets/component.png[Add component form]
+
+
+.Add component: Budgets form
+|===
+|Field |Type |Description
+
+|Name
+|Required
+|What is the title of this component. For instance, "Budgets"
+
+|Order position
+|Optional
+|Which order will it have in relation to the other budgets. Having a lower number means a higher priority.
+For instance, if you have two budgets, "Budget a" with weight "10" and "Budget b" with weight "0", then "Budget b" will be first when ordering.
+|===
+
+
+.Add component: Budgets form - Global settings
+|===
+|Field |Type |Description
+
+|Scopes enabled
+|Optional
+|Check if you want to have Scopes filtering in this component.
+
+|Scope
+|Optional
+|Which xref:admin:scopes.adoc[Scope] does this component belongs to.
+
+|Global scope
+|Optional
+|
+
+|xref:_workflows[Workflow]
+|Required
+|How the participants can vote if there are multiple budget sets. You can define your own xref:_workflows[Workflow] or use one of the availables.
+
+|Projects per page
+|Required
+|How many projects are displayed per page.
+
+|Enable rule: Minimum budget percentage
+|Optional, but incompatible with "Minimum number of projects to be voted on" and "Selected projects with minimum and maximum number of projects to be voted on"
+|Allows to define a "Vote threshold percent", a percent of the total budget that participants must reach to be able to vote.
+
+|Enable rule: Minimum number of projects to be voted on
+|Optional, but incompatible with "Minimum budget percentage" and "Selected projects with minimum and maximum number of projects to be voted on"
+|Allows to define a "Minimum number of projects to vote", a number of projects that participants must reach to be able to vote.
+
+|Enable rule: Selected projects with minimum and maximum number of projects to be voted on
+|Optional, but incompatible with "Minimum budget percentage" and "Minimum number of projects to be voted on"
+|Allows to define a "Minimum amount of projects to be selected" and a "Maximum amount of projects to be selected", the number of projects
+that participants will need to vote as a minimum and maximum.
+
+|Comments enabled
+|Optional
+|Whether you want to have comments in the meetings.
+
+|Comments max length
+|Optional
+|What is the characters limit that participants will have when making comments. Leave 0 for default value.
+
+|Actions permissions can be set for each project
+|Optional
+|Whether you want to be able to set permissions for every one of the projects. Most of the time you will want to leave this option disabled.
+
+|Announcement
+|Optional
+|A general announcement that'll be visible on the general budgets landing page.
+
+|Budgets landing page
+|Optional
+|What message will be shown in the Budgets landing page when there are multiple budgets.
+
+|More information modal
+|Optional
+|What message will be shown when clicking on the "More information" link.
+|===
+
+In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
+xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
+
+
+.Add component: Budgets form - Step settings
+|===
+|Field |Type |Description
+
+|Comments blocked
+|Optional
+|Whether you want to enable comments for this phase.
+
+|Voting
+|Required
+|Choose one of the following options depending in the moment of the process: Voting disabled, Voting enabled or Voting finished.
+
+|Show votes
+|Optional
+|Wheter the votes will be shown. We strongly recommend that you only check this option after the voting is finished.
+
+|Announcement
+|Optional
+|A general announcement that'll be visible on the general budgets landing page.
+
+|Budgets landing page
+|Optional
+|What message will be shown in the Budgets landing page when there are multiple budgets.
+
+|More information modal
+|Optional
+|What message will be shown when clicking on the "More information" link.
+|===
+
+== Permissions
+
+Edit permissions
+
+* Vote
+* Comment
+
+== Workflows
+
+One neat feature of the Budgets component is the ability to define your own workflows.
+
+This means that you can define multiple Budgets, for instance one for every Neighberhood or District that a City has, and
+you can also define multiple rullings regarding how people can vote on those Budgets. By default you have these workflows:
+
+* Vote in one: allows participants to vote in any budget, but only in one.
+* Vote in all: allows participants to vote in all budgets.
+* Vote in a random component: allows participants to vote only in one budget, selected randomly.
+
+But this can be extended in your application by a developer, by making your own Workflows. For instance for the
+https://www.decidim.barcelona/processes/PressupostosParticipatius[2020/2021 Participatory Budgeting Process in Decidim Barcelona],
+the people could vote in two districts: the one where they lived and one of their choosing. This was defined in the
+https://github.com/AjuntamentdeBarcelona/decidim-barcelona/blob/743be2a210e8745d2dc443166642b285aed2b356/lib/budgets_workflow_pam2021.rb[decidim-barcelona application itself].
+
+You can read more about Worfklows in https://github.com/decidim/decidim/blob/1ab5cd8fdabef48f5be94ff9c30c6bb3bc9a2f8f/decidim-budgets/README.md#budget-workflows[decidim-budgets README.md].
+
+NOTE: You only want to have a voting without much complications? Like a city-wide vote? Don't worry: if you define only one
+Budget, then people will go there directly when click in the Budgets section.
+
+== Manage budgets
+
+image:components/budgets/manage_budgets.png[Manage budgets table]
+
+This window also lets you see the votes that the various projects have received. (Number of votes) and the total number of votes (*Finished votes* and *Pending votes*, that is, that a participant has started voting but has still not cast their vote).
+
+=== Export all
+
+Allows to export the projects for this budget in different formats.
+
+* Projects as CSV
+* Projects as JSON
+* Projects as Excel
+
+=== New budget form
+
+image:components/budgets/new_budget.png[New budget form]
+
+
+.New budget form
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|What is the title of this budget. For instance, "District A"
+
+|Order position
+|Optional
+|Which order will it have in relation to the other budgets. Having a lower number means a higher priority.
+For instance, if you have two budgets, "Budget a" with weight "10" and "Budget b" with weight "0", then "Budget b" will be first when ordering.
+
+|Description
+|Optional
+|What is the description of this budget.
+
+|Total budget
+|Required
+|What is the total amount of money that people will have for assigning.
+|===
+
+==== Actions
+
+
+.Actions
+|===
+|Icon |Name |Definition
+
+|image:action_preview.png[Preview icon]
+|Preview
+|To see how it's shown in the frontend to participants.
+
+|image:action_list.png[Manage projects icon]
+|xref:_manage_projects[Manage projects]
+|Allows you to manage the projects of a budget.
+
+|image:action_edit.png[Edit icon]
+|Edit
+|Edit form for a budget. It's the same form as "New budget".
+
+|image:action_delete.png[Delete icon]
+|Delete
+|To delete this budget. Only can be done when there aren't any projects.
+|===
+
+==== Manage projects
+
+===== Import proposals to projects
+
+Depending in the normative, you could want to have a first phase where participants
+make proposals, and those proposals are selected (by voting or by technical review),
+then you can import those proposals and convert them to projects.
+
+For this to work:
+
+. The following settings in the proposals component need to be enabled:
+.. Proposal answering enabled
+.. Enable costs on proposal answers
+. A valuator or administrator need to Answer proposals:
+.. Review the proposals
+.. Accept or reject them according to your normative
+.. Add costs to the proposals if were accepted
+. An administrator can Import proposals to projects
+
+image:components/budgets/import_proposals.png[Import proposals to projects]
+
+===== Export all
+
+Allows to export the projects for this budget in different formats.
+
+* Projects as CSV
+* Projects as JSON
+* Projects as Excel
+
+===== New project form
+
+image:components/budgets/new_project.png[New project form for a Budget]
+
+
+.New project form
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|The title for this project.
+
+|Description
+|Required
+|A description of what this project is about.
+
+|Budget amount
+|Required
+|What's the budget amount for this project. How much money will it cost to implement this project?
+
+|Category
+|Optional
+|Which Category has the project. Used for filtering in the budgets list.
+
+|Proposals
+|Optional
+|Choose related proposals for this project. Automatic assingned when importing proposals.
+
+|Add an image gallery
+|Optional
+|Add multiple images illustrating what this project is about, or where it will be implemented.
+|===
+
+===== Actions
+
+
+.Actions
+|===
+|Icon |Name |Definition
+
+|image:action_preview.png[Preview icon]
+|Preview
+|To see how it's shown in the frontend to participants.
+
+|image:action_edit.png[Edit icon]
+|Edit
+|Edit form for a project. It's the same form as "New project".
+
+|image:action_folder.png[Folders icon]
+|Folders
+|For classifying Attachments.
+
+|image:action_attachments.png[Attachments icon]
+|Attachments
+|Documents that are related to the project.
+
+|image:action_delete.png[Delete icon]
+|Delete
+|To delete this project.
+|===
+
+== Results
+
+After the voting step has finished, then an administrator need to:
+
+. Change the Voting configuration for the Budget component to "Voting finished"
+. Go to the Budgets and view the results
+. On the projects that according to the normative have been selected, she'll need to go to each project, edit it and
+then check the "Selected for implementation".
+
+image:components/budgets/results_unselected.png[Unselected projects after voting]
+image:components/budgets/results_select_project.png[Select a project for implementation]
+image:components/budgets/results_selected.png[Selected projects after voting]
+image:components/budgets/results_selected_frontend.png[Selected projects after voting in the frontend]
+
+We strongly recommend that after you have selected projects then you enable the Accountability
+component so participants can see the grade of implementation.
