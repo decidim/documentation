@@ -57,24 +57,27 @@ async function getMetadataFromEnvironment() {
   let baseRef;
 
   const isNetlifyDeployPreview = process.env.CONTEXT === "deploy-preview";
+  const isNetlifyProduction = process.env.CONTEXT === "production";
   const isGithubActionCI = process.env.RUNNER_ENVIRONMENT == "github-hosted";
-  const isProductionEnvironment = process.env.CI === "true";
 
   if (isNetlifyDeployPreview || isGithubActionCI) {
     // We're in CI and we need to change the head of the playbook
+    console.log("ENVIRONMENT IS CI");
     headRef = process.env.HEAD || process.env.GITHUB_HEAD_REF;
     if (process.env.GITHUB_BASE_REF != undefined) {
       baseRef = process.env.GITHUB_BASE_REF
     } else {
       baseRef = baseFromHead(headRef);
     }
-  } else if (isProductionEnvironment) {
+  } else if (isNetlifyProduction) {
     // We're in production so we don't need to change anything
+    console.log("ENVIRONMENT IS PROD");
     headRef = "develop";
     baseRef = "develop";
     return;
   } else {
     // We're in development and we need to change the head
+    console.log("ENVIRONMENT IS DEV");
     headRef = "HEAD";
     const branch = await executeCommand("git branch --show-current");
     baseRef = baseFromHead(branch);
