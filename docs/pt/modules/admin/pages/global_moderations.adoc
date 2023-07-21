@@ -1,0 +1,121 @@
+= Global moderations
+
+The *Global moderations* function allows you to moderate different kind of contents and
+ensure that the dialog in your platform is democratic and constructive. Making
+use of this function, administrators, collaborators and moderators of a space can
+hide the contents/contributions that have been reported, where the complaint is
+deemed appropriate, or delete the complaint.
+
+NOTE: Looking for how to report users? See xref:participants/reported_users.adoc[Reported users].
+
+For instance, in the case of https://www.decidim.barcelona/[Decidim Barcelona],
+the https://www.decidim.barcelona/pages/terms-and-conditions[Terms of Service] says:
+
+> It is not allowed to add any illegal or unauthorized content to the site, such
+> as information with the following features:
+> 
+> * be it false or misleading;
+> * to infringe any law of the City Council or any third party, such as copyright,
+> trademarks or other intellectual and industrial property rights or related rights;
+> * attacking the privacy of a third party, such as publishing personal details
+> of participants, such as name, address, phone number, email, photos or any other
+> personal information;
+> * containing viruses, Trojans, robots or other programs that may harm the website
+> or the City Hall systems, or the website or system of any third party, or which
+> intend to circumvent the technical measures designed for the proper functioning
+> of the platform;
+> * to send spam to users or overload the system;
+> * which has the character of message chain, pyramidal game or random game;
+> * for commercial purposes, such as publishing job offers or ads;
+> * that it is not in keeping with public decency; consequently, content must not
+> incite hatred, discriminate, threaten, provoke, have no sexual, violent, coarse or
+> offensive meaning or character;
+> * to infringe the law or applicable regulation;
+> * to campaign by promoting mass voting for other proposals not related to the
+> process and the framework for discussion, and
+> * to create multiple users by pretending to be different people (astroturfing).
+
+Anyone can propose a moderation in Decidim, through the "Flag" icon in the participant
+profile. After a participant has clicked in this action then she needs to provide a
+reason why she's making this report:
+
+* Contains clickbait, advertising, scams or script bots.
+* Contains racism, sexism, slurs, personal attacks, death threats, suicide requests or any form of hate speech.
+* Contains illegal activity, suicide threats, personal information, or something else you think doesn't belong on [This organization].
+
+Participants can also add extra information regarding their report.
+
+image:moderation_modal.png[Give reason for moderation modal]
+
+After a participant has reported a content, it'll be shown in two sections of the
+administration panel:
+
+* Global moderations panel
+* Participatory space moderation panel
+
+To go to the Global moderations panel, you need to:
+
+. Sign in as administrator
+. Go to administration panel
+. Click in Global moderations in the sidebar
+
+There you'll find first all the unprocessed reports if there's any:
+
+image:global_moderations_list_unhidden.png[Show all the moderated content list]
+
+It's also possible to filter by the type of content that was moderated and the
+state of the reported content (if it was hidden or not).
+
+* *Id*: unique identificator of the reported content.
+* *Type*: which kind of content it was reported, for instance a *Proposal* or a *Comment*.
+* *Participatory Space*: which space this content belongs to.
+* *Count*: Number of times it has been reported by different users.
+* *Reported content URL*: link for seeing the content reported and see the context of the complaint.
+* *Reports*: why it has been reported. If the participant that made the report has given extra
+information it's possible to see it by hovering it.
+* *Creation date*: when it was originally reported.
+* *Actions*: you can *Expand*, *Unreport* or *Hide*.
+
+== Actions (when the report wasn't accepted yet)
+
+|===
+|Icon |Name |Definition
+
+|image:action_expand.png[Expand icon]
+|Expand
+|To see the full metadata of the reported content.
+
+|image:action_hide.png[Hide icon]
+|Hide
+|Allows an admin or moderator to hide this content (accepting the report).
+
+|image:action_unreport.png[Unreport icon]
+|Unreport
+|Allows an admin or moderator to keep showing this content (rejecting the report).
+|===
+
+== Actions (after the content is hidden)
+
+|===
+|Icon |Name |Definition
+
+|image:action_expand.png[Expand icon]
+|Expand
+|To see the full metadata of the reported content.
+
+|image:action_unhide.png[Unhide icon]
+|Unhide
+|Allows an admin or moderator to unhide this content (showing it publicly again).
+|===
+
+If the report was "Unreported" and it was a mistake, meaning that for instance the
+content was spam but it was a mistake not accepting the report, then you'll need
+to find that again in the public view and report it yourself so you can moderate it.
+
+== Expand
+
+To see all the metadata of a report, you can see it Expanded.
+
+image:global_moderations_report01.png[Expanded moderation 01]
+
+image:global_moderations_report02.png[Expanded moderation 02]
