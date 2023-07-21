@@ -1,0 +1,45 @@
+= Media links
+
+Conferences can have a section called "Media and links". It shows a list of media files and links that are associated to the conference.
+
+The media files are the files from the xref:admin:spaces/conferences/attachments.adoc[attachments] sections.
+The media links are defined in a section in the admin panel of the conference.
+
+image:spaces/conferences/media_links_frontend.png[Conferences media links (frontend)]
+
+== Create a new media link
+
+image:spaces/conferences/media_links_backend.png[Conferences media links]
+
+For creating a new media link of a conference:
+
+. Sign in as administrator
+. Go to the conferences section in the sidebar
+. Click on the conference Edit action
+. Click on the "Media links" link in the sidebar
+. Click on the "New Media Link" button
+. Fill the form
+
+image:spaces/conferences/new_media_link.png[Create a new conferences media link]
+
+
+.New media link form
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|The title of the link
+
+|Link
+|Required
+|URL of the link
+
+|Date
+|Required
+|Published date of the link
+
+|Weight
+|Optional
+|Which order will it have in relation to the other links. Having a lower number means a higher priority. For instance, if you have two links, "Link a" with weight "10" and "Link b" with weight "0", then "Link b" will be first when ordering.
+|===
