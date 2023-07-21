@@ -74,7 +74,6 @@ async function getMetadataFromEnvironment() {
     console.log("ENVIRONMENT IS PROD");
     headRef = "develop";
     baseRef = "develop";
-    return;
   } else {
     // We're in development and we need to change the head
     console.log("ENVIRONMENT IS DEV");
