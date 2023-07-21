@@ -1,0 +1,23 @@
+= Help sections
+
+The first time a visitor goes to any Space page she'll see an information box about what's this Space about.
+
+This is how the information box is shown to participants and visitors:
+
+image:help_sections_frontend.png[Help sections: frontend]
+
+They can hide this box by clicking in the close button [X]. This gets remembered by the application. They can open this box again by clicking in [Help: ?].
+
+image:help_sections_frontend_hide.png[Help sections: hide]
+
+As this is something that depends on your given installation, an administrator can customize these *Help sections*, adapting them to your needs.
+
+image:help_sections_backend.png[Help sections: backend]
+
+== Disable
+
+You can disable these information boxes by leaving the contents all empty for every language:
+
+image:help_sections_disable_backend.png[Disable help section in admin]
+
+image:help_sections_disable_frontend.png[Disabled help section]
