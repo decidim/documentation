@@ -1,0 +1,52 @@
+= Components
+
+include::partial$components_list.adoc[]
+
+To configure components, click on *Components* from the space submenu. A list will appear showing the components
+that have already been configured for the space.
+
+image::spaces/components.png[Components of space]
+
+To configure a new component, click on *Add component* from the upper right part of the screen and select the type of
+component you wish to configure from the drop-down menu.
+
+image::spaces/components_new_dropdown.png[Add a component in a space]
+
+== Actions
+
+|===
+|Icon |Name |Definition
+
+|image:action_manage.png[Manage icon]
+|Manage
+|To manage all the resources inside of a component. For instance, all the Proposals of a Proposal component, the Meetings
+in a Meeting component, etc.
+
+|image:action_publish.png[Publish icon]
+|Publish
+|To publish a component. This means that the component will be visible to the public.
+
+|image:action_unpublish.png[Unpublish icon]
+|Unpublish
+|To unpublish a component. This means that the component will be invisible to the public.
+
+|image:action_configure.png[Configure icon]
+|Configure
+|To configure a component with the specific rules. Depends in the component type. For instance, in the case of Meetings:
+are comments enabled, participants can create meetings, etc.
+
+|image:action_permissions.png[Permissions icon]
+|Permissions
+|To configure which xref:customize:authorizations.adoc[Authorization] will be necessary to make certain actions in
+this component. For instance, in the case of Proposals, which Verification will be necessary to create a new proposal or
+to give supports.
+
+|image:action_share.png[Share icon]
+|Share
+|To share privately before publishing this component. Useful for reviewing with other people inside of your organization.
+
+|image:action_delete.png[Delete icon]
+|Delete
+|To delete this component. If there are contents most of the components will not let you delete them so it doesn't break
+relations with other resources. In those cases it's recommended to just unpublish the component.
+|===
