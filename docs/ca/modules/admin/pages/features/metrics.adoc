@@ -1,0 +1,15 @@
+= Metrics
+
+NOTE: Looking for how to enable this feature technically? Go to xref:develop:metrics.adoc[Metrics in Developers guide]
+
+With Metrics participants can see the evolution in time of some resources, such as Proposals, Supports, Endorsements, Followers, Participants, Accepted propsoals, Comments, etc. You can see a real world example of this in https://meta.decidim.org/processes/roadmap/all-metrics[Metadecidim Roadmap process].
+
+For this to work it needs to be first xref:develop:metrics.adoc[configured technically] and also enabled by the setting in the participatory space (`Show metrics` checkbox).
+
+Then this section will be visible in the space landing page.
+
+image:features/metrics/example.png[Example of metrics]
+
+By clicking in "Show all metrics", visitors can see other metrics and download this data in CSV format.
+
+image:features/metrics/page.png[Metrics page]
