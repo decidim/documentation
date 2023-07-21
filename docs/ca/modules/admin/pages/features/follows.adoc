@@ -1,0 +1,27 @@
+= Follows
+
+Most of the contents in Decidim allows to be followed. This means that you'll receive xref:features/notifications.adoc[notifications]
+of the activity being made by the thing you're following.
+
+You can control these notifications in the xref:features/my_account/notifications_settings.adoc[settings of your account].
+
+The activity of the things that you're following is visible in your profile timeline.
+
+For following a thing:
+
+. Navigate to whatever you want to follow.
+. Click in the "Follow" button.
+image:button_follow.png[Follow button]
+. You'll see the "Follow" button disappear and the "Stop following" button appear.
+
+To unfollow a thing:
+
+. Navigate to whatever you want to unfollow.
+. Click in the "Stop following" button.
+image:button_stop_following.png[Stop following button]
+. You'll see the "Stop following" button disappear and the "Follow" button appear.
+
+Administrators by default follow all the new spaces that are created in the Decidim platform.
+
+A participant can also follow another participants. This is public and it's visible in the profile sections
+follows and followers.

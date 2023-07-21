@@ -1,0 +1,183 @@
+= Components
+
+:page-partial:
+
+*Components* are participatory mechanisms that allow interactions among the platform Participants within each of the Participatory Spaces.
+
+== Proposals
+
+*Proposals* are Decidim's most important component. They can be defined as the minimum decision unit.
+
+Proposals can be made by any of the following *types of creators*:
+
+* by the *official organisation* managing the platform
+* by registered *individual participants*
+* by a *group* of registered participants
+* from a *meeting* as a result of a discussion or collective deliberation
+
+Once a proposal has been published, it can be *moderated*, *amended* or *withdrawn* by its author(s).
+
+Proposals can be *accepted*, *rejected* or kept in an *evaluating* state. Proposals can also be imported to a new phase, so they can be re-written or elaborated in different stages.
+
+Other features associated with proposals include:
+
+* *Proposal creation wizard*: While a proposal is being created, the participant is accompanied through the process, which is divided into different steps, with contextual help and previews before the proposal is published.
+* *Modification and withdrawal of proposals*: a proposal’s author can modify and/or withdraw it before the support stage opens.
+* *Version control*: this makes it possible to keep a record of all the changes made to a proposal, as well as code-generation to verify the proposal’s integrity.
+* *Detecting similarities*: This allows anyone making a new proposal to find similar ones previously made on the platform, thereby avoiding duplications.
+* *Connections between proposals*: proposals made can be connected to one another using links in the comments section, showing related proposals as cards and giving notifications on the existence of a new connection.
+* *Endorsement of proposals*: participants and collectives can endorse proposals and such public endorsement will be shown within the proposal. Followers of the endorsers will be notified that the followed endorsed the proposal.
+* *Amendments*: any participant can edit a proposal’s text and a sub-proposal will be created in Amendment Mode (as Pull Request in Github). This sub-proposal can gather endorsements and supports. Besides, the proposal’s author can accept or reject the amendment (or sub-proposal). Where a sub-proposal is rejected, its author can convert it into an official proposal.
+* *Collaborative draft for proposals*: Decidim permits collaboration and co-creation over proposals. It incorporates the following features:
+** Creating rough drafts with numerous authors.
+** Listing of collaborative drafts
+** Comments in drafts
+** Asking for help from and accepting the help of other collaborators
+
+== Endorsements
+
+include::admin:partial$development.adoc[]
+
+Participants can endorse proposals. Such endorsements can be interpreted as votes, signatures or any other format that demonstrates a positive agreement in accordance with the political will itself.
+Participants can issue a single endorsement for each proposal they wish. The number of endorsements can be limited for each participant.
+There is no limit to the number of proposals that can be endorsed.
+
+If the endorsement is a vote, it is possible to configure from the administration panel the *display settings for the voting results*, either during or solely after the voting period.
+
+There is a *special form used to vote for participatory budgets* which allows participants to vote by "spending" an amount equivalent to the budget in question among the proposed projects. The number of votes is limited here by the selected projects’ accumulated spending amount.
+
+== Results
+
+The *results* component is used to turn proposals into results and give official responses to them.
+It is possible to merge various proposals into a single result or to create different results related to the same original proposal.
+
+Results gather information about the original proposal(s), like the meetings where they were created, discussed and debated and the endorsements received.
+
+== Debates
+
+Discussions and debates can be opened on questions and specific issues established by administrators or participants.
+
+== Surveys
+
+The *surveys* component can be used to design and publish surveys and to display and download their results.
+
+* *Survey configuration tool*: allows administrators to create questions and answers (open, test types, multiple selection etc.) and launch the survey, as well as download the responses in CSV format.
+* *Survey interface for participants*: allows participants to respond to survey questions.
+
+== Sortitions
+
+The *sortition* component allows to select a number of proposals (e.g. candidates for a jury) with random, yet reproducible, procedures that guarantees non-biased and uniform distributions.
+
+== Informative pages
+
+The *pages* component is used to create informative pages with rich text formatting, embedded pictures and videos.
+
+== Blogs
+
+The *blog* component makes possible the creation of posts or news associated with a participatory space, and to navigate them chronologically.
+
+*Comments associated* with blog entries will be treated like the platform’s other comments, as described below.
+
+== Newsletter
+
+The *newsletter* component makes possible to send emails to everyone registered in the platform or, more selectively, to those who participate in a specific space who have agreed, under the terms and conditions of use, to receive this information newsletter email. Personalised emails are sent out addressed directly to the name of the user in the language chosen by the user by default.
+
+Participants will automatically and directly be able to *unsubscribe* through the email itself by clicking on a link in it and it will also be possible to *track the number of visits* generated by the newsletter.
+
+== Meetings
+
+The *meeting* component offers organizations and participants the opportunity to:
+
+* convene meetings, defining its structure and content
+* *categorise* the meeting within a space.
+* create *proposals associated with meetings*
+* *publish* minutes
+* upload *photos* of the meeting
+
+Meetings relating to a participatory space (a specific process or an assembly) can be shown on a *map* and be *ordered by date or category*. Besides, all the meetings can be shown in *calendar mode*, with the possibility of exporting them to a mobile phone calendar or other apps.
+
+Some of the meeting component’s advanced features include:
+
+* *Registration and attendance system*:
+** This allows to manage the *type of registration* (open and automatic, closed and accessible only to certain types of participants, etc.), to establish the **number of places **available for attendees, to reserve a place, to do *manual registrations*, sent out *Invitations*, to define the *conditions* that need to be accepted in order to be able to attend the meeting (e.g. image rights release), and *registering the attendance* of participants.
+** It allows participants *to register* for a meeting, request *a family reconciliation service* (playroom, childcare space) and to obtain an *accreditation code* for attending at a meeting.
+** Those registered who have attended a meeting will have *special access* enabling them to evaluate the meeting or make comments, etc.
+** Participants or administrators will be able to receive *notifications* on registration-period openings, the number of places remaining for registrations, reminders of meetings, and the publication of minutes.
+* *Managing agendas*: allows to define the duration of meetings, to create agenda’s items and sub-items, title, content, and estimated duration. Participants can propose agenda items.
+* System for *drafting, publishing and validating meeting minutes* [IMPORTANT NOTE:This is currently implemented differently]:
+** Minutes can be uploaded in video, audio or text format.
+** Minutes in text mode are associated with a *collaborative writing board* integrated into Decidim.
+** Minutes go through 4 *stages of preparation*: 1. Collaborative writing during the meeting; 2. Preparing the official draft of the minutes; 3. Draft-amendment stage; 4. Publication and final validation of the minutes.
+** Minutes can be *commented on* using the comments component.
+** *Accompanying documents* may also be added to the minutes.
+* *Auto-convening*: verified participants will be able to convene meetings directly through the platform , with support from a certain number of other participants, the meeting will be publicly activated and convening participants will have access to the administration panel [IMPORTANT: not implemented yet]
+* *Displaying and exporting meetings*: meetings can be displayed in map mode (for spaces or generally on the platform) or in calendar mode, and can be exported to agenda and calendar managers (in iCalendar format).
+
+== Search engine
+
+*The search engine* allows participants to perform searches across all of the platform’s indexable content, both generally and specifically, by searching within a specific participatory process or inside its components (proposals, results, etc.), through advanced searches.
+
+== Secondary components
+
+There are other components that only exist on top of basic components are. These components are:
+
+=== Comments
+
+The *comments* component enables participants to take part on a deliberative process on an issue or proposal.
+Participants can respond to them, endorse them and receive notifications about responses.
+Comments can be *ranked* in chronological order or by number of votes in favour.
+
+=== Participatory texts
+
+Participatory texts are defined as an ordered collection of proposals that make up a document with complete text. Participation in the text stems from interaction with the proposals that form it. This component basically allows three operations:
+
+* *Breaking down a text document into ordered proposals* from a document in ODT, XDOC, MarkDown and HTML formats. If the text is structured in sections and subsections, ordered proposals will be created from the lower level subsection; if the text is not structured, a proposal will be created for each paragraph of text. The interface allows proposals to be re-edited, merged, separated, given titles, etc.
+* *Composition of proposals in a unified text*: based on a series of proposals, these may be ordered and generate a unified and downloadable text.
+* *Viewing and interacting* with documents composed of proposals: A collection of proposals will be shown as a unified text and may be amended or comments can be added in the margin.
+
+=== Accountability
+
+The *accountability* component works like a project management system built into the platform. . It offers the possibility of:
+
+* subdividing results into projects or sub-projects
+* defining and applying progress in implementation statuses (0% to 100% implemented) around their implementation
+* displaying the extent of the results’ implementation grouped by categories and scopes
+
+Results, projects and statuses can be updated through a CVS, or manually by the administration interface.
+
+=== Conferences
+
+The *conference* component allows an organization to join up a series predefined meetings (chats, workshops etc.) related to a participatory space.
+
+Configuration settings include:
+
+* Conference-page generator, which enables the creation of an *internal website* with information about the event.
+* The option to generate an *interactive and downloadable programme* on the event (where there are guest speakers, it will include their name, position, organisation, a small biography and links to other websites).
+* Email *invitations*.
+* Registration system
+* *Automatic diploma and certificates of attendance creation* for those who request it, through a support panel that an administrator can verify.
+* Links to the event *video and materials* platforms in the programme and documents.
+* Automatic links to digital-media websites covering the event.
+* The ability to following events through *social networks* (e.g. by incorporating a Twitter feed).
+
+== Participatory Spaces and Components
+
+*Participatory Spaces* and *Components* can be combined in different ways.
+For example, the various phases of a Participatory Budgeting Process (Participatory Space) can combine *Components* like this:
+
+1. At an early phase public *Meetings* can be opened for citizens to analyze different needs classified by districts.
+1. In turn these *Meetings* can lead to the design of a *Survey*.
+1. The *Survey* results can then be used to define a set of categories for projects to be proposed.
+1. The *Proposal* component can then be activated for Participants to create and publish their projects as solutions to the identified needs.
+1. These *Proposals* can then be commented and, after two weeks of deliberation, *voting* can be activated to select among the projects with a budget-expenditure system.
+1. Participants can then be called to a public *Meeting* to evaluate the results.
+1. An assessment *Survey* can be launched afterwards for those who could not attend the *Meeting*.
+1. Finally, the *Accountability* component may be activated to monitor the degree of execution of the selected projects, and people can comment on it.
+
+== Displaying components: Cards
+
+Component items have their individual page but are also displayed as *cards* throughout the platform.
+
+[#card-anatomy-fig]
+._Decidim's proposal card anatomy._
+image::card-anatomy.png[]

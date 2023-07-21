@@ -1,0 +1,145 @@
+= Blog
+
+The Blog component allows people to read multiple posts ordered by date.
+
+Some examples of where this component was used:
+
+* https://meta.decidim.org/processes/roadmap/f/247/[News in Propose new functionalities for Decidim software] in https://meta.decidim.org[Metadecidim]
+
+image:components/blog/example01.png[Example of blog posts list]
+image:components/blog/example02.png[Example of a blog post]
+
+To configure the Blog component:
+
+. Sign in as admin
+. Go to admin panel
+. In the main sidebar, click in the button for the space that you want to configure the component for.
+For instance, it could be "Processes", "Assemblies" or "Conferences".
+. Go to components
+. Click on "Add component" button
+. Click on "Blog"
+. Fill the xref:_add_component[Add component] form
+
+== Add component
+
+image:components/blog/component.png[Add component form]
+
+
+.Add component: Blog form
+|===
+|Field |Type |Description
+
+|Name
+|Required
+|What is the title of this component. For instance, "Blogs"
+
+|Order position
+|Optional
+|Which order will it have in relation to the other blogs. Having a lower number means a higher priority.
+For instance, if you have two blogs, "Blog a" with weight "10" and "Blog b" with weight "0", then "Blog b" will be first when ordering.
+|===
+
+
+.Add component: Blog form - Global settings
+|===
+|Field |Type |Description
+
+|Announcement
+|Optional
+|A general announcement that'll be visible on the general blogs landing page.
+
+|Comments enabled
+|Optional
+|Whether you want to have comments in the meetings.
+
+|Comments max length
+|Optional
+|What is the characters limit that participants will have when making comments. Leave 0 for default value.
+|===
+
+In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
+xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
+
+
+.Add component: Blogs form - Step settings
+|===
+|Field |Type |Description
+
+|Announcement
+|Optional
+|A general announcement that'll be visible on the general blog landing page.
+
+|Comments blocked
+|Optional
+|Whether you want to enable comments creation for this phase.
+
+|Endorsements enabled
+|Optional
+|Whether you want to enable endorsements for this phase.
+
+|Endorsements blocked
+|Optional
+|Whether you want to disable adding new endorsements for this phase.
+|===
+
+== Permissions
+
+An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
+certain actions in the blogs:
+
+* Comment
+* Endorse
+
+== Manage posts
+
+image:components/blog/manage_posts.png[Manage posts table]
+
+=== New post form
+
+image:components/blog/new_post.png[New post form]
+
+
+.New post form
+|===
+|Field |Type |Description
+
+|Create post as
+|Required
+|Participant account or user group that will be the author of the post.
+
+|Title
+|Required
+|What is the title of this post.
+
+|Body
+|Required
+|What is the description of this post.
+|===
+
+==== Actions
+
+
+.Actions
+|===
+|Icon |Name |Definition
+
+|image:action_edit.png[Edit icon]
+|Edit
+|Edit form for this post. It's the same form as "New post".
+
+|image:action_folder.png[Folder icon]
+|Folder
+|For classifying Attachments.
+
+|image:action_attachments.png[Attachments icon]
+|Attachments
+|Documents that are related to the post.
+
+|image:action_permissions.png[Permissions icon]
+|Permissions
+|To handle the permissions of this post, depending on the verification a participant has.
+
+|image:action_delete.png[Delete icon]
+|Delete
+|To delete this post.
+|===
