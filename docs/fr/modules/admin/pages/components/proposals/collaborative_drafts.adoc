@@ -1,0 +1,70 @@
+= Collaborative draft
+
+With the collaborative draft feature participants can make a proposal with multiple authors.
+
+It's useful to propose improvements or corrections.
+
+It has similarities with xref:components/proposals/amendments.adoc[Amendments] but the main difference is that with collaborative
+drafts there is a need to trust other authors, as they can make any change to the original proposal without approval by the
+original author, although the original author can decide if she promotes the collaborative draft as a proposal.
+
+image:components/proposals/collaborative_drafts/collaborative_draft_request_access.png[Collaborative draft with request access button]
+
+To configure "Collaborative Drafts" in Proposals component:
+
+. Sign in as admin
+. Go to admin panel
+. In the main sidebar, click in the button for the space that you want to configure the component for.
+For instance, it could be "Processes", "Assemblies", or "Conferences"
+. Go to components
+. Click on "Add component" button
+. Click on "Proposals"
+. Check the "Collaborative drafts enabled" setting
+. Save the component
+
+== How it works
+
+. A participant (Alice) wants to create a collaborative draft. For that, she goes to the proposals list page.
+. Alice clicks in the "Access collaborative drafts" button
+image:components/proposals/collaborative_drafts/proposals_list01.png[]
+. Alice clicks in "New collaborative draft" button
+image:components/proposals/collaborative_drafts/list_empty.png[]
+. Alice fills the form and submits it
+image:components/proposals/collaborative_drafts/create_form.png[]
+. Once the collaborative draft is created, Alice can: edit, withdraw or publish the collaborative draft and approve or
+reject collaboration requests
+image:components/proposals/collaborative_drafts/collaborative_draft.png[]
+. Another participant (Bob) has seen the collaborative draft and wants to make some changes
+image:components/proposals/collaborative_drafts/collaborative_draft_request_access.png[]
+. Bob clicks in the "Request access" button
+image:components/proposals/collaborative_drafts/access_requested.png[]
+. Alice receives the notification
+image:components/proposals/collaborative_drafts/notification.png[]
+. Alice goes to the collaborative draft. There she can accept or reject the collaboration request
+image:components/proposals/collaborative_drafts/author_sidebar.png[]
+. Alice approves the collaboration request. Once a request is approved it can't be rejected
+. Now the collaborative draft has multiple authors
+image:components/proposals/collaborative_drafts/multiple_authors.png[]
+. Bob can edit the collaborative draft by clicking in the "Edit collaborative draft" button
+image:components/proposals/collaborative_drafts/edit_collaborative_draft.png[]
+image:components/proposals/collaborative_drafts/edit_form.png[]
+. Once the collabrative draft is edited, then it's possible to see the old versions and its changes
+image:components/proposals/collaborative_drafts/collaborative_draft_edited.png[]
+image:components/proposals/collaborative_drafts/collaborative_draft_edited_versions.png[]
+image:components/proposals/collaborative_drafts/collaborative_draft_edited_versions_show_v2_01.png[]
+image:components/proposals/collaborative_drafts/collaborative_draft_edited_versions_show_v2_02.png[]
+. Once Alice is satisfied with the collaborative draft, she can publish it by click in the "Publish" button
+image:components/proposals/collaborative_drafts/publish_modal.png[]
+. When it's published it becomes a proposal
+image:components/proposals/collaborative_drafts/proposal.png[]
+image:components/proposals/collaborative_drafts/proposals_list02.png[]
+. And the collaborative draft is still visible although it can't be edited anymore
+image:components/proposals/collaborative_drafts/collaborative_draft_published.png[]
+
+== Important aspects
+
+- A collaborative draft can has any number of authors.
+- Only the original author can approve or reject the collaboration requests.
+- Only the original author can publish the collaborative draft.
+- Only the original author can withdraw the collaborative draft.
+- Once a collaboration request is approved, it can't be rejected.
