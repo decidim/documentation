@@ -33,62 +33,62 @@ To configure the Budgets component:
 
 . Sign in as admin
 . Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies" or "Conferences".
-. Go to components
-. Click on "Add component" button
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+Par exemple, il peut s'agir de "Concertations", d'"Assemblées" ou de "Conférences".
+. Aller dans les fonctionnalités
+. Cliquez sur le bouton "Ajouter une fonctionnalité"
 . Click on "Budgets"
-. Fill the xref:_add_component[Add component] form
+. Remplissez le formulaire xref:_add_component[Ajouter une fonctionnalité]
 
-== Add component
+== Ajouter une fonctionnalité
 
 image:components/budgets/component.png[Add component form]
 
 
 .Add component: Budgets form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Name
-|Required
-|What is the title of this component. For instance, "Budgets"
+|Nom
+|Obligatoire
+|Quel est le titre de cette fonctionnalité. For instance, "Budgets"
 
-|Order position
-|Optional
-|Which order will it have in relation to the other budgets. Having a lower number means a higher priority.
+|Rang d'affichage
+|Facultatif
+|Which order will it have in relation to the other budgets. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
 For instance, if you have two budgets, "Budget a" with weight "10" and "Budget b" with weight "0", then "Budget b" will be first when ordering.
 |===
 
 
 .Add component: Budgets form - Global settings
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Scopes enabled
-|Optional
+|Facultatif
 |Check if you want to have Scopes filtering in this component.
 
-|Scope
-|Optional
+|Secteur
+|Facultatif
 |Which xref:admin:scopes.adoc[Scope] does this component belongs to.
 
-|Global scope
-|Optional
+|Portée générale
+|Facultatif
 |
 
 |xref:_workflows[Workflow]
-|Required
+|Obligatoire
 |How the participants can vote if there are multiple budget sets. You can define your own xref:_workflows[Workflow] or use one of the availables.
 
-|Projects per page
-|Required
-|How many projects are displayed per page.
+|Projets par page
+|Obligatoire
+|Combien de projets sont affichés par page.
 
-|Enable rule: Minimum budget percentage
+|Activer la règle : Pourcentage de budget minimum
 |Optional, but incompatible with "Minimum number of projects to be voted on" and "Selected projects with minimum and maximum number of projects to be voted on"
 |Allows to define a "Vote threshold percent", a percent of the total budget that participants must reach to be able to vote.
 
-|Enable rule: Minimum number of projects to be voted on
+|Activer la règle : Nombre minimum de projets à voter
 |Optional, but incompatible with "Minimum budget percentage" and "Selected projects with minimum and maximum number of projects to be voted on"
 |Allows to define a "Minimum number of projects to vote", a number of projects that participants must reach to be able to vote.
 
@@ -97,28 +97,28 @@ For instance, if you have two budgets, "Budget a" with weight "10" and "Budget b
 |Allows to define a "Minimum amount of projects to be selected" and a "Maximum amount of projects to be selected", the number of projects
 that participants will need to vote as a minimum and maximum.
 
-|Comments enabled
-|Optional
-|Whether you want to have comments in the meetings.
+|Commentaires activés
+|Facultatif
+|Si vous voulez avoir des commentaires dans les rencontres.
 
-|Comments max length
-|Optional
-|What is the characters limit that participants will have when making comments. Leave 0 for default value.
+|Longueur maximale des commentaires
+|Facultatif
+|Quelle est la limite de caractères que les participants auront quand ils feront des commentaires. Laisser 0 pour la valeur par défaut.
 
 |Actions permissions can be set for each project
-|Optional
+|Facultatif
 |Whether you want to be able to set permissions for every one of the projects. Most of the time you will want to leave this option disabled.
 
-|Announcement
-|Optional
+|Annonce
+|Facultatif
 |A general announcement that'll be visible on the general budgets landing page.
 
 |Budgets landing page
-|Optional
+|Facultatif
 |What message will be shown in the Budgets landing page when there are multiple budgets.
 
 |More information modal
-|Optional
+|Facultatif
 |What message will be shown when clicking on the "More information" link.
 |===
 
@@ -128,39 +128,39 @@ xref:admin:spaces/processes.adoc[Participatory Processes], then you can also def
 
 .Add component: Budgets form - Step settings
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Comments blocked
-|Optional
+|Commentaires désactivés
+|Facultatif
 |Whether you want to enable comments for this phase.
 
 |Voting
-|Required
+|Obligatoire
 |Choose one of the following options depending in the moment of the process: Voting disabled, Voting enabled or Voting finished.
 
 |Show votes
-|Optional
+|Facultatif
 |Wheter the votes will be shown. We strongly recommend that you only check this option after the voting is finished.
 
-|Announcement
-|Optional
+|Annonce
+|Facultatif
 |A general announcement that'll be visible on the general budgets landing page.
 
 |Budgets landing page
-|Optional
+|Facultatif
 |What message will be shown in the Budgets landing page when there are multiple budgets.
 
 |More information modal
-|Optional
+|Facultatif
 |What message will be shown when clicking on the "More information" link.
 |===
 
-== Permissions
+== Autorisations
 
 Edit permissions
 
 * Vote
-* Comment
+* Commenter
 
 == Workflows
 
@@ -204,23 +204,23 @@ image:components/budgets/new_budget.png[New budget form]
 
 .New budget form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Title
-|Required
+|Titre
+|Obligatoire
 |What is the title of this budget. For instance, "District A"
 
-|Order position
-|Optional
-|Which order will it have in relation to the other budgets. Having a lower number means a higher priority.
+|Rang d'affichage
+|Facultatif
+|Which order will it have in relation to the other budgets. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
 For instance, if you have two budgets, "Budget a" with weight "10" and "Budget b" with weight "0", then "Budget b" will be first when ordering.
 
 |Description
-|Optional
+|Facultatif
 |What is the description of this budget.
 
 |Total budget
-|Required
+|Obligatoire
 |What is the total amount of money that people will have for assigning.
 |===
 
@@ -229,45 +229,43 @@ For instance, if you have two budgets, "Budget a" with weight "10" and "Budget b
 
 .Actions
 |===
-|Icon |Name |Definition
+|Icône |Nom |Definition
 
 |image:action_preview.png[Preview icon]
 |Preview
-|To see how it's shown in the frontend to participants.
+|Pour voir comment il est montré dans le frontend aux participants.
 
-|image:action_list.png[Manage projects icon]
-|xref:_manage_projects[Manage projects]
-|Allows you to manage the projects of a budget.
+|image:action_list.png[Gérer l'icône des projets]
+|xref:_manage_projects[Gérer les projets]
+|Vous permet de gérer les projets d'un budget.
 
 |image:action_edit.png[Edit icon]
 |Edit
-|Edit form for a budget. It's the same form as "New budget".
+|Modifier un budget. C'est le même formulaire que "Nouveau budget".
 
 |image:action_delete.png[Delete icon]
 |Delete
-|To delete this budget. Only can be done when there aren't any projects.
+|Pour supprimer le budget. Peut être fait unquement quand il n'y a pas de projets dans ce budget.
 |===
 
-==== Manage projects
+==== Gérer les projets
 
-===== Import proposals to projects
+===== Importer des propositions dans des projets
 
-Depending in the normative, you could want to have a first phase where participants
-make proposals, and those proposals are selected (by voting or by technical review),
-then you can import those proposals and convert them to projects.
+Selon votre concertation, vous pourriez vouloir avoir une première étape pendant laquelle les participants créent des propositions, puis ces propositions sont sélectionnés (par le vote ou par une revue technique), enfin vous pouvez importer ces propositions et les convertir en projets.
 
-For this to work:
+Pour que cela fonctionne :
 
-. The following settings in the proposals component need to be enabled:
-.. Proposal answering enabled
-.. Enable costs on proposal answers
-. A valuator or administrator need to Answer proposals:
-.. Review the proposals
-.. Accept or reject them according to your normative
-.. Add costs to the proposals if were accepted
-. An administrator can Import proposals to projects
+. Les paramètres suivants doivent être activés dans la fonctionnalité de propositions :
+.. Réponses aux propositions activées
+.. Activer les coûts sur les réponses aux propositions
+. Un évaluateur ou un administrateur doit répondre aux propositions :
+.. Relire les propositions
+.. Acceptez ou rejetez les en fonction de votre règlement
+.. Ajouter des coûts aux propositions si elles ont été acceptées
+. Un administrateur peut importer des propositions vers des projets
 
-image:components/budgets/import_proposals.png[Import proposals to projects]
+image:components/budgets/import_proposals.png[Importer des propositions dans les projets]
 
 ===== Export all
 
@@ -277,38 +275,38 @@ Allows to export the projects for this budget in different formats.
 * Projects as JSON
 * Projects as Excel
 
-===== New project form
+===== Formulaire de création d'un projet
 
-image:components/budgets/new_project.png[New project form for a Budget]
+image:components/budgets/new_project.png[Nouveau formulaire de projet pour un budget]
 
 
-.New project form
+.Formulaire de création d'un projet
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Title
-|Required
-|The title for this project.
+|Titre
+|Obligatoire
+|Le titre pour ce projet.
 
 |Description
-|Required
-|A description of what this project is about.
+|Obligatoire
+|Une description de l'objet de ce projet.
 
-|Budget amount
-|Required
-|What's the budget amount for this project. How much money will it cost to implement this project?
+|Montant du budget
+|Obligatoire
+|Le montant du budget pour ce projet. Combien coûte la mise en œuvre de ce projet ?
 
-|Category
-|Optional
-|Which Category has the project. Used for filtering in the budgets list.
+|Catégorie
+|Facultatif
+|La catégorie du projet. Utilisé pour les filtres dans la liste des projets.
 
-|Proposals
-|Optional
-|Choose related proposals for this project. Automatic assingned when importing proposals.
+|Propositions
+|Facultatif
+|Choisissez des propositions liées à ce projet. Auto-assignation lors de l'importation des propositions.
 
-|Add an image gallery
-|Optional
-|Add multiple images illustrating what this project is about, or where it will be implemented.
+|Ajouter une galerie d'images
+|Facultatif
+|Ajoutez plusieurs images illustrant en quoi consiste ce projet, ou où il sera implémenté.
 |===
 
 ===== Actions
@@ -316,27 +314,27 @@ image:components/budgets/new_project.png[New project form for a Budget]
 
 .Actions
 |===
-|Icon |Name |Definition
+|Icône |Nom |Definition
 
 |image:action_preview.png[Preview icon]
 |Preview
-|To see how it's shown in the frontend to participants.
+|Pour voir comment il est montré dans le frontend aux participants.
 
 |image:action_edit.png[Edit icon]
 |Edit
-|Edit form for a project. It's the same form as "New project".
+|Modifier un projet. C'est le même formulaire que "Nouveau projet".
 
-|image:action_folder.png[Folders icon]
-|Folders
+|image:action_folder.png[Icône des dossiers]
+|Dossiers
 |For classifying Attachments.
 
 |image:action_attachments.png[Attachments icon]
 |Attachments
-|Documents that are related to the project.
+|Documents liés au projet.
 
 |image:action_delete.png[Delete icon]
 |Delete
-|To delete this project.
+|Pour supprimer le projet.
 |===
 
 == Results
