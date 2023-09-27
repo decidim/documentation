@@ -21,14 +21,14 @@ image:spaces/private_participants_new_form.png[New private participant form]
 
 .New participatory space private user form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Name
-|Required
+|Nom
+|Obligatoire
 |What is the name of the new participant.
 
 |Email
-|Required
+|Obligatoire
 |What is the email of the new participant.
 |===
 
@@ -52,7 +52,7 @@ After the participants has been invited, you can resend or delete the invitation
 image:spaces/private_participants_actions.png[Private participants actions]
 
 |===
-|Icon |Name |Definition
+|Icône |Nom |Definition
 
 |image:action_resend_invitation.png[Resend invitation]
 |Resend invitation
