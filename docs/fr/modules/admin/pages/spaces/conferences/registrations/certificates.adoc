@@ -7,22 +7,22 @@ image:spaces/conferences/certificates_of_attendance.png[Conferences Certificate 
 
 .Certificate of Attendance form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Main logo
-|Required
+|Obligatoire
 |Logo of the conference of the organization that makes the certificate of attendance.
 
 |Signature
-|Required
+|Obligatoire
 |Image of the person that signs the certificate.
 
 |Sign date
-|Required
+|Obligatoire
 |Date of the signature. Expected format: dd/mm/yyyy
 
 |Signature name
-|Required
+|Obligatoire
 |Name of the person that signs the certificate.
 |===
 
