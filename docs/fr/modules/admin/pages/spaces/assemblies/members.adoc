@@ -17,17 +17,17 @@ For creating a new phase of a participatory process:
 . Click on the assembly Edit action
 . Click on the Members link in the sidebar
 . Click on the "New member" button
-. Fill the form
+. Remplissez le formulaire
 
 image:assembly_members_new_form.png[Assembly members new form]
 
 
 .New assembly member form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Participant type
-|Required
+|Obligatoire
 |Wheter this assembly member is non-participant or existing participant. Does she already have an account created on the platform?
 
 |Full name
@@ -39,34 +39,34 @@ image:assembly_members_new_form.png[Assembly members new form]
 |Type at least three characters to search.
 
 |Position
-|Required
+|Obligatoire
 |Choose one of President, Vice president, Secretary, or Other. In case it's other, you can fill in the position title.
 
 |Weight
-|Optional
-|Which order will it have in relation to the other members. Having a lower number means a higher priority. For instance, if you have two members, "Member a" with weight "10" and "Member b" with weight "0", then "Member b" will be first when ordering.
+|Facultatif
+|Which order will it have in relation to the other members. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. For instance, if you have two members, "Member a" with weight "10" and "Member b" with weight "0", then "Member b" will be first when ordering.
 
 |Designation date
-|Required
+|Obligatoire
 |When was this person or group assigned as a member of this assembly. Expected format: dd/mm/yyyy
 
 |Designation mode
-|Optional
+|Facultatif
 |How was this person designed.
 
 |Ceased date
-|Optional
+|Facultatif
 |When was this person or group ceased to be a member of this assembly. Expected format: dd/mm/yyyy
 
 |Gender
-|Optional
+|Facultatif
 |Which gender does this person most identify with.
 
 |Birthday
-|Optional
+|Facultatif
 |When was this person born. Expected format: dd/mm/yyyy
 
 |Birthplace
-|Optional
+|Facultatif
 |Where was this person born.
 |===
