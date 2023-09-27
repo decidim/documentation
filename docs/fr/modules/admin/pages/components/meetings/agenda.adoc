@@ -1,91 +1,88 @@
-= Agenda
+= Ordre du jour
 
-The agenda feature allows an administrator to define the schedule for a meeting. It's possible to define agenda items and
-sub-items, with every one of the topics that will be discussed in the meeting, along with a description and the duration
-of every item and sub-item.
+La fonctionnalité ordre du jour permet à une administratrice de définir le calendrier d'une rencontre. Il est possible de définir des éléments et des sous-éléments dans un ordre du jour, avec chacun des sujets qui seront discutés lors de la réunion, accompagnés d'une description et de la durée de chaque élément et sous-élément.
 
-image:components/meetings/agenda/agenda_frontend.png[Agenda in the frontend]
+image:components/meetings/agenda/agenda_frontend.png[Image de la fonctionnalité ordre du jour]
 
-== New agenda form
+== Formulaire de création d'ordre du jour
 
-To define an agenda for a meeting:
+Définir l'ordre du jour d'une rencontre :
 
 . Sign in as admin
 . Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
 For instance, it could be "Processes", "Assemblies", or "Conferences"
 . Click on "Meetings"
-. Search the meeting that you want to add the agenda to
-. Click on the "Agenda" button image:action_agenda.png[Agenda button]
-. Fill the form
+. Recherchez la rencontre pour laquelle vous souhaitez ajouter l'ordre du jour
+. Cliquez sur le bouton "Ordre du jour" image:action_agenda.png[Bouton ordre du jour]
+. Remplissez le formulaire
 
-image:components/meetings/agenda/new_agenda_form.png[New agenda form in the backend]
+image:components/meetings/agenda/new_agenda_form.png[Formulaire de création d'ordre du jour dans le backoffice]
 
 
-.New agenda form
+.Formulaire de création d'ordre du jour
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Title
-|Required
-|Title for the agenda. For instance, "Schedule"
+|Titre
+|Obligatoire
+|Titre de l'ordre du jour. Par exemple, "Calendrier"
 
 |Visible
-|Optional
-|Check if you want to publish the agenda.
+|Facultatif
+|Cochez cette case si vous souhaitez publier l'ordre du jour.
 
-|Agenda items
-|Required
-|List of agenda items.
+|Points de l'ordre du jour
+|Obligatoire
+|Liste des points de l'ordre du jour.
 |===
 
-It's possible to create any number of Agenda items and sub-items. You can up or down the hierarchy of the agenda items.
-It's also possible to remove and edit the agenda items.
+Il est possible de créer autant de points et de sous-points de l'ordre du jour que souhaité. Vous pouvez monter ou descendre la hiérarchie des points de l'ordre du jour.
+Il est également possible de supprimer et de modifier les éléments de l'ordre du jour.
 
 
-.Agenda item form
+.Formulaire d'élément de l'ordre du jour
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Title
-|Required
-|Title for the agenda item
+|Titre
+|Obligatoire
+|Titre du point de l'ordre du jour
 
-|Duration
-|Required
-|How many minutes will the agenda item last. For instance, "15".
+|Durée
+|Obligatoire
+|Combien de minutes durera le point de l'ordre du jour. Par exemple, "15".
 
 |Description
-|Optional
-|Title for the agenda item
+|Facultatif
+|Titre du point de l'ordre du jour
 
-|Agenda sub-items
-|Optional
-|List of agenda sub-items.
+|Sous-points de l’ordre du jour
+|Facultatif
+|Liste des sous-points de l'ordre du jour.
 |===
 
-The only limitation that agenda items and sub-items have is that they have to respect the duration of the parent. For instance,
-if there's an Item that lasts 60 minutes, you can't create a sub-item that lasts 90 minutes.
+La seule limite des points et des sous-points de l'ordre du jour est qu'ils doivent avoir une durée inférieure à celle du parent. Par exemple, si un point dure 60 minutes, vous ne pouvez pas créer un sous-point d'une durée de 90 minutes.
 
-As an example, this agenda:
+À titre d'exemple, cet ordre du jour :
 
-image:components/meetings/agenda/agenda_frontend.png[Agenda in the frontend]
+image:components/meetings/agenda/agenda_frontend.png[Image de la fonctionnalité ordre du jour]
 
-Has the following configuration:
+Pour la configuration suivante :
 
-* Title: "Schedule"
+* Titre: "Calendrier"
 * Visible: true
-* Agenda item #1:
-** Title: Diagnosis
-** Duration: 60
-* Agenda item #2:
-** Title: Ideation
-** Duration: 120
-** Agenda sub-item #2.1:
-*** Title: Future thinking
-*** Duration: 60
-*** Description: Imagining how we can solve the problem
-** Agenda sub-item #2.2:
-*** Title: Creating proposals
-*** Duration: 60
-*** Description: In the platform
+* Point d'ordre du jour #1 :
+** Titre: Diagnostic
+** Durée: 60
+* Point d'ordre du jour #2 :
+** Titre: Idéation
+** Durée: 120
+** Sous-point de l'ordre du jour #2.1 :
+*** Titre: Pensée future
+*** Durée: 60
+*** Description: Imaginez comment nous pouvons résoudre le problème
+** Sous-point de l'ordre du jour #2.2 :
+*** Titre: Création de propositions
+*** Durée: 60
+*** Description: Sur la plateforme
