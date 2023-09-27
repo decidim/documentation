@@ -24,14 +24,14 @@ image:verifications_conflicts_transfer_user.png[]
 
 .Transfer user form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Reason
-|Required
+|Obligatoire
 |Why you want to transfer the user
 
 |Email
-|Required
+|Obligatoire
 |The email of the user to transfer
 |===
 
