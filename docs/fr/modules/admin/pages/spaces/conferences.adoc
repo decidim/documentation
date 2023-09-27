@@ -35,82 +35,82 @@ image:spaces/conferences/new_conference.png[Create a new conference form]
 
 .Create a new conference
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Title
-|Required
+|Titre
+|Obligatoire
 |What is the title of this conference. For instance "Decidim Fest 2021"
 
 |Slogan
-|Required
+|Obligatoire
 |A subtitle for this conference. For instance, "Democracy, Technology and Global Justice"
 
 |URL slug
-|Required
+|Obligatoire
 |URL slugs are used to generate the URLs that point to this conference. Only accepts letters, numbers, and dashes, and
 must start with a letter. Example: if your domain is 'example.org' and your slug 'DecidimFest21' then your URL will be
 https://example.org/conferences/DecidimFest21
 
 |Hashtag
-|Optional
+|Facultatif
 |Hashtag for Twitter
 
 |Highlighted
-|Optional
+|Facultatif
 |Should this conference be more prominent than others? For instance, is this an ongoing or a conference that has happened years ago?
 
 |Short description
-|Required
+|Obligatoire
 |A short explanation of what's your conference about.
 
 |Description
-|Required
+|Obligatoire
 |A long explanation of what's your conference about.
 
 |Objectives
-|Optional
+|Facultatif
 |What are the objectives or goals for this conference?
 
 |Location
-|Optional
+|Facultatif
 |Where will this conference take place?
 
 |Home image
-|Optional
+|Facultatif
 |Preferrably a landscape image that does not have any text. The service crops
 the image. Maximum file size: 10MB. Allowed file extensions: jpeg jpg png
 
 |Banner image
-|Optional
+|Facultatif
 |Preferrably a landscape image that does not have any text. The service crops
 the image. Maximum file size: 10MB. Allowed file extensions: jpeg jpg png
 
 |Scopes enabled
-|Optional
+|Facultatif
 |Check if you want to have Scopes filtering in this conference
 
-|Scope
-|Optional
+|Secteur
+|Facultatif
 |Which xref:admin:scopes.adoc[Scope] does this conference belongs to.
 
 |Show statistics
-|Optional
+|Facultatif
 |Check if you want to show the Statistics section.
 
 |Start date
-|Required
+|Obligatoire
 |When will this conference start. Expected format: dd/mm/yyyy
 
 |End date
-|Required
+|Obligatoire
 |When will this conference end. Expected format: dd/mm/yyyy
 
 |Registrations enabled
-|Optional
+|Facultatif
 |Check if you want to handle registrations on the platform.
 
 |Available slots
-|Optional
+|Facultatif
 |Leave it to 0 if you have unlimited slots available.
 
 |Registration terms
@@ -118,15 +118,15 @@ the image. Maximum file size: 10MB. Allowed file extensions: jpeg jpg png
 |What are the terms of service or conditions that a participant must accept for registering in this conference?
 
 |Related participatory processes
-|Optional
+|Facultatif
 |Select the processes that are related to this conference. Use the *ctrl* function to select more than one option.
 
 |Related Assemblies
-|Optional
+|Facultatif
 |Select the assemblies that are related to this conference. Use the *ctrl* function to select more than one option.
 
 |Related Consultations
-|Optional
+|Facultatif
 |Select the consultations that are related to this conference. Use the *ctrl* function to select more than one option.
 |===
 
