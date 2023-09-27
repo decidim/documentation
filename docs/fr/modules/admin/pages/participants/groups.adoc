@@ -15,34 +15,34 @@ image:user_group_new_form.png[New user group form]
 
 .New group form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Name
-|Required
+|Nom
+|Obligatoire
 |Name of your organization, association, collective, group, etc.
 
 |Nickname
-|Required
+|Obligatoire
 |Nickname of your organization, association, collective, group, etc. Do not use spaces nor accents. 20 characters maximum.
 
 |Email
-|Required
+|Obligatoire
 |Email of your organization, association, collective, group, etc.
 
 |Avatar
-|Optional
+|Facultatif
 |Guidance for image: Preferably a landscape image that does not have any text. The service crops the image. Maximum file size: 5MB. Allowed file extensions: jpg jpeg gif png bmp ico
 
 |About
-|Optional
+|Facultatif
 |Description of what's this group.
 
 |Document number
-|Optional
+|Facultatif
 |Used for verifications. Do not use dashes nor spaces.
 
 |Phone
-|Optional
+|Facultatif
 |Used for verifications. Do not use dashes nor spaces.
 |===
 
@@ -103,7 +103,7 @@ There's a dropdown in the form when making a comment:
 
 image:user_group_make_comment.png[User group: make a comment]
 
-=== Endorse
+=== Soutenir
 
 When making an Endorse there's a modal window asking who do you want to make the endorse with:
 
