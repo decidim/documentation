@@ -1,4 +1,4 @@
-= Components
+= Fonctionnalités
 
 include::partial$components_list.adoc[]
 
@@ -15,7 +15,7 @@ image::spaces/components_new_dropdown.png[Add a component in a space]
 == Actions
 
 |===
-|Icon |Name |Definition
+|Icône |Nom |Definition
 
 |image:action_manage.png[Manage icon]
 |Manage
@@ -36,7 +36,7 @@ in a Meeting component, etc.
 are comments enabled, participants can create meetings, etc.
 
 |image:action_permissions.png[Permissions icon]
-|Permissions
+|Autorisations
 |To configure which xref:customize:authorizations.adoc[Authorization] will be necessary to make certain actions in
 this component. For instance, in the case of Proposals, which Verification will be necessary to create a new proposal or
 to give supports.
