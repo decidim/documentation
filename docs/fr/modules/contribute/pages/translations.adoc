@@ -19,7 +19,7 @@ image::translation-join-02.png[Message in Join Decidim Translations]
 
 If your language isn't created yet, then we need to do it as it's necessary to make some adjustments. You need to contact us by the https://decidim.org/contact[contact form].
 
-== How it works
+== Comment ça marche
 
 If you're curios, in the technical level we have a bot (the great decidim-bot) that periodically makes a PR to the relevant branches (last releases and develop).
 
