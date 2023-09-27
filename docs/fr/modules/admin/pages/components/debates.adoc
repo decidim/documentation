@@ -1,78 +1,77 @@
-= Debate
+= Débat
 
-The Debate component allows people to have discussions, without voting nor prioritzation. It also allows to close them,
-by adding conclusions or a summary of what the discussion was about.
+Le composant Débat permet aux participants d'avoir des discussions, sans vote ni prioritisation. Cela permet également de les conclure, en ajoutant des conclusions ou un résumé de ce qui a été discuté.
 
 From this starting point, there could be other configurations, such as:
 
-* To allow debates creation by participants
-* To have debates with a fixed started and ending date or open
-* To show endorsements (public supports) or not
+* Permettre la création de débats par les participants
+* Avoir des débats avec une date de début et de fin fixe ou ouvert
+* Montrer les soutiens (support public) ou non
 
 Some examples of where this component was used:
 
-* https://meta.decidim.org/processes/roadmap/f/219/[Propose new functionalities for Decidim software in Metadecidim]
+* https://meta.decidim.org/processes/roadmap/f/219/[Proposer de nouvelles fonctionnalités pour le logiciel Decidim dans Metadecidim]
 
-image:components/debates/example01.png[Debates listing example]
-image:components/debates/example02.png[Debate example]
+image:components/debates/example01.png[Exemple de liste des débats]
+image:components/debates/example02.png[Exemple de débat]
 
-To configure the Debate component:
+Pour configurer le fonctionnalité Débat:
 
 . Sign in as admin
 . Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies" or "Conferences".
-. Go to components
-. Click on "Add component" button
-. Click on "Debate"
-. Fill the xref:_add_component[Add component] form
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+Par exemple, il peut s'agir de "Concertations", d'"Assemblées" ou de "Conférences".
+. Aller dans les fonctionnalités
+. Cliquez sur le bouton "Ajouter une fonctionnalité"
+. Cliquez sur "Débattre"
+. Remplissez le formulaire xref:_add_component[Ajouter une fonctionnalité]
 
-== Add component
+== Ajouter une fonctionnalité
 
-image:components/debates/component.png[Add component form]
+image:components/debates/component.png[Ajouter un formulaire de composant]
 
 
-.Add component: Debate form
+.Ajouter un composant : Formulaire de débat
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Name
-|Required
-|What is the title of this component. For instance, "Debates"
+|Nom
+|Obligatoire
+|Quel est le titre de cette fonctionnalité. Par exemple, "Debates"
 
-|Order position
-|Optional
-|Which order will it have in relation to the other debates. Having a lower number means a higher priority.
-For instance, if you have two debates, "Debate a" with weight "10" and "Debate b" with weight "0", then "Debate b" will be first when ordering.
+|Rang d'affichage
+|Facultatif
+|Quel ordre aura-t-il par rapport aux autres débats. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux débats, "Débat A" avec le poids "10" et "Débat B" avec le poids "0", alors "Débat B" sera le premier lors de l'affichage.
 |===
 
 
-.Add component: Debate form - Global settings
+.Ajouter une fonctionnalité : Formulaire de débat - Paramètres globaux
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Scopes enabled
-|Optional
+|Facultatif
 |Check if you want to have Scopes filtering in this component.
 
-|Scope
-|Optional
+|Secteur
+|Facultatif
 |Which xref:admin:scopes.adoc[Scope] does this component belongs to.
 
-|Global scope
-|Optional
+|Portée générale
+|Facultatif
 |
 
-|Comments enabled
-|Optional
-|Whether you want to have comments in the meetings.
+|Commentaires activés
+|Facultatif
+|Si vous voulez avoir des commentaires dans les rencontres.
 
-|Comments max length
-|Optional
-|What is the characters limit that participants will have when making comments. Leave 0 for default value.
+|Longueur maximale des commentaires
+|Facultatif
+|Quelle est la limite de caractères que les participants auront quand ils feront des commentaires. Laisser 0 pour la valeur par défaut.
 
-|Announcement
-|Optional
+|Annonce
+|Facultatif
 |A general announcement that'll be visible on the general debates landing page.
 |===
 
@@ -82,36 +81,36 @@ xref:admin:spaces/processes.adoc[Participatory Processes], then you can also def
 
 .Add component: Debates form - Step settings
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Endorsements enabled
-|Optional
+|Soutiens activés
+|Facultatif
 |Check if you want that participants show public support for these debates.
 
-|Endorsements blocked
-|Optional
+|Soutiens bloqués
+|Facultatif
 |
 
 |Debate creation by participants enabled
-|Optional
+|Facultatif
 |Check if you want to allow the creation of new debates by participants.
 
-|Comments blocked
-|Optional
+|Commentaires désactivés
+|Facultatif
 |Whether you want to enable comments for this phase.
 
-|Announcement
-|Optional
+|Annonce
+|Facultatif
 |A general announcement that'll be visible on the general debate landing page.
 |===
 
-== Permissions
+== Autorisations
 
 An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
 certain actions in the debates:
 
 * Create
-* Endorse
+* Soutenir
 
 == Manage debates
 
@@ -132,26 +131,26 @@ image:components/debates/new_debate_backend.png[New debate backend form]
 
 .New debate form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Title
-|Required
+|Titre
+|Obligatoire
 |What is the title of this debate. For instance, "How can we improve this process?"
 
 |Description
-|Required
+|Obligatoire
 |What is the description of this debate.
 
 |Instructions to participate
-|Required
+|Obligatoire
 |Add a message for the participants.
 
 |Information updates
-|Optional
+|Facultatif
 |Add a message for the participants.
 
 |xref:_debate_types[Debate type]
-|Required
+|Obligatoire
 |Choose between Finite and Open. Finite means that the debate has a starting and ending date and time, Open means that
 there isn't any timeframe.
 
@@ -163,8 +162,8 @@ there isn't any timeframe.
 |Required if the debate type is Finite
 |Expected format: dd/mm/yyyy hh:ii
 
-|Category
-|Optional
+|Catégorie
+|Facultatif
 |Which category has the debate. Used for filtering in the debates list.
 |===
 
@@ -185,7 +184,7 @@ image:components/debates/debate_finite.png[Finite debate]
 
 .Actions
 |===
-|Icon |Name |Definition
+|Icône |Nom |Definition
 
 |image:action_edit.png[Edit icon]
 |Edit
@@ -196,12 +195,12 @@ image:components/debates/debate_finite.png[Finite debate]
 |Close form for a debate. For adding conclusions.
 
 |image:action_permissions.png[Permissions icon]
-|Permissions
+|Autorisations
 |To handle the permissions of this debate, depending on the verification a participant has.
 
 |image:action_delete.png[Delete icon]
 |Delete
-|To delete this debate. Only can be done when there aren't any projects.
+|To delete this debate. Peut être fait unquement quand il n'y a pas de projets dans ce budget.
 |===
 
 === Close debate form
@@ -218,10 +217,10 @@ image:components/debates/close_debate_frontend.png[Close debate frontend form]
 
 .Close debate form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Conclusions
-|Required
+|Obligatoire
 |What is the conclusion for this debate.
 |===
 
