@@ -19,14 +19,14 @@ image:scopes_types_new_form.png[New scope type form]
 
 .Admin New Scope Type form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Singular
-|Required
+|Obligatoire
 |Name of the scope type in singular.
 
 |Plural
-|Required
+|Obligatoire
 |Name of the scope type in plural.
 |===
 
@@ -35,18 +35,18 @@ image:scopes_new_form.png[New scope form]
 
 .Admin New Scope Form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Name
-|Required
+|Nom
+|Obligatoire
 |Name of the scope.
 
 |Code
-|Required
+|Obligatoire
 |(Internal) name of the scope.
 
 |Scope type
-|Required
+|Obligatoire
 |Which type of scope it's.
 |===
 
@@ -55,7 +55,7 @@ image:scopes_new_form.png[New scope form]
 You have 3 possible actions in this list after a Scope is created:
 
 |===
-|Icon |Name |Definition
+|Icône |Nom |Definition
 
 |image:action_browse.png[Browse icon]
 |Browse
