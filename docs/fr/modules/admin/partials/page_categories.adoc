@@ -36,21 +36,21 @@ image:spaces/categories_new_form.png[Create a new category form]
 
 .Create category
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Name
-|Required
+|Nom
+|Obligatoire
 |What is the name for this category.
 
 |Weight
-|Optional
-|Which order will it have in relation to the other categories. Having a lower number means a higher priority. For instance, if you have two categories, "Category a" with weight "10" and "Category b" with weight "0", then "Category b" will be first when ordering.
+|Facultatif
+|Which order will it have in relation to the other categories. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. For instance, if you have two categories, "Category a" with weight "10" and "Category b" with weight "0", then "Category b" will be first when ordering.
 
 |Description
-|Required
+|Obligatoire
 |A long description explaining what this category is about.
 
 |Parent
-|Optional
+|Facultatif
 |What is the parent category.
 |===
