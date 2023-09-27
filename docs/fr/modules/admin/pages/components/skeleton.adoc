@@ -19,63 +19,63 @@ To configure the Skeleton component:
 
 . Sign in as admin
 . Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies" or "Conferences".
-. Go to components
-. Click on "Add component" button
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+Par exemple, il peut s'agir de "Concertations", d'"Assemblées" ou de "Conférences".
+. Aller dans les fonctionnalités
+. Cliquez sur le bouton "Ajouter une fonctionnalité"
 . Click on "Skeleton"
-. Fill the xref:_add_component[Add component] form
+. Remplissez le formulaire xref:_add_component[Ajouter une fonctionnalité]
 
-== Add component
+== Ajouter une fonctionnalité
 
 image:components/skeleton/component.png[Add component form]
 
 
 .Add component: Skeleton form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Name
-|Required
-|What is the title of this component. For instance, "Skeletons"
+|Nom
+|Obligatoire
+|Quel est le titre de cette fonctionnalité. For instance, "Skeletons"
 
-|Order position
-|Optional
-|Which order will it have in relation to the other skeletons. Having a lower number means a higher priority.
+|Rang d'affichage
+|Facultatif
+|Which order will it have in relation to the other skeletons. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
 For instance, if you have two skeletons, "Skeleton a" with weight "10" and "Skeleton b" with weight "0", then "Skeleton b" will be first when ordering.
 |===
 
 
 .Add component: Skeleton form - Global settings
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Scopes enabled
-|Optional
+|Facultatif
 |Check if you want to have Scopes filtering in this component.
 
-|Scope
-|Optional
+|Secteur
+|Facultatif
 |Which xref:admin:scopes.adoc[Scope] does this component belongs to.
 
-|Global scope
-|Optional
+|Portée générale
+|Facultatif
 |
 
-|Comments enabled
-|Optional
-|Whether you want to have comments in the meetings.
+|Commentaires activés
+|Facultatif
+|Si vous voulez avoir des commentaires dans les rencontres.
 
-|Comments max length
-|Optional
-|What is the characters limit that participants will have when making comments. Leave 0 for default value.
+|Longueur maximale des commentaires
+|Facultatif
+|Quelle est la limite de caractères que les participants auront quand ils feront des commentaires. Laisser 0 pour la valeur par défaut.
 
 |Actions permissions can be set for each skeleton
-|Optional
+|Facultatif
 |Whether you want to be able to set permissions for every one of the skeletons. Most of the time you will want to leave this option disabled.
 
-|Announcement
-|Optional
+|Annonce
+|Facultatif
 |A general announcement that'll be visible on the general skeletons landing page.
 |===
 
@@ -85,24 +85,24 @@ xref:admin:spaces/processes.adoc[Participatory Processes], then you can also def
 
 .Add component: Skeletons form - Step settings
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Comments blocked
-|Optional
+|Commentaires désactivés
+|Facultatif
 |Whether you want to enable comments for this phase.
 
-|Announcement
-|Optional
+|Annonce
+|Facultatif
 |A general announcement that'll be visible on the general skeleton landing page.
 |===
 
-== Permissions
+== Autorisations
 
 An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
 certain actions in the skeletons:
 
 * Create
-* Endorse
+* Soutenir
 
 == Manage skeletons
 
@@ -126,19 +126,19 @@ image:components/skeleton/new_skeleton.png[New skeleton form]
 
 .New skeleton form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Title
-|Required
+|Titre
+|Obligatoire
 |What is the title of this skeleton. For instance, "District A"
 
-|Order position
-|Optional
-|Which order will it have in relation to the other skeletons. Having a lower number means a higher priority.
+|Rang d'affichage
+|Facultatif
+|Which order will it have in relation to the other skeletons. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
 For instance, if you have two skeletons, "Skeleton a" with weight "10" and "Skeleton b" with weight "0", then "Skeleton b" will be first when ordering.
 
 |Description
-|Optional
+|Facultatif
 |What is the description of this skeleton.
 |===
 
@@ -147,14 +147,14 @@ For instance, if you have two skeletons, "Skeleton a" with weight "10" and "Skel
 
 .Actions
 |===
-|Icon |Name |Definition
+|Icône |Nom |Definition
 
 |image:action_preview.png[Preview icon]
 |Preview
-|To see how it's shown in the frontend to participants.
+|Pour voir comment il est montré dans le frontend aux participants.
 
-|image:action_list.png[Manage projects icon]
-|xref:_manage_projects[Manage projects]
+|image:action_list.png[Gérer l'icône des projets]
+|xref:_manage_projects[Gérer les projets]
 |Allows you to manage the projects of a skeleton.
 
 |image:action_edit.png[Edit icon]
@@ -163,5 +163,5 @@ For instance, if you have two skeletons, "Skeleton a" with weight "10" and "Skel
 
 |image:action_delete.png[Delete icon]
 |Delete
-|To delete this skeleton. Only can be done when there aren't any projects.
+|To delete this skeleton. Peut être fait unquement quand il n'y a pas de projets dans ce budget.
 |===
