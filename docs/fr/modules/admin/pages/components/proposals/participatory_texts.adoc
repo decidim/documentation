@@ -17,13 +17,13 @@ To configure the "Participatory texts" in proposals component:
 
 . Sign in as admin
 . Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
 For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Go to components
-. Click on "Add component" button
-. Click on "Proposals"
+. Aller dans les fonctionnalités
+. Cliquez sur le bouton "Ajouter une fonctionnalité"
+. Cliquer sur "Propositions"
 . Check the "Participatory texts enabled" setting
-. Save the component
+. Enregistrez le composant
 . Click in the "Participatory texts" button in the empty proposals component
 image:components/proposals/participatory_texts/manage_proposals.png[Manage proposals]
 . Click in the "Import document" button in the empty Preview participatory text panel
@@ -56,18 +56,18 @@ image:components/proposals/participatory_texts/add_document_form.png[Add documen
 
 .Add document form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Title
-|Required
+|Titre
+|Obligatoire
 |What's the title of the document?
 
 |Description
-|Optional
+|Facultatif
 |Description for the document
 
 |Document
-|Required
+|Obligatoire
 |File. Add a document lesser than 2MB, each section until 3 levels deep will be parsed into proposals. Supported formats are: Markdown, ODT
 |===
 
