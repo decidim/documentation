@@ -1,0 +1,29 @@
+= Fingerprint
+
+Although the platform should show the xref:admin:features/versions.adoc[Versions] for almost all of the contents, it'd be
+still possible to manipulate the content by directly editing the database.
+
+As mitigation for this risk, the platform shows a fingerprint for some important fields, for instance, a proposal body and title.
+
+image:features/fingerprint/modal.png[Check fingerprint modal]
+
+Its goal is to provide a way to give an informal "receipt" to a participant to they can detect tampering. A fingerprint is
+a hashed representation of the content. It's useful to ensure the content hasn't been tampered with, as a single modification
+would result in a totally different value. It's calculated using a SHA256 hashing algorithm. In order to replicate it
+yourself, you can use a http://www.md5calc.com/sha256[MD5 calculator online] and copy-paste the source data.
+
+== Check fingerprint
+
+. Go to the content that you want to check the fingerprint
+. Click in the "Check fingerprint" link in the sidebar
+image:features/fingerprint/sidebar.png[Check fingerprint link in sidebar]
+. Follow the modal instructions
+
+image:features/fingerprint/md5calc.png[MD5calc.com screenshot]
+
+It's possible to check the fingerprint with other tools, such as the sha256sum command line tool.
+
+[source,bash]
+----
+echo -n '{"body":{"en":"<p><strong>**Is your feature request related to a problem? Please describe.**</strong></p><p>It would be useful to set a character limit on questionnaire answers to provide guidance for users regarding how long their answers should be.</p><p><br></p><p><strong>**Describe the solution you\'d like**</strong></p><p>To have a number input field next to each question in the admin, labeled \\"Character limit\\", by default set to zero (no limit), which determines the maximum characters the user answers to those questions can have.</p><p><br></p><p><strong> **Describe alternatives you\'ve considered** </strong></p><p>Another possibility could be to define this globally for the questionnaire, setting the character limit for each type of question.</p><p><br></p><p><strong>**Additional context** </strong></p><p>-</p><p><br></p><p><strong> **Could this issue impact on users private data?** </strong></p><p>No</p><p><br></p><p><strong> **Funded by**</strong></p><p>Fundació Bosch i Guimpera</p>"},"title":{"en":"Maximum characters for questionnaire text answers"}}' | sha256sum
+----
