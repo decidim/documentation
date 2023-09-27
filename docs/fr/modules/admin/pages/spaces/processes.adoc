@@ -58,65 +58,65 @@ image::processes_new_form.png[New participatory process form]
 
 .New participatory process form: General information
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Title
-|Required
+|Titre
+|Obligatoire
 |Title of the participatory process. For instance, "Participatory Budgeting 2020".
 
 |Subtitle
-|Required
+|Obligatoire
 |Subtitle. For instance, "Let's decide our priorities together"
 
 |URL slug
-|Required
+|Obligatoire
 |URL slugs are used to generate the URLs that point to this process. Only accepts letters, numbers and dashes, and must
 start with a letter. Example: if your domain is 'example.org' and your slug 'participatory-budget-2020' then your URL will
 be https://example.org/processes/participatory-budget-2020
 
 |Hashtag
-|Optional
+|Facultatif
 |Hashtag for Twitter
 
 |Short description
-|Required
+|Obligatoire
 |A short explanation of what's your participatory process about.
 
 |Description
-|Required
+|Obligatoire
 |A long explanation of what's your participatory process about.
 
-|Announcement
-|Optional
+|Annonce
+|Facultatif
 |The text you enter here will be shown to the user right below the process information.
 |===
 
 
 .New participatory process form: Duration
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Start date
-|Optional
+|Facultatif
 |When this process start. You have a calendar widget to choose the day. Expected format: dd/mm/yyyy
 
 |End date
-|Optional
+|Facultatif
 |When this process start. You have a calendar widget to choose the day. Expected format: dd/mm/yyyy
 |===
 
 
 .New participatory process form: Images
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Home image
-|Optional
+|Facultatif
 |Image that will be used in presentation cards of this process. Guidance for file: Has to be an image or a document.
 For images, use preferably landscape images, the service crops the image. Maximum file size: 10MB
 
 |Banner image
-|Optional
+|Facultatif
 |Image that will be used inside of the process. Guidance for file: Has to be an image or a document.
 For images, use preferably landscape images, the service crops the image. Maximum file size: 10MB
 |===
@@ -124,30 +124,30 @@ For images, use preferably landscape images, the service crops the image. Maximu
 
 .New participatory process form: Metadata
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Promoter group
-|Optional
+|Facultatif
 |Information that's displayed in the process metadata sidebar.
 
 |Organization area
-|Optional
+|Facultatif
 |Information that's displayed in the process metadata sidebar.
 
 |Scope metadata
-|Optional
+|Facultatif
 |Information that's displayed in the process metadata sidebar.
 
 |Who participates
-|Optional
+|Facultatif
 |Information that's displayed in the process metadata sidebar.
 
 |What is decided
-|Optional
+|Facultatif
 |Information that's displayed in the process metadata sidebar.
 
 |How is it decided
-|Optional
+|Facultatif
 |Information that's displayed in the process metadata sidebar.
 |===
 
@@ -158,44 +158,44 @@ image::process_backend_metadata.png[Process backend metadata]
 
 .New participatory process form: Filters
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Scopes enabled
-|Optional
+|Facultatif
 |Check if you want to have Scopes filtering in this process.
 
-|Scope
-|Optional
+|Secteur
+|Facultatif
 |Which xref:admin:scopes.adoc[Scope] does this process belongs to.
 
 |Scope filter depth
-|Optional
+|Facultatif
 |Restrict the scope filter depth; The filter will show from general to the selected scope type. This is only relevant if
 you have complex relations in Scopes children (like a Russian Doll). For instance if you have a Grandmother -> Mother ->
 Child, this setting allows you to choose the Mother, so the participants can only choose the Child. This would be the
 case for instance if you have Provinces -> Cities -> Districts, and the process is about a particular City.
 
 |Area
-|Optional
+|Facultatif
 |Which xref:admin:areas.adoc[Area] does this process belongs to.
 |===
 
 
 .New participatory process form: Visibility
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Processes group
-|Optional
+|Facultatif
 |Enables to make groups of multiple participatory processes. Ideally for processes that are related between them, for
 instance multiple squares in a City or multiple documents using the same participatory rules.
 
 |Private space
-|Optional
+|Facultatif
 |Check if this process should only be accessible by xref:admin:spaces/processes/private_participants.adoc[Private Participants]
 
 |Promoted
-|Optional
+|Facultatif
 |Check if you want the process to have more visibility in the Process public list. It'll also be visible in the
 Participatory Process Content Block in the xref:admin:homepage.adoc[Homepage] configuration. This is accessible in the
 btn:[Edit] action in a Process.
@@ -204,24 +204,24 @@ btn:[Edit] action in a Process.
 
 .New participatory process form: Filters
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Related processes
-|Optional
+|Facultatif
 |Select other participatory processes that are related to this one.
 |===
 
 
 .New participatory process form: Filters
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Show statistics
-|Optional
+|Facultatif
 |Check if you want to show the Statistics section.
 
 |Show metrics
-|Optional
+|Facultatif
 |Check if you want to show the Metrics section.
 |===
 
@@ -237,6 +237,6 @@ Here you can keep configuring your process:
 . xref:admin:spaces/processes/components.adoc[Components]
 . xref:admin:spaces/processes/categories.adoc[Categories]
 . xref:admin:spaces/processes/attachments.adoc[Attachments]
-. xref:admin:spaces/processes/admins.adoc[Process admins]
-. xref:admin:spaces/processes/private_participants.adoc[Private participants]
+. xref:admin:spaces/processes/admins.adoc[Administrateurs de la concertation]
+. xref:admin:spaces/processes/private_participants.adoc[Utilisateurs privés]
 . xref:admin:spaces/processes/moderations.adoc[Moderations]
