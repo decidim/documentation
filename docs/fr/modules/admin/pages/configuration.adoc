@@ -4,7 +4,7 @@ In this page you can configure general settings from Decidim.
 
 image::admin_configuration.png[Decidim Admin Configuration]
 
-These are:
+Il s'agit de :
 
 * **Name**. Required. The name that the platform has. Visible at title, emails, etc.
 * **Social**. Social handlers for different social networks. Visible at the footer in every page. This are:
