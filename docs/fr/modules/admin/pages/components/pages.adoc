@@ -1,6 +1,6 @@
 = Page
 
-The Page component allows people to get information about a space. It's similar to the general xref:admin:pages.adoc[Pages] admin section, with
+La fonctionnalité Page permet aux participants d'avoir plus d'information sur un espace. It's similar to the general xref:admin:pages.adoc[Pages] admin section, with
 the main difference is that this component allows to define pages in a space, and the general Pages admin section allows to
 define pages for all the platform (for instance, help pages, terms of services, or FAQs), that aren't associated to a space.
 
@@ -13,43 +13,43 @@ Some examples of where this component was used:
 image:components/page/example01.png[More information page in 2020 Participatory Budgeting process in Decidim Barcelona - Frontend]
 image:components/page/example02.png[More information page in 2020 Participatory Budgeting process in Decidim Barcelona - Backend]
 
-To configure the Page component:
+Pour configurer la fonctionnalité Page :
 
 . Sign in as admin
 . Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
 For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Go to components
-. Click on "Add component" button
+. Aller dans les fonctionnalités
+. Cliquez sur le bouton "Ajouter une fonctionnalité"
 . Click on "Page"
-. Fill the xref:_add_component[Add component] form
+. Remplissez le formulaire xref:_add_component[Ajouter une fonctionnalité]
 
-== Add component
+== Ajouter une fonctionnalité
 
 image:components/page/component.png[Add component form]
 
 
 .Add component: Page form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Name
-|Required
-|What is the title of this component. For instance, "More information".
+|Nom
+|Obligatoire
+|Quel est le titre de cette fonctionnalité. For instance, "More information".
 
-|Order position
-|Optional
-|Which order will it have in relation to the other pages. Having a lower number means a higher priority.
+|Rang d'affichage
+|Facultatif
+|Which order will it have in relation to the other pages. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
 For instance, if you have two pages, "Page a" with weight "10" and "Page b" with weight "0", then "Page b" will be first when ordering.
 |===
 
 
 .Add component: Page form - Global settings
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Announcement
-|Optional
+|Annonce
+|Facultatif
 |A general announcement that'll be visible on the general pages landing page.
 |===
 
@@ -59,14 +59,14 @@ xref:admin:spaces/processes.adoc[Participatory Processes], then you can also def
 
 .Add component: Pages form - Step settings
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Announcement
-|Optional
+|Annonce
+|Facultatif
 |A general announcement that'll be visible on the general page landing page.
 |===
 
-== Permissions
+== Autorisations
 
 As this component doesn't allow to do anything, there are no permissions to set up.
 
@@ -77,9 +77,9 @@ image:components/page/new_page.png[New page form]
 
 .New page form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Body
-|Required
+|Obligatoire
 |What is the body for the page.
 |===
