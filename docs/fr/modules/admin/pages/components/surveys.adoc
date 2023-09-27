@@ -22,57 +22,57 @@ To configure the Survey component:
 
 . Sign in as admin
 . Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies" or "Conferences".
-. Go to components
-. Click on "Add component" button
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+Par exemple, il peut s'agir de "Concertations", d'"Assemblées" ou de "Conférences".
+. Aller dans les fonctionnalités
+. Cliquez sur le bouton "Ajouter une fonctionnalité"
 . Click on "Survey"
-. Fill the xref:_add_component[Add component] form
+. Remplissez le formulaire xref:_add_component[Ajouter une fonctionnalité]
 
 Once a survey is already answered by some users it's not possible to modify its questions, as that would affect the integrity
 of the answers. If it's needed to modify the questions, then it's needed to create a new survey and unpublish the original one.
 
-== Add component
+== Ajouter une fonctionnalité
 
 image:components/surveys/component.png[Add component form]
 
 
 .Add component: Survey form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Name
-|Required
-|What is the title of this component. For instance, "Surveys"
+|Nom
+|Obligatoire
+|Quel est le titre de cette fonctionnalité. For instance, "Surveys"
 
-|Order position
-|Optional
-|Which order will it have in relation to the other surveys. Having a lower number means a higher priority.
+|Rang d'affichage
+|Facultatif
+|Which order will it have in relation to the other surveys. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
 For instance, if you have two surveys, "Survey a" with weight "10" and "Survey b" with weight "0", then "Survey b" will be first when ordering.
 |===
 
 
 .Add component: Survey form - Global settings
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Scopes enabled
-|Optional
+|Facultatif
 |Check if you want to have Scopes filtering in this component.
 
-|Scope
-|Optional
+|Secteur
+|Facultatif
 |Which xref:admin:scopes.adoc[Scope] does this component belongs to.
 
 |Answers accepted from
-|Optional
+|Facultatif
 |Start date when you want to receive answers. Leave blank for no specific date. Expected format: dd/mm/yyyy hh:ii
 
 |Answers accepted until
 |End date when you want to stop receiving answers. Leave blank for no specific date. Expected format: dd/mm/yyyy hh:ii
-|Announcement
+|Annonce
 
-|Optional
+|Facultatif
 |A general announcement that'll be visible on the general surveys landing page.
 |Delete answers when publishing the survey
 |===
@@ -83,24 +83,24 @@ xref:admin:spaces/processes.adoc[Participatory Processes], then you can also def
 
 .Add component: Surveys form - Step settings
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Allow answers
-|Optional
+|Facultatif
 |Check if you want to receive answers in this survey.
 
 |Allow unregistered users to answer the survey
-|Optional
+|Facultatif
 |If active, no login will be required in order to answer the survey. This may lead to poor or unreliable data and it will
 be more vulnerable to automated attacks. Use with caution! Mind that this option only allows an answer by browser session,
 but participants can use the Private navigation option and make multiple answers with the same device.
 
-|Announcement
-|Optional
+|Annonce
+|Facultatif
 |A general announcement that'll be visible on the general survey landing page.
 |===
 
-== Permissions
+== Autorisations
 
 An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
 certain actions in the surveys:
@@ -120,18 +120,18 @@ about xref:_templates[Templates].
 
 .New survey form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Title
-|Required
+|Titre
+|Obligatoire
 |What is the title of this survey. For instance, "Feedback"
 
 |Description
-|Optional
+|Facultatif
 |What is the description of this survey.
 
 |Terms of service
-|Required
+|Obligatoire
 |Legal conditions that the participants must agree to in order to answer the survey.
 |===
 
@@ -148,26 +148,26 @@ image:components/surveys/question_form.png[]
 
 .Add question form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Statement
-|Required
+|Obligatoire
 |The question itself. For instance, "What is your age category?"
 
 |Description
-|Optional
+|Facultatif
 |Explanation of the question being made.
 
 |Mandatory
-|Optional
+|Facultatif
 |Check if this question is required to respond to submit the answer.
 
 |Character limit
-|Optional
+|Facultatif
 |How many characters has as a maxim the answer to this question. Leave to 0 if no limit. Compatible with Short and Long answer question types.
 
 |Type
-|Required
+|Obligatoire
 |One of the following: Short answer, Long answer, Single option, Multiple option, Sorting, Files, Matrix (Single option)
 or Matrix (Multiple option). See xref:_question_types[Question types] for more information.
 |===
