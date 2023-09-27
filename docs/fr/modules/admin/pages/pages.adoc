@@ -26,30 +26,30 @@ image::pages_backend_form.png[Backend: new page form]
 
 .New page form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Title
-|Required
+|Titre
+|Obligatoire
 |Title of this page. For instance: "How to participate?"
 
 |URL Slug
-|Required
+|Obligatoire
 |String that will be used on the URL. Use partial paths, not full URLs here. Accepts letters, numbers, dashes and slashes, and must start with a letter. For instance if the slug is "hello-world" and your domain is "https://example.org", your page will be at "https://example.org/hello-world"
 
 |Content
-|Required
+|Obligatoire
 |All the text of the page.
 
 |Topic
-|Optional
+|Facultatif
 |In which Topic it'll be in.
 
 |Weight
-|Optional
-|Which order will it have in relation with the other pages. Having a lower number means a higher priority. For instance, if you have two pages, "Page a" with weight "10" and "Page b" with weight "0", then "Page b" will be first when ordering.
+|Facultatif
+|Which order will it have in relation with the other pages. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. For instance, if you have two pages, "Page a" with weight "10" and "Page b" with weight "0", then "Page b" will be first when ordering.
 
 |Show in the footer
-|Optional
+|Facultatif
 |Wether you want to show this page in the general footer (available in every page).
 |===
 
@@ -68,22 +68,22 @@ image::pages_backend_topic_form.png[Backend: new topic form]
 
 .New topic form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Title
-|Required
+|Titre
+|Obligatoire
 |Title of this topic. For instance: "Help"
 
 |Description
-|Optional
+|Facultatif
 |What's this topic is about.
 
 |Weight
-|Optional
-|Which order will it have in relation with the other topics. Having a lower number means a higher priority. For instance, if you have two topics, "Topic a" with weight "10" and "Topic b" with weight "0", then "Topic b" will be first when ordering.
+|Facultatif
+|Which order will it have in relation with the other topics. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. For instance, if you have two topics, "Topic a" with weight "10" and "Topic b" with weight "0", then "Topic b" will be first when ordering.
 
 |Show in the footer
-|Optional
+|Facultatif
 |Wether you want to show this topic in the general footer (available in every page).
 |===
 
