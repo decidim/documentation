@@ -40,10 +40,10 @@ image:process_phases_new_form.png[Create a new participatory process phase form]
 
 .Create meeting
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Title
-|Required
+|Titre
+|Obligatoire
 |What is the title for this phase.
 
 |Description
@@ -73,7 +73,7 @@ URLs here. Accepts letters, numbers, dashes, and, slashes, and must start with a
 After a phase was created you have these actions:
 
 |===
-|Icon |Name |Definition
+|Icône |Nom |Definition
 
 |image:action_activate.png[Activate icon]
 |Activate
