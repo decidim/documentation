@@ -1,10 +1,10 @@
-= Components
+= Fonctionnalités
 
 :page-partial:
 
 *Components* are participatory mechanisms that allow interactions among the platform Participants within each of the Participatory Spaces.
 
-== Proposals
+== Propositions
 
 *Proposals* are Decidim's most important component. They can be defined as the minimum decision unit.
 
@@ -135,15 +135,15 @@ Participatory texts are defined as an ordered collection of proposals that make 
 * *Composition of proposals in a unified text*: based on a series of proposals, these may be ordered and generate a unified and downloadable text.
 * *Viewing and interacting* with documents composed of proposals: A collection of proposals will be shown as a unified text and may be amended or comments can be added in the margin.
 
-=== Accountability
+=== Suivi des réalisations
 
 The *accountability* component works like a project management system built into the platform. . It offers the possibility of:
 
-* subdividing results into projects or sub-projects
-* defining and applying progress in implementation statuses (0% to 100% implemented) around their implementation
-* displaying the extent of the results’ implementation grouped by categories and scopes
+* subdiviser les réalisations en projets ou sous-projets
+* définir et appliquer les mesures des progrès dans la mise en œuvre (de 0 % à 100 % mis en œuvre) des réalisations
+* afficher l'avancement de l'implémentation des réalisations regroupées par catégories et secteurs
 
-Results, projects and statuses can be updated through a CVS, or manually by the administration interface.
+Les réalisations, les projets et les statuts peuvent être mis à jour via un CSV, ou manuellement via l'interface d'administration.
 
 === Conferences
 
