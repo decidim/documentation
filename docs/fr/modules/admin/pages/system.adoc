@@ -52,54 +52,54 @@ TIP: Please mind that some of these fields can't change through the System Form,
 
 .System New Organization form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Name
-|Required
+|Nom
+|Obligatoire
 |Name of your organization. For instance, "Decidim Barcelona".
 
 |Reference prefix
-|Required
+|Obligatoire
 |The reference prefix is used to uniquely identify resources across all organizations. It's for identifying different resources inside of Decidim. For instance, "BCN". You can change how it's created this reference through xref:configure:initializer.adoc[Decidim's initializer] (see **Custom resource reference**).
 
 |Host
-|Required
+|Obligatoire
 |Fully qualified domain name. For instance, "example.org" or "decidim.barcelona".
 
 |Secondary hosts
-|Optional
+|Facultatif
 |Others domains or subdomains that point to this same installation. Normally this shouldn't be used. Enter each one of them in a new line. For instance, "example.com"
 
 |Organization admin name
-|Required
+|Obligatoire
 |Name of the admin account. For instance, "Admin"
 
 |Organization admin email
-|Required
+|Obligatoire
 |Email for the admin account. For instance, "admin@example.org"
 
 |Organization locales
-|Required
+|Obligatoire
 |You'll need to configure at least one language. Decidim is multilanguage, meaning that you can have most of the admin contents with any number of languages. For seeing other languages you'll need to configure first the xref:configure:initializer.adoc[Decidim's initializer].
 
 |Force authentication
-|Optional
+|Facultatif
 |Check if you want to **Force users to authenticate before access organization**. That means that they don't see any published content and they only have access to the log-in form.
 
 |Users registration mode
-|Optional
+|Facultatif
 |Control how you want the login / participant register or signup to work. See below.
 
 |Available authorizations
-|Optional
+|Facultatif
 |How you want to authorize and verify that your participants are who they say they are. It depends a lot on your Organization, country, etc. See xref:customize:authorizations.adoc[Authorizations customization].
 
 |SMTP settings
-|Optional
+|Facultatif
 |Allows you to configure different SMTP servers for every Organzation in this installation. See xref:services:smtp.adoc[SMTP configuration].
 
 |Omniauth settings
-|Optional
+|Facultatif
 |Allows you to configure through external OAUTH providers for every Organization in this installation. See xref:services:social_providers.adoc[Social providers configuration].
 |===
 
