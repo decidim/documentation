@@ -11,36 +11,36 @@ image:features/my_account/account.png[My account form]
 
 .Participant settings - My account form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Avatar
-|Optional
+|Facultatif
 |Avatar or picture for the participant. Guidance for image: Preferrably a landscape image that does not have any text.
 The service crops the image. Maximum file size: 5MB
 
 |Your name
-|Required
+|Obligatoire
 |The name of the participant.
 
 |Nickname
-|Required
+|Obligatoire
 |The nickname of the participant.
 
 |Your email
-|Required
+|Obligatoire
 |The email of the participant, where she'll receive notifications, password recovery, etc. If it's changed it needs to be
 confirmed.
 
 |Personal URL
-|Optional
+|Facultatif
 |Metadata that is displayed in the participant's profile.
 
 |About
-|Optional
+|Facultatif
 |Metadata that is displayed in the participant's profile.
 
 |Locale
-|Required
+|Obligatoire
 |Choose the language you want to use to browse and receive notifications in Decidim
 |===
 
