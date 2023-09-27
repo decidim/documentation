@@ -22,10 +22,10 @@ so it's possible to configure this.
 
 .ID Documents authorization configuration
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Available methods
-|Required
+|Obligatoire
 |At least one method must be selected. Options: Online and/or Offline.
 
 |Instructions for offline verification
@@ -112,18 +112,18 @@ image:authorizations_id_document_offline_confirm.png[ID document authorization o
 
 .ID Documents authorization offline flow
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Participant email
-|Required
+|Obligatoire
 |Email of the registered participant
 
 |Type of the document
-|Required
+|Obligatoire
 |Can be: DNI, NIE or Passport
 
 |Document number (with letter)
-|Required
+|Obligatoire
 |Document number of the participant. For instance, "12345678Z"
 |===
 
