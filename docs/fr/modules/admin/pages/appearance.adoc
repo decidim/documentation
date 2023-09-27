@@ -33,46 +33,46 @@ NOTE: This is a legacy setting that will be removed in the next version. Il n'y 
 ** *Brève description*
 ** *Titre du bouton d'action*
 ** *Sous-titre du bouton d'action*
-** *Action button URL*
+** *URL du bouton d'action*
 ** *Image*
 
 ---
 
-* *Edit omnipresent banner*
-** **Show omnipresent banner**
-** **Title**
-** **Short description**
+* *Modifier la bannière permanente*
+** **Activer la bannière permanente**
+** **Titre**
+** **Brève description**
 ** **URL**
 
 ---
 
-* **Edit layout appearance**
+* **Modifier l’aspect de la mise en page**
 
-This subsection defines the images for the layout that will be visible in almost all the pages. These are:
+Cette sous-section définit les images de mise en page qui seront visibles dans presque toutes les pages. Il s'agit de :
 
-** Icon
+** Icône
 ** Logo
-** Official logo header
-** Official logo footer
-** Official organization URL
+** Logo officiel - barre de navigation
+** Logo officiel - pied de page
+** Url officielle de l'organisation
 
 // TODO: Add examples
 
 ---
 
-* **Organization colors**: What are the colors for your organization. Please notice that this could generate accessibility problems, for instance with people that doesn't have a good contrast notion. You can set
-** Primary
-** Secondary
-** Success
-** Warning
-** Alert
-** Highlight
-** Highlight, alternative
+* **Couleurs de l'organisation** : Les couleurs de votre organisation. Veuillez noter que cela peut générer des problèmes d'accessibilité, par exemple pour les utilisateurs souffrant de certains types de daltonisme et d'autres particularités similaires, qui rencontrent un faible contraste et ont du mal à faire la différence entre des couleurs proches. Vous pouvez définir les couleurs suivantes :
+** Couleur primaire
+** Couleur secondaire
+** Couleur de succès
+** Couleur d'avertissement
+** Couleur d'alerte
+** Couleur de surbrillance
+** Couleur de surbrillance alternative
 
 // TODO: Add examples
 
 ---
 
-* **Header snippets**: Use this field to add things to the HTML head. The most common use is to integrate third-party services that require some extra JavaScript or CSS. Also, you can use it to add extra meta tags to the HTML. Note that this will only be rendered in public pages, not in the admin section.
+* **Header snippets**: Utilisez ce champ pour ajouter des éléments à la HTML head. L’utilisation la plus courante est d’intégrer des services tiers qui nécessitent du JavaScript ou du CSS supplémentaires. De plus, vous pouvez l'utiliser pour ajouter des balises méta supplémentaires au HTML. Notez que cela ne sera rendu que dans les pages publiques, pas dans la section admin.
 
 // TODO: reference to HTML snippet setting
