@@ -1,94 +1,93 @@
-= Amendments
+= Amendements
 
-With the amendment feature, participants can propose changes to an already published proposal.
+Grâce à la fonctionnalité d'amendement, les participants peuvent proposer des modifications à une proposition déjà publiée.
 
-It's useful to propose improvements or corrections, specially useful when redacting laws or normatives with xref:components/proposals/participatory_texts.adoc[Participatory Texts].
+Il est utile de proposer des améliorations ou des corrections, particulièrement utile lors de la rédaction de lois ou autre avec xref:components/propositions/participatory_texts.adoc[Textes participatifs].
 
-It has similarities with xref:components/proposals/collaborative_drafts.adoc[Collaborative Drafts], but the main difference
-is that with amendments there is no need to trust the other authors intentions, as every change is reviewed and must be
-approved by the author of the original proposal.
+Il y a des similitudes avec les xref:components/proposals/collaborative_drafts. doc[Brouillons collaboratifs], mais la principale différence
+est qu'avec les amendements chaque changement est relu et doit être
+approuvé par l'auteur de la proposition.
 
-image:components/proposals/amendments/amendment.png[Amendment of a proposal]
+image:composents/propositions/amendements/amendement.png[Amendement d'une proposition]
 
-To configure "Amendments" in proposals component:
+Pour configurer les "Amendements" dans le module de propositions:
 
 . Sign in as admin
 . Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
 For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Go to components
-. Click on "Add component" button
-. Click on "Proposals"
-. Check the "Amendments enabled" setting
-. Review and configure the following related settings: "Amendments Wizard help text" in global component settings and "Amendment creation enabled", "Amendment reaction enabled", "Amendment promotion enabled", and "Amendments visibility" in the step component settings.
-. Save the component
+. Aller dans les fonctionnalités
+. Cliquez sur le bouton "Ajouter une fonctionnalité"
+. Cliquer sur "Propositions"
+. Cochez la case de configuration "Amendements activés"
+. Examinez et configurez les paramètres de configuration suivants : "Texte d'aide de l'assistant" dans les paramètres globaux des composants et "Création d'amendement activée","Réaction aux amendements activée", "Promotion d'amendement activée" et "Visibilité des amendements" dans les paramètres du composant d'étape.
+. Enregistrez le composant
 
-== How it works
+== Comment ça marche
 
-. A participant (Alice) has created a proposal
-. Another participant (Bob) has seen the proposal and wants to make some changes
-image:components/proposals/amendments/proposal_to_amend.png[]
-. Bob click on the "Amend proposal" button
-. Bob makes the changes in the "Create amendment draft" form
-image:components/proposals/amendments/create_amendment_draft.png[]
-. Bob checks if there is any similar amendment
-. Bob edits the amendment draft
-image:components/proposals/amendments/edit_amendment_draft.png[]
-. Bob publishes the amendment draft
-image:components/proposals/amendments/publish_amendment_draft.png[]
-. Anyone can see the amendment draft
-image:components/proposals/amendments/proposal_amendmed.png[]
-image:components/proposals/amendments/amendment_list.png[]
-image:components/proposals/amendments/amendment_view_side_by_side.png[]
-. It's also possible to filter the amended proposals
-image:components/proposals/amendments/amendment_list_filter.png[]
-. Alice receives a notification that Bob has proposed an amendment to her original proposal
-image:components/proposals/amendments/proposal_amendmed_notification.png[]
-. Alice can see the amendment proposal
-image:components/proposals/amendments/proposal_amendmed_to_review.png[]
-. Alice can review the amendment proposal
-image:components/proposals/amendments/proposal_amendmed_review.png[]
-. Alice can approve the amendment proposal
-image:components/proposals/amendments/proposal_amendmed_accepted.png[]
-. Anyone can see the final proposal
-image:components/proposals/amendments/proposal_amendmed_final.png[]
-image:components/proposals/amendments/proposal_amendmed_amendment_list.png[]
-. Anyone can see the versions history of the proposal
-image:components/proposals/amendments/proposal_amendmed_versions.png[]
+. Une participante (Alice) a créé une proposition
+. Un autre participant (Bob) a vu la proposition et veut apporter des modifications
+image:composents/propositions/amendements/proposal_to_amende.png[Proposition à amender]
+. Bob clique sur le bouton "Amender"
+. Bob fait les modifications dans le formulaire "Créer un brouillon d'amendement"
+image:composents/propositions/amendements/create_amendement_draft.png[]
+. Bob vérifie qu'il n'y ait pas d'amendement similaire
+. Bob modifie le brouillon d'amendement
+image:components/proposs/amendements/edit_amendement_draft.png[]
+. Bob publie le brouillon d'amendement
+image:components/proposs/amendements/publish_amendement_draft.png[]
+. Tout le monde peut voir la proposition d'amendement
+image:components/proposals/amendements/amendements/amendemed.png[]
+image:components/proposals/amendements/amendements/amendement_list.png[]
+image:components/proposals/amendements/amendements/amendement_view_side_by_side.png[]
+. Il est également possible de filtrer les propositions amendées
+image:composents/propositions/amendements/amendement_list_filter.png[]
+. Alice reçoit une notification que Bob a proposé un amendement à sa proposition originale
+image:components/propositions/amendements/proposal_amendemed_notification.png[]
+. Alice peut voir la proposition d'amendement
+image:components/proposs/amendements/proposal_amendemed_to_review.png[]
+. Alice peut examiner la proposition d'amendement
+image:components/proposs/amendements/proposal_amendemed_review.png[]
+. Alice peut approuver la proposition d'amendement
+image:components/proposs/amendements/proposal_amendemed_accepted.png[]
+. Tout le monde peut voir la proposition finale
+image:components/proposs/amendements/amendements/proposal_amendemed_final.png[]
+image:components/proposals/amendements/amendement_amendement_list.png[]
+. Tout le monde peut voir l'historique des versions de la proposition
+image:composents/propositions/amendements/proposal_amendemed_versions.png[]
 
-== Relevant component settings
+== Paramètres pertinents du composant
 
 
-.Proposals component form - Settings related to amendments
+.Formulaire du module Propositions - Paramètres liés aux amendements
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Amendments enabled
 |Global
-|Check to enable xref:components/proposals/amendments.adoc[amendments] in proposals. Other settings visible when enabling one.
+|Check to enable xref:components/proposals/amendments.adoc[amendments] in proposals. Autres paramètres visibles en activant un.
 
 |Amendments Wizard help text
 |Global
 |What's the help text visible when creating new amendments.
 
-|Amendment creation enabled
-|Step
+|Création d'amendement activée
+|Étape
 |Participant can amend proposals. See xref:components/proposals/amendments.adoc[Amendments].
 
 |Amendment reaction enabled
-|Step
+|Étape
 |Proposal's authors will be able to accept or reject Participant's emendations.
 
 |Amendment promotion enabled
-|Step
+|Étape
 |Emandation authors will be able to promote to Proposal the rejected emendation.
 
 |Amendments visibility
-|Step
+|Étape
 |Choose one of "Amendments are visible to all" or "Amendments are visible only to their authors"
 |===
 
 == Promotion
 
-If a proposal is rejected and the "Amendment promotion enabled" is enabled, then the author that have made the rejected
-amendment will be able to promote to a new proposal the rejected emendation.
+Si une proposition est rejetée et que la fonction "Promotion d'amendements activée" est activée, alors l'auteur de l'amendement rejeté pourra le promouvoir en tant que nouvelle proposition.
