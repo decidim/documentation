@@ -18,28 +18,28 @@ For creating a new media link of a conference:
 . Click on the conference Edit action
 . Click on the "Media links" link in the sidebar
 . Click on the "New Media Link" button
-. Fill the form
+. Remplissez le formulaire
 
 image:spaces/conferences/new_media_link.png[Create a new conferences media link]
 
 
 .New media link form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Title
-|Required
+|Titre
+|Obligatoire
 |The title of the link
 
 |Link
-|Required
+|Obligatoire
 |URL of the link
 
 |Date
-|Required
+|Obligatoire
 |Published date of the link
 
 |Weight
-|Optional
-|Which order will it have in relation to the other links. Having a lower number means a higher priority. For instance, if you have two links, "Link a" with weight "10" and "Link b" with weight "0", then "Link b" will be first when ordering.
+|Facultatif
+|Which order will it have in relation to the other links. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. For instance, if you have two links, "Link a" with weight "10" and "Link b" with weight "0", then "Link b" will be first when ordering.
 |===
