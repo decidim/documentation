@@ -15,17 +15,17 @@ For creating a new speaker of a conference:
 . Click on the conference Edit action
 . Click on the Speakers link in the sidebar
 . Click on the "New Conference Speaker" button
-. Fill the form
+. Remplissez le formulaire
 
 image:spaces/conferences/new_speaker.png[Conferences speakers]
 
 
 .New conference speaker form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Participant type
-|Required
+|Obligatoire
 |Wheter this speaker is a non-participant or existing participant. Does she already have an account created on the platform?
 
 |Full name
@@ -37,31 +37,31 @@ image:spaces/conferences/new_speaker.png[Conferences speakers]
 |Type at least three characters to search.
 
 |Related meetings
-|Optional
+|Facultatif
 |Which meetings does this speaker attend and participates actively?
 
 |Position
-|Required
+|Obligatoire
 |Metadata for showing extra information about the speaker.
 
 |Affiliation
-|Required
+|Obligatoire
 |Metadata for showing extra information about the speaker.
 
 |Short Bio
-|Optional
+|Facultatif
 |Metadata for showing extra information about the speaker.
 
 |Twitter handle
-|Optional
+|Facultatif
 |Metadata for showing extra information about the speaker.
 
 |Personal URL
-|Optional
+|Facultatif
 |Metadata for showing extra information about the speaker.
 
 |Avatar
-|Optional
+|Facultatif
 |Metadata for showing extra information about the speaker.
 
 Default image
