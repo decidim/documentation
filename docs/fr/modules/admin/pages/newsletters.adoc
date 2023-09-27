@@ -74,10 +74,10 @@ replaced by the recipient's name.
 
 .New Newsletter "basic (only text)" form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Subject
-|Required
+|Obligatoire
 |Subject of the email.
 
 |Body
@@ -94,10 +94,10 @@ image::newsletter_new_cta02.png[Newsletter new template text, image and CTA form
 
 .New Newsletter "Image, text and Call To Action button" form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Subject
-|Required
+|Obligatoire
 |Subject of the email.
 
 |Introduction
