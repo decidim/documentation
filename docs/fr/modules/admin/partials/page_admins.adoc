@@ -20,18 +20,18 @@ image:spaces/admins_form.png[New space admin form]
 
 .New space admin form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Name
-|Required
+|Nom
+|Obligatoire
 |What is the name of the new admin.
 
 |Email
-|Required
+|Obligatoire
 |What is the email of the new admin, so she can receive the invitation.
 
 |Role
-|Required
+|Obligatoire
 |Which role does this admin will have in the participatory process? Can be any of Administrator, Collaborator, Moderator, or Valuator.
 |===
 
