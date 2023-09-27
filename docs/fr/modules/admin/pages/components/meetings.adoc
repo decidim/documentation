@@ -34,94 +34,94 @@ For adding the component, you need to:
 
 . Sign in as admin
 . Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
 For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Go to components
-. Click on "Add component" button
+. Aller dans les fonctionnalités
+. Cliquez sur le bouton "Ajouter une fonctionnalité"
 . Click on "Meetings"
-. Fill the xref:_add_component[Add component] form
+. Remplissez le formulaire xref:_add_component[Ajouter une fonctionnalité]
 
-== Add component
+== Ajouter une fonctionnalité
 
 For configuring the meeting component you have these settings:
 
 
 .Add component - Meetings form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Name
-|Required
+|Nom
+|Obligatoire
 |What is the name of this component.
 
-|Order position
-|Optional
-|Which order will it have in relation with the other components. Having a lower number means a higher priority. For instance,
+|Rang d'affichage
+|Facultatif
+|Which order will it have in relation with the other components. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. For instance,
 if you have two components, "Proposals" with weight "10" and "Meetiings" with weight "0", then "Meetings" will be first when ordering.
 |===
 
 
 .Add component - Meetings form: Global settings
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Scopes enabled
-|Optional
+|Facultatif
 |Check if you want to have Scopes filtering in this process.
 
-|Scope
-|Optional
+|Secteur
+|Facultatif
 |Which scope will be used for this component.
 
-|Announcement
-|Optional
+|Annonce
+|Facultatif
 |A general announcement that'll be visible in the general meetings list.
 
 |Default registration terms
-|Optional
+|Facultatif
 |What'll be the registration terms of service that the participant would need to accept when registering.
 
-|Comments enabled
-|Optional
-|Whether you want to have comments in the meetings.
+|Commentaires activés
+|Facultatif
+|Si vous voulez avoir des commentaires dans les rencontres.
 
-|Comments max length
-|Optional
-|What is the characters limit that participants will have when making comments. Leave 0 for default value.
+|Longueur maximale des commentaires
+|Facultatif
+|Quelle est la limite de caractères que les participants auront quand ils feront des commentaires. Laisser 0 pour la valeur par défaut.
 
 |Registration code enabled
-|Optional
+|Facultatif
 |Check if you want to give registration codes to participants. Learn more in xref:components/meetings/registrations.adoc[Registrations].
 
 |Actions permissions can be set for each meeting
-|Optional
+|Facultatif
 |If you want more granular permissions inside of every one of the Meetings.
 
 |Enable pads creation
-|Optional
+|Facultatif
 |If you want an Etherpad embedded in your meetings. Must have the xref:services:etherpad.adoc[Etherpad] integration configurated.
 
 |Participants can create meetings
-|Optional
+|Facultatif
 |Allows participants to create new meetings. See xref:_citizens_meetings[Citizens meetings]
 
 |Maps enabled
-|Optional
+|Facultatif
 |Wheter you want to show a map in the meetings in the meeting detail.
 |===
 
 
 .Add component - Meetings form: Step settings
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Announcement
-|Optional
+|Annonce
+|Facultatif
 |A general announcement that'll be visible in the general meetings list.
 
-|Comments enabled
-|Optional
-|Whether you want to have comments in the meetings.
+|Commentaires activés
+|Facultatif
+|Si vous voulez avoir des commentaires dans les rencontres.
 |===
 
 == Create a new meeting
@@ -138,18 +138,18 @@ image:components/meetings/new_meeting_form_frontend02.png[Create a new meeting f
 
 .Create meeting - Frontend form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Title
-|Required
+|Titre
+|Obligatoire
 |What is the title for this meeting.
 
 |Description
-|Required
+|Obligatoire
 |A description of what will be discussed in this meeting, like the topics.
 
 |Type
-|Required
+|Obligatoire
 |Choose one option between "In person", "Online" or "Booth"
 
 |Address
@@ -157,35 +157,35 @@ image:components/meetings/new_meeting_form_frontend02.png[Create a new meeting f
 |Address: used by Geocoder to find the location
 
 |Location
-|Required
+|Obligatoire
 |Location: message directed to the users implying the spot to meet at
 
 |Location hints
-|Optional
+|Facultatif
 |Location hints: additional info. Example: the floor of the building
 
 |Online meeting URL
-|Optional
+|Facultatif
 |Which URL will the meeting be held.
 
 |Show embedded iframe for this URL
-|Optional
+|Facultatif
 |Whether or not embed the iframe for this videoconference URL. Only a few services allow embedding (i.e. YouTube, Twitch...)
 
 |Start Time
-|Required
+|Obligatoire
 |Which day and time will the meeting start. Expected format: dd/mm/yyyy hh:ii
 
 |End Time
-|Required
+|Obligatoire
 |Which day and time will the meeting start. Expected format: dd/mm/yyyy hh:ii
 
-|Category
-|Optional
+|Catégorie
+|Facultatif
 |Which Category has the meeting. Used for filtering in the meetings list.
 
 |Registration type
-|Required
+|Obligatoire
 |Choose one option between "Registration disabled", "On this platform", or "On a different platform"
 
 |Available slots for this meeting
@@ -214,18 +214,18 @@ image:components/meetings/new_meeting_form_backend.png[Create a new meeting form
 
 .Create meeting - Backend form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Title
-|Required
+|Titre
+|Obligatoire
 |What is the title for this meeting.
 
 |Description
-|Required
+|Obligatoire
 |A description of what will be discussed in this meeting, like the topics.
 
 |Type
-|Required
+|Obligatoire
 |Choose one option between "In person", "Online" or "Booth"
 
 |Address
@@ -233,35 +233,35 @@ image:components/meetings/new_meeting_form_backend.png[Create a new meeting form
 |Address: used by Geocoder to find the location
 
 |Location
-|Required
+|Obligatoire
 |Location: message directed to the users implying the spot to meet at
 
 |Location hints
-|Optional
+|Facultatif
 |Location hints: additional info. Example: the floor of the building
 
 |Online meeting URL
-|Optional
+|Facultatif
 |Which URL will the meeting be held.
 
 |Show embedded iframe for this URL
-|Optional
+|Facultatif
 |Whether or not embed the iframe for this videoconference URL. Only a few services allow embedding (i.e. YouTube, Twitch...)
 
 |Start Time
-|Required
+|Obligatoire
 |Which day and time will the meeting start. Expected format: dd/mm/yyyy hh:ii
 
 |End Time
-|Required
+|Obligatoire
 |Which day and time will the meeting start. Expected format: dd/mm/yyyy hh:ii
 
-|Category
-|Optional
+|Catégorie
+|Facultatif
 |Which Category has the meeting. Used for filtering in the meetings list.
 
 |Registration type
-|Required
+|Obligatoire
 |Choose one option between "Registration disabled", "On this platform", or "On a different platform"
 
 |Available slots for this meeting
@@ -273,16 +273,16 @@ image:components/meetings/new_meeting_form_backend.png[Create a new meeting form
 |Must be an URL. Link to go on the external service that you are using for registrations.
 
 |Private meeting
-|Optional
+|Facultatif
 |Check if the meeting shouldn't be visible for all the visitors. Specific to "Official meetings".
 
 |Transparent
-|Optional
+|Facultatif
 |Related to "Private meeting", check if the meeting should be visible for all the visitors but they shouldn't be able to
 participate in. Specific to "Official meetings". Specific to "Official meetings".
 
 |Customize registration email
-|Optional
+|Facultatif
 |Wheter you want to add a message in the registration email. Specific to "Official meetings".
 
 |Registration email custom content
@@ -297,14 +297,14 @@ a place for children, deaf assistance, translations, etc. You can have multiple 
 
 .Create meeting - Services
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Title
-|Required
+|Titre
+|Obligatoire
 |Title of the service.
 
 |Description
-|Optional
+|Facultatif
 |Description of the service.
 |===
 
@@ -315,14 +315,14 @@ a place for children, deaf assistance, translations, etc. You can have multiple 
 
 .Actions - Citizens meetings
 |===
-|Icon |Name |Definition
+|Icône |Nom |Definition
 
 |image:action_preview.png[Preview icon]
 |Preview
-|To see how it's shown in the frontend to participants.
+|Pour voir comment il est montré dans le frontend aux participants.
 
 |image:action_permissions.png[Permissions icon]
-|Permissions
+|Autorisations
 |To handle the permissions of this meeting, depending on the verification a participant has. Allows an admin to configure
 who can *Join* a meeting.
 |===
@@ -332,7 +332,7 @@ who can *Join* a meeting.
 
 .Actions - Official meetings
 |===
-|Icon |Name |Definition
+|Icône |Nom |Definition
 
 |image:action_publish.png[Publish icon]
 |Publish
@@ -344,7 +344,7 @@ who can *Join* a meeting.
 
 |image:action_preview.png[Preview icon]
 |Preview
-|To see how it's shown in the frontend to participants.
+|Pour voir comment il est montré dans le frontend aux participants.
 
 |image:action_duplicate.png[Duplicate icon]
 |Duplicate
@@ -370,8 +370,8 @@ who can *Join* a meeting.
 |xref:admin:components/meetings/close.adoc[Close]
 |Allows and admin to Close the meeting and add extra information.
 
-|image:action_folder.png[Folders icon]
-|Folders
+|image:action_folder.png[Icône des dossiers]
+|Dossiers
 |For classifying Attachments.
 
 |image:action_attachments.png[Attachments icon]
@@ -379,7 +379,7 @@ who can *Join* a meeting.
 |Documents that are related to the meeting.
 
 |image:action_permissions.png[Permissions icon]
-|Permissions
+|Autorisations
 |To handle the permissions of this meeting, depending on the verification a participant has. Allows an admin to configure
 who can *Join* a meeting.
 
