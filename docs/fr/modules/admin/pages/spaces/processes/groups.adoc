@@ -25,24 +25,24 @@ image::processes_group_new_form.png[New participatory process group form]
 
 .New participatory process group form: General information
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Title
-|Required
+|Titre
+|Obligatoire
 |Title of the participatory process group. For instance, "Participatory Budgeting".
 
 |Description
-|Required
+|Obligatoire
 |A long explanation of what's your participatory process about.
 
 |Related processes
-|Optional
+|Facultatif
 |Which are the processes that are related to this one? They will be used for populating
 the Content Blocks in the Landing page of this Process group. For selecting multiple you'll
 need to use the *ctrl* function.
 
 |Image
-|Optional
+|Facultatif
 |Image that will be used in presentation cards of this process group. Guidance for image:
 Preferably a landscape image that does not have any text. The service crops the image.
 Maximum file size: 10MB. Allowed file extensions: jpeg jpg png
@@ -51,43 +51,43 @@ Maximum file size: 10MB. Allowed file extensions: jpeg jpg png
 
 .New participatory process group form: Metadata
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 Hashtag
 Website
 
 |Promoter group
-|Optional
+|Facultatif
 |Information that's displayed in the process metadata content block.
 
 |Organization area
-|Optional
+|Facultatif
 |Information that's displayed in the process metadata content block.
 
 |Scope metadata
-|Optional
+|Facultatif
 |Information that's displayed in the process metadata content block.
 
 |Who participates
-|Optional
+|Facultatif
 |Information that's displayed in the process metadata content block.
 
 |What is decided
-|Optional
+|Facultatif
 |Information that's displayed in the process metadata content block.
 
 |How is it decided
-|Optional
+|Facultatif
 |Information that's displayed in the process metadata content block.
 |===
 
 
 .New participatory process group form: Visibility
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Promoted
-|Optional
+|Facultatif
 |Check if you want the process to have more visibility in the Process public list. It'll also be visible in the
 ParticpipatoryProcess Content Block in the xref:admin:homepage.adoc[Homepage] configuration. This is accessible in the btn:[Edit] action in a Process.
 |===
