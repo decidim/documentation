@@ -32,64 +32,64 @@ image:admin_initiative_type.png[New initiative type form]
 
 .Admin new initiative type form: General information
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Title
-|Required
+|Titre
+|Obligatoire
 |Title of the initiative type. For instance, "New park at city center".
 
 |Description
-|Required
+|Obligatoire
 |Explanation of what can be done with this initiative type.
 
 |Banner image
-|Required
+|Obligatoire
 |An image for this initiative type. NOTE: At the moment this is not used.
 |===
 
 
 .Admin new initiative type form: Options
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Signature type
-|Optional
+|Facultatif
 |Which kind of signature type will be allowed. Options are: Online, In-person and Mixed. The Mixed option allows a participant to choose which signature type will have the initiative.
 
 |Enable attachments
-|Optional
+|Facultatif
 |Whether it'll allow to upload attachments to initiatives.
 
 |Enable participants to undo their online signatures
-|Optional
+|Facultatif
 |Can a participant undo its signature when they already signed?
 
 |Enable authors to choose the end of the signature collection period
-|Optional
+|Facultatif
 |Can the authors of an initiative change the end of the signature collection period?
 
 |Enable authors to choose the area for their initiative
-|Optional
+|Facultatif
 |Can the authors choose the area of their initiative?
 
 |Enable child scope signatures
-|Optional
+|Facultatif
 |This config flag doesn't support offline votes, it enables sub-scopes and works with an authorization handler that associates a scope to the user, make sure you select that authorization, bellow in authorization settings. For it to work, scopes need to be configured in a hierarchical way : 1 Parent - N Child.
 
 |Only allow global scope initiatives creation
-|Optional
+|Facultatif
 |Tick this flag if you enabled "Child scope signature" and configured the global scope as your parent scope. By enabling this, scope selection will be skipped in the initiative creation wizard.
 
 |Enable promoting committee
-|Optional
+|Facultatif
 |Whether it will only allow individual initiatives (made by only one person) or allow collective initiatives (multiple promoters, being multiple individuals or a user group).
 
 |Minimum of committee members
-|Optional
+|Facultatif
 |When "Enable promoting committee" option is checked, defines the minimum number of promoter's committee member to send the initiative to technical validation
 
 |Collect participant personal data on signature
-|Optional
+|Facultatif
 |Adds a step to the signature process. When a participant clicks on the signature button, she'll be redirected to a form asking for some personal data. This will be used with the PDF export action after the recollection period has ended.
 
 |Legal information about the collection of personal data
@@ -100,10 +100,10 @@ image:admin_initiative_type.png[New initiative type form]
 
 .Admin new initiative type form: Authorization settings
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Authorization to verify document number on signatures
-|Optional
+|Facultatif
 |When a participant is making the signature process, will she be asked for an authorization?
 
 |Add SMS code validation step to the signature process
@@ -120,14 +120,14 @@ image:admin_initiative_type_scope.png[New initiative type form]
 
 .Admin new initiative type scope form
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
 |Scopes
-|Required
+|Obligatoire
 |A Scope. An author can choose this scope in the creation of the initiative.
 
 |Signatures required
-|Required
+|Obligatoire
 |Number of signatures the initiative need to have before the end period so it can be accepted.
 |===
 
@@ -237,11 +237,11 @@ Regarding the actions in an initiative, an administrator can "Preview", "Edit", 
 image:initiative_admin_list_actions.png[Initiative admin list actions]
 
 |===
-|Icon |Name |Definition
+|Icône |Nom |Definition
 
 |image:action_preview.png[Preview icon]
 |Preview
-|To see how it's shown in the frontend to participants.
+|Pour voir comment il est montré dans le frontend aux participants.
 
 |image:action_edit.png[Edit icon]
 |Edit
@@ -256,7 +256,7 @@ image:initiative_admin_list_actions.png[Initiative admin list actions]
 |Allows to print.
 |===
 
-=== Components
+=== Fonctionnalités
 
 Once an initiative has been created it gets the Meetings and Page component enabled by
 default. The initiative author has no control over these - an admin will need to manage
