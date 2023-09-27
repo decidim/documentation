@@ -22,7 +22,7 @@ For adding a new registration type, you need to:
 . Click on the conference Edit action
 . Click on the "Registration types" link in the sidebar
 . Click on the "New Registration type" button
-. Fill the form
+. Remplissez le formulaire
 . Publish the registration type
 
 image:spaces/conferences/new_registration_type.png[Create a new registration type form]
@@ -32,21 +32,21 @@ image:spaces/conferences/registration_types_backend.png[Manage registration type
 
 .Create a new registration type
 |===
-|Field |Type |Description
+|Champ |Type |Description
 
-|Title
-|Required
+|Titre
+|Obligatoire
 |What is the title of this registration type.
 
 |Weight
-|Which order will it have in relation to the other types. Having a lower number means a higher priority. For instance, if you have two types, "Day 1" with weight "10" and "Day 2" with weight "0", then "Day 2" will be first when ordering.
+|Which order will it have in relation to the other types. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. For instance, if you have two types, "Day 1" with weight "10" and "Day 2" with weight "0", then "Day 2" will be first when ordering.
 |Description
 
-|Required
+|Obligatoire
 |Description for this registration type
 |Price
 
-|Optional
+|Facultatif
 |Define a price for this registration type. If you don't define a price, the price will be "Free".
 |Select conference meetings
 |===
