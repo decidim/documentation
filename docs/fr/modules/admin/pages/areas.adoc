@@ -1,11 +1,11 @@
-= Areas
+= Périmètres d'assemblée
 
 include::partial$deprecated.adoc[]
 
-Areas are all the sectors that an Organization can have.
+Les périmètres d'assemblée sont tous les périmètres qu'une organisation peut avoir.
 
-They are pretty similar to xref:admin:scopes.adoc[scopes], meaning that they are a way of allowing a better navigation and filtering in the spaces and components.
+Ils sont assez similaires aux xref:admin:scopes.adoc[scopes], ce qui signifie qu'ils sont un moyen de permettre une meilleure navigation et un meilleur filtrage dans les espaces et les fonctionnalités.
 
-We don't recommend using them, as probably in the future they will be removed.
+Nous ne recommandons pas de les utiliser, car dans le futur elles seront probablement supprimées.
 
-You can read more information about the history of Areas in this https://github.com/decidim/decidim/issues/3540#issuecomment-427324532[GitHub comment].
+Vous pouvez lire plus d'informations sur l'histoire des périmètres d'assemblée dans ce https://github.com/decidim/decidim/issues/3540#issuecomment-427324532[commentaire GitHub].
