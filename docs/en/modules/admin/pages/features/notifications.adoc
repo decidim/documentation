@@ -39,7 +39,7 @@ Below is an exhaustive list of actions that trigger notifications to participant
 |                                          | A user I follow endorsed a resource                                                 | ✅     | ❌          | ❌
 |                                          | A public profile has been updated                                                     | ✅     | ❌          | ❌
 | User groups (if user groups are enabled) | A new user group has been created                                                     | ❌     | ❌          | ✅
-|                                          | A user group with the name has updated its profile                                    | ❌     | ❌          | ✅
+|                                          | A user group has updated its profile                                    | ❌     | ❌          | ✅
 |                                          | A user has been invited to join a user group                                          | ❌     | ✅          | ❌
 |                                          | A user has been promoted as group admin                                               | ❌     | ✅          | ❌
 |                                          | A user requested to join the user group                                               | ❌     | ✅          | ❌
@@ -91,8 +91,7 @@ Below is an exhaustive list of actions that trigger notifications to participant
 | Debates                                  | A debate has been created                                                             | ✅     | ❌          | ❌
 |                                          | Debate creation is enabled for participants                                           | ✅     | ❌          | ❌
 |                                          | Debate creation is no longer active                                                   | ✅     | ❌          | ❌
-|                                          | The debate was closed                                                                 | ✅     | ❌          | ❌
-|                                          | The debate was closed                                                                 | ❌     | ✅          | ❌
+|                                          | The debate was closed                                                                 | ✅     | ✅          | ❌
 | Meetings                                 | A meeting has been created                                                            | ✅     | ❌          | ❌
 |                                          | A meeting was closed                                                                  | ✅     | ✅          | ❌
 |                                          | A meeting was updated                                                                 | ✅     | ❌          | ❌
