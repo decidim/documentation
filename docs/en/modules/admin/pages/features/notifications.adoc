@@ -36,7 +36,7 @@ Below is an exhaustive list of actions that trigger notifications to participant
 |                                          | A user has reached a new badge level (if badges are enabled)                          | ❌     | ✅          | ❌
 |                                          | A user has been officialized                                                          | ❌     | ❌          | ✅
 |                                          | A user asked their data export                                                          | ❌     | ✅          | ❌
-|                                          | A user I follow endorsed an ressource                                                 | ✅     | ❌          | ❌
+|                                          | A user I follow endorsed a resource                                                 | ✅     | ❌          | ❌
 |                                          | A public profile has been updated                                                     | ✅     | ❌          | ❌
 | User groups (if user groups are enabled) | A new user group has been created                                                     | ❌     | ❌          | ✅
 |                                          | A user group with the name has updated its profile                                    | ❌     | ❌          | ✅
@@ -44,7 +44,7 @@ Below is an exhaustive list of actions that trigger notifications to participant
 |                                          | A user has been promoted as group admin                                               | ❌     | ✅          | ❌
 |                                          | A user requested to join the user group                                               | ❌     | ✅          | ❌
 |                                          | A user request has been accepted to join the user group                               | ❌     | ✅          | ❌
-|                                          | A user request has been rejected to join the user group                               | ❌     | ✅          | ❌
+|                                          | A user request to join the user group has been rejected                               | ❌     | ✅          | ❌
 |                                          | The group admin has been demoted                                                      | ❌     | ✅          | ❌
 |                                          | The user has been removed from the group                                              | ❌     | ✅          | ❌
 | Assemblies                               | An admin of the assembly has added you as one of its members                          | ❌     | ✅          | ❌
@@ -54,12 +54,12 @@ Below is an exhaustive list of actions that trigger notifications to participant
 |                                          | A new phase has been activated                                                        | ✅     | ❌          | ❌
 | Conferences                              | You have been assigned a role for the conference                                      | ❌     | ✅          | ❌
 |                                          | The registration to the conference has been confirmed                                 | ❌     | ✅          | ❌
-|                                          | The registration to the conference are open                                           | ✅     | ❌          | ❌
+|                                          | The registration for the conference is open                                           | ✅     | ❌          | ❌
 |                                          | The conference occupied slots are over X%                                             | ❌     | ❌          | ✅
 |                                          | The conference is taking place in 2 days                                              | ✅     | ❌          | ❌
 |                                          | The conference has been updated                                                       | ✅     | ❌          | ❌
 | Elections                                | The election is now active for the participatory space                                | ✅     | ❌          | ❌
-|                                          | You got added as a trustee for the election                                           | ❌     | ✅          | ❌
+|                                          | You are added as a trustee for the election                                           | ❌     | ✅          | ❌
 |                                          | An admin has added you as trustee                                                     | ❌     | ✅          | ❌
 |                                          | Your vote was accepted                                                                | ❌     | ✅          | ❌
 |                                          | You have been assigned a role of the Polling Station                                  | ❌     | ✅          | ❌
@@ -67,7 +67,7 @@ Below is an exhaustive list of actions that trigger notifications to participant
 | Initiatives                              | A user I follow created an initiative                                                 | ✅     | ❌          | ❌
 |                                          | My initiative has been created                                                        | ❌     | ✅          | ❌
 |                                          | A user I follow endorsed an initiative                                                | ✅     | ❌          | ❌
-|                                          | A user sent her initiative to technical validation                                    | ❌     | ❌          | ✅
+|                                          | A user sent their initiative to technical validation                                    | ❌     | ❌          | ✅
 |                                          | The initiative has changed its status                                                 | ✅     | ✅          | ❌
 |                                          | The signatures end date for the initiative have been extended                         | ✅     | ❌          | ❌
 |                                          | The request to be part of the promoter committee for the initiative has been accepted | ❌     | ✅          | ❌
@@ -80,9 +80,9 @@ Below is an exhaustive list of actions that trigger notifications to participant
 |                                          | The result progress has been updated                                                  | ✅     | ❌          | ❌
 | Blogs                                    | A post has been published                                                             | ✅     | ❌          | ❌
 | Budgets                                  | The budget is now active                                                              | ✅     | ❌          | ❌
-| Comments                                 | A ressource has been commented                                                        | ✅     | ❌          | ❌
-|                                          | A user group has left a comment on a ressource                                        | ✅     | ❌          | ❌
-|                                          | A user has left a comment on a ressource                                              | ✅     | ❌          | ❌
+| Comments                                 | A resource has a comment                                                      | ✅     | ❌          | ❌
+|                                          | A user group has left a comment on a resource                                        | ✅     | ❌          | ❌
+|                                          | A user has left a comment on a resource                                              | ✅     | ❌          | ❌
 |                                          | A user has replied your comment                                                       | ❌     | ✅          | ❌
 |                                          | A group you belong to has been mentioned                                              | ❌     | ✅          | ❌
 |                                          | You have been mentioned                                                               | ❌     | ✅          | ❌
