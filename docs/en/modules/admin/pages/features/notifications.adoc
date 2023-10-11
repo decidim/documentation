@@ -35,7 +35,7 @@ Below is an exhaustive list of actions that trigger notifications to participant
 |                                          | A user earned a badge (if badges are enabled)                                         | ❌     | ✅          | ❌
 |                                          | A user has reached a new badge level (if badges are enabled)                          | ❌     | ✅          | ❌
 |                                          | A user has been officialized                                                          | ❌     | ❌          | ✅
-|                                          | A user asked her data export                                                          | ❌     | ✅          | ❌
+|                                          | A user asked their data export                                                          | ❌     | ✅          | ❌
 |                                          | A user I follow endorsed an ressource                                                 | ✅     | ❌          | ❌
 |                                          | A public profile has been updated                                                     | ✅     | ❌          | ❌
 | User groups (if user groups are enabled) | A new user group has been created                                                     | ❌     | ❌          | ✅
