@@ -1,32 +1,32 @@
-= Answers
+= Réponses
 
-Proposals answers allow an administrator or valuator to review a proposal and give it an official response.
+Les réponses aux propositions permettent à un administrateur ou à un évaluateur d'examiner une proposition et de lui donner une réponse officielle.
 
-image:components/proposals/proposal_answer_state_accepted.png[Proposal answer state: Accepted]
+image:components/propositions/proposal_answer_state_accepted.png[État de la réponse à la proposition : acceptée]
 
-For answering a proposal:
+Pour répondre à une proposition :
 
-. Sign in as admin or valuator
+. Se connecter en tant qu'administrateur ou évaluateur
 . Go to admin panel
 . Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
 For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Click in the "Proposals" component
-. Search the proposal you want to answer
-. Click in the "Proposal answer" button image:action_answer.png[Answer proposal icon]
+. Cliquer dans le composant "Propositions"
+. Rechercher la proposition auquelle vous souhaitez répondre
+. Cliquer sur le bouton "Répondre à la proposition" image:action_answer.png[Icône de réponse à la proposition]
 . Remplissez le formulaire
 
-Alternatively, you could also:
+Alternativement, vous pouvez aussi :
 
-. Sign in as admin or valuator
-. Navigate to the proposal you want to answer
-. Click in the proposal answer button in the header image:components/proposals/answer_button_header.png[Answer proposal button]
+. Se connecter en tant qu'administrateur ou évaluateur
+. Rechercher la proposition auquelle vous souhaitez répondre
+. Cliquez dans le bouton de réponse à la proposition dans l'en-tête image:components/propositions/answer_button_header.png[Bouton de réponse à la proposition]
 . Remplissez le formulaire
 
-== Answer page
+== Page de réponse
 
-The answer page has three sections:
+La page de réponse a trois sections :
 
-=== Metadata
+=== Métadonnées
 
 It has general information about the proposal, like the link, who is the author, the proposal body, how many supports, endorsements, comments, and so on.
 
@@ -82,7 +82,7 @@ image:components/proposals/proposal_answer_state_evaluating.png[Proposal answer 
 
 After proposals have been accepted, they can be imported to the xref:components/budgets.adoc[budgets] component.
 
-image:components/proposals/proposal_answer_state_accepted.png[Proposal answer state: Accepted]
+image:components/propositions/proposal_answer_state_accepted.png[État de la réponse à la proposition : acceptée]
 
 === Rejected
 
@@ -96,12 +96,12 @@ For enabling automatic publication, you'll need to check it.
 
 On the other hand, if you want to control when to publish the answer a proposal or multiple proposals, you'll need to follow these steps:
 
-. Sign in as admin or valuator
+. Se connecter en tant qu'administrateur ou évaluateur
 . Go to admin panel
 . Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
 For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Click in the "Proposals" component
-. Search the proposal you want to answer
+. Cliquer dans le composant "Propositions"
+. Rechercher la proposition auquelle vous souhaitez répondre
 . Click in the left checkbox of the proposal that you want to publish
 . Click on the "Actions" button
 . Click on the "Publish answers" option
