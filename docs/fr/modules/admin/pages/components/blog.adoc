@@ -1,0 +1,145 @@
+= Actualités
+
+The Blog component allows people to read multiple posts ordered by date.
+
+Some examples of where this component was used:
+
+* https://meta.decidim.org/processes/roadmap/f/247/[News in Propose new functionalities for Decidim software] in https://meta.decidim.org[Metadecidim]
+
+image:components/blog/example01.png[Example of blog posts list]
+image:components/blog/example02.png[Example of a blog post]
+
+To configure the Blog component:
+
+. Sign in as admin
+. Go to admin panel
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+Par exemple, il peut s'agir de "Concertations", d'"Assemblées" ou de "Conférences".
+. Aller dans les fonctionnalités
+. Cliquez sur le bouton "Ajouter une fonctionnalité"
+. Cliquez sur "Actualités"
+. Remplissez le formulaire xref:_add_component[Ajouter une fonctionnalité]
+
+== Ajouter une fonctionnalité
+
+image:components/debates/component.png[Formulaire d'ajout de fonctionnalité]
+
+
+.Ajouter une fonctionnalité : Formulaire d'Actualités
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Quel est le titre de cette fonctionnalité. Par exemple, "Actualités"
+
+|Rang d'affichage
+|Facultatif
+|Quel ordre aura-t-il par rapport aux autres fonctionnalités Actualités. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux fonctionnalités Actualités, "Actualités A" avec le rang "10" et "Actualités B" avec le rang "0", alors "Actualités B" sera la première fonctionnalité affichée.
+|===
+
+
+.Add component: Blog form - Global settings
+|===
+|Champ |Type |Description
+
+|Annonce
+|Facultatif
+|Une annonce générale qui sera visible sur la page générale des actualités.
+
+|Commentaires activés
+|Facultatif
+|Si vous voulez avoir des commentaires dans les rencontres.
+
+|Longueur maximale des commentaires
+|Facultatif
+|Quelle est la limite de caractères que les participants auront quand ils feront des commentaires. Laisser 0 pour la valeur par défaut.
+|===
+
+In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
+xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
+
+
+.Add component: Blogs form - Step settings
+|===
+|Champ |Type |Description
+
+|Annonce
+|Facultatif
+|Une annonce générale qui sera visible sur la page générale des actualités.
+
+|Commentaires désactivés
+|Facultatif
+|Si vous voulez activer la création de commentaires pour cette étape.
+
+|Soutiens activés
+|Facultatif
+|Si vous voulez activer les soutiens pour cette étape.
+
+|Soutiens bloqués
+|Facultatif
+|Whether you want to disable adding new endorsements for this phase.
+|===
+
+== Autorisations
+
+An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
+certain actions in the blogs:
+
+* Commenter
+* Soutenir
+
+== Manage posts
+
+image:components/blog/manage_posts.png[Manage posts table]
+
+=== Formulaire de création d'article d'actualités
+
+image:components/blog/new_post.png[New post form]
+
+
+.Formulaire de création d'article d'actualités
+|===
+|Champ |Type |Description
+
+|Créer un article en tant que
+|Obligatoire
+|Participant account or user group that will be the author of the post.
+
+|Titre
+|Obligatoire
+|Quel est le titre de cet article.
+
+|Body
+|Obligatoire
+|What is the description of this post.
+|===
+
+==== Actions
+
+
+.Actions
+|===
+|Icône |Nom |Definition
+
+|image:action_edit.png[Edit icon]
+|Edit
+|Edit form for this post. It's the same form as "New post".
+
+|image:action_folder.png[Folder icon]
+|Folder
+|For classifying Attachments.
+
+|image:action_attachments.png[Attachments icon]
+|Attachments
+|Documents that are related to the post.
+
+|image:action_permissions.png[Permissions icon]
+|Autorisations
+|To handle the permissions of this post, depending on the verification a participant has.
+
+|image:action_delete.png[Delete icon]
+|Delete
+|To delete this post.
+|===

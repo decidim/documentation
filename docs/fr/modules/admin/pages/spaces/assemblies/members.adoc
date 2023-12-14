@@ -1,0 +1,72 @@
+= Assembly members
+
+Assembly members allow showing all the people or groups that belong to a given assembly. It's useful for being transparent.
+
+You can see an example in https://meta.decidim.org/assemblies/coordination-committee/members[Decidim Coordination Commitee Assembly in Metadecidim].
+
+image:assembly_members.png[Assembly members of the Coordination Committee]
+
+== New assembly member form
+
+image:assembly_members_list.png[Assembly members admin list]
+
+For creating a new phase of a participatory process:
+
+. Sign in as administrator
+. Go to the assemblies section in the sidebar
+. Click on the assembly Edit action
+. Click on the Members link in the sidebar
+. Click on the "New member" button
+. Remplissez le formulaire
+
+image:assembly_members_new_form.png[Assembly members new form]
+
+
+.New assembly member form
+|===
+|Champ |Type |Description
+
+|Participant type
+|Obligatoire
+|Wheter this assembly member is non-participant or existing participant. Does she already have an account created on the platform?
+
+|Full name
+|Required if it's non-participant.
+|
+
+|User or group
+|Required if it's an existing participant.
+|Type at least three characters to search.
+
+|Position
+|Obligatoire
+|Choose one of President, Vice president, Secretary, or Other. In case it's other, you can fill in the position title.
+
+|Weight
+|Facultatif
+|Which order will it have in relation to the other members. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. For instance, if you have two members, "Member a" with weight "10" and "Member b" with weight "0", then "Member b" will be first when ordering.
+
+|Designation date
+|Obligatoire
+|When was this person or group assigned as a member of this assembly. Expected format: dd/mm/yyyy
+
+|Designation mode
+|Facultatif
+|How was this person designed.
+
+|Ceased date
+|Facultatif
+|When was this person or group ceased to be a member of this assembly. Expected format: dd/mm/yyyy
+
+|Gender
+|Facultatif
+|Which gender does this person most identify with.
+
+|Birthday
+|Facultatif
+|When was this person born. Expected format: dd/mm/yyyy
+
+|Birthplace
+|Facultatif
+|Where was this person born.
+|===

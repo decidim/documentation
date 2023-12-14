@@ -1,0 +1,19 @@
+= My account
+
+My account is all the pages where a participant can change her personal data that is displayed in My public profile page, change her notifications settings, see which groups she belongs, etc.
+
+To go to this section:
+
+. Sign in as a participant
+. Click in the name of the participant in the header
+. Click in "My account"
+
+The actions that she can do are:
+
+* xref:admin:features/my_account/account.adoc[Account]
+* xref:admin:features/my_account/notifications_settings.adoc[Notifications settings]
+* xref:admin:features/my_account/authorizations.adoc[Authorizations]
+* xref:admin:features/my_account/groups.adoc[Groups]
+* xref:admin:features/my_account/my_interests.adoc[My interests]
+* xref:admin:features/my_account/my_data.adoc[My data]
+* xref:admin:features/my_account/delete_my_account.adoc[Delete my account]

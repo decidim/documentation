@@ -1,0 +1,90 @@
+= About
+
+:experimental:
+:icons: font
+:page-partial:
+:source-highlighter: highlightjs
+
+Decidim is a technopolitical project. A digital citizen-participation platform for a democratic city, made openly and collaboratively using free software.. It is a public commons infrastructure. Public because it enjoys a clear institutional impetus and commons because the code is open and free, in other words, anyone can see it, use it, copy it or amend it. It is a platform designed for coordinating citizen-participation processes and spaces, aimed at extending and facilitating access to citizen participation, opening new spaces for deliberation and collaboration in co-designing and co-producing public policies and new spaces for direct participation and democracy, thereby enabling disintermediation and cooperation between citizens, institutions and organisations of civil society.
+
+[#decidim.barcelona-fig]
+._decidim.barcelona_.
+image::decidim_barcelona_homepage.png[decidim.barcelona homepage]
+
+== Principles
+
+The Decidim platform has been designed and developed on the basis of a series of principles that promote further exploration and democratic innovation in the digital era as well as possibilities for improving, opening and developing citizen-participation policies and democratic forms of government at various levels, with special emphasis on the municipal scale. These principles are listed below:
+
+=== Technopolitical hybridisation
+
+This is key to preventing what we could define as “digital reductionism" (Calleja-López, 2017), a variant of technocentrism that puts the emphasis mainly or exclusively on the new participatory forms’ digital aspects and infrastructures, without dealing with the necessary powerful innovations in participatory practices, processes and culture that result from the hybridisation of face-to-face and digital participation. The hybrid approach attempts to connect spaces and activities taking place in decidim.barcelona with face-to-face spaces and activities and to consider the multiple variants that may arise for the purposes of boosting new forms of collective action.
+
+=== Enhanced and multi-modal participation
+
+The result of digital reductionism is to foster "click-participation" (Calleja-López, 2017), where participation becomes a definite phenomenon, first and foremost for its digital aspect, and, more specifically, for its convenience, speed and non-interference with other players and ideas. There is therefore a need to boost enriched forms of interaction between people in decidim.barcelona, ​​and between them, the platform’s contents and the hybrid participatory processes in a broader sense. This implies, on the one hand, enriching participatory processes with functions that go beyond voting (information and data displaying, deliberation etc.,) and, on the other, designing hybrid processes (e.g. Face-to-face meetings connected to the platform), which turn participation into an enhanced, comprehensive and multimodal participation, rather than reduced and “clicked”.
+
+=== Transparency and traceability
+
+With the exception of data that can affect user privacy, details of activities in participatory processes in digital media need to be absolutely traceable and public, if a new level of transparency in participation is to be fostered. Transparent participation and traceability are necessary conditions for confidence in these new processes.
+
+=== Opening/ releasing
+
+The principles of releasing and opening refer firstly to the platform’s code and functions, secondly to the processes’ data and contents and thirdly and more generically, to the processes themselves. This implies, in the first two cases, using the most exacting share-alike licenses and standards (e.g. Affero GPLv3 for code, CreativeCommons for content, Open Access Database Licences for data). Decidim needs to be a free-software platform that allows anyone to see, amend and reuse the code it is based on. In the case of processes, these principles connect to several others that we mention in this list, such as transparency and accessibility, and aim to make these processes as participatory and reappropriable as possible on multiple levels.
+
+=== Cross-cutting participation
+
+Dealing with many of the keys of success for recent initiatives such as 15M, decidim.barcelona's deployment and communication strategies and media processes need to be geared towards achieving legitimacy first and then participation, within reach of as many social and political groups as possible.
+
+=== Knowledge, technoscience and collective intelligence
+
+The new forms of participation should benefit from the possibilities that are offered by both popular and expert knowledge from citizens and data science (data occasionally from the participatory processes themselves) to improve decision-taking and participation. An informed and expert participation, capable of catalysing social knowledge.
+
+=== Collective and networked participation
+
+One of the central challenges to achieiving an “enhanced”, digitally mediated, participation, is boosting its collective dimension in the face of atomising tendencies, often resulting from remote-participation conditions. This implies using functions that boost interactions between users in collective processes, whether on a platform or face to face. Digital or face-to-face discussion and deliberation spaces are necessary for coordinating better participation.
+
+=== Public-commons orientation, reappropriation and recursive participation
+
+Democracy’s new digital infrastructures have to be a space belonging to, by and for the commons. If democracy is to be promoted, infrastructures themselves have to be radically democratic. This implies consideration of an innovative and alternative model to the one for privatising the public sphere. To this end, Decidim needs to be a digital infrastructure of public-commons construction, ownership and use. In other words, what we define as "technopolitical commons", technology open to participation from everyone and anyone in its design and management, governed through distribution and with collective-production and share-alike models. Compared to the closed and exclusive platforms controlled by big corporations, Decidim is a democratic infrastructure for democracy.
+
+=== Technopolitical accessibility and training
+
+It also needs to be a public service, which is why it is essential to ensure citizens have access and training for taking part and exploiting all its potential. Promoting its grassroots-empowered use and use by excluded social groups is a key challenge. Both decidim.barcelona and digital participatory processes have to be governed by more demanding accessibility standards (e.g. Those of the Web Accessibility Initiative, WAI).
+
+=== Independence, empowerment and affiliation
+
+If social movements have demonstrated something over the last few years it is the central role played by self-organised collective action in kick-starting and guiding processes of change. In this regard decidim.barcelona and the processes using the platform need to boost social independence and self-organisation. In addition, political affiliation has to be a requisite feature in many of the platform’s processes, given that it is a key element of the platform’s medium- and long-term public and operative legitimacy. In other words, both independent social processes and bottom-up processes that are affiliated to public institutions.
+
+== Brief history
+
+During its public presentation in September 2015, Decide Madrid, a digital participatory platform launched by Madrid City Council and based on Consul software, began to experiment with various participatory processes, such as public debates and citizen proposals. Launched by Barcelona City Council, the Decidim Barcelona project, which was also based on Consul but with major changes and adapted to new needs, was presented in February 2016. ​​Its original goal was to coordinate the participatory process for drafting the Municipal Action Plan (PAM) as well as other participatory processes in the city in the future. Some 25,000 people signed up to it in under two months, 10,860 proposals were submitted, 410 meetings held and over 160,000 votes in favour collected. In this way a collaboration and deliberation space opened up between citizens, social organisations and Barcelona City Council.
+
+A great deal of interest was expressed in many municipalities in going ahead with similar processes, taking advantage of the technology used, given its success and the fact it was free and reusable. To be more specific: Coruña City Council, through its A Porta Aberta platform for Participatory Budget processes; Oviedo City Council, through its Consulta Oviedo, with a space for citizen proposals, and Valencia City Council, through decidimVLC, for preparing participatory budgets. There were also numerous cases of local authorities and other institutions showing great interest in the decidim.barcelona project and its implementation, such as the city councils of Hospitalet, Badalona, ​​Terrassa and Gavà, as well as Barcelona Provincial Council and the Localret Consortium.
+
+This series of changes and adaptations led in turn to a new technological need involving the adaptation of technology dealing with local-authority diversity, independence and the medium-term sustainability of the platform. Hence the establishment of a scalable and decentralised (or modular) development strategy enabling the entire project to be flexible and grow over time as well as generate a development, functional design and support community, which is sustained at both municipal and (more importantly) inter-municipal levels.
+
+This led Barcelona City Council to thoroughly reconsider the platform’s architecture and carry out a complete rewrite of the software based on the above-mentioned principles and needs. This rewrite gave rise to the Decidim project, a generic,participatory democratic framework based on Ruby on Rails, whereby any group, organisation or institution that wanted to use it could do so with minimum technical requirements.
+
+== Open development and free software
+
+The Decidim platform project has been developed with free software (both at its initial stage, based on Consul, and after the code's complete rewrite) and all its development has been open, enabling its entire development to be traceable and followed right from the very beginning.
+
+Its creation from free software refers to the fact that the platform's source code has a AGPL v3 Licence or GNU Affero General Public Licence,footnote:[https://github.com/AjuntamentdeBarcelona/decidim/blob/master/LICENSE-AGPLv3.txt] which means the code has to allow for the possibility of its being consulted, copied, amended and reused, so long as the same licence is kept in any work or product derived from it. This is one of the licences that provides most freedom and is copyleft footnote:[Copyleft stands for a whole range of licences that can be applied to IT, artistic and other creations. Copyleft's supporters see copyright as a way of restricting people's right to make and redistribute copies of a work.[2] A copyleft licence, in fact, uses actual copyright legislation to ensure that everyone who receives a copy or derived work can use, amend and even distribute both the work and any derivative versions. In a strictly non-legal sense, then, copyleft is the opposite of copyright. (Wikipedia, 2017).]. In this regard, it makes sense for public authorities to make a clear commitment to this type of software, given that it is through such licences that we can receive social return on our public investments.
+
+The fact that the software has been openly developed means that the entire development process is transparent and accessible, in other words, that anyone can see, right from the start of the software's development, every change, contribution, community of developers involved etc. By the same token, transparency is becoming a fundamental principle not just in citizen participation but in software development too.
+
+All this has been done on a platform designed for open collaboration in software development known as GitHub.footnote:[https://github.com/] This platform enables access to codes and monitoring of the software's development. GitHub is designed to host Git repositories, though there are other alternatives to GitHub such as GitLab.
+
+== Decidim Barcelona
+
+Decidim Barcelona is the first instance of Decidim and the origin of the project. Decidim Barcelona came about from Barcelona City Council’s need to open up a technologically mediated citizen-participation process around the Municipal Action Plan (PAM), with three major goals: making a process that is transparent and traceable, expanding participation through the digital platform and integrating face-to-face and digital participation.
+
+This process received over 10,000 proposals and more than 160,000 votes in favour, with a final balance of 71% of citizen proposals accepted and included in PAM through over 1,600 initiatives. Decidim was originally designed exclusively for hosting this process though the need for extending it to other participation processes was quickly spotted.
+
+It was here that the idea for today's Decidim came about. A participatory platform that enables as many processes as people want, divided up into stages and with the possibility of setting several functions at each stage. The possibility was accordingly left open for designing new functions that could be integrated into the processes (surveys, collaborative-text drafting, result monitoring and so on), as well as the integration of new participatory spaces such as citizen initiatives and participation councils.
+
+Decidim Barcelona is currently (July 2017) hosting 12 participatory processes and already has some 26,600 participants, almost 12,000 collected proposals, 1,700 results, 670 face-to-face meetings and 185,000 votes in favour collected. The platform’s good results in Barcelona led to its extension to other municipalities, including Hospitalet de Llobregat, Sabadell, Badalona, Terrassa, Gavà, Sant Cugat, Mataró and Vilanova i la Geltrú.
+
+== Decidim Municipis
+
+Decidim is a multitenant platform, that is, a platform where as many instances can be used as needed, with a single installation. There are numerous successful examples of multitenant architectures in the world of software, such as the Wordpress free software for blogs project. It is especially useful for institutions that wish to provide Decidim as a third-party service. The Provincial Council's case is especially important as it can be used with a single installation - maintained, updated and sustained by a single entity - for as many local authorities as desired, thereby reducing installation and maintenance costs and providing technological solutions for improving citizen participation in medium-sized and small local authorities that would otherwise have much less access to such resources.

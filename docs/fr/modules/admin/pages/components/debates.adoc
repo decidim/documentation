@@ -1,0 +1,229 @@
+= Débat
+
+Le composant Débat permet aux participants d'avoir des discussions, sans vote ni prioritisation. Cela permet également de les conclure, en ajoutant des conclusions ou un résumé de ce qui a été discuté.
+
+From this starting point, there could be other configurations, such as:
+
+* Permettre la création de débats par les participants
+* Avoir des débats avec une date de début et de fin fixe ou ouvert
+* Montrer les soutiens (support public) ou non
+
+Some examples of where this component was used:
+
+* https://meta.decidim.org/processes/roadmap/f/219/[Proposer de nouvelles fonctionnalités pour le logiciel Decidim dans Metadecidim]
+
+image:components/debates/example01.png[Exemple de liste des débats]
+image:components/debates/example02.png[Exemple de débat]
+
+Pour configurer le fonctionnalité Débat:
+
+. Sign in as admin
+. Go to admin panel
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+Par exemple, il peut s'agir de "Concertations", d'"Assemblées" ou de "Conférences".
+. Aller dans les fonctionnalités
+. Cliquez sur le bouton "Ajouter une fonctionnalité"
+. Cliquez sur "Débattre"
+. Remplissez le formulaire xref:_add_component[Ajouter une fonctionnalité]
+
+== Ajouter une fonctionnalité
+
+image:components/debates/component.png[Ajouter un formulaire de composant]
+
+
+.Ajouter un composant : Formulaire de débat
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Quel est le titre de cette fonctionnalité. Par exemple, "Debates"
+
+|Rang d'affichage
+|Facultatif
+|Quel ordre aura-t-il par rapport aux autres débats. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux débats, "Débat A" avec le poids "10" et "Débat B" avec le poids "0", alors "Débat B" sera le premier lors de l'affichage.
+|===
+
+
+.Ajouter une fonctionnalité : Formulaire de débat - Paramètres globaux
+|===
+|Champ |Type |Description
+
+|Scopes enabled
+|Facultatif
+|Check if you want to have Scopes filtering in this component.
+
+|Secteur
+|Facultatif
+|Which xref:admin:scopes.adoc[Scope] does this component belongs to.
+
+|Portée générale
+|Facultatif
+|
+
+|Commentaires activés
+|Facultatif
+|Si vous voulez avoir des commentaires dans les rencontres.
+
+|Longueur maximale des commentaires
+|Facultatif
+|Quelle est la limite de caractères que les participants auront quand ils feront des commentaires. Laisser 0 pour la valeur par défaut.
+
+|Annonce
+|Facultatif
+|A general announcement that'll be visible on the general debates landing page.
+|===
+
+In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
+xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
+
+
+.Add component: Debates form - Step settings
+|===
+|Champ |Type |Description
+
+|Soutiens activés
+|Facultatif
+|Check if you want that participants show public support for these debates.
+
+|Soutiens bloqués
+|Facultatif
+|
+
+|Debate creation by participants enabled
+|Facultatif
+|Check if you want to allow the creation of new debates by participants.
+
+|Commentaires désactivés
+|Facultatif
+|Whether you want to enable comments for this phase.
+
+|Annonce
+|Facultatif
+|A general announcement that'll be visible on the general debate landing page.
+|===
+
+== Autorisations
+
+An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
+certain actions in the debates:
+
+* Create
+* Soutenir
+
+== Manage debates
+
+image:components/debates/manage_debates.png[Manage debates table]
+
+=== Export all
+
+Allows exporting the comments in the debates in different formats.
+
+* Comments as CSV
+* Comments as JSON
+* Comments as Excel
+
+=== New debate form
+
+image:components/debates/new_debate_backend.png[New debate backend form]
+
+
+.New debate form
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|What is the title of this debate. For instance, "How can we improve this process?"
+
+|Description
+|Obligatoire
+|What is the description of this debate.
+
+|Instructions to participate
+|Obligatoire
+|Add a message for the participants.
+
+|Information updates
+|Facultatif
+|Add a message for the participants.
+
+|xref:_debate_types[Debate type]
+|Obligatoire
+|Choose between Finite and Open. Finite means that the debate has a starting and ending date and time, Open means that
+there isn't any timeframe.
+
+|Starts at
+|Required if the debate type is Finite
+|Expected format: dd/mm/yyyy hh:ii
+
+|Ends at
+|Required if the debate type is Finite
+|Expected format: dd/mm/yyyy hh:ii
+
+|Catégorie
+|Facultatif
+|Which category has the debate. Used for filtering in the debates list.
+|===
+
+==== Debate types
+
+It's possible to have two kinds of debates:
+
+. Finite: with a start and end date
+. Open: without a start and end date
+
+This is shown publically in the debate list.
+
+image:components/debates/debates_list.png[Debates list]
+image:components/debates/debate_finite.png[Finite debate]
+
+==== Actions
+
+
+.Actions
+|===
+|Icône |Nom |Definition
+
+|image:action_edit.png[Edit icon]
+|Edit
+|Edit form for a debate. It's the same form as "New debate".
+
+|image:action_close.png[Close icon]
+|Close
+|Close form for a debate. For adding conclusions.
+
+|image:action_permissions.png[Permissions icon]
+|Autorisations
+|To handle the permissions of this debate, depending on the verification a participant has.
+
+|image:action_delete.png[Delete icon]
+|Delete
+|To delete this debate. Peut être fait unquement quand il n'y a pas de projets dans ce budget.
+|===
+
+=== Close debate form
+
+A debate can be closed. This is useful for adding conclusions. After a debate was closed it can't be edited nor commented any more
+
+image:components/debates/close_debate_backend.png[Close debate backend form]
+
+Take in account that if the debate was created by a participant then only that
+participant can close it.
+
+image:components/debates/close_debate_frontend.png[Close debate frontend form]
+
+
+.Close debate form
+|===
+|Champ |Type |Description
+
+|Conclusions
+|Obligatoire
+|What is the conclusion for this debate.
+|===
+
+The conclusions are shown publicly with the close date and time.
+
+image:components/debates/debate_closed.png[Closed debate]
