@@ -32,9 +32,9 @@ Another possiblity is to revoke only the xref:admin:participants/impersonations.
 
 Some of the available authorizations by default are:
 
-* xref:admin:participants/authorizations/identity_documents.adoc[Identity documents]
-* xref:admin:participants/authorizations/code_postal_letter.adoc[Code by postal letter]
-* xref:admin:participants/authorizations/census.adoc[Organization's census]
+* xref:admin:participants/authorizations/identity_documents.adoc[Documents d'identité]
+* xref:admin:participants/authorizations/code_postal_letter.adoc[Code par lettre postale]
+* xref:admin:participants/authorizations/census.adoc[Recensement de l'organisation]
 
 If any of these authorizations are not useful for your needs, talk with your implementer to see other alternatives. Learn
 more about xref:customize:authorizations.adoc[Authorizations in the Customize Guide section].
