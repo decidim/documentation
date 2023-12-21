@@ -1,0 +1,113 @@
+= Process groups
+
+A group of processes proves useful for subdividing large participatory processes into subprocesses according to a criteria,
+for instance the xref:admin:scopes.adoc[scope] of every process.
+
+As an example you can see the https://www.decidim.barcelona/processes_groups/4[Barcelona City Council's Neighborhoods Plan, Pla de Barris].
+This is is a 150 million euro shock plan that aims to reduce inequalities within the city. There are 10 related processes, one for each involved neighborhood.
+
+image::processes_group_example.png[Participatory process group example]
+
+== New process group form
+
+For creating a new process group:
+
+. Sign in as administrator
+. Go to the Processes section in the sidebar
+. Click on the Process groups link in the sidebar
+. Click on the "New process group" button
+. Fill in the form
+
+image::processes_group_list.png[Participatory process groups list]
+
+image::processes_group_new_form.png[New participatory process group form]
+
+
+.New participatory process group form: General information
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Title of the participatory process group. For instance, "Participatory Budgeting".
+
+|Description
+|Obligatoire
+|A long explanation of what's your participatory process about.
+
+|Related processes
+|Facultatif
+|Which are the processes that are related to this one? They will be used for populating
+the Content Blocks in the Landing page of this Process group. For selecting multiple you'll
+need to use the *ctrl* function.
+
+|Image
+|Facultatif
+|Image that will be used in presentation cards of this process group. Guidance for image:
+Preferably a landscape image that does not have any text. The service crops the image.
+Maximum file size: 10MB. Allowed file extensions: jpeg jpg png
+|===
+
+
+.New participatory process group form: Metadata
+|===
+|Champ |Type |Description
+
+Hashtag
+Website
+
+|Promoter group
+|Facultatif
+|Information that's displayed in the process metadata content block.
+
+|Organization area
+|Facultatif
+|Information that's displayed in the process metadata content block.
+
+|Scope metadata
+|Facultatif
+|Information that's displayed in the process metadata content block.
+
+|Who participates
+|Facultatif
+|Information that's displayed in the process metadata content block.
+
+|What is decided
+|Facultatif
+|Information that's displayed in the process metadata content block.
+
+|How is it decided
+|Facultatif
+|Information that's displayed in the process metadata content block.
+|===
+
+
+.New participatory process group form: Visibility
+|===
+|Champ |Type |Description
+
+|Promoted
+|Facultatif
+|Check if you want the process to have more visibility in the Process public list. It'll also be visible in the
+ParticpipatoryProcess Content Block in the xref:admin:homepage.adoc[Homepage] configuration. This is accessible in the btn:[Edit] action in a Process.
+|===
+
+== Landing page
+
+One of the main features of a process group is to be able to configure the Lnading page, through Content blocks, just like
+the general homepage of the platform. This means that you can enable or disable different sections of the landing page and also
+configure some fo these sections.
+
+image::processes_group_landing.png[Participatory process group landing page]
+
+* Title, description and hashtag
+* Métadonnées
+* Image, text and Call to Action button. Configurable.
+* Proposals. You can configure how the elements will be sorted: by most recent or random.
+* Results. You can configure how the elements will be sorted: by most recent or random.
+* Upcoming events
+* Statistics
+* Participatory processes
+* First HTML block
+* Second HTML block
+* Third HTML block

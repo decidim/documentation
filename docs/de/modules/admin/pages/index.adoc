@@ -1,0 +1,27 @@
+= Introduction
+
+Deploying Decidim means taking account of all the activities that play a part in the configuration of the platform and the deployment of the participatory processes. Acquiring knowledge in administering Decidim enables control over fundamental matters such as:
+
+* configuring a participatory process
+* activating a consultation and receiving votes
+* moderating the platform
+* managing associated legal texts (as the privacy policy)
+* managing authorization from the administrators
+* monitoring and verifying organizations
+
+None of these aspects are strictly technical but they do involve a series of political decisions over how we want Decidim to be, what messages and contents it has to contain, what the moderation policy for comments and debates has to be and, above all, how a specific participatory platform has to be, and what functions it has to have active. This is why it is essential to understand the socio-technical implications of the Decidim platform’s administration and management when it comes to deploying the platform.
+
+To understand how Decidim works, we need to distinguish between xref:spaces.adoc[*spaces*] and xref:components.adoc[*components*].  The participatory spaces are the channels that citizens can participate through when public decisions are being taken. These are participatory processes, initiatives, consultations and assemblies.
+Whereas participatory components are mechanisms that enable interaction between users of the platform and the various participatory spaces. These include meetings, pages, proposals and surveys.
+
+image:introduction.png[Spaces and components]
+
+Therefore, a participatory space as a participatory process, in the various stages, can incorporate several components such as face-to-face meetings, proposals, surveys and results and the monitoring of these.
+
+image:introduction_process.png[Components in a participatory process]
+
+So, participatory spaces are configured by defining (and configuring) the components they are going to have. It is important to bear in mind that these participatory components and the various functions are repeated in the various spaces, offering many opportunities when it comes to configuring the various spaces. This simplifies learning as once a space has been configured, it is then easier to configure another.
+
+This section provides a full description of how to configure the Decidim platform for any kind of organization and how to configure, manage and administer the various participatory processes. A description has been given in tutorial format, to help with understanding administration tasks, following Decidim’s literal fields and enclosing screenshots to facilitate their interpretation.
+
+Managing (administering) the Decidim platform is relatively simple and intuitive and no specific IT knowledge is required. The administrators of a Decidim platform, in other words, those with the necessary authorization for managing the platform, can configure the platform in a general way (images, information pages, etc.,) and manage the various participatory processes (configuring, editing, analysing and concluding).

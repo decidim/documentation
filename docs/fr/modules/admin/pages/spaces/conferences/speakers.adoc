@@ -1,0 +1,68 @@
+= Speakers
+
+The speakers are people that are going to talk at the conference.
+
+image:spaces/conferences/speakers_frontend.png[Conferences speakers (frontend)]
+
+== Create a new speaker
+
+image:spaces/conferences/speakers.png[Conferences speakers]
+
+For creating a new speaker of a conference:
+
+. Sign in as administrator
+. Go to the conferences section in the sidebar
+. Click on the conference Edit action
+. Click on the Speakers link in the sidebar
+. Click on the "New Conference Speaker" button
+. Remplissez le formulaire
+
+image:spaces/conferences/new_speaker.png[Conferences speakers]
+
+
+.New conference speaker form
+|===
+|Champ |Type |Description
+
+|Participant type
+|Obligatoire
+|Wheter this speaker is a non-participant or existing participant. Does she already have an account created on the platform?
+
+|Full name
+|Required if it's non-participant.
+|Name of the speaker.
+
+|User or group
+|Required if it's an existing participant.
+|Type at least three characters to search.
+
+|Related meetings
+|Facultatif
+|Which meetings does this speaker attend and participates actively?
+
+|Position
+|Obligatoire
+|Metadata for showing extra information about the speaker.
+
+|Affiliation
+|Obligatoire
+|Metadata for showing extra information about the speaker.
+
+|Short Bio
+|Facultatif
+|Metadata for showing extra information about the speaker.
+
+|Twitter handle
+|Facultatif
+|Metadata for showing extra information about the speaker.
+
+|Personal URL
+|Facultatif
+|Metadata for showing extra information about the speaker.
+
+|Avatar
+|Facultatif
+|Metadata for showing extra information about the speaker.
+
+Default image
+|===
