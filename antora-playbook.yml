@@ -12,10 +12,6 @@ content:
       start_path: docs/en
       branches: [release/0.28-stable, release/0.27-stable, develop]
       edit_url: "https://github.com/decidim/documentation/edit/{refname}/{path}"
-    - url: *documentation
-      start_path: docs/pt
-      branches: [develop]
-      edit_url: "https://github.com/decidim/documentation/edit/{refname}/{path}"
     - url: https://github.com/decidim/decidim
       start_path: docs
       branches: [release/0.28-stable, release/0.27-stable, develop]
