@@ -1,36 +1,42 @@
 = Survey
 
 The Survey component allows people to answer questionnaires. This is useful when an organization wants to receive private
-feedback, although it's possible to publish the answers manually as well. It allows defining a set of questions with multiple kinds of answers.
+feedback, although it is possible to publish the answers manually as well. It allows defining a set of questions with multiple kinds of answers.
 
 From this starting point, there could be other configurations, such as:
 
-* if the answering is limited to a time period
-* what answer types should have the questions, like short (one line), long (multiple lines), single or multiple options,
+* if you want to limit the answering to a fixed duration
+* the answer types expected for the questions, like short - one line, long - multiple lines, single or multiple options,
 sorting through a list, etc.
-* if there's an answer validation like how many characters as maximum should have an answer
+* if there's an answer validation, like the maximum number of characters in an answer
 * if there's a maximum number of options to select in multiple options questions
 
-Some examples of where this component was used:
+Some examples of this component in use include:
 
-* https://consultation.quebec.ca/processes/donneesquebec/f/82/[Data Quebec: participate in its improvement! (Données Québec : participez à son amélioration!) in Québec consultations]
+pass:[<!-- vale Vale.Spelling = NO -->]
+
+// The non-English text here throws a spelling error, so turning off Vale for this section.
+
+* https://consultation.quebec.ca/processes/donneesquebec/f/82/[Data Quebec: participate in its improvement(Données Québec : participez à son amélioration!) in Québec consultations]
 * https://meta.decidim.org/conferences/decidimfest2020/f/1403/?locale=en[DecidimFest2020 Assessment Survey]
+
+pass:[<!-- vale Vale.Spelling = YES -->]
 
 image:components/surveys/example01.png[Example of a survey]
 
 To configure the Survey component:
 
-. Sign in as admin
-. Go to admin panel
+. Sign in as an administrator
+. Go to the administrator panel
 . In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies" or "Conferences".
+For instance, it could be 'Processes', 'Assemblies' or 'Conferences'.
 . Go to components
-. Click on "Add component" button
-. Click on "Survey"
+. Click on 'Add component' button
+. Click on 'Survey'
 . Fill the xref:_add_component[Add component] form
 
-Once a survey is already answered by some users it's not possible to modify its questions, as that would affect the integrity
-of the answers. If it's needed to modify the questions, then it's needed to create a new survey and unpublish the original one.
+Once a survey is already answered by some users it is not possible to modify its questions, as that would affect the integrity
+of the answers. If you need to modify the questions, then you should create a new survey and un-publish the original one.
 
 == Add component
 
@@ -42,12 +48,12 @@ image:components/surveys/component.png[Add component form]
 
 |Name
 |Required
-|What is the title of this component. For instance, "Surveys"
+|What is the title of this component. For instance, 'Surveys'
 
 |Order position
 |Optional
-|Which order will it have in relation to the other surveys. Having a lower number means a higher priority.
-For instance, if you have two surveys, "Survey a" with weight "10" and "Survey b" with weight "0", then "Survey b" will be first when ordering.
+|Which order it has in relation to the other surveys. Having a lower number means a higher priority.
+For instance, if you have two surveys, 'Survey A' with weight '10' and 'Survey B' with weight '0', then 'Survey B' displays first when ordering.
 
 |===
 
@@ -57,7 +63,7 @@ For instance, if you have two surveys, "Survey a" with weight "10" and "Survey b
 
 |Scopes enabled
 |Optional
-|Check if you want to have Scopes filtering in this component.
+|Select if you want to have Scopes filtering in this component.
 
 |Scope
 |Optional
@@ -72,15 +78,15 @@ For instance, if you have two surveys, "Survey a" with weight "10" and "Survey b
 
 |Announcement
 |Optional
-|A general announcement that'll be visible on the general surveys landing page.
+|A general announcement visible on the general surveys landing page.
 
 |Delete answers when publishing the survey
 |Optional
-|Check if you want to delete answers in the moment that the survey is published. Useful for when you want to test the survey before publishing it.
+|Select if you want to delete answers when the survey is published. Useful for when you want to test the survey before publishing it.
 
 |===
 
-In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
+In the cases where the space using the component has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
 xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
 
 .Add component: Surveys form - Step settings
@@ -89,35 +95,34 @@ xref:admin:spaces/processes.adoc[Participatory Processes], then you can also def
 
 |Allow answers
 |Optional
-|Check if you want to receive answers in this survey.
+|Select if you want to receive answers in this survey.
 
 |Allow unregistered users to answer the survey
 |Optional
-|If active, no login will be required in order to answer the survey. This may lead to poor or unreliable data and it will
-be more vulnerable to automated attacks. Use with caution! Mind that this option only allows an answer by browser session,
-but participants can use the Private navigation option and make multiple answers with the same device.
+|If selected, login is not required to answer the survey. This may lead to poor or unreliable data and is more vulnerable to automated attacks. Use with caution. Be aware that this option only allows one answer per browser session,
+but participants could use incognito mode and make multiple answers with the same device.
 
 |Announcement
 |Optional
-|A general announcement that'll be visible on the general survey landing page.
+|A general announcement visible on the general survey landing page.
 
 |===
 
 == Permissions
 
-An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
+An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to take
 certain actions in the surveys:
 
 * Answer
 
 == New survey form
 
-When you create a new survey you'll need to fill the form with the following fields:
+When you create a new survey, fill in the form with these fields:
 
 image:components/surveys/edit_form.png[Edit survey form]
 
 NOTE: Do you have repetitive surveys? For instance the same feedback form for every process? You can have a survey that
-gets copied and is used as a blueprint for so you don't have to manually configure the same survey everytime. Learn more
+gets copied and becomes a blueprint, so you do not have to manually configure the same survey every time. Learn more
 about xref:_templates[Templates].
 
 .New survey form
@@ -126,7 +131,7 @@ about xref:_templates[Templates].
 
 |Title
 |Required
-|What is the title of this survey. For instance, "Feedback"
+|What is the title of this survey. For instance, 'Feedback'
 
 |Description
 |Optional
@@ -134,17 +139,17 @@ about xref:_templates[Templates].
 
 |Terms of service
 |Required
-|Legal conditions that the participants must agree to in order to answer the survey.
+|Legal conditions that the participants must abide by to answer the survey.
 
 |===
 
-In the bottom of this form there's a button that allows you to "Add question".
+In the bottom of this form there's a button that allows you to 'Add question'.
 
 image:components/surveys/add_question_button.png[]
 
-You can add multiple questions per survey, and reorder or delete them. It's possible to also add separators between questions.
+You can add multiple questions per survey, and reorder or delete them. It is possible to also add separators between questions.
 
-Every question has to have a statement and a type as a minimum.
+Every question must have a statement and a type as a minimum.
 
 image:components/surveys/question_form.png[]
 
@@ -154,19 +159,19 @@ image:components/surveys/question_form.png[]
 
 |Statement
 |Required
-|The question itself. For instance, "What is your age category?"
+|The question itself. For instance, 'What is your age category?'
 
 |Description
 |Optional
-|Explanation of the question being made.
+|Explanation of the question.
 
 |Mandatory
 |Optional
-|Check if this question is required to respond to submit the answer.
+|Select if this is a mandatory question.
 
 |Character limit
 |Optional
-|How many characters has as a maxim the answer to this question. Leave to 0 if no limit. Compatible with Short and Long answer question types.
+|The maximum number of characters available in an answer to this question. Leave at 0 if no limit. Compatible with Short and Long answer question types.
 
 |Type
 |Required
@@ -175,8 +180,8 @@ or Matrix (Multiple option). See xref:_question_types[Question types] for more i
 
 |===
 
-Depending in the question type, it's possible to add validations to the answers, like if the question is mandatory (participants
-would need to provide an answer in order to submit the form) or if the answer is limited to a certain number of characters as maximum in
+Depending in the question type, it is possible to add validations to the answers, like if the question is mandatory - participants
+would need to provide an answer to submit the form - or if the answer should have a certain number of characters as a maximum in
 short and long answers.
 
 image:components/surveys/question_form_limits_backend.png[]
@@ -196,64 +201,63 @@ A survey can have multiple questions with different types, such as:
 - Matrix (Single option)
 - Matrix (Multiple option)
 
-.Question types (click to view image in detail)
+.Question types - click to view image in detail
 |===
 |Type|Frontend |Backend |Description
 
 |Short answer
 |image:components/surveys/type_short_answer_frontend.png[Short answer type - frontend,link=../_images/components/surveys/type_short_answer_frontend.png]
 |image:components/surveys/type_short_answer_backend.png[Short answer type - backend,link=../_images/components/surveys/type_short_answer_backend.png]
-|Compatible with "Character limit" validation
+|Compatible with 'Character limit' validation
 
 |Long answer
 |image:components/surveys/type_long_answer_frontend.png[Long answer type - frontend,link=../_images/components/surveys/type_long_answer_frontend.png]
 |image:components/surveys/type_long_answer_backend.png[Long answer type - backend,link=../_images/components/surveys/type_long_answer_backend.png]
-|Compatible with "Character limit" validation
+|Compatible with 'Character limit' validation
 
 |Single option
 |image:components/surveys/type_single_option_frontend.png[Single option type - frontend,link=../_images/components/surveys/type_single_option_frontend.png]
 |image:components/surveys/type_single_option_backend.png[Single option type - backend,link=../_images/components/surveys/type_single_option_backend.png]
-|Participants will have to choose a single option, with radio buttons. At least 2 options always. It's possible to define a "Free text" option, so participants can submit their own answer.
+|Participants have to choose a single option, with radio buttons. Must always have at least 2 options. It is possible to define a 'Free text' option, so participants can submit their own answer.
 
 |Multiple option
 |image:components/surveys/type_multiple_option_frontend.png[Multiple option type - frontend,link=../_images/components/surveys/type_multiple_option_frontend.png]
 |image:components/surveys/type_multiple_option_backend.png[Multiple option type - backend,link=../_images/components/surveys/type_multiple_option_backend.png]
-|Participants will have to choose multiple options, with checkboxes. At least 2 options always. It's possible to add a validation, with the maximum number of choices. It's possible to define a "Free text" option, so participants can submit their own answer.
+|Participants have to choose multiple options, with checkboxes. Must always have at least 2 options. It is possible to add a validation, with the maximum number of choices. It is possible to define a 'Free text' option, so participants can submit their own answer.
 
 |Sorting
 |image:components/surveys/type_sorting_frontend.png[Sorting type - frontend,link=../_images/components/surveys/type_sorting_frontend.png]
 |image:components/surveys/type_sorting_backend.png[Sorting type - backend,link=../_images/components/surveys/type_sorting_backend.png]
-|At least 2 options always. Participants will click in order of preference to sort.
+|Must always have at least 2 options. Participants click in order of preference to sort.
 
 |Files
 |image:components/surveys/type_files_frontend.png[Files type - frontend,link=../_images/components/surveys/type_files_frontend.png]
 |image:components/surveys/type_files_backend.png[Files type - backend,link=../_images/components/surveys/type_files_backend.png]
-|Participants will be able to upload files.
+|Participants can upload files.
 
 |Matrix (Single option)
 |image:components/surveys/type_matrix_single_option_frontend.png[Matrix (Single option) type - frontend,link=../_images/components/surveys/type_matrix_single_option_frontend.png]
 |image:components/surveys/type_matrix_single_option_backend.png[Matrix (Single option) type - backend,link=../_images/components/surveys/type_matrix_single_option_backend.png]
-|Participants will have to choose between rows and columns of single options, with radio buttons.
+|Participants have to choose between rows and columns of single options, with radio buttons.
 
 |Matrix (Multiple option)
 |image:components/surveys/type_matrix_multiple_option_frontend.png[Matrix (Multiple option) type - frontend,link=../_images/components/surveys/type_matrix_multiple_option_frontend.png]
 |image:components/surveys/type_matrix_multiple_option_backend.png[Matrix (Multiple option) type - backend,link=../_images/components/surveys/type_matrix_multiple_option_backend.png]
-|Participants will have to choose between rows and columns of multiple options, with checkboxes.
+|Participants have to choose between rows and columns of multiple options, with checkboxes.
 
 |===
 
 == Templates
 
-For the cases where administrators need to define multiple surveys that are mostly the same but used in different contexts,
-it's possible to define a template. When there's one defined for a survey, then it'll ask to select the Template and create
-the survey based on this one or in the other hand if there's no need to use a template, then it's possible to Skip the template
+For cases where administrators need to define multiple surveys that are mostly the same but used in different contexts,
+it is possible to define a template. When there is one defined for a survey, then it asks you to select the Template and create
+the survey based on this one, or if there is no need to use a template, then it is possible to skip the template
 selection.
 
 image:components/surveys/edit_questionnaire.png[Choose template form]
 
 == Export answers
 
-It's possible to export the survey participant answers to different formats: CSV, JSON, XLSX (Excel) or PDF.
+It is possible to export the survey participant answers to different formats - CSV, JSON, XLSX (Excel) or PDF.
 
-Note that the platform doesn't handle the answers processing nor presenting results or summary to the users, that need to be
-done externally.
+Note that the platform does not handle the answer processing nor presenting results or summaries to the users, you need to do that externally.

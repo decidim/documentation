@@ -2,22 +2,22 @@
 
 The Blog component allows people to read multiple posts ordered by date.
 
-Some examples of where this component was used:
+Some examples of this component in use:
 
-* https://meta.decidim.org/processes/roadmap/f/247/[News in Propose new functionalities for Decidim software] in https://meta.decidim.org[Metadecidim]
+* https://meta.decidim.org/processes/news?participatory_process_slug=news[News from the Decidim project] in https://meta.decidim.org[Metadecidim]
 
 image:components/blog/example01.png[Example of blog posts list]
 image:components/blog/example02.png[Example of a blog post]
 
 To configure the Blog component:
 
-. Sign in as admin
-. Go to admin panel
+. Sign in as an administrator
+. Go to the administrator panel
 . In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies" or "Conferences".
+For instance, it could be 'Processes', 'Assemblies' or 'Conferences'.
 . Go to components
-. Click on "Add component" button
-. Click on "Blog"
+. Click on 'Add component' button
+. Click on 'Blog'
 . Fill the xref:_add_component[Add component] form
 
 == Add component
@@ -30,12 +30,12 @@ image:components/blog/component.png[Add component form]
 
 |Name
 |Required
-|What is the title of this component. For instance, "Blogs"
+|What is the title of this component. For instance, 'Blogs'
 
 |Order position
 |Optional
-|Which order will it have in relation to the other blogs. Having a lower number means a higher priority.
-For instance, if you have two blogs, "Blog a" with weight "10" and "Blog b" with weight "0", then "Blog b" will be first when ordering.
+|Which order the post has in relation to the other blogs. Having a lower number means a higher priority.
+For instance, if you have two blogs, 'Blog A' with weight '10' and 'Blog B' with weight '0', then 'Blog B' is first when ordering.
 
 |===
 
@@ -45,7 +45,7 @@ For instance, if you have two blogs, "Blog a" with weight "10" and "Blog b" with
 
 |Announcement
 |Optional
-|A general announcement that'll be visible on the general blogs landing page.
+|A general announcement that is visible on the general blogs landing page.
 
 |Comments enabled
 |Optional
@@ -53,11 +53,11 @@ For instance, if you have two blogs, "Blog a" with weight "10" and "Blog b" with
 
 |Comments max length
 |Optional
-|What is the characters limit that participants will have when making comments. Leave 0 for default value.
+|What is the characters limit that participants have when making comments. Leave 0 for default value.
 
 |===
 
-In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
+In the cases where the space using this component has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
 xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
 
 .Add component: Blogs form - Step settings
@@ -66,7 +66,7 @@ xref:admin:spaces/processes.adoc[Participatory Processes], then you can also def
 
 |Announcement
 |Optional
-|A general announcement that'll be visible on the general blog landing page.
+|A general announcement that is visible on the general blog landing page.
 
 |Comments blocked
 |Optional
@@ -78,7 +78,7 @@ xref:admin:spaces/processes.adoc[Participatory Processes], then you can also def
 
 |Endorsements blocked
 |Optional
-|Whether you want to disable adding new endorsements for this phase.
+|Whether you want to turn off adding new endorsements for this phase.
 
 |===
 
@@ -104,7 +104,7 @@ image:components/blog/new_post.png[New post form]
 
 |Create post as
 |Required
-|Participant account or user group that will be the author of the post.
+|Participant account or user group that is the author of the post.
 
 |Title
 |Required
@@ -124,7 +124,7 @@ image:components/blog/new_post.png[New post form]
 
 |image:action_edit.png[Edit icon]
 |Edit
-|Edit form for this post. It's the same form as "New post".
+|Edit form for this post. It is the same form as 'New post'.
 
 |image:action_folder.png[Folder icon]
 |Folder
@@ -132,7 +132,7 @@ image:components/blog/new_post.png[New post form]
 
 |image:action_attachments.png[Attachments icon]
 |Attachments
-|Documents that are related to the post.
+|Documents related to the post.
 
 |image:action_permissions.png[Permissions icon]
 |Permissions
