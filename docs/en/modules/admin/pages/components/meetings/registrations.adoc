@@ -81,7 +81,7 @@ The exported data will have these fields:
 * code: the xref:_registration_code[registration code] (if this feature is enabled)
 * user/name: the name of the user
 * user/email: the email of the user
-* user/user_group: the group of the user if she has selected that's representing a group when registering
+* user/user_group: the group of the user if they have selected that's representing a group when registering
 
 == Invitations
 
@@ -92,7 +92,7 @@ image:components/meetings/registrations/invite_attendee.png[Invite attendee for 
 
 == Registration code
 
-This feature allows you to check if the attendee is registered in the meeting. She needs to provide her code, that gets
+This feature allows you to check if the attendee is registered in the meeting. They need to provide their code, that gets
 entered in this form and it's checked against the database.
 
 image:components/meetings/registrations/backend_w_registration_code.png[Registration code form in a meeting]

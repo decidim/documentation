@@ -8,8 +8,8 @@ A participant can be blocked from the xref:participants/participants.adoc[partic
 section in the admin panel] or through this "Reported users" section.
 
 Anyone can propose a moderation in Decidim, through the "Flag" icon in the participant
-profile. After a participant has clicked in this action she needs to provide a
-reason why she's making this report:
+profile. After a participant has clicked in this action they need to provide a
+reason why they are making this report:
 
 * Contains clickbait, advertising, scams or script bots.
 * Contains racism, sexism, slurs, personal attacks, death threats, suicide requests
@@ -26,7 +26,7 @@ blocking this participant:
 
 image:participants_block_user_justification.png[Justificate the blocked user action]
 
-Once a blocked participant tries to log-in she'll see an error message:
+Once a blocked participant tries to log-in they will see an error message:
 
 image:participants_block_user_alert.png[Message shown to blocked user]
 

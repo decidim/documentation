@@ -89,7 +89,7 @@ image:admin_initiative_type.png[New initiative type form]
 
 |Collect participant personal data on signature
 |Optional
-|Adds a step to the signature process. When a participant clicks on the signature button, she'll be redirected to a form asking for some personal data. This will be used with the PDF export action after the recollection period has ended.
+|Adds a step to the signature process. When a participant clicks on the signature button, they will be redirected to a form asking for some personal data. This will be used with the PDF export action after the recollection period has ended.
 
 |Legal information about the collection of personal data
 |Depends on whether the option "Collect participant personal data on the signature" is checked
@@ -103,7 +103,7 @@ image:admin_initiative_type.png[New initiative type form]
 
 |Authorization to verify document number on signatures
 |Optional
-|When a participant is making the signature process, will she be asked for an authorization?
+|When a participant is making the signature process, will they be asked for an authorization?
 
 |Add SMS code validation step to the signature process
 |
@@ -137,7 +137,7 @@ This action is done by **the author**. The author is a participant that creates 
 
 image:initiative_list.png[Initiatives list]
 
-For creating an initiative, a participant must click in the "New initiative" button. Then she'll have a wizard with multiple steps:
+For creating an initiative, a participant must click in the "New initiative" button. Then they will have a wizard with multiple steps:
 
 
 === 1.1 Choose the initiative type
@@ -182,7 +182,7 @@ image:initiative_print.png[Print an initiative]
 
 ==== Technical validation
 
-After the author has reviewed how the initiative will look, she can send it to technical validation.
+After the author has reviewed how the initiative will look, they can send it to technical validation.
 
 image:initiative_send_to_technical_validation.png[Send initiative to technical validation]
 

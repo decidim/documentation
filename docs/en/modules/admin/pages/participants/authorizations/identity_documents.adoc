@@ -6,7 +6,7 @@ they could be a driver's license, a passport, a national identity card, a club m
 These documents will be reviewed by an administrator to accept or reject them. It's possible to do this process in two ways: Online or Offline.
 
 * Online: the participant will be asked to upload the documents, and the administrator will review these documents.
-* Offline: the participant will be asked to fill in some data, and then she'll need to go to a presential place to show her documents face to face.
+* Offline: the participant will be asked to fill in some data, and then they will need to go to a presential place to show her documents face to face.
 
 == Configuration
 
@@ -42,13 +42,13 @@ The process is:
 . Participants fill in their document type and number and upload a copy of their document.
 . An administrator fills in the information present in the uploaded image.
 . The information should match whatever the user filled in.
-. If the administrator can't clearly see the information or she can't get it verified, she can reject the request and
+. If the administrator can't clearly see the information or they can't get it verified, they can reject the request and
 the user will be able to fix it.
 
 === 1. A participant fill in the document information and upload a copy of her document
 
 By going to the authorization section in its profile, or by clicking on the action button if this permission is requested,
-a participant can see the form for uploading a copy of her document. She also needs to fill in her document type and number.
+a participant can see the form for uploading a copy of her document. They also need to fill in their document type and number.
 
 image:authorizations_id_document_online.png[ID document authorization online form]
 
@@ -84,7 +84,7 @@ The process is:
 specific time to show their documents.
 . An administrator go to the "Offline verification" panel and fills in the information present in the physical documents.
 . The information should match whatever the user filled in.
-. If the administrator can't clearly see the information or she can't get it verified, she can reject the request and
+. If the administrator can't clearly see the information or they can't get it verified, they can reject the request and
 the user will be able to fix it.
 
 For this authorization to work, an administrator need to first configure it in the admin panel with the instructions explaining
@@ -105,7 +105,7 @@ In the admin panel, the administrator can review the request by clicking in the 
 
 image:authorizations_id_document_offline_button.png[ID document authorization offline button in admin]
 
-Then she'll need to fill some data provided by the participant and by reviewing the document physically provided by her.
+Then they will need to fill some data provided by the participant and by reviewing the document physically provided by them.
 
 image:authorizations_id_document_offline_confirm.png[ID document authorization offline confirmation form in admin]
 
@@ -136,6 +136,6 @@ user account.
 == Both
 
 It's also possible to enable both of these verifications methods. In this case, the participant will be asked to choose
-which kind of verification she wants to do.
+which kind of verification they want to do.
 
 image:authorizations_id_document_account_choose.png[Choose ID document verification kind]
