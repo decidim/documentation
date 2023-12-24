@@ -5,7 +5,7 @@ and interacting in the platform, they will earn different badges. Here is the li
 
 It's a https://en.wikipedia.org/wiki/Gamification[gamification] mechanism to improve the engagement of the participants in a ludic way.
 
-The badges a participant has are visible in her account. There's also a general explanation page with a short description of every badge.
+The badges a participant has are visible in their account. There's also a general explanation page with a short description of every badge.
 
 image:features/badges/example01.png[Example of badges in profile]
 
@@ -24,7 +24,7 @@ the fourth level at 60 and the fifth level at 100.
 |image:features/badges/accepted_proposals_badge.png[Accepted proposals badge]
 |Accepted proposals
 |Granted when particiapnts actively participate with new proposals and these are accepted.
-|The participant needs to choose the participation space of her interest with submission for proposals enabled and try to
+|The participant needs to choose the participation space of their interest with submission for proposals enabled and try to
 make proposals that can be carried out. This way they are more likely to be accepted.
 |1, 5, 15, 30, 50
 
@@ -44,7 +44,7 @@ make proposals that can be carried out. This way they are more likely to be acce
 |Followers
 |Granted when participant reach a certain number of followers. The platform is a social and political network, so
 participants ned to weave their web to communicate with other people in the platform.
-|The participant needs to be be active and follow other people. That will surely make other people follow her.
+|The participant needs to be be active and follow other people. That will surely make other people follow them.
 |1, 15, 30, 60, 100
 
 |image:features/badges/published_initiatives_badge.png[Published initiatives badge]
@@ -56,7 +56,7 @@ participants ned to weave their web to communicate with other people in the plat
 |image:features/badges/invitations_badge.png[invitations badge]
 |Invitations
 |Granted when participants invite some people and they have become participants.
-|The participant needs to use the “invite friends” link on her user page to invite her friends. They can customize the
+|The participant needs to use the “invite friends” link on their user page to invite their friends. They can customize the
 message they are sending. They will level up by sending invitations and getting them registered. Note that this feature is disabled
 and this badge is not available, so it'll be removed in the future.
 |1, 5, 10, 30, 50
@@ -70,7 +70,7 @@ and this badge is not available, so it'll be removed in the future.
 |image:features/badges/proposals_badge.png[Proposals badge]
 |Proposals
 |Granted when participants actively participate with new proposals.
-|The participant needs to choose the participation space of her interest with submission for proposals enabled and create a new proposal.
+|The participant needs to choose the participation space of their interest with submission for proposals enabled and create a new proposal.
 |1, 5, 10, 30, 60
 
 |===

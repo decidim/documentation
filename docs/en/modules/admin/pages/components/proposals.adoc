@@ -68,7 +68,7 @@ For instance, if you have two components, "Proposals" with weight "10" and "Meet
 |Minimum supports per user
 |Optional
 |Must be a number. How many supports does a participant needs to give to proposals so their supports are counted. If they don't
-reach this number, her supports will not be taken in account.
+reach this number, their supports will not be taken in account.
 
 |Proposal limit per participant
 |Optional

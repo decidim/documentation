@@ -6,7 +6,7 @@ they could be a driver's license, a passport, a national identity card, a club m
 These documents will be reviewed by an administrator to accept or reject them. It's possible to do this process in two ways: Online or Offline.
 
 * Online: the participant will be asked to upload the documents, and the administrator will review these documents.
-* Offline: the participant will be asked to fill in some data, and then they will need to go to a presential place to show her documents face to face.
+* Offline: the participant will be asked to fill in some data, and then they will need to go to a presential place to show their documents face to face.
 
 == Configuration
 
@@ -45,10 +45,10 @@ The process is:
 . If the administrator can't clearly see the information or they can't get it verified, they can reject the request and
 the user will be able to fix it.
 
-=== 1. A participant fill in the document information and upload a copy of her document
+=== 1. A participant fill in the document information and uploads a copy of their document
 
 By going to the authorization section in its profile, or by clicking on the action button if this permission is requested,
-a participant can see the form for uploading a copy of her document. They also need to fill in their document type and number.
+a participant can see the form for uploading a copy of their document. They also need to fill in their document type and number.
 
 image:authorizations_id_document_online.png[ID document authorization online form]
 
@@ -69,7 +69,7 @@ image:authorizations_id_document_online_confirm.png[ID document authorization on
 There are two actions an admin can do:
 
 * Accept: the participant will be fully authorized.
-* Reject: the participant will be prompted to amend her documents
+* Reject: the participant will be prompted to amend their documents
 
 If the request is rejected then the participant can provide other pictures or document.
 
@@ -95,7 +95,7 @@ image:authorizations_id_document_configuration_offline.png[ID document authoriza
 === 1. A participant fill in the document information and follow the instructions
 
 By going to the authorization section in its profile, or by clicking on the action button if this permission is requested,
-a participant can see the form for filling in her document type and number.
+a participant can see the form for filling in their document type and number.
 
 image:authorizations_id_document_offline_request.png[ID document authorization offline form]
 
@@ -130,7 +130,7 @@ image:authorizations_id_document_offline_confirm.png[ID document authorization o
 === 3. The request is accepted or rejected
 
 In the cases where the verifications don't match (meaning that the email or the document number provided by the
-participant and the ones filled by the administrators aren't the same), then the participant need to ammend it with her
+participant and the ones filled by the administrators aren't the same), then the participant needs to amend it with their
 user account.
 
 == Both
