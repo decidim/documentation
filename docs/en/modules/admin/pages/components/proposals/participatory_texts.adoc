@@ -1,32 +1,37 @@
 = Participatory texts
 
-This feature allows you to navigate the proposals as text. It's useful for discussing normatives, plans, or other kinds of texts.
+This feature allows you to navigate the proposals as text. It is useful for discussing regulations, plans, or other kinds of texts.
 
-Every paragraph is split into a proposal, so it's possible to discuss it in a more granular way.
+Decidim splits each paragraph into a proposal, so it is possible to discuss it in a more granular way.
 
-Some examples of where this feature was used are:
+An example of this feature in use includes:
 
-* https://concertation.greenpeace.fr/processes/vision-greenpeace/f/8/[Vision Greenpeace] in https://concertation.greenpeace.fr/[Greenpeace France Concertation]
+pass:[<!-- vale Vale.Spelling = NO -->]
+
+// The non-english text here throws an error, so we temporarily turn off Vale for this part. 
+
 * https://www.decidim.barcelona/processes/PAM2020/f/3771/[Procés participatiu del Programa d'Actuació Municipal (PAM) 2020-2023] in https://www.decidim.barcelona/[Decidim Barcelona]
+
+pass:[<!-- vale Vale.Spelling = YES -->]
 
 image:components/proposals/participatory_texts/example01.png[Vision Greenpeace]
 
 image:components/proposals/participatory_texts/example02.png[PAM 2020-2023 in Decidim Barcelona]
 
-To configure the "Participatory texts" in proposals component:
+To configure the 'Participatory texts' in proposals component:
 
-. Sign in as admin
-. Go to admin panel
+. Sign in as an administrator
+. Go to the administrator panel
 . In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies", or "Conferences"
+For instance, it could be 'Processes', 'Assemblies', or 'Conferences'
 . Go to components
-. Click on "Add component" button
-. Click on "Proposals"
-. Check the "Participatory texts enabled" setting
+. Click on 'Add component' button
+. Click on 'Proposals'
+. Check the 'Participatory texts enabled' setting
 . Save the component
-. Click in the "Participatory texts" button in the empty proposals component
+. Click in the 'Participatory texts' button in the empty proposals component
 image:components/proposals/participatory_texts/manage_proposals.png[Manage proposals]
-. Click in the "Import document" button in the empty Preview participatory text panel
+. Click in the 'Import document' button in the empty Preview participatory text panel
 image:components/proposals/participatory_texts/preview_participatory_text_empty.png[Preview empty participatory text]
 . Fill the xref:_add_document_form[Add document form]
 image:components/proposals/participatory_texts/add_document_form.png[Add document form]
@@ -36,8 +41,8 @@ image:components/proposals/participatory_texts/preview_participatory_text.png[Pr
 image:components/proposals/participatory_texts/imported_document_proposals.png[Imported document proposals]
 . Publish the proposal component
 
-Notice that this feature could break existing proposals, so if there is any proposal it will not work. You'll see the
-following message in the components settings:
+Notice that this feature could break existing proposals, so you cannot use it if there is any proposal in existence already. If this is the case, the
+following message displays in the components settings:
 
 ====
 Cannot interact with this setting if there are existing proposals. Please, create a new `Proposals component` if you want
@@ -46,7 +51,7 @@ to enable this feature or discard all imported proposals in the `Participatory T
 
 == Add document form
 
-Although it's possible to work with both Markdown (.MD) and ODT (.ODT) files, we recommend working with Markdown as it's
+Although it is possible to work with both Markdown (.MD) and ODT (.ODT) files, Decidim recommends working with Markdown as it is
 easier to see the formatting.
 
 link:{attachmentsdir}/participatory_text.md[Download the example participatory text].
@@ -59,15 +64,15 @@ image:components/proposals/participatory_texts/add_document_form.png[Add documen
 
 |Title
 |Required
-|What's the title of the document?
+|What is the title of the document?
 
 |Description
 |Optional
-|Description for the document
+|Description for the document.
 
 |Document
 |Required
-|File. Add a document lesser than 2MB, each section until 3 levels deep will be parsed into proposals. Supported formats are: Markdown, ODT
+|File. Add a document lesser than 2 Mb, each section on import, until 3 levels deep becomes a separate proposal. Supported formats are: Markdown, ODT.
 
 |===
 
@@ -81,7 +86,7 @@ After the document is initially imported you have three options:
 
 == Frontend
 
-Once the document is imported and the proposals component published, you'll be able to navigate the document:
+Once imported, assuming you have published both the document and the proposals component, you can navigate the document:
 
 image:components/proposals/participatory_texts/frontend.png[Frontend]
 image:components/proposals/participatory_texts/frontend_hover.png[Frontend hover in proposal]
