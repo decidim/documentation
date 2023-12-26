@@ -1,23 +1,30 @@
 = Authorizations
 
-In this section participants will be able to review their Authorizations and see some metadata, like when it was granted
-or the status of the authorization.
+In this section participants can review their Authorizations and see some metadata, including the granted date for authorizations or the status of the authorization.
 
-It depends on how it's configured for the organization, as depending in the context (like normative or laws) it could work
+pass:[<!-- vale Google.WordList = NO -->]
+
+It depends on how the organization has configured Authorizations, as depending in the context - like regulations or laws - it could work
 in different ways. For more information about Authorizations see xref:admin:participants/authorizations.adoc[authorizations
 in admin manual] and xref:customize:authorizations.adoc[authorizations in customize guide].
+
+pass:[<!-- vale Google.WordList = YES -->]
 
 image:features/my_account/authorizations.png[Authorizations]
 
 To go to this section:
 
+pass:[<!-- vale Google.FirstPerson = NO -->]
+
 . Sign in as a participant
-. Click in the name of the participant in the header
-. Click in "My account"
-. Click in "Authorizations" in the sidebar
+. Click on the name of the participant in the header
+. Click on 'My account'
+. Click on 'Authorizations' in the sidebar
+
+pass:[<!-- vale Google.FirstPerson = YES -->]
 
 For any given authorization, you can see the following information:
 
-* If it's not finished, when the authorization process started
-* If it has finished and has been granted, the date when it was granted
+* If it is not finished, when the authorization process started
+* If it has finished and Authorization granted, the date granted
 * If the authorization provides it, some metadata, such as the scope of the authorization

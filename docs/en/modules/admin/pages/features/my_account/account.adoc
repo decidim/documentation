@@ -1,21 +1,26 @@
 = Account
 
-In this section is possible to make modifications that will be visible in the participants xref:features/my_public_profile.adoc[public profile] and also modify the email address or the language that the platform will use with the user.
+In this section is possible to make modifications visible in the participants xref:features/my_public_profile.adoc[public profile], and also modify the account email address or the language of the platform.
+
+pass:[<!-- vale Google.FirstPerson = NO -->]
 
 . Sign in as a participant
-. Click in the name of the participant in the header
-. Click in "My account"
+. Click on the name of the participant in the header
+. Click on 'My account'
 
 image:features/my_account/account.png[My account form]
 
 .Participant settings - My account form
+
+pass:[<!-- vale Google.FirstPerson = YES -->]
+
 |===
 |Field |Type |Description
 
 |Avatar
 |Optional
-|Avatar or picture for the participant. Guidance for image: Preferrably a landscape image that does not have any text.
-The service crops the image. Maximum file size: 5MB
+|Avatar or picture for the participant. Guidance for image: Preferably a landscape image that does not have any text.
+The service crops the image. Maximum file size: 5 Mb
 
 |Your name
 |Required
@@ -27,16 +32,15 @@ The service crops the image. Maximum file size: 5MB
 
 |Your email
 |Required
-|The email of the participant, where she'll receive notifications, password recovery, etc. If it's changed it needs to be
-confirmed.
+|The email of the participant, where she'll receive notifications, password recovery, etc. If changed, the email address must be re-confirmed.
 
 |Personal URL
 |Optional
-|Metadata that is displayed in the participant's profile.
+|Metadata displayed in the participant's profile.
 
 |About
 |Optional
-|Metadata that is displayed in the participant's profile.
+|Metadata displayed in the participant's profile.
 
 |Locale
 |Required

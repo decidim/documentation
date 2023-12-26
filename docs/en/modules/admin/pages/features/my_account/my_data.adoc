@@ -2,21 +2,25 @@
 
 In this section participants can request a file with all the data that they've provided to the platform.
 
+pass:[<!-- vale Google.FirstPerson = NO -->]
+
 image:features/my_account/my_data.png[My data]
 
 To request the data:
 
 . Sign in as a participant
-. Click in the name of the participant in the header
-. Click in "My account"
-. Click in "My data" in the sidebar
-. Click in "Request data"
-. Wait a couple of minutes so the files are generated. It could depend in how many proposals, comments, etc you've made
+. Click on the name of the participant in the header
+. Click on 'My account'
+. Click on 'My data' in the sidebar
+. Click on 'Request data'
+. Wait a couple of minutes for file generation. It could depend in how many proposals, comments, etc you've made
 . Go to your email account and find the received email
-. Click in "Download"
-. Open it with a support zip software
+. Click on 'Download'
+. Open it with a supported zip extraction software
 . Enter the password that you've received in the email
 . Unzip or extract the contents
+
+pass:[<!-- vale Google.FirstPerson = YES -->]
 
 image:features/my_account/my_data_email.png[My data]
 
@@ -26,4 +30,4 @@ For opening the zip file, the software that you use need to support encryption w
 
 * Windows: https://www.7-zip.org/[7-Zip]
 * Mac: https://www.keka.io[Keka]
-* GNU/Linux: File Roller (available through your package manager) or https://peazip.github.io/[PeaZip]
+* GNU/Linux: File Roller - available through your package manager - or https://peazip.github.io/[PeaZip]
