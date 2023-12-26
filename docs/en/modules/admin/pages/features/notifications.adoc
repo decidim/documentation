@@ -1,17 +1,17 @@
 = Notifications
 
-Most of the actions in the platform generate notifications so particpants can know when there are new things to watch.
+Most of the actions in the platform generate notifications, so participants can know when there are new things to review.
 
-This is accessible from the `Notifications` menu item (image:icon_bell.png[Notification icon]) in the header, after a participant has logged in.
+This is accessible from the 'Notifications' menu item - image:icon_bell.png[Notification icon] - in the header, after a participant has logged in.
 
 To see the notifications:
 
 . Sign in as participant
-. Click in the notifications icon in the header
+. Click on the notifications icon in the header
 
-If there are notifications, then the participant will see the icon with a color image:icon_bell_on.png[Notification icon with color]
+If there are notifications, then the participant sees the icon highlighted image:icon_bell_on.png[Notification icon with highlight]
 
 image:features/notifications/notifications.png[Example of notifications page when there are notifications]
 
-image:features/notifications/no_notifications_yet.png[Example of notifications page when there aren't notifications]
+image:features/notifications/no_notifications_yet.png[Example of notifications page when there are no notifications]
 

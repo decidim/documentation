@@ -1,27 +1,27 @@
 = Fingerprint
 
-Although the platform should show the xref:admin:features/versions.adoc[Versions] for almost all of the contents, it'd be
+Although the platform should show the xref:admin:features/versions.adoc[Versions] for almost all of the content, it would be
 still possible to manipulate the content by directly editing the database.
 
 As mitigation for this risk, the platform shows a fingerprint for some important fields, for instance, a proposal body and title.
 
 image:features/fingerprint/modal.png[Check fingerprint modal]
 
-Its goal is to provide a way to give an informal "receipt" to a participant to they can detect tampering. A fingerprint is
-a hashed representation of the content. It's useful to ensure the content hasn't been tampered with, as a single modification
-would result in a totally different value. It's calculated using a SHA256 hashing algorithm. In order to replicate it
+Its goal is to provide a way to give an informal 'receipt' to a participant to they can detect tampering. A fingerprint is
+a hashed representation of the content. It is useful to ensure there has been no tampering with content, as a single modification
+would result in a totally different value. A SHA256 hashing algorithm calculates the fingerprint. In order to replicate it
 yourself, you can use a http://www.md5calc.com/sha256[MD5 calculator online] and copy-paste the source data.
 
 == Check fingerprint
 
-. Go to the content that you want to check the fingerprint
-. Click in the "Check fingerprint" link in the sidebar
+. Go to the content that you want to verify the fingerprint for
+. Click on the 'Check fingerprint' link in the sidebar
 image:features/fingerprint/sidebar.png[Check fingerprint link in sidebar]
 . Follow the modal instructions
 
 image:features/fingerprint/md5calc.png[MD5calc.com screenshot]
 
-It's possible to check the fingerprint with other tools, such as the sha256sum command line tool.
+It is possible to verify the fingerprint with other tools, such as the sha256sum command line tool.
 
 [source,bash]
 ----

@@ -2,7 +2,7 @@
 
 Sometimes you want to embed some content to an external page. For this you can use the `Embed` feature.
 
-image:features/embed/example.png[A proposal card embeded in another page]
+image:features/embed/example.png[A proposal card embedded in another page]
 
 == How to embed
 
@@ -11,7 +11,7 @@ image:features/embed/example.png[A proposal card embeded in another page]
 image:features/embed/sidebar.png[]
 . Copy the code from the modal.
 image:features/embed/modal.png[]
-. Paste that code in the external page where you want to embed it. The CMS or platform that you're using needs to supports
+. Paste that code in the external page where you want to embed it. The CMS or platform that you're using needs to support
 changing HTML code.
 
 An example of this code is:

@@ -4,9 +4,11 @@ Every participant has a public profile that shows details about them and their a
 
 To go to this section:
 
+pass:[<!-- vale Google.FirstPerson = NO -->]
+
 . Sign in as a participant
-. Click in the name of the participant in the header
-. Click in "My public profile"
+. Click on the name of the participant in the header
+. Click on 'My public profile'
 
 The sections available under the public profile are:
 
@@ -16,3 +18,5 @@ The sections available under the public profile are:
 * xref:admin:features/my_public_profile/follows.adoc[Follows]
 * xref:admin:features/my_public_profile/followers.adoc[Followers]
 * xref:admin:features/my_public_profile/groups.adoc[Groups]
+
+pass:[<!-- vale Google.FirstPerson = YES -->]

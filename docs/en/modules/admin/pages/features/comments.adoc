@@ -8,57 +8,57 @@ image:features/comments/example01.png[Comments example]
 == Create a comment
 
 . Sign in as a participant
-. Go to the content that you want to leave a comment
+. Go to the content where you want to leave a comment
 . Go to the bottom of the page
-. Fill the "Add comment" form
+. Fill in the 'Add comment' form
 
-Depending on the component settings, this feature can be disabled.
+Depending on the component settings, you can turn off this feature.
 
 image:features/comments/form.png[Comments form]
 
 === Form
 
-It's possible to:
+It is possible to:
 
-. mention a participant or user group (like @admin). They'll receive a notification
-. add a hashtag (like #Example). This will link to the general search
-. make a quote of a comment (like > this is a quote)
-. if an URL is entered, then it'll be linked automatically
-image:features/comments/rich_text_write.png[Comments with rich text (write)]
-image:features/comments/rich_text_read.png[Comments with rich text (read)]
+. mention a participant or user group - like <code>@admin</code>. They receive a notification
+. add a hashtag - like #Example. This links to the general search for that hashtag
+. make a quote of a comment - like <code>> this is a quote</code>
+. if you enter a URL, it hyperlinks automatically
+image:features/comments/rich_text_write.png[Comments with rich text - write]
+image:features/comments/rich_text_read.png[Comments with rich text - read]
 image:features/comments/hashtag_search.png[Hashtags in comments]
-. if HTML is added, it'll be escaped and not shown
-image:features/comments/xss_write.png[XSS in comments (write)]
-image:features/comments/xss_read.png[XSS in comments (read)]
+. if you add HTML, the editor escapes it and it is not shown
+image:features/comments/xss_write.png[XSS in comments - write]
+image:features/comments/xss_read.png[XSS in comments - read]
 . add emojis to comments
 image:features/comments/emoji_selector.png[Emoji selector in comments]
 
 == Sort
 
-Comments can be sorted by "Best rated", "Recent", "Older" or "More discussed".
+You can sort comments by 'Best rated', 'Recent', 'Older' or 'More discussed'.
 
 image:features/comments/order_by.png[Order comments]
 
 == Actions
 
-After a comment is created, the author can "Reply", "Report", "Get link", "Edit" and "Delete". Other participants can "Reply",  "Report" and "Get link". Some of these actions are visible in the three dots menu:
+After you create a comment, the author can 'Reply', 'Report', 'Get link', 'Edit' and 'Delete'. Other participants can 'Reply',  'Report' and 'Get link'. Some of these actions are visible in the three dots menu:
 
 image:features/comments/actions.png[Comments actions]
 
 === Reply
 
-It's possible to reply to comments until the 4th anidation level.
+It is possible to reply to comments until the fourth nested level.
 
-image:features/comments/anidation_levels.png[Anidation levels for comments]
+image:features/comments/nested_levels.png[Nested levels for comments]
 
 === Delete
 
-Once a comment is deleted is not longer visible.
+Once you delete a comment, it is not longer visible.
 
 image:features/comments/deleted_comment.png[Deleted comment]
 
 === Edit
 
-Once a comment is edited then it's shown that was edited. It doesn't have a version history of the changes made.
+Once you edit a comment then the user interface displays 'edited'. It does not have a version history of the changes made.
 
 image:features/comments/edited_comment.png[Edited comment]
