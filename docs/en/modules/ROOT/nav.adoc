@@ -156,6 +156,18 @@
 *** xref:develop:guide_architecture.adoc[5. Architecture]
 ** xref:develop:security.adoc[Security]
 ** Advanced
+*** Creating custom classes
+**** xref:develop:classes/cells.adoc[Cells]
+**** xref:develop:classes/commands.adoc[Commands]
+**** xref:develop:classes/controllers.adoc[Controllers]
+**** xref:develop:classes/events.adoc[Events]
+**** xref:develop:classes/forms.adoc[Forms]
+**** xref:develop:classes/jobs.adoc[Jobs]
+**** xref:develop:classes/mailers.adoc[Mailers]
+**** xref:develop:classes/models.adoc[Models]
+**** xref:develop:classes/permissions.adoc[Permissions]
+**** xref:develop:classes/presenters.adoc[Presenters]
+**** xref:develop:classes/queries.adoc[Queries]
 *** Concerns
 **** xref:develop:authorable.adoc[Authorable]
 **** xref:develop:embeddable.adoc[Embeddable]
@@ -172,16 +184,19 @@
 *** xref:develop:deploy.adoc[Deploy]
 *** xref:develop:docker.adoc[Docker]
 *** xref:develop:fixing_locales.adoc[Fixing locales]
-*** xref:develop:guide_github_projects.adoc[GitHub Projects Workflow]
 *** xref:develop:maps.adoc[Maps]
 *** xref:develop:managing_translations_i18n.adoc[i18n]
+*** xref:develop:maintainers/index.adoc[Maintainers]
+**** xref:develop:backports.adoc[Backports]
+**** xref:develop:guide_github_projects.adoc[GitHub Projects Workflow]
+**** xref:develop:maintainers/releases.adoc[Releasing new versionss]
+**** xref:develop:maintainers/security.adoc[Security procedures]
 *** xref:develop:metrics.adoc[Metrics]
 *** xref:develop:modules.adoc[Modules]
 *** xref:develop:notifications.adoc[Notifications]
 *** xref:develop:open-data.adoc[Open Data]
 *** xref:develop:permissions.adoc[Permissions]
 *** xref:develop:profiling.adoc[Profiling]
-*** xref:develop:maintainers/releases.adoc[Releases]
 *** xref:develop:reminders.adoc[Reminders]
 *** xref:develop:templates.adoc[Templates]
 *** xref:develop:testing.adoc[Testing]
@@ -189,7 +204,6 @@
 *** xref:develop:turbolinks.adoc[Turbolinks]
 *** Views
 **** xref:develop:content_blocks.adoc[Content Blocks]
-**** xref:develop:data-picker.adoc[Data Picker]
 **** xref:develop:newsletter_templates.adoc[Newsletter Templates]
 **** xref:develop:view_hooks.adoc[View Hooks]
 **** xref:develop:view_models_aka_cells.adoc[View Models (Cells)]
@@ -218,5 +232,5 @@
 ** Whitepaper
 *** xref:whitepaper:decidim-a-brief-overview.adoc[Decidim: a brief overview]
 
-* xref:releases:index.adoc[Release Notes]
+* xref:releases:index.adoc[Release notes]
 
