@@ -2,33 +2,33 @@
 
 The process is as follows:
 
-. Admins upload a CSV with the emails of the accepted participants
-. Participants go to its accounts and requests to be verified
-. Only participants with an email in that CSV file can get verified
+. Administrators upload a CSV with the emails of the accepted participants
+. Participants go to their accounts and request verification
+. Verification is only successful for participants with an email address matching the CSV file
 
-NOTE: is this too simple and you need more features related to CSV census imports?
-Check all the CSV or file based authorizations in our https://decidim.org/modules/[Modules page].
+NOTE: do you need more features related to CSV census imports?
+Check all the CSV or file based authorizations in the https://decidim.org/modules/[Modules page].
 
 == 1. An administrator uploads the CSV of the participants
 
-In the admin panel, the administrator can review the request by going to the "Organization's census" in the "Participants" section.
+In the administrator panel, the administrator can review the request by going to the 'Organization's census' in the 'Participants' section.
 
 image:authorizations_organization_census.png[Organization's census in admin panel]
 
-After the CSV is imported then the administrator can see how many participants where imported. She can also delete this
+After importing the CSV, the administrator can see how many participants where imported. She can also delete this
 imported census.
 
 image:authorizations_organization_census_imported.png[Imported CSV]
 
-== 2. A participant requests to be verified
+== 2. A participant requests verification
 
-By going to the authorization section in its profile, or by clicking on the action button if this permission is requested,
-a participant can request to be verified.
+By going to the authorization section in their profile, or by clicking on the action button if requesting this permission,
+a participant can request verification.
 
 image:authorizations_organization_census_account.png[Organization's census in participant's accounts]
 
-== 3. The participant is verified (or not)
+== 3. A participant verification succeeds - or not
 
-After is verified, as with other verifications, she can see it in her account settings.
+After verification, as with other verifications, she can see it in her account settings.
 
 image:authorizations_organization_census_verified.png[Verified by organization's census]
