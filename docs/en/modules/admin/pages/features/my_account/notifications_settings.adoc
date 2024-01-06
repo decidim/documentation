@@ -1,15 +1,17 @@
 = Notifications
 
-In this section participants can choose which kind of notifications they'll receive. For instance, depending in the activity of the installation and spaces, most people would want to disable the "Everything I follow"
+pass:[<!-- vale Google.FirstPerson = NO -->]
+
+In this section participants can choose which kind of notifications they receive. For instance, depending on the activity of the installation and spaces, most people would want to turn off the 'Everything I follow' setting.
 
 image:features/my_account/notifications_settings.png[Notifications settings]
 
 To go to this section:
 
 . Sign in as a participant
-. Click in the name of the participant in the header
-. Click in "My account"
-. Click in "Notifications settings" in the sidebar
+. Click on the name of the participant in the header
+. Click on 'My account'
+. Click on 'Notifications settings' in the sidebar
 
 The options available are:
 
@@ -21,6 +23,12 @@ The options available are:
 * Newsletters
 ** I want to receive newsletters
 * Receive direct messages from anyone
-** Allow anyone to send me a direct message, even if I don't follow them
+** Allow anyone to send me a direct message, even if I do not follow them
 * Administrators
+
+pass:[<!-- vale Google.Passive = NO -->]
+
 ** I want to receive an email every time something is reported for moderation
+
+pass:[<!-- vale Google.Passive = YES -->]
+pass:[<!-- vale Google.FirstPerson = YES -->]

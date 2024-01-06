@@ -3,7 +3,7 @@
 With conversations, participants can have private messaging with each other. Only the participants who are in the
 conversation can see each others messages.
 
-A conversation can be started with any participant or group registered on the platform.
+You can start a conversation with any participant or group registered on the platform.
 
 image:features/conversations/conversation.png[Example of a conversation]
 
@@ -13,38 +13,38 @@ To start a conversations:
 . Go to the participant profile that you want to start a conversation with
 image:features/conversations/profile.png[Participant profile]
 . Click on the contact icon image:icon_envelope.png[Envelope icon]
-. Fill the form
+. Fill in the form
 image:features/conversations/start_a_conversation_form.png[Start a conversation form]
 
 Alternatively, you could also:
 
 . Sign in as participant
 . Click on the conversation icon in the header image:icon_envelope_off.png[Conversations icon]
-. Click on the "Start conversation" button
+. Click on the 'Start conversation' button
 . Search the participant or group that you want to start a conversation with
-. Fill the form
+. Fill in the form
 
-If there are new messages in a conversation, then the participant will see the icon with a color image:icon_envelope_on.png[Conversation icon with color]
+If there are new messages in a conversation, then the participant sees the icon with a highlight image:icon_envelope_on.png[Conversation icon with highlight]
 
 image:features/conversations/conversations.png[Conversations list]
 
 == Multiple participants in a conversation
 
-It's possible to have multiple participants in a conversation.
+It is possible to have multiple participants in a conversation.
 
 For this, you need to:
 
 . Sign in as participant
 . Click on the conversation icon in the header image:icon_envelope_off.png[Conversations icon]
-. Click on the "Start conversation" button
+. Click on the 'Start conversation' button
 . Search the participants or groups that you want to start a conversation with
-. Fill the form
+. Fill in the form
 
 image:features/conversations/new_conversation_modal.png[New conversation modal]
 
-== Group converations
+== Group conversations
 
-Just like with participants, is possible to have converstaions with groups.
+Just like with participants, is possible to have conversations with groups.
 
 image:features/conversations/group_conversations.png[Group conversations list]
 image:features/conversations/conversations_group_counter.png[Conversations group counter]
@@ -53,5 +53,5 @@ image:features/conversations/conversations_group_counter.png[Conversations group
 
 Some things to consider about conversations:
 
-* It's not possible to delete a conversation.
-* It's not possible to edit a message in a conversation.
+* It is not possible to delete a conversation.
+* It is not possible to edit a message in a conversation.

@@ -1,29 +1,28 @@
 = Polls
 
-CAUTION: this feature is still in active development and can't be used in production yet.
+CAUTION: this feature is still in active development and you should not use it in production yet.
 
-Through the manage polls feature is possible to define a poll that will be displayed when an online meeting is ocurring.
+Through the manage polls feature is possible to define a poll to display when an online meeting is occurring.
 This is useful to see quick feedback and make a decision inside the meeting without having to leave the meeting and use
-other kind of tools (like surveys or proposals).
+other kind of tools like surveys or proposals.
 
-With this feature an administrator can define questions and also manage when these questions and its results will be shown
-to participants.
+With this feature, an administrator can define questions and also manage when these questions, with the results, display to participants.
 
 == Enable polls for a meeting
 
 To enable polls for a meeting:
 
-. Sign in as admin
-. Go to admin panel
+. Sign in as an administrator
+. Go to administrator panel
 . In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Click on "Meetings"
+For instance, it could be 'Processes', 'Assemblies', or 'Conferences'
+. Click on 'Meetings'
 . Search the meeting that you want to define polls for
-. Click on the "Manage polls" button image:action_list.png[Manage polls button]
+. Click on the 'Manage polls' button image:action_list.png[Manage polls button]
 . Fill the form
 
 The form is pretty much the Decidim form builder, with one caveat: you can only define Single and Multiple option questions.
 
 image:components/meetings/polls/backend.png[Backend for meeting polls]
 
-image:components/meetings/polls/backend_question.png[Definining a question in meeting polls]
+image:components/meetings/polls/backend_question.png[Defining a question in meeting polls]

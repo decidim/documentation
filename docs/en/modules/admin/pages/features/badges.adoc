@@ -1,9 +1,9 @@
 = Badges
 
-Badges are recognitions to participant actions and progress in the platform. As participants start discovering, participating
-and interacting in the platform, they will earn different badges. Here is the list of badges and some ways participants can earn them.
+Badges are recognitions to participant actions and progress in the platform. As participants start discovering, participating,
+and interacting in the platform, they earn different badges. Here is the list of badges and some ways participants can earn them.
 
-It's a https://en.wikipedia.org/wiki/Gamification[gamification] mechanism to improve the engagement of the participants in a ludic way.
+It is a https://en.wikipedia.org/wiki/Gamification[gamification] mechanism to improve the engagement of the participants in a playful way.
 
 The badges a participant has are visible in her account. There's also a general explanation page with a short description of every badge.
 
@@ -19,13 +19,13 @@ the fourth level at 60 and the fifth level at 100.
 
 .Badges
 |===
-|Image | Title | Description | How it's earned | Levels
+|Image | Title | Description | How to earn | Levels
 
 |image:features/badges/accepted_proposals_badge.png[Accepted proposals badge]
 |Accepted proposals
-|Granted when particiapnts actively participate with new proposals and these are accepted.
+|Granted when participants actively participate with new proposals which become accepted.
 |The participant needs to choose the participation space of her interest with submission for proposals enabled and try to
-make proposals that can be carried out. This way they are more likely to be accepted.
+make proposals that meet the required criteria for acceptance. This way, acceptance is more likely.
 |1, 5, 15, 30, 50
 
 |image:features/badges/attended_meetings_badge.png[Attended meetings badge]
@@ -43,22 +43,21 @@ make proposals that can be carried out. This way they are more likely to be acce
 |image:features/badges/followers_badge.png[Followers badge]
 |Followers
 |Granted when participant reach a certain number of followers. The platform is a social and political network, so
-participants ned to weave their web to communicate with other people in the platform.
-|The participant needs to be be active and follow other people. That will surely make other people follow her.
+participants need to engage and communicate with other people in the platform.
+|The participant needs to be active and follow other people. That surely encourages others to follow her.
 |1, 15, 30, 60, 100
 
 |image:features/badges/published_initiatives_badge.png[Published initiatives badge]
 |Published initiatives
 |Granted when a participant launch new initiatives, partnering with others to carry them out.
-|The participant needs to go to the participation space of Intiatives and follow the steps to create a new initiative.
+|The participant needs to go to the participation space of initiatives and follow the steps to create a new initiative.
 |1, 5, 15, 30, 50
 
 |image:features/badges/invitations_badge.png[invitations badge]
 |Invitations
 |Granted when participants invite some people and they have become participants.
 |The participant needs to use the “invite friends” link on her user page to invite her friends. She can customize the
-message she's sending. She’ll level up by sending invitations and getting them registered. Note that this feature is disabled
-and this badge is not available, so it'll be removed in the future.
+message she's sending. She'll level up by sending invitations and getting them registered. Note that Decidim now does not allow sending invitations and this badge is not available, with removal planned in the future.
 |1, 5, 10, 30, 50
 
 |image:features/badges/proposal_supports_badge.png[Proposal supports badge]
@@ -70,7 +69,7 @@ and this badge is not available, so it'll be removed in the future.
 |image:features/badges/proposals_badge.png[Proposals badge]
 |Proposals
 |Granted when participants actively participate with new proposals.
-|The participant needs to choose the participation space of her interest with submission for proposals enabled and create a new proposal.
+|The participant needs to choose the participation space of her interest with submission for proposals enabled, and create a new proposal.
 |1, 5, 10, 30, 60
 
 |===

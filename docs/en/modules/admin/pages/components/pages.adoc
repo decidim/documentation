@@ -1,12 +1,12 @@
 = Page
 
-The Page component allows people to get information about a space. It's similar to the general xref:admin:pages.adoc[Pages] admin section, with
-the main difference is that this component allows to define pages in a space, and the general Pages admin section allows to
-define pages for all the platform (for instance, help pages, terms of services, or FAQs), that aren't associated to a space.
+The Page component allows people to get information about a space. It is similar to the general xref:admin:pages.adoc[Pages] administrative section, with
+the main difference is that this component allows to define pages in a space, and the general Pages administrative section allows you to
+define pages for all the platform - for instance, help pages, terms of services, or FAQs which are not associated with a space.
 
 From this starting point, there could be other configurations, such as:
 
-Some examples of where this component was used:
+Some examples of this component in use include:
 
 * https://www.decidim.barcelona/processes/PressupostosParticipatius/f/4691/[More information page in 2020 Participatory Budgeting process in Decidim Barcelona]
 
@@ -15,13 +15,13 @@ image:components/page/example02.png[More information page in 2020 Participatory 
 
 To configure the Page component:
 
-. Sign in as admin
-. Go to admin panel
+. Sign in as an administrator
+. Go to the administrator panel
 . In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies", or "Conferences"
+For instance, it could be 'Processes', 'Assemblies', or 'Conferences'
 . Go to components
-. Click on "Add component" button
-. Click on "Page"
+. Click on 'Add component' button
+. Click on 'Page'
 . Fill the xref:_add_component[Add component] form
 
 == Add component
@@ -34,12 +34,12 @@ image:components/page/component.png[Add component form]
 
 |Name
 |Required
-|What is the title of this component. For instance, "More information".
+|What is the title of this component. For instance, 'More information'.
 
 |Order position
 |Optional
-|Which order will it have in relation to the other pages. Having a lower number means a higher priority.
-For instance, if you have two pages, "Page a" with weight "10" and "Page b" with weight "0", then "Page b" will be first when ordering.
+|Which order it has in relation to the other pages. Having a lower number means a higher priority.
+For instance, if you have two pages, 'Page A' with weight '10' and 'Page B' with weight '0', then 'Page B' displays first when ordering.
 
 |===
 
@@ -49,11 +49,11 @@ For instance, if you have two pages, "Page a" with weight "10" and "Page b" with
 
 |Announcement
 |Optional
-|A general announcement that'll be visible on the general pages landing page.
+|A general announcement, visible on the general pages landing page.
 
 |===
 
-In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
+In the cases where the space used by this component has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
 xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
 
 .Add component: Pages form - Step settings
@@ -62,13 +62,13 @@ xref:admin:spaces/processes.adoc[Participatory Processes], then you can also def
 
 |Announcement
 |Optional
-|A general announcement that'll be visible on the general page landing page.
+|A general announcement visible on the general pages landing page.
 
 |===
 
 == Permissions
 
-As this component doesn't allow to do anything, there are no permissions to set up.
+As this component does not allow users to do anything, there are no permissions to set up.
 
 === New page form
 

@@ -6,7 +6,7 @@ From this starting point, there could be other configurations, such as:
 
 *
 
-Some examples of where this component was used:
+Some examples of this component in use include:
 
 *
 
@@ -17,13 +17,13 @@ image:components/skeleton/example04.png[]
 
 To configure the Skeleton component:
 
-. Sign in as admin
-. Go to admin panel
+. Sign in as an administrator
+. Go to the administrator panel
 . In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies" or "Conferences".
+For instance, it could be 'Processes', 'Assemblies' or 'Conferences'.
 . Go to components
-. Click on "Add component" button
-. Click on "Skeleton"
+. Click on 'Add component' button
+. Click on 'Skeleton'
 . Fill the xref:_add_component[Add component] form
 
 == Add component
@@ -36,12 +36,12 @@ image:components/skeleton/component.png[Add component form]
 
 |Name
 |Required
-|What is the title of this component. For instance, "Skeletons"
+|What is the title of this component. For instance, 'Skeletons'
 
 |Order position
 |Optional
 |Which order will it have in relation to the other skeletons. Having a lower number means a higher priority.
-For instance, if you have two skeletons, "Skeleton a" with weight "10" and "Skeleton b" with weight "0", then "Skeleton b" will be first when ordering.
+For instance, if you have two skeletons, 'Skeleton A' with weight '10' and 'Skeleton B' with weight '0', then 'Skeleton B' displays first when ordering.
 
 |===
 
@@ -51,7 +51,7 @@ For instance, if you have two skeletons, "Skeleton a" with weight "10" and "Skel
 
 |Scopes enabled
 |Optional
-|Check if you want to have Scopes filtering in this component.
+|Select if you want to have Scopes filtering in this component.
 
 |Scope
 |Optional
@@ -67,19 +67,25 @@ For instance, if you have two skeletons, "Skeleton a" with weight "10" and "Skel
 
 |Comments max length
 |Optional
-|What is the characters limit that participants will have when making comments. Leave 0 for default value.
+|What is the character limit that participants have when making comments. Leave 0 for default value.
+
+pass:[<!-- vale Google.Passive = NO -->]
+
+// There are some grammatical issues here in the core strings, so we turn off the vale alerts here until they are fixed.
 
 |Actions permissions can be set for each skeleton
 |Optional
-|Whether you want to be able to set permissions for every one of the skeletons. Most of the time you will want to leave this option disabled.
+|Whether you want to be able to set permissions for every one of the skeletons. Most of the time you should leave this option turned off.
+
+pass:[<!-- vale Google.Passive = YES -->]
 
 |Announcement
 |Optional
-|A general announcement that'll be visible on the general skeletons landing page.
+|A general announcement visible on the general skeletons landing page.
 
 |===
 
-In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
+In the cases where the space using this component has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
 xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
 
 .Add component: Skeletons form - Step settings
@@ -88,11 +94,11 @@ xref:admin:spaces/processes.adoc[Participatory Processes], then you can also def
 
 |Comments blocked
 |Optional
-|Whether you want to enable comments for this phase.
+|Whether you want to turn on comments for this phase.
 
 |Announcement
 |Optional
-|A general announcement that'll be visible on the general skeleton landing page.
+|A general announcement visible on the general skeleton landing page.
 
 |===
 
@@ -129,12 +135,12 @@ image:components/skeleton/new_skeleton.png[New skeleton form]
 
 |Title
 |Required
-|What is the title of this skeleton. For instance, "District A"
+|What is the title of this skeleton. For instance, 'District A'
 
 |Order position
 |Optional
 |Which order will it have in relation to the other skeletons. Having a lower number means a higher priority.
-For instance, if you have two skeletons, "Skeleton a" with weight "10" and "Skeleton b" with weight "0", then "Skeleton b" will be first when ordering.
+For instance, if you have two skeletons, 'Skeleton A' with weight '10' and 'Skeleton B' with weight '0', then 'Skeleton B' displays first when ordering.
 
 |Description
 |Optional
@@ -150,7 +156,7 @@ For instance, if you have two skeletons, "Skeleton a" with weight "10" and "Skel
 
 |image:action_preview.png[Preview icon]
 |Preview
-|To see how it's shown in the frontend to participants.
+|To preview the display in the front end to participants.
 
 |image:action_list.png[Manage projects icon]
 |xref:_manage_projects[Manage projects]
@@ -158,10 +164,10 @@ For instance, if you have two skeletons, "Skeleton a" with weight "10" and "Skel
 
 |image:action_edit.png[Edit icon]
 |Edit
-|Edit form for a skeleton. It's the same form as "New skeleton".
+|Edit form for a skeleton. It is the same form as 'New skeleton'.
 
 |image:action_delete.png[Delete icon]
 |Delete
-|To delete this skeleton. Only can be done when there aren't any projects.
+|To delete this skeleton. You can only do this when no projects exist.
 
 |===

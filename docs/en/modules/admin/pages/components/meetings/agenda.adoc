@@ -1,7 +1,7 @@
 = Agenda
 
-The agenda feature allows an administrator to define the schedule for a meeting. It's possible to define agenda items and
-sub-items, with every one of the topics that will be discussed in the meeting, along with a description and the duration
+The agenda feature allows an administrator to define the schedule for a meeting. It is possible to define agenda items and
+sub-items, listing each discussion topic for the meeting, along with a description and the duration
 of every item and sub-item.
 
 image:components/meetings/agenda/agenda_frontend.png[Agenda in the frontend]
@@ -10,13 +10,13 @@ image:components/meetings/agenda/agenda_frontend.png[Agenda in the frontend]
 
 To define an agenda for a meeting:
 
-. Sign in as admin
-. Go to admin panel
+. Sign in as an administrator
+. Go to the administrator panel
 . In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Click on "Meetings"
+For instance, it could be 'Processes', 'Assemblies', or 'Conferences'
+. Click on 'Meetings'
 . Search the meeting that you want to add the agenda to
-. Click on the "Agenda" button image:action_agenda.png[Agenda button]
+. Click on the 'Agenda' button image:action_agenda.png[Agenda button]
 . Fill the form
 
 image:components/meetings/agenda/new_agenda_form.png[New agenda form in the backend]
@@ -27,7 +27,7 @@ image:components/meetings/agenda/new_agenda_form.png[New agenda form in the back
 
 |Title
 |Required
-|Title for the agenda. For instance, "Schedule"
+|Title for the agenda. For instance, 'Schedule'
 
 |Visible
 |Optional
@@ -39,8 +39,8 @@ image:components/meetings/agenda/new_agenda_form.png[New agenda form in the back
 
 |===
 
-It's possible to create any number of Agenda items and sub-items. You can up or down the hierarchy of the agenda items.
-It's also possible to remove and edit the agenda items.
+It is possible to create any number of Agenda items and sub-items. You can move up or down the position in the hierarchy of the agenda items.
+It is also possible to remove and edit the agenda items.
 
 .Agenda item form
 |===
@@ -52,7 +52,7 @@ It's also possible to remove and edit the agenda items.
 
 |Duration
 |Required
-|How many minutes will the agenda item last. For instance, "15".
+|How many minutes the agenda item covers. For instance, '15'.
 
 |Description
 |Optional
@@ -65,7 +65,7 @@ It's also possible to remove and edit the agenda items.
 |===
 
 The only limitation that agenda items and sub-items have is that they have to respect the duration of the parent. For instance,
-if there's an Item that lasts 60 minutes, you can't create a sub-item that lasts 90 minutes.
+if there's an item that lasts 60 minutes, you cannot create a sub-item that lasts 90 minutes.
 
 As an example, this agenda:
 
@@ -73,7 +73,7 @@ image:components/meetings/agenda/agenda_frontend.png[Agenda in the frontend]
 
 Has the following configuration:
 
-* Title: "Schedule"
+* Title: 'Schedule'
 * Visible: true
 * Agenda item #1:
 ** Title: Diagnosis
@@ -84,7 +84,7 @@ Has the following configuration:
 ** Agenda sub-item #2.1:
 *** Title: Future thinking
 *** Duration: 60
-*** Description: Imagining how we can solve the problem
+*** Description: Imagining how to solve the problem
 ** Agenda sub-item #2.2:
 *** Title: Creating proposals
 *** Duration: 60

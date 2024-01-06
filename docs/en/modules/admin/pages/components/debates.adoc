@@ -1,15 +1,15 @@
 = Debate
 
-The Debate component allows people to have discussions, without voting nor prioritzation. It also allows to close them,
-by adding conclusions or a summary of what the discussion was about.
+The Debate component allows people to have discussions, without voting nor prioritization. It also allows to close them
+by adding conclusions, or a summary of what the discussion was about.
 
 From this starting point, there could be other configurations, such as:
 
 * To allow debates creation by participants
 * To have debates with a fixed started and ending date or open
-* To show endorsements (public supports) or not
+* To show endorsements - public supports - or not
 
-Some examples of where this component was used:
+Some examples of this component in use:
 
 * https://meta.decidim.org/processes/roadmap/f/219/[Propose new functionalities for Decidim software in Metadecidim]
 
@@ -18,13 +18,13 @@ image:components/debates/example02.png[Debate example]
 
 To configure the Debate component:
 
-. Sign in as admin
-. Go to admin panel
+. Sign in as an administrator
+. Go to the administrator panel
 . In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies" or "Conferences".
+For instance, it could be 'Processes', 'Assemblies' or 'Conferences'.
 . Go to components
-. Click on "Add component" button
-. Click on "Debate"
+. Click on 'Add component' button
+. Click on 'Debate'
 . Fill the xref:_add_component[Add component] form
 
 == Add component
@@ -37,12 +37,12 @@ image:components/debates/component.png[Add component form]
 
 |Name
 |Required
-|What is the title of this component. For instance, "Debates"
+|What is the title of this component. For instance, 'Debates'
 
 |Order position
 |Optional
-|Which order will it have in relation to the other debates. Having a lower number means a higher priority.
-For instance, if you have two debates, "Debate a" with weight "10" and "Debate b" with weight "0", then "Debate b" will be first when ordering.
+|Which order it has in relation to the other debates. Having a lower number means a higher priority.
+For instance, if you have two debates, 'Debate A' with weight '10' and 'Debate B' with weight '0', then 'Debate b' displays first when ordering.
 
 |===
 
@@ -52,7 +52,7 @@ For instance, if you have two debates, "Debate a" with weight "10" and "Debate b
 
 |Scopes enabled
 |Optional
-|Check if you want to have Scopes filtering in this component.
+|Select if you want to have Scopes filtering in this component.
 
 |Scope
 |Optional
@@ -68,15 +68,15 @@ For instance, if you have two debates, "Debate a" with weight "10" and "Debate b
 
 |Comments max length
 |Optional
-|What is the characters limit that participants will have when making comments. Leave 0 for default value.
+|What is the character limit that participants have when making comments. Leave 0 for default value.
 
 |Announcement
 |Optional
-|A general announcement that'll be visible on the general debates landing page.
+|A general announcement that is visible on the general debates landing page.
 
 |===
 
-In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
+In the cases where the space using this component has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
 xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
 
 .Add component: Debates form - Step settings
@@ -85,7 +85,7 @@ xref:admin:spaces/processes.adoc[Participatory Processes], then you can also def
 
 |Endorsements enabled
 |Optional
-|Check if you want that participants show public support for these debates.
+|Select if you want that participants show public support for these debates.
 
 |Endorsements blocked
 |Optional
@@ -93,7 +93,7 @@ xref:admin:spaces/processes.adoc[Participatory Processes], then you can also def
 
 |Debate creation by participants enabled
 |Optional
-|Check if you want to allow the creation of new debates by participants.
+|Select if you want to allow the creation of new debates by participants.
 
 |Comments blocked
 |Optional
@@ -101,13 +101,13 @@ xref:admin:spaces/processes.adoc[Participatory Processes], then you can also def
 
 |Announcement
 |Optional
-|A general announcement that'll be visible on the general debate landing page.
+|A general announcement that is visible on the general debate landing page.
 
 |===
 
 == Permissions
 
-An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
+An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant needs to have to take
 certain actions in the debates:
 
 * Create
@@ -135,7 +135,7 @@ image:components/debates/new_debate_backend.png[New debate backend form]
 
 |Title
 |Required
-|What is the title of this debate. For instance, "How can we improve this process?"
+|What is the title of this debate. For instance, 'How to improve this process?'
 
 |Description
 |Required
@@ -152,7 +152,7 @@ image:components/debates/new_debate_backend.png[New debate backend form]
 |xref:_debate_types[Debate type]
 |Required
 |Choose between Finite and Open. Finite means that the debate has a starting and ending date and time, Open means that
-there isn't any timeframe.
+there is not any time frame.
 
 |Starts at
 |Required if the debate type is Finite
@@ -164,18 +164,18 @@ there isn't any timeframe.
 
 |Category
 |Optional
-|Which category has the debate. Used for filtering in the debates list.
+|Which category relates to the debate. Used for filtering in the debates list.
 
 |===
 
 ==== Debate types
 
-It's possible to have two kinds of debates:
+It is possible to have two kinds of debates:
 
 . Finite: with a start and end date
 . Open: without a start and end date
 
-This is shown publically in the debate list.
+This displays publicly in the debate list.
 
 image:components/debates/debates_list.png[Debates list]
 image:components/debates/debate_finite.png[Finite debate]
@@ -188,7 +188,7 @@ image:components/debates/debate_finite.png[Finite debate]
 
 |image:action_edit.png[Edit icon]
 |Edit
-|Edit form for a debate. It's the same form as "New debate".
+|Edit form for a debate. It is the same form as 'New debate'.
 
 |image:action_close.png[Close icon]
 |Close
@@ -200,18 +200,17 @@ image:components/debates/debate_finite.png[Finite debate]
 
 |image:action_delete.png[Delete icon]
 |Delete
-|To delete this debate. Only can be done when there aren't any projects.
+|To delete this debate. You can only delete a debate if there are not yet any projects.
 
 |===
 
 === Close debate form
 
-A debate can be closed. This is useful for adding conclusions. After a debate was closed it can't be edited nor commented any more
+You can close a debate. This is useful for adding conclusions. After closing a debate, you cannot edit or comment any more.
 
 image:components/debates/close_debate_backend.png[Close debate backend form]
 
-Take in account that if the debate was created by a participant then only that
-participant can close it.
+Take in account that only the participant creating the debate can close it.
 
 image:components/debates/close_debate_frontend.png[Close debate frontend form]
 
@@ -225,6 +224,6 @@ image:components/debates/close_debate_frontend.png[Close debate frontend form]
 
 |===
 
-The conclusions are shown publicly with the close date and time.
+The conclusions display publicly with the close date and time.
 
 image:components/debates/debate_closed.png[Closed debate]
