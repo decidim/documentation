@@ -21,7 +21,7 @@ image:features/notifications/no_notifications_yet.png[Example of notifications p
 
 Below is an exhaustive list of actions that trigger notifications to participants. Participants are divided into three categories: assigned users, followers and administrators.
 
-[options="header"]
+[cols="7,2,1,1,1"]
 |============================================================================================================================================================================
 | Action                                                                                | Feature                                  | Follower | Affected user   | Administrator
 
