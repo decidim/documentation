@@ -38,15 +38,15 @@ Below is an exhaustive list of actions that trigger notifications to participant
 | A user asked their data export                                                        | User                                             | ❌       | ✅              | ❌
 | A user I follow endorsed a resource                                                   | User                                             | ✅       | ❌              | ❌
 | A public profile has been updated                                                     | User                                             | ✅       | ❌              | ❌
-| A new user group has been created                                                     | User groupsfootnote:[If user groups are enabled] | ❌       | ❌              | ✅
-| A user group has updated its profile                                                  | User groupsfootnote:[If user groups are enabled] | ❌       | ❌              | ✅
-| A user has been invited to join a user group                                          | User groupsfootnote:[If user groups are enabled] | ❌       | ✅              | ❌
-| A user has been promoted as group admin                                               | User groupsfootnote:[If user groups are enabled] | ❌       | ✅              | ❌
-| A user requested to join the user group                                               | User groupsfootnote:[If user groups are enabled] | ❌       | ✅              | ❌
-| A user request has been accepted to join the user group                               | User groupsfootnote:[If user groups are enabled] | ❌       | ✅              | ❌
-| A user request to join the user group has been rejected                               | User groupsfootnote:[If user groups are enabled] | ❌       | ✅              | ❌
-| The group admin has been demoted                                                      | User groupsfootnote:[If user groups are enabled] | ❌       | ✅              | ❌
-| The user has been removed from the group                                              | User groupsfootnote:[If user groups are enabled] | ❌       | ✅              | ❌
+| A new user group has been created                                                     | User groupsfootnote:user-group[If user groups are enabled] | ❌       | ❌              | ✅
+| A user group has updated its profile                                                  | User groupsfootnote:user-group[] | ❌       | ❌              | ✅
+| A user has been invited to join a user group                                          | User groupsfootnote:user-group[] | ❌       | ✅              | ❌
+| A user has been promoted as group admin                                               | User groupsfootnote:user-group[] | ❌       | ✅              | ❌
+| A user requested to join the user group                                               | User groupsfootnote:user-group[] | ❌       | ✅              | ❌
+| A user request has been accepted to join the user group                               | User groupsfootnote:user-group[] | ❌       | ✅              | ❌
+| A user request to join the user group has been rejected                               | User groupsfootnote:user-group[] | ❌       | ✅              | ❌
+| The group admin has been demoted                                                      | User groupsfootnote:user-group[] | ❌       | ✅              | ❌
+| The user has been removed from the group                                              | User groupsfootnote:user-group[] | ❌       | ✅              | ❌
 | An admin of the assembly has added you as one of its members                          | Assemblies                                       | ❌       | ✅              | ❌
 | You have been assigned a role for the assembly                                        | Assemblies                                       | ❌       | ✅              | ❌
 | You have been assigned a role for the participatory process                           | Processes                                        | ❌       | ✅              | ❌
@@ -117,10 +117,10 @@ Below is an exhaustive list of actions that trigger notifications to participant
 | A user has been rejected to access as a contributor                                   | Proposal drafts                                  | ❌       | ✅              | ❌
 | A user has been accepted to access as a contributor                                   | Proposal drafts                                  | ❌       | ✅              | ❌
 | A user withdrawn the collaborative draft                                              | Proposal drafts                                  | ❌       | ✅              | ❌
-| An amendment has been rejected                                                        | Amendmentsfootnote:[If amendments are enabled]   | ✅       | ✅              | ❌
-| An amendment has been accepted                                                        | Amendmentsfootnote:[If amendments are enabled]   | ✅       | ✅              | ❌
-| An amendment has been created                                                         | Amendmentsfootnote:[If amendments are enabled]   | ✅       | ✅              | ❌
-| An amendment has been promoted                                                        | Amendmentsfootnote:[If amendments are enabled]   | ✅       | ✅              | ❌
+| An amendment has been rejected                                                        | Amendmentsfootnote:amendments[If amendments are enabled]   | ✅       | ✅              | ❌
+| An amendment has been accepted                                                        | Amendmentsfootnote:amendments[]   | ✅       | ✅              | ❌
+| An amendment has been created                                                         | Amendmentsfootnote:amendments[]   | ✅       | ✅              | ❌
+| An amendment has been promoted                                                        | Amendmentsfootnote:amendments[]   | ✅       | ✅              | ❌
 | A sortition has been created                                                          | Sortitions                                       | ✅       | ❌              | ❌
 | A survey has been opened                                                              | Surveys                                          | ✅       | ❌              | ❌
 | A survey has been closed                                                              | Surveys                                          | ✅       | ❌              | ❌
