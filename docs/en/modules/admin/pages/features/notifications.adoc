@@ -23,7 +23,7 @@ Below is an exhaustive list of actions that trigger notifications to participant
 
 [options="header"]
 |============================================================================================================================================================================
-| Action                                                                                | Component                                | Follower | Affected user   | Administrator
+| Action                                                                                | Feature                                  | Follower | Affected user   | Administrator
 
 | A new attachment has been created                                                     | Admin                                    | ✅       | ❌              | ❌
 | An admin requested an export                                                          | Admin                                    | ❌       | ❌              | ✅
