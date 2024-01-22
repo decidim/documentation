@@ -19,213 +19,212 @@ image:features/notifications/no_notifications_yet.png[Example of notifications p
 
 == Notifications list
 
-Below is an exhaustive list of actions that trigger notifications to participants. Participants are divided into three categories: assigned users, followers and administrators.
+Below is an exhaustive list of actions that trigger notifications to participants. Participants are divided into three categories: affected users, followers, and administrators.
 
-[options="header"]
+[NOTE]
+====
+Affected users depend on the notification context. For instance, it could be the author of moderated content, a user that earns a badge, a user that has been mentioned, etc.
+====
+
+[cols="7,2,1,1,1"]
 |===
-|0.28 version
-|
-|Roles
-|
-|
+|Action |Feature |Affected user |Follower |Administrator
 
-|Component |Action |Follower |Affected user |Administrator
+|A new attachment has been created |Administration |❌ |✅ |❌
 
-|Administration |A new attachment has been created |✅ |❌ |❌
+|An admin requested an export |Administration |❌ |❌ |✅
 
-| |An admin requested an export |❌ |❌ |✅
+|A component has been published in a participatory space |Administration |❌ |✅ |❌
 
-| |A component has been published in a participatory space |✅ |❌ |❌
+|A participant has tried to verify themself with the data of another participant |Verifications |❌ |❌ |✅
 
-|Verifications |A participant has tried to verify themself with the data of another participant |❌ |❌ |✅
+|An administrator moderated a resource because it has been reported |Moderation |✅ |❌ |❌
 
-|Moderation |An administrator moderated a resource because it has been reported |❌ |✅ |❌
+|A resource has been reported |Moderation |❌ |❌ |✅
 
-| |A resource has been reported |❌ |❌ |✅
+|A user confirms the registration (if welcome notification is enabled) |User |✅ |❌ |❌
 
-|User |A user confirms the registration (if welcome notification is enabled) |❌ |✅ |❌
+|A user earned a badge (if badges are enabled) |User |✅ |❌ |❌
 
-| |A user earned a badge (if badges are enabled) |❌ |✅ |❌
+|A user has reached a new badge level (if badges are enabled) |User |✅ |❌ |❌
 
-| |A user has reached a new badge level (if badges are enabled) |❌ |✅ |❌
+|A user has been officialized |User |❌ |❌ |✅
 
-| |A user has been officialized |❌ |❌ |✅
+|A user asked their data export |User |✅ |❌ |❌
 
-| |A user asked their data export |❌ |✅ |❌
+|A user I follow endorsed a resource |User |❌ |✅ |❌
 
-| |A user I follow endorsed a resource |✅ |❌ |❌
+|A public profile has been updated |User |❌ |✅ |❌
 
-| |A public profile has been updated |✅ |❌ |❌
+|A new user group has been created |User groupsfootnote:user-group[If user groups are enabled] |❌ |❌ |✅
 
-|User groups (if user groups are enabled) |A new user group has been created |❌ |❌ |✅
+|A user group has updated its profile |User groupsfootnote:user-group[] |❌ |❌ |✅
 
-| |A user group has updated its profile |❌ |❌ |✅
+|A user has been invited to join a user group |User groupsfootnote:user-group[] |✅ |❌ |❌
 
-| |A user has been invited to join a user group |❌ |✅ |❌
+|A user has been promoted as group admin |User groupsfootnote:user-group[] |✅ |❌ |❌
 
-| |A user has been promoted as group admin |❌ |✅ |❌
+|A user requested to join the user group |User groupsfootnote:user-group[] |✅ |❌ |❌
 
-| |A user requested to join the user group |❌ |✅ |❌
+|A user request has been accepted to join the user group |User groupsfootnote:user-group[] |✅ |❌ |❌
 
-| |A user request has been accepted to join the user group |❌ |✅ |❌
+|A user request to join the user group has been rejected |User groupsfootnote:user-group[] |✅ |❌ |❌
 
-| |A user request to join the user group has been rejected |❌ |✅ |❌
+|The group admin has been demoted |User groupsfootnote:user-group[] |✅ |❌ |❌
 
-| |The group admin has been demoted |❌ |✅ |❌
+|The user has been removed from the group |User groupsfootnote:user-group[] |✅ |❌ |❌
 
-| |The user has been removed from the group |❌ |✅ |❌
+|An admin of the assembly has added you as one of its members |Assemblies |✅ |❌ |❌
 
-|Assemblies |An admin of the assembly has added you as one of its members |❌ |✅ |❌
+|You have been assigned a role for the assembly |Assemblies |✅ |❌ |❌
 
-| |You have been assigned a role for the assembly |❌ |✅ |❌
+|You have been assigned a role for the participatory process |Processes |✅ |❌ |❌
 
-|Processes |You have been assigned a role for the participatory process |❌ |✅ |❌
+|The phases dates have been updated |Processes |❌ |✅ |❌
 
-| |The phases dates have been updated |✅ |❌ |❌
+|A new phase has been activated |Processes |❌ |✅ |❌
 
-| |A new phase has been activated |✅ |❌ |❌
+|You have been assigned a role for the conference |Conferences |✅ |❌ |❌
 
-|Conferences |You have been assigned a role for the conference |❌ |✅ |❌
+|The registration to the conference has been confirmed |Conferences |✅ |❌ |❌
 
-| |The registration to the conference has been confirmed |❌ |✅ |❌
+|The registration for the conference is open |Conferences |❌ |✅ |❌
 
-| |The registration for the conference is open |✅ |❌ |❌
+|The conference occupied slots are over X% |Conferences |❌ |❌ |✅
 
-| |The conference occupied slots are over X% |❌ |❌ |✅
+|The conference is taking place in 2 days |Conferences |❌ |✅ |❌
 
-| |The conference is taking place in 2 days |✅ |❌ |❌
+|The conference has been updated |Conferences |❌ |✅ |❌
 
-| |The conference has been updated |✅ |❌ |❌
+|The election is now active for the participatory space |Elections |❌ |✅ |❌
 
-|Elections |The election is now active for the participatory space |✅ |❌ |❌
+|You are added as a trustee for the election |Elections |✅ |❌ |❌
 
-| |You are added as a trustee for the election |❌ |✅ |❌
+|An admin has added you as trustee |Elections |✅ |❌ |❌
 
-| |An admin has added you as trustee |❌ |✅ |❌
+|Your vote was accepted |Elections |✅ |❌ |❌
 
-| |Your vote was accepted |❌ |✅ |❌
+|You have been assigned a role of the Polling Station |Elections |✅ |❌ |❌
 
-| |You have been assigned a role of the Polling Station |❌ |✅ |❌
+|Here is your Access Code |Elections |✅ |❌ |❌
 
-| |Here is your Access Code |❌ |✅ |❌
+|A user I follow created an initiative |Initiatives |❌ |✅ |❌
 
-|Initiatives |A user I follow created an initiative |✅ |❌ |❌
+|My initiative has been created |Initiatives |✅ |❌ |❌
 
-| |My initiative has been created |❌ |✅ |❌
+|A user I follow endorsed an initiative |Initiatives |❌ |✅ |❌
 
-| |A user I follow endorsed an initiative |✅ |❌ |❌
+|A user sent their initiative to technical validation |Initiatives |❌ |❌ |✅
 
-| |A user sent their initiative to technical validation |❌ |❌ |✅
+|The initiative has changed its status |Initiatives |✅ |✅ |❌
 
-| |The initiative has changed its status |✅ |✅ |❌
+|The signatures end date for the initiative have been extended |Initiatives |❌ |✅ |❌
 
-| |The signatures end date for the initiative have been extended |✅ |❌ |❌
+|The request to be part of the promoter committee for the initiative has been accepted |Initiatives |✅ |❌ |❌
 
-| |The request to be part of the promoter committee for the initiative has been accepted |❌ |✅ |❌
+|The request to be part of the promoter committee for the initiative has been rejected |Initiatives |✅ |❌ |❌
 
-| |The request to be part of the promoter committee for the initiative has been rejected |❌ |✅ |❌
+|A user wants to join your initiative |Initiatives |✅ |❌ |❌
 
-| |A user wants to join your initiative |❌ |✅ |❌
+|The initiative has reached the signatures threshold |Initiatives |❌ |❌ |✅
 
-| |The initiative has reached the signatures threshold |❌ |❌ |✅
+|Your initiative has achieved the X% of signatures |Initiatives |❌ |✅ |❌
 
-| |Your initiative has achieved the X% of signatures |✅ |❌ |❌
+|The initiative has achieved the X% of signatures |Initiatives |✅ |❌ |❌
 
-| |The initiative has achieved the X% of signatures |❌ |✅ |❌
+|The proposal has been included in a result |Suivi des réalisations |❌ |✅ |❌
 
-|Suivi des réalisations |The proposal has been included in a result |✅ |❌ |❌
+|The result progress has been updated |Suivi des réalisations |❌ |✅ |❌
 
-| |The result progress has been updated |✅ |❌ |❌
+|A post has been published |Blogs |❌ |✅ |❌
 
-|Blogs |A post has been published |✅ |❌ |❌
+|The budget is now active |Budgets |❌ |✅ |❌
 
-|Budgets |The budget is now active |✅ |❌ |❌
+|A resource has a comment |Comments |❌ |✅ |❌
 
-|Comments |A resource has a comment |✅ |❌ |❌
+|A user group has left a comment on a resource |Comments |❌ |✅ |❌
 
-| |A user group has left a comment on a resource |✅ |❌ |❌
+|A user has left a comment on a resource |Comments |❌ |✅ |❌
 
-| |A user has left a comment on a resource |✅ |❌ |❌
+|A user has replied your comment |Comments |✅ |❌ |❌
 
-| |A user has replied your comment |❌ |✅ |❌
+|A group you belong to has been mentioned |Comments |✅ |❌ |❌
 
-| |A group you belong to has been mentioned |❌ |✅ |❌
+|You have been mentioned |Comments |✅ |❌ |❌
 
-| |You have been mentioned |❌ |✅ |❌
+|Your comment in has been upvoted |Comments |✅ |❌ |❌
 
-| |Your comment in has been upvoted |❌ |✅ |❌
+|Your comment in has been downvoted |Comments |✅ |❌ |❌
 
-| |Your comment in has been downvoted |❌ |✅ |❌
+|A debate has been created |Debates |❌ |✅ |❌
 
-|Debates |A debate has been created |✅ |❌ |❌
+|Debate creation is enabled for participants |Debates |❌ |✅ |❌
 
-| |Debate creation is enabled for participants |✅ |❌ |❌
+|Debate creation is no longer active |Debates |❌ |✅ |❌
 
-| |Debate creation is no longer active |✅ |❌ |❌
+|The debate was closed |Debates |✅ |✅ |❌
 
-| |The debate was closed |✅ |✅ |❌
+|A meeting has been created |Meetings |❌ |✅ |❌
 
-|Meetings |A meeting has been created |✅ |❌ |❌
+|A meeting was closed |Meetings |✅ |✅ |❌
 
-| |A meeting was closed |✅ |✅ |❌
+|A meeting was updated |Meetings |❌ |✅ |❌
 
-| |A meeting was updated |✅ |❌ |❌
+|Your meeting's registration has been confirmed |Meetings |✅ |❌ |❌
 
-| |Your meeting's registration has been confirmed |❌ |✅ |❌
+|The allocated slots for the meeting are over X% |Meetings |❌ |❌ |✅
 
-| |The allocated slots for the meeting are over X% |❌ |❌ |✅
+|The meeting has enabled registrations |Meetings |❌ |✅ |❌
 
-| |The meeting has enabled registrations |✅ |❌ |❌
+|The registration code for the meeting has been validated. |Meetings |✅ |❌ |❌
 
-| |The registration code for the meeting has been validated. |❌ |✅ |❌
+|The meeting will start in less than 48h |Meetings |❌ |✅ |❌
 
-| |The meeting will start in less than 48h |✅ |❌ |❌
+|A new proposal has been published |Propositions |❌ |✅ |❌
 
-|Propositions |A new proposal has been published |✅ |❌ |❌
+|Proposal creation is open |Propositions |❌ |✅ |❌
 
-| |Proposal creation is open |✅ |❌ |❌
+|Proposal supports are open |Propositions |❌ |✅ |❌
 
-| |Proposal supports are open |✅ |❌ |❌
+|Proposal endorsements are open |Propositions |❌ |✅ |❌
 
-| |Proposal endorsements are open |✅ |❌ |❌
+|Someone has left a note on the proposal |Propositions |❌ |❌ |✅
 
-| |Someone has left a note on the proposal |❌ |❌ |✅
+|A proposal is currently being evaluated |Propositions |✅ |✅ |❌
 
-| |A proposal is currently being evaluated |✅ |✅ |❌
+|A proposal has been rejected |Propositions |✅ |✅ |❌
 
-| |A proposal has been rejected |✅ |✅ |❌
+|A proposal has been accepted |Propositions |✅ |✅ |❌
 
-| |A proposal has been accepted |✅ |✅ |❌
+|An admin has updated the scope of your proposal |Propositions |✅ |❌ |❌
 
-| |An admin has updated the scope of your proposal |❌ |✅ |❌
+|An admin has updated the category of your proposal |Propositions |✅ |❌ |❌
 
-| |An admin has updated the category of your proposal |❌ |✅ |❌
+|A proposal has been mentioned |Propositions |✅ |❌ |❌
 
-| |A proposal has been mentioned |❌ |✅ |❌
+|A user requested access as a contributor |Proposal drafts |✅ |❌ |❌
 
-|Proposal drafts |A user requested access as a contributor |❌ |✅ |❌
+|You have been accepted to access as a contributor |Proposal drafts |✅ |❌ |❌
 
-| |You have been accepted to access as a contributor |❌ |✅ |❌
+|You have been rejected to access as a contributor |Proposal drafts |✅ |❌ |❌
 
-| |You have been rejected to access as a contributor |❌ |✅ |❌
+|A user has been rejected to access as a contributor |Proposal drafts |✅ |❌ |❌
 
-| |A user has been rejected to access as a contributor |❌ |✅ |❌
+|A user has been accepted to access as a contributor |Proposal drafts |✅ |❌ |❌
 
-| |A user has been accepted to access as a contributor |❌ |✅ |❌
+|A user withdrawn the collaborative draft |Proposal drafts |✅ |❌ |❌
 
-| |A user withdrawn the collaborative draft |❌ |✅ |❌
+|An amendment has been rejected |Amendmentsfootnote:amendments[If amendments are enabled] |✅ |✅ |❌
 
-|Amendments (if amendments are enabled) |An amendment has been rejected |✅ |✅ |❌
+|An amendment has been accepted |Amendmentsfootnote:amendments[] |✅ |✅ |❌
 
-| |An amendment has been accepted |✅ |✅ |❌
+|An amendment has been created |Amendmentsfootnote:amendments[] |✅ |✅ |❌
 
-| |An amendment has been created |✅ |✅ |❌
+|An amendment has been promoted |Amendmentsfootnote:amendments[] |✅ |✅ |❌
 
-| |An amendment has been promoted |✅ |✅ |❌
+|A sortition has been created |Sortitions |❌ |✅ |❌
 
-|Sortitions |A sortition has been created |✅ |❌ |❌
+|A survey has been opened |Surveys |❌ |✅ |❌
 
-|Surveys |A survey has been opened |✅ |❌ |❌
-
-| |A survey has been closed |✅ |❌ |❌
+|A survey has been closed |Surveys |❌ |✅ |❌
 |===
