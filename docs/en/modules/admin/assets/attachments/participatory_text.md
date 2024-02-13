@@ -3,8 +3,8 @@
 Participatory texts relay on the parsing of Markdown texts to produce a structured document.
 
 Participatory texts are divided into 3 types of blocks:
-- Section: produced by main headers (paragraphs starting with "# ")
-- Subsection: produced by secondary headers (paragraphs starting more than one "#") until 6 levels.
+- Section: produced by main headers (paragraphs starting with '# ')
+- Subsection: produced by secondary headers (paragraphs starting more than one '#') until 6 levels.
 - Article: produced by paragraphs and lists.
 
 ## Subsection title 1.1
