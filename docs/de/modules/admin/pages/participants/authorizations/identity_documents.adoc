@@ -1,0 +1,141 @@
+= Identity documents authorization
+
+This authorization allows a participant to upload its identity documents. These documents depend on the organization,
+they could be a driver's license, a passport, a national identity card, a club membership card, etc.
+
+These documents will be reviewed by an administrator to accept or reject them. It's possible to do this process in two ways: Online or Offline.
+
+* Online: the participant will be asked to upload the documents, and the administrator will review these documents.
+* Offline: the participant will be asked to fill in some data, and then they will need to go to a presential place to show their documents face to face.
+
+== Configuration
+
+By clicking on the btn:[Config] button in this section, an administrator can configure the settings for this authorization.
+
+image:authorizations_id_document_configuration.png[ID document authorization configuration]
+
+NOTE: As you can see, this authorization is based in the original implementers reality, in this case in the Spanish identities document types.
+For instance, we're giving as options for document types "DNI, NIE or Passport" or we're asking for "Document number (with letter)"
+You can change this by xref:customize:code.adoc[code customizing or overriding] these things. We also accept xref:contribute:governance.adoc[Pull Request contributions]
+so it's possible to configure this.
+
+
+.ID Documents authorization configuration
+|===
+|Field |Type |Description
+
+|Available methods
+|Required
+|At least one method must be selected. Options: Online and/or Offline.
+
+|Instructions for offline verification
+|Required (if offline is selected)
+|Directions that participants need to follow to verify their documents when offline verification is selected. For instance,
+do they need to go to a specific place to show their documents? Is this place open some days of the week? Is it open
+for certain hours?
+|===
+
+== Online
+
+The process is:
+
+. Participants fill in their document type and number and upload a copy of their document.
+. An administrator fills in the information present in the uploaded image.
+. The information should match whatever the user filled in.
+. If the administrator can't clearly see the information or they can't get it verified, they can reject the request and
+the user will be able to fix it.
+
+=== 1. A participant fill in the document information and uploads a copy of their document
+
+By going to the authorization section in its profile, or by clicking on the action button if this permission is requested,
+a participant can see the form for uploading a copy of their document. They also need to fill in their document type and number.
+
+image:authorizations_id_document_online.png[ID document authorization online form]
+
+=== 2. An administrator review this document
+
+After this document is uploaded, an administrator can review it by going to the Identity documents section in the admin
+panel.
+
+image:authorizations_id_document_online_pending.png[ID document authorization pending online verification]
+
+After clicking on the document, the administrator needs to see the image and fill in the document number. This needs to match
+with the one provided by the participant.
+
+image:authorizations_id_document_online_confirm.png[ID document authorization online confirmation form]
+
+=== 3. The request is accepted or rejected
+
+There are two actions an admin can do:
+
+* Accept: the participant will be fully authorized.
+* Reject: the participant will be prompted to amend their documents
+
+If the request is rejected then the participant can provide other pictures or document.
+
+image:authorizations_id_document_online_rejected.png[ID document authorization rejected online verification]
+
+== Offline
+
+The process is:
+
+. Participants fill in their document type and number.
+. Participants follow the instructions provided to them. For instance, if they need to go to a specific place in a
+specific time to show their documents.
+. An administrator go to the "Offline verification" panel and fills in the information present in the physical documents.
+. The information should match whatever the user filled in.
+. If the administrator can't clearly see the information or they can't get it verified, they can reject the request and
+the user will be able to fix it.
+
+For this authorization to work, an administrator need to first configure it in the admin panel with the instructions explaining
+what the participant need to do to finish the verification process.
+
+image:authorizations_id_document_configuration_offline.png[ID document authorization configuration: offline instructions]
+
+=== 1. A participant fill in the document information and follow the instructions
+
+By going to the authorization section in its profile, or by clicking on the action button if this permission is requested,
+a participant can see the form for filling in their document type and number.
+
+image:authorizations_id_document_offline_request.png[ID document authorization offline form]
+
+=== 2. An administrator review this request
+
+In the admin panel, the administrator can review the request by clicking in the "Offline verification" button.
+
+image:authorizations_id_document_offline_button.png[ID document authorization offline button in admin]
+
+Then they will need to fill some data provided by the participant and by reviewing the document physically provided by them.
+
+image:authorizations_id_document_offline_confirm.png[ID document authorization offline confirmation form in admin]
+
+
+.ID Documents authorization offline flow
+|===
+|Field |Type |Description
+
+|Participant email
+|Required
+|Email of the registered participant
+
+|Type of the document
+|Required
+|Can be: DNI, NIE or Passport
+
+|Document number (with letter)
+|Required
+|Document number of the participant. For instance, "12345678Z"
+|===
+
+=== 3. The request is accepted or rejected
+
+In the cases where the verifications don't match (meaning that the email or the document number provided by the
+participant and the ones filled by the administrators aren't the same), then the participant needs to amend it with their
+user account.
+
+== Both
+
+It's also possible to enable both of these verifications methods. In this case, the participant will be asked to choose
+which kind of verification they want to do.
+
+image:authorizations_id_document_account_choose.png[Choose ID document verification kind]
