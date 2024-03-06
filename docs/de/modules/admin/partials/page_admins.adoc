@@ -1,0 +1,67 @@
+= Space Admins
+
+You can give permissions to users with special rights in a space,
+so they can only have access to some of the administration pages in this space.
+These roles are administrators, moderators, collaborators, or valuators.
+
+* Administrators: they can administer the space and change the space settings.
+* Collaborators: they can see the space and its components before it's published and view the space settings.
+They can't change anything.
+* Moderators: they can see the reported contents of the space and hide or unhide them.
+* Valuators: they can evaluate proposals. Used by participatory budgeting processes.
+
+To invite them, in the space's submenu, go to *Space admins* and click on *New space admin*. This depends in the kind of space
+that you're, for instance for participatory processes it'd be *Process admins* and *New process admin*.
+
+== New space admin form
+
+image:spaces/admins_form.png[New space admin form]
+
+
+.New space admin form
+|===
+|Field |Type |Description
+
+|Name
+|Required
+|What is the name of the new admin.
+
+|Email
+|Required
+|What is the email of the new admin, so they can receive the invitation.
+
+|Role
+|Required
+|Which role does this admin will have in the participatory process? Can be any of Administrator, Collaborator, Moderator, or Valuator.
+|===
+
+== Roles
+
+=== Administrators
+
+A space administrator can administer the space and change the space settings. It can also invite new space administrators.
+
+image:spaces/admins_role_admin01.png[Process administrators view 01]
+
+image:spaces/admins_role_admin02.png[Process administrators view 02]
+
+=== Collaborators
+
+A space collaborator can only see the space before it's published.
+
+image:spaces/admins_role_collaborator.png[Process collaborators view]
+
+=== Moderators
+
+A space moderator can review the reported contents of the space and hide or unhide them.
+
+image:spaces/admins_role_moderator.png[Process moderators view]
+
+=== Process valuators
+
+A space valuator can review the proposals of the space. They can:
+
+* change the status of the proposals, by accepting or rejecting them
+* add a monetary value to the proposals, so they can be voted with the budget component.
+
+image:spaces/admins_role_valuator.png[Process valuators view]
