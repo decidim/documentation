@@ -130,7 +130,7 @@ if you have two components, "Proposals" with weight "10" and "Meetiings" with we
 
 Meetings can be created by participants if the setting is "Participants can create meetings" is checked.
 
-If a participant belongs to a xref:admin:participants/groups.adoc[user group], then she'll be able to create meetings as that group also.
+If a participant belongs to a xref:admin:participants/groups.adoc[user group], then they will be able to create meetings as that group also.
 
 image:components/meetings/new_meeting_form_frontend01.png[Create a new meeting form (frontend)]
 image:components/meetings/new_meeting_form_frontend02.png[Create a new meeting form (frontend)]
@@ -202,7 +202,7 @@ image:components/meetings/new_meeting_form_frontend02.png[Create a new meeting f
 
 |Create meeting as
 |Required if the participant belongs to a group
-|With which identity she wants to create this meeting: as her user or as a group that she's reprensenting?
+|With which identity they want to create this meeting: as their user or as a group that they are reprensenting?
 |===
 
 After creating the meeting, participants can also edit and xref:components/meetings/close.adoc[close] it.
