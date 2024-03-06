@@ -1,0 +1,164 @@
+= Newsletters
+
+Newsletters are emails sent to the organization's participants with the news. They are
+sent to participants that have checked the "Receive an occasional newsletter
+with relevant information" when the participant signed up or after in their account.
+
+image::newsletter_contact_permission.png[Contact permission in participant registration]
+
+image::newsletter_participant_notifications_settings.png[Contact permission in participant account]
+
+Some examples of when you can and should sent a newsletter are:
+
+* When a new process could be interesting for all the citizens in a city,
+for instance a Participatory Budgeting process.
+* When there are the results published for a given process.
+* When an assembly has a important point for discussion.
+* When there's a new voting planned.
+* When there's a new conference published
+
+To create a new newsletter, as an administrator you need to:
+
+. Go to newsletter menu
+. Click in the button "New newsletter"
+. Select the template that you want to use
+. Fill the form with the newsletter contents
+. Preview the newsletter
+. Select recipients to deliver
+. Deliver the newsletter
+
+== 1. Go to newsletter menu
+
+It's on the main sidebar of the admin panel.
+
+image::newsletter_menu.png[Newsletter admin menu]
+
+== 2. Click in the button "New newsletter"
+
+In this page you'll have a list of all the sent newsletters, along with the status
+(if it was sent already or not) and how many participants have received it.
+
+image::newsletter_list.png[Newsletter list]
+
+In the secondary sidebar or in the top of the list you have the button for "New
+newsletter".
+
+== 3. Select template of new newsletter
+
+Depending on what you want to sent, if it's just a quick update or if it's something
+a little more elaborated (with an image and a button), then you can choose for
+which kind of template you want to use:
+
+* Basic (only text)
+* Text, image and Call to Action button
+
+image::newsletter_templates.png[Newsletter new templates selection]
+
+== 2. Fill the form with the newsletter contents
+
+Depending in which template you've choosen, you have two different forms for
+filling:
+
+=== Basic (only text) newsletter form
+
+image::newsletter_new_basic.png[Newsletter new template basic form]
+
+image::newsletter_new_basic_example.png[Newsletter new template basic form filled]
+
+[NOTE]
+====
+You can use "%\{name}" anywhere in the body or subject and it will be
+replaced by the recipient's name.
+====
+
+
+.New Newsletter "basic (only text)" form
+|===
+|Field |Type |Description
+
+|Subject
+|Required
+|Subject of the email.
+
+|Body
+|
+|Body of the email.
+|===
+
+=== Text, image and Call to Action button newsletter form
+
+image::newsletter_new_cta01.png[Newsletter new template text, image and CTA form 1]
+
+image::newsletter_new_cta02.png[Newsletter new template text, image and CTA form 2]
+
+
+.New Newsletter "Image, text and Call To Action button" form
+|===
+|Field |Type |Description
+
+|Subject
+|Required
+|Subject of the email.
+
+|Introduction
+|
+|Body of the email.
+
+|Call To Action button text
+|
+|What will the button say. For instance, it could be "Participate"
+
+|Call To Action button URL
+|
+|Where will the button link to. For instance, it could be the complete URL of a participatory process.
+
+|Body
+|
+|Body of the email.
+
+|Main image
+|
+|Guidance for image: Preferrably a landscape image that does not have any text. The service crops the image. Allowed file extensions: jpg jpeg gif png bmp ico
+|===
+
+== 3. Preview the newsletter
+
+After you've filled the contents of the newsletter, you can preview it. Until you've
+sent it you can go back and edit it anytime you want.
+
+image::newsletter_preview_basic_example.png[Newsletter new template basic form preview]
+
+== 4. Select recipients to deliver
+
+If you want to only communicate about a given space, one useful way of doing this
+is through the "Select recipients to deliver". Here you can choose between:
+
+* Sending the newsletter to all confirmed users
+* Sending the newsletter to all confirmed users that have participated in any of
+the selected participatory spaces in the list
+* Sending the newsletter to all confirmed users that have followed any of
+the selected participatory spaces in the list
+* Sending the newsletter to all the participants that have selected an scope in
+their "My interests" settings in their account.
+
+It's important to note that even if a participant has confirmed their account and
+is following the space, the system will not send them a newsletter email if they
+haven't activated the "I want to receive newsletters".
+
+image::newsletter_select_recipients.png[Newsletter select recipients]
+
+If you select the "Sent do participants" or "Send to followers" of a given space,
+then you can choose which spaces are relevant:
+
+image::newsletter_select_recipients_spaces.png[Newsletter select recipients spaces]
+
+== 5. Deliver the newsletter
+
+Finally if you click in the "Deliver newsletter" button, the newsletter will be
+sent to all the selected recipients.
+
+[NOTE]
+====
+Once a newsletter was sent it can't be undone nor edited. If you have multiple
+languages active, be careful with reviewing all the languages well before sending.
+====
