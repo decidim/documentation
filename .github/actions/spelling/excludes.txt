@@ -88,3 +88,7 @@
 ^docs/ca
 ^docs/es
 ^docs/pt
+\.editorconfig$
+^\.github/workflows/
+\.gitignore$
+\.node-version$
