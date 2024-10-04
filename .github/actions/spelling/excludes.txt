@@ -81,9 +81,10 @@
 \.xpm$
 \.xz$
 \.zip$
-^\.github/actions/spelling/
+^\.github/styles
+^\.github/actions/spelling
 ^\Q.github/workflows/spelling.yml\E$
-/db/migrate/
-/locales/
-^\Q.erb-lint.yml\E$
-^\Q.spelling.yml\E$
+^bin
+^docs/ca
+^docs/es
+^docs/pt
