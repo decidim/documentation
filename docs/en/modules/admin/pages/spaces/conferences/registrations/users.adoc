@@ -16,12 +16,12 @@ It's possible to export the registrations in multiple formats: CSV, JSON, and XL
 ## Flow
 
 . A participant registers to the conference
-. She receives a pending registration notification
+. They receive a pending registration notification
 image:spaces/conferences/user_registration_pending_notification.png[Notification for pending user registration]
-. She receives a pending registration email
+. They receive a pending registration email
 image:spaces/conferences/user_registration_pending_email.png[Email for pending user registration]
 . An administrator reviews and confirms the registration with the image:action_check.png[Confirm] button
 . The participant receives a confirmed registration notification
 image:spaces/conferences/user_registration_confirmed_notification.png[Notification for confirmed user registration]
-. She receives a confirmed registration email with an calendar file (.ICS).
+. They receive a confirmed registration email with an calendar file (.ICS).
 image:spaces/conferences/user_registration_confirmed_email.png[Email for confirmed user registration]

@@ -2,7 +2,7 @@
 
 In this page an administrator can:
 
-* Block a participant, for instance because she's spamming or acting against the Terms of Service
+* Block a participant, for instance because they are spamming or acting against the Terms of Service
 * Contact a participant with Decidim private messages (Conversations)
 * Officialize a participant
 * See its email
@@ -48,7 +48,7 @@ blocking this participant:
 
 image:participants_block_user_justification.png[Justificate the blocked user action]
 
-Once a blocked participant tries to log-in she'll see an error message:
+Once a blocked participant tries to log-in they will see an error message:
 
 image:participants_block_user_alert.png[Message shown to blocked user]
 
@@ -58,7 +58,7 @@ See more at xref:admin:participants/reported_users.adoc[Reported users]
 
 === Show email address
 
-After clicking this option, the admin will see a modal. She'll have to click in
+After clicking this option, the admin will see a modal. They will have to click in
 button "Show email address".
 
 image:participants_show_email.png[Modal in show email]
