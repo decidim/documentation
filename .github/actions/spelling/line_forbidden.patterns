@@ -11,9 +11,6 @@
 # s.b. anymore
 \bany more[,.]
 
-# s.b. GitHub
-(?<![&*.]|// |\btype )\bGithub\b(?![{)])
-
 # s.b. GitLab
 (?<![&*.]|// |\btype )\bGitlab\b(?![{)])
 
