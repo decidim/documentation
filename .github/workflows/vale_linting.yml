@@ -1,7 +1,7 @@
 name: Vale linting
 on:
   pull_request:
-    
+
 jobs:
   prose:
     runs-on: ubuntu-latest
@@ -14,12 +14,18 @@ jobs:
         with:
           fetch-depth: 0
       - uses: actions/checkout@v4
+      
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
           node-version-file: ".node-version"
+
       - name: Install dependencies
         run: npm install
+
+      - name: Install Asciidoctor
+        run: sudo apt-get install -y asciidoctor 
+        
       - name: Vale
         uses: errata-ai/vale-action@reviewdog
         with:
