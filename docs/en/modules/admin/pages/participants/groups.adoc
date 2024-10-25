@@ -22,7 +22,7 @@ image:user_group_new_form.png[New user group form]
 
 |Nickname
 |Required
-|Nickname of your organization, association, collective, group, etc. Do not use spaces nor accents. 20 characters maximum.
+|Nickname of your organization, association, collective, group, etc. Do not use spaces or accents. 20 characters maximum.
 
 |Email
 |Required
@@ -38,11 +38,11 @@ image:user_group_new_form.png[New user group form]
 
 |Document number
 |Optional
-|Used for verifications. Do not use dashes nor spaces.
+|Used for verifications. Do not use dashes and spaces.
 
 |Phone
 |Optional
-|Used for verifications. Do not use dashes nor spaces.
+|Used for verifications. Do not use dashes and spaces.
 
 |===
 
