@@ -7,14 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
     - name: Vale
       uses: errata-ai/vale-action@reviewdog
       with:
-        version: 2.20.2
+        version: 3.7.1
         files: docs/en
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
