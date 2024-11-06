@@ -16,6 +16,7 @@ To create a new topic, click on "Create topic".
 image::pages/pages_backend_topic_form.png[Backend: new topic form]
 
 .New topic form
+
 |===
 |Field |Type |Description
 
@@ -34,5 +35,7 @@ image::pages/pages_backend_topic_form.png[Backend: new topic form]
 |Show in the footer
 |Optional
 |Wether you want to show this topic in the "Help" section of the general footer (accessible in every page).
+
+|===
 
 image::pages/pages_frontend_footer.png[Frontend: example of a page in the footer]
