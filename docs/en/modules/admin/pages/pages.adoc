@@ -13,6 +13,9 @@ To access the Pages configuration panel, go in the administration panel and clic
 
 image::pages/pages_menu.png[Pages: Access pages panel]
 
+There, you will be able to create, update or delete xref:admin:pages/pages.adoc[Pages] and xref:admin:pages/topics.adoc[Topics]. 
+You can start by creating only pages if you want, as you will be able to create topics and reorganize pages inside them at any moment. 
+
 == Examples
 
 === A page without topic
