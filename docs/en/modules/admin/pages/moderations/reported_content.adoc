@@ -1,0 +1,81 @@
+= Reported content
+
+When writing the Terms and Conditions of your platform, or your participation chart, you want to make sure that 
+the participation rules are respected by participants in the contents they are writing. 
+All participants are able to report comments, proposals, debates, etc. 
+
+== Report a content
+
+Any logged in participant can report content, clicking on the "Report" button available next to the resource. 
+
+image:moderations/moderations_reported_content_flag.png[Report flag in content]
+
+image:moderations/moderations_reported_comment_flag.png[Report flag in comment]
+
+Participants have to select a reason for the report, and can add extra information if needed. 
+
+image:moderations/moderation_modal.png[Give reason for moderation modal]
+
+== Manage reported content
+
+After a participant has reported a content, it'll be shown in two sections of the
+administration panel:
+
+* Global moderations panel
+* Participatory space moderation panel
+
+image:moderations/moderations_backend_list_content.png[Global moderations panel for content]
+
+There you'll find first all the unprocessed reports if there's any, with: 
+* *Id*: unique identificator of the reported content.
+* *Type*: the kind of content reported (for instance comment, proposal, debate, etc.)
+* *Participatory Space*: which space this content belongs to.
+* *Reported content URL*: link for seeing the content reported and see the context of the complaint.
+* *Reason*: why it has been reported. If the participant that made the report has given extra
+information it's possible to see it by hovering it.
+* *Reported at*: when it was originally reported.
+* *Count*: Number of times it has been reported by different users.
+* *Actions*: you can *Expand*, *Unreport* or *Hide*.
+
+Once you moderate a content, it will be available in the "Hidden" contents list, accessible at the top right of the page. 
+
+=== Actions
+
+|===
+|Icon |Name |Definition |Condition
+
+|image:icons/action_expand.png[Expand icon]
+|Expand
+|To see the full details of the reported content and reports.
+|Always available.
+
+|image:icons/action_unreport.png[Unreport icon]
+|Unreport
+|Allows an admin or moderator to keep showing this content (rejecting the report).
+|Available when the content is not yet hidden.
+
+|image:icons/action_hide.png[Hide icon]
+|Hide
+|Allows an admin or moderator to hide this content (accepting the report).
+|Available when the content is not yet hidden.
+
+|image:icons/action_hide.png[Unhide icon]
+|Unhide
+|Allows an admin or moderator to unhide this content (showing it publicly again).
+|Available when the content has been hidden.
+|===
+
+If a content has been mistakenly "Unreported", then you'll need to find it again in the public platform 
+and report it again so you can moderate it.
+
+=== Expand
+
+To check the details of a content, and the different reports that were made by participants, you can click on the "Expand" button. 
+see all the metadata of a report, you can see it Expanded.
+
+image:moderations/moderations_backend_report_content.png[Global moderations panel for content]
+
+This view allow you to assess quickly if it's necessary to hide or not the content. 
+At the bottom of the report, you can also check the different reports that were made by other participants, and expand them as well. 
+
+image:moderations/moderations_backend_report_details.png[Global moderations panel for content]

@@ -23,19 +23,45 @@ image:moderations/reported_participant_modal_admin.png[Give reason for reporting
 
 == Manage reported participants
 
-All the reported participants are listed on the reported participant list in the administration panel, with: 
-* a link to the participant profile
-* the name and nickname of the participant
-* the reason why they were reported
-* the justification of the report if there is one (by hovering over the reason)
-* the date of the report
-* the report count (shows if several participants reported the same person)
+Reported participants will be visible on the "Reported participants" section of the Global moderations panel. 
 
 image:moderations/moderations_backend_list_users.png[Global moderations panel for users]
 
-Administrators can choose to perform two different actions:
-* Unreport the participant, if the report is not justified
-* Block the participant, if the report is justified
+All the reported participants are listed on the reported participant list in the administration panel, with: 
+* *Name*: name of the participant, with a link to their profile.
+* *Nickname*: nickname of the participant, with a link to their profile.
+* *Reason*: why they have been reported. If the participant that made the report has given extra.
+information it's possible to see it by hovering it.
+* *Reported at*: when they were originally reported.
+* *Reports count*: Number of times it has been reported by different users.
+* *Actions*: you can *Unreport* or *Block* the participant.
+
+=== Actions
+
+|===
+|Icon |Name |Definition |Condition
+
+|image:icons/action_unreport.png[Unreport icon]
+|Unreport
+|To unreport the participant and remove them from the list.
+|Available when the participant is not yet blocked.
+
+|image:icons/action_block.png[Block user]
+|Block user
+|To block the participant. 
+|Available when the participant is not yet blocked.
+
+|image:icons/action_block.png[Unblock user]
+|Unblock user
+|To unblock the participant. 
+|Available when the participant is blocked.
+
+|===
+
+=== Block a participant
+
+If a content has been mistakenly "Unreported", then you'll need to find it again in the public platform 
+and report it again so you can moderate it.
 
 Administrators need to provide a justification if they want to block a participant. 
 

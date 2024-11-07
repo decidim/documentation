@@ -4,9 +4,9 @@
 
 The *Global moderations* function allows you to moderate different kind of contents and
 ensure that the dialog in your platform is democratic and constructive. 
-It also allows managing users who infringe the rules of the platform.
+It also allows managing participants who infringe the rules of the platform.
 
-NOTE: Looking for how to report users or content? See xref:moderations/reported_users.adoc[Reported users] and xref:moderations/reported_content.adoc[Reported content].
+NOTE: Looking for how to report participants or content? See xref:moderations/reported_users.adoc[Reported participants] and xref:moderations/reported_content.adoc[Reported content].
 
 For instance, in the case of https://www.decidim.barcelona/[Decidim Barcelona],
 the https://www.decidim.barcelona/pages/terms-and-conditions[Terms of Service] says:
@@ -42,13 +42,10 @@ the admin navigation bar.
 
 image:moderations/moderations_menu.png[Global moderations menu]
 
-Any logged in participant can report a content or a user through the "Flag" icon. 
-After a participant has clicked in this action then they need to provide a
-reason why they are making this report:
+The Global moderations panel allows to manage reported contents as well as reported participants. 
+By default, you'll be redirected on the Reported content list. 
 
-* Contains clickbait, advertising, scams or script bots.
-* Contains racism, sexism, slurs, personal attacks, death threats, suicide requests or any form of hate speech.
-* Contains illegal activity, suicide threats, personal information, or something else you think doesn't belong on [This organization].
+image:moderations/moderations_backend_list_content.png[Global moderations panel for content]
 
 == Examples
 
@@ -58,4 +55,4 @@ You can report and hide a comment containing personnal information, or a link to
 
 === Report user
 
-You can report and block users who are constantly infriging the participation chart, or spamming and trolling the platform. 
+You can report and block participants who are constantly infriging the participation chart, or spamming and trolling the platform. 
