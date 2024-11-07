@@ -46,15 +46,15 @@ image:participants_participants_actions.png[Participants actions]
 After clicking in this option you'll need to provide a justification why you're
 blocking this participant:
 
-image:participants_block_user_justification.png[Justificate the blocked user action]
+image:moderations/moderations_participants_block_user_justification.png[Justificate the blocked user action]
 
 Once a blocked participant tries to log-in they will see an error message:
 
-image:participants_block_user_alert.png[Message shown to blocked user]
+image:moderations/moderations_participants_block_user_alert.png[Message shown to blocked user]
 
 After a participant was blocked its name is changed to "Blocked user".
 
-See more at xref:admin:participants/reported_users.adoc[Reported users]
+See more at xref:admin:moderations/reported_users.adoc[Reported users]
 
 === Show email address
 
