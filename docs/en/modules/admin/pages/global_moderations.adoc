@@ -37,13 +37,13 @@ process and the framework for discussion, and
 
 == Configuration
 
-To access the Global moderations panel, go in the administration panel and click on the "Global moderations" item in 
-the admin navigation bar.
+To access the Global moderations panel, go in the administration panel and click in the "Global moderations" item in 
+the administrator navigation bar.
 
 image:moderations/moderations_menu.png[Global moderations menu]
 
 The Global moderations panel allows to manage reported contents as well as reported participants. 
-By default, you'll be redirected on the Reported content list. 
+By default, you are redirected on the Reported content list. 
 
 image:moderations/moderations_backend_list_content.png[Global moderations panel for content]
 
@@ -51,8 +51,8 @@ image:moderations/moderations_backend_list_content.png[Global moderations panel 
 
 === Report content
 
-You can report and hide a comment containing personnal information, or a link to a commercial platform posted by a user. 
+You can report and hide a comment containing private information, or a link to a commercial platform posted by a user. 
 
 === Report user
 
-You can report and block participants who are constantly infriging the participation chart, or spamming and trolling the platform. 
+You can report and block participants who are constantly violating the participation chart, or spamming and trolling the platform. 
