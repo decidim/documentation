@@ -1,33 +1,48 @@
-# Reported users
+= Reported participants
 
 There are cases where participants could go against the Terms of Service of the
-platform, so it's useful to have the option for reporting and blocking users. You
-can read more about how moderation and reporting contents work in xref:global_moderations.adoc[Global moderations].
-
+platform, so it's useful to have the option for reporting and blocking participants.
 A participant can be blocked from the xref:participants/participants.adoc[participants
-section in the admin panel] or through this "Reported users" section.
+section in the admin panel] or through the "Reported participants" section.
 
-Anyone can propose a moderation in Decidim, through the "Flag" icon in the participant
-profile. After a participant has clicked in this action they need to provide a
-reason why they are making this report:
+== Report a participant
 
-* Contains clickbait, advertising, scams or script bots.
-* Contains racism, sexism, slurs, personal attacks, death threats, suicide requests
-or any form of hate speech.
-* Contains illegal activity, suicide threats, personal information, or something
-else you think doesn't belong on Demo.
-* Other (and add it)
+Any logged in participant can report another participant through the "Flag" icon in the participant
+profile.
 
-image:reported_participant_modal.png[Give reason for reporting a participant modal]
-image:reported_participant_flag.png[Flag in sidebar profile]
+image:moderations/moderations_reported_participant_flag.png[Report flag in participant profile]
 
-After clicking in this option you'll need to provide a justification why you're
-blocking this participant:
+After a participant has clicked in this action they need to provide a reason why they are making this report:
 
-image:participants_block_user_justification.png[Justificate the blocked user action]
+image:moderations/reported_participant_modal_user.png[Give reason for reporting a participant modal]
+
+When an administrator or a moderator report a participant, they have additionnal options that allows them to 
+directly block the user and hide all their contents. They will have to give a justification for blocking this participant. 
+
+image:moderations/reported_participant_modal_admin.png[Give reason for reporting a participant modal administrators]
+
+== Manage reported participants
+
+All the reported participants are listed on the reported participant list in the administration panel, with: 
+* a link to the participant profile
+* the name and nickname of the participant
+* the reason why they were reported
+* the justification of the report if there is one (by hovering over the reason)
+* the date of the report
+* the report count (shows if several participants reported the same person)
+
+image:moderations/moderations_backend_list_users.png[Global moderations panel for users]
+
+Administrators can choose to perform two different actions:
+* Unreport the participant, if the report is not justified
+* Block the participant, if the report is justified
+
+Administrators need to provide a justification if they want to block a participant. 
+
+image:moderations/moderations_participants_block_user_justification.png[Justificate block user action]
 
 Once a blocked participant tries to log-in they will see an error message:
 
-image:participants_block_user_alert.png[Message shown to blocked user]
+image:moderations/moderations_participants_block_user_alert.png[Message shown to blocked user]
 
 After a participant was blocked its name is changed to "Blocked user".
