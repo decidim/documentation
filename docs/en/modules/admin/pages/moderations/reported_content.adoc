@@ -18,7 +18,7 @@ image:moderations/moderation_modal.png[Give reason for moderation modal]
 
 == Manage reported content
 
-After a participant has reported a content, it is shown in two sections of the administration panel:
+After a participant has reported a content, it appears in two sections of the administration panel:
 
 * Global moderations panel
 * Participatory space moderation panel
@@ -26,7 +26,7 @@ After a participant has reported a content, it is shown in two sections of the a
 image:moderations/moderations_backend_list_content.png[Global moderations panel for content]
 
 There you'll find first all the unprocessed reports if there's any, with: 
-* *Id*: unique identificator of the reported content.
+* *Id*: unique identifier of the reported content.
 * *Type*: the kind of content reported, for instance comment, proposal, debate, etc.
 * *Participatory Space*: which space this content belongs to.
 * *Reported content URL*: link for seeing the content reported and see the context of the complaint.
