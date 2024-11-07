@@ -30,13 +30,13 @@ There you'll find first all the unprocessed reports if there's any, with:
 * *Type*: the kind of content reported, for instance comment, proposal, debate, etc.
 * *Participatory Space*: which space this content belongs to.
 * *Reported content URL*: link for seeing the content reported and see the context of the complaint.
-* *Reason*: why it was reported. If the participant that made the report has given extra
+* *Reason*: why the content is reported. If the participant that made the report has given extra
 information it's possible to see it by hovering it.
 * *Reported at*: when it was originally reported.
-* *Count*: number of times it was reported by different users.
+* *Count*: number of reports by different users.
 * *Actions*: you can *Expand*, *Unreport* or *Hide*.
 
-Once you moderate a content, it will be available in the "Hidden" contents list, accessible at the top right of the page. 
+Once you moderate a content, it appears in the "Hidden" contents list, accessible at the top right of the page. 
 
 === Actions
 
@@ -50,21 +50,21 @@ Once you moderate a content, it will be available in the "Hidden" contents list,
 
 |image:icons/action_unreport.png[Unreport icon]
 |Unreport
-|Allows an admin or moderator to keep showing this content (rejecting the report).
-|Available when the content is not yet hidden.
+|Allows an administrator or moderator to keep showing this content and cancel the report.
+|Available when the content isn't yet hidden.
 
 |image:icons/action_hide.png[Hide icon]
 |Hide
-|Allows an admin or moderator to hide this content (accepting the report).
-|Available when the content is not yet hidden.
+|Allows an administrator or moderator to hide this content and accept the report.
+|Available when the content isn't yet hidden.
 
 |image:icons/action_hide.png[Unhide icon]
 |Unhide
-|Allows an admin or moderator to unhide this content (showing it publicly again).
+|Allows an administrator or moderator to unhide this content (showing it publicly again).
 |Available when the content has been hidden.
 |===
 
-If a content has been mistakenly "Unreported", then you'll need to find it again in the public platform 
+If a content has been mistakenly "Unreported" then you'll need to find it again in the public platform 
 and report it again so you can moderate it.
 
 === Expand
