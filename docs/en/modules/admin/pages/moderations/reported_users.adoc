@@ -2,8 +2,8 @@
 
 There are cases where participants could go against the Terms of Service of the
 platform, so it's useful to have the option for reporting and blocking participants.
-A participant can be blocked from the xref:participants/participants.adoc[participants
-section in the admin panel] or through the "Reported participants" section.
+You can block participants from the xref:participants/participants.adoc[participants
+section in the administration panel] or through the "Reported participants" section.
 
 == Report a participant
 
@@ -12,28 +12,28 @@ profile.
 
 image:moderations/moderations_reported_participant_flag.png[Report flag in participant profile]
 
-After a participant has clicked in this action they need to provide a reason why they are making this report:
+After a participant has clicked in this action they need to provide a reason why they're making this report:
 
 image:moderations/reported_participant_modal_user.png[Give reason for reporting a participant modal]
 
-When an administrator or a moderator report a participant, they have additionnal options that allows them to 
-directly block the user and hide all their contents. They will have to give a justification for blocking this participant. 
+When an administrator or a moderator report a participant, they have additional options that allow them to 
+directly block the user and hide all their contents. They have to give a justification for blocking this participant. 
 
 image:moderations/reported_participant_modal_admin.png[Give reason for reporting a participant modal administrators]
 
 == Manage reported participants
 
-Reported participants will be visible on the "Reported participants" section of the Global moderations panel. 
+Reported participants are visible on the "Reported participants" section of the Global moderations panel. 
 
 image:moderations/moderations_backend_list_users.png[Global moderations panel for users]
 
-All the reported participants are listed on the reported participant list in the administration panel, with: 
+You can find all the reported participants on the reported participant list in the administration panel, with: 
 * *Name*: name of the participant, with a link to their profile.
 * *Nickname*: nickname of the participant, with a link to their profile.
-* *Reason*: why they have been reported. If the participant that made the report has given extra.
+* *Reason*: why they are reported. If the participant that made the report has given extra.
 information it's possible to see it by hovering it.
 * *Reported at*: when they were originally reported.
-* *Reports count*: Number of times it has been reported by different users.
+* *Reports count*: number reports by different users.
 * *Actions*: you can *Unreport* or *Block* the participant.
 
 === Actions
