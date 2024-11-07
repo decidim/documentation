@@ -1,20 +1,20 @@
-= Pages and Topics
+= Pages and topics
 
-== What is it?
+== Understand the basics
 
 The pages tab allow you to publish static pages including, for example, your platform's Terms and Conditions, accessibility statements, FAQs, etc.
-Those pages can be organized into different topics, acting as kind of folders. 
+You can organize these pages in different topics, acting as kind of folders. 
 
-These pages will be available to all the participants through the **Help** section in the navbar and in the footer.
+These pages are available to all the participants through the **Help** section in the header and in the footer.
 
-== How to configure it?
+== Configuration
 
-To access the Pages configuration panel, go in the administration panel and click on the "Pages" item in the admin navigation bar. 
+To access the Pages configuration panel, go in the administration panel and click the "Pages" item in the administration navigation bar. 
 
 image::pages/pages_menu.png[Pages: Access pages panel]
 
-There, you will be able to create, update or delete xref:admin:pages/pages.adoc[Pages] and xref:admin:pages/topics.adoc[Topics]. 
-You can start by creating only pages if you want, as you will be able to create topics and reorganize pages inside them at any moment. 
+There, you are able to create, update, or delete xref:admin:pages/pages.adoc[Pages] and xref:admin:pages/topics.adoc[Topics]. 
+You can start by creating only pages if you want, as you are able to create topics and reorganize pages inside them at any moment. 
 
 == Examples
 

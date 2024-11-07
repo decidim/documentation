@@ -22,7 +22,7 @@ This is where you need to put your legal terms, for instance who owns the data c
 
 == Create a new page
 
-To create a new page, you need to click in "Create page". 
+To create a new page, you need to click on the "Create page" button. 
 
 image::pages/pages_backend_form.png[Backend: new page form]
 
@@ -36,7 +36,7 @@ image::pages/pages_backend_form.png[Backend: new page form]
 
 |URL Slug
 |Required
-|String that will be used in the URL. Use partial paths, not full URLs here. Accepts letters, numbers, dashes and slashes, and must start with a letter. For instance if the slug is "faq" and your domain is "https://example.org", your page will be at "https://example.org/pages/faq"
+|String that will be used in the URL. Use partial paths, not full URLs here. Accepts letters, numbers, dashes and slashes, and must start with a letter. For instance if the slug is "faq" and your domain is "https://example.org" your page will be at "https://example.org/pages/faq"
 
 |Content
 |Required
@@ -48,7 +48,7 @@ image::pages/pages_backend_form.png[Backend: new page form]
 
 |Order position
 |Optional
-|Which order will it have in relation with the other pages. Having a lower number means a higher priority. For instance, if you have two pages, "Page a" with weight "10" and "Page b" with weight "0", then "Page b" will be first when ordering.
+|Which order will it have in relation with the other pages. Having a lower number means a higher priority. For instance, if you have two pages, "Page a" with weight "10" and "Page b" with weight "0" then "Page b" will be first when ordering.
 
 |===
 
