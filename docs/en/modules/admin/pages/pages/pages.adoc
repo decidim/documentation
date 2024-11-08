@@ -5,20 +5,20 @@ In this section, you can configure static Pages, to give general information to 
 As an example, some of these pages could refer to:
 
 * What's this platform? Who's the organization?
-* How can I participate here?
-* How can I create and verify my account?
+* How to participate here?
+* How to create and verify an account?
 * What are the terms of conditions and the legal information about this platform?
 
 == Manage the pages
 
-You can manage the pages from this admin panel: 
+You can manage the pages from this administration panel: 
 
 image::pages/pages_backend_list.png[Backend: list pages]
 
-As you can see, all the pages can be edited at any moment, and can be re-organized in a different topic. 
+As you can see, you can edit all the pages and re-organize them in different topics at any moment. 
 
-There is only one page you cannot delete. As the platform enables the Participants to sign up (register) and save some of their personal data, it is important to have a page for the **Terms and Conditions**. 
-This is where you need to put your legal terms, for instance who owns the data collected, how much time does this data is saved, etc. This should be (ideally) written and (at least) reviewed by a lawyer.
+There is only one page you can't delete. As the platform enables the Participants to register and save some of their personal data, it's important to have a page for the **Terms and Conditions**. 
+This is where you need to put your legal terms, for instance who owns the data collected, for how many times it's saved, etc. This should ideally be written and reviewed by a lawyer.
 
 == Create a new page
 
