@@ -22,7 +22,7 @@ This is where you need to put your legal terms, for instance who owns the data c
 
 == Create a new page
 
-To create a new page, you need to click on the "Create page" button. 
+To create a new page, you need to click the "Create page" button. 
 
 image::pages/pages_backend_form.png[Backend: new page form]
 
@@ -36,25 +36,26 @@ image::pages/pages_backend_form.png[Backend: new page form]
 
 |URL Slug
 |Required
-|String that will be used in the URL. Use partial paths, not full URLs here. Accepts letters, numbers, dashes and slashes, and must start with a letter. For instance if the slug is "faq" and your domain is "https://example.org" your page will be at "https://example.org/pages/faq"
+|String used in the URL. Use partial paths, not full URLs here. Accepts letters, numbers, dashes and slashes, and must start with a letter. For instance if the slug is "faq" and your domain is "https://example.org" your page will be accessible at "https://example.org/pages/faq"
 
 |Content
 |Required
-|All the content of the page (can be text, images, etc.)
+|All the content of the page.
 
 |Topic
 |Optional
-|In which Topic it'll be stored.
+|In which Topic it's stored.
 
 |Order position
 |Optional
-|Which order will it have in relation with the other pages. Having a lower number means a higher priority. For instance, if you have two pages, "Page a" with weight "10" and "Page b" with weight "0" then "Page b" will be first when ordering.
+|The order of the page in relation with the other pages. Having a lower number means a higher priority. For instance, if you have two pages, "Page a" with weight "10" and "Page b" with weight "0" then "Page b" will be first when ordering.
 
 |===
 
 == Edit a page
 
-You can edit the pages at any moment, by clicking on the pencil icon in the pages list. All the content and configuration of the page will be editable. 
+You can edit the pages at any moment, by clicking on the pencil icon in the pages list. 
+All the content and configuration of the page are editable. 
 
 image::pages/pages_backend_edit.png[Backend: edit a page]
 
