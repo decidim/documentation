@@ -60,7 +60,7 @@ Once you moderate a content, it appears in the "Hidden" contents list, accessibl
 
 |image:icons/action_hide.png[Unhide icon]
 |Unhide
-|Allows an administrator or moderator to unhide this content (showing it publicly again).
+|Allows an administrator or moderator to Unhide this content (showing it publicly again).
 |Available when the content is hidden.
 |===
 
@@ -69,12 +69,12 @@ and report it again so you can moderate it.
 
 === Expand
 
-To check the details of a content, and the different reports made by participants, you can click the "Expand" button. 
+To review the details of a content, and the different reports made by participants, you can click the "Expand" button. 
 see all the metadata of a report, you can see it Expanded.
 
 image:moderations/moderations_backend_report_content.png[Global moderations panel for content]
 
 This view allow you to assess quickly if it's necessary to hide or not the content. 
-At the bottom of the report, you can also check the different reports made by other participants, and expand them as well. 
+At the bottom of the report, you can also review the different reports made by other participants, and expand them as well. 
 
 image:moderations/moderations_backend_report_details.png[Global moderations panel for content]
