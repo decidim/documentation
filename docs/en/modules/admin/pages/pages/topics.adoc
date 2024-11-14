@@ -5,13 +5,13 @@ In this section, you can configure Topics, to organize your static pages and pro
 == Manage the topics
 
 To access the topics list, click the Topics tab at the top of the panel. 
-Here, you are able to edit, delete and create topics for your static pages. 
+Here, you are able to edit, delete, and create topics for your static pages. 
 
 image::pages/pages_backend_list_topics.png[Backend: list topics of pages]
 
 == Create a new topic
 
-To create a new topic, click on the "Create topic" button.
+To create a new topic, click the "Create topic" button.
 
 image::pages/pages_backend_topic_form.png[Backend: new topic form]
 
@@ -30,7 +30,8 @@ image::pages/pages_backend_topic_form.png[Backend: new topic form]
 
 |Order position
 |Optional
-|The order of the topic in relation with the other topics. Having a lower number means a higher priority. For instance, if you have two topics, "Topic a" with weight "10" and "Topic b" with weight "0" then "Topic b" will be first when ordering.
+|The order of the topic in relation with the other topics. Having a lower number means a higher priority. 
+For instance, if you have two topics, "Topic a" with weight "10" and "Topic b" with weight "0" then "Topic b" is first when ordering.
 
 |Show in the footer
 |Optional
