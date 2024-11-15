@@ -6,7 +6,7 @@ In this section, you can create, edit, and delete questionnaire templates, that 
 
 To create a new questionnaire template, you need to click the "New template" button. 
 
-image::templates/templates_backend_form.png[Backend: new template form]
+image::templates/templates_questionnaires_backend_form.png[Backend: new template form]
 
 .New questionnaire template form
 |===
@@ -25,7 +25,7 @@ the survey is for.
 
 Click the "Save" button to continue creating your template questionnaire. 
 
-image::templates/templates_backend_survey_form.png[Backend: new survey template form]
+image::templates/templates_questionnaires_backend_survey_form.png[Backend: new survey template form]
 
 Then, click the "Edit" button. You enter the survey creation process. Click the "Skip" button if you don't want to use an existing template. 
 
@@ -33,7 +33,7 @@ On the next page, you can create a survey. Please refer to the xref:admin:compon
 
 Click the "Save" button to see a preview of your survey. 
 
-image::templates/templates_backend_survey_preview.png[Backend: new survey template preview]
+image::templates/templates_questionnaires_backend_survey_preview.png[Backend: new survey template preview]
 
 Click on the "Save" button again to save your template. 
 
@@ -67,3 +67,10 @@ you can also change the questions, add some or delete some for this specific com
 |To delete the template. 
 
 |===
+
+=== Use the template
+
+To use the template, create a xref:admin:components/surveys.adoc[survey] component in a participatory space, then edit it. 
+You then see a page proposing you to choose a template for this survey. 
+
+image::templates/templates_questionnaires_survey_choice.png[Backend: choose template when creating survey]
