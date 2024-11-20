@@ -24,7 +24,6 @@
 ** xref:services:index.adoc[Services]
 *** xref:services:activejob.adoc[Active Job]
 *** xref:services:activestorage.adoc[Active Storage]
-*** xref:services:elections_bulletin_board.adoc[Elections Bulletin Board]
 *** xref:services:etherpad.adoc[Etherpad]
 *** xref:services:maps.adoc[Maps]
 *** xref:services:sms.adoc[SMS]
@@ -32,9 +31,6 @@
 *** xref:services:social_providers.adoc[Social Providers]
 
 * Admin
-** xref:admin:index.adoc[Introduction]
-*** xref:admin:system.adoc[System panel]
-*** xref:admin:dashboard.adoc[Dashboard]
 ** Settings
 *** xref:admin:configuration.adoc[Configuration]
 *** xref:admin:appearance.adoc[Appearance]
@@ -110,11 +106,9 @@
 *** xref:admin:features/badges.adoc[Badges]
 *** xref:admin:features/comments.adoc[Comments]
 *** xref:admin:features/conversations.adoc[Conversations]
-*** xref:admin:features/embed.adoc[Embed]
 *** xref:admin:features/endorsements.adoc[Endorsements]
 *** xref:admin:features/fingerprint.adoc[Fingerprint]
 *** xref:admin:features/follows.adoc[Follows]
-*** xref:admin:features/metrics.adoc[Metrics]
 *** xref:admin:features/my_account.adoc[My account]
 **** xref:admin:features/my_account/account.adoc[Account]
 **** xref:admin:features/my_account/notifications_settings.adoc[Notifications settings]
@@ -137,12 +131,15 @@
 *** xref:admin:features/versions.adoc[Versions]
 ** xref:admin:newsletters.adoc[Newsletters]
 ** xref:admin:global_moderations.adoc[Global moderations]
+<<<<<<< HEAD
 ** Deprecated
 *** xref:admin:information-pages.adoc[Information pages]
 ** xref:admin:templates.adoc[Templates]
 *** xref:admin:templates/questionnaires.adoc[Questionnaires templates]
 *** xref:admin:templates/block_users.adoc[Block user messages]
 *** xref:admin:templates/proposal_answers.adoc[Proposal answers]
+=======
+>>>>>>> develop
 
 * xref:contribute:index.adoc[Contribute]
 ** xref:contribute:governance.adoc[Governance]
@@ -188,7 +185,7 @@
 *** xref:develop:fixing_locales.adoc[Fixing locales]
 *** xref:develop:maps.adoc[Maps]
 *** xref:develop:managing_translations_i18n.adoc[i18n]
-*** xref:develop:maintainers/index.adoc[Maintainers]
+*** Maintainers
 **** xref:develop:backports.adoc[Backports]
 **** xref:develop:guide_github_projects.adoc[GitHub Projects Workflow]
 **** xref:develop:maintainers/releases.adoc[Releasing new versionss]

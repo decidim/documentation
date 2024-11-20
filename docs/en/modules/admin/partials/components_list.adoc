@@ -7,8 +7,6 @@ It allows administrators to also relate them to the proposals and meetings that 
 * xref:admin:components/budgets.adoc[*Budgets*]: allows participants to vote in projects with amounts predefined. Used for
 participatory budgeting processes. Allows to define different kind of rules, for instance a minimum percentage of the total budget or a minimum amount of projects.
 * xref:admin:components/debates.adoc[*Debates*]: allows participants to have debates. Debates can be time limited or not.
-* xref:admin:components/elections.adoc[*Elections*]: to have end-to-end auditable elections in a space. Uses the same
-external system as xref:admin:spaces/votings.adoc[Votings] space.
 * xref:admin:components/meetings.adoc[*Meetings*]: gatherings in person or online through videoconferences platforms.
 * xref:admin:components/pages.adoc[*Page*]: static pages with multi-language support.
 * xref:admin:components/proposals.adoc[*Proposals*]: contributions posted by participants which can be given support.
