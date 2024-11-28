@@ -1,92 +1,90 @@
 = Participants
 
+Participants are all people with an account on the platform, whether they have confirmed their email address or not. 
 In this page an administrator can:
 
 * Block a participant, for instance because they are spamming or acting against the Terms of Service
-* Contact a participant with Decidim private messages (Conversations)
+* Contact a participant with Decidim private messages
 * Officialize a participant
-* See its email
+* Show a participant email
 
-image:participants_participants.png[Participants list]
+image:participants/participants_participants.png[Participants list]
 
-== Actions
+== Manage participants
 
-image:participants_participants_actions.png[Participants actions]
+You can find all the participants here, with:
+* *Name*: name of the participant, with a link to their profile.
+* *Nickname*: nickname of the participant, with a link to their profile.
+* *Created at*: date of the participant account creation. 
+* *Status*: if the participant is officialized or not. 
+* *Badge*: the officialization badge, given when officializing the participant. 
+* *Reports*: number of reports by different users.
+
+You can filter and sort this list by clicking the "Filter" button and the columns headers. 
+You can also search for participants by email, name, or nickname in the search bar. 
+
+=== Actions
 
 |===
-|Icon |Name |Definition
+|Icon |Name |Definition |Condition
 
-|image:action_block.png[Block user]
-|xref:_block_user[Block user]
-|To block or moderate a participant.
+|image:icons/action_block.png[Block user]
+|Block / Unblock user
+|To block or unblock a participant. See xref:admin:moderations/reported_users.adoc[Reported users] for more information.
+|Block action is available for unblocked users, and vice versa.
 
-|image:action_show_email.png[Show email]
+|image:icons/action_show_email.png[Show email]
 |xref:_show_email_address[Show email address]
-|To show an email of a participant.
+|To show the email address of a participant.
+|Available all the time. 
 
-|image:action_contact.png[Contact]
+|image:icons/action_contact.png[Contact]
 |xref:_contact[Contact]
-|To contact a participant with Decidim private messages (Conversations)
+|To contact a participant through a private message.
+|Available all the time. 
 
-|image:action_officialize.png[Officialize]
+|image:icons/action_verify.png[Officialize]
 |xref:_officialize[Officialize]
-|To recognize that a participant has a special status in the platform
+|To recognize that a participant has a special status, like mayor, association's president, etc.
+|Available for unofficialized participants. 
 
-|image:action_reofficialize.png[Reoffficialize]
-|Reoffficialize
-|To change an officialization. See xref:_officialize[Officialize]
+|image:icons/action_reofficialize.png[Reoffficialize]
+|Reofficialize
+|To change the officialization badge.
+|Available for officialized participants. 
 
-|image:action_unofficialize.png[Unofficialize]
+|image:icons/action_delete.png[Unofficialize]
 |Unofficialize
-|To revoke an officialization. See xref:_officialize[Officialize]
+|To revoke an officialization.
+|Available for officialized participants. 
+
 |===
-
-=== Block user
-
-After clicking in this option you'll need to provide a justification why you're
-blocking this participant:
-
-image:participants_block_user_justification.png[Justificate the blocked user action]
-
-Once a blocked participant tries to log-in they will see an error message:
-
-image:participants_block_user_alert.png[Message shown to blocked user]
-
-After a participant was blocked its name is changed to "Blocked user".
-
-See more at xref:admin:participants/reported_users.adoc[Reported users]
 
 === Show email address
 
-After clicking this option, the admin will see a modal. They will have to click in
-button "Show email address".
+Sometimes, administrators need to find a user email address. They can click the "Show email address" option. 
+A modal appears, with the name of the participant, and an hidden field. 
 
-image:participants_show_email.png[Modal in show email]
-image:participants_showed_email.png[Modal after the email is shown]
+image:participants/participants_show_email.png[Modal in show email]
 
-This action will be logged in the Admin actvity log.
+To show the email address, you need to click the "Show" button. 
 
-image:participants_showed_email_admin_log.png[Admin activity log for show email]
+image:participants/participants_showed_email.png[Modal after the email is shown]
+
+For administration transparency, this action is logged in the activity logs.
+
+image:participants/participants_showed_email_admin_log.png[Admin activity log for show email]
 
 === Contact
 
-By clicking on this option, it will open the private messaging (Conversation) for
-this participant.
+To contact participants directly through the private messaging of the platform, click the "Contact" icon. 
 
-image:participants_conversation.png[Conversation with a participant].
+image:participants/participants_conversation.png[Conversation with a participant].
 
 === Officialize
 
-This option is useful to recognize that a participant has a special status in the
-platform. For instance, if someone is the City Mayor, a City Councillor or the
-President of an Association in an organization context.
+This option is useful to recognize that a participant has a specific status in the
+platform. For instance, if someone is the city mayor, a city councillor, the
+president of an association, etc.
 
-After Officializing a participant you can:
-
-- Change the Officialization text with "Reofficialize"
-- Revoke the Officialization status with "Unofficialize"
-
-image:participants_officialize.png[Officialize a participant]
-image:participants_participants_actions_officialize.png[Officialize a participant]
-
-
+image:participants/participants_officialize.png[Officialize a participant]

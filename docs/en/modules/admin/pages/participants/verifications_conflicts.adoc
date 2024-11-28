@@ -1,25 +1,52 @@
-= Verification's conflicts
+= Verifications conflicts
 
-There are cases depending on which kind of verifications you've enabled that there could be verification's conflicts.
+A verification conflict can happen when authorizations are enabled, and some participants create several accounts 
+or get impersonated. 
 
 For instance:
 
-. A participant get xref:admin:participants/impersonations.adoc[impersonated], and they don't provide an email
-. Then they create an account and try to verify themselves with the Census verification
+. A participant create an account, and get verified against an authorization.
+. Then they create another account and try to get verified again against the same authorization.
 
-For security, we try to be extra cautious in these cases, and we want that an administrator reviews these verifications.
-As you can see, this depends a lot on which kind of verifications you've enabled in your organization, so it's easy to say
-that most of the time an organization will not see any conflicts in this panel.
+This can also happens with impersonations: 
 
-image:verifications_conflicts.png[Verification's conflicts panel]
+. A participant get xref:admin:participants/impersonations.adoc[impersonated] with their data, but don't enter an email
+. Then they create an account, and try to verify themselves with the same verification
 
-== Transfer user
+For security, try to be extra cautious in these cases, and make sure an administrator reviews these potential conflicts.
+It depends a lot on which kind of verifications you've enabled in your organization, so most of the time an organization 
+don't see any conflicts appear in this panel.
 
-An administrator can review these conflicts by clicking in the Transfer user image:action_transfer_user.png[Transfer user] icon.
+image:participants/verifications_conflicts.png[Verification's conflicts panel]
 
-Then they will see the Transfer user form, where they can provide a reason for the transfer.
+When there is a verification conflict, administrators receive an email notification. 
 
-image:verifications_conflicts_transfer_user.png[]
+== Manage verifications conflicts
+
+In the verifications conflict panel, you can find all the conflicts, with:
+* *User*: name of the non managed participant who tried to get verified from their account.
+* *Managed user*: name of the impersonated user with the same verification data. 
+* *Attempts*: number of time the user tried to get verified with their data. 
+* *Solved*: if the verification conflict was solved or not. 
+
+You can search for conflicts by participant email, name, or nickname in the search bar. 
+
+=== Actions
+
+|===
+|Icon |Name |Definition
+
+|image:icons/action_transfer_user.png[Transfer user]
+|Transfer user
+|To solve the verification conflict.  
+
+|===
+
+=== Transfer user
+
+The transfer user button allows to solve the conflict between both account. 
+
+image:participants/verifications_conflicts_transfer_user.png[Transfer user form]
 
 .Transfer user form
 |===
@@ -27,7 +54,7 @@ image:verifications_conflicts_transfer_user.png[]
 
 |Reason
 |Required
-|Why you want to transfer the user
+|Why you want to transfer the user account
 
 |Email
 |Required
@@ -35,4 +62,5 @@ image:verifications_conflicts_transfer_user.png[]
 
 |===
 
-After the user is transferred, both accounts (the original and the new one) will be merged.
+After the user is transferred, both accounts, the managed one and the new one, is merged into one, that takes the 
+email address entered in the form, and the valid verification is transferred to this account. 
