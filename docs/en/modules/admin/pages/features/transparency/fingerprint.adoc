@@ -1,0 +1,34 @@
+= Fingerprint
+
+== Understand the basics
+
+Although the platform should show the xref:admin:features/transparency/versions.adoc[Versions] for almost all of the contents, it'd still be possible 
+for a system administrator to manipulate the content by editing the database directly.
+
+As mitigation for this risk, the platform shows a fingerprint for some important fields, for instance, a proposal body and title.
+
+Its goal is to provide a way to give an informal "receipt" to a participant so they can detect tampering. A fingerprint is
+a hashed representation of the content. It's useful to ensure the content hasn't been tampered with, as a single modification
+would result in a totally different value. It's calculated using a *SHA256 hashing algorithm*. In order to replicate it
+yourself, you can use a http://www.md5calc.com/sha256[MD5 calculator online] and copy-paste the source data.
+
+== Check fingerprint
+
+. Go to the content for which you want to verify the fingerprint
+. Click in the "Check fingerprint" link at the bottom of the page
+. Copy the source field value
+. Go to a MD5 calculator online (External link) and copy-paste the source data
+. Check that fingerprint are the same
+
+image:features/fingerprint/content.png[Check fingerprint link in page bottom]
+
+image::features/fingerprint/modal.png[Check fingerprint modal]
+
+image:features/fingerprint/md5calc.png[MD5calc.com screenshot]
+
+It's also possible to verify the fingerprint with other tools, such as the sha256sum command line tool.
+
+[source,bash]
+----
+echo -n '{"body":{"en":"This proposal suggests creating a green corridor that connects the north and south districts of Chakar via a bicycle and pedestrian-only route. The corridor would pass through the city center and industrial areas, providing a safe, dedicated path for non-motorized transport, with shade trees, rest spots, and solar-powered lighting."},"title":{"en":"Green Corridor for Cyclists and Pedestrians"}}' | sha256sum
+----
