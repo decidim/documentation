@@ -1,0 +1,154 @@
+= Landing page
+
+== Understand the basics
+
+Each process and assembly has a landing page, with different content blocks that can be added, deleted, enabled, ordered, and configured, 
+just as the xref:admin:homepage.adoc[Homepage] content blocks. 
+
+In order to organize a landing page, enter the space and click the landing page item in the left navigation bar. 
+You are redirected to the landing page configuration panel. 
+
+. Add different content blocks by clicking the "Add content block" button, and choose the one you want to add. 
+. Configure the content block when it's possible.
+. Finally, move the content block in the active content blocks column to make it appear on the homepage.
+
+image::spaces/landing_page/landing_page_admin.png[Landing page content blocks]
+
+== Landing page content blocks
+
+Below, you'll find all the content blocks configuration guides and screenshots of how there are displayed on the homepage.
+
+=== Hero image and CTA 
+
+The Hero image and CTA content blocks allow to display in the space landing page:
+
+* *title*: the space title. 
+* *hashtag*: the space hashtag redirecting to the X platform. 
+* *subtitle*: the space subtitle. 
+* *a call to action button*: by default, the button isn't display. To enable it, click the "Edit" icon of the content block. 
+* *an image*: the downloaded image is displayed with an opacity filter, to make sure the text is readable. 
+
+image::spaces/landing_page/hero_admin.png[Landing page content Hero image content block form]
+
+.Admin hero image and CTA landing page content block form
+|===
+|Field |Type |Description
+
+|Call To Action text
+|Optional
+|Text displayed on the CTA button. 
+
+|Call To Action URL
+|Optional
+|URL where the button redirects participants. Can be an external URL, or a slug if inside the space. 
+
+|Image
+|Optional
+|Image displayed in the content block background. Preferably a landscape image that does not have any text
+
+|===
+
+image::spaces/landing_page/hero_front.png[Landing page content Hero image content block frontend]
+
+=== Announcement
+
+The announcement block display the content of the announcement field from the space configuration, in a announcement blue box. 
+It allows administrators to highlight important information.
+
+image::spaces/landing_page/announcement_front.png[Landing page content Announcement content block]
+
+=== Main data
+
+The main data block displays the short description and description of the space, and for assemblies, the purpose of action and composition. 
+
+image::spaces/landing_page/main_data.png[Landing page content Main data content block]
+
+=== Phase / type & duration
+
+The phase & duration block displays the process start and end date, and the current xref:admin:spaces/processes/phases.adoc[phase] of processes. 
+For assemblies, it displays the duration of the assembly. 
+
+image::spaces/landing_page/duration.png[Landing page content Phase and duration content block]
+
+=== Metadata
+
+The metadata block displays all the metadata fields entered in the space configuration.
+
+image::spaces/landing_page/metadata.png[Landing page content Metadata content block]
+
+=== Last activity
+
+The last activity block shows the last activities of the space, blog posts, comments, debates, etc. 
+You can configure the number of avatars displayed next to the title. 
+
+image::spaces/landing_page/activities.png[Landing page content Last activity content block]
+
+=== Statistics
+
+image::spaces/landing_page/statistics.png[Landing page content Statistics content block]
+
+=== Metrics
+
+image::spaces/landing_page/metrics.png[Landing page content Metrics content block]
+
+=== Related processes
+
+image::spaces/landing_page/processes.png[Landing page content Related processes content block]
+
+You can configure the number of processes to display in this content block by clicking the "Edit" button on the content block. 
+
+image::spaces/landing_page/processes_admin.png[Landing page content Related processes content block]
+
+=== Related assemblies
+
+image::spaces/landing_page/assemblies.png[Landing page content Related assemblies content block]
+
+You can configure the number of assemblies to display in this content block by clicking the "Edit" button on the content block. 
+
+image::spaces/landing_page/assemblies_admin.png[Landing page content Related assemblies content block]
+
+=== Related documents
+
+The related documents allows administrator to display the xref:admin:spaces/processes/attachments.adoc[Attachments] on the landing page, except images. 
+
+image::spaces/landing_page/documents.png[Landing page content Related documents content block]
+
+=== Related images
+
+The related images allows administrator to display the images xref:admin:spaces/processes/attachments.adoc[Attachments] on the landing page.
+
+image::spaces/landing_page/images.png[Landing page content Related images content block]
+
+=== Upcoming meetings
+
+The upcoming meetings allows administrator to display the upcoming xref:admin:spaces/components/meetings.adoc[Meetings] on the landing page with a map when they have a location.
+You can configure the component to take the meetings from by clicking the Edit button of the content block. 
+
+image::spaces/landing_page/meetings.png[Landing page content meetings content block]
+
+=== Posts
+
+The posts content block allows administrator to display the last posts published on the space, with their images if they were added as attachments to the posts. 
+You can configure the component to take the posts from by clicking the Edit button of the content block. 
+
+image::spaces/landing_page/posts.png[Landing page content posts content block]
+
+=== Proposals
+
+The proposals allow to display a sample of proposals on the space landing page. 
+
+image::spaces/landing_page/proposals.png[Landing page content proposals block edition]
+
+You can configure the display order and the Proposal component by clicking the Edit button of the content block. 
+
+image::spaces/landing_page/proposals_admin.png[Landing page proposals content block]
+
+=== Results
+
+image::spaces/landing_page/results.png[Landing page results content block]
+
+You can configure the display order and the Accountability to take the results from component by clicking the Edit button of the content block. 
+
+=== HTML
+
+The HTML block content block allows to add an editable HTML block on the landing page, and therefore to create a personalized section.

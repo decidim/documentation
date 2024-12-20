@@ -1,20 +1,27 @@
 = Private participants
 
-There are cases where you want to have a closed census of the participants in a space. For instance this could be a space
-for a small group of people, or the members of a comission inside of a big organization. For these cases you can
-use the private participants feature.
+== Understand the basics
 
-image:spaces/private_participants.png[Private participants list]
+In some cases, you might want to restrict the participation to a specific group of participants. 
+For instance this could be a space dedicated to the members of a commission in a big organization. 
+For these cases you can use the private participants feature.
 
-For inviting private participants of a space:
+NOTE: Private participants list can only be reviewed in the administration panel, and is not publicly displayed. 
 
-. Sign in as administrator
-. Go to the space's section in the sidebar
-. Click on the space Edit action
-. Click on the "Private participants" link in the sidebar
-. Click on the "New participatory space private user" or "Import via CSV" buttons
+== How to find it?
 
-== New participatory space private user
+NOTE: Private participants are only available in private spaces. To enable them, make sure you tick the "Private space" checkbox when
+creating or editing your process or assembly.
+
+To create and manage private participants, click the *Private participants* item in the left navigation bar of the space. 
+
+image::spaces/private_participants.png[Private participants list]
+
+There, you are able to manage the private participants, import them in a batch, add new ones manually, etc.
+
+== Invite a private participant
+
+Click on the "New participatory space private user" button. 
 
 image:spaces/private_participants_new_form.png[New private participant form]
 
@@ -24,53 +31,66 @@ image:spaces/private_participants_new_form.png[New private participant form]
 
 |Name
 |Required
-|What is the name of the new participant.
+|The name of the new private participant.
 
 |Email
 |Required
-|What is the email of the new participant.
+|The email of the new private participant.
 
 |===
 
 == Import via CSV
 
-image:spaces/private_participants_csv_import.png[Import private participants via CSV]
+Click on the "Import via CSV" button.
 
-This form allows you to bulk import the participants of a space.
+image::spaces/private_participants_csv_import.png[Import private participants via CSV]
 
-It must have two columns with email in the first column of the file and the name in the last column of the file (email, name)
-of the users that you want to add to the participatory space. Some tips:
+This form allows you to delete all private participants access at once, and to bulk import via CSV. 
 
+The CSV must follow the following formatting: 
+
+* The file must have two columns, first one being emails and the second one being names of the participants you want to import. 
 * The file should not have headers. That means that you do not have to add a column that says "email, name"
 * You must avoid using invalid chars like `<>?%&^*#@()[]=+:;"{}\|` in user name.
-* The separator between columns must be a comma (",")
+* The separator between columns must be a comma (",").
+
+== Invitation
+
+NOTE: If the email is already linked to an account on the instance, the participant is already able to participate in the space 
+and won't receive an invitation email. 
+
+When a participant is added to the private participant list, but doesn't already have an account, they get an email 
+with a link for accepting the invitation:
+
+image::spaces/private_participants_email_invite.png[Email invitation of a private participant]
+
+After clicking in the "Accept invitation" link in the email, they are redirected to the instance and have to finish creating 
+their account by setting their nickname, password and accepting the Terms of Service.
+
+image::spaces/private_participants_user_registration_form.png[User registration form of a private participant]
+
+== Manage private participants
+
+You can find all the private participants on the list in the administration panel, with:
+
+* *Name*: name of the private participant. If the account already exists, it is automatically changed for the account username.
+* *Email*: email of the participant. 
+* *Invitation sent at*: date and hour when the invitation email was sent (when participant doesn't already have an account). 
+* *Invitation accepted at*: date and hour when the invitation email was accepted by the participant.  
+
+You can sort the list by clicking on the columns header, filter it and search for participants by their name or email. 
 
 == Actions
-
-After the participants has been invited, you can resend or delete the invitation.
-
-image:spaces/private_participants_actions.png[Private participants actions]
 
 |===
 |Icon |Name |Definition
 
-|image:action_resend_invitation.png[Resend invitation]
+|image:icons/action_resend.png[Resend invitation]
 |Resend invitation
-|If the invitation wasn't accepted, send it again to the user
+|If the invitation wasn't accepted, send it again to the participant. 
 
-|image:action_delete.png[Delete invitation]
+|image:icons/action_delete.png[Delete]
 |Delete invitation
-|Revoke the invitation sent to the user
+|Revoke the access granted to the participant. 
 
 |===
-
-== Invitation
-
-When a participant was invited they will get an email with a link for accepting the invitation:
-
-image:spaces/private_participants_email_invite.png[Email invitation of a private participant]
-
-After clicking in this email, they will have to fill a form for setting their password, accepting the Terms of Service and giving
-their consent if they want to receive newsletters.
-
-image:spaces/private_participants_user_registration_form.png[User registration form of a private participant]
