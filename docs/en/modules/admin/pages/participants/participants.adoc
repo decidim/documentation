@@ -1,0 +1,90 @@
+= Participants
+
+Participants are all people with an account on the platform, whether they have confirmed their email address or not. 
+In this page an administrator can:
+
+* Block a participant, for instance because they are spamming or acting against the Terms of Service
+* Contact a participant with Decidim private messages
+* Officialize a participant
+* Show a participant email
+
+image:participants/participants_participants.png[Participants list]
+
+== Manage participants
+
+You can find all the participants here, with:
+* *Name*: name of the participant, with a link to their profile.
+* *Nickname*: nickname of the participant, with a link to their profile.
+* *Created at*: date of the participant account creation. 
+* *Status*: if the participant is officialized or not. 
+* *Badge*: the officialization badge, given when officializing the participant. 
+* *Reports*: number of reports by different users.
+
+You can filter and sort this list by clicking the "Filter" button and the columns headers. 
+You can also search for participants by email, name, or nickname in the search bar. 
+
+=== Actions
+
+|===
+|Icon |Name |Definition |Condition
+
+|image:icons/action_block.png[Block user]
+|Block / Unblock user
+|To block or unblock a participant. See xref:admin:moderations/reported_users.adoc[Reported users] for more information.
+|Block action is available for unblocked users, and vice versa.
+
+|image:icons/action_show_email.png[Show email]
+|xref:_show_email_address[Show email address]
+|To show the email address of a participant.
+|Available all the time. 
+
+|image:icons/action_contact.png[Contact]
+|xref:_contact[Contact]
+|To contact a participant through a private message.
+|Available all the time. 
+
+|image:icons/action_verify.png[Officialize]
+|xref:_officialize[Officialize]
+|To recognize that a participant has a special status, like mayor, association's president, etc.
+|Available for unofficialized participants. 
+
+|image:icons/action_reofficialize.png[Reoffficialize]
+|Reofficialize
+|To change the officialization badge.
+|Available for officialized participants. 
+
+|image:icons/action_delete.png[Unofficialize]
+|Unofficialize
+|To revoke an officialization.
+|Available for officialized participants. 
+
+|===
+
+=== Show email address
+
+Sometimes, administrators need to find a user email address. They can click the "Show email address" option. 
+A modal appears, with the name of the participant, and an hidden field. 
+
+image:participants/participants_show_email.png[Modal in show email]
+
+To show the email address, you need to click the "Show" button. 
+
+image:participants/participants_showed_email.png[Modal after the email is shown]
+
+For administration transparency, this action is logged in the activity logs.
+
+image:participants/participants_showed_email_admin_log.png[Admin activity log for show email]
+
+=== Contact
+
+To contact participants directly through the private messaging of the platform, click the "Contact" icon. 
+
+image:participants/participants_conversation.png[Conversation with a participant].
+
+=== Officialize
+
+This option is useful to recognize that a participant has a specific status in the
+platform. For instance, if someone is the city mayor, a city councillor, the
+president of an association, etc.
+
+image:participants/participants_officialize.png[Officialize a participant]

@@ -1,0 +1,19 @@
+= Documentation
+
+To contribute to the documentation (for instance, this same page that you're reading), you can do it through two ways: editing on GitHub directly or editing locally.
+
+== Edit on GitHub
+
+This is the recomended way if you just want to make a quick fix (for instance, a typo or some clarification on a single page). For doing this you'll need to click in the "Edit this page" link in the top of every page.
+
+image::documentation-edit.png[Edit this page link]
+
+It'll open the page for editing in GitHub interface and after you've finished it'll guide you to make a Pull Request so maintainers can review your contribution.
+
+== Edit locally
+
+If you want to propose lots of changes in the documentation, or if you want to review your changes locally before sending them because you want to review things like formatting, you can install the environment for having the documentation site locally.
+
+Then you'll need to fork the repository, make a branch and propose your changes as a Pull Request so maintainers can review it. As you see this can be a hassle if you want to make small changes, so the prefered way would be to do it initially with the "Edit this page" link mehod.
+
+Read the full instructions on how to install this documentation website locally in the https://github.com/decidim/documentation/[Decidim Documentation GitHub repository].

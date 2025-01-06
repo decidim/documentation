@@ -1,0 +1,88 @@
+= Participatory texts
+
+This feature allows you to navigate the proposals as text. It's useful for discussing normatives, plans, or other kinds of texts.
+
+Every paragraph is split into a proposal, so it's possible to discuss it in a more granular way.
+
+Some examples of where this feature was used are:
+
+* https://concertation.greenpeace.fr/processes/vision-greenpeace/f/8/[Vision Greenpeace] in https://concertation.greenpeace.fr/[Greenpeace France Concertation]
+* https://www.decidim.barcelona/processes/PAM2020/f/3771/[Procés participatiu del Programa d'Actuació Municipal (PAM) 2020-2023] in https://www.decidim.barcelona/[Decidim Barcelona]
+
+image:components/proposals/participatory_texts/example01.png[Vision Greenpeace]
+
+image:components/proposals/participatory_texts/example02.png[PAM 2020-2023 in Decidim Barcelona]
+
+To configure the "Participatory texts" in proposals component:
+
+. Sign in as admin
+. Go to admin panel
+. In the main sidebar, click in the button for the space that you want to configure the component for.
+For instance, it could be "Processes", "Assemblies", or "Conferences"
+. Go to components
+. Click on "Add component" button
+. Click on "Proposals"
+. Check the "Participatory texts enabled" setting
+. Save the component
+. Click in the "Participatory texts" button in the empty proposals component
+image:components/proposals/participatory_texts/manage_proposals.png[Manage proposals]
+. Click in the "Import document" button in the empty Preview participatory text panel
+image:components/proposals/participatory_texts/preview_participatory_text_empty.png[Preview empty participatory text]
+. Fill the xref:_add_document_form[Add document form]
+image:components/proposals/participatory_texts/add_document_form.png[Add document form]
+. xref:_preview_the_document[Preview the document] and make corrections
+image:components/proposals/participatory_texts/preview_participatory_text.png[Preview participatory text]
+. Click on publish the document
+image:components/proposals/participatory_texts/imported_document_proposals.png[Imported document proposals]
+. Publish the proposal component
+
+Notice that this feature could break existing proposals, so if there is any proposal it will not work. You'll see the
+following message in the components settings:
+
+====
+Cannot interact with this setting if there are existing proposals. Please, create a new `Proposals component` if you want
+to enable this feature or discard all imported proposals in the `Participatory Texts` menu if you want to disable it.
+====
+
+== Add document form
+
+Although it's possible to work with both Markdown (.MD) and ODT (.ODT) files, we recommend working with Markdown as it's
+easier to see the formatting.
+
+link:{attachmentsdir}/participatory_text.md[Download the example participatory text].
+
+image:components/proposals/participatory_texts/add_document_form.png[Add document form]
+
+
+.Add document form
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|What's the title of the document?
+
+|Description
+|Optional
+|Description for the document
+
+|Document
+|Required
+|File. Add a document lesser than 2MB, each section until 3 levels deep will be parsed into proposals. Supported formats are: Markdown, ODT
+|===
+
+== Preview the document
+
+After the document is initially imported you have three options:
+
+. Discard
+. Save draft
+. Publish document
+
+== Frontend
+
+Once the document is imported and the proposals component published, you'll be able to navigate the document:
+
+image:components/proposals/participatory_texts/frontend.png[Frontend]
+image:components/proposals/participatory_texts/frontend_hover.png[Frontend hover in proposal]
+image:components/proposals/participatory_texts/frontend_proposal.png[Frontend proposal detail]

@@ -1,0 +1,47 @@
+= Partners
+
+The partners are the sponsors or supporters of a conference. They are listed on the Conference landing page.
+
+image:spaces/conferences/partners_frontend.png[Conferences partners (frontend)]
+
+== Create a new partner
+
+image:spaces/conferences/partners.png[Conferences partners]
+
+For creating a new partner of a conference:
+
+. Sign in as administrator
+. Go to the conferences section in the sidebar
+. Click on the conference Edit action
+. Click on the Partners link in the sidebar
+. Click on the "New partner" button
+. Fill the form
+
+image:spaces/conferences/new_partner.png[Conferences partners form]
+
+
+.New partner form
+|===
+|Field |Type |Description
+
+|Name
+|Required
+|What is the name of this partner.
+
+|Partner type
+|Required
+|Choose one of these options: Main promotor or Collaborator
+
+|Weight
+|Optional
+|Which order will it have in relation to the other partners. Having a lower number means a higher priority. For instance, if you have two partners, "Partner a" with weight "10" and "Partner b" with weight "0", then "Partner b" will be first when ordering.
+
+|Link
+|
+|
+
+|Logo
+|Required
+|Guidance for image: Preferably a landscape image that does not have any text. The service crops the image. Maximum file size: 5MB
+Allowed file extensions: jpg jpeg gif png bmp ico
+|===

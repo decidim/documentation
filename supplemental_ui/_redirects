@@ -1,0 +1,28 @@
+/en/admin/*                           /en/develop/admin/:splat
+/en/configure/*                       /en/develop/configure/:splat
+/en/contribute/*                      /en/develop/contribute/:splat
+/en/customize/*                       /en/develop/customize/:splat
+/en/develop/*                         /en/develop/develop/:splat
+/en/features/*                        /en/develop/features/:splat
+/en/install/*                         /en/develop/install/:splat
+/en/publications/*                    /en/develop/publications/:splat
+/en/releases/*                        /en/develop/releases/:splat
+/en/services/*                        /en/develop/services/:splat
+/en/understand/*                      /en/develop/understand/:splat
+/en/whitepaper/*                      /en/develop/whitepaper/:splat
+
+/en/v0.27/index.html                  /en/v0.27/
+/en/v0.26/index.html                  /en/v0.26/
+/en/develop/index.html                /en/develop/
+
+/social-contract/en/*                 /en/understand/social-contract/
+/features/en/*                        /en/features/:splat
+/features/es/*                        /en/features/:splat
+/features/ca/*                        /en/features/:splat
+/features/                            /en/features/general-description/
+/whitepaper/en/*                      /en/whitepaper/
+/deploy-and-admin/en/get-decidim/     /en/install/
+/admin-manual/en/*                    /en/admin/:splat
+/develop/en/                          /en/develop/guide/
+/develop/en/advanced/*                /en/develop/:splat
+/init/en/                             /en/

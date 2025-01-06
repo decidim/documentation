@@ -1,0 +1,27 @@
+= User registrations
+
+After participants have registered, they will appear in this section.
+
+image:spaces/conferences/user_registrations.png[Conferences user registrations (backend)]
+
+As an administrator, you can:
+
+* Export the registrations
+* Confirm a registration
+
+== Export
+
+It's possible to export the registrations in multiple formats: CSV, JSON, and XLSX (Excel).
+
+== Flow
+
+. A participant registers to the conference
+. She receives a pending registration notification
+image:spaces/conferences/user_registration_pending_notification.png[Notification for pending user registration]
+. She receives a pending registration email
+image:spaces/conferences/user_registration_pending_email.png[Email for pending user registration]
+. An administrator reviews and confirms the registration with the image:action_check.png[Confirm] button
+. The participant receives a confirmed registration notification
+image:spaces/conferences/user_registration_confirmed_notification.png[Notification for confirmed user registration]
+. She receives a confirmed registration email with an calendar file (.ICS).
+image:spaces/conferences/user_registration_confirmed_email.png[Email for confirmed user registration]

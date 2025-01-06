@@ -1,0 +1,33 @@
+= Reported users
+
+There are cases where participants could go against the Terms of Service of the
+platform, so it's useful to have the option for reporting and blocking users. You
+can read more about how moderation and reporting contents work in xref:global_moderations.adoc[Global moderations].
+
+A participant can be blocked from the xref:participants/participants.adoc[participants
+section in the admin panel] or through this "Reported users" section.
+
+Anyone can propose a moderation in Decidim, through the "Flag" icon in the participant
+profile. After a participant has clicked in this action she needs to provide a
+reason why she's making this report:
+
+* Contains clickbait, advertising, scams or script bots.
+* Contains racism, sexism, slurs, personal attacks, death threats, suicide requests
+or any form of hate speech.
+* Contains illegal activity, suicide threats, personal information, or something
+else you think doesn't belong on Demo.
+* Other (and add it)
+
+image:reported_participant_modal.png[Give reason for reporting a participant modal]
+image:reported_participant_flag.png[Flag in sidebar profile]
+
+After clicking in this option you'll need to provide a justification why you're
+blocking this participant:
+
+image:participants_block_user_justification.png[Justificate the blocked user action]
+
+Once a blocked participant tries to log-in she'll see an error message:
+
+image:participants_block_user_alert.png[Message shown to blocked user]
+
+After a participant was blocked its name is changed to "Blocked user".

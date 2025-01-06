@@ -1,0 +1,35 @@
+= Pages and topics
+
+== Understand the basics
+
+The pages tab allow you to publish static pages including, for example, your platform's Terms and Conditions, accessibility statements, FAQs, etc.
+You can organize these pages in different topics, acting as kind of folders. 
+
+NOTE: Looking for how to create topics and pages? See xref:pages/pages.adoc[Pages] and xref:pages/topics.adoc[Topics].
+
+These pages are available to all the participants through the **Help** section in the header and in the footer.
+
+== Configuration
+
+To access the Pages configuration panel, go in the administration panel and click the "Pages" item in the administration navigation bar. 
+
+image::pages/pages_menu.png[Pages: Access pages panel]
+
+There, you are able to create, update, or delete xref:admin:pages/pages.adoc[Pages] and xref:admin:pages/topics.adoc[Topics]. 
+You can start by creating only pages if you want, as you are able to create topics and reorganize pages inside them at any moment. 
+
+image::pages/pages_backend_list.png[Backend: list pages]
+
+== Examples
+
+=== A page without topic
+
+image::pages/pages_frontend_show.png[Frontend: show a page]
+
+=== A page with a topic
+
+image::pages/pages_frontend_show_topic.png[Frontend: show a page with topic]
+
+=== Help section with pages and topics
+
+image::pages/pages_frontend_list_topics.png[Frontend: list topics of pages]

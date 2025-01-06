@@ -1,0 +1,25 @@
+name: "[CI] Antora"
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    paths:
+      - "*"
+
+jobs:
+  check:
+    name: Install and run Antora CI
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: ".node-version"
+      - name: Install dependencies
+        run: npm install
+      - name: Run test script
+        run: npm test
+        shell: "bash"
+

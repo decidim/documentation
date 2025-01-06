@@ -1,0 +1,16 @@
+
+The platform currently have the following official components:
+
+* xref:admin:components/accountability.adoc[*Accountability*]: allows to keep track of ongoing projects. 
+* xref:admin:components/blog.adoc[*Blog*]: allows administrators to publish blog posts and news. 
+* xref:admin:components/budgets.adoc[*Budgets*]: allows participants to vote for projects with amounts predefined, for
+participatory budgeting for example. 
+* xref:admin:components/debates.adoc[*Debates*]: allows participants to have debates.
+* xref:admin:components/meetings.adoc[*Meetings*]: in person or online gatherings, agenda, minutes, etc. 
+* xref:admin:components/pages.adoc[*Page*]: static pages with multi-language support.
+* xref:admin:components/proposals.adoc[*Proposals*]: contributions posted by participants.
+* xref:admin:components/sortitions.adoc[*Sortitions*]: allows to randomly selected proposals.
+* xref:admin:components/surveys.adoc[*Survey*]: for conducting surveys with different kinds of questions.
+
+NOTE: In the cases where your needs aren't covered by one of those components, 
+you can create your own component through a xref:develop:modules.adoc[Module].

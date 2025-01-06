@@ -1,0 +1,75 @@
+= Categories
+
+== Understand the basics
+
+Categories (and subcategories) are used for classifying resources inside of a space.
+
+An administrator can define them, can be assigned to when creating resources, and then participants can filter the
+different resources by these categories. For instance, they can be used in proposals, meetings, and debates.
+
+. Administrators define categories in a space.
+. Participants can create resources and give them a category.
+. Participants can then filter by categories.
+
+image::spaces/categories_sidebar.png[Filter categories in proposals]
+
+NOTE: Once a category is in use it can't be deleted, as there are resources that are linked to it.
+
+Decidim has other ways to classify resources, for instance xref:admin:scopes.adoc[Scopes] and xref:admin:features/hashtags.adoc[Hashtags].
+The main difference is that Categories can be defined in a given space, Scopes are global for all the platform, and Hashtags
+can be defined by the participants.
+
+Categories can be nested, meaning that a category can have subcategories.
+
+== How to find it?
+
+To configure categories, click the *Categories* item in any participatory space. 
+
+image::spaces/categories.png[View categories in a space administration page]
+
+== Create a new category
+
+Click in "New category" button on the top right. 
+
+image:spaces/categories_new_form.png[Create a new category form]
+
+.Create category form
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Name
+|Required
+|What is the name for this category.
+
+|Order position
+|Optional
+|Which order it has in relation to the other categories. Having a lower number means a higher priority. For instance, if you have two categories, "Category a" with weight "10" and "Category b" with weight "0" then "Category b" is first when ordering.
+
+|Parent
+|Optional
+|What is the parent category.
+|===
+
+== Manage categories
+
+You can find all the categories on the list in the administration panel, with:
+
+* *Name*: name of the category, given when creating or editing it by the administrator. 
+
+== Actions
+
+.Components actions in component list
+[cols="20h,10h,~"]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Edit icon]
+|Edit
+|To edit the name, the order position and the parent of the category. 
+
+|image:icons/action_delete.png[Delete icon]
+|Delete
+|To delete the category. A category can't be deleted if it has resources attached to it. 
+
+|===
