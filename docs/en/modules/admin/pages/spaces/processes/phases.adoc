@@ -1,12 +1,14 @@
 = Phases
 
+== Understand the basics
+
 A participatory process is a sequence of phases ordered in time. Depending on which phase of the process timeline you
-are, then you can enable or disable some features.
+are, then you can enable and configure the features you need for each phase.
 
 Ideally, the Phases of a Participatory Process are always the same and are not changed, so participants can know what are
-the rules and timeframe and can organize their lives to know when it'd be best for them to participate in this process.
+the rules and time frame and can organize to know when it'd be best for them to participate in this process.
 
-As a guideline, the standard structure of a participatory process may be as follows:
+For example, the standard structure of a participatory process could be as follows:
 
 . Presentation
 . Diagnosis
@@ -15,76 +17,79 @@ As a guideline, the standard structure of a participatory process may be as foll
 . Proposals evaluation
 . Monitoring
 
-Participants can find the link to different phases of a participatory process in the header of the participatory process,
-in the link "Process phases". Here they can see the full description and explanation of the phases. The active phase
-will be highlighted.
+Participants can find the link to different phases of a participatory process in the "Phase and duration" landing page content block, 
+when it's enabled by an administrator in the process xref:admin:spaces/processes/landing_page.adoc[Landing page].
 
-image:process_phases_header.png[Header with processes phases link]
+image::spaces/processes/process_phases_block.png[Block with processes phases link]
 
-image:process_phases.png[Process phases explanation]
+When clicking on the link for the active phase, they can see the full description and explanation of the phases in a pop-up.
+
+image::spaces/processes/process_phases.png[Process phases explanation]
+
+== Manage phases
+
+To access the phases configuration, click in the secondary navigation panel on the "Phases" item. 
+
+image::spaces/processes/process_phases_list.png[Phases of a participatory process]
+
+=== Actions
+
+|===
+|Icon |Name |Definition |Condition
+
+|image:icons/action_edit.png[Edit icon]
+|Edit
+|To edit this phase.
+|Always available
+
+|image:icons/action_activate.png[Activate icon]
+|Activate
+|To make this phase the active one.
+|Only available for inactive phases. 
+
+|image:icons/action_delete.png[Delete icon]
+|Delete
+|To delete this phase.
+|Always available
+
+|===
 
 == Create a new phase
 
-image:process_phases_list.png[Phases of a participatory process]
+To create a new phase, click the "New phase" button in the top right of the page. 
 
-For creating a new phase of a participatory process:
+image::spaces/processes/process_phases_new_form.png[Create a new participatory process phase form]
 
-. Sign in as administrator
-. Go to the participatory process section in the sidebar
-. Click on the participatory process Edit action
-. Click on the Phases link in the sidebar
-. Click on the "New phase" button
-
-image:process_phases_new_form.png[Create a new participatory process phase form]
-
-.Create meeting
+.Create process phase form
+[cols="20h,10h,~"]
 |===
 |Field |Type |Description
 
 |Title
 |Required
-|What is the title for this phase.
+|The title for this phase, displayed in the phase content block and on the process cards when phase is active. 
 
 |Description
-|
+|Optional
 |A long description explaining what's this phase for.
 
 |Start date
-|
-|Which day this phase will start. Expected format: dd/mm/yyyy
+|Optional
+|The start date of this process phase. Expected format: dd/mm/yyyy
 
 |End date
-|
-|Which day this phase will end. Expected format: dd/mm/yyyy
+|Optional
+|The end date of this process phase. Expected format: dd/mm/yyyy
 
 |Call to Action path
-|
-|Where will the button link to. For instance, it could point to the new proposal creation form. Use partial paths, not full
-URLs here. Accepts letters, numbers, dashes, and, slashes, and must start with a letter. If not set, the button will not be shown.
+|Optional
+|Deprecated
 
 |Call to Action text
-|
-|What will the button say. For instance, it could be "Create a proposal". If not set, the button will not be shown.
+|Optional
+|Deprecated
 
 |===
 
-== Actions
-
-After a phase was created you have these actions:
-
-|===
-|Icon |Name |Definition
-
-|image:action_activate.png[Activate icon]
-|Activate
-|To make this phase the active one.
-
-|image:action_edit.png[Edit icon]
-|Edit
-|To edit this phase.
-
-|image:action_delete.png[Delete icon]
-|Delete
-|To delete this phase.
-
-|===
+CAUTION: Configuring the CTA through the Phase of the participatory process is deprecated with the new design. 
+Now this is done in the Landing Page, using the Hero and image content block. 

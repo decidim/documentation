@@ -1,113 +1,232 @@
 = Process groups
 
-A group of processes proves useful for subdividing large participatory processes into subprocesses according to a criteria,
-for instance the xref:admin:scopes.adoc[scope] of every process.
+== Understand the basics
 
-As an example you can see the https://www.decidim.barcelona/processes_groups/4[Barcelona City Council's Neighborhoods Plan, Pla de Barris].
-This is is a 150 million euro shock plan that aims to reduce inequalities within the city. There are 10 related processes, one for each involved neighborhood.
+A group of processes can be useful for subdividing large participatory processes into sub-processes according to a criteria.
+It can also allow administrators to organize an instance with a lot of processes, to gather together the ones related to a 
+specific type of process, or a specific scope, like participatory budgeting annual editions, mobility planning processes, etc. 
 
-image::processes_group_example.png[Participatory process group example]
+== Manage process groups
 
-== New process group form
+To access the process group management page, click the "Process groups" tab in the processes index page. 
+There, you can find the list of process groups.
 
-For creating a new process group:
+image::spaces/processes/processes_group_list.png[Participatory process groups list]
 
-. Sign in as administrator
-. Go to the Processes section in the sidebar
-. Click on the Process groups link in the sidebar
-. Click on the "New process group" button
-. Fill in the form
+=== Actions 
 
-image::processes_group_list.png[Participatory process groups list]
+|===
+|Icon |Name |Definition
 
-image::processes_group_new_form.png[New participatory process group form]
+|image:icons/action_edit.png[Edit process group icon]
+|Edit
+|To edit the configuration and components for the process group.
+
+|image:icons/action_preview.png[Preview process group icon]
+|Preview
+|See a preview of the process group landing page. 
+
+|image:icons/action_delete.png[Delete process group icon]
+|Delete
+|To delete this process group.
+
+|===
+
+== Create a process group
+
+To create a new process group, click the "New process group" button in the top right of the page. 
+
+=== About this process
+
+This section allows to provide a general description about the process group, mainly a title, image, and description, and to 
+select the existing processes that pertain to the group. 
+
+image::spaces/processes/processes_group_form_about.png[Participatory process groups creation form about this process]
 
 .New participatory process group form: General information
+[cols="20h,10h,~,~"]
 |===
-|Field |Type |Description
+|Field |Type |Description |Visibility
 
 |Title
 |Required
-|Title of the participatory process group. For instance, "Participatory Budgeting".
+|Title of the participatory process group.
+|Visible in the card of the process groups on the homepage, the processes index, the navigation, the "title and description" 
+and the "Hero image and CTA" landing page blocks. 
 
 |Description
 |Required
-|A long explanation of what's your participatory process about.
+|A long explanation of what's the process group about.
+|Visible in the card of the processes index and the "title and description" landing page block. 
 
 |Related processes
 |Optional
-|Which are the processes that are related to this one? They will be used for populating
-the Content Blocks in the Landing page of this Process group. For selecting multiple you'll
-need to use the *ctrl* function.
+|The processes that should be grouped inside this process group. To select multiple processes, use the *CTRL* or *CMD* key.
+|Visible in the "Participatory processes" landing page block. 
 
 |Image
 |Optional
 |Image that will be used in presentation cards of this process group. Guidance for image:
 Preferably a landscape image that does not have any text. The service crops the image.
-Maximum file size: 10MB. Allowed file extensions: jpeg jpg png
+Maximum file size: 10 MB. Allowed file extensions: JPEG JPG PNG
+|Visible in the card of the process groups on the homepage and the processes index.
 
 |===
 
+=== Metadata 
+
+This section allows to provide meta information about the process group.
+It can be enabled on the landing page with the "Metadata" landing page block. 
+
+image::spaces/processes/processes_group_form_metadata.png[Participatory process groups creation form metadata]
+
 .New participatory process group form: Metadata
+[cols="20h,10h,~"]
 |===
 |Field |Type |Description
 
-Hashtag
-Website
+|Hashtag
+|Optional
+|Hashtag redirecting to the X social network.
+
+|Website
+|Optional
+|Website related to this process group. 
 
 |Promoter group
 |Optional
-|Information that's displayed in the process metadata content block.
+|If a specific group is at the origin of the process, like a city direction, an association committee, etc. 
 
 |Organization area
 |Optional
-|Information that's displayed in the process metadata content block.
+|The organization domain or category, if it's relevant. 
 
 |Scope metadata
 |Optional
-|Information that's displayed in the process metadata content block.
+|Metadata on the process scope, if it's relevant. 
 
 |Who participates
 |Optional
-|Information that's displayed in the process metadata content block.
+|Who are the authorized participants, who can participate to the process. 
 
 |What is decided
 |Optional
-|Information that's displayed in the process metadata content block.
+|The issue of the process, the object of what is decided. 
 
 |How is it decided
 |Optional
-|Information that's displayed in the process metadata content block.
+|The decision making process. 
 
 |===
 
+=== Visibility
+
+This section allows administrators to configure the process group visibility in the homepage and processes index.
+
+image::spaces/processes/processes_group_form_visibility.png[Participatory process groups creation form visibility]
+
 .New participatory process group form: Visibility
+[cols="20h,10h,~"]
 |===
 |Field |Type |Description
 
 |Promoted
 |Optional
-|Check if you want the process to have more visibility in the Process public list. It'll also be visible in the
-ParticpipatoryProcess Content Block in the xref:admin:homepage.adoc[Homepage] configuration. This is accessible in the btn:[Edit] action in a Process.
+|Check if you want the process to have more visibility in the Process public list. It'll also be visible in the "Highlighted processes" 
+content block in the xref:admin:homepage.adoc[Homepage].
 
 |===
 
-== Landing page
+== Landing page content blocks
 
-One of the main features of a process group is to be able to configure the Landing page, through Content blocks, just like
-the general homepage of the platform. This means that you can enable or disable different sections of the landing page and also
-configure some fo these sections.
+Process groups are mainly landing pages, grouping more complex participatory processes. 
+This landing page works with different content blocks, just like the general homepage of the platform. 
+This means that you can enable different sections of the landing page and configure some of these sections.
 
-image::processes_group_landing.png[Participatory process group landing page]
+To configure a process group landing page, when editing the process group, click the "Manage" button in the top right of the page, 
+and click the "Landing page" menu item. 
 
-* Title, description and hashtag
-* Metadata
-* Image, text and Call to Action button. Configurable.
-* Proposals. You can configure how the elements will be sorted: by most recent or random.
-* Results. You can configure how the elements will be sorted: by most recent or random.
-* Upcoming events
-* Statistics
-* Participatory processes
-* First HTML block
-* Second HTML block
-* Third HTML block
+image::spaces/processes/processes_group_landing.png[Participatory process group landing page]
+
+Below, you'll find all the content blocks configuration guides and screenshots of how there are displayed on the landing page.
+
+NOTE: If there is no content to display in a content block, or if wasn't configured, it won't be displayed on the landing page. 
+
+=== Title and description
+
+The Title and description content block allows to display:
+
+* *Title*: the title of the process group. 
+* *Description*: the description of the process group. 
+* *Number of related processes*: the number of published participatory processes related to this process group. 
+* *Scope*: the scope of the process group. 
+* *Hashtag*: the hashtag, redirecting to the X social media. 
+* *Website*: a link to the website. 
+
+image::spaces/processes/processes_group_landing_title.png[Participatory process group landing page title and description block]
+
+=== Metadata
+
+image::spaces/processes/processes_group_landing_metadata.png[Participatory process group landing page metadata block]
+
+=== Hero image and CTA
+
+The hero image and CTA content block allows to display:
+
+* *Title*: the title of the process group. 
+* *an hashtag*: the hashtag, redirecting to the X social media. 
+* *a call to action button*: enable it by clicking the "Edit" icon on the landing page content block. 
+* *an image*: download an image for this block by clicking the "Edit" icon on the landing page content block.  
+
+image::spaces/processes/processes_group_landing_hero.png[Participatory process group landing page hero block]
+
+=== Proposals
+
+The Proposals content block allows to display a selection of proposals from the different participatory processes of the process group. 
+You can configure how the proposals are sorted by most recent or random by clicking the "Edit" icon on the landing page content block.
+
+image::spaces/processes/processes_group_landing_proposals.png[Participatory process group landing page proposals block]
+
+=== Results
+
+The Results content block allows to display a selection of results from the different participatory processes. 
+You can configure how the results are sorted by most recent or random by clicking the "Edit" icon on the landing page content block.
+
+image::spaces/processes/processes_group_landing_results.png[Participatory process group landing page results block]
+
+=== Upcoming meetings
+
+The Upcoming meetings content block allows to display a selection of meetings from the different participatory processes.
+You can configure how the results are sorted by most recent or random by clicking  the "Edit" icon on the landing page content block.
+If there is no upcoming meetings, this block shows the past ones. 
+
+image::spaces/processes/processes_group_landing_events.png[Participatory process group landing page events block]
+
+=== Statistics
+
+image::spaces/processes/processes_group_landing_stats.png[Participatory process group landing page statistics block]
+
+=== Participatory processes
+
+The participatory processes content block displays a grid of participatory processes on the landing page.
+You can configure if only active processes will be displayed by clicking the "Edit" icon on the landing page content block.
+
+image::spaces/processes/processes_group_landing_processes.png[Participatory process group landing page processes block]
+
+=== HTML blocks
+
+The HTML block content block allows to add an editable HTML block on the landing page, and therefore to create a personalized section.
+
+image::spaces/processes/processes_group_landing_html.png[Participatory process group landing page HTML blocks]
+
+== Examples 
+
+The https://www.decidim.barcelona/processes_groups/4[Barcelona City Council's Neighborhoods Plan], a 150 million 
+euro shock plan that aims to reduce inequalities within the city. There are 10 sub-processes, one for each involved neighborhood.
+
+image::spaces/processes/processes_group__barcelona_example.png[Participatory process group example]
+
+The https://participer.loire-atlantique.fr/processes_groups/32[Loire-Atlantique participatory budget], with an elaborated HTML block
+on the landing page. 
+
+image::spaces/processes/processes_group__cd44_example.png[Participatory process group example]

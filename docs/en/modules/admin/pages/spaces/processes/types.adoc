@@ -1,40 +1,45 @@
 = Process types
 
-In some cases it is necessary to organize participatory processes by more than just xref:spaces/processes/groups.adoc[Process Groups]. This is where Process Types can be useful.
+== Understand the basics
 
-Process Types work similarly to xref:admin:spaces/assemblies.adoc#_assemblies_types[Assembly types].
+In some cases it is necessary to organize participatory processes by more than just xref:spaces/processes/groups.adoc[Process Groups]. 
+This is where process types can be useful, and add a layer of categorization. 
+Participants are then able to filter processes by the process types you created. 
 
-== New process type form
+NOTE: Process types work similarly to xref:admin:spaces/assemblies.adoc#_assemblies_types[Assembly types].
 
-For creating a new process type:
+== Manage process types
 
-. Sign in as administrator
-. Go to the Processes section in the sidebar
-. Click on the Process types link in the sidebar
-. Click on the "New process type" button
-. Fill in the form
+To access the process types list, click the "Manage" button on the top right of the page, and click the "Process type" menu item. 
 
-image:spaces/processes/process-types-admin-backend.png[A screenshot of the back-end showing the button to create a new process type,title="Create a new process type in the back-end"]
+image::spaces/processes/process_types_list.png[Backend process types menu item]
+
+== Create a process type
+
+Click the "New process type" button on the top right of the page. 
+
+image:spaces/processes/process_types_form.png[Process type creation form]
 
 .New participatory process type form: General information
+[cols="20h,10h,~"]
 |===
 |Field |Type |Description
 
 |Title
 |Required
-|Title of the participatory process type. For instance, "Consultative".
+|Title of the participatory process type.
 
 |===
 
-== Add process type to existing processes
+== Add process type to a process
 
-It's possible to add a process type to existing processes. Edit the process, and select the process type under the section labelled Other.
+To relate processes to process types, in the edition page of a process, select the process type under the section labelled Other.
 
-image:spaces/processes/process-types-edit-process.png[A screenshot of editing an existing process to add a process type,title="Add process type to an existing process"]
+image:spaces/processes/process_types_edit_process.png[Choose a process type when editing a process]
 
-== Process type filter
+== Filter by process types
 
-In the front-end if there is at least one Process Type defined, a filter shows, allowing filtering of Processes.
+If there is at least one process type defined and related to a process, a filter is displayed at the left of the processes list 
+in the participant interface, allowing filtering of Processes.
 
-image:spaces/processes/process-types-front-end.png[A screenshot of the front-end showing a filter for Process types,title="Front-end filter for Process Types"]
-
+image::spaces/processes/process_types_filter.png[Process types filter in the processes index]

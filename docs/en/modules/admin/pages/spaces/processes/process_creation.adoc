@@ -1,0 +1,237 @@
+= Participatory process creation
+
+== Understand the basics
+
+Participatory processes allows administrators to configure components in articulation with different participatory phases. 
+To start creating a process, when on the process list, click the "New process" button at the top right of the page. 
+
+The process creation form is divided into different sections that are detailed in the sections below. 
+
+Once you created a process, in the secondary navigation panel, you can see all the process configuration available:
+
+* xref:admin:spaces/processes/process_creation.adoc[About this process]: here you can access and edit all the fields from the creation form.
+* xref:admin:spaces/processes/landing_page.adoc[Landing page]
+* xref:admin:spaces/processes/phases.adoc[Phases]
+* xref:admin:spaces/processes/components.adoc[Components]
+* xref:admin:spaces/processes/categories.adoc[Categories]
+* xref:admin:spaces/processes/attachments.adoc[Attachments]
+* xref:admin:spaces/processes/admins.adoc[Process admins]
+* xref:admin:spaces/processes/private_participants.adoc[Private participants]
+* xref:admin:spaces/processes/moderations.adoc[Moderations]
+
+== General information
+
+This section allows to provide a general description about the process, mainly a title, URL, and description. 
+
+image::spaces/processes/processes_new_form_general_info.png[New participatory process form general info section]
+
+.New participatory process form: General information
+[cols="20h,10h,~,~"]
+|===
+|Field |Type |Description |Visibility
+
+|Title
+|Required
+|Title of the participatory process. For instance, "Participatory Budgeting 2020"
+|Visible in the card of the process on the homepage, the processes index, the navigation, and the "Hero image and CTA" landing page block. 
+
+|Subtitle
+|Required
+|Subtitle. For instance, "Let's decide our priorities together"
+|Visible in the "Hero image and CTA" landing page block. 
+
+|Order position
+|Required
+|Determines the order of the process when displayed in the processes index or homepage. 
+|N/A
+
+|URL slug
+|Required
+|URL slugs are used to generate the URLs that point to this process. Only accepts letters, numbers and dashes, and must
+start with a letter.
+|Visible in the URL of the participatory process, for example https://example.org/processes/participatory-budget-2020.
+
+|Hashtag
+|Optional
+|Hashtag redirecting to the X social network.
+|Visible in the "Hero image and CTA" landing page block. 
+
+|Short description
+|Required
+|A short explanation of what's the participatory process about.
+|Visible in the "Main data" landing page block. 
+
+|Description
+|Required
+|A detailed explanation of what's the participatory process about.
+|Visible in the "Main data" landing page block. 
+
+|Announcement
+|Optional
+|The text you enter here is shown to the user right below the process information.
+|Visible in the "Announcement" landing page block. 
+
+|===
+
+== Duration
+
+This section allows to provide information about the process start and end dates. 
+It can be enabled on the landing page with the "Phase & duration" landing page block. 
+
+image::spaces/processes/processes_new_form_duration.png[New participatory process form duration section]
+
+.New participatory process form: Duration
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Start date
+|Optional
+|When this process start. You have a calendar widget to choose the day. Expected format: dd/mm/yyyy
+
+|End date
+|Optional
+|When this process start. You have a calendar widget to choose the day. Expected format: dd/mm/yyyy
+
+|===
+
+== Images
+
+image::spaces/processes/processes_new_form_images.png[New participatory process form images section]
+
+.New participatory process form: Images
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Home image
+|Optional
+|Image used in presentation cards of this process. Guidance for file: Has to be an image or a document.
+For images, use preferably landscape images, the service crops the image. Maximum file size: 10 MB
+
+|===
+
+== Metadata
+
+This section allows to provide meta information about the process.
+It can be enabled on the landing page with the "Metadata" landing page block. 
+
+image::spaces/processes/processes_new_form_metadata.png[New participatory process form metadata section]
+
+.New participatory process form: Metadata
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Promoter group
+|Optional
+|If a specific group is at the origin of the process, like a city direction, an association committee, etc. 
+
+|Organization area
+|Optional
+|The organization domain or category, if it's relevant. 
+
+|Scope metadata
+|Optional
+|Metadata on the process scope, if it's relevant. 
+
+|Who participates
+|Optional
+|Who are the authorized participants, who can participate to the process. 
+
+|What is decided
+|Optional
+|The issue of the process, the object of what is decided. 
+
+|How is it decided
+|Optional
+|The decision making process. 
+
+|===
+
+== Filters
+
+This section determines the filters available in the process, in the different components. 
+Filters can then be enabled and configured in each components. 
+
+image::spaces/processes/processes_new_form_filters.png[New participatory process form filters section]
+
+.New participatory process form: Filters
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Scopes enabled
+|Optional
+|Check if you want to have Scopes filtering in this process.
+
+|Scope
+|Optional
+|Which xref:admin:scopes.adoc[Scope] does this process belongs to.
+
+|Scope filter depth
+|Optional
+|Restrict the scope filter depth. This is relevant if you have complex relations in Scopes children (like a Russian Doll). 
+For instance if you have Grandmother -> Mother -> Child nested scopes, this setting allows you to choose the Mother scope, 
+so the participants can only filter between the Child sub-scopes. This would be the case for instance if you have 
+Provinces -> Cities -> Districts, and the process is about a particular City.
+
+|Area
+|Optional
+|Which xref:admin:areas.adoc[Area] does this process belongs to.
+
+|===
+
+== Visibility
+
+This section allows administrators to configure the process placement in the different pages and its publicity or no. 
+
+image::spaces/processes/processes_new_form_visibility.png[New participatory process form visibility section]
+
+.New participatory process form: Visibility
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Processes group
+|Optional
+|Enables to group multiple processes together. Check xref:admin:spaces/processes/groups.adoc[Process Groups] to know more.
+
+|Private space
+|Optional
+|Check this if the process should only be accessible by xref:admin:spaces/processes/private_participants.adoc[Private Participants].
+
+|Promoted
+|Optional
+|Check if you want the process to have more visibility in the Process public list and the "Highlighted processes" content block 
+in the xref:admin:homepage.adoc[Homepage] configuration. 
+
+|===
+
+== Related processes
+
+This section allows to create relations between processes. It's different from processes groups. 
+It can be enabled on the landing page with the "Related processes" landing page block. 
+
+image::spaces/processes/processes_new_form_related_processes.png[New participatory process form Related processes section]
+
+.New participatory process form: Related processes
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Related processes
+|Optional
+|Select other participatory processes that are related to this one.
+
+|===
+
+== Other
+
+This section is empty, unless an administrator already created xref:admin:spaces/processes/types.adoc[Process Types]. 
+If so, you should be able to select a process type to categorize the process. 
+Participants are then able to filter processes in the processes index with those types. 
+
+image::spaces/processes/process_types_edit_process.png[Choose a process type when editing a process]
+
+image::spaces/processes/process_types_filter.png[Process types filter in the processes index]
