@@ -1,0 +1,269 @@
+= Assembly creation
+
+== Understand the basics
+
+Assemblies allows administrators to configure components inside a long-lasting space, with defined members. 
+To start creating an assembly, when on the assembly list, click the "New assembly" button at the top right of the page. 
+
+The assembly creation form is divided into different sections that are detailed in the sections below. 
+
+Once you created an assembly, in the secondary navigation panel, you can see all the assembly configurations available:
+
+* xref:admin:spaces/assemblies/assembly_creation.adoc[About this assembly]: here you can access and edit all the fields from the creation form.
+* xref:admin:spaces/assemblies/landing_page.adoc[Landing page]
+* xref:admin:spaces/assemblies/components.adoc[Components]
+* xref:admin:spaces/assemblies/categories.adoc[Categories]
+* xref:admin:spaces/assemblies/attachments.adoc[Attachments]
+* xref:admin:spaces/assemblies/members.adoc[Members]
+* xref:admin:spaces/assemblies/admins.adoc[Assembly admins]
+* xref:admin:spaces/assemblies/private_participants.adoc[Private participants]
+* xref:admin:spaces/assemblies/moderations.adoc[Moderations]
+
+== General information
+
+This section allows to provide a general description about the assembly, mainly a title, URL, and description. 
+
+image::spaces/assemblies/assemblies_new_form_general_info.png[New assembly form general info section]
+
+.New assembly form: General information
+[cols="20h,10h,~,~"]
+|===
+|Field |Type |Description |Visibility
+
+|Title
+|Required
+|Title of the assembly, "General Committee" or "neighborhood city council" for example. 
+|Visible in the card of the assembly on the homepage, the assemblies index, the navigation, and the "Hero image and CTA" landing page block.
+
+|Subtitle
+|Required
+|Subtitle of the assembly.
+|Visible in the "Hero image and CTA" landing page block.
+
+|Order position
+|Required
+|Determines the order of the assembly when displayed in the processes index or homepage.
+|N/A
+
+|URL slug
+|Required
+|URL slugs are used to generate the URLs that point to this process. Only accepts letters, numbers and dashes, and must
+start with a letter.
+|Visible in the URL of the assembly, for example https://example.org/assemblies/city_coucil.
+
+|Hashtag
+|Optional
+|Hashtag redirecting to the X social network.
+|Visible in the "Hero image and CTA" landing page block.
+
+|Short description
+|Required
+|A short explanation of what's your participatory process about.
+|Visible in the "Main data" landing page block.
+
+|Description
+|Required
+|A long explanation of what's your assembly about.
+|Visible in the "Main data" landing page block.
+
+|Purpose of action
+|Optional
+|The explanation of the assembly's goals. 
+|Visible in the "Main data" landing page block.
+
+|Composition
+|Optional
+|Who composes the assembly. 
+|Visible in the "Main data" landing page block.
+
+|Internal organisation
+|Optional
+|How the assembly is organized. 
+|Visible in the "Main data" landing page block.
+
+|Announcement
+|Optional
+|The text you enter here is shown to the user right below the process information.
+|Visible in the "Announcement" landing page block.
+
+|===
+
+== Duration
+
+This section allows to provide information about the assembly important dates. 
+
+image::spaces/assemblies/assemblies_new_form_duration.png[New assembly form duration section]
+
+.New assembly form: Duration
+[cols="20h,10h,~,~"]
+|===
+|Field |Type |Description |Visibility
+
+|Date created
+|Optional
+|When this assembly was created. You have a calendar widget to choose the day. Expected format: dd/mm/yyyy.
+|Visible in the "Dates metadata" landing page block.
+
+|Included at
+|Optional
+|The date when this assembly was added to the instance. It does not necessarily have to be the same as the creation date. Expected format: dd/mm/yyyy.
+|Visible in the "Dates metadata" landing page block.
+
+|Duration
+|Optional
+|If the duration of this assembly is limited, select the end date. Otherwise, it appears as indefinite. Expected format: dd/mm/yyyy.
+|Visible in the "Type and duration" landing page block.
+
+|Closing date
+|Optional
+|When this assembly closed. Expected format: dd/mm/yyyy.
+|Visible in the "Dates metadata" landing page block.
+
+|Closing date reason
+|Optional
+|Why this assembly closed.
+|Not displayed on the landing page. 
+
+|===
+
+== Images
+
+image::spaces/assemblies/assemblies_new_form_images.png[New assembly form images section]
+
+.New assembly form: Images
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Home image
+|Optional
+|Image used in presentation cards of this process. Guidance for file: Has to be an image or a document.
+For images, use preferably landscape images, the service crops the image. Maximum file size: 10 MB
+
+|Banner image
+|Optional
+|Deprecated, isn't used anywhere. Use "Hero image and CTA" content block on the landing page instead. 
+
+|===
+
+== Filters
+
+This section determines the filters available in the assembly, in the different components. 
+Filters can then be enabled and configured in each components. 
+
+image::spaces/assemblies/assemblies_new_form_filters.png[New assembly form filters section]
+
+.New assembly form: Filters
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Scopes enabled
+|Optional
+|Check if you want to have Scopes filtering in this assembly.
+
+|Scope
+|Optional
+|Which xref:admin:scopes.adoc[Scope] does this assembly belongs to.
+
+|Area
+|Optional
+|Which xref:admin:areas.adoc[Area] does this assembly belongs to.
+
+|===
+
+== Metadata
+
+This section allows to provide meta information about the assembly.
+
+image::spaces/assemblies/assemblies_new_form_metadata.png[New assembly form metadata section]
+
+.New assembly form: Metadata
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|What is decided
+|Optional
+|The issue of the assembly, the object of what is decided. 
+
+|How is it decided
+|Optional
+|The decision making process inside the assembly. 
+
+|Scope metadata
+|Optional
+|Metadata on the assembly scope, if it's relevant. 
+
+|Promoter group
+|Optional
+|If a specific group is at the origin of the assembly, like a city direction, an association committee, etc. 
+
+|Organization area
+|Optional
+|The organization domain or category, if it's relevant. 
+
+|Who participates
+|Optional
+|Who are the authorized participants, who can participate to the assembly. 
+
+|===
+
+== Visibility
+
+This section allows administrators to configure the process placement in the different pages and its publicity or no. 
+
+image::spaces/assemblies/assemblies_new_form_visibility.png[New assembly form visibility section]
+
+.New assembly form: Visibility
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Parent assembly
+|Optional
+|To what other assemblies this assembly belongs. Assemblies can be nested inside one another. 
+
+|Highlighted
+|Optional
+|Check if you want the assembly to have more visibility in the Assemblies public list. It's also visible in the "Highlighted 
+Assemblies" Content Block in the xref:admin:homepage.adoc[Homepage] configuration.
+
+|Private space
+|Optional
+|Check if this assembly should only be accessible by xref:admin:spaces/assemblies/private_participants.adoc[Private Participants]. 
+
+|Is transparent
+|Optional
+|Check if this assembly is private but should be visible to all the participants. This means that other participants
+or visitors can see it but they can't participate in it.
+
+|===
+
+== Other
+
+image::spaces/assemblies/assemblies_new_form_other.png[New assembly form other section]
+
+.New assembly form: Other
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Created by
+|Optional
+|Choose "City Council" "Public" or "Other" in case you want to specify the name of the organization that created
+this assembly.
+
+|Assembly type
+|Optional
+|Which xref:admin:spaces/assemblies/types.adoc[Assembly type] is related to this assembly.
+
+|Related participatory processes
+|Optional
+|Select other participatory processes related to this assembly.
+
+|Social
+|Optional
+|Which social networks profile does this assembly has. Can be X, Facebook, Instagram, YouTube, and/or GitHub. 
+
+|===

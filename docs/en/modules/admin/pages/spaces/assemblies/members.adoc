@@ -1,25 +1,38 @@
 = Assembly members
 
-Assembly members allow showing all the people or groups that belong to a given assembly. It's useful for being transparent.
+== Understand the basics
 
-You can see an example in https://meta.decidim.org/assemblies/coordination-committee/members[Decidim Coordination Commitee Assembly in Metadecidim].
+Assembly members allow showing all the participants that belong to a given assembly, whether individuals or groups.
+This is a feature specific to the assemblies space, made for improving transparency of the organization assemblies. 
 
-image:assembly_members.png[Assembly members of the Coordination Committee]
+image::spaces/assemblies/assembly_members.png[Assembly members]
 
-== New assembly member form
+== Manage assembly members
 
-image:assembly_members_list.png[Assembly members admin list]
+To access the assembly members list, click in the secondary navigation panel on the "Members" item.
 
-For creating a new phase of a participatory process:
+image::spaces/assemblies/assembly_members_list.png[Assembly members administration list]
 
-. Sign in as administrator
-. Go to the assemblies section in the sidebar
-. Click on the assembly Edit action
-. Click on the Members link in the sidebar
-. Click on the "New member" button
-. Fill the form
+== Actions
 
-image:assembly_members_new_form.png[Assembly members new form]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Edit icon]
+|Edit
+|To edit this member fields.
+
+|image:icons/action_delete.png[Delete icon]
+|Delete
+|To delete this member.
+
+|===
+
+== Create an assembly member
+
+To create a new assembly member, click the "New assembly member" button in the top right of the page.
+
+image::spaces/assemblies/assembly_members_new_form.png[Assembly members new form]
 
 .New assembly member form
 |===
@@ -27,35 +40,36 @@ image:assembly_members_new_form.png[Assembly members new form]
 
 |Participant type
 |Required
-|Wheter this assembly member is non-participant or existing participant. Do they already have an account created on the platform?
+|Wether this assembly member already has an account on the instance or not.
 
 |Full name
-|Required if it's non-participant.
-|
+|Required.
+|Field displayed if "non participant" was selected. 
+
+|Avatar
+|Optional.
+|Field displayed if "non participant" was selected. 
 
 |User or group
 |Required if it's an existing participant.
-|Type at least three characters to search.
+|Type at least three characters to search for the participant account.
 
 |Position
 |Required
 |Choose one of President, Vice president, Secretary, or Other. In case it's other, you can fill in the position title.
 
-|Weight
+|Order position
 |Optional
-|Which order will it have in relation to the other members. Having a lower number means a higher priority. For instance, if you have two members, "Member a" with weight "10" and "Member b" with weight "0", then "Member b" will be first when ordering.
+|Which order the members has in relation to the other members. Having a lower number means a higher priority. 
+For instance, if you have two members, "Member a" with weight "10" and "Member b" with weight "0" then "Member b" is first when ordering.
 
 |Designation date
 |Required
-|When was this person or group assigned as a member of this assembly. Expected format: dd/mm/yyyy
-
-|Designation mode
-|Optional
-|How was this person designed.
+|When this person or group was assigned as a member of this assembly. Expected format: dd/mm/yyyy.
 
 |Ceased date
 |Optional
-|When was this person or group ceased to be a member of this assembly. Expected format: dd/mm/yyyy
+|When this person or group ceased to be a member of this assembly. Expected format: dd/mm/yyyy.
 
 |Gender
 |Optional
@@ -63,7 +77,7 @@ image:assembly_members_new_form.png[Assembly members new form]
 
 |Birthday
 |Optional
-|When was this person born. Expected format: dd/mm/yyyy
+|When was this person born. Expected format: dd/mm/yyyy.
 
 |Birthplace
 |Optional
