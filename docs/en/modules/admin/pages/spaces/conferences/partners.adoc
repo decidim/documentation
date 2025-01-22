@@ -1,46 +1,61 @@
-# Partners
+= Partners
 
-The partners are the sponsors or supporters of a conference. They are listed on the Conference landing page.
+== Understand the basics
 
-image:spaces/conferences/partners_frontend.png[Conferences partners (frontend)]
+The partners are the sponsors or supporters of a conference. 
+If you add partners in the administration, then they are listed on the Conference landing page.
 
-## Create a new partner
+image:spaces/conferences/partners_frontend.png[Conferences partners frontend]
 
-image:spaces/conferences/partners.png[Conferences partners]
+== Manage partners
 
-For creating a new partner of a conference:
+To access the partners configuration, click in the secondary navigation panel on the "Partners" item. 
 
-. Sign in as administrator
-. Go to the conferences section in the sidebar
-. Click on the conference Edit action
-. Click on the Partners link in the sidebar
-. Click on the "New partner" button
-. Fill the form
+image::spaces/conferences/partners.png[Conferences partners]
 
-image:spaces/conferences/new_partner.png[Conferences partners form]
+=== Actions
+
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Edit icon]
+|Edit
+|To edit this link.
+
+|image:icons/action_delete.png[Delete icon]
+|Delete
+|To delete this link.
+
+|===
+
+== Create a new partner
+
+To create a new partner, click the "New partner" button in the top right of the page. 
+
+image::spaces/conferences/new_partner.png[Conferences partners form]
 
 .New partner form
+[cols="20h,10h,~"]
 |===
 |Field |Type |Description
 
 |Name
 |Required
-|What is the name of this partner.
+|The name of the partner.
 
 |Partner type
 |Required
-|Choose one of these options: Main promotor or Collaborator
+|Choose one of these options: Main promoter or Collaborator. 
 
-|Weight
+|Order position
 |Optional
-|Which order will it have in relation to the other partners. Having a lower number means a higher priority. For instance, if you have two partners, "Partner a" with weight "10" and "Partner b" with weight "0", then "Partner b" will be first when ordering.
+|Which order it has in relation to the other partners. Having a lower number means a higher priority. For instance, if you have two partners, "Partner a" with weight "10" and "Partner b" with weight "0" then "Partner b" is first when ordering.
 
 |Link
-|
-|
+|Optional
+|Link to the partner website, bio, social media, etc. 
 
 |Logo
 |Required
-|Guidance for image: Preferably a landscape image that does not have any text. The service crops the image. Maximum file size: 5MB
-Allowed file extensions: jpg jpeg gif png bmp ico
+|Guidance for image: Preferably a landscape image that does not have any text. The service crops the image. Maximum file size: 5 MB
 |===

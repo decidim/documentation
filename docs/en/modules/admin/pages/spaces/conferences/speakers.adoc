@@ -1,31 +1,57 @@
-# Speakers
+= Speakers
 
-The speakers are people that are going to talk at the conference.
+== Understand the basics
 
-image:spaces/conferences/speakers_frontend.png[Conferences speakers (frontend)]
+The speakers are the persons that are talking at the conference. They can be linked to meetings, so participants can 
+see who is going to speak in each item of the program. 
 
-## Create a new speaker
+image::spaces/conferences/speakers_frontend.png[Conferences speakers frontend]
+
+== Manage speakers
+
+To access the speakers configuration, click in the secondary navigation panel on the "Speakers" item. 
 
 image:spaces/conferences/speakers.png[Conferences speakers]
 
-For creating a new speaker of a conference:
+You can search speakers thanks to the search bar. 
 
-. Sign in as administrator
-. Go to the conferences section in the sidebar
-. Click on the conference Edit action
-. Click on the Speakers link in the sidebar
-. Click on the "New Conference Speaker" button
-. Fill the form
+=== Actions
 
-image:spaces/conferences/new_speaker.png[Conferences speakers]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Edit speaker icon]
+|Edit
+|To edit this speaker.
+
+|image:icons/action_activate.png[Publish speaker icon]
+|Publish
+|To publish this speaker (when not published)
+
+|image:icons/action_unpublish.png[Unpublish speaker icon]
+|Unpublish
+|To unpublish this speaker (when published)
+
+|image:icons/action_delete.png[Delete speaker icon]
+|Delete
+|To delete this speaker.
+
+|===
+
+== Create a new speaker
+
+To create a new speaker, click the "New speaker" button in the top right of the page. 
+
+image::spaces/conferences/new_speaker.png[Conferences speakers]
 
 .New conference speaker form
+[cols="20h,~,~"]
 |===
 |Field |Type |Description
 
 |Participant type
 |Required
-|Wheter this speaker is a non-participant or existing participant. Do they already have an account created on the platform?
+|Wether this speaker is a non-participant or existing participant. Do they already have an account created on the platform?
 
 |Full name
 |Required if it's non-participant.
@@ -37,7 +63,7 @@ image:spaces/conferences/new_speaker.png[Conferences speakers]
 
 |Related meetings
 |Optional
-|Which meetings does this speaker attend and participates actively?
+|The meetings in which the speaker is speaking or facilitating. 
 
 |Position
 |Required
@@ -51,7 +77,7 @@ image:spaces/conferences/new_speaker.png[Conferences speakers]
 |Optional
 |Metadata for showing extra information about the speaker.
 
-|Twitter handle
+|X handle
 |Optional
 |Metadata for showing extra information about the speaker.
 
@@ -60,10 +86,6 @@ image:spaces/conferences/new_speaker.png[Conferences speakers]
 |Metadata for showing extra information about the speaker.
 
 |Avatar
-|Optional
-|Metadata for showing extra information about the speaker.
-
-Default image
 |Optional
 |Avatar image for the speaker. Ignored if the speaker is an "Already registered" participant.
 

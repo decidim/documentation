@@ -1,0 +1,185 @@
+= Conference creation
+
+== Understand the basics
+
+Conferences allows administrators to configure components in the context of an event, in general in articulation with a program. 
+To start creating a conference, when on the conferences list, click the "New conference" button at the top right of the page. 
+
+The conference creation form is divided into different sections that are detailed in the sections below.
+
+Conferences landing page is built by default and is not yet configurable. 
+
+== General information
+
+image::spaces/conferences/conference_new_form_general_info.png[New conference form general info section]
+
+.New conference form: General information
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|The title of this conference.
+
+|Slogan
+|Required
+|A subtitle for this conference.
+
+|Order position
+|Required
+|Determines the order of the conference when displayed in the conferences index or homepage. 
+
+|URL slug
+|Required
+|URL slugs are used to generate the URLs that point to this process. Only accepts letters, numbers and dashes, and must
+start with a letter.
+
+|Hashtag
+|Optional
+|Hashtag redirecting to the X social network.
+
+|Highlighted
+|Optional
+|Check if you want the conference to have more visibility in the conferences public list and the "Highlighted conferences" content block 
+in the xref:admin:homepage.adoc[Homepage] configuration. 
+
+|Short description
+|Required
+|A short explanation of what's the conference about.
+
+|Description
+|Required
+|A long explanation of what's the conference about.
+
+|Objectives
+|Optional
+|The objectives or goals for this conference.
+
+|Location
+|Optional
+|Where the conference takes place.
+
+|===
+
+== Images
+
+image::spaces/conferences/conference_new_form_images.png[New conference form images section]
+
+.New conference form: Images
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Home image
+|Optional
+|Image used in presentation cards of this conference. Guidance for file: Has to be an image or a document.
+For images, use preferably landscape images, the service crops the image. Maximum file size: 10 MB
+
+|Banner image
+|Optional
+|Image used in the header of the conference. Preferably a landscape image that does not have any text. The service crops
+the image. Maximum file size: 10 MB. 
+
+|===
+
+== Filters
+
+This section determines the filters available in the conference, in the different components. 
+Filters can then be enabled and configured in each components. 
+
+image::spaces/conferences/conference_new_form_filters.png[New conference form filters section]
+
+.New conference form: Filters
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Scopes enabled
+|Optional
+|Check if you want to have Scopes filtering in this conference.
+
+|Scope
+|Optional
+|Which xref:admin:scopes.adoc[Scope] does this conference belongs to.
+
+|Show statistics
+|Optional
+|If you want statistics to be displayed on the conference landing page. 
+
+|===
+
+== Duration
+
+This section allows to provide information about the process start and end dates. 
+It can be enabled on the landing page with the "Phase & duration" landing page block. 
+
+image::spaces/conferences/conference_new_form_duration.png[New conference form duration section]
+
+.New participatory process form: Duration
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Start date
+|Optional
+|When this conference starts. You have a calendar widget to choose the day. Expected format: dd/mm/yyyy.
+
+|End date
+|Optional
+|When this conference ends. You have a calendar widget to choose the day. Expected format: dd/mm/yyyy.
+
+|===
+
+== Registrations
+
+This section is allows you to enable registrations and set slots and registration terms for your conference. 
+
+image::spaces/conferences/conference_new_form_registrations.png[New conference form Registrations sections]
+
+.New conference form: Registrations
+|===
+|Field |Type |Description
+
+|Registrations enabled
+|Optional
+|Check if you want to handle registrations on the platform.
+
+|Available slots
+|Optional
+|Leave it to 0 if you have unlimited slots available.
+
+|Registration terms
+|Required if "Registrations enabled" is checked.
+|The terms of service or conditions that a participant must accept for registering to the conference.
+
+|===
+
+== Related spaces
+
+This section allows to create relations between processes, assemblies, and conferences. 
+
+image::spaces/conferences/conferences_new_form_related_processes.png[New conference form Related spaces section]
+
+.New conference form: Related spaces
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Related participatory processes
+|Optional
+|Select participatory processes related to the conference. Use the *CTRL* or *CMD* function to select more than one option.
+
+|Related assemblies
+|Optional
+|Select assemblies related to the conference. Use the *CTRL* or *CMD* function to select more than one option.
+
+|===
+
+== Creating the program
+
+For creating the program of the conference you need to create a new xref:components/meetings.adoc[Meeting component] with the
+dates and times of the different talks, workshops, sessions, etc. After publishing the meetings, the program button 
+is visible in the landing page. 
+
+image::spaces/conferences/program_frontend.png[Conferences program frontend]

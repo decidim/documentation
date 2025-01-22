@@ -1,45 +1,61 @@
-# Media links
+= Media links
 
-Conferences can have a section called "Media and links". It shows a list of media files and links that are associated to the conference.
+== Understand the basics
 
-The media files are the files from the xref:admin:spaces/conferences/attachments.adoc[attachments] sections.
-The media links are defined in a section in the admin panel of the conference.
+Conferences can have a section called "Media links" which shows a list of media files and links 
+that are associated to the conference. It displays in a specific page of the conference: 
 
-image:spaces/conferences/media_links_frontend.png[Conferences media links (frontend)]
+* Related documents and images from the xref:admin:spaces/conferences/attachments.adoc[attachments] section. 
+* Media links from the media links section. 
 
-## Create a new media link
+image:spaces/conferences/media_links_frontend.png[Conferences media links frontend]
 
-image:spaces/conferences/media_links_backend.png[Conferences media links]
+== Manage media links
 
-For creating a new media link of a conference:
+To access the media links configuration, click in the secondary navigation panel on the "Media links" item. 
 
-. Sign in as administrator
-. Go to the conferences section in the sidebar
-. Click on the conference Edit action
-. Click on the "Media links" link in the sidebar
-. Click on the "New Media Link" button
-. Fill the form
+image::spaces/conferences/media_links_backend.png[Conferences media links]
 
-image:spaces/conferences/new_media_link.png[Create a new conferences media link]
+=== Actions
+
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Edit icon]
+|Edit
+|To edit this link.
+
+|image:icons/action_delete.png[Delete icon]
+|Delete
+|To delete this link.
+
+|===
+
+== Create a new media link
+
+To create a new media link, click the "New media link" button in the top right of the page. 
+
+image::spaces/conferences/new_media_link.png[Create a new conferences media link]
 
 .New media link form
+[cols="20h,10h,~"]
 |===
 |Field |Type |Description
 
 |Title
 |Required
-|The title of the link
+|The title of the link.
 
 |Link
 |Required
-|URL of the link
+|URL of the link.
 
 |Date
 |Required
-|Published date of the link
+|Publication date of the link.
 
-|Weight
+|Order position
 |Optional
-|Which order will it have in relation to the other links. Having a lower number means a higher priority. For instance, if you have two links, "Link a" with weight "10" and "Link b" with weight "0", then "Link b" will be first when ordering.
+|Which order it has in relation to the other links. Having a lower number means a higher priority. For instance, if you have two links, "Link a" with weight "10" and "Link b" with weight "0" then "Link b" is first when ordering.
 
 |===
