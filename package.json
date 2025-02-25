@@ -4,6 +4,7 @@
   "scripts": {
     "prebuild": "./bin/playbook-changer.js",
     "build": "antora antora-playbook.yml $@",
+    "lint": "vale --config vale.ini docs/en/modules/admin/",
     "postbuild": "git restore antora-playbook.yml",
     "test": "./bin/test"
   },
@@ -13,6 +14,8 @@
   },
   "dependencies": {
     "@antora/lunr-extension": "^1.0.0-alpha.6",
+    "@ocular-d/vale-bin": "^2.29.6",
+    "asciidoctor": "^3.0.4",
     "asciidoctor-kroki": "^0.17.0",
     "asciidoctor-mathjax": "0.0.5"
   }
