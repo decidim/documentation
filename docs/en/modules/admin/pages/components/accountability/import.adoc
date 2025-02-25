@@ -1,0 +1,58 @@
+= Import results
+
+== Understand the basics
+
+Sometimes, the accountability content is used after an internal process in an organization, such as evaluating the cost of
+participatory budget projects in external files, so it can be useful to import new results and results modifications in a batch. 
+
+For this, you can use the functionalities of exporting and importing results. 
+
+== Export results
+
+You can export results and their comments in different formats by clicking the "Export all" button in the results list: 
+
+* Results as CSV
+* Results as JSON
+* Results as Excel
+* Comments as CSV
+* Comments as JSON
+* Comments as Excel
+
+image::components/accountability/export.png[Import results from CSV form]
+
+== Import results
+
+You can also import results by clicking the "Import" button in the results list in the administration panel. 
+
+image::components/accountability/import.png[Import results from CSV form]
+
+=== Import from a component
+
+You can import results directly from a xref:admin:components/budgets.adoc[Budget] component of the same participatory space, 
+and choose if you want to import all the projects into results or only the one selected for implementation. 
+
+image:components/accountability/import_component.png[Import results from CSV form]
+
+=== Import from a CSV
+
+You can also import results from a CSV file.
+
+image:components/accountability/import_csv.png[Import results from CSV form]
+
+To do this, you should follow these steps:
+
+. Create the xref:admin:components/accountability/statuses.adoc[Statuses] for the Results that you want to add
+. Create at least one xref:admin:components/accountability/results.adoc[Results] manually through this administration panel 
+before doing the import, to have a better understanding of the format and what you'll need to fill out.
+. Download the xref:_export_results[Export with CSV format]
+. Make the changes locally. You can only change the following columns of the CSV:
+** category/id: ID for the result category
+** scope/id: ID for the result scope
+** parent/id: ID of the parent (for related Results). Optional
+** title/en: Title in english language. This depends on your platform language configuration.
+** description/en: Description in english language. This depends on your platform language configuration.
+** start_date: date when the result starts execution (format YYYY-MM-DD)
+** end_date: date when the result ends execution (format YYYY-MM-DD)
+** status/id: ID of the Status for this result
+** progress: Percentage (from 0 to 100) of the execution
+** proposals_ids: internal ID of the related proposals (separated with a comma). It gets automatically converted to proposal_url

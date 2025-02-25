@@ -1,0 +1,45 @@
+= Assemblies types
+
+== Understand the basics
+
+In some cases it is necessary to organize assemblies by more than just children and sub-assemblies. 
+This is where assemblies types can be useful, and add a layer of categorization. 
+Participants are then able to filter assemblies by the assembly types you created. 
+
+NOTE: Assembly types work similarly to xref:admin:spaces/processes/types.adoc[Process types].
+
+== Manage assemblies types
+
+To access the assembly types list, click the "Manage" button on the top right of the page, and click the "Assemblies type" menu item. 
+
+image::spaces/assemblies/assemblies_types_list.png[Backend assemblies types menu item]
+
+== Create an assembly type
+
+Click the "New assembly type" button on the top right of the page. 
+
+image::spaces/assemblies/assemblies_types_form.png[Process type creation form]
+
+.New assembly type form: General information
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|Title of the assembly type.
+
+|===
+
+== Add assembly type to an assembly
+
+To relate assemblies to assembly types, in the edition page of an assembly, select the assembly type under the section labelled Other.
+
+image:spaces/assemblies/assemblies_types_edit_process.png[Choose an assembly type when editing an assembly]
+
+== Filter by assembly types
+
+If there is at least one assembly type defined and related to an assembly, a filter is displayed at the left of the assemblies list 
+in the participant interface, allowing filtering of assemblies.
+
+image::spaces/assemblies/assemblies_types_filter.png[Assemblies types filter in the assemblies index]

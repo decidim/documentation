@@ -1,113 +1,136 @@
 = Answers
 
-Proposals answers allow an administrator or valuator to review a proposal and give it an official response.
+== Understand the basics
 
-image:components/proposals/proposal_answer_state_accepted.png[Proposal answer state: Accepted]
+Proposals answers allow administrators or valuators to review a proposal and give it an official response, with associated statuses.
+It allows then to filter the proposals by their statuses, read the answer that was given, and import the accepted proposals in the
+xref:components/budgets.adoc[budgets] component.
 
-For answering a proposal:
+NOTE: To learn more about valuators, refer to xref:admin:participants/admins.adoc#_valuators[Valuators administrators].
 
-. Sign in as admin or valuator
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Click in the "Proposals" component
-. Search the proposal you want to answer
-. Click in the "Proposal answer" button image:action_answer.png[Answer proposal icon]
-. Fill the form
+image::components/proposals/answers/proposal_answer_state_accepted.png[Proposal answer state: Accepted]
 
-Alternatively, you could also:
+== Answer a proposal
 
-. Sign in as admin or valuator
-. Navigate to the proposal you want to answer
-. Click in the proposal answer button in the header image:components/proposals/answer_button_header.png[Answer proposal button]
-. Fill the form
+For answering a proposal, search for the proposal you want to answer and click in the image:icons/action_answers.png[Answer proposal icon]
+Answer icon.
 
-== Answer page
-
-The answer page has three sections:
+You are then redirected on the answer page, that contains three sections:
 
 === Metadata
 
-It has general information about the proposal, like the link, who is the author, the proposal body, how many supports, endorsements, comments, and so on.
+This section displays the general information about the proposal, like its link, its author, the proposal description, 
+how many votes, likes, or comments it received, etc. 
+
+image::components/proposals/answers/proposal_answer_metadata.png[Proposal answer metadata form]
 
 === Private notes
 
-Allows an administrator or valuator to leave notes that will not be visible to the public.
+The Private notes section allows administrators or valuators to leave internal notes, not visible by the participants.
 
-=== Answer for proposal
+image::components/proposals/answers/proposal_answer_notes.png[Proposal answer private notes form]
 
-Allows an administrator to answer a proposal.
+=== Answer
 
-image:components/proposals/proposal_answer.png[Proposal answer form]
+This section allows administrators or valuators to give an answer and a status to the proposal. 
+
+NOTE: To create proposal answer template and quickly answer different proposals, see the 
+xref:admin:templates/proposal_answers.adoc[Proposal answers] article. 
+
+image::components/proposals/answers/proposal_answer.png[Proposal answer form]
 
 .Answer for proposal form
+[cols="20h,10h,~"]
 |===
 |Field |Type |Description
 
-|Internal state
+|Select a template answer
+|Optional
+|Allows selecting a xref:admin:templates/proposal_answers.adoc[Proposal answers template], to quickly assign a status to the proposal 
+and use the template answer associated.
+
+|Status
 |Required
-|Choose one of the following: Accepted, Rejected, or Evaluating
+|By default, you can choose between: Not answered, Evaluating, Accepted, Rejected. You can edit and add statuses in the proposal 
+management page. 
 
 |Answer
 |Optional
-|An explanation on why the proposal was accepted, rejected, or evaluated
+|An explanation on why the proposal is accepted, rejected, evaluated, or else. 
 
 |Cost
-|Required if "Enable costs on proposal answers" is enabled in the proposals component settings and if it's accepted
-|A number that indicates the cost of the proposal
+|Required
+|Required if "Enable costs on proposal answers" is enabled in the proposals component settings and if the status is accepted.
+A number that indicates the cost of the proposal.
 
 |Cost report
-|Required if "Enable costs on proposal answers" is enabled in the proposals component settings and if it's accepted
-|An explanation of the cost of the proposal
+|Required
+|Required if "Enable costs on proposal answers" is enabled in the proposals component settings and if the status is accepted.
+|An explanation of the cost of the proposal.
 
 |Execution period
-|Required if "Enable costs on proposal answers" is enabled in the proposals component settings and if it's accepted
-|How much time the proposal will take to be executed
+|Required
+|Required if "Enable costs on proposal answers" is enabled in the proposals component settings and if the status is accepted.
+|How much time the proposal takes to be implemented. 
 
 |===
 
-== States
+== Statuses
 
-If the proposals component setting "Publish proposal answers immediately" is checked, then the response of the proposal will be visible to the public immediately.
+If the proposals component setting "Publish proposal answers immediately" is checked, then the answer is visible to the public 
+immediately after you clicked on the "Answer" button. 
 
-The state is visible on the proposal page and card.
+The statuses are visible on the proposals list, cards, and pages. New statuses can be created, and default ones can be edited or deleted. 
 
-image:components/proposals/proposal_answer_state_accepted_card.png[Proposal card answer state: Accepted]
+image::components/proposals/answers/proposal_answer_state_accepted_card.png[Proposal card answer custom status]
 
-=== Evaluating
+Statuses can be adapted to your organization needs by clicking the "Statuses" button in the administration proposal list. 
 
-image:components/proposals/proposal_answer_state_evaluating.png[Proposal answer state: Evaluating]
+image::components/proposals/answers/proposal_statuses_back.png[Proposal statuses list]
 
-=== Accepted
+Click the "New status" button to start creating your custom statuses. 
 
-After proposals have been accepted, they can be imported to the xref:components/budgets.adoc[budgets] component.
+.Answer for proposal form
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
 
-image:components/proposals/proposal_answer_state_accepted.png[Proposal answer state: Accepted]
+|Title
+|Required
+|The status title, displayed on the proposal cards, lists and filters. 
 
-=== Rejected
+|Answer heading
+|Required
+|The heading of the answer, that appears on the proposal page in the answer box. 
 
-image:components/proposals/proposal_answer_state_rejected.png[Proposal answer state: Rejected]
+|Color
+|Required
+|The color of the status box and tag. 
+
+|===
+
+A preview of the answer box and tag is displayed at the bottom of the form.
+
+image::components/proposals/answers/proposal_status_form.png[Proposal new status form]
 
 == Publication
 
-You can control when the answers will be published by using the "Publish proposal answers immediately" checkbox.
+You can control when the answers are published by using the "Publish proposal answers immediately" checkbox in the proposal configuration. 
+For enabling automatic publication, check this box. 
 
-For enabling automatic publication, you'll need to check it.
+If you want to control when to publish the answers of a proposal or multiple proposals, follow these steps:
 
-On the other hand, if you want to control when to publish the answer a proposal or multiple proposals, you'll need to follow these steps:
-
-. Sign in as admin or valuator
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Click in the "Proposals" component
-. Search the proposal you want to answer
-. Click in the left checkbox of the proposal that you want to publish
+. Don't tick the "Publish proposal answers immediately" checkbox in the proposal component configuration
+. Answer the proposals (answers are not published yet)
+. When you want to publish the answers, select the proposals
 . Click on the "Actions" button
 . Click on the "Publish answers" option
-image:components/proposals/proposal_answer_publish.png[Proposal answer publication: action]
-. Click on "Publish" button
-image:components/proposals/proposal_answer_publish_button.png[Proposal answer publication: publish button]
 
-NOTE: If you have unchecked the "Publish proposal answers immediately", answered the proposals and then checked the option again, the answers will not be
-published automatically. You'll still need to publish the answers manually with the "Actions" button.
+image::components/proposals/answers/proposal_answer_publish.png[Proposal answer publication: action]
+
+Then, click the "Publish" button. 
+
+image::components/proposals/answers/proposal_answer_publish_button.png[Proposal answer publication: publish button]
+
+NOTE: If you have unchecked the "Publish proposal answers immediately" then answered the proposals, and then checked the option again, 
+the answers aren't published automatically. You still need to publish the answers manually with the "Actions" button.

@@ -1,55 +1,62 @@
 = Proposals
 
-The Proposals component allows people to create, comment, endorse, and give support to proposals.
+== Understand the basics
 
-From this starting point, there could be other configurations, such as:
+The Proposals component allows people to create, comment, like, and give their votes to proposals. It's one of the main components of
+Decidim, and has a large number of configuration settings.
 
-* how many proposals a participant can create
-* how many supports as a maximum a participant can give to proposals
-* how many supports as a minimum a participant must give to proposals so their supports are valid
-* whether you want to enable that participants comment on proposals
-* whether you want that proposals have images, attachments, WYSIWYG editor, geolocated address, scopes, etc.
+image::components/proposals/example01.png[Proposals example]
 
-Some examples of where this component was used:
+In this documentation section, you can find how to configure and manage all of those settings:
 
-* https://futureu.europa.eu/[Conference of the Future of Europe]
-* https://meta.decidim.org/processes/roadmap/f/122/[Propose new functionalities for Decidim software] in https://meta.decidim.org/[Metadecidim]
+* xref:admin:components/proposals/proposals.adoc[Proposal management]
+* xref:admin:components/proposals/answers.adoc[Answers]
+* xref:admin:components/proposals/special_configurations.adoc[Specific proposals configurations]
+** xref:admin:components/proposals/special_configurations/amendments.adoc[Amendments]
+** xref:admin:components/proposals/special_configurations/collaborative_drafts.adoc[Collaborative drafts]
+** xref:admin:components/proposals/special_configurations/participatory_texts.adoc[Participatory texts]
 
-image:components/proposals/example01.png[Proposals list example in COFE]
-image:components/proposals/example02.png[Proposals list example in Metadecidim]
-image:components/proposals/example03.png[Proposal detail example in Metadecidim]
+== Configuration
 
-To configure the Proposals component:
+To create a Proposals component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it. 
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Go to components
-. Click on "Add component" button
-. Click on "Proposals"
-. Fill the xref:_add_component[Add component] form
+image::components/proposals/component_proposals.png[Add Proposals component button]
 
-== Add component
+Then:
 
-image:components/proposals/component.png[Add component form]
+. Click on the "Components" item in the secondary menu
+. Click the "Add component" button
+. Select "Proposals"
+. Fill the component creation form
+
+You can still update this form and the configuration after creating the component, by clicking the 
+image:icons/action_configure.png[Configure icon] Configure icon in the components list. 
+
+The component creation form is divided into different sections detailed below.
+
+image::components/proposals/component_01.png[Add component form]
 
 .Add component: Proposals form
+[cols="20h,10h,~"]
 |===
 |Field |Type |Description
 
 |Name
 |Required
-|What is the title of this component. For instance, "Proposals"
+|The title of this component.
 
 |Order position
 |Optional
-|Which order will it have in relation to the other components. Having a lower number means a higher priority.
-For instance, if you have two components, "Proposals" with weight "10" and "Meetings" with weight "0", then "Meetings" will be first when ordering.
+|The order of the component in relation with the other components. Having a lower number means a higher priority. 
+For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0" 
+then "component b" is first when ordering.
 
 |===
 
+image::components/proposals/component_02.png[Add component form]
+
 .Add component: Proposals form - Global settings
+[cols="20h,10h,~"]
 |===
 |Field |Type |Description
 
@@ -57,22 +64,25 @@ For instance, if you have two components, "Proposals" with weight "10" and "Meet
 |Optional
 |Check if you want to have Scopes filtering in this component.
 
+|Scopes enabled
+|Optional
+|Check if you want to have Scopes filtering available in this component.
+
 |Scope
 |Optional
-|Which xref:admin:scopes.adoc[Scope] does this component belongs to.
+|Which xref:admin:settings/scopes.adoc[Scope] does this component belongs to.
 
-|Support limit per participant
+|Vote limit per participant
 |Optional
-|Must be a number. How much supports a participant can give to proposals.
+|Must be a number. The maximum number of votes a participant can give to proposals.
 
-|Minimum supports per user
+|Minimum votes per user
 |Optional
-|Must be a number. How many supports does a participant needs to give to proposals so their supports are counted. If they don't
-reach this number, their supports will not be taken in account.
+|Must be a number. The minimum number of votes a participant needs to give to proposals so their votes are taken into account. 
 
 |Proposal limit per participant
 |Optional
-|Must be a number. How many proposals a participant can create.
+|Must be a number. How many proposals a participant can create in this component. 
 
 |Maximum proposal body length
 |Optional
@@ -80,365 +90,170 @@ reach this number, their supports will not be taken in account.
 
 |Proposal editing
 |Required
-|Choose one of these two options: "Allow editing of proposals within a specific timeframe" or "Allow editing proposals
-for an infinite amount of time". In case it's within a specific timeframe, you must specify the time in "Proposals can be
-edited by authors before this many minutes passes". Note that if you xref:components/proposals/answers.adoc[answer a proposal]
-then it can't be edited anymore.
+|Choose if participants have a limited time to edit their proposals, or can edit them without limit. 
+In case it's within a specific time frame, you must specify the time in the field below. 
+Note that if an administrator xref:components/proposals/answers.adoc[answers a proposal] then it can't be edited anymore.
 
 |Proposals can be edited by authors before this many minutes passes
-|Required if "Proposal editing" is "Allow editing of proposals within a specific timeframe"
+|Required
 |Must be a number. How many minutes after the creation of a proposal it can be edited by its author.
 
 |Threshold per proposal
 |Optional
-|Must be a number. How many supports a proposal needs to have to be considered as "validated". See <<setting-threshold,screenshots>>.
+|Must be a number. How many votes a proposal needs to have to be considered as accepted.
 
-|Can accumulate supports beyond threshold
-|Optional. Only applies if "Threshold per proposal" is configured.
-|Whether the proposal can accumulate more supports than the threshold.
+|Can accumulate votes beyond threshold
+|Optional.
+|Whether the proposal can accumulate more votes than the threshold.
 
 |Proposal answering enabled
 |Optional
 |Whether administrators or valuators can answer proposals.
 
+|Default proposal sorting
+|Optional
+|The sorting order of the proposals in the proposals list. Automatic means that if the votes are enabled, the proposals are 
+shown sorted by random, and if the votes are blocked, then they are sorted by the most voted.
+
 |Official proposals enabled
 |Optional
-|Wheter administrators can create official proposals.
+|Whether administrators can create official proposals from the administration panel.
 
 |Comments enabled
 |Optional
-|Whether you want to have comments in the meetings.
+|Whether you want to enable participants to comment the proposals.
 
 |Comments max length
 |Optional
-|What are the characters limit that participants will have when making comments. Leave 0 for the default value.
+|The characters limit that participants have when making comments. Leave 0 for default value.
 
 |Geocoding enabled
 |Optional
-|Wheter participants can define a geocoding address for their proposals. Need to have xref:configure:geocoding[Geocoding] enabled.  See <<setting-geocoding,screenshots>>.
+|Whether participants can define a geocoding address for their proposals. 
+You need to have xref:configure:geocoding[Geocoding] enabled.
 
 |Allow attachments
 |Optional
-|Check to allow participants to attach files to their proposals.
-
-|Allow card image
-|Optional
-|Check to show a card image when participants attach images to their proposals. See <<setting-card-image,screenshots>>.
+|Check to allow participants to attach files to their proposals. By enabling this option, proposals are by default in grid mode, 
+and the first image appears on the card.
 
 |Actions permissions can be set for each proposal
 |Optional
-|Whether you want to be able to set permissions for every one of the proposals. Most of the time you will want to leave this option disabled.
+|Whether you want to be able to set permissions for every proposals. 
 
 |Collaborative drafts enabled
 |Optional
-|Check to enable xref:components/proposals/collaborative_drafts.adoc[collaborative drafts] in proposals.
+|Check to enable xref:components/proposals/special_configurations/collaborative_drafts.adoc[collaborative drafts] in proposals.
 
 |Participatory texts enabled
 |Optional
-|Check to enable xref:components/proposals/participatory_texts.adoc[participatory texts] in proposals.
+|Check to enable xref:components/proposals/special_configurations/participatory_texts.adoc[participatory texts] in proposals.
 
 |Amendments enabled
 |Optional
-|Check to enable xref:components/proposals/amendments.adoc[amendments] in proposals. If active, configure Amendment features for each step.
+|Check to enable xref:components/proposals/special_configurations/amendments.adoc[amendments] in proposals. 
+If active, configure Amendment settings for each step.
 
 |Amendments Wizard help text
-|Optional. Visible if the "Amendments enabled" option is checked.
-|What's the help text visible when creating new amendments.
+|Optional.
+|The help text visible when creating new amendments.
 
 |Announcement
 |Optional
-|A general announcement that'll be visible on the general proposals landing page.
+|A general announcement visible on the proposals list page. 
 
 |New proposal body template
 |Optional
-|A pre-defined text that will be used when creating new proposals. Useful if you want to define a format that participants need to
+|A pre-defined text used when creating new proposals. Useful if you want to define a format that participants need to
 follow when creating new proposals.
 
 |New proposal help text
 |Optional
-|What's the help text visible when creating new proposals.
+|The help text visible when creating new proposals.
 
 |Proposal wizard "Create" step help text
 |Optional
-|What's the help text visible when creating new proposals in the "Create" step.
-
-|Proposal wizard "Compare" step help text
-|Optional
-|What's the help text visible when creating new proposals in the "Compare" step.
-
-|Proposal wizard "Complete" step help text
-|Optional
-|What's the help text visible when creating new proposals in the "Complete" step.
+|The help text visible when creating new proposals in the "Create" step.
 
 |Proposal wizard "Publish" step help text
 |Optional
-|What's the help text visible when creating new proposals in the "Publish" step.
+|The help text visible when creating new proposals in the "Publish" step.
 
 |===
-
-[#setting-threshold]
-*Example of threshold setting*
-
-image::components/proposals/setting_threshold01.png[Example of threshold setting]
-image::components/proposals/setting_threshold02.png[Example of threshold setting]
-
-[#setting-card-image]
-*Example of card image setting*
-
-image::components/proposals/setting_card_image.png[Example of card image setting]
-
-[#setting-geocoding]
-*Example of geocoding setting*
-
-image::components/proposals/setting_geocoding.png[Example of geocoding setting]
 
 ---
 
-In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
-xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
+image::components/proposals/component_03.png[Add component form]
 
 .Add component: Proposals form - Step settings
+[cols="20h,10h,~"]
 |===
 |Field |Type |Description
 
-|Announcement
-|Optional
-|A general announcement that'll be visible on the general proposal landing page.
-
 |Endorsements enabled
 |Optional
-|Check if you want that participants show public support for these proposals.
+|To enable participants to show public support for these proposals, with a "Like" button.
 
 |Endorsements blocked
 |Optional
-|Whether participants will be able to see the endorsments but don't make any.
+|Check for participants to be able to see the existing endorsements but not make any new one. 
 
-|Supports enabled
+|Votes enabled
 |Optional
-|Whether participants will be able to support proposals in this step.
+|To enable participants to vote for proposals in this phase.
 
-|Supports blocked
+|Votes blocked
 |Optional
-|Whether participants will be able to support proposals in this step.
+|Check for participants to be able to see the existing votes but not make any new one. 
 
-|Supports hidden
+|Votes hidden
 |Optional
-|If supports are enabled, checking this will hide the number of supports.
+|If votes are enabled, checking this hides the number of votes to participants.
 
 |Comments blocked
 |Optional
 |Whether you want to enable comments for this phase.
 
-|Proposal creation enabled
+|Participants can create proposals
 |Optional
-|Whether you want to enable proposal creation by participants for this phase. See xref:_new_proposal_form[New proposal form]
+|Whether you want to enable proposal creation by participants for this phase.
 
 |Proposal answering enabled
 |Optional
-|Whether you want to enable xref:components/proposals/answers.adoc[proposal answering].
+|Whether you want to enable xref:components/proposals/answers.adoc[proposal answering] by administrators.
 
 |Publish proposal answers immediately
 |Optional
-|Wheter you want that the answers of proposals are published at the same time that you're xref:components/proposals/answers.adoc[answering] them or you want to control when to publish the answers.
+|Whether you want that the answers of proposals are published directly when administrators are
+xref:components/proposals/answers.adoc[answering] them or you want to control when to publish the answers.
 
 |Enable costs on proposal answers
 |Optional
-|Wheter you want to add economical costs to proposal answers. Useful for importing to xref:components/budgets.adoc[budgets].
+|Whether you want to add economical costs to proposal answers. Useful for importing proposals to xref:components/budgets.adoc[budgets].
 
-|Amendment creation enabled
-|Optional. Visible if "Amendments enabled" option is checked.
-|Participant can amend proposals. See xref:components/proposals/amendments.adoc[Amendments].
-
-|Amendment reaction enabled
-|Optional. Visible if "Amendments enabled" option is checked.
-|Proposal's authors will be able to accept or reject Participant's emendations.
-
-|Amendment promotion enabled
-|Optional. Visible if "Amendments enabled" option is checked.
-|Emandation authors will be able to promote to Proposal the rejected emendation.
-
-|Amendments visibility
-|Required. Visible if "Amendments enabled" option is checked.
-|Choose one of "Amendments are visible to all" or "Amendments are visible only to their authors"
+|Default proposal sorting
+|Optional
+|The sorting order of the proposals in the proposals list for this phase. Automatic means that if the votes are enabled, the proposals 
+are shown sorted by random, and if the votes are blocked, then they are sorted by the most voted.
 
 |Announcement
 |Optional
-|A general announcement that'll be visible on the general proposals landing page.
+|A general announcement visible on the proposals list page for this phase.
 
 |Hashtags added to all proposals
 |Optional
-|Automatically add a hashtag to every proposal. See <<setting-hashtags,screenshots>>.
+|Automatically add hashtags to every proposal.
 
 |Hashtags suggested to participants for new proposals
 |Optional
-|Suggest hashtags to participants for new proposals. Participants can select more than one hashtag. See <<setting-hashtags,screenshots>>.
+|Suggest hashtags to participants creating new proposals. Participants can select more than one hashtag. 
 
 |===
 
-[#setting-hashtags]
-*Example of hashtags setting*
+== Examples
 
-image::components/proposals/setting_hashtag.png[Example of hashtag setting]
+Some examples of where this component was used:
 
-== Permissions
-
-An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
-certain actions in the proposals:
-
-* Endorse
-* Support
-* Create
-* Withdraw
-* Amend
-* Comment
-* Vote comment
-
-== Manage proposals
-
-image:components/proposals/manage_proposals.png[Manage proposals table]
-
-=== Export
-
-Allows exporting the proposals in different formats.
-
-* Proposals as CSV
-* Proposals as JSON
-* Proposals as Excel
-* Comments as CSV
-* Comments as JSON
-* Comments as Excel
-
-=== Import
-
-* Import from another component
-* Import from a file
-
-=== New proposal form
-
-==== Citizens proposals
-
-image:components/proposals/new_proposal_frontend.png[New proposal form]
-
-Proposals can be created by participants if the setting is "Proposal creation enabled" is checked for the active phase.
-
-If a participant belongs to a xref:admin:participants/groups.adoc[user group], then they will be able to create proposals as that group also.
-
-This form depends a lot in which settings you've enabled in this component. It can be really short (with only a Title and
-Body by default) or very long (Title, Body, Hashtags, Address, Scope, Category, Image and Attachment).
-
-.New proposal form - default (by a participant)
-|===
-|Field |Type |Description
-
-|Title
-|Required
-|What is the title of this proposal. For instance, "Bike lane in Main Street". Must have at least 15 characters as minimum
-and 150 characters as maximum. Must start with a capital letter.
-
-|Body
-|Optional
-|What is the full description for this proposal. Must have at least 15 characters as minimum and 450 characters as maximum
-by default but can be changed with the setting "Maximum proposal body length".
-
-|===
-
-To detect duplicated proposals before publishing them, the proposal creation has a wizard form with multiple steps. This also
-allows participants to save proposals drafts (unpublished) in case they need to fill too many fields.
-
-image:components/proposals/new_proposal_frontend_compare.png[New proposal form (by a participant) - Compare]
-
-As an example of what the form could look depending in the settings enabled, here's a screenshot of the form for a proposal
-with the following settings: "Hashtags added to all proposals", "Hashtags suggested to participants for new proposals",
-"Geocoding enabled", "Allow attachments", "Allow card image" and "Scopes enabled".
-
-image:components/proposals/new_proposal_frontend_complete.png[New proposal form (by a participant) - Complete]
-
-After completing these fields the participant can see a preview of their proposal before publishing. They can also modify
-the proposal before publishing it.
-
-image:components/proposals/new_proposal_frontend_publish.png[New proposal form (by a participant) - Publish]
-
-image:components/proposals/new_proposal_frontend_published.png[Published proposal made by a participant]
-
-==== Official proposals
-
-Administrators can create official proposals. There will be a filter to show only official proposals in the proposals navigation page.
-
-image:components/proposals/new_proposal_backend01.png[New proposal form - default (official proposals)]
-
-.New proposal form - default (official proposals)
-|===
-|Field |Type |Description
-
-|Title
-|Required
-|What is the title of this proposal. For instance, "Bike lane in Main Street". Must have at least 15 characters as minimum
-and 150 characters as maximum. Must start with a capital letter.
-
-|Body
-|Optional
-|What is the full description of this proposal. Must have at least 15 characters as minimum and 450 characters as maximum
-by default but can be changed with the setting "Maximum proposal body length".
-
-|This proposal comes from a meeting
-|Optional
-|Check if this proposal comes from a meeting.
-
-|Select a meeting
-|Required if the "This proposal comes from a meeting" checkbox is checked
-|Dropdown selector with all the meetings of this space. The author of the proposal will be the meeting.
-
-|===
-
-As an example of what the form could look like depending on the settings enabled, here's a screenshot of the form for a proposal
-with the following settings: "Hashtags added to all proposals", "Hashtags suggested to participants for new proposals",
-"Geocoding enabled", "Allow attachments", "Allow card image" and "Scopes enabled".
-
-image:components/proposals/new_proposal_backend02.png[New proposal form - with multiple settings (official proposals)]
-
-==== Actions
-
-.Actions
-|===
-|Icon |Name |Definition
-
-|image:action_edit.png[Edit icon]
-|Edit
-|Edit form for a proposal. It's the same form as "New proposal". Only visible when the proposal is an xref:_official_proposals["Official proposal"].
-
-|image:action_answer.png[Answer proposal icon]
-|xref:components/proposals/answers.adoc[Answer proposal]
-|Allows you to answer a proposal.
-
-|image:action_permissions.png[Permissions icon]
-|Permissions
-|
-
-|image:action_preview.png[Preview icon]
-|Preview
-|To see how it's shown in the frontend to participants.
-
-|===
-
-== Origin filter
-
-When navigating in the proposals listing, you can filter the proposals by origin.
-
-image:components/proposals/origin_filter.png[Proposals origin filter]
-
-There are five origin options:
-
-* All: select all the origins
-* xref:_official_proposals[Official]: proposals created by administrators
-* xref:_citizens_proposals[Citizens]: proposals created by participants
-* Groups: proposals created by participants that belong to a user group and choose that option when creating the proposal
-* Meetings: proposals created by administrators that have checked this option when creating the proposal
-
-== Proposal types and mechanisms
-
-There are different kind of proposals mechanisms that can be enabled in proposals, such as:
-
-* xref:admin:components/proposals/amendments.adoc[Amendments]
-* xref:admin:components/proposals/answers.adoc[Answers]
-* xref:admin:components/proposals/collaborative_drafts.adoc[Collaborative drafts]
-* xref:admin:components/proposals/participatory_texts.adoc[Participatory texts]
+* https://www.decidim.barcelona/assemblies/accionssostenibilitat/f/6259/proposals[Sustainable actions in Barcelona City 2024]
+* https://futureu.europa.eu/[Conference of the Future of Europe]
+* https://meta.decidim.org/processes/roadmap/f/122/[Propose new functionalities for Decidim software]

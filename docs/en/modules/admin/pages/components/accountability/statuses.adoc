@@ -1,0 +1,42 @@
+= Statuses
+
+== Understand the basics
+
+Statuses allow to create progress states for results. Once you created statuses, you are able to make your results evolve 
+according to their implementation evolution. It also allows to give results progress percentages, ranging from 0 to 100%.
+
+== Configuration
+
+To create Statuses, click the "Statuses" button on the top right of the results list.
+
+image::components/accountability/statuses_button.png[Statuses button]
+
+There, you can create and manage the different statuses for the results.
+
+image::components/accountability/statuses_list.png[Statuses list]
+
+Click on the "New status" button to start creating statuses. 
+
+image:components/accountability/new_status.png[New status form]
+
+.New status form
+|===
+|Field |Type |Description
+
+|Key
+|Required
+|Used as the unique identifier for the xref:admin:components/accountability/import.adoc[CSV Import].
+
+|Name
+|Required
+|Name for this status.
+
+|Description
+|Optional
+|Description for this status.
+
+|Progress
+|Optional
+|Number with percentage (from 0 to 100) of the progress.
+
+|===
