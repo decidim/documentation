@@ -2,11 +2,11 @@
 
 == Understand the basics
 
-The Blog component allows administrators to post news about a participatory space, that participants can read to get updates. 
+The Blog component allows administrators to post news about a participatory space, which participants can read to get updates. 
 
 image::components/blog/example01.png[Example of blog posts list]
 
-All blog posts are available in the posts list, and participants can click each blog post to learn more about what's new. 
+All blog posts are available on the post list, and participants can click each blog post to learn more about what's new. 
 
 image::components/blog/example02.png[Example of a blog post]
 
@@ -24,7 +24,7 @@ Then:
 . Fill the component creation form
 
 You can still update this form and the configuration after creating the component, by clicking the 
-image:icons/action_configure.png[Configure icon] icon in the components list. 
+image:icons/action_configure.png[Configure icon] icon on the components list. 
 
 image::components/blog/component.png[Add component form]
 
@@ -54,7 +54,7 @@ image::components/blog/component.png[Add component form]
 
 |Comments enabled
 |Optional
-|Whether you want participants to be able to comment on the blog posts.
+|If you want participants to be able to comment on the blog posts.
 
 |Comments max length
 |Optional
@@ -69,7 +69,7 @@ image::components/blog/component.png[Add component form]
 
 |Announcement
 |Optional
-|A general announcement that'll be visible on the general blog landing page.
+|A general announcement that will be visible on the general blog landing page.
 
 |Comments blocked
 |Optional
@@ -87,7 +87,7 @@ image::components/blog/component.png[Add component form]
 
 == Manage posts
 
-To start creating and managing posts, click in the component title in the navigation bar or in the component list, or click in the 
+To start creating and managing posts, click on the component title in the navigation bar or on the component list, or click on the 
 image:icons/action_edit.png[Manage component icon] icon on the components list.
 
 image:components/blog/manage_posts.png[Manage posts table]
@@ -130,7 +130,7 @@ image:components/blog/new_post.png[New post form]
 
 |image:icons/action_edit.png[Edit icon]
 |Edit
-|To edit this post.
+|Edit this post.
 
 |image:icons/action_folder.png[Folder icon]
 |Folder
@@ -138,25 +138,25 @@ image:components/blog/new_post.png[New post form]
 
 |image:icons/action_attachments.png[Attachments icon]
 |Attachments
-|To add documents related to the post.
+|Add documents related to the post.
 
 |image:icons/action_preview.png[Preview icon]
 |Preview
-|To see how it's shown in the frontend to participants.
+|See how it's shown in the frontend to participants.
 
 |image:icons/action_permissions.png[Permissions icon]
 |Permissions
-|To handle the authorizations needed to comment or endorse this specific blog post.
+|Handle the authorizations needed to comment or endorse this specific blog post.
 
 |image:icons/action_delete.png[Delete icon]
 |Delete
-|To delete this post.
+|Delete this post.
 
 |===
 
 == Examples
 
-Below, you can find some links to examples blog components:
+Below, you can find some links to example blog components:
 
 * https://meta.decidim.org/processes/news/f/1719/posts[Latest news of the Decidim association]
 * https://www.decidim.barcelona/processes/volem-decidir/f/6338/posts[News on a participatory process in Barcelona]
