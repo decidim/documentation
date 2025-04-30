@@ -12,9 +12,11 @@ and contributions there were, and what proposals were discussed.
 
 image::components/meetings/close/frontend.png[Close report in the frontend]
 
-== Close a meeting
+== Configuration
 
-=== Official meetings
+=== Close a meeting
+
+==== Official meetings
 
 To close a meeting as an administrator, click the image:icons/action_close.png[Close button] "Close" icon. 
 
@@ -59,7 +61,7 @@ image::components/meetings/close/form_backend.png[Close meeting form in the back
 
 |===
 
-=== Citizens meetings
+==== Citizens meetings
 
 Just like participants can create meetings, they can also close a meeting. They have fewer fields to fill than administrators.
 
@@ -89,7 +91,7 @@ image::components/meetings/close/form_frontend.png[Close meeting form in the fro
 
 |===
 
-== Related proposals
+=== Related proposals
 
 If you link a proposal to a meeting when closing it, the meeting also appears in the proposal page. 
 
