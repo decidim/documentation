@@ -1,6 +1,6 @@
 = Ephemeral verifications
 
-## Introduction
+## Understand the basics
 
 In Decidim, there are mainly two types of participants:
 
@@ -9,11 +9,11 @@ In Decidim, there are mainly two types of participants:
 
 For one-time participants, the registration and verification process can be a barrier, leading to incomplete participation. To address this, Decidim introduces the Ephemeral Verification Method, allowing users to verify their identity and participate without registering an account.
 
-## Purpose
+### Purpose
 
 The Ephemeral Verification Method is designed to streamline participation for one-time users by enabling direct verification without requiring account creation. **This feature is intended for limited durations** **during a specific participatory process**, such as a voting phase of participatory budgeting.
 
-## How it works?
+### How it works?
 
 This functionality allows participants to participate without registering on the platform, simply by verifying their identity with the system chosen by the organisation. The key features are:
 
@@ -27,7 +27,7 @@ This functionality allows participants to participate without registering on the
 
 ## Configuration
 
-To enable Ephemeral Verification, follow these steps:
+To enable Ephemeral Verification you need to follow these steps:
 
 1. Access to the system panel.
 2. Enable the ephemeral-verification method.
@@ -37,7 +37,7 @@ To enable Ephemeral Verification, follow these steps:
 6. Confirm the action, which will revoke all current verifications.
 7. Great! You have enabled the ephemeral verification for a specific component.
 
-## Workflows and edge-cases
+## Examples
 
 To better understand how this feature works, we explain the diferents flows and edge-cases as follows:
 
@@ -49,8 +49,6 @@ To better understand how this feature works, we explain the diferents flows and 
 4. Then, a temporary session is open
 5. And I gain access to the restricted action
 6. When I completed the task (i.e. voting in a participatory budget). Then I can quit the focus mode and the temporary session will be closed.
-    
-    
 
 ### Flow 2) Registered participant with logged-in session:
 
@@ -60,7 +58,7 @@ To better understand how this feature works, we explain the diferents flows and 
 4. Then I gain access to the restricted action
 5. Then, the verification is saved in my profile
 
-## Edge cases
+### Edge cases
 
 ### Flow 3) Preventing Verification Conflicts
 
