@@ -23,7 +23,7 @@ for instance a Participatory Budgeting process.
 
 == Configuration
 
-To access the Newsletters panel, go in the administration panel and click the "Newsletters" item in the administration navigation bar.
+To access the Newsletters panel, go to the administration panel and click the "Newsletters" item in the administration navigation bar.
 
 image::features/newsletters/newsletter_menu.png[Newsletter administrator menu]
 
@@ -50,7 +50,7 @@ Click the "Use this template" button below the template you want to use.
 
 === Write the newsletter
 
-Depending in which template you've chosen, you have to fill a form with different fields. 
+Depending on which template you've chosen, you have to fill a form with different fields. 
 
 NOTE: You can use "%\{name}" anywhere in the body or subject to be automatically replaced by the participant's name.
 
@@ -104,7 +104,7 @@ Allowed file extensions: JPG JPEG PNG WEBP
 
 |===
 
-Once you wrote the newsletter, click the "Save and preview" button. 
+Once you have written the newsletter, click the "Save and preview" button. 
 
 === Preview the newsletter
 
@@ -116,11 +116,11 @@ image::features/newsletters/newsletter_preview_basic_example.png[Newsletter new 
 === Send a test email
 
 If you want to review the newsletter directly in your mailbox, click the "Send me a test email" button at the top right of the page. 
-You receive the newsletter directly at the email address registered for your participant account. 
+You will receive the newsletter directly on the email address registered for your participant account. 
 
 === Select recipients to deliver
 
-If you want to only communicate about a given space or neighborhood, you can choose the which participants you're sending the newsletter to. 
+If you want to only communicate about a given space or neighborhood, you can choose which participants you're sending the newsletter to. 
 To do so, click the "Select recipients to deliver" button. 
 
 NOTE: If you don't want to send your newsletter to a specific segment, select "Send to all users"
@@ -128,11 +128,11 @@ NOTE: If you don't want to send your newsletter to a specific segment, select "S
 There, you can choose between sending the newsletter to:
 
 * All confirmed users
-* All confirmed users that have participated in any of the selected participatory spaces in the list
-* All confirmed users that have followed any of the selected participatory spaces in the list
-* All the participants that have selected an scope in their "My interests" settings in their account.
+* All confirmed users that have participated in any of the selected participatory spaces on the list
+* All confirmed users that have followed any of the selected participatory spaces on the list
+* All the participants that have selected an scope in their "My interests" settings on their account.
 
-NOTE: Even if a participant has a confirmed account and is following a space, the system don't send them a newsletter email if they
+NOTE: Even if a participant has a confirmed account and is following a space, the system won't send them a newsletter email if they
 haven't accepted it in their xref:admin:features/participant_actions/my_account#_notifications_settings.adoc[notifications] settings.
 
 image::features/newsletters/newsletter_select_recipients.png[Newsletter select recipients]
@@ -149,7 +149,7 @@ Before sending it, a pop-up appears to make sure you reviewed everything and are
 
 image::features/newsletters/newsletter_deliver_modal.png[Newsletter deliver modal]
 
-NOTE: Once a newsletter is sent it can't be undone nor edited. If you have multiple languages active, 
+NOTE: Once a newsletter is sent it can't be undone or edited. If you have multiple languages active, 
 be careful with reviewing all the languages well before sending.
 
 == Manage newsletters
