@@ -1,52 +1,49 @@
-= Debate
+= Debates
 
-The Debate component allows people to have discussions, without voting nor prioritzation. It also allows to close them,
+== Understand the basics
+
+The Debate component allows people to have discussions, without voting nor prioritization. It also allows to close debates,
 by adding conclusions or a summary of what the discussion was about.
 
-From this starting point, there could be other configurations, such as:
+image::components/debates/example01.png[Debates listing example]
 
-* To allow debates creation by participants
-* To have debates with a fixed started and ending date or open
-* To show endorsements (public supports) or not
+== Configuration
 
-Some examples of where this component was used:
+To create a Debate component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it. 
 
-* https://meta.decidim.org/processes/roadmap/f/219/[Propose new functionalities for Decidim software in Metadecidim]
+image::components/debates/component_debate.png[Add Debate component button]
 
-image:components/debates/example01.png[Debates listing example]
-image:components/debates/example02.png[Debate example]
+Then:
 
-To configure the Debate component:
+. Click on the "Components" item in the secondary menu
+. Click the "Add component" button
+. Select "Debate"
+. Fill the component creation form
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies" or "Conferences".
-. Go to components
-. Click on "Add component" button
-. Click on "Debate"
-. Fill the xref:_add_component[Add component] form
+You can still update this form and the configuration after creating the component, by clicking the 
+image:icons/action_configure.png[Configure icon] Configure icon in the components list. 
 
-== Add component
-
-image:components/debates/component.png[Add component form]
+image::components/debates/component.png[Add component form]
 
 .Add component: Debate form
+[cols="20h,10h,~"]
 |===
 |Field |Type |Description
 
 |Name
 |Required
-|What is the title of this component. For instance, "Debates"
+|The title of this component.
 
 |Order position
 |Optional
-|Which order will it have in relation to the other debates. Having a lower number means a higher priority.
-For instance, if you have two debates, "Debate a" with weight "10" and "Debate b" with weight "0", then "Debate b" will be first when ordering.
+|The order of the component in relation with the other components. Having a lower number means a higher priority. 
+For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0" 
+then "component b" is first when ordering.
 
 |===
 
-.Add component: Debate form - Global settings
+.Debate form - Global settings
+[cols="20h,10h,~"]
 |===
 |Field |Type |Description
 
@@ -56,19 +53,15 @@ For instance, if you have two debates, "Debate a" with weight "10" and "Debate b
 
 |Scope
 |Optional
-|Which xref:admin:scopes.adoc[Scope] does this component belongs to.
-
-|Global scope
-|Optional
-|
+|Which xref:admin:settings/scopes.adoc[Scopes] does this component belongs to.
 
 |Comments enabled
 |Optional
-|Whether you want to have comments in the meetings.
+|Whether you want to have comments in the debates.
 
 |Comments max length
 |Optional
-|What is the characters limit that participants will have when making comments. Leave 0 for default value.
+|The characters limit that participants have when making comments. Leave 0 for default value.
 
 |Announcement
 |Optional
@@ -76,24 +69,22 @@ For instance, if you have two debates, "Debate a" with weight "10" and "Debate b
 
 |===
 
-In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
-xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
-
 .Add component: Debates form - Step settings
+[cols="20h,10h,~"]
 |===
 |Field |Type |Description
 
 |Endorsements enabled
 |Optional
-|Check if you want that participants show public support for these debates.
+|Check if you want to enable participants to show public support for debates.
 
 |Endorsements blocked
 |Optional
-|
+|Check for participants to be able to see the existing endorsements but not make any new one. 
 
-|Debate creation by participants enabled
+|Participants can create debates
 |Optional
-|Check if you want to allow the creation of new debates by participants.
+|Check if you want to allow the creation of new debates by participants during this phase.
 
 |Comments blocked
 |Optional
@@ -105,54 +96,35 @@ xref:admin:spaces/processes.adoc[Participatory Processes], then you can also def
 
 |===
 
-== Permissions
+== Create a debate
 
-An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
-certain actions in the debates:
-
-* Create
-* Endorse
-
-== Manage debates
-
-image:components/debates/manage_debates.png[Manage debates table]
-
-=== Export all
-
-Allows exporting the comments in the debates in different formats.
-
-* Comments as CSV
-* Comments as JSON
-* Comments as Excel
-
-=== New debate form
-
-image:components/debates/new_debate_backend.png[New debate backend form]
+image::components/debates/new_debate_backend.png[New debate backend form]
 
 .New debate form
+[cols="20h,10h,~"]
 |===
 |Field |Type |Description
 
 |Title
 |Required
-|What is the title of this debate. For instance, "How can we improve this process?"
+|The title of this debate.
 
 |Description
 |Required
-|What is the description of this debate.
+|The description of this debate.
 
 |Instructions to participate
 |Required
-|Add a message for the participants.
+|Add a message for the participants, displayed on the debate page in an information box.
 
 |Information updates
 |Optional
-|Add a message for the participants.
+|Add a message for the participants, displayed on the debate page in an information box.
 
 |xref:_debate_types[Debate type]
 |Required
 |Choose between Finite and Open. Finite means that the debate has a starting and ending date and time, Open means that
-there isn't any timeframe.
+there isn't any time frame.
 
 |Starts at
 |Required if the debate type is Finite
@@ -166,56 +138,83 @@ there isn't any timeframe.
 |Optional
 |Which category has the debate. Used for filtering in the debates list.
 
+|Comments enabled
+|Optional
+|Whether you want participants to be able to comment on this debate.
+
 |===
 
-==== Debate types
+== Manage debates
+
+To start creating and managing debates, click in the component title in the navigation bar or in the component list, or click in the 
+image:icons/action_edit.png[Manage component icon] icon on the components list.
+
+image::components/debates/manage_debates.png[Manage debates table]
+
+On the debates list in the administration panel, administrators can see:
+
+* *Title*: Title of the debate.
+* *Start date*: Start date of the debate.
+* *End date*: End date of the debate.
+* *Scope*: Scope of the debate, if enabled in the participatory space.
+
+You can also export the comments in the debates in CSV, JSON and Excel format by clicking the "Export all" button. 
+
+=== Debate types
 
 It's possible to have two kinds of debates:
 
 . Finite: with a start and end date
 . Open: without a start and end date
 
-This is shown publically in the debate list.
+Participants can see the types of the debates in the debate public list.
 
 image:components/debates/debates_list.png[Debates list]
-image:components/debates/debate_finite.png[Finite debate]
 
-==== Actions
+=== Actions
+
+NOTE: When participants can create debates, administrators have less actions available, and can't edit nor delete the debates. 
 
 .Actions
+[cols="10h,20h,~"]
 |===
 |Icon |Name |Definition
 
-|image:action_edit.png[Edit icon]
+|image:icons/action_edit.png[Edit icon]
 |Edit
-|Edit form for a debate. It's the same form as "New debate".
+|Edit form for a debate.
 
-|image:action_close.png[Close icon]
+|image:icons/action_close.png[Close icon]
 |Close
 |Close form for a debate. For adding conclusions.
 
-|image:action_permissions.png[Permissions icon]
-|Permissions
-|To handle the permissions of this debate, depending on the verification a participant has.
+|image:icons/action_preview.png[Preview icon]
+|Preview
+|To see how it's shown in the frontend to participants.
 
-|image:action_delete.png[Delete icon]
+|image:icons/action_permissions.png[Permissions icon]
+|Permissions
+|To handle the authorizations needed to create or endorse debates.
+
+|image:icons/action_delete.png[Delete icon]
 |Delete
-|To delete this debate. Only can be done when there aren't any projects.
+|To delete this debate.
 
 |===
 
 === Close debate form
 
-A debate can be closed. This is useful for adding conclusions. After a debate was closed it can't be edited nor commented any more
+A debate can be closed. This is useful for publishing debates conclusions. 
+After a debate was closed it can't be edited nor commented any more.
 
-image:components/debates/close_debate_backend.png[Close debate backend form]
+image::components/debates/close_debate_backend.png[Close debate backend form]
 
-Take in account that if the debate was created by a participant then only that
-participant can close it.
+Take into account that if the debate was created by a participant, then only that participant can close it.
 
-image:components/debates/close_debate_frontend.png[Close debate frontend form]
+image::components/debates/close_debate_frontend.png[Close debate frontend form]
 
 .Close debate form
+[cols="20h,10h,~"]
 |===
 |Field |Type |Description
 
@@ -227,4 +226,10 @@ image:components/debates/close_debate_frontend.png[Close debate frontend form]
 
 The conclusions are shown publicly with the close date and time.
 
-image:components/debates/debate_closed.png[Closed debate]
+image::components/debates/debate_closed.png[Closed debate]
+
+== Examples
+
+Some examples of where this component is used:
+
+* https://meta.decidim.org/processes/roadmap/f/219/[Propose new functionalities for Decidim software in Metadecidim]

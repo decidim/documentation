@@ -1,0 +1,104 @@
+= Configuration
+
+In this page you can configure general settings from Decidim, such as the name of the instance, the welcome notification, the 
+general features, the languages available, etc. 
+
+== Configurations available
+
+image::settings/admin_configuration.png[Decidim Admin Configuration]
+
+[cols="20h,10h,~,~"]
+|===
+|Field |Type |Description |Visibility
+
+|Name
+|Required
+|The name of the platform. 
+|Visible in platform title, emails, notifications, etc.
+
+|Social
+|Required
+|Social handlers for different social networks. In the field, only add the necessary slug instead of the whole URL. 
+|Visible in the footer, in every page. 
+
+|Default locale
+|Required
+|Default language for the platform. If you want to enable more languages, ask your technical administrator. 
+|If multiple languages, participants can choose their preferred one in their account settings. 
+
+|Time Zone
+|Required
+|In which Time Zone is your organization.
+|Used in multiple places, like meetings calendar. 
+
+|Reference prefix
+|Required
+|Reference prefix used to publicly identify all the instance resources. 
+|Visible in every resource page, like an assembly, meeting, proposal, etc. 
+
+|Enable badges
+|Checkbox
+|Whether you want or not that your participants have badges as a gamification mechanism when participating. 
+|If enabled, badges are visible in the participants profiles, and participation triggers badges level completion. 
+
+|Enable groups
+|Checkbox
+|Whether you want or not that your participants have the possibility to create xref:participants/groups.adoc[user groups].
+|If enabled, groups are visible in the participants profiles and accounts, and they can create user groups. 
+
+|Enable participatory space filters
+|Checkbox
+|Whether you want or not to display filters in the participatory spaces index pages. 
+|If enabled, participants are able to filter spaces, like assemblies, by different filters on the space index. 
+
+|Comments max length
+|Required
+|Whether you want or not to limit the number of character in comments. Leave 0 for default value (1000).
+|Limit visible if you enable comments in a participatory component.
+
+|Enable rich text editor for participants
+|Checkbox
+|Whether you want or not to enable participants to have a https://en.wikipedia.org/wiki/WYSIWYG[WYSIWYG editor]. 
+|In some text areas, like proposal creation, participants are able to insert some HTML tags by using the rich text editor.
+
+|Send welcome notification
+|Checkbox
+|Whether you want or not that participants receive a notification when they first create their account. 
+|If you just enable this, participants receive the default notification. 
+
+|Customize welcome notification
+|Checkbox
+|Enable you to customize the notification sent to participant when they create an account.
+|If enabled you can customize the welcome notification in the fields below.
+
+|Welcome notification subject
+|Required
+|Enable you to customize the welcome notification subject. You can add variables, such as {{name}} or {{organization}}. 
+|Field visible if you enable the "Customize welcome notification" checkbox.
+
+|Welcome notification body
+|Required
+|Enable you to customize the welcome notification body. You can add variables, such as {{name}} or {{organization}}. 
+|Field visible if you enable the "Customize welcome notification" checkbox.
+
+|Body for the administrator terms of service
+|Required
+|Which message an administrator sees when accessing for the first time to the Administration panel.
+|Message displayed when an administrator access the administration panel for the first time. 
+
+|===
+
+== Examples
+
+=== Social networks
+
+If you enter a value for each social network, their icons are displayed in the footer with a link to your account page. 
+Check that all the links are working well. 
+
+image::settings/settings_configuration_social.png[Social networks configuration in Decidim]
+
+=== Welcome notification
+
+Participants receive welcome notification when they finalize the creation of their account, on their notification panel and by email. 
+
+image::settings/settings_configuration_welcome.png[Welcome notification configuration in Decidim]

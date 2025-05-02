@@ -1,4 +1,4 @@
-#!/bin/env node
+#!/usr/bin/env node
 // Antora playbook changer script for Decidim documentation
 //
 // Changes the playbook accordingly to its environment

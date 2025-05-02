@@ -1,0 +1,50 @@
+= Answer an initiative
+
+== Understand the basics
+
+Initiatives should receive an answer from your organization at some point. It could be before the end of the signature collection period, 
+because it's been accepted or rejected already by an organ of your structure, or because it reached the number of signatures needed 
+before the end of the collection period. 
+
+== Answer an initiative
+
+Click the "Answer" icon on the list of initiatives to answer an initiative. 
+
+image::spaces/initiatives/initiative_backend_answer.png[Initiative backend answer]
+
+On this page, you can see the initiative title, description, creation date, state, and signature number, as well as the 
+answer fields. 
+
+.Initiative answer form
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Answer
+|Optional
+|Content of the initiative answer, that is visible on the initiative page. 
+
+|Answer URL
+|Optional
+|Link added on the answer content. 
+
+|Start of signature collection period
+|Required
+|Date of the start of the signature collection. 
+
+|End of signature collection period
+|Required
+|Date of the end of the signature collection. You can put it the day before if you want to close the initiative to new signatures. 
+
+|===
+
+image::spaces/initiatives/initiative_frontend_answer.png[Initiative frontend answer]
+
+== Accept or reject
+
+In order to operate the change on the initiatives list, the administrator needs to go on the edit page of the initiative and
+click the button corresponding to the initiative situation. 
+Once a published initiative collection period is over, there are two options:
+
+. The initiative got enough signatures: Click the "Accept initiative" button
+. The initiative didn't get enough signatures: Click the "Reject initiative" button

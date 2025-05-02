@@ -1,0 +1,36 @@
+= Project evolution
+
+== Understand the basics
+
+For participants to be able to follow and monitor the evolution of the projects, administrators can create timeline entries by 
+clicking the image:icons/action_clock.png[Project evolution icon]. 
+
+image::components/accountability/results_entries.png[Result page with timeline entries]
+
+== Configuration
+
+image::components/accountability/timeline_list.png[Timeline entries list]
+
+There, you can create and manage the different implementation phases for the result, and create new timeline entries.
+
+image::components/accountability/new_entry.png[New timeline entry form]
+
+.New entry form
+|===
+|Field |Type |Description
+
+|Date
+|Required
+|Expected format: dd/mm/yyyy
+
+|Title
+|Required
+|Title of the timeline entry. 
+
+|Description
+|Optional
+|Description of the timeline entry. 
+
+|===
+
+The timeline entries are then available on the result page. 

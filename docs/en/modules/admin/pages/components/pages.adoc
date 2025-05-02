@@ -1,85 +1,92 @@
-= Page
+= Pages
 
-The Page component allows people to get information about a space. It's similar to the general xref:admin:pages.adoc[Pages] admin section, with
-the main difference is that this component allows to define pages in a space, and the general Pages admin section allows to
-define pages for all the platform (for instance, help pages, terms of services, or FAQs), that aren't associated to a space.
+== Understand the basics
 
-From this starting point, there could be other configurations, such as:
+The Page component allows people to get information about a space. Administrators can fill a page with informational content, 
+images, links, to inform and update the participants. 
 
-Some examples of where this component was used:
+It's similar to the general xref:admin:pages.adoc[Pages], the main difference being that this component allows to define pages inside
+a participatory space, and not in the Help section. 
 
-* https://www.decidim.barcelona/processes/PressupostosParticipatius/f/4691/[More information page in 2020 Participatory Budgeting process in Decidim Barcelona]
+image::components/page/example01.png[Example of a page component in a participatory process]
 
-image:components/page/example01.png[More information page in 2020 Participatory Budgeting process in Decidim Barcelona - Frontend]
-image:components/page/example02.png[More information page in 2020 Participatory Budgeting process in Decidim Barcelona - Backend]
+== Configuration
 
-To configure the Page component:
+To create a Page component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it. 
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Go to components
-. Click on "Add component" button
-. Click on "Page"
-. Fill the xref:_add_component[Add component] form
+image::components/page/component_page.png[Add Page component button]
 
-== Add component
+Then:
 
-image:components/page/component.png[Add component form]
+. Click on the "Components" item in the secondary menu
+. Click the "Add component" button
+. Select "Page"
+. Fill the component creation form
+
+You can still update this form and the configuration after creating the component, by clicking the 
+image:icons/action_configure.png[Configure icon] icon in the components list. 
+
+image::components/page/component.png[Add component form]
 
 .Add component: Page form
+[cols="20h,10h,~"]
 |===
 |Field |Type |Description
 
 |Name
 |Required
-|What is the title of this component. For instance, "More information".
+|The title of this component.
 
 |Order position
 |Optional
-|Which order will it have in relation to the other pages. Having a lower number means a higher priority.
-For instance, if you have two pages, "Page a" with weight "10" and "Page b" with weight "0", then "Page b" will be first when ordering.
+|The order of the component in relation with the other components. Having a lower number means a higher priority. 
+For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0" 
+then "component b" is first when ordering.
 
 |===
 
 .Add component: Page form - Global settings
+[cols="20h,10h,~"]
 |===
 |Field |Type |Description
 
 |Announcement
 |Optional
-|A general announcement that'll be visible on the general pages landing page.
+|A general announcement visible on the top of the page. 
 
 |===
-
-In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
-xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
 
 .Add component: Pages form - Step settings
+[cols="20h,10h,~"]
 |===
 |Field |Type |Description
 
 |Announcement
 |Optional
-|A general announcement that'll be visible on the general page landing page.
+|A general announcement visible on the top of the page for this phase. 
 
 |===
 
-== Permissions
+== Create a page
 
-As this component doesn't allow to do anything, there are no permissions to set up.
-
-=== New page form
+Once you created the Page component, click the Edit icon to write the content to be displayed on the page. 
 
 image:components/page/new_page.png[New page form]
 
 .New page form
+[cols="20h,10h,~"]
 |===
 |Field |Type |Description
 
 |Body
 |Required
-|What is the body for the page.
+|The content displayed on the page. You can add images, links, videos, formatting, etc. 
 
 |===
+
+== Examples
+
+Some examples of where this component was used:
+
+* https://meta.decidim.org/processes/Welcome/f/1686/[Take the tour page to discover the Decidim community]
+* https://www.decidim.barcelona/processes/PressupostosParticipatius/f/4691/[Information page for a Participatory Budget Barcelona]
