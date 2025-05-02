@@ -5,16 +5,16 @@
 site:
   title: Decidim Docs
   url: https://docs.decidim.org
-  start_page: v0.29@en:ROOT:index.adoc
+  start_page: v0.30@en:ROOT:index.adoc
 content:
   sources:
     - url: &documentation https://github.com/decidim/documentation
       start_path: docs/en
-      branches: [release/0.29-stable, release/0.28-stable, release/0.27-stable, develop]
+      branches: [release/0.30-stable, release/0.29-stable, release/0.28-stable, release/0.27-stable, develop]
       edit_url: "https://github.com/decidim/documentation/edit/{refname}/{path}"
     - url: https://github.com/decidim/decidim
       start_path: docs
-      branches: [release/0.29-stable, release/0.28-stable, release/0.27-stable, develop]
+      branches: [release/0.30-stable, release/0.29-stable, release/0.28-stable, release/0.27-stable, develop]
 ui:
   bundle:
     url: https://github.com/decidim/documentation-antora-ui/releases/download/v0.4/ui-bundle.zip

@@ -2,14 +2,13 @@
 
 == Understand the basics
 
-Assemblies allows administrators to configure components inside a long-lasting space, with defined members. 
-To start creating an assembly, when on the assembly list, click the "New assembly" button at the top right of the page. 
+Assemblies allow administrators to configure components inside a long-lasting space, with defined members. To start creating an assembly, when on the link:https://docs.decidim.org/en/develop/admin/spaces/assemblies#_manage_assemblies[assembly list], click the "New assembly" button at the top right of the page. 
 
 The assembly creation form is divided into different sections that are detailed in the sections below. 
 
-Once you created an assembly, in the secondary navigation panel, you can see all the assembly configurations available:
+Once you create an assembly, you can see all the assembly configurations available in the secondary navigation panel:
 
-* xref:admin:spaces/assemblies/assembly_creation.adoc[About this assembly]: here you can access and edit all the fields from the creation form.
+* xref:admin:spaces/assemblies/assembly_creation.adoc[About this assembly] (Here you can access and edit all the fields from the creation form.)
 * xref:admin:spaces/assemblies/landing_page.adoc[Landing page]
 * xref:admin:spaces/assemblies/components.adoc[Components]
 * xref:admin:spaces/assemblies/categories.adoc[Categories]
@@ -21,7 +20,7 @@ Once you created an assembly, in the secondary navigation panel, you can see all
 
 == General information
 
-This section allows to provide a general description about the assembly, mainly a title, URL, and description. 
+This section allows an admin to provide general information about the assembly: title, URL, and description. 
 
 image::spaces/assemblies/assemblies_new_form_general_info.png[New assembly form general info section]
 
@@ -32,7 +31,7 @@ image::spaces/assemblies/assemblies_new_form_general_info.png[New assembly form 
 
 |Title
 |Required
-|Title of the assembly, "General Committee" or "neighborhood city council" for example. 
+|Title of the assembly: "General Committee" or "neighborhood city council" for example. 
 |Visible in the card of the assembly on the homepage, the assemblies index, the navigation, and the "Hero image and CTA" landing page block.
 
 |Subtitle
@@ -58,12 +57,12 @@ start with a letter.
 
 |Short description
 |Required
-|A short explanation of what's your participatory process about.
+|A short explanation of what your assembly is about.
 |Visible in the "Main data" landing page block.
 
 |Description
 |Required
-|A long explanation of what's your assembly about.
+|A long explanation of what your assembly is about.
 |Visible in the "Main data" landing page block.
 
 |Purpose of action
@@ -90,7 +89,7 @@ start with a letter.
 
 == Duration
 
-This section allows to provide information about the assembly important dates. 
+This section allows to provide information about the assembly's important dates. 
 
 image::spaces/assemblies/assemblies_new_form_duration.png[New assembly form duration section]
 
@@ -138,11 +137,11 @@ image::spaces/assemblies/assemblies_new_form_images.png[New assembly form images
 |Home image
 |Optional
 |Image used in presentation cards of this process. Guidance for file: Has to be an image or a document.
-For images, use preferably landscape images, the service crops the image. Maximum file size: 10 MB
+For images, landscape images are preferred, as the service crops the image. Maximum file size: 10 MB
 
 |Banner image
-|Optional
-|Deprecated, isn't used anywhere. Use "Hero image and CTA" content block on the landing page instead. 
+|Deprecated
+|Use link:https://docs.decidim.org/en/develop/admin/spaces/assemblies/landing_page.html#_hero_image_and_cta[Hero image and CTA] content block on the landing page instead. 
 
 |===
 
@@ -164,11 +163,11 @@ image::spaces/assemblies/assemblies_new_form_filters.png[New assembly form filte
 
 |Scope
 |Optional
-|Which xref:admin:settings/scopes.adoc[Scopes] does this assembly belongs to.
+|Which xref:admin:settings/scopes.adoc[Scopes] this assembly belongs to.
 
 |Area
 |Optional
-|Which xref:admin:settings/areas.adoc[Area] does this assembly belongs to.
+|Which xref:admin:settings/areas.adoc[Areas] this assembly belongs to.
 
 |===
 
@@ -185,7 +184,7 @@ image::spaces/assemblies/assemblies_new_form_metadata.png[New assembly form meta
 
 |What is decided
 |Optional
-|The issue of the assembly, the object of what is decided. 
+|The issue of the assembly; the object of what is decided. 
 
 |How is it decided
 |Optional
@@ -193,7 +192,7 @@ image::spaces/assemblies/assemblies_new_form_metadata.png[New assembly form meta
 
 |Scope metadata
 |Optional
-|Metadata on the assembly scope, if it's relevant. 
+|Metadata on the assembly scope, if relevant. 
 
 |Promoter group
 |Optional
@@ -201,17 +200,17 @@ image::spaces/assemblies/assemblies_new_form_metadata.png[New assembly form meta
 
 |Organization area
 |Optional
-|The organization domain or category, if it's relevant. 
+|The organization domain or category, if relevant. 
 
 |Who participates
 |Optional
-|Who are the authorized participants, who can participate to the assembly. 
+|Who are the authorized participants that can participate to the assembly. 
 
 |===
 
 == Visibility
 
-This section allows administrators to configure the process placement in the different pages and its publicity or no. 
+This section allows administrators to configure the process placement in the different pages and its publicity. 
 
 image::spaces/assemblies/assemblies_new_form_visibility.png[New assembly form visibility section]
 
@@ -222,7 +221,7 @@ image::spaces/assemblies/assemblies_new_form_visibility.png[New assembly form vi
 
 |Parent assembly
 |Optional
-|To what other assemblies this assembly belongs. Assemblies can be nested inside one another. 
+|To which other assemblies this assembly belongs. Assemblies can be nested inside one another. 
 
 |Highlighted
 |Optional
@@ -251,7 +250,7 @@ image::spaces/assemblies/assemblies_new_form_other.png[New assembly form other s
 
 |Created by
 |Optional
-|Choose "City Council" "Public" or "Other" in case you want to specify the name of the organization that created
+|Choose "City Council", "Public", or "Other" if you want to specify the name of the organization that created
 this assembly.
 
 |Assembly type
@@ -264,6 +263,6 @@ this assembly.
 
 |Social
 |Optional
-|Which social networks profile does this assembly has. Can be X, Facebook, Instagram, YouTube, and/or GitHub. 
+|Which social networks profile this assembly has. Can be X, Facebook, Instagram, YouTube, and/or GitHub. 
 
 |===
