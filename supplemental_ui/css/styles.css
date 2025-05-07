@@ -1,0 +1,4 @@
+/* quick fix until we move this to the actual UI repository */
+article.doc {
+  max-width: clamp(55em,60%,90rem);
+}
