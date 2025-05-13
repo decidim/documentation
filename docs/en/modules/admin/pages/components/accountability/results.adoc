@@ -2,19 +2,19 @@
 
 == Understand the basics
 
-Results are the entities composing the accountability component. They can be linked to proposals, projects, meetings, and have 
-categories, statuses and dates assigned. 
+Results are the entities that constitute the accountability component. They can be linked to proposals, projects, meetings, and have
+statuses, and dates assigned.
 
-Administrators can also create sub-results, to detail the elements needed for a result implementation. 
+Administrators can also create sub-results, to detail the elements needed for a result implementation.
 
 == Create a result
 
-To start creating results, click in the component title in the navigation bar or in the component list, or click in the 
+To start creating results, click on the component title in the navigation bar or in the component list, or click on the
 image:icons/action_edit.png[Manage component icon] icon on the components list.
 
 image::components/accountability/new_result_button.png[New result button]
 
-Then, click the "New result" button on the top right of the page. 
+Then, click the "New result" button on the top right of the page.
 
 image::components/accountability/new_result.png[New result form]
 
@@ -25,19 +25,19 @@ image::components/accountability/new_result.png[New result form]
 
 |Title
 |Required
-|Title of the result. 
+|Title of the result.
 
 |Description
 |Optional
-|Description of the result. 
+|Description of the result.
 
 |Scope
-|Optional
-|Available when scopes are enabled in the space.
+|Deprecated
+|Please use link:https://docs.decidim.org/en/develop/develop/taxonomies.html[taxonomies] instead.
 
 |Category
 |Optional
-|Allows categorizing the results on the Accountability landing page. 
+|Allows categorizing the results on the Accountability landing page.
 
 |Start date
 |Optional
@@ -57,11 +57,11 @@ image::components/accountability/new_result.png[New result form]
 
 |Proposals
 |Optional
-|Proposals that originated the result. 
+|Proposals that originated the result.
 
 |Included projects
 |Optional
-|Projects that originated the result. 
+|Projects that originated the result.
 
 |===
 
@@ -75,9 +75,9 @@ On the results list in the administration panel, administrators can see:
 * *Scope*: Scope of the result, if enabled in the participatory space.
 * *xref:admin:components/accountability/statuses.adoc[Status]*: Status of the result.
 * *Progress*: Result percentage progress.
-* *Created*: Creation date of the result. 
+* *Created*: Creation date of the result.
 
-You can filter and sort this list by clicking the "Filter" button and the columns headers. 
+You can filter and sort this list by clicking the "Filter" button and the columns headers.
 You can also search for results by their ID and title in the search bar.
 
 image::components/accountability/results_list_filter.png[New result button]
@@ -91,7 +91,7 @@ image::components/accountability/results_list_filter.png[New result button]
 
 |image:icons/action_edit.png[Edit icon]
 |Edit
-|To edit the result.
+|Edit the result.
 
 |image:icons/action_plus.png[New result icon]
 |New result
@@ -103,22 +103,22 @@ image::components/accountability/results_list_filter.png[New result button]
 
 |image:icons/action_folder.png[Folders icon]
 |Folders
-|To create folders to classify the attachments.
+|Create folders to classify the attachments.
 
 |image:icons/action_attachments.png[Attachments icon]
 |Attachments
-|To create and manage attachments related to the result.
+|Create and manage attachments related to the result.
 
 |image:icons/action_preview.png[Preview icon]
 |Preview
-|To preview the result in the user panel.
+|Preview the result in the user panel.
 
 |image:icons/action_permissions.png[Permissions icon]
 |Permissions
-|To handle the authorizations needed to comment this specific result.
+|Handle the authorizations needed to comment this specific result.
 
 |image:icons/action_delete.png[Delete icon]
 |Delete
-|To delete this result.
+|Delete this result.
 
 |===
