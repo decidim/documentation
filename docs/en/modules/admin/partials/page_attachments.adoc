@@ -9,11 +9,11 @@ That is why it is helpful to add files, documents, images with relevant informat
 
 These documents can be grouped in *Folders*. For example, for a participatory process of remodeling a square, folders could be created with information about possible uses, with plans, with economic information, etc.
 
-They can be found on the space xref:admin:spaces/processes/categories.adoc[landing page] when the content block is enabled.
+They can be found on the space xref:admin:spaces/processes/landing_page.adoc[landing page] when the content block is enabled.
 
 image:spaces/attachments.png[View the attachments in the public interface]
 
-== How to find it?
+=== How to find it?
 
 To create and manage attachments, click the *Attachments* item in the left navigation bar of any participatory space. 
 
@@ -21,7 +21,9 @@ image:spaces/attachments_admin.png[View the attachments in the administration in
 
 There, you are able to manage the attachments and folders, configure them, add new ones, etc.
 
-== Create a new attachment
+== Configuration
+
+=== Create a new attachment
 
 To create a new attachment, click the "New attachment" button. 
 
@@ -54,7 +56,7 @@ image:spaces/attachments_new_form.png[Create a new attachment form]
 file extensions depends in your server configuration.
 |===
 
-== Create a new folder
+=== Create a new folder
 
 image:spaces/attachments_folders_admin.png[View the folders in the administration interface]
 
@@ -80,18 +82,18 @@ image:spaces/attachments_new_folder_form.png[Create a new folder for attachments
 |A long description explaining what this folder is about.
 |===
 
-== Manage attachments
+=== Manage attachments
 
 You can find all the attachments on the list in the administration panel, with:
 
 * *Title*: title of the attachment, given when creating or editing it. 
 * *Folder*: folder where the attachment is stored. 
 * *Type*: extension type of the attachment. 
-* *Size*: size of the attachment in bites.  
+* *Size*: size of the attachment in bytes.  
 
 You can also access the folders list by clicking the "Folders" tab on top of the attachments list. 
 
-== Actions
+=== Actions
 
 .Components actions in component list
 [cols="10h,20h,~"]

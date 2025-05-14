@@ -9,7 +9,9 @@ The conference creation form is divided into different sections that are detaile
 
 Conferences landing page is built by default and is not yet configurable. 
 
-== General information
+== Configuration
+
+=== General information
 
 image::spaces/conferences/conference_new_form_general_info.png[New conference form general info section]
 
@@ -62,7 +64,7 @@ in the xref:admin:settings/homepage.adoc[Homepage] configuration.
 
 |===
 
-== Images
+=== Images
 
 image::spaces/conferences/conference_new_form_images.png[New conference form images section]
 
@@ -83,7 +85,7 @@ the image. Maximum file size: 10 MB.
 
 |===
 
-== Filters
+=== Filters
 
 This section determines the filters available in the conference, in the different components. 
 Filters can then be enabled and configured in each components. 
@@ -109,7 +111,7 @@ image::spaces/conferences/conference_new_form_filters.png[New conference form fi
 
 |===
 
-== Duration
+=== Duration
 
 This section allows to provide information about the process start and end dates. 
 It can be enabled on the landing page with the "Phase & duration" landing page block. 
@@ -131,7 +133,7 @@ image::spaces/conferences/conference_new_form_duration.png[New conference form d
 
 |===
 
-== Registrations
+=== Registrations
 
 This section is allows you to enable registrations and set slots and registration terms for your conference. 
 
@@ -156,7 +158,7 @@ image::spaces/conferences/conference_new_form_registrations.png[New conference f
 
 |===
 
-== Related spaces
+=== Related spaces
 
 This section allows to create relations between processes, assemblies, and conferences. 
 
@@ -177,7 +179,7 @@ image::spaces/conferences/conferences_new_form_related_processes.png[New confere
 
 |===
 
-== Creating the program
+=== Creating the program
 
 For creating the program of the conference you need to create a new xref:components/meetings.adoc[Meeting component] with the
 dates and times of the different talks, workshops, sessions, etc. After publishing the meetings, the program button 

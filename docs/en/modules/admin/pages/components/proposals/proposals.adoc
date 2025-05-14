@@ -14,9 +14,9 @@ your component.
 Depending on whether you want to gather only participants proposals, or you also want to create official proposals, read the 
 relevant section. 
 
-== Proposals creation
+=== Proposals creation
 
-=== Official proposals
+==== Official proposals
 
 To start creating official proposals, the first thing to do is to create your first proposal, by clicking the "New proposal" button.
 
@@ -65,7 +65,7 @@ the proposal grid list.
 
 |===
 
-=== Participants proposals
+==== Participants proposals
 
 Once you enabled participant proposals creation for the active phase, participants can see a "New proposal" button on the proposal 
 listing page. 
@@ -125,7 +125,7 @@ They can click the "Publish" button to finalize the publication of the proposal.
 
 image::components/proposals/new_proposal_frontend_published.png[Published proposal made by a participant]
 
-== Manage proposals
+=== Manage proposals
 
 Once there are multiple proposals in the process, administrators can manage them.
 

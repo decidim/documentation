@@ -14,19 +14,19 @@ You are redirected to the landing page configuration panel.
 
 image::spaces/landing_page/landing_page_admin.png[Landing page content blocks]
 
-== Landing page content blocks
+== Configuration
 
-Below, you'll find all the content blocks configuration guides and screenshots of how there are displayed on the homepage.
+Below, you'll find all the landing page content blocks configuration guides and screenshots of how there are displayed on the homepage.
 
-=== Hero image and CTA 
+=== Hero image and CTA
 
 The Hero image and CTA content blocks allow to display in the space landing page:
 
-* *title*: the space title. 
-* *hashtag*: the space hashtag redirecting to the X platform. 
-* *subtitle*: the space subtitle. 
-* *a call to action button*: by default, the button isn't display. To enable it, click the "Edit" icon of the content block. 
-* *an image*: the downloaded image is displayed with an opacity filter, to make sure the text is readable. 
+* *Title*: the space title. 
+* *Hashtag*: the space hashtag redirecting to the X platform. 
+* *Subtitle*: the space subtitle. 
+* *A call to action button*: by default, the button isn't display. To enable it, click the "Edit" icon of the content block. 
+* *An image*: the downloaded image is displayed with an opacity filter, to make sure the text is readable. 
 
 image::spaces/landing_page/hero_admin.png[Landing page content Hero image content block form]
 

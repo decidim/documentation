@@ -9,6 +9,8 @@ image::components/debates/example01.png[Debates listing example]
 
 == Configuration
 
+=== Create a debate component
+
 To create a Debate component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it. 
 
 image::components/debates/component_debate.png[Add Debate component button]
@@ -96,7 +98,7 @@ then "component b" is first when ordering.
 
 |===
 
-== Create a debate
+=== Create a debate
 
 image::components/debates/new_debate_backend.png[New debate backend form]
 
@@ -144,7 +146,7 @@ there isn't any time frame.
 
 |===
 
-== Manage debates
+=== Manage debates
 
 To start creating and managing debates, click in the component title in the navigation bar or in the component list, or click in the 
 image:icons/action_edit.png[Manage component icon] icon on the components list.

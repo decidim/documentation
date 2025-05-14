@@ -18,7 +18,9 @@ Once you create an assembly, you can see all the assembly configurations availab
 * xref:admin:spaces/assemblies/private_participants.adoc[Private participants]
 * xref:admin:spaces/assemblies/moderations.adoc[Moderations]
 
-== General information
+== Configuration
+
+=== General information
 
 This section allows an admin to provide general information about the assembly: title, URL, and description. 
 
@@ -87,7 +89,7 @@ start with a letter.
 
 |===
 
-== Duration
+=== Duration
 
 This section allows to provide information about the assembly's important dates. 
 
@@ -125,7 +127,7 @@ image::spaces/assemblies/assemblies_new_form_duration.png[New assembly form dura
 
 |===
 
-== Images
+=== Images
 
 image::spaces/assemblies/assemblies_new_form_images.png[New assembly form images section]
 
@@ -145,7 +147,7 @@ For images, landscape images are preferred, as the service crops the image. Maxi
 
 |===
 
-== Filters
+=== Filters
 
 This section determines the filters available in the assembly, in the different components. 
 Filters can then be enabled and configured in each components. 
@@ -171,7 +173,7 @@ image::spaces/assemblies/assemblies_new_form_filters.png[New assembly form filte
 
 |===
 
-== Metadata
+=== Metadata
 
 This section allows to provide meta information about the assembly.
 
@@ -208,7 +210,7 @@ image::spaces/assemblies/assemblies_new_form_metadata.png[New assembly form meta
 
 |===
 
-== Visibility
+=== Visibility
 
 This section allows administrators to configure the process placement in the different pages and its publicity. 
 
@@ -239,7 +241,7 @@ or visitors can see it but they can't participate in it.
 
 |===
 
-== Other
+=== Other
 
 image::spaces/assemblies/assemblies_new_form_other.png[New assembly form other section]
 

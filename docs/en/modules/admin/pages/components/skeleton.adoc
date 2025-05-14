@@ -54,7 +54,7 @@ image:components/skeleton/component.png[Add component form]
 
 |Scope
 |Optional
-|Which xref:admin:scopes.adoc[Scope] does this component belongs to.
+|Which xref:admin:settings/scopes.adoc[Scope] does this component belongs to.
 
 |Global scope
 |Optional
@@ -129,25 +129,25 @@ image:components/skeleton/new_skeleton.png[New skeleton form]
 
 |===
 
-==== Actions
+=== Actions
 
 .Actions
 |===
 |Icon |Name |Definition
 
-|image:action_preview.png[Preview icon]
+|image:icons/action_preview.png[Preview icon]
 |Preview
 |To see how it's shown in the frontend to participants.
 
-|image:action_list.png[Manage projects icon]
+|image:icons/action_list.png[Manage projects icon]
 |xref:_manage_projects[Manage projects]
 |Allows you to manage the projects of a skeleton.
 
-|image:action_edit.png[Edit icon]
+|image:icons/action_edit.png[Edit icon]
 |Edit
 |Edit form for a skeleton.
 
-|image:action_delete.png[Delete icon]
+|image:icons/action_delete.png[Delete icon]
 |Delete
 |To delete this skeleton. Only can be done when there aren't any projects.
 

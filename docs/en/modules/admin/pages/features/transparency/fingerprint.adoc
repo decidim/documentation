@@ -12,12 +12,14 @@ a hashed representation of the content. It's useful to ensure the content hasn't
 would result in a totally different value. It's calculated using a *SHA256 hashing algorithm*. In order to replicate it
 yourself, you can use a http://www.md5calc.com/sha256[MD5 calculator online] and copy-paste the source data.
 
-== Check fingerprint
+== Configuration
+
+=== Check fingerprint
 
 . Go to the content for which you want to verify the fingerprint
 . Click in the "Check fingerprint" link at the bottom of the page
 . Copy the source field value
-. Go to a MD5 calculator online (External link) and copy-paste the source data
+. Go to a http://www.md5calc.com/sha256[MD5 calculator online] and copy-paste the source data
 . Check that the fingerprints are the same
 
 image:features/fingerprint/content.png[Check fingerprint link in page bottom]

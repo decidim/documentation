@@ -12,6 +12,8 @@ image::components/blog/example02.png[Example of a blog post]
 
 == Configuration
 
+=== Create a blog component
+
 To create a Blog component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it. 
 
 image::components/blog/component_blog.png[Add Blog component button]
@@ -85,14 +87,14 @@ image::components/blog/component.png[Add component form]
 
 |===
 
-== Manage posts
+=== Manage posts
 
 To start creating and managing posts, click on the component title in the navigation bar or on the component list, or click on the 
 image:icons/action_edit.png[Manage component icon] icon on the components list.
 
 image:components/blog/manage_posts.png[Manage posts table]
 
-== Create a post
+=== Create a post
 
 To create a post, click the "New post" button on the top right of the page. 
 
