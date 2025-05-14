@@ -1,13 +1,13 @@
 = Reported participants
 
-There are cases where participants could go against the Terms of Service of the
+There are instances where participants might violate the xref:pages/pages.html#_the_terms_and_conditions_page[Terms and Conditions] of the
 platform, so it's useful to have the option for reporting and blocking participants.
 You can block participants from the xref:participants/participants.adoc[participants
 section in the administration panel] or through the "Reported participants" section.
 
 == Report a participant
 
-Any logged in participant can report another participant through the "Flag" icon in the participant
+Any logged in participant can report another participant through the "Report" button in the participant
 profile.
 
 image:moderations/moderations_reported_participant_flag.png[Report flag in participant profile]
@@ -16,26 +16,26 @@ After a participant has clicked in this action they need to provide a reason why
 
 image:moderations/reported_participant_modal_user.png[Give reason for reporting a participant modal]
 
-When an administrator or a moderator report a participant, they have additional options that allow them to 
-directly block the user and hide all their contents. They have to give a justification for blocking this participant. 
+When an administrator or a moderator report a participant, they have additional options that allow them to
+directly block the user and hide all their contents. They have to provide a justification for blocking this participant.
 
 image:moderations/reported_participant_modal_admin.png[Give reason for reporting a participant modal administrators]
 
 == Manage reported participants
 
-Reported participants are visible on the "Reported participants" section of the Global moderations panel. 
+Reported participants are visible on the "Reported participants" section of the Global moderations panel.
 
 image:moderations/moderations_backend_list_users.png[Global moderations panel for users]
 
-You can find all the reported participants on the reported participant list in the administration panel, with: 
+You can find all the reported participants on the reported participant list in the administration panel, with:
 
-* *Name*: name of the participant, with a link to their profile.
-* *Nickname*: nickname of the participant, with a link to their profile.
-* *Reason*: why the participant is reported. If the participant that made the report has given extra
-information it's possible to see it by hovering it.
-* *Reported at*: when they were originally reported.
-* *Reports count*: number of reports by different users.
-* *Actions*: you can *Unreport* or *Block* the participant.
+* *Name*: Name of the participant, with a link to their profile.
+* *Nickname*: Nickname of the participant, with a link to their profile.
+* *Reason*: Why the participant is being reported. If the participant that made the report has given extra
+information, it's possible to see it by hovering over it.
+* *Reported at*: When they were originally reported.
+* *Reports count*: Number of reports by different users.
+* *Actions*: You can *Unreport* or *Block* the participant.
 
 === Actions
 
@@ -46,32 +46,32 @@ information it's possible to see it by hovering it.
 
 |image:icons/action_unreport.png[Unreport icon]
 |Unreport
-|To Unreport the participant and remove them from the list.
+|Unreport the participant and remove them from the list.
 |Available when the participant isn't yet blocked.
 
 |image:icons/action_block.png[Block user]
 |Block user
-|To block the participant. 
+|Block the participant.
 |Available when the participant isn't yet blocked.
 
 |image:icons/action_block.png[Unblock user]
 |Unblock user
-|To unblock the participant. 
+|Unblock the participant.
 |Available for blocked participants.
 
 |===
 
 === Block a participant
 
-If a content has been mistakenly "Unreported" then you'll need to find it again in the public platform 
+If content has been mistakenly "unreported" then you'll need to find it again in the public platform
 and report it again so you can moderate it.
 
-Administrators need to provide a justification if they want to block a participant. 
+Administrators need to provide a justification if they want to block a participant.
 
 image:moderations/moderations_participants_block_user_justification.png[Justify block user action]
 
-Once a blocked participant tries to log-in they see an error message:
+When a blocked participant tries to log-in, they will see an error message:
 
 image:moderations/moderations_participants_block_user_alert.png[Message shown to blocked user]
 
-Blocked participants names change for "Blocked user."
+Blocked participants' names change to "Blocked user."
