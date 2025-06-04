@@ -101,51 +101,6 @@ then "component b" is first when ordering.
 |===
 
 
-=== Actions
-
-.Actions - Accountability
-[cols="10h,20h,~"]
-|===
-|Icon |Name |Definition
-
-|image:icons/action_edit.png[Edit icon]
-|Edit
-|To edit a result.
-
-|image:icons/action_plus.png[Plus icon]
-|Add Sub-Result
-|To quickly add a new sub-result
-
-|image:icons/action_folder.png[Folders icon]
-|Folders
-|For classifying Attachments.
-
-|image:icons/action_clock.png[Clock icon]
-|Milestone
-|Manage milestones of the result.
-
-|image:icons/action_folder.png[Folders icon]
-|Folders
-|For classifying Attachments.
-
-|image:icons/action_attachments.png[Attachments icon]
-|Attachments
-|To add documents and images related to the result.
-
-|image:icons/action_preview.png[Preview icon]
-|Preview
-|To see how it's shown in the frontend to participants.
-
-|image:icons/action_permissions.png[Permissions icon]
-|Permissions
-|To handle the permissions of this result, depending on the verification a participant has. Allows an admin to configure
-who can *Comment* a result.
-
-|image:icons/action_delete.png[Delete icon]
-|Delete
-|Put the result in the deleted result list.
-
-
 === Overview results per Taxonomy Filter.
 
 Use Taxonomy filters on results to offer participant a quick overview of project evolution per taxonomy.
