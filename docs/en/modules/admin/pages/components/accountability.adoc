@@ -10,7 +10,7 @@ investment projects (for example, as part of a participatory budget).
 
 image::components/accountability/example01.png[Example of results list]
 
-Results can be closely monitored, with a history of modifications, a percentages of completion and milestones
+Results can be closely monitored, with a history of modifications, a percentage of completion and milestones
 indicating their progress. The results, milestones, and states can be updated manually through the administration panel or through a CSV.
 
 image::components/accountability/example02.png[Example of a result]
@@ -147,6 +147,7 @@ who can *Comment* a result.
 
 
 === Overview results per Taxonomy Filter.
+
 Use Taxonomy filters on results to offer participant a quick overview of project evolution per taxonomy.
 
 To do so:
@@ -161,6 +162,7 @@ image::components/accountability/add_taxonomy_filter.png[Add taxonomy filter to 
 image::components/accountability/grouped_by_taxonomy.png[Participant can now group result by taxonomy]
 
 === Sub-results
+
 A result can sometimes be the product of some other results.
 For example, the results of "building 3 skate-parks in town" would use three sub-results, to monitor a detailed completion of the result.
 
