@@ -2,16 +2,16 @@
 
 == Understand the basics
 
-The Accountability component allows participants to know the status of a project's implementation and to follow its evolution.
+The accountability component allows participants to know the status of a project's implementation and to follow its evolution.
 
-This feature allows administrators to present a summary of the achievements decided upon in assemblies, during 
-participatory processes, or any other space. Administrators create Results they can then categorize and link to proposals, meetings, or 
+This feature allows administrators to present a summary of the achievements decided upon in assemblies, during
+participatory processes, or any other space. Administrators create Results they can then categorize and link to proposals, meetings, or
 investment projects (for example, as part of a participatory budget).
 
 image::components/accountability/example01.png[Example of results list]
 
-Results can be closely monitored, with a history of modifications saved, and percentages of completion and milestones 
-indicating their progress. The results, projects, and states can be updated manually through the administration panel or through a CSV.
+Results can be closely monitored, with a history of modifications, a percentage of completion and milestones
+indicating their progress. The results, milestones, and states can be updated manually through the administration panel or through a CSV.
 
 image::components/accountability/example02.png[Example of a result]
 
@@ -19,14 +19,16 @@ In this documentation section, you can find how to configure and manage all of t
 
 * xref:admin:components/accountability/results.adoc[Results]
 * xref:admin:components/accountability/statuses.adoc[Statuses]
-* xref:admin:components/accountability/timeline.adoc[Project evolution]
+* xref:admin:components/accountability/milestone.adoc[Milestones]
 * xref:admin:components/accountability/import.adoc[Import and export results]
 
 == Configuration
 
-To create an Accountability component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it. 
+=== Create an accountability component
 
-image::components/accountability/component_accountability.png[Add Accountability component button]
+To create an accountability component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
+
+image::components/accountability/component_accountability.png[Add accountability component button]
 
 Then:
 
@@ -35,8 +37,8 @@ Then:
 . Select "Accountability"
 . Fill the component creation form
 
-You can still update this form and the configuration after creating the component, by clicking the 
-image:icons/action_configure.png[Configure icon] in the components list. 
+You can still update this form and the configuration after creating the component, by clicking the
+image:icons/action_configure.png[Configure icon] in the components list.
 
 image::components/accountability/component.png[Add component form]
 
@@ -51,8 +53,8 @@ image::components/accountability/component.png[Add component form]
 
 |Order position
 |Optional
-|The order of the component in relation with the other components. Having a lower number means a higher priority. 
-For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0" 
+|The order of the component in relation with the other components. Having a lower number means a higher priority.
+For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0"
 then "component b" is first when ordering.
 
 |===
@@ -84,7 +86,7 @@ then "component b" is first when ordering.
 
 |Display progress
 |Optional
-|Check it if you want a progress bar to be displayed on the results with aa progress level. 
+|Check it if you want a progress bar to be displayed on the results with aa progress level.
 
 |===
 
@@ -98,7 +100,32 @@ then "component b" is first when ordering.
 |Whether you want to enable comments for this phase.
 |===
 
+
+=== Overview results per Taxonomy Filter.
+
+Use Taxonomy filters on results to offer participant a quick overview of project evolution per taxonomy.
+
+To do so:
+
+1. Configure a Taxonomy with some subitems and available for your current space
+2. Add a Taxonomy Filter
+3. Configure the component Globals Settings and add the filter you created
+4. See the public view. A button "View By: <Taxonomy name>" will appear.
+
+image::components/accountability/add_taxonomy_filter.png[Add taxonomy filter to your accountability component]
+
+image::components/accountability/grouped_by_taxonomy.png[Participant can now group result by taxonomy]
+
+=== Sub-results
+
+A result can sometimes be the product of some other results.
+For example, the results of "building 3 skate-parks in town" would use three sub-results, to monitor a detailed completion of the result.
+
+Create a sub-result by clicking on the plus-sign from the accountability list.
+To access the sub-results list, click on the main result title to get there.
+
 == Examples
+
 
 Below, you can find some links to examples Accountability components:
 

@@ -84,41 +84,46 @@ image::components/accountability/results_list_filter.png[New result button]
 
 == Actions
 
-.Actions
-[cols="10h,~,~"]
+.Actions - Accountability
+[cols="10h,20h,~"]
 |===
 |Icon |Name |Definition
 
 |image:icons/action_edit.png[Edit icon]
 |Edit
-|Edit the result.
+|To edit a result.
 
-|image:icons/action_plus.png[New result icon]
-|New result
-|Redirects to the list of sub-results, and allows to create sub-results.
-
-|image:icons/action_clock.png[Project evolution icon]
-|xref:admin:components/accountability/timeline.adoc[Project evolution]
-|Allows you to manage the project evolution and timeline entries.
+|image:icons/action_plus.png[Plus icon]
+|Add Sub-Result
+|To quickly add a new sub-result
 
 |image:icons/action_folder.png[Folders icon]
 |Folders
-|Create folders to classify the attachments.
+|For classifying Attachments.
+
+|image:icons/action_clock.png[Clock icon]
+|Milestone
+|Manage milestones of the result.
+
+|image:icons/action_folder.png[Folders icon]
+|Folders
+|For classifying Attachments.
 
 |image:icons/action_attachments.png[Attachments icon]
 |Attachments
-|Create and manage attachments related to the result.
+|To add documents and images related to the result.
 
 |image:icons/action_preview.png[Preview icon]
 |Preview
-|Preview the result in the user panel.
+|To see how it's shown in the frontend to participants.
 
 |image:icons/action_permissions.png[Permissions icon]
 |Permissions
-|Handle the authorizations needed to comment this specific result.
+|To handle the permissions of this result, depending on the verification a participant has. Allows an admin to configure
+who can *Comment* a result.
 
 |image:icons/action_delete.png[Delete icon]
 |Delete
-|Delete this result.
+|Put the result in the deleted result list.
 
 |===
