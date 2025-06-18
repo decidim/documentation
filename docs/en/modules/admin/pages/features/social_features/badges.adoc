@@ -15,7 +15,9 @@ When a participant earns a badge they receive a notification.
 
 image::features/badges/notification.png[Example of badges notification]
 
-== Badges description
+== Configuration
+
+=== Badges description
 
 Badges have multiple levels, depending in the number of times they have made the action. For instance, for the followers badge,
 the participants receive the first level badge when they have 1 follower, the second level at 15 followers, the third level at 30 followers,
