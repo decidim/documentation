@@ -50,7 +50,7 @@ image::components/proposals/component_specific_conf.png[Add component form - Spe
 
 |===
 
-== Create an amendment
+=== Create an amendment
 
 Let's imagine a participant sees another participant's proposal, and wants to enhance it. 
 When amendments are enabled, they can click the "Amend" button on the proposal page. 
@@ -65,7 +65,7 @@ The participant can then preview their amendment before publishing it.
 
 image::components/proposals/amendments/publish_amendment_draft.png[Publish amendment draft]
 
-== Review an amendment
+=== Review an amendment
 
 All the participants can see the amendment drafts made on proposals, on the proposal page. 
 Amendments also appear as proposals in the proposal list and grid and can be filtered by participants. 
@@ -80,13 +80,13 @@ The author can then accept or reject the amendment. By clicking on the "Accept" 
 
 image::components/proposals/amendments/proposal_amendment_review.png[Proposal amendment review]
 
-Once the amendment is approved, the original proposal is updated, and the fact that it was amended appear on the proposal. 
+Once the amendment is approved, the original proposal is updated, and the fact that it was amended appears on the proposal. 
 
 image::components/proposals/amendments/proposal_amended_accepted.png[Proposal amendment accepted]
 
-The versions history for the proposal and its successive amendments is available by clicking the "See other versions" link at the bottom. 
+The version history for the proposal and its successive amendments is available by clicking the "See other versions" link at the bottom.
 
-== Promote an amendment
+=== Promote an amendment
 
 If a proposal is rejected and the "Amendment promotion enabled" is enabled, then the amendment author can promote it to create
  a new proposal.

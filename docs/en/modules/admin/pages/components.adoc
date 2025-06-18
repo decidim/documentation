@@ -5,7 +5,7 @@
 Through components an administrator can enable and configure different participatory mechanisms.
 All components are available in all the different xref:admin:spaces.adoc[spaces].
 
-When you create a participatory space, by default, it won't have any component in it. 
+When you create a participatory space, by default, it won't have any component in it.
 
 include::partial$components_list.adoc[]
 
@@ -30,7 +30,7 @@ You can find all the components of the space on the list, with:
 
 * *Component name*: title of the component, chosen at its creation and editable. 
 * *Component type*: type of component. 
-* *Component scope*: the xref:admin:scopes.adoc[scope] of the component. 
+* *Component scope*: the xref:admin:settings/scopes.adoc[scope] of the component.
 
 == Actions 
 

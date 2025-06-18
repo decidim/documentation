@@ -12,6 +12,8 @@ image::components/surveys/example01.png[Example of a survey]
 
 == Configuration
 
+=== Create a survey component
+
 To create a Survey component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it. 
 
 image::components/surveys/component_survey.png[Add Survey component button]
@@ -97,7 +99,7 @@ but participants can use the Private navigation option and make multiple answers
 
 |===
 
-== Create a survey
+=== Create a survey
 
 NOTE: Do you have repetitive surveys? For instance the same feedback form for every process? You can have a survey that
 gets copied and is used as a blueprint so you don't have to manually configure the same survey each time. Learn more
@@ -279,7 +281,7 @@ They can also be used alone, in a one page survey.
 
 image::components/surveys/title_description_backend.png[Title and description in back end]
 
-== Export answers
+=== Export answers
 
 It's possible to export the survey participant answers to different formats: CSV, JSON, XLSX (Excel) or PDF.
 
@@ -291,4 +293,3 @@ done externally.
 Some examples of where this component is used:
 
 * https://consultation.quebec.ca/processes/donneesquebec/f/82/[Data Quebec: participate in its improvement in Québec consultations]
-* https://meta.decidim.org/conferences/decidimfest2020/f/1403/?locale=en[DecidimFest2020 Assessment Survey]

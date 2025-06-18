@@ -3,10 +3,12 @@
 == Understand the basics
 
 Administrators can invite participants to join the conference. 
-They can invite already existing participants, with an account on the platform, but also people without account. 
-Inviting a participant sends an email to the account email address, to encourage the participant to register to the conference. 
+They can invite existing participants, with an account on the platform, as well as people without account. 
+Inviting a participant sends an email to the account email address, encouraging the participant to register for the conference. 
 
-== Manage invites
+== Configuration
+
+=== Manage invites
 
 To access the invites configuration, click in the secondary navigation panel on the "Invites" item. 
 
@@ -14,7 +16,7 @@ image::spaces/conferences/invites.png[Conferences user invites in backend]
 
 You can filter the invites and search by invitee name or email. 
 
-== Send an invite
+=== Send an invite
 
 To invite a participant, click the "Invite participant" button in the top right of the page. 
 
@@ -27,14 +29,14 @@ image::spaces/conferences/invite_participant_form.png[Invite a participant form]
 
 |Attendee type
 |Required
-|Wether this invited person already has an account or not. 
+|Whether or not this invited person already has an account.
 
 |Name
-|Required if it's a non-existing participant.
+|Required if the invitee is not already a participant.
 |Name of the invited person.
 
 |Email
-|Required if it's a non-existing participant.
+|Required if the invitee is not already a participant.
 |Email of the invited person.
 
 |User

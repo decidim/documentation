@@ -6,7 +6,7 @@ A participatory process is a sequence of phases ordered in time. Depending on wh
 are, then you can enable and configure the features you need for each phase.
 
 Ideally, the Phases of a Participatory Process are always the same and are not changed, so participants can know what are
-the rules and time frame and can organize to know when it'd be best for them to participate in this process.
+the rules and timeframe and can organize to know when it'd be best for them to participate in this process.
 
 For example, the standard structure of a participatory process could be as follows:
 
@@ -26,7 +26,9 @@ When clicking on the link for the active phase, they can see the full descriptio
 
 image::spaces/processes/process_phases.png[Process phases explanation]
 
-== Manage phases
+== Configuration
+
+=== Manage phases
 
 To access the phases configuration, click in the secondary navigation panel on the "Phases" item. 
 
@@ -56,7 +58,7 @@ image::spaces/processes/process_phases_list.png[Phases of a participatory proces
 
 |===
 
-== Create a new phase
+=== Create a new phase
 
 To create a new phase, click the "New phase" button in the top right of the page. 
 
@@ -95,3 +97,7 @@ image::spaces/processes/process_phases_new_form.png[Create a new participatory p
 
 CAUTION: Configuring the CTA through the Phase of the participatory process is deprecated with the new design. 
 Now this is done in the Landing Page, using the Hero and image content block. 
+
+== Examples
+
+TBD

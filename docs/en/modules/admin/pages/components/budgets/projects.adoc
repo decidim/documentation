@@ -2,9 +2,11 @@
 
 == Understand the basics
 
-Projects are the entities making part of the budgets. 
+Projects are parts of budgets.
 
-== Create a project
+== Configuration
+
+=== Create a project
 
 To access the creation and management of projects, click the title of the budget or the image:icons/action_list.png[Manage projects icon] 
 icon on the budgets list. 
@@ -30,7 +32,7 @@ image::components/budgets/new_project.png[New project form]
 
 |Budget amount
 |Required
-|What's the budget amount for this project. How much money it costs to implement this project?
+|What’s the budget amount for this project. How much money does it cost to implement this project?
 
 |Address
 |Optional
@@ -38,7 +40,7 @@ image::components/budgets/new_project.png[New project form]
 
 |Category
 |Optional
-|Which Category has the project. Used for filtering in the budgets list.
+|What Category is assigned to the project. Used for filtering in the budgets list.
 
 |Proposals
 |Optional
@@ -50,7 +52,7 @@ image::components/budgets/new_project.png[New project form]
 
 |===
 
-== Manage projects
+=== Manage projects
 
 image::components/budgets/results_selected.png[Selected projects after voting]
 
@@ -113,7 +115,7 @@ For this to work:
 . The following settings in the proposals component need to be enabled:
 .. Proposal answering enabled
 .. Enable costs on proposal answers
-. A valuator or administrator need to Answer proposals:
+. A valuator or administrator needs to answer proposals:
 .. Review the proposals
 .. Accept or reject them according to your normative
 .. Add costs to the proposals if were accepted

@@ -24,12 +24,12 @@ The hero image and CTA content block allows to display:
 
 * *a welcome text*: to welcome the participants, or to advertise a new process for example. 
 * *a call to action button*: by default, a "Participate" button redirecting to the participatory processes index. 
-Can be customized in xref:admin:appearance.adoc#edit_homepage_appearance[Appearance] thanks to the Call To Action button fields. 
+Can be customized in xref:admin:settings/appearance.adoc#edit_homepage_appearance[Appearance] thanks to the Call To Action button fields.
 * *an image*: the downloaded image is displayed with an opacity filter, to make sure the welcome text is readable. 
 
 image::settings/homepage_hero_image_back.png[Hero image in Homepage backend content block]
 
-In the screenshot below, the CTA button has been personalized in the  in xref:admin:appearance.adoc#_edit_homepage_appearance[Appearance] section. 
+In the screenshot below, the CTA button has been personalized in the  in xref:admin:settings/appearance.adoc#_edit_homepage_appearance[Appearance] section.
 
 image::settings/homepage_hero_image_front.png[Hero image in Homepage frontend content block]
 
@@ -43,7 +43,7 @@ image::settings/homepage_global_menu.png[Global menu in Homepage frontend conten
 === Sub hero banner
 
 The sub hero banner content block displays the description text of the instance 
-configured in xref:admin:appearance.adoc#_edit_homepage_appearance[Appearance].
+configured in xref:admin:settings/appearance.adoc#_edit_homepage_appearance[Appearance].
 
 image::settings/homepage_sub_hero_banner.png[Sub hero banner in Homepage content block]
 

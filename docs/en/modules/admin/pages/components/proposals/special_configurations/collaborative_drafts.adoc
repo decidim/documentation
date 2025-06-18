@@ -18,7 +18,7 @@ To configure "Collaborative Drafts" in proposals, enable the "Collaborative Draf
 
 image::components/proposals/component_specific_conf.png[Add component form - Specific configurations]
 
-== Create a draft
+=== Create a draft
 
 Once collaborative drafts are enabled, participants can see a "Access collaborative drafts" button in the proposals list. 
 
@@ -37,7 +37,7 @@ reject eventual collaboration requests.
 
 image::components/proposals/collaborative_drafts/collaborative_draft.png[Collaborative draft page]
 
-== Collaborate on a draft
+=== Collaborate on a draft
 
 Other participants can then request to join the collaborative draft to make some changes and appear as authors. 
 
@@ -56,7 +56,7 @@ All authors can edit the collaborative draft by clicking in the "Edit collaborat
 
 The versions history for the draft and its successive changes is available by clicking the "See other versions" link at the bottom. 
 
-== Publish a draft
+=== Publish a draft
 
 Once the original author is satisfied with the collaborative draft, they can publish it by clicking the "Publish" button.
 

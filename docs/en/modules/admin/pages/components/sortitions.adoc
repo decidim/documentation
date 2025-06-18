@@ -7,7 +7,7 @@ and uniform distributions.
 
 For example, it can be useful for sorting candidates for a jury, or participatory budgeting proposals. 
 
-to conduct a sortition, you need a dice or another random way to generate a number from 1 to 6, as well as witnesses.
+To conduct a sortition, you need a dice or another random way to generate a number from 1 to 6, as well as witnesses.
 
 image::components/sortitions/example01.png[Example of a sortition]
 
@@ -61,7 +61,7 @@ then "component b" is first when ordering.
 
 |===
 
-== Create a sortition
+=== Create a sortition
 
 image::components/sortitions/new_sortition_backend.png[New sortition backend form]
 
@@ -101,7 +101,7 @@ number in front of some witnesses. This contributes to the quality and guarantee
 
 |===
 
-== Manage sortitions
+=== Manage sortitions
 
 To start creating and managing sortitions, click in the component title in the navigation bar or in the component list, or click in the 
 image:icons/action_edit.png[Manage component icon] Manage icon on the components list.

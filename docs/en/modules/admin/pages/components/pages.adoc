@@ -12,6 +12,8 @@ image::components/page/example01.png[Example of a page component in a participat
 
 == Configuration
 
+=== Create a page component
+
 To create a Page component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it. 
 
 image::components/page/component_page.png[Add Page component button]
@@ -67,7 +69,7 @@ then "component b" is first when ordering.
 
 |===
 
-== Create a page
+=== Create a page
 
 Once you created the Page component, click the Edit icon to write the content to be displayed on the page. 
 
