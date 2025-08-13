@@ -1,0 +1,287 @@
+= Enquête
+
+== Understand the basics
+
+The Survey component allows participants to answer questionnaires. This is useful when an organization wants to receive private
+feedback from participants. Il permet de définir un ensemble de questions avec plusieurs types de réponses.
+
+NOTE: Once a survey is answered by participants, it's not possible to modify its questions, as that would affect the integrity
+of the answers. If you need to modify the questions, create a new survey and unpublish the original one.
+
+image::components/surveys/example01.png[Example of a survey]
+
+== Configuration
+
+To create a Survey component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
+
+image::components/surveys/component_survey.png[Add Survey component button]
+
+Then:
+
+. Click on the "Components" item in the secondary menu
+. Click the "Add component" button
+. Select "Survey"
+. Fill the component creation form
+
+You can still update this form and the configuration after creating the component, by clicking the
+image:icons/action_configure.png[Configure icon] Configure icon in the components list.
+
+image::components/surveys/component.png[Add component form]
+
+.Ajouter un composant : formulaire de sondage
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Title of this component.
+
+|Rang d'affichage
+|Facultatif
+|The order of the component in relation with the other components. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0"
+then "component b" is first when ordering.
+|===
+
+.Ajouter un composant : Formulaire de sondage - Paramètres globaux
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Portées activées
+|Facultatif
+|Cochez cette case si vous voulez que le filtrage des portées dans ce composant.
+
+|Secteur
+|Facultatif
+|Which xref:admin:settings/scopes.adoc[Scopes] does this component belongs to.
+
+|Réponses acceptées de
+|Facultatif
+|Start date when you want to start receiving answers. Laisser vide pour aucune date spécifique. Expected format: dd/mm/yyyy hh:mm.
+
+|Réponses acceptées jusqu'au
+|Facultatif
+|Date de fin de réception des réponses Laisser vide pour aucune date spécifique. Expected format: dd/mm/yyyy hh:mm.
+
+|Annonce
+|Facultatif
+|A general announcement visible on the survey page.
+
+|Supprimer les réponses lors de la publication du sondage
+|Facultatif
+|Check if you want to delete answers when the survey is published. Useful for testing the survey before publishing it.
+|===
+
+.Ajouter un composant : Formulaire de sondages - Paramètres d'étape
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Autoriser les réponses
+|Facultatif
+|Check if you want to receive answers in this survey for this phase.
+
+|Autoriser les utilisateurs non enregistrés à répondre à l'enquête
+|Facultatif
+|If active, no login is required to answer the survey. This may lead to poor or unreliable data and make you more vulnerable to
+automated attacks. Please use with caution. N'oubliez pas que cette option ne permet qu'une réponse par session du navigateur,
+mais les participants peuvent utiliser l'option de navigation privée et faire plusieurs réponses avec le même appareil.
+
+|Annonce
+|Facultatif
+|A general announcement visible on the survey page for this phase.
+|===
+
+== Create a survey
+
+NOTE: Avez-vous des enquêtes répétitives ? Par exemple, le même formulaire de rétroaction pour chaque processus ? You can have a survey that
+gets copied and is used as a blueprint so you don't have to manually configure the same survey each time. Learn more
+on xref:admin:templates/questionnaires.adoc[Questionnaires templates].
+
+image::components/surveys/edit_questionnaire.png[Choose template form]
+
+First, select a xref:admin:templates/questionnaires.adoc[Questionnaires templates] if you want, or Skip this step.
+
+Then you need to fill the form with the following fields:
+
+image::components/surveys/edit_form.png[Edit survey form]
+
+.Nouveau formulaire d'enquête
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|The title of this survey.
+
+|Description
+|Facultatif
+|The description of the survey.
+
+|Conditions d'utilisation
+|Obligatoire
+|Legal conditions that the participants must meet to answer the survey.
+|===
+
+=== Questions
+
+==== Add a question
+
+Then, click the "Add question" button to start creating your survey.
+Vous pouvez ajouter plusieurs questions par sondage, et les réorganiser ou les supprimer.
+
+Every question must have a statement and a type as a minimum.
+
+image::components/surveys/question_form.png[Question form on survey creation]
+
+.Ajouter un formulaire de question
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Relevé
+|Obligatoire
+|La question elle-même. Par exemple, "Quelle est votre catégorie d'âge?"
+
+|Description
+|Facultatif
+|Additional information on the question if needed.
+
+|Mandatory
+|Facultatif
+|Check if participants must answer this question to complete the survey.
+
+|Limite de caractères
+|Facultatif
+|The maximum characters the answer can have. Laisser à 0 si aucune limite. Compatible avec les types de questions à réponse courte et longue.
+
+|Type
+|Obligatoire
+|Une des réponses suivantes : réponse courte, réponse longue, option simple, option multiple, tri des fichiers, matrice (option unique)
+ou Matrice (option multiple). Voir xref:_question_types[Types de questions] pour plus d'informations.
+|===
+
+image::components/surveys/question_form_backend.png[]
+
+image::components/surveys/question_form_frontend.png[]
+
+==== Questions types
+
+.Question types (click to view images in detail)
+[cols="10h,~,~,~"]
+|===
+|Type |Frontend |Backend |Description
+
+|Réponse courte
+|image:components/surveys/type_short_answer_frontend.png[Type de réponse courte - frontend,link=../_images/components/surveys/type_short_answer_frontend.png]
+|image:components/surveys/type_short_answer_backend.png[Type de réponse courte - backend,link=../_images/components/surveys/type_short_answer_backend.png]
+|Compatible avec la validation "Limite de caractères"
+
+|Réponse longue
+|image:components/surveys/type_long_answer_frontend.png[Type de réponse longue - frontend,link=../_images/components/surveys/type_long_answer_frontend.png]
+|image:components/surveys/type_long_answer_backend.png[Type de réponse longue - backend,link=../_images/components/surveys/type_long_answer_backend.png]
+|Compatible avec la validation "Limite de caractères"
+
+|Option simple
+|image:components/surveys/type_single_option_frontend.png[Type d'option simple - frontend,link=../_images/components/surveys/type_single_option_frontend.png]
+|image:components/surveys/type_single_option_backend.png[Type d'option unique - backend,link=../_images/components/surveys/type_single_option_backend.png]
+|Participants have to choose a single option, with radio buttons. Add at least 2 answer options.
+It's possible to define a "Free text" option, for participants to submit their own answer.
+
+|Options multiples
+|image:components/surveys/type_multiple_option_frontend.png[Type d'option multiple - frontend,link=../_images/components/surveys/type_multiple_option_frontend.png]
+|image:components/surveys/type_multiple_option_backend.png[Type d'option multiple - backend,link=../_images/components/surveys/type_multiple_option_backend.png]
+|Participants can choose multiple options, with checkboxes. Add at least 2 answer options. It's possible to add a validation,
+with the maximum number of choices. It's possible to define a "Free text" option, for participants to submit their own answer.
+
+|Tri en cours
+|image:components/surveys/type_sorting_frontend.png[Type de tri - frontend,link=../_images/components/surveys/type_sorting_frontend.png]
+|image:components/surveys/type_sorting_backend.png[Type de tri - backend,link=../_images/components/surveys/type_sorting_backend.png]
+|Add at least 2 answer options. Participants can drag and drop answer options to order them.
+
+|Fichiers
+|image:components/surveys/type_files_frontend.png[Type de fichiers - frontend,link=../_images/components/surveys/type_files_frontend.png]
+|image:components/surveys/type_files_backend.png[Type de fichiers - backend,link=../_images/components/surveys/type_files_backend.png]
+|Allow participants to upload files.
+
+|Matrice (option Single)
+|image:components/surveys/type_matrix_single_option_frontend.png[Type de matrice (Single option) - frontend,link=../_images/components/surveys/type_matrix_single_option_frontend.png]
+|image:components/surveys/type_matrix_single_option_backend.png[Type de matrice (Single option) - backend,link=../_images/components/surveys/type_matrix_single_option_backend.png]
+|Participants have to choose between rows and columns of single options, with radio buttons.
+
+|Matrice (option multiple)
+|image:components/surveys/type_matrix_multiple_option_frontend.png[Matrice (option multiple) type - frontend,link=../_images/components/surveys/type_matrix_multiple_option_frontend.png]
+|image:components/surveys/type_matrix_multiple_option_backend.png[Type de matrice (option multiple) - backend,link=../_images/components/surveys/type_matrix_multiple_option_backend.png]
+|Participants have to choose between rows and columns of multiple options, with checkboxes.
+|===
+
+==== Conditional questions
+
+Once you saved your survey, you can see that a new "Add display condition" button is added in the questions blocks.
+This feature allows administrators to create complex surveys with conditionality, meaning that some questions are displayed
+only if participants chose a specific answer in the previous questions.
+
+TIP: Conditional questions can be difficult to configure, so be sure to test the survey behaviour before publishing it.
+
+image::components/surveys/conditional_question.png[Display condition in backend]
+
+.Add display condition form
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Question
+|Obligatoire
+|The previous question that is the condition for displaying this question.
+
+|Condition
+|Obligatoire
+|To define the condition needed for this question to be displayed.
+
+|Answer option
+|Obligatoire
+|This field propose the answer options to the questions that need to be chose by participants to realize the condition.
+Only available for "Equal" and "Not Equal" conditions.
+
+|Included text
+|Obligatoire
+|Only available for "Includes text" conditions.
+
+|This condition needs to be satisfied always regardless the status of other conditions
+|Facultatif
+|Check if this condition is essential, even if other conditions would make the display of the question possible.
+|===
+
+=== Separators
+
+You can also add separators between questions, when you have a long survey or different topics.
+They allow to display the forms questions in different steps.
+
+Separators can only be ordered or deleted.
+
+image::components/surveys/separator.png[Separator in front end]
+
+=== Title and description
+
+You can also add a title and description section, to bring clarity to the form and separate it in different sections.
+Coupled with separators, they allow to give titles and descriptions to the survey steps.
+They can also be used alone, in a one page survey.
+
+image::components/surveys/title_description_backend.png[Title and description in back end]
+
+== Exporter les réponses
+
+Il est possible d'exporter les réponses des participants à l'enquête dans différents formats : CSV, JSON, XLSX (Excel) ou PDF.
+
+NOTE: The platform doesn't handle the answers processing nor presenting results or summary to the users, that need to be
+done externally.
+
+== Exemples
+
+Some examples of where this component is used:
+
+* https://consultation.quebec.ca/processes/donneesquebec/f/82/[Data Quebec: participate in its improvement in Québec consultations]
+* https://meta.decidim.org/conferences/decidimfest2020/f/1403/?locale=fr[Enquête d'évaluation DecidimFest2020]
