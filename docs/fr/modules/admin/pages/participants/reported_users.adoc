@@ -1,0 +1,33 @@
+= Utilisateurs signalés
+
+Il y a des cas où les participants pourraient aller à l'encontre des conditions d'utilisation de la plateforme
+, donc il est utile d'avoir la possibilité de signaler et de bloquer les utilisateurs. Vous
+pouvez en savoir plus sur le fonctionnement de la modération et du rapport de contenu dans xref:global_moderations.adoc[Global moderations].
+
+Un participant peut être bloqué dans la section xref:participants/participants.adoc[participants
+dans le panneau d'administration] ou via cette section "Utilisateurs signalés".
+
+N'importe qui peut proposer une modération dans Decidim, via l'icône "Drapeau" dans le profil
+du participant. Après qu'un participant ait cliqué dans cette action, il doit fournir une raison
+pour laquelle il fait ce rapport :
+
+* Contient des bots de clickbait, de publicité, d'escroquerie ou de script.
+* Contient le racisme, le sexisme, les calomnies, les attaques personnelles, les menaces de mort, les demandes de suicide
+ou toute forme de discours haineux.
+* Contient des activités illégales, des menaces de suicide, des informations personnelles ou quelque chose
+que vous pensez n'appartenant pas à la démo.
+* Autre (et l'ajouter)
+
+image:reported_participant_modal.png[Donner la raison de signaler un utilisateur modal]
+image:reported_participant_flag.png[Drapeau dans le profil de la barre latérale]
+
+After clicking in this option you'll need to provide a justification why you're
+blocking this participant:
+
+image:participants_block_user_justification.png[Justifier l'action de l'utilisateur bloqué]
+
+Une fois qu'un participant bloqué tente de se connecter, il verra un message d'erreur :
+
+image:participants_block_user_alert.png[Message affiché à l'utilisateur bloqué]
+
+Après qu'un participant a été bloqué son nom est changé en "Utilisateur bloqué".
