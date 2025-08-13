@@ -1,230 +1,230 @@
 = Debate
 
-The Debate component allows people to have discussions, without voting nor prioritzation. It also allows to close them,
-by adding conclusions or a summary of what the discussion was about.
+El componente Debate permite a la gente tener discusiones, sin votación ni priorización. También permite cerrarlos,
+agregando conclusiones o un resumen de lo que fue el debate.
 
-From this starting point, there could be other configurations, such as:
+Desde este punto de partida, podría haber otras configuraciones, como:
 
-* To allow debates creation by participants
-* To have debates with a fixed started and ending date or open
-* To show endorsements (public supports) or not
+* Permitir la creación de debates por los participantes
+* Para tener debates con una fecha fija de inicio y fin o abierta
+* Mostrar respaldos (apoyo público) o no
 
-Some examples of where this component was used:
+Algunos ejemplos de donde se usó este componente:
 
-* https://meta.decidim.org/processes/roadmap/f/219/[Propose new functionalities for Decidim software in Metadecidim]
+* https://meta.decidim.org/processes/roadmap/f/219/[Proponer nuevas funcionalidades para el software Decidim en Metadecidim]
 
-image:components/debates/example01.png[Debates listing example]
-image:components/debates/example02.png[Debate example]
+image:components/debates/example01.png[Debates listando ejemplo]
+image:components/debates/example02.png[Ejemplo de debate]
 
-To configure the Debate component:
+Para configurar el componente Debate:
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies" or "Conferences".
-. Go to components
-. Click on "Add component" button
-. Click on "Debate"
-. Fill the xref:_add_component[Add component] form
+. Iniciar sesión como administrador
+. Ir al panel de administración
+. En la barra lateral principal, haga clic en el botón para el espacio para el que desea configurar el componente.
+Por ejemplo, podría ser "Procesos", "Colmenas" o "Conferencias".
+. Ir a los componentes
+. Haga clic en el botón "Añadir componente"
+. Haga clic en "Debate"
+. Rellene el formulario xref:_add_component[Añadir componente]
 
-== Add component
+== Añadir componente
 
-image:components/debates/component.png[Add component form]
+image:components/debates/component.png[Añadir formulario de componente]
 
 
-.Add component: Debate form
+.Añadir componente: Formulario de debate
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Name
-|Required
-|What is the title of this component. For instance, "Debates"
+|Nombre
+|Requerido
+|¿Cuál es el título de este componente. Por ejemplo, "Debates"
 
-|Order position
-|Optional
-|Which order will it have in relation to the other debates. Having a lower number means a higher priority.
-For instance, if you have two debates, "Debate a" with weight "10" and "Debate b" with weight "0", then "Debate b" will be first when ordering.
+|Posición del pedido
+|Opcional
+|¿Qué orden tendrá en relación con los demás debates. Tener un número más bajo significa una prioridad mayor.
+Por ejemplo, si tienes dos debates, "Debate a" con el peso "10" y "Debate b" con el peso "0", entonces "Debate b" será el primero en ordenar.
 |===
 
 
-.Add component: Debate form - Global settings
+.Añadir componente: Formulario de debate - Configuración global
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Scopes enabled
-|Optional
-|Check if you want to have Scopes filtering in this component.
+|Ámbitos habilitados
+|Opcional
+|Marque si desea tener filtrado de Scopes en este componente.
 
-|Scope
-|Optional
-|Which xref:admin:scopes.adoc[Scope] does this component belongs to.
+|Alcance
+|Opcional
+|A qué xref:admin:scopes.adoc[Scope] pertenece este componente.
 
-|Global scope
-|Optional
+|Ámbito global
+|Opcional
 |
 
-|Comments enabled
-|Optional
-|Whether you want to have comments in the meetings.
+|Comentarios habilitados
+|Opcional
+|Si desea tener comentarios en las reuniones.
 
-|Comments max length
-|Optional
-|What is the characters limit that participants will have when making comments. Leave 0 for default value.
+|Longitud máxima de los comentarios
+|Opcional
+|¿Cuál es el límite de caracteres que los participantes tendrán al hacer comentarios? Deja 0 para el valor predeterminado.
 
-|Announcement
-|Optional
-|A general announcement that'll be visible on the general debates landing page.
+|Anuncio
+|Opcional
+|Un anuncio general que será visible en la página de inicio de los debates generales.
 |===
 
-In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
-xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
+En los casos en que el espacio que se utilizará este componente tiene xref:admin:spaces/processes/phases. doc[Phases], por ejemplo, en
+xref:admin:spaces/processes.adoc[Participatory Processes], entonces también puede definir diferentes comportamientos por paso.
 
 
-.Add component: Debates form - Step settings
+.Añadir componente: Formulario de debates - Configuración de pasos
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Endorsements enabled
-|Optional
-|Check if you want that participants show public support for these debates.
+|Aprobaciones habilitadas
+|Opcional
+|Compruebe si desea que los participantes muestren apoyo público para estos debates.
 
-|Endorsements blocked
-|Optional
+|Aprobaciones bloqueadas
+|Opcional
 |
 
-|Debate creation by participants enabled
-|Optional
-|Check if you want to allow the creation of new debates by participants.
+|Creación de debate por los participantes habilitada
+|Opcional
+|Marque si desea permitir la creación de nuevos debates por parte de los participantes.
 
-|Comments blocked
-|Optional
-|Whether you want to enable comments for this phase.
+|Comentarios bloqueados
+|Opcional
+|Si desea habilitar los comentarios para esta fase.
 
-|Announcement
-|Optional
-|A general announcement that'll be visible on the general debate landing page.
+|Anuncio
+|Opcional
+|Un anuncio general que será visible en la página de inicio del debate general.
 |===
 
-== Permissions
+== Permisos
 
-An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
-certain actions in the debates:
+Un administrador puede elegir qué tipo de xref:customize:authorizations.adoc[Authorizations] un participante necesita tener que hacer
+ciertas acciones en los debates:
 
-* Create
-* Endorse
+* Crear
+* Respaldar
 
-== Manage debates
+== Gestionar debates
 
-image:components/debates/manage_debates.png[Manage debates table]
+image:components/debates/manage_debates.png[Administrar tabla de debates]
 
-=== Export all
+=== Exportar todo
 
-Allows exporting the comments in the debates in different formats.
+Permite exportar los comentarios en los debates en diferentes formatos.
 
-* Comments as CSV
-* Comments as JSON
-* Comments as Excel
+* Comentarios como CSV
+* Comentarios como JSON
+* Comentarios como Excel
 
-=== New debate form
+=== Nuevo formulario de debate
 
-image:components/debates/new_debate_backend.png[New debate backend form]
+image:components/debates/new_debate_backend.png[Nuevo formulario de backend de debate]
 
 
-.New debate form
+.Nuevo formulario de debate
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Title
-|Required
-|What is the title of this debate. For instance, "How can we improve this process?"
+|Título
+|Requerido
+|¿Cuál es el título de este debate? Por ejemplo, "¿Cómo podemos mejorar este proceso?"
 
-|Description
-|Required
-|What is the description of this debate.
+|Descripción
+|Requerido
+|¿Cuál es la descripción de este debate?
 
-|Instructions to participate
-|Required
-|Add a message for the participants.
+|Instrucciones para participar
+|Requerido
+|Añadir un mensaje para los participantes.
 
-|Information updates
-|Optional
-|Add a message for the participants.
+|Actualización de información
+|Opcional
+|Añadir un mensaje para los participantes.
 
-|xref:_debate_types[Debate type]
-|Required
-|Choose between Finite and Open. Finite means that the debate has a starting and ending date and time, Open means that
+|xref:_debate_types[Tipo de debate]
+|Requerido
+|Elija entre finita y abierta. Finite means that the debate has a starting and ending date and time, Open means that
 there isn't any timeframe.
 
-|Starts at
-|Required if the debate type is Finite
-|Expected format: dd/mm/yyyy hh:ii
+|Comienza el
+|Requerido si el tipo de debate es finito
+|Formato esperado: dd/mm/yyy hh:ii
 
-|Ends at
-|Required if the debate type is Finite
-|Expected format: dd/mm/yyyy hh:ii
+|Termina en
+|Requerido si el tipo de debate es finito
+|Formato esperado: dd/mm/yyy hh:ii
 
-|Category
-|Optional
-|Which category has the debate. Used for filtering in the debates list.
+|Categoría
+|Opcional
+|¿Qué categoría tiene el debate. Utilizado para filtrar en la lista de debates.
 |===
 
-==== Debate types
+==== Tipos de debate
 
-It's possible to have two kinds of debates:
+Es posible tener dos tipos de debates:
 
-. Finite: with a start and end date
-. Open: without a start and end date
+. Finalizar: con fecha de inicio y fin
+. Abrir: sin fecha de inicio y fin
 
-This is shown publically in the debate list.
+Esto se muestra públicamente en la lista de debate.
 
-image:components/debates/debates_list.png[Debates list]
-image:components/debates/debate_finite.png[Finite debate]
+image:components/debates/debates_list.png[Lista de debates]
+image:components/debates/debate_finite.png[Debate finito]
 
-==== Actions
+==== Acciones
 
 
-.Actions
+.Acciones
 |===
-|Icon |Name |Definition
+|Icono |Nombre |Definición
 
-|image:action_edit.png[Edit icon]
-|Edit
-|Edit form for a debate. It's the same form as "New debate".
+|image:action_edit.png[Editar icono]
+|Editar
+|Editar formulario para un debate. Es la misma forma que "Nuevo debate".
 
-|image:action_close.png[Close icon]
-|Close
-|Close form for a debate. For adding conclusions.
+|image:action_close.png[Cerrar icono]
+|Cerrar
+|Cerrar la forma de un debate. Por añadir conclusiones.
 
-|image:action_permissions.png[Permissions icon]
-|Permissions
-|To handle the permissions of this debate, depending on the verification a participant has.
+|image:action_permissions.png[Icono de permisos]
+|Permisos
+|Para manejar los permisos de este debate, dependiendo de la verificación que tenga un participante.
 
-|image:action_delete.png[Delete icon]
-|Delete
-|To delete this debate. Only can be done when there aren't any projects.
+|image:action_delete.png[Borrar icono]
+|Eliminar
+|Eliminar este debate. Sólo se puede hacer cuando no hay ningún proyecto.
 |===
 
-=== Close debate form
+=== Cerrar formulario de debate
 
-A debate can be closed. This is useful for adding conclusions. After a debate was closed it can't be edited nor commented any more
+Se puede cerrar un debate. Esto es útil para añadir conclusiones. Después de cerrar un debate, no se puede editar ni comentar más
 
-image:components/debates/close_debate_backend.png[Close debate backend form]
+image:components/debates/close_debate_backend.png[Cerrar formulario de debate backend]
 
 Take in account that if the debate was created by a participant then only that
 participant can close it.
 
-image:components/debates/close_debate_frontend.png[Close debate frontend form]
+imagen:components/debates/close_debate_frontend.png[Cerrar formulario de debate frontend]
 
 
-.Close debate form
+.Cerrar formulario de debate
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Conclusions
-|Required
-|What is the conclusion for this debate.
+|Conclusiones
+|Requerido
+|¿Cuál es la conclusión de este debate?
 |===
 
-The conclusions are shown publicly with the close date and time.
+Las conclusiones se muestran públicamente con la fecha y hora de cierre.
 
-image:components/debates/debate_closed.png[Closed debate]
+imagen:components/debates/debate_closed.png[Debate cerrado]
