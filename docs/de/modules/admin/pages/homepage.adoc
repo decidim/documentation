@@ -1,0 +1,101 @@
+= Homepage
+
+include::partielle$under-construction.adoc[]
+
+Sie können kontrollieren, wie es die Homepage Ihrer Organisation ist. Dazu haben Sie den Abschnitt Einstellungen -> Startseite im Administrationsbereich:
+
+image::admin_homepage.png[Decidim Admin Homepage]
+
+---
+
+== So funktioniert das
+
+Das bedeutet, dass jeder Abschnitt auf der Homepage **Inhaltsblock** genannt wird.
+
+Zum Beispiel ist dies der *Wie man teilnimmt* Inhaltsblock:
+
+image::homepage_how_to_participate.png[How to participate example]
+
+Um diese Inhalte zu verwalten, müssen Sie den Inhalt zwischen den beiden Spalten ziehen links sind die aktiven und rechts die inaktiven Inhaltsblöcke.
+
+Als Beispiel kannst du hier sehen, wie deine Seite nur mit dem Inhaltsblock *Heldenbild* aussieht:
+
+// TODO: add screenshot
+
+Beim Admin wird dies behandelt mit:
+
+// TODO: add screenshot
+
+In Ihrer Installation können Sie andere Inhaltsblöcke haben, da dies davon abhängt, welche Module Sie aktiv haben. Bitte wenden Sie sich an Ihren Systemadministrator, wenn Sie hier etwas anderes sehen, wie einen fehlenden Inhaltsblock.
+
+== Inhaltselemente
+
+Dies sind die verschiedenen Inhaltsblöcke, die mit den offiziellen Decidim-Modulen aktiviert sind:
+
+=== Heldenbild
+
+image::homepage_hero_image_back.png[Hero image in Homepage backend content block]
+
+image::homepage_hero_image_front.png[Hero image in Homepage frontend content block]
+
+=== Sub-Helden-Banner
+
+Zeigt den Beschreibungstext der Instanz an. Siehe xref:admin:appearance.adoc[Appearance].
+
+image::homepage_sub_hero_banner.png[Sub hero banner in Homepage content block]
+
+=== Fußzeilen-Sub-Helden-Banner
+
+// TODO: I think this should be changed with an HTML text and probably removed
+
+image::homepage_footer_sub_hero_banner.png[Hero image in Homepage content block]
+
+=== Wie man teilnehmen kann
+
+// TODO: I think this should be changed with an HTML text and probably removed
+
+image::homepage_how_to_participate.png[How to participate in Homepage content block]
+
+=== Anstehende Meetings
+
+image::homepage_upcoming_meetings.png[Upcoming meetings in Homepage content block]
+
+=== Letzte Aktivität
+
+image::homepage_last_activity.png[Last activity in Homepage content block]
+
+=== HTML-Block
+
+image::homepage_html_block.png[HTML block in Homepage content block]
+
+=== Hervorgehobene Prozesse
+
+image::homepage_highlighted_processes.png[Highlighted processes in Homepage content block]
+
+=== Hervorgehobene Assemblies
+
+image::homepage_highlighted_assemblies.png[Highlighted assemblies in Homepage content block]
+
+=== Hervorgehobene Initiativen
+
+image::homepage_highlighted_initiatives.png[Highlighted initiatives in Homepage content block]
+
+=== Hervorgehobene Konsultationen
+
+image::homepage_highlighted_consultations.png[Highlighted consultations in Homepage content block]
+
+=== Hervorgehobene Konferenzen
+
+image::homepage_highlighted_conferences.png[Highlighted conferences in Homepage content block]
+
+=== Hervorgehobener Inhalts-Banner
+
+image::homepage_highlighted_content_banner.png[Highlighted content banner in Homepage content block]
+
+=== Organisationsstatistik
+
+image::homepage_organization_statistics.png[Organizations statistics in Homepage content block]
+
+=== Organisations-Metriken
+
+image::homepage_organization_metrics.png[Organzation metrics in Homepage content block]
