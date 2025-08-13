@@ -1,39 +1,39 @@
-= Certificates of Attendance
+= Certificados de presença
 
-Administrators can create Certificates of Attendance to participants.
+Os administradores podem criar certificados de participação dos participantes.
 
-image:spaces/conferences/certificates_of_attendance.png[Conferences Certificate of Attendance (backend)]
+image:spaces/conferências/certificates_of_attendance.png[Certificado de Participação de Conferências (backend)]
 
 
-.Certificate of Attendance form
+.Formulário de certificado de presença
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Main logo
-|Required
-|Logo of the conference of the organization that makes the certificate of attendance.
+|Logotipo principal
+|Obrigatório
+|Logotipo da conferência da organização que faz o certificado de participação.
 
-|Signature
-|Required
-|Image of the person that signs the certificate.
+|Assinatura
+|Obrigatório
+|Imagem da pessoa que assina o certificado.
 
-|Sign date
-|Required
-|Date of the signature. Expected format: dd/mm/yyyy
+|Data de assinatura
+|Obrigatório
+|Data da assinatura. Formato esperado: dd/mm/aaaa
 
-|Signature name
-|Required
-|Name of the person that signs the certificate.
+|Nome da assinatura
+|Obrigatório
+|Nome da pessoa que assina o certificado.
 |===
 
-After the form is filled then there's a button to "Send certificates of attendance" to all the confirmed xref:admin:spaces/conferences/registrations/users.adoc[registrations] of the conference.
+Depois que o formulário for preenchido, há um botão para "Enviar certificados de participação" confirmados pelo xref:admin:spaces/conferences/registrations/users.adoc[registrations] da conferência.
 
-image:spaces/conferences/certificates_of_attendance_button.png[Conferences Certificate of Attendance send button]
+imagem:spaces/conferências/certificates_of_attendance_button.png[Certificado de participação no botão enviar de conferência]
 
-Once it's sent it can't be resent.
+Uma vez enviado, não será possível reenviá-lo.
 
-image:spaces/conferences/certificates_of_attendance_button_disabled.png[Conferences Certificate of Attendance send disabled button]
+imagem:spaces/conferências/certificates_of_attendance_button_disabled.png[Certificado de conferência de envio de botão desativado]
 
-The certificates of attendance are sent to the participants by email in PDF format.
+Os certificados de participação são enviados para os participantes pelo e-mail no formato PDF.
 
-image:spaces/conferences/certificates_of_attendance_pdf.png[Conferences Certificate of Attendance (frontend)]
+imagem:espaços/conferências/certificates_of_attendance_pdf.png[Certificado de Participação de Conferências (frontend)]
