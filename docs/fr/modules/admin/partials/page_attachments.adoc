@@ -1,0 +1,110 @@
+= Fichiers joints
+
+== Understand the basics
+
+Les pièces jointes permettent à un administrateur de télécharger des fichiers statiques dans un espace.
+
+Quand un espace est lancé, Il est important de fournir aux citoyens autant d'informations que possible à leur sujet afin qu'ils puissent participer avec des connaissances.
+That is why it is helpful to add files, documents, images with relevant information.
+
+These documents can be grouped in *Folders*. Par exemple, pour un processus participatif de remodelage d'un carré, des dossiers peuvent être créés avec des informations sur les utilisations possibles, avec des plans, avec des informations économiques, etc.
+
+They can be found on the space xref:admin:spaces/processes/landing_page.adoc[landing page] when the content block is enabled.
+
+image:espaces/attachments.png[Voir les pièces jointes dans l'interface publique]
+
+=== How to find it?
+
+To create and manage attachments, click the *Attachments* item in the left navigation bar of any participatory space.
+
+image:spaces/attachments_admin.png[View the attachments in the administration interface]
+
+There, you are able to manage the attachments and folders, configure them, add new ones, etc.
+
+== Configuration
+
+=== Créer une nouvelle pièce jointe
+
+To create a new attachment, click the "New attachment" button.
+
+image:espaces/attachments_new_form.png[Créer un nouveau formulaire de pièces jointes]
+
+.Créer une pièce jointe
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Nom de la pièce jointe ou de l'image
+|Obligatoire
+|Quel est le titre de cette pièce jointe.
+
+|Rang d'affichage
+|Facultatif
+|Which order it has in relation to the other attachments. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. For instance, if you have two categories, "Attachment a" with weight "10" and "Attachment b" with weight "0" then "Attachment b" will be first when ordering.
+
+|Description
+|Obligatoire
+|A long description explaining what this attachment is about.
+
+|Répertoire
+|Facultatif
+|À quel dossier appartient cette pièce jointe.
+
+|Fichier
+|Obligatoire
+|Télécharger le fichier. Orientation pour le fichier: Doit être une image ou un document. Maximum file size: 10 MB. Les extensions de fichier
+autorisées dépendent de la configuration de votre serveur.
+|===
+
+=== Créer un nouveau dossier
+
+image:spaces/attachments_folders_admin.png[View the folders in the administration interface]
+
+To create and manage attachments folders, click the *Folders* tab.
+
+image:espaces/attachments_new_folder_form.png[Créer un nouveau dossier pour le formulaire de pièces jointes]
+
+.Créer un dossier
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Nom du dossier
+
+|Rang d'affichage
+|Facultatif
+|Which order it has in relation to the other folders. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. For instance, if you have two folders, "Folder a" with weight "10" and "Folder b" with weight "0" then "Folder b" will be first when ordering.
+
+|Description
+|Obligatoire
+|Une longue description expliquant de quoi il s'agit dans ce dossier.
+|===
+
+=== Manage attachments
+
+You can find all the attachments on the list in the administration panel, with:
+
+* *Title*: title of the attachment, given when creating or editing it.
+* *Folder*: folder where the attachment is stored.
+* *Type*: extension type of the attachment.
+* *Size*: size of the attachment in bytes.
+
+You can also access the folders list by clicking the "Folders" tab on top of the attachments list.
+
+=== Actions
+
+.Components actions in component list
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Edit icon]
+|Editer
+|To edit the name, description, order position and the folder of the attachment.
+
+|image:icons/action_delete.png[Delete icon]
+|Supprimez
+|To delete the attachment.
+|===
