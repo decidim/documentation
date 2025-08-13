@@ -1,45 +1,45 @@
-= Governance
+= Gobernanza
 
-== About the code
+== Acerca del código
 
-For making new features, you can made a https://decidim.org/modules[new module] for your own application. If you want to publish it on the website, you can https://decidim.org/contact[send us an message].
+Para crear nuevas características, puedes crear un https://decidim.org/modules[nuevo módulo] para tu propia aplicación. Si quieres publicarlo en el sitio web, puedes https://decidim.org/contact[enviarnos un mensaje].
 
-If you want to add a new feature or a change on the codebase, the process is:
+Si desea agregar una nueva característica o un cambio en el código, el proceso es:
 
-. Suggest your change in https://meta.decidim.barcelona/processes/roadmap[Metadecidim]
-. Wait until Product Team reviews and accept the feature, as it's important to be consistent with the rest of the software, comply with the Social Contract, etc.
-. Then you can make the Pull Request.
-. The PR will get reviewed by:
-.. Product Team: will review the functionality
-.. Mantainers: will review the code quality
+. Sugerir tu cambio en https://meta.decidim.barcelona/processes/roadmap[Metadecidim]
+. Espere hasta que el Equipo de Producto revise y acepte la característica, ya que es importante ser consistente con el resto del software, cumplir con el Contrato Social, etc.
+. Entonces usted puede hacer la Pull Request.
+. El PR será revisado por:
+.. Equipo de Producto: revisará la funcionalidad
+.. Mantainers: revisará la calidad del código
 
 image::workflow-features.png[new feature workflow process]
 
-Some things that you need to take in account about this process:
+Algunas cosas que debes tener en cuenta sobre este proceso:
 
-* If you make the PR without Product Team approval then you could get rejected (after investing lots of time on developing).
-* Proposals can receive endorsements, although these are not decisive for a proposal to be included on the roadmap. The endorsements serve as indicators of the interest of the proposal or the need it covers. The comments to the proposals are also enabled, to collectively elaborate the initial idea and bring it to a productive result.
-* Every Thursday the Product team reviews all new proposals that have been published the previous week
-* If no funding is available it is included in the backlog of the corresponding component or module.
+* Si usted hace las relaciones públicas sin la aprobación del Equipo de Productos, entonces podría ser rechazado (después de invertir mucho tiempo en desarrollo).
+* Las propuestas pueden recibir apoyos, aunque no son decisivas para que se incluya una propuesta en el itinerario. Las aprobaciones sirven de indicadores del interés de la propuesta o de la necesidad que cubre. Los comentarios a las propuestas también están habilitados, para elaborar colectivamente la idea inicial y llevarla a un resultado productivo.
+* Cada jueves el equipo de productos revisa todas las nuevas propuestas que han sido publicadas la semana anterior
+* Si no hay fondos disponibles, se incluye en el registro del componente o módulo correspondiente.
 
-== About the organization
+== Acerca de la organización
 
-Decidim was initially created by the city of Barcelona, but quickly it evolved through the help of Localret and other entities and administrations from Catalonia, such as Diputació de Barcelona (Barcelona Provincial Government), and other catalan cities: Terrassa, Sabadell, Gavà, L'Hospitalet de Llobregat, Badalona and Sant Cugat. You can read more about the history in xref:understand:about.adoc[About].
+Decidim fue creado inicialmente por la ciudad de Barcelona, pero rápidamente evolucionó a través de la ayuda de Localret y otras entidades y administraciones de Cataluña, como el Diputacio de Barcelona (Gobierno Provinista de Barcelona), y otras ciudades catalán: Terrassa, Sabadell, Gava, L’Hospititalet de Llobregat, Badalona y Sant Cugat. Puede leer más sobre la historia en xref:understand:about.adoc[About].
 
-Since our first version in 2017 we've detected that it's necessary for the sustainability of the project to not depend in a given institution such as the city of Barcelona, as that could be problematic for the future. Other open source projects made by public institutions that didn't have a strong community or a sustainability strategy get shut down or slowly die without funding.
+Desde nuestra primera versión en 2017 hemos detectado que es necesario que la sostenibilidad del proyecto no dependa de una institución determinada como la ciudad de Barcelona, ya que esto podría ser problemático para el futuro. Otros proyectos de código abierto realizados por instituciones públicas que no tenían una comunidad fuerte o una estrategia de sostenibilidad se cerraron o poco a poco murieron sin financiación.
 
-Making this kind of open source software from the public institutions and through public contracting law is really difficult and one other issue that we want to tackle with this new organization is about having resources for contracting in-house developers.
+Hacer este tipo de software de código abierto de las instituciones públicas y a través de la legislación de contratación pública es realmente difícil y otro asunto que queremos abordar con esta nueva organización es tener recursos para contratar desarrolladores internos.
 
-With all this on mind, we started with the https://meta.decidim.org/processes/decidim-gov[Metadecidim Governance participatory process] starting in November 2017:
+Con todo esto en mente, comenzamos con el https://meta.decidim.org/processes/decidim-gov[Metadecidim Governance participatory process] a partir de noviembre de 2017:
 
 ****
-A process open to the entire Community regarding the decision-making and representative bodies that we must equip ourselves with in order to build an autonomous, transparent and democratic organisation for the Decidim Project.
+Un proceso abierto a toda la Comunidad en lo que respecta a los órganos de toma de decisiones y representativos con los que debemos dotarnos para construir un proceso autónomo, organización transparente y democrática para el Proyecto Decidim.
 
-The objective is to define an organizational and representation system (internal organs and how they are chosen) that can be transformed into an autonomous entity or association from which the whole community participates and can manage the project at multiple levels
+El objetivo es definir un sistema organizativo y de representación (órganos internos y cómo son elegidos) que pueda transformarse en una entidad o asociación autónoma de la que toda la comunidad participe y pueda gestionar el proyecto a múltiples niveles
 
-The Decidim project needs a system of its own governance that allows it to enjoy sufficient autonomy to continue growing in a sustainable manner, which is why it has to be provided with decision-making and conflict resolution bodies.
+El proyecto Decidim necesita un sistema de gobierno propio que le permita disfrutar de una autonomía suficiente para seguir creciendo de forma sostenible, por eso hay que dotarla de órganos de toma de decisiones y de resolución de conflictos.
 ****
 
-As a result of this participatory process, on February 2019 the Decidim Free Software Association (_Associació de Software Lliure Decidim_ in catalan) was created. You can read more about the https://meta.decidim.org/assemblies/general-assembly-association[General Assembly of the Decidim Association].
+Como resultado de este proceso participativo, en febrero de 2019 se creó la Asociación de Software Libre de Decidim (_Associacioă de Software Lliure Decidim_ in catalan). Puede leer más sobre la asociación https://meta.decidim.org/assemblblies/general-assemblbly-association[Asamblea General de la Asociación Decidim].
 
-On 2021, the Decidim Association https://decidim.org/blog/2021-02-09-the-government-of-catalonia-barcelona-city-council-and-the-free-software-association-decidim-sign-a-collaboration-agreement-to-promote-democratic-participation-with-free-and-open-technologies/[has signed a collaboration agreement  with the Government of Catalonia and Barcelona City Council to promote the development of the platform].
+En 2021, la Asociación de Decidim https://decidim. rg/blog/2021-02-09-the-government-of-catalonia-barcelona-city-council-and-the-free-software-association-decidim-sign-a-collaboration-agreement-to-promote-democratic-participation-with-free-and-open-technologies/[ha firmado un acuerdo de colaboración con el Gobierno de Cataluña y el Ayuntamiento de Barcelona para promover el desarrollo de la plata].
