@@ -1,101 +1,101 @@
-= Homepage
+= Página web
 
 include::partial$under-construction.adoc[]
 
-You can control how it's the Homepage of your organization. To do so you have the Settings -> Homepage section through the Administration panel:
+Usted puede controlar cómo es la página principal de su organización. Para ello tiene la sección Configuración -> Página de inicio a través del panel de administración:
 
 image::admin_homepage.png[Decidim Admin Homepage]
 
 ---
 
-== How this works
+== Cómo funciona
 
-This means that every section in the Homepage is called **content block**.
+Esto significa que cada sección de la página principal se llama **bloque de contenido**.
 
-For instance, this is the *How to participate* content block:
+Por ejemplo, este es el bloque de contenido *Cómo participar*:
 
 image::homepage_how_to_participate.png[How to participate example]
 
-For managing these contents you need to Drag and Drop the contents between the two columns, on the left are the Active and in the Right are the Inactive content blocks.
+Para gestionar estos contenidos necesitas arrastrar y soltar el contenido entre las dos columnas, a la izquierda son los Activos y a la derecha están los bloques de contenido inactivos.
 
-As an example, here you can see how your page will look with only the *Hero image* content block:
-
-// TODO: add screenshot
-
-At the admin this is handled with:
+Como ejemplo, aquí puedes ver cómo se verá tu página con sólo el bloque de contenido de *Imagen del héroe*:
 
 // TODO: add screenshot
 
-In your installation you could have other content blocks, as this depends on which modules you have active. Please contact your system administrator if you see something different here, like a missing content block.
+En el administrador esto es manejado con:
 
-== Content blocks
+// TODO: add screenshot
 
-These are the different content blocks enabled with the official Decidim modules:
+En tu instalación puedes tener otros bloques de contenido, ya que esto depende de los módulos que tienes activos. Póngase en contacto con el administrador del sistema si ve algo diferente aquí, como un bloque de contenido que falta.
 
-=== Hero image
+== Bloques de contenido
+
+Estos son los diferentes bloques de contenido habilitados con los módulos oficiales de Decidim:
+
+=== Imagen del héroe
 
 image::homepage_hero_image_back.png[Hero image in Homepage backend content block]
 
 image::homepage_hero_image_front.png[Hero image in Homepage frontend content block]
 
-=== Sub hero banner
+=== Banner subhéroe
 
-Displays the description text of the instance. See xref:admin:appearance.adoc[Appearance].
+Muestra el texto de descripción de la instancia. Ver xref:admin:appearance.adoc[Appearance].
 
 image::homepage_sub_hero_banner.png[Sub hero banner in Homepage content block]
 
-=== Footer sub hero banner
+=== Banner del subhéroe del pie de página
 
 // TODO: I think this should be changed with an HTML text and probably removed
 
 image::homepage_footer_sub_hero_banner.png[Hero image in Homepage content block]
 
-=== How to participate
+=== Cómo participar
 
 // TODO: I think this should be changed with an HTML text and probably removed
 
 image::homepage_how_to_participate.png[How to participate in Homepage content block]
 
-=== Upcoming meetings
+=== Próximas reuniones
 
 image::homepage_upcoming_meetings.png[Upcoming meetings in Homepage content block]
 
-=== Last activity
+=== Última actividad
 
 image::homepage_last_activity.png[Last activity in Homepage content block]
 
-=== HTML block
+=== Bloque HTML
 
 image::homepage_html_block.png[HTML block in Homepage content block]
 
-=== Highlighted processes
+=== Procesos destacados
 
 image::homepage_highlighted_processes.png[Highlighted processes in Homepage content block]
 
-=== Highlighted assemblies
+=== Colmenas destacadas
 
 image::homepage_highlighted_assemblies.png[Highlighted assemblies in Homepage content block]
 
-=== Highlighted initiatives
+=== Iniciativas destacadas
 
 image::homepage_highlighted_initiatives.png[Highlighted initiatives in Homepage content block]
 
-=== Highlighted consultations
+=== Consultas destacadas
 
 image::homepage_highlighted_consultations.png[Highlighted consultations in Homepage content block]
 
-=== Highlighted conferences
+=== Conferencias destacadas
 
 image::homepage_highlighted_conferences.png[Highlighted conferences in Homepage content block]
 
-=== Highlighted content banner
+=== Banner de contenido resaltado
 
 image::homepage_highlighted_content_banner.png[Highlighted content banner in Homepage content block]
 
-=== Organization statistics
+=== Estadísticas de la organización
 
 image::homepage_organization_statistics.png[Organizations statistics in Homepage content block]
 
-=== Organization metrics
+=== Métricas de la organización
 
 image::homepage_organization_metrics.png[Organzation metrics in Homepage content block]
