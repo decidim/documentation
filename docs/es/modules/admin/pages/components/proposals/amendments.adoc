@@ -1,94 +1,94 @@
-= Amendments
+= Enmiendas
 
-With the amendment feature, participants can propose changes to an already published proposal.
+Con la característica de la enmienda, los participantes pueden proponer cambios a una propuesta ya publicada.
 
-It's useful to propose improvements or corrections, specially useful when redacting laws or normatives with xref:components/proposals/participatory_texts.adoc[Participatory Texts].
+Es útil proponer mejoras o correcciones, especialmente útiles cuando se redacten leyes o normativas con xref:components/proposals/participatory_texts.adoc[Textos participativos].
 
-It has similarities with xref:components/proposals/collaborative_drafts.adoc[Collaborative Drafts], but the main difference
-is that with amendments there is no need to trust the other authors intentions, as every change is reviewed and must be
-approved by the author of the original proposal.
+Tiene similitudes con xref:components/proposals/collaborative_drafts. doc[Borradores colaborativos], pero la principal diferencia
+es que con enmiendas no hay necesidad de confiar en las intenciones de los otros autores, ya que cada cambio es revisado y debe ser
+aprobado por el autor de la propuesta original.
 
-image:components/proposals/amendments/amendment.png[Amendment of a proposal]
+image:components/proposals/amendments/amendment.png[Enmienda de una propuesta]
 
-To configure "Amendments" in proposals component:
+Para configurar "Componente de propuestas" en el componente de propuestas:
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Go to components
-. Click on "Add component" button
-. Click on "Proposals"
-. Check the "Amendments enabled" setting
-. Review and configure the following related settings: "Amendments Wizard help text" in global component settings and "Amendment creation enabled", "Amendment reaction enabled", "Amendment promotion enabled", and "Amendments visibility" in the step component settings.
-. Save the component
+. Iniciar sesión como administrador
+. Ir al panel de administración
+. En la barra lateral principal, haga clic en el botón para el espacio para el que desea configurar el componente.
+Por ejemplo, podría ser "Procesos", "Colmenas" o "Conferencias"
+. Ir a los componentes
+. Haga clic en el botón "Añadir componente"
+. Haga clic en "Propuestas"
+. Marque la opción "Enmiendas habilitadas"
+. Revisar y configurar los siguientes ajustes relacionados: "Asistente de Enmiendas ayuda al texto" en la configuración global de componentes y "Creación de Enmienda habilitada", "Reacción de la enmienda habilitada", "Promoción de la enmienda habilitada" y "visibilidad" en los ajustes de los componentes de los pasos.
+. Guardar el componente
 
-== How it works
+== Cómo funciona
 
-. A participant (Alice) has created a proposal
-. Another participant (Bob) has seen the proposal and wants to make some changes
+. Un participante (Alice) ha creado una propuesta
+. Otro participante (Bob) ha visto la propuesta y quiere hacer algunos cambios
 image:components/proposals/amendments/proposal_to_amend.png[]
-. Bob click on the "Amend proposal" button
-. Bob makes the changes in the "Create amendment draft" form
+. Haga clic en el botón "Recomendar propuesta"
+. Bob hace los cambios en el formulario "Crear borrador de enmiendas"
 image:components/proposals/amendments/create_amendment_draft.png[]
-. Bob checks if there is any similar amendment
-. Bob edits the amendment draft
+. Bob comprueba si hay alguna enmienda similar
+. Bob edita el borrador de la enmienda
 image:components/proposals/amendments/edit_amendment_draft.png[]
-. Bob publishes the amendment draft
+. Bob publica el borrador de la enmienda
 image:components/proposals/amendments/publish_amendment_draft.png[]
 . Anyone can see the amendment draft
 image:components/proposals/amendments/proposal_amendmed.png[]
 image:components/proposals/amendments/amendment_list.png[]
 image:components/proposals/amendments/amendment_view_side_by_side.png[]
-. It's also possible to filter the amended proposals
+. También es posible filtrar las propuestas enmendadas
 image:components/proposals/amendments/amendment_list_filter.png[]
-. Alice receives a notification that Bob has proposed an amendment to her original proposal
+. Alice recibe una notificación de que Bob ha propuesto una enmienda a su propuesta original
 image:components/proposals/amendments/proposal_amendmed_notification.png[]
-. Alice can see the amendment proposal
+. Alice puede ver la propuesta de enmienda
 image:components/proposals/amendments/proposal_amendmed_to_review.png[]
-. Alice can review the amendment proposal
+. Alice puede revisar la propuesta de enmienda
 image:components/proposals/amendments/proposal_amendmed_review.png[]
-. Alice can approve the amendment proposal
+. Alice puede aprobar la propuesta de enmienda
 image:components/proposals/amendments/proposal_amendmed_accepted.png[]
-. Anyone can see the final proposal
+. Cualquiera puede ver la propuesta final
 image:components/proposals/amendments/proposal_amendmed_final.png[]
 image:components/proposals/amendments/proposal_amendmed_amendment_list.png[]
-. Anyone can see the versions history of the proposal
+. Cualquiera puede ver el historial de versiones de la propuesta
 image:components/proposals/amendments/proposal_amendmed_versions.png[]
 
-== Relevant component settings
+== Ajustes relevantes del componente
 
 
-.Proposals component form - Settings related to amendments
+.Forma de componente de propuestas - Configuración relacionada con las modificaciones
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Amendments enabled
+|Enmiendas habilitadas
 |Global
-|Check to enable xref:components/proposals/amendments.adoc[amendments] in proposals. Other settings visible when enabling one.
+|Marca para habilitar xref:componentes/proposals/amendments.adoc[amendments] en propuestas. Otras opciones visibles al activar una.
 
-|Amendments Wizard help text
+|El Asistente de Enmiendas ayuda al texto
 |Global
-|What's the help text visible when creating new amendments.
+|¿Cuál es el texto de ayuda visible al crear nuevas modificaciones.
 
-|Amendment creation enabled
-|Step
-|Participant can amend proposals. See xref:components/proposals/amendments.adoc[Amendments].
+|Creación de enmiendas habilitada
+|Paso
+|El participante puede modificar las propuestas. Vea xref:components/proposals/amendments.adoc[Amendments].
 
-|Amendment reaction enabled
-|Step
-|Proposal's authors will be able to accept or reject Participant's emendations.
+|Reacción de enmienda activada
+|Paso
+|Los autores de la propuesta podrán aceptar o rechazar las enmiendas del participante.
 
-|Amendment promotion enabled
-|Step
-|Emandation authors will be able to promote to Proposal the rejected emendation.
+|Promoción de enmienda activada
+|Paso
+|Los autores de la emanación podrán promover la Propuesta de la emendación rechazada.
 
-|Amendments visibility
-|Step
-|Choose one of "Amendments are visible to all" or "Amendments are visible only to their authors"
+|Visibilidad de las enmiendas
+|Paso
+|Elija una de "Las enmiendas son visibles para todos" o "las enmiendas son visibles sólo para sus autores"
 |===
 
-== Promotion
+== Promover
 
-If a proposal is rejected and the "Amendment promotion enabled" is enabled, then the author that have made the rejected
-amendment will be able to promote to a new proposal the rejected emendation.
+Si se rechaza una propuesta y se habilita la promoción de la "Enmienda activada", entonces el autor que ha rechazado la enmienda
+podrá promover a una nueva propuesta la emendación rechazada.
