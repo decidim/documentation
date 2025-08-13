@@ -1,0 +1,408 @@
+= Initiativen
+
+Eine Initiative ist eine besondere Art von partizipatorischen Prozess, der von jedem (unabhängig von anderen Kanälen oder Beteiligungsräumen) durch die Sammlung von (online und inpersonalen) Unterschriften für die Organisation zur Durchführung einer spezifischen Aktion gefördert werden kann (Änderung einer Verordnung, initiieren Sie ein Projekt, ändern Sie den Namen einer Abteilung oder Straße, etc.).
+
+Die Befürworter einer Initiative können ihre Ziele definieren, Unterstützung sammeln, debattieren, diskutieren verteilen Sie es und definieren Sie Treffpunkte, an denen Unterschriften von den Teilnehmern oder anderen Teilnehmern offen stehenden Debatten gesammelt werden können.
+
+Beispiele: Eine Initiative kann Unterschriften sammeln, um eine Konsultation aller Menschen einer Organisation zu fordern, oder eine Versammlung zu bilden oder einen Prozess der Budgeterhöhung für ein Gebiet oder Gebiet der Organisation zu fordern. Während des Prozesses der Erfassung von Unterschriften können mehr Menschen diese Nachfrage ergänzen und sie in der Organisation vorantreiben.
+
+Initiativen sollen von den anderen Beteiligungsräumen unterschieden werden, weil sie als partizipatorisches Instrument oder Mechanismus von den Teilnehmern gefördert werden können. Mit anderen Worten: Die Initiativen sind Mechanismen für die halbdirekte Demokratie, durch die die Teilnehmer eine bestimmte Aktion von gemeinsamem Interesse für die Organisation fördern können, durch das Sammeln einer bestimmten Anzahl von Unterschriften. In diesem Fall Was die Organisation zu tun hat, ist die Förderung dieser Initiativen zu ermöglichen und den Betroffenen die notwendige technische Unterstützung und Beratung zu bieten. Die Rolle des Administrators der Plattform unterscheidet sich also etwas von der der anderen Partizipationsräume.
+
+Zunächst müssen Sie die verschiedenen Formen von Initiativen konfigurieren. Dies könnte in einer Verordnung (wie ein kommunales normatives oder staatliches Gesetz) angegeben werden. Angabe der Anzahl der für die Verarbeitung der verschiedenen Arten von Initiativen erforderlichen Signaturen. Zum Beispiel Eine Initiative zur Aufnahme eines oder mehrerer Punkte in die Tagesordnung des Gemeinderats erfordert offensichtlich weniger Unterschriften als eine andere Initiative zur Förderung einer verbindlichen Konsultation.
+
+== 0. Initiative-Setup
+
+Wie Initiativen funktionieren, hängt von zwei Dingen ab: Wie das Modul der Initiative über den xref:admin:initiatives_initializer konfiguriert wird. doc[initializer] (im Code) und wie der Initiationstyp im Administrationsbereich konfiguriert wird.
+
+Was die Art der Initiativen betrifft, so muss **ein Administrator** einen definieren. Damit Initiativen an einer Organisation arbeiten können, muss mindestens ein Initiativtyp erstellt und mit mindestens einem Initiativtyp konfiguriert werden. Wenn es nur einen Typ gibt, wird der Teilnehmer nicht die Möglichkeit haben, den Typ der Initiative auszuwählen, wird dieser Schritt im Assistenten zur Erstellung der Initiative übersprungen.
+
+Einige echte Beispiele aus der Stadt Barcelona:
+
+* Um einen Artikel dem Gemeinderat oder der Bezirks-Agenda hinzuzufügen
+* Einen partizipativen Prozess durchführen
+* Neue Baugruppe erstellen
+* Eine Verordnung genehmigen oder ändern
+* Die Durchführung einer Bürgerberatung beantragen
+* Versammlungen (Gemeinderäte oder öffentliches Publikum) einberufen
+
+=== Neues Initiativtyp Formular
+
+image:admin_initiative_type.png[Neues Initiativtyp-Formular]
+
+
+.Admin-Formular für neue Initiative Typ: Allgemeine Informationen
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Titel der Art der Initiative. Zum Beispiel "Neuer Park im Stadtzentrum".
+
+|Beschreibung
+|Benötigt
+|Erläuterung dessen, was mit dieser Initiative getan werden kann.
+
+|Bannerbild
+|Benötigt
+|Ein Bild für diese Initiative. HINWEIS: Im Moment wird dies nicht verwendet.
+|===
+
+
+.Admin-Formular für neue Initiative Typ: Optionen
+|===
+|Feld |Typ |Beschreibung
+
+|Signaturtyp
+|Optional
+|Welche Art von Unterschrift ist zulässig. Optionen sind: Online, In-Person und Mixed. Die Mixed Option erlaubt es dem Teilnehmer, zu wählen, welche Unterschrift die Initiative haben wird.
+
+|Anhänge aktivieren
+|Optional
+|Ob es erlaubt Anhänge an Initiativen hochzuladen.
+
+|Teilnehmer können ihre Online-Signaturen rückgängig machen
+|Optional
+|Kann ein Teilnehmer seine Unterschrift rückgängig machen, wenn er bereits unterzeichnet hat?
+
+|Autoren erlauben, das Ende der Unterschriftensammlung zu wählen
+|Optional
+|Können die Verfasser einer Initiative das Ende der Unterschriftensammlung ändern?
+
+|Ermöglicht Autoren die Auswahl des Bereichs für ihre Initiative
+|Optional
+|Können die Autoren den Bereich ihrer Initiative wählen?
+
+|Unterschriftsbereich aktivieren
+|Optional
+|Dieses Konfigurations-Flag unterstützt keine Offline-Abstimmungen, es aktiviert Subskope und arbeitet mit einem Autorisierungs-Handler zusammen, der dem Benutzer einen Geltungsbereich zuordnt, Stellen Sie sicher, dass Sie diese Autorisierung auswählen, unten in den Autorisierungseinstellungen. Damit es funktioniert, müssen Skizzen auf hierarchische Weise konfiguriert werden: 1 Elternteil - N Child.
+
+|Ermöglicht nur die Erstellung globaler Initiativen
+|Optional
+|Markieren Sie dieses Flag, wenn Sie "Child scope signature" aktiviert haben und den globalen Geltungsbereich als Ihren Elternbereich konfiguriert haben. Damit wird die Auswahl des Anwendungsbereichs im Assistenten zur Erstellung der Initiative übersprungen.
+
+|Werbeausschuss aktivieren
+|Optional
+|Ob es nur einzelne Initiativen zulassen wird (nur von einer Person) oder kollektive Initiativen erlauben (mehrere Promoter, mehrere Personen oder eine Benutzergruppe).
+
+|Mindestanzahl der Ausschussmitglieder
+|Optional
+|Wenn die Option "Förderausschuss aktivieren" aktiviert ist, legt die Mindestanzahl der Ausschussmitglieder fest, um die Initiative zur technischen Validierung zu senden
+
+|Personendaten des Teilnehmers auf Unterschrift sammeln
+|Optional
+|Fügt dem Signaturprozess einen Schritt hinzu. When a participant clicks on the signature button, they will be redirected to a form asking for some personal data. Dies wird mit der PDF-Export-Aktion verwendet, nachdem die Erinnerungszeit abgelaufen ist.
+
+|Rechtliche Informationen über die Erhebung personenbezogener Daten
+|Abhängig davon, ob die Option "Personendaten der Teilnehmer auf der Unterschrift sammeln" aktiviert ist
+|Datenschutzhinweise und Nutzungsbedingungen für die persönlichen Daten des Teilnehmers während des Unterzeichnungsprozesses.
+|===
+
+
+.Admin-Formular für neuen Initiationstyp: Autorisierungseinstellungen
+|===
+|Feld |Typ |Beschreibung
+
+|Autorisierung, um die Dokumentennummer auf Unterschriften zu überprüfen
+|Optional
+|When a participant is making the signature process, will they be asked for an authorization?
+
+|SMS-Code Validierungsschritt zum Signaturprozess hinzufügen
+|
+|Wird sie während des Unterschriftsprozesses um SMS-Validierung bitten? Siehe xref:services:sms.adoc[Konfiguration des SMS-Service].
+|===
+
+=== Neues Initiativ-Typ-Ausgabeformular
+
+Ein Initiativtyp kann auch Bereiche verknüpfen. Für Initiativen muss mindestens ein Bereich konfiguriert werden.
+
+image:admin_initiative_type_scope.png[Neues Initiativtypen]
+
+
+.Admin-Formular für neue Initiative Typ Anwendungsbereich
+|===
+|Feld |Typ |Beschreibung
+
+|Bereiche
+|Benötigt
+|Ein Umfang. Ein Autor kann diesen Bereich bei der Schaffung der Initiative wählen.
+
+|Unterschriften erforderlich
+|Benötigt
+|Anzahl der Unterschriften die die Initiative vor dem Ende haben muss, damit sie akzeptiert werden kann.
+|===
+
+== 1. Initiative erstellen
+
+Diese Aktion wird vom **Autor **ausgeführt** durchgeführt. Der Autor ist ein Teilnehmer, der die Initiative schafft. Abhängig davon, wie das Initiativmodul im Initialisierer konfiguriert wird oder wie der Initialisierungstyp konfiguriert ist, Es kann sein, dass es nach Genehmigung fragen muss, oder es wird sogar nicht die Schaltfläche "Neue Initiative" anzeigen.
+
+image:initiative_list.png[Initiativliste]
+
+Um eine Initiative zu erstellen, muss ein Teilnehmer auf die Schaltfläche "Neue Initiative" klicken. Then they will have a wizard with multiple steps:
+
+=== 1.1 Wählen Sie den Initiativtyp
+
+image:initiative_new_step1.png[Initiative Erstellung: Schritt 1]
+
+=== 1.2 Titel und Beschreibung hinzufügen
+
+image:initiative_new_step2.png[Initiative Erstellung: Schritt 2]
+
+=== 1.3 [Optional] Ähnlichkeitsvergleich
+
+Überprüft den Rest der Initiativen, ob es ähnliche Initiativen gibt. Falls vorhanden, wird das System sie vor dem Fortfahren anzeigen. Dies ist eine Möglichkeit, Doppelte zu vermeiden.
+
+=== 1.4 Ende
+
+image:initiative_new_step3.png[Initiative Erstellung: Schritt 3]
+
+image:initiative_new_step4.png[Initiative Erstellung: Schritt 4]
+
+=== Aktionen nach der Erstellung
+
+Nachdem die Initiative erstellt wurde, kann ein Teilnehmer die Initiativseite sehen, aber bis die Initiative überprüft und von einem Administrator akzeptiert wird durch die technische Validierung wird sie nicht veröffentlicht und für alle Teilnehmer sichtbar.
+
+image:initiative_show.png[Initiative anzeigen]
+
+In der Sidebar kann ein Teilnehmer einige Aktionen durchführen: Bearbeiten, Drucken und Senden an die technische Validierung.
+
+image:initiative_actions.png[Initiative Aktionen]
+
+==== Bearbeiten
+
+Nachdem die Initiative ins Leben gerufen wurde und bevor sie zur technischen Validierung geschickt wurde, **ein Autor** kann die Initiative bearbeiten und korrigieren, falls ein Fehler vorliegt.
+
+image:initiative_edit.png[Initiative bearbeiten]
+
+==== Drucken
+
+Ein Autor kann die Initiative auch ausdrucken.
+
+image:initiative_print.png[Initiative drucken]
+
+==== Technische Validierung
+
+After the author has reviewed how the initiative will look, they can send it to technical validation.
+
+image:initiative_send_to_technical_validation.png[Initiative zur technischen Validierung senden]
+
+== 2. Initiative zur technischen Validierung senden
+
+Diese Aktion wird vom **Autor **ausgeführt** durchgeführt.
+
+Nachdem es vom Autor überprüft wurde, kann es an "Technische Validierung" gesendet werden, aber es hängt von der Konfiguration des Initiatyps ab, , ob die Optionen "Förderausschuss aktivieren" und "Minimum der Ausschussmitglieder" konfiguriert sind.
+
+=== Promoter-Ausschuss
+
+Ein Initiativtyp kann optional von einem Promoterausschuss mit einer Mindestanzahl an Ausschussmitgliedern unterstützt werden. Sobald der Nutzer die Initiative erstellt hat und bevor sie zur technischen Validierung geschickt werden kann, müssen er die Ausschussmitglieder zur Förderung der Initiative einladen.
+
+Wenn der Benutzer die Initiative erstellt hat, erhält er einen Link, um sie mit möglichen Mitgliedern des Ausschusses zu teilen, was so etwas wie `/initiatives/.../committee_requests/new` aussieht
+
+Wenn ein potenzieller Ausschussmitglied den Link öffnet, kann er auf einen Knopf klicken, der es ihm erlaubt, Mitglied des Ausschusses zu werden. Der Autor der Initiative muss dann jede Anfrage genehmigen. Der Autor kann sie genehmigen, indem er auf den "Edit"-Button ihrer Initiative am unteren Rand des Formulars klickt, das er den Ausschussmitgliedern genehmigen oder ablehnen kann.
+
+image:initiative_commitee_members_send_to_technical_false.png[Initiative-Promotor-Komitee: Bildschirm bearbeiten]
+
+Die Initiative kann nicht an die technische Validierung weitergeleitet werden, solange sie nicht die erforderliche Mindestanzahl an Ausschussmitgliedern erreicht. Den Einladungslink finden Sie im Bearbeitungsformular.
+
+image:initiative_edit_commitee_members.png[Initiative-Promotor-Komitee: Bearbeite Bildschirm]
+
+Teilen Sie den Einladungslink mit den Personen, die Sie in Ihrem Ausschuss haben möchten.
+
+image:initiative_commitee_members_ask.png[Initiative-Promotor-Komitee: Bearbeite Bildschirm]
+
+Die eingeladenen Personen mit diesem Link werden die Initiative lesen und beantragen können, dem Ausschuss beizutreten.
+
+image:initiative_commitee_members_sent.png[Initiative-Promotor-Komitee: Bearbeite Bildschirm]
+
+Der Antrag wird gesendet und der Autor kann ihn dann akzeptieren oder ablehnen in der Initiative bearbeiten Formular.
+
+image:initiative_commitee_members_approve.png[initiativ-promotor-committee: edit screen]
+
+image:initiative_commitee_members_send_to_technical_true.png[Initiative-Promotor-Komitee: Seite bearbeiten]
+
+Sobald genügend Personen dem Promoter-Ausschuss beigetreten sind, kann der Initiator-Autor ihn für die technische Validierung
+senden.
+
+== 3. Initiative veröffentlichen
+
+Diese Aktion wird von **einem Administrator** ausgeführt.
+
+Nachdem die Initiative von einem Teilnehmer zur technischen Validierung geschickt wurde, ein Administrator kann alle Initiativen im Admin-Panel ansehen und einige Korrekturen vornehmen.
+
+image:initiative_admin_list.png[Admin Initiativen Liste]
+
+=== Aktionen
+
+Bezüglich der Aktionen in einer Initiative kann ein Administrator "Vorschau", "Bearbeiten", "Antwort" oder "Drucken" eine Initiative verwenden:
+
+image:initiative_admin_list_actions.png[Initiative admin list actions]
+
+|===
+|Icon |Name |Definition
+
+|image:action_preview.png[Vorschau Symbol]
+|Vorschau
+|Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
+
+|image:action_edit.png[Icon bearbeiten]
+|Bearbeiten
+|Formular für Initiative bearbeiten.
+
+|image:action_answer.png[Antwort-Icon]
+|Antwort
+|Erlaubt die Beantwortung einer Initiative.
+
+|image:action_print.png[Icon drucken
+|Drucken
+|Erlaubt es zu drucken.
+|===
+
+=== Komponenten
+
+Once an initiative has been created it gets the Meetings and Page component enabled by
+default. Der Autor der Initiative hat keine Kontrolle über diese - ein Administrator muss sie
+verwalten. Alle anderen üblichen Komponenten können auch von einem Administrator hinzugefügt werden.
+
+image:initiative_admin_show.png[Admin Initiative Serien-Seite]
+
+Es gibt auch andere Funktionen innerhalb von Initiativen, wie Attachments und Moderationen für die Kommentare.
+
+image:initiative_admin_sidebar.png[Admin Initiative Sidebar]
+
+=== Veröffentlichen
+
+Nachdem die Initiative überprüft und von einem Administrator technisch genehmigt wurde, zum Beispiel um zu überprüfen, dass das, was die Initiative fordert, legal ist oder sich an die normativen (dh es ist kommunale Zuständigkeit), dann kann es veröffentlicht werden:
+
+image:initiative_admin_actions.png[Admin Initiative Aktionen]
+
+== 4. Unterzeichnen Sie eine Initiative
+
+Diese Aktion wird von **einem Teilnehmer** ausgeführt.
+
+Nachdem die Initiative veröffentlicht wurde, wird sie in der Auflistungsseite der Initiativen (/initiatives):
+
+image:initiative_list_published.png[Initiativliste nachdem sie veröffentlicht wurde]
+
+image:initiative_admin_show_published.png[Admin Initiative-Show nachdem sie veröffentlicht wurde]
+image:initiative_show_published.png[Initiative Show nachdem sie veröffentlicht wurde]
+
+Und autorisierte Teilnehmer können es unterzeichnen:
+
+image:initiative_admin_show_published_detail.png[Admin-Initiative-Show nach Veröffentlichung (Detail)]
+
+image:initiative_show_signed.png[Initiative zeigen, nachdem es signiert wurde]
+
+== 5. Signaturen exportieren
+
+Diese Aktion wird von **einem Administrator** ausgeführt. Nachdem die Initiative begonnen hat, Signaturen zu erhalten, gibt es eine Option zum Exportieren einer PDF-Datei der Signaturen:
+
+image:initiative_actions_export.png[Initiative Aktionen mit Export in PDF]
+
+image:initiative_actions_export_pdf.png[Initiative exportiertes PDF]
+
+== 6. Eine Initiative beantworten
+
+Nachdem die Initiative alle Unterschriften gesammelt hat, kann sie von einem Administrator beantwortet werden. Eine Initiativantwort hat nicht verschiedene Typen.
+
+image:initiative_backend_answer.png[Initiative backend answer]
+
+image:initiative_frontend_answer.png[Initiative Frontend Antwort]
+
+== Initiativstatus
+
+Um den Status besser zu verstehen, ist dies eine Zusammenfassung:
+
+|===
+|Status |Erklärung
+
+|Erstellt
+|Die Initiative wurde ins Leben gerufen, ist aber noch nicht für jeden Besucher oder den Rest der Teilnehmer öffentlich zugänglich.
+
+|Technische Validierung
+|Die Initiative muss von einem Administrator überprüft werden. Von hier aus kann es "verworfen" oder "veröffentlicht" werden
+
+|Abgelaufen
+|Die Initiative wurde von einem Administrator nicht überprüft und wurde nicht genehmigt, und die Gültigkeitsdauer ist abgelaufen.
+
+|Verworfen
+|Die Initiative wurde von einem Administrator überprüft und verworfen, so dass sie nicht veröffentlicht wurde.
+
+|Veröffentlicht
+|Die Initiative wurde von einem Administrator überprüft und genehmigt, so dass sie veröffentlicht wurde.
+
+|Abgelehnt
+|Der Zeitraum für die Rücknahme der Unterschriften ist abgelaufen und es gab nicht genügend Unterschriften.
+
+|Akzeptiert
+|Der Zeitraum für die Rücknahme der Unterschriften ist abgelaufen und es gab genügend Unterschriften.
+|===
+
+[plantuml]
+@startuml
+:Erstellt;
+:Technische Validierung;
+wenn (die maximale Validierungszeit überschritten?) dann (ja)
+  #pink:Abgelaufen;
+  kill;
+elseif (validiert?) dann (nein)
+  #pink:Verworfen;
+  Kill;
+sonst (ja)
+  #palegreen:Veröffentlicht;
+  wenn (genug Signaturen?) dann (nein)
+    #pink:Ablehnt
+    (nicht genug Signaturen);
+    Kill;
+  else (ja)
+    #palegreen:Akzeptiert
+    (genug Signaturen);
+    stop;
+  endif;
+endif
+@enduml
+
+Schließlich sind dies alle relevanten Einstellungen in jedem Moment der Initiativen Life cicle:
+
+[plantuml]
+@startuml
+(*) --> "Erstelle eine neue Initiative"
+wenn "Hat nur einen Typ? dann
+--> [Yes] "Ausfüllen des Initiativformulars"
+else
+--> [No] "Wählen Sie den Initiativ-Typ"
+--> "Ausfüllen des Initiativformulars"
+Endif
+Partition erstellt {
+  wenn "Ist der Benutzer eine Benutzergruppe? dann
+  --> [Yes] "Zur technischen Validierung senden"
+  else
+  --> [No] Sammeln Sie die Mindestzahl der Ausschussmitglieder (2 standardmäßig eingestellt)
+  --> "Technische Validierung"
+  Endif
+}
+Partition Validierung {
+  wenn "Hat die maximale Gültigkeitsdauer (60 Tage standardmäßig überschritten)? dann
+    --> [Yes] "Abgelaufen"
+  else
+    --> [No] wenn "Wird von einem Administrator akzeptiert? dann
+      --> [No] "Verworfen"
+      else
+      --> [Yes] "Veröffentlichen"
+      endIf
+  endIf
+}
+partition Veröffentlicht {
+  --> "Signaturprozess"
+  if "Hat das konfigurierte Zeitfenster fuer die Validierung (60 Tage standardmäßig bestanden)?"
+    --> [Yes] "Abgelaufen"
+  else
+    --> [No] PDF in die Unterschriften
+    --> Prüfen Sie Unterschriften mit Offline-Unterschriften auf Duplikate (wenn die Initiative sie hat)
+    --> wenn "Hat die Initiative die erforderliche Anzahl an Unterschriften erhalten? dann
+      --> [No] Ablehnt
+    else
+      --> [Yes] Akzeptiert
+    endIf
+  endIf
+}
+--> (*)
+@enduml
