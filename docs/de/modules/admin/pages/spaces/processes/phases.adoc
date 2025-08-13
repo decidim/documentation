@@ -1,0 +1,89 @@
+= Phasen
+
+Ein partizipatorischer Prozess ist eine Abfolge von Phasen, die rechtzeitig bestellt werden. Abhängig von welcher Phase der Prozess-Zeitleiste Sie
+sind, können Sie einige Funktionen aktivieren oder deaktivieren.
+
+Idealerweise sind die Phasen eines partizipativen Prozesses immer gleich und werden nicht verändert, damit die Teilnehmer wissen, was
+die Regeln und den Zeitrahmen sind und ihr Leben organisieren können, um zu wissen, wann es für sie am besten wäre, an diesem Prozess teilzunehmen.
+
+Als Leitlinie kann die Standardstruktur eines partizipatorischen Prozesses wie folgt lauten:
+
+. Präsentation
+. Diagnose
+. Vorschlagserstellung und Debatte
+. Priorisierung von Vorschlägen
+. Bewertung von Vorschlägen
+. Überwachung
+
+Die Teilnehmer können den Link zu verschiedenen Phasen eines partizipatorischen Prozesses in der Kopfzeile des partizipatorischen Prozesses
+im Link "Prozessphasen" finden. Hier sehen Sie die vollständige Beschreibung und Erläuterung der Phasen. Die aktive Phase
+wird hervorgehoben.
+
+image:process_phases_header.png[Header mit Prozessphasenlink]
+
+image:process_phases.png[Prozessphasen Erklärung]
+
+== Eine neue Phase erstellen
+
+image:process_phases_list.png[Phasen eines partizipatorischen Prozess]
+
+Zum Erstellen einer neuen Phase eines partizipatorischen Prozesses:
+
+. Als Administrator anmelden
+. Gehe zum Teilnahmeprozess Abschnitt in der Sidebar
+. Klicken Sie auf die Aktion zum Bearbeiten des partizipativen Prozesses
+. Klicken Sie auf den Phasen-Link in der Seitenleiste
+. Klicken Sie auf die Schaltfläche "Neue Phase"
+
+image:process_phases_new_form.png[Erstelle eine neue partizipatorische Prozessphasenform]
+
+
+.Besprechung erstellen
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Wie lautet der Titel für diese Phase.
+
+|Beschreibung
+|
+|Eine lange Beschreibung, die erklärt, wofür diese Phase steht.
+
+|Startdatum
+|
+|An welchem Tag diese Phase beginnt. Erwartetes Format: dd/mm/yyy
+
+|Enddatum
+|
+|An welchem Tag diese Phase endet. Erwartetes Format: dd/mm/yyy
+
+|Aktionspfad aufrufen
+|
+|Wohin wird der Button verlinken. So könnte sie beispielsweise auf das neue Vorschlagsformular verweisen. Benutze hier partielle Pfade, nicht vollständige
+-URLs. Akzeptiert Buchstaben, Zahlen, Bindestriche und Schrägstriche und muss mit einem Buchstaben beginnen. Wenn nicht gesetzt, wird der Button nicht angezeigt.
+
+|Aktionstext aufrufen
+|
+|Was sagt der Knopf. Zum Beispiel könnte es "Vorschlag erstellen" heißen. Wenn nicht gesetzt, wird der Button nicht angezeigt.
+|===
+
+== Aktionen
+
+Nach der Erstellung einer Phase hast du folgende Aktionen:
+
+|===
+|Icon |Name |Definition
+
+|image:action_activate.png[Symbol aktivieren]
+|Aktivieren
+|Um diese Phase zur aktiven zu machen.
+
+|image:action_edit.png[Icon bearbeiten]
+|Bearbeiten
+|Diese Phase bearbeiten.
+
+|image:action_delete.png[Icon löschen
+|Löschen
+|Diese Phase löschen.
+|===
