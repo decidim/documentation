@@ -1,0 +1,113 @@
+= Réponses
+
+Les réponses aux propositions permettent à un administrateur ou à un évaluateur d'examiner une proposition et de lui donner une réponse officielle.
+
+image:components/propositions/proposal_answer_state_accepted.png[État de la réponse à la proposition : acceptée]
+
+Pour répondre à une proposition :
+
+. Se connecter en tant qu'administrateur ou évaluateur
+. Aller au panneau d'administration
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+Par exemple, il peut s'agir de "Processus", d'"Assembles", ou de "Conférences"
+. Cliquer dans le composant "Propositions"
+. Rechercher la proposition auquelle vous souhaitez répondre
+. Cliquer sur le bouton "Répondre à la proposition" image:action_answer.png[Icône de réponse à la proposition]
+. Remplissez le formulaire
+
+Alternativement, vous pouvez aussi :
+
+. Se connecter en tant qu'administrateur ou évaluateur
+. Rechercher la proposition auquelle vous souhaitez répondre
+. Cliquez dans le bouton de réponse à la proposition dans l'en-tête image:components/propositions/answer_button_header.png[Bouton de réponse à la proposition]
+. Remplissez le formulaire
+
+== Page de réponse
+
+La page de réponse a trois sections :
+
+=== Métadonnées
+
+Il a des informations générales sur la proposition, comme le lien, qui est l'auteur, l'organe de proposition, combien de soutiens, d'approbations, de commentaires, etc.
+
+=== Notes privées
+
+Permet à un administrateur ou un évaluateur de laisser des notes qui ne seront pas visibles au public.
+
+=== Réponse à la proposition
+
+Permet à un administrateur de répondre à une proposition.
+
+image:components/propositions/proposal_answer.png[Formulaire de proposition de réponse]
+
+
+.Répondre au formulaire de proposition
+|===
+|Champ |Type |Description
+
+|Etat interne
+|Obligatoire
+|Choisissez l'un des éléments suivants : acceptés, rejetés ou évalués
+
+|Répondre
+|Facultatif
+|Une explication sur les raisons pour lesquelles la proposition a été acceptée, rejetée ou évaluée
+
+|Coûts
+|Requis si "Activer les coûts sur les réponses aux propositions" est activé dans les paramètres du composant de propositions et s'il est accepté
+|Un nombre qui indique le coût de la proposition
+
+|Rapport de coût
+|Requis si "Activer les coûts sur les réponses aux propositions" est activé dans les paramètres du composant de propositions et s'il est accepté
+|Une explication du coût de la proposition
+
+|Période d'exécution
+|Requis si "Activer les coûts sur les réponses aux propositions" est activé dans les paramètres du composant de propositions et s'il est accepté
+|Combien de temps prendra la proposition pour être exécutée
+|===
+
+== États
+
+Si le composant Propositions définissant « Publier les réponses immédiatement » est coché, alors la réponse de la proposition sera visible au public immédiatement.
+
+L'état est visible sur la page de proposition et la carte.
+
+image:components/propositions/proposal_answer_state_accepted_card.png[État de réponse de la carte de proposition : accepté]
+
+=== Évaluation en cours
+
+image:components/proposals/proposal_answer_state_evaluating.png[État de réponse à la proposition : Évaluation]
+
+=== Accepté
+
+Une fois les propositions acceptées, elles peuvent être importées dans le composant xref:components/budgets.adoc[budgets].
+
+image:components/propositions/proposal_answer_state_accepted.png[État de la réponse à la proposition : acceptée]
+
+=== Rejeté
+
+image:components/proposals/proposal_answer_state_rejected.png[État de réponse de la proposition : rejeté]
+
+== Publication
+
+Vous pouvez contrôler quand les réponses seront publiées en utilisant la case à cocher "Publier les réponses immédiatement".
+
+Pour activer la publication automatique, vous devrez la vérifier.
+
+Par contre, si vous voulez contrôler quand publier la réponse à une proposition ou à plusieurs propositions, vous devrez suivre ces étapes :
+
+. Se connecter en tant qu'administrateur ou évaluateur
+. Aller au panneau d'administration
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+Par exemple, il peut s'agir de "Processus", d'"Assembles", ou de "Conférences"
+. Cliquer dans le composant "Propositions"
+. Rechercher la proposition auquelle vous souhaitez répondre
+. Cliquez dans la case à gauche de la proposition que vous souhaitez publier
+. Cliquez sur le bouton "Actions"
+. Cliquez sur l'option "Publier les réponses"
+image:components/propositions/proposal_answer_publish.png[Proposition réponse publication: action]
+. Cliquez sur le bouton "Publier"
+image:components/propositions/proposal_answer_publish_button.png[Proposition réponse publication: publish button]
+
+NOTE: If you have unchecked the "Publish proposal answers immediately", answered the proposals and then checked the option again, the answers will not be
+published automatically. Vous devrez toujours publier les réponses manuellement avec le bouton "Actions".
