@@ -1,29 +1,29 @@
-= My data
+= Meus dados
 
-In this section participants can request a file with all the data that they've provided to the platform.
+Nesta seção, os participantes podem solicitar um arquivo com todos os dados que forneceram à plataforma.
 
-image:features/my_account/my_data.png[My data]
+image:features/minha_account/meu_data.png[Meus dados]
 
-To request the data:
+Para solicitar os dados:
 
-. Sign in as a participant
-. Click in the name of the participant in the header
-. Click in "My account"
-. Click in "My data" in the sidebar
-. Click in "Request data"
-. Wait a couple of minutes so the files are generated. It could depend in how many proposals, comments, etc you've made
-. Go to your email account and find the received email
-. Click in "Download"
-. Open it with a support zip software
-. Enter the password that you've received in the email
-. Unzip or extract the contents
+. Iniciar sessão como participante
+. Clique no nome do usuário no cabeçalho
+. Clique em "Minha conta"
+. Clique em "Meus dados" na barra lateral
+. Clique em "Solicitar dados"
+. Aguarde alguns minutos para que os arquivos sejam gerados. Depende em quantas propostas, comentários, etc. você fez
+. Vá para sua conta de e-mail e encontre o e-mail recebido
+. Clique em "Download"
+. Abrir com suporte a um software zip
+. Digite a senha que recebeu no e-mail
+. Descompacte ou extraia o conteúdo
 
-image:features/my_account/my_data_email.png[My data]
+image:features/minha_account/meu_data_email.png[Meus dados]
 
-== Zip applications
+== Aplicativos Zip
 
-For opening the zip file, the software that you use need to support encryption with the AES-256 algorithm. Depending on your operating system you have multiple alternatives.
+Para abrir o arquivo zip, o software que você usa precisa suportar criptografia com o algoritmo AES-256. Dependendo do seu sistema operacional você tem várias alternativas.
 
 * Windows: https://www.7-zip.org/[7-Zip]
 * Mac: https://www.keka.io[Keka]
-* GNU/Linux: File Roller (available through your package manager) or https://peazip.github.io/[PeaZip]
+* GNU/Linux: Rolagem de Arquivos (disponível através do seu gerenciador de pacotes) ou https://peazip.github.io/[PeaZip]
