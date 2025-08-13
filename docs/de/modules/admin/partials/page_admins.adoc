@@ -1,67 +1,102 @@
-= Space Admins
+= Space administrators
 
-You can give permissions to users with special rights in a space,
-so they can only have access to some of the administration pages in this space.
-These roles are administrators, moderators, collaborators, or valuators.
+== Understand the basics
 
-* Administrators: they can administer the space and change the space settings.
-* Collaborators: they can see the space and its components before it's published and view the space settings.
-They can't change anything.
-* Moderators: they can see the reported contents of the space and hide or unhide them.
-* Valuators: they can evaluate proposals. Used by participatory budgeting processes.
+You can give specific permissions to users in the different spaces, so they can only have access to some of the administration actions.
+These roles are administrators, moderators, collaborators, and valuators.
 
-To invite them, in the space's submenu, go to *Space admins* and click on *New space admin*. This depends in the kind of space
-that you're, for instance for participatory processes it'd be *Process admins* and *New process admin*.
+* *Administrators*: they can administer the space and change the space settings.
+* *Collaborators*: they can see the space and its components before it's published and view the space settings.
+They can't edit anything.
+* *Moderators*: they can see the reported contents of the space and hide or unhide it.
+* *Valuators*: they can evaluate proposals, give them answers and update their statuses.
 
-== New space admin form
+=== How to find it?
 
-image:spaces/admins_form.png[New space admin form]
+To configure space administrators, click the "Process admins" or "Assembly admins" item in the corresponding space.
 
+image::spaces/admins_list.png[Administrators of space]
 
-.New space admin form
+== Konfiguration
+
+=== Administratoren verwalten
+
+You can find all the administrators on the list in the administration panel, with:
+
+* *Name*: name of the administrator account.
+* *Email*: email of the administrator account.
+* *Last log in date*: last time the administrator was logged in.
+* *Invitation accepted at*: date when the administrator accepted the invitation by clicking the link in the invitation email.
+* *Role*: administrator role.
+
+=== Aktionen
+
+.Actions in administrators list
+[cols="10h,20h,~"]
 |===
-|Field |Type |Description
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Edit icon]
+|Bearbeiten
+|To edit the administrator role.
+
+|image:icons/action_delete.png[Delete icon]
+|Löschen
+|To delete the space administrator rights. It doesn't delete the account of the administrator.
+|===
+
+=== Add a space administrator
+
+Click on the *New space admin* button (depending in the kind of space you're in).
+
+image:spaces/admins_form.png[New space administrator form]
+
+.New space administrator form
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
 
 |Name
-|Required
-|What is the name of the new admin.
+|Benötigt
+|What's the name of the new administrator.
 
-|Email
-|Required
-|What is the email of the new admin, so they can receive the invitation.
+|E-Mail
+|Benötigt
+|What's the email of the new administrator, so they can receive an invitation if they don't already have an account.
 
-|Role
-|Required
-|Which role does this admin will have in the participatory process? Can be any of Administrator, Collaborator, Moderator, or Valuator.
+|Rolle
+|Benötigt
+|Which role does this administrator should have in the space. Kann jeder von Administrator, Kollaborator, Moderator oder Valuator sein.
 |===
 
-== Roles
+=== Administratoren
 
-=== Administrators
-
-A space administrator can administer the space and change the space settings. It can also invite new space administrators.
+Ein Raum-Administrator kann den Raum verwalten und die Raum-Einstellungen ändern. They can also invite new space administrators.
+When managing the space, they would only see the following views and tabs.
 
 image:spaces/admins_role_admin01.png[Process administrators view 01]
 
 image:spaces/admins_role_admin02.png[Process administrators view 02]
 
-=== Collaborators
+=== Mitarbeiter
 
-A space collaborator can only see the space before it's published.
+A space collaborator can preview a space before it's published.
 
-image:spaces/admins_role_collaborator.png[Process collaborators view]
+image:spaces/admins_role_collaborator.png[Prozesskollaboratorenansicht]
 
-=== Moderators
+=== Moderatoren
 
-A space moderator can review the reported contents of the space and hide or unhide them.
+Ein Moderator kann den gemeldeten Inhalt des Raumes überprüfen und ihn ausblenden oder enthüllen. They can also
+access the reported content in the global moderation panel, but don't see the contents reported from other spaces.
 
-image:spaces/admins_role_moderator.png[Process moderators view]
+image:spaces/admins_role_moderator.png[Prozessmoderatorenansicht]
 
-=== Process valuators
+=== Valuators
 
-A space valuator can review the proposals of the space. They can:
+A space valuator can review the proposals of the space that were assigned to them, by:
 
-* change the status of the proposals, by accepting or rejecting them
-* add a monetary value to the proposals, so they can be voted with the budget component.
+* change the status of the proposals, by accepting or rejecting them.
+* give an answer to the proposals.
+* fügen Sie den Vorschlägen einen monetären Wert hinzu, so dass sie mit der Haushaltskomponente abgestimmt werden können.
 
-image:spaces/admins_role_valuator.png[Process valuators view]
+image:spaces/admins_role_valuator.png[Prozess-Bewertung ansicht]
