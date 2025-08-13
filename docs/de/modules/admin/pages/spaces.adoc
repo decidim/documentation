@@ -1,0 +1,12 @@
+= Räume
+
+Die Partizipationsräume sind die Kanäle, über die die Bürger teilnehmen können, wenn öffentliche Entscheidungen getroffen werden. By default
+the platform is provided with participatory processes, initiatives, consultations, conferences, votings and assemblies, but
+any organization can develop its own mechanisms through xref:develop:modules.adoc[Modules].
+
+Sie sind über die Haupt-Seitenleiste im Administrationsbereich und auch über das Hauptmenü im
+öffentlichen Interface zugänglich.
+
+image:spaces_admin.png[Leerzeichen in der admin Seitenleiste]
+
+image:spaces_visitor.png[Leerzeichen sichtbar in der öffentlichen Schnittstelle]
