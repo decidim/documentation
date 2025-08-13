@@ -1,0 +1,23 @@
+= Hilfe-Abschnitte
+
+Das erste Mal, wenn ein Besucher zu jeder Raumseite geht, wird er ein Informationsfenster über das Thema dieses Raumes sehen.
+
+So wird das Informationsfeld für Teilnehmer und Besucher angezeigt:
+
+image:help_sections_frontend.png[Hilfe-Abschnitte: frontend]
+
+Sie können dieses Feld ausblenden, indem Sie auf den Schließen-Button [X] klicken. Das erinnert sich an die Anwendung. Sie können dieses Feld erneut öffnen, indem Sie auf [Hilfe: ?] klicken.
+
+image:help_sections_frontend_hide.png[Hilfe-Abschnitte: versteckt]
+
+Da dies etwas ist, was von Ihrer gegebenen Installation abhängt, kann ein Administrator diese *Hilfe-Abschnitte* anpassen und sie an Ihre Bedürfnisse anpassen.
+
+image:help_sections_backend.png[Hilfe-Abschnitte: backend]
+
+== Deaktivieren
+
+Sie können diese Informationsfelder deaktivieren, indem Sie den Inhalt für jede Sprache leer lassen:
+
+image:help_sections_disable_backend.png[Hilfe-Bereich in admin] deaktivieren
+
+image:help_sections_disable_frontend.png[Deaktivierter Hilfe-Abschnitt]
