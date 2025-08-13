@@ -1,100 +1,100 @@
-= Pages
+= páginas
 
-You can configure static Pages, which contains general information to the participants of the platform.
+Você pode configurar páginas estáticas, que contém informações gerais para os participantes da plataforma.
 
-As an example, some of these pages could refer to:
+Como exemplo, algumas dessas páginas poderiam referir-se a:
 
-* What's this platform? Who's the organization?
-* How can I participate here?
-* How can I create and verify my account?
-* What are the terms of conditions and the legal information about this platform?
+* Qual é esta plataforma? Quem é a organização?
+* Como posso participar aqui?
+* Como posso criar e verificar minha conta?
+* Quais são os termos de condições e a informação legal sobre esta plataforma?
 
-These pages will be available to all the participants through the **Help** top menu section and also at the footer sections. You can define **Topics** to categorize all of these pages.
+Estas páginas estarão disponíveis para todos os participantes através da seção de menu **Ajuda** e também nas seções de rodapé. Você pode definir **Tópicos** para categorizar todas essas páginas.
 
-As the platform enables the Participants to sign up (register) and save some of their personal data, it's important that there's an especial page, called **Terms and Conditions**. This is where you need to put your legal terms, for instance which entity has control of this data, how much time does this data will be saved, etc. This should be (ideally) written and (at least) reviewed by a lawyer.
+Como a plataforma permite que os Participantes se cadastrem e salvem alguns de seus dados pessoais, É importante que haja uma página especial, chamada **Termos e Condições**. É aqui que você precisa colocar seus termos legais, por exemplo, qual entidade tem o controle desses dados. quanto tempo esses dados serão salvos, etc. Isto deve ser (idealmente) escrito e (pelo menos) revisado por um advogado.
 
-== Create a new page
+== Criar uma nova página
 
-For creating a new page, you need to:
+Para criar uma nova página, você precisa:
 
-. Sign in as admin
-. Click in Pages in the sidebar menu
-. Click in "Create page"
+. Iniciar sessão como administrador
+. Clique em Páginas no menu da barra lateral
+. Clique em "Create page"
 
 image::pages_backend_form.png[Backend: new page form]
 
 
-.New page form
+.Formulário em nova página
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Title
-|Required
-|Title of this page. For instance: "How to participate?"
+|Título
+|Obrigatório
+|Título desta página. Por exemplo: "Como participar?"
 
-|URL Slug
-|Required
-|String that will be used on the URL. Use partial paths, not full URLs here. Accepts letters, numbers, dashes and slashes, and must start with a letter. For instance if the slug is "hello-world" and your domain is "https://example.org", your page will be at "https://example.org/hello-world"
+|Slug de URL
+|Obrigatório
+|String que será usada na URL. Use caminhos parciais, não URLs completas aqui. Aceita letras, números, traços e barras e deve começar com uma letra. Por exemplo, se o slug é "hello-world" e seu domínio é "https://example.org", sua página estará em "https://example.org/hello-world"
 
-|Content
-|Required
-|All the text of the page.
+|Conteúdo
+|Obrigatório
+|Todo o texto da página.
 
-|Topic
-|Optional
-|In which Topic it'll be in.
+|Tópico
+|Opcional
+|Em que tópico será inserido.
 
-|Weight
-|Optional
-|Which order will it have in relation with the other pages. Having a lower number means a higher priority. For instance, if you have two pages, "Page a" with weight "10" and "Page b" with weight "0", then "Page b" will be first when ordering.
+|Peso
+|Opcional
+|Qual a ordem que terá em relação às outras páginas. Ter um número menor significa uma prioridade mais alta. Por exemplo, se você tem duas páginas, "Página a" com peso "10" e "Página b" com peso "0", em seguida "Página b" será o primeiro durante a ordenação.
 
-|Show in the footer
-|Optional
-|Wether you want to show this page in the general footer (available in every page).
+|Mostrar no rodapé
+|Opcional
+|Wether que você deseja mostrar esta página no rodapé geral (disponível em cada página).
 |===
 
 image::pages_frontend_footer.png[Frontend: example of a page in the footer]
 
-== Create a new topic
+== Criar um novo tópico
 
-For creating a new topic, you need to:
+Para criar um novo tópico, você precisa:
 
-. Sign in as admin
-. Click in Pages in the sidebar menu
-. Click in "Create topic"
+. Iniciar sessão como administrador
+. Clique em Páginas no menu da barra lateral
+. Clique em "Criar tópico"
 
 image::pages_backend_topic_form.png[Backend: new topic form]
 
 
-.New topic form
+.Novo formulário de tópico
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Title
-|Required
-|Title of this topic. For instance: "Help"
+|Título
+|Obrigatório
+|Título deste tópico. Por exemplo: "Ajuda"
 
-|Description
-|Optional
-|What's this topic is about.
+|Descrição:
+|Opcional
+|Do que se trata esse tópico.
 
-|Weight
-|Optional
-|Which order will it have in relation with the other topics. Having a lower number means a higher priority. For instance, if you have two topics, "Topic a" with weight "10" and "Topic b" with weight "0", then "Topic b" will be first when ordering.
+|Peso
+|Opcional
+|Que ordem terá em relação aos outros tópicos. Ter um número menor significa uma prioridade mais alta. Por exemplo, se você tem dois tópicos, "Tópico a" com peso "10" e "Tópico b" com peso "0", em seguida "Tópico b" será o primeiro durante a ordenação.
 
-|Show in the footer
-|Optional
-|Wether you want to show this topic in the general footer (available in every page).
+|Mostrar no rodapé
+|Opcional
+|Wether que você deseja mostrar este tópico no rodapé geral (disponível em cada página).
 |===
 
-== Special "Terms and Conditions" page
+== Página especial de "Termos e Condições"
 
-This is where you need to put your legal terms, for instance which entity has control of this data, how much time does this data will be saved, etc. This should be (ideally) written and (at least) reviewed by a lawyer.
+É aqui que você precisa colocar seus termos legais, por exemplo, qual entidade tem o controle desses dados. quanto tempo esses dados serão salvos, etc. Isto deve ser (idealmente) escrito e (pelo menos) revisado por um advogado.
 
-It's generated by default in a new installation. It can't be deleted, and it has a few special details related with its legal nature:
+Ele é gerado por padrão em uma nova instalação. Não pode ser excluída, e tem alguns detalhes especiais relacionados com a sua natureza jurídica:
 
-. It's shown in the text area sign up form
-. If there are meaningful changes, it has a field that can allow an admin  when it's necessary that the participants accept the "Terms and Conditions" again, in the next sign in.
+. É mostrado no formulário de inscrição de área de texto
+. Se houver mudanças significativas, ele tem um campo que pode permitir um administrador quando for necessário que os participantes aceitem os "Termos e Condições" novamente, no próximo login.
 
 image::pages_backend_tos_change.png[Backend: ToS change]
 
@@ -102,15 +102,15 @@ image::pages_frontend_tos_change.png[Frontend: ToS change]
 
 If a participant rejects to accept the terms, then she has three options:
 
-. To review this again later. It signs her out automatically.
-. To download their personal data
+. Para revisar novamente mais tarde. It signs them out automatically.
+. Transferir seus dados pessoais
 . To delete her account
 
 image::pages_frontend_tos_reject.png[Frontend: ToS reject]
 
-== Examples
+== Exemplos
 
-=== Pages
+=== páginas
 
 image::pages_frontend_show.png[Frontend: show a page]
 
@@ -118,7 +118,7 @@ image::pages_backend_edit.png[Backend: edit a page]
 
 image::pages_backend_list.png[Backend: list pages]
 
-=== Topics
+=== Disciplinas
 
 image::pages_frontend_list_topics.png[Frontend: list topics of pages]
 
