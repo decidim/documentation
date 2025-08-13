@@ -1,0 +1,141 @@
+= Autorisation des documents d'identité
+
+Cette autorisation permet à un participant de télécharger ses documents d'identité. Ces documents dépendent de l'organisation,
+ils peuvent être un permis de conduire, un passeport, une carte d'identité nationale, une carte de membre du club, etc.
+
+Ces documents seront examinés par un administrateur pour les accepter ou les rejeter. Il est possible de faire ce processus de deux façons : en ligne ou hors ligne.
+
+* En ligne : le participant sera invité à télécharger les documents, et l'administrateur examinera ces documents.
+* Offline: the participant will be asked to fill in some data, and then they will need to go to a presential place to show their documents face to face.
+
+== Configuration
+
+En cliquant sur le bouton btn:[Config] dans cette section, un administrateur peut configurer les paramètres de cette autorisation.
+
+image:authorizations_id_document_configuration.png[configuration d'autorisation de document d'ID]
+
+NOTE: Comme vous pouvez le voir, cette autorisation est basée dans la réalité des implémentateurs originaux, dans ce cas dans les types de documents d'identité espagnol.
+Par exemple, nous donnons comme options pour les types de document "DNI", NIE ou Passeport" ou nous demandons "Numéro de document (avec lettre)"
+Vous pouvez modifier cela par xref:customize:code. doc[code personnalisant ou superposant] ces choses. Nous acceptons également xref:contribute:governance.adoc[Pull Request contributions]
+afin qu'il soit possible de configurer ceci.
+
+
+.Configuration de l'autorisation d'ID Documents
+|===
+|Champ |Type |Description
+
+|Méthodes disponibles
+|Obligatoire
+|Au moins une méthode doit être sélectionnée. Options : En ligne et/ou hors ligne.
+
+|Instructions pour la vérification hors ligne
+|Requis (si hors-ligne est sélectionné)
+|Directions que les participants doivent suivre pour vérifier leurs documents lorsque la vérification hors ligne est sélectionnée. Par exemple,
+doivent-ils aller à un endroit spécifique pour afficher leurs documents ? Est-ce que cet endroit est ouvert quelques jours de la semaine? Est-il ouvert
+pendant certaines heures ?
+|===
+
+== En ligne
+
+Le processus est :
+
+. Les participants remplissent leur type de document et leur numéro et téléchargent une copie de leur document.
+. Un administrateur remplit les informations présentes dans l'image téléchargée.
+. Les informations doivent correspondre à ce que l'utilisateur a rempli.
+. If the administrator can't clearly see the information or they can't get it verified, they can reject the request and
+the user will be able to fix it.
+
+=== 1. A participant fill in the document information and uploads a copy of their document
+
+By going to the authorization section in its profile, or by clicking on the action button if this permission is requested,
+a participant can see the form for uploading a copy of their document. Ils doivent également remplir leur type de document et leur numéro.
+
+image:authorizations_id_document_online.png[formulaire en ligne d'autorisation de document d'identification]
+
+=== 2. Un administrateur vérifie ce document
+
+Une fois ce document téléchargé, un administrateur peut le consulter en allant dans la section Documents d'identité dans le panneau d'administration
+.
+
+image:authorizations_id_document_online_pending.png[Autorisation du document d'identité en attente de vérification en ligne]
+
+Après avoir cliqué sur le document, l'administrateur doit voir l'image et remplir le numéro du document. Ceci doit correspondre à
+avec celui fourni par le participant.
+
+image:authorizations_id_document_online_confirm.png[Formulaire de confirmation en ligne d'autorisation de document d'identification]
+
+=== 3. La demande est acceptée ou rejetée
+
+Il y a deux actions qu'un administrateur peut faire:
+
+* Accepter : le participant sera entièrement autorisé.
+* Reject: the participant will be prompted to amend their documents
+
+Si la demande est rejetée, alors le participant peut fournir d'autres photos ou documents.
+
+image:authorizations_id_document_online_rejected.png[autorisation de document d'identité rejetée vérification en ligne]
+
+== Hors ligne
+
+Le processus est :
+
+. Les participants remplissent leur type de document et leur numéro.
+. Les participants suivent les instructions qui leur sont données. For instance, if they need to go to a specific place in a
+specific time to show their documents.
+. Un administrateur se rend dans le panneau « Vérification hors ligne » et remplit les informations présentes dans les documents physiques.
+. Les informations doivent correspondre à ce que l'utilisateur a rempli.
+. If the administrator can't clearly see the information or they can't get it verified, they can reject the request and
+the user will be able to fix it.
+
+Pour que cette autorisation fonctionne, un administrateur doit d'abord le configurer dans le panneau d'administration avec les instructions expliquant
+ce que le participant doit faire pour terminer le processus de vérification.
+
+image:authorizations_id_document_configuration_offline.png[Configuration d'autorisation de document d'ID : instructions hors ligne]
+
+=== 1. Un participant remplit les informations sur le document et suit les instructions
+
+By going to the authorization section in its profile, or by clicking on the action button if this permission is requested,
+a participant can see the form for filling in their document type and number.
+
+image:authorizations_id_document_offline_request.png[formulaire d'autorisation de document d'ID hors ligne]
+
+=== 2. Un administrateur vérifie cette demande
+
+Dans le panneau d'administration, l'administrateur peut vérifier la demande en cliquant sur le bouton "Vérification hors connexion".
+
+image:authorizations_id_document_offline_button.png[bouton d'autorisation de document ID hors ligne en admin]
+
+Then they will need to fill some data provided by the participant and by reviewing the document physically provided by them.
+
+image:authorizations_id_document_offline_confirm.png[formulaire de confirmation d'autorisation de document d'ID hors ligne dans l'administrateur]
+
+
+.Flux d'autorisation d'ID Documents hors ligne
+|===
+|Champ |Type |Description
+
+|Courriel du participant
+|Obligatoire
+|Courriel du participant enregistré
+
+|Type du document
+|Obligatoire
+|Peut être: DNI, NIE ou Passeport
+
+|Numéro du document (avec lettre)
+|Obligatoire
+|Numéro de document du participant. Par exemple, "12345678Z"
+|===
+
+=== 3. La demande est acceptée ou rejetée
+
+In the cases where the verifications don't match (meaning that the email or the document number provided by the
+participant and the ones filled by the administrators aren't the same), then the participant needs to amend it with their
+user account.
+
+== Les deux
+
+Il est également possible d'activer ces deux méthodes de vérification. In this case, the participant will be asked to choose
+which kind of verification they want to do.
+
+image:authorizations_id_document_account_choose.png[Choisir le type de vérification de document d'identité]
