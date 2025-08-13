@@ -1,0 +1,57 @@
+= Unterhaltungen
+
+Bei Gesprächen können die Teilnehmer miteinander private Nachrichten haben. Nur die Teilnehmer, die im
+Gespräch sind, können einander Nachrichten sehen.
+
+Ein Gespräch kann mit jedem Teilnehmer oder jeder Gruppe, die auf der Plattform registriert ist, begonnen werden.
+
+image:features/conversations/conversation.png[Beispiel einer Unterhaltung]
+
+Um eine Unterhaltung zu starten:
+
+. Als Teilnehmer anmelden
+. Gehe zu dem Teilnehmerprofil, dass du eine Unterhaltung mit dem
+Bild starten möchtest:features/conversations/profile.png[Teilnehmerprofil]
+. Klicken Sie auf das Kontaktsymbol Bild:icon_envelope.png[Umschlag Symbol]
+. Füllen Sie das Formular
+Bild:features/conversations/start_a_conversation_form.png[Konversationsformular starten]
+
+Alternativ können Sie auch:
+
+. Als Teilnehmer anmelden
+. Klicken Sie auf das Konversationssymbol im Kopfzeile:icon_envelope_off.png[Konversations-Symbol]
+. Klicken Sie auf den "Unterhaltung starten"-Button
+. Durchsuche den Teilnehmer oder die Gruppe, mit der du eine Unterhaltung starten möchtest
+. Formular ausfüllen
+
+Wenn es neue Nachrichten in einer Unterhaltung gibt, wird der Teilnehmer das Symbol mit einem Farbbild sehen: icon_envelope_on.png[Konversations-Symbol mit Farbe]
+
+image:features/conversations/conversations.png[Konversationsliste]
+
+== Mehrere Teilnehmer an einer Unterhaltung
+
+Es ist möglich, mehrere Teilnehmer an einem Gespräch zu haben.
+
+Dazu musst du zu:
+
+. Als Teilnehmer anmelden
+. Klicken Sie auf das Konversationssymbol im Kopfzeile:icon_envelope_off.png[Konversations-Symbol]
+. Klicken Sie auf den "Unterhaltung starten"-Button
+. Durchsuche die Teilnehmer oder Gruppen, mit denen du eine Unterhaltung starten möchtest
+. Formular ausfüllen
+
+image:features/conversations/new_conversation_modal.png[Neue Konversation Modal]
+
+== Gruppenkonvertierungen
+
+Genau wie bei den Teilnehmern, ist es möglich, Umwandlungen mit Gruppen zu haben.
+
+image:features/conversations/group_conversations.png[Group conversations list]
+image:features/conversations/conversations_group_counter.png[Conversations group counter]
+
+== Notizen
+
+Einige Dinge zum Thema Unterhaltungen:
+
+* Es ist nicht möglich, eine Unterhaltung zu löschen.
+* Es ist nicht möglich, eine Nachricht in einer Unterhaltung zu bearbeiten.
