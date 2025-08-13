@@ -1,47 +1,47 @@
-= Account
+= conta
 
-In this section is possible to make modifications that will be visible in the participants xref:features/my_public_profile.adoc[public profile] and also modify the email address or the language that the platform will use with the user.
+Nesta seção é possível fazer modificações que serão visíveis nos participantes xref:features/minha_public_profile. doc[perfil público] e também modificar o endereço de e-mail ou a linguagem que a plataforma usará com o usuário.
 
-. Sign in as a participant
-. Click in the name of the participant in the header
-. Click in "My account"
+. Iniciar sessão como participante
+. Clique no nome do usuário no cabeçalho
+. Clique em "Minha conta"
 
-image:features/my_account/account.png[My account form]
+image:features/minha_conta/account.png[Meu formulário de conta]
 
 
-.Participant settings - My account form
+.Configurações do usuário - Meu formulário de conta
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
 |Avatar
-|Optional
-|Avatar or picture for the participant. Guidance for image: Preferrably a landscape image that does not have any text.
-The service crops the image. Maximum file size: 5MB
+|Opcional
+|Avatar ou foto do participante. Orientação para imagem: Preferencialmente, uma imagem de paisagem que não possui texto.
+O serviço cultiva a imagem. Tamanho máximo do arquivo: 5MB
 
-|Your name
-|Required
-|The name of the participant.
+|Seu Nome
+|Obrigatório
+|O nome do participante.
 
-|Nickname
-|Required
-|The nickname of the participant.
+|Apelido
+|Obrigatório
+|O apelido do participante.
 
-|Your email
-|Required
-|The email of the participant, where she'll receive notifications, password recovery, etc. If it's changed it needs to be
-confirmed.
+|Seu e-mail
+|Obrigatório
+|O e-mail do participante, onde eles receberão notificações, recuperação de senha, etc. Se for alterado, ela precisa ser
+confirmada.
 
-|Personal URL
-|Optional
-|Metadata that is displayed in the participant's profile.
+|URL pessoal
+|Opcional
+|Metadados que são exibidos no perfil do participante.
 
-|About
-|Optional
-|Metadata that is displayed in the participant's profile.
+|SOBRE
+|Opcional
+|Metadados que são exibidos no perfil do participante.
 
-|Locale
-|Required
-|Choose the language you want to use to browse and receive notifications in Decidim
+|Localidade
+|Obrigatório
+|Escolha o idioma que você deseja usar para navegar e receber notificações em Decidim
 |===
 
-From this page is possible to also modify the participant's password.
+A partir desta página também é possível alterar a senha do participante.
