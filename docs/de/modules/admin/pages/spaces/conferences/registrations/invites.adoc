@@ -1,0 +1,38 @@
+= Einladungen
+
+Administratoren können Teilnehmer zur Konferenz einladen.
+
+image:spaces/conferences/invites.png[Conferences user lädt (backend)]
+
+== Strömung
+
+. Ein Administrator sendet eine Einladung an einen nicht existierenden oder bestehenden Teilnehmer
+. Der Teilnehmer nimmt die Einladung an
+
+image:spaces/conferences/invite_participant_form.png[Teilnehmerform] einladen
+
+
+.Teilnehmerformular einladen
+|===
+|Feld |Typ |Beschreibung
+
+|Teilnehmertyp
+|Benötigt
+|Ist diese eingeladene Person ein nicht existierender oder bestehender Teilnehmer? Haben sie bereits ein Konto auf der Plattform erstellt?
+
+|Name
+|Erforderlich, wenn es ein nicht existierender Teilnehmer ist.
+|Name der eingeladenen Person.
+
+|E-Mail
+|Erforderlich, wenn es ein nicht existierender Teilnehmer ist.
+|E-Mail der eingeladenen Person.
+
+|Benutzer
+|Erforderlich, wenn es ein existierender Teilnehmer ist.
+|Geben Sie mindestens drei Zeichen für die Suche ein.
+
+|xref:admin:spaces/conferences/registrations/types.adoc[Registrierungstyp]
+|Benötigt
+|Was xref:admin:spaces/conferences/registrations/types.adoc[registration type] für diesen Teilnehmer hat.
+|===
