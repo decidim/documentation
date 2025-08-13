@@ -1,72 +1,72 @@
-= Assembly members
+= Miembros de la Colmena
 
-Assembly members allow showing all the people or groups that belong to a given assembly. It's useful for being transparent.
+Los miembros de la Asamblea permiten mostrar a todas las personas o grupos que pertenecen a una asamblea determinada. Es útil para ser transparente.
 
-You can see an example in https://meta.decidim.org/assemblies/coordination-committee/members[Decidim Coordination Commitee Assembly in Metadecidim].
+Puede ver un ejemplo en https://meta.decidim.org/assemblblies/coordination-committee/members[Decidim Coordination Committee Assembly in Metadecidim].
 
-image:assembly_members.png[Assembly members of the Coordination Committee]
+imagen:ensambly_members.png[Miembros de la Asamblea de la Coordinación]
 
-== New assembly member form
+== Nuevo formulario de miembro de ensamblado
 
-image:assembly_members_list.png[Assembly members admin list]
+imagen:assemblbly_members_list.png[Lista de administradores de miembros de la Colmena]
 
-For creating a new phase of a participatory process:
+Crear una nueva fase de un proceso participativo:
 
-. Sign in as administrator
-. Go to the assemblies section in the sidebar
-. Click on the assembly Edit action
-. Click on the Members link in the sidebar
-. Click on the "New member" button
-. Fill the form
+. Iniciar sesión como administrador
+. Ir a la sección de ensamblajes en la barra lateral
+. Haga clic en la acción Editar ensamblado
+. Haga clic en el enlace Miembros en la barra lateral
+. Haga clic en el botón "Nuevo miembro"
+. Rellene el formulario
 
-image:assembly_members_new_form.png[Assembly members new form]
+imagen:assemblbly_members_new_form.png[Formulario de miembros de la ensambla]
 
 
-.New assembly member form
+.Nuevo formulario de miembro de ensamblado
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Participant type
-|Required
-|Wheter this assembly member is non-participant or existing participant. Does she already have an account created on the platform?
+|Tipo de participante
+|Requerido
+|Si este miembro de la asamblea no es participante o participante existente. ¿Ya tienen una cuenta creada en la plataforma?
 
-|Full name
-|Required if it's non-participant.
+|Nombre completo
+|Requerido si no es participante.
 |
 
-|User or group
-|Required if it's an existing participant.
-|Type at least three characters to search.
+|Usuario o grupo
+|Requerido si es un participante existente.
+|Escriba al menos tres caracteres para buscar.
 
-|Position
-|Required
-|Choose one of President, Vice president, Secretary, or Other. In case it's other, you can fill in the position title.
+|Posición
+|Requerido
+|Elija a uno de los Presidentes, vicepresidente, secretario u otro. En caso de que sea otro, puede rellenar el título de la posición.
 
-|Weight
-|Optional
-|Which order will it have in relation to the other members. Having a lower number means a higher priority. For instance, if you have two members, "Member a" with weight "10" and "Member b" with weight "0", then "Member b" will be first when ordering.
+|Peso
+|Opcional
+|¿Qué orden tendrá en relación con los demás miembros. Tener un número más bajo significa una prioridad mayor. Por ejemplo, si tienes dos miembros, "Miembro a" con el peso "10" y "Miembro b" con el peso "0", entonces "Member b" será primero cuando se haga el pedido.
 
-|Designation date
-|Required
-|When was this person or group assigned as a member of this assembly. Expected format: dd/mm/yyyy
+|Fecha de diseño
+|Requerido
+|Cuando esta persona o grupo fue asignada como miembro de esta Colmena. Formato esperado: dd/mm/aaaa
 
-|Designation mode
-|Optional
-|How was this person designed.
+|Modo de diseño
+|Opcional
+|¿Cómo se diseñó esta persona?
 
-|Ceased date
-|Optional
-|When was this person or group ceased to be a member of this assembly. Expected format: dd/mm/yyyy
+|Fecha de cierre
+|Opcional
+|Cuando esta persona o grupo fue cesada de ser miembro de esta asamblea. Formato esperado: dd/mm/aaaa
 
-|Gender
-|Optional
-|Which gender does this person most identify with.
+|Sexo
+|Opcional
+|Con qué género se identifica más a esta persona.
 
-|Birthday
-|Optional
-|When was this person born. Expected format: dd/mm/yyyy
+|Cumpleaños
+|Opcional
+|¿Cuándo nació esta persona? Formato esperado: dd/mm/aaaa
 
-|Birthplace
-|Optional
-|Where was this person born.
+|Lugar de nacimiento
+|Opcional
+|¿Dónde nació esta persona?
 |===
