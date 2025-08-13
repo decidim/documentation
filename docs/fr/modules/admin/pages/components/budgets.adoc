@@ -1,0 +1,185 @@
+= Les budgets
+
+== Understand the basics
+
+The Budgets component allows participants to vote by selecting projects of their choosing. This component has been designed to
+organize voting in the final phase of a Participatory Budget, although it can be used for other types of processes.
+
+Administrators can decide the voting rules, to make participants select a defined number of projects, or vote for as
+many project they want until reaching a certain amount.
+
+image::components/budgets/example01.png[Budgets example voting]
+
+Administrators have several options for the voting workflow and for the voting rules.
+
+image::components/budgets/example02.png[Budgets example voting]
+
+In this documentation section, you can find how to configure and manage all of those items:
+
+* xref:admin:components/budgets/budgets.adoc[Budgets]
+* xref:admin:components/budgets/projects.adoc[Projects]
+
+== Configuration
+
+To create a Budgets component component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
+
+image::components/budgets/component_budgets.png[Add Budgets component button]
+
+Then:
+
+. Click on the "Components" item in the secondary menu
+. Click the "Add component" button
+. Select "Budgets"
+. Fill the component creation form
+
+You can still update this form and the configuration after creating the component, by clicking the
+image:icons/action_configure.png[Configure icon] Configure icon in the components list.
+
+The component creation form is divided into different sections detailed below.
+
+image::components/budgets/component_01.png[Add component form title]
+
+.Budgets form
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|The title of this component.
+
+|Rang d'affichage
+|Facultatif
+|The order of the component in relation with the other components. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0"
+then "component b" is first when ordering.
+|===
+
+image::components/budgets/component_02.png[Add component form - Global settings]
+
+
+.Budgets form - Global settings
+|===
+|Champ |Type |Description
+
+|Portées activées
+|Facultatif
+|Check if you want to have Scopes filtering available in this component.
+
+|Secteur
+|Facultatif
+|Which xref:admin:settings/scopes.adoc[Scope] does this component belongs to.
+
+|Workflow
+|Obligatoire
+|Comment les participants peuvent voter s'il y a plusieurs ensembles de budget. You can define your own workflow or use one already available.
+
+|Projets par page
+|Obligatoire
+|How many projects are displayed per page on the Budget landing page.
+
+|Activer la règle : Pourcentage de budget minimum
+|Optional, but incompatible with the 2 other voting rules.
+|Allows to define a "Vote threshold percent" meaning a percent of the total budget that participants
+must reach to be able to finish voting.
+
+|Activer la règle : Nombre minimum de projets à voter
+|Optional, but incompatible with the 2 other voting rules.
+|Allows to define a "Minimum number of projects to vote" meaning a number of projects that participants
+must reach to be able to finish voting.
+
+|Activer la règle : Les projets sélectionnés avec un nombre minimum et maximum de projets à voter
+|Optional, but incompatible with the 2 other voting rules.
+|Allows to define a "Minimum amount of projects to be selected" and a "Maximum amount of projects to be selected" meaning
+the number of projects that participants need to vote as a minimum and maximum to be able to finish voting.
+
+|Commentaires activés
+|Facultatif
+|Whether you want participants to be able to comment the projects.
+
+|Longueur maximale des commentaires
+|Facultatif
+|The characters limit that participants have when making comments. Laisser 0 pour la valeur par défaut.
+
+|Les autorisations d'actions peuvent être définies pour chaque projet
+|Facultatif
+|Si vous voulez être en mesure de définir les permissions pour chacun des projets.
+
+|Annonce
+|Facultatif
+|A general announcement visible on the general budgets landing page.
+
+|Page d'accueil des budgets
+|Facultatif
+|The message shown in the Budgets landing page when there are multiple budgets.
+
+|Plus d'informations modales
+|Facultatif
+|The message shown when clicking on the "More information" link.
+|===
+
+image::components/budgets/component_03.png[Add component form - Step settings]
+
+.Budgets form - Step settings
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Commentaires désactivés
+|Facultatif
+|Si vous voulez activer les commentaires pour cette phase.
+
+|Vote
+|Obligatoire
+|Choose one of the following options depending in the phase of the process: Voting disabled, Voting enabled or Voting finished.
+
+|Afficher les votes
+|Facultatif
+|Wether the votes count are public. Nous vous recommandons fortement de ne cocher cette option qu'une fois le vote terminé.
+
+|Annonce
+|Facultatif
+|A general announcement visible on the general budgets landing page.
+
+|Page d'accueil des budgets
+|Facultatif
+|The message shown in the Budgets landing page when there are multiple budgets for this phase.
+
+|Plus d'informations modales
+|Facultatif
+|The message shown when clicking on the "More information" link for this phase.
+|===
+
+== Résultats
+
+After the voting has finished, an administrator need to:
+
+. Modifier la configuration de vote pour le volet budget en "Vote terminé"
+. Go in the projects list and view the results
+. On the projects that have been selected, go in each project, edit it and tick the "Selected for implementation" checkbox.
+
+image::components/budgets/results_select_project.png[Select a project for implementation]
+
+Then, the projects list shows all the project that have been selected for implementation.
+
+image::components/budgets/results_selected.png[Selected projects after voting]
+
+A filter is also displayed for participants to see which projects have been selected, and find the ones that weren't selected.
+
+image::components/budgets/results_selected_frontend.png[Selected projects after voting in the frontend]
+
+TIP: Once you have selected projects, then you can enable the xref:components/accountability.adoc[Accountability]
+component so participants can see the progress of the projects implementation.
+
+== Exemples
+
+Quelques exemples d'utilisation de ce composant :
+
+* https://www.decidim.barcelona/processes/PressupostosParticipatius[2020/2021 Processus de budgétisation participative dans Decidim Barcelona].
+La ville de Barcelone (Espagne) a alloué un budget de 30.000. 00 EUR pour que les gens puissent présenter, définir, prioriser, voter
+et choisir quels projets d'investissement le gouvernement de la ville doit exécuter.
+* https://ecrivons.angers.fr/processes/BP2021[2021 Processus de budgétisation participative en Angers]. La ville d'Angers (France) a alloué
+un budget de 1.000. 00 EUR pour que les gens de 11 ans peuvent proposer un maximum de 3 idées et ensuite voter pour leurs 5 projets préférés.
+* https://omastadi.hel.fi/[2021 processus budgétaire participatif à Helsinki]. Helsinki has allocated 8.8 million euros to realising
+residents’ wishes. Les idées se transforment ensemble en propositions sur lesquelles les habitants d'Helsinki peuvent voter. The proposals with the
+most votes are realised by the City.
