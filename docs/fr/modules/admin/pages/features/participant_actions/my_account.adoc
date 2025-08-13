@@ -1,0 +1,173 @@
+= Mon compte
+
+== Understand the basics
+
+This feature allows participants to manage their account information, notifications preferences, authorizations, see their groups, etc.
+This account page is only accessible to the participant, and some account information (such as the "About" field) are displayed in the
+participant xref:admin:features/participant_actions/my_public_profile.adoc[public profile].
+
+== How to find it?
+
+As a signed in participant, you can access your account configuration from two places:
+
+. Click in your avatar in the header, and then click in the "My account" menu item
+. Click in the "Configuration" link in the footer, in the "My account" section
+
+image::features/my_account/account_dropdown.png[Frontend user menu dropdown]
+
+== Account settings
+
+There, you'll find different sections, allowing you to set different settings for your participant account.
+
+NOTE: You might not see the Authorizations and the Groups settings sections if you didn't enable them.
+
+=== Compte client
+
+In this section, participants can modify the information displayed in their xref:features/participant_actions/my_public_profile.adoc[public profile], modify their email address or
+the language they want to use by default.
+
+image::features/my_account/account.png[My account form]
+
+.Paramètres des participants - Formulaire de mon compte
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Avatars
+|Facultatif
+|Avatar ou photo pour le participant. Orientation pour l'image: De préférence une image de paysage qui n'a pas de texte.
+Le service récolte l'image. Maximum file size: 5 MB
+
+|Votre nom
+|Obligatoire
+|Le nom du participant.
+
+|Pseudo
+|Obligatoire
+|Le surnom du participant.
+
+|Votre adresse e-mail
+|Obligatoire
+|L'e-mail du participant, où ils recevront des notifications, de récupération de mot de passe, etc. If it's changed it needs to be
+confirmed again.
+
+|URL personnelle
+|Facultatif
+|Métadonnées affichées dans le profil du participant.
+
+|À propos de
+|Facultatif
+|Information about the participant displayed in the participant's profile.
+
+|Locale
+|Obligatoire
+|Language you want to use to browse and receive notifications in Decidim.
+|===
+
+Participants can also change their password on this page, by clicking the "Change password" link. They need to choose a new password and enter
+their current password to be able to change it.
+
+image::features/my_account/password_change.png[My account form - password change]
+
+=== Notifications settings
+
+In this section participants can choose which kind of notifications they want to receive and how often they want to receive them.
+
+image:features/my_account/notifications_settings.png[Paramètres des notifications]
+
+Les options disponibles sont :
+
+* Je veux recevoir des notifications sur
+** Ma propre activité, comme quand quelqu'un commente dans ma proposition ou me mentionne
+** Tout ce que je suis
+* How often do you want to receive the notifications email?
+** None, Real time, Daily, or Weekly
+* Newsletters
+** Je veux recevoir des newsletters
+* Recevoir des messages directs de n'importe qui
+** Permettre à n'importe qui de m'envoyer un message direct, même si je ne les suit pas
+* Administrateurs
+** I want to receive an email every time something or someone is reported for moderation.
+** I want to receive email reminders of closed meetings unpublished reports
+* Push notifications
+** Get push notifications to find out what is going on when you are not on the platform. You can turn them off anytime.
+
+=== Autorisations
+
+In this section participants are able to review their Authorizations and see some metadata, like when it was granted
+or the status of the authorization.
+
+It depends on how it's configured for the organization, as depending in the context (like normative or laws) it could work
+in different ways. Pour plus d'informations sur les autorisations, voir xref:admin:participants/authorizations.adoc[authorizations
+dans le manuel d'administration] et xref:customize:authorizations.adoc[authorizations in customguide].
+
+image:features/my_account/authorizations.png[Authorizations]
+
+Pour toute autorisation donnée, vous pouvez voir les informations suivantes :
+
+* Si ce n'est pas terminé, lorsque le processus d'autorisation a commencé
+* Si elle est terminée et a été accordée, la date à laquelle elle a été accordée
+* Si l’autorisation le fournit, certaines métadonnées, telles que la portée de l’autorisation
+
+=== Groupes
+
+In this section participants can see which groups they belong to.
+
+NOTE: Vous voulez créer un nouveau groupe ? Go to the xref:admin:features/participant_actions/group_profile.adoc[Group profile] page.
+
+image::features/my_account/groups.png[Groups]
+
+Read more about groups configuration in the xref:admin:participants/groups.adoc[Groups in the administrator manual].
+
+=== Mes intérêts
+
+Dans cette section, les participants peuvent choisir les intérêts sur lesquels ils doivent recevoir plus de renseignements.
+
+By default what they see here is a list of all the xref:admin:settings/scopes.adoc[Scopes] of the organization. Those selections
+can be used by administrators when segmenting for the xref:admin:features/social_features/newsletters.adoc[Newsletters].
+
+image::features/my_account/my_interests.png[My interests]
+
+=== Mes données
+
+In this section participants can request a file with all the data that they've provided in the platform.
+
+image::features/my_account/my_data.png[My data]
+
+Pour demander les données :
+
+. Cliquer dans "Données de requête"
+. Attendez quelques minutes pour que les fichiers soient générés. Cela peut dépendre du nombre de propositions, de commentaires, etc. que vous avez fait
+. Accédez à votre compte de messagerie et trouvez l'e-mail reçu
+. Cliquez dans "Télécharger"
+. Ouvrir avec un logiciel zip de support
+. Entrez le mot de passe que vous avez reçu dans l'e-mail
+. Décompresser ou extraire le contenu
+
+image:features/my_account/my_data_email.png[Mes données]
+
+Pour ouvrir le fichier zip, le logiciel que vous utilisez doit supporter le chiffrement avec l'algorithme AES-256. Selon votre système d'exploitation, vous avez plusieurs alternatives.
+
+* Windows: https://www.7-zip.org/[7-Zip]
+* Mac: https://www.keka.io[Keka]
+* GNU/Linux : Rouleau de fichiers (disponible via votre gestionnaire de paquets) ou https://peazip.github.io/[PeaZip]
+
+=== Supprimer mon compte
+
+In this section participants are able to delete their own accounts. Once it's done, they are unable to access the system anymore.
+Cette action est irréversible. All the contributions on the platform become anonymous.
+
+image:features/my_account/delete_my_account.png[Supprimer le formulaire de compte]
+
+Pour supprimer le compte :
+
+. Optionally, you can provide a reason for the deletion
+. Cliquez dans "Supprimer mon compte"
+. Cliquez sur "Oui, je veux supprimer mon compte"
+
+image:features/my_account/delete_my_account_confirm.png[Confirmer la suppression du compte]
+
+After the account has been deleted, the contributions (such as comments, proposals, etc) are still visible but all the authorship information is anonymised,
+and transferred to a "Deleted participant" author.
+
+image:features/my_account/delete_my_account_deleted.png[Contribution des participants supprimés]
