@@ -1,29 +1,29 @@
-= Polls
+= Pesquisas
 
-CAUTION: this feature is still in active development and can't be used in production yet.
+CAUTION: Este recurso ainda está em desenvolvimento ativo e ainda não pode ser usado em produção.
 
-Through the manage polls feature is possible to define a poll that will be displayed when an online meeting is ocurring.
+Através do recurso de gerenciar enquetes é possível definir uma enquete que será exibida quando uma reunião on-line estiver ocorrendo.
 This is useful to see quick feedback and make a decision inside the meeting without having to leave the meeting and use
 other kind of tools (like surveys or proposals).
 
-With this feature an administrator can define questions and also manage when these questions and its results will be shown
-to participants.
+Com este recurso um administrador pode definir perguntas e também gerenciar quando essas perguntas e seus resultados serão mostrados
+aos participantes.
 
-== Enable polls for a meeting
+== Habilitar enquetes para uma reunião
 
-To enable polls for a meeting:
+Para habilitar as enquetes para uma reunião:
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Click on "Meetings"
-. Search the meeting that you want to define polls for
-. Click on the "Manage polls" button image:action_list.png[Manage polls button]
-. Fill the form
+. Iniciar sessão como administrador
+. Ir ao painel de administração
+. Na barra lateral principal, clique no botão para o espaço para o qual você deseja configurar o componente.
+Por exemplo, pode ser "Processos", "Assemblies", ou "Conferências"
+. Clique em "Reuniões"
+. Pesquisar a reunião que você deseja definir enquetes para
+. Clique no botão "Gerenciar enquetes" imagem:action_list.png[Botão Gerenciar enquete]
+. Preencha o formulário
 
-The form is pretty much the Decidim form builder, with one caveat: you can only define Single and Multiple option questions.
+O formulário é praticamente o construtor de forma Decidim, com uma ressalva: você só pode definir perguntas individuais e múltiplas opções.
 
-image:components/meetings/polls/backend.png[Backend for meeting polls]
+image:components/meetings/polls/backend.png[Backend para reuniões de pesquisas]
 
-image:components/meetings/polls/backend_question.png[Definining a question in meeting polls]
+image:components/meetings/polls/backend_question.png[Definindo uma questão nas pesquisas de reunião]
