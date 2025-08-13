@@ -1,18 +1,18 @@
-The platform currently have the following official components:
+A plataforma tem atualmente os seguintes componentes oficiais:
 
-* xref:admin:components/accountability.adoc[*Accountability*]: allows to keep track of the results execution of a space.
-It allows administrators to also relate them to the proposals and meetings that originated them.
-* xref:admin:components/blog.adoc[*Blog*]: allows administrators to publish posts with news regarding a space.
-* xref:admin:components/budgets.adoc[*Budgets*]: allows participants to vote in projects with amounts predefined. Used for
-participatory budgeting processes. Allows to define different kind of rules, for instance a minimum percentage of the total budget or a minimum amount of projects.
-* xref:admin:components/debates.adoc[*Debates*]: allows participants to have debates. Debates can be time limited or not.
-* xref:admin:components/elections.adoc[*Elections*]: to have end-to-end auditable elections in a space. Uses the same
-external system as xref:admin:spaces/votings.adoc[Votings] space.
-* xref:admin:components/meetings.adoc[*Meetings*]: gatherings in person or online through videoconferences platforms.
-* xref:admin:components/pages.adoc[*Page*]: static pages with multi-language support.
-* xref:admin:components/proposals.adoc[*Proposals*]: contributions posted by participants which can be given support.
-* xref:admin:components/sortitions.adoc[*Sortitions*]: this allows different kind of proposals to be selected randomly.
-For instance the proposals could be candidates who form part of a group (such as a committee).
-* xref:admin:components/surveys.adoc[*Survey*]: for conducting surveys with different kinds of questions.
+* xref:admin:components/accountability.adoc[*Contabilidade*]: permite manter o controle dos resultados em execução de um espaço.
+Permite que os administradores também os relacionem com as propostas e reuniões que lhes deram origem.
+* xref:admin:components/blog.adoc[*Blog*]: permite que os administradores publiquem postagens com notícias sobre um espaço.
+* xref:admin:components/budgets.adoc[*Orçamentos*]: permite que os participantes votem em projetos com valores pré-definidos. Usado para
+processos de orçamentação participativa. Permite definir diferentes tipos de regras, por exemplo, uma percentagem mínima do orçamento total ou um montante mínimo de projectos.
+* xref:admin:components/debates.adoc[*Debates*]: permite que os participantes tenham debates. Os debates podem ser limitados ou não.
+* xref:admin:components/elections.adoc[*Elections*]: ter eleições auditáveis de ponta a ponta no espaço. Usa o mesmo sistema
+externo que xref:admin:spaces/votings.adoc[Votings] espaço.
+* xref:admin:components/meetings.adoc[*Reuniões*]: reuniões pessoalmente ou online através de plataformas de videoconferências.
+* xref:admin:components/pages.adoc[*Page*]: páginas estáticas com suporte a várias linguagens.
+* xref:admin:components/proposals.adoc[*Propostas*]: contribuições publicadas por participantes que podem ser dadas suporte.
+* xref:admin:components/sortitions.adoc[*Sortitions*]: isso permite diferentes tipos de propostas serem selecionadas aleatoriamente.
+Por exemplo, as propostas podem ser candidatas que fazem parte de um grupo (como um comité).
+* xref:admin:components/surveys.adoc[*Survey*]: para a realização de pesquisas com diferentes tipos de perguntas.
 
-In the cases where your needs are not covered by one of the above components, you can create your own component through a xref:develop:modules.adoc[Module].
+Nos casos em que suas necessidades não são cobertas por um dos componentes acima, você pode criar seu próprio componente através de uma xref:develop:modules. documento[Module].
