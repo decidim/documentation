@@ -1,75 +1,75 @@
-= Private participants
+= Participantes privados
 
-There are cases where you want to have a closed census of the participants in a space. For instance this could be a space
-for a small group of people, or the members of a comission inside of a big organization. For these cases you can
+Há casos em que você quer ter um recenseamento fechado dos participantes em um espaço. Por exemplo, isso pode ser um espaço
+para um pequeno grupo de pessoas, ou os membros de uma comissão dentro de uma grande organização. For these cases you can
 use the private participants feature.
 
-image:spaces/private_participants.png[Private participants list]
+imagem:spaces/private_participants.png[Lista privada de participantes]
 
-For inviting private participants of a space:
+Convidar participantes privados do espaço:
 
-. Sign in as administrator
-. Go to the space's section in the sidebar
-. Click on the space Edit action
-. Click on the "Private participants" link in the sidebar
-. Click on the "New participatory space private user" or "Import via CSV" buttons
+. Entrar como administrador
+. Ir para a seção do espaço na barra lateral
+. Clique na ação Editar Espaço
+. Clique no link "Participantes Privados" na barra lateral
+. Clique nos botões "Novo espaço participativo de usuário privado" ou "Importar via CSV"
 
-== New participatory space private user
+== Novo espaço participativo de usuário privado
 
-image:spaces/private_participants_new_form.png[New private participant form]
+imagem:espaços/private_participants_new_form.png[Novo formulário de participante privado]
 
 
-.New participatory space private user form
+.Novo espaço participativo formulário privado de usuário
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Name
-|Required
-|What is the name of the new participant.
+|Nome:
+|Obrigatório
+|Qual é o nome do novo participante.
 
-|Email
-|Required
-|What is the email of the new participant.
-|===
-
-== Import via CSV
-
-image:spaces/private_participants_csv_import.png[Import private participants via CSV]
-
-This form allows you to bulk import the participants of a space.
-
-It must have two columns with email in the first column of the file and the name in the last column of the file (email, name)
-of the users that you want to add to the participatory space. Some tips:
-
-* The file should not have headers. That means that you do not have to add a column that says "email, name"
-* You must avoid using invalid chars like `<>?%&^*#@()[]=+:;"{}\|` in user name.
-* The separator between columns must be a comma (",")
-
-== Actions
-
-After the participants has been invited, you can resend or delete the invitation.
-
-image:spaces/private_participants_actions.png[Private participants actions]
-
-|===
-|Icon |Name |Definition
-
-|image:action_resend_invitation.png[Resend invitation]
-|Resend invitation
-|If the invitation wasn't accepted, send it again to the user
-
-|image:action_delete.png[Delete invitation]
-|Delete invitation
-|Revoke the invitation sent to the user
+|e-mail
+|Obrigatório
+|Qual é o e-mail do novo participante.
 |===
 
-== Invitation
+== Importar via CSV
+
+imagem:spaces/private_participants_csv_import.png[Importar participantes privados via CSV]
+
+Este formulário permite que você importe em massa os participantes de um espaço.
+
+Deve ter duas colunas com e-mail na primeira coluna do arquivo e o nome na última coluna do arquivo (e-mail, nome)
+dos usuários que você deseja adicionar ao espaço participativo. Algumas dicas:
+
+* O arquivo não deve ter cabeçalhos. Isso significa que você não precisa adicionar uma coluna que diz "email, nome"
+* Você deve evitar o uso de caracteres inválidos como `<>?%&^*#@()[]=+:;"{}\├` no nome de usuário.
+* O separador entre colunas deve ser uma vírgula (",")
+
+== Ações.
+
+Depois que os participantes forem convidados, você poderá reenviar ou excluir o convite.
+
+imagem:espaços/private_participants_actions.png[Ações de participantes privados]
+
+|===
+|Ícone |Nome: |Definição
+
+|imagem:action_resend_invitation.png[Reenviar convite]
+|Reenviar convite
+|Se o convite não foi aceito, envie-o novamente para o usuário
+
+|imagem:action_delete.png[Excluir convite]
+|Excluir convite
+|Revogar o convite enviado ao usuário
+|===
+
+== Convite
 
 When a participant was invited she'll get an email with a link for accepting the invitation:
 
-image:spaces/private_participants_email_invite.png[Email invitation of a private participant]
+imagem:espaços/privado_participants_email_invite.png[E-mail de um participante privado]
 
 After clicking in this email, she'll have to fill a form for setting her password, accepting the Terms of Service and giving
 her consent if she wants to receive newsletters.
 
-image:spaces/private_participants_user_registration_form.png[User registration form of a private participant]
+imagem: spaces/private_participants_user_registration_form.png[Formulário de registro de usuário de um participante privado]
