@@ -1,0 +1,24 @@
+= Bienvenue dans la documentation de Decidim
+
+Ceci est le site de documentation de Decidim, une plate-forme de démocratie participative créée initialement par la mairie de Barcelone.
+
+Decidim est un framework qui permet à tout le monde de créer et de configurer une plate-forme de site web, à utiliser sous la forme d'un réseau politique de participation démocratique. La plateforme permet à toute organisation (conseil municipal, association, université, ONG, quartier ou coopératif) de créer des processus de masse pour la planification stratégique. budgétisation participative, conception collaborative des règlements, des espaces urbains et des processus électoraux.
+
+== Nouveau sur Decidim?
+
+Vous avez trouvé la documentation de Decidim. En savoir plus sur le projet sur https://decidim.org[decidim.org].
+
+[NOTE]
+====
+This is the documentation for the `v0.30` version. You can see this same documentation site for other versions: xref:v0.29@ROOT:index.adoc[v0.29], xref:v0.28@ROOT:index.adoc[v0.28], xref:v0.27@ROOT:index.adoc[v0.27] and xref:develop@ROOT.index.adoc[develop].
+====
+
+// * Read the xref:ROOT:getting-started.adoc[Getting Started guide]
+
+La documentation couvre xref:install:index.adoc[installing], xref:configure:index.adoc[configuring]et xref:admin:index.adoc[running] votre propre site Decidim.
+
+Si vous voulez apporter des modifications au code source, nous avons également de la documentation pour xref:develop:guide.adoc[developers].
+
+Si vous êtes une organisation qui veut utiliser Decidim, ou un développeur intéressé par la collaboration sur le logiciel, veuillez https://decidim.org/contact[entrer en contact].
+
+Decidim est un effort de communauté, en tant que tel, si vous trouvez des erreurs sur ces guides, veuillez nous le faire savoir à hola [at] decidim [dot]. Toute aide est la bienvenue. Si vous êtes un utilisateur de GitHub, vous pouvez même proposer des modifications à ce site avec le lien Modifier sur chaque page.
