@@ -2,23 +2,23 @@
 
 Ceci est le site de documentation de Decidim, une plate-forme de démocratie participative créée initialement par la mairie de Barcelone.
 
-Decidim is a framework that allows anybody to create and configure a website platform, to be used in the form of a political network for democratic participation. The platform allows any organization (local city council, association, university, NGO, neighbourhood or cooperative) to create mass processes for strategic planning, participatory budgeting, collaborative design for regulations, urban spaces and election processes.
+Decidim est un framework qui permet à tout le monde de créer et de configurer une plate-forme de site web, à utiliser sous la forme d'un réseau politique de participation démocratique. La plateforme permet à toute organisation (conseil municipal, association, université, ONG, quartier ou coopératif) de créer des processus de masse pour la planification stratégique. budgétisation participative, conception collaborative des règlements, des espaces urbains et des processus électoraux.
 
-== New to Decidim?
+== Nouveau sur Decidim?
 
-You’ve found the documentation for Decidim. Learn about the project at https://decidim.org[decidim.org].
+Vous avez trouvé la documentation de Decidim. En savoir plus sur le projet sur https://decidim.org[decidim.org].
 
 [NOTE]
 ====
-This is the documentation for the `develop` branch. You can see this same documentation site for other versions: xref:v0.28@ROOT:index.adoc[v0.28] and xref:v0.27@ROOT:index.adoc[v0.27]
+Ceci est la documentation de la branche `develop`. You can see this same documentation site for other versions: xref:v0.30@ROOT:index.adoc[v0.30], xref:v0.29@ROOT:index.adoc[v0.29], xref:v0.28@ROOT:index.adoc[v0.28] and xref:v0.27@ROOT:index.adoc[v0.27]
 ====
 
 // * Read the xref:ROOT:getting-started.adoc[Getting Started guide]
 
-The documentation covers xref:install:index.adoc[installing], xref:configure:index.adoc[configuring], and xref:admin:index.adoc[running] your own Decidim site.
+La documentation couvre xref:install:index.adoc[installing], xref:configure:index.adoc[configuring]et xref:admin:index.adoc[running] votre propre site Decidim.
 
-If you want to make changes to the source code, we have documentation for xref:develop:guide.adoc[developers] too.
+Si vous voulez apporter des modifications au code source, nous avons également de la documentation pour xref:develop:guide.adoc[developers].
 
-If you are an organisation who wants to use Decidim, or a developer who is interested in collaborating on the software, please https://decidim.org/contact[get in touch].
+Si vous êtes une organisation qui veut utiliser Decidim, ou un développeur intéressé par la collaboration sur le logiciel, veuillez https://decidim.org/contact[entrer en contact].
 
-Decidim is a community effort, as such if you find any errors on these guides please let us know at hola [at] decidim [dot] org. Every help is welcome. If you've a GitHub user then you can even propose changes to this website with the Edit link on every page.
+Decidim est un effort de communauté, en tant que tel, si vous trouvez des erreurs sur ces guides, veuillez nous le faire savoir à hola [at] decidim [dot]. Toute aide est la bienvenue. Si vous êtes un utilisateur de GitHub, vous pouvez même proposer des modifications à ce site avec le lien Modifier sur chaque page.
