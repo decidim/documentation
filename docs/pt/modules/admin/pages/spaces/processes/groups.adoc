@@ -1,113 +1,113 @@
-= Process groups
+= Grupos de processo
 
-A group of processes proves useful for subdividing large participatory processes into subprocesses according to a criteria,
-for instance the xref:admin:scopes.adoc[scope] of every process.
+Um grupo de processos se mostra útil para subdividir grandes processos participativos em subprocessos de acordo com critérios
+por exemplo o xref:admin:scopes. documento[scope] de cada processo.
 
-As an example you can see the https://www.decidim.barcelona/processes_groups/4[Barcelona City Council's Neighborhoods Plan, Pla de Barris].
-This is is a 150 million euro shock plan that aims to reduce inequalities within the city. There are 10 related processes, one for each involved neighborhood.
+Como exemplo, você pode ver o Plano de Vizinhanças do Conselho de Barcelona - Pla de Barris] https://www.decidim.barcelona/processes_groups/4[Barcelona City CounborodPlan.
+Trata-se de um plano de choque de 150 milhões de euros que visa reduzir as desigualdades dentro das cidades. Existem 10 processos relacionados, um para cada bairro envolvido.
 
 image::processes_group_example.png[Participatory process group example]
 
-== New process group form
+== Novo formulário de grupo de processo
 
-For creating a new process group:
+Para criar um novo grupo de processos:
 
-. Sign in as administrator
-. Go to the Processes section in the sidebar
-. Click on the Process groups link in the sidebar
-. Click on the "New process group" button
-. Fill in the form
+. Entrar como administrador
+. Ir para a seção de Processos na barra lateral
+. Clique no link dos grupos de processo na barra lateral
+. Clique no botão "Novo grupo de processos"
+. Preencha o formulário
 
 image::processes_group_list.png[Participatory process groups list]
 
 image::processes_group_new_form.png[New participatory process group form]
 
 
-.New participatory process group form: General information
+.Novo formulário de grupo de processo participativo: Informações gerais
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Title
-|Required
-|Title of the participatory process group. For instance, "Participatory Budgeting".
+|Título
+|Obrigatório
+|Título do grupo de processos participativos. Por exemplo, "Orçamento Participativo".
 
-|Description
-|Required
-|A long explanation of what's your participatory process about.
+|Descrição:
+|Obrigatório
+|Uma longa explicação do conteúdo do seu processo participativo.
 
-|Related processes
-|Optional
-|Which are the processes that are related to this one? They will be used for populating
-the Content Blocks in the Landing page of this Process group. For selecting multiple you'll
-need to use the *ctrl* function.
+|Processos relacionados
+|Opcional
+|Quais são os processos relacionados a este? Eles serão utilizados para preencher
+os Blocos de Conteúdo na página inicial deste Grupo de Processo. Para selecionar vários você
+precisa usar a função *ctrl*.
 
-|Image
-|Optional
-|Image that will be used in presentation cards of this process group. Guidance for image:
-Preferably a landscape image that does not have any text. The service crops the image.
-Maximum file size: 10MB. Allowed file extensions: jpeg jpg png
+|Imagem:
+|Opcional
+|Imagem que será usada nos cartões de apresentação deste grupo de processo. Orientação para imagem:
+Preferencialmente uma imagem de paisagem que não tem nenhum texto. O serviço cultiva a imagem.
+Tamanho máximo do arquivo: 10MB. Extensões de arquivo permitidas: jpeg jpg png
 |===
 
 
-.New participatory process group form: Metadata
+.Novo formulário de grupo de processo participativo: Metadados
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição
 
 Hashtag
-Website
+Site
 
-|Promoter group
-|Optional
-|Information that's displayed in the process metadata content block.
+|Grupo promotor
+|Opcional
+|Informações exibidas no bloco de conteúdo de metadados do processo.
 
-|Organization area
-|Optional
-|Information that's displayed in the process metadata content block.
+|Área da organização
+|Opcional
+|Informações exibidas no bloco de conteúdo de metadados do processo.
 
-|Scope metadata
-|Optional
-|Information that's displayed in the process metadata content block.
+|Metadados do escopo
+|Opcional
+|Informações exibidas no bloco de conteúdo de metadados do processo.
 
-|Who participates
-|Optional
-|Information that's displayed in the process metadata content block.
+|Quem participa
+|Opcional
+|Informações exibidas no bloco de conteúdo de metadados do processo.
 
-|What is decided
-|Optional
-|Information that's displayed in the process metadata content block.
+|O que é decidido
+|Opcional
+|Informações exibidas no bloco de conteúdo de metadados do processo.
 
-|How is it decided
-|Optional
-|Information that's displayed in the process metadata content block.
+|Como é decidido
+|Opcional
+|Informações exibidas no bloco de conteúdo de metadados do processo.
 |===
 
 
-.New participatory process group form: Visibility
+.Formulário do novo grupo de processo participativo: visibilidade
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Promoted
-|Optional
-|Check if you want the process to have more visibility in the Process public list. It'll also be visible in the
-ParticpipatoryProcess Content Block in the xref:admin:homepage.adoc[Homepage] configuration. This is accessible in the btn:[Edit] action in a Process.
+|Promovido
+|Opcional
+|Verifique se você quiser que o processo tenha mais visibilidade na lista pública de Processos. Também será visível na configuração
+ParticpipatoryProcess Content Block na configuração xref:admin:homepage.adoc[Homepage]. Isto é acessível no btn:[Edit] ação em um Processo.
 |===
 
-== Landing page
+== Página de destino
 
-One of the main features of a process group is to be able to configure the Lnading page, through Content blocks, just like
-the general homepage of the platform. This means that you can enable or disable different sections of the landing page and also
-configure some fo these sections.
+Uma das principais características de um grupo de processo é ser capaz de configurar a página de Lnading através de blocos de conteúdo, assim como
+a página inicial geral da plataforma. Isto significa que você pode ativar ou desativar as seções diferentes da página inicial e também
+configurar algumas dessas seções.
 
 image::processes_group_landing.png[Participatory process group landing page]
 
-* Title, description and hashtag
-* Metadata
-* Image, text and Call to Action button. Configurable.
-* Proposals. You can configure how the elements will be sorted: by most recent or random.
-* Results. You can configure how the elements will be sorted: by most recent or random.
-* Upcoming events
-* Statistics
-* Participatory processes
-* First HTML block
-* Second HTML block
-* Third HTML block
+* Título, descrição e hashtag
+* Metadados
+* Botão de imagem, texto e chamam para ação. Configurável.
+* Propostas. Você pode configurar como os elementos serão ordenados: pela mais recente ou aleatória.
+* Resultados. Você pode configurar como os elementos serão ordenados: pela mais recente ou aleatória.
+* Próximos eventos
+* estatísticas
+* Processos participativos
+* Primeiro bloco HTML
+* Segundo bloco HTML
+* Terceiro bloco HTML
