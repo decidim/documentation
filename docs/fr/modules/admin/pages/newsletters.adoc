@@ -1,0 +1,164 @@
+= Newsletters
+
+Les lettres d'information sont des courriels envoyés aux participants de l'organisation avec les nouvelles. They are
+sent to participants that have checked the "Receive an occasional newsletter
+with relevant information" when the participant signed up or after in their account.
+
+image::newsletter_contact_permission.png[Contact permission in participant registration]
+
+image::newsletter_participant_notifications_settings.png[Contact permission in participant account]
+
+Quelques exemples de quand vous pouvez et devriez envoyer une newsletter sont :
+
+* Quand un nouveau processus pourrait être intéressant pour tous les citoyens d'une ville,
+par exemple un processus de budgétisation participative.
+* Quand il y a les résultats publiés pour un processus donné.
+* Lorsqu'une assemblée a un point important à discuter.
+* Quand il y a un nouveau vote prévu.
+* Quand une nouvelle conférence est publiée
+
+Pour créer une nouvelle newsletter, en tant qu'administrateur, vous devez :
+
+. Aller au menu de la newsletter
+. Cliquez sur le bouton "Nouvelle newsletter"
+. Sélectionnez le modèle que vous souhaitez utiliser
+. Remplissez le formulaire avec le contenu de la newsletter
+. Aperçu de la newsletter
+. Sélectionnez les destinataires à livrer
+. Envoyer la newsletter
+
+== 1. Aller au menu de la newsletter
+
+Il se trouve dans la barre latérale principale du panneau d'administration.
+
+image::newsletter_menu.png[Newsletter admin menu]
+
+== 2. Cliquez sur le bouton "Nouvelle newsletter"
+
+Dans cette page, vous aurez une liste de toutes les lettres d'information envoyées, avec le statut
+(si il a déjà été envoyé ou non) et combien de participants l'ont reçu.
+
+image::newsletter_list.png[Newsletter list]
+
+In the secondary sidebar or in the top of the list you have the button for "New
+newsletter".
+
+== 3. Sélectionner le modèle de la nouvelle newsletter
+
+Selon ce que vous voulez envoyer, si c'est juste une mise à jour rapide ou si c'est quelque chose
+un peu plus élaboré (avec une image et un bouton), alors vous pouvez choisir pour
+quel type de modèle vous souhaitez utiliser :
+
+* Basique (seulement texte)
+* Bouton Texte, image et appel à l'action
+
+image::newsletter_templates.png[Newsletter new templates selection]
+
+== 2. Remplissez le formulaire avec le contenu de la newsletter
+
+Selon le modèle que vous avez choisi, vous avez deux formulaires différents pour le remplissage
+:
+
+=== Formulaire de newsletter basique (seulement texte)
+
+image::newsletter_new_basic.png[Newsletter new template basic form]
+
+image::newsletter_new_basic_example.png[Newsletter new template basic form filled]
+
+[NOTE]
+====
+Vous pouvez utiliser "%\{name}" n'importe où dans le corps ou le sujet et il sera
+remplacé par le nom du destinataire.
+====
+
+
+.Formulaire "basique (texte uniquement) de nouvelle Newsletter
+|===
+|Champ |Type |Description
+
+|Sujet
+|Obligatoire
+|Sujet de l'email.
+
+|Corps
+|
+|Corps de l'email.
+|===
+
+=== Formulaire de newsletter pour le bouton Texte, image et appel à l'action
+
+image::newsletter_new_cta01.png[Newsletter new template text, image and CTA form 1]
+
+image::newsletter_new_cta02.png[Newsletter new template text, image and CTA form 2]
+
+
+.Nouveau formulaire "Image, texte et bouton d'appel à l'action" de la newsletter
+|===
+|Champ |Type |Description
+
+|Sujet
+|Obligatoire
+|Sujet de l'email.
+
+|Introduction
+|
+|Corps de l'email.
+
+|Texte du bouton d'appel à l'action
+|
+|Que dira le bouton. Par exemple, il pourrait s'agir de « Participer »
+
+|URL du bouton d'appel à l'action
+|
+|Où sera le lien du bouton. Par exemple, ce pourrait être l'URL complète d'un processus participatif.
+
+|Corps
+|
+|Corps de l'email.
+
+|Image principale
+|
+|Orientation pour l'image: De préférence une image de paysage qui n'a pas de texte. Le service récolte l'image. Extensions de fichier autorisées : jpg jpeg gif png bmp ico
+|===
+
+== 3. Aperçu de la newsletter
+
+Après avoir rempli le contenu de la newsletter, vous pouvez le prévisualiser. Until you've
+sent it you can go back and edit it anytime you want.
+
+image::newsletter_preview_basic_example.png[Newsletter new template basic form preview]
+
+== 4. Sélectionnez les destinataires à livrer
+
+Si vous voulez seulement communiquer à propos d'un espace donné, une façon utile de faire ceci
+est par le biais de "Sélectionner les destinataires à livrer". Ici vous pouvez choisir entre :
+
+* Envoi de la newsletter à tous les utilisateurs confirmés
+* Envoi de la newsletter à tous les utilisateurs confirmés qui ont participé à l'un des
+les espaces participatifs sélectionnés dans la liste
+* Sending the newsletter to all confirmed users that have followed any of
+the selected participatory spaces in the list
+* Envoi de la newsletter à tous les participants qui ont sélectionné une portée dans
+leurs paramètres "Mes intérêts" dans leur compte.
+
+Il est important de noter que même si un participant a confirmé son compte et qu'
+suit l'espace, le système ne leur enverra pas un e-mail de newsletter s'ils
+n'ont pas activé les "Je veux recevoir des newsletters".
+
+image::newsletter_select_recipients.png[Newsletter select recipients]
+
+Si vous sélectionnez le "Envoyer aux participants" ou "Envoyer aux abonnés" d'un espace,
+alors vous pouvez choisir quels espaces sont pertinents :
+
+image::newsletter_select_recipients_spaces.png[Newsletter select recipients spaces]
+
+== 5. Envoyer la newsletter
+
+Finally if you click in the "Deliver newsletter" button, the newsletter will be
+sent to all the selected recipients.
+
+[NOTE]
+====
+Une fois la newsletter envoyée, elle ne peut pas être annulée ni modifiée. Si vous avez plusieurs langues
+activées, soyez prudent en examinant toutes les langues bien avant l'envoi.
+====
