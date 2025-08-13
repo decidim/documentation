@@ -1,0 +1,17 @@
+= Soutiens
+
+Grâce à des approbations, les participants peuvent montrer publiquement qu'ils souhaitent soutenir un contenu particulier, par exemple une proposition.
+
+image:features/endorsements/list.png[Liste des endossements]
+
+Cela se fait par le bouton dans la barre latérale. Les administrateurs peuvent les activer ou les désactiver par étape dans un processus participatif donné, et ils peuvent également définir des autorisations avec des autorisations.
+
+image:features/endorsements/sidebar.png[Bouton d'approbation dans la barre latérale]
+
+Lorsqu'un participant appartient à un groupe vérifié, il peut également souscrire comme ce groupe en sélectionnant l'identité.
+
+image:features/endorsements/modal.png[Sélectionnez la modale d'identité]
+
+Par défaut, la liste des avances est réduite. Pour le voir complètement, il faut aussi cliquer sur le lien "(voir plus)".
+
+image:features/endorsements/full_list.png[Liste complète des approbations]
