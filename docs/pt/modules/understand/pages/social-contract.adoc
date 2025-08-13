@@ -1,60 +1,60 @@
-= Decidim's Social Contract
+= Contrato Social do Decididor
 
 [NOTE]
 ====
-You can also read Decidim's Social Contract in other languages: xref:understand:social-contract-ca.adoc[Català] - xref:understand:social-contract-es.adoc[Castellano]
+Você também pode ler o Contrato Social da Decidim em outros idiomas: xref:understand:social-contract-ca.adoc[Català] - xref:understand:social-contract-es.adoc[Castellano]
 
-If you want to translate it to your own language please https://decidim.org/contact[contact us].
+Se você quiser traduzi-lo para seu próprio idioma, por favor https://decidim.org/contact[entre em contato conosco].
 ====
 
-Code for democratic guarantees and open collaboration
+Código para garantias democráticas e colaboração aberta
 
-This is the social contract that all members of the Decidim community are committed to follow.
+Este é o contrato social que todos os membros da comunidade Decidim estão comprometidos a seguir.
 
-By signing this Social Contract, any individual, institution or social group of any kind, commits to fulfill the principles established here when using, developing and participating in the community of Decidim.
+Ao assinar este Contrato Social, qualquer indivíduo, instituição ou grupo social de qualquer tipo, Comprometemo-nos a cumprir os princípios estabelecidos aqui ao usar, desenvolver e participar da comunidade de Decidim.
 
-== Free software and open content
+== Software livre e conteúdo aberto
 
-The code of the platform, along with the modules, libraries or any other code that is developed for its functioning and deployment, will always be Free Open Source Software with an https://www.gnu.org/licenses/agpl-3.0.en.html[Affero GPLv3 license or later versions] whenever the code is newly developed and with licenses that are compatible with the above one when code re-used.
+O código da plataforma, juntamente com os módulos, bibliotecas ou qualquer outro código desenvolvido para o seu funcionamento e implantação, sempre será Software de código aberto gratuito com um https://www. nu.org/licenses/agpl-3.0.en.html[Licença Affero GPLv3 ou versões posteriores] sempre que o código for recentemente desenvolvido e com licenças que são compatíveis com o acima, quando o código for reutilizado.
 
-Likewise, the content, data, APIs and/or any other interfaces that are deployed to interact with any type of user must follow open and interoperable standards (ex. OpenID, RSS, OStatus, etc.), always tending to maximize their integration with the most widely used open standards.
+Da mesma forma, conteúdo, dados, APIs e/ou quaisquer outras interfaces que são implantadas para interagir com qualquer tipo de usuário devem seguir padrões abertos e interoperáveis (ex. OpenID, RSS, OStatus, etc.), sempre tende a maximizar sua integração com os padrões abertos mais usados.
 
-In order to maximize transparency and citizen collaboration in participatory processes, organs and mechanisms, the content, text, graphics, fonts, audio, video or other design elements will be published under a https://creativecommons.org/licenses/by-sa/4.0/legalcode[Creative Commons By-SA].
+A fim de maximizar a transparência e a colaboração dos cidadãos em processos participativos, órgãos e mecanismos, o conteúdo, texto, gráficos, fontes, áudio, vídeo ou outros elementos de design serão publicados sob uma https://creativecommons. rg/licenses/by-sa/4.0/legalcode[Creative Commons By-SA].
 
-The data available through the platform, especially all data that can be collected in a systematic way through scrappers or other techniques of massive consultation, will be published and licensed under http://opendatacommons.org/licenses/odbl[Open Data Commons Open Database License], published under standardized and accessible formats (such as CSV, JSON, etc.) and, whenever possible, with tools that facilitate the analysis and visualization of data.
+Os dados disponíveis através da plataforma, especialmente todos os dados que podem ser coletados de forma sistemática através de sucatas ou outras técnicas de consulta massiva, será publicado e licenciado sob a licença http://opendatacommons. rg/licenses/odbl[Open Data Commons Open Database License], publicado em formatos padronizados e acessíveis (como CSV, JSON, etc.) e, sempre que possível, com ferramentas que facilitam a análise e a visualização de dados.
 
-== Transparency, traceability and integrity
+== Transparência, rastreabilidade e integridade
 
-The platform, and its current or future configuration, development, deployment and use must ensure and maximize, at all times, the transparency, traceability and integrity of documents, proposals, debates, decisions, or any other object, mechanism or participatory process.
+A plataforma, e as suas actuais ou futuras configurações, desenvolvimento, implantação e utilização devem assegurar e maximizar, sempre, a transparência, rastreabilidade e integridade de documentos, propostas, debates, decisões ou qualquer outro objeto, mecanismo ou processo participativo.
 
-By _transparency_ we understand that all data related to all such participatory mechanisms and processes are available for download, analysis and treatment, following the most demanding standards and formats to share information (accessibility, multi-format, etc.).
+Por _transparência_ entendemos que todos os dados relacionados a todos os mecanismos e processos participativos estão disponíveis para download, análise e tratamento, seguindo os padrões e formatos mais exigentes para compartilhar informações (acessibilidade, multi-formatos, etc.).
 
-Transparency is a necessary condition for monitoring of participatory processes and mechanisms, but should never, in any case, be applied for the treatment of personal data or against the defense of the privacy of the people participating in the platform.
+A transparência é uma condição necessária para o controlo dos processos e mecanismos participativos, mas nunca deverá, em todo o caso, ser controlada. seja aplicado no tratamento de dados pessoais ou contra a defesa da privacidade das pessoas que participam na plataforma.
 
-We understand by _traceability_ the ability to fully track backward (past) and forward (future) what happened to the proposals, plans, regulations, or any other object of participation or decision included in a process or mechanism. The platform must at all times show how, why, by whom and with what guarantees a certain type of object of a participatory process was dismissed, approved or blocked.
+Entendemos pela _rastreabilidade_ a capacidade de rastrear completamente o caminho para trás (passado) e para a frente (futuro) o que aconteceu às propostas, planos, regulamentos, ou qualquer outro objectivo de participação ou decisão incluído num processo ou mecanismo. A plataforma deve mostrar em todos os momentos como, porquê, por quem e com que garantias um certo tipo de objeto de um processo participativo foi rejeitado, aprovado ou bloqueado.
 
-We understand by _integrity_ the authenticity of a specific content, and ensuring that it has not been tampered with or altered without this modification being clearly recorded and visibly verifiable and auditable. The goal of integrity is to avoid manipulation of proposals or results of participatory processes or mechanisms.
+Nós entendemos por _integrity_ a autenticidade de um conteúdo específico e assegurar que não tenha sido adulterado ou alterado sem que esta modificação tenha sido claramente registada e visivelmente verificável e auditável. O objetivo da integridade é evitar a manipulação de propostas ou resultados de processos ou mecanismos participativos.
 
-== Equal opportunities and quality indicators
+== Oportunidades iguais e indicadores de qualidade
 
-Alongside the guarantees previously defined, the platform promises to ensure equal opportunities for all people, as well as for their proposals or other contributions the platform might host. The platform will offer equal starting opportunities to all participatory objects (proposals, debates, etc.) for them to be viewed, discussed, commented, evaluated or treated without discrimination of any kind. In this sense, the digital identity of the users of the platform will always be personal and not transferable, the verification that confers decision rights on the platform should also be unique, and it is the administrative entity in charge of the platform who should be responsible for ensuring non-impersonation of a person or entity.
+Paralelamente às garantias previamente definidas, a plataforma promete assegurar igualdade de oportunidades para todas as pessoas. bem como para suas propostas ou outras contribuições que a plataforma pode hospedar. A plataforma oferecerá igualdade de oportunidades de início a todos os objetos participativos (propostas, debates, etc.) para serem vistos, discutidos, comentados, avaliados ou tratados sem qualquer tipo de discriminação. Nesse sentido, a identidade digital dos usuários da plataforma será sempre pessoal e não transferível, a verificação que confere direitos de decisão na plataforma também deve ser única, e é a entidade administrativa responsável pela plataforma que deve ser responsável por garantir a não personificação de uma pessoa ou entidade.
 
-The platform should promote, with the aim of ensuring its democratic quality, the use of quality indicators developed on the basis of the data obtained from participatory processes, mechanism and user activity. Sharing of the setting of the different components as well as open data will be promoted for the definition of these indicators
+A plataforma deve promover, com o objectivo de garantir a sua qualidade democrática, o uso de indicadores de qualidade desenvolvidos com base nos dados obtidos a partir de processos participativos, mecanismos e atividade do usuário. O compartilhamento da configuração dos diferentes componentes e dados abertos serão promovidos para a definição desses indicadores
 
-Equality in political participation of citizens is one of the fundamental principles of any democratic system and the platform, not only has to ensure equal opportunities with respect to the uses and functions, but also the access right. In this sense the entity in charge of the platform assumes the commitment to promote actions that advance in the direction of providing access and support to the platform for all citizens alike universally Giving tools and resources appropriate to the platform is available to anyone who wants to use.
+A igualdade na participação política dos cidadãos é um dos princípios fundamentais de qualquer sistema democrático e da plataforma. Não só tem de garantir a igualdade de oportunidades no que diz respeito às utilizações e funções, como também ao direito de acesso. Nesse sentido, a entidade responsável pela plataforma assume o compromisso de promover ações que avancem na direção de fornecer acesso e apoio à plataforma para todos os cidadãos, da mesma forma que doar universalmente ferramentas e recursos apropriados para a plataforma está disponível para qualquer um que queira usar.
 
-== Data confidentiality
+== Segredo de dados
 
-The confidentiality and privacy of the personal data that people might provide to participate in any of the functionalities and/or possibilities of participation that the platform provides shall be guaranteed at all times. In no case shall personal data be transferred to third parties. Personal data will not be used beyond what is strictly necessary for the purposes of user registration and improvements on the usability of the platform. Whenever platform technology makes it possible, the expression of political preferences or will in decision-making processes shall remain inaccessible even for the administrator of the platform or the server/s that host it.
+A confidencialidade e a privacidade dos dados pessoais que as pessoas possam fornecer para participar em qualquer uma das funcionalidades e/ou possibilidades de participação que a plataforma fornece serão garantidas a todo momento. Em caso algum os dados pessoais serão transferidos para terceiros. Dados pessoais não serão usados além do que é estritamente necessário para fins de registro de usuários e melhorias na usabilidade da plataforma. Sempre que a tecnologia da plataforma o torne possível, a expressão de preferências políticas ou vontade nos processos de tomada de decisão permanecerá inacessível, mesmo para o administrador da plataforma ou para os servidores/os que a hospedam
 
-== Accountability and responsibility
+== Responsabilidade e responsabilidade
 
-A commitment to citizens shall be taken to respond to all queries and contributions in the shortest time possible. A commitment shall also be adopted to follow-up the results of participatory processes and to respond to those demands which specifically request it. Finally, a commitment shall be taken to study the incorporation of indicators to monitor the participation processes once they are finalized, in order to systematically evaluate its implementation.
+Será assumido um compromisso para com os cidadãos no sentido de responder a todas as dúvidas e contribuições no mais curto espaço de tempo possível. Deverá igualmente ser assumido um compromisso no sentido de dar seguimento aos resultados dos processos participativos e de responder às exigências específicas que o solicitem. Por último, será assumido o compromisso de estudar a incorporação de indicadores para monitorizar os processos de participação após a sua conclusão. A fim de avaliar sistematicamente a sua aplicação.
 
-== Continuous improvement and inter-institutional collaboration
+== Melhoria contínua e colaboração interinstitucional
 
-Mechanisms for periodic review and evaluation will be provided in order to facilitate the continuous improvement of the platform.
+Serão fornecidos mecanismos de revisão e avaliação periódicas a fim de facilitar a melhoria contínua da plataforma.
 
-Priority will be given to the collaboration and the exchange of experiences between the institutions involved in the project, with the aim to improve, fix and build new developments for the continuous improvement of the platform.
+Será dada prioridade à colaboração e ao intercâmbio de experiências entre as instituições envolvidas no projecto, com o objetivo de melhorar, consertar e construir novos desenvolvimentos para a melhoria contínua da plataforma.
 
-In this sense, collaborative conditions and environments will be facilitated when moving forward improvements that point to a common benefit of the entire platform, enabling inter-agency coordination mechanisms when necessary.
+Neste sentido, as condições e ambientes de colaboração serão facilitados quando se avançar melhorias que apontam para um benefício comum de toda a plataforma, permitir mecanismos de coordenação interagências, quando necessário.
