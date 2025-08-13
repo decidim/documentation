@@ -1,64 +1,64 @@
-= Comments
+= Comentarios
 
-Comments are public messages left to the rest of the community. It allows participants to share information or opinions
-about a proposal, debate, meeting, initiative, etc.
+Los comentarios son mensajes públicos dejados al resto de la comunidad. Permite a los participantes compartir información u opiniones
+sobre una propuesta, debate, reunión, iniciativa, etc.
 
-image:features/comments/example01.png[Comments example]
+image:features/comments/example01.png[Ejemplo de comentarios]
 
-== Create a comment
+== Crear un comentario
 
-. Sign in as a participant
-. Go to the content that you want to leave a comment
-. Go to the bottom of the page
-. Fill the "Add comment" form
+. Inicia sesión como participante
+. Ir al contenido que quieres dejar un comentario
+. Ir a la parte inferior de la página
+. Rellene el formulario "Añadir comentario"
 
-Depending on the component settings, this feature can be disabled.
+Dependiendo de la configuración del componente, esta característica puede ser desactivada.
 
-image:features/comments/form.png[Comments form]
+image:features/comments/form.png[Formulario de comentarios]
 
-=== Form
+=== Forma
 
-It's possible to:
+Es posible para:
 
-. mention a participant or user group (like @admin). They'll receive a notification
-. add a hashtag (like #Example). This will link to the general search
-. make a quote of a comment (like > this is a quote)
+. mencionar a un participante o grupo de usuarios (como @admin). Recibirán una notificación
+. añadir un hashtag (como #Ejemplo). Esto enlazará a la búsqueda general
+. hacer una cita de un comentario (como > esta es una comilla)
 . if an URL is entered, then it'll be linked automatically
 image:features/comments/rich_text_write.png[Comments with rich text (write)]
 image:features/comments/rich_text_read.png[Comments with rich text (read)]
 image:features/comments/hashtag_search.png[Hashtags in comments]
-. if HTML is added, it'll be escaped and not shown
+. si se añade HTML, se escapará y no se mostrará
 image:features/comments/xss_write.png[XSS in comments (write)]
 image:features/comments/xss_read.png[XSS in comments (read)]
-. add emojis to comments
-image:features/comments/emoji_selector.png[Emoji selector in comments]
+. añadir emojis a los comentarios
+image:features/comments/emoji_selector.png[Selector de Emoji en comentarios]
 
-== Sort
+== Ordenar
 
-Comments can be sorted by "Best rated", "Recent", "Older" or "More discussed".
+Los comentarios pueden ordenarse por "Mejor calificación", "Reciente", "Mayor" o "Más discutidos".
 
-image:features/comments/order_by.png[Order comments]
+image:features/comments/order_by.png[Comentarios de pedido]
 
-== Actions
+== Acciones
 
-After a comment is created, the author can "Reply", "Report", "Get link", "Edit" and "Delete". Other participants can "Reply",  "Report" and "Get link". Some of these actions are visible in the three dots menu:
+Después de crear un comentario, el autor puede "Responder", "Reportar", "Obtener enlace", "Editar" y "Eliminar". Otros participantes pueden "Responder", "Informe" y "Obtener enlace". Algunas de estas acciones son visibles en el menú de tres puntos:
 
-image:features/comments/actions.png[Comments actions]
+image:features/comments/actions.png[Acciones de comentarios]
 
-=== Reply
+=== Responder
 
-It's possible to reply to comments until the 4th anidation level.
+Es posible responder a los comentarios hasta el cuarto nivel de anidación.
 
-image:features/comments/anidation_levels.png[Anidation levels for comments]
+image:features/comments/anidation_levels.png[Niveles de anidación para comentarios]
 
-=== Delete
+=== Eliminar
 
-Once a comment is deleted is not longer visible.
+Una vez que un comentario es borrado no es visible.
 
-image:features/comments/deleted_comment.png[Deleted comment]
+imagen:características/comentarios/deleted_comment.png[Comentario eliminado]
 
-=== Edit
+=== Editar
 
-Once a comment is edited then it's shown that was edited. It doesn't have a version history of the changes made.
+Una vez que un comentario es editado, entonces se muestra que fue editado. No tiene un historial de versiones de los cambios realizados.
 
-image:features/comments/edited_comment.png[Edited comment]
+imagen:características/comentarios/edited_comment.png[Comentario editado]
