@@ -1,0 +1,55 @@
+= Einführung
+
+== Understand the basics
+
+Deploying Decidim means taking account of all the activities that play a part in the configuration of the platform and the deployment
+of the participatory processes. Der Erwerb von Wissen in der Verwaltung von Decidim ermöglicht die Kontrolle über grundlegende Fragen wie:
+
+* Konfigurieren eines partizipativen Prozesses
+* creating an assembly and managing its members
+* opening an initiative space
+* moderating the contents of the platform
+* managing associated legal texts, such as the privacy policy
+* managing access rights of administrators
+* monitoring and verifying participants and their organizations
+
+None of these aspects are strictly technical but they do involve a series of political decisions over how you want your instance to work,
+what messages and contents it contains, what the moderation policy should be, and overall how you want your participatory
+platform to function. This is why it's essential to understand the socio-technical implications of the Decidim platform’s
+administration and management.
+
+To understand how Decidim works, you first need to distinguish between xref:spaces.adoc[*spaces*] and xref:components.adoc[*components*].
+
+* *Participatory spaces* are the channels that citizens can participate through: participatory processes, assemblies, initiatives and conferences.
+* *Participatory components* are mechanisms that enable interaction between participants and the participatory spaces: meetings, pages, proposals, surveys, etc.
+
+Therefore, all participatory spaces can incorporate several components, such as meetings, proposals, surveys, or results.
+
+image:introduction.png[Leerzeichen und Komponenten]
+
+So, administrators configure participatory spaces by defining and configuring the components they're going to need.
+It's important to bear in mind that these participatory components and the various functions are repeated in the various spaces,
+offering many opportunities when it comes to configuring the various spaces.
+This simplifies learning as once a space is configured, it's then easier to configure others.
+
+This documentation section provides a full description of how to configure the Decidim platform for any kind of organization
+and how to configure, manage and administer your various participatory processes. A description has been given in tutorial format,
+to help with understanding administration tasks, following Decidim’s literal fields and enclosing screenshots to facilitate their
+interpretation.
+
+Administering the Decidim platform is quite intuitive and don't require specific IT knowledge.
+The administrators of a Decidim platform, in other words, those with the necessary authorization for managing the platform,
+can configure the platform in a general way (images, information pages, etc.,) and manage the various participatory processes
+(configuring, editing, analysing and concluding).
+
+== Get started
+
+* xref:admin:first_steps.adoc[First steps]
+* xref:admin:settings.adoc[Settings]
+* xref:admin:pages.adoc[Pages and topics]
+* xref:admin:participants.adoc[Participants]
+* xref:admin:global_moderations.adoc[Globale Moderationen]
+* xref:admin:spaces.adoc[Spaces]
+* xref:admin:components.adoc[Components]
+* xref:admin:features.adoc[Features]
+* xref:admin:templates.adoc[Templates]
