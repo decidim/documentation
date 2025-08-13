@@ -1,27 +1,55 @@
-= Introduction
+= Introducción
 
-Deploying Decidim means taking account of all the activities that play a part in the configuration of the platform and the deployment of the participatory processes. Acquiring knowledge in administering Decidim enables control over fundamental matters such as:
+== Understand the basics
 
-* configuring a participatory process
-* activating a consultation and receiving votes
-* moderating the platform
-* managing associated legal texts (as the privacy policy)
-* managing authorization from the administrators
-* monitoring and verifying organizations
+Deploying Decidim means taking account of all the activities that play a part in the configuration of the platform and the deployment
+of the participatory processes. Adquirir conocimientos en la administración de Decidim permite el control de asuntos fundamentales como:
 
-None of these aspects are strictly technical but they do involve a series of political decisions over how we want Decidim to be, what messages and contents it has to contain, what the moderation policy for comments and debates has to be and, above all, how a specific participatory platform has to be, and what functions it has to have active. This is why it is essential to understand the socio-technical implications of the Decidim platform’s administration and management when it comes to deploying the platform.
+* configurando un proceso participativo
+* creating an assembly and managing its members
+* opening an initiative space
+* moderating the contents of the platform
+* managing associated legal texts, such as the privacy policy
+* managing access rights of administrators
+* monitoring and verifying participants and their organizations
 
-To understand how Decidim works, we need to distinguish between xref:spaces.adoc[*spaces*] and xref:components.adoc[*components*].  The participatory spaces are the channels that citizens can participate through when public decisions are being taken. These are participatory processes, initiatives, consultations and assemblies.
-Whereas participatory components are mechanisms that enable interaction between users of the platform and the various participatory spaces. These include meetings, pages, proposals and surveys.
+None of these aspects are strictly technical but they do involve a series of political decisions over how you want your instance to work,
+what messages and contents it contains, what the moderation policy should be, and overall how you want your participatory
+platform to function. This is why it's essential to understand the socio-technical implications of the Decidim platform’s
+administration and management.
 
-image:introduction.png[Spaces and components]
+To understand how Decidim works, you first need to distinguish between xref:spaces.adoc[*spaces*] and xref:components.adoc[*components*].
 
-Therefore, a participatory space as a participatory process, in the various stages, can incorporate several components such as face-to-face meetings, proposals, surveys and results and the monitoring of these.
+* *Participatory spaces* are the channels that citizens can participate through: participatory processes, assemblies, initiatives and conferences.
+* *Participatory components* are mechanisms that enable interaction between participants and the participatory spaces: meetings, pages, proposals, surveys, etc.
 
-image:introduction_process.png[Components in a participatory process]
+Therefore, all participatory spaces can incorporate several components, such as meetings, proposals, surveys, or results.
 
-So, participatory spaces are configured by defining (and configuring) the components they are going to have. It is important to bear in mind that these participatory components and the various functions are repeated in the various spaces, offering many opportunities when it comes to configuring the various spaces. This simplifies learning as once a space has been configured, it is then easier to configure another.
+imagen:introduction.png[Espacios y componentes]
 
-This section provides a full description of how to configure the Decidim platform for any kind of organization and how to configure, manage and administer the various participatory processes. A description has been given in tutorial format, to help with understanding administration tasks, following Decidim’s literal fields and enclosing screenshots to facilitate their interpretation.
+So, administrators configure participatory spaces by defining and configuring the components they're going to need.
+It's important to bear in mind that these participatory components and the various functions are repeated in the various spaces,
+offering many opportunities when it comes to configuring the various spaces.
+This simplifies learning as once a space is configured, it's then easier to configure others.
 
-Managing (administering) the Decidim platform is relatively simple and intuitive and no specific IT knowledge is required. The administrators of a Decidim platform, in other words, those with the necessary authorization for managing the platform, can configure the platform in a general way (images, information pages, etc.,) and manage the various participatory processes (configuring, editing, analysing and concluding).
+This documentation section provides a full description of how to configure the Decidim platform for any kind of organization
+and how to configure, manage and administer your various participatory processes. A description has been given in tutorial format,
+to help with understanding administration tasks, following Decidim’s literal fields and enclosing screenshots to facilitate their
+interpretation.
+
+Administering the Decidim platform is quite intuitive and don't require specific IT knowledge.
+The administrators of a Decidim platform, in other words, those with the necessary authorization for managing the platform,
+can configure the platform in a general way (images, information pages, etc.,) and manage the various participatory processes
+(configuring, editing, analysing and concluding).
+
+== Get started
+
+* xref:admin:features/follows.adoc[Follows]
+* Settings
+* xref:admin:pages.adoc[Pages and topics]
+* xref:admin:participants.adoc[Participants]
+* xref:admin:global_moderations.adoc[Moderaciones globales]
+* xref:admin:spaces.adoc[Spaces]
+* xref:admin:components.adoc[Components]
+* xref:admin:features/embed.adoc[Embed]
+* xref:admin:index.adoc[Introduction]
