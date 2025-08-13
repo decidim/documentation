@@ -1,21 +1,76 @@
-= Admins
+= Administradores
 
-In the administrator listing page you can see all the administrators of the platform:
+Administrators are the persons managing the organization, creating the processes, managing the platform as a whole
+They can be of two types:
 
-image:admins.png[Admins list]
+* Administrators: have access to all the platform configuration.
+* Participant managers: can only manage participants xref:admin:participants/impersonations.adoc[impersonations].
 
-Here you can:
+image:participants/admins.png[Admins list]
 
-* invite new administrators
-* revoke administrators permissions
-* see when was the last time an administrator logged in
+== Invite an administrator
 
-For inviting a new administrator, you need to go to the button "New user" and fill
-the form with the admin username, email and which role will she have:
+To invite an administrator, click the "New admin" button at the top right of the page.
+Você pode convidar um usuário já registrado ou não registrado.
 
-* Admin: to give full access to the platform
-* Participant manager: to give permission to only do xref:admin:participants/impersonations.adoc[Impersonations]
+image:participants/admins_invite.png[Invite participant as administrator form]
 
-image:admins_invite.png[Invite participant as administrator form]
+.New administrator form
+[cols="20h,10h,~"]
+|===
+|Campo |tipo |Descrição:
 
-You can invite an already registered or a non registered participant.
+|Nome:
+|Obrigatório
+|Name of the administrator. If they already have an account, it changes automatically for their username.
+
+|e-mail
+|Obrigatório
+|Email of the participant to invite. If they don't have an account related to this email, they should receive an invitation
+email to create an account. Otherwise, they won't be notified.
+
+|Funções
+|Obrigatório
+|Administrator or Participant manager
+|===
+
+If an administrator doesn't already have an account, but didn't register, you can also Resend the invitation.
+
+== Manage administrators
+
+You can find all the administrators on the administrators list in the administration panel, with:
+
+* *Role*: type of administrator rights, can only be Administrator or Participant manager.
+* *Name*: name of the participant.
+* *Email*: email of the participant.
+* *Invitation sent at*: date and time of the email invitation.
+* *Invitation accepted at*: when they accepted the email invitation.
+* *Last log in date*: date of the administrator last connection.
+* *Creation date*: date of the participant account creation.
+
+You can filter and sort this list by clicking the "Filter" button and the columns headers.
+You can also search for administrators by email, name, or nickname in the search bar.
+
+=== Ações.
+
+.Ações.
+[cols="10h,20h,~,~"]
+|===
+|Ícone |Nome: |Definição |Condition
+
+|image:icons/action_resend.png[Resend invitation icon]
+|Reenviar convite
+|To resend an invitation email to the participant.
+|Available when the participant didn't accept the invitation.
+
+|image:icons/action_delete.png[Delete icon]
+|excluir
+|To revoke the participant's administration access rights.
+|Available for all administrators, except for the first one.
+|===
+
+=== Revoke administrator permissions
+
+When an administrator doesn't need access anymore, you should revoke their rights by clicking the "Delete" button.
+You need to confirm the rights deletion to completely remove their rights.
+Revoking administrator permissions don't delete the participant account.
