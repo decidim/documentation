@@ -1,0 +1,88 @@
+= Textes participatifs
+
+Cette fonctionnalité vous permet de naviguer dans les propositions comme du texte. Il est utile pour discuter des normes, des plans ou d'autres types de textes.
+
+Chaque paragraphe est divisé en une proposition, il est donc possible d'en discuter de manière plus granulaire.
+
+Quelques exemples d'utilisation de cette fonctionnalité sont :
+
+* https://concertation.greenpeace.fr/processes/vision-greenpeace/f/8/[Vision Greenpeace] dans https://concertation.greenpeace.fr/[Concertation Greenpeace France]
+* https://www.decidim.barcelona/processes/PAM2020/f/3771/[Procédures participatiu del Programa d'Actuació Municipal (PAM) 2020-2023] en https://www.decidim.barcelona/[Decidim Barcelona]
+
+image:components/propositions/participatory_texts/example01.png[Vision Greenpeace]
+
+image:components/propositions/participatory_texts/example02.png[PAM 2020-2023 à Decidim Barcelona]
+
+Pour configurer les "textes participatifs" dans le composant de propositions:
+
+. Se connecter en tant qu'administrateur
+. Aller au panneau d'administration
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+Par exemple, il peut s'agir de "Processus", d'"Assembles", ou de "Conférences"
+. Aller dans les fonctionnalités
+. Cliquez sur le bouton "Ajouter une fonctionnalité"
+. Cliquer sur "Propositions"
+. Cochez le paramètre "Textes participatifs activés"
+. Enregistrez le composant
+. Cliquez sur le bouton "Textes participatifs" dans la composante de propositions vide
+image:composents/propositions/participatory_texts/manage_propositions.png[Gérer les propositions]
+. Cliquez dans le bouton "Importer le document" dans le panneau de texte participatif
+image:composents/propositions/participatory_texts/preview_participatory_text_empty.png[Aperçu du texte participatif vide]
+. Remplissez xref:_add_document_form[Ajouter un formulaire de document]
+image:components/proposals/participatory_texts/add_document_form.png[Ajouter un formulaire de document]
+. xref:_preview_the_document[Prévisualiser le document] et faire des corrections
+image:components/proposals/participatory_texts/preview_participatory_text.png[Aperçu du texte participatif]
+. Cliquer sur publier le document
+image:components/propositions/participatory_texts/importted_document_proposals.png[Propositions de document importées]
+. Publier le composant de proposition
+
+Notez que cette fonctionnalité pourrait casser les propositions existantes, donc s'il y a une proposition, elle ne fonctionnera pas. You'll see the
+following message in the components settings:
+
+====
+Impossible d'interagir avec ce paramètre s'il y a des propositions existantes. S'il vous plaît, créer un nouveau composant `Propositions` si vous voulez
+pour activer cette fonctionnalité ou rejeter toutes les propositions importées dans le menu `Textes participatifs` si vous voulez le désactiver.
+====
+
+== Ajouter un formulaire de document
+
+Although it's possible to work with both Markdown (.MD) and ODT (.ODT) files, we recommend working with Markdown as it's
+easier to see the formatting.
+
+link:{attachmentsdir}/participatory_text.md[Télécharger l'exemple texte participatif].
+
+image:components/propositions/participatory_texts/add_document_form.png[Ajouter un formulaire de document]
+
+
+.Ajouter un formulaire de document
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Quel est le titre du document ?
+
+|Description
+|Facultatif
+|Description du document
+
+|Document
+|Obligatoire
+|Fichier. Ajouter un document inférieur à 2 Mo, chaque section jusqu'à 3 niveaux de profondeur sera analysée en propositions. Les formats supportés sont : Markdown, ODT
+|===
+
+== Aperçu du document
+
+Une fois le document importé initialement, vous avez trois options :
+
+. Abandonner
+. Enregistrer le brouillon
+. Publier le document
+
+== Frontend
+
+Une fois le document importé et le composant de propositions publié, vous serez en mesure de naviguer dans le document :
+
+image:components/proposals/participatory_texts/frontend.png[Frontend]
+image:components/proposals/participatory_texts/frontend_hover.png[Frontend survolant dans la proposition]
+image:components/proposals/participatory_texts/frontend_proposal.png[Détails de la proposition en frontend]
