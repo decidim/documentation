@@ -1,0 +1,229 @@
+= Débat
+
+Le composant Débat permet aux participants d'avoir des discussions, sans vote ni prioritisation. Cela permet également de les conclure, en ajoutant des conclusions ou un résumé de ce qui a été discuté.
+
+À partir de ce point de départ, il pourrait y avoir d'autres configurations, telles que:
+
+* Permettre la création de débats par les participants
+* Avoir des débats avec une date de début et de fin fixe ou ouvert
+* Montrer les soutiens (support public) ou non
+
+Quelques exemples d'utilisation de ce composant :
+
+* https://meta.decidim.org/processes/roadmap/f/219/[Proposer de nouvelles fonctionnalités pour le logiciel Decidim dans Metadecidim]
+
+image:components/debates/example01.png[Exemple de liste des débats]
+image:components/debates/example02.png[Exemple de débat]
+
+Pour configurer le fonctionnalité Débat:
+
+. Se connecter en tant qu'administrateur
+. Aller au panneau d'administration
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+Par exemple, il peut s'agir de "Concertations", d'"Assemblées" ou de "Conférences".
+. Aller dans les fonctionnalités
+. Cliquez sur le bouton "Ajouter une fonctionnalité"
+. Cliquez sur "Débattre"
+. Remplissez le formulaire xref:_add_component[Ajouter une fonctionnalité]
+
+== Ajouter une fonctionnalité
+
+image:components/debates/component.png[Ajouter un formulaire de composant]
+
+
+.Ajouter un composant : Formulaire de débat
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Quel est le titre de cette fonctionnalité. Par exemple, "Debates"
+
+|Rang d'affichage
+|Facultatif
+|Quel ordre aura-t-il par rapport aux autres débats. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux débats, "Débat A" avec le poids "10" et "Débat B" avec le poids "0", alors "Débat B" sera le premier lors de l'affichage.
+|===
+
+
+.Ajouter une fonctionnalité : Formulaire de débat - Paramètres globaux
+|===
+|Champ |Type |Description
+
+|Portées activées
+|Facultatif
+|Cochez cette case si vous voulez que le filtrage des portées dans ce composant.
+
+|Secteur
+|Facultatif
+|Ce composant appartient à xref:admin:scopes.adoc[Scope].
+
+|Portée générale
+|Facultatif
+|
+
+|Commentaires activés
+|Facultatif
+|Si vous voulez avoir des commentaires dans les rencontres.
+
+|Longueur maximale des commentaires
+|Facultatif
+|Quelle est la limite de caractères que les participants auront quand ils feront des commentaires. Laisser 0 pour la valeur par défaut.
+
+|Annonce
+|Facultatif
+|Une annonce générale qui sera visible sur la page d'accueil des débats généraux.
+|===
+
+Dans les cas où l'espace que ce composant sera utilisé a xref:admin:spaces/processes/phases. doc[Phases], par exemple, dans
+xref:admin:spaces/processes.adoc[Processus participatif], vous pouvez également définir différents comportements par étape.
+
+
+.Ajouter un composant : Formulaire de débats - Paramètres de l'étape
+|===
+|Champ |Type |Description
+
+|Soutiens activés
+|Facultatif
+|Cochez cette case si vous voulez que les participants montrent un soutien public à ces débats.
+
+|Soutiens bloqués
+|Facultatif
+|
+
+|Création de débats par les participants activés
+|Facultatif
+|Cochez cette case si vous voulez permettre la création de nouveaux débats par les participants.
+
+|Commentaires désactivés
+|Facultatif
+|Si vous voulez activer les commentaires pour cette phase.
+
+|Annonce
+|Facultatif
+|Une annonce générale qui sera visible sur la page d'accueil du débat général.
+|===
+
+== Autorisations
+
+Un administrateur peut choisir quel type de xref:customize:authorizations.adoc[Authorizations] un participant a besoin de faire
+certaines actions dans les débats :
+
+* Créer
+* Soutenir
+
+== Gérer les débats
+
+image:components/debates/manage_debates.png[Gérer le tableau des débats]
+
+=== Exporter tout
+
+Permet d'exporter les commentaires dans les débats sous différents formats.
+
+* Commentaires en tant que CSV
+* Commentaires en JSON
+* Commentaires en tant qu'Excel
+
+=== Nouveau formulaire de débat
+
+image:components/debates/new_debate_backend.png[Nouveau formulaire de discussion]
+
+
+.Nouveau formulaire de débat
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Quel est le titre de ce débat. Par exemple, "Comment pouvons-nous améliorer ce processus ?"
+
+|Description
+|Obligatoire
+|Quelle est la description de ce débat.
+
+|Instructions pour participer
+|Obligatoire
+|Ajouter un message pour les participants.
+
+|Mises à jour des informations
+|Facultatif
+|Ajouter un message pour les participants.
+
+|xref:_debate_types[Type de débat]
+|Obligatoire
+|Choisissez entre Finite et Ouvrir. Finite signifie que le débat a une date et une heure de début et de fin, Ouverture signifie que
+il n'y a pas de période de temps.
+
+|Commence à
+|Requis si le type de débat est Finite
+|Format attendu : jj/mm/aaaa hh:ii
+
+|Se termine à
+|Requis si le type de débat est Finite
+|Format attendu : jj/mm/aaaa hh:ii
+
+|Catégorie
+|Facultatif
+|Quelle catégorie a le débat. Utilisé pour le filtrage dans la liste des débats.
+|===
+
+==== Types de débats
+
+Il est possible d'avoir deux types de débats :
+
+. Finite : avec une date de début et de fin
+. Ouvrir: sans date de début et de fin
+
+Cela apparaît publiquement dans la liste des débats.
+
+image:components/debates/debates_list.png[Liste des débats]
+image:components/debates/debate_finite.png[débat fini]
+
+==== Actions
+
+
+.Actions
+|===
+|Icône |Nom |Définition
+
+|image:action_edit.png[Icône d'édition]
+|Editer
+|Modifier le formulaire pour un débat. C'est la même forme que "Nouveau débat".
+
+|image:action_close.png[Icône fermée]
+|Fermer
+|Fermer le formulaire pour un débat. Pour ajouter des conclusions.
+
+|image:action_permissions.png[Icône des permissions]
+|Autorisations
+|Pour gérer les permissions de ce débat, selon la vérification d'un participant.
+
+|image:action_delete.png[Supprimer l'icône]
+|Supprimez
+|Supprimer ce débat. Peut être fait unquement quand il n'y a pas de projets dans ce budget.
+|===
+
+=== Fermer le formulaire de débat
+
+Un débat peut être clos. Ceci est utile pour ajouter des conclusions. Après la fermeture d'un débat, il ne peut plus être édité ni commenté
+
+image:components/debates/close_debate_backend.png[Fermer le formulaire backend de débat]
+
+Take in account that if the debate was created by a participant then only that
+participant can close it.
+
+image:components/debates/close_debate_frontend.png[Fermer le formulaire frontend du débat]
+
+
+.Fermer le formulaire de débat
+|===
+|Champ |Type |Description
+
+|Conclusions
+|Obligatoire
+|Quelle est la conclusion de ce débat.
+|===
+
+Les conclusions sont montrées publiquement avec la date et l'heure limites.
+
+image:components/debates/debate_closed.png[débat fermé]
