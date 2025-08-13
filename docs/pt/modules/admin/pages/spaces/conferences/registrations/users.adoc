@@ -1,27 +1,27 @@
-= User registrations
+= Inscrições de usuários
 
-After participants have registered, they will appear in this section.
+Depois que os participantes se registrarem, eles aparecerão nesta seção.
 
-image:spaces/conferences/user_registrations.png[Conferences user registrations (backend)]
+imagem:spaces/conferências/user_registrations.png[Registros de usuários de conferências (backend)]
 
-As an administrator, you can:
+Como administrador, você pode:
 
-* Export the registrations
-* Confirm a registration
+* Exportar as inscrições
+* Confirmar um registro
 
-== Export
+== Exportação
 
-It's possible to export the registrations in multiple formats: CSV, JSON, and XLSX (Excel).
+É possível exportar os registros em vários formatos: CSV, JSON e XLSX (Excel).
 
-== Flow
+== Fluxo
 
-. A participant registers to the conference
+. Um usuário se inscreve na conferência
 . She receives a pending registration notification
 image:spaces/conferences/user_registration_pending_notification.png[Notification for pending user registration]
 . She receives a pending registration email
 image:spaces/conferences/user_registration_pending_email.png[Email for pending user registration]
-. An administrator reviews and confirms the registration with the image:action_check.png[Confirm] button
-. The participant receives a confirmed registration notification
-image:spaces/conferences/user_registration_confirmed_notification.png[Notification for confirmed user registration]
+. Um administrador revisa e confirma o registro com o botão imagem:action_check.png[Confirm]
+. O participante recebe uma notificação de registro confirmada
+imagem:spaces/conferências/user_registration_confirmed_notification.png[Notificação para registro de usuário confirmado]
 . She receives a confirmed registration email with an calendar file (.ICS).
-image:spaces/conferences/user_registration_confirmed_email.png[Email for confirmed user registration]
+image:spaces/conferences/user_registration_confirmed_email.png[E-mail para registro de usuário confirmado]
