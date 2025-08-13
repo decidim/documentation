@@ -1,242 +1,131 @@
-= Processes
+= Procesos participativos
 
-A participatory process is a sequence of participatory activities (e.g. first filling out a survey, then making proposals,
-discussing them in face-to-face or virtual meetings, and finally prioritizing them) with the aim of defining and making a decision on a specific topic.
+== Understand the basics
 
-Examples of participatory processes are: a process of electing committee members (where candidatures are first presented,
-then debated and finally a candidacy is chosen), participatory budgets (where proposals are made, valued economically,
-and voted on with the money available), a strategic planning process, the collaborative drafting of a regulation or norm,
-the design of an urban space or the production of a public policy plan.
+A participatory process is a sequence of participatory activities with the aim of defining and making a decision on a specific topic.
+For example, you could have a participatory process like this:
 
-A really important concept for making good use of Decidim is to understand the relationship between Phases and Components
-in a participatory process in Decidim:
+. First filling out a survey for collect participants opinion;
+. Then opening proposals;
+. Discussing them in face-to-face or virtual meetings;
+. Finally prioritizing them before implementation.
+
+NOTE: You want to create a participatory process? Check the xref:admin:spaces/processes/process_creation.adoc[process creation] article.
+
+Ejemplos de procesos participativos son: un proceso de elección de los miembros del comité (donde se presentan por primera vez las candidaturas,
+luego debatido y finalmente se elige una candidatura), presupuestos participativos (donde se hacen las propuestas, valorado económicamente,
+y votado con el dinero disponible), un proceso de planificación estratégica, la redacción colaborativa de un reglamento o norma,
+el diseño de un espacio urbano o la producción de un plan de política pública.
+
+Un concepto realmente importante para hacer un buen uso de Decidim es entender la relación entre las fases y los componentes
+en un proceso participativo en Decidim:
 
 image::process_steps_components.png[Relation between Steps and Components in a Process in Decidim]
 
-What this diagram is showing is that for a participatory process you can have 7 phases:
+What this diagram is showing is that for a participatory process you can configure different phases, and enable and configure
+the components for each phase as you need it for your process.
 
-. Configuration & Presentation
-. Diagnostic
-. Proposal Creation
-. Proposal Selection
-. Results
-. Evaluation
-. Monitoring
+Inside of every one of these Phases, you can enable the xref:admin:components.adoc[Components] you need.
 
-Inside of every one of these Phases, there are some components (like Blog, Meetings, Survey, Debates, Proposals, Results).
-Some of these Components allow some features depending on the Phase that we are.
+In this documentation section, you can find how to configure and manage all of those items:
 
-In this section, we'll explain how we can configure a Participatory Process in Decidim.
+* xref:admin:spaces/processes/groups.adoc[Grupos de procesos]
+* xref:admin:spaces/processes/types.adoc[Tipos de proceso]
+** xref:admin:spaces/processes/process_creation.adoc[Process creation]
+** xref:admin:information-pages.adoc[Information pages]
+** xref:admin:spaces/processes/phases.adoc[Phases]
+** xref:admin:spaces/processes/components.adoc[Components]
+** xref:admin:spaces/processes/categories.adoc[Categories]
+** xref:admin:spaces/processes/attachments.adoc[Attachments]
+** xref:admin:spaces/processes/admins.adoc[Process admins]
+** xref:admin:spaces/processes/private_participants.adoc[Participantes privados]
+** xref:admin:spaces/processes/moderations.adoc[Moderations]
 
-== List
+=== How to find it?
 
-To configure participatory processes on the Decidim platform, click on btn:[Processes] in the admin sidebar menu. A list
-will appear with the existing processes if there are any:
+To access the Participatory processes panel, go in the administration panel and click the "Processes" item in the administration
+navigation bar.
 
-image::processes_list.png[Participatory processes list]
+image::spaces/processes/processes_menu.png[Pages: Access processes panel]
 
-You can filter by the ones that are:
+There, you are able to manage participatory processes and processes groups.
 
-* Published / Unpublished
-* Public / Private
+== Configuración
 
-image::processes_list_filter.png[Participatory processes list filtered]
+=== Manage processes
 
-You can also search by title and control how many elements are in the list.
+image::spaces/processes/processes_list.png[Participatory processes list]
 
-You have 4 possible actions in this list after a Participatory Process is created:
+On this page, you are able to manage processes and xref:admin:spaces/processes/groups.adoc[process groups].
 
-1. Export: send by email the configuration for a given process. Can be imported in other Decidim installation.
-1. Duplicate: to duplicate this process.
-1. Configure: to edit the metadata and configuration for a process.
-1. Preview: how it will look once published.
+You can find all the processes on the list in the administration panel, with:
 
-== New process form
+* *Title*: title of the process.
+* *Created at*: date of creation of the process.
+* *Private*: if the process is opened to all participants or to only certain participants.
+* *Published*: if the process is published or no.
 
-image::processes_new_form.png[New participatory process form]
+You can filter and sort this list by clicking the "Filter" button and the columns headers.
+You can also search for processes by their title in the search bar.
 
+image::spaces/processes/processes_list_filter.png[Participatory processes list filtered]
 
-.New participatory process form: General information
+=== Acciones
+
+.Acciones
+[cols="10h,20h,~"]
 |===
-|Field |Type |Description
+|Icono |Nombre |Definición
 
-|Title
-|Required
-|Title of the participatory process. For instance, "Participatory Budgeting 2020".
+|image:icons/action_edit.png[Configure process icon]
+|Configurar
+|To edit the configuration and components for a process.
 
-|Subtitle
-|Required
-|Subtitle. For instance, "Let's decide our priorities together"
+|image:icons/action_export.png[Export process icon]
+|Exportar todo
+|Send the process configuration JSON file by email. Then it can be imported in other Decidim installation.
 
-|URL slug
-|Required
-|URL slugs are used to generate the URLs that point to this process. Only accepts letters, numbers and dashes, and must
-start with a letter. Example: if your domain is 'example.org' and your slug 'participatory-budget-2020' then your URL will
-be https://example.org/processes/participatory-budget-2020
+|image:icons/action_duplicate.png[Duplicate process icon]
+|Duplicate
+|To duplicate this process.
 
-|Hashtag
-|Optional
-|Hashtag for Twitter
+|image:icons/action_preview.png[Preview process icon]
+|Vista previa
+|Preview of how the process looks in the user interface.
 
-|Short description
-|Required
-|A short explanation of what's your participatory process about.
-
-|Description
-|Required
-|A long explanation of what's your participatory process about.
-
-|Announcement
-|Optional
-|The text you enter here will be shown to the user right below the process information.
+|image:icons/action_moderate.png[Moderate process icon]
+|Moderate
+|To access the process moderation panel.
 |===
 
+You can also click the "Manage" button at the top right of the page, to be able to import a process or
+configure xref:admin:spaces/processes/types.adoc[Process Types].
 
-.New participatory process form: Duration
-|===
-|Field |Type |Description
+=== Import a process
 
-|Start date
-|Optional
-|When this process start. You have a calendar widget to choose the day. Expected format: dd/mm/yyyy
+To import a process, click the "Manage" button at the top right of the page.
 
-|End date
-|Optional
-|When this process start. You have a calendar widget to choose the day. Expected format: dd/mm/yyyy
-|===
+image::spaces/processes/import_menu.png[Participatory processes import menu]
 
+You are redirected to the import page, where you need to fill in those fields:
 
-.New participatory process form: Images
-|===
-|Field |Type |Description
+* Title : The title you wish to give to the process.
+* URL identifier: The ‘slug’ for the process.
+* Add a document: Here you need to load the process JSON file obtained by email when exporting.
 
-|Home image
-|Optional
-|Image that will be used in presentation cards of this process. Guidance for file: Has to be an image or a document.
-For images, use preferably landscape images, the service crops the image. Maximum file size: 10MB
+You can then select the type of data you want to import from the file.
 
-|Banner image
-|Optional
-|Image that will be used inside of the process. Guidance for file: Has to be an image or a document.
-For images, use preferably landscape images, the service crops the image. Maximum file size: 10MB
-|===
+* Import steps: Imports all the phases present in the original file.
+* Import categories: Imports all the categories present in the original file.
+* Import attachments : Import attachments of the original process.
+* Import components : Imports all the components and their configuration from the original file, without importing their content.
 
+== Ejemplos
 
-.New participatory process form: Metadata
-|===
-|Field |Type |Description
+Below, you can find some links to examples participatory processes:
 
-|Promoter group
-|Optional
-|Information that's displayed in the process metadata sidebar.
-
-|Organization area
-|Optional
-|Information that's displayed in the process metadata sidebar.
-
-|Scope metadata
-|Optional
-|Information that's displayed in the process metadata sidebar.
-
-|Who participates
-|Optional
-|Information that's displayed in the process metadata sidebar.
-
-|What is decided
-|Optional
-|Information that's displayed in the process metadata sidebar.
-
-|How is it decided
-|Optional
-|Information that's displayed in the process metadata sidebar.
-|===
-
-image::process_frontend_metadata.png[Process frontend metadata]
-
-image::process_backend_metadata.png[Process backend metadata]
-
-
-.New participatory process form: Filters
-|===
-|Field |Type |Description
-
-|Scopes enabled
-|Optional
-|Check if you want to have Scopes filtering in this process.
-
-|Scope
-|Optional
-|Which xref:admin:scopes.adoc[Scope] does this process belongs to.
-
-|Scope filter depth
-|Optional
-|Restrict the scope filter depth; The filter will show from general to the selected scope type. This is only relevant if
-you have complex relations in Scopes children (like a Russian Doll). For instance if you have a Grandmother -> Mother ->
-Child, this setting allows you to choose the Mother, so the participants can only choose the Child. This would be the
-case for instance if you have Provinces -> Cities -> Districts, and the process is about a particular City.
-
-|Area
-|Optional
-|Which xref:admin:areas.adoc[Area] does this process belongs to.
-|===
-
-
-.New participatory process form: Visibility
-|===
-|Field |Type |Description
-
-|Processes group
-|Optional
-|Enables to make groups of multiple participatory processes. Ideally for processes that are related between them, for
-instance multiple squares in a City or multiple documents using the same participatory rules.
-
-|Private space
-|Optional
-|Check if this process should only be accessible by xref:admin:spaces/processes/private_participants.adoc[Private Participants]
-
-|Promoted
-|Optional
-|Check if you want the process to have more visibility in the Process public list. It'll also be visible in the
-Participatory Process Content Block in the xref:admin:homepage.adoc[Homepage] configuration. This is accessible in the
-btn:[Edit] action in a Process.
-|===
-
-
-.New participatory process form: Filters
-|===
-|Field |Type |Description
-
-|Related processes
-|Optional
-|Select other participatory processes that are related to this one.
-|===
-
-
-.New participatory process form: Filters
-|===
-|Field |Type |Description
-
-|Show statistics
-|Optional
-|Check if you want to show the Statistics section.
-
-|Show metrics
-|Optional
-|Check if you want to show the Metrics section.
-|===
-
-After you've initially created your process you have a submenu where you need to keep configuring more information
-about your participatory process.
-
-image::process_submenu.png[Process submenu in admin]
-
-Here you can keep configuring your process:
-
-. Info: the same form that we explained in this page.
-. xref:admin:spaces/processes/phases.adoc[Phases]
-. xref:admin:spaces/processes/components.adoc[Components]
-. xref:admin:spaces/processes/categories.adoc[Categories]
-. xref:admin:spaces/processes/attachments.adoc[Attachments]
-. xref:admin:spaces/processes/admins.adoc[Process admins]
-. xref:admin:spaces/processes/private_participants.adoc[Private participants]
-. xref:admin:spaces/processes/moderations.adoc[Moderations]
+* https://www.decidim.barcelona/processes/PAM2020[Procés participatiu del Programa d'Actuació Municipal (PAM) 2020-2023, Barcelona]
+* https://www.participate.nyc.gov/processes/Citywidepb2024[The People's Money (2024-2025), New York city participatory budget]
+* https://brasilparticipativo.presidencia.gov.br/processes/planoclima/[Plano Clima, Brazilian government]
+* https://omastadi.hel.fi/processes/osbu-2023/[Helsinki city participatory budget]
+* https://ecrivons.angers.fr/processes/BP24-25[Angers city participatory budget]
