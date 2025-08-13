@@ -1,0 +1,60 @@
+= Sozialvertrag des Decidims
+
+[NOTE]
+====
+Sie können Decidims Gesellschaftsvertrag auch in anderen Sprachen lesen: xref:understand:social-contract-ca.adoc[Català] - xref:understand:social-contract-es.adoc[Castellano]
+
+Wenn du es in deine eigene Sprache übersetzen möchtest, bitte https://decidim.org/contact[kontaktiere un].
+====
+
+Kodex für demokratische Garantien und offene Zusammenarbeit
+
+Dies ist der Gesellschaftsvertrag, zu dessen Einhaltung sich alle Mitglieder der Decidim-Gemeinschaft verpflichtet haben.
+
+Durch die Unterzeichnung dieses Gesellschaftsvertrags, jeder Einzelperson, Institution oder Gesellschaftsgruppe jeglicher Art, verpflichtet sich, die hier aufgestellten Prinzipien bei der Verwendung, Entwicklung und Teilnahme an der Gemeinschaft von Decidim zu erfüllen.
+
+== Freie Software und Inhalte öffnen
+
+Der Code der Plattform, zusammen mit den Modulen, Bibliotheken oder jedem anderen Code, der für seine Funktionsweise und den Einsatz entwickelt wurde wird immer Freie Open Source Software mit einem https://www sein. nu.org/licenses/agpl-3.0.de.html[Affero GPLv3 license or later versions] when the code is newly developed and with licenses, which are compatible with the above one when code re-used code.
+
+Genauso der Inhalt, die Daten, APIs und/oder andere Schnittstellen, die eingesetzt werden, um mit jedem Benutzer zu interagieren, müssen offenen und interoperablen Standards folgen (z. OpenID, RSS, OStatus, etc.), die immer dazu neigen, ihre Integration mit den am weitesten verbreiteten offenen Standards zu maximieren.
+
+Um die Transparenz und die Zusammenarbeit der Bürger bei partizipatorischen Prozessen, Organen und Mechanismen zu maximieren Text, Grafiken, Schriften, Audio, Video oder andere Designelemente werden unter https://creativecommons veröffentlicht. rg/licenses/by-sa/4.0/legalcode[Creative Commons By-SA].
+
+Die über die Plattform verfügbaren Daten, insbesondere alle Daten, die systematisch durch Scrappers oder andere Techniken der massiven Beratung erfasst werden können wird unter http://opendatacommons veröffentlicht und lizenziert. rg/licenses/odbl[Open Data Commons Open Database License], veröffentlicht in standardisierten und zugänglichen Formaten (wie CSV, JSON, etc.) und, wann immer möglich, mit Werkzeugen zur Analyse und Visualisierung von Daten.
+
+== Transparenz, Rückverfolgbarkeit und Integrität
+
+Die Plattform und ihre aktuelle oder zukünftige Konfiguration, Entwicklung, Bereitstellung und Nutzung müssen jederzeit die Transparenz gewährleisten und maximieren Rückverfolgbarkeit und Integrität von Dokumenten, Vorschlägen, Diskussionen, Entscheidungen oder anderen Objekten, Mechanismen oder partizipativen Prozessen.
+
+Durch _transparency_ verstehen wir, dass alle Daten, die mit solchen partizipatorischen Mechanismen und Prozessen zusammenhängen, zum Download verfügbar sind, Analyse und Behandlung nach den anspruchsvollsten Standards und Formaten zum Austausch von Informationen (Zugänglichkeit, Multi-Format, etc.).
+
+Transparenz ist eine notwendige Voraussetzung für die Überwachung partizipatorischer Prozesse und Mechanismen, sollte aber auf keinen Fall sein. zur Behandlung personenbezogener Daten oder zum Schutz der Privatsphäre der Teilnehmer der Plattform beantragt werden.
+
+Wir verstehen durch _Rückverfolgbarkeit_ die Fähigkeit, vollständig rückwärts (Vergangenheit) und vorwärts (Zukunft) zu verfolgen, was mit den Vorschlägen passiert ist Pläne, Verordnungen oder sonstige Beteiligungs- oder Entscheidungsobjekte, die in einem Prozess oder Mechanismus enthalten sind. Die Plattform muss jederzeit zeigen, wie, warum, von wem und mit dem, was eine bestimmte Art von Objekt eines partizipativen Prozesses garantiert, entlassen, genehmigt oder blockiert wurde.
+
+Wir verstehen durch _Integrity_ die Authentizität eines bestimmten Inhalts und dafür zu sorgen, dass sie nicht manipuliert oder verändert wurde, ohne dass diese Änderung eindeutig erfasst und sichtbar überprüfbar und überprüfbar ist. Das Ziel der Integrität ist es, Manipulation von Vorschlägen oder Ergebnissen partizipatorischer Prozesse oder Mechanismen zu vermeiden.
+
+== Chancengleichheit und Qualitätsindikatoren
+
+Neben den zuvor festgelegten Garantien verspricht die Plattform, Chancengleichheit für alle Menschen zu gewährleisten. sowie für ihre Vorschläge oder andere Beiträge kann die Plattform Host sein. Die Plattform bietet Chancengleichheit für alle Beteiligungsobjekte (Vorschläge, Aussprachen usw.) damit sie ohne jegliche Diskriminierung betrachtet, diskutiert, kommentiert, bewertet oder behandelt werden. In diesem Sinne wird die digitale Identität der Nutzer der Plattform immer persönlich und nicht übertragbar sein. die Prüfung, die Entscheidungsrechte auf die Plattform überträgt, sollte auch einzigartig sein, und es ist die für die Plattform zuständige Verwaltung, die für die Nichtpersonalisierung einer Person oder Person verantwortlich sein sollte.
+
+Die Plattform sollte mit dem Ziel der Sicherung ihrer demokratischen Qualität fördern. die Verwendung von Qualitätsindikatoren, die auf der Grundlage der aus partizipatorischen Prozessen, Mechanismen und Benutzeraktivitäten gewonnenen Daten entwickelt wurden. Die Freigabe der Einstellung der verschiedenen Komponenten sowie die offenen Daten werden für die Definition dieser Indikatoren gefördert
+
+Die Gleichstellung der Bürger bei der politischen Beteiligung ist eines der Grundprinzipien jedes demokratischen Systems und der Plattform, nicht nur die Chancengleichheit in Bezug auf die Verwendungen und Funktionen sicherzustellen, sondern auch das Zugangsrecht. In diesem Sinne nimmt die Entität verantwortlich für die Plattform übernimmt die Verpflichtung zur Förderung von Maßnahmen, die in Richtung der Bereitstellung von Zugang und Unterstützung für die Plattform für alle Bürgerinnen und Bürger gleichermaßen universell Giving Tools und Ressourcen angemessen für die Plattform ist für jeden, der nutzen will.
+
+== Datenvertraulichkeit
+
+Die Vertraulichkeit und Privatsphäre der persönlichen Daten, die Personen zur Teilnahme an einer der Funktionalitäten und/oder Teilnahmemöglichkeiten der Plattform zur Verfügung stellen, ist jederzeit zu gewährleisten. In keinem Fall werden personenbezogene Daten an Dritte weitergegeben. Personenbezogene Daten werden nicht über das für die Registrierung des Nutzers unbedingt erforderliche Maß hinaus verwendet und die Benutzerfreundlichkeit der Plattform verbessert. Wann immer die Plattformtechnologie es möglich macht Der Ausdruck politischer Präferenzen oder Willens in Entscheidungsprozessen bleibt auch für den Administrator der Plattform oder für die Server, die sie betreiben, unzugänglich.
+
+== Verantwortlichkeit und Verantwortung
+
+Es wird eine Verpflichtung gegenüber den Bürgern eingeleitet, alle Fragen und Beiträge in kürzester Zeit zu beantworten. Es wird auch eine Verpflichtung übernommen, die Ergebnisse der partizipatorischen Prozesse zu verfolgen und auf die Forderungen zu reagieren, die speziell darum ersuchen. Schließlich soll eine Verpflichtung eingegangen werden, die Einbeziehung von Indikatoren zur Überwachung der Beteiligungsprozesse nach ihrer Fertigstellung zu untersuchen. um seine Umsetzung systematisch zu bewerten.
+
+== Kontinuierliche Verbesserung und interinstitutionelle Zusammenarbeit
+
+Es werden Mechanismen für die regelmäßige Überprüfung und Evaluierung zur Verfügung gestellt, um die kontinuierliche Verbesserung der Plattform zu erleichtern.
+
+Priorität wird der Zusammenarbeit und dem Erfahrungsaustausch zwischen den an dem Projekt beteiligten Institutionen eingeräumt werden. mit dem Ziel, neue Entwicklungen für die kontinuierliche Verbesserung der Plattform zu verbessern, zu reparieren und zu bauen.
+
+In diesem Sinne werden gemeinsame Bedingungen und Umgebungen erleichtert, wenn Verbesserungen vorangebracht werden, die auf einen gemeinsamen Nutzen der gesamten Plattform hindeuten die Aktivierung von Koordinierungsmechanismen zwischen den Agenturen, falls nötig.
