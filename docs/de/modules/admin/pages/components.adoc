@@ -1,0 +1,75 @@
+= Komponenten
+
+== Understand the basics
+
+Durch Komponenten kann ein Administrator verschiedene Beteiligungsmechanismen aktivieren und konfigurieren.
+All components are available in all the different xref:admin:spaces.adoc[spaces].
+
+When you create a participatory space, by default, it won't have any components in it.
+
+partielle$components_list.adoc[]
+
+=== How to find it?
+
+Components are accessible in each xref:admin:spaces.adoc[space], through the administration secondary navigation bar.
+
+image::components/components_index_back.png[Component index backend in an assembly]
+
+To create a component, click the "Add component" button and select the type of component you want to create.
+
+Once you start publishing components, participants see links to the different components appear in the space "Main data"
+content block in the landing page, in the general search engine, and in the dedicated homepage content blocks.
+
+image::components/components_index_front.png[Component index frontend in an assembly]
+
+== Konfiguration
+
+=== Manage components
+
+On this page, you are able to manage components and create new ones.
+
+You can find all the components of the space on the list, with:
+
+* *Component name*: title of the component, chosen at its creation and editable.
+* *Component type*: type of component.
+* *Component scope*: the xref:admin:scopes.adoc[scope] of the component.
+
+=== Aktionen
+
+[cols="10h,~,~"]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Manage component icon]
+|Verwalten
+|To edit the resources inside the component, like blog posts, proposals, meetings, etc.
+
+|image:icons/action_share.png[Share icon]
+|Teilen
+|Creates a link with a token to share the component with other users.
+
+|image:icons/action_configure.png[Configure icon]
+|Konfigurieren
+|To edit the general configuration of the component.
+
+|image:icons/action_publish.png[Publish component icon]
+|Veröffentlichen
+|To publish the component.
+
+|image:icons/action_unpublish.png[Unpublish component icon]
+|Zurückziehen
+|To unpublish the component.
+
+|image:icons/action_preview.png[Preview component icon]
+|Vorschau
+|Preview of how the component looks in the user interface.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Berechtigungen
+|To configure which kind of xref:admin:participants/authorizations.adoc[Authorizations]
+a participant need to have to be able to perform certain actions in a component.
+
+|image:icons/action_delete.png[Delete component icon]
+|Löschen
+|To delete the component, only possible when there is no participant participation in it.
+|===
