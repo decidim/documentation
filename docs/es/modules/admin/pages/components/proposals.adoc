@@ -1,445 +1,445 @@
-= Proposals
+= Propuestas
 
-The Proposals component allows people to create, comment, endorse, and give support to proposals.
+El componente Propuestas permite a las personas crear, comentar, apoyar y dar apoyo a las propuestas.
 
-From this starting point, there could be other configurations, such as:
+Desde este punto de partida, podría haber otras configuraciones, como:
 
-* how many proposals a participant can create
-* how many supports as a maximum a participant can give to proposals
-* how many supports as a minimum a participant must give to proposals so their supports are valid
-* whether you want to enable that participants comment on proposals
-* whether you want that proposals have images, attachments, WYSIWYG editor, geolocated address, scopes, etc.
+* cuántas propuestas puede crear un participante
+* cuántos apoyos como máximo un participante puede dar a las propuestas
+* cuántos apoyos como mínimo un participante debe dar a las propuestas para que sus apoyos sean válidos
+* si desea habilitar que los participantes comenten sobre propuestas
+* si desea que las propuestas tengan imágenes, adjuntos, editor WYSIWYG, dirección geolocalizada, alcance, etc.
 
-Some examples of where this component was used:
+Algunos ejemplos de donde se usó este componente:
 
-* https://futureu.europa.eu/[Conference of the Future of Europe]
-* https://meta.decidim.org/processes/roadmap/f/122/[Propose new functionalities for Decidim software] in https://meta.decidim.org/[Metadecidim]
+* https://futureu.europa.eu/[Conferencia del Futuro de Europa]
+* https://meta.decidim.org/processes/roadmap/f/122/[Proponer nuevas funcionalidades para el software Decidim] en https://meta.decidim.org/[Metadecidim]
 
-image:components/proposals/example01.png[Proposals list example in COFE]
-image:components/proposals/example02.png[Proposals list example in Metadecidim]
-image:components/proposals/example03.png[Proposal detail example in Metadecidim]
+image:components/proposals/example01.png[Ejemplo de la lista de propuestas en COFE]
+image:components/proposals/example02.png[Ejemplo de la lista de propuestas en Metadecidim]
+image:components/proposals/example03.png[Ejemplo de detalle en Metadecidim]
 
-To configure the Proposals component:
+Para configurar el componente Proposals.
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Go to components
-. Click on "Add component" button
-. Click on "Proposals"
-. Fill the xref:_add_component[Add component] form
+. Iniciar sesión como administrador
+. Ir al panel de administración
+. En la barra lateral principal, haga clic en el botón para el espacio para el que desea configurar el componente.
+Por ejemplo, podría ser "Procesos", "Colmenas" o "Conferencias"
+. Ir a los componentes
+. Haga clic en el botón "Añadir componente"
+. Haga clic en "Propuestas"
+. Rellene el formulario xref:_add_component[Añadir componente]
 
-== Add component
+== Añadir componente
 
-image:components/proposals/component.png[Add component form]
+imagen:components/proposals/component.png[Añadir formulario de componente]
 
 
-.Add component: Proposals form
+.Añadir componente: Formulario de propuestas
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Name
-|Required
-|What is the title of this component. For instance, "Proposals"
+|Nombre
+|Requerido
+|¿Cuál es el título de este componente. Por ejemplo, "Propuestas"
 
-|Order position
-|Optional
-|Which order will it have in relation to the other components. Having a lower number means a higher priority.
-For instance, if you have two components, "Proposals" with weight "10" and "Meetings" with weight "0", then "Meetings" will be first when ordering.
+|Posición del pedido
+|Opcional
+|Que orden tendrá en relación con los otros componentes. Tener un número más bajo significa una prioridad mayor.
+Por ejemplo, si usted tiene dos componentes, "Propuestas" con el peso "10" y "Reuniones" con el peso "0", entonces "Reuniones" será primero cuando se haga el pedido.
 |===
 
 
-.Add component: Proposals form - Global settings
+.Añadir componente: Formulario de propuestas - Configuración global
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Scopes enabled
-|Optional
-|Check if you want to have Scopes filtering in this component.
+|Ámbitos habilitados
+|Opcional
+|Marque si desea tener filtrado de Scopes en este componente.
 
-|Scope
-|Optional
-|Which xref:admin:scopes.adoc[Scope] does this component belongs to.
+|Alcance
+|Opcional
+|A qué xref:admin:scopes.adoc[Scope] pertenece este componente.
 
-|Support limit per participant
-|Optional
-|Must be a number. How much supports a participant can give to proposals.
+|Límite de soporte por participante
+|Opcional
+|Debe ser un número. Cuánto apoyo puede dar un participante a las propuestas.
 
-|Minimum supports per user
-|Optional
-|Must be a number. How many supports does a participant needs to give to proposals so their supports are counted. If she doesn't
+|Soporte mínimo por usuario
+|Opcional
+|Debe ser un número. Cuántos apoyos tiene que dar un participante a las propuestas para que sus apoyos sean contados. If she doesn't
 reach this number, her supports will not be taken in account.
 
-|Proposal limit per participant
-|Optional
-|Must be a number. How many proposals a participant can create.
+|Límite de propuesta por participante
+|Opcional
+|Debe ser un número. Cuántas propuestas puede crear un participante.
 
-|Maximum proposal body length
-|Optional
-|Must be a number. How many characters a proposal body can have as maximum.
+|Longitud máxima del cuerpo de la propuesta
+|Opcional
+|Debe ser un número. Cuántos caracteres puede tener un cuerpo de propuesta como máximo.
 
-|Proposal editing
-|Required
-|Choose one of these two options: "Allow editing of proposals within a specific timeframe" or "Allow editing proposals
-for an infinite amount of time". In case it's within a specific timeframe, you must specify the time in "Proposals can be
-edited by authors before this many minutes passes". Note that if you xref:components/proposals/answers.adoc[answer a proposal]
-then it can't be edited anymore.
+|Edición de propuestas
+|Requerido
+|Elija una de estas dos opciones: "Permitir la edición de propuestas dentro de un marco temporal específico" o "Permitir editar propuestas
+para una cantidad infinita de tiempo". En caso de que esté dentro de un periodo de tiempo específico, debe especificar el tiempo en "Las propuestas pueden ser
+editadas por los autores antes de que pasen muchos minutos". Ten en cuenta que si xref:components/proposals/answers.adoc[responde una propuesta]
+entonces ya no se puede editar.
 
-|Proposals can be edited by authors before this many minutes passes
-|Required if "Proposal editing" is "Allow editing of proposals within a specific timeframe"
-|Must be a number. How many minutes after the creation of a proposal it can be edited by its author.
+|Las propuestas pueden ser editadas por los autores antes de que pasen muchos minutos
+|Requerido si "Edición de Propuestas" es "Permitir la edición de propuestas dentro de un plazo específico"
+|Debe ser un número. Cuántos minutos después de la creación de una propuesta puede ser editado por su autor.
 
-|Threshold per proposal
-|Optional
-|Must be a number. How many supports a proposal needs to have to be considered as "validated". See <<setting-threshold,screenshots>>.
+|Umbral por propuesta
+|Opcional
+|Debe ser un número. Cuántos apoyos necesita tener que ser considerado como "validado". Ver <<setting-threshold,screenshots>>.
 
-|Can accumulate supports beyond threshold
-|Optional. Only applies if "Threshold per proposal" is configured.
-|Whether the proposal can accumulate more supports than the threshold.
+|Puede acumular soportes más allá del umbral
+|Opcional. Sólo se aplica si se configura "Umbral por propuesta".
+|Si la propuesta puede acumular más apoyos que el umbral.
 
-|Proposal answering enabled
-|Optional
-|Whether administrators or valuators can answer proposals.
+|Respuesta de propuesta habilitada
+|Opcional
+|Si los administradores o los evaluadores pueden responder a las propuestas.
 
-|Official proposals enabled
-|Optional
-|Wheter administrators can create official proposals.
+|Propuestas oficiales habilitadas
+|Opcional
+|Los administradores pueden crear propuestas oficiales.
 
-|Comments enabled
-|Optional
-|Whether you want to have comments in the meetings.
+|Comentarios habilitados
+|Opcional
+|Si desea tener comentarios en las reuniones.
 
-|Comments max length
-|Optional
-|What are the characters limit that participants will have when making comments. Leave 0 for the default value.
+|Longitud máxima de los comentarios
+|Opcional
+|Cuáles son los caracteres límite que los participantes tendrán al hacer comentarios. Deja 0 para el valor predeterminado.
 
-|Geocoding enabled
-|Optional
-|Wheter participants can define a geocoding address for their proposals. Need to have xref:configure:geocoding[Geocoding] enabled.  See <<setting-geocoding,screenshots>>.
+|Geocodificación habilitada
+|Opcional
+|Los participantes pueden definir una dirección de geocodificación para sus propuestas. Necesita tener xref:configure:geocoding[Geocoding] habilitado.  Ver <<setting-geocoding,screenshots>>.
 
-|Allow attachments
-|Optional
-|Check to allow participants to attach files to their proposals.
+|Permitir archivos adjuntos
+|Opcional
+|Marcar para permitir a los participantes adjuntar archivos a sus propuestas.
 
-|Allow card image
-|Optional
-|Check to show a card image when participants attach images to their proposals. See <<setting-card-image,screenshots>>.
+|Permitir imagen de tarjeta
+|Opcional
+|Marcar para mostrar una imagen de tarjeta cuando los participantes adjuntan imágenes a sus propuestas. Ver <<setting-card-image,screenshots>>.
 
-|Actions permissions can be set for each proposal
-|Optional
-|Whether you want to be able to set permissions for every one of the proposals. Most of the time you will want to leave this option disabled.
+|Se pueden establecer permisos de acciones para cada propuesta
+|Opcional
+|Si desea ser capaz de establecer permisos para cada una de las propuestas. La mayoría de las veces querrá dejar esta opción deshabilitada.
 
-|Collaborative drafts enabled
-|Optional
-|Check to enable xref:components/proposals/collaborative_drafts.adoc[collaborative drafts] in proposals.
+|Borradores colaborativos habilitados
+|Opcional
+|Marca para habilitar xref:components/proposals/collaborative_drafts.adoc[colaborative drafts] en propuestas.
 
-|Participatory texts enabled
-|Optional
-|Check to enable xref:components/proposals/participatory_texts.adoc[participatory texts] in proposals.
+|Textos participativos habilitados
+|Opcional
+|Marcar para habilitar xref:components/proposals/participatory_texts.adoc[textos participativos] en propuestas.
 
-|Amendments enabled
-|Optional
-|Check to enable xref:components/proposals/amendments.adoc[amendments] in proposals. If active, configure Amendment features for each step.
+|Enmiendas habilitadas
+|Opcional
+|Marca para habilitar xref:componentes/proposals/amendments.adoc[amendments] en propuestas. Si está activo, configure las características de la enmienda para cada paso.
 
-|Amendments Wizard help text
-|Optional. Visible if the "Amendments enabled" option is checked.
-|What's the help text visible when creating new amendments.
+|El Asistente de Enmiendas ayuda al texto
+|Opcional. Visible si se marca la opción "Enmiendas habilitadas".
+|¿Cuál es el texto de ayuda visible al crear nuevas modificaciones.
 
-|Announcement
-|Optional
-|A general announcement that'll be visible on the general proposals landing page.
+|Anuncio
+|Opcional
+|Un anuncio general que será visible en la página de inicio de propuestas generales.
 
-|New proposal body template
-|Optional
-|A pre-defined text that will be used when creating new proposals. Useful if you want to define a format that participants need to
-follow when creating new proposals.
+|Nueva plantilla de cuerpo de propuesta
+|Opcional
+|Un texto predefinido que se utilizará para crear nuevas propuestas. Útil si quieres definir un formato que los participantes necesitan
+seguir al crear nuevas propuestas.
 
-|New proposal help text
-|Optional
-|What's the help text visible when creating new proposals.
+|Nuevo texto de ayuda de propuesta
+|Opcional
+|¿Cuál es el texto de ayuda visible al crear nuevas propuestas.
 
-|Proposal wizard "Create" step help text
-|Optional
-|What's the help text visible when creating new proposals in the "Create" step.
+|Asistente de propuesta "Crear" texto de ayuda del paso
+|Opcional
+|¿Cuál es el texto de ayuda visible al crear nuevas propuestas en el paso "Crear".
 
-|Proposal wizard "Compare" step help text
-|Optional
-|What's the help text visible when creating new proposals in the "Compare" step.
+|Asistente de propuesta "Comparar" texto de ayuda de paso
+|Opcional
+|¿Cuál es el texto de ayuda visible al crear nuevas propuestas en el paso "Comparar".
 
-|Proposal wizard "Complete" step help text
-|Optional
-|What's the help text visible when creating new proposals in the "Complete" step.
+|Asistente de propuesta "Completar" el texto de ayuda del paso
+|Opcional
+|¿Cuál es el texto de ayuda visible cuando se crean nuevas propuestas en el paso "Completado".
 
-|Proposal wizard "Publish" step help text
-|Optional
-|What's the help text visible when creating new proposals in the "Publish" step.
+|Asistente de propuesta "Publicar" texto de ayuda del paso
+|Opcional
+|¿Cuál es el texto de ayuda visible al crear nuevas propuestas en el paso "Publicar".
 |===
 
 [#setting-threshold]
-*Example of threshold setting*
+*Ejemplo de ajuste de umbral*
 
 image::components/proposals/setting_threshold01.png[Example of threshold setting]
 
 image::components/proposals/setting_threshold02.png[Example of threshold setting]
 
 [#setting-card-image]
-*Example of card image setting*
+*Ejemplo de configuración de imagen de tarjeta*
 
 image::components/proposals/setting_card_image.png[Example of card image setting]
 
 [#setting-geocoding]
-*Example of geocoding setting*
+*Ejemplo de configuración de geocodificación*
 
 image::components/proposals/setting_geocoding.png[Example of geocoding setting]
 
 ---
 
-In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
-xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
+En los casos en que el espacio que se utilizará este componente tiene xref:admin:spaces/processes/phases. doc[Phases], por ejemplo, en
+xref:admin:spaces/processes.adoc[Participatory Processes], entonces también puede definir diferentes comportamientos por paso.
 
 
-.Add component: Proposals form - Step settings
+.Añadir componente: Formulario de propuestas - Ajustes de paso
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Announcement
-|Optional
-|A general announcement that'll be visible on the general proposal landing page.
+|Anuncio
+|Opcional
+|Un anuncio general que será visible en la página de inicio de la propuesta general.
 
-|Endorsements enabled
-|Optional
-|Check if you want that participants show public support for these proposals.
+|Aprobaciones habilitadas
+|Opcional
+|Marque si desea que los participantes muestren apoyo público a estas propuestas.
 
-|Endorsements blocked
-|Optional
-|Whether participants will be able to see the endorsments but don't make any.
+|Aprobaciones bloqueadas
+|Opcional
+|Si los participantes podrán ver las aprobaciones pero no las hagan.
 
-|Supports enabled
-|Optional
-|Whether participants will be able to support proposals in this step.
+|Soporte activado
+|Opcional
+|Si los participantes podrán apoyar las propuestas en este paso.
 
-|Supports blocked
-|Optional
-|Whether participants will be able to support proposals in this step.
+|Soporte bloqueado
+|Opcional
+|Si los participantes podrán apoyar las propuestas en este paso.
 
-|Supports hidden
-|Optional
-|If supports are enabled, checking this will hide the number of supports.
+|Soporta oculto
+|Opcional
+|Si los soportes están habilitados, marcar esto ocultará el número de soportes.
 
-|Comments blocked
-|Optional
-|Whether you want to enable comments for this phase.
+|Comentarios bloqueados
+|Opcional
+|Si desea habilitar los comentarios para esta fase.
 
-|Proposal creation enabled
-|Optional
-|Whether you want to enable proposal creation by participants for this phase. See xref:_new_proposal_form[New proposal form]
+|Creación de propuestas habilitada
+|Opcional
+|Si desea habilitar la creación de propuestas por parte de los participantes para esta fase. Ver xref:_new_proposal_form[Nuevo formulario de propuesta]
 
-|Proposal answering enabled
-|Optional
-|Whether you want to enable xref:components/proposals/answers.adoc[proposal answering].
+|Respuesta de propuesta habilitada
+|Opcional
+|Si desea habilitar xref:components/proposals/answers.adoc[respuesta a la propuesta].
 
-|Publish proposal answers immediately
-|Optional
-|Wheter you want that the answers of proposals are published at the same time that you're xref:components/proposals/answers.adoc[answering] them or you want to control when to publish the answers.
+|Publicar respuestas de propuesta inmediatamente
+|Opcional
+|Si quieres que las respuestas de las propuestas se publiquen al mismo tiempo que eres xref:components/propuestas/respuestas. doc[answering] ellos o quieres controlar cuándo publicar las respuestas.
 
-|Enable costs on proposal answers
-|Optional
-|Wheter you want to add economical costs to proposal answers. Useful for importing to xref:components/budgets.adoc[budgets].
+|Habilitar costes en las respuestas de propuestas
+|Opcional
+|Cuánto quiere añadir costes económicos a las respuestas de la propuesta. Útil para importar a xref:components/budgets.adoc[budgets].
 
-|Amendment creation enabled
-|Optional. Visible if "Amendments enabled" option is checked.
-|Participant can amend proposals. See xref:components/proposals/amendments.adoc[Amendments].
+|Creación de enmiendas habilitada
+|Opcional. Visible si la opción "Enmiendas habilitadas" está marcada.
+|El participante puede modificar las propuestas. Vea xref:components/proposals/amendments.adoc[Amendments].
 
-|Amendment reaction enabled
-|Optional. Visible if "Amendments enabled" option is checked.
-|Proposal's authors will be able to accept or reject Participant's emendations.
+|Reacción de enmienda activada
+|Opcional. Visible si la opción "Enmiendas habilitadas" está marcada.
+|Los autores de la propuesta podrán aceptar o rechazar las enmiendas del participante.
 
-|Amendment promotion enabled
-|Optional. Visible if "Amendments enabled" option is checked.
-|Emandation authors will be able to promote to Proposal the rejected emendation.
+|Promoción de enmienda activada
+|Opcional. Visible si la opción "Enmiendas habilitadas" está marcada.
+|Los autores de la emanación podrán promover la Propuesta de la emendación rechazada.
 
-|Amendments visibility
-|Required. Visible if "Amendments enabled" option is checked.
-|Choose one of "Amendments are visible to all" or "Amendments are visible only to their authors"
+|Visibilidad de las enmiendas
+|Requerido. Visible si la opción "Enmiendas habilitadas" está marcada.
+|Elija una de "Las enmiendas son visibles para todos" o "las enmiendas son visibles sólo para sus autores"
 
-|Announcement
-|Optional
-|A general announcement that'll be visible on the general proposals landing page.
+|Anuncio
+|Opcional
+|Un anuncio general que será visible en la página de inicio de propuestas generales.
 
-|Hashtags added to all proposals
-|Optional
-|Automatically add a hashtag to every proposal. See <<setting-hashtags,screenshots>>.
+|Etiquetas añadidas a todas las propuestas
+|Opcional
+|Añadir automáticamente un hashtag a cada propuesta. Ver <<setting-hashtags,screenshots>>.
 
-|Hashtags suggested to participants for new proposals
-|Optional
-|Suggest hashtags to participants for new proposals. Participants can select more than one hashtag. See <<setting-hashtags,screenshots>>.
+|Etiquetas sugeridas a los participantes para nuevas propuestas
+|Opcional
+|Sugerir hashtags a los participantes para nuevas propuestas. Los participantes pueden seleccionar más de un hashtag. Ver <<setting-hashtags,screenshots>>.
 |===
 
 [#setting-hashtags]
-*Example of hashtags setting*
+*Ejemplo de configuración de hashtags*
 
 image::components/proposals/setting_hashtag.png[Example of hashtag setting]
 
-== Permissions
+== Permisos
 
-An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
-certain actions in the proposals:
+Un administrador puede elegir qué tipo de xref:customize:authorizations.adoc[Authorizations] un participante necesita tener que hacer
+ciertas acciones en las propuestas:
 
-* Endorse
-* Support
-* Create
-* Withdraw
-* Amend
-* Comment
-* Vote comment
+* Respaldar
+* Soporte
+* Crear
+* Retirar
+* Recomendado
+* Comentario
+* Votar comentario
 
-== Manage proposals
+== Gestionar propuestas
 
-image:components/proposals/manage_proposals.png[Manage proposals table]
+imagen:components/proposals/manage_proposals.png[Gestionar tabla de propuestas]
 
-=== Export
+=== Exportar
 
-Allows exporting the proposals in different formats.
+Permite exportar las propuestas en diferentes formatos.
 
-* Proposals as CSV
-* Proposals as JSON
-* Proposals as Excel
-* Comments as CSV
-* Comments as JSON
-* Comments as Excel
+* Propuestas como CSV
+* Propuestas como JSON
+* Propuestas como Excel
+* Comentarios como CSV
+* Comentarios como JSON
+* Comentarios como Excel
 
-=== Import
+=== Importar
 
-* Import from another component
-* Import from a file
+* Importar desde otro componente
+* Importar desde un archivo
 
-=== New proposal form
+=== Nuevo formulario de propuesta
 
-==== Citizens proposals
+==== Propuestas ciudadanas
 
-image:components/proposals/new_proposal_frontend.png[New proposal form]
+imagen:components/proposals/new_proposal_frontend.png[Nuevo formulario de propuesta]
 
-Proposals can be created by participants if the setting is "Proposal creation enabled" is checked for the active phase.
+Las propuestas pueden ser creadas por los participantes si la configuración es "Creación de propuesta habilitada" está marcada para la fase activa.
 
 If a participant belongs to a xref:admin:participants/groups.adoc[user group], then she'll be able to create proposals as that group also.
 
-This form depends a lot in which settings you've enabled in this component. It can be really short (with only a Title and
-Body by default) or very long (Title, Body, Hashtags, Address, Scope, Category, Image and Attachment).
+Este formulario depende mucho de los ajustes que has activado en este componente. Puede ser muy corto (con solo un título y un cuerpo
+por defecto) o muy largo (título, Body, Hashtags, Dirección, Alcance, Categoría, Imagen y Adjunto).
 
 
-.New proposal form - default (by a participant)
+.Nuevo formulario de propuesta - por defecto (por un participante)
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Title
-|Required
-|What is the title of this proposal. For instance, "Bike lane in Main Street". Must have at least 15 characters as minimum
-and 150 characters as maximum. Must start with a capital letter.
+|Título
+|Requerido
+|¿Cuál es el título de esta propuesta? Por ejemplo, "Camino de bicicletas en Main Street". Debe tener al menos 15 caracteres como mínimo
+y 150 caracteres como máximo. Debe comenzar con una letra mayúscula.
 
-|Body
-|Optional
-|What is the full description for this proposal. Must have at least 15 characters as minimum and 450 characters as maximum
-by default but can be changed with the setting "Maximum proposal body length".
+|Cuerpo
+|Opcional
+|¿Cuál es la descripción completa de esta propuesta? Debe tener al menos 15 caracteres como mínimo y 450 caracteres como máximo
+por defecto, pero puede cambiarse con el ajuste "Longitud máxima del cuerpo de la propuesta".
 |===
 
-To detect duplicated proposals before publishing them, the proposal creation has a wizard form with multiple steps. This also
+Para detectar propuestas duplicadas antes de publicarlas, la creación de propuestas tiene un formulario de asistente con múltiples pasos. This also
 allows participants to save proposals drafts (unpublished) in case they need to fill too many fields.
 
-image:components/proposals/new_proposal_frontend_compare.png[New proposal form (by a participant) - Compare]
+image:components/proposals/new_proposal_frontend_compare.png[Nuevo formulario de propuesta (por un participante) - Comparar]
 
-As an example of what the form could look depending in the settings enabled, here's a screenshot of the form for a proposal
-with the following settings: "Hashtags added to all proposals", "Hashtags suggested to participants for new proposals",
-"Geocoding enabled", "Allow attachments", "Allow card image" and "Scopes enabled".
+Como ejemplo de lo que el formulario puede verse dependiendo de los ajustes habilitados, aquí hay una captura de pantalla del formulario para una propuesta
+con los siguientes ajustes: "Hashtags añadidos a todas las propuestas", "Hashtags sugeridos a los participantes para nuevas propuestas",
+"Geocodificación habilitada", "Permitir archivos adjuntos", "Permitir imagen de tarjeta" y "Scopes habilitados".
 
-image:components/proposals/new_proposal_frontend_complete.png[New proposal form (by a participant) - Complete]
+image:components/proposals/new_proposal_frontend_complete.png[Nuevo formulario de propuesta (por un participante) - Completado]
 
-After completing these fields the participant can see a preview of their proposal before publishing. They can also modify
-the proposal before publishing it.
+Después de completar estos campos el participante puede ver una vista previa de su propuesta antes de publicar. También pueden modificar
+la propuesta antes de publicarla.
 
-image:components/proposals/new_proposal_frontend_publish.png[New proposal form (by a participant) - Publish]
+image:components/proposals/new_proposal_frontend_publish.png[Nuevo formulario de propuesta (por un participante) - Publicar]
 
-image:components/proposals/new_proposal_frontend_published.png[Published proposal made by a participant]
+imagen:components/proposals/new_proposal_frontend_published.png[Propuesta publicada hecha por un participante]
 
-==== Official proposals
+==== Propuestas oficiales
 
-Administrators can create official proposals. There will be a filter to show only official proposals in the proposals navigation page.
+Los administradores pueden crear propuestas oficiales. Habrá un filtro para mostrar sólo propuestas oficiales en la página de navegación de propuestas.
 
-image:components/proposals/new_proposal_backend01.png[New proposal form - default (official proposals)]
+image:components/proposals/new_proposal_backend01.png[Nuevo formulario de propuesta - por defecto (propuestas oficiales)]
 
 
-.New proposal form - default (official proposals)
+.Nuevo formulario de propuesta - por defecto (propuestas oficiales)
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Title
-|Required
-|What is the title of this proposal. For instance, "Bike lane in Main Street". Must have at least 15 characters as minimum
-and 150 characters as maximum. Must start with a capital letter.
+|Título
+|Requerido
+|¿Cuál es el título de esta propuesta? Por ejemplo, "Camino de bicicletas en Main Street". Debe tener al menos 15 caracteres como mínimo
+y 150 caracteres como máximo. Debe comenzar con una letra mayúscula.
 
-|Body
-|Optional
-|What is the full description of this proposal. Must have at least 15 characters as minimum and 450 characters as maximum
-by default but can be changed with the setting "Maximum proposal body length".
+|Cuerpo
+|Opcional
+|¿Cuál es la descripción completa de esta propuesta? Debe tener al menos 15 caracteres como mínimo y 450 caracteres como máximo
+por defecto, pero puede cambiarse con el ajuste "Longitud máxima del cuerpo de la propuesta".
 
-|This proposal comes from a meeting
-|Optional
-|Check if this proposal comes from a meeting.
+|Esta propuesta proviene de una reunión
+|Opcional
+|Compruebe si esta propuesta viene de una reunión.
 
-|Select a meeting
-|Required if the "This proposal comes from a meeting" checkbox is checked
-|Dropdown selector with all the meetings of this space. The author of the proposal will be the meeting.
+|Seleccione una reunión
+|Requerido si la casilla "Esta propuesta proviene de una reunión" está marcada
+|Selector Dropdown con todas las reuniones de este espacio. El autor de la propuesta será la reunión.
 |===
 
-As an example of what the form could look like depending on the settings enabled, here's a screenshot of the form for a proposal
-with the following settings: "Hashtags added to all proposals", "Hashtags suggested to participants for new proposals",
-"Geocoding enabled", "Allow attachments", "Allow card image" and "Scopes enabled".
+Como ejemplo de cómo podría ser el formulario dependiendo de los ajustes habilitados, aquí hay una captura de pantalla del formulario para una propuesta
+con los siguientes ajustes: "Hashtags añadidos a todas las propuestas", "Hashtags sugeridos a los participantes para nuevas propuestas",
+"Geocodificación habilitada", "Permitir archivos adjuntos", "Permitir imagen de tarjeta" y "Scopes habilitados".
 
-image:components/proposals/new_proposal_backend02.png[New proposal form - with multiple settings (official proposals)]
+image:components/proposals/new_proposal_backend02.png[Nuevo formulario de propuesta - con múltiples ajustes (propuestas oficiales)]
 
-==== Actions
+==== Acciones
 
 
-.Actions
+.Acciones
 |===
-|Icon |Name |Definition
+|Icono |Nombre |Definición
 
-|image:action_edit.png[Edit icon]
-|Edit
-|Edit form for a proposal. It's the same form as "New proposal". Only visible when the proposal is an xref:_official_proposals["Official proposal"].
+|image:action_edit.png[Editar icono]
+|Editar
+|Editar formulario para una propuesta. Es la misma forma que "Nueva propuesta". Sólo visible cuando la propuesta es una xref:_official_proposals["Propuesta oficial"].
 
-|image:action_answer.png[Answer proposal icon]
-|xref:components/proposals/answers.adoc[Answer proposal]
-|Allows you to answer a proposal.
+|image:action_answer.png[Icono de propuesta de respuesta]
+|xref:components/proposals/answers.adoc[Responder propuesta]
+|Le permite responder a una propuesta.
 
-|image:action_permissions.png[Permissions icon]
-|Permissions
+|image:action_permissions.png[Icono de permisos]
+|Permisos
 |
 
-|image:action_preview.png[Preview icon]
-|Preview
-|To see how it's shown in the frontend to participants.
+|image:action_preview.png[Previsualizar icono]
+|Vista previa
+|Para ver cómo se muestra en el frontend a los participantes.
 |===
 
-== Origin filter
+== Filtro de origen
 
-When navigating in the proposals listing, you can filter the proposals by origin.
+Al navegar en el listado de propuestas, puede filtrar las propuestas por origen.
 
-image:components/proposals/origin_filter.png[Proposals origin filter]
+imagen:components/proposals/origin_filter.png[Filtro de origen de propuestas]
 
-There are five origin options:
+Hay cinco opciones de origen:
 
-* All: select all the origins
-* xref:_official_proposals[Official]: proposals created by administrators
-* xref:_citizens_proposals[Citizens]: proposals created by participants
-* Groups: proposals created by participants that belong to a user group and choose that option when creating the proposal
-* Meetings: proposals created by administrators that have checked this option when creating the proposal
+* Todos: seleccionar todos los orígenes
+* xref:_official_proposals[Official]: propuestas creadas por administradores
+* xref:_citizens_proposals[Citizens]: propuestas creadas por participantes
+* Grupos: propuestas creadas por participantes que pertenecen a un grupo de usuarios y eligen esa opción al crear la propuesta
+* Reuniones: propuestas creadas por administradores que han comprobado esta opción al crear la propuesta
 
-== Proposal types and mechanisms
+== Tipos de propuestas y mecanismos
 
-There are different kind of proposals mechanisms that can be enabled in proposals, such as:
+Existen diferentes tipos de mecanismos de propuestas que se pueden habilitar en las propuestas, como:
 
 * xref:admin:components/proposals/amendments.adoc[Amendments]
 * xref:admin:components/proposals/answers.adoc[Answers]
-* xref:admin:components/proposals/collaborative_drafts.adoc[Collaborative drafts]
-* xref:admin:components/proposals/participatory_texts.adoc[Participatory texts]
+* xref:admin:components/proposals/collaborative_drafts.adoc[Borradores colaborativos]
+* xref:admin:components/proposals/participatory_texts.adoc[Textos participativos]
