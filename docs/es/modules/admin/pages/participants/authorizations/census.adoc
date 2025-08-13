@@ -1,34 +1,34 @@
-= Organization's census authorization
+= Autorización de censos de la organización
 
-The process is as follows:
+El proceso es el siguiente:
 
-. Admins upload a CSV with the emails of the accepted participants
-. Participants go to its accounts and requests to be verified
-. Only participants with an email in that CSV file can get verified
+. Los administradores cargan un CSV con los correos electrónicos de los participantes aceptados
+. Los participantes van a sus cuentas y peticiones para ser verificados
+. Sólo los participantes con un correo electrónico en ese archivo CSV pueden ser verificados
 
-NOTE: is this too simple and you need more features related to CSV census imports?
-Check all the CSV or file based authorizations in our https://decidim.org/modules/[Modules page].
+NOTE: ¿Esto es demasiado simple y necesitas más características relacionadas con las importaciones CSV?
+Revisa todas las autorizaciones basadas en CSV o archivos en nuestra página https://decidim.org/modules/[Modules].
 
-== 1. An administrator uploads the CSV of the participants
+== 1. Un administrador carga el CSV de los participantes
 
-In the admin panel, the administrator can review the request by going to the "Organization's census" in the "Participants" section.
+En el panel de administración, el administrador puede revisar la solicitud acudiendo al "censo de la organización" en la sección "Participantes".
 
-image:authorizations_organization_census.png[Organization's census in admin panel]
+image:authorizations_organization_census.png[La organización en el panel de administración]
 
-After the CSV is imported then the administrator can see how many participants where imported. She can also delete this
+Después de importar el CSV, el administrador puede ver cuántos participantes se importan. They can also delete this
 imported census.
 
-image:authorizations_organization_census_imported.png[Imported CSV]
+imagen:authorizations_organization_census_imported.png[CSV importado]
 
-== 2. A participant requests to be verified
+== 2. Un participante solicita ser verificado
 
-By going to the authorization section in its profile, or by clicking on the action button if this permission is requested,
-a participant can request to be verified.
+Viendo a la sección de autorización en su perfil, o haciendo clic en el botón de acción si este permiso es solicitado,
+un participante puede solicitar ser verificado.
 
-image:authorizations_organization_census_account.png[Organization's census in participant's accounts]
+image:authorizations_organization_census_account.png[La organización en las cuentas de los participantes]
 
-== 3. The participant is verified (or not)
+== 3. El participante está verificado (o no)
 
-After is verified, as with other verifications, she can see it in her account settings.
+Después de ser verificado, como en otras verificaciones, pueden verlo en la configuración de su cuenta.
 
 image:authorizations_organization_census_verified.png[Verified by organization's census]
