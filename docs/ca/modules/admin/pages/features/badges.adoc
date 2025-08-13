@@ -5,16 +5,16 @@ and interacting in the platform, they will earn different badges. Here is the li
 
 It's a https://en.wikipedia.org/wiki/Gamification[gamification] mechanism to improve the engagement of the participants in a ludic way.
 
-The badges a participant has are visible in her account. There's also a general explanation page with a short description of every badge.
+The badges a participant has are visible in their account. There's also a general explanation page with a short description of every badge.
 
 image:features/badges/example01.png[Example of badges in profile]
 
-When a participant earns a badge she receives a notification.
+When a participant earns a badge they receive a notification.
 
 image:features/badges/notification.png[Example of badges notification]
 
-Badges have multiple levels, depending in the number of times she has made the action. For instance, for Proposals badge
-she'll receive the first level badge when arriving at 1 follower, the second level at 15 followers, the third level at 30 followers,
+Badges have multiple levels, depending in the number of times they have made the action. For instance, for Proposals badge
+they will receive the first level badge when arriving at 1 follower, the second level at 15 followers, the third level at 30 followers,
 the fourth level at 60 and the fifth level at 100.
 
 
@@ -25,14 +25,14 @@ the fourth level at 60 and the fifth level at 100.
 |image:features/badges/accepted_proposals_badge.png[Accepted proposals badge]
 |Accepted proposals
 |Granted when particiapnts actively participate with new proposals and these are accepted.
-|The participant needs to choose the participation space of her interest with submission for proposals enabled and try to
+|The participant needs to choose the participation space of their interest with submission for proposals enabled and try to
 make proposals that can be carried out. This way they are more likely to be accepted.
 |1, 5, 15, 30, 50
 
 |image:features/badges/attended_meetings_badge.png[Attended meetings badge]
 |Attended meetings
 |Granted when participants attend several face-to-face meetings.
-|The participant needs to register for the meetings she want to attend
+|The participant needs to register for the meetings they want to attend
 |1, 3, 5, 10, 30
 
 |image:features/badges/debates_badge.png[Debates badge]
@@ -45,7 +45,7 @@ make proposals that can be carried out. This way they are more likely to be acce
 |Followers
 |Granted when participant reach a certain number of followers. The platform is a social and political network, so
 participants ned to weave their web to communicate with other people in the platform.
-|The participant needs to be be active and follow other people. That will surely make other people follow her.
+|The participant needs to be be active and follow other people. That will surely make other people follow them.
 |1, 15, 30, 60, 100
 
 |image:features/badges/published_initiatives_badge.png[Published initiatives badge]
@@ -57,20 +57,20 @@ participants ned to weave their web to communicate with other people in the plat
 |image:features/badges/invitations_badge.png[invitations badge]
 |Invitations
 |Granted when participants invite some people and they have become participants.
-|The participant needs to use the “invite friends” link on her user page to invite her friends. She can customize the
-message she's sending. She’ll level up by sending invitations and getting them registered. Note that this feature is disabled
+|The participant needs to use the “invite friends” link on their user page to invite their friends. They can customize the
+message they are sending. They will level up by sending invitations and getting them registered. Note that this feature is disabled
 and this badge is not available, so it'll be removed in the future.
 |1, 5, 10, 30, 50
 
 |image:features/badges/proposal_supports_badge.png[Proposal supports badge]
 |Proposal supports
 |Granted when participants support other people's proposals.
-|The participant needs to browse and spend some time reading other people's proposals and give support to the proposals she like or find interesting.
+|The participant needs to browse and spend some time reading other people's proposals and give support to the proposals they like or find interesting.
 |5, 15, 50, 100, 500
 
 |image:features/badges/proposals_badge.png[Proposals badge]
 |Proposals
 |Granted when participants actively participate with new proposals.
-|The participant needs to choose the participation space of her interest with submission for proposals enabled and create a new proposal.
+|The participant needs to choose the participation space of their interest with submission for proposals enabled and create a new proposal.
 |1, 5, 10, 30, 60
 |===
