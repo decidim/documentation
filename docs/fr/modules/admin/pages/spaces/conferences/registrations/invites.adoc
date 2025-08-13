@@ -1,0 +1,38 @@
+= Invitations
+
+Les administrateurs peuvent inviter les participants à participer à la conférence.
+
+image:espaces/conférences/invites.png[Conférences que l'utilisateur invite (backend)]
+
+== Flux
+
+. Un administrateur envoie une invitation à rejoindre la conférence à un participant inexistant ou existant
+. Le participant accepte l'invitation
+
+image:espaces/conférences/invite_participant_form.png[Formulaire d'invitation d'un participant]
+
+
+.Formulaire d'invitation de l'utilisateur
+|===
+|Champ |Type |Description
+
+|Type de participant
+|Obligatoire
+|Si cette personne invitée est un participant inexistant ou existant. Ont-ils déjà un compte créé sur la plateforme?
+
+|Nom
+|Requis si c'est un participant qui n'existe pas.
+|Nom de la personne invitée.
+
+|Courriel
+|Requis si c'est un participant qui n'existe pas.
+|Courriel de la personne invitée.
+
+|Utilisateur
+|Requis si c'est un participant existant.
+|Tapez au moins trois caractères à rechercher.
+
+|xref:admin:admin:espaces/conférences/registrations/types.adoc[Type d'enregistrement]
+|Obligatoire
+|Ce que xref:admin:admin:espace/conférences/registrations/types.adoc[type d'inscription] fait que ce participant aura l'avoir.
+|===
