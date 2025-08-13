@@ -1,0 +1,67 @@
+= Administrateurs de l'espace
+
+Vous pouvez donner des permissions aux utilisateurs avec des droits spéciaux dans un espace,
+pour qu'ils n'aient accès qu'à certaines pages d'administration dans cet espace.
+Ces rôles sont des administrateurs, des modérateurs, des collaborateurs ou des évaluateurs.
+
+* Administrateurs : ils peuvent administrer l'espace et modifier les paramètres de l'espace.
+* Collaborateurs: ils peuvent voir l'espace et ses composants avant qu'il ne soit publié et voir les paramètres de l'espace.
+Ils ne peuvent rien changer.
+* Modérateurs: ils peuvent voir le contenu signalé de l'espace et les masquer ou les cacher.
+* Valuators: ils peuvent évaluer les propositions. Utilisé par les processus de budgétisation participative.
+
+Pour les inviter, dans le sous-menu de l'espace, allez dans *Administrateurs de l'espace* et cliquez sur *Administrateur de nouvel espace*. Cela dépend du type d'espace
+que vous souhaitez, par exemple pour les processus participatifs, ce serait *Administrateurs de processus* et *Nouvel administrateur de processus*.
+
+== Nouveau formulaire d'administration de l'espace
+
+image:espaces/admins_form.png[Formulaire d'administration du nouvel espace]
+
+
+.Nouveau formulaire d'administration de l'espace
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Quel est le nom du nouvel administrateur.
+
+|Courriel
+|Obligatoire
+|What is the email of the new admin, so they can receive the invitation.
+
+|Rôle
+|Obligatoire
+|Quel rôle cet administrateur aura-t-il dans le processus participatif ? Peut être un administrateur, un collaborateur, un modérateur ou un évaluateur.
+|===
+
+== Rôles
+
+=== Administrateurs
+
+Un administrateur de l'espace peut administrer l'espace et modifier les paramètres de l'espace. Il peut également inviter de nouveaux administrateurs de l'espace.
+
+image:espaces/admins_role_admin01.png[Vue des administrateurs de processus 01]
+
+image:espaces/admins_role_admin02.png[Vue des administrateurs de processus 02]
+
+=== Collaborateurs
+
+Un collaborateur de l'espace ne peut voir l'espace que avant qu'il ne soit publié.
+
+image:espaces/admins_role_collaborator.png[Vue des collaborateurs]
+
+=== Modérateurs
+
+Un modérateur d'espace peut examiner le contenu signalé de l'espace et les masquer ou les dévoiler.
+
+image:espaces/admins_role_moderator.png[Vue des modérateurs]
+
+=== Évaluateurs de processus
+
+Un évaluateur de l'espace peut examiner les propositions de l'espace. They can:
+
+* modifier le statut des propositions, en les acceptant ou en les rejetant
+* ajouter une valeur monétaire aux propositions, afin qu'elles puissent être votées avec la composante budgétaire.
+
+image:espaces/admins_role_valuator.png[Vue des évaluateurs de processus]
