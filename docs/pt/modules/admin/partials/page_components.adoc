@@ -1,52 +1,52 @@
-= Components
+= Componentes
 
-include::partial$components_list.adoc[]
+$components_listparcial .adoc[]
 
-To configure components, click on *Components* from the space submenu. A list will appear showing the components
-that have already been configured for the space.
+Para configurar componentes, clique em *Componentes* no submenu de espaço. Uma lista aparecerá mostrando os componentes
+que já foram configurados para o espaço.
 
 image::spaces/components.png[Components of space]
 
-To configure a new component, click on *Add component* from the upper right part of the screen and select the type of
-component you wish to configure from the drop-down menu.
+Para configurar um novo componente, clique em *Adicionar componente* da parte superior direita da tela e selecione o tipo de componente
+que você deseja configurar a partir do menu suspenso.
 
 image::spaces/components_new_dropdown.png[Add a component in a space]
 
-== Actions
+== Ações.
 
 |===
-|Icon |Name |Definition
+|Ícone |Nome: |Definição
 
-|image:action_manage.png[Manage icon]
-|Manage
-|To manage all the resources inside of a component. For instance, all the Proposals of a Proposal component, the Meetings
-in a Meeting component, etc.
+|imagem:action_manage.png[Gerenciar ícone]
+|Administrar
+|Para gerenciar todos os recursos dentro de um componente. Por exemplo, todas as propostas de um componente Propostal, as Reuniões
+em um componente de reunião, etc.
 
-|image:action_publish.png[Publish icon]
-|Publish
-|To publish a component. This means that the component will be visible to the public.
+|image:action_publish.png[Ícone de publicação]
+|Publicar
+|Para publicar um componente. Isso significa que o componente ficará visível para o público.
 
-|image:action_unpublish.png[Unpublish icon]
-|Unpublish
-|To unpublish a component. This means that the component will be invisible to the public.
+|imag:action_unpublish.png[Remover ícone de publicação]
+|Despublicar
+|Para cancelar a publicação de um componente. Isso significa que o componente ficará invisível para o público.
 
-|image:action_configure.png[Configure icon]
-|Configure
-|To configure a component with the specific rules. Depends in the component type. For instance, in the case of Meetings:
-are comments enabled, participants can create meetings, etc.
+|image:action_configure.png[Configurar ícone]
+|Configurar
+|Para configurar um componente com as regras específicas. Depende do tipo de componente. Por exemplo, no caso das Reuniões:
+estão habilitados, os participantes podem criar reuniões, etc.
 
-|image:action_permissions.png[Permissions icon]
-|Permissions
-|To configure which xref:customize:authorizations.adoc[Authorization] will be necessary to make certain actions in
-this component. For instance, in the case of Proposals, which Verification will be necessary to create a new proposal or
-to give supports.
+|imagem:action_permissions.png[Ícone de permissões]
+|Permissões
+|Para configurar qual xref:Personalize o :authorizations.adoc[Authorization] será necessário para fazer certas ações no
+este componente. Por exemplo, no caso das propostas, quais Verificação será necessária para criar uma nova proposta ou
+para dar suporte.
 
-|image:action_share.png[Share icon]
-|Share
-|To share privately before publishing this component. Useful for reviewing with other people inside of your organization.
+|imagem:action_share.png[Ícone de compartilhamento]
+|Compartilhar
+|Para compartilhar em particular antes de publicar este componente. Útil para revisão com outras pessoas dentro de sua organização.
 
-|image:action_delete.png[Delete icon]
-|Delete
-|To delete this component. If there are contents most of the components will not let you delete them so it doesn't break
-relations with other resources. In those cases it's recommended to just unpublish the component.
+|imagem:action_delete.png[Excluir ícone]
+|excluir
+|Para excluir este componente. Se houver conteúdo na maioria dos componentes não permitirá que você exclua-os para que não quebre
+relações com outros recursos. Nesses casos é recomendável simplesmente cancelar a publicação do componente.
 |===
