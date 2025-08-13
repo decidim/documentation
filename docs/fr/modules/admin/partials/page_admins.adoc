@@ -1,0 +1,102 @@
+= Space administrators
+
+== Understand the basics
+
+You can give specific permissions to users in the different spaces, so they can only have access to some of the administration actions.
+These roles are administrators, moderators, collaborators, and valuators.
+
+* *Administrators*: they can administer the space and change the space settings.
+* *Collaborators*: they can see the space and its components before it's published and view the space settings.
+They can't edit anything.
+* *Moderators*: they can see the reported contents of the space and hide or unhide it.
+* *Valuators*: they can evaluate proposals, give them answers and update their statuses.
+
+== How to find it?
+
+To configure space administrators, click the "Process admins" or "Assembly admins" item in the corresponding space.
+
+image::spaces/admins_list.png[Administrators of space]
+
+== Gérer les administrateurs
+
+You can find all the administrators on the list in the administration panel, with:
+
+* *Name*: name of the administrator account.
+* *Email*: email of the administrator account.
+* *Last log in date*: last time the administrator was logged in.
+* *Invitation accepted at*: date when the administrator accepted the invitation by clicking the link in the invitation email.
+* *Role*: administrator role.
+
+== Actions
+
+.Actions in administrators list
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Edit icon]
+|Editer
+|To edit the administrator role.
+
+|image:icons/action_delete.png[Delete icon]
+|Supprimez
+|To delete the space administrator rights. It doesn't delete the account of the administrator.
+|===
+
+== Add a space administrator
+
+Click on the *New space admin* button (depending in the kind of space you're in).
+
+image:spaces/admins_form.png[New space administrator form]
+
+.New space administrator form
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|What's the name of the new administrator.
+
+|Courriel
+|Obligatoire
+|What's the email of the new administrator, so they can receive an invitation if they don't already have an account.
+
+|Rôle
+|Obligatoire
+|Which role does this administrator should have in the space. Peut être un administrateur, un collaborateur, un modérateur ou un évaluateur.
+|===
+
+== Rôles
+
+=== Administrateurs
+
+Un administrateur de l'espace peut administrer l'espace et modifier les paramètres de l'espace. They can also invite new space administrators.
+When managing the space, they would only see the following views and tabs.
+
+image:espaces/admins_role_admin01.png[Vue des administrateurs de processus 01]
+
+image:espaces/admins_role_admin02.png[Vue des administrateurs de processus 02]
+
+=== Collaborateurs
+
+A space collaborator can preview a space before it's published.
+
+image:espaces/admins_role_collaborator.png[Vue des collaborateurs]
+
+=== Modérateurs
+
+Un modérateur d'espace peut examiner le contenu signalé de l'espace et les masquer ou les dévoiler. They can also
+access the reported content in the global moderation panel, but don't see the contents reported from other spaces.
+
+image:espaces/admins_role_moderator.png[Vue des modérateurs]
+
+=== Valuators
+
+A space valuator can review the proposals of the space that were assigned to them, by:
+
+* change the status of the proposals, by accepting or rejecting them.
+* give an answer to the proposals.
+* ajouter une valeur monétaire aux propositions, afin qu'elles puissent être votées avec la composante budgétaire.
+
+image:espaces/admins_role_valuator.png[Vue des évaluateurs de processus]
