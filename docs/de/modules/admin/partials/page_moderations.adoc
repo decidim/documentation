@@ -1,0 +1,9 @@
+= Moderation
+
+Moderationen innerhalb eines Raumes funktionieren wie xref:global_moderations.adoc[Globale Moderationen].
+
+Der Hauptunterschied ist, dass, wenn Sie möchten, können Sie Moderatoren dieses speziellen
+-Bereichs einladen und sie haben nur Zugriff auf die Berichte für
+Inhalte dieses Bereichs.
+
+Moderatoren sind eine Art Raum-Admins. Sehen Sie es zum Beispiel für xref:spaces/processes/admins.adoc[partizipatorische Prozesse admins].
