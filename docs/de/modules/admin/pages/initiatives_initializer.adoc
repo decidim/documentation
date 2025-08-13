@@ -1,0 +1,174 @@
+= Initialisierer für Initiativen
+
+Um das Initiativmodul zu verwenden, sollten Sie die Konfigurationen des Initialisierers überprüfen. Siehe xref:configure:initializer.adoc[General Initializer configuration] für weitere Informationen zu dieser Datei.
+
+Du musst die `config/initializer/decidim.rb` Datei ändern. Sie können auch eine Ad-hoc-Datei für diese Konfigurationen erstellen, wie z.B. `config/initializer/initiatives.rb`.
+
+Nachdem Sie Änderungen an dieser Datei vorgenommen haben, müssen Sie auch Ihren Anwendungsserver neu starten.
+
+== Erstellen aktiviert
+
+Legt fest, ob die Erstellung einem validierten Benutzer erlaubt ist oder nicht. Standard ist wahr.
+
+[source,ruby]
+....
+  config_accessor :creation_enabled do
+    true
+  end
+....
+
+== Ähnlichkeitsschwelle
+
+Einstellung, die den Mindestwert der Ähnlichkeit definiert, um zwei
+Initiativen ähnlich zu betrachten. Standard ist 0.25.
+
+[source,ruby]
+....
+  config_accessor :similarity_threshold do
+    0.25
+  end
+....
+
+== Ähnlichkeitslimit
+
+Diese Einstellung definiert, wie viele ähnliche Initiativen gezeigt werden.
+Standard ist 5.
+
+[source,ruby]
+....
+  config_accessor :similarity_limit do
+    5
+  end
+....
+
+== Minimale Ausschussmitglieder
+
+Mindestanzahl der Ausschussmitglieder, die die Initiative an die technische Validierungsphase
+übergeben müssen. Gilt nur für Initiativen, die von
+Einzelpersonen erstellt wurden.
+
+[source,ruby]
+....
+  config_accessor :minimum_committee_members do
+    2
+  end
+....
+
+== Standard Signatur-Zeitspanne
+
+Anzahl der verfügbaren Tage, um Unterstützung zu sammeln, nachdem eine Initiative
+veröffentlicht wurde.
+
+[source,ruby]
+....
+  config_accessor :default_signature_time_period_length do
+    120
+  end
+....
+
+== Standardkomponenten
+
+Komponenten aktiviert für eine neue Initiative
+
+[source,ruby]
+....
+  config_accessor :default_components do
+    [:pages, :meetings]
+  end
+....
+
+== Erste Benachrichtigung Prozentsatz
+
+Benachrichtigt wenn der angegebene Prozentsatz der Unterstützung für eine
+Initiative erreicht wurde.
+
+[source,ruby]
+....
+  config_accessor :first_notification_percentage do
+    33
+  end
+....
+
+== Zweite Benachrichtigung Prozentsatz
+
+Benachrichtigt wenn der angegebene Prozentsatz der Unterstützung für eine
+Initiative erreicht wurde.
+
+[source,ruby]
+....
+  config_accessor :second_notification_percentage do
+    66
+  end
+....
+
+== Ablaufzeit des Statistik-Caches
+
+Legt die Ablaufzeit für die statistischen Daten fest.
+
+[source,ruby]
+....
+  config_accessor :stats_cache_expiration_time do
+    5.minutes
+  end
+....
+
+== Maximale Zeit für die Überprüfung des Status
+
+Maximale Zeitspanne bei der Validierung.
+Nach dieser Zeit wird die Initiative in den
+verworfenen Zustand verschoben.
+
+[source,ruby]
+....
+  config_accessor :max_time_in_validating_state do
+    60.days
+  end
+....
+
+== Drucken aktiviert
+
+Druckfunktionalität aktiviert. Allows the user to get
+a printed version of the initiative from the administration
+panel.
+
+[source,ruby]
+....
+  config_accessor :print_enabled do
+    true
+  end
+....
+
+== Zeitstempel Dienst
+
+Legen Sie einen Dienst fest, um für jede Abstimmung einen Zeitstempel zu erzeugen. Das Attribut
+ist der Name einer Klasse, deren Instanzen
+mit einem String initialisiert wurden, der die Daten
+Timestamping enthält und auf eine Timestamp-Methode reagiert.
+
+[source,ruby]
+....
+  config_accessor :timestamp_service
+....
+
+== PDF-Signaturdienst
+
+Stellen Sie einen Dienst ein, um eine Signatur zum pdf von Signaturen hinzuzufügen.
+Das Attribut ist der Name einer Klasse, deren Instanzen
+mit dem zu unterzeichnenden Dokument initialisiert wurde und auf eine
+signed_pdf Methode mit der hinzugefügten Signatur antwortet.
+
+[source,ruby]
+....
+  config_accessor :pdf_signature_service
+....
+
+== Keine Autorisierung erforderlich
+
+Dieses Flag erlaubt das Erstellen von Berechtigungen für nicht autorisierte Benutzer.
+
+[source,ruby]
+....
+  config_accessor :do_not_require_authorization do
+    false
+  end
+....
