@@ -1,24 +1,24 @@
-= Versions
+= Versiones
 
-The versions feature allows a visitor to see the evolution of the different versions of resources that can be edited,
-like proposals or results.
+La función de versiones permite a un visitante ver la evolución de las diferentes versiones de recursos que pueden editarse,
+propuestas o resultados parecidos.
 
-With versions it's possible to see who made the change, when the change has been made and exactly what has changed.
+Con las versiones es posible ver quién hizo el cambio, cuando el cambio se ha hecho y exactamente qué ha cambiado.
 
-image:features/versions/side_by_side_escaped.png[Versions in resources]
+image:features/versions/side_by_side_escaped.png[Versiones en recursos]
 
-== See the versions
+== Ver las versiones
 
-. Go to the content that you want to see the version of.
-. Click in the "see other versions" link in the sidebar
-image:features/versions/sidebar.png[See other versions link in sidebar]
-. Click in the past version that you want to see
+. Ve al contenido del que quieres ver la versión.
+. Haga clic en el enlace "ver otras versiones" en la barra lateral
+image:features/versions/sidebar.png[Ver el enlace de otras versiones en la barra lateral]
+. Haga clic en la versión anterior que desea ver
 image:features/versions/list.png[List of versions]
-. From there you can change the visualiation of the version differences
-image:features/versions/unified_unescaped.png[Unified unescaped view]
+. Desde allí puede cambiar la visualización de las diferencias de versión
+image:features/versions/unified_unescaped.png[Vista unescapada Unificada]
 
-It's possible to view the diffs of the versions in in two formats: side by side or unified. In case that the contents are
-in HTML then it's also possible to see the diff unescaped and escaped, and see the full HTML code.
+Es posible ver las diferencias de las versiones en dos formatos: lado a lado o unificado. En caso de que el contenido sea
+en HTML, entonces también es posible ver el diff sin escapar y escapado, y vea el código HTML completo.
 
-image:features/versions/side_by_side_unescaped.png[Side by side unescaped view]
-image:features/versions/unified_escaped.png[Unified escaped view]
+image:features/versions/side_by_side_unescaped.png[Vista unescapada paralela]
+image:features/versions/unified_escaped.png[Vista unificada de escapado]
