@@ -1,0 +1,71 @@
+= First steps in Decidim
+
+== Log in for the first time
+
+Once you or your developers have successfully installed Decidim, and created an organization in the System panel, you should
+receive an email asking you to complete your account creation.
+If you didn't receive an invitation email, ask the person in charge of the system administration to add you as an administrator.
+
+image::first_steps_invitation_email.png[Administrator invitation email]
+
+The invitation email redirects you to a form so you can finish setting up your account with your nickname, name, and password.
+
+image::first_steps_account_creation.png[Administrator invitation email]
+
+== Discover the administration dashboard
+
+=== Access the administration dashboard
+
+After logging in, you can see the platform as a participant, but it's not where you can configure and manage the platform.
+To access the administration dashboard, or administration panel, you can click in three different items:
+
+. The "Admin dashboard" button at the left of the administrator header only administrators can see.
+. The "Edit" button at the right of the administrator header.
+. The "Admin dashboard" button in the drop-down list available when you click your account avatar.
+
+image::admin_dashboard_menu.png[Decidim Admin Dashboard in user menu]
+
+The "Edit" button redirects to the administration of the space you're seeing in the participant panel, whereas the other two buttons
+redirect to the administration dashboard.
+
+=== Administrators terms of service
+
+For your first time accessing to the administration of Decidim, you are asked to review the administration terms of service.
+Click on the "I agree with this terms" button to be able to start configuring the platform.
+
+image::admin_tos_pending.png[Decidim Admin Dashboard in user menu]
+
+Those terms of service can be useful for you if you start inviting other administrators to the platform, and you need them to be aware
+of specific privacy rules, or anything relevant for them before they have access to the administration.
+
+Those terms of service can be configured in the xref:admin:settings/configuration.adoc[Configuration panel].
+
+=== Explanation of the dashboard
+
+Once you accepted the administrator terms of service, you can see the dashboard.
+On a new instance, almost no data is displayed, but you can see how it looks like on an active instance:
+
+image::admin_dashboard.png[Decidim Admin Dashboard]
+
+You can see several sections on this page:
+
+. *Pending moderations*: highlights the number of pending moderations, reported users and contents combined.
+. *Activity*: number of participants and admins that logged in the last month, last week and last day.
+. *Metrics*: the graphics for the evolution of multiple components inside of Decidim:
+. *Admin log*: last actions made by all the administrators in the platform.
+
+== Administration navigation
+
+To navigate in the administration panel, you can click in all of the items displayed in the vertical navigation bar on the left.
+
+* xref:admin:spaces/processes.adoc[Processos participativos]
+* xref:admin:spaces/assemblies.adoc[Assemblies]
+* xref:admin:spaces/initiatives.adoc[Initiatives]
+* xref:admin:spaces/conferences.adoc[Conferences]
+* xref:admin:global_moderations.adoc[Moderações Globais]
+* xref:admin:pages.adoc[Pages]
+* xref:admin:participants.adoc[Participants]
+* xref:admin:features/social_features/newsletters.adoc[Newsletters]
+* xref:admin:settings.adoc[Settings]
+* Admin activity log
+* xref:admin:templates.adoc[Templates]
