@@ -1,0 +1,18 @@
+La plateforme a actuellement les composants officiels suivants :
+
+* xref:admin:components/accountability.adoc[*Accountability*]: permet de garder une trace de l'exécution des résultats d'un espace.
+Il permet également aux administrateurs de les relier aux propositions et aux réunions qui les ont créées.
+* xref:admin:components/blog.adoc[*Blog*]: permet aux administrateurs de publier des messages avec des nouvelles concernant un espace.
+* xref:admin:components/budgets.adoc[*Budgets*]: permet aux participants de voter dans des projets dont les montants sont prédéfinis. Used for
+participatory budgeting processes. Permet de définir différents types de règles, par exemple un pourcentage minimum du budget total ou un montant minimum de projets.
+* xref:admin:components/debates.adoc[*Debates*]: permet aux participants d'avoir des débats. Les débats peuvent être limités dans le temps ou non.
+* xref:admin:components/elections.adoc[*Elections*]: pour avoir des élections auditables de bout en bout dans un espace. Utilise le même
+système externe que l'espace xref:admin:spaces/votings.adoc[Votings].
+* xref:admin:admin:components/meetings.adoc[*Meetings*]: rencontres en personne ou en ligne via des plateformes de vidéoconférences.
+* xref:admin:components/pages.adoc[*Page*]: pages statiques avec support multi-langage.
+* xref:admin:components/proposals.adoc[*Propositions*]: contributions postées par les participants qui peuvent être soutenues.
+* xref:admin:components/sortitions.adoc[*Sortitions*]: cela permet de sélectionner au hasard différents types de propositions.
+Par exemple, les propositions pourraient être des candidats qui font partie d'un groupe (comme un comité).
+* xref:admin:components/surveys.adoc[*Survey*]: pour mener des enquêtes avec différents types de questions.
+
+Dans les cas où vos besoins ne sont pas couverts par l'un des composants ci-dessus, vous pouvez créer votre propre composant via un module xref:develop:modules. doc[Module].
