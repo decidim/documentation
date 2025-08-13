@@ -1,183 +1,183 @@
-= Components
+= Componentes
 
 :page-partial:
 
-*Components* are participatory mechanisms that allow interactions among the platform Participants within each of the Participatory Spaces.
+*Componentes* são mecanismos participativos que permitem interações entre os participantes da plataforma dentro de cada um dos Espaços Participantes.
 
-== Proposals
+== Propostas
 
-*Proposals* are Decidim's most important component. They can be defined as the minimum decision unit.
+*Propostas* são o componente mais importante do Decidim. Podem ser definidos como a unidade de decisão mínima.
 
-Proposals can be made by any of the following *types of creators*:
+As propostas podem ser feitas por qualquer um dos seguintes *tipos de criadores*:
 
-* by the *official organisation* managing the platform
-* by registered *individual participants*
-* by a *group* of registered participants
-* from a *meeting* as a result of a discussion or collective deliberation
+* pela *organização oficial* que gerencia a plataforma
+* por *participantes individuais* registrados
+* por um *grupo* de participantes registrados
+* de uma *reunião* como resultado de uma discussão ou deliberação colectiva
 
-Once a proposal has been published, it can be *moderated*, *amended* or *withdrawn* by its author(s).
+Uma vez que uma proposta foi publicada, ela pode ser *moderada*, *alterada* ou *retirada* por seu(s) autor(es).
 
-Proposals can be *accepted*, *rejected* or kept in an *evaluating* state. Proposals can also be imported to a new phase, so they can be re-written or elaborated in different stages.
+Propostas podem ser *aceitas*, *rejeitadas* ou mantidas em um estado *avaliando*. As propostas também podem ser importadas para uma nova fase, de modo que possam ser reescritas ou elaboradas em diferentes fases.
 
-Other features associated with proposals include:
+Outros recursos associados às propostas incluem:
 
-* *Proposal creation wizard*: While a proposal is being created, the participant is accompanied through the process, which is divided into different steps, with contextual help and previews before the proposal is published.
-* *Modification and withdrawal of proposals*: a proposal’s author can modify and/or withdraw it before the support stage opens.
-* *Version control*: this makes it possible to keep a record of all the changes made to a proposal, as well as code-generation to verify the proposal’s integrity.
-* *Detecting similarities*: This allows anyone making a new proposal to find similar ones previously made on the platform, thereby avoiding duplications.
-* *Connections between proposals*: proposals made can be connected to one another using links in the comments section, showing related proposals as cards and giving notifications on the existence of a new connection.
-* *Endorsement of proposals*: participants and collectives can endorse proposals and such public endorsement will be shown within the proposal. Followers of the endorsers will be notified that the followed endorsed the proposal.
-* *Amendments*: any participant can edit a proposal’s text and a sub-proposal will be created in Amendment Mode (as Pull Request in Github). This sub-proposal can gather endorsements and supports. Besides, the proposal’s author can accept or reject the amendment (or sub-proposal). Where a sub-proposal is rejected, its author can convert it into an official proposal.
-* *Collaborative draft for proposals*: Decidim permits collaboration and co-creation over proposals. It incorporates the following features:
-** Creating rough drafts with numerous authors.
-** Listing of collaborative drafts
-** Comments in drafts
-** Asking for help from and accepting the help of other collaborators
+* *Assistente de criação de proposta*: Enquanto uma proposta está sendo criada, o participante é acompanhado pelo processo, que é dividido em diferentes passos, com ajuda e pré-visualizações contextuais antes da publicação da proposta.
+* *Modificação e retirada das propostas*: o autor de uma proposta pode modificá-la e/ou retirá-la antes do início da fase de suporte.
+* *Controle de versão*: isso torna possível manter um registro de todas as alterações feitas a uma proposta, bem como a geração de códigos para verificar a integridade da proposta.
+* *Detectar similaridades*: isso permite que qualquer pessoa faça uma nova proposta para encontrar propostas semelhantes feitas anteriormente na plataforma, evitando duplicações.
+* *Conexões entre propostas*: as propostas feitas podem ser conectadas umas às outras usando links na seção de comentários, exibindo propostas relacionadas como cartões e fornecendo notificações sobre a existência de uma nova conexão.
+* *Endosso das propostas*: os participantes e coletivos podem endossar propostas e tal endosso público será mostrado na proposta. Os seguidores dos apoiadores serão notificados de que os seguintes apoiaram a proposta.
+* *Alterações*: qualquer participante pode editar o texto de uma proposta e uma subproposta será criada no Modo de Alteração (como pedido de Pull Request no Github). Esta sub-proposta pode reunir endossos e apoios. Além disso, o autor da proposta pode aceitar ou rejeitar a alteração (ou subproposta). Quando uma sub-proposta é rejeitada, o seu autor pode convertê-la em proposta oficial.
+* *Projecto colaborativo para propostas*: Decidim permite a colaboração e a co-criação sobre propostas. Ele incorpora os seguintes recursos:
+** Criando rascunhos ásperos com vários autores.
+** Listagem de rascunhos colaborativos
+** Comentários em rascunhos
+** Pedir ajuda e aceitar a ajuda de outros colaboradores
 
-== Endorsements
+== Endossos
 
-include::admin:partial$development.adoc[]
+$developmentparcial.adoc[]
 
-Participants can endorse proposals. Such endorsements can be interpreted as votes, signatures or any other format that demonstrates a positive agreement in accordance with the political will itself.
-Participants can issue a single endorsement for each proposal they wish. The number of endorsements can be limited for each participant.
-There is no limit to the number of proposals that can be endorsed.
+Os participantes podem endossar propostas. Esses endossos podem ser interpretados como votos, assinaturas ou qualquer outro formato que demonstre um acordo positivo em conformidade com a própria vontade política.
+Os participantes podem emitir um único aval para cada proposta que desejarem. O número de endossos pode ser limitado para cada participante.
+Não há limites para o número de propostas que podem ser aprovadas.
 
-If the endorsement is a vote, it is possible to configure from the administration panel the *display settings for the voting results*, either during or solely after the voting period.
+Se o aval for um voto, é possível configurar a partir do painel administrativo *as configurações de exibição para os resultados das votações*, seja durante ou exclusivamente após o período de votação.
 
-There is a *special form used to vote for participatory budgets* which allows participants to vote by "spending" an amount equivalent to the budget in question among the proposed projects. The number of votes is limited here by the selected projects’ accumulated spending amount.
+Há uma *forma especial usada para votar nos orçamentos participativos* que permite aos participantes votar "gastos" um montante equivalente ao orçamento em questão entre os projetos propostos. O número de votos é limitado aqui pela quantidade de gastos acumulados dos projetos selecionados.
 
-== Results
+== Resultados
 
-The *results* component is used to turn proposals into results and give official responses to them.
-It is possible to merge various proposals into a single result or to create different results related to the same original proposal.
+O componente *resultados* é usado para transformar propostas em resultados e dar respostas oficiais a eles.
+É possível fundir várias propostas num único resultado ou criar diferentes resultados relacionados com a mesma proposta original.
 
-Results gather information about the original proposal(s), like the meetings where they were created, discussed and debated and the endorsements received.
+Os resultados reúnem informações sobre as propostas originais, como as reuniões onde foram criadas, discutidas e debatidas e os endossos recebidos.
 
 == Debates
 
-Discussions and debates can be opened on questions and specific issues established by administrators or participants.
+As discussões e os debates podem ser abertos sobre questões e questões específicas estabelecidas por administradores ou participantes.
 
-== Surveys
+== Pesquisas
 
-The *surveys* component can be used to design and publish surveys and to display and download their results.
+O componente *surveys* pode ser usado para projetar e publicar pesquisas, para exibir e baixar seus resultados.
 
-* *Survey configuration tool*: allows administrators to create questions and answers (open, test types, multiple selection etc.) and launch the survey, as well as download the responses in CSV format.
-* *Survey interface for participants*: allows participants to respond to survey questions.
+* *Ferramenta de configuração da pesquisa*: permite que os administradores criem perguntas e respostas (abertas, tipos de teste, múltipla seleção, etc.) e abrir a pesquisa, bem como baixar as respostas no formato CSV.
+* *Interface de pesquisa para os participantes*: permite que os participantes respondam às perguntas da pesquisa.
 
-== Sortitions
+== Sorteios
 
-The *sortition* component allows to select a number of proposals (e.g. candidates for a jury) with random, yet reproducible, procedures that guarantees non-biased and uniform distributions.
+O componente *classificação* permite selecionar um número de propostas (por exemplo, Os candidatos a um júri) com procedimentos aleatórios, mas reproduzíveis, que garantem distribuições não tendenciosas e uniformes.
 
-== Informative pages
+== Páginas informativas
 
-The *pages* component is used to create informative pages with rich text formatting, embedded pictures and videos.
+O componente *páginas* é usado para criar páginas informativas com formatação rica de texto, imagens embutidas e vídeos.
 
 == Blogs
 
-The *blog* component makes possible the creation of posts or news associated with a participatory space, and to navigate them chronologically.
+O componente *blog* torna possível a criação de posts ou notícias associados a um espaço participativo e navegá-los cronologicamente.
 
-*Comments associated* with blog entries will be treated like the platform’s other comments, as described below.
+*Comentários associados* às entradas do blog serão tratados como os outros comentários da plataforma, conforme descrito abaixo.
 
-== Newsletter
+== Boletim
 
-The *newsletter* component makes possible to send emails to everyone registered in the platform or, more selectively, to those who participate in a specific space who have agreed, under the terms and conditions of use, to receive this information newsletter email. Personalised emails are sent out addressed directly to the name of the user in the language chosen by the user by default.
+O componente *newsletter* permite enviar e-mails para todos registrados na plataforma ou, mais selectivamente, para aqueles que participam de um espaço específico que concordaram, nos termos e condições de uso, em receber esta mensagem na newsletter de informações. Os e-mails personalizados são enviados diretamente para o nome do usuário no idioma escolhido pelo usuário por padrão.
 
-Participants will automatically and directly be able to *unsubscribe* through the email itself by clicking on a link in it and it will also be possible to *track the number of visits* generated by the newsletter.
+Os participantes serão automaticamente e diretamente capazes de *cancelar a inscrição* através do próprio e-mail clicando em um link nele e também será possível *acompanhar o número de visitas* gerado pelo boletim informativo.
 
-== Meetings
+== Encontros
 
-The *meeting* component offers organizations and participants the opportunity to:
+O componente *reunião* oferece às organizações e aos participantes a oportunidade de:
 
-* convene meetings, defining its structure and content
-* *categorise* the meeting within a space.
-* create *proposals associated with meetings*
-* *publish* minutes
-* upload *photos* of the meeting
+* convocar reuniões, definindo sua estrutura e conteúdo
+* *categoria* a reunião dentro de uma sala.
+* criar *propostas associadas às reuniões*
+* *publicar* minutos
+* envie *fotos* da reunião
 
-Meetings relating to a participatory space (a specific process or an assembly) can be shown on a *map* and be *ordered by date or category*. Besides, all the meetings can be shown in *calendar mode*, with the possibility of exporting them to a mobile phone calendar or other apps.
+Reuniões relacionadas a um espaço participativo (um processo específico ou um assembly) podem ser mostradas em um *mapa* e ser *ordenadas por data ou categoria*. Além disso, todas as reuniões podem ser mostradas no *modo calendário*, com a possibilidade de exportá-las para um calendário de telemóveis ou outros aplicativos.
 
-Some of the meeting component’s advanced features include:
+Algumas das características avançadas do componente de reunião incluem:
 
-* *Registration and attendance system*:
-** This allows to manage the *type of registration* (open and automatic, closed and accessible only to certain types of participants, etc.), to establish the **number of places **available for attendees, to reserve a place, to do *manual registrations*, sent out *Invitations*, to define the *conditions* that need to be accepted in order to be able to attend the meeting (e.g. image rights release), and *registering the attendance* of participants.
-** It allows participants *to register* for a meeting, request *a family reconciliation service* (playroom, childcare space) and to obtain an *accreditation code* for attending at a meeting.
-** Those registered who have attended a meeting will have *special access* enabling them to evaluate the meeting or make comments, etc.
-** Participants or administrators will be able to receive *notifications* on registration-period openings, the number of places remaining for registrations, reminders of meetings, and the publication of minutes.
-* *Managing agendas*: allows to define the duration of meetings, to create agenda’s items and sub-items, title, content, and estimated duration. Participants can propose agenda items.
-* System for *drafting, publishing and validating meeting minutes* [IMPORTANT NOTE:This is currently implemented differently]:
-** Minutes can be uploaded in video, audio or text format.
-** Minutes in text mode are associated with a *collaborative writing board* integrated into Decidim.
-** Minutes go through 4 *stages of preparation*: 1. Collaborative writing during the meeting; 2. Preparing the official draft of the minutes; 3. Draft-amendment stage; 4. Publication and final validation of the minutes.
-** Minutes can be *commented on* using the comments component.
-** *Accompanying documents* may also be added to the minutes.
-* *Auto-convening*: verified participants will be able to convene meetings directly through the platform , with support from a certain number of other participants, the meeting will be publicly activated and convening participants will have access to the administration panel [IMPORTANT: not implemented yet]
-* *Displaying and exporting meetings*: meetings can be displayed in map mode (for spaces or generally on the platform) or in calendar mode, and can be exported to agenda and calendar managers (in iCalendar format).
+* *Sistema de registro e presença*:
+** Isso permite gerenciar o *tipo de registro* (aberto e automático, fechado e acessível apenas para certos tipos de participantes, etc. , para estabelecer o **número de lugares **disponíveis para os participantes, para reservar um lugar, para fazer *registros manuais*, enviado *Convites*, para definir as *condições* que precisam ser aceitas para poder participar da reunião (e. . direitos de imagem liberados) e *registrando a participação* dos participantes.
+** Permite que os participantes *se registrem* em uma reunião, pedido *um serviço de reconciliação familiar* (sala de reprodução, espaço para cuidar das crianças) e obter um *código de acreditação* para participar em uma reunião.
+** Aqueles inscritos que participaram de uma reunião terão *acesso especial* que lhes permite avaliar a reunião ou fazer comentários, etc.
+** Participantes ou administradores poderão receber *notificações* na abertura de período de cadastro, o número de lugares restantes para registros, lembretes das reuniões e a publicação de minutos.
+* *Gerenciando agendas*: permite definir a duração das reuniões, criar itens e sub-itens da agenda, título, conteúdo e duração estimada. Os participantes podem propor itens da agenda.
+* Sistema de *rascunho, publicação e validação de minutos das reuniões* [NOTA IMPORTANTE: Isso atualmente está implementado de maneira diferente]:
+** Os minutos podem ser carregados no formato de vídeo, áudio ou texto.
+** Minutos no modo de texto são associados a um *quadro de escrita colaborativo* integrado ao Decidim.
+** Minutos passam por 4 *fases de preparação*: 1. Escrita colaborativa durante a reunião; 2. Preparando o projecto oficial da acta; 3. Fase da alteração; 4. Publicação e validação final dos minutos.
+** Minutos podem ser *comentados* usando o componente de comentários.
+** *Documentos de acompanhamento* também podem ser adicionados aos minutos.
+* *Auto-convenção*: participantes verificados poderão convocar reuniões diretamente através da plataforma, com suporte de um certo número de outros participantes, a reunião será ativada publicamente e os participantes que convocarem terão acesso ao painel de administração [IMPORTANTE: ainda não implementado]
+* *Realizando e exportando reuniões*: reuniões podem ser exibidas no modo do mapa (para espaços ou geralmente na plataforma) ou no modo calendário, e pode ser exportado para gerentes de agenda e calendário (em formato iCalendário).
 
-== Search engine
+== Mecanismo de pesquisa
 
-*The search engine* allows participants to perform searches across all of the platform’s indexable content, both generally and specifically, by searching within a specific participatory process or inside its components (proposals, results, etc.), through advanced searches.
+*O mecanismo de busca* permite que os participantes executem pesquisas em todos os conteúdos indexáveis da plataforma. tanto geral quanto especificamente, pesquisando dentro de um processo participativo específico ou dentro de seus componentes (propostas, resultados, etc. , através de pesquisas avançadas.
 
-== Secondary components
+== Componentes secundários
 
-There are other components that only exist on top of basic components are. These components are:
+Existem outros componentes que só existem em cima dos componentes básicos. Esses componentes são:
 
-=== Comments
+=== comentários
 
-The *comments* component enables participants to take part on a deliberative process on an issue or proposal.
-Participants can respond to them, endorse them and receive notifications about responses.
-Comments can be *ranked* in chronological order or by number of votes in favour.
+O componente *comentários* permite que os participantes participem de um processo deliberativo em uma issue ou proposta.
+Os participantes podem responder, endossá-los e receber notificações sobre respostas.
+Os comentários podem ser *classificados* em ordem cronológica ou por número de votos a favor.
 
-=== Participatory texts
+=== Textos participativos
 
-Participatory texts are defined as an ordered collection of proposals that make up a document with complete text. Participation in the text stems from interaction with the proposals that form it. This component basically allows three operations:
+Textos participativos são definidos como uma coleção ordenada de propostas que formam um documento com texto completo. A participação no texto deriva da interacção com as propostas que a constituem. Este componente basicamente permite três operações:
 
-* *Breaking down a text document into ordered proposals* from a document in ODT, XDOC, MarkDown and HTML formats. If the text is structured in sections and subsections, ordered proposals will be created from the lower level subsection; if the text is not structured, a proposal will be created for each paragraph of text. The interface allows proposals to be re-edited, merged, separated, given titles, etc.
-* *Composition of proposals in a unified text*: based on a series of proposals, these may be ordered and generate a unified and downloadable text.
-* *Viewing and interacting* with documents composed of proposals: A collection of proposals will be shown as a unified text and may be amended or comments can be added in the margin.
+* *Dividir um documento de texto em propostas ordenadas* de um documento nos formatos ODT, XDOC, MarkDown e HTML. Se o texto estiver estruturado em seções e subseções, as propostas ordenadas serão criadas a partir da subseção de nível inferior; se o texto não for estruturado, será criada uma proposta para cada parágrafo do texto. A interface permite que as propostas sejam re-editadas, mescladas, separadas, dadas a títulos, etc.
+* *Composição de propostas em um texto unificado*: baseada em uma série de propostas, estas podem ser ordenadas e gerar um texto unificado e para download.
+* *Visualização e interação* com documentos feitos de propostas: Um conjunto de propostas será mostrado como um texto unificado e pode ser alterado ou os comentários podem ser adicionados à margem.
 
-=== Accountability
+=== Responsabilidade
 
-The *accountability* component works like a project management system built into the platform. . It offers the possibility of:
+O componente *accountability* funciona como um sistema de gerenciamento de projetos construído na plataforma. . Ele oferece a possibilidade de:
 
-* subdividing results into projects or sub-projects
-* defining and applying progress in implementation statuses (0% to 100% implemented) around their implementation
-* displaying the extent of the results’ implementation grouped by categories and scopes
+* subdividindo resultados em projetos ou subprojetos
+* definir e aplicar o progresso em status de implementação (0% a 100% implementado) em torno da sua implementação
+* exibindo a extensão da implementação dos resultados agrupada por categorias e escopos
 
-Results, projects and statuses can be updated through a CVS, or manually by the administration interface.
+Resultados, projetos e status podem ser atualizados através de um CVS, ou manualmente pela interface de administração.
 
-=== Conferences
+=== Conferências
 
-The *conference* component allows an organization to join up a series predefined meetings (chats, workshops etc.) related to a participatory space.
+O componente *conferência* permite que uma organização participe de uma série de reuniões predefinidas (chats, workshops etc.) Relacionado a um espaço participativo.
 
-Configuration settings include:
+Configurações incluem:
 
-* Conference-page generator, which enables the creation of an *internal website* with information about the event.
-* The option to generate an *interactive and downloadable programme* on the event (where there are guest speakers, it will include their name, position, organisation, a small biography and links to other websites).
-* Email *invitations*.
-* Registration system
-* *Automatic diploma and certificates of attendance creation* for those who request it, through a support panel that an administrator can verify.
-* Links to the event *video and materials* platforms in the programme and documents.
-* Automatic links to digital-media websites covering the event.
-* The ability to following events through *social networks* (e.g. by incorporating a Twitter feed).
+* Gerador de página de conferência, que permite a criação de um *site interno* com informações sobre o evento.
+* A opção de gerar um *programa interativo e para download* no evento (onde há palestrantes convidados, incluirá seus nomes, posição, organização, uma pequena biografia e links para outros sites).
+* *convites* por e-mail.
+* Sistema de registro
+* *Diploma automático e certificados de presença* para quem a solicitar, por meio de um painel de suporte que um administrador pode verificar.
+* Links para o evento das plataformas *vídeo e materiais* do programa e documentos.
+* Links automáticos para sites de mídia digital cobrindo o evento.
+* A capacidade de seguir eventos através de *redes sociais* (por exemplo, incorporando um feed do Twitter).
 
-== Participatory Spaces and Components
+== Espaços e componentes participativos
 
-*Participatory Spaces* and *Components* can be combined in different ways.
-For example, the various phases of a Participatory Budgeting Process (Participatory Space) can combine *Components* like this:
+*Espaços participativos* e *Componentes* podem ser combinados de maneiras diferentes.
+Por exemplo, as várias fases de um Processo de Orçamento Participativo (Espaço Participativo) podem combinar *Componentes* assim:
 
-1. At an early phase public *Meetings* can be opened for citizens to analyze different needs classified by districts.
-1. In turn these *Meetings* can lead to the design of a *Survey*.
-1. The *Survey* results can then be used to define a set of categories for projects to be proposed.
-1. The *Proposal* component can then be activated for Participants to create and publish their projects as solutions to the identified needs.
-1. These *Proposals* can then be commented and, after two weeks of deliberation, *voting* can be activated to select among the projects with a budget-expenditure system.
-1. Participants can then be called to a public *Meeting* to evaluate the results.
-1. An assessment *Survey* can be launched afterwards for those who could not attend the *Meeting*.
-1. Finally, the *Accountability* component may be activated to monitor the degree of execution of the selected projects, and people can comment on it.
+1. Em uma fase inicial as *reuniões* públicas podem ser abertas para que os cidadãos analisem diferentes necessidades classificadas por distritos.
+1. Por sua vez, essas *reuniões* podem levar ao design de uma *Pesquisa*.
+1. Os resultados da *Pesquisa* podem ser usados para definir um conjunto de categorias para os projetos a serem propostos.
+1. O componente *Propostal* pode então ser ativado para que os participantes criem e publiquem seus projetos como soluções para as necessidades identificadas.
+1. Essas *propostas* podem ser comentadas e, depois de duas semanas de deliberação, *votar* pode ser ativado para selecionar entre os projetos com um sistema de gastos orçamentais.
+1. Os participantes podem então ser chamados para uma *reunião* pública para avaliar os resultados.
+1. Uma avaliação *Pesquisa* pode ser lançada depois para aqueles que não puderam participar da *Reunião*.
+1. Finalmente, o componente *Accountability* pode ser ativado para monitorar o grau de execução dos projetos selecionados, e as pessoas podem comentar sobre ele.
 
-== Displaying components: Cards
+== Exibindo componentes: Cards
 
-Component items have their individual page but are also displayed as *cards* throughout the platform.
+Itens de componente têm sua página individual, mas também são exibidos como *cartões* em toda a plataforma.
 
 [#card-anatomy-fig]
-._Decidim's proposal card anatomy._
+.Cartão de proposta do Decidim anatomy._
 image::card-anatomy.png[]
