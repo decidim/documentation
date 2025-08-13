@@ -1,0 +1,90 @@
+= Participants
+
+Dans cette page, un administrateur peut :
+
+* Bloquer un participant, par exemple parce qu'il spamme ou agit contre les conditions d'utilisation
+* Contacter un participant avec des messages privés Decidim (Conversations)
+* Officialiser un participant
+* Voir son e-mail
+
+image:participants_participants.png[Participants list]
+
+== Actions
+
+image:participants_participants_actions.png[Actions des participants]
+
+|===
+|Icône |Nom |Définition
+
+|image:action_block.png[Bloquer l'utilisateur]
+|xref:_block_user[Bloquer l'utilisateur]
+|Bloquer ou modérer un participant.
+
+|image:action_show_email.png[Afficher l'e-mail]
+|xref:_show_email_address[Afficher l'adresse e-mail]
+|Montrer un e-mail d'un participant.
+
+|image:action_contact.png[Contact]
+|xref:_contact[Contact]
+|Pour contacter un participant avec des messages privés Decidim (Conversations)
+
+|image:action_officialize.png[Officialize]
+|xref:_officialiser[Officialize]
+|Reconnaître qu'un participant a un statut spécial sur la plateforme
+
+|image:action_reofficialize.png[Reoffficialize]
+|Atténuer
+|Pour modifier une officialisation. Voir xref:_officialize[Officialize]
+
+|image:action_unofficialize.png[Unofficialize]
+|Dénofficialiser
+|Pour révoquer une officialisation. Voir xref:_officialize[Officialize]
+|===
+
+=== Bloquer l'utilisateur
+
+After clicking in this option you'll need to provide a justification why you're
+blocking this participant:
+
+image:participants_block_user_justification.png[Justifier l'action de l'utilisateur bloqué]
+
+Une fois qu'un participant bloqué tente de se connecter, il verra un message d'erreur :
+
+image:participants_block_user_alert.png[Message affiché à l'utilisateur bloqué]
+
+Après qu'un participant a été bloqué son nom est changé en "Utilisateur bloqué".
+
+En savoir plus sur xref:admin:participants/reported_users.adoc[Utilisateurs signalés]
+
+=== Afficher l'adresse e-mail
+
+Après avoir cliqué sur cette option, l'administrateur verra une fenêtre modale. They will have to click in
+button "Show email address".
+
+image:participants_show_email.png[Modal in show email]
+image:participants_showed_email.png[Modal after the email is shown]
+
+Cette action sera enregistrée dans le journal d'actvity de l'administrateur.
+
+image:participants_showed_email_admin_log.png[Journal d'activité de l'administrateur pour afficher l'e-mail]
+
+=== Contacter
+
+En cliquant sur cette option, cela ouvrira la messagerie privée (Conversation) pour
+ce participant.
+
+image:participants_conversation.png[Conversation avec un participant].
+
+=== Officialiser
+
+Cette option est utile pour reconnaître qu'un participant a un statut spécial sur la plateforme
+. For instance, if someone is the City Mayor, a City Councillor or the
+President of an Association in an organization context.
+
+Après avoir officialisé un participant vous pouvez:
+
+- Changer le texte de l'officialisation avec "Reofficialize"
+- Révoquer le statut d'officialisation avec "Unofficialize"
+
+image:participants_officialize.png[Officialiser un participant]
+image:participants_participants_actions_officialize.png[Officialiser un participant]
