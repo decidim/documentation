@@ -1,0 +1,19 @@
+= Mon compte
+
+Mon compte est toutes les pages où un participant peut modifier ses données personnelles qui sont affichées dans son xref:admin:features/my_public_profile. page doc[Mon profil public] , modifier leurs paramètres de notification, voir à quels groupes ils appartiennent, etc.
+
+Pour aller à cette section :
+
+. Se connecter en tant que participant
+. Cliquez dans le nom du participant dans l'en-tête
+. Cliquez dans "Mon compte"
+
+Les actions qu'ils peuvent faire sont:
+
+* xref:admin:features/my_account/account.adoc[Account]
+* xref:admin:features/my_account/notifications_settings.adoc[Paramètres des notifications]
+* xref:admin:features/my_account/authorizations.adoc[Authorizations]
+* xref:admin:features/my_account/groups.adoc[Groups]
+* xref:admin:features/my_account/my_interests.adoc[Mes intérêts]
+* xref:admin:features/my_account/my_data.adoc[Mes données]
+* xref:admin:features/my_account/delete_my_account.adoc[Supprimer mon compte]
