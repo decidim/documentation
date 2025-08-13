@@ -1,0 +1,70 @@
+= Gemeinsamer Entwurf
+
+Mit dem gemeinsamen Entwurf können die Teilnehmer einen Vorschlag mit mehreren Autoren machen.
+
+Es ist nützlich, Verbesserungen oder Korrekturen vorzuschlagen.
+
+Sie weist Ähnlichkeiten mit xref:components/proposals/amendments auf. doc[Amendments] aber der Hauptunterschied ist, dass bei kollaborativen
+anderen Autoren vertraut werden muss. da sie ohne Genehmigung durch den
+Originalautor Änderungen am ursprünglichen Vorschlag vornehmen können, obwohl der ursprüngliche Autor entscheiden kann, ob sie den gemeinschaftlichen Entwurf als Vorschlag fördern.
+
+image:components/proposals/collaborative_drafts/collaborative_draft_request_access.png[Collaborative draft with request access button]
+
+Um "Collaborative Drafts" in der Vorschlagskomponente zu konfigurieren:
+
+. Als Admin anmelden
+. Zum Admin-Panel wechseln
+. Wählen Sie in der Haupt-Seitenleiste den Bereich aus, unter dem Sie die Komponente konfigurieren möchten.
+Zum Beispiel "Prozesse", "Assemblies" oder "Konferenzen"
+. Gehe zu Komponenten
+. Auf "Komponente hinzufügen"-Button klicken
+. Klicken Sie auf "Vorschläge"
+. Aktivieren Sie die Einstellung "Kollaborative Entwürfe aktiviert"
+. Komponente speichern
+
+== So funktioniert es
+
+. Ein Teilnehmer (Alice) möchte einen gemeinsamen Entwurf erstellen. Dafür gehen sie auf die Liste der Vorschläge.
+. Alice klickt auf den Button "Zugriff auf kollaborative Entwürfe"
+image:components/proposals/collaborative_drafts/proposals_list01.png[]
+. Alice klickt in "Neuer kollaborativer Entwurf" Button
+Bild:Komponenten/Vorschlags/collaborative_drafts/list_empty.png[]
+. Alice füllt das Formular aus und sendet es
+image:components/proposals/collaborative_drafts/create_form.png[]
+. Sobald der kollaborative Entwurf erstellt wurde, kann Alice den kollaborativen Entwurf bearbeiten, zurückziehen oder veröffentlichen, oder
+Kooperationsanfragen
+ablehnen: image:components/proposals/collaborative_drafts/collaborative_draft.png[]
+. Ein anderer Teilnehmer (Bob) hat den gemeinschaftlichen Entwurf gesehen und möchte einige Änderungen an
+image:components/proposals/collaborative_drafts/collaborative_draft_request_access.png[]
+. Bob klickt auf den "Zugriff anfordern"-Button
+image:components/proposals/collaborative_drafts/access_requested.png[]
+. Alice erhält die Benachrichtigung
+Bild:components/proposals/collaborative_drafts/notification.png[]
+. Alice geht an den gemeinsamen Entwurf. Dort können sie die Kollaborationsanfrage
+akzeptieren oder ablehnen: Komponenten/Vorschläge/collaborative_drafts/author_sidebar.png[]
+. Alice genehmigt die Kollaborationsanfrage. Sobald eine Anfrage genehmigt wurde, kann sie nicht abgelehnt werden
+. Jetzt hat der gemeinschaftliche Entwurf mehrere Autoren
+image:components/proposals/collaborative_drafts/multiple_authors.png[]
+. Bob kann den kollaborativen Entwurf bearbeiten, indem er auf den Knopf "kollaborative Entwürfe bearbeiten" klickt:
+image:components/proposents/proposals/collaborative_drafts/edit_collaborative_draft.png[]
+image:components/proposals/collaborative_drafts/edit_form.png[]
+. Sobald der Collabrative Entwurf bearbeitet wurde, ist es möglich, die alten Versionen und Änderungen
+image:components/proposents/collaborative_drafts/collaborative_draft_edited.png[]
+image:components/proposents/proposals/collaborative_drafts/collaborative_edited_versions.png[]
+image:components/proposals/collaborative_drafts/collaborative_draft_edited_versions_show_v2_01.png[]
+image:components/proposative_collaborative_draft_edited_versions_v2_02.png[] zu sehen.
+. Sobald Alice mit dem kollaborativen Entwurf zufrieden ist, können sie ihn durch Klicken auf den "Veröffentlichen" Button
+image:components/proposals/collaborative_drafts/publish_modal.png[]
+. Wenn es veröffentlicht wird, wird es ein Vorschlag
+image:components/proposals/collaborative_drafts/proposal.png[]
+image:components/proposals/collaborative_drafts/proposals_list02.png[]
+. Und der kollaborative Entwurf ist noch sichtbar, obwohl er nicht mehr bearbeitet werden kann
+image:components/proposals/collaborative_drafts/collaborative_draft_published.png[]
+
+== Wichtige Aspekte
+
+- Ein gemeinschaftlicher Entwurf kann eine beliebige Anzahl von Autoren haben.
+- Nur der Originalautor kann die Kollaborationsanfragen genehmigen oder ablehnen.
+- Nur der Originalautor kann den gemeinsamen Entwurf veröffentlichen.
+- Nur der ursprüngliche Autor kann den gemeinschaftlichen Entwurf zurückziehen.
+- Sobald eine Kollaborationsanfrage genehmigt wurde, kann sie nicht abgelehnt werden.
