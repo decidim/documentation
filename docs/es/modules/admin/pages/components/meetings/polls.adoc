@@ -1,29 +1,29 @@
-= Polls
+= Encuestas
 
-CAUTION: this feature is still in active development and can't be used in production yet.
+CAUTION: esta característica todavía está en desarrollo activo y no puede ser utilizada en producción todavía.
 
-Through the manage polls feature is possible to define a poll that will be displayed when an online meeting is ocurring.
-This is useful to see quick feedback and make a decision inside the meeting without having to leave the meeting and use
-other kind of tools (like surveys or proposals).
+A través de la función de administrar encuestas es posible definir una encuesta que se mostrará cuando ocurra una reunión en línea.
+Esto es útil para ver comentarios rápidos y tomar una decisión dentro de la reunión sin tener que abandonar la reunión y utilizar
+otro tipo de herramientas (como encuestas o propuestas).
 
-With this feature an administrator can define questions and also manage when these questions and its results will be shown
-to participants.
+Con esta función, un administrador puede definir preguntas y también administrar cuando estas preguntas y sus resultados se mostrarán
+a los participantes.
 
-== Enable polls for a meeting
+== Habilitar encuestas para una reunión
 
-To enable polls for a meeting:
+Para habilitar las encuestas para una reunión:
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Click on "Meetings"
-. Search the meeting that you want to define polls for
-. Click on the "Manage polls" button image:action_list.png[Manage polls button]
-. Fill the form
+. Iniciar sesión como administrador
+. Ir al panel de administración
+. En la barra lateral principal, haga clic en el botón para el espacio para el que desea configurar el componente.
+Por ejemplo, podría ser "Procesos", "Colmenas" o "Conferencias"
+. Haga clic en "Reuniones"
+. Buscar la reunión para la que desea definir encuestas
+. Haga clic en el botón "Administrar encuestas" imagen:action_list.png[Administrar encuestas]
+. Rellene el formulario
 
-The form is pretty much the Decidim form builder, with one caveat: you can only define Single and Multiple option questions.
+El formulario es prácticamente el constructor de formularios de Decidim, con una advertencia: sólo puede definir preguntas de opciones individuales y múltiples.
 
-image:components/meetings/polls/backend.png[Backend for meeting polls]
+imagen:componentes/meetings/polls/backend.png[Backend para encuestas de reuniones]
 
-image:components/meetings/polls/backend_question.png[Definining a question in meeting polls]
+image:components/meetings/polls/backend_question.png[Definir una pregunta en las encuestas de la reunión]
