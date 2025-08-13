@@ -1,40 +1,40 @@
-= Authorizations
+= Autorizaciones
 
-This section allows you to manage participants' authorizations. It depends on which Authorizations you have configured and
-enabled by your developers. To understand more what are authorizations and how to configure them, please refer to the
-xref:customize:authorizations.adoc[Authorizations section in the Customize Guide].
+Esta sección le permite gestionar las autorizaciones de los participantes. Depende de las autorizaciones que hayas configurado y
+habilitado por tus desarrolladores. Para entender más qué son las autorizaciones y cómo configurarlas, por favor consulte la sección
+xref:customize:authorizations.adoc[Autorizaciones en la Guía de Personalización].
 
-With authorizations an administrator can define different permissions so participants can make some actions in a component.
+Con autorizaciones, un administrador puede definir diferentes permisos para que los participantes puedan realizar algunas acciones en un componente.
 For instance you can configure that only participants who have verified herselves by their identity documents can vote on
 proposals in a participatory process.
 
 A participant can see which authorizations does she have available in her account settings.
 
-image:authorizations_account.png[Authorizations in participants account]
+image:authorizations_account.png[Autorizaciones en la cuenta de participantes]
 
-== Authorizations revocation
+== Revocación de autorizaciones
 
-A default Decidim installation will not have verified participants.
+Una instalación por defecto de Decidim no tendrá participantes verificados.
 
-image:authorizations_admin_default.png[Authorizations in a default installation]
+image:authorizations_admin_default.png[Autorizaciones en una instalación por defecto]
 
 In the moment that there are some participants verified, an administrator can revoke all the authorizations, as the attributes
 that give permissions to those participants could be changed in time and the platform didn't receive these changes in the
-participants statuses. For instance, an identity document of a participant could be expired, or if a participant have been
-authorized by the "code by postal letter", that participant could move in the meantime.
+participants statuses. Por ejemplo, podría expirarse un documento de identidad de un participante, o si un participante ha sido
+autorizado por el "código por carta postal", ese participante podría moverse mientras tanto.
 
-image:authorizations_admin_revocation.png[Authorizations revocation]
+image:authorizations_admin_revocation.png[Revocación de autorizaciones]
 
-It's possible to revoke all the authorizations with "Revoke all", or to only revoke authorizations before a given date.
-Another possiblity is to revoke only the xref:admin:participants/impersonations.adoc[impersonated participants].
+Es posible revocar todas las autorizaciones con "Revocar todas", o sólo revocar las autorizaciones antes de una fecha determinada.
+Otra posibilidad es revocar sólo el xref:admin:participants/impersonations.adoc[participantes impersonados].
 
-== Verification methods
+== Métodos de verificación
 
-Some of the available authorizations by default are:
+Algunas de las autorizaciones disponibles por defecto son:
 
-* xref:admin:participants/authorizations/identity_documents.adoc[Identity documents]
-* xref:admin:participants/authorizations/code_postal_letter.adoc[Code by postal letter]
-* xref:admin:participants/authorizations/census.adoc[Organization's census]
+* xref:admin:participantes/autorizaciones/identity_documents.adoc[Documentos de identidad]
+* xref:admin:participantes/autorizaciones/code_postal_letter.adoc[Código por carta postal]
+* xref:admin:participants/authorizations/census.adoc[Censo de la organización]
 
-If any of these authorizations are not useful for your needs, talk with your implementer to see other alternatives. Learn
-more about xref:customize:authorizations.adoc[Authorizations in the Customize Guide section].
+Si alguna de estas autorizaciones no es útil para sus necesidades, hable con su implementador para ver otras alternativas. Aprenda
+más sobre xref:customize:authorizations.adoc[Autorizaciones en la sección Personalizar Guía].
