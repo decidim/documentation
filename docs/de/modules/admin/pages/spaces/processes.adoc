@@ -1,0 +1,131 @@
+= Beteiligte Prozesse
+
+== Understand the basics
+
+A participatory process is a sequence of participatory activities with the aim of defining and making a decision on a specific topic.
+For example, you could have a participatory process like this:
+
+. First filling out a survey for collect participants opinion;
+. Then opening proposals;
+. Discussing them in face-to-face or virtual meetings;
+. Finally prioritizing them before implementation.
+
+NOTE: You want to create a participatory process? Check the xref:admin:spaces/processes/process_creation.adoc[process creation] article.
+
+Beispiele für partizipatorische Prozesse sind: ein Prozess der Wahl der Mitglieder des Ausschusses (bei dem die Kandidaten zuerst vorgestellt werden,
+dann debattiert und schließlich wird eine Kandidatur gewählt), partizipative Budgets (wo Vorschläge gemacht werden Wirtschaftlich bewertet,
+und mit dem zur Verfügung stehenden Geld abstimmt), einem strategischen Planungsprozess, die kollaborative Ausarbeitung einer Verordnung oder Norm,
+die Gestaltung eines städtischen Raums oder die Erstellung eines öffentlichen Politikplans.
+
+Ein wirklich wichtiges Konzept für die gute Nutzung von Decidim ist es, die Beziehung zwischen Phasen und Komponenten
+in einem partizipatorischen Prozess in Decidim zu verstehen:
+
+image::process_steps_components.png[Relation between Steps and Components in a Process in Decidim]
+
+What this diagram is showing is that for a participatory process you can configure different phases, and enable and configure
+the components for each phase as you need it for your process.
+
+Inside of every one of these Phases, you can enable the xref:admin:components.adoc[Components] you need.
+
+In this documentation section, you can find how to configure and manage all of those items:
+
+* xref:admin:spaces/processes/groups.adoc[Process Groups]
+* xref:admin:spaces/processes/types.adoc[Prozesstypen]
+** xref:admin:spaces/processes/process_creation.adoc[Process creation]
+** xref:admin:spaces/processes/landing_page.adoc[Landing page]
+** xref:admin:spaces/processes/phases.adoc[Phases]
+** xref:admin:spaces/processes/components.adoc[Components]
+** xref:admin:spaces/processes/categories.adoc[Categories]
+** xref:admin:spaces/processes/attachments.adoc[Attachments]
+** xref:admin:spaces/processes/admins.adoc[admins]
+** xref:admin:spaces/processes/private_participants.adoc[Private Teilnehmer]
+** xref:admin:spaces/processes/moderations.adoc[Moderations]
+
+=== How to find it?
+
+To access the Participatory processes panel, go in the administration panel and click the "Processes" item in the administration
+navigation bar.
+
+image::spaces/processes/processes_menu.png[Pages: Access processes panel]
+
+There, you are able to manage participatory processes and processes groups.
+
+== Konfiguration
+
+=== Manage processes
+
+image::spaces/processes/processes_list.png[Participatory processes list]
+
+On this page, you are able to manage processes and xref:admin:spaces/processes/groups.adoc[process groups].
+
+You can find all the processes on the list in the administration panel, with:
+
+* *Title*: title of the process.
+* *Created at*: date of creation of the process.
+* *Private*: if the process is opened to all participants or to only certain participants.
+* *Published*: if the process is published or no.
+
+You can filter and sort this list by clicking the "Filter" button and the columns headers.
+You can also search for processes by their title in the search bar.
+
+image::spaces/processes/processes_list_filter.png[Participatory processes list filtered]
+
+=== Aktionen
+
+.Aktionen
+[cols="10h,20h,~"]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Configure process icon]
+|Konfigurieren
+|To edit the configuration and components for a process.
+
+|image:icons/action_export.png[Export process icon]
+|Alle exportieren
+|Send the process configuration JSON file by email. Then it can be imported in other Decidim installation.
+
+|image:icons/action_duplicate.png[Duplicate process icon]
+|Duplicate
+|To duplicate this process.
+
+|image:icons/action_preview.png[Preview process icon]
+|Vorschau
+|Preview of how the process looks in the user interface.
+
+|image:icons/action_moderate.png[Moderate process icon]
+|Moderate
+|To access the process moderation panel.
+|===
+
+You can also click the "Manage" button at the top right of the page, to be able to import a process or
+configure xref:admin:spaces/processes/types.adoc[Process Types].
+
+=== Import a process
+
+To import a process, click the "Manage" button at the top right of the page.
+
+image::spaces/processes/import_menu.png[Participatory processes import menu]
+
+You are redirected to the import page, where you need to fill in those fields:
+
+* Title : The title you wish to give to the process.
+* URL identifier: The ‘slug’ for the process.
+* Add a document: Here you need to load the process JSON file obtained by email when exporting.
+
+You can then select the type of data you want to import from the file.
+
+* Import steps: Imports all the phases present in the original file.
+* Import categories: Imports all the categories present in the original file.
+* Import attachments : Import attachments of the original process.
+* Import components : Imports all the components and their configuration from the original file, without importing their content.
+
+== Beispiele
+
+Below, you can find some links to examples participatory processes:
+
+* https://www.decidim.barcelona/processes/PAM2020[Procés participatiu del Programa d'Actuació Municipal (PAM) 2020-2023, Barcelona]
+* https://www.participate.nyc.gov/processes/Citywidepb2024[The People's Money (2024-2025), New York city participatory budget]
+* https://brasilparticipativo.presidencia.gov.br/processes/planoclima/[Plano Clima, Brazilian government]
+* https://omastadi.hel.fi/processes/osbu-2023/[Helsinki city participatory budget]
+* https://ecrivons.angers.fr/processes/BP24-25[Angers city participatory budget]
