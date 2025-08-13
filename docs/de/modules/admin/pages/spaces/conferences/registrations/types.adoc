@@ -1,56 +1,105 @@
-= Registration types
+= Registrierungsarten
 
-You can enable registrations in conferences, so it's easier to register to the whole conference, or by days, rather than
-going meeting by meeting to enable registration for that particular event.
+== Understand the basics
 
-After enabling registrations participants will have a button to register to the conference in the landing and the conference's header.
+Registrations are one of the specificity of the conference space, as they can allow participants to register to the whole conference,
+to certain days only, or to specific tracks for example, rather than registering meeting by meeting.
 
-image:spaces/conferences/registration_landing01.png[Registration button on landing page]
+NOTE: Wenn Sie die Registrierung aktivieren möchten, müssen Sie mindestens einen Registrierungstyp definieren und veröffentlichen.
 
-image:spaces/conferences/registration_landing02.png[Registration button on landing page]
+Administrators can configure those different types of "tickets" in the registration types section:
 
-If you want to enable registration you'll need to define and publish at least one registration type.
+. Define the registration types
+. Enable registrations when it's ready
+. Participants are then able to register and choose the fit type of registration
 
-image:spaces/conferences/registration_types_frontend_wo_user.png[Select registration type without a user account]
+Once registrations are enabled, participants can click a button to register to the conference in the landing page
+and the conference's header.
 
-== Create a new registration type
+image::spaces/conferences/registration_button_hero.png[Registration button on hero section]
 
-For adding a new registration type, you need to:
+image::spaces/conferences/registration_button_landing.png[Registration button on landing page details]
 
-. Sign in as administrator
-. Go to the conferences section in the sidebar
-. Click on the conference Edit action
-. Click on the "Registration types" link in the sidebar
-. Click on the "New Registration type" button
-. Fill the form
-. Publish the registration type
+image::spaces/conferences/registration_button_landing_footer.png[Registration button on landing page register section]
 
-image:spaces/conferences/new_registration_type.png[Create a new registration type form]
+== Konfiguration
 
-image:spaces/conferences/registration_types_backend.png[Manage registration types]
+=== Manage registration types
 
+To access the registration types configuration, click in the secondary navigation panel on the "Media links" item.
 
-.Create a new registration type
+image::spaces/conferences/registration_types_backend.png[Manage registration types]
+
+=== Aktionen
+
+NOTE: Once participants register to a registration type, it can't be edited nor deleted.
+
+.Aktionen
+[cols="10h,20h,~"]
 |===
-|Field |Type |Description
+|Icon |Name |Definition
 
-|Title
-|Required
-|What is the title of this registration type.
+|image:icons/action_edit.png[Edit icon]
+|Bearbeiten
+|To edit this registration type.
 
-|Weight
-|Which order will it have in relation to the other types. Having a lower number means a higher priority. For instance, if you have two types, "Day 1" with weight "10" and "Day 2" with weight "0", then "Day 2" will be first when ordering.
-|Description
+|image:icons/action_activate.png[Publish speaker icon]
+|Veröffentlichen
+|To publish this registration type (when not published)
 
-|Required
-|Description for this registration type
-|Price
+|image:icons/action_unpublish.png[Unpublish speaker icon]
+|Zurückziehen
+|To unpublish this registration type (when published)
 
+|image:icons/action_delete.png[Delete icon]
+|Löschen
+|To delete this registration type.
+|===
+
+=== Neuen Registrierungstyp erstellen
+
+To create a new registration type, click the "New registration type" button in the top right of the page.
+
+image::spaces/conferences/new_registration_type.png[Create a new registration type form]
+
+.Neuen Registrierungstyp erstellen
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|The title of this registration type.
+
+|Bestellposition
+|Benötigt
+|Which order it has in relation to the other types. Eine niedrigere Zahl bedeutet eine höhere Priorität. For instance, if you have two types, "Day 1" with weight "10" and "Day 2" with weight "0" then "Day 2" is first when ordering.
+
+|Beschreibung
+|Benötigt
+|Description for this registration type.
+
+|Preis
 |Optional
-|Define a price for this registration type. If you don't define a price, the price will be "Free".
-|Select conference meetings
+|Legen Sie einen Preis für diesen Registrierungstyp fest. If you don't define a price, then it's free.
+
+|Konferenzbesprechungen auswählen
+|Optional
+|The meetings this registration type gives access to.
 |===
 
-If the participant is already logged in then they will see their username and email in the registration page.
+=== Register as a participant
 
-image:spaces/conferences/registration_types_frontend_w_user.png[Select registration type with user account]
+If the participant isn't logged in, when clicking on one of the "Register" buttons, they can log in or create an account,
+and see the registration types.
+
+image:spaces/conferences/registration_types_frontend_wo_user.png[Registrierungstyp ohne Benutzerkonto] auswählen
+
+If the participant is logged in, when clicking on one of the "Register" buttons, they can directly register.
+
+image::spaces/conferences/registration_types_frontend_w_user.png[Select registration type with user account]
+
+When clicking on the Register button for a registration type, a pop-up is displayed with the registration terms
+from the conference configuration form.
+
+image::spaces/conferences/registration_pop_up.png[Pop up with registration terms]
