@@ -1,12 +1,12 @@
-= Spaces
+= Espaços
 
-The participatory spaces are the channels that citizens can participate through when public decisions are being taken. By default
-the platform is provided with participatory processes, initiatives, consultations, conferences, votings and assemblies, but
-any organization can develop its own mechanisms through xref:develop:modules.adoc[Modules].
+Os espaços de participação são os canais através dos quais os cidadãos podem participar quando as decisões públicas estão a ser tomadas. Por padrão
+a plataforma é fornecida com processos participativos, iniciativas, consultas, conferências, Votos e montagens, mas
+qualquer organização pode desenvolver seus próprios mecanismos através da xref:develop:modules. documento[Modules].
 
-They are accessible through the main sidebar in the administration panel, and also through the main navigation menu in the
-public interface.
+Eles são acessíveis através da barra lateral principal no painel de administração, e também através do menu de navegação principal na interface pública
+.
 
-image:spaces_admin.png[Spaces in admin sidebar]
+imagem:spaces_admin.png[Espaços na barra lateral de administração]
 
-image:spaces_visitor.png[Spaces visible in the public interface]
+imagem:spaces_visitor.png[Espaços visíveis na interface pública]
