@@ -1,0 +1,411 @@
+= Meetings
+
+Bei Treffen treffen sich Menschen, um über ein bestimmtes Thema zu diskutieren oder darüber zu informieren. Alle Meetings haben einen bestimmten Ort
+(wo das Meeting stattfinden wird) und beginnen und enden Datum und Uhrzeit (wann das Meeting stattfindet).
+
+Einige Beispiele dafür, wo diese Komponente verwendet wurde:
+
+* https://www.decidim.barcelona/processes/PAM2020/f/3734/[Proce<unk> s participatiu del Programa d'Actuacio<unk> Municipal (PAM) 2020-2023]
+in https://www.decidim.barcelona/[Decidim Barcelona]
+* https://lejourdapres.parlement-ouvert.fr/processes/ateliers/f/14/[Les ateliers] in https://lejourdapres.parlement-ouvert.fr/[Le jour d'après]
+
+image:components/meetings/example01.png[Meetings list in Decidim Barcelona]
+image:components/meetings/example02.png[Beispiel-Meeting Detail 01 in Decidim Barcelona]
+image:components/meetings/example03. ng[Beispiel-Versammlungsdetail 02 in Decidim Barcelona]
+image:components/meetings/example04.png[Meetingliste in Le jour d'apre<unk> s]
+
+== Typen
+
+Bezüglich der *Position*, je nach Konfiguration der Komponente, können Sie folgendes haben:
+
+* Persönliche Meetings: wo Sie an einem bestimmten Ort zusammenkommen
+* Online-Meetings: Wo Sie sich mit einem externen Service treffen (z.B. Jitsi Meeting)
+
+Abhängig vom *Autor* (wer ist die Person, die den Anruf tätigt):
+
+* Offizielle Treffen: Meetings, die von der Organisation erstellt wurden (erstellt von einem Administrator über das Panel)
+* Bürgertreffen: Meetings, die von einem Teilnehmer eines Benutzers erstellt wurden (ein Benutzer oder eine Benutzergruppe).
+
+== Komponente hinzufügen
+
+image:components/meetings/component.png[Meeting Komponente hinzufügen]
+
+Um die Komponente hinzuzufügen, müssen Sie auf:
+
+. Als Admin anmelden
+. Zum Admin-Panel wechseln
+. Wählen Sie in der Haupt-Seitenleiste den Bereich aus, unter dem Sie die Komponente konfigurieren möchten.
+Zum Beispiel "Prozesse", "Assemblies" oder "Konferenzen"
+. Gehe zu Komponenten
+. Auf "Komponente hinzufügen"-Button klicken
+. Klicken Sie auf "Meetings"
+. Das Formular xref:_add_component[Komponente hinzufügen] ausfüllen
+
+== Komponente hinzufügen
+
+Um die Besprechungskomponente zu konfigurieren, haben Sie folgende Einstellungen:
+
+
+.Komponente hinzufügen - Meetings Formular
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Wie lautet der Name dieser Komponente.
+
+|Bestellposition
+|Optional
+|Welche Bestellung hat er im Zusammenhang mit den anderen Komponenten. Eine niedrigere Zahl bedeutet eine höhere Priorität. Zum Beispiel
+, wenn Sie zwei Komponenten haben, "Vorschläge" mit Gewicht "10" und "Meetiings" mit Gewicht "0", dann "Meetings" bei der Bestellung.
+|===
+
+
+.Komponente hinzufügen - Meeting-Formular: Globale Einstellungen
+|===
+|Feld |Typ |Beschreibung
+
+|Bereiche aktiviert
+|Optional
+|Aktivieren, wenn Sie die Bereichsfilterung in diesem Prozess verwenden möchten.
+
+|Bereich
+|Optional
+|Welcher Bereich für diese Komponente verwendet wird.
+
+|Mitteilung
+|Optional
+|Eine allgemeine Ankündigung, die in der Liste der Generalversammlungen zu sehen sein wird.
+
+|Standard-Registrierungsbedingungen
+|Optional
+|Was werden die Registrierungsbedingungen sein, die der Teilnehmer bei der Registrierung akzeptieren müsste.
+
+|Kommentare aktiviert
+|Optional
+|Ob Sie Kommentare in den Meetings haben möchten.
+
+|Maximale Länge der Kommentare
+|Optional
+|Welche Zeichenbegrenzung haben die Teilnehmer, wenn sie Kommentare abgeben. Lassen Sie 0 für den Standardwert.
+
+|Registrierungscode aktiviert
+|Optional
+|Überprüfen Sie, ob Sie den Teilnehmern Registrierungscodes geben möchten. Erfahren Sie mehr unter xref:components/meetings/registrations.adoc[Registrations].
+
+|Aktionsberechtigungen können für jedes Meeting festgelegt werden
+|Optional
+|Wenn Sie mehr granulare Berechtigungen in jedem der Meetings wünschen.
+
+|Pad-Erstellung aktivieren
+|Optional
+|Wenn Sie möchten, dass ein Etherpad in Ihre Meetings eingebettet ist. Muss die xref:services:etherpad.adoc[Etherpad] Integration konfiguriert haben.
+
+|Teilnehmer können Meetings erstellen
+|Optional
+|Erlaubt Teilnehmern neue Meetings zu erstellen. Siehe xref:_citizens_meetings[Citizens meetings]
+
+|Karten aktiviert
+|Optional
+|Möchten Sie eine Karte in den Meetings im Detail anzeigen.
+|===
+
+
+.Komponente hinzufügen - Meeting-Formular: Schritteinstellungen
+|===
+|Feld |Typ |Beschreibung
+
+|Mitteilung
+|Optional
+|Eine allgemeine Ankündigung, die in der Liste der Generalversammlungen zu sehen sein wird.
+
+|Kommentare aktiviert
+|Optional
+|Ob Sie Kommentare in den Meetings haben möchten.
+|===
+
+== Neues Meeting erstellen
+
+=== Bürgertreffen
+
+Meetings können von Teilnehmern erstellt werden, wenn die Einstellung "Teilnehmer können Meetings erstellen" ausgewählt ist.
+
+If a participant belongs to a xref:admin:participants/groups.adoc[user group], then they will be able to create meetings as that group also.
+
+image:components/meetings/new_meeting_form_frontend01.png[Neues Meetingformular erstellen (frontend)]
+image:components/meetings/new_meeting_form_frontend02.png[Neues Meetingformular erstellen (frontend)]
+
+
+.Meeting erstellen - Frontend Formular
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Wie lautet der Titel dieses Meetings.
+
+|Beschreibung
+|Benötigt
+|Eine Beschreibung dessen, was in diesem Treffen diskutiert wird, wie die Themen.
+
+|Typ
+|Benötigt
+|Wählen Sie eine Option zwischen "Persönlich", "Online" oder "Stand"
+
+|Adresse
+|Erforderlich, wenn der Besprechungstyp "In-Person" oder "Stand" ist
+|Adresse: Wird vom Geocoder verwendet, um den Standort zu finden
+
+|Standort
+|Benötigt
+|Lage: Nachricht an die Benutzer, die den Ort angeben, um ihn zu treffen
+
+|Standorthinweise
+|Optional
+|Standorthinweise: Zusätzliche Informationen. Beispiel: das Stockwerk des Gebäudes
+
+|URL für Online-Meetings
+|Optional
+|Welche URL wird das Meeting abgehalten.
+
+|Embedded-iframe für diese URL anzeigen
+|Optional
+|Gibt an, ob das Iframe für diese Videokonferenz-URL eingebettet ist oder nicht. Nur wenige Dienste erlauben das Einbetten (z. YouTube, Twitch...)
+
+|Startzeit
+|Benötigt
+|Welcher Tag und Zeitpunkt wird das Meeting beginnen. Erwartetes Format: tt/mm/yyy hh:ii
+
+|Endzeit
+|Benötigt
+|Welcher Tag und Zeitpunkt wird das Meeting beginnen. Erwartetes Format: tt/mm/yyy hh:ii
+
+|Kategorie
+|Optional
+|Welche Kategorie hat das Meeting. Wird zum Filtern in der Besprechungsliste verwendet.
+
+|Registrierungstyp
+|Benötigt
+|Wählen Sie eine Option zwischen "Registrierung deaktiviert", "Auf dieser Plattform" oder "Auf einer anderen Plattform"
+
+|Verfügbare Plätze für dieses Meeting
+|Erforderlich wenn "Registrierungstyp" "Auf dieser Plattform" ist
+|Wie viele Plätze sind für dieses Meeting verfügbar? Lassen Sie es auf 0 wenn Sie unbegrenzte Plätze zur Verfügung haben
+
+|Registrierungsbedingungen
+|Erforderlich wenn "Registrierungstyp" "Auf dieser Plattform" ist
+|Welche Bedingungen für die Teilnahme an der Veranstaltung müssen die Teilnehmer akzeptieren, um sich zu registrieren oder an der Sitzung teilzunehmen. Spezifisch für "Bürgertreffen"
+
+|Registrierungs-URL
+|Erforderlich wenn "Registrierungstyp" "Auf einer anderen Plattform" ist
+|Muss eine URL sein. Link, um auf den externen Dienst zu gehen, den Sie für die Registrierung verwenden.
+
+|Meeting erstellen als
+|Erforderlich, wenn der Teilnehmer zu einer Gruppe gehört
+|With which identity they want to create this meeting: as their user or as a group that they are reprensenting?
+|===
+
+Nach der Erstellung des Meetings können die Teilnehmer auch xref:components/meetings/close.adoc[close] bearbeiten.
+
+=== Offizielle Meetings
+
+image:components/meetings/new_meeting_form_backend.png[Neues Meetingformular erstellen (backend)]
+
+
+.Meeting erstellen - Backend-Formular
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Wie lautet der Titel dieses Meetings.
+
+|Beschreibung
+|Benötigt
+|Eine Beschreibung dessen, was in diesem Treffen diskutiert wird, wie die Themen.
+
+|Typ
+|Benötigt
+|Wählen Sie eine Option zwischen "Persönlich", "Online" oder "Stand"
+
+|Adresse
+|Erforderlich, wenn der Besprechungstyp "In-Person" oder "Stand" ist
+|Adresse: Wird vom Geocoder verwendet, um den Standort zu finden
+
+|Standort
+|Benötigt
+|Lage: Nachricht an die Benutzer, die den Ort angeben, um ihn zu treffen
+
+|Standorthinweise
+|Optional
+|Standorthinweise: Zusätzliche Informationen. Beispiel: das Stockwerk des Gebäudes
+
+|URL für Online-Meetings
+|Optional
+|Welche URL wird das Meeting abgehalten.
+
+|Embedded-iframe für diese URL anzeigen
+|Optional
+|Gibt an, ob das Iframe für diese Videokonferenz-URL eingebettet ist oder nicht. Nur wenige Dienste erlauben das Einbetten (z. YouTube, Twitch...)
+
+|Startzeit
+|Benötigt
+|Welcher Tag und Zeitpunkt wird das Meeting beginnen. Erwartetes Format: tt/mm/yyy hh:ii
+
+|Endzeit
+|Benötigt
+|Welcher Tag und Zeitpunkt wird das Meeting beginnen. Erwartetes Format: tt/mm/yyy hh:ii
+
+|Kategorie
+|Optional
+|Welche Kategorie hat das Meeting. Wird zum Filtern in der Besprechungsliste verwendet.
+
+|Registrierungstyp
+|Benötigt
+|Wählen Sie eine Option zwischen "Registrierung deaktiviert", "Auf dieser Plattform" oder "Auf einer anderen Plattform"
+
+|Verfügbare Plätze für dieses Meeting
+|Erforderlich wenn "Registrierungstyp" "Auf dieser Plattform" ist
+|Wie viele Plätze sind für dieses Meeting verfügbar? Lassen Sie es auf 0 wenn Sie unbegrenzte Plätze zur Verfügung haben
+
+|Registrierungs-URL
+|Erforderlich wenn "Registrierungstyp" "Auf einer anderen Plattform" ist
+|Muss eine URL sein. Link, um auf den externen Dienst zu gehen, den Sie für die Registrierung verwenden.
+
+|Privates Meeting
+|Optional
+|Überprüfen Sie, ob das Meeting nicht für alle Besucher sichtbar sein soll. Spezifisch auf "Offizielle Treffen".
+
+|Transparent
+|Optional
+|Ähnlich zu "Private Meeting", überprüfen Sie, ob das Meeting für alle Besucher sichtbar sein sollte, aber sie sollten nicht in der Lage sein
+teilzunehmen. Spezifisch auf "Offizielle Treffen". Spezifisch auf "Offizielle Treffen".
+
+|Registrierungs-E-Mail anpassen
+|Optional
+|Möchten Sie eine Nachricht in der Registrierungs-E-Mail hinzufügen. Spezifisch auf "Offizielle Treffen".
+
+|Benutzerdefinierte Anmeldedaten per E-Mail
+|Erforderlich, wenn "Registrierungs-E-Mail anpassen" überprüft wurde
+|Der Inhalt der angepassten E-Mail. Dieser Text erscheint in der Mitte der Registrierungsbestätigungs-E-Mail. Nur
+nach dem Registrierungscode. Spezifisch auf "Offizielle Treffen".
+|===
+
+Sie können auch *Dienste* innerhalb eines Meetings definieren. Dies sind Metadaten, die es zum Beispiel erlauben Kinder zu kommunizieren, wenn es
+einen Platz für Gehörlose, Übersetzungen usw. gibt. Sie können mehrere Dienste innerhalb eines Meetings nutzen.
+
+
+.Meeting erstellen - Dienste
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Titel des Dienstes.
+
+|Beschreibung
+|Optional
+|Beschreibung des Dienstes.
+|===
+
+== Aktionen
+
+=== Bürgertreffen
+
+
+.Aktionen - Bürgertreffen
+|===
+|Icon |Name |Definition
+
+|image:action_preview.png[Vorschau Symbol]
+|Vorschau
+|Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
+
+|image:action_permissions.png[Berechtigungs-Symbol]
+|Berechtigungen
+|Um die Berechtigungen dieses Treffens zu verwalten, abhängig von der Überprüfung, die ein Teilnehmer hat. Ermöglicht einem Administrator,
+zu konfigurieren, der einem Meeting *beitritt* kann.
+|===
+
+=== Offizielle Meetings
+
+
+.Aktionen - Offizielle Treffen
+|===
+|Icon |Name |Definition
+
+|image:action_publish.png[Icon veröffentlichen]
+|Veröffentlichen
+|Das Meeting öffentlich anzeigen.
+
+|image:action_publish.png[Icon zurückziehen]
+|Zurückziehen
+|Das Meeting nicht öffentlich anzeigen.
+
+|image:action_preview.png[Vorschau Symbol]
+|Vorschau
+|Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
+
+|image:action_duplicate.png[Icon duplizieren]
+|Duplicate
+|Ermöglicht einem Administrator, ein Meeting zu duplizieren.
+
+|image:action_registrations.png[Registrierungs-Symbol]
+|xref:admin:components/meetings/registrations.adoc[Registrations]
+|Erlaubt festzulegen, wer sich für die Teilnahme am Meeting registrieren kann.
+
+|image:action_edit.png[Icon bearbeiten]
+|Bearbeiten
+|Formular für ein Meeting bearbeiten. Es ist das gleiche Formular wie "Neues Meeting erstellen".
+
+|image:action_agenda.png[Agenda-Symbol]
+|xref:admin:components/meetings/agenda.adoc[Agenda]
+|Hinzufügen der Themen, die in der Sitzung diskutiert werden.
+
+|image:action_list.png[Umfrage-Symbol]
+|xref:admin:components/meetings/polls.adoc[Polls]
+|Um die Umfragen für dieses Online-Meeting zu verwalten.
+
+|image:action_close.png[Icon schließen
+|xref:admin:components/meetings/close.adoc[Close]
+|Ermöglicht dem Administrator das Meeting zu schließen und zusätzliche Informationen hinzuzufügen.
+
+|image:action_folder.png[Ordner-Symbol]
+|Ordner
+|Zur Klassifizierung von Anhängen.
+
+|image:action_attachments.png[Anhänge Symbol]
+|Anhänge
+|Dokumente, die mit dem Meeting in Verbindung stehen.
+
+|image:action_permissions.png[Berechtigungs-Symbol]
+|Berechtigungen
+|Um die Berechtigungen dieses Treffens zu verwalten, abhängig von der Überprüfung, die ein Teilnehmer hat. Ermöglicht einem Administrator,
+zu konfigurieren, der einem Meeting *beitritt* kann.
+
+|image:action_delete.png[Icon löschen
+|Löschen
+|Diesen Termin löschen.
+|===
+
+== Besprechungsfunktionen
+
+Es gibt verschiedene Funktionen, die in Meetings aktiviert werden können, wie zum Beispiel:
+
+* xref:admin:components/meetings/registrations.adoc[Registrations]: um zu verwalten, wie Partikelpant sich registrieren kann, um an der Sitzung teilzunehmen.
+* xref:admin:components/meetings/agenda.adoc[Agenda]: um die Themen zu sehen, die in der Sitzung innerhalb von Minuten diskutiert werden.
+* xref:admin:components/meetings/polls.adoc[Polls]: für eine schnelle Abstimmung während eines Online-Meetings.
+* xref:admin:components/meetings/close.adoc[Close]: zum Hinzufügen des Abschlussberichts über das, was im Meeting diskutiert wurde.
+
+== Online-Meetings
+
+Abhängig vom Moment und der Konfiguration des Meetings kann es verschiedene Nachrichten geben, die den Teilnehmern angezeigt werden.
+
+. Wenn die "Online Meeting URL" nicht gesetzt ist, wird es eine Nachricht geben, die besagt, dass "Link bald verfügbar"
+image:components/meetings/online_meeting_available_soon.png[Online Meeting bald verfügbar]
+. Wenn die "Online Meeting URL" gesetzt ist und ein paar Minuten vor Beginn des Meetings, die Message sagt "Der Link zum Beitritt
+, das Meeting wird einige Minuten vor dem Start verfügbar sein"
+image:components/meetings/online_meeting_available_before. ng[Online Meeting verfügbar bevor es beginnt]
+. Wenn die "Online Meeting URL" gesetzt ist und die Startzeit des Meetings angekommen ist, dann wird es eine Nachricht geben, die
+besagt, dass "das Meeting gerade stattfindet" mit einem Link, um dem Meeting beizutreten.
+image:components/meetings/online_meeting_happening.png[Online Meeting verfügbar bevor es beginnt]
