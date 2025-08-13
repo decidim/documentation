@@ -1,0 +1,67 @@
+= Weltraumadministratoren
+
+Sie können Benutzern mit speziellen Rechten in einem Raum Berechtigungen erteilen
+, damit sie nur auf einige der Verwaltungsseiten in diesem Raum zugreifen können.
+Diese Rollen sind Administratoren, Moderatoren, Mitarbeiter oder Bewerter.
+
+* Administratoren: Sie können den Raum administrieren und die Raumeinstellungen ändern.
+* Kollaboratoren: Sie können den Raum und seine Komponenten vor der Veröffentlichung sehen und die Raum-Einstellungen.
+Sie können nichts ändern.
+* Moderatoren: Sie können den gemeldeten Inhalt des Bereichs sehen und ausblenden oder enthüllen.
+* Valuatoren: Sie können Vorschläge bewerten. Wird von partizipativen Budgeting-Prozessen genutzt.
+
+Um sie im Untermenü des Bereichs einzuladen, gehen Sie zu *Space-Admins* und klicken Sie auf *Neuer Space-Admin*. Dies hängt von der Art des Bereichs
+ab, dass Sie zum Beispiel bei partizipatorischen Prozessen *Prozessadmins* und *Neuer Prozessadmin*.
+
+== Neues Raum Admin-Formular
+
+image:spaces/admins_form.png[Neues Raum-Admin-Formular]
+
+
+.Neues Raum Admin-Formular
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Wie lautet der Name des neuen Admins.
+
+|E-Mail
+|Benötigt
+|What is the email of the new admin, so they can receive the invitation.
+
+|Rolle
+|Benötigt
+|Welche Rolle hat dieser Administrator im partizipatorischen Prozess? Kann jeder von Administrator, Kollaborator, Moderator oder Valuator sein.
+|===
+
+== Rollen
+
+=== Administratoren
+
+Ein Raum-Administrator kann den Raum verwalten und die Raum-Einstellungen ändern. Es kann auch neue Weltraumadministratoren einladen.
+
+image:spaces/admins_role_admin01.png[Process administrators view 01]
+
+image:spaces/admins_role_admin02.png[Process administrators view 02]
+
+=== Mitarbeiter
+
+Ein Raummitarbeiter kann erst den Raum sehen, bevor er veröffentlicht wird.
+
+image:spaces/admins_role_collaborator.png[Prozesskollaboratorenansicht]
+
+=== Moderatoren
+
+Ein Moderator kann den gemeldeten Inhalt des Raumes überprüfen und ihn ausblenden oder enthüllen.
+
+image:spaces/admins_role_moderator.png[Prozessmoderatorenansicht]
+
+=== Prozessbewerter
+
+Ein Raumbewerter kann die Vorschläge des Raumes überprüfen. They can:
+
+* den Status der Vorschläge ändern, indem sie angenommen oder abgelehnt werden
+* fügen Sie den Vorschlägen einen monetären Wert hinzu, so dass sie mit der Haushaltskomponente abgestimmt werden können.
+
+image:spaces/admins_role_valuator.png[Prozess-Bewertung ansicht]
