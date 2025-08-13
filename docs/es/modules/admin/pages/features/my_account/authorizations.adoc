@@ -1,23 +1,23 @@
-= Authorizations
+= Autorizaciones
 
-In this section participants will be able to review their Authorizations and see some metadata, like when it was granted
-or the status of the authorization.
+En esta sección los participantes podrán revisar sus autorizaciones y ver algunos metadatos, como cuando se le concedió
+o el estado de la autorización.
 
-It depends on how it's configured for the organization, as depending in the context (like normative or laws) it could work
-in different ways. For more information about Authorizations see xref:admin:participants/authorizations.adoc[authorizations
-in admin manual] and xref:customize:authorizations.adoc[authorizations in customize guide].
+Depende de cómo esté configurado para la organización, ya que dependiendo del contexto (como normativo o leyes) podría funcionar
+de diferentes maneras. Para más información sobre Autorizaciones vea xref:admin:participants/authorizations.adoc[authorizations
+in admin manual] y xref:customize:authorizations.adoc[autorizaciones en personalizar guía].
 
 image:features/my_account/authorizations.png[Authorizations]
 
-To go to this section:
+Para ir a esta sección:
 
-. Sign in as a participant
-. Click in the name of the participant in the header
-. Click in "My account"
-. Click in "Authorizations" in the sidebar
+. Inicia sesión como participante
+. Haga clic en el nombre del participante en la cabecera
+. Haz clic en "Mi cuenta"
+. Haga clic en "Autorizaciones" en la barra lateral
 
-For any given authorization, you can see the following information:
+Para cualquier autorización dada, puede ver la siguiente información:
 
-* If it's not finished, when the authorization process started
-* If it has finished and has been granted, the date when it was granted
-* If the authorization provides it, some metadata, such as the scope of the authorization
+* Si no ha terminado, cuando se inició el proceso de autorización
+* Si ha terminado y se ha concedido, la fecha en que se le concedió
+* Si la autorización lo proporciona, algunos metadatos, como el alcance de la autorización
