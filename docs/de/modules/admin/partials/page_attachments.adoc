@@ -1,0 +1,110 @@
+= Anhänge
+
+== Understand the basics
+
+Anhänge erlauben es einem Administrator, statische Dateien in einen Raum hochzuladen.
+
+Wenn ein Raum gestartet wird, Es ist wichtig, den Bürgern so viele Informationen wie möglich über sie zur Verfügung zu stellen, damit sie mit Wissen teilnehmen können.
+That is why it is helpful to add files, documents, images with relevant information.
+
+These documents can be grouped in *Folders*. Zum Beispiel könnten für einen partizipatorischen Prozess der Umgestaltung eines Quadrats Verzeichnisse mit Informationen über mögliche Verwendungen, Pläne, Wirtschaftsinformationen usw. erstellt werden.
+
+They can be found on the space xref:admin:spaces/processes/landing_page.adoc[landing page] when the content block is enabled.
+
+image:spaces/attachments.png[Anhänge in der öffentlichen Schnittstelle anzeigen]
+
+=== How to find it?
+
+To create and manage attachments, click the *Attachments* item in the left navigation bar of any participatory space.
+
+image:spaces/attachments_admin.png[View the attachments in the administration interface]
+
+There, you are able to manage the attachments and folders, configure them, add new ones, etc.
+
+== Konfiguration
+
+=== Einen neuen Anhang erstellen
+
+To create a new attachment, click the "New attachment" button.
+
+image:spaces/attachments_new_form.png[Neues Anhang-Formular erstellen]
+
+.Anhang erstellen
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Anhang oder Bildname
+|Benötigt
+|Was ist der Titel für diesen Anhang.
+
+|Bestellposition
+|Optional
+|Which order it has in relation to the other attachments. Eine niedrigere Zahl bedeutet eine höhere Priorität. For instance, if you have two categories, "Attachment a" with weight "10" and "Attachment b" with weight "0" then "Attachment b" will be first when ordering.
+
+|Beschreibung
+|Benötigt
+|A long description explaining what this attachment is about.
+
+|Ordner
+|Optional
+|Zu welchem Ordner dieser Anhang gehört.
+
+|Datei
+|Benötigt
+|Datei hochladen. Anleitung für Datei: Muss ein Bild oder ein Dokument sein. Maximum file size: 10 MB. Erlaubte
+-Dateierweiterungen hängen von Ihrer Serverkonfiguration ab.
+|===
+
+=== Neuen Ordner erstellen
+
+image:spaces/attachments_folders_admin.png[View the folders in the administration interface]
+
+To create and manage attachments folders, click the *Folders* tab.
+
+image:spaces/attachments_new_folder_form.png[Erstellen eines neuen Ordners für Dateiformen]
+
+.Ordner erstellen
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Name des Ordners
+
+|Bestellposition
+|Optional
+|Which order it has in relation to the other folders. Eine niedrigere Zahl bedeutet eine höhere Priorität. For instance, if you have two folders, "Folder a" with weight "10" and "Folder b" with weight "0" then "Folder b" will be first when ordering.
+
+|Beschreibung
+|Benötigt
+|Eine lange Beschreibung, die erklärt, worum es in diesem Ordner geht.
+|===
+
+=== Manage attachments
+
+You can find all the attachments on the list in the administration panel, with:
+
+* *Title*: title of the attachment, given when creating or editing it.
+* *Folder*: folder where the attachment is stored.
+* *Type*: extension type of the attachment.
+* *Size*: size of the attachment in bytes.
+
+You can also access the folders list by clicking the "Folders" tab on top of the attachments list.
+
+=== Aktionen
+
+.Components actions in component list
+[cols="10h,20h,~"]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Edit icon]
+|Bearbeiten
+|To edit the name, description, order position and the folder of the attachment.
+
+|image:icons/action_delete.png[Delete icon]
+|Löschen
+|To delete the attachment.
+|===
