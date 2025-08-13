@@ -1,0 +1,27 @@
+= Abonnements
+
+La plupart des contenus de Decidim permettent de les suivre. Cela signifie que vous recevrez xref:features/notifications.adoc[notifications]
+de l'activité faite par ce que vous suivez.
+
+Vous pouvez contrôler ces notifications dans les paramètres xref:features/my_account/notifications_settings.adoc[de votre compte].
+
+L'activité des choses que vous suivez est visible dans votre xref:features/my_public_profile/timeline.adoc[profile timeline].
+
+Pour avoir suivi une chose:
+
+. Naviguez vers ce que vous voulez suivre.
+. Cliquez sur le bouton « Suivre ».
+image:button_follow.png[Bouton de suivi]
+. Vous verrez disparaître le bouton « Suivre » et le bouton « Arrêter de suivre ».
+
+Pour ne plus suivre une chose:
+
+. Naviguez vers ce que vous voulez ne plus suivre.
+. Cliquez sur le bouton "Arrêter de suivre".
+image:button_stop_following.png[Arrêter de suivre le bouton]
+. Vous verrez disparaître le bouton « Arrêter de suivre » et le bouton « Suivre ».
+
+Les administrateurs suivent par défaut tous les nouveaux espaces qui sont créés dans la plate-forme Decidim.
+
+Un participant peut également suivre d'autres participants. Ceci est public et est visible dans les sections de profil
+xref:features/my_public_profile/follows.adoc[follows] et xref:features/my_public_profile/followers.adoc[followers].
