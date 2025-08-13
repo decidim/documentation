@@ -1,0 +1,23 @@
+= Dashboard
+
+Zum ersten Mal als Admin auf eine Decidim-Plaform zugreifen, erhalten Sie eine Einladungs-E-Mail, damit Sie die Einrichtung Ihres Kontos mit Ihrem Nicknamen, Namen und Passwort beenden können.
+
+Sobald Sie fertig sind und Sie sich eingeloggt haben, können Sie auf das Admin-Fenster zugreifen, beginnend mit der Dashboard-Seite. Dazu müssen Sie auf Ihren Benutzernamen klicken und auf "Admin-Dashboard" klicken.
+
+image::admin_dashboard_menu.png[Decidim Admin Dashboard in user menu]
+
+Hier haben Sie eine Zusammenfassung der letzten Aktivitäten der Plattform.
+
+image::admin_dashboard.png[Decidim Admin Dashboard]
+
+Du hast drei Blöcke:
+
+1. Aktivität: Teilnehmer und Administratoren, die sich letzten Monat eingeloggt hatten, letzte Woche und letzter Tag.
+1. Metriks: die Grafik für die Entwicklung mehrerer Dinge innerhalb von Decidim:
+* Teilnehmer
+* Vorschläge
+* Kommentare
+* Meetings
+* Akzeptierte Vorschläge
+* Ergebnisse
+1. Admin-Log: letzte Aktionen von Administrator-Benutzern in der Plattform.
