@@ -1,0 +1,27 @@
+= Introduction
+
+Déployer Decidim signifie prendre en compte toutes les activités qui jouent un rôle dans la configuration de la plate-forme et le déploiement des processus participatifs. Acquérir des connaissances dans l'administration de Decidim permet de contrôler des questions fondamentales telles que :
+
+* configurer un processus participatif
+* activer une consultation et recevoir des votes
+* modération de la plateforme
+* gérer les textes légaux associés (conformément à la politique de confidentialité)
+* gestion des autorisations des administrateurs
+* la surveillance et la vérification des organisations
+
+Aucun de ces aspects n'est strictement technique, mais ils impliquent une série de décisions politiques sur la manière dont nous voulons que Decidim soit, quels messages et contenus il doit contenir, quelle doit être la politique de modération des commentaires et des débats et, surtout, comment une plate-forme participative spécifique doit être et quelles fonctions elle doit être active. C’est pourquoi il est essentiel de comprendre les implications socio-techniques de l’administration et de la gestion de la plateforme Decidim lorsqu’il s’agit de déployer la plate-forme.
+
+Pour comprendre comment Decidim fonctionne, nous devons distinguer xref:spaces.adoc[*espaces*] et xref:components.adoc[*components*].  Les espaces participatifs sont les canaux par lesquels les citoyens peuvent participer lorsque des décisions publiques sont prises. Ce sont des processus participatifs, des initiatives, des consultations et des assemblées.
+Tandis que les composantes participatives sont des mécanismes qui permettent l'interaction entre les utilisateurs de la plate-forme et les différents espaces participatifs. Celles-ci comprennent des réunions, des pages, des propositions et des enquêtes.
+
+image:introduction.png[Espaces et composants]
+
+Par conséquent, un espace participatif en tant que processus participatif, aux différentes étapes, peut inclure plusieurs éléments tels que les réunions en face à face, les propositions, les sondages et les résultats et le suivi de ceux-ci.
+
+image:introduction_process.png[Composants dans un processus participatif]
+
+Ainsi, les espaces participatifs sont configurés en définissant (et en configurant) les composants qu'ils vont avoir. Il est important de garder à l'esprit que ces composantes participatives et les différentes fonctions se répètent dans les différents espaces, en offrant de nombreuses opportunités pour la configuration des différents espaces. Cela simplifie l'apprentissage car une fois qu'un espace a été configuré, il est alors plus facile de configurer un autre.
+
+Cette section fournit une description complète de la façon de configurer la plate-forme Decidim pour tout type d'organisation et comment configurer, gérer et administrer les différents processus participatifs. Une description a été donnée sous forme de didacticiel, pour aider à comprendre les tâches administratives, à suivre les champs littéraux de Decidim et à enfermer des captures d'écran pour faciliter leur interprétation.
+
+La gestion (administration) de la plate-forme Decidim est relativement simple et intuitive et aucune connaissance spécifique des technologies de l’information n’est requise. Les administrateurs d'une plate-forme Decidim, en d'autres termes, ceux qui ont l'autorisation nécessaire pour gérer la plate-forme, peut configurer la plate-forme de manière générale (images, pages d'information, etc.). ) et de gérer les différents processus participatifs (configuration, édition, analyse et conclusion).
