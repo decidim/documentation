@@ -1,0 +1,29 @@
+= Empreinte digitale
+
+Bien que la plate-forme doive afficher la version xref:admin:features/versions. doc[Versions] pour presque tous les contenus, il serait
+encore possible de manipuler le contenu en éditant directement la base de données.
+
+Étant donné l'atténuation de ce risque, la plate-forme montre une empreinte digitale pour certains domaines importants, par exemple un organisme de proposition et un titre.
+
+image:features/fingerprint/modal.png[Vérifier le modal]
+
+Son but est de fournir un moyen de donner un « reçu » informel à un participant pour qu'il puisse détecter des manipulations. Une empreinte digitale est
+une représentation hachée du contenu. Il est utile de s'assurer que le contenu n'a pas été altéré, car une seule modification
+donnerait une valeur totalement différente. Il est calculé à l'aide d'un algorithme de hachage SHA256. Afin de le répliquer
+vous-même, vous pouvez utiliser un http://www.md5calc.com/sha256[calculateur MD5 en ligne] et copier-coller les données source.
+
+== Vérifier l'empreinte digitale
+
+. Aller au contenu que vous voulez vérifier l'empreinte digitale
+. Cliquez sur le lien "Vérifier l'empreinte digitale" dans la barre latérale
+image:features/fingerprint/sidebar.png[Vérifier le lien d'empreinte dans la barre latérale]
+. Suivez les instructions modales
+
+image:features/fingerprint/md5calc.png[capture d'écran MD5calc.com]
+
+Il est possible de vérifier l'empreinte digitale avec d'autres outils, comme l'outil en ligne de commande sha256sum.
+
+[source,bash]
+----
+echo -n '{"body":{"en":"<p><strong>**Is your feature request related to a problem? Please describe.**</strong></p><p>It would be useful to set a character limit on questionnaire answers to provide guidance for users regarding how long their answers should be.</p><p><br></p><p><strong>**Describe the solution you\'d like**</strong></p><p>To have a number input field next to each question in the admin, labeled \\"Character limit\\", by default set to zero (no limit), which determines the maximum characters the user answers to those questions can have.</p><p><br></p><p><strong> **Describe alternatives you\'ve considered** </strong></p><p>Another possibility could be to define this globally for the questionnaire, setting the character limit for each type of question.</p><p><br></p><p><strong>**Additional context** </strong></p><p>-</p><p><br></p><p><strong> **Could this issue impact on users private data?** </strong></p><p>No</p><p><br></p><p><strong> **Funded by**</strong></p><p>Fundació Bosch i Guimpera</p>"},"title":{"en":"Maximum characters for questionnaire text answers"}}' | sha256sum
+----
