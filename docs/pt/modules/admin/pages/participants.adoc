@@ -1,29 +1,41 @@
-= Participants
+= Participantes
 
-Sometimes as an administrator you'll need to make certain tasks with participants, among them:
+== Understand the basics
 
-* To give permissions to other administrators so they can manage platform's content
-* To verify user groups (organizations or collectives)
-* To verify participants
-* To recognize that a participant has a special status in the platform, with Officializations
-* To authenticate that a person has the right to vote, with Authorizations
-* To contact a participant
+The participants tab allow you to make certain tasks with participants, among them:
 
-You can access this section on the main sidebar of the admin panel.
+* To manage access rights to the platform administration
+* To contact participants
+* To manage participants access to specific spaces
+* To certify the identity of specific participants
+* To certify the authenticity of user organizations or collectives
 
-image:participants_menu.png[Participants menu]
+== Configuração
 
-Once you're in you can see all the different kind of participants and actions that you can do:
+To access the Participants configuration panel, go in the administration panel and click the "Participants" item in the administration navigation bar.
 
-image:participants_sidebar_menu.png[Participants sidebar menu]
+image::participants/participants_menu.png[Participants menu]
+
+There, you first see the list of administrators of the platform.
+
+image::participants/participants_sidebar_menu.png[Participants sidebar menu]
+
+In the secondary navigation panel, you can see all the participants configuration possibilities:
 
 * xref:admin:participants/admins.adoc[Admins]
 * xref:admin:participants/groups.adoc[Groups]
 * xref:admin:participants/participants.adoc[Participants]
 * xref:admin:participants/impersonations.adoc[Impersonations]
-** xref:admin:participants/verifications_conflicts.adoc[Verifications conflicts]
-* xref:admin:participants/reported_users.adoc[Reported users]
+** xref:admin:participants/verifications_conflicts.adoc[Conflito de Verificações]
 * xref:admin:participants/authorizations.adoc[Authorizations]
-** xref:admin:participants/authorizations/identity_documents.adoc[Identity documents]
-** xref:admin:participants/authorizations/code_postal_letter.adoc[Code by postal letter]
-** xref:admin:participants/authorizations/census.adoc[Organization's census]
+** xref:admin:participants/authorizations/identity_documents.adoc[Documentos de identidade]
+** xref:admin:participants/authorizations/code_postal_letter.adoc[Código por carta postal]
+** xref:admin:participants/authorizations/census.adoc[Cenário da organização]
+
+Some of those items might not appear in this menu, because they aren't enabled.
+To check how to enable them, go on the missing item documentation article.
+
+== Exemplos
+
+You want to add your colleagues so they can edit the platform.
+You want to set specific flows for participants to be able to participate in a specific participatory space.
