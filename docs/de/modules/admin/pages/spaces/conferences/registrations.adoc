@@ -1,0 +1,12 @@
+= Anmeldungen
+
+Als Administrator einer Konferenz können Sie die Anmeldungen für die Konferenz von der Plattform aus verwalten.
+
+Dafür haben Sie folgende Admin-Abschnitte:
+
+. xref:admin:spaces/conferences/registrations/types.adoc[**Registrierungstypen**] erlaubt es Ihnen, festzulegen, welche Art der Registrierung der Teilnehmer
+hat. Zum Beispiel, wenn es eine Reihe von Preisen je nach Teilnehmer sind Studenten oder Arbeitnehmer.
+. xref:admin:spaces/conferences/registrations/users.adoc[**Benutzerregistrierungen**] ermöglicht es Ihnen, die Anfragen zur Teilnahme an der Konferenz zu bestätigen.
+. xref:admin:spaces/conferences/registrations/invites.adoc[**Einladungen**] erlaubt es Ihnen, Teilnehmer zur Konferenz einzuladen.
+. xref:admin:spaces/conferences/registrations/certificates.adoc[**Certificates of Attendance**] ermöglicht Ihnen die Konfiguration und den Versand von Zertifikaten
+der Teilnahme im PDF-Format an Personen, die zur Konferenz gegangen sind.
