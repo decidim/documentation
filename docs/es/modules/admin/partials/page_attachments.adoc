@@ -1,77 +1,110 @@
-= Attachments
+= Adjuntos
 
-Attachments allow an administrator to upload static files to a space.
+== Understand the basics
 
-When a space is launched, it is important to provide citizens with as much information as possible about them so that they can participate with knowledge. That is why it is helpful to add files (Attachments) with the information that is considered relevant.
+Los archivos adjuntos permiten a un administrador subir archivos estáticos a un espacio.
 
-Optionally, these documents can be grouped in *Folders*. For example, for a participatory process of remodeling a square, folders could be created with information about possible uses, with plans, with economic information, etc.
+Cuando se lanza un espacio, es importante proporcionar a los ciudadanos toda la información posible sobre ellos para que puedan participar con conocimiento.
+That is why it is helpful to add files, documents, images with relevant information.
 
-They can be found on the Space homepage:
+These documents can be grouped in *Folders*. Por ejemplo, para un proceso participativo de remodelación de un cuadrado, se podrían crear carpetas con información sobre posibles usos, con planes, con información económica, etc.
 
-image:spaces/attachments_folder.png[View the folder attachments in the public interface]
+They can be found on the space xref:admin:spaces/processes/landing_page.adoc[landing page] when the content block is enabled.
 
-image:spaces/attachments.png[View the attachments in the public interface]
+image:spaces/attachments.png[Ver los archivos adjuntos en la interfaz pública]
 
-== Create a new attachment
+=== How to find it?
 
-image:spaces/attachments_admin.png[View the attachments in the admin interface]
+To create and manage attachments, click the *Attachments* item in the left navigation bar of any participatory space.
 
-For creating a new attachment of a space:
+image:spaces/attachments_admin.png[View the attachments in the administration interface]
 
-. Sign in as administrator
-. Go to the space section in the sidebar
-. Click on the space Edit action
-. Click on the Attachments link in the sidebar
-. Click on the "New attachment" button
+There, you are able to manage the attachments and folders, configure them, add new ones, etc.
 
-image:spaces/attachments_new_form.png[Create a new attachment form]
+== Configuración
 
+=== Crear un nuevo archivo adjunto
 
-.Create attachment
+To create a new attachment, click the "New attachment" button.
+
+image:spaces/attachments_new_form.png[Crear un nuevo formulario adjunto]
+
+.Crear archivo adjunto
+[cols="20h,10h,~"]
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Attachment or image name
-|Required
-|What is the title for this attachment.
+|Adjunto o nombre de imagen
+|Requerido
+|¿Cuál es el título de este archivo adjunto?
 
-|Weight
-|Optional
-|Which order will it have in relation to the other attachments. Having a lower number means a higher priority. For instance, if you have two categories, "Attachment a" with weight "10" and "Attachment b" with weight "0", then "Attachment b" will be first when ordering.
+|Posición del pedido
+|Opcional
+|Which order it has in relation to the other attachments. Tener un número más bajo significa una prioridad mayor. For instance, if you have two categories, "Attachment a" with weight "10" and "Attachment b" with weight "0" then "Attachment b" will be first when ordering.
 
-|Description
-|Required
-|A long description explaining what this file is about.
+|Descripción
+|Requerido
+|A long description explaining what this attachment is about.
 
-|Folder
-|Optional
-|Which folder this attachment belongs to.
+|Carpeta
+|Opcional
+|A qué carpeta pertenece este archivo adjunto.
 
-|File
-|Required
-|Upload the file. Guidance for file: Has to be an image or a document. For images, use preferrably landscape images, the
-service crops the image. For CSV files, the separator between columns must be a comma (","). Maximum file size: 10MB. Allowed
+|Fichero
+|Requerido
+|Subir el archivo. Guía para el archivo: Debe ser una imagen o un documento. Maximum file size: 10 MB. Allowed
 file extensions depends in your server configuration.
 |===
 
-== Create a new folder
+=== Crear una nueva carpeta
 
-image:spaces/attachments_new_folder_form.png[Create a new folder for attachments form]
+image:spaces/attachments_folders_admin.png[View the folders in the administration interface]
 
+To create and manage attachments folders, click the *Folders* tab.
 
-.Create folder
+image:spaces/attachments_new_folder_form.png[Crear una nueva carpeta para el formulario de adjuntos]
+
+.Crear carpeta
+[cols="20h,10h,~"]
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Name
-|Required
-|Name of the folder
+|Nombre
+|Requerido
+|Nombre de la carpeta
 
-|Weight
-|Optional
-|Which order will it have in relation to the other folders. Having a lower number means a higher priority. For instance, if you have two folders, "Folder a" with weight "10" and "Folder b" with weight "0", then "Folder b" will be first when ordering.
+|Posición del pedido
+|Opcional
+|Which order it has in relation to the other folders. Tener un número más bajo significa una prioridad mayor. For instance, if you have two folders, "Folder a" with weight "10" and "Folder b" with weight "0" then "Folder b" will be first when ordering.
 
-|Description
-|Required
-|A long description explaining what this folder is about.
+|Descripción
+|Requerido
+|Una descripción larga que explica de qué trata esta carpeta.
+|===
+
+=== Manage attachments
+
+You can find all the attachments on the list in the administration panel, with:
+
+* *Title*: title of the attachment, given when creating or editing it.
+* *Folder*: folder where the attachment is stored.
+* *Type*: extension type of the attachment.
+* *Size*: size of the attachment in bytes.
+
+You can also access the folders list by clicking the "Folders" tab on top of the attachments list.
+
+=== Acciones
+
+.Components actions in component list
+[cols="10h,20h,~"]
+|===
+|Icono |Nombre |Definición
+
+|image:icons/action_edit.png[Edit icon]
+|Editar
+|To edit the name, description, order position and the folder of the attachment.
+
+|image:icons/action_delete.png[Delete icon]
+|Eliminar
+|To delete the attachment.
 |===
