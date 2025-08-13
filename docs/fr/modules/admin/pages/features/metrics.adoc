@@ -1,0 +1,15 @@
+= Métriques
+
+NOTE: Vous recherchez comment activer cette fonctionnalité techniquement ? Allez sur xref:develop:metrics.adoc[Metrics in Developers guide]
+
+Avec Metrics, les participants peuvent voir l'évolution dans le temps de certaines ressources, telles que les propositions, les soutiens, les candidats, les suivants, les participants, les propsoals acceptés, les commentaires, etc. Vous pouvez voir un exemple réel de ceci dans https://meta.decidim.org/processes/roadmap/all-metrics[Processus de feuille de route Metadecidim].
+
+Pour que cela fonctionne, il doit être d'abord xref:develop:metrics.adoc[configuré techniquement] et aussi activé par le réglage dans l'espace participatif (case à cocher `Afficher les métriques`).
+
+Cette section sera alors visible dans la page de destination de l'espace.
+
+image:features/metrics/example.png[Exemple de métriques]
+
+En cliquant sur "Afficher toutes les métriques", les visiteurs peuvent voir d'autres métriques et télécharger ces données au format CSV.
+
+image:features/metrics/page.png[Metrics page]
