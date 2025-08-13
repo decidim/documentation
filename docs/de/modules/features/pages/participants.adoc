@@ -1,0 +1,53 @@
+= Teilnehmer
+
+:page-partial:
+
+*Teilnehmer* von Decidim können in drei verschiedene Kategorien gruppiert werden:
+
+* *Besucher* haben Zugang zu allen Inhalten der Plattform, ohne sich registrieren zu müssen oder Informationen zur Verfügung zu stellen.
+* *Registriert* Teilnehmer können Vorschläge und Kommentare einreichen, sich für Meetings anmelden, Inhalte bestätigen, anderen Teilnehmern folgen und Mitteilungen, Erwähnungen und private Nachrichten erhalten.
+Benutzer können sich *direkt* auf der Plattform oder über Gateways anderer *sozialer Netzwerke* registrieren (Facebook, Twitter oder Google+). Um sich direkt zu registrieren, müssen Benutzer ein E-Mail-Konto und ein Passwort mit dem Benutzerkonto verknüpfen.
+ Registrierte Teilnehmer können auch ihr Konto amtlich machen (d.h. ihr Benutzername wird von einem speziellen Symbol begleitet, das sie wirklich angibt, wer sie sich auf ihrem Profil befinden).
+* *Verified* Teilnehmer können Entscheidungen treffen. Decidim bietet verschiedene Möglichkeiten, diese Überprüfung durchzuführen.
+
+Administratoren können *Berechtigungen verwalten* für *registrierte* Benutzer und *überprüft* Benutzer selektiv verwalten. Zum Beispiel kann _proposal creation_ sowohl für registrierte als auch verifizierte Benutzer aktiviert werden, aber _supports to proposals_ nur für verifizierte Benutzer.
+
+== Öffentliche Registrierung von administrativen Aktivitäten
+
+Die manuelle Prüfung der Teilnehmer, sowie andere administrative Maßnahmen können Verwundbarkeit schaffen oder die Administratoren in die Lage versetzen, die Plattform auf missbräuchliche Weise zu nutzen. Um es zu vermeiden, enthält Decidim ein *öffentliches Register der administrativen Aktivitäten*, damit diese Aktionen öffentlich und transparent geprüft werden können.
+
+== Benutzerprofil und persönliche Einstellungen
+
+Es gibt eine **Benutzer-Profil-Seite **auf der die Teilnehmer **Änderungen an ihren Daten vornehmen können**(wie E-Mail-Konto, Passwort etc.). , laden und aktivieren Sie ein *avatar* Bild, setzen Sie Benachrichtigungen oder löschen Sie ihr Konto.
+
+Auf der Benutzer-Profilseite können Teilnehmer *zusätzliche Informationen* hinzufügen, um Interessen und Fähigkeiten einzubeziehen, freiwillig und durch Auswahl des Niveaus der Sichtbarkeit dieser Informationen. Dadurch können persönliche Benachrichtigungen gesendet werden und Teilnehmer können für Kooperationen mit anderen übereinstimmen.
+
+== Überwachung und Benachrichtigungen
+
+Teilnehmer erhalten *automatisierte Benachrichtigungen* zu dem Inhalt, den sie erstellt haben: Antworten auf Kommentare und Kommentare zu ihren Vorschlägen sowie die Ergebnisse ihrer Vorschläge (ob angenommen oder abgelehnt).
+
+Neben automatisierten Benachrichtigungen können sich die Teilnehmer dazu entschließen, jedem Element des Systems **zu folgen** (andere Vorschläge, Ergebnisse, Prozesse, Assemblies, Initiativen, Gruppen oder Benutzer usw.) zu folgen. , und erhalten Benachrichtigungen.
+
+== Kommunikation zwischen Teilnehmern
+
+**Sofortnachrichten **können an Teilnehmer über die Plattform gesendet werden, die eine E-Mail-Benachrichtigung erhalten.
+
+*Erwähnungen* können auch im Kommentarbereich jedem registrierten Benutzer hinzugefügt werden und eine Benachrichtigung wird automatisch versendet.
+
+== Benutzergruppen
+
+Teilnehmer können sich bei der Plattform als Mitglieder einer oder mehrerer Organisationen/Kollektive anmelden. Sobald die Organisation und der Mitgliedsstatus überprüft wurden, können die Teilnehmer Aktionen durchführen (Vorschläge machen, Kommentare einreichen usw.). , mit ihrem Benutzer oder mit dem Organisationsnamen.
+
+Benutzergruppen können auch Benutzerberechtigungen und Administrationsrollen verwalten, die Gruppen zugewiesen werden sowie private Diskussionsräume oder Informationen beispielsweise unter Gruppennutzern, die an einer persönlichen Sitzung teilgenommen haben, austauschen. [Funktion fehlt]
+
+== Engagement
+
+Decidim hat eine Reihe von Funktionen, die auf _gamify_ der Plattform ausgerichtet sind, um eine wachsende Anzahl von Teilnehmern anzuziehen und zu interessieren*, Neben der Förderung von Praktiken, die die demokratische Qualität und kollektive Intelligenz in der Partizipation fördern [das Spielsystem wird für 2018Q2-3, AjB-Lote1] erwartet.
+
+Das Gamifizierungssystem umfasst zwei Modi, einen für die Nutzer und den anderen für Vorschläge.
+
+* Der **benutzerzentrierte **Modus beinhaltet ein *Punktesystem* basierend auf mehreren Kriterien (Grad der Detailliertheit des Benutzerprofils, Anzahl der Einladungen an andere auf der Plattform, Anzahl der unterbreiteten und kommentierten Vorschläge, Anzahl der Kommentare, Anzahl der erhaltenen Bestätigungen, Anzahl der Follower, usw.
+
+Die Kombination dieser und anderer Indikatoren dient der Generierung von Glücksspielrouten für jeden Nutzer und der Definition von Themen wie: die meisten teilnehmenden Personen im Distrikt Führung in Diskussionen und Debatten usw.
+
+* Gamification *konzentriert sich auf Vorschläge/Initiativen* erlaubt Promoter, Unterzeichner und Follower um die Interaktion mit ihnen zu fördern, indem mehrere *Metrik* integriert werden (Anzahl der Male, dass der Vorschlag in sozialen Netzwerken geteilt wird Grad der Kontroversen (Anzahl der positiven und negativen Kommentar), Qualität der Beratungen (Tiefe der Beobachtung), Anzahl der Treffer, usw.
