@@ -1,0 +1,113 @@
+= Groupes de processus
+
+Un groupe de processus s'avère utile pour subdiviser les grands processus participatifs en sous-processus selon un critère,
+par exemple le xref:admin:scopes. doc[scope] de chaque processus.
+
+À titre d'exemple, vous pouvez voir le https://www.decidim.barcelona/processes_groups/4[Plan de voisinage de la Mairie de Barcelone, Pla de Barris].
+Il s'agit d'un plan de choc de 150 millions d'euros qui vise à réduire les inégalités au sein de la ville. Il y a 10 processus connexes, un pour chaque quartier impliqué.
+
+image::processes_group_example.png[Participatory process group example]
+
+== Nouveau formulaire de groupe de processus
+
+Pour créer un nouveau groupe de processus :
+
+. Se connecter en tant qu'administrateur
+. Aller à la section Processus dans la barre latérale
+. Cliquez sur le lien des groupes de processus dans la barre latérale
+. Cliquez sur le bouton "Nouveau groupe de processus"
+. Remplissez le formulaire
+
+image::processes_group_list.png[Participatory process groups list]
+
+image::processes_group_new_form.png[New participatory process group form]
+
+
+.Nouveau formulaire de groupe de processus participatif : Informations générales
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Titre du groupe de processus participatif. Par exemple, "Budget participatif".
+
+|Description
+|Obligatoire
+|Une longue explication de votre processus participatif.
+
+|Processus connexes
+|Facultatif
+|Quels sont les processus qui sont liés à celui-ci? They will be used for populating
+the Content Blocks in the Landing page of this Process group. Pour en choisir plusieurs, vous devez
+utiliser la fonction *ctrl*.
+
+|Image
+|Facultatif
+|Image qui sera utilisée dans les cartes de présentation de ce groupe de processus. Orientation pour l'image :
+De préférence une image de paysage qui n'a pas de texte. Le service récolte l'image.
+Taille maximale du fichier : 10 Mo. Extensions de fichier autorisées : jpeg jpg png
+|===
+
+
+.Nouveau formulaire de groupe de processus participatif : métadonnées
+|===
+|Champ |Type |Description
+
+Hashtag
+site web
+
+|Groupe de promoteurs
+|Facultatif
+|Informations affichées dans le bloc de contenu des métadonnées du processus.
+
+|Zone d'organisation
+|Facultatif
+|Informations affichées dans le bloc de contenu des métadonnées du processus.
+
+|Métadonnées du périmètre d'application
+|Facultatif
+|Informations affichées dans le bloc de contenu des métadonnées du processus.
+
+|Qui participe
+|Facultatif
+|Informations affichées dans le bloc de contenu des métadonnées du processus.
+
+|Ce qui est décidé
+|Facultatif
+|Informations affichées dans le bloc de contenu des métadonnées du processus.
+
+|Comment est-il décidé
+|Facultatif
+|Informations affichées dans le bloc de contenu des métadonnées du processus.
+|===
+
+
+.Nouvelle forme de groupe de processus participatif : Visibilité
+|===
+|Champ |Type |Description
+
+|Promu
+|Facultatif
+|Cochez cette case si vous voulez que le processus ait plus de visibilité dans la liste publique Processus . Il sera également visible dans le bloc de contenu
+ParticpipatoryProcess dans la configuration xref:admin:homepage.adoc[Homepage]. Ceci est accessible dans l'action btn:[Edit] dans un processus.
+|===
+
+== Page d'accueil
+
+L'une des principales fonctionnalités d'un groupe de processus est de pouvoir configurer la page de chargement, via les blocs de contenu, tout comme
+la page d'accueil générale de la plate-forme. This means that you can enable or disable different sections of the landing page and also
+configure some fo these sections.
+
+image::processes_group_landing.png[Participatory process group landing page]
+
+* Titre, description et hashtag
+* Métadonnées
+* Bouton Image, texte et Appel à l'action. Configurable.
+* Propositions Vous pouvez configurer comment les éléments seront triés : par le plus récent ou aléatoire.
+* Résultats. Vous pouvez configurer comment les éléments seront triés : par le plus récent ou aléatoire.
+* Événements à venir
+* Statistiques
+* Processus participatifs
+* Premier bloc HTML
+* Deuxième bloc HTML
+* Troisième bloc HTML
