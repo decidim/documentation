@@ -1,0 +1,18 @@
+= Gruppen
+
+In diesem Abschnitt können die Teilnehmer sehen, zu welchen Gruppen sie gehören.
+
+NOTE: Willst du eine neue Gruppe erstellen? Gehen Sie zur xref:admin:features/my_public_profile.adoc[Mein öffentliches Profil] Seite.
+
+image:features/my_account/groups.png[Groups]
+
+Um zu diesem Abschnitt zu gehen:
+
+. Als Teilnehmer anmelden
+. Klicken Sie im Namen des Teilnehmers in der Kopfzeile
+. Klicken Sie in "Mein Konto"
+. Klicken Sie in "Gruppen" in der Seitenleiste
+
+Hier kannst du sehen, an welchem Datum die Gruppe erstellt wurde und welcher Status sie hat (`anstehend` oder `überprüft`).
+
+Lesen Sie mehr über xref:admin:participants/groups.adoc[Groups im Admin-Handbuch].
