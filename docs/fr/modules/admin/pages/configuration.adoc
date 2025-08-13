@@ -1,0 +1,53 @@
+= Configuration
+
+Dans cette page, vous pouvez configurer les paramètres généraux de Decidim.
+
+image::admin_configuration.png[Decidim Admin Configuration]
+
+Il s'agit de :
+
+* **Nom**. Requis. Le nom de la plate-forme. Visible au titre, aux e-mails, etc.
+* **Social**. Gestionnaires sociaux pour différents réseaux sociaux. Visible au pied de page de chaque page. Voici :
+** Twitter
+** Facebook
+** Instagram
+** YouTube
+** GitHub
+
+image::settings_configuration_social.png[Social networks configuration in Decidim]
+
+* **Locale par défaut**. Requis.
+* **Fuseau horaire**. Requis. Dans quel fuseau horaire est votre organisation. Utilisé par des choses comme des calendriers en réunions.
+* **Préfixe de référence**. Requis.
+* **Activer les badges**. Que vous vouliez ou non que vos participants aient des badges comme mécanisme de gamification, par exemple pour créer des propositions ou faire des commentaires.
+* **Activer les groupes**.  Que vous vouliez ou non que vos participants aient la possibilité de créer xref:participants/groups.adoc[Groupes d'utilisateurs]. Utile par exemple pour les associations ou autres collectifs.
+* **Activer l'éditeur de texte enrichi pour les participants**.  Que vous vouliez ou non que vos participants aient la possibilité d'avoir un éditeur https://fr.wikipedia.org/wiki/WYSIWYG[What You See Is What You Get (WYSIWYG)]. Dans certaines zones de texte, les participants pourront insérer des balises HTML en utilisant l'éditeur de texte riche.
+* **Envoyer une notification de bienvenue**. Si vous voulez ou non que vos participants reçoivent une notification lorsque leur premier compte a été créé. Si activé, vous pouvez personnaliser cette notification.
+** **Personnaliser la notification de bienvenue**.
+** **Objet de la notification de bienvenue**.
+** **Corps de notification de bienvenue**.
+
+.Notification de bienvenue
+====
+Bonjour {\{name}}, merci d'avoir rejoint {\{organization}} et bienvenue !
+
+Si vous voulez avoir une idée rapide de ce que vous pouvez faire ici, jetez un coup d'oeil à la section Aide .
+Une fois que vous l'avez lu, vous obtiendrez votre premier badge. Voici une liste de tous les badges que vous pouvez obtenir lorsque vous participez à {\{organization}}
+
+Enfin et surtout, rejoignez d'autres personnes, partagez avec eux l'expérience d'être engagé et de participer à {\{organization}}. Faites des propositions, des commentaires, des débats, réfléchissez à la manière de contribuer au bien commun, donnez des arguments pour convaincre, écouter et lire pour être convaincu, exprimez vos idées de manière concrète et directe, répondez avec patience et avec décision, défendez vos idées et gardez un esprit ouvert pour collaborer et rejoindre les idées d'autres personnes.
+====
+
+image::settings_configuration_welcome.png[Welcome notification configuration in Decidim]
+
+* **Conditions d'utilisation du corps de l'administrateur**. Quel message un utilisateur administrateur verra lors de l'accès pour la première fois au panneau d'administration.
+
+.Conditions d'utilisation de l'administrateur
+====
+CONDITIONS D'UTILISATION DE L'ADMIN
+
+Nous espérons que vous avez reçu la leçon habituelle de l'administrateur système local. Cela se résume généralement à ces trois choses:
+
+* Respectez la vie privée des autres.
+* Réfléchissez avant de cliquer.
+* Avec une grande puissance, il y a une grande responsabilité.
+====
