@@ -1,45 +1,45 @@
-= Media links
+= Enlaces multimedia
 
-Conferences can have a section called "Media and links". It shows a list of media files and links that are associated to the conference.
+Las conferencias pueden tener una sección llamada "Medios y enlaces". Muestra una lista de archivos multimedia y enlaces que están asociados a la conferencia.
 
-The media files are the files from the xref:admin:spaces/conferences/attachments.adoc[attachments] sections.
-The media links are defined in a section in the admin panel of the conference.
+Los archivos multimedia son los archivos de las secciones xref:admin:spaces/conferences/attachments.adoc[attachments].
+Los enlaces de medios están definidos en una sección en el panel de administración de la conferencia.
 
-image:spaces/conferences/media_links_frontend.png[Conferences media links (frontend)]
+imagen:espacios/conferencias/media_links_frontend.png[Conferencias enlaces multimedia (frontend)]
 
-== Create a new media link
+== Crear un nuevo enlace multimedia
 
-image:spaces/conferences/media_links_backend.png[Conferences media links]
+imagen:espacios/conferencias/media_links_backend.png[Conferencias enlaces medios]
 
-For creating a new media link of a conference:
+Para crear un nuevo enlace multimedia de una conferencia:
 
-. Sign in as administrator
-. Go to the conferences section in the sidebar
-. Click on the conference Edit action
-. Click on the "Media links" link in the sidebar
-. Click on the "New Media Link" button
-. Fill the form
+. Iniciar sesión como administrador
+. Ir a la sección de conferencias en la barra lateral
+. Haga clic en la acción de edición de conferencia
+. Haga clic en el enlace "Enlaces multimedia" en la barra lateral
+. Haga clic en el botón "Nuevo enlace multimedia"
+. Rellene el formulario
 
-image:spaces/conferences/new_media_link.png[Create a new conferences media link]
+image:spaces/conferences/new_media_link.png[Crear un nuevo enlace multimedia de conferencias]
 
 
-.New media link form
+.Nuevo formulario de enlace de medios
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Title
-|Required
-|The title of the link
+|Título
+|Requerido
+|El título del enlace
 
-|Link
-|Required
-|URL of the link
+|Enlace
+|Requerido
+|URL del enlace
 
-|Date
-|Required
-|Published date of the link
+|Fecha
+|Requerido
+|Fecha de publicación del enlace
 
-|Weight
-|Optional
-|Which order will it have in relation to the other links. Having a lower number means a higher priority. For instance, if you have two links, "Link a" with weight "10" and "Link b" with weight "0", then "Link b" will be first when ordering.
+|Peso
+|Opcional
+|Que orden tendrá en relación a los otros enlaces. Tener un número más bajo significa una prioridad mayor. Por ejemplo, si tienes dos enlaces, "Enlace a" con el peso "10" y "Enlace b" con el peso "0", entonces "Link b" será primero cuando se haga el pedido.
 |===
