@@ -1,0 +1,34 @@
+= Autorisation de recensement de l'organisation
+
+Le processus est le suivant:
+
+. Les administrateurs téléchargent un CSV avec les e-mails des participants acceptés
+. Les participants vont à ses comptes et demandent à être vérifiés
+. Seuls les participants avec un email dans ce fichier CSV peuvent être vérifiés
+
+NOTE: est-ce trop simple et vous avez besoin de plus de fonctionnalités liées aux importations de recensement CSV?
+Vérifiez toutes les autorisations CSV ou basées sur des fichiers dans notre https://decidim.org/modules/[Page Modules].
+
+== 1. Un administrateur télécharge le CSV des participants
+
+Dans le panneau d'administration, l'administrateur peut examiner la demande en allant dans la section « Recensement de l'organisation » dans la section « Participants ».
+
+image:authorizations_organization_census.png[Recensement de l'organisation dans le panneau d'administration]
+
+Une fois que le CSV est importé, l'administrateur peut voir combien de participants ont été importés. Ils peuvent également supprimer ce recensement
+importé.
+
+image:authorizations_organization_census_importé.png[CSV importé]
+
+== 2. Un participant demande à être vérifié
+
+By going to the authorization section in its profile, or by clicking on the action button if this permission is requested,
+a participant can request to be verified.
+
+image:authorizations_organization_census_account.png[Recensement de l'organisation dans les comptes des participants]
+
+== 3. Le participant est vérifié (ou pas)
+
+Après vérification, comme avec d'autres vérifications, ils peuvent le voir dans les paramètres de leur compte.
+
+image:authorizations_organization_census_verified.png[Vérifié par le recensement de l'organisation]
