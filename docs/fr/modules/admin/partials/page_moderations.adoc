@@ -1,0 +1,7 @@
+= Modération
+
+Les modérations à l'intérieur d'un espace fonctionnent comme xref:global_moderations.adoc[Modérations globales].
+
+The main difference is that if you can invite Moderators of this specific space in the
+xref:admin:spaces/processes/admins.adoc[space admins] section, so they only have access to the reports made for
+contents of this space.
