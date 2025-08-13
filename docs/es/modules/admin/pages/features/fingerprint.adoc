@@ -1,27 +1,27 @@
-= Fingerprint
+= Huella dactilar
 
-Although the platform should show the xref:admin:features/versions.adoc[Versions] for almost all of the contents, it'd be
-still possible to manipulate the content by directly editing the database.
+Aunque la plataforma debería mostrar xref:admin:features/versions. doc[Versions] para casi todos los contenidos, sería
+todavía posible manipular el contenido editando directamente la base de datos.
 
-As mitigation for this risk, the platform shows a fingerprint for some important fields, for instance, a proposal body and title.
+Como mitigación por este riesgo, la plataforma muestra una huella dactilar para algunos campos importantes, por ejemplo, un cuerpo de propuesta y un título.
 
-image:features/fingerprint/modal.png[Check fingerprint modal]
+image:features/fingerprint/modal.png[Comprobar la huella digital modal]
 
-Its goal is to provide a way to give an informal "receipt" to a participant to they can detect tampering. A fingerprint is
-a hashed representation of the content. It's useful to ensure the content hasn't been tampered with, as a single modification
-would result in a totally different value. It's calculated using a SHA256 hashing algorithm. In order to replicate it
-yourself, you can use a http://www.md5calc.com/sha256[MD5 calculator online] and copy-paste the source data.
+Su objetivo es proporcionar una manera de dar un "recibo" informal a un participante que pueda detectar manipulación. Una huella dactilar es
+una representación hashada del contenido. Es útil asegurarse de que el contenido no ha sido manipulado, ya que una sola modificación
+resultaría en un valor totalmente diferente. Se calcula utilizando un algoritmo de hashing SHA256. Para replicarlo
+usted mismo, puede utilizar http://www.md5calc.com/sha256[calculadora MD5 en línea] y copiar y pegar los datos de origen.
 
-== Check fingerprint
+== Comprobar huella digital
 
-. Go to the content that you want to check the fingerprint
-. Click in the "Check fingerprint" link in the sidebar
-image:features/fingerprint/sidebar.png[Check fingerprint link in sidebar]
-. Follow the modal instructions
+. Ir al contenido que desea comprobar la huella digital
+. Haz clic en el enlace "Comprobar huella dactilar" en la barra lateral
+image:features/fingerprint/sidebar.png[Comprueba el enlace de huella dactilar en la barra lateral]
+. Siga las instrucciones de la modal
 
-image:features/fingerprint/md5calc.png[MD5calc.com screenshot]
+imagen:features/fingerprint/md5calc.png[Captura de pantalla MD5calc.com]
 
-It's possible to check the fingerprint with other tools, such as the sha256sum command line tool.
+Es posible comprobar la huella digital con otras herramientas, como la herramienta de línea de comandos sha256sum.
 
 [source,bash]
 ----
