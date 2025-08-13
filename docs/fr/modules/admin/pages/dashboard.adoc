@@ -1,0 +1,23 @@
+= Tableau de bord
+
+Pour la première fois en accédant à une plaque Decidim en tant qu'Admin, vous recevrez un e-mail d'invitation pour terminer la configuration de votre compte avec votre pseudo, nom et mot de passe.
+
+Une fois que vous avez terminé et que vous êtes connecté, vous serez en mesure d'accéder au panneau d'administration, en commençant par la page du tableau de bord. Pour cela, vous devrez cliquer sur votre nom d'utilisateur et cliquer sur "Tableau de bord de l'administrateur".
+
+image::admin_dashboard_menu.png[Decidim Admin Dashboard in user menu]
+
+Ici, vous aurez un résumé de la dernière activité de la plateforme.
+
+image::admin_dashboard.png[Decidim Admin Dashboard]
+
+Tu auras trois blocs:
+
+1. Activité : participants et administrateurs qui se sont connectés le mois dernier, la semaine dernière et le jour dernier.
+1. Métriques : les graphiques pour l'évolution de plusieurs choses à l'intérieur de Decidim:
+* Participants
+* Propositions
+* Commentaires
+* Réunions
+* Propositions acceptées
+* Résultats
+1. Journal administrateur: dernières actions effectuées par les utilisateurs de l'administrateur de la plate-forme.
