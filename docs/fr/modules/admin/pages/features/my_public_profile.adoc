@@ -1,0 +1,18 @@
+= Mon profil public
+
+Chaque participant a un profil public qui montre des détails à son sujet et son activité sur le site Web.
+
+Pour aller à cette section :
+
+. Se connecter en tant que participant
+. Cliquez dans le nom du participant dans l'en-tête
+. Cliquez dans "Mon profil public"
+
+Les sections disponibles sous le profil public sont :
+
+* xref:admin:features/my_public_profile/timeline.adoc[Timeline]
+* xref:admin:features/my_public_profile/activity.adoc[Activity]
+* xref:admin:features/badges.adoc[Badges]
+* xref:admin:features/my_public_profile/follows.adoc[Follows]
+* xref:admin:features/my_public_profile/followers.adoc[Followers]
+* xref:admin:features/my_public_profile/groups.adoc[Groups]
