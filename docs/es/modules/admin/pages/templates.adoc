@@ -1,0 +1,38 @@
+= Plantillas
+
+== Understand the basics
+
+The templates tab allow you to create templates and to save time when managing your instance.
+You can create templates for three different items:
+
+* *Questionnaires*: for creating template surveys in the xref:admin:components/surveys.adoc[survey component]
+* *Block user messages*: for creating template justification for blocking xref:admin:moderations/reported_users.adoc[reported users]
+* *Proposal answers*: for creating template xref:admin:components/proposals/answers.adoc[answers to proposals]
+
+Once created, those templates are available to all the administrators, and help them manage the instance more efficiently.
+
+== Configuración
+
+To access the Templates configuration panel, go in the administration panel and click the "Templates" item in the administration navigation bar.
+
+image::templates/templates_menu.png[Pages: Access templates panel]
+
+There, you can start creating and managing:
+
+* xref:admin:templates/questionnaires.adoc[Questionnaires templates]
+* xref:admin:templates/block_users.adoc[Block user messages]
+* xref:admin:features/my_account/my_interests.adoc[My interests]
+
+image::templates/templates_questionnaires_list.png[Backend: templates panel]
+
+== Ejemplos
+
+At the end of each of the participatory processes you do, you want to collect the feedback of the participants.
+Creating a questionnaire template makes the survey creation quicker than re-creating the survey and its questions for each process.
+
+On some platforms, you can also have spam users, that you want to be able to block quickly for the same reason each time.
+Creating a justification template allow you to quickly choose this justification when blocking a spam user, rather than writing it
+again each time.
+
+Same goes for proposal answers, sometimes you want to give a same answer to a lot of different proposals. Creating a proposal
+answer template allows you and the processes administrators to manage proposals more efficiently.
