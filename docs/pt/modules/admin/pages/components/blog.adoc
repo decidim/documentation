@@ -1,145 +1,145 @@
-= Blog
+= Blogue
 
-The Blog component allows people to read multiple posts ordered by date.
+O componente Blog permite que pessoas leiam várias postagens ordenadas por data.
 
-Some examples of where this component was used:
+Alguns exemplos de onde este componente foi usado:
 
-* https://meta.decidim.org/processes/roadmap/f/247/[News in Propose new functionalities for Decidim software] in https://meta.decidim.org[Metadecidim]
+* https://meta.decidim.org/processes/roadmap/f/247/[Notícia em Propor novas funcionalidades para software Decidim] em https://meta.decidim.org[Metadecidim]
 
-image:components/blog/example01.png[Example of blog posts list]
-image:components/blog/example02.png[Example of a blog post]
+image:components/blog/example01.png[Exemplo de lista de postagens do blog]
+image:components/blog/example02.png[Exemplo de um post do blog]
 
-To configure the Blog component:
+Para configurar o componente blog:
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies" or "Conferences".
-. Go to components
-. Click on "Add component" button
-. Click on "Blog"
-. Fill the xref:_add_component[Add component] form
+. Iniciar sessão como administrador
+. Ir ao painel de administração
+. Na barra lateral principal, clique no botão para o espaço para o qual você deseja configurar o componente.
+Por exemplo, pode ser "Processos", "Assemblies" ou "Conferências".
+. Ir para componentes
+. Clique no botão "Adicionar componente"
+. Clique em "Blog"
+. Preencha o formulário xref:_add_component[Add component]
 
-== Add component
+== Adicionar componente
 
-image:components/blog/component.png[Add component form]
+image:components/blog/component.png[Adicionar formulário de componente]
 
 
-.Add component: Blog form
+.Adicionar componente: Formulário Blog
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Name
-|Required
-|What is the title of this component. For instance, "Blogs"
+|Nome:
+|Obrigatório
+|Qual é o título deste componente. Por exemplo, "Blogs"
 
-|Order position
-|Optional
-|Which order will it have in relation to the other blogs. Having a lower number means a higher priority.
-For instance, if you have two blogs, "Blog a" with weight "10" and "Blog b" with weight "0", then "Blog b" will be first when ordering.
-|===
-
-
-.Add component: Blog form - Global settings
-|===
-|Field |Type |Description
-
-|Announcement
-|Optional
-|A general announcement that'll be visible on the general blogs landing page.
-
-|Comments enabled
-|Optional
-|Whether you want to have comments in the meetings.
-
-|Comments max length
-|Optional
-|What is the characters limit that participants will have when making comments. Leave 0 for default value.
+|Posição do pedido
+|Opcional
+|Que ordem ela terá em relação aos outros blogs. Ter um número menor significa uma prioridade mais alta.
+Por exemplo, se você tem dois blogs, "Blog a" com peso "10" e "Blog b" com peso "0", em seguida o "Blog b" será o primeiro na ordenação.
 |===
 
-In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
-xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
 
-
-.Add component: Blogs form - Step settings
+.Adicionar componente: Formulário Blog - Configurações globais
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Announcement
-|Optional
-|A general announcement that'll be visible on the general blog landing page.
+|Anúncio
+|Opcional
+|Um anúncio geral que será visível na página inicial dos blogs.
 
-|Comments blocked
-|Optional
-|Whether you want to enable comments creation for this phase.
+|Comentários ativados
+|Opcional
+|Se você deseja ter comentários nas reuniões.
 
-|Endorsements enabled
-|Optional
-|Whether you want to enable endorsements for this phase.
-
-|Endorsements blocked
-|Optional
-|Whether you want to disable adding new endorsements for this phase.
+|Comprimento máximo de comentários
+|Opcional
+|Qual é o limite de caracteres que os participantes terão ao fazer comentários. Deixe 0 para o valor padrão.
 |===
 
-== Permissions
-
-An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
-certain actions in the blogs:
-
-* Comment
-* Endorse
-
-== Manage posts
-
-image:components/blog/manage_posts.png[Manage posts table]
-
-=== New post form
-
-image:components/blog/new_post.png[New post form]
+Nos casos em que o espaço que este componente será usado tem xref:admin:spaces/processes/phases. documento[Phases], por exemplo, no
+xref:admin:spaces/processes.adoc[Processos participativos], então você também pode definir diferentes comportamentos por Step.
 
 
-.New post form
+.Adicionar componente: Formulário de blogs - Configurações de etapa
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Create post as
-|Required
-|Participant account or user group that will be the author of the post.
+|Anúncio
+|Opcional
+|Um anúncio geral que será visível na página inicial do blog.
 
-|Title
-|Required
-|What is the title of this post.
+|Comentários bloqueados
+|Opcional
+|Se você quer habilitar a criação de comentários para esta fase.
 
-|Body
-|Required
-|What is the description of this post.
+|Endossos ativados
+|Opcional
+|Se você deseja habilitar endossos para esta fase.
+
+|Endossos bloqueados
+|Opcional
+|Se você deseja desativar a adição de novos endossos para esta fase.
 |===
 
-==== Actions
+== Permissões
+
+Um administrador pode escolher qual tipo de xref:Personalize :authorizations.adoc[Authorizations] um participante precisa ter que fazer
+certas ações nos blogs:
+
+* Comentar
+* Endossar
+
+== Gerenciar publicações
+
+image:components/blog/manage_posts.png[Gerenciar tabela de postagens]
+
+=== Novo formulário de publicação
+
+image:components/blog/new_post.png[Novo formulário de postagem]
 
 
-.Actions
+.Novo formulário de publicação
 |===
-|Icon |Name |Definition
+|Campo |tipo |Descrição:
 
-|image:action_edit.png[Edit icon]
-|Edit
-|Edit form for this post. It's the same form as "New post".
+|Criar publicação como
+|Obrigatório
+|Conta de usuário ou grupo de usuários que será o autor do post.
 
-|image:action_folder.png[Folder icon]
-|Folder
-|For classifying Attachments.
+|Título
+|Obrigatório
+|Qual é o título deste post.
 
-|image:action_attachments.png[Attachments icon]
-|Attachments
-|Documents that are related to the post.
+|Conteúdo
+|Obrigatório
+|Qual é a descrição deste post.
+|===
 
-|image:action_permissions.png[Permissions icon]
-|Permissions
-|To handle the permissions of this post, depending on the verification a participant has.
+==== Ações.
 
-|image:action_delete.png[Delete icon]
-|Delete
-|To delete this post.
+
+.Ações.
+|===
+|Ícone |Nome: |Definição
+
+|image:action_edit.png[Ícone de edição]
+|Alterar
+|Editar o formulário para esta publicação. É a mesma forma que "Nova publicação".
+
+|image:action_folder.png[Ícone da pasta]
+|pasta
+|Para classificar Anexos.
+
+|imagem:action_attachments.png[Ícone de anexos]
+|Anexos
+|Documentos relacionados ao post.
+
+|imagem:action_permissions.png[Ícone de permissões]
+|Permissões
+|Para manipular as permissões deste post, dependendo da verificação de um participante.
+
+|imagem:action_delete.png[Excluir ícone]
+|excluir
+|Para excluir esta publicação.
 |===
