@@ -1,10 +1,129 @@
-= Accountability
+= Responsabilidade
 
-The Accountability component allows people to follow project implementations. It works like a project management system built into the platform. It offers the following features:
+== Understand the basics
 
-* creating results that represent projects to be implemented
-* subdividing results into projects or sub-projects
-* defining and applying progress in implementation statuses (0% to 100% implemented) around their implementation
-* displaying the extent of the results’ implementation grouped by categories and scopes
+The accountability component allows participants to know the status of a project's implementation and to follow its evolution.
 
-Results, projects and statuses can be updated through a CSV (comma-separated values), or manually by the administration interface.
+This feature allows administrators to present a summary of the achievements decided upon in assemblies, during
+participatory processes, or any other space. Administrators create Results they can then categorize and link to proposals, meetings, or
+investment projects (for example, as part of a participatory budget).
+
+image::components/accountability/example01.png[Example of results list]
+
+Results can be closely monitored, with a history of modifications, a percentage of completion and milestones
+indicating their progress. The results, milestones, and states can be updated manually through the administration panel or through a CSV.
+
+image::components/accountability/example02.png[Example of a result]
+
+In this documentation section, you can find how to configure and manage all of those items:
+
+* xref:admin:components/accountability/results.adoc[Results]
+* xref:admin:components/accountability/statuses.adoc[Statuses]
+* xref:admin:components/accountability/milestone.adoc[Milestones]
+* xref:admin:components/accountability/import.adoc[Import and export results]
+
+== Configuração
+
+=== Create an accountability component
+
+To create an accountability component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
+
+image::components/accountability/component_accountability.png[Add accountability component button]
+
+Then:
+
+. Click on the "Components" item in the secondary menu
+. Click the "Add component" button
+. Select "Accountability"
+. Fill the component creation form
+
+You can still update this form and the configuration after creating the component, by clicking the
+image:icons/action_configure.png[Configure icon] in the components list.
+
+image::components/accountability/component.png[Add component form]
+
+.Accountability form
+[cols="20h,10h,~"]
+|===
+|Campo |tipo |Descrição:
+
+|Nome:
+|Obrigatório
+|Qual é o título deste componente. For instance "Accountability"
+
+|Posição do pedido
+|Opcional
+|The order of the component in relation with the other components. Ter um número menor significa uma prioridade mais alta.
+For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0"
+then "component b" is first when ordering.
+|===
+
+.Global settings
+[cols="20h,10h,~"]
+|===
+|Campo |tipo |Descrição:
+
+|Âmbitos ativados
+|Opcional
+|Check if you want to have xref:admin:settings/scopes.adoc[Scopes] filtering available in this component.
+
+|Escopo
+|Opcional
+|Which xref:admin:settings/scopes.adoc[Scope] does this component belongs to.
+
+|Comentários ativados
+|Opcional
+|Whether you want to have comments in the component.
+
+|Comprimento máximo de comentários
+|Opcional
+|The characters limit that participants have when making comments. Deixe 0 para o valor padrão.
+
+|Intro
+|Opcional
+|A general introduction that’ll be displayed on the accountability landing page.
+
+|Display progress
+|Opcional
+|Check it if you want a progress bar to be displayed on the results with aa progress level.
+|===
+
+.Step settings
+[cols="20h,10h,~"]
+|===
+|Campo |tipo |Descrição:
+
+|Comentários bloqueados
+|Opcional
+|Se você quer habilitar comentários para esta fase.
+|===
+
+=== Overview results per Taxonomy Filter.
+
+Use Taxonomy filters on results to offer participant a quick overview of project evolution per taxonomy.
+
+To do so:
+
+1. Configure a Taxonomy with some subitems and available for your current space
+1. Add a Taxonomy Filter
+1. Configure the component Globals Settings and add the filter you created
+1. See the public view. A button "View By: <Taxonomy name>" will appear.
+
+image::components/accountability/add_taxonomy_filter.png[Add taxonomy filter to your accountability component]
+
+image::components/accountability/grouped_by_taxonomy.png[Participant can now group result by taxonomy]
+
+=== Sub-results
+
+A result can sometimes be the product of some other results.
+For example, the results of "building 3 skate-parks in town" would use three sub-results, to monitor a detailed completion of the result.
+
+Create a sub-result by clicking on the plus-sign from the accountability list.
+To access the sub-results list, click on the main result title to get there.
+
+== Exemplos
+
+Below, you can find some links to examples Accountability components:
+
+* https://www.decidim.barcelona/processes/pam/f/8/[2016-2019 Municipal Action Plan in Decidim Barcelona]
+* https://ecrivons.angers.fr/processes/BP2022/f/411/[Results for 2022 participatory budget in Angers]
