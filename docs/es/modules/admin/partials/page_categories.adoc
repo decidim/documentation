@@ -1,56 +1,75 @@
-= Categories
+= Categorías
 
-Categories (and subcategories) are used for classifying resources inside of a space.
+== Understand the basics
+
+Las categorías (y subcategorías) se utilizan para clasificar los recursos dentro de un espacio.
 
 An administrator can define them, can be assigned to when creating resources, and then participants can filter the
-different resources by these categories. For instance, they can be set up in proposals, meetings and debates.
+different resources by these categories. For instance, they can be used in proposals, meetings, and debates.
 
-As an example of this mechanism in action you can see it in https://meta.decidim.org/processes/roadmap/f/122/[Propose new functionalities for Decidim software] process:
+. Administrators define categories in a space.
+. Participants can create resources and give them a category.
+. Participants can then filter by categories.
 
-. Administrators have defined the categories in the process.
-. Participants can create proposals that have one category.
-. Participants can filter by these categories and navigate among all the proposals.
+image::spaces/categories_sidebar.png[Filter categories in proposals]
 
-image:spaces/categories_sidebar.png[Filter categories in proposals]
+NOTE: Once a category is in use it can't be deleted, as there are resources that are linked to it.
 
-image:spaces/categories_form.png[Select a category when creating a proposal]
-
-NOTE: Once a category is in use it cannot be removed, as there are resources that are using it.
-
-Decidim has other ways to classify resources, for instance xref:admin:scopes.adoc[Scopes] and xref:admin:features/hashtags.adoc[Hashtags].
+Decidim has other ways to classify resources, for instance xref:admin:settings/scopes.adoc[Scopes] and
+xref:admin:features/social_features/hashtags.adoc[Hashtags].
 The main difference is that Categories can be defined in a given space, Scopes are global for all the platform, and Hashtags
-are defined by the participants.
+can be defined by the participants.
 
-Categories can be nested, meaning that a category can have subcategories.
+Las categorías pueden ser anidadas, lo que significa que una categoría puede tener subcategorías.
 
-== Create a new category
+== How to find it?
 
-For configuring a new category, go to the space admin panel and click on the "Categories" tab.
+To configure categories, click the *Categories* item in any participatory space.
 
-image:spaces/categories.png[View categories in a space admin page]
+image::spaces/categories.png[View categories in a space administration page]
 
-Then click in "Add category" and fill the form.
+== Crear una nueva categoría
 
-image:spaces/categories_new_form.png[Create a new category form]
+Click in "New category" button on the top right.
 
+imagen:spaces/categories_new_form.png[Crear un nuevo formulario de categoría]
 
-.Create category
+.Create category form
+[cols="20h,10h,~"]
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Name
-|Required
-|What is the name for this category.
+|Nombre
+|Requerido
+|¿Cuál es el nombre de esta categoría.
 
-|Weight
-|Optional
-|Which order will it have in relation to the other categories. Having a lower number means a higher priority. For instance, if you have two categories, "Category a" with weight "10" and "Category b" with weight "0", then "Category b" will be first when ordering.
+|Posición del pedido
+|Opcional
+|Which order it has in relation to the other categories. Tener un número más bajo significa una prioridad mayor. For instance, if you have two categories, "Category a" with weight "10" and "Category b" with weight "0" then "Category b" is first when ordering.
 
-|Description
-|Required
-|A long description explaining what this category is about.
+|Padres
+|Opcional
+|¿Cuál es la categoría padre.
+|===
 
-|Parent
-|Optional
-|What is the parent category.
+== Manage categories
+
+You can find all the categories on the list in the administration panel, with:
+
+* *Name*: name of the category, given when creating or editing it by the administrator.
+
+== Acciones
+
+.Categories actions in categories list
+[cols="10h,20h,~"]
+|===
+|Icono |Nombre |Definición
+
+|image:icons/action_edit.png[Edit icon]
+|Editar
+|To edit the name, the order position and the parent of the category.
+
+|image:icons/action_delete.png[Delete icon]
+|Eliminar
+|To delete the category. A category can't be deleted if it has resources attached to it.
 |===
