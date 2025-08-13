@@ -1,4 +1,4 @@
-= Amendments
+= Emendas
 
 Com o recurso da emenda, os participantes podem propor alterações a uma proposta já publicada.
 
@@ -8,87 +8,87 @@ Ele tem semelhanças com xref:components/propostas/collaborative_drafts. doc[Ras
 é que com emendas não há necessidade de confiar nas intenções dos outros autores como cada mudança é revisada e deve ser
 aprovado pelo autor da proposta original.
 
-image:components/proposals/amendments/amendment.png[Amendment of a proposal]
+image:components/propostas/alterações/alterações/alteração.png[Alteração de uma proposta]
 
 Para configurar alterações no componente das "propostas":
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Go to components
-. Click on "Add component" button
-. Click on "Proposals"
-. Check the "Amendments enabled" setting
-. Review and configure the following related settings: "Amendments Wizard help text" in global component settings and "Amendment creation enabled", "Amendment reaction enabled", "Amendment promotion enabled", and "Amendments visibility" in the step component settings.
-. Save the component
+. Iniciar sessão como administrador
+. Ir ao painel de administração
+. Na barra lateral principal, clique no botão para o espaço para o qual você deseja configurar o componente.
+Por exemplo, pode ser "Processos", "Assemblies", ou "Conferências"
+. Ir para componentes
+. Clique no botão "Adicionar componente"
+. Clique em "Propostas"
+. Verifique as definições "alterações habilitadas"
+. Revise e configure as seguintes configurações relacionadas: "Alterações texto de ajuda do Wizard" nas configurações globais de componentes e "Criação de alteração ativada", "Reacção de alteração permitida", "Promover a alteração é permitida" e "Visibilidade das alterações" nas configurações do componente da etapa.
+. Salvar o componente
 
-== How it works
+== Como funciona
 
-. A participant (Alice) has created a proposal
-. Another participant (Bob) has seen the proposal and wants to make some changes
-image:components/proposals/amendments/proposal_to_amend.png[]
-. Bob click on the "Amend proposal" button
-. Bob makes the changes in the "Create amendment draft" form
-image:components/proposals/amendments/create_amendment_draft.png[]
-. Bob checks if there is any similar amendment
-. Bob edits the amendment draft
-image:components/proposals/amendments/edit_amendment_draft.png[]
-. Bob publishes the amendment draft
-image:components/proposals/amendments/publish_amendment_draft.png[]
-. Anyone can see the amendment draft
-image:components/proposals/amendments/proposal_amendmed.png[]
-image:components/proposals/amendments/amendment_list.png[]
-image:components/proposals/amendments/amendment_view_side_by_side.png[]
-. It's also possible to filter the amended proposals
-image:components/proposals/amendments/amendment_list_filter.png[]
-. Alice receives a notification that Bob has proposed an amendment to her original proposal
-image:components/proposals/amendments/proposal_amendmed_notification.png[]
-. Alice can see the amendment proposal
-image:components/proposals/amendments/proposal_amendmed_to_review.png[]
-. Alice can review the amendment proposal
-image:components/proposals/amendments/proposal_amendmed_review.png[]
-. Alice can approve the amendment proposal
-image:components/proposals/amendments/proposal_amendmed_accepted.png[]
-. Anyone can see the final proposal
-image:components/proposals/amendments/proposal_amendmed_final.png[]
-image:components/proposals/amendments/proposal_amendmed_amendment_list.png[]
-. Anyone can see the versions history of the proposal
-image:components/proposals/amendments/proposal_amendmed_versions.png[]
+. Um participante (Licença) criou uma proposta
+. Outro participante (Bob) viu a proposta e quer fazer algumas alterações
+image:components/propostas/alterações/proposal_to_amend.png[]
+. Clique no botão "Alterar proposta"
+. Bob faz as alterações no formulário "Criar proposta de alteração"
+image:components/propals/amendments/create_amendment_draft.png[]
+. Bob verifica se há alguma alteração semelhante
+. Bob edita o rascunho da alteração
+image:components/propostas/alterações/edit_amendment_draft.png[]
+. Bob publica o rascunho da alteração
+image:components/propostas/alterações/publish_amendment_draft.png[]
+. Qualquer um pode ver o rascunho da emendação
+image:components/propostas/alterações/proposal_amendmed.png[]
+image:components/propostas/alterações/amendment_list.png[]
+image:components/proposals/amendments/alterment_view_side_by_side.png[]
+. Também é possível filtrar as propostas alteradas
+image:components/propostas/alterações/alterações/alterment_list_filter.png[]
+. Alice recebe uma notificação de que Bob propôs uma alteração à sua proposta original
+image:components/propostas/alterações/proposal_amendmed_notification.png[]
+. Alice pode ver a proposta de alteração
+image:components/propostas/alterações/proposal_amendmed_to_review.png[]
+. Alice pode revisar a proposta de alteração
+image:components/propostas/alterações/proposal_amendmed_review.png[]
+. Alice pode aprovar a proposta de alteração
+image:components/propostas/alterações/proposal_amendmed_accepted.png[]
+. Qualquer um pode ver a proposta final
+image:components/proposal / amendments/proposal_amendmed_final.png[]
+image:components/propals/alterments/proposal_change med_list.png[]
+. Qualquer um pode ver o histórico de versões da proposta
+image:components/propostas/alterações/propal_amendmed_versions.png[]
 
-== Relevant component settings
+== Configurações do componente relevante
 
 
-.Proposals component form - Settings related to amendments
+.Formulário de componente de propostas - Configurações relacionadas a alterações
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Amendments enabled
+|Alterações permitidas
 |Global
-|Check to enable xref:components/proposals/amendments.adoc[amendments] in proposals. Other settings visible when enabling one.
+|Marque para habilitar xref:components/propostas/amendments.adoc[amendments] em propostas. Outras configurações visíveis ao ativar uma.
 
-|Amendments Wizard help text
+|Texto de ajuda do Assistente
 |Global
-|What's the help text visible when creating new amendments.
+|Qual é o texto de ajuda visível ao criar novas alterações.
 
-|Amendment creation enabled
-|Step
-|Participant can amend proposals. See xref:components/proposals/amendments.adoc[Amendments].
+|Criação de alteração ativada
+|Passo
+|O usuário pode alterar propostas. Veja xref:components/propostas/amendments.adoc[Amendments].
 
-|Amendment reaction enabled
-|Step
-|Proposal's authors will be able to accept or reject Participant's emendations.
+|Reação da alteração habilitada
+|Passo
+|Os autores da proposta poderão aceitar ou rejeitar as emendações dos participantes.
 
-|Amendment promotion enabled
-|Step
-|Emandation authors will be able to promote to Proposal the rejected emendation.
+|Promoção de alteração ativada
+|Passo
+|Os autores de mandações poderão promover a proposta para a rejeição da emendação.
 
-|Amendments visibility
-|Step
-|Choose one of "Amendments are visible to all" or "Amendments are visible only to their authors"
+|Visibilidade das alterações
+|Passo
+|Escolha uma das "alterações são visíveis para todos" ou "as alterações são visíveis apenas para os seus autores" .
 |===
 
-== Promotion
+== Promoção
 
-If a proposal is rejected and the "Amendment promotion enabled" is enabled, then the author that have made the rejected
-amendment will be able to promote to a new proposal the rejected emendation.
+Se uma proposta for rejeitada e a "alteração promovida habilitada" estiver habilitada, então o autor que fizeram a emendação rejeitada
+será capaz de promover para uma nova proposta a emendação rejeitada.
