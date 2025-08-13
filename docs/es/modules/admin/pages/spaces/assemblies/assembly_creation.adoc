@@ -1,0 +1,263 @@
+= Assembly creation
+
+== Understand the basics
+
+Assemblies allow administrators to configure components inside a long-lasting space, with defined members. To start creating an assembly, when on the link:https://docs.decidim.org/en/develop/admin/spaces/assemblies#_manage_assemblies[assembly list], click the "New assembly" button at the top right of the page.
+
+The assembly creation form is divided into different sections that are detailed in the sections below.
+
+Once you create an assembly, you can see all the assembly configurations available in the secondary navigation panel:
+
+* xref:admin:spaces/assemblies/assembly_creation.adoc[About this assembly] (Here you can access and edit all the fields from the creation form.)
+* xref:admin:spaces/votings.adoc[Votings]
+* xref:admin:spaces/assemblblies/components.adoc[Components]
+* xref:admin:spaces/assemblblies/categories.adoc[Categories]
+* xref:admin:spaces/assemblblies/attachments.adoc[Attachments]
+* xref:admin:spaces/assemblblies/members.adoc[Members]
+* xref:admin:spaces/assemblblies/admins.adoc[Assembly admins]
+* xref:admin:spaces/assemblblies/private_participants.adoc[Participantes privados]
+* xref:admin:spaces/assemblblies/moderations.adoc[Moderations]
+
+== Configuración
+
+=== General information
+
+This section allows an admin to provide general information about the assembly: title, URL, and description.
+
+image::spaces/assemblies/assemblies_new_form_general_info.png[New assembly form general info section]
+
+.Nuevo formulario de asamblea: Información general
+[cols="20h,10h,~,~"]
+|===
+|Campo |Tipo |Descripción |Visibility
+
+|Título
+|Requerido
+|Title of the assembly: "General Committee" or "neighborhood city council" for example.
+|Visible in the card of the assembly on the homepage, the assemblies index, the navigation, and the "Hero image and CTA" landing page block.
+
+|Subtítulo
+|Requerido
+|Subtitle of the assembly.
+|Visible in the "Hero image and CTA" landing page block.
+
+|Posición del pedido
+|Requerido
+|Determines the order of the assembly when displayed in the processes index or homepage.
+|N/A
+
+|Slug URL
+|Requerido
+|Los slugs de URL se utilizan para generar las URLs que apuntan a este proceso. Solo acepta letras, números y guiones, y debe
+comenzar con una letra.
+|Visible in the URL of the assembly, for example https://example.org/assemblies/city_coucil.
+
+|Etiqueta
+|Opcional
+|Hashtag redirecting to the X social network.
+|Visible in the "Hero image and CTA" landing page block.
+
+|Breve descripción
+|Requerido
+|A short explanation of what your assembly is about.
+|Visible in the "Main data" landing page block.
+
+|Descripción
+|Requerido
+|A long explanation of what your assembly is about.
+|Visible in the "Main data" landing page block.
+
+|Propósito de acción
+|Opcional
+|The explanation of the assembly's goals.
+|Visible in the "Main data" landing page block.
+
+|Composición
+|Opcional
+|Who composes the assembly.
+|Visible in the "Main data" landing page block.
+
+|Organización interna
+|Opcional
+|How the assembly is organized.
+|Visible in the "Main data" landing page block.
+
+|Anuncio
+|Opcional
+|The text you enter here is shown to the user right below the process information.
+|Visible in the "Announcement" landing page block.
+|===
+
+=== Duración
+
+This section allows to provide information about the assembly's important dates.
+
+image::spaces/assemblies/assemblies_new_form_duration.png[New assembly form duration section]
+
+.Nueva forma de ensamblado: Duración
+[cols="20h,10h,~,~"]
+|===
+|Campo |Tipo |Descripción |Visibility
+
+|Fecha de creación
+|Opcional
+|When this assembly was created. Tienes un widget de calendario para elegir el día. Expected format: dd/mm/yyyy.
+|Visible in the "Dates metadata" landing page block.
+
+|Incluye el
+|Opcional
+|The date when this assembly was added to the instance. It does not necessarily have to be the same as the creation date. Expected format: dd/mm/yyyy.
+|Visible in the "Dates metadata" landing page block.
+
+|Duración
+|Opcional
+|If the duration of this assembly is limited, select the end date. Otherwise, it appears as indefinite. Expected format: dd/mm/yyyy.
+|Visible in the "Type and duration" landing page block.
+
+|Fecha de cierre
+|Opcional
+|Cuando se cerró esta asamblea. Expected format: dd/mm/yyyy.
+|Visible in the "Dates metadata" landing page block.
+
+|Cerrando fecha razón
+|Opcional
+|Por qué se cerró esta asamblea.
+|Not displayed on the landing page.
+|===
+
+=== Images
+
+image::spaces/assemblies/assemblies_new_form_images.png[New assembly form images section]
+
+.Nuevo formulario de ensamblado: Imágenes
+[cols="20h,10h,~"]
+|===
+|Campo |Tipo |Descripción
+
+|Imagen de inicio
+|Opcional
+|Image used in presentation cards of this process. Guía para el archivo: Debe ser una imagen o un documento.
+For images, landscape images are preferred, as the service crops the image. Maximum file size: 10 MB
+
+|Imagen de banner
+|Desaprobado
+|Use link:https://docs.decidim.org/en/develop/admin/spaces/assemblies/landing_page.html#_hero_image_and_cta[Hero image and CTA] content block on the landing page instead.
+|===
+
+=== Filters
+
+This section determines the filters available in the assembly, in the different components.
+Filters can then be enabled and configured in each components.
+
+image::spaces/assemblies/assemblies_new_form_filters.png[New assembly form filters section]
+
+.Nuevo formulario de ensamblado: Filtros
+[cols="20h,10h,~"]
+|===
+|Campo |Tipo |Descripción
+
+|Ámbitos habilitados
+|Opcional
+|Marca si quieres tener Filtrado de Ámbitos en esta Colmena.
+
+|Alcance
+|Opcional
+|Which xref:admin:settings/scopes.adoc[Scopes] this assembly belongs to.
+
+|Área
+|Opcional
+|Which xref:admin:settings/areas.adoc[Areas] this assembly belongs to.
+|===
+
+=== Metadatos
+
+This section allows to provide meta information about the assembly.
+
+image::spaces/assemblies/assemblies_new_form_metadata.png[New assembly form metadata section]
+
+.Nuevo formulario de ensamblado: Metadatos
+[cols="20h,10h,~"]
+|===
+|Campo |Tipo |Descripción
+
+|Lo que se decide
+|Opcional
+|The issue of the assembly; the object of what is decided.
+
+|Cómo se decide
+|Opcional
+|The decision making process inside the assembly.
+
+|Metadatos de ámbito
+|Opcional
+|Metadata on the assembly scope, if relevant.
+
+|Grupo promotor
+|Opcional
+|If a specific group is at the origin of the assembly, like a city direction, an association committee, etc.
+
+|Zona de la organización
+|Opcional
+|The organization domain or category, if relevant.
+
+|Quién participa
+|Opcional
+|Who are the authorized participants that can participate to the assembly.
+|===
+
+=== Visibility
+
+This section allows administrators to configure the process placement in the different pages and its publicity.
+
+image::spaces/assemblies/assemblies_new_form_visibility.png[New assembly form visibility section]
+
+.Nuevo formulario de ensamblado: visibilidad
+[cols="20h,10h,~"]
+|===
+|Campo |Tipo |Descripción
+
+|Montaje padre
+|Opcional
+|To which other assemblies this assembly belongs. Assemblies can be nested inside one another.
+
+|Resaltado
+|Opcional
+|Marca si quieres que la asamblea tenga más visibilidad en la lista pública de Colmenas. It's also visible in the "Highlighted
+Assemblies" Content Block in the xref:admin:settings/homepage.adoc[Homepage] configuration.
+
+|Espacio privado
+|Opcional
+|Check if this assembly should only be accessible by xref:admin:spaces/assemblies/private_participants.adoc[Private Participants].
+
+|Es transparente
+|Opcional
+|Check if this assembly is private but should be visible to all the participants. This means that other participants
+or visitors can see it but they can't participate in it.
+|===
+
+=== Other
+
+image::spaces/assemblies/assemblies_new_form_other.png[New assembly form other section]
+
+.Nuevo formulario de ensamblado: Otros
+[cols="20h,10h,~"]
+|===
+|Campo |Tipo |Descripción
+
+|Creado por
+|Opcional
+|Choose "City Council", "Public", or "Other" if you want to specify the name of the organization that created
+this assembly.
+
+|Tipo de ensamblado
+|Opcional
+|Which xref:admin:spaces/assemblies/types.adoc[Assembly type] is related to this assembly.
+
+|Procesos participativos relacionados
+|Opcional
+|Select other participatory processes related to this assembly.
+
+|Social
+|Opcional
+|Which social networks profile this assembly has. Can be X, Facebook, Instagram, YouTube, and/or GitHub.
+|===
