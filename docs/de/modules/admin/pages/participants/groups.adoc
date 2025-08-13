@@ -1,0 +1,74 @@
+= Benutzergruppen
+
+User groups are entities created by participants to represent a structure, a club, an association, etc.
+User groups can be managed by different administrators, and have several members.
+If an administrator verifies a user group, then all the user group administrators can participate in the name of the group.
+
+image::participants/user_group_frontend_show.png[Frontend: show a user group]
+
+== Enable / disable user groups
+
+Administrators can enable or disable user groups in the xref:admin:settings/configuration.adoc[Configuration] panel.
+
+When enabled, participants are able to create and manage groups from their profile.
+To learn more about how participants can do this, go to the xref:admin:features/participant_actions/my_public_profile.adoc[public profile] article.
+
+== Manage user groups
+
+When a participant creates a user group, it adds a line in the user groups list in the administration panel, with:
+
+* *Name*: name of the user group.
+* *Nickame*: nickame of the user group.
+* *Document number*: can be the identification number of the structure, like a company or association identification number.
+* *Phone*: phone number of the structure or the administrator of the user group.
+* *Participants count*: number of members of the user group.
+* *Created at*: date of the user group creation.
+* *State*: state of the verification, can only be pending, verified, or rejected.
+
+You can filter and sort this list by clicking the "Filter" button and the columns headers.
+You can also search for user groups by email, name, or nickname in the search bar.
+
+image::participants/admin_user_group_verification.png[Admin panel: user group verifications]
+
+A user group can have three states:
+
+* Pending: waiting for an answer from an administrator
+* Verified: an administrator verified the authenticity of this group
+* Rejected: an administrator decided this group was not authentic or compliant
+
+=== Aktionen
+
+.Aktionen
+[cols="10h,20h,~,~"]
+|===
+|Icon |Name |Definition |Condition
+
+|image:icons/action_verify.png[Verify icon]
+|Verify
+|To validate the verification of the user group.
+|Available when the user group state is pending or rejected.
+
+|image:icons/action_delete.png[Reject icon]
+|Reject
+|To reject the verification request of the user group.
+|Available when the user group state is pending or verified.
+|===
+
+=== Verify a group
+
+To verify a group, an administrator should verify that the group exists and is legitimate to have an entity on the platform.
+Administrator can call the group administrator on the phone number provided, or verify that the document number exists.
+
+After a group is verified, this is publicly visible in their nickname in the platform and there's a message in its profile:
+"This group is publicly verified, its name has been verified to correspond with its real name."
+
+image::participants/user_group_verified.png[User group: verified icon]
+
+=== Verify by CSV
+
+If you want to verify multiple user groups at once, you can do so with the "Verify via CSV" button.
+
+image::participants/admin_user_group_verification_csv.png[Admin panel: user group verifications CSV]
+
+There, you can upload a CSV file, with a unique column without headers, containing the user groups emails you want to verify.
+Only the groups that have confirmed their email and that have an email appearing in the CSV file will be verified.
