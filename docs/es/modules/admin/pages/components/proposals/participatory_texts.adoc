@@ -1,88 +1,88 @@
-= Participatory texts
+= Textos participativos
 
-This feature allows you to navigate the proposals as text. It's useful for discussing normatives, plans, or other kinds of texts.
+Esta característica le permite navegar las propuestas como texto. Es útil para discutir normativas, planes u otros tipos de textos.
 
-Every paragraph is split into a proposal, so it's possible to discuss it in a more granular way.
+Cada párrafo se divide en una propuesta, por lo que es posible debatirlo de una manera más granular.
 
-Some examples of where this feature was used are:
+Algunos ejemplos de donde se usó esta característica son:
 
-* https://concertation.greenpeace.fr/processes/vision-greenpeace/f/8/[Vision Greenpeace] in https://concertation.greenpeace.fr/[Greenpeace France Concertation]
-* https://www.decidim.barcelona/processes/PAM2020/f/3771/[Procés participatiu del Programa d'Actuació Municipal (PAM) 2020-2023] in https://www.decidim.barcelona/[Decidim Barcelona]
+* https://concertation.greenpeacee.fr/processes/vision-greenpeacee/f/8/[Vision Greenpeacee] en https://concertation.greenpeacee.fr/[Greenpeace France Concertation]
+* https://www.decidim.barcelona/processes/PAM2020/f/3771/[Participación del Programa de Actuación Municipal (PAM) 2020-2023] en https://www.decidim.barcelona/[Decidim Barcelona]
 
-image:components/proposals/participatory_texts/example01.png[Vision Greenpeace]
+imagen:components/proposals/participatory_texts/ejemplo01.png[Visión Verde]
 
-image:components/proposals/participatory_texts/example02.png[PAM 2020-2023 in Decidim Barcelona]
+imagen:components/proposals/participatory_texts/ejemplo02.png[PAM 2020-2023 en Decidim Barcelona]
 
-To configure the "Participatory texts" in proposals component:
+Para configurar los "Textos participativos" en el componente de propuestas:
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Go to components
-. Click on "Add component" button
-. Click on "Proposals"
-. Check the "Participatory texts enabled" setting
-. Save the component
-. Click in the "Participatory texts" button in the empty proposals component
+. Iniciar sesión como administrador
+. Ir al panel de administración
+. En la barra lateral principal, haga clic en el botón para el espacio para el que desea configurar el componente.
+Por ejemplo, podría ser "Procesos", "Colmenas" o "Conferencias"
+. Ir a los componentes
+. Haga clic en el botón "Añadir componente"
+. Haga clic en "Propuestas"
+. Marque la opción "Textos participantes activados"
+. Guardar el componente
+. Haga clic en el botón "Texto participativo" en el componente de propuestas vacías
 image:components/proposals/participatory_texts/manage_proposals.png[Manage proposals]
-. Click in the "Import document" button in the empty Preview participatory text panel
-image:components/proposals/participatory_texts/preview_participatory_text_empty.png[Preview empty participatory text]
-. Fill the xref:_add_document_form[Add document form]
-image:components/proposals/participatory_texts/add_document_form.png[Add document form]
-. xref:_preview_the_document[Preview the document] and make corrections
-image:components/proposals/participatory_texts/preview_participatory_text.png[Preview participatory text]
-. Click on publish the document
-image:components/proposals/participatory_texts/imported_document_proposals.png[Imported document proposals]
-. Publish the proposal component
+. Haga clic en el botón "Importar documento" en el panel de texto participativo de vista previa vacío
+image:components/proposals/participatory_texts/preview_participatory_text_empty.png[Previsualizar texto participativo vacío]
+. Rellene el xref:_add_document_form[Añadir formulario de documento]
+image:components/proposals/participatory_texts/add_document_form.png[Agregar formulario de documento]
+. xref:_preview_the_document[Previsualizar el documento] y hacer correcciones
+image:components/proposals/participatory_texts/preview_participatory_text.png[Previsualizar texto participativo]
+. Haga clic en publicar el documento
+image:componentes/propuestas/participatory_texts/imported_document_proposals.png[Propuestas de documento importadas]
+. Publicar el componente de la propuesta
 
-Notice that this feature could break existing proposals, so if there is any proposal it will not work. You'll see the
-following message in the components settings:
+Tenga en cuenta que esta característica podría romper las propuestas existentes, así que si hay alguna propuesta no funcionará. Verás el mensaje
+siguiente en la configuración de los componentes:
 
 ====
-Cannot interact with this setting if there are existing proposals. Please, create a new `Proposals component` if you want
-to enable this feature or discard all imported proposals in the `Participatory Texts` menu if you want to disable it.
+No se puede interactuar con este ajuste si hay propuestas existentes. Por favor, crea un nuevo `componente de Propuestas` si quieres
+para activar esta función o descartar todas las propuestas importadas en el menú `Textos Participators` si quieres deshabilitarlo.
 ====
 
-== Add document form
+== Añadir formulario de documento
 
-Although it's possible to work with both Markdown (.MD) and ODT (.ODT) files, we recommend working with Markdown as it's
-easier to see the formatting.
+Aunque es posible trabajar con Markdown (.MD) y ODT (. DT) archivos, recomendamos trabajar con Markdown ya que es
+más fácil ver el formato.
 
-link:{attachmentsdir}/participatory_text.md[Download the example participatory text].
+link:{attachmentsdir}/participatory_text.md[Descargar el ejemplo de texto participativo].
 
-image:components/proposals/participatory_texts/add_document_form.png[Add document form]
+imagen:components/proposals/participatory_texts/add_document_form.png[Añadir formulario de documento]
 
 
-.Add document form
+.Añadir formulario de documento
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Title
-|Required
-|What's the title of the document?
+|Título
+|Requerido
+|¿Cuál es el título del documento?
 
-|Description
-|Optional
-|Description for the document
+|Descripción
+|Opcional
+|Descripción del documento
 
-|Document
-|Required
-|File. Add a document lesser than 2MB, each section until 3 levels deep will be parsed into proposals. Supported formats are: Markdown, ODT
+|Documento
+|Requerido
+|Archivo. Añadir un documento de menos de 2MB, cada sección hasta 3 niveles de profundidad será analizado en propuestas. Formatos soportados son: Markdown, ODT
 |===
 
-== Preview the document
+== Vista previa del documento
 
-After the document is initially imported you have three options:
+Después de importar inicialmente el documento, tiene tres opciones:
 
-. Discard
-. Save draft
-. Publish document
+. Descartar
+. Guardar borrador
+. Publicar documento
 
 == Frontend
 
-Once the document is imported and the proposals component published, you'll be able to navigate the document:
+Una vez que el documento es importado y el componente de propuestas publicado, podrá navegar por el documento:
 
-image:components/proposals/participatory_texts/frontend.png[Frontend]
+imagen:componentes/proposals/participatory_texts/frontend.png[Frontend]
 image:components/proposals/participatory_texts/frontend_hover.png[Frontend hover in proposal]
 image:components/proposals/participatory_texts/frontend_proposal.png[Frontend proposal detail]
