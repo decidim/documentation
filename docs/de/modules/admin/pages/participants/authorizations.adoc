@@ -1,0 +1,44 @@
+= Autorisierungen
+
+Authorizations allow to give specific participation rights to participants who have completed a verification process.
+This verification process can be direct, have multiple steps, be online or in-person.
+
+For instance you can configure that only participants who have verified themselves by their identity documents can vote on
+proposals in a specific participatory process.
+
+NOTE: Several authorizations are available by default, but you can also develop your own authorizations.
+
+== Enable / disable authorizations
+
+To enable an authorization, you need to have access to the xref:configure:system.adoc[System panel] or ask the instance implementer.
+To understand more what are authorizations and how to configure them, please refer to the
+xref:customize:authorizations.adoc[Authorizations section in the Customize Guide].
+
+Participants can access, update, or delete their authorizations in their xref:admin:features/participant_actions/my_account.adoc[account].
+
+== Verifizierungsmethoden
+
+Einige der verfügbaren Autorisierungen sind standardmäßig:
+
+* xref:admin:participants/authorizations/identity_documents.adoc[Identifizierungsdokumente]
+* xref:admin:participants/authorizations/code_postal_letter.adoc[Postleitzahlen]
+* xref:admin:participants/authorizations/census.adoc[Organization's census]
+
+Wenn eine dieser Genehmigungen nicht für Ihre Bedürfnisse nützlich ist, sprechen Sie mit Ihrem Implementierer, um andere Alternativen zu sehen. Erfahren Sie
+mehr über xref:customize:authorizations.adoc[Autorisationen im Abschnitt Leitfaden anpassen].
+
+== Widerruf der Autorisierungen
+
+A default Decidim installation don't have verified participants.
+
+image::participants/authorizations_admin_default.png[Authorizations in a default installation]
+
+From the moment some participants get verified with an authorization, administrators can revoke all the authorizations at once.
+Indeed, after some time, some of the verifications can be deprecated.
+For instance, identity documents expire after some time, or participants can move from a city.
+Then, an administrator can want to force participants to renew their verification information.
+
+image:participants/authorizations_admin_revocation.png[Authorizations revocation]
+
+It's possible to revoke all the authorizations with "Revoke all," or to only revoke authorizations created before a given date.
+Another possibility is to revoke only the verifications for xref:admin:participants/impersonations.adoc[impersonated participants].
