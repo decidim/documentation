@@ -1,0 +1,308 @@
+= Ruches
+
+An assembly is a group of members of an organization who meet periodically to make decisions about a specific area or
+scope of the organization.
+
+Les assemblées tiennent des réunions, certaines sont privées et d'autres sont ouvertes. S'ils sont ouverts, il est possible d'y participer
+(par exemple : participer si la capacité le permet, ajouter des points à l'ordre du jour ou commenter les propositions et les décisions prises par cet organe).
+
+Examples: A general assembly (which meets once a year to define the organisation's main lines of action as well as its
+executive bodies by vote), an equality advisory council (which meets every two months to make proposals on how to improve
+gender relations in the organisation), an evaluation commission (which meets every month to monitor a process) or a guarantee
+body (which collects incidents, abuses or proposals to improve decision-making procedures) are all examples of assemblies.
+
+The main difference between xref:admin:spaces/processes.adoc[participatory processes] and assemblies is that assemblies don't
+have phases, meaning that they don't have timelines.
+
+You can see a real world usage of assemblies in https://www.decidim.barcelona/assemblies[Decidim Barcelona], where you
+can see the different Participation Organs, that are the regular spaces where the City Council meets with citizens and organizations
+to get feedback.
+
+Dans cette section, nous vous expliquerons comment configurer une Ruche à Decidim.
+
+== Liste
+
+Pour configurer les assemblages sur la plateforme Decidim, cliquez sur btn:[Assemblies] dans le menu d'administration de la barre latérale. Une liste
+apparaîtra avec les assemblages existants s'il y en a :
+
+image:assemblies_list.png[Liste des Ruches]
+
+Vous pouvez filtrer par ceux qui sont :
+
+* Publié / non publié
+* Public / Privé
+
+image:assemblies_list_filter.png[Liste des Ruches filtrées]
+
+Vous pouvez également effectuer une recherche par titre et contrôler le nombre d'éléments dans la liste.
+
+Vous avez 4 actions possibles dans cette liste après la création d'une Ruche:
+
+. Export: envoyez par e-mail la configuration pour une assemblée donnée. Peut être importé dans une autre installation de Decidim.
+. Dupliquer: pour dupliquer cette assemblée.
+. Configuration: pour éditer les métadonnées et la configuration d'une assemblée.
+. Assemblages : gérer tous les assemblages enfants pour une assemblée.
+. Aperçu: à quoi ressemblera une fois publié.
+
+== Nouveau formulaire d'assemblage
+
+image:assemblies_new_form.png[Formulaire de nouvelle assemblée]
+
+
+.Nouveau formulaire d'assemblage : Informations générales
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Titre de l'assemblée. Par exemple, "Comité Général".
+
+|Sous-titre
+|Obligatoire
+|Sous-titre. Par exemple, "décidons ensemble de nos priorités"
+
+|Rang d'affichage
+|Obligatoire
+|Quel ordre aura-t-il en relation avec les autres assemblées. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple,
+si vous avez deux assemblées, "Ruche" avec le poids "10" et "Ruche b" avec le poids "0", puis "Ruche b" sera d'abord lors de la commande.
+
+|Identifiant d'URL
+|Obligatoire
+|Les identifiants d'URL sont utilisés pour générer les URL qui pointent vers cette assemblée. N'accepte que des lettres, des chiffres et des tirets et doit
+commencer par une lettre. Exemple: si votre domaine est 'example.org' et votre slug 'comité général' alors votre URL
+sera https://example.org/assemblies/general-committee
+
+|Hashtag
+|Facultatif
+|Hashtag pour Twitter
+
+|Courte description
+|Obligatoire
+|Une brève explication de votre processus participatif.
+
+|Description
+|Obligatoire
+|Une longue explication de ce qu'est votre assemblée.
+
+|Objectif de l'action
+|Facultatif
+|Champ interne qui ne sera pas affiché publiquement. A supprimer dans une version ultérieure.
+
+|Composition
+|Facultatif
+|Champ interne qui ne sera pas affiché publiquement. A supprimer dans une version ultérieure.
+
+|Organisation interne
+|Facultatif
+|Champ interne qui ne sera pas affiché publiquement. A supprimer dans une version ultérieure.
+
+|Annonce
+|Facultatif
+|Le texte que vous entrez ici sera affiché à l'utilisateur juste en dessous des informations de l'assemblée.
+|===
+
+
+.Nouveau formulaire d'assemblage : Durée
+|===
+|Champ |Type |Description
+
+|Date de création
+|Facultatif
+|Informations affichées dans la barre latérale des métadonnées de l'assemblée. Format attendu : jj/mm/aaaa
+
+|Inclus le
+|Facultatif
+|Informations affichées dans la barre latérale des métadonnées de l'assemblée. La date à laquelle cette assemblée a été ajoutée à Decidim. It does
+not necessarily have to be the same as the creation date. Format attendu : jj/mm/aaaa
+
+|Durée
+|Facultatif
+|Informations affichées dans la barre latérale des métadonnées de l'assemblée. Si la durée de cette assemblée est limitée, sélectionnez la date de fin
+ Sinon, il apparaîtra comme indéfiniment. Format attendu : jj/mm/aaaa
+
+|Date de clôture
+|Facultatif
+|Informations affichées dans la barre latérale des métadonnées de l'assemblée. Lorsque cette assemblée est fermée. Format attendu : jj/mm/aaaa
+
+|Raison de la date de fermeture
+|Facultatif
+|Informations affichées dans la barre latérale des métadonnées de l'assemblée. Pourquoi cette assemblée est fermée.
+|===
+
+
+.Nouveau formulaire d'assemblage : Images
+|===
+|Champ |Type |Description
+
+|Image de la maison
+|Facultatif
+|Image qui sera utilisée dans les cartes de présentation de cette assemblée. Orientation pour le fichier: Doit être une image ou un document.
+Pour les images, utilisez de préférence des images paysagères qui n'ont pas de texte, le service récolte l'image. Taille maximale du fichier : 10 Mo
+Extensions autorisées : jpeg jpg png
+
+|Image de bannière
+|Facultatif
+|Image qui sera utilisée à l'intérieur de l'assemblage. Orientation pour le fichier: Doit être une image ou un document.
+Pour les images, utilisez de préférence des images paysagères qui n'ont pas de texte, le service récolte l'image. Taille maximale du fichier : 10 Mo
+Extensions autorisées : jpeg jpg png
+|===
+
+
+.Nouveau formulaire d'assemblage : Filtres
+|===
+|Champ |Type |Description
+
+|Portées activées
+|Facultatif
+|Cochez cette case si vous voulez que le filtrage des portées dans cette assemblée.
+
+|Secteur
+|Facultatif
+|Lequel xref:admin:scopes.adoc[Scope] fait partie de cette assemblée.
+
+|Zone de stockage
+|Facultatif
+|Lequel xref:admin:areas.adoc[Area] fait partie de cette assemblée.
+|===
+
+
+.Nouveau formulaire d'assemblage : Métadonnées
+|===
+|Champ |Type |Description
+
+|Ce qui est décidé
+|Facultatif
+|Informations affichées dans la barre latérale des métadonnées de l'assemblée.
+
+|Comment est-il décidé
+|Facultatif
+|Informations affichées dans la barre latérale des métadonnées de l'assemblée.
+
+|Métadonnées du périmètre d'application
+|Facultatif
+|Informations affichées dans la barre latérale des métadonnées de l'assemblée.
+
+|Groupe de promoteurs
+|Facultatif
+|Informations affichées dans la barre latérale des métadonnées de l'assemblée.
+
+|Zone d'organisation
+|Facultatif
+|Informations affichées dans la barre latérale des métadonnées de l'assemblée.
+
+|Qui participe
+|Facultatif
+|Informations affichées dans la barre latérale des métadonnées de l'assemblée.
+|===
+
+
+.Nouveau formulaire d'assemblage : Visibilité
+|===
+|Champ |Type |Description
+
+|Assemblage parent
+|Facultatif
+|À quoi appartient cette assemblée. Par exemple, dans Metadecidim, le https://meta.decidim.org/assemblies/coordination-Committee[Comité de coordination]
+a l'assemblée parente de l'association https://meta.decidim.org/assemblies/general-assembly-Association[General%20Assembly%20of%20the%20Decidim%20Association].
+
+|Surligné
+|Facultatif
+|Cochez cette case si vous voulez que l'assemblage ait plus de visibilité dans la liste publique des Ruches. Il sera également visible dans le bloc de contenu
+Ruche dans la configuration xref:admin:homepage.adoc[Homepage].
+
+|Espace privé
+|Facultatif
+|Vérifier si cette assemblée ne doit être accessible que par xref:admin:spaces/assemblies/private_participants.adoc[Participants privés]
+
+|Est transparent
+|Facultatif
+|Vérifie si cette assemblée est privée mais doit être visible à tous les autres participants. Cela signifie que les autres participants
+ou les visiteurs le verront mais ils ne pourront pas interagir avec lui.
+|===
+
+
+.Nouveau formulaire d'assemblage : Autre
+|===
+|Champ |Type |Description
+
+|Créé par
+|Facultatif
+|Choisissez l'un des "conseils municipaux", "public" ou "autre". Si c'est un autre, vous pouvez spécifier le nom de l'organisation qui a créé
+cette assemblée.
+
+|Type d'assemblage
+|Facultatif
+|Ce que xref:_assemblies_types[type d'assemblage] est cette assemblée.
+
+|Processus connexes
+|Facultatif
+|Sélectionnez d'autres processus participatifs liés à cette assemblée.
+
+|Réseaux sociaux
+|Facultatif
+|Quel profil de réseaux sociaux a cette assemblée. Peut être Twitter, Facebook, Instagram, YouTube et/ou GitHub. C'est
+affiché dans la barre latérale des métadonnées de l'assemblée.
+
+|Afficher les statistiques
+|Facultatif
+|Cochez cette case si vous voulez afficher la section Statistiques.
+|===
+
+Après avoir initialement créé votre assemblée, vous avez un sous-menu où vous devez continuer à configurer plus d'informations
+sur votre assemblée.
+
+image:assembly_submenu.png[Sous-menu de l'assemblée dans l'administrateur]
+
+Ici vous pouvez continuer à configurer votre processus :
+
+. Info: la même forme que celle que nous avons expliquée dans cette page.
+. xref:admin:spaces/assemblies/components.adoc[Components]
+. xref:admin:spaces/assemblies/categories.adoc[Categories]
+. xref:admin:spaces/assemblies/attachments.adoc[Attachments]
+. xref:admin:spaces/assemblies/members.adoc[Members]
+. xref:admin:spaces/assemblies/admins.adoc[Assembly admins]
+. xref:admin:spaces/assemblies/private_participants.adoc[Private participants]
+. xref:admin:spaces/assemblies/moderations.adoc[Moderations]
+
+== Types d'assemblages
+
+Pour clasyfing les assemblages en différents types, vous pouvez définir les types de Ruches. These types can be filtered in the public
+assemblies page.
+
+image:assemblies_type_filters.png[Filtrer par type d'assemblée]
+
+image:assemblies_new_type_form.png[Nouveau formulaire de type d'assemblée]
+
+
+.Nouveau formulaire de type d'assemblage
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Titre de ce type d'assemblage. Par exemple, "Consultatif".
+|===
+
+== Paramètres
+
+Pour le moment, il n'y a qu'un réglage pour configurer le comportement général des assemblées.
+
+image:assemblies_settings.png[Paramètres des Ruches]
+
+
+.Paramètres du formulaire d'assemblage
+|===
+|Champ |Type |Description
+
+|Activer le graphique d'organisation
+|Case à cocher
+|Si vous voulez afficher le tableau de l'organisation dans la liste des assemblées.
+|===
+
+Le tableau d'organisation est affiché dans le bottotm de la page des assemblées.
+
+image:assemblies_organization_chart.png[Graphique d'organisation des assemblées]
+
+Il permet une navigation dans l'arbre des assemblées, avec la possibilité de voir les sous-ensembles qui appartiennent à une assemblée parente.
+
+image:assemblies_organization_chart_filtered.png[Graphique d'organisation des Ruches filtré]
