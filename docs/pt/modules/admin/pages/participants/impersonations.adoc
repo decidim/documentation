@@ -1,37 +1,37 @@
-= Participants Impersonations
+= Representações dos usuários
 
-For participants that don't have the knowledge or don't have an email for registering
-an account, there's the Impersonation feature.
+Para participantes que não possuem conhecimento ou não possuem um e-mail para registrar uma conta
+de personificação, existe o recurso de representação.
 
-This allows an 'Administrator' or 'Participant manager' to search through a
-Verification system for an already existing participant and also to create a
-participant without email.
+Isso permite que um 'Administrador' ou 'Gerenciador de Participantes' pesquise por meio de um sistema de verificação
+para um usuário já existente e também crie um participante
+sem e-mail.
 
-NOTE: At the code and the User Interface we say both *Impersonation* and *Managed
-Participants*. It's the same thing.
+NOTE: No código e na interface do usuário, dizemos *Representação* e *Gerenciados
+Participantes*. É a mesma coisa.
 
-== Panel
+== Painel
 
 image::participants_impersonations.png[Admin's Impersonations panel]
 
-This is the panel where you can find all the participants:
+Este é o painel onde você pode encontrar todos os participantes:
 
-* by filtering by managed or not managed participants
-* by searching by name
+* filtragem por participantes gerenciados ou não gerenciados
+* ao pesquisar por nome
 
-After you've clicked in `Manage new participant` you'll go to the form to enter
-the personal data to check against the verification:
+Depois de clicar em `Gerenciar novos participantes` você vai ao formulário para inserir
+os dados pessoais para checar contra a verificação:
 
 image::participants_impersonations_form.png[Admin's Impersonations form]
 
-NOTE: If you don't see the `Manage new participant` button, is because this feature
-only works when you have a Verification of kind `direct` (also known
-as `form authorizations`). See in your xref:admin:system.adoc[system panel] which
-`Available authorizations` are enabled. You can learn more regarding how to program
-your form authorization in https://github.com/decidim/decidim/blob/develop/decidim-verifications/README.md[decidim-verification README].
+NOTE: Se você não vir o botão `Gerenciar novo participante`, é porque esse recurso
+só funciona quando você tem um tipo de Verificação `direct` (também conhecido
+como `form authorizations`). Veja no seu xref:admin: system.adoc[painel do sistema] que
+`Autorizações disponíveis` estão ativadas. Você pode aprender mais sobre como programar
+sua autorização do formulário em https://github.com/decidim/decidim/blob/develop/decidim-verifications/README.md[decidim-verification README].
 
-After this data is confirmed then there'll be a session for the participant for
-30 minutes:
+Depois que esses dados forem confirmados, haverá uma sessão para o participante por
+30 minutos:
 
 image::participants_impersonations_user.png[Impersonated user session]
 
