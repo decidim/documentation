@@ -1,0 +1,151 @@
+= Initiativen
+
+== Understand the basics
+
+An initiative is a specific type of participatory space, which can be created by any participant, independently
+of other channels or spaces.
+It works through the collection of online and/or in-person signatures for the organization to carry out a specific action, like
+modify a regulation, initiate a project, change the name of a department or a street, etc.
+
+The promoters of an initiative can define its objectives, gather support, debate, disseminate it and define meeting
+venues where signatures can be collected from the attendees or debates open to other participants.
+
+NOTE: A lot of the initiatives behaviour and settings is configurable in the initiative
+xref:admin:initiatives_initializer.adoc[initializer]. Ask the organization implementer if you have some doubts regarding your organization
+configuration.
+
+Examples of initiatives types:
+
+* To add an item to an assembly agenda
+* Einen partizipativen Prozess durchführen
+* Neue Baugruppe erstellen
+* Eine Verordnung genehmigen oder ändern
+* To call for assemblies
+
+Initiatives are to be distinguished from the other spaces because they can be used as a participatory tool promoted *by participants*.
+In other words, the initiatives are mechanisms for *semi-direct democracy* through which participants can promote a certain
+action of common interest by collecting a specific number of signatures.
+
+The role of the platform’s administrator, then, is somewhat different from that of the other participation spaces, as
+the organization has to enable the participants and offer them the necessary technical support and advice.
+
+In this documentation section, you can find how to configure and manage all of those items:
+
+* xref:admin:spaces/initiatives/types.adoc[Initiatives types]
+* xref:admin:spaces/initiatives/initiative_creation.adoc[Initiative creation]
+** xref:admin:spaces/initiatives/author_manage/committee.adoc[Promoter's committee]
+** xref:admin:spaces/initiatives/author_manage/manage.adoc[Author actions]
+* xref:admin:spaces/initiatives/manage.adoc[Initiative management]
+** xref:admin:spaces/initiatives/admin_manage/committee.adoc[Committee members]
+** xref:admin:spaces/initiatives/admin_manage/components.adoc[Components]
+** xref:admin:spaces/initiatives/admin_manage/attachments.adoc[Attachments]
+** xref:admin:spaces/initiatives/admin_manage/moderations.adoc[Moderations]
+** xref:admin:spaces/initiatives/admin_manage/answer.adoc[Answer an initiative]
+* xref:admin:spaces/initiatives/sign.adoc[Sign an initiative]
+
+== How to find it?
+
+To access the initiatives panel, go in the administration panel and click the "Initiatives" item in the administration
+navigation bar.
+
+image::spaces/initiatives/initiatives_menu.png[Access Initiatives panel]
+
+There, you are able to start configuring initiatives space, by:
+
+. Creating xref:admin:spaces/initiatives/types.adoc[Initiatives types] and initiative type scopes
+. Configuring authorizations if needed
+. Manage participants initiatives
+
+image::spaces/initiatives/initiatives_list_empty.png[Initiatives panel without initiatives]
+
+NOTE: At first, the list is empty and participants can't create initiatives.
+To do the initial setup of the initiative space, read the xref:admin:spaces/initiatives/types.adoc[Initiatives types] article.
+
+== Initiatives life-cycle
+
+Initiatives pass through different steps, and follow a specific life-cycle:
+
+* *Created*: The author created the initiative, it's only visible by author, promoter committee members and administrators.
+* *Technical validation*: The initiative is ready for review by an administrator.
+* *Published*: An administrator reviewed the initiative and published it.
+* *Expired*: If no administrator published it before a time configured in the initiative initializer.
+* *Discarded*: If the initiative didn't pass the review by an administrator.
+* *Rejected*: If the initiative didn't receive enough signatures in the signature collection period.
+* *Accepted*: If the initiative received enough signatures in the signature collection period.
+
+[plantuml]
+@startuml
+:Erstellt;
+:Technische Validierung;
+wenn (die maximale Validierungszeit überschritten?) dann (ja)
+  #pink:Abgelaufen;
+  kill;
+elseif (validiert?) dann (nein)
+  #pink:Verworfen;
+  Kill;
+sonst (ja)
+  #palegreen:Veröffentlicht;
+  wenn (genug Signaturen?) dann (nein)
+    #pink:Ablehnt
+    (nicht genug Signaturen);
+    Kill;
+  else (ja)
+    #palegreen:Akzeptiert
+    (genug Signaturen);
+    stop;
+  endif;
+endif
+@enduml
+
+Finally, these are all the relevant settings in every moment in the initiatives life cycle:
+
+[plantuml]
+@startuml
+(*) --> "Create a new initiative"
+if "Has only one type?" then
+--> [Yes] "Fill initiative form"
+else
+--> [No] "Select initiative type"
+--> "Fill initiative form"
+Endif
+partition Created {
+  if "Is the User a UserGroup?" then
+  --> [Yes] "Send to Technical Validation"
+  else
+  --> [No] Collect the minimum number of committee members
+  --> "Send to Technical Validation"
+  Endif
+}
+partition Validating {
+  if "Has passed the maximum time for validation (60 days by default)?" then
+    --> [Yes] "Expired"
+  else
+    --> [No] if "Is accepted by an administrator?" then
+      --> [No] "Discarded"
+      else
+      --> [Yes] "Publish"
+      endIf
+  endIf
+}
+partition Published {
+  --> "Signature process"
+  if "Has passed the configured time window for validation (60 days by default)?"
+    --> [Yes] "Abgelaufen"
+  else
+    --> [No] PDF in die Unterschriften
+    --> Prüfen Sie Unterschriften mit Offline-Unterschriften auf Duplikate (wenn die Initiative sie hat)
+    --> wenn "Hat die Initiative die erforderliche Anzahl an Unterschriften erhalten? dann
+      --> [No] Ablehnt
+    else
+      --> [Yes] Akzeptiert
+    endIf
+  endIf
+}
+--> (*)
+@enduml
+
+== Beispiele
+
+* https://www.decidim.barcelona/initiatives[Barcelona city citizens initiatives]
+* https://petitions.assemblee-nationale.fr/initiatives[French national assembly petitions platform]
+* https://dekamer.mijnopinie.belgium.be/initiatives[Belgium national assembly petitions platform]
