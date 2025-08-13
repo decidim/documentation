@@ -1,0 +1,256 @@
+= Umfrage
+
+Die Umfragekomponente ermöglicht die Beantwortung von Fragebögen. Dies ist nützlich, wenn eine Organisation private
+Rückmeldungen erhalten möchte, obwohl es möglich ist, die Antworten auch manuell zu veröffentlichen. Es erlaubt eine Reihe von Fragen mit mehreren Arten von Antworten zu definieren.
+
+Von diesem Ausgangspunkt aus könnte es andere Konfigurationen geben, wie:
+
+* wenn die Beantwortung auf einen Zeitraum beschränkt ist
+* welche Antworttypen die Fragen haben sollen, wie kurz (eine Zeile), lang (mehrere Zeilen), einzelne oder mehrere Optionen,
+sortieren durch eine Liste, etc.
+* wenn es eine Antwortüberprüfung gibt, wie viele Zeichen maximal eine Antwort haben sollen
+* wenn es eine maximale Anzahl an Optionen gibt, die in mehreren Optionen ausgewählt werden können
+
+Einige Beispiele, wo diese Komponente verwendet wurde:
+
+* https://consultation.quebec.ca/processes/donneesquebec/f/82/[Data Quebec: Nehmen Sie an seiner Verbesserung teil! (Donne<unk> es Que<unk> bec : participez a<unk> son ame<unk> lioration!) in Que<unk> bec Konsultationen]
+* https://meta.decidim.org/conferences/decidimfest2020/f/1403/?locale=de[DecidimFest2020 Assessment Survey]
+
+image:components/surveys/example01.png[Beispiel einer Umfrage]
+
+Um die Umfrage-Komponente zu konfigurieren:
+
+. Als Admin anmelden
+. Zum Admin-Panel wechseln
+. Wählen Sie in der Haupt-Seitenleiste den Bereich aus, unter dem Sie die Komponente konfigurieren möchten.
+Zum Beispiel "Prozesse", "Gremien" oder "Konferenzen".
+. Gehe zu Komponenten
+. Auf "Komponente hinzufügen"-Button klicken
+. Klicken Sie auf "Umfrage"
+. Das Formular xref:_add_component[Komponente hinzufügen] ausfüllen
+
+Sobald eine Umfrage bereits von einigen Benutzern beantwortet wurde, ist es nicht möglich, ihre Fragen zu ändern da dies die Integrität
+der Antworten beeinträchtigen würde. Wenn es notwendig ist, die Fragen zu ändern, dann ist es notwendig, eine neue Umfrage zu erstellen und die ursprüngliche zu entfernen.
+
+== Komponente hinzufügen
+
+image:components/surveys/component.png[Komponentenform] hinzufügen
+
+
+.Komponente hinzufügen: Umfrageformular
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Wie lautet der Titel dieser Komponente. Zum Beispiel "Umfrage"
+
+|Bestellposition
+|Optional
+|Welche Bestellung hat sie in Bezug auf die anderen Umfragen. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+Zum Beispiel, wenn Sie zwei Umfragen haben, "Survey a" mit Gewicht "10" und "Survey b" mit Gewicht "0", dann ist "Survey b" zuerst bei der Bestellung.
+|===
+
+
+.Komponente hinzufügen: Umfrageformular - Globale Einstellungen
+|===
+|Feld |Typ |Beschreibung
+
+|Bereiche aktiviert
+|Optional
+|Aktivieren, wenn die Bereichsfilterung in dieser Komponente erfolgen soll.
+
+|Bereich
+|Optional
+|Zu welcher xref:admin:scopes.adoc[Scope] diese Komponente gehört.
+
+|Antworten akzeptiert von
+|Optional
+|Start-Datum, an dem Sie Antworten erhalten möchten. Leer lassen für kein bestimmtes Datum. Erwartetes Format: tt/mm/yyy hh:ii
+
+|Antworten akzeptiert bis
+|Enddatum, wenn Sie keine Antworten mehr erhalten möchten. Leer lassen für kein bestimmtes Datum. Erwartetes Format: tt/mm/yyy hh:ii
+|Mitteilung
+
+|Optional
+|Eine allgemeine Ankündigung, die auf der allgemeinen Landungsseite zu sehen sein wird.
+|Antworten beim Veröffentlichen der Umfrage löschen
+|===
+
+In den Fällen, in denen der Platz, den diese Komponente verwendet wird, xref:admin:spaces/processes/phases hat. doc[Phases], zum Beispiel in
+xref:admin:spaces/processes.adoc[Participatory Processes], dann können Sie auch unterschiedliche Verhaltensweisen pro Schritt definieren.
+
+
+.Komponente hinzufügen: Umfrageformular - Schritteinstellungen
+|===
+|Feld |Typ |Beschreibung
+
+|Antworten erlauben
+|Optional
+|Überprüfen Sie, ob Sie Antworten in dieser Umfrage erhalten möchten.
+
+|Nicht registrierten Benutzern erlauben, die Umfrage zu beantworten
+|Optional
+|Wenn aktiviert, ist kein Login erforderlich, um die Umfrage zu beantworten. Dies kann zu schlechten oder unzuverlässigen Daten führen und wird
+für automatisierte Angriffe anfälliger sein. Mit Vorsicht verwenden! Beachten Sie, dass diese Option nur eine Antwort von Browser-Session zulässt,
+, aber die Teilnehmer können die Private Navigation Option verwenden und mehrere Antworten mit demselben Gerät machen.
+
+|Mitteilung
+|Optional
+|Eine allgemeine Ankündigung, die auf der allgemeinen Landungsseite zu sehen sein wird.
+|===
+
+== Berechtigungen
+
+An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
+certain actions in the surveys:
+
+* Antwort
+
+== Neues Umfrageformular
+
+Wenn Sie eine neue Umfrage erstellen, müssen Sie das Formular mit folgenden Feldern ausfüllen:
+
+image:components/surveys/edit_form.png[Umfrageformular bearbeiten]
+
+NOTE: Haben Sie wiederholende Umfrage? Zum Beispiel das gleiche Feedback-Formular für jeden Prozess? Du kannst eine Umfrage haben, die
+kopiert wird und als Blaupause verwendet wird, so dass du nicht jedes Mal die gleiche Umfrage manuell konfigurieren musst. Learn more
+about xref:_templates[Templates].
+
+
+.Neues Umfrageformular
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Wie lautet der Titel dieser Umfrage. Zum Beispiel "Feedback"
+
+|Beschreibung
+|Optional
+|Wie ist die Beschreibung dieser Umfrage.
+
+|Nutzungsbedingungen
+|Benötigt
+|Rechtliche Bedingungen, denen die Teilnehmer zustimmen müssen, um die Umfrage zu beantworten.
+|===
+
+Im unteren Teil dieses Formulars befindet sich eine Schaltfläche, mit der Sie "Frage hinzufügen" können.
+
+image:components/surveys/add_question_button.png[]
+
+Sie können mehrere Fragen pro Umfrage hinzufügen und sie neu ordnen oder löschen. Es ist auch möglich, Trennzeichen zwischen Fragen hinzuzufügen.
+
+Jede Frage muss eine Aussage und einen Typ als Minimum haben.
+
+image:components/surveys/question_form.png[]
+
+
+.Frageformular hinzufügen
+|===
+|Feld |Typ |Beschreibung
+
+|Anweisung
+|Benötigt
+|Die Frage selbst. Zum Beispiel "Was ist deine Alterskategorie?"
+
+|Beschreibung
+|Optional
+|Erläuterung der gestellten Frage.
+
+|Mandatory
+|Optional
+|Überprüfen Sie, ob diese Frage benötigt wird, um die Antwort zu senden.
+
+|Zeichenlimit
+|Optional
+|Wie viele Zeichen haben als Maxime die Antwort auf diese Frage. Auf 0 lassen, wenn kein Limit. Kompatibel mit Kurz- und Langzeitfragetypen.
+
+|Typ
+|Benötigt
+|Eine der folgenden Antworten: Kurze Antwort, lange Antwort, Single Option, Multiple Option, Sortierung, Dateien, Matrix (Single option)
+oder Matrix (Multiple option). Siehe xref:_question_types[Question types] für weitere Informationen.
+|===
+
+Depending in the question type, it's possible to add validations to the answers, like if the question is mandatory (participants
+would need to provide an answer in order to submit the form) or if the answer is limited to a certain number of characters as maximum in
+short and long answers.
+
+image:components/surveys/question_form_limits_backend.png[]
+
+image:components/surveys/question_form_limits_frontend.png[]
+
+== Fragentypen
+
+Eine Umfrage kann mehrere Fragen mit verschiedenen Typen haben, wie:
+
+- Kurze Antwort
+- Lange Antwort
+- Einzelne Option
+- Mehrere Optionen
+- Sortieren
+- Dateien
+- Matrix (Einzeloption)
+- Matrix (mehrere Option)
+
+
+.Fragentypen (klicken um Bild im Detail anzuzeigen)
+|===
+|Typ |Frontend |Backend |Beschreibung
+
+|Kurze Antwort
+|image:components/surveys/type_short_answer_frontend.png[Kurzer Antworttyp - frontend,link=../_images/components/surveys/type_short_answer_frontend.png]
+|image:components/surveys/type_short_answer_backend.png[Kurzer Antworttyp - backend,link=../_images/components/surveys/type_short_answer_backend.png]
+|Kompatibel mit der Überprüfung des "Zeichenlimits"
+
+|Lange Antwort
+|image:components/surveys/type_long_answer_frontend.png[Long answer type - frontend,link=../_images/components/surveys/type_long_answer_frontend.png]
+|image:components/surveys/type_long_answer_backend.png[Long answer type - backend,link=../_images/components/surveys/type_long_answer_backend.png]
+|Kompatibel mit der Überprüfung des "Zeichenlimits"
+
+|Einzelne Option
+|image:components/surveys/type_single_option_frontend.png[Single option type - frontend,link=../_images/components/surveys/type_single_option_frontend.png]
+|image:components/surveys/type_single_option_backend.png[Single option type - backend,link=../_images/components/surveys/type_single_option_backend.png]
+|Die Teilnehmer müssen eine einzige Option mit Funktasten wählen. Mindestens 2 Optionen immer. Es ist möglich, eine "Free Text" Option zu definieren, so dass die Teilnehmer ihre eigene Antwort einreichen können.
+
+|Mehrere Optionen
+|image:components/surveys/type_multiple_option_frontend.png[Multiple option type - frontend,link=../_images/components/surveys/type_multiple_option_frontend.png]
+|image:components/surveys/type_multiple_option_backend.png[Multiple option type - backend,link=../_images/components/surveys/type_multiple_option_backend.png]
+|Die Teilnehmer müssen mehrere Optionen mit Checkboxen auswählen. Mindestens 2 Optionen immer. Es ist möglich, eine Validierung mit der maximalen Anzahl von Optionen hinzuzufügen. Es ist möglich, eine "Free Text" Option zu definieren, so dass die Teilnehmer ihre eigene Antwort einreichen können.
+
+|Sortieren
+|image:components/surveys/type_sorting_frontend.png[Sortiertyp - frontend,link=../_images/components/surveys/type_sorting_frontend.png]
+|image:components/surveys/type_sorting_backend.png[Sortierart - backend,link=../_images/components/surveys/type_sorting_backend.png]
+|Mindestens 2 Optionen immer. Die Teilnehmer werden in der Reihenfolge der Sortierung klicken.
+
+|Dateien
+|image:components/surveys/type_files_frontend.png[Dateien Typ - frontend,link=../_images/components/surveys/type_files_frontend.png]
+|image:components/surveys/type_files_backend.png[Dateityp - backend,link=../_images/components/surveys/type_files_backend.png]
+|Teilnehmer können Dateien hochladen.
+
+|Matrix (Einzeloption)
+|image:components/surveys/type_matrix_single_option_frontend.png[Matrix (Single option) Typ - frontend,link=../_images/components/surveys/type_matrix_single_option_frontend.png]
+|image:components/surveys/type_matrix_single_option_backend.png[Matrix (Single option) Typ - backend,link=../_images/components/surveys/type_matrix_single_option_backend.png]
+|Die Teilnehmer müssen zwischen Zeilen und Spalten einzelner Optionen mit Funktasten wählen.
+
+|Matrix (mehrere Option)
+|image:components/surveys/type_matrix_multiple_option_frontend.png[Matrix (Multiple Option) Typ - frontend,link=../_images/components/surveys/type_matrix_multiple_option_frontend.png]
+|image:components/surveys/type_matrix_multiple_option_backend.png[Matrix (Multiple Option) Typ - backend,link=../_images/components/surveys/type_matrix_multiple_option_backend.png]
+|Die Teilnehmer müssen zwischen Zeilen und Spalten mehrerer Optionen mit Checkboxen wählen.
+|===
+
+== Vorlagen
+
+Für die Fälle, in denen Administratoren mehrere Umfragen definieren müssen, die meist gleich sind, aber in verschiedenen Kontexten verwendet werden,
+ist es möglich, eine Vorlage zu definieren. Wenn für eine Umfrage eine definiert ist, dann wird es darum bitten, das Template auszuwählen und die Umfrage
+basierend auf dieser oder in der anderen Seite zu erstellen, wenn es keine Notwendigkeit gibt, eine Vorlage zu verwenden, dann ist es möglich, die Vorlage
+Auswahl zu überspringen.
+
+image:components/surveys/edit_questionnaire.png[Template form] wählen
+
+== Antworten exportieren
+
+Es ist möglich die Antworten der Umfrage in verschiedene Formate zu exportieren: CSV, JSON, XLSX (Excel) oder PDF.
+
+Beachten Sie, dass die Plattform weder die Bearbeitung von Antworten noch die Ergebnisse oder Zusammenfassung für die Benutzer verwaltet, die extern
+durchgeführt werden müssen.
