@@ -1,411 +1,411 @@
-= Meetings
+= Encontros
 
-Meetings are where people come together to discuss or inform about a given topic. All the meetings have a given location
-(where the meeting will happen) and start and end date and time (when the meeting will happen).
+As reuniões são onde as pessoas se reúnem para discutir ou informar sobre um determinado tópico. Todas as reuniões têm um determinado local
+(onde a reunião acontecerá) e data de início e fim e hora (quando a reunião acontecerá).
 
-Some examples of where this component was used are:
+Alguns exemplos de onde este componente foi usado são:
 
-* https://www.decidim.barcelona/processes/PAM2020/f/3734/[Procés participatiu del Programa d'Actuació Municipal (PAM) 2020-2023]
-in https://www.decidim.barcelona/[Decidim Barcelona]
-* https://lejourdapres.parlement-ouvert.fr/processes/ateliers/f/14/[Les ateliers] in https://lejourdapres.parlement-ouvert.fr/[Le jour d'après]
+* https://www.decidim.barcelona/processes/PAM2020/f/3734/[Proceda participatiu del Programa d'Actuacioč Municipal (PAM) 2020-2023]
+em https://www.decidim.barcelona/[Decidim Barcelona]
+* https://lejourdapres.parlement-ouvert.fr/processes/ateliers/f/14/[Les ateliers] in https://lejourdapres.parlement-ouvert.fr/[Le jour d'après]
 
-image:components/meetings/example01.png[Meetings list in Decidim Barcelona]
-image:components/meetings/example02.png[Example meeting detail 01 in Decidim Barcelona]
-image:components/meetings/example03.png[Example meeting detail 02 in Decidim Barcelona]
-image:components/meetings/example04.png[Meetings list in Le jour d'après]
+image:components/meetings/example01.png[Lista de reuniões em Decidim Barcelona]
+image:components/meetings/example02.png[Exemplo de reunião detalhado de 01 em Decidim Barcelona]
+image:components/meetings/example03. ng[Detalhe de reunião de exemplo 02 em Decidim Barcelona]
+image:components/meetings/example04.png[Lista de reuniões no Le jour d'apreish. s]
 
-== Types
+== Tipo
 
-Regarding the *location*, depending on the configuration of the component, you can have:
+Em relação à *localização*, dependendo da configuração do componente, você pode ter:
 
-* In-person meetings: where you get together in a given location
-* Online meetings: where you get together using an external service (for instance Jitsi Meet)
+* Reuniões presenciais: onde você se reúne em um determinado local
+* Reuniões on-line: onde você se reúne usando um serviço externo (por exemplo, Jitsi Meet)
 
-Depending in the *author* (who's the person that's making the call):
+Dependendo do *autor* (quem é a pessoa que está fazendo a chamada):
 
-* Official meetings: meetings created by the organization (created by an administrator through the panel)
-* Citizens meetings: meetings created by a User participant (a User or an UserGroup).
+* Reuniões oficiais: reuniões criadas pela organização (criada por um administrador através do painel)
+* Reuniões de cidadãos: reuniões criadas por um participante de usuário (um usuário ou um grupo).
 
-== Add the component
+== Adicione o componente
 
-image:components/meetings/component.png[Add a meetings component]
+image:components/meetings/component.png[Adicionar um componente de reuniões]
 
-For adding the component, you need to:
+Para adicionar o componente, você precisa:
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Go to components
-. Click on "Add component" button
-. Click on "Meetings"
-. Fill the xref:_add_component[Add component] form
+. Iniciar sessão como administrador
+. Ir ao painel de administração
+. Na barra lateral principal, clique no botão para o espaço para o qual você deseja configurar o componente.
+Por exemplo, pode ser "Processos", "Assemblies", ou "Conferências"
+. Ir para componentes
+. Clique no botão "Adicionar componente"
+. Clique em "Reuniões"
+. Preencha o formulário xref:_add_component[Add component]
 
-== Add component
+== Adicionar componente
 
-For configuring the meeting component you have these settings:
+Para configurar o componente de reunião você tem essas configurações:
 
 
-.Add component - Meetings form
+.Adicionar componente - Formulário de Reunião
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Name
-|Required
-|What is the name of this component.
+|Nome:
+|Obrigatório
+|Qual é o nome desse componente.
 
-|Order position
-|Optional
-|Which order will it have in relation with the other components. Having a lower number means a higher priority. For instance,
-if you have two components, "Proposals" with weight "10" and "Meetiings" with weight "0", then "Meetings" will be first when ordering.
-|===
-
-
-.Add component - Meetings form: Global settings
-|===
-|Field |Type |Description
-
-|Scopes enabled
-|Optional
-|Check if you want to have Scopes filtering in this process.
-
-|Scope
-|Optional
-|Which scope will be used for this component.
-
-|Announcement
-|Optional
-|A general announcement that'll be visible in the general meetings list.
-
-|Default registration terms
-|Optional
-|What'll be the registration terms of service that the participant would need to accept when registering.
-
-|Comments enabled
-|Optional
-|Whether you want to have comments in the meetings.
-
-|Comments max length
-|Optional
-|What is the characters limit that participants will have when making comments. Leave 0 for default value.
-
-|Registration code enabled
-|Optional
-|Check if you want to give registration codes to participants. Learn more in xref:components/meetings/registrations.adoc[Registrations].
-
-|Actions permissions can be set for each meeting
-|Optional
-|If you want more granular permissions inside of every one of the Meetings.
-
-|Enable pads creation
-|Optional
-|If you want an Etherpad embedded in your meetings. Must have the xref:services:etherpad.adoc[Etherpad] integration configurated.
-
-|Participants can create meetings
-|Optional
-|Allows participants to create new meetings. See xref:_citizens_meetings[Citizens meetings]
-
-|Maps enabled
-|Optional
-|Wheter you want to show a map in the meetings in the meeting detail.
+|Posição do pedido
+|Opcional
+|Qual ordem ele terá em relação aos outros componentes. Ter um número menor significa uma prioridade mais alta. Por exemplo,
+se você tem dois componentes, "Propostas" com peso "10" e "Meetiings" com peso "0", então "Reuniões" será o primeiro a fazer o pedido.
 |===
 
 
-.Add component - Meetings form: Step settings
+.Adicionar componente - Formulário de Reuniões: Configurações globais
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Announcement
-|Optional
-|A general announcement that'll be visible in the general meetings list.
+|Âmbitos ativados
+|Opcional
+|Verifique se você quer ter filtros de escopos neste processo.
 
-|Comments enabled
-|Optional
-|Whether you want to have comments in the meetings.
+|Escopo
+|Opcional
+|Qual escopo será usado para este componente.
+
+|Anúncio
+|Opcional
+|Um anúncio geral que será visível na lista geral de reuniões.
+
+|Termos de registro padrão
+|Opcional
+|Quais serão os termos de serviço que o participante precisaria aceitar ao se registrar.
+
+|Comentários ativados
+|Opcional
+|Se você deseja ter comentários nas reuniões.
+
+|Comprimento máximo de comentários
+|Opcional
+|Qual é o limite de caracteres que os participantes terão ao fazer comentários. Deixe 0 para o valor padrão.
+
+|Código de registro habilitado
+|Opcional
+|Verifique se você quiser dar códigos de registro aos participantes. Aprenda mais na xref:components/meetings/registrations.adoc[Registrations].
+
+|Permissões de ações podem ser definidas para cada reunião
+|Opcional
+|Se você quer mais permissões granulares dentro de cada uma das Reuniões.
+
+|Ativar criação de blocos
+|Opcional
+|Se você quiser um Etherpad embutido nas suas reuniões. Deve ter o xref:services:etherpad.adoc[Etherpad] integration configurated.
+
+|Os participantes podem criar reuniões
+|Opcional
+|Permite aos participantes criar novas reuniões. Veja xref:_citizens_meetings[Reuniões de Cidadãos]
+
+|Mapas ativados
+|Opcional
+|Ansioso você quer mostrar um mapa nas reuniões no detalhe da reunião.
 |===
 
-== Create a new meeting
 
-=== Citizens meetings
+.Adicionar componente - formulário de reuniões: Configurações do passo
+|===
+|Campo |tipo |Descrição:
 
-Meetings can be created by participants if the setting is "Participants can create meetings" is checked.
+|Anúncio
+|Opcional
+|Um anúncio geral que será visível na lista geral de reuniões.
+
+|Comentários ativados
+|Opcional
+|Se você deseja ter comentários nas reuniões.
+|===
+
+== Criar uma nova reunião
+
+=== Reuniões de cidadãos
+
+As reuniões podem ser criadas pelos participantes se a configuração for "Os participantes podem criar reuniões" estiver marcada.
 
 If a participant belongs to a xref:admin:participants/groups.adoc[user group], then she'll be able to create meetings as that group also.
 
-image:components/meetings/new_meeting_form_frontend01.png[Create a new meeting form (frontend)]
-image:components/meetings/new_meeting_form_frontend02.png[Create a new meeting form (frontend)]
+image:components/meetings/new_meeting_form_frontend01.png[Crie uma nova forma de reunião (frontend)]
+imagem:components/meetings/new_meeting_form_frontend02.png[Crie uma nova forma de reunião (frontend)]
 
 
-.Create meeting - Frontend form
+.Criar reunião - formulário Frontend
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Title
-|Required
-|What is the title for this meeting.
+|Título
+|Obrigatório
+|Qual é o título para esta reunião.
 
-|Description
-|Required
-|A description of what will be discussed in this meeting, like the topics.
+|Descrição:
+|Obrigatório
+|Uma descrição daquilo que será discutido nesta reunião, tal como os tópicos.
 
-|Type
-|Required
-|Choose one option between "In person", "Online" or "Booth"
+|tipo
+|Obrigatório
+|Escolha uma opção entre "Em pessoa", "Online" ou "Booth"
 
-|Address
-|Required if meeting type is "In person" or "Booth"
-|Address: used by Geocoder to find the location
+|Endereço
+|Obrigatório se o tipo de reunião é "Em pessoa" ou "Cabo"
+|Endereço: usado pelo Geocodificador para encontrar a localização
 
-|Location
-|Required
-|Location: message directed to the users implying the spot to meet at
+|Local:
+|Obrigatório
+|Localização: mensagem direcionada aos usuários que imprimem o local para
 
-|Location hints
-|Optional
-|Location hints: additional info. Example: the floor of the building
+|Dicas de localização
+|Opcional
+|Dicas de localização: informações adicionais Exemplo: o piso do edifício
 
-|Online meeting URL
-|Optional
-|Which URL will the meeting be held.
+|URL da reunião on-line
+|Opcional
+|Qual URL será a reunião realizada.
 
-|Show embedded iframe for this URL
-|Optional
-|Whether or not embed the iframe for this videoconference URL. Only a few services allow embedding (i.e. YouTube, Twitch...)
+|Mostrar iframe incorporado para esta URL
+|Opcional
+|Se deve ou não incorporar o iframe para esta URL de videoconferência. Apenas alguns serviços permitem a incorporação (ou seja, YouTube, Twitch...)
 
-|Start Time
-|Required
-|Which day and time will the meeting start. Expected format: dd/mm/yyyy hh:ii
+|Horário de Início
+|Obrigatório
+|Que dia e hora a reunião começará. Formato esperado: dd/mm/yyyy hh:ii
 
-|End Time
-|Required
-|Which day and time will the meeting start. Expected format: dd/mm/yyyy hh:ii
+|Hora de término
+|Obrigatório
+|Que dia e hora a reunião começará. Formato esperado: dd/mm/yyyy hh:ii
 
-|Category
-|Optional
-|Which Category has the meeting. Used for filtering in the meetings list.
+|categoria
+|Opcional
+|Qual categoria tem a reunião. Usado para filtragem na lista de reuniões.
 
-|Registration type
-|Required
-|Choose one option between "Registration disabled", "On this platform", or "On a different platform"
+|Tipo de registro
+|Obrigatório
+|Escolha uma opção entre "Registro desativado", "Nesta plataforma" ou "Em uma plataforma diferente"
 
-|Available slots for this meeting
-|Required if "Registration type" is "On this platform"
-|How many slots are available for this meeting? Leave it to 0 if you have unlimited slots available
+|Slots disponíveis para esta reunião
+|Necessário se "Tipo de registro" estiver "Nessa plataforma"
+|Quantas faixas horárias estão disponíveis para esta reunião? Deixe-o para 0 se você tiver slots ilimitados disponíveis
 
-|Registration terms
-|Required if "Registration type" is "On this platform"
-|What terms of services participants need to accept to register or join the meeting. Specific to "Citizens meetings"
+|Termos de registro
+|Necessário se "Tipo de registro" estiver "Nessa plataforma"
+|Que termos os participantes nos serviços devem aceitar para se inscrever ou participar da reunião. Específico para "Reuniões de cidadãos"
 
-|Registration URL
-|Required if "Registration type" is "On a different platform"
-|Must be an URL. Link to go on the external service that you are using for registrations.
+|URL de Registro
+|Necessário se "Tipo de registro" estiver "Em uma plataforma diferente"
+|Deve ser uma URL. Link para continuar com o serviço externo que você está usando para registros.
 
-|Create meeting as
-|Required if the participant belongs to a group
+|Criar reunião como
+|Necessário se o usuário pertence a um grupo
 |With which identity she wants to create this meeting: as her user or as a group that she's reprensenting?
 |===
 
-After creating the meeting, participants can also edit and xref:components/meetings/close.adoc[close] it.
+Após a criação da reunião, os participantes também poderão editar e xref:components/meetings/close.adoc[close] it.
 
-=== Official meetings
+=== Encontros oficiais
 
-image:components/meetings/new_meeting_form_backend.png[Create a new meeting form (backend)]
+image:components/meetings/new_meeting_form_backend.png[Crie um novo formulário de reunião (backend)]
 
 
-.Create meeting - Backend form
+.Criar reunião - Formulário de Backend
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Title
-|Required
-|What is the title for this meeting.
+|Título
+|Obrigatório
+|Qual é o título para esta reunião.
 
-|Description
-|Required
-|A description of what will be discussed in this meeting, like the topics.
+|Descrição:
+|Obrigatório
+|Uma descrição daquilo que será discutido nesta reunião, tal como os tópicos.
 
-|Type
-|Required
-|Choose one option between "In person", "Online" or "Booth"
+|tipo
+|Obrigatório
+|Escolha uma opção entre "Em pessoa", "Online" ou "Booth"
 
-|Address
-|Required if meeting type is "In person" or "Booth"
-|Address: used by Geocoder to find the location
+|Endereço
+|Obrigatório se o tipo de reunião é "Em pessoa" ou "Cabo"
+|Endereço: usado pelo Geocodificador para encontrar a localização
 
-|Location
-|Required
-|Location: message directed to the users implying the spot to meet at
+|Local:
+|Obrigatório
+|Localização: mensagem direcionada aos usuários que imprimem o local para
 
-|Location hints
-|Optional
-|Location hints: additional info. Example: the floor of the building
+|Dicas de localização
+|Opcional
+|Dicas de localização: informações adicionais Exemplo: o piso do edifício
 
-|Online meeting URL
-|Optional
-|Which URL will the meeting be held.
+|URL da reunião on-line
+|Opcional
+|Qual URL será a reunião realizada.
 
-|Show embedded iframe for this URL
-|Optional
-|Whether or not embed the iframe for this videoconference URL. Only a few services allow embedding (i.e. YouTube, Twitch...)
+|Mostrar iframe incorporado para esta URL
+|Opcional
+|Se deve ou não incorporar o iframe para esta URL de videoconferência. Apenas alguns serviços permitem a incorporação (ou seja, YouTube, Twitch...)
 
-|Start Time
-|Required
-|Which day and time will the meeting start. Expected format: dd/mm/yyyy hh:ii
+|Horário de Início
+|Obrigatório
+|Que dia e hora a reunião começará. Formato esperado: dd/mm/yyyy hh:ii
 
-|End Time
-|Required
-|Which day and time will the meeting start. Expected format: dd/mm/yyyy hh:ii
+|Hora de término
+|Obrigatório
+|Que dia e hora a reunião começará. Formato esperado: dd/mm/yyyy hh:ii
 
-|Category
-|Optional
-|Which Category has the meeting. Used for filtering in the meetings list.
+|categoria
+|Opcional
+|Qual categoria tem a reunião. Usado para filtragem na lista de reuniões.
 
-|Registration type
-|Required
-|Choose one option between "Registration disabled", "On this platform", or "On a different platform"
+|Tipo de registro
+|Obrigatório
+|Escolha uma opção entre "Registro desativado", "Nesta plataforma" ou "Em uma plataforma diferente"
 
-|Available slots for this meeting
-|Required if "Registration type" is "On this platform"
-|How many slots are available for this meeting? Leave it to 0 if you have unlimited slots available
+|Slots disponíveis para esta reunião
+|Necessário se "Tipo de registro" estiver "Nessa plataforma"
+|Quantas faixas horárias estão disponíveis para esta reunião? Deixe-o para 0 se você tiver slots ilimitados disponíveis
 
-|Registration URL
-|Required if "Registration type" is "On a different platform"
-|Must be an URL. Link to go on the external service that you are using for registrations.
+|URL de Registro
+|Necessário se "Tipo de registro" estiver "Em uma plataforma diferente"
+|Deve ser uma URL. Link para continuar com o serviço externo que você está usando para registros.
 
-|Private meeting
-|Optional
-|Check if the meeting shouldn't be visible for all the visitors. Specific to "Official meetings".
+|Reunião privada
+|Opcional
+|Verifique se a reunião não deve ser visível para todos os visitantes. Específico para "Reuniões oficiais".
 
-|Transparent
-|Optional
-|Related to "Private meeting", check if the meeting should be visible for all the visitors but they shouldn't be able to
-participate in. Specific to "Official meetings". Specific to "Official meetings".
+|Transparente
+|Opcional
+|Relacionados a "Reunião Privada", verifique se a reunião deve ser visível para todos os visitantes, mas não devem ser capazes de
+participar. Específico para "Reuniões oficiais". Específico para "Reuniões oficiais".
 
-|Customize registration email
-|Optional
-|Wheter you want to add a message in the registration email. Specific to "Official meetings".
+|Personalizar e-mail de registro
+|Opcional
+|Você deseja adicionar uma mensagem no e-mail de registro. Específico para "Reuniões oficiais".
 
-|Registration email custom content
-|Required if "Customize registration email" is checked
-|The content of the customized email. This text will appear in the middle of the registration confirmation email. Just
-after the registration code. Specific to "Official meetings".
-|===
-
-You can also define *Services* inside of a Meeting. These are metadata that allows to comunicate, for instance, if there's
-a place for children, deaf assistance, translations, etc. You can have multiple services inside of a meeting.
-
-
-.Create meeting - Services
-|===
-|Field |Type |Description
-
-|Title
-|Required
-|Title of the service.
-
-|Description
-|Optional
-|Description of the service.
+|Registro de conteúdo personalizado do e-mail
+|Obrigatório se "Personalizar e-mail de registro" estiver marcado
+|O conteúdo do e-mail personalizado. Este texto aparecerá no meio do e-mail de confirmação de registro. 
+após o código de registro. Específico para "Reuniões oficiais".
 |===
 
-== Actions
+Você também pode definir *Serviços* dentro de uma Reunião. Estes são metadados que permitem comunicar, por exemplo, se houver
+um lugar para crianças, assistência surda, traduções, etc. Você pode ter vários serviços dentro de uma reunião.
 
-=== Citizens meetings
 
-
-.Actions - Citizens meetings
+.Criar reunião - Serviços
 |===
-|Icon |Name |Definition
+|Campo |tipo |Descrição:
 
-|image:action_preview.png[Preview icon]
-|Preview
-|To see how it's shown in the frontend to participants.
+|Título
+|Obrigatório
+|Título do serviço.
 
-|image:action_permissions.png[Permissions icon]
-|Permissions
-|To handle the permissions of this meeting, depending on the verification a participant has. Allows an admin to configure
-who can *Join* a meeting.
+|Descrição:
+|Opcional
+|Descrição do serviço.
 |===
 
-=== Official meetings
+== Ações.
+
+=== Reuniões de cidadãos
 
 
-.Actions - Official meetings
+.Ações - Cidadãos reuniões
 |===
-|Icon |Name |Definition
+|Ícone |Nome: |Definição
 
-|image:action_publish.png[Publish icon]
-|Publish
-|To show publicly the meeting.
+|imag:action_preview.png[Ícone de visualização]
+|Pré-visualizar
+|Para ver como é mostrado na interface a participantes.
 
-|image:action_publish.png[Unpublish icon]
-|Unpublish
-|To not show publicly the meeting.
+|imagem:action_permissions.png[Ícone de permissões]
+|Permissões
+|Para manipular as permissões desta reunião, dependendo da verificação que um usuário possui. Permite que um administrador configure
+que pode *participar* de uma reunião.
+|===
 
-|image:action_preview.png[Preview icon]
-|Preview
-|To see how it's shown in the frontend to participants.
+=== Encontros oficiais
 
-|image:action_duplicate.png[Duplicate icon]
+
+.Ações - Encontros oficiais
+|===
+|Ícone |Nome: |Definição
+
+|image:action_publish.png[Ícone de publicação]
+|Publicar
+|Para mostrar publicamente a reunião.
+
+|imag:action_publish.png[Cancelar ícone publicar]
+|Despublicar
+|Não mostrar publicamente a reunião.
+
+|imag:action_preview.png[Ícone de visualização]
+|Pré-visualizar
+|Para ver como é mostrado na interface a participantes.
+
+|imag:action_duplicate.png[Ícone duplicado]
 |Duplicate
-|Allows an admin to duplicate a meeting.
+|Permite que um administrador duplique uma reunião.
 
-|image:action_registrations.png[Registrations icon]
+|image:action_registrations.png[Ícone de registros]
 |xref:admin:components/meetings/registrations.adoc[Registrations]
-|Allows to define who can register for attending to the meeting.
+|Permite definir quem pode se inscrever para participar da reunião.
 
-|image:action_edit.png[Edit icon]
-|Edit
-|Edit form for a Meeting. It's the same form as "Create a new meeting".
+|image:action_edit.png[Ícone de edição]
+|Alterar
+|Editar o formulário para uma reunião. É a mesma forma que "Criar uma nova reunião".
 
-|image:action_agenda.png[Agenda icon]
+|image:action_agenda.png[Ícone da agenda]
 |xref:admin:components/meetings/agenda.adoc[Agenda]
-|To add the topics that will be discussed in the meeting.
+|Para adicionar os tópicos que serão discutidos na reunião.
 
-|image:action_list.png[Poll icon]
+|imagem:action_list.png[Ícone da enquete]
 |xref:admin:components/meetings/polls.adoc[Polls]
-|To manage the polls for this online meeting.
+|Para gerenciar as enquetes para esta reunião on-line.
 
-|image:action_close.png[Close icon]
+|imagem:action_close.png[Fechar ícone]
 |xref:admin:components/meetings/close.adoc[Close]
-|Allows and admin to Close the meeting and add extra information.
+|Permite e o administrador fechar a reunião e adicionar informações extras.
 
-|image:action_folder.png[Folders icon]
-|Folders
-|For classifying Attachments.
+|image:action_folder.png[Ícone de pastas]
+|Pastas
+|Para classificar Anexos.
 
-|image:action_attachments.png[Attachments icon]
-|Attachments
-|Documents that are related to the meeting.
+|imagem:action_attachments.png[Ícone de anexos]
+|Anexos
+|Documentos que estão relacionados à reunião.
 
-|image:action_permissions.png[Permissions icon]
-|Permissions
-|To handle the permissions of this meeting, depending on the verification a participant has. Allows an admin to configure
-who can *Join* a meeting.
+|imagem:action_permissions.png[Ícone de permissões]
+|Permissões
+|Para manipular as permissões desta reunião, dependendo da verificação que um usuário possui. Permite que um administrador configure
+que pode *participar* de uma reunião.
 
-|image:action_delete.png[Delete icon]
-|Delete
-|To delete this meeting.
+|imagem:action_delete.png[Excluir ícone]
+|excluir
+|Para excluir esta reunião.
 |===
 
-== Meetings features
+== Características das reuniões
 
-There are different kinds of features that can be enabled in meetings, such as:
+Existem diferentes tipos de características que podem ser habilitadas em reuniões, tais como:
 
-* xref:admin:components/meetings/registrations.adoc[Registrations]: for managing how particpant can register to attend the meeting.
-* xref:admin:components/meetings/agenda.adoc[Agenda]: for seeing the topics that will be discussed in the meeting by minutes.
-* xref:admin:components/meetings/polls.adoc[Polls]: for quick voting during an online meeting.
-* xref:admin:components/meetings/close.adoc[Close]: for adding the final report on what was discussed in the meeting.
+* xref:admin:components/meetings/registrations.adoc[Registrations]: para gerenciar quão partícula pode se registrar para participar da reunião.
+* xref:admin:components/meetings/agenda.adoc[Agenda]: para ver os tópicos que serão discutidos na reunião por minutos.
+* xref:admin:components/meetings/polls.adoc[Polls]: para uma votação rápida durante uma reunião on-line.
+* xref:admin:components/meetings/close.adoc[Close]: para adicionar o relatório final sobre o que foi discutido na reunião.
 
-== Online meetings
+== Reuniões online
 
-Depending in the moment and configuration of the meeting, there could be different messages that will be shown to the participants.
+Dependendo do momento e da configuração da reunião, pode haver mensagens diferentes que serão mostradas aos participantes.
 
-. If the "Online meeting URL" ins't set, there'll be a message that says "Link available soon"
-image:components/meetings/online_meeting_available_soon.png[Online meeting available soon]
-. If the "Online meeting URL" is set, and a few minutes before the meeting start, the mesage will say "The link to join
-the meeting will be available a few minutes before it starts"
-image:components/meetings/online_meeting_available_before.png[Online meeting available before it starts]
-. If the "Online meeting URL" is set, and the start time of the meeting has arrived, then there'll be a message that says
-that "the meeting is happening right now", with a link to join the meeting.
-image:components/meetings/online_meeting_happening.png[Online meeting available before it starts]
+. Se a "URL de reunião online" não for definida, haverá uma mensagem que diz "Link disponível em breve"
+image:components/meetings/online_meeting_available_soon.png[Reunião online disponível em breve]
+. Se a "URL de reunião online" for definida, e alguns minutos antes do início da reunião, o tipo de mensagem dirá "O link para se juntar a
+a reunião estará disponível alguns minutos antes do início inicial"
+image:components/meetings/online_meeting_available_before. ng[Reunião Online disponível antes de iniciar]
+. Se a "URL de reunião Online" for definida, e o horário de início da reunião chegar, então haverá uma mensagem que diz
+que "a reunião está acontecendo agora", com um link para participar da reunião.
+image:components/reuniões/online_meeting_happening.png[Reunião online disponível antes de começar]
