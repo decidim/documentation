@@ -1,106 +1,106 @@
-= System
+= SISTEMA
 
-Every Decidim is multi-tenant by default. That means that you can have multiple organizations inside of your same installation. This is being used for instance for the Barcelona and Girona Provincials Governments, for offering Decidim installations to many small cities, or by the City of Barcelona, for giving service to lots of organizations (NGOs, cooperatives, etc).
+Cada Decidim é multi-inquilino por padrão. Isso significa que você pode ter várias organizações dentro da mesma instalação. Isto está a ser utilizado, por exemplo, nos governos de Barcelona e de Girona Provincials para oferecer instalações decidim a muitas cidades pequenas. ou pela Cidade de Barcelona, por prestar serviço a muitas organizações (ONG, cooperativas, etc).
 
-Even if you only have one Organization you also need to create one through the System Panel. It's available after you've installed Decidim, at `/system`. For instance if you domain is `example.org`, then it should be available at `http://example.org/system`.
+Mesmo que você tenha apenas uma organização, você também precisa criar uma através do Painel do Sistema. Está disponível depois de você instalar o Decidim, em `/system`. Por exemplo, se você é o domínio `example.org`, então ele deve estar disponível em `http://example.org/system`.
 
-After you've freshly installed Decidim, you'll be redirected to the System panel log-in page:
+Depois de instalar recentemente o Decidim, você será redirecionado para a página de login do painel do sistema:
 
 image::system-log_in.png[system panel log in]
 
-== 1. Create an admin account
+== 1. Criar uma conta de administrador
 
-For logging in to this dashboard, you'll need to create a system admin account from your terminal:
+Para fazer login neste painel, é necessário criar uma conta de administrador do sistema a partir do seu terminal:
 
 [source, console]
 ....
 bin/rails decidim_system:create_admin
 ....
 
-You'll be asked for an email and a password. For security, the password will not get displayed back at you and you'll need to confirm it.
+Você será solicitado um e-mail e uma senha. Por segurança, a senha não será exibida de volta a você e você precisará confirmar.
 
-== 2. Access the Dashboard
+== 2. Acessar o Painel
 
-With the email and password that you've added in the past step, you'll be able to log in. After you've logged in, you'll see an empty dashboard:
+Com o e-mail e a senha que você adicionou na etapa anterior, poderá fazer o login. Após iniciar a sessão, você verá um painel vazio:
 
 image::system-dashboard.png[system empty dashboard]
 
-== 3. Create a new organization
+== 3. Criar uma nova organização
 
-Inside of the system panel, you need to create your Organization through the form:
+Dentro do painel do sistema, você precisa criar sua organização através do formulário:
 
-TIP: Please mind that some of these fields can't change through the System Form, as changing them could potentially leave your database in a broken state. You can change it through the console, but you'll be on your own.
+TIP: Tenha em mente que alguns desses campos não podem mudar através do Formulário de Sistema, já que alterá-los pode potencialmente deixar seu banco de dados em um estado com problemas. Você pode mudar isso através do console, mas ficará por conta própria.
 
 
-.System New Organization form
+.Novo formulário de organização do sistema
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Name
-|Required
-|Name of your organization. For instance, "Decidim Barcelona".
+|Nome:
+|Obrigatório
+|Nome da sua organização. Por exemplo, "Decidim Barcelona".
 
-|Reference prefix
-|Required
-|The reference prefix is used to uniquely identify resources across all organizations. It's for identifying different resources inside of Decidim. For instance, "BCN". You can change how it's created this reference through xref:configure:initializer.adoc[Decidim's initializer] (see **Custom resource reference**).
+|Prefixo de referência
+|Obrigatório
+|O prefixo de referência é usado para identificar exclusivamente recursos em todas as organizações. É para identificar diferentes recursos dentro do Decidim. Por exemplo, "BCN". Você pode mudar como ele foi criado essa referência através de xref:configure:initializer.adoc[Inicializador do Decidim] (veja **Referência de recurso personalizada**).
 
-|Host
-|Required
-|Fully qualified domain name. For instance, "example.org" or "decidim.barcelona".
+|Servidor
+|Obrigatório
+|Nome de domínio totalmente qualificado. Por exemplo, "example.org" ou "decidim.barcelona".
 
-|Secondary hosts
-|Optional
-|Others domains or subdomains that point to this same installation. Normally this shouldn't be used. Enter each one of them in a new line. For instance, "example.com"
+|Hosts secundários
+|Opcional
+|Outros domínios ou subdomínios que apontam para esta mesma instalação. Normalmente isto não deveria ser usado. Insira cada um deles em uma nova linha. Por exemplo, "example.com"
 
-|Organization admin name
-|Required
-|Name of the admin account. For instance, "Admin"
+|Nome do administrador da organização
+|Obrigatório
+|Nome da conta de administrador. Por exemplo, "Admin"
 
-|Organization admin email
-|Required
-|Email for the admin account. For instance, "admin@example.org"
+|E-mail do administrador da organização
+|Obrigatório
+|E-mail para a conta do administrador. Por exemplo, "admin@example.org"
 
-|Organization locales
-|Required
-|You'll need to configure at least one language. Decidim is multilanguage, meaning that you can have most of the admin contents with any number of languages. For seeing other languages you'll need to configure first the xref:configure:initializer.adoc[Decidim's initializer].
+|Localidades da organização
+|Obrigatório
+|Você precisará configurar pelo menos um idioma. Decidim é multilinguagem, o que significa que você pode ter a maior parte do conteúdo de administrador com qualquer número de idiomas. Para ver outros idiomas você precisará configurar primeiro o xref:configure:initializer.adoc[Inicializador do Decidim].
 
-|Force authentication
-|Optional
-|Check if you want to **Force users to authenticate before access organization**. That means that they don't see any published content and they only have access to the log-in form.
+|Forçar autenticação
+|Opcional
+|Verifique se você deseja **Forçar usuários a autenticar antes de acessar a organização **. Isso significa que eles não vêem nenhum conteúdo publicado e eles só têm acesso ao formulário de login.
 
-|Users registration mode
-|Optional
-|Control how you want the login / participant register or signup to work. See below.
+|Modo de registro de usuários
+|Opcional
+|Controle como você deseja que o registro de usuário ou seu cadastro funcione. Veja abaixo.
 
-|Available authorizations
-|Optional
-|How you want to authorize and verify that your participants are who they say they are. It depends a lot on your Organization, country, etc. See xref:customize:authorizations.adoc[Authorizations customization].
+|Autorizações disponíveis
+|Opcional
+|Como você deseja autorizar e verificar se seus participantes são quem eles dizem que são. Depende muito da sua organização, do seu país, etc. Veja xref:customize:authorizations.adoc[Personalização de autorizações].
 
-|SMTP settings
-|Optional
-|Allows you to configure different SMTP servers for every Organzation in this installation. See xref:services:smtp.adoc[SMTP configuration].
+|Configurações de SMTP
+|Opcional
+|Permite configurar diferentes servidores SMTP para cada organização nesta instalação. Veja xref:services:smtp.adoc[Configuração SMTP].
 
-|Omniauth settings
-|Optional
-|Allows you to configure through external OAUTH providers for every Organization in this installation. See xref:services:social_providers.adoc[Social providers configuration].
+|Configurações Omniauth
+|Opcional
+|Permite configurar por provedores de OAUTH externos para cada organização nesta instalação. Veja xref:services:social_providers.adoc[Configuração de provedores sociais].
 |===
 
-=== Users registration mode
+=== Modo de registro de usuários
 
-==== Allow participants to register and login
+==== Permitir que os usuários se registrem e efetuem login
 
-Most of the installations use this setting. Means that everyone can register a participant account and login, without restrictions, only with an email account confirmation (and you can disable that confirmation also if you want to through xref:configure:initializer.adoc[Decidim's initializer])
+A maioria das instalações utilizam este ajuste. Significa que todos podem registrar uma conta de usuário e fazer login, sem restrições, somente com uma conta de e-mail de confirmação (e você pode desabilitar essa confirmação também se você quiser através de xref:configure:initializer. doc[Inicializador do decidim])
 
-==== Don't allow participants to register, but allow existing participants to login
+==== Não permitir que os usuários se registrem, mas permitir que usuários existentes façam login
 
-This is for when you make a manual import of participants' accounts.
+Isso é para quando você faz uma importação manual de contas de participantes.
 
-==== Access only can be done with external accounts
+==== O acesso só pode ser feito com contas externas
 
-In the case where you have an external provider configured (like the `Omniauth settings`) and you want to have accounts from only this provider.
+No caso de você ter um provedor externo configurado (como o `Omniauth configurações`) e você deseja ter contas apenas deste provedor.
 
-== [Optional] 4. Edit an organization
+== [Optional] 4. Editar uma organização
 
-Finally, you can also Edit an organization, although some fields can not be changed as some contents in the database depends on them.
+Finalmente, você também pode editar uma organização, embora alguns campos não possam ser alterados, uma vez que alguns conteúdos da base de dados dependem deles.
 
-For accessing your newly created Organization, you can do it going to the domain or subdomain that you've configured in `Host`.
+Para acessar sua organização recém-criada, você pode fazer isso indo para o domínio ou subdomínio que você configurou no `Host`.
