@@ -1,0 +1,45 @@
+= Medienlinks
+
+Konferenzen können einen Abschnitt mit dem Titel "Medien und Links" haben. Es zeigt eine Liste von Mediendateien und Links, die der Konferenz zugeordnet sind.
+
+Die Mediendateien sind die Dateien aus den Abschnitten xref:admin:spaces/conferences/attachments.adoc[attachments].
+Die Medienlinks sind in einem Abschnitt im Admin-Panel der Konferenz definiert.
+
+image:spaces/conferences/media_links_frontend.png[Conferences media links (frontend)]
+
+== Neuen Medienlink erstellen
+
+image:spaces/conferences/media_links_backend.png[Conferences media links]
+
+Zum Erstellen eines neuen Medienlinks einer Konferenz:
+
+. Als Administrator anmelden
+. Gehe zum Konferenz-Abschnitt in der Sidebar
+. Klicken Sie auf die Konferenz Bearbeiten Aktion
+. Klicken Sie auf den Link "Medienlinks" in der Seitenleiste
+. Klicken Sie auf den "New Media Link"-Button
+. Formular ausfüllen
+
+image:spaces/conferences/new_media_link.png[Erstellen einer neuen Konferenz Medienlink]
+
+
+.Neues Medienlink-Formular
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Der Titel des Links
+
+|Link
+|Benötigt
+|URL des Links
+
+|Datum
+|Benötigt
+|Veröffentlichungsdatum des Links
+
+|Gewicht
+|Optional
+|Welche Bestellung hat er in Bezug auf die anderen Links. Eine niedrigere Zahl bedeutet eine höhere Priorität. Zum Beispiel, wenn Sie zwei Links haben, "Link a" mit Gewicht "10" und "Link b" mit Gewicht "0", dann ist "Link b" zuerst bei der Bestellung.
+|===
