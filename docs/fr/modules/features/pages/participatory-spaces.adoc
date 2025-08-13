@@ -1,0 +1,66 @@
+= Espaces participatifs
+
+:page-partial:
+
+Les espaces participatifs définissent les principaux canaux participatifs. Ils sont affichés dans le menu principal de la plateforme.
+
+La logique de base de la structure de Decidim est que *les composants travaillent ensemble dans les espaces participatifs*. Il y a différents types d'espaces (initiatives, processus, consultations et assemblées) et diverses instances dans chaque type (un processus pour une élection et un autre pour les budgets participatifs, organe de conseil pour les quartiers et un autre pour les travailleurs, une initiative visant à demander une modification de la législation et une autre pour que quelque chose soit inscrit à l'ordre du jour d'une réunion plénière, etc.).
+
+== Processus
+
+Les processus participatifs nécessitent un formulaire général de *configuration* avec les champs suivants : titre ou nom du processus ; nom court pour l'URL ; balise hash (utilisée comme référence pour les communications sur les réseaux sociaux); description courte; description longue; image de la page d'accueil; image de la bannière; date de début et de fin; champ ; groupe de promoteurs (responsable du processus participatif au niveau politique) peut être l'autorité locale ou un groupe composé d'experts/politiciens, d'associations et d'autres organisations de l'autorité ; à qui il est destiné; but du processus participatif et de la structure participative. Le processus participatif permet d'ajouter des *documents d'accompagnement*.
+
+Les processus participatifs sont divisés en *étapes* (par exemple, 1. Étape d'information et de convocation ; 2. stade de diagnostic; 3. l'étape des propositions; 4. la phase de priorisation; 5. étape de la décision; 6. étape d'évaluation et 7. stade de la surveillance des résultats). Chaque étape comprend les champs de configuration suivants : titre, description, date de début, date de fin.
+
+*Les surlignements des annonces ou des textes* peuvent également être affichés dans les processus, à la fois sur la page d'accueil et dans le titre de chaque composant (propositions, discussions et débats, etc.) Différents messages peuvent être configurés en fonction de l'étape particulière d'un processus.
+
+Un *outil de configuration participatif* permet l'activation et la désactivation simples des étapes et de leurs composants. L'outil de configuration du processus de Decidim est l'une de ses fonctionnalités les plus puissantes en permettant une flexibilité totale dans la conception de processus participatifs en fonction des différentes réalités et formes de participation des citoyens.
+
+La fonctionnalité des **groupes de processus** permet de regrouper différents processus, par exemple par les budgets participatifs des différents districts ou quartiers.
+
+Les processus participatifs peuvent avoir l'un des *statuts de processus* suivants : 0) publié ou non publié; 1) ouvert (commencé); 2) clôturé (le processus participatif est terminé mais ses résultats sont toujours en cours ; 3) terminé (tant le processus que la phase de résultats sont terminés) et 4) futur (n'a pas encore commencé).
+
+Un processus peut être **mis en évidence** (ce qui augmente sa visibilité sur la page d'accueil).
+
+Il y a aussi la possibilité de **copier les processus participatifs** depuis le panneau d'administration. Cette fonctionnalité permet de concevoir et de copier des modèles de processus afin que certains détails puissent être configurés dans les nouveaux processus, en évitant la nécessité de les créer à partir de zéro.
+
+== Ruches
+
+Decidim permet la **création et la configuration** de *assemblées* participatives ou gouvernementales (organismes gouvernementaux ou participatifs; conseils, groupes de travail, etc.) définis comme des groupes de participants structurés qui, que ce soit au niveau individuel ou représentatif, se réunissent périodiquement, avec l'autorité de faire des propositions et des décisions.
+
+La *section des assemblées* vous permet de voir une liste complète de tous les assemblages qui sont activés et configurés à partir du panneau d'administration. Les *paramètres* de base nécessitent les champs suivants à remplir pour chaque corps : nom ; image ; portée (global, territorial ou sectoriel); fonction du corps (but de l'action); type d'organe (gouvernement, exécutif, consultatif, consultatif, participatif, groupe de travail, commission…). ; date de création ; créée à l'initiative du Conseil de la ville, des citoyens ou d'autres); durée (indéterminée ou fixée, dans ce dernier cas, date d'expiration); date d'inclusion dans Decidim; date de fermeture et de raison; comment elle est organisée (fonctions, pouvoirs, etc.). ; composition; s'il peut être rejoint et comment le faire; méthode de choix des membres; type/fonction des membres au sein du corps; la composition des groupes de travail internes en tant que comités de suivi ou de consultation; caractéristiques de l'organisme; les réseaux sociaux du corps (nom du réseau social et du lien) et les prochaines réunions du corps.
+
+* *Organiser des réunions* : permet d'envoyer automatiquement des invitations à des réunions, de créer des ordres du jour et de s'inscrire. Pour une liste complète des fonctionnalités, voir le composant "réunions".
+* *Caractéristiques de l'assemblée* : caractéristiques ouvertes, publiques, transparentes et autres concernant le niveau de participation que l'assemblage permet.
+* *Composition :* Cela permet de définir la composition du corps plus en détail, en utilisant les profils des participants associés au corps ainsi que d'autres caractéristiques. Un affichage de la structure du corps est automatiquement généré en fonction de la composition des membres participants :
+** *Types de membres* : président, vice-président, secrétaires, autres
+** *Origine de l'adhésion*: par tirage, élection directe, représentation d'une autre assemblée, représentation du gouvernement, etc.
+** *Groupes de travail internes* : pour la création de sous-assemblages. Les groupes de travail seront en mesure de relier le corps auquel ils appartiennent
+** *Caractéristiques* : Ouvrir/fermé; transparent; avec différents permis d'accès.
+* *Affichage* : nous permet de visualiser des données internes sur chaque corps ainsi que les associations entre assemblées
+** *Composition* : la structure d'un corps est affichée sous la forme d'un diagramme circulaire
+** *Graphiques d'organisation* : permet de visualiser la hiérarchie ou le réseau des assemblées et de leurs associations.
+* *Carte et calendrier* : permet de visualiser l'emplacement de toutes les assemblées sur une carte et un calendrier
+* *Participation avec d'autres espaces et composants*
+** *Participation aux processus* : les assemblages peuvent être des groupes de promoteurs, lancer un processus ou faire des propositions dans le cadre d'un processus. La composition d'un corps peut être le résultat d'un processus (pour l'élection des postes)
+** *Propositions et résultats* : un organisme peut générer ses propres propositions ou résultats.
+*** Il montre comment la proposition a été approuvée (par consensus, majorité, nombre de voix...).
+** *Réunions* : les assemblées auront une liste des réunions associées, mais certaines caractéristiques peuvent passer d'une réunion à une autre, comme les initiatives citoyennes pour inclure un point dans un ordre du jour. De même, il doit être possible de voir les procès-verbaux séparément de la réunion, car ils sont directement associés à l'organisme.
+
+== Initiatives
+
+*Initiatives*. Cet espace participatif permet aux citoyens de faire des propositions et de collecter le *nombre requis de signatures et/ou d'approbations* selon le type (les différents types sont définis dans les règlements municipaux), donnant lieu au début de la procédure administrative pour son traitement et son contrôle par les citoyens.
+
+Les initiatives fonctionnent comme suit :
+
+* Toute personne ou association de citoyens peut faire une proposition d'initiative citoyenne. Il existe *plusieurs types d'initiatives* avec différents nombres d'approbations/signatures nécessaires à leur traitement (toutes sont configurables). À partir de la page de création d'initiative, une description de chacune des méthodes, le nombre de signatures requises et des exemples (par exemple des vidéos explicatives) peuvent être consultés.
+* Pour éviter les doublons, une fois qu'une initiative a été créée, le système présentera des suggestions pour **des initiatives similaires** avant de poursuivre l'étape suivante. Une fois que des propositions similaires auront été exclues, la forme spécifique sera affichée pour chaque type d'initiative, ainsi que le nombre minimum d'approbations requises. Le créateur a alors à sa disposition une URL qui peut être utilisée pour inviter d'autres personnes à participer et à soutenir l'initiative. Une carte est également affichée indiquant les lieux des points de rencontre pour recueillir des signatures s'il y en a.
+* Une fois que l'initiative a été créée, l'initiative passera à l'étape de **modération et validation technique** où le personnel du conseil municipal peut répondre de différentes manières (en l'approuvant, en le rejetant ou en suggérant des amendements).
+* Les initiatives peuvent être surveillées et les **notifications reçues sur les statuts** mis à jour, en plus de ce que leur promoteur ou groupe individuel peut envoyer périodiquement des bulletins d'information à d'autres utilisations de la plate-forme qui ont choisi de suivre l'initiative.
+* À la date de fin spécifiée, une initiative peut avoir deux états possibles :
+** *Rejeté* : s'il ne parvient pas à atteindre le nombre minimum de signatures, un message sera affiché indiquant "ne correspond pas au nombre de signatures requises" et le créateur de l'initiative sera notifié.
+** *Accepté* : si elle a atteint un nombre suffisant de signatures ou d'approbations, elle sera acceptée et la procédure correspondante commencera.
+
+== Consultations
+
+Consultations (une procédure de vote où tous les participants de l’organisation sont invités à voter sur des questions spécifiques), permet aux participants **de se renseigner sur les consultations en cours ou éventuelles**, de *discuter et débat* sur le sujet de la consultation et de *surveiller* les résultats. Il fournit également une *passerelle vers un système de vote électronique* qui est externe à Decidim mais intégré dans l'interface afin de gérer et de vérifier les identités.
