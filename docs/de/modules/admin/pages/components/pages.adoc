@@ -1,0 +1,85 @@
+= Seite
+
+Die Seitenkomponente erlaubt es den Menschen, Informationen über einen Raum zu erhalten. Es ist ähnlich der allgemeinen xref:admin:pages. doc[Pages] Admin-Sektion, mit
+der Hauptunterschied ist, dass diese Komponente es erlaubt Seiten in einem Raum zu definieren und der allgemeine Seitenadministrator-Bereich erlaubt es
+Seiten für alle Plattformen zu definieren (z. B. Hilfeseiten, Nutzungsbedingungen oder FAQs), die keinem Raum zugeordnet sind.
+
+Von diesem Ausgangspunkt aus könnte es andere Konfigurationen geben, wie:
+
+Einige Beispiele, wo diese Komponente verwendet wurde:
+
+* https://www.decidim.barcelona/processes/PressupostosParticipatius/f/4691/[Weitere Informationsseite im Partizipativen Haushaltsverfahren 2020 in Decidim Barcelona]
+
+image:components/page/example01.png[Mehr Informationen Seite im Jahr 2020 Teilnehmender Budgetierungsprozess in Decidim Barcelona - Frontend]
+image:components/page/example02. ng[Weitere Informationsseite im Partizipatorischen Budgetverfahren 2020 in Decidim Barcelona - Backend]
+
+Seitenkomponente konfigurieren:
+
+. Als Admin anmelden
+. Zum Admin-Panel wechseln
+. Wählen Sie in der Haupt-Seitenleiste den Bereich aus, unter dem Sie die Komponente konfigurieren möchten.
+Zum Beispiel "Prozesse", "Assemblies" oder "Konferenzen"
+. Gehe zu Komponenten
+. Auf "Komponente hinzufügen"-Button klicken
+. Klicken Sie auf "Page"
+. Das Formular xref:_add_component[Komponente hinzufügen] ausfüllen
+
+== Komponente hinzufügen
+
+image:components/page/component.png[Komponentenform] hinzufügen
+
+
+.Komponente hinzufügen: Seitenformular
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Wie lautet der Titel dieser Komponente. Zum Beispiel "Mehr Informationen".
+
+|Bestellposition
+|Optional
+|Welche Bestellung hat er in Bezug auf die anderen Seiten. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+Zum Beispiel, wenn Sie zwei Seiten haben, "Seite a" mit dem Gewicht "10" und "Seite b" mit dem Gewicht "0", dann wird "Seite b" zuerst bei der Bestellung sein.
+|===
+
+
+.Komponente hinzufügen: Seitenformular - Globale Einstellungen
+|===
+|Feld |Typ |Beschreibung
+
+|Mitteilung
+|Optional
+|Eine allgemeine Ankündigung, die auf der generellen Seiten-Zielseite zu sehen sein wird.
+|===
+
+In den Fällen, in denen der Platz, den diese Komponente verwendet wird, xref:admin:spaces/processes/phases hat. doc[Phases], zum Beispiel in
+xref:admin:spaces/processes.adoc[Participatory Processes], dann können Sie auch unterschiedliche Verhaltensweisen pro Schritt definieren.
+
+
+.Komponente hinzufügen: Seitenformular - Schritteinstellungen
+|===
+|Feld |Typ |Beschreibung
+
+|Mitteilung
+|Optional
+|Eine allgemeine Ankündigung, die auf der allgemeinen Seite der Seitenlandung zu sehen sein wird.
+|===
+
+== Berechtigungen
+
+Da diese Komponente es nicht erlaubt, etwas zu tun, gibt es keine Berechtigung zum Einrichten.
+
+=== Neues Seitenformular
+
+image:components/page/new_page.png[Neue Seitenform]
+
+
+.Neues Seitenformular
+|===
+|Feld |Typ |Beschreibung
+
+|Körper
+|Benötigt
+|Was ist der Körper für die Seite.
+|===
