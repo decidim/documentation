@@ -1,56 +1,56 @@
-= Categories
+= categorias
 
-Categories (and subcategories) are used for classifying resources inside of a space.
+Categorias (e subcategorias) são utilizadas para classificar os recursos dentro de um espaço.
 
-An administrator can define them, can be assigned to when creating resources, and then participants can filter the
-different resources by these categories. For instance, they can be set up in proposals, meetings and debates.
+Um administrador pode defini-los, pode ser atribuído ao criar recursos, e então os participantes podem filtrar
+recursos diferentes por essas categorias. Por exemplo, podem ser criadas em propostas, reuniões e debates.
 
-As an example of this mechanism in action you can see it in https://meta.decidim.org/processes/roadmap/f/122/[Propose new functionalities for Decidim software] process:
+Como um exemplo desse mecanismo em ação, você pode vê-lo em https://meta.decidim.org/processes/roadmap/f/122/[Propor novas funcionalidades para o software decidim]:
 
-. Administrators have defined the categories in the process.
-. Participants can create proposals that have one category.
-. Participants can filter by these categories and navigate among all the proposals.
+. Os administradores definiram as categorias no processo.
+. Os usuários podem criar propostas que têm uma categoria.
+. Os participantes podem filtrar por estas categorias e navegar entre todas as propostas.
 
-image:spaces/categories_sidebar.png[Filter categories in proposals]
+imagem:spaces/categories_sidebar.png[Filtrar categorias nas propostas]
 
-image:spaces/categories_form.png[Select a category when creating a proposal]
+imagem:spaces/categories_form.png[Selecione uma categoria quando criar uma proposta]
 
-NOTE: Once a category is in use it cannot be removed, as there are resources that are using it.
+NOTE: Uma vez que uma categoria esteja em uso, ela não pode ser removida, pois há recursos que a estão usando.
 
-Decidim has other ways to classify resources, for instance xref:admin:scopes.adoc[Scopes] and xref:admin:features/hashtags.adoc[Hashtags].
-The main difference is that Categories can be defined in a given space, Scopes are global for all the platform, and Hashtags
-are defined by the participants.
+Decidim tem outras maneiras de classificar recursos, por exemplo xref:admin:scopes.adoc[Scopes] and xref:admin:features/hashtags.adoc[Hashtags].
+A principal diferença é que as Categorias podem ser definidas em um determinado espaço, Âmbitos são globais para todas as plataformas, e Hashtags
+são definidas pelos participantes.
 
-Categories can be nested, meaning that a category can have subcategories.
+As categorias podem ser aninhadas, o que significa que uma categoria pode ter subcategorias.
 
-== Create a new category
+== Criar uma nova categoria
 
-For configuring a new category, go to the space admin panel and click on the "Categories" tab.
+Para configurar uma nova categoria, vá para o painel de administração do espaço e clique na guia "Categorias".
 
-image:spaces/categories.png[View categories in a space admin page]
+imagem:spaces/categories.png[Ver categorias na página de administração do espaço]
 
-Then click in "Add category" and fill the form.
+Em seguida, clique em "Adicionar categoria" e preencha o formulário.
 
-image:spaces/categories_new_form.png[Create a new category form]
+imagem:spaces/categories_new_form.png[Crie um novo formulário de categoria]
 
 
-.Create category
+.Criar categoria
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Name
-|Required
-|What is the name for this category.
+|Nome:
+|Obrigatório
+|Qual é o nome para esta categoria.
 
-|Weight
-|Optional
-|Which order will it have in relation to the other categories. Having a lower number means a higher priority. For instance, if you have two categories, "Category a" with weight "10" and "Category b" with weight "0", then "Category b" will be first when ordering.
+|Peso
+|Opcional
+|Qual será a ordem em relação às outras categorias. Ter um número menor significa uma prioridade mais alta. Por exemplo, se você tem duas categorias, "Categoria a" com peso "10" e "Categoria b" com peso "0", em seguida "Categoria b" será o primeiro na ordenação.
 
-|Description
-|Required
-|A long description explaining what this category is about.
+|Descrição:
+|Obrigatório
+|Uma longa descrição explicando sobre o que é esta categoria.
 
-|Parent
-|Optional
-|What is the parent category.
+|Antecessor
+|Opcional
+|Qual é a categoria pai.
 |===
