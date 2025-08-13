@@ -1,256 +1,256 @@
-= Survey
+= Encuesta
 
-The Survey component allows people to answer questionnaires. This is useful when an organization wants to receive private
-feedback, although it's possible to publish the answers manually as well. It allows defining a set of questions with multiple kinds of answers.
+El componente Encuesta permite a las personas responder a los cuestionarios. Esto es útil cuando una organización quiere recibir comentarios
+privados, aunque es posible publicar las respuestas manualmente también. Permite definir un conjunto de preguntas con múltiples tipos de respuestas.
 
-From this starting point, there could be other configurations, such as:
+Desde este punto de partida, podría haber otras configuraciones, como:
 
-* if the answering is limited to a time period
-* what answer types should have the questions, like short (one line), long (multiple lines), single or multiple options,
-sorting through a list, etc.
-* if there's an answer validation like how many characters as maximum should have an answer
-* if there's a maximum number of options to select in multiple options questions
+* si la respuesta está limitada a un período de tiempo
+* qué tipos de respuesta deben tener las preguntas, como cortas (una línea), largas (múltiples líneas), opciones individuales o múltiples,
+ordenando a través de una lista, etc.
+* si hay una validación de respuesta como cuántos caracteres como máximo debe tener una respuesta
+* si hay un número máximo de opciones para seleccionar en múltiples opciones de preguntas
 
-Some examples of where this component was used:
+Algunos ejemplos de donde se usó este componente:
 
-* https://consultation.quebec.ca/processes/donneesquebec/f/82/[Data Quebec: participate in its improvement! (Données Québec : participez à son amélioration!) in Québec consultations]
-* https://meta.decidim.org/conferences/decidimfest2020/f/1403/?locale=en[DecidimFest2020 Assessment Survey]
+* https://consultation.quebec.ca/processes/donneesquebec/f/82/[Data Quebec: participe en su mejora! (Données Québec : ¡participez á son amélioration!) en las consultas de Québec]
+* https://meta.decidim.org/conferences/decidimfest2020/f/1403/?locale=es[Encuesta de evaluación DecidimFest2020]
 
-image:components/surveys/example01.png[Example of a survey]
+image:components/surveys/example01.png[Ejemplo de encuesta]
 
-To configure the Survey component:
+Para configurar el componente Encuesta:
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies" or "Conferences".
-. Go to components
-. Click on "Add component" button
-. Click on "Survey"
-. Fill the xref:_add_component[Add component] form
+. Iniciar sesión como administrador
+. Ir al panel de administración
+. En la barra lateral principal, haga clic en el botón para el espacio para el que desea configurar el componente.
+Por ejemplo, podría ser "Procesos", "Colmenas" o "Conferencias".
+. Ir a los componentes
+. Haga clic en el botón "Añadir componente"
+. Haga clic en "Encuesta"
+. Rellene el formulario xref:_add_component[Añadir componente]
 
-Once a survey is already answered by some users it's not possible to modify its questions, as that would affect the integrity
-of the answers. If it's needed to modify the questions, then it's needed to create a new survey and unpublish the original one.
+Una vez que una encuesta ya ha sido respondida por algunos usuarios, no es posible modificar sus preguntas, como eso afectaría la integridad
+de las respuestas. Si es necesario para modificar las preguntas, entonces es necesario crear una nueva encuesta y despublicar la original.
 
-== Add component
+== Añadir componente
 
-image:components/surveys/component.png[Add component form]
+imagen:components/surveys/component.png[Añadir formulario de componente]
 
 
-.Add component: Survey form
+.Añadir componente: formulario de encuesta
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Name
-|Required
-|What is the title of this component. For instance, "Surveys"
+|Nombre
+|Requerido
+|¿Cuál es el título de este componente. Por ejemplo, "Encuestas"
 
-|Order position
-|Optional
-|Which order will it have in relation to the other surveys. Having a lower number means a higher priority.
-For instance, if you have two surveys, "Survey a" with weight "10" and "Survey b" with weight "0", then "Survey b" will be first when ordering.
-|===
-
-
-.Add component: Survey form - Global settings
-|===
-|Field |Type |Description
-
-|Scopes enabled
-|Optional
-|Check if you want to have Scopes filtering in this component.
-
-|Scope
-|Optional
-|Which xref:admin:scopes.adoc[Scope] does this component belongs to.
-
-|Answers accepted from
-|Optional
-|Start date when you want to receive answers. Leave blank for no specific date. Expected format: dd/mm/yyyy hh:ii
-
-|Answers accepted until
-|End date when you want to stop receiving answers. Leave blank for no specific date. Expected format: dd/mm/yyyy hh:ii
-|Announcement
-
-|Optional
-|A general announcement that'll be visible on the general surveys landing page.
-|Delete answers when publishing the survey
+|Posición del pedido
+|Opcional
+|¿Qué orden tendrá en relación con las otras encuestas. Tener un número más bajo significa una prioridad mayor.
+Por ejemplo, si tiene dos encuestas, "Encuesta" con peso "10" y "Encuesta b" con peso "0", entonces "Survey b" será el primero al hacer el pedido.
 |===
 
-In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
-xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
 
-
-.Add component: Surveys form - Step settings
+.Añadir componente: Formulario de encuesta - Configuración global
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Allow answers
-|Optional
-|Check if you want to receive answers in this survey.
+|Ámbitos habilitados
+|Opcional
+|Marque si desea tener filtrado de Scopes en este componente.
 
-|Allow unregistered users to answer the survey
-|Optional
-|If active, no login will be required in order to answer the survey. This may lead to poor or unreliable data and it will
-be more vulnerable to automated attacks. Use with caution! Mind that this option only allows an answer by browser session,
-but participants can use the Private navigation option and make multiple answers with the same device.
+|Alcance
+|Opcional
+|A qué xref:admin:scopes.adoc[Scope] pertenece este componente.
 
-|Announcement
-|Optional
-|A general announcement that'll be visible on the general survey landing page.
-|===
+|Respuestas aceptadas de
+|Opcional
+|Fecha de inicio cuando quieras recibir respuestas. Dejar en blanco para ninguna fecha específica. Formato esperado: dd/mm/yyy hh:ii
 
-== Permissions
+|Respuestas aceptadas hasta
+|Fecha de fin cuando quieres dejar de recibir respuestas. Dejar en blanco para ninguna fecha específica. Formato esperado: dd/mm/yyy hh:ii
+|Anuncio
 
-An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
-certain actions in the surveys:
-
-* Answer
-
-== New survey form
-
-When you create a new survey you'll need to fill the form with the following fields:
-
-image:components/surveys/edit_form.png[Edit survey form]
-
-NOTE: Do you have repetitive surveys? For instance the same feedback form for every process? You can have a survey that
-gets copied and is used as a blueprint for so you don't have to manually configure the same survey everytime. Learn more
-about xref:_templates[Templates].
-
-
-.New survey form
-|===
-|Field |Type |Description
-
-|Title
-|Required
-|What is the title of this survey. For instance, "Feedback"
-
-|Description
-|Optional
-|What is the description of this survey.
-
-|Terms of service
-|Required
-|Legal conditions that the participants must agree to in order to answer the survey.
+|Opcional
+|Un anuncio general que será visible en la página de inicio de encuestas generales.
+|Borrar respuestas al publicar la encuesta
 |===
 
-In the bottom of this form there's a button that allows you to "Add question".
-
-image:components/surveys/add_question_button.png[]
-
-You can add multiple questions per survey, and reorder or delete them. It's possible to also add separators between questions.
-
-Every question has to have a statement and a type as a minimum.
-
-image:components/surveys/question_form.png[]
+En los casos en que el espacio que se utilizará este componente tiene xref:admin:spaces/processes/phases. doc[Phases], por ejemplo, en
+xref:admin:spaces/processes.adoc[Participatory Processes], entonces también puede definir diferentes comportamientos por paso.
 
 
-.Add question form
+.Añadir componente: Formulario de encuestas - Ajustes de paso
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Statement
-|Required
-|The question itself. For instance, "What is your age category?"
+|Permitir respuestas
+|Opcional
+|Marque si desea recibir respuestas en esta encuesta.
 
-|Description
-|Optional
-|Explanation of the question being made.
+|Permitir a los usuarios no registrados responder a la encuesta
+|Opcional
+|Si está activo, no será necesario iniciar sesión para responder a la encuesta. Esto puede llevar a datos pobres o poco confiables y
+será más vulnerable a ataques automatizados. ¡Usar con precaución! Ten en cuenta que esta opción sólo permite una respuesta por sesión del navegador,
+pero los participantes pueden usar la opción de navegación privada y hacer múltiples respuestas con el mismo dispositivo.
+
+|Anuncio
+|Opcional
+|Un anuncio general que será visible en la página de inicio de la encuesta general.
+|===
+
+== Permisos
+
+Un administrador puede elegir qué tipo de xref:customize:authorizations.adoc[Authorizations] un participante necesita tener que hacer
+ciertas acciones en las encuestas:
+
+* Respuesta
+
+== Nuevo formulario de encuesta
+
+Cuando crees una nueva encuesta necesitarás rellenar el formulario con los siguientes campos:
+
+imagen:components/surveys/edit_form.png[Editar formulario de encuesta]
+
+NOTE: ¿Tiene encuestas repetitivas? Por ejemplo, ¿el mismo formulario de comentarios para cada proceso? Puedes tener una encuesta que
+se copie y se utiliza como un plano para no tener que configurar manualmente la misma encuesta cada vez. Aprende más
+sobre xref:_templates[Templates].
+
+
+.Nuevo formulario de encuesta
+|===
+|Campo |Tipo |Descripción
+
+|Título
+|Requerido
+|¿Cuál es el título de esta encuesta. Por ejemplo, "Comentarios"
+
+|Descripción
+|Opcional
+|¿Cuál es la descripción de esta encuesta.
+
+|Términos de servicio
+|Requerido
+|Condiciones legales que los participantes deben aceptar para responder a la encuesta.
+|===
+
+En la parte inferior de este formulario hay un botón que le permite "Añadir pregunta".
+
+imagen:components/surveys/add_question_button.png[]
+
+Puede añadir varias preguntas por encuesta, y reordenarlas o eliminarlas. También es posible añadir separadores entre preguntas.
+
+Cada pregunta debe tener una declaración y un tipo como mínimo.
+
+imagen:componentes/encuestas/question_form.png[]
+
+
+.Añadir formulario de pregunta
+|===
+|Campo |Tipo |Descripción
+
+|Declaración
+|Requerido
+|La pregunta en sí. Por ejemplo, "¿Qué es tu categoría de edad?"
+
+|Descripción
+|Opcional
+|Explicación de la pregunta.
 
 |Mandatory
-|Optional
-|Check if this question is required to respond to submit the answer.
+|Opcional
+|Compruebe si esta pregunta es necesaria para responder a la respuesta.
 
-|Character limit
-|Optional
-|How many characters has as a maxim the answer to this question. Leave to 0 if no limit. Compatible with Short and Long answer question types.
+|Límite de caracteres
+|Opcional
+|Cuántos personajes tiene como máxima la respuesta a esta pregunta. Dejar a 0 si no hay límite. Compatible con los tipos de preguntas de respuesta corta y larga.
 
-|Type
-|Required
-|One of the following: Short answer, Long answer, Single option, Multiple option, Sorting, Files, Matrix (Single option)
-or Matrix (Multiple option). See xref:_question_types[Question types] for more information.
+|Tipo
+|Requerido
+|Una de las siguientes: respuesta corta, respuesta larga, opción simple, opción múltiple, ordenación, archivos, matriz (opción simple)
+o matriz (opción múltiple). Vea xref:_question_types[Tipos de preguntas] para más información.
 |===
 
-Depending in the question type, it's possible to add validations to the answers, like if the question is mandatory (participants
-would need to provide an answer in order to submit the form) or if the answer is limited to a certain number of characters as maximum in
-short and long answers.
+Dependiendo del tipo de pregunta, es posible agregar validaciones a las respuestas, por ejemplo si la pregunta es obligatoria (los participantes
+tendrían que proporcionar una respuesta para enviar el formulario) o si la respuesta está limitada a cierto número de caracteres como máximo en
+respuestas cortas y largas.
 
-image:components/surveys/question_form_limits_backend.png[]
+imagen:componentes/encuestas/preguntas_formulario_limits_backend.png[]
 
-image:components/surveys/question_form_limits_frontend.png[]
+imagen:componentes/encuestas/preguntas_formulario_limits_frontend.png[]
 
-== Question types
+== Tipos de preguntas
 
-A survey can have multiple questions with different types, such as:
+Una encuesta puede tener múltiples preguntas con diferentes tipos, como:
 
-- Short answer
-- Long answer
-- Single option
-- Multiple option
-- Sorting
-- Files
-- Matrix (Single option)
-- Matrix (Multiple option)
+- Respuesta corta
+- Respuesta larga
+- Opción única
+- Opción múltiple
+- Ordenando
+- Archivos
+- Matrimonio (opción simple)
+- Matríz (opción múltiple)
 
 
-.Question types (click to view image in detail)
+.Tipos de preguntas (clic para ver la imagen en detalle)
 |===
-|Type |Frontend |Backend |Description
+|Tipo |Frontend |Backend |Descripción
 
-|Short answer
-|image:components/surveys/type_short_answer_frontend.png[Short answer type - frontend,link=../_images/components/surveys/type_short_answer_frontend.png]
-|image:components/surveys/type_short_answer_backend.png[Short answer type - backend,link=../_images/components/surveys/type_short_answer_backend.png]
-|Compatible with "Character limit" validation
+|Respuesta corta
+|image:components/surveys/type_short_answer_frontend.png[Tipo de respuesta corta - frontend,link=../_images/components/surveys/type_short_answer_frontend.png]
+|image:components/surveys/type_short_answer_backend.png[Tipo de respuesta corta - backend,link=../_images/components/surveys/type_short_answer_backend.png]
+|Compatible con la validación de "Límite de caracteres"
 
-|Long answer
-|image:components/surveys/type_long_answer_frontend.png[Long answer type - frontend,link=../_images/components/surveys/type_long_answer_frontend.png]
-|image:components/surveys/type_long_answer_backend.png[Long answer type - backend,link=../_images/components/surveys/type_long_answer_backend.png]
-|Compatible with "Character limit" validation
+|Respuesta larga
+|imagen:components/surveys/type_long_answer_frontend.png[Tipo de respuesta larga - frontend,link=../_images/components/surveys/type_long_answer_frontend.png]
+|imagen:components/surveys/type_long_answer_backend.png[Tipo de respuesta larga - backend,link=../_images/components/surveys/type_long_answer_backend.png]
+|Compatible con la validación de "Límite de caracteres"
 
-|Single option
-|image:components/surveys/type_single_option_frontend.png[Single option type - frontend,link=../_images/components/surveys/type_single_option_frontend.png]
-|image:components/surveys/type_single_option_backend.png[Single option type - backend,link=../_images/components/surveys/type_single_option_backend.png]
-|Participants will have to choose a single option, with radio buttons. At least 2 options always. It's possible to define a "Free text" option, so participants can submit their own answer.
+|Opción única
+|image:components/surveys/type_single_option_frontend.png[Tipo de opción única - frontend,link=../_images/components/surveys/type_single_option_frontend.png]
+|image:components/surveys/type_single_option_backend.png[Tipo de opción única - backend,link=../_images/components/surveys/type_single_option_backend.png]
+|Los participantes tendrán que elegir una sola opción, con botones de radio. Siempre hay al menos 2 opciones. Es posible definir una opción de "Texto libre", para que los participantes puedan enviar su propia respuesta.
 
-|Multiple option
-|image:components/surveys/type_multiple_option_frontend.png[Multiple option type - frontend,link=../_images/components/surveys/type_multiple_option_frontend.png]
-|image:components/surveys/type_multiple_option_backend.png[Multiple option type - backend,link=../_images/components/surveys/type_multiple_option_backend.png]
-|Participants will have to choose multiple options, with checkboxes. At least 2 options always. It's possible to add a validation, with the maximum number of choices. It's possible to define a "Free text" option, so participants can submit their own answer.
+|Opción múltiple
+|image:components/surveys/type_multiple_option_frontend.png[Tipo de opción múltiple - frontend,link=../_images/components/surveys/type_multiple_option_frontend.png]
+|image:components/surveys/type_multiple_option_backend.png[Tipo de opción múltiple - backend,link=../_images/components/surveys/type_multiple_option_backend.png]
+|Los participantes tendrán que elegir múltiples opciones, con casillas de verificación. Siempre hay al menos 2 opciones. Es posible añadir una validación, con el número máximo de opciones. Es posible definir una opción de "Texto libre", para que los participantes puedan enviar su propia respuesta.
 
-|Sorting
-|image:components/surveys/type_sorting_frontend.png[Sorting type - frontend,link=../_images/components/surveys/type_sorting_frontend.png]
-|image:components/surveys/type_sorting_backend.png[Sorting type - backend,link=../_images/components/surveys/type_sorting_backend.png]
-|At least 2 options always. Participants will click in order of preference to sort.
+|Ordenando
+|imagen:components/surveys/type_sorting_frontend.png[Ordenando tipo - frontend,link=../_images/components/surveys/type_sorting_frontend.png]
+|imagen:components/surveys/type_sorting_backend.png[Ordenando tipo - backend,link=../_images/components/surveys/type_sorting_backend.png]
+|Siempre hay al menos 2 opciones. Los participantes harán clic en orden de preferencia para ordenar.
 
-|Files
-|image:components/surveys/type_files_frontend.png[Files type - frontend,link=../_images/components/surveys/type_files_frontend.png]
-|image:components/surveys/type_files_backend.png[Files type - backend,link=../_images/components/surveys/type_files_backend.png]
-|Participants will be able to upload files.
+|Archivos
+|image:components/surveys/type_files_frontend.png[Tipo de archivos - frontend,link=../_images/components/surveys/type_files_frontend.png]
+|image:components/surveys/type_files_backend.png[Tipo de archivos - backend,link=../_images/components/surveys/type_files_backend.png]
+|Los participantes podrán subir archivos.
 
-|Matrix (Single option)
-|image:components/surveys/type_matrix_single_option_frontend.png[Matrix (Single option) type - frontend,link=../_images/components/surveys/type_matrix_single_option_frontend.png]
-|image:components/surveys/type_matrix_single_option_backend.png[Matrix (Single option) type - backend,link=../_images/components/surveys/type_matrix_single_option_backend.png]
-|Participants will have to choose between rows and columns of single options, with radio buttons.
+|Matrimonio (opción simple)
+|image:components/surveys/type_matrix_single_option_frontend.png[Mshortx (Single option) type - frontend,link=../_images/components/surveys/type_matrix_single_option_frontend.png]
+|image:components/surveys/type_matrix_single_option_backend.png[Murgx (Single option) type - backend,link=../_images/components/surveys/type_matrix_single_option_backend.png]
+|Los participantes tendrán que elegir entre filas y columnas de opciones únicas, con botones de radio.
 
-|Matrix (Multiple option)
-|image:components/surveys/type_matrix_multiple_option_frontend.png[Matrix (Multiple option) type - frontend,link=../_images/components/surveys/type_matrix_multiple_option_frontend.png]
-|image:components/surveys/type_matrix_multiple_option_backend.png[Matrix (Multiple option) type - backend,link=../_images/components/surveys/type_matrix_multiple_option_backend.png]
-|Participants will have to choose between rows and columns of multiple options, with checkboxes.
+|Matríz (opción múltiple)
+|image:components/surveys/type_matrix_multiple_option_frontend.png[Matrimonio (opción múltiple) tipo - frontend,link=../_images/components/surveys/type_matrix_multiple_option_frontend.png]
+|image:components/surveys/type_matrix_multiple_option_backend.png[Tipo Matrimonio (opción múltiple) - backend,link=../_images/components/surveys/type_matrix_multiple_option_backend.png]
+|Los participantes tendrán que elegir entre filas y columnas de múltiples opciones, con casillas de verificación.
 |===
 
-== Templates
+== Plantillas
 
-For the cases where administrators need to define multiple surveys that are mostly the same but used in different contexts,
-it's possible to define a template. When there's one defined for a survey, then it'll ask to select the Template and create
-the survey based on this one or in the other hand if there's no need to use a template, then it's possible to Skip the template
-selection.
+Para los casos en los que los administradores necesitan definir múltiples encuestas que son principalmente las mismas pero utilizadas en diferentes contextos,
+es posible definir una plantilla. Cuando hay uno definido para una encuesta, entonces le pedirá seleccionar la plantilla y crear
+la encuesta basada en esta o en la otra mano si no hay necesidad de usar una plantilla, entonces es posible omitir la selección de la plantilla
+.
 
-image:components/surveys/edit_questionnaire.png[Choose template form]
+imagen:components/surveys/edit_questionnaire.png[Elegir formulario de plantilla]
 
-== Export answers
+== Exportar respuestas
 
-It's possible to export the survey participant answers to different formats: CSV, JSON, XLSX (Excel) or PDF.
+Es posible exportar las respuestas de los participantes de la encuesta a diferentes formatos: CSV, JSON, XLSX (Excel) o PDF.
 
-Note that the platform doesn't handle the answers processing nor presenting results or summary to the users, that need to be
-done externally.
+Tenga en cuenta que la plataforma no gestiona el procesamiento de respuestas ni presenta resultados o resumen a los usuarios, que necesitan ser
+realizados externamente.
