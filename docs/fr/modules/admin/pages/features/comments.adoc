@@ -1,0 +1,64 @@
+= Commentaires
+
+Les commentaires sont des messages publics laissés au reste de la communauté. Il permet aux participants de partager des informations ou des opinions
+sur une proposition, un débat, une réunion, une initiative, etc.
+
+image:features/commentaires/exemple01.png[Exemple de commentaires]
+
+== Créer un commentaire
+
+. Se connecter en tant que participant
+. Aller au contenu que vous souhaitez laisser un commentaire
+. Aller au bas de la page
+. Remplissez le formulaire "Ajouter un commentaire"
+
+Selon les paramètres du composant, cette fonctionnalité peut être désactivée.
+
+image:features/comments/form.png[Formulaire de commentaires]
+
+=== Forme
+
+Il est possible de :
+
+. mentionner un utilisateur ou un groupe d'utilisateurs (comme @admin). Ils recevront une notification
+. ajouter un hashtag (comme #Exemple). Ceci sera lié à la recherche générale
+. faire un guillemet d'un commentaire (comme > c'est un guillemet)
+. si une URL est entrée, alors elle sera automatiquement liée
+image:features/comments/rich_text_write.png[Comments with rich text (write)]
+image:features/comments/rich_text_read. ng[Comments with rich text (read)]
+image:features/comments/hashtag_search.png[Hashtags in comments]
+. si le HTML est ajouté, il sera échappé et non affiché
+image:features/comments/xss_write.png[XSS dans les commentaires (écriture)]
+image:features/comments/xss_read.png[XSS dans les commentaires (read)]
+. ajouter des émoticônes aux commentaires
+image:features/comments/emoji_selector.png[Sélecteur d'émoji dans les commentaires]
+
+== Trier
+
+Les commentaires peuvent être triés par "Meilleures notes", "Récents", "Ancien" ou "Plus discuté".
+
+image:features/comments/order_by.png[Ordonner les commentaires]
+
+== Actions
+
+Après la création d'un commentaire, l'auteur peut "Répondre", "Rapport", "Obtenir le lien", "Modifier" et "Supprimer". Les autres participants peuvent « Répondre », « Rapport » et « Obtenir un lien ». Certaines de ces actions sont visibles dans le menu des trois points :
+
+image:features/comments/actions.png[Actions des commentaires]
+
+=== Répondre
+
+Il est possible de répondre aux commentaires jusqu'au niveau 4ème anidation.
+
+image:features/comments/anidation_levels.png[Niveaux d'animation pour les commentaires]
+
+=== Supprimez
+
+Une fois qu'un commentaire est supprimé n'est plus visible.
+
+image:features/comments/deleted_comment.png[Commentaire supprimé]
+
+=== Editer
+
+Une fois qu'un commentaire est modifié, il est affiché qui a été modifié. Il n'a pas d'historique des versions des modifications effectuées.
+
+image:features/comments/edited_comment.png[Commentaire modifié]
