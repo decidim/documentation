@@ -1,91 +1,91 @@
-= Agenda
+= Compromissos
 
 O recurso de agenda permite que um administrador defina o calendário para uma reunião. É possível definir itens da agenda e
 sub-itens com cada um dos tópicos que serão discutidos na reunião, junto com uma descrição e a duração
 de cada item e subitem.
 
-image:components/meetings/agenda/agenda_frontend.png[Agenda in the frontend]
+image:components/meetings/agenda/agenda_frontend.png[Agenda no frontend]
 
 == Novo formulário de agenda
 
-To define an agenda for a meeting:
+Para definir uma agenda para uma reunião:
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Click on "Meetings"
-. Search the meeting that you want to add the agenda to
-. Click on the "Agenda" button image:action_agenda.png[Agenda button]
-. Fill the form
+. Iniciar sessão como administrador
+. Ir ao painel de administração
+. Na barra lateral principal, clique no botão para o espaço para o qual você deseja configurar o componente.
+Por exemplo, pode ser "Processos", "Assemblies", ou "Conferências"
+. Clique em "Reuniões"
+. Pesquise a reunião à qual você deseja adicionar a agenda
+. Clique no botão "Agenda" imagem:action_agenda.png[Botão de agenda]
+. Preencha o formulário
 
-image:components/meetings/agenda/new_agenda_form.png[New agenda form in the backend]
+image:components/meetings/agenda/new_agenda_form.png[Novo formulário agenda no backend]
 
 
 .Novo formulário de agenda
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Title
-|Required
-|Title for the agenda. For instance, "Schedule"
+|Título
+|Obrigatório
+|Título para a agenda. Por exemplo, "Agenda"
 
-|Visible
-|Optional
-|Check if you want to publish the agenda.
+|Visível
+|Opcional
+|Verifique se você quer publicar a agenda.
 
-|Agenda items
-|Required
-|List of agenda items.
+|Itens da agenda
+|Obrigatório
+|Lista de itens da agenda.
 |===
 
-It's possible to create any number of Agenda items and sub-items. You can up or down the hierarchy of the agenda items.
-It's also possible to remove and edit the agenda items.
+É possível criar qualquer número de itens da Agenda e subitens. Você pode subir ou descer a hierarquia dos itens da agenda.
+Também é possível remover e editar os itens da agenda.
 
 
-.Agenda item form
+.Formulário item da agenda
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Title
-|Required
-|Title for the agenda item
+|Título
+|Obrigatório
+|Título do item da agenda
 
-|Duration
-|Required
-|How many minutes will the agenda item last. For instance, "15".
+|Duração
+|Obrigatório
+|Quantos minutos durarão o ponto da ordem do dia. Por exemplo, "15".
 
-|Description
-|Optional
-|Title for the agenda item
+|Descrição:
+|Opcional
+|Título do item da agenda
 
-|Agenda sub-items
-|Optional
-|List of agenda sub-items.
+|Subitens da agenda
+|Opcional
+|Lista de sub-itens da agenda.
 |===
 
-The only limitation that agenda items and sub-items have is that they have to respect the duration of the parent. For instance,
-if there's an Item that lasts 60 minutes, you can't create a sub-item that lasts 90 minutes.
+A única limitação que os pontos da ordem do dia e os sub-pontos têm é o facto de terem de respeitar a duração do progenitor. Por exemplo,
+se houver um item que dura 60 minutos, você não pode criar um sub-item que dura 90 minutos.
 
-As an example, this agenda:
+Como exemplo, esta agenda:
 
-image:components/meetings/agenda/agenda_frontend.png[Agenda in the frontend]
+image:components/meetings/agenda/agenda_frontend.png[Agenda no frontend]
 
-Has the following configuration:
+Tem a seguinte configuração:
 
-* Title: "Schedule"
-* Visible: true
-* Agenda item #1:
-** Title: Diagnosis
-** Duration: 60
-* Agenda item #2:
-** Title: Ideation
-** Duration: 120
-** Agenda sub-item #2.1:
-*** Title: Future thinking
-*** Duration: 60
-*** Description: Imagining how we can solve the problem
-** Agenda sub-item #2.2:
-*** Title: Creating proposals
-*** Duration: 60
-*** Description: In the platform
+* Título: "Agenda"
+* Visível: verdadeiro
+* Ponto da agenda #1:
+** Título: Diagnóstico
+** Duração: 60
+* Ponto da agenda #2:
+** Título: Ideação
+** Duração: 120
+** Subitem da agenda #2.1:
+*** Título: Pensamento futuro
+*** Duração: 60
+*** Descrição: Imaginando como podemos resolver o problema
+** Subitem da agenda #2.2:
+*** Título: Criando propostas
+*** Duração: 60
+*** Descrição: Na plataforma
