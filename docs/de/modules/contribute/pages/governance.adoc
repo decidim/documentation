@@ -1,0 +1,45 @@
+= Governance
+
+== Über den Code
+
+Um neue Funktionen zu erstellen, kannst du ein https://decidim.org/modules[new module] für deine eigene Anwendung erstellen. Wenn du es auf der Webseite veröffentlichen möchtest, kannst du https://decidim.org/contact[uns eine Nachricht senden].
+
+Wenn Sie eine neue Funktion oder eine Änderung der Codebase hinzufügen möchten, lautet der Prozess:
+
+. Schlage deine Änderung auf https://meta.decidim.barcelona/processes/roadmap[Metadecidim] vor
+. Warte bis Produktteam die Funktion überprüft und akzeptiert, da es wichtig ist, mit dem Rest der Software konsistent zu sein, den Gesellschaftsvertrag einzuhalten, etc.
+. Dann können Sie die Pull Request machen.
+. Die PR wird überprüft von:
+.. Produkt Team: überprüft die Funktionalität
+.. Mantainer: überprüft die Code-Qualität
+
+image::workflow-features.png[new feature workflow process]
+
+Einige Dinge, die Sie bei diesem Prozess berücksichtigen müssen:
+
+* Wenn Sie die PR ohne Produkt-Team-Genehmigung machen, können Sie abgelehnt werden (nachdem Sie viel Zeit in die Entwicklung investiert haben).
+* Vorschläge können Zusagen erhalten, obwohl diese nicht entscheidend für die Aufnahme eines Vorschlags in den Fahrplan sind. Die Befürwortungen dienen als Indikatoren für die Interessen des Vorschlags oder die darin enthaltene Notwendigkeit. Die Kommentare zu den Vorschlägen sind auch möglich, die ursprüngliche Idee gemeinsam auszuarbeiten und zu einem produktiven Ergebnis zu führen.
+* Jeden Donnerstag überprüft das Produktteam alle neuen Vorschläge, die in der vergangenen Woche veröffentlicht wurden
+* Wenn keine Mittel zur Verfügung stehen, ist sie im Rückstand der entsprechenden Komponente oder des entsprechenden Moduls enthalten.
+
+== Über die Organisation
+
+Decidim wurde ursprünglich von der Stadt Barcelona erstellt, aber schnell entwickelte es sich durch die Hilfe von Lokalret und anderen Einheiten und Verwaltungen aus Katalonien, wie Diputacio<unk> de Barcelona (Provinz Barcelona) und andere katalanische Städte: Terrassa, Sabadell, Gava<unk> , L'Hospitalet de Llobregat, Badalona und Sant Cugat. Lesen Sie mehr über den Verlauf in xref:understand:about.adoc[About].
+
+Seit unserer ersten Version im Jahr 2017 haben wir erkannt, dass es für die Nachhaltigkeit des Projekts notwendig ist, nicht in einer bestimmten Institution wie der Stadt Barcelona zu hängen da dies für die Zukunft problematisch sein könnte. Andere Open-Source-Projekte öffentlicher Institutionen, die keine starke Gemeinschaft oder eine Nachhaltigkeitsstrategie hatten, werden stillgelegt oder langsam sterben ohne Finanzierung.
+
+Diese Art von Open-Source-Software von den öffentlichen Institutionen und durch das öffentliche Auftragsrecht zu machen, ist wirklich schwierig, und ein weiteres Problem, das wir mit dieser neuen Organisation angehen wollen, ist die Bereitstellung von Ressourcen für die Vergabe von Inhouse-Entwicklern.
+
+Aus diesem Grund haben wir mit dem https://meta.decidim.org/processes/decidim-gov[Metadecidim Governance partizipatorischen Prozess] angefangen im November 2017:
+
+****
+Ein Prozess, der der gesamten Gemeinschaft hinsichtlich der Entscheidungsorgane und der Vertretungsorgane offen steht, mit denen wir uns ausstatten müssen, um eine autonome Gemeinschaft aufzubauen. transparente und demokratische Organisation für das Decidim Projekt.
+
+Ziel ist es, ein Organisations- und Repräsentationssystem (interne Organe und wie sie ausgewählt werden) zu definieren, das in eine autonome Einheit oder Vereinigung umgewandelt werden kann, von der die gesamte Gemeinschaft beteiligt ist und das Projekt auf mehreren Ebenen verwalten kann
+
+Das Decidim-Projekt braucht ein System seiner eigenen Führung, das es ihm ermöglicht, ausreichende Autonomie zu genießen, um weiterhin nachhaltig zu wachsen, aus diesem Grund müssen Entscheidungs- und Konfliktbeilegungsstellen zur Verfügung gestellt werden.
+****
+
+Im Ergebnis dieses partizipatorischen Prozesses wurde am Februar 2019 die Decidim Free Software Association (_Associacio<unk> de Software Lliure Decidim_ auf Katalan) gegründet. Lesen Sie mehr über die https://meta.decidim.org/assemblies/general-assembly-association[Generalversammlung der Decidim Association].
+
+Am 2021 ist die Decidim Association https://decidim. rg/blog/2021-02-09-the-government-of-catalonia-barcelona-city-council-and-the-free-software-association-decidim-sign-a-collaboration-agreement to promote-democratic-participation-mit-free and open-technologies/[hat ein Kooperationsabkommen mit der Regierung von Katalonien und dem Stadtrat von Barcelona zur Förderung der Entwicklung der Plattform unterzeichnet.
