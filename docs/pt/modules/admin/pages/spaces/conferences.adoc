@@ -1,169 +1,169 @@
-= Conferences
+= Conferências
 
-A conference is a collection of meetings arranged in a program, with a number of people invited as speakers, and other
-information fields typical of large congresses or social events (registration, list of organizations that support or sponsor the
-event, etc.). A conference can be a relevant event for an organization and its members, or take place as part of a participatory
-process or follow a consultation.
+Uma conferência é uma coleção de reuniões organizadas num programa, com várias pessoas convidadas como oradores, e outros campos informativos
+típicos do grande congresso ou eventos sociais (registro, lista de organizações que apoiam ou patrocinam o evento
+, etc.). Uma conferência pode ser um evento relevante para uma organização e seus membros ou entre como parte de um processo
+participativo ou siga uma consulta.
 
-Examples:
+Exemplos:
 
-* A general assembly for an organization
-* The annual meeting of a cooperative
+* Uma assembleia geral para uma organização
+* A reunião anual de uma cooperativa
 
-As a real world example you can see the anual Metadecidim conferences:
+Como exemplo do mundo real, você pode ver as conferências anuais Metadecidim:
 
-image:spaces/conferences/example01.png[Decidim Fest 2020]
+imagem:espaçaces/conferências/exemplo01.png[Decidim Fest 2020]
 
 * https://meta.decidim.org/conferences/decidimfest19[Decidim Fest 2019]
 * https://meta.decidim.org/conferences/decidimfest2020[Decidim Fest 2020]
 * https://meta.decidim.org/conferences/DecidimFest21[Decidim Fest 2021]
 
-== Create a new conference
+== Criar uma nova conferência
 
-For adding a new conference, you need to:
+Para adicionar uma nova conferência, você precisa:
 
-image:spaces/conferences/menu.png[Conferences menu]
+imagem:espaçaces/conferências/menu.png[menu de conferências]
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button "Conferences"
-. Click in the button "Create a new conference"
-. Configure the conference by filling the form
+. Iniciar sessão como administrador
+. Ir ao painel de administração
+. Na barra lateral principal, clique no botão "Conferências"
+. Clique no botão "Criar uma nova conferência"
+. Configure a conferência preenchendo o formulário
 
-image:spaces/conferences/new_conference.png[Create a new conference form]
+image:spaces/conferências/new_conference.png[Crie um novo formulário de conferência]
 
 
-.Create a new conference
+.Criar uma nova conferência
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Title
-|Required
-|What is the title of this conference. For instance "Decidim Fest 2021"
+|Título
+|Obrigatório
+|Qual é o título desta conferência. Por exemplo, "Decidim Fest 2021"
 
-|Slogan
-|Required
-|A subtitle for this conference. For instance, "Democracy, Technology and Global Justice"
+|Lema
+|Obrigatório
+|Um subtítulo para esta conferência. Por exemplo, "Democracia, Tecnologia e Justiça Global"
 
-|URL slug
-|Required
-|URL slugs are used to generate the URLs that point to this conference. Only accepts letters, numbers, and dashes, and
-must start with a letter. Example: if your domain is 'example.org' and your slug 'DecidimFest21' then your URL will be
+|Slug de URL
+|Obrigatório
+|Os slugs de URL são usados para gerar as URLs que apontam para esta conferência. Apenas aceita letras, números e traços, e
+deve começar com uma letra. Exemplo: se seu domínio é 'example.org' e seu slug 'DecidimFest21', então sua URL será
 https://example.org/conferences/DecidimFest21
 
-|Hashtag
-|Optional
-|Hashtag for Twitter
+|Palavras-chave
+|Opcional
+|Hashtag para o Twitter
 
-|Highlighted
-|Optional
-|Should this conference be more prominent than others? For instance, is this an ongoing or a conference that has happened years ago?
+|Destacado
+|Opcional
+|Deverá esta conferência ser mais proeminente do que outros? Trata-se, por exemplo, de uma conferência em curso ou de uma conferência que já teve lugar há anos?
 
-|Short description
-|Required
-|A short explanation of what's your conference about.
+|Breve descrição
+|Obrigatório
+|Uma breve explicação do que é a sua conferência.
 
-|Description
-|Required
-|A long explanation of what's your conference about.
+|Descrição:
+|Obrigatório
+|Uma longa explicação do que é a sua conferência.
 
-|Objectives
-|Optional
-|What are the objectives or goals for this conference?
+|Objetivos
+|Opcional
+|Quais são os objectivos ou metas para esta conferência?
 
-|Location
-|Optional
-|Where will this conference take place?
+|Local:
+|Opcional
+|Onde vai ter lugar esta conferência?
 
-|Home image
-|Optional
-|Preferrably a landscape image that does not have any text. The service crops
-the image. Maximum file size: 10MB. Allowed file extensions: jpeg jpg png
+|Imagem inicial
+|Opcional
+|Preferencialmente, uma imagem de paisagem que não tem nenhum texto. The service crops
+the imagem. Tamanho máximo do arquivo: 10MB. Extensões de arquivo permitidas: jpeg jpg png
 
-|Banner image
-|Optional
-|Preferrably a landscape image that does not have any text. The service crops
-the image. Maximum file size: 10MB. Allowed file extensions: jpeg jpg png
+|Imagem do banner
+|Opcional
+|Preferencialmente, uma imagem de paisagem que não tem nenhum texto. The service crops
+the imagem. Tamanho máximo do arquivo: 10MB. Extensões de arquivo permitidas: jpeg jpg png
 
-|Scopes enabled
-|Optional
-|Check if you want to have Scopes filtering in this conference
+|Âmbitos ativados
+|Opcional
+|Verifique se você quer ter filtros de escopos nesta conferência
 
-|Scope
-|Optional
-|Which xref:admin:scopes.adoc[Scope] does this conference belongs to.
+|Escopo
+|Opcional
+|Qual xref:admin:scopes.adoc[Scope] a qual esta conferência pertence.
 
-|Show statistics
-|Optional
-|Check if you want to show the Statistics section.
+|Mostrar estatísticas
+|Opcional
+|Verifique se você quiser mostrar a seção de Estatísticas.
 
-|Start date
-|Required
-|When will this conference start. Expected format: dd/mm/yyyy
+|Data de início
+|Obrigatório
+|Quando começará esta conferência. Formato esperado: dd/mm/aaaa
 
-|End date
-|Required
-|When will this conference end. Expected format: dd/mm/yyyy
+|Data de término
+|Obrigatório
+|Quando terminará esta conferência. Formato esperado: dd/mm/aaaa
 
-|Registrations enabled
-|Optional
-|Check if you want to handle registrations on the platform.
+|Inscrições habilitadas
+|Opcional
+|Verifique se você deseja lidar com registros na plataforma.
 
-|Available slots
-|Optional
-|Leave it to 0 if you have unlimited slots available.
+|Slots disponíveis
+|Opcional
+|Deixe-o em 0 se você tiver slots ilimitados disponíveis.
 
-|Registration terms
-|Required if "Registrations enabled" is checked
-|What are the terms of service or conditions that a participant must accept for registering in this conference?
+|Termos de registro
+|Obrigatório se "Inscrições habilitadas" estiver marcado
+|Quais são os termos de serviço ou condições que um participante deve aceitar para se registar nesta conferência?
 
-|Related participatory processes
-|Optional
-|Select the processes that are related to this conference. Use the *ctrl* function to select more than one option.
+|Processos participativos relacionados
+|Opcional
+|Selecione os processos que estão relacionados a esta conferência. Use a função *ctrl* para selecionar mais de uma opção.
 
-|Related Assemblies
-|Optional
-|Select the assemblies that are related to this conference. Use the *ctrl* function to select more than one option.
+|Assembleias Relacionadas
+|Opcional
+|Selecione as assembleias que estão relacionadas a esta conferência. Use a função *ctrl* para selecionar mais de uma opção.
 
-|Related Consultations
-|Optional
-|Select the consultations that are related to this conference. Use the *ctrl* function to select more than one option.
+|Consultas Relacionadas
+|Opcional
+|Selecione as consultas relacionadas a esta conferência. Use a função *ctrl* para selecionar mais de uma opção.
 |===
 
-== Creating the program
+== Criando o programa
 
 For creating the program of the conference you need to create a new xref:components/meetings.adoc[Meeting component] with the
 dates and times of the different talks, workshops, sessions, etc. After publishing the meetings, it will be visible in the landing page
 and there'll be a special navigation for these meetings so they're ordered by date and time.
 
-image:spaces/conferences/program_frontend.png[Conferences program (frontend)]
+imagem:espaçaces/conferências/programa_frontend.png[Programa de conferências (frontend)]
 
-image:spaces/conferences/program_backend.png[Conferences program (backend)]
+imagem:espaçaces/conferências/program_backend.png[Programa de conferências (backend)]
 
-Also if you they are "In person" meetings with a location then you'll have a list of the venues.
+Também se você for reuniões com "Pessoa" com um local, então você terá uma lista de salas de reunião.
 
-image:spaces/conferences/program_venues_frontend.png[Conferences venues (frontend)]
+imagem:espaços/conferências/programa_venues_frontend.png[salas de conferências (frontend)]
 
 == Menu
 
-image:spaces/conferences/manage_conferences.png[Conferences list at admin panel]
+image:spaces/conferências/manage_conferences.png[Lista de conferências no painel de administração]
 
-After you’ve initially created your conference you have a submenu where you need
-to keep configuring more information about it.
+Depois de criar sua conferência inicialmente, você tem um submenu onde você precisa de
+para continuar configurando mais informações sobre ele.
 
-image:spaces/conferences/sidebar.png[Conferences sidebar]
+image:spaces/conferências/sidebar.png[Barra de Conferências]
 
-. Info: the same form that we explained in this page.
+. Informação: a mesma forma que explicamos nesta página.
 . xref:admin:spaces/conferences/components.adoc[Components]
 . xref:admin:spaces/conferences/categories.adoc[Categories]
 . xref:admin:spaces/conferences/attachments.adoc[Attachments]
 . xref:admin:spaces/conferences/media_links.adoc[Media Links]
 . xref:admin:spaces/conferences/partners.adoc[Partners]
-. xref:admin:spaces/conferences/speakers.adoc[Speakers]
+. xref:admin:spaces/conferências/speakers.adoc[Speakers]
 . xref:admin:spaces/conferences/registrations.adoc[Registrations]
-.. xref:admin:spaces/conferences/registrations/types.adoc[Registration Types]
+.. xref:admin:spaces/conferences/registrations/types.adoc[tipos de registro]
 .. xref:admin:spaces/conferences/registrations/users.adoc[User Registrations]
-.. xref:admin:spaces/conferences/registrations/invites.adoc[Invites]
-.. xref:admin:spaces/conferences/registrations/certificates.adoc[Certificate of Attendance]
+.. xref:admin:spaces/conferências/registrations/invites.adoc[Invites]
+.. xref:admin:spaces/conferences/registrations/certificates.adoc[Certificado de Participação]
 . xref:admin:spaces/conferences/admins.adoc[Conference admins]
 . xref:admin:spaces/conferences/moderations.adoc[Moderations]
