@@ -1,0 +1,76 @@
+= Abzeichen
+
+Abzeichen sind Anerkennungen von Aktionen und Fortschritten in der Plattform. Wenn die Teilnehmer entdecken, an
+teilnehmen und in der Plattform interagieren, erhalten sie verschiedene Abzeichen. Hier ist die Liste der Abzeichen und einige Möglichkeiten, wie die Teilnehmer sie verdienen können.
+
+Es ist ein https://en.wikipedia.org/wiki/Gamification[gamification] Mechanismus, um das Engagement der Teilnehmer auf eine ludische Weise zu verbessern.
+
+Die Abzeichen, die ein Teilnehmer hat, sind in seinem Konto sichtbar. Es gibt auch eine allgemeine Erklärungsseite mit einer kurzen Beschreibung jedes Abzeichens.
+
+image:features/badges/example01.png[Beispiel der Abzeichen im Profil]
+
+Wenn ein Teilnehmer ein Abzeichen erhält, erhält er eine Benachrichtigung.
+
+image:features/badges/notification.png[Beispiel der Badges Benachrichtigung]
+
+Abzeichen haben mehrere Level, je nachdem, wie oft sie die Aktion durchgeführt haben. Zum Beispiel erhalten sie für Vorschläge Abzeichen
+das Abzeichen des ersten Levels, wenn sie 1 Follower erreichen, das zweite Level bei 15 Anhängern, das dritte Level bei 30 Anhängern,
+das vierte Level bei 60 und das fünfte Level bei 100.
+
+
+.Abzeichen
+|===
+|Bild |Titel |Beschreibung |Wie er verdient wird |Ebenen
+
+|image:features/badges/accepted_proposals_badge.png[Akzeptierte Vorschläge Badge]
+|Akzeptierte Vorschläge
+|Zugegeben, wenn particiapnts aktiv mit neuen Vorschlägen teilnehmen und diese akzeptiert werden.
+|Der Teilnehmer muss den Teilnahmeraum seines Interesses mit der Einreichung von Vorschlägen wählen und versuchen,
+Vorschläge zu machen, die durchgeführt werden können. Auf diese Weise werden sie eher akzeptiert.
+|1, 5, 15, 30, 50
+
+|image:features/badges/attended_meetings_badge.png[Teilgenommenes Meeting Badge]
+|Besuchte Besprechungen
+|Zugegeben, wenn die Teilnehmer an mehreren persönlichen Meetings teilnehmen.
+|Der Teilnehmer muss sich für die Meetings, an denen er teilnehmen möchte, registrieren
+|1, 3, 5, 10, 30
+
+|image:features/badges/debates_badge.png[Debates badge]
+|Debatten
+|Wird gewährt, wenn die Teilnehmer aktiv an den verschiedenen Debatten durch Kommentaren teilnehmen.
+|Der Teilnehmer muss an den Aussprachen teilnehmen.
+|1, 5, 10, 30, 50
+
+|image:features/badges/followers_badge.png[Followers badge]
+|Follower
+|Wird gewährt, wenn der Teilnehmer eine bestimmte Anzahl von Followern erreicht. Die Plattform ist ein soziales und politisches Netzwerk, so dass
+Teilnehmer bereit waren, ihr Web zu weben, um mit anderen Menschen auf der Plattform zu kommunizieren.
+|Der Teilnehmer muss aktiv sein und anderen Personen folgen. Das wird sicherlich dazu führen, dass andere ihnen folgen.
+|1, 15, 30, 60, 100
+
+|image:features/badges/published_initiatives_badge.png[Veröffentlichte Initiativen Badge]
+|Veröffentlichte Initiativen
+|Zugegeben, wenn ein Teilnehmer neue Initiativen startet, Partnerschaften mit anderen, um sie auszuführen.
+|Der Teilnehmer muss in den Beteiligungsraum von Intiatives gehen und die Schritte zur Schaffung einer neuen Initiative folgen.
+|1, 5, 15, 30, 50
+
+|image:features/badges/invitations_badge.png[Einladungsbadge]
+|Einladungen
+|Zugegeben, wenn die Teilnehmer einige Leute einladen und sie sind Teilnehmer geworden.
+|Der Teilnehmer muss den Link „Freunde einladen“ auf seiner Benutzerseite nutzen, um seine Freunde einzuladen. Sie können die Nachricht
+anpassen, die sie senden. Sie werden durch das Senden von Einladungen und die Eintragung von Einladungen aufwerten. Beachten Sie, dass diese Funktion
+deaktiviert ist und dieses Abzeichen nicht verfügbar ist, daher wird es in Zukunft entfernt werden.
+|1, 5, 10, 30, 50
+
+|image:features/badges/proposal_supports_badge.png[Vorschlag unterstützt badge]
+|Unterstützung des Vorschlags
+|Wird gewährt, wenn die Teilnehmer die Vorschläge anderer Menschen unterstützen.
+|Der Teilnehmer muss durchsuchen und etwas Zeit damit verbringen, die Vorschläge anderer Leute zu lesen und die Vorschläge zu unterstützen, die sie mögen oder interessant finden.
+|5, 15, 50, 100, 500
+
+|image:features/badges/proposals_badge.png[Vorschläge Badge]
+|Vorschläge
+|Wird gewährt, wenn die Teilnehmer aktiv mit neuen Vorschlägen teilnehmen.
+|Der Teilnehmer muss den Beteiligungsraum seines Interesses mit der Einreichung von Vorschlägen wählen und einen neuen Vorschlag erstellen.
+|1, 5, 10, 30, 60
+|===
