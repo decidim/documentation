@@ -1,0 +1,127 @@
+= Accountability management
+
+== Understand the basics
+
+Results are the entities that constitute the accountability component. They can be linked to proposals, projects, meetings, and have
+statuses, and dates assigned.
+
+Administrators can also create sub-results, to detail the elements needed for a result implementation.
+
+== Create a result
+
+To start creating results, click on the component title in the navigation bar or in the component list, or click on the
+image:icons/action_edit.png[Manage component icon] icon on the components list.
+
+image::components/accountability/new_result_button.png[New result button]
+
+Then, click the "New result" button on the top right of the page.
+
+image::components/accountability/new_result.png[New result form]
+
+.New result form
+[cols="20h,10h,~"]
+|===
+|Campo |tipo |Descrição:
+
+|Título
+|Obrigatório
+|Title of the result.
+
+|Descrição:
+|Opcional
+|Description of the result.
+
+|Escopo
+|Obsoleto
+|Please use link:https://docs.decidim.org/en/develop/develop/taxonomies.html[taxonomies] instead.
+
+|categoria
+|Opcional
+|Allows categorizing the results on the Accountability landing page.
+
+|Data de início
+|Opcional
+|Expected format: dd/mm/yyyy.
+
+|Data de término
+|Opcional
+|Expected format: dd/mm/yyyy.
+
+|SItuação
+|Opcional
+|Allows to give a status to results.
+
+|Progress
+|Opcional
+|Percentage of progression of the result.
+
+|Propostas
+|Opcional
+|Proposals that originated the result.
+
+|Included projects
+|Opcional
+|Projects that originated the result.
+|===
+
+== Manage results
+
+On the results list in the administration panel, administrators can see:
+
+* *ID*: Identification number for this result.
+* *Title*: Title of the result.
+* *Category*: Category of the result.
+* *Scope*: Scope of the result, if enabled in the participatory space.
+* *xref:admin:components/accountability/statuses.adoc[Status]*: Status of the result.
+* *Progress*: Result percentage progress.
+* *Created*: Creation date of the result.
+
+You can filter and sort this list by clicking the "Filter" button and the columns headers.
+You can also search for results by their ID and title in the search bar.
+
+image::components/accountability/results_list_filter.png[New result button]
+
+== Ações.
+
+.Actions - Accountability
+[cols="10h,20h,~"]
+|===
+|Ícone |Nome: |Definição
+
+|image:icons/action_edit.png[Edit icon]
+|Alterar
+|To edit a result.
+
+|image:icons/action_plus.png[Plus icon]
+|Add Sub-Result
+|To quickly add a new sub-result
+
+|image:icons/action_folder.png[Folders icon]
+|Pastas
+|Para classificar Anexos.
+
+|image:icons/action_clock.png[Clock icon]
+|Milestone
+|Manage milestones of the result.
+
+|image:icons/action_folder.png[Folders icon]
+|Pastas
+|Para classificar Anexos.
+
+|image:icons/action_attachments.png[Attachments icon]
+|Anexos
+|To add documents and images related to the result.
+
+|image:icons/action_preview.png[Preview icon]
+|Pré-visualizar
+|Para ver como é mostrado na interface a participantes.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Permissões
+|To handle the permissions of this result, depending on the verification a participant has. Allows an admin to configure
+who can *Comment* a result.
+
+|image:icons/action_delete.png[Delete icon]
+|excluir
+|Put the result in the deleted result list.
+|===
