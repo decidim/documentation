@@ -1,0 +1,61 @@
+= Liens média
+
+== Understand the basics
+
+Conferences can have a section called "Media links" which shows a list of media files and links
+that are associated to the conference. It displays in a specific page of the conference:
+
+* Related documents and images from the xref:admin:spaces/conferences/attachments.adoc[attachments] section.
+* Media links from the media links section.
+
+image:spaces/conferences/media_links_frontend.png[Conferences media links frontend]
+
+== Manage media links
+
+To access the media links configuration, click in the secondary navigation panel on the "Media links" item.
+
+image::spaces/conferences/media_links_backend.png[Conferences media links]
+
+=== Actions
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Edit icon]
+|Editer
+|To edit this link.
+
+|image:icons/action_delete.png[Delete icon]
+|Supprimez
+|To delete this link.
+|===
+
+== Créer un nouveau lien média
+
+To create a new media link, click the "New media link" button in the top right of the page.
+
+image::spaces/conferences/new_media_link.png[Create a new conferences media link]
+
+.Nouveau formulaire de lien média
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|The title of the link.
+
+|Lier
+|Obligatoire
+|URL of the link.
+
+|Date
+|Obligatoire
+|Publication date of the link.
+
+|Rang d'affichage
+|Facultatif
+|Which order it has in relation to the other links. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. For instance, if you have two links, "Link a" with weight "10" and "Link b" with weight "0" then "Link b" is first when ordering.
+|===
