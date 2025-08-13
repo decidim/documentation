@@ -1,27 +1,27 @@
-= User registrations
+= Registros de usuario
 
-After participants have registered, they will appear in this section.
+Una vez que los participantes se hayan registrado, aparecerán en esta sección.
 
-image:spaces/conferences/user_registrations.png[Conferences user registrations (backend)]
+imagen:spaces/conferences/user_registrations.png[Conferencias de registro de usuarios (backend)]
 
-As an administrator, you can:
+Como administrador, puedes:
 
-* Export the registrations
-* Confirm a registration
+* Exportar los registros
+* Confirmar registro
 
-== Export
+== Exportar
 
-It's possible to export the registrations in multiple formats: CSV, JSON, and XLSX (Excel).
+Es posible exportar los registros en múltiples formatos: CSV, JSON, y XLSX (Excel).
 
-== Flow
+== Flujo
 
-. A participant registers to the conference
+. Un participante se registra en la conferencia
 . She receives a pending registration notification
 image:spaces/conferences/user_registration_pending_notification.png[Notification for pending user registration]
 . She receives a pending registration email
 image:spaces/conferences/user_registration_pending_email.png[Email for pending user registration]
-. An administrator reviews and confirms the registration with the image:action_check.png[Confirm] button
-. The participant receives a confirmed registration notification
-image:spaces/conferences/user_registration_confirmed_notification.png[Notification for confirmed user registration]
+. Un administrador revisa y confirma el registro con el botón image:action_check.png[Confirm]
+. El participante recibe una notificación confirmada de registro
+image:spaces/conferences/user_registration_confirmed_notification.png[Notificación para registro confirmado de usuario]
 . She receives a confirmed registration email with an calendar file (.ICS).
-image:spaces/conferences/user_registration_confirmed_email.png[Email for confirmed user registration]
+imagen:espacios/conferencias/usuario_registration_confirmed_email.png[Email para registro de usuario confirmado]
