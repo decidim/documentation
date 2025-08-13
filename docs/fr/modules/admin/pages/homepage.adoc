@@ -1,0 +1,101 @@
+= Page d'accueil
+
+include::partial$under-construction.adoc[]
+
+Vous pouvez contrôler comment c'est la page d'accueil de votre organisation. Pour ce faire, vous avez la section Paramètres -> Page d'accueil à travers le panneau d'administration :
+
+image::admin_homepage.png[Decidim Admin Homepage]
+
+---
+
+== Comment cela fonctionne
+
+Cela signifie que chaque section de la page d'accueil est appelée **bloc de contenu**.
+
+Par exemple, c'est le bloc de contenu *Comment participer* :
+
+image::homepage_how_to_participate.png[How to participate example]
+
+Pour gérer ces contenus, vous devez faire glisser et déposer le contenu entre les deux colonnes, sur la gauche sont les actifs et à droite sont les blocs de contenu inactifs.
+
+À titre d'exemple, ici tu peux voir à quoi ressemblera ta page avec seulement le bloc de contenu *image héros* :
+
+// TODO: add screenshot
+
+Lors de l'administrateur, ceci est géré avec :
+
+// TODO: add screenshot
+
+Dans votre installation, vous pouvez avoir d'autres blocs de contenu, car cela dépend des modules que vous avez actifs. Veuillez contacter votre administrateur système si vous voyez quelque chose de différent ici, comme un bloc de contenu manquant.
+
+== Blocs de contenu
+
+Ce sont les différents blocs de contenu activés avec les modules officiels Decidim :
+
+=== Image du héros
+
+image::homepage_hero_image_back.png[Hero image in Homepage backend content block]
+
+image::homepage_hero_image_front.png[Hero image in Homepage frontend content block]
+
+=== Bannière sous héros
+
+Affiche le texte de description de l'instance. Voir xref:admin:appearance.adoc[Appearance].
+
+image::homepage_sub_hero_banner.png[Sub hero banner in Homepage content block]
+
+=== Bannière de sous-héros du pied de page
+
+// TODO: I think this should be changed with an HTML text and probably removed
+
+image::homepage_footer_sub_hero_banner.png[Hero image in Homepage content block]
+
+=== Comment participer
+
+// TODO: I think this should be changed with an HTML text and probably removed
+
+image::homepage_how_to_participate.png[How to participate in Homepage content block]
+
+=== Réunions à venir
+
+image::homepage_upcoming_meetings.png[Upcoming meetings in Homepage content block]
+
+=== Dernière activité
+
+image::homepage_last_activity.png[Last activity in Homepage content block]
+
+=== Bloc HTML
+
+image::homepage_html_block.png[HTML block in Homepage content block]
+
+=== Processus mis en avant
+
+image::homepage_highlighted_processes.png[Highlighted processes in Homepage content block]
+
+=== Assemblées en surbrillance
+
+image::homepage_highlighted_assemblies.png[Highlighted assemblies in Homepage content block]
+
+=== Initiatives mises en avant
+
+image::homepage_highlighted_initiatives.png[Highlighted initiatives in Homepage content block]
+
+=== Consultations mises en avant
+
+image::homepage_highlighted_consultations.png[Highlighted consultations in Homepage content block]
+
+=== Conférences mises en avant
+
+image::homepage_highlighted_conferences.png[Highlighted conferences in Homepage content block]
+
+=== Bannière de contenu en surbrillance
+
+image::homepage_highlighted_content_banner.png[Highlighted content banner in Homepage content block]
+
+=== Statistiques de l'organisation
+
+image::homepage_organization_statistics.png[Organizations statistics in Homepage content block]
+
+=== Mesures de l'organisation
+
+image::homepage_organization_metrics.png[Organzation metrics in Homepage content block]
