@@ -1,53 +1,53 @@
-= Configuration
+= Configuração
 
-In this page you can configure general settings from Decidim.
+Nesta página você pode configurar configurações gerais a partir do Decidim.
 
 image::admin_configuration.png[Decidim Admin Configuration]
 
-These are:
+Estes são:
 
-* **Name**. Required. The name that the platform has. Visible at title, emails, etc.
-* **Social**. Social handlers for different social networks. Visible at the footer in every page. This are:
+* **Nome**. Obrigatório. O nome que a plataforma tem. Visível no título, e-mails, etc.
+* **Social**. Manipuladores sociais para diferentes redes sociais. Visível no rodapé em cada página. Isto é:
 ** Twitter
-** Facebook
+** Siga-nos
 ** Instagram
-** YouTube
+** Youtube
 ** GitHub
 
 image::settings_configuration_social.png[Social networks configuration in Decidim]
 
-* **Default locale**. Required.
-* **Time Zone**. Required. In which Time Zone is your organization. Used by things like calendars in Meetings.
-* **Reference prefix**. Required.
-* **Enable badges**. Whether you want or not that your participants have badges as a gamification mechanism, for instance for creating proposals or making comments.
-* **Enable groups**.  Whether you want or not that your participants have the possibility to create xref:participants/groups.adoc[User Groups]. Useful for example for associations or other collectives.
-* **Enable rich text editor for participants**.  Whether you want or not that your participants have the possibility to have a https://en.wikipedia.org/wiki/WYSIWYG[What You See Is What You Get (WYSIWYG) editor]. In some text areas, participants will be able to insert some HTML tags by using the rich text editor.
-* **Send welcome notification**. Whether you want or not that your participants receive a notification when their first created their account. If enabled you can customize this notification.
-** **Customize welcome notification**.
-** **Welcome notification subject**.
-** **Welcome notification body**.
+* **Local padrão**. Obrigatório.
+* **Fuso horário**. Obrigatório. Em que fuso horário é sua organização. Usado por coisas, como calendários, nas Reuniões.
+* **Prefixo de referência**. Obrigatório.
+* **Ative insígnias**. Se você quer ou não que seus participantes tenham medalhas como um mecanismo de gamificação, por exemplo, para criar propostas ou fazer comentários.
+* **Habilitar grupos**.  Se você quiser ou não que seus participantes tenham a possibilidade de criar xref:participants/groups.adoc[Grupos de Usuários]. Úteis como, por exemplo, para associações ou outros coletivos.
+* **Habilitar o editor de texto rico para participantes**.  Se você quer ou não que seus participantes tenham ou não a possibilidade de ter um editor https://en.wikipedia.org/wiki/WYSIWYG[O que você vê é o que você obtém (editor WYSIWYG)]. Em algumas áreas de texto, os participantes poderão inserir algumas tags HTML usando o editor de texto rico.
+* **Enviar notificação de boas-vindas**. Se você quer ou não que os seus participantes recebam uma notificação quando criarem a conta pela primeira vez. Se ativado, você poderá personalizar esta notificação.
+** **Personalizar notificação de boas-vindas**.
+** **Assunto notificação das boas-vindas**.
+** **Bem-vindo corpo da notificação**.
 
-.Welcome notification
+.Notificação de boas-vindas
 ====
-Hi {\{name}}, thanks for joining {\{organization}} and welcome!
+Olá {\{name}}, obrigado por se juntar a {\{organization}} e ser bem-vindo!
 
-If you want to get a quick idea of what you can do here, have a look at the Help section.
-Once you have read it you will get your first badge. Here's a list of all the badges you can get as you participate in {\{organization}}
+Se você quer ter uma ideia rápida do que pode fazer aqui, dê uma olhada na seção de Ajuda.
+Assim que tiver lido você terá a sua primeira medalha. Aqui está uma lista de todos os emblemas que podem obter ao participar em {\{organization}}
 
-Last but not least, join other people, share with them the experience of being engaged and participating in {\{organization}}. Make proposals, comments, debate, think about how to contribute to the common good, provide arguments to convince, listen and read to be convinced, express your ideas in a concrete and direct way, respond with patience and decision, defend your ideas and keep an open mind to collaborate and join other people's ideas.
+Por último, mas não menos importante, junte-se a outras pessoas, compartilhe com elas a experiência de estar envolvido e participar em {\{organization}}. Faça propostas, comentários, debate, pensar em como contribuir para o bem comum, fornecer argumentos para convencer, ouvir e ler para se convencer, expressar as suas ideias de forma concreta e directa, responder com paciência e decisão. defenda suas ideias e mantenha a mente aberta para colaborar e juntar as ideias de outras pessoas.
 ====
 
 image::settings_configuration_welcome.png[Welcome notification configuration in Decidim]
 
-* **Admin terms of use body**. Which message an Administrator user will see when accessing for the first time to the Administration panel.
+* **Termos de administrador do corpo**. Qual mensagem um usuário Administrador verá quando acessar pela primeira vez ao painel de Administração.
 
-.Admin terms of use
+.Termos de uso do administrador
 ====
-ADMIN TERMS OF USE
+TERMOS DE ADMIN DE USO
 
-We trust you have received the usual lecture from the local System Administrator. It usually boils down to these three things:
+Confiamos que você recebeu a aula habitual do Administrador do Sistema local. Geralmente se resume a estas três coisas:
 
-* Respect the privacy of others.
-* Think before you click.
-* With great power comes great responsibility.
+* Respeite a privacidade dos outros.
+* Pense antes de clicar.
+* Com grande poder vem uma grande responsabilidade.
 ====
