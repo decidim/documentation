@@ -1,21 +1,21 @@
-= Delete my account
+= Excluir minha conta
 
-In this section participants will be able to delete their own accounts. This means that they will be unable to access the system anymore. This action is irreversible. All the contributions will be anonymized.
+Nesta seção, os participantes poderão excluir suas próprias contas. Isto significa que eles não poderão aceder mais ao sistema. Essa ação é irreversível. Todas as contribuições ficarão anônimas.
 
-image:features/my_account/delete_my_account.png[Delete my account form]
+image:features/minha_account/delete_minha_account.png[Excluir meu formulário de conta]
 
-To delete the account:
+Para excluir esta conta:
 
-. Sign in as a participant
-. Click in the name of the participant in the header
-. Click in "My account"
-. Click in "Delete my account" in the sidebar
-. Optionally, she can provide a reason for the deletion
-. Click in "Delete my account"
-. Click in "Yes, I want to delete my account"
+. Iniciar sessão como participante
+. Clique no nome do usuário no cabeçalho
+. Clique em "Minha conta"
+. Clique em "Excluir minha conta" na barra lateral
+. Opcionalmente, eles podem fornecer um motivo para a exclusão
+. Clique em "Excluir minha conta"
+. Clique em "Sim, quero excluir minha conta"
 
-image:features/my_account/delete_my_account_confirm.png[Confirm account deletion]
+image:features/minha_conta/delete_minha_conta_meu_confirm.png[Exclusão de conta]
 
-After the account has been deleted, the contributions (such as comments, proposals, etc), will be still visible but all the authorship information will be anonymized, belonging to an special kind of author called "Participant deleted":
+Depois que a conta foi excluída, as contribuições (como comentários, propostas, etc), continuará visível, mas todas as informações de autoria ficarão anônimas, pertencentes a um tipo especial de autor chamado "Participante excluído":
 
-image:features/my_account/delete_my_account_deleted.png[Deleted participant contribution]
+image:features/minha_account/delete_minha_account_deleted.png[Contribuição participante excluída]
