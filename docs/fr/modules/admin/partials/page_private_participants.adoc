@@ -1,0 +1,75 @@
+= Participants privés
+
+Il y a des cas où vous voulez avoir un recensement fermé des participants dans un espace. Par exemple, cela pourrait être un espace
+pour un petit groupe de personnes, ou les membres d'une comission à l'intérieur d'une grande organisation. Pour ces cas, vous pouvez
+utiliser la fonctionnalité privée des participants.
+
+image:espaces/private_participants.png[Liste des participants privés]
+
+Pour inviter des participants privés d'un espace:
+
+. Se connecter en tant qu'administrateur
+. Aller à la section de l'espace dans la barre latérale
+. Cliquez sur l'action d'édition d'espace
+. Cliquez sur le lien "Participants privés" dans la barre latérale
+. Cliquez sur les boutons "Nouvel utilisateur de l'espace participatif" ou "Importer via CSV"
+
+== Nouvel utilisateur privé de l'espace participatif
+
+image:espaces/private_participants_new_form.png[Nouveau formulaire de participant privé]
+
+
+.Nouveau formulaire utilisateur privé d'espace participatif
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Quel est le nom du nouveau participant.
+
+|Courriel
+|Obligatoire
+|Quel est le courriel du nouveau participant.
+|===
+
+== Importer via CSV
+
+image:espaces/private_participants_csv_import.png[Importer des participants privés via CSV]
+
+Ce formulaire vous permet d'importer en masse les participants d'un espace.
+
+Il doit avoir deux colonnes avec l'email dans la première colonne du fichier et le nom dans la dernière colonne du fichier (e-mail, nom)
+des utilisateurs que vous voulez ajouter à l'espace participatif. Quelques conseils :
+
+* Le fichier ne doit pas avoir d'en-têtes. Cela signifie que vous n'avez pas à ajouter une colonne qui dit "email, nom"
+* Vous devez éviter d'utiliser des caractères invalides comme `<>?%&^*#@()[]=+:;"{}\|` dans le nom d'utilisateur.
+* Le séparateur entre les colonnes doit être une virgule (",")
+
+== Actions
+
+Une fois que les participants ont été invités, vous pouvez renvoyer ou supprimer l'invitation.
+
+image:espaces/private_participants_actions.png[Actions privées des participants]
+
+|===
+|Icône |Nom |Définition
+
+|image:action_resend_invitation.png[Renvoyer l'invitation]
+|Renvoyer l'invitation
+|Si l'invitation n'a pas été acceptée, envoyez-la à nouveau à l'utilisateur
+
+|image:action_delete.png[Supprimer l'invitation]
+|Supprimer l'invitation
+|Révoquer l'invitation envoyée à l'utilisateur
+|===
+
+== Invitation
+
+When a participant was invited they will get an email with a link for accepting the invitation:
+
+image:espaces/private_participants_email_invite.png[Envoyer une invitation par courriel à un participant privé]
+
+After clicking in this email, they will have to fill a form for setting their password, accepting the Terms of Service and giving
+their consent if they want to receive newsletters.
+
+image:espaces/private_participants_user_registration_form.png[Formulaire d'inscription d'un participant privé]
