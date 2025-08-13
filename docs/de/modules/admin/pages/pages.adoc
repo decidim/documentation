@@ -1,0 +1,125 @@
+= Seiten
+
+Sie können statische Seiten konfigurieren, die allgemeine Informationen zu den Teilnehmern der Plattform enthalten.
+
+Als Beispiel könnten einige dieser Seiten aufrufen:
+
+* Was ist diese Plattform? Wer ist die Organisation?
+* Wie kann ich hier teilnehmen?
+* Wie kann ich mein Konto erstellen und überprüfen?
+* Was sind die Bedingungen und die rechtlichen Informationen über diese Plattform?
+
+Diese Seiten stehen allen Teilnehmern im Hauptmenü der **Hilfe** sowie in den Fußzeilen zur Verfügung. Du kannst **Theme** definieren, um all diese Seiten zu kategorisieren.
+
+Da die Plattform es den Teilnehmern ermöglicht, sich zu registrieren (registrieren) und einige ihrer persönlichen Daten zu speichern Es ist wichtig, dass es eine spezielle Seite namens **Terms and Conditions** gibt. Hier müssen Sie Ihre rechtlichen Bedingungen setzen, zum Beispiel welche juristische Person die Kontrolle über diese Daten hat wie viel Zeit werden diese Daten gespeichert, etc. Dies sollte (ideals) von einem Anwalt geschrieben und (zumindest) überprüft werden.
+
+== Neue Seite erstellen
+
+Um eine neue Seite zu erstellen, müssen Sie nach:
+
+. Als Admin anmelden
+. Klicken Sie in Seiten in der Seitenleiste
+. Klicken Sie auf "Seite erstellen"
+
+image::pages_backend_form.png[Backend: new page form]
+
+
+.Neues Seitenformular
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Titel dieser Seite. Zum Beispiel: "Wie kann ich teilnehmen?"
+
+|URL Slug
+|Benötigt
+|Zeichenkette, die für die URL verwendet wird. Benutze hier partielle Pfade, nicht vollständige URLs. Akzeptiert Buchstaben, Zahlen, Bindestriche und Schrägstriche und muss mit einem Buchstaben beginnen. Wenn zum Beispiel der Slug "hallo-world" ist und Ihre Domain "https://example.org" ist, dann ist Ihre Seite unter "https://example.org/hello-world"
+
+|Inhalt
+|Benötigt
+|Der gesamte Text der Seite.
+
+|Thema
+|Optional
+|In welchem Thema wird es sein.
+
+|Gewicht
+|Optional
+|Welche Bestellung hat er im Zusammenhang mit den anderen Seiten. Eine niedrigere Zahl bedeutet eine höhere Priorität. Zum Beispiel, wenn Sie zwei Seiten haben, "Seite a" mit dem Gewicht "10" und "Seite b" mit dem Gewicht "0", dann wird "Seite b" zuerst bei der Bestellung sein.
+
+|Im Footer anzeigen
+|Optional
+|Ob Sie diese Seite in der allgemeinen Fußzeile anzeigen möchten (verfügbar in jeder Seite).
+|===
+
+image::pages_frontend_footer.png[Frontend: example of a page in the footer]
+
+== Neues Thema erstellen
+
+Um ein neues Thema zu erstellen, müssen Sie nach:
+
+. Als Admin anmelden
+. Klicken Sie in Seiten in der Seitenleiste
+. Klicken Sie in "Thema erstellen"
+
+image::pages_backend_topic_form.png[Backend: new topic form]
+
+
+.Neues Themen-Formular
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Titel dieses Themas. Zum Beispiel: "Hilfe"
+
+|Beschreibung
+|Optional
+|Worum geht es bei diesem Thema.
+
+|Gewicht
+|Optional
+|Welche Reihenfolge wird sie in Bezug auf die anderen Themen haben. Eine niedrigere Zahl bedeutet eine höhere Priorität. Zum Beispiel, wenn Sie zwei Themen haben, "Thema a" mit Gewicht "10" und "Thema b" mit Gewicht "0", dann "Thema b" wird zuerst bei der Bestellung.
+
+|Im Footer anzeigen
+|Optional
+|Ob Sie dieses Thema in der allgemeinen Fußzeile anzeigen möchten (verfügbar in jeder Seite).
+|===
+
+== Spezielle "Allgemeine Geschäftsbedingungen" Seite
+
+Hier müssen Sie Ihre rechtlichen Bedingungen setzen, zum Beispiel welche juristische Person die Kontrolle über diese Daten hat wie viel Zeit werden diese Daten gespeichert, etc. Dies sollte (ideals) von einem Anwalt geschrieben und (zumindest) überprüft werden.
+
+Es wird standardmäßig in einer neuen Installation generiert. Es kann nicht gelöscht werden und es hat ein paar spezielle Details, die mit seinem rechtlichen Charakter zusammenhängen:
+
+. Es wird im Textbereich Anmeldeformular angezeigt
+. Wenn es aussagekräftige Änderungen gibt es hat ein Feld, das einen Administrator erlauben kann, wenn es notwendig ist, dass die Teilnehmer die "Allgemeinen Geschäftsbedingungen" wieder akzeptieren in der nächsten Anmeldung.
+
+image::pages_backend_tos_change.png[Backend: ToS change]
+
+image::pages_frontend_tos_change.png[Frontend: ToS change]
+
+If a participant rejects to accept the terms, then they have three options:
+
+. Dies später erneut überprüfen. It signs them out automatically.
+. Ihre persönlichen Daten herunterladen
+. To delete their account
+
+image::pages_frontend_tos_reject.png[Frontend: ToS reject]
+
+== Beispiele
+
+=== Seiten
+
+image::pages_frontend_show.png[Frontend: show a page]
+
+image::pages_backend_edit.png[Backend: edit a page]
+
+image::pages_backend_list.png[Backend: list pages]
+
+=== Themen
+
+image::pages_frontend_list_topics.png[Frontend: list topics of pages]
+
+image::pages_backend_list_topics.png[Backend: list topics of pages]
