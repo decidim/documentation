@@ -28,7 +28,7 @@ image:spaces/admins_form.png[New space admin form]
 
 |Email
 |Required
-|What is the email of the new admin, so she can receive the invitation.
+|What is the email of the new admin, so they can receive the invitation.
 
 |Role
 |Required
@@ -59,7 +59,7 @@ image:spaces/admins_role_moderator.png[Process moderators view]
 
 === Process valuators
 
-A space valuator can review the proposals of the space. She can:
+A space valuator can review the proposals of the space. They can:
 
 * change the status of the proposals, by accepting or rejecting them
 * add a monetary value to the proposals, so they can be voted with the budget component.
