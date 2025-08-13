@@ -1,33 +1,33 @@
-= Reported users
+= Usuários relatados
 
-There are cases where participants could go against the Terms of Service of the
-platform, so it's useful to have the option for reporting and blocking users. You
+Existem casos em que os participantes poderiam ir contra os Termos de Serviço da plataforma
+, portanto é útil ter a opção de reportar e bloquear usuários. You
 can read more about how moderation and reporting contents work in xref:global_moderations.adoc[Global moderations].
 
-A participant can be blocked from the xref:participants/participants.adoc[participants
-section in the admin panel] or through this "Reported users" section.
+Um participante pode ser bloqueado da seção xref:participantes/participantes.adoc[Participantes
+no painel de administração] ou através desta seção "Usuários relatados".
 
 Anyone can propose a moderation in Decidim, through the "Flag" icon in the participant
-profile. After a participant has clicked in this action she needs to provide a
-reason why she's making this report:
+profile. After a participant has clicked in this action they need to provide a
+reason why they are making this report:
 
-* Contains clickbait, advertising, scams or script bots.
-* Contains racism, sexism, slurs, personal attacks, death threats, suicide requests
-or any form of hate speech.
-* Contains illegal activity, suicide threats, personal information, or something
-else you think doesn't belong on Demo.
-* Other (and add it)
+* Contém clickbait, publicidade, fraudes ou scripts bots.
+* Contém racismo, sexismo, insultos, ataques pessoais, ameaças de morte, suicídio pede a
+ou qualquer forma de discurso de ódio.
+* Contém atividades ilegais, ameaças suicidas, informações pessoais ou algo
+caso contrário, você acha que não pertence à Demonstração.
+* Outro (e adicionar)
 
-image:reported_participant_modal.png[Give reason for reporting a participant modal]
-image:reported_participant_flag.png[Flag in sidebar profile]
+image:reported_participant_modal.png[Dê motivo para reportar uma janela do participante]
+image:reported_participant_flag.png[Sinalizar no perfil da barra lateral]
 
 After clicking in this option you'll need to provide a justification why you're
 blocking this participant:
 
-image:participants_block_user_justification.png[Justificate the blocked user action]
+imagem:participants_block_user_justification.png[Justifice a ação de usuário bloqueado]
 
-Once a blocked participant tries to log-in she'll see an error message:
+Uma vez que um usuário bloqueado tentar entrar, eles verão uma mensagem de erro:
 
-image:participants_block_user_alert.png[Message shown to blocked user]
+imag:participants_block_user_alert.png[Mensagem mostrada ao usuário bloqueado]
 
-After a participant was blocked its name is changed to "Blocked user".
+Depois que um usuário for bloqueado seu nome é alterado para "Usuário bloqueado".
