@@ -1,0 +1,66 @@
+= Beteiligte Räume
+
+:page-partial:
+
+Partizipatorische Räume definieren die wichtigsten partizipatorischen Kanäle. Sie werden im Hauptmenü der Plattform angezeigt.
+
+Die grundlegende Logik hinter der Struktur von Decidim ist, dass *Komponenten in den partizipatorischen Räumen* zusammenarbeiten. Es gibt verschiedene Arten von Räumen (Initiativen, Prozesse, B. Konsultationen und Versammlungen) und verschiedene Instanzen innerhalb jeder Art (ein Wahlprozess und ein anderer für Beteiligungshaushalte, Ratsgremium für die Nachbarschaft und ein anderes für die Arbeitnehmer. eine Initiative, um eine Änderung der Gesetzgebung zu fordern, und eine andere, um etwas in die Tagesordnung einer Plenartagung einzubeziehen usw.).
+
+== Prozesse
+
+Teilnehmende Prozesse erfordern ein generelles *Konfiguration* Formular mit den folgenden Feldern: Titel oder Name des Prozesss; Kurzname für URL; hash tag (wird als Referenz für Kommunikation in sozialen Netzwerken verwende); kurze Beschreibung; lange Beschreibung; Startseiten-Bild; Banner-Bild; Start- und Enddatum; feld; promoter group (verantwortlich für den partizipatorischen Prozess auf politischer Ebene kann die Kommunalbehörde oder eine Gruppe aus Experten der Behörde, Politikern und Verbänden und anderen Organisationen sein; auf wen es abzielt; Ziel des partizipatorischen Prozesses und partizipatorische Struktur. Durch den partizipatorischen Prozess können *begleitende Dokumente* hinzugefügt werden.
+
+Die Teilnahmeprozesse werden in *Stufen* (z.B. 1. Information und Einberufung der Etappe; 2. diagnostische Phase; 3. Vorschläge Etappe; 4. priorsation stage; 5. Entscheidungsphase; 6. Evaluierungsphase und 7. Ergebnisüberwachung). Jede Stufe enthält die folgenden Konfigurationsfelder: Titel, Beschreibung, Startdatum, Enddatum.
+
+*Hervorhebungen von Ankündigungen oder Texten* können auch in den Prozessen angezeigt werden, sowohl auf der Homepage als auch in der Rubrik der einzelnen Komponenten (Vorschläge, Diskussionen und Debatten, usw.) Verschiedene Nachrichten können je nach der jeweiligen Phase eines Prozesses konfiguriert werden.
+
+Ein *partizipatorisches Prozesskonfiguration* ermöglicht die einfache Aktivierung und Deaktivierung von Stufen und deren Komponenten. Decidims Prozesskonfigurationswerkzeug ist eines seiner mächtigsten Features, die völlige Flexibilität bei der Gestaltung partizipatorischer Prozesse nach den verschiedenen Realitäten und Formen der Bürgerbeteiligung zu ermöglichen.
+
+Die Funktion **Prozessgruppen ermöglicht die Zusammenlegung verschiedener Prozesse, wie etwa der Teilhaberhaushalte verschiedener Distrikte oder Stadtviertel.
+
+Teilnahmeprozesse können einen der folgenden *Prozessstatus*: 0) veröffentlicht oder unveröffentlicht; 1) offen (gestartet; 2) geschlossen (der partizipatorische Prozess ist beendet, aber seine Ergebnisse sind noch im Gange; 3) beendet (sowohl der Prozess als auch seine Ergebnisse sind abgeschlossen) und 4) Zukunft (hat noch nicht begonnen).
+
+Ein Prozess kann **markiert** sein (erhöht die Sichtbarkeit auf der Homepage).
+
+Es besteht auch die Möglichkeit, partizipatorische Prozesse **aus dem Administrationsbereich zu kopieren** . Mit dieser Funktion können Prozessmodelle so gestaltet und kopiert werden, dass bestimmte Details innerhalb der neuen Prozesse konfiguriert werden können Vermeidung der Notwendigkeit, sie von Grund auf neu zu erstellen.
+
+== Schwärmerei
+
+Decidim erlaubt die **Schaffung und Konfiguration** von partizipatorischen oder staatlichen *Versammlungen* (Regierungs- oder partizipatorische Organe; Räte, Arbeitsgruppen, usw.) als strukturierte Teilnehmergruppen definiert werden, die sich sowohl auf individueller als auch auf repräsentativer Ebene regelmäßig mit der Befugnis treffen, Vorschläge und Entscheidungen zu treffen.
+
+Im Bereich der *Assembly* können Sie eine vollständige Liste aller Baugruppen sehen, die im Administrationsbereich aktiviert und konfiguriert sind. Die grundlegenden *Einstellungen* erfordern, dass die folgenden Felder für jeden Körper ausgefüllt werden: Name; Bild; Bild; Umfang (global, territorial oder sektor); Funktion des Körpers (Aktion), Art des Organs (Regierung, Exekutive, Beratung / Beratung, Beteiligung, Arbeitsgruppe, Provision usw.). ; Erstellungsdatum; auf Initiative von (City Council), Bürgern oder anderen; Dauer (unbegrenzt oder fixiert, im letzteren Fall Enddatum); Datum der Aufnahme in Decidim; Datum der Schließung und Begründung; wie es organisiert ist (Funktionen, Befugnisse usw.). ; Komposition; wenn es verbunden werden kann und wie das zu tun; Methode der Mitgliederwahl; Typ / Funktion der Mitglieder innerhalb des Körpers; Zusammensetzung interner Arbeitsgruppen als Begleit- oder beratende Ausschüsse; Merkmale des Gremiums; die sozialen Netzwerke des Körpers (Name des sozialen Netzwerks und der Verbindung) und die nächsten Treffen des Körpers.
+
+* *Konventionelle Meetings*: ermöglicht das Versenden automatischer Meeting-Einladungen, die gemeinsame Erstellung von Tagesordnungen und die Registrierung von Teilnehmern. Eine komplette Liste der Funktionen finden Sie in der Komponente "Meetings".
+* *Charakteristika der Assembly*: offene, öffentliche, transparente und andere Charakteristika bezüglich des Niveaus der Teilnahme, die die Montage zulässt.
+* *Komposition:* Dadurch kann die Zusammensetzung des Körpers detaillierter definiert werden, unter Verwendung der Profile der mit dem Körper assoziierten Teilnehmer sowie anderer Merkmale. Eine Darstellung der Körperstruktur wird automatisch anhand der Zusammensetzung der teilnehmenden Mitglieder generiert:
+** *Arten von Mitglieder*: Vorsitzender, stellvertretender Vorsitzender, Sekretärinnen, andere
+** *Mitgliedschaft*: nach Ziehung, Direktwahl, Vertretung einer anderen Versammlung, Regierungsvertretung usw.
+** *Interne Arbeitsgruppen*: zur Erstellung von Untergruppen. Arbeitsgruppen können sich auf den Körper beziehen, dem sie angehören
+** *Charakteristiken*: offen/geschlossen; transparent; mit verschiedenen Zugriffsgenehmigungen.
+* *Anzeigen*: erlaubt es uns, interne Daten über jeden Körper sowie die Verbindungen zwischen den Assemblys anzuzeigen
+** *Zusammensetzung*: Die Struktur eines Körpers wird in Form eines Kreisdiagramms angezeigt
+** *Organisationsdiagramme*: Erlauben Sie uns, die Hierarchie oder das Netzwerk von Assemblies und deren Assoziationen zu sehen.
+* *Karte und Kalender*: Erlauben Sie uns, den Standort aller Schwärmereien auf einer Karte und einem Kalender zu sehen
+* *Involvierung mit anderen Leerzeichen und Komponenten*
+** *Beteiligung an Prozessen*: Assemblies können Promoter-Gruppen sein, einen Prozess starten oder Vorschläge in einem Prozess machen. Die Zusammensetzung eines Körpers kann das Ergebnis eines Prozesses (bei der Auswahl von Beiträgen) sein
+** *Vorschläge und Ergebnisse*: ein Gremium kann seine eigenen Vorschläge oder Ergebnisse erstellen.
+*** Er zeigt, wie der Vorschlag angenommen wurde (durch Konsens, Mehrheit, Stimmenzahl usw.).
+** *Meetings*: Schwärmereien werden eine Liste der zugehörigen Meetings haben aber einige Merkmale können von einer Sitzung zur anderen springen, wie Bürgerinitiativen zur Aufnahme eines Punktes in eine Agenda. Ebenso muss es möglich sein, Protokolle getrennt von der Sitzung zu sehen, da sie direkt mit dem Körper verbunden sind.
+
+== Initiativen
+
+*Initiativen*. Dieser partizipatorische Raum erlaubt es den Bürgern, Vorschläge zu machen und die *erforderliche Anzahl an Unterschriften und/oder Unterstützungen* je nach Typ zu sammeln (die verschiedenen Typen sind in den kommunalen Vorschriften festgelegt), der Beginn des Verwaltungsverfahrens für seine Verarbeitung und die Überwachung der Bürger.
+
+Initiativen funktionieren wie folgt:
+
+* Jede Person oder Bürgervereinigung kann einen Vorschlag für eine Bürgerinitiative unterbreiten. Es gibt *mehrere Arten von Initiativen* mit verschiedenen Nummern von Unterstützungen/Unterschriften für ihre Verarbeitung (alle sind konfigurierbar). Auf der Initiativ-Erstellungsseite kann eine Beschreibung der einzelnen Methoden, der benötigten Unterschriften und Beispiele (z.B. erklärende Videos) angezeigt werden.
+* Um Doppelarbeit zu vermeiden, sobald eine Initiative erstellt wurde, wird das System Vorschläge für **ähnliche Initiativen** vorlegen, bevor Sie mit dem folgenden Schritt fortfahren. Sobald ähnliche Vorschläge ausgeschlossen sind, wird die konkrete Form für jede Art von Initiative angezeigt. zusammen mit der erforderlichen Mindestanzahl von Bestätigungen. Der Urheber hat dann eine URL zur Verfügung, mit der andere zur Teilnahme eingeladen werden und die Initiative unterstützt werden kann. Es wird auch eine Karte angezeigt, die die Orte der Begegnungspunkte anzeigt, um Unterschriften zu sammeln, falls eine vorhanden ist.
+* Sobald die Initiative ins Leben gerufen wurde, wird die Initiative zu einer **technischen Moderation und Validierung** Phase übergehen wo die Mitarbeiter des Stadtrats auf verschiedene Weise reagieren können (durch Zustimmung, Ablehnung oder Änderungsvorschläge).
+* Initiativen können überwacht werden und **Benachrichtigungen bei aktualisiert** Status erhalten Zusätzlich können ihre einzelnen Förderer oder Gruppen regelmäßig Informations-Newsletter an andere Nutzungen der Plattform senden, die sich für die Initiative entschieden haben.
+* Beim Erreichen des festgelegten Enddatums kann eine Initiative zwei mögliche Staaten haben:
+** *Abgelehnt*: wenn die Mindestanzahl der Signaturen nicht erreicht wird, wird eine Nachricht mit dem Titel "erfüllt nicht die erforderliche Anzahl von Unterschriften" angezeigt und der Urheber der Initiative wird benachrichtigt.
+** *Akzeptiert*: Wenn eine ausreichende Anzahl von Unterschriften oder Zustimmungen erreicht wurde, wird sie angenommen und das entsprechende Verfahren wird gestartet.
+
+== Konsultationen
+
+Konsultationen (Abstimmungsverfahren, bei dem alle Teilnehmer der Organisation zur Abstimmung über bestimmte Fragen aufgefordert werden) ermöglicht es den Teilnehmern, sich über aktuelle oder zukünftige Konsultationen zu informieren, *zu diskutieren und zu diskutieren* den Themenbereich der Beratung zu prüfen und *zu überwachen* die Ergebnisse. Es stellt auch ein *Gateway zu einem e-vote-System* zur Verfügung, das extern zu Decidim ist, aber in die Schnittstelle integriert ist, um Identitäten zu verwalten und zu verifizieren.
