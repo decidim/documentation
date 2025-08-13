@@ -1,0 +1,145 @@
+= Actualités
+
+Le composant Blog permet aux gens de lire plusieurs messages ordonnés par date.
+
+Quelques exemples d'utilisation de ce composant :
+
+* https://meta.decidim.org/processes/roadmap/f/247/[Nouvelles dans Proposer de nouvelles fonctionnalités pour le logiciel Decidim] dans https://meta.decidim.org[Metadecidim]
+
+image:components/blog/example01.png[Exemple de liste d'articles de blog]
+image:components/blog/example02.png[Exemple de billet de blog]
+
+Pour configurer le composant Blog :
+
+. Se connecter en tant qu'administrateur
+. Aller au panneau d'administration
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+Par exemple, il peut s'agir de "Concertations", d'"Assemblées" ou de "Conférences".
+. Aller dans les fonctionnalités
+. Cliquez sur le bouton "Ajouter une fonctionnalité"
+. Cliquez sur "Actualités"
+. Remplissez le formulaire xref:_add_component[Ajouter une fonctionnalité]
+
+== Ajouter une fonctionnalité
+
+image:components/debates/component.png[Formulaire d'ajout de fonctionnalité]
+
+
+.Ajouter une fonctionnalité : Formulaire d'Actualités
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Quel est le titre de cette fonctionnalité. Par exemple, "Actualités"
+
+|Rang d'affichage
+|Facultatif
+|Quel ordre aura-t-il par rapport aux autres fonctionnalités Actualités. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux fonctionnalités Actualités, "Actualités A" avec le rang "10" et "Actualités B" avec le rang "0", alors "Actualités B" sera la première fonctionnalité affichée.
+|===
+
+
+.Ajouter un composant : Formulaire de blog - Paramètres globaux
+|===
+|Champ |Type |Description
+
+|Annonce
+|Facultatif
+|Une annonce générale qui sera visible sur la page générale des actualités.
+
+|Commentaires activés
+|Facultatif
+|Si vous voulez avoir des commentaires dans les rencontres.
+
+|Longueur maximale des commentaires
+|Facultatif
+|Quelle est la limite de caractères que les participants auront quand ils feront des commentaires. Laisser 0 pour la valeur par défaut.
+|===
+
+Dans les cas où l'espace que ce composant sera utilisé a xref:admin:spaces/processes/phases. doc[Phases], par exemple, dans
+xref:admin:spaces/processes.adoc[Processus participatif], vous pouvez également définir différents comportements par étape.
+
+
+.Ajouter un composant : Formulaire de blogs - Paramètres de l'étape
+|===
+|Champ |Type |Description
+
+|Annonce
+|Facultatif
+|Une annonce générale qui sera visible sur la page générale des actualités.
+
+|Commentaires désactivés
+|Facultatif
+|Si vous voulez activer la création de commentaires pour cette étape.
+
+|Soutiens activés
+|Facultatif
+|Si vous voulez activer les soutiens pour cette étape.
+
+|Soutiens bloqués
+|Facultatif
+|Si vous voulez désactiver l'ajout de nouvelles approbations pour cette phase.
+|===
+
+== Autorisations
+
+Un administrateur peut choisir quel type de xref:customize:authorizations.adoc[Authorizations] un participant a besoin de faire
+certaines actions dans les blogs:
+
+* Commenter
+* Soutenir
+
+== Gérer les messages
+
+image:components/blog/manage_posts.png[Gérer la table des posts]
+
+=== Formulaire de création d'article d'actualités
+
+image:components/blog/new_post.png[Formulaire du nouveau post]
+
+
+.Formulaire de création d'article d'actualités
+|===
+|Champ |Type |Description
+
+|Créer un article en tant que
+|Obligatoire
+|Compte participant ou groupe d'utilisateurs qui sera l'auteur de la publication.
+
+|Titre
+|Obligatoire
+|Quel est le titre de cet article.
+
+|Corps
+|Obligatoire
+|Quelle est la description de ce post.
+|===
+
+==== Actions
+
+
+.Actions
+|===
+|Icône |Nom |Définition
+
+|image:action_edit.png[Icône d'édition]
+|Editer
+|Modifier le formulaire pour ce post. C'est la même forme que "Nouveau message".
+
+|image:action_folder.png[Icône du dossier]
+|Répertoire
+|Pour la classification des pièces jointes.
+
+|image:action_attachments.png[Icône des pièces jointes]
+|Fichiers joints
+|Documents qui sont liés à la poste.
+
+|image:action_permissions.png[Icône des permissions]
+|Autorisations
+|Pour gérer les permissions de ce post, selon la vérification d'un participant.
+
+|image:action_delete.png[Supprimer l'icône]
+|Supprimez
+|Supprimer ce message.
+|===
