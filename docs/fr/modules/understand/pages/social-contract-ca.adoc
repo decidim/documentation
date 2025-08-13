@@ -1,0 +1,63 @@
+= Contrat social de Decidim
+
+[NOTE]
+====
+Pots llegir el Contracte Social de Decidim en altres idiomes: xref:understand:social-contract-es.adoc[Castellano] - xref:understand:social-contract.adoc[English]
+
+Si vols traduïr-ho al teu idioma sisplau https://decidim.org/contact[contacta amb nosaltres].
+====
+
+Codi de garanties democràtiques i de col·laboració oberta
+
+Aquest és el contracte social que tots el membres del projecte Decidim es comprometen a seguir.
+
+La utilització de la plataforma Decidim per part de qualsevol ajuntament o qualsevol altre ens municipal o supramunicipal, així com altres organitzacions, comporta l'assumpció total i íntegra d'aquest codi.
+
+== Programari lliure i continguts oberts
+
+El codi de la plataforma, així com els mòduls, llibreries o qualsevol altre codi que es desenvolupi per al seu funcionament, serà sempre programari lliure amb llicència https://www.gnu.org/licenses/agpl-3.0.en.html[Affero GPLv3 o posterior] en el cas dels nous desenvolupaments, i de llicències compatibles amb aquesta en el cas de reutilització d’altres codis.
+
+Així mateix, els continguts, dades, APIS i/o interfícies que le Decidim faci serve per interactuar amb qualsevol tipus d’usuari, compliran amb estaÄndards oberts i interoperables (ex. OpenID, RSS, OStatus, etc.), tendint sempre al ma’xim nivell d’integracio amb els esta’ndards oberts més estesos.
+
+De cara a maximitzar la transparència i la col·laboració ciutadana en els processos, òrgans i mecanismes de participació, el contingut de textos, gràfiques, fonts tipogràfiques, àudio, vídeo o altres elements de disseny, es farà públic amb una llicència https://creativecommons.org/licenses/by-sa/4.0/legalcode[Creative Commons By-Sa].
+
+Igualment les dades de la plataforma, especialment totes aquelles que es puguin recollir de manera sistemàtica a través de scrappers o altres tècniques de consulta massiva, seran publicades amb llicències http://opendatacommons.org/licenses/odbl[Open Data Commons Open Database License], en formats estandarditzats i accessibles (tipus CSV, JSON, etc.) i, sempre que sigui possible, amb eines que facilitin l’anàlisi i visualizació d’aquestes dades.
+
+== Transférer et tracer la capacité et l’intégration
+
+La plataforma, així com la seva configuració, desenvolupament, implementació i ús actual o futur han de garantir i maximitzar en tot moment la transparència, la traçabilitat i la integritat dels diagnòstics, propostes, debats, decisions, o qualsevol altre objecte, mecanisme o procés de participació.
+
+Per transparència entenem que totes les dades relacionades amb aquests mecanismes i processos estiguin disponibles per a baixar, analitzar i tractar, seguint els formats i estàndards de compartició més exigents (accessibilitat, multi-format, etc.).
+
+La transparència serà una condició necessària pel seguiment dels processos i mecanismes de participació, però mai, i en cap cas, pel tractament de dades personals que vagin contra la defensa de la privacitat de la persona participant en la plataforma.
+
+Entenem per traçabilitat de les propostes la possibilitat de realitzar un seguiment complet, cap enrere (passat) i cap endavant (futur), de tot el que ha passat amb les propostes, plans, reglaments o qualsevol altre tipus d'objecte de decisió o participació inclòs en un procés o mecanisme. La plataforma ha de mostrar en tot moment com, per què, per qui i amb quin tipus de garanties un determinat objecte d'un procés de participació va ser descartat, aprovat o bloquejat.
+
+Entenem per integritat l'autenticitat d'un determinat contingut, i la garantia que aquest no ha estat manipulat o modificat sense que aquesta modificació quedi clarament registrada i sigui visiblement verificable i contrastable, amb l'objecte d'evitar la manipulació de les propostes o resultats dels processos o mecanismes de participació.
+
+== Igualtat d’oportunitats i indicadors de qualitat
+
+Al costat de les garanties anteriorment definides, la plataforma es compromet a garantir la igualtat d'oportunitats per a totes les persones, així com les seves propostes o altres contribucions que pugui acollir. La plataforma oferirà les mateixes oportunitats de partida a tots els objectes participatius (propostes, debats, etc.) perquè siguin vistos, discutits, comentats, valorats o tractats, sense discriminació de cap tipus. En aquest sentit la identitat digital de les persones usuàries de la plataforma serà sempre personal i intransferible, la verificació que otorgui drets de decisió a la plataforma ha de ser a més única, i serà l’ens responsable l’encarregat de garantir la no-suplantació d’una persona física o jurídica.
+
+Amb l’objectiu de garantir la qualitat democràtica de la plataforma es fomentarà l’ús d’indicadors de qualitat a partir dels processos i mecanismes de participació, així com l’activitat de les persones usuàries de la plataforma. També es fomentarà la compartició de la configuració dels diferents components així com de les dades obertes per a la definició d’aquests indicadors.
+
+La igualtat en la participació política de la ciutadania és un dels principis fonamentals del sistema democràtic i la plataforma, no només ha de garantir la igualtat d’oportunitats pel que fa als usos i funcionalitats, sinó també el dret d’accés. En aquest sentit cada ens promotor de la plataforma es compromet a impulsar aquelles accions que avancin en la direcció de facilitar i acompanyar l’accés a la plataforma a tota la ciutadania per igual de manera universal, propocionant les eines i els recursos adients per a que la plataforma estigui a l’abast de qualsevol persona que en vulgui fer ús.
+
+== Confidencialitat de les dades
+
+Es garanteix la confidencialitat i la privacitat de les dades personals que els ciutadans aporten per a participar en qualsevol de les funcionalitats i/o possibilitats de participació que ofereixi la plataforma DECIDIM en tot moment. En cap cas es cediran aquestes dades personals a tercers. Tampoc es farà un ús de les mateixes que vagi més enllà de l'estrictament necessari per a la gestió del registre d'usuaris o millores de la usabilitat de la plataforma. Sempre que la tecnologia de la plataforma ho permeti les expressions de preferències polítiques en els processos de decisió romandran inaccessible fins i tot per l’ administrador/a de la plataforma o els servidors.
+
+== Rendiment de comptes i responsabilitat
+
+S’adopta un compromís davant la ciutadania de respondre totes les aportacions i consultes en el mínim temps possible. També s’adopta el compromís de donar seguiment als resultats dels processos de participació, així com de donar resposta a aquelles demandes que específicament ho sol·licitin. Finalment s’assumeix el compromís d’estudiar la incorporació d’indicadors de seguiment dels processos de participació un cop estiguin finalitzats, per tal de poder avaluar de manera sistemàtica el seu desplegament.
+
+== Millora contínua i col·laboració interinstitucional
+
+S’adoptaran mecanismes de revisió i avaluació periòdica per facilitar la millora contínua de la plataforma.
+
+Es prioritzarà la col·laboració i l’intercanvi d’experiències entre institucions involucrades en el projecte, amb l’objectiu de millorar, corregir i generar nous desenvolupaments que ajudin a la millora contínua de la plataforma.
+
+En aquest sentit es facilitaran les condicions i entorns de col·laboració a l’hora de tirar endavant millores que apuntin a un benefici comú del conjunt de la plataforma, habilitant mecanismes de coordinació interinstitucional quan sigui necessari.
+Condicions d’ús
+
+Totes els punts d’aquest codi han de quedar reflectits en les condicions d’ús que cada ens redacti per a la seva plataforma i mai entraran en contradicció.
