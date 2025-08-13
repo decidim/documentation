@@ -1,38 +1,49 @@
-= Invites
+= Convites
 
-Administrators can invite participants to join the conference.
+== Understand the basics
 
-image:spaces/conferences/invites.png[Conferences user invites (backend)]
+Os administradores podem convidar participantes para participar da conferência.
+They can invite existing participants, with an account on the platform, as well as people without account.
+Inviting a participant sends an email to the account email address, encouraging the participant to register for the conference.
 
-== Flow
+== Configuração
 
-. An administrator sends an invitation to join the conference to a non-existing or existing participant
-. The participant accepts the invitation
+=== Manage invites
 
-image:spaces/conferences/invite_participant_form.png[Invite a participant form]
+To access the invites configuration, click in the secondary navigation panel on the "Invites" item.
 
+image::spaces/conferences/invites.png[Conferences user invites in backend]
 
-.Invite participant form
+You can filter the invites and search by invitee name or email.
+
+=== Send an invite
+
+To invite a participant, click the "Invite participant" button in the top right of the page.
+
+image::spaces/conferences/invite_participant_form.png[Invite a participant form]
+
+.Formulário do convite
+[cols="20h,~,~"]
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Attendee type
-|Required
-|Wheter this invited person is a non-existing or existing participant. Do they already have an account created on the platform?
+|Tipo de participante
+|Obrigatório
+|Whether or not this invited person already has an account.
 
-|Name
-|Required if it's a non-existing participant.
-|Name of the invited person.
+|Nome:
+|Required if the invitee is not already a participant.
+|Nome da pessoa convidada.
 
-|Email
-|Required if it's a non-existing participant.
-|Email of the invited person.
+|e-mail
+|Required if the invitee is not already a participant.
+|E-mail da pessoa convidada.
 
-|User
-|Required if it's an existing participant.
-|Type at least three characters to search.
+|Usuário
+|Necessário se for um participante existente.
+|Type at least three characters to search for a participant account.
 
-|xref:admin:spaces/conferences/registrations/types.adoc[Registration type]
-|Required
-|What xref:admin:spaces/conferences/registrations/types.adoc[registration type] does this participant will have.
+|xref:admin:spaces/conferences/registrations/types.adoc[Tipo de registro]
+|Obrigatório
+|The xref:admin:spaces/conferences/registrations/types.adoc[registration type] this invitation covers.
 |===
