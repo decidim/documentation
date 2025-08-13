@@ -1,0 +1,105 @@
+= Bereiche
+
+Bereiche sind eine Reihe von Territorien oder Subjekten, die eine Organisation hat. Ein Bereich kann Kindespektraten haben.
+
+Im Fall der Stadt Barcelona zum Beispiel sind die Stadtteile und die Kinder eines Bezirks sind ihre Nachbarn. Sie können auch Typen haben, so dass sie zum Beispiel durch thematische und auch territoriale Bereiche konfiguriert werden können.
+
+Die meisten Komponenten und Leerzeichen in Decidim erlauben es Ihnen, die Bereiche auf die eine oder andere Weise zu konfigurieren. Es gibt vor allem drei Möglichkeiten, Bereiche zu nutzen:
+
+Um das Scope auf der Decidim-Plattform zu konfigurieren, gehen Sie zu Menü:Einstellungen[Scopes] in der Admin-Sidebar Menü. Eine Liste wird mit den vorhandenen Bereichen angezeigt, falls es welche gibt:
+
+image:scopes_list.png[Bereichsliste]
+
+Wenn Sie dies benötigen, müssen Sie zuerst den Scope Typ konfigurieren.
+
+== Formular
+
+image:scopes_types_new_form.png[Neues scope type form]
+
+
+.Admin-Formular für neuen Bereich Typ
+|===
+|Feld |Typ |Beschreibung
+
+|Eindeutig
+|Benötigt
+|Name des Scope Typs in Singular.
+
+|Plural
+|Benötigt
+|Name des Geltungsbereichs im Plural.
+|===
+
+image:scopes_new_form.png[Neues scope form]
+
+
+.Admin-Formular für neue Bereiche
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Name des Anwendungsbereichs.
+
+|Code
+|Benötigt
+|(Internal) Name des Geltungsbereichs.
+
+|Bereichstyp
+|Benötigt
+|Welcher Art des Umfangs es ist.
+|===
+
+== Aktionen
+
+Du hast 3 mögliche Aktionen in dieser Liste, nachdem ein Scope erstellt wurde:
+
+|===
+|Icon |Name |Definition
+
+|image:action_browse.png[Symbol durchsuchen]
+|Durchsuchen
+|Sehen und konfigurieren Sie die Kind-Bereiche für diesen Anwendungsbereich.
+
+|image:action_edit.png[Icon bearbeiten]
+|Bearbeiten
+|Formular für einen Bereich bearbeiten. Es ist das gleiche Formular wie "Neuen Geltungsbereich erstellen".
+
+|image:action_delete.png[Icon löschen
+|Löschen
+|Diesen Bereich löschen.
+|===
+
+== Funktionen
+
+Die wichtigsten Funktionen im Zusammenhang mit den Bereichen sind:
+
+. Filtern
+. Nutzerinteressen und Newsletter
+
+=== Filtern
+
+Zum Filtern. Die meisten Leerzeichen und Komponenten ermöglichen es einem Administrator oder einem Teilnehmer, diese einem Anwendungsbereich zuzuordnen. Dies erlaubt es, nach Bereichen zu filtern, wenn Sie sie erforschen.
+
+image:scopes_filter_initiatives.png[Filter für Initiativbereiche]
+
+image:scopes_filter_processes.png[Prozesse filtern]
+
+Einige Beispiele:
+
+* Mit dem Modul Verantwortlichkeit können Ergebnisse gefiltert werden
+* Schwärmereien und Prozesse können Bereiche haben. Es wird zum Filtern mehrerer Assemblies auf der Hauptseite (/assemblies oder /processes) verwendet. Diese können ausgeblendet werden, indem Sie die Option "Partizipatorische Raumfilter aktivieren" in der Konfigurationsseite von xref:admin:configuration.adoc[admin aktivieren] deaktivieren.
+* Das Filtern in der Sidebar ist in Haushaltsprojekten, Initiativen und Vorschlägen möglich. In einigen dieser Komponenten können Sie festlegen, ob diese Filter in den Komponenteneinstellungen mit dem Kontrollkästchen "Scopes aktiviert" angezeigt werden. Dies aktiviert oder deaktiviert auch den Scope Selektor im Ressourcenerstellungsformular.
+
+Sie können auch einen partizipatorischen Raum konfigurieren, so dass die Filterung nur einen Bereich und seine Kindbereiche betrifft. Stellen wir uns zum Beispiel vor, dass Ihre Organisation 3 verschiedene Bereiche für 3 Städte hat, von denen jeweils Kinder für die Stadtviertel zuständig sind.
+Auf einem partizipatorischen Raum, der nur eine der Städte betrifft können Sie nur diesen Bereich und seine Kinder auswählen, damit die Benutzer die Bereiche anderer Städte in den Filteroptionen nicht sehen.
+
+=== Nutzerinteressen und Newsletter
+
+Ein Teilnehmer kann auswählen, welche Bereiche er in seinem Konto verfolgen möchte.
+
+image:account_my_interests.png[Konto: Meine Interessen]
+
+Dies wird von den xref:admin:newsletters verwendet. doc[Newsletters], im Schritt "Empfänger zum Zustellen" auswählen "Filter für Benutzer, die einen beliebigen ausgewählten Bereich in den Einstellungen ihres Kontos aktiviert haben."
+
+image:newsletter_select_recipients.png[Newsletter: Empfänger auswählen]
