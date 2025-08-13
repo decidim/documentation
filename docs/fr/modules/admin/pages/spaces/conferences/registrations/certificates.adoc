@@ -1,0 +1,50 @@
+= Certificate of attendance
+
+== Understand the basics
+
+For some events, participants may want to have an attendance certificate, to certify to their employer that they attended,
+or to certify they followed a training for example.
+
+For this, administrators can create Certificates of attendance.
+
+== Create certificate of attendance
+
+To access the certificate of attendance configuration, click in the secondary navigation panel on the "Certificate of attendance" item.
+
+image:spaces/conferences/certificates_of_attendance.png[Conference Certificate of attendance backend]
+
+.Formulaire de certificat de présence
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Logo principal
+|Obligatoire
+|Logo of the conference or of the organization that makes the certificate of attendance.
+
+|Signature
+|Obligatoire
+|Image of the person signature that signs the certificate.
+
+|Date de signature
+|Obligatoire
+|Date de la signature. Expected format: dd/mm/yyyy.
+
+|Nom de la signature
+|Obligatoire
+|Nom de la personne qui signe le certificat.
+|===
+
+== Send the certificate
+
+Once the certificate of attendance form is done, you can see a "Send certificates of attendance" button on the top right.
+This button allows administrators to send the certificate to all the *confirmed*
+xref:admin:spaces/conferences/registrations/users.adoc[registered users] of the conference.
+
+image::spaces/conferences/certificates_of_attendance_button.png[Conferences Certificate of Attendance send button]
+
+NOTE: Once the certificate has been sent it can't be resent.
+
+Les certificats de participation sont envoyés aux participants par courriel en format PDF.
+
+image:spaces/conferences/certificates_of_attendance_pdf.png[Conferences Certificate of Attendance frontend]
