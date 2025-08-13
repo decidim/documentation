@@ -1,0 +1,45 @@
+= Liens média
+
+Les conférences peuvent avoir une section appelée "Médias et liens". Il affiche une liste de fichiers multimédias et de liens associés à la conférence.
+
+Les fichiers multimédias sont les fichiers des sections xref:admin:spaces/conferences/attachments.adoc[attachments].
+Les liens médias sont définis dans une section du panneau d'administration de la conférence.
+
+image:espaces/conférences/media_links_frontend.png[liens média des conférences (frontend)]
+
+== Créer un nouveau lien média
+
+image:espaces/conferences/media_links_backend.png[Conférences liens médias]
+
+Pour créer un nouveau lien média d'une conférence:
+
+. Se connecter en tant qu'administrateur
+. Aller à la section conférences dans la barre latérale
+. Cliquez sur l'action Modifier la conférence
+. Cliquez sur le lien "Liens médias" dans la barre latérale
+. Cliquez sur le bouton "Nouveau lien média"
+. Remplissez le formulaire
+
+image:espaces/conferences/new_media_link.png[Créer un lien média pour les nouvelles conférences]
+
+
+.Nouveau formulaire de lien média
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Le titre du lien
+
+|Lier
+|Obligatoire
+|URL du lien
+
+|Date
+|Obligatoire
+|Date de publication du lien
+
+|Poids
+|Facultatif
+|Quel ordre aura-t-il en relation avec les autres liens. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux liens, "Lier a" avec le poids "10" et "Lier b" avec le poids "0", puis "Lien b" sera d'abord lors de la commande.
+|===
