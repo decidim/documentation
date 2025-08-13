@@ -1,0 +1,118 @@
+= Schwärmerei
+
+== Understand the basics
+
+Eine Versammlung ist eine Gruppe von Mitgliedern einer Organisation, die regelmäßig zusammenkommen, um Entscheidungen über einen bestimmten Bereich oder den
+-Bereich der Organisation zu treffen.
+
+Assemblies can hold meetings, consult their members, can be private or open to everyone.
+
+Examples of assemblies are: a general assembly meeting once a year to define the organisation's main lines of action as well as its
+executive bodies by vote, an equality advisory council meeting regularly to make proposals on how to improve
+gender relations in the organisation, an evaluation commission meeting every month to monitor a process, or a guarantee
+body collecting incidents, abuses, or proposals to improve decision-making procedures.
+
+NOTE: Der Hauptunterschied zwischen xref:admin:spaces/processes.adoc[participatory processes] und Assemblies ist, dass Assemblys keine
+Phasen haben, was bedeutet, dass sie keine Zeitachsen haben.
+
+In this documentation section, you can find how to configure and manage all of those items:
+
+* xref:admin:spaces/assemblies/types.adoc[Assembly types]
+* xref:admin:spaces/assemblies/assembly_creation.adoc[Assembly creation]
+* xref:admin:spaces/assemblies/components.adoc[Components]
+* xref:admin:spaces/assemblies/categories.adoc[Categories]
+* xref:admin:spaces/assemblies/attachments.adoc[Attachments]
+* xref:admin:spaces/assemblies/members.adoc[Members]
+* xref:admin:spaces/assemblies/admins.adoc[Assembly admins]
+* xref:admin:spaces/assemblies/private_participants.adoc[Private Teilnehmer]
+* xref:admin:spaces/assemblies/moderations.adoc[Moderations]
+
+=== How to find it?
+
+To access the Assemblies panel, go in the administration panel and click the "Assemblies" item in the administration
+navigation bar.
+
+image::spaces/assemblies/assemblies_menu.png[Pages: Access assemblies panel]
+
+There, you are able to manage assemblies and assemblies types.
+
+== Konfiguration
+
+=== Manage assemblies
+
+image::spaces/assemblies/assemblies_list.png[Assemblies list]
+
+On this page, you are able to manage assemblies and xref:admin:spaces/processes/groups.adoc[assemblies types].
+You can find all the assemblies on the list in the administration panel, with:
+
+* *Title*: title of the assembly.
+* *Created at*: date of creation of the assembly.
+* *Private*: if the assembly is opened to all participants or to only certain participants.
+* *Published*: if the assembly is published or no.
+
+You can filter and sort this list by clicking the "Filter" button and the columns headers.
+You can also search for assemblies by their title in the search bar.
+
+image::spaces/assemblies/assemblies_list_filter.png[Assemblies list filtered]
+
+=== Aktionen
+
+.Aktionen
+[cols="10h,20h,~"]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Configure assembly icon]
+|Konfigurieren
+|To edit the configuration and components for an assembly.
+
+|image:icons/action_assemblies.png[Children assemblies icon]
+|Schwärmerei
+|To manage all the children assemblies for an assembly.
+
+|image:icons/action_duplicate.png[Duplicate assembly icon]
+|Duplicate
+|To duplicate this assembly.
+
+|image:icons/action_export.png[Export assembly icon]
+|Alle exportieren
+|Send the assembly configuration JSON file by email. Then it can be imported in other Decidim installation.
+
+|image:icons/action_preview.png[Preview assembly icon]
+|Vorschau
+|Preview of how the assembly looks in the user interface.
+
+|image:icons/action_moderate.png[Moderate assembly icon]
+|Moderate
+|To access the assembly moderation panel.
+|===
+
+You can also click the "Manage" button at the top right of the page, to be able to import a process or
+configure Assemblies Types.
+
+=== Import an assembly
+
+To import an assembly, click the "Manage" button at the top right of the page.
+
+image::spaces/assemblies/import_menu.png[Assemblies import menu]
+
+You are redirected to the import page, where you need to fill in those fields:
+
+* Title : The title you wish to give to the assembly.
+* URL identifier: The ‘slug’ for the assembly.
+* Add a document: Here you need to load the assembly JSON file obtained by email when exporting.
+
+You can then select the type of data you want to import from the file.
+
+* Import categories: Imports all the categories present in the original file.
+* Import attachments : Import attachments of the original assembly.
+* Import components : Imports all the components and their configuration from the original file, without importing their content.
+
+== Beispiele
+
+Below, you can find some links to example assemblies:
+
+* https://www.decidim.barcelona/assemblies[Decidim Barcelona neighborhood assemblies]
+* https://meta.decidim.org/assemblies/general-assembly-association[Decidim association general assembly]
+* https://jeparticipe.metropole.toulouse.fr/assemblies/capitole-arnaud-bernard-carmes[Toulouse neighborhood assembly]
+* https://community.mautic.org/assemblies/ux-ui-tiger-team[Mautic open source project working group]
