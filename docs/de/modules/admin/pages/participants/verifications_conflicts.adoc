@@ -1,0 +1,38 @@
+= Konflikte der Verifizierung
+
+Es gibt Fälle, die davon abhängen, welche Art von Überprüfungen Sie aktiviert haben, dass es Konflikte geben könnte.
+
+Zum Beispiel:
+
+. A participant get xref:admin:participants/impersonations.adoc[impersonated], and they don't provide an email
+. Then they create an account and try to verify themselves with the Census verification
+
+Im Hinblick auf die Sicherheit versuchen wir, in diesen Fällen besonders vorsichtig zu sein, und wir möchten, dass ein Administrator diese Überprüfungen überprüft.
+Wie Sie sehen können, hängt dies sehr davon ab, welche Art von Überprüfungen Sie in Ihrer Organisation aktiviert haben, also ist es einfach zu sagen
+, dass die meiste Zeit für eine Organisation keine Konflikte in diesem Panel sehen wird.
+
+image:verifications_conflicts.png[Verifikationskonflikt-Panel]
+
+== Benutzer übertragen
+
+Ein Administrator kann diese Konflikte prüfen, indem er auf das Symbol "Transfer user image:action_transfer_user.png[Transfer user] klickt.
+
+Then they will see the Transfer user form, where they can provide a reason for the transfer.
+
+image:verifizierung_conflicts_transfer_user.png[]
+
+
+.Benutzer-Formular übertragen
+|===
+|Feld |Typ |Beschreibung
+
+|Grund
+|Benötigt
+|Warum du den Benutzer übertragen möchtest
+
+|E-Mail
+|Benötigt
+|Die E-Mail des zu übertragenden Benutzers
+|===
+
+Nach der Übertragung werden beide Accounts (das Original und das neue Konto zusammengefasst).
