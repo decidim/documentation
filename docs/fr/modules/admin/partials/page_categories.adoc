@@ -1,0 +1,56 @@
+= Catégories
+
+Les catégories (et sous-catégories) sont utilisées pour classer les ressources à l'intérieur d'un espace.
+
+Un administrateur peut les définir, peut être affecté lors de la création de ressources, et les participants peuvent ensuite filtrer les
+différentes ressources par ces catégories. Par exemple, elles peuvent être mises en place dans des propositions, des réunions et des débats.
+
+À titre d'exemple de ce mécanisme en action, vous pouvez le voir dans https://meta.decidim.org/processes/roadmap/f/122/[Proposer de nouvelles fonctionnalités pour le logiciel Decidim] :
+
+. Les administrateurs ont défini les catégories dans le processus.
+. Les participants peuvent créer des propositions qui ont une catégorie.
+. Les participants peuvent filtrer par ces catégories et naviguer entre toutes les propositions.
+
+image:espaces/categories_sidebar.png[Filtrer les catégories dans les propositions]
+
+image:espaces/categories_form.png[Sélectionner une catégorie lors de la création d'une proposition]
+
+NOTE: Une fois qu'une catégorie est utilisée, elle ne peut pas être supprimée, car il y a des ressources qui l'utilisent.
+
+Decidim a d'autres moyens de classer les ressources, par exemple xref:admin:scopes.adoc[Scopes] et xref:admin:features/hashtags.adoc[Hashtags].
+La principale différence est que les catégories peuvent être définies dans un espace donné, Les périmètres sont globaux pour toute la plate-forme, et les Hashtags
+sont définis par les participants.
+
+Les catégories peuvent être imbriquées, ce qui signifie qu'une catégorie peut avoir des sous-catégories.
+
+== Créer une nouvelle catégorie
+
+Pour configurer une nouvelle catégorie, allez dans le panneau d'administration de l'espace et cliquez sur l'onglet "Catégories".
+
+image:espaces/categories.png[Voir les catégories dans une page d'administration de l'espace]
+
+Puis cliquez dans "Ajouter une catégorie" et remplissez le formulaire.
+
+image:espaces/categories_new_form.png[Créer un nouveau formulaire de catégorie]
+
+
+.Créer une catégorie
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Quel est le nom de cette catégorie.
+
+|Poids
+|Facultatif
+|Quel ordre aura-t-il en relation avec les autres catégories. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux catégories, "Catégorie" avec le poids "10" et "Catégorie b" avec le poids "0", alors "Catégorie b" sera d'abord lors de la commande.
+
+|Description
+|Obligatoire
+|Une longue description expliquant en quoi consiste cette catégorie.
+
+|Parent
+|Facultatif
+|Quelle est la catégorie parente?
+|===
