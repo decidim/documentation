@@ -1,154 +1,154 @@
-= Processes
+= processos
 
-A participatory process is a sequence of participatory activities (e.g. first filling out a survey, then making proposals,
-discussing them in face-to-face or virtual meetings, and finally prioritizing them) with the aim of defining and making a decision on a specific topic.
+Um processo participativo é uma sequência de atividades participativas (por exemplo, primeiro preenchendo uma pesquisa, depois fazendo propostas,
+discutindo-as em reuniões presenciais ou virtuais, e, finalmente, a sua prioridade) com o objectivo de definir e tomar uma decisão sobre um tema específico.
 
 Examples of participatory processes are: a process of electing committee members (where candidatures are first presented,
 then debated and finally a candidacy is chosen), participatory budgets (where proposals are made, valued economically,
 and voted on with the money available), a strategic planning process, the collaborative drafting of a regulation or norm,
 the design of an urban space or the production of a public policy plan.
 
-A really important concept for making good use of Decidim is to understand the relationship between Phases and Components
-in a participatory process in Decidim:
+Um conceito muito importante para fazer bom uso do Decidim é entender a relação entre Fases e Componentes
+em um processo participativo no Decidim:
 
 image::process_steps_components.png[Relation between Steps and Components in a Process in Decidim]
 
-What this diagram is showing is that for a participatory process you can have 7 phases:
+O que este diagrama está mostrando é que para um processo participativo você pode ter 7 etapas:
 
 . Configuration & Presentation
-. Diagnostic
-. Proposal Creation
-. Proposal Selection
-. Results
-. Evaluation
-. Monitoring
+. Diagnóstico
+. Criação de proposta
+. Seleção de propostas
+. Resultados
+. Avaliação
+. Monitoramento
 
-Inside of every one of these Phases, there are some components (like Blog, Meetings, Survey, Debates, Proposals, Results).
-Some of these Components allow some features depending on the Phase that we are.
+Dentro de cada um desses Phases, existem alguns componentes (como Blog, Reuniões, Pesquisa, Depósitos, Propostas, Resultados).
+Alguns destes Componentes permitem alguns recursos dependendo da fase que somos.
 
-In this section, we'll explain how we can configure a Participatory Process in Decidim.
+Nesta seção, explicaremos como podemos configurar um Processo Participativo em Decidim.
 
-== List
+== Lista
 
-To configure participatory processes on the Decidim platform, click on btn:[Processes] in the admin sidebar menu. A list
-will appear with the existing processes if there are any:
+Para configurar processos participativos na plataforma Decidim, clique no btn:[Processes] no menu lateral do administrador. Uma lista
+aparecerá com os processos existentes se houver alguma:
 
 image::processes_list.png[Participatory processes list]
 
-You can filter by the ones that are:
+Você pode filtrar por aqueles que são:
 
-* Published / Unpublished
-* Public / Private
+* Publicado / Não Publicado
+* Público / Privado
 
 image::processes_list_filter.png[Participatory processes list filtered]
 
-You can also search by title and control how many elements are in the list.
+Você também pode pesquisar por título e controlar quantos elementos estão na lista.
 
-You have 4 possible actions in this list after a Participatory Process is created:
+Você tem 4 ações possíveis nesta lista depois que um Processo Participativo é criado:
 
-1. Export: send by email the configuration for a given process. Can be imported in other Decidim installation.
-1. Duplicate: to duplicate this process.
-1. Configure: to edit the metadata and configuration for a process.
-1. Preview: how it will look once published.
+1. Exportar: enviar por e-mail a configuração de um determinado processo. Pode ser importado em outra instalação Decidim.
+1. Duplicar: para duplicar este processo.
+1. Configuração: para editar os metadados e a configuração para um processo.
+1. Pré-visualização: como vai parecer uma vez publicado.
 
-== New process form
+== Novo formulário de processo
 
 image::processes_new_form.png[New participatory process form]
 
 
-.New participatory process form: General information
+.Novo formulário de processo participativo: informações gerais
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Title
-|Required
-|Title of the participatory process. For instance, "Participatory Budgeting 2020".
+|Título
+|Obrigatório
+|Título do processo participativo. Por exemplo, "Orçamento participativo 2020".
 
-|Subtitle
-|Required
-|Subtitle. For instance, "Let's decide our priorities together"
+|Legenda
+|Obrigatório
+|Subtítulo. Por exemplo, "Vamos decidir juntos nossas prioridades"
 
-|URL slug
-|Required
-|URL slugs are used to generate the URLs that point to this process. Only accepts letters, numbers and dashes, and must
+|Slug de URL
+|Obrigatório
+|Os slugs de URL são usados para gerar os URLs que apontam para este processo. Only accepts letters, numbers and dashes, and must
 start with a letter. Example: if your domain is 'example.org' and your slug 'participatory-budget-2020' then your URL will
 be https://example.org/processes/participatory-budget-2020
 
-|Hashtag
-|Optional
-|Hashtag for Twitter
+|Palavras-chave
+|Opcional
+|Hashtag para o Twitter
 
-|Short description
-|Required
-|A short explanation of what's your participatory process about.
+|Breve descrição
+|Obrigatório
+|Uma breve explicação do conteúdo do processo participativo.
 
-|Description
-|Required
-|A long explanation of what's your participatory process about.
+|Descrição:
+|Obrigatório
+|Uma longa explicação do conteúdo do seu processo participativo.
 
-|Announcement
-|Optional
-|The text you enter here will be shown to the user right below the process information.
+|Anúncio
+|Opcional
+|O texto que você inserir aqui será mostrado ao usuário logo abaixo das informações do processo.
 |===
 
 
-.New participatory process form: Duration
+.Novo formulário de processo participativo: duração
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Start date
-|Optional
-|When this process start. You have a calendar widget to choose the day. Expected format: dd/mm/yyyy
+|Data de início
+|Opcional
+|Quando este processo começa. Você tem um widget de calendário para escolher o dia. Formato esperado: dd/mm/aaaa
 
-|End date
-|Optional
-|When this process start. You have a calendar widget to choose the day. Expected format: dd/mm/yyyy
-|===
-
-
-.New participatory process form: Images
-|===
-|Field |Type |Description
-
-|Home image
-|Optional
-|Image that will be used in presentation cards of this process. Guidance for file: Has to be an image or a document.
-For images, use preferably landscape images, the service crops the image. Maximum file size: 10MB
-
-|Banner image
-|Optional
-|Image that will be used inside of the process. Guidance for file: Has to be an image or a document.
-For images, use preferably landscape images, the service crops the image. Maximum file size: 10MB
+|Data de término
+|Opcional
+|Quando este processo começa. Você tem um widget de calendário para escolher o dia. Formato esperado: dd/mm/aaaa
 |===
 
 
-.New participatory process form: Metadata
+.Novo formulário de processo participativo: imagens
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Promoter group
-|Optional
-|Information that's displayed in the process metadata sidebar.
+|Imagem inicial
+|Opcional
+|Imagem que será usada nos cartões de apresentação desse processo. Guia para o arquivo: Tem que ser uma imagem ou um documento.
+Para imagens, use de preferência imagens de paisagem, o serviço cultiva a imagem. Tamanho máximo do arquivo: 10MB
 
-|Organization area
-|Optional
-|Information that's displayed in the process metadata sidebar.
+|Imagem do banner
+|Opcional
+|Imagem que será usada dentro do processo. Guia para o arquivo: Tem que ser uma imagem ou um documento.
+Para imagens, use de preferência imagens de paisagem, o serviço cultiva a imagem. Tamanho máximo do arquivo: 10MB
+|===
 
-|Scope metadata
-|Optional
-|Information that's displayed in the process metadata sidebar.
 
-|Who participates
-|Optional
-|Information that's displayed in the process metadata sidebar.
+.Novo formulário de processo participativo: Metadados
+|===
+|Campo |tipo |Descrição:
 
-|What is decided
-|Optional
-|Information that's displayed in the process metadata sidebar.
+|Grupo promotor
+|Opcional
+|Informações exibidas na barra lateral de metadados do processo.
 
-|How is it decided
-|Optional
-|Information that's displayed in the process metadata sidebar.
+|Área da organização
+|Opcional
+|Informações exibidas na barra lateral de metadados do processo.
+
+|Metadados do escopo
+|Opcional
+|Informações exibidas na barra lateral de metadados do processo.
+
+|Quem participa
+|Opcional
+|Informações exibidas na barra lateral de metadados do processo.
+
+|O que é decidido
+|Opcional
+|Informações exibidas na barra lateral de metadados do processo.
+
+|Como é decidido
+|Opcional
+|Informações exibidas na barra lateral de metadados do processo.
 |===
 
 image::process_frontend_metadata.png[Process frontend metadata]
@@ -156,87 +156,87 @@ image::process_frontend_metadata.png[Process frontend metadata]
 image::process_backend_metadata.png[Process backend metadata]
 
 
-.New participatory process form: Filters
+.Novo formulário de processo participativo: filtros
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Scopes enabled
-|Optional
-|Check if you want to have Scopes filtering in this process.
+|Âmbitos ativados
+|Opcional
+|Verifique se você quer ter filtros de escopos neste processo.
 
-|Scope
-|Optional
-|Which xref:admin:scopes.adoc[Scope] does this process belongs to.
+|Escopo
+|Opcional
+|Qual xref:admin:scopes.adoc[Scope] faz este processo pertencer.
 
-|Scope filter depth
-|Optional
-|Restrict the scope filter depth; The filter will show from general to the selected scope type. This is only relevant if
-you have complex relations in Scopes children (like a Russian Doll). For instance if you have a Grandmother -> Mother ->
-Child, this setting allows you to choose the Mother, so the participants can only choose the Child. This would be the
-case for instance if you have Provinces -> Cities -> Districts, and the process is about a particular City.
+|Profundidade de filtro de âmbito
+|Opcional
+|Restringir a profundidade do filtro de escopo; O filtro será mostrado de modo geral ao tipo de escopo selecionado. Isso só é relevante se
+você tiver relações complexas com filhos de escopo (como uma Boneca Russa). Por exemplo, se você tem uma Vovó -> Mãe ->
+Criança, essa configuração permite que você escolha a Mãe, para que os participantes possam escolher apenas a Criança. Este seria o caso
+caso se você tiver Províncias -> Cidades -> Distritos, e o processo é sobre uma cidade específica.
 
-|Area
-|Optional
-|Which xref:admin:areas.adoc[Area] does this process belongs to.
+|área
+|Opcional
+|Qual xref:admin:areas.adoc[Area] faz este processo pertencer.
 |===
 
 
-.New participatory process form: Visibility
+.Novo formulário de processo participativo: visibilidade
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Processes group
-|Optional
-|Enables to make groups of multiple participatory processes. Ideally for processes that are related between them, for
+|Grupo de processos
+|Opcional
+|Permite fazer grupos de múltiplos processos participativos. Ideally for processes that are related between them, for
 instance multiple squares in a City or multiple documents using the same participatory rules.
 
-|Private space
-|Optional
-|Check if this process should only be accessible by xref:admin:spaces/processes/private_participants.adoc[Private Participants]
+|Espaço privado
+|Opcional
+|Verifique se este processo só deve ser acessível pelo xref:admin:spaces/processes/private_participants.adoc[Participantes Privados]
 
-|Promoted
-|Optional
-|Check if you want the process to have more visibility in the Process public list. It'll also be visible in the
-Participatory Process Content Block in the xref:admin:homepage.adoc[Homepage] configuration. This is accessible in the
-btn:[Edit] action in a Process.
+|Promovido
+|Opcional
+|Verifique se você quiser que o processo tenha mais visibilidade na lista pública de Processos. Também será visível no Bloco de Conteúdo do Processo Participativo
+na configuração xref:admin:homepage.adoc[Homepage]. Isto é acessível na ação
+btn:[Edit] em um processo.
 |===
 
 
-.New participatory process form: Filters
+.Novo formulário de processo participativo: filtros
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Related processes
-|Optional
-|Select other participatory processes that are related to this one.
-|===
-
-
-.New participatory process form: Filters
-|===
-|Field |Type |Description
-
-|Show statistics
-|Optional
-|Check if you want to show the Statistics section.
-
-|Show metrics
-|Optional
-|Check if you want to show the Metrics section.
+|Processos relacionados
+|Opcional
+|Selecione outros processos participativos que estão relacionados a este.
 |===
 
-After you've initially created your process you have a submenu where you need to keep configuring more information
-about your participatory process.
+
+.Novo formulário de processo participativo: filtros
+|===
+|Campo |tipo |Descrição:
+
+|Mostrar estatísticas
+|Opcional
+|Verifique se você quiser mostrar a seção de Estatísticas.
+
+|Mostrar métricas
+|Opcional
+|Verifique se você deseja mostrar a seção de métricas.
+|===
+
+Depois de criar o processo inicialmente, você tem um submenu onde você precisa continuar configurando mais informações
+sobre o seu processo participativo.
 
 image::process_submenu.png[Process submenu in admin]
 
-Here you can keep configuring your process:
+Aqui você pode continuar configurando seu processo:
 
-. Info: the same form that we explained in this page.
+. Informação: a mesma forma que explicamos nesta página.
 . xref:admin:spaces/processes/phases.adoc[Phases]
 . xref:admin:spaces/processes/components.adoc[Components]
 . xref:admin:spaces/processes/categories.adoc[Categories]
 . xref:admin:spaces/processes/attachments.adoc[Attachments]
 . xref:admin:spaces/processes/admins.adoc[Process admins]
-. xref:admin:spaces/processes/private_participants.adoc[Private participants]
+. xref:admin:spaces/processes/private_participants.adoc[Participantes privados]
 . xref:admin:spaces/processes/moderations.adoc[Moderations]
