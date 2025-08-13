@@ -1,68 +1,94 @@
-= Speakers
+= Lautsprecher
 
-The speakers are people that are going to talk at the conference.
+== Understand the basics
 
-image:spaces/conferences/speakers_frontend.png[Conferences speakers (frontend)]
+The speakers are the persons that are talking at the conference. They can be linked to meetings, so participants can
+see who is going to speak in each item of the program.
 
-== Create a new speaker
+image::spaces/conferences/speakers_frontend.png[Conferences speakers frontend]
 
-image:spaces/conferences/speakers.png[Conferences speakers]
+== Konfiguration
 
-For creating a new speaker of a conference:
+=== Manage speakers
 
-. Sign in as administrator
-. Go to the conferences section in the sidebar
-. Click on the conference Edit action
-. Click on the Speakers link in the sidebar
-. Click on the "New Conference Speaker" button
-. Fill the form
+To access the speakers configuration, click in the secondary navigation panel on the "Speakers" item.
 
-image:spaces/conferences/new_speaker.png[Conferences speakers]
+image:spaces/conferences/speakers.png[Konferenz-Lautsprecher]
 
+You can search speakers thanks to the search bar.
 
-.New conference speaker form
+=== Aktionen
+
+.Aktionen
+[cols="10h,20h,~"]
 |===
-|Field |Type |Description
+|Icon |Name |Definition
 
-|Participant type
-|Required
-|Wheter this speaker is a non-participant or existing participant. Do they already have an account created on the platform?
+|image:icons/action_edit.png[Edit speaker icon]
+|Bearbeiten
+|To edit this speaker.
 
-|Full name
-|Required if it's non-participant.
-|Name of the speaker.
+|image:icons/action_activate.png[Publish speaker icon]
+|Veröffentlichen
+|To publish this speaker (when not published)
 
-|User or group
-|Required if it's an existing participant.
-|Type at least three characters to search.
+|image:icons/action_unpublish.png[Unpublish speaker icon]
+|Zurückziehen
+|To unpublish this speaker (when published)
 
-|Related meetings
+|image:icons/action_delete.png[Delete speaker icon]
+|Löschen
+|To delete this speaker.
+|===
+
+=== Neuen Lautsprecher erstellen
+
+To create a new speaker, click the "New speaker" button in the top right of the page.
+
+image::spaces/conferences/new_speaker.png[Conferences speakers]
+
+.Neues Konferenz-Lautsprecher-Formular
+[cols="20h,~,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Teilnehmertyp
+|Benötigt
+|Wether this speaker is a non-participant or existing participant. Haben sie bereits ein Konto auf der Plattform erstellt?
+
+|Voller Name
+|Erforderlich, wenn es nicht teilnimmt.
+|Name des Redners.
+
+|Benutzer oder Gruppe
+|Erforderlich, wenn es ein existierender Teilnehmer ist.
+|Geben Sie mindestens drei Zeichen für die Suche ein.
+
+|Verwandte Besprechungen
 |Optional
-|Which meetings does this speaker attend and participates actively?
+|The meetings in which the speaker is speaking or facilitating.
 
 |Position
-|Required
-|Metadata for showing extra information about the speaker.
+|Benötigt
+|Metadaten zum Anzeigen zusätzlicher Informationen über den Lautsprecher.
 
-|Affiliation
-|Required
-|Metadata for showing extra information about the speaker.
+|Zugehörigkeit
+|Benötigt
+|Metadaten zum Anzeigen zusätzlicher Informationen über den Lautsprecher.
 
-|Short Bio
+|Kurze Bio
 |Optional
-|Metadata for showing extra information about the speaker.
+|Metadaten zum Anzeigen zusätzlicher Informationen über den Lautsprecher.
 
-|Twitter handle
+|X handle
 |Optional
-|Metadata for showing extra information about the speaker.
+|Metadaten zum Anzeigen zusätzlicher Informationen über den Lautsprecher.
 
-|Personal URL
+|Persönliche URL
 |Optional
-|Metadata for showing extra information about the speaker.
+|Metadaten zum Anzeigen zusätzlicher Informationen über den Lautsprecher.
 
 |Avatar
 |Optional
-|Metadata for showing extra information about the speaker.
-
-Default image
+|Avatar image for the speaker. Ignored if the speaker is an "Already registered" participant.
 |===
