@@ -1,0 +1,57 @@
+= Conversations
+
+Avec les conversations, les participants peuvent avoir des messages privés entre eux. Seuls les participants qui sont dans la conversation
+peuvent se voir des messages.
+
+Une conversation peut être lancée avec n'importe quel participant ou groupe enregistré sur la plateforme.
+
+image:features/conversations/conversation.png[Exemple de conversation]
+
+Pour démarrer une conversation :
+
+. Se connecter en tant que participant
+. Allez sur le profil du participant que vous souhaitez démarrer une conversation avec
+image:features/conversations/profile.png[Profil du participant]
+. Cliquez sur l'icône de contact image:icon_envelope.png[Icône d'enveloppe]
+. Remplissez le formulaire
+image:features/conversations/start_a_conversation_form.png[Démarrer un formulaire de conversation]
+
+Alternativement, vous pouvez aussi :
+
+. Se connecter en tant que participant
+. Cliquez sur l'icône de la conversation dans l'en-tête image:icon_envelope_off.png[Icône des conversations]
+. Cliquez sur le bouton "Commencer la conversation"
+. Recherchez le participant ou le groupe avec lequel vous voulez commencer une conversation
+. Remplissez le formulaire
+
+S'il y a de nouveaux messages dans une conversation, alors le participant verra l'icône avec une image en couleur: icon_envelope_on.png[Icône de conversation avec la couleur]
+
+image:features/conversations/conversations.png[Liste des conversations]
+
+== Plusieurs participants dans une conversation
+
+Il est possible d'avoir plusieurs participants dans une conversation.
+
+Pour cela, vous devez :
+
+. Se connecter en tant que participant
+. Cliquez sur l'icône de la conversation dans l'en-tête image:icon_envelope_off.png[Icône des conversations]
+. Cliquez sur le bouton "Commencer la conversation"
+. Recherchez les participants ou les groupes avec lesquels vous voulez commencer une conversation
+. Remplissez le formulaire
+
+image:features/conversations/new_conversation_modal.png[Nouvelle conversation modal]
+
+== Conversion de groupe
+
+Tout comme avec les participants, il est possible d'avoir des converstaions avec des groupes.
+
+image:features/conversations/group_conversations.png[Liste des conversations de groupe]
+image:features/conversations/conversations_group_counter.png[Compteur des groupes de conversations]
+
+== Notes
+
+Quelques choses à considérer à propos des conversations :
+
+* Il n'est pas possible de supprimer une conversation.
+* Il n'est pas possible de modifier un message dans une conversation.
