@@ -1,0 +1,81 @@
+= Anhänge
+
+Anhänge erlauben es einem Administrator, statische Dateien zu einer Konferenz hochzuladen.
+
+When a conference is launched, it is important to provide citizens with as much information as possible about them so
+that they can participate with knowledge. Deshalb ist es hilfreich, Dateien (ttachments) mit den Informationen hinzuzufügen, die
+als relevant erachtet.
+
+Optional können diese Dokumente in *Ordner* gruppiert werden.
+
+Diese finden Sie im Abschnitt "Medien und Links" der Konferenz:
+
+image:spaces/conferences/attachments.png[Konferenz-Anhänge (backend)]
+
+image:spaces/conferences/media_links_frontend.png[Konferenz-Anhänge (frontend)]
+
+Lesen Sie mehr dazu in xref:admin:spaces/conferences/media_links.adoc[Media links].
+
+== Einen neuen Anhang erstellen
+
+image:spaces/attachments_admin.png[Die Anhänge einer Konferenz im Admin-Interface anzeigen]
+
+Für die Erstellung einer neuen Phase einer Konferenz:
+
+. Als Administrator anmelden
+. Gehe zum Konferenzbereich in der Seitenleiste
+. Klicken Sie auf die Konferenz Bearbeiten Aktion
+. Klicken Sie auf den Anhang Link in der Seitenleiste
+. Klicken Sie auf die Schaltfläche "Neuer Anhang"
+
+image:spaces/attachments_new_form.png[Neues Anhang-Formular erstellen]
+
+
+.Anhang erstellen
+|===
+|Feld |Typ |Beschreibung
+
+|Anhang oder Bildname
+|Benötigt
+|Was ist der Titel für diesen Anhang.
+
+|Gewicht
+|Optional
+|Welche Bestellung hat er in Bezug auf die anderen Anhänge. Eine niedrigere Zahl bedeutet eine höhere Priorität. Zum Beispiel, wenn Sie zwei Kategorien haben, "Anhang a" mit dem Gewicht "10" und "Anhang b" mit dem Gewicht "0", dann ist "Anhang b" zuerst bei der Bestellung.
+
+|Beschreibung
+|Benötigt
+|Eine lange Beschreibung, die erklärt, worum es bei dieser Datei geht.
+
+|Ordner
+|Optional
+|Zu welchem Ordner dieser Anhang gehört.
+
+|Datei
+|Benötigt
+|Datei hochladen. Anleitung für Datei: Muss ein Bild oder ein Dokument sein. Für Bilder, verwenden Sie vorzugsweise Landschaftsbilder, der
+-Dienst erzeugt das Bild. Bei CSV-Dateien muss der Trennzeichen zwischen Spalten ein Komma (",") sein. Maximale Dateigröße: 10MB. Erlaubte
+-Dateierweiterungen hängen von Ihrer Serverkonfiguration ab.
+|===
+
+== Neuen Ordner erstellen
+
+image:spaces/attachments_new_folder_form.png[Erstellen eines neuen Ordners für Dateiformen]
+
+
+.Ordner erstellen
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Name des Ordners
+
+|Gewicht
+|Optional
+|Welche Reihenfolge hat er in Bezug auf die anderen Ordner. Eine niedrigere Zahl bedeutet eine höhere Priorität. Zum Beispiel, wenn Sie zwei Ordner haben, "Ordner a" mit Gewicht "10" und "Ordner b" mit Gewicht "0", dann ist "Ordner b" zuerst bei der Bestellung.
+
+|Beschreibung
+|Benötigt
+|Eine lange Beschreibung, die erklärt, worum es in diesem Ordner geht.
+|===
