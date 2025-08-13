@@ -1,57 +1,57 @@
-= Code by postal letter authorization
+= Código por autorización de carta postal
 
 This authorization allows a participant to request for a verification code to be sent to its address, to confirm that she
 lives or works in this place. She'll need to then fill the code in the platform.
 
-The process is:
+El proceso es:
 
-. Participants request a verification code to be sent to their address.
-. An administrator sends the letter to their address with the verification code.
-. An administrator marks the letter as sent.
-. Once you mark the letter as sent, the participant will be able to introduce the code.
+. Los participantes solicitan que se envíe un código de verificación a su dirección.
+. Un administrador envía la carta a su dirección con el código de verificación.
+. Un administrador marca la letra como enviada.
+. Una vez que hayas marcado la carta como enviada, el participante podrá introducir el código.
 . If this code matchs, then she gets verified.
 
-== 1. A participant request the verification code
+== 1. Un participante solicita el código de verificación
 
 By going to the authorization section in its profile, or by clicking on the action button if this permission is requested,
 a participant can see the form for filling in her full address to request the verification code.
 
-image:authorizations_code_postal_letter_request.png[Code by postal letter request by participant]
+image:authorizations_code_postal_letter_request.png[Código por solicitud de carta postal por participante]
 
 If she tries to edit it, she'll see this message:
 
-image:authorizations_code_postal_letter_edit.png[Edit the postal letter request]
+imagen:authorizations_code_postal_letter_edit.png[Editar la solicitud de carta postal]
 
-This is because the letter could be in the process of being sent. If this needs to be corrected, then the participant needs
-to contact to the organization.
+Esto se debe a que la carta podría ser enviada. Si esto necesita ser corregido, entonces el participante necesita
+para contactar con la organización.
 
-== 2. An administrator review this request and sent the letter
+== 2. Un administrador revisa esta solicitud y envió la carta
 
-In the admin panel, the administrator can review the request by going to the "Code by postal letter" in the "Participants" section.
+En el panel de administración, el administrador puede revisar la solicitud dirigiéndose al "Código por carta postal" en la sección "Participantes".
 
-image:authorizations_code_postal_letter_ongoing.png[Code by postal letter ongoing panel in admin]
+image:authorizations_code_postal_letter_ongoing.png[Código por carta postal panel en curso en admin]
 
 Here she can see the verification code and can send it to the participant by mail. After the code is sent she can mark it
-as sent with the icon image:action_mark_as_sent.png[Mark as sent]. It'll also show when the letter was sent.
+as sent with the icon image:action_mark_as_sent.png[Mark as sent]. También se mostrará cuando la carta fue enviada.
 
-== 3. A participant fills in the verification code
+== 3. Un participante rellena el código de verificación
 
 After the participant has received the code, she can go to it's account settings and click in the "Code by postal letter"
 verfication method.
 
-image:authorizations_code_postal_letter_verify.png[Code by postal letter ongoing in the participant account]
+image:authorizations_code_postal_letter_verify.png[Código por carta postal en curso en la cuenta del participante]
 
 Then she'll see the form for confirming the code.
 
-image:authorizations_code_postal_letter_confirm.png[Code by postal letter confirmation form]
+image:authorizations_code_postal_letter_confirm.png[Código por formulario de confirmación de carta postal]
 
-== 4. The verification code matches or not
+== 4. El código de verificación coincide o no
 
-If the verification code matches, then the participant will see the message "Congratulations. You've been successfully verified".
+Si el código de verificación coincide, el participante verá el mensaje "Felicidades". Has sido verificado con éxito".
 
-On the other hand, if the verification code doesn't match, then the participant will see the message "Your verification
-code doesn't match ours. Please double-check the letter we sent to you."
+Por otro lado, si el código de verificación no coincide, el participante verá el mensaje "Tu código de verificación
+no coincide con el nuestro. Por favor, comprueba la carta que te hemos enviado."
 
-After is verified, as with other verifications, she can see it in her account settings.
+Después de ser verificado, como en otras verificaciones, pueden verlo en la configuración de su cuenta.
 
 image:authorizations_code_postal_letter_verified.png[Verified by code by postal letter]
