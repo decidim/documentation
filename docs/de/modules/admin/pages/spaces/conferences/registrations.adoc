@@ -1,0 +1,13 @@
+= Anmeldungen
+
+== Understand the basics
+
+As an administrator of a conference you can manage the registrations for the conference directly from the platform.
+
+To do so, you can use these administration sections:
+
+* xref:admin:spaces/conferences/registrations/types.adoc[**Registrations Types**]: to define the ways to register.
+* xref:admin:spaces/conferences/registrations/users.adoc[**User Registrations**]:to confirm the registrations.
+* xref:admin:spaces/conferences/registrations/invites.adoc[**Invites**]: to invite participants to the conference.
+* xref:admin:spaces/conferences/registrations/certificates.adoc[**Certificates of Attendance**]:to configure and send certificates
+of attendance in PDF format to participants to the conference.
