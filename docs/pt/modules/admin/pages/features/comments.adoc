@@ -1,64 +1,64 @@
-= Comments
+= comentários
 
-Comments are public messages left to the rest of the community. It allows participants to share information or opinions
-about a proposal, debate, meeting, initiative, etc.
+Comentários são mensagens públicas deixadas ao resto da comunidade. Permite aos participantes compartilhar informações ou opiniões
+sobre uma proposta, debate, reunião, iniciativa, etc.
 
-image:features/comments/example01.png[Comments example]
+imagem:recursos/comentários/comentários/exemplo01.png[Exemplo de comentários]
 
-== Create a comment
+== Criar um comentário
 
-. Sign in as a participant
-. Go to the content that you want to leave a comment
-. Go to the bottom of the page
-. Fill the "Add comment" form
+. Iniciar sessão como participante
+. Vá para o conteúdo que você deseja deixar um comentário
+. Ir para o final da página
+. Preencha o formulário "Adicionar comentário"
 
-Depending on the component settings, this feature can be disabled.
+Dependendo das configurações do componente, esta funcionalidade pode ser desabilitada.
 
-image:features/comments/form.png[Comments form]
+image:features/comments/form.png[Formulário de comentários]
 
-=== Form
+=== Formulário
 
-It's possible to:
+É possível para:
 
-. mention a participant or user group (like @admin). They'll receive a notification
-. add a hashtag (like #Example). This will link to the general search
-. make a quote of a comment (like > this is a quote)
-. if an URL is entered, then it'll be linked automatically
-image:features/comments/rich_text_write.png[Comments with rich text (write)]
-image:features/comments/rich_text_read.png[Comments with rich text (read)]
-image:features/comments/hashtag_search.png[Hashtags in comments]
-. if HTML is added, it'll be escaped and not shown
-image:features/comments/xss_write.png[XSS in comments (write)]
-image:features/comments/xss_read.png[XSS in comments (read)]
-. add emojis to comments
-image:features/comments/emoji_selector.png[Emoji selector in comments]
+. mencionar um participante ou grupo de usuários (como @admin). Eles receberão uma notificação
+. adicionar uma hashtag (como #Exemplo). Isto irá vincular à pesquisa geral
+. fazer uma citação de um comentário (como > é uma citação)
+. se uma URL for inserida, então ele será linkado automaticamente
+imagem:features/comments/rich_text_write.png[Comentários com texto rich (gravação)]
+imagem:features/comments/rich_text_read. ng[Comentários com texto rico (lido)]
+imagem:features/comments/hashtag_search.png[Hashtags em comentários]
+. se HTML for adicionado, ele será escapado e não mostrado
+imagem:features/comments/xss_write.png[XSS em comentários (escrita)]
+imagem:features/comments/xss_read.png[XSS em comentários (leitura)]
+. adicionar emojis aos comentários
+imagem:features/comments/emoji_selector.png[Seletor de emoji em comentários]
 
-== Sort
+== Ordenar
 
-Comments can be sorted by "Best rated", "Recent", "Older" or "More discussed".
+Comentários podem ser classificados por "Melhor avaliado", "Recente", "Mais antigo" ou "Mais discutido".
 
-image:features/comments/order_by.png[Order comments]
+imagem:features/comentários/order_by.png[Comentários do pedido]
 
-== Actions
+== Ações.
 
-After a comment is created, the author can "Reply", "Report", "Get link", "Edit" and "Delete". Other participants can "Reply",  "Report" and "Get link". Some of these actions are visible in the three dots menu:
+Depois que um comentário é criado, o autor poderá "Responder", "Relatório", "Obter link", "Editar" e "Excluir". Outros participantes podem "Responder", "Relatório" e "Obter link". Algumas dessas ações são visíveis no menu de três pontos:
 
-image:features/comments/actions.png[Comments actions]
+image:features/comments/actions.png[Ações de comentários]
 
-=== Reply
+=== Responder
 
-It's possible to reply to comments until the 4th anidation level.
+É possível responder aos comentários até o nível 4 de anidação.
 
-image:features/comments/anidation_levels.png[Anidation levels for comments]
+imagem:features/comentários/anidation_levels.png[Níveis de Anidação para comentários]
 
-=== Delete
+=== excluir
 
-Once a comment is deleted is not longer visible.
+Uma vez que um comentário é eliminado não estará mais visível.
 
-image:features/comments/deleted_comment.png[Deleted comment]
+imagem:features/comentários/deleted_comment.png[Comentário excluído]
 
-=== Edit
+=== Alterar
 
-Once a comment is edited then it's shown that was edited. It doesn't have a version history of the changes made.
+Uma vez que um comentário é editado, é mostrado que foi editado. Ele não tem um histórico de versão das alterações feitas.
 
-image:features/comments/edited_comment.png[Edited comment]
+image:features/comments/editted_comment.png[Comentário editado]
