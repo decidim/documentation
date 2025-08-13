@@ -1,0 +1,103 @@
+= Schließen
+
+Nach einem Meeting ist es möglich und empfohlen, das Meeting zu schließen. Dies erlaubt das Protokoll, die Notizen
+hinzuzufügen, die eine Zusammenfassung der Diskussionen während des Treffens enthalten die getroffenen Vereinbarungen, die getroffenen Entscheidungen usw.
+
+Dies ermöglicht die Transparenz des Treffens und dient auch als Aufzeichnung der verschiedenen Sitzungen.
+
+Es ist auch möglich, andere Arten von Metadaten zu dem Meeting hinzuzufügen, wie zum Beispiel welche Organisationen teilgenommen haben, wie viele Teilnehmer
+und Beiträge waren und welche Vorschläge diskutiert wurden.
+
+image:components/meetings/close/frontend.png[Bericht schließen im Frontend]
+
+== Meetingformular schließen
+
+=== Offizielle Meetings
+
+Besprechung schließen:
+
+. Als Admin anmelden
+. Zum Admin-Panel wechseln
+. Wählen Sie in der Haupt-Seitenleiste den Bereich aus, unter dem Sie die Komponente konfigurieren möchten.
+Zum Beispiel "Prozesse", "Assemblies" oder "Konferenzen"
+. Klicken Sie auf "Meetings"
+. Besprechung suchen, das Sie schließen möchten
+. Klicken Sie auf den "Schließen" Button image:action_close.png[Schließen-Button]
+. Formular ausfüllen
+
+image:components/meetings/close/form_backend.png[Meeting Formular im Backend] schließen
+
+
+.Meeting Formular schließen (Backend)
+|===
+|Feld |Typ |Beschreibung
+
+|Minuten
+|Benötigt
+|Beschreibung dessen, was in der Sitzung geschehen ist.
+
+|Liste der Organisationen, die teilgenommen haben
+|Optional
+|Metadaten, die in der Seitenleiste des Meetings angezeigt werden.
+
+|Anzahl der Teilnehmer
+|Benötigt
+|Metadaten, die in der Seitenleiste des Meetings angezeigt werden. Muss eine Zahl sein.
+
+|Anzahl der Beiträge
+|Optional
+|Metadaten, die in der Seitenleiste des Meetings angezeigt werden. Muss eine Zahl sein.
+
+|Vorschläge
+|Optional
+|Wählen Sie Vorschläge aus diesem Raum, die in diesem Meeting diskutiert wurden
+
+|Video-URL
+|Optional
+|Es wird für nichts verwendet. Er wird in Zukunft abgeschafft werden.
+
+|Audio-URL
+|Optional
+|Es wird für nichts verwendet. Er wird in Zukunft abgeschafft werden.
+
+|Ist sichtbar
+|Optional
+|Überprüfen Sie, ob Sie den Schließungsbericht veröffentlichen möchten
+|===
+
+=== Bürgertreffen
+
+So wie die Teilnehmer Meetings erstellen können, können sie auch ein Meeting schließen. Sie haben weniger Felder zu füllen.
+
+Besprechung schließen:
+
+. Als Teilnehmer anmelden, der das Meeting erstellt hat
+. Gehe zur Besprechungsseite
+. Klicken Sie auf "Schließen". Dies wird erst angezeigt, nachdem das Meeting vorbei ist
+. Formular ausfüllen
+
+image:components/meetings/close/form_frontend.png[Meeting Formular schließen im Frontend]
+
+
+.Meeting Formular schließen (Frontend)
+|===
+|Feld |Typ |Beschreibung
+
+|Minuten
+|Benötigt
+|Beschreibung dessen, was in der Sitzung geschehen ist.
+
+|Anzahl der Teilnehmer
+|Benötigt
+|Metadaten, die in der Seitenleiste des Meetings angezeigt werden. Muss eine Zahl sein.
+
+|Vorschläge
+|Optional
+|Wählen Sie Vorschläge aus diesem Raum, die in diesem Meeting diskutiert wurden
+|===
+
+== Vorschläge
+
+Wenn Sie einen Vorschlag zu einem Treffen in Beziehung setzen, wird auch die Sitzung in dem Vorschlag angezeigt.
+
+image:components/meetings/close/related_proposal.png[Ähnliches Meeting in einem Vorschlag]
