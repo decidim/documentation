@@ -1,0 +1,262 @@
+= Assembly creation
+
+== Understand the basics
+
+Assemblies allows administrators to configure components inside a long-lasting space, with defined members.
+To start creating an assembly, when on the assembly list, click the "New assembly" button at the top right of the page.
+
+The assembly creation form is divided into different sections that are detailed in the sections below.
+
+Once you created an assembly, in the secondary navigation panel, you can see all the assembly configurations available:
+
+* xref:admin:spaces/assemblies/assembly_creation.adoc[About this assembly]: here you can access and edit all the fields from the creation form.
+* xref:admin:spaces/assemblies/landing_page.adoc[Landing page]
+* xref:admin:spaces/assemblies/components.adoc[Components]
+* xref:admin:spaces/assemblies/categories.adoc[Categories]
+* xref:admin:spaces/assemblies/attachments.adoc[Attachments]
+* xref:admin:spaces/assemblies/members.adoc[Members]
+* xref:admin:spaces/assemblies/admins.adoc[Assembly admins]
+* xref:admin:spaces/assemblies/private_participants.adoc[Private participants]
+* xref:admin:spaces/assemblies/moderations.adoc[Moderations]
+
+== General information
+
+This section allows to provide a general description about the assembly, mainly a title, URL, and description.
+
+image::spaces/assemblies/assemblies_new_form_general_info.png[New assembly form general info section]
+
+.Nouveau formulaire d'assemblage : Informations générales
+[cols="20h,10h,~,~"]
+|===
+|Champ |Type |Description |Visibility
+
+|Titre
+|Obligatoire
+|Title of the assembly, "General Committee" or "neighborhood city council" for example.
+|Visible in the card of the assembly on the homepage, the assemblies index, the navigation, and the "Hero image and CTA" landing page block.
+
+|Sous-titre
+|Obligatoire
+|Subtitle of the assembly.
+|Visible in the "Hero image and CTA" landing page block.
+
+|Rang d'affichage
+|Obligatoire
+|Determines the order of the assembly when displayed in the processes index or homepage.
+|N/A
+
+|Identifiant d'URL
+|Obligatoire
+|Les identifiants d'URL sont utilisés pour générer les URL qui pointent vers ce processus. N'accepte que des lettres, des chiffres et des tirets et doit
+commencer par une lettre.
+|Visible in the URL of the assembly, for example https://example.org/assemblies/city_coucil.
+
+|Hashtag
+|Facultatif
+|Hashtag redirecting to the X social network.
+|Visible in the "Hero image and CTA" landing page block.
+
+|Courte description
+|Obligatoire
+|Une brève explication de votre processus participatif.
+|Visible in the "Main data" landing page block.
+
+|Description
+|Obligatoire
+|Une longue explication de ce qu'est votre assemblée.
+|Visible in the "Main data" landing page block.
+
+|Objectif de l'action
+|Facultatif
+|The explanation of the assembly's goals.
+|Visible in the "Main data" landing page block.
+
+|Composition
+|Facultatif
+|Who composes the assembly.
+|Visible in the "Main data" landing page block.
+
+|Organisation interne
+|Facultatif
+|How the assembly is organized.
+|Visible in the "Main data" landing page block.
+
+|Annonce
+|Facultatif
+|The text you enter here is shown to the user right below the process information.
+|Visible in the "Announcement" landing page block.
+|===
+
+== Durée
+
+This section allows to provide information about the assembly important dates.
+
+image::spaces/assemblies/assemblies_new_form_duration.png[New assembly form duration section]
+
+.Nouveau formulaire d'assemblage : Durée
+[cols="20h,10h,~,~"]
+|===
+|Champ |Type |Description |Visibility
+
+|Date de création
+|Facultatif
+|When this assembly was created. Vous avez un widget calendrier pour choisir la journée. Expected format: dd/mm/yyyy.
+|Visible in the "Dates metadata" landing page block.
+
+|Inclus le
+|Facultatif
+|The date when this assembly was added to the instance. It does not necessarily have to be the same as the creation date. Expected format: dd/mm/yyyy.
+|Visible in the "Dates metadata" landing page block.
+
+|Durée
+|Facultatif
+|If the duration of this assembly is limited, select the end date. Otherwise, it appears as indefinite. Expected format: dd/mm/yyyy.
+|Visible in the "Type and duration" landing page block.
+
+|Date de clôture
+|Facultatif
+|Lorsque cette assemblée est fermée. Expected format: dd/mm/yyyy.
+|Visible in the "Dates metadata" landing page block.
+
+|Raison de la date de fermeture
+|Facultatif
+|Pourquoi cette assemblée est fermée.
+|Not displayed on the landing page.
+|===
+
+== Images
+
+image::spaces/assemblies/assemblies_new_form_images.png[New assembly form images section]
+
+.Nouveau formulaire d'assemblage : Images
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Image de la maison
+|Facultatif
+|Image used in presentation cards of this process. Orientation pour le fichier: Doit être une image ou un document.
+Pour les images, utilisez de préférence des images paysagères, le service récolte l'image. Maximum file size: 10 MB
+
+|Image de bannière
+|Facultatif
+|Deprecated, isn't used anywhere. Use "Hero image and CTA" content block on the landing page instead.
+|===
+
+== Filters
+
+This section determines the filters available in the assembly, in the different components.
+Filters can then be enabled and configured in each components.
+
+image::spaces/assemblies/assemblies_new_form_filters.png[New assembly form filters section]
+
+.Nouveau formulaire d'assemblage : Filtres
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Portées activées
+|Facultatif
+|Cochez cette case si vous voulez que le filtrage des portées dans cette assemblée.
+
+|Secteur
+|Facultatif
+|Which xref:admin:settings/scopes.adoc[Scopes] does this assembly belongs to.
+
+|Zone de stockage
+|Facultatif
+|Which xref:admin:settings/areas.adoc[Area] does this assembly belongs to.
+|===
+
+== Métadonnées
+
+This section allows to provide meta information about the assembly.
+
+image::spaces/assemblies/assemblies_new_form_metadata.png[New assembly form metadata section]
+
+.Nouveau formulaire d'assemblage : Métadonnées
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Ce qui est décidé
+|Facultatif
+|The issue of the assembly, the object of what is decided.
+
+|Comment est-il décidé
+|Facultatif
+|The decision making process inside the assembly.
+
+|Métadonnées du périmètre d'application
+|Facultatif
+|Metadata on the assembly scope, if it's relevant.
+
+|Groupe de promoteurs
+|Facultatif
+|If a specific group is at the origin of the assembly, like a city direction, an association committee, etc.
+
+|Zone d'organisation
+|Facultatif
+|The organization domain or category, if it's relevant.
+
+|Qui participe
+|Facultatif
+|Who are the authorized participants, who can participate to the assembly.
+|===
+
+== Visibility
+
+This section allows administrators to configure the process placement in the different pages and its publicity or no.
+
+image::spaces/assemblies/assemblies_new_form_visibility.png[New assembly form visibility section]
+
+.Nouveau formulaire d'assemblage : Visibilité
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Assemblage parent
+|Facultatif
+|To what other assemblies this assembly belongs. Assemblies can be nested inside one another.
+
+|Surligné
+|Facultatif
+|Cochez cette case si vous voulez que l'assemblage ait plus de visibilité dans la liste publique des Ruches. It's also visible in the "Highlighted
+Assemblies" Content Block in the xref:admin:settings/homepage.adoc[Homepage] configuration.
+
+|Espace privé
+|Facultatif
+|Check if this assembly should only be accessible by xref:admin:spaces/assemblies/private_participants.adoc[Private Participants].
+
+|Est transparent
+|Facultatif
+|Check if this assembly is private but should be visible to all the participants. This means that other participants
+or visitors can see it but they can't participate in it.
+|===
+
+== Other
+
+image::spaces/assemblies/assemblies_new_form_other.png[New assembly form other section]
+
+.Nouveau formulaire d'assemblage : Autre
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Créé par
+|Facultatif
+|Choose "City Council" "Public" or "Other" in case you want to specify the name of the organization that created
+this assembly.
+
+|Type d'assemblage
+|Facultatif
+|Which xref:admin:spaces/assemblies/types.adoc[Assembly type] is related to this assembly.
+
+|Processus participatifs liés
+|Facultatif
+|Select other participatory processes related to this assembly.
+
+|Réseaux sociaux
+|Facultatif
+|Quel profil de réseaux sociaux a cette assemblée. Can be X, Facebook, Instagram, YouTube, and/or GitHub.
+|===
