@@ -1,0 +1,230 @@
+= Debatte
+
+Die Diskussionskomponente ermöglicht es den Menschen, Diskussionen zu führen, ohne abzustimmen oder Prioritäten zu setzen. Es erlaubt auch, sie zu schließen,
+durch Hinzufügen von Schlussfolgerungen oder einer Zusammenfassung dessen, worum es bei der Diskussion ging.
+
+Von diesem Ausgangspunkt aus könnte es andere Konfigurationen geben, wie:
+
+* Um das Erstellen von Debatten durch Teilnehmer zu ermöglichen
+* Um Debatten mit einem festen Start- und Enddatum zu haben oder zu öffnen
+* Unterstützungen anzeigen (öffentliche Unterstützungen) oder nicht
+
+Einige Beispiele, wo diese Komponente verwendet wurde:
+
+* https://meta.decidim.org/processes/roadmap/f/219/[Neue Funktionalitäten für Decidim-Software in Metadecidim]
+
+image:components/debates/example01.png[Debates listing beispiel]
+image:components/debates/example02.png[Debate Beispiel]
+
+Um die Debate Komponente zu konfigurieren:
+
+. Als Admin anmelden
+. Zum Admin-Panel wechseln
+. Wählen Sie in der Haupt-Seitenleiste den Bereich aus, unter dem Sie die Komponente konfigurieren möchten.
+Zum Beispiel "Prozesse", "Gremien" oder "Konferenzen".
+. Gehe zu Komponenten
+. Auf "Komponente hinzufügen"-Button klicken
+. Klicken Sie auf "Debate"
+. Das Formular xref:_add_component[Komponente hinzufügen] ausfüllen
+
+== Komponente hinzufügen
+
+image:components/debates/component.png[Komponentenform hinzufügen]
+
+
+.Komponente hinzufügen: Debate Formular
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Wie lautet der Titel dieser Komponente. Zum Beispiel "Debatte"
+
+|Bestellposition
+|Optional
+|Welche Reihenfolge wird sie in Bezug auf die anderen Debatten haben. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+Zum Beispiel, wenn Sie zwei Debatten haben, "Debate a" mit Gewicht "10" und "Debate b" mit Gewicht "0", dann "Debate b" wird zuerst bei der Bestellung.
+|===
+
+
+.Komponente hinzufügen: Debate Formular - Globale Einstellungen
+|===
+|Feld |Typ |Beschreibung
+
+|Bereiche aktiviert
+|Optional
+|Aktivieren, wenn die Bereichsfilterung in dieser Komponente erfolgen soll.
+
+|Bereich
+|Optional
+|Zu welcher xref:admin:scopes.adoc[Scope] diese Komponente gehört.
+
+|Globaler Umfang
+|Optional
+|
+
+|Kommentare aktiviert
+|Optional
+|Ob Sie Kommentare in den Meetings haben möchten.
+
+|Maximale Länge der Kommentare
+|Optional
+|Welche Zeichenbegrenzung haben die Teilnehmer, wenn sie Kommentare abgeben. Lassen Sie 0 für den Standardwert.
+
+|Mitteilung
+|Optional
+|Eine allgemeine Ankündigung, die auf der Landungsseite für allgemeine Debatten zu sehen sein wird.
+|===
+
+In den Fällen, in denen der Platz, den diese Komponente verwendet wird, xref:admin:spaces/processes/phases hat. doc[Phases], zum Beispiel in
+xref:admin:spaces/processes.adoc[Participatory Processes], dann können Sie auch unterschiedliche Verhaltensweisen pro Schritt definieren.
+
+
+.Komponente hinzufügen: Debates Formular - Schritteinstellungen
+|===
+|Feld |Typ |Beschreibung
+
+|Befürworter aktiviert
+|Optional
+|Überprüfen Sie, ob die Teilnehmer öffentliche Unterstützung für diese Debatten erhalten.
+
+|Befürworter blockiert
+|Optional
+|
+
+|Debate-Erstellung von Teilnehmern aktiviert
+|Optional
+|Auswählen, wenn Sie die Erstellung neuer Debatten durch die Teilnehmer erlauben möchten.
+
+|Kommentare blockiert
+|Optional
+|Ob Sie Kommentare für diese Phase aktivieren möchten.
+
+|Mitteilung
+|Optional
+|Eine allgemeine Ankündigung, die auf der Landungsseite der allgemeinen Debatte zu sehen sein wird.
+|===
+
+== Berechtigungen
+
+An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
+certain actions in the debates:
+
+* Anlegen
+* Befürwortung
+
+== Debatten verwalten
+
+image:components/debates/manage_debates.png[Debatten verwalten Tabelle]
+
+=== Alle exportieren
+
+Ermöglicht das Exportieren der Kommentare in den Debatten in verschiedenen Formaten.
+
+* Kommentare als CSV
+* Kommentare als JSON
+* Kommentare als Excel
+
+=== Neues Diskussionsformular
+
+image:components/debates/new_debate_backend.png[Neue Debatte Backend-Form]
+
+
+.Neues Diskussionsformular
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Wie lautet der Titel dieser Aussprache. Zum Beispiel "Wie können wir diesen Prozess verbessern?"
+
+|Beschreibung
+|Benötigt
+|Wie lautet die Beschreibung dieser Aussprache.
+
+|Anleitung zur Teilnahme
+|Benötigt
+|Fügen Sie eine Nachricht für die Teilnehmer hinzu.
+
+|Informations-Updates
+|Optional
+|Fügen Sie eine Nachricht für die Teilnehmer hinzu.
+
+|xref:_debate_types[Debat-Typ]
+|Benötigt
+|Wählen Sie zwischen Finite und Open aus. Finite bedeutet, dass die Debatte ein Anfangs- und Enddatum und eine Endzeit hat. Open bedeutet, dass
+keinen Zeitrahmen hat.
+
+|Beginnt am
+|Erforderlich, wenn der Diskussionstyp endgültig ist
+|Erwartetes Format: tt/mm/yyy hh:ii
+
+|Endet am
+|Erforderlich, wenn der Diskussionstyp endgültig ist
+|Erwartetes Format: tt/mm/yyy hh:ii
+
+|Kategorie
+|Optional
+|Welche Kategorie hat die Debatte. Wird zum Filtern in der Liste der Debatten verwendet.
+|===
+
+==== Debat-Typen
+
+Es ist möglich, zwei Arten von Debatten zu führen:
+
+. Fertig: mit einem Start- und Enddatum
+. Öffnen: ohne Start- und Enddatum
+
+Das zeigt sich öffentlich in der Diskussioneliste.
+
+image:components/debates/debates_list.png[Debates list]
+image:components/debates/debate_finite.png[Debatte beenden]
+
+==== Aktionen
+
+
+.Aktionen
+|===
+|Icon |Name |Definition
+
+|image:action_edit.png[Icon bearbeiten]
+|Bearbeiten
+|Formular für eine Debatte bearbeiten. Es ist das gleiche Formular wie "Neue Debatte".
+
+|image:action_close.png[Icon schließen
+|Schließen
+|Formular für eine Aussprache schließen. Zum Hinzufügen von Schlussfolgerungen.
+
+|image:action_permissions.png[Berechtigungs-Symbol]
+|Berechtigungen
+|Um die Berechtigungen dieser Debatte zu handhaben, abhängig von der Überprüfung, die ein Teilnehmer hat.
+
+|image:action_delete.png[Icon löschen
+|Löschen
+|Diese Debatte löschen. Nur möglich, wenn es keine Projekte gibt.
+|===
+
+=== Diskussionsformular schließen
+
+Eine Aussprache kann geschlossen werden. Dies ist nützlich, um Schlussfolgerungen hinzuzufügen. Nachdem eine Debatte geschlossen wurde, kann sie weder bearbeitet noch kommentiert werden
+
+image:components/debates/close_debate_backend.png[Debatte schließen backend form]
+
+Beachten Sie, dass, wenn die Debatte von einem Teilnehmer erstellt wurde, nur der
+-Teilnehmer sie schließen kann.
+
+image:components/debates/close_debate_frontend.png[Debatte schließen Frontend Form]
+
+
+.Diskussionsformular schließen
+|===
+|Feld |Typ |Beschreibung
+
+|Schlussfolgerungen
+|Benötigt
+|Was ist die Schlussfolgerung für diese Aussprache.
+|===
+
+Die Schlussfolgerungen werden öffentlich mit dem Datum und der Zeit gezeigt.
+
+image:components/debates/debate_closed.png[geschlossene Debatte]
