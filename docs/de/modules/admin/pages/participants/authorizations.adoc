@@ -1,0 +1,40 @@
+= Autorisierungen
+
+In diesem Abschnitt können Sie die Genehmigungen der Teilnehmer verwalten. Es hängt davon ab, welche Berechtigungen Sie konfiguriert haben und
+von Ihren Entwicklern aktiviert ist. To understand more what are authorizations and how to configure them, please refer to the
+xref:customize:authorizations.adoc[Authorizations section in the Customize Guide].
+
+Mit Autorisierungen kann ein Administrator verschiedene Berechtigungen definieren, so dass die Teilnehmer einige Aktionen in einer Komponente ausführen können.
+For instance you can configure that only participants who have verified herselves by their identity documents can vote on
+proposals in a participatory process.
+
+A participant can see which authorizations do they have available in their account settings.
+
+image:authorizations_account.png[Autorisierungen im Teilnehmer-Konto]
+
+== Widerruf der Autorisierungen
+
+Eine Standard-Decidim-Installation wird keine verifizierten Teilnehmer haben.
+
+image:authorizations_admin_default.png[Autorisationen in einer Standardinstallation]
+
+In the moment that there are some participants verified, an administrator can revoke all the authorizations, as the attributes
+that give permissions to those participants could be changed in time and the platform didn't receive these changes in the
+participants statuses. For instance, an identity document of a participant could be expired, or if a participant have been
+authorized by the "code by postal letter", that participant could move in the meantime.
+
+image:authorizations_admin_revocation.png[Authorizations revocation]
+
+Es ist möglich, alle Genehmigungen mit "Alle widerrufen" zu widerrufen oder nur vor einem bestimmten Datum zu widerrufen.
+Eine weitere Möglichkeit besteht darin, nur die xref:admin:participants/impersonations.adoc[impersonated participants] zu widerrufen.
+
+== Verifizierungsmethoden
+
+Einige der verfügbaren Autorisierungen sind standardmäßig:
+
+* xref:admin:participants/authorizations/identity_documents.adoc[Identifizierungsdokumente]
+* xref:admin:participants/authorizations/code_postal_letter.adoc[Postleitzahlen]
+* xref:admin:participants/authorizations/census.adoc[Organization's census]
+
+Wenn eine dieser Genehmigungen nicht für Ihre Bedürfnisse nützlich ist, sprechen Sie mit Ihrem Implementierer, um andere Alternativen zu sehen. Erfahren Sie
+mehr über xref:customize:authorizations.adoc[Autorisationen im Abschnitt Leitfaden anpassen].
