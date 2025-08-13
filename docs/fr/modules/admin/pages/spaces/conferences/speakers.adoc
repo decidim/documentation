@@ -1,0 +1,92 @@
+= Haut-parleurs
+
+== Understand the basics
+
+The speakers are the persons that are talking at the conference. They can be linked to meetings, so participants can
+see who is going to speak in each item of the program.
+
+image::spaces/conferences/speakers_frontend.png[Conferences speakers frontend]
+
+== Manage speakers
+
+To access the speakers configuration, click in the secondary navigation panel on the "Speakers" item.
+
+image:espaces/conférences/haut-parleurs.png[conférenciers de conférences]
+
+You can search speakers thanks to the search bar.
+
+=== Actions
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Edit speaker icon]
+|Editer
+|To edit this speaker.
+
+|image:icons/action_activate.png[Publish speaker icon]
+|Publier
+|To publish this speaker (when not published)
+
+|image:icons/action_unpublish.png[Unpublish speaker icon]
+|Dépublier
+|To unpublish this speaker (when published)
+
+|image:icons/action_delete.png[Delete speaker icon]
+|Supprimez
+|To delete this speaker.
+|===
+
+== Créer un nouveau haut-parleur
+
+To create a new speaker, click the "New speaker" button in the top right of the page.
+
+image::spaces/conferences/new_speaker.png[Conferences speakers]
+
+.Formulaire des nouveaux conférenciers
+[cols="20h,~,~"]
+|===
+|Champ |Type |Description
+
+|Type de participant
+|Obligatoire
+|Wether this speaker is a non-participant or existing participant. Ont-ils déjà un compte créé sur la plateforme?
+
+|Nom complet
+|Requis si c'est un non-participant.
+|Nom de l'orateur.
+
+|Utilisateur ou groupe
+|Requis si c'est un participant existant.
+|Tapez au moins trois caractères à rechercher.
+
+|Réunions connexes
+|Facultatif
+|The meetings in which the speaker is speaking or facilitating.
+
+|Position
+|Obligatoire
+|Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
+
+|Affiliation
+|Obligatoire
+|Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
+
+|Courte Bio
+|Facultatif
+|Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
+
+|X handle
+|Facultatif
+|Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
+
+|URL personnelle
+|Facultatif
+|Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
+
+|Avatars
+|Facultatif
+|Avatar image for the speaker. Ignored if the speaker is an "Already registered" participant.
+|===
