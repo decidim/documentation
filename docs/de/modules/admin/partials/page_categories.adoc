@@ -1,0 +1,75 @@
+= Kategorien
+
+== Understand the basics
+
+Kategorien (und Unterkategorien) werden verwendet, um Ressourcen innerhalb eines Raumes zu klassifizieren.
+
+Ein Administrator kann sie definieren, kann beim Erstellen von Ressourcen zugewiesen werden, und dann können die Teilnehmer die
+verschiedenen Ressourcen nach diesen Kategorien filtern. For instance, they can be used in proposals, meetings, and debates.
+
+. Administrators define categories in a space.
+. Participants can create resources and give them a category.
+. Participants can then filter by categories.
+
+image::spaces/categories_sidebar.png[Filter categories in proposals]
+
+NOTE: Once a category is in use it can't be deleted, as there are resources that are linked to it.
+
+Decidim has other ways to classify resources, for instance xref:admin:settings/scopes.adoc[Scopes] and
+xref:admin:features/social_features/hashtags.adoc[Hashtags].
+The main difference is that Categories can be defined in a given space, Scopes are global for all the platform, and Hashtags
+can be defined by the participants.
+
+Kategorien können verschachtelt werden, was bedeutet, dass eine Kategorie Unterkategorien haben kann.
+
+== How to find it?
+
+To configure categories, click the *Categories* item in any participatory space.
+
+image::spaces/categories.png[View categories in a space administration page]
+
+== Neue Kategorie erstellen
+
+Click in "New category" button on the top right.
+
+image:spaces/categories_new_form.png[Neues Kategorie-Formular erstellen]
+
+.Create category form
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Was ist der Name für diese Kategorie.
+
+|Bestellposition
+|Optional
+|Which order it has in relation to the other categories. Eine niedrigere Zahl bedeutet eine höhere Priorität. For instance, if you have two categories, "Category a" with weight "10" and "Category b" with weight "0" then "Category b" is first when ordering.
+
+|Elternteil
+|Optional
+|Was ist die übergeordnete Kategorie.
+|===
+
+== Manage categories
+
+You can find all the categories on the list in the administration panel, with:
+
+* *Name*: name of the category, given when creating or editing it by the administrator.
+
+== Aktionen
+
+.Categories actions in categories list
+[cols="10h,20h,~"]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Edit icon]
+|Bearbeiten
+|To edit the name, the order position and the parent of the category.
+
+|image:icons/action_delete.png[Delete icon]
+|Löschen
+|To delete the category. A category can't be deleted if it has resources attached to it.
+|===
