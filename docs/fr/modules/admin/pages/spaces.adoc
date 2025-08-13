@@ -1,0 +1,12 @@
+= Espaces
+
+Les espaces participatifs sont les canaux par lesquels les citoyens peuvent participer lorsque des décisions publiques sont prises. Par défaut
+la plateforme est fournie avec des processus participatifs, initiatives, consultations, conférences, votations et assemblages, mais
+n'importe quelle organisation peut développer ses propres mécanismes via xref:develop:modules. doc[Modules].
+
+Ils sont accessibles via la barre latérale principale dans le panneau d'administration, ainsi que via le menu de navigation principal dans l'interface
+publique.
+
+image:espaces_admin.png[Espaces dans la barre latérale admin]
+
+image:espace_visitor.png[Espaces visibles dans l'interface publique]
