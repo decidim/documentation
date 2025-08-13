@@ -1,0 +1,48 @@
+= Benutzerregistrierung
+
+== Understand the basics
+
+After participants have registered, administrators can have access to their registration information.
+It allows the conference organizers to efficiently manage the participants to the conference, its tracks, etc.
+
+For example, it can follow this flow:
+
+. Ein Teilnehmer registriert sich zur Konferenz
+. They receive a pending registration notification
+. They receive a pending registration email
+. An administrator reviews and confirms the registration with the image:icons/action_activate.png[Confirm] button
+. The participant receives a confirmed registration notification
+. They receive a confirmed registration email with a calendar .ics file
+
+== Manage the registrations
+
+To access the user registrations configuration, click in the secondary navigation panel on the "User registrations" item.
+
+image::spaces/conferences/user_registrations.png[Conferences user registrations (backend)]
+
+=== Aktionen
+
+.Aktionen
+[cols="10h,20h,~"]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_activate.png[Confirm registration icon]
+|Confirm
+|To confirm the user registration
+|===
+
+== Registrierung bestätigen
+
+Registration confirmations can be used before or after the conference.
+They can allow administrators to confirm participants that their registration was taken into account, or
+that they indeed attended the conference after it happened.
+
+Confirming registrations allow administrators to send a
+xref:admin:spaces/conferences/registrations/certificates.adoc[**Certificates of Attendance**] after the conference to
+all confirmed participants to the conference.
+
+== Registrierungen exportieren
+
+It's possible to export the registrations in multiple formats: .CSV, .JSON, and .XSLX.
+The file with all the registered participants is directly downloaded on the administrator device.
