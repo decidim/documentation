@@ -1,0 +1,64 @@
+= Kommentare
+
+Kommentare sind öffentliche Nachrichten, die dem Rest der Community überlassen bleiben. Es erlaubt den Teilnehmern, Informationen oder Meinungen
+über einen Vorschlag, Debatte, Meeting, Initiative etc. zu teilen.
+
+image:features/comments/example01.png[Kommentarbeispiel]
+
+== Kommentar erstellen
+
+. Als Teilnehmer anmelden
+. Gehe zu dem Inhalt, den du kommentieren möchtest
+. Zum Ende der Seite gehen
+. Füllen Sie das Formular "Kommentar hinzufügen" aus
+
+Abhängig von den Komponenteneinstellungen kann diese Funktion deaktiviert werden.
+
+image:features/comments/form.png[Kommentarformular]
+
+=== Formular
+
+Es ist möglich zu:
+
+. erwähnen Sie einen Teilnehmer oder eine Benutzergruppe (wie @admin). Sie werden eine Benachrichtigung erhalten
+. einen Hashtag hinzufügen (wie #Beispiel). Dies wird auf die allgemeine Suche verlinken
+. zitieren Sie einen Kommentar (wie > Dies ist ein Zitat)
+. wenn eine URL eingegeben wird, wird sie automatisch
+image:features/comments/rich_text_write.png[Kommentare mit Rich-Text (Schreiben)]
+image:features/comments/rich_text_read. ng[Kommentare mit Rich-Text (read)]
+Bild:features/comments/hashtag_search.png[Hashtags in Kommentaren]
+. wenn HTML hinzugefügt wird, wird es maskiert und nicht angezeigt
+image:features/comments/xss_write.png[XSS in Kommentaren (schreiben)
+image:features/comments/xss_read.png[XSS in Kommentaren (lesen)]
+. füge Emojis zu Kommentaren
+image:features/comments/emoji_selector.png[Emoji selector in Kommentar] hinzu
+
+== Sortieren
+
+Kommentare können nach "Beste Bewertung", "Kürzlich", "Älter" oder "Mehr besprochen" sortiert werden.
+
+image:features/comments/order_by.png[Kommentar bestellen]
+
+== Aktionen
+
+Nach einem Kommentar erstellt wird, kann der Autor "Antworten", "Bericht", "Get link", "Edit" und "Löschen". Andere Teilnehmer können "Antworten", "Bericht" und "Get link". Einige dieser Aktionen sind im Drei-Punkte-Menü sichtbar:
+
+image:features/comments/actions.png[Kommentar-Aktionen]
+
+=== Antwort
+
+Es ist möglich, auf Kommentare zu antworten, bis die 4. Anidationsstufe.
+
+image:features/comments/anidation_levels.png[Anidationslevel für Kommentare]
+
+=== Löschen
+
+Sobald ein Kommentar gelöscht wird, ist nicht mehr sichtbar.
+
+image:features/comments/deleted_comment.png[Gelöschter Kommentar]
+
+=== Bearbeiten
+
+Sobald ein Kommentar bearbeitet wird, wird es angezeigt, dass bearbeitet wurde. Es hat keine Versionsgeschichte der vorgenommenen Änderungen.
+
+image:features/comments/edited_comment.png[Bearbeitete Kommentar]
