@@ -1,52 +1,80 @@
-= Components
+= Componentes
 
-include::partial$components_list.adoc[]
+== Understand the basics
 
-To configure components, click on *Components* from the space submenu. A list will appear showing the components
-that have already been configured for the space.
+As explained in the xref:admin:index.adoc[introduction page], to understand how Decidim works, you need to distinguish between *spaces* and *components*.
+The participatory spaces are the channels that citizens can participate through when public decisions are being taken, whereas participatory components are
+mechanisms that enable interaction between users of the platform and the various participatory spaces.
 
-image::spaces/components.png[Components of space]
+All components can be enabled in each space, for example you can enable three Proposals components in a same participatory process, or having all the
+components enabled in an assembly space.
 
-To configure a new component, click on *Add component* from the upper right part of the screen and select the type of
-component you wish to configure from the drop-down menu.
+include::parcial$components_list.adoc[]
 
-image::spaces/components_new_dropdown.png[Add a component in a space]
+== How to find it?
 
-== Actions
+To configure components, click the *Components* item in any participatory space.
 
+image::spaces/components/components.png[Components of space]
+
+There, you are able to manage the already added components, configure them, add new ones, etc.
+
+== Manage components
+
+You can find all the components on the list in the administration panel, with:
+
+* *Component name*: title of the component, given when creating or editing it.
+* *Component type*: type of the component.
+* *Component scope*: in a same space, components can have different scopes.
+
+== Create a component
+
+To configure a new component, click the *Add component* from the upper right part of the screen and select the type of
+component you want.
+
+image::spaces/components/components_new_dropdown.png[Add a component in a space]
+
+== Acciones
+
+.Components actions in component list
+[cols="10h,20h,~"]
 |===
-|Icon |Name |Definition
+|Icono |Nombre |Definición
 
-|image:action_manage.png[Manage icon]
-|Manage
-|To manage all the resources inside of a component. For instance, all the Proposals of a Proposal component, the Meetings
-in a Meeting component, etc.
+|image:icons/action_edit.png[Manage icon]
+|Gestionar
+|Administrar todos los recursos dentro de un componente. Por ejemplo, todas las Propuestas de un componente Proponal, las Reuniones
+en un componente Reunión, etc.
 
-|image:action_publish.png[Publish icon]
-|Publish
-|To publish a component. This means that the component will be visible to the public.
+|image:icons/action_share.png[Share icon]
+|Compartir
+|Compartir en privado antes de publicar este componente. Useful for getting reviews from other people of your organization.
 
-|image:action_unpublish.png[Unpublish icon]
-|Unpublish
-|To unpublish a component. This means that the component will be invisible to the public.
+|image:icons/action_configure.png[Configure icon]
+|Configurar
+|To configure a component with specific rules, for instance, in the case of Meetings:
+are comments enabled, participants can create meetings or not, etc.
 
-|image:action_configure.png[Configure icon]
-|Configure
-|To configure a component with the specific rules. Depends in the component type. For instance, in the case of Meetings:
-are comments enabled, participants can create meetings, etc.
+|image:icons/action_publish.png[Publish icon]
+|Publicar
+|Para publicar un componente. This means that the component is then visible to the public.
 
-|image:action_permissions.png[Permissions icon]
-|Permissions
-|To configure which xref:customize:authorizations.adoc[Authorization] will be necessary to make certain actions in
-this component. For instance, in the case of Proposals, which Verification will be necessary to create a new proposal or
+|image:icons/action_unpublish.png[Unpublish icon]
+|No publicar
+|Para despublicar un componente. This means that the component is then invisible to the public.
+
+|image:icons/action_preview.png[Preview icon]
+|Vista previa
+|To preview the space before it's published.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Permisos
+|To configure which xref:customize:authorizations.adoc[Authorization] is necessary to make certain actions in
+this component. For instance, in the case of Proposals, which Verification is needed to create a new proposal or
 to give supports.
 
-|image:action_share.png[Share icon]
-|Share
-|To share privately before publishing this component. Useful for reviewing with other people inside of your organization.
-
-|image:action_delete.png[Delete icon]
-|Delete
-|To delete this component. If there are contents most of the components will not let you delete them so it doesn't break
-relations with other resources. In those cases it's recommended to just unpublish the component.
+|image:icons/action_delete.png[Delete icon]
+|Eliminar
+|Para eliminar este componente. If there are content inside, most of the components don't let you delete them so it doesn't break
+relations with other resources. En esos casos se recomienda anular la publicación del componente.
 |===
