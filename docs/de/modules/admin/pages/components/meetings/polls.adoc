@@ -1,0 +1,60 @@
+= Umfragen
+
+== Understand the basics
+
+Meetings polls allow administrators to define questions for a meeting, that participants can answer
+while it's happening. It can be very useful to gather quick feedback and make decisions during meetings without having to leave the meeting and use
+other kind of tools.
+
+With this feature, administrators can define questions and manage when these questions and their results are shown
+to participants.
+
+== Konfiguration
+
+To configure polls for a specific meeting, click the image:icons/action_list.png[Manage polls button] "Manage polls" button.
+
+image::components/meetings/polls/backend.png[Backend for meeting polls]
+
+.Polls questions form
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Anweisung
+|Benötigt
+|Title for the question
+
+|Typ
+|Benötigt
+|Choose between single or multiple options question.
+
+|Answer options
+|Benötigt
+|Each possible answer.
+|===
+
+You can add as many questions and answer options as you want.
+
+=== Verwalten
+
+Prior to the meeting, if the administrators already configured the polls questions, participants can see a button "Reply poll"
+on the meeting page, warning them that a poll is going to be published on this meeting.
+
+image::components/meetings/polls/frontend_before_meeting.png[Reply poll page before meeting]
+
+When the meeting starts, the administrator can go to the poll administration page in the frontend to start sending the questions
+to the participants.
+
+image::components/meetings/polls/poll_administration_page.png[Polls administration page]
+
+On their end, once a question is sent, the participants see it appear on the polls page, and can answer it.
+
+image::components/meetings/polls/poll_participant_reply.png[Polls question for participant]
+
+Then, administrators can decide to send the questions results to participants, so they know what option is the most voted.
+
+image::components/meetings/polls/poll_participant_replies_sent.png[Polls replies view for participant]
+
+=== Exportieren
+
+Participants' answers can be exported through the "Export all" button in CSV, JSON, Excel and PDF.
