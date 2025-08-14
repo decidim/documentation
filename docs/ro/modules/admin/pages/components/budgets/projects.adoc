@@ -1,0 +1,130 @@
+= Projects
+
+== Understand the basics
+
+Projects are parts of budgets.
+
+== Configuration
+
+=== Create a project
+
+To access the creation and management of projects, click the title of the budget or the image:icons/action_list.png[Manage projects icon]
+icon on the budgets list.
+
+image::components/budgets/new_project_button.png[New project button]
+
+Then, click the "New project" button on the top right of the page.
+
+image::components/budgets/new_project.png[New project form]
+
+.New project form
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|The title for this project.
+
+|Description
+|Required
+|A description of what this project is about.
+
+|Budget amount
+|Required
+|What’s the budget amount for this project. How much money does it cost to implement this project?
+
+|Address
+|Optional
+|The address of the project. It allows to display a pin on a map for participants to locate the project.
+
+|Category
+|Optional
+|What Category is assigned to the project. Used for filtering in the budgets list.
+
+|Proposals
+|Optional
+|Choose related proposals for this project. Automatically assigned when importing proposals.
+
+|Add an image gallery
+|Optional
+|Add multiple images illustrating what this project is about, mock-ups, etc.
+|===
+
+=== Manage projects
+
+image::components/budgets/results_selected.png[Selected projects after voting]
+
+On the projects list in the administration panel, administrators can see:
+
+* *ID*: Identification number for this project.
+* *Title*: Title of the project.
+* *Category*: Category of the project.
+* *Scope*: Scope of the project, if enabled in the participatory space.
+* *Votes count*: Number of votes on this project.
+* *Selected*: If the project is selected for implementation at the end of the process.
+* *Map*: Location of the project when it has an address.
+
+You can filter and sort this list by clicking the "Filter" button and the columns headers.
+You can also search for projects by their ID and title in the search bar.
+
+image::components/budgets/projects_list_filter.png[Projects list filter]
+
+=== Actions
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Edit icon]
+|Edit
+|Edit form for a project.
+
+|image:icons/action_folder.png[Folders icon]
+|Folders
+|For classifying Attachments.
+
+|image:icons/action_attachments.png[Attachments icon]
+|Attachments
+|To add documents and images related to the project.
+
+|image:icons/action_preview.png[Preview icon]
+|Preview
+|To see how it's shown in the frontend to participants.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Permissions
+|To handle the authorizations needed to vote or comment on this specific project.
+
+|image:icons/action_delete.png[Delete icon]
+|Delete
+|To delete this project.
+|===
+
+=== Import proposals to projects
+
+Depending in the normative, you could want to have a first phase where participants
+make proposals, and those proposals are selected (by voting or by technical review),
+then you can import those proposals and convert them to projects.
+
+For this to work:
+
+. The following settings in the proposals component need to be enabled:
+.. Proposal answering enabled
+.. Enable costs on proposal answers
+. A valuator or administrator needs to answer proposals:
+.. Review the proposals
+.. Accept or reject them according to your normative
+.. Add costs to the proposals if were accepted
+. An administrator can Import proposals to projects
+
+image:components/budgets/import_proposals.png[Import proposals to projects]
+
+=== Export all
+
+Allows to export the projects for this budget in different formats.
+
+* Projects as CSV
+* Projects as JSON
+* Projects as Excel
