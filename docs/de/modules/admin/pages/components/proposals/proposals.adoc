@@ -1,0 +1,189 @@
+= Proposals management
+
+== Understand the basics
+
+It's important to understand that Proposals is not only the name of the component, but is also the entities of the component.
+
+image::components/proposals/proposals_list_frontend.png[Proposals list frontend]
+
+== Konfiguration
+
+Once you created your Proposals component, you are redirected to the Proposals list. There, you can create and manage the proposals of
+your component.
+
+Depending on whether you want to gather only participants proposals, or you also want to create official proposals, read the
+relevant section.
+
+=== Proposals creation
+
+==== Offizielle Vorschläge
+
+To start creating official proposals, the first thing to do is to create your first proposal, by clicking the "New proposal" button.
+
+image::components/proposals/new_proposal_backend.png[New proposal form - with multiple settings (official proposals)]
+
+.Neues Vorschlagsformular - Standard (offizielle Vorschläge)
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|The title of this proposal. It must have 15 characters at minimum and 150 characters as maximum and start with a capital letter.
+
+|Körper
+|Benötigt
+|The full description for this proposal. Must have 15 characters at minimum and 450 characters at maximum
+by default, but it can be changed with the setting "Maximum proposal body length" in the component configuration.
+
+|Suggested hashtags
+|Optional
+|If xref:admin:features/social_features/hashtags.adoc[hashtags] were configured, participants can select the ones related to their proposal.
+
+|Dieser Vorschlag stammt aus einer Sitzung
+|Optional
+|Überprüfen Sie, ob dieser Vorschlag von einem Meeting kommt. It displays a link in the proposal page to the meeting.
+
+|Besprechung auswählen
+|Benötigt
+|Dropdown selector with all the meetings of this participatory space. Field displayed if the "This proposal comes from a meeting" checkbox is checked.
+The author of the proposal becomes the meeting.
+
+|Adresse
+|Optional
+|If enabled, geocoding allow participant to locate their proposals on a specific location. Proposals with an address are then
+displayed on the map in the proposals list.
+
+|Kategorie
+|Optional
+|To which predefined category the proposal belongs. Used for filtering in the proposals list.
+
+|Add documents
+|Optional
+|If enabled, participants can add files and images to their proposal. The first image added is also added as the proposal image in
+the proposal grid list.
+|===
+
+==== Participants proposals
+
+Once you enabled participant proposals creation for the active phase, participants can see a "New proposal" button on the proposal
+listing page.
+
+image::components/proposals/new_proposal_button_frontend.png[New proposal button on proposals list]
+
+When they click the button, they are redirected on a two step form, enabling them to create their proposal.
+This form depends a lot on which settings you've enabled in the component.
+
+image::components/proposals/new_proposal_frontend.png[New proposal form - Create]
+
+.New participant proposal form - Creation step
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|The title of this proposal. It must have 15 characters at minimum and 150 characters as maximum and start with a capital letter.
+
+|Körper
+|Benötigt
+|The full description for this proposal. Must have 15 characters at minimum and 450 characters at maximum
+by default, but it can be changed with the setting "Maximum proposal body length" in the component configuration.
+
+|Suggested hashtags
+|Optional
+|If xref:admin:features/social_features/hashtags.adoc[hashtags] were configured, participants can select the ones related to their proposal.
+
+|Adresse
+|Optional
+|If enabled, geocoding allow participant to locate their proposals on a specific location. Proposals with an address are then
+displayed on the map in the proposals list.
+
+|Kategorie
+|Optional
+|To which predefined category the proposal belongs. Used for filtering in the proposals list.
+
+|Add documents
+|Optional
+|If enabled, participants can add files and images to their proposal. The first image added is also added as the proposal image in
+the proposal grid list.
+
+|Create proposal as
+|Optional
+|If the participant belongs to a verified xref:admin:participants/groups.adoc[user group], they can create a proposal in the name of
+this group
+|===
+
+Once the proposal is written and all properties are set, the participant can click the preview button to review their proposal.
+The proposal is saved as a draft in case participants want to modify it later.
+
+image::components/proposals/new_proposal_frontend_publish.png[New proposal form (by a participant) - Publish]
+
+They can click the "Publish" button to finalize the publication of the proposal.
+
+image::components/proposals/new_proposal_frontend_published.png[Published proposal made by a participant]
+
+=== Vorschläge verwalten
+
+Once there are multiple proposals in the process, administrators can manage them.
+
+image::components/proposals/manage_proposals.png[Manage proposals table]
+
+On the proposals list in the administration panel, administrators can see:
+
+* *Title*: Title of the proposal.
+* *Published at*: Publication date of the proposal.
+* *Comments*: The number of comments this proposal has.
+* *Notes*: The number of votes this proposal has.
+* *Valuators*: The number of valuators for this proposal.
+* *Status*: The status of the xref:admin:components/proposals/answers.adoc[answer] of this proposal.
+
+You can filter and sort this list by clicking the "Filter" button and the columns headers.
+You can also search for proposals by their title or ID in the search bar.
+
+=== Aktionen
+
+.Aktionen
+[cols="10h,20h,~"]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Edit icon]
+|Bearbeiten
+|Edit form, only for xref:_official_proposals[Official proposals].
+
+|image:icons/action_answers.png[Answer proposal icon]
+|xref:components/proposals/answers.adoc[Answer the proposal]
+|Allows administrators and valuators to give an official answer to a proposal.
+
+|image:icons/action_preview.png[Preview icon]
+|Vorschau
+|Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Berechtigungen
+|To handle the authorizations needed to like, amend, vote on comment or comment on this specific proposal.
+|===
+
+=== Bulk actions
+
+When managing proposals, you can select multiple proposals at the same time to perform bulk actions.
+
+image::components/proposals/bulk_actions.png[Proposals bulk actions]
+
+=== Exportieren
+
+The "Export all" button allows administrators to export the proposals and their comments in different formats.
+
+* Vorschläge als CSV
+* Vorschläge als JSON
+* Vorschläge als Excel
+* Kommentare als CSV
+* Kommentare als JSON
+* Kommentare als Excel
+
+=== Importieren
+
+* Import proposals from another component: Allows to import proposals from a proposal component of the same space.
+* Import proposals from a file
+* Import answers from a file
