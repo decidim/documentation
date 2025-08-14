@@ -1,0 +1,189 @@
+= Gestion des propositions
+
+== Understand the basics
+
+Il est important de comprendre que les propositions ne sont pas seulement le nom du composant, mais aussi les entités du composant.
+
+image::components/proposals/proposals_list_frontend.png[Proposals list frontend]
+
+== Configuration
+
+Une fois que vous avez créé votre volet Propositions, vous êtes redirigé vers la liste des propositions. Là, vous pouvez créer et gérer les propositions de
+votre composant.
+
+Selon que vous ne souhaitez réunir que des propositions de participants, ou que vous voulez également créer des propositions officielles, lisez la section
+pertinente.
+
+=== Création de propositions
+
+==== Propositions officielles
+
+Pour commencer à créer des propositions officielles, la première chose à faire est de créer votre première proposition, en cliquant sur le bouton "Nouvelle proposition".
+
+image::components/proposals/new_proposal_backend.png[New proposal form - with multiple settings (official proposals)]
+
+.Formulaire de nouvelle proposition - par défaut (propositions officielles)
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Le titre de cette proposition. Il doit avoir 15 caractères au minimum et 150 caractères au maximum et commencer par une lettre majuscule.
+
+|Corps
+|Obligatoire
+|La description complète de cette proposition. Doit avoir 15 caractères au minimum et 450 caractères au maximum
+par défaut, mais il peut être modifié avec le paramètre "Longueur maximale du corps de la proposition" dans la configuration du composant.
+
+|Hashtags suggérés
+|Facultatif
+|Si xref:admin:admin:features/social_features/hashtags.adoc[hashtags] ont été configurés, les participants peuvent sélectionner ceux liés à leur proposition.
+
+|Cette proposition provient d'une réunion
+|Facultatif
+|Vérifier si cette proposition provient d'une réunion. Il affiche un lien dans la page de proposition de la réunion.
+
+|Sélectionnez une réunion
+|Obligatoire
+|Sélecteur de liste déroulante avec toutes les réunions de cet espace participatif. Champ affiché si la case à cocher "Cette proposition provient d'une réunion" est cochée.
+L'auteur de la proposition devient la réunion.
+
+|Adresses
+|Facultatif
+|Si activé, le géocodage permet au participant de localiser ses propositions sur un emplacement spécifique. Les propositions avec une adresse sont alors
+affichées sur la carte dans la liste des propositions.
+
+|Catégorie
+|Facultatif
+|À quelle catégorie prédéfinie appartient la proposition. Utilisé pour le filtrage dans la liste des propositions.
+
+|Ajouter des documents
+|Facultatif
+|Si activé, les participants peuvent ajouter des fichiers et des images à leur proposition. La première image ajoutée est également ajoutée en tant qu'image de la proposition dans
+la liste de la grille de la proposition.
+|===
+
+==== Propositions des participants
+
+Une fois que vous avez activé la création de propositions de participants pour la phase active, les participants peuvent voir un bouton "Nouvelle proposition" sur la page d'annonce de la proposition
+.
+
+image::components/proposals/new_proposal_button_frontend.png[New proposal button on proposals list]
+
+Lorsqu'ils cliquent sur le bouton, ils sont redirigés sur un formulaire en deux étapes, leur permettant de créer leur proposition.
+Ce formulaire dépend beaucoup des paramètres que vous avez activés dans le composant.
+
+image::components/proposals/new_proposal_frontend.png[New proposal form - Create]
+
+.Formulaire de proposition de nouveaux participants - Étape de création
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Le titre de cette proposition. Il doit avoir 15 caractères au minimum et 150 caractères au maximum et commencer par une lettre majuscule.
+
+|Corps
+|Obligatoire
+|La description complète de cette proposition. Doit avoir 15 caractères au minimum et 450 caractères au maximum
+par défaut, mais il peut être modifié avec le paramètre "Longueur maximale du corps de la proposition" dans la configuration du composant.
+
+|Hashtags suggérés
+|Facultatif
+|Si xref:admin:admin:features/social_features/hashtags.adoc[hashtags] ont été configurés, les participants peuvent sélectionner ceux liés à leur proposition.
+
+|Adresses
+|Facultatif
+|Si activé, le géocodage permet au participant de localiser ses propositions sur un emplacement spécifique. Les propositions avec une adresse sont alors
+affichées sur la carte dans la liste des propositions.
+
+|Catégorie
+|Facultatif
+|À quelle catégorie prédéfinie appartient la proposition. Utilisé pour le filtrage dans la liste des propositions.
+
+|Ajouter des documents
+|Facultatif
+|Si activé, les participants peuvent ajouter des fichiers et des images à leur proposition. La première image ajoutée est également ajoutée en tant qu'image de la proposition dans
+la liste de la grille de la proposition.
+
+|Créer une proposition en tant que
+|Facultatif
+|Si le participant appartient à un xref:admin:participants/groups.adoc[groupe d'utilisateurs], il peut créer une proposition au nom de
+ce groupe
+|===
+
+Une fois que la proposition est écrite et que toutes les propriétés sont définies, le participant peut cliquer sur le bouton d'aperçu pour examiner sa proposition.
+La proposition est enregistrée comme brouillon au cas où les participants voudraient la modifier plus tard.
+
+image::components/proposals/new_proposal_frontend_publish.png[New proposal form (by a participant) - Publish]
+
+Ils peuvent cliquer sur le bouton "Publier" pour finaliser la publication de la proposition.
+
+image::components/proposals/new_proposal_frontend_published.png[Published proposal made by a participant]
+
+=== Gérer les propositions
+
+Une fois qu'il y a plusieurs propositions dans le processus, les administrateurs peuvent les gérer.
+
+image::components/proposals/manage_proposals.png[Manage proposals table]
+
+Sur la liste des propositions dans le panneau d'administration, les administrateurs peuvent voir :
+
+* *Titre* : Titre de la proposition.
+* *Publié à* : Date de publication de la proposition.
+* *Commentaires* : Le nombre de commentaires que contient cette proposition.
+* *Notes* : Le nombre de votes que cette proposition possède.
+* *Valuators* : Le nombre d'évaluateurs pour cette proposition.
+* *Statut* : Le statut de xref:admin:components/propositions/answers.adoc[answer] de cette proposition.
+
+Vous pouvez filtrer et trier cette liste en cliquant sur le bouton "Filtre" et sur les en-têtes des colonnes.
+Vous pouvez également rechercher des propositions par leur titre ou leur ID dans la barre de recherche.
+
+=== Actions
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Modifier l'icône]
+|Editer
+|Modifier le formulaire, uniquement pour xref:_official_propositions[Propositions officielles].
+
+|image:icons/action_answers.png[Icône de proposition de réponse]
+|xref:components/propositions/answers.adoc[Répondre à la proposition]
+|Permet aux administrateurs et aux évaluateurs de donner une réponse officielle à une proposition.
+
+|image:icons/action_preview.png[Icône d'aperçu]
+|Aperçu
+|Pour voir comment il est montré dans le frontend aux participants.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Autorisations
+|Pour gérer les autorisations nécessaires pour aimer, amender, voter sur un commentaire ou un commentaire sur cette proposition spécifique.
+|===
+
+=== Actions en bloc
+
+Lorsque vous gérez des propositions, vous pouvez sélectionner plusieurs propositions en même temps pour effectuer des actions en vrac.
+
+image::components/proposals/bulk_actions.png[Proposals bulk actions]
+
+=== Exportation
+
+Le bouton "Exporter tout" permet aux administrateurs d'exporter les propositions et leurs commentaires dans différents formats.
+
+* Propositions au format CSV
+* Propositions en JSON
+* Propositions en tant qu'Excel
+* Commentaires en tant que CSV
+* Commentaires en JSON
+* Commentaires en tant qu'Excel
+
+=== Importation
+
+* Importer des propositions depuis un autre composant : Permet d'importer des propositions depuis un composant de proposition du même espace.
+* Importer des propositions depuis un fichier
+* Importer des réponses depuis un fichier
