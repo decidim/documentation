@@ -1,0 +1,43 @@
+= Paramètres
+
+== Understand the basics
+
+L'onglet Paramètres vous permet :
+
+* Pour commencer à configurer votre instance
+* Pour activer les fonctionnalités générales dans l'instance
+* Pour mettre à jour l'apparence de la page d'accueil et l'apparence générale de votre instance
+* Créer et gérer les portées et les zones
+* Pour ajouter des informations d'aide à l'utilisateur
+* Pour configurer les domaines externes autorisés
+
+== Configuration
+
+Pour accéder au panneau de configuration des paramètres, allez dans le panneau d'administration et cliquez sur l'élément "Paramètres" dans la barre de navigation de l'administration
+.
+
+image::settings/settings_menu.png[Settings: Access settings panel]
+
+Dans le panneau de navigation secondaire, vous pouvez voir tous les paramètres disponibles :
+
+* xref:admin:settings/configuration.adoc[Configuration]: pour configurer les paramètres généraux.
+* xref:admin:settings/appearance.adoc[Appearance]: pour configurer l'apparence de l'instance.
+* xref:admin:settings/homepage.adoc[Homepage]: pour configurer ce qu'il faut afficher sur la page d'accueil.
+* xref:admin:settings/scopes.adoc[Scopes]: pour gérer les portées, une fonctionnalité de catégorisation.
+* xref:admin:settings/areas.adoc[Areas]: pour gérer les zones, une autre fonctionnalité de catégorisation.
+* xref:admin:admin:settings/help_sections.adoc[Sections d'aide]: créer et éditer des textes d'aide pour les participants.
+* xref:admin:settings/allowed_external_domains.adoc[Domaines externes autorisés]: gérer les domaines externes autorisés.
+
+image::settings/settings_sidebar_menu.png[Settings sidebar menu]
+
+== Exemples
+
+Grâce à cette section, les instances Decidim peuvent avoir un aspect et une apparence très différents, avec différentes couleurs, fonctionnalités, pages d'accueil, etc.
+
+image::settings/example_homepage_beta.png[Homepage screenshot of beta.try.decidim.org]
+
+image::settings/example_homepage_borgerkraft.png[Homepage screenshot of borgerkraft.no]
+
+image::settings/example_homepage_metadecidim.png[Homepage screenshot of meta.decidim.org]
+
+image::settings/example_homepage_barcelona.png[Homepage screenshot of decidim.barcelona]
