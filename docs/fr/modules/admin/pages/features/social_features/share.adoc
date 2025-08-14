@@ -2,19 +2,19 @@
 
 == Understand the basics
 
-Participants can share content on the platform through the share links available on the different contents pages.
+Les participants peuvent partager du contenu sur la plateforme par le biais des liens de partage disponibles sur les différentes pages de contenu.
 Les liens de partage permettent un partage plus facile vers différents services de médias sociaux qui peuvent être configurés pour Decidim à travers les fichiers de configuration.
 
-NOTE: Check xref:customize:social_shares.adoc[Social share services] for more information.
+NOTE: Consultez xref:customize:social_shares.adoc[Services de partage social] pour plus d'informations.
 
-== Share a content
+== Partager un contenu
 
-To share a content, such as a proposal, go to the content page and click the "Share" link at the right of the description.
+Pour partager un contenu, comme une proposition, allez sur la page de contenu et cliquez sur le lien "Partager" à droite de la description.
 
 image::features/share/share_button.png[Share button on resources]
 
-A modal appears, with different buttons to different social services providers.
-By clicking on a button, the participant is redirected to the social network, and can quickly publish or send a message with a link to the content page.
-Participants can also copy the link below the buttons, or click in the "Copy" link or icon.
+Un modal apparaît, avec des boutons différents de différents fournisseurs de services sociaux.
+En cliquant sur un bouton, le participant est redirigé vers le réseau social, et peut rapidement publier ou envoyer un message avec un lien vers la page de contenu.
+Les participants peuvent également copier le lien sous les boutons, ou cliquer sur le lien "Copier" ou sur l'icône.
 
 image::features/share/share_modal.png[Share modal]
