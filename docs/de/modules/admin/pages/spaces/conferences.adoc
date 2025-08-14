@@ -1,0 +1,84 @@
+= Konferenzen
+
+== Understand the basics
+
+A conference is a collection of meetings arranged in a program, with a number of people invited as speakers, and other
+information fields typical of large congresses or social events (registration, list of organizations that support or sponsor the
+event, etc.) Eine Konferenz kann eine relevante Veranstaltung für eine Organisation und ihre Mitglieder sein oder im Rahmen eines partizipativen
+-Prozesses oder einer Beratung folgen.
+
+In conferences, meetings components are displayed in a program form, with days and hours being listed like in an event program.
+
+NOTE: You want to create a conference? Check the xref:admin:spaces/conferences/conference_creation.adoc[conference creation] article.
+
+In this documentation section, you can find how to configure and manage all of these items:
+
+* xref:admin:spaces/conferences/conference_creation.adoc[Conference creation]
+* xref:admin:spaces/conferences/components.adoc[Components]
+* xref:admin:spaces/conferences/categories.adoc[Categories]
+* xref:admin:spaces/conferences/attachments.adoc[Attachments]
+* xref:admin:spaces/conferences/media_links.adoc[Media Links]
+* xref:admin:spaces/conferences/partners.adoc[Partners]
+* xref:admin:spaces/conferences/speakers.adoc[Speakers]
+* xref:admin:spaces/conferences/registrations.adoc[Registrations]
+** xref:admin:spaces/conferences/registrations/types.adoc[Registrierungstypen]
+** xref:admin:spaces/conferences/registrations/users.adoc[Benutzerregistrierung]
+** xref:admin:spaces/conferences/registrations/invites.adoc[Invites]
+** xref:admin:spaces/conferences/registrations/certificates.adoc[Certificate of Attendance]
+* xref:admin:spaces/conferences/admins.adoc[Conference admins]
+* xref:admin:spaces/conferences/moderations.adoc[Moderations]
+
+=== How to find it?
+
+To access the Conferences panel, go in the administration panel and click the "Conferences" item in the administration
+navigation bar.
+
+image::spaces/conferences/menu.png[Conferences menu]
+
+There, you are able to manage all existing conferences.
+
+== Konfiguration
+
+=== Manage conferences
+
+image::spaces/conferences/manage_conferences.png[Conferences list in administration panel]
+
+You can find all the conferences on the list in the administration panel, with:
+
+* *Title*: title of the conference.
+* *Created at*: date of creation of the conference.
+* *Published*: if the conference is published or no.
+
+You can filter and sort this list by clicking the "Filter" button and the columns headers.
+You can also search for conferences by their title in the search bar.
+
+=== Aktionen
+
+.Aktionen
+[cols="10h,20h,~"]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Configure conference icon]
+|Konfigurieren
+|To edit the configuration and components for a conference.
+
+|image:icons/action_duplicate.png[Duplicate conference icon]
+|Duplicate
+|To duplicate this conference.
+
+|image:icons/action_preview.png[Preview conference icon]
+|Vorschau
+|Preview of how the conference looks in the user interface.
+
+|image:icons/action_moderate.png[Moderate conference icon]
+|Moderate
+|To access the conference moderation panel.
+|===
+
+== Beispiele
+
+Below, you can find some links to examples of conferences:
+
+* https://meta.decidim.org/conferences/DecidimFest24[Decidim Fest 2024]
+* https://barcelonadema-participa.cat/conferences/jornada-resilient[Resilient metropolis initial day of the Strategic plan of the Barcelona metropolis]
