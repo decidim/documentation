@@ -1,12 +1,12 @@
-= Transparency features
+= Fonctionnalités de transparence
 
 == Understand the basics
 
-This documentation section is about features related to the transparency policy of Decidim.
-Transparency is really important in Decidim, and is one of the main part of xref:understand:social-contract#_transparency_traceability_and_integrity.adoc[Decidim Social Contract].
+Cette section de documentation traite des fonctionnalités liées à la politique de transparence de Decidim.
+La transparence est vraiment importante dans Decidim, et est l'une des principales composantes de xref:understand:social-contract#_transparency_traceability_and_integrity.adoc[Decidim Social Contract].
 
-Here, you'll find:
+Ici, tu trouveras :
 
-. xref:admin:features/transparency/statistics.adoc[Statistics]
+. xref:admin:features/transparence/statistics.adoc[Statistics]
 . xref:admin:features/transparency/versions.adoc[Versions]
-. xref:admin:features/transparency/fingerprint.adoc[Fingerprint]
+. xref:admin:features/transparence/fingerprint.adoc[Fingerprint]
