@@ -1,4 +1,4 @@
-= Statuses
+= Progrès
 
 == Understand the basics
 
@@ -7,36 +7,36 @@ according to their implementation evolution. It also allows to give results prog
 
 == Configuration
 
-To create Statuses, click the "Statuses" button on the top right of the results list.
+Pour créer des statuts, cliquez sur le bouton "Statuts" en haut à droite de la liste des résultats.
 
 image::components/accountability/statuses_button.png[Statuses button]
 
-There, you can create and manage the different statuses for the results.
+Là, vous pouvez créer et gérer les différents statuts pour les résultats.
 
 image::components/accountability/statuses_list.png[Statuses list]
 
-Click on the "New status" button to start creating statuses.
+Cliquez sur le bouton "Nouveau statut" pour commencer à créer des statuts.
 
-image:components/accountability/new_status.png[New status form]
+image:components/Accounability/new_status.png[Nouveau formulaire de statut]
 
 
-.New status form
+.Formulaire de nouveau statut
 |===
 |Champ |Type |Description
 
-|Key
+|Clé
 |Obligatoire
-|Used as the unique identifier for the xref:admin:components/accountability/import.adoc[CSV Import].
+|Utilisé comme identifiant unique pour xref:admin:components/Accounability/import.adoc[CSV Import].
 
 |Nom
 |Obligatoire
-|Name for this status.
+|Nom pour ce statut.
 
 |Description
 |Facultatif
-|Description for this status.
+|Description pour ce statut.
 
-|Progress
+|Avancement
 |Facultatif
 |Number with percentage (from 0 to 100) of the progress.
 |===
