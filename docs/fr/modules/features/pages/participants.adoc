@@ -1,0 +1,53 @@
+= Participants
+
+:page-partial:
+
+Les *Participants* de Decidim peuvent être regroupés en trois catégories différentes :
+
+* *Les visiteurs* ont accès à tout le contenu de la plateforme sans avoir à s'inscrire ou à fournir aucune information.
+* Les participants *inscrits* peuvent soumettre des propositions et des commentaires, s'inscrire à des réunions, approuver le contenu, suivre d'autres Participants et recevoir des notifications, des mentions et des messages privés.
+Les utilisateurs peuvent s'inscrire *directement* sur la plateforme ou via les passerelles d'autres *réseaux sociaux* (Facebook, Twitter ou Google+). Pour vous inscrire directement, les utilisateurs devront associer un compte de messagerie et un mot de passe au compte utilisateur.
+ Les participants inscrits peuvent également faire officialiser leur compte (ce qui signifie que leur nom d'utilisateur est accompagné d'un symbole spécial indiquant qu'ils sont vraiment ceux qu'ils prétendent être sur leur profil).
+* Les participants *vérifiés* peuvent prendre des décisions. Decidim offre différentes façons de procéder à cette vérification.
+
+Les administrateurs peuvent *gérer les permissions* pour les utilisateurs *enregistrés* et les utilisateurs *vérifiés* de manière sélective. Par exemple, _la création de proposition_ peut être activée pour les utilisateurs enregistrés et vérifiés, mais _prend en charge les propositions_ uniquement pour les utilisateurs vérifiés.
+
+== Enregistrement public de l'activité administrative
+
+La vérification manuelle des participants, ainsi que d'autres actions administratives peuvent créer une vulnérabilité ou permettre aux administrateurs d'utiliser la plate-forme de manière abusive. Pour éviter cela, Decidim comprend un *registre public des activités administratives* afin que ces actions puissent être vérifiées publiquement et de manière transparente.
+
+== Profil utilisateur et paramètres personnels
+
+Il y a une **page de profil utilisateur**où les participants peuvent apporter des **modifications à leurs données**(comme le compte e-mail, le mot de passe, etc.). , téléchargez et activez une image *avatar*, définissez les notifications ou supprimez leur compte.
+
+La page de profil utilisateur permet également aux participants d'ajouter des *informations supplémentaires* pour inclure des intérêts et des compétences, volontairement et en sélectionnant le niveau de visibilité de ces informations. Cela permet d'envoyer des notifications personnelles et les participants peuvent être jumelés à d'autres pour des collaborations.
+
+== Surveillance et notifications
+
+Les participants reçoivent des *notifications automatisées* concernant le contenu qu'ils ont créé : réponses aux commentaires et commentaires sur leurs propositions, ainsi que les résultats de leurs propositions (qu'elles soient acceptées ou rejetées).
+
+En plus des notifications automatiques, les participants peuvent décider de **suivre n'importe quel élément** du système (autres propositions, résultats, processus, assemblages, initiatives, groupes ou utilisateurs, etc.). , et recevoir des notifications.
+
+== Communication entre les participants
+
+**Les messages instantanés **peuvent être envoyés aux participants via la plate-forme, qui recevront une notification par courriel.
+
+Les *Mentions* peuvent également être ajoutées (dans la section des commentaires) à tout utilisateur enregistré et une notification sera automatiquement envoyée.
+
+== Groupes d'utilisateurs
+
+Les participants peuvent s'inscrire à la plateforme en tant que membres d'une ou plusieurs organisations/collectifs. Une fois que l'organisation et le statut de membre ont été vérifiés, les participants peuvent effectuer des actions (faire des propositions ou soumettre des commentaires, etc.). , avec leur utilisateur ou avec le nom de l'organisation.
+
+Les groupes d'utilisateurs peuvent également gérer les permissions utilisateur et les rôles d'administration attribués aux groupes, ainsi que des espaces privés de débat ou de partage d'informations entre les utilisateurs du groupe, par exemple, qui ont participé à une réunion en personne. [Fonctionnalité actuellement manquante]
+
+== Engagement
+
+Decidim a une série de fonctionnalités orientées vers _gamifying_ la plateforme, pour *attirer et garder un nombre croissant de participants intéressés*, ainsi que pour promouvoir des pratiques qui stimulent la qualité démocratique et l'intelligence collective dans la participation [le système de gamification est prévu pour 2018Q2-3, AjB-Lote1].
+
+Le système de gamification comprend deux modes, l'un centré sur les utilisateurs et l'autre sur les propositions.
+
+* Le **mode centré sur l'utilisateur** intègre un système de *points* basé sur plusieurs critères (degré de détail de son profil utilisateur, nombre d'invitations à d'autres sur la plate-forme, nombre de propositions faites et commentées, nombre de commentaires, nombre d'approbations obtenues, nombre de suivis, etc.)
+
+La combinaison de ces indicateurs et d'autres indicateurs est utilisée pour générer des routes de gamification pour chaque utilisateur et définir des threads tels que: la personne la plus participative dans le district, le leadership dans les discussions et les débats, etc.
+
+* La gamification *centrée sur les propositions/initiatives* permet aux promoteurs, signataires et abonnés pour stimuler l'interaction avec eux en incorporant plusieurs *métriques* (nombre de fois que la proposition est partagée dans les réseaux sociaux. degré de controverse (nombre de commentaires positifs et négatifs), qualité des délibérations (profondeur de l'arbre d'observation), nombre de résultats reçus, etc.
