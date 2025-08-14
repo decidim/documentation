@@ -1,47 +1,64 @@
-= Partners
+= Socios
 
-The partners are the sponsors or supporters of a conference. They are listed on the Conference landing page.
+== Understand the basics
 
-image:spaces/conferences/partners_frontend.png[Conferences partners (frontend)]
+Los socios son los patrocinadores o partidarios de una conferencia.
+If you add partners in the administration, then they are listed on the Conference landing page.
 
-== Create a new partner
+image:spaces/conferences/partners_frontend.png[Conferences partners frontend]
 
-image:spaces/conferences/partners.png[Conferences partners]
+== Configuración
 
-For creating a new partner of a conference:
+=== Manage partners
 
-. Sign in as administrator
-. Go to the conferences section in the sidebar
-. Click on the conference Edit action
-. Click on the Partners link in the sidebar
-. Click on the "New partner" button
-. Fill the form
+To access the partners configuration, click in the secondary navigation panel on the "Partners" item.
 
-image:spaces/conferences/new_partner.png[Conferences partners form]
+image::spaces/conferences/partners.png[Conferences partners]
 
+=== Acciones
 
-.New partner form
+.Acciones
+[cols="10h,20h,~"]
 |===
-|Field |Type |Description
+|Icono |Nombre |Definición
 
-|Name
-|Required
-|What is the name of this partner.
+|image:icons/action_edit.png[Edit icon]
+|Editar
+|To edit this link.
 
-|Partner type
-|Required
-|Choose one of these options: Main promotor or Collaborator
+|image:icons/action_delete.png[Delete icon]
+|Eliminar
+|To delete this link.
+|===
 
-|Weight
-|Optional
-|Which order will it have in relation to the other partners. Having a lower number means a higher priority. For instance, if you have two partners, "Partner a" with weight "10" and "Partner b" with weight "0", then "Partner b" will be first when ordering.
+=== Crear un nuevo socio
 
-|Link
-|
-|
+To create a new partner, click the "New partner" button in the top right of the page.
+
+image::spaces/conferences/new_partner.png[Conferences partners form]
+
+.Nuevo formulario de socio
+[cols="20h,10h,~"]
+|===
+|Campo |Tipo |Descripción
+
+|Nombre
+|Requerido
+|The name of the partner.
+
+|Tipo de socio
+|Requerido
+|Choose one of these options: Main promoter or Collaborator.
+
+|Posición del pedido
+|Opcional
+|Which order it has in relation to the other partners. Tener un número más bajo significa una prioridad mayor. For instance, if you have two partners, "Partner a" with weight "10" and "Partner b" with weight "0" then "Partner b" is first when ordering.
+
+|Enlace
+|Opcional
+|Link to the partner website, bio, social media, etc.
 
 |Logo
-|Required
-|Guidance for image: Preferably a landscape image that does not have any text. The service crops the image. Maximum file size: 5MB
-Allowed file extensions: jpg jpeg gif png bmp ico
+|Requerido
+|Guía para la imagen: Preferiblemente una imagen de paisaje que no tiene ningún texto. El servicio cultiva la imagen. Maximum file size: 5 MB
 |===
