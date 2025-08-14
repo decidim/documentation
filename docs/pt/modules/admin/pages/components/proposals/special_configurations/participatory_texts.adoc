@@ -1,0 +1,84 @@
+= Textos participativos
+
+== Understand the basics
+
+This feature allows participants to navigate in the proposals like in a text, rather than a list or a grid.
+It can be useful for discussing norms, plans, or other kinds of texts.
+
+Cada parágrafo está dividido numa proposta, pelo que é possível discuti-la de uma forma mais melindrosa.
+
+image::components/proposals/participatory_texts/example01.png[Participatory text example]
+
+== Configuração
+
+To configure "Participatory texts" in proposals, enable the "Participatory texts enabled" setting in the component configuration form.
+
+image::components/proposals/component_specific_conf.png[Add component form - Specific configurations]
+
+Click in the "Participatory texts" button on the top of the empty proposals component.
+
+image::components/proposals/participatory_texts/manage_proposals.png[Manage proposals]
+
+Then, click in the "Import document" button in the empty Preview participatory text panel, to be redirected on the form.
+
+image::components/proposals/participatory_texts/add_document_form.png[Add document form]
+
+
+.Adicionar formulário de documento
+|===
+|Campo |tipo |Descrição:
+
+|Título
+|Obrigatório
+|The title of the document to be discussed in the proposal component.
+
+|Descrição:
+|Opcional
+|Description for the document.
+
+|Documento
+|Obrigatório
+|Arquivo. Add a document lesser than 2 MB, each section until 3 heading levels deep is parsed into proposals.
+Supported formats are: Markdown and ODT.
+|===
+
+TIP: Embora seja possível trabalhar com Markdown (.MD) e ODT (. DT) arquivos, recomendamos trabalhar com Markdown já que é
+mais fácil de ver a formatação. link:{attachmentsdir}/participatory_text.md[Download the example MD participatory text] for help.
+
+Click the "Upload document" button to see the participatory text preview.
+
+=== Pré-visualizar o documento
+
+image::components/proposals/participatory_texts/preview_participatory_text.png[Preview participatory text]
+
+Thanks to the preview, you can review if the document is correctly imported, and divided as you want it to be.
+
+Depending on the preview, you can:
+
+* *Discard*: if you're not satisfied and want to reformat your document to start the import again.
+* *Save draft*: if you're satisfied with the result, but still wants to make some modifications.
+* *Publish document*: if you're ready to see how the text is like in the user interface.
+
+Once you published the document, all sections are presented as proposals in the proposal management panel.
+
+image::components/proposals/participatory_texts/imported_document_proposals.png[Imported document proposals]
+
+Finally, you can publish the proposal component, for the participatory text to be visible by participants.
+
+NOTE: This feature could break existing proposals, so if there is any proposal it can't work, and a warning message is displayed:
+
+====
+Não é possível interagir com esta configuração se houver propostas existentes. Por Favor, crie um novo componente `Propostas` se você quiser que
+ative esta funcionalidade ou descarte todas as propostas importadas no menu `Participatory Texts` se você quiser desativá-la.
+====
+
+Once the document is imported and the proposals component published, participants are able to navigate the participatory text.
+
+image::components/proposals/participatory_texts/example01.png[Participatory text example]
+
+== Exemplos
+
+Alguns exemplos de onde esse recurso foi usado são:
+
+* https://web.archive.org/web/20211028113410/https://concertation.greenpeace.fr/processes/vision-greenpeace/f/8/[Vision Greenpeace]
+* https://www.decidim.barcelona/processes/PAM2020/f/3771/[Participatory process of Program d'Actuació Municipal (PAM) 2020-2023]
