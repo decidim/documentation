@@ -1,0 +1,174 @@
+= Initiatives Initializer
+
+For using the initiatives module, you'll want to review the configurations that are in the initializer. See the xref:configure:initializer.adoc[general Initializer configuration] for more information regarding this file.
+
+You'll need to change in the `config/initializer/decidim.rb` file. You could also create an ad-hoc file for these configurations, like `config/initializer/initiatives.rb`.
+
+After making changes to this file you'll need to also restart your application server.
+
+== Creation enabled
+
+Setting that defines whether creation is allowed to any validated user or not. Defaults to true.
+
+[source,ruby]
+....
+  config_accessor :creation_enabled do
+    true
+  end
+....
+
+== Similarity threshold
+
+Setting that defines the similarity minimum value to consider two
+initiatives similar. Defaults to 0.25.
+
+[source,ruby]
+....
+  config_accessor :similarity_threshold do
+    0.25
+  end
+....
+
+== Similarity limit
+
+Setting that defines how many similar initiatives will be shown.
+Defaults to 5.
+
+[source,ruby]
+....
+  config_accessor :similarity_limit do
+    5
+  end
+....
+
+== Minimum committee members
+
+Minimum number of committee members required to pass the initiative to
+technical validation phase. Only applies to initiatives created by
+individuals.
+
+[source,ruby]
+....
+  config_accessor :minimum_committee_members do
+    2
+  end
+....
+
+== Default signature time period length
+
+Number of days available to collect supports after an initiative has been
+published.
+
+[source,ruby]
+....
+  config_accessor :default_signature_time_period_length do
+    120
+  end
+....
+
+== Default components
+
+Components enabled for a new initiative
+
+[source,ruby]
+....
+  config_accessor :default_components do
+    [:pages, :meetings]
+  end
+....
+
+== First notification percentage
+
+Notifies when the given percentage of supports is reached for an
+initiative.
+
+[source,ruby]
+....
+  config_accessor :first_notification_percentage do
+    33
+  end
+....
+
+== Second notification percentage
+
+Notifies when the given percentage of supports is reached for an
+initiative.
+
+[source,ruby]
+....
+  config_accessor :second_notification_percentage do
+    66
+  end
+....
+
+== Stats cache expiration time
+
+Sets the expiration time for the statistic data.
+
+[source,ruby]
+....
+  config_accessor :stats_cache_expiration_time do
+    5.minutes
+  end
+....
+
+== Max time in validating state
+
+Maximum amount of time in validating state.
+After this time the initiative will be moved to
+discarded state.
+
+[source,ruby]
+....
+  config_accessor :max_time_in_validating_state do
+    60.days
+  end
+....
+
+== Print enabled
+
+Print functionality enabled. Allows the user to get
+a printed version of the initiative from the administration
+panel.
+
+[source,ruby]
+....
+  config_accessor :print_enabled do
+    true
+  end
+....
+
+== Timestamp service
+
+Set a service to generate a timestamp on each vote. The
+attribute is the name of a class whose instances are
+initialized with a string containing the data to be
+timestamped and respond to a timestamp method.
+
+[source,ruby]
+....
+  config_accessor :timestamp_service
+....
+
+== PDF signature service
+
+Set a service to add a signature to pdf of signatures.
+The attribute is the name of a class whose instances are
+initialized with the document to be signed and respond to a
+signed_pdf method with the signature added.
+
+[source,ruby]
+....
+  config_accessor :pdf_signature_service
+....
+
+== Do no require authorization
+
+This flag allows creating authorizations to unauthorized users.
+
+[source,ruby]
+....
+  config_accessor :do_not_require_authorization do
+    false
+  end
+....
