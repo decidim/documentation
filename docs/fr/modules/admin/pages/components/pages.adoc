@@ -2,29 +2,29 @@
 
 == Understand the basics
 
-La fonctionnalité Page permet aux participants d'avoir plus d'information sur un espace. Administrators can fill a page with informational content,
-images, links, to inform and update the participants.
+La fonctionnalité Page permet aux participants d'avoir plus d'information sur un espace. Les administrateurs peuvent remplir une page avec du contenu d'information, des images
+, des liens, pour informer et mettre à jour les participants.
 
-It's similar to the general xref:admin:pages.adoc[Pages], the main difference being that this component allows to define pages inside
-a participatory space, and not in the Help section.
+C'est la même chose que les pages générales xref:admin:pages. doc[Pages], la principale différence étant que ce composant permet de définir des pages à l'intérieur de
+un espace participatif, et non dans la section Aide.
 
 image::components/page/example01.png[Example of a page component in a participatory process]
 
 == Configuration
 
-To create a Page component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
+Pour créer un composant de page, allez d'abord dans xref:admin:spaces.adoc[espace participatif] où vous voulez le créer.
 
 image::components/page/component_page.png[Add Page component button]
 
-Then:
+Alors:
 
-. Click on the "Components" item in the secondary menu
-. Click the "Add component" button
-. Select "Page"
-. Fill the component creation form
+. Cliquez sur l'élément "Composants" dans le menu secondaire
+. Cliquez sur le bouton "Ajouter un composant"
+. Sélectionnez "page"
+. Remplissez le formulaire de création de composant
 
-You can still update this form and the configuration after creating the component, by clicking the
-image:icons/action_configure.png[Configure icon] icon in the components list.
+Vous pouvez toujours mettre à jour ce formulaire et la configuration après avoir créé le composant, en cliquant sur l’icône
+image:icons/action_configure.png[Configurer l’icône] dans la liste des composants.
 
 image::components/page/component.png[Add component form]
 
@@ -35,13 +35,13 @@ image::components/page/component.png[Add component form]
 
 |Nom
 |Obligatoire
-|The title of this component.
+|Le titre de ce composant.
 
 |Rang d'affichage
 |Facultatif
-|The order of the component in relation with the other components. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
-For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0"
-then "component b" is first when ordering.
+|L'ordre du composant en relation avec les autres composants. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux composants, "Composant a" avec le poids "10" et "Composant b" avec le poids "0"
+puis "Composant b" est d'abord lors de la commande.
 |===
 
 .Ajouter un composant : Formulaire de page - Paramètres globaux
@@ -51,7 +51,7 @@ then "component b" is first when ordering.
 
 |Annonce
 |Facultatif
-|A general announcement visible on the top of the page.
+|Une annonce générale visible en haut de la page.
 |===
 
 .Ajouter un composant : Formulaire de pages - Paramètres de l'étape
@@ -61,12 +61,12 @@ then "component b" is first when ordering.
 
 |Annonce
 |Facultatif
-|A general announcement visible on the top of the page for this phase.
+|Une annonce générale visible en haut de la page pour cette phase.
 |===
 
-== Create a page
+== Créer une page
 
-Once you created the Page component, click the Edit icon to write the content to be displayed on the page.
+Une fois que vous avez créé le composant de la page, cliquez sur l'icône Modifier pour écrire le contenu à afficher sur la page.
 
 image:components/page/new_page.png[Formulaire de nouvelle page]
 
@@ -77,12 +77,12 @@ image:components/page/new_page.png[Formulaire de nouvelle page]
 
 |Corps
 |Obligatoire
-|The content displayed on the page. You can add images, links, videos, formatting, etc.
+|Le contenu affiché sur la page. Vous pouvez ajouter des images, des liens, des vidéos, du formatage, etc.
 |===
 
 == Exemples
 
 Quelques exemples d'utilisation de ce composant :
 
-* https://meta.decidim.org/processes/Welcome/f/1686/[Take the tour page to discover the Decidim community]
-* https://www.decidim.barcelona/processes/PressupostosParticipatius/f/4691/[Information page for a Participatory Budget Barcelona]
+* https://meta.decidim.org/processes/Welcome/f/1686/[Prenez la page de la visite pour découvrir la communauté Decidim]
+* https://www.decidim.barcelona/processes/PressupostosParticipatius/f/4691/[Page d'information pour un budget participatif de Barcelona]
