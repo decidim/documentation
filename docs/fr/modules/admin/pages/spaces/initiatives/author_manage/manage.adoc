@@ -1,32 +1,32 @@
-= Manage initiative as an author
+= Gérer l'initiative en tant qu'auteur
 
 == Understand the basics
 
-Initiatives have the peculiarity of being both manageable by administrators and their authors.
-Administrators have greater rights, but authors can also manage a certain number of configurations of their initiatives.
+Les initiatives ont la particularité d'être à la fois gérables par les administrateurs et leurs auteurs.
+Les administrateurs ont plus de droits, mais les auteurs peuvent également gérer un certain nombre de configurations de leurs initiatives.
 
-== Edit the initiative
+== Modifier l'initiative
 
-Once the initiative is created, the author can see the initiative page, but until the initiative is reviewed and accepted by an administrator, through the technical validation,
-it is not published and visible for all the participants.
+Une fois que l'initiative est créée, l'auteur peut voir la page de l'initiative, mais jusqu'à ce que l'initiative soit examinée et acceptée par un administrateur, par la validation technique,
+elle n'est pas publiée et visible pour tous les participants.
 
 image::spaces/initiatives/initiative_show.png[Initiative show]
 
-Once the initiative is created and before it's sent to technical validation, an author can edit and correct the initiative if it has any error.
+Une fois que l'initiative est créée et avant qu'elle ne soit envoyée à la validation technique, l'auteur peut modifier et corriger l'initiative en cas d'erreur.
 
 image::spaces/initiatives/initiative_edit.png[Initiative edit]
 
-If the xref:admin:spaces/initiatives/author_manage/committee.adoc[Promoting committee] is enabled for the initiative type of this initiative, the author of an initiative can manage requests and committee members at the end of the edit form.
+Si le comité xref:admin:spaces/initiatives/author_manage/. do[Comité de promotion] est activé pour le type d'initiative de cette initiative, l'auteur d'une initiative peut gérer les demandes et les membres du comité à la fin du formulaire d'édition.
 
-== Send to technical validation
+== Envoyer à la validation technique
 
-Once all the conditions are right, if the initiative is ready and has enough committee members, the author can send the initiative to technical validation.
-When clicking on the "Send to technical validation" button, a modal is displayed to warn the author that they won't be able to edit it after this action.
+Une fois que toutes les conditions sont réunies, si l'initiative est prête et compte suffisamment de membres du comité, l'auteur peut envoyer l'initiative à la validation technique.
+En cliquant sur le bouton "Envoyer à la validation technique", un modal est affiché pour avertir l'auteur qu'il ne sera pas en mesure de le modifier après cette action.
 
 image::spaces/initiatives/initiative_send_to_technical_validation.png[Send initiative to technical validation]
 
-== Retrieve created initiatives
+== Récupérer les initiatives créées
 
-Authors can also find their initiatives in the initiatives index by un-checking the "Open" status filter, and clicking on the "My initiatives" filter.
+Les auteurs peuvent également trouver leurs initiatives dans l'index des initiatives en décochant le filtre "Ouvrir" et en cliquant sur le filtre "Mes initiatives".
 
 image::spaces/initiatives/initiative_filters_my_initiatives.png[Filters for my initiatives]
