@@ -1,91 +1,63 @@
-= Agenda
+= Compromissos
 
-O recurso de agenda permite que um administrador defina o calendário para uma reunião. É possível definir itens da agenda e
-sub-itens com cada um dos tópicos que serão discutidos na reunião, junto com uma descrição e a duração
-de cada item e subitem.
+== Understand the basics
 
-image:components/meetings/agenda/agenda_frontend.png[Agenda in the frontend]
+O recurso de agenda permite que um administrador defina o calendário para uma reunião. It's possible to define agenda items and
+sub-items, with every one of the topics to be discussed in the meeting, along with a description and the duration
+of every item and sub-item.
 
-== Novo formulário de agenda
+image::components/meetings/agenda/agenda_frontend.png[Agenda in the frontend]
 
-To define an agenda for a meeting:
+== Configuração
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Click on "Meetings"
-. Search the meeting that you want to add the agenda to
-. Click on the "Agenda" button image:action_agenda.png[Agenda button]
-. Fill the form
+=== Novo formulário de agenda
 
-image:components/meetings/agenda/new_agenda_form.png[New agenda form in the backend]
+To define an agenda for a meeting, click the image:icons/action_agenda.png[Agenda icon] Agenda icon.
 
+image:components/meetings/agenda/new_agenda_form.png[Novo formulário agenda no backend]
 
 .Novo formulário de agenda
+[cols="20h,10h,~"]
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Title
-|Required
-|Title for the agenda. For instance, "Schedule"
+|Título
+|Obrigatório
+|Título para a agenda.
 
-|Visible
-|Optional
-|Check if you want to publish the agenda.
+|Visível
+|Opcional
+|Check if you want the agenda to be visible to participants.
 
-|Agenda items
-|Required
-|List of agenda items.
-|===
-
-It's possible to create any number of Agenda items and sub-items. You can up or down the hierarchy of the agenda items.
-It's also possible to remove and edit the agenda items.
-
-
-.Agenda item form
-|===
-|Field |Type |Description
-
-|Title
-|Required
-|Title for the agenda item
-
-|Duration
-|Required
-|How many minutes will the agenda item last. For instance, "15".
-
-|Description
-|Optional
-|Title for the agenda item
-
-|Agenda sub-items
-|Optional
-|List of agenda sub-items.
+|Itens da agenda
+|Obrigatório
+|Lista de itens da agenda.
 |===
 
-The only limitation that agenda items and sub-items have is that they have to respect the duration of the parent. For instance,
-if there's an Item that lasts 60 minutes, you can't create a sub-item that lasts 90 minutes.
+É possível criar qualquer número de itens da Agenda e subitens. Você pode subir ou descer a hierarquia dos itens da agenda.
+Também é possível remover e editar os itens da agenda.
 
-As an example, this agenda:
+.Formulário item da agenda
+[cols="20h,10h,~"]
+|===
+|Campo |tipo |Descrição:
 
-image:components/meetings/agenda/agenda_frontend.png[Agenda in the frontend]
+|Título
+|Obrigatório
+|Título do item da agenda
 
-Has the following configuration:
+|Duração
+|Obrigatório
+|How many minutes the agenda item last.
 
-* Title: "Schedule"
-* Visible: true
-* Agenda item #1:
-** Title: Diagnosis
-** Duration: 60
-* Agenda item #2:
-** Title: Ideation
-** Duration: 120
-** Agenda sub-item #2.1:
-*** Title: Future thinking
-*** Duration: 60
-*** Description: Imagining how we can solve the problem
-** Agenda sub-item #2.2:
-*** Title: Creating proposals
-*** Duration: 60
-*** Description: In the platform
+|Descrição:
+|Opcional
+|Title for the agenda item.
+
+|Subitens da agenda
+|Opcional
+|Lista de sub-itens da agenda.
+|===
+
+A única limitação que os pontos da ordem do dia e os sub-pontos têm é o facto de terem de respeitar a duração do progenitor. For instance,
+if there's an item that lasts 60 minutes, you can't create a sub-item that lasts 90 minutes.
