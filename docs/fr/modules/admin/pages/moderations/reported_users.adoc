@@ -1,0 +1,81 @@
+= Participants signalés
+
+== Understand the basics
+
+Il y a des cas où les participants pourraient enfreindre les conditions générales de la plateforme
+, donc il est utile d'avoir la possibilité de signaler et de bloquer les participants.
+Vous pouvez bloquer les participants depuis la section xref:participants/participants.adoc[participants
+dans le panneau d'administration] ou via la section « Participants signalés ».
+
+== Configuration
+
+=== Signaler un participant
+
+N'importe quel participant connecté peut signaler un autre participant via le bouton « Signaler » dans le profil du participant
+.
+
+image::moderations/moderations_reported_participant_flag.png[Report flag in participant profile]
+
+Après qu'un participant ait cliqué dans cette action, il doit fournir une raison pour laquelle il fait ce rapport :
+
+image::moderations/reported_participant_modal_user.png[Give reason for reporting a participant modal]
+
+Lorsqu'un administrateur ou un modérateur signale un participant, ils ont des options supplémentaires qui leur permettent de
+bloquer directement l'utilisateur et masquer tout leur contenu. Ils doivent justifier le blocage de ce participant.
+
+image::moderations/reported_participant_modal_admin.png[Give reason for reporting a participant modal administrators]
+
+=== Gérer les participants signalés
+
+Les participants signalés sont visibles dans la section « Participants signalés » du panneau de modération mondiale.
+
+image::moderations/moderations_backend_list_users.png[Global moderations panel for users]
+
+Vous pouvez trouver tous les participants signalés dans la liste des participants signalés dans le panneau d'administration, avec:
+
+* *Nom*: Nom du participant, avec un lien vers son profil.
+* *Surnom* : Surnom du participant, avec un lien vers son profil.
+* *Raison* : Pourquoi le participant est signalé. Si le participant qui a fait le rapport a donné des informations
+supplémentaires, il est possible de le voir en le survolant.
+* *Signalé à* : Quand ils ont été signalés à l'origine.
+* *Nombre de rapports* : Nombre de rapports par différents utilisateurs.
+* *Actions* : Vous pouvez *Désigner* ou *Bloquer* le participant.
+
+=== Actions
+
+.Actions
+[cols="10h,20h,~,~"]
+|===
+|Icône |Nom |Définition |Condition
+
+|image:icons/action_unreport.png[Désignaler l'icône]
+|Ne plus signaler
+|Ne plus signaler le participant et le retirer de la liste.
+|Disponible quand le participant n'est pas encore bloqué.
+
+|image:icons/action_close.png[Bloquer l'utilisateur]
+|Bloquer l'utilisateur
+|Bloquer le participant.
+|Disponible quand le participant n'est pas encore bloqué.
+
+|image:icons/action_resend.png[Débloquer l'utilisateur]
+|Débloquer l'utilisateur
+|Débloquer le participant.
+|Disponible pour les participants bloqués.
+|===
+
+=== Bloquer un participant
+
+Si le contenu a été "non signalé" par erreur, vous devrez le retrouver dans la plateforme publique
+et le signaler à nouveau afin que vous puissiez le modérer.
+
+Les administrateurs doivent fournir une justification s'ils veulent bloquer un participant.
+Ils peuvent également définir xref:templates/block_users.adoc[bloquer les modèles de messages utilisateur] pour avoir des justifications prédéfinies.
+
+image:moderations/moderations_participants_block_user_justification.png[Justifier l'action utilisateur du bloc]
+
+Lorsqu'un participant bloqué tente de se connecter, il verra un message d'erreur :
+
+image:moderations/moderations_participants_block_user_alert.png[Message affiché à l'utilisateur bloqué]
+
+Le nom des participants bloqués passe à "Utilisateur bloqué".
