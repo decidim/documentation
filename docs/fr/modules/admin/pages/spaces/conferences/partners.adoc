@@ -3,13 +3,13 @@
 == Understand the basics
 
 Les partenaires sont les commanditaires ou les partisans d'une conférence.
-If you add partners in the administration, then they are listed on the Conference landing page.
+Si vous ajoutez des partenaires dans l'administration, alors ils sont listés sur la page d'accueil de la conférence.
 
-image:spaces/conferences/partners_frontend.png[Conferences partners frontend]
+image:espaces/conferences/partners_frontend.png[frontal des conférences partenaires]
 
-== Manage partners
+== Gérer les partenaires
 
-To access the partners configuration, click in the secondary navigation panel on the "Partners" item.
+Pour accéder à la configuration des partenaires, cliquez dans le panneau de navigation secondaire de l'élément "Partenaires".
 
 image::spaces/conferences/partners.png[Conferences partners]
 
@@ -20,18 +20,18 @@ image::spaces/conferences/partners.png[Conferences partners]
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Modifier l'icône]
 |Editer
-|To edit this link.
+|Éditer ce lien.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Supprimer l'icône]
 |Supprimez
-|To delete this link.
+|Supprimer ce lien.
 |===
 
 == Créer un nouveau partenaire
 
-To create a new partner, click the "New partner" button in the top right of the page.
+Pour créer un nouveau partenaire, cliquez sur le bouton "Nouveau partenaire" en haut à droite de la page.
 
 image::spaces/conferences/new_partner.png[Conferences partners form]
 
@@ -42,21 +42,21 @@ image::spaces/conferences/new_partner.png[Conferences partners form]
 
 |Nom
 |Obligatoire
-|The name of the partner.
+|Le nom du partenaire.
 
 |Type de partenaire
 |Obligatoire
-|Choose one of these options: Main promoter or Collaborator.
+|Choisissez l'une de ces options : le promoteur principal ou le collaborateur.
 
 |Rang d'affichage
 |Facultatif
-|Which order it has in relation to the other partners. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. For instance, if you have two partners, "Partner a" with weight "10" and "Partner b" with weight "0" then "Partner b" is first when ordering.
+|Quelle commande elle a en relation avec les autres partenaires. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux partenaires, "Partenaire a" avec le poids "10" et "Partenaire b" avec le poids "0", alors "Partenaire b" est d'abord lors de la commande.
 
 |Lier
 |Facultatif
-|Link to the partner website, bio, social media, etc.
+|Lien vers le site du partenaire, la biographie, les médias sociaux, etc.
 
 |Logo
 |Obligatoire
-|Orientation pour l'image: De préférence une image de paysage qui n'a pas de texte. Le service récolte l'image. Maximum file size: 5 MB
+|Orientation pour l'image: De préférence une image de paysage qui n'a pas de texte. Le service récolte l'image. Taille maximale du fichier : 5 Mo
 |===
