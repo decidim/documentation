@@ -1,169 +1,84 @@
-= Conferences
+= Conferencias
+
+== Understand the basics
 
 A conference is a collection of meetings arranged in a program, with a number of people invited as speakers, and other
 information fields typical of large congresses or social events (registration, list of organizations that support or sponsor the
-event, etc.). A conference can be a relevant event for an organization and its members, or take place as part of a participatory
-process or follow a consultation.
+event, etc.) Una conferencia puede ser un evento relevante para una organización y sus miembros, o tendrá lugar como parte de un proceso
+participativo o seguir una consulta.
 
-Examples:
+In conferences, meetings components are displayed in a program form, with days and hours being listed like in an event program.
 
-* A general assembly for an organization
-* The annual meeting of a cooperative
+NOTE: You want to create a conference? Check the xref:admin:spaces/conferences/conference_creation.adoc[conference creation] article.
 
-As a real world example you can see the anual Metadecidim conferences:
+In this documentation section, you can find how to configure and manage all of these items:
 
-image:spaces/conferences/example01.png[Decidim Fest 2020]
+* xref:admin:spaces/conferences/conference_creation.adoc[Conference creation]
+* xref:admin:spaces/conferences/components.adoc[Components]
+* xref:admin:spaces/conferences/categories.adoc[Categories]
+* xref:admin:spaces/conferences/attachments.adoc[Attachments]
+* xref:admin:spaces/conferences/media_links.adoc[Media Links]
+* xref:admin:spaces/conferences/partners.adoc[Partners]
+* xref:admin:spaces/conferences/speakers.adoc[Speakers]
+* xref:admin:spaces/conferences/registrations.adoc[Registrations]
+** xref:admin:spaces/conferences/registrations/types.adoc[Tipos de registro]
+** xref:admin:spaces/conferences/registrations/users.adoc[Registros de usuarios]
+** xref:admin:spaces/conferences/registrations/invites.adoc[Invites]
+** xref:admin:spaces/conferences/registrations/certificates.adoc[Certificado de asistencia]
+* xref:admin:spaces/conferences/admins.adoc[Administradores de la conferencia]
+* xref:admin:spaces/conferences/moderations.adoc[Moderations]
 
-* https://meta.decidim.org/conferences/decidimfest19[Decidim Fest 2019]
-* https://meta.decidim.org/conferences/decidimfest2020[Decidim Fest 2020]
-* https://meta.decidim.org/conferences/DecidimFest21[Decidim Fest 2021]
+=== How to find it?
 
-== Create a new conference
+To access the Conferences panel, go in the administration panel and click the "Conferences" item in the administration
+navigation bar.
 
-For adding a new conference, you need to:
+image::spaces/conferences/menu.png[Conferences menu]
 
-image:spaces/conferences/menu.png[Conferences menu]
+There, you are able to manage all existing conferences.
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button "Conferences"
-. Click in the button "Create a new conference"
-. Configure the conference by filling the form
+== Configuración
 
-image:spaces/conferences/new_conference.png[Create a new conference form]
+=== Manage conferences
 
+image::spaces/conferences/manage_conferences.png[Conferences list in administration panel]
 
-.Create a new conference
+You can find all the conferences on the list in the administration panel, with:
+
+* *Title*: title of the conference.
+* *Created at*: date of creation of the conference.
+* *Published*: if the conference is published or no.
+
+You can filter and sort this list by clicking the "Filter" button and the columns headers.
+You can also search for conferences by their title in the search bar.
+
+=== Acciones
+
+.Acciones
+[cols="10h,20h,~"]
 |===
-|Field |Type |Description
+|Icono |Nombre |Definición
 
-|Title
-|Required
-|What is the title of this conference. For instance "Decidim Fest 2021"
+|image:icons/action_edit.png[Configure conference icon]
+|Configurar
+|To edit the configuration and components for a conference.
 
-|Slogan
-|Required
-|A subtitle for this conference. For instance, "Democracy, Technology and Global Justice"
+|image:icons/action_duplicate.png[Duplicate conference icon]
+|Duplicate
+|To duplicate this conference.
 
-|URL slug
-|Required
-|URL slugs are used to generate the URLs that point to this conference. Only accepts letters, numbers, and dashes, and
-must start with a letter. Example: if your domain is 'example.org' and your slug 'DecidimFest21' then your URL will be
-https://example.org/conferences/DecidimFest21
+|image:icons/action_preview.png[Preview conference icon]
+|Vista previa
+|Preview of how the conference looks in the user interface.
 
-|Hashtag
-|Optional
-|Hashtag for Twitter
-
-|Highlighted
-|Optional
-|Should this conference be more prominent than others? For instance, is this an ongoing or a conference that has happened years ago?
-
-|Short description
-|Required
-|A short explanation of what's your conference about.
-
-|Description
-|Required
-|A long explanation of what's your conference about.
-
-|Objectives
-|Optional
-|What are the objectives or goals for this conference?
-
-|Location
-|Optional
-|Where will this conference take place?
-
-|Home image
-|Optional
-|Preferrably a landscape image that does not have any text. The service crops
-the image. Maximum file size: 10MB. Allowed file extensions: jpeg jpg png
-
-|Banner image
-|Optional
-|Preferrably a landscape image that does not have any text. The service crops
-the image. Maximum file size: 10MB. Allowed file extensions: jpeg jpg png
-
-|Scopes enabled
-|Optional
-|Check if you want to have Scopes filtering in this conference
-
-|Scope
-|Optional
-|Which xref:admin:scopes.adoc[Scope] does this conference belongs to.
-
-|Show statistics
-|Optional
-|Check if you want to show the Statistics section.
-
-|Start date
-|Required
-|When will this conference start. Expected format: dd/mm/yyyy
-
-|End date
-|Required
-|When will this conference end. Expected format: dd/mm/yyyy
-
-|Registrations enabled
-|Optional
-|Check if you want to handle registrations on the platform.
-
-|Available slots
-|Optional
-|Leave it to 0 if you have unlimited slots available.
-
-|Registration terms
-|Required if "Registrations enabled" is checked
-|What are the terms of service or conditions that a participant must accept for registering in this conference?
-
-|Related participatory processes
-|Optional
-|Select the processes that are related to this conference. Use the *ctrl* function to select more than one option.
-
-|Related Assemblies
-|Optional
-|Select the assemblies that are related to this conference. Use the *ctrl* function to select more than one option.
-
-|Related Consultations
-|Optional
-|Select the consultations that are related to this conference. Use the *ctrl* function to select more than one option.
+|image:icons/action_moderate.png[Moderate conference icon]
+|Moderate
+|To access the conference moderation panel.
 |===
 
-== Creating the program
+== Ejemplos
 
-For creating the program of the conference you need to create a new xref:components/meetings.adoc[Meeting component] with the
-dates and times of the different talks, workshops, sessions, etc. After publishing the meetings, it will be visible in the landing page
-and there'll be a special navigation for these meetings so they're ordered by date and time.
+Below, you can find some links to examples of conferences:
 
-image:spaces/conferences/program_frontend.png[Conferences program (frontend)]
-
-image:spaces/conferences/program_backend.png[Conferences program (backend)]
-
-Also if you they are "In person" meetings with a location then you'll have a list of the venues.
-
-image:spaces/conferences/program_venues_frontend.png[Conferences venues (frontend)]
-
-== Menu
-
-image:spaces/conferences/manage_conferences.png[Conferences list at admin panel]
-
-After you’ve initially created your conference you have a submenu where you need
-to keep configuring more information about it.
-
-image:spaces/conferences/sidebar.png[Conferences sidebar]
-
-. Info: the same form that we explained in this page.
-. xref:admin:spaces/conferences/components.adoc[Components]
-. xref:admin:spaces/conferences/categories.adoc[Categories]
-. xref:admin:spaces/conferences/attachments.adoc[Attachments]
-. xref:admin:spaces/conferences/media_links.adoc[Media Links]
-. xref:admin:spaces/conferences/partners.adoc[Partners]
-. xref:admin:spaces/conferences/speakers.adoc[Speakers]
-. xref:admin:spaces/conferences/registrations.adoc[Registrations]
-.. xref:admin:spaces/conferences/registrations/types.adoc[Registration Types]
-.. xref:admin:spaces/conferences/registrations/users.adoc[User Registrations]
-.. xref:admin:spaces/conferences/registrations/invites.adoc[Invites]
-.. xref:admin:spaces/conferences/registrations/certificates.adoc[Certificate of Attendance]
-. xref:admin:spaces/conferences/admins.adoc[Conference admins]
-. xref:admin:spaces/conferences/moderations.adoc[Moderations]
+* https://meta.decidim.org/conferences/DecidimFest24[Decidim Fest 2024]
+* https://barcelonadema-participa.cat/conferences/jornada-resilient[Resilient metropolis initial day of the Strategic plan of the Barcelona metropolis]
