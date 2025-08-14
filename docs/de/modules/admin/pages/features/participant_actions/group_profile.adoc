@@ -1,0 +1,120 @@
+= Groups profiles
+
+== Understand the basics
+
+As a participant, you might want to create a user group for you association, your company, your club, etc.
+If an administrator verifies that you are entitled to represent this group, then you are able to participate in the instance in the
+name of the group.
+
+NOTE: The group creation option is only available when groups are enabled for the organization.
+You can ask an administrator of the platform or enable it from the xref:admin:settings/configuration.adoc[Configuration] panel.
+
+== Konfiguration
+
+=== Create a group
+
+To create a group, click the "Create group" button in your public profile.
+
+image::features/my_profile/profile_create_group.png[Public profile group creation form]
+
+.Group creation form
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Name of the organization, association, collective, group, etc.
+
+|Spitzname
+|Benötigt
+|Nickname of the organization, association, collective, group, etc. Verwenden Sie keine Leerzeichen oder Akzenten.
+
+|E-Mail
+|Benötigt
+|E-Mail Ihrer Organisation, Vereinigung, Kollektiv, Gruppe, etc.
+
+|Avatar
+|Optional
+|Avatar of your organization, that is displayed as a user avatar. Can be a logo, a picture, etc.
+
+|Über
+|Optional
+|More information about your organization. This is publicly displayed on the user group profile page.
+
+|Dokumentennummer
+|Optional
+|Fill this field if you want an administrator to verify the authenticity of your user group.
+
+|Telefon
+|Optional
+|Fill this field if you want an administrator to be able to call someone in your organization to
+verify the authenticity of the user group.
+|===
+
+The user group is visible on the platform as soon as you create it. After its creation, you are redirected to the
+user group profile page.
+
+User groups profiles pages display:
+
+* Members: Members of the groups, and who are the administrators.
+* Badges: User group badges.
+* Followers: Participants can also follow user groups.
+
+=== Manage a group
+
+Nach der Bildung einer Gruppe ist es möglich, Teilnehmer einzuladen, Mitglieder der Gruppe zu werden.
+Nachdem ein Teilnehmer akzeptiert hat, dieser Gruppe beizutreten, kann er Admin-Mitglied werden.
+
+The actions that can be done by a user group administrator are:
+
+* Gruppenprofil bearbeiten
+* Mitglieder verwalten
+* Administratoren verwalten
+* Invite participant
+* Gruppe verlassen
+
+image::features/my_profile/profile_manage_group.png[Public profile group drop down menu]
+
+==== Mitglieder verwalten
+
+On this page, you can accept or refuse participants requests to join your group, but also promote group members to administrators
+or remove them from the group.
+
+image::features/my_profile/user_group_manage_participant.png[User groups: manage participants]
+
+==== Manage administrators
+
+On this page, you can only remove group administrator rights, but it won't remove the participant from the group.
+
+image::features/my_profile/user_group_manage_admins.png[User groups: manage admins]
+
+==== Invite participants
+
+To invite a participant, they need to have an account on the platform.
+You can invite them with their nickname.
+
+image::features/my_profile/user_group_invite_participant.png[User groups: invite a participant]
+
+Then, they receive an invitation to join the group. They can accept it or not.
+
+==== Unterhaltungen
+
+Sie können auch Gespräche als Gruppe führen.
+
+image::features/my_profile/user_group_conversation.png[User group: conversations]
+
+=== Participate as a group
+
+NOTE: For user group administrators to be able to participate as a group, an administrator of the instance must have verified it.
+
+The interest of having an administrator verify the user group is that you can then participate to the platform as a group,
+and create debates, proposals, meetings, comments, etc.
+
+Administrators of the user group can for example comment in the name of their group.
+
+image::features/my_profile/user_group_make_comment.png[User group: make a comment]
+
+They can also choose to endorse a debate or a proposal in the name of their group and / or in their own name.
+
+image::features/my_profile/user_group_endorse.png[User group: endorse]
