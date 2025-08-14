@@ -1,0 +1,36 @@
+= Empreinte digitale
+
+== Understand the basics
+
+Bien que la plate-forme doive afficher la version xref:admin:features/transparence/versions. doc[Versions] pour presque tous les contenus, Il serait toujours possible
+pour un administrateur système de manipuler le contenu en éditant la base de données directement.
+
+Étant donné l'atténuation de ce risque, la plate-forme montre une empreinte digitale pour certains domaines importants, par exemple un organisme de proposition et un titre.
+
+Son but est de fournir un moyen de donner un « reçu » informel à un participant afin qu'il puisse détecter les altérations. Une empreinte digitale est
+une représentation hachée du contenu. Il est utile de s'assurer que le contenu n'a pas été altéré, car une seule modification
+donnerait une valeur totalement différente. Il est calculé à l'aide d'un algorithme de hachage *SHA256*. Afin de le répliquer
+vous-même, vous pouvez utiliser un http://www.md5calc.com/sha256[calculateur MD5 en ligne] et copier-coller les données source.
+
+== Configuration
+
+=== Vérifier l'empreinte digitale
+
+. Aller au contenu pour lequel vous souhaitez vérifier l'empreinte digitale
+. Cliquez sur le lien "Vérifier l'empreinte digitale" en bas de la page
+. Copier la valeur du champ source
+. Allez sur un http://www.md5calc.com/sha256[calculateur MD5 en ligne] et copier-coller les données sources
+. Vérifiez que les empreintes digitales sont identiques
+
+image:features/fingerprint/content.png[Vérifier le lien d'empreinte digitale en bas de page]
+
+image::features/fingerprint/modal.png[Check fingerprint modal]
+
+image:features/fingerprint/md5calc.png[capture d'écran MD5calc.com]
+
+Il est également possible de vérifier l'empreinte digitale avec d'autres outils, comme l'outil en ligne de commande sha256sum.
+
+[source,bash]
+----
+echo -n '{"body":{"en":"This proposal suggests creating a green corridor that connects the north and south districts of Chakar via a bicycle and pedestrian-only route. The corridor would pass through the city center and industrial areas, providing a safe, dedicated path for non-motorized transport, with shade trees, rest spots, and solar-powered lighting."},"title":{"en":"Green Corridor for Cyclists and Pedestrians"}}' | sha256sum
+----
