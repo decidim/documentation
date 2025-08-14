@@ -1,0 +1,35 @@
+= Committee members
+
+== Understand the basics
+
+NOTE: Promoter's committee explanation is available on xref:admin:spaces/initiatives/author_manage/committee.adoc[Promoter’s committee].
+
+Committee members might be necessary, depending on the rules set for the initiative types.
+Participants can manage them from their initiative edition form, but administrators can also access the list of
+committee members.
+
+== Configuración
+
+=== Manage committee members
+
+To access the committee members list, click in the secondary navigation panel on the "Committee members" item.
+
+image::spaces/initiatives/initiative_members_admin.png[Initiative committee members list in administration]
+
+There, the author can see and copy the initiative invitation link, and see the list of committee members.
+
+=== Acciones
+
+.Acciones
+[cols="10h,20h,~"]
+|===
+|Icono |Nombre |Definición
+
+|image:icons/action_delete.png[Delete icon]
+|Revoke
+|Allows to refuse or revoke the committee members right on this initiative.
+
+|image:icons/action_publish.png[Approve icon]
+|Approve
+|To approve the membership request.
+|===
