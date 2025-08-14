@@ -2,24 +2,24 @@
 
 == Understand the basics
 
-Initiatives are meant to be signed, wether with online or in-person signatures. The goal of an initiative author is to promote its initiative
-and gather support for it.
+Initiatives are meant to be signed, wether with online or in-person signatures. Le but de l'auteur d'une initiative est de promouvoir son initiative
+et de recueillir du soutien pour elle.
 
-== Signature process
+== Processus de signature
 
-Once the initiative is published by an administrator, it becomes visible in the initiatives listing page.
+Une fois que l'initiative est publiée par un administrateur, elle devient visible dans la page de liste des initiatives.
 
 image::spaces/initiatives/initiatives_index_front_with_initiatives.png[Initiatives index in front with initiatives]
 
-The initiative page displays a "Sign" button and a signature counter, with the signature goal to reach and the current signature number.
+La page d'initiative affiche un bouton « Signer » et un compteur de signature, avec l'objectif de signature à atteindre et le numéro de signature actuel.
 
 image::spaces/initiatives/initiative_show_published.png[Initiative show after it was published]
 
-Authorized participants only have to click the "Sign" button for their signature to be taken into account.
+Les participants autorisés n'ont qu'à cliquer sur le bouton « Signer » pour que leur signature soit prise en compte.
 
-NOTE: Depending on the authorizations you ask for signing, the process may be different and include additional steps.
+NOTE: Selon les autorisations que vous demandez la signature, le processus peut être différent et inclure des étapes supplémentaires.
 
-Once the participant clicked the button, the signature is incremented in the signature counter.
-If it's authorized for this initiative type, participants can also undo their signature by clicking the "Already signed" button.
+Une fois que le participant a cliqué sur le bouton, la signature est incrémentée dans le comptoir de signature.
+Si elle est autorisée pour ce type d'initiative, les participants peuvent également annuler leur signature en cliquant sur le bouton "Déjà signé".
 
 image::spaces/initiatives/initiative_show_signed.png[Initiative show after it was signed]
