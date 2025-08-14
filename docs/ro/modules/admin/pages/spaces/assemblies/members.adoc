@@ -1,0 +1,87 @@
+= Assembly members
+
+== Understand the basics
+
+Assembly members allow showing all the participants that belong to a given assembly, whether individuals or groups.
+This is a feature specific to the assemblies space, made for improving transparency of the organization assemblies.
+
+image::spaces/assemblies/assembly_members.png[Assembly members]
+
+== Manage assembly members
+
+To access the assembly members list, click in the secondary navigation panel on the "Members" item.
+
+image::spaces/assemblies/assembly_members_list.png[Assembly members administration list]
+
+== Actions
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Edit icon]
+|Edit
+|To edit this member fields.
+
+|image:icons/action_delete.png[Delete icon]
+|Delete
+|To delete this member.
+|===
+
+== Create an assembly member
+
+To create a new assembly member, click the "New assembly member" button in the top right of the page.
+
+image::spaces/assemblies/assembly_members_new_form.png[Assembly members new form]
+
+.New assembly member form
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Participant type
+|Required
+|Wether this assembly member already has an account on the instance or not.
+
+|Full name
+|Required.
+|Field displayed if "non participant" was selected.
+
+|Avatar
+|Optional.
+|Field displayed if "non participant" was selected.
+
+|User or group
+|Required if it's an existing participant.
+|Type at least three characters to search for the participant account.
+
+|Position
+|Required
+|Choose one of President, Vice president, Secretary, or Other. In case it's other, you can fill in the position title.
+
+|Order position
+|Optional
+|Which order the members has in relation to the other members. Having a lower number means a higher priority.
+For instance, if you have two members, "Member a" with weight "10" and "Member b" with weight "0" then "Member b" is first when ordering.
+
+|Designation date
+|Required
+|When this person or group was assigned as a member of this assembly. Expected format: dd/mm/yyyy.
+
+|Ceased date
+|Optional
+|When this person or group ceased to be a member of this assembly. Expected format: dd/mm/yyyy.
+
+|Gender
+|Optional
+|Which gender does this person most identify with.
+
+|Birthday
+|Optional
+|When was this person born. Expected format: dd/mm/yyyy.
+
+|Birthplace
+|Optional
+|Where was this person born.
+|===
