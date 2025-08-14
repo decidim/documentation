@@ -1,0 +1,64 @@
+= Partner
+
+== Understand the basics
+
+Die Partner sind die Sponsoren oder Unterstützer einer Konferenz.
+If you add partners in the administration, then they are listed on the Conference landing page.
+
+image:spaces/conferences/partners_frontend.png[Conferences partners frontend]
+
+== Konfiguration
+
+=== Manage partners
+
+To access the partners configuration, click in the secondary navigation panel on the "Partners" item.
+
+image::spaces/conferences/partners.png[Conferences partners]
+
+=== Aktionen
+
+.Aktionen
+[cols="10h,20h,~"]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Edit icon]
+|Bearbeiten
+|To edit this link.
+
+|image:icons/action_delete.png[Delete icon]
+|Löschen
+|To delete this link.
+|===
+
+=== Neuen Partner erstellen
+
+To create a new partner, click the "New partner" button in the top right of the page.
+
+image::spaces/conferences/new_partner.png[Conferences partners form]
+
+.Neues Partnerformular
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|The name of the partner.
+
+|Partnertyp
+|Benötigt
+|Choose one of these options: Main promoter or Collaborator.
+
+|Bestellposition
+|Optional
+|Which order it has in relation to the other partners. Eine niedrigere Zahl bedeutet eine höhere Priorität. For instance, if you have two partners, "Partner a" with weight "10" and "Partner b" with weight "0" then "Partner b" is first when ordering.
+
+|Link
+|Optional
+|Link to the partner website, bio, social media, etc.
+
+|Logo
+|Benötigt
+|Bildführung: Vorzugsweise ein Querformat ohne Text. Der Dienst erzeugt das Bild. Maximum file size: 5 MB
+|===
