@@ -1,0 +1,192 @@
+= Newsletter
+
+== Understand the basics
+
+Newsletters may be sent out to inform participants of the latest news on the platform: launch of a new consultation, warning
+before a closing date for votes, announcement of a result, monitoring of projects in progress, etc.
+The newsletter is sent to any user of the site who has ticked the "Receive an occasional newsletter with relevant information"
+box when they created their account, or later in their xref:admin:features/participant_actions/my_account.adoc[account] settings.
+
+image::features/newsletters/newsletter_contact_permission.png[Contact permission in participant registration]
+
+image::features/newsletters/newsletter_participant_notifications_settings.png[Contact permission in participant account]
+
+Einige Beispiele dafür, wann Sie einen Newsletter senden können und sollten:
+
+* Wenn ein neuer Prozess für alle Bürger in einer Stadt interessant sein könnte, dann ist
+zum Beispiel ein partizipatorischer Budgetprozess.
+* Wenn die Ergebnisse für einen bestimmten Prozess veröffentlicht werden.
+* When an assembly has a important topic to discuss.
+* Wenn eine neue Abstimmung geplant ist.
+* When there's a new conference published.
+* Etc.
+
+=== How to find it?
+
+To access the Newsletters panel, go to the administration panel and click the "Newsletters" item in the administration navigation bar.
+
+image::features/newsletters/newsletter_menu.png[Newsletter administrator menu]
+
+There, you see the list of newsletters already sent from this instance. If it's a new instance, you shouldn't see any newsletter in the
+list.
+
+image::features/newsletters/newsletter_list.png[Newsletter list]
+
+== Konfiguration
+
+=== Create a newsletter
+
+To start creating a newsletter, click the "New newsletter" button at the top right of the page.
+
+==== Select a template
+
+First, you are asked to select a newsletter template, depending on what you want to send.
+Two templates are displayed, with a preview for each one to help you decide on the best format for the content you want to communicate.
+
+* Basic (only text): recommended for short updates
+* Image, text and Call To Action button: recommended for more elaborated contents
+
+image::features/newsletters/newsletter_templates.png[Newsletter new templates selection]
+
+Click the "Use this template" button below the template you want to use.
+
+==== Write the newsletter
+
+Depending on which template you've chosen, you have to fill a form with different fields.
+
+NOTE: You can use "%\{name}" anywhere in the body or subject to be automatically replaced by the participant's name.
+
+image::features/newsletters/newsletter_new_basic.png[Newsletter new template basic form]
+
+.Neuer Newsletter "basic (only text)" Formular
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Betreff
+|Benötigt
+|Betreff der E-Mail.
+
+|Körper
+|Optional
+|Inhalt der E-Mail.
+|===
+
+image::features/newsletters/newsletter_new_cta.png[Newsletter new template Image, text and CTA form]
+
+.Neues Newsletter-Formular "Bild, Text und Aktions-Schaltfläche"
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Betreff
+|Benötigt
+|Betreff der E-Mail.
+
+|Einführung
+|Optional
+|Introduction of the email, displayed before the CTA button.
+
+|Text zum Aktion-Button aufrufen
+|Optional
+|The CTA button text.
+
+|URL des Aktions-Buttons aufrufen
+|Optional
+|Where the CTA link redirects.
+
+|Körper
+|Optional
+|Body of the email, displayed after the CTA button.
+
+|Hauptbild
+|Optional
+|Bildführung: Vorzugsweise ein Querformat ohne Text. Der Dienst erzeugt das Bild.
+Allowed file extensions: JPG JPEG PNG WEBP
+|===
+
+Once you have written the newsletter, click the "Save and preview" button.
+
+==== Vorschau des Newsletters
+
+The preview page allows you to review the look and content of the newsletter before sending it.
+Until you send the newsletter, you can edit it and review its preview anytime you want.
+
+image::features/newsletters/newsletter_preview_basic_example.png[Newsletter new template basic form preview]
+
+==== Send a test email
+
+If you want to review the newsletter directly in your mailbox, click the "Send me a test email" button at the top right of the page.
+You will receive the newsletter directly on the email address registered for your participant account.
+
+==== Empfänger auswählen
+
+If you want to only communicate about a given space or neighborhood, you can choose which participants you're sending the newsletter to.
+To do so, click the "Select recipients to deliver" button.
+
+NOTE: If you don't want to send your newsletter to a specific segment, select "Send to all users"
+
+There, you can choose between sending the newsletter to:
+
+* All confirmed users
+* All confirmed users that have participated in any of the selected participatory spaces on the list
+* All confirmed users that have followed any of the selected participatory spaces on the list
+* All the participants that have selected an scope in their "My interests" settings on their account.
+
+NOTE: Even if a participant has a confirmed account and is following a space, the system won't send them a newsletter email if they
+haven't accepted it in their xref:admin:features/participant_actions/my_account#_notifications_settings.adoc[notifications] settings.
+
+image::features/newsletters/newsletter_select_recipients.png[Newsletter select recipients]
+
+If you select the "Sent do participants" or "Send to followers" of a given space,
+then you can choose which spaces are relevant.
+
+image::features/newsletters/newsletter_select_recipients_spaces.png[Newsletter select recipients spaces]
+
+==== Den Newsletter liefern
+
+Finally if you click in the "Deliver newsletter" button, the newsletter is sent to all the selected recipients.
+Before sending it, a pop-up appears to make sure you reviewed everything and are ready to send it.
+
+image::features/newsletters/newsletter_deliver_modal.png[Newsletter deliver modal]
+
+NOTE: Once a newsletter is sent it can't be undone or edited. If you have multiple languages active,
+be careful with reviewing all the languages well before sending.
+
+=== Manage newsletters
+
+You can find all the newsletters on the newsletter page, with:
+
+* *Subject*: subject of the newsletter, redirects to the newsletter preview.
+* *Created at*: date of the newsletter creation.
+* *Sent at*: date of the newsletter sending.
+* *Sent to*: the segment the newsletter was sent to.
+* *Progress*: the number of participants to whom the newsletter was sent, upon the total number of recipients.
+
+=== Aktionen
+
+.Aktionen
+[cols="10h,20h,~"]
+|===
+|Icon |Name |Definition
+
+|Condition
+|image:icons/action_edit.png[Edit newsletter]
+|Bearbeiten
+
+|To edit the newsletter.
+|Newsletter not sent.
+|image:icons/action_share.png[Send test email]
+
+|Send a test email
+|To send a test email to the administrator email address.
+|Always.
+
+|image:icons/action_preview.png[Preview newsletter]
+|Vorschau
+|To preview the newsletter
+
+|Always.
+|image:icons/action_delete.png[Delete]
+|Löschen
+|===
