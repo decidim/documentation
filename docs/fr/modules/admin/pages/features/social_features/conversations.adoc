@@ -2,58 +2,58 @@
 
 == Understand the basics
 
-With conversations, participants can send private messages to another participant, a group of participants, or to user groups.
+Avec des conversations, les participants peuvent envoyer des messages privés à un autre participant, à un groupe de participants ou à des groupes d'utilisateurs.
 Only the participants who are in the conversation can see each the messages.
 
-NOTE: It's not possible to delete a conversation nor to edit a message in a conversation.
+NOTE: Il n'est pas possible de supprimer une conversation ni de modifier un message dans une conversation.
 
 == How to find it?
 
-As a signed in participant, you can access your conversations from two places:
+En tant que participant connecté, vous pouvez accéder à vos conversations à partir de deux endroits :
 
-. Click in your avatar in the header, and then click in the "Conversations" menu item
-. Click in the "Conversations" link in the footer, in the "My account" section
+. Cliquez dans votre avatar dans l'en-tête, puis cliquez dans le menu "Conversations"
+. Cliquez sur le lien "Conversations" dans le pied de page, dans la section "Mon compte"
 
 image::features/conversations/conversations_dropdown.png[Frontend user menu dropdown]
 
-If there are notifications, the participant sees a small badge next to their avatar, and in the dropdown menu.
+S'il y a des notifications, le participant voit un petit badge à côté de son avatar, et dans le menu déroulant.
 
-== Start a conversation
+== Démarrer une conversation
 
-A participant can start a conversation with any participant or group registered on the platform.
+Un participant peut commencer une conversation avec n'importe quel participant ou groupe inscrit sur la plateforme.
 
 image::features/conversations/conversations.png[Conversations list]
 
-There are two ways to start a conversation.
+Il y a deux façons de commencer une conversation.
 
-=== From a participant profile
+=== Depuis un profil de participant
 
-. Go to the profile of the participant with who you want to start a conversation
-. Click the "Message" button
-. Write your message
+. Accéder au profil du participant avec qui vous voulez démarrer une conversation
+. Cliquez sur le bouton "Message"
+. Écrivez votre message
 
-image:features/conversations/profile.png[Participant profile]
+image:features/conversations/profile.png[Profil des participants]
 
-image:features/conversations/start_a_conversation_form.png[Start a conversation form]
+image:features/conversations/start_a_conversation_form.png[Formulaire de conversation]
 
-=== From the conversation page
+=== Depuis la page de la conversation
 
 image::features/conversations/conversation.png[Example of a conversation]
 
-. Click in your avatar in the header
-. Click in "Conversations"
-. Click on the "New conversation" button
-. Search the participants or group that you want to start a conversation with
-. Write your message
+. Cliquez sur votre avatar dans l'en-tête
+. Cliquez dans "Conversations"
+. Cliquez sur le bouton "Nouvelle conversation"
+. Recherchez les participants ou le groupe avec lequel vous voulez commencer une conversation
+. Écrivez votre message
 
-NOTE: You can start a conversation with several participants, with a limit of 9 participants.
+NOTE: Vous pouvez commencer une conversation avec plusieurs participants, avec une limite de 9 participants.
 
 image::features/conversations/new_conversation_modal.png[New conversation modal]
 
-== Group conversations
+== Conversations de groupe
 
-Just like with participants, it is possible to have conversations with groups.
+Tout comme avec les participants, il est possible d'avoir des conversations avec des groupes.
 
-NOTE: To know more about user groups, read the xref:admin:features/participant_actions/group_profile.adoc[Group creation] article.
+NOTE: Pour en savoir plus sur les groupes d'utilisateurs, lisez l'article xref:admin:features/participant_actions/group_profile.adoc[Création de groupe].
 
 image::features/conversations/group_conversations.png[Group conversations list]
