@@ -10,7 +10,7 @@ image::components/meetings/agenda/agenda_frontend.png[Agenda in the frontend]
 
 == Formulaire de création d'ordre du jour
 
-To define an agenda for a meeting, click the image:icons/action_agenda.png[Agenda icon] Agenda icon.
+Pour définir un agenda pour une réunion, cliquez sur l'icone Agenda : icons/action_agenda.png[icône de l'Agenda].
 
 image:components/meetings/agenda/new_agenda_form.png[Formulaire de création d'ordre du jour dans le backoffice]
 
@@ -25,7 +25,7 @@ image:components/meetings/agenda/new_agenda_form.png[Formulaire de création d'o
 
 |Visible
 |Facultatif
-|Check if you want the agenda to be visible to participants.
+|Cochez cette case si vous voulez que l'ordre du jour soit visible pour les participants.
 
 |Points de l'ordre du jour
 |Obligatoire
@@ -46,16 +46,16 @@ Il est également possible de supprimer et de modifier les éléments de l'ordre
 
 |Durée
 |Obligatoire
-|How many minutes the agenda item last.
+|Combien de minutes durent le point de l'ordre du jour.
 
 |Description
 |Facultatif
-|Title for the agenda item.
+|Titre du point de l'ordre du jour.
 
 |Sous-points de l’ordre du jour
 |Facultatif
 |Liste des sous-points de l'ordre du jour.
 |===
 
-La seule limite des points et des sous-points de l'ordre du jour est qu'ils doivent avoir une durée inférieure à celle du parent. For instance,
-if there's an item that lasts 60 minutes, you can't create a sub-item that lasts 90 minutes.
+La seule limite des points et des sous-points de l'ordre du jour est qu'ils doivent avoir une durée inférieure à celle du parent. Par exemple,
+s'il y a un objet qui dure 60 minutes, vous ne pouvez pas créer de sous-objet qui dure 90 minutes.
