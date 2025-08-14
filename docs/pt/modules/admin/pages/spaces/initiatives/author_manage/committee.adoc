@@ -1,0 +1,35 @@
+= Comitê do promotor
+
+== Understand the basics
+
+A promoter's committee is a group of people carrying and promoting the initiative jointly. For example, it could be a collective initiative that needs to be
+carried out by several citizens to be accepted by the administration, etc.
+Promoter's committee rules are set by the administrators when managing the initiative types, so they can be optional for some initiatives, and mandatory for others,
+with the necessity of having three people carrying an initiative for example.
+
+For those initiatives that need a minimum number of members in the promoter's committee, the author needs to send them a link for them to be able to join the committee
+before it can be sent for technical validation.
+
+NOTE: Committee members can only be added before the initiative is sent to technical validation.
+
+== Configuração
+
+=== Inviting a committee member
+
+During the initiative creation process, or later on the initiative page and edit form, the author can copy an invitation link.
+They should send this link to the other initiative promoters.
+
+image::spaces/initiatives/promoter_link_show.png[Promoter's committee link in initiative show]
+
+image::spaces/initiatives/promoter_link_edit.png[Promoter's committee link in initiative edit form]
+
+When going on the link, the invited committee member can see the initiative title and content, and can request to become a member of the promoter committee.
+
+image::spaces/initiatives/promoter_link_page.png[Promoter's committee request page]
+
+The author of an initiative can manage the committee members requests in the edition page of the initiative.
+
+image::spaces/initiatives/promoter_members_edit.png[Promoter's committee management in initiative edit form]
+
+All the approved committee members are then able to access the initiative, edit it, manage its members, and send it to technical validation.
+The initiative can't be sent to technical validation until it meets the minimum number of committee members required.
