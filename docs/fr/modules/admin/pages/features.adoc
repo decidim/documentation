@@ -1,0 +1,14 @@
+= Fonctionnalités
+
+== Understand the basics
+
+Le Decidim est principalement organisé autour des composants xref:admin:spaces.adoc[Spaces] et xref:admin:components. doc[Components], mais offre aussi à
+beaucoup d'autres fonctionnalités, pour permettre aux administrateurs de maintenir l'engagement des participants, encourager la collaboration et la participation
+sur la plate-forme, etc.
+
+Pour la lisibilité de cette documentation, ils sont divisés en quatre sections différentes :
+
+. *xref:admin:features/search.adoc[moteur de recherche]*
+. *xref:admin:admin:features/social_features.adoc[Social features]*
+. *xref:admin:admin:features/transparency_features.adoc[Fonctionnalités de transparence]*
+. *xref:admin:admin:features/participants_actions.adoc[Compte des participants et actions]*
