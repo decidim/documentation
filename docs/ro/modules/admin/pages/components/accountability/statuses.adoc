@@ -1,0 +1,48 @@
+= Statuses
+
+== Understand the basics
+
+A status represents the current state of a result.
+For participants, statuses clearly indicate the state of each result, as status names are always shown with results.
+For administrators, statuses help to keep result's progress updated, since each status can have a default progress percentage.
+
+After configuring statuses, you can assign xref:admin:components/accountability/results.adoc[a status to a result].
+Once a result have its status updated, its progress is automatically set to the default progress defined in the status.
+
+Updating a result's status won't update the result history, but may xref:admin:features/participant_actions/notifications.adoc[send notifications].
+
+== Configuration
+
+To create Statuses, click the "Statuses" button on the top right of the results list.
+
+image::components/accountability/statuses_button.png[Statuses button]
+
+There, you can create and manage the different statuses for the results.
+
+image::components/accountability/statuses_list.png[Statuses list]
+
+Click on the "New status" button to start creating statuses.
+
+image:components/accountability/new_status.png[New status form]
+
+
+.New status form
+|===
+|Field |Type |Description
+
+|Key
+|Required
+|Used as the unique identifier for the xref:admin:components/accountability/import.adoc[CSV Import].
+
+|Name
+|Required
+|Name for this status.
+
+|Description
+|Optional
+|Description for this status.
+
+|Progress
+|Optional
+|Default progress for a result assigned to this state (percentage from 0 to 100).
+|===
