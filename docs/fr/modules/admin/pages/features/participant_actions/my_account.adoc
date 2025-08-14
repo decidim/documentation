@@ -2,29 +2,29 @@
 
 == Understand the basics
 
-This feature allows participants to manage their account information, notifications preferences, authorizations, see their groups, etc.
+Cette fonctionnalité permet aux participants de gérer leurs informations de compte, les préférences de notifications, les autorisations, voir leurs groupes, etc.
 This account page is only accessible to the participant, and some account information (such as the "About" field) are displayed in the
 participant xref:admin:features/participant_actions/my_public_profile.adoc[public profile].
 
 == How to find it?
 
-As a signed in participant, you can access your account configuration from two places:
+En tant que participant connecté, vous pouvez accéder à la configuration de votre compte à partir de deux endroits :
 
-. Click in your avatar in the header, and then click in the "My account" menu item
-. Click in the "Configuration" link in the footer, in the "My account" section
+. Cliquez sur votre avatar dans l'en-tête, puis cliquez dans le menu "Mon compte"
+. Cliquez sur le lien "Configuration" dans le pied de page, dans la section "Mon compte"
 
 image::features/my_account/account_dropdown.png[Frontend user menu dropdown]
 
 == Account settings
 
-There, you'll find different sections, allowing you to set different settings for your participant account.
+Vous y trouverez différentes sections, vous permettant de définir des paramètres différents pour votre compte participant.
 
-NOTE: You might not see the Authorizations and the Groups settings sections if you didn't enable them.
+NOTE: Vous pouvez ne pas voir les sections Autorisations et Paramètres Groupes si vous ne les avez pas activées.
 
 === Compte client
 
-In this section, participants can modify the information displayed in their xref:features/participant_actions/my_public_profile.adoc[public profile], modify their email address or
-the language they want to use by default.
+Dans cette section, les participants peuvent modifier les informations affichées dans leur profil xref:features/participant_actions/my_public_profile. doc[profil public], modifiez leur adresse e-mail ou
+la langue qu'ils veulent utiliser par défaut.
 
 image::features/my_account/account.png[My account form]
 
@@ -36,7 +36,7 @@ image::features/my_account/account.png[My account form]
 |Avatars
 |Facultatif
 |Avatar ou photo pour le participant. Orientation pour l'image: De préférence une image de paysage qui n'a pas de texte.
-Le service récolte l'image. Maximum file size: 5 MB
+Le service récolte l'image. Taille maximale du fichier : 5 Mo
 
 |Votre nom
 |Obligatoire
@@ -57,21 +57,21 @@ confirmed again.
 
 |À propos de
 |Facultatif
-|Information about the participant displayed in the participant's profile.
+|Informations sur le participant affichées dans le profil du participant.
 
 |Locale
 |Obligatoire
-|Language you want to use to browse and receive notifications in Decidim.
+|Langue que vous souhaitez utiliser pour naviguer et recevoir des notifications dans Decidim.
 |===
 
-Participants can also change their password on this page, by clicking the "Change password" link. They need to choose a new password and enter
-their current password to be able to change it.
+Les participants peuvent également modifier leur mot de passe sur cette page, en cliquant sur le lien "Changer le mot de passe". Ils doivent choisir un nouveau mot de passe et entrer
+leur mot de passe actuel pour pouvoir le changer.
 
 image::features/my_account/password_change.png[My account form - password change]
 
-=== Notifications settings
+=== Paramètres des notifications
 
-In this section participants can choose which kind of notifications they want to receive and how often they want to receive them.
+Dans cette section, les participants peuvent choisir le type de notifications qu'ils souhaitent recevoir et la fréquence à laquelle ils veulent les recevoir.
 
 image:features/my_account/notifications_settings.png[Paramètres des notifications]
 
@@ -80,22 +80,22 @@ Les options disponibles sont :
 * Je veux recevoir des notifications sur
 ** Ma propre activité, comme quand quelqu'un commente dans ma proposition ou me mentionne
 ** Tout ce que je suis
-* How often do you want to receive the notifications email?
-** None, Real time, Daily, or Weekly
+* À quelle fréquence voulez-vous recevoir les notifications par e-mail ?
+** Aucune, Temps Réel, Quotidien ou Hebdomadaire
 * Newsletters
 ** Je veux recevoir des newsletters
 * Recevoir des messages directs de n'importe qui
 ** Permettre à n'importe qui de m'envoyer un message direct, même si je ne les suit pas
 * Administrateurs
-** I want to receive an email every time something or someone is reported for moderation.
-** I want to receive email reminders of closed meetings unpublished reports
-* Push notifications
-** Get push notifications to find out what is going on when you are not on the platform. You can turn them off anytime.
+** Je veux recevoir un email chaque fois que quelqu'un ou qu'une ressource a été signalé à des fins de modérations.
+** Je veux recevoir des rappels par e-mail pour les comptes-rendus de réunions terminées que je n'ai pas encore publiés
+* Notifications push
+** Recevez des notifications push pour savoir ce qui se passe lorsque vous n'êtes pas sur la plateforme. Vous pouvez les désactiver à tout moment.
 
 === Autorisations
 
-In this section participants are able to review their Authorizations and see some metadata, like when it was granted
-or the status of the authorization.
+Dans cette section, les participants peuvent consulter leurs autorisations et voir quelques métadonnées, comme quand il a été accordé
+ou le statut de l'autorisation.
 
 It depends on how it's configured for the organization, as depending in the context (like normative or laws) it could work
 in different ways. Pour plus d'informations sur les autorisations, voir xref:admin:participants/authorizations.adoc[authorizations
@@ -111,26 +111,26 @@ Pour toute autorisation donnée, vous pouvez voir les informations suivantes :
 
 === Groupes
 
-In this section participants can see which groups they belong to.
+Dans cette section, les participants peuvent voir à quels groupes ils appartiennent.
 
-NOTE: Vous voulez créer un nouveau groupe ? Go to the xref:admin:features/participant_actions/group_profile.adoc[Group profile] page.
+NOTE: Vous voulez créer un nouveau groupe ? Allez à la page xref:admin:features/participant_actions/group_profile.adoc[Profil du groupe].
 
 image::features/my_account/groups.png[Groups]
 
-Read more about groups configuration in the xref:admin:participants/groups.adoc[Groups in the administrator manual].
+En savoir plus sur la configuration des groupes dans xref:admin:participants/groups.adoc[Groupes dans le manuel d'administrateur].
 
 === Mes intérêts
 
 Dans cette section, les participants peuvent choisir les intérêts sur lesquels ils doivent recevoir plus de renseignements.
 
-By default what they see here is a list of all the xref:admin:settings/scopes.adoc[Scopes] of the organization. Those selections
-can be used by administrators when segmenting for the xref:admin:features/social_features/newsletters.adoc[Newsletters].
+Par défaut, ce qu'ils voient ici est une liste de tous les xref:admin:settings/scopes.adoc[Scopes] de l'organisation. Ces sélections
+peuvent être utilisées par les administrateurs lors de la segmentation pour xref:admin:features/social_features/newsletters.adoc[Newsletters].
 
 image::features/my_account/my_interests.png[My interests]
 
 === Mes données
 
-In this section participants can request a file with all the data that they've provided in the platform.
+Dans cette section, les participants peuvent demander un fichier contenant toutes les données qu'ils ont fournies dans la plate-forme.
 
 image::features/my_account/my_data.png[My data]
 
@@ -154,20 +154,20 @@ Pour ouvrir le fichier zip, le logiciel que vous utilisez doit supporter le chif
 
 === Supprimer mon compte
 
-In this section participants are able to delete their own accounts. Once it's done, they are unable to access the system anymore.
-Cette action est irréversible. All the contributions on the platform become anonymous.
+Dans cette section, les participants peuvent supprimer leurs propres comptes. Une fois terminé, ils ne peuvent plus accéder au système.
+Cette action est irréversible. Toutes les contributions sur la plateforme deviennent anonymes.
 
 image:features/my_account/delete_my_account.png[Supprimer le formulaire de compte]
 
 Pour supprimer le compte :
 
-. Optionally, you can provide a reason for the deletion
+. Optionnellement, vous pouvez fournir une raison pour la suppression
 . Cliquez dans "Supprimer mon compte"
 . Cliquez sur "Oui, je veux supprimer mon compte"
 
 image:features/my_account/delete_my_account_confirm.png[Confirmer la suppression du compte]
 
-After the account has been deleted, the contributions (such as comments, proposals, etc) are still visible but all the authorship information is anonymised,
-and transferred to a "Deleted participant" author.
+Une fois que le compte a été supprimé, les contributions (telles que les commentaires, les propositions, etc.) etc) sont toujours visibles mais toutes les informations d'auteurs sont anonymisées,
+et transférées à un auteur "Participant supprimé".
 
 image:features/my_account/delete_my_account_deleted.png[Contribution des participants supprimés]
