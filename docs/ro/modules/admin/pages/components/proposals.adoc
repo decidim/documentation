@@ -1,0 +1,256 @@
+= Proposals
+
+== Understand the basics
+
+The Proposals component allows people to create, comment, like, and give their votes to proposals. It's one of the main components of
+Decidim, and has a large number of configuration settings.
+
+image::components/proposals/example01.png[Proposals example]
+
+In this documentation section, you can find how to configure and manage all of those settings:
+
+* xref:admin:components/proposals/proposals.adoc[Proposal management]
+* xref:admin:components/proposals/answers.adoc[Answers]
+* xref:admin:components/proposals/special_configurations.adoc[Specific proposals configurations]
+** xref:admin:components/proposals/special_configurations/amendments.adoc[Amendments]
+** xref:admin:components/proposals/special_configurations/collaborative_drafts.adoc[Collaborative drafts]
+** xref:admin:components/proposals/special_configurations/participatory_texts.adoc[Participatory texts]
+
+== Configuration
+
+To create a Proposals component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
+
+image::components/proposals/component_proposals.png[Add Proposals component button]
+
+Then:
+
+. Click on the "Components" item in the secondary menu
+. Click the "Add component" button
+. Select "Proposals"
+. Fill the component creation form
+
+You can still update this form and the configuration after creating the component, by clicking the
+image:icons/action_configure.png[Configure icon] Configure icon in the components list.
+
+The component creation form is divided into different sections detailed below.
+
+image::components/proposals/component_01.png[Add component form]
+
+.Add component: Proposals form
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Name
+|Required
+|The title of this component.
+
+|Order position
+|Optional
+|The order of the component in relation with the other components. Having a lower number means a higher priority.
+For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0"
+then "component b" is first when ordering.
+|===
+
+image::components/proposals/component_02.png[Add component form]
+
+.Add component: Proposals form - Global settings
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Scopes enabled
+|Optional
+|Check if you want to have Scopes filtering in this component.
+
+|Scopes enabled
+|Optional
+|Check if you want to have Scopes filtering available in this component.
+
+|Scope
+|Optional
+|Which xref:admin:settings/scopes.adoc[Scope] does this component belongs to.
+
+|Vote limit per participant
+|Optional
+|Must be a number. The maximum number of votes a participant can give to proposals.
+
+|Minimum votes per user
+|Optional
+|Must be a number. The minimum number of votes a participant needs to give to proposals so their votes are taken into account.
+
+|Proposal limit per participant
+|Optional
+|Must be a number. How many proposals a participant can create in this component.
+
+|Maximum proposal body length
+|Optional
+|Must be a number. How many characters a proposal body can have as maximum.
+
+|Proposal editing
+|Required
+|Choose if participants have a limited time to edit their proposals, or can edit them without limit.
+In case it's within a specific time frame, you must specify the time in the field below.
+Note that if an administrator xref:components/proposals/answers.adoc[answers a proposal] then it can't be edited anymore.
+
+|Proposals can be edited by authors before this many minutes passes
+|Required
+|Must be a number. How many minutes after the creation of a proposal it can be edited by its author.
+
+|Threshold per proposal
+|Optional
+|Must be a number. How many votes a proposal needs to have to be considered as accepted.
+
+|Can accumulate votes beyond threshold
+|Optional.
+|Whether the proposal can accumulate more votes than the threshold.
+
+|Proposal answering enabled
+|Optional
+|Whether administrators or valuators can answer proposals.
+
+|Default proposal sorting
+|Optional
+|The sorting order of the proposals in the proposals list. Automatic means that if the votes are enabled, the proposals are
+shown sorted by random, and if the votes are blocked, then they are sorted by the most voted.
+
+|Official proposals enabled
+|Optional
+|Whether administrators can create official proposals from the administration panel.
+
+|Comments enabled
+|Optional
+|Whether you want to enable participants to comment the proposals.
+
+|Comments max length
+|Optional
+|The characters limit that participants have when making comments. Leave 0 for default value.
+
+|Geocoding enabled
+|Optional
+|Whether participants can define a geocoding address for their proposals.
+You need to have xref:configure:geocoding[Geocoding] enabled.
+
+|Allow attachments
+|Optional
+|Check to allow participants to attach files to their proposals. By enabling this option, proposals are by default in grid mode,
+and the first image appears on the card.
+
+|Actions permissions can be set for each proposal
+|Optional
+|Whether you want to be able to set permissions for every proposals.
+
+|Collaborative drafts enabled
+|Optional
+|Check to enable xref:components/proposals/special_configurations/collaborative_drafts.adoc[collaborative drafts] in proposals.
+
+|Participatory texts enabled
+|Optional
+|Check to enable xref:components/proposals/special_configurations/participatory_texts.adoc[participatory texts] in proposals.
+
+|Amendments enabled
+|Optional
+|Check to enable xref:components/proposals/special_configurations/amendments.adoc[amendments] in proposals.
+If active, configure Amendment settings for each step.
+
+|Amendments Wizard help text
+|Optional.
+|The help text visible when creating new amendments.
+
+|Announcement
+|Optional
+|A general announcement visible on the proposals list page.
+
+|New proposal body template
+|Optional
+|A pre-defined text used when creating new proposals. Useful if you want to define a format that participants need to
+follow when creating new proposals.
+
+|New proposal help text
+|Optional
+|The help text visible when creating new proposals.
+
+|Proposal wizard "Create" step help text
+|Optional
+|The help text visible when creating new proposals in the "Create" step.
+
+|Proposal wizard "Publish" step help text
+|Optional
+|The help text visible when creating new proposals in the "Publish" step.
+|===
+
+---
+
+image::components/proposals/component_03.png[Add component form]
+
+.Add component: Proposals form - Step settings
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Endorsements enabled
+|Optional
+|To enable participants to show public support for these proposals, with a "Like" button.
+
+|Endorsements blocked
+|Optional
+|Check for participants to be able to see the existing endorsements but not make any new one.
+
+|Votes enabled
+|Optional
+|To enable participants to vote for proposals in this phase.
+
+|Votes blocked
+|Optional
+|Check for participants to be able to see the existing votes but not make any new one.
+
+|Votes hidden
+|Optional
+|If votes are enabled, checking this hides the number of votes to participants.
+
+|Comments blocked
+|Optional
+|Whether you want to enable comments for this phase.
+
+|Participants can create proposals
+|Optional
+|Whether you want to enable proposal creation by participants for this phase.
+
+|Proposal answering enabled
+|Optional
+|Whether you want to enable xref:components/proposals/answers.adoc[proposal answering] by administrators.
+
+|Publish proposal answers immediately
+|Optional
+|Whether you want that the answers of proposals are published directly when administrators are
+xref:components/proposals/answers.adoc[answering] them or you want to control when to publish the answers.
+
+|Enable costs on proposal answers
+|Optional
+|Whether you want to add economical costs to proposal answers. Useful for importing proposals to xref:components/budgets.adoc[budgets].
+
+|Default proposal sorting
+|Optional
+|The sorting order of the proposals in the proposals list for this phase. Automatic means that if the votes are enabled, the proposals
+are shown sorted by random, and if the votes are blocked, then they are sorted by the most voted.
+
+|Announcement
+|Optional
+|A general announcement visible on the proposals list page for this phase.
+
+|Hashtags added to all proposals
+|Optional
+|Automatically add hashtags to every proposal.
+
+|Hashtags suggested to participants for new proposals
+|Optional
+|Suggest hashtags to participants creating new proposals. Participants can select more than one hashtag.
+|===
+
+== Examples
+
+Some examples of where this component was used:
+
+* https://www.decidim.barcelona/assemblies/accionssostenibilitat/f/6259/proposals[Sustainable actions in Barcelona City 2024]
+* https://futureu.europa.eu/[Conference of the Future of Europe]
+* https://meta.decidim.org/processes/roadmap/f/122/[Propose new functionalities for Decidim software]
