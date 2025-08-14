@@ -1,0 +1,160 @@
+= Skelett
+
+== Understand the basics
+
+Die Skelett-Komponente erlaubt Menschen XXX
+
+Von diesem Ausgangspunkt aus könnte es andere Konfigurationen geben, wie:
+
+*
+
+How the component looks like in front office:
+
+image:components/skeleton/example01.png[]
+image:components/skeleton/example02.png[]
+image:components/skeleton/example03.png[]
+image:components/skeleton/example04.png[]
+
+== Konfiguration
+
+To create a Blog component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
+
+image::components/skeleton/component_skeleton.png[Add component button]
+
+Then:
+
+. Click on the "Components" item in the secondary menu
+. Click the "Add component" button
+. Select "Skeleton"
+. Fill the component creation form
+
+image:components/skeleton/component.png[Komponentenform] hinzufügen
+
+
+.Komponente hinzufügen: Skelett Formular
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Wie lautet der Titel dieser Komponente. Zum Beispiel "Skelette"
+
+|Bestellposition
+|Optional
+|Which order it has in relation to the other skeletons. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+|===
+
+
+.Komponente hinzufügen: Skelett-Formular - Globale Einstellungen
+|===
+|Feld |Typ |Beschreibung
+
+|Bereiche aktiviert
+|Optional
+|Aktivieren, wenn die Bereichsfilterung in dieser Komponente erfolgen soll.
+
+|Bereich
+|Optional
+|Which xref:admin:settings/scopes.adoc[Scope] does this component belongs to.
+
+|Globaler Umfang
+|Optional
+|
+
+|Kommentare aktiviert
+|Optional
+|Ob Sie Kommentare in den Meetings haben möchten.
+
+|Maximale Länge der Kommentare
+|Optional
+|What is the characters limit that participants have when making comments. Lassen Sie 0 für den Standardwert.
+
+|Aktionsberechtigungen können für jedes Skelett festgelegt werden
+|Optional
+|Ob Sie Berechtigungen für jedes Skelett festlegen möchten.
+
+|Mitteilung
+|Optional
+|Eine allgemeine Ankündigung, die auf der Landungsseite der Skelette zu sehen sein wird.
+|===
+
+
+.Komponente hinzufügen: Skelett-Formular - Schritt-Einstellungen
+|===
+|Feld |Typ |Beschreibung
+
+|Kommentare blockiert
+|Optional
+|Ob Sie Kommentare für diese Phase aktivieren möchten.
+
+|Mitteilung
+|Optional
+|Eine allgemeine Ankündigung, die auf der allgemeinen Landungsseite des Skeletts sichtbar sein wird.
+|===
+
+== Skelette verwalten
+
+image:components/skeleton/manage_skeletons.png[Skeletttabelle verwalten]
+
+=== Alle exportieren
+
+Ermöglicht das Exportieren der Skelette in verschiedenen Formaten.
+
+* Skelette als CSV
+* Skelette als JSON
+* Skelette als Excel
+* Kommentare als CSV
+* Kommentare als JSON
+* Kommentare als Excel
+
+== Neues Skelett Formular
+
+image:components/skeleton/new_skeleton.png[Neue skelett-Form]
+
+
+.Neues Skelett Formular
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Wie lautet der Titel dieses Skeletts. Zum Beispiel "Bezirk A"
+
+|Bestellposition
+|Optional
+|Welche Reihenfolge wird es in Bezug auf die anderen Skelette haben. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+
+|Beschreibung
+|Optional
+|Was ist die Beschreibung dieses Skeletts.
+|===
+
+=== Aktionen
+
+
+.Aktionen
+|===
+|Icon |Name |Definition
+
+|image:icons/action_preview.png[Preview icon]
+|Vorschau
+|Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
+
+|image:icons/action_list.png[Manage projects icon]
+|xref:_manage_projects[Projekte verwalten]
+|Ermöglicht Ihnen die Verwaltung der Projekte eines Skeletts.
+
+|image:icons/action_edit.png[Edit icon]
+|Bearbeiten
+|Formular für ein Skelett bearbeiten.
+
+|image:icons/action_delete.png[Delete icon]
+|Löschen
+|Diesen Skelett löschen. Nur möglich, wenn es keine Projekte gibt.
+|===
+
+== Beispiele
+
+Einige Beispiele, wo diese Komponente verwendet wurde:
+
+*
