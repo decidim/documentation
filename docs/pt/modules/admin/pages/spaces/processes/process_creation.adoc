@@ -1,0 +1,230 @@
+= Participatory process creation
+
+== Understand the basics
+
+Participatory processes allows administrators to configure components in articulation with different participatory phases.
+To start creating a process, when on the process list, click the "New process" button at the top right of the page.
+
+The process creation form is divided into different sections that are detailed in the sections below.
+
+Once you created a process, in the secondary navigation panel, you can see all the process configuration available:
+
+* xref:admin:spaces/processes/process_creation.adoc[About this process]: here you can access and edit all the fields from the creation form.
+* xref:admin:spaces/processes/landing_page.adoc[Landing page]
+* xref:admin:spaces/processes/phases.adoc[Phases]
+* xref:admin:spaces/processes/components.adoc[Components]
+* xref:admin:spaces/processes/categories.adoc[Categories]
+* xref:admin:spaces/processes/attachments.adoc[Attachments]
+* xref:admin:spaces/processes/admins.adoc[Process admins]
+* xref:admin:spaces/processes/private_participants.adoc[Participantes privados]
+* xref:admin:spaces/processes/moderations.adoc[Moderations]
+
+== General information
+
+This section allows to provide a general description about the process, mainly a title, URL, and description.
+
+image::spaces/processes/processes_new_form_general_info.png[New participatory process form general info section]
+
+.Novo formulário de processo participativo: informações gerais
+[cols="20h,10h,~,~"]
+|===
+|Campo |tipo |Descrição: |Visibility
+
+|Título
+|Obrigatório
+|Título do processo participativo. For instance, "Participatory Budgeting 2020"
+|Visible in the card of the process on the homepage, the processes index, the navigation, and the "Hero image and CTA" landing page block.
+
+|Legenda
+|Obrigatório
+|Subtítulo. Por exemplo, "Vamos decidir juntos nossas prioridades"
+|Visible in the "Hero image and CTA" landing page block.
+
+|Posição do pedido
+|Obrigatório
+|Determines the order of the process when displayed in the processes index or homepage.
+|N/A
+
+|Slug de URL
+|Obrigatório
+|Os slugs de URL são usados para gerar os URLs que apontam para este processo. Only accepts letters, numbers and dashes, and must
+start with a letter.
+|Visible in the URL of the participatory process, for example https://example.org/processes/participatory-budget-2020.
+
+|Palavras-chave
+|Opcional
+|Hashtag redirecting to the X social network.
+|Visible in the "Hero image and CTA" landing page block.
+
+|Breve descrição
+|Obrigatório
+|A short explanation of what's the participatory process about.
+|Visible in the "Main data" landing page block.
+
+|Descrição:
+|Obrigatório
+|A detailed explanation of what's the participatory process about.
+|Visible in the "Main data" landing page block.
+
+|Anúncio
+|Opcional
+|The text you enter here is shown to the user right below the process information.
+|Visible in the "Announcement" landing page block.
+|===
+
+== Duração
+
+This section allows to provide information about the process start and end dates.
+It can be enabled on the landing page with the "Phase & duration" landing page block.
+
+image::spaces/processes/processes_new_form_duration.png[New participatory process form duration section]
+
+.Novo formulário de processo participativo: duração
+[cols="20h,10h,~"]
+|===
+|Campo |tipo |Descrição:
+
+|Data de início
+|Opcional
+|Quando este processo começa. Você tem um widget de calendário para escolher o dia. Formato esperado: dd/mm/aaaa
+
+|Data de término
+|Opcional
+|Quando este processo começa. Você tem um widget de calendário para escolher o dia. Formato esperado: dd/mm/aaaa
+|===
+
+== Images
+
+image::spaces/processes/processes_new_form_images.png[New participatory process form images section]
+
+.Novo formulário de processo participativo: imagens
+[cols="20h,10h,~"]
+|===
+|Campo |tipo |Descrição:
+
+|Imagem inicial
+|Opcional
+|Image used in presentation cards of this process. Guia para o arquivo: Tem que ser uma imagem ou um documento.
+Para imagens, use de preferência imagens de paisagem, o serviço cultiva a imagem. Maximum file size: 10 MB
+|===
+
+== Metadados
+
+This section allows to provide meta information about the process.
+It can be enabled on the landing page with the "Metadata" landing page block.
+
+image::spaces/processes/processes_new_form_metadata.png[New participatory process form metadata section]
+
+.Novo formulário de processo participativo: Metadados
+[cols="20h,10h,~"]
+|===
+|Campo |tipo |Descrição:
+
+|Grupo promotor
+|Opcional
+|If a specific group is at the origin of the process, like a city direction, an association committee, etc.
+
+|Área da organização
+|Opcional
+|The organization domain or category, if it's relevant.
+
+|Metadados do escopo
+|Opcional
+|Metadata on the process scope, if it's relevant.
+
+|Quem participa
+|Opcional
+|Who are the authorized participants, who can participate to the process.
+
+|O que é decidido
+|Opcional
+|The issue of the process, the object of what is decided.
+
+|Como é decidido
+|Opcional
+|The decision making process.
+|===
+
+== Filters
+
+This section determines the filters available in the process, in the different components.
+Filters can then be enabled and configured in each components.
+
+image::spaces/processes/processes_new_form_filters.png[New participatory process form filters section]
+
+.Novo formulário de processo participativo: filtros
+[cols="20h,10h,~"]
+|===
+|Campo |tipo |Descrição:
+
+|Âmbitos ativados
+|Opcional
+|Verifique se você quer ter filtros de escopos neste processo.
+
+|Escopo
+|Opcional
+|Which xref:admin:settings/scopes.adoc[Scope] does this process belongs to.
+
+|Profundidade de filtro de âmbito
+|Opcional
+|Restrict the scope filter depth. This is relevant if you have complex relations in Scopes children (like a Russian Doll).
+For instance if you have Grandmother -> Mother -> Child nested scopes, this setting allows you to choose the Mother scope,
+so the participants can only filter between the Child sub-scopes. This would be the case for instance if you have
+Provinces -> Cities -> Districts, and the process is about a particular City.
+
+|área
+|Opcional
+|Which xref:admin:settings/areas.adoc[Area] does this process belongs to.
+|===
+
+== Visibility
+
+This section allows administrators to configure the process placement in the different pages and its publicity or no.
+
+image::spaces/processes/processes_new_form_visibility.png[New participatory process form visibility section]
+
+.Novo formulário de processo participativo: visibilidade
+[cols="20h,10h,~"]
+|===
+|Campo |tipo |Descrição:
+
+|Grupo de processos
+|Opcional
+|Enables to group multiple processes together. Check xref:admin:spaces/processes/groups.adoc[Process Groups] to know more.
+
+|Espaço privado
+|Opcional
+|Check this if the process should only be accessible by xref:admin:spaces/processes/private_participants.adoc[Private Participants].
+
+|Promovido
+|Opcional
+|Check if you want the process to have more visibility in the Process public list and the "Highlighted processes" content block
+in the xref:admin:settings/homepage.adoc[Homepage] configuration.
+|===
+
+== Processos relacionados
+
+This section allows to create relations between processes. It's different from processes groups.
+It can be enabled on the landing page with the "Related processes" landing page block.
+
+image::spaces/processes/processes_new_form_related_processes.png[New participatory process form Related processes section]
+
+.New participatory process form: Related processes
+[cols="20h,10h,~"]
+|===
+|Campo |tipo |Descrição:
+
+|Processos relacionados
+|Opcional
+|Selecione outros processos participativos que estão relacionados a este.
+|===
+
+== Other
+
+This section is empty, unless an administrator already created xref:admin:spaces/processes/types.adoc[Process Types].
+If so, you should be able to select a process type to categorize the process.
+Participants are then able to filter processes in the processes index with those types.
+
+image::spaces/processes/process_types_edit_process.png[Choose a process type when editing a process]
+
+image::spaces/processes/process_types_filter.png[Process types filter in the processes index]
