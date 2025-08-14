@@ -1,0 +1,106 @@
+:name:
+:organization:
+
+= Configuration
+
+Dans cette page, vous pouvez configurer les paramètres généraux de Decidim, comme le nom de l'instance, la notification de bienvenue, les fonctionnalités
+générales, les langues disponibles, etc.
+
+== Configurations disponibles
+
+image::settings/admin_configuration.png[Decidim Admin Configuration]
+
+[cols="20h,10h,~,~"]
+|===
+|Champ |Type |Description |Visibilité
+
+|Nom
+|Obligatoire
+|Le nom de la plate-forme.
+|Visible dans le titre de la plate-forme, les e-mails, les notifications, etc.
+
+|Réseaux sociaux
+|Obligatoire
+|Gestionnaires sociaux pour différents réseaux sociaux. Dans le champ, ajoutez seulement le slug nécessaire au lieu de l'URL entière.
+|Visible dans le pied de page, dans chaque page.
+
+|Langue par défaut
+|Obligatoire
+|Langue par défaut pour la plateforme. Si vous voulez activer plus de langues, demandez à votre administrateur technique.
+|Si plusieurs langues, les participants peuvent choisir leur langue préférée dans les paramètres de leur compte.
+
+|Fuseau horaire
+|Obligatoire
+|Dans quel fuseau horaire est votre organisation.
+|Utilisé en plusieurs endroits, comme le calendrier des réunions.
+
+|Préfixe de référence
+|Obligatoire
+|Préfixe de référence utilisé pour identifier publiquement toutes les ressources de l'instance.
+|Visible dans chaque page de ressource, comme une assemblée, une réunion, une proposition, etc.
+
+|Activer les badges
+|Case à cocher
+|Que vous vouliez ou non que vos participants aient des badges comme mécanisme de gamification lors de leur participation.
+|Si activé, les badges sont visibles dans les profils des participants et la participation déclenche la réalisation du niveau des badges.
+
+|Activer les groupes d'utilisateurs
+|Case à cocher
+|Que vous vouliez ou non que vos participants aient la possibilité de créer xref:participants/groups.adoc[groupes d'utilisateurs].
+|Si activé, les groupes sont visibles dans les profils et comptes des participants et ils peuvent créer des groupes d'utilisateurs.
+
+|Activer les filtres d'espace participatif
+|Case à cocher
+|Si vous voulez ou non afficher les filtres dans les pages d'index des espaces participatifs.
+|Si activé, les participants peuvent filtrer les espaces, comme les assemblées, par différents filtres sur l'index de l'espace.
+
+|Longueur maximale des commentaires
+|Obligatoire
+|Si vous voulez ou non limiter le nombre de caractères dans les commentaires. Laisser 0 pour la valeur par défaut (1000).
+|Limite visible si vous activez les commentaires dans un composant participatif.
+
+|Activer l'éditeur de texte avancé pour les participants
+|Case à cocher
+|Si vous voulez ou non permettre aux participants d'avoir un https://fr.wikipedia.org/wiki/WYSIWYG[éditeur WYSIWYG].
+|Dans certaines zones de texte, comme la création de propositions, les participants peuvent insérer des balises HTML en utilisant l'éditeur de texte riche.
+
+|Envoyer un mail de bienvenue
+|Case à cocher
+|Si vous voulez ou non que les participants reçoivent une notification lorsqu'ils créent leur compte pour la première fois.
+|Si vous activez simplement ceci, les participants reçoivent la notification par défaut.
+
+|Personnaliser le mail de bienvenue
+|Case à cocher
+|Vous permet de personnaliser la notification envoyée aux participants lorsqu'ils créent un compte.
+|Si activé, vous pouvez personnaliser la notification de bienvenue dans les champs ci-dessous.
+
+|Objet du mail de bienvenue
+|Obligatoire
+|Vous permet de personnaliser le sujet de la notification de bienvenue. Vous pouvez ajouter des variables, comme {{name}} ou {{organization}}.
+|Champ visible si vous activez la case à cocher "Personnaliser la notification de bienvenue".
+
+|Corps du mail de bienvenue
+|Obligatoire
+|Vous permet de personnaliser le corps de notification de bienvenue. Vous pouvez ajouter des variables, comme {{name}} ou {{organization}}.
+|Champ visible si vous activez la case à cocher "Personnaliser la notification de bienvenue".
+
+|Corps des conditions de service de l'administrateur
+|Obligatoire
+|Quel message un administrateur voit quand il accède pour la première fois au panneau d'administration.
+|Message affiché lorsqu'un administrateur accède pour la première fois au panneau d'administration.
+|===
+
+== Exemples
+
+=== Réseaux sociaux
+
+Si vous entrez une valeur pour chaque réseau social, leurs icônes sont affichées dans le pied de page avec un lien vers votre page de compte.
+Vérifiez que tous les liens fonctionnent correctement.
+
+image::settings/settings_configuration_social.png[Social networks configuration in Decidim]
+
+=== Notification de bienvenue
+
+Les participants reçoivent une notification de bienvenue lorsqu'ils finalisent la création de leur compte, sur leur panneau de notification et par courriel.
+
+image::settings/settings_configuration_welcome.png[Welcome notification configuration in Decidim]
