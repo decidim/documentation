@@ -2,33 +2,33 @@
 
 == Understand the basics
 
-NOTE: This article is dedicated to registrations "On this platform" when creating or editing a meeting.
+NOTE: Cet article est dédié aux inscriptions "Sur cette plateforme" lors de la création ou de l'édition d'une réunion.
 
-Grâce aux inscriptions, vous pouvez avoir le contrôle de la capacité de participation à une réunion. With this feature for instance you can
-limit how many people could attend the meeting, or you can know before the start of a meeting if you need to find a bigger
-room to hold the meeting.
+Grâce aux inscriptions, vous pouvez avoir le contrôle de la capacité de participation à une réunion. Avec cette fonctionnalité par exemple, vous pouvez
+limiter le nombre de personnes pouvant assister à la réunion, ou vous pouvez savoir avant le début d'une réunion si vous avez besoin de trouver une plus grande salle
+pour tenir la réunion.
 
-Enabling this feature adds a "Register" button so that participants can express their wish to go to the meeting.
+L'activation de cette fonctionnalité ajoute un bouton « S'inscrire » afin que les participants puissent exprimer leur souhait d'aller à la réunion.
 
 image::components/meetings/registrations/frontend_join_meeting.png[Join a meeting button on meeting page]
 
 Depending in how this feature is configured, then administrators can:
 
-. define how many slots are available for controlling the maximum capacity for this meeting
-. create a xref:_registration_form[custom registration form] to ask information to participants
-. send xref:_invitations[invitations] to other participants or people not registered in the platform
-. control attendance to the meeting through xref:_registration_code[registration codes]
+. définir le nombre de créneaux disponibles pour contrôler la capacité maximale de cette réunion
+. créer un xref:_registration_form[formulaire d'inscription personnalisé] pour demander des informations aux participants
+. envoyer xref:_invitations[invitations] à d'autres participants ou personnes non enregistrées sur la plateforme
+. contrôler la présence à la réunion via xref:_registration_code[codes d'inscription]
 
 == Register to a meeting
 
-When a participant clicks on the "Register" button, they get asked
+Lorsqu'un participant clique sur le bouton "S'inscrire", on lui demande
 
-* if they're representing a xref:admin:participants/groups.adoc[group].
-* if they want to show publicly that they're attending to the meeting.
+* si elles représentent un xref:admin:participants/groups.adoc[group].
+* s'ils veulent montrer publiquement qu'ils sont présents à la réunion.
 
 image::components/meetings/registrations/frontend_confirm.png[Join a meeting confirm modal]
 
-== Manage registrations
+== Gérer les inscriptions
 
 Once you chose to deal with registrations "On this platform" when creating a meeting, you can manage registrations by clicking the
 image:icons/action_registrations.png[Registrations icon] Registrations icon.
@@ -40,17 +40,17 @@ image:components/meetings/registrations/backend.png[Paramètres des inscriptions
 |===
 |Champ |Type |Description
 
-|Validate registration code
+|Valider le code d'inscription
 |Facultatif
-|To verify participants xref:_registration_code[registration codes], if enabled for this meeting.
+|Pour vérifier les participants xref:_registration_code[codes d'inscription], si activé pour cette réunion.
 
 |Enregistrements activés
 |Obligatoire
-|Check to enable registrations for this meeting.
+|Cochez cette case pour activer les inscriptions pour cette réunion.
 
 |Formulaire d'inscription activé
 |Facultatif
-|Check if you want to enable a registration form for this meeting, to ask information about attendees.
+|Cochez cette case si vous souhaitez activer un formulaire d'inscription pour cette réunion, pour demander des informations sur les participants.
 
 |Emplacements disponibles pour cette réunion
 |Obligatoire
@@ -58,16 +58,16 @@ image:components/meetings/registrations/backend.png[Paramètres des inscriptions
 
 |Emplacements réservés
 |Obligatoire
-|How many slots are already reserved on the available slots. Leave it to 0 if you don't have reserved slots.
+|Combien de places sont déjà réservées sur les emplacements disponibles. Laissez à 0 si vous n'avez pas de places réservées.
 
 |Personnaliser l'e-mail d'inscription
 |Facultatif
-|Whether you want to add a message in the registration email.
+|Si vous voulez ajouter un message dans l'e-mail d'inscription.
 
 |Contenu personnalisé de l'e-mail d'inscription
 |Facultatif
-|Le contenu de l'e-mail personnalisé. This text appears in the middle of the registration confirmation email, just
-after the registration code if it's enabled.
+|Le contenu de l'e-mail personnalisé. Ce texte apparaît au milieu de l'e-mail de confirmation d'inscription, juste
+après le code d'enregistrement s'il est activé.
 
 |Conditions d'inscription
 |Obligatoire
@@ -79,39 +79,39 @@ after the registration code if it's enabled.
 Cette fonctionnalité vous permet de définir un formulaire personnalisé comme le composant xref:admin:components/surveys.adoc[Surveys] pour demander aux participants
 des informations d'inscription.
 
-To create a registration form, check the "Registration form enabled" on the registrations page, and click the "Save" button.
-Then, you can click the "Registration form" button in the top right of the page.
+Pour créer un formulaire d'inscription, cochez le formulaire "Formulaire d'inscription activé" sur la page des inscriptions, puis cliquez sur le bouton "Enregistrer".
+Ensuite, vous pouvez cliquer sur le bouton "Formulaire d'inscription" en haut à droite de la page.
 
 == Exporter tout
 
-You can export registrations in multiple formats: CSV, JSON and XLSX (Excel).
+Vous pouvez exporter les enregistrements dans plusieurs formats : CSV, JSON et XLSX (Excel).
 
-The exported data contains these fields:
+Les données exportées contiennent ces champs :
 
 * id : l'identifiant d'enregistrement
 * code: le xref:_registration_code[code d'inscription] (si cette fonctionnalité est activée)
 * utilisateur/nom : le nom de l'utilisateur
 * utilisateur/email: l'email de l'utilisateur
-* user/user_group: the group of the user if they have selected that they represent a group when registering
+* user/user_group: le groupe de l'utilisateur s'il a sélectionné qu'il représente un groupe lors de l'inscription
 
 == Invitations
 
-This feature allows you to invite attendees to a meeting. They can be active participants or non-existing participants
-in the platform.
+Cette fonctionnalité vous permet d'inviter des participants à une réunion. Ils peuvent être des participants actifs ou des participants
+non existants sur la plateforme.
 
 image::components/meetings/registrations/invite_attendee.png[Invite attendee for registration in a meeting]
 
 == Code d'enregistrement
 
-This feature allows you to check if an attendee is well registered in the meeting.
+Cette fonction vous permet de vérifier si un participant est bien inscrit à la réunion.
 
-After registering, the participant is given a registration code in the confirmation email and on the meeting page.
+Après l’inscription, le participant reçoit un code d’inscription dans l’e-mail de confirmation et sur la page de la réunion.
 
-image:components/meetings/registrations/frontend_w_code.png[Registration code in a meeting frontend]
+image:components/meetings/registrations/frontend_w_code.png[Code d'enregistrement dans une interface de réunion]
 
-The validation of the code is pending. It means that when attending the meeting, the attendee has to give the code to an organizer
-to validate it.
-The organizer then enters the code in the "Validate registration code" field, to confirm that it exists in the database.
+La validation du code est en attente. Cela signifie que lorsque vous assistez à la réunion, le participant doit donner le code à un organisateur
+pour le valider.
+L'organisateur saisit ensuite le code dans le champ "Valider le code d'inscription", pour confirmer qu'il existe dans la base de données.
 
 image:components/meetings/registrations/backend_w_registration_code.png[Formulaire de code d'inscription dans une réunion]
 
