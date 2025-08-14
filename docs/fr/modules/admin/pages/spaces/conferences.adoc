@@ -2,18 +2,18 @@
 
 == Understand the basics
 
-A conference is a collection of meetings arranged in a program, with a number of people invited as speakers, and other
-information fields typical of large congresses or social events (registration, list of organizations that support or sponsor the
-event, etc.) Une conférence peut être un événement pertinent pour une organisation et ses membres, ou se dérouler dans le cadre d'un processus participatif
+Une conférence est une collection de réunions organisées dans un programme, avec un certain nombre de personnes invitées en tant qu'orateurs, et les autres champs d'information
+typiques des grands congrès ou événements sociaux (inscription, liste des organisations qui soutiennent ou parrainent l'événement
+, etc.) Une conférence peut être un événement pertinent pour une organisation et ses membres, ou se dérouler dans le cadre d'un processus participatif
 ou suivre une consultation.
 
-In conferences, meetings components are displayed in a program form, with days and hours being listed like in an event program.
+Lors des conférences, les composantes des réunions sont affichées sous forme de programme, les jours et les heures étant énumérés comme dans un programme d'événement.
 
-NOTE: You want to create a conference? Check the xref:admin:spaces/conferences/conference_creation.adoc[conference creation] article.
+NOTE: Vous voulez créer une conférence ? Vérifiez l'article xref:admin:spaces/conferences/conference_creation.adoc[conference creation].
 
-In this documentation section, you can find how to configure and manage all of those items:
+Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments:
 
-* xref:admin:spaces/conferences/conference_creation.adoc[Conference creation]
+* xref:admin:admin:espaces/conférences/conference_creation.adoc[Création de la conférence]
 * xref:admin:spaces/conferences/components.adoc[Components]
 * xref:admin:spaces/conferences/categories.adoc[Categories]
 * xref:admin:spaces/conferences/attachments.adoc[Attachments]
@@ -30,25 +30,25 @@ In this documentation section, you can find how to configure and manage all of t
 
 == How to find it?
 
-To access the Conferences panel, go in the administration panel and click the "Conferences" item in the administration
-navigation bar.
+Pour accéder au panneau Conférences, allez dans le panneau d'administration et cliquez sur l'élément "Conférences" dans la barre de navigation d'administration
+.
 
 image::spaces/conferences/menu.png[Conferences menu]
 
-There, you are able to manage all existing conferences.
+Là, vous pouvez gérer toutes les conférences existantes.
 
-== Manage conferences
+== Gérer les conférences
 
 image::spaces/conferences/manage_conferences.png[Conferences list in administration panel]
 
-You can find all the conferences on the list in the administration panel, with:
+Vous pouvez trouver toutes les conférences dans la liste dans le panneau d'administration, avec:
 
-* *Title*: title of the conference.
-* *Created at*: date of creation of the conference.
-* *Published*: if the conference is published or no.
+* *Titre* : titre de la conférence.
+* *Créé à* : date de création de la conférence.
+* *Publié* : si la conférence est publiée ou non.
 
-You can filter and sort this list by clicking the "Filter" button and the columns headers.
-You can also search for conferences by their title in the search bar.
+Vous pouvez filtrer et trier cette liste en cliquant sur le bouton "Filtre" et sur les en-têtes des colonnes.
+Vous pouvez également rechercher des conférences par titre dans la barre de recherche.
 
 == Actions
 
@@ -57,21 +57,21 @@ You can also search for conferences by their title in the search bar.
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_edit.png[Configure conference icon]
+|image:icons/action_edit.png[Configurer l'icône de la conférence]
 |Configurer
-|To edit the configuration and components for a conference.
+|Éditer la configuration et les composants d'une conférence.
 
-|image:icons/action_duplicate.png[Duplicate conference icon]
+|image:icons/action_duplicate.png[Dupliquer l'icône de la conférence]
 |Duplicate
-|To duplicate this conference.
+|Dupliquer cette conférence.
 
-|image:icons/action_preview.png[Preview conference icon]
+|image:icons/action_preview.png[Aperçu icône de la conférence]
 |Aperçu
-|Preview of how the conference looks in the user interface.
+|Aperçu de l'apparence de la conférence dans l'interface utilisateur.
 
-|image:icons/action_moderate.png[Moderate conference icon]
-|Moderate
-|To access the conference moderation panel.
+|image:icons/action_moderate.png[Icône de conférence modérée]
+|Modérer
+|Pour accéder au panneau de modération de la conférence.
 |===
 
 == Exemples
@@ -79,4 +79,4 @@ You can also search for conferences by their title in the search bar.
 Below, you can find some links to examples conferences:
 
 * https://meta.decidim.org/conferences/DecidimFest24[Decidim Fest 2024]
-* https://barcelonadema-participa.cat/conferences/jornada-resilient[Resilient metropolis initial day of the Strategic plan of the Barcelona metropolis]
+* https://barcelonadema-participa.cat/conférences/jornada-resilient[Premier jour de la métropole résistante du plan stratégique de la métropole de Barcelone]
