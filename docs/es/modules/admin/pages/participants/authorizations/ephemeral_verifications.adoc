@@ -1,0 +1,81 @@
+= Ephemeral verifications
+
+== Understand the basics
+
+In Decidim, there are mainly two types of participants:
+
+- One-time participants: Users who access the platform for a single action, such as voting in participatory budgets, and don't return.
+- Recurrent participants: Users who engage regularly in different participatory processes.
+
+For one-time participants, the registration and verification process can be a barrier, leading to incomplete participation. To address this, Decidim introduces the Ephemeral Verification Method, allowing users to verify their identity and participate without registering an account.
+
+=== Purpose
+
+The Ephemeral Verification Method is designed to streamline participation for one-time users by enabling direct verification without requiring account creation. **This feature is intended for limited durations** **during a specific participatory process**, such as a voting phase of participatory budgeting.
+
+=== How it works?
+
+This feature allows participants to participate without registering on the platform, by verifying their identity with the system chosen by the organisation. The key features are:
+
+- **Direct Verification Without Registration:** Participants can verify themselves and complete their action without signing up.
+- **Configurable at a component level:** Administrators can enable or disable ephemeral verification for specific components, as all the authorizations methods works.
+- **Ephemeral session**: A temporary session is opened when participants are verified. This session will only allow participants to complete actions in the specific component. If the ephemeral user wants to quit the component, the session will be closed.
+- **Focus mode:** A focus mode is enabled when doing the restricted action by ephemeral, so we keep the participant focus on the main action.
+- **Link to an Existing Verification Method:** Ephemeral verification must be linked to a pre-existing verification method (for example an organizational census).
+- **Revoking Prior Verifications:** When enabling ephemeral verification, all previous verifications are revoked to prevent verification conflicts.
+- **Retrieving the ephemeral session**. So ephemeral participants can verify again and logging with the ephemeral session. So they can see their votes and modify it.
+
+== Configuración
+
+To enable Ephemeral Verification you need to follow these steps:
+
+1. Access to the system panel.
+1. Enable the ephemeral-verification method.
+1. Link it to an existing verification method (for example organization census).
+1. Go to the admin dashboard.
+1. Enable the ephemeral-verification permissions in a component.
+1. Confirm the action, which will revoke all current verifications.
+1. Great! You have enabled the ephemeral verification for a specific component.
+
+== Ejemplos
+
+To better understand how this feature works, we explain the different flows and edge-cases as follows:
+
+=== Flow 1: Unregistered visitant
+
+1. As an unregistered visitant, I click on the restricted action
+1. Then, I’m Prompted with verification form and I filled it with my data
+1. So, I’m successfully verified
+1. Then, a temporary session is open
+1. And I gain access to the restricted action
+1. When I completed the task (i.e. voting in a participatory budget). Then I can quit the focus mode and the temporary session will be closed.
+
+=== Flow 2: Registered participant with logged-in session
+
+1. As a registered participant logged in, I click on the restricted action
+1. Then, I'm prompted with the verification form and I filled it with my data
+1. So, I’m successfully verified
+1. Then I gain access to the restricted action
+1. Then, the verification is saved in my profile
+
+=== Edge cases
+
+==== Flow 3: Preventing Verification Conflicts
+
+1. As a visitor, I attempt to verify using the data of a registered participant who has already been verified.
+1. The system detects a verification conflict.
+1. Then, I’m prevented from proceeding with the verification.
+
+==== Flow 4: Merging Ephemeral and Registered Accounts
+
+1. As an ephemeral user, who has completed the voting process. And closed their ephemeral session.
+1. Register on the platform.
+1. Attempt to verify yourself using the same personal information.
+1. The system retrieves and merges your ephemeral user data with your new registered account.
+1. You can now view and edit your votes.
+
+=== How does the ephemeral session work?
+
+1. This session will only allow you to make actions in the specific component. If the ephemeral user wants to quit the component, the session will be closed.
+1. The session will be closed after a time of inactivity.
+1. The session can be retrieved. That means, that if I try to verify again using the same data, then my session will be retrieved, and I will be able to view and edit my votes.
