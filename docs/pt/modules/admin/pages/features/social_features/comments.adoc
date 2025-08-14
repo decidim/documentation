@@ -1,0 +1,139 @@
+= comentários
+
+== Understand the basics
+
+Comments are public messages allowing participants to share information or opinions about a proposal, debate, meeting, initiative, etc.
+
+NOTE: Comments need to be enabled by administrators, otherwise participants are not able to comment. To learn how to enable comments on a component, please refer to the xref:features:components.adoc[Components] article.
+
+image::features/comments/nested_comment.png[Comments example]
+
+== Configuração
+
+=== Criar um comentário
+
+. Go to the content that you want to comment
+. Ir para o final da página
+. Fill the "Add comment" field and leave your comment
+
+image::features/comments/form.png[Comments form]
+
+When commenting, participants can:
+
+.Comment actions
+[cols="10h,~,~,~"]
+|===
+|tipo |Descrição: |Syntax |Example
+
+|Mention
+|Mention a participant or a user group. They'll receive a notification for the mention.
+|@nickname
+|@carmelia_hudson
+
+|Palavras-chave
+|Hashtags are redirecting to the general xref:admin:features/search.adoc[search page]
+|#example
+|#sedep
+
+|Quote
+|Hashtags are redirecting to the general xref:admin:features/search.adoc[search page]
+|> Your quote here
+|> the funding for this program could be better allocated to improving public transportation options
+
+|URL
+|Once published, URL become clickable, and can be internal or external. If they refer to a content of the platform, the
+link label takes the content title.
+|https://domain.name/
+|https://en.wikipedia.org/wiki/Decidim
+
+|Emojis
+|Participants can add emojis by clicking on the emoji icon at the bottom right of the comment field.
+|No syntax
+|😁
+
+|Give their opinion
+|Participants can say they are in favor, neutral, or against the content
+|No syntax
+|In favor
+|===
+
+Below, you can find an example of a comment field with several of those elements.
+
+image::features/comments/rich_text_write.png[Comments with rich text (write)]
+
+Once published, this comment and its different elements are displayed like below.
+
+image::features/comments/rich_text_read.png[Comments with rich text (read)]
+
+When clicking on a hashtag in a comment or another content, participants are redirected to the global search.
+
+image::features/comments/hashtag_search.png[Hashtags in comments]
+
+NOTE: HTML injection added in comments are escaped and not shown.
+
+image::features/comments/xss_write.png[XSS in comments (write)]
+
+image::features/comments/xss_read.png[XSS in comments (read)]
+
+=== Ações.
+
+Participants can interact with comments in different ways.
+
+* Everyone can sort them and show and hide replies thread.
+* Participants can additionally reply to comments, up-vote or down-vote them, report them or get the link to the comment.
+* Authors of comments can also edit and delete their own comments.
+
+They can access some actions directly on the comment, and others by clicking the three dots menu next to a comment.
+
+image::features/comments/actions.png[Comments actions]
+
+==== Ordenar
+
+Participants can sort comments by:
+* Best rated: comments with the more up-votes appear first in the list
+* Recent: most recent comments appear first.
+* Older: older comments appear first.
+* More discussed: comments with the more nested comments appear first.
+
+image::features/comments/order_by.png[Order comments]
+
+They can also hide replies, when they don't want to display a whole comment thread.
+
+==== Responder
+
+By clicking on the "Reply" button below a comment, participants can reply to other participants and have public discussions.
+Comments can be nested until four levels. On the fourth level, the "Reply" button is not available anymore.
+
+image::features/comments/anidation_levels.png[Nested comments]
+
+==== Up-vote / down-vote
+
+Participants can support comments by clicking on the "Thumbs up" icon at the bottom right of each comment.
+It allows them to participate and give their opinion, without necessary having to answer a comment.
+
+==== Report
+
+Please read the xref:admin:moderations/reported_content.adoc[Reported content] article to know more about reporting content.
+
+==== Get link
+
+By clicking on the "Get link" item, participants are redirected to the comment dedicated URL.
+They can then share this link to others, and it lead them directly to the one comment.
+A message is displayed to warn the visitor that they are seeing a single comment, with a link to see all the other comments.
+
+image::features/comments/single_comment.png[Edited comment]
+
+==== Alterar
+
+Participants can edit their comments, and after they do, a "Edited" mention appears on their comment to indicate to other
+participants that this content was edited.
+
+Comments don't have a version history of the changes made.
+
+image::features/comments/edited_comment.png[Edited comment]
+
+==== excluir
+
+Once a comment is deleted, it's no longer visible, and a message indicates the date when it was deleted.
+
+image::features/comments/deleted_comment.png[Deleted comment]
