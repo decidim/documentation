@@ -1,0 +1,55 @@
+= Introduction
+
+== Understand the basics
+
+Déployer Decidim signifie prendre en compte toutes les activités qui jouent un rôle dans la configuration de la plate-forme et le déploiement
+des processus participatifs. Acquérir des connaissances dans l'administration de Decidim permet de contrôler des questions fondamentales telles que :
+
+* configurer un processus participatif
+* créer une assemblée et gérer ses membres
+* ouvrir un espace d'initiative
+* modérer le contenu de la plateforme
+* la gestion des textes légaux associés, tels que la politique de confidentialité
+* gestion des droits d'accès des administrateurs
+* le suivi et la vérification des participants et de leurs organisations
+
+Aucun de ces aspects n'est strictement technique, mais ils impliquent une série de décisions politiques sur la manière dont vous voulez que votre instance fonctionne.
+quels messages et contenus ils contiennent, quelle devrait être la politique de modération et comment vous voulez que votre plateforme participative
+fonctionne. This is why it's essential to understand the socio-technical implications of the Decidim platform’s
+administration and management.
+
+Pour comprendre comment Decidim fonctionne, vous devez d'abord distinguer xref:spaces.adoc[*espaces*] et xref:components.adoc[*components*].
+
+* Les *espaces participatifs* sont les canaux auxquels les citoyens peuvent participer : processus participatifs, assemblées, initiatives et conférences.
+* *Les composantes participatives* sont des mécanismes qui permettent l'interaction entre les participants et les espaces participatifs : réunions, pages, propositions, sondages, etc.
+
+Par conséquent, tous les espaces de participation peuvent inclure plusieurs éléments, tels que des réunions, des propositions, des sondages ou des résultats.
+
+image:introduction.png[Espaces et composants]
+
+Ainsi, les administrateurs configurent les espaces participatifs en définissant et en configurant les composants dont ils auront besoin.
+Il est important de garder à l'esprit que ces composantes participatives et les différentes fonctions sont répétées dans les différents espaces,
+offrant de nombreuses opportunités en matière de configuration des différents espaces.
+Cela simplifie l'apprentissage car une fois qu'un espace est configuré, il est alors plus facile de configurer les autres.
+
+Cette section de documentation fournit une description complète de la façon de configurer la plate-forme Decidim pour tout type d'organisation
+et comment configurer, gérer et administrer vos différents processus de participation. A description has been given in tutorial format,
+to help with understanding administration tasks, following Decidim’s literal fields and enclosing screenshots to facilitate their
+interpretation.
+
+L'administration de la plate-forme Decidim est très intuitive et ne nécessite pas de connaissances informatiques spécifiques.
+The administrators of a Decidim platform, in other words, those with the necessary authorization for managing the platform,
+can configure the platform in a general way (images, information pages, etc.,) and manage the various participatory processes
+(configuring, editing, analysing and concluding).
+
+== C'est parti !
+
+* xref:admin:first_steps.adoc[Premières étapes]
+* xref:admin:settings.adoc[Settings]
+* xref:admin:pages.adoc[Pages et sujets]
+* xref:admin:participants.adoc[Utilisateurs]
+* xref:admin:global_moderations.adoc[Modérations globales]
+* xref:admin:spaces.adoc[Espaces]
+* xref:admin:components.adoc[Components]
+* xref:admin:features.adoc[Features]
+* xref:admin:templates.adoc[Templates]
