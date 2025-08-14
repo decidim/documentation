@@ -2,20 +2,20 @@
 
 == Understand the basics
 
-The speakers are the persons that are talking at the conference. They can be linked to meetings, so participants can
+Les orateurs sont les personnes qui parlent à la conférence. They can be linked to meetings, so participants can
 see who is going to speak in each item of the program.
 
 image::spaces/conferences/speakers_frontend.png[Conferences speakers frontend]
 
 == Configuration
 
-=== Manage speakers
+=== Gérer les orateurs
 
-To access the speakers configuration, click in the secondary navigation panel on the "Speakers" item.
+Pour accéder à la configuration des haut-parleurs, cliquez dans le panneau de navigation secondaire de l'élément "Haut-parleurs".
 
 image:espaces/conférences/haut-parleurs.png[conférenciers de conférences]
 
-You can search speakers thanks to the search bar.
+Vous pouvez rechercher des haut-parleurs grâce à la barre de recherche.
 
 === Actions
 
@@ -24,26 +24,26 @@ You can search speakers thanks to the search bar.
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_edit.png[Edit speaker icon]
+|image:icons/action_edit.png[Modifier l'icône du haut-parleur]
 |Editer
-|To edit this speaker.
+|Pour éditer ce haut-parleur.
 
-|image:icons/action_activate.png[Publish speaker icon]
+|image:icons/action_activate.png[Publier l'icône du haut-parleur]
 |Publier
-|To publish this speaker (when not published)
+|Pour publier ce haut-parleur (lorsqu'il n'est pas publié)
 
-|image:icons/action_unpublish.png[Unpublish speaker icon]
+|image:icons/action_unpublish.png[Dépublier l'icône du haut-parleur]
 |Dépublier
-|To unpublish this speaker (when published)
+|Dépublier ce haut-parleur (lorsqu'il est publié)
 
-|image:icons/action_delete.png[Delete speaker icon]
+|image:icons/action_delete.png[Supprimer l'icône du haut-parleur]
 |Supprimez
-|To delete this speaker.
+|Supprimer ce haut-parleur.
 |===
 
 === Créer un nouveau haut-parleur
 
-To create a new speaker, click the "New speaker" button in the top right of the page.
+Pour créer un nouveau haut-parleur, cliquez sur le bouton "Nouveau haut-parleur" en haut à droite de la page.
 
 image::spaces/conferences/new_speaker.png[Conferences speakers]
 
@@ -54,7 +54,7 @@ image::spaces/conferences/new_speaker.png[Conferences speakers]
 
 |Type de participant
 |Obligatoire
-|Wether this speaker is a non-participant or existing participant. Ont-ils déjà un compte créé sur la plateforme?
+|Que ce conférencier soit un participant ou un participant existant. Ont-ils déjà un compte créé sur la plateforme?
 
 |Nom complet
 |Requis si c'est un non-participant.
@@ -66,7 +66,7 @@ image::spaces/conferences/new_speaker.png[Conferences speakers]
 
 |Réunions connexes
 |Facultatif
-|The meetings in which the speaker is speaking or facilitating.
+|Les réunions au cours desquelles l'orateur intervient ou facilite.
 
 |Position
 |Obligatoire
@@ -80,7 +80,7 @@ image::spaces/conferences/new_speaker.png[Conferences speakers]
 |Facultatif
 |Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
 
-|X handle
+|Compte X
 |Facultatif
 |Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
 
@@ -90,5 +90,5 @@ image::spaces/conferences/new_speaker.png[Conferences speakers]
 
 |Avatars
 |Facultatif
-|Avatar image for the speaker. Ignored if the speaker is an "Already registered" participant.
+|Image d'avatar pour le haut-parleur. Ignoré si le conférencier est un participant « déjà inscrit ».
 |===
