@@ -1,17 +1,17 @@
-= Projects
+= Projets
 
 == Understand the basics
 
 Projects are the entities making part of the budgets.
 
-== Create a project
+== Créer un projet
 
-To access the creation and management of projects, click the title of the budget or the image:icons/action_list.png[Manage projects icon]
-icon on the budgets list.
+Pour accéder à la création et à la gestion des projets, cliquez sur le titre du budget ou sur l'image:icons/action_list.png[l'icône Gérer les projets]
+sur la liste des budgets.
 
 image::components/budgets/new_project_button.png[New project button]
 
-Then, click the "New project" button on the top right of the page.
+Ensuite, cliquez sur le bouton "Nouveau projet" en haut à droite de la page.
 
 image::components/budgets/new_project.png[New project form]
 
@@ -34,7 +34,7 @@ image::components/budgets/new_project.png[New project form]
 
 |Adresses
 |Facultatif
-|The address of the project. It allows to display a pin on a map for participants to locate the project.
+|L'adresse du projet. Il permet d'afficher une épingle sur une carte pour que les participants puissent localiser le projet.
 
 |Catégorie
 |Facultatif
@@ -42,29 +42,29 @@ image::components/budgets/new_project.png[New project form]
 
 |Propositions
 |Facultatif
-|Choisissez des propositions liées à ce projet. Automatically assigned when importing proposals.
+|Choisissez des propositions liées à ce projet. Assigné automatiquement lors de l'importation des propositions.
 
 |Ajouter une galerie d'images
 |Facultatif
-|Add multiple images illustrating what this project is about, mock-ups, etc.
+|Ajoutez plusieurs images illustrant ce qu'est ce projet, les maquettes, etc.
 |===
 
 == Gérer les projets
 
 image::components/budgets/results_selected.png[Selected projects after voting]
 
-On the projects list in the administration panel, administrators can see:
+Sur la liste des projets dans le panneau d'administration, les administrateurs peuvent voir :
 
-* *ID*: Identification number for this project.
-* *Title*: Title of the project.
-* *Category*: Category of the project.
-* *Scope*: Scope of the project, if enabled in the participatory space.
-* *Votes count*: Number of votes on this project.
-* *Selected*: If the project is selected for implementation at the end of the process.
-* *Map*: Location of the project when it has an address.
+* *ID* : Numéro d'identification de ce projet.
+* *Titre* : Titre du projet.
+* *Catégorie* : Catégorie du projet.
+* *Portée* : Portée du projet, si activé dans l'espace participatif.
+* *Nombre de votes* : Nombre de votes sur ce projet.
+* *Sélectionné* : Si le projet est sélectionné pour l'implémentation à la fin du processus.
+* *Carte* : emplacement du projet quand il a une adresse.
 
-You can filter and sort this list by clicking the "Filter" button and the columns headers.
-You can also search for projects by their ID and title in the search bar.
+Vous pouvez filtrer et trier cette liste en cliquant sur le bouton "Filtre" et sur les en-têtes des colonnes.
+Vous pouvez également rechercher des projets par leur ID et leur titre dans la barre de recherche.
 
 image::components/budgets/projects_list_filter.png[Projects list filter]
 
@@ -75,27 +75,27 @@ image::components/budgets/projects_list_filter.png[Projects list filter]
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Modifier l'icône]
 |Editer
 |Modifier un projet.
 
-|image:icons/action_folder.png[Folders icon]
+|image:icons/action_folder.png[Icônes de dossiers]
 |Dossiers
 |Pour la classification des pièces jointes.
 
-|image:icons/action_attachments.png[Attachments icon]
+|image:icons/action_attachments.png[Icône des pièces jointes]
 |Fichiers joints
-|To add documents and images related to the project.
+|Ajouter des documents et des images liés au projet.
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Icône d'aperçu]
 |Aperçu
 |Pour voir comment il est montré dans le frontend aux participants.
 
 |image:icons/action_permissions.png[Permissions icon]
 |Autorisations
-|To handle the authorizations needed to vote or comment on this specific project.
+|Pour gérer les autorisations nécessaires pour voter ou commenter ce projet spécifique.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Supprimer l'icône]
 |Supprimez
 |Pour supprimer le projet.
 |===
