@@ -1,0 +1,312 @@
+= Reuniones
+
+== Understand the basics
+
+Meetings are also the entities making part of the Meetings component.
+They are usually created by administrators, but participants can also create meetings when the feature is enabled.
+
+Administrators can perform different actions on meetings, depending if they are created from the administration or by participants.
+
+== Reuniones oficiales
+
+image::components/meetings/new_meeting_form_backend.png[Create a new meeting form (backend)]
+
+.Crear reunión - formulario de backend
+[cols="20h,10h,~"]
+|===
+|Campo |Tipo |Descripción
+
+|Título
+|Requerido
+|The title of the meeting.
+
+|Descripción
+|Requerido
+|A description of what the meeting is about, like the topics, participants, etc.
+
+|Tipo
+|Requerido
+|The meeting type, if it's in person, online, or both.
+
+|Dirección
+|Opcional
+|Address: used to localize the meeting on a map. Is displayed only for in-person and hybrid meetings types.
+
+|Ubicación
+|Opcional
+|Location: message directed to the users implying the spot to meet at, like the name of the building, the name of a room, etc.
+Is displayed only for in-person and hybrid meetings types.
+
+|Pistas de ubicación
+|Opcional
+|Consejos de ubicación: información adicional. Example: the floor of the building if it is an in-person meeting, or the meeting password
+if it is an online meeting with restricted access.
+
+|URL de la reunión online
+|Opcional
+|The link for participants to be able to connect directly to the online meeting.
+
+|Iframe embed type
+|Opcional
+|Allows to say how the online meeting URL is displayed on the meeting page. Choose "None" for no iframe integration, "Embed in
+meeting page" for participants to open the meeting directly on the meeting page, "Open in live event page" for participants to be
+redirected to the live event page, or "Open URL in a new tab" for participants to open the meetings in a new tab.
+Only a few services allow embedding (YouTube, Twitch, Jitsi, ...)
+
+|Iframe access level
+|Requerido
+|Who is able to see the iframe.
+
+|Start time
+|Requerido
+|On which day and time the meeting starts. Expected format: dd/mm/yyyy hh:mm.
+
+|End time
+|Requerido
+|On which day and time the meeting starts. Expected format: dd/mm/yyyy hh:mm.
+
+|Categoría
+|Opcional
+|Which category has the meeting. Utilizado para filtrar en la lista de reuniones.
+
+|Tipo de registro
+|Requerido
+|Choose an option between "Registration disabled" for no registrations, "On this platform" to display a registration button linked to
+the xref:admin:components/meetings/registrations.adoc[Registrations] or "On a different platform" if you manage meetings Registrations
+with another service.
+
+|URL de registro
+|Required if Registration on a different platform
+|Debe ser una URL. Link for participants to go to the external service that you are using for registrations.
+
+|Reunión privada
+|Opcional
+|Compruebe si la reunión no debería ser visible para todos los visitantes. This is only available for official meetings.
+
+|Transparente
+|Opcional
+|If the meeting is private, check if the meeting should be visible for all the visitors but they shouldn't be able to
+participate in it. This is only available for official meetings.
+
+|Comentarios habilitados
+|Opcional
+|Whether you want participants to be able to comment on this specific meeting.
+
+|Comments enabled from
+|Opcional
+|Date from which participants are able to comment on this specific meeting.
+
+|Comments enabled until
+|Opcional
+|Date until which participants are able to comment on this specific meeting.
+|===
+
+You can also define *Services* for a Meeting. These are metadata that allows to communicate, for instance, if there's
+a place for children, deaf assistance, translations, etc. Puede tener varios servicios dentro de una reunión.
+
+.Crear reunión - Servicios
+[cols="20h,10h,~"]
+|===
+|Campo |Tipo |Descripción
+
+|Título
+|Requerido
+|Título del servicio.
+
+|Descripción
+|Opcional
+|Descripción del servicio.
+|===
+
+=== Acciones
+
+.Acciones - Reuniones oficiales
+[cols="10h,20h,~"]
+|===
+|Icono |Nombre |Definición
+
+|image:icons/action_edit.png[Edit icon]
+|Editar
+|To edit a meeting.
+
+|image:icons/action_duplicate.png[Duplicate icon]
+|Duplicate
+|Allows an administrator to duplicate quickly a meeting.
+
+|image:icons/action_folder.png[Folders icon]
+|Carpetas
+|Para clasificar adjuntos.
+
+|image:icons/action_attachments.png[Attachments icon]
+|Adjuntos
+|To add documents and images related to the meeting.
+
+|image:icons/action_registrations.png[Registrations icon]
+|xref:admin:components/meetings/registrations.adoc[Registrations]
+|Allows to define who can register for attending the meeting. Only available if the registrations are enabled in the meeting form.
+
+|image:icons/action_agenda.png[Agenda icon]
+|xref:admin:components/meetings/Moneta.adoc[Agenda]
+|To publish the topics to be discussed in the meeting.
+
+|image:icons/action_list.png[Poll icon]
+|xref:admin:components/meetings/polls.adoc[Polls]
+|To manage the polls for the meeting.
+
+|image:icons/action_close.png[Close icon]
+|xref:admin:components/meetings/close.adoc[Close]
+|Allows and administrator to close the meeting with the minutes on the discussion and add extra information.
+
+|image:icons/action_publish.png[Publish icon]
+|Publicar
+|Mostrar públicamente la reunión.
+
+|image:icons/action_unpublish.png[Unpublish icon]
+|No publicar
+|No mostrar públicamente la reunión.
+
+|image:icons/action_preview.png[Preview icon]
+|Vista previa
+|Para ver cómo se muestra en el frontend a los participantes.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Permisos
+|Para manejar los permisos de esta reunión, dependiendo de la verificación tiene un participante. Permite a un administrador configurar
+que puede *unirse* a una reunión.
+
+|image:icons/action_delete.png[Delete icon]
+|Eliminar
+|Para eliminar esta reunión.
+|===
+
+== Participants meetings
+
+Meetings can be created by participants if the component setting "Participants can create meetings" is checked.
+If a participant belongs to a verified xref:admin:participants/groups.adoc[user group], then they are also able to create meetings
+as that group.
+
+When a participant is on the meetings list, they can click the "New meeting" button.
+
+image::components/meetings/new_meeting_button_front.png[Create a new meeting button (frontend)]
+
+Then, they are redirected on the participants meetings creation form.
+
+image::components/meetings/new_meeting_form_frontend01.png[Create a new meeting form (frontend)]
+
+.Crear reunión - Formulario de interfaz
+[cols="20h,20h,~"]
+|===
+|Campo |Tipo |Descripción
+
+|Título
+|Requerido
+|The title of the meeting.
+
+|Descripción
+|Requerido
+|A description of what the meeting is about, like the topics, participants, etc.
+
+|Tipo
+|Requerido
+|The meeting type, if it's in person, online, or both.
+
+|Dirección
+|Opcional
+|Address: used to localize the meeting on a map. Is displayed only for in-person and hybrid meetings types.
+
+|Ubicación
+|Opcional
+|Location: message directed to the users implying the spot to meet at, like the name of the building, the name of a room, etc.
+Is displayed only for in-person and hybrid meetings types.
+
+|Pistas de ubicación
+|Opcional
+|Consejos de ubicación: información adicional. Example: the floor of the building if it is an in-person meeting, or the meeting password
+if it is an online meeting with restricted access.
+
+|URL de la reunión online
+|Opcional
+|The link for participants to be able to connect directly to the online meeting.
+
+|Iframe embed type
+|Opcional
+|Allows to say how the online meeting URL is displayed on the meeting page. Choose "None" for no iframe integration, "Embed in
+meeting page" for participants to open the meeting directly on the meeting page, or "Open URL in a new tab" for participants to
+open the meetings in a new tab. Only a few services allow embedding (YouTube, Twitch, Jitsi, ...)
+
+|Start time
+|Requerido
+|On which day and time the meeting start. Expected format: dd/mm/yyyy hh:mm.
+
+|End time
+|Requerido
+|On which day and time the meeting start. Expected format: dd/mm/yyyy hh:mm.
+
+|Categoría
+|Opcional
+|Which category has the meeting. Utilizado para filtrar en la lista de reuniones.
+
+|Tipo de registro
+|Requerido
+|Choose an option between "Registration disabled" for no registrations, "On this platform" to display a registration button linked to
+the xref:admin:components/meetings/registrations.adoc[Registrations] or "On a different platform" if you manage meetings Registrations
+with another service.
+
+|Slots disponibles para esta reunión
+|Required if Registration on this platform
+|¿Cuántas plazas hay disponibles para esta reunión? Déjalo a 0 si tienes espacio ilimitado disponible.
+
+|Términos de registro
+|Required if Registration on this platform
+|Qué condiciones de servicio deben aceptar los participantes para inscribirse o unirse a la reunión.
+
+|URL de registro
+|Required if Registration on a different platform
+|Debe ser una URL. Link for participants to go to the external service that you are using for registrations.
+
+|Crear reunión como
+|Requerido si el participante pertenece a un grupo
+|With which identity this meeting is created, the participant or the user group one.
+|===
+
+Después de crear la reunión, los participantes también pueden editar y xref:components/meetings/close.adoc[close].
+
+=== Acciones
+
+.Acciones - Reuniones de ciudadanos
+[cols="10h,20h,~"]
+|===
+|Icono |Nombre |Definición
+
+|image:icons/action_preview.png[Preview icon]
+|Vista previa
+|Para ver cómo se muestra en el frontend a los participantes.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Permisos
+|To handle the authorizations needed to join, comment or reply to the poll for this specific meeting.
+|===
+
+== Reuniones en línea
+
+For online meetings, depending in the moment and configuration of the meeting, different messages are shown to the participants to
+inform them on how to join the online meeting.
+
+If the "Online meeting URL" isn't set yet, a message that says "Link available soon" is displayed.
+
+image::components/meetings/online_meeting_available_soon.png[Online meeting available soon]
+
+If the "Online meeting URL" is set, a few minutes before the meeting start, the message says "The link to join
+the meeting will be available a few minutes before it starts"
+
+image::components/meetings/online_meeting_available_before.png[Online meeting available before it starts]
+
+If the "Online meeting URL" is set, the start time of the meeting has arrived, and you chose the Iframe embed type to be
+"Open URL in a new tab" then the message says that "the meeting is happening right now" with a link to join the meeting.
+
+image::components/meetings/online_meeting_happening.png[Online meeting available before it starts]
+
+If the "Online meeting URL" is set, the start time of the meeting has arrived, and you chose the Iframe embed type to be
+"Embed in meeting page" then the message says that "the meeting is happening right now" with the meeting embedded in the block.
+
+image::components/meetings/online_meeting_happening_embed.png[Online meeting available before it starts]
