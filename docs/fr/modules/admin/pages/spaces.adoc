@@ -2,40 +2,40 @@
 
 == Understand the basics
 
-Participatory spaces are the channels through which citizens can take part in public decision-making.
-By default, an instance is provided with those different spaces:
+Les espaces participatifs sont les canaux par lesquels les citoyens peuvent participer à la prise de décision publique.
+Par défaut, une instance est fournie avec ces différents espaces :
 
 
 .Espaces participatifs
 |===
-|Nom |Description |Use cases
+|Nom |Description |Cas d'utilisation 
 
-|*xref:admin:spaces/processes.adoc[Participatory Processes]*
-|A participatory process allows administrators to configure different participatory components, which evolve over different participatory phases.
-|Participatory budgeting, Proposal recollection, Voting or debate process, etc.
+|*xref:admin:spaces/processes.adoc[Concertations]*
+|Un processus participatif permet aux administrateurs de configurer différents composants participatifs, qui évoluent au cours des différentes phases participatives.
+|budgétisation participative, rappel des propositions, processus de vote ou de débat, etc.
 
 |*xref:admin:spaces/assemblies.adoc[Assemblies]*
 |An assembly allows administrator to configure participatory components in a continued space, with the possibility to define members.
-|Committee organization space, citizen assembly, etc.
+|Espace d'organisation du comité, assemblée citoyenne, etc.
 
 |*xref:admin:spaces/initiatives.adoc[Initiatives]*
-|Initiatives space allows administrators to open a bottom-up space, with different initiatives types.
-|Petitions, Hearing requests, Participatory process requests, etc.
+|L'espace des initiatives permet aux administrateurs d'ouvrir un espace ascendant, avec différents types d'initiatives.
+|pétitions, demandes d'audience, demandes de concertation, etc.
 
 |*xref:admin:spaces/conferences.adoc[Conferences]*
-|A conference allows administrators to organize and publicize events, deal with registrations, program , speakers and venues.
-|Participatory event, Citizen assembly, Association festival, etc.
+|Une conférence permet aux administrateurs d'organiser et de diffuser des événements, de traiter des inscriptions, des programmes , des conférenciers et des lieux.
+|Événement participatif, assemblée citoyenne, festival d'association, etc.
 |===
 
-NOTE: Any organization can develop its own spaces by creating xref:develop:modules.adoc[Modules].
+NOTE: Toute organisation peut développer ses propres espaces en créant xref:modules.adoc[Modules].
 
 == Configuration
 
-Spaces are accessible through the administration navigation bar.
+Les espaces sont accessibles via la barre de navigation de l'administration.
 
 image::spaces_admin.png[Spaces in administrator sidebar]
 
-Once you start publishing spaces, participants see links to the different spaces indexes appear in the homepage global menu,
-the instance navigation bar and the footer.
+Une fois que vous commencez à publier des espaces, les participants voient les liens vers les différents index d'espaces apparaître dans le menu global de la page d'accueil,
+la barre de navigation de l'instance et le pied de page.
 
 image::spaces_visitor.png[Spaces visible in the public interface]
