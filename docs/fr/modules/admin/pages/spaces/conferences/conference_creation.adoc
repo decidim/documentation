@@ -1,26 +1,26 @@
-= Conference creation
+= Création de la conférence
 
 == Understand the basics
 
-Conferences allows administrators to configure components in the context of an event, in general in articulation with a program.
-To start creating a conference, when on the conferences list, click the "New conference" button at the top right of the page.
+Les conférences permettent aux administrateurs de configurer des composants dans le contexte d'un événement, en général en articulation avec un programme.
+Pour commencer à créer une conférence, lorsque dans la liste des conférences, cliquez sur le bouton "Nouvelle conférence" en haut à droite de la page.
 
-The conference creation form is divided into different sections that are detailed in the sections below.
+Le formulaire de création de la conférence est divisé en différentes sections détaillées dans les sections ci-dessous.
 
-Conferences landing page is built by default and is not yet configurable.
+La page d'accueil des conférences est construite par défaut et n'est pas encore configurable.
 
-== General information
+== Informations générales
 
 image::spaces/conferences/conference_new_form_general_info.png[New conference form general info section]
 
-.New conference form: General information
+.Nouveau formulaire de conférence : Informations générales
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Titre
 |Obligatoire
-|The title of this conference.
+|Le titre de cette conférence.
 
 |Slogan
 |Obligatoire
@@ -28,7 +28,7 @@ image::spaces/conferences/conference_new_form_general_info.png[New conference fo
 
 |Rang d'affichage
 |Obligatoire
-|Determines the order of the conference when displayed in the conferences index or homepage.
+|Détermine l'ordre de la conférence lorsqu'il est affiché dans l'index ou la page d'accueil des conférences.
 
 |Identifiant d'URL
 |Obligatoire
@@ -37,79 +37,79 @@ commencer par une lettre.
 
 |Hashtag
 |Facultatif
-|Hashtag redirecting to the X social network.
+|Hashtag redirigeant vers le réseau social X.
 
 |Surligné
 |Facultatif
-|Check if you want the conference to have more visibility in the conferences public list and the "Highlighted conferences" content block
-in the xref:admin:settings/homepage.adoc[Homepage] configuration.
+|Cochez cette case si vous voulez que la conférence ait plus de visibilité dans la liste des conférences publiques et le bloc de contenu "Conférences en surbrillance"
+dans la page xref:admin:settings/homepage. configuration doc[Homepage].
 
 |Courte description
 |Obligatoire
-|A short explanation of what's the conference about.
+|Une brève explication de la conférence.
 
 |Description
 |Obligatoire
-|A long explanation of what's the conference about.
+|Une longue explication de la conférence.
 
 |Objectifs
 |Facultatif
-|The objectives or goals for this conference.
+|Les objectifs ou les objectifs de cette conférence.
 
 |Localisation
 |Facultatif
-|Where the conference takes place.
+|Là où la conférence a lieu.
 |===
 
 == Images
 
 image::spaces/conferences/conference_new_form_images.png[New conference form images section]
 
-.New conference form: Images
+.Nouveau formulaire de conférence : Images
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Image de la maison
 |Facultatif
-|Image used in presentation cards of this conference. Orientation pour le fichier: Doit être une image ou un document.
-Pour les images, utilisez de préférence des images paysagères, le service récolte l'image. Maximum file size: 10 MB
+|Image utilisée dans les cartes de présentation de cette conférence. Orientation pour le fichier: Doit être une image ou un document.
+Pour les images, utilisez de préférence des images paysagères, le service récolte l'image. Taille maximale du fichier : 10 Mo
 
 |Image de bannière
 |Facultatif
-|Image used in the header of the conference. Preferably a landscape image that does not have any text. Le service récolte
-l'image Maximum file size: 10 MB.
+|Image utilisée dans l'en-tête de la conférence. De préférence une image au format paysage ne contenant pas de texte. Le service récolte
+l'image Taille maximale du fichier : 10 Mo.
 |===
 
-== Filters
+== Filtres
 
-This section determines the filters available in the conference, in the different components.
-Filters can then be enabled and configured in each components.
+Cette section détermine les filtres disponibles dans la conférence, dans les différents composants.
+Les filtres peuvent ensuite être activés et configurés dans chaque composant.
 
 image::spaces/conferences/conference_new_form_filters.png[New conference form filters section]
 
-.New conference form: Filters
+.Nouveau formulaire de conférence : Filtres
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Portées activées
 |Facultatif
-|Check if you want to have Scopes filtering in this conference.
+|Cochez cette case si vous voulez que le filtrage des portées soit effectué dans cette conférence.
 
 |Secteur
 |Facultatif
-|Which xref:admin:settings/scopes.adoc[Scope] does this conference belongs to.
+|Ce à quoi appartient xref:admin:settings/scopes.adoc[Scope] cette conférence.
 
 |Afficher les statistiques
 |Facultatif
-|If you want statistics to be displayed on the conference landing page.
+|Si vous voulez que les statistiques soient affichées sur la page d'accueil de la conférence.
 |===
 
 == Durée
 
-This section allows to provide information about the process start and end dates.
-It can be enabled on the landing page with the "Phase & duration" landing page block.
+Cette section permet de fournir des informations sur les dates de début et de fin du processus.
+Il peut être activé sur la page d'accueil avec le bloc "Phase & durée".
 
 image::spaces/conferences/conference_new_form_duration.png[New conference form duration section]
 
@@ -120,20 +120,20 @@ image::spaces/conferences/conference_new_form_duration.png[New conference form d
 
 |Date de début
 |Facultatif
-|When this conference starts. Vous avez un widget calendrier pour choisir la journée. Expected format: dd/mm/yyyy.
+|Quand cette conférence commence. Vous avez un widget calendrier pour choisir la journée. Format attendu : jj/mm/aaaa.
 
 |Date de fin
 |Facultatif
-|When this conference ends. Vous avez un widget calendrier pour choisir la journée. Expected format: dd/mm/yyyy.
+|À la fin de cette conférence. Vous avez un widget calendrier pour choisir la journée. Format attendu : jj/mm/aaaa.
 |===
 
 == Inscriptions
 
-This section is allows you to enable registrations and set slots and registration terms for your conference.
+Cette section vous permet d'activer les inscriptions et de définir des créneaux et des conditions d'inscription pour votre conférence.
 
 image::spaces/conferences/conference_new_form_registrations.png[New conference form Registrations sections]
 
-.New conference form: Registrations
+.Nouveau formulaire de conférence : Inscriptions
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -147,28 +147,28 @@ image::spaces/conferences/conference_new_form_registrations.png[New conference f
 |Laisser à 0 si vous avez un nombre illimité de places disponibles.
 
 |Conditions d'inscription
-|Required if "Registrations enabled" is checked.
-|The terms of service or conditions that a participant must accept for registering to the conference.
+|Requis si "Inscriptions activées" est coché.
+|Les conditions de service ou conditions qu'un participant doit accepter pour s'inscrire à la conférence.
 |===
 
-== Related spaces
+== Espaces liés
 
-This section allows to create relations between processes, assemblies, and conferences.
+Cette section permet de créer des relations entre les processus, les assemblages et les conférences.
 
 image::spaces/conferences/conferences_new_form_related_processes.png[New conference form Related spaces section]
 
-.New conference form: Related spaces
+.Nouveau formulaire de conférence : Espaces liés
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Processus participatifs liés
 |Facultatif
-|Select participatory processes related to the conference. Use the *CTRL* or *CMD* function to select more than one option.
+|Sélectionnez les processus participatifs liés à la conférence. Utilisez la fonction *CTRL* ou *CMD* pour sélectionner plus d'une option.
 
-|Related assemblies
+|Assemblées liées
 |Facultatif
-|Select assemblies related to the conference. Use the *CTRL* or *CMD* function to select more than one option.
+|Sélectionnez les assemblées liées à la conférence. Utilisez la fonction *CTRL* ou *CMD* pour sélectionner plus d'une option.
 |===
 
 == Création du programme
