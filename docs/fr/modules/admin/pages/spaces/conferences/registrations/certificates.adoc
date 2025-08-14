@@ -1,17 +1,17 @@
-= Certificate of attendance
+= Attestation de présence
 
 == Understand the basics
 
-For some events, participants may want to have an attendance certificate, to certify to their employer that they attended,
-or to certify they followed a training for example.
+Pour certains événements, les participants peuvent avoir un certificat de présence, certifier à leur employeur qu'ils y ont participé,
+ou certifier qu'ils ont suivi une formation par exemple.
 
-For this, administrators can create Certificates of attendance.
+Pour cela, les administrateurs peuvent créer des certificats de présence.
 
-== Create certificate of attendance
+== Créer un certificat de présence
 
-To access the certificate of attendance configuration, click in the secondary navigation panel on the "Certificate of attendance" item.
+Pour accéder à la configuration du certificat de présence, cliquez dans le panneau de navigation secondaire de l'article "Certificat de présence".
 
-image:spaces/conferences/certificates_of_attendance.png[Conference Certificate of attendance backend]
+image:espaces/conferences/certificates_of_attendance.png[Backend de certificat de présence de la conférence]
 
 .Formulaire de certificat de présence
 [cols="20h,10h,~"]
@@ -20,31 +20,31 @@ image:spaces/conferences/certificates_of_attendance.png[Conference Certificate o
 
 |Logo principal
 |Obligatoire
-|Logo of the conference or of the organization that makes the certificate of attendance.
+|Logo de la conférence ou de l'organisation qui fait le certificat de présence.
 
 |Signature
 |Obligatoire
-|Image of the person signature that signs the certificate.
+|Image de la signature de la personne qui signe le certificat.
 
 |Date de signature
 |Obligatoire
-|Date de la signature. Expected format: dd/mm/yyyy.
+|Date de la signature. Format attendu : jj/mm/aaaa.
 
 |Nom de la signature
 |Obligatoire
 |Nom de la personne qui signe le certificat.
 |===
 
-== Send the certificate
+== Envoyer le certificat
 
-Once the certificate of attendance form is done, you can see a "Send certificates of attendance" button on the top right.
-This button allows administrators to send the certificate to all the *confirmed*
-xref:admin:spaces/conferences/registrations/users.adoc[registered users] of the conference.
+Une fois le formulaire de certificat de présence terminé, vous pouvez voir le bouton "Envoyer les certificats de présence" en haut à droite.
+Ce bouton permet aux administrateurs d'envoyer le certificat à tous les *confirmés*
+xref:admin:spaces/conferences/registrations/users.adoc[utilisateurs enregistrés] de la conférence.
 
 image::spaces/conferences/certificates_of_attendance_button.png[Conferences Certificate of Attendance send button]
 
-NOTE: Once the certificate has been sent it can't be resent.
+NOTE: Une fois le certificat envoyé, il ne peut pas être renvoyé.
 
 Les certificats de participation sont envoyés aux participants par courriel en format PDF.
 
-image:spaces/conferences/certificates_of_attendance_pdf.png[Conferences Certificate of Attendance frontend]
+image:espaces/conférences/certificates_of_attendance_pdf.png[Certificat de présence des conférences]
