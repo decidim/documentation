@@ -5,7 +5,7 @@
 Through endorsements, participants can publicly show that they want to support a particular content, like a proposal, a debate, etc.
 Administrators can enable endorsements by step in a given participatory process, and they can also define permissions with authorizations.
 
-NOTE: Endorsements are also called "Likes" in the participant interface.
+NOTE: Les propositions sont également appelées "J'aime" dans l'interface des participants.
 
 image::features/endorsements/sidebar.png[Endorsement button in sidebar]
 
@@ -19,8 +19,8 @@ Lorsqu'un participant appartient à un groupe vérifié, il peut également sous
 
 image::features/endorsements/modal.png[Select identity modal]
 
-Par défaut, la liste des avances est réduite. To see all the endorsers, you need too click in the "+ x" icon.
+Par défaut, la liste des avances est réduite. Pour voir tous les endorseurs, vous devez aussi cliquer sur l'icône "+ x".
 
 image:features/endorsements/full_list.png[Liste complète des approbations]
 
-Participants can also dislike the content if they change their mind.
+Les participants peuvent également ne pas apprécier le contenu s'ils changent d'avis.
