@@ -1,0 +1,38 @@
+= Verification's conflicts
+
+There are cases depending on which kind of verifications you've enabled that there could be verification's conflicts.
+
+For instance:
+
+. A participant get xref:admin:participants/impersonations.adoc[impersonated], and they don't provide an email
+. Then they create an account and try to verify themselves with the Census verification
+
+For security, we try to be extra cautious in these cases, and we want that an administrator reviews these verifications.
+As you can see, this depends a lot on which kind of verifications you've enabled in your organization, so it's easy to say
+that most of the time an organization will not see any conflicts in this panel.
+
+image:verifications_conflicts.png[Verification's conflicts panel]
+
+== Transfer user
+
+An administrator can review these conflicts by clicking in the Transfer user image:action_transfer_user.png[Transfer user] icon.
+
+Then they will see the Transfer user form, where they can provide a reason for the transfer.
+
+image:verifications_conflicts_transfer_user.png[]
+
+
+.Transfer user form
+|===
+|Field |Type |Description
+
+|Reason
+|Required
+|Why you want to transfer the user
+
+|Email
+|Required
+|The email of the user to transfer
+|===
+
+After the user is transferred, both accounts (the original and the new one) will be merged.
