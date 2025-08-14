@@ -1,0 +1,48 @@
+= Progrès
+
+== Understand the basics
+
+Un statut représente l'état actuel d'un résultat.
+Pour les participants, les statuts indiquent clairement l'état de chaque résultat, car les noms de statut sont toujours affichés avec les résultats.
+Pour les administrateurs, les statuts aident à garder à jour la progression des résultats, puisque chaque statut peut avoir un pourcentage de progression par défaut.
+
+Après la configuration des statuts, vous pouvez assigner xref:admin:components/Accounability/results.adoc[un statut à un résultat].
+Une fois le résultat mis à jour son statut, sa progression est automatiquement définie sur la progression par défaut définie dans le statut.
+
+La mise à jour du statut d'un résultat ne mettra pas à jour l'historique des résultats, mais peut xref:admin:features/participant_actions/notifications.adoc[envoyer des notifications].
+
+== Configuration
+
+Pour créer des statuts, cliquez sur le bouton "Statuts" en haut à droite de la liste des résultats.
+
+image::components/accountability/statuses_button.png[Statuses button]
+
+Là, vous pouvez créer et gérer les différents statuts pour les résultats.
+
+image::components/accountability/statuses_list.png[Statuses list]
+
+Cliquez sur le bouton "Nouveau statut" pour commencer à créer des statuts.
+
+image:components/Accounability/new_status.png[Nouveau formulaire de statut]
+
+
+.Formulaire de nouveau statut
+|===
+|Champ |Type |Description
+
+|Clé
+|Obligatoire
+|Utilisé comme identifiant unique pour xref:admin:components/Accounability/import.adoc[CSV Import].
+
+|Nom
+|Obligatoire
+|Nom pour ce statut.
+
+|Description
+|Facultatif
+|Description pour ce statut.
+
+|Avancement
+|Facultatif
+|Progression par défaut pour un résultat assigné à cet état (pourcentage de 0 à 100).
+|===
