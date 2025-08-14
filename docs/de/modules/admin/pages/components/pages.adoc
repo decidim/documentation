@@ -1,0 +1,90 @@
+= Seiten
+
+== Understand the basics
+
+Die Seitenkomponente erlaubt es den Menschen, Informationen über einen Raum zu erhalten. Administrators can fill a page with informational content,
+images, links, to inform and update the participants.
+
+It's similar to the general xref:admin:pages.adoc[Pages], the main difference being that this component allows to define pages inside
+a participatory space, and not in the Help section.
+
+image::components/page/example01.png[Example of a page component in a participatory process]
+
+== Konfiguration
+
+=== Create a page component
+
+To create a Page component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
+
+image::components/page/component_page.png[Add Page component button]
+
+Then:
+
+. Click on the "Components" item in the secondary menu
+. Click the "Add component" button
+. Select "Page"
+. Fill the component creation form
+
+You can still update this form and the configuration after creating the component, by clicking the
+image:icons/action_configure.png[Configure icon] icon in the components list.
+
+image::components/page/component.png[Add component form]
+
+.Komponente hinzufügen: Seitenformular
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|The title of this component.
+
+|Bestellposition
+|Optional
+|The order of the component in relation with the other components. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0"
+then "component b" is first when ordering.
+|===
+
+.Komponente hinzufügen: Seitenformular - Globale Einstellungen
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Mitteilung
+|Optional
+|A general announcement visible on the top of the page.
+|===
+
+.Komponente hinzufügen: Seitenformular - Schritteinstellungen
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Mitteilung
+|Optional
+|A general announcement visible on the top of the page for this phase.
+|===
+
+=== Create a page
+
+Once you created the Page component, click the Edit icon to write the content to be displayed on the page.
+
+image:components/page/new_page.png[Neue Seitenform]
+
+.Neues Seitenformular
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Körper
+|Benötigt
+|The content displayed on the page. You can add images, links, videos, formatting, etc.
+|===
+
+== Beispiele
+
+Einige Beispiele, wo diese Komponente verwendet wurde:
+
+* https://meta.decidim.org/processes/Welcome/f/1686/[Take the tour page to discover the Decidim community]
+* https://www.decidim.barcelona/processes/PressupostosParticipatius/f/4691/[Information page for a Participatory Budget Barcelona]
