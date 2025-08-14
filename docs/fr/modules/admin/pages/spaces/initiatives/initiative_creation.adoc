@@ -1,0 +1,101 @@
+= Création de l'initiative
+
+== Understand the basics
+
+Une fois que vous avez configuré xref:admin:spaces/initiatives/types.adoc[types d'initiatives et portes], vous devriez pouvoir accéder à l'espace d'initiative dans l'interface utilisateur.
+
+image::spaces/initiatives/initiatives_index_front.png[Initiatives index in front without initiatives]
+
+Les participants sont maintenant en mesure de créer des initiatives.
+Selon la façon dont le module des initiatives est configuré dans l'initialiseur ou comment le type d'initiative est configuré, il pourrait avoir besoin de demander une autorisation.
+
+== Configuration
+
+Pour commencer à créer une initiative, le participant doit cliquer sur le bouton "Nouvelle initiative".
+Selon la configuration de votre instance, ils doivent passer des étapes différentes avant de pouvoir envoyer leur initiative à la validation technique, où il est révisé
+par un administrateur avant d'être publié et de commencer à collecter des signatures.
+
+=== Choix du type d'initiative
+
+Si l'instance a plusieurs types d'initiative, la première étape est le choix du type d'initiative.
+
+image::spaces/initiatives/initiative_new_step_type.png[Initiative creation: initiative type choice]
+
+S'il n'y a qu'un seul type d'initiative configuré, cette étape est automatiquement ignorée.
+
+=== Création de contenu
+
+image::spaces/initiatives/initiative_new_step_content.png[Initiative creation: initiative content creation]
+
+.Formulaire de nouvelle initiative
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Le titre de l'initiative.
+
+|Description
+|Obligatoire
+|Le contenu de l'initiative.
+
+|Hashtag
+|Facultatif
+|Un hashtag pour l'initiative, de communiquer à ce sujet sur la plate-forme et les médias sociaux.
+
+|Type de collecte des signatures
+|Obligatoire
+|Dépend de la configuration du type d'initiative.
+
+|Secteur
+|Obligatoire
+|Dépend de la configuration du type d'initiative et des portées de type.
+
+|Fin de la période de collecte des signatures
+|Facultatif
+|Si l'auteur veut changer la date de fin de la collection de signatures. Peut être configuré à partir du type d'initiative.
+
+|Zone de stockage
+|Facultatif
+|Si l'auteur veut catégoriser leur initiative.
+
+|Ajouter des documents
+|Facultatif
+|Si l'auteur veut ajouter des pièces jointes à son initiative.
+
+|Ajouter une image
+|Facultatif
+|Si l'auteur veut ajouter une image, celle-ci est alors affichée sur la carte d'initiative dans la liste des initiatives.
+|===
+
+=== Comparaison de similitude
+
+Peut être désactivé par l'implémentation de votre organisation.
+Vérifie le reste des initiatives s'il y a d'autres initiatives similaires. S'il y en a, le système les affiche avant de continuer.
+C'est un moyen d'éviter les doublons et d'encourager les participants à soutenir d'autres initiatives similaires.
+
+=== Comité de promotion
+
+Si le comité promoteur est activé pour ce type d'initiative, cette étape permet aux participants de comprendre ce qu'ils doivent faire avant de pouvoir envoyer leur initiative pour publication.
+
+image::spaces/initiatives/initiative_new_step_committee.png[Initiative creation: initiative promoting committee]
+
+Voir l'article xref:admin:spaces/initiatives/author_manage/Committee.adoc[Promouvoir le comité] pour plus d'informations.
+
+=== Publiez votre pétition
+
+L'étape finale annonce la création de l'initiative au participant, et leur montre différents boutons selon qu'ils ont encore besoin de trouver des membres du comité de promotion.
+
+image::spaces/initiatives/initiative_new_step_finish.png[Initiative creation: initiative finish]
+
+Si le type d'initiative ne nécessite pas plusieurs membres du comité, les participants peuvent envoyer directement leur initiative à la validation technique.
+
+NOTE: L'initiative ne sera pas visible publiquement sur la liste des initiatives tant qu'elle n'aura pas été revue et publiée par un administrateur.
+
+À partir de cette page, les participants peuvent:
+
+* Revenir à la liste des initiatives
+* Modifier leur initiative
+* Accéder à leurs initiatives
+* Envoyer leur initiation à la validation technique
