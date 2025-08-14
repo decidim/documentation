@@ -1,0 +1,159 @@
+= Actualités
+
+== Understand the basics
+
+Le volet Blog permet aux administrateurs de publier des nouvelles sur un espace participatif, que les participants peuvent lire pour obtenir des mises à jour.
+
+image::components/blog/example01.png[Example of blog posts list]
+
+Tous les articles de blog sont disponibles sur la liste des postes, et les participants peuvent cliquer sur chaque article de blog pour en savoir plus sur les nouveautés.
+
+image::components/blog/example02.png[Example of a blog post]
+
+== Configuration
+
+=== Créer un composant de blog
+
+Pour créer un composant de blog, allez d'abord dans xref:admin:spaces.adoc[espace participatif] où vous voulez le créer.
+
+image::components/blog/component_blog.png[Add Blog component button]
+
+Alors:
+
+. Cliquez sur l'élément "Composants" dans le menu secondaire
+. Cliquez sur le bouton "Ajouter un composant"
+. Sélectionnez "Blog"
+. Remplissez le formulaire de création de composant
+
+Vous pouvez toujours mettre à jour ce formulaire et la configuration après avoir créé le composant, en cliquant sur l’icône
+image:icons/action_configure.png[Configurer l’icône] dans la liste des composants.
+
+image::components/blog/component.png[Add component form]
+
+.Ajouter une fonctionnalité : Formulaire d'Actualités
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Le titre de ce composant. Par exemple, "Blogs" ou "Dernières nouvelles"
+
+|Rang d'affichage
+|Facultatif
+|Quel ordre il a en relation avec les autres composants. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+|===
+
+.Formulaire de blog - Paramètres globaux
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Annonce
+|Facultatif
+|Une annonce générale visible sur la page d'accueil du composant Blog .
+
+|Commentaires activés
+|Facultatif
+|Si vous voulez que les participants soient en mesure de commenter sur les articles de blog.
+
+|Longueur maximale des commentaires
+|Facultatif
+|La limite de caractères que les participants ont lors de la rédaction de commentaires. Laisser 0 pour la valeur par défaut.
+|===
+
+.Définition des étapes
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Annonce
+|Facultatif
+|Une annonce générale qui sera visible sur la page générale de destination du blog.
+
+|Commentaires désactivés
+|Facultatif
+|Si vous voulez activer la création de commentaires pour cette étape.
+
+|Soutiens activés
+|Facultatif
+|Si vous voulez activer les soutiens pour cette étape.
+
+|Soutiens bloqués
+|Facultatif
+|Si vous voulez activer l'ajout de nouvelles approbations pour cette phase.
+|===
+
+=== Gérer les messages
+
+Pour commencer à créer et à gérer des messages, cliquez sur le titre du composant dans la barre de navigation ou dans la liste des composants, ou cliquez sur l'image
+: icons/action_edit. Icône ng[Gérer l'icône du composant] dans la liste des composants.
+
+image:components/blog/manage_posts.png[Gérer la table des posts]
+
+=== Créer un message
+
+Pour créer un message, cliquez sur le bouton "Nouveau post" en haut à droite de la page.
+
+image:components/blog/new_post.png[Formulaire du nouveau post]
+
+.Formulaire de création d'article d'actualités
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Auteur
+|Obligatoire
+|Compte des participants ou groupe d'utilisateurs qui créent le message.
+
+|Titre
+|Obligatoire
+|Quel est le titre de cet article.
+
+|Corps
+|Obligatoire
+|Quelle est la description de ce post.
+
+|Date de publication
+|Facultatif
+|Date de publication de la publication. Si dans le futur, la publication n'est pas publiée avant cette date.
+|===
+
+=== Actions
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Modifier l'icône]
+|Editer
+|Modifier ce post.
+
+|image:icons/action_folder.png[Icône du dossier]
+|Répertoire
+|Pour la classification des pièces jointes.
+
+|image:icons/action_attachments.png[Icône des pièces jointes]
+|Fichiers joints
+|Ajouter des documents liés à la publication.
+
+|image:icons/action_preview.png[Icône d'aperçu]
+|Aperçu
+|Voyez comment il est montré dans le frontend aux participants.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Autorisations
+|Gérer les autorisations nécessaires pour commenter ou avaliser ce billet de blog spécifique.
+
+|image:icons/action_delete.png[Supprimer l'icône]
+|Supprimez
+|Supprimer ce message.
+|===
+
+== Exemples
+
+Ci-dessous, vous pouvez trouver quelques liens vers des exemples de composants de blog:
+
+* https://meta.decidim.org/processes/news/f/1719/posts[Dernière nouvelle de l'association Decidim]
+* https://www.decidim.barcelona/processes/volem-decidir/f/6338/posts[News on a participatory process in Barcelona]
