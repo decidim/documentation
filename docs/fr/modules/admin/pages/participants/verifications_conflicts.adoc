@@ -1,36 +1,36 @@
-= Verifications conflicts
+= Conflit de vérification
 
-A verification conflict can happen when authorizations are enabled, and some participants create several accounts
-or get impersonated.
+Un conflit de vérification peut se produire lorsque les autorisations sont activées, et que certains participants créent plusieurs comptes
+ou se font passer pour un usurpateur.
 
 Par exemple :
 
-. A participant create an account, and get verified against an authorization.
-. Then they create another account and try to get verified again against the same authorization.
+. Un participant crée un compte et se fait vérifier contre une autorisation.
+. Puis ils créent un autre compte et tentent de se faire vérifier à nouveau avec la même autorisation.
 
-This can also happens with impersonations:
+Cela peut également se produire avec des imitations :
 
-. A participant get xref:admin:participants/impersonations.adoc[impersonated] with their data, but don't enter an email
-. Then they create an account, and try to verify themselves with the same verification
+. Un participant obtient xref:admin:participants/impersonations.adoc[impersonated] avec ses données, mais ne saisissez pas d'email
+. Puis ils créent un compte et essaient de se vérifier avec la même vérification
 
-For security, try to be extra cautious in these cases, and make sure an administrator reviews these potential conflicts.
-It depends a lot on which kind of verifications you've enabled in your organization, so most of the time an organization
-don't see any conflicts appear in this panel.
+Pour des raisons de sécurité, essayez d'être plus prudent dans ces cas, et assurez-vous qu'un administrateur examine ces conflits potentiels.
+Cela dépend beaucoup du type de vérification que vous avez activé dans votre organisation, de sorte que la plupart du temps une organisation
+ne voit aucun conflit apparaître dans ce panneau.
 
-image:participants/verifications_conflicts.png[Verification's conflicts panel]
+image:participants/verifications_conflicts.png[Panneau de conflits de vérification]
 
-When there is a verification conflict, administrators receive an email notification.
+En cas de conflit de vérification, les administrateurs reçoivent une notification par courriel.
 
-== Manage verifications conflicts
+== Gérer les conflits de vérifications
 
-In the verifications conflict panel, you can find all the conflicts, with:
+Dans le panneau de vérification de conflit, vous pouvez trouver tous les conflits, avec:
 
-* *User*: name of the non managed participant who tried to get verified from their account.
-* *Managed user*: name of the impersonated user with the same verification data.
-* *Attempts*: number of time the user tried to get verified with their data.
-* *Solved*: if the verification conflict was solved or not.
+* *Utilisateur* : nom du participant non géré qui a essayé d'être vérifié depuis son compte.
+* *Utilisateur géré* : nom de l'utilisateur avec les mêmes données de vérification.
+* *Tentatives* : nombre de fois où l'utilisateur a essayé d'être vérifié avec ses données.
+* *Résolu* : si le conflit de vérification a été résolu ou non.
 
-You can search for conflicts by participant email, name, or nickname in the search bar.
+Vous pouvez rechercher des conflits par courriel, nom ou pseudonyme dans la barre de recherche.
 
 === Actions
 
@@ -39,16 +39,16 @@ You can search for conflicts by participant email, name, or nickname in the sear
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_transfer_user.png[Transfer user]
+|image:icons/action_transfer_user.png[Transférer l'utilisateur]
 |Transférer l'utilisateur
-|To solve the verification conflict.
+|Résoudre le conflit de vérification.
 |===
 
 === Transférer l'utilisateur
 
-The transfer user button allows to solve the conflict between both account.
+Le bouton de transfert utilisateur permet de résoudre le conflit entre les deux comptes.
 
-image:participants/verifications_conflicts_transfer_user.png[Transfer user form]
+image:participants/verifications_conflicts_transfer_user.png[Formulaire de transfert d'utilisateur]
 
 .Transférer le formulaire utilisateur
 [cols="20h,10h,~"]
@@ -57,12 +57,12 @@ image:participants/verifications_conflicts_transfer_user.png[Transfer user form]
 
 |Raison
 |Obligatoire
-|Why you want to transfer the user account
+|Pourquoi souhaitez-vous transférer le compte utilisateur
 
 |Courriel
 |Obligatoire
 |L'e-mail de l'utilisateur à transférer
 |===
 
-After the user is transferred, both accounts, the managed one and the new one, is merged into one, that takes the
-email address entered in the form, and the valid verification is transferred to this account.
+Après le transfert de l'utilisateur, les deux comptes, celui géré et le nouveau, sont fusionnés en un, qui prend l'adresse e-mail
+saisie dans le formulaire, et la vérification valide est transférée sur ce compte.
