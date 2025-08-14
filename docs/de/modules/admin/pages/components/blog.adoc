@@ -1,0 +1,159 @@
+= Blog
+
+== Understand the basics
+
+The Blog component allows administrators to post news about a participatory space, which participants can read to get updates.
+
+image::components/blog/example01.png[Example of blog posts list]
+
+All blog posts are available on the post list, and participants can click each blog post to learn more about what's new.
+
+image::components/blog/example02.png[Example of a blog post]
+
+== Konfiguration
+
+=== Create a blog component
+
+To create a Blog component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
+
+image::components/blog/component_blog.png[Add Blog component button]
+
+Then:
+
+. Click on the "Components" item in the secondary menu
+. Click the "Add component" button
+. Select "Blog"
+. Fill the component creation form
+
+You can still update this form and the configuration after creating the component, by clicking the
+image:icons/action_configure.png[Configure icon] icon on the components list.
+
+image::components/blog/component.png[Add component form]
+
+.Komponente hinzufügen: Blog Formular
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|The title of this component. For instance, "Blogs" or "Latest news"
+
+|Bestellposition
+|Optional
+|Which order it has in relation to the other components. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+|===
+
+.Blog form - Global settings
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Mitteilung
+|Optional
+|A general announcement visible on the Blog component landing page.
+
+|Kommentare aktiviert
+|Optional
+|If you want participants to be able to comment on the blog posts.
+
+|Maximale Länge der Kommentare
+|Optional
+|The characters limit that participants have when making comments. Lassen Sie 0 für den Standardwert.
+|===
+
+.Step settings
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Mitteilung
+|Optional
+|A general announcement that will be visible on the general blog landing page.
+
+|Kommentare blockiert
+|Optional
+|Ob Sie das Erstellen von Kommentaren für diese Phase aktivieren möchten.
+
+|Befürworter aktiviert
+|Optional
+|Ob Sie Bestätigungen für diese Phase aktivieren möchten.
+
+|Befürworter blockiert
+|Optional
+|Whether you want to enable adding new endorsements for this phase.
+|===
+
+=== Beiträge verwalten
+
+To start creating and managing posts, click on the component title in the navigation bar or on the component list, or click on the
+image:icons/action_edit.png[Manage component icon] icon on the components list.
+
+image:components/blog/manage_posts.png[Beitragstabelle verwalten]
+
+=== Create a post
+
+To create a post, click the "New post" button on the top right of the page.
+
+image:components/blog/new_post.png[Neues Beitragsformular]
+
+.Neues Beitragsformular
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Author
+|Benötigt
+|Participant account or user group authoring the post.
+
+|Titel
+|Benötigt
+|Was ist der Titel dieses Beitrags.
+
+|Körper
+|Benötigt
+|Was ist die Beschreibung dieses Beitrags.
+
+|Publish time
+|Optional
+|Publication date for the post. If in the future, the post is not published until this date.
+|===
+
+=== Aktionen
+
+.Aktionen
+[cols="10h,20h,~"]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Edit icon]
+|Bearbeiten
+|Edit this post.
+
+|image:icons/action_folder.png[Folder icon]
+|Ordner
+|For classifying attachments.
+
+|image:icons/action_attachments.png[Attachments icon]
+|Anhänge
+|Add documents related to the post.
+
+|image:icons/action_preview.png[Preview icon]
+|Vorschau
+|See how it's shown in the frontend to participants.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Berechtigungen
+|Handle the authorizations needed to comment or endorse this specific blog post.
+
+|image:icons/action_delete.png[Delete icon]
+|Löschen
+|Delete this post.
+|===
+
+== Beispiele
+
+Below, you can find some links to example blog components:
+
+* https://meta.decidim.org/processes/news/f/1719/posts[Latest news of the Decidim association]
+* https://www.decidim.barcelona/processes/volem-decidir/f/6338/posts[News on a participatory process in Barcelona]
