@@ -1,78 +1,78 @@
-= Space administrators
+= Administrateurs de l'espace
 
 == Understand the basics
 
-You can give specific permissions to users in the different spaces, so they can only have access to some of the administration actions.
-These roles are administrators, moderators, collaborators, and valuators.
+Vous pouvez donner des permissions spécifiques aux utilisateurs dans les différents espaces, donc ils ne peuvent avoir accès qu'à certaines actions d'administration.
+Ces rôles sont des administrateurs, des modérateurs, des collaborateurs et des évaluateurs.
 
-* *Administrators*: they can administer the space and change the space settings.
-* *Collaborators*: they can see the space and its components before it's published and view the space settings.
-They can't edit anything.
-* *Moderators*: they can see the reported contents of the space and hide or unhide it.
-* *Valuators*: they can evaluate proposals, give them answers and update their statuses.
+* *Administrateurs* : ils peuvent administrer l'espace et modifier les paramètres de l'espace.
+* *Collaborateurs* : ils peuvent voir l'espace et ses composants avant leur publication et voir les paramètres de l'espace.
+Ils ne peuvent rien modifier.
+* *Modérateurs* : ils peuvent voir le contenu signalé de l'espace et le masquer ou le dévoiler.
+* *Valuators* : ils peuvent évaluer les propositions, leur donner des réponses et mettre à jour leurs statuts.
 
 == How to find it?
 
-To configure space administrators, click the "Process admins" or "Assembly admins" item in the corresponding space.
+Pour configurer les administrateurs de l'espace, cliquez sur l'élément "Administrateurs du processus" ou "Administrateurs de l'assemblée" dans l'espace correspondant.
 
 image::spaces/admins_list.png[Administrators of space]
 
 == Gérer les administrateurs
 
-You can find all the administrators on the list in the administration panel, with:
+Vous pouvez trouver tous les administrateurs dans la liste dans le panneau d'administration, avec:
 
-* *Name*: name of the administrator account.
-* *Email*: email of the administrator account.
-* *Last log in date*: last time the administrator was logged in.
-* *Invitation accepted at*: date when the administrator accepted the invitation by clicking the link in the invitation email.
+* *Nom*: nom du compte administrateur.
+* *E-mail* : e-mail du compte administrateur.
+* *Date de dernière connexion*: dernière fois que l'administrateur a été connecté.
+* *Invitation acceptée à* : date à laquelle l'administrateur a accepté l'invitation en cliquant sur le lien dans l'e-mail d'invitation.
 * *Role*: administrator role.
 
 == Actions
 
-.Actions in administrators list
+.Actions dans la liste des administrateurs
 [cols="10h,20h,~"]
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Modifier l'icône]
 |Editer
-|To edit the administrator role.
+|Éditer le rôle d'administrateur.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Supprimer l'icône]
 |Supprimez
-|To delete the space administrator rights. It doesn't delete the account of the administrator.
+|Supprimer les droits d'administrateur de l'espace. Il ne supprime pas le compte de l'administrateur.
 |===
 
-== Add a space administrator
+== Ajouter un administrateur d'espace
 
-Click on the *New space admin* button (depending in the kind of space you're in).
+Cliquez sur le bouton *Nouvel espace admin* (selon le type d'espace dans lequel vous êtes).
 
-image:spaces/admins_form.png[New space administrator form]
+image:espaces/admins_form.png[Nouveau formulaire d'administrateur d'espace]
 
-.New space administrator form
+.Nouveau formulaire d'administration de l'espace
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Nom
 |Obligatoire
-|What's the name of the new administrator.
+|Quel est le nom du nouvel administrateur.
 
 |Courriel
 |Obligatoire
-|What's the email of the new administrator, so they can receive an invitation if they don't already have an account.
+|Quel est l'e-mail du nouvel administrateur, afin qu'il puisse recevoir une invitation s'il n'a pas encore de compte.
 
 |Rôle
 |Obligatoire
-|Which role does this administrator should have in the space. Peut être un administrateur, un collaborateur, un modérateur ou un évaluateur.
+|Quel rôle cet administrateur doit avoir dans l'espace. Peut être un administrateur, un collaborateur, un modérateur ou un évaluateur.
 |===
 
 == Rôles
 
 === Administrateurs
 
-Un administrateur de l'espace peut administrer l'espace et modifier les paramètres de l'espace. They can also invite new space administrators.
-When managing the space, they would only see the following views and tabs.
+Un administrateur de l'espace peut administrer l'espace et modifier les paramètres de l'espace. Ils peuvent également inviter de nouveaux administrateurs de l'espace.
+Lors de la gestion de l'espace, ils ne verraient que les vues et les onglets suivants.
 
 image:espaces/admins_role_admin01.png[Vue des administrateurs de processus 01]
 
@@ -80,23 +80,23 @@ image:espaces/admins_role_admin02.png[Vue des administrateurs de processus 02]
 
 === Collaborateurs
 
-A space collaborator can preview a space before it's published.
+Un collaborateur de l'espace peut prévisualiser un espace avant sa publication.
 
 image:espaces/admins_role_collaborator.png[Vue des collaborateurs]
 
 === Modérateurs
 
-Un modérateur d'espace peut examiner le contenu signalé de l'espace et les masquer ou les dévoiler. They can also
-access the reported content in the global moderation panel, but don't see the contents reported from other spaces.
+Un modérateur d'espace peut examiner le contenu signalé de l'espace et les masquer ou les dévoiler. Ils peuvent aussi
+accéder au contenu signalé dans le panneau de modération globale, mais ne voir pas le contenu rapporté depuis d'autres espaces.
 
 image:espaces/admins_role_moderator.png[Vue des modérateurs]
 
-=== Valuators
+=== Évaluateurs
 
-A space valuator can review the proposals of the space that were assigned to them, by:
+Un évaluateur d'espace peut examiner les propositions de l'espace qui leur ont été attribuées par:
 
-* change the status of the proposals, by accepting or rejecting them.
-* give an answer to the proposals.
+* modifier le statut des propositions en les acceptant ou en les rejetant.
+* donner une réponse aux propositions.
 * ajouter une valeur monétaire aux propositions, afin qu'elles puissent être votées avec la composante budgétaire.
 
 image:espaces/admins_role_valuator.png[Vue des évaluateurs de processus]
