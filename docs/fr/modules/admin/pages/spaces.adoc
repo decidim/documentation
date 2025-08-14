@@ -1,0 +1,41 @@
+= Espaces
+
+== Understand the basics
+
+Les espaces participatifs sont les canaux par lesquels les citoyens peuvent participer à la prise de décision publique.
+Par défaut, une instance est fournie avec ces différents espaces :
+
+
+.Espaces participatifs
+|===
+|Nom |Description |Cas d'utilisation 
+
+|*xref:admin:spaces/processes.adoc[Concertations]*
+|Un processus participatif permet aux administrateurs de configurer différents composants participatifs, qui évoluent au cours des différentes phases participatives.
+|budgétisation participative, rappel des propositions, processus de vote ou de débat, etc.
+
+|*xref:admin:spaces/assemblies.adoc[Assemblies]*
+|Une assemblée permet aux administrateurs de configurer des composants participatifs dans un espace continu, avec la possibilité de définir des membres.
+|Espace d'organisation du comité, assemblée citoyenne, etc.
+
+|*xref:admin:spaces/initiatives.adoc[Initiatives]*
+|L'espace des initiatives permet aux administrateurs d'ouvrir un espace ascendant, avec différents types d'initiatives.
+|pétitions, demandes d'audience, demandes de concertation, etc.
+
+|*xref:admin:spaces/conferences.adoc[Conferences]*
+|Une conférence permet aux administrateurs d'organiser et de diffuser des événements, de traiter des inscriptions, des programmes , des conférenciers et des lieux.
+|Événement participatif, assemblée citoyenne, festival d'association, etc.
+|===
+
+NOTE: Toute organisation peut développer ses propres espaces en créant xref:modules.adoc[Modules].
+
+== Configuration
+
+Les espaces sont accessibles via la barre de navigation de l'administration.
+
+image::spaces_admin.png[Spaces in administrator sidebar]
+
+Une fois que vous commencez à publier des espaces, les participants voient les liens vers les différents index d'espaces apparaître dans le menu global de la page d'accueil,
+la barre de navigation de l'instance et le pied de page.
+
+image::spaces_visitor.png[Spaces visible in the public interface]
