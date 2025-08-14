@@ -1,0 +1,51 @@
+= Répondre à une initiative
+
+== Understand the basics
+
+Les initiatives devraient recevoir une réponse de votre organisation à un moment donné. Cela pourrait être avant la fin de la période de collecte des signatures,
+car elle a déjà été acceptée ou rejetée par un organe de votre structure, ou parce qu'il a atteint le nombre de signatures nécessaires
+avant la fin de la période de collecte.
+
+== Configuration
+
+=== Répondre à une initiative
+
+Cliquez sur l’icône « Répondre » dans la liste des initiatives pour répondre à une initiative.
+
+image::spaces/initiatives/initiative_backend_answer.png[Initiative backend answer]
+
+Sur cette page, vous pouvez voir le titre de l'initiative, la description, la date de création, l'état et le numéro de la signature, ainsi que les champs de la réponse
+.
+
+.Formulaire de réponse à l'initiative
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Répondre
+|Facultatif
+|Contenu de la réponse de l'initiative, qui est visible sur la page d'initiative.
+
+|URL de la réponse
+|Facultatif
+|Lien ajouté sur le contenu de la réponse.
+
+|Début de la période de collecte des signatures
+|Obligatoire
+|Date de début de la collection de signatures.
+
+|Fin de la période de collecte des signatures
+|Obligatoire
+|Date de fin de la collection de signatures. Vous pouvez le mettre la veille si vous voulez fermer l'initiative à de nouvelles signatures.
+|===
+
+image::spaces/initiatives/initiative_frontend_answer.png[Initiative frontend answer]
+
+=== Accepter ou rejeter
+
+Afin d'opérer le changement sur la liste des initiatives, l'administrateur doit aller sur la page d'édition de l'initiative et
+cliquez sur le bouton correspondant à la situation de l'initiative.
+Une fois qu'une période de collecte d'initiative publiée est terminée, il y a deux options :
+
+. L'initiative a reçu suffisamment de signatures : Cliquez sur le bouton "Accepter l'initiative"
+. L'initiative n'a pas assez de signatures: Cliquez sur le bouton "Rejeter l'initiative"
