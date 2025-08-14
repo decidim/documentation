@@ -1,14 +1,14 @@
-= Initiatives Initializer
+= Inicializador de iniciativas
 
-For using the initiatives module, you'll want to review the configurations that are in the initializer. See the xref:configure:initializer.adoc[general Initializer configuration] for more information regarding this file.
+Para usar el módulo de iniciativas, querrá revisar las configuraciones que se encuentran en el inicializador. Consulte xref:configure:initializer.adoc[configuración general de inicializador] para más información sobre este archivo.
 
-You'll need to change in the `config/initializer/decidim.rb` file. You could also create an ad-hoc file for these configurations, like `config/initializer/initiatives.rb`.
+Necesitarás cambiar en el archivo `config/initializer/decidim.rb`. También puede crear un archivo ad-hoc para estas configuraciones, como `config/initializer/initiatives.rb`.
 
-After making changes to this file you'll need to also restart your application server.
+Después de hacer cambios en este archivo también tendrá que reiniciar el servidor de aplicaciones.
 
-== Creation enabled
+== Creación habilitada
 
-Setting that defines whether creation is allowed to any validated user or not. Defaults to true.
+Configuración que define si la creación está permitida para cualquier usuario validado o no. Por defecto es verdadero.
 
 [source,ruby]
 ....
@@ -17,10 +17,10 @@ Setting that defines whether creation is allowed to any validated user or not. D
   end
 ....
 
-== Similarity threshold
+== Umbral de similitud
 
-Setting that defines the similarity minimum value to consider two
-initiatives similar. Defaults to 0.25.
+Establecer que defina el valor mínimo de la similitud para considerar dos iniciativas
+similares. Por defecto es 0.25.
 
 [source,ruby]
 ....
@@ -29,10 +29,10 @@ initiatives similar. Defaults to 0.25.
   end
 ....
 
-== Similarity limit
+== Límite de similaridad
 
-Setting that defines how many similar initiatives will be shown.
-Defaults to 5.
+Establecer que define cuántas iniciativas similares se mostrarán.
+Por defecto es 5.
 
 [source,ruby]
 ....
@@ -41,11 +41,11 @@ Defaults to 5.
   end
 ....
 
-== Minimum committee members
+== Mínimo de miembros del comité
 
 Minimum number of committee members required to pass the initiative to
-technical validation phase. Only applies to initiatives created by
-individuals.
+technical validation phase. Solo se aplica a las iniciativas creadas por
+individuos.
 
 [source,ruby]
 ....
@@ -54,7 +54,7 @@ individuals.
   end
 ....
 
-== Default signature time period length
+== Duración predeterminada del período de firma
 
 Number of days available to collect supports after an initiative has been
 published.
@@ -66,9 +66,9 @@ published.
   end
 ....
 
-== Default components
+== Componentes por defecto
 
-Components enabled for a new initiative
+Componentes habilitados para una nueva iniciativa
 
 [source,ruby]
 ....
@@ -77,10 +77,10 @@ Components enabled for a new initiative
   end
 ....
 
-== First notification percentage
+== Primer porcentaje de notificación
 
-Notifies when the given percentage of supports is reached for an
-initiative.
+Notifica cuando se alcanza el porcentaje dado de soportes para una iniciativa
+.
 
 [source,ruby]
 ....
@@ -89,10 +89,10 @@ initiative.
   end
 ....
 
-== Second notification percentage
+== Segundo porcentaje de notificación
 
-Notifies when the given percentage of supports is reached for an
-initiative.
+Notifica cuando se alcanza el porcentaje dado de soportes para una iniciativa
+.
 
 [source,ruby]
 ....
@@ -101,9 +101,9 @@ initiative.
   end
 ....
 
-== Stats cache expiration time
+== Tiempo de caducidad de la caché de estadísticas
 
-Sets the expiration time for the statistic data.
+Establece el tiempo de caducidad de los datos estadísticos.
 
 [source,ruby]
 ....
@@ -112,9 +112,9 @@ Sets the expiration time for the statistic data.
   end
 ....
 
-== Max time in validating state
+== Tiempo máximo para validar el estado
 
-Maximum amount of time in validating state.
+Cantidad máxima de tiempo en la validación de estados.
 After this time the initiative will be moved to
 discarded state.
 
@@ -125,11 +125,11 @@ discarded state.
   end
 ....
 
-== Print enabled
+== Impresión habilitada
 
-Print functionality enabled. Allows the user to get
-a printed version of the initiative from the administration
-panel.
+Función de impresión activada. Permite al usuario obtener
+una versión impresa de la iniciativa del panel de administración
+.
 
 [source,ruby]
 ....
@@ -138,33 +138,33 @@ panel.
   end
 ....
 
-== Timestamp service
+== Servicio Timestamp
 
-Set a service to generate a timestamp on each vote. The
-attribute is the name of a class whose instances are
-initialized with a string containing the data to be
-timestamped and respond to a timestamp method.
+Establecer un servicio para generar una marca de tiempo en cada voto. El atributo
+es el nombre de una clase cuyas instancias son
+inicializadas con una cadena que contiene los datos para ser
+timestamped y responder a un método timestamp.
 
 [source,ruby]
 ....
   config_accessor :timestamp_service
 ....
 
-== PDF signature service
+== Servicio de firmas PDF
 
-Set a service to add a signature to pdf of signatures.
-The attribute is the name of a class whose instances are
-initialized with the document to be signed and respond to a
-signed_pdf method with the signature added.
+Establecer un servicio para agregar una firma a pdf de firmas.
+El atributo es el nombre de una clase cuyas instancias son
+inicializada con el documento a ser firmado y responder a un método
+signed_pdf con la firma añadida.
 
 [source,ruby]
 ....
   config_accessor :pdf_signature_service
 ....
 
-== Do no require authorization
+== No requiere autorización
 
-This flag allows creating authorizations to unauthorized users.
+Esta bandera permite crear autorizaciones a usuarios no autorizados.
 
 [source,ruby]
 ....
