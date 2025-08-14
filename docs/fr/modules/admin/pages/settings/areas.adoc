@@ -2,10 +2,10 @@
 
 include::partial$deprecated.adoc[]
 
-Areas are all the sectors that an organization can have.
+Les zones sont tous les secteurs qu'une organisation peut avoir.
 
 Areas are pretty similar to xref:admin:settings/scopes.adoc[scopes], meaning that they're a way of allowing a
 better navigation and filtering in the spaces and components.
 
-You can read more information about the history of Areas in
-this https://github.com/decidim/decidim/issues/3540#issuecomment-427324532[GitHub comment].
+Vous pouvez lire plus d'informations sur l'histoire des Zones dans
+ce https://github.com/decidim/decidim/issues/3540#issuecomment-427324532[Commentaire GitHub].
