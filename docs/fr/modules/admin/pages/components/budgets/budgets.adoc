@@ -1,0 +1,108 @@
+= Les budgets
+
+== Understand the basics
+
+Il est important de comprendre que Budget n'est pas seulement le nom du composant, mais qu'il est aussi une entité du composant.
+En effet, un même volet budgétaire peut contenir plusieurs budgets.
+
+image::components/budgets/multiple_budgets_front.png[Budgets list in frontend]
+
+Cela permet de créer des workflows complexes et de répondre à plusieurs cas d'utilisation.
+
+== Configuration
+
+Une fois que vous avez créé votre volet Budget, vous êtes redirigé vers la liste des budgets. Là, vous pouvez créer et gérer les budgets de
+votre composant. Selon le processus que vous souhaitez organiser, vous pouvez choisir :
+
+* Pour créer un budget unique, où tous vos projets à voter sont affichés.
+* Créer des budgets multiples, avec des projets dédiés à l'intérieur de chacun d'eux.
+
+La première chose à faire est de créer votre premier budget, en cliquant sur le bouton "Nouveau budget".
+
+image::components/budgets/new_budget_button.png[New budget button]
+
+== Création du budget
+
+image::components/budgets/new_budget.png[New budget form]
+
+.Nouveau formulaire de budget
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Quel est le titre de ce budget. Par exemple, « District A »
+
+|Rang d'affichage
+|Facultatif
+|Quel ordre il a par rapport aux autres budgets. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux budgets, « Budget » avec le poids « 10 » et « Budget b » avec le poids « 0 », puis « Budget b » est le premier lorsque vous commandez.
+
+|Description
+|Facultatif
+|La description de ce budget, affichée uniquement par les participants s'il y a plusieurs budgets.
+
+|Budget total
+|Obligatoire
+|Le montant total disponible pour ce budget.
+|===
+
+== Gérer les budgets
+
+image::components/budgets/manage_budgets.png[Manage budgets table]
+
+Sur la liste des budgets dans le panneau d'administration, les administrateurs peuvent voir :
+
+* *Nom*: Nom du budget.
+* *Budget total*: Le budget total alloué au budget.
+* *Nombre de projets* : Le nombre de projets inclus dans chaque budget.
+
+Cette page vous permet également de voir les votes finis et en attente que les différents projets ont reçus dans tous les budgets.
+
+Vous pouvez également exporter tous les projets du composant dans différents formats en format CSV, JSON et Excel.
+
+=== Actions
+
+.Actions
+[cols="10h,~,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Modifier l'icône]
+|Editer
+|Éditer le budget.
+
+|image:icons/action_list.png[Gérer l'icône des projets]
+|xref:admin:components/budgets/projects.adoc[Gérer les projets]
+|Permet de gérer les projets d'un budget.
+
+|image:icons/action_preview.png[Icône d'aperçu]
+|Aperçu
+|Pour voir la page budget dans l'interface utilisateur.
+
+|image:icons/action_delete.png[Supprimer l'icône]
+|Supprimez
+|Pour supprimer le budget. Ne peut être fait que s'il n'y a pas de projets.
+|===
+
+== Flux de travail
+
+Une des caractéristiques du volet Budget est la capacité de définir vos propres flux de travail.
+
+Cela signifie que vous pouvez définir plusieurs Budgets, par exemple un pour chaque quartier ou district de la ville, définissez plusieurs règles
+concernant la façon dont les gens peuvent voter sur ces budgets. Par défaut, trois workflows sont disponibles :
+
+* Votez en un seul: permet aux participants de voter dans n'importe quel budget, mais dans un seul.
+* Votez en tout: permet aux participants de voter dans tous les budgets.
+* Voter dans une composante aléatoire : permet aux participants de voter uniquement dans un seul budget, sélectionné au hasard.
+
+Cela peut être étendu dans votre application par un développeur, en développant vos propres Workflows. Par exemple pour la
+https://www.decidim. arcelona/processes/PressupostosParticipatius[2020/2021 Processus de budgétisation participative à Decidim Barcelona],
+les gens pouvaient voter dans deux districts : celui où ils vivaient et celui de leur choix. Ceci a été défini dans la
+https://github.com/AjuntamentdeBarcelona/decidim-barcelona/blob/743be2a210e8745d2dc443166642b285aed2b356/lib/budgets_workflow_pam2021.rb[application decidim-barcelona elle-même].
+
+Vous pouvez en savoir plus sur Workflows dans https://github.com/decidim/decidim/blob/1ab5cd8fdabef48f5be94ff9c30c6bb3bc9a2f8f/decidim-budgets/README.md#budget-workflows[decidim-budgets README.md].
+
+NOTE: Vous voulez seulement avoir un vote sans beaucoup de complications ? Vous aimez un vote à l'échelle de la ville? Don't worry: if you define only one
+Budget, then people are redirected directly on the projects list.
