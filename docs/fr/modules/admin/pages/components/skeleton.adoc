@@ -1,0 +1,160 @@
+= Squelette
+
+== Understand the basics
+
+Le composant Squelette permet à des personnes de XXX
+
+À partir de ce point de départ, il pourrait y avoir d'autres configurations, telles que:
+
+*
+
+À quoi ressemble le composant en front-office :
+
+image:components/skeleton/example01.png[]
+image:components/skeleton/example02.png[]
+image:components/skeleton/example03.png[]
+image:components/skeleton/example04.png[]
+
+== Configuration
+
+Pour créer un composant de blog, allez d'abord dans xref:admin:spaces.adoc[espace participatif] où vous voulez le créer.
+
+image::components/skeleton/component_skeleton.png[Add component button]
+
+Alors:
+
+. Cliquez sur l'élément "Composants" dans le menu secondaire
+. Cliquez sur le bouton "Ajouter un composant"
+. Sélectionnez "Skeleton"
+. Remplissez le formulaire de création de composant
+
+image:components/skeleton/component.png[Ajouter un formulaire de composant]
+
+
+.Ajouter un composant : formulaire de squelette
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Quel est le titre de cette fonctionnalité. Par exemple, "Skeletons"
+
+|Rang d'affichage
+|Facultatif
+|Quel ordre il a en relation avec les autres squelettes. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+|===
+
+
+.Ajouter un composant : Formulaire de squelette - Paramètres globaux
+|===
+|Champ |Type |Description
+
+|Portées activées
+|Facultatif
+|Cochez cette case si vous voulez que le filtrage des portées dans ce composant.
+
+|Secteur
+|Facultatif
+|Ce composant appartient à xref:admin:settings/scopes.adoc[Scope].
+
+|Portée générale
+|Facultatif
+|
+
+|Commentaires activés
+|Facultatif
+|Si vous voulez avoir des commentaires dans les rencontres.
+
+|Longueur maximale des commentaires
+|Facultatif
+|Quelle est la limite de caractères que les participants ont pour faire des commentaires. Laisser 0 pour la valeur par défaut.
+
+|Les autorisations d'actions peuvent être définies pour chaque squelette
+|Facultatif
+|Si vous voulez être en mesure de définir les permissions pour chaque squelette.
+
+|Annonce
+|Facultatif
+|Une annonce générale qui sera visible sur la page d'accueil des squelettes généraux.
+|===
+
+
+.Ajouter un composant : Formulaire de squelettes - Paramètres de l'étape
+|===
+|Champ |Type |Description
+
+|Commentaires désactivés
+|Facultatif
+|Si vous voulez activer les commentaires pour cette phase.
+
+|Annonce
+|Facultatif
+|Une annonce générale qui sera visible sur la page d'atterrissage générale du squelette.
+|===
+
+== Gérer les squelettes
+
+image:components/skeleton/manage_skeletons.png[Gérer la table des squelettes]
+
+=== Exporter tout
+
+Permet d'exporter les squelettes dans différents formats.
+
+* Squelettes en CSV
+* Squelettes en JSON
+* Squelettes en Excel
+* Commentaires en tant que CSV
+* Commentaires en JSON
+* Commentaires en tant qu'Excel
+
+== Nouveau formulaire de squelette
+
+image:components/skeleton/new_skeleton.png[Nouvelle forme de squelette]
+
+
+.Nouveau formulaire de squelette
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Quel est le titre de ce squelette. Par exemple, « District A »
+
+|Rang d'affichage
+|Facultatif
+|Quel ordre aura-t-il en relation avec les autres squelettes. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+
+|Description
+|Facultatif
+|Quelle est la description de ce squelette.
+|===
+
+=== Actions
+
+
+.Actions
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_preview.png[Icône d'aperçu]
+|Aperçu
+|Pour voir comment il est montré dans le frontend aux participants.
+
+|image:icons/action_list.png[Gérer l'icône des projets]
+|xref:_manage_projects[Gérer les projets]
+|Vous permet de gérer les projets d'un squelette.
+
+|image:icons/action_edit.png[Modifier l'icône]
+|Editer
+|Modifier le formulaire pour un squelette.
+
+|image:icons/action_delete.png[Supprimer l'icône]
+|Supprimez
+|Supprimer ce squelette. Peut être fait unquement quand il n'y a pas de projets dans ce budget.
+|===
+
+== Exemples
+
+Quelques exemples d'utilisation de ce composant :
+
+*
