@@ -1,0 +1,41 @@
+= Participants
+
+== Understand the basics
+
+L'onglet participants vous permet de faire certaines tâches avec les participants, parmi eux:
+
+* Gérer les droits d'accès à l'administration de la plateforme
+* Pour contacter les participants
+* Gérer l'accès des participants à des espaces spécifiques
+* certifier l'identité des participants spécifiques
+* certifier l'authenticité des organisations d'utilisateurs ou collectifs
+
+== Configuration
+
+Pour accéder au panneau de configuration des Participants, allez dans le panneau d'administration et cliquez sur l'élément "Participants" dans la barre de navigation d'administration.
+
+image::participants/participants_menu.png[Participants menu]
+
+Là, vous voyez d'abord la liste des administrateurs de la plate-forme.
+
+image::participants/participants_sidebar_menu.png[Participants sidebar menu]
+
+Dans le panneau de navigation secondaire, vous pouvez voir toutes les possibilités de configuration des participants :
+
+* xref:admin:participants/admins.adoc[Administrateurs]
+* xref:admin:participants/groups.adoc[Groupes d'utilisateurs]
+* xref:admin:participants/participants.adoc[Participants]
+* xref:admin:participants/impersonations.adoc[Utilisateurs représentés]
+** xref:admin:participants/verifications_conflicts.adoc[Conflits de vérification]
+* xref:admin:participants/authorizations.adoc[Autorisations]
+** xref:admin:participants/authorizations/identity_documents.adoc[Documents d'identité]
+** xref:admin:participants/authorizations/code_postal_letter.adoc[Code par lettre postale]
+** xref:admin:participants/authorizations/census.adoc[Recensement de l'organisation]
+
+Certains de ces éléments peuvent ne pas apparaître dans ce menu, car ils ne sont pas activés.
+Pour vérifier comment les activer, allez sur l'article de documentation de l'élément manquant.
+
+== Exemples
+
+Vous voulez ajouter vos collègues pour qu'ils puissent modifier la plateforme.
+Vous voulez définir des flux spécifiques pour que les participants puissent participer à un espace participatif spécifique.
