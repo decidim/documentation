@@ -1,0 +1,408 @@
+= Initiatives
+
+An initiative is a special type of participatory process that can be promoted by anyone (independently of other channels or participation spaces) through the collection of (online and in-person) signatures for the organization to carry out a specific action (modify a regulation, initiate a project, change the name of a department or a street, etc.).
+
+The promoters of an initiative can define its objectives, gather support, debate, disseminate it and define meeting points where signatures can be collected from the attendees or debates open to other participants.
+
+Examples: An initiative can collect signatures to call for a consultation among all the people of an organization, or to create an assembly, or to call for a process of budget increase for a territory or area of the organization. During the process of collecting signatures, more people can add to this demand and carry it forward in the organization.
+
+Initiatives are to be distinguished from the other participation spaces because they can be used as a participatory tool or mechanism promoted by participants. In other words, the initiatives are mechanisms for semi-direct democracy through which participants can promote a certain action of common interest to the organization, by collecting a specific number of signatures. In this case, what the organization has to do is enable the promotion of these initiatives and offer the necessary technical support and advice to the people concerned. The role of the platform’s administrator, then, is somewhat different from that of the other participation spaces.
+
+In the first place, you will have to configure the various forms of initiatives. This could be specified in a regulation (like a municipal normative or state law), specifying the number of signatures required for processing the various types of initiatives. For example, an initiative for incorporating one or several items into the Municipal Council’s agenda evidently requires fewer signatures than another initiative for promoting a binding consultation.
+
+== 0. Initiative setup
+
+How initiatives work depends on two things: how the initiative module is configured through the xref:admin:initiatives_initializer.adoc[initializer] (in code) and how the initiative type is configured in the administration panel.
+
+Regarding initiatives type, **an administrator** needs to define one. For Initiatives to work on an organization there must be at least one initiative type created and configured with at least one initiative type scope. If there's only one type then the participant will not get the possibility to choose the initiative type, this step will be skipped in the initiative creation wizard.
+
+Some real examples from the city of Barcelona are:
+
+* To add an item to the Municipal Council or Districts agendas
+* To perform a participatory process
+* To create a new assembly
+* To approve or modify a regulation
+* To request the holding of a citizen consultation
+* To call for assemblies (neighborhood councils or public audiences)
+
+=== New initiative type form
+
+image:admin_initiative_type.png[New initiative type form]
+
+
+.Admin new initiative type form: General information
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|Title of the initiative type. For instance, "New park at city center".
+
+|Description
+|Required
+|Explanation of what can be done with this initiative type.
+
+|Banner image
+|Required
+|An image for this initiative type. NOTE: At the moment this is not used.
+|===
+
+
+.Admin new initiative type form: Options
+|===
+|Field |Type |Description
+
+|Signature type
+|Optional
+|Which kind of signature type will be allowed. Options are: Online, In-person and Mixed. The Mixed option allows a participant to choose which signature type will have the initiative.
+
+|Enable attachments
+|Optional
+|Whether it'll allow to upload attachments to initiatives.
+
+|Enable participants to undo their online signatures
+|Optional
+|Can a participant undo its signature when they already signed?
+
+|Enable authors to choose the end of the signature collection period
+|Optional
+|Can the authors of an initiative change the end of the signature collection period?
+
+|Enable authors to choose the area for their initiative
+|Optional
+|Can the authors choose the area of their initiative?
+
+|Enable child scope signatures
+|Optional
+|This config flag doesn't support offline votes, it enables sub-scopes and works with an authorization handler that associates a scope to the user, make sure you select that authorization, bellow in authorization settings. For it to work, scopes need to be configured in a hierarchical way : 1 Parent - N Child.
+
+|Only allow global scope initiatives creation
+|Optional
+|Tick this flag if you enabled "Child scope signature" and configured the global scope as your parent scope. By enabling this, scope selection will be skipped in the initiative creation wizard.
+
+|Enable promoting committee
+|Optional
+|Whether it will only allow individual initiatives (made by only one person) or allow collective initiatives (multiple promoters, being multiple individuals or a user group).
+
+|Minimum of committee members
+|Optional
+|When "Enable promoting committee" option is checked, defines the minimum number of promoter's committee member to send the initiative to technical validation
+
+|Collect participant personal data on signature
+|Optional
+|Adds a step to the signature process. When a participant clicks on the signature button, they will be redirected to a form asking for some personal data. This will be used with the PDF export action after the recollection period has ended.
+
+|Legal information about the collection of personal data
+|Depends on whether the option "Collect participant personal data on the signature" is checked
+|Privacy notice and terms of use for the participant personal data during the signature process.
+|===
+
+
+.Admin new initiative type form: Authorization settings
+|===
+|Field |Type |Description
+
+|Authorization to verify document number on signatures
+|Optional
+|When a participant is making the signature process, will they be asked for an authorization?
+
+|Add SMS code validation step to the signature process
+|
+|During the signature process, will it ask for SMS validation? See xref:services:sms.adoc[configuration of SMS service].
+|===
+
+=== New initiative type scope form
+
+An initiative type can also have scopes associated. For Initiatives it needs at least one scope configured.
+
+image:admin_initiative_type_scope.png[New initiative type form]
+
+
+.Admin new initiative type scope form
+|===
+|Field |Type |Description
+
+|Scopes
+|Required
+|A Scope. An author can choose this scope in the creation of the initiative.
+
+|Signatures required
+|Required
+|Number of signatures the initiative need to have before the end period so it can be accepted.
+|===
+
+== 1. Create an initiative
+
+This action is done by **the author**. The author is a participant that creates the initiative. Depending on how the initiatives module is configured in the initializer or how the initiative type is configured, it may need to ask for authorization, or it will even not show the "New initiative" button.
+
+image:initiative_list.png[Initiatives list]
+
+For creating an initiative, a participant must click in the "New initiative" button. Then they will have a wizard with multiple steps:
+
+=== 1.1 Choose the initiative type
+
+image:initiative_new_step1.png[Initiative creation: step 1]
+
+=== 1.2 Add title and description
+
+image:initiative_new_step2.png[Initiative creation: step 2]
+
+=== 1.3 [Optional] Similarity comparison
+
+Checks the rest of the initiatives if there are other similar initiatives. If there are, the system will show them before continuing. This is a way to avoid duplicates.
+
+=== 1.4 Finish
+
+image:initiative_new_step3.png[Initiative creation: step 3]
+
+image:initiative_new_step4.png[Initiative creation: step 4]
+
+=== Actions after it was created
+
+After the initiative was created, a participant can see the initiative page, but until the initiative is reviewed and accepted by an administrator, through the technical validation, it will not be published and visible for all the participants.
+
+image:initiative_show.png[Initiative show]
+
+In the sidebar a participant can make some actions: Edit, Print and Send to technical validation.
+
+image:initiative_actions.png[Initiative actions]
+
+==== Edit
+
+After the initiative was created and before it was sent to technical validation, **an author** can edit and correct the initiative if it has any error.
+
+image:initiative_edit.png[Initiative edit]
+
+==== Print
+
+An author can also print the initiative.
+
+image:initiative_print.png[Print an initiative]
+
+==== Technical validation
+
+After the author has reviewed how the initiative will look, they can send it to technical validation.
+
+image:initiative_send_to_technical_validation.png[Send initiative to technical validation]
+
+== 2. Send initiative to technical validation
+
+This action is done by **the author**.
+
+After it has been reviewed by the author, it can be sent to "Technical validation", but it depends in the configuration of the initiative type, in whether the options "Enable promoting committee" and "Minimum of committee members" are configured.
+
+=== Promoter's committee
+
+An initiative type can optionally be supported by a promoter's committee, with a minimum number of committee members. Once the user has created the initiative and before it can be sent for technical validation they need to invite committee members to promote it.
+
+When the user has created the initiative they will be given a link to share with possible committee members, which will look something like `/initiatives/.../committee_requests/new`
+
+When a prospective committee member opens the link, they can click a button which allows them to request to be part of the committee. The initiative author then needs to approve each request. The author can approve them by clicking on the "Edit" button of their initiative at the bottom of the form they can approve or reject committee members.
+
+image:initiative_commitee_members_send_to_technical_false.png[Initiative promotor committee: edit screen]
+
+The initiative cannot be sent to technical validation until it meets the minimum number of committee members required. You can find the invitation link in the edit form.
+
+image:initiative_edit_commitee_members.png[Initiative promotor committee: edit screen]
+
+Share the invitation link with the people you'd like to have on your committee.
+
+image:initiative_commitee_members_ask.png[Initiative promotor committee: edit screen]
+
+The people invited with the link will be able to read the initiative and ask to be part of the committee.
+
+image:initiative_commitee_members_sent.png[Initiative promotor committee: edit screen]
+
+The request is sent and the author can then and accept or refuse it in the initiative edit form.
+
+image:initiative_commitee_members_approve.png[Initiative promotor committee: edit screen]
+
+image:initiative_commitee_members_send_to_technical_true.png[Initiative promotor committee: edit screen]
+
+Once enough people have joined the promoter committee the initiative author can send it for
+technical validation.
+
+== 3. Publish an initiative
+
+This action is done by **an administrator**.
+
+After the initiative was sent to technical validation by a participant, an administrator can view all the initiatives in the admin panel and make some corrections.
+
+image:initiative_admin_list.png[Admin initiatives list]
+
+=== Actions
+
+Regarding the actions in an initiative, an administrator can "Preview", "Edit", "Answer" or "Print" an initiative:
+
+image:initiative_admin_list_actions.png[Initiative admin list actions]
+
+|===
+|Icon |Name |Definition
+
+|image:action_preview.png[Preview icon]
+|Preview
+|To see how it's shown in the frontend to participants.
+
+|image:action_edit.png[Edit icon]
+|Edit
+|Edit form for Initiative.
+
+|image:action_answer.png[Answer icon]
+|Answer
+|Allows to answer an Initiative.
+
+|image:action_print.png[Print icon]
+|Print
+|Allows to print.
+|===
+
+=== Components
+
+Once an initiative has been created it gets the Meetings and Page component enabled by
+default. The initiative author has no control over these - an admin will need to manage
+them. All of the other usual components may be added by an admin too.
+
+image:initiative_admin_show.png[Admin initiative show page]
+
+There are also other features inside initiatives, like Attachments and Moderations for the comments.
+
+image:initiative_admin_sidebar.png[Admin initiative sidebar]
+
+=== Publish
+
+After the initiative was reviewed and technically approved by an admin, for instance for checking that what the initiative is asking is legal or abides to the normative (ie it's municipal competency), then it can be published:
+
+image:initiative_admin_actions.png[Admin initiative actions]
+
+== 4. Sign an initiative
+
+This action is done by **a participant**.
+
+After the initiative was published, it'll be visible in the initiatives listing page (/initiatives):
+
+image:initiative_list_published.png[Initiative list after it was published]
+
+image:initiative_admin_show_published.png[Admin initiative show after it was published]
+image:initiative_show_published.png[Initiative show after it was published]
+
+And authorized participants can sign it:
+
+image:initiative_admin_show_published_detail.png[Admin initiative show after it was published (detail)]
+
+image:initiative_show_signed.png[Initiative show after it was signed]
+
+== 5. Export signatures
+
+This action is done by **an administrator**. After the initiative has started to get signatures, there's an option for exporting a PDF of the signatures:
+
+image:initiative_actions_export.png[Initiative actions with Export to PDF]
+
+image:initiative_actions_export_pdf.png[Initiative exported PDF]
+
+== 6. Answer an initiative
+
+After the initiative has collected all the signatures then it can be answered by an administrator. An initiative answer don't have different types.
+
+image:initiative_backend_answer.png[Initiative backend answer]
+
+image:initiative_frontend_answer.png[Initiative frontend answer]
+
+== Initiative statuses
+
+For better understanding all the status, this is a summary:
+
+|===
+|Status |Explanation
+
+|Created
+|The initiative has been created but is not yet public for every visitor or the rest of the participants.
+
+|Technical validation
+|The initiative needs to be reviewed by an administrator. From here, it can be "discarded" or "published"
+
+|Expired
+|The initiative wasn't reviewed by an administrator and wasn't approved, and the maximum time for validation has passed.
+
+|Discarded
+|The initiative was reviewed by an administrator and was discarded, so it's not published.
+
+|Published
+|The initiative was reviewed by an administrator and was approved, so it's published.
+
+|Rejected
+|The period for signature recollection has ended and there weren't enough signatures.
+
+|Accepted
+|The period for signature recollection has ended and there were enough signatures.
+|===
+
+[plantuml]
+@startuml
+:Created;
+:Technical validation;
+if (has passed the maximum validation time?) then (yes)
+  #pink:Expired;
+  kill;
+elseif (validated?) then (no)
+  #pink:Discarded;
+  kill;
+else (yes)
+  #palegreen:Published;
+  if (enough signatures?) then (no)
+    #pink:Rejected
+    (not enough signatures);
+    kill;
+  else (yes)
+    #palegreen:Accepted
+    (enough signatures);
+    stop;
+  endif;
+endif
+@enduml
+
+Finally, these are all the relevant settings in every moment in the initiatives life cicle:
+
+[plantuml]
+@startuml
+(*) --> "Create a new initiative"
+if "Has only one type?" then
+--> [Yes] "Fill initiative form"
+else
+--> [No] "Select initiative type"
+--> "Fill initiative form"
+Endif
+partition Created {
+  if "Is the User a UserGroup?" then
+  --> [Yes] "Send to Technical Validation"
+  else
+  --> [No] Collect the minimum number of committee members (2 by default)
+  --> "Send to Technical Validation"
+  Endif
+}
+partition Validating {
+  if "Has passed the maximum time for validation (60 days by default)?" then
+    --> [Yes] "Expired"
+  else
+    --> [No] if "Is accepted by an administrator?" then
+      --> [No] "Discarded"
+      else
+      --> [Yes] "Publish"
+      endIf
+  endIf
+}
+partition Published {
+  --> "Signature process"
+  if "Has passed the configured time window for validation (60 days by default)?"
+    --> [Yes] "Expired"
+  else
+    --> [No] Export PDF to signatures
+    --> Check signatures with offline signatures for duplicates (if the Initiative has them)
+    --> if "Has the initiative get the number of signatures required?" then
+      --> [No] Rejected
+    else
+      --> [Yes] Accepted
+    endIf
+  endIf
+}
+--> (*)
+@enduml
