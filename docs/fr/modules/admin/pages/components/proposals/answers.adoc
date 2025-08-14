@@ -1,0 +1,134 @@
+= Réponses
+
+== Understand the basics
+
+Les réponses aux propositions permettent aux administrateurs ou aux évaluateurs d'examiner une proposition et de lui donner une réponse officielle, avec les statuts associés.
+Il permet alors de filtrer les propositions par leurs statuts, de lire la réponse qui a été donnée, et d'importer les propositions acceptées dans les
+xref:components/budgets. composant doc[budgets]
+
+NOTE: Pour en savoir plus sur les évaluateurs, reportez-vous à xref:admin:participants/admins.adoc#_valuators[Administrateurs Valuateurs].
+
+image::components/proposals/answers/proposal_answer_state_accepted.png[Proposal answer state: Accepted]
+
+== Configuration
+
+=== Répondre à une proposition
+
+Pour répondre à une proposition, recherchez la proposition à laquelle vous voulez répondre et cliquez dans l'image:icons/action_answers.png[icône de proposition de réponse]
+Icône de réponse.
+
+Vous êtes ensuite redirigé sur la page de réponse, qui contient trois sections:
+
+==== Métadonnées
+
+Cette section affiche les informations générales sur la proposition, comme son lien, son auteur, la description de la proposition,
+combien de votes, d'aiment ou de commentaires il a reçu, etc.
+
+image::components/proposals/answers/proposal_answer_metadata.png[Proposal answer metadata form]
+
+==== Notes privées
+
+La section Notes privées permet aux administrateurs ou aux évaluateurs de laisser des notes internes, non visibles par les participants.
+
+image::components/proposals/answers/proposal_answer_notes.png[Proposal answer private notes form]
+
+==== Répondre
+
+Cette section permet aux administrateurs ou aux évaluateurs de donner une réponse et un statut à la proposition.
+
+NOTE: Pour créer le modèle de réponse à la proposition et répondre rapidement aux différentes propositions, consultez l'article
+xref:admin:admin:templates/proposal_answers.adoc[Proposal answers] .
+
+image::components/proposals/answers/proposal_answer.png[Proposal answer form]
+
+.Répondre au formulaire de proposition
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Sélectionnez un modèle de réponse
+|Facultatif
+|Permet de sélectionner un modèle xref:admin:templates/proposal_answers.adoc[Proposal answers template], d'assigner rapidement un statut à la proposition
+et d'utiliser la réponse du modèle associée.
+
+|Statut
+|Obligatoire
+|Par défaut, vous pouvez choisir entre : Sans réponse, Évaluation, Acceptée, rejetée. Vous pouvez modifier et ajouter des statuts dans la page de gestion de la proposition
+
+
+|Répondre
+|Facultatif
+|Une explication sur la raison pour laquelle la proposition est acceptée, rejetée, évaluée, ou autre.
+
+|Coûts
+|Obligatoire
+|Requis si "Activer les coûts sur les réponses aux propositions" est activé dans les paramètres du composant de propositions et si le statut est accepté.
+Un nombre qui indique le coût de la proposition.
+
+|Rapport de coût
+|Obligatoire
+|Requis si "Activer les coûts sur les réponses aux propositions" est activé dans les paramètres du composant de propositions et si le statut est accepté.
+
+|Explication du coût de la proposition.
+|Période d'exécution
+|Obligatoire
+|===
+
+=== Progrès
+
+Si le composant Propositions paramètre "Publier les réponses immédiatement" est coché, alors la réponse est visible au public
+immédiatement après avoir cliqué sur le bouton "Répondre".
+
+Les statuts sont visibles sur la liste des propositions, les cartes et les pages. De nouveaux statuts peuvent être créés, et ceux par défaut peuvent être modifiés ou supprimés.
+
+image::components/proposals/answers/proposal_answer_state_accepted_card.png[Proposal card answer custom status]
+
+Les statuts peuvent être adaptés aux besoins de votre organisation en cliquant sur le bouton "Statuts" dans la liste des propositions d'administration.
+
+image::components/proposals/answers/proposal_statuses_back.png[Proposal statuses list]
+
+Cliquez sur le bouton "Nouveau statut" pour commencer à créer vos statuts personnalisés.
+
+.Répondre au formulaire de proposition
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Le titre du statut, affiché sur les fiches de proposition, les listes et les filtres.
+
+|En-tête de réponse
+|Obligatoire
+|Le titre de la réponse, qui apparaît sur la page de la proposition dans la boîte de réponses.
+
+|Couleur 
+|Obligatoire
+|La couleur de la zone de statut et du tag.
+|===
+
+Un aperçu de la boîte de réponse et du tag est affiché en bas du formulaire.
+
+image::components/proposals/answers/proposal_status_form.png[Proposal new status form]
+
+=== Publication
+
+Vous pouvez contrôler quand les réponses sont publiées en utilisant la case "Publier les réponses immédiatement" dans la configuration de la proposition.
+Pour activer la publication automatique, cochez cette case.
+
+Si vous voulez contrôler quand publier les réponses d'une proposition ou de propositions multiples, suivez ces étapes :
+
+. Ne pas cocher la case "Publier les réponses immédiatement" dans la configuration du composant de proposition
+. Répondre aux propositions (les réponses ne sont pas encore publiées)
+. Lorsque vous voulez publier les réponses, sélectionnez les propositions
+. Cliquez sur le bouton "Actions"
+. Cliquez sur l'option "Publier les réponses"
+
+image::components/proposals/answers/proposal_answer_publish.png[Proposal answer publication: action]
+
+Ensuite, cliquez sur le bouton "Publier".
+
+image::components/proposals/answers/proposal_answer_publish_button.png[Proposal answer publication: publish button]
+
+NOTE: Si vous avez décoché la case "Publier les réponses de la proposition immédiatement", puis répondu aux propositions, puis a à nouveau vérifié l'option,
+les réponses ne sont pas publiées automatiquement. Vous devez toujours publier les réponses manuellement avec le bouton "Actions".
