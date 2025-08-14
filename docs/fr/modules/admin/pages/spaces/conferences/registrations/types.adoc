@@ -7,14 +7,14 @@ to certain days only, or to specific tracks for example, rather than registering
 
 NOTE: Si vous voulez activer l'inscription, vous devez définir et publier au moins un type d'inscription.
 
-Administrators can configure those different types of "tickets" in the registration types section:
+Les administrateurs peuvent configurer ces différents types de "tickets" dans la section types d'enregistrement :
 
-. Define the registration types
-. Enable registrations when it's ready
-. Participants are then able to register and choose the fit type of registration
+. Définir les types d'enregistrement
+. Activer les inscriptions quand elles sont prêtes
+. Les participants sont alors en mesure de s'inscrire et de choisir le type d'inscription
 
-Once registrations are enabled, participants can click a button to register to the conference in the landing page
-and the conference's header.
+Une fois les inscriptions activées, les participants peuvent cliquer sur un bouton pour s'inscrire à la conférence dans la page d'atterrissage
+et dans l'en-tête de la conférence.
 
 image::spaces/conferences/registration_button_hero.png[Registration button on hero section]
 
@@ -22,41 +22,41 @@ image::spaces/conferences/registration_button_landing.png[Registration button on
 
 image::spaces/conferences/registration_button_landing_footer.png[Registration button on landing page register section]
 
-== Manage registration types
+== Gérer les types d'inscription
 
-To access the registration types configuration, click in the secondary navigation panel on the "Media links" item.
+Pour accéder à la configuration des types d'enregistrement, cliquez dans le panneau de navigation secondaire de l'élément "Liens médias".
 
 image::spaces/conferences/registration_types_backend.png[Manage registration types]
 
 === Actions
 
-NOTE: Once participants register to a registration type, it can't be edited nor deleted.
+NOTE: Une fois que les participants s'inscrivent à un type d'inscription, il ne peut pas être modifié ou supprimé.
 
 .Actions
 [cols="10h,20h,~"]
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Modifier l'icône]
 |Editer
-|To edit this registration type.
+|Éditer ce type d'inscription.
 
-|image:icons/action_activate.png[Publish speaker icon]
+|image:icons/action_activate.png[Publier l'icône du haut-parleur]
 |Publier
-|To publish this registration type (when not published)
+|Publier ce type d'inscription (lorsqu'il n'est pas publié)
 
-|image:icons/action_unpublish.png[Unpublish speaker icon]
+|image:icons/action_unpublish.png[Dépublier l'icône du haut-parleur]
 |Dépublier
-|To unpublish this registration type (when published)
+|Pour dépublier ce type d'inscription (lorsqu'il est publié)
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Supprimer l'icône]
 |Supprimez
-|To delete this registration type.
+|Supprimer ce type d'inscription.
 |===
 
 == Créer un nouveau type d'inscription
 
-To create a new registration type, click the "New registration type" button in the top right of the page.
+Pour créer un nouveau type d'inscription, cliquez sur le bouton "Nouveau type d'inscription" en haut à droite de la page.
 
 image::spaces/conferences/new_registration_type.png[Create a new registration type form]
 
@@ -67,37 +67,37 @@ image::spaces/conferences/new_registration_type.png[Create a new registration ty
 
 |Titre
 |Obligatoire
-|The title of this registration type.
+|Le titre de ce type d'inscription.
 
 |Rang d'affichage
 |Obligatoire
-|Which order it has in relation to the other types. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. For instance, if you have two types, "Day 1" with weight "10" and "Day 2" with weight "0" then "Day 2" is first when ordering.
+|Quel ordre il a en relation avec les autres types. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux types, "Jour 1" avec le poids "10" et "Jour 2" avec le poids "0" puis "Jour 2" est d'abord lors de la commande.
 
 |Description
 |Obligatoire
-|Description for this registration type.
+|Description pour ce type d'inscription.
 
 |Prix
 |Facultatif
-|Définissez un prix pour ce type d'inscription. If you don't define a price, then it's free.
+|Définissez un prix pour ce type d'inscription. Si vous ne définissez pas de prix, alors c'est gratuit.
 
 |Sélectionnez les réunions de la conférence
 |Facultatif
-|The meetings this registration type gives access to.
+|Les réunions auxquelles ce type d'inscription donne accès.
 |===
 
-== Register as a participant
+== S'inscrire en tant que participant
 
-If the participant isn't logged in, when clicking on one of the "Register" buttons, they can log in or create an account,
-and see the registration types.
+Si le participant n'est pas connecté, en cliquant sur l'un des boutons "S'inscrire", ils peuvent se connecter ou créer un compte,
+et voir les types d'inscription.
 
 image:espaces/conférences/registration_types_frontend_wo_user.png[Sélectionnez le type d'inscription sans compte utilisateur]
 
-If the participant is logged in, when clicking on one of the "Register" buttons, they can directly register.
+Si le participant est connecté, en cliquant sur l'un des boutons "S'inscrire", il peut s'inscrire directement.
 
 image::spaces/conferences/registration_types_frontend_w_user.png[Select registration type with user account]
 
-When clicking on the Register button for a registration type, a pop-up is displayed with the registration terms
-from the conference configuration form.
+En cliquant sur le bouton Enregistrer pour un type d'inscription, une fenêtre pop-up apparaît avec les conditions d'inscription
+du formulaire de configuration de la conférence.
 
 image::spaces/conferences/registration_pop_up.png[Pop up with registration terms]
