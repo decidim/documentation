@@ -1,9 +1,9 @@
-= Project evolution
+= Évolution du projet
 
 == Understand the basics
 
-For participants to be able to follow and monitor the evolution of the projects, administrators can create timeline entries by
-clicking the image:icons/action_clock.png[Project evolution icon].
+Pour que les participants puissent suivre et suivre l'évolution des projets, les administrateurs peuvent créer des entrées de ligne de temps par
+en cliquant sur l'image:icônes/action_horloge. ng[Icône d'évolution du projet].
 
 image::components/accountability/results_entries.png[Result page with timeline entries]
 
@@ -11,12 +11,12 @@ image::components/accountability/results_entries.png[Result page with timeline e
 
 image::components/accountability/timeline_list.png[Timeline entries list]
 
-There, you can create and manage the different implementation phases for the result, and create new timeline entries.
+Là, vous pouvez créer et gérer les différentes phases d'implémentation du résultat, et créer de nouvelles entrées dans la chronologie.
 
 image::components/accountability/new_entry.png[New timeline entry form]
 
 
-.New entry form
+.Formulaire de nouvelle entrée
 |===
 |Champ |Type |Description
 
@@ -26,11 +26,11 @@ image::components/accountability/new_entry.png[New timeline entry form]
 
 |Titre
 |Obligatoire
-|Title of the timeline entry.
+|Titre de l'entrée de la ligne de temps.
 
 |Description
 |Facultatif
-|Description of the timeline entry.
+|Description de l'entrée de la ligne de temps.
 |===
 
-The timeline entries are then available on the result page.
+Les entrées de la ligne de temps sont ensuite disponibles sur la page de résultat.
