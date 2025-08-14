@@ -1,0 +1,33 @@
+= Endossos
+
+== Understand the basics
+
+Through endorsements, participants can publicly show their support of particular content, like a proposal, debate, etc.
+
+NOTE: Endorsements are also called "Likes" in the participant interface.
+
+image::features/endorsements/sidebar.png[Endorsement button in sidebar]
+
+== Configuração
+
+=== Enable endorsements
+
+Administrators can enable endorsements by phase (step) in a given participatory process, as well as define permissions with authorizations.
+
+image::features/endorsements/admin.png[Endorsement phase (step) settings]
+
+=== Endorse / like content
+
+To endorse content, click the "Like" button below the content.
+
+image::features/endorsements/list.png[List of endorsements]
+
+When a participant belongs to a verified group, they can also endorse/like that group by selecting the identity.
+
+image::features/endorsements/modal.png[Select identity modal]
+
+Por padrão, a lista de endossos está recolhida. To see all the endorsers, you need too click in the "+ x" icon.
+
+image:features/endorsements/full_list.png[Lista completa de endoss]
+
+Participants can also dislike the content if they change their mind.
