@@ -1,0 +1,231 @@
+= Débats
+
+== Understand the basics
+
+Le volet Debate permet aux gens d'avoir des discussions, sans voter ni prioriser. Il permet également de clore les débats,
+en ajoutant des conclusions ou un résumé de ce que la discussion portait.
+
+image::components/debates/example01.png[Debates listing example]
+
+== Configuration
+
+=== Créer un composant de débat
+
+Pour créer un composant Debate, allez d'abord dans xref:admin:spaces.adoc[espace participatif] où vous voulez le créer.
+
+image::components/debates/component_debate.png[Add Debate component button]
+
+Alors:
+
+. Cliquez sur l'élément "Composants" dans le menu secondaire
+. Cliquez sur le bouton "Ajouter un composant"
+. Sélectionnez "Debate"
+. Remplissez le formulaire de création de composant
+
+Vous pouvez toujours mettre à jour ce formulaire et la configuration après avoir créé le composant, en cliquant sur l'image
+image:icons/action_configure.png[Configurer l'icône] Configurer l'icône dans la liste des composants.
+
+image::components/debates/component.png[Add component form]
+
+.Ajouter un composant : Formulaire de débat
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Le titre de ce composant.
+
+|Rang d'affichage
+|Facultatif
+|L'ordre du composant en relation avec les autres composants. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux composants, "Composant a" avec le poids "10" et "Composant b" avec le poids "0"
+puis "Composant b" est d'abord lors de la commande.
+|===
+
+.Formulaire de débat - Paramètres globaux
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Portées activées
+|Facultatif
+|Cochez cette case si vous voulez que le filtrage des portées dans ce composant.
+
+|Secteur
+|Facultatif
+|Ce composant appartient à xref:admin:settings/scopes.adoc[Scopes].
+
+|Commentaires activés
+|Facultatif
+|Si vous voulez avoir des commentaires dans les débats.
+
+|Longueur maximale des commentaires
+|Facultatif
+|La limite de caractères que les participants ont lors de la rédaction de commentaires. Laisser 0 pour la valeur par défaut.
+
+|Annonce
+|Facultatif
+|Une annonce générale qui sera visible sur la page d'accueil des débats généraux.
+|===
+
+.Ajouter un composant : Formulaire de débats - Paramètres de l'étape
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Soutiens activés
+|Facultatif
+|Cochez cette case si vous voulez permettre aux participants de montrer un soutien public pour les débats.
+
+|Soutiens bloqués
+|Facultatif
+|Vérifiez si les participants sont en mesure de voir les approbations existantes mais ne faites pas de nouvelles.
+
+|Les participants peuvent créer des débats
+|Facultatif
+|Cochez cette case si vous voulez permettre la création de nouveaux débats par les participants durant cette phase.
+
+|Commentaires désactivés
+|Facultatif
+|Si vous voulez activer les commentaires pour cette phase.
+
+|Annonce
+|Facultatif
+|Une annonce générale qui sera visible sur la page d'accueil du débat général.
+|===
+
+=== Créer un débat
+
+image::components/debates/new_debate_backend.png[New debate backend form]
+
+.Nouveau formulaire de débat
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Le titre de ce débat.
+
+|Description
+|Obligatoire
+|La description de ce débat.
+
+|Instructions pour participer
+|Obligatoire
+|Ajouter un message pour les participants, affiché sur la page de débat dans une boîte d'information.
+
+|Mises à jour des informations
+|Facultatif
+|Ajouter un message pour les participants, affiché sur la page de débat dans une boîte d'information.
+
+|xref:_debate_types[Type de débat]
+|Obligatoire
+|Choisissez entre Finite et Ouvrir. Finite signifie que le débat a une date et une heure de début et de fin, Ouverture signifie que
+il n'y a pas de plage horaire.
+
+|Commence à
+|Requis si le type de débat est Finite
+|Format attendu : jj/mm/aaaa hh:ii
+
+|Se termine à
+|Requis si le type de débat est Finite
+|Format attendu : jj/mm/aaaa hh:ii
+
+|Catégorie
+|Facultatif
+|Quelle catégorie a le débat. Utilisé pour le filtrage dans la liste des débats.
+
+|Commentaires activés
+|Facultatif
+|Si vous voulez que les participants puissent commenter ce débat.
+|===
+
+=== Gérer les débats
+
+Pour commencer à créer et à gérer des débats, cliquez dans le titre du composant dans la barre de navigation ou dans la liste des composants, ou cliquez dans l'image
+: icons/action_edit. Icône ng[Gérer l'icône du composant] dans la liste des composants.
+
+image::components/debates/manage_debates.png[Manage debates table]
+
+Sur la liste des débats dans le panneau d'administration, les administrateurs peuvent voir :
+
+* *Titre* : Titre du débat.
+* *Date de début* : Date de début du débat.
+* *Date de fin*: Date de fin du débat.
+* *Portée* : Portée du débat, si activé dans l'espace participatif.
+
+Vous pouvez également exporter les commentaires dans les débats au format CSV, JSON et Excel en cliquant sur le bouton "Exporter tous".
+
+=== Types de débats
+
+Il est possible d'avoir deux types de débats :
+
+. Finite : avec une date de début et de fin
+. Ouvrir: sans date de début et de fin
+
+Les participants peuvent voir les types de débats dans la liste publique du débat.
+
+image:components/debates/debates_list.png[Liste des débats]
+
+=== Actions
+
+NOTE: Lorsque les participants peuvent créer des débats, les administrateurs ont moins d'actions disponibles, et ne peuvent pas modifier ou supprimer les débats.
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Modifier l'icône]
+|Editer
+|Modifier le formulaire pour un débat.
+
+|image:icons/action_close.png[Icône fermée]
+|Fermer
+|Fermer le formulaire pour un débat. Pour ajouter des conclusions.
+
+|image:icons/action_preview.png[Icône d'aperçu]
+|Aperçu
+|Pour voir comment il est montré dans le frontend aux participants.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Autorisations
+|Pour gérer les autorisations nécessaires à la création ou à l'approbation de débats.
+
+|image:icons/action_delete.png[Supprimer l'icône]
+|Supprimez
+|Supprimer ce débat.
+|===
+
+=== Fermer le formulaire de débat
+
+Un débat peut être clos. Ceci est utile pour publier les conclusions des débats.
+Après la fermeture d'un débat, il ne peut plus être édité ni commenté.
+
+image::components/debates/close_debate_backend.png[Close debate backend form]
+
+Prenez en compte que si le débat a été créé par un participant, alors seul ce participant peut le fermer.
+
+image::components/debates/close_debate_frontend.png[Close debate frontend form]
+
+.Fermer le formulaire de débat
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Conclusions
+|Obligatoire
+|Quelle est la conclusion de ce débat.
+|===
+
+Les conclusions sont montrées publiquement avec la date et l'heure limites.
+
+image::components/debates/debate_closed.png[Closed debate]
+
+== Exemples
+
+Quelques exemples d'utilisation de ce composant :
+
+* https://meta.decidim.org/processes/roadmap/f/219/[Proposer de nouvelles fonctionnalités pour le logiciel Decidim dans Metadecidim]
