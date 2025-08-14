@@ -2,48 +2,48 @@
 
 == Understand the basics
 
-Initiatives should receive an answer from your organization at some point. It could be before the end of the signature collection period,
-because it's been accepted or rejected already by an organ of your structure, or because it reached the number of signatures needed
-before the end of the collection period.
+Les initiatives devraient recevoir une réponse de votre organisation à un moment donné. Cela pourrait être avant la fin de la période de collecte des signatures,
+car elle a déjà été acceptée ou rejetée par un organe de votre structure, ou parce qu'il a atteint le nombre de signatures nécessaires
+avant la fin de la période de collecte.
 
 == Répondre à une initiative
 
-Click the "Answer" icon on the list of initiatives to answer an initiative.
+Cliquez sur l’icône « Répondre » dans la liste des initiatives pour répondre à une initiative.
 
 image::spaces/initiatives/initiative_backend_answer.png[Initiative backend answer]
 
-On this page, you can see the initiative title, description, creation date, state, and signature number, as well as the
-answer fields.
+Sur cette page, vous pouvez voir le titre de l'initiative, la description, la date de création, l'état et le numéro de la signature, ainsi que les champs de la réponse
+.
 
-.Initiative answer form
+.Formulaire de réponse à l'initiative
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Répondre
 |Facultatif
-|Content of the initiative answer, that is visible on the initiative page.
+|Contenu de la réponse de l'initiative, qui est visible sur la page d'initiative.
 
-|Answer URL
+|URL de la réponse
 |Facultatif
-|Link added on the answer content.
+|Lien ajouté sur le contenu de la réponse.
 
-|Start of signature collection period
+|Début de la période de collecte des signatures
 |Obligatoire
-|Date of the start of the signature collection.
+|Date de début de la collection de signatures.
 
-|End of signature collection period
+|Fin de la période de collecte des signatures
 |Obligatoire
-|Date of the end of the signature collection. You can put it the day before if you want to close the initiative to new signatures.
+|Date de fin de la collection de signatures. Vous pouvez le mettre la veille si vous voulez fermer l'initiative à de nouvelles signatures.
 |===
 
 image::spaces/initiatives/initiative_frontend_answer.png[Initiative frontend answer]
 
-== Accept or reject
+== Accepter ou rejeter
 
-In order to operate the change on the initiatives list, the administrator needs to go on the edit page of the initiative and
-click the button corresponding to the initiative situation.
-Once a published initiative collection period is over, there are two options:
+Afin d'opérer le changement sur la liste des initiatives, l'administrateur doit aller sur la page d'édition de l'initiative et
+cliquez sur le bouton correspondant à la situation de l'initiative.
+Une fois qu'une période de collecte d'initiative publiée est terminée, il y a deux options :
 
-. The initiative got enough signatures: Click the "Accept initiative" button
-. The initiative didn't get enough signatures: Click the "Reject initiative" button
+. L'initiative a reçu suffisamment de signatures : Cliquez sur le bouton "Accepter l'initiative"
+. L'initiative n'a pas assez de signatures: Cliquez sur le bouton "Rejeter l'initiative"
