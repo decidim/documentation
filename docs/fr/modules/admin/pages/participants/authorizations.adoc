@@ -1,20 +1,20 @@
 = Autorisations
 
-Authorizations allow to give specific participation rights to participants who have completed a verification process.
-This verification process can be direct, have multiple steps, be online or in-person.
+Les autorisations permettent de donner des droits de participation spécifiques aux participants qui ont terminé un processus de vérification.
+Ce processus de vérification peut être direct, avoir plusieurs étapes, être en ligne ou en personne.
 
-For instance you can configure that only participants who have verified themselves by their identity documents can vote on
-proposals in a specific participatory process.
+Par exemple, vous pouvez configurer que seuls les participants qui se sont vérifiés par leurs documents d'identité peuvent voter sur les propositions
+dans un processus participatif spécifique.
 
-NOTE: Several authorizations are available by default, but you can also develop your own authorizations.
+NOTE: Plusieurs autorisations sont disponibles par défaut, mais vous pouvez également développer vos propres autorisations.
 
-== Enable / disable authorizations
+== Activer / désactiver les autorisations
 
-To enable an authorization, you need to have access to the xref:configure:system.adoc[System panel] or ask the instance implementer.
+Pour activer une autorisation, vous devez avoir accès à xref:configure:system.adoc[System panel] ou demander à l'instance implémentée.
 Pour mieux comprendre ce que sont les autorisations et comment les configurer, veuillez vous référer à la section
 xref:customize:authorizations.adoc[Autorisations dans le Guide de Personnalisation].
 
-Participants can access, update, or delete their authorizations in their xref:admin:features/participant_actions/my_account.adoc[account].
+Les participants peuvent accéder, mettre à jour ou supprimer leurs autorisations dans leur xref:admin:features/participant_actions/my_account.adoc[account].
 
 == Méthodes de vérification
 
@@ -29,16 +29,16 @@ more about xref:customize:authorizations.adoc[Authorizations in the Customize Gu
 
 == Révocation des autorisations
 
-A default Decidim installation don't have verified participants.
+Une installation par défaut de Decidim n'a pas vérifié les participants.
 
 image::participants/authorizations_admin_default.png[Authorizations in a default installation]
 
-From the moment some participants get verified with an authorization, administrators can revoke all the authorizations at once.
-Indeed, after some time, some of the verifications can be deprecated.
-For instance, identity documents expire after some time, or participants can move from a city.
-Then, an administrator can want to force participants to renew their verification information.
+À partir du moment où certains participants sont vérifiés avec une autorisation, les administrateurs peuvent révoquer toutes les autorisations à la fois.
+En effet, après un certain temps, certaines vérifications peuvent être dépréciées.
+Par exemple, les documents d'identité expirent après un certain temps, ou les participants peuvent déménager d'une ville.
+Ensuite, un administrateur peut vouloir forcer les participants à renouveler leurs informations de vérification.
 
-image:participants/authorizations_admin_revocation.png[Authorizations revocation]
+image:participants/authorizations_admin_revocation.png[Révocation des autorisations]
 
-It's possible to revoke all the authorizations with "Revoke all," or to only revoke authorizations created before a given date.
-Another possibility is to revoke only the verifications for xref:admin:participants/impersonations.adoc[impersonated participants].
+Il est possible de révoquer toutes les autorisations avec "Révoquer toutes" ou de ne révoquer que les autorisations créées avant une date donnée.
+Une autre possibilité est de ne révoquer que les vérifications pour xref:admin:participants/impersonations.adoc[participants].
