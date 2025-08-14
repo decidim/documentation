@@ -1,28 +1,28 @@
 = Participants
 
-Participants are all people with an account on the platform, whether they have confirmed their email address or not.
+Les participants sont tous des personnes ayant un compte sur la plateforme, qu'ils aient confirmé leur adresse e-mail ou non.
 Dans cette page, un administrateur peut :
 
 * Bloquer un participant, par exemple parce qu'il spamme ou agit contre les conditions d'utilisation
-* Contact a participant with Decidim private messages
+* Contactez un participant avec des messages privés Decidim
 * Officialiser un participant
-* Show a participant email
+* Afficher un e-mail de l'utilisateur
 
-image:participants/participants_participants.png[Participants list]
+image:participants/participants_participants.png[Liste des participants]
 
-== Manage participants
+== Gérer les participants
 
-You can find all the participants here, with:
+Vous pouvez trouver tous les participants ici, avec:
 
-* *Name*: name of the participant, with a link to their profile.
-* *Nickname*: nickname of the participant, with a link to their profile.
-* *Created at*: date of the participant account creation.
-* *Status*: if the participant is officialized or not.
-* *Badge*: the officialization badge, given when officializing the participant.
-* *Reports*: number of reports by different users.
+* *Nom*: nom du participant, avec un lien vers son profil.
+* *Surnom*: surnom du participant, avec un lien vers son profil.
+* *Créé à* : date de création du compte participant.
+* *Statut* : si le participant est officialisé ou non.
+* *Badge* : le badge d'officialisation, donné lors de l'officialisation du participant.
+* *Rapports* : nombre de rapports par différents utilisateurs.
 
-You can filter and sort this list by clicking the "Filter" button and the columns headers.
-You can also search for participants by email, name, or nickname in the search bar.
+Vous pouvez filtrer et trier cette liste en cliquant sur le bouton "Filtre" et sur les en-têtes des colonnes.
+Vous pouvez également rechercher des participants par courriel, nom ou surnom dans la barre de recherche.
 
 === Actions
 
@@ -31,62 +31,62 @@ You can also search for participants by email, name, or nickname in the search b
 |===
 |Icône |Nom |Définition |Condition
 
-|image:icons/action_block.png[Block user]
-|Block / Unblock user
-|To block or unblock a participant. See xref:admin:moderations/reported_users.adoc[Reported users] for more information.
-|Block action is available for unblocked users, and vice versa.
+|image:icons/action_block.png[Bloquer l'utilisateur]
+|Bloquer / Débloquer l'utilisateur
+|Bloquer ou débloquer un participant. Voir xref:admin:moderations/reported_users.adoc[Utilisateurs signalés] pour plus d'informations.
+|L'action de blocage est disponible pour les utilisateurs non bloqués, et vice versa.
 
-|image:icons/action_show_email.png[Show email]
+|image:icons/action_show_email.png[Afficher l'e-mail]
 |xref:_show_email_address[Afficher l'adresse e-mail]
-|To show the email address of a participant.
-|Available all the time.
+|Afficher l'adresse e-mail d'un participant.
+|Disponible en permanence.
 
 |image:icons/action_contact.png[Contact]
 |xref:_contact[Contact]
-|To contact a participant through a private message.
-|Available all the time.
+|Pour contacter un participant par un message privé.
+|Disponible en permanence.
 
 |image:icons/action_verify.png[Officialize]
 |xref:_officialiser[Officialize]
-|To recognize that a participant has a special status, like mayor, association's president, etc.
-|Available for unofficialized participants.
+|Reconnaître qu'un participant a un statut spécial, comme le maire, le président de l'association, etc.
+|Disponible pour les participants non officialisés.
 
 |image:icons/action_reofficialize.png[Reoffficialize]
-|Reofficialize
-|To change the officialization badge.
-|Available for officialized participants.
+|De nouveau validé
+|Pour changer le badge d'officialisation.
+|Disponible pour les participants officialisés.
 
 |image:icons/action_delete.png[Unofficialize]
 |Dénofficialiser
 |Pour révoquer une officialisation.
-|Available for officialized participants.
+|Disponible pour les participants officialisés.
 |===
 
 === Afficher l'adresse e-mail
 
-Sometimes, administrators need to find a user email address. They can click the "Show email address" option.
-A modal appears, with the name of the participant, and an hidden field.
+Parfois, les administrateurs doivent trouver une adresse e-mail utilisateur. Ils peuvent cliquer sur l'option "Afficher l'adresse de courriel".
+Un modal apparaît, avec le nom du participant, et un champ caché.
 
-image:participants/participants_show_email.png[Modal in show email]
+image:participants/participants_show_email.png[Modal dans l'email]
 
-To show the email address, you need to click the "Show" button.
+Pour afficher l'adresse e-mail, vous devez cliquer sur le bouton "Afficher".
 
-image:participants/participants_showed_email.png[Modal after the email is shown]
+image:participants/participants_showed_email.png[Modal après l'email est affiché]
 
-For administration transparency, this action is logged in the activity logs.
+Pour la transparence de l'administration, cette action est enregistrée dans les journaux d'activités.
 
-image:participants/participants_showed_email_admin_log.png[Admin activity log for show email]
+image:participants/participants_showed_email_admin_log.png[Journal des activités de l'administrateur pour afficher l'e-mail]
 
 === Contacter
 
-To contact participants directly through the private messaging of the platform, click the "Contact" icon.
+Pour contacter les participants directement via la messagerie privée de la plateforme, cliquez sur l'icône "Contact".
 
 image::participants/participants_conversation.png[Conversation with a participant]
 
 === Officialiser
 
-This option is useful to recognize that a participant has a specific status in the
-platform. For instance, if someone is the city mayor, a city councillor, the
+Cette option est utile pour reconnaître qu'un participant a un statut spécifique sur la plateforme
+. For instance, if someone is the city mayor, a city councillor, the
 president of an association, etc.
 
-image:participants/participants_officialize.png[Officialize a participant]
+image:participants/participants_officialize.png[Officialiser un participant]
