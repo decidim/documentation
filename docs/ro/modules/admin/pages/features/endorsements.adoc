@@ -1,0 +1,17 @@
+= Endorsements
+
+Through endorsements, participants can publicly show that they want to support a particular content, for instance, a proposal.
+
+image:features/endorsements/list.png[List of endorsements]
+
+This is done through the button in the sidebar. Administrators can enable or disable them by step in a given participatory process, and they can also define permissions with authorizations.
+
+image:features/endorsements/sidebar.png[Endorsement button in sidebar]
+
+When a participant belongs to a verified group they can also endorse like that group by selecting the identity.
+
+image:features/endorsements/modal.png[Select identity modal]
+
+By default the endorsements list is collapsed. To see it fully visitors need too click in the "(see more)" link.
+
+image:features/endorsements/full_list.png[Full list of endorsements]
