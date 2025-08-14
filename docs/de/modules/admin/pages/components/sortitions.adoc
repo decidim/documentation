@@ -1,0 +1,136 @@
+= Sortierungen
+
+== Understand the basics
+
+The Sortitions component allows to sort a number of proposals with random, yet reproducible, procedures that guarantees non-biased
+and uniform distributions.
+
+For example, it can be useful for sorting candidates for a jury, or participatory budgeting proposals.
+
+To conduct a sortition, you need a dice or another random way to generate a number from 1 to 6, as well as witnesses.
+
+image::components/sortitions/example01.png[Example of a sortition]
+
+== Konfiguration
+
+To create a Sortitions component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
+
+image::components/sortitions/component_sortitions.png[Add Sortitions component button]
+
+Then:
+
+. Click on the "Components" item in the secondary menu
+. Click the "Add component" button
+. Select "Sortitions"
+. Fill the component creation form
+
+You can still update this form and the configuration after creating the component, by clicking the
+image:icons/action_configure.png[Configure icon] Configure icon in the components list.
+
+image::components/sortitions/component.png[Add component form]
+
+.Add component: Sortitions form
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Title of this component.
+
+|Bestellposition
+|Optional
+|The order of the component in relation with the other components. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0"
+then "component b" is first when ordering.
+|===
+
+.Add component: Sortitions form - Global settings
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Kommentare aktiviert
+|Optional
+|Whether you want to have comments in the sortitions.
+
+|Maximale Länge der Kommentare
+|Optional
+|The characters limit that participants have when making comments. Lassen Sie 0 für den Standardwert.
+|===
+
+=== Create a sortition
+
+image::components/sortitions/new_sortition_backend.png[New sortition backend form]
+
+.New sortition form
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|The title of this sortition.
+
+|Proposals set
+|Benötigt
+|The proposal component to base the sortition on. Both components must be in the same space.
+
+|Categories of the set of proposals in which you want to apply the draw
+|Optional
+|If you have categories, can allow to do the sortition only inside one of the categories.
+
+|Number of proposals to be selected
+|Benötigt
+|Indicate the number of proposals you want to be selected by drawing lots of the group of proposals you have previously chosen.
+
+|Witnesses
+|Benötigt
+|The witnesses attending the draw and who can vouch for its authenticity.
+
+|Sortition information
+|Benötigt
+|Explanation on why the sortition is done.
+
+|Result of die roll
+|Benötigt
+|Roll a 6-sided die, or look for another random way to generate a number from 1 to 6, and enter here the resulting
+number in front of some witnesses. This contributes to the quality and guarantees of the randomness of the result.
+|===
+
+=== Manage sortitions
+
+To start creating and managing sortitions, click in the component title in the navigation bar or in the component list, or click in the
+image:icons/action_edit.png[Manage component icon] Manage icon on the components list.
+
+image::components/sortitions/manage_sortitions.png[Manage sortitions table]
+
+On the sortitions list in the administration panel, administrators can see:
+
+* *Reference*: Reference of the sortition.
+* *Title*: Title of the sortition.
+* *Creation date*: Creation date of the sortition.
+
+=== Aktionen
+
+.Aktionen
+[cols="10h,20h,~"]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Edit icon]
+|Bearbeiten
+|Edit form for a sortition.
+
+|image:icons/action_preview.png[Preview icon]
+|Sortition details
+|To see the results of the sortition in the administration panel.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Berechtigungen
+|To handle the authorizations needed to comment sortitions.
+
+|image:icons/action_delete.png[Delete icon]
+|Löschen
+|Diese Debatte löschen.
+|===
