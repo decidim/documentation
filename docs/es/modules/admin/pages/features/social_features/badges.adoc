@@ -1,0 +1,78 @@
+= Insignias
+
+== Understand the basics
+
+Badges are recognitions of participant actions and progress on the platform. As participants start discovering, participating,
+and interacting, they earn different badges. Aquí está la lista de insignias y algunas formas de los participantes pueden ganarlas.
+
+Es un mecanismo de https://es.wikipedia.org/wiki/Gamification[gamification] para mejorar el compromiso de los participantes de una manera lúdica.
+
+A participant's badges are visible in their public profile.
+
+image::features/badges/profile_badges.png[Example of badges in profile]
+
+Cuando un participante gana una insignia reciben una notificación.
+
+image::features/badges/notification.png[Example of badges notification]
+
+== Configuración
+
+=== Badges description
+
+Las insignias tienen múltiples niveles, dependiendo del número de veces que hayan hecho la acción. For instance, for the followers badge,
+the participants receive the first level badge when they have 1 follower, the second level at 15 followers, the third level at 30 followers,
+the fourth level at 60, and the fifth level at 100.
+
+
+.Insignias
+|===
+|Imagen |Título |Descripción |Cómo se gana |Niveles
+
+|image:features/badges/proposals_badge.png[Insignia de propuestas]
+|Propuestas
+|Granted when participants actively participate by creating new proposals.
+|El participante debe elegir el espacio de participación de su interés con la presentación de propuestas habilitadas y crear una nueva propuesta.
+|1, 5, 10, 30, 60
+
+|image:features/badges/accepted_proposals_badge.png[Insignia de propuestas aceptadas]
+|Propuestas aceptadas
+|Granted when a participant's proposals are accepted.
+|El participante debe elegir el espacio de participación de su interés con la presentación de propuestas habilitadas e intentar
+hacer propuestas que se puedan llevar a cabo. De esta manera es más probable que se acepten.
+|1, 5, 15, 30, 50
+
+|image:features/badges/attended_meetings_badge.png[Insignia de reuniones asistidas]
+|Reuniones asistidas
+|Concedidos cuando los participantes asisten a varias reuniones cara a cara.
+|El participante necesita registrarse para las reuniones a las que quiere asistir
+|1, 3, 5, 10, 30
+
+|image:features/badges/debates_badge.png[Insignia de debate]
+|Debates
+|Concedidos cuando los participantes participan activamente en los diferentes debates dejando comentarios.
+|El participante debe participar en los debates.
+|1, 5, 10, 30, 50
+
+|image:features/badges/followers_badge.png[Insignia de seguidores]
+|Seguidores
+|Otorgado cuando el participante llega a un cierto número de seguidores. The platform is a social and political network, so
+participants need to weave their web to communicate with other people in the platform.
+|The participant needs to be active and follow other people. It encourages other people to follow them.
+|1, 15, 30, 60, 100
+
+|image:features/badges/published_initiatives_badge.png[Insignia de iniciativas publicadas]
+|Iniciativas publicadas
+|Concedido cuando un participante lanza nuevas iniciativas, asociándose con otros para llevarlas a cabo.
+|The participant needs to go to the participation space of Initiatives and follow the steps to create a new initiative.
+|1, 5, 15, 30, 50
+
+|image:features/badges/proposal_supports_badge.png[Proposal soporta badge]
+|Soporte de propuestas
+|Concedidos cuando los participantes apoyan las propuestas de otras personas.
+|El participante tiene que navegar y pasar algún tiempo leyendo las propuestas de otras personas y dar apoyo a las propuestas que les gustan o que encuentran interesantes.
+|5, 15, 50, 100, 500
+|===
+
+También hay una página de explicación general con una breve descripción de cada insignia.
+
+image::features/badges/badges_page.png[Badges page with badges explanation]
