@@ -1,0 +1,38 @@
+= Modèles
+
+== Understand the basics
+
+L'onglet Modèles vous permet de créer des modèles et de gagner du temps dans la gestion de votre instance.
+Vous pouvez créer des modèles pour trois éléments différents :
+
+* *Questionnaires* : pour créer des questionnaires dans le xref:admin:components/surveys.adoc[composant d'enquête]
+* *Bloquer les messages utilisateur*: pour créer une justification pour le modèle de blocage de xref:admin:admin:moderations/reported_users.adoc[utilisateurs signalés]
+* *Réponses aux propositions* : pour créer le modèle xref:admin:components/proposs/answers.adoc[réponses aux propositions]
+
+Une fois créés, ces modèles sont disponibles pour tous les administrateurs, et les aident à gérer l'instance plus efficacement.
+
+== Configuration
+
+Pour accéder au panneau de configuration des modèles, allez dans le panneau d'administration et cliquez sur l'élément "Modèles" dans la barre de navigation d'administration.
+
+image::templates/templates_menu.png[Pages: Access templates panel]
+
+Là, vous pouvez commencer à créer et à gérer :
+
+* xref:admin:admin:templates/questionnaires.adoc[Modèles de questionnaires]
+* xref:admin:admin:templates/block_users.adoc[Bloquer les messages utilisateur]
+* xref:admin:admin:templates/proposal_answers.adoc[Proposition de réponses]
+
+image::templates/templates_questionnaires_list.png[Backend: templates panel]
+
+== Exemples
+
+À la fin de chacun des processus participatifs que vous faites, vous voulez recueillir les commentaires des participants.
+La création d'un modèle de questionnaire rend la création de l'enquête plus rapide que la recréation de l'enquête et de ses questions pour chaque processus.
+
+Sur certaines plateformes, vous pouvez également avoir des utilisateurs de spam, que vous voulez pouvoir bloquer rapidement pour la même raison à chaque fois.
+Creating a justification template allow you to quickly choose this justification when blocking a spam user, rather than writing it
+again each time.
+
+Il en va de même pour les réponses aux propositions, parfois vous voulez donner la même réponse à de nombreuses propositions différentes. Créer un modèle de réponse de proposition
+permet aux administrateurs de processus de gérer les propositions plus efficacement.
