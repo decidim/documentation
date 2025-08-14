@@ -1,167 +1,160 @@
-= Skeleton
+= Esqueleto
 
-The Skeleton component allows people to XXX
+== Understand the basics
 
-From this starting point, there could be other configurations, such as:
+O componente Skeleton permite que as pessoas XXX
 
-*
-
-Some examples of where this component was used:
+Deste ponto de partida, poderia haver outras configurações, tais como:
 
 *
+
+How the component looks like in front office:
 
 image:components/skeleton/example01.png[]
 image:components/skeleton/example02.png[]
 image:components/skeleton/example03.png[]
 image:components/skeleton/example04.png[]
 
-To configure the Skeleton component:
+== Configuração
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies" or "Conferences".
-. Go to components
-. Click on "Add component" button
-. Click on "Skeleton"
-. Fill the xref:_add_component[Add component] form
+To create a Blog component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
 
-== Add component
+image::components/skeleton/component_skeleton.png[Add component button]
 
-image:components/skeleton/component.png[Add component form]
+Then:
+
+. Click on the "Components" item in the secondary menu
+. Click the "Add component" button
+. Select "Skeleton"
+. Fill the component creation form
+
+image:components/skeleton/component.png[Adicionar formulário de componente]
 
 
-.Add component: Skeleton form
+.Adicionar componente: Formulário Esqueleto
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Name
-|Required
-|What is the title of this component. For instance, "Skeletons"
+|Nome:
+|Obrigatório
+|Qual é o título deste componente. Por exemplo, "Esqueletos"
 
-|Order position
-|Optional
-|Which order will it have in relation to the other skeletons. Having a lower number means a higher priority.
-For instance, if you have two skeletons, "Skeleton a" with weight "10" and "Skeleton b" with weight "0", then "Skeleton b" will be first when ordering.
+|Posição do pedido
+|Opcional
+|Which order it has in relation to the other skeletons. Ter um número menor significa uma prioridade mais alta.
 |===
 
 
-.Add component: Skeleton form - Global settings
+.Adicionar componente: Formulário Esqueleto - Configurações globais
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Scopes enabled
-|Optional
-|Check if you want to have Scopes filtering in this component.
+|Âmbitos ativados
+|Opcional
+|Verifique se você quer ter filtragem de escopos neste componente.
 
-|Scope
-|Optional
-|Which xref:admin:scopes.adoc[Scope] does this component belongs to.
+|Escopo
+|Opcional
+|Which xref:admin:settings/scopes.adoc[Scope] does this component belongs to.
 
-|Global scope
-|Optional
+|Âmbito global
+|Opcional
 |
 
-|Comments enabled
-|Optional
-|Whether you want to have comments in the meetings.
+|Comentários ativados
+|Opcional
+|Se você deseja ter comentários nas reuniões.
 
-|Comments max length
-|Optional
-|What is the characters limit that participants will have when making comments. Leave 0 for default value.
+|Comprimento máximo de comentários
+|Opcional
+|What is the characters limit that participants have when making comments. Deixe 0 para o valor padrão.
 
-|Actions permissions can be set for each skeleton
-|Optional
-|Whether you want to be able to set permissions for every one of the skeletons. Most of the time you will want to leave this option disabled.
+|Permissões de ações podem ser definidas para cada esqueleto
+|Opcional
+|Se você quer ser capaz de definir permissões para cada um dos esqueletos.
 
-|Announcement
-|Optional
-|A general announcement that'll be visible on the general skeletons landing page.
+|Anúncio
+|Opcional
+|Um anúncio geral que será visível na página inicial dos esqueletos gerais.
 |===
 
-In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
-xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
 
-
-.Add component: Skeletons form - Step settings
+.Adicionar componente: Formulário de esqueletos - Configurações de passos
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Comments blocked
-|Optional
-|Whether you want to enable comments for this phase.
+|Comentários bloqueados
+|Opcional
+|Se você quer habilitar comentários para esta fase.
 
-|Announcement
-|Optional
-|A general announcement that'll be visible on the general skeleton landing page.
+|Anúncio
+|Opcional
+|Um anúncio geral que será visível na página inicial do esqueleto geral.
 |===
 
-== Permissions
+== Gerenciar esqueletos
 
-An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
-certain actions in the skeletons:
+image:components/skeleton/manage_skeletons.png[Gerenciar tabela dos esqueletos]
 
-* Create
-* Endorse
+=== Exportar tudo
 
-== Manage skeletons
+Permite exportar os esqueletos em diferentes formatos.
 
-image:components/skeleton/manage_skeletons.png[Manage skeletons table]
+* Esqueletos como CSV
+* Esqueletos como JSON
+* Esqueletos como Excel
+* Comentários como CSV
+* Comentários como JSON
+* Comentários como Excel
 
-=== Export all
+== Novo formulário de estrutura
 
-Allows exporting the skeletons in different formats.
-
-* Skeletons as CSV
-* Skeletons as JSON
-* Skeletons as Excel
-* Comments as CSV
-* Comments as JSON
-* Comments as Excel
-
-=== New skeleton form
-
-image:components/skeleton/new_skeleton.png[New skeleton form]
+image:components/skeleton/new_skeleton.png[Forma de novo esqueleto]
 
 
-.New skeleton form
+.Novo formulário de estrutura
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Title
-|Required
-|What is the title of this skeleton. For instance, "District A"
+|Título
+|Obrigatório
+|Qual é o título deste esqueleto. Por exemplo, "Distrito A"
 
-|Order position
-|Optional
-|Which order will it have in relation to the other skeletons. Having a lower number means a higher priority.
-For instance, if you have two skeletons, "Skeleton a" with weight "10" and "Skeleton b" with weight "0", then "Skeleton b" will be first when ordering.
+|Posição do pedido
+|Opcional
+|Que ordem terá em relação aos outros esqueletos. Ter um número menor significa uma prioridade mais alta.
 
-|Description
-|Optional
-|What is the description of this skeleton.
+|Descrição:
+|Opcional
+|Qual é a descrição deste esqueleto.
 |===
 
-==== Actions
+=== Ações.
 
 
-.Actions
+.Ações.
 |===
-|Icon |Name |Definition
+|Ícone |Nome: |Definição
 
-|image:action_preview.png[Preview icon]
-|Preview
-|To see how it's shown in the frontend to participants.
+|image:icons/action_preview.png[Preview icon]
+|Pré-visualizar
+|Para ver como é mostrado na interface a participantes.
 
-|image:action_list.png[Manage projects icon]
+|image:icons/action_list.png[Manage projects icon]
 |xref:_manage_projects[Manage projects]
-|Allows you to manage the projects of a skeleton.
+|Permite que você gerencie os projetos de um esqueleto.
 
-|image:action_edit.png[Edit icon]
-|Edit
-|Edit form for a skeleton. It's the same form as "New skeleton".
+|image:icons/action_edit.png[Edit icon]
+|Alterar
+|Edite a forma de um esqueleto.
 
-|image:action_delete.png[Delete icon]
-|Delete
-|To delete this skeleton. Only can be done when there aren't any projects.
+|image:icons/action_delete.png[Delete icon]
+|excluir
+|Para excluir este esqueleto. Só pode ser feito quando não há nenhum projeto.
 |===
+
+== Exemplos
+
+Alguns exemplos de onde este componente foi usado:
+
+*
