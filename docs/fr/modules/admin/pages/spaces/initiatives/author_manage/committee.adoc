@@ -1,0 +1,35 @@
+= Comité de promoteur
+
+== Understand the basics
+
+Un comité de promoteur est un groupe de personnes qui soutiennent et encouragent conjointement cette initiative. Par exemple, il pourrait s'agir d'une initiative collective qui doit être
+menée par plusieurs citoyens pour être acceptée par l'administration, etc.
+Les règles du comité du promoteur sont définies par les administrateurs lors de la gestion des types d'initiative, donc elles peuvent être facultatives pour certaines initiatives, et obligatoire pour les autres,
+avec la nécessité d'avoir trois personnes ayant une initiative par exemple.
+
+Pour les initiatives qui ont besoin d'un nombre minimum de membres au sein du comité du promoteur, l'auteur doit leur envoyer un lien pour qu'ils puissent rejoindre le comité
+avant de pouvoir être envoyé pour validation technique.
+
+NOTE: Les membres du comité peuvent seulement être ajoutés avant que l'initiative ne soit envoyée à la validation technique.
+
+== Configuration
+
+=== Inviter un membre du comité
+
+Lors du processus de création de l'initiative, ou plus tard sur la page d'initiative et le formulaire d'édition, l'auteur peut copier un lien d'invitation.
+Ils devraient envoyer ce lien aux autres promoteurs de l'initiative.
+
+image::spaces/initiatives/promoter_link_show.png[Promoter's committee link in initiative show]
+
+image::spaces/initiatives/promoter_link_edit.png[Promoter's committee link in initiative edit form]
+
+En cliquant sur le lien, le membre invité du comité peut voir le titre et le contenu de l'initiative. et peut demander à devenir membre du comité de promoteur.
+
+image::spaces/initiatives/promoter_link_page.png[Promoter's committee request page]
+
+L'auteur d'une initiative peut gérer les demandes des membres du comité dans la page d'édition de l'initiative.
+
+image::spaces/initiatives/promoter_members_edit.png[Promoter's committee management in initiative edit form]
+
+Tous les membres du comité sont alors en mesure d'accéder à l'initiative, de le modifier, de gérer ses membres et de l'envoyer à validation technique.
+L'initiative ne peut pas être envoyée à la validation technique tant qu'elle ne correspond pas au nombre minimum de membres du comité requis.
