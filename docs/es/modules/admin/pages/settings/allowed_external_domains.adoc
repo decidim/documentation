@@ -1,0 +1,22 @@
+= Allowed external domains
+
+== Understand the basics
+
+As means to protect against spam, and increase the security on your instance, Decidim can identify any links that direct
+to an external webpage, and add the following alert pop-up after the user clicks it:
+
+image::settings/allowed_external_domains_pop-up.png[Pop-up that appears when clicking any external domains on Decidim]
+
+It warns participants that they're leaving your instance.
+
+== Configuración
+
+There may be some websites redirection for which you don't want this feature enabled.
+For example, if your site is deployed at a URL like `+decidim.example.org+` and you want every `+example.org+` URLs
+to omit this alert message, you can configure this by adding your URL, and as many as you want, in the Allowed external domains page.
+
+To do so, click the "Add to allowed list" button and enter the website URL you want to authorize.
+
+image::settings/allowed_external_domains_admin_panel.png[Allowed external domains panel]
+
+When clicking on a URL to those domains, participants won't see the alert message.
