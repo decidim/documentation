@@ -1,0 +1,173 @@
+= My account
+
+== Understand the basics
+
+This feature allows participants to manage their account information, notifications preferences, authorizations, see their groups, etc.
+This account page is only accessible to the participant, and some account information (such as the "About" field) is displayed in the
+participant xref:admin:features/participant_actions/my_public_profile.adoc[public profile].
+
+=== How to find it?
+
+As a signed in participant, you can access your account configuration from two places:
+
+. Click in your avatar in the header, and then click in the "My account" menu item
+. Click in the "Configuration" link in the footer, in the "My account" section
+
+image::features/my_account/account_dropdown.png[Frontend user menu dropdown]
+
+== Configuration
+
+There, you'll find different sections, allowing you to set different settings for your participant account.
+
+NOTE: You might not see the Authorizations and the Groups settings sections if you didn't enable them.
+
+=== Account
+
+In this section, participants can modify the information displayed in their xref:features/participant_actions/my_public_profile.adoc[public profile], modify their email address or
+the language they want to use by default.
+
+image::features/my_account/account.png[My account form]
+
+.Participant settings - My account form
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Avatar
+|Optional
+|Avatar or picture for the participant. Guidance for image: Preferably a landscape image that does not have any text.
+The service crops the image. Maximum file size: 5 MB
+
+|Your name
+|Required
+|The name of the participant.
+
+|Nickname
+|Required
+|The nickname of the participant.
+
+|Your email
+|Required
+|The email of the participant, where they will receive notifications, password recovery, etc. If it's changed it needs to be
+confirmed again.
+
+|Personal URL
+|Optional
+|Metadata that is displayed in the participant's profile.
+
+|About
+|Optional
+|Information about the participant displayed in the participant's profile.
+
+|Locale
+|Required
+|Language you want to use to browse and receive notifications in Decidim.
+|===
+
+Participants can also change their password on this page, by clicking the "Change password" link. They need to choose a new password and enter
+their current password to be able to change it.
+
+image::features/my_account/password_change.png[My account form - password change]
+
+=== Notifications settings
+
+In this section participants can choose which kind of notifications they want to receive and how often they want to receive them.
+
+image:features/my_account/notifications_settings.png[Notifications settings]
+
+The options available are:
+
+* I want to get notifications about
+** My own activity, like when someone comments in my proposal or mentions me
+** Everything I follow
+* How often do you want to receive the notifications email?
+** None, Real time, Daily, or Weekly
+* Newsletters
+** I want to receive newsletters
+* Receive direct messages from anyone
+** Allow anyone to send me a direct message, even if I don't follow them
+* Administrators
+** I want to receive an email every time something or someone is reported for moderation.
+** I want to receive email reminders of closed meetings unpublished reports
+* Push notifications
+** Get push notifications to find out what is going on when you are not on the platform. You can turn them off anytime.
+
+=== Authorizations
+
+In this section participants are able to review their Authorizations and see some metadata, like when it was granted
+or the status of the authorization.
+
+It depends on how it's configured for the organization, as depending in the context (like normative or laws) it could work
+in different ways. For more information about Authorizations see xref:admin:participants/authorizations.adoc[authorizations
+in admin manual] and xref:customize:authorizations.adoc[authorizations in customize guide].
+
+image:features/my_account/authorizations.png[Authorizations]
+
+For any given authorization, you can see the following information:
+
+* If it's not finished, when the authorization process started
+* If it has finished and has been granted, the date when it was granted
+* If the authorization provides it, some metadata, such as the scope of the authorization
+
+=== Groups
+
+In this section participants can see which groups they belong to.
+
+NOTE: Want to create a new group? Go to the xref:admin:features/participant_actions/group_profile.adoc[Group profile] page.
+
+image::features/my_account/groups.png[Groups]
+
+Read more about groups configuration in the xref:admin:participants/groups.adoc[Groups in the administrator manual].
+
+=== My interests
+
+In this section participants can choose which interests they have to receive more information about.
+
+By default what they see here is a list of all the xref:admin:settings/scopes.adoc[Scopes] of the organization. Those selections
+can be used by administrators when segmenting for the xref:admin:features/social_features/newsletters.adoc[Newsletters].
+
+image::features/my_account/my_interests.png[My interests]
+
+=== My data
+
+In this section participants can request a file with all the data that they've provided in the platform.
+
+image::features/my_account/my_data.png[My data]
+
+To request the data:
+
+. Click in "Request data"
+. Wait a couple of minutes so the files are generated. It could depend in how many proposals, comments, etc you've made
+. Go to your email account and find the received email
+. Click in "Download"
+. Open it with a support zip software
+. Enter the password that you've received in the email
+. Unzip or extract the contents
+
+image:features/my_account/my_data_email.png[My data]
+
+For opening the zip file, the software that you use need to support encryption with the AES-256 algorithm. Depending on your operating system you have multiple alternatives.
+
+* Windows: https://www.7-zip.org/[7-Zip]
+* Mac: https://www.keka.io[Keka]
+* GNU/Linux: File Roller (available through your package manager) or https://peazip.github.io/[PeaZip]
+
+=== Delete my account
+
+In this section participants are able to delete their own accounts. Once it's done, they are unable to access the system anymore.
+This action is irreversible. All the contributions on the platform become anonymous.
+
+image:features/my_account/delete_my_account.png[Delete my account form]
+
+To delete the account:
+
+. Optionally, you can provide a reason for the deletion
+. Click in "Delete my account"
+. Click in "Yes, I want to delete my account"
+
+image:features/my_account/delete_my_account_confirm.png[Confirm account deletion]
+
+After the account has been deleted, the contributions (such as comments, proposals, etc) are still visible but all the authorship information is anonymised,
+and transferred to a "Deleted participant" author.
+
+image:features/my_account/delete_my_account_deleted.png[Deleted participant contribution]
