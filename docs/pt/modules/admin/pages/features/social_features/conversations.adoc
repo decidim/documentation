@@ -1,0 +1,61 @@
+= Conversas
+
+== Understand the basics
+
+With conversations, participants can send private messages to another participant, a group of participants, or to user groups.
+Only the participants who are in the conversation can see each message.
+
+NOTE: It's not possible to delete a conversation nor to edit a message in a conversation.
+
+=== How to find it?
+
+As a signed in participant, you can access your conversations from two places:
+
+. Click in your avatar in the header, and then click in the "Conversations" menu item
+. Click in the "Conversations" link in the footer, in the "My account" section
+
+image::features/conversations/conversations_dropdown.png[Frontend user menu dropdown]
+
+If there are notifications, the participant sees a small badge next to their avatar, and in the dropdown menu.
+
+== Configuração
+
+=== Start a conversation
+
+A participant can start a conversation with any participant or group registered on the platform.
+
+image::features/conversations/conversations.png[Conversations list]
+
+There are two ways to start a conversation.
+
+==== From a participant profile
+
+. Go to the profile of the participant with who you want to start a conversation
+. Click the "Message" button
+. Write your message
+
+image:features/conversations/profile.png[Participant profile]
+
+image:features/conversations/start_a_conversation_form.png[Start a conversation form]
+
+==== From the conversation page
+
+image::features/conversations/conversation.png[Example of a conversation]
+
+. Click in your avatar in the header
+. Click in "Conversations"
+. Click on the "New conversation" button
+. Search the participants or group that you want to start a conversation with
+. Write your message
+
+NOTE: You can start a conversation with several participants, with a limit of 9 participants.
+
+image::features/conversations/new_conversation_modal.png[New conversation modal]
+
+=== Group conversations
+
+Just like with participants, it is possible to have conversations with groups.
+
+NOTE: To know more about user groups, read the xref:admin:features/participant_actions/group_profile.adoc[Group creation] article.
+
+image::features/conversations/group_conversations.png[Group conversations list]
