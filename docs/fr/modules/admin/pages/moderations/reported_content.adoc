@@ -1,43 +1,43 @@
-= Reported content
+= Contenu signalé
 
-When writing the Terms and Conditions of your platform, or your participation chart, you want to make sure that the
-participants respect the participation rules in the contents they're writing.
-All participants are able to report comments, proposals, debates, etc.
+Lors de la rédaction des conditions générales de votre plateforme, ou de votre tableau de participation, vous voulez vous assurer que les participants
+respectent les règles de participation dans le contenu qu'ils écrivent.
+Tous les participants peuvent rapporter des commentaires, des propositions, des débats, etc.
 
-== Report a content
+== Signaler un contenu
 
-Any logged in participant can report content, clicking on the "Report" button available next to the resource.
+N'importe quel participant connecté peut rapporter du contenu, en cliquant sur le bouton "Rapport" disponible à côté de la ressource.
 
-image:moderations/moderations_reported_content_flag.png[Report flag in content]
+image:moderations/moderations_reported_content_flag.png[Signaler le drapeau dans le contenu]
 
-image:moderations/moderations_reported_comment_flag.png[Report flag in comment]
+image:moderations/moderations_reported_comment_flag.png[Signaler le drapeau dans le commentaire]
 
-Participants have to select a reason for the report, and can add extra information if needed.
+Les participants doivent sélectionner une raison pour le rapport et peuvent ajouter des informations supplémentaires si nécessaire.
 
-image:moderations/moderation_modal.png[Give reason for moderation modal]
+image:moderations/moderation_modal.png[Donner raison de modération modale]
 
-== Manage reported content
+== Gérer le contenu signalé
 
-After a participant has reported a content, it appears in two sections of the administration panel:
+Après qu'un participant a signalé un contenu, il apparaît dans deux sections du panneau d'administration :
 
 * Panneau de modération globale
 * Panneau de modération d'espace participatif
 
-image:moderations/moderations_backend_list_content.png[Global moderations panel for content]
+image:moderations/moderations_backend_list_content.png[Panneau de modération globale pour le contenu]
 
-There you'll find first all the unprocessed reports if there's any, with:
+Là, vous trouverez d'abord tous les rapports non traités s'il y en a, avec:
 
-* *Id*: unique identifier of the reported content.
-* *Type*: the kind of content reported, for instance comment, proposal, debate, etc.
+* *Id* : identifiant unique du contenu signalé.
+* *Type* : le type de contenu rapporté, par exemple commentaire, proposition, débat, etc.
 * *Espace participatif* : à quel espace ce contenu appartient.
 * *URL de contenu signalé*: lien pour voir le contenu signalé et voir le contexte de la plainte.
-* *Reason*: why the content is reported. Si le participant qui a fait le rapport a donné des informations supplémentaires
+* *Raison* : pourquoi le contenu est signalé. Si le participant qui a fait le rapport a donné des informations supplémentaires
 il est possible de le voir en le survolant.
-* *Reported at*: when it was originally reported.
-* *Count*: number of reports by different users.
+* *Signalé à* : quand il a été signalé à l'origine.
+* *Nombre*: nombre de rapports par différents utilisateurs.
 * *Actions* : vous pouvez *Développer*, *Désigner* ou *Masquer*.
 
-Once you moderate a content, it appears in the "Hidden" contents list, accessible at the top right of the page.
+Une fois que vous modérez un contenu, il apparaît dans la liste de contenu "Caché", accessible en haut à droite de la page.
 
 === Actions
 
@@ -46,38 +46,38 @@ Once you moderate a content, it appears in the "Hidden" contents list, accessibl
 |===
 |Icône |Nom |Définition |Condition
 
-|image:icons/action_expand.png[Expand icon]
+|image:icons/action_expand.png[Développer l'icône]
 |Agrandir
-|To see the full details of the reported content and reports.
-|Always available.
+|Pour voir tous les détails du contenu et des rapports signalés.
+|Toujours disponible.
 
-|image:icons/action_unreport.png[Unreport icon]
+|image:icons/action_unreport.png[Désignaler l'icône]
 |Ne plus signaler
-|Allows an administrator or moderator to keep showing this content and cancel the report.
-|Available when the content isn't yet hidden.
+|Permet à un administrateur ou un modérateur de continuer à afficher ce contenu et d'annuler le rapport.
+|Disponible lorsque le contenu n'est pas encore masqué.
 
-|image:icons/action_hide.png[Hide icon]
+|image:icons/action_hide.png[Masquer l'icône]
 |Cacher
-|Allows an administrator or moderator to hide this content and accept the report.
-|Available when the content isn't yet hidden.
+|Permet à un administrateur ou un modérateur de masquer ce contenu et d'accepter le rapport.
+|Disponible lorsque le contenu n'est pas encore masqué.
 
-|image:icons/action_hide.png[Unhide icon]
+|image:icons/action_hide.png[Démasquer l'icône]
 |Unhide
-|Allows an administrator or moderator to Unhide this content (showing it publicly again).
-|Available when the content is hidden.
+|Autorise un administrateur ou un modérateur à masquer ce contenu (l'afficher à nouveau publiquement).
+|Disponible lorsque le contenu est masqué.
 |===
 
-If a content has been mistakenly "Unreported" then you'll need to find it again in the public platform
-and report it again so you can moderate it.
+Si un contenu a été "non signalé" par erreur, vous devrez le retrouver dans la plateforme publique
+et le signaler à nouveau afin que vous puissiez le modérer.
 
 === Agrandir
 
-To review the details of a content, and the different reports made by participants, you can click the "Expand" button.
-see all the metadata of a report, you can see it Expanded.
+Pour consulter les détails d'un contenu et les différents rapports des participants, vous pouvez cliquer sur le bouton "Développer".
+voir toutes les métadonnées d'un rapport, vous pouvez le voir étendu.
 
-image:moderations/moderations_backend_report_content.png[Global moderations panel for content]
+image:moderations/moderations_backend_report_content.png[Panneau de modération globale pour le contenu]
 
-This view allow you to assess quickly if it's necessary to hide or not the content.
-At the bottom of the report, you can also review the different reports made by other participants, and expand them as well.
+Cette vue vous permet d'évaluer rapidement s'il est nécessaire de cacher ou non le contenu.
+Au bas du rapport, vous pouvez également examiner les différents rapports faits par les autres participants et les étendre également.
 
-image:moderations/moderations_backend_report_details.png[Global moderations panel for content]
+image:moderations/moderations_backend_report_details.png[Panneau de modération globale pour le contenu]
