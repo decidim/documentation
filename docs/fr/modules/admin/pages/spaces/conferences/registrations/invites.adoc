@@ -3,22 +3,22 @@
 == Understand the basics
 
 Les administrateurs peuvent inviter les participants à participer à la conférence.
-They can invite existing participants, with an account on the platform, as well as people without account.
-Inviting a participant sends an email to the account email address, encouraging the participant to register for the conference.
+Ils peuvent inviter des participants existants, avec un compte sur la plateforme, ainsi que des personnes sans compte.
+Inviter un participant envoie un e-mail à l'adresse e-mail du compte, encourageant le participant à s'inscrire à la conférence.
 
 == Configuration
 
-=== Manage invites
+=== Gérer les invitations
 
-To access the invites configuration, click in the secondary navigation panel on the "Invites" item.
+Pour accéder à la configuration des invitations, cliquez dans le panneau de navigation secondaire de l'élément "Invitations".
 
 image::spaces/conferences/invites.png[Conferences user invites in backend]
 
-You can filter the invites and search by invitee name or email.
+Vous pouvez filtrer les invitations et rechercher par nom d'invité ou par email.
 
-=== Send an invite
+=== Envoyer une invitation
 
-To invite a participant, click the "Invite participant" button in the top right of the page.
+Pour inviter un participant, cliquez sur le bouton "Inviter un participant" en haut à droite de la page.
 
 image::spaces/conferences/invite_participant_form.png[Invite a participant form]
 
@@ -29,21 +29,21 @@ image::spaces/conferences/invite_participant_form.png[Invite a participant form]
 
 |Type de participant
 |Obligatoire
-|Whether or not this invited person already has an account.
+|Si cette personne invitée a déjà un compte
 
 |Nom
-|Required if the invitee is not already a participant.
+|Requis si l'invité n'est pas déjà un participant.
 |Nom de la personne invitée.
 
 |Courriel
-|Required if the invitee is not already a participant.
+|Requis si l'invité n'est pas déjà un participant.
 |Courriel de la personne invitée.
 
 |Utilisateur
 |Requis si c'est un participant existant.
-|Type at least three characters to search for a participant account.
+|Tapez au moins trois caractères pour rechercher un compte participant.
 
 |xref:admin:admin:espaces/conférences/registrations/types.adoc[Type d'enregistrement]
 |Obligatoire
-|The xref:admin:spaces/conferences/registrations/types.adoc[registration type] this invitation covers.
+|Le xref:admin:admin:spaces/conferences/registrations/types.adoc[type d'inscription] que cette invitation couvre.
 |===
