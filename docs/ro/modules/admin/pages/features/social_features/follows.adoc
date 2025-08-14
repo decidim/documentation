@@ -1,0 +1,43 @@
+= Follows
+
+== Understand the basics
+
+Participants can follow contents in Decidim, such as participatory spaces, proposals, a specific meeting, other participants, user groups, etc.
+Following something or someone means that when there are news related to this content, the participant receive xref:features/participant_actions/notifications.adoc[notifications].
+
+Notifications are accessible in the notification page, but can also be sent by email.
+You can control these notifications in the xref:features/participant_actions/my_account.adoc#_notifications_settings[settings of your account].
+
+The activity that you're following is visible in your xref:features/participant_actions/my_public_profile.adoc[profile activity].
+
+== Configuration
+
+=== Follow content
+
+NOTE: By default, administrators follow all the new spaces created in the platform.
+
+To follow a content:
+
+. Navigate to whatever you want to follow.
+. Click in the "Follow" button.
+. See that the "Follow" button disappear and the "Stop following" button appear.
+
+image::features/follows/button_follow.png[Follow button]
+
+=== Unfollow content
+
+To unfollow a content:
+
+. Navigate to whatever you want to unfollow.
+. Click in the "Stop following" button.
+. You'll see the "Stop following" button disappear and the "Follow" button appear.
+
+image::features/follows/button_stop_following.png[Stop following button]
+
+=== Follow a participant
+
+A participant can also follow participants. This is public and visible in the profile xref:features/participant_actions/my_public_profile.adoc[follows section].
+
+To follow a participant, pass the cursor on their avatar, or click the "Follow" button in their public profile page.
+
+image::features/follows/user_tooltip_follow.png[Follow user]
