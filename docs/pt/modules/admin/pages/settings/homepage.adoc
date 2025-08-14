@@ -1,0 +1,161 @@
+= Página
+
+In this page you can configure your instance homepage, by enabling different content blocks, that you can organize as you want
+by dragging and dropping them in the two columns.
+
+. Add different content blocks by clicking the "Add content block" button, and choose the one you want to add.
+. Configure the content block (if configurable) while it's in the inactive content blocks columns
+. Finally, move the content block in the active content blocks column to make it appear on the homepage
+
+image::settings/admin_homepage.png[Decidim Admin Homepage]
+
+NOTE: Na sua instalação, você pode ter outros blocos de conteúdo, pois isso depende de quais módulos você tem ativos.
+Por favor, contate o administrador do sistema se você ver algo diferente aqui, como um bloco de conteúdo faltando.
+
+Below, you'll find all the content blocks configuration guides and screenshots of how there are displayed on the homepage.
+
+== Homepage content blocks
+
+These are the different content blocks enabled with the official Decidim modules.
+
+=== Hero image and CTA
+
+The hero image and CTA content block allows to display:
+
+* *a welcome text*: to welcome the participants, or to advertise a new process for example.
+* *a call to action button*: by default, a "Participate" button redirecting to the participatory processes index.
+Can be customized in xref:admin:settings/appearance.adoc#edit_homepage_appearance[Appearance] thanks to the Call To Action button fields.
+* *an image*: the downloaded image is displayed with an opacity filter, to make sure the welcome text is readable.
+
+image::settings/homepage_hero_image_back.png[Hero image in Homepage backend content block]
+
+In the screenshot below, the CTA button has been personalized in the  in xref:admin:settings/appearance.adoc#_edit_homepage_appearance[Appearance] section.
+
+image::settings/homepage_hero_image_front.png[Hero image in Homepage frontend content block]
+
+=== Global menu
+
+The global menu content block displays a navigation menu on the homepage with all the participatory spaces types that you
+created on your instance.
+
+image::settings/homepage_global_menu.png[Global menu in Homepage frontend content block]
+
+=== Banner de sub-herói
+
+The sub hero banner content block displays the description text of the instance
+configured in xref:admin:settings/appearance.adoc#_edit_homepage_appearance[Appearance].
+
+image::settings/homepage_sub_hero_banner.png[Sub hero banner in Homepage content block]
+
+=== Banner de conteúdo destacado
+
+The highlighted content banner content block displays the banner configured in
+xref:admin:settings/appearance.adoc#_highlighted_content_banner[Appearance].
+
+image::settings/homepage_highlighted_content_banner.png[Highlighted content banner in Homepage content block]
+
+=== Rodapé do sub-herói banner
+
+The footer sub hero banner content block displays a default text that can't be configured.
+Move it to inactive or delete it if you don't want it to be displayed on the homepage.
+
+image::settings/homepage_footer_sub_hero_banner.png[Hero image in Homepage content block]
+
+=== Como participar
+
+The how to participate content block displays a default text that can't be configured, and a button redirecting participants to
+the help xref:admin:pages.adoc[pages].
+
+image::settings/homepage_how_to_participate.png[How to participate in Homepage content block]
+
+=== Próximas reuniões
+
+The upcoming meetings content block displays:
+
+* a list of upcoming meetings: published and visible incoming meetings appear as a list.
+* a map: upcoming meetings are displayed as pins on the map when they have an address.
+* a calendar: the calendar shows in grey the current date, and in the secondary color the date of the next meeting of the month.
+* a link to see all meetings: this link redirects to the instance meeting page, also accessible via the "Meetings" button in the header.
+
+image::settings/homepage_upcoming_meetings.png[Upcoming meetings in Homepage content block]
+
+=== Última atividade
+
+The last activity content block displays a list of the contents participants and administrators published in the last days.
+Participants can see:
+
+* the publication date
+* the content title
+* the content type: comment, meeting, proposal, blog post, etc.
+* the space or content where it was published
+* the user who published it
+
+image::settings/homepage_last_activity.png[Last activity in Homepage content block]
+
+=== Processos destacados
+
+The highlighted processes content block displays a grid of participatory processes on the homepage.
+You can configure the maximum of processes to display by clicking the "Edit" button on the content block (6, 9, or 10).
+
+image::settings/homepage_highlighted_processes.png[Highlighted processes in Homepage content block]
+
+=== Assembleias em destaque
+
+The highlighted assemblies content block displays a grid of assemblies on the homepage.
+You can configure the maximum of assemblies to display by clicking the "Edit" button on the content block (6, 9, or 10).
+
+image::settings/homepage_highlighted_assemblies.png[Highlighted assemblies in Homepage content block]
+
+=== Conferências destacadas
+
+The highlighted conferences content block displays a grid of conferences on the homepage.
+You can configure the maximum of conferences to display by clicking the "Edit" button on the content block (6, 9, or 10).
+
+image::settings/homepage_highlighted_conferences.png[Highlighted conferences in Homepage content block]
+
+=== Iniciativas destacadas
+
+The highlighted processes content block displays a grid of participatory processes on the homepage.
+You can configure the maximum of processes to display by clicking the "Edit" button on the content block (6, 9, or 10).
+You can also choose if you want to display initiatives by least or more recent ones.
+
+image::settings/homepage_highlighted_initiatives.png[Highlighted initiatives in Homepage content block]
+
+=== Estatísticas da organização
+
+The organization statistics content block displays statistics about the participation on your instance, such as the number of
+participants, proposals, meetings, etc.
+
+image::settings/homepage_organization_statistics.png[Organizations statistics in Homepage content block]
+
+=== Métricas da organização
+
+The organization metrics content block displays the evolution of the participation on your instance.
+
+NOTE: Você está buscando por como ativar este recurso tecnicamente? Vá para xref:develop:metrics.adoc[Métricas do guia de desenvolvedores]
+
+image::settings/homepage_organization_metrics.png[Organization metrics in Homepage content block]
+
+=== Bloco HTML
+
+The HTML block content block allows to add an editable HTML block on the homepage, and therefore to create a personalized section.
+
+image::settings/homepage_html_block.png[HTML block in Homepage content block]
+
+Here are some examples of how some organizations personalize their homepage with this content block.
+
+image::settings/homepage_html_block_barcelona.png[HTML block in Homepage content block Barcelona example]
+
+Homepage HTML block of the platform of the city of Barcelona in Spain (www.decidim.barcelona).
+
+image::settings/homepage_html_block_nyc.png[HTML block in Homepage content block NYC example]
+
+Homepage HTML block of the platform of New York City in USA (www.participate.nyc.gov).
+
+image::settings/homepage_html_block_kakogawa.png[HTML block in Homepage content block Kakogawa example]
+
+Homepage HTML block of the platform of the city of Kakogawa in Japan (kakogawa.diycities.jp).
+
+image::settings/homepage_html_block_lausanne.png[HTML block in Homepage content block Lausanne example]
+
+Homepage HTML block of the platform of the city of Lausanne in Switzerland (participer.lausanne.ch).
