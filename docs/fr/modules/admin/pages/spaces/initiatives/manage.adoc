@@ -1,0 +1,86 @@
+= Gérer les initiatives
+
+== Understand the basics
+
+Lorsqu'un participant crée une initiative, il ne crée pas seulement une ressource comme une proposition, il crée un espace entier
+permettant aux administrateurs de gérer dans l'administration :
+
+* xref:admin:espaces/initiatives/admin_manage/commissione.adoc[Membres du Comité]
+* xref:admin:espaces/initiatives/admin_manage/components.adoc[Components]
+* xref:admin:espaces/initiatives/admin_manage/attachments.adoc[Attachments]
+* xref:admin:espaces/initiatives/admin_manage/moderations.adoc[Moderations]
+* xref:admin:espaces/initiatives/admin_manage/answer.adoc[Répondre à une initiative]
+
+NOTE: Si vous ne l'avez pas configuré, une fois qu'une initiative est créée, le composant Réunions et Page est activé par défaut par
+. Demandez à votre instance implémentée de modifier ce paramètre si vous n'en avez pas besoin ou si vous voulez que d'autres composants soient activés par défaut.
+
+image::spaces/initiatives/initiative_admin_show.png[Admin initiative show page]
+
+== Configuration
+
+=== Gérer les initiatives
+
+Après que l'initiative a été envoyée à la validation technique par un participant, un administrateur peut voir toutes les initiatives dans le panneau d'administration.
+
+image::spaces/initiatives/initiative_admin_list.png[Admin initiatives list]
+
+Vous pouvez trouver tous les processus dans cette liste avec:
+
+* *ID* : numéro d'identification de l'initiative.
+* *Initiatives* : titre de l'initiative.
+* *Signatures* : somme des signatures en ligne et en personne.
+* *Créé à* : date de création de l'initiative.
+* *Publié à*: date de publication de l'initiative.
+
+Vous pouvez filtrer et trier cette liste en cliquant sur le bouton "Filtre" et sur les en-têtes des colonnes.
+Vous pouvez également rechercher des initiatives par titre dans la barre de recherche.
+
+image::spaces/initiatives/initiative_list_filters.png[Initiatives list filtered]
+
+=== Actions
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Modifier l'icône]
+|Editer
+|Pour modifier l'initiative, ses pièces jointes, les membres du comité, les composants, etc.
+
+|image:icons/action_answer.png[Icône de réponse]
+|Répondre
+|Permet de xref:admin:spaces/initiatives/admin_manage/answer.adoc[Répondre à une initiative].
+
+|image:icons/action_preview.png[Icône d'aperçu]
+|Aperçu
+|Pour voir à quoi ressemble l'initiative en frontend pour les participants.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Autorisations
+|Éditer les permissions sur cette initiative.
+|===
+
+=== Modifier une initiative
+
+When clicking the "Edit" button or the initiative title on the initiative list in administration, the administrator is
+redirected to the initiative edit form, and can see that the secondary navigation bar on the left also allows to manage
+the initiative committee members, its components, attachments and reported content.
+
+image::spaces/initiatives/initiative_edit_form_admin.png[Initiative edit form in administration]
+
+Sur le formulaire d'édition, l'administrateur peut vérifier et modifier le titre de l'initiative, la description, la portée, la zone, etc.
+Ils peuvent également envoyer l'initiative à la validation technique.
+
+=== Publier une initiative
+
+Une fois qu'une initiative est envoyée à la validation technique, l'administrateur peut décider de la publier ou de la supprimer.
+Pour publier une initiative en validation technique, allez sur la page d'édition d'initiative et cliquez sur le bouton "Publier".
+
+=== Exporter les signatures
+
+Après que l'initiative ait commencé à obtenir des signatures, les administrateurs peuvent exporter les signatures dans le formulaire d'édition d'initiative, en CSV ou en .pdf.
+
+image::spaces/initiatives/initiative_actions_export.png[Initiative actions with Export to PDF]
+
+image::spaces/initiatives/initiative_actions_export_pdf.png[Initiative exported PDF]
