@@ -1,0 +1,230 @@
+= Création du processus participatif
+
+== Understand the basics
+
+Les processus participatifs permettent aux administrateurs de configurer des composants en articulation avec différentes phases participatives.
+Pour commencer à créer un processus, lorsque dans la liste des processus, cliquez sur le bouton "Nouveau processus" en haut à droite de la page.
+
+Le formulaire de création de processus est divisé en différentes sections qui sont détaillées dans les sections ci-dessous.
+
+Une fois que vous avez créé un processus, dans le panneau de navigation secondaire, vous pouvez voir toute la configuration du processus disponible :
+
+* xref:admin:admin:spaces/processes/process_creation.adoc[À propos de ce processus]: ici vous pouvez accéder et éditer tous les champs du formulaire de création.
+* xref:admin:admin:spaces/processes/landing_page.adoc[Page d'accueil]
+* xref:admin:spaces/processes/phases.adoc[Étapes]
+* xref:admin:spaces/processes/components.adoc[Components]
+* xref:admin:spaces/processes/categories.adoc[Categories]
+* xref:admin:spaces/processes/attachments.adoc[Attachments]
+* xref:admin:spaces/processes/admins.adoc[Administrateurs de la concertation]
+* xref:admin:spaces/processes/private_participants.adoc[Utilisateurs privés]
+* xref:admin:spaces/processes/moderations.adoc[Moderations]
+
+== Informations générales
+
+Cette section permet de fournir une description générale du processus, principalement un titre, une URL et une description.
+
+image::spaces/processes/processes_new_form_general_info.png[New participatory process form general info section]
+
+.Nouvelle forme de processus participatif : Informations générales
+[cols="20h,10h,~,~"]
+|===
+|Champ |Type |Description |Visibilité
+
+|Titre
+|Obligatoire
+|Titre du processus participatif. Par exemple, "Budget participatif 2020"
+|Visible dans la carte du processus sur la page d'accueil, dans l'index des processus, dans la navigation et dans le bloc de la page d'accueil "Image du héros et CTA".
+
+|Sous-titre
+|Obligatoire
+|Sous-titre. Par exemple, "décidons ensemble de nos priorités"
+|Visible dans le bloc « Image du héros et CTA ».
+
+|Rang d'affichage
+|Obligatoire
+|Détermine l'ordre du processus lorsqu'il est affiché dans l'index des processus ou la page d'accueil.
+|N/A
+
+|Identifiant d'URL
+|Obligatoire
+|Les identifiants d'URL sont utilisés pour générer les URL qui pointent vers ce processus. N'accepte que des lettres, des chiffres et des tirets et doit
+commencer par une lettre.
+|Visible dans l'URL du processus participatif, par exemple https://example.org/processes/participatory-budget-2020.
+
+|Hashtag
+|Facultatif
+|Hashtag redirigeant vers le réseau social X.
+|Visible dans le bloc « Image du héros et CTA ».
+
+|Courte description
+|Obligatoire
+|Une brève explication de ce qui est le processus participatif.
+|Visible dans le bloc "Données principales".
+
+|Description
+|Obligatoire
+|Une explication détaillée de ce qui est le processus participatif.
+|Visible dans le bloc "Données principales".
+
+|Annonce
+|Facultatif
+|Le texte que vous entrez ici est affiché à l'utilisateur juste en dessous des informations de processus.
+|Visible dans le bloc "Annoncement".
+|===
+
+== Durée
+
+Cette section permet de fournir des informations sur les dates de début et de fin du processus.
+Il peut être activé sur la page d'accueil avec le bloc "Phase & durée".
+
+image::spaces/processes/processes_new_form_duration.png[New participatory process form duration section]
+
+.Nouvelle forme de processus participatif : Durée
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Date de début
+|Facultatif
+|Quand ce processus démarre. Vous avez un widget calendrier pour choisir la journée. Format attendu : jj/mm/aaaa
+
+|Date de fin
+|Facultatif
+|Quand ce processus démarre. Vous avez un widget calendrier pour choisir la journée. Format attendu : jj/mm/aaaa
+|===
+
+== Images
+
+image::spaces/processes/processes_new_form_images.png[New participatory process form images section]
+
+.Nouvelle forme de processus participatif : Images
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Image de la maison
+|Facultatif
+|Image utilisée dans les cartes de présentation de ce processus. Orientation pour le fichier: Doit être une image ou un document.
+Pour les images, utilisez de préférence des images paysagères, le service récolte l'image. Taille maximale du fichier : 10 Mo
+|===
+
+== Métadonnées
+
+Cette section permet de fournir des méta-informations sur le processus.
+Il peut être activé sur la page d'accueil avec le bloc "Metadata".
+
+image::spaces/processes/processes_new_form_metadata.png[New participatory process form metadata section]
+
+.Nouvelle forme de processus participatif : Métadonnées
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Groupe de promoteurs
+|Facultatif
+|Si un groupe spécifique est à l'origine du processus, comme une direction de ville, un comité d'association, etc.
+
+|Zone d'organisation
+|Facultatif
+|Le domaine ou la catégorie de l'organisation, s'il est pertinent.
+
+|Métadonnées du périmètre d'application
+|Facultatif
+|Métadonnées sur la portée du processus, si elle est pertinente.
+
+|Qui participe
+|Facultatif
+|Qui sont les participants autorisés, qui peuvent participer au processus.
+
+|Ce qui est décidé
+|Facultatif
+|La question du processus, l'objet de ce qui est décidé.
+
+|Comment est-il décidé
+|Facultatif
+|Le processus de prise de décision.
+|===
+
+== Filtres
+
+Cette section détermine les filtres disponibles dans le processus, dans les différents composants.
+Les filtres peuvent ensuite être activés et configurés dans chaque composant.
+
+image::spaces/processes/processes_new_form_filters.png[New participatory process form filters section]
+
+.Nouveau formulaire de processus participatif : Filtres
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Portées activées
+|Facultatif
+|Cochez cette case si vous voulez que le filtrage des portées soit effectué dans ce processus.
+
+|Secteur
+|Facultatif
+|Ce que xref:admin:settings/scopes.adoc[Scope] fait appartient à ce processus.
+
+|Profondeur du filtre de portée
+|Facultatif
+|Restreindre la profondeur de filtre du périmètre. Ceci est pertinent si vous avez des relations complexes dans les enfants Scopes (comme une poupée russe).
+For instance if you have Grandmother -> Mother -> Child nested scopes, this setting allows you to choose the Mother scope,
+so the participants can only filter between the Child sub-scopes. Ce serait le cas par exemple si vous avez
+Provinces -> Villes -> Districts, et que le processus concerne une ville particulière.
+
+|Zone de stockage
+|Facultatif
+|Ce que xref:admin:settings/areas.adoc[Area] fait appartient à ce processus.
+|===
+
+== Visibilité
+
+Cette section permet aux administrateurs de configurer le placement du processus dans les différentes pages et sa publicité ou non.
+
+image::spaces/processes/processes_new_form_visibility.png[New participatory process form visibility section]
+
+.Nouvelle forme de processus participatif : Visibilité
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Groupe de processus
+|Facultatif
+|Permet de regrouper plusieurs processus ensemble. Vérifiez xref:admin:spaces: processes/groups.adoc[Process Groups] pour en savoir plus.
+
+|Espace privé
+|Facultatif
+|Cochez cette case si le processus ne doit être accessible que par xref:admin:spaces/processes/private_participants.adoc[Participants privés].
+
+|Promu
+|Facultatif
+|Cochez cette case si vous voulez que le processus ait plus de visibilité dans la liste publique Processus et le bloc de contenu "Processus mis en surbrillance"
+dans xref:admin:settings/homepage. configuration doc[Homepage].
+|===
+
+== Processus connexes
+
+Cette section permet de créer des relations entre les processus. C'est différent des groupes de processus.
+Il peut être activé sur la page d'accueil avec le bloc "Processus associés".
+
+image::spaces/processes/processes_new_form_related_processes.png[New participatory process form Related processes section]
+
+.Nouvelle forme de processus participatif : Processus liés
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Processus connexes
+|Facultatif
+|Sélectionnez d'autres processus participatifs qui sont liés à celui-ci.
+|===
+
+== Autre
+
+Cette section est vide, sauf si un administrateur a déjà créé xref:admin:spaces/processes/types.adoc[Process Types].
+Si c'est le cas, vous devriez pouvoir sélectionner un type de processus pour catégoriser le processus.
+Les participants sont alors en mesure de filtrer les processus dans l'index des processus avec ces types.
+
+image::spaces/processes/process_types_edit_process.png[Choose a process type when editing a process]
+
+image::spaces/processes/process_types_filter.png[Process types filter in the processes index]
