@@ -1,0 +1,18 @@
+= Configurations spécifiques
+
+== Understand the basics
+
+Le composant Proposals a été construit avec des mises en page différentes, afin de traiter différents cas d'utilisation.
+Ces configurations spécifiques sont plus rarement utilisées et nécessitent une bonne connaissance du logiciel.
+
+== Configuration
+
+Les trois fonctionnalités peuvent être activées dans les paramètres globaux du formulaire de configuration du composant de proposition.
+
+image::components/proposals/component_specific_conf.png[Add component form - Specific configurations]
+
+Dans cette section, vous pouvez apprendre à configurer et à utiliser les fonctionnalités suivantes :
+
+* xref:admin:components/proposals/special_configurations/amendements.adoc[Amendments]
+* xref:admin:components/proposs/special_configurations/collaborative_drafts.adoc[Collaborative drafts]
+* xref:admin:components/proposals/special_configurations/participatory_texts.adoc[Textes participatifs]
