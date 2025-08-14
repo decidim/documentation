@@ -74,7 +74,7 @@ image::spaces/private_participants_user_registration_form.png[User registration 
 You can find all the private participants on the list in the administration panel, with:
 
 * *Name*: name of the private participant. If the account already exists, it is automatically changed for the account username.
-* *Email*: email of the participant.
+* *E-mail*: email du participant.
 * *Invitation sent at*: date and hour when the invitation email was sent (when participant doesn't already have an account).
 * *Invitation accepted at*: date and hour when the invitation email was accepted by the participant.
 
