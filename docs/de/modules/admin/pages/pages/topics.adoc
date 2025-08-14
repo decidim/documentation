@@ -1,0 +1,45 @@
+= Themen
+
+== Understand the basics
+
+In this section, you can configure Topics, to organize the static pages and provide more clarity to the participants.
+
+== Konfiguration
+
+=== Manage the topics
+
+To access the topics list, click the Topics tab at the top of the panel.
+Here, you are able to edit, delete, and create topics for your static pages.
+
+image::pages/pages_backend_list_topics.png[Backend: list topics of pages]
+
+=== Neues Thema erstellen
+
+To create a new topic, click the "Create topic" button.
+
+image::pages/pages_backend_topic_form.png[Backend: new topic form]
+
+.Neues Themen-Formular
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Titel dieses Themas. Zum Beispiel: "Hilfe"
+
+|Beschreibung
+|Optional
+|Worum geht es bei diesem Thema.
+
+|Bestellposition
+|Optional
+|The order of the topic in relation with the other topics. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+For instance, if you have two topics, "Topic a" with weight "10" and "Topic b" with weight "0" then "Topic b" is first when ordering.
+
+|Im Footer anzeigen
+|Optional
+|Wether you want to show this topic in the "Help" section of the general footer (accessible in every page).
+|===
+
+image::pages/pages_frontend_footer.png[Frontend: example of a page in the footer]
