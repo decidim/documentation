@@ -1,0 +1,33 @@
+= Soutiens
+
+== Understand the basics
+
+Par le biais d'approbations, les participants peuvent manifester publiquement leur soutien à un contenu particulier, comme une proposition, un débat, etc.
+
+NOTE: Les propositions sont également appelées "J'aime" dans l'interface des participants.
+
+image::features/endorsements/sidebar.png[Endorsement button in sidebar]
+
+== Configuration
+
+=== Activer les approbations
+
+Les administrateurs peuvent autoriser les approbations par phase (étape) dans un processus participatif donné, ainsi que définir les autorisations avec les autorisations.
+
+image::features/endorsements/admin.png[Endorsement phase (step) settings]
+
+=== Soutenir / aimer le contenu
+
+Pour approuver le contenu, cliquez sur le bouton "J'aime" sous le contenu.
+
+image::features/endorsements/list.png[List of endorsements]
+
+Lorsqu'un participant appartient à un groupe vérifié, il peut également approuver/aimer ce groupe en sélectionnant l'identité.
+
+image::features/endorsements/modal.png[Select identity modal]
+
+Par défaut, la liste des avances est réduite. Pour voir tous les endorseurs, vous devez aussi cliquer sur l'icône "+ x".
+
+image:features/endorsements/full_list.png[Liste complète des approbations]
+
+Les participants peuvent également ne pas apprécier le contenu s'ils changent d'avis.
