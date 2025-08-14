@@ -2,13 +2,13 @@
 
 == Understand the basics
 
-Un processus participatif est une séquence de phases ordonnées dans le temps. Depending on which phase of the process timeline you
-are, then you can enable and configure the features you need for each phase.
+Un processus participatif est une séquence de phases ordonnées dans le temps. Selon la phase de la timeline du processus que vous
+êtes, vous pouvez alors activer et configurer les fonctionnalités dont vous avez besoin pour chaque phase.
 
 Ideally, the Phases of a Participatory Process are always the same and are not changed, so participants can know what are
 the rules and time frame and can organize to know when it'd be best for them to participate in this process.
 
-For example, the standard structure of a participatory process could be as follows:
+Par exemple, la structure standard d'un processus participatif pourrait être la suivante:
 
 . Présentation
 . Diagnostic
@@ -22,13 +22,13 @@ when it's enabled by an administrator in the process xref:admin:spaces/processes
 
 image::spaces/processes/process_phases_block.png[Block with processes phases link]
 
-When clicking on the link for the active phase, they can see the full description and explanation of the phases in a pop-up.
+En cliquant sur le lien pour la phase active, ils peuvent voir la description complète et l'explication des phases dans une fenêtre contextuelle.
 
 image::spaces/processes/process_phases.png[Process phases explanation]
 
-== Manage phases
+== Gérer les phases
 
-To access the phases configuration, click in the secondary navigation panel on the "Phases" item.
+Pour accéder à la configuration des phases, cliquez dans le panneau de navigation secondaire de l'élément "Phases".
 
 image::spaces/processes/process_phases_list.png[Phases of a participatory process]
 
@@ -39,36 +39,36 @@ image::spaces/processes/process_phases_list.png[Phases of a participatory proces
 |===
 |Icône |Nom |Définition |Condition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Modifier l'icône]
 |Editer
 |Éditer cette phase.
-|Always available
+|Toujours disponible
 
-|image:icons/action_activate.png[Activate icon]
+|image:icons/action_activate.png[Activer l'icône]
 |Activer
 |Pour faire de cette phase la phase active.
-|Only available for inactive phases.
+|Disponible uniquement pour les phases inactives.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Supprimer l'icône]
 |Supprimez
 |Supprimer cette phase.
-|Always available
+|Toujours disponible
 |===
 
 == Créer une nouvelle phase
 
-To create a new phase, click the "New phase" button in the top right of the page.
+Pour créer une nouvelle phase, cliquez sur le bouton "Nouvelle phase" en haut à droite de la page.
 
 image::spaces/processes/process_phases_new_form.png[Create a new participatory process phase form]
 
-.Create process phase form
+.Créer un formulaire de phase de processus
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Titre
 |Obligatoire
-|The title for this phase, displayed in the phase content block and on the process cards when phase is active.
+|Le titre de cette phase, affiché dans le bloc de contenu de phase et sur les cartes de processus lorsque la phase est active.
 
 |Description
 |Facultatif
@@ -76,11 +76,11 @@ image::spaces/processes/process_phases_new_form.png[Create a new participatory p
 
 |Date de début
 |Facultatif
-|The start date of this process phase. Format attendu : jj/mm/aaaa
+|La date de début de cette phase de processus. Format attendu : jj/mm/aaaa
 
 |Date de fin
 |Facultatif
-|The end date of this process phase. Format attendu : jj/mm/aaaa
+|La date de fin de cette phase de processus. Format attendu : jj/mm/aaaa
 
 |Chemin de l'appel à l'action
 |Facultatif
@@ -91,5 +91,5 @@ image::spaces/processes/process_phases_new_form.png[Create a new participatory p
 |Déprécié
 |===
 
-CAUTION: Configuring the CTA through the Phase of the participatory process is deprecated with the new design.
-Now this is done in the Landing Page, using the Hero and image content block.
+CAUTION: La configuration de l'ATC à travers la phase du processus participatif est dépréciée avec la nouvelle conception.
+Maintenant cela se fait dans la page d'atterrissage, en utilisant le bloc de contenu Héros et image.
