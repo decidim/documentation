@@ -1,0 +1,41 @@
+= Teilnehmer
+
+== Understand the basics
+
+The participants tab allow you to make certain tasks with participants, among them:
+
+* To manage access rights to the platform administration
+* To contact participants
+* To manage participants access to specific spaces
+* To certify the identity of specific participants
+* To certify the authenticity of user organizations or collectives
+
+== Konfiguration
+
+To access the Participants configuration panel, go in the administration panel and click the "Participants" item in the administration navigation bar.
+
+image::participants/participants_menu.png[Participants menu]
+
+There, you first see the list of administrators of the platform.
+
+image::participants/participants_sidebar_menu.png[Participants sidebar menu]
+
+In the secondary navigation panel, you can see all the participants configuration possibilities:
+
+* xref:admin:participants/admins.adoc[Admins]
+* xref:admin:participants/groups.adoc[Groups]
+* xref:admin:participants/participants.adoc[Participants]
+* xref:admin:participants/impersonations.adoc[Impersonations]
+** xref:admin:participants/verifications_conflicts.adoc[Überprüfungskonflikte]
+* xref:admin:participants/authorizations.adoc[Authorizations]
+** xref:admin:participants/authorizations/identity_documents.adoc[Identifizierungsdokumente]
+** xref:admin:participants/authorizations/code_postal_letter.adoc[Postleitzahlen]
+** xref:admin:participants/authorizations/census.adoc[Organization's census]
+
+Some of those items might not appear in this menu, because they aren't enabled.
+To check how to enable them, go on the missing item documentation article.
+
+== Beispiele
+
+You want to add your colleagues so they can edit the platform.
+You want to set specific flows for participants to be able to participate in a specific participatory space.
