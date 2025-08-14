@@ -1,0 +1,32 @@
+= Gérer l'initiative en tant qu'auteur
+
+== Understand the basics
+
+Les initiatives ont la particularité d'être à la fois gérables par les administrateurs et leurs auteurs.
+Les administrateurs ont plus de droits, mais les auteurs peuvent également gérer un certain nombre de configurations de leurs initiatives.
+
+== Modifier l'initiative
+
+Une fois que l'initiative est créée, l'auteur peut voir la page de l'initiative, mais jusqu'à ce que l'initiative soit examinée et acceptée par un administrateur, par la validation technique,
+elle n'est pas publiée et visible pour tous les participants.
+
+image::spaces/initiatives/initiative_show.png[Initiative show]
+
+Une fois que l'initiative est créée et avant qu'elle ne soit envoyée à la validation technique, l'auteur peut modifier et corriger l'initiative en cas d'erreur.
+
+image::spaces/initiatives/initiative_edit.png[Initiative edit]
+
+Si le comité xref:admin:spaces/initiatives/author_manage/. do[Comité de promotion] est activé pour le type d'initiative de cette initiative, l'auteur d'une initiative peut gérer les demandes et les membres du comité à la fin du formulaire d'édition.
+
+== Envoyer à la validation technique
+
+Une fois que toutes les conditions sont réunies, si l'initiative est prête et compte suffisamment de membres du comité, l'auteur peut envoyer l'initiative à la validation technique.
+En cliquant sur le bouton "Envoyer à la validation technique", un modal est affiché pour avertir l'auteur qu'il ne sera pas en mesure de le modifier après cette action.
+
+image::spaces/initiatives/initiative_send_to_technical_validation.png[Send initiative to technical validation]
+
+== Récupérer les initiatives créées
+
+Les auteurs peuvent également trouver leurs initiatives dans l'index des initiatives en décochant le filtre "Ouvrir" et en cliquant sur le filtre "Mes initiatives".
+
+image::spaces/initiatives/initiative_filters_my_initiatives.png[Filters for my initiatives]
