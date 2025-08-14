@@ -1,0 +1,128 @@
+= Projets
+
+== Understand the basics
+
+Les projets font partie des budgets.
+
+== Configuration
+
+=== Créer un projet
+
+Pour accéder à la création et à la gestion des projets, cliquez sur le titre du budget ou sur l'image:icons/action_list.png[l'icône Gérer les projets]
+sur la liste des budgets.
+
+image::components/budgets/new_project_button.png[New project button]
+
+Ensuite, cliquez sur le bouton "Nouveau projet" en haut à droite de la page.
+
+image::components/budgets/new_project.png[New project form]
+
+.Formulaire de création d'un projet
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Le titre pour ce projet.
+
+|Description
+|Obligatoire
+|Une description de l'objet de ce projet.
+
+|Montant du budget
+|Obligatoire
+|Quel est le montant du budget de ce projet. Combien coûte la mise en œuvre de ce projet?
+
+|Adresses
+|Facultatif
+|L'adresse du projet. Il permet d'afficher une épingle sur une carte pour que les participants puissent localiser le projet.
+
+|Catégorie
+|Facultatif
+|Quelle catégorie est assignée au projet. Utilisé pour les filtres dans la liste des projets.
+
+|Propositions
+|Facultatif
+|Choisissez des propositions liées à ce projet. Assigné automatiquement lors de l'importation des propositions.
+
+|Ajouter une galerie d'images
+|Facultatif
+|Ajoutez plusieurs images illustrant ce qu'est ce projet, les maquettes, etc.
+|===
+
+=== Gérer les projets
+
+image::components/budgets/results_selected.png[Selected projects after voting]
+
+Sur la liste des projets dans le panneau d'administration, les administrateurs peuvent voir :
+
+* *ID* : Numéro d'identification de ce projet.
+* *Titre* : Titre du projet.
+* *Catégorie* : Catégorie du projet.
+* *Portée* : Portée du projet, si activé dans l'espace participatif.
+* *Nombre de votes* : Nombre de votes sur ce projet.
+* *Sélectionné* : Si le projet est sélectionné pour l'implémentation à la fin du processus.
+* *Carte* : emplacement du projet quand il a une adresse.
+
+Vous pouvez filtrer et trier cette liste en cliquant sur le bouton "Filtre" et sur les en-têtes des colonnes.
+Vous pouvez également rechercher des projets par leur ID et leur titre dans la barre de recherche.
+
+image::components/budgets/projects_list_filter.png[Projects list filter]
+
+=== Actions
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Modifier l'icône]
+|Editer
+|Modifier un projet.
+
+|image:icons/action_folder.png[Icônes de dossiers]
+|Dossiers
+|Pour la classification des pièces jointes.
+
+|image:icons/action_attachments.png[Icône des pièces jointes]
+|Fichiers joints
+|Ajouter des documents et des images liés au projet.
+
+|image:icons/action_preview.png[Icône d'aperçu]
+|Aperçu
+|Pour voir comment il est montré dans le frontend aux participants.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Autorisations
+|Pour gérer les autorisations nécessaires pour voter ou commenter ce projet spécifique.
+
+|image:icons/action_delete.png[Supprimer l'icône]
+|Supprimez
+|Pour supprimer le projet.
+|===
+
+=== Importer des propositions dans des projets
+
+Selon votre concertation, vous pourriez vouloir avoir une première étape pendant laquelle les participants créent des propositions, puis ces propositions sont sélectionnés (par le vote ou par une revue technique), enfin vous pouvez importer ces propositions et les convertir en projets.
+
+Pour que cela fonctionne :
+
+. Les paramètres suivants doivent être activés dans la fonctionnalité de propositions :
+.. Réponses aux propositions activées
+.. Activer les coûts sur les réponses aux propositions
+. Un évaluateur ou un administrateur doit répondre aux propositions :
+.. Relire les propositions
+.. Acceptez ou rejetez les en fonction de votre règlement
+.. Ajouter des coûts aux propositions si elles ont été acceptées
+. Un administrateur peut importer des propositions vers des projets
+
+image:components/budgets/import_proposals.png[Importer des propositions dans les projets]
+
+=== Exporter tout
+
+Permet d'exporter les projets pour ce budget dans différents formats.
+
+* Projets en tant que CSV
+* Projets en JSON
+* Projets sous Excel
