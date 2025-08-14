@@ -1,0 +1,139 @@
+= Commentaires
+
+== Understand the basics
+
+Les commentaires sont des messages publics qui permettent aux participants de partager des informations ou des opinions sur une proposition, un débat, une réunion, une initiative, etc.
+
+NOTE: Les commentaires doivent être activés par les administrateurs, sinon les participants ne sont pas en mesure de commenter. Pour savoir comment activer les commentaires sur un composant, veuillez vous référer à l'article xref:features:components.adoc[Components].
+
+image::features/comments/nested_comment.png[Comments example]
+
+== Configuration
+
+=== Créer un commentaire
+
+. Accéder au contenu que vous souhaitez commenter
+. Aller au bas de la page
+. Remplissez le champ "Ajouter un commentaire" et laissez votre commentaire
+
+image::features/comments/form.png[Comments form]
+
+Lors de vos commentaires, les participants peuvent :
+
+.Actions de commentaire
+[cols="10h,~,~,~"]
+|===
+|Type |Description |Syntaxe |Exemple
+
+|Mention
+|Mentionnez un utilisateur ou un groupe d'utilisateurs. Ils recevront une notification pour la mention.
+|@pseudonyme
+|@carmelia_hudson
+
+|Hashtag
+|Les hashtags sont redirigés vers la page de recherche générale xref:admin:features/search.adoc[page de recherche]
+|#exemple
+|#sedep
+
+|Devis
+|Les hashtags sont redirigés vers la page de recherche générale xref:admin:features/search.adoc[page de recherche]
+|> Votre devis ici
+|> le financement de ce programme pourrait être mieux alloué à l'amélioration des options de transport en commun
+
+|URL
+|Une fois publié, l'URL devient cliquable, et peut être interne ou externe. S'ils font référence à un contenu de la plate-forme, l'étiquette de lien
+prend le titre du contenu.
+|https://domain.name/
+|https://en.wikipedia.org/wiki/Decidim
+
+|Emojis
+|Les participants peuvent ajouter des émoticônes en cliquant sur l'icône emoji en bas à droite du champ de commentaire.
+|Pas de syntaxe
+|😁
+
+|Donner son opinion
+|Les participants peuvent dire qu'ils sont pour, neutres ou contre le contenu
+|Pas de syntaxe
+|Pour
+|===
+
+Ci-dessous, vous pouvez trouver un exemple de champ commentaire avec plusieurs de ces éléments.
+
+image::features/comments/rich_text_write.png[Comments with rich text (write)]
+
+Une fois publié, ce commentaire et ses différents éléments sont affichés comme ci-dessous.
+
+image::features/comments/rich_text_read.png[Comments with rich text (read)]
+
+En cliquant sur un hashtag dans un commentaire ou un autre contenu, les participants sont redirigés vers la recherche globale.
+
+image::features/comments/hashtag_search.png[Hashtags in comments]
+
+NOTE: Injection HTML ajoutée dans les commentaires sont échappés et ne sont pas affichés.
+
+image::features/comments/xss_write.png[XSS in comments (write)]
+
+image::features/comments/xss_read.png[XSS in comments (read)]
+
+=== Actions
+
+Les participants peuvent interagir avec les commentaires de différentes manières.
+
+* Tout le monde peut les trier et afficher et masquer le fil de réponse.
+* Les participants peuvent également répondre aux commentaires, voter positivement ou négativement pour eux, les signaler ou obtenir le lien vers le commentaire.
+* Les auteurs de commentaires peuvent également modifier et supprimer leurs propres commentaires.
+
+Ils peuvent accéder à certaines actions directement sur le commentaire, et d'autres en cliquant sur le menu des trois points à côté d'un commentaire.
+
+image::features/comments/actions.png[Comments actions]
+
+==== Trier
+
+Les participants peuvent trier les commentaires par:
+* Meilleure note : les commentaires avec le plus de votes positifs apparaissent en premier dans la liste
+* Récents: les commentaires les plus récents apparaissent en premier.
+* Ancien : les commentaires plus anciens apparaissent en premier.
+* Plus discuté: les commentaires avec les commentaires plus imbriqués apparaissent en premier.
+
+image::features/comments/order_by.png[Order comments]
+
+Ils peuvent également masquer les réponses, quand ils ne veulent pas afficher un sujet de commentaire entier.
+
+==== Répondre
+
+En cliquant sur le bouton « Répondre » sous un commentaire, les participants peuvent répondre à d'autres participants et avoir des discussions publiques.
+Les commentaires peuvent être imbriqués jusqu'à quatre niveaux. Au quatrième niveau, le bouton "Répondre" n'est plus disponible.
+
+image::features/comments/anidation_levels.png[Nested comments]
+
+==== Vote positif / négatif
+
+Les participants peuvent soutenir les commentaires en cliquant sur l'icône "Pouce vers le haut" en bas à droite de chaque commentaire.
+Il leur permet de participer et de donner leur avis, sans devoir répondre à un commentaire.
+
+==== Signaler
+
+Veuillez lire l'article xref:admin:moderations/reported_content.adoc[Contenu signalé] pour en savoir plus sur le contenu du rapport.
+
+==== Obtenir le lien
+
+En cliquant sur l'élément "Obtenir un lien", les participants sont redirigés vers l'URL dédiée au commentaire.
+Ils peuvent ensuite partager ce lien avec d'autres, et il les mène directement à un commentaire.
+Un message est affiché pour avertir le visiteur qu'il voit un seul commentaire, avec un lien pour voir tous les autres commentaires.
+
+image::features/comments/single_comment.png[Edited comment]
+
+==== Editer
+
+Les participants peuvent modifier leurs commentaires, et après avoir fait, une mention « Éditée » apparaît sur leur commentaire pour indiquer aux autres participants
+que ce contenu a été modifié.
+
+Les commentaires n'ont pas d'historique de version des modifications apportées.
+
+image::features/comments/edited_comment.png[Edited comment]
+
+==== Supprimez
+
+Une fois qu'un commentaire est supprimé, il n'est plus visible, et un message indique la date à laquelle il a été supprimé.
+
+image::features/comments/deleted_comment.png[Deleted comment]
