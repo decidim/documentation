@@ -5,7 +5,7 @@
 The Sortitions component allows to sort a number of proposals with random, yet reproducible, procedures that guarantees non-biased
 and uniform distributions.
 
-For example, it can be useful for sorting candidates for a jury, or participatory budgeting proposals.
+Par exemple, il peut être utile pour trier les candidats à un jury ou à des propositions de budgétisation participative.
 
 to conduct a sortition, you need a dice or another random way to generate a number from 1 to 6, as well as witnesses.
 
@@ -13,103 +13,103 @@ image::components/sortitions/example01.png[Example of a sortition]
 
 == Configuration
 
-To create a Sortitions component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
+Pour créer un composant Sortitions, allez d'abord dans xref:admin:spaces.adoc[espace participatif] où vous voulez le créer.
 
 image::components/sortitions/component_sortitions.png[Add Sortitions component button]
 
-Then:
+Alors:
 
-. Click on the "Components" item in the secondary menu
-. Click the "Add component" button
-. Select "Sortitions"
-. Fill the component creation form
+. Cliquez sur l'élément "Composants" dans le menu secondaire
+. Cliquez sur le bouton "Ajouter un composant"
+. Sélectionnez "Sortitions"
+. Remplissez le formulaire de création de composant
 
-You can still update this form and the configuration after creating the component, by clicking the
-image:icons/action_configure.png[Configure icon] Configure icon in the components list.
+Vous pouvez toujours mettre à jour ce formulaire et la configuration après avoir créé le composant, en cliquant sur l'image
+image:icons/action_configure.png[Configurer l'icône] Configurer l'icône dans la liste des composants.
 
 image::components/sortitions/component.png[Add component form]
 
-.Add component: Sortitions form
+.Ajouter un composant : Formulaire de tri
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Nom
 |Obligatoire
-|Title of this component.
+|Titre de ce composant.
 
 |Rang d'affichage
 |Facultatif
-|The order of the component in relation with the other components. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
-For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0"
-then "component b" is first when ordering.
+|L'ordre du composant en relation avec les autres composants. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux composants, "Composant a" avec le poids "10" et "Composant b" avec le poids "0"
+puis "Composant b" est d'abord lors de la commande.
 |===
 
-.Add component: Sortitions form - Global settings
+.Ajouter un composant : Formulaire de tri - Paramètres globaux
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Commentaires activés
 |Facultatif
-|Whether you want to have comments in the sortitions.
+|Si vous voulez avoir des commentaires dans les tiroirs.
 
 |Longueur maximale des commentaires
 |Facultatif
-|The characters limit that participants have when making comments. Laisser 0 pour la valeur par défaut.
+|La limite de caractères que les participants ont lors de la rédaction de commentaires. Laisser 0 pour la valeur par défaut.
 |===
 
-== Create a sortition
+== Créer un tirage au sort
 
 image::components/sortitions/new_sortition_backend.png[New sortition backend form]
 
-.New sortition form
+.Nouveau formulaire de tirage au sort
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Titre
 |Obligatoire
-|The title of this sortition.
+|Le titre du tirage au sort.
 
-|Proposals set
+|Ensemble de propositions
 |Obligatoire
-|The proposal component to base the sortition on. Both components must be in the same space.
+|La composante de la proposition sur laquelle baser le tirage au sort. Les deux composants doivent être dans le même espace.
 
-|Categories of the set of proposals in which you want to apply the draw
+|Catégories des propositions sur lesquelles vous souhaitez appliquer le tirage au sort
 |Facultatif
-|If you have categories, can allow to do the sortition only inside one of the categories.
+|Si vous avez des catégories, peut permettre de faire le tirage au sort seulement à l'intérieur d'une des catégories.
 
-|Number of proposals to be selected
+|Nombre de propositions à sélectionner
 |Obligatoire
-|Indicate the number of proposals you want to be selected by drawing lots of the group of proposals you have previously chosen.
+|Indiquez le nombre de propositions que vous voulez être sélectionné en dessinant un grand nombre de propositions que vous avez précédemment choisies.
 
-|Witnesses
+|Témoins
 |Obligatoire
-|The witnesses attending the draw and who can vouch for its authenticity.
+|Les témoins qui assistent au tirage au sort et qui peuvent témoigner de son authenticité.
 
-|Sortition information
+|Information sur le tirage au sort
 |Obligatoire
-|Explanation on why the sortition is done.
+|Explication sur les raisons pour lesquelles le tirage au sort est fait.
 
-|Result of die roll
+|Résultat du jet de dé
 |Obligatoire
-|Roll a 6-sided die, or look for another random way to generate a number from 1 to 6, and enter here the resulting
-number in front of some witnesses. This contributes to the quality and guarantees of the randomness of the result.
+|Lancer un dé à 6 côtés, ou chercher un autre moyen aléatoire de générer un nombre de 1 à 6, et entrez ici le numéro
+résultant devant certains témoins. Cela contribue à la qualité et aux garanties de la randomité du résultat.
 |===
 
-== Manage sortitions
+== Gérer les tirets
 
-To start creating and managing sortitions, click in the component title in the navigation bar or in the component list, or click in the
-image:icons/action_edit.png[Manage component icon] Manage icon on the components list.
+Pour commencer à créer et à gérer des partitions, cliquez dans le titre du composant dans la barre de navigation ou dans la liste des composants, ou cliquez dans l'image
+: icons/action_edit. ng[Gérer l'icône du composant] Gérer l'icône dans la liste des composants.
 
 image::components/sortitions/manage_sortitions.png[Manage sortitions table]
 
-On the sortitions list in the administration panel, administrators can see:
+Sur la liste des tirets dans le panneau d'administration, les administrateurs peuvent voir :
 
-* *Reference*: Reference of the sortition.
-* *Title*: Title of the sortition.
-* *Creation date*: Creation date of the sortition.
+* *Référence* : Référence du tirage au sort.
+* *Titre* : Titre du tirage au sort.
+* *Date de création* : Date de création du tirage au sort.
 
 === Actions
 
@@ -118,19 +118,19 @@ On the sortitions list in the administration panel, administrators can see:
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Modifier l'icône]
 |Editer
-|Edit form for a sortition.
+|Modifier le formulaire pour un tirage au sort.
 
-|image:icons/action_preview.png[Preview icon]
-|Sortition details
-|To see the results of the sortition in the administration panel.
+|image:icons/action_preview.png[Icône d'aperçu]
+|Détails du tirage au sort
+|Pour voir les résultats du tirage au sort dans le panneau d'administration.
 
 |image:icons/action_permissions.png[Permissions icon]
 |Autorisations
-|To handle the authorizations needed to comment sortitions.
+|Pour gérer les autorisations nécessaires pour commenter les titres.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Supprimer l'icône]
 |Supprimez
 |Supprimer ce débat.
 |===
