@@ -1,0 +1,78 @@
+= Badges
+
+== Understand the basics
+
+Les badges sont la reconnaissance des actions des participants et des progrès réalisés sur la plateforme. Au fur et à mesure que les participants commencent à découvrir, à participer, à
+et à interagir, ils gagnent différents badges. Voici la liste des badges et des façons dont les participants peuvent les gagner.
+
+C'est un mécanisme https://fr.wikipedia.org/wiki/Gamification[gamification] pour améliorer l'engagement des participants de manière ludique.
+
+Les badges d'un participant sont visibles dans leur profil public.
+
+image::features/badges/profile_badges.png[Example of badges in profile]
+
+Lorsqu'un participant gagne un badge, il reçoit une notification.
+
+image::features/badges/notification.png[Example of badges notification]
+
+== Configuration
+
+=== Description des badges
+
+Les badges ont plusieurs niveaux, en fonction du nombre de fois où ils ont fait l'action. Par exemple, pour le badge des suiveurs,
+les participants reçoivent le badge de premier niveau quand ils ont 1 suiveur, le deuxième niveau à 15 suiveurs, le troisième niveau à 30 suiveurs,
+le quatrième niveau à 60, et le cinquième niveau à 100.
+
+
+.Badges
+|===
+|Image |Titre |Description |Comment il est gagné |Niveaux
+
+|image:features/badges/propositions_badge.png[Propositions de badge]
+|Propositions
+|Offert lorsque les participants participent activement en créant de nouvelles propositions.
+|Le participant doit choisir l'espace de participation de son intérêt avec la possibilité de soumettre des propositions et créer une nouvelle proposition.
+|1, 5, 10, 30, 60
+
+|image:features/badges/accepted_proposals_badge.png[Badge des propositions acceptées]
+|Propositions acceptées
+|Offert lorsque les propositions d'un participant sont acceptées.
+|Le participant doit choisir l'espace de participation de son intérêt avec la possibilité de soumettre des propositions et essayer
+de faire des propositions qui peuvent être réalisées. De cette façon, ils sont plus susceptibles d'être acceptés.
+|1, 5, 15, 30, 50
+
+|image:features/badges/attended_meetings_badge.png[badge de réunion assisté]
+|Réunions assises
+|Offert lorsque les participants assistent à plusieurs réunions en face à face.
+|Le participant doit s'inscrire pour les réunions auxquelles il souhaite participer
+|1, 3, 5, 10, 30
+
+|image:features/badges/debates_badge.png[badge des débats]
+|Débats
+|Offert lorsque les participants participent activement aux différents débats en laissant des commentaires.
+|Le participant doit participer aux débats.
+|1, 5, 10, 30, 50
+
+|image:features/badges/followers_badge.png[badge des suivants]
+|Abonnés
+|Offert lorsque le participant atteint un certain nombre de suiveurs. The platform is a social and political network, so
+participants need to weave their web to communicate with other people in the platform.
+|Le participant doit être actif et suivre les autres. Elle encourage d'autres personnes à les suivre.
+|1, 15, 30, 60, 100
+
+|image:features/badges/published_initiatives_badge.png[Badge d'initiatives publiées]
+|Initiatives publiées
+|Offert lorsqu'un participant lance de nouvelles initiatives, en partenariat avec d'autres pour les mettre en œuvre.
+|Le participant doit se rendre dans l'espace de participation des Initiatives et suivre les étapes pour créer une nouvelle initiative.
+|1, 5, 15, 30, 50
+
+|image:features/badges/proposal_supports_badge.png[La proposition supporte le badge]
+|Soutien à la proposition
+|Offert lorsque les participants soutiennent les propositions d'autres personnes.
+|Le participant doit naviguer et passer un peu de temps à lire les propositions d'autres personnes et à soutenir les propositions qui lui plaisent ou qui sont intéressantes.
+|5, 15, 50, 100, 500
+|===
+
+Il y a aussi une page d'explication générale avec une courte description de chaque badge.
+
+image::features/badges/badges_page.png[Badges page with badges explanation]
