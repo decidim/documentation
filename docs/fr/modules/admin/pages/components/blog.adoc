@@ -12,19 +12,19 @@ image::components/blog/example02.png[Example of a blog post]
 
 == Configuration
 
-To create a Blog component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
+Pour créer un composant de blog, allez d'abord dans xref:admin:spaces.adoc[espace participatif] où vous voulez le créer.
 
 image::components/blog/component_blog.png[Add Blog component button]
 
-Then:
+Alors:
 
-. Click on the "Components" item in the secondary menu
-. Click the "Add component" button
-. Select "Blog"
-. Fill the component creation form
+. Cliquez sur l'élément "Composants" dans le menu secondaire
+. Cliquez sur le bouton "Ajouter un composant"
+. Sélectionnez "Blog"
+. Remplissez le formulaire de création de composant
 
-You can still update this form and the configuration after creating the component, by clicking the
-image:icons/action_configure.png[Configure icon] icon in the components list.
+Vous pouvez toujours mettre à jour ce formulaire et la configuration après avoir créé le composant, en cliquant sur l’icône
+image:icons/action_configure.png[Configurer l’icône] dans la liste des composants.
 
 image::components/blog/component.png[Add component form]
 
@@ -35,21 +35,21 @@ image::components/blog/component.png[Add component form]
 
 |Nom
 |Obligatoire
-|The title of this component. For instance, "Blogs" or "Latest news"
+|Le titre de ce composant. Par exemple, "Blogs" ou "Dernières nouvelles"
 
 |Rang d'affichage
 |Facultatif
-|Which order it has in relation to the other components. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+|Quel ordre il a en relation avec les autres composants. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
 |===
 
-.Blog form - Global settings
+.Formulaire de blog - Paramètres globaux
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Annonce
 |Facultatif
-|A general announcement visible on the Blog component landing page.
+|Une annonce générale visible sur la page d'accueil du composant Blog .
 
 |Commentaires activés
 |Facultatif
@@ -57,10 +57,10 @@ image::components/blog/component.png[Add component form]
 
 |Longueur maximale des commentaires
 |Facultatif
-|The characters limit that participants have when making comments. Laisser 0 pour la valeur par défaut.
+|La limite de caractères que les participants ont lors de la rédaction de commentaires. Laisser 0 pour la valeur par défaut.
 |===
 
-.Step settings
+.Définition des étapes
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -79,7 +79,7 @@ image::components/blog/component.png[Add component form]
 
 |Soutiens bloqués
 |Facultatif
-|Whether you want to enable adding new endorsements for this phase.
+|Si vous voulez activer l'ajout de nouvelles approbations pour cette phase.
 |===
 
 == Gérer les messages
@@ -89,9 +89,9 @@ image:icons/action_edit.png[Manage component icon] icon on the components list.
 
 image:components/blog/manage_posts.png[Gérer la table des posts]
 
-== Create a post
+== Créer un message
 
-To create a post, click the "New post" button on the top right of the page.
+Pour créer un message, cliquez sur le bouton "Nouveau post" en haut à droite de la page.
 
 image:components/blog/new_post.png[Formulaire du nouveau post]
 
@@ -100,9 +100,9 @@ image:components/blog/new_post.png[Formulaire du nouveau post]
 |===
 |Champ |Type |Description
 
-|Author
+|Auteur
 |Obligatoire
-|Participant account or user group authoring the post.
+|Compte des participants ou groupe d'utilisateurs qui créent le message.
 
 |Titre
 |Obligatoire
@@ -112,9 +112,9 @@ image:components/blog/new_post.png[Formulaire du nouveau post]
 |Obligatoire
 |Quelle est la description de ce post.
 
-|Publish time
+|Date de publication
 |Facultatif
-|Publication date for the post. If in the future, the post is not published until this date.
+|Date de publication de la publication. Si dans le futur, la publication n'est pas publiée avant cette date.
 |===
 
 === Actions
@@ -124,19 +124,19 @@ image:components/blog/new_post.png[Formulaire du nouveau post]
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Modifier l'icône]
 |Editer
 |To edit this post.
 
-|image:icons/action_folder.png[Folder icon]
+|image:icons/action_folder.png[Icône du dossier]
 |Répertoire
-|For classifying attachments.
+|Pour la classification des pièces jointes.
 
-|image:icons/action_attachments.png[Attachments icon]
+|image:icons/action_attachments.png[Icône des pièces jointes]
 |Fichiers joints
 |To add documents related to the post.
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Icône d'aperçu]
 |Aperçu
 |Pour voir comment il est montré dans le frontend aux participants.
 
@@ -144,7 +144,7 @@ image:components/blog/new_post.png[Formulaire du nouveau post]
 |Autorisations
 |To handle the authorizations needed to comment or endorse this specific blog post.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Supprimer l'icône]
 |Supprimez
 |Supprimer ce message.
 |===
@@ -153,5 +153,5 @@ image:components/blog/new_post.png[Formulaire du nouveau post]
 
 Below, you can find some links to examples blog components:
 
-* https://meta.decidim.org/processes/news/f/1719/posts[Latest news of the Decidim association]
+* https://meta.decidim.org/processes/news/f/1719/posts[Dernière nouvelle de l'association Decidim]
 * https://www.decidim.barcelona/processes/volem-decidir/f/6338/posts[News on a participatory process in Barcelona]
