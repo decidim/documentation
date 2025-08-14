@@ -21,7 +21,7 @@ Si votre langue n'est pas encore créée, alors nous devons le faire car il est 
 
 == Comment ça marche
 
-If you're curious, in the technical level we have a bot (the great decidim-bot) that periodically makes a PR to the relevant branches (last releases and develop).
+Si vous êtes curieux, au niveau technique nous avons un bot (le grand décidim-bot) qui fait périodiquement une PR aux branches concernées (dernières versions et développement).
 
 image::translation-bot.png[Decidim Bot in GitHub]
 
