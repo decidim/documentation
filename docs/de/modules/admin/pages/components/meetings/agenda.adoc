@@ -1,0 +1,63 @@
+= Arbeitsplan
+
+== Understand the basics
+
+Die Agenda-Funktion erlaubt es einem Administrator, den Zeitplan für ein Meeting festzulegen. It's possible to define agenda items and
+sub-items, with every one of the topics to be discussed in the meeting, along with a description and the duration
+of every item and sub-item.
+
+image::components/meetings/agenda/agenda_frontend.png[Agenda in the frontend]
+
+== Konfiguration
+
+=== Neues Agendaformular
+
+To define an agenda for a meeting, click the image:icons/action_agenda.png[Agenda icon] Agenda icon.
+
+image:components/meetings/agenda/new_agenda_form.png[Neues Agenda-Formular im Backend]
+
+.Neues Agendaformular
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Titel für die Tagesordnung.
+
+|Sichtbar
+|Optional
+|Check if you want the agenda to be visible to participants.
+
+|Tagesordnungspunkt
+|Benötigt
+|Liste der Tagesordnungspunkte.
+|===
+
+Es ist möglich, beliebig viele Tagesordnungspunkte und Unterpunkte zu erstellen. Sie können die Hierarchie der Tagesordnungspunkte hoch- oder runtergehen.
+Es ist auch möglich, die Tagesordnungspunkte zu entfernen und zu bearbeiten.
+
+.Tagesordnungspunkt Formular
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Titel für den Tagesordnungspunkt
+
+|Dauer
+|Benötigt
+|How many minutes the agenda item last.
+
+|Beschreibung
+|Optional
+|Title for the agenda item.
+
+|Tagesordnungspunkte
+|Optional
+|Liste der Agenda-Unterpunkte.
+|===
+
+Die einzige Einschränkung, die Tagesordnungspunkte und Unterpunkte haben, ist, dass sie die Dauer des Elternteils respektieren müssen. For instance,
+if there's an item that lasts 60 minutes, you can't create a sub-item that lasts 90 minutes.
