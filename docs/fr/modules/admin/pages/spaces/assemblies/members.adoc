@@ -2,16 +2,16 @@
 
 == Understand the basics
 
-Assembly members allow showing all the participants that belong to a given assembly, whether individuals or groups.
-This is a feature specific to the assemblies space, made for improving transparency of the organization assemblies.
+Les membres de l'Assemblée permettent de montrer à tous les participants qui appartiennent à une assemblée donnée, que ce soit des individus ou des groupes.
+Il s'agit d'une caractéristique spécifique à l'espace d'assemblage, fait pour améliorer la transparence des assemblages de l'organisation.
 
 image::spaces/assemblies/assembly_members.png[Assembly members]
 
 == Configuration
 
-=== Manage assembly members
+=== Gérer les membres de l'assemblée
 
-To access the assembly members list, click in the secondary navigation panel on the "Members" item.
+Pour accéder à la liste des membres de l'assemblée, cliquez dans le panneau de navigation secondaire de l'élément "Membres".
 
 image::spaces/assemblies/assembly_members_list.png[Assembly members administration list]
 
@@ -22,18 +22,18 @@ image::spaces/assemblies/assembly_members_list.png[Assembly members administrati
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Modifier l'icône]
 |Editer
-|To edit this member fields.
+|Éditer les champs membres
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Supprimer l'icône]
 |Supprimez
-|To delete this member.
+|Supprimer ce membre.
 |===
 
-=== Create an assembly member
+=== Créer un membre de l'assemblée
 
-To create a new assembly member, click the "New assembly member" button in the top right of the page.
+Pour créer un nouveau membre de l'assemblée, cliquez sur le bouton "Nouveau membre de l'assemblée" en haut à droite de la page.
 
 image::spaces/assemblies/assembly_members_new_form.png[Assembly members new form]
 
@@ -44,19 +44,19 @@ image::spaces/assemblies/assembly_members_new_form.png[Assembly members new form
 
 |Type de participant
 |Obligatoire
-|Wether this assembly member already has an account on the instance or not.
+|Si le membre de cette assemblée a déjà un compte sur l'instance ou non.
 
 |Nom complet
 |Requis.
-|Field displayed if "non participant" was selected.
+|Champ affiché si "non participant" a été sélectionné.
 
 |Avatars
 |Facultatif.
-|Field displayed if "non participant" was selected.
+|Champ affiché si "non participant" a été sélectionné.
 
 |Utilisateur ou groupe
 |Requis si c'est un participant existant.
-|Type at least three characters to search for the participant account.
+|Tapez au moins trois caractères pour rechercher le compte du participant.
 
 |Position
 |Obligatoire
@@ -64,16 +64,16 @@ image::spaces/assemblies/assembly_members_new_form.png[Assembly members new form
 
 |Rang d'affichage
 |Facultatif
-|Which order the members has in relation to the other members. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
-For instance, if you have two members, "Member a" with weight "10" and "Member b" with weight "0" then "Member b" is first when ordering.
+|Quel ordre les membres ont en relation avec les autres membres. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux membres, "Member a" avec le poids "10" et "Member b" avec le poids "0" alors "Member b" est d'abord lors de la commande.
 
 |Date de désignation
 |Obligatoire
-|When this person or group was assigned as a member of this assembly. Expected format: dd/mm/yyyy.
+|Lorsque cette personne ou ce groupe a été assigné en tant que membre de cette assemblée. Format attendu : jj/mm/aaaa.
 
 |Date de fin
 |Facultatif
-|When this person or group ceased to be a member of this assembly. Expected format: dd/mm/yyyy.
+|Quand cette personne ou ce groupe a cessé d'être un membre de cette assemblée. Format attendu : jj/mm/aaaa.
 
 |Sexe
 |Facultatif
@@ -81,7 +81,7 @@ For instance, if you have two members, "Member a" with weight "10" and "Member b
 
 |Date d'anniversaire
 |Facultatif
-|Quand cette personne est-elle née. Expected format: dd/mm/yyyy.
+|Quand cette personne est-elle née. Format attendu : jj/mm/aaaa.
 
 |Lieu de naissance
 |Facultatif
