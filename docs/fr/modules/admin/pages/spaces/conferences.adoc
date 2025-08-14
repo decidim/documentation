@@ -1,0 +1,84 @@
+= Conférences
+
+== Understand the basics
+
+Une conférence est une collection de réunions organisées dans un programme, avec un certain nombre de personnes invitées en tant qu'orateurs, et les autres champs d'information
+typiques des grands congrès ou événements sociaux (inscription, liste des organisations qui soutiennent ou parrainent l'événement
+, etc.) Une conférence peut être un événement pertinent pour une organisation et ses membres, ou se dérouler dans le cadre d'un processus participatif
+ou suivre une consultation.
+
+Lors des conférences, les composantes des réunions sont affichées sous forme de programme, les jours et les heures étant énumérés comme dans un programme d'événement.
+
+NOTE: Vous voulez créer une conférence ? Vérifiez l'article xref:admin:spaces/conferences/conference_creation.adoc[conference creation].
+
+Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments:
+
+* xref:admin:admin:espaces/conférences/conference_creation.adoc[Création de la conférence]
+* xref:admin:spaces/conferences/components.adoc[Components]
+* xref:admin:spaces/conferences/categories.adoc[Categories]
+* xref:admin:spaces/conferences/attachments.adoc[Attachments]
+* xref:admin:spaces/conferences/media_links.adoc[Media Links]
+* xref:admin:spaces/conferences/partners.adoc[Partners]
+* xref:admin:spaces/conferences/speakers.adoc[Speakers]
+* xref:admin:spaces/conferences/registrations.adoc[Registrations]
+** xref:admin:spaces/conferences/registrations/types.adoc[Registration Types]
+** xref:admin:spaces/conferences/registrations/users.adoc[User Registrations]
+** xref:admin:spaces/conferences/registrations/invites.adoc[Invites]
+** xref:admin:spaces/conferences/registrations/certificates.adoc[Certificate of Attendance]
+* xref:admin:spaces/conferences/admins.adoc[Conference admins]
+* xref:admin:spaces/conferences/moderations.adoc[Moderations]
+
+=== How to find it?
+
+Pour accéder au panneau Conférences, allez dans le panneau d'administration et cliquez sur l'élément "Conférences" dans la barre de navigation d'administration
+.
+
+image::spaces/conferences/menu.png[Conferences menu]
+
+Là, vous pouvez gérer toutes les conférences existantes.
+
+== Configuration
+
+=== Gérer les conférences
+
+image::spaces/conferences/manage_conferences.png[Conferences list in administration panel]
+
+Vous pouvez trouver toutes les conférences dans la liste dans le panneau d'administration, avec:
+
+* *Titre* : titre de la conférence.
+* *Créé à* : date de création de la conférence.
+* *Publié* : si la conférence est publiée ou non.
+
+Vous pouvez filtrer et trier cette liste en cliquant sur le bouton "Filtre" et sur les en-têtes des colonnes.
+Vous pouvez également rechercher des conférences par titre dans la barre de recherche.
+
+=== Actions
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Configurer l'icône de la conférence]
+|Configurer
+|Éditer la configuration et les composants d'une conférence.
+
+|image:icons/action_duplicate.png[Dupliquer l'icône de la conférence]
+|Duplicate
+|Dupliquer cette conférence.
+
+|image:icons/action_preview.png[Aperçu icône de la conférence]
+|Aperçu
+|Aperçu de l'apparence de la conférence dans l'interface utilisateur.
+
+|image:icons/action_moderate.png[Icône de conférence modérée]
+|Modérer
+|Pour accéder au panneau de modération de la conférence.
+|===
+
+== Exemples
+
+Ci-dessous, vous pouvez trouver quelques liens vers des exemples de conférences:
+
+* https://meta.decidim.org/conferences/DecidimFest24[Decidim Fest 2024]
+* https://barcelonadema-participa.cat/conférences/jornada-resilient[Premier jour de la métropole résistante du plan stratégique de la métropole de Barcelone]
