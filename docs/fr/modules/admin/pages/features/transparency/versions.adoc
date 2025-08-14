@@ -5,24 +5,24 @@
 La fonctionnalité de versions permet à un visiteur de voir l'évolution des différentes versions de ressources qui peuvent être modifiées,
 comme des propositions ou des résultats.
 
-With versions it's possible to see who made changes to a content, when the change has been made and exactly what has changed.
+Avec les versions, il est possible de voir qui a apporté des modifications à un contenu, quand le changement a été fait et exactement ce qui a changé.
 
 image::features/versions/side_by_side_escaped.png[Versions in resources]
 
 === How to find it?
 
-. Go to the content for which you want to review the different versions.
-. Click in the "See other versions" link in the bottom of the page.
-. From there you can change the visualisation of the version differences, and review all past versions.
+. Allez au contenu pour lequel vous souhaitez revoir les différentes versions.
+. Cliquez sur le lien "Voir les autres versions" en bas de la page.
+. À partir de là, vous pouvez modifier la visualisation des différences de version et examiner toutes les versions passées.
 
 image::features/versions/sidebar.png[See other versions link in page bottom]
 
 image::features/versions/list.png[List of versions]
 
-It's possible to view the differences of the versions in two formats: side-by-side or unified. In case that the contents are
-in HTML then it's also possible to see the difference un-escaped and escaped, and see the full HTML code.
+Il est possible de voir les différences entre les versions en deux formats : côte à côte ou unifié. Dans le cas où le contenu est
+en HTML, alors il est également possible de voir la différence non échappée et échappée, et voir le code HTML complet.
 
-image:features/versions/unified_escaped.png[Unified escaped view]
+image:features/versions/unified_escaped.png[Vue échappée unifiée]
 
 == Exemples
 
