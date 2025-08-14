@@ -1,0 +1,78 @@
+= Abzeichen
+
+== Understand the basics
+
+Badges are recognitions of participant actions and progress on the platform. As participants start discovering, participating,
+and interacting, they earn different badges. Hier ist die Liste der Abzeichen und einige Möglichkeiten, wie die Teilnehmer sie verdienen können.
+
+Es ist ein https://en.wikipedia.org/wiki/Gamification[gamification] Mechanismus, um das Engagement der Teilnehmer auf eine ludische Weise zu verbessern.
+
+A participant's badges are visible in their public profile.
+
+image::features/badges/profile_badges.png[Example of badges in profile]
+
+Wenn ein Teilnehmer ein Abzeichen erhält, erhält er eine Benachrichtigung.
+
+image::features/badges/notification.png[Example of badges notification]
+
+== Konfiguration
+
+=== Badges description
+
+Abzeichen haben mehrere Level, je nachdem, wie oft sie die Aktion durchgeführt haben. For instance, for the followers badge,
+the participants receive the first level badge when they have 1 follower, the second level at 15 followers, the third level at 30 followers,
+the fourth level at 60, and the fifth level at 100.
+
+
+.Abzeichen
+|===
+|Bild |Titel |Beschreibung |Wie er verdient wird |Ebenen
+
+|image:features/badges/proposals_badge.png[Vorschläge Badge]
+|Vorschläge
+|Granted when participants actively participate by creating new proposals.
+|Der Teilnehmer muss den Beteiligungsraum seines Interesses mit der Einreichung von Vorschlägen wählen und einen neuen Vorschlag erstellen.
+|1, 5, 10, 30, 60
+
+|image:features/badges/accepted_proposals_badge.png[Akzeptierte Vorschläge Badge]
+|Akzeptierte Vorschläge
+|Granted when a participant's proposals are accepted.
+|Der Teilnehmer muss den Teilnahmeraum seines Interesses mit der Einreichung von Vorschlägen wählen und versuchen,
+Vorschläge zu machen, die durchgeführt werden können. Auf diese Weise werden sie eher akzeptiert.
+|1, 5, 15, 30, 50
+
+|image:features/badges/attended_meetings_badge.png[Teilgenommenes Meeting Badge]
+|Besuchte Besprechungen
+|Zugegeben, wenn die Teilnehmer an mehreren persönlichen Meetings teilnehmen.
+|Der Teilnehmer muss sich für die Meetings, an denen er teilnehmen möchte, registrieren
+|1, 3, 5, 10, 30
+
+|image:features/badges/debates_badge.png[Debates badge]
+|Debatten
+|Wird gewährt, wenn die Teilnehmer aktiv an den verschiedenen Debatten durch Kommentaren teilnehmen.
+|Der Teilnehmer muss an den Aussprachen teilnehmen.
+|1, 5, 10, 30, 50
+
+|image:features/badges/followers_badge.png[Followers badge]
+|Follower
+|Wird gewährt, wenn der Teilnehmer eine bestimmte Anzahl von Followern erreicht. The platform is a social and political network, so
+participants need to weave their web to communicate with other people in the platform.
+|The participant needs to be active and follow other people. It encourages other people to follow them.
+|1, 15, 30, 60, 100
+
+|image:features/badges/published_initiatives_badge.png[Veröffentlichte Initiativen Badge]
+|Veröffentlichte Initiativen
+|Zugegeben, wenn ein Teilnehmer neue Initiativen startet, Partnerschaften mit anderen, um sie auszuführen.
+|The participant needs to go to the participation space of Initiatives and follow the steps to create a new initiative.
+|1, 5, 15, 30, 50
+
+|image:features/badges/proposal_supports_badge.png[Vorschlag unterstützt badge]
+|Unterstützung des Vorschlags
+|Wird gewährt, wenn die Teilnehmer die Vorschläge anderer Menschen unterstützen.
+|Der Teilnehmer muss durchsuchen und etwas Zeit damit verbringen, die Vorschläge anderer Leute zu lesen und die Vorschläge zu unterstützen, die sie mögen oder interessant finden.
+|5, 15, 50, 100, 500
+|===
+
+Es gibt auch eine allgemeine Erklärungsseite mit einer kurzen Beschreibung jedes Abzeichens.
+
+image::features/badges/badges_page.png[Badges page with badges explanation]
