@@ -1,0 +1,289 @@
+= Enquête
+
+== Understand the basics
+
+Le volet Enquête permet aux participants de répondre aux questionnaires. Ceci est utile lorsqu'une organisation souhaite recevoir des commentaires privés
+de la part des participants. Il permet de définir un ensemble de questions avec plusieurs types de réponses.
+
+NOTE: Une fois qu'une enquête a reçu une réponse des participants, il n'est pas possible de modifier ses questions, car cela affecterait l'intégrité
+des réponses. Si vous avez besoin de modifier les questions, créez une nouvelle enquête et dépubliez la version originale.
+
+image::components/surveys/example01.png[Example of a survey]
+
+== Configuration
+
+=== Créer un composant d'enquête
+
+Pour créer un composant d'enquête, allez d'abord dans le fichier xref:admin:spaces.adoc[espace participatif] où vous voulez le créer.
+
+image::components/surveys/component_survey.png[Add Survey component button]
+
+Alors:
+
+. Cliquez sur l'élément "Composants" dans le menu secondaire
+. Cliquez sur le bouton "Ajouter un composant"
+. Sélectionnez "Enquête"
+. Remplissez le formulaire de création de composant
+
+Vous pouvez toujours mettre à jour ce formulaire et la configuration après avoir créé le composant, en cliquant sur l'image
+image:icons/action_configure.png[Configurer l'icône] Configurer l'icône dans la liste des composants.
+
+image::components/surveys/component.png[Add component form]
+
+.Ajouter un composant : formulaire de sondage
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Titre de ce composant.
+
+|Rang d'affichage
+|Facultatif
+|L'ordre du composant en relation avec les autres composants. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux composants, "Composant a" avec le poids "10" et "Composant b" avec le poids "0"
+puis "Composant b" est d'abord lors de la commande.
+|===
+
+.Ajouter un composant : Formulaire de sondage - Paramètres globaux
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Portées activées
+|Facultatif
+|Cochez cette case si vous voulez que le filtrage des portées dans ce composant.
+
+|Secteur
+|Facultatif
+|Ce composant appartient à xref:admin:settings/scopes.adoc[Scopes].
+
+|Réponses acceptées de
+|Facultatif
+|Date de début lorsque vous voulez commencer à recevoir des réponses. Laisser vide pour aucune date spécifique. Format attendu : jj/mm/aaaa hh:mm.
+
+|Réponses acceptées jusqu'au
+|Facultatif
+|Date de fin de réception des réponses Laisser vide pour aucune date spécifique. Format attendu : jj/mm/aaaa hh:mm.
+
+|Annonce
+|Facultatif
+|Une annonce générale visible sur la page du sondage.
+
+|Supprimer les réponses lors de la publication du sondage
+|Facultatif
+|Cochez cette case si vous souhaitez supprimer les réponses lorsque l'enquête est publiée. Utile pour tester l'enquête avant de la publier.
+|===
+
+.Ajouter un composant : Formulaire de sondages - Paramètres d'étape
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Autoriser les réponses
+|Facultatif
+|Cochez cette case si vous souhaitez recevoir des réponses dans cette enquête pour cette phase.
+
+|Autoriser les utilisateurs non enregistrés à répondre à l'enquête
+|Facultatif
+|Si activé, aucune connexion n'est requise pour répondre à l'enquête. This may lead to poor or unreliable data and make you more vulnerable to
+automated attacks. Veuillez utiliser avec prudence. N'oubliez pas que cette option ne permet qu'une réponse par session du navigateur,
+mais les participants peuvent utiliser l'option de navigation privée et faire plusieurs réponses avec le même appareil.
+
+|Annonce
+|Facultatif
+|Une annonce générale visible sur la page du sondage pour cette phase.
+|===
+
+=== Créer une enquête
+
+NOTE: Avez-vous des enquêtes répétitives ? Par exemple, le même formulaire de rétroaction pour chaque processus ? Vous pouvez avoir une enquête que
+est copié et est utilisé comme plan pour que vous n'ayez pas à configurer manuellement la même enquête à chaque fois. En savoir plus
+sur xref:admin:templates/questionnaires.adoc[Modèles de questionnaires].
+
+image::components/surveys/edit_questionnaire.png[Choose template form]
+
+Tout d'abord, sélectionnez un xref:admin:templates/questionnaires.adoc[modèles de questionnaires] si vous le souhaitez, ou passez cette étape.
+
+Ensuite, vous devez remplir le formulaire avec les champs suivants :
+
+image::components/surveys/edit_form.png[Edit survey form]
+
+.Nouveau formulaire d'enquête
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Le titre de cette enquête.
+
+|Description
+|Facultatif
+|La description de l'enquête.
+
+|Conditions d'utilisation
+|Obligatoire
+|Les conditions légales que les participants doivent remplir pour répondre à l'enquête.
+|===
+
+=== Questions
+
+==== Ajouter une question
+
+Ensuite, cliquez sur le bouton "Ajouter une question" pour commencer à créer votre enquête.
+Vous pouvez ajouter plusieurs questions par sondage, et les réorganiser ou les supprimer.
+
+Chaque question doit avoir une instruction et un type au minimum.
+
+image::components/surveys/question_form.png[Question form on survey creation]
+
+.Ajouter un formulaire de question
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Relevé
+|Obligatoire
+|La question elle-même. Par exemple, "Quelle est votre catégorie d'âge?"
+
+|Description
+|Facultatif
+|Informations complémentaires sur la question si nécessaire.
+
+|Mandatory
+|Facultatif
+|Vérifier si les participants doivent répondre à cette question pour remplir l'enquête.
+
+|Limite de caractères
+|Facultatif
+|Le maximum de caractères que la réponse peut avoir. Laisser à 0 si aucune limite. Compatible avec les types de questions à réponse courte et longue.
+
+|Type
+|Obligatoire
+|Une des réponses suivantes : réponse courte, réponse longue, option simple, option multiple, tri des fichiers, matrice (option unique)
+ou Matrice (option multiple). Voir xref:_question_types[Types de questions] pour plus d'informations.
+|===
+
+image::components/surveys/question_form_backend.png[]
+
+image::components/surveys/question_form_frontend.png[]
+
+==== Types de questions
+
+.Types de questions (cliquez pour voir les images en détail)
+[cols="10h,~,~,~"]
+|===
+|Type |Frontend |Backend |Description
+
+|Réponse courte
+|image:components/surveys/type_short_answer_frontend.png[Type de réponse courte - frontend,link=../_images/components/surveys/type_short_answer_frontend.png]
+|image:components/surveys/type_short_answer_backend.png[Type de réponse courte - backend,link=../_images/components/surveys/type_short_answer_backend.png]
+|Compatible avec la validation "Limite de caractères"
+
+|Réponse longue
+|image:components/surveys/type_long_answer_frontend.png[Type de réponse longue - frontend,link=../_images/components/surveys/type_long_answer_frontend.png]
+|image:components/surveys/type_long_answer_backend.png[Type de réponse longue - backend,link=../_images/components/surveys/type_long_answer_backend.png]
+|Compatible avec la validation "Limite de caractères"
+
+|Option simple
+|image:components/surveys/type_single_option_frontend.png[Type d'option simple - frontend,link=../_images/components/surveys/type_single_option_frontend.png]
+|image:components/surveys/type_single_option_backend.png[Type d'option unique - backend,link=../_images/components/surveys/type_single_option_backend.png]
+|Les participants doivent choisir une seule option, avec des boutons radio. Ajoutez au moins 2 options de réponse.
+Il est possible de définir une option "Texte libre" pour que les participants soumettent leur propre réponse.
+
+|Options multiples
+|image:components/surveys/type_multiple_option_frontend.png[Type d'option multiple - frontend,link=../_images/components/surveys/type_multiple_option_frontend.png]
+|image:components/surveys/type_multiple_option_backend.png[Type d'option multiple - backend,link=../_images/components/surveys/type_multiple_option_backend.png]
+|Les participants peuvent choisir plusieurs options, avec des cases à cocher. Ajoutez au moins 2 options de réponse. Il est possible d'ajouter une validation,
+avec le nombre maximum de choix. Il est possible de définir une option "Texte libre" pour que les participants soumettent leur propre réponse.
+
+|Tri en cours
+|image:components/surveys/type_sorting_frontend.png[Type de tri - frontend,link=../_images/components/surveys/type_sorting_frontend.png]
+|image:components/surveys/type_sorting_backend.png[Type de tri - backend,link=../_images/components/surveys/type_sorting_backend.png]
+|Ajoutez au moins 2 options de réponse. Les participants peuvent faire glisser et déposer les options de réponse pour les ordonner.
+
+|Fichiers
+|image:components/surveys/type_files_frontend.png[Type de fichiers - frontend,link=../_images/components/surveys/type_files_frontend.png]
+|image:components/surveys/type_files_backend.png[Type de fichiers - backend,link=../_images/components/surveys/type_files_backend.png]
+|Permettre aux participants de télécharger des fichiers.
+
+|Matrice (option Single)
+|image:components/surveys/type_matrix_single_option_frontend.png[Type de matrice (Single option) - frontend,link=../_images/components/surveys/type_matrix_single_option_frontend.png]
+|image:components/surveys/type_matrix_single_option_backend.png[Type de matrice (Single option) - backend,link=../_images/components/surveys/type_matrix_single_option_backend.png]
+|Les participants doivent choisir entre les lignes et les colonnes d'options simples, avec les boutons radio.
+
+|Matrice (option multiple)
+|image:components/surveys/type_matrix_multiple_option_frontend.png[Matrice (option multiple) type - frontend,link=../_images/components/surveys/type_matrix_multiple_option_frontend.png]
+|image:components/surveys/type_matrix_multiple_option_backend.png[Type de matrice (option multiple) - backend,link=../_images/components/surveys/type_matrix_multiple_option_backend.png]
+|Les participants doivent choisir entre des lignes et des colonnes d'options multiples, avec des cases à cocher.
+|===
+
+==== Questions conditionnelles
+
+Une fois que vous avez enregistré votre enquête, vous pouvez voir qu'un nouveau bouton "Ajouter une condition d'affichage" est ajouté dans les blocs de questions.
+Cette fonctionnalité permet aux administrateurs de créer des enquêtes complexes avec conditionnalité, ce qui signifie que certaines questions sont affichées
+seulement si les participants ont choisi une réponse spécifique dans les questions précédentes.
+
+TIP: Les questions conditionnelles peuvent être difficiles à configurer, alors assurez-vous de tester le comportement de l'enquête avant de le publier.
+
+image::components/surveys/conditional_question.png[Display condition in backend]
+
+.Ajouter un formulaire de condition d'affichage
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Question
+|Obligatoire
+|La question précédente est la condition pour afficher cette question.
+
+|Condition
+|Obligatoire
+|Définir la condition nécessaire à l'affichage de cette question.
+
+|Option de réponse
+|Obligatoire
+|Ce champ propose les options de réponse aux questions qui doivent être choisies par les participants pour réaliser la condition.
+Disponible uniquement pour les conditions "Equal" et "Not Equal".
+
+|Texte comprenant
+|Obligatoire
+|Uniquement disponible pour les conditions "Inclus le texte".
+
+|Cette condition doit toujours être satisfaite indépendamment du statut des autres conditions
+|Facultatif
+|Vérifier si cette condition est essentielle, même si d'autres conditions rendent l'affichage de la question possible.
+|===
+
+=== Séparateurs
+
+Vous pouvez également ajouter des séparateurs entre les questions, lorsque vous avez une longue enquête ou des sujets différents.
+Ils permettent d'afficher les questions des formulaires en différentes étapes.
+
+Les séparateurs ne peuvent être commandés ou supprimés.
+
+image::components/surveys/separator.png[Separator in front end]
+
+=== Titre et description
+
+Vous pouvez également ajouter une section titre et description, pour apporter de la clarté au formulaire et le séparer en différentes sections.
+Associés à des séparateurs, ils permettent de donner des titres et des descriptions aux étapes de l'enquête.
+Ils peuvent également être utilisés seuls, dans un sondage d'une page.
+
+image::components/surveys/title_description_backend.png[Title and description in back end]
+
+=== Exporter les réponses
+
+Il est possible d'exporter les réponses des participants à l'enquête dans différents formats : CSV, JSON, XLSX (Excel) ou PDF.
+Il n'exporte pas les données des utilisateurs, donc si vous avez besoin de les collecter, assurez-vous de créer des questions d'enquête.
+
+NOTE: La plate-forme ne gère pas le traitement des réponses ni la présentation des résultats ni le résumé aux utilisateurs, qui doivent être
+faits en externe.
+
+== Exemples
+
+Quelques exemples d'utilisation de ce composant :
+
+* https://consultation.quebec.ca/processes/donneesquebec/f/82/[Données Québec: participer à son amélioration dans les consultations du Québec]
