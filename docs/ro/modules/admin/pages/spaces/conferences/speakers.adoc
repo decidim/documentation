@@ -1,0 +1,94 @@
+= Speakers
+
+== Understand the basics
+
+The speakers are the persons that are talking at the conference. They can be linked to meetings, so participants can
+see who is going to speak in each item of the program.
+
+image::spaces/conferences/speakers_frontend.png[Conferences speakers frontend]
+
+== Configuration
+
+=== Manage speakers
+
+To access the speakers configuration, click in the secondary navigation panel on the "Speakers" item.
+
+image:spaces/conferences/speakers.png[Conferences speakers]
+
+You can search speakers thanks to the search bar.
+
+=== Actions
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Edit speaker icon]
+|Edit
+|To edit this speaker.
+
+|image:icons/action_activate.png[Publish speaker icon]
+|Publish
+|To publish this speaker (when not published)
+
+|image:icons/action_unpublish.png[Unpublish speaker icon]
+|Unpublish
+|To unpublish this speaker (when published)
+
+|image:icons/action_delete.png[Delete speaker icon]
+|Delete
+|To delete this speaker.
+|===
+
+=== Create a new speaker
+
+To create a new speaker, click the "New speaker" button in the top right of the page.
+
+image::spaces/conferences/new_speaker.png[Conferences speakers]
+
+.New conference speaker form
+[cols="20h,~,~"]
+|===
+|Field |Type |Description
+
+|Participant type
+|Required
+|Wether this speaker is a non-participant or existing participant. Do they already have an account created on the platform?
+
+|Full name
+|Required if it's non-participant.
+|Name of the speaker.
+
+|User or group
+|Required if it's an existing participant.
+|Type at least three characters to search.
+
+|Related meetings
+|Optional
+|The meetings in which the speaker is speaking or facilitating.
+
+|Position
+|Required
+|Metadata for showing extra information about the speaker.
+
+|Affiliation
+|Required
+|Metadata for showing extra information about the speaker.
+
+|Short Bio
+|Optional
+|Metadata for showing extra information about the speaker.
+
+|X handle
+|Optional
+|Metadata for showing extra information about the speaker.
+
+|Personal URL
+|Optional
+|Metadata for showing extra information about the speaker.
+
+|Avatar
+|Optional
+|Avatar image for the speaker. Ignored if the speaker is an "Already registered" participant.
+|===
