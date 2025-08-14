@@ -1,53 +1,53 @@
-= Questionnaires templates
+= Modèles de questionnaires
 
-In this section, you can create, edit, and delete questionnaire templates, that you can then use in any survey component.
+Dans cette section, vous pouvez créer, modifier et supprimer des modèles de questionnaires, que vous pouvez ensuite utiliser dans n'importe quel composant d'enquête.
 
-== Create a questionnaire template
+== Créer un modèle de questionnaire
 
-To create a new questionnaire template, you need to click the "New template" button.
+Pour créer un nouveau modèle de questionnaire, vous devez cliquer sur le bouton "Nouveau modèle".
 
 image::templates/templates_questionnaires_backend_form.png[Backend: new template form]
 
-.New questionnaire template form
+.Nouveau formulaire de questionnaire
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Nom
 |Obligatoire
-|Title of this template. Choose a clear title, describing precisely what the survey is for, like "feedback survey."
+|Titre de ce modèle. Choisissez un titre clair, décrivant précisément à quoi sert l'enquête, comme « enquête de rétroaction ».
 
 |Description
 |Obligatoire
-|Description of what the template is made for. This description is only available in the templates panel, to describe precisely what
+|Description de ce que le modèle est conçu. This description is only available in the templates panel, to describe precisely what
 the survey is for.
 |===
 
-Click the "Save" button to continue creating your template questionnaire.
+Cliquez sur le bouton "Enregistrer" pour continuer à créer votre questionnaire de modèle.
 
 image::templates/templates_questionnaires_backend_survey_form.png[Backend: new survey template form]
 
-Then, click the "Edit" button. You enter the survey creation process. Click the "Skip" button if you don't want to use an existing template.
+Ensuite, cliquez sur le bouton "Modifier". Vous entrez le processus de création de l'enquête. Cliquez sur le bouton « Passer » si vous ne voulez pas utiliser un modèle existant.
 
-On the next page, you can create a survey. Please refer to the xref:admin:components/surveys.adoc[Surveys] documentation for more information.
+Sur la page suivante, vous pouvez créer un sondage. Veuillez vous référer à la documentation xref:admin:components/surveys.adoc[Surveys] pour plus d'informations.
 
-Click the "Save" button to see a preview of your survey.
+Cliquez sur le bouton "Enregistrer" pour voir un aperçu de votre enquête.
 
 image::templates/templates_questionnaires_backend_survey_preview.png[Backend: new survey template preview]
 
-Click on the "Save" button again to save your template.
+Cliquez à nouveau sur le bouton "Enregistrer" pour enregistrer votre modèle.
 
-== Manage templates
+== Gérer les modèles
 
-All the templates appear in the questionnaire templates list:
+Tous les questionnaires apparaissent dans la liste des questionnaires :
 
-* *Template*: name of the template.
-* *Questionnaire Title*: name of the survey by default when choosing this template.
-* *Number of questions*: number of different questions in the survey.
-* *Created at*: date of creation.
+* *Modèle*: nom du modèle.
+* *Titre du questionnaire*: nom de l'enquête par défaut lors du choix de ce modèle.
+* *Nombre de questions* : nombre de questions différentes dans l'enquête.
+* *Créé à* : date de création.
 
-You can edit a template and its questions at any moment. Also, please note that when you choose a template when creating a survey,
-you can also change the questions, add some or delete some for this specific component.
+Vous pouvez modifier un modèle et ses questions à tout moment. Veuillez également noter que lorsque vous choisissez un modèle lors de la création d'une enquête,
+vous pouvez également modifier les questions, en ajouter ou en supprimer pour ce composant spécifique.
 
 === Actions
 
@@ -56,22 +56,22 @@ you can also change the questions, add some or delete some for this specific com
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_edit.png[Edit template]
+|image:icons/action_edit.png[Modifier le modèle]
 |Editer
-|To edit the template and the survey questions.
+|Éditer le modèle et les questions de l'enquête.
 
-|image:icons/action_duplicate.png[Duplicate template]
+|image:icons/action_duplicate.png[Dupliquer le modèle]
 |Duplicate
-|To duplicate the template.
+|Pour dupliquer le modèle.
 
-|image:icons/action_delete.png[Delete template]
+|image:icons/action_delete.png[Supprimer le modèle]
 |Supprimez
-|To delete the template.
+|Supprimer le modèle.
 |===
 
-=== Use the template
+=== Utiliser le modèle
 
-To use the template, create a xref:admin:components/surveys.adoc[survey] component in a participatory space, then edit it.
-You then see a page proposing you to choose a template for this survey.
+Pour utiliser le modèle, créez un composant xref:admin:components/surveys.adoc[survey] dans un espace participatif, puis éditez-le.
+Vous voyez ensuite une page vous proposant de choisir un modèle pour ce sondage.
 
 image::templates/templates_questionnaires_survey_choice.png[Backend: choose template when creating survey]
