@@ -2,29 +2,29 @@
 
 == Understand the basics
 
-Participants can follow contents in Decidim, such as participatory spaces, proposals, a specific meeting, other participants, user groups, etc.
-Following something or someone means that when there are news related to this content, the participant receive xref:features/participant_actions/notifications.adoc[notifications].
+Les participants peuvent suivre le contenu de Decidim, tels que des espaces participatifs, des propositions, une réunion spécifique, d'autres participants, des groupes d'utilisateurs, etc.
+Suivre quelque chose ou quelqu'un signifie que lorsqu'il y a des actualités liées à ce contenu, le participant reçoit xref:features/participant_actions/notifications.adoc[notifications].
 
-Notifications are accessible in the notification page, but can also be sent by email.
-You can control these notifications in the xref:features/participant_actions/my_account.adoc#_notifications_settings[settings of your account].
+Les notifications sont accessibles dans la page de notification, mais peuvent également être envoyées par courriel.
+Vous pouvez contrôler ces notifications dans les xref:features/participant_actions/my_account.adoc#_notifications_settings[paramètres de votre compte].
 
-The activity that you're following is visible in your xref:features/participant_actions/my_public_profile.adoc[profile activity].
+L'activité que vous suivez est visible dans votre activité xref:features/participant_actions/my_public_profile.adoc[profile activity].
 
 == Follow a content
 
-NOTE: By default, administrators follow all the new spaces created in the platform.
+NOTE: Par défaut, les administrateurs suivent tous les nouveaux espaces créés sur la plate-forme.
 
-To follow a content:
+Pour suivre un contenu:
 
 . Naviguez vers ce que vous voulez suivre.
 . Cliquez sur le bouton « Suivre ».
-. See that the "Follow" button disappear and the "Stop following" button appear.
+. Voir que le bouton « Suivre » disparaît et que le bouton « Arrêter de suivre » apparaisse.
 
 image::features/follows/button_follow.png[Follow button]
 
 == Unfollow a content
 
-To unfollow a content:
+Pour ne plus suivre un contenu:
 
 . Naviguez vers ce que vous voulez ne plus suivre.
 . Cliquez sur le bouton "Arrêter de suivre".
@@ -32,10 +32,10 @@ To unfollow a content:
 
 image::features/follows/button_stop_following.png[Stop following button]
 
-== Follow a participant
+== Suivre un participant
 
-A participant can also follow participants. This is public and visible in the profile xref:features/participant_actions/my_public_profile.adoc[follows section].
+Un participant peut également suivre les participants. Ceci est public et visible dans le profil xref:features/participant_actions/my_public_profile.adoc[suit la section].
 
-To follow a participant, pass the cursor on their avatar, or click the "Follow" button in their public profile page.
+Pour suivre un participant, passez le curseur sur son avatar ou cliquez sur le bouton « Suivre » dans sa page de profil public.
 
 image::features/follows/user_tooltip_follow.png[Follow user]
