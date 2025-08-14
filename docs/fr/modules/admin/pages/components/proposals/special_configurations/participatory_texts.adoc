@@ -1,0 +1,84 @@
+= Textes participatifs
+
+== Understand the basics
+
+Cette fonctionnalité permet aux participants de naviguer dans les propositions comme dans un texte, plutôt que dans une liste ou une grille.
+Il peut être utile pour discuter de normes, de plans ou d'autres types de textes.
+
+Chaque paragraphe est divisé en une proposition, il est donc possible d'en discuter de manière plus granulaire.
+
+image::components/proposals/participatory_texts/example01.png[Participatory text example]
+
+== Configuration
+
+Pour configurer les "textes participatifs" dans les propositions, activez le paramètre "Textes participatifs activés" dans le formulaire de configuration du composant.
+
+image::components/proposals/component_specific_conf.png[Add component form - Specific configurations]
+
+Cliquez sur le bouton "Textes participatifs" en haut du volet des propositions vides.
+
+image::components/proposals/participatory_texts/manage_proposals.png[Manage proposals]
+
+Ensuite, cliquez sur le bouton "Importer le document" dans le panneau de texte participatif d'aperçu vide, pour être redirigé sur le formulaire.
+
+image::components/proposals/participatory_texts/add_document_form.png[Add document form]
+
+
+.Ajouter un formulaire de document
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Le titre du document à examiner dans le volet proposition.
+
+|Description
+|Facultatif
+|Description du document.
+
+|Document
+|Obligatoire
+|Fichier. Ajouter un document de moins de 2 Mo, chaque section jusqu'à ce que 3 niveaux d'en-tête en profondeur soit analysés en propositions.
+Les formats supportés sont : Markdown et ODT.
+|===
+
+TIP: Although it's possible to work with both Markdown (.MD) and ODT (.ODT) files, we recommend working with Markdown as it's
+easier to see the formatting. link:{attachmentsdir}/participatory_text.md[Télécharger l'exemple de texte participatif MD] pour obtenir de l'aide.
+
+Cliquez sur le bouton "Télécharger le document" pour voir l'aperçu du texte participatif.
+
+=== Aperçu du document
+
+image::components/proposals/participatory_texts/preview_participatory_text.png[Preview participatory text]
+
+Grâce à l'aperçu, vous pouvez vérifier si le document est correctement importé et divisé comme vous le souhaitez.
+
+Selon l'aperçu, vous pouvez:
+
+* *Rejeter* : si vous n'êtes pas satisfait et que vous voulez reformater votre document pour recommencer l'importation.
+* *Enregistrer le brouillon*: si vous êtes satisfait du résultat, mais que vous voulez tout de même apporter quelques modifications.
+* *Publier le document* : si vous êtes prêt à voir comment le texte est dans l'interface utilisateur.
+
+Une fois que vous avez publié le document, toutes les sections sont présentées comme des propositions dans le panel de gestion des propositions.
+
+image::components/proposals/participatory_texts/imported_document_proposals.png[Imported document proposals]
+
+Enfin, vous pouvez publier le composant de la proposition, pour que le texte participatif soit visible par les participants.
+
+NOTE: Cette fonctionnalité pourrait casser les propositions existantes, donc s'il y a une proposition, elle ne peut pas fonctionner, et un message d'avertissement est affiché :
+
+====
+Impossible d'interagir avec ce paramètre s'il y a des propositions existantes. S'il vous plaît, créer un nouveau composant `Propositions` si vous voulez
+pour activer cette fonctionnalité ou rejeter toutes les propositions importées dans le menu `Textes participatifs` si vous voulez le désactiver.
+====
+
+Une fois que le document est importé et que le composant de propositions est publié, les participants peuvent naviguer dans le texte participatif.
+
+image::components/proposals/participatory_texts/example01.png[Participatory text example]
+
+== Exemples
+
+Quelques exemples d'utilisation de cette fonctionnalité sont :
+
+* https://web.archive.org/web/20211028113410/https://concertation.greenpeace.fr/processes/vision-greenpeace/f/8/[Vision Greenpeace]
+* https://www.decidim.barcelona/processes/PAM2020/f/3771/[Processus participatif du Programme d'Actuació Municipal (PAM) 2020-2023]
