@@ -1,0 +1,86 @@
+= Manage initiatives
+
+== Understand the basics
+
+When a participant creates an initiative, it doesn't only create a resource like a proposal, it creates a whole space,
+allowing administrators to manage in the administration:
+
+* xref:admin:spaces/initiatives/admin_manage/committee.adoc[Committee members]
+* xref:admin:spaces/initiatives/admin_manage/components.adoc[Components]
+* xref:admin:spaces/initiatives/admin_manage/attachments.adoc[Attachments]
+* xref:admin:spaces/initiatives/admin_manage/moderations.adoc[Moderations]
+* xref:admin:spaces/initiatives/admin_manage/answer.adoc[Answer an initiative]
+
+NOTE: If you didn't configure it, once an initiative is created, it gets the Meetings and Page component enabled by
+default. Ask your instance implementer to modify this parameter if you don't need it, or want other components enabled by default.
+
+image::spaces/initiatives/initiative_admin_show.png[Admin initiative show page]
+
+== Konfiguration
+
+=== Manage initiatives
+
+After the initiative was sent to technical validation by a participant, an administrator can view all the initiatives in the administration panel.
+
+image::spaces/initiatives/initiative_admin_list.png[Admin initiatives list]
+
+You can find all the processes on this list with:
+
+* *ID*: identification number of the initiative.
+* *Initiatives*: title of the initiative.
+* *Signatures*: sum of online and in-person signatures.
+* *Created at*: date of creation of the initiative.
+* *Published at*: date of publication of the initiative.
+
+You can filter and sort this list by clicking the "Filter" button and the columns headers.
+You can also search for initiatives by their title in the search bar.
+
+image::spaces/initiatives/initiative_list_filters.png[Initiatives list filtered]
+
+=== Aktionen
+
+.Aktionen
+[cols="10h,20h,~"]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Edit icon]
+|Bearbeiten
+|To edit the initiative, its attachments, committee members, components, etc.
+
+|image:icons/action_answer.png[Answer icon]
+|Antwort
+|Allows to xref:admin:spaces/initiatives/admin_manage/answer.adoc[Answer an initiative].
+
+|image:icons/action_preview.png[Preview icon]
+|Vorschau
+|To see how the initiative looks in the frontend to participants.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Berechtigungen
+|To edit permissions on this initiative.
+|===
+
+=== Edit an initiative
+
+When clicking the "Edit" button or the initiative title on the initiative list in administration, the administrator is
+redirected to the initiative edit form, and can see that the secondary navigation bar on the left also allows to manage
+the initiative committee members, its components, attachments and reported content.
+
+image::spaces/initiatives/initiative_edit_form_admin.png[Initiative edit form in administration]
+
+On the edition form, the administrator can review and modify the initiative's title, description, scope, area, etc.
+They can also send the initiative to technical validation.
+
+=== Initiative veröffentlichen
+
+Once an initiative is sent to technical validation, the administrator can decide to publish it or discard it.
+To publish an initiative in technical validation, go on the initiative edition page and click the "Publish" button.
+
+=== Signaturen exportieren
+
+After the initiative started to get signatures, administrators can export the signatures in the initiative edit form, in CSV or in .pdf.
+
+image::spaces/initiatives/initiative_actions_export.png[Initiative actions with Export to PDF]
+
+image::spaces/initiatives/initiative_actions_export_pdf.png[Initiative exported PDF]
