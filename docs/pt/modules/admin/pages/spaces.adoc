@@ -1,12 +1,41 @@
-= Spaces
+= Espaços
 
-The participatory spaces are the channels that citizens can participate through when public decisions are being taken. By default
-the platform is provided with participatory processes, initiatives, consultations, conferences, votings and assemblies, but
-any organization can develop its own mechanisms through xref:develop:modules.adoc[Modules].
+== Understand the basics
 
-They are accessible through the main sidebar in the administration panel, and also through the main navigation menu in the
-public interface.
+Participatory spaces are the channels through which citizens can take part in public decision-making.
+By default, an instance is provided with those different spaces:
 
-image:spaces_admin.png[Spaces in admin sidebar]
 
-image:spaces_visitor.png[Spaces visible in the public interface]
+.Espaços participativos
+|===
+|Nome: |Descrição: |Use cases
+
+|*xref:admin:spaces/processes.adoc[Participatory Processes]*
+|A participatory process allows administrators to configure different participatory components, which evolve over different participatory phases.
+|Participatory budgeting, Proposal recollection, Voting or debate process, etc.
+
+|*xref:admin:spaces/assemblies.adoc[Assemblies]*
+|An assembly allows administrators to configure participatory components in a continued space, with the possibility to define members.
+|Committee organization space, citizen assembly, etc.
+
+|*xref:admin:spaces/initiatives.adoc[Initiatives]*
+|Initiatives space allows administrators to open a bottom-up space, with different initiatives types.
+|Petitions, Hearing requests, Participatory process requests, etc.
+
+|*xref:admin:spaces/conferences.adoc[Conferences]*
+|A conference allows administrators to organize and publicize events, deal with registrations, program , speakers and venues.
+|Participatory event, Citizen assembly, Association festival, etc.
+|===
+
+NOTE: Any organization can develop its own spaces by creating xref:develop:modules.adoc[Modules].
+
+== Configuração
+
+Spaces are accessible through the administration navigation bar.
+
+image::spaces_admin.png[Spaces in administrator sidebar]
+
+Once you start publishing spaces, participants see links to the different spaces indexes appear in the homepage global menu,
+the instance navigation bar and the footer.
+
+image::spaces_visitor.png[Spaces visible in the public interface]
