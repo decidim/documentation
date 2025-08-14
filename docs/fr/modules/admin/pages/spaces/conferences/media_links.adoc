@@ -1,0 +1,63 @@
+= Liens média
+
+== Understand the basics
+
+Les conférences peuvent avoir une section appelée "Liens médias" qui montre une liste de fichiers multimédias et les liens
+qui sont associés à la conférence. Il s'affiche dans une page spécifique de la conférence :
+
+* Documents et images connexes de la section xref:admin:spaces/conferences/attachments.adoc[attachments]
+* Liens médiatiques à partir de la section des liens média.
+
+image:espaces/conferences/media_links_frontend.png[Conférences liens média frontend]
+
+=== How to find it?
+
+Pour accéder à la configuration des liens média, cliquez dans le panneau de navigation secondaire de l'élément "Liens médias".
+
+image::spaces/conferences/media_links_backend.png[Conferences media links]
+
+== Configuration
+
+=== Actions
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Modifier l'icône]
+|Editer
+|Éditer ce lien.
+
+|image:icons/action_delete.png[Supprimer l'icône]
+|Supprimez
+|Supprimer ce lien.
+|===
+
+=== Créer un nouveau lien média
+
+Pour créer un nouveau lien média, cliquez sur le bouton « Nouveau média » en haut à droite de la page.
+
+image::spaces/conferences/new_media_link.png[Create a new conferences media link]
+
+.Nouveau formulaire de lien média
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Le titre du lien.
+
+|Lier
+|Obligatoire
+|URL du lien.
+
+|Date
+|Obligatoire
+|Date de publication du lien.
+
+|Rang d'affichage
+|Facultatif
+|Quel ordre il a en relation avec les autres liens. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux liens, "Link a" avec le poids "10" et "Link b" avec le poids "0" puis "Link b" est d'abord lors de la commande.
+|===
