@@ -1,0 +1,67 @@
+= Collaborative drafts
+
+== Understand the basics
+
+The collaborative draft feature allows participants to write proposals collaboratively, and have it written by multiple authors.
+
+NOTE: Only the original author can approve or reject the collaboration requests, withdraw or publish the collaborative draft.
+
+It has similarities with xref:components/proposals/special_configurations/amendments.adoc[Amendments] but the main difference
+is that with collaborative drafts there is a need to trust other authors, as they can make changes to the original proposal
+without approval by the original author, although the original author can decide if they promote the collaborative draft to a proposal.
+
+image::components/proposals/collaborative_drafts/collaborative_draft_request_access.png[Collaborative draft with request access button]
+
+== Configuración
+
+To configure "Collaborative Drafts" in proposals, enable the "Collaborative Drafts enabled" setting in the component configuration form.
+
+image::components/proposals/component_specific_conf.png[Add component form - Specific configurations]
+
+=== Create a draft
+
+Once collaborative drafts are enabled, participants can see a "Access collaborative drafts" button in the proposals list.
+
+image::components/proposals/collaborative_drafts/proposals_list.png[collaborative draft button on proposals list]
+
+Participants are then redirected on a list dedicated to collaborative drafts, where they can start creating new collaborative drafts.
+
+image::components/proposals/collaborative_drafts/list.png[Collaborative draft list]
+
+By clicking the "New collaborative draft" button, they get redirected on the collaborative draft creation form.
+
+image::components/proposals/collaborative_drafts/create_form.png[Collaborative draft creation form]
+
+Once the collaborative draft is created, its author can edit, withdraw, or publish the collaborative draft and approve or
+reject eventual collaboration requests.
+
+image::components/proposals/collaborative_drafts/collaborative_draft.png[Collaborative draft page]
+
+=== Collaborate on a draft
+
+Other participants can then request to join the collaborative draft to make some changes and appear as authors.
+
+image::components/proposals/collaborative_drafts/collaborative_draft_request_access.png[Collaborative draft with request access button]
+
+When clicking the "Request access" button, a notification is sent to the original author.
+They can then accept or reject the collaboration request on the collaborative draft right side bar.
+
+image::components/proposals/collaborative_drafts/author_sidebar.png[Collaboration requests]
+
+Once a request is approved it can't be rejected anymore. Now the collaborative draft has multiple authors.
+
+image::components/proposals/collaborative_drafts/multiple_authors.png[Draft with two authors]
+
+All authors can edit the collaborative draft by clicking in the "Edit collaborative draft" button.
+
+The versions history for the draft and its successive changes is available by clicking the "See other versions" link at the bottom.
+
+=== Publish a draft
+
+Once the original author is satisfied with the collaborative draft, they can publish it by clicking the "Publish" button.
+
+image::components/proposals/collaborative_drafts/publish_modal.png[Publish draft modal]
+
+Once it's published, the draft becomes a proposal and appears on the proposal list and grid.
+
+image::components/proposals/collaborative_drafts/collaborative_draft_published.png[Collaborative draft turned into proposal]
