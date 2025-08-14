@@ -2,8 +2,8 @@
 
 == Understand the basics
 
-Once a meeting is over, the meeting author can close it. This allows to adds the meeting minutes, the notes
-that gives a summary on what was discussed during the meeting, the agreements reached, decisions made, etc.
+Une fois la réunion terminée, l'auteur de la réunion peut la fermer. Cela permet d'ajouter les procès-verbaux de la réunion, les notes
+qui donnent un résumé de ce qui a été discuté pendant la réunion, les accords conclus, les décisions prises, etc.
 
 Cela permet d’apporter de la transparence à la réunion et sert également de compte rendu des différentes réunions.
 
@@ -14,11 +14,11 @@ image::components/meetings/close/frontend.png[Close report in the frontend]
 
 == Configuration
 
-=== Close a meeting
+=== Fermer une réunion
 
 ==== Réunions officielles
 
-To close a meeting as an administrator, click the image:icons/action_close.png[Close button] "Close" icon.
+Pour fermer une réunion en tant qu'administrateur, cliquez sur l'icône image:icons/action_close.png[Fermer le bouton] "Fermer".
 
 image::components/meetings/close/form_backend.png[Close meeting form in the backend]
 
@@ -37,7 +37,7 @@ image::components/meetings/close/form_backend.png[Close meeting form in the back
 
 |Nombre de participants
 |Obligatoire
-|Number of persons who attended the meeting. Doit être un nombre.
+|Nombre de personnes qui ont assisté à la réunion. Doit être un nombre.
 
 |Nombre de contributions
 |Facultatif
@@ -45,29 +45,29 @@ image::components/meetings/close/form_backend.png[Close meeting form in the back
 
 |Propositions
 |Facultatif
-|Choose proposals from this participatory space that were discussed or elaborated in this meeting.
+|Choisissez des propositions de cet espace participatif qui ont été discutées ou élaborées lors de cette réunion.
 
 |URL de la vidéo
 |Facultatif
-|Deprecated field.
+|Champ obsolète.
 
 |URL audio
 |Facultatif
-|Deprecated field.
+|Champ obsolète.
 
 |Est visible
 |Facultatif
-|Check if you want to publish the close report so it can be read by participants.
+|Cochez cette case si vous souhaitez publier le rapport de clôture pour qu'il puisse être lu par les participants.
 |===
 
 ==== Réunions de citoyens
 
-Tout comme les participants peuvent créer des réunions, ils peuvent également clôturer une réunion. They have fewer fields to fill than administrators.
+Tout comme les participants peuvent créer des réunions, ils peuvent également clôturer une réunion. Ils ont moins de champs à remplir que les administrateurs.
 
 image::components/meetings/close/button_frontend.png[Close meeting button in the frontend]
 
-Once the meeting has finished, the author of the meeting can see a "Close meeting" button. By clicking on it, they are redirected to
-the closing form.
+Une fois la réunion terminée, l'auteur de la réunion peut voir le bouton « Fermer la réunion ». En cliquant dessus, ils sont redirigés vers
+le formulaire de fermeture.
 
 image::components/meetings/close/form_frontend.png[Close meeting form in the frontend]
 
@@ -82,19 +82,19 @@ image::components/meetings/close/form_frontend.png[Close meeting form in the fro
 
 |Nombre de participants
 |Obligatoire
-|Number of persons who attended the meeting. Doit être un nombre.
+|Nombre de personnes qui ont assisté à la réunion. Doit être un nombre.
 
 |Propositions
 |Facultatif
-|Choose proposals from this participatory space that were discussed or elaborated in this meeting.
+|Choisissez des propositions de cet espace participatif qui ont été discutées ou élaborées lors de cette réunion.
 |===
 
-=== Related proposals
+=== Propositions associées
 
-If you link a proposal to a meeting when closing it, the meeting also appears in the proposal page.
+Si vous liez une proposition à une réunion lorsque vous la fermez, la réunion apparaît également dans la page des propositions.
 
 image::components/meetings/close/related_meeting.png[Related meeting in a proposal]
 
-This allows participants to navigate quickly in a proposal journey.
+Cela permet aux participants de naviguer rapidement dans un voyage de propositions.
 
 image::components/meetings/close/related_proposal.png[Related proposal in a meeting]
