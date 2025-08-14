@@ -1,0 +1,130 @@
+= Projects
+
+== Understand the basics
+
+Projects are parts of budgets.
+
+== Configuración
+
+=== Create a project
+
+To access the creation and management of projects, click the title of the budget or the image:icons/action_list.png[Manage projects icon]
+icon on the budgets list.
+
+image::components/budgets/new_project_button.png[New project button]
+
+Then, click the "New project" button on the top right of the page.
+
+image::components/budgets/new_project.png[New project form]
+
+.Nuevo formulario de proyecto
+[cols="20h,10h,~"]
+|===
+|Campo |Tipo |Descripción
+
+|Título
+|Requerido
+|El título de este proyecto.
+
+|Descripción
+|Requerido
+|Una descripción de lo que trata este proyecto.
+
+|Monto del presupuesto
+|Requerido
+|What’s the budget amount for this project. How much money does it cost to implement this project?
+
+|Dirección
+|Opcional
+|The address of the project. It allows to display a pin on a map for participants to locate the project.
+
+|Categoría
+|Opcional
+|What Category is assigned to the project. Utilizado para filtrar en la lista de presupuestos.
+
+|Propuestas
+|Opcional
+|Elija propuestas relacionadas para este proyecto. Automatically assigned when importing proposals.
+
+|Añadir una galería de imágenes
+|Opcional
+|Add multiple images illustrating what this project is about, mock-ups, etc.
+|===
+
+=== Gestionar proyectos
+
+image::components/budgets/results_selected.png[Selected projects after voting]
+
+On the projects list in the administration panel, administrators can see:
+
+* *ID*: Identification number for this project.
+* *Title*: Title of the project.
+* *Category*: Category of the project.
+* *Scope*: Scope of the project, if enabled in the participatory space.
+* *Votes count*: Number of votes on this project.
+* *Selected*: If the project is selected for implementation at the end of the process.
+* *Map*: Location of the project when it has an address.
+
+You can filter and sort this list by clicking the "Filter" button and the columns headers.
+You can also search for projects by their ID and title in the search bar.
+
+image::components/budgets/projects_list_filter.png[Projects list filter]
+
+=== Acciones
+
+.Acciones
+[cols="10h,20h,~"]
+|===
+|Icono |Nombre |Definición
+
+|image:icons/action_edit.png[Edit icon]
+|Editar
+|Editar formulario para un proyecto.
+
+|image:icons/action_folder.png[Folders icon]
+|Carpetas
+|Para clasificar adjuntos.
+
+|image:icons/action_attachments.png[Attachments icon]
+|Adjuntos
+|To add documents and images related to the project.
+
+|image:icons/action_preview.png[Preview icon]
+|Vista previa
+|Para ver cómo se muestra en el frontend a los participantes.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Permisos
+|To handle the authorizations needed to vote or comment on this specific project.
+
+|image:icons/action_delete.png[Delete icon]
+|Eliminar
+|Para eliminar este proyecto.
+|===
+
+=== Importar propuestas a proyectos
+
+Dependiendo de la normativa, puede que quieras tener una primera fase donde los participantes
+hagan propuestas, y esas propuestas son seleccionadas (por votación o por revisión técnica),
+entonces usted puede importar esas propuestas y convertirlas en proyectos.
+
+Para que esto funcione:
+
+. Las siguientes opciones en el componente de propuestas necesitan ser habilitadas:
+.. Respuesta de propuesta habilitada
+.. Habilitar costes en las respuestas de propuestas
+. A valuator or administrator needs to answer proposals:
+.. Revisar las propuestas
+.. Aceptar o rechazar de acuerdo a su normativa
+.. Añadir costes a las propuestas si han sido aceptadas
+. Un administrador puede importar propuestas a proyectos
+
+image:components/budgets/import_proposals.png[Importar propuestas a proyectos]
+
+=== Exportar todo
+
+Permite exportar los proyectos de este presupuesto en diferentes formatos.
+
+* Proyectos como CSV
+* Proyectos como JSON
+* Proyectos como Excel
