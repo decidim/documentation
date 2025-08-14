@@ -1,0 +1,134 @@
+= Antworten
+
+== Understand the basics
+
+Proposals answers allow administrators or valuators to review a proposal and give it an official response, with associated statuses.
+It allows then to filter the proposals by their statuses, read the answer that was given, and import the accepted proposals in the
+xref:components/budgets.adoc[budgets] component.
+
+NOTE: To learn more about valuators, refer to xref:admin:participants/admins.adoc#_valuators[Valuators administrators].
+
+image::components/proposals/answers/proposal_answer_state_accepted.png[Proposal answer state: Accepted]
+
+== Konfiguration
+
+=== Answer a proposal
+
+For answering a proposal, search for the proposal you want to answer and click in the image:icons/action_answers.png[Answer proposal icon]
+Answer icon.
+
+You are then redirected on the answer page, that contains three sections:
+
+==== Metadaten
+
+This section displays the general information about the proposal, like its link, its author, the proposal description,
+how many votes, likes, or comments it received, etc.
+
+image::components/proposals/answers/proposal_answer_metadata.png[Proposal answer metadata form]
+
+==== Private Notizen
+
+The Private notes section allows administrators or valuators to leave internal notes, not visible by the participants.
+
+image::components/proposals/answers/proposal_answer_notes.png[Proposal answer private notes form]
+
+==== Antwort
+
+This section allows administrators or valuators to give an answer and a status to the proposal.
+
+NOTE: To create proposal answer template and quickly answer different proposals, see the
+xref:admin:templates/proposal_answers.adoc[Proposal answers] article.
+
+image::components/proposals/answers/proposal_answer.png[Proposal answer form]
+
+.Antwort für Vorschlagsformular
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Select a template answer
+|Optional
+|Allows selecting a xref:admin:templates/proposal_answers.adoc[Proposal answers template], to quickly assign a status to the proposal
+and use the template answer associated.
+
+|Status
+|Benötigt
+|By default, you can choose between: Not answered, Evaluating, Accepted, Rejected. You can edit and add statuses in the proposal
+management page.
+
+|Antwort
+|Optional
+|An explanation on why the proposal is accepted, rejected, evaluated, or else.
+
+|Kosten
+|Benötigt
+|Required if "Enable costs on proposal answers" is enabled in the proposals component settings and if the status is accepted.
+A number that indicates the cost of the proposal.
+
+|Kostenbericht
+|Benötigt
+|Required if "Enable costs on proposal answers" is enabled in the proposals component settings and if the status is accepted.
+
+|An explanation of the cost of the proposal.
+|Ausführungszeitraum
+|Benötigt
+|===
+
+=== Statuses
+
+If the proposals component setting "Publish proposal answers immediately" is checked, then the answer is visible to the public
+immediately after you clicked on the "Answer" button.
+
+The statuses are visible on the proposals list, cards, and pages. New statuses can be created, and default ones can be edited or deleted.
+
+image::components/proposals/answers/proposal_answer_state_accepted_card.png[Proposal card answer custom status]
+
+Statuses can be adapted to your organization needs by clicking the "Statuses" button in the administration proposal list.
+
+image::components/proposals/answers/proposal_statuses_back.png[Proposal statuses list]
+
+Click the "New status" button to start creating your custom statuses.
+
+.Antwort für Vorschlagsformular
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|The status title, displayed on the proposal cards, lists and filters.
+
+|Answer heading
+|Benötigt
+|The heading of the answer, that appears on the proposal page in the answer box.
+
+|Color
+|Benötigt
+|The color of the status box and tag.
+|===
+
+A preview of the answer box and tag is displayed at the bottom of the form.
+
+image::components/proposals/answers/proposal_status_form.png[Proposal new status form]
+
+=== Veröffentlichung
+
+You can control when the answers are published by using the "Publish proposal answers immediately" checkbox in the proposal configuration.
+For enabling automatic publication, check this box.
+
+If you want to control when to publish the answers of a proposal or multiple proposals, follow these steps:
+
+. Don't tick the "Publish proposal answers immediately" checkbox in the proposal component configuration
+. Answer the proposals (answers are not published yet)
+. When you want to publish the answers, select the proposals
+. Klicken Sie auf die Schaltfläche "Aktionen"
+. Click on the "Publish answers" option
+
+image::components/proposals/answers/proposal_answer_publish.png[Proposal answer publication: action]
+
+Then, click the "Publish" button.
+
+image::components/proposals/answers/proposal_answer_publish_button.png[Proposal answer publication: publish button]
+
+NOTE: If you have unchecked the "Publish proposal answers immediately" then answered the proposals, and then checked the option again,
+the answers aren't published automatically. You still need to publish the answers manually with the "Actions" button.
