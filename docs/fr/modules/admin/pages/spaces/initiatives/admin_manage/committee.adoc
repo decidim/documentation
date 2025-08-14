@@ -1,20 +1,20 @@
-= Committee members
+= Membres du comité
 
 == Understand the basics
 
-NOTE: Promoter's committee explanation is available on xref:admin:spaces/initiatives/author_manage/committee.adoc[Promoter’s committee].
+NOTE: L'explication du comité de promotion est disponible sur xref:admin:spaces/initiatives/author_manage/committee.adoc[Comité du promoteur].
 
-Committee members might be necessary, depending on the rules set for the initiative types.
-Participants can manage them from their initiative edition form, but administrators can also access the list of
-committee members.
+Les membres du comité pourraient être nécessaires, selon les règles établies pour les types d'initiative.
+Les participants peuvent les gérer à partir de leur formulaire d'édition d'initiative, mais les administrateurs peuvent également accéder à la liste des membres du comité
+.
 
-== Manage committee members
+== Gérer les membres du comité
 
-To access the committee members list, click in the secondary navigation panel on the "Committee members" item.
+Pour accéder à la liste des membres du comité, cliquez dans le panneau de navigation secondaire du point « Membres du comité ».
 
 image::spaces/initiatives/initiative_members_admin.png[Initiative committee members list in administration]
 
-There, the author can see and copy the initiative invitation link, and see the list of committee members.
+Là, l'auteur peut voir et copier le lien d'invitation d'initiative, et voir la liste des membres du comité.
 
 == Actions
 
@@ -23,11 +23,11 @@ There, the author can see and copy the initiative invitation link, and see the l
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_delete.png[Delete icon]
-|Revoke
-|Allows to refuse or revoke the committee members right on this initiative.
+|image:icons/action_delete.png[Supprimer l'icône]
+|Révoquer
+|Permet de refuser ou de révoquer les membres du comité directement sur cette initiative.
 
-|image:icons/action_publish.png[Approve icon]
-|Approve
-|To approve the membership request.
+|image:icons/action_publish.png[Approuver l'icône]
+|Accepter
+|Pour approuver la demande d'adhésion.
 |===
