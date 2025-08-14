@@ -2,78 +2,78 @@
 
 == Understand the basics
 
-As explained in the xref:admin:index.adoc[introduction page], to understand how Decidim works, you need to distinguish between *spaces* and *components*.
+Comme expliqué dans la page d'introduction xref:admin:index.adoc[, pour comprendre comment Decidim fonctionne, vous devez distinguer entre les *espaces* et les *composants*.
 The participatory spaces are the channels that citizens can participate through when public decisions are being taken, whereas participatory components are
 mechanisms that enable interaction between users of the platform and the various participatory spaces.
 
-All components can be enabled in each space, for example you can enable three Proposals components in a same participatory process, or having all the
-components enabled in an assembly space.
+Tous les composants peuvent être activés dans chaque espace, par exemple vous pouvez activer trois composants Propositions dans un même processus participatif, ou avoir tous les composants
+activés dans un espace de montage.
 
 include::partial$components_list.adoc[]
 
 == How to find it?
 
-To configure components, click the *Components* item in any participatory space.
+Pour configurer les composants, cliquez sur l'élément *Composants* dans un espace participatif.
 
 image::spaces/components/components.png[Components of space]
 
-There, you are able to manage the already added components, configure them, add new ones, etc.
+Là, vous pouvez gérer les composants déjà ajoutés, les configurer, en ajouter de nouveaux, etc.
 
 == Manage components
 
-You can find all the components on the list in the administration panel, with:
+Vous pouvez trouver tous les composants dans la liste dans le panneau d'administration, avec:
 
-* *Component name*: title of the component, given when creating or editing it.
-* *Component type*: type of the component.
-* *Component scope*: in a same space, components can have different scopes.
+* *Nom du composant* : titre du composant, donné lors de la création ou de l'édition.
+* *Type de composant* : type du composant.
+* *Portée des composants* : dans un même espace, les composants peuvent avoir des portées différentes.
 
-== Create a component
+== Créer un composant
 
-To configure a new component, click the *Add component* from the upper right part of the screen and select the type of
-component you want.
+Pour configurer un nouveau composant, cliquez sur *Ajouter un composant* dans la partie supérieure droite de l'écran et sélectionnez le type de composant
+que vous souhaitez.
 
 image::spaces/components/components_new_dropdown.png[Add a component in a space]
 
 == Actions
 
-.Components actions in component list
+.Actions des composants dans la liste des composants
 [cols="10h,20h,~"]
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_edit.png[Manage icon]
+|image:icons/action_edit.png[Gérer l'icône]
 |Gérer
 |Gérer toutes les ressources à l'intérieur d'un composant. Par exemple, toutes les propositions d'un composant de proposition, les réunions
 dans un composant de réunion, etc.
 
 |image:icons/action_share.png[Share icon]
 |Partager
-|Partager en privé avant de publier ce composant. Useful for getting reviews from other people of your organization.
+|Partager en privé avant de publier ce composant. Utile pour obtenir des avis d'autres personnes de votre organisation.
 
 |image:icons/action_configure.png[Configure icon]
 |Configurer
-|To configure a component with specific rules, for instance, in the case of Meetings:
-are comments enabled, participants can create meetings or not, etc.
+|Pour configurer un composant avec des règles spécifiques, par exemple, dans le cas de réunions :
+sont des commentaires activés, les participants peuvent créer des réunions ou pas, etc.
 
-|image:icons/action_publish.png[Publish icon]
+|image:icons/action_publish.png[Icône de publication]
 |Publier
-|Publier un composant. This means that the component is then visible to the public.
+|Publier un composant. Cela signifie que le composant est alors visible au public.
 
-|image:icons/action_unpublish.png[Unpublish icon]
+|image:icons/action_unpublish.png[Dépublier l'icône]
 |Dépublier
-|Dépublier un composant. This means that the component is then invisible to the public.
+|Dépublier un composant. Cela signifie que le composant est alors invisible au public.
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Icône d'aperçu]
 |Aperçu
-|To preview the space before it's published.
+|Pour prévisualiser l'espace avant qu'il ne soit publié.
 
 |image:icons/action_permissions.png[Permissions icon]
 |Autorisations
-|To configure which xref:customize:authorizations.adoc[Authorization] is necessary to make certain actions in
-this component. For instance, in the case of Proposals, which Verification is needed to create a new proposal or
-to give supports.
+|Pour configurer quel xref:customize:authorizations.adoc[Authorization] est nécessaire pour effectuer certaines actions dans
+ce composant. Par exemple, dans le cas des propositions, dont la vérification est nécessaire pour créer une nouvelle proposition ou
+pour apporter un soutien.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Supprimer l'icône]
 |Supprimez
 |Supprimer ce composant. If there are content inside, most of the components don't let you delete them so it doesn't break
 relations with other resources. Dans ces cas, il est recommandé de dépublier simplement le composant.
