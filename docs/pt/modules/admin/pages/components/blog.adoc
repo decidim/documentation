@@ -1,145 +1,159 @@
-= Blog
+= Blogue
 
-The Blog component allows people to read multiple posts ordered by date.
+== Understand the basics
 
-Some examples of where this component was used:
+The Blog component allows administrators to post news about a participatory space, which participants can read to get updates.
 
-* https://meta.decidim.org/processes/roadmap/f/247/[News in Propose new functionalities for Decidim software] in https://meta.decidim.org[Metadecidim]
+image::components/blog/example01.png[Example of blog posts list]
 
-image:components/blog/example01.png[Example of blog posts list]
-image:components/blog/example02.png[Example of a blog post]
+All blog posts are available on the post list, and participants can click each blog post to learn more about what's new.
 
-To configure the Blog component:
+image::components/blog/example02.png[Example of a blog post]
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies" or "Conferences".
-. Go to components
-. Click on "Add component" button
-. Click on "Blog"
-. Fill the xref:_add_component[Add component] form
+== Configuração
 
-== Add component
+=== Create a blog component
 
-image:components/blog/component.png[Add component form]
+To create a Blog component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
 
+image::components/blog/component_blog.png[Add Blog component button]
 
-.Add component: Blog form
+Then:
+
+. Click on the "Components" item in the secondary menu
+. Click the "Add component" button
+. Select "Blog"
+. Fill the component creation form
+
+You can still update this form and the configuration after creating the component, by clicking the
+image:icons/action_configure.png[Configure icon] icon on the components list.
+
+image::components/blog/component.png[Add component form]
+
+.Adicionar componente: Formulário Blog
+[cols="20h,10h,~"]
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Name
-|Required
-|What is the title of this component. For instance, "Blogs"
+|Nome:
+|Obrigatório
+|The title of this component. For instance, "Blogs" or "Latest news"
 
-|Order position
-|Optional
-|Which order will it have in relation to the other blogs. Having a lower number means a higher priority.
-For instance, if you have two blogs, "Blog a" with weight "10" and "Blog b" with weight "0", then "Blog b" will be first when ordering.
-|===
-
-
-.Add component: Blog form - Global settings
-|===
-|Field |Type |Description
-
-|Announcement
-|Optional
-|A general announcement that'll be visible on the general blogs landing page.
-
-|Comments enabled
-|Optional
-|Whether you want to have comments in the meetings.
-
-|Comments max length
-|Optional
-|What is the characters limit that participants will have when making comments. Leave 0 for default value.
+|Posição do pedido
+|Opcional
+|Which order it has in relation to the other components. Ter um número menor significa uma prioridade mais alta.
 |===
 
-In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
-xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
-
-
-.Add component: Blogs form - Step settings
+.Blog form - Global settings
+[cols="20h,10h,~"]
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Announcement
-|Optional
-|A general announcement that'll be visible on the general blog landing page.
+|Anúncio
+|Opcional
+|A general announcement visible on the Blog component landing page.
 
-|Comments blocked
-|Optional
-|Whether you want to enable comments creation for this phase.
+|Comentários ativados
+|Opcional
+|If you want participants to be able to comment on the blog posts.
 
-|Endorsements enabled
-|Optional
-|Whether you want to enable endorsements for this phase.
-
-|Endorsements blocked
-|Optional
-|Whether you want to disable adding new endorsements for this phase.
+|Comprimento máximo de comentários
+|Opcional
+|The characters limit that participants have when making comments. Deixe 0 para o valor padrão.
 |===
 
-== Permissions
-
-An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
-certain actions in the blogs:
-
-* Comment
-* Endorse
-
-== Manage posts
-
-image:components/blog/manage_posts.png[Manage posts table]
-
-=== New post form
-
-image:components/blog/new_post.png[New post form]
-
-
-.New post form
+.Step settings
+[cols="20h,10h,~"]
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Create post as
-|Required
-|Participant account or user group that will be the author of the post.
+|Anúncio
+|Opcional
+|A general announcement that will be visible on the general blog landing page.
 
-|Title
-|Required
-|What is the title of this post.
+|Comentários bloqueados
+|Opcional
+|Se você quer habilitar a criação de comentários para esta fase.
 
-|Body
-|Required
-|What is the description of this post.
+|Endossos ativados
+|Opcional
+|Se você deseja habilitar endossos para esta fase.
+
+|Endossos bloqueados
+|Opcional
+|Whether you want to enable adding new endorsements for this phase.
 |===
 
-==== Actions
+=== Gerenciar publicações
 
+To start creating and managing posts, click on the component title in the navigation bar or on the component list, or click on the
+image:icons/action_edit.png[Manage component icon] icon on the components list.
 
-.Actions
+image:components/blog/manage_posts.png[Gerenciar tabela de postagens]
+
+=== Create a post
+
+To create a post, click the "New post" button on the top right of the page.
+
+image:components/blog/new_post.png[Novo formulário de postagem]
+
+.Novo formulário de publicação
+[cols="20h,10h,~"]
 |===
-|Icon |Name |Definition
+|Campo |tipo |Descrição:
 
-|image:action_edit.png[Edit icon]
-|Edit
-|Edit form for this post. It's the same form as "New post".
+|Author
+|Obrigatório
+|Participant account or user group authoring the post.
 
-|image:action_folder.png[Folder icon]
-|Folder
-|For classifying Attachments.
+|Título
+|Obrigatório
+|Qual é o título deste post.
 
-|image:action_attachments.png[Attachments icon]
-|Attachments
-|Documents that are related to the post.
+|Conteúdo
+|Obrigatório
+|Qual é a descrição deste post.
 
-|image:action_permissions.png[Permissions icon]
-|Permissions
-|To handle the permissions of this post, depending on the verification a participant has.
-
-|image:action_delete.png[Delete icon]
-|Delete
-|To delete this post.
+|Publish time
+|Opcional
+|Publication date for the post. If in the future, the post is not published until this date.
 |===
+
+=== Ações.
+
+.Ações.
+[cols="10h,20h,~"]
+|===
+|Ícone |Nome: |Definição
+
+|image:icons/action_edit.png[Edit icon]
+|Alterar
+|Edit this post.
+
+|image:icons/action_folder.png[Folder icon]
+|pasta
+|For classifying attachments.
+
+|image:icons/action_attachments.png[Attachments icon]
+|Anexos
+|Add documents related to the post.
+
+|image:icons/action_preview.png[Preview icon]
+|Pré-visualizar
+|See how it's shown in the frontend to participants.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Permissões
+|Handle the authorizations needed to comment or endorse this specific blog post.
+
+|image:icons/action_delete.png[Delete icon]
+|excluir
+|Delete this post.
+|===
+
+== Exemplos
+
+Below, you can find some links to example blog components:
+
+* https://meta.decidim.org/processes/news/f/1719/posts[Latest news of the Decidim association]
+* https://www.decidim.barcelona/processes/volem-decidir/f/6338/posts[News on a participatory process in Barcelona]
