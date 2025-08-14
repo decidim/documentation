@@ -1,0 +1,29 @@
+= Versionen
+
+== Understand the basics
+
+Die Versionsfunktion erlaubt es einem Besucher, die Entwicklung der verschiedenen Versionen von Ressourcen zu sehen, die bearbeitet werden können,
+wie Vorschläge oder Ergebnisse.
+
+With versions it's possible to see who made changes to a content, when the change has been made and exactly what has changed.
+
+image::features/versions/side_by_side_escaped.png[Versions in resources]
+
+=== How to find it?
+
+. Go to the content for which you want to review the different versions.
+. Click in the "See other versions" link in the bottom of the page.
+. From there you can change the visualisation of the version differences, and review all past versions.
+
+image::features/versions/sidebar.png[See other versions link in page bottom]
+
+image::features/versions/list.png[List of versions]
+
+It's possible to view the differences of the versions in two formats: side-by-side or unified. In case that the contents are
+in HTML then it's also possible to see the difference un-escaped and escaped, and see the full HTML code.
+
+image:features/versions/unified_escaped.png[Unified escaped view]
+
+== Beispiele
+
+TBD
