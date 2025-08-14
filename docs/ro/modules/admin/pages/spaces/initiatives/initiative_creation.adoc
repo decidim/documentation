@@ -1,0 +1,101 @@
+= Initiative creation
+
+== Understand the basics
+
+Once you configured the xref:admin:spaces/initiatives/types.adoc[initiatives types and scopes], you should be able to access the initiative space in the user interface.
+
+image::spaces/initiatives/initiatives_index_front.png[Initiatives index in front without initiatives]
+
+Participants are now able to create initiatives.
+Depending on how the initiatives module is configured in the initializer or how the initiative type is configured, it may need to ask for an authorization.
+
+== Configuration
+
+To start creating an initiative, the participant must click in the "New initiative" button.
+Depending on the configuration of your instance, they have to pass different steps before being able to send their initiative to technical validation, where it gets reviewed
+by an administrator before being published and starting collecting signatures.
+
+=== Initiative type choice
+
+If the instance has multiple initiative types, then the first step is the choice of the initiative type.
+
+image::spaces/initiatives/initiative_new_step_type.png[Initiative creation: initiative type choice]
+
+If there is only one initiative type configured, this step is automatically skipped.
+
+=== Content creation
+
+image::spaces/initiatives/initiative_new_step_content.png[Initiative creation: initiative content creation]
+
+.New initiative form
+[cols="20h,10h,~"]
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|The title of the initiative.
+
+|Description
+|Required
+|The content of the initiative.
+
+|Hashtag
+|Optional
+|A hashtag for the initiative, to communicate about it on the platform and social media.
+
+|Signature collection type
+|Required
+|Depends on the configuration of the initiative type.
+
+|Scope
+|Required
+|Depends on the configuration of the initiative type  and type scopes.
+
+|End of signature collection period
+|Optional
+|If the author wants to change the signature collection end date. Can be configured from the initiative type.
+
+|Area
+|Optional
+|If the author wants to categorize their initiative.
+
+|Add documents
+|Optional
+|If the author wants to add attachments to their initiative.
+
+|Add image
+|Optional
+|If the author wants to add an image, that is then displayed on the initiative card in the initiatives list.
+|===
+
+=== Similarity comparison
+
+Can be disabled by your organization implementer.
+Checks the rest of the initiatives if there are other similar initiatives. If there are, the system shows them before continuing.
+This is a way to avoid duplicates and encourage participants to support other similar initiatives.
+
+=== Promoter committee
+
+If promoter committee is enabled for this initiative type, this step allows participants to understand what they need to do before being able to send their initiative for publication.
+
+image::spaces/initiatives/initiative_new_step_committee.png[Initiative creation: initiative promoting committee]
+
+See the xref:admin:spaces/initiatives/author_manage/committee.adoc[Promoting committee] article for more information.
+
+=== Finish
+
+The finish step announces the initiative creation to the participant, and shows them different buttons depending if they still need to find promoting committee members.
+
+image::spaces/initiatives/initiative_new_step_finish.png[Initiative creation: initiative finish]
+
+If the initiative type doesn't require multiple committee members, participants can directly send their initiative to technical validation.
+
+NOTE: The initiative won't be publicly visible on the initiatives list until reviewed and published by an administrator.
+
+From this page, participants can:
+
+* Go back to the initiatives list
+* Edit their initiative
+* Go to their initiatives
+* Send their initiate to technical validation
