@@ -1,0 +1,18 @@
+= Specific configurations
+
+== Understand the basics
+
+The Proposals component has been built with different layouts, in order to address different use cases.
+Those specific configurations are more rarely used, and require a good knowledge of the software.
+
+== Configuración
+
+All three features can be enabled in the Global settings of the proposal component configuration form.
+
+image::components/proposals/component_specific_conf.png[Add component form - Specific configurations]
+
+In this section, you can learn how to configure and use the following features:
+
+* xref:admin:features/my_account/notifications_settings.adoc[Notifications settings]
+* xref:admin:components/proposals/collaborative_drafts.adoc[Collaborative drafts]
+* xref:admin:components/proposals/participatory_texts.adoc[Participatory texts]
