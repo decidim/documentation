@@ -4,9 +4,9 @@
 
 La fonction *Modérations globales* vous permet de modérer différents types de contenus et
 vous assure que le dialogue dans votre plateforme est démocratique et constructif.
-It also allows managing participants who infringe the rules of the platform.
+Il permet également de gérer les participants qui enfreignent les règles de la plateforme.
 
-NOTE: Looking for how to report participants or content? See xref:moderations/reported_users.adoc[Reported participants] and xref:moderations/reported_content.adoc[Reported content].
+NOTE: Vous recherchez comment signaler les participants ou le contenu? Voir xref:moderations/reported_users.adoc[Participants signalés] et xref:moderations/reported_content.adoc[Contenu signalé].
 
 Par exemple, dans le cas de https://www.decidim.barcelona/[Decidim Barcelona],
 le https://www.decidim.barcelona/pages/terms-and-conditions[Conditions d'utilisation] dit :
@@ -37,21 +37,21 @@ le https://www.decidim.barcelona/pages/terms-and-conditions[Conditions d'utilisa
 
 == Configuration
 
-To access the Global moderations panel, go in the administration panel and click in the "Global moderations" item in
-the administrator navigation bar.
+Pour accéder au panneau de modération globale, allez dans le panneau d'administration et cliquez sur l'élément "Modération globale" dans
+la barre de navigation de l'administrateur.
 
 image::moderations/moderations_menu.png[Global moderations menu]
 
-The Global moderations panel allows to manage reported contents as well as reported participants.
+Le panel de modération globale permet de gérer les contenus signalés ainsi que les participants signalés.
 
-image:moderations/moderations_backend_list_content.png[Global moderations panel for content]
+image:moderations/moderations_backend_list_content.png[Panneau de modération globale pour le contenu]
 
 == Exemples
 
-=== Report content
+=== Signaler le contenu
 
-You can report and hide a comment containing private information, or a link to a commercial platform posted by a user.
+Vous pouvez signaler et masquer un commentaire contenant des informations privées, ou un lien vers une plateforme commerciale postée par un utilisateur.
 
-=== Report user
+=== Signaler l'utilisateur
 
-You can report and block participants who are constantly violating the participation chart, or spamming and trolling the platform.
+Vous pouvez signaler et bloquer les participants qui violent constamment le tableau de participation, ou spammer et troller la plateforme.
