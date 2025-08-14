@@ -2,8 +2,8 @@
 
 == Understand the basics
 
-Badges are recognitions of the participant actions and progress on the platform. As participants start discovering, participating,
-and interacting, they earn different badges. Voici la liste des badges et des façons dont les participants peuvent les gagner.
+Badges are recognitions of the participant actions and progress on the platform. Au fur et à mesure que les participants commencent à découvrir, à participer, à
+et à interagir, ils gagnent différents badges. Voici la liste des badges et des façons dont les participants peuvent les gagner.
 
 C'est un mécanisme https://fr.wikipedia.org/wiki/Gamification[gamification] pour améliorer l'engagement des participants de manière ludique.
 
@@ -15,7 +15,7 @@ Lorsqu'un participant gagne un badge, il reçoit une notification.
 
 image::features/badges/notification.png[Example of badges notification]
 
-== Badges description
+== Description des badges
 
 Les badges ont plusieurs niveaux, en fonction du nombre de fois où ils ont fait l'action. For instance, for the followers badge,
 the participants receive the first level badge when they have 1 follower, the second level at 15 followers, the third level at 30 followers,
@@ -49,13 +49,13 @@ de faire des propositions qui peuvent être réalisées. De cette façon, ils so
 |Abonnés
 |Offert lorsque le participant atteint un certain nombre de suiveurs. The platform is a social and political network, so
 participants need to weave their web to communicate with other people in the platform.
-|The participant needs to be active and follow other people. It encourages other people to follow them.
+|Le participant doit être actif et suivre les autres. Elle encourage d'autres personnes à les suivre.
 |1, 15, 30, 60, 100
 
 |image:features/badges/published_initiatives_badge.png[Badge d'initiatives publiées]
 |Initiatives publiées
 |Offert lorsqu'un participant lance de nouvelles initiatives, en partenariat avec d'autres pour les mettre en œuvre.
-|The participant needs to go to the participation space of Initiatives and follow the steps to create a new initiative.
+|Le participant doit se rendre dans l'espace de participation des Initiatives et suivre les étapes pour créer une nouvelle initiative.
 |1, 5, 15, 30, 50
 
 |image:features/badges/proposal_supports_badge.png[La proposition supporte le badge]
