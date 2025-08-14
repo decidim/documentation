@@ -2,34 +2,34 @@
 
 == Understand the basics
 
-The Meetings component allows administrators to organize, advertise, deal with registration and wrap up in-person or online meetings.
-Depending on the component configuration, meetings can be created only by administrators, or also by participants.
+Le volet Réunions permet aux administrateurs d'organiser, d'annoncer, de traiter des inscriptions et de clôturer des réunions en personne ou en ligne.
+Selon la configuration du composant, les réunions ne peuvent être créées que par les administrateurs, ou aussi par les participants.
 
-In this documentation section, you can find how to configure and manage all of those items:
+Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments:
 
-* xref:admin:components/meetings/meetings.adoc[Meetings creation]: Create official or participant meetings.
-* xref:admin:components/meetings/registrations.adoc[Registrations]: Manage how participants can register to attend the meetings.
-* xref:admin:components/meetings/agenda.adoc[Agenda]: Announce the meetings topics to be discussed.
-* xref:admin:components/meetings/polls.adoc[Polls]: Enable quick voting during an online meeting.
-* xref:admin:components/meetings/close.adoc[Close]: Add the final report and minutes of the meeting.
+* xref:admin:admin:components/meetings/meetings.adoc[Meeting creation]: Créer des réunions officielles ou participantes.
+* xref:admin:admin:components/meetings/registrations.adoc[Registrations]: Gérer comment les participants peuvent s'inscrire pour assister aux réunions.
+* xref:admin:components/meetings/agenda.adoc[Agenda]: Annoncez les sujets des réunions à discuter.
+* xref:admin:admin:components/meetings/polls.adoc[Polls]: Activer le vote rapide pendant une réunion en ligne.
+* xref:admin:components/meetings/close.adoc[Close]: Ajoute le rapport final et les minutes de la réunion.
 
 image::components/meetings/example01.png[Example meeting detail 01]
 
 == Configuration
 
-To create a Meetings component, first go to the xref:admin:spaces.adoc[participatory space] where you want to create it.
+Pour créer un composant de réunions, allez d'abord sur xref:admin:spaces.adoc[espace participatif] où vous voulez le créer.
 
 image::components/meetings/component_meeting.png[Add Meetings component button]
 
-Then:
+Alors:
 
-. Click on the "Components" item in the secondary menu
-. Click the "Add component" button
-. Select "Meetings"
-. Fill the component creation form
+. Cliquez sur l'élément "Composants" dans le menu secondaire
+. Cliquez sur le bouton "Ajouter un composant"
+. Sélectionnez "Réunions"
+. Remplissez le formulaire de création de composant
 
-You can still update this form and the configuration after creating the component, by clicking the
-image:icons/action_configure.png[Configure icon] icon in the components list.
+Vous pouvez toujours mettre à jour ce formulaire et la configuration après avoir créé le composant, en cliquant sur l’icône
+image:icons/action_configure.png[Configurer l’icône] dans la liste des composants.
 
 image::components/meetings/component.png[Add a meetings component]
 
@@ -44,9 +44,9 @@ image::components/meetings/component.png[Add a meetings component]
 
 |Rang d'affichage
 |Facultatif
-|The order of the component in relation with the other components. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
-For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0"
-then "component b" is first when ordering.
+|L'ordre du composant en relation avec les autres composants. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux composants, "Composant a" avec le poids "10" et "Composant b" avec le poids "0"
+puis "Composant b" est d'abord lors de la commande.
 |===
 
 .Ajouter un composant - Formulaire de réunions: Paramètres globaux
@@ -60,27 +60,27 @@ then "component b" is first when ordering.
 
 |Secteur
 |Facultatif
-|Which xref:admin:settings/scopes.adoc[Scopes] does this component belongs to.
+|Ce composant appartient à xref:admin:settings/scopes.adoc[Scopes].
 
 |Annonce
 |Facultatif
-|A general announcement visible in the meetings list in the participant interface.
+|Une annonce générale visible dans la liste des réunions dans l'interface participante.
 
 |Conditions d'inscription par défaut
 |Facultatif
-|The registration terms of service that the participant need to accept when registering.
+|Les conditions de service que le participant doit accepter lors de son inscription.
 
 |Commentaires activés
 |Facultatif
-|Whether you want to have comments creation enabled in the meetings.
+|Si vous voulez que la création de commentaires soit activée dans les réunions.
 
 |Longueur maximale des commentaires
 |Facultatif
-|The characters limit that participants have when making comments. Laisser 0 pour la valeur par défaut.
+|La limite de caractères que les participants ont lors de la rédaction de commentaires. Laisser 0 pour la valeur par défaut.
 
 |Code d'enregistrement activé
 |Facultatif
-|Check if you want to automatically give registration codes to participants.
+|Cochez cette case si vous souhaitez donner automatiquement des codes d'inscription aux participants.
 En savoir plus sur xref:components/meetings/registrations.adoc[Registrations].
 
 |Les autorisations d'actions peuvent être définies pour chaque réunion
@@ -89,15 +89,15 @@ En savoir plus sur xref:components/meetings/registrations.adoc[Registrations].
 
 |Activer la création de pads
 |Facultatif
-|Si vous voulez un Etherpad intégré à vos réunions. Must have the xref:services:etherpad.adoc[Etherpad] integration configured.
+|Si vous voulez un Etherpad intégré à vos réunions. Doit avoir l'intégration xref:services:etherpad.adoc[Etherpad] configurée.
 
 |Les participants peuvent créer des réunions
 |Facultatif
-|Permet aux participants de créer de nouvelles réunions. Learn more in xref:components/meetings/meetings.adoc#_participants_meetings[Participants meetings].
+|Permet aux participants de créer de nouvelles réunions. En savoir plus dans xref:components/meetings/meetings.adoc#_participants_meetings[Participants meetings].
 
 |Cartes activées
 |Facultatif
-|Whether you want to show a map with the meetings addresses in the meetings list and pages.
+|Si vous voulez afficher une carte avec les adresses des réunions dans la liste et les pages des réunions.
 |===
 
 .Ajouter un composant - Formulaire de réunions: Paramètres de l'étape
@@ -107,16 +107,16 @@ En savoir plus sur xref:components/meetings/registrations.adoc[Registrations].
 
 |Annonce
 |Facultatif
-|A general announcement visible in the general meetings list for this phase.
+|Une annonce générale visible dans la liste des assemblées générales pour cette phase.
 
 |Commentaires activés
 |Facultatif
-|Whether you want to have comments creation enabled in the meetings for this phase.
+|Si vous voulez que la création de commentaires soit activée dans les réunions pour cette phase.
 |===
 
 == Exemples
 
-Some examples of where this component is used:
+Quelques exemples d'utilisation de ce composant :
 
-* https://www.decidim.barcelona/processes/PAM2020/f/3734/[Program d'Actuació Municipal (PAM) 2020-2023]
-* https://meta.decidim.org/assemblies/coordination-committee/f/1037/meetings[The Decidim association coordination committee meetings]
+* https://www.decidim.barcelona/processes/PAM2020/f/3734/[Programme d'Actuació Municipal (PAM) 2020-2023]
+* https://meta.decidim.org/assemblies/coordination-commissione/f/1037/réunions[Les réunions du comité de coordination de l'association Decidim]
