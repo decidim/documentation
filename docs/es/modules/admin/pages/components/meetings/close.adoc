@@ -1,103 +1,100 @@
-= Close
+= Cerrar
 
-After a meeting has passed it's possible and recommened to close the meeting. This allows to adds the minutes, the notes
+== Understand the basics
+
+Once a meeting is over, the meeting author can close it. This allows to adds the meeting minutes, the notes
 that gives a summary on what was discussed during the meeting, the agreements reached, decisions made, etc.
 
-This allows to bring transparency to the meeting and also serves as a record of the different meetings.
+Esto permite aportar transparencia a la reunión y también sirve como un registro de las diferentes reuniones.
 
-It's also possible to add other kind of metadata to the meeting, such as what organizations has attended, how many attendees
-and contributions were, and what proposals were discussed.
+It's also possible to add other kind of metadata to the meeting, such as the organizations who attended, how many attendees
+and contributions there were, and what proposals were discussed.
 
-image:components/meetings/close/frontend.png[Close report in the frontend]
+image::components/meetings/close/frontend.png[Close report in the frontend]
 
-== Close meeting form
+== Configuración
 
-=== Official meetings
+=== Close a meeting
 
-To close a meeting:
+==== Reuniones oficiales
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Click on "Meetings"
-. Search the meeting that you want to close
-. Click on the "Close" button image:action_close.png[Close button]
-. Fill the form
+To close a meeting as an administrator, click the image:icons/action_close.png[Close button] "Close" icon.
 
-image:components/meetings/close/form_backend.png[Close meeting form in the backend]
+image::components/meetings/close/form_backend.png[Close meeting form in the backend]
 
-
-.Close meeting form (backend)
+.Cerrar formulario de reunión (backend)
+[cols="20h,10h,~"]
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Minutes
-|Required
-|Description of what happened in the meeting.
+|Minutos
+|Requerido
+|Descripción de lo que sucedió en la reunión.
 
-|List of organizations that attended
-|Optional
-|Metadata that gets shown in the sidebar of the meeting.
+|Lista de organizaciones que asistieron
+|Opcional
+|Metadatos que se muestran en la barra lateral de la reunión.
 
-|Number of attendees
-|Required
-|Metadata that gets shown in the sidebar of the meeting. Must be a number.
+|Número de asistentes
+|Requerido
+|Number of persons who attended the meeting. Debe ser un número.
 
-|Number of contributions
-|Optional
-|Metadata that gets shown in the sidebar of the meeting. Must be a number.
+|Número de contribuciones
+|Opcional
+|Metadatos que se muestran en la barra lateral de la reunión. Debe ser un número.
 
-|Proposals
-|Optional
-|Choose proposals from this space that were discussed in this meeting
+|Propuestas
+|Opcional
+|Choose proposals from this participatory space that were discussed or elaborated in this meeting.
 
-|Video URL
-|Optional
-|It's not used for anything. It will be removed in the future.
+|URL del vídeo
+|Opcional
+|Deprecated field.
 
-|Audio URL
-|Optional
-|It's not used for anything. It will be removed in the future.
+|URL de audio
+|Opcional
+|Deprecated field.
 
-|Is visible
-|Optional
-|Check if you want to publish the close report
+|Es visible
+|Opcional
+|Check if you want to publish the close report so it can be read by participants.
 |===
 
-=== Citizens meetings
+==== Participants meetings
 
-Just like participants can create meetings, they can also close a meeting. They have fewer fields to fill.
+Al igual que los participantes pueden crear reuniones, también pueden cerrar una reunión. They have fewer fields to fill than administrators.
 
-To close a a meeting:
+image::components/meetings/close/button_frontend.png[Close meeting button in the frontend]
 
-. Sign in as the participant that created the meeting
-. Go to the meeting page
-. Click on "Close". This will only be visible after the meeting has passed
-. Fill the form
+Once the meeting has finished, the author of the meeting can see a "Close meeting" button. By clicking on it, they are redirected to
+the closing form.
 
-image:components/meetings/close/form_frontend.png[Close meeting form in the frontend]
+image::components/meetings/close/form_frontend.png[Close meeting form in the frontend]
 
-
-.Close meeting form (frontend)
+.Cerrar formulario de reunión (frontend)
+[cols="20h,10h,~"]
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Minutes
-|Required
-|Description of what happened in the meeting.
+|Minutos
+|Requerido
+|Descripción de lo que sucedió en la reunión.
 
-|Number of attendees
-|Required
-|Metadata that gets shown in the sidebar of the meeting. Must be a number.
+|Número de asistentes
+|Requerido
+|Number of persons who attended the meeting. Debe ser un número.
 
-|Proposals
-|Optional
-|Choose proposals from this space that were discussed in this meeting
+|Propuestas
+|Opcional
+|Choose proposals from this participatory space that were discussed or elaborated in this meeting.
 |===
 
-== Proposals
+=== Related proposals
 
-If you relate a proposal to a meeting, the meeting also will be shown in the proposal.
+If you link a proposal to a meeting when closing it, the meeting also appears in the proposal page.
 
-image:components/meetings/close/related_proposal.png[Related meeting in a proposal]
+image::components/meetings/close/related_meeting.png[Related meeting in a proposal]
+
+This allows participants to navigate quickly in a proposal journey.
+
+image::components/meetings/close/related_proposal.png[Related proposal in a meeting]
