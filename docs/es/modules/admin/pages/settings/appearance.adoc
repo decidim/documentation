@@ -1,0 +1,171 @@
+= Apariencia
+
+En esta página puede configurar la apariencia de su instancia Decidim.
+
+NOTE: Please mind that this would be incompatible with some of the changes that your implementers could make in your general installation.
+For instance if there were changes in the xref:customize:styles.adoc[Styles] some parameters couldn't be applied as expected.
+
+== Edit homepage appearance
+
+This section allows to provide a general description about the instance, and to configure a call to action button that can be
+shown to participants on the homepage to encourage them to go to a specific process, like a proposal component where they can participate.
+
+image::settings/admin_appearance_homepage_appearance.png[Decidim Admin Appearance edit homepage appearance toggle]
+
+.Edit Homepage appearance toggle form
+[cols="20h,10h,~,~"]
+|===
+|Campo |Tipo |Descripción |Visibility
+
+|Descripción
+|Opcional
+|The description of this instance, used for meta tags for Google and Twitter embeds.
+|Visible in the footer and in the "Sub hero banner" content block in homepage if this block is enabled.
+
+|Call To Action button path
+|Opcional
+|Path to the place on the platform when you want to quickly redirect participants.
+|Visible in the "Hero image and CTA" content block in homepage if this block is enabled.
+
+|Texto del botón de llamada a acción
+|Opcional
+|Text displayed on the CTA button.
+|Visible in the "Hero image and CTA" content block in homepage if this block is enabled.
+|===
+
+NOTE: To understand how to enable the different homepage blocks, go to the xref:admin:settings/homepage.adoc[homepage] article.
+
+== Banner de contenido resaltado
+
+This section allows to enable and give a description and CTA button to a banner, for example to highlight a specific space
+on your instance, to encourage users to create an account or to register to a meeting. You can make it evolve depending on the
+actuality of your instance, and deactivate it when it's not needed.
+
+NOTE: To appear on the homepage, the "Highlighted content banner" content block needs to be enabled on the xref:admin:settings/homepage.adoc[homepage].
+
+image::settings/admin_appearance_highlighted_banner.png[Decidim Admin Appearance edit Highlighted content banner toggle]
+
+.Edit Highlighted content banner toggle form
+[cols="20h,10h,~"]
+|===
+|Campo |Tipo |Descripción
+
+|Show the highlighted content banner
+|Casilla
+|When checked, the highlighted content banner appears on the homepage if the "Highlighted content banner" content block is also enabled.
+
+|Título
+|Requerido
+|The title of the banner.
+
+|Breve descripción
+|Requerido
+|The description for the banner.
+
+|Action button title
+|Requerido
+|The text displayed in the banner CTA.
+
+|Action button subtitle
+|Opcional
+|An optional subtitle displayed in your CTA.
+
+|Action button URL
+|Requerido
+|The URL where the CTA button redirects.
+
+|Imagen
+|Opcional
+|The background image for the banner.
+|===
+
+== Edit omnipresent banner
+
+This section allows to enable a banner at the top of your instance, above the headers, visible at any time from every page.
+It can be useful to display very important information that all participants need to see, like announcing a maintenance date,
+availability of a process results, an important notice, etc.
+
+NOTE: This banner is configured on this page only, and doesn't need to be enabled in the homepage section.
+
+image::settings/admin_appearance_omnipresent_banner.png[Decidim Admin Appearance edit omnipresent banner toggle]
+
+.Edit Highlighted content banner toggle form
+[cols="20h,10h,~"]
+|===
+|Campo |Tipo |Descripción
+
+|Show omnipresent banner
+|Casilla
+|When checked, the omnipresent banner appears at the top of each page of the platform, above the headers.
+
+|Título
+|Requerido
+|The title of the banner.
+
+|Breve descripción
+|Requerido
+|The description for the banner.
+
+|URL
+|Requerido
+|The URL where the banner redirects.
+|===
+
+image::settings/appearance_omnipresent_banner.png[Decidim Appearance omnipresent banner frontend]
+
+== Edit layout appearance
+
+This section allows to download logos and icons, to be displayed in the header and footer, notification emails, newsletters, etc.
+
+image::settings/admin_appearance_layout.png[Decidim Admin layout appearance toggle]
+
+.Edit layout appearance toggle
+[cols="20h,10h,~"]
+|===
+|Campo |Tipo |Descripción
+
+|Icono
+|Download
+|Displayed as a "favicon" in the browser tabs of the instance.
+
+|Logo
+|Download
+|Displayed in the header of the instance, and the header of the newsletter and notification emails.
+
+|Pie oficial del logotipo
+|Download
+|Displayed in the footer of the instance, and redirects to the official organization URL.
+
+|URL oficial de la organización
+|Opcional
+|The URL where the official logo footer redirects.
+|===
+
+image::settings/appearance_layout_footer_logo.png[Decidim Appearance official footer logo]
+
+== Organization colors
+
+This section allows to choose colors for the organization.
+
+NOTE: Be aware of potential accessibility issues, for instance with people that doesn't have a good contrast notion.
+You can check the contrast of your choosing with WebAIM Contrast Checker or other similar tools.
+
+image::settings/admin_appearance_colors.png[Decidim Admin layout appearance toggle]
+
+You can configure:
+
+* Primary color: Used for global menu background, components menu backgrounds, etc.
+* Secondary color: Used for titles links, primary buttons, header font color, etc.
+* Tertiary color: Used for titles underlines, card border color, etc.
+
+In the following screenshot, the three different colors are displayed.
+
+image::settings/appearance_colors.png[Decidim layout appearance colors example]
+
+== Header snippets
+
+NOTE: You might not see this field. For more information on how to enable it, see the xref:customize:styles.adoc[Styles] documentation.
+
+This field allows to add code to the HTML head. The most common use is to integrate third-party services that require
+some extra JavaScript or CSS. También, puede usarlo para añadir meta-etiquetas extra al HTML.
+Note that this is only rendered in public pages, not in the administration.
