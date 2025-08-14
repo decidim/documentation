@@ -3,53 +3,53 @@
 Administrators are the persons managing the organization, creating the processes, managing the platform as a whole
 They can be of two types:
 
-* Administrators: have access to all the platform configuration.
-* Participant managers: can only manage participants xref:admin:participants/impersonations.adoc[impersonations].
+* Administrateurs : ont accès à toute la configuration de la plate-forme.
+* Gestionnaires de participants : seuls les participants xref:admin:participants/impersonations.adoc[impersonations] peuvent être gérés.
 
-image:participants/admins.png[Admins list]
+image:participants/admins.png[Liste des admins]
 
-== Invite an administrator
+== Inviter un administrateur
 
-To invite an administrator, click the "New admin" button at the top right of the page.
+Pour inviter un administrateur, cliquez sur le bouton "Nouvel administrateur" en haut à droite de la page.
 Vous pouvez inviter un participant déjà inscrit ou non enregistré.
 
-image:participants/admins_invite.png[Invite participant as administrator form]
+image:participants/admins_invite.png[Formulaire d'invitation d'un participant]
 
-.New administrator form
+.Formulaire d'administrateur
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Nom
 |Obligatoire
-|Name of the administrator. If they already have an account, it changes automatically for their username.
+|Nom de l'administrateur. S'ils ont déjà un compte, il change automatiquement pour leur nom d'utilisateur.
 
 |Courriel
 |Obligatoire
-|Email of the participant to invite. If they don't have an account related to this email, they should receive an invitation
-email to create an account. Otherwise, they won't be notified.
+|Courriel du participant à inviter. S'ils n'ont pas de compte lié à cet e-mail, ils devraient recevoir un e-mail d'invitation
+pour créer un compte. Sinon, ils ne seront pas notifiés.
 
 |Rôle
 |Obligatoire
-|Administrator or Participant manager
+|Administrateur ou Responsable Participant
 |===
 
-If an administrator doesn't already have an account, but didn't register, you can also Resend the invitation.
+Si un administrateur n'a pas encore de compte, mais n'est pas enregistré, vous pouvez également renvoyer l'invitation.
 
-== Manage administrators
+== Gérer les administrateurs
 
-You can find all the administrators on the administrators list in the administration panel, with:
+Vous pouvez trouver tous les administrateurs dans la liste des administrateurs dans le panneau d'administration, avec:
 
-* *Role*: type of administrator rights, can only be Administrator or Participant manager.
-* *Name*: name of the participant.
-* *Email*: email of the participant.
-* *Invitation sent at*: date and time of the email invitation.
-* *Invitation accepted at*: when they accepted the email invitation.
-* *Last log in date*: date of the administrator last connection.
-* *Creation date*: date of the participant account creation.
+* *Rôle* : le type de droits d'administrateur, ne peut être que Administrateur ou Gestionnaire de Participants.
+* *Nom*: nom du participant.
+* *E-mail*: email du participant.
+* *Invitation envoyée à* : date et heure de l'invitation par courriel.
+* *Invitation acceptée à* : quand ils ont accepté l'invitation par courriel.
+* *Date de dernière connexion*: date de la dernière connexion de l'administrateur.
+* *Date de création* : date de création du compte participant.
 
-You can filter and sort this list by clicking the "Filter" button and the columns headers.
-You can also search for administrators by email, name, or nickname in the search bar.
+Vous pouvez filtrer et trier cette liste en cliquant sur le bouton "Filtre" et sur les en-têtes des colonnes.
+Vous pouvez également rechercher des administrateurs par e-mail, nom ou surnom dans la barre de recherche.
 
 === Actions
 
@@ -58,19 +58,19 @@ You can also search for administrators by email, name, or nickname in the search
 |===
 |Icône |Nom |Définition |Condition
 
-|image:icons/action_resend.png[Resend invitation icon]
+|image:icons/action_resend.png[Renvoyer l'icône d'invitation]
 |Renvoyer l'invitation
-|To resend an invitation email to the participant.
-|Available when the participant didn't accept the invitation.
+|Pour renvoyer un e-mail d'invitation au participant.
+|Disponible lorsque le participant n'a pas accepté l'invitation.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Supprimer l'icône]
 |Supprimez
-|To revoke the participant's administration access rights.
-|Available for all administrators, except for the first one.
+|Pour révoquer les droits d'accès d'administration du participant.
+|Disponible pour tous les administrateurs, sauf pour le premier.
 |===
 
-=== Revoke administrator permissions
+=== Révoquer les autorisations d'administrateur
 
-When an administrator doesn't need access anymore, you should revoke their rights by clicking the "Delete" button.
-You need to confirm the rights deletion to completely remove their rights.
-Revoking administrator permissions don't delete the participant account.
+Lorsqu'un administrateur n'a plus besoin d'accès, vous devriez révoquer ses droits en cliquant sur le bouton "Supprimer".
+Vous devez confirmer la suppression des droits pour supprimer complètement leurs droits.
+La révocation des autorisations d'administrateur ne supprime pas le compte de l'utilisateur.
