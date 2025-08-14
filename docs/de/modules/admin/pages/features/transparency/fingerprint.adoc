@@ -1,0 +1,36 @@
+= Fingerabdruck
+
+== Understand the basics
+
+Although the platform should show the xref:admin:features/transparency/versions.adoc[Versions] for almost all of the contents, it'd still be possible
+for a system administrator to manipulate the content by editing the database directly.
+
+Als Eindämmung dieses Risikos zeigt die Plattform einen Fingerabdruck für einige wichtige Bereiche, zum Beispiel ein Vorschlagsorgan und einen Titel.
+
+Its goal is to provide a way to give an informal "receipt" to a participant so they can detect tampering. Ein Fingerabdruck ist
+eine gehackte Darstellung des Inhalts. Es ist nützlich sicherzustellen, dass der Inhalt nicht manipuliert wurde, da eine einzelne Änderung
+zu einem völlig anderen Wert führen würde. It's calculated using a *SHA256 hashing algorithm*. Um es selbst mit
+zu replizieren, können Sie einen http://www.md5calc.com/sha256[MD5 Taschenrechner online] verwenden und die Quelldaten kopieren.
+
+== Konfiguration
+
+=== Fingerabdruck überprüfen
+
+. Go to the content for which you want to verify the fingerprint
+. Click in the "Check fingerprint" link at the bottom of the page
+. Copy the source field value
+. Go to a http://www.md5calc.com/sha256[MD5 calculator online] and copy-paste the source data
+. Check that the fingerprints are the same
+
+image:features/fingerprint/content.png[Check fingerprint link in page bottom]
+
+image::features/fingerprint/modal.png[Check fingerprint modal]
+
+image:features/fingerprint/md5calc.png[MD5calc.com screenshot]
+
+It's also possible to verify the fingerprint with other tools, such as the sha256sum command line tool.
+
+[source,bash]
+----
+echo -n '{"body":{"en":"This proposal suggests creating a green corridor that connects the north and south districts of Chakar via a bicycle and pedestrian-only route. The corridor would pass through the city center and industrial areas, providing a safe, dedicated path for non-motorized transport, with shade trees, rest spots, and solar-powered lighting."},"title":{"en":"Green Corridor for Cyclists and Pedestrians"}}' | sha256sum
+----
