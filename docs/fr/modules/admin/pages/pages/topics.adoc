@@ -1,0 +1,45 @@
+= Sujets
+
+== Understand the basics
+
+Dans cette section, vous pouvez configurer des Rubriques, pour organiser les pages statiques et fournir plus de clarté aux participants.
+
+== Configuration
+
+=== Gérer les sujets
+
+Pour accéder à la liste des sujets, cliquez sur l'onglet Sujets en haut du panneau.
+Ici, vous pouvez éditer, supprimer et créer des discussions pour vos pages statiques.
+
+image::pages/pages_backend_list_topics.png[Backend: list topics of pages]
+
+=== Créer un nouveau sujet
+
+Pour créer un nouveau sujet, cliquez sur le bouton "Créer un sujet".
+
+image::pages/pages_backend_topic_form.png[Backend: new topic form]
+
+.Nouveau formulaire de discussion
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Titre de ce sujet. Par exemple : "Aide"
+
+|Description
+|Facultatif
+|À propos de ce sujet.
+
+|Rang d'affichage
+|Facultatif
+|L'ordre du sujet en relation avec les autres sujets. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux sujets, "Topic a" avec le poids "10" et "Topic b" avec le poids "0" puis "Topic b" est d'abord lors de la commande.
+
+|Afficher dans le pied de page
+|Facultatif
+|Si vous voulez afficher ce sujet dans la section "Aide" du pied de page général (accessible dans chaque page).
+|===
+
+image::pages/pages_frontend_footer.png[Frontend: example of a page in the footer]
