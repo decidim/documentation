@@ -1,40 +1,40 @@
-= Participants impersonations
+= Identités des participants
 
-Sometimes, people don't have the time to create an account, or don't have the knowledge or ability to use technological tools.
-Impersonations allow administrators and participant managers to enable those persons to participate anyway.
+Parfois, les gens n'ont pas le temps de créer un compte ou n'ont pas la connaissance ou la capacité d'utiliser des outils technologiques.
+Les usurpations permettent aux administrateurs et aux gestionnaires de participants de participer de toute façon.
 
-NOTE: In the code and the User Interface, *Impersonation* and *Managed Participants* are the same thing.
+NOTE: Dans le code et l'interface utilisateur, l'*personnification* et les *Participants gérés* sont les mêmes choses.
 
-== Enable / disable impersonations
+== Activer / désactiver les identifications
 
-Impersonations are only available when at least one authorization is enabled for the organization.
+Les usurpations d'identité ne sont disponibles que si au moins une autorisation est activée pour l'organisation.
 Indeed, they allow the system to search through a Verification system for an already existing participant, and to create
 a participant without the need for an email address.
 
-To enable an authorization, you need to have access to the xref:configure:system.adoc[System panel] or ask your instance implementer.
+Pour activer une autorisation, vous devez avoir accès à xref:configure:system.adoc[System panel] ou demander à votre implémentateur d'instance.
 
 image::participants/participants_impersonations_backend_list_no_auth.png[Administrators Impersonations panel with no authorizations]
 
-The different authorizations give you different possibilities:
+Les différentes autorisations vous donnent différentes possibilités :
 
-* View impersonation logs only: When Identity documents, Code by postal letter, and/or Organization's census are enabled
-* Impersonate existing and new users: Direct verification enabled, like example authorization or other custom direct authorizations.
+* Afficher uniquement les journaux d'identité : lorsque les documents d'identité, le code par lettre postale, et/ou le recensement de l'organisation sont activés
+* Identifier les utilisateurs existants et les nouveaux utilisateurs : la vérification directe est activée, comme l’autorisation d’exemple ou d’autres autorisations directes personnalisées.
 
-NOTE: You can learn more regarding how to program your form authorization in
-https://github.com/decidim/decidim/blob/develop/decidim-verifications/README.md[Decidim-verification README].
+NOTE: Vous pouvez en apprendre plus sur la façon de programmer votre autorisation de formulaire dans
+https://github.com/decidim/decidim/blob/develop/decidim-verifications/README.md[README] Decidim-verification README].
 
 image::participants/participants_impersonations_backend_list_logs.png[Administrators Impersonations panel with view log]
 
 image::participants/participants_impersonations_backend_list_button.png[Administrators Impersonations panel with impersonation action]
 
-== Manage impersonations
+== Gérer les empreintes digitales
 
-You can find all the participants of the platform, with:
+Vous pouvez trouver tous les participants de la plateforme, avec:
 
-* *Name*: name of the participant.
-* *Status*: if the participant is impersonated/managed or not.
+* *Nom*: nom du participant.
+* *Statut* : si le participant est impersonné/géré ou non.
 
-You can filter this list by clicking the "Filter" button and search for participants by their name.
+Vous pouvez filtrer cette liste en cliquant sur le bouton "Filtre" et rechercher les participants par leur nom.
 
 === Actions
 
@@ -43,36 +43,36 @@ You can filter this list by clicking the "Filter" button and search for particip
 |===
 |Icône |Nom |Définition |Condition
 
-|image:icons/action_impersonate.png[Impersonate icon]
-|Impersonate
-|To impersonate the participant.
-|Available all the time.
+|image:icons/action_impersonate.png[Icone d'identité]
+|Représenter
+|Se faire passer pour le participant.
+|Disponible en permanence.
 
-|image:icons/action_clock.png[View logs icon]
-|View logs
-|To view the impersonation history of the participant.
-|Available all the time.
+|image:icons/action_clock.png[Afficher l'icône des logs]
+|Consultez les journaux d'activité
+|Voir l'historique de l'identité du participant.
+|Disponible en permanence.
 
-|image:icons/action_promote.png[Promote icon]
-|Promote
-|To view the impersonation history of the participant.
-|Available only for managed users.
+|image:icons/action_promote.png[Promouvoir l'icône]
+|Transformer
+|Voir l'historique de l'identité du participant.
+|Disponible uniquement pour les utilisateurs gérés.
 |===
 
-=== Impersonate a participant
+=== Identifier un participant
 
-Click the "Manage new participant" button. You are then able to enter the personal data to check against the verification:
+Cliquez sur le bouton "Gérer les nouveaux participants". Vous pouvez ensuite saisir les données personnelles pour vérifier la vérification :
 
 image::participants/participants_impersonations_form.png[Administrators Impersonations form]
 
-After this data is checked by the system, it opens a session for the participant for 30 minutes.
-A banner at the top of the page reminds the administrator that they are impersonating the participant, and the remaining time.
+Une fois ces données vérifiées par le système, il ouvre une session pour le participant pendant 30 minutes.
+Une bannière en haut de la page rappelle à l'administrateur qu'il est en train d'usurper l'identité du participant et le temps restant.
 
 image::participants/participants_impersonations_user.png[Impersonated user session]
 
-=== Promote a managed participant
+=== Promouvoir un participant géré
 
-Administrators can promote managed participants, to invite them to the create an account on the platform.
-Click the "Promote" icon to be able to add an email address to the participant and invite them by email.
+Les administrateurs peuvent promouvoir les participants gérés, les inviter à créer un compte sur la plateforme.
+Cliquez sur l'icône "Promouvoir" pour pouvoir ajouter une adresse e-mail au participant et l'inviter par courriel.
 
 image::participants/participants_impersonations_promotion.png[Administrators promotion Impersonations]
