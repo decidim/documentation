@@ -1,0 +1,46 @@
+= Types d'assemblages
+
+== Understand the basics
+
+Dans certains cas, il est nécessaire d'organiser des assemblages par plus que des enfants et des sous-assemblées.
+C'est là que les types d'assemblage peuvent être utiles, et ajouter une couche de catégorisation.
+Les participants sont alors en mesure de filtrer les assemblages par les types d'assemblage que vous avez créés.
+
+NOTE: Les types d'assemblage fonctionnent de la même façon que xref:admin:spaces/processes/types.adoc[Types de processus].
+
+== Configuration
+
+=== Gérer les types d'assemblages
+
+Pour accéder à la liste des types d'assemblage, cliquez sur le bouton "Gérer" en haut à droite de la page, puis cliquez sur le lien de menu "Type d'assemblage".
+
+image::spaces/assemblies/assemblies_types_list.png[Backend assemblies types menu item]
+
+=== Créer un type d'assemblage
+
+Cliquez sur le bouton "Nouveau type d'assemblage" en haut à droite de la page.
+
+image::spaces/assemblies/assemblies_types_form.png[Process type creation form]
+
+.Formulaire de nouveau type d'assemblage : Informations générales
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Titre du type d'assemblée.
+|===
+
+=== Ajouter un type d'assembly à une assembly
+
+Pour relier les assemblages aux types d'assemblage, dans la page d'édition d'une assemblée, sélectionnez le type d'assemblage sous la section intitulée Autre.
+
+image:espaces/assemblies/assemblies_types_edit_process.png[Choisir un type d'assemblage lors de l'édition d'une assemblée]
+
+=== Filtrer par types d'assemblage
+
+S'il y a au moins un type d'assemblage défini et lié à une assemblée, un filtre est affiché à gauche de la liste des assemblages
+dans l'interface participante, permettant le filtrage des assemblées.
+
+image::spaces/assemblies/assemblies_types_filter.png[Assemblies types filter in the assemblies index]
