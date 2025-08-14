@@ -1,0 +1,43 @@
+= Abonnements
+
+== Understand the basics
+
+Les participants peuvent suivre le contenu de Decidim, tels que des espaces participatifs, des propositions, une réunion spécifique, d'autres participants, des groupes d'utilisateurs, etc.
+Suivre quelque chose ou quelqu'un signifie que lorsqu'il y a des actualités liées à ce contenu, le participant reçoit xref:features/participant_actions/notifications.adoc[notifications].
+
+Les notifications sont accessibles dans la page de notification, mais peuvent également être envoyées par courriel.
+Vous pouvez contrôler ces notifications dans les xref:features/participant_actions/my_account.adoc#_notifications_settings[paramètres de votre compte].
+
+L'activité que vous suivez est visible dans votre activité xref:features/participant_actions/my_public_profile.adoc[profile activity].
+
+== Configuration
+
+=== Suivre le contenu
+
+NOTE: Par défaut, les administrateurs suivent tous les nouveaux espaces créés sur la plate-forme.
+
+Pour suivre un contenu:
+
+. Naviguez vers ce que vous voulez suivre.
+. Cliquez sur le bouton « Suivre ».
+. Voir que le bouton « Suivre » disparaît et que le bouton « Arrêter de suivre » apparaisse.
+
+image::features/follows/button_follow.png[Follow button]
+
+=== Ne plus suivre le contenu
+
+Pour ne plus suivre un contenu:
+
+. Naviguez vers ce que vous voulez ne plus suivre.
+. Cliquez sur le bouton "Arrêter de suivre".
+. Vous verrez disparaître le bouton « Arrêter de suivre » et le bouton « Suivre ».
+
+image::features/follows/button_stop_following.png[Stop following button]
+
+=== Suivre un participant
+
+Un participant peut également suivre les participants. Ceci est public et visible dans le profil xref:features/participant_actions/my_public_profile.adoc[suit la section].
+
+Pour suivre un participant, passez le curseur sur son avatar ou cliquez sur le bouton « Suivre » dans sa page de profil public.
+
+image::features/follows/user_tooltip_follow.png[Follow user]
