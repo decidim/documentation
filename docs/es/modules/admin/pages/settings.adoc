@@ -1,0 +1,43 @@
+= Ajustes
+
+== Understand the basics
+
+The settings tab allows you:
+
+* To start configuring your instance
+* To enable general features across the instance
+* To update the appearance of the homepage and the general look and feel of your instance
+* To create and manage the scopes and areas
+* To add user help information
+* To configure the allowed external domains
+
+== Configuración
+
+To access the Settings configuration panel, go in the administration panel and click the "Settings" item in the administration
+navigation bar.
+
+image::settings/settings_menu.png[Settings: Access settings panel]
+
+In the secondary navigation panel, you can see all the settings panel available:
+
+* xref:admin:settings/configuration.adoc[Configuration]: to configure general settings.
+* xref:admin:settings/appearance.adoc[Appearance]: to configure the instance look and feel.
+* xref:admin:settings/homepage.adoc[Homepage]: to configure what to display on the homepage.
+* xref:admin:settings/scopes.adoc[Scopes]: to manage scopes, a categorization feature.
+* xref:admin:settings/areas.adoc[Areas]: to manage areas, another categorization feature.
+* xref:admin:settings/help_sections.adoc[Help sections]: to create and edit help texts for participants.
+* xref:admin:settings/allowed_external_domains.adoc[Allowed external domains]: to manage authorized external domains.
+
+image::settings/settings_sidebar_menu.png[Settings sidebar menu]
+
+== Ejemplos
+
+Thanks to this section, Decidim instances can have very different look and feel, with different colours, features, homepages, etc.
+
+image::settings/example_homepage_beta.png[Homepage screenshot of beta.try.decidim.org]
+
+image::settings/example_homepage_borgerkraft.png[Homepage screenshot of borgerkraft.no]
+
+image::settings/example_homepage_metadecidim.png[Homepage screenshot of meta.decidim.org]
+
+image::settings/example_homepage_barcelona.png[Homepage screenshot of decidim.barcelona]
