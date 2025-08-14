@@ -1,0 +1,234 @@
+= Benachrichtigungen
+
+== Understand the basics
+
+Notifications allow participants to keep up to date with the platform's latest news,  spaces, content, participants they follow, etc.
+Most actions on the platform generate notifications.
+
+Participants can manage their notification preferences in their xref:admin:features/participant_actions/my_account.adoc[account].
+
+=== How to find it?
+
+As a signed in participant, you can access your notifications from two places:
+
+. Click your avatar in the header, and then click the "Notifications" menu item
+. Click the "Notifications" link in the footer, in the "My account" section
+
+image::features/notifications/notifications_dropdown.png[Frontend user menu dropdown]
+
+If there are notifications, the participant sees a small badge next to their avatar, and in the dropdown menu.
+
+image:features/notifications/notifications.png[Beispiel der Benachrichtigungsseite wenn Benachrichtigungen vorhanden sind]
+
+When there are no notifications, or the participant marked all the notifications as read, a message is displayed indicating that there are no new notifications.
+
+image:features/notifications/no_notifications_yet.png[Beispiel der Benachrichtigungsseite, wenn keine Benachrichtigungen vorhanden sind]
+
+=== Benachrichtigungsliste
+
+Unten ist eine erschöpfende Liste von Aktionen, die Benachrichtigungen an Teilnehmer auslösen. Die Teilnehmer sind in drei Kategorien unterteilt: betroffene Benutzer, Follower und Administratoren.
+
+NOTE: Betroffene Benutzer sind abhängig vom Benachrichtigungskontext. For instance, it could be the author of moderated content, a user earns a badge, a user has been mentioned, etc, depending on the user's interaction with the spaces and other users on the platform.
+
+[cols="7,2,1,1,1"]
+|===
+|Aktion |Feature |Betroffener Benutzer |Follower |Administrator
+
+|Ein neuer Anhang wurde erstellt |Administrator |❌ |✅ |❌
+
+|An administrator requested an export |Administrator |❌ |❌ |✅
+
+|Eine Komponente wurde in einem partizipatorischen Raum veröffentlicht |Administrator |❌ |✅ |❌
+
+|A participant has tried to verify themselves with the data of another participant |Überprüfungen |❌ |❌ |✅
+
+|Ein Administrator moderierte eine Ressource, weil sie gemeldet wurde |Moderation |✅ |❌ |❌
+
+|Eine Ressource wurde gemeldet |Moderation |❌ |❌ |✅
+
+|A user confirms the registration (if welcome notifications are enabled) |Benutzer |✅ |❌ |❌
+
+|Ein Benutzer verdient ein Abzeichen (wenn Abzeichen aktiviert sind) |Benutzer |✅ |❌ |❌
+
+|Ein Benutzer hat ein neues Abzeichen Level erreicht (wenn Abzeichen aktiviert sind) |Benutzer |✅ |❌ |❌
+
+|Ein Benutzer wurde offiziell |Benutzer |❌ |❌ |✅
+
+|A user requests their data export |Benutzer |✅ |❌ |❌
+
+|Ein Benutzer, dem ich folge hat eine Ressource bestätigt |Benutzer |❌ |✅ |❌
+
+|Ein öffentliches Profil wurde aktualisiert |Benutzer |❌ |✅ |❌
+
+|Eine neue Benutzergruppe wurde erstellt |Benutzergruppenfootnote:Benutzergruppe[Wenn Benutzergruppen aktiviert sind] |❌ |❌ |✅
+
+|Eine Benutzergruppe hat ihr Profil aktualisiert |Benutzergruppenfootnote:Benutzergruppe[] |❌ |❌ |✅
+
+|Ein Benutzer wurde eingeladen, einer Benutzergruppe beizutreten |Benutzergruppenfootnote:Benutzergruppe[] |✅ |❌ |❌
+
+|A user has been promoted to group administrator |Benutzergruppenfootnote:Benutzergruppe[] |✅ |❌ |❌
+
+|Ein Benutzer beantragt, der Benutzergruppe beizutreten |Benutzergruppenfootnote:Benutzergruppe[] |✅ |❌ |❌
+
+|Eine Benutzeranfrage wurde angenommen, um der Benutzergruppe beizutreten |Benutzergruppenfootnote:Benutzergruppe[] |✅ |❌ |❌
+
+|Eine Benutzeranfrage zur Benutzergruppe wurde abgelehnt |Benutzergruppenfootnote:Benutzergruppe[] |✅ |❌ |❌
+
+|The group administrator has been demoted |Benutzergruppenfootnote:Benutzergruppe[] |✅ |❌ |❌
+
+|Der Benutzer wurde aus der Gruppe entfernt |Benutzergruppenfootnote:Benutzergruppe[] |✅ |❌ |❌
+
+|An administrator of the assembly has added you as one of its members |Schwärmerei |✅ |❌ |❌
+
+|You have been assigned a role for an assembly |Schwärmerei |✅ |❌ |❌
+
+|You have been assigned a role for a participatory process |Prozesse |✅ |❌ |❌
+
+|Phase dates have been updated |Prozesse |❌ |✅ |❌
+
+|Eine neue Phase wurde aktiviert |Prozesse |❌ |✅ |❌
+
+|You have been assigned a role for a conference |Konferenzen |✅ |❌ |❌
+
+|The registration to a conference has been confirmed |Konferenzen |✅ |❌ |❌
+
+|The registration for a conference is open |Konferenzen |❌ |✅ |❌
+
+|The occupied conference slots are over X% |Konferenzen |❌ |❌ |✅
+
+|A conference is taking place in 2 days |Konferenzen |❌ |✅ |❌
+
+|A conference has been updated |Konferenzen |❌ |✅ |❌
+
+|An election is now active for a participatory space |Wahlen |❌ |✅ |❌
+
+|You are added as a trustee for an election |Wahlen |✅ |❌ |❌
+
+|An administrator has added you as trustee |Wahlen |✅ |❌ |❌
+
+|Deine Stimme wurde angenommen |Wahlen |✅ |❌ |❌
+
+|Ihnen wurde eine Rolle der Umfragestelle zugewiesen |Wahlen |✅ |❌ |❌
+
+|Hier ist Ihr Zugangscode |Wahlen |✅ |❌ |❌
+
+|Ein Benutzer, dem ich folge hat eine Initiative erstellt |Initiativen |❌ |✅ |❌
+
+|Meine Initiative wurde erstellt |Initiativen |✅ |❌ |❌
+
+|Ein Benutzer, dem ich folge hat eine Initiative bestätigt |Initiativen |❌ |✅ |❌
+
+|Ein Benutzer hat seine Initiative zur technischen Validierung gesendet |Initiativen |❌ |❌ |✅
+
+|An initiative has changed its status |Initiativen |✅ |✅ |❌
+
+|The signature's end date for an initiative have been extended |Initiativen |❌ |✅ |❌
+
+|The request to be part of the promoter committee for an initiative has been accepted |Initiativen |✅ |❌ |❌
+
+|The request to be part of the promoter committee for an initiative has been rejected |Initiativen |✅ |❌ |❌
+
+|Ein Benutzer möchte Ihrer Initiative beitreten |Initiativen |✅ |❌ |❌
+
+|An initiative has reached the signatures threshold |Initiativen |❌ |❌ |✅
+
+|Ihre Initiative hat die X% der Unterschriften erreicht |Initiativen |❌ |✅ |❌
+
+|Die Initiative hat die X% der Unterschriften erreicht |Initiativen |✅ |❌ |❌
+
+|A proposal has been included in a result |Verantwortlichkeit |❌ |✅ |❌
+
+|Result progress has been updated |Verantwortlichkeit |❌ |✅ |❌
+
+|Ein Beitrag wurde veröffentlicht |Blogs |❌ |✅ |❌
+
+|Das Budget ist jetzt aktiv |Budget |❌ |✅ |❌
+
+|Eine Ressource hat einen Kommentar |Kommentare |❌ |✅ |❌
+
+|Eine Benutzergruppe hat einen Kommentar zu einer Ressource hinterlassen |Kommentare |❌ |✅ |❌
+
+|Ein Benutzer hat einen Kommentar zu einer Ressource hinterlassen |Kommentare |❌ |✅ |❌
+
+|Ein Benutzer hat Ihren Kommentar beantwortet |Kommentare |✅ |❌ |❌
+
+|Eine Gruppe, der Sie angehören, wurde erwähnt |Kommentare |✅ |❌ |❌
+
+|Sie wurden erwähnt |Kommentare |✅ |❌ |❌
+
+|Your comment in has been up-voted |Kommentare |✅ |❌ |❌
+
+|Your comment in has been down-voted |Kommentare |✅ |❌ |❌
+
+|Eine Debatte wurde erstellt |Debatten |❌ |✅ |❌
+
+|Die Erstellung von Debatten ist für Teilnehmer aktiviert |Debatten |❌ |✅ |❌
+
+|Debate-Erstellung ist nicht mehr aktiv |Debatten |❌ |✅ |❌
+
+|A debate was closed |Debatten |✅ |✅ |❌
+
+|Ein Meeting wurde erstellt |Meetings |❌ |✅ |❌
+
+|Ein Meeting wurde geschlossen |Meetings |✅ |✅ |❌
+
+|Ein Meeting wurde aktualisiert |Meetings |❌ |✅ |❌
+
+|Die Anmeldung Ihres Meetings wurde bestätigt |Meetings |✅ |❌ |❌
+
+|The allocated slots for a meeting are over X% |Meetings |❌ |❌ |✅
+
+|A meeting has enabled registrations |Meetings |❌ |✅ |❌
+
+|The registration code for a meeting has been validated. |Meetings |✅ |❌ |❌
+
+|A meeting will start in less than 48 h |Meetings |❌ |✅ |❌
+
+|Ein neuer Vorschlag wurde veröffentlicht |Vorschläge |❌ |✅ |❌
+
+|Vorschlagserstellung ist geöffnet |Vorschläge |❌ |✅ |❌
+
+|Vorschlagsunterstützung ist offen |Vorschläge |❌ |✅ |❌
+
+|Vorschläge Unterstützungen sind offen |Vorschläge |❌ |✅ |❌
+
+|Someone has left a note on a proposal |Vorschläge |❌ |❌ |✅
+
+|Ein Vorschlag wird gerade ausgewertet |Vorschläge |✅ |✅ |❌
+
+|Ein Vorschlag wurde abgelehnt |Vorschläge |✅ |✅ |❌
+
+|Ein Vorschlag wurde angenommen |Vorschläge |✅ |✅ |❌
+
+|An administrator has updated the scope of your proposal |Vorschläge |✅ |❌ |❌
+
+|An administrator has updated the category of your proposal |Vorschläge |✅ |❌ |❌
+
+|Ein Vorschlag wurde erwähnt |Vorschläge |✅ |❌ |❌
+
+|Ein Benutzer hat Zugriff als Mitwirkender angefordert |Vorschlagsentwürfe |✅ |❌ |❌
+
+|Du wurdest als Mitwirkender akzeptiert |Vorschlagsentwürfe |✅ |❌ |❌
+
+|Du wurdest als Beitragender abgelehnt |Vorschlagsentwürfe |✅ |❌ |❌
+
+|Ein Benutzer wurde als Mitwirkender abgelehnt |Vorschlagsentwürfe |✅ |❌ |❌
+
+|Ein Benutzer wurde als Mitwirkender akzeptiert |Vorschlagsentwürfe |✅ |❌ |❌
+
+|Ein Benutzer hat den gemeinschaftlichen Entwurf zurückgezogen |Vorschlagsentwürfe |✅ |❌ |❌
+
+|Ein Änderungsantrag wurde abgelehnt |Änderungsantragsfußnotiz:Änderungen[wenn Änderungen aktiviert sind] |✅ |✅ |❌
+
+|Ein Änderungsantrag wurde angenommen |Änderungsanträge:Änderungen[] |✅ |✅ |❌
+
+|Eine Änderung wurde erstellt |Änderungsanträge:Änderungen[] |✅ |✅ |❌
+
+|Ein Änderungsantrag wurde beworben. |Änderungsanträge:Änderungen[] |✅ |✅ |❌
+
+|Eine Sortierung wurde erstellt |Sortierungen |❌ |✅ |❌
+
+|Eine Umfrage wurde geöffnet |Umfragen |❌ |✅ |❌
+
+|Eine Umfrage wurde geschlossen |Umfragen |❌ |✅ |❌
+|===
