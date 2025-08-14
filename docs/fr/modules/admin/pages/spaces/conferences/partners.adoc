@@ -1,0 +1,64 @@
+= Partenaires
+
+== Understand the basics
+
+Les partenaires sont les commanditaires ou les partisans d'une conférence.
+Si vous ajoutez des partenaires dans l'administration, alors ils sont listés sur la page d'accueil de la conférence.
+
+image:espaces/conferences/partners_frontend.png[frontal des conférences partenaires]
+
+== Configuration
+
+=== Gérer les partenaires
+
+Pour accéder à la configuration des partenaires, cliquez dans le panneau de navigation secondaire de l'élément "Partenaires".
+
+image::spaces/conferences/partners.png[Conferences partners]
+
+=== Actions
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Modifier l'icône]
+|Editer
+|Éditer ce lien.
+
+|image:icons/action_delete.png[Supprimer l'icône]
+|Supprimez
+|Supprimer ce lien.
+|===
+
+=== Créer un nouveau partenaire
+
+Pour créer un nouveau partenaire, cliquez sur le bouton "Nouveau partenaire" en haut à droite de la page.
+
+image::spaces/conferences/new_partner.png[Conferences partners form]
+
+.Formulaire de nouveau partenaire
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Le nom du partenaire.
+
+|Type de partenaire
+|Obligatoire
+|Choisissez l'une de ces options : le promoteur principal ou le collaborateur.
+
+|Rang d'affichage
+|Facultatif
+|Quelle commande elle a en relation avec les autres partenaires. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux partenaires, "Partenaire a" avec le poids "10" et "Partenaire b" avec le poids "0", alors "Partenaire b" est d'abord lors de la commande.
+
+|Lier
+|Facultatif
+|Lien vers le site du partenaire, la biographie, les médias sociaux, etc.
+
+|Logo
+|Obligatoire
+|Orientation pour l'image: De préférence une image de paysage qui n'a pas de texte. Le service récolte l'image. Taille maximale du fichier : 5 Mo
+|===
