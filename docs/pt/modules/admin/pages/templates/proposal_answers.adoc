@@ -1,0 +1,72 @@
+= Proposal answers templates
+
+In this section, you can create, edit, and delete proposal answers templates, that you can then use when answering proposals.
+
+== Create a proposal answers template
+
+NOTE: To be able to create a proposal answers template, you need to have created at least one
+xref:admin:components/proposals.adoc[proposals] component.
+
+To create a new proposal answers template, you need to click the "New template" button.
+
+image::templates/templates_proposal_answers_choice_component.png[Backend: Proposal component choice for template]
+
+Choose the participatory space and component for which you want to create proposal answers to see the template answer form.
+
+image::templates/templates_proposal_answers_backend_form.png[Backend: new proposal answer template form]
+
+.New proposal answer template form
+[cols="20h,10h,~"]
+|===
+|Campo |tipo |Descrição:
+
+|Nome:
+|Obrigatório
+|Title of this answer template. Choose a clear title, describing precisely what the answer is for.
+
+|Descrição:
+|Obrigatório
+|Content of the answer provided to the proposals for which you choose this template. You can use variables in your answer.
+
+|Proposal state
+|Obrigatório
+|By default, you can choose Evaluating, Accepted, or Rejected.
+|===
+
+== Administrar
+
+All the templates appear in the proposal answers templates list:
+
+* *Template*: name of the proposal answer template.
+* *Internal state*: state given to proposals when using this template.
+* *Add constraint*: proposal component where you can use this template.
+* *Created at*: date of creation.
+
+You can edit a template and its fields at any moment.
+
+=== Ações.
+
+.Ações.
+[cols="10h,20h,~"]
+|===
+|Ícone |Nome: |Definição
+
+|image:icons/action_edit.png[Edit template]
+|Alterar
+|To edit the proposal answer.
+
+|image:icons/action_duplicate.png[Duplicate template]
+|Duplicate
+|To duplicate the template.
+
+|image:icons/action_delete.png[Delete template]
+|excluir
+|To delete the template.
+|===
+
+=== Use the template
+
+To use the template, go to one of the proposal component for which you created a proposal answer template, and click an "Answer" icon.
+You can choose an answer template to fill the answer field.
+
+image::templates/templates_proposal_answers_choice.png[Backend: choose template when answering proposal]
