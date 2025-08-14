@@ -1,13 +1,13 @@
-= Participant actions
+= Actions des participants
 
 == Understand the basics
 
-This documentation section is about participants related features when they want to configure their account, display information on their profile,
-create user groups, delete their account, or understand how the notifications work.
+Cette section de documentation traite des fonctionnalités liées aux participants lorsqu'ils veulent configurer leur compte, afficher des informations sur leur profil,
+créer des groupes d'utilisateurs, supprimer leur compte ou comprendre comment fonctionnent les notifications.
 
-Here, you'll find:
+Ici, tu trouveras :
 
 . xref:admin:features/participant_actions/notifications.adoc[Notifications]
-. xref:admin:features/participant_actions/my_account.adoc[My account]
-. xref:admin:features/participant_actions/my_public_profile.adoc[My public profile]
-. xref:admin:features/participant_actions/group_profile.adoc[Group profiles]
+. xref:admin:features/participant_actions/my_account.adoc[Mon compte]
+. xref:admin:features/participant_actions/my_public_profile.adoc[Mon profil public]
+. xref:admin:features/participant_actions/group_profile.adoc[Profils du groupe]
