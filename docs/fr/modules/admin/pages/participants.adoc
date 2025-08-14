@@ -2,25 +2,25 @@
 
 == Understand the basics
 
-The participants tab allow you to make certain tasks with participants, among them:
+L'onglet participants vous permet de faire certaines tâches avec les participants, parmi eux:
 
-* To manage access rights to the platform administration
-* To contact participants
-* To manage participants access to specific spaces
-* To certify the identity of specific participants
-* To certify the authenticity of user organizations or collectives
+* Gérer les droits d'accès à l'administration de la plateforme
+* Pour contacter les participants
+* Gérer l'accès des participants à des espaces spécifiques
+* certifier l'identité des participants spécifiques
+* certifier l'authenticité des organisations d'utilisateurs ou collectifs
 
 == Configuration
 
-To access the Participants configuration panel, go in the administration panel and click the "Participants" item in the administration navigation bar.
+Pour accéder au panneau de configuration des Participants, allez dans le panneau d'administration et cliquez sur l'élément "Participants" dans la barre de navigation d'administration.
 
 image::participants/participants_menu.png[Participants menu]
 
-There, you first see the list of administrators of the platform.
+Là, vous voyez d'abord la liste des administrateurs de la plate-forme.
 
 image::participants/participants_sidebar_menu.png[Participants sidebar menu]
 
-In the secondary navigation panel, you can see all the participants configuration possibilities:
+Dans le panneau de navigation secondaire, vous pouvez voir toutes les possibilités de configuration des participants :
 
 * xref:admin:participants/admins.adoc[Administrateurs]
 * xref:admin:participants/groups.adoc[Groupes d'utilisateurs]
@@ -32,10 +32,10 @@ In the secondary navigation panel, you can see all the participants configuratio
 ** xref:admin:participants/authorizations/code_postal_letter.adoc[Code par lettre postale]
 ** xref:admin:participants/authorizations/census.adoc[Recensement de l'organisation]
 
-Some of those items might not appear in this menu, because they aren't enabled.
-To check how to enable them, go on the missing item documentation article.
+Certains de ces éléments peuvent ne pas apparaître dans ce menu, car ils ne sont pas activés.
+Pour vérifier comment les activer, allez sur l'article de documentation de l'élément manquant.
 
 == Exemples
 
-You want to add your colleagues so they can edit the platform.
-You want to set specific flows for participants to be able to participate in a specific participatory space.
+Vous voulez ajouter vos collègues pour qu'ils puissent modifier la plateforme.
+Vous voulez définir des flux spécifiques pour que les participants puissent participer à un espace participatif spécifique.
