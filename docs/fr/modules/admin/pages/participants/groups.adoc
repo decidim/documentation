@@ -1,40 +1,40 @@
 = Groupes d'utilisateurs
 
-User groups are entities created by participants to represent a structure, a club, an association, etc.
-User groups can be managed by different administrators, and have several members.
-If an administrator verifies a user group, then all the user group administrators can participate in the name of the group.
+Les groupes d'utilisateurs sont des entités créées par les participants pour représenter une structure, un club, une association, etc.
+Les groupes d'utilisateurs peuvent être gérés par différents administrateurs, et ont plusieurs membres.
+Si un administrateur vérifie un groupe d'utilisateurs, alors tous les administrateurs du groupe d'utilisateurs peuvent participer au nom du groupe.
 
 image::participants/user_group_frontend_show.png[Frontend: show a user group]
 
-== Enable / disable user groups
+== Activer / désactiver les groupes d'utilisateurs
 
-Administrators can enable or disable user groups in the xref:admin:settings/configuration.adoc[Configuration] panel.
+Les administrateurs peuvent activer ou désactiver les groupes d'utilisateurs dans le panneau xref:admin:settings/configuration.adoc[Configuration].
 
-When enabled, participants are able to create and manage groups from their profile.
-To learn more about how participants can do this, go to the xref:admin:features/participant_actions/my_public_profile.adoc[public profile] article.
+Lorsqu'il est activé, les participants peuvent créer et gérer des groupes à partir de leur profil.
+Pour en savoir plus sur la façon dont les participants peuvent le faire, allez dans l'article xref:admin:features/participant_actions/my_public_profile.adoc[public].
 
-== Manage user groups
+== Gérer les groupes d'utilisateurs
 
-When a participant creates a user group, it adds a line in the user groups list in the administration panel, with:
+Lorsqu'un participant crée un groupe d'utilisateurs, il ajoute une ligne dans la liste des groupes d'utilisateurs dans le panneau d'administration, avec:
 
-* *Name*: name of the user group.
-* *Nickame*: nickame of the user group.
-* *Document number*: can be the identification number of the structure, like a company or association identification number.
-* *Phone*: phone number of the structure or the administrator of the user group.
-* *Participants count*: number of members of the user group.
-* *Created at*: date of the user group creation.
-* *State*: state of the verification, can only be pending, verified, or rejected.
+* *Nom*: nom du groupe d'utilisateurs.
+* *Pseudo*: pseudo du groupe d'utilisateurs.
+* *Numéro de document*: peut être le numéro d'identification de la structure, comme le numéro d'identification d'une entreprise ou d'une association.
+* *Téléphone* : numéro de téléphone de la structure ou de l'administrateur du groupe d'utilisateurs.
+* *Nombre de participants* : nombre de membres du groupe d'utilisateurs.
+* *Créé à* : date de création du groupe d'utilisateurs.
+* *État* : l'état de la vérification, ne peut être qu'en attente, vérifiée ou rejetée.
 
-You can filter and sort this list by clicking the "Filter" button and the columns headers.
-You can also search for user groups by email, name, or nickname in the search bar.
+Vous pouvez filtrer et trier cette liste en cliquant sur le bouton "Filtre" et sur les en-têtes des colonnes.
+Vous pouvez également rechercher des groupes d'utilisateurs par e-mail, par nom ou par surnom dans la barre de recherche.
 
 image::participants/admin_user_group_verification.png[Admin panel: user group verifications]
 
-A user group can have three states:
+Un groupe d'utilisateurs peut avoir trois états :
 
-* Pending: waiting for an answer from an administrator
-* Verified: an administrator verified the authenticity of this group
-* Rejected: an administrator decided this group was not authentic or compliant
+* En attente: en attente d'une réponse d'un administrateur
+* Vérifié : un administrateur a vérifié l'authenticité de ce groupe
+* Rejeté : un administrateur a décidé que ce groupe n'était pas authentique ou conforme
 
 === Actions
 
@@ -43,32 +43,32 @@ A user group can have three states:
 |===
 |Icône |Nom |Définition |Condition
 
-|image:icons/action_verify.png[Verify icon]
-|Verify
-|To validate the verification of the user group.
-|Available when the user group state is pending or rejected.
+|image:icons/action_verify.png[Vérifier l'icône]
+|Vérifier
+|Valider la vérification du groupe d'utilisateurs.
+|Disponible lorsque l'état du groupe d'utilisateurs est en attente ou rejeté.
 
-|image:icons/action_delete.png[Reject icon]
-|Reject
-|To reject the verification request of the user group.
-|Available when the user group state is pending or verified.
+|image:icons/action_delete.png[Rejeter l'icône]
+|Rejeter
+|Pour rejeter la demande de vérification du groupe d'utilisateurs.
+|Disponible lorsque l'état du groupe d'utilisateurs est en attente ou vérifié.
 |===
 
-=== Verify a group
+=== Vérifier un groupe
 
-To verify a group, an administrator should verify that the group exists and is legitimate to have an entity on the platform.
-Administrator can call the group administrator on the phone number provided, or verify that the document number exists.
+Pour vérifier un groupe, un administrateur doit vérifier que le groupe existe et est légitime d'avoir une entité sur la plateforme.
+L'administrateur peut appeler l'administrateur du groupe sur le numéro de téléphone fourni, ou vérifier que le numéro de document existe.
 
-After a group is verified, this is publicly visible in their nickname in the platform and there's a message in its profile:
-"This group is publicly verified, its name has been verified to correspond with its real name."
+Après qu'un groupe soit vérifié, ceci est visible publiquement dans leur surnom dans la plateforme et il y a un message dans son profil :
+"Ce groupe est publiquement vérifié, son nom a été vérifié pour correspondre avec son vrai nom."
 
 image::participants/user_group_verified.png[User group: verified icon]
 
-=== Verify by CSV
+=== Vérifier par CSV
 
-If you want to verify multiple user groups at once, you can do so with the "Verify via CSV" button.
+Si vous voulez vérifier plusieurs groupes d'utilisateurs à la fois, vous pouvez le faire avec le bouton "Vérifier via CSV".
 
 image::participants/admin_user_group_verification_csv.png[Admin panel: user group verifications CSV]
 
-There, you can upload a CSV file, with a unique column without headers, containing the user groups emails you want to verify.
-Only the groups that have confirmed their email and that have an email appearing in the CSV file will be verified.
+Là, vous pouvez télécharger un fichier CSV, avec une colonne unique sans en-tête, contenant les courriels des groupes d'utilisateurs que vous voulez vérifier.
+Seuls les groupes qui ont confirmé leur adresse e-mail et qui ont un e-mail apparaissant dans le fichier CSV seront vérifiés.
