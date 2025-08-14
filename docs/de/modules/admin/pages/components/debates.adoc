@@ -1,0 +1,231 @@
+= Debatten
+
+== Understand the basics
+
+The Debate component allows people to have discussions, without voting nor prioritization. It also allows to close debates,
+by adding conclusions or a summary of what the discussion was about.
+
+image::components/debates/example01.png[Debates listing example]
+
+== Konfiguration
+
+=== Create a debate component
+
+To create a Debate component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
+
+image::components/debates/component_debate.png[Add Debate component button]
+
+Then:
+
+. Click on the "Components" item in the secondary menu
+. Click the "Add component" button
+. Select "Debate"
+. Fill the component creation form
+
+You can still update this form and the configuration after creating the component, by clicking the
+image:icons/action_configure.png[Configure icon] Configure icon in the components list.
+
+image::components/debates/component.png[Add component form]
+
+.Komponente hinzufügen: Debate Formular
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|The title of this component.
+
+|Bestellposition
+|Optional
+|The order of the component in relation with the other components. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0"
+then "component b" is first when ordering.
+|===
+
+.Debate form - Global settings
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Bereiche aktiviert
+|Optional
+|Aktivieren, wenn die Bereichsfilterung in dieser Komponente erfolgen soll.
+
+|Bereich
+|Optional
+|Which xref:admin:settings/scopes.adoc[Scopes] does this component belongs to.
+
+|Kommentare aktiviert
+|Optional
+|Whether you want to have comments in the debates.
+
+|Maximale Länge der Kommentare
+|Optional
+|The characters limit that participants have when making comments. Lassen Sie 0 für den Standardwert.
+
+|Mitteilung
+|Optional
+|Eine allgemeine Ankündigung, die auf der Landungsseite für allgemeine Debatten zu sehen sein wird.
+|===
+
+.Komponente hinzufügen: Debates Formular - Schritteinstellungen
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Befürworter aktiviert
+|Optional
+|Check if you want to enable participants to show public support for debates.
+
+|Befürworter blockiert
+|Optional
+|Check for participants to be able to see the existing endorsements but not make any new one.
+
+|Participants can create debates
+|Optional
+|Check if you want to allow the creation of new debates by participants during this phase.
+
+|Kommentare blockiert
+|Optional
+|Ob Sie Kommentare für diese Phase aktivieren möchten.
+
+|Mitteilung
+|Optional
+|Eine allgemeine Ankündigung, die auf der Landungsseite der allgemeinen Debatte zu sehen sein wird.
+|===
+
+=== Create a debate
+
+image::components/debates/new_debate_backend.png[New debate backend form]
+
+.Neues Diskussionsformular
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|The title of this debate.
+
+|Beschreibung
+|Benötigt
+|The description of this debate.
+
+|Anleitung zur Teilnahme
+|Benötigt
+|Add a message for the participants, displayed on the debate page in an information box.
+
+|Informations-Updates
+|Optional
+|Add a message for the participants, displayed on the debate page in an information box.
+
+|xref:_debate_types[Debat-Typ]
+|Benötigt
+|Wählen Sie zwischen Finite und Open aus. Finite means that the debate has a starting and ending date and time, Open means that
+there isn't any time frame.
+
+|Beginnt am
+|Erforderlich, wenn der Diskussionstyp endgültig ist
+|Erwartetes Format: tt/mm/yyy hh:ii
+
+|Endet am
+|Erforderlich, wenn der Diskussionstyp endgültig ist
+|Erwartetes Format: tt/mm/yyy hh:ii
+
+|Kategorie
+|Optional
+|Welche Kategorie hat die Debatte. Wird zum Filtern in der Liste der Debatten verwendet.
+
+|Kommentare aktiviert
+|Optional
+|Whether you want participants to be able to comment on this debate.
+|===
+
+=== Debatten verwalten
+
+To start creating and managing debates, click in the component title in the navigation bar or in the component list, or click in the
+image:icons/action_edit.png[Manage component icon] icon on the components list.
+
+image::components/debates/manage_debates.png[Manage debates table]
+
+On the debates list in the administration panel, administrators can see:
+
+* *Title*: Title of the debate.
+* *Start date*: Start date of the debate.
+* *End date*: End date of the debate.
+* *Scope*: Scope of the debate, if enabled in the participatory space.
+
+You can also export the comments in the debates in CSV, JSON and Excel format by clicking the "Export all" button.
+
+=== Debat-Typen
+
+Es ist möglich, zwei Arten von Debatten zu führen:
+
+. Fertig: mit einem Start- und Enddatum
+. Öffnen: ohne Start- und Enddatum
+
+Participants can see the types of the debates in the debate public list.
+
+image:components/debates/debates_list.png[Debates list]
+
+=== Aktionen
+
+NOTE: When participants can create debates, administrators have less actions available, and can't edit nor delete the debates.
+
+.Aktionen
+[cols="10h,20h,~"]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Edit icon]
+|Bearbeiten
+|Formular für eine Debatte bearbeiten.
+
+|image:icons/action_close.png[Close icon]
+|Schließen
+|Formular für eine Aussprache schließen. Zum Hinzufügen von Schlussfolgerungen.
+
+|image:icons/action_preview.png[Preview icon]
+|Vorschau
+|Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Berechtigungen
+|To handle the authorizations needed to create or endorse debates.
+
+|image:icons/action_delete.png[Delete icon]
+|Löschen
+|Diese Debatte löschen.
+|===
+
+=== Diskussionsformular schließen
+
+Eine Aussprache kann geschlossen werden. This is useful for publishing debates conclusions.
+After a debate was closed it can't be edited nor commented any more.
+
+image::components/debates/close_debate_backend.png[Close debate backend form]
+
+Take into account that if the debate was created by a participant, then only that participant can close it.
+
+image::components/debates/close_debate_frontend.png[Close debate frontend form]
+
+.Diskussionsformular schließen
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Schlussfolgerungen
+|Benötigt
+|Was ist die Schlussfolgerung für diese Aussprache.
+|===
+
+Die Schlussfolgerungen werden öffentlich mit dem Datum und der Zeit gezeigt.
+
+image::components/debates/debate_closed.png[Closed debate]
+
+== Beispiele
+
+Some examples of where this component is used:
+
+* https://meta.decidim.org/processes/roadmap/f/219/[Neue Funktionalitäten für Decidim-Software in Metadecidim]
