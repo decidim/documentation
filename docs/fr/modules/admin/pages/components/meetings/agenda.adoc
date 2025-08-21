@@ -1,0 +1,88 @@
+= Ordre du jour
+
+La fonctionnalité ordre du jour permet à une administratrice de définir le calendrier d'une rencontre. Il est possible de définir des éléments et des sous-éléments dans un ordre du jour, avec chacun des sujets qui seront discutés lors de la réunion, accompagnés d'une description et de la durée de chaque élément et sous-élément.
+
+image:components/meetings/agenda/agenda_frontend.png[Image de la fonctionnalité ordre du jour]
+
+== Formulaire de création d'ordre du jour
+
+Définir l'ordre du jour d'une rencontre :
+
+. Sign in as admin
+. Go to admin panel
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+For instance, it could be "Processes", "Assemblies", or "Conferences"
+. Click on "Meetings"
+. Recherchez la rencontre pour laquelle vous souhaitez ajouter l'ordre du jour
+. Cliquez sur le bouton "Ordre du jour" image:action_agenda.png[Bouton ordre du jour]
+. Remplissez le formulaire
+
+image:components/meetings/agenda/new_agenda_form.png[Formulaire de création d'ordre du jour dans le backoffice]
+
+
+.Formulaire de création d'ordre du jour
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Titre de l'ordre du jour. Par exemple, "Calendrier"
+
+|Visible
+|Facultatif
+|Cochez cette case si vous souhaitez publier l'ordre du jour.
+
+|Points de l'ordre du jour
+|Obligatoire
+|Liste des points de l'ordre du jour.
+|===
+
+Il est possible de créer autant de points et de sous-points de l'ordre du jour que souhaité. Vous pouvez monter ou descendre la hiérarchie des points de l'ordre du jour.
+Il est également possible de supprimer et de modifier les éléments de l'ordre du jour.
+
+
+.Formulaire d'élément de l'ordre du jour
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Titre du point de l'ordre du jour
+
+|Durée
+|Obligatoire
+|Combien de minutes durera le point de l'ordre du jour. Par exemple, "15".
+
+|Description
+|Facultatif
+|Titre du point de l'ordre du jour
+
+|Sous-points de l’ordre du jour
+|Facultatif
+|Liste des sous-points de l'ordre du jour.
+|===
+
+La seule limite des points et des sous-points de l'ordre du jour est qu'ils doivent avoir une durée inférieure à celle du parent. Par exemple, si un point dure 60 minutes, vous ne pouvez pas créer un sous-point d'une durée de 90 minutes.
+
+À titre d'exemple, cet ordre du jour :
+
+image:components/meetings/agenda/agenda_frontend.png[Image de la fonctionnalité ordre du jour]
+
+Pour la configuration suivante :
+
+* Titre: "Calendrier"
+* Visible: true
+* Point d'ordre du jour #1 :
+** Titre: Diagnostic
+** Durée: 60
+* Point d'ordre du jour #2 :
+** Titre: Idéation
+** Durée: 120
+** Sous-point de l'ordre du jour #2.1 :
+*** Titre: Pensée future
+*** Durée: 60
+*** Description: Imaginez comment nous pouvons résoudre le problème
+** Sous-point de l'ordre du jour #2.2 :
+*** Titre: Création de propositions
+*** Durée: 60
+*** Description: Sur la plateforme

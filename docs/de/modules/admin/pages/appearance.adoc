@@ -1,0 +1,78 @@
+= Aussehen
+
+Auf dieser Seite können Sie das Look-and-Feel Ihrer Decidim-Instanz konfigurieren.
+
+Bitte beachten Sie, dass dies mit einigen Änderungen, die Ihre Implementierer in Ihrer allgemeinen Installation ändern könnten, nicht vereinbar wäre. Wenn es zum Beispiel Änderungen im xref:customize:styles.adoc[Styles] gibt, konnte dies nicht funktionieren.
+
+image::admin_appearance.png[Decidim Admin Appearance]
+
+---
+
+NOTE: Dies ist eine alte Einstellung, die in der nächsten Version entfernt wird. https://github.com/decidim/decidim/pull/6575[See PR].
+
+* **Statistiken anzeigen**: ob die Statistiksektionen auf der Startseite angezeigt werden sollen oder nicht.
+
+---
+
+* **Beschreibung**: Was ist die Beschreibung dieser Seite. Verwendet für Metatags für Google und Twitter Einbetten. Auch vom "SubHero" ContentBlock auf der Homepage verwendet.
+
+---
+
+NOTE: Dies ist eine alte Einstellung, die in der nächsten Version entfernt wird. https://github.com/decidim/decidim/pull/6284[See PR].
+
+* **Aufruf zu Aktion Button Pfad**: Du kannst überschreiben, wohin die Schaltfläche "Aufruf zum Handeln" in den Startseite-Links geht. Benutze hier partielle Pfade, nicht vollständige URLs. Akzeptiert Buchstaben, Zahlen, Bindestriche und Schrägstriche und muss mit einem Buchstaben beginnen. Der Button "Aufruf zum Handeln" wird auf der Homepage zwischen Willkommenstext und Beschreibung angezeigt. Beispiel: https://meta.decidim.org/conferences/decidimfest2020/
+* **Aktions-Buttontext anrufen**: Du kannst den Text der Schaltfläche "Aufruf zur Aktion" auf der Homepage für jede verfügbare Sprache in deinem Organisation überschreiben. Wenn nicht gesetzt, wird der Standardwert verwendet. Der Button "Aufruf zum Handeln" wird auf der Homepage zwischen Willkommenstext und Beschreibung angezeigt.
+
+---
+
+NOTE: Dies ist eine alte Einstellung, die in der nächsten Version entfernt wird. Es gibt noch keine PR.
+
+* **Banner mit hochgestelltem Inhalt**
+** *Zeigen Sie das hervorgehobene Inhaltsbanner an*
+** *Title*
+** *Short description*
+** *Action button title*
+** *Action button subtitle*
+** *Action button URL*
+** *Image*
+
+---
+
+* *Edit omnipresent banner*
+** **Show omnipresent banner**
+** **Title**
+** **Short description**
+** **URL**
+
+---
+
+* **Edit layout appearance**
+
+This subsection defines the images for the layout that will be visible in almost all the pages. These are:
+
+** Icon
+** Logo
+** Official logo header
+** Official logo footer
+** Official organization URL
+
+// TODO: Add examples
+
+---
+
+* **Organization colors**: What are the colors for your organization. Please notice that this could generate accessibility problems, for instance with people that doesn't have a good contrast notion. You can set
+** Primary
+** Secondary
+** Success
+** Warning
+** Alert
+** Highlight
+** Highlight, alternative
+
+// TODO: Add examples
+
+---
+
+* **Header snippets**: Use this field to add things to the HTML head. The most common use is to integrate third-party services that require some extra JavaScript or CSS. Also, you can use it to add extra meta tags to the HTML. Note that this will only be rendered in public pages, not in the admin section.
+
+// TODO: reference to HTML snippet setting

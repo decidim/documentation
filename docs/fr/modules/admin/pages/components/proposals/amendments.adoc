@@ -1,0 +1,93 @@
+= Amendements
+
+Grâce à la fonctionnalité d'amendement, les participants peuvent proposer des modifications à une proposition déjà publiée.
+
+Il est utile de proposer des améliorations ou des corrections, particulièrement utile lors de la rédaction de lois ou autre avec xref:components/propositions/participatory_texts.adoc[Textes participatifs].
+
+Il y a des similitudes avec les xref:components/proposals/collaborative_drafts. doc[Brouillons collaboratifs], mais la principale différence
+est qu'avec les amendements chaque changement est relu et doit être
+approuvé par l'auteur de la proposition.
+
+image:composents/propositions/amendements/amendement.png[Amendement d'une proposition]
+
+Pour configurer les "Amendements" dans le module de propositions:
+
+. Sign in as admin
+. Go to admin panel
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+For instance, it could be "Processes", "Assemblies", or "Conferences"
+. Aller dans les fonctionnalités
+. Cliquez sur le bouton "Ajouter une fonctionnalité"
+. Cliquer sur "Propositions"
+. Cochez la case de configuration "Amendements activés"
+. Examinez et configurez les paramètres de configuration suivants : "Texte d'aide de l'assistant" dans les paramètres globaux des composants et "Création d'amendement activée","Réaction aux amendements activée", "Promotion d'amendement activée" et "Visibilité des amendements" dans les paramètres du composant d'étape.
+. Enregistrez le composant
+
+== Comment ça marche
+
+. Une participante (Alice) a créé une proposition
+. Un autre participant (Bob) a vu la proposition et veut apporter des modifications
+image:composents/propositions/amendements/proposal_to_amende.png[Proposition à amender]
+. Bob clique sur le bouton "Amender"
+. Bob fait les modifications dans le formulaire "Créer un brouillon d'amendement"
+image:composents/propositions/amendements/create_amendement_draft.png[]
+. Bob vérifie qu'il n'y ait pas d'amendement similaire
+. Bob modifie le brouillon d'amendement
+image:components/proposs/amendements/edit_amendement_draft.png[]
+. Bob publie le brouillon d'amendement
+image:components/proposs/amendements/publish_amendement_draft.png[]
+. Tout le monde peut voir la proposition d'amendement
+image:components/proposals/amendements/amendements/amendemed.png[]
+image:components/proposals/amendements/amendements/amendement_list.png[]
+image:components/proposals/amendements/amendements/amendement_view_side_by_side.png[]
+. Il est également possible de filtrer les propositions amendées
+image:composents/propositions/amendements/amendement_list_filter.png[]
+. Alice reçoit une notification que Bob a proposé un amendement à sa proposition originale
+image:components/propositions/amendements/proposal_amendemed_notification.png[]
+. Alice peut voir la proposition d'amendement
+image:components/proposs/amendements/proposal_amendemed_to_review.png[]
+. Alice peut examiner la proposition d'amendement
+image:components/proposs/amendements/proposal_amendemed_review.png[]
+. Alice peut approuver la proposition d'amendement
+image:components/proposs/amendements/proposal_amendemed_accepted.png[]
+. Tout le monde peut voir la proposition finale
+image:components/proposs/amendements/amendements/proposal_amendemed_final.png[]
+image:components/proposals/amendements/amendement_amendement_list.png[]
+. Tout le monde peut voir l'historique des versions de la proposition
+image:composents/propositions/amendements/proposal_amendemed_versions.png[]
+
+== Paramètres pertinents du composant
+
+
+.Formulaire du module Propositions - Paramètres liés aux amendements
+|===
+|Champ |Type |Description
+
+|Amendments enabled
+|Global
+|Check to enable xref:components/proposals/amendments.adoc[amendments] in proposals. Autres paramètres visibles en activant un.
+
+|Amendments Wizard help text
+|Global
+|What's the help text visible when creating new amendments.
+
+|Création d'amendement activée
+|Étape
+|Participant can amend proposals. See xref:components/proposals/amendments.adoc[Amendments].
+
+|Amendment reaction enabled
+|Étape
+|Proposal's authors will be able to accept or reject Participant's emendations.
+
+|Amendment promotion enabled
+|Étape
+|Emandation authors will be able to promote to Proposal the rejected emendation.
+
+|Amendments visibility
+|Étape
+|Choose one of "Amendments are visible to all" or "Amendments are visible only to their authors"
+|===
+
+== Promotion
+
+Si une proposition est rejetée et que la fonction "Promotion d'amendements activée" est activée, alors l'auteur de l'amendement rejeté pourra le promouvoir en tant que nouvelle proposition.

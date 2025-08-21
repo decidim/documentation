@@ -1,0 +1,11 @@
+= Périmètres d'assemblée
+
+include::partial$deprecated.adoc[]
+
+Les périmètres d'assemblée sont tous les périmètres qu'une organisation peut avoir.
+
+Ils sont assez similaires aux xref:admin:scopes.adoc[scopes], ce qui signifie qu'ils sont un moyen de permettre une meilleure navigation et un meilleur filtrage dans les espaces et les fonctionnalités.
+
+Nous ne recommandons pas de les utiliser, car dans le futur elles seront probablement supprimées.
+
+Vous pouvez lire plus d'informations sur l'histoire des périmètres d'assemblée dans ce https://github.com/decidim/decidim/issues/3540#issuecomment-427324532[commentaire GitHub].

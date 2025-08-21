@@ -1,0 +1,47 @@
+= Account
+
+In this section is possible to make modifications that will be visible in the participants public profile and also modify the email address or the language that the platform will use with the user.
+
+. Sign in as a participant
+. Click in the name of the participant in the header
+. Click in "My account"
+
+image:features/my_account/account.png[My account form]
+
+
+.Participant settings - My account form
+|===
+|Champ |Type |Description
+
+|Avatar
+|Facultatif
+|Avatar or picture for the participant. Guidance for image: Preferrably a landscape image that does not have any text.
+The service crops the image. Maximum file size: 5MB
+
+|Your name
+|Obligatoire
+|The name of the participant.
+
+|Nickname
+|Obligatoire
+|The nickname of the participant.
+
+|Your email
+|Obligatoire
+|The email of the participant, where she'll receive notifications, password recovery, etc. If it's changed it needs to be
+confirmed.
+
+|Personal URL
+|Facultatif
+|Metadata that is displayed in the participant's profile.
+
+|About
+|Facultatif
+|Metadata that is displayed in the participant's profile.
+
+|Locale
+|Obligatoire
+|Choose the language you want to use to browse and receive notifications in Decidim
+|===
+
+From this page is possible to also modify the participant's password.

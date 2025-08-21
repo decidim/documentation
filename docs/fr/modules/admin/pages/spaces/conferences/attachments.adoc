@@ -1,0 +1,81 @@
+= Attachments
+
+Attachments allow an administrator to upload static files to a conference.
+
+When a conference is launched, it is important to provide citizens with as much information as possible about them so
+that they can participate with knowledge. That is why it is helpful to add files (Attachments) with the information that
+is considered relevant.
+
+Optionally, these documents can be grouped in *Folders*.
+
+They can be found on the Conference "Media and links" section:
+
+image:spaces/conferences/attachments.png[Conferences attachments (backend)]
+
+image:spaces/conferences/media_links_frontend.png[Conferences attachments (frontend)]
+
+Read more about this in xref:admin:spaces/conferences/media_links.adoc[Media links].
+
+== Create a new attachment
+
+image:spaces/attachments_admin.png[View the attachments of a conference in the admin interface]
+
+For creating a new phase of a conference:
+
+. Sign in as administrator
+. Go to the conference section in the sidebar
+. Click on the conference Edit action
+. Click on the Attachments link in the sidebar
+. Click on the "New attachment" button
+
+image:spaces/attachments_new_form.png[Create a new attachment form]
+
+
+.Create attachment
+|===
+|Champ |Type |Description
+
+|Attachment or image name
+|Obligatoire
+|What is the title for this attachment.
+
+|Weight
+|Facultatif
+|Which order will it have in relation to the other attachments. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. For instance, if you have two categories, "Attachment a" with weight "10" and "Attachment b" with weight "0", then "Attachment b" will be first when ordering.
+
+|Description
+|Obligatoire
+|A long description explaining what this file is about.
+
+|Folder
+|Facultatif
+|Which folder this attachment belongs to.
+
+|File
+|Obligatoire
+|Upload the file. Guidance for file: Has to be an image or a document. For images, use preferrably landscape images, the
+service crops the image. For CSV files, the separator between columns must be a comma (","). Maximum file size: 10MB. Allowed
+file extensions depends in your server configuration.
+|===
+
+== Create a new folder
+
+image:spaces/attachments_new_folder_form.png[Create a new folder for attachments form]
+
+
+.Create folder
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Name of the folder
+
+|Weight
+|Facultatif
+|Which order will it have in relation to the other folders. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. For instance, if you have two folders, "Folder a" with weight "10" and "Folder b" with weight "0", then "Folder b" will be first when ordering.
+
+|Description
+|Obligatoire
+|A long description explaining what this folder is about.
+|===

@@ -1,0 +1,38 @@
+= Invites
+
+Administrators can invite participants to join the conference.
+
+image:spaces/conferences/invites.png[Conferences user invites (backend)]
+
+== Flow
+
+. An administrator sends an invitation to join the conference to a non-existing or existing participant
+. The participant accepts the invitation
+
+image:spaces/conferences/invite_participant_form.png[Invite a participant form]
+
+
+.Invite participant form
+|===
+|Champ |Type |Description
+
+|Attendee type
+|Obligatoire
+|Wheter this invited person is a non-existing or existing participant. Does she already have an account created on the platform?
+
+|Nom
+|Required if it's a non-existing participant.
+|Name of the invited person.
+
+|Email
+|Required if it's a non-existing participant.
+|Email of the invited person.
+
+|User
+|Required if it's an existing participant.
+|Type at least three characters to search.
+
+|xref:admin:spaces/conferences/registrations/types.adoc[Registration type]
+|Obligatoire
+|What xref:admin:spaces/conferences/registrations/types.adoc[registration type] does this participant will have.
+|===

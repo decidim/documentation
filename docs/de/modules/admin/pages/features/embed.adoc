@@ -1,0 +1,23 @@
+= Embed
+
+Sometimes you want to embed some content to an external page. For this you can use the `Embed` feature.
+
+image:features/embed/example.png[A proposal card embeded in another page]
+
+== How to embed
+
+. Navigate to the content you want to embed.
+. Click on the `Embed` link in the sidebar. image:features/embed/link.png[]
+image:features/embed/sidebar.png[]
+. Copy the code from the modal.
+image:features/embed/modal.png[]
+. Paste that code in the external page where you want to embed it. The CMS or platform that you're using needs to supports
+changing HTML code.
+
+An example of this code is:
+
+[source,html]
+----
+<script src="https://meta.decidim.org/processes/roadmap/f/122/proposals/16243/embed.js"></script>
+<noscript><iframe src="https://meta.decidim.org/processes/roadmap/f/122/proposals/16243/embed.html" frameborder="0" scrolling="vertical"></iframe></noscript>
+----

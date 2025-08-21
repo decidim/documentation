@@ -1,0 +1,411 @@
+= Meetings
+
+Meetings are where people come together to discuss or inform about a given topic. All the meetings have a given location
+(where the meeting will happen) and start and end date and time (when the meeting will happen).
+
+Some examples of where this component was used are:
+
+* https://www.decidim.barcelona/processes/PAM2020/f/3734/[Procés participatiu del Programa d'Actuació Municipal (PAM) 2020-2023]
+in https://www.decidim.barcelona/[Decidim Barcelona]
+* https://lejourdapres.parlement-ouvert.fr/processes/ateliers/f/14/[Les ateliers] in https://lejourdapres.parlement-ouvert.fr/[Le jour d'après]
+
+image:components/meetings/example01.png[Meetings list in Decidim Barcelona]
+image:components/meetings/example02.png[Example meeting detail 01 in Decidim Barcelona]
+image:components/meetings/example03.png[Example meeting detail 02 in Decidim Barcelona]
+image:components/meetings/example04.png[Meetings list in Le jour d'après]
+
+== Types
+
+Regarding the *location*, depending on the configuration of the component, you can have:
+
+* In-person meetings: where you get together in a given location
+* Online meetings: where you get together using an external service (for instance Jitsi Meet)
+
+Depending in the *author* (who's the person that's making the call):
+
+* Official meetings: meetings created by the organization (created by an administrator through the panel)
+* Citizens meetings: meetings created by a User participant (a User or an UserGroup).
+
+== Add the component
+
+image:components/meetings/component.png[Add a meetings component]
+
+For adding the component, you need to:
+
+. Sign in as admin
+. Go to admin panel
+. In the main sidebar, click in the button for the space that you want to configure the component for.
+For instance, it could be "Processes", "Assemblies", or "Conferences"
+. Go to components
+. Click on "Add component" button
+. Click on "Meetings"
+. Fill the xref:_add_component[Add component] form
+
+== Add component
+
+For configuring the meeting component you have these settings:
+
+
+.Add component - Meetings form
+|===
+|Field |Type |Description
+
+|Name
+|Required
+|What is the name of this component.
+
+|Order position
+|Optional
+|Which order will it have in relation with the other components. Having a lower number means a higher priority. For instance,
+if you have two components, "Proposals" with weight "10" and "Meetiings" with weight "0", then "Meetings" will be first when ordering.
+|===
+
+
+.Add component - Meetings form: Global settings
+|===
+|Field |Type |Description
+
+|Scopes enabled
+|Optional
+|Check if you want to have Scopes filtering in this process.
+
+|Scope
+|Optional
+|Which scope will be used for this component.
+
+|Announcement
+|Optional
+|A general announcement that'll be visible in the general meetings list.
+
+|Default registration terms
+|Optional
+|What'll be the registration terms of service that the participant would need to accept when registering.
+
+|Comments enabled
+|Optional
+|Whether you want to have comments in the meetings.
+
+|Comments max length
+|Optional
+|What is the characters limit that participants will have when making comments. Leave 0 for default value.
+
+|Registration code enabled
+|Optional
+|Check if you want to give registration codes to participants. Learn more in xref:components/meetings/registrations.adoc[Registrations].
+
+|Actions permissions can be set for each meeting
+|Optional
+|If you want more granular permissions inside of every one of the Meetings.
+
+|Enable pads creation
+|Optional
+|If you want an Etherpad embedded in your meetings. Must have the xref:services:etherpad.adoc[Etherpad] integration configurated.
+
+|Participants can create meetings
+|Optional
+|Allows participants to create new meetings. See xref:_citizens_meetings[Citizens meetings]
+
+|Maps enabled
+|Optional
+|Wheter you want to show a map in the meetings in the meeting detail.
+|===
+
+
+.Add component - Meetings form: Step settings
+|===
+|Field |Type |Description
+
+|Announcement
+|Optional
+|A general announcement that'll be visible in the general meetings list.
+
+|Comments enabled
+|Optional
+|Whether you want to have comments in the meetings.
+|===
+
+== Create a new meeting
+
+=== Citizens meetings
+
+Meetings can be created by participants if the setting is "Participants can create meetings" is checked.
+
+If a participant belongs to a xref:admin:participants/groups.adoc[user group], then she'll be able to create meetings as that group also.
+
+image:components/meetings/new_meeting_form_frontend01.png[Create a new meeting form (frontend)]
+image:components/meetings/new_meeting_form_frontend02.png[Create a new meeting form (frontend)]
+
+
+.Create meeting - Frontend form
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|What is the title for this meeting.
+
+|Description
+|Required
+|A description of what will be discussed in this meeting, like the topics.
+
+|Type
+|Required
+|Choose one option between "In person", "Online" or "Booth"
+
+|Address
+|Required if meeting type is "In person" or "Booth"
+|Address: used by Geocoder to find the location
+
+|Location
+|Required
+|Location: message directed to the users implying the spot to meet at
+
+|Location hints
+|Optional
+|Location hints: additional info. Example: the floor of the building
+
+|Online meeting URL
+|Optional
+|Which URL will the meeting be held.
+
+|Show embedded iframe for this URL
+|Optional
+|Whether or not embed the iframe for this videoconference URL. Only a few services allow embedding (i.e. YouTube, Twitch...)
+
+|Start Time
+|Required
+|Which day and time will the meeting start. Expected format: dd/mm/yyyy hh:ii
+
+|End Time
+|Required
+|Which day and time will the meeting start. Expected format: dd/mm/yyyy hh:ii
+
+|Category
+|Optional
+|Which Category has the meeting. Used for filtering in the meetings list.
+
+|Registration type
+|Required
+|Choose one option between "Registration disabled", "On this platform", or "On a different platform"
+
+|Available slots for this meeting
+|Required if "Registration type" is "On this platform"
+|How many slots are available for this meeting? Leave it to 0 if you have unlimited slots available
+
+|Registration terms
+|Required if "Registration type" is "On this platform"
+|What terms of services participants need to accept to register or join the meeting. Specific to "Citizens meetings"
+
+|Registration URL
+|Required if "Registration type" is "On a different platform"
+|Must be an URL. Link to go on the external service that you are using for registrations.
+
+|Create meeting as
+|Required if the participant belongs to a group
+|With which identity she wants to create this meeting: as her user or as a group that she's reprensenting?
+|===
+
+After creating the meeting, participants can also edit and xref:components/meetings/close.adoc[close] it.
+
+=== Official meetings
+
+image:components/meetings/new_meeting_form_backend.png[Create a new meeting form (backend)]
+
+
+.Create meeting - Backend form
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|What is the title for this meeting.
+
+|Description
+|Required
+|A description of what will be discussed in this meeting, like the topics.
+
+|Type
+|Required
+|Choose one option between "In person", "Online" or "Booth"
+
+|Address
+|Required if meeting type is "In person" or "Booth"
+|Address: used by Geocoder to find the location
+
+|Location
+|Required
+|Location: message directed to the users implying the spot to meet at
+
+|Location hints
+|Optional
+|Location hints: additional info. Example: the floor of the building
+
+|Online meeting URL
+|Optional
+|Which URL will the meeting be held.
+
+|Show embedded iframe for this URL
+|Optional
+|Whether or not embed the iframe for this videoconference URL. Only a few services allow embedding (i.e. YouTube, Twitch...)
+
+|Start Time
+|Required
+|Which day and time will the meeting start. Expected format: dd/mm/yyyy hh:ii
+
+|End Time
+|Required
+|Which day and time will the meeting start. Expected format: dd/mm/yyyy hh:ii
+
+|Category
+|Optional
+|Which Category has the meeting. Used for filtering in the meetings list.
+
+|Registration type
+|Required
+|Choose one option between "Registration disabled", "On this platform", or "On a different platform"
+
+|Available slots for this meeting
+|Required if "Registration type" is "On this platform"
+|How many slots are available for this meeting? Leave it to 0 if you have unlimited slots available
+
+|Registration URL
+|Required if "Registration type" is "On a different platform"
+|Must be an URL. Link to go on the external service that you are using for registrations.
+
+|Private meeting
+|Optional
+|Check if the meeting shouldn't be visible for all the visitors. Specific to "Official meetings".
+
+|Transparent
+|Optional
+|Related to "Private meeting", check if the meeting should be visible for all the visitors but they shouldn't be able to
+participate in. Specific to "Official meetings". Specific to "Official meetings".
+
+|Customize registration email
+|Optional
+|Wheter you want to add a message in the registration email. Specific to "Official meetings".
+
+|Registration email custom content
+|Required if "Customize registration email" is checked
+|The content of the customized email. This text will appear in the middle of the registration confirmation email. Just
+after the registration code. Specific to "Official meetings".
+|===
+
+You can also define *Services* inside of a Meeting. These are metadata that allows to comunicate, for instance, if there's
+a place for children, deaf assistance, translations, etc. You can have multiple services inside of a meeting.
+
+
+.Create meeting - Services
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|Title of the service.
+
+|Description
+|Optional
+|Description of the service.
+|===
+
+== Actions
+
+=== Citizens meetings
+
+
+.Actions - Citizens meetings
+|===
+|Icon |Name |Definition
+
+|image:action_preview.png[Preview icon]
+|Preview
+|To see how it's shown in the frontend to participants.
+
+|image:action_permissions.png[Permissions icon]
+|Permissions
+|To handle the permissions of this meeting, depending on the verification a participant has. Allows an admin to configure
+who can *Join* a meeting.
+|===
+
+=== Official meetings
+
+
+.Actions - Official meetings
+|===
+|Icon |Name |Definition
+
+|image:action_publish.png[Publish icon]
+|Publish
+|To show publicly the meeting.
+
+|image:action_publish.png[Unpublish icon]
+|Unpublish
+|To not show publicly the meeting.
+
+|image:action_preview.png[Preview icon]
+|Preview
+|To see how it's shown in the frontend to participants.
+
+|image:action_duplicate.png[Duplicate icon]
+|Duplicate
+|Allows an admin to duplicate a meeting.
+
+|image:action_registrations.png[Registrations icon]
+|xref:admin:components/meetings/registrations.adoc[Registrations]
+|Allows to define who can register for attending to the meeting.
+
+|image:action_edit.png[Edit icon]
+|Edit
+|Edit form for a Meeting. It's the same form as "Create a new meeting".
+
+|image:action_agenda.png[Agenda icon]
+|xref:admin:components/meetings/agenda.adoc[Agenda]
+|To add the topics that will be discussed in the meeting.
+
+|image:action_list.png[Poll icon]
+|xref:admin:components/meetings/polls.adoc[Polls]
+|To manage the polls for this online meeting.
+
+|image:action_close.png[Close icon]
+|xref:admin:components/meetings/close.adoc[Close]
+|Allows and admin to Close the meeting and add extra information.
+
+|image:action_folder.png[Folders icon]
+|Folders
+|For classifying Attachments.
+
+|image:action_attachments.png[Attachments icon]
+|Attachments
+|Documents that are related to the meeting.
+
+|image:action_permissions.png[Permissions icon]
+|Permissions
+|To handle the permissions of this meeting, depending on the verification a participant has. Allows an admin to configure
+who can *Join* a meeting.
+
+|image:action_delete.png[Delete icon]
+|Delete
+|To delete this meeting.
+|===
+
+== Meetings features
+
+There are different kinds of features that can be enabled in meetings, such as:
+
+* xref:admin:components/meetings/registrations.adoc[Registrations]: for managing how particpant can register to attend the meeting.
+* xref:admin:components/meetings/agenda.adoc[Agenda]: for seeing the topics that will be discussed in the meeting by minutes.
+* xref:admin:components/meetings/polls.adoc[Polls]: for quick voting during an online meeting.
+* xref:admin:components/meetings/close.adoc[Close]: for adding the final report on what was discussed in the meeting.
+
+== Online meetings
+
+Depending in the moment and configuration of the meeting, there could be different messages that will be shown to the participants.
+
+. If the "Online meeting URL" ins't set, there'll be a message that says "Link available soon"
+image:components/meetings/online_meeting_available_soon.png[Online meeting available soon]
+. If the "Online meeting URL" is set, and a few minutes before the meeting start, the mesage will say "The link to join
+the meeting will be available a few minutes before it starts"
+image:components/meetings/online_meeting_available_before.png[Online meeting available before it starts]
+. If the "Online meeting URL" is set, and the start time of the meeting has arrived, then there'll be a message that says
+that "the meeting is happening right now", with a link to join the meeting.
+image:components/meetings/online_meeting_happening.png[Online meeting available before it starts]
