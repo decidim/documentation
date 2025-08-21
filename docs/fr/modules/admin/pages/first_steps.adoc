@@ -1,0 +1,71 @@
+= Premiers pas dans Decidim
+
+== Connectez-vous pour la première fois
+
+Once you or your developers have successfully installed Decidim, and created an organization in the System panel, you should
+receive an email asking you to complete your account creation.
+Si vous n'avez pas reçu d'e-mail d'invitation, demandez à la personne responsable de l'administration du système de vous ajouter en tant qu'administrateur.
+
+image::first_steps_invitation_email.png[Administrator invitation email]
+
+L'e-mail d'invitation vous redirige vers un formulaire pour que vous puissiez terminer la configuration de votre compte avec votre pseudo, votre nom et votre mot de passe.
+
+image::first_steps_account_creation.png[Administrator invitation email]
+
+== Découvrez le tableau de bord d'administration
+
+=== Accéder au tableau de bord d'administration
+
+Après vous être connecté, vous pouvez voir la plate-forme en tant que participant, mais ce n'est pas là où vous pouvez configurer et gérer la plate-forme.
+Pour accéder au tableau de bord de l'administration, ou au panneau d'administration, vous pouvez cliquer sur trois éléments différents :
+
+. Le bouton "Tableau de bord de l'administrateur" à gauche de l'en-tête administrateur que seuls les administrateurs peuvent voir.
+. Le bouton "Modifier" à droite de l'en-tête de l'administrateur.
+. Le bouton "Tableau de bord de l'administrateur" dans la liste déroulante disponible lorsque vous cliquez sur l'avatar de votre compte.
+
+image::admin_dashboard_menu.png[Decidim Admin Dashboard in user menu]
+
+Le bouton "Éditer" redirige vers l'administration de l'espace que vous voyez dans le panneau de participant, alors que les deux autres boutons
+redirigent vers le tableau de bord de l'administration.
+
+=== Conditions d'utilisation des administrateurs
+
+Pour la première fois que vous accédez à l'administration de Decidim, il vous est demandé d'examiner les conditions d'administration du service.
+Cliquez sur le bouton « J'accepte ces conditions » pour pouvoir commencer la configuration de la plate-forme.
+
+image::admin_tos_pending.png[Decidim Admin Dashboard in user menu]
+
+Ces conditions d'utilisation peuvent vous être utiles si vous commencez à inviter d'autres administrateurs sur la plate-forme, et vous devez être au courant de
+des règles de confidentialité spécifiques, ou de tout ce qui les concerne avant d'avoir accès à l'administration.
+
+Ces conditions de service peuvent être configurées dans le panneau de configuration xref:admin:settings/configuration.adoc[panneau de configuration].
+
+=== Explication du tableau de bord
+
+Une fois que vous avez accepté les conditions d'administration du service, vous pouvez voir le tableau de bord.
+Sur une nouvelle instance, presque aucune donnée n'est affichée, mais vous pouvez voir à quoi elle ressemble sur une instance active :
+
+image::admin_dashboard.png[Decidim Admin Dashboard]
+
+Vous pouvez voir plusieurs sections sur cette page :
+
+. *Modérations en attente* : met en évidence le nombre de modérations en attente, d'utilisateurs signalés et de contenus combinés.
+. *Activité* : nombre de participants et d'administrateurs qui se sont connectés le mois dernier, la semaine dernière et le dernier jour.
+. *Metrics* : les graphiques pour l'évolution de plusieurs composants à l'intérieur de Decidim:
+. *Journal d'administrateur* : les dernières actions effectuées par tous les administrateurs de la plateforme.
+
+== Navigation d'administration
+
+Pour naviguer dans le panneau d'administration, vous pouvez cliquer sur tous les éléments affichés dans la barre de navigation verticale à gauche.
+
+* xref:admin:spaces/processes.adoc[Concertations]
+* xref:admin:spaces/assemblies.adoc[Assemblies]
+* xref:admin:spaces/initiatives.adoc[Initiatives]
+* xref:admin:spaces/conferences.adoc[Conferences]
+* xref:admin:global_moderations.adoc[Modérations globales]
+* xref:admin:pages.adoc[Pages]
+* xref:admin:participants.adoc[Utilisateurs]
+* xref:admin:features/social_features/newsletters.adoc[Newsletters]
+* xref:admin:settings.adoc[Settings]
+* Journal d'activité personnel
+* xref:admin:templates.adoc[Templates]

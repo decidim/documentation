@@ -1,0 +1,196 @@
+= Types de pétition
+
+== Understand the basics
+
+Les types d'initiatives sont le cadre principal des initiatives, car ils permettent aux administrateurs de définir les différentes formes d'initiatives
+peuvent prendre, ainsi que les règles spécifiques et le nombre de signatures nécessaires pour chaque type d'initiative.
+
+Par exemple, votre organisation pourrait autoriser les participants à :
+
+* proposer un nouveau règlement
+* ouvrir un groupe de travail ou un comité
+* modifier un règlement existant
+* demande une assemblée générale extraordinaire
+* ajouter des éléments à l'ordre du jour d'un conseil de ville
+
+In general, such mechanisms are specified in an internal regulation (like a municipal normative or state law), specifying
+the number of signatures required.
+
+Vous devez créer au moins *un type d'initiative* et *une portée de type d'initiative* pour permettre aux participants de publier des initiatives.
+Si vous créez plusieurs types d'initiatives, les participants peuvent choisir le type auquel appartient leur initiative.
+
+== Créer un type d'initiative
+
+Pour créer un type d'initiative, cliquez sur le bouton « Gérer » en haut à droite de la page, puis sur l'élément de menu « Types d'initiatives ».
+
+image::spaces/initiatives/initiatives_menu_types.png[Access Initiatives types panel]
+
+Ensuite, cliquez sur le bouton « Nouveau type d'initiative ». Vous êtes redirigé vers le formulaire de création de type d'initiative.
+
+=== Informations générales
+
+image::spaces/initiatives/type_form_general.png[Initiative type form general information]
+
+.Formulaire de type d'initiative : Informations générales
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Titre du type d'initiative.
+
+|Description
+|Obligatoire
+|Explication de ce qui peut être fait avec ce type d'initiative.
+
+|Image de bannière
+|Obligatoire
+|Une image pour ce type d'initiative. REMARQUE : Pour le moment, ce n'est pas utilisé.
+|===
+
+=== Paramètres
+
+image::spaces/initiatives/type_form_options.png[Initiative type form options]
+
+.Formulaire de type d'initiative pour l'administrateur: Options
+[cols="~,10h,~"]
+|===
+|Champ |Type |Description
+
+|Type de signature
+|Facultatif
+|Quel type de signature est autorisé. Les options sont : Online, In-person et Mixed. L'option Mixte permet à un participant de choisir le type de signature que l'initiative peut collecter.
+
+|Activer les pièces jointes
+|Facultatif
+|Que ce soit pour télécharger des pièces jointes à des initiatives de ce type.
+
+|Permettre aux participants d'annuler leurs signatures en ligne
+|Facultatif
+|Un participant peut-il annuler sa signature lorsqu'il a déjà signé ?
+
+|Permettre aux auteurs de choisir la fin de la période de collection de signatures
+|Facultatif
+|Les auteurs d'une initiative peuvent-ils modifier la fin de la période de collecte des signatures lors de la création de leur initiative?
+
+|Permettre aux auteurs de choisir le xref:admin:settings/areas.adoc[area] pour leur initiative
+|Facultatif
+|Permettre aux auteurs et aux administrateurs de catégoriser les initiatives grâce à l'organisation xref:admin:settings/areas.adoc[Areas].
+
+|Activer les signatures de portée enfant
+|Facultatif
+|Ce drapeau de configuration ne supporte que les votes en ligne. Il active les sous-portées et fonctionne avec un gestionnaire d'autorisation qui associe une portée à l'utilisateur.
+Assurez-vous de sélectionner cette autorisation ci-dessous dans les paramètres d'autorisation. Pour que cela fonctionne, les portées doivent être configurées de manière hiérarchique : 1 Parent - N Enfant.
+
+|Ne permettre que la création d'initiatives d'envergure mondiale
+|Facultatif
+|Cochez cette case si vous avez activé "Signature de la portée enfant" et configuré la portée globale comme votre portée parente. En activant cette option, la sélection de la portée est ignorée dans l'assistant de création d'initiative.
+
+|Activer le comité de promotion
+|Facultatif
+|Si ce type ne permet que des initiatives individuelles ou permet des initiatives collectives (plusieurs promoteurs, plusieurs personnes ou un groupe d'utilisateurs).
+
+|Minimum de membres du comité
+|Facultatif
+|Lorsque l'option "Activer le comité de promotion" est cochée, définit le nombre minimum de membres du comité promoteur à envoyer l'initiative à la validation technique.
+
+|Activer les commentaires
+|Facultatif
+|Si des initiatives de ce type peuvent recevoir des commentaires des participants.
+
+|Collecter les données personnelles des participants lors de la signature
+|Facultatif
+|Ajoute une étape au processus de signature. Lorsqu'un participant clique sur le bouton de signature, il est redirigé vers un formulaire demandant des données personnelles.
+Il est ensuite utilisé avec l'action d'exportation PDF après la fin de la période de rappel.
+
+|Informations légales sur la collecte de données personnelles
+|Requis si le drapeau précédent est vérifié.
+|Avis de confidentialité et conditions d'utilisation pour les données personnelles du participant pendant le processus de signature.
+|===
+
+=== Paramètres d'autorisation
+
+image::spaces/initiatives/type_form_authorizations.png[Initiative type form authorizations]
+
+.Formulaire de type d'initiative : Paramètres d'autorisation
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Autorisation de vérifier le numéro du document sur les signatures
+|Facultatif
+|Le type d'autorisation requis pour signer une initiative. Laisser vide ne nécessite aucune autorisation.
+|===
+
+Cliquez sur le bouton Créer en bas du formulaire pour enregistrer votre type d'initiative.
+Ce n’est qu’après cela que vous pourrez créer la marge de manœuvre nécessaire à la création des premières initiatives.
+
+=== Créer une portée de type d'initiative
+
+Un type d'initiative doit avoir des champs d'application associés pour permettre aux participants de créer des initiatives.
+En effet, elles permettent d'associer une portée à un certain nombre de signatures, et donc d'avoir un seuil de signatures multiples pour un même type d'initiative.
+
+Dans le formulaire de type d'initiative, faites défiler vers le bas pour trouver une nouvelle section appelée « Scopes pour le type d'initiative » et un bouton.
+
+image::spaces/initiatives/type_form_scopes.png[Initiative type form scopes]
+
+Cliquez sur le bouton « Nouveau champ d'application du type d'initiative » pour en créer un.
+
+image::spaces/initiatives/admin_initiative_type_scope.png[New initiative type form]
+
+.Formulaire de portée du nouveau type d'initiative admin
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Portées
+|Obligatoire
+|Choisissez la portée liée à ce numéro si les signatures. Si vous n'avez aucune règle, conservez la portée globale.
+
+|Signatures requises
+|Obligatoire
+|Nombre de signatures que l'initiative doit avoir avant la date de fin de collecte pour être acceptée.
+|===
+
+Vous pouvez ajouter plusieurs portées de type initiative si vous avez un nombre spécifique de signatures pour des portées spécifiques.
+Par exemple, il peut s'agir d'un pourcentage de différents territoires.
+
+image::spaces/initiatives/type_form_scopes_multiple.png[Initiative type form scopes with three scopes]
+
+== Gérer les types d'initiatives
+
+image::spaces/initiatives/initiatives_types_list.png[Initiatives types list]
+
+Une fois que vous avez créé un ou plusieurs types d'initiatives, vous pouvez les gérer dans la liste dans le panneau d'administration, avec:
+
+* *Types d'initiatives* : titre du type d'initiative.
+* *Créé à* : date de création des types d'initiative.
+
+== Actions
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Configurer le type d'icône des initiatives]
+|Configurer
+|Éditer la configuration et initialiser les portées de type pour ce type.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Autorisations
+|Éditer les permissions pour ce type d'initiative.
+
+|image:icons/action_delete.png[Supprimer le type d'icône d'initiatives]
+|Supprimez
+|Pour supprimer le type d'initiation. Ne peut être fait que si aucune initiative n'est liée à ce type.
+|===
+
+== Autorisations
+
+Vous pouvez configurer les permissions pour un type d'initiative en cliquant sur l'icône image:icons/action_permissions.png.
+
+image::spaces/initiatives/initiatives_types_permissions.png[Initiatives types permissions edition]
+
+Sur cette page, vous pouvez demander à xref:admin:participants/authorizations.adoc[Authorizations] spécifique afin que les participants puissent signer ou créer une initiative.

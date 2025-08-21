@@ -1,0 +1,110 @@
+= Portées
+
+Les champs d'application sont l'ensemble des territoires ou des sujets qu'une Organisation possède. Une portée peut avoir des portées enfants.
+
+Par exemple, dans le cas de la ville de Barcelone, les périmètres correspondent à ses quartiers, et les enfants d'un quartier
+sont ses quartiers.
+Ils peuvent également avoir des types, de sorte qu'il peut être configuré, par exemple, par des portées thématiques et également territoriales.
+
+La plupart des composants et des espaces de Decidim vous permettent de configurer des Scopes d'une manière ou d'une autre.
+
+image::settings/scopes_list.png[Scopes list]
+
+== Créer un type de périmètre d'application
+
+Pour créer un type de périmètre, cliquez sur le bouton "Ajouter" dans l'onglet Types de portée.
+
+image::settings/scopes_types_new_form.png[New scope type form]
+
+.Formulaire de nouveau type de périmètre d'application admin
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Nom du type de scope en singulier.
+
+|Pluriel
+|Obligatoire
+|Nom du type de portée au pluriel.
+|===
+
+== Créer un périmètre d'application
+
+Pour créer un périmètre, cliquez sur le bouton "Ajouter" dans l'onglet Périmètre d'application.
+
+image::settings/scopes_new_form.png[New scope form]
+
+.Formulaire de nouvelle portée de l'administrateur
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Nom du périmètre.
+
+|Code
+|Obligatoire
+|Identifiant interne de la portée.
+
+|Type de périmètre d'application
+|Facultatif
+|Le type de portée auquel il est lié. Il peut être vide.
+|===
+
+== Actions
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_browse.png[Parcourir l'icône]
+|Parcourir
+|Voir et configurer les portées enfants pour ce périmètre.
+
+|image:icons/action_edit.png[Modifier l'icône]
+|Editer
+|Modifier le formulaire pour un scope.
+
+|image:icons/action_delete.png[Supprimer l'icône]
+|Supprimez
+|Supprimer ce périmètre.
+|===
+
+== Fonctionnalités
+
+Les principales fonctionnalités liées aux portées sont:
+
+. Filtrage
+. Intérêts des utilisateurs et newsletters
+
+=== Filtrage
+
+La plupart des espaces et des composants permettent à un administrateur ou à un participant de les associer à une portée.
+Cela permet de filtrer par périmètre lors de leur exploration.
+
+image::settings/scopes_filter_assemblies.png[Assemblies scopes filtering]
+
+image::settings/scopes_filter_processes.png[Processes scopes filtering]
+
+Quelques exemples:
+
+* Avec le module Responsabilité, il est donc possible de filtrer les résultats
+* Les assemblages et les processus peuvent avoir des portes. Il est utilisé pour filtrer plusieurs assemblages dans la page principale de la liste (/assemblies ou /processes). Celles-ci peuvent être masquées avec le "Activer les filtres d'espace participatif" dans xref:admin:settings/configuration.adoc[configuration].
+* Le filtrage dans la barre latérale est également disponible dans certains composants, où vous pouvez contrôler si ces filtres sont affichés avec la case à cocher "Scopes activés" dans les paramètres. Il active également le sélecteur de portée dans le formulaire de création de ressource.
+
+Vous pouvez également configurer un espace participatif de sorte que le filtrage ne concerne qu'une seule portée et ses portées enfants. Par exemple, imaginons que votre organisation ait 3 portées différentes pour 3 villes, chacune ayant des portées enfants pour les quartiers urbains.
+Dans un espace participatif qui ne concerne qu'une seule des villes, vous pouvez seulement sélectionner cette portée et ses enfants afin que les utilisateurs ne voient pas les portées des autres villes dans les options de filtre.
+
+=== Intérêts des utilisateurs et newsletters
+
+Un participant peut choisir les champs d'application qu'il souhaite suivre dans son compte.
+
+image::settings/account_my_interests.png[Account: my interests]
+
+Ceci est utilisé dans xref:admin:features/social_features/newsletters.adoc[Newsletters], dans l'étape "Sélectionner les destinataires à livrer".
+
+image::features/newsletters/newsletter_select_recipients.png[Newsletter: select recipients]

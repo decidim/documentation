@@ -1,0 +1,120 @@
+= Anmeldungen
+
+== Understand the basics
+
+NOTE: This article is dedicated to registrations "On this platform" when creating or editing a meeting.
+
+Durch die Registrierung können Sie die Teilnahme an einem Meeting kontrollieren. With this feature for instance you can
+limit how many people could attend the meeting, or you can know before the start of a meeting if you need to find a bigger
+room to hold the meeting.
+
+Enabling this feature adds a "Register" button so that participants can express their wish to go to the meeting.
+
+image::components/meetings/registrations/frontend_join_meeting.png[Join a meeting button on meeting page]
+
+Depending in how this feature is configured, then administrators can:
+
+. define how many slots are available for controlling the maximum capacity for this meeting
+. create a xref:_registration_form[custom registration form] to ask information to participants
+. send xref:_invitations[invitations] to other participants or people not registered in the platform
+. control attendance to the meeting through xref:_registration_code[registration codes]
+
+== Register to a meeting
+
+When a participant clicks on the "Register" button, they get asked
+
+* if they're representing a xref:admin:participants/groups.adoc[group].
+* if they want to show publicly that they're attending to the meeting.
+
+image::components/meetings/registrations/frontend_confirm.png[Join a meeting confirm modal]
+
+== Manage registrations
+
+Once you chose to deal with registrations "On this platform" when creating a meeting, you can manage registrations by clicking the
+image:icons/action_registrations.png[Registrations icon] Registrations icon.
+
+image:components/meetings/registrations/backend.png[Registrierungseinstellungen in einem Meeting]
+
+.Anmeldeformular
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Validate registration code
+|Optional
+|To verify participants xref:_registration_code[registration codes], if enabled for this meeting.
+
+|Registrierungen aktiviert
+|Benötigt
+|Check to enable registrations for this meeting.
+
+|Anmeldeformular aktiviert
+|Optional
+|Check if you want to enable a registration form for this meeting, to ask information about attendees.
+
+|Verfügbare Plätze für dieses Meeting
+|Benötigt
+|Wie viele Slots sind verfügbar. Lassen Sie es auf 0 wenn Sie unbegrenzte Slots zur Verfügung haben.
+
+|Reservierte Plätze
+|Benötigt
+|How many slots are already reserved on the available slots. Leave it to 0 if you don't have reserved slots.
+
+|Registrierungs-E-Mail anpassen
+|Optional
+|Whether you want to add a message in the registration email.
+
+|Benutzerdefinierte Anmeldedaten per E-Mail
+|Optional
+|Der Inhalt der angepassten E-Mail. This text appears in the middle of the registration confirmation email, just
+after the registration code if it's enabled.
+
+|Registrierungsbedingungen
+|Benötigt
+|Welche Bedingungen für die Teilnahme an der Veranstaltung müssen die Teilnehmer akzeptieren, um sich zu registrieren oder an der Sitzung teilzunehmen.
+|===
+
+== Anmeldeformular
+
+Mit dieser Funktion können Sie ein individuelles Formular wie die xref:admin:components/surveys.adoc[Surveys] Komponente definieren, um Teilnehmer
+nach Registrierungsinformationen zu fragen.
+
+To create a registration form, check the "Registration form enabled" on the registrations page, and click the "Save" button.
+Then, you can click the "Registration form" button in the top right of the page.
+
+== Alle exportieren
+
+You can export registrations in multiple formats: CSV, JSON and XLSX (Excel).
+
+The exported data contains these fields:
+
+* id: Die Registrierungsnummer
+* code: der xref:_registration_code[Registrierungscode] (wenn diese Funktion aktiviert ist)
+* user/name: der Name des Benutzers
+* user/email: die E-Mail des Benutzers
+* user/user_group: the group of the user if they have selected that they represent a group when registering
+
+== Einladungen
+
+This feature allows you to invite attendees to a meeting. They can be active participants or non-existing participants
+in the platform.
+
+image::components/meetings/registrations/invite_attendee.png[Invite attendee for registration in a meeting]
+
+== Registrierungscode
+
+This feature allows you to check if an attendee is well registered in the meeting.
+
+After registering, the participant is given a registration code in the confirmation email and on the meeting page.
+
+image:components/meetings/registrations/frontend_w_code.png[Registration code in a meeting frontend]
+
+The validation of the code is pending. It means that when attending the meeting, the attendee has to give the code to an organizer
+to validate it.
+The organizer then enters the code in the "Validate registration code" field, to confirm that it exists in the database.
+
+image:components/meetings/registrations/backend_w_registration_code.png[Registrierungscode Formular in Meeting]
+
+Once the code gets verified, the attendee is considered to having participated in the meeting, and the code is marked as validated.
+
+image:components/meetings/registrations/frontend_confirmed_w_code.png[Registrierungscode in einem Meeting-Frontend]

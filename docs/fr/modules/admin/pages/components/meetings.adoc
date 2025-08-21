@@ -1,0 +1,122 @@
+= Réunions
+
+== Understand the basics
+
+Le volet Réunions permet aux administrateurs d'organiser, d'annoncer, de traiter des inscriptions et de clôturer des réunions en personne ou en ligne.
+Selon la configuration du composant, les réunions ne peuvent être créées que par les administrateurs, ou aussi par les participants.
+
+Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments:
+
+* xref:admin:admin:components/meetings/meetings.adoc[Meeting creation]: Créer des réunions officielles ou participantes.
+* xref:admin:admin:components/meetings/registrations.adoc[Registrations]: Gérer comment les participants peuvent s'inscrire pour assister aux réunions.
+* xref:admin:components/meetings/agenda.adoc[Agenda]: Annoncez les sujets des réunions à discuter.
+* xref:admin:admin:components/meetings/polls.adoc[Polls]: Activer le vote rapide pendant une réunion en ligne.
+* xref:admin:components/meetings/close.adoc[Close]: Ajoute le rapport final et les minutes de la réunion.
+
+image::components/meetings/example01.png[Example meeting detail 01]
+
+== Configuration
+
+To create a Meetings component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
+
+image::components/meetings/component_meeting.png[Add Meetings component button]
+
+Alors:
+
+. Cliquez sur l'élément "Composants" dans le menu secondaire
+. Cliquez sur le bouton "Ajouter un composant"
+. Sélectionnez "Réunions"
+. Remplissez le formulaire de création de composant
+
+Vous pouvez toujours mettre à jour ce formulaire et la configuration après avoir créé le composant, en cliquant sur l’icône
+image:icons/action_configure.png[Configurer l’icône] dans la liste des composants.
+
+image::components/meetings/component.png[Add a meetings component]
+
+.Ajouter un composant - Formulaire de réunions
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Quel est le nom de ce composant.
+
+|Rang d'affichage
+|Facultatif
+|L'ordre du composant en relation avec les autres composants. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux composants, "Composant a" avec le poids "10" et "Composant b" avec le poids "0"
+puis "Composant b" est d'abord lors de la commande.
+|===
+
+.Ajouter un composant - Formulaire de réunions: Paramètres globaux
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Portées activées
+|Facultatif
+|Cochez cette case si vous voulez que le filtrage des portées dans ce composant.
+
+|Secteur
+|Facultatif
+|Ce composant appartient à xref:admin:settings/scopes.adoc[Scopes].
+
+|Annonce
+|Facultatif
+|Une annonce générale visible dans la liste des réunions dans l'interface participante.
+
+|Conditions d'inscription par défaut
+|Facultatif
+|Les conditions de service que le participant doit accepter lors de son inscription.
+
+|Commentaires activés
+|Facultatif
+|Si vous voulez que la création de commentaires soit activée dans les réunions.
+
+|Longueur maximale des commentaires
+|Facultatif
+|La limite de caractères que les participants ont lors de la rédaction de commentaires. Laisser 0 pour la valeur par défaut.
+
+|Code d'enregistrement activé
+|Facultatif
+|Cochez cette case si vous souhaitez donner automatiquement des codes d'inscription aux participants.
+En savoir plus sur xref:components/meetings/registrations.adoc[Registrations].
+
+|Les autorisations d'actions peuvent être définies pour chaque réunion
+|Facultatif
+|Si vous voulez des permissions plus granulaires à l'intérieur de chaque réunion.
+
+|Activer la création de pads
+|Facultatif
+|Si vous voulez un Etherpad intégré à vos réunions. Doit avoir l'intégration xref:services:etherpad.adoc[Etherpad] configurée.
+
+|Les participants peuvent créer des réunions
+|Facultatif
+|Permet aux participants de créer de nouvelles réunions. Learn more in xref:_citizens_meetings[Citizens meetings].
+
+|Cartes activées
+|Facultatif
+|Si vous voulez afficher une carte avec les adresses des réunions dans la liste et les pages des réunions.
+|===
+
+.Ajouter un composant - Formulaire de réunions: Paramètres de l'étape
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Annonce
+|Facultatif
+|Une annonce générale visible dans la liste des assemblées générales pour cette phase.
+
+|Commentaires activés
+|Facultatif
+|Si vous voulez que la création de commentaires soit activée dans les réunions pour cette phase.
+|===
+
+== Exemples
+
+Quelques exemples d'utilisation de ce composant :
+
+* https://www.decidim.barcelona/processes/PAM2020/f/3734/[Programme d'Actuació Municipal (PAM) 2020-2023]
+* https://meta.decidim.org/assemblies/coordination-commissione/f/1037/réunions[Les réunions du comité de coordination de l'association Decidim]

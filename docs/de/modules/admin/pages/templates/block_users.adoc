@@ -1,0 +1,59 @@
+= Block user messages templates
+
+In this section, you can create, edit, and delete block user justification templates, that you can then use when moderating users.
+
+== Create a block user message template
+
+To create a new block user message template, you need to click the "New template" button.
+
+image::templates/templates_block_user_backend_form.png[Backend: new template form]
+
+.New questionnaire template form
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Title of this template. Choose a clear title, describing precisely what the message is for, like "spam users."
+
+|Beschreibung
+|Benötigt
+|Block user message that is used for justifying the blocking of the participant.
+|===
+
+== Verwalten
+
+All the block user messages templates appear in the templates list:
+
+* *Template*: name of the template.
+* *Created at*: date of creation.
+
+You can edit a template at any moment.
+
+=== Aktionen
+
+.Aktionen
+[cols="10h,20h,~"]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Edit template]
+|Bearbeiten
+|To edit the block user message.
+
+|image:icons/action_duplicate.png[Duplicate template]
+|Duplicate
+|To duplicate the template.
+
+|image:icons/action_delete.png[Delete template]
+|Löschen
+|To delete the template.
+|===
+
+=== Use the template
+
+To use the template, go to the xref:admin:moderations/reported_users.adoc[reported users] panel, and click a "Block user" icon.
+You then see a page proposing you to choose a template for the justification to block this participant.
+
+image::templates/templates_block_user_choice.png[Backend: choose template when blocking user]

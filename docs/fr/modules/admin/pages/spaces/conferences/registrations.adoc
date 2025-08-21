@@ -1,0 +1,13 @@
+= Inscriptions
+
+== Understand the basics
+
+En tant qu'administrateur d'une conférence, vous pouvez gérer les inscriptions à la conférence directement à partir de la plateforme.
+
+Pour ce faire, vous pouvez utiliser ces sections d'administration :
+
+* xref:admin:admin:spaces/conferences/registrations/types.adoc[**Types d'inscriptions**]: pour définir les moyens de s'inscrire.
+* xref:admin:admin:espaces/conférences/registrations/users.adoc[**Inscriptions d'utilisateurs**]:pour confirmer les inscriptions.
+* xref:admin:admin:spaces/conferences/registrations/invites.adoc[**Invites**]: inviter des participants à la conférence.
+* xref:admin:admin:espaces/conférences/inscriptions/certificates.adoc[**Certificats de présence**]:configurer et envoyer les certificats
+de présence au format PDF aux participants à la conférence.

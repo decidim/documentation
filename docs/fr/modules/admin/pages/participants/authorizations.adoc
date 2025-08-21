@@ -1,0 +1,44 @@
+= Autorisations
+
+Les autorisations permettent de donner des droits de participation spécifiques aux participants qui ont terminé un processus de vérification.
+Ce processus de vérification peut être direct, avoir plusieurs étapes, être en ligne ou en personne.
+
+Par exemple, vous pouvez configurer que seuls les participants qui se sont vérifiés par leurs documents d'identité peuvent voter sur les propositions
+dans un processus participatif spécifique.
+
+NOTE: Plusieurs autorisations sont disponibles par défaut, mais vous pouvez également développer vos propres autorisations.
+
+== Activer / désactiver les autorisations
+
+Pour activer une autorisation, vous devez avoir accès à xref:configure:system.adoc[System panel] ou demander à l'instance implémentée.
+Pour mieux comprendre ce que sont les autorisations et comment les configurer, veuillez vous référer à la section
+xref:customize:authorizations.adoc[Autorisations dans le Guide de Personnalisation].
+
+Les participants peuvent accéder, mettre à jour ou supprimer leurs autorisations dans leur xref:admin:features/participant_actions/my_account.adoc[account].
+
+== Méthodes de vérification
+
+Certaines des autorisations disponibles par défaut sont :
+
+* xref:admin:participants/authorizations/identity_documents.adoc[Documents d'identité]
+* xref:admin:participants/authorizations/code_postal_letter.adoc[Code par lettre postale]
+* xref:admin:participants/authorizations/census.adoc[Recensement de l'organisation]
+
+Si l'une de ces autorisations n'est pas utile pour vos besoins, parlez-en avec votre implémentateur pour trouver d'autres alternatives. Learn
+more about xref:customize:authorizations.adoc[Authorizations in the Customize Guide section].
+
+== Révocation des autorisations
+
+Une installation par défaut de Decidim n'a pas vérifié les participants.
+
+image::participants/authorizations_admin_default.png[Authorizations in a default installation]
+
+À partir du moment où certains participants sont vérifiés avec une autorisation, les administrateurs peuvent révoquer toutes les autorisations à la fois.
+En effet, après un certain temps, certaines vérifications peuvent être dépréciées.
+Par exemple, les documents d'identité expirent après un certain temps, ou les participants peuvent déménager d'une ville.
+Ensuite, un administrateur peut vouloir forcer les participants à renouveler leurs informations de vérification.
+
+image:participants/authorizations_admin_revocation.png[Révocation des autorisations]
+
+Il est possible de révoquer toutes les autorisations avec "Révoquer toutes" ou de ne révoquer que les autorisations créées avant une date donnée.
+Une autre possibilité est de ne révoquer que les vérifications pour xref:admin:participants/impersonations.adoc[participants].

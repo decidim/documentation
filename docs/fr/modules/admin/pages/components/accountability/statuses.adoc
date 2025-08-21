@@ -1,0 +1,42 @@
+= Progrès
+
+== Understand the basics
+
+Statuses allow to create progress states for results. Once you created statuses, you are able to make your results evolve
+according to their implementation evolution. It also allows to give results progress percentages, ranging from 0 to 100%.
+
+== Configuration
+
+Pour créer des statuts, cliquez sur le bouton "Statuts" en haut à droite de la liste des résultats.
+
+image::components/accountability/statuses_button.png[Statuses button]
+
+Là, vous pouvez créer et gérer les différents statuts pour les résultats.
+
+image::components/accountability/statuses_list.png[Statuses list]
+
+Cliquez sur le bouton "Nouveau statut" pour commencer à créer des statuts.
+
+image:components/Accounability/new_status.png[Nouveau formulaire de statut]
+
+
+.Formulaire de nouveau statut
+|===
+|Champ |Type |Description
+
+|Clé
+|Obligatoire
+|Utilisé comme identifiant unique pour xref:admin:components/Accounability/import.adoc[CSV Import].
+
+|Nom
+|Obligatoire
+|Nom pour ce statut.
+
+|Description
+|Facultatif
+|Description pour ce statut.
+
+|Avancement
+|Facultatif
+|Number with percentage (from 0 to 100) of the progress.
+|===

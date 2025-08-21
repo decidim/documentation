@@ -1,0 +1,26 @@
+= Soutiens
+
+== Understand the basics
+
+Through endorsements, participants can publicly show that they want to support a particular content, like a proposal, a debate, etc.
+Administrators can enable endorsements by step in a given participatory process, and they can also define permissions with authorizations.
+
+NOTE: Les propositions sont également appelées "J'aime" dans l'interface des participants.
+
+image::features/endorsements/sidebar.png[Endorsement button in sidebar]
+
+== Endorse / like a content
+
+To endorse a content, click the "Like" button below the content.
+
+image::features/endorsements/list.png[List of endorsements]
+
+Lorsqu'un participant appartient à un groupe vérifié, il peut également souscrire comme ce groupe en sélectionnant l'identité.
+
+image::features/endorsements/modal.png[Select identity modal]
+
+Par défaut, la liste des avances est réduite. Pour voir tous les endorseurs, vous devez aussi cliquer sur l'icône "+ x".
+
+image:features/endorsements/full_list.png[Liste complète des approbations]
+
+Les participants peuvent également ne pas apprécier le contenu s'ils changent d'avis.

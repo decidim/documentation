@@ -1,0 +1,87 @@
+= Membres de l'assemblée
+
+== Understand the basics
+
+Les membres de l'Assemblée permettent de montrer à tous les participants qui appartiennent à une assemblée donnée, que ce soit des individus ou des groupes.
+Il s'agit d'une caractéristique spécifique à l'espace d'assemblage, fait pour améliorer la transparence des assemblages de l'organisation.
+
+image::spaces/assemblies/assembly_members.png[Assembly members]
+
+== Gérer les membres de l'assemblée
+
+Pour accéder à la liste des membres de l'assemblée, cliquez dans le panneau de navigation secondaire de l'élément "Membres".
+
+image::spaces/assemblies/assembly_members_list.png[Assembly members administration list]
+
+== Actions
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Modifier l'icône]
+|Editer
+|Éditer les champs membres
+
+|image:icons/action_delete.png[Supprimer l'icône]
+|Supprimez
+|Supprimer ce membre.
+|===
+
+== Créer un membre de l'assemblée
+
+Pour créer un nouveau membre de l'assemblée, cliquez sur le bouton "Nouveau membre de l'assemblée" en haut à droite de la page.
+
+image::spaces/assemblies/assembly_members_new_form.png[Assembly members new form]
+
+.Nouveau formulaire de membre de l'assemblée
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Type de participant
+|Obligatoire
+|Si le membre de cette assemblée a déjà un compte sur l'instance ou non.
+
+|Nom complet
+|Requis.
+|Champ affiché si "non participant" a été sélectionné.
+
+|Avatars
+|Facultatif.
+|Champ affiché si "non participant" a été sélectionné.
+
+|Utilisateur ou groupe
+|Requis si c'est un participant existant.
+|Tapez au moins trois caractères pour rechercher le compte du participant.
+
+|Position
+|Obligatoire
+|Choisissez l'un des présidents, vice-président, secrétaire ou autre. Dans le cas contraire, vous pouvez remplir le titre du poste.
+
+|Rang d'affichage
+|Facultatif
+|Quel ordre les membres ont en relation avec les autres membres. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux membres, "Member a" avec le poids "10" et "Member b" avec le poids "0" alors "Member b" est d'abord lors de la commande.
+
+|Date de désignation
+|Obligatoire
+|Lorsque cette personne ou ce groupe a été assigné en tant que membre de cette assemblée. Format attendu : jj/mm/aaaa.
+
+|Date de fin
+|Facultatif
+|Quand cette personne ou ce groupe a cessé d'être un membre de cette assemblée. Format attendu : jj/mm/aaaa.
+
+|Sexe
+|Facultatif
+|À quel genre cette personne s'identifie le plus.
+
+|Date d'anniversaire
+|Facultatif
+|Quand cette personne est-elle née. Format attendu : jj/mm/aaaa.
+
+|Lieu de naissance
+|Facultatif
+|Où cette personne est-elle née.
+|===

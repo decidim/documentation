@@ -1,0 +1,75 @@
+= Catégories
+
+== Understand the basics
+
+Les catégories (et sous-catégories) sont utilisées pour classer les ressources à l'intérieur d'un espace.
+
+Un administrateur peut les définir, peut être affecté lors de la création de ressources, et les participants peuvent ensuite filtrer les
+différentes ressources par ces catégories. Par exemple, elles peuvent être utilisées dans des propositions, des réunions et des débats.
+
+. Les administrateurs définissent les catégories dans un espace.
+. Les participants peuvent créer des ressources et leur donner une catégorie.
+. Les participants peuvent ensuite filtrer par catégories.
+
+image::spaces/categories_sidebar.png[Filter categories in proposals]
+
+NOTE: Une fois qu'une catégorie est utilisée, elle ne peut pas être supprimée, car il y a des ressources qui y sont liées.
+
+Decidim a d'autres moyens de classer les ressources, par exemple xref:admin:settings/scopes.adoc[Scopes] et
+xref:admin:features/social_features/hashtags.adoc[Hashtags].
+La principale différence est que les catégories peuvent être définies dans un espace donné, Les périmètres sont globaux pour toute la plate-forme, et les Hashtags
+peuvent être définis par les participants.
+
+Les catégories peuvent être imbriquées, ce qui signifie qu'une catégorie peut avoir des sous-catégories.
+
+== How to find it?
+
+Pour configurer les catégories, cliquez sur l'élément *Catégories* dans n'importe quel espace participatif.
+
+image::spaces/categories.png[View categories in a space administration page]
+
+== Créer une nouvelle catégorie
+
+Cliquez sur le bouton "Nouvelle catégorie" en haut à droite.
+
+image:espaces/categories_new_form.png[Créer un nouveau formulaire de catégorie]
+
+.Créer un formulaire de catégorie
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Quel est le nom de cette catégorie.
+
+|Rang d'affichage
+|Facultatif
+|Quel ordre il a en relation avec les autres catégories. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux catégories, "Catégorie a" avec le poids "10" et "Catégorie b" avec le poids "0", alors "Catégorie b" est d'abord lors de la commande.
+
+|Parent
+|Facultatif
+|Quelle est la catégorie parente?
+|===
+
+== Gérer les catégories
+
+Vous pouvez trouver toutes les catégories dans la liste dans le panneau d'administration, avec:
+
+* *Nom*: nom de la catégorie, donné lors de la création ou de l'édition par l'administrateur.
+
+== Actions
+
+.Actions des catégories dans la liste des catégories
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Modifier l'icône]
+|Editer
+|Pour modifier le nom, la position de la commande et le parent de la catégorie.
+
+|image:icons/action_delete.png[Supprimer l'icône]
+|Supprimez
+|Supprimer la catégorie. Une catégorie ne peut pas être supprimée si elle contient des ressources.
+|===

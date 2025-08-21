@@ -1,0 +1,154 @@
+= Page d'accueil
+
+== Understand the basics
+
+Chaque processus et assemblage a une page de destination, avec différents blocs de contenu qui peuvent être ajoutés, supprimé, activé, ordonné et configuré,
+comme xref:admin:settings/homepage. doc[Homepage] blocs de contenu.
+
+Pour organiser une page de destination, entrez l'espace et cliquez sur l'élément de la page d'accueil dans la barre de navigation de gauche.
+Vous êtes redirigé vers le panneau de configuration de la page d'accueil.
+
+. Ajoutez différents blocs de contenu en cliquant sur le bouton « Ajouter un bloc de contenu » et choisissez celui que vous souhaitez ajouter.
+. Configurer le bloc de contenu quand c'est possible.
+. Enfin, déplacez le bloc de contenu dans la colonne des blocs de contenu actifs pour le faire apparaître sur la page d'accueil.
+
+image::spaces/landing_page/landing_page_admin.png[Landing page content blocks]
+
+== Blocs de contenu de la page d'accueil
+
+Ci-dessous, vous trouverez tous les guides de configuration des blocs de contenu et les captures d'écran de la façon dont ils sont affichés sur la page d'accueil.
+
+=== Image principale et bouton d'action
+
+Les blocs d'image héros et de contenu CTA permettent d'afficher dans la page de destination de l'espace:
+
+* *title*: the space title.
+* *hashtag*: the space hashtag redirecting to the X platform.
+* *subtitle*: the space subtitle.
+* *a call to action button*: by default, the button isn't display. Pour l'activer, cliquez sur l'icône "Modifier" du bloc de contenu.
+* *an image*: the downloaded image is displayed with an opacity filter, to make sure the text is readable.
+
+image::spaces/landing_page/hero_admin.png[Landing page content Hero image content block form]
+
+.Formulaire de bloc de contenu de page d'accueil des héros et des administrateurs
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Texte d'appel à l'action
+|Facultatif
+|Texte affiché sur le bouton CTA.
+
+|URL du bouton d'appel à l’action
+|Facultatif
+|URL où le bouton redirige les participants. Peut être une URL externe, ou un slug si dans l'espace.
+
+|Image
+|Facultatif
+|Image affichée dans l'arrière-plan du bloc de contenu. De préférence une image au format paysage ne contenant pas de texte
+|===
+
+image::spaces/landing_page/hero_front.png[Landing page content Hero image content block frontend]
+
+=== Annonce
+
+Le bloc annonce affiche le contenu du champ d'annonce de la configuration de l'espace, dans une boîte bleue d'annonce.
+Il permet aux administrateurs de mettre en valeur des informations importantes.
+
+image::spaces/landing_page/announcement_front.png[Landing page content Announcement content block]
+
+=== Données principales
+
+Le bloc de données principal affiche la description courte et la description de l'espace et pour les assemblages, le but de l'action et de la composition.
+
+image::spaces/landing_page/main_data.png[Landing page content Main data content block]
+
+=== Phase / Type & durée
+
+Le bloc phase & durée affiche la date de début et de fin du processus, et le bloc actuel xref:admin:spaces/processes/phases.adoc[phase] des processus.
+Pour les assemblages, il affiche la durée de l'assemblage.
+
+image::spaces/landing_page/duration.png[Landing page content Phase and duration content block]
+
+=== Métadonnées
+
+Le bloc de métadonnées affiche tous les champs de métadonnées saisis dans la configuration de l'espace.
+
+image::spaces/landing_page/metadata.png[Landing page content Metadata content block]
+
+=== Dernière activité
+
+Le dernier bloc d'activité montre les dernières activités de l'espace, les articles de blog, les commentaires, les débats, etc.
+Vous pouvez configurer le nombre d'avatars affichés à côté du titre.
+
+image::spaces/landing_page/activities.png[Landing page content Last activity content block]
+
+=== Statistiques
+
+image::spaces/landing_page/statistics.png[Landing page content Statistics content block]
+
+=== Métriques
+
+image::spaces/landing_page/metrics.png[Landing page content Metrics content block]
+
+=== Processus connexes
+
+image::spaces/landing_page/processes.png[Landing page content Related processes content block]
+
+Vous pouvez configurer le nombre de processus à afficher dans ce bloc de contenu en cliquant sur le bouton "Modifier" du bloc de contenu.
+
+image::spaces/landing_page/processes_admin.png[Landing page content Related processes content block]
+
+=== Assemblées liées
+
+image::spaces/landing_page/assemblies.png[Landing page content Related assemblies content block]
+
+Vous pouvez configurer le nombre d'assemblages à afficher dans ce bloc de contenu en cliquant sur le bouton "Modifier" sur le bloc de contenu.
+
+image::spaces/landing_page/assemblies_admin.png[Landing page content Related assemblies content block]
+
+=== Documents connexes
+
+Les documents connexes permettent à l'administrateur d'afficher les fichiers xref:admin:spaces/processes/attachments.adoc[Attachments] sur la page de destination, à l'exception des images.
+
+image::spaces/landing_page/documents.png[Landing page content Related documents content block]
+
+=== Photos associées
+
+Les images associées permettent à l'administrateur d'afficher les images xref:admin:spaces/processes/attachments.adoc[Attachments] sur la page d'atterrissage.
+
+image::spaces/landing_page/images.png[Landing page content Related images content block]
+
+=== Réunions à venir
+
+Les réunions à venir permettent à l'administrateur d'afficher le prochain xref:admin:components/meetings.adoc[Meetings] sur la page d'accueil avec une carte quand ils ont un emplacement.
+Vous pouvez configurer le composant pour qu'il prenne les réunions en cliquant sur le bouton Modifier du bloc de contenu.
+
+image::spaces/landing_page/meetings.png[Landing page content meetings content block]
+
+=== Publications
+
+Le bloc de contenu des messages permet à l'administrateur d'afficher les derniers messages publiés dans l'espace, avec leurs images si elles ont été ajoutées en tant que pièces jointes aux messages.
+Vous pouvez configurer le composant pour prendre les messages en cliquant sur le bouton Modifier du bloc de contenu.
+
+image::spaces/landing_page/posts.png[Landing page content posts content block]
+
+=== Propositions
+
+Les propositions permettent d'afficher un échantillon de propositions sur la page d'accueil de l'espace.
+
+image::spaces/landing_page/proposals.png[Landing page content proposals block edition]
+
+Vous pouvez configurer l'ordre d'affichage et le composant Proposition en cliquant sur le bouton Modifier du bloc de contenu.
+
+image::spaces/landing_page/proposals_admin.png[Landing page proposals content block]
+
+=== Résultats
+
+image::spaces/landing_page/results.png[Landing page results content block]
+
+Vous pouvez configurer l'ordre d'affichage et la responsabilisation pour prendre les résultats du composant en cliquant sur le bouton Modifier du bloc de contenu.
+
+=== HTML
+
+Le bloc contenu du bloc HTML permet d'ajouter un bloc HTML modifiable sur la page d'atterrissage, et donc de créer une section personnalisée.

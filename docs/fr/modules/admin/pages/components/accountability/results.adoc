@@ -1,0 +1,122 @@
+= Résultats
+
+== Understand the basics
+
+Results are the entities composing the accountability component. They can be linked to proposals, projects, meetings, and have
+categories, statuses and dates assigned.
+
+Les administrateurs peuvent également créer des sous-résultats, pour détailler les éléments nécessaires à une implémentation de résultats.
+
+== Créer un résultat
+
+To start creating results, click in the component title in the navigation bar or in the component list, or click in the
+image:icons/action_edit.png[Manage component icon] icon on the components list.
+
+image::components/accountability/new_result_button.png[New result button]
+
+Ensuite, cliquez sur le bouton "Nouveau résultat" en haut à droite de la page.
+
+image::components/accountability/new_result.png[New result form]
+
+.Formulaire de nouveau résultat
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Titre du résultat.
+
+|Description
+|Facultatif
+|Description du résultat.
+
+|Secteur
+|Facultatif
+|Available when scopes are enabled in the space.
+
+|Catégorie
+|Facultatif
+|Permet de catégoriser les résultats sur la page d'atterrissage de la responsabilité.
+
+|Date de début
+|Facultatif
+|Format attendu : jj/mm/aaaa.
+
+|Date de fin
+|Facultatif
+|Format attendu : jj/mm/aaaa.
+
+|Statut
+|Facultatif
+|Permet de donner un statut aux résultats.
+
+|Avancement
+|Facultatif
+|Pourcentage de progression du résultat.
+
+|Propositions
+|Facultatif
+|Les propositions qui sont à l'origine du résultat.
+
+|Projets inclus
+|Facultatif
+|Projets qui sont à l'origine du résultat.
+|===
+
+== Gérer les résultats
+
+Sur la liste des résultats dans le panneau d'administration, les administrateurs peuvent voir :
+
+* *ID* : Numéro d'identification pour ce résultat.
+* *Titre* : Titre du résultat.
+* *Catégorie* : Catégorie du résultat.
+* *Portée* : Portée du résultat, si activé dans l'espace participatif.
+* *xref:admin:admin:components/Accounability/statuses.adoc[Status]*: Statut du résultat.
+* *Progression* : Pourcentage de progression.
+* *Créé*: Date de création du résultat.
+
+Vous pouvez filtrer et trier cette liste en cliquant sur le bouton "Filtre" et sur les en-têtes des colonnes.
+Vous pouvez également rechercher des résultats par leur ID et leur titre dans la barre de recherche.
+
+image::components/accountability/results_list_filter.png[New result button]
+
+== Actions
+
+.Actions
+[cols="10h,~,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Modifier l'icône]
+|Editer
+|To edit the result.
+
+|image:icons/action_plus.png[New result icon]
+|New result
+|Redirects to the list of sub-results, and allows to create sub-results.
+
+|image:icons/action_clock.png[Project evolution icon]
+|xref:admin:components/accountability/timeline.adoc[Project evolution]
+|Allows you to manage the project evolution and timeline entries.
+
+|image:icons/action_folder.png[Icônes de dossiers]
+|Dossiers
+|To create folders to classify the attachments.
+
+|image:icons/action_attachments.png[Icône des pièces jointes]
+|Fichiers joints
+|To create and manage attachments related to the result.
+
+|image:icons/action_preview.png[Icône d'aperçu]
+|Aperçu
+|To preview the result in the user panel.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Autorisations
+|To handle the authorizations needed to comment this specific result.
+
+|image:icons/action_delete.png[Supprimer l'icône]
+|Supprimez
+|To delete this result.
+|===

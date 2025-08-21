@@ -1,0 +1,103 @@
+= Types d'enregistrement
+
+== Understand the basics
+
+Registrations are one of the specificity of the conference space, as they can allow participants to register to the whole conference,
+to certain days only, or to specific tracks for example, rather than registering meeting by meeting.
+
+NOTE: Si vous voulez activer l'inscription, vous devez définir et publier au moins un type d'inscription.
+
+Les administrateurs peuvent configurer ces différents types de "tickets" dans la section types d'enregistrement :
+
+. Définir les types d'enregistrement
+. Activer les inscriptions quand elles sont prêtes
+. Les participants sont alors en mesure de s'inscrire et de choisir le type d'inscription
+
+Une fois les inscriptions activées, les participants peuvent cliquer sur un bouton pour s'inscrire à la conférence dans la page d'atterrissage
+et dans l'en-tête de la conférence.
+
+image::spaces/conferences/registration_button_hero.png[Registration button on hero section]
+
+image::spaces/conferences/registration_button_landing.png[Registration button on landing page details]
+
+image::spaces/conferences/registration_button_landing_footer.png[Registration button on landing page register section]
+
+== Gérer les types d'inscription
+
+Pour accéder à la configuration des types d'enregistrement, cliquez dans le panneau de navigation secondaire de l'élément "Liens médias".
+
+image::spaces/conferences/registration_types_backend.png[Manage registration types]
+
+=== Actions
+
+NOTE: Une fois que les participants s'inscrivent à un type d'inscription, il ne peut pas être modifié ou supprimé.
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Modifier l'icône]
+|Editer
+|Éditer ce type d'inscription.
+
+|image:icons/action_activate.png[Publier l'icône du haut-parleur]
+|Publier
+|Publier ce type d'inscription (lorsqu'il n'est pas publié)
+
+|image:icons/action_unpublish.png[Dépublier l'icône du haut-parleur]
+|Dépublier
+|Pour dépublier ce type d'inscription (lorsqu'il est publié)
+
+|image:icons/action_delete.png[Supprimer l'icône]
+|Supprimez
+|Supprimer ce type d'inscription.
+|===
+
+== Créer un nouveau type d'inscription
+
+Pour créer un nouveau type d'inscription, cliquez sur le bouton "Nouveau type d'inscription" en haut à droite de la page.
+
+image::spaces/conferences/new_registration_type.png[Create a new registration type form]
+
+.Créer un nouveau type d'inscription
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Le titre de ce type d'inscription.
+
+|Rang d'affichage
+|Obligatoire
+|Quel ordre il a en relation avec les autres types. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux types, "Jour 1" avec le poids "10" et "Jour 2" avec le poids "0" puis "Jour 2" est d'abord lors de la commande.
+
+|Description
+|Obligatoire
+|Description pour ce type d'inscription.
+
+|Prix
+|Facultatif
+|Définissez un prix pour ce type d'inscription. Si vous ne définissez pas de prix, alors c'est gratuit.
+
+|Sélectionnez les réunions de la conférence
+|Facultatif
+|Les réunions auxquelles ce type d'inscription donne accès.
+|===
+
+== S'inscrire en tant que participant
+
+Si le participant n'est pas connecté, en cliquant sur l'un des boutons "S'inscrire", ils peuvent se connecter ou créer un compte,
+et voir les types d'inscription.
+
+image:espaces/conférences/registration_types_frontend_wo_user.png[Sélectionnez le type d'inscription sans compte utilisateur]
+
+Si le participant est connecté, en cliquant sur l'un des boutons "S'inscrire", il peut s'inscrire directement.
+
+image::spaces/conferences/registration_types_frontend_w_user.png[Select registration type with user account]
+
+En cliquant sur le bouton Enregistrer pour un type d'inscription, une fenêtre pop-up apparaît avec les conditions d'inscription
+du formulaire de configuration de la conférence.
+
+image::spaces/conferences/registration_pop_up.png[Pop up with registration terms]

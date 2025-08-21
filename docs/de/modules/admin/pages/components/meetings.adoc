@@ -1,0 +1,122 @@
+= Meetings
+
+== Understand the basics
+
+The Meetings component allows administrators to organize, advertise, deal with registration and wrap up in-person or online meetings.
+Depending on the component configuration, meetings can be created only by administrators, or also by participants.
+
+In this documentation section, you can find how to configure and manage all of those items:
+
+* xref:admin:components/meetings/meetings.adoc[Meetings creation]: Create official or participant meetings.
+* xref:admin:components/meetings/registrations.adoc[Registrations]: Manage how participants can register to attend the meetings.
+* xref:admin:components/meetings/agenda.adoc[Agenda]: Announce the meetings topics to be discussed.
+* xref:admin:components/meetings/polls.adoc[Polls]: Enable quick voting during an online meeting.
+* xref:admin:components/meetings/close.adoc[Close]: Add the final report and minutes of the meeting.
+
+image::components/meetings/example01.png[Example meeting detail 01]
+
+== Konfiguration
+
+To create a Meetings component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
+
+image::components/meetings/component_meeting.png[Add Meetings component button]
+
+Then:
+
+. Click on the "Components" item in the secondary menu
+. Click the "Add component" button
+. Select "Meetings"
+. Fill the component creation form
+
+You can still update this form and the configuration after creating the component, by clicking the
+image:icons/action_configure.png[Configure icon] icon in the components list.
+
+image::components/meetings/component.png[Add a meetings component]
+
+.Komponente hinzufügen - Meetings Formular
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Wie lautet der Name dieser Komponente.
+
+|Bestellposition
+|Optional
+|The order of the component in relation with the other components. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0"
+then "component b" is first when ordering.
+|===
+
+.Komponente hinzufügen - Meeting-Formular: Globale Einstellungen
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Bereiche aktiviert
+|Optional
+|Aktivieren, wenn die Bereichsfilterung in dieser Komponente erfolgen soll.
+
+|Bereich
+|Optional
+|Which xref:admin:settings/scopes.adoc[Scopes] does this component belongs to.
+
+|Mitteilung
+|Optional
+|A general announcement visible in the meetings list in the participant interface.
+
+|Standard-Registrierungsbedingungen
+|Optional
+|The registration terms of service that the participant need to accept when registering.
+
+|Kommentare aktiviert
+|Optional
+|Whether you want to have comments creation enabled in the meetings.
+
+|Maximale Länge der Kommentare
+|Optional
+|The characters limit that participants have when making comments. Lassen Sie 0 für den Standardwert.
+
+|Registrierungscode aktiviert
+|Optional
+|Check if you want to automatically give registration codes to participants.
+Erfahren Sie mehr unter xref:components/meetings/registrations.adoc[Registrations].
+
+|Aktionsberechtigungen können für jedes Meeting festgelegt werden
+|Optional
+|Wenn Sie mehr granulare Berechtigungen in jedem der Meetings wünschen.
+
+|Pad-Erstellung aktivieren
+|Optional
+|Wenn Sie möchten, dass ein Etherpad in Ihre Meetings eingebettet ist. Muss die xref:services:etherpad.adoc[Etherpad] Integration konfiguriert haben.
+
+|Teilnehmer können Meetings erstellen
+|Optional
+|Erlaubt Teilnehmern neue Meetings zu erstellen. Learn more in xref:_citizens_meetings[Citizens meetings].
+
+|Karten aktiviert
+|Optional
+|Whether you want to show a map with the meetings addresses in the meetings list and pages.
+|===
+
+.Komponente hinzufügen - Meeting-Formular: Schritteinstellungen
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Mitteilung
+|Optional
+|A general announcement visible in the general meetings list for this phase.
+
+|Kommentare aktiviert
+|Optional
+|Whether you want to have comments creation enabled in the meetings for this phase.
+|===
+
+== Beispiele
+
+Some examples of where this component is used:
+
+* https://www.decidim.barcelona/processes/PAM2020/f/3734/[Program d'Actuació Municipal (PAM) 2020-2023]
+* https://meta.decidim.org/assemblies/coordination-committee/f/1037/meetings[The Decidim association coordination committee meetings]

@@ -1,0 +1,95 @@
+= Phases
+
+== Understand the basics
+
+Un processus participatif est une séquence de phases ordonnées dans le temps. Selon la phase de la timeline du processus que vous
+êtes, vous pouvez alors activer et configurer les fonctionnalités dont vous avez besoin pour chaque phase.
+
+Ideally, the Phases of a Participatory Process are always the same and are not changed, so participants can know what are
+the rules and time frame and can organize to know when it'd be best for them to participate in this process.
+
+Par exemple, la structure standard d'un processus participatif pourrait être la suivante:
+
+. Présentation
+. Diagnostic
+. Création et débat de propositions
+. Priorisation des propositions
+. Évaluation des propositions
+. Surveillance
+
+Participants can find the link to different phases of a participatory process in the "Phase and duration" landing page content block,
+when it's enabled by an administrator in the process xref:admin:spaces/processes/landing_page.adoc[Landing page].
+
+image::spaces/processes/process_phases_block.png[Block with processes phases link]
+
+En cliquant sur le lien pour la phase active, ils peuvent voir la description complète et l'explication des phases dans une fenêtre contextuelle.
+
+image::spaces/processes/process_phases.png[Process phases explanation]
+
+== Gérer les phases
+
+Pour accéder à la configuration des phases, cliquez dans le panneau de navigation secondaire de l'élément "Phases".
+
+image::spaces/processes/process_phases_list.png[Phases of a participatory process]
+
+=== Actions
+
+.Actions
+[cols="10h,20h,~,~"]
+|===
+|Icône |Nom |Définition |Condition
+
+|image:icons/action_edit.png[Modifier l'icône]
+|Editer
+|Éditer cette phase.
+|Toujours disponible
+
+|image:icons/action_activate.png[Activer l'icône]
+|Activer
+|Pour faire de cette phase la phase active.
+|Disponible uniquement pour les phases inactives.
+
+|image:icons/action_delete.png[Supprimer l'icône]
+|Supprimez
+|Supprimer cette phase.
+|Toujours disponible
+|===
+
+== Créer une nouvelle phase
+
+Pour créer une nouvelle phase, cliquez sur le bouton "Nouvelle phase" en haut à droite de la page.
+
+image::spaces/processes/process_phases_new_form.png[Create a new participatory process phase form]
+
+.Créer un formulaire de phase de processus
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Le titre de cette phase, affiché dans le bloc de contenu de phase et sur les cartes de processus lorsque la phase est active.
+
+|Description
+|Facultatif
+|Une longue description expliquant à quoi sert cette phase.
+
+|Date de début
+|Facultatif
+|La date de début de cette phase de processus. Format attendu : jj/mm/aaaa
+
+|Date de fin
+|Facultatif
+|La date de fin de cette phase de processus. Format attendu : jj/mm/aaaa
+
+|Chemin de l'appel à l'action
+|Facultatif
+|Déprécié
+
+|Texte de l'appel à l'action
+|Facultatif
+|Déprécié
+|===
+
+CAUTION: La configuration de l'ATC à travers la phase du processus participatif est dépréciée avec la nouvelle conception.
+Maintenant cela se fait dans la page d'atterrissage, en utilisant le bloc de contenu Héros et image.

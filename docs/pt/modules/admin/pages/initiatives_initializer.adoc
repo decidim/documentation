@@ -1,14 +1,14 @@
-= Initiatives Initializer
+= Inicializador de Iniciativas
 
-For using the initiatives module, you'll want to review the configurations that are in the initializer. See the xref:configure:initializer.adoc[general Initializer configuration] for more information regarding this file.
+Para usar o módulo de iniciativas, você vai querer revisar as configurações que estão no inicializador. Veja a xref:configure:initializer.adoc[configuração geral do Inicializador] para mais informações sobre este arquivo.
 
-You'll need to change in the `config/initializer/decidim.rb` file. You could also create an ad-hoc file for these configurations, like `config/initializer/initiatives.rb`.
+Você precisará alterar o arquivo `config/initializer/decidim.rb`. Você também pode criar um arquivo ad-hoc para essas configurações, como `config/initializer/initiatives.rb`.
 
-After making changes to this file you'll need to also restart your application server.
+Após fazer alterações neste arquivo você precisa reiniciar o servidor da sua aplicação.
 
-== Creation enabled
+== Criação ativada
 
-Setting that defines whether creation is allowed to any validated user or not. Defaults to true.
+Configuração que define se a criação é ou não permitida para qualquer usuário validado. O padrão é verdadeiro.
 
 [source,ruby]
 ....
@@ -17,10 +17,10 @@ Setting that defines whether creation is allowed to any validated user or not. D
   end
 ....
 
-== Similarity threshold
+== Limite de similaridade
 
-Setting that defines the similarity minimum value to consider two
-initiatives similar. Defaults to 0.25.
+Definindo que define o valor mínimo de similaridade para considerar duas iniciativas
+similares. O padrão é 0.25.
 
 [source,ruby]
 ....
@@ -29,10 +29,10 @@ initiatives similar. Defaults to 0.25.
   end
 ....
 
-== Similarity limit
+== Limite de similaridade
 
-Setting that defines how many similar initiatives will be shown.
-Defaults to 5.
+Definição que define quantas iniciativas semelhantes serão mostradas.
+O padrão é 5.
 
 [source,ruby]
 ....
@@ -41,10 +41,10 @@ Defaults to 5.
   end
 ....
 
-== Minimum committee members
+== Mínimo de membros do comitê
 
-Minimum number of committee members required to pass the initiative to
-technical validation phase. Only applies to initiatives created by
+Número mínimo de membros do comitê necessários para passar a iniciativa para
+etapa de validação técnica. Only applies to initiatives created by
 individuals.
 
 [source,ruby]
@@ -54,10 +54,10 @@ individuals.
   end
 ....
 
-== Default signature time period length
+== Duração do período de tempo de assinatura padrão
 
-Number of days available to collect supports after an initiative has been
-published.
+Número de dias disponíveis para coletar suportes depois que uma iniciativa tiver sido
+publicada.
 
 [source,ruby]
 ....
@@ -66,9 +66,9 @@ published.
   end
 ....
 
-== Default components
+== Componentes predefinidos
 
-Components enabled for a new initiative
+Componentes ativados para uma nova iniciativa
 
 [source,ruby]
 ....
@@ -77,10 +77,10 @@ Components enabled for a new initiative
   end
 ....
 
-== First notification percentage
+== Primeira porcentagem da notificação
 
-Notifies when the given percentage of supports is reached for an
-initiative.
+Notifica quando a determinada porcentagem de suportes é alcançada para uma iniciativa
+.
 
 [source,ruby]
 ....
@@ -89,10 +89,10 @@ initiative.
   end
 ....
 
-== Second notification percentage
+== Segunda porcentagem de notificação
 
-Notifies when the given percentage of supports is reached for an
-initiative.
+Notifica quando a determinada porcentagem de suportes é alcançada para uma iniciativa
+.
 
 [source,ruby]
 ....
@@ -101,9 +101,9 @@ initiative.
   end
 ....
 
-== Stats cache expiration time
+== Expiração do cache de estatísticas
 
-Sets the expiration time for the statistic data.
+Define o tempo de expiração para os dados de estatística.
 
 [source,ruby]
 ....
@@ -112,11 +112,11 @@ Sets the expiration time for the statistic data.
   end
 ....
 
-== Max time in validating state
+== Tempo máximo de validação de estado
 
-Maximum amount of time in validating state.
-After this time the initiative will be moved to
-discarded state.
+Quantidade máxima de tempo na validação do estado.
+Após esta vez, a iniciativa será transferida para
+estado descartado.
 
 [source,ruby]
 ....
@@ -125,11 +125,11 @@ discarded state.
   end
 ....
 
-== Print enabled
+== Impressão ativada
 
-Print functionality enabled. Allows the user to get
-a printed version of the initiative from the administration
-panel.
+Funcionalidade de impressão habilitada. Permite ao usuário obter a versão
+impressa da iniciativa do painel de administração
+.
 
 [source,ruby]
 ....
@@ -138,33 +138,33 @@ panel.
   end
 ....
 
-== Timestamp service
+== Serviço Timestamp
 
-Set a service to generate a timestamp on each vote. The
-attribute is the name of a class whose instances are
-initialized with a string containing the data to be
-timestamped and respond to a timestamp method.
+Defina um serviço para gerar um timestamp em cada votação. O atributo
+é o nome de uma classe cujas instâncias são
+inicializadas com uma seqüência de caracteres que contém os dados para ser
+timestamped e responder a um método de marcação de tempo.
 
 [source,ruby]
 ....
   config_accessor :timestamp_service
 ....
 
-== PDF signature service
+== Serviço de assinatura PDF
 
-Set a service to add a signature to pdf of signatures.
-The attribute is the name of a class whose instances are
-initialized with the document to be signed and respond to a
-signed_pdf method with the signature added.
+Defina um serviço para adicionar uma assinatura ao PDF de assinaturas.
+O atributo é o nome de uma classe cujas instâncias são
+inicializadas com o documento a ser assinado e responder a um método
+signed_pdf com a assinatura adicionada.
 
 [source,ruby]
 ....
   config_accessor :pdf_signature_service
 ....
 
-== Do no require authorization
+== Não requerer autorização
 
-This flag allows creating authorizations to unauthorized users.
+Este sinalizador permite criar autorizações para usuários não autorizados.
 
 [source,ruby]
 ....

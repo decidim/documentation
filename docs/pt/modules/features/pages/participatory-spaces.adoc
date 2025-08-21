@@ -1,66 +1,66 @@
-= Participatory spaces
+= Espaços participativos
 
 :page-partial:
 
-Participatory spaces define the main participatory channels. They are displayed in the platform's main upper menu.
+Espaços participativos definem os principais canais participativos. Eles são exibidos no menu superior da plataforma.
 
-The basic logic behind Decidim's structure is that *components work together in the participatory spaces*. There are different types of spaces (initiatives, processes, consultations and assemblies) and various instances within each type (a process for an election and another for participatory budgets, council body for neighbourhoods and another for workers, an initiative to call for a change in legislation and another for something to be included in a plenary meeting agenda, etc.).
+A lógica básica por trás da estrutura do Decidim é que *componentes trabalham juntos nos espaços participativos*. Existem diferentes tipos de espaços (iniciativas, processos, consultas e assembleias) e várias instâncias dentro de cada tipo (um processo eleitoral e outro para orçamentos participativos, Órgão conselho de bairros e outro para os trabalhadores, uma iniciativa para exigir uma alteração da legislação e outra para incluir algo numa agenda de reuniões do plenário, etc.).
 
-== Processes
+== processos
 
-Participatory processes require a general *configuration* form with the following fields: Title or name of the process; short name for URL; hash tag (used as a reference for communications on social networks); short description; long description; home page image; banner image; date of start and finish; field; promoter group (responsible for the participatory process on a political level, may be the local authority or a group made up of the authority’s experts/politicians and associations and other organisations); who it is aimed at; goal of the participatory process and participatory structure. The participatory process allows *accompanying documents* to be added.
+Processos participativos requerem um formulário geral de *configuração* com os seguintes campos: Título ou nome do processo; nome curto para URL; hash tag (usado como referência para comunicações nas redes sociais); descrição curta; descrição longa; imagem da página inicial; imagem do banner; data de início e fim; campo; grupo de promotores (responsável pelo processo participativo a nível político, pode ser a autoridade local ou um grupo composto por peritos/políticos e associações da autoridade e outras organizações); quem ela é direcionada; objetivo do processo participativo e da estrutura participativa. O processo participativo permite que *documentos de acompanhamento* sejam adicionados.
 
-Participatory processes are divided into *stages* (e.g. 1. Information and convening stage; 2. diagnostics stage; 3. proposals stage; 4. prioritisation stage; 5. decision stage; 6. evaluation stage and 7. results-monitoring stage). Each stage includes the following configuration fields: title, description, start date, end date.
+Processos participativos são divididos em *estágios* (por exemplo, 1. Informação e reunião de fase; 2. estágio do diagnóstico; 3. Fase das propostas; 4. Estágio de prioridade; 5. estágio de decisão; 6. fase de avaliação e 7. resultados-fase de monitoramento). Cada etapa inclui os seguintes campos de configuração: título, descrição, data de início, data final.
 
-*Highlights of announcements or texts* may also be displayed in the processes, both on the home page and in the heading of each component (proposals, discussions and debates, etc.) Different messages can be configured depending on the particular stage of a process.
+*Destaques dos avisos ou textos* também podem ser exibidos nos processos, tanto na página inicial quanto no título de cada componente (propostas, discussões e debates, etc.) Diferentes mensagens podem ser configuradas dependendo da fase específica de um processo.
 
-A *participatory process configuration tool* enables the simple activation and deactivation of stages and their components. Decidim's process configuration tool is one of its most powerful features, enabling total flexibility in designing participatory processes according to the various realities and forms of citizen participation.
+Uma *ferramenta de configuração do processo participativo* permite a ativação e desativação simples de estágios e seus componentes. A ferramenta de configuração de processo Decidim é uma das mais poderosas funcionalidades Permitir a total flexibilidade na concepção dos processos participativos de acordo com as diferentes realidades e formas de participação dos cidadãos.
 
-The feature of **process groups **enables various processes to be grouped, such as by the Participatory Budgets of different districts or neighbourhoods.
+A característica de **grupos de processo** permite agrupar vários processos, como os Orçamentos Participativos de distritos ou bairros diferentes.
 
-Participatory processes may have one of the following *process statuses*: 0) published or unpublished; 1) open (started); 2) closed (the participatory process has ended but its results are still under way; 3) finished (both the process and its results phase are complete) and 4) future (has not yet started).
+Processos participativos podem ter um dos seguintes *status do processo*: 0) publicado ou não publicado; 1) aberto (iniciado); 2) fechado (o processo participativo terminou, mas os resultados ainda estão em curso; 3) terminado (tanto o processo quanto a sua fase de resultados são completados) e 4) futuro (não foi ainda iniciado).
 
-A process can be **highlighted** (which increases its visibility on the homepage).
+Um processo pode ser **realçado** (que aumenta sua visibilidade na página inicial).
 
-There is also the possibility to **copy participatory processes** from the administration panel. This feature enables process models to be designed and copied so that certain details can be configured within the new processes, avoiding the need to create them from scratch.
+Há também a possibilidade de **copiar processos participativos** do painel de administração. Esta funcionalidade permite que modelos de processo sejam projetados e copiados para que certos detalhes possam ser configurados nos novos processos, evitando a necessidade de as criar a partir do zero.
 
-== Assemblies
+== Assembleias
 
-Decidim allows the **creation and configuration** of participatory or government *assemblies* (government or participatory bodies; councils; work groups, etc.) defined as structured participant groups which, whether on an individual or representative level, meet up periodically, with the authority to make proposals and decisions.
+O Decidim permite a **criação e configuração** de *assembleias* participativas ou do governo (órgãos do governo ou participativos; conselhos; grupos de trabalho, etc.) definidos como grupos de participantes estruturados que, a nível individual ou representativo, se reúnem periodicamente com autoridade para apresentar propostas e decisões.
 
-The *assemblies section* allows you to see a full list of all of the assemblies that are activated and configured from the administration panel. The basic *settings* require the following fields to be completed for each body: name; image; scope (global, territorial or sectoral); body’s function (purpose of action); type of body (government, executive, consultative / advisory, participatory, work group, commission etc.); creation date; created on the initiative of (City Council, citizens or others); duration (indefinite or fixed, in the latter case, finishing date); date of inclusion in Decidim; date of closure and reason; how it is organised (functions, powers etc.); composition; if it can be joined and how to do that; method of choosing members; type/ function of members within the body; composition of internal work groups as monitoring or advisory committees; characteristics of the body; the body's social networks (name of social network and link) and the body’s next meetings.
+A *seção de montagens* permite que você veja uma lista completa de todos os assemblies ativados e configurados a partir do painel de administração. As *configurações* básicas exigem que os seguintes campos sejam completados para cada corpo: nome; imagem; escopo (global, territorial ou sector); função do corpo (finalidade de ação); tipo de órgão (governo, executivo, consultório / consultivo, participativo, grupo de trabalho, comissão, etc. ; data de criação; criada por iniciativa do Conselho Científico, cidadãos ou outros); duração (indefinida ou fixada, neste último caso, data limite); data de inclusão na Decidim; data de encerramento e razão; como é organizada (funções, poderes, etc. ; composição; se ele pode ser unido e como fazer isso; método de escolha dos membros; função/ função dos membros dentro do corpo; composição dos grupos de trabalho internos como comités de acompanhamento ou consultivo; características do corpo; as redes sociais do organismo (nome da rede social e da ligação) e as próximas reuniões do organismo.
 
-* *Convening meetings*: enables to send automatic meeting invitations, collaboratively create agendas, and register attendance. For a complete list of features see the "meetings" component.
-* *Assembly’s characteristics*: open, public, transparent and other characteristics regarding the level of participation that the assembly allows.
-* *Composition:* This enables the composition of the body to be defined in greater detail, using the profiles of participants associated with the body as well as other characteristics. A display of the body’s structure is automatically generated based on the composition of participating members:
-** *Types of members*: Chair, deputy chair, secretaries, others
-** *Membership origin*: by draw; direct election; representation from another assembly; government representation etc.
-** *Internal work groups*: for the creation of sub-assemblies. Work groups will be able to relate to the body they belong to
-** *Characteristics*: Open/closed; transparent; with various access permits.
-* *Display*: allows us to view internal data about each body as well as the associations between assemblies
-** *Composition*: the structure of a body is shown in the form of a circle diagram
-** *Organisation charts*: allow us to view the hierarchy or network of assemblies and their associations.
-* *Map and calendar*: allow us to view the location of all the assemblies on a map and calendar
-* *Involvement with other spaces and components*
-** *Involvement with processes*: assemblies can be promoter groups, start a process or make proposals within a process. A body’s composition may be the result of a process (for electing posts)
-** *Proposals and results*: a body can generate its own proposals or results.
-*** It shows how the proposal was agreed on (by consensus, majority, number of votes etc.).
-** *Meetings*: assemblies will have a list of associated meetings, but some features may jump from one meeting to another, such as citizen initiatives to include an item in an agenda. Likewise, it must be possible to view minutes separately from the meeting, as they are associated directly with the body .
+* *Reunião de reuniões*: permite enviar convites automáticos de reuniões, criar agendas de forma colaborativa e registrar presença. Para obter uma lista completa de recursos, veja o componente "reuniões".
+* *Características da Assembleia*: aberta, pública, transparente e outras características relativas ao nível de participação que o assembly permite.
+* *Composição:* Isso permite que a composição do corpo seja definida com mais detalhes, utilizando os perfis dos participantes associados com o corpo e outras características. Uma exibição da estrutura do corpo é gerada automaticamente com base na composição dos membros participantes:
+** *Tipos de membros*: presidente, vice-presidente, secretárias, outros
+** *Origem da adesão*: por empate; eleições diretas; representação de outra assembleia; representação do governo etc.
+** *Grupos de trabalho internos*: para a criação de submontagens. Grupos de trabalho poderão se relacionar ao corpo ao qual pertencem
+** *Características*: Aberto/fechado; transparente; com várias licenças de acesso.
+* *Exibir*: nos permite ver dados internos sobre cada corpo, bem como associações entre assembleias
+** *Composição*: a estrutura de um corpo é mostrada na forma de um diagrama circular
+** *Gráficos da organização*: permite-nos visualizar a hierarquia ou rede de assemblies e suas associações.
+* *Mapa e calendário*: permita-nos ver a localização de todos os assemblies no mapa e no calendário
+* *Envolvimento com outros espaços e componentes*
+** *Envolvimento com processos*: conjuntos podem ser grupos promotores, iniciar um processo ou fazer propostas dentro de um processo. A composição de um corpo pode ser o resultado de um processo (para eleger postagens)
+** *Propostas e resultados*: um corpo pode gerar suas próprias propostas ou resultados.
+*** Mostra como a proposta foi acordada (por consenso, maioria, número de votos, etc.).
+** *Reuniões*: assemblies terão uma lista de reuniões associadas, mas algumas características podem saltar de uma reunião para outra, como as iniciativas dos cidadãos, para incluir um ponto numa agenda. Do mesmo modo, deve ser possível ver as actas separadamente da reunião, uma vez que estão directamente associadas ao organismo .
 
-== Initiatives
+== Iniciativas
 
-*Initiatives*. This participatory space allows citizens to make proposals and collect the *requisite number of signatures and/or endorsements* depending on type (the various types are set out in the municipal regulations), giving rise to the start of the administrative procedure for its processing and citizen monitoring.
+*Iniciativas*. Este espaço participativo permite que os cidadãos façam propostas e coletem o *número necessário de assinaturas e/ou endossações* dependendo do tipo (os vários tipos são definidos nas regulamentações municipais), Daqui decorre o início do processo administrativo para o seu tratamento e acompanhamento dos cidadãos.
 
-Initiatives operate as follows:
+Iniciativas funcionam da seguinte forma:
 
-* Any person or citizen association can make a citizen-initiative proposal. There are *several types of initiatives* with various numbers of endorsements/signatures required for their processing (these are all configurable). From the initiative-creation page, a description of each of the methods, the number of signatures required and examples (e.g. explanatory videos) can be viewed.
-* To avoid duplicates, once an initiative has been created, the system will present suggestions for **similar initiatives** before continuing with the following step. Once similar proposals have been ruled out, the specific form will be shown for each type of initiative, along with the minimum number of endorsements required. The creator then has an URL at their disposal which can be used to invite others to join in and endorse the initiative. A map is also displayed showing the locations of meeting points to collect signatures should there be any.
-* Once the the initiative has been created, the initiative will move to a **technical moderation and validation** stage, where the City Council’s staff can respond in various ways (by approving it, rejecting it or suggesting amendments).
-* Initiatives can be monitored and **notifications received on updated** statuses, in addition to which their individual promoter or group can periodically send information newsletters to other uses of the platform who have opted to follow the initiative.
-* On reaching the specified end date, an initiative can have two possible states:
-** *Rejected*: where it fails to reach the minimum number of signatures, a message will be shown stating "does not meet the number of signatures required" and the initiative's creator will be notified.
-** *Accepted*: where it has achieved a sufficient number of signatures or endorsements it will be accepted and the corresponding procedure will start.
+* Qualquer pessoa ou associação de cidadãos pode apresentar uma proposta de iniciativa de cidadania. Existem *vários tipos de iniciativas* com vários números de endossos/assinaturas necessários para seu processamento (todas são configuráveis). Na página de criação de iniciativas, uma descrição de cada um dos métodos, o número de assinaturas necessárias e exemplos (por exemplo, vídeos explicativos) podem ser visualizados.
+* Para evitar duplicatas, uma vez que foi criada uma iniciativa, o sistema apresentará sugestões para **iniciativas semelhantes** antes de continuar com o seguinte passo. Uma vez excluídas propostas semelhantes, a forma específica será mostrada para cada tipo de iniciativa, juntamente com o número mínimo de endossos exigidos. O criador tem então à sua disposição uma URL que pode ser utilizada para convidar outros a participar e apoiar a iniciativa. Também é exibido um mapa mostrando os locais das reuniões para coletar assinaturas, caso haja alguma.
+* Uma vez criada a iniciativa, a iniciativa passará a um estágio de **moderação e validação técnica**. nos casos em que os funcionários da cidade possam responder de várias formas (aprovando-o, rejeitando-o ou sugerindo alterações).
+* Iniciativas podem ser monitoradas e **notificações recebidas quando atualizadas** Além disso, o seu promotor ou grupo individual pode enviar periodicamente boletins informativos para outras utilizações da plataforma que optaram por seguir a iniciativa.
+* Ao chegar à data de término especificada, uma iniciativa pode ter dois estados possíveis:
+** *Rejeitado*: onde ele não alcança o número mínimo de assinaturas, uma mensagem será exibida informando "não atende ao número de assinaturas necessárias" e o criador da iniciativa será notificado.
+** *Aceito*: onde alcançou um número suficiente de assinaturas ou endossos, ele será aceito e o procedimento correspondente começará.
 
-== Consultations
+== Consultas
 
-Consultations (a voting procedure where all of the organisation’s participants are called to vote on specific questions), allows participants **to find out about current or prospective consultations**, *discuss and debate* the consultation’s subject area and *monitor* the results. It also provides a *gateway to an e-voting system* which is external to Decidim but integrated in the interface in order to manage and verify identities.
+As consultas (um processo de votação em que todos os participantes da organização são chamados a votar questões específicas), permite que os participantes **conheçam as consultas atuais ou potenciais**, *discuta e debate* o assunto da consulta e *monitor* os resultados. Ele também fornece um *gateway para um sistema de votação por ele* que é externo para o Decidim, mas integrado na interface para gerenciar e verificar identidades.

@@ -1,0 +1,80 @@
+= Mon profil public
+
+== Understand the basics
+
+Chaque participant a un profil public qui montre des détails à son sujet et son activité sur l'instance.
+Cette page de profil est accessible à tous les participants et visiteurs.
+
+== How to find it?
+
+Pour voir le profil public d'un participant, cliquez directement dans son avatar ou son nom d'utilisateur dans le tool-tip du participant.
+
+image::features/my_profile/profile_pop_up.png[Participant tool-tip]
+
+En tant que participant connecté, vous pouvez accéder à votre profil public à partir de deux endroits :
+
+. Cliquez sur votre avatar dans l'en-tête, puis cliquez dans le menu "Mon profil public"
+. Cliquez sur le lien "Mon profil public" dans le pied de page, dans la section "Mon compte"
+
+image::features/my_profile/profile_dropdown.png[Frontend user menu dropdown]
+
+== Onglets de profil
+
+Vous y trouverez différents onglets.
+
+NOTE: Vous pouvez ne pas voir l'onglet Badges et Groupes si vous ne les avez pas activés dans le panneau
+xref:admin:settings/configuration.adoc[Configuration].
+
+=== Activité
+
+Cet onglet affiche toute l'activité du participant, en commençant par le contenu le plus récent.
+
+image::features/my_profile/profile_activity.png[Public profile activity tab]
+
+=== Badges
+
+Les badges du profil public montrent quels badges le participant a accumulé et quel est son niveau actuel pour chaque badge.
+
+Plus d'informations sur les badges sont disponibles sur la page xref:admin:features/social_features/badges.adoc[Page des badges].
+
+image::features/my_profile/profile_badges.png[Public profile badges tab]
+
+=== Abonnements
+
+La section suivante contient une liste des participants et des groupes que le participant suit actuellement.
+En suivant un autre participant ou un groupe sur la plateforme, le participant reçoit des notifications sur l'activité
+effectuée par ces participants ou groupes sur la plateforme. Certains participants peuvent également exiger qu'ils doivent suivre
+un participant avant de pouvoir échanger des messages privés entre eux.
+
+image::features/my_profile/profile_follows.png[Public profile follows tab]
+
+=== Abonnés
+
+La section des abonnés contient une liste des participants et des groupes qui suivent le participant.
+
+image::features/my_profile/profile_followers.png[Public profile followers tab]
+
+=== Groupes
+
+La section Groupes contient tous les groupes auxquels l'utilisateur appartient.
+
+image::features/my_profile/profile_groups.png[Public profile groups tab]
+
+== Actions disponibles
+
+=== Quand sur le profil d'un autre participant
+
+Les participants connectés peuvent effectuer deux actions depuis une autre page de profil public du participant :
+
+. Envoyez-leur un message
+. Suivez les
+. Signalez les
+
+=== Quand vous êtes sur votre propre profil
+
+Les participants connectés peuvent effectuer deux actions à partir de leur page de profil publique :
+
+. Modifiez leur profil : En cliquant sur ce bouton, ils sont redirigés vers leur xref:admin:features/participant_actions/my_account.adoc[account].
+. Créer un groupe : En cliquant sur ce bouton, ils sont redirigés vers xref:admin:features/participant_actions/group_profile.adoc[formulaire de création de groupe].
+
+NOTE: L'option de création de groupe n'est disponible que lorsque les groupes sont activés pour l'organisation.

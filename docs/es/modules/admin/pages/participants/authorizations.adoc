@@ -1,40 +1,44 @@
-= Authorizations
+= Autorizaciones
 
-This section allows you to manage participants' authorizations. It depends on which Authorizations you have configured and
-enabled by your developers. To understand more what are authorizations and how to configure them, please refer to the
-xref:customize:authorizations.adoc[Authorizations section in the Customize Guide].
+Authorizations allow to give specific participation rights to participants who have completed a verification process.
+This verification process can be direct, have multiple steps, be online or in-person.
 
-With authorizations an administrator can define different permissions so participants can make some actions in a component.
-For instance you can configure that only participants who have verified herselves by their identity documents can vote on
-proposals in a participatory process.
+For instance you can configure that only participants who have verified themselves by their identity documents can vote on
+proposals in a specific participatory process.
 
-A participant can see which authorizations does she have available in her account settings.
+NOTE: Several authorizations are available by default, but you can also develop your own authorizations.
 
-image:authorizations_account.png[Authorizations in participants account]
+== Enable / disable authorizations
 
-== Authorizations revocation
+To enable an authorization, you need to have access to the xref:configure:system.adoc[System panel] or ask the instance implementer.
+Para entender más qué son las autorizaciones y cómo configurarlas, por favor consulte la sección
+xref:customize:authorizations.adoc[Autorizaciones en la Guía de Personalización].
 
-A default Decidim installation will not have verified participants.
+Participants can access, update, or delete their authorizations in their xref:admin:features/participant_actions/my_account.adoc[account].
 
-image:authorizations_admin_default.png[Authorizations in a default installation]
+== Métodos de verificación
 
-In the moment that there are some participants verified, an administrator can revoke all the authorizations, as the attributes
-that give permissions to those participants could be changed in time and the platform didn't receive these changes in the
-participants statuses. For instance, an identity document of a participant could be expired, or if a participant have been
-authorized by the "code by postal letter", that participant could move in the meantime.
+Algunas de las autorizaciones disponibles por defecto son:
 
-image:authorizations_admin_revocation.png[Authorizations revocation]
+* xref:admin:participantes/autorizaciones/identity_documents.adoc[Documentos de identidad]
+* xref:admin:participantes/autorizaciones/code_postal_letter.adoc[Código por carta postal]
+* xref:admin:participants/authorizations/census.adoc[Censo de la organización]
 
-It's possible to revoke all the authorizations with "Revoke all", or to only revoke authorizations before a given date.
-Another possiblity is to revoke only the xref:admin:participants/impersonations.adoc[impersonated participants].
+Si alguna de estas autorizaciones no es útil para sus necesidades, hable con su implementador para ver otras alternativas. Aprenda
+más sobre xref:customize:authorizations.adoc[Autorizaciones en la sección Personalizar Guía].
 
-== Verification methods
+== Revocación de autorizaciones
 
-Some of the available authorizations by default are:
+A default Decidim installation don't have verified participants.
 
-* xref:admin:participants/authorizations/identity_documents.adoc[Identity documents]
-* xref:admin:participants/authorizations/code_postal_letter.adoc[Code by postal letter]
-* xref:admin:participants/authorizations/census.adoc[Organization's census]
+image::participants/authorizations_admin_default.png[Authorizations in a default installation]
 
-If any of these authorizations are not useful for your needs, talk with your implementer to see other alternatives. Learn
-more about xref:customize:authorizations.adoc[Authorizations in the Customize Guide section].
+From the moment some participants get verified with an authorization, administrators can revoke all the authorizations at once.
+Indeed, after some time, some of the verifications can be deprecated.
+For instance, identity documents expire after some time, or participants can move from a city.
+Then, an administrator can want to force participants to renew their verification information.
+
+image:participants/authorizations_admin_revocation.png[Authorizations revocation]
+
+It's possible to revoke all the authorizations with "Revoke all," or to only revoke authorizations created before a given date.
+Another possibility is to revoke only the verifications for xref:admin:participants/impersonations.adoc[impersonated participants].

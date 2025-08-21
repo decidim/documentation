@@ -1,42 +1,78 @@
-= Participants Impersonations
+= Participants impersonations
 
-For participants that don't have the knowledge or don't have an email for registering
-an account, there's the Impersonation feature.
+Sometimes, people don't have the time to create an account, or don't have the knowledge or ability to use technological tools.
+Impersonations allow administrators and participant managers to enable those persons to participate anyway.
 
-This allows an 'Administrator' or 'Participant manager' to search through a
-Verification system for an already existing participant and also to create a
-participant without email.
+NOTE: In the code and the User Interface, *Impersonation* and *Managed Participants* are the same thing.
 
-NOTE: At the code and the User Interface we say both *Impersonation* and *Managed
-Participants*. It's the same thing.
+== Enable / disable impersonations
 
-== Panel
+Impersonations are only available when at least one authorization is enabled for the organization.
+Indeed, they allow the system to search through a Verification system for an already existing participant, and to create
+a participant without the need for an email address.
 
-image::participants_impersonations.png[Admin's Impersonations panel]
+To enable an authorization, you need to have access to the xref:configure:system.adoc[System panel] or ask your instance implementer.
 
-This is the panel where you can find all the participants:
+image::participants/participants_impersonations_backend_list_no_auth.png[Administrators Impersonations panel with no authorizations]
 
-* by filtering by managed or not managed participants
-* by searching by name
+The different authorizations give you different possibilities:
 
-After you've clicked in `Manage new participant` you'll go to the form to enter
-the personal data to check against the verification:
+* View impersonation logs only: When Identity documents, Code by postal letter, and/or Organization's census are enabled
+* Impersonate existing and new users: Direct verification enabled, like example authorization or other custom direct authorizations.
 
-image::participants_impersonations_form.png[Admin's Impersonations form]
+NOTE: You can learn more regarding how to program your form authorization in
+https://github.com/decidim/decidim/blob/develop/decidim-verifications/README.md[Decidim-verification README].
 
-NOTE: If you don't see the `Manage new participant` button, is because this feature
-only works when you have a Verification of kind `direct` (also known
-as `form authorizations`). See in your xref:admin:system.adoc[system panel] which
-`Available authorizations` are enabled. You can learn more regarding how to program
-your form authorization in https://github.com/decidim/decidim/blob/develop/decidim-verifications/README.md[decidim-verification README].
+image::participants/participants_impersonations_backend_list_logs.png[Administrators Impersonations panel with view log]
 
-After this data is confirmed then there'll be a session for the participant for
-30 minutes:
+image::participants/participants_impersonations_backend_list_button.png[Administrators Impersonations panel with impersonation action]
 
-image::participants_impersonations_user.png[Impersonated user session]
+== Manage impersonations
 
-Finally, it's also possible to Promote a participant, meaning that after a
-participant has been managed, an administrator can add the email and send her
-an Invitation:
+You can find all the participants of the platform, with:
 
-image::participants_impersonations_promotion.png[Admin's promotion Impersonations]
+* *Name*: name of the participant.
+* *Status*: if the participant is impersonated/managed or not.
+
+You can filter this list by clicking the "Filter" button and search for participants by their name.
+
+=== Ações.
+
+.Ações.
+[cols="10h,20h,~,~"]
+|===
+|Ícone |Nome: |Definição |Condition
+
+|image:icons/action_impersonate.png[Impersonate icon]
+|Impersonate
+|To impersonate the participant.
+|Available all the time.
+
+|image:icons/action_clock.png[View logs icon]
+|View logs
+|To view the impersonation history of the participant.
+|Available all the time.
+
+|image:icons/action_promote.png[Promote icon]
+|Promote
+|To view the impersonation history of the participant.
+|Available only for managed users.
+|===
+
+=== Impersonate a participant
+
+Click the "Manage new participant" button. You are then able to enter the personal data to check against the verification:
+
+image::participants/participants_impersonations_form.png[Administrators Impersonations form]
+
+After this data is checked by the system, it opens a session for the participant for 30 minutes.
+A banner at the top of the page reminds the administrator that they are impersonating the participant, and the remaining time.
+
+image::participants/participants_impersonations_user.png[Impersonated user session]
+
+=== Promote a managed participant
+
+Administrators can promote managed participants, to invite them to the create an account on the platform.
+Click the "Promote" icon to be able to add an email address to the participant and invite them by email.
+
+image::participants/participants_impersonations_promotion.png[Administrators promotion Impersonations]

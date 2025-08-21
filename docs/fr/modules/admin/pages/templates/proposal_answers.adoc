@@ -1,0 +1,72 @@
+= Modèles de réponses à la proposition
+
+Dans cette section, vous pouvez créer, modifier et supprimer des modèles de réponses de proposition que vous pouvez ensuite utiliser lorsque vous répondez aux propositions.
+
+== Créer un modèle de réponse à la proposition
+
+NOTE: Pour pouvoir créer un modèle de réponse à la proposition, vous devez avoir créé au moins un composant
+xref:admin:components/proposals.adoc[proposals].
+
+Pour créer un modèle de réponse à une nouvelle proposition, vous devez cliquer sur le bouton "Nouveau modèle".
+
+image::templates/templates_proposal_answers_choice_component.png[Backend: Proposal component choice for template]
+
+Choisissez l'espace participatif et le composant pour lesquels vous voulez créer des réponses de proposition pour voir le formulaire de réponse du modèle.
+
+image::templates/templates_proposal_answers_backend_form.png[Backend: new proposal answer template form]
+
+.Formulaire de nouveau modèle de réponse à la proposition
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Titre de ce modèle de réponse. Choisissez un titre clair, décrivant précisément à quoi sert la réponse.
+
+|Description
+|Obligatoire
+|Contenu de la réponse fournie aux propositions pour lesquelles vous choisissez ce modèle. Vous pouvez utiliser des variables dans votre réponse.
+
+|État de la proposition
+|Obligatoire
+|Par défaut, vous pouvez choisir Évaluation, Acceptée ou rejetée.
+|===
+
+== Gérer
+
+Tous les modèles apparaissent dans la liste des réponses à la proposition :
+
+* *Modèle* : nom du modèle de réponse à la proposition.
+* *Etat interne* : état donné aux propositions lors de l'utilisation de ce modèle.
+* *Ajouter une contrainte* : composant de proposition où vous pouvez utiliser ce modèle.
+* *Créé à* : date de création.
+
+Vous pouvez modifier un modèle et ses champs à tout moment.
+
+=== Actions
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Modifier le modèle]
+|Editer
+|Pour modifier la réponse de la proposition.
+
+|image:icons/action_duplicate.png[Dupliquer le modèle]
+|Duplicate
+|Pour dupliquer le modèle.
+
+|image:icons/action_delete.png[Supprimer le modèle]
+|Supprimez
+|Supprimer le modèle.
+|===
+
+=== Utiliser le modèle
+
+Pour utiliser le modèle, allez à l'un des composants de proposition pour lequel vous avez créé un modèle de réponse de proposition et cliquez sur l'icône "Réponse".
+Vous pouvez choisir un modèle de réponse pour remplir le champ de réponse.
+
+image::templates/templates_proposal_answers_choice.png[Backend: choose template when answering proposal]

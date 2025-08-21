@@ -1,0 +1,48 @@
+= Inscriptions d'utilisateurs
+
+== Understand the basics
+
+Une fois les participants enregistrés, les administrateurs peuvent avoir accès à leurs informations d'inscription.
+Il permet aux organisateurs de la conférence de gérer efficacement les participants à la conférence, à ses voies, etc.
+
+Par exemple, il peut suivre ce flux :
+
+. Un participant s'inscrit à la conférence
+. Ils reçoivent une notification d'inscription en attente
+. Ils reçoivent un email d'inscription en attente
+. Un administrateur vérifie et confirme l'enregistrement avec le bouton image:icons/action_activate.png[Confirm]
+. Le participant reçoit une notification d'inscription confirmée
+. Ils reçoivent un email d’inscription confirmé avec un fichier .ics du calendrier
+
+== Gérer les inscriptions
+
+Pour accéder à la configuration des inscriptions d'utilisateur, cliquez dans le panneau de navigation secondaire de l'élément "Inscriptions d'utilisateur".
+
+image::spaces/conferences/user_registrations.png[Conferences user registrations (backend)]
+
+=== Actions
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_activate.png[Confirmer l'icône d'inscription]
+|Confirmer votre vote
+|Pour confirmer l'inscription de l'utilisateur
+|===
+
+== Confirmer une inscription
+
+Les confirmations d'inscription peuvent être utilisées avant ou après la conférence.
+Ils peuvent permettre aux administrateurs de confirmer aux participants que leur inscription a été prise en compte, ou
+qu'ils ont effectivement assisté à la conférence après qu'elle se soit produite.
+
+La confirmation des inscriptions permet aux administrateurs d'envoyer un
+xref:admin:spaces/conferences/registrations/certificates.adoc[**Certificats de présence**] après la conférence à
+tous les participants confirmés à la conférence.
+
+== Exporter les inscriptions
+
+Il est possible d'exporter les enregistrements en plusieurs formats : .CSV, .JSON et .XSLX.
+Le fichier avec tous les participants enregistrés est téléchargé directement sur le périphérique administrateur.

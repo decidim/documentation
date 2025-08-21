@@ -1,0 +1,120 @@
+= Inscriptions
+
+== Understand the basics
+
+NOTE: Cet article est dédié aux inscriptions "Sur cette plateforme" lors de la création ou de l'édition d'une réunion.
+
+Grâce aux inscriptions, vous pouvez avoir le contrôle de la capacité de participation à une réunion. Avec cette fonctionnalité par exemple, vous pouvez
+limiter le nombre de personnes pouvant assister à la réunion, ou vous pouvez savoir avant le début d'une réunion si vous avez besoin de trouver une plus grande salle
+pour tenir la réunion.
+
+L'activation de cette fonctionnalité ajoute un bouton « S'inscrire » afin que les participants puissent exprimer leur souhait d'aller à la réunion.
+
+image::components/meetings/registrations/frontend_join_meeting.png[Join a meeting button on meeting page]
+
+Depending in how this feature is configured, then administrators can:
+
+. définir le nombre de créneaux disponibles pour contrôler la capacité maximale de cette réunion
+. créer un xref:_registration_form[formulaire d'inscription personnalisé] pour demander des informations aux participants
+. envoyer xref:_invitations[invitations] à d'autres participants ou personnes non enregistrées sur la plateforme
+. contrôler la présence à la réunion via xref:_registration_code[codes d'inscription]
+
+== Register to a meeting
+
+Lorsqu'un participant clique sur le bouton "S'inscrire", on lui demande
+
+* si elles représentent un xref:admin:participants/groups.adoc[group].
+* s'ils veulent montrer publiquement qu'ils sont présents à la réunion.
+
+image::components/meetings/registrations/frontend_confirm.png[Join a meeting confirm modal]
+
+== Gérer les inscriptions
+
+Once you chose to deal with registrations "On this platform" when creating a meeting, you can manage registrations by clicking the
+image:icons/action_registrations.png[Registrations icon] Registrations icon.
+
+image:components/meetings/registrations/backend.png[Paramètres des inscriptions dans une réunion]
+
+.Formulaire des paramètres d'inscription
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Valider le code d'inscription
+|Facultatif
+|Pour vérifier les participants xref:_registration_code[codes d'inscription], si activé pour cette réunion.
+
+|Enregistrements activés
+|Obligatoire
+|Cochez cette case pour activer les inscriptions pour cette réunion.
+
+|Formulaire d'inscription activé
+|Facultatif
+|Cochez cette case si vous souhaitez activer un formulaire d'inscription pour cette réunion, pour demander des informations sur les participants.
+
+|Emplacements disponibles pour cette réunion
+|Obligatoire
+|Combien de places sont disponibles. Laisser à 0 si vous avez un nombre illimité de places disponibles.
+
+|Emplacements réservés
+|Obligatoire
+|Combien de places sont déjà réservées sur les emplacements disponibles. Laissez à 0 si vous n'avez pas de places réservées.
+
+|Personnaliser l'e-mail d'inscription
+|Facultatif
+|Si vous voulez ajouter un message dans l'e-mail d'inscription.
+
+|Contenu personnalisé de l'e-mail d'inscription
+|Facultatif
+|Le contenu de l'e-mail personnalisé. Ce texte apparaît au milieu de l'e-mail de confirmation d'inscription, juste
+après le code d'enregistrement s'il est activé.
+
+|Conditions d'inscription
+|Obligatoire
+|Quels sont les termes des services que les participants doivent accepter pour s'inscrire ou participer à la réunion.
+|===
+
+== Formulaire d'inscription
+
+Cette fonctionnalité vous permet de définir un formulaire personnalisé comme le composant xref:admin:components/surveys.adoc[Surveys] pour demander aux participants
+des informations d'inscription.
+
+Pour créer un formulaire d'inscription, cochez le formulaire "Formulaire d'inscription activé" sur la page des inscriptions, puis cliquez sur le bouton "Enregistrer".
+Ensuite, vous pouvez cliquer sur le bouton "Formulaire d'inscription" en haut à droite de la page.
+
+== Exporter tout
+
+Vous pouvez exporter les enregistrements dans plusieurs formats : CSV, JSON et XLSX (Excel).
+
+Les données exportées contiennent ces champs :
+
+* id : l'identifiant d'enregistrement
+* code: le xref:_registration_code[code d'inscription] (si cette fonctionnalité est activée)
+* utilisateur/nom : le nom de l'utilisateur
+* utilisateur/email: l'email de l'utilisateur
+* user/user_group: le groupe de l'utilisateur s'il a sélectionné qu'il représente un groupe lors de l'inscription
+
+== Invitations
+
+Cette fonctionnalité vous permet d'inviter des participants à une réunion. Ils peuvent être des participants actifs ou des participants
+non existants sur la plateforme.
+
+image::components/meetings/registrations/invite_attendee.png[Invite attendee for registration in a meeting]
+
+== Code d'enregistrement
+
+Cette fonction vous permet de vérifier si un participant est bien inscrit à la réunion.
+
+Après l’inscription, le participant reçoit un code d’inscription dans l’e-mail de confirmation et sur la page de la réunion.
+
+image:components/meetings/registrations/frontend_w_code.png[Code d'enregistrement dans une interface de réunion]
+
+La validation du code est en attente. Cela signifie que lorsque vous assistez à la réunion, le participant doit donner le code à un organisateur
+pour le valider.
+L'organisateur saisit ensuite le code dans le champ "Valider le code d'inscription", pour confirmer qu'il existe dans la base de données.
+
+image:components/meetings/registrations/backend_w_registration_code.png[Formulaire de code d'inscription dans une réunion]
+
+Once the code gets verified, the attendee is considered to having participated in the meeting, and the code is marked as validated.
+
+image:components/meetings/registrations/frontend_confirmed_w_code.png[Code d'enregistrement dans une interface de réunion]

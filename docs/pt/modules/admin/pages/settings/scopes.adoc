@@ -1,0 +1,110 @@
+= Âmbitos
+
+O escopo é o conjunto de territórios ou indivíduos que uma Organização possui. Um âmbito pode ter escopos de filho.
+
+For instance, in the case of the city of Barcelona the scopes correspond to its districts, and the children of a
+district are its neighborhoods.
+Também podem ter tipos, para que possa ser configurado, por exemplo, por âmbito temático e também territorial.
+
+A maioria dos componentes e espaços em Decidim permite-lhe configurar os escopos de uma maneira ou de outra.
+
+image::settings/scopes_list.png[Scopes list]
+
+== Create a scope type
+
+To create a scope type, click the "Add" button in the Scope types tab.
+
+image::settings/scopes_types_new_form.png[New scope type form]
+
+.Admin new scope type form
+[cols="20h,10h,~"]
+|===
+|Campo |tipo |Descrição:
+
+|Nome:
+|Obrigatório
+|Nome do tipo de escopo no singular.
+
+|Plural
+|Obrigatório
+|Nome do tipo de escopo no plural.
+|===
+
+== Create a scope
+
+To create a scope, click the "Add" button in the Scope tab.
+
+image::settings/scopes_new_form.png[New scope form]
+
+.Admin new scope form
+[cols="20h,10h,~"]
+|===
+|Campo |tipo |Descrição:
+
+|Nome:
+|Obrigatório
+|Nome do escopo.
+
+|Código
+|Obrigatório
+|Internal identifier of the scope.
+
+|Tipo de âmbito
+|Opcional
+|Which type of scope it's related to. It can be blank.
+|===
+
+== Ações.
+
+.Ações.
+[cols="10h,20h,~"]
+|===
+|Ícone |Nome: |Definição
+
+|image:icons/action_browse.png[Browse icon]
+|Localizar...
+|Veja e configure os escopos dos filhos para este escopo.
+
+|image:icons/action_edit.png[Edit icon]
+|Alterar
+|Edite o formulário para o escopo.
+
+|image:icons/action_delete.png[Delete icon]
+|excluir
+|Para excluir este escopo.
+|===
+
+== Funcionalidades
+
+Os principais recursos relacionados com escopos são:
+
+. Filtro
+. Interesses do usuário e Newsletters
+
+=== Filtro
+
+A maioria dos espaços e componentes permite que um administrador ou um participante os associe ao escopo.
+Isto permite filtrar pelos escopos quando os exploram.
+
+image::settings/scopes_filter_assemblies.png[Assemblies scopes filtering]
+
+image::settings/scopes_filter_processes.png[Processes scopes filtering]
+
+Alguns exemplos:
+
+* Com o módulo Accountable, para que seja possível filtrar Resultados
+* Assemblies e processos podem ter Scopes. É usado para filtrar vários assemblies na página principal de listagem (/assemblies ou /processes). These can be hidden with the "Enable participatory space filters" in the xref:admin:settings/configuration.adoc[configuration].
+* Filtering in the sidebar is also available in some components, where you can control if these filters are shown with the "Scopes enabled" checkbox in the settings. It also enables the scope selector in the resource creation form.
+
+You can also configure a participatory space so the filtering only concerns one scope and its children scopes. Por exemplo, imaginemos que sua organização tem 3 escopos diferentes para 3 cidades, cada uma delas tendo escopos de filhos para as cidades vizinhas.
+On a participatory space which concerns only one of the cities, you are able to select only this scope and its children so that users do not see the scopes of other cities in the filter options.
+
+=== User interests and newsletters
+
+A participant can choose which scopes they want to follow in its account.
+
+image::settings/account_my_interests.png[Account: my interests]
+
+This is used in the xref:admin:features/social_features/newsletters.adoc[Newsletters], in the "Select recipients to deliver" step.
+
+image::features/newsletters/newsletter_select_recipients.png[Newsletter: select recipients]

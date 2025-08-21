@@ -1,0 +1,92 @@
+= Participants
+
+Les participants sont tous des personnes ayant un compte sur la plateforme, qu'ils aient confirmé leur adresse e-mail ou non.
+Dans cette page, un administrateur peut :
+
+* Bloquer un participant, par exemple parce qu'il spamme ou agit contre les conditions d'utilisation
+* Contactez un participant avec des messages privés Decidim
+* Officialiser un participant
+* Afficher un e-mail de l'utilisateur
+
+image:participants/participants_participants.png[Liste des participants]
+
+== Gérer les participants
+
+Vous pouvez trouver tous les participants ici, avec:
+
+* *Nom*: nom du participant, avec un lien vers son profil.
+* *Surnom*: surnom du participant, avec un lien vers son profil.
+* *Créé à* : date de création du compte participant.
+* *Statut* : si le participant est officialisé ou non.
+* *Badge* : le badge d'officialisation, donné lors de l'officialisation du participant.
+* *Rapports* : nombre de rapports par différents utilisateurs.
+
+Vous pouvez filtrer et trier cette liste en cliquant sur le bouton "Filtre" et sur les en-têtes des colonnes.
+Vous pouvez également rechercher des participants par courriel, nom ou surnom dans la barre de recherche.
+
+=== Actions
+
+.Actions
+[cols="10h,20h,~,~"]
+|===
+|Icône |Nom |Définition |Condition
+
+|image:icons/action_block.png[Bloquer l'utilisateur]
+|Bloquer / Débloquer l'utilisateur
+|Bloquer ou débloquer un participant. Voir xref:admin:moderations/reported_users.adoc[Utilisateurs signalés] pour plus d'informations.
+|L'action de blocage est disponible pour les utilisateurs non bloqués, et vice versa.
+
+|image:icons/action_show_email.png[Afficher l'e-mail]
+|xref:_show_email_address[Afficher l'adresse e-mail]
+|Afficher l'adresse e-mail d'un participant.
+|Disponible en permanence.
+
+|image:icons/action_contact.png[Contact]
+|xref:_contact[Contact]
+|Pour contacter un participant par un message privé.
+|Disponible en permanence.
+
+|image:icons/action_verify.png[Officialize]
+|xref:_officialiser[Officialize]
+|Reconnaître qu'un participant a un statut spécial, comme le maire, le président de l'association, etc.
+|Disponible pour les participants non officialisés.
+
+|image:icons/action_reofficialize.png[Reoffficialize]
+|De nouveau validé
+|Pour changer le badge d'officialisation.
+|Disponible pour les participants officialisés.
+
+|image:icons/action_delete.png[Unofficialize]
+|Dénofficialiser
+|Pour révoquer une officialisation.
+|Disponible pour les participants officialisés.
+|===
+
+=== Afficher l'adresse e-mail
+
+Parfois, les administrateurs doivent trouver une adresse e-mail utilisateur. Ils peuvent cliquer sur l'option "Afficher l'adresse de courriel".
+Un modal apparaît, avec le nom du participant, et un champ caché.
+
+image:participants/participants_show_email.png[Modal dans l'email]
+
+Pour afficher l'adresse e-mail, vous devez cliquer sur le bouton "Afficher".
+
+image:participants/participants_showed_email.png[Modal après l'email est affiché]
+
+Pour la transparence de l'administration, cette action est enregistrée dans les journaux d'activités.
+
+image:participants/participants_showed_email_admin_log.png[Journal des activités de l'administrateur pour afficher l'e-mail]
+
+=== Contacter
+
+Pour contacter les participants directement via la messagerie privée de la plateforme, cliquez sur l'icône "Contact".
+
+image::participants/participants_conversation.png[Conversation with a participant]
+
+=== Officialiser
+
+Cette option est utile pour reconnaître qu'un participant a un statut spécifique sur la plateforme
+. For instance, if someone is the city mayor, a city councillor, the
+president of an association, etc.
+
+image:participants/participants_officialize.png[Officialiser un participant]

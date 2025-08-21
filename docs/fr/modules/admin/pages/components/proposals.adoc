@@ -1,0 +1,256 @@
+= Propositions
+
+== Understand the basics
+
+Le volet Propositions permet aux gens de créer, de commenter et de donner leur vote aux propositions. C'est l'un des principaux composants de
+Decidim, et a un grand nombre de paramètres de configuration.
+
+image::components/proposals/example01.png[Proposals example]
+
+Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces paramètres:
+
+* xref:admin:components/propositions/proposals.adoc[Gestion des propositions]
+* xref:admin:components/proposals/answers.adoc[Answers]
+* xref:admin:components/proposals/special_configurations.adoc[Configuration des propositions spécifiques]
+** xref:admin:components/proposals/special_configurations/amendements.adoc[Amendments]
+** xref:admin:components/proposs/special_configurations/collaborative_drafts.adoc[Collaborative drafts]
+** xref:admin:components/proposals/special_configurations/participatory_texts.adoc[Textes participatifs]
+
+== Configuration
+
+Pour créer un composant Propositions, allez d'abord dans xref:admin:spaces.adoc[espace participatif] où vous voulez le créer.
+
+image::components/proposals/component_proposals.png[Add Proposals component button]
+
+Alors:
+
+. Cliquez sur l'élément "Composants" dans le menu secondaire
+. Cliquez sur le bouton "Ajouter un composant"
+. Sélectionnez "Propositions"
+. Remplissez le formulaire de création de composant
+
+Vous pouvez toujours mettre à jour ce formulaire et la configuration après avoir créé le composant, en cliquant sur l'image
+image:icons/action_configure.png[Configurer l'icône] Configurer l'icône dans la liste des composants.
+
+Le formulaire de création de composants est divisé en différentes sections détaillées ci-dessous.
+
+image::components/proposals/component_01.png[Add component form]
+
+.Ajouter un composant : Formulaire de propositions
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Le titre de ce composant.
+
+|Rang d'affichage
+|Facultatif
+|L'ordre du composant en relation avec les autres composants. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux composants, "Composant a" avec le poids "10" et "Composant b" avec le poids "0"
+puis "Composant b" est d'abord lors de la commande.
+|===
+
+image::components/proposals/component_02.png[Add component form]
+
+.Ajouter un composant : Formulaire de propositions - Paramètres globaux
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Portées activées
+|Facultatif
+|Cochez cette case si vous voulez que le filtrage des portées dans ce composant.
+
+|Portées activées
+|Facultatif
+|Cochez cette case si vous voulez que le filtrage des portées soit disponible dans ce composant.
+
+|Secteur
+|Facultatif
+|Ce composant appartient à xref:admin:settings/scopes.adoc[Scope].
+
+|Limite de votes par utilisateur
+|Facultatif
+|Doit être un nombre. Le nombre maximum de votes qu'un participant peut donner aux propositions.
+
+|Nombre minimum de votes par utilisateur
+|Facultatif
+|Doit être un nombre. Le nombre minimum de votes qu'un participant doit donner aux propositions pour que leurs votes soient pris en considération.
+
+|Limite de proposition par participant
+|Facultatif
+|Doit être un nombre. Combien de propositions un participant peut créer dans ce composant.
+
+|Longueur maximale du corps de la proposition
+|Facultatif
+|Doit être un nombre. Combien de caractères un corps de proposition peut avoir comme maximum.
+
+|Édition d'une proposition
+|Obligatoire
+|Choisissez si les participants ont un temps limité pour modifier leurs propositions ou peuvent les modifier sans limite.
+Si c'est dans un laps de temps spécifique, vous devez spécifier l'heure dans le champ ci-dessous.
+Notez que si un administrateur xref:components/proposals/answers.adoc[répond à une proposition] alors il ne peut plus être édité.
+
+|Délai (en minutes) après lequel les auteurs ne peuvent plus modifier leurs propositions
+|Obligatoire
+|Doit être un nombre. Combien de minutes après la création d'une proposition, il peut être édité par son auteur.
+
+|Seuil par proposition
+|Facultatif
+|Doit être un nombre. Combien de votes une proposition doit être considérée comme acceptée.
+
+|Peut accumuler des votes au-delà du seuil
+|Facultatif.
+|La question de savoir si la proposition peut accumuler plus de votes que le seuil.
+
+|Réponses aux propositions activées
+|Facultatif
+|Si les administrateurs ou les évaluateurs peuvent répondre aux propositions.
+
+|Tri des propositions par défaut
+|Facultatif
+|L'ordre de tri des propositions dans la liste des propositions. Automatic means that if the votes are enabled, the proposals are
+shown sorted by random, and if the votes are blocked, then they are sorted by the most voted.
+
+|Propositions officielles activées
+|Facultatif
+|Si les administrateurs peuvent créer des propositions officielles à partir du panneau d'administration.
+
+|Commentaires activés
+|Facultatif
+|Si vous voulez permettre aux participants de commenter les propositions.
+
+|Longueur maximale des commentaires
+|Facultatif
+|La limite de caractères que les participants ont lors de la rédaction de commentaires. Laisser 0 pour la valeur par défaut.
+
+|Géocodage activé
+|Facultatif
+|Si les participants peuvent définir une adresse de géocodage pour leurs propositions.
+xref:configure:geocoding[Geocoding] doit être activé.
+
+|Autoriser les pièces jointes
+|Facultatif
+|Cochez cette case pour permettre aux participants de joindre des fichiers à leurs propositions. En activant cette option, les propositions sont par défaut en mode grille,
+et la première image apparaît sur la carte.
+
+|Les autorisations d'actions peuvent être définies pour chaque proposition
+|Facultatif
+|Si vous voulez être en mesure de définir les autorisations pour chaque proposition.
+
+|Brouillons collaboratifs activés
+|Facultatif
+|Cochez cette case pour activer xref:components/proposs/special_configurations/collaborative_drafts.adoc[collaboratifs] dans les propositions.
+
+|Textes participatifs activés
+|Facultatif
+|Cochez cette case pour activer xref:components/proposs/special_configurations/participatory_texts.adoc[textes participatifs] dans les propositions.
+
+|Amendements activés
+|Facultatif
+|Cochez cette case pour activer xref:components/propositions/special_configurations/amendements.adoc[amendments] dans les propositions.
+Si activé, configurez les paramètres d’amendement pour chaque étape.
+
+|Texte d'aide pour les amendements Assistant
+|Facultatif.
+|Le texte d'aide visible lors de la création de nouveaux amendements.
+
+|Annonce
+|Facultatif
+|Une annonce générale visible sur la page de la liste des propositions.
+
+|Nouveau modèle du corps de la proposition
+|Facultatif
+|Un texte prédéfini utilisé lors de la création de nouvelles propositions. Utile si vous voulez définir un format que les participants ont besoin de
+suivre lors de la création de nouvelles propositions.
+
+|Texte d'aide pour la nouvelle proposition
+|Facultatif
+|Le texte d'aide visible lors de la création de nouvelles propositions.
+
+|Texte d'aide à l'étape "Créer" de l'assistant de proposition
+|Facultatif
+|Le texte d'aide visible lors de la création de nouvelles propositions à l'étape "Créer".
+
+|Texte d'aide à l'étape "Publier" de l'assistant de proposition
+|Facultatif
+|Le texte d'aide visible lors de la création de nouvelles propositions à l'étape "Publier".
+|===
+
+---
+
+image::components/proposals/component_03.png[Add component form]
+
+.Ajouter un composant : Formulaire de propositions - Paramètres de l'étape
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Soutiens activés
+|Facultatif
+|Pour permettre aux participants de manifester leur soutien public à ces propositions, avec un bouton "J'aime".
+
+|Soutiens bloqués
+|Facultatif
+|Vérifiez si les participants sont en mesure de voir les approbations existantes mais ne faites pas de nouvelles.
+
+|Activer le module de vote simple
+|Facultatif
+|Permettre aux participants de voter pour des propositions dans cette phase.
+
+|Votes bloqués
+|Facultatif
+|Vérifiez si les participants peuvent voir les votes existants sans en faire de nouveaux.
+
+|Votes masqués
+|Facultatif
+|Si les votes sont activés, la vérification masque le nombre de votes pour les participants.
+
+|Commentaires désactivés
+|Facultatif
+|Si vous voulez activer les commentaires pour cette phase.
+
+|Les participants peuvent créer des propositions
+|Facultatif
+|Si vous voulez activer la création de propositions par les participants pour cette phase.
+
+|Réponses aux propositions activées
+|Facultatif
+|Si vous voulez activer xref:components/propositions/answers.adoc[réponse aux propositions] par les administrateurs.
+
+|Publier les réponses de la proposition immédiatement
+|Facultatif
+|Si vous voulez que les réponses des propositions soient publiées directement lorsque les administrateurs sont
+xref:components/propositions/réponses. doc[answering] ou vous voulez contrôler quand publier les réponses.
+
+|Activer les coûts sur les réponses aux propositions
+|Facultatif
+|Si vous voulez ajouter des coûts économiques aux réponses à la proposition. Utile pour importer des propositions sur xref:components/budgets.adoc[budgets].
+
+|Tri des propositions par défaut
+|Facultatif
+|L'ordre de tri des propositions dans la liste des propositions pour cette phase. Automatique signifie que si les votes sont activés, les propositions
+sont affichées par hasard, et si les votes sont bloqués, alors ils sont triés par le plus de votes.
+
+|Annonce
+|Facultatif
+|Une annonce générale visible sur la page de la liste des propositions pour cette phase.
+
+|Hashtags ajoutés à toutes les propositions
+|Facultatif
+|Ajouter automatiquement les hashtags à chaque proposition.
+
+|Hashtags suggérés aux participants pour de nouvelles propositions
+|Facultatif
+|Suggérer des hashtags aux participants en créant de nouvelles propositions. Les participants peuvent sélectionner plus d'un hashtag.
+|===
+
+== Exemples
+
+Quelques exemples d'utilisation de ce composant :
+
+* https://www.decidim.barcelona/assemblies/accionssostenibilitat/f/6259/propositions[Actions durables dans la ville de Barcelone 2024]
+* https://futureu.europa.eu/[Conférence de l'avenir de l'Europe]
+* https://meta.decidim.org/processes/roadmap/f/122/[Proposer de nouvelles fonctionnalités pour le logiciel Decidim]

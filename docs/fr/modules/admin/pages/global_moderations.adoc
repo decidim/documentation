@@ -1,0 +1,57 @@
+= Modération globale
+
+== Understand the basics
+
+La fonction *Modérations globales* vous permet de modérer différents types de contenus et
+vous assure que le dialogue dans votre plateforme est démocratique et constructif.
+Il permet également de gérer les participants qui enfreignent les règles de la plateforme.
+
+NOTE: Vous recherchez comment signaler les participants ou le contenu? Voir xref:moderations/reported_users.adoc[Participants signalés] et xref:moderations/reported_content.adoc[Contenu signalé].
+
+Par exemple, dans le cas de https://www.decidim.barcelona/[Decidim Barcelona],
+le https://www.decidim.barcelona/pages/terms-and-conditions[Conditions d'utilisation] dit :
+
+> Il n'est pas autorisé d'ajouter des contenus illégaux ou non autorisés au site, tels que
+> comme des informations avec les fonctionnalités suivantes :
+> 
+> * que ce soit faux ou trompeur;
+> * enfreindre toute loi du conseil municipal ou de tout tiers, comme le droit d'auteur,
+> marques de commerce ou autres droits de propriété intellectuelle et industrielle ou droits connexes ;
+> * attaquer la vie privée d'un tiers, comme la publication des données personnelles
+> des participants, comme le nom, l'adresse, le numéro de téléphone, l'email, les photos ou toute autre information personnelle
+> ;
+> * contenant des virus, des chevaux de Troie, des robots ou d'autres programmes qui peuvent nuire au site Web
+> ou aux systèmes de l'hôtel de ville, ou le site web ou le système d'un tiers, ou que
+> a l'intention de contourner les mesures techniques conçues pour le bon fonctionnement
+> de la plateforme ;
+> * pour envoyer du spam aux utilisateurs ou surcharger le système ;
+> * qui a le caractère de chaîne de messages, de jeu pyramidal ou de jeu aléatoire;
+> * à des fins commerciales, telles que la publication d'offres d'emploi ou d'annonces ;
+> * that it is not in keeping with public decency; consequently, content must not
+> incite hatred, discriminate, threaten, provoke, have no sexual, violent, coarse or
+> offensive meaning or character;
+> * enfreindre la loi ou le règlement applicable;
+> * faire campagne en promouvant le vote en masse pour d'autres propositions qui ne sont pas liées au processus
+> et au cadre de discussion, et
+> * pour créer plusieurs utilisateurs en faisant semblant d'être des personnes différentes (astroturfing).
+
+== Configuration
+
+Pour accéder au panneau de modération globale, allez dans le panneau d'administration et cliquez sur l'élément "Modération globale" dans
+la barre de navigation de l'administrateur.
+
+image::moderations/moderations_menu.png[Global moderations menu]
+
+Le panel de modération globale permet de gérer les contenus signalés ainsi que les participants signalés.
+
+image:moderations/moderations_backend_list_content.png[Panneau de modération globale pour le contenu]
+
+== Exemples
+
+=== Signaler le contenu
+
+Vous pouvez signaler et masquer un commentaire contenant des informations privées, ou un lien vers une plateforme commerciale postée par un utilisateur.
+
+=== Signaler l'utilisateur
+
+Vous pouvez signaler et bloquer les participants qui violent constamment le tableau de participation, ou spammer et troller la plateforme.

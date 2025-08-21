@@ -1,0 +1,151 @@
+= Initiatives
+
+== Understand the basics
+
+Une initiative est un type spécifique d'espace participatif, qui peut être créé par n'importe quel participant, indépendamment
+d'autres canaux ou espaces.
+Il travaille à travers la collecte de signatures en ligne et/ou en personne pour que l'organisation effectue une action spécifique, comme
+modifier un règlement, initier un projet, changer le nom d'un département ou d'une rue, etc.
+
+Les promoteurs d'une initiative peuvent définir ses objectifs, rassembler le soutien, le débat, la diffuser et définir des salles de réunion
+où les signatures peuvent être collectées auprès des participants ou des débats ouverts à d'autres participants.
+
+NOTE: Un grand nombre des comportements et des paramètres des initiatives sont configurables dans l'initiative
+xref:admin:initiatives_initializer.adoc[initializer]. Demandez à l'organisateur de mettre en œuvre si vous avez des doutes quant à la configuration de votre organisation
+.
+
+Exemples de types d'initiatives :
+
+* Ajouter un élément à un ordre du jour de l'assemblée
+* Effectuer un processus participatif
+* Créer un nouvel assemblage
+* Approuver ou modifier un règlement
+* Demander des assemblées
+
+Les initiatives doivent être distinguées des autres espaces car elles peuvent être utilisées comme un outil participatif promu *par les participants*.
+In other words, the initiatives are mechanisms for *semi-direct democracy* through which participants can promote a certain
+action of common interest by collecting a specific number of signatures.
+
+Le rôle de l'administrateur de la plateforme est donc quelque peu différent de celui des autres espaces de participation, comme
+l'organisation doit permettre aux participants et leur offrir le soutien technique et les conseils nécessaires.
+
+Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments:
+
+* xref:admin:admin:spaces/initiatives/types.adoc[Types d'initiatives]
+* xref:admin:spaces/initiatives/initiative_creation.adoc[Création de l'initiative]
+** xref:admin:espaces/initiatives/author_manage/commissione.adoc[Comité du promoteur]
+** xref:admin:spaces/initiatives/author_manage/manage.adoc[Actions auteurs]
+* xref:admin:admin:spaces/initiatives/manage.adoc[Gestion des initiatives]
+** xref:admin:espaces/initiatives/admin_manage/commissione.adoc[Membres du Comité]
+** xref:admin:espaces/initiatives/admin_manage/components.adoc[Components]
+** xref:admin:espaces/initiatives/admin_manage/attachments.adoc[Attachments]
+** xref:admin:espaces/initiatives/admin_manage/moderations.adoc[Moderations]
+** xref:admin:espaces/initiatives/admin_manage/answer.adoc[Répondre à une initiative]
+* xref:admin:espace:initiatives/sign.adoc[Signer une initiative]
+
+== How to find it?
+
+Pour accéder au panneau des initiatives, allez dans le panneau d'administration et cliquez sur l'élément "Initiatives" dans la barre de navigation de l'administration
+.
+
+image::spaces/initiatives/initiatives_menu.png[Access Initiatives panel]
+
+Là, vous pouvez commencer à configurer l'espace des initiatives, en :
+
+. Création de xref:admin:admin:spaces/initiatives/types.adoc[Types d'initiatives] et de types d'initiative
+. Configuration des autorisations si nécessaire
+. Gérer les initiatives des participants
+
+image::spaces/initiatives/initiatives_list_empty.png[Initiatives panel without initiatives]
+
+NOTE: Au début, la liste est vide et les participants ne peuvent pas créer d'initiatives.
+Pour faire la configuration initiale de l'espace d'initiative, lisez l'article xref:admin:spaces/initiatives/types.adoc[Types d'initiatives].
+
+== Cycle de vie des initiatives
+
+Les initiatives passent par différentes étapes et suivent un cycle de vie spécifique :
+
+* *Créé* : L'auteur a créé l'initiative, il n'est visible que par l'auteur, les membres du comité de promotion et les administrateurs.
+* *Validation technique* : L'initiative est prête à être examinée par un administrateur.
+* *Publié* : Un administrateur a passé en revue l'initiative et l'a publiée.
+* *Expiré* : Si aucun administrateur ne l'a publié avant un moment configuré dans l'initialiseur de l'initiative.
+* *Abandonné* : Si l'initiative n'a pas réussi l'examen par un administrateur.
+* *Rejeté* : Si l'initiative n'a pas reçu assez de signatures durant la période de collecte des signatures.
+* *Accepté* : Si l'initiative a reçu suffisamment de signatures durant la période de collecte des signatures.
+
+[plantuml]
+@startuml
+:Créé;
+:Validation technique;
+si (a dépassé le délai maximum de validation ?) puis (oui)
+  #rose:Expiré;
+  kill;
+elseif (validé?) then (no)
+  #rose:Discarded;
+  kill;
+else (oui)
+  #palegreen:Published;
+  if (assez de signatures ?) puis (non)
+    #rose:Rejeté
+    (pas assez de signatures);
+    kill;
+  sinon
+    #palegreen :Accepté
+    (assez de signatures);
+    arrêt ;
+  endif;
+endif
+@enduml
+
+Enfin, ce sont tous les paramètres pertinents à chaque moment du cycle de vie des initiatives :
+
+[plantuml]
+@startuml
+(*) --> "Créer une nouvelle initiative"
+si "A un seul type? alors
+--> [Yes] "Remplir le formulaire d'initiative"
+else
+--> [No] "Sélectionner le type d'initiative"
+--> "Remplir le formulaire d'initiative"
+Endif
+partition Créée {
+  si "L'utilisateur est-il un groupe d'utilisateurs ? alors
+  --> [Yes] "Envoyer à la validation technique"
+  else
+  --> [No] Collecter le nombre minimum de membres du comité
+  --> "Envoyer à la validation technique"
+  Endif
+}
+partition Validation {
+  si "Est passé le délai maximum pour la validation (60 jours par défaut) ? alors
+    --> [Yes] "Expiré"
+  else
+    --> [No] si "Est accepté par un administrateur? alors
+      --> [No] "Discarted"
+      else
+      --> [Yes] "Publish"
+      endIf
+  endIf
+}
+partition Publiée {
+  --> "Processus de signature"
+  si "A passé la fenêtre de temps configurée pour la validation (60 jours par défaut)?"
+    --> [Yes] "Expiré"
+  else
+    --> [No] Exporter le PDF vers les signatures
+    --> Vérifier les signatures avec les signatures hors ligne pour les doublons (si l'initiative les possède)
+    --> si "L'initiative a-t-elle obtenu le nombre de signatures requises ? puis
+      --> [No] Rejeté
+    else
+      --> [Yes] Accepté
+    endIf
+  endIf
+}
+--> (*)
+@enduml
+
+== Exemples
+
+* https://www.decidim.barcelona/initiatives[Barcelona City Initiatives]
+* https://petitions.assemblee-nationale.fr/initiatives[plate-forme des pétitions de l'assemblée nationale]
+* https://dekamer.mijnopinie.belgium.be/initiatives[Plateforme des pétitions d'assemblage national]

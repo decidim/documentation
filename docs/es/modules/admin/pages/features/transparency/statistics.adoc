@@ -1,0 +1,38 @@
+= Estadísticas
+
+== Understand the basics
+
+Decidim proporciona estadísticas generales sobre toda la plataforma y diferentes espacios participativos también pueden proporcionar estadísticas relacionadas con ese espacio participativo solamente.
+Estos son números genéricos que indican la actividad del sitio web y también pueden animar a otras personas a unirse a la plataforma ya que ven que es popular.
+
+== The types of data
+
+=== Estadísticas
+
+The homepage configuration allows administrators to enable a statistics content block to be displayed on the homepage.
+
+image::features/metrics/homepage_stats.png[Example of statistics content block]
+
+Administrators can also enable metrics in a participatory process or an assembly landing page.
+
+image::features/metrics/example_stats.png[Example of statistics]
+
+=== Métricas
+
+NOTE: ¿Buscas cómo activar esta característica técnicamente? Go to xref:develop:metrics.adoc[Metrics in Developers guide].
+
+With metrics, participants can see the evolution in time of some resources, such as Proposals, Supports, Endorsements, Followers, Participants, Accepted proposals, Comments, etc.
+
+The homepage configuration allows administrators to enable a metrics content block to be displayed on the homepage.
+
+image::features/metrics/homepage.png[Example of metrics content block]
+
+Administrators can also enable metrics in a participatory process landing page.
+
+Puede ver un ejemplo real de esto en https://meta.decidim.org/processes/roadmap/all-metrics[Metadecidim Roadmap process].
+
+image::features/metrics/example.png[Example of metrics]
+
+By clicking in the "Show all" button visitors can see other metrics and download this data in CSV format.
+
+image:features/metrics/page.png[Página de métricas]

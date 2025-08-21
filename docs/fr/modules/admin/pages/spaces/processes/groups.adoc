@@ -1,0 +1,230 @@
+= Groupes de processus
+
+== Understand the basics
+
+Un groupe de processus peut être utile pour subdiviser les grands processus participatifs en sous-processus selon des critères.
+It can also allow administrators to organize an instance with a lot of processes, to gather together the ones related to a
+specific type of process, or a specific scope, like participatory budgeting annual editions, mobility planning processes, etc.
+
+== Gérer les groupes de processus
+
+Pour accéder à la page de gestion des groupes de processus, cliquez sur l'onglet "Groupes de processus" dans la page d'index des processus.
+Vous y trouverez la liste des groupes de processus.
+
+image::spaces/processes/processes_group_list.png[Participatory process groups list]
+
+=== Actions
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Modifier l'icône du groupe de processus]
+|Editer
+|Éditer la configuration et les composants du groupe de processus.
+
+|image:icons/action_preview.png[Aperçu de l'icône du groupe de processus]
+|Aperçu
+|Voir un aperçu de la page d'accueil du groupe de processus.
+
+|image:icons/action_delete.png[Supprimer l'icône du groupe de processus]
+|Supprimez
+|Supprimer ce groupe de processus.
+|===
+
+== Créer un groupe de processus
+
+Pour créer un nouveau groupe de processus, cliquez sur le bouton "Nouveau groupe de processus" en haut à droite de la page.
+
+=== A propos de cette concertation
+
+Cette section permet de fournir une description générale du groupe de processus, principalement un titre, une image, et description, et à
+sélectionnez les processus existants qui appartiennent au groupe.
+
+image::spaces/processes/processes_group_form_about.png[Participatory process groups creation form about this process]
+
+.Nouveau formulaire de groupe de processus participatif : Informations générales
+[cols="20h,10h,~,~"]
+|===
+|Champ |Type |Description |Visibilité
+
+|Titre
+|Obligatoire
+|Titre du groupe de processus participatif.
+|Visible dans la carte des groupes de processus sur la page d'accueil, l'index des processus, la navigation, les blocs « titre et description»
+et « image héros et CTA» de la page d’atterrissage.
+
+|Description
+|Obligatoire
+|Une longue explication du groupe de processus.
+|Visible dans la carte de l'index des processus et le bloc de page d'accueil "titre et description".
+
+|Processus connexes
+|Facultatif
+|Les processus à regrouper dans ce groupe de processus. Pour sélectionner plusieurs processus, utilisez la touche *CTRL* ou *CMD*.
+|Visible dans le bloc de page d'accueil "Processus participatifs".
+
+|Image
+|Facultatif
+|Image qui sera utilisée dans les cartes de présentation de ce groupe de processus. Orientation pour l'image :
+De préférence une image de paysage qui n'a pas de texte. Le service récolte l'image.
+Taille maximale du fichier : 10 Mo. Extensions de fichier autorisées : JPEG JPG PNG
+|Visible dans la carte des groupes de processus sur la page d'accueil et dans l'index des processus.
+|===
+
+=== Métadonnées
+
+Cette section permet de fournir des métadonnées sur le groupe de processus.
+Il peut être activé sur la page d'accueil avec le bloc "Metadata".
+
+image::spaces/processes/processes_group_form_metadata.png[Participatory process groups creation form metadata]
+
+.Nouveau formulaire de groupe de processus participatif : métadonnées
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Hashtag
+|Facultatif
+|Hashtag redirigeant vers le réseau social X.
+
+|Site web
+|Facultatif
+|Site Web lié à ce groupe de processus.
+
+|Groupe de promoteurs
+|Facultatif
+|Si un groupe spécifique est à l'origine du processus, comme une direction de ville, un comité d'association, etc.
+
+|Zone d'organisation
+|Facultatif
+|Le domaine ou la catégorie de l'organisation, s'il est pertinent.
+
+|Métadonnées du périmètre d'application
+|Facultatif
+|Métadonnées sur la portée du processus, si elle est pertinente.
+
+|Qui participe
+|Facultatif
+|Qui sont les participants autorisés, qui peuvent participer au processus.
+
+|Ce qui est décidé
+|Facultatif
+|La question du processus, l'objet de ce qui est décidé.
+
+|Comment est-il décidé
+|Facultatif
+|Le processus de prise de décision.
+|===
+
+=== Visibilité
+
+Cette section permet aux administrateurs de configurer la visibilité du groupe de processus dans la page d'accueil et l'index de processus.
+
+image::spaces/processes/processes_group_form_visibility.png[Participatory process groups creation form visibility]
+
+.Nouvelle forme de groupe de processus participatif : Visibilité
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Promu
+|Facultatif
+|Cochez cette case si vous voulez que le processus ait plus de visibilité dans la liste publique Processus . Il sera également visible dans le bloc de contenu "Processus surlignés"
+dans xref:admin:settings/homepage.adoc[Homepage].
+|===
+
+== Blocs de contenu de la page d'accueil
+
+Les groupes de processus sont principalement des pages de destination, regroupant des processus participatifs plus complexes.
+Cette page d'accueil fonctionne avec différents blocs de contenu, tout comme la page d'accueil générale de la plateforme.
+Cela signifie que vous pouvez activer différentes sections de la page d'accueil et configurer certaines de ces sections.
+
+Pour configurer une page d'accueil de groupe de processus, lors de l'édition du groupe de processus, cliquez sur le bouton "Gérer" en haut à droite de la page,
+et cliquez sur le lien de menu "Page d'accueil".
+
+image::spaces/processes/processes_group_landing.png[Participatory process group landing page]
+
+Ci-dessous, vous trouverez tous les guides de configuration des blocs de contenu et les captures d'écran de la façon dont ils sont affichés sur la page de destination.
+
+NOTE: S'il n'y a pas de contenu à afficher dans un bloc de contenu ou s'il n'est pas configuré, il ne sera pas affiché sur la page d'atterrissage.
+
+=== Titre et description
+
+Le bloc de contenu Titre et description permet d'afficher :
+
+* *Titre* : le titre du groupe de processus.
+* *Description* : la description du groupe de processus.
+* *Nombre de processus associés* : le nombre de processus participatifs publiés liés à ce groupe de processus.
+* *Portée* : la portée du groupe de processus.
+* *Hashtag* : le hashtag, redirection vers les médias sociaux X.
+* *Site Web* : un lien vers le site Web.
+
+image::spaces/processes/processes_group_landing_title.png[Participatory process group landing page title and description block]
+
+=== Métadonnées
+
+image::spaces/processes/processes_group_landing_metadata.png[Participatory process group landing page metadata block]
+
+=== Image principale et bouton d'action
+
+Le bloc image héros et contenu CTA permet d'afficher :
+
+* *Titre* : le titre du groupe de processus.
+* *un hashtag* : le hashtag, redirigeant vers les médias sociaux X.
+* *un bouton d'appel à l'action*: activez-le en cliquant sur l'icône "Modifier" sur le bloc de contenu de la page d'accueil.
+* *une image*: téléchargez une image pour ce bloc en cliquant sur l'icône "Modifier" sur le bloc de contenu de la page d'accueil.
+
+image::spaces/processes/processes_group_landing_hero.png[Participatory process group landing page hero block]
+
+=== Propositions
+
+Le bloc de contenu des propositions permet d'afficher une sélection de propositions provenant des différents processus participatifs du groupe de processus.
+Vous pouvez configurer comment les propositions sont triées par ordre le plus récent ou le plus aléatoire en cliquant sur l'icône "Modifier" sur le bloc de contenu de la page d'accueil.
+
+image::spaces/processes/processes_group_landing_proposals.png[Participatory process group landing page proposals block]
+
+=== Résultats
+
+Le bloc de contenu Résultats permet d'afficher une sélection des résultats des différents processus participatifs.
+Vous pouvez configurer la façon dont les résultats sont triés par le plus récent ou au hasard en cliquant sur l'icône "Modifier" sur le bloc de contenu de la page d'accueil.
+
+image::spaces/processes/processes_group_landing_results.png[Participatory process group landing page results block]
+
+=== Réunions à venir
+
+Le bloc de contenu des réunions à venir permet d'afficher une sélection de réunions des différents processus participatifs.
+Vous pouvez configurer la façon dont les résultats sont triés par le plus récent ou au hasard en cliquant sur l'icône "Modifier" sur le bloc de contenu de la page d'accueil.
+S'il n'y a pas de réunions à venir, ce bloc montre les réunions passées.
+
+image::spaces/processes/processes_group_landing_events.png[Participatory process group landing page events block]
+
+=== Statistiques
+
+image::spaces/processes/processes_group_landing_stats.png[Participatory process group landing page statistics block]
+
+=== Processus participatifs
+
+Le bloc de contenu du processus participatif affiche une grille de processus participatifs sur la page d'atterrissage.
+Vous pouvez configurer si seulement les processus actifs seront affichés en cliquant sur l'icône "Modifier" sur le bloc de contenu de la page de destination.
+
+image::spaces/processes/processes_group_landing_processes.png[Participatory process group landing page processes block]
+
+=== Blocs HTML
+
+Le bloc contenu du bloc HTML permet d'ajouter un bloc HTML modifiable sur la page d'atterrissage, et donc de créer une section personnalisée.
+
+image::spaces/processes/processes_group_landing_html.png[Participatory process group landing page HTML blocks]
+
+== Exemples
+
+Le https://www.decidim.barcelona/processes_groups/4[Plan de quartier du conseil de la ville de Barcelone], un plan de choc de 150 millions
+euro qui vise à réduire les inégalités au sein de la ville. Il y a 10 sous-processus, un pour chaque quartier impliqué.
+
+image::spaces/processes/processes_group__barcelona_example.png[Participatory process group example]
+
+Le https://participer.loire-atlantique.fr/processes_groups/32[budget participatif de Loire-Atlantique], avec un bloc HTML
+élaboré sur la page d'atterrissage.
+
+image::spaces/processes/processes_group__cd44_example.png[Participatory process group example]

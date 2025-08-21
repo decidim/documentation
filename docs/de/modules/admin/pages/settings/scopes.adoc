@@ -1,0 +1,110 @@
+= Bereiche
+
+Bereiche sind eine Reihe von Territorien oder Subjekten, die eine Organisation hat. Ein Bereich kann Kindespektraten haben.
+
+For instance, in the case of the city of Barcelona the scopes correspond to its districts, and the children of a
+district are its neighborhoods.
+Sie können auch Typen haben, so dass sie zum Beispiel durch thematische und auch territoriale Bereiche konfiguriert werden können.
+
+Die meisten Komponenten und Leerzeichen in Decidim erlauben es Ihnen, die Bereiche auf die eine oder andere Weise zu konfigurieren.
+
+image::settings/scopes_list.png[Scopes list]
+
+== Create a scope type
+
+To create a scope type, click the "Add" button in the Scope types tab.
+
+image::settings/scopes_types_new_form.png[New scope type form]
+
+.Admin new scope type form
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Name des Scope Typs in Singular.
+
+|Plural
+|Benötigt
+|Name des Geltungsbereichs im Plural.
+|===
+
+== Create a scope
+
+To create a scope, click the "Add" button in the Scope tab.
+
+image::settings/scopes_new_form.png[New scope form]
+
+.Admin new scope form
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Name des Anwendungsbereichs.
+
+|Code
+|Benötigt
+|Internal identifier of the scope.
+
+|Bereichstyp
+|Optional
+|Which type of scope it's related to. It can be blank.
+|===
+
+== Aktionen
+
+.Aktionen
+[cols="10h,20h,~"]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_browse.png[Browse icon]
+|Durchsuchen
+|Sehen und konfigurieren Sie die Kind-Bereiche für diesen Anwendungsbereich.
+
+|image:icons/action_edit.png[Edit icon]
+|Bearbeiten
+|Formular für einen Bereich bearbeiten.
+
+|image:icons/action_delete.png[Delete icon]
+|Löschen
+|Diesen Bereich löschen.
+|===
+
+== Funktionen
+
+Die wichtigsten Funktionen im Zusammenhang mit den Bereichen sind:
+
+. Filtern
+. Nutzerinteressen und Newsletter
+
+=== Filtern
+
+Die meisten Leerzeichen und Komponenten ermöglichen es einem Administrator oder einem Teilnehmer, diese einem Anwendungsbereich zuzuordnen.
+Dies erlaubt es, nach Bereichen zu filtern, wenn Sie sie erforschen.
+
+image::settings/scopes_filter_assemblies.png[Assemblies scopes filtering]
+
+image::settings/scopes_filter_processes.png[Processes scopes filtering]
+
+Einige Beispiele:
+
+* Mit dem Modul Verantwortlichkeit können Ergebnisse gefiltert werden
+* Schwärmereien und Prozesse können Bereiche haben. Es wird zum Filtern mehrerer Assemblies auf der Hauptseite (/assemblies oder /processes) verwendet. These can be hidden with the "Enable participatory space filters" in the xref:admin:settings/configuration.adoc[configuration].
+* Filtering in the sidebar is also available in some components, where you can control if these filters are shown with the "Scopes enabled" checkbox in the settings. It also enables the scope selector in the resource creation form.
+
+You can also configure a participatory space so the filtering only concerns one scope and its children scopes. Stellen wir uns zum Beispiel vor, dass Ihre Organisation 3 verschiedene Bereiche für 3 Städte hat, von denen jeweils Kinder für die Stadtviertel zuständig sind.
+On a participatory space which concerns only one of the cities, you are able to select only this scope and its children so that users do not see the scopes of other cities in the filter options.
+
+=== User interests and newsletters
+
+A participant can choose which scopes they want to follow in its account.
+
+image::settings/account_my_interests.png[Account: my interests]
+
+This is used in the xref:admin:features/social_features/newsletters.adoc[Newsletters], in the "Select recipients to deliver" step.
+
+image::features/newsletters/newsletter_select_recipients.png[Newsletter: select recipients]

@@ -1,0 +1,35 @@
+= Pages et sujets
+
+== Understand the basics
+
+L'onglet pages vous permet de publier des pages statiques, y compris, par exemple, les conditions générales de votre plateforme, les déclarations d'accessibilité, les FAQ, etc.
+Vous pouvez organiser ces pages dans différents sujets, agissant comme des dossiers.
+
+NOTE: Vous recherchez comment créer des sujets et des pages ? Voir xref:pages/pages.adoc[Pages] et xref:pages/topics.adoc[Topics].
+
+Ces pages sont accessibles à tous les participants via la section **Aide** dans l'en-tête et dans le pied de page.
+
+== Configuration
+
+Pour accéder au panneau de configuration des pages, allez dans le panneau d'administration et cliquez sur l'élément « Pages » dans la barre de navigation d'administration.
+
+image::pages/pages_menu.png[Pages: Access pages panel]
+
+Là, vous pouvez créer, mettre à jour ou supprimer xref:admin:pages/pages.adoc[Pages] et xref:admin:pages/topics.adoc[Topics].
+Vous pouvez commencer par créer uniquement des pages si vous le souhaitez, car vous pouvez créer des sujets et réorganiser des pages à l'intérieur à tout moment.
+
+image::pages/pages_backend_list.png[Backend: list pages]
+
+== Exemples
+
+=== Une page sans sujet
+
+image::pages/pages_frontend_show.png[Frontend: show a page]
+
+=== Une page avec un sujet
+
+image::pages/pages_frontend_show_topic.png[Frontend: show a page with topic]
+
+=== Section d'aide avec les pages et les sujets
+
+image::pages/pages_frontend_list_topics.png[Frontend: list topics of pages]

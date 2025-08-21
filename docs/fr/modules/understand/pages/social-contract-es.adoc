@@ -1,0 +1,63 @@
+= Contrato social de Decidim
+
+[NOTE]
+====
+Puedes leer el Contrato Social de Decidim en otros idiomas: xref:understand:social-contract-ca.adoc[Català] - xref:understand:social-contract.adoc[English]
+
+Si lo quieres traducir a tu idioma por favor https://decidim.org/contact[contáctanos].
+====
+
+Código de garantiéas democráticas y collaboración democrática
+
+Este es el contrato social que todos los miembros del proyecto Decidim se comprometen a seguir.
+
+El uso y desarrollo de la plataforma Decidim por parte de una institución o grupo social de cualquier tipo implica la aceptación total e integral del presente contrato social y su compromiso con el mismo.
+
+== Software libre y contenido abierto
+
+El código de la plataforma, junto con los módulos, las bibliotecas o cualquier otro código que se desarrolle para su funcionamiento y utilización, será siempre un software de código abierto libre con una licencia de https://www.gnu.org/licenses/agpl-3.0.en.html[Affero GPLv3 o versiones posteriores], siempre que el código se cree de nuevo y con licencias que sean compatibles con el anterior código cuando este se reutilice.
+
+Del mismo modo, el contenido, los datos, las API o cualesquiera otras interfaces que se utilicen para interactuar con cualquier tipo de usuario debe seguir estándares abiertos e interoperables (OpenID, RSS, OStatus, etcétera), procurando siempre maximizar su integración con los estándares abiertos de uso más amplio.
+
+Con el fin de maximizar la transparencia y la colaboración ciudadana en procesos, órganos y mecanismos participativos, el contenido, así como texto, gráficos, fuentes, audio, vídeo u otros elementos de diseño se publicarán bajo una licencia https://creativecommons.org/licenses/by-sa/4.0/legalcode[Creative Commons By-SA].
+
+Les données sont disponibles sur la plateforme, Spécialement toutes les données qui peuvent être recopilar de maniere sistemátique a des voyages de scrappers ou d'autres técnicas de consulta masiva, se publicaraün bajo licencia http://opendatacommons. rg/licenses/odbl[Open Data Commons Open Database], en formats estandarizados y accesibles (CSV, JSON, etcétera) y, siempre que sea posible, con herramientas que faciliten el análisis y la visualización de datos.
+
+== Transparencia, trazabilidad e integridad
+
+La plataforma y su configuración, desarrollo, implementación y uso actuales o futuros deben asegurar y maximizar en todo momento la transparencia, trazabilidad e integridad de documentos, propuestas, debates, decisiones o cualquier otro objeto, mecanismo o proceso participativo.
+
+Por transparencia entendemos que todos los datos relacionados con todos estos mecanismos y procesos participativos están disponibles para su descarga, análisis y tratamiento, siguiendo los estándares y formatos más exigentes para compartir información (accesibilidad, multiformato, etcétera).
+
+La transparencia es una condición necesaria para el seguimiento de los procesos y mecanismos participativos, pero en ningún caso debe aplicarse al tratamiento de los datos personales o contra la defensa de la privacidad de las personas que participan en la plataforma.
+
+Entendemos por trazabilidad la capacidad de hacer un seguimiento completo de propuestas, planes, regulaciones o cualquier otro objeto de participación o decisión, tanto pasados como futuros, incluidos en un proceso o mecanismo. La plataforma debe mostrar en todo momento cómo, por qué, a través de quién y con qué garantías se desestimó, se aprobó o se bloqueó un determinado tipo de objeto de un proceso participativo.
+
+Entendemos por integridad la autenticidad de un contenido específico, con la seguridad de que no ha sido manipulado o alterado sin que esta modificación esté claramente registrada y sea visiblemente verificable y auditable. El objetivo de la integridad es evitar la manipulación de propuestas o resultados de procesos o mecanismos participativos.
+
+== Igualdad de oportunidades e indicadores de calidad
+
+Junto con las garantías previamente definidas, la plataforma promete garantizar la igualdad de oportunidades para todas las personas, así como para sus propuestas u otras contribuciones que la plataforma pueda albergar. La plataforma ofrecerá iguales oportunidades de inicio a todos los objetos participativos (propuestas, debates, etcétera) para que se puedan conocer, debatir, comentar, evaluar o tratar sin que exista discriminación de ningún tipo. En este sentido, la identidad digital de los usuarios de la plataforma será siempre personal y no transferible, la verificación que confiere derechos de decisión sobre la plataforma también debe ser única y la responsable de asegurar la no representación de una persona o entidad será la entidad administrativa responsable de la plataforma.
+
+La plataforma debe promover, con el objetivo de garantizar su calidad democrática, el uso de indicadores de calidad desarrollados a partir de los datos obtenidos de los procesos participativos y los mecanismos y la actividad de los usuarios. Se promoverá que se comparta la configuración de los diferentes componentes, así como datos abiertos, para la definición de estos indicadores.
+
+La igualdad en la participación política de la ciudadanía es uno de los principios fundamentales de cualquier sistema democrático, y la plataforma no solo debe garantizar la igualdad de oportunidades con respecto a los usos y las funciones, sino también el derecho de acceso. En ese sentido, la entidad a cargo de la plataforma asume el compromiso de promover acciones enfocadas a proporcionar acceso y apoyo a la plataforma para todos los ciudadanos por igual de manera universal. Las herramientas y los recursos apropiados a la plataforma están disponibles para cualquiera que los quiera usar.
+
+== Confidencialidad de los datos
+
+Se garantizará en todo momento la confidencialidad y privacidad de los datos personales que las personas puedan proporcionar para participar en cualquiera de las funcionalidades o posibilidades de participación que la plataforma proporcione. Los datos personales no se transferirán, en ningún caso, a terceros. Tampoco se utilizarán más allá de lo estrictamente necesario para el registro de usuarios y mejoras en la usabilidad de la plataforma. Siempre que la tecnología de la plataforma lo permita, la expresión de las preferencias políticas o la voluntad en los procesos de toma de decisiones seguirá siendo inaccesible incluso para el administrador de la plataforma o el servidor o servidores que la alojan.
+
+== Compromiso y responsabilidad
+
+Se establecerá un compromiso con los ciudadanos para responder a todas las consultas y contribuciones en el menor tiempo posible. También se adoptará un compromiso para dar seguimiento a los resultados de los procesos participativos y responder a esas demandas específicamente. Por último, se adoptará el compromiso de estudiar la incorporación de indicadores para el seguimiento de los procesos de participación una vez finalizados con el fin de evaluar sistemáticamente su implementación.
+
+== Mejora continua y colaboración interinstitucional
+
+Se estipularán mecanismos de revisión y evaluación periódica para facilitar la mejora continua de la plataforma.
+
+Se dará prioridad a la colaboración y al intercambio de experiencias entre las instituciones involucradas en el proyecto con el objetivo de mejorar, fijar y construir nuevos desarrollos para la mejora continua de la plataforma.
+
+En este sentido, se facilitarán las condiciones y los entornos de colaboración cuando se avance en mejoras que apunten a un beneficio común de toda la plataforma, y se permitirán mecanismos de coordinación interinstitucionales cuando sea necesario.
+Nombre de minutes d'utilisation
+
+Todos los puntos de este código deben reflejarse en el acuerdo de licencia de usuario final (EULA, por sus siglas en inglés), documento que cada organización que presta servicios utilizando Decidim establece con los usuarios y que nunca deberá ser contradicho.

@@ -1,0 +1,92 @@
+= Haut-parleurs
+
+== Understand the basics
+
+Les orateurs sont les personnes qui parlent à la conférence. They can be linked to meetings, so participants can
+see who is going to speak in each item of the program.
+
+image::spaces/conferences/speakers_frontend.png[Conferences speakers frontend]
+
+== Gérer les orateurs
+
+Pour accéder à la configuration des haut-parleurs, cliquez dans le panneau de navigation secondaire de l'élément "Haut-parleurs".
+
+image:espaces/conférences/haut-parleurs.png[conférenciers de conférences]
+
+Vous pouvez rechercher des haut-parleurs grâce à la barre de recherche.
+
+=== Actions
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Modifier l'icône du haut-parleur]
+|Editer
+|Pour éditer ce haut-parleur.
+
+|image:icons/action_activate.png[Publier l'icône du haut-parleur]
+|Publier
+|Pour publier ce haut-parleur (lorsqu'il n'est pas publié)
+
+|image:icons/action_unpublish.png[Dépublier l'icône du haut-parleur]
+|Dépublier
+|Dépublier ce haut-parleur (lorsqu'il est publié)
+
+|image:icons/action_delete.png[Supprimer l'icône du haut-parleur]
+|Supprimez
+|Supprimer ce haut-parleur.
+|===
+
+== Créer un nouveau haut-parleur
+
+Pour créer un nouveau haut-parleur, cliquez sur le bouton "Nouveau haut-parleur" en haut à droite de la page.
+
+image::spaces/conferences/new_speaker.png[Conferences speakers]
+
+.Formulaire des nouveaux conférenciers
+[cols="20h,~,~"]
+|===
+|Champ |Type |Description
+
+|Type de participant
+|Obligatoire
+|Que ce conférencier soit un participant ou un participant existant. Ont-ils déjà un compte créé sur la plateforme?
+
+|Nom complet
+|Requis si c'est un non-participant.
+|Nom de l'orateur.
+
+|Utilisateur ou groupe
+|Requis si c'est un participant existant.
+|Tapez au moins trois caractères à rechercher.
+
+|Réunions connexes
+|Facultatif
+|Les réunions au cours desquelles l'orateur intervient ou facilite.
+
+|Position
+|Obligatoire
+|Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
+
+|Affiliation
+|Obligatoire
+|Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
+
+|Courte Bio
+|Facultatif
+|Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
+
+|Compte X
+|Facultatif
+|Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
+
+|URL personnelle
+|Facultatif
+|Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
+
+|Avatars
+|Facultatif
+|Image d'avatar pour le haut-parleur. Ignoré si le conférencier est un participant « déjà inscrit ».
+|===

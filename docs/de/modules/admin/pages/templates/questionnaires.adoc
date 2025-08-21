@@ -1,0 +1,77 @@
+= Questionnaires templates
+
+In this section, you can create, edit, and delete questionnaire templates, that you can then use in any survey component.
+
+== Create a questionnaire template
+
+To create a new questionnaire template, you need to click the "New template" button.
+
+image::templates/templates_questionnaires_backend_form.png[Backend: new template form]
+
+.New questionnaire template form
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Title of this template. Choose a clear title, describing precisely what the survey is for, like "feedback survey."
+
+|Beschreibung
+|Benötigt
+|Description of what the template is made for. This description is only available in the templates panel, to describe precisely what
+the survey is for.
+|===
+
+Click the "Save" button to continue creating your template questionnaire.
+
+image::templates/templates_questionnaires_backend_survey_form.png[Backend: new survey template form]
+
+Then, click the "Edit" button. You enter the survey creation process. Click the "Skip" button if you don't want to use an existing template.
+
+On the next page, you can create a survey. Please refer to the xref:admin:components/surveys.adoc[Surveys] documentation for more information.
+
+Click the "Save" button to see a preview of your survey.
+
+image::templates/templates_questionnaires_backend_survey_preview.png[Backend: new survey template preview]
+
+Click on the "Save" button again to save your template.
+
+== Manage templates
+
+All the templates appear in the questionnaire templates list:
+
+* *Template*: name of the template.
+* *Questionnaire Title*: name of the survey by default when choosing this template.
+* *Number of questions*: number of different questions in the survey.
+* *Created at*: date of creation.
+
+You can edit a template and its questions at any moment. Also, please note that when you choose a template when creating a survey,
+you can also change the questions, add some or delete some for this specific component.
+
+=== Aktionen
+
+.Aktionen
+[cols="10h,20h,~"]
+|===
+|Icon |Name |Definition
+
+|image:icons/action_edit.png[Edit template]
+|Bearbeiten
+|To edit the template and the survey questions.
+
+|image:icons/action_duplicate.png[Duplicate template]
+|Duplicate
+|To duplicate the template.
+
+|image:icons/action_delete.png[Delete template]
+|Löschen
+|To delete the template.
+|===
+
+=== Use the template
+
+To use the template, create a xref:admin:components/surveys.adoc[survey] component in a participatory space, then edit it.
+You then see a page proposing you to choose a template for this survey.
+
+image::templates/templates_questionnaires_survey_choice.png[Backend: choose template when creating survey]

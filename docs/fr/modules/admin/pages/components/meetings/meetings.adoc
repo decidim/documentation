@@ -1,0 +1,312 @@
+= Réunions
+
+== Understand the basics
+
+Les réunions sont également les entités faisant partie du volet Réunions.
+Ils sont généralement créés par les administrateurs, mais les participants peuvent également créer des réunions lorsque la fonctionnalité est activée.
+
+Les administrateurs peuvent effectuer différentes actions lors de réunions, selon qu'elles sont créées à partir de l'administration ou par les participants.
+
+== Réunions officielles
+
+image::components/meetings/new_meeting_form_backend.png[Create a new meeting form (backend)]
+
+.Créer une réunion - Formulaire d'administration
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Le titre de la rencontre.
+
+|Description
+|Obligatoire
+|Une description du sujet de la réunion, comme les sujets, les participants, etc.
+
+|Type
+|Obligatoire
+|Le type de réunion, s'il est en personne, en ligne, ou les deux.
+
+|Adresses
+|Facultatif
+|Adresse: utilisé pour localiser la réunion sur une carte. Est affiché uniquement pour les types de réunions en personne et hybrides.
+
+|Localisation
+|Facultatif
+|Localisation : message adressé aux utilisateurs impliquant le lieu de rencontre, comme le nom du bâtiment, le nom d'une pièce, etc.
+Est affiché uniquement pour les types de réunions en personne et hybrides.
+
+|Astuces de localisation
+|Facultatif
+|Indices de localisation : informations complémentaires. Exemple: le plancher du bâtiment s'il s'agit d'une réunion en personne, ou le mot de passe de la réunion
+s'il s'agit d'une réunion en ligne avec accès restreint.
+
+|URL de la réunion en ligne
+|Facultatif
+|Le lien pour que les participants puissent se connecter directement à la réunion en ligne.
+
+|Type d'Iframe encapsulée
+|Facultatif
+|Permet de dire comment l'URL de la réunion en ligne est affichée sur la page de la réunion. Choose "None" for no iframe integration, "Embed in
+meeting page" for participants to open the meeting directly on the meeting page, "Open in live event page" for participants to be
+redirected to the live event page, or "Open URL in a new tab" for participants to open the meetings in a new tab.
+Seuls quelques services permettent l'intégration (YouTube, Twitch, Jitsi, ...)
+
+|Niveau d'accès Iframe
+|Obligatoire
+|Qui est capable de voir l'iframe.
+
+|Heure de début
+|Obligatoire
+|Le jour et l'heure de la réunion commence. Format attendu : jj/mm/aaaa hh:mm.
+
+|Heure de fin
+|Obligatoire
+|Le jour et l'heure de la réunion commence. Format attendu : jj/mm/aaaa hh:mm.
+
+|Catégorie
+|Facultatif
+|Quelle catégorie a la réunion. Utilisé pour le filtrage dans la liste des réunions.
+
+|Type d'inscription
+|Obligatoire
+|Choisissez une option entre "Inscription désactivée" pour aucune inscription, "Sur cette plateforme" pour afficher un bouton d'enregistrement lié à
+le xref:admin:components/meetings/registrations. doc[Registrations] ou "Sur une plate-forme différente" si vous gérez des réunions Inscriptions
+avec un autre service.
+
+|URL d'enregistrement
+|Requis si l'inscription sur une plateforme différente
+|Doit être une URL. Lien pour les participants pour accéder au service externe que vous utilisez pour les inscriptions.
+
+|Réunion privée
+|Facultatif
+|Vérifier si la réunion ne devrait pas être visible pour tous les visiteurs. Ceci n'est disponible que pour les réunions officielles.
+
+|Transparence
+|Facultatif
+|If the meeting is private, check if the meeting should be visible for all the visitors but they shouldn't be able to
+participate in it. Ceci n'est disponible que pour les réunions officielles.
+
+|Commentaires activés
+|Facultatif
+|Si vous voulez que les participants puissent commenter cette réunion spécifique.
+
+|Commentaires activés depuis
+|Facultatif
+|Date à partir de laquelle les participants peuvent commenter cette réunion.
+
+|Commentaires activés jusqu'à
+|Facultatif
+|Date à laquelle les participants peuvent commenter cette réunion.
+|===
+
+Vous pouvez également définir des *Services* pour une réunion. These are metadata that allows to communicate, for instance, if there's
+a place for children, deaf assistance, translations, etc. Vous pouvez avoir plusieurs services à l'intérieur d'une réunion.
+
+.Créer une réunion - Services
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Titre du service.
+
+|Description
+|Facultatif
+|Description du service.
+|===
+
+=== Actions
+
+.Actions - Réunions officielles
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Modifier l'icône]
+|Editer
+|Éditer une réunion.
+
+|image:icons/action_duplicate.png[Icône dupliquée]
+|Duplicate
+|Permet à un administrateur de dupliquer rapidement une réunion.
+
+|image:icons/action_folder.png[Icônes de dossiers]
+|Dossiers
+|Pour la classification des pièces jointes.
+
+|image:icons/action_attachments.png[Icône des pièces jointes]
+|Fichiers joints
+|Ajouter des documents et des images liés à la réunion.
+
+|image:icons/action_registrations.png[Icône d'inscription]
+|xref:admin:components/meetings/registrations.adoc[Registrations]
+|Permet de définir qui peut s'inscrire à la réunion. Disponible uniquement si les inscriptions sont activées dans le formulaire de réunion.
+
+|image:icons/action_agenda.png[Icône de l'Agenda]
+|xref:admin:components/meetings/agenda.adoc[Agenda]
+|Publier les sujets à discuter lors de la réunion.
+
+|image:icons/action_list.png[Icône du sondage]
+|xref:admin:components/meetings/polls.adoc[Polls]
+|Gérer les sondages pour la réunion.
+
+|image:icons/action_close.png[Icône fermée]
+|xref:admin:components/meetings/close.adoc[Close]
+|Permet et administrateur de fermer la réunion avec les procès-verbaux de la discussion et d'ajouter des informations supplémentaires.
+
+|image:icons/action_publish.png[Icône de publication]
+|Publier
+|Pour afficher publiquement la réunion.
+
+|image:icons/action_unpublish.png[Dépublier l'icône]
+|Dépublier
+|Ne pas afficher publiquement la réunion.
+
+|image:icons/action_preview.png[Icône d'aperçu]
+|Aperçu
+|Pour voir comment il est montré dans le frontend aux participants.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Autorisations
+|Pour gérer les permissions de cette réunion, selon la vérification d'un participant. Permet à un administrateur de configurer
+qui peut *rejoindre* une réunion.
+
+|image:icons/action_delete.png[Supprimer l'icône]
+|Supprimez
+|Supprimer cette réunion.
+|===
+
+== Réunions des participants
+
+Les réunions peuvent être créées par les participants si le paramètre "Participants peuvent créer des réunions" est coché.
+Si un participant appartient à un xref:admin:participants/groups.adoc[groupe d'utilisateurs], alors il est également en mesure de créer des réunions
+comme ce groupe.
+
+Lorsqu'un participant est sur la liste des réunions, il peut cliquer sur le bouton "Nouvelle réunion".
+
+image::components/meetings/new_meeting_button_front.png[Create a new meeting button (frontend)]
+
+Ensuite, ils sont redirigés sur le formulaire de création des réunions des participants.
+
+image::components/meetings/new_meeting_form_frontend01.png[Create a new meeting form (frontend)]
+
+.Créer une réunion - Formulaire du frontend
+[cols="20h,20h,~"]
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Le titre de la rencontre.
+
+|Description
+|Obligatoire
+|Une description du sujet de la réunion, comme les sujets, les participants, etc.
+
+|Type
+|Obligatoire
+|Le type de réunion, s'il est en personne, en ligne, ou les deux.
+
+|Adresses
+|Facultatif
+|Adresse: utilisé pour localiser la réunion sur une carte. Est affiché uniquement pour les types de réunions en personne et hybrides.
+
+|Localisation
+|Facultatif
+|Localisation : message adressé aux utilisateurs impliquant le lieu de rencontre, comme le nom du bâtiment, le nom d'une pièce, etc.
+Est affiché uniquement pour les types de réunions en personne et hybrides.
+
+|Astuces de localisation
+|Facultatif
+|Indices de localisation : informations complémentaires. Exemple: le plancher du bâtiment s'il s'agit d'une réunion en personne, ou le mot de passe de la réunion
+s'il s'agit d'une réunion en ligne avec accès restreint.
+
+|URL de la réunion en ligne
+|Facultatif
+|Le lien pour que les participants puissent se connecter directement à la réunion en ligne.
+
+|Type d'Iframe encapsulée
+|Facultatif
+|Permet de dire comment l'URL de la réunion en ligne est affichée sur la page de la réunion. Choisissez "Aucun" pour aucune intégration iframe, "Intégrer une page de réunion
+pour les participants pour ouvrir la réunion directement sur la page de la réunion, ou "Ouvrir l'URL dans un nouvel onglet" pour les participants à
+ouvrir les réunions dans un nouvel onglet. Seuls quelques services permettent l'intégration (YouTube, Twitch, Jitsi, ...)
+
+|Heure de début
+|Obligatoire
+|Le jour et l'heure de la réunion commence. Format attendu : jj/mm/aaaa hh:mm.
+
+|Heure de fin
+|Obligatoire
+|Le jour et l'heure de la réunion commence. Format attendu : jj/mm/aaaa hh:mm.
+
+|Catégorie
+|Facultatif
+|Quelle catégorie a la réunion. Utilisé pour le filtrage dans la liste des réunions.
+
+|Type d'inscription
+|Obligatoire
+|Choisissez une option entre "Inscription désactivée" pour aucune inscription, "Sur cette plateforme" pour afficher un bouton d'enregistrement lié à
+le xref:admin:components/meetings/registrations. doc[Registrations] ou "Sur une plate-forme différente" si vous gérez des réunions Inscriptions
+avec un autre service.
+
+|Emplacements disponibles pour cette réunion
+|Requis si l'inscription sur cette plateforme
+|Combien de places sont disponibles pour cette réunion ? Laisser à 0 si vous avez un nombre illimité de places disponibles.
+
+|Conditions d'inscription
+|Requis si l'inscription sur cette plateforme
+|Quels sont les termes des services que les participants doivent accepter pour s'inscrire ou participer à la réunion.
+
+|URL d'enregistrement
+|Requis si l'inscription sur une plateforme différente
+|Doit être une URL. Lien pour les participants pour accéder au service externe que vous utilisez pour les inscriptions.
+
+|Créer une réunion en tant que
+|Requis si le participant appartient à un groupe
+|Avec quelle identité cette réunion est créée, le participant ou le groupe d'utilisateurs.
+|===
+
+Après avoir créé la réunion, les participants peuvent également éditer et xref:components/meetings/close.adoc[close] le.
+
+=== Actions
+
+.Actions - Réunions de citoyens
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_preview.png[Icône d'aperçu]
+|Aperçu
+|Pour voir comment il est montré dans le frontend aux participants.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Autorisations
+|Pour gérer les autorisations nécessaires pour rejoindre, commenter ou répondre au sondage pour cette réunion spécifique.
+|===
+
+== Réunions en ligne
+
+Pour les réunions en ligne, selon le moment et la configuration de la réunion, différents messages sont affichés aux participants pour
+les informer sur la façon de participer à la réunion en ligne.
+
+Si l'URL de la réunion en ligne n'est pas encore définie, un message indiquant "Lien disponible bientôt" s'affiche.
+
+image::components/meetings/online_meeting_available_soon.png[Online meeting available soon]
+
+Si l'URL de la réunion en ligne est définie, quelques minutes avant le début de la réunion, le message dit « Le lien pour rejoindre
+la réunion sera disponible quelques minutes avant le début »
+
+image::components/meetings/online_meeting_available_before.png[Online meeting available before it starts]
+
+Si l'URL de la réunion en ligne est définie, l'heure de début de la réunion est arrivée, et vous avez choisi le type d'intégration Iframe comme
+"Ouvrir l'URL dans un nouvel onglet", puis le message dit que "la réunion se déroule en ce moment" avec un lien pour rejoindre la réunion.
+
+image::components/meetings/online_meeting_happening.png[Online meeting available before it starts]
+
+Si l'URL de la réunion en ligne est définie, l'heure de début de la réunion est arrivée, et vous avez choisi le type d'intégration Iframe comme
+"Intégrer à la réunion", puis le message dit que "la réunion se déroule en ce moment" avec la réunion intégrée dans le bloc.
+
+image::components/meetings/online_meeting_happening_embed.png[Online meeting available before it starts]

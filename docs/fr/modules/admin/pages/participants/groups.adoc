@@ -1,0 +1,74 @@
+= Groupes d'utilisateurs
+
+Les groupes d'utilisateurs sont des entités créées par les participants pour représenter une structure, un club, une association, etc.
+Les groupes d'utilisateurs peuvent être gérés par différents administrateurs, et ont plusieurs membres.
+Si un administrateur vérifie un groupe d'utilisateurs, alors tous les administrateurs du groupe d'utilisateurs peuvent participer au nom du groupe.
+
+image::participants/user_group_frontend_show.png[Frontend: show a user group]
+
+== Activer / désactiver les groupes d'utilisateurs
+
+Les administrateurs peuvent activer ou désactiver les groupes d'utilisateurs dans le panneau xref:admin:settings/configuration.adoc[Configuration].
+
+Lorsqu'il est activé, les participants peuvent créer et gérer des groupes à partir de leur profil.
+Pour en savoir plus sur la façon dont les participants peuvent le faire, allez dans l'article xref:admin:features/participant_actions/my_public_profile.adoc[public].
+
+== Gérer les groupes d'utilisateurs
+
+Lorsqu'un participant crée un groupe d'utilisateurs, il ajoute une ligne dans la liste des groupes d'utilisateurs dans le panneau d'administration, avec:
+
+* *Nom*: nom du groupe d'utilisateurs.
+* *Pseudo*: pseudo du groupe d'utilisateurs.
+* *Numéro de document*: peut être le numéro d'identification de la structure, comme le numéro d'identification d'une entreprise ou d'une association.
+* *Téléphone* : numéro de téléphone de la structure ou de l'administrateur du groupe d'utilisateurs.
+* *Nombre de participants* : nombre de membres du groupe d'utilisateurs.
+* *Créé à* : date de création du groupe d'utilisateurs.
+* *État* : l'état de la vérification, ne peut être qu'en attente, vérifiée ou rejetée.
+
+Vous pouvez filtrer et trier cette liste en cliquant sur le bouton "Filtre" et sur les en-têtes des colonnes.
+Vous pouvez également rechercher des groupes d'utilisateurs par e-mail, par nom ou par surnom dans la barre de recherche.
+
+image::participants/admin_user_group_verification.png[Admin panel: user group verifications]
+
+Un groupe d'utilisateurs peut avoir trois états :
+
+* En attente: en attente d'une réponse d'un administrateur
+* Vérifié : un administrateur a vérifié l'authenticité de ce groupe
+* Rejeté : un administrateur a décidé que ce groupe n'était pas authentique ou conforme
+
+=== Actions
+
+.Actions
+[cols="10h,20h,~,~"]
+|===
+|Icône |Nom |Définition |Condition
+
+|image:icons/action_verify.png[Vérifier l'icône]
+|Vérifier
+|Valider la vérification du groupe d'utilisateurs.
+|Disponible lorsque l'état du groupe d'utilisateurs est en attente ou rejeté.
+
+|image:icons/action_delete.png[Rejeter l'icône]
+|Rejeter
+|Pour rejeter la demande de vérification du groupe d'utilisateurs.
+|Disponible lorsque l'état du groupe d'utilisateurs est en attente ou vérifié.
+|===
+
+=== Vérifier un groupe
+
+Pour vérifier un groupe, un administrateur doit vérifier que le groupe existe et est légitime d'avoir une entité sur la plateforme.
+L'administrateur peut appeler l'administrateur du groupe sur le numéro de téléphone fourni, ou vérifier que le numéro de document existe.
+
+Après qu'un groupe soit vérifié, ceci est visible publiquement dans leur surnom dans la plateforme et il y a un message dans son profil :
+"Ce groupe est publiquement vérifié, son nom a été vérifié pour correspondre avec son vrai nom."
+
+image::participants/user_group_verified.png[User group: verified icon]
+
+=== Vérifier par CSV
+
+Si vous voulez vérifier plusieurs groupes d'utilisateurs à la fois, vous pouvez le faire avec le bouton "Vérifier via CSV".
+
+image::participants/admin_user_group_verification_csv.png[Admin panel: user group verifications CSV]
+
+Là, vous pouvez télécharger un fichier CSV, avec une colonne unique sans en-tête, contenant les courriels des groupes d'utilisateurs que vous voulez vérifier.
+Seuls les groupes qui ont confirmé leur adresse e-mail et qui ont un e-mail apparaissant dans le fichier CSV seront vérifiés.

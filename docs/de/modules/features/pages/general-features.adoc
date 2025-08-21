@@ -1,0 +1,77 @@
+= Allgemeine Funktionen
+
+:page-partial:
+
+Unten werden wir eine Reihe allgemeiner Merkmale und Merkmale der Plattform skizzieren, die nicht in den Räumen oder Komponenten auftauchen. oder in den Funktionen, die direkt mit den Teilnehmern verbunden sind.
+
+== Installation und Einstellungen
+
+Decidim **kann einfach über die Kommandozeile auf jedem GNU/Linux-Server mit den folgenden installierten Diensten installiert werden: PostgreSQL 9. +, Ruby 2.4.1, NodeJS mit Garn (JavaScript-Abhängigkeiten verwalten), ImageMagick und PhantomJS. Ein automatisches Installationsskript erlaubt Ihnen das gesamte Abhängigkeitssystem, Bibliotheken, bereitzustellen -Datenbanken und andere automatisch benötigte Dienste in Heroku oder Docker [Funktion für 2018Q4].
+
+Die *Einstellungen* des Portals sind **anpassbar in den folgenden Feldern, die auf einem Formular aus dem Administrationsfenster ausgefüllt werden: Name des Portals, soziale Netzwerkprofile (Twitter, Facebook, Instagram, YouTube, Github); kurze Beschreibung; Begrüßungstext; Standardsprache; Heimatbild; Logo der Organisation; Favicon; -Referenzpräfix (eindeutige Kennung, die auf die Elemente des Portals angewendet wird) und die URL der Organisation.
+
+== Integration mit anderen Diensten und Kompatibilität/Erstellung zusätzlicher Dienste
+
+Decidim kann leicht in folgende Dienste integriert werden, die mit Decidim installiert oder konfiguriert werden können:
+
+* *OpenStreetMap*: um Events und Vorschläge mit Geolocation anzuzeigen
+* *Piwik*: Analyse des Website-Traffics
+* *Pad*: Gemeinschaftliche Echtzeit-Schreibkarten (zu ermittelnde Technologie)
+* *Digitale Identität und Signatur*: Integration mit OAuth2 digital-Identity-Management-System, auf Blockchain basierende Systeme und anerkannte institutionelle digitale Identitäts- und Signaturmanagementsysteme.
+* *Verteiltes Dateisystem*: Verteilen oder Kopieren von Vorschlägen oder anderen Elementen aus der Plattform in einem verteilten Dateisystem (Blockchain oder IPFS Typ) [Fehlendes Feature].
+* *Microblogging*: Integration/Kompatibilität mit einem standardisierten und offenen Microblogging-Protokoll/-Dienst wie dem Typ GNU Social oder StatusNet für die Aktivitäten der Teilnehmer (Vorschläge, Beobachtungen und Nachrichten) [Fehlendes Feature].
+
+Decidim generiert automatisch die folgenden Dienste, außer jenen, die auf der Webseite oder über eine API aufgerufen werden können:
+
+* *SMTP*: Versenden von E-Mails.
+* *Kalender*: Integration und Kompatibilität mit Kalender-Management-Systemen und automatisches Erstellen und Aktualisieren von Veranstaltungskalendern, etc.
+
+== Multimiete
+
+Die Vielseitigkeit der Plattform kann auf Basis einer einzigen Installation genutzt werden. Mit anderen Worten: eine einzige Instanz von Decidim Software erlaubt es, so viele Portale (Tenants) wie Sie möchten, unter spezifischen Einstellungen für jeden der Mieter zu verteilen. Auf diese Weise kann eine Organisation teilnehmende Portale für ihre Unterorganisationen oder verschiedene Organisationen erstellen, die einen Server teilen und die Wartungskosten ihrer Portale senken.
+
+== Mehrsprachig
+
+Decidim ist eine *mehrsprachig* Plattform. Die verfügbaren Sprachen werden während der Installation konfiguriert. Menüs, Verwaltungsformulare und generell die Fixtexte der Plattform sind in mehreren Sprachen verfügbar (Spanisch, Katalanisch, Baskisch, Italienisch, Französisch, Niederländisch und Finnisch). Eine **gemeinschaftliche Übersetzung **System in https://crowdin.com/project/decidim ermöglicht die Einbindung neuer Sprachen in die Plattform.
+
+Was den Inhalt betrifft, sobald die Amtssprachen der Instanz während der Installation festgelegt wurden, alle Inhalte, die aus dem Administrationsbereich erstellt werden, haben die Möglichkeit, in diesen Sprachen generiert zu werden. Das Administrationsmenü erlaubt das Verwalten von *Inhalten in mehreren Sprachen* durch Tabs. Der von den Benutzern generierte Inhalt wird auf der Plattform in einer einzigen Sprache angezeigt (der Inhalt, der vom Teilnehmer über den Sprachauswahl im oberen Teil des Menüs oder automatisch durch die Spracheinstellungen seines Browsers ausgewählt wurde).
+
+== Statistiken, Daten und Downloads öffnen
+
+Neben der Anwendungsprogrammierschnittstelle (API), die automatisch Zugriff auf öffentliche Daten ermöglicht Die Homepage von Decidim enthält eine *allgemeine Statistiktabel* mit den folgenden Feldern: Anzahl der Teilnehmer, Prozesse, Vorschläge, Ergebnisse, Beobachtungen und Stimmen.
+
+Eine weitere *Statistik-Tabelle für jeden Teilnahmeprozess* zeigt die Anzahl der Treffen, Vorschläge, Abstimmungen und Ergebnisse eines bestimmten Prozesses.
+
+Im Administrationsbereich können Sie **Vorschläge exportieren** Ergebnisse und Beobachtungen **eines partizipatorischen Prozesses im CSV- und JSON-Format und Antworten auf Umfragen zur Verarbeitung und/oder Integration in andere Managementsysteme. Die Teilnehmer können die Ergebnisse eines partizipatorischen Prozesses und den Umfang seiner Implementierung **über eine CSV-Datei herunterladen.
+
+Decidim hat auch eine **Datenanzeige Komponente **zur Verfügung auf der allgemeinen Ebene der Plattform und auf einer bestimmten Ebene (Anzeige von Daten aus einem bestimmten Teilnehmerraum) [Funktion für 2018Q2-3 erwartet AjB-Lote2Mod4]. Zu den angezeigten Grafiken gehören Folgendes:
+
+* **Interaktive Grafiken **in Form einer Zeitzeile, die die Entwicklung der Zähler der verschiedenen Komponenten zeigt.
+* *Wärmekarte* aller Treffen, Vorschläge oder anderer Inhalte mit Geo-Standort-Tags.
+* **Interaktive Diagramme **(Balken- oder Tortendiagramme) mit den Ergebnissen eines Prozesses (Beträge jedes Teilhaberprojekts nach Kategorie und Status der Vorschläge filtern - ob ausgewählt oder nicht, usw.,
+
+Alle diese Displays werden von einer **Option zum Herunterladen von Daten im CSV-Format begleitet [Funktion für 2018Q2-3, AjB-Lote2Mod4].
+
+== API, anpassbares Website-Design und mobile App
+
+Decidim verfügt über eine Programmierschnittstelle oder eine API, die eine Reihe unabhängiger Service-Aufrufe und Daten von Decidims Website-Schnittstelle ist. Dies ermöglicht es Dritten, Dienste auf der Plattform zu entwickeln, Daten automatisch freizugeben oder neue Schnittstellen zu entwickeln oder andere Dienste mit Dezimalstellen zu integrieren.
+
+Die API kommt mit *Dokumentation* und einer *formalen partizipatorischen Ontologie* [Nicht vollständig]
+
+Die Webseite *design* von Decidim ist komplett *anpassbar* (_responsive_), wobei _mobile-first_ Designphilosophie verwendet wird (zuerst für Mobiltelefone konzipiert und später auf Desktopsysteme und Tablets erweitert).
+
+Sowohl das Design der Website als auch die API ermöglichen die Entwicklung von mobilen Apps für Decidim, und es wird erwartet, dass in Kürze eine *mobile App* entwickelt wird.
+
+== Inhaltsklassifikationssysteme
+
+Was die inhaltliche Klassifizierung betrifft, so ist in Decidim die folgende zu unterscheiden und anzupassen: Felder, Kategorien und Labels (oder Tags).
+
+*Skopes* sind generisch in der gesamten Plattform und in *territorial* und **Themen**Typen unterteilt. Einmal definiert, lassen sich die Elemente der Räume nach Gebiet (z. Wenn ein Prozess oder eine Einrichtung oder eine Initiative einen oder zwei Distrikte betreffen, so betrifft dies die gesamte Stadt, eine Region oder ein Land, je nach Organisation). Themenbereiche werden ebenfalls für die gesamte Plattform definiert und erlauben die Klassifizierung der verschiedenen Elemente der partizipatorischen Räume.
+
+*Kategorien und Unterkategorien* werden zur Klassifizierung von Inhalten innerhalb der verschiedenen Leerzeichen verwendet und für jede Ebene der Leerzeichen definiert. So kann beispielsweise ein partizipatorischer Prozess mehrere Kategorien und Unterkategorien umfassen (der Prozessadministrator definiert sie), während die Sitzungen des Prozesses Umfragen, Vorschläge und andere Komponenten können in diese Kategorien eingestuft werden.
+
+Im Gegensatz zu Feldern und Kategorien sind *Labels* oder Tags Querschnitts- und frei von Teilnehmern definiert und können für jede Ebene oder Komponente gelten. Labels können im Administrationsbereich erstellt, eingebettet und definiert werden. Ein System zur Etikettierung ermöglicht es den Teilnehmern, sich für Etiketten zu entscheiden, die denen entsprechen, die sie zur Kennzeichnung von Elementen der Plattform vorschlagen. Elemente können mit Labels und den beliebtesten Labels durchsucht werden.
+
+== Kontextbezogene Hilfesysteme, Usability und Evaluationstests
+
+Decidim beinhaltet *editierbare kontextbezogene Hilfe* für individuelle und administrative Teilnehmer bei der Nutzung der Plattform. Es enthält auch **automatische Bewertungsuntersuchungen** für Teilnehmer, um Fehler bei der Benutzerfreundlichkeit und Fehler bei der Teilnahme zu identifizieren und die demokratische Qualitätserfahrung der Software zu verbessern.

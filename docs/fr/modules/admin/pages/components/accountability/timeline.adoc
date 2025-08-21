@@ -1,0 +1,36 @@
+= Évolution du projet
+
+== Understand the basics
+
+Pour que les participants puissent suivre et suivre l'évolution des projets, les administrateurs peuvent créer des entrées de ligne de temps par
+en cliquant sur l'image:icônes/action_horloge. ng[Icône d'évolution du projet].
+
+image::components/accountability/results_entries.png[Result page with timeline entries]
+
+== Configuration
+
+image::components/accountability/timeline_list.png[Timeline entries list]
+
+Là, vous pouvez créer et gérer les différentes phases d'implémentation du résultat, et créer de nouvelles entrées dans la chronologie.
+
+image::components/accountability/new_entry.png[New timeline entry form]
+
+
+.Formulaire de nouvelle entrée
+|===
+|Champ |Type |Description
+
+|Date
+|Obligatoire
+|Format attendu : jj/mm/aaaa
+
+|Titre
+|Obligatoire
+|Titre de l'entrée de la ligne de temps.
+
+|Description
+|Facultatif
+|Description de l'entrée de la ligne de temps.
+|===
+
+Les entrées de la ligne de temps sont ensuite disponibles sur la page de résultat.

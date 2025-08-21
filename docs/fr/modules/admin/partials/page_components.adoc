@@ -1,0 +1,80 @@
+= Fonctionnalités
+
+== Understand the basics
+
+Comme expliqué dans la page d'introduction xref:admin:index.adoc[, pour comprendre comment Decidim fonctionne, vous devez distinguer entre les *espaces* et les *composants*.
+The participatory spaces are the channels that citizens can participate through when public decisions are being taken, whereas participatory components are
+mechanisms that enable interaction between users of the platform and the various participatory spaces.
+
+Tous les composants peuvent être activés dans chaque espace, par exemple vous pouvez activer trois composants Propositions dans un même processus participatif, ou avoir tous les composants
+activés dans un espace de montage.
+
+include::partial$components_list.adoc[]
+
+== How to find it?
+
+Pour configurer les composants, cliquez sur l'élément *Composants* dans un espace participatif.
+
+image::spaces/components/components.png[Components of space]
+
+Là, vous pouvez gérer les composants déjà ajoutés, les configurer, en ajouter de nouveaux, etc.
+
+== Manage components
+
+Vous pouvez trouver tous les composants dans la liste dans le panneau d'administration, avec:
+
+* *Nom du composant* : titre du composant, donné lors de la création ou de l'édition.
+* *Type de composant* : type du composant.
+* *Portée des composants* : dans un même espace, les composants peuvent avoir des portées différentes.
+
+== Créer un composant
+
+Pour configurer un nouveau composant, cliquez sur *Ajouter un composant* dans la partie supérieure droite de l'écran et sélectionnez le type de composant
+que vous souhaitez.
+
+image::spaces/components/components_new_dropdown.png[Add a component in a space]
+
+== Actions
+
+.Actions des composants dans la liste des composants
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_edit.png[Gérer l'icône]
+|Gérer
+|Gérer toutes les ressources à l'intérieur d'un composant. Par exemple, toutes les propositions d'un composant de proposition, les réunions
+dans un composant de réunion, etc.
+
+|image:icons/action_share.png[Share icon]
+|Partager
+|Partager en privé avant de publier ce composant. Utile pour obtenir des avis d'autres personnes de votre organisation.
+
+|image:icons/action_configure.png[Configure icon]
+|Configurer
+|Pour configurer un composant avec des règles spécifiques, par exemple, dans le cas de réunions :
+sont des commentaires activés, les participants peuvent créer des réunions ou pas, etc.
+
+|image:icons/action_publish.png[Icône de publication]
+|Publier
+|Publier un composant. Cela signifie que le composant est alors visible au public.
+
+|image:icons/action_unpublish.png[Dépublier l'icône]
+|Dépublier
+|Dépublier un composant. Cela signifie que le composant est alors invisible au public.
+
+|image:icons/action_preview.png[Icône d'aperçu]
+|Aperçu
+|Pour prévisualiser l'espace avant qu'il ne soit publié.
+
+|image:icons/action_permissions.png[Permissions icon]
+|Autorisations
+|Pour configurer quel xref:customize:authorizations.adoc[Authorization] est nécessaire pour effectuer certaines actions dans
+ce composant. Par exemple, dans le cas des propositions, dont la vérification est nécessaire pour créer une nouvelle proposition ou
+pour apporter un soutien.
+
+|image:icons/action_delete.png[Supprimer l'icône]
+|Supprimez
+|Supprimer ce composant. If there are content inside, most of the components don't let you delete them so it doesn't break
+relations with other resources. Dans ces cas, il est recommandé de dépublier simplement le composant.
+|===

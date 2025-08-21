@@ -1,0 +1,11 @@
+= Áreas
+
+$deprecatedparcial .adoc[]
+
+Areas are all the sectors that an organization can have.
+
+Areas are pretty similar to xref:admin:settings/scopes.adoc[scopes], meaning that they're a way of allowing a
+better navigation and filtering in the spaces and components.
+
+You can read more information about the history of Areas in
+this https://github.com/decidim/decidim/issues/3540#issuecomment-427324532[GitHub comment].

@@ -1,0 +1,47 @@
+= Invitations
+
+== Understand the basics
+
+Les administrateurs peuvent inviter les participants à participer à la conférence.
+They can invite already existing participants, with an account on the platform, but also people without account.
+Inviting a participant sends an email to the account email address, to encourage the participant to register to the conference.
+
+== Gérer les invitations
+
+Pour accéder à la configuration des invitations, cliquez dans le panneau de navigation secondaire de l'élément "Invitations".
+
+image::spaces/conferences/invites.png[Conferences user invites in backend]
+
+Vous pouvez filtrer les invitations et rechercher par nom d'invité ou par email.
+
+== Envoyer une invitation
+
+Pour inviter un participant, cliquez sur le bouton "Inviter un participant" en haut à droite de la page.
+
+image::spaces/conferences/invite_participant_form.png[Invite a participant form]
+
+.Formulaire d'invitation de l'utilisateur
+[cols="20h,~,~"]
+|===
+|Champ |Type |Description
+
+|Type de participant
+|Obligatoire
+|Wether this invited person already has an account or not.
+
+|Nom
+|Requis si c'est un participant qui n'existe pas.
+|Nom de la personne invitée.
+
+|Courriel
+|Requis si c'est un participant qui n'existe pas.
+|Courriel de la personne invitée.
+
+|Utilisateur
+|Requis si c'est un participant existant.
+|Tapez au moins trois caractères pour rechercher un compte participant.
+
+|xref:admin:admin:espaces/conférences/registrations/types.adoc[Type d'enregistrement]
+|Obligatoire
+|Le xref:admin:admin:spaces/conferences/registrations/types.adoc[type d'inscription] que cette invitation couvre.
+|===

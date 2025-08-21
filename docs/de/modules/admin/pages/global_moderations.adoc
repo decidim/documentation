@@ -1,0 +1,57 @@
+= Globale Moderationen
+
+== Understand the basics
+
+Die *Globale Moderation* Funktion erlaubt es dir, verschiedene Arten von Inhalten zu moderieren und
+sicherzustellen, dass der Dialog in deiner Plattform demokratisch und konstruktiv ist.
+It also allows managing participants who infringe the rules of the platform.
+
+NOTE: Looking for how to report participants or content? See xref:moderations/reported_users.adoc[Reported participants] and xref:moderations/reported_content.adoc[Reported content].
+
+Im Falle von https://www.decidim.barcelona/[Decidim Barcelona] zum Beispiel sagt
+die https://www.decidim.barcelona/pages/terms-and-conditions[Terms of Service] an:
+
+> Es ist nicht erlaubt, illegale oder nicht autorisierte Inhalte zur Website hinzuzufügen, wie zum Beispiel
+> als Informationen mit den folgenden Funktionen:
+> 
+> * sei es falsch oder irreführend;
+> * gegen jedes Gesetz des Stadtrats oder irgendeines Dritten, wie das Urheberrecht, verstoßen
+> Marken oder andere geistige und gewerbliche Eigentumsrechte oder verwandte Rechte;
+> * attacking the privacy of a third party, such as publishing personal details
+> of participants, such as name, address, phone number, email, photos or any other
+> personal information;
+> * enthält Viren, Trojaner, Roboter oder andere Programme, die der Website
+> oder dem Rathaussystem schaden können oder die Website oder das System von Dritten oder welche
+> die technischen Maßnahmen umgehen will, die für das einwandfreie Funktionieren
+> der Plattform entwickelt wurden;
+> * um Spam an Benutzer zu senden oder das System zu überladen;
+> * der den Charakter der Nachrichtenkette, des Pyramidenspiels oder des zufälligen Spiels hat;
+> * für kommerzielle Zwecke, wie die Veröffentlichung von Stellenangeboten oder Anzeigen;
+> * dass sie nicht im Einklang mit dem öffentlichen Anstand steht; infolgedessen darf Inhalt nicht
+> Hass schüren, diskriminieren, bedrohen, provozieren, keine sexuelle, gewalttätige, grobe oder
+> beleidigende Bedeutung oder Charakter haben;
+> * gegen das Gesetz oder die anwendbare Vorschrift verstoßen;
+> * zur Kampagne durch die Förderung der Massenabstimmung für andere Vorschläge, die nicht mit dem
+> -Prozess und dem Diskussionsrahmen zusammenhängen, und
+> * mehrere Benutzer zu erstellen, indem man vorgibt, verschiedene Personen zu sein (Astroturfing).
+
+== Konfiguration
+
+To access the Global moderations panel, go in the administration panel and click in the "Global moderations" item in
+the administrator navigation bar.
+
+image::moderations/moderations_menu.png[Global moderations menu]
+
+The Global moderations panel allows to manage reported contents as well as reported participants.
+
+image:moderations/moderations_backend_list_content.png[Global moderations panel for content]
+
+== Beispiele
+
+=== Report content
+
+You can report and hide a comment containing private information, or a link to a commercial platform posted by a user.
+
+=== Report user
+
+You can report and block participants who are constantly violating the participation chart, or spamming and trolling the platform.

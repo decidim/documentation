@@ -1,0 +1,171 @@
+= Apparence
+
+Dans cette page, vous pouvez configurer l'apparence de votre instance Decidim.
+
+NOTE: Veuillez noter que cela serait incompatible avec certains des changements que vos implémentateurs pourraient apporter dans votre installation générale.
+Par exemple, s'il y a eu des changements dans xref:customize:styles.adoc[Styles] certains paramètres n'ont pas pu être appliqués comme prévu.
+
+== Modifier l'apparence de la page d'accueil
+
+Cette section permet de fournir une description générale de l'instance, et pour configurer un bouton d'appel à l'action qui peut être
+affiché aux participants sur la page d'accueil pour les encourager à aller dans un processus spécifique, comme une composante de proposition où ils peuvent participer.
+
+image::settings/admin_appearance_homepage_appearance.png[Decidim Admin Appearance edit homepage appearance toggle]
+
+.Modifier le formulaire d'apparence de la page d'accueil
+[cols="20h,10h,~,~"]
+|===
+|Champ |Type |Description |Visibilité
+
+|Description
+|Facultatif
+|La description de cette instance, utilisée pour les balises méta pour les embeds Google et Twitter.
+|Visible dans le pied de page et dans le bloc de contenu "Sous-héros bannière" de la page d'accueil si ce bloc est activé.
+
+|Chemin du bouton d'Appel à action
+|Facultatif
+|Chemin d'accès à l'endroit sur la plateforme lorsque vous voulez rediriger rapidement les participants.
+|Visible dans le bloc de contenu "Héros image et CTA" de la page d'accueil si ce bloc est activé.
+
+|Texte du bouton d'appel à l'action
+|Facultatif
+|Texte affiché sur le bouton CTA.
+|Visible dans le bloc de contenu "Héros image et CTA" de la page d'accueil si ce bloc est activé.
+|===
+
+NOTE: Pour comprendre comment activer les différents blocs de la page d'accueil, allez dans l'article xref:admin:settings/homepage.adoc[homepage].
+
+== Bannière de contenu en surbrillance
+
+Cette section permet d'activer et de donner une description et un bouton CTA à une bannière, par exemple pour mettre en évidence un espace spécifique
+sur votre instance, pour encourager les utilisateurs à créer un compte ou à s'inscrire à une réunion. Vous pouvez le faire évoluer en fonction de l'actualité
+de votre instance, et le désactiver quand ce n'est pas nécessaire.
+
+NOTE: Pour apparaître sur la page d'accueil, le bloc de contenu "Bannière de contenu en surbrillance" doit être activé sur xref:admin:settings/homepage.adoc[homepage].
+
+image::settings/admin_appearance_highlighted_banner.png[Decidim Admin Appearance edit Highlighted content banner toggle]
+
+.Modifier le formulaire de bascule de bannière de contenu mis en surbrillance
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Afficher la bannière de contenu en surbrillance
+|Case à cocher
+|Lorsque cette case est cochée, la bannière de contenu en surbrillance apparaît sur la page d'accueil si le bloc de contenu "Bannière de contenu en surbrillance" est également activé.
+
+|Titre
+|Obligatoire
+|Le titre de la bannière.
+
+|Courte description
+|Obligatoire
+|La description de la bannière.
+
+|Titre du bouton d'action
+|Obligatoire
+|Le texte affiché dans la bannière CTA.
+
+|Sous-titre du bouton d'action
+|Facultatif
+|Un sous-titre optionnel affiché dans votre CTA.
+
+|URL du bouton d'action
+|Obligatoire
+|L'URL où le bouton CTA redirige.
+
+|Image
+|Facultatif
+|L'image de fond de la bannière.
+|===
+
+== Modifier la bannière permanente
+
+Cette section permet d'activer une bannière en haut de votre instance, au-dessus des en-têtes, visible à tout moment de chaque page.
+It can be useful to display very important information that all participants need to see, like announcing a maintenance date,
+availability of a process results, an important notice, etc.
+
+NOTE: Cette bannière n'est configurée que sur cette page et n'a pas besoin d'être activée dans la section de la page d'accueil.
+
+image::settings/admin_appearance_omnipresent_banner.png[Decidim Admin Appearance edit omnipresent banner toggle]
+
+.Modifier le formulaire de bascule de bannière de contenu mis en surbrillance
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Activer la bannière permanente
+|Case à cocher
+|Lorsqu'elle est cochée, la bannière omniprésente apparaît en haut de chaque page de la plate-forme, au-dessus des en-têtes.
+
+|Titre
+|Obligatoire
+|Le titre de la bannière.
+
+|Courte description
+|Obligatoire
+|La description de la bannière.
+
+|URL
+|Obligatoire
+|L'URL où la bannière redirige.
+|===
+
+image::settings/appearance_omnipresent_banner.png[Decidim Appearance omnipresent banner frontend]
+
+== Modifier l’aspect de la mise en page
+
+Cette section permet de télécharger des logos et des icônes, à afficher dans l'en-tête et le pied de page, les courriels de notification, les lettres d'information, etc.
+
+image::settings/admin_appearance_layout.png[Decidim Admin layout appearance toggle]
+
+.Modifier l'apparence de la mise en page
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Icône
+|Télécharger
+|Affiché en tant que "favicon" dans les onglets du navigateur de l'instance.
+
+|Logo
+|Télécharger
+|Affiché dans l'en-tête de l'instance et dans l'en-tête de la newsletter et des courriels de notification.
+
+|Logo officiel - pied de page
+|Télécharger
+|Affiché dans le pied de page de l'instance et redirigé vers l'URL officielle de l'organisation.
+
+|Url officielle de l'organisation
+|Facultatif
+|L'URL où le logo officiel redirige le pied de page.
+|===
+
+image::settings/appearance_layout_footer_logo.png[Decidim Appearance official footer logo]
+
+== Couleurs de l'organisation
+
+Cette section permet de choisir les couleurs de l'organisation.
+
+NOTE: Soyez conscient des problèmes potentiels d'accessibilité, par exemple avec des personnes qui n'ont pas une bonne notion de contraste.
+Vous pouvez vérifier le contraste de votre choix avec WebAIM Contrast Checker ou d'autres outils similaires.
+
+image::settings/admin_appearance_colors.png[Decidim Admin layout appearance toggle]
+
+Vous pouvez configurer :
+
+* Couleur principale: utilisée pour l'arrière-plan du menu global, les arrière-plans du menu des composants, etc.
+* Couleur secondaire : utilisée pour les liens de titres, les boutons principaux, la couleur de l'en-tête, etc.
+* Couleur tertiaire: Utilisé pour les titres soulignés, la couleur de la bordure de la carte, etc.
+
+Dans la capture d'écran suivante, les trois couleurs différentes sont affichées.
+
+image::settings/appearance_colors.png[Decidim layout appearance colors example]
+
+== Elements à rajouter entre les balises <head></head>
+
+NOTE: Vous ne pouvez pas voir ce champ. Pour plus d'informations sur la façon de l'activer, consultez la documentation xref:customize:styles.adoc[Styles].
+
+Ce champ permet d'ajouter du code à la tête HTML. The most common use is to integrate third-party services that require
+some extra JavaScript or CSS. De plus, vous pouvez l'utiliser pour ajouter des balises méta supplémentaires au HTML.
+Notez que ceci n'est rendu que dans les pages publiques, pas dans l'administration.

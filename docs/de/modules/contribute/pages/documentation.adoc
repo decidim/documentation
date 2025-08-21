@@ -1,0 +1,19 @@
+= Dokumentation
+
+Um zur Dokumentation beizutragen (zum Beispiel dieselbe Seite, die Sie lesen), Sie können es auf zwei Arten tun: Bearbeiten auf GitHub direkt oder Bearbeiten lokal.
+
+== Edit on GitHub
+
+Dies ist der empfohlene Weg, wenn Sie nur eine schnelle Korrektur vornehmen möchten (zum Beispiel einen Tippfehler oder eine Klarstellung auf einer einzelnen Seite). Um dies zu tun, klicken Sie auf den Link "Diese Seite bearbeiten" oben auf jeder Seite.
+
+image::documentation-edit.png[Edit this page link]
+
+Es wird die Seite zum Bearbeiten in der GitHub Schnittstelle öffnen und nachdem Sie fertig sind, wird es Sie dazu bringen, eine Pull Request zu machen, damit die Betreuer Ihren Beitrag überprüfen können.
+
+== Lokal bearbeiten
+
+Wenn Sie viele Änderungen in der Dokumentation vorschlagen möchten, oder wenn Sie Ihre Änderungen vor dem Senden lokal überprüfen möchten, weil Sie Dinge wie Formatieren überprüfen möchten können Sie die Umgebung installieren, um die Dokumentationsseite lokal zu haben.
+
+Dann müssen Sie das Projektarchiv forkieren, einen Zweig erstellen und Ihre Änderungen als Pull Request vorschlagen, damit die Betreuer es lesen können. Wie Sie sehen, kann dies ein Ärger sein, wenn Sie kleine Änderungen vornehmen möchten also wäre es am besten, dies zunächst mit dem Link "Diese Seite bearbeiten" zu tun.
+
+Lesen Sie die vollständigen Anweisungen, wie Sie diese Dokumentations-Website lokal auf der https://github.com/decidim/documentation/[Decidim Documentation GitHub repository] installieren.

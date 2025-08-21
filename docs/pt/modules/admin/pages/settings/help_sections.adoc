@@ -1,0 +1,19 @@
+= Seções de ajuda
+
+On each participatory space index and landing page, you can see a "Help" button on the right border of the page.
+
+image::settings/help_sections_frontend_hide.png[Help sections: hide]
+
+By clicking on it, a visitor or a participant can see a pop up message to understand what the participatory space is about.
+
+image::settings/help_sections_frontend.png[Help sections: frontend]
+
+Administrators can customize these *help sections* to adapt them to the instance specificity.
+
+image::settings/help_sections_backend.png[Help sections: backend]
+
+== Desligado
+
+You can hide these information boxes by leaving the contents all empty for every language.
+
+image::settings/help_sections_disable_backend.png[Disable help section in administration]

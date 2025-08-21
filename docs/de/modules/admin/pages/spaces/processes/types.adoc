@@ -1,0 +1,44 @@
+= Prozessarten
+
+== Understand the basics
+
+In einigen Fällen ist es notwendig, partizipatorische Prozesse mit mehr als nur xref:spaces/processes/groups.adoc[Process Groups] zu organisieren.
+This is where process types can be useful, and add a layer of categorization.
+Participants are then able to filter processes by the process types you created.
+
+NOTE: Process types work similarly to xref:admin:spaces/assemblies.adoc#_assemblies_types[Assembly types].
+
+== Manage process types
+
+To access the process types list, click the "Manage" button on the top right of the page, and click the "Process type" menu item.
+
+image::spaces/processes/process_types_list.png[Backend process types menu item]
+
+== Create a process type
+
+Click the "New process type" button on the top right of the page.
+
+image:spaces/processes/process_types_form.png[Process type creation form]
+
+.Neues partizipatorisches Prozesstyp-Formular: Allgemeine Informationen
+[cols="20h,10h,~"]
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Titel des partizipatorischen Prozesstyps.
+|===
+
+== Add process type to a process
+
+To relate processes to process types, in the edition page of a process, select the process type under the section labelled Other.
+
+image::spaces/processes/process_types_edit_process.png[Choose a process type when editing a process]
+
+== Filter by process types
+
+If there is at least one process type defined and related to a process, a filter is displayed at the left of the processes list
+in the participant interface, allowing filtering of Processes.
+
+image::spaces/processes/process_types_filter.png[Process types filter in the processes index]

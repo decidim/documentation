@@ -1,0 +1,76 @@
+= Administrateurs
+
+Administrators are the persons managing the organization, creating the processes, managing the platform as a whole
+They can be of two types:
+
+* Administrateurs : ont accès à toute la configuration de la plate-forme.
+* Gestionnaires de participants : seuls les participants xref:admin:participants/impersonations.adoc[impersonations] peuvent être gérés.
+
+image:participants/admins.png[Liste des admins]
+
+== Inviter un administrateur
+
+Pour inviter un administrateur, cliquez sur le bouton "Nouvel administrateur" en haut à droite de la page.
+Vous pouvez inviter un participant déjà inscrit ou non enregistré.
+
+image:participants/admins_invite.png[Formulaire d'invitation d'un participant]
+
+.Formulaire d'administrateur
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Nom de l'administrateur. S'ils ont déjà un compte, il change automatiquement pour leur nom d'utilisateur.
+
+|Courriel
+|Obligatoire
+|Courriel du participant à inviter. S'ils n'ont pas de compte lié à cet e-mail, ils devraient recevoir un e-mail d'invitation
+pour créer un compte. Sinon, ils ne seront pas notifiés.
+
+|Rôle
+|Obligatoire
+|Administrateur ou Responsable Participant
+|===
+
+Si un administrateur n'a pas encore de compte, mais n'est pas enregistré, vous pouvez également renvoyer l'invitation.
+
+== Gérer les administrateurs
+
+Vous pouvez trouver tous les administrateurs dans la liste des administrateurs dans le panneau d'administration, avec:
+
+* *Rôle* : le type de droits d'administrateur, ne peut être que Administrateur ou Gestionnaire de Participants.
+* *Nom*: nom du participant.
+* *E-mail*: email du participant.
+* *Invitation envoyée à* : date et heure de l'invitation par courriel.
+* *Invitation acceptée à* : quand ils ont accepté l'invitation par courriel.
+* *Date de dernière connexion*: date de la dernière connexion de l'administrateur.
+* *Date de création* : date de création du compte participant.
+
+Vous pouvez filtrer et trier cette liste en cliquant sur le bouton "Filtre" et sur les en-têtes des colonnes.
+Vous pouvez également rechercher des administrateurs par e-mail, nom ou surnom dans la barre de recherche.
+
+=== Actions
+
+.Actions
+[cols="10h,20h,~,~"]
+|===
+|Icône |Nom |Définition |Condition
+
+|image:icons/action_resend.png[Renvoyer l'icône d'invitation]
+|Renvoyer l'invitation
+|Pour renvoyer un e-mail d'invitation au participant.
+|Disponible lorsque le participant n'a pas accepté l'invitation.
+
+|image:icons/action_delete.png[Supprimer l'icône]
+|Supprimez
+|Pour révoquer les droits d'accès d'administration du participant.
+|Disponible pour tous les administrateurs, sauf pour le premier.
+|===
+
+=== Révoquer les autorisations d'administrateur
+
+Lorsqu'un administrateur n'a plus besoin d'accès, vous devriez révoquer ses droits en cliquant sur le bouton "Supprimer".
+Vous devez confirmer la suppression des droits pour supprimer complètement leurs droits.
+La révocation des autorisations d'administrateur ne supprime pas le compte de l'utilisateur.

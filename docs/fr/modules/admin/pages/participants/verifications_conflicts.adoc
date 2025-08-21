@@ -1,0 +1,68 @@
+= Conflit de vérification
+
+Un conflit de vérification peut se produire lorsque les autorisations sont activées, et que certains participants créent plusieurs comptes
+ou se font passer pour un usurpateur.
+
+Par exemple :
+
+. Un participant crée un compte et se fait vérifier contre une autorisation.
+. Puis ils créent un autre compte et tentent de se faire vérifier à nouveau avec la même autorisation.
+
+Cela peut également se produire avec des imitations :
+
+. Un participant obtient xref:admin:participants/impersonations.adoc[impersonated] avec ses données, mais ne saisissez pas d'email
+. Puis ils créent un compte et essaient de se vérifier avec la même vérification
+
+Pour des raisons de sécurité, essayez d'être plus prudent dans ces cas, et assurez-vous qu'un administrateur examine ces conflits potentiels.
+Cela dépend beaucoup du type de vérification que vous avez activé dans votre organisation, de sorte que la plupart du temps une organisation
+ne voit aucun conflit apparaître dans ce panneau.
+
+image:participants/verifications_conflicts.png[Panneau de conflits de vérification]
+
+En cas de conflit de vérification, les administrateurs reçoivent une notification par courriel.
+
+== Gérer les conflits de vérifications
+
+Dans le panneau de vérification de conflit, vous pouvez trouver tous les conflits, avec:
+
+* *Utilisateur* : nom du participant non géré qui a essayé d'être vérifié depuis son compte.
+* *Utilisateur géré* : nom de l'utilisateur avec les mêmes données de vérification.
+* *Tentatives* : nombre de fois où l'utilisateur a essayé d'être vérifié avec ses données.
+* *Résolu* : si le conflit de vérification a été résolu ou non.
+
+Vous pouvez rechercher des conflits par courriel, nom ou pseudonyme dans la barre de recherche.
+
+=== Actions
+
+.Actions
+[cols="10h,20h,~"]
+|===
+|Icône |Nom |Définition
+
+|image:icons/action_transfer_user.png[Transférer l'utilisateur]
+|Transférer l'utilisateur
+|Résoudre le conflit de vérification.
+|===
+
+=== Transférer l'utilisateur
+
+Le bouton de transfert utilisateur permet de résoudre le conflit entre les deux comptes.
+
+image:participants/verifications_conflicts_transfer_user.png[Formulaire de transfert d'utilisateur]
+
+.Transférer le formulaire utilisateur
+[cols="20h,10h,~"]
+|===
+|Champ |Type |Description
+
+|Raison
+|Obligatoire
+|Pourquoi souhaitez-vous transférer le compte utilisateur
+
+|Courriel
+|Obligatoire
+|L'e-mail de l'utilisateur à transférer
+|===
+
+Après le transfert de l'utilisateur, les deux comptes, celui géré et le nouveau, sont fusionnés en un, qui prend l'adresse e-mail
+saisie dans le formulaire, et la vérification valide est transférée sur ce compte.
