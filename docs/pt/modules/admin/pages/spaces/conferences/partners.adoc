@@ -1,47 +1,47 @@
-= Partners
+= Parceiros
 
-The partners are the sponsors or supporters of a conference. They are listed on the Conference landing page.
+Os parceiros são os patrocinadores ou apoiadores de uma conferência. Eles estão listados na página inicial da conferência.
 
-image:spaces/conferences/partners_frontend.png[Conferences partners (frontend)]
+imagem:espaços/conferências/partners_frontend.png[Parceiros de conferências (frontend)]
 
-== Create a new partner
+== Criar um novo parceiro
 
-image:spaces/conferences/partners.png[Conferences partners]
+imagem:espaçaces/conferências/partners.png[Parceiros de conferências]
 
-For creating a new partner of a conference:
+Para criar um novo parceiro de uma conferência:
 
-. Sign in as administrator
-. Go to the conferences section in the sidebar
-. Click on the conference Edit action
-. Click on the Partners link in the sidebar
-. Click on the "New partner" button
-. Fill the form
+. Entrar como administrador
+. Ir para a seção de conferências na barra lateral
+. Clique na ação Editar da conferência
+. Clique no link Parceiros na barra lateral
+. Clique no botão "Novo parceiro"
+. Preencha o formulário
 
-image:spaces/conferences/new_partner.png[Conferences partners form]
+imagem:espaçaces/conferências/new_partner.png[Formulário de parceiros de conferências]
 
 
-.New partner form
+.Novo formulário de parceiro
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Name
-|Required
-|What is the name of this partner.
+|Nome:
+|Obrigatório
+|Qual é o nome desse parceiro.
 
-|Partner type
-|Required
-|Choose one of these options: Main promotor or Collaborator
+|Tipo de parceiro
+|Obrigatório
+|Escolha uma destas opções: Principal promotor ou Colaborador
 
-|Weight
-|Optional
-|Which order will it have in relation to the other partners. Having a lower number means a higher priority. For instance, if you have two partners, "Partner a" with weight "10" and "Partner b" with weight "0", then "Partner b" will be first when ordering.
+|Peso
+|Opcional
+|Que ordem terá em relação aos outros parceiros. Ter um número menor significa uma prioridade mais alta. Por exemplo, se você tem dois parceiros, "Parceiro a" com peso "10" e "Parceiro b" com peso "0", em seguida "Parceiro b" será o primeiro na ordenação.
 
-|Link
+|Vincular
 |
 |
 
-|Logo
-|Required
-|Guidance for image: Preferably a landscape image that does not have any text. The service crops the image. Maximum file size: 5MB
-Allowed file extensions: jpg jpeg gif png bmp ico
+|Logotipo
+|Obrigatório
+|Orientação para imagem: Preferencialmente, uma imagem de paisagem que não possui qualquer texto. O serviço cultiva a imagem. Tamanho máximo do arquivo: 5MB
+Extensões de arquivo permitidas: jpg jpeg gif png bmp ico
 |===

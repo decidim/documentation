@@ -1,15 +1,15 @@
-= Metrics
+= Métricas
 
-NOTE: Looking for how to enable this feature technically? Go to xref:develop:metrics.adoc[Metrics in Developers guide]
+NOTE: ¿Buscas cómo activar esta característica técnicamente? Ir a la guía xref:develop:metrics.adoc[Métricas en la guía de desarrolladores]
 
-With Metrics participants can see the evolution in time of some resources, such as Proposals, Supports, Endorsements, Followers, Participants, Accepted propsoals, Comments, etc. You can see a real world example of this in https://meta.decidim.org/processes/roadmap/all-metrics[Metadecidim Roadmap process].
+Con Métricas los participantes pueden ver la evolución en el tiempo de algunos recursos, tales como Propuestas, Apoyos, Respaldos, Seguidores, Participantes, Propósitos Aceptados, Comentarios, etc. Puede ver un ejemplo real de esto en https://meta.decidim.org/processes/roadmap/all-metrics[Metadecidim Roadmap process].
 
-For this to work it needs to be first xref:develop:metrics.adoc[configured technically] and also enabled by the setting in the participatory space (`Show metrics` checkbox).
+Para que esto funcione, necesita ser el primero xref:develop:metrics.adoc[configurado técnicamente] y también habilitado por la configuración en el espacio participativo (casilla `Mostrar métricas`).
 
-Then this section will be visible in the space landing page.
+Entonces esta sección será visible en la página de inicio del espacio.
 
-image:features/metrics/example.png[Example of metrics]
+imagen:características/métricas/ejemplo.png[Ejemplo de métricas]
 
-By clicking in "Show all metrics", visitors can see other metrics and download this data in CSV format.
+Al hacer clic en "Mostrar todas las métricas", los visitantes pueden ver otras métricas y descargar estos datos en formato CSV.
 
-image:features/metrics/page.png[Metrics page]
+image:features/metrics/page.png[Página de métricas]

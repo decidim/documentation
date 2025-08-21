@@ -1,346 +1,346 @@
-= Initiatives
+= Iniciativas
 
-An initiative is a special type of participatory process that can be promoted by anyone (independently of other channels or participation spaces) through the collection of (online and in-person) signatures for the organization to carry out a specific action (modify a regulation, initiate a project, change the name of a department or a street, etc.).
+Una iniciativa es un tipo especial de proceso participativo que puede ser promovido por cualquier persona (independientemente de otros canales o espacios de participación) a través de la recogida de firmas (en línea y en persona) para que la organización lleve a cabo una acción específica (modificar un reglamento) iniciar un proyecto, cambiar el nombre de un departamento o una calle, etc.).
 
-The promoters of an initiative can define its objectives, gather support, debate, disseminate it and define meeting points where signatures can be collected from the attendees or debates open to other participants.
+Los promotores de una iniciativa pueden definir sus objetivos, reunir apoyo, debate, diseminarlo y definir los puntos de encuentro donde se pueden recoger firmas de los asistentes o debates abiertos a otros participantes.
 
-Examples: An initiative can collect signatures to call for a consultation among all the people of an organization, or to create an assembly, or to call for a process of budget increase for a territory or area of the organization. During the process of collecting signatures, more people can add to this demand and carry it forward in the organization.
+Ejemplos: Una iniciativa puede recoger firmas para pedir una consulta entre todas las personas de una organización, o para crear una asamblea, o para pedir un proceso de aumento del presupuesto para un territorio o área de la organización. Durante el proceso de recogida de firmas, más gente puede añadir a esta demanda y llevarla adelante en la organización.
 
-Initiatives are to be distinguished from the other participation spaces because they can be used as a participatory tool or mechanism promoted by participants. In other words, the initiatives are mechanisms for semi-direct democracy through which participants can promote a certain action of common interest to the organization, by collecting a specific number of signatures. In this case, what the organization has to do is enable the promotion of these initiatives and offer the necessary technical support and advice to the people concerned. The role of the platform’s administrator, then, is somewhat different from that of the other participation spaces.
+Las iniciativas deben distinguirse de los demás espacios de participación porque pueden ser utilizadas como herramienta participativa o mecanismo promovido por los participantes. En otras palabras, las iniciativas son mecanismos para la democracia semidirecta a través de los cuales los participantes pueden promover una cierta acción de interés común para la organización, recolectando un número específico de firmas. En este caso, lo que la organización tiene que hacer es posibilitar la promoción de estas iniciativas y ofrecer el apoyo técnico y el asesoramiento necesarios a las personas afectadas. El papel del administrador de la plataforma, entonces, es algo diferente del de los otros espacios de participación.
 
-In the first place, you will have to configure the various forms of initiatives. This could be specified in a regulation (like a municipal normative or state law), specifying the number of signatures required for processing the various types of initiatives. For example, an initiative for incorporating one or several items into the Municipal Council’s agenda evidently requires fewer signatures than another initiative for promoting a binding consultation.
+En primer lugar, tendrá que configurar las distintas formas de iniciativa. Esto podría especificarse en un reglamento (como una normativa municipal o una ley estatal), especificar el número de firmas requeridas para procesar los distintos tipos de iniciativas. Por ejemplo, una iniciativa para incorporar uno o varios puntos en la agenda del Congreso Municipal requiere evidentemente menos firmas que otra iniciativa para promover una consulta vinculante.
 
-== 0. Initiative setup
+== 0. Configuración inicial
 
-How initiatives work depends on two things: how the initiative module is configured through the xref:admin:initiatives_initializer.adoc[initializer] (in code) and how the initiative type is configured in the administration panel.
+Cómo funcionan las iniciativas depende de dos cosas: cómo se configura el módulo de iniciativa a través de xref:admin:initiatives_initializer. doc[initializer] (en código) y cómo el tipo de iniciativa está configurado en el panel de administración.
 
-Regarding initiatives type, **an administrator** needs to define one. For Initiatives to work on an organization there must be at least one initiative type created and configured with at least one initiative type scope. If there's only one type then the participant will not get the possibility to choose the initiative type, this step will be skipped in the initiative creation wizard.
+En cuanto al tipo de iniciativas, **un administrador** necesita definir uno. Para que las Iniciativas trabajen en una organización, debe haber al menos un tipo de iniciativa creado y configurado con al menos un ámbito de tipo de iniciativa. Si sólo hay un tipo, el participante no tendrá la posibilidad de elegir el tipo de iniciativa, este paso se omitirá en el asistente de creación de iniciativas.
 
-Some real examples from the city of Barcelona are:
+Algunos ejemplos reales de la ciudad de Barcelona son:
 
-* To add an item to the Municipal Council or Districts agendas
-* To perform a participatory process
-* To create a new assembly
-* To approve or modify a regulation
-* To request the holding of a citizen consultation
-* To call for assemblies (neighborhood councils or public audiences)
+* Añadir un elemento a las agendas del Consejo Municipal o Distritos
+* Para realizar un proceso participativo
+* Crear una nueva asamblea
+* Aprobar o modificar un reglamento
+* Solicitar la celebración de una consulta ciudadana
+* Llamar a asambleas (consejos de vecindad o públicos públicos)
 
-=== New initiative type form
+=== Nuevo formulario de tipo de iniciativa
 
-image:admin_initiative_type.png[New initiative type form]
+imagen:admin_initie_type.png[Nuevo formulario de tipo de iniciativa]
 
 
-.Admin new initiative type form: General information
+.Admin nuevo formulario de tipo de iniciativa: Información general
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Title
-|Required
-|Title of the initiative type. For instance, "New park at city center".
+|Título
+|Requerido
+|Título del tipo de iniciativa. Por ejemplo, "Nuevo parque en el centro de la ciudad".
 
-|Description
-|Required
-|Explanation of what can be done with this initiative type.
+|Descripción
+|Requerido
+|Explicación de lo que se puede hacer con este tipo de iniciativa.
 
-|Banner image
-|Required
-|An image for this initiative type. NOTE: At the moment this is not used.
-|===
-
-
-.Admin new initiative type form: Options
-|===
-|Field |Type |Description
-
-|Signature type
-|Optional
-|Which kind of signature type will be allowed. Options are: Online, In-person and Mixed. The Mixed option allows a participant to choose which signature type will have the initiative.
-
-|Enable attachments
-|Optional
-|Whether it'll allow to upload attachments to initiatives.
-
-|Enable participants to undo their online signatures
-|Optional
-|Can a participant undo its signature when they already signed?
-
-|Enable authors to choose the end of the signature collection period
-|Optional
-|Can the authors of an initiative change the end of the signature collection period?
-
-|Enable authors to choose the area for their initiative
-|Optional
-|Can the authors choose the area of their initiative?
-
-|Enable child scope signatures
-|Optional
-|This config flag doesn't support offline votes, it enables sub-scopes and works with an authorization handler that associates a scope to the user, make sure you select that authorization, bellow in authorization settings. For it to work, scopes need to be configured in a hierarchical way : 1 Parent - N Child.
-
-|Only allow global scope initiatives creation
-|Optional
-|Tick this flag if you enabled "Child scope signature" and configured the global scope as your parent scope. By enabling this, scope selection will be skipped in the initiative creation wizard.
-
-|Enable promoting committee
-|Optional
-|Whether it will only allow individual initiatives (made by only one person) or allow collective initiatives (multiple promoters, being multiple individuals or a user group).
-
-|Minimum of committee members
-|Optional
-|When "Enable promoting committee" option is checked, defines the minimum number of promoter's committee member to send the initiative to technical validation
-
-|Collect participant personal data on signature
-|Optional
-|Adds a step to the signature process. When a participant clicks on the signature button, she'll be redirected to a form asking for some personal data. This will be used with the PDF export action after the recollection period has ended.
-
-|Legal information about the collection of personal data
-|Depends on whether the option "Collect participant personal data on the signature" is checked
-|Privacy notice and terms of use for the participant personal data during the signature process.
+|Imagen de banner
+|Requerido
+|Una imagen para este tipo de iniciativa. NOTA: Por el momento esto no se utiliza.
 |===
 
 
-.Admin new initiative type form: Authorization settings
+.Admin nuevo formulario de tipo de iniciativa: Opciones
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Authorization to verify document number on signatures
-|Optional
+|Tipo de firma
+|Opcional
+|Qué tipo de firma se permitirá. Las opciones son: En línea, en persona y Mixto. La opción Mixta permite al participante elegir qué tipo de firma tendrá la iniciativa.
+
+|Habilitar archivos adjuntos
+|Opcional
+|Si permitirá subir archivos adjuntos a las iniciativas.
+
+|Permitir a los participantes deshacer sus firmas en línea
+|Opcional
+|¿Puede un participante deshacer su firma cuando ya ha firmado?
+
+|Habilitar a los autores para elegir el final del período de la colección de firmas
+|Opcional
+|¿Pueden los autores de una iniciativa cambiar el fin del período de recogida de firmas?
+
+|Permitir a los autores elegir el área para su iniciativa
+|Opcional
+|¿Pueden los autores elegir el área de su iniciativa?
+
+|Activar firmas de ámbito hijo
+|Opcional
+|Esta bandera de configuración no soporta votos sin conexión, habilita subámbitos y funciona con un manejador de autorización que asocia un ámbito al usuario, asegúrese de seleccionar esa autorización, abajo en la configuración de autorización. Para que funcione, los ámbitos deben ser configurados de manera jerárquica : 1 Padre - N Niño.
+
+|Permitir sólo la creación de iniciativas de alcance global
+|Opcional
+|Marque esta bandera si habilitó "Firma del alcance del niño" y configuró el ámbito global como su ámbito padre. Al habilitar esto, la selección de alcance se omitirá en el asistente de creación de iniciativas.
+
+|Habilitar comité de promoción
+|Opcional
+|Si sólo permitirá iniciativas individuales (hechas por una sola persona) o permitir iniciativas colectivas (promotores múltiples, siendo múltiples individuos o un grupo de usuarios).
+
+|Mínimo de miembros del comité
+|Opcional
+|Cuando se selecciona la opción "Habilitar comité de promoción", define el número mínimo de miembros del comité de promoción para enviar la iniciativa a la validación técnica
+
+|Recopilar datos personales del participante en la firma
+|Opcional
+|Añade un paso al proceso de firma. When a participant clicks on the signature button, she'll be redirected to a form asking for some personal data. Esto se utilizará con la acción de exportación en PDF una vez finalizado el período de recuperación.
+
+|Información legal sobre la recopilación de datos personales
+|Depende de si la opción "Recopilar datos personales del participante en la firma" está marcada
+|Notificación de privacidad y términos de uso para los datos personales del participante durante el proceso de firma.
+|===
+
+
+.Administrar nuevo formulario de tipo de iniciativa: Configuración de autorización
+|===
+|Campo |Tipo |Descripción
+
+|Autorización para verificar el número de documento en las firmas
+|Opcional
 |When a participant is making the signature process, will she be asked for an authorization?
 
-|Add SMS code validation step to the signature process
+|Añadir paso de validación de código SMS al proceso de firma
 |
-|During the signature process, will it ask for SMS validation? See xref:services:sms.adoc[configuration of SMS service].
+|Durante el proceso de firma, ¿pedirá la validación por SMS? Vea xref:services:sms.adoc[configuración del servicio SMS].
 |===
 
-=== New initiative type scope form
+=== Nuevo formulario de alcance del tipo de iniciativa
 
-An initiative type can also have scopes associated. For Initiatives it needs at least one scope configured.
+Un tipo de iniciativa también puede tener ámbitos asociados. Para las Iniciativas necesita al menos un ámbito de aplicación configurado.
 
-image:admin_initiative_type_scope.png[New initiative type form]
+imagen:admin_initie_type_scope.png[Nuevo formulario de tipo de iniciativa]
 
 
-.Admin new initiative type scope form
+.Admin nuevo formulario de ámbito de iniciativa
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Scopes
-|Required
-|A Scope. An author can choose this scope in the creation of the initiative.
+|Ámbitos
+|Requerido
+|Un ámbito de aplicación. Un autor puede elegir este ámbito en la creación de la iniciativa.
 
-|Signatures required
-|Required
-|Number of signatures the initiative need to have before the end period so it can be accepted.
+|Firmas requeridas
+|Requerido
+|Número de firmas que la iniciativa debe tener antes del período final para que pueda ser aceptada.
 |===
 
-== 1. Create an initiative
+== 1. Crear una iniciativa
 
-This action is done by **the author**. The author is a participant that creates the initiative. Depending on how the initiatives module is configured in the initializer or how the initiative type is configured, it may need to ask for authorization, or it will even not show the "New initiative" button.
+Esta acción es realizada por **el autor**. El autor es un participante que crea la iniciativa. Dependiendo de cómo se configure el módulo de iniciativas en el inicializador o cómo esté configurado el tipo de iniciativa, puede que necesite pedir autorización, o ni siquiera mostrará el botón de "Nueva iniciativa".
 
-image:initiative_list.png[Initiatives list]
+image:initie_list.png[Lista de iniciativas]
 
-For creating an initiative, a participant must click in the "New initiative" button. Then she'll have a wizard with multiple steps:
+Para crear una iniciativa, un participante debe hacer clic en el botón "Nueva iniciativa". Then she'll have a wizard with multiple steps:
 
-=== 1.1 Choose the initiative type
+=== 1.1 Elige el tipo de iniciativa
 
-image:initiative_new_step1.png[Initiative creation: step 1]
+image:initie_new_step1.png[Creación iniciativa: paso 1]
 
-=== 1.2 Add title and description
+=== 1.2 Añadir título y descripción
 
-image:initiative_new_step2.png[Initiative creation: step 2]
+image:initie_new_step2.png[Creación iniciativa: paso 2]
 
-=== 1.3 [Optional] Similarity comparison
+=== 1.3 [Optional] Comparación de similaridad
 
-Checks the rest of the initiatives if there are other similar initiatives. If there are, the system will show them before continuing. This is a way to avoid duplicates.
+Comprueba el resto de las iniciativas si hay otras iniciativas similares. Si los hay, el sistema los mostrará antes de continuar. Esta es una manera de evitar duplicados.
 
-=== 1.4 Finish
+=== 1.4 Terminar
 
-image:initiative_new_step3.png[Initiative creation: step 3]
+image:initie_new_step3.png[Creación iniciativa: paso 3]
 
-image:initiative_new_step4.png[Initiative creation: step 4]
+image:initie_new_step4.png[Creación iniciativa: paso 4]
 
-=== Actions after it was created
+=== Acciones después de que se creó
 
-After the initiative was created, a participant can see the initiative page, but until the initiative is reviewed and accepted by an administrator, through the technical validation, it will not be published and visible for all the participants.
+Después de la creación de la iniciativa, un participante puede ver la página de la iniciativa, pero hasta que la iniciativa sea revisada y aceptada por un administrador, a través de la validación técnica, no será publicado y visible para todos los participantes.
 
-image:initiative_show.png[Initiative show]
+imagen:initie_show.png[Show iniciativo]
 
-In the sidebar a participant can make some actions: Edit, Print and Send to technical validation.
+En la barra lateral un participante puede hacer algunas acciones: Editar, Imprimir y Enviar a validación técnica.
 
-image:initiative_actions.png[Initiative actions]
+imagen:initie_actions.png[Acciones iniciativas]
 
-==== Edit
+==== Editar
 
-After the initiative was created and before it was sent to technical validation, **an author** can edit and correct the initiative if it has any error.
+Después de la creación de la iniciativa y antes de ser enviada a la validación técnica, **un autor** puede editar y corregir la iniciativa si tiene algún error.
 
-image:initiative_edit.png[Initiative edit]
+imagen:initie_edit.png[Edición iniciativa]
 
-==== Print
+==== Imprimir
 
-An author can also print the initiative.
+Un autor también puede imprimir la iniciativa.
 
-image:initiative_print.png[Print an initiative]
+image:initie_print.png[Imprimir una iniciativa]
 
-==== Technical validation
+==== Validación técnica
 
 After the author has reviewed how the initiative will look, she can send it to technical validation.
 
-image:initiative_send_to_technical_validation.png[Send initiative to technical validation]
+imagen:initie_send_to_technical ical_validation.png[Enviar iniciativa a validación técnica]
 
-== 2. Send initiative to technical validation
+== 2. Enviar iniciativa a validación técnica
 
-This action is done by **the author**.
+Esta acción es realizada por **el autor**.
 
-After it has been reviewed by the author, it can be sent to "Technical validation", but it depends in the configuration of the initiative type, in whether the options "Enable promoting committee" and "Minimum of committee members" are configured.
+Después de que haya sido revisado por el autor, puede ser enviado a "validación técnica", pero depende de la configuración del tipo de iniciativa, en si las opciones "Habilitar comité promocional" y "Mínimo de miembros del comité" están configuradas.
 
-=== Promoter's committee
+=== Comité del Promotor
 
-An initiative type can optionally be supported by a promoter's committee, with a minimum number of committee members. Once the user has created the initiative and before it can be sent for technical validation they need to invite committee members to promote it.
+Un tipo de iniciativa puede ser apoyado opcionalmente por un comité de promotor, con un número mínimo de miembros del comité. Una vez que el usuario ha creado la iniciativa y antes de que ésta pueda ser enviada para su validación técnica, tiene que invitar a los miembros del comité a promoverla.
 
-When the user has created the initiative they will be given a link to share with possible committee members, which will look something like `/initiatives/.../committee_requests/new`
+Cuando el usuario haya creado la iniciativa se le dará un enlace para compartir con posibles miembros del comité, lo que parecerá algo como `/inities/.../committee_requests/new`
 
-When a prospective committee member opens the link, they can click a button which allows them to request to be part of the committee. The initiative author then needs to approve each request. The author can approve them by clicking on the "Edit" button of their initiative at the bottom of the form they can approve or reject committee members.
+Cuando un posible miembro del comité abre el enlace, puede hacer clic en un botón que le permite solicitar ser parte del comité. El autor de la iniciativa tiene que aprobar cada solicitud. El autor puede aprobarlos haciendo clic en el botón "Editar" de su iniciativa en la parte inferior del formulario que puede aprobar o rechazar a los miembros del comité.
 
-image:initiative_commitee_members_send_to_technical_false.png[Initiative promotor committee: edit screen]
+imagen:initie_commite_members_send_to_techical_false.png[Comité de promotores iniciativos: editar pantalla]
 
-The initiative cannot be sent to technical validation until it meets the minimum number of committee members required. You can find the invitation link in the edit form.
+La iniciativa no puede enviarse a la validación técnica hasta que cumpla con el número mínimo de miembros del comité requerido. Puede encontrar el enlace de invitación en el formulario de edición.
 
-image:initiative_edit_commitee_members.png[Initiative promotor committee: edit screen]
+image:initie_edit_commitee_members.png[Comité de promotores iniciativos: editar pantalla]
 
-Share the invitation link with the people you'd like to have on your committee.
+Comparte el enlace de invitación con las personas que te gustaría tener en tu comisión.
 
-image:initiative_commitee_members_ask.png[Initiative promotor committee: edit screen]
+image:initie_commitee_members_ask.png[Comité de promotores iniciativos: editar pantalla]
 
-The people invited with the link will be able to read the initiative and ask to be part of the committee.
+Las personas invitadas con el vínculo podrán leer la iniciativa y pedir que formen parte de la comisión.
 
-image:initiative_commitee_members_sent.png[Initiative promotor committee: edit screen]
+image:initie_commitee_members_sent.png[Comité de promotores iniciativos: editar pantalla]
 
-The request is sent and the author can then and accept or refuse it in the initiative edit form.
+La solicitud es enviada y el autor puede entonces y aceptarla o rechazarla en el formulario de edición de iniciativa.
 
-image:initiative_commitee_members_approve.png[Initiative promotor committee: edit screen]
+image:initie_commitee_members_approve.png[Comité de promotores iniciativos: editar pantalla]
 
-image:initiative_commitee_members_send_to_technical_true.png[Initiative promotor committee: edit screen]
+imagen:initie_commite_members_send_to_techical_true.png[Comité de promotores iniciativos: editar pantalla]
 
 Once enough people have joined the promoter committee the initiative author can send it for
 technical validation.
 
-== 3. Publish an initiative
+== 3. Publicar una iniciativa
 
-This action is done by **an administrator**.
+Esta acción es realizada por **un administrador**.
 
-After the initiative was sent to technical validation by a participant, an administrator can view all the initiatives in the admin panel and make some corrections.
+Después de que la iniciativa fue enviada a la validación técnica por un participante, un administrador puede ver todas las iniciativas en el panel de administración y hacer algunas correcciones.
 
-image:initiative_admin_list.png[Admin initiatives list]
+image:initie_admin_list.png[Lista de iniciativas de administración]
 
-=== Actions
+=== Acciones
 
-Regarding the actions in an initiative, an administrator can "Preview", "Edit", "Answer" or "Print" an initiative:
+En cuanto a las acciones de una iniciativa, un administrador puede "Vista previa", "Editar", "Respuesta" o "Imprimir" una iniciativa:
 
-image:initiative_admin_list_actions.png[Initiative admin list actions]
+image:initie_admin_list_actions.png[Acciones iniciativas de lista de administradores]
 
 |===
-|Icon |Name |Definition
+|Icono |Nombre |Definición
 
-|image:action_preview.png[Preview icon]
-|Preview
-|To see how it's shown in the frontend to participants.
+|image:action_preview.png[Previsualizar icono]
+|Vista previa
+|Para ver cómo se muestra en el frontend a los participantes.
 
-|image:action_edit.png[Edit icon]
-|Edit
-|Edit form for Initiative.
+|image:action_edit.png[Editar icono]
+|Editar
+|Editar formulario para la iniciativa.
 
-|image:action_answer.png[Answer icon]
-|Answer
-|Allows to answer an Initiative.
+|image:action_answer.png[Icono de respuesta]
+|Respuesta
+|Permite responder a una Iniciativa.
 
-|image:action_print.png[Print icon]
-|Print
-|Allows to print.
+|image:action_print.png[Imprimir icono]
+|Imprimir
+|Permite imprimir.
 |===
 
-=== Components
+=== Componentes
 
 Once an initiative has been created it gets the Meetings and Page component enabled by
-default. The initiative author has no control over these - an admin will need to manage
-them. All of the other usual components may be added by an admin too.
+default. El autor de la iniciativa no tiene control sobre estos - un administrador tendrá que administrar
+ellos. Todos los demás componentes habituales pueden ser añadidos también por un administrador.
 
-image:initiative_admin_show.png[Admin initiative show page]
+image:initie_admin_show.png[Página de presentación de iniciativas de administración]
 
-There are also other features inside initiatives, like Attachments and Moderations for the comments.
+También hay otras características dentro de las iniciativas, como Adjuntos y Moderaciones para los comentarios.
 
-image:initiative_admin_sidebar.png[Admin initiative sidebar]
+imagen:initie_admin_sidebar.png[Barra lateral de iniciativa de administración]
 
-=== Publish
+=== Publicar
 
-After the initiative was reviewed and technically approved by an admin, for instance for checking that what the initiative is asking is legal or abides to the normative (ie it's municipal competency), then it can be published:
+Después de que la iniciativa fue revisada y aprobada técnicamente por un administrador, por ejemplo para comprobar que lo que la iniciativa está pidiendo es legal o se atiene a la normativa (es decir, su competencia municipal), entonces se puede publicar:
 
-image:initiative_admin_actions.png[Admin initiative actions]
+imagen:initie_admin_actions.png[Acciones de iniciativa de administración]
 
-== 4. Sign an initiative
+== 4. Firmar una iniciativa
 
-This action is done by **a participant**.
+Esta acción la realiza **un participante**.
 
-After the initiative was published, it'll be visible in the initiatives listing page (/initiatives):
+Después de que la iniciativa haya sido publicada, será visible en la página de listado de iniciativas (/initiatives):
 
-image:initiative_list_published.png[Initiative list after it was published]
+image:initie_list_published.png[Lista de iniciativas después de publicar]
 
-image:initiative_admin_show_published.png[Admin initiative show after it was published]
-image:initiative_show_published.png[Initiative show after it was published]
+image:initie_admin_show_published.png[Mostrar iniciativa de administración después de que fue publicada]
+image:initie_show_published.png[Muestra de iniciativa después de que fue publicada]
 
-And authorized participants can sign it:
+Y los participantes autorizados pueden firmarlo:
 
-image:initiative_admin_show_published_detail.png[Admin initiative show after it was published (detail)]
+image:initie_admin_show_published_detail.png[Mostrar iniciativa de administración después de que se publicó (detalle)]
 
-image:initiative_show_signed.png[Initiative show after it was signed]
+image:initie_show_signed.png[Mostrar Iniciativa después de haber sido firmado]
 
-== 5. Export signatures
+== 5. Exportar firmas
 
-This action is done by **an administrator**. After the initiative has started to get signatures, there's an option for exporting a PDF of the signatures:
+Esta acción es realizada por **un administrador**. Después de que la iniciativa haya comenzado a obtener firmas, hay una opción para exportar un PDF de las firmas:
 
-image:initiative_actions_export.png[Initiative actions with Export to PDF]
+image:initie_actions_export.png[Acciones iniciales con Exportar a PDF]
 
-image:initiative_actions_export_pdf.png[Initiative exported PDF]
+imagen:initie_actions_export_pdf.png[Iniciativa exportada PDF]
 
-== 6. Answer an initiative
+== 6. Responder a una iniciativa
 
-After the initiative has collected all the signatures then it can be answered by an administrator. An initiative answer don't have different types.
+Después de que la iniciativa haya recogido todas las firmas entonces puede ser respondida por un administrador. Una respuesta de iniciativa no tiene diferentes tipos.
 
-image:initiative_backend_answer.png[Initiative backend answer]
+imagen:initie_backend_answer.png[Respuesta de backend iniciativa]
 
-image:initiative_frontend_answer.png[Initiative frontend answer]
+imagen:initie_frontend_answer.png[Respuesta de interfaz de iniciativa]
 
-== Initiative statuses
+== Estados de la Iniciativa
 
-For better understanding all the status, this is a summary:
+Para comprender mejor todo el estatuto, esto es un resumen:
 
 |===
-|Status |Explanation
+|Estado |Explicación
 
-|Created
-|The initiative has been created but is not yet public for every visitor or the rest of the participants.
+|Creado
+|La iniciativa ha sido creada pero aún no es pública para todos los visitantes o para el resto de los participantes.
 
-|Technical validation
-|The initiative needs to be reviewed by an administrator. From here, it can be "discarded" or "published"
+|Validación técnica
+|La iniciativa debe ser revisada por un administrador. Desde aquí, puede ser "descartado" o "publicado"
 
-|Expired
-|The initiative wasn't reviewed by an administrator and wasn't approved, and the maximum time for validation has passed.
+|Caducó
+|La iniciativa no fue revisada por un administrador y no fue aprobada, y ha pasado el tiempo máximo para la validación.
 
-|Discarded
-|The initiative was reviewed by an administrator and was discarded, so it's not published.
+|Descartado
+|La iniciativa fue revisada por un administrador y fue descartada, por lo que no está publicada.
 
-|Published
-|The initiative was reviewed by an administrator and was approved, so it's published.
+|Publicado
+|La iniciativa fue revisada por un administrador y fue aprobada, así que está publicada.
 
-|Rejected
-|The period for signature recollection has ended and there weren't enough signatures.
+|Rechazado
+|El período para la recuperación de firmas ha terminado y allí no había suficientes firmas.
 
-|Accepted
-|The period for signature recollection has ended and there were enough signatures.
+|Aceptado
+|El período de recuperación de firmas ha terminado y ha habido suficientes firmas.
 |===
 
 [plantuml]
 @startuml
 :Created;
 :Technical validation;
-if (has passed the maximum validation time?) then (yes)
+if (has passed the maximum validation time?) luego (yes)
   #pink:Expired;
   kill;
 elseif (validated?) then (no)
@@ -348,59 +348,59 @@ elseif (validated?) then (no)
   kill;
 else (yes)
   #palegreen:Published;
-  if (enough signatures?) then (no)
-    #pink:Rejected
-    (not enough signatures);
-    kill;
-  else (yes)
+  if (suficientes firmas?) then (no)
+    #pink:Rechazado
+    (no hay suficientes firmas);
+    mata;
+  más (si)
     #palegreen:Accepted
-    (enough signatures);
+    (suficientes firmas);
     stop;
   endif;
 endif
 @enduml
 
-Finally, these are all the relevant settings in every moment in the initiatives life cicle:
+Por último, todos estos son los escenarios relevantes en cada momento del ciclo de vida de las iniciativas:
 
 [plantuml]
 @startuml
-(*) --> "Create a new initiative"
-if "Has only one type?" then
---> [Yes] "Fill initiative form"
+(*) --> "Crear una nueva iniciativa"
+si "¿Tiene solo un tipo? then
+--> [Yes] "Llenar formulario de iniciativa"
 else
---> [No] "Select initiative type"
---> "Fill initiative form"
+--> [No] "Seleccionar tipo de iniciativa"
+--> "Llenar formulario de iniciativa"
 Endif
-partition Created {
-  if "Is the User a UserGroup?" then
-  --> [Yes] "Send to Technical Validation"
+partición Creada {
+  if "Is the User a UserGroup? then
+  --> [Yes] "Enviar a validación técnica"
   else
-  --> [No] Collect the minimum number of committee members (2 by default)
-  --> "Send to Technical Validation"
+  --> [No] Colecta el número mínimo de miembros del comité (2 por defecto)
+  --> "Enviar a validación técnica"
   Endif
 }
-partition Validating {
-  if "Has passed the maximum time for validation (60 days by default)?" then
-    --> [Yes] "Expired"
+particin Validando {
+  if "Has pasado el tiempo máximo para la validación (60 días por defecto)? then
+    --> [Yes] "Expirado"
   else
-    --> [No] if "Is accepted by an administrator?" then
+    --> [No] if "Is accepted by an administrator? then
       --> [No] "Discarded"
       else
-      --> [Yes] "Publish"
+      --> [Yes] "Publicar"
       endIf
   endIf
 }
-partition Published {
+partition Publicado {
   --> "Signature process"
-  if "Has passed the configured time window for validation (60 days by default)?"
-    --> [Yes] "Expired"
+  if "Has pasado la ventana de tiempo configurada para su validación (60 días por defecto)?"
+    --> [Yes] "Vencido"
   else
-    --> [No] Export PDF to signatures
-    --> Check signatures with offline signatures for duplicates (if the Initiative has them)
-    --> if "Has the initiative get the number of signatures required?" then
-      --> [No] Rejected
+    --> [No] Exportar PDF a firmas
+    --> Comprobar firmas con firmas sin conexión para duplicados (si la Iniciativa las tiene)
+    --> si "¿Tiene la iniciativa el número de firmas requeridas? then
+      --> [No] Rechazado
     else
-      --> [Yes] Accepted
+      --> [Yes] Aceptado
     endIf
   endIf
 }

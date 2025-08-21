@@ -1,0 +1,68 @@
+= Haut-parleurs
+
+Les orateurs sont des personnes qui vont s'exprimer lors de la conférence.
+
+image:spaces/conferences/speakers_frontend.png[conférenciers (frontend)]
+
+== Créer un nouveau haut-parleur
+
+image:espaces/conférences/haut-parleurs.png[conférenciers de conférences]
+
+Pour créer un nouveau haut-parleur d'une conférence :
+
+. Se connecter en tant qu'administrateur
+. Aller à la section conférences dans la barre latérale
+. Cliquez sur l'action Modifier la conférence
+. Cliquez sur le lien des haut-parleurs dans la barre latérale
+. Cliquez sur le bouton "Nouvelle conférence"
+. Remplissez le formulaire
+
+image:espaces/conférences/new_speaker.png[conférenciers de conférences]
+
+
+.Formulaire des nouveaux conférenciers
+|===
+|Champ |Type |Description
+
+|Type de participant
+|Obligatoire
+|Si ce haut-parleur est un participant non participant ou un participant existant. Ont-ils déjà un compte créé sur la plateforme?
+
+|Nom complet
+|Requis si c'est un non-participant.
+|Nom de l'orateur.
+
+|Utilisateur ou groupe
+|Requis si c'est un participant existant.
+|Tapez au moins trois caractères à rechercher.
+
+|Réunions connexes
+|Facultatif
+|Quelles réunions cet orateur assiste-t-il et participe activement?
+
+|Position
+|Obligatoire
+|Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
+
+|Affiliation
+|Obligatoire
+|Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
+
+|Courte Bio
+|Facultatif
+|Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
+
+|Identifiant Twitter
+|Facultatif
+|Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
+
+|URL personnelle
+|Facultatif
+|Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
+
+|Avatars
+|Facultatif
+|Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
+
+Image par défaut
+|===

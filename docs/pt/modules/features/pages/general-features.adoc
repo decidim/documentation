@@ -1,77 +1,77 @@
-= General features
+= Características gerais
 
 :page-partial:
 
-Below, we will outline a series of the platform’s general features and characteristics which do not appear in the spaces or components, or in the features directly associated with participants.
+Abaixo, vamos esboçar uma série de recursos e características gerais da plataforma que não aparecem nos espaços ou componentes, ou nos recursos diretamente associados aos participantes.
 
-== Installation and settings
+== Instalação e configurações
 
-Decidim **can be easily installed **using the command prompt in any GNU/Linux server with the following installed services: PostgreSQL 9.4+, Ruby 2.4.1, NodeJS with yarn (JavaScript dependency manage), ImageMagick and PhantomJS. An automatic installation script allows you to deploy the whole dependency system, libraries, databases and other automatically required services in Heroku or Docker [feature expected for 2018Q4].
+O Decidim **pode ser facilmente instalado **usando o prompt de comando em qualquer servidor GNU/Linux com os seguintes serviços instalados: PostgreSQL 9. +, Ruby 2.4.1, NodeJS with yarn (JavaScript dependency manage), ImageMagick and PhantomJS. Um script de instalação automático permite que você faça deploy de todo o sistema de dependências, bibliotecas bancos de dados e outros serviços automaticamente requeridos em Heroku ou Docker [recurso esperado para 2018Q4].
 
-The portal’s *settings* are **customisable **in the following fields that are filled out on a form from the administration panel: Name of the portal, social network profiles (Twitter, Facebook, Instagram, YouTube, Github); brief description; welcome text; default language; home image; the organisation’s logo; favicon; reference prefix (unique identifier that will apply to the portal’s elements) and the organisation’s URL.
+As *configurações* do portal são **personalizáveis** nos seguintes campos que são preenchidos em um formulário a partir do painel de administração: Nome do portal, perfis de rede social (Twitter, Facebook, Instagram, YouTube, Github); breve descrição; texto de boas-vindas; linguagem padrão; Imagem do site; logotipo da organização; favicon; prefixo de referência (identificador exclusivo que será aplicado aos elementos do portal) e a URL da organização.
 
-== Integration with other services and compatibility/creation of additional services
+== Integração com outros serviços e compatibilidade/criação de serviços adicionais
 
-Decidim can be easily integrated with the following services that can be installed or configured with Decidim:
+O Decidim pode ser facilmente integrado aos seguintes serviços que podem ser instalados ou configurados com o Decidim:
 
-* *OpenStreetMap*: to show events and proposals with geo-location
-* *Piwik*: website traffic analysis
-* *Pad*: collaborative real-time writing boards (technology to be determined)
-* *Digital identity and signature*: integration with OAuth2 digital-identity management system, systems based on blockchain and recognised institutional digital identity and signature management systems.
-* *Distributed filing system*: Disseminating or copying proposals or other elements from the platform in a distributed filing system (blockchain or IPFS type) [Missing feature].
-* *Microblogging*: integration/compatibility with a standardised and open microblogging protocol/service such as GNU Social or StatusNet type for participants’ activities (proposals, observations and messages) [Missing feature].
+* *OpenStreetMap*: para mostrar eventos e propostas com geo-localização
+* *Piwik*: análise de tráfego do site
+* *Pad*: quadros de escrita em tempo real colaborativos (tecnologia a ser determinada)
+* *Identidade digital e assinatura*: integração com o sistema de gerenciamento de identidade digital OAuth2, sistemas baseados na blockchain e sistemas de gerenciamento de assinaturas e identidades digitais institucionais reconhecidos.
+* *Sistema de arquivo distribuído*: Disseminando ou copiando propostas ou outros elementos da plataforma em um sistema de arquivo distribuído (blockchain ou tipo IPFS) [Recurso ausente].
+* *Microblogging*: integração/compatibilidade com um protocolo/serviço de microblogs normalizado e aberto, como o tipo GNU Social ou StatusNet para atividades dos participantes (propostas, observações e mensagens) [Recurso ausente].
 
-Decidim automatically generates the following services besides the ones that can be browsed on the website or accessed through an API:
+Decidim gera automaticamente os seguintes serviços além dos que podem ser acessados no site ou acessados através de uma API:
 
-* *SMTP*: sending emails.
-* *Calendar*: integration and compatibility with calendar-management systems and automatic creation and updating of events calendars, etc.
+* *SMTP*: enviando emails.
+* *Calendário*: integração e compatibilidade com sistemas de gestão de calendários e criação automática e atualização dos calendários de eventos, etc.
 
-== Multitenancy
+== Multiplicação
 
-The multitenancy of the platform can be used on the basis of a single installation. In other words, a single instance of Decidim software allows to deploy as many portals (tenants) as you want under specific settings for each of the tenants. That way an organisation can create participatory portals for its sub-organisations or various organisations can share a server and reduce the maintenance costs of its portals.
+A multitenância da plataforma pode ser utilizada com base numa única instalação. Por outras palavras, uma única instância de software Decidim permite implantar quantos portais (inquilinos) você deseja em configurações específicas para cada um dos teners. Dessa forma, uma organização pode criar portais participativos para as suas suborganizações ou várias organizações podem compartilhar um servidor e reduzir os custos de manutenção de seus portais.
 
-== Multi-language
+== Multiidioma
 
-Decidim is a *multi-language* platform. Its available languages will be configured during its installation. Menus, administrative forms and, generally, the platform's fixed texts are available in several languages (Spanish, Catalan, Basque, Italian, French, Dutch and Finnish). A **collaborative translation **system in https://crowdin.com/project/decidim enables new languages to be incorporated into the platform.
+Decidim é uma plataforma *multi-idioma*. Seus idiomas disponíveis serão configurados durante a sua instalação. Menus, formulários administrativos e, em geral, os textos fixos da plataforma estão disponíveis em vários idiomas (espanhol, catalão, basco, italiano, francês, holandês e finlandês). Um **sistema de tradução colaborativa **em https://crowdin.com/project/decidim permite que novos idiomas sejam incorporados na plataforma.
 
-As for content, once the official languages of the instance have been set during the installation, all the content that is created from the administration panel has the option of being generated in these languages. The administration panel allows *content to be managed in several languages* through tabs. The content generated by users is displayed on the platform in a single language (the one chosen by the participant through the language selector in the upper part of the menus or automatically through its browser's language settings).
+Quanto ao conteúdo, uma vez que as línguas oficiais da instância foram definidas durante a instalação, todo o conteúdo criado a partir do painel de administração tem a opção de ser gerado nestas línguas. O painel de administração permite que *o conteúdo seja gerenciado em vários idiomas* através de guias. O conteúdo gerado pelos usuários é exibido na plataforma em um único idioma (a escolhida pelo participante através do seletor de idioma na parte superior dos menus ou automaticamente através das configurações de idioma do seu navegador).
 
-== Statistics, open data and downloads
+== Estatísticas, abrir dados e downloads
 
-Besides the application programming interface (API) which automatically provides access to public data, Decidim’s home page features a *general statistics table* with the following fields: number of participants, processes, proposals, results, meetings, observations and votes.
+Além da interface de programação do aplicativo (API) que fornece automaticamente acesso a dados públicos, A página inicial do Decidim apresenta uma *tabela de estatísticas gerais* com os seguintes campos: número de participantes, processos, propostas, resultados, reuniões, observações e votos.
 
-Another *statistics table for each participatory process* shows the number of meetings, proposals, votes and results of a specific process.
+Outra *tabela de estatísticas para cada processo participativo* mostra o número de reuniões, propostas, votos e resultados de um processo específico.
 
-The administration panel lets you **export the proposals, results and observations **of a participatory process in CSV and JSON format and responses to surveys for processing and/or integration with other management systems. Participants can **download the results of a participatory process and the extent of its implementation **through a CSV file.
+O painel de administração permite que você **exporte as propostas, resultados e observações **de um processo participativo no formato CSV e JSON e respostas a pesquisas de processamento e/ou integração com outros sistemas de gestão. Os participantes podem **baixar os resultados de um processo participativo e a extensão de sua implementação **através de um arquivo CSV.
 
-Decidim also has a **data-display component **at its disposal on the platform’s general level and on a specific level (showing data from a specific Participatory Space) [Feature expected for 2018Q2-3, AjB-Lote2Mod4]. The following are included among the graphics that are displayed:
+Decidim também tem um **componente de exibição de dados **à sua disposição no nível geral da plataforma e em um nível específico (mostrando dados de um espaço participativo específico) [Recurso esperado para 2018Q2-3, AjB-Lote2Mod4]. Os seguintes estão incluídos entre os gráficos que são exibidos:
 
-* **Interactive graphics **in the form of a time line showing the development of the various components’ counters.
-* *Heat map* of all the meetings, proposals or other content with geo-location tags.
-* **Interactive diagrams **(bar or pie charts) with the results of a process (amounts of each of the participatory budget projects, filter by category and status of the proposals - whether selected or not, etc.)
+* **Gráficos interativos **na forma de uma linha do tempo mostrando o desenvolvimento dos vários contadores dos componentes.
+* *Mapa de calor* de todas as reuniões, propostas ou outro conteúdo com tags de geo-localização.
+* **Diagramas interativos **(barra ou gráficos de pizza) com os resultados de um processo (valores de cada um dos projetos orçamentais participativos, filtrar por categoria e status das propostas - selecionado ou não, etc.)
 
-All of these displays are accompanied by an **option for downloading data **in CSV format [Feature expected for 2018Q2-3, AjB-Lote2Mod4].
+Todas essas telas são acompanhadas por uma **opção de download de dados **no formato CSV [Espera-se um recurso para 2018Q2-3, AjB-Lote2Mod4].
 
-== API, adaptable website design and mobile app
+== API, design de site adaptável e aplicativo móvel
 
-Decidim has an application programming interface or API which is a series of independent service calls and data from Decidim's website interface. This allows third parties to develop services on the platform, automatically release data or develop new interfaces, or integrate other services with decidim.
+O Decidim tem uma interface de programação ou API de aplicativos que é uma série de chamadas de serviço e dados independentes da interface do site do Decidim. Isso permite que terceiros desenvolvam serviços na plataforma, liberem dados automaticamente ou desenvolvam novas interfaces, ou integrem outros serviços com decidim.
 
-The API comes with *documentation* and a *formal participatory ontology* [Not completed]
+A API vem com *documentação* e uma *ontologia participativa* [não concluída]
 
-Decidim's website *design* is completely *adaptable* (_responsive_), using _mobile-first_ design philosophy (designed first for mobiles and later extended to desktop systems and tablets).
+O *design* do site Decidim é completamente *adaptável* (_responsive_), usando a filosofia de design _mobile-first_ (projetada primeiro para celulares e posteriormente estendida para sistemas de desktop e tablets).
 
-Both the website's design and the API enable the development of mobile apps for Decidim, and a *Mobile App* is expected to be developed soon.
+Tanto o design do site como a API permitem o desenvolvimento de aplicativos móveis para Decidim, e um *Aplicativo Móvel* deverá ser desenvolvido em breve.
 
-== Content-classification systems
+== Conteúdos sistemas de classificação
 
-As for content classification, the following to be distinguished and adjusted in Decidim: fields, categories and labels (or tags).
+Quanto à classificação de conteúdo, os seguintes a serem distinguidos e ajustados em Decidim: campos, categorias e etiquetas (ou tags).
 
-*Scopes* are generic throughout the platform and divided up into *territorial* and **topic **types. Territorial areas, once defined, allow the spaces’ elements to be classified by territory (e.g. if a process or a body or an initiative affects a district or two, the entire city, a region or country, depending on the organisation). Topic areas are likewise defined for the entire platform and allow classification of the various elements of the participatory spaces.
+*Escopos* são genéricos em toda a plataforma e divididos em *territorial* e **tipos de tópico. Áreas territoriais, uma vez definidas, permitem que os elementos dos espaços sejam classificados por território (por exemplo, se um processo ou um órgão ou uma iniciativa afecta um distrito ou dois, toda a cidade, uma região ou país, dependendo da organização). As áreas de tópicos estão definidas para toda a plataforma e permitem a classificação dos vários elementos dos espaços participativos.
 
-*Categories and subcategories* are used for classifying content within the various spaces and are defined for each of the levels of the spaces. So, for example, a participatory process may include several categories and subcategories (the process administrator defines them) whereas the process’ meetings, surveys, proposals and other components can be classed under these categories.
+*Categorias e subcategorias* são usadas para classificar conteúdo dentro dos vários espaços e são definidas para cada um dos níveis dos espaços. Então, por exemplo, um processo participativo pode incluir várias categorias e subcategorias (o administrador do processo define-os), enquanto as reuniões do processo, pesquisas, propostas e outros componentes podem ser classificados nestas categorias.
 
-In contrast to fields and categories, *labels* or tags are cross-cutting and freely defined by participants and can apply to any level or component. Labels can be created, embedded and defined in the administration panel. A label-suggestion system allows the people taking part to choose labels similar to the ones that are they are suggesting for labelling any of the platform's elements. Elements can be browsed by labels and the most popular labels displayed.
+Em contraste com campos e categorias, *etiquetas* ou tags são cross-cutting e livremente definidas pelos participantes e podem se aplicar a qualquer nível ou componente. Os rótulos podem ser criados, integrados e definidos no painel de administração. Um sistema de sugestão de rótulo permite que as pessoas que participam escolham rótulos semelhantes aos que estão a sugerir para rotular qualquer dos elementos da plataforma. Os elementos podem ser acessados pelos rótulos e os rótulos mais populares exibidos.
 
-== Contextual help system, usability and evaluation tests
+== Testes de ajuda contextual, usabilidade e avaliação
 
-Decidim includes *editable contextual help* for guiding individual and administrative participants in using the platform. It also includes a **automatic evaluation surveys** to be conducted on participants for the purposes of identifying usability and participatory-procedure errors and improving the democratic quality experience of the software .
+Decidim inclui *ajuda contextual editável* para guiar os participantes individuais e administrativos no uso da plataforma. Inclui também um **inquérito de avaliação automático** a ser conduzido sobre os participantes para fins de identificação de erros de usabilidade e de processo participativo e melhoria da experiência de qualidade democrática do software.

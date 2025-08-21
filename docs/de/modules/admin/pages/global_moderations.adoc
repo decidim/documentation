@@ -1,0 +1,121 @@
+= Globale Moderationen
+
+Die *Globale Moderation* Funktion erlaubt es dir, verschiedene Arten von Inhalten zu moderieren und
+sicherzustellen, dass der Dialog in deiner Plattform demokratisch und konstruktiv ist. Wenn Sie
+diese Funktion nutzen, können Administratoren, Mitarbeiter und Moderatoren eines Raumes
+die gemeldeten Inhalte/Beiträge verstecken wenn die Beschwerde
+für angemessen gehalten wird, oder die Beschwerde löschen.
+
+NOTE: Du suchst wie man Benutzer meldet? Siehe xref:participants/reported_users.adoc[Gemeldete Benutzer].
+
+Im Falle von https://www.decidim.barcelona/[Decidim Barcelona] zum Beispiel sagt
+die https://www.decidim.barcelona/pages/terms-and-conditions[Terms of Service] an:
+
+> Es ist nicht erlaubt, illegale oder nicht autorisierte Inhalte zur Website hinzuzufügen, wie zum Beispiel
+> als Informationen mit den folgenden Funktionen:
+> 
+> * sei es falsch oder irreführend;
+> * gegen jedes Gesetz des Stadtrats oder irgendeines Dritten, wie das Urheberrecht, verstoßen
+> Marken oder andere geistige und gewerbliche Eigentumsrechte oder verwandte Rechte;
+> * attacking the privacy of a third party, such as publishing personal details
+> of participants, such as name, address, phone number, email, photos or any other
+> personal information;
+> * enthält Viren, Trojaner, Roboter oder andere Programme, die der Website
+> oder dem Rathaussystem schaden können oder die Website oder das System von Dritten oder welche
+> die technischen Maßnahmen umgehen will, die für das einwandfreie Funktionieren
+> der Plattform entwickelt wurden;
+> * um Spam an Benutzer zu senden oder das System zu überladen;
+> * der den Charakter der Nachrichtenkette, des Pyramidenspiels oder des zufälligen Spiels hat;
+> * für kommerzielle Zwecke, wie die Veröffentlichung von Stellenangeboten oder Anzeigen;
+> * dass sie nicht im Einklang mit dem öffentlichen Anstand steht; infolgedessen darf Inhalt nicht
+> Hass schüren, diskriminieren, bedrohen, provozieren, keine sexuelle, gewalttätige, grobe oder
+> beleidigende Bedeutung oder Charakter haben;
+> * gegen das Gesetz oder die anwendbare Vorschrift verstoßen;
+> * zur Kampagne durch die Förderung der Massenabstimmung für andere Vorschläge, die nicht mit dem
+> -Prozess und dem Diskussionsrahmen zusammenhängen, und
+> * mehrere Benutzer zu erstellen, indem man vorgibt, verschiedene Personen zu sein (Astroturfing).
+
+Jeder kann eine Moderation in Decidim durch das Symbol "Flag" im Profil des Teilnehmers
+vorschlagen. After a participant has clicked in this action then they need to provide a
+reason why they are making this report:
+
+* Enthält Clickbait, Werbung, Betrug oder Script-Bots.
+* Enthält Rassismus, Sexismus, Unruhen, persönliche Angriffe, Todesdrohungen, Selbstmordansprüche oder jede Form von Hassrede.
+* Enthält illegale Aktivitäten, Selbstmorddrohungen, persönliche Informationen oder etwas, das Ihrer Meinung nach nicht zu [Diese Organisation] gehört.
+
+Darüber hinaus können die Teilnehmer zusätzliche Informationen zu ihrem Bericht hinzufügen.
+
+image:moderation_modal.png[Grund für Moderation angeben]
+
+Nachdem ein Teilnehmer einen Inhalt gemeldet hat, wird er in zwei Abschnitten des
+Administrationsbereiches angezeigt:
+
+* Globales Moderationsfenster
+* Moderationsfeld für Teilnehmerraum
+
+Um zum Moderationen-Panel zu gelangen, müssen Sie folgendes tun:
+
+. Als Administrator anmelden
+. Zum Administrationsbereich wechseln
+. Klicke in Globale Moderationen in der Seitenleiste
+
+Dort finden Sie zuallererst die unverarbeiteten Berichte, wenn es welche gibt:
+
+image:global_moderations_list_unhidden.png[Zeige alle moderierte Inhaltsliste]
+
+Es ist auch möglich, nach dem Typ des Inhalts zu filtern, der moderiert wurde, und nach dem
+-Status des gemeldeten Inhalts (falls er ausgeblendet wurde oder nicht).
+
+* *Id*: eindeutiger Identifikator des gemeldeten Inhalts.
+* *Typ*: Welche Art von Inhalt wurde gemeldet, zum Beispiel ein *Vorschlag* oder ein *Kommentar*.
+* *Beteiligter Raum*: zu welchem Raum dieser Inhalt gehört.
+* *Count*: Anzahl der Meldungen von verschiedenen Benutzern.
+* *Reportierte Inhalts-URL*: Link zum Anzeigen des gemeldeten Inhalts und den Kontext der Beschwerde sehen.
+* *Berichte*: warum es gemeldet wurde. Wenn der Teilnehmer, der den Bericht erstellt hat, zusätzliche
+-Informationen gegeben hat, ist es möglich, ihn zu sehen, indem Sie ihn bewegen.
+* *Erstellungsdatum*: wann es ursprünglich gemeldet wurde.
+* *Aktionen*: Sie können *Erweitern*, *Abmelden* oder *Verstecken*.
+
+== Aktionen (wenn der Bericht noch nicht angenommen wurde)
+
+|===
+|Icon |Name |Definition
+
+|image:action_expand.png[Symbol ausheben]
+|Erweitern
+|Um die vollständigen Metadaten des gemeldeten Inhalts zu sehen.
+
+|image:action_hide.png[Icon ausblenden]
+|Verstecken
+|Ermöglicht einem Administrator oder Moderator, diesen Inhalt auszublenden (Annahme des Reports).
+
+|image:action_unreport.png[Unreport icon]
+|Entmelden
+|Ermöglicht einem Admin oder Moderator, diesen Inhalt weiterhin anzuzeigen (den Bericht abzulehnen).
+|===
+
+== Aktionen (nachdem der Inhalt ausgeblendet ist)
+
+|===
+|Icon |Name |Definition
+
+|image:action_expand.png[Symbol ausheben]
+|Erweitern
+|Um die vollständigen Metadaten des gemeldeten Inhalts zu sehen.
+
+|image:action_unhide.png[Symbol freigeben]
+|Unhide
+|Ermöglicht einem Administrator oder Moderator, diesen Inhalt freizugeben (wieder öffentlich anzuzeigen).
+|===
+
+Wenn der Bericht "nicht gemeldet" war und es ein Fehler war, was bedeutet, dass zum Beispiel der
+Inhalt Spam war, aber es war ein Fehler, den Bericht nicht anzunehmen dann brauchen Sie
+um das wieder in der Öffentlichkeit zu finden und es selbst zu melden, damit Sie es moderieren können.
+
+== Erweitern
+
+Um alle Metadaten eines Berichts zu sehen, sehen Sie ihn erweitert.
+
+image:global_moderations_report01.png[Erweiterte Moderation 01]
+
+image:global_moderations_report02.png[Erweiterte Moderation 02]

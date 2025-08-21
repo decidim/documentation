@@ -1,38 +1,38 @@
-= Verification's conflicts
+= Conflitos da verificação
 
-There are cases depending on which kind of verifications you've enabled that there could be verification's conflicts.
+Existem casos, dependendo do tipo de verificações que você habilitou que poderiam haver conflitos de verificação.
 
-For instance:
+Por exemplo:
 
 . A participant get xref:admin:participants/impersonations.adoc[impersonated], and she doesn't provide an email
 . Then she creates an account and tries to verify herself with the Census verification
 
-For security, we try to be extra cautious in these cases, and we want that an administrator reviews these verifications.
-As you can see, this depends a lot on which kind of verifications you've enabled in your organization, so it's easy to say
-that most of the time an organization will not see any conflicts in this panel.
+Para a segurança, tentamos ser mais cautelosos nestes casos, e queremos que um administrador reveja essas verificações.
+Como você pode ver, isso depende muito do tipo de verificações que você habilitou na sua organização, então é fácil dizer
+que na maioria das vezes uma organização não verá nenhum conflito nesse painel.
 
-image:verifications_conflicts.png[Verification's conflicts panel]
+image:verifications_conflicts.png[Painel de conflitos de verificação]
 
-== Transfer user
+== Transferir usuário
 
-An administrator can review these conflicts by clicking in the Transfer user image:action_transfer_user.png[Transfer user] icon.
+Um administrador pode rever esses conflitos clicando no ícone Transferir imagem do usuário:action_transfer_user.png[Transferência de usuário].
 
 Then she'll see the Transfer user form, where she can provide a reason for the transfer.
 
-image:verifications_conflicts_transfer_user.png[]
+imagem:verificação_conflitos_transfer_usuário.png[]
 
 
-.Transfer user form
+.Transferir formulário de usuário
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Reason
-|Required
-|Why you want to transfer the user
+|Motivo
+|Obrigatório
+|Por que deseja transferir o usuário
 
-|Email
-|Required
-|The email of the user to transfer
+|e-mail
+|Obrigatório
+|O e-mail do usuário a ser transferido
 |===
 
-After the user is transferred, both accounts (the original and the new one) will be merged.
+Depois que o usuário for transferido, ambas as contas (o original e o novo) serão mescladas.

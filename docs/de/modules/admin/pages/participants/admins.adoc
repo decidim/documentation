@@ -1,0 +1,21 @@
+= Admins
+
+In der Administrator-Listing-Seite können Sie alle Administratoren der Plattform sehen:
+
+image:admins.png[Admins list]
+
+Hier können Sie:
+
+* neue Administratoren einladen
+* entzieht Administrator-Berechtigungen
+* siehe wann sich ein Administrator zum letzten Mal angemeldet hat
+
+For inviting a new administrator, you need to go to the button "New user" and fill
+the form with the admin username, email and which role will they have:
+
+* Admin: um vollen Zugriff auf die Plattform zu gewähren
+* Teilnehmer-Manager: um nur xref:admin:participants/impersonations.adoc[Impersonations] zu erlauben
+
+image:admins_invite.png[Teilnehmer als Administratorformular einladen]
+
+Sie können einen bereits registrierten oder nicht registrierten Teilnehmer einladen.

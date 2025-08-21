@@ -1,0 +1,23 @@
+= Autorisations
+
+Dans cette section, les participants seront en mesure de vérifier leurs autorisations et de voir des métadonnées, comme quand il a été accordé
+ou le statut de l'autorisation.
+
+It depends on how it's configured for the organization, as depending in the context (like normative or laws) it could work
+in different ways. Pour plus d'informations sur les autorisations, voir xref:admin:participants/authorizations.adoc[authorizations
+dans le manuel d'administration] et xref:customize:authorizations.adoc[authorizations in customguide].
+
+image:features/my_account/authorizations.png[Authorizations]
+
+Pour aller à cette section :
+
+. Se connecter en tant que participant
+. Cliquez dans le nom du participant dans l'en-tête
+. Cliquez dans "Mon compte"
+. Cliquez dans "Autorisations" dans la barre latérale
+
+Pour toute autorisation donnée, vous pouvez voir les informations suivantes :
+
+* Si ce n'est pas terminé, lorsque le processus d'autorisation a commencé
+* Si elle est terminée et a été accordée, la date à laquelle elle a été accordée
+* Si l’autorisation le fournit, certaines métadonnées, telles que la portée de l’autorisation

@@ -1,0 +1,27 @@
+= Inscriptions d'utilisateurs
+
+Une fois les participants enregistrés, ils apparaîtront dans cette section.
+
+image:espaces/conférences/user_registrations.png[Conférences des inscriptions des utilisateurs (backend)]
+
+En tant qu'administrateur, vous pouvez:
+
+* Exporter les inscriptions
+* Confirmer une inscription
+
+== Exportation
+
+Il est possible d'exporter les enregistrements dans plusieurs formats : CSV, JSON et XLSX (Excel).
+
+== Flux
+
+. Un participant s'inscrit à la conférence
+. They receive a pending registration notification
+image:spaces/conferences/user_registration_pending_notification.png[Notification for pending user registration]
+. They receive a pending registration email
+image:spaces/conferences/user_registration_pending_email.png[Email for pending user registration]
+. Un administrateur vérifie et confirme l'enregistrement avec le bouton image:action_check.png[Confirm]
+. Le participant reçoit une notification d'inscription confirmée
+image:spaces/conferences/user_registration_confirmed_notification.png[Notification pour inscription confirmée]
+. They receive a confirmed registration email with an calendar file (.ICS).
+image:espaces/conférences/user_registration_confirmed_email.png[Email pour l'enregistrement de l'utilisateur confirmé]

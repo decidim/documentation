@@ -1,0 +1,60 @@
+= Contrat social de Decidim
+
+[NOTE]
+====
+Vous pouvez également lire le Contrat Social de Decidim dans d'autres langues : xref:understand:social-contract-ca.adoc[Català] - xref:understand:social-contract-es.adoc[Castellano]
+
+Si vous voulez le traduire dans votre propre langue, veuillez https://decidim.org/contact[contactez-nous].
+====
+
+Code de garantie démocratique et collaboration ouverte
+
+C'est le contrat social que tous les membres de la communauté Decidim se sont engagés à suivre.
+
+En signant ce contrat social, toute personne, institution ou groupe social de quelque nature que ce soit, s’engage à respecter les principes établis ici en utilisant, en développant et en participant à la communauté de Decidim.
+
+== Logiciel libre et contenu ouvert
+
+Le code de la plate-forme, avec les modules, les bibliothèques ou tout autre code qui est développé pour son fonctionnement et son déploiement, sera toujours un Logiciel Libre Open Source avec un https://www. nu.org/licenses/agpl-3.0.fr.html[licence Affero GPLv3 ou versions ultérieures] chaque fois que le code est nouvellement développé et avec des licences compatibles avec le code ci-dessus lorsque le code est réutilisé.
+
+De même, le contenu, les données, Les API et/ou toutes les autres interfaces qui sont déployées pour interagir avec n'importe quel type d'utilisateur doivent suivre des standards ouverts et interopérables (ex. OpenID, RSS, OStatus, etc.), toujours tendant à maximiser leur intégration avec les standards ouverts les plus largement utilisés.
+
+Afin de maximiser la transparence et la collaboration des citoyens dans les processus, organes et mécanismes de participation, le contenu, texte, graphiques, polices, audio, vidéo ou autres éléments de design seront publiés sous https://creativecommons. rg/licenses/by-sa/4.0/legalcode[Creative Commons By-SA].
+
+Les données disponibles via la plate-forme, en particulier toutes les données qui peuvent être collectées de manière systématique à travers des racleurs ou d'autres techniques de consultation massive, sera publié et licencié sous http://opendatacommons. rg/licenses/odbl[Open Data Commons Open Database License], publié sous des formats normalisés et accessibles (comme CSV, JSON, etc.) et, dans la mesure du possible, avec des outils qui facilitent l'analyse et la visualisation des données.
+
+== Transparence, traçabilité et intégrité
+
+La plate-forme, et sa configuration, son développement, son déploiement et son utilisation actuels ou futurs doivent assurer et maximiser en tout temps la transparence. traçabilité et intégrité des documents, propositions, débats, décisions ou tout autre objet, mécanisme ou processus participatif.
+
+Par _transparence_ nous comprenons que toutes les données liées à tous ces mécanismes et processus participatifs sont disponibles pour le téléchargement, analyse et traitement, suivant les normes et les formats les plus exigeants pour partager l'information (accessibilité, multi-format, etc.).
+
+La transparence est une condition nécessaire au suivi des processus et mécanismes participatifs, mais ne devrait jamais, de toute façon, être appliqué pour le traitement des données personnelles ou contre la défense de la vie privée des personnes participant à la plate-forme.
+
+Nous comprenons par _traceability_ la possibilité de suivre complètement le passé (passé) et d'avancer (futur) ce qui est arrivé aux propositions, plans, règlements, ou tout autre objet de participation ou de décision inclus dans un processus ou mécanisme. La plateforme doit à tout moment montrer comment, pourquoi, par qui et avec qui garantit un certain type d'objet d'un processus participatif a été rejeté, approuvé ou bloqué.
+
+Nous comprenons par _intégrité_ l'authenticité d'un contenu spécifique, et veiller à ce qu'elle n'ait pas été altérée ou modifiée sans que cette modification soit clairement enregistrée et visiblement vérifiable et vérifiable. L'objectif de l'intégrité est d'éviter la manipulation de propositions ou de résultats de processus ou de mécanismes participatifs.
+
+== Égalité des chances et indicateurs de qualité
+
+Parallèlement aux garanties préalablement définies, la plate-forme promet de garantir l'égalité des chances pour toutes les personnes ainsi que pour leurs propositions ou autres contributions que la plate-forme pourrait héberger. La plateforme offrira des opportunités de départ égales à tous les objets participatifs (propositions, débats, etc.) pour les consulter, discuter, commenter, évaluer ou traiter sans discrimination d'aucune sorte. En ce sens, l'identité numérique des utilisateurs de la plateforme sera toujours personnelle et non transférable, la vérification qui confère des droits de décision sur la plate-forme devrait également être unique, et c'est l'entité administrative responsable de la plate-forme qui doit être chargée d'assurer la non-identité d'une personne ou d'une entité.
+
+La plate-forme devrait promouvoir, dans le but de garantir sa qualité démocratique, l'utilisation d'indicateurs de qualité élaborés sur la base des données obtenues à partir des processus participatifs, du mécanisme et de l'activité des utilisateurs. Le partage de la définition des différents composants ainsi que des données ouvertes sera encouragé pour la définition de ces indicateurs
+
+L'égalité dans la participation politique des citoyens est l'un des principes fondamentaux de tout système démocratique et de toute plate-forme, non seulement doit garantir l'égalité des chances en ce qui concerne les utilisations et les fonctions, mais aussi le droit d'accès. En ce sens, l'entité en charge de la plate-forme assume l'engagement de promouvoir des actions qui vont dans le sens de l'accès et du soutien à la plate-forme pour tous les citoyens à donner universellement des outils et des ressources appropriés à la plate-forme est disponible pour toute personne qui veut l'utiliser.
+
+== Confidentialité des données
+
+La confidentialité et la confidentialité des données personnelles que les gens peuvent fournir pour participer à l'une des fonctionnalités et/ou possibilités de participation que la plateforme fournit seront garanties en tout temps. En aucun cas, les données personnelles ne seront transmises à des tiers. Les données personnelles ne seront pas utilisées au-delà de ce qui est strictement nécessaire aux fins de l'enregistrement des utilisateurs et de l'amélioration de la facilité d'utilisation de la plate-forme. Chaque fois que la technologie de plateforme le rend possible, l'expression de préférences politiques ou de volonté dans les processus décisionnels restera inaccessible, même pour l'administrateur de la plate-forme ou le(s) serveur(s) qui l'hébergent.
+
+== Responsabilité et responsabilité
+
+Un engagement envers les citoyens sera pris pour répondre à toutes les demandes et contributions dans les plus brefs délais. Un engagement est également pris pour assurer le suivi des résultats des processus participatifs et répondre aux demandes qui le demandent expressément. Enfin, un engagement est pris pour étudier l'intégration d'indicateurs de suivi des processus de participation une fois qu'ils sont finalisés, afin d'évaluer systématiquement sa mise en œuvre.
+
+== Amélioration continue et collaboration interinstitutionnelle
+
+Des mécanismes d'examen et d'évaluation périodiques seront mis à disposition afin de faciliter l'amélioration continue de la plate-forme.
+
+La priorité sera donnée à la collaboration et à l'échange d'expériences entre les institutions impliquées dans le projet. dans le but d'améliorer, de corriger et de construire de nouveaux développements pour l'amélioration continue de la plate-forme.
+
+En ce sens, les conditions de collaboration et les environnements seront facilités en progressant vers des améliorations qui pointent vers un avantage commun pour l'ensemble de la plate-forme, autoriser les mécanismes de coordination interinstitutions lorsque cela est nécessaire.

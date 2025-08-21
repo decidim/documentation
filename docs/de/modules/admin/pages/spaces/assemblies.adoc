@@ -1,0 +1,308 @@
+= Schwärmerei
+
+Eine Versammlung ist eine Gruppe von Mitgliedern einer Organisation, die regelmäßig zusammenkommen, um Entscheidungen über einen bestimmten Bereich oder den
+-Bereich der Organisation zu treffen.
+
+Versammlungen finden statt, einige sind privat und andere sind offen. Wenn sie offen sind, ist es möglich, an ihnen
+teilzunehmen (Beispiel: Teilnahme wenn die Kapazität es zulässt, Hinzufügen von Punkten auf die Tagesordnung oder Kommentare zu den Vorschlägen und Beschlüssen dieses Organs).
+
+Examples: A general assembly (which meets once a year to define the organisation's main lines of action as well as its
+executive bodies by vote), an equality advisory council (which meets every two months to make proposals on how to improve
+gender relations in the organisation), an evaluation commission (which meets every month to monitor a process) or a guarantee
+body (which collects incidents, abuses or proposals to improve decision-making procedures) are all examples of assemblies.
+
+Der Hauptunterschied zwischen xref:admin:spaces/processes.adoc[participatory processes] und Assemblies ist, dass Assemblys keine
+Phasen haben, was bedeutet, dass sie keine Zeitachsen haben.
+
+Auf https://www.decidim kannst du eine reale Welt-Nutzung von Assemblies sehen. arcelona/assemblies[Decidim Barcelona], wo Sie
+die verschiedenen Beteiligungsorgane sehen können, das sind die regulären Räume, in denen sich der Stadtrat mit Bürgern und Organisationen
+trifft, um Feedback zu erhalten.
+
+In diesem Abschnitt erklären wir, wie wir eine Assembly in Decidim konfigurieren können.
+
+== Liste
+
+Um Assemblies auf der Decidim-Plattform zu konfigurieren, klicken Sie auf btn:[Assemblies] in der Admin-Sidebar Menü. Eine Liste
+wird mit den vorhandenen Schwärmereien angezeigt, wenn es welche gibt:
+
+image:assemblies_list.png[Assemblies list]
+
+Sie können nach den folgenden filtern:
+
+* Veröffentlicht / Unveröffentlicht
+* Öffentlich/Privat
+
+image:assemblies_list_filter.png[Assemblies list filtered]
+
+Sie können auch nach Titel suchen und steuern, wie viele Elemente in der Liste sind.
+
+Sie haben 4 mögliche Aktionen in dieser Liste, nachdem eine Schwärmerei erstellt wurde:
+
+. Export: Senden Sie per E-Mail die Konfiguration für eine bestimmte Assembly. Kann in anderen Decidim-Installationen importiert werden.
+. Duplizieren: um diese Assembly zu duplizieren.
+. Konfigurieren: um die Metadaten und die Konfiguration einer Assembly zu bearbeiten.
+. Schwärmereien: zur Verwaltung aller Kindergruppen für eine Montage.
+. Vorschau: wie es aussehen wird, sobald veröffentlicht.
+
+== Neues Baugruppen-Formular
+
+image:assemblies_new_form.png[Neue Baugruppenform]
+
+
+.Neues Baugruppenformular: Allgemeine Informationen
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Titel der Assembly. Zum Beispiel "Generalausschuss".
+
+|Untertitel
+|Benötigt
+|Untertitel. Zum Beispiel "Lassen Sie uns unsere Prioritäten gemeinsam festlegen"
+
+|Bestellposition
+|Benötigt
+|Welche Bestellung hat sie im Zusammenhang mit den anderen Versammlungen. Eine niedrigere Zahl bedeutet eine höhere Priorität. Zum Beispiel
+, wenn Sie zwei Schwärmereien haben, "Assembly a" mit Gewicht "10" und "Assembly b" mit Gewicht "0", dann "Assembly b" wird zuerst bei der Bestellung.
+
+|URL Slug
+|Benötigt
+|URL-Slugs werden verwendet, um URLs zu generieren, die auf diese Assembly verweisen. Akzeptiert nur Buchstaben, Zahlen und Bindestriche und muss
+mit einem Buchstaben beginnen. Beispiel: Wenn Ihre Domain 'example.org' und Ihr Slug 'general-committee' ist, dann wird Ihre URL
+https://example.org/assemblies/general-committee sein
+
+|Hashtag
+|Optional
+|Hashtag für Twitter
+
+|Kurze Beschreibung
+|Benötigt
+|Eine kurze Erläuterung dessen, worüber Ihr partizipatorischer Prozess steht.
+
+|Beschreibung
+|Benötigt
+|Eine lange Erklärung, worum es bei deiner Assembly geht.
+
+|Zweck der Aktion
+|Optional
+|Internes Feld, das nicht öffentlich angezeigt wird. In einer zukünftigen Version entfernen.
+
+|Komposition
+|Optional
+|Internes Feld, das nicht öffentlich angezeigt wird. In einer zukünftigen Version entfernen.
+
+|Interne Organisation
+|Optional
+|Internes Feld, das nicht öffentlich angezeigt wird. In einer zukünftigen Version entfernen.
+
+|Mitteilung
+|Optional
+|Der hier eingegebene Text wird dem Benutzer direkt unterhalb der Montageinformationen angezeigt.
+|===
+
+
+.Neues Baugruppenformular: Dauer
+|===
+|Feld |Typ |Beschreibung
+
+|Erstellungsdatum
+|Optional
+|Informationen, die in der Metadatenleiste der Baugruppe angezeigt werden. Erwartetes Format: dd/mm/yyy
+
+|Beinhaltet am
+|Optional
+|Informationen, die in der Metadatenleiste der Baugruppe angezeigt werden. Das Datum, an dem diese Versammlung zu Decidim hinzugefügt wurde. It does
+not necessarily have to be the same as the creation date. Erwartetes Format: dd/mm/yyy
+
+|Dauer
+|Optional
+|Informationen, die in der Metadatenleiste der Baugruppe angezeigt werden. Wenn die Dauer dieser Schwärmerei begrenzt ist, wählen Sie das Enddatum
+. Andernfalls wird er unbegrenzt erscheinen. Erwartetes Format: dd/mm/yyy
+
+|Enddatum
+|Optional
+|Informationen, die in der Metadatenleiste der Baugruppe angezeigt werden. Wenn diese Schwärmerei geschlossen wird. Erwartetes Format: dd/mm/yyy
+
+|Grund des Abschlusses
+|Optional
+|Informationen, die in der Metadatenleiste der Baugruppe angezeigt werden. Warum diese Versammlung geschlossen wurde.
+|===
+
+
+.Neues Baugruppenformular: Bilder
+|===
+|Feld |Typ |Beschreibung
+
+|Home-Bild
+|Optional
+|Abbild, das in Präsentationskarten dieser Versammlung verwendet wird. Anleitung für Datei: Muss ein Bild oder ein Dokument sein.
+Für Bilder, verwenden Sie vorzugsweise Landschaftsbilder, die keinen Text haben, der Dienst erzeugt das Bild. Maximale Dateigröße: 10MB
+Erlaubte Dateiendungen: jpeg jpg png
+
+|Bannerbild
+|Optional
+|Abbild, das innerhalb der Montage verwendet wird. Anleitung für Datei: Muss ein Bild oder ein Dokument sein.
+Für Bilder, verwenden Sie vorzugsweise Landschaftsbilder, die keinen Text haben, der Dienst erzeugt das Bild. Maximale Dateigröße: 10MB
+Erlaubte Dateiendungen: jpeg jpg png
+|===
+
+
+.Neues Baugruppenformular: Filter
+|===
+|Feld |Typ |Beschreibung
+
+|Bereiche aktiviert
+|Optional
+|Auswählen, ob die Bereichsfilterung in dieser Schwärmerei erfolgen soll.
+
+|Bereich
+|Optional
+|Zu welcher xref:admin:scopes.adoc[Scope] diese Assembly gehört.
+
+|Fläche
+|Optional
+|Zu welcher xref:admin:areas.adoc[Area] diese Assembly gehört.
+|===
+
+
+.Neues Baugruppenformular: Metadaten
+|===
+|Feld |Typ |Beschreibung
+
+|Was beschlossen wird
+|Optional
+|Informationen, die in der Metadatenleiste der Baugruppe angezeigt werden.
+
+|Wie wird es beschlossen
+|Optional
+|Informationen, die in der Metadatenleiste der Baugruppe angezeigt werden.
+
+|Bereichsmetadaten
+|Optional
+|Informationen, die in der Metadatenleiste der Baugruppe angezeigt werden.
+
+|Promoter-Gruppe
+|Optional
+|Informationen, die in der Metadatenleiste der Baugruppe angezeigt werden.
+
+|Organisationsbereich
+|Optional
+|Informationen, die in der Metadatenleiste der Baugruppe angezeigt werden.
+
+|Wer beteiligt sich
+|Optional
+|Informationen, die in der Metadatenleiste der Baugruppe angezeigt werden.
+|===
+
+
+.Neues Baugruppenformular: Sichtbarkeit
+|===
+|Feld |Typ |Beschreibung
+
+|Übergeordnete Baugruppe
+|Optional
+|Was ist die Versammlung, zu der diese Versammlung gehört. In Metadecidim zum Beispiel hat das https://meta.decidim.org/assemblies/coordination-committee[Koordinationskomite]
+die übergeordnete Versammlung der https://meta.decidim.org/assemblies/general-assembly-association[General%20Assembly%20of%20the%20Decidim%20Association].
+
+|Hervorgehoben
+|Optional
+|Aktivieren, wenn die Assembly mehr Sichtbarkeit in der öffentlichen Schwärmerliste haben soll. Es wird auch in der
+Assembly Content Block in der xref:admin:homepage.adoc[Homepage] Konfiguration sichtbar sein.
+
+|Privater Raum
+|Optional
+|Überprüfen Sie, ob diese Assembly nur für xref:admin:spaces/assemblies/private_participants.adoc[Private Teilnehmer] zugänglich sein soll
+
+|Ist transparent
+|Optional
+|Überprüfen Sie, ob diese Assembly privat ist, aber für alle anderen Teilnehmer sichtbar sein soll. Das bedeutet, dass andere Teilnehmer
+oder Besucher es sehen werden, aber sie können nicht mit ihm interagieren.
+|===
+
+
+.Neues Baugruppenformular: Andere
+|===
+|Feld |Typ |Beschreibung
+
+|Erstellt von
+|Optional
+|Wählen Sie einen von "Stadtrat", "Öffentlich" oder "Andere". Wenn es andere ist, können Sie den Namen der Organisation angeben, die diese Schwärmerei
+erstellt hat.
+
+|Baugruppentyp
+|Optional
+|Welches xref:_assemblies_types[Assembly] ist diese Assembly?
+
+|Verwandte Prozesse
+|Optional
+|Wählen Sie andere Beteiligungsprozesse, die mit dieser Assembly zusammenhängen.
+
+|Soziale
+|Optional
+|Welches Profil soziale Netzwerke hat diese Versammlung. Kann Twitter, Facebook, Instagram, YouTube und/oder GitHub sein. Es ist
+in der Metadaten-Sidebar der Baugruppe angezeigt.
+
+|Statistiken anzeigen
+|Optional
+|Aktivieren, wenn Sie den Abschnitt Statistik anzeigen möchten.
+|===
+
+Nachdem Sie Ihre Schwärmerei ursprünglich erstellt haben, haben Sie ein Untermenü, in dem Sie weitere Informationen
+über Ihre Schwärmerei konfigurieren müssen.
+
+image:Assembly_submenu.png[Assembly Untermenü in admin]
+
+Hier können Sie Ihren Prozess weiter konfigurieren:
+
+. Info: das gleiche Formular, das wir auf dieser Seite erklärt haben.
+. xref:admin:spaces/assemblies/components.adoc[Components]
+. xref:admin:spaces/assemblies/categories.adoc[Categories]
+. xref:admin:spaces/assemblies/attachments.adoc[Attachments]
+. xref:admin:spaces/assemblies/members.adoc[Members]
+. xref:admin:spaces/assemblies/admins.adoc[Assembly admins]
+. xref:admin:spaces/assemblies/private_participants.adoc[Private Teilnehmer]
+. xref:admin:spaces/assemblies/moderations.adoc[Moderations]
+
+== Schwärmer-Typen
+
+Um die Schwärmereien in verschiedenen Arten zu unterbrechen, können Sie die Schwärmereien definieren. Diese Typen können auf der öffentlichen
+Assembly-Seite gefiltert werden.
+
+image:assemblies_type_filters.png[Nach Baugruppentyp] filtern
+
+image:assemblies_new_type_form.png[Neuer Baugruppentyp]
+
+
+.Neues Baugruppentyp Formular
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Titel des Schwärmer-Typs. Zum Beispiel "Consultative".
+|===
+
+== Einstellungen
+
+Im Moment gibt es nur eine Einstellung zum Konfigurieren des allgemeinen Verhaltens von Baugruppen.
+
+image:assemblies_settings.png[Assemblies settings]
+
+
+.Einstellungen für Baugruppen Formular
+|===
+|Feld |Typ |Beschreibung
+
+|Organisationsdiagramm aktivieren
+|Checkbox
+|Gibt an, ob das Organisationsdiagramm in der Assemblyliste angezeigt werden soll.
+|===
+
+Das Organigramm wird in der Bottotm der Assembly-Seite angezeigt.
+
+image:assemblies_organization_chart.png[Assemblies organization chart]
+
+Es ermöglicht eine Navigation im Assembly-Baum, mit der Möglichkeit, die zu einer übergeordneten Assembly gehörenden Untergruppen zu sehen.
+
+image:assemblies_organization_chart_filtered.png[Organisationsdiagramm der Assemblies filtered]

@@ -1,0 +1,113 @@
+= Prozessgruppen
+
+Eine Gruppe von Prozessen erweist sich als nützlich für die Unterteilung großer partizipatorischer Prozesse in Teilprozesse nach Kriterien,
+zum Beispiel die xref:admin:scopes. doc[scope] von jedem Prozess.
+
+Als Beispiel sehen Sie die https://www.decidim.barcelona/processes_groups/4[Barcelona Stadt-Nachbarschaftsplan Pla de Barris].
+Es handelt sich um einen Schockplan von 150 Millionen Euro, der darauf abzielt, die Ungleichheiten innerhalb der Stadt zu verringern. Es gibt 10 verwandte Prozesse, einen für jede betroffene Nachbarschaft.
+
+image::processes_group_example.png[Participatory process group example]
+
+== Neues Prozessgruppen-Formular
+
+Zum Erstellen einer neuen Prozessgruppe:
+
+. Als Administrator anmelden
+. Gehen Sie zum Abschnitt Prozesse in der Seitenleiste
+. Klicken Sie auf den Link Prozessgruppen in der Seitenleiste
+. Klicken Sie auf die Schaltfläche "Neue Prozessgruppe"
+. Formular ausfüllen
+
+image::processes_group_list.png[Participatory process groups list]
+
+image::processes_group_new_form.png[New participatory process group form]
+
+
+.Neues partizipatorisches Prozessgruppenformular: Allgemeine Informationen
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Titel der partizipatorischen Prozessgruppe. Zum Beispiel "Partizipative Budgeting".
+
+|Beschreibung
+|Benötigt
+|Eine lange Erklärung, worum es bei Ihrem partizipativen Prozess geht.
+
+|Verwandte Prozesse
+|Optional
+|Welche Prozesse sind damit verbunden? Sie werden verwendet, um die Inhaltsblöcke auf der Landing-Seite dieser Prozessgruppe
+zu füllen. Um mehrere auszuwählen, müssen Sie
+die *Strg* Funktion verwenden.
+
+|Bild
+|Optional
+|Bild, das in Präsentationskarten dieser Prozessgruppe verwendet wird. Bildführung:
+Vorzugsweise ein Querformat ohne Text. Der Dienst erzeugt das Bild.
+Maximale Dateigröße: 10MB. Erlaubte Dateiendungen: jpeg jpg png
+|===
+
+
+.Neues partizipatorisches Prozessgruppenformular: Metadaten
+|===
+|Feld |Typ |Beschreibung
+
+Hashtag
+Webseite
+
+|Promoter-Gruppe
+|Optional
+|Informationen, die im Prozess-Metadateninhaltsblock angezeigt werden.
+
+|Organisationsbereich
+|Optional
+|Informationen, die im Prozess-Metadateninhaltsblock angezeigt werden.
+
+|Bereichsmetadaten
+|Optional
+|Informationen, die im Prozess-Metadateninhaltsblock angezeigt werden.
+
+|Wer beteiligt sich
+|Optional
+|Informationen, die im Prozess-Metadateninhaltsblock angezeigt werden.
+
+|Was beschlossen wird
+|Optional
+|Informationen, die im Prozess-Metadateninhaltsblock angezeigt werden.
+
+|Wie wird es beschlossen
+|Optional
+|Informationen, die im Prozess-Metadateninhaltsblock angezeigt werden.
+|===
+
+
+.Neues partizipatorisches Prozessgruppenformular: Sichtbarkeit
+|===
+|Feld |Typ |Beschreibung
+
+|Beworben
+|Optional
+|Überprüfen Sie, ob der Prozess in der öffentlichen Prozessliste mehr Sichtbarkeit haben soll. Es wird auch in der
+ParticpipatoryProcess Content Block in der xref:admin:homepage.adoc[Homepage] Konfiguration sichtbar sein. Dies ist in der btn:[Edit] Aktion in einem Prozess verfügbar.
+|===
+
+== Zielseite
+
+Eines der Hauptmerkmale einer Prozessgruppe ist, die Lnading Seite konfigurieren zu können durch Inhaltsblöcke, genau wie
+die allgemeine Homepage der Plattform. Dies bedeutet, dass Sie verschiedene Abschnitte der Landingpage aktivieren oder deaktivieren können und auch
+einige dieser Abschnitte konfigurieren.
+
+image::processes_group_landing.png[Participatory process group landing page]
+
+* Titel, Beschreibung und Hashtag
+* Metadaten
+* Bild-, Text- und Aktionsknopf aufrufen. Konfigurierbar.
+* Vorschläge. Sie können einstellen, wie die Elemente sortiert werden: nach neuestem oder zufälligem Namen.
+* Ergebnisse. Sie können einstellen, wie die Elemente sortiert werden: nach neuestem oder zufälligem Namen.
+* Nächste Termine
+* Statistiken
+* Beteiligte Prozesse
+* Erster HTML-Block
+* Zweiter HTML-Block
+* Dritter HTML-Block

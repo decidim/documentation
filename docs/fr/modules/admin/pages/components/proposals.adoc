@@ -1,0 +1,445 @@
+= Propositions
+
+Le volet Propositions permet aux gens de créer, de commenter, d'approuver et de soutenir les propositions.
+
+À partir de ce point de départ, il pourrait y avoir d'autres configurations, telles que:
+
+* combien de propositions un participant peut créer
+* le nombre maximum de votes qu'un participant peut attribuer aux propositions
+* combien de soutiens au minimum un participant doit donner aux propositions pour que leurs soutiens soient valides
+* si vous voulez activer les commentaires de ces participants sur les propositions
+* si vous voulez que les propositions aient des images, des pièces jointes, l'éditeur WYSIWYG, une adresse géolocalisée, des portées, etc.
+
+Quelques exemples d'utilisation de ce composant :
+
+* https://futureu.europa.eu/[Conférence de l'avenir de l'Europe]
+* https://meta.decidim.org/processes/roadmap/f/122/[Propose new functionalities for Decidim software] in https://meta.decidim.org/[Metadecidim]
+
+image:components/propositions/example01.png[Exemple de liste de propositions dans COFE]
+image:components/propositions/example02.png[Exemple de liste de propositions dans Metadecidim]
+image:components/proposals/example03.png[Proposer l'exemple de détail dans Metadecidim]
+
+Pour configurer la fonctionnalité Propositions :
+
+. Se connecter en tant qu'administrateur
+. Aller au panneau d'administration
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+Par exemple, il peut s'agir de "Processus", d'"Assembles", ou de "Conférences"
+. Aller dans les fonctionnalités
+. Cliquez sur le bouton "Ajouter une fonctionnalité"
+. Cliquer sur "Propositions"
+. Remplissez le formulaire xref:_add_component[Ajouter une fonctionnalité]
+
+== Ajouter une fonctionnalité
+
+image:components/propositions/component.png[Ajouter un formulaire composant]
+
+
+.Ajouter un composant : Formulaire de propositions
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Quel est le titre de cette fonctionnalité. Par exemple, "Proposions"
+
+|Rang d'affichage
+|Facultatif
+|Quel ordre aura-t-il par rapport aux autres composants. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux composants, "Propositions" avec le poids "10" et "Réunions" avec le poids "0", alors "Réunions" sera d'abord lors de la commande.
+|===
+
+
+.Ajouter un composant : Formulaire de propositions - Paramètres globaux
+|===
+|Champ |Type |Description
+
+|Portées activées
+|Facultatif
+|Cochez cette case si vous voulez que le filtrage des portées dans ce composant.
+
+|Secteur
+|Facultatif
+|Ce composant appartient à xref:admin:scopes.adoc[Scope].
+
+|Limite de votes par utilisateur
+|Facultatif
+|Doit être un nombre. Combien soutient un participant peut donner aux propositions.
+
+|Nombre minimum de votes par utilisateur
+|Facultatif
+|Doit être un nombre. Combien de soutiens un participant a-t-il besoin de donner à des propositions pour que leur soutien soit compté. If they don't
+reach this number, their supports will not be taken in account.
+
+|Limite de proposition par participant
+|Facultatif
+|Doit être un nombre. Combien de propositions un participant peut créer.
+
+|Longueur maximale du corps de la proposition
+|Facultatif
+|Doit être un nombre. Combien de caractères un corps de proposition peut avoir comme maximum.
+
+|Édition d'une proposition
+|Obligatoire
+|Choisissez l'une de ces deux options : "Autoriser l'édition des propositions dans un délai spécifique" ou "Autoriser l'édition des propositions
+pour un temps infini". Dans le cas où c'est dans un délai spécifique, vous devez spécifier l'heure dans "Les propositions peuvent être
+éditées par les auteurs avant que ce nombre de minutes ne passe. Notez que si vous xref:components/proposals/answers.adoc[répondre à une proposition]
+alors elle ne peut plus être modifiée.
+
+|Délai (en minutes) après lequel les auteurs ne peuvent plus modifier leurs propositions
+|Requis si "Édition de proposition" est "Autoriser l'édition des propositions dans un laps de temps spécifique"
+|Doit être un nombre. Combien de minutes après la création d'une proposition, il peut être édité par son auteur.
+
+|Seuil par proposition
+|Facultatif
+|Doit être un nombre. Combien de votes une proposition doit avoir pour être considérée comme "acceptée". Voir <<setting-threshold,screenshots>>.
+
+|Peut accumuler des supports au-delà du seuil
+|Facultatif. Ne s'applique que si "Seuil par proposition" est configuré.
+|La question de savoir si la proposition peut accumuler plus de soutiens que le seuil.
+
+|Réponses aux propositions activées
+|Facultatif
+|Si les administrateurs ou les évaluateurs peuvent répondre aux propositions.
+
+|Propositions officielles activées
+|Facultatif
+|Les administrateurs peuvent créer des propositions officielles.
+
+|Commentaires activés
+|Facultatif
+|Si vous voulez avoir des commentaires dans les rencontres.
+
+|Longueur maximale des commentaires
+|Facultatif
+|Quelle est la limite de caractères que les participants auront pour faire des commentaires. Laisser 0 pour la valeur par défaut.
+
+|Géocodage activé
+|Facultatif
+|Les participants peuvent définir une adresse de géocodage pour leurs propositions. Besoin d'activer xref:configure:geocoding[Geocoding]  Voir <<setting-geocoding,screenshots>>.
+
+|Autoriser les pièces jointes
+|Facultatif
+|Cochez cette case pour permettre aux participants de joindre des fichiers à leurs propositions.
+
+|Autoriser l'image de la carte
+|Facultatif
+|Cochez cette case pour afficher une image de carte lorsque les participants joignent des images à leurs propositions. Voir <<setting-card-image,screenshots>>.
+
+|Les autorisations d'actions peuvent être définies pour chaque proposition
+|Facultatif
+|Si vous voulez être en mesure de définir les autorisations pour chacune des propositions. La plupart du temps, vous voudrez laisser cette option désactivée.
+
+|Brouillons collaboratifs activés
+|Facultatif
+|Cochez cette case pour activer xref:components/propositions/collaborative_drafts.adoc[collaboratifs] dans les propositions.
+
+|Textes participatifs activés
+|Facultatif
+|Cochez cette case pour activer xref:components/propositions/participatory_texts.adoc[textes participatifs] dans les propositions.
+
+|Amendements activés
+|Facultatif
+|Cochez cette case pour activer xref:components/propositions/amendements.adoc[amendments] dans les propositions. Si activé, configurez les fonctionnalités d’amendement pour chaque étape.
+
+|Texte d'aide pour les amendements Assistant
+|Facultatif. Visible si l'option "Amendements activés" est cochée.
+|Quel est le texte d'aide visible lors de la création de nouveaux amendements.
+
+|Annonce
+|Facultatif
+|Une annonce générale qui sera visible sur la page d'accueil des propositions générales.
+
+|Nouveau modèle du corps de la proposition
+|Facultatif
+|Un texte prédéfini qui sera utilisé lors de la création de nouvelles propositions. Utile si vous voulez définir un format que les participants ont besoin de
+suivre lors de la création de nouvelles propositions.
+
+|Texte d'aide pour la nouvelle proposition
+|Facultatif
+|Quel est le texte d'aide visible lors de la création de nouvelles propositions.
+
+|Texte d'aide à l'étape "Créer" de l'assistant de proposition
+|Facultatif
+|Quel est le texte d'aide visible lors de la création de nouvelles propositions à l'étape "Créer".
+
+|Texte d'aide à l'étape "Comparer" de l'assistant de proposition
+|Facultatif
+|Quel est le texte d'aide visible lors de la création de nouvelles propositions à l'étape "Comparaison".
+
+|Texte d'aide à l'étape "Terminé" de l'assistant de proposition
+|Facultatif
+|Quel est le texte d'aide visible lors de la création de nouvelles propositions à l'étape "Terminé".
+
+|Texte d'aide à l'étape "Publier" de l'assistant de proposition
+|Facultatif
+|Quel est le texte d'aide visible lors de la création de nouvelles propositions à l'étape "Publier".
+|===
+
+[#setting-threshold]
+*Exemple de réglage de seuil*
+
+image::components/proposals/setting_threshold01.png[Example of threshold setting]
+
+image::components/proposals/setting_threshold02.png[Example of threshold setting]
+
+[#setting-card-image]
+*Exemple de paramètre d'image de carte*
+
+image::components/proposals/setting_card_image.png[Example of card image setting]
+
+[#setting-geocoding]
+*Exemple de configuration de géocodage*
+
+image::components/proposals/setting_geocoding.png[Example of geocoding setting]
+
+---
+
+Dans les cas où l'espace que ce composant sera utilisé a xref:admin:spaces/processes/phases. doc[Phases], par exemple, dans
+xref:admin:spaces/processes.adoc[Processus participatif], vous pouvez également définir différents comportements par étape.
+
+
+.Ajouter un composant : Formulaire de propositions - Paramètres de l'étape
+|===
+|Champ |Type |Description
+
+|Annonce
+|Facultatif
+|Une annonce générale qui sera visible sur la page d'accueil de la proposition générale.
+
+|Soutiens activés
+|Facultatif
+|Cochez cette case si vous voulez que les participants montrent un soutien public à ces propositions.
+
+|Soutiens bloqués
+|Facultatif
+|Si les participants seront en mesure de voir les approbations mais ne pas en faire aucun.
+
+|Activer le module de vote simple
+|Facultatif
+|Les participants pourront-ils soutenir les propositions dans cette phase.
+
+|Bloquer les votes
+|Facultatif
+|Les participants pourront-ils soutenir les propositions dans cette phase.
+
+|Supports cachés
+|Facultatif
+|Si le support est activé, cocher ceci masquera le nombre de supports.
+
+|Commentaires désactivés
+|Facultatif
+|Si vous voulez activer les commentaires pour cette phase.
+
+|Création de proposition activée
+|Facultatif
+|Si vous voulez activer la création de propositions par les participants pour cette phase. Voir xref:_new_proposal_form[Formulaire de nouvelle proposition]
+
+|Réponses aux propositions activées
+|Facultatif
+|Si vous voulez activer xref:components/propositions/answers.adoc[proposition answering].
+
+|Publier les réponses de la proposition immédiatement
+|Facultatif
+|Si vous voulez que les réponses des propositions soient publiées en même temps que vous êtes xref:components/propositions/réponses. doc[answering] ou vous voulez contrôler quand publier les réponses.
+
+|Activer les coûts sur les réponses aux propositions
+|Facultatif
+|Si vous voulez ajouter des coûts économiques aux réponses aux propositions. Utile pour importer dans xref:components/budgets.adoc[budgets].
+
+|Création d'amendement activée
+|Facultatif. Visible si l'option "Amendements activés" est cochée.
+|Le participant peut modifier les propositions. Voir xref:components/propositions/amendements.adoc[Amendments].
+
+|Réaction des amendements activée
+|Facultatif. Visible si l'option "Amendements activés" est cochée.
+|Les auteurs de la proposition pourront accepter ou rejeter les amendements du participant.
+
+|La promotion de l'amendement est activée
+|Facultatif. Visible si l'option "Amendements activés" est cochée.
+|Les auteurs de l’émandation pourront promouvoir la proposition de modification rejetée.
+
+|Visibilité des amendements
+|Requis. Visible si l'option "Amendements activés" est cochée.
+|Choisissez l'un des "amendements sont visibles pour tous" ou "les amendements ne sont visibles que pour leurs auteurs"
+
+|Annonce
+|Facultatif
+|Une annonce générale qui sera visible sur la page d'accueil des propositions générales.
+
+|Hashtags ajoutés à toutes les propositions
+|Facultatif
+|Ajouter automatiquement un hashtag à chaque proposition. Voir <<setting-hashtags,screenshots>>.
+
+|Hashtags suggérés aux participants pour de nouvelles propositions
+|Facultatif
+|Suggérer des hashtags aux participants pour de nouvelles propositions. Les participants peuvent sélectionner plus d'un hashtag. Voir <<setting-hashtags,screenshots>>.
+|===
+
+[#setting-hashtags]
+*Exemple de configuration des hashtags*
+
+image::components/proposals/setting_hashtag.png[Example of hashtag setting]
+
+== Autorisations
+
+Un administrateur peut choisir quel type de xref:customize:authorizations.adoc[Authorizations] un participant a besoin de faire
+certaines actions dans les propositions:
+
+* Soutenir
+* Soutien
+* Créer
+* Retirer
+* Modifier
+* Commenter
+* Commentaire sur le vote
+
+== Gérer les propositions
+
+image:components/propositions/manage_propositions.png[Gérer le tableau des propositions]
+
+=== Exportation
+
+Permet d'exporter les propositions dans différents formats.
+
+* Propositions au format CSV
+* Propositions en JSON
+* Propositions en tant qu'Excel
+* Commentaires en tant que CSV
+* Commentaires en JSON
+* Commentaires en tant qu'Excel
+
+=== Importation
+
+* Importer depuis un autre composant
+* Importer depuis un fichier
+
+=== Formulaire de nouvelle proposition
+
+==== Propositions citoyennes
+
+image:components/propositions/new_proposal_frontend.png[Formulaire de nouvelle proposition]
+
+Les propositions peuvent être créées par les participants si le paramètre est "Création de proposition activée" est vérifié pour la phase active.
+
+If a participant belongs to a xref:admin:participants/groups.adoc[user group], then they will be able to create proposals as that group also.
+
+Ce formulaire dépend beaucoup des paramètres que vous avez activés dans ce composant. Il peut être vraiment court (avec seulement un titre et un Corps
+par défaut) ou très long (titre, Corps, Hashtags, Adresse, Portée, Catégorie, Image et Attachage).
+
+
+.Formulaire de nouvelle proposition - par défaut (par un participant)
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Quel est le titre de cette proposition. Par exemple, "Voie cyclable dans Main Street". Doit avoir au moins 15 caractères au minimum
+et 150 caractères au maximum. Doit commencer par une lettre majuscule.
+
+|Corps
+|Facultatif
+|Quelle est la description complète de cette proposition. Doit avoir au moins 15 caractères minimum et 450 caractères maximum
+par défaut, mais peut être modifié avec le paramètre "Longueur maximale du corps de la proposition".
+|===
+
+Pour détecter les propositions dupliquées avant de les publier, la création de proposition a un formulaire d'assistant avec plusieurs étapes. Ceci aussi
+permet aux participants d'enregistrer les propositions brouillons (non publiés) dans le cas où ils auraient besoin de remplir trop de champs.
+
+image:components/propositions/new_proposal_frontend_compare.png[Formulaire de nouvelle proposition (par un participant) - Comparaison]
+
+À titre d'exemple de ce que le formulaire pourrait voir en fonction des paramètres activés, Voici une capture d'écran du formulaire d'une proposition
+avec les paramètres suivants : "Hashtags ajoutés à toutes les propositions", "Hashtags a suggéré aux participants de nouvelles propositions",
+"Géocodage activé", "Autoriser les pièces jointes", "Autoriser l'image de carte" et "Portées activées".
+
+image:components/propositions/new_proposal_frontend_complete.png[Formulaire de nouvelle proposition (par un participant) - Complete]
+
+Après avoir rempli ces champs, le participant peut voir un aperçu de sa proposition avant de la publier. Ils peuvent également modifier
+la proposition avant de la publier.
+
+image:components/proposs/new_proposal_frontend_publish.png[Formulaire de nouvelle proposition (par un participant) - Publish]
+
+image:components/propositions/new_proposal_frontend_published.png[Proposition publiée par un participant]
+
+==== Propositions officielles
+
+Les administrateurs peuvent créer des propositions officielles. Il y aura un filtre pour n'afficher que les propositions officielles dans la page de navigation des propositions.
+
+image:components/propositions/new_proposal_backend01.png[Formulaire de nouvelle proposition - par défaut (propositions officielles)]
+
+
+.Formulaire de nouvelle proposition - par défaut (propositions officielles)
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Quel est le titre de cette proposition. Par exemple, "Voie cyclable dans Main Street". Doit avoir au moins 15 caractères au minimum
+et 150 caractères au maximum. Doit commencer par une lettre majuscule.
+
+|Corps
+|Facultatif
+|Quelle est la description complète de cette proposition. Doit avoir au moins 15 caractères minimum et 450 caractères maximum
+par défaut, mais peut être modifié avec le paramètre "Longueur maximale du corps de la proposition".
+
+|Cette proposition provient d'une réunion
+|Facultatif
+|Vérifier si cette proposition provient d'une réunion.
+
+|Sélectionnez une réunion
+|Requis si la case à cocher "Cette proposition provient d'une réunion" est cochée
+|Sélecteur de liste déroulante avec toutes les réunions de cet espace. L'auteur de la proposition sera la réunion.
+|===
+
+À titre d'exemple de ce à quoi le formulaire pourrait ressembler en fonction des paramètres activés, Voici une capture d'écran du formulaire d'une proposition
+avec les paramètres suivants : "Hashtags ajoutés à toutes les propositions", "Hashtags a suggéré aux participants de nouvelles propositions",
+"Géocodage activé", "Autoriser les pièces jointes", "Autoriser l'image de carte" et "Portées activées".
+
+image:components/propositions/new_proposal_backend02.png[Formulaire de nouvelle proposition - avec plusieurs paramètres (propositions officielles)]
+
+==== Actions
+
+
+.Actions
+|===
+|Icône |Nom |Définition
+
+|image:action_edit.png[Icône d'édition]
+|Editer
+|Modifier le formulaire pour une proposition. C'est la même forme que "Nouvelle proposition". Uniquement visible lorsque la proposition est une proposition xref:_official_propositions["Proposition officielle"].
+
+|image:action_answer.png[Icône de proposition de réponse]
+|xref:components/propositions/answers.adoc[Proposition de réponse]
+|Vous permet de répondre à une proposition.
+
+|image:action_permissions.png[Icône des permissions]
+|Autorisations
+|
+
+|image:action_preview.png[Icône de prévisualisation]
+|Aperçu
+|Pour voir comment il est montré dans le frontend aux participants.
+|===
+
+== Filtre d'origine
+
+Lorsque vous naviguez dans la liste des propositions, vous pouvez filtrer les propositions par origine.
+
+image:components/proposals/origin_filter.png[Filtre d'origine des propositions]
+
+Il y a cinq options d'origine:
+
+* Tout: sélectionner toutes les origines
+* xref:_official_proposals[Official]: propositions créées par les administrateurs
+* xref:_Citizens_proposals[Citizens]: propositions créées par les participants
+* Groupes : propositions créées par les participants qui appartiennent à un groupe d'utilisateurs et choisissez cette option lors de la création de la proposition
+* Réunions: propositions créées par les administrateurs qui ont vérifié cette option lors de la création de la proposition
+
+== Types et mécanismes de propositions
+
+Il existe différents types de mécanismes de propositions qui peuvent être activés dans des propositions, telles que:
+
+* xref:admin:components/proposals/amendments.adoc[Amendments]
+* xref:admin:components/proposals/answers.adoc[Answers]
+* xref:admin:components/proposals/collaborative_drafts.adoc[Collaborative drafts]
+* xref:admin:components/proposals/participatory_texts.adoc[Participatory texts]

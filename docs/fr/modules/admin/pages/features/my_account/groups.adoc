@@ -1,0 +1,18 @@
+= Groupes
+
+Dans cette section, les participants peuvent voir à quels groupes ils appartiennent.
+
+NOTE: Vous voulez créer un nouveau groupe ? Allez à la page xref:admin:features/my_public_profile.adoc[Mon profil public].
+
+image:features/my_account/groups.png[Groups]
+
+Pour aller à cette section :
+
+. Se connecter en tant que participant
+. Cliquez dans le nom du participant dans l'en-tête
+. Cliquez dans "Mon compte"
+. Cliquez dans "Groupes" dans la barre latérale
+
+Ici vous pouvez voir à quelle date le groupe a été créé et quel statut a-t-il (`pending` ou `verified`).
+
+En savoir plus sur xref:admin:participants/groups.adoc[Groupes dans le manuel d'administration].

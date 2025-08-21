@@ -1,0 +1,39 @@
+= Tipos de processo
+
+Em alguns casos, é necessário organizar processos participativos mais do que apenas xref:Espaços/processes/groups.adoc[Process Groups]. This is where Process Types can be useful.
+
+Process Types work similarly to xref:admin:spaces/assemblies.adoc#_assemblies_types[Assembly types].
+
+== New process type form
+
+For creating a new process type:
+
+. Entrar como administrador
+. Ir para a seção de Processos na barra lateral
+. Click on the Process types link in the sidebar
+. Click on the "New process type" button
+. Preencha o formulário
+
+image:spaces/processes/process-types-admin-backend.png[A screenshot of the back-end showing the button to create a new process type,title="Create a new process type in the back-end"]
+
+
+.Novo formulário de tipo de processo participativo: Informações gerais
+|===
+|Campo |tipo |Descrição:
+
+|Título
+|Obrigatório
+|Título do tipo de processo participativo. Por exemplo, "consultivo".
+|===
+
+== Add process type to existing processes
+
+It's possible to add a process type to existing processes. Edit the process, and select the process type under the section labelled Other.
+
+image:spaces/processes/process-types-edit-process.png[A screenshot of editing an existing process to add a process type,title="Add process type to an existing process"]
+
+== Process type filter
+
+In the front-end if there is at least one Process Type defined, a filter shows, allowing filtering of Processes.
+
+image:spaces/processes/process-types-front-end.png[A screenshot of the front-end showing a filter for Process types,title="Front-end filter for Process Types"]

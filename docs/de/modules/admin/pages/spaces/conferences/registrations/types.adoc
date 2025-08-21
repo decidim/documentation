@@ -1,0 +1,56 @@
+= Registrierungsarten
+
+Sie können Anmeldungen in Konferenzen aktivieren, so dass es einfacher ist, sich auf der ganzen Konferenz oder nach Tagen zu registrieren statt
+Besprechung durch Besprechung, um die Registrierung für dieses Ereignis zu aktivieren.
+
+Nach der Anmeldung haben die Teilnehmer einen Button zur Anmeldung auf der Konferenz in der Landung und der Kopfzeile der Konferenz.
+
+image:spaces/conferences/registration_landing01.png[Registrierungs-Button auf Landingpage]
+
+image:spaces/conferences/registration_landing02.png[Registrierungs-Button auf Landingpage]
+
+Wenn Sie die Registrierung aktivieren möchten, müssen Sie mindestens einen Registrierungstyp definieren und veröffentlichen.
+
+image:spaces/conferences/registration_types_frontend_wo_user.png[Registrierungstyp ohne Benutzerkonto] auswählen
+
+== Neuen Registrierungstyp erstellen
+
+Um einen neuen Registrierungstyp hinzuzufügen, müssen Sie nach:
+
+. Als Administrator anmelden
+. Gehe zum Konferenz-Abschnitt in der Sidebar
+. Klicken Sie auf die Konferenz Bearbeiten Aktion
+. Klicken Sie auf den Link "Registrierungstypen" in der Seitenleiste
+. Klicken Sie auf die Schaltfläche "Neue Registrierungstyp
+. Formular ausfüllen
+. Registrierungstyp veröffentlichen
+
+image:spaces/conferences/new_registration_type.png[Neues Registrierungstyp Formular erstellen]
+
+image:spaces/conferences/registration_types_backend.png[Registrierungstypen verwalten]
+
+
+.Neuen Registrierungstyp erstellen
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Wie lautet der Titel dieses Registrierungstyps.
+
+|Gewicht
+|Welche Bestellung hat er in Bezug auf die anderen Typen. Eine niedrigere Zahl bedeutet eine höhere Priorität. Zum Beispiel, wenn Sie zwei Typen haben, "Tag 1" mit Gewicht "10" und "Tag 2" mit Gewicht "0", dann wird "Tag 2" zuerst bei der Bestellung sein.
+|Beschreibung
+
+|Benötigt
+|Beschreibung für diesen Registrierungstyp
+|Preis
+
+|Optional
+|Legen Sie einen Preis für diesen Registrierungstyp fest. Wenn Sie keinen Preis angeben, wird der Preis "kostenlos" sein.
+|Konferenzbesprechungen auswählen
+|===
+
+If the participant is already logged in then they will see their username and email in the registration page.
+
+image:spaces/conferences/registration_types_frontend_w_user.png[Registrierungstyp mit Benutzerkonto auswählen]

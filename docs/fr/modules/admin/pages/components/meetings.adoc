@@ -1,0 +1,411 @@
+= Réunions
+
+Les réunions sont le lieu où les gens se réunissent pour discuter ou informer sur un sujet donné. Toutes les réunions ont un emplacement
+(où la réunion aura lieu) et la date et l'heure de début et de fin (quand la réunion aura lieu).
+
+Quelques exemples d'utilisation de ce composant sont :
+
+* https://www.decidim.barcelona/processes/PAM2020/f/3734/[Procédures participatiu del Programa d'Actuació Municipal (PAM) 2020-2023]
+dans https://www.decidim.barcelona/[Decidim Barcelona]
+* https://lejourdapres.parlement-ouvert.fr/processes/ateliers/f/14/[Les ateliers] in https://lejourdapres.parlement-ouvert.fr/[Le jour d'après]
+
+image:components/meetings/example01.png[Liste des réunions dans Decidim Barcelona]
+image:components/meetings/example02.png[Exemple de détails de réunion 01 dans Decidim Barcelona]
+image:components/meetings/example03. ng[Exemple de réunion 02 dans Decidim Barcelona]
+image:components/meetings/example04.png[Liste des réunions dans Le jour d'aprés]
+
+== Types de fichiers
+
+En ce qui concerne le *emplacement*, selon la configuration du composant, vous pouvez avoir:
+
+* Réunions en personne : où vous vous réunissez à un endroit donné
+* Réunions en ligne : où vous vous réunissez en utilisant un service externe (par exemple Jitsi Meet)
+
+Selon le *auteur* (qui est la personne qui fait l'appel) :
+
+* Réunions officielles : réunions créées par l'organisation (créées par un administrateur via le panneau)
+* Réunions de citoyens : réunions créées par un utilisateur (un utilisateur ou un groupe d'utilisateurs).
+
+== Ajouter le composant
+
+image:components/meetings/component.png[Ajouter un composant de réunions]
+
+Pour ajouter le composant, vous devez :
+
+. Se connecter en tant qu'administrateur
+. Aller au panneau d'administration
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+Par exemple, il peut s'agir de "Processus", d'"Assembles", ou de "Conférences"
+. Aller dans les fonctionnalités
+. Cliquez sur le bouton "Ajouter une fonctionnalité"
+. Cliquez sur "Réunions"
+. Remplissez le formulaire xref:_add_component[Ajouter une fonctionnalité]
+
+== Ajouter une fonctionnalité
+
+Pour configurer le composant de réunion, vous avez ces paramètres:
+
+
+.Ajouter un composant - Formulaire de réunions
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Quel est le nom de ce composant.
+
+|Rang d'affichage
+|Facultatif
+|Quel ordre aura-t-il en relation avec les autres composants. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple,
+si vous avez deux composants, "Propositions" avec le poids "10" et "Réunions" avec le poids "0", puis "Réunions" sera d'abord lors de la commande.
+|===
+
+
+.Ajouter un composant - Formulaire de réunions: Paramètres globaux
+|===
+|Champ |Type |Description
+
+|Portées activées
+|Facultatif
+|Cochez cette case si vous voulez que le filtrage des portées soit effectué dans ce processus.
+
+|Secteur
+|Facultatif
+|Quelle portée sera utilisée pour ce composant.
+
+|Annonce
+|Facultatif
+|Une annonce générale qui sera visible dans la liste des assemblées générales.
+
+|Conditions d'inscription par défaut
+|Facultatif
+|Ce seront les conditions d'inscription que le participant devra accepter lors de son inscription.
+
+|Commentaires activés
+|Facultatif
+|Si vous voulez avoir des commentaires dans les rencontres.
+
+|Longueur maximale des commentaires
+|Facultatif
+|Quelle est la limite de caractères que les participants auront quand ils feront des commentaires. Laisser 0 pour la valeur par défaut.
+
+|Code d'enregistrement activé
+|Facultatif
+|Cochez cette case si vous voulez donner des codes d'inscription aux participants. En savoir plus sur xref:components/meetings/registrations.adoc[Registrations].
+
+|Les autorisations d'actions peuvent être définies pour chaque réunion
+|Facultatif
+|Si vous voulez des permissions plus granulaires à l'intérieur de chaque réunion.
+
+|Activer la création de pads
+|Facultatif
+|Si vous voulez un Etherpad intégré à vos réunions. Doit avoir l'intégration xref:services:etherpad.adoc[Etherpad] configurée.
+
+|Les participants peuvent créer des réunions
+|Facultatif
+|Permet aux participants de créer de nouvelles réunions. Voir xref:_Citizens_meetings[Réunions de citoyens]
+
+|Cartes activées
+|Facultatif
+|Si vous voulez afficher une carte dans les réunions dans les détails de la réunion.
+|===
+
+
+.Ajouter un composant - Formulaire de réunions: Paramètres de l'étape
+|===
+|Champ |Type |Description
+
+|Annonce
+|Facultatif
+|Une annonce générale qui sera visible dans la liste des assemblées générales.
+
+|Commentaires activés
+|Facultatif
+|Si vous voulez avoir des commentaires dans les rencontres.
+|===
+
+== Créer une nouvelle réunion
+
+=== Réunions de citoyens
+
+Les réunions peuvent être créées par les participants si le paramètre est "Les participants peuvent créer des réunions" est vérifié.
+
+If a participant belongs to a xref:admin:participants/groups.adoc[user group], then they will be able to create meetings as that group also.
+
+image:components/meetings/new_meeting_form_frontend01.png[Créer un nouveau formulaire de réunion (frontend)]
+image:components/meetings/new_meeting_form_frontend02.png[Créer un nouveau formulaire de réunion (frontend)]
+
+
+.Créer une réunion - Formulaire du frontend
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Quel est le titre de cette réunion.
+
+|Description
+|Obligatoire
+|Une description de ce qui sera discuté lors de cette réunion, comme les sujets.
+
+|Type
+|Obligatoire
+|Choisissez une option entre "En personne", "En ligne" ou "Booth"
+
+|Adresses
+|Requis si le type de réunion est "En personne" ou "Booth"
+|Adresse : utilisée par le géocodeur pour trouver l'emplacement
+
+|Localisation
+|Obligatoire
+|Emplacement: message adressé aux utilisateurs impliquant le point de rencontre à
+
+|Astuces de localisation
+|Facultatif
+|Indices de localisation : informations complémentaires. Exemple: le plancher du bâtiment
+
+|URL de la réunion en ligne
+|Facultatif
+|Quelle URL aura lieu la réunion.
+
+|Afficher l'iframe intégré pour cette URL
+|Facultatif
+|Si oui ou non l'iframe pour cette URL de vidéoconférence. Seules quelques services permettent l'intégration (c.-à-d. YouTube, Twitch...)
+
+|Heure de début
+|Obligatoire
+|Quel jour et quelle heure la réunion va commencer. Format attendu : jj/mm/aaaa hh:ii
+
+|Heure de fin
+|Obligatoire
+|Quel jour et quelle heure la réunion va commencer. Format attendu : jj/mm/aaaa hh:ii
+
+|Catégorie
+|Facultatif
+|Quelle catégorie a la réunion. Utilisé pour le filtrage dans la liste des réunions.
+
+|Type d'inscription
+|Obligatoire
+|Choisissez une option entre "Inscription désactivée", "Sur cette plateforme", ou "Sur une plateforme différente"
+
+|Emplacements disponibles pour cette réunion
+|Requis si "Type d'enregistrement" est "Sur cette plateforme"
+|Combien de places sont disponibles pour cette réunion ? Laisser à 0 si vous avez un nombre illimité d'emplacements disponibles
+
+|Conditions d'inscription
+|Requis si "Type d'enregistrement" est "Sur cette plateforme"
+|Quels sont les termes des services que les participants doivent accepter pour s'inscrire ou participer à la réunion. Spécifique aux "Réunions de citoyens"
+
+|URL d'enregistrement
+|Requis si "Type d'enregistrement" est "Sur une plateforme différente"
+|Doit être une URL. Lien vers le service externe que vous utilisez pour vous inscrire.
+
+|Créer une réunion en tant que
+|Requis si le participant appartient à un groupe
+|With which identity they want to create this meeting: as their user or as a group that they are reprensenting?
+|===
+
+Après avoir créé la réunion, les participants peuvent également éditer et xref:components/meetings/close.adoc[close] le.
+
+=== Réunions officielles
+
+image:components/meetings/new_meeting_form_backend.png[Créer un nouveau formulaire de réunion (backend)]
+
+
+.Créer une réunion - Formulaire d'administration
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Quel est le titre de cette réunion.
+
+|Description
+|Obligatoire
+|Une description de ce qui sera discuté lors de cette réunion, comme les sujets.
+
+|Type
+|Obligatoire
+|Choisissez une option entre "En personne", "En ligne" ou "Booth"
+
+|Adresses
+|Requis si le type de réunion est "En personne" ou "Booth"
+|Adresse : utilisée par le géocodeur pour trouver l'emplacement
+
+|Localisation
+|Obligatoire
+|Emplacement: message adressé aux utilisateurs impliquant le point de rencontre à
+
+|Astuces de localisation
+|Facultatif
+|Indices de localisation : informations complémentaires. Exemple: le plancher du bâtiment
+
+|URL de la réunion en ligne
+|Facultatif
+|Quelle URL aura lieu la réunion.
+
+|Afficher l'iframe intégré pour cette URL
+|Facultatif
+|Si oui ou non l'iframe pour cette URL de vidéoconférence. Seules quelques services permettent l'intégration (c.-à-d. YouTube, Twitch...)
+
+|Heure de début
+|Obligatoire
+|Quel jour et quelle heure la réunion va commencer. Format attendu : jj/mm/aaaa hh:ii
+
+|Heure de fin
+|Obligatoire
+|Quel jour et quelle heure la réunion va commencer. Format attendu : jj/mm/aaaa hh:ii
+
+|Catégorie
+|Facultatif
+|Quelle catégorie a la réunion. Utilisé pour le filtrage dans la liste des réunions.
+
+|Type d'inscription
+|Obligatoire
+|Choisissez une option entre "Inscription désactivée", "Sur cette plateforme", ou "Sur une plateforme différente"
+
+|Emplacements disponibles pour cette réunion
+|Requis si "Type d'enregistrement" est "Sur cette plateforme"
+|Combien de places sont disponibles pour cette réunion ? Laisser à 0 si vous avez un nombre illimité d'emplacements disponibles
+
+|URL d'enregistrement
+|Requis si "Type d'enregistrement" est "Sur une plateforme différente"
+|Doit être une URL. Lien vers le service externe que vous utilisez pour vous inscrire.
+
+|Réunion privée
+|Facultatif
+|Vérifier si la réunion ne devrait pas être visible pour tous les visiteurs. Spécifique aux "réunions officielles".
+
+|Transparence
+|Facultatif
+|Related to "Private meeting", check if the meeting should be visible for all the visitors but they shouldn't be able to
+participate in. Spécifique aux "réunions officielles". Spécifique aux "réunions officielles".
+
+|Personnaliser l'e-mail d'inscription
+|Facultatif
+|Si vous voulez ajouter un message dans l'e-mail d'inscription. Spécifique aux "réunions officielles".
+
+|Contenu personnalisé de l'e-mail d'inscription
+|Requis si "Personnaliser l'email d'inscription" est coché
+|Le contenu de l'e-mail personnalisé. Ce texte apparaîtra au milieu de l'e-mail de confirmation d'inscription. Just
+after the registration code. Spécifique aux "réunions officielles".
+|===
+
+Vous pouvez également définir des *Services* à l'intérieur d'une réunion. These are metadata that allows to comunicate, for instance, if there's
+a place for children, deaf assistance, translations, etc. Vous pouvez avoir plusieurs services à l'intérieur d'une réunion.
+
+
+.Créer une réunion - Services
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Titre du service.
+
+|Description
+|Facultatif
+|Description du service.
+|===
+
+== Actions
+
+=== Réunions de citoyens
+
+
+.Actions - Réunions de citoyens
+|===
+|Icône |Nom |Définition
+
+|image:action_preview.png[Icône de prévisualisation]
+|Aperçu
+|Pour voir comment il est montré dans le frontend aux participants.
+
+|image:action_permissions.png[Icône des permissions]
+|Autorisations
+|Pour gérer les permissions de cette réunion, selon la vérification d'un participant. Permet à un administrateur de configurer
+qui peut *rejoindre* une réunion.
+|===
+
+=== Réunions officielles
+
+
+.Actions - Réunions officielles
+|===
+|Icône |Nom |Définition
+
+|image:action_publish.png[Icône de publication]
+|Publier
+|Pour afficher publiquement la réunion.
+
+|image:action_publish.png[Dépublier l'icône]
+|Dépublier
+|Ne pas afficher publiquement la réunion.
+
+|image:action_preview.png[Icône de prévisualisation]
+|Aperçu
+|Pour voir comment il est montré dans le frontend aux participants.
+
+|image:action_duplicate.png[Icône dupliquée]
+|Duplicate
+|Permet à un administrateur de dupliquer une réunion.
+
+|image:action_registrations.png[Icône d'inscription]
+|xref:admin:components/meetings/registrations.adoc[Registrations]
+|Permet de définir qui peut s'inscrire pour assister à la réunion.
+
+|image:action_edit.png[Icône d'édition]
+|Editer
+|Modifier le formulaire pour une réunion. C'est la même forme que "Créer une nouvelle réunion".
+
+|image:action_agenda.png[Icône de l'Agenda]
+|xref:admin:components/meetings/agenda.adoc[Agenda]
+|Pour ajouter les sujets qui seront discutés lors de la réunion.
+
+|image:action_list.png[Icône du sondage]
+|xref:admin:components/meetings/polls.adoc[Polls]
+|Gérer les sondages pour cette réunion en ligne.
+
+|image:action_close.png[Icône fermée]
+|xref:admin:components/meetings/close.adoc[Close]
+|Permet et admin de fermer la réunion et d'ajouter des informations supplémentaires.
+
+|image:action_folder.png[Icône des dossiers]
+|Dossiers
+|Pour la classification des pièces jointes.
+
+|image:action_attachments.png[Icône des pièces jointes]
+|Fichiers joints
+|Documents liés à la réunion.
+
+|image:action_permissions.png[Icône des permissions]
+|Autorisations
+|Pour gérer les permissions de cette réunion, selon la vérification d'un participant. Permet à un administrateur de configurer
+qui peut *rejoindre* une réunion.
+
+|image:action_delete.png[Supprimer l'icône]
+|Supprimez
+|Supprimer cette réunion.
+|===
+
+== Fonctionnalités de réunions
+
+Il existe différents types de fonctionnalités qui peuvent être activées lors de réunions, telles que:
+
+* xref:admin:admin:components/meetings/registrations.adoc[Registrations]: pour gérer comment particpant peut s'inscrire pour assister à la réunion.
+* xref:admin:components/meetings/agenda.adoc[Agenda]: pour avoir vu les sujets qui seront discutés dans la réunion par minutes.
+* xref:admin:admin:components/meetings/polls.adoc[Polls]: pour un vote rapide pendant une réunion en ligne.
+* xref:admin:components/meetings/close.adoc[Close]: pour ajouter le rapport final sur ce qui a été discuté lors de la réunion.
+
+== Réunions en ligne
+
+Selon le moment et la configuration de la réunion, il peut y avoir différents messages qui seront affichés aux participants.
+
+. Si l'URL de la réunion en ligne est définie, il y aura un message qui dit "Lien disponible bientôt"
+image:components/meetings/online_meeting_available_soon.png[Réunion en ligne disponible bientôt]
+. Si l'URL de la réunion en ligne est définie, et quelques minutes avant le début de la réunion, le mailage dira "Le lien pour rejoindre
+la réunion sera disponible quelques minutes avant de commencer"
+image:components/meetings/online_meeting_available_avant. ng[Réunion en ligne disponible avant le début]
+. Si l'URL de la réunion en ligne est définie, et que l'heure de début de la réunion est arrivée, alors il y aura un message qui dit
+que « la réunion se déroule en ce moment », avec un lien pour rejoindre la réunion.
+image:components/meetings/online_meeting_happening.png[Réunion en ligne disponible avant le début]

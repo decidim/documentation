@@ -1,0 +1,42 @@
+= Empreintes des participants
+
+Pour les participants qui n'ont pas les connaissances ou qui n'ont pas d'e-mail pour enregistrer
+un compte, il y a la fonctionnalité d'usurpation d'identification.
+
+This allows an 'Administrator' or 'Participant manager' to search through a
+Verification system for an already existing participant and also to create a
+participant without email.
+
+NOTE: At the code and the User Interface we say both *Impersonation* and *Managed
+Participants*. C'est la même chose.
+
+== Panneau
+
+image::participants_impersonations.png[Admin's Impersonations panel]
+
+C'est le panel où vous pouvez trouver tous les participants :
+
+* en filtrant par les participants gérés ou non gérés
+* en recherchant par nom
+
+Après avoir cliqué sur `Gérer les nouveaux participants`, vous allez dans le formulaire pour entrer
+les données personnelles pour vérifier la vérification:
+
+image::participants_impersonations_form.png[Admin's Impersonations form]
+
+NOTE: Si vous ne voyez pas le bouton `Gérer les nouveaux participant`, est parce que cette fonctionnalité
+ne fonctionne que lorsque vous avez une Verification de type `direct` (également connue
+comme `autorisations de formulaire`). Voyez dans votre xref:admin:system.adoc[panneau système] que
+`Autorisations disponibles` sont activées. Vous pouvez en apprendre plus sur la façon de programmer
+votre autorisation de formulaire sur https://github.com/decidim/decidim/blob/develop/decidim-verifications/README.md[decidim-verification README].
+
+Une fois ces données confirmées, il y aura une session pour le participant pour
+30 minutes:
+
+image::participants_impersonations_user.png[Impersonated user session]
+
+Finally, it's also possible to Promote a participant, meaning that after a
+participant has been managed, an administrator can add the email and send them
+an Invitation:
+
+image::participants_impersonations_promotion.png[Admin's promotion Impersonations]

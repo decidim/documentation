@@ -1,0 +1,85 @@
+= Page
+
+La fonctionnalité Page permet aux participants d'avoir plus d'information sur un espace. C'est la même chose que les pages générales xref:admin:pages. doc[Pages] section admin, avec
+la différence principale est que ce composant permet de définir des pages dans un espace, et la section générale d'administration des pages permet
+de définir des pages pour toute la plateforme (par exemple, pages d'aide, termes de services ou FAQ), qui ne sont pas associés à un espace.
+
+À partir de ce point de départ, il pourrait y avoir d'autres configurations, telles que:
+
+Quelques exemples d'utilisation de ce composant :
+
+* https://www.decidim.barcelona/processes/PressupostosParticipatius/f/4691/[Plus d'informations sur le processus budgétaire participatif de Decidim Barcelona]
+
+image:components/page/example01.png[Plus d'informations dans 2020 processus de budgétisation participative dans Decidim Barcelone - Frontier]
+image:components/page/example02. ng[Plus d'informations dans le processus de budgétisation participative 2020 à Decidim Barcelone - Backend
+
+Pour configurer la fonctionnalité Page :
+
+. Se connecter en tant qu'administrateur
+. Aller au panneau d'administration
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+Par exemple, il peut s'agir de "Processus", d'"Assembles", ou de "Conférences"
+. Aller dans les fonctionnalités
+. Cliquez sur le bouton "Ajouter une fonctionnalité"
+. Cliquez sur "page"
+. Remplissez le formulaire xref:_add_component[Ajouter une fonctionnalité]
+
+== Ajouter une fonctionnalité
+
+image:components/page/component.png[Ajouter un formulaire de composant]
+
+
+.Ajouter un composant : Formulaire de page
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Quel est le titre de cette fonctionnalité. Par exemple, "Plus d'informations".
+
+|Rang d'affichage
+|Facultatif
+|Quel ordre aura-t-il en relation avec les autres pages. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux pages, "Page a" avec le poids "10" et "Page b" avec le poids "0", puis "Page b" sera d'abord lors de la commande.
+|===
+
+
+.Ajouter un composant : Formulaire de page - Paramètres globaux
+|===
+|Champ |Type |Description
+
+|Annonce
+|Facultatif
+|Une annonce générale qui sera visible sur la page de renvoi des pages générales.
+|===
+
+Dans les cas où l'espace que ce composant sera utilisé a xref:admin:spaces/processes/phases. doc[Phases], par exemple, dans
+xref:admin:spaces/processes.adoc[Processus participatif], vous pouvez également définir différents comportements par étape.
+
+
+.Ajouter un composant : Formulaire de pages - Paramètres de l'étape
+|===
+|Champ |Type |Description
+
+|Annonce
+|Facultatif
+|Une annonce générale qui sera visible sur la page d'accueil de la page générale.
+|===
+
+== Autorisations
+
+Comme ce composant ne permet pas de faire quoi que ce soit, il n'y a pas de permissions à configurer.
+
+=== Formulaire de nouvelle page
+
+image:components/page/new_page.png[Formulaire de nouvelle page]
+
+
+.Formulaire de nouvelle page
+|===
+|Champ |Type |Description
+
+|Corps
+|Obligatoire
+|Quel est le corps de la page.
+|===

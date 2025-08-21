@@ -1,0 +1,105 @@
+= Anmeldungen
+
+Durch die Registrierung können Sie die Teilnahme an einem Meeting kontrollieren. With this feature for instance you can
+limit how many people could attend to the meeting, or you can know before the start of a meeting if you need to find a bigger
+room to have the meeting.
+
+Durch das Aktivieren dieser Funktion wird ein Button hinzugefügt, so dass die Teilnehmer ihren Wunsch zum Meeting ausdrücken können. Abhängig davon, wie
+diese Funktion konfiguriert ist, dann:
+
+. es ist möglich festzulegen, wie viele Slots zur Steuerung der maximalen Kapazität für dieses Meeting verfügbar sind
+. ein xref:_registration_form[benutzerdefiniertes Registrierungsformular] für Anfragen an Teilnehmer kann konfiguriert werden
+. Administratoren können xref:_invitations[invitations] an andere Teilnehmer oder Personen richten, die nicht auf der Plattform registriert sind
+. ist es möglich, die Teilnahme an der Sitzung durch xref:_registration_code[Registrierungscodes] zu kontrollieren
+
+image:components/meetings/registrations/frontend_join_meeting.png[Join a meeting sidebar button]
+
+Sobald die Teilnehmer sich an einem Meeting bestätigen, werden sie gefragt, ob sie eine Gruppe reprensent und ob sie öffentlich zeigen wollen, dass sie an einer Sitzung teilnehmen.
+
+image:components/meetings/registrations/frontend_confirm.png[Join a meeting confirm modal]
+
+== Anmeldungen für ein Meeting aktivieren
+
+Um Anmeldungen für ein Meeting zu aktivieren:
+
+. Als Admin anmelden
+. Zum Admin-Panel wechseln
+. Wählen Sie in der Haupt-Seitenleiste den Bereich aus, unter dem Sie die Komponente konfigurieren möchten.
+Zum Beispiel "Prozesse", "Assemblies" oder "Konferenzen"
+. Klicken Sie auf "Meetings"
+. Besprechung durchsuchen, für die die Registrierungen aktiviert werden sollen
+. Klicken Sie auf "Bearbeiten" Schaltfläche image:action_edit.png[Bearbeiten-Button]
+. Ändern Sie das Feld "Registrierungstyp" auf "Auf dieser Plattform"
+. Legen Sie fest, wie viele Plätze in "Verfügbare Plätze für dieses Meeting" verfügbar sind
+. Klicken Sie auf den "Aktualisieren" Button
+. Klicken Sie auf den "Registrierung"-Button image:action_registrations.png[Registrierung-Button]
+. Aktivieren Sie die Checkbox "Registrierungen aktiviert"
+. Formular ausfüllen
+
+== Anmeldeformular
+
+image:components/meetings/registrations/backend.png[Registrierungseinstellungen in einem Meeting]
+
+
+.Anmeldeformular
+|===
+|Feld |Typ |Beschreibung
+
+|Registrierungen aktiviert
+|Benötigt
+|Aktivieren, um die Registrierung für dieses Meeting zu aktivieren.
+
+|Anmeldeformular aktiviert
+|Optional
+|Auswählen, wenn Sie das Anmeldeformular aktivieren möchten
+
+|Verfügbare Plätze für dieses Meeting
+|Benötigt
+|Wie viele Slots sind verfügbar. Lassen Sie es auf 0 wenn Sie unbegrenzte Slots zur Verfügung haben.
+
+|Reservierte Plätze
+|Benötigt
+|Wie viele Slots sind bereits reserviert. Lassen Sie es auf 0 wenn Sie keine reservierten Plätze haben
+
+|Registrierungsbedingungen
+|Benötigt
+|Welche Bedingungen für die Teilnahme an der Veranstaltung müssen die Teilnehmer akzeptieren, um sich zu registrieren oder an der Sitzung teilzunehmen.
+|===
+
+== Anmeldeformular
+
+Mit dieser Funktion können Sie ein individuelles Formular wie die xref:admin:components/surveys.adoc[Surveys] Komponente definieren, um Teilnehmer
+nach Registrierungsinformationen zu fragen.
+
+== Alle exportieren
+
+Es ist möglich, Registrierungen in mehreren Formaten zu exportieren: CSV, JSON und XLSX (Excel).
+
+Die exportierten Daten haben folgende Felder:
+
+* id: Die Registrierungsnummer
+* code: der xref:_registration_code[Registrierungscode] (wenn diese Funktion aktiviert ist)
+* user/name: der Name des Benutzers
+* user/email: die E-Mail des Benutzers
+* user/user_group: the group of the user if they have selected that's representing a group when registering
+
+== Einladungen
+
+Diese Funktion ermöglicht es Ihnen, Teilnehmer zu einem Meeting einzuladen. Diese konnten bereits registriert oder nicht existierende Teilnehmer
+in der Plattform sein.
+
+image:components/meetings/registrations/invite_attendee.png[Teilnehmer zur Anmeldung in einem Meeting einladen]
+
+== Registrierungscode
+
+Mit dieser Funktion können Sie überprüfen, ob der Teilnehmer im Meeting registriert ist. They need to provide their code, that gets
+entered in this form and it's checked against the database.
+
+image:components/meetings/registrations/backend_w_registration_code.png[Registrierungscode Formular in Meeting]
+
+image:components/meetings/registrations/frontend_confirmed_w_code.png[Registrierungscode in einem Meeting-Frontend]
+
+Es kann zwei Arten von Antworten erhalten:
+
+* Registrierungscode erfolgreich überprüft.
+* Dieser Registrierungscode ist ungültig.

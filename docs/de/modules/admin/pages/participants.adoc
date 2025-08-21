@@ -1,0 +1,29 @@
+= Teilnehmer
+
+Manchmal musst du als Administrator bestimmte Aufgaben mit Teilnehmern erledigen, unter anderem:
+
+* Um anderen Administratoren Berechtigungen zu erteilen, damit sie Inhalte der Plattform verwalten können
+* Zur Überprüfung von Benutzergruppen (Organisationen oder Kollektiven)
+* Zur Bestätigung der Teilnehmer
+* Um zu erkennen, dass ein Teilnehmer einen besonderen Status in der Plattform hat, mit Beamten
+* Um zu authentifizieren, dass eine Person das Wahlrecht hat, mit Genehmigungen
+* Um einen Teilnehmer zu kontaktieren
+
+Sie können auf diesen Bereich über die Hauptseitenleiste des Admin-Panels zugreifen.
+
+image:participants_menu.png[Teilnehmermenü]
+
+Sobald du hier bist, kannst du die verschiedenen Arten von Teilnehmern und Aktionen sehen, die du tun kannst:
+
+image:participants_sidebar_menu.png[Teilnehmer-Sidebar-Menü]
+
+* xref:admin:participants/admins.adoc[Admins]
+* xref:admin:participants/groups.adoc[Groups]
+* xref:admin:participants/participants.adoc[Participants]
+* xref:admin:participants/impersonations.adoc[Impersonations]
+** xref:admin:participants/verifications_conflicts.adoc[Überprüfungskonflikte]
+* xref:admin:participants/reported_users.adoc[Gemeldete Benutzer]
+* xref:admin:participants/authorizations.adoc[Authorizations]
+** xref:admin:participants/authorizations/identity_documents.adoc[Identifizierungsdokumente]
+** xref:admin:participants/authorizations/code_postal_letter.adoc[Postleitzahlen]
+** xref:admin:participants/authorizations/census.adoc[Organization's census]

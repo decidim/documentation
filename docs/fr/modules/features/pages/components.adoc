@@ -1,0 +1,183 @@
+= Fonctionnalités
+
+:page-partial:
+
+*Les composants* sont des mécanismes participatifs qui permettent des interactions entre les participants de la plate-forme au sein de chacun des espaces participatifs.
+
+== Propositions
+
+Les *propositions* sont les composants les plus importants de Decidim. Ils peuvent être définis comme l'unité de décision minimale.
+
+Les propositions peuvent être faites par l'un des *types de créateurs* suivants :
+
+* par l'organisation *officielle* gérant la plate-forme
+* par les *participants individuels* inscrits
+* par un *groupe* de participants inscrits
+* d'une *réunion* à la suite d'une discussion ou d'une délibération collective
+
+Une fois qu'une proposition a été publiée, elle peut être *modérée*, *modifiée* ou *retirée* par son auteur.
+
+Les propositions peuvent être *acceptées*, *rejetées* ou maintenues dans un état *d'évaluation*. Les propositions peuvent également être importées dans une nouvelle phase, de sorte qu'elles peuvent être réécrites ou élaborées en différentes étapes.
+
+Les autres fonctionnalités associées aux propositions incluent :
+
+* *Assistant de création de propositions* : Lors de la création d'une proposition, le participant est accompagné par le processus, qui est divisée en différentes étapes, avec aide contextuelle et aperçus avant la publication de la proposition.
+* *Modification et retrait des propositions* : l’auteur d’une proposition peut la modifier et/ou la retirer avant l’ouverture de la phase de support.
+* *Contrôle de version* : cela permet de conserver un enregistrement de toutes les modifications apportées à une proposition, ainsi que la génération de codes pour vérifier l’intégrité de la proposition.
+* *Détection des similitudes* : Ceci permet à toute personne faisant une nouvelle proposition de trouver des similitudes similaires faites précédemment sur la plate-forme, évitant ainsi les doublons.
+* *Connexions entre les propositions* : les propositions peuvent être connectées les unes aux autres à l'aide de liens dans la section des commentaires, afficher les propositions connexes sous forme de cartes et donner des notifications sur l'existence d'une nouvelle connexion.
+* *Soutien des propositions* : les participants et les collectifs peuvent approuver les propositions et cet appui public sera affiché dans la proposition. Les personnes qui suivent les approbateurs seront avisées que la proposition a été approuvée par le suivant.
+* *Amendements* : tout participant peut modifier le texte d’une proposition et une sous-proposition sera créée en Mode Amendement (sous forme de Pull Request dans Github). Cette sous-proposition peut recueillir des approbations et des soutiens. En outre, l’auteur de la proposition peut accepter ou rejeter l’amendement (ou la sous-proposition). Lorsqu'une sous-proposition est rejetée, son auteur peut la convertir en proposition officielle.
+* *Ébauche collaborative de propositions* : Decidim permet la collaboration et la cocréation sur les propositions. Il intègre les fonctionnalités suivantes :
+** Création de brouillons bruts avec de nombreux auteurs.
+** Liste des brouillons collaboratifs
+** Commentaires dans les brouillons
+** Demander de l'aide et accepter l'aide d'autres collaborateurs
+
+== Soutiens
+
+include::admin:partial$development.adoc[]
+
+Les participants peuvent approuver les propositions. Ces approbations peuvent être interprétées comme des votes, des signatures ou tout autre format qui démontre un accord positif conformément à la volonté politique elle-même.
+Les participants peuvent émettre un seul appui pour chaque proposition qu’ils souhaitent. Le nombre d'approbations peut être limité pour chaque participant.
+Il n'y a pas de limite au nombre de propositions qui peuvent être approuvées.
+
+Si l'approbation est un vote, il est possible de configurer à partir du panneau d'administration les *paramètres d'affichage des résultats du vote*, soit pendant ou seulement après la période de vote.
+
+Il existe une *forme spéciale utilisée pour voter pour les budgets participatifs* qui permet aux participants de voter en « dépensant » un montant équivalent au budget en question parmi les projets proposés. Le nombre de votes est limité ici par le montant des dépenses cumulées des projets sélectionnés.
+
+== Résultats
+
+Le composant *résultats* est utilisé pour transformer les propositions en résultats et leur donner des réponses officielles.
+Il est possible de fusionner différentes propositions en un seul résultat ou de créer des résultats différents liés à la même proposition originale.
+
+Les résultats recueillent des renseignements sur les propositions originales, comme les réunions où elles ont été créées, discutées et débattues et les approbations reçues.
+
+== Débats
+
+Des discussions et des débats peuvent être ouverts sur des questions et des questions spécifiques établies par les administrateurs ou les participants.
+
+== Enquêtes
+
+Le composant *sondages* peut être utilisé pour concevoir et publier des sondages et pour afficher et télécharger leurs résultats.
+
+* *Outil de configuration du sondage* : permet aux administrateurs de créer des questions et des réponses (ouverts, types de test, sélection multiple, etc.) et lancer l'enquête, ainsi que télécharger les réponses au format CSV.
+* *Interface de sondage pour les participants* : permet aux participants de répondre aux questions du sondage.
+
+== Sortitions
+
+Le composant *sortition* permet de sélectionner un certain nombre de propositions (par ex. les candidats pour un jury) avec des procédures aléatoires, mais reproductibles, qui garantissent des distributions non partiales et uniformes.
+
+== Pages informatives
+
+Le composant *pages* est utilisé pour créer des pages informatives avec mise en forme de texte riche, images et vidéos intégrées.
+
+== Blogs
+
+Le composant *blog* permet la création de messages ou de nouvelles associés à un espace participatif et leur navigation chronologique.
+
+Les *commentaires associés* avec les entrées de blog seront traités comme les autres commentaires de la plateforme, comme décrit ci-dessous.
+
+== Newsletter
+
+Le composant *newsletter* permet d'envoyer des e-mails à tous ceux qui sont inscrits sur la plateforme ou, plus sélectivement, à ceux qui participent à un espace spécifique qui ont accepté, dans les conditions d'utilisation, de recevoir ce bulletin d'information par courriel. Les e-mails personnalisés sont envoyés directement au nom de l'utilisateur dans la langue choisie par l'utilisateur par défaut.
+
+Les participants seront automatiquement et directement en mesure de *se désabonner* par courriel lui-même en cliquant sur un lien dans celui-ci et il sera également possible de *suivre le nombre de visites* générées par la newsletter.
+
+== Réunions
+
+Le volet *réunion* offre aux organisations et aux participants la possibilité de :
+
+* convoquer des réunions, en définissant sa structure et son contenu
+* *catégoriser* la réunion dans un espace.
+* créer des *propositions associées à des réunions*
+* *publier* minutes
+* télécharger des *photos* de la réunion
+
+Les réunions relatives à un espace participatif (un processus spécifique ou une assemblée) peuvent être affichées sur une *carte* et être *ordonnées par date ou catégorie*. En outre, toutes les réunions peuvent être affichées en *mode calendrier*, avec la possibilité de les exporter vers un calendrier mobile ou d'autres applications.
+
+Certaines des fonctionnalités avancées du composant de réunion incluent :
+
+* *Système d'inscription et de présence*:
+** Cela permet de gérer le *type d'inscription* (ouvert et automatique, fermé et accessible uniquement à certains types de participants, etc.). , pour établir le **nombre de places **disponibles pour les participants, pour réserver une place, pour faire des *inscriptions manuelles*, envoyés *Invitations*, pour définir les *conditions* qui doivent être acceptées afin de pouvoir assister à la réunion (e. , et *enregistrer la présence* des participants.
+** Il permet aux participants de *s'inscrire* à une réunion, de demander *un service de conciliation familiale* (salle de jeux, ) et d'obtenir un *code d'accréditation* pour avoir participé à une réunion.
+** Les personnes inscrites qui ont assisté à une réunion auront un *accès spécial* leur permettant d'évaluer la réunion ou de faire des commentaires, etc.
+** Les participants ou administrateurs pourront recevoir des *notifications* lors des ouvertures de la période d'inscription, le nombre de places restantes pour les inscriptions, les rappels de réunions et la publication des procès-verbaux.
+* *Gestion des agendas* : permet de définir la durée des réunions, de créer des éléments et des sous-éléments de l'ordre du jour, du titre, du contenu et de la durée estimée. Les participants peuvent proposer des points de l'ordre du jour.
+* Système de *rédaction, publication et validation des minutes de réunion* [NOTE IMPORTANTE:Ceci est actuellement implémenté différemment]:
+** Les minutes peuvent être téléchargées en vidéo, en audio ou en format texte.
+** Les procès-verbaux en mode texte sont associés à un *tableau de rédaction collaboratif* intégré dans Decidim.
+** Les procès-verbaux passent par 4 *étapes de préparation*: 1. Écriture collaborative pendant la réunion; 2. Préparation du brouillon officiel des procès-verbaux; 3. Étape de la modification du projet ; 4. Publication et validation finale des minutes.
+** Les procès-verbaux peuvent être *commentés* en utilisant le composant des commentaires.
+** *Des documents accompagnants* peuvent également être ajoutés au procès-verbal.
+* *Convocation automatique* : les participants vérifiés seront en mesure de convoquer des réunions directement via la plateforme , avec le support d'un certain nombre d'autres participants, la réunion sera activée publiquement et les participants à la réunion auront accès au panel d'administration [IMPORTANT: pas encore implémenté]
+* *Affichage et exportation des réunions* : les réunions peuvent être affichées en mode carte (pour les espaces ou généralement sur la plateforme) ou en mode calendrier, et peut être exporté vers l'agenda et les gestionnaires de calendrier (au format iCalendar).
+
+== Moteur de recherche
+
+*Le moteur de recherche* permet aux participants d'effectuer des recherches sur tout le contenu indexable de la plate-forme, de façon générale et spécifique, par la recherche dans un processus participatif spécifique ou à l'intérieur de ses composantes (propositions, résultats, etc.). , par le biais de recherches avancées.
+
+== Composants secondaires
+
+Il y a d'autres composants qui n'existent qu'en plus des composants de base. Ces composants sont :
+
+=== Commentaires
+
+Le volet *commentaires* permet aux participants de participer à un processus délibératif sur une question ou une proposition.
+Les participants peuvent y répondre, les approuver et recevoir des notifications concernant les réponses.
+Les commentaires peuvent être *classés* par ordre chronologique ou par nombre de votes en faveur.
+
+=== Textes participatifs
+
+Les textes participatifs sont définis comme un ensemble ordonné de propositions qui composent un document avec un texte complet. La participation au texte découle de l'interaction avec les propositions qui le constituent. Ce composant permet essentiellement trois opérations :
+
+* *Décomposer un document texte en propositions ordonnées* à partir d'un document en format ODT, XDOC, MarkDown et HTML. Si le texte est structuré en sections et sous-sections, les propositions ordonnées seront créées à partir de la sous-section de niveau inférieur ; si le texte n'est pas structuré, une proposition sera créée pour chaque paragraphe du texte. L'interface permet de rééditer les propositions, de fusionner, de séparer les titres, etc.
+* *Composition des propositions dans un texte unifié*: sur la base d'une série de propositions, elles peuvent être ordonnées et générer un texte unifié et téléchargeable.
+* *Visualisation et interaction* avec des documents composés de propositions : un ensemble de propositions sera présenté comme un texte unifié et peut être modifié ou des commentaires peuvent être ajoutés dans la marge.
+
+=== Suivi des réalisations
+
+Le composant *responsabilité* fonctionne comme un système de gestion de projet intégré à la plate-forme. . Il offre la possibilité de :
+
+* subdiviser les réalisations en projets ou sous-projets
+* définir et appliquer les mesures des progrès dans la mise en œuvre (de 0 % à 100 % mis en œuvre) des réalisations
+* afficher l'avancement de l'implémentation des réalisations regroupées par catégories et secteurs
+
+Les réalisations, les projets et les statuts peuvent être mis à jour via un CSV, ou manuellement via l'interface d'administration.
+
+=== Conférences
+
+Le composant *conférence* permet à une organisation de rejoindre une série de réunions prédéfinies (chats, ateliers etc.) lié à un espace participatif.
+
+Les paramètres de configuration incluent :
+
+* Générateur de pages de conférence, qui permet la création d'un *site interne* avec des informations sur l'événement.
+* L'option de générer un *programme interactif et téléchargeable* sur l'événement (où il y a des conférenciers invités, Elle comprendra leur nom, leur position, leur organisation, une petite biographie et des liens vers d'autres sites Web).
+* Envoyer des *invitations*.
+* Système d'enregistrement
+* *Certificats et certificats automatiques de création de présence* pour ceux qui le demandent par l'intermédiaire d'un panneau de support que l'administrateur peut vérifier.
+* Liens vers les plates-formes de *vidéo et documents* de l'événement dans le programme et les documents.
+* Liens automatiques vers des sites de médias numériques couvrant l’événement.
+* La possibilité de suivre des événements via les *réseaux sociaux* (par exemple en incorporant un flux Twitter).
+
+== Espaces et composants participatifs
+
+*Espaces participatifs* et *Composants* peuvent être combinés de différentes manières.
+Par exemple, les différentes phases d'un processus de budgétisation participatif (espace participatif) peuvent combiner des *composants* comme ceci :
+
+1. À un stade précoce, des *réunions* publiques peuvent être ouvertes pour permettre aux citoyens d'analyser différents besoins classés par districts.
+1. En retour, ces *réunions* peuvent conduire à la conception d'un *sondage*.
+1. Les résultats de l'*Enquête* peuvent ensuite être utilisés pour définir un ensemble de catégories pour les projets à proposer.
+1. Le composant *Proposition* peut alors être activé pour que les Participants puissent créer et publier leurs projets en tant que solutions aux besoins identifiés.
+1. Ces *propositions* peuvent ensuite être commentées et, après deux semaines de délibération, *vote* peut être activé pour sélectionner parmi les projets avec un système de dépenses budgétaires.
+1. Les participants peuvent ensuite être appelés à une *Réunion* publique pour évaluer les résultats.
+1. Un *Enquête* d'évaluation peut être lancé par la suite pour ceux qui n'ont pas pu assister à la *Réunion*.
+1. Enfin, le composant *Responsabilité* peut être activé pour contrôler le degré d'exécution des projets sélectionnés, et les gens peuvent y commenter.
+
+== Affichage des composants : Cartes
+
+Les éléments du composant ont leur page individuelle, mais sont également affichés sous la forme de *cartes* sur toute la plateforme.
+
+[#card-anatomy-fig]
+.Anatomie de la carte de proposition de _Decidim._
+image::card-anatomy.png[]

@@ -1,0 +1,116 @@
+= Benutzergruppen
+
+Eine Benutzergruppe ist eine Teilnehmergruppe. Abhängig von der Installation und dem Kontext der Organisation könnte sie deaktiviert werden. Dies ist im Administrations-Dashboard unter Einstellungen -> Konfiguration -> Organisation bearbeiten -> Gruppen aktivieren aktiviert oder deaktiviert.
+
+== Erstellen
+
+Diese Aktion wird von **einem Teilnehmer** ausgeführt. They need to go to their profile and in the sidebar there's a button that says "Create group":
+
+image:user_sidebar.png[User sidebar]
+
+Wenn angeklickt wird es das "Neue Gruppen-Formular" öffnen:
+
+image:user_group_new_form.png[Neues Benutzergruppen-Formular]
+
+
+.Neues Gruppenformular
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Name Ihrer Organisation, Vereinigung, Kollektiv, Gruppe, etc.
+
+|Spitzname
+|Benötigt
+|Nickname Ihrer Organisation, Vereinigung, Kollektiv, Gruppe, etc. Verwenden Sie keine Leerzeichen oder Akzenten. Maximal 20 Zeichen.
+
+|E-Mail
+|Benötigt
+|E-Mail Ihrer Organisation, Vereinigung, Kollektiv, Gruppe, etc.
+
+|Avatar
+|Optional
+|Bildführung: Vorzugsweise ein Querformat ohne Text. Der Dienst erzeugt das Bild. Maximale Dateigröße: 5MB. Erlaubte Dateiendungen: jpg jpeg gif png bmp ico
+
+|Über
+|Optional
+|Beschreibung dessen, was diese Gruppe ist.
+
+|Dokumentennummer
+|Optional
+|Verwendet für Überprüfungen. Verwenden Sie keine Bindestriche oder Leerzeichen.
+
+|Telefon
+|Optional
+|Verwendet für Überprüfungen. Verwenden Sie keine Bindestriche oder Leerzeichen.
+|===
+
+== Mitgliedschaft
+
+Nach der Bildung einer Gruppe ist es möglich, Teilnehmer einzuladen, Mitglieder der Gruppe zu werden. Nachdem ein Teilnehmer akzeptiert hat, dieser Gruppe beizutreten, kann er Admin-Mitglied werden.
+
+Die Aktionen, die von einem Teilnehmer in der Benutzergruppe ausgeführt werden können:
+
+* Gruppenprofil bearbeiten
+* Mitglieder verwalten
+* Administratoren verwalten
+* Invite participant
+* Gruppe verlassen
+
+image:user_group_invite_participant.png[Benutzergruppen: Teilnehmer einladen]
+
+== Gruppenüberprüfungen
+
+image:admin_user_group_verification.png[Admin-Panel: Benutzergruppen-Verifikation]
+
+Diese Aktion wird von **einem Administrator** ausgeführt. Eine Gruppe kann sein:
+* Ausstehend
+* Verifiziert
+* abgelehnt
+
+Dies kann mit den Tasten in der Seitenleiste gemacht werden:
+
+image:admin_user_group_verification_actions.png[Admin Panel: Benutzergruppen-Überprüfung]
+
+Wenn eine Benutzergruppe aussteht, kann sie überprüft oder abgelehnt werden. Sobald sie überprüft wurde, kann sie abgelehnt werden und nach ihrer Ablehnung kann sie überprüft werden.
+
+Wenn Sie mehrere Benutzergruppen gleichzeitig verifizieren möchten, können Sie dies mit der Option "Verify via CSV" tun:
+
+image:admin_user_group_verification_csv.png[Admin Panel: Benutzergruppen-Überprüfungen CSV]
+
+....
+Laden Sie Ihre CSV-Datei hoch. Es muss die offiziellen E-Mails der Gruppen in Ihrer Organisation in der ersten Spalte der Datei haben, ohne Kopfzeilen. Nur Gruppen, die ihre E-Mail bestätigt haben und eine E-Mail in der CSV-Datei haben, werden überprüft.
+....
+
+Nachdem eine Gruppe überprüft wurde, ist dies in ihrem Nicknamen in der Plattform öffentlich sichtbar und es gibt eine Nachricht in ihrem Profil: "Diese Gruppe ist öffentlich überprüft, Der Name wurde verifiziert, damit er seinem wirklichen Namen entspricht".
+
+image:user_group_verified.png[Benutzergruppe: verifiziertes Icon]
+
+== Aktionen
+
+Als überprüfte Benutzergruppe gibt es einige Optionen, die dein Teilnehmerkonto im Namen der Gruppe ausführen kann, wie:
+
+=== Erstelle eine Debatte, einen Vorschlag oder ein Meeting
+
+Es gibt eine Dropdown-Liste in der Form während des Erstellungsprozesses:
+
+image:user_group_create_debate.png[Benutzergruppe: Erstelle eine Debatte]
+
+=== Kommentar abgeben
+
+Es gibt eine Dropdown-Liste in der Form, wenn Sie einen Kommentar abgeben:
+
+image:user_group_make_comment.png[Benutzergruppe: kommentieren]
+
+=== Befürwortung
+
+Beim Erstellen eines Endorse gibt es ein modales Fenster, in dem gefragt wird, mit wem du die Unterstützung machen möchtest:
+
+image:user_group_endorse.png[Benutzergruppe: endorse]
+
+=== Unterhaltungen
+
+Sie können auch Gespräche als Gruppe führen. Dies ist auf der Gruppenprofilseite:
+
+image:user_group_conversation.png[Benutzergruppe: Unterhaltung]

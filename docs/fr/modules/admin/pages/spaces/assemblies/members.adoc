@@ -1,0 +1,72 @@
+= Membres de l'assemblée
+
+Les membres de l'assemblée permettent de montrer toutes les personnes ou les groupes qui appartiennent à une assemblée donnée. C'est utile pour être transparent.
+
+Vous pouvez voir un exemple dans https://meta.decidim.org/assemblies/coordination-commissione/members[Decidim Coordination Commitee Assembly in Metadecidim].
+
+image:assembly_members.png[Membres de l'Assemblée du Comité de Coordination]
+
+== Nouveau formulaire de membre de l'assemblée
+
+image:assembly_members_list.png[Liste d'administration des membres de l'assemblée]
+
+Pour créer une nouvelle phase d'un processus participatif :
+
+. Se connecter en tant qu'administrateur
+. Aller à la section des assemblages dans la barre latérale
+. Cliquez sur l'action d'édition de l'assemblage
+. Cliquez sur le lien Membres dans la barre latérale
+. Cliquez sur le bouton "Nouveau membre"
+. Remplissez le formulaire
+
+image:assembly_members_new_form.png[Nouveau formulaire des membres de l'assemblée]
+
+
+.Nouveau formulaire de membre de l'assemblée
+|===
+|Champ |Type |Description
+
+|Type de participant
+|Obligatoire
+|Si ce membre de cette assemblée est un participant non participant ou existant. Ont-ils déjà un compte créé sur la plateforme?
+
+|Nom complet
+|Requis si c'est un non-participant.
+|
+
+|Utilisateur ou groupe
+|Requis si c'est un participant existant.
+|Tapez au moins trois caractères à rechercher.
+
+|Position
+|Obligatoire
+|Choisissez l'un des présidents, vice-président, secrétaire ou autre. Dans le cas contraire, vous pouvez remplir le titre du poste.
+
+|Poids
+|Facultatif
+|Quel ordre aura-t-il en relation avec les autres membres. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux membres, "Member a" avec le poids "10" et "Member b" avec le poids "0", puis "Member b" sera d'abord lors de la commande.
+
+|Date de désignation
+|Obligatoire
+|Quand cette personne ou ce groupe a-t-il été assigné en tant que membre de cette assemblée. Format attendu : jj/mm/aaaa
+
+|Mode de désignation
+|Facultatif
+|Comment cette personne a-t-elle été conçue.
+
+|Date de fin
+|Facultatif
+|Quand cette personne ou ce groupe a-t-il cessé d'être membre de cette assemblée. Format attendu : jj/mm/aaaa
+
+|Sexe
+|Facultatif
+|À quel genre cette personne s'identifie le plus.
+
+|Date d'anniversaire
+|Facultatif
+|Quand cette personne est-elle née. Format attendu : jj/mm/aaaa
+
+|Lieu de naissance
+|Facultatif
+|Où cette personne est-elle née.
+|===

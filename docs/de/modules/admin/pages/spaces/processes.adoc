@@ -1,0 +1,242 @@
+= Prozesse
+
+Ein partizipatorischer Prozess ist eine Folge partizipatorischer Aktivitäten (z. Zuerst eine Umfrage ausfüllen und dann Vorschläge machen,
+diese in persönlichen oder virtuellen Meetings diskutieren und schließlich Prioritäten setzen) mit dem Ziel, ein bestimmtes Thema zu definieren und zu entscheiden.
+
+Beispiele für partizipatorische Prozesse sind: ein Prozess der Wahl der Mitglieder des Ausschusses (bei dem die Kandidaten zuerst vorgestellt werden,
+dann debattiert und schließlich wird eine Kandidatur gewählt), partizipative Budgets (wo Vorschläge gemacht werden Wirtschaftlich bewertet,
+und mit dem zur Verfügung stehenden Geld abstimmt), einem strategischen Planungsprozess, die kollaborative Ausarbeitung einer Verordnung oder Norm,
+die Gestaltung eines städtischen Raums oder die Erstellung eines öffentlichen Politikplans.
+
+Ein wirklich wichtiges Konzept für die gute Nutzung von Decidim ist es, die Beziehung zwischen Phasen und Komponenten
+in einem partizipatorischen Prozess in Decidim zu verstehen:
+
+image::process_steps_components.png[Relation between Steps and Components in a Process in Decidim]
+
+Dieses Diagramm zeigt an, dass Sie für einen partizipativen Prozess 7 Phasen haben können:
+
+. Configuration & Presentation
+. Diagnostik
+. Vorschlagserstellung
+. Vorschlagsauswahl
+. Ergebnisse
+. Auswertung
+. Überwachung
+
+Innerhalb jeder dieser Phasen gibt es einige Komponenten (wie Blog, Treffen, Umfragen, Debatten, Vorschläge, Ergebnisse).
+Einige dieser Komponenten erlauben einige Features, abhängig von der Phase, die wir gerade sind.
+
+In diesem Abschnitt erklären wir, wie wir einen partizipatorischen Prozess in Decidim konfigurieren können.
+
+== Liste
+
+Um partizipative Prozesse auf der Decidim-Plattform zu konfigurieren, klicken Sie auf btn:[Processes] in der Admin-Sidebar Menü. Eine Liste
+wird mit den bestehenden Prozessen angezeigt, wenn es welche gibt:
+
+image::processes_list.png[Participatory processes list]
+
+Sie können nach den folgenden filtern:
+
+* Veröffentlicht / Unveröffentlicht
+* Öffentlich/Privat
+
+image::processes_list_filter.png[Participatory processes list filtered]
+
+Sie können auch nach Titel suchen und steuern, wie viele Elemente in der Liste sind.
+
+Sie haben 4 mögliche Aktionen in dieser Liste, nachdem ein Teilnahmeprozess erstellt wurde:
+
+1. Export: Senden Sie per E-Mail die Konfiguration für einen bestimmten Prozess. Kann in anderen Decidim-Installationen importiert werden.
+1. Duplizieren: um diesen Prozess zu duplizieren.
+1. Konfigurieren: um die Metadaten und die Konfiguration für einen Prozess zu bearbeiten.
+1. Vorschau: wie es aussehen wird, sobald veröffentlicht.
+
+== Neues Prozessformular
+
+image::processes_new_form.png[New participatory process form]
+
+
+.Neues Teilnahme-Prozess-Formular: Allgemeine Informationen
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Titel des partizipativen Prozesses. Zum Beispiel "Partizipative Budgeting 2020".
+
+|Untertitel
+|Benötigt
+|Untertitel. Zum Beispiel "Lassen Sie uns unsere Prioritäten gemeinsam festlegen"
+
+|URL Slug
+|Benötigt
+|URL-Slugs werden verwendet, um die URLs zu generieren, die auf diesen Prozess verweisen. Akzeptiert nur Buchstaben, Zahlen und Bindestriche und muss
+mit einem Buchstaben beginnen. Beispiel: Wenn Ihre Domain 'example.org' und Ihr Slug 'participatory-budget-2020' ist, dann wird Ihre URL
+https://example.org/processes/participatory-budget-2020 sein
+
+|Hashtag
+|Optional
+|Hashtag für Twitter
+
+|Kurze Beschreibung
+|Benötigt
+|Eine kurze Erläuterung dessen, worüber Ihr partizipatorischer Prozess steht.
+
+|Beschreibung
+|Benötigt
+|Eine lange Erklärung, worum es bei Ihrem partizipativen Prozess geht.
+
+|Mitteilung
+|Optional
+|Der hier eingegebene Text wird dem Benutzer direkt unterhalb der Prozessinformationen angezeigt.
+|===
+
+
+.Neues Teilnahme-Prozess-Formular: Dauer
+|===
+|Feld |Typ |Beschreibung
+
+|Startdatum
+|Optional
+|Wenn dieser Prozess beginnt. Sie haben ein Kalender-Widget zum Auswählen des Tages. Erwartetes Format: dd/mm/yyy
+
+|Enddatum
+|Optional
+|Wenn dieser Prozess beginnt. Sie haben ein Kalender-Widget zum Auswählen des Tages. Erwartetes Format: dd/mm/yyy
+|===
+
+
+.Neues Teilnahme-Prozess-Formular: Bilder
+|===
+|Feld |Typ |Beschreibung
+
+|Home-Bild
+|Optional
+|Bild, das in Präsentationskarten dieses Prozesses verwendet wird. Anleitung für Datei: Muss ein Bild oder ein Dokument sein.
+Für Bilder verwenden Sie vorzugsweise Landschaftsbilder, der Dienst bewirtschaftet das Bild. Maximale Dateigröße: 10MB
+
+|Bannerbild
+|Optional
+|Bild, das innerhalb des Prozesses verwendet wird. Anleitung für Datei: Muss ein Bild oder ein Dokument sein.
+Für Bilder verwenden Sie vorzugsweise Landschaftsbilder, der Dienst bewirtschaftet das Bild. Maximale Dateigröße: 10MB
+|===
+
+
+.Neues partizipatorisches Prozessformular: Metadaten
+|===
+|Feld |Typ |Beschreibung
+
+|Promoter-Gruppe
+|Optional
+|Informationen, die in der Prozess-Metadaten-Sidebar angezeigt werden.
+
+|Organisationsbereich
+|Optional
+|Informationen, die in der Prozess-Metadaten-Sidebar angezeigt werden.
+
+|Bereichsmetadaten
+|Optional
+|Informationen, die in der Prozess-Metadaten-Sidebar angezeigt werden.
+
+|Wer beteiligt sich
+|Optional
+|Informationen, die in der Prozess-Metadaten-Sidebar angezeigt werden.
+
+|Was beschlossen wird
+|Optional
+|Informationen, die in der Prozess-Metadaten-Sidebar angezeigt werden.
+
+|Wie wird es beschlossen
+|Optional
+|Informationen, die in der Prozess-Metadaten-Sidebar angezeigt werden.
+|===
+
+image::process_frontend_metadata.png[Process frontend metadata]
+
+image::process_backend_metadata.png[Process backend metadata]
+
+
+.Neues Teilnahme-Prozess-Formular: Filter
+|===
+|Feld |Typ |Beschreibung
+
+|Bereiche aktiviert
+|Optional
+|Aktivieren, wenn Sie die Bereichsfilterung in diesem Prozess verwenden möchten.
+
+|Bereich
+|Optional
+|Zu welchem xref:admin:scopes.adoc[Scope] dieser Prozess gehört.
+
+|Reichweite Filtertiefe
+|Optional
+|Beschränken Sie die Umfangsfiltertiefe; Der Filter wird von allgemeiner bis zum ausgewählten Umfangstyp angezeigt. Dies ist nur dann relevant, wenn
+komplexe Beziehungen zu Kindern haben (wie eine Russische Doll). Zum Beispiel, wenn du eine Großmutter -> Mutter ->
+Kind hast Mit dieser Einstellung können Sie die Mutter wählen, so dass die Teilnehmer nur das Kind auswählen können. Dies wäre zum Beispiel der Fall
+, wenn Sie Provinzen -> Städte -> Bezirke haben und der Prozess dabei um eine bestimmte Stadt geht.
+
+|Fläche
+|Optional
+|Zu welchem xref:admin:areas.adoc[Area] dieser Prozess gehört.
+|===
+
+
+.Neues partizipatorisches Prozessformular: Sichtbarkeit
+|===
+|Feld |Typ |Beschreibung
+
+|Prozessgruppe
+|Optional
+|Ermöglicht Gruppen von mehreren partizipativen Prozessen zu bilden. Ideal für Prozesse, die zwischen ihnen verwandt sind, für
+mehrere Quadrate in einer Stadt oder mehrere Dokumente, die dieselben partizipatorischen Regeln anwenden.
+
+|Privater Raum
+|Optional
+|Überprüfen Sie, ob dieser Prozess nur für xref:admin:spaces/processes/private_participants.adoc[Private Teilnehmer] zugänglich sein soll
+
+|Beworben
+|Optional
+|Überprüfen Sie, ob der Prozess in der öffentlichen Prozessliste mehr Sichtbarkeit haben soll. Es wird auch in der
+Participatory Process Content Block in der xref:admin:homepage.adoc[Homepage] Konfiguration sichtbar. Dies ist in der
+btn:[Edit] Aktion in einem Prozess verfügbar.
+|===
+
+
+.Neues Teilnahme-Prozess-Formular: Filter
+|===
+|Feld |Typ |Beschreibung
+
+|Verwandte Prozesse
+|Optional
+|Wählen Sie andere Beteiligungsprozesse, die mit diesem verwandt sind.
+|===
+
+
+.Neues Teilnahme-Prozess-Formular: Filter
+|===
+|Feld |Typ |Beschreibung
+
+|Statistiken anzeigen
+|Optional
+|Aktivieren, wenn Sie den Abschnitt Statistik anzeigen möchten.
+
+|Metriken anzeigen
+|Optional
+|Markieren, wenn Sie den Metrik-Bereich anzeigen möchten.
+|===
+
+Nachdem Sie Ihren Prozess anfangs erstellt haben, haben Sie ein Untermenü, in dem Sie weitere Informationen
+über Ihren partizipativen Prozess konfigurieren müssen.
+
+image::process_submenu.png[Process submenu in admin]
+
+Hier können Sie Ihren Prozess weiter konfigurieren:
+
+. Info: das gleiche Formular, das wir auf dieser Seite erklärt haben.
+. xref:admin:spaces/processes/phases.adoc[Phases]
+. xref:admin:spaces/processes/components.adoc[Components]
+. xref:admin:spaces/processes/categories.adoc[Categories]
+. xref:admin:spaces/processes/attachments.adoc[Attachments]
+. xref:admin:spaces/processes/admins.adoc[admins]
+. xref:admin:spaces/processes/private_participants.adoc[Private Teilnehmer]
+. xref:admin:spaces/processes/moderations.adoc[Moderations]

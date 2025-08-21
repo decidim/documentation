@@ -1,0 +1,90 @@
+= À propos de
+
+:experimental:
+:icons: font
+:page-partial:
+:source-highlighter: highlightjs
+
+Decidim est un projet technopolitique. Une plate-forme numérique de participation citoyenne pour une ville démocratique, faite ouvertement et en collaboration avec le logiciel libre. Il s'agit d'une infrastructure publique. Public parce qu'il bénéficie d'un élan institutionnel clair et de virgules parce que le code est ouvert et libre, en d'autres termes, n'importe qui peut le voir, l'utiliser, le copier ou le modifier. Il s'agit d'une plate-forme conçue pour coordonner les processus et les espaces de participation des citoyens, visant à étendre et faciliter l'accès à la participation des citoyens, ouvrir de nouveaux espaces de réflexion et de collaboration dans la coconception et la coproduction de politiques publiques et de nouveaux espaces de participation directe et de démocratie, permettant ainsi la désintermédiation et la coopération entre les citoyens, les institutions et les organisations de la société civile.
+
+[#decidim.barcelona-fig]
+._decidim.barcelona_.
+image::decidim_barcelona_homepage.png[decidim.barcelona homepage]
+
+== Principes directeurs
+
+La plate-forme Decidim a été conçue et développée sur la base d'une série de principes qui favorisent l'exploration et l'innovation démocratique à l'ère numérique ainsi que les possibilités d'amélioration, ouvrir et développer des politiques de participation des citoyens et des formes démocratiques de gouvernement à divers niveaux, avec une attention particulière à l'échelle municipale. Ces principes sont énumérés ci-dessous:
+
+=== hybridation technopolitique
+
+Ceci est essentiel pour prévenir ce que nous pourrions définir comme un « réductionnisme numérique » (Calleja-Loëpez, 2017), une variante du technocentrisme qui met l'accent principalement ou exclusivement sur les aspects et les infrastructures numériques des nouvelles formes participatives, sans traiter les innovations puissantes nécessaires dans les pratiques, les processus et la culture participatifs qui résultent de l’hybridation de la participation face à face et numérique. L'approche hybride tente de relier les espaces et les activités qui se déroulent en décidim. arcelona avec des espaces et des activités en face à face, et de tenir compte des variantes multiples qui peuvent survenir dans le but de stimuler de nouvelles formes d'action collective.
+
+=== Participation améliorée et multimodale
+
+Le résultat du réductionnisme numérique est de favoriser la "participation aux clics" (Calleja-López, 2017), où la participation devient un phénomène défini, avant tout pour son aspect numérique, et plus particulièrement pour sa commodité, sa vitesse et sa non-interférence avec d'autres acteurs et idées. Il est donc nécessaire de stimuler les formes enrichies d'interaction entre les personnes dans le décidisme. arcelona, et entre eux, le contenu de la plate-forme et les processus de participation hybride dans un sens plus large. Cela implique, d'une part, d'enrichir les processus participatifs avec des fonctions qui vont au-delà du vote (affichage des informations et des données, délibération, etc.). ) et, d'autre part, la conception de processus hybrides (e. . - Les réunions en personne liées à la plateforme), qui font de la participation une participation améliorée, complète et multimodale plutôt que réduite et « cliquée ».
+
+=== Transparence et traçabilité
+
+À l'exception des données qui peuvent affecter la confidentialité de l'utilisateur, les détails des activités dans les processus participatifs dans les médias numériques doivent être absolument traçables et publiques, si un nouveau niveau de transparence dans la participation doit être favorisé. La transparence de la participation et la traçabilité sont des conditions nécessaires à la confiance dans ces nouveaux processus.
+
+=== Ouverture/libération
+
+Les principes de publication et d'ouverture se réfèrent d'abord au code et aux fonctions de la plate-forme, deuxièmement, aux données et au contenu des processus et, troisièmement et plus généralement, aux processus eux-mêmes. Cela implique, dans les deux premiers cas, d'utiliser les licences et les standards les plus exigeants (e. Affero GPLv3 pour le code, CreativeCommons for content, Open Access Database Licences for Data). Decidim doit être une plate-forme de logiciel libre qui permet à quiconque de voir, modifier et réutiliser le code sur lequel il se base. Dans le cas des processus, ces principes sont liés à plusieurs autres que nous mentionnons dans cette liste, comme la transparence et l'accessibilité, et visent à rendre ces processus aussi participatifs et réappropriables que possible à plusieurs niveaux.
+
+=== Participation transversale
+
+Traiter de nombreuses clés de succès pour des initiatives récentes telles que 15M, decidim. Le déploiement et les stratégies de communication et les processus médiatiques d'arcelona doivent être orientés vers l'obtention de la légitimité d'abord, puis la participation, à la portée du plus grand nombre possible de groupes sociaux et politiques.
+
+=== Connaissances, technoscience et intelligence collective
+
+Les nouvelles formes de participation devraient bénéficier des possibilités offertes par les connaissances populaires et expertes des citoyens et la science des données (données occasionnellement issues des processus participatifs eux-mêmes) pour améliorer la prise de décision et la participation. Une participation informée et experte, capable de catalyser les connaissances sociales.
+
+=== Participation collective et réseau
+
+Un des défis centraux pour atteindre une participation « améliorée », digitalement médiée, renforce sa dimension collective face aux tendances atomisatrices, souvent dues à des conditions de participation à distance. Cela implique l'utilisation de fonctions qui augmentent les interactions entre les utilisateurs dans les processus collectifs, que ce soit sur une plate-forme ou face à face. Des espaces de discussion et de réflexion numériques ou en face à face sont nécessaires pour coordonner une meilleure participation.
+
+=== Orientation public-virgule, réappropriation et participation récursive
+
+Les nouvelles infrastructures numériques de la démocratie doivent être un espace appartenant à, par et pour les communes. Pour promouvoir la démocratie, les infrastructures elles-mêmes doivent être radicalement démocratiques. Cela implique de considérer un modèle innovant et alternatif à celui de la privatisation de la sphère publique. À cette fin, Decidim doit être une infrastructure numérique de construction, de propriété et d'utilisation des biens publics. En d'autres termes, ce que nous définissons comme des "Communautés technopolitiques", une technologie ouverte à la participation de tout le monde et de toute personne à sa conception et à sa gestion, régie par la distribution et par des modèles collectifs et partagés. Comparé aux plates-formes fermées et exclusives contrôlées par les grandes entreprises, Decidim est une infrastructure démocratique pour la démocratie.
+
+=== Accessibilité et formation Technopolitiques
+
+Elle doit également être un service public, et c'est pourquoi il est essentiel de garantir aux citoyens un accès et une formation pour participer et exploiter tout son potentiel. La promotion de son utilisation et de son utilisation par des groupes sociaux exclus est un défi majeur. Les processus participatifs décidim.barcelona et numériques doivent être régis par des normes d'accessibilité plus exigeantes (par exemple, celles de l'Initiative d'accessibilité du Web, WAI).
+
+=== Indépendance, autonomisation et affiliation
+
+Si les mouvements sociaux ont montré quelque chose au cours de ces dernières années, c'est le rôle central joué par l'action collective auto-organisée dans les processus de démarrage et d'orientation du changement. À cet égard, decidim.barcelona et les processus utilisant la plate-forme ont besoin de renforcer l'indépendance sociale et l'auto-organisation. En outre, l'affiliation politique doit être une caractéristique requise dans de nombreux processus de la plateforme, étant donné qu’il s’agit d’un élément clé de la légitimité publique et opérationnelle de la plateforme à moyen et à long terme. En d'autres termes, à la fois des processus sociaux indépendants et des processus ascendants affiliés aux institutions publiques.
+
+== Bref historique
+
+Lors de sa présentation publique en septembre 2015, Décide Madrid, une plate-forme participative numérique lancée par le conseil municipal de Madrid et basée sur les logiciels de consommation. a commencé à expérimenter divers processus participatifs, tels que les débats publics et les propositions de citoyens. Lancé par la mairie de Barcelone, le projet Decidim Barcelona, qui était également basé sur Consul mais avec des changements majeurs et adaptés aux nouveaux besoins, a été présenté en février 2016. Son objectif initial était de coordonner le processus participatif d'élaboration du Plan d'action municipale (PAM) ainsi que d'autres processus participatifs dans la ville à l'avenir. Quelque 25 000 personnes y ont souscrit en moins de deux mois, 10 860 propositions ont été soumises, 410 réunions ont eu lieu et plus de 160 000 voix pour ont été recueillies. De cette manière, un espace de collaboration et de réflexion a été ouvert entre les citoyens, les organisations sociales et le conseil municipal de Barcelone.
+
+Un grand intérêt a été exprimé dans de nombreuses municipalités pour poursuivre des processus similaires, tirer parti de la technologie utilisée, étant donné son succès et le fait qu'il a été libre et réutilisable. Pour être plus précis : le conseil municipal de Corun<unk> a, à travers sa plate-forme A Porta Aberta pour les processus budgétaires participatifs ; Le conseil municipal d'Oviedo, par l'intermédiaire de sa Consulta Oviedo, avec un espace pour les propositions citoyennes, et le conseil municipal de Valence, par l'intermédiaire de decidimVLC, pour la préparation des budgets participatifs. Il y a également eu de nombreux cas d'autorités locales et d'autres institutions qui ont manifesté un grand intérêt pour le décidisme. projet arcelona et sa mise en œuvre, tels que les conseils municipaux de l'Hôpital, Badalona, Terrassa et Gava, ainsi que le Conseil Provincial de Barcelone et le Consortium Localret.
+
+Cette série de changements et d'adaptations ont entraîné à leur tour un nouveau besoin technologique impliquant l'adaptation des technologies liées à la diversité des autorités locales, l'indépendance et la durabilité à moyen terme de la plate-forme. D'où la mise en place d'une stratégie de développement évolutive et décentralisée (ou modulaire) permettant à l'ensemble du projet d'être flexible et de croître au fil du temps et de générer un développement, de conception et de soutien fonctionnels, qui sont soutenus à la fois aux niveaux municipaux et (plus importantment) intermunicipaux.
+
+Cela a conduit le conseil municipal de Barcelone à reconsidérer en profondeur l'architecture de la plateforme et à effectuer une réécriture complète du logiciel en fonction des principes et des besoins susmentionnés. Cette réécriture a donné lieu au projet Decidim, un cadre démocratique générique et participatif basé sur Ruby on Rails, par lequel tout groupe, organisation ou institution qui voulait l'utiliser pourrait le faire avec des exigences techniques minimales.
+
+== Développement ouvert et logiciel libre
+
+Le projet de plateforme Decidim a été développé avec le logiciel libre (tous deux à son stade initial, basé sur le Consul, et après la réécriture complète du code) et tout son développement a été ouvert, permettant à l'ensemble de son développement d'être traçable et suivi dès le début.
+
+Sa création à partir de logiciels libres fait référence au fait que le code source de la plateforme a une licence AGPL v3 ou GNU Affero General Public Licence,note de bas de page :[https://github.com/decidim/decidim/blob/develop/LICENSE-AGPLv3. xt] ce qui signifie que le code doit permettre la possibilité de le consulter, copier, amendée et réutilisée, tant que la même licence est conservée dans toute œuvre ou produit qui en découle. C'est l'une des licences qui offre la plus grande liberté et qui est la note de bas de page copyleft : [Copyleft signifie toute une gamme de licences qui peuvent être appliquées à l'informatique, créations artistiques et autres. Copyleft's supporters see copyright as a way of restricting people's right to make and redistribute copies of a work.[2] A copyleft licence, in fact, uses actual copyright legislation to ensure that everyone who receives a copy or derived work can use, amend and even distribute both the work and any derivative versions. Dans un sens strictement non juridique, le droit d’auteur est donc le contraire du droit d’auteur. (Wikipédia, 2017).]. À cet égard, il est logique que les autorités publiques s'engagent clairement en faveur de ce type de logiciels. étant donné que c'est par le biais de telles licences que nous pouvons recevoir un rendement social sur nos investissements publics.
+
+Le fait que le logiciel ait été développé ouvertement signifie que tout le processus de développement est transparent et accessible, en d'autres termes, que n'importe qui peut voir, dès le début du développement du logiciel, chaque changement, toute contribution, la communauté des développeurs impliqués, etc. De même, la transparence devient un principe fondamental non seulement pour la participation des citoyens, mais aussi pour le développement des logiciels.
+
+Tout cela a été fait sur une plate-forme conçue pour une collaboration ouverte dans le développement de logiciels appelés GitHub. ootnote : [https://github.com/] Cette plateforme permet d'accéder aux codes et au suivi du développement du logiciel. GitHub est conçu pour héberger les dépôts Git, bien qu'il existe d'autres alternatives à GitHub comme GitLab.
+
+== Decidim Barcelona
+
+Decidim Barcelona est la première instance de Decidim et l’origine du projet. Decidim Barcelona est né du besoin de la Mairie de Barcelone d’ouvrir un processus de participation des citoyens par médiation technologique autour du Plan d’action Municipal (PAM), avec trois objectifs majeurs : rendre un processus transparent et traçable, étendre la participation à travers la plate-forme numérique et intégrer la participation face à face et numérique.
+
+Ce processus a reçu plus de 10 000 propositions et plus de 160 000 voix pour, avec un solde final de 71 % des propositions citoyennes acceptées et incluses dans PAM par le biais de plus de 1 600 initiatives. Decidim a été conçu à l'origine exclusivement pour héberger ce processus, bien que la nécessité de l'étendre à d'autres processus de participation ait été rapidement décelée.
+
+C'est ici que l'idée du Decidim d'aujourd'hui a vu le jour. Une plateforme participative qui permet autant de processus que les gens le veulent, divisé en étapes et avec la possibilité de mettre en place plusieurs fonctions à chaque étape. La possibilité a donc été laissée ouverte à la conception de nouvelles fonctions qui pourraient être intégrées dans les processus (sondages, rédaction de texte collaboratif, le suivi des résultats, etc.), ainsi que l’intégration de nouveaux espaces participatifs tels que les initiatives citoyennes et les conseils de participation.
+
+Decidim Barcelone accueille actuellement (juillet 2017) 12 processus participatifs et compte déjà 26 600 participants, Près de 12 000 propositions collectées, 1 700 résultats, 670 réunions en personne et 185 000 voix pour ont été recueillies. Les bons résultats de la plateforme à Barcelone ont conduit à son extension à d’autres municipalités, y compris Hospitalet de Llobregat, Sabadell, Badalona, Terrassa, GavaÄ, Sant Cugat, Mataró et Vilanova i la Geltrú.
+
+== Decidim Municipis
+
+Decidim est une plate-forme multilocataire, c'est-à-dire une plate-forme où autant d'instances peuvent être utilisées au besoin, avec une seule installation. Il existe de nombreux exemples réussis d'architectures multilocataires dans le monde des logiciels, tels que le logiciel libre Wordpress pour les blogs projet. Il est particulièrement utile pour les institutions qui souhaitent fournir Decidim en tant que service tiers. Le cas du conseil provincial est particulièrement important car il peut être utilisé avec une installation unique - maintenue, mis à jour et soutenu par une seule entité - pour autant d'autorités locales que souhaité, réduisant ainsi les coûts d'installation et de maintenance et fournissant des solutions technologiques pour améliorer la participation des citoyens aux autorités locales de taille moyenne et de petite taille, qui auraient autrement beaucoup moins accès à ces ressources.

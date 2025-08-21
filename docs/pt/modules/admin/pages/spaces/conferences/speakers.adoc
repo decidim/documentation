@@ -1,68 +1,68 @@
-= Speakers
+= Alto-falantes
 
-The speakers are people that are going to talk at the conference.
+Os oradores são pessoas que vão falar na conferência.
 
-image:spaces/conferences/speakers_frontend.png[Conferences speakers (frontend)]
+imagem:espaços/conferências/palestrantes_frontend.png[Alto-falantes de conferências (frontend)]
 
-== Create a new speaker
+== Criar um novo pregador
 
-image:spaces/conferences/speakers.png[Conferences speakers]
+imagem:espaçaces/conferências/palestrantes.png[Palestrantes de Conferências]
 
-For creating a new speaker of a conference:
+Para criar um novo palestrante de uma conferência:
 
-. Sign in as administrator
-. Go to the conferences section in the sidebar
-. Click on the conference Edit action
-. Click on the Speakers link in the sidebar
-. Click on the "New Conference Speaker" button
-. Fill the form
+. Entrar como administrador
+. Ir para a seção de conferências na barra lateral
+. Clique na ação Editar da conferência
+. Clique no link do palestrante na barra lateral
+. Clique no botão "Alto-falante de Nova Conferência"
+. Preencha o formulário
 
-image:spaces/conferences/new_speaker.png[Conferences speakers]
+imagem:espaçaces/conferências/new_speaker.png[Alto-falantes de conferências]
 
 
-.New conference speaker form
+.Novo formulário de palestrante de conferência
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Participant type
-|Required
-|Wheter this speaker is a non-participant or existing participant. Does she already have an account created on the platform?
+|Tipo de usuário
+|Obrigatório
+|Este pregador é um participante não-participante ou não existente. Já têm uma conta criada na plataforma?
 
-|Full name
-|Required if it's non-participant.
-|Name of the speaker.
+|Nome completo
+|Necessário se não for participante.
+|Nome do palestrante.
 
-|User or group
-|Required if it's an existing participant.
-|Type at least three characters to search.
+|Usuário ou grupo
+|Necessário se for um participante existente.
+|Digite pelo menos três caracteres para pesquisar.
 
-|Related meetings
-|Optional
-|Which meetings does this speaker attend and participates actively?
+|Reuniões relacionadas
+|Opcional
+|Em que reuniões o orador participa e participa activamente?
 
-|Position
-|Required
-|Metadata for showing extra information about the speaker.
+|Posição
+|Obrigatório
+|Metadados para mostrar informações adicionais sobre o palestrante.
 
-|Affiliation
-|Required
-|Metadata for showing extra information about the speaker.
+|Afiliação
+|Obrigatório
+|Metadados para mostrar informações adicionais sobre o palestrante.
 
-|Short Bio
-|Optional
-|Metadata for showing extra information about the speaker.
+|Pequena biografia
+|Opcional
+|Metadados para mostrar informações adicionais sobre o palestrante.
 
-|Twitter handle
-|Optional
-|Metadata for showing extra information about the speaker.
+|Handle do Twitter
+|Opcional
+|Metadados para mostrar informações adicionais sobre o palestrante.
 
-|Personal URL
-|Optional
-|Metadata for showing extra information about the speaker.
+|URL pessoal
+|Opcional
+|Metadados para mostrar informações adicionais sobre o palestrante.
 
 |Avatar
-|Optional
-|Metadata for showing extra information about the speaker.
+|Opcional
+|Metadados para mostrar informações adicionais sobre o palestrante.
 
-Default image
+Imagem Padrão
 |===

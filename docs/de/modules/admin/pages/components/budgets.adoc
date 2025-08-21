@@ -1,0 +1,357 @@
+= Budget
+
+:page-toclevels: 4
+
+Die Haushaltskomponente erlaubt es den Menschen, abzustimmen, indem sie Projekte ihrer Wahl auswählen. Je nach Bedarf und normativer
+der Organisation könnte dies konfiguriert werden, so dass die Leute ein Gesamtbudget zugewiesen haben (zum Beispiel 100. 00 EUR) und dann
+hat jedes Projekt einen Wert zugewiesen (z.B. 10.000 EUR). Wenn die Leute dann über Projekte abstimmen sie haben einen Fortschrittsbalken
+, wo sie sehen, wie viel verbleibende Haushaltsmittel sie bei dieser Abstimmung zuweisen müssen.
+
+Von diesem Ausgangspunkt aus könnte es andere Konfigurationen geben, wie:
+
+* Ein minimaler Prozentsatz der zugewiesenen Haushaltsmittel
+* Mindestens zugewiesene Projekte
+* Mehrere Budgets, eines für jeden Bezirk oder Bezirk
+
+Einige Beispiele, wo diese Komponente verwendet wurde:
+
+* https://www.decidim.barcelona/processes/PressupostosParticipatius[2020/2021 Participatory Budgeting Process in Decidim Barcelona].
+Die Stadt Barcelona (Spanien) hat ein Budget von 30.000 zugewiesen. 00 EUR, so dass die Menschen präsentieren können, definieren, priorisieren und mit
+abstimmen und wählen können, welche Investitionsprojekte die Stadtverwaltung durchführen soll.
+* https://ecrivons.angers.fr/processes/BP2021[2021 Partizipative Budgeting Process in Angers]. Die Stadt Angers (Frankreich) hat
+ein Budget von 1000 zugewiesen. 00 EUR so dass Menschen aus 11 Jahren können maximal 3 Ideen vorschlagen und wählen Sie dann für ihre 5 Lieblings-Projekte.
+* https://omastadi.hel.fi/[2021 Participatory Budgeting Process in Helsinki]. Helsinki hat 8,8 Millionen Euro für die Verwirklichung der Wünsche der Bewohner von
+bereitgestellt. Die Ideen werden gemeinsam zu Vorschlägen entwickelt, über die die Einwohner von Helsinki abstimmen können. Die Vorschläge mit den
+meisten Stimmen werden von der Stadt realisiert.
+
+image:components/budgets/example01.png[Budgets Beispiel Abstimmung]
+image:components/budgets/example02.png[Budget Beispiel Fehlermeldung beim Überschreiten des Budget]
+image:components/budgets/example03.png[Budget Bestätigung der Bestätigung]
+image:components/budgets/example04.png[Budgets nach Abstimmung]
+
+Um die Budget-Komponente zu konfigurieren:
+
+. Als Admin anmelden
+. Zum Admin-Panel wechseln
+. Wählen Sie in der Haupt-Seitenleiste den Bereich aus, unter dem Sie die Komponente konfigurieren möchten.
+Zum Beispiel "Prozesse", "Gremien" oder "Konferenzen".
+. Gehe zu Komponenten
+. Auf "Komponente hinzufügen"-Button klicken
+. Klicken Sie auf "Budgets"
+. Das Formular xref:_add_component[Komponente hinzufügen] ausfüllen
+
+== Komponente hinzufügen
+
+image:components/budgets/component.png[Komponentenform hinzufügen]
+
+
+.Komponente hinzufügen: Budgetformular
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Wie lautet der Titel dieser Komponente. Zum Beispiel "Budgets"
+
+|Bestellposition
+|Optional
+|Welche Reihenfolge wird sie im Verhältnis zu den anderen Haushaltsplänen haben. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+Zum Beispiel, wenn Sie zwei Budgets haben, "Budget a" mit dem Gewicht "10" und "Budget b" mit dem Gewicht "0", dann ist "Budget b" zuerst bei der Bestellung.
+|===
+
+
+.Komponente hinzufügen: Budgetformular - Globale Einstellungen
+|===
+|Feld |Typ |Beschreibung
+
+|Bereiche aktiviert
+|Optional
+|Aktivieren, wenn die Bereichsfilterung in dieser Komponente erfolgen soll.
+
+|Bereich
+|Optional
+|Zu welcher xref:admin:scopes.adoc[Scope] diese Komponente gehört.
+
+|Globaler Umfang
+|Optional
+|
+
+|xref:_Workflows[Workflow]
+|Benötigt
+|Wie die Teilnehmer abstimmen können, wenn es mehrere Budgetsätze gibt. Sie können Ihre eigenen xref:_workflows[Workflow] definieren oder eine der verfügbaren Funktionen verwenden.
+
+|Projekte pro Seite
+|Benötigt
+|Wie viele Projekte pro Seite angezeigt werden.
+
+|Regel aktivieren: Mindestbudget Prozentsatz
+|Optional, aber nicht kompatibel mit "Mindestanzahl der zu bewertenden Projekte" und "Ausgewählte Projekte mit minimaler und maximaler Anzahl von Projekten, über die abgestimmt werden soll"
+|Ermöglicht die Definition eines "Stimmenschwellwerts", eines Prozentsatzes des Gesamthaushalts, den die Teilnehmer erreichen müssen, um abstimmen zu können.
+
+|Regel aktivieren: Mindestanzahl der zu bewertenden Projekte
+|Optional, aber nicht kompatibel mit "Mindestbudget Prozent" und "Ausgewählte Projekte mit minimaler und maximaler Anzahl von Projekten, über die abgestimmt werden soll"
+|Erlaubt die Definition einer "Mindestanzahl von zu wählenden Projekten", einer Anzahl von Projekten, die die Teilnehmer erreichen müssen, um abstimmen zu können.
+
+|Regel aktivieren: Ausgewählte Projekte mit minimaler und maximaler Anzahl von Projekten, über die abgestimmt werden soll
+|Optional, aber nicht kompatibel mit "Mindestbudget Prozent" und "Mindestanzahl an Projekten, über die abgestimmt werden soll"
+|Erlaubt eine "Mindestanzahl an auszuwählenden Projekten" und eine "Maximale Anzahl an auszuwählenden Projekten" zu definieren die Anzahl der Projekte
+, die die Teilnehmer als Minimum und Maximum wählen müssen.
+
+|Kommentare aktiviert
+|Optional
+|Ob Sie Kommentare in den Meetings haben möchten.
+
+|Maximale Länge der Kommentare
+|Optional
+|Welche Zeichenbegrenzung haben die Teilnehmer, wenn sie Kommentare abgeben. Lassen Sie 0 für den Standardwert.
+
+|Aktionsberechtigungen können für jedes Projekt festgelegt werden
+|Optional
+|Ob Sie Berechtigungen für jedes einzelne Projekt festlegen möchten. Meistens möchten Sie diese Option deaktiviert lassen.
+
+|Mitteilung
+|Optional
+|Eine allgemeine Ankündigung, die auf der allgemeinen Budgets Landung Seite zu sehen sein wird.
+
+|Budgets Landingpage
+|Optional
+|Welche Nachricht wird auf der Landingpage für Budgets angezeigt, wenn es mehrere Budgets gibt.
+
+|Weitere Informationen modal
+|Optional
+|Welche Nachricht wird angezeigt, wenn Sie auf den Link "Weitere Informationen" klicken.
+|===
+
+In den Fällen, in denen der Platz, den diese Komponente verwendet wird, xref:admin:spaces/processes/phases hat. doc[Phases], zum Beispiel in
+xref:admin:spaces/processes.adoc[Participatory Processes], dann können Sie auch unterschiedliche Verhaltensweisen pro Schritt definieren.
+
+
+.Komponente hinzufügen: Budgetformular - Schritteinstellungen
+|===
+|Feld |Typ |Beschreibung
+
+|Kommentare blockiert
+|Optional
+|Ob Sie Kommentare für diese Phase aktivieren möchten.
+
+|Abstimmungen
+|Benötigt
+|Wählen Sie eine der folgenden Optionen, abhängig vom Zeitpunkt des Prozesses: Abstimmung deaktiviert, Abstimmung aktiviert oder Abstimmung beendet.
+
+|Abstimmungen anzeigen
+|Optional
+|Wann die Abstimmungen angezeigt werden. Wir empfehlen dringend, diese Option erst nach Abschluss der Abstimmung zu aktivieren.
+
+|Mitteilung
+|Optional
+|Eine allgemeine Ankündigung, die auf der allgemeinen Budgets Landung Seite zu sehen sein wird.
+
+|Budgets Landingpage
+|Optional
+|Welche Nachricht wird auf der Landingpage für Budgets angezeigt, wenn es mehrere Budgets gibt.
+
+|Weitere Informationen modal
+|Optional
+|Welche Nachricht wird angezeigt, wenn Sie auf den Link "Weitere Informationen" klicken.
+|===
+
+== Berechtigungen
+
+Berechtigungen bearbeiten
+
+* Abstimmungen
+* Kommentar
+
+== Workflows
+
+Ein nettes Feature der Budget-Komponente ist die Möglichkeit, eigene Workflows zu definieren.
+
+Dies bedeutet, dass Sie mehrere Budgets definieren können, zum Beispiel eines für jeden Stadtteil oder Bezirk, den eine Stadt hat und
+können Sie auch mehrere Regeln festlegen, wie die Leute über diese Haushaltspläne abstimmen können. Standardmäßig haben Sie folgende Workflows:
+
+* Stimmen Sie in einem: ermöglicht den Teilnehmern die Abstimmung in jedem Haushalt, aber nur in einem.
+* Stimmt insgesamt: Erlaubt den Teilnehmern, in allen Haushaltsplänen abzustimmen.
+* Vote in einer zufälligen Komponent: Erlaubt den Teilnehmern, nur in einem Budget zu wählen, zufällig ausgewählt.
+
+Aber dies kann in Ihrer Anwendung durch einen Entwickler erweitert werden, indem Sie Ihre eigenen Workflows. Zum Beispiel für die
+https://www.decidim. arcelona/processes/PressupostosParticipatius[2020/2021 partizipatorische Budgetverfahren in Decidim Barcelona],
+die Menschen konnten in zwei Bezirken wählen: in dem Bezirk, in dem sie lebten und in dem sie sich entschieden haben. Dies wurde in der
+https://github.com/AjuntamentdeBarcelona/decidim-barcelona/blob/743be2a210e8745d2dc443166642b285aed2b356/lib/budgets_workflow_pam2021.rb[decidim-barcelona Applikation] definiert.
+
+Lesen Sie mehr über Worfklows unter https://github.com/decidim/decidim/blob/1ab5cd8fdabef48f5be94ff9c30c6bb3bc9a2f8f/decidim-budgets/README.md#budget-workflows[decidim-budgets README.md].
+
+NOTE: Sie möchten nur eine Abstimmung ohne große Komplikationen haben? Wie eine städtische Abstimmung? Keine Sorge: Wenn Sie nur ein
+Budget definieren, werden die Leute direkt dorthin gehen, wenn Sie im Bereich Budget klicken.
+
+== Budgets verwalten
+
+image:components/budgets/manage_budgets.png[Budget-Tabelle verwalten]
+
+In diesem Fenster können Sie auch die Stimmen sehen, die die verschiedenen Projekte erhalten haben. (Anzahl der Stimmen) und die Gesamtzahl der Stimmen (*Beendete Abstimmungen* und *Ausstehende Abstimmungen*, das heißt, dass ein Teilnehmer mit der Abstimmung begonnen hat, aber noch nicht ihre Stimme abgegeben hat).
+
+=== Alle exportieren
+
+Ermöglicht den Export der Projekte in diesem Budget in verschiedenen Formaten.
+
+* Projekte als CSV
+* Projekte als JSON
+* Projekte als Excel
+
+=== Neues Budgetformular
+
+image:components/budgets/new_budget.png[Neue Budgetform]
+
+
+.Neues Budgetformular
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Wie lautet der Titel dieses Haushaltsplans. Zum Beispiel "Bezirk A"
+
+|Bestellposition
+|Optional
+|Welche Reihenfolge wird sie im Verhältnis zu den anderen Haushaltsplänen haben. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+Zum Beispiel, wenn Sie zwei Budgets haben, "Budget a" mit dem Gewicht "10" und "Budget b" mit dem Gewicht "0", dann ist "Budget b" zuerst bei der Bestellung.
+
+|Beschreibung
+|Optional
+|Wie lautet die Beschreibung dieses Haushaltsplans.
+
+|Gesamt Budget
+|Benötigt
+|Wie hoch ist der Gesamtbetrag, den die Menschen für die Zuweisung haben werden.
+|===
+
+==== Aktionen
+
+
+.Aktionen
+|===
+|Icon |Name |Definition
+
+|image:action_preview.png[Vorschau Symbol]
+|Vorschau
+|Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
+
+|image:action_list.png[Projektsymbol verwalten]
+|xref:_manage_projects[Projekte verwalten]
+|Ermöglicht Ihnen die Verwaltung der Projekte eines Budgets.
+
+|image:action_edit.png[Icon bearbeiten]
+|Bearbeiten
+|Formular für ein Budget bearbeiten. Es ist die gleiche Form wie "Neues Budget".
+
+|image:action_delete.png[Icon löschen
+|Löschen
+|Dieses Budget löschen. Nur möglich, wenn es keine Projekte gibt.
+|===
+
+==== Projekte verwalten
+
+===== Vorschläge in Projekte importieren
+
+Je nach Normativ kannst du eine erste Phase in der die Teilnehmer
+Vorschläge machen möchten und diese Vorschläge werden ausgewählt (durch Abstimmung oder durch technische Überprüfung),
+dann können Sie diese Vorschläge importieren und in Projekte umwandeln.
+
+Damit dies funktioniert:
+
+. Die folgenden Einstellungen in der Vorschlags-Komponente müssen aktiviert sein:
+.. Vorschlagsantwort aktiviert
+.. Kosten bei Angebotsantworten aktivieren
+. Ein Valuator oder Administrator muss Vorschläge beantworten:
+.. Vorschläge ansehen
+.. Akzeptieren oder ablehnen Sie sie entsprechend Ihrer Normativen
+.. Kosten zu den Vorschlägen hinzufügen, wenn angenommen wurde
+. Ein Administrator kann Vorschläge in Projekte importieren
+
+image:components/budgets/import_proposals.png[Vorschläge in Projekte importieren]
+
+===== Alle exportieren
+
+Ermöglicht den Export der Projekte in diesem Budget in verschiedenen Formaten.
+
+* Projekte als CSV
+* Projekte als JSON
+* Projekte als Excel
+
+===== Neues Projektformular
+
+image:components/budgets/new_project.png[Neues Projektformular für ein Budget]
+
+
+.Neues Projektformular
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Der Titel für dieses Projekt.
+
+|Beschreibung
+|Benötigt
+|Eine Beschreibung dessen, worum es bei diesem Projekt geht.
+
+|Budgetbetrag
+|Benötigt
+|Wie hoch ist der Budgetbetrag für dieses Projekt. Wie viel Geld wird es kosten, dieses Projekt umzusetzen?
+
+|Kategorie
+|Optional
+|Welche Kategorie hat das Projekt. Wird zum Filtern in der Budgetliste verwendet.
+
+|Vorschläge
+|Optional
+|Wählen Sie verwandte Vorschläge für dieses Projekt. Automatisch beim Importieren von Vorschlägen.
+
+|Bildergalerie hinzufügen
+|Optional
+|Fügen Sie mehrere Bilder hinzu, die zeigen, worum es bei diesem Projekt geht oder wo es umgesetzt wird.
+|===
+
+===== Aktionen
+
+
+.Aktionen
+|===
+|Icon |Name |Definition
+
+|image:action_preview.png[Vorschau Symbol]
+|Vorschau
+|Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
+
+|image:action_edit.png[Icon bearbeiten]
+|Bearbeiten
+|Formular für ein Projekt bearbeiten. Es ist das gleiche Formular wie "Neues Projekt".
+
+|image:action_folder.png[Ordner-Symbol]
+|Ordner
+|Zur Klassifizierung von Anhängen.
+
+|image:action_attachments.png[Anhänge Symbol]
+|Anhänge
+|Dokumente, die mit dem Projekt zusammenhängen.
+
+|image:action_delete.png[Icon löschen
+|Löschen
+|Dieses Projekt löschen.
+|===
+
+== Ergebnisse
+
+Nachdem der Abstimmungsschritt beendet ist, muss ein Administrator folgendes tun:
+
+. Ändern Sie die Abstimmungskonfiguration für die Budgetkomponente auf "Abstimmung beendet"
+. Gehe zu den Budgets und schaue dir die Ergebnisse an
+. On the projects that according to the normative have been selected, they will need to go to each project, edit it and
+then check the "Selected for implementation".
+
+image:components/budgets/results_unselected.png[Nicht ausgewählte Projekte nach der Abstimmung]
+image:components/budgets/results_select_project.png[Wählen Sie ein Projekt zur Umsetzung]
+image:components/budgets/results_selected.png[Ausgewählte Projekte nach der Abstimmung]
+image:components/budgets/results_selected_frontend.png[Ausgewählte Projekte nach der Abstimmung in der Frontend]
+
+Wir empfehlen dringend, dass Sie nach der Auswahl der Projekte die xref:components/accountability.adoc[Accountability]
+Komponente aktivieren, damit die Teilnehmer den Grad der Impementierung sehen können.

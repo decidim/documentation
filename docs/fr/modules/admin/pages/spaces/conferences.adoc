@@ -1,0 +1,169 @@
+= Conférences
+
+Une conférence est une collection de réunions organisées dans un programme, avec un certain nombre de personnes invitées en tant qu'orateurs, et les autres champs d'information
+typiques des grands congrès ou événements sociaux (inscription, liste des organisations qui soutiennent ou parrainent l'événement
+, etc.). Une conférence peut être un événement pertinent pour une organisation et ses membres, ou se dérouler dans le cadre d'un processus participatif
+ou suivre une consultation.
+
+Exemples:
+
+* Une assemblée générale pour une organisation
+* La réunion annuelle d'une coopérative
+
+En tant qu'exemple réel vous pouvez voir les conférences Metadecidim annuelles :
+
+image:espaces/conférences/exemple01.png[Decidim Fest 2020]
+
+* https://meta.decidim.org/conferences/decidimfest19[Decidim Fest 2019]
+* https://meta.decidim.org/conferences/decidimfest2020[Decidim Fest 2020]
+* https://meta.decidim.org/conferences/DecidimFest21[Decidim Fest 2021]
+
+== Créer une nouvelle conférence
+
+Pour ajouter une nouvelle conférence, vous devez :
+
+image:espaces/conferences/menu.png[Menu des conférences]
+
+. Se connecter en tant qu'administrateur
+. Aller au panneau d'administration
+. Dans la barre latérale principale, cliquez sur le bouton "Conférences"
+. Cliquez sur le bouton "Créer une nouvelle conférence"
+. Configurer la conférence en remplissant le formulaire
+
+image:espaces/conferences/new_conference.png[Créer un nouveau formulaire de conférence]
+
+
+.Créer une nouvelle conférence
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Quel est le titre de cette conférence. Par exemple "Decidim Fest 2021"
+
+|Slogan
+|Obligatoire
+|Un sous-titre pour cette conférence. Par exemple, "Démocratie, technologie et justice mondiale"
+
+|Identifiant d'URL
+|Obligatoire
+|Les identifiants d'URL sont utilisés pour générer les URL qui pointent vers cette conférence. N'accepte que les lettres, chiffres et tirets, et
+doit commencer par une lettre. Exemple: si votre domaine est 'example.org' et que votre slug 'DecidimFest21' alors votre URL sera
+https://example.org/conferences/DecidimFest21
+
+|Hashtag
+|Facultatif
+|Hashtag pour Twitter
+
+|Surligné
+|Facultatif
+|Cette conférence devrait-elle être plus importante que les autres? Par exemple, s'agit-il d'une conférence en cours ou d'une conférence qui a eu lieu il y a des années?
+
+|Courte description
+|Obligatoire
+|Une brève explication de votre conférence.
+
+|Description
+|Obligatoire
+|Une longue explication de votre conférence.
+
+|Objectifs
+|Facultatif
+|Quels sont les objectifs ou objectifs de cette conférence?
+
+|Localisation
+|Facultatif
+|Où aura lieu cette conférence?
+
+|Image de la maison
+|Facultatif
+|De préférence une image de paysage qui n'a pas de texte. Le service récolte
+l'image Taille maximale du fichier : 10 Mo. Extensions de fichier autorisées : jpeg jpg png
+
+|Image de bannière
+|Facultatif
+|De préférence une image de paysage qui n'a pas de texte. Le service récolte
+l'image Taille maximale du fichier : 10 Mo. Extensions de fichier autorisées : jpeg jpg png
+
+|Portées activées
+|Facultatif
+|Cochez cette case si vous voulez que le filtrage des portées dans cette conférence
+
+|Secteur
+|Facultatif
+|Ce à quoi appartient xref:admin:scopes.adoc[Scope] cette conférence.
+
+|Afficher les statistiques
+|Facultatif
+|Cochez cette case si vous voulez afficher la section Statistiques.
+
+|Date de début
+|Obligatoire
+|Quand cette conférence commencera-t-elle. Format attendu : jj/mm/aaaa
+
+|Date de fin
+|Obligatoire
+|Quand se terminera cette conférence. Format attendu : jj/mm/aaaa
+
+|Enregistrements activés
+|Facultatif
+|Cochez cette case si vous souhaitez gérer les inscriptions sur la plateforme.
+
+|Emplacements disponibles
+|Facultatif
+|Laisser à 0 si vous avez un nombre illimité de places disponibles.
+
+|Conditions d'inscription
+|Requis si "Inscriptions activées" est coché
+|Quelles sont les conditions générales de service qu'un participant doit accepter pour s'inscrire à cette conférence?
+
+|Processus participatifs liés
+|Facultatif
+|Sélectionnez les processus qui sont liés à cette conférence. Utilisez la fonction *ctrl* pour sélectionner plus d'une option.
+
+|Ruches connexes
+|Facultatif
+|Sélectionnez les assemblées qui sont liées à cette conférence. Utilisez la fonction *ctrl* pour sélectionner plus d'une option.
+
+|Consultations connexes
+|Facultatif
+|Sélectionnez les consultations qui sont liées à cette conférence. Utilisez la fonction *ctrl* pour sélectionner plus d'une option.
+|===
+
+== Création du programme
+
+For creating the program of the conference you need to create a new xref:components/meetings.adoc[Meeting component] with the
+dates and times of the different talks, workshops, sessions, etc. Après la publication des réunions, il sera visible dans la page de destination
+et il y aura une navigation spéciale pour ces réunions, donc elles sont ordonnées par date et heure.
+
+image:espaces/conférences/program_frontend.png[Programme de conférences (frontend)]
+
+image:espaces/conférences/program_backend.png[Programme de conférences (backend)]
+
+Aussi, si vous ils sont "en personne" des réunions avec un lieu, vous aurez une liste des lieux.
+
+image:espaces/conférences/program_venues_frontend.png[Salles de conférences (frontend)]
+
+== Menu
+
+image:espaces/conférences/manage_conferences.png[Liste des conférences dans le panneau d'administration]
+
+Après avoir initialement créé votre conférence, vous avez un sous-menu où vous avez besoin de
+pour continuer à configurer plus d'informations à ce sujet.
+
+image:espaces/conférences/sidebar.png[Conférences sidebar]
+
+. Info: la même forme que celle que nous avons expliquée dans cette page.
+. xref:admin:spaces/conferences/components.adoc[Components]
+. xref:admin:spaces/conferences/categories.adoc[Categories]
+. xref:admin:spaces/conferences/attachments.adoc[Attachments]
+. xref:admin:spaces/conferences/media_links.adoc[Media Links]
+. xref:admin:spaces/conferences/partners.adoc[Partners]
+. xref:admin:spaces/conferences/speakers.adoc[Speakers]
+. xref:admin:spaces/conferences/registrations.adoc[Registrations]
+.. xref:admin:spaces/conferences/registrations/types.adoc[Registration Types]
+.. xref:admin:spaces/conferences/registrations/users.adoc[User Registrations]
+.. xref:admin:spaces/conferences/registrations/invites.adoc[Invites]
+.. xref:admin:spaces/conferences/registrations/certificates.adoc[Certificate of Attendance]
+. xref:admin:spaces/conferences/admins.adoc[Conference admins]
+. xref:admin:spaces/conferences/moderations.adoc[Moderations]

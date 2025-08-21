@@ -1,0 +1,29 @@
+= Participants
+
+Parfois, en tant qu'administrateur, vous aurez besoin de faire certaines tâches avec les participants, parmi eux:
+
+* Donner des permissions aux autres administrateurs pour qu'ils puissent gérer le contenu de la plateforme
+* Vérifier les groupes d'utilisateurs (organisations ou collectives)
+* Pour vérifier les participants
+* Reconnaître qu'un participant a un statut spécial dans la plateforme, avec les Officialisations
+* Pour authentifier qu'une personne a le droit de voter, avec des autorisations
+* Pour contacter un participant
+
+Vous pouvez accéder à cette section dans la barre latérale principale du panneau d'administration.
+
+image:participants_menu.png[Menu des participants]
+
+Une fois que tu es parmi tu peux voir tous les types de participants et d'actions que tu peux faire:
+
+image:participants_sidebar_menu.png[Menu latéral des participants]
+
+* xref:admin:participants/admins.adoc[Administrateurs]
+* xref:admin:participants/groups.adoc[Groupes d'utilisateurs]
+* xref:admin:participants/participants.adoc[Participants]
+* xref:admin:participants/impersonations.adoc[Utilisateurs représentés]
+** xref:admin:participants/verifications_conflicts.adoc[Conflits de vérification]
+* xref:admin:participants/reported_users.adoc[Utilisateurs signalés]
+* xref:admin:participants/authorizations.adoc[Autorisations]
+** xref:admin:participants/authorizations/identity_documents.adoc[Documents d'identité]
+** xref:admin:participants/authorizations/code_postal_letter.adoc[Code par lettre postale]
+** xref:admin:participants/authorizations/census.adoc[Recensement de l'organisation]

@@ -1,90 +1,90 @@
-= Participants
+= Participantes
 
-In this page an administrator can:
+Nesta página, um administrador pode:
 
-* Block a participant, for instance because she's spamming or acting against the Terms of Service
-* Contact a participant with Decidim private messages (Conversations)
-* Officialize a participant
-* See its email
+* Bloqueie um participante, por exemplo, porque ele está fazendo spam ou agindo contra os Termos de Serviço
+* Entre em contato com um usuário com mensagens privadas Decidim (Conversas)
+* Oficialize um usuário
+* Ver seu email
 
 image:participants_participants.png[Participants list]
 
-== Actions
+== Ações.
 
-image:participants_participants_actions.png[Participants actions]
+image:participants_participants_actions.png[ações dos participantes]
 
 |===
-|Icon |Name |Definition
+|Ícone |Nome: |Definição
 
-|image:action_block.png[Block user]
+|imagem:action_block.png[Bloquear usuário]
 |xref:_block_user[Block user]
-|To block or moderate a participant.
+|Para bloquear ou moderar um usuário.
 
-|image:action_show_email.png[Show email]
+|image:action_show_email.png[Mostrar email]
 |xref:_show_email_address[Show email address]
-|To show an email of a participant.
+|Para mostrar um e-mail de um participante.
 
-|image:action_contact.png[Contact]
+|imagem:action_contact.png[Contact]
 |xref:_contact[Contact]
-|To contact a participant with Decidim private messages (Conversations)
+|Para entrar em contato com um usuário com mensagens privadas Decidim (Conversas)
 
 |image:action_officialize.png[Officialize]
 |xref:_officialize[Officialize]
-|To recognize that a participant has a special status in the platform
+|Para reconhecer que um usuário tem um estatuto especial na plataforma
 
 |image:action_reofficialize.png[Reoffficialize]
-|Reoffficialize
-|To change an officialization. See xref:_officialize[Officialize]
+|Reficializar
+|Para alterar uma oficialização. See xref:_officialize[Officialize]
 
 |image:action_unofficialize.png[Unofficialize]
-|Unofficialize
-|To revoke an officialization. See xref:_officialize[Officialize]
+|Desfamiliarizar
+|Revogando uma oficialização. See xref:_officialize[Officialize]
 |===
 
-=== Block user
+=== Bloquear usuário
 
 After clicking in this option you'll need to provide a justification why you're
 blocking this participant:
 
-image:participants_block_user_justification.png[Justificate the blocked user action]
+imagem:participants_block_user_justification.png[Justifice a ação de usuário bloqueado]
 
-Once a blocked participant tries to log-in she'll see an error message:
+Uma vez que um usuário bloqueado tentar entrar, eles verão uma mensagem de erro:
 
-image:participants_block_user_alert.png[Message shown to blocked user]
+imag:participants_block_user_alert.png[Mensagem mostrada ao usuário bloqueado]
 
-After a participant was blocked its name is changed to "Blocked user".
+Depois que um usuário for bloqueado seu nome é alterado para "Usuário bloqueado".
 
-See more at xref:admin:participants/reported_users.adoc[Reported users]
+Veja mais na xref:admin:participants/reported_users.adoc[Usuários reportados]
 
-=== Show email address
+=== Mostrar endereço de e-mail
 
-After clicking this option, the admin will see a modal. She'll have to click in
+Depois de clicar nesta opção, o administrador verá uma modal. She'll have to click in
 button "Show email address".
 
 image:participants_show_email.png[Modal in show email]
-image:participants_showed_email.png[Modal after the email is shown]
+image:participants_showed_email.png[Modal após o email ser mostrado]
 
-This action will be logged in the Admin actvity log.
+Esta ação será registrada no log de actividades do Admin.
 
-image:participants_showed_email_admin_log.png[Admin activity log for show email]
+image:participants_showed_email_admin_log.png[Registro de atividade administrativa para mostrar e-mail]
 
-=== Contact
+=== contato
 
-By clicking on this option, it will open the private messaging (Conversation) for
-this participant.
+Ao clicar nesta opção, abrirá a mensagem privada (conversa) para
+este participante.
 
-image:participants_conversation.png[Conversation with a participant].
+image:participants_conversation.png[Conversa com um participante].
 
-=== Officialize
+=== Oficializar
 
 This option is useful to recognize that a participant has a special status in the
-platform. For instance, if someone is the City Mayor, a City Councillor or the
-President of an Association in an organization context.
+platform. Por exemplo, se alguém for o prefeito da cidade, um conselheiro da cidade ou o presidente
+de uma associação em um contexto de organização.
 
-After Officializing a participant you can:
+Após Oficializar um participante, você pode:
 
-- Change the Officialization text with "Reofficialize"
-- Revoke the Officialization status with "Unofficialize"
+- Altere o texto de Oficialização com "Reoficializar"
+- Revogar o status de Oficialização com "Unofficialize"
 
-image:participants_officialize.png[Officialize a participant]
-image:participants_participants_actions_officialize.png[Officialize a participant]
+imag:participants_officialize.png[Oficialize um participante]
+image:participants_participants_actions_officialize.png[Oficialize um participante]

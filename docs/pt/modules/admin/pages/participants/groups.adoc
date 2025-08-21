@@ -1,116 +1,116 @@
-= User Groups
+= Grupos de usuários
 
-An user group is a group of participants. Depending in the installation and the context of the organization it could be disabled. This is enabled or disabled in the administration dashboard, in Settings -> Configuration -> Edit organization -> Enable groups.
+Um grupo de usuários é um grupo de participantes. Dependendo da instalação e do contexto da organização ela pode ser desativada. Isso está ativado ou desativado no painel de administração, em Configurações-> Configuração -> Editar organização -> Habilitar grupos.
 
-== Creation
+== Criação
 
-This action is done by **a participant**. She needs to go to their profile and in the sidebar there's a button that says "Create group":
+Essa ação é feita por **um participante**. She needs to go to their profile and in the sidebar there's a button that says "Create group":
 
-image:user_sidebar.png[User sidebar]
+image:user_sidebar.png[Barra de Usuários]
 
-When clicked it'll open the "New group form":
+Quando clicado, abrirá o "Novo formulário de grupo":
 
-image:user_group_new_form.png[New user group form]
+image:user_group_new_form.png[Novo formulário de grupo de usuários]
 
 
-.New group form
+.Novo formulário de grupo
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Name
-|Required
-|Name of your organization, association, collective, group, etc.
+|Nome:
+|Obrigatório
+|Nome da sua organização, associação, coletivo, grupo, etc.
 
-|Nickname
-|Required
-|Nickname of your organization, association, collective, group, etc. Do not use spaces nor accents. 20 characters maximum.
+|Apelido
+|Obrigatório
+|Apelido da sua organização, associação, coletivo, grupo, etc. Não use espaços nem acentos. Máximo de 20 caracteres.
 
-|Email
-|Required
-|Email of your organization, association, collective, group, etc.
+|e-mail
+|Obrigatório
+|E-mail da sua organização, associação, coletivo, grupo etc.
 
 |Avatar
-|Optional
-|Guidance for image: Preferably a landscape image that does not have any text. The service crops the image. Maximum file size: 5MB. Allowed file extensions: jpg jpeg gif png bmp ico
+|Opcional
+|Orientação para imagem: Preferencialmente, uma imagem de paisagem que não possui qualquer texto. O serviço cultiva a imagem. Tamanho máximo do arquivo: 5MB. Extensões de arquivo permitidas: jpg jpeg gif png bmp ico
 
-|About
-|Optional
-|Description of what's this group.
+|SOBRE
+|Opcional
+|Descrição do que é este grupo.
 
-|Document number
-|Optional
-|Used for verifications. Do not use dashes nor spaces.
+|Número do documento
+|Opcional
+|Usado para verificações. Não use traços nem espaços.
 
-|Phone
-|Optional
-|Used for verifications. Do not use dashes nor spaces.
+|Smartphone
+|Opcional
+|Usado para verificações. Não use traços nem espaços.
 |===
 
-== Membership
+== Adesão
 
-After a group has been created, it's possible to invite participants to become members of the group. After a participant has accepted to be part of this group then she can become an admin.
+Após a criação de um grupo, é possível convidar os participantes para se tornarem membros do grupo. Depois que um usuário aceitar ser parte desse grupo, ele poderá se tornar um administrador.
 
-The actions that can be done by a participant in the user group are:
+As ações que podem ser feitas por um participante no grupo de usuários são:
 
-* Edit group profile
-* Manage members
-* Manage admins
+* Editar perfil de grupo
+* Gerenciar membros
+* Gerenciar administradores
 * Invite participant
-* Leave group
+* Sair do grupo
 
-image:user_group_invite_participant.png[User groups: invite a participant]
+image:user_group_invite_participant.png[Grupos de usuários: convidar um participante]
 
-== Group verifications
+== Verificações de grupo
 
-image:admin_user_group_verification.png[Admin panel: user group verifications]
+image:admin_user_group_verification.png[Painel de administração: verificações do grupo de usuários]
 
-This action is done by **an administrator**. A group can be:
-* Pending
-* Verified
-* Rejected
+Essa ação é feita por **um administrador**. Um grupo pode ser:
+* Pendente
+* Verificado
+* Rejeitado
 
-This can be done with the buttons at the sidebar:
+Isso pode ser feito com os botões na barra lateral:
 
-image:admin_user_group_verification_actions.png[Admin panel: user group verifications actions]
+image:admin_user_group_verification_actions.png[Painel de administração: ações de grupo de usuários
 
-When a user group is pending it can be verified or rejected. Once is verified it can be rejected and once is rejected it can be verified.
+Quando um grupo de usuários está pendente, pode ser verificado ou rejeitado. Uma vez verificado, pode ser rejeitado e, uma vez rejeitado, pode ser verificado.
 
-If you want to verify multiple user groups at the same time you can do so with the option "Verify via CSV":
+Se você deseja verificar vários grupos de usuários ao mesmo tempo você pode fazê-lo com a opção "Verificar via CSV":
 
-image:admin_user_group_verification_csv.png[Admin panel: user group verifications CSV]
+image:admin_user_group_verification_csv.png[Painel de administração: verificações de grupo do usuário CSV]
 
 ....
-Upload your CSV file. It must have the official emails of the groups in your organization in the first column of the file, without headers. Only groups that have confirmed their email and that have an email appearing in the CSV file will be validated.
+Envie seu arquivo CSV. Deve ter os e-mails oficiais dos grupos da sua organização na primeira coluna do arquivo, sem cabeçalhos. Apenas grupos que confirmaram seus e-mails e que tenham um e-mail aparecendo no arquivo CSV serão validados.
 ....
 
-After a group is verified this is publicly visible in their nickname in the platform and there's a message in its profile: "This group is publicly verified, its name has been verified to correspond with its real name".
+Depois que um grupo é verificado, isso será visível publicamente em seu apelido na plataforma e há uma mensagem no seu perfil: "Este grupo é verificado publicamente, seu nome foi verificado para corresponder com seu nome verdadeiro".
 
-image:user_group_verified.png[User group: verified icon]
+image:user_group_verificed.png[Grupo de usuários: ícone verificado]
 
-== Actions
+== Ações.
 
-As a verified user group, there's some options that your participant account can do in behalf of the group, such as:
+Como um grupo de usuários verificado, existem algumas opções que sua conta de usuário pode fazer em nome do grupo, tais como:
 
-=== Create a Debate, Proposal or Meeting
+=== Criar um depósito, proposta ou reunião
 
-There's a dropdown in the form during the creation process:
+Há um menu suspenso no formulário durante o processo de criação:
 
-image:user_group_create_debate.png[User group: create a debate]
+image:user_group_create_debate.png[Grupo de usuários: crie uma discussão]
 
-=== Make a comment
+=== Fazer um comentário
 
-There's a dropdown in the form when making a comment:
+Há um menu suspenso no formulário ao fazer um comentário:
 
-image:user_group_make_comment.png[User group: make a comment]
+image:user_group_make_comment.png[Grupo de usuários: fazer um comentário]
 
-=== Endorse
+=== Endossar
 
-When making an Endorse there's a modal window asking who do you want to make the endorse with:
+Ao fazer um Endorme há uma janela modal perguntando com quem você deseja fazer o endosso:
 
-image:user_group_endorse.png[User group: endorse]
+image:user_group_endorse.png[Grupo de usuários: endos]
 
-=== Conversations
+=== Conversas
 
-You can also have Conversations as a group. This is in the group profile page:
+Você também pode ter conversas como grupo. Isto está na página de perfil do grupo:
 
-image:user_group_conversation.png[User group: conversations]
+image:user_group_conversation.png[Grupo de usuários: conversas]

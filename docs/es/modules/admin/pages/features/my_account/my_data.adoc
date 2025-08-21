@@ -1,29 +1,29 @@
-= My data
+= Mis datos
 
-In this section participants can request a file with all the data that they've provided to the platform.
+En esta sección los participantes pueden solicitar un archivo con todos los datos que han proporcionado a la plataforma.
 
-image:features/my_account/my_data.png[My data]
+image:features/mi_cuenta/mi_data.png[Mis datos]
 
-To request the data:
+Para solicitar los datos:
 
-. Sign in as a participant
-. Click in the name of the participant in the header
-. Click in "My account"
-. Click in "My data" in the sidebar
-. Click in "Request data"
-. Wait a couple of minutes so the files are generated. It could depend in how many proposals, comments, etc you've made
-. Go to your email account and find the received email
-. Click in "Download"
-. Open it with a support zip software
-. Enter the password that you've received in the email
-. Unzip or extract the contents
+. Inicia sesión como participante
+. Haga clic en el nombre del participante en la cabecera
+. Haz clic en "Mi cuenta"
+. Haz clic en "Mis datos" en la barra lateral
+. Haga clic en "Solicitar datos"
+. Espere un par de minutos para que se generen los archivos. Podría depender de cuántas propuestas, comentarios, etc que hayas hecho
+. Ve a tu cuenta de correo electrónico y encuentra el correo recibido
+. Haga clic en "Descargar"
+. Ábrelo con un software zip de soporte
+. Introduzca la contraseña que ha recibido en el correo electrónico
+. Descomprimir o extraer el contenido
 
-image:features/my_account/my_data_email.png[My data]
+imagen:características/mi_cuenta/mi_data_email.png[Mis datos]
 
-== Zip applications
+== Aplicaciones Zip
 
-For opening the zip file, the software that you use need to support encryption with the AES-256 algorithm. Depending on your operating system you have multiple alternatives.
+Para abrir el archivo zip, el software que utiliza debe soportar el cifrado con el algoritmo AES-256. Dependiendo de su sistema operativo tiene múltiples alternativas.
 
 * Windows: https://www.7-zip.org/[7-Zip]
 * Mac: https://www.keka.io[Keka]
-* GNU/Linux: File Roller (available through your package manager) or https://peazip.github.io/[PeaZip]
+* GNU/Linux: File Roller (disponible a través de su gestor de paquetes) o https://peazip.github.io/[PeaZip]

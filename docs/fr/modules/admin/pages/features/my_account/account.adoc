@@ -1,0 +1,47 @@
+= Compte client
+
+Dans cette section il est possible de faire des modifications qui seront visibles dans les participants xref:features/my_public_profile. doc[profil public] et modifient également l'adresse e-mail ou la langue que la plateforme utilisera avec l'utilisateur.
+
+. Se connecter en tant que participant
+. Cliquez dans le nom du participant dans l'en-tête
+. Cliquez dans "Mon compte"
+
+image:features/my_account/account.png[Formulaire de mon compte]
+
+
+.Paramètres des participants - Formulaire de mon compte
+|===
+|Champ |Type |Description
+
+|Avatars
+|Facultatif
+|Avatar ou photo pour le participant. Orientation pour l'image: De préférence une image de paysage qui n'a pas de texte.
+Le service récolte l'image. Taille maximale du fichier : 5 Mo
+
+|Votre nom
+|Obligatoire
+|Le nom du participant.
+
+|Pseudo
+|Obligatoire
+|Le surnom du participant.
+
+|Votre adresse e-mail
+|Obligatoire
+|L'e-mail du participant, où ils recevront des notifications, de récupération de mot de passe, etc. If it's changed it needs to be
+confirmed.
+
+|URL personnelle
+|Facultatif
+|Métadonnées affichées dans le profil du participant.
+
+|À propos de
+|Facultatif
+|Métadonnées affichées dans le profil du participant.
+
+|Locale
+|Obligatoire
+|Choisissez la langue que vous souhaitez utiliser pour naviguer et recevoir des notifications dans Decidim
+|===
+
+À partir de cette page il est possible de modifier également le mot de passe du participant.

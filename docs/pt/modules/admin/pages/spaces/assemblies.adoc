@@ -1,308 +1,308 @@
-= Assemblies
+= Assembleias
 
 An assembly is a group of members of an organization who meet periodically to make decisions about a specific area or
 scope of the organization.
 
-Assemblies hold meetings, some are private and some are open. If they are open, it is possible to participate in them
-(for example: attending if the capacity allows it, adding points to the agenda, or commenting on the proposals and decisions taken by this organ).
+Realizam-se reuniões de assembleias, algumas são privadas e outras estão abertas. Se eles estiverem abertos, é possível participar deles
+(por exemplo: participar se a capacidade permitir, acrescentar pontos à ordem do dia, ou comentar as propostas e decisões tomadas por este órgão).
 
-Examples: A general assembly (which meets once a year to define the organisation's main lines of action as well as its
-executive bodies by vote), an equality advisory council (which meets every two months to make proposals on how to improve
-gender relations in the organisation), an evaluation commission (which meets every month to monitor a process) or a guarantee
-body (which collects incidents, abuses or proposals to improve decision-making procedures) are all examples of assemblies.
+Exemplos: Uma assembleia geral (que se reúne uma vez por ano para definir as linhas de ação principais da organização, bem como seus órgãos executivos
+por voto), um conselho consultivo para a igualdade (que reúne de dois em dois meses para fazer propostas sobre como melhorar as relações
+de género na organização), uma comissão de avaliação (que reúne a cada mês para monitorar um processo) ou um corpo da garantia
+(que coleta incidentes, abusos ou propostas para melhorar os processos de decisão) são exemplos de assembleias.
 
-The main difference between xref:admin:spaces/processes.adoc[participatory processes] and assemblies is that assemblies don't
-have phases, meaning that they don't have timelines.
+A diferença principal entre xref:admin:spaces/processes.adoc[participatory processes] e assemblies é que os assemblies não possuem
+phases, o que significa que eles não têm cronogramas.
 
-You can see a real world usage of assemblies in https://www.decidim.barcelona/assemblies[Decidim Barcelona], where you
-can see the different Participation Organs, that are the regular spaces where the City Council meets with citizens and organizations
-to get feedback.
+Você pode ver o uso real de assemblies no mundo em https://www.decidim. arcelona/assemblies[Decidim Barcelona], onde você
+pode ver as diferentes organizações de participação, que são os espaços regulares onde a Câmara Municipal se reúne com cidadãos e organizações
+para receber feedback.
 
-In this section, we'll explain how we can configure an Assembly in Decidim.
+Nesta seção, explicaremos como configurar uma Assembleia em Decidim.
 
-== List
+== Lista
 
-To configure assemblies on the Decidim platform, click on btn:[Assemblies] in the admin sidebar menu. A list
-will appear with the existing assemblies if there are any:
+Para configurar assemblies na plataforma Decidim, clique no btn:[Assemblies] no menu lateral do admin. Uma lista
+aparecerá com os conjuntos existentes se houver alguma:
 
-image:assemblies_list.png[Assemblies list]
+image:assemblies_list.png[Lista de montagens]
 
-You can filter by the ones that are:
+Você pode filtrar por aqueles que são:
 
-* Published / Unpublished
-* Public / Private
+* Publicado / Não Publicado
+* Público / Privado
 
-image:assemblies_list_filter.png[Assemblies list filtered]
+imagem:assemblies_list_filter.png[Lista de montagens filtrada]
 
-You can also search by title and control how many elements are in the list.
+Você também pode pesquisar por título e controlar quantos elementos estão na lista.
 
-You have 4 possible actions in this list after an Assembly is created:
+Você tem 4 ações possíveis nesta lista após a criação de um Assembly
 
-. Export: send by email the configuration for a given assembly. Can be imported in other Decidim installation.
-. Duplicate: to duplicate this assembly.
-. Configure: to edit the metadata and configuration for a assembly.
-. Assemblies: to manage all the children assemblies for a assembly.
-. Preview: how it will look once published.
+. Exportar: enviar por e-mail a configuração de uma determinada assembleia. Pode ser importado em outra instalação Decidim.
+. Duplicar: para duplicar este assembly.
+. Configuração: para editar os metadados e a configuração para uma montagem.
+. Assembleias: gerir todas as assembleias filhas para uma assembleia.
+. Pré-visualização: como vai parecer uma vez publicado.
 
-== New assembly form
+== Novo formulário de montagem
 
-image:assemblies_new_form.png[New assembly form]
+image:assemblies_new_form.png[Novo formulário de montagem]
 
 
-.New assembly form: General information
+.Novo formulário de assembleia: Informações gerais
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Title
-|Required
-|Title of the assembly. For instance, "General Committee".
+|Título
+|Obrigatório
+|Título da montagem. Por exemplo, "Comitê Geral".
 
-|Subtitle
-|Required
-|Subtitle. For instance, "Let's decide our priorities together"
+|Legenda
+|Obrigatório
+|Subtítulo. Por exemplo, "Vamos decidir juntos nossas prioridades"
 
-|Order position
-|Required
-|Which order will it have in relation with the other assemblies. Having a lower number means a higher priority. For instance,
-if you have two assemblies, "Assembly a" with weight "10" and "Assembly b" with weight "0", then "Assembly b" will be first when ordering.
+|Posição do pedido
+|Obrigatório
+|Que ordem terá em relação às outras assembleias. Ter um número menor significa uma prioridade mais alta. Por exemplo,
+se você tiver duas montanhas, "Assembly a" com peso "10" e "Assembly b" com peso "0", depois "Assembly b" será o primeiro na ordem.
 
-|URL slug
-|Required
-|URL slugs are used to generate the URLs that point to this assembly. Only accepts letters, numbers and dashes, and must
-start with a letter. Example: if your domain is 'example.org' and your slug 'general-committee' then your URL will
-be https://example.org/assemblies/general-committee
+|Slug de URL
+|Obrigatório
+|Os slugs de URL são usados para gerar os URLs que apontam para este assembly. Only accepts letters, numbers and dashes, and must
+start with a letter. Exemplo: se seu domínio é 'example.org' e seu slug 'general-comite' então seu URL será
+https://example.org/assemblies/general-comitê
 
-|Hashtag
-|Optional
-|Hashtag for Twitter
+|Palavras-chave
+|Opcional
+|Hashtag para o Twitter
 
-|Short description
-|Required
-|A short explanation of what's your participatory process about.
+|Breve descrição
+|Obrigatório
+|Uma breve explicação do conteúdo do processo participativo.
 
-|Description
-|Required
-|A long explanation of what's your assembly about.
+|Descrição:
+|Obrigatório
+|Uma longa explicação do que é a sua assembleia.
 
-|Purpose of action
-|Optional
-|Internal field that doesn't get shown publicly. To be removed in a future version.
+|Objetivo da ação
+|Opcional
+|Campo interno que não é mostrado publicamente. A ser removido em uma versão futura.
 
-|Composition
-|Optional
-|Internal field that doesn't get shown publicly. To be removed in a future version.
+|Composição
+|Opcional
+|Campo interno que não é mostrado publicamente. A ser removido em uma versão futura.
 
-|Internal organisation
-|Optional
-|Internal field that doesn't get shown publicly. To be removed in a future version.
+|Organização interna
+|Opcional
+|Campo interno que não é mostrado publicamente. A ser removido em uma versão futura.
 
-|Announcement
-|Optional
-|The text you enter here will be shown to the user right below the assembly information.
-|===
-
-
-.New assembly form: Duration
-|===
-|Field |Type |Description
-
-|Date created
-|Optional
-|Information that's displayed in the assembly metadata sidebar. Expected format: dd/mm/yyyy
-
-|Included at
-|Optional
-|Information that's displayed in the assembly metadata sidebar. The date when this assembly was added to Decidim. It does
-not necessarily have to be the same as the creation date. Expected format: dd/mm/yyyy
-
-|Duration
-|Optional
-|Information that's displayed in the assembly metadata sidebar. If the duration of this assembly is limited, select the
-end date. Otherwise, it will appear as indefinite. Expected format: dd/mm/yyyy
-
-|Closing date
-|Optional
-|Information that's displayed in the assembly metadata sidebar. When this assembly closed. Expected format: dd/mm/yyyy
-
-|Closing date reason
-|Optional
-|Information that's displayed in the assembly metadata sidebar. Why this assembly closed.
+|Anúncio
+|Opcional
+|O texto que você inserir aqui será mostrado ao usuário logo abaixo das informações de montagem.
 |===
 
 
-.New assembly form: Images
+.Novo formulário de montagem: duração
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Home image
-|Optional
-|Image that will be used in presentation cards of this assembly. Guidance for file: Has to be an image or a document.
-For images, use preferably landscape images that does not have any text, the service crops the image. Maximum file size: 10MB
-Allowed file extensions: jpeg jpg png
+|Data de criação
+|Opcional
+|Informações exibidas na barra lateral de metadados do assembly Formato esperado: dd/mm/aaaa
 
-|Banner image
-|Optional
-|Image that will be used inside of the assembly. Guidance for file: Has to be an image or a document.
-For images, use preferably landscape images that does not have any text, the service crops the image. Maximum file size: 10MB
-Allowed file extensions: jpeg jpg png
-|===
+|Incluído em
+|Opcional
+|Informações exibidas na barra lateral de metadados do assembly A data em que esta montagem foi adicionada ao Decidim. It does
+not necessarily have to be the same as the creation date. Formato esperado: dd/mm/aaaa
 
+|Duração
+|Opcional
+|Informações exibidas na barra lateral de metadados do assembly Se a duração deste assembly for limitada, selecione a data de término
+. Caso contrário, surgirá como indefinido. Formato esperado: dd/mm/aaaa
 
-.New assembly form: Filters
-|===
-|Field |Type |Description
+|Data de encerramento
+|Opcional
+|Informações exibidas na barra lateral de metadados do assembly Quando esta assembleia fechou. Formato esperado: dd/mm/aaaa
 
-|Scopes enabled
-|Optional
-|Check if you want to have Scopes filtering in this assembly.
-
-|Scope
-|Optional
-|Which xref:admin:scopes.adoc[Scope] does this assembly belongs to.
-
-|Area
-|Optional
-|Which xref:admin:areas.adoc[Area] does this assembly belongs to.
+|Data de encerramento
+|Opcional
+|Informações exibidas na barra lateral de metadados do assembly Por que esta assembleia fechou.
 |===
 
 
-.New assembly form: Metadata
+.Novo formulário de montagem: imagens
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|What is decided
-|Optional
-|Information that's displayed in the assembly metadata sidebar.
+|Imagem inicial
+|Opcional
+|Imagem que será usada nos cartões de apresentação desta assembleia. Guia para o arquivo: Tem que ser uma imagem ou um documento.
+Para imagens, use de preferência imagens de paisagem que não possuem texto, o serviço cultiva a imagem. Tamanho máximo do arquivo: 10MB
+Extensões de arquivo permitidas: jpeg jpg png
 
-|How is it decided
-|Optional
-|Information that's displayed in the assembly metadata sidebar.
-
-|Scope metadata
-|Optional
-|Information that's displayed in the assembly metadata sidebar.
-
-|Promoter group
-|Optional
-|Information that's displayed in the assembly metadata sidebar.
-
-|Organization area
-|Optional
-|Information that's displayed in the assembly metadata sidebar.
-
-|Who participates
-|Optional
-|Information that's displayed in the assembly metadata sidebar.
+|Imagem do banner
+|Opcional
+|Imagem que será usada dentro da montagem. Guia para o arquivo: Tem que ser uma imagem ou um documento.
+Para imagens, use de preferência imagens de paisagem que não possuem texto, o serviço cultiva a imagem. Tamanho máximo do arquivo: 10MB
+Extensões de arquivo permitidas: jpeg jpg png
 |===
 
 
-.New assembly form: Visibility
+.Novo formulário de montagem: filtros
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Parent assembly
-|Optional
-|What is the assembly that this assembly belongs to. For instance in Metadecidim, the https://meta.decidim.org/assemblies/coordination-committee[Coordination Committee]
-has the parent assembly of the https://meta.decidim.org/assemblies/general-assembly-association[General%20Assembly%20of%20the%20Decidim%20Association].
+|Âmbitos ativados
+|Opcional
+|Verifique se você quer ter filtros de escopos nesta montagem.
 
-|Highlighted
-|Optional
-|Check if you want the assembly to have more visibility in the Assemblies public list. It'll also be visible in the
-Assembly Content Block in the xref:admin:homepage.adoc[Homepage] configuration.
+|Escopo
+|Opcional
+|Qual xref:admin:scopes.adoc[Scope] faz esta montagem.
 
-|Private space
-|Optional
-|Check if this assembly should only be accessible by xref:admin:spaces/assemblies/private_participants.adoc[Private Participants]
-
-|Is transparent
-|Optional
-|Check if this assembly is private but should be visible to all the rest of participants. This means that other participants
-or visitors will see it but they won't be able to interact with it.
+|área
+|Opcional
+|Qual xref:admin:areas.adoc[Area] faz esta montagem.
 |===
 
 
-.New assembly form: Other
+.Novo formulário de montagem: Metadados
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Created by
-|Optional
-|Choose one of "City Council", "Public" or "Other". If it's Other, you can specify the name of the organization that created
-this assembly.
+|O que é decidido
+|Opcional
+|Informações exibidas na barra lateral de metadados do assembly
 
-|Assembly type
-|Optional
-|Which xref:_assemblies_types[assembly type] is this assembly.
+|Como é decidido
+|Opcional
+|Informações exibidas na barra lateral de metadados do assembly
 
-|Related processes
-|Optional
-|Select other participatory processes that are related to this assembly.
+|Metadados do escopo
+|Opcional
+|Informações exibidas na barra lateral de metadados do assembly
 
-|Social
-|Optional
-|Which social networks profile does this assembly has. Can be Twitter, Facebook, Instagram, YouTube and/or GitHub. It's
-displayed in the assembly metadata sidebar.
+|Grupo promotor
+|Opcional
+|Informações exibidas na barra lateral de metadados do assembly
 
-|Show statistics
-|Optional
-|Check if you want to show the Statistics section.
+|Área da organização
+|Opcional
+|Informações exibidas na barra lateral de metadados do assembly
+
+|Quem participa
+|Opcional
+|Informações exibidas na barra lateral de metadados do assembly
 |===
 
-After you've initially created your assembly you have a submenu where you need to keep configuring more information
-about your assembly.
 
-image:assembly_submenu.png[Assembly submenu in admin]
+.Novo formulário de montagem: visibilidade
+|===
+|Campo |tipo |Descrição:
 
-Here you can keep configuring your process:
+|Montagem dos pais
+|Opcional
+|O que é a assembleia que esta assembleia pertence. Por exemplo, em Metadecidim, o https://meta.decidim.org/assemblies/coordination-committee[Comitê de Coordenação]
+tem a montagem pai de https://meta.decidim.org/assemblies/general-assembly-association[General%20Assembly%20of%20the%20Decidim%20Association].
 
-. Info: the same form that we explained in this page.
+|Destacado
+|Opcional
+|Verifique se você quer que a assembleia tenha mais visibilidade na lista pública de montagens. Também será visível na configuração
+Bloco de Conteúdo da Assembly na xref:admin:homepage.adoc[Homepage].
+
+|Espaço privado
+|Opcional
+|Verifique se esta montagem só deve ser acessível pelo xref:admin:spaces/assemblies/private_participants.adoc[Participantes Privados]
+
+|É transparente
+|Opcional
+|Verificar se esta montagem é privada, mas deve ser visível para todos os outros participantes. Isto significa que outros participantes
+ou visitantes o verão mas eles não serão capazes de interagir com ele.
+|===
+
+
+.Novo formulário de montagem: Outro
+|===
+|Campo |tipo |Descrição:
+
+|Criado Por
+|Opcional
+|Escolha um dos "Conselho da Cidade", "Público" ou "Outro". Se for o caso, você pode especificar o nome da organização que criou
+essa montagem.
+
+|Tipo de assembleia
+|Opcional
+|Qual xref:_assemblies_types[assembly type] é este assembly.
+
+|Processos relacionados
+|Opcional
+|Selecione outros processos participativos que estão relacionados a este assembly.
+
+|Sócio
+|Opcional
+|Qual é o perfil das redes sociais que esta assembleia possui. Pode ser o Twitter, Facebook, Instagram, YouTube e/ou GitHub. É
+exibido na barra lateral de metadados do assembly
+
+|Mostrar estatísticas
+|Opcional
+|Verifique se você quiser mostrar a seção de Estatísticas.
+|===
+
+Depois de ter criado inicialmente seu assembly você tem um submenu onde você precisa continuar configurando mais informações
+sobre a sua assembleia.
+
+image:assembly_submenu.png[submenu Assembly no admin]
+
+Aqui você pode continuar configurando seu processo:
+
+. Informação: a mesma forma que explicamos nesta página.
 . xref:admin:spaces/assemblies/components.adoc[Components]
 . xref:admin:spaces/assemblies/categories.adoc[Categories]
 . xref:admin:spaces/assemblies/attachments.adoc[Attachments]
 . xref:admin:spaces/assemblies/members.adoc[Members]
 . xref:admin:spaces/assemblies/admins.adoc[Assembly admins]
-. xref:admin:spaces/assemblies/private_participants.adoc[Private participants]
+. xref:admin:spaces/assemblies/private_participants.adoc[Participantes privados]
 . xref:admin:spaces/assemblies/moderations.adoc[Moderations]
 
-== Assemblies types
+== Tipos de montagens
 
-For clasyfing the assemblies in different kinds, you can define Assembly types. These types can be filtered in the public
-assemblies page.
+Para classificar os conjuntos de diferentes tipos, você pode definir tipos de assembleia. Estes tipos podem ser filtrados na página
+assemblies pública.
 
-image:assemblies_type_filters.png[Filter by assembly type]
+image:assemblies_type_filters.png[Filtrar pelo tipo de montagem]
 
-image:assemblies_new_type_form.png[New assembly type form]
+image:assemblies_new_type_form.png[Novo formulário de tipo de montagem]
 
 
-.New assembly type form
+.Novo formulário de tipo de montagem
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Title
-|Required
-|Title of the this assembly type. For instance, "Consultative".
+|Título
+|Obrigatório
+|Título deste tipo de montagem. Por exemplo, "consultivo".
 |===
 
-== Settings
+== Confirgurações
 
-At the moment there's only a setting for configuring the general behaviour of assemblies.
+Neste momento há apenas uma configuração para configurar o comportamento geral das assembleias.
 
-image:assemblies_settings.png[Assemblies settings]
+image:assemblies_settings.png[Configurações de montagens]
 
 
-.Settings for assemblies form
+.Configurações do formulário assemblies
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Enable organization chart
+|Habilitar gráfico de organização
 |Checkbox
-|Whether you want to show the organization chart in the assemblies list.
+|Se você deseja mostrar o gráfico da organização na lista de montagens.
 |===
 
-The organization chart is shown in the bottotm of the assemblies page.
+O gráfico da organização é mostrado no bottotm da página de montagens.
 
-image:assemblies_organization_chart.png[Assemblies organization chart]
+image:assemblies_organization_chart.png[Gráfico de montagens]
 
-It allows a navigation in the assemblies tree, with the possibility to see the sub-assemblies that belongs to a parent assembly.
+Permite uma navegação na árvore de montagens, com a possibilidade de ver os subconjuntos que pertencem a uma assembleia-mãe.
 
-image:assemblies_organization_chart_filtered.png[Assemblies organization chart filtered]
+imagem:assemblies_organization_chart_filtered.png[Gráfico de organizações Assemblies filtrado]

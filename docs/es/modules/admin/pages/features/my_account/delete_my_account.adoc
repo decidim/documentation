@@ -1,21 +1,21 @@
-= Delete my account
+= Eliminar mi cuenta
 
-In this section participants will be able to delete their own accounts. This means that they will be unable to access the system anymore. This action is irreversible. All the contributions will be anonymized.
+En esta sección los participantes podrán eliminar sus propias cuentas. Esto significa que ya no podrán acceder al sistema. Esta acción es irreversible. Todas las contribuciones serán anónimas.
 
-image:features/my_account/delete_my_account.png[Delete my account form]
+image:features/my_account/delete_my_account.png[Eliminar mi formulario de cuenta]
 
-To delete the account:
+Para eliminar la cuenta:
 
-. Sign in as a participant
-. Click in the name of the participant in the header
-. Click in "My account"
-. Click in "Delete my account" in the sidebar
-. Optionally, she can provide a reason for the deletion
-. Click in "Delete my account"
-. Click in "Yes, I want to delete my account"
+. Inicia sesión como participante
+. Haga clic en el nombre del participante en la cabecera
+. Haz clic en "Mi cuenta"
+. Haga clic en "Eliminar mi cuenta" en la barra lateral
+. Opcionalmente, pueden proporcionar una razón para la eliminación
+. Haga clic en "Eliminar mi cuenta"
+. Haga clic en "Sí, quiero eliminar mi cuenta"
 
-image:features/my_account/delete_my_account_confirm.png[Confirm account deletion]
+image:features/my_account/delete_my_account_confirm.png[Confirmar eliminación de cuenta]
 
-After the account has been deleted, the contributions (such as comments, proposals, etc), will be still visible but all the authorship information will be anonymized, belonging to an special kind of author called "Participant deleted":
+Después de que la cuenta haya sido eliminada, las contribuciones (como comentarios, propuestas, etc.), será todavía visible, pero toda la información de autor será anónima, perteneciente a un tipo especial de autor llamado "Participante eliminado":
 
-image:features/my_account/delete_my_account_deleted.png[Deleted participant contribution]
+image:features/my_account/delete_my_account_deleted.png[Contribución del participante eliminada]

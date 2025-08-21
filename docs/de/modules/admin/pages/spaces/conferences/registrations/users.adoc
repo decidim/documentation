@@ -1,0 +1,27 @@
+= Benutzerregistrierung
+
+Nachdem sich die Teilnehmer registriert haben, werden sie in diesem Abschnitt erscheinen.
+
+image:spaces/conferences/user_registrations.png[Conferences user registrations (backend)]
+
+Als Administrator können Sie:
+
+* Registrierungen exportieren
+* Registrierung bestätigen
+
+== Exportieren
+
+Es ist möglich, die Registrierungen in mehreren Formaten zu exportieren: CSV, JSON und XLSX (Excel).
+
+== Strömung
+
+. Ein Teilnehmer registriert sich zur Konferenz
+. They receive a pending registration notification
+image:spaces/conferences/user_registration_pending_notification.png[Notification for pending user registration]
+. They receive a pending registration email
+image:spaces/conferences/user_registration_pending_email.png[Email for pending user registration]
+. Ein Administrator überprüft und bestätigt die Registrierung mit der Schaltfläche image:action_check.png[Confirm]
+. Der Teilnehmer erhält eine Bestätigungsbenachrichtigung zur Registrierung
+image:spaces/conferences/user_registration_confirmed_notification.png[Benachrichtigung für bestätigte Benutzerregistrierung]
+. They receive a confirmed registration email with an calendar file (.ICS).
+image:spaces/conferences/user_registration_confirmed_email.png[E-Mail für bestätigte Benutzer-Registrierung]

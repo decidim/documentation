@@ -1,67 +1,67 @@
-= Space Admins
+= Administradores de espacio
 
-You can give permissions to users with special rights in a space,
-so they can only have access to some of the administration pages in this space.
-These roles are administrators, moderators, collaborators, or valuators.
+Puedes dar permisos a usuarios con derechos especiales en un espacio,
+para que sólo puedan tener acceso a algunas de las páginas de administración en este espacio.
+Estos roles son administradores, moderadores, colaboradores o valoradores.
 
-* Administrators: they can administer the space and change the space settings.
-* Collaborators: they can see the space and its components before it's published and view the space settings.
-They can't change anything.
-* Moderators: they can see the reported contents of the space and hide or unhide them.
-* Valuators: they can evaluate proposals. Used by participatory budgeting processes.
+* Administradores: pueden administrar el espacio y cambiar la configuración del espacio.
+* Colaboradores: pueden ver el espacio y sus componentes antes de su publicación y ver los ajustes del espacio.
+No pueden cambiar nada.
+* Moderadores: pueden ver los contenidos reportados del espacio y ocultarlos o desocultarlos.
+* Valoradores: pueden evaluar las propuestas. Utilizado por procesos participativos.
 
-To invite them, in the space's submenu, go to *Space admins* and click on *New space admin*. This depends in the kind of space
-that you're, for instance for participatory processes it'd be *Process admins* and *New process admin*.
+Para invitarlos, en el submenú del espacio, vaya a *Administradores del espacio* y haga clic en *Administrador del nuevo espacio*. Esto depende del tipo de espacio
+que tú, por ejemplo para los procesos participativos sería *Administradores de procesos* y *Administrador de nuevo proceso*.
 
-== New space admin form
+== Nuevo formulario de administración de espacio
 
-image:spaces/admins_form.png[New space admin form]
+image:spaces/admins_form.png[Nuevo formulario de administración de espacio]
 
 
-.New space admin form
+.Nuevo formulario de administración de espacio
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Name
-|Required
-|What is the name of the new admin.
+|Nombre
+|Requerido
+|¿Cuál es el nombre del nuevo administrador.
 
-|Email
-|Required
+|E-mail
+|Requerido
 |What is the email of the new admin, so she can receive the invitation.
 
-|Role
-|Required
-|Which role does this admin will have in the participatory process? Can be any of Administrator, Collaborator, Moderator, or Valuator.
+|Rol
+|Requerido
+|¿Qué rol tendrá este administrador en el proceso participativo? Puede ser cualquier Administrador, Colaborador, Moderador o Valorador.
 |===
 
 == Roles
 
-=== Administrators
+=== Administradores
 
-A space administrator can administer the space and change the space settings. It can also invite new space administrators.
+Un administrador de espacio puede administrar el espacio y cambiar la configuración del espacio. También puede invitar a nuevos administradores espaciales.
 
-image:spaces/admins_role_admin01.png[Process administrators view 01]
+image:spaces/admins_role_admin01.png[Procesos administradores ver 01]
 
-image:spaces/admins_role_admin02.png[Process administrators view 02]
+image:spaces/admins_role_admin02.png[Los administradores de procesos ven 02]
 
-=== Collaborators
+=== Colaboradores
 
-A space collaborator can only see the space before it's published.
+Un colaborador del espacio sólo puede ver el espacio antes de su publicación.
 
-image:spaces/admins_role_collaborator.png[Process collaborators view]
+image:spaces/admins_role_collaborator.png[Vista de los colaboradores de proceso]
 
-=== Moderators
+=== Moderadores
 
-A space moderator can review the reported contents of the space and hide or unhide them.
+Un moderador de espacio puede revisar los contenidos reportados del espacio y ocultarlos o ocultarlos.
 
-image:spaces/admins_role_moderator.png[Process moderators view]
+imagen:spaces/admins_role_moderator.png[Vista de moderadores de proceso]
 
-=== Process valuators
+=== Evaluadores de proceso
 
-A space valuator can review the proposals of the space. She can:
+Un evaluador espacial puede revisar las propuestas del espacio. She can:
 
-* change the status of the proposals, by accepting or rejecting them
-* add a monetary value to the proposals, so they can be voted with the budget component.
+* cambiar el estado de las propuestas, aceptándolas o rechazándolas
+* añadir un valor monetario a las propuestas, para que puedan ser votadas con el componente presupuestario.
 
-image:spaces/admins_role_valuator.png[Process valuators view]
+imagen:spaces/admins_role_valuator.png[Vista de valuadores de proceso]

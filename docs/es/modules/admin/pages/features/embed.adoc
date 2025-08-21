@@ -1,20 +1,20 @@
-= Embed
+= Incrustar
 
-Sometimes you want to embed some content to an external page. For this you can use the `Embed` feature.
+A veces quieres incrustar algo de contenido en una página externa. Para esto puedes usar la función 'Embed'.
 
-image:features/embed/example.png[A proposal card embeded in another page]
+image:features/embed/example.png[Una tarjeta de propuesta integrada en otra página]
 
-== How to embed
+== Cómo insertar
 
-. Navigate to the content you want to embed.
-. Click on the `Embed` link in the sidebar. image:features/embed/link.png[]
+. Navega al contenido que quieres incrustar.
+. Haga clic en el enlace 'Embed' en la barra lateral. image:features/embed/link.png[]
 image:features/embed/sidebar.png[]
-. Copy the code from the modal.
-image:features/embed/modal.png[]
-. Paste that code in the external page where you want to embed it. The CMS or platform that you're using needs to supports
-changing HTML code.
+. Copia el código de la modal.
+imagen:características/embed/modal.png[]
+. Pega ese código en la página externa donde quieras incrustarlo. El CMS o plataforma que estás utilizando necesita soporte
+para cambiar el código HTML.
 
-An example of this code is:
+Un ejemplo de este código es:
 
 [source,html]
 ----

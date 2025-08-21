@@ -1,68 +1,68 @@
-= Speakers
+= Ponentes
 
-The speakers are people that are going to talk at the conference.
+Los oradores son personas que van a hablar en la conferencia.
 
-image:spaces/conferences/speakers_frontend.png[Conferences speakers (frontend)]
+imagen:spaces/conferences/speakers_frontend.png[Conferencias de oradores (frontend)]
 
-== Create a new speaker
+== Crear un nuevo altavoz
 
-image:spaces/conferences/speakers.png[Conferences speakers]
+imagen:espacios/conferences/speakers.png[Conferencias de oradores]
 
-For creating a new speaker of a conference:
+Para crear un nuevo orador de una conferencia:
 
-. Sign in as administrator
-. Go to the conferences section in the sidebar
-. Click on the conference Edit action
-. Click on the Speakers link in the sidebar
-. Click on the "New Conference Speaker" button
-. Fill the form
+. Iniciar sesión como administrador
+. Ir a la sección de conferencias en la barra lateral
+. Haga clic en la acción de edición de conferencia
+. Haga clic en el enlace de altavoces en la barra lateral
+. Haga clic en el botón "Nuevo orador de conferencias"
+. Rellene el formulario
 
-image:spaces/conferences/new_speaker.png[Conferences speakers]
+imagen:espacios/conferencias/new_speaker.png[Conferencias de altavoces]
 
 
-.New conference speaker form
+.Nuevo formulario de orador de conferencia
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Participant type
-|Required
-|Wheter this speaker is a non-participant or existing participant. Does she already have an account created on the platform?
+|Tipo de participante
+|Requerido
+|Si este orador no es un participante o un participante existente. ¿Ya tienen una cuenta creada en la plataforma?
 
-|Full name
-|Required if it's non-participant.
-|Name of the speaker.
+|Nombre completo
+|Requerido si no es participante.
+|Nombre del orador.
 
-|User or group
-|Required if it's an existing participant.
-|Type at least three characters to search.
+|Usuario o grupo
+|Requerido si es un participante existente.
+|Escriba al menos tres caracteres para buscar.
 
-|Related meetings
-|Optional
-|Which meetings does this speaker attend and participates actively?
+|Reuniones relacionadas
+|Opcional
+|¿A qué reuniones asiste y participa activamente este orador?
 
-|Position
-|Required
-|Metadata for showing extra information about the speaker.
+|Posición
+|Requerido
+|Metadatos para mostrar información adicional sobre el altavoz.
 
-|Affiliation
-|Required
-|Metadata for showing extra information about the speaker.
+|Afiliación
+|Requerido
+|Metadatos para mostrar información adicional sobre el altavoz.
 
-|Short Bio
-|Optional
-|Metadata for showing extra information about the speaker.
+|Bio corto
+|Opcional
+|Metadatos para mostrar información adicional sobre el altavoz.
 
-|Twitter handle
-|Optional
-|Metadata for showing extra information about the speaker.
+|Tasa de Twitter
+|Opcional
+|Metadatos para mostrar información adicional sobre el altavoz.
 
-|Personal URL
-|Optional
-|Metadata for showing extra information about the speaker.
+|URL personal
+|Opcional
+|Metadatos para mostrar información adicional sobre el altavoz.
 
 |Avatar
-|Optional
-|Metadata for showing extra information about the speaker.
+|Opcional
+|Metadatos para mostrar información adicional sobre el altavoz.
 
-Default image
+Imagen por defecto
 |===

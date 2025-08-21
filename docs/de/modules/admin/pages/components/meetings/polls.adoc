@@ -1,0 +1,29 @@
+= Umfragen
+
+CAUTION: Dieses Feature befindet sich noch in der aktiven Entwicklung und kann noch nicht in der Produktion verwendet werden.
+
+Durch das Verwalten von Umfragen ist es möglich, eine Umfrage zu definieren, die angezeigt wird, wenn eine Online-Besprechung stattfindet.
+Dies ist nützlich, um ein schnelles Feedback zu sehen und innerhalb des Meetings eine Entscheidung zu treffen, ohne das Meeting verlassen zu müssen und
+andere Werkzeuge (wie Umfragen oder Vorschläge) zu verwenden.
+
+Mit dieser Funktion kann ein Administrator Fragen definieren und auch verwalten, wann diese Fragen und deren Ergebnisse den Teilnehmern
+angezeigt werden.
+
+== Umfragen für ein Meeting aktivieren
+
+Um Umfragen für ein Meeting zu aktivieren:
+
+. Als Admin anmelden
+. Zum Admin-Panel wechseln
+. Wählen Sie in der Haupt-Seitenleiste den Bereich aus, unter dem Sie die Komponente konfigurieren möchten.
+Zum Beispiel "Prozesse", "Assemblies" oder "Konferenzen"
+. Klicken Sie auf "Meetings"
+. Besprechung durchsuchen, für die Umfragen definiert werden sollen
+. Klicken Sie auf den "Umfragen verwalten"-Button image:action_list.png[Umfragen verwalten]
+. Formular ausfüllen
+
+Das Formular ist so ziemlich der Decidim Formular-Builder, mit einem Vorbehalt: Sie können nur Einzel- und Multiple-Optionsfragen definieren.
+
+image:components/meetings/polls/backend.png[Backend for meeting polls]
+
+image:components/meetings/polls/backend_question.png[Definiere eine Frage in Meeting-Umfragen]

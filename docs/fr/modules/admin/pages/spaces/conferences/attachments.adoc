@@ -1,0 +1,81 @@
+= Fichiers joints
+
+Les pièces jointes permettent à un administrateur de télécharger des fichiers statiques vers une conférence.
+
+Quand une conférence est lancée, il est important de fournir aux citoyens autant d'informations que possible à leur sujet afin
+qu'ils puissent participer avec connaissance. C'est pourquoi il est utile d'ajouter des fichiers (Attachments) avec les informations que
+est considéré comme pertinent.
+
+Optionnellement, ces documents peuvent être regroupés dans *Dossiers*.
+
+Ils peuvent être trouvés dans la section "Médias et liens" de la Conférence :
+
+image:espaces/conférences/attachments.png[Conférences attachées (backend)]
+
+image:espaces/conferences/media_links_frontend.png[Conférences attachées (frontend)]
+
+En savoir plus à ce sujet dans xref:admin:spaces/conferences/media_links.adoc[liens médias].
+
+== Créer une nouvelle pièce jointe
+
+image:espaces/attachments_admin.png[Voir les pièces jointes d'une conférence dans l'interface admin]
+
+Pour créer une nouvelle phase d'une conférence :
+
+. Se connecter en tant qu'administrateur
+. Aller à la section de la conférence dans la barre latérale
+. Cliquez sur l'action Modifier la conférence
+. Cliquez sur le lien des pièces jointes dans la barre latérale
+. Cliquez sur le bouton "Nouvelle pièce jointe"
+
+image:espaces/attachments_new_form.png[Créer un nouveau formulaire de pièces jointes]
+
+
+.Créer une pièce jointe
+|===
+|Champ |Type |Description
+
+|Nom de la pièce jointe ou de l'image
+|Obligatoire
+|Quel est le titre de cette pièce jointe.
+
+|Poids
+|Facultatif
+|Quel ordre aura-t-il en relation avec les autres pièces jointes. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux catégories, "Attachement" avec le poids "10" et "Attachment b" avec le poids "0", puis "Pièce jointe b" sera d'abord lors de la commande.
+
+|Description
+|Obligatoire
+|Une longue description expliquant en quoi consiste ce fichier.
+
+|Répertoire
+|Facultatif
+|À quel dossier appartient cette pièce jointe.
+
+|Fichier
+|Obligatoire
+|Télécharger le fichier. Orientation pour le fichier: Doit être une image ou un document. Pour les images, utilisez de préférence des images paysagères, le service
+récolte l'image. Pour les fichiers CSV, le séparateur entre les colonnes doit être une virgule (","). Taille maximale du fichier : 10 Mo. Les extensions de fichier
+autorisées dépendent de la configuration de votre serveur.
+|===
+
+== Créer un nouveau dossier
+
+image:espaces/attachments_new_folder_form.png[Créer un nouveau dossier pour le formulaire de pièces jointes]
+
+
+.Créer un dossier
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Nom du dossier
+
+|Poids
+|Facultatif
+|Quel ordre aura-t-il en relation avec les autres dossiers. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux dossiers, "Dossier" avec le poids "10" et "Dossier b" avec le poids "0", puis "Dossier b" sera d'abord lors de la commande.
+
+|Description
+|Obligatoire
+|Une longue description expliquant de quoi il s'agit dans ce dossier.
+|===

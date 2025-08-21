@@ -1,0 +1,21 @@
+= Supprimer mon compte
+
+Dans cette section, les participants pourront supprimer leurs propres comptes. Cela signifie qu'ils ne pourront plus accéder au système. Cette action est irréversible. Toutes les contributions seront anonymisées.
+
+image:features/my_account/delete_my_account.png[Supprimer le formulaire de compte]
+
+Pour supprimer le compte :
+
+. Se connecter en tant que participant
+. Cliquez dans le nom du participant dans l'en-tête
+. Cliquez dans "Mon compte"
+. Cliquez sur "Supprimer mon compte" dans la barre latérale
+. Optionnellement, ils peuvent fournir une raison pour la suppression
+. Cliquez dans "Supprimer mon compte"
+. Cliquez sur "Oui, je veux supprimer mon compte"
+
+image:features/my_account/delete_my_account_confirm.png[Confirmer la suppression du compte]
+
+Une fois que le compte a été supprimé, les contributions (comme les commentaires, les propositions, etc.) sera toujours visible mais toutes les informations d'auteurs seront anonymisées, appartenant à un type spécial d'auteur appelé "Participant supprimé":
+
+image:features/my_account/delete_my_account_deleted.png[Contribution des participants supprimés]

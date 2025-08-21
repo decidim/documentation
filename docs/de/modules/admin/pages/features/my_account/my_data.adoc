@@ -1,0 +1,29 @@
+= Meine Daten
+
+In diesem Abschnitt können die Teilnehmer eine Datei mit allen Daten, die sie der Plattform zur Verfügung gestellt haben, anfordern.
+
+image:features/my_account/my_data.png[Meine Daten]
+
+Um die Daten anzufordern:
+
+. Als Teilnehmer anmelden
+. Klicken Sie im Namen des Teilnehmers in der Kopfzeile
+. Klicken Sie in "Mein Konto"
+. Klicken Sie in "Meine Daten" in der Seitenleiste
+. Klicken Sie in "Daten anfordern"
+. Warten Sie ein paar Minuten, damit die Dateien generiert werden. Es könnte davon abhängen, wie viele Vorschläge, Kommentare, usw. Sie gemacht haben
+. Gehen Sie zu Ihrem E-Mail-Konto und finden Sie die empfangene E-Mail
+. Klicken Sie in "Download"
+. Mit einer Zip-Software für Support öffnen
+. Geben Sie das Passwort ein, das Sie in der E-Mail erhalten haben
+. Inhalt entpacken oder entpacken
+
+image:features/my_account/my_data_email.png[Meine Daten]
+
+== Zip-Anwendungen
+
+Zum Öffnen der Zip-Datei muss die Software, die Sie verwenden, die Verschlüsselung mit dem AES-256-Algorithmus unterstützen. Abhängig von Ihrem Betriebssystem haben Sie mehrere Alternativen.
+
+* Windows: https://www.7-zip.org/[7-Zip]
+* Mac: https://www.keka.io[Keka]
+* GNU/Linux: File Roller (erhältlich über Ihren Paketmanager) oder https://peazip.github.io/[PeaZip]

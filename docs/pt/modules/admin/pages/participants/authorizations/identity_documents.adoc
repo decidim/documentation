@@ -1,141 +1,141 @@
-= Identity documents authorization
+= Autorização de documentos de identidade
 
-This authorization allows a participant to upload its identity documents. These documents depend on the organization,
-they could be a driver's license, a passport, a national identity card, a club membership card, etc.
+Esta autorização permite que um usuário carregue seus documentos de identidade. Estes documentos dependem da organização,
+eles podem ser uma carteira de motorista, um passaporte, um documento de identidade nacional, um cartão de associação de clube, etc.
 
-These documents will be reviewed by an administrator to accept or reject them. It's possible to do this process in two ways: Online or Offline.
+Estes documentos serão revisados por um administrador para aceitá-los ou rejeitá-los. É possível fazer este processo de duas maneiras: Online ou Offline.
 
-* Online: the participant will be asked to upload the documents, and the administrator will review these documents.
+* Online: será solicitado ao usuário fazer o upload dos documentos, e o administrador irá revisar esses documentos.
 * Offline: the participant will be asked to fill in some data, and then she'll need to go to a presential place to show her documents face to face.
 
-== Configuration
+== Configuração
 
-By clicking on the btn:[Config] button in this section, an administrator can configure the settings for this authorization.
+Clicando no btn:[Config] botão nesta seção, um administrador pode configurar as configurações para essa autorização.
 
-image:authorizations_id_document_configuration.png[ID document authorization configuration]
+image:authorizations_id_document_configuration.png[Configuração de autorização do documento de ID]
 
-NOTE: As you can see, this authorization is based in the original implementers reality, in this case in the Spanish identities document types.
-For instance, we're giving as options for document types "DNI, NIE or Passport" or we're asking for "Document number (with letter)"
-You can change this by xref:customize:code.adoc[code customizing or overriding] these things. We also accept xref:contribute:governance.adoc[Pull Request contributions]
+NOTE: Como podem ver, esta autorização baseia-se nos implementadores originais, neste caso nos tipos de documentos de identidade espanhóis.
+Por exemplo, estamos dando como opções para os tipos de documentos "DNI, "DNI, NIE ou Passapor", ou estamos pedindo "Número do documento (com letra)"
+Você pode mudar isso por xref:personalize: code. doc[código personalizando ou substituindo] essas coisas. We also accept xref:contribute:governance.adoc[Pull Request contributions]
 so it's possible to configure this.
 
 
-.ID Documents authorization configuration
+.Configuração de autorização de documentos ID
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Available methods
-|Required
-|At least one method must be selected. Options: Online and/or Offline.
+|Métodos disponíveis
+|Obrigatório
+|Pelo menos um método deve ser selecionado. Opções: Online e/ou Offline.
 
-|Instructions for offline verification
-|Required (if offline is selected)
-|Directions that participants need to follow to verify their documents when offline verification is selected. For instance,
-do they need to go to a specific place to show their documents? Is this place open some days of the week? Is it open
-for certain hours?
+|Instruções para verificação offline
+|Obrigatório (se offline estiver selecionado)
+|Direções que os participantes precisam seguir para verificar seus documentos quando a verificação offline é selecionada. Por exemplo,
+eles precisam ir a um lugar específico para mostrar seus documentos? Este lugar está aberto alguns dias da semana? Está aberto
+por certas horas?
 |===
 
-== Online
+== Disponível
 
-The process is:
+O processo é:
 
-. Participants fill in their document type and number and upload a copy of their document.
-. An administrator fills in the information present in the uploaded image.
-. The information should match whatever the user filled in.
+. Os participantes preenchem seu tipo de documento e seu número e fazem upload de uma cópia do documento.
+. Um administrador preenche as informações presentes na imagem carregada.
+. A informação deve corresponder ao que o usuário preenchido.
 . If the administrator can't clearly see the information or she can't get it verified, she can reject the request and
 the user will be able to fix it.
 
 === 1. A participant fill in the document information and upload a copy of her document
 
-By going to the authorization section in its profile, or by clicking on the action button if this permission is requested,
-a participant can see the form for uploading a copy of her document. She also needs to fill in her document type and number.
+Ao ir para a seção de autorização no seu perfil, ou clicando no botão de ação se esta permissão for solicitada,
+um participante pode ver o formulário para o upload de uma cópia de seus documentos. Também precisam de preencher o seu tipo e número de documento.
 
-image:authorizations_id_document_online.png[ID document authorization online form]
+image:authorizations_id_document_online.png[Documento de ID autorização formulário online]
 
-=== 2. An administrator review this document
+=== 2. Uma revisão pelo administrador deste documento
 
 After this document is uploaded, an administrator can review it by going to the Identity documents section in the admin
 panel.
 
-image:authorizations_id_document_online_pending.png[ID document authorization pending online verification]
+image:authorizations_id_document_online_pending.png[autorização do documento de ID pendente de verificação online]
 
-After clicking on the document, the administrator needs to see the image and fill in the document number. This needs to match
-with the one provided by the participant.
+Depois de clicar no documento, o administrador precisa ver a imagem e preencher o número do documento. Isto precisa combinar
+com o fornecido pelo participante.
 
-image:authorizations_id_document_online_confirm.png[ID document authorization online confirmation form]
+image:authorizations_id_document_online_confirm.png[Documento de ID autorização formulário de confirmação online]
 
-=== 3. The request is accepted or rejected
+=== 3. A solicitação foi aceita ou rejeitada
 
-There are two actions an admin can do:
+Há duas ações que um administrador pode fazer:
 
-* Accept: the participant will be fully authorized.
+* Aceitar: o usuário será totalmente autorizado.
 * Reject: the participant will be prompted to amend her documents
 
-If the request is rejected then the participant can provide other pictures or document.
+Se o pedido for rejeitado, o usuário pode fornecer outras fotos ou documento.
 
-image:authorizations_id_document_online_rejected.png[ID document authorization rejected online verification]
+image:authorizations_id_document_online_rejected.png[Autorização do documento de ID rejeitada verificação online]
 
-== Offline
+== Desconectado
 
-The process is:
+O processo é:
 
-. Participants fill in their document type and number.
-. Participants follow the instructions provided to them. For instance, if they need to go to a specific place in a
-specific time to show their documents.
-. An administrator go to the "Offline verification" panel and fills in the information present in the physical documents.
-. The information should match whatever the user filled in.
+. Os participantes preenchem seu tipo de documento e seu número.
+. Os usuários seguem as instruções fornecidas a eles. Por exemplo, se eles precisarem ir a um lugar específico em um horário
+específico para mostrar seus documentos.
+. Um administrador vai para o painel de verificação "Offline" e preenche as informações presentes nos documentos físicos.
+. A informação deve corresponder ao que o usuário preenchido.
 . If the administrator can't clearly see the information or she can't get it verified, she can reject the request and
 the user will be able to fix it.
 
-For this authorization to work, an administrator need to first configure it in the admin panel with the instructions explaining
-what the participant need to do to finish the verification process.
+Para esta autorização funcionar, um administrador precisa configurá-lo primeiro no painel de administração com as instruções explicando
+o que o participante precisa fazer para concluir o processo de verificação.
 
-image:authorizations_id_document_configuration_offline.png[ID document authorization configuration: offline instructions]
+image:authorizations_id_document_configuration_offline.png[Configuração de documento de identificação: instruções offline]
 
-=== 1. A participant fill in the document information and follow the instructions
+=== 1. Um participante preenche as informações do documento e siga as instruções
 
 By going to the authorization section in its profile, or by clicking on the action button if this permission is requested,
-a participant can see the form for filling in her document type and number.
+a participant can see the form for filling in their document type and number.
 
-image:authorizations_id_document_offline_request.png[ID document authorization offline form]
+image:authorizations_id_document_offline_request.png[Documento de ID autorização formulário offline]
 
-=== 2. An administrator review this request
+=== 2. Uma revisão pelo administrador deste pedido
 
-In the admin panel, the administrator can review the request by clicking in the "Offline verification" button.
+No painel de administração, o administrador pode rever a solicitação clicando no botão "Verificação off-line".
 
-image:authorizations_id_document_offline_button.png[ID document authorization offline button in admin]
+image:authorizations_id_document_offline_button.png[Botão de autorização do documento de ID offline no administrador]
 
 Then she'll need to fill some data provided by the participant and by reviewing the document physically provided by her.
 
-image:authorizations_id_document_offline_confirm.png[ID document authorization offline confirmation form in admin]
+image:authorizations_id_document_offline_confirm.png[Formulário de confirmação de documento de ID no admin]
 
 
-.ID Documents authorization offline flow
+.Fluxo offline de documentos ID
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Participant email
-|Required
-|Email of the registered participant
+|E-mail do usuário
+|Obrigatório
+|E-mail do participante registrado
 
-|Type of the document
-|Required
-|Can be: DNI, NIE or Passport
+|Tipo do documento
+|Obrigatório
+|Pode ser: DNI, NIE ou Passaporte
 
-|Document number (with letter)
-|Required
-|Document number of the participant. For instance, "12345678Z"
+|Número do documento (com letra)
+|Obrigatório
+|Número do documento do participante. Por exemplo, "12345678Z"
 |===
 
-=== 3. The request is accepted or rejected
+=== 3. A solicitação foi aceita ou rejeitada
 
 In the cases where the verifications don't match (meaning that the email or the document number provided by the
 participant and the ones filled by the administrators aren't the same), then the participant need to ammend it with her
 user account.
 
-== Both
+== Ambos
 
-It's also possible to enable both of these verifications methods. In this case, the participant will be asked to choose
+Também é possível habilitar os dois métodos de verificação. In this case, the participant will be asked to choose
 which kind of verification she wants to do.
 
-image:authorizations_id_document_account_choose.png[Choose ID document verification kind]
+image:authorizations_id_document_account_choose.png[Escolher tipo de verificação de documento de identidade]

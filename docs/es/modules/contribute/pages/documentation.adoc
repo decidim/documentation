@@ -1,19 +1,19 @@
-= Documentation
+= Documentación
 
-To contribute to the documentation (for instance, this same page that you're reading), you can do it through two ways: editing on GitHub directly or editing locally.
+Para contribuir a la documentación (por ejemplo, esta misma página que estás leyendo), puede hacerlo a través de dos maneras: editar directamente en GitHub o editar localmente.
 
 == Edit on GitHub
 
-This is the recomended way if you just want to make a quick fix (for instance, a typo or some clarification on a single page). For doing this you'll need to click in the "Edit this page" link in the top of every page.
+Esta es la forma recomendada si desea hacer una corrección rápida (por ejemplo, un error tipográfico o alguna aclaración en una sola página). Para hacer esto tendrás que hacer clic en el enlace "Editar esta página" en la parte superior de cada página.
 
 image::documentation-edit.png[Edit this page link]
 
-It'll open the page for editing in GitHub interface and after you've finished it'll guide you to make a Pull Request so maintainers can review your contribution.
+Abrirá la página para editar en la interfaz de GitHub y después de que hayas terminado te guiará a hacer una Pull Request para que los mantenedores puedan revisar tu contribución.
 
-== Edit locally
+== Editar localmente
 
-If you want to propose lots of changes in the documentation, or if you want to review your changes locally before sending them because you want to review things like formatting, you can install the environment for having the documentation site locally.
+Si desea proponer muchos cambios en la documentación, o si desea revisar sus cambios localmente antes de enviarlos porque quiere revisar cosas como el formato, puede instalar el entorno para tener el sitio de documentación localmente.
 
-Then you'll need to fork the repository, make a branch and propose your changes as a Pull Request so maintainers can review it. As you see this can be a hassle if you want to make small changes, so the prefered way would be to do it initially with the "Edit this page" link mehod.
+Entonces necesitará bifurcar el repositorio, hacer una rama y proponer sus cambios como una Pull Request para que los mantenedores puedan revisarlo. Como ves esto puede ser un problema si quieres hacer pequeños cambios, así que la forma preferida sería hacerlo inicialmente con el enlace "Editar esta página" mehod.
 
-Read the full instructions on how to install this documentation website locally in the https://github.com/decidim/documentation/[Decidim Documentation GitHub repository].
+Lea las instrucciones completas sobre cómo instalar este sitio web de documentación localmente en https://github.com/decidim/documentation/[Repositorio de documentación de Decidim GitHub].

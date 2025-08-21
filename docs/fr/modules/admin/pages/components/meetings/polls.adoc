@@ -1,0 +1,29 @@
+= Sondages
+
+CAUTION: cette fonctionnalité est toujours en cours de développement et ne peut pas encore être utilisée en production.
+
+Grâce à la fonction de gestion des sondages est possible de définir un sondage qui sera affiché lorsqu'une réunion en ligne se présente.
+This is useful to see quick feedback and make a decision inside the meeting without having to leave the meeting and use
+other kind of tools (like surveys or proposals).
+
+Avec cette fonctionnalité, un administrateur peut définir des questions et aussi gérer quand ces questions et ses résultats seront affichés
+aux participants.
+
+== Activer les sondages pour une réunion
+
+Pour activer les sondages pour une réunion :
+
+. Se connecter en tant qu'administrateur
+. Aller au panneau d'administration
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+Par exemple, il peut s'agir de "Processus", d'"Assembles", ou de "Conférences"
+. Cliquez sur "Réunions"
+. Rechercher dans la réunion pour laquelle vous voulez définir les sondages
+. Cliquez sur le bouton "Gérer les sondages" image:action_list.png[Gérer le bouton des sondages]
+. Remplissez le formulaire
+
+Le formulaire est à peu près le constructeur de formulaire Decidim, avec une mise en garde : vous ne pouvez définir que des questions d'option simple et multiple.
+
+image:components/meetings/polls/backend.png[Backend for meeting polls]
+
+image:components/meetings/polls/backend_question.png[Définition d'une question dans les sondages de réunions]

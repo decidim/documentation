@@ -1,0 +1,105 @@
+= Portées
+
+Les champs d'application sont l'ensemble des territoires ou des sujets qu'une Organisation possède. Une portée peut avoir des portées enfants.
+
+Par exemple, dans le cas de la ville de Barcelone les portées sont ses quartiers, et les enfants d'un quartier sont ses quartiers. Ils peuvent également avoir des types, de sorte qu'il peut être configuré, par exemple, par des portées thématiques et également territoriales.
+
+La plupart des composants et des espaces de Decidim vous permettent de configurer des Scopes d'une manière ou d'une autre. Il y a principalement trois façons d'utiliser des portées :
+
+Pour configurer Scope sur la plateforme Decidim, allez dans menu:Paramètres[Scopes] dans le menu d'administration de la barre latérale. Une liste apparaîtra avec les portées existantes s'il y en a :
+
+image:scopes_list.png[Liste des portes]
+
+Si vous en avez besoin, vous devez d'abord configurer le type de portée.
+
+== Forme
+
+image:scopes_types_new_form.png[Formulaire de nouveau type de périmètre]
+
+
+.Formulaire de nouveau type de portée d'administration
+|===
+|Champ |Type |Description
+
+|Singulier
+|Obligatoire
+|Nom du type de scope en singulier.
+
+|Pluriel
+|Obligatoire
+|Nom du type de portée au pluriel.
+|===
+
+image:scopes_new_form.png[Nouveau formulaire de portée]
+
+
+.Nouveau champ d'application de l'admin
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Nom du périmètre.
+
+|Code
+|Obligatoire
+|Nom (interne) de la portée.
+
+|Type de périmètre d'application
+|Obligatoire
+|Quel type de champ d'application.
+|===
+
+== Actions
+
+Vous avez 3 actions possibles dans cette liste après la création d'un Scope :
+
+|===
+|Icône |Nom |Définition
+
+|image:action_browse.png[Parcourir l'icône]
+|Parcourir
+|Voir et configurer les portées enfants pour ce périmètre.
+
+|image:action_edit.png[Icône d'édition]
+|Editer
+|Modifier le formulaire pour un scope. C'est la même forme que "Créer un nouveau périmètre".
+
+|image:action_delete.png[Supprimer l'icône]
+|Supprimez
+|Supprimer ce périmètre.
+|===
+
+== Fonctionnalités
+
+Les principales fonctionnalités liées aux portées sont:
+
+. Filtrage
+. Intérêts des utilisateurs et newsletters
+
+=== Filtrage
+
+Pour le filtrage. La plupart des espaces et des composants permettent à un administrateur ou à un participant de les associer à une portée. Cela permet de filtrer par périmètre lors de leur exploration.
+
+image:scopes_filter_initiatives.png[Initiatives de filtrage des portes]
+
+image:scopes_filter_processes.png[Filtrage des portées de processus]
+
+Quelques exemples:
+
+* Avec le module Responsabilité, il est donc possible de filtrer les résultats
+* Les assemblages et les processus peuvent avoir des portes. Il est utilisé pour filtrer plusieurs assemblages dans la page principale de la liste (/assemblies ou /processes). Celles-ci peuvent être masquées en décochant la case "Activer les filtres d'espace participatif" dans la page de configuration de xref:admin:configuration.adoc[admin].
+* Le filtrage dans la barre latérale est possible dans les projets budgétaires, les initiatives et les propositions. Dans certains de ces composants, vous pouvez contrôler si ces filtres sont affichés avec la case à cocher "Scopes activés" dans les paramètres du composant. Cela activera ou désactivera également le sélecteur de portée dans le formulaire de création de ressource.
+
+Vous pouvez également configurer un espace participatif de sorte que le filtrage ne concernera qu'une seule portée et ses portées enfants. Par exemple, imaginons que votre organisation ait 3 portées différentes pour 3 villes, chacune ayant des portées enfants pour les quartiers urbains.
+Dans un espace participatif qui ne concerne qu'une seule des villes, vous serez en mesure de sélectionner uniquement cette portée et ses enfants de sorte que les utilisateurs ne voient pas les portées des autres villes dans les options de filtrage.
+
+=== Intérêts des utilisateurs et newsletters
+
+Un Participant peut choisir les Portées qu'il souhaite suivre dans son compte.
+
+image:account_my_interests.png[Compte : mes intérêts]
+
+Ceci est utilisé par les newsletters xref:admin:. doc[Newsletters], dans l'étape "Sélectionner les destinataires à livrer", "Filtrer pour les utilisateurs ayant activé la portée sélectionnée dans les paramètres de leurs comptes".
+
+image:newsletter_select_recipients.png[Newsletter: select recipients]

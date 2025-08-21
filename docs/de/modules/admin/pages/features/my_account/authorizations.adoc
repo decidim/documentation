@@ -1,0 +1,23 @@
+= Autorisierungen
+
+In diesem Abschnitt können die Teilnehmer ihre Berechtigungen überprüfen und einige Metadaten sehen, wie, wenn es
+oder den Status der Autorisierung gewährt wurde.
+
+It depends on how it's configured for the organization, as depending in the context (like normative or laws) it could work
+in different ways. Weitere Informationen über Autorisationen finden Sie unter xref:admin:participants/authorizations.adoc[Autorisationen
+im Admin-Handbuch] und xref:customize:authorizations.adoc[Autorisationen in der Anleitung].
+
+image:features/my_account/authorizations.png[Authorizations]
+
+Um zu diesem Abschnitt zu gehen:
+
+. Als Teilnehmer anmelden
+. Klicken Sie im Namen des Teilnehmers in der Kopfzeile
+. Klicken Sie in "Mein Konto"
+. Klicken Sie in der Seitenleiste auf "Autorisierungen"
+
+Für eine beliebige Autorisierung können Sie folgende Informationen sehen:
+
+* Wenn der Autorisierungsprozess nicht beendet ist, wenn der Autorisierungsprozess gestartet wurde
+* Wenn sie beendet ist und gewährt wurde, dann ist das Datum der Erteilung
+* Wenn die Autorisierung sie zur Verfügung stellt, sind einige Metadaten wie der Umfang der Autorisierung

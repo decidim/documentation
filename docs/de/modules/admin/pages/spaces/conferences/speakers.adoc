@@ -1,0 +1,68 @@
+= Lautsprecher
+
+Die Redner sind Leute, die auf der Konferenz sprechen werden.
+
+image:spaces/conferences/speakers_frontend.png[Conferences speakers (frontend)]
+
+== Neuen Lautsprecher erstellen
+
+image:spaces/conferences/speakers.png[Konferenz-Lautsprecher]
+
+Zum Erstellen eines neuen Referenten einer Konferenz:
+
+. Als Administrator anmelden
+. Gehe zum Konferenz-Abschnitt in der Sidebar
+. Klicken Sie auf die Konferenz Bearbeiten Aktion
+. Klicken Sie auf den Lautsprecher-Link in der Seitenleiste
+. Klicken Sie auf die Schaltfläche "Neue Konferenz Sprecher"
+. Formular ausfüllen
+
+image:spaces/conferences/new_speaker.png[Konferenz-Lautsprecher]
+
+
+.Neues Konferenz-Lautsprecher-Formular
+|===
+|Feld |Typ |Beschreibung
+
+|Teilnehmertyp
+|Benötigt
+|Wann dieser Redner ist ein Nicht-Teilnehmer oder bereits bestehender Teilnehmer. Haben sie bereits ein Konto auf der Plattform erstellt?
+
+|Voller Name
+|Erforderlich, wenn es nicht teilnimmt.
+|Name des Redners.
+
+|Benutzer oder Gruppe
+|Erforderlich, wenn es ein existierender Teilnehmer ist.
+|Geben Sie mindestens drei Zeichen für die Suche ein.
+
+|Verwandte Besprechungen
+|Optional
+|Welche Sitzungen nimmt dieser Sprecher an und nimmt aktiv teil?
+
+|Position
+|Benötigt
+|Metadaten zum Anzeigen zusätzlicher Informationen über den Lautsprecher.
+
+|Zugehörigkeit
+|Benötigt
+|Metadaten zum Anzeigen zusätzlicher Informationen über den Lautsprecher.
+
+|Kurze Bio
+|Optional
+|Metadaten zum Anzeigen zusätzlicher Informationen über den Lautsprecher.
+
+|Twitter-Handle
+|Optional
+|Metadaten zum Anzeigen zusätzlicher Informationen über den Lautsprecher.
+
+|Persönliche URL
+|Optional
+|Metadaten zum Anzeigen zusätzlicher Informationen über den Lautsprecher.
+
+|Avatar
+|Optional
+|Metadaten zum Anzeigen zusätzlicher Informationen über den Lautsprecher.
+
+Standardbild
+|===

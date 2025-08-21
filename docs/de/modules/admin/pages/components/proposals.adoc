@@ -1,0 +1,445 @@
+= Vorschläge
+
+Die Komponente Vorschläge ermöglicht es den Menschen, Vorschläge zu erstellen, zu kommentieren, zu unterstützen und zu unterstützen.
+
+Von diesem Ausgangspunkt aus könnte es andere Konfigurationen geben, wie:
+
+* wie viele Vorschläge ein Teilnehmer erstellen kann
+* wie viele Unterstützungen als maximaler Teilnehmer den Vorschlägen geben können
+* wie viele Unterstützungen als Minimum ein Teilnehmer den Vorschlägen geben muss, damit ihre Unterstützung gültig ist
+* ob Sie die Kommentare der Teilnehmer zu Vorschlägen aktivieren möchten
+* ob Sie möchten, dass Vorschläge Bilder, Anhänge, WYSIWYG-Editor, geografische Adresse, Bereiche, etc. enthalten.
+
+Einige Beispiele, wo diese Komponente verwendet wurde:
+
+* https://futureu.europa.eu/[Konferenz der Zukunft Europas]
+* https://meta.decidim.org/processes/roadmap/f/122/[Neue Funktionalitäten für Decidim Software vorschlagen] in https://meta.decidim.org/[Metadecidim]
+
+image:components/proposals/example01.png[Beispielliste der Vorschläge in COFE]
+image:components/proposals/example02.png[Beispiel der Liste der Vorschläge in Metadecidim]
+image:components/proposals/example03.png[Beispielbeispiel für Details in Metadecidim]
+
+Zur Konfiguration der Proposals-Komponent:
+
+. Als Admin anmelden
+. Zum Admin-Panel wechseln
+. Wählen Sie in der Haupt-Seitenleiste den Bereich aus, unter dem Sie die Komponente konfigurieren möchten.
+Zum Beispiel "Prozesse", "Assemblies" oder "Konferenzen"
+. Gehe zu Komponenten
+. Auf "Komponente hinzufügen"-Button klicken
+. Klicken Sie auf "Vorschläge"
+. Das Formular xref:_add_component[Komponente hinzufügen] ausfüllen
+
+== Komponente hinzufügen
+
+image:components/proposals/component.png[Komponentenform hinzufügen]
+
+
+.Komponente hinzufügen: Vorschlagsformular
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Wie lautet der Titel dieser Komponente. Zum Beispiel "Vorschläge"
+
+|Bestellposition
+|Optional
+|Welche Bestellung hat sie in Bezug auf die anderen Komponenten. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+Wenn Sie zum Beispiel zwei Komponenten haben, "Vorschläge" mit Gewicht "10" und "Meetings" mit Gewicht "0", dann "Meetings" bei der Bestellung.
+|===
+
+
+.Komponente hinzufügen: Vorschlagsformular - Globale Einstellungen
+|===
+|Feld |Typ |Beschreibung
+
+|Bereiche aktiviert
+|Optional
+|Aktivieren, wenn die Bereichsfilterung in dieser Komponente erfolgen soll.
+
+|Bereich
+|Optional
+|Zu welcher xref:admin:scopes.adoc[Scope] diese Komponente gehört.
+
+|Supportlimit pro Teilnehmer
+|Optional
+|Muss eine Zahl sein. Wie viel Unterstützung kann ein Teilnehmer den Vorschlägen geben.
+
+|Minimale Unterstützung pro Benutzer
+|Optional
+|Muss eine Zahl sein. Wie viele Unterstützungen muss ein Teilnehmer den Vorschlägen geben, damit ihre Unterstützung zählt. If they don't
+reach this number, their supports will not be taken in account.
+
+|Vorschlagslimit pro Teilnehmer
+|Optional
+|Muss eine Zahl sein. Wie viele Vorschläge ein Teilnehmer erstellen kann.
+
+|Maximale Länge des Vorschlagskörpers
+|Optional
+|Muss eine Zahl sein. Wie viele Zeichen ein Vorschlagsgremium maximal haben kann.
+
+|Änderungsvorschlag
+|Benötigt
+|Wählen Sie eine dieser beiden Optionen: "Bearbeiten von Vorschlägen innerhalb eines bestimmten Zeitrahmens erlauben" oder "Bearbeiten von Vorschlägen
+für eine unbegrenzte Zeit erlauben". In case it's within a specific timeframe, you must specify the time in "Proposals can be
+edited by authors before this many minutes passes". Beachten Sie, dass, wenn Sie xref:components/proposals/answers.adoc[einen Vorschlag beantworten]
+dann kann er nicht mehr bearbeitet werden.
+
+|Vorschläge können von Autoren bearbeitet werden, bevor diese Minuten vergangen sind
+|Erforderlich, wenn "Vorschlagsbearbeitung" "Bearbeiten von Vorschlägen innerhalb eines bestimmten Zeitrahmens erlauben" ist
+|Muss eine Zahl sein. Wie viele Minuten nach der Erstellung eines Vorschlags kann er von seinem Autor bearbeitet werden.
+
+|Schwellenwert pro Vorschlag
+|Optional
+|Muss eine Zahl sein. Wie viele Unterstützungen für einen Vorschlag müssen als "validiert" betrachtet werden. Siehe <<setting-threshold,screenshots>>.
+
+|Kann Stützen über den Schwellenwert ansammeln
+|Optional. Gilt nur, wenn "Grenzwert pro Vorschlag" konfiguriert ist.
+|Ob der Vorschlag mehr Unterstützung als die Schwelle anhäufen kann.
+
+|Vorschlagsantwort aktiviert
+|Optional
+|Ob Administratoren oder Bewerber Vorschläge beantworten können.
+
+|Offizielle Vorschläge aktiviert
+|Optional
+|Administratoren können offizielle Vorschläge erstellen.
+
+|Kommentare aktiviert
+|Optional
+|Ob Sie Kommentare in den Meetings haben möchten.
+
+|Maximale Länge der Kommentare
+|Optional
+|Welches sind die Zeichenbegrenzung, die die Teilnehmer bei Kommentaren haben werden. Lassen Sie 0 für den Standardwert.
+
+|Geocoding aktiviert
+|Optional
+|Wenn Teilnehmer für ihre Vorschläge eine Geokodierungsadresse definieren können. Muss xref:configure:geocoding[Geocoding] aktiviert haben.  Siehe <<setting-geocoding,screenshots>>.
+
+|Anhänge erlauben
+|Optional
+|Aktivieren, um den Teilnehmern zu erlauben, Dateien an ihre Vorschläge anzuhängen.
+
+|Kartenbild erlauben
+|Optional
+|Aktivieren, um ein Kartenbild anzuzeigen, wenn die Teilnehmer Bilder an ihre Vorschläge anhängen. Siehe <<setting-card-image,screenshots>>.
+
+|Aktionsberechtigungen können für jeden Vorschlag festgelegt werden
+|Optional
+|Ob Sie in der Lage sein wollen, Berechtigungen für jeden einzelnen der Vorschläge. Meistens möchten Sie diese Option deaktiviert lassen.
+
+|Gemeinschaftliche Entwürfe aktiviert
+|Optional
+|Aktivieren, um xref:components/proposals/collaborative_drafts.adoc[collaborative drafts] in Vorschlägen zu aktivieren.
+
+|Teilnehmende Texte aktiviert
+|Optional
+|Aktivieren, um xref:components/proposals/participatory_texts.adoc[partizipatorische Texte] in Vorschlägen zu aktivieren.
+
+|Änderungen aktiviert
+|Optional
+|Auswählen, um xref:components/proposals/amendments.adoc[amendments] in Vorschlägen zu aktivieren. Wenn aktiviert, konfigurieren Sie die Modifikationsmerkmale für jeden Schritt.
+
+|Änderungsassistent Hilfetext
+|Optional. Sichtbar, wenn die Option "Änderungen aktiviert" aktiviert ist.
+|Wie sieht der Hilfetext beim Erstellen neuer Änderungen.
+
+|Mitteilung
+|Optional
+|Eine allgemeine Ankündigung, die auf der Landungsseite für Vorschläge zu sehen sein wird.
+
+|Neue Vorlage für Vorschlagskörper
+|Optional
+|Ein vordefinierter Text, der beim Erstellen neuer Vorschläge verwendet wird. Useful if you want to define a format that participants need to
+follow when creating new proposals.
+
+|Neuer Hilfetext für Vorschläge
+|Optional
+|Was ist der Hilfetext bei der Erstellung neuer Vorschläge.
+
+|Assistent "Erstellen" Schritt-Hilfetext
+|Optional
+|Wie sieht der Hilfetext beim Erstellen neuer Vorschläge im "Erstellen"-Schritt.
+
+|Assistent für den Assistenten "Vergleichen" Schritt Hilfe Text
+|Optional
+|Wie sieht der Hilfetext beim Erstellen neuer Vorschläge im "Vergleichen"-Schritt.
+
+|Assistent zum Vorschlag "Abgeschlossen"-Hilfetext
+|Optional
+|Wie sieht der Hilfetext beim Erstellen neuer Vorschläge im "Fertig"-Schritt.
+
+|Assistent für den Vorschlag "Veröffentlichen" Schritt Hilfe Text
+|Optional
+|Was ist der Hilfetext beim Erstellen neuer Vorschläge im "Veröffentlichen" Schritt.
+|===
+
+[#setting-threshold]
+*Beispiel der Schwelleinstellung*
+
+image::components/proposals/setting_threshold01.png[Example of threshold setting]
+
+image::components/proposals/setting_threshold02.png[Example of threshold setting]
+
+[#setting-card-image]
+*Beispiel der Kartenbildeinstellung*
+
+image::components/proposals/setting_card_image.png[Example of card image setting]
+
+[#setting-geocoding]
+*Beispiel für Geokodierung*
+
+image::components/proposals/setting_geocoding.png[Example of geocoding setting]
+
+---
+
+In den Fällen, in denen der Platz, den diese Komponente verwendet wird, xref:admin:spaces/processes/phases hat. doc[Phases], zum Beispiel in
+xref:admin:spaces/processes.adoc[Participatory Processes], dann können Sie auch unterschiedliche Verhaltensweisen pro Schritt definieren.
+
+
+.Komponente hinzufügen: Vorschlagsformular - Schritteinstellungen
+|===
+|Feld |Typ |Beschreibung
+
+|Mitteilung
+|Optional
+|Eine allgemeine Ankündigung, die auf der allgemeinen Landungsseite für Vorschläge zu sehen sein wird.
+
+|Befürworter aktiviert
+|Optional
+|Überprüfen Sie, ob die Teilnehmer öffentliche Unterstützung für diese Vorschläge erhalten.
+
+|Befürworter blockiert
+|Optional
+|Ob die Teilnehmer in der Lage sein werden, die Zustimmungen zu sehen, aber keine machen.
+
+|Unterstützungen aktiviert
+|Optional
+|Ob die Teilnehmer in der Lage sein werden, Vorschläge in diesem Schritt zu unterstützen.
+
+|Unterstützungen blockiert
+|Optional
+|Ob die Teilnehmer in der Lage sein werden, Vorschläge in diesem Schritt zu unterstützen.
+
+|Unterstützt versteckte
+|Optional
+|Wenn die Unterstützung aktiviert ist, wird diese Option die Anzahl der Unterstützungen ausblenden.
+
+|Kommentare blockiert
+|Optional
+|Ob Sie Kommentare für diese Phase aktivieren möchten.
+
+|Vorschlagserstellung aktiviert
+|Optional
+|Ob Sie die Erstellung von Angebotsvorschlägen von Teilnehmern für diese Phase aktivieren möchten. Siehe xref:_new_proposal_form[Neues Vorschlagsformular]
+
+|Vorschlagsantwort aktiviert
+|Optional
+|Ob xref:components/proposals/answers.adoc[proposal answering] aktiviert werden soll.
+
+|Vorschläge sofort veröffentlichen
+|Optional
+|Wenn Sie möchten, dass die Antworten der Vorschläge veröffentlicht werden, zur gleichen Zeit, dass Sie xref:components/proposals/answers. doc[answering] sie oder Sie möchten kontrollieren, wann die Antworten veröffentlicht werden sollen.
+
+|Kosten bei Angebotsantworten aktivieren
+|Optional
+|Wann wollen Sie zusätzliche Kosten für den Vorschlag antworten. Nützlich für den Import nach xref:components/budgets.adoc[budgets].
+
+|Änderungserstellung aktiviert
+|Optional. Sichtbar, wenn die Option "Änderungen aktiviert" aktiviert ist.
+|Der Teilnehmer kann Vorschläge ändern. Siehe xref:components/proposals/amendments.adoc[Amendments].
+
+|Änderungsreaktion aktiviert
+|Optional. Sichtbar, wenn die Option "Änderungen aktiviert" aktiviert ist.
+|Autoren des Vorschlags können die Emittenten des Teilnehmers annehmen oder ablehnen.
+
+|Förderung von Änderungen aktiviert
+|Optional. Sichtbar, wenn die Option "Änderungen aktiviert" aktiviert ist.
+|Die Autoren der Emandation werden in der Lage sein, den Vorschlag der abgelehnten Emendation zu fördern.
+
+|Sichtbarkeit von Änderungen
+|Erforderlich. Sichtbar, wenn die Option "Änderungen aktiviert" aktiviert ist.
+|Wählen Sie eine der "Änderungen sind für alle sichtbar" oder "Änderungen sind nur für ihre Autoren sichtbar"
+
+|Mitteilung
+|Optional
+|Eine allgemeine Ankündigung, die auf der Landungsseite für Vorschläge zu sehen sein wird.
+
+|Hashtags zu allen Vorschlägen hinzugefügt
+|Optional
+|Fügen Sie jedem Vorschlag automatisch einen Hashtag hinzu. Siehe <<setting-hashtags,screenshots>>.
+
+|Hashtags den Teilnehmern für neue Vorschläge vorgeschlagen
+|Optional
+|Hashtags für Teilnehmer für neue Vorschläge vorschlagen. Teilnehmer können mehrere Hashtag auswählen. Siehe <<setting-hashtags,screenshots>>.
+|===
+
+[#setting-hashtags]
+*Beispiel der Hashtags Einstellung*
+
+image::components/proposals/setting_hashtag.png[Example of hashtag setting]
+
+== Berechtigungen
+
+Ein Administrator kann wählen, welche Art von xref:customize:authorizations.adoc[Authorizations] ein Teilnehmer muss
+bestimmte Aktionen in den Vorschlägen machen:
+
+* Befürwortung
+* Unterstützung
+* Anlegen
+* Abheben
+* Abänderung
+* Kommentar
+* Kommentar abstimmen
+
+== Vorschläge verwalten
+
+image:components/proposals/manage_proposals.png[Vorschläge Tabelle verwalten]
+
+=== Exportieren
+
+Ermöglicht das Exportieren der Vorschläge in verschiedenen Formaten.
+
+* Vorschläge als CSV
+* Vorschläge als JSON
+* Vorschläge als Excel
+* Kommentare als CSV
+* Kommentare als JSON
+* Kommentare als Excel
+
+=== Importieren
+
+* Aus einer anderen Komponente importieren
+* Aus einer Datei importieren
+
+=== Neues Vorschlagsformular
+
+==== Bürgervorschläge
+
+image:components/proposals/new_proposal_frontend.png[Neue Vorschlagsform]
+
+Vorschläge können von Teilnehmern erstellt werden, wenn die Einstellung "Vorschlagserstellung aktiviert" auf die aktive Phase überprüft wird.
+
+If a participant belongs to a xref:admin:participants/groups.adoc[user group], then they will be able to create proposals as that group also.
+
+Dieses Formular hängt sehr stark von den Einstellungen ab, die Sie in dieser Komponente aktiviert haben. Es kann wirklich kurz sein (mit nur einem Titel und
+Body standardmäßig) oder sehr lang (Titel, Body, Hashtags, Adresse, Bereich, Kategorie, Bild und Anhang).
+
+
+.Neues Vorschlagsformular - Standard (von einem Teilnehmer)
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Wie lautet der Titel dieses Vorschlags. Zum Beispiel "Radweg in der Hauptstraße". Muss mindestens 15 Zeichen lang sein als
+und maximal 150 Zeichen. Muss mit einem Großbuchstaben beginnen.
+
+|Körper
+|Optional
+|Was ist die vollständige Beschreibung für diesen Vorschlag. Muss standardmäßig mindestens 15 Zeichen und 450 Zeichen als Maximalwert
+enthalten, kann aber mit der Einstellung "Maximale Länge des Vorschlagskörpers" geändert werden.
+|===
+
+Um doppelte Vorschläge zu erkennen, bevor sie veröffentlicht werden, verfügt die Erstellung von Vorschlägen über ein Assistenten-Formular mit mehreren Schritten. This also
+allows participants to save proposals drafts (unpublished) in case they need to fill too many fields.
+
+image:components/proposals/new_proposal_frontend_compare.png[Neues Vorschlagsformular (durch einen Teilnehmer) - Vergleich]
+
+Als Beispiel dafür, was das Formular je nach aktivierten Einstellungen aussehen könnte, hier ist ein Screenshot der Form für einen Vorschlag
+mit den folgenden Einstellungen: "Hashtags zu allen Vorschlägen hinzugefügt", "Hashtags schlug Teilnehmern für neue Vorschläge vor",
+"Geocoding aktiviert", "Anhänge erlauben", "Kartenbild erlauben" und "Scopes aktiviert".
+
+image:components/proposals/new_proposal_frontend_complete.png[Neues Vorschlagsformular (durch einen Teilnehmer) - Fertig]
+
+Nach Ausfüllen dieser Felder kann der Teilnehmer vor der Veröffentlichung eine Vorschau ihres Vorschlags sehen. Sie können den Vorschlag auch
+ändern, bevor er veröffentlicht wird.
+
+image:components/proposals/new_proposal_frontend_publish.png[Neues Vorschlagsformular (durch einen Teilnehmer) - Veröffentlichen]
+
+image:components/proposals/new_proposal_frontend_published.png[Veröffentlichter Vorschlag eines Teilnehmers]
+
+==== Offizielle Vorschläge
+
+Administratoren können offizielle Vorschläge erstellen. Es wird ein Filter geben, um nur offizielle Vorschläge in der Vorschlags-Navigationsseite anzuzeigen.
+
+image:components/proposals/new_proposal_backend01.png[Neues Vorschlagsformular - Standard (offizielle Vorschläge)]
+
+
+.Neues Vorschlagsformular - Standard (offizielle Vorschläge)
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Wie lautet der Titel dieses Vorschlags. Zum Beispiel "Radweg in der Hauptstraße". Muss mindestens 15 Zeichen lang sein als
+und maximal 150 Zeichen. Muss mit einem Großbuchstaben beginnen.
+
+|Körper
+|Optional
+|Was ist die vollständige Beschreibung dieses Vorschlags. Muss standardmäßig mindestens 15 Zeichen und 450 Zeichen als Maximalwert
+enthalten, kann aber mit der Einstellung "Maximale Länge des Vorschlagskörpers" geändert werden.
+
+|Dieser Vorschlag stammt aus einer Sitzung
+|Optional
+|Überprüfen Sie, ob dieser Vorschlag von einem Meeting kommt.
+
+|Besprechung auswählen
+|Erforderlich, wenn das Kontrollkästchen "Dieser Vorschlag kommt von einer Besprechung" aktiviert ist
+|Dropdown-Selektor mit allen Meetings dieses Raums. Der Verfasser des Vorschlags wird die Sitzung sein.
+|===
+
+Als Beispiel dafür, wie das Formular aussehen könnte, je nach den aktivierten Einstellungen, hier ist ein Screenshot der Form für einen Vorschlag
+mit den folgenden Einstellungen: "Hashtags zu allen Vorschlägen hinzugefügt", "Hashtags schlug Teilnehmern für neue Vorschläge vor",
+"Geocoding aktiviert", "Anhänge erlauben", "Kartenbild erlauben" und "Scopes aktiviert".
+
+image:components/proposals/new_proposal_backend02.png[Neues Vorschlagsformular - mit mehreren Einstellungen (offizielle Vorschläge)]
+
+==== Aktionen
+
+
+.Aktionen
+|===
+|Icon |Name |Definition
+
+|image:action_edit.png[Icon bearbeiten]
+|Bearbeiten
+|Formular für einen Vorschlag bearbeiten. Es ist die gleiche Form wie "Neuer Vorschlag". Nur sichtbar, wenn der Vorschlag ein xref:_official_proposals["Offizieller Vorschlag"].
+
+|image:action_answer.png[Vorschlagssymbol beantworten]
+|xref:components/proposals/answers.adoc[Vorschlag beantworten
+|Erlaubt dir einen Vorschlag zu beantworten.
+
+|image:action_permissions.png[Berechtigungs-Symbol]
+|Berechtigungen
+|
+
+|image:action_preview.png[Vorschau Symbol]
+|Vorschau
+|Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
+|===
+
+== Ursprungsfilter
+
+Wenn Sie in der Liste der Vorschläge navigieren, können Sie die Vorschläge nach Ursprung filtern.
+
+image:components/proposals/origin_filter.png[Vorschlag Ursprungsfilter]
+
+Es gibt fünf Ursprungsoptionen:
+
+* Alle: alle Ursprünge auswählen
+* xref:_official_proposals[Official]: Vorschläge, die von Administratoren erstellt wurden
+* xref:_citizens_proposals[Citizens]: Vorschläge von Teilnehmern erstellt
+* Gruppen: Vorschläge von Teilnehmern, die zu einer Benutzergruppe gehören und diese Option beim Erstellen des Vorschlags auswählen
+* Meetings: Vorschläge von Administratoren, die diese Option bei der Erstellung des Vorschlags aktiviert haben
+
+== Vorschlagstypen und Mechanismen
+
+Es gibt verschiedene Arten von Vorschlagsmechanismen, die in Vorschlägen ermöglicht werden können, wie zum Beispiel:
+
+* xref:admin:components/proposals/amendments.adoc[Amendments]
+* xref:admin:components/proposals/answers.adoc[Answers]
+* xref:admin:components/proposals/collaborative_drafts.adoc[Kollaborative Entwürfe]
+* xref:admin:components/proposals/participatory_texts.adoc[teilnehmende Texte]

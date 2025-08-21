@@ -1,0 +1,70 @@
+= Brouillon collaboratif
+
+Avec le brouillon collaboratif, les participants peuvent faire une proposition avec plusieurs auteurs.
+
+Il est utile de proposer des améliorations ou des corrections.
+
+Il a des similitudes avec xref:components/propositions/amendements. doc[Amendments] mais la principale différence est qu'avec la collaboration
+brouillons, il est nécessaire de faire confiance aux autres auteurs, car ils peuvent apporter toute modification à la proposition originale sans approbation de l'auteur original,
+, bien que l'auteur original puisse décider s'ils font la promotion de la proposition collaborative en tant que proposition.
+
+image:components/proposs/collaborative_drafts/collaborative_draft_request_access.png[Brouillon collaboratif avec le bouton d'accès à la demande]
+
+Pour configurer "Brouillons collaboratifs" dans le composant Propositions :
+
+. Se connecter en tant qu'administrateur
+. Aller au panneau d'administration
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+Par exemple, il peut s'agir de "Processus", d'"Assembles", ou de "Conférences"
+. Aller dans les fonctionnalités
+. Cliquez sur le bouton "Ajouter une fonctionnalité"
+. Cliquer sur "Propositions"
+. Vérifiez le paramètre "brouillons collaboratifs activés"
+. Enregistrez le composant
+
+== Comment ça marche
+
+. Un participant (Alice) veut créer une proposition collaborative. Pour cela, ils vont à la page de la liste des propositions.
+. Alice clique dans le bouton "Accéder aux brouillons collaboratifs"
+image:composents/propositions/collaborative_drafts/propositions_list01.png[]
+. Alice clique dans le bouton "Nouveau brouillon collaboratif"
+image:composents/propositions/collaborative_drafts/list_empty.png[]
+. Alice remplit le formulaire et le soumet
+image:composents/propositions/collaborative_drafts/create_form.png[]
+. Une fois que le brouillon collaboratif est créé, Alice peut : modifier, retirer ou publier le brouillon collaboratif et approuver ou
+rejeter les demandes de collaboration
+image:composents/propositions/collaborative_drafts/collaborative_draft.png[]
+. Un autre participant (Bob) a vu le brouillon collaboratif et veut apporter quelques changements
+image:composents/propositions/collaborative_drafts/collaborative_request_access.png[]
+. Bob clique sur le bouton "Demander l'accès"
+image:composents/propositions/collaborative_drafts/access_requested.png[]
+. Alice reçoit la notification
+image:components/proposals/collaborative_drafts/notification.png[]
+. Alice va à la question collaborative. Là, ils peuvent accepter ou rejeter la demande de collaboration
+image:components/propositions/collaborative_drafts/author_sidebar.png[]
+. Alice approuve la demande de collaboration. Une fois qu'une demande est approuvée, elle ne peut pas être rejetée
+. Maintenant le brouillon collaboratif a plusieurs auteurs
+image:components/propositions/collaborative_drafts/multiple_authors.png[]
+. Bob peut éditer le brouillon collaboratif en cliquant sur le bouton "Modifier le brouillon collaboratif"
+image:components/proposs/collaborative_drafts/edit_collaborative_draft.png[]
+image:components/proposals/collaborative_drafts/edit_form.png[]
+. Une fois le brouillon collaboratif modifié, il est possible de voir les anciennes versions et ses changements
+image:components/proposals/collaborative_drafts/collaborative_draft_edited.png[]
+image:components/proposals/collaborative_drafts/collaborative_draft_edited_versions.png[]
+image:components/proposals/collaborative_drafts/collaborative_drafts/collaborative_drafts/collaborative_drafts/collaborative_versions_show_v2_01.png[]
+image:components/proposals/collaborative_drafts/collaborative_draft_edited_versions_v2_02.png[]
+. Une fois qu'Alice est satisfait du projet collaboratif, il peut le publier en cliquant sur le bouton "Publier"
+image:composents/propositions/collaborative_drafts/publish_modal.png[]
+. Quand il est publié, il devient une proposition
+image:components/proposs/collaborative_drafts/proposal.png[]
+image:components/proposals/collaborative_drafts/proposals_list02.png[]
+. Et le brouillon collaboratif est toujours visible bien qu'il ne peut plus être édité
+image:composents/propositions/collaborative_drafts/collaborative_draft_published.png[]
+
+== Aspects importants
+
+- Un brouillon collaboratif peut avoir un certain nombre d’auteurs.
+- Seul l'auteur original peut approuver ou rejeter les demandes de collaboration.
+- Seul l'auteur original peut publier la proposition collaborative.
+- Seul l'auteur original peut retirer la proposition collaborative.
+- Une fois qu'une demande de collaboration est approuvée, elle ne peut pas être rejetée.

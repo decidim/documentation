@@ -1,0 +1,242 @@
+= Processus
+
+Un processus participatif est une séquence d'activités participatives (p. ex. d'abord répondre à une enquête, puis faire des propositions,
+en discutant en face à face ou en réunion virtuelle, et enfin les prioriser) dans le but de définir et de prendre une décision sur un sujet spécifique.
+
+Les exemples de processus participatifs sont : un processus d'élection des membres du comité (où les candidatures sont présentées pour la première fois,
+alors débattu et finalement une candidature est choisie), des budgets participatifs (où des propositions sont faites, évalué économiquement,
+et voté avec l'argent disponible), un processus de planification stratégique, l'élaboration collaborative d'un règlement ou d'une norme,
+la conception d'un espace urbain ou la production d'un plan de politique publique.
+
+Un concept vraiment important pour faire un bon usage de Decidim est de comprendre la relation entre les Phases et les Composants
+dans un processus participatif de Decidim :
+
+image::process_steps_components.png[Relation between Steps and Components in a Process in Decidim]
+
+Ce que ce diagramme montre est que pour un processus participatif, vous pouvez avoir 7 phases :
+
+. Configuration & Presentation
+. Diagnostic
+. Création de proposition
+. Sélection de proposition
+. Résultats
+. Évaluation
+. Surveillance
+
+À l'intérieur de chacune de ces phases, il y a quelques composants (tels que Blog, Meetings, Survey, Debates, Proposals, Results).
+Certains de ces composants permettent certaines fonctionnalités en fonction de la phase que nous sommes.
+
+Dans cette section, nous vous expliquerons comment configurer un processus participatif dans Decidim.
+
+== Liste
+
+Pour configurer les processus participatifs sur la plateforme Decidim, cliquez sur btn:[Processes] dans le menu d'administration de la barre latérale. Une liste
+apparaîtra avec les processus existants s'il y en a :
+
+image::processes_list.png[Participatory processes list]
+
+Vous pouvez filtrer par ceux qui sont :
+
+* Publié / non publié
+* Public / Privé
+
+image::processes_list_filter.png[Participatory processes list filtered]
+
+Vous pouvez également effectuer une recherche par titre et contrôler le nombre d'éléments dans la liste.
+
+Vous avez 4 actions possibles dans cette liste après la création d'un processus participatif :
+
+1. Export: envoyez par email la configuration pour un processus donné. Peut être importé dans une autre installation de Decidim.
+1. Dupliquer: pour dupliquer ce processus.
+1. Configuration: pour modifier les métadonnées et la configuration d'un processus.
+1. Aperçu: à quoi ressemblera une fois publié.
+
+== Nouveau formulaire de processus
+
+image::processes_new_form.png[New participatory process form]
+
+
+.Nouvelle forme de processus participatif : Informations générales
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Titre du processus participatif. Par exemple, "Budget participatif 2020".
+
+|Sous-titre
+|Obligatoire
+|Sous-titre. Par exemple, "décidons ensemble de nos priorités"
+
+|Identifiant d'URL
+|Obligatoire
+|Les identifiants d'URL sont utilisés pour générer les URL qui pointent vers ce processus. N'accepte que des lettres, des chiffres et des tirets et doit
+commencer par une lettre. Exemple: si votre domaine est 'example.org' et que votre slug 'participatory-budget-2020' alors votre URL sera
+https://example.org/processes/participatory-budget-2020
+
+|Hashtag
+|Facultatif
+|Hashtag pour Twitter
+
+|Courte description
+|Obligatoire
+|Une brève explication de votre processus participatif.
+
+|Description
+|Obligatoire
+|Une longue explication de votre processus participatif.
+
+|Annonce
+|Facultatif
+|Le texte que vous entrez ici sera affiché à l'utilisateur juste en dessous des informations de processus.
+|===
+
+
+.Nouvelle forme de processus participatif : Durée
+|===
+|Champ |Type |Description
+
+|Date de début
+|Facultatif
+|Quand ce processus démarre. Vous avez un widget calendrier pour choisir la journée. Format attendu : jj/mm/aaaa
+
+|Date de fin
+|Facultatif
+|Quand ce processus démarre. Vous avez un widget calendrier pour choisir la journée. Format attendu : jj/mm/aaaa
+|===
+
+
+.Nouvelle forme de processus participatif : Images
+|===
+|Champ |Type |Description
+
+|Image de la maison
+|Facultatif
+|Image qui sera utilisée dans les cartes de présentation de ce processus. Orientation pour le fichier: Doit être une image ou un document.
+Pour les images, utilisez de préférence des images paysagères, le service récolte l'image. Taille maximale du fichier : 10 Mo
+
+|Image de bannière
+|Facultatif
+|Image qui sera utilisée à l'intérieur du processus. Orientation pour le fichier: Doit être une image ou un document.
+Pour les images, utilisez de préférence des images paysagères, le service récolte l'image. Taille maximale du fichier : 10 Mo
+|===
+
+
+.Nouvelle forme de processus participatif : Métadonnées
+|===
+|Champ |Type |Description
+
+|Groupe de promoteurs
+|Facultatif
+|Informations affichées dans la barre latérale des métadonnées du processus.
+
+|Zone d'organisation
+|Facultatif
+|Informations affichées dans la barre latérale des métadonnées du processus.
+
+|Métadonnées du périmètre d'application
+|Facultatif
+|Informations affichées dans la barre latérale des métadonnées du processus.
+
+|Qui participe
+|Facultatif
+|Informations affichées dans la barre latérale des métadonnées du processus.
+
+|Ce qui est décidé
+|Facultatif
+|Informations affichées dans la barre latérale des métadonnées du processus.
+
+|Comment est-il décidé
+|Facultatif
+|Informations affichées dans la barre latérale des métadonnées du processus.
+|===
+
+image::process_frontend_metadata.png[Process frontend metadata]
+
+image::process_backend_metadata.png[Process backend metadata]
+
+
+.Nouveau formulaire de processus participatif : Filtres
+|===
+|Champ |Type |Description
+
+|Portées activées
+|Facultatif
+|Cochez cette case si vous voulez que le filtrage des portées soit effectué dans ce processus.
+
+|Secteur
+|Facultatif
+|Ce que xref:admin:scopes.adoc[Scope] fait appartient à ce processus.
+
+|Profondeur du filtre de portée
+|Facultatif
+|Restreindre la profondeur du filtre de téles; Le filtre s'affichera de général au type de télescope sélectionné. Ceci n'est pertinent que si
+vous avez des relations complexes dans les Scopes enfants (comme une poupée russe). Par exemple, si vous avez une grand-mère -> Mère ->
+Enfant, ce paramètre vous permet de choisir la Mère, donc les participants ne peuvent choisir que l'Enfant. This would be the
+case for instance if you have Provinces -> Cities -> Districts, and the process is about a particular City.
+
+|Zone de stockage
+|Facultatif
+|Ce que xref:admin:areas.adoc[Area] fait appartient à ce processus.
+|===
+
+
+.Nouvelle forme de processus participatif : Visibilité
+|===
+|Champ |Type |Description
+
+|Groupe de processus
+|Facultatif
+|Permet de créer des groupes de processus participatifs multiples. Idéalement pour les processus qui sont liés entre eux, pour
+par exemple plusieurs carrés dans une Ville ou plusieurs documents en utilisant les mêmes règles participatives.
+
+|Espace privé
+|Facultatif
+|Vérifier si ce processus ne doit être accessible que par xref:admin:spaces/processes/private_participants.adoc[Participants privés]
+
+|Promu
+|Facultatif
+|Cochez cette case si vous voulez que le processus ait plus de visibilité dans la liste publique Processus . Il sera également visible dans le bloc de contenu du processus participatif
+dans la configuration xref:admin:homepage.adoc[Homepage]. Ceci est accessible dans l'action
+btn:[Edit] dans un processus.
+|===
+
+
+.Nouveau formulaire de processus participatif : Filtres
+|===
+|Champ |Type |Description
+
+|Processus connexes
+|Facultatif
+|Sélectionnez d'autres processus participatifs qui sont liés à celui-ci.
+|===
+
+
+.Nouveau formulaire de processus participatif : Filtres
+|===
+|Champ |Type |Description
+
+|Afficher les statistiques
+|Facultatif
+|Cochez cette case si vous voulez afficher la section Statistiques.
+
+|Afficher les métriques
+|Facultatif
+|Cochez cette case si vous voulez afficher la section Metrics.
+|===
+
+Après avoir initialement créé votre processus, vous avez un sous-menu où vous devez continuer à configurer plus d'informations
+sur votre processus participatif.
+
+image::process_submenu.png[Process submenu in admin]
+
+Ici vous pouvez continuer à configurer votre processus :
+
+. Info: la même forme que celle que nous avons expliquée dans cette page.
+. xref:admin:spaces/processes/phases.adoc[Étapes]
+. xref:admin:spaces/processes/components.adoc[Components]
+. xref:admin:spaces/processes/categories.adoc[Categories]
+. xref:admin:spaces/processes/attachments.adoc[Attachments]
+. xref:admin:spaces/processes/admins.adoc[Administrateurs de la concertation]
+. xref:admin:spaces/processes/private_participants.adoc[Utilisateurs privés]
+. xref:admin:spaces/processes/moderations.adoc[Moderations]

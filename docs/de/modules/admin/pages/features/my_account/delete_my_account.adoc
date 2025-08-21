@@ -1,0 +1,21 @@
+= Mein Konto löschen
+
+In diesem Abschnitt können die Teilnehmer ihre eigenen Konten löschen. Das bedeutet, dass sie nicht mehr auf das System zugreifen können. Diese Aktion ist unumkehrbar. Alle Beiträge werden anonymisiert.
+
+image:features/my_account/delete_my_account.png[Kontoformular löschen]
+
+Zum Löschen des Kontos:
+
+. Als Teilnehmer anmelden
+. Klicken Sie im Namen des Teilnehmers in der Kopfzeile
+. Klicken Sie in "Mein Konto"
+. Klicken Sie in "Mein Konto löschen" in der Seitenleiste
+. Optional können sie einen Grund für die Löschung liefern
+. Klicken Sie in "Mein Konto löschen"
+. Klicken Sie auf "Ja, ich möchte mein Konto löschen"
+
+image:features/my_account/delete_my_account_confirm.png[Account löschen bestätigen]
+
+Nachdem das Konto gelöscht wurde, werden die Beiträge (wie Kommentare, Vorschläge, usw.) wird immer noch sichtbar sein, aber alle Autoreninformationen werden anonymisiert, die zu einer speziellen Art von Autor gehören, dem Namen "Teilnehmer gelöscht":
+
+image:features/my_account/delete_my_account_deleted.png[Gelöschter Teilnehmerbeitrag]

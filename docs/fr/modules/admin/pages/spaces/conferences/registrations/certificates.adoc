@@ -1,0 +1,39 @@
+= Certificats de présence
+
+Les administrateurs peuvent créer des certificats de présence pour les participants.
+
+image:espaces/conferences/certificates_of_attendance.png[Certificat de présence des conférences (backend)]
+
+
+.Formulaire de certificat de présence
+|===
+|Champ |Type |Description
+
+|Logo principal
+|Obligatoire
+|Logo de la conférence de l'organisation qui fait le certificat de présence.
+
+|Signature
+|Obligatoire
+|Image de la personne qui signe le certificat.
+
+|Date de signature
+|Obligatoire
+|Date de la signature. Format attendu : jj/mm/aaaa
+
+|Nom de la signature
+|Obligatoire
+|Nom de la personne qui signe le certificat.
+|===
+
+Une fois le formulaire rempli, il y a un bouton "Envoyer les certificats de présence" à tous les xref:admin:spaces/conferences/registrations/users.adoc[registrations] de la conférence.
+
+image:espaces/conférences/certificates_of_attendance_button.png[Certificat de présence envoyer bouton]
+
+Une fois qu'il est envoyé, il ne peut pas être renvoyé.
+
+image:espaces/conférences/certificates_of_attendance_button_disabled.png[Certificat de présence envoyer bouton désactivé]
+
+Les certificats de participation sont envoyés aux participants par courriel en format PDF.
+
+image:espaces/conferences/certificates_of_attendance_pdf.png[Certificat de présence des conférences (frontend)]

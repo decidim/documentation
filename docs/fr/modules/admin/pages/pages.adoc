@@ -1,0 +1,125 @@
+= Pages
+
+Vous pouvez configurer des pages statiques, qui contiennent des informations générales aux participants de la plateforme.
+
+À titre d'exemple, certaines de ces pages pourraient faire référence à :
+
+* Quelle est cette plateforme ? Qui est l'organisation ?
+* Comment puis-je participer ici?
+* Comment puis-je créer et vérifier mon compte ?
+* Quelles sont les conditions générales et les informations légales sur cette plateforme?
+
+Ces pages seront accessibles à tous les participants par le biais de la section du menu du haut de **Aide** ainsi que dans les sections du pied de page. Vous pouvez définir des **Rubriques** pour catégoriser toutes ces pages.
+
+Comme la plate-forme permet aux Participants de s'inscrire (s'inscrire) et d'enregistrer certaines de leurs données personnelles, il est important qu'il y ait une page spéciale, appelée **Termes et Conditions**. C'est là que vous devez mettre vos conditions légales, par exemple l'entité qui a le contrôle de ces données, combien de temps ces données seront enregistrées, etc. Cela devrait être (idéalement) écrit et (au moins) examiné par un avocat.
+
+== Créer une nouvelle page
+
+Pour créer une nouvelle page, vous devez :
+
+. Se connecter en tant qu'administrateur
+. Cliquez dans Pages dans le menu latéral
+. Cliquez dans "Créer une page"
+
+image::pages_backend_form.png[Backend: new page form]
+
+
+.Formulaire de nouvelle page
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Titre de cette page. Par exemple : "Comment participer ?"
+
+|Slug d'URL
+|Obligatoire
+|Chaîne qui sera utilisée sur l'URL. Utilisez ici des chemins partiels, pas des URL complètes. Accepte les lettres, chiffres, tirets et barres obliques, et doit commencer par une lettre. Par exemple, si le slug est "hello-world" et que votre domaine est "https://example.org", votre page sera à "https://example.org/hello-world"
+
+|Contenus
+|Obligatoire
+|Tout le texte de la page.
+
+|Sujet
+|Facultatif
+|Dans quel sujet il va entrer.
+
+|Poids
+|Facultatif
+|Quel ordre aura-t-il en relation avec les autres pages. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux pages, "Page a" avec le poids "10" et "Page b" avec le poids "0", puis "Page b" sera d'abord lors de la commande.
+
+|Afficher dans le pied de page
+|Facultatif
+|Si vous voulez afficher cette page dans le pied de page général (disponible dans chaque page).
+|===
+
+image::pages_frontend_footer.png[Frontend: example of a page in the footer]
+
+== Créer un nouveau sujet
+
+Pour créer un nouveau sujet, vous devez :
+
+. Se connecter en tant qu'administrateur
+. Cliquez dans Pages dans le menu latéral
+. Cliquez dans "Créer un sujet"
+
+image::pages_backend_topic_form.png[Backend: new topic form]
+
+
+.Nouveau formulaire de discussion
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Titre de ce sujet. Par exemple : "Aide"
+
+|Description
+|Facultatif
+|À propos de ce sujet.
+
+|Poids
+|Facultatif
+|Quel ordre aura-t-il en relation avec les autres sujets. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux sujets, "Topic a" avec le poids "10" et "Topic b" avec le poids "0", puis "Topic b" sera d'abord lors de la commande.
+
+|Afficher dans le pied de page
+|Facultatif
+|Si vous voulez afficher ce sujet dans le pied de page général (disponible dans chaque page).
+|===
+
+== Page spéciale "Conditions Générales"
+
+C'est là que vous devez mettre vos conditions légales, par exemple l'entité qui a le contrôle de ces données, combien de temps ces données seront enregistrées, etc. Cela devrait être (idéalement) écrit et (au moins) examiné par un avocat.
+
+Il est généré par défaut dans une nouvelle installation. Il ne peut pas être supprimé, et il a quelques détails spéciaux liés à sa nature juridique :
+
+. Il est affiché dans le formulaire d'inscription à la zone de texte
+. S'il y a des changements significatifs, il y a un champ qui peut permettre un administrateur quand il est nécessaire que les participants acceptent à nouveau les "Termes et Conditions" lors de la prochaine connexion.
+
+image::pages_backend_tos_change.png[Backend: ToS change]
+
+image::pages_frontend_tos_change.png[Frontend: ToS change]
+
+If a participant rejects to accept the terms, then they have three options:
+
+. Pour revoir cela plus tard. Il les signale automatiquement.
+. Pour télécharger leurs données personnelles
+. To delete their account
+
+image::pages_frontend_tos_reject.png[Frontend: ToS reject]
+
+== Exemples
+
+=== Pages
+
+image::pages_frontend_show.png[Frontend: show a page]
+
+image::pages_backend_edit.png[Backend: edit a page]
+
+image::pages_backend_list.png[Backend: list pages]
+
+=== Sujets
+
+image::pages_frontend_list_topics.png[Frontend: list topics of pages]
+
+image::pages_backend_list_topics.png[Backend: list topics of pages]

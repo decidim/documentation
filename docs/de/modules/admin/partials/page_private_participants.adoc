@@ -1,0 +1,75 @@
+= Private Teilnehmer
+
+Es gibt Fälle, in denen Sie eine geschlossene Volkszählung der Teilnehmer in einem Raum haben möchten. Zum Beispiel könnte dies ein Raum
+für eine kleine Gruppe von Personen sein, oder die Mitglieder einer Komission innerhalb einer großen Organisation. In diesen Fällen können Sie
+die private Teilnehmer-Funktion nutzen.
+
+image:spaces/private_participants.png[Private Teilnehmerliste]
+
+Für die Einladung privater Teilnehmer eines Raums:
+
+. Als Administrator anmelden
+. Gehe zur Sektion des Bereichs in der Seitenleiste
+. Klicken Sie auf die Aktion zum Bearbeiten des Bereichs
+. Klicken Sie auf den Link "Private Teilnehmer" in der Seitenleiste
+. Klicken Sie auf die Schaltflächen "Neuer private Benutzer des Teilnehmungsbereichs" oder "Import via CSV"
+
+== Neuer private partizipatorischer Raum Benutzer
+
+image:spaces/private_participants_new_form.png[Neue private Teilnehmerform]
+
+
+.Neues partizipatorisches Formular für private Benutzer
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Wie lautet der Name des neuen Teilnehmers.
+
+|E-Mail
+|Benötigt
+|Was ist die E-Mail des neuen Teilnehmers.
+|===
+
+== Über CSV importieren
+
+image:spaces/private_participants_csv_import.png[Private Teilnehmer via CSV] importieren
+
+Mit diesem Formular können Sie die Teilnehmer eines Raumes importieren.
+
+Es muss zwei Spalten mit E-Mail in der ersten Spalte der Datei und den Namen in der letzten Spalte der Datei haben (E-Mail, name)
+der Benutzer, die zum partizipatorischen Raum hinzugefügt werden sollen. Einige Tipps:
+
+* Die Datei sollte keine Kopfzeilen haben. Das bedeutet, dass Sie keine Spalte hinzufügen müssen, die "E-Mail, Name" sagt
+* Du musst ungültige Zeichen wie `<>?%&^*#@()[]=+:;"{}\|` im Benutzernamen vermeiden.
+* Das Trennzeichen zwischen Spalten muss ein Komma (",") sein
+
+== Aktionen
+
+Nachdem die Teilnehmer eingeladen wurden, kannst du die Einladung erneut senden oder löschen.
+
+image:spaces/private_participants_actions.png[Aktionen privater Teilnehmer]
+
+|===
+|Icon |Name |Definition
+
+|image:action_resend_invitation.png[Einladung erneut senden]
+|Einladung erneut senden
+|Wenn die Einladung nicht angenommen wurde, senden Sie sie erneut an den Benutzer
+
+|bild:action_delete.png[Einladung löschen]
+|Einladung löschen
+|Einladung widerrufen
+|===
+
+== Einladung
+
+When a participant was invited they will get an email with a link for accepting the invitation:
+
+image:spaces/private_participants_email_invite.png[Einladung eines privaten Teilnehmers]
+
+After clicking in this email, they will have to fill a form for setting their password, accepting the Terms of Service and giving
+their consent if they want to receive newsletters.
+
+image:spaces/private_participants_user_registration_form.png[Benutzer-Registrierungsformular eines privaten Teilnehmers]

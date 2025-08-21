@@ -1,6 +1,6 @@
-= Newsletters
+= Boletines
 
-Newsletters are emails sent to the organization's participants with the news. They are
+Los boletines son correos electrónicos enviados a los participantes de la organización con las noticias. They are
 sent to participants that have checked the "Receive an occasional newsletter
 with relevant information" when the participant signed up or after in their account.
 
@@ -8,58 +8,58 @@ image::newsletter_contact_permission.png[Contact permission in participant regis
 
 image::newsletter_participant_notifications_settings.png[Contact permission in participant account]
 
-Some examples of when you can and should sent a newsletter are:
+Algunos ejemplos de cuándo puede y debe enviar un boletín de noticias son:
 
-* When a new process could be interesting for all the citizens in a city,
-for instance a Participatory Budgeting process.
-* When there are the results published for a given process.
-* When an assembly has a important point for discussion.
-* When there's a new voting planned.
-* When there's a new conference published
+* Cuando un nuevo proceso podría ser interesante para todos los ciudadanos de una ciudad,
+por ejemplo un proceso de presupuestación participativa.
+* Cuando hay los resultados publicados para un proceso determinado.
+* Cuando una asamblea tiene un punto importante de discusión.
+* Cuando hay una nueva votación prevista.
+* Cuando hay una nueva conferencia publicada
 
-To create a new newsletter, as an administrator you need to:
+Para crear un nuevo boletín de noticias, como administrador necesita:
 
-. Go to newsletter menu
-. Click in the button "New newsletter"
-. Select the template that you want to use
-. Fill the form with the newsletter contents
-. Preview the newsletter
-. Select recipients to deliver
-. Deliver the newsletter
+. Ir al menú del boletín de noticias
+. Haga clic en el botón "Nuevo boletín"
+. Seleccione la plantilla que desea utilizar
+. Rellene el formulario con el contenido del boletín de noticias
+. Vista previa del boletín
+. Seleccionar destinatarios para entregar
+. Enviar el boletín de noticias
 
-== 1. Go to newsletter menu
+== 1. Ir al menú del boletín de noticias
 
-It's on the main sidebar of the admin panel.
+Está en la barra lateral principal del panel de administración.
 
 image::newsletter_menu.png[Newsletter admin menu]
 
-== 2. Click in the button "New newsletter"
+== 2. Haga clic en el botón "Nuevo boletín"
 
-In this page you'll have a list of all the sent newsletters, along with the status
-(if it was sent already or not) and how many participants have received it.
+En esta página tendrás una lista de todos los boletines enviados, junto con el estado
+(si ya fue enviado o no) y cuántos participantes lo han recibido.
 
 image::newsletter_list.png[Newsletter list]
 
-In the secondary sidebar or in the top of the list you have the button for "New
-newsletter".
+En la barra lateral secundaria o en la parte superior de la lista tienes el botón para "Nuevo boletín
+".
 
-== 3. Select template of new newsletter
+== 3. Seleccionar plantilla del nuevo boletín de noticias
 
-Depending on what you want to sent, if it's just a quick update or if it's something
-a little more elaborated (with an image and a button), then you can choose for
-which kind of template you want to use:
+Dependiendo de lo que quieras enviar, si es solo una actualización rápida o si es algo
+un poco más elaborado (con una imagen y un botón), entonces puedes elegir para
+qué tipo de plantilla quieres usar:
 
-* Basic (only text)
-* Text, image and Call to Action button
+* Básico (sólo texto)
+* Botón de texto, imagen y llamada a acción
 
 image::newsletter_templates.png[Newsletter new templates selection]
 
-== 2. Fill the form with the newsletter contents
+== 2. Rellene el formulario con el contenido del boletín de noticias
 
-Depending in which template you've choosen, you have two different forms for
-filling:
+Dependiendo de la plantilla que hayas elegido, tienes dos formularios diferentes para Rellenar
+:
 
-=== Basic (only text) newsletter form
+=== Formulario básico de boletín de noticias (sólo texto)
 
 image::newsletter_new_basic.png[Newsletter new template basic form]
 
@@ -67,98 +67,98 @@ image::newsletter_new_basic_example.png[Newsletter new template basic form fille
 
 [NOTE]
 ====
-You can use "%\{name}" anywhere in the body or subject and it will be
-replaced by the recipient's name.
+Puede usar "%\{name}en cualquier parte del cuerpo o asunto y será reemplazado
+por el nombre del destinatario.
 ====
 
 
-.New Newsletter "basic (only text)" form
+.Nuevo boletín de noticias "básico (sólo texto)" formulario
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Subject
-|Required
-|Subject of the email.
+|Asunto
+|Requerido
+|Asunto del correo electrónico.
 
-|Body
+|Cuerpo
 |
-|Body of the email.
+|Cuerpo del correo electrónico.
 |===
 
-=== Text, image and Call to Action button newsletter form
+=== Formulario de boletín de botones de texto, imagen y llamada a acción
 
 image::newsletter_new_cta01.png[Newsletter new template text, image and CTA form 1]
 
 image::newsletter_new_cta02.png[Newsletter new template text, image and CTA form 2]
 
 
-.New Newsletter "Image, text and Call To Action button" form
+.Nuevo formulario "Imágenes, texto y botón de llamada a la acción"
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Subject
-|Required
-|Subject of the email.
+|Asunto
+|Requerido
+|Asunto del correo electrónico.
 
-|Introduction
+|Introducción
 |
-|Body of the email.
+|Cuerpo del correo electrónico.
 
-|Call To Action button text
+|Texto del botón de llamada a acción
 |
-|What will the button say. For instance, it could be "Participate"
+|Qué dirá el botón. Por ejemplo, podría ser "Participate"
 
-|Call To Action button URL
+|URL del botón Llamar a Acción
 |
-|Where will the button link to. For instance, it could be the complete URL of a participatory process.
+|A dónde se enlazará el botón. Por ejemplo, podría ser la URL completa de un proceso participativo.
 
-|Body
+|Cuerpo
 |
-|Body of the email.
+|Cuerpo del correo electrónico.
 
-|Main image
+|Imagen principal
 |
-|Guidance for image: Preferrably a landscape image that does not have any text. The service crops the image. Allowed file extensions: jpg jpeg gif png bmp ico
+|Guía para la imagen: Preferiblemente una imagen de paisaje que no tiene ningún texto. El servicio cultiva la imagen. Extensiones de archivo permitidas: jpg jpeg gif png bmp ico
 |===
 
-== 3. Preview the newsletter
+== 3. Vista previa del boletín
 
-After you've filled the contents of the newsletter, you can preview it. Until you've
-sent it you can go back and edit it anytime you want.
+Después de llenar el contenido del boletín, puede previsualizarlo. Hasta que hayas enviado
+puedes volver atrás y editarlo en cualquier momento que quieras.
 
 image::newsletter_preview_basic_example.png[Newsletter new template basic form preview]
 
-== 4. Select recipients to deliver
+== 4. Seleccionar destinatarios para entregar
 
-If you want to only communicate about a given space, one useful way of doing this
-is through the "Select recipients to deliver". Here you can choose between:
+Si solo desea comunicarse acerca de un espacio dado, una forma útil de hacer esto
+es a través de "Seleccionar destinatarios para entregar". Aquí puedes elegir entre:
 
-* Sending the newsletter to all confirmed users
-* Sending the newsletter to all confirmed users that have participated in any of
-the selected participatory spaces in the list
-* Sending the newsletter to all confirmed users that have followed any of
-the selected participatory spaces in the list
-* Sending the newsletter to all the participants that have selected an scope in
-their "My interests" settings in their account.
+* Enviando el boletín a todos los usuarios confirmados
+* Enviando el boletín a todos los usuarios confirmados que han participado en cualquiera de
+los espacios participativos seleccionados en la lista
+* Enviando el boletín a todos los usuarios confirmados que han seguido cualquiera de
+los espacios participativos seleccionados en la lista
+* Enviando el boletín a todos los participantes que han seleccionado un ámbito en
+sus ajustes de "Mis intereses" en su cuenta.
 
-It's important to note that even if a participant has confirmed its account and
-is following the space, the system will not send her a newsletter email if she
+It's important to note that even if a participant has confirmed their account and
+is following the space, the system will not send them a newsletter email if they
 haven't activated the "I want to receive newsletters".
 
 image::newsletter_select_recipients.png[Newsletter select recipients]
 
-If you select the "Sent do participants" or "Send to followers" of a given space,
-then you can choose which spaces are relevant:
+Si seleccionas "Enviar a los participantes" o "Enviar a los seguidores" de un espacio determinado,
+entonces puedes elegir qué espacios son relevantes:
 
 image::newsletter_select_recipients_spaces.png[Newsletter select recipients spaces]
 
-== 5. Deliver the newsletter
+== 5. Enviar el boletín de noticias
 
 Finally if you click in the "Deliver newsletter" button, the newsletter will be
 sent to all the selected recipients.
 
 [NOTE]
 ====
-Once a newsletter was sent it can't be undone nor edited. If you have multiple
-languages active, be careful with reviewing all the languages well before sending.
+Una vez enviado el boletín de noticias, no se puede deshacer ni editar. Si tienes varios idiomas
+activos, ten cuidado de revisar todos los idiomas antes de enviar.
 ====

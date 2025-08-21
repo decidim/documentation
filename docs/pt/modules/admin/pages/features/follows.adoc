@@ -1,27 +1,27 @@
-= Follows
+= Seguidores
 
-Most of the contents in Decidim allows to be followed. This means that you'll receive xref:features/notifications.adoc[notifications]
-of the activity being made by the thing you're following.
+A maioria do conteúdo em Decidim permite ser seguido. Isso significa que você receberá xref:features/notifications.adoc[notifications]
+da atividade sendo feita pela coisa que você está seguindo.
 
-You can control these notifications in the xref:features/my_account/notifications_settings.adoc[settings of your account].
+Você pode controlar essas notificações na xref:features/minha_account/notifications_settings.adoc[settings of your account].
 
-The activity of the things that you're following is visible in your xref:features/my_public_profile/timeline.adoc[profile timeline].
+A atividade das coisas que você está seguindo fica visível em seu xref:recursos/my_public_profile/timeline.adoc[profile timeline].
 
-For following a thing:
+Para seguir uma coisa:
 
-. Navigate to whatever you want to follow.
-. Click in the "Follow" button.
-image:button_follow.png[Follow button]
-. You'll see the "Follow" button disappear and the "Stop following" button appear.
+. Navegue até o que você deseja seguir.
+. Clique no botão "Seguir".
+image:button_follow.png[Botão Seguir]
+. Você verá o botão "Seguir" desaparecer e o botão "Parar de seguir" aparecer.
 
-To unfollow a thing:
+Deixar de seguir uma coisa:
 
-. Navigate to whatever you want to unfollow.
-. Click in the "Stop following" button.
-image:button_stop_following.png[Stop following button]
-. You'll see the "Stop following" button disappear and the "Follow" button appear.
+. Navegue para o que você deseja deixar de seguir.
+. Clique no botão "Parar de seguir".
+image:button_stop_following.png[Parar botão seguido]
+. Você verá o botão "Parar de seguir" desaparecer e o botão "Seguir" aparecer.
 
-Administrators by default follow all the new spaces that are created in the Decidim platform.
+Os administradores seguem por padrão todos os novos espaços que são criados na plataforma Decidim.
 
-A participant can also follow another participants. This is public and it's visible in the profile sections
-xref:features/my_public_profile/follows.adoc[follows] and xref:features/my_public_profile/followers.adoc[followers].
+Um usuário também pode seguir outros participantes. Isso é público e é visível nas seções de perfil
+xref:features/my_public_profile/follows.adoc[follows] e xref:features/my_public_profile/followers.adoc[followers].

@@ -1,89 +1,89 @@
-= Phases
+= Fases
 
-A participatory process is a sequence of phases ordered in time. Depending on which phase of the process timeline you
+Un proceso participativo es una secuencia de fases ordenadas a tiempo. Depending on which phase of the process timeline you
 are, then you can enable or disable some features.
 
-Ideally, the Phases of a Participatory Process are always the same and are not changed, so participants can know what are
-the rules and timeframe and can organize their lives to know when it'd be best for them to participate in this process.
+Idealmente, las fases de un proceso participativo son siempre las mismas y no se cambian, para que los participantes puedan saber qué son
+las reglas y el calendario y puedan organizar sus vidas para saber cuándo sería mejor para ellos participar en este proceso.
 
-As a guideline, the standard structure of a participatory process may be as follows:
+Como pauta, la estructura estándar de un proceso participativo puede ser la siguiente:
 
-. Presentation
-. Diagnosis
-. Proposal creation and debate
-. Proposals prioritization
-. Proposals evaluation
-. Monitoring
+. Presentación
+. Diagnóstico
+. Creación de propuestas y debate
+. Priorización de propuestas
+. Evaluación de propuestas
+. Monitoreo
 
-Participants can find the link to different phases of a participatory process in the header of the participatory process,
-in the link "Process phases". Here they can see the full description and explanation of the phases. The active phase
-will be highlighted.
+Los participantes pueden encontrar el enlace a diferentes fases de un proceso participativo en el encabezado del proceso participativo,
+en el enlace "Fases de proceso". Aquí pueden ver la descripción completa y la explicación de las fases. La fase activa
+será resaltada.
 
-image:process_phases_header.png[Header with processes phases link]
+image:process_phases_header.png[Encabezado con las fases de procesos]
 
-image:process_phases.png[Process phases explanation]
+image:process_phases.png[Explicación de las fases del proceso]
 
-== Create a new phase
+== Crear una nueva fase
 
-image:process_phases_list.png[Phases of a participatory process]
+image:process_phases_list.png[Fases de un proceso participativo]
 
-For creating a new phase of a participatory process:
+Crear una nueva fase de un proceso participativo:
 
-. Sign in as administrator
-. Go to the participatory process section in the sidebar
-. Click on the participatory process Edit action
-. Click on the Phases link in the sidebar
-. Click on the "New phase" button
+. Iniciar sesión como administrador
+. Ir a la sección de proceso participativo en la barra lateral
+. Haga clic en el proceso participativo Editar acción
+. Haga clic en el enlace de fases en la barra lateral
+. Haga clic en el botón "Nueva fase"
 
-image:process_phases_new_form.png[Create a new participatory process phase form]
+image:process_phases_new_form.png[Crear una nueva forma de fase de proceso participativo]
 
 
-.Create meeting
+.Crear reunión
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Title
-|Required
-|What is the title for this phase.
+|Título
+|Requerido
+|¿Cuál es el título de esta fase?
 
-|Description
+|Descripción
 |
-|A long description explaining what's this phase for.
+|Una descripción larga explicando para qué sirve esta fase.
 
-|Start date
+|Fecha de inicio
 |
-|Which day this phase will start. Expected format: dd/mm/yyyy
+|¿Qué día comenzará esta fase? Formato esperado: dd/mm/aaaa
 
-|End date
+|Fecha de fin
 |
-|Which day this phase will end. Expected format: dd/mm/yyyy
+|¿Qué día terminará esta fase? Formato esperado: dd/mm/aaaa
 
-|Call to Action path
+|Ruta de llamada a la acción
 |
-|Where will the button link to. For instance, it could point to the new proposal creation form. Use partial paths, not full
-URLs here. Accepts letters, numbers, dashes, and, slashes, and must start with a letter. If not set, the button will not be shown.
+|A dónde se enlazará el botón. Por ejemplo, podría señalar la nueva forma de creación de propuestas. Utilice rutas parciales, no URLs
+completas aquí. Acepta letras, números, guiones y barras, y debe comenzar con una letra. Si no se establece, el botón no se mostrará.
 
-|Call to Action text
+|Texto de llamada a acción
 |
-|What will the button say. For instance, it could be "Create a proposal". If not set, the button will not be shown.
+|Qué dirá el botón. Por ejemplo, podría ser "Crear una propuesta". Si no se establece, el botón no se mostrará.
 |===
 
-== Actions
+== Acciones
 
-After a phase was created you have these actions:
+Después de crear una fase, tiene estas acciones:
 
 |===
-|Icon |Name |Definition
+|Icono |Nombre |Definición
 
-|image:action_activate.png[Activate icon]
-|Activate
-|To make this phase the active one.
+|image:action_activate.png[Activar icono]
+|Activar
+|Hacer de esta fase la activa.
 
-|image:action_edit.png[Edit icon]
-|Edit
-|To edit this phase.
+|image:action_edit.png[Editar icono]
+|Editar
+|Para editar esta fase.
 
-|image:action_delete.png[Delete icon]
-|Delete
-|To delete this phase.
+|image:action_delete.png[Borrar icono]
+|Eliminar
+|Para eliminar esta fase.
 |===

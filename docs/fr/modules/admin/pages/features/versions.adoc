@@ -1,0 +1,24 @@
+= Versions
+
+La fonctionnalité de versions permet à un visiteur de voir l'évolution des différentes versions de ressources qui peuvent être modifiées,
+comme des propositions ou des résultats.
+
+Avec les versions, il est possible de voir qui a fait le changement, quand le changement a été fait et exactement ce qui a changé.
+
+image:features/versions/side_by_escaped.png[Versions dans les ressources]
+
+== Voir les versions
+
+. Allez au contenu dont vous voulez voir la version.
+. Cliquez dans le lien "Voir les autres versions" dans la barre latérale
+image:features/versions/sidebar.png[Voir le lien d'autres versions dans la barre latérale]
+. Cliquez dans la version précédente que vous voulez voir
+image:features/versions/list.png[Liste des versions]
+. De là, vous pouvez changer la visualisation des différences de version
+image:features/versions/unified_unescaped.png[Vue unifiée non échappée]
+
+Il est possible de visualiser les diffs des versions en deux formats : côte à côte ou unifié. Dans le cas où le contenu est
+en HTML, alors il est également possible de voir le diff non échappé et échappé, et voir le code HTML complet.
+
+image:features/versions/side_by_unescaped.png[Vue côte à côte non échappée]
+image:features/versions/unified_escaped.png[Vue échappée unifiée]

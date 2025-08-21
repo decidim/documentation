@@ -1,45 +1,45 @@
-= Media links
+= Links de mídia
 
-Conferences can have a section called "Media and links". It shows a list of media files and links that are associated to the conference.
+As conferências podem ter uma seção chamada "Mídia e links". Ele mostra uma lista de arquivos de mídia e links associados à conferência.
 
-The media files are the files from the xref:admin:spaces/conferences/attachments.adoc[attachments] sections.
-The media links are defined in a section in the admin panel of the conference.
+Os arquivos de mídia são os arquivos das seções xref:admin:spaces/conferences/attachments.adoc[attachments].
+Os links de mídia são definidos em uma seção no painel de administração da conferência.
 
-image:spaces/conferences/media_links_frontend.png[Conferences media links (frontend)]
+imagem:espaçaces/conferências/media_links_frontend.png[Conferências de links media (frontend)]
 
-== Create a new media link
+== Criar um novo link de mídia
 
-image:spaces/conferences/media_links_backend.png[Conferences media links]
+imagem:espaçaces/conferências/media_links_backend.png[Conferências links de mídia]
 
-For creating a new media link of a conference:
+Para criar um novo link de mídia de uma conferência:
 
-. Sign in as administrator
-. Go to the conferences section in the sidebar
-. Click on the conference Edit action
-. Click on the "Media links" link in the sidebar
-. Click on the "New Media Link" button
-. Fill the form
+. Entrar como administrador
+. Ir para a seção de conferências na barra lateral
+. Clique na ação Editar da conferência
+. Clique no link "Links de Mídia" na barra lateral
+. Clique no botão "Novo link de mídia"
+. Preencha o formulário
 
-image:spaces/conferences/new_media_link.png[Create a new conferences media link]
+imagem:espaçaces/conferências/new_media_link.png[Crie um novo link de mídia de conferência]
 
 
-.New media link form
+.Novo formulário de link de mídia
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Title
-|Required
-|The title of the link
+|Título
+|Obrigatório
+|O título do link
 
-|Link
-|Required
-|URL of the link
+|Vincular
+|Obrigatório
+|URL do link
 
-|Date
-|Required
-|Published date of the link
+|Encontro
+|Obrigatório
+|Data de publicação do link
 
-|Weight
-|Optional
-|Which order will it have in relation to the other links. Having a lower number means a higher priority. For instance, if you have two links, "Link a" with weight "10" and "Link b" with weight "0", then "Link b" will be first when ordering.
+|Peso
+|Opcional
+|Que ordem terá em relação aos outros laços. Ter um número menor significa uma prioridade mais alta. Por exemplo, se você tiver dois links, "Link a" com peso "10" e "Link b" com peso "0", depois "Link b" será o primeiro quando fizer o pedido.
 |===

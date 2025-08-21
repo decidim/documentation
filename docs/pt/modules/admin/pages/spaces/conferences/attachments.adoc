@@ -1,81 +1,81 @@
-= Attachments
+= Anexos
 
-Attachments allow an administrator to upload static files to a conference.
+Anexos permitem que um administrador faça upload de arquivos estáticos para uma conferência.
 
-When a conference is launched, it is important to provide citizens with as much information as possible about them so
-that they can participate with knowledge. That is why it is helpful to add files (Attachments) with the information that
-is considered relevant.
+Quando uma conferência for lançada, é importante fornecer aos cidadãos tantas informações quanto possível sobre eles, tão
+que eles possam participar com o conhecimento. É por isso que é útil adicionar arquivos (Attachments) com a informação que
+é considerada relevante.
 
-Optionally, these documents can be grouped in *Folders*.
+Opcionalmente, esses documentos podem ser agrupados em *Pastas*.
 
-They can be found on the Conference "Media and links" section:
+Podem ser encontrados na seção "Mídia e links" da conferência:
 
-image:spaces/conferences/attachments.png[Conferences attachments (backend)]
+image:spaces/conferências/anexos.png[Anexos de conferências (backend)]
 
-image:spaces/conferences/media_links_frontend.png[Conferences attachments (frontend)]
+imagem:espaçaces/conferências/media_links_frontend.png[Anexos de conferências (frontend)]
 
-Read more about this in xref:admin:spaces/conferences/media_links.adoc[Media links].
+Leia mais sobre isso no xref:admin:spaces/conferences/media_links.adoc[links Media ].
 
-== Create a new attachment
+== Criar um novo anexo
 
-image:spaces/attachments_admin.png[View the attachments of a conference in the admin interface]
+imagem:spaces/attachments_admin.png[Veja os anexos de uma conferência na interface de administração]
 
-For creating a new phase of a conference:
+Para criar uma nova fase de uma conferência:
 
-. Sign in as administrator
-. Go to the conference section in the sidebar
-. Click on the conference Edit action
-. Click on the Attachments link in the sidebar
-. Click on the "New attachment" button
+. Entrar como administrador
+. Ir para a seção de conferência na barra lateral
+. Clique na ação Editar da conferência
+. Clique no link dos anexos na barra lateral
+. Clique no botão "Novo anexo"
 
-image:spaces/attachments_new_form.png[Create a new attachment form]
+imagem:spaces/attachments_new_form.png[Crie um novo formulário de anexo]
 
 
-.Create attachment
+.Criar anexo
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Attachment or image name
-|Required
-|What is the title for this attachment.
+|Nome de imagem ou anexo
+|Obrigatório
+|Qual é o título para este anexo.
 
-|Weight
-|Optional
-|Which order will it have in relation to the other attachments. Having a lower number means a higher priority. For instance, if you have two categories, "Attachment a" with weight "10" and "Attachment b" with weight "0", then "Attachment b" will be first when ordering.
+|Peso
+|Opcional
+|Que ordem terá em relação aos outros anexos. Ter um número menor significa uma prioridade mais alta. Por exemplo, se você tem duas categorias, "Anexo" com peso "10" e "Anexo b" com peso "0", em seguida "Anexo b" será o primeiro durante a ordenação.
 
-|Description
-|Required
-|A long description explaining what this file is about.
+|Descrição:
+|Obrigatório
+|Uma longa descrição explicando o que é esse arquivo.
 
-|Folder
-|Optional
-|Which folder this attachment belongs to.
+|pasta
+|Opcional
+|Qual pasta pertence a este anexo.
 
-|File
-|Required
-|Upload the file. Guidance for file: Has to be an image or a document. For images, use preferrably landscape images, the
-service crops the image. For CSV files, the separator between columns must be a comma (","). Maximum file size: 10MB. Allowed
-file extensions depends in your server configuration.
+|Arquivo
+|Obrigatório
+|Enviar o arquivo. Guia para o arquivo: Tem que ser uma imagem ou um documento. Para imagens, use preferencialmente imagens de paisagem, o serviço
+cultiva a imagem. Para arquivos CSV, o separador entre colunas deve ser uma vírgula (","). Tamanho máximo do arquivo: 10MB. Extensões
+permitidas dependem da configuração do seu servidor.
 |===
 
-== Create a new folder
+== Criar nova pasta
 
-image:spaces/attachments_new_folder_form.png[Create a new folder for attachments form]
+imagem:spaces/attachments_new_folder_form.png[Crie uma nova pasta para formulário de anexos]
 
 
-.Create folder
+.Criar pasta
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Name
-|Required
-|Name of the folder
+|Nome:
+|Obrigatório
+|Nome da pasta
 
-|Weight
-|Optional
-|Which order will it have in relation to the other folders. Having a lower number means a higher priority. For instance, if you have two folders, "Folder a" with weight "10" and "Folder b" with weight "0", then "Folder b" will be first when ordering.
+|Peso
+|Opcional
+|Qual será a ordem em relação às outras pastas. Ter um número menor significa uma prioridade mais alta. Por exemplo, se você tem duas pastas, "Pasta a" com peso "10" e "Pasta b" com peso "0", em seguida "Pasta b" será o primeiro na ordenação.
 
-|Description
-|Required
-|A long description explaining what this folder is about.
+|Descrição:
+|Obrigatório
+|Uma longa descrição explicando sobre o que é essa pasta.
 |===

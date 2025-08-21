@@ -1,0 +1,23 @@
+= Einbetten
+
+Manchmal möchten Sie Inhalte in eine externe Seite einbetten. Dafür kannst du die `Embed` Funktion verwenden.
+
+image:features/embed/example.png[Eine Vorschlagskarte, die in eine andere Seite eingebettet ist]
+
+== So einbetten
+
+. Navigieren Sie zu den Inhalten, die Sie einbetten möchten.
+. Klicken Sie auf den Link "Embed" in der Seitenleiste. image:features/embed/link.png[]
+image:features/embed/sidebar.png[]
+. Kopieren Sie den Code aus dem Modal.
+image:features/embed/modal.png[]
+. Fügen Sie diesen Code in die externe Seite ein, auf der Sie ihn einbetten möchten. Das CMS oder die Plattform, die Sie benutzen, muss
+HTML-Code ändern.
+
+Ein Beispiel für diesen Code ist:
+
+[source,html]
+----
+<script src="https://meta.decidim.org/processes/roadmap/f/122/proposals/16243/embed.js"></script>
+<noscript><iframe src="https://meta.decidim.org/processes/roadmap/f/122/proposals/16243/embed.html" frameborder="0" scrolling="vertical"></iframe></noscript>
+----

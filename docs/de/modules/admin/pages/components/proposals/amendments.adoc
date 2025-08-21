@@ -1,0 +1,94 @@
+= Änderungen
+
+Mit der Änderungsfunktion können die Teilnehmer Änderungen an einem bereits veröffentlichten Vorschlag vorschlagen.
+
+Es ist nützlich, Verbesserungen oder Korrekturen vorzuschlagen, besonders nützlich, wenn Gesetze oder Normativen mit xref:components/proposals/participatory_texts.adoc[partizipative Texte].
+
+It has similarities with xref:components/proposals/collaborative_drafts.adoc[Collaborative Drafts], but the main difference
+is that with amendments there is no need to trust the other authors intentions, as every change is reviewed and must be
+approved by the author of the original proposal.
+
+image:Komponenten/Vorschläge/Änderungen/Änderungsantrag.png[Änderung eines Vorschlags]
+
+Zur Konkretisierung von "Änderungsanträgen" in den Vorschlägen:
+
+. Als Admin anmelden
+. Zum Admin-Panel wechseln
+. Wählen Sie in der Haupt-Seitenleiste den Bereich aus, unter dem Sie die Komponente konfigurieren möchten.
+Zum Beispiel "Prozesse", "Assemblies" oder "Konferenzen"
+. Gehe zu Komponenten
+. Auf "Komponente hinzufügen"-Button klicken
+. Klicken Sie auf "Vorschläge"
+. Überprüfen Sie die Einstellung "Änderungen aktiviert"
+. Überprüfen und konfigurieren Sie die folgenden verwandten Einstellungen: "Assistent für Änderungen im Text" in den globalen Komponenteneinstellungen und "Erstellung von Änderungen aktiviert", "Änderung der Reaktion ermöglicht", "Änderung der Förderung ermöglicht" und "Änderung der Sichtbarkeit" in den Schrittkomponenten-Einstellungen.
+. Komponente speichern
+
+== So funktioniert es
+
+. Ein Teilnehmer (Alice) hat einen Vorschlag erstellt
+. Ein anderer Teilnehmer (Bob) hat den Vorschlag gesehen und möchte einige Änderungen
+image:components/proposals/amendments / proposal_to_amend.png[]
+. Bob klicken Sie auf den Button "Vorschlag ändern"
+. Bob führt die Änderungen im Formular "Änderungsvorschlag erstellen" aus
+image:components/proposals/amendments/create_amendment_draft.png[]
+. Bob prüft, ob es ähnliche Änderungen gibt
+. Bob bearbeitet den Abänderungsentwurf
+Bild:Komponenten/Vorschläge/Änderungen/Änderung_Änderung_draft.png[]
+. Bob veröffentlicht den Änderungsentwurf
+Bild:Komponenten/Vorschläge/Änderungen/Veröffentlichung_Änderungssatz_draft.png[]
+. Jeder kann den Änderungsentwurf
+einsehen: Komponenten/Änderungen/Änderungsvorschläge/Änderungsvorschläge[]
+Bild:Komponenten/Änderungsvorschläge/Änderungsvorschläge/Liste anzeigen.png[]
+Bild:Komponenten/Änderungsvorschläge/Änderungsvorschläge/Änderungsvorschläge/Änderungsvorschläge/Änderung_Seite_von_Seite.png[]
+. Es ist auch möglich, die geänderten Vorschläge
+zu filtern: Komponenten/Vorschläge/Änderungen/Änderung_list_filter.png[]
+. Alice erhält eine Benachrichtigung, dass Bob eine Änderung ihres ursprünglichen Vorschlags vorgeschlagen hat
+Bild:Komponenten/Vorschläge/Änderungsvorschläge/Änderungsvorschläge_amendmed_notification.png[]
+. Alice sieht den Änderungsvorschlag
+image:components/proposals/proposal_amendmed_to_review.png[]
+. Alice kann den Änderungsvorschlag
+einsehen: Komponenten/Vorschläge/Änderungen/Vorschlag_amendmed_review.png[]
+. Alice kann den Änderungsvorschlag
+bilage:components/proposals/proposments/proposal_amendmed_accepted.png[]
+. Jeder kann den endgültigen Vorschlag
+einsehen: Komponenten/Änderungen/Änderungsvorschläge/Vorschlag_amendmed_final.png[]
+image:Komponenten/Vorschläge/Änderungsvorschläge/Vorschlag_amendmed_amendment_list.png[]
+. Jeder kann die Versionshistorie des Vorschlags
+anzeigen: Komponenten/Änderungen/Änderungsvorschläge/Änderungsvorschläge_amendmed_versions.png[]
+
+== Relevante Komponenteneinstellungen
+
+
+.Vorschlagsformular - Einstellungen für Änderungen
+|===
+|Feld |Typ |Beschreibung
+
+|Änderungen aktiviert
+|Globale
+|Auswählen, um xref:components/proposals/amendments.adoc[amendments] in Vorschlägen zu aktivieren. Andere Einstellungen sichtbar, wenn eine aktiviert wird.
+
+|Änderungsassistent Hilfetext
+|Globale
+|Wie sieht der Hilfetext beim Erstellen neuer Änderungen.
+
+|Änderungserstellung aktiviert
+|Schritt
+|Der Teilnehmer kann Vorschläge ändern. Siehe xref:components/proposals/amendments.adoc[Amendments].
+
+|Änderungsreaktion aktiviert
+|Schritt
+|Autoren des Vorschlags können die Emittenten des Teilnehmers annehmen oder ablehnen.
+
+|Förderung von Änderungen aktiviert
+|Schritt
+|Die Autoren der Emandation werden in der Lage sein, den Vorschlag der abgelehnten Emendation zu fördern.
+
+|Sichtbarkeit von Änderungen
+|Schritt
+|Wählen Sie eine der "Änderungen sind für alle sichtbar" oder "Änderungen sind nur für ihre Autoren sichtbar"
+|===
+
+== Promotion
+
+Wenn ein Vorschlag abgelehnt und der "Abänderungsantrag aktiviert" aktiviert ist, dann kann der Autor, der die abgelehnte
+Änderung gemacht hat, zu einem neuen Vorschlag die abgelehnte Freigabe befördern.

@@ -1,72 +1,72 @@
-= Assembly members
+= Membros da assembleia
 
-Assembly members allow showing all the people or groups that belong to a given assembly. It's useful for being transparent.
+Os membros da assembleia permitem mostrar todos os povos ou grupos que pertencem a uma determinada assembleia. É útil para ser transparente.
 
-You can see an example in https://meta.decidim.org/assemblies/coordination-committee/members[Decidim Coordination Commitee Assembly in Metadecidim].
+Você pode ver um exemplo em https://meta.decidim.org/assemblies/coordination-committee/members[Decidim Coordination Commitee Assembly in Metadecidim].
 
-image:assembly_members.png[Assembly members of the Coordination Committee]
+image:assembly_members.png[Membros Assembly do Comitê de Coordenação]
 
-== New assembly member form
+== Novo formulário de membro de montagem
 
-image:assembly_members_list.png[Assembly members admin list]
+image:assembly_members_list.png[Lista de administradores dos membros do Assembly
 
-For creating a new phase of a participatory process:
+Para criar um novo passo de um processo participativo:
 
-. Sign in as administrator
-. Go to the assemblies section in the sidebar
-. Click on the assembly Edit action
-. Click on the Members link in the sidebar
-. Click on the "New member" button
-. Fill the form
+. Entrar como administrador
+. Ir para a seção montagens na barra lateral
+. Clique na ação editar de montagem
+. Clique no link dos membros na barra lateral
+. Clique no botão "Novo membro"
+. Preencha o formulário
 
-image:assembly_members_new_form.png[Assembly members new form]
+image:assembly_members_new_form.png[Novo formulário para membros]
 
 
-.New assembly member form
+.Novo formulário de membro de montagem
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Participant type
-|Required
-|Wheter this assembly member is non-participant or existing participant. Does she already have an account created on the platform?
+|Tipo de usuário
+|Obrigatório
+|Rodar este membro de montagem não é participante ou participante existente. Já têm uma conta criada na plataforma?
 
-|Full name
-|Required if it's non-participant.
+|Nome completo
+|Necessário se não for participante.
 |
 
-|User or group
-|Required if it's an existing participant.
-|Type at least three characters to search.
+|Usuário ou grupo
+|Necessário se for um participante existente.
+|Digite pelo menos três caracteres para pesquisar.
 
-|Position
-|Required
-|Choose one of President, Vice president, Secretary, or Other. In case it's other, you can fill in the position title.
+|Posição
+|Obrigatório
+|Escolha um Presidente, Vice-presidente, Secretário de Estado, ou Outro. Caso seja outro, você pode preencher o título da posição.
 
-|Weight
-|Optional
-|Which order will it have in relation to the other members. Having a lower number means a higher priority. For instance, if you have two members, "Member a" with weight "10" and "Member b" with weight "0", then "Member b" will be first when ordering.
+|Peso
+|Opcional
+|Qual a ordem que terá em relação aos outros membros. Ter um número menor significa uma prioridade mais alta. Por exemplo, se você tem dois membros, "membro a" com peso "10" e "membro b" com peso "0", em seguida "Membro b" será o primeiro na ordenação.
 
-|Designation date
-|Required
-|When was this person or group assigned as a member of this assembly. Expected format: dd/mm/yyyy
+|Data de designação
+|Obrigatório
+|Quando foi esta pessoa ou grupo designado como membro desta assembleia. Formato esperado: dd/mm/aaaa
 
-|Designation mode
-|Optional
-|How was this person designed.
+|Modo de designação
+|Opcional
+|Como foi desenhada esta pessoa.
 
-|Ceased date
-|Optional
-|When was this person or group ceased to be a member of this assembly. Expected format: dd/mm/yyyy
+|Data de cessação
+|Opcional
+|Quando esta pessoa ou grupo deixou de ser membro desta assembleia. Formato esperado: dd/mm/aaaa
 
-|Gender
-|Optional
-|Which gender does this person most identify with.
+|Gênero
+|Opcional
+|Com qual gênero essa pessoa mais se identifica.
 
-|Birthday
-|Optional
-|When was this person born. Expected format: dd/mm/yyyy
+|Aniversário
+|Opcional
+|Quando essa pessoa nasceu. Formato esperado: dd/mm/aaaa
 
-|Birthplace
-|Optional
-|Where was this person born.
+|Nascimento
+|Opcional
+|Onde nasceu esta pessoa.
 |===

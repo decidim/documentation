@@ -1,357 +1,357 @@
-= Budgets
+= Presupuesto
 
 :page-toclevels: 4
 
-The Budgets component allows people to vote by selecting projects of their choosing. Depending on the needs and normative
-of the organization, this could be configured so people have assigned a total budget (for instance, 100.000 EUR) and then
-every project has assigned a value (for instance, 10.000 EUR). Then when people vote on projects, they have a progress bar
-where they see how much remaining budget they have to allocate in this voting.
+El componente Presupuestos permite a la gente votar seleccionando proyectos de su elección. Dependiendo de las necesidades y la normativa
+de la organización, esto podría configurarse para que la gente haya asignado un presupuesto total (por ejemplo, 100. 00 euros) y luego
+cada proyecto ha asignado un valor (por ejemplo, 10.000 euros). Luego, cuando la gente vota sobre proyectos, tienen una barra de progreso
+donde ven cuánto presupuesto restante tienen que asignar en esta votación.
 
-From this starting point, there could be other configurations, such as:
+Desde este punto de partida, podría haber otras configuraciones, como:
 
-* A minimum percentage of budget to be allocated
-* A minimum number of projects to be allocated
-* Multiple budgets, one for each district or neighborhood
+* Un porcentaje mínimo del presupuesto a asignar
+* Un número mínimo de proyectos a asignar
+* Múltiples presupuestos, uno por cada distrito o vecindad
 
-Some examples of where this component was used:
+Algunos ejemplos de donde se usó este componente:
 
 * https://www.decidim.barcelona/processes/PressupostosParticipatius[2020/2021 Participatory Budgeting Process in Decidim Barcelona].
-The  city of Barcelona (Spain) has allocated a budget of 30.000.000 EUR so people can present, define, prioritize, vote
-and choose which investment projects the city goverment should execute.
-* https://ecrivons.angers.fr/processes/BP2021[2021 Participatory Budgeting Process in Angers]. The city of Angers (France) has allocated
-a budget of 1.000.000 EUR so people from 11 years can propose maximum of 3 ideas and then vote for their 5 favorite projects.
-* https://omastadi.hel.fi/[2021 Participatory Budgeting Process in Helsinki]. Helsinki has allocated 8.8 million euros to realising
-residents’ wishes. The ideas are developed together into proposals that Helsinki residents can vote on. The proposals with the
-most votes are realised by the City.
+La ciudad de Barcelona (España) ha asignado un presupuesto de 30.000. 00 euros para que la gente pueda presentar, definir, priorizar, votar
+y elegir qué proyectos de inversión debe ejecutar el gobierno de la ciudad.
+* https://ecrivons.angers.fr/processes/BP2021[2021 Proceso de presupuestación participativa en Angers]. La ciudad de Angers (Francia) ha asignado
+un presupuesto de 1.000. 00 euros para que la gente de 11 años pueda proponer un máximo de 3 ideas y luego votar por sus 5 proyectos favoritos.
+* https://omastadi.hel.fi/[2021 Proceso de presupuestación participativa en el ki]. Helsinki has allocated 8.8 million euros to realising
+residents’ wishes. Las ideas se desarrollan juntas y se convierten en propuestas sobre las que los residentes de Helsinki pueden votar. Las propuestas con la
+mayor cantidad de votos son realizadas por la ciudad.
 
-image:components/budgets/example01.png[Budgets example voting]
-image:components/budgets/example02.png[Budgets example error messagge when exceding the amount of budget]
-image:components/budgets/example03.png[Budgets vote confirmation]
-image:components/budgets/example04.png[Budgets after voting]
+image:components/budgets/example01.png[Ejemplo de presupuesto votando]
+image:components/budgets/example02.png[Ejemplo de mensaje de error de ejemplo de presupuesto al exceder la cantidad de presupuesto]
+image:components/budgets/example03.png[Confirmación del voto presupuestario]
+image:components/budgets/example04.png[Presupuestos después de votar]
 
-To configure the Budgets component:
+Para configurar el componente Presupuestos:
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies" or "Conferences".
-. Go to components
-. Click on "Add component" button
-. Click on "Budgets"
-. Fill the xref:_add_component[Add component] form
+. Iniciar sesión como administrador
+. Ir al panel de administración
+. En la barra lateral principal, haga clic en el botón para el espacio para el que desea configurar el componente.
+Por ejemplo, podría ser "Procesos", "Colmenas" o "Conferencias".
+. Ir a los componentes
+. Haga clic en el botón "Añadir componente"
+. Haga clic en "Budgets"
+. Rellene el formulario xref:_add_component[Añadir componente]
 
-== Add component
+== Añadir componente
 
-image:components/budgets/component.png[Add component form]
+image:components/budgets/component.png[Añadir formulario de componente]
 
 
-.Add component: Budgets form
+.Añadir componente: Formulario de presupuestos
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Name
-|Required
-|What is the title of this component. For instance, "Budgets"
+|Nombre
+|Requerido
+|¿Cuál es el título de este componente. Por ejemplo, "Budgets"
 
-|Order position
-|Optional
-|Which order will it have in relation to the other budgets. Having a lower number means a higher priority.
-For instance, if you have two budgets, "Budget a" with weight "10" and "Budget b" with weight "0", then "Budget b" will be first when ordering.
+|Posición del pedido
+|Opcional
+|¿Qué orden tendrá en relación con los demás presupuestos. Tener un número más bajo significa una prioridad mayor.
+Por ejemplo, si tienes dos presupuestos, "Budget a" con peso "10" y "Budget b" con peso "0", entonces "Presupuesto b" será el primero al hacer el pedido.
 |===
 
 
-.Add component: Budgets form - Global settings
+.Añadir componente: Formulario de presupuestos - Configuración global
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Scopes enabled
-|Optional
-|Check if you want to have Scopes filtering in this component.
+|Ámbitos habilitados
+|Opcional
+|Marque si desea tener filtrado de Scopes en este componente.
 
-|Scope
-|Optional
-|Which xref:admin:scopes.adoc[Scope] does this component belongs to.
+|Alcance
+|Opcional
+|A qué xref:admin:scopes.adoc[Scope] pertenece este componente.
 
-|Global scope
-|Optional
+|Ámbito global
+|Opcional
 |
 
 |xref:_workflows[Workflow]
-|Required
-|How the participants can vote if there are multiple budget sets. You can define your own xref:_workflows[Workflow] or use one of the availables.
+|Requerido
+|Cómo pueden votar los participantes si hay varios conjuntos de presupuestos. Puede definir su propio xref:_workflows[Workflow] o utilizar uno de los disponibles.
 
-|Projects per page
-|Required
-|How many projects are displayed per page.
+|Proyectos por página
+|Requerido
+|Cuántos proyectos se muestran por página.
 
-|Enable rule: Minimum budget percentage
-|Optional, but incompatible with "Minimum number of projects to be voted on" and "Selected projects with minimum and maximum number of projects to be voted on"
-|Allows to define a "Vote threshold percent", a percent of the total budget that participants must reach to be able to vote.
+|Habilitar regla: Porcentaje mínimo de presupuesto
+|Opcional, pero incompatible con "Número mínimo de proyectos a votar" y "Proyectos seleccionados con un número mínimo y máximo de proyectos a votar"
+|Permite definir un "umbral de voto", un porcentaje del presupuesto total que los participantes deben alcanzar para poder votar.
 
-|Enable rule: Minimum number of projects to be voted on
-|Optional, but incompatible with "Minimum budget percentage" and "Selected projects with minimum and maximum number of projects to be voted on"
-|Allows to define a "Minimum number of projects to vote", a number of projects that participants must reach to be able to vote.
+|Habilitar regla: Número mínimo de proyectos en los que se votará
+|Opcional, pero incompatible con "Porcentaje mínimo del presupuesto" y "Proyectos seleccionados con un número mínimo y máximo de proyectos a votar"
+|Permite definir un "Número mínimo de proyectos a votar", un número de proyectos que los participantes deben alcanzar para poder votar.
 
-|Enable rule: Selected projects with minimum and maximum number of projects to be voted on
-|Optional, but incompatible with "Minimum budget percentage" and "Minimum number of projects to be voted on"
-|Allows to define a "Minimum amount of projects to be selected" and a "Maximum amount of projects to be selected", the number of projects
-that participants will need to vote as a minimum and maximum.
+|Habilitar regla: proyectos seleccionados con un número mínimo y máximo de proyectos en los que votar
+|Opcional, pero incompatible con "Minimum budget percentage" y "Minimum number of projects to be voted"
+|Permite definir una "cantidad mínima de proyectos a seleccionar" y una "cantidad máxima de proyectos a seleccionar", el número de proyectos
+que los participantes tendrán que votar como mínimo y máximo.
 
-|Comments enabled
-|Optional
-|Whether you want to have comments in the meetings.
+|Comentarios habilitados
+|Opcional
+|Si desea tener comentarios en las reuniones.
 
-|Comments max length
-|Optional
-|What is the characters limit that participants will have when making comments. Leave 0 for default value.
+|Longitud máxima de los comentarios
+|Opcional
+|¿Cuál es el límite de caracteres que los participantes tendrán al hacer comentarios? Deja 0 para el valor predeterminado.
 
-|Actions permissions can be set for each project
-|Optional
-|Whether you want to be able to set permissions for every one of the projects. Most of the time you will want to leave this option disabled.
+|Se pueden establecer permisos de acciones para cada proyecto
+|Opcional
+|Si desea ser capaz de establecer permisos para cada uno de los proyectos. La mayoría de las veces querrá dejar esta opción deshabilitada.
 
-|Announcement
-|Optional
-|A general announcement that'll be visible on the general budgets landing page.
+|Anuncio
+|Opcional
+|Un anuncio general que será visible en la página de inicio de presupuestos generales.
 
-|Budgets landing page
-|Optional
-|What message will be shown in the Budgets landing page when there are multiple budgets.
+|Página de inicio de presupuestos
+|Opcional
+|¿Qué mensaje se mostrará en la página de inicio de Presupuestos cuando haya múltiples presupuestos.
 
-|More information modal
-|Optional
-|What message will be shown when clicking on the "More information" link.
+|Más información modal
+|Opcional
+|Qué mensaje se mostrará cuando haga clic en el enlace "Más información".
 |===
 
-In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
-xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
+En los casos en que el espacio que se utilizará este componente tiene xref:admin:spaces/processes/phases. doc[Phases], por ejemplo, en
+xref:admin:spaces/processes.adoc[Participatory Processes], entonces también puede definir diferentes comportamientos por paso.
 
 
-.Add component: Budgets form - Step settings
+.Añadir componente: Formulario de presupuesto - Ajustes de paso
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Comments blocked
-|Optional
-|Whether you want to enable comments for this phase.
+|Comentarios bloqueados
+|Opcional
+|Si desea habilitar los comentarios para esta fase.
 
-|Voting
-|Required
-|Choose one of the following options depending in the moment of the process: Voting disabled, Voting enabled or Voting finished.
+|Votaciones
+|Requerido
+|Elija una de las siguientes opciones dependiendo del momento del proceso: votación desactivada, votación activada o votación terminada.
 
-|Show votes
-|Optional
-|Wheter the votes will be shown. We strongly recommend that you only check this option after the voting is finished.
+|Mostrar votos
+|Opcional
+|Se mostrarán las votaciones. Le recomendamos encarecidamente que compruebe esta opción una vez finalizada la votación.
 
-|Announcement
-|Optional
-|A general announcement that'll be visible on the general budgets landing page.
+|Anuncio
+|Opcional
+|Un anuncio general que será visible en la página de inicio de presupuestos generales.
 
-|Budgets landing page
-|Optional
-|What message will be shown in the Budgets landing page when there are multiple budgets.
+|Página de inicio de presupuestos
+|Opcional
+|¿Qué mensaje se mostrará en la página de inicio de Presupuestos cuando haya múltiples presupuestos.
 
-|More information modal
-|Optional
-|What message will be shown when clicking on the "More information" link.
+|Más información modal
+|Opcional
+|Qué mensaje se mostrará cuando haga clic en el enlace "Más información".
 |===
 
-== Permissions
+== Permisos
 
-Edit permissions
+Editar permisos
 
-* Vote
-* Comment
+* Votaciones
+* Comentario
 
-== Workflows
+== Flujo de trabajo
 
-One neat feature of the Budgets component is the ability to define your own workflows.
+Una característica clara del componente Presupuestos es la capacidad de definir sus propios flujos de trabajo.
 
-This means that you can define multiple Budgets, for instance one for every Neighberhood or District that a City has, and
-you can also define multiple rullings regarding how people can vote on those Budgets. By default you have these workflows:
+Esto significa que puedes definir múltiples presupuestos, por ejemplo uno por cada Distrito o Neighberhood que tiene una ciudad, y
+también puedes definir múltiples reglas sobre cómo la gente puede votar en esos presupuestos. Por defecto tiene estos workflows:
 
-* Vote in one: allows participants to vote in any budget, but only in one.
-* Vote in all: allows participants to vote in all budgets.
-* Vote in a random component: allows participants to vote only in one budget, selected randomly.
+* Votar en uno: permite a los participantes votar en cualquier presupuesto, pero sólo en uno.
+* Votar en todo: permite a los participantes votar en todos los presupuestos.
+* Votar en un componente aleatorio: permite a los participantes votar sólo en un presupuesto, seleccionado al azar.
 
-But this can be extended in your application by a developer, by making your own Workflows. For instance for the
-https://www.decidim.barcelona/processes/PressupostosParticipatius[2020/2021 Participatory Budgeting Process in Decidim Barcelona],
-the people could vote in two districts: the one where they lived and one of their choosing. This was defined in the
-https://github.com/AjuntamentdeBarcelona/decidim-barcelona/blob/743be2a210e8745d2dc443166642b285aed2b356/lib/budgets_workflow_pam2021.rb[decidim-barcelona application itself].
+Pero esto puede ser extendido en tu aplicación por un desarrollador, haciendo tus propios flujos de trabajo. Por ejemplo, para el
+https://www.decidim. arcelona/procesos/PressupostosParticipatius[2020/2021 Participatory Budgeting Process in Decidim Barcelona],
+la gente podía votar en dos distritos: el donde vivía y uno de sus opciones. Esto fue definido en la
+https://github.com/AjuntamentdeBarcelona/decidim-barcelona/blob/743be2a210e8745d2dc443166642b285aed2b356/lib/budgets_workflow_pam2021.rb[decidim-barcelona aplicación sí misma].
 
-You can read more about Worfklows in https://github.com/decidim/decidim/blob/1ab5cd8fdabef48f5be94ff9c30c6bb3bc9a2f8f/decidim-budgets/README.md#budget-workflows[decidim-budgets README.md].
+Puede leer más sobre Worfklows en https://github.com/decidim/decidim/blob/1ab5cd8fdabef48f5be94ff9c30c6bb3bc9a2f8f/decidim-budgets/README.md#budget-workflows[decidim-budgetREADME.md].
 
-NOTE: You only want to have a voting without much complications? Like a city-wide vote? Don't worry: if you define only one
+NOTE: ¿Sólo quieres votar sin muchas complicaciones? ¿Como una votación en toda la ciudad? Don't worry: if you define only one
 Budget, then people will go there directly when click in the Budgets section.
 
-== Manage budgets
+== Administrar presupuestos
 
-image:components/budgets/manage_budgets.png[Manage budgets table]
+image:components/budgets/manage_budgets.png[Administrar tabla de presupuestos]
 
-This window also lets you see the votes that the various projects have received. (Number of votes) and the total number of votes (*Finished votes* and *Pending votes*, that is, that a participant has started voting but has still not cast their vote).
+Esta ventana también le permite ver los votos que los diversos proyectos han recibido. (Número de votos) y el número total de votos (*Votos terminados* y *Votos pendientes*, es decir, que un participante ha comenzado a votar, pero todavía no ha emitido su voto).
 
-=== Export all
+=== Exportar todo
 
-Allows to export the projects for this budget in different formats.
+Permite exportar los proyectos de este presupuesto en diferentes formatos.
 
-* Projects as CSV
-* Projects as JSON
-* Projects as Excel
+* Proyectos como CSV
+* Proyectos como JSON
+* Proyectos como Excel
 
-=== New budget form
+=== Nueva forma de presupuesto
 
-image:components/budgets/new_budget.png[New budget form]
+image:components/budgets/new_budget.png[Nueva forma de presupuesto]
 
 
-.New budget form
+.Nueva forma de presupuesto
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Title
-|Required
-|What is the title of this budget. For instance, "District A"
+|Título
+|Requerido
+|¿Cuál es el título de este presupuesto? Por ejemplo, "Distrito A"
 
-|Order position
-|Optional
-|Which order will it have in relation to the other budgets. Having a lower number means a higher priority.
-For instance, if you have two budgets, "Budget a" with weight "10" and "Budget b" with weight "0", then "Budget b" will be first when ordering.
+|Posición del pedido
+|Opcional
+|¿Qué orden tendrá en relación con los demás presupuestos. Tener un número más bajo significa una prioridad mayor.
+Por ejemplo, si tienes dos presupuestos, "Budget a" con peso "10" y "Budget b" con peso "0", entonces "Presupuesto b" será el primero al hacer el pedido.
 
-|Description
-|Optional
-|What is the description of this budget.
+|Descripción
+|Opcional
+|¿Cuál es la descripción de este presupuesto?
 
-|Total budget
-|Required
-|What is the total amount of money that people will have for assigning.
-|===
-
-==== Actions
-
-
-.Actions
-|===
-|Icon |Name |Definition
-
-|image:action_preview.png[Preview icon]
-|Preview
-|To see how it's shown in the frontend to participants.
-
-|image:action_list.png[Manage projects icon]
-|xref:_manage_projects[Manage projects]
-|Allows you to manage the projects of a budget.
-
-|image:action_edit.png[Edit icon]
-|Edit
-|Edit form for a budget. It's the same form as "New budget".
-
-|image:action_delete.png[Delete icon]
-|Delete
-|To delete this budget. Only can be done when there aren't any projects.
+|Presupuesto total
+|Requerido
+|¿Cuál es la cantidad total de dinero que la gente tendrá para asignar?
 |===
 
-==== Manage projects
-
-===== Import proposals to projects
-
-Depending in the normative, you could want to have a first phase where participants
-make proposals, and those proposals are selected (by voting or by technical review),
-then you can import those proposals and convert them to projects.
-
-For this to work:
-
-. The following settings in the proposals component need to be enabled:
-.. Proposal answering enabled
-.. Enable costs on proposal answers
-. A valuator or administrator need to Answer proposals:
-.. Review the proposals
-.. Accept or reject them according to your normative
-.. Add costs to the proposals if were accepted
-. An administrator can Import proposals to projects
-
-image:components/budgets/import_proposals.png[Import proposals to projects]
-
-===== Export all
-
-Allows to export the projects for this budget in different formats.
-
-* Projects as CSV
-* Projects as JSON
-* Projects as Excel
-
-===== New project form
-
-image:components/budgets/new_project.png[New project form for a Budget]
+==== Acciones
 
 
-.New project form
+.Acciones
 |===
-|Field |Type |Description
+|Icono |Nombre |Definición
 
-|Title
-|Required
-|The title for this project.
+|image:action_preview.png[Previsualizar icono]
+|Vista previa
+|Para ver cómo se muestra en el frontend a los participantes.
 
-|Description
-|Required
-|A description of what this project is about.
+|image:action_list.png[Administrar icono de proyectos]
+|xref:_manage_projects[Administrar proyectos]
+|Le permite gestionar los proyectos de un presupuesto.
 
-|Budget amount
-|Required
-|What's the budget amount for this project. How much money will it cost to implement this project?
+|image:action_edit.png[Editar icono]
+|Editar
+|Editar formulario para un presupuesto. Es la misma forma que "Nuevo presupuesto".
 
-|Category
-|Optional
-|Which Category has the project. Used for filtering in the budgets list.
-
-|Proposals
-|Optional
-|Choose related proposals for this project. Automatic assingned when importing proposals.
-
-|Add an image gallery
-|Optional
-|Add multiple images illustrating what this project is about, or where it will be implemented.
+|image:action_delete.png[Borrar icono]
+|Eliminar
+|Para eliminar este presupuesto. Sólo se puede hacer cuando no hay ningún proyecto.
 |===
 
-===== Actions
+==== Gestionar proyectos
+
+===== Importar propuestas a proyectos
+
+Dependiendo de la normativa, puede que quieras tener una primera fase donde los participantes
+hagan propuestas, y esas propuestas son seleccionadas (por votación o por revisión técnica),
+entonces usted puede importar esas propuestas y convertirlas en proyectos.
+
+Para que esto funcione:
+
+. Las siguientes opciones en el componente de propuestas necesitan ser habilitadas:
+.. Respuesta de propuesta habilitada
+.. Habilitar costes en las respuestas de propuestas
+. Un evaluador o administrador necesita responder a las propuestas:
+.. Revisar las propuestas
+.. Aceptar o rechazar de acuerdo a su normativa
+.. Añadir costes a las propuestas si han sido aceptadas
+. Un administrador puede importar propuestas a proyectos
+
+image:components/budgets/import_proposals.png[Importar propuestas a proyectos]
+
+===== Exportar todo
+
+Permite exportar los proyectos de este presupuesto en diferentes formatos.
+
+* Proyectos como CSV
+* Proyectos como JSON
+* Proyectos como Excel
+
+===== Nuevo formulario de proyecto
+
+image:components/budgets/new_project.png[Nuevo formulario de proyecto para un presupuesto]
 
 
-.Actions
+.Nuevo formulario de proyecto
 |===
-|Icon |Name |Definition
+|Campo |Tipo |Descripción
 
-|image:action_preview.png[Preview icon]
-|Preview
-|To see how it's shown in the frontend to participants.
+|Título
+|Requerido
+|El título de este proyecto.
 
-|image:action_edit.png[Edit icon]
-|Edit
-|Edit form for a project. It's the same form as "New project".
+|Descripción
+|Requerido
+|Una descripción de lo que trata este proyecto.
 
-|image:action_folder.png[Folders icon]
-|Folders
-|For classifying Attachments.
+|Monto del presupuesto
+|Requerido
+|Cuál es la cantidad del presupuesto para este proyecto. ¿Cuánto dinero costará llevar a cabo este proyecto?
 
-|image:action_attachments.png[Attachments icon]
-|Attachments
-|Documents that are related to the project.
+|Categoría
+|Opcional
+|Qué categoría tiene el proyecto. Utilizado para filtrar en la lista de presupuestos.
 
-|image:action_delete.png[Delete icon]
-|Delete
-|To delete this project.
+|Propuestas
+|Opcional
+|Elija propuestas relacionadas para este proyecto. Automático asistido al importar propuestas.
+
+|Añadir una galería de imágenes
+|Opcional
+|Añada múltiples imágenes ilustrando de qué trata este proyecto, o dónde será implementado.
 |===
 
-== Results
+===== Acciones
 
-After the voting step has finished, then an administrator need to:
 
-. Change the Voting configuration for the Budget component to "Voting finished"
-. Go to the Budgets and view the results
+.Acciones
+|===
+|Icono |Nombre |Definición
+
+|image:action_preview.png[Previsualizar icono]
+|Vista previa
+|Para ver cómo se muestra en el frontend a los participantes.
+
+|image:action_edit.png[Editar icono]
+|Editar
+|Editar formulario para un proyecto. Es la misma forma que "Nuevo proyecto".
+
+|image:action_folder.png[Icono de carpetas]
+|Carpetas
+|Para clasificar adjuntos.
+
+|image:action_attachments.png[Icono de adjuntos]
+|Adjuntos
+|Documentos relacionados con el proyecto.
+
+|image:action_delete.png[Borrar icono]
+|Eliminar
+|Para eliminar este proyecto.
+|===
+
+== Resultados
+
+Una vez finalizado el paso de votación, un administrador necesita:
+
+. Cambiar la configuración de votación del componente Presupuesto a "Votación finalizada"
+. Ir a los presupuestos y ver los resultados
 . On the projects that according to the normative have been selected, she'll need to go to each project, edit it and
 then check the "Selected for implementation".
 
-image:components/budgets/results_unselected.png[Unselected projects after voting]
-image:components/budgets/results_select_project.png[Select a project for implementation]
-image:components/budgets/results_selected.png[Selected projects after voting]
-image:components/budgets/results_selected_frontend.png[Selected projects after voting in the frontend]
+image:components/budgets/results_unselected.png[Proyectos no seleccionados después de votar]
+image:components/budgets/results_select_project.png[Seleccione un proyecto para implementación]
+image:components/budgets/results_selected.png[Proyectos seleccionados después de votar]
+image:components/budgets/results_selected_frontend.png[Proyectos seleccionados después de votar en la frontal]
 
-We strongly recommend that after you have selected projects then you enable the xref:components/accountability.adoc[Accountability]
-component so participants can see the grade of impementation.
+Recomendamos encarecidamente que después de haber seleccionado proyectos habilite el componente xref:components/accountability.adoc[Accountability]
+para que los participantes puedan ver el grado de perfeccionamiento.

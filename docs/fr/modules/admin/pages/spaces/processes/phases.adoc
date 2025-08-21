@@ -1,0 +1,89 @@
+= Phases
+
+Un processus participatif est une séquence de phases ordonnées dans le temps. Depending on which phase of the process timeline you
+are, then you can enable or disable some features.
+
+Ideally, the Phases of a Participatory Process are always the same and are not changed, so participants can know what are
+the rules and timeframe and can organize their lives to know when it'd be best for them to participate in this process.
+
+En tant que ligne directrice, la structure standard d'un processus participatif peut être la suivante:
+
+. Présentation
+. Diagnostic
+. Création et débat de propositions
+. Priorisation des propositions
+. Évaluation des propositions
+. Surveillance
+
+Les participants peuvent trouver le lien vers les différentes phases d'un processus participatif dans l'en-tête du processus participatif,
+dans le lien "Phases de processus". Ici ils peuvent voir la description complète et l'explication des phases. The active phase
+will be highlighted.
+
+image:process_phases_header.png[En-tête avec lien de phases de processus]
+
+image:process_phases.png[Explication des phases du processus]
+
+== Créer une nouvelle phase
+
+image:process_phases_list.png[Phases d'un processus participatif]
+
+Pour créer une nouvelle phase d'un processus participatif :
+
+. Se connecter en tant qu'administrateur
+. Aller à la section du processus participatif dans la barre latérale
+. Cliquer sur l'action d'édition du processus participatif
+. Cliquez sur le lien des Phases dans la barre latérale
+. Cliquez sur le bouton "Nouvelle phase"
+
+image:process_phases_new_form.png[Créer un nouveau formulaire de phase de processus participatif]
+
+
+.Créer une réunion
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Quel est le titre de cette phase.
+
+|Description
+|
+|Une longue description expliquant à quoi sert cette phase.
+
+|Date de début
+|
+|Quel jour cette phase va commencer. Format attendu : jj/mm/aaaa
+
+|Date de fin
+|
+|Quel jour se terminera cette phase. Format attendu : jj/mm/aaaa
+
+|Chemin de l'appel à l'action
+|
+|Où sera le lien du bouton. Par exemple, il pourrait pointer vers le formulaire de création de la nouvelle proposition. Utiliser des chemins partiels, pas des URL
+pleines ici. Accepte les lettres, chiffres, tirets et barres obliques, et doit commencer par une lettre. Si non défini, le bouton ne sera pas affiché.
+
+|Texte de l'appel à l'action
+|
+|Que dira le bouton. Par exemple, il pourrait s'agir de "Créer une proposition". Si non défini, le bouton ne sera pas affiché.
+|===
+
+== Actions
+
+Après la création d'une phase, vous avez ces actions :
+
+|===
+|Icône |Nom |Définition
+
+|image:action_activate.png[Activer l'icône]
+|Activer
+|Pour faire de cette phase la phase active.
+
+|image:action_edit.png[Icône d'édition]
+|Editer
+|Éditer cette phase.
+
+|image:action_delete.png[Supprimer l'icône]
+|Supprimez
+|Supprimer cette phase.
+|===

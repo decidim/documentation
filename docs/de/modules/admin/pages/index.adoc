@@ -1,0 +1,27 @@
+= Einführung
+
+Decidim einzusetzen bedeutet, alle Aktivitäten zu berücksichtigen, die an der Konfiguration der Plattform und dem Einsatz der partizipatorischen Prozesse beteiligt sind. Der Erwerb von Wissen in der Verwaltung von Decidim ermöglicht die Kontrolle über grundlegende Fragen wie:
+
+* Konfigurieren eines partizipativen Prozesses
+* eine Konsultation aktivieren und Stimmen erhalten
+* moderiere die Plattform
+* die Verwaltung zugehöriger Rechtstexte (als Datenschutzrichtlinie)
+* verwalte die Autorisierung von Administratoren
+* überwachen und verifizieren von Organisationen
+
+Keiner dieser Aspekte ist rein technischer Natur, aber er beinhaltet eine Reihe von politischen Entscheidungen darüber, wie wir Decidim sein wollen. welche Nachrichten und Inhalte es enthalten muss, was die gemäßigte Politik für Kommentare und Debatten sein muss und vor allem wie eine bestimmte partizipatorische Plattform sein muss und welche Funktionen sie aktiv haben muss. Aus diesem Grund ist es von entscheidender Bedeutung, die sozio-technischen Auswirkungen der Verwaltung und Verwaltung der Decidim-Plattform zu verstehen, wenn es um den Einsatz der Plattform geht.
+
+Um zu verstehen, wie Decidim funktioniert, müssen wir zwischen xref:spaces.adoc[*spaces*] und xref:components.adoc[*components*] unterscheiden.  Die Partizipationsräume sind die Kanäle, über die die Bürger teilnehmen können, wenn öffentliche Entscheidungen getroffen werden. Dabei handelt es sich um partizipatorische Prozesse, Initiativen, Konsultationen und Versammlungen.
+Während partizipatorische Komponenten Mechanismen sind, die die Interaktion zwischen den Nutzern der Plattform und den verschiedenen partizipatorischen Räumen ermöglichen. Dazu gehören Treffen, Seiten, Vorschläge und Umfragen.
+
+image:introduction.png[Leerzeichen und Komponenten]
+
+Daher ein partizipatorischer Raum als partizipatorischer Prozess, in den verschiedenen Stufen, können mehrere Komponenten wie persönliche Treffen, Vorschläge, Umfragen und Ergebnisse und deren Überwachung integrieren.
+
+image:introduction_process.png[Komponenten in einem partizipativen Prozess]
+
+So werden partizipatorische Räume konfiguriert, indem die Komponenten, die sie haben werden, definiert (und konfiguriert werden). Es ist wichtig zu bedenken, dass diese partizipatorischen Komponenten und die verschiedenen Funktionen in den verschiedenen Räumen wiederholt werden. bietet viele Möglichkeiten bei der Konfiguration der verschiedenen Räume. Dies vereinfacht das Lernen, denn sobald ein Raum konfiguriert ist, ist es einfacher, einen anderen zu konfigurieren.
+
+Dieser Abschnitt enthält eine vollständige Beschreibung wie man die Decidim-Plattform für jede Art von Organisation konfiguriert und konfiguriert, die verschiedenen Beteiligungsprozesse verwalten und verwalten. Es wurde eine Beschreibung im Tutorial Format gegeben, um das Verständnis von Administrationsaufgaben zu unterstützen, nachdem Decidims literale Felder und Screenshots umschlossen wurden, um deren Interpretation zu erleichtern.
+
+Die Verwaltung der Decidim-Plattform ist relativ einfach und intuitiv und erfordert kein spezifisches IT-Wissen. Die Administratoren einer Decidim-Plattform, mit anderen Worten, diejenigen mit der notwendigen Berechtigung für die Verwaltung der Plattform, kann die Plattform auf eine allgemeine Weise konfigurieren (Bilder, Informationsseiten, etc. ) und die verschiedenen partizipatorischen Prozesse (Konfigurieren, Redigieren, Analysieren und Abschluss) zu steuern.

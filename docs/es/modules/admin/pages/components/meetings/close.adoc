@@ -1,103 +1,103 @@
-= Close
+= Cerrar
 
-After a meeting has passed it's possible and recommened to close the meeting. This allows to adds the minutes, the notes
-that gives a summary on what was discussed during the meeting, the agreements reached, decisions made, etc.
+Después de que una reunión haya pasado es posible y se impuso cerrar la reunión. Esto permite añadir las actas, las notas
+que dan un resumen de lo que se discutió durante la reunión. los acuerdos alcanzados, las decisiones tomadas, etc.
 
-This allows to bring transparency to the meeting and also serves as a record of the different meetings.
+Esto permite aportar transparencia a la reunión y también sirve como un registro de las diferentes reuniones.
 
-It's also possible to add other kind of metadata to the meeting, such as what organizations has attended, how many attendees
-and contributions were, and what proposals were discussed.
+También es posible añadir otro tipo de metadatos a la reunión, como lo que han atendido las organizaciones, Cuántos asistentes
+y contribuciones fueron y qué propuestas se discutieron.
 
-image:components/meetings/close/frontend.png[Close report in the frontend]
+image:components/meetings/close/frontend.png[Cerrar informe en el frontend]
 
-== Close meeting form
+== Cerrar formulario de reunión
 
-=== Official meetings
+=== Reuniones oficiales
 
-To close a meeting:
+Para cerrar una reunión:
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Click on "Meetings"
-. Search the meeting that you want to close
-. Click on the "Close" button image:action_close.png[Close button]
-. Fill the form
+. Iniciar sesión como administrador
+. Ir al panel de administración
+. En la barra lateral principal, haga clic en el botón para el espacio para el que desea configurar el componente.
+Por ejemplo, podría ser "Procesos", "Colmenas" o "Conferencias"
+. Haga clic en "Reuniones"
+. Buscar en la reunión que desea cerrar
+. Haga clic en el botón "Cerrar" imagen:action_close.png[Cerrar botón]
+. Rellene el formulario
 
-image:components/meetings/close/form_backend.png[Close meeting form in the backend]
+imagen:components/meetings/close/form_backend.png[Cerrar formulario de reunión en el backend]
 
 
-.Close meeting form (backend)
+.Cerrar formulario de reunión (backend)
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Minutes
-|Required
-|Description of what happened in the meeting.
+|Minutos
+|Requerido
+|Descripción de lo que sucedió en la reunión.
 
-|List of organizations that attended
-|Optional
-|Metadata that gets shown in the sidebar of the meeting.
+|Lista de organizaciones que asistieron
+|Opcional
+|Metadatos que se muestran en la barra lateral de la reunión.
 
-|Number of attendees
-|Required
-|Metadata that gets shown in the sidebar of the meeting. Must be a number.
+|Número de asistentes
+|Requerido
+|Metadatos que se muestran en la barra lateral de la reunión. Debe ser un número.
 
-|Number of contributions
-|Optional
-|Metadata that gets shown in the sidebar of the meeting. Must be a number.
+|Número de contribuciones
+|Opcional
+|Metadatos que se muestran en la barra lateral de la reunión. Debe ser un número.
 
-|Proposals
-|Optional
-|Choose proposals from this space that were discussed in this meeting
+|Propuestas
+|Opcional
+|Elija propuestas de este espacio que fueron discutidas en esta reunión
 
-|Video URL
-|Optional
-|It's not used for anything. It will be removed in the future.
+|URL del vídeo
+|Opcional
+|No se usa para nada. Se eliminará en el futuro.
 
-|Audio URL
-|Optional
-|It's not used for anything. It will be removed in the future.
+|URL de audio
+|Opcional
+|No se usa para nada. Se eliminará en el futuro.
 
-|Is visible
-|Optional
-|Check if you want to publish the close report
-|===
-
-=== Citizens meetings
-
-Just like participants can create meetings, they can also close a meeting. They have fewer fields to fill.
-
-To close a a meeting:
-
-. Sign in as the participant that created the meeting
-. Go to the meeting page
-. Click on "Close". This will only be visible after the meeting has passed
-. Fill the form
-
-image:components/meetings/close/form_frontend.png[Close meeting form in the frontend]
-
-
-.Close meeting form (frontend)
-|===
-|Field |Type |Description
-
-|Minutes
-|Required
-|Description of what happened in the meeting.
-
-|Number of attendees
-|Required
-|Metadata that gets shown in the sidebar of the meeting. Must be a number.
-
-|Proposals
-|Optional
-|Choose proposals from this space that were discussed in this meeting
+|Es visible
+|Opcional
+|Marque si desea publicar el informe de cierre
 |===
 
-== Proposals
+=== Reuniones ciudadanas
 
-If you relate a proposal to a meeting, the meeting also will be shown in the proposal.
+Al igual que los participantes pueden crear reuniones, también pueden cerrar una reunión. Tienen menos campos que llenar.
 
-image:components/meetings/close/related_proposal.png[Related meeting in a proposal]
+Para cerrar una reunión:
+
+. Inicia sesión como el participante que creó la reunión
+. Ir a la página de reunión
+. Haga clic en "Cerrar". Esto sólo será visible después de que la reunión haya pasado
+. Rellene el formulario
+
+imagen:componentes/meetings/close/form_frontend.png[Cerrar formulario de reunión en el frontend]
+
+
+.Cerrar formulario de reunión (frontend)
+|===
+|Campo |Tipo |Descripción
+
+|Minutos
+|Requerido
+|Descripción de lo que sucedió en la reunión.
+
+|Número de asistentes
+|Requerido
+|Metadatos que se muestran en la barra lateral de la reunión. Debe ser un número.
+
+|Propuestas
+|Opcional
+|Elija propuestas de este espacio que fueron discutidas en esta reunión
+|===
+
+== Propuestas
+
+Si usted relaciona una propuesta con una reunión, la reunión también aparecerá en la propuesta.
+
+imagen:componentes/meetings/close/related_proposal.png[Reunión relacionada en una propuesta]

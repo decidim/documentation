@@ -1,0 +1,256 @@
+= Enquête
+
+Le volet Enquête permet aux gens de répondre aux questionnaires. Ceci est utile lorsqu'une organisation souhaite recevoir des commentaires privés
+, bien qu'il soit également possible de publier les réponses manuellement. Il permet de définir un ensemble de questions avec plusieurs types de réponses.
+
+À partir de ce point de départ, il pourrait y avoir d'autres configurations, telles que:
+
+* si la réponse est limitée à une période de temps
+* quels types de réponses devraient avoir les questions, comme les courtes (une seule ligne), longues (plusieurs lignes), simples ou multiples,
+triant à travers une liste, etc.
+* s'il y a une validation de réponse comme le nombre maximum de caractères doit avoir une réponse
+* s'il y a un nombre maximum d'options à sélectionner dans plusieurs options questions
+
+Quelques exemples d'utilisation de ce composant :
+
+* https://consultation.quebec.ca/processes/donneesquebec/f/82/[Données Québec: participer à son amélioration! (Données Québec : participez à son amamélioration!) dans les consultations du Quebec]
+* https://meta.decidim.org/conferences/decidimfest2020/f/1403/?locale=fr[Enquête d'évaluation DecidimFest2020]
+
+image:components/surveys/example01.png[Exemple d'une enquête]
+
+Pour configurer le composant Enquête:
+
+. Se connecter en tant qu'administrateur
+. Aller au panneau d'administration
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+Par exemple, il peut s'agir de "Concertations", d'"Assemblées" ou de "Conférences".
+. Aller dans les fonctionnalités
+. Cliquez sur le bouton "Ajouter une fonctionnalité"
+. Cliquez sur "Enquête"
+. Remplissez le formulaire xref:_add_component[Ajouter une fonctionnalité]
+
+Une fois qu'une enquête a déjà reçu une réponse de certains utilisateurs, il n'est pas possible de modifier ses questions, car cela affecterait l'intégrité
+des réponses. S'il est nécessaire de modifier les questions, alors il est nécessaire de créer une nouvelle enquête et de dépublier celle originale.
+
+== Ajouter une fonctionnalité
+
+image:components/surveys/component.png[Ajouter un formulaire de composant]
+
+
+.Ajouter un composant : formulaire de sondage
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Quel est le titre de cette fonctionnalité. Par exemple, "Enquêtes"
+
+|Rang d'affichage
+|Facultatif
+|Quel ordre aura-t-il par rapport aux autres enquêtes. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux sondages, "Enquête a" avec le poids "10" et "Enquête b" avec le poids "0", puis « Enquête b » sera le premier au moment de la commande.
+|===
+
+
+.Ajouter un composant : Formulaire de sondage - Paramètres globaux
+|===
+|Champ |Type |Description
+
+|Portées activées
+|Facultatif
+|Cochez cette case si vous voulez que le filtrage des portées dans ce composant.
+
+|Secteur
+|Facultatif
+|Ce composant appartient à xref:admin:scopes.adoc[Scope].
+
+|Réponses acceptées de
+|Facultatif
+|Date de début de la réception des réponses. Laisser vide pour aucune date spécifique. Format attendu : jj/mm/aaaa hh:ii
+
+|Réponses acceptées jusqu'au
+|Date de fin de réception des réponses Laisser vide pour aucune date spécifique. Format attendu : jj/mm/aaaa hh:ii
+|Annonce
+
+|Facultatif
+|Une annonce générale qui sera visible sur la page d'accueil des enquêtes générales.
+|Supprimer les réponses lors de la publication du sondage
+|===
+
+Dans les cas où l'espace que ce composant sera utilisé a xref:admin:spaces/processes/phases. doc[Phases], par exemple, dans
+xref:admin:spaces/processes.adoc[Processus participatif], vous pouvez également définir différents comportements par étape.
+
+
+.Ajouter un composant : Formulaire de sondages - Paramètres d'étape
+|===
+|Champ |Type |Description
+
+|Autoriser les réponses
+|Facultatif
+|Cochez cette case si vous souhaitez recevoir des réponses dans cette enquête.
+
+|Autoriser les utilisateurs non enregistrés à répondre à l'enquête
+|Facultatif
+|Si activé, aucun login ne sera requis pour répondre à l'enquête. This may lead to poor or unreliable data and it will
+be more vulnerable to automated attacks. Utiliser avec précaution! N'oubliez pas que cette option ne permet qu'une réponse par session du navigateur,
+mais les participants peuvent utiliser l'option de navigation privée et faire plusieurs réponses avec le même appareil.
+
+|Annonce
+|Facultatif
+|Une annonce générale qui sera visible sur la page d'atterrissage du sondage général.
+|===
+
+== Autorisations
+
+Un administrateur peut choisir quel type de xref:customize:authorizations.adoc[Authorizations] un participant a besoin de faire
+certaines actions dans les sondages:
+
+* Répondre
+
+== Nouveau formulaire d'enquête
+
+Lorsque vous créez une nouvelle enquête, vous devrez remplir le formulaire avec les champs suivants :
+
+image:components/surveys/edit_form.png[Modifier le formulaire d'enquête]
+
+NOTE: Avez-vous des enquêtes répétitives ? Par exemple, le même formulaire de rétroaction pour chaque processus ? Vous pouvez avoir une enquête que
+est copié et est utilisé comme plan pour vous permettre de ne pas avoir à configurer manuellement la même enquête à chaque fois. En savoir plus
+sur xref:_templates[Templates].
+
+
+.Nouveau formulaire d'enquête
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Quel est le titre de cette enquête. Par exemple, "Feedback"
+
+|Description
+|Facultatif
+|Quelle est la description de cette enquête.
+
+|Conditions d'utilisation
+|Obligatoire
+|Les conditions légales auxquelles les participants doivent consentir pour répondre à l'enquête.
+|===
+
+En bas de ce formulaire il y a un bouton qui vous permet de "Ajouter une question".
+
+image:components/surveys/add_question_button.png[]
+
+Vous pouvez ajouter plusieurs questions par sondage, et les réorganiser ou les supprimer. Il est également possible d'ajouter des séparateurs entre les questions.
+
+Chaque question doit avoir une instruction et un type au minimum.
+
+image:components/surveys/question_form.png[]
+
+
+.Ajouter un formulaire de question
+|===
+|Champ |Type |Description
+
+|Relevé
+|Obligatoire
+|La question elle-même. Par exemple, "Quelle est votre catégorie d'âge?"
+
+|Description
+|Facultatif
+|Explication de la question posée.
+
+|Mandatory
+|Facultatif
+|Vérifiez si cette question est requise pour répondre à la réponse.
+
+|Limite de caractères
+|Facultatif
+|Combien de caractères a comme maxime la réponse à cette question. Laisser à 0 si aucune limite. Compatible avec les types de questions à réponse courte et longue.
+
+|Type
+|Obligatoire
+|Une des réponses suivantes : réponse courte, réponse longue, option simple, option multiple, tri des fichiers, matrice (option unique)
+ou Matrice (option multiple). Voir xref:_question_types[Types de questions] pour plus d'informations.
+|===
+
+Selon le type de question, il est possible d'ajouter des validations aux réponses, comme si la question est obligatoire (les participants
+devront fournir une réponse pour soumettre le formulaire) ou si la réponse est limitée à un certain nombre de caractères au maximum en
+réponses courtes et longues.
+
+image:components/surveys/question_form_limits_backend.png[]
+
+image:components/surveys/question_form_limits_frontend.png[]
+
+== Types de questions
+
+Une enquête peut avoir plusieurs questions de différents types, telles que:
+
+- Réponse courte
+- Réponse longue
+- Option simple
+- Options multiples
+- Tri en cours
+- Fichiers
+- Matrice (option Single)
+- Matrice (option multiple)
+
+
+.Types de questions (cliquez pour afficher l'image en détail)
+|===
+|Type |Frontend |Backend |Description
+
+|Réponse courte
+|image:components/surveys/type_short_answer_frontend.png[Type de réponse courte - frontend,link=../_images/components/surveys/type_short_answer_frontend.png]
+|image:components/surveys/type_short_answer_backend.png[Type de réponse courte - backend,link=../_images/components/surveys/type_short_answer_backend.png]
+|Compatible avec la validation "Limite de caractères"
+
+|Réponse longue
+|image:components/surveys/type_long_answer_frontend.png[Type de réponse longue - frontend,link=../_images/components/surveys/type_long_answer_frontend.png]
+|image:components/surveys/type_long_answer_backend.png[Type de réponse longue - backend,link=../_images/components/surveys/type_long_answer_backend.png]
+|Compatible avec la validation "Limite de caractères"
+
+|Option simple
+|image:components/surveys/type_single_option_frontend.png[Type d'option simple - frontend,link=../_images/components/surveys/type_single_option_frontend.png]
+|image:components/surveys/type_single_option_backend.png[Type d'option unique - backend,link=../_images/components/surveys/type_single_option_backend.png]
+|Les participants devront choisir une seule option, avec des boutons radio. Au moins 2 options toujours. Il est possible de définir une option "Texte libre", afin que les participants puissent soumettre leur propre réponse.
+
+|Options multiples
+|image:components/surveys/type_multiple_option_frontend.png[Type d'option multiple - frontend,link=../_images/components/surveys/type_multiple_option_frontend.png]
+|image:components/surveys/type_multiple_option_backend.png[Type d'option multiple - backend,link=../_images/components/surveys/type_multiple_option_backend.png]
+|Les participants devront choisir plusieurs options, avec des cases à cocher. Au moins 2 options toujours. Il est possible d'ajouter une validation, avec le nombre maximum de choix. Il est possible de définir une option "Texte libre", afin que les participants puissent soumettre leur propre réponse.
+
+|Tri en cours
+|image:components/surveys/type_sorting_frontend.png[Type de tri - frontend,link=../_images/components/surveys/type_sorting_frontend.png]
+|image:components/surveys/type_sorting_backend.png[Type de tri - backend,link=../_images/components/surveys/type_sorting_backend.png]
+|Au moins 2 options toujours. Les participants cliqueront par ordre de préférence pour trier.
+
+|Fichiers
+|image:components/surveys/type_files_frontend.png[Type de fichiers - frontend,link=../_images/components/surveys/type_files_frontend.png]
+|image:components/surveys/type_files_backend.png[Type de fichiers - backend,link=../_images/components/surveys/type_files_backend.png]
+|Les participants pourront télécharger des fichiers.
+
+|Matrice (option Single)
+|image:components/surveys/type_matrix_single_option_frontend.png[Type de matrice (Single option) - frontend,link=../_images/components/surveys/type_matrix_single_option_frontend.png]
+|image:components/surveys/type_matrix_single_option_backend.png[Type de matrice (Single option) - backend,link=../_images/components/surveys/type_matrix_single_option_backend.png]
+|Les participants devront choisir entre les lignes et les colonnes d'options simples, avec les boutons radio.
+
+|Matrice (option multiple)
+|image:components/surveys/type_matrix_multiple_option_frontend.png[Matrice (option multiple) type - frontend,link=../_images/components/surveys/type_matrix_multiple_option_frontend.png]
+|image:components/surveys/type_matrix_multiple_option_backend.png[Type de matrice (option multiple) - backend,link=../_images/components/surveys/type_matrix_multiple_option_backend.png]
+|Les participants devront choisir entre les rangées et les colonnes d'options multiples, avec des cases à cocher.
+|===
+
+== Modèles
+
+For the cases where administrators need to define multiple surveys that are mostly the same but used in different contexts,
+it's possible to define a template. Quand il y en a un pour une enquête, alors il demandera de sélectionner le modèle et de créer
+l'enquête basée sur celui-ci ou dans l'autre main s'il n'y a pas besoin d'utiliser un modèle, alors il est possible de passer la sélection du modèle
+.
+
+image:components/surveys/edit_questionnaire.png[Choisir le formulaire de modèle]
+
+== Exporter les réponses
+
+Il est possible d'exporter les réponses des participants à l'enquête dans différents formats : CSV, JSON, XLSX (Excel) ou PDF.
+
+Note that the platform doesn't handle the answers processing nor presenting results or summary to the users, that need to be
+done externally.

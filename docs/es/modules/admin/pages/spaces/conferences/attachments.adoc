@@ -1,81 +1,81 @@
-= Attachments
+= Adjuntos
 
-Attachments allow an administrator to upload static files to a conference.
+Los archivos adjuntos permiten a un administrador subir archivos estáticos a una conferencia.
 
-When a conference is launched, it is important to provide citizens with as much information as possible about them so
-that they can participate with knowledge. That is why it is helpful to add files (Attachments) with the information that
-is considered relevant.
+Cuando se inicia una conferencia, es importante proporcionar a los ciudadanos tanta información como sea posible sobre ellos para que
+puedan participar con conocimiento. Por eso es útil añadir archivos (adjuntos) con la información que
+se considera relevante.
 
-Optionally, these documents can be grouped in *Folders*.
+Opcionalmente, estos documentos pueden agruparse en *Carpetas*.
 
-They can be found on the Conference "Media and links" section:
+Se pueden encontrar en la sección "Medios de comunicación y enlaces":
 
-image:spaces/conferences/attachments.png[Conferences attachments (backend)]
+imagen:spaces/conferences/attachments.png[Adjuntos de conferencias (backend)]
 
-image:spaces/conferences/media_links_frontend.png[Conferences attachments (frontend)]
+imagen:espacios/conferencias/media_links_frontend.png[Adjuntos de conferencias (frontend)]
 
-Read more about this in xref:admin:spaces/conferences/media_links.adoc[Media links].
+Lee más sobre esto en xref:admin:spaces/conferences/media_links.adoc[Media links].
 
-== Create a new attachment
+== Crear un nuevo archivo adjunto
 
-image:spaces/attachments_admin.png[View the attachments of a conference in the admin interface]
+image:spaces/attachments_admin.png[Ver los archivos adjuntos de una conferencia en la interfaz de administrador]
 
-For creating a new phase of a conference:
+Para crear una nueva fase de una conferencia:
 
-. Sign in as administrator
-. Go to the conference section in the sidebar
-. Click on the conference Edit action
-. Click on the Attachments link in the sidebar
-. Click on the "New attachment" button
+. Iniciar sesión como administrador
+. Ir a la sección de la conferencia en la barra lateral
+. Haga clic en la acción de edición de conferencia
+. Haga clic en el enlace de adjuntos en la barra lateral
+. Haz clic en el botón "Nuevo adjunto"
 
-image:spaces/attachments_new_form.png[Create a new attachment form]
+image:spaces/attachments_new_form.png[Crear un nuevo formulario adjunto]
 
 
-.Create attachment
+.Crear archivo adjunto
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Attachment or image name
-|Required
-|What is the title for this attachment.
+|Adjunto o nombre de imagen
+|Requerido
+|¿Cuál es el título de este archivo adjunto?
 
-|Weight
-|Optional
-|Which order will it have in relation to the other attachments. Having a lower number means a higher priority. For instance, if you have two categories, "Attachment a" with weight "10" and "Attachment b" with weight "0", then "Attachment b" will be first when ordering.
+|Peso
+|Opcional
+|¿Qué orden tendrá en relación con los otros archivos adjuntos. Tener un número más bajo significa una prioridad mayor. Por ejemplo, si tienes dos categorías, "Adjunto a" con el peso "10" y "Adjunto b" con el peso "0", entonces "Adjuntar b" será el primero al hacer el pedido.
 
-|Description
-|Required
-|A long description explaining what this file is about.
+|Descripción
+|Requerido
+|Una descripción larga que explica de qué trata este fichero.
 
-|Folder
-|Optional
-|Which folder this attachment belongs to.
+|Carpeta
+|Opcional
+|A qué carpeta pertenece este archivo adjunto.
 
-|File
-|Required
-|Upload the file. Guidance for file: Has to be an image or a document. For images, use preferrably landscape images, the
-service crops the image. For CSV files, the separator between columns must be a comma (","). Maximum file size: 10MB. Allowed
+|Fichero
+|Requerido
+|Subir el archivo. Guía para el archivo: Debe ser una imagen o un documento. Para imágenes, utilice imágenes preferiblemente apaisadas, el servicio
+recorta la imagen. Para archivos CSV, el separador entre columnas debe ser una coma (","). Tamaño máximo de archivo: 10MB. Allowed
 file extensions depends in your server configuration.
 |===
 
-== Create a new folder
+== Crear una nueva carpeta
 
-image:spaces/attachments_new_folder_form.png[Create a new folder for attachments form]
+image:spaces/attachments_new_folder_form.png[Crear una nueva carpeta para el formulario de adjuntos]
 
 
-.Create folder
+.Crear carpeta
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Name
-|Required
-|Name of the folder
+|Nombre
+|Requerido
+|Nombre de la carpeta
 
-|Weight
-|Optional
-|Which order will it have in relation to the other folders. Having a lower number means a higher priority. For instance, if you have two folders, "Folder a" with weight "10" and "Folder b" with weight "0", then "Folder b" will be first when ordering.
+|Peso
+|Opcional
+|Que orden tendrá en relación con las otras carpetas. Tener un número más bajo significa una prioridad mayor. Por ejemplo, si tiene dos carpetas, "Carpeta" con el peso "10" y "Carpeta b" con el peso "0", entonces "Carpeta b" será la primera vez que se haga el pedido.
 
-|Description
-|Required
-|A long description explaining what this folder is about.
+|Descripción
+|Requerido
+|Una descripción larga que explica de qué trata esta carpeta.
 |===

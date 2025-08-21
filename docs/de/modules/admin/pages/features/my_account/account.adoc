@@ -1,0 +1,47 @@
+= Konto
+
+In diesem Abschnitt können Änderungen vorgenommen werden, die in den Teilnehmern xref:features/my_public_profile sichtbar sind. doc[public profile] und ändern Sie auch die E-Mail-Adresse oder die Sprache, die die Plattform mit dem Benutzer verwenden wird.
+
+. Als Teilnehmer anmelden
+. Klicken Sie im Namen des Teilnehmers in der Kopfzeile
+. Klicken Sie in "Mein Konto"
+
+image:features/my_account/account.png[Mein Kontoformular]
+
+
+.Teilnehmereinstellungen - Mein Kontoformular
+|===
+|Feld |Typ |Beschreibung
+
+|Avatar
+|Optional
+|Avatar oder Bild für den Teilnehmer. Bildführung: Vorzugsweise ein Querformat ohne Text.
+Der Dienst erzeugt das Bild. Maximale Dateigröße: 5MB
+
+|Ihr Name
+|Benötigt
+|Der Name des Teilnehmers.
+
+|Spitzname
+|Benötigt
+|Der Spitzname des Teilnehmers.
+
+|Ihre E-Mail
+|Benötigt
+|Die E-Mail des Teilnehmers, wo sie Benachrichtigungen, Passwortwiederherstellung usw. erhalten. Wenn es geändert wird, muss es
+bestätigt werden.
+
+|Persönliche URL
+|Optional
+|Metadaten, die im Teilnehmerprofil angezeigt werden.
+
+|Über
+|Optional
+|Metadaten, die im Teilnehmerprofil angezeigt werden.
+
+|Lokal
+|Benötigt
+|Wählen Sie die Sprache aus, die Sie verwenden möchten, um in Decidim zu surfen und Benachrichtigungen zu erhalten
+|===
+
+Von dieser Seite aus ist es möglich, auch das Passwort des Teilnehmers zu ändern.

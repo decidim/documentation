@@ -1,0 +1,91 @@
+= Arbeitsplan
+
+Die Agenda-Funktion erlaubt es einem Administrator, den Zeitplan für ein Meeting festzulegen. Es ist möglich, Tagesordnungspunkte und
+Unterpunkte zu definieren, mit jedem der Themen, die im Meeting diskutiert werden zusammen mit einer Beschreibung und der Dauer
+für jedes Element und jeden Untereintrag.
+
+image:components/meetings/agenda/agenda_frontend.png[Agenda im Frontend]
+
+== Neues Agendaformular
+
+Agenda für ein Meeting definieren:
+
+. Als Admin anmelden
+. Zum Admin-Panel wechseln
+. Wählen Sie in der Haupt-Seitenleiste den Bereich aus, unter dem Sie die Komponente konfigurieren möchten.
+Zum Beispiel "Prozesse", "Assemblies" oder "Konferenzen"
+. Klicken Sie auf "Meetings"
+. Besprechung durchsuchen, zu dem Sie die Agenda hinzufügen möchten
+. Klicken Sie auf den "Agenda"-Button image:action_agenda.png[Agenda Button]
+. Formular ausfüllen
+
+image:components/meetings/agenda/new_agenda_form.png[Neues Agenda-Formular im Backend]
+
+
+.Neues Agendaformular
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Titel für die Tagesordnung. Zum Beispiel "Zeitplan"
+
+|Sichtbar
+|Optional
+|Aktivieren, wenn Sie die Agenda veröffentlichen möchten.
+
+|Tagesordnungspunkt
+|Benötigt
+|Liste der Tagesordnungspunkte.
+|===
+
+Es ist möglich, beliebig viele Tagesordnungspunkte und Unterpunkte zu erstellen. Sie können die Hierarchie der Tagesordnungspunkte hoch- oder runtergehen.
+Es ist auch möglich, die Tagesordnungspunkte zu entfernen und zu bearbeiten.
+
+
+.Tagesordnungspunkt Formular
+|===
+|Feld |Typ |Beschreibung
+
+|Titel
+|Benötigt
+|Titel für den Tagesordnungspunkt
+
+|Dauer
+|Benötigt
+|Wie viele Minuten wird der Tagesordnungspunkt dauern. Zum Beispiel "15".
+
+|Beschreibung
+|Optional
+|Titel für den Tagesordnungspunkt
+
+|Tagesordnungspunkte
+|Optional
+|Liste der Agenda-Unterpunkte.
+|===
+
+Die einzige Einschränkung, die Tagesordnungspunkte und Unterpunkte haben, ist, dass sie die Dauer des Elternteils respektieren müssen. Zum Beispiel
+, wenn es einen Artikel gibt, der 60 Minuten dauert, kannst du kein Unterelement erstellen, das 90 Minuten dauert.
+
+Zum Beispiel diese Agenda:
+
+image:components/meetings/agenda/agenda_frontend.png[Agenda im Frontend]
+
+Hat folgende Konfiguration:
+
+* Titel: "Schedule"
+* Sichtbar: wahr
+* Tagesordnungspunkt #1:
+** Titel: Diagnose
+** Dauer: 60
+* Tagesordnungspunkt #2:
+** Titel: Idee
+** Dauer: 120
+** Tagesordnungspunkt #2.1:
+*** Titel: Zukunftsdenken
+*** Dauer: 60
+*** Beschreibung: Imagining how we can solve the problem
+** Unterpunkt der Tagesordnung #2.2:
+*** Titel: Vorschläge erstellen
+*** Dauer: 60
+*** Beschreibung: In der Plattform

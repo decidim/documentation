@@ -1,0 +1,56 @@
+= Types d'enregistrement
+
+You can enable registrations in conferences, so it's easier to register to the whole conference, or by days, rather than
+going meeting by meeting to enable registration for that particular event.
+
+Après avoir activé les inscriptions, les participants auront un bouton pour s'inscrire à la conférence dans l'en-tête de la conférence.
+
+image:espaces/conférences/registration_landing01.png[Bouton d'inscription sur la page d'accueil]
+
+image:espaces/conférences/registration_landing02.png[Bouton d'inscription sur la page d'accueil]
+
+Si vous voulez activer l'inscription, vous devez définir et publier au moins un type d'inscription.
+
+image:espaces/conférences/registration_types_frontend_wo_user.png[Sélectionnez le type d'inscription sans compte utilisateur]
+
+== Créer un nouveau type d'inscription
+
+Pour ajouter un nouveau type d'inscription, vous devez :
+
+. Se connecter en tant qu'administrateur
+. Aller à la section conférences dans la barre latérale
+. Cliquez sur l'action Modifier la conférence
+. Cliquez sur le lien "Types d'inscription" dans la barre latérale
+. Cliquez sur le bouton "Nouveau type d'inscription"
+. Remplissez le formulaire
+. Publier le type d'inscription
+
+image:espaces/conférences/new_registration_type.png[Créer un nouveau formulaire de type d'inscription]
+
+image:espaces/conférences/registration_types_backend.png[Gérer les types d'inscription]
+
+
+.Créer un nouveau type d'inscription
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Quel est le titre de ce type d'inscription.
+
+|Poids
+|Quel ordre aura-t-il par rapport aux autres types. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux types, "Jour 1" avec le poids "10" et "Jour 2" avec le poids "0", puis "Jour 2" sera le premier lors de la commande.
+|Description
+
+|Obligatoire
+|Description pour ce type d'inscription
+|Prix
+
+|Facultatif
+|Définissez un prix pour ce type d'inscription. Si vous ne définissez pas de prix, le prix sera "Gratuit".
+|Sélectionnez les réunions de la conférence
+|===
+
+If the participant is already logged in then they will see their username and email in the registration page.
+
+image:espaces/conférences/registration_types_frontend_w_user.png[Sélectionnez le type d'inscription avec le compte utilisateur]

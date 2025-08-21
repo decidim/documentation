@@ -1,0 +1,113 @@
+= Antworten
+
+Die Antworten von Vorschlägen erlauben es einem Administrator oder einem Bewerber einen Vorschlag zu prüfen und ihm eine offizielle Antwort zu geben.
+
+image:components/proposals/proposal_answer_state_accepted.png[Vorschlagsantwortzustand: Akzeptiert]
+
+Zur Beantwortung eines Vorschlags:
+
+. Als Admin oder Valuator anmelden
+. Zum Admin-Panel wechseln
+. Wählen Sie in der Haupt-Seitenleiste den Bereich aus, unter dem Sie die Komponente konfigurieren möchten.
+Zum Beispiel "Prozesse", "Assemblies" oder "Konferenzen"
+. Klicken Sie in der Komponente "Vorschläge"
+. Suche den Vorschlag, den du beantworten möchtest
+. Klicken Sie auf die Schaltfläche "Antwortvorschläge:action_answer.png[Vorschlagssymbol beantworten]
+. Formular ausfüllen
+
+Alternativ können Sie auch:
+
+. Als Admin oder Valuator anmelden
+. Navigiere zu dem Vorschlag, den du beantworten möchtest
+. Klicken Sie in der Schaltfläche "Vorschlagsantwort" in der Kopfzeile: Komponenten/Vorschläge/Antwortbutton_header.png[Antwort-Vorschlag-Button]
+. Formular ausfüllen
+
+== Antwort-Seite
+
+Die Antwortseite enthält drei Abschnitte:
+
+=== Metadaten
+
+Er verfügt über allgemeine Informationen über den Vorschlag, wie zum Beispiel den Link, wer der Autor ist, das Vorschlagsorgan, wie viele Unterstützungen, Unterstützungen, Kommentare usw.
+
+=== Private Notizen
+
+Ermöglicht einem Administrator oder Bewerber Notizen zu hinterlassen, die für die Öffentlichkeit nicht sichtbar sind.
+
+=== Antwort auf Vorschlag
+
+Ermöglicht einem Administrator, einen Vorschlag zu beantworten.
+
+image:components/proposals/proposal_answer.png[Vorschlagsformular]
+
+
+.Antwort für Vorschlagsformular
+|===
+|Feld |Typ |Beschreibung
+
+|Interner Status
+|Benötigt
+|Wählen Sie eines der folgenden aus: Akzeptiert, abgelehnt oder ausgewertet
+
+|Antwort
+|Optional
+|Eine Erklärung dafür, warum der Vorschlag angenommen, abgelehnt oder bewertet wurde
+
+|Kosten
+|Benötigt wenn "Kosten bei Angebotsantworten aktivieren" in den Vorschlags-Komponenten-Einstellungen aktiviert ist und wenn diese akzeptiert werden
+|Eine Zahl, die die Kosten des Vorschlags anzeigt
+
+|Kostenbericht
+|Benötigt wenn "Kosten bei Angebotsantworten aktivieren" in den Vorschlags-Komponenten-Einstellungen aktiviert ist und wenn diese akzeptiert werden
+|Eine Erklärung der Kosten des Vorschlags
+
+|Ausführungszeitraum
+|Benötigt wenn "Kosten bei Angebotsantworten aktivieren" in den Vorschlags-Komponenten-Einstellungen aktiviert ist und wenn diese akzeptiert werden
+|Wie lange der Vorschlag dauert, bis er ausgeführt wird
+|===
+
+== Bundesland
+
+Wenn die Vorschlagskomponente "Vorschlag veröffentlichen" überprüft wird, dann wird die Reaktion des Vorschlags sofort für die Öffentlichkeit sichtbar.
+
+Der Staat ist auf der Angebotsseite und auf der Karte sichtbar.
+
+image:components/proposals/proposal_answer_state_accepted_card.png[Vorgeschlagener Kartenantwortzustand: Akzeptiert]
+
+=== Auswerten
+
+image:components/proposals/proposal_answer_state_evaluating.png[Vorschlagsantwortzustand: Evaluierung]
+
+=== Akzeptiert
+
+Nachdem Vorschläge angenommen wurden, können sie in die xref:components/budgets.adoc[budgets] Komponente importiert werden.
+
+image:components/proposals/proposal_answer_state_accepted.png[Vorschlagsantwortzustand: Akzeptiert]
+
+=== Abgelehnt
+
+image:components/proposals/proposal_answer_state_rejected.png[Vorschlagsantwortzustand: abgelehnt]
+
+== Veröffentlichung
+
+Sie können kontrollieren, wann die Antworten veröffentlicht werden, indem Sie das Kontrollkästchen "Vorschläge sofort veröffentlichen" wählen.
+
+Um die automatische Publikation zu aktivieren, müssen Sie sie überprüfen.
+
+Auf der anderen Seite, wenn Sie kontrollieren wollen, wann die Antwort einen Vorschlag oder mehrere Vorschläge veröffentlichen, müssen Sie folgende Schritte folgen:
+
+. Als Admin oder Valuator anmelden
+. Zum Admin-Panel wechseln
+. Wählen Sie in der Haupt-Seitenleiste den Bereich aus, unter dem Sie die Komponente konfigurieren möchten.
+Zum Beispiel "Prozesse", "Assemblies" oder "Konferenzen"
+. Klicken Sie in der Komponente "Vorschläge"
+. Suche den Vorschlag, den du beantworten möchtest
+. Klicken Sie auf das linke Kontrollkästchen des Vorschlags, den Sie veröffentlichen möchten
+. Klicken Sie auf die Schaltfläche "Aktionen"
+. Klicken Sie auf die Option "Antworten veröffentlichen"
+image:components/proposal_answer_publish.png[Veröffentlichte Antwort: Aktion]
+. Klicken Sie auf "Veröffentlichen" Button
+image:components/proposal_answer_publish_button.png[Veröffentlichungsschaltfläche: Veröffentlichungsschaltfläche]
+
+NOTE: Wenn Sie die Option "Angebote sofort veröffentlichen" deaktiviert haben beantwortete die Vorschläge und markierte die Option erneut, die Antworten werden nicht automatisch
+veröffentlicht. Sie müssen die Antworten immer noch manuell mit der Schaltfläche "Aktionen" veröffentlichen.

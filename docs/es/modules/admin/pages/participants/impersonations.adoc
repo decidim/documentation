@@ -1,4 +1,4 @@
-= Participants Impersonations
+= Suplantaciones de participantes
 
 For participants that don't have the knowledge or don't have an email for registering
 an account, there's the Impersonation feature.
@@ -8,30 +8,30 @@ Verification system for an already existing participant and also to create a
 participant without email.
 
 NOTE: At the code and the User Interface we say both *Impersonation* and *Managed
-Participants*. It's the same thing.
+Participants*. Es lo mismo.
 
 == Panel
 
 image::participants_impersonations.png[Admin's Impersonations panel]
 
-This is the panel where you can find all the participants:
+Este es el panel donde puedes encontrar a todos los participantes:
 
-* by filtering by managed or not managed participants
-* by searching by name
+* filtrando por participantes administrados o no gestionados
+* buscando por nombre
 
-After you've clicked in `Manage new participant` you'll go to the form to enter
-the personal data to check against the verification:
+Después de hacer clic en `Administrar nuevo participant` irás al formulario para ingresar
+los datos personales para comprobar la verificación:
 
 image::participants_impersonations_form.png[Admin's Impersonations form]
 
-NOTE: If you don't see the `Manage new participant` button, is because this feature
-only works when you have a Verification of kind `direct` (also known
-as `form authorizations`). See in your xref:admin:system.adoc[system panel] which
-`Available authorizations` are enabled. You can learn more regarding how to program
-your form authorization in https://github.com/decidim/decidim/blob/develop/decidim-verifications/README.md[decidim-verification README].
+NOTE: Si no ves el botón `Administrar nuevo participante`, es porque esta función
+solo funciona cuando tienes una Verificación de tipo `direct` (también conocida como
+como `form authorizations`). Vea en su xref:admin:system.adoc[panel del sistema] que
+`Autorizaciones disponibles` están habilitadas. Puedes aprender más sobre cómo programar
+tu autorización de formulario en https://github.com/decidim/decidim/blob/develop/decidim-verifications/README.md[decidim-verification README].
 
-After this data is confirmed then there'll be a session for the participant for
-30 minutes:
+Después de confirmar estos datos, habrá una sesión para el participante durante
+30 minutos:
 
 image::participants_impersonations_user.png[Impersonated user session]
 

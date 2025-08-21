@@ -1,0 +1,145 @@
+= Blog
+
+Die Blog-Komponente ermöglicht das Lesen von Beiträgen, sortier nach dem Datum.
+
+Einige Beispiele, wo diese Komponente verwendet wurde:
+
+* https://meta.decidim.org/processes/roadmap/f/247/[Aktuelle Neuigkeiten beim Vorschlagen neuer Funktionen für die Decidim-Software] auf https://meta.decidim.org[Metadecidim]
+
+image:components/blog/example01.png[Beispiel der Blog-Beitragsliste]
+image:components/blog/example02.png[Beispiel eines Blog-Beitrags]
+
+Blog-Komponente konfigurieren:
+
+. Als Admin anmelden
+. Zum Admin-Panel wechseln
+. Wählen Sie in der Haupt-Seitenleiste den Bereich aus, unter dem Sie die Komponente konfigurieren möchten.
+Zum Beispiel "Prozesse", "Gremien" oder "Konferenzen".
+. Gehe zu Komponenten
+. Auf "Komponente hinzufügen"-Button klicken
+. "Blog" auswählen
+. Das Formular xref:_add_component[Komponente hinzufügen] ausfüllen
+
+== Komponente hinzufügen
+
+image:components/blog/component.png[Komponentenform hinzufügen]
+
+
+.Komponente hinzufügen: Blog Formular
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Wie lautet der Titel dieser Komponente. Zum Beispiel "Blogs"
+
+|Bestellposition
+|Optional
+|Welche Reihenfolge wird es in Bezug auf die anderen Blogs haben. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+Zum Beispiel, wenn Sie zwei Blogs, "Blog a" mit Gewicht "10" und "Blog b" mit Gewicht "0", dann "Blog b" wird zuerst bei der Bestellung.
+|===
+
+
+.Komponente hinzufügen: Blog-Formular - Globale Einstellungen
+|===
+|Feld |Typ |Beschreibung
+
+|Mitteilung
+|Optional
+|Eine allgemeine Ankündigung, die auf der allgemeinen Blog-Landing-Seite zu sehen sein wird.
+
+|Kommentare aktiviert
+|Optional
+|Ob Sie Kommentare in den Meetings haben möchten.
+
+|Maximale Länge der Kommentare
+|Optional
+|Welche Zeichenbegrenzung haben die Teilnehmer, wenn sie Kommentare abgeben. Lassen Sie 0 für den Standardwert.
+|===
+
+In den Fällen, in denen der Platz, den diese Komponente verwendet wird, xref:admin:spaces/processes/phases hat. doc[Phases], zum Beispiel in
+xref:admin:spaces/processes.adoc[Participatory Processes], dann können Sie auch unterschiedliche Verhaltensweisen pro Schritt definieren.
+
+
+.Komponente hinzufügen: Blog-Formular - Schritt-Einstellungen
+|===
+|Feld |Typ |Beschreibung
+
+|Mitteilung
+|Optional
+|Eine allgemeine Ankündigung, die auf der allgemeinen Blog-Landing-Seite zu sehen sein wird.
+
+|Kommentare blockiert
+|Optional
+|Ob Sie das Erstellen von Kommentaren für diese Phase aktivieren möchten.
+
+|Befürworter aktiviert
+|Optional
+|Ob Sie Bestätigungen für diese Phase aktivieren möchten.
+
+|Befürworter blockiert
+|Optional
+|Gibt an, ob das Hinzufügen neuer Bestätigungen für diese Phase deaktiviert werden soll.
+|===
+
+== Berechtigungen
+
+An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
+certain actions in the blogs:
+
+* Kommentar
+* Befürwortung
+
+== Beiträge verwalten
+
+image:components/blog/manage_posts.png[Beitragstabelle verwalten]
+
+=== Neues Beitragsformular
+
+image:components/blog/new_post.png[Neues Beitragsformular]
+
+
+.Neues Beitragsformular
+|===
+|Feld |Typ |Beschreibung
+
+|Beitrag erstellen als
+|Benötigt
+|Teilnehmerkonto oder Benutzergruppe, die der Autor des Beitrags sein wird.
+
+|Titel
+|Benötigt
+|Was ist der Titel dieses Beitrags.
+
+|Körper
+|Benötigt
+|Was ist die Beschreibung dieses Beitrags.
+|===
+
+==== Aktionen
+
+
+.Aktionen
+|===
+|Icon |Name |Definition
+
+|image:action_edit.png[Icon bearbeiten]
+|Bearbeiten
+|Formular für diesen Beitrag bearbeiten. Es ist das gleiche Formular wie "Neuer Beitrag".
+
+|image:action_folder.png[Ordner-Symbol]
+|Ordner
+|Zur Klassifizierung von Anhängen.
+
+|image:action_attachments.png[Anhänge Symbol]
+|Anhänge
+|Dokumente, die im Zusammenhang mit dem Beitrag.
+
+|image:action_permissions.png[Berechtigungs-Symbol]
+|Berechtigungen
+|Um die Berechtigungen dieses Beitrags zu verwalten, abhängig von der Überprüfung, die ein Teilnehmer hat.
+
+|image:action_delete.png[Icon löschen
+|Löschen
+|Diesen Beitrag löschen.
+|===

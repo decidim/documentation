@@ -1,0 +1,38 @@
+= Conflit de vérification
+
+Il y a des cas selon le type de vérifications que vous avez activé pour qu'il y ait des conflits de vérification.
+
+Par exemple :
+
+. A participant get xref:admin:participants/impersonations.adoc[impersonated], and they don't provide an email
+. Then they create an account and try to verify themselves with the Census verification
+
+Pour des raisons de sécurité, nous essayons d'être plus prudents dans ces cas, et nous voulons qu'un administrateur passe en revue ces vérifications.
+Comme vous pouvez le voir, cela dépend beaucoup du type de vérification que vous avez activé dans votre organisation, donc il est facile de dire
+que la plupart du temps une organisation ne verra aucun conflit dans ce panneau.
+
+image:verifications_conflts.png[Panneau de conflits de vérification]
+
+== Transférer l'utilisateur
+
+Un administrateur peut examiner ces conflits en cliquant sur l'icône de transfert de l'utilisateur image:action_transfer_user.png[Transfer user].
+
+Then they will see the Transfer user form, where they can provide a reason for the transfer.
+
+image:verifications_conflts_transfer_user.png[]
+
+
+.Transférer le formulaire utilisateur
+|===
+|Champ |Type |Description
+
+|Raison
+|Obligatoire
+|Pourquoi vous voulez transférer l'utilisateur
+
+|Courriel
+|Obligatoire
+|L'e-mail de l'utilisateur à transférer
+|===
+
+Après le transfert de l'utilisateur, les deux comptes (l'original et le nouveau) seront fusionnés.

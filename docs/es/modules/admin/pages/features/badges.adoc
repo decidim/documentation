@@ -1,76 +1,76 @@
-= Badges
+= Insignias
 
-Badges are recognitions to participant actions and progress in the platform. As participants start discovering, participating
-and interacting in the platform, they will earn different badges. Here is the list of badges and some ways participants can earn them.
+Las insignias son las distinciones a las acciones de los participantes y el progreso en la plataforma. A medida que los participantes empiezan a descubrir, participar
+e interactuar en la plataforma, obtendrán diferentes insignias. Aquí está la lista de insignias y algunas formas de los participantes pueden ganarlas.
 
-It's a https://en.wikipedia.org/wiki/Gamification[gamification] mechanism to improve the engagement of the participants in a ludic way.
+Es un mecanismo de https://es.wikipedia.org/wiki/Gamification[gamification] para mejorar el compromiso de los participantes de una manera lúdica.
 
-The badges a participant has are visible in her account. There's also a general explanation page with a short description of every badge.
+Las insignias que un participante tiene son visibles en su cuenta. También hay una página de explicación general con una breve descripción de cada insignia.
 
-image:features/badges/example01.png[Example of badges in profile]
+image:features/badges/example01.png[Ejemplo de insignias en el perfil]
 
-When a participant earns a badge she receives a notification.
+Cuando un participante gana una insignia reciben una notificación.
 
-image:features/badges/notification.png[Example of badges notification]
+image:features/badges/notification.png[Ejemplo de notificación de insignias]
 
-Badges have multiple levels, depending in the number of times she has made the action. For instance, for Proposals badge
-she'll receive the first level badge when arriving at 1 follower, the second level at 15 followers, the third level at 30 followers,
-the fourth level at 60 and the fifth level at 100.
+Las insignias tienen múltiples niveles, dependiendo del número de veces que hayan hecho la acción. Por ejemplo, para la insignia de propuestas
+recibirán la insignia de primer nivel cuando lleguen a 1 seguidor, el segundo nivel a 15 seguidores, el tercer nivel a 30 seguidores,
+el cuarto nivel a 60 y el quinto nivel a 100.
 
 
-.Badges
+.Insignias
 |===
-|Image |Title |Description |How it's earned |Levels
+|Imagen |Título |Descripción |Cómo se gana |Niveles
 
-|image:features/badges/accepted_proposals_badge.png[Accepted proposals badge]
-|Accepted proposals
-|Granted when particiapnts actively participate with new proposals and these are accepted.
-|The participant needs to choose the participation space of her interest with submission for proposals enabled and try to
-make proposals that can be carried out. This way they are more likely to be accepted.
+|image:features/badges/accepted_proposals_badge.png[Insignia de propuestas aceptadas]
+|Propuestas aceptadas
+|Concedidos cuando los particiapnts participen activamente con nuevas propuestas y se aceptan.
+|El participante debe elegir el espacio de participación de su interés con la presentación de propuestas habilitadas e intentar
+hacer propuestas que se puedan llevar a cabo. De esta manera es más probable que se acepten.
 |1, 5, 15, 30, 50
 
-|image:features/badges/attended_meetings_badge.png[Attended meetings badge]
-|Attended meetings
-|Granted when participants attend several face-to-face meetings.
-|The participant needs to register for the meetings she want to attend
+|image:features/badges/attended_meetings_badge.png[Insignia de reuniones asistidas]
+|Reuniones asistidas
+|Concedidos cuando los participantes asisten a varias reuniones cara a cara.
+|El participante necesita registrarse para las reuniones a las que quiere asistir
 |1, 3, 5, 10, 30
 
-|image:features/badges/debates_badge.png[Debates badge]
+|image:features/badges/debates_badge.png[Insignia de debate]
 |Debates
-|Granted when participants actively participate in the different debates by leaving comments.
-|The participant needs to take part in debates.
+|Concedidos cuando los participantes participan activamente en los diferentes debates dejando comentarios.
+|El participante debe participar en los debates.
 |1, 5, 10, 30, 50
 
-|image:features/badges/followers_badge.png[Followers badge]
-|Followers
-|Granted when participant reach a certain number of followers. The platform is a social and political network, so
-participants ned to weave their web to communicate with other people in the platform.
-|The participant needs to be be active and follow other people. That will surely make other people follow her.
+|image:features/badges/followers_badge.png[Insignia de seguidores]
+|Seguidores
+|Otorgado cuando el participante llega a un cierto número de seguidores. La plataforma es una red social y política, por lo que
+participantes participaron para tejer su web para comunicarse con otras personas en la plataforma.
+|El participante debe ser activo y seguir a otras personas. Eso sin duda hará que otros los sigan a ellos.
 |1, 15, 30, 60, 100
 
-|image:features/badges/published_initiatives_badge.png[Published initiatives badge]
-|Published initiatives
-|Granted when a participant launch new initiatives, partnering with others to carry them out.
-|The participant needs to go to the participation space of Intiatives and follow the steps to create a new initiative.
+|image:features/badges/published_initiatives_badge.png[Insignia de iniciativas publicadas]
+|Iniciativas publicadas
+|Concedido cuando un participante lanza nuevas iniciativas, asociándose con otros para llevarlas a cabo.
+|El participante debe ir al espacio de participación de Intiatives y seguir los pasos para crear una nueva iniciativa.
 |1, 5, 15, 30, 50
 
-|image:features/badges/invitations_badge.png[invitations badge]
-|Invitations
-|Granted when participants invite some people and they have become participants.
-|The participant needs to use the “invite friends” link on her user page to invite her friends. She can customize the
-message she's sending. She’ll level up by sending invitations and getting them registered. Note that this feature is disabled
-and this badge is not available, so it'll be removed in the future.
+|image:features/insignias/invitations_badge.png[Insignia de invitaciones]
+|Invitaciones
+|Concedidos cuando los participantes invitan a algunas personas y se han convertido en participantes.
+|El participante necesita utilizar el enlace "invitar amigos" en su página de usuario para invitar a sus amigos. Pueden personalizar el mensaje
+que están enviando. Subirán de nivel enviando invitaciones y consiguiéndolas registradas. Ten en cuenta que esta característica está desactivada
+y esta insignia no está disponible, así que será eliminada en el futuro.
 |1, 5, 10, 30, 50
 
-|image:features/badges/proposal_supports_badge.png[Proposal supports badge]
-|Proposal supports
-|Granted when participants support other people's proposals.
-|The participant needs to browse and spend some time reading other people's proposals and give support to the proposals she like or find interesting.
+|image:features/badges/proposal_supports_badge.png[Proposal soporta badge]
+|Soporte de propuestas
+|Concedidos cuando los participantes apoyan las propuestas de otras personas.
+|El participante tiene que navegar y pasar algún tiempo leyendo las propuestas de otras personas y dar apoyo a las propuestas que les gustan o que encuentran interesantes.
 |5, 15, 50, 100, 500
 
-|image:features/badges/proposals_badge.png[Proposals badge]
-|Proposals
-|Granted when participants actively participate with new proposals.
-|The participant needs to choose the participation space of her interest with submission for proposals enabled and create a new proposal.
+|image:features/badges/proposals_badge.png[Insignia de propuestas]
+|Propuestas
+|Concedido cuando los participantes participan activamente con nuevas propuestas.
+|El participante debe elegir el espacio de participación de su interés con la presentación de propuestas habilitadas y crear una nueva propuesta.
 |1, 5, 10, 30, 60
 |===

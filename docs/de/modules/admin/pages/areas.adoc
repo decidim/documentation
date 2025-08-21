@@ -1,0 +1,11 @@
+= Gebiete
+
+partielle$deprecated.adoc[]
+
+Bereiche sind alle Sektoren, die eine Organisation haben kann.
+
+Sie sind ähnlich wie xref:admin:scopes. doc[scopes], was bedeutet, dass sie eine Möglichkeit sind, eine bessere Navigation und Filterung in den Räumen und Komponenten zu ermöglichen.
+
+Wir empfehlen nicht, sie zu verwenden, da sie in Zukunft wahrscheinlich entfernt werden.
+
+Weitere Informationen zum Verlauf der Gebiete finden Sie unter https://github.com/decidim/decidim/issues/3540#issuecomment-427324532[GitHub comment].

@@ -1,0 +1,52 @@
+= Fonctionnalités
+
+include::partial$components_list.adoc[]
+
+Pour configurer les composants, cliquez sur *Composants* dans le sous-menu espace. Une liste apparaîtra montrant les composants
+qui ont déjà été configurés pour l'espace.
+
+image::spaces/components.png[Components of space]
+
+Pour configurer un nouveau composant, cliquez sur *Ajouter un composant* dans la partie supérieure droite de l'écran et sélectionnez le type de composant
+que vous souhaitez configurer à partir du menu déroulant.
+
+image::spaces/components_new_dropdown.png[Add a component in a space]
+
+== Actions
+
+|===
+|Icône |Nom |Définition
+
+|image:action_manage.png[Gérer l'icône]
+|Gérer
+|Gérer toutes les ressources à l'intérieur d'un composant. Par exemple, toutes les propositions d'un composant de proposition, les réunions
+dans un composant de réunion, etc.
+
+|image:action_publish.png[Icône de publication]
+|Publier
+|Publier un composant. Cela signifie que le composant sera visible au public.
+
+|image:action_unpublish.png[Dépublier l'icône]
+|Dépublier
+|Dépublier un composant. Cela signifie que le composant sera invisible au public.
+
+|image:action_configure.png[Configurer l'icône]
+|Configurer
+|Pour configurer un composant avec les règles spécifiques. Dépend du type de composant. Par exemple, dans le cas des réunions :
+sont activés pour les commentaires, les participants peuvent créer des réunions, etc.
+
+|image:action_permissions.png[Icône des permissions]
+|Autorisations
+|Pour configurer quel xref:customize:authorizations.adoc[Authorization] sera nécessaire pour effectuer certaines actions dans
+ce composant. Par exemple, dans le cas des propositions, dont la vérification sera nécessaire pour créer une nouvelle proposition ou
+pour apporter un soutien.
+
+|image:action_share.png[Icône de partage]
+|Partager
+|Partager en privé avant de publier ce composant. Utile pour passer en revue avec d'autres personnes au sein de votre organisation.
+
+|image:action_delete.png[Supprimer l'icône]
+|Supprimez
+|Supprimer ce composant. If there are contents most of the components will not let you delete them so it doesn't break
+relations with other resources. Dans ces cas, il est recommandé de dépublier simplement le composant.
+|===

@@ -1,0 +1,10 @@
+= Verantwortlichkeit
+
+Die Komponente "Rechenschaftspflicht" erlaubt es Menschen, Projektabwicklungen zu verfolgen. Es funktioniert wie ein in die Plattform integriertes Projektmanagementsystem. Es bietet folgende Funktionen:
+
+* erstelle Ergebnisse, die Projekte repräsentieren, die umgesetzt werden sollen
+* unterteilen der Ergebnisse in Projekte oder Unterprojekte
+* Festlegung und Anwendung des Fortschritts in der Implementierung (0% bis 100% implementiert)
+* zeigt den Umfang der Implementierung der Ergebnisse, sortiert nach Kategorien und Bereichen
+
+Results, projects and statuses can be updated through a CSV (comma-separated values), or manually by the administration interface.

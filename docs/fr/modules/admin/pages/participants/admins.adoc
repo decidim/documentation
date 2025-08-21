@@ -1,0 +1,21 @@
+= Administrateurs
+
+Dans la page de liste des administrateurs, vous pouvez voir tous les administrateurs de la plateforme :
+
+image:admins.png[Admins list]
+
+Ici vous pouvez :
+
+* inviter de nouveaux administrateurs
+* révoquer les autorisations des administrateurs
+* voir quand a été la dernière fois qu'un administrateur s'est connecté
+
+For inviting a new administrator, you need to go to the button "New user" and fill
+the form with the admin username, email and which role will they have:
+
+* Admin: donner un accès complet à la plateforme
+* Gestionnaire de participants: donner la permission de ne faire que xref:admin:participants/impersonations.adoc[Impersonations]
+
+image:admins_invite.png[Formulaire d'invitation d'un participant]
+
+Vous pouvez inviter un participant déjà inscrit ou non enregistré.

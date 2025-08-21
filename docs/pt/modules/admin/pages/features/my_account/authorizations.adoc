@@ -1,23 +1,23 @@
-= Authorizations
+= Autorizações
 
-In this section participants will be able to review their Authorizations and see some metadata, like when it was granted
-or the status of the authorization.
+Nesta seção, os participantes poderão rever suas Autorizações e ver alguns metadados, como quando ele foi concedido
+ou o status da autorização.
 
-It depends on how it's configured for the organization, as depending in the context (like normative or laws) it could work
-in different ways. For more information about Authorizations see xref:admin:participants/authorizations.adoc[authorizations
-in admin manual] and xref:customize:authorizations.adoc[authorizations in customize guide].
+Depende de como ele é configurado para a organização, pois dependendo do contexto (como normativo ou leis) pode funcionar
+de formas diferentes. Para obter mais informações sobre Autorizações consulte xref:admin:participants/authorizations.adoc[authorizations
+in admin manual] e xref:Personalize:authorizations.adoc[Autorização em guias de personalização].
 
-image:features/my_account/authorizations.png[Authorizations]
+image:features/meu_account/authorizations.png[Authorizations]
 
-To go to this section:
+Para ir para esta turma:
 
-. Sign in as a participant
-. Click in the name of the participant in the header
-. Click in "My account"
-. Click in "Authorizations" in the sidebar
+. Iniciar sessão como participante
+. Clique no nome do usuário no cabeçalho
+. Clique em "Minha conta"
+. Clique em "Autorizações" na barra lateral
 
-For any given authorization, you can see the following information:
+Para qualquer autorização fornecida, você pode ver as seguintes informações:
 
-* If it's not finished, when the authorization process started
-* If it has finished and has been granted, the date when it was granted
-* If the authorization provides it, some metadata, such as the scope of the authorization
+* Se não terminar, quando o processo de autorização começou
+* Se ele terminou e foi concedido, a data em que foi concedido
+* Se a autorização fornecer algum metadado, como o escopo da autorização

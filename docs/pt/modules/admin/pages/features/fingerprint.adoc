@@ -1,27 +1,27 @@
-= Fingerprint
+= Impressão digital
 
-Although the platform should show the xref:admin:features/versions.adoc[Versions] for almost all of the contents, it'd be
-still possible to manipulate the content by directly editing the database.
+Embora a plataforma deva mostrar as xref:admin:features/versões. documento[Versions] para quase todos os conteúdos, ainda seria
+possível manipular o conteúdo editando diretamente o banco de dados.
 
-As mitigation for this risk, the platform shows a fingerprint for some important fields, for instance, a proposal body and title.
+Como mitigação deste risco, a plataforma mostra uma impressão digital para alguns domínios importantes, por exemplo, um corpo e título da proposta.
 
-image:features/fingerprint/modal.png[Check fingerprint modal]
+imagem:features/impressão digital/modal.png[Verificar impressão digital]
 
-Its goal is to provide a way to give an informal "receipt" to a participant to they can detect tampering. A fingerprint is
-a hashed representation of the content. It's useful to ensure the content hasn't been tampered with, as a single modification
-would result in a totally different value. It's calculated using a SHA256 hashing algorithm. In order to replicate it
-yourself, you can use a http://www.md5calc.com/sha256[MD5 calculator online] and copy-paste the source data.
+Seu objetivo é fornecer uma maneira informal de dar um "recibo" a um participante para que ele detecte manipulação. Uma impressão digital é uma representação
+de hash do conteúdo. É útil garantir que o conteúdo não tenha sido adulterado, como uma única modificação
+resultaria em um valor totalmente diferente. É calculado usando um algoritmo de hashing SHA256. A fim de replicá-lo
+, você pode usar uma http://www.md5calc.com/sha256[MD5 calculadora online] e copiar e colar os dados de origem.
 
-== Check fingerprint
+== Verificar impressão digital
 
-. Go to the content that you want to check the fingerprint
-. Click in the "Check fingerprint" link in the sidebar
-image:features/fingerprint/sidebar.png[Check fingerprint link in sidebar]
-. Follow the modal instructions
+. Ir para o conteúdo que deseja verificar a impressão digital
+. Clique no link "Verificar impressão digital" na barra lateral
+imagem:features/impressão digital/sidebar.png[Link para verificação de impressão digital na barra lateral]
+. Siga as instruções modal
 
-image:features/fingerprint/md5calc.png[MD5calc.com screenshot]
+imagem:features/impressão digital/md5calc.png[captura de tela MD5calc.com]
 
-It's possible to check the fingerprint with other tools, such as the sha256sum command line tool.
+É possível verificar a impressão digital com outras ferramentas, como a ferramenta de linha de comando do sha256sum.
 
 [source,bash]
 ----

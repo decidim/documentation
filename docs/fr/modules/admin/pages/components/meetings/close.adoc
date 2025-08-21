@@ -1,0 +1,103 @@
+= Fermer
+
+Après une réunion, il est possible et recommandé de clore la réunion. Cela permet d'ajouter les minutes, les notes
+qui donnent un résumé de ce qui a été discuté pendant la réunion, les accords conclus, les décisions prises, etc.
+
+Cela permet d’apporter de la transparence à la réunion et sert également de compte rendu des différentes réunions.
+
+It's also possible to add other kind of metadata to the meeting, such as what organizations has attended, how many attendees
+and contributions were, and what proposals were discussed.
+
+image:components/meetings/close/frontend.png[Fermer le rapport dans le frontend]
+
+== Fermer le formulaire de réunion
+
+=== Réunions officielles
+
+Pour clore une réunion :
+
+. Se connecter en tant qu'administrateur
+. Aller au panneau d'administration
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+Par exemple, il peut s'agir de "Processus", d'"Assembles", ou de "Conférences"
+. Cliquez sur "Réunions"
+. Rechercher dans la réunion que vous souhaitez clôturer
+. Cliquez sur le bouton "Fermer" image:action_close.png[Fermer le bouton]
+. Remplissez le formulaire
+
+image:components/meetings/close/form_backend.png[Fermer le formulaire de réunion dans le backend]
+
+
+.Fermer le formulaire de réunion (backend)
+|===
+|Champ |Type |Description
+
+|Minutes
+|Obligatoire
+|Description de ce qui s'est passé lors de la réunion.
+
+|Liste des organisations qui ont assisté
+|Facultatif
+|Métadonnées qui sont affichées dans la barre latérale de la réunion.
+
+|Nombre de participants
+|Obligatoire
+|Métadonnées qui sont affichées dans la barre latérale de la réunion. Doit être un nombre.
+
+|Nombre de contributions
+|Facultatif
+|Métadonnées qui sont affichées dans la barre latérale de la réunion. Doit être un nombre.
+
+|Propositions
+|Facultatif
+|Choisir les propositions de cet espace qui ont été discutées lors de cette réunion
+
+|URL de la vidéo
+|Facultatif
+|Il n'est utilisé pour rien. Elle sera retirée à l'avenir.
+
+|URL audio
+|Facultatif
+|Il n'est utilisé pour rien. Elle sera retirée à l'avenir.
+
+|Est visible
+|Facultatif
+|Cochez cette case si vous souhaitez publier le rapport de fermeture
+|===
+
+=== Réunions de citoyens
+
+Tout comme les participants peuvent créer des réunions, ils peuvent également clôturer une réunion. Ils ont moins de champs à remplir.
+
+Pour clore une réunion :
+
+. Connectez-vous en tant que participant qui a créé la réunion
+. Aller à la page de la réunion
+. Cliquez sur "Fermer". Ceci ne sera visible qu'après que la réunion soit passée
+. Remplissez le formulaire
+
+image:components/meetings/close/form_frontend.png[Fermer le formulaire de réunion dans le frontend]
+
+
+.Fermer le formulaire de réunion (frontend)
+|===
+|Champ |Type |Description
+
+|Minutes
+|Obligatoire
+|Description de ce qui s'est passé lors de la réunion.
+
+|Nombre de participants
+|Obligatoire
+|Métadonnées qui sont affichées dans la barre latérale de la réunion. Doit être un nombre.
+
+|Propositions
+|Facultatif
+|Choisir les propositions de cet espace qui ont été discutées lors de cette réunion
+|===
+
+== Propositions
+
+Si vous soumettez une proposition à une réunion, la réunion sera également affichée dans la proposition.
+
+image:components/meetings/close/related_proposal.png[Réunion liée dans une proposition]

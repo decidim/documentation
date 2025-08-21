@@ -1,10 +1,10 @@
-= Assemblies
+= Colmenas
 
-An assembly is a group of members of an organization who meet periodically to make decisions about a specific area or
-scope of the organization.
+Una asamblea es un grupo de miembros de una organización que se reúnen periódicamente para tomar decisiones sobre un área específica o
+ámbito de la organización.
 
-Assemblies hold meetings, some are private and some are open. If they are open, it is possible to participate in them
-(for example: attending if the capacity allows it, adding points to the agenda, or commenting on the proposals and decisions taken by this organ).
+Las asambleas celebran reuniones, algunas son privadas y otras abiertas. Si están abiertas, es posible participar en ellas
+(por ejemplo: asistir si la capacidad lo permite, añadir puntos al orden del día o comentar las propuestas y decisiones tomadas por este órgano).
 
 Examples: A general assembly (which meets once a year to define the organisation's main lines of action as well as its
 executive bodies by vote), an equality advisory council (which meets every two months to make proposals on how to improve
@@ -18,291 +18,291 @@ You can see a real world usage of assemblies in https://www.decidim.barcelona/as
 can see the different Participation Organs, that are the regular spaces where the City Council meets with citizens and organizations
 to get feedback.
 
-In this section, we'll explain how we can configure an Assembly in Decidim.
+En esta sección, explicaremos cómo podemos configurar una Assembly en Decidim.
 
-== List
+== Lista
 
-To configure assemblies on the Decidim platform, click on btn:[Assemblies] in the admin sidebar menu. A list
-will appear with the existing assemblies if there are any:
+Para configurar ensamblajes en la plataforma de Decidim, haga clic en btn:[Assemblies] en el menú lateral de administración. Aparecerá una lista
+con las ensamblias existentes si las hay:
 
-image:assemblies_list.png[Assemblies list]
+imagen:assemblblies_list.png[Lista de Colmenas]
 
-You can filter by the ones that are:
+Puedes filtrar por los que son:
 
-* Published / Unpublished
-* Public / Private
+* Publicado / Sin Publicar
+* Público / Privado
 
-image:assemblies_list_filter.png[Assemblies list filtered]
+imagen:assemblblies_list_filter.png[Lista de Colmenas filtradas]
 
-You can also search by title and control how many elements are in the list.
+También puede buscar por título y controlar cuántos elementos hay en la lista.
 
-You have 4 possible actions in this list after an Assembly is created:
+Tienes 4 posibles acciones en esta lista después de crear una Colmena:
 
-. Export: send by email the configuration for a given assembly. Can be imported in other Decidim installation.
-. Duplicate: to duplicate this assembly.
-. Configure: to edit the metadata and configuration for a assembly.
-. Assemblies: to manage all the children assemblies for a assembly.
-. Preview: how it will look once published.
+. Exportar: envíe por correo electrónico la configuración de un ensamble. Puede importarse en otra instalación de Decidim.
+. Duplicar: duplicar esta ensambla.
+. Configuración: para editar los metadatos y la configuración de un ensamble.
+. Colmenas: gestionar todos los ensamblajes infantiles para una ensambla.
+. Vista previa: cómo se verá una vez publicado.
 
-== New assembly form
+== Nueva forma de ensamblado
 
-image:assemblies_new_form.png[New assembly form]
+imagen:assemblblies_new_form.png[Nuevo formulario de ensamblado]
 
 
-.New assembly form: General information
+.Nuevo formulario de asamblea: Información general
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Title
-|Required
-|Title of the assembly. For instance, "General Committee".
+|Título
+|Requerido
+|Título de la Colmena. Por ejemplo, "General e".
 
-|Subtitle
-|Required
-|Subtitle. For instance, "Let's decide our priorities together"
+|Subtítulo
+|Requerido
+|Subtítulo. Por ejemplo, "Decidamos nuestras prioridades juntas"
 
-|Order position
-|Required
-|Which order will it have in relation with the other assemblies. Having a lower number means a higher priority. For instance,
-if you have two assemblies, "Assembly a" with weight "10" and "Assembly b" with weight "0", then "Assembly b" will be first when ordering.
+|Posición del pedido
+|Requerido
+|¿Qué orden tendrá en relación con los demás ensamblajes. Tener un número más bajo significa una prioridad mayor. Por ejemplo,
+si tienes dos ensamblajes, "Assembly a" con peso "10" y "Assembly b" con peso "0", luego "Assembly b" será la primera vez que se haga el pedido.
 
-|URL slug
-|Required
-|URL slugs are used to generate the URLs that point to this assembly. Only accepts letters, numbers and dashes, and must
-start with a letter. Example: if your domain is 'example.org' and your slug 'general-committee' then your URL will
-be https://example.org/assemblies/general-committee
+|Slug URL
+|Requerido
+|Los slugs de URL se utilizan para generar las URL que apuntan a esta ensambla. Solo acepta letras, números y guiones, y debe
+comenzar con una letra. Ejemplo: si tu dominio es 'example.org' y tu slug 'general-committee' entonces tu URL será
+https://example.org/assemblblies/general-committee
 
-|Hashtag
-|Optional
-|Hashtag for Twitter
+|Etiqueta
+|Opcional
+|Hashtag para Twitter
 
-|Short description
-|Required
-|A short explanation of what's your participatory process about.
+|Breve descripción
+|Requerido
+|Una breve explicación de lo que es su proceso participativo.
 
-|Description
-|Required
-|A long explanation of what's your assembly about.
+|Descripción
+|Requerido
+|Una larga explicación de lo que es su asamblea.
 
-|Purpose of action
-|Optional
-|Internal field that doesn't get shown publicly. To be removed in a future version.
+|Propósito de acción
+|Opcional
+|Campo interno que no se muestra públicamente. Para ser eliminado en una versión futura.
 
-|Composition
-|Optional
-|Internal field that doesn't get shown publicly. To be removed in a future version.
+|Composición
+|Opcional
+|Campo interno que no se muestra públicamente. Para ser eliminado en una versión futura.
 
-|Internal organisation
-|Optional
-|Internal field that doesn't get shown publicly. To be removed in a future version.
+|Organización interna
+|Opcional
+|Campo interno que no se muestra públicamente. Para ser eliminado en una versión futura.
 
-|Announcement
-|Optional
-|The text you enter here will be shown to the user right below the assembly information.
-|===
-
-
-.New assembly form: Duration
-|===
-|Field |Type |Description
-
-|Date created
-|Optional
-|Information that's displayed in the assembly metadata sidebar. Expected format: dd/mm/yyyy
-
-|Included at
-|Optional
-|Information that's displayed in the assembly metadata sidebar. The date when this assembly was added to Decidim. It does
-not necessarily have to be the same as the creation date. Expected format: dd/mm/yyyy
-
-|Duration
-|Optional
-|Information that's displayed in the assembly metadata sidebar. If the duration of this assembly is limited, select the
-end date. Otherwise, it will appear as indefinite. Expected format: dd/mm/yyyy
-
-|Closing date
-|Optional
-|Information that's displayed in the assembly metadata sidebar. When this assembly closed. Expected format: dd/mm/yyyy
-
-|Closing date reason
-|Optional
-|Information that's displayed in the assembly metadata sidebar. Why this assembly closed.
+|Anuncio
+|Opcional
+|El texto que introduzca aquí se mostrará al usuario justo debajo de la información de ensamblaje.
 |===
 
 
-.New assembly form: Images
+.Nueva forma de ensamblado: Duración
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Home image
-|Optional
-|Image that will be used in presentation cards of this assembly. Guidance for file: Has to be an image or a document.
-For images, use preferably landscape images that does not have any text, the service crops the image. Maximum file size: 10MB
-Allowed file extensions: jpeg jpg png
+|Fecha de creación
+|Opcional
+|Información que se muestra en la barra lateral de metadatos de ensamblaje. Formato esperado: dd/mm/aaaa
 
-|Banner image
-|Optional
-|Image that will be used inside of the assembly. Guidance for file: Has to be an image or a document.
-For images, use preferably landscape images that does not have any text, the service crops the image. Maximum file size: 10MB
-Allowed file extensions: jpeg jpg png
-|===
+|Incluye el
+|Opcional
+|Información que se muestra en la barra lateral de metadatos de ensamblaje. La fecha en que esta asamblea fue añadida a Decidim. Hace
+no necesariamente tiene que ser el mismo que la fecha de creación. Formato esperado: dd/mm/aaaa
 
+|Duración
+|Opcional
+|Información que se muestra en la barra lateral de metadatos de ensamblaje. Si la duración de esta asamblea es limitada, seleccione la fecha de finalización
+. De lo contrario, aparecerá como indefinido. Formato esperado: dd/mm/aaaa
 
-.New assembly form: Filters
-|===
-|Field |Type |Description
+|Fecha de cierre
+|Opcional
+|Información que se muestra en la barra lateral de metadatos de ensamblaje. Cuando se cerró esta asamblea. Formato esperado: dd/mm/aaaa
 
-|Scopes enabled
-|Optional
-|Check if you want to have Scopes filtering in this assembly.
-
-|Scope
-|Optional
-|Which xref:admin:scopes.adoc[Scope] does this assembly belongs to.
-
-|Area
-|Optional
-|Which xref:admin:areas.adoc[Area] does this assembly belongs to.
+|Cerrando fecha razón
+|Opcional
+|Información que se muestra en la barra lateral de metadatos de ensamblaje. Por qué se cerró esta asamblea.
 |===
 
 
-.New assembly form: Metadata
+.Nuevo formulario de ensamblado: Imágenes
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|What is decided
-|Optional
-|Information that's displayed in the assembly metadata sidebar.
+|Imagen de inicio
+|Opcional
+|Imagen que se utilizará en las tarjetas de presentación de este ensamble. Guía para el archivo: Debe ser una imagen o un documento.
+Para las imágenes, utilizar preferiblemente imágenes apaisadas que no tienen texto, el servicio recorta la imagen. Tamaño máximo de archivo: 10MB
+Extensiones de archivo permitidas: jpeg jpg png
 
-|How is it decided
-|Optional
-|Information that's displayed in the assembly metadata sidebar.
-
-|Scope metadata
-|Optional
-|Information that's displayed in the assembly metadata sidebar.
-
-|Promoter group
-|Optional
-|Information that's displayed in the assembly metadata sidebar.
-
-|Organization area
-|Optional
-|Information that's displayed in the assembly metadata sidebar.
-
-|Who participates
-|Optional
-|Information that's displayed in the assembly metadata sidebar.
+|Imagen de banner
+|Opcional
+|Imagen que se utilizará en el interior del ensamblado. Guía para el archivo: Debe ser una imagen o un documento.
+Para las imágenes, utilizar preferiblemente imágenes apaisadas que no tienen texto, el servicio recorta la imagen. Tamaño máximo de archivo: 10MB
+Extensiones de archivo permitidas: jpeg jpg png
 |===
 
 
-.New assembly form: Visibility
+.Nuevo formulario de ensamblado: Filtros
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Parent assembly
-|Optional
-|What is the assembly that this assembly belongs to. For instance in Metadecidim, the https://meta.decidim.org/assemblies/coordination-committee[Coordination Committee]
-has the parent assembly of the https://meta.decidim.org/assemblies/general-assembly-association[General%20Assembly%20of%20the%20Decidim%20Association].
+|Ámbitos habilitados
+|Opcional
+|Marca si quieres tener Filtrado de Ámbitos en esta Colmena.
 
-|Highlighted
-|Optional
-|Check if you want the assembly to have more visibility in the Assemblies public list. It'll also be visible in the
-Assembly Content Block in the xref:admin:homepage.adoc[Homepage] configuration.
+|Alcance
+|Opcional
+|A qué xref:admin:scopes.adoc[Scope] pertenece este ensamblaje.
 
-|Private space
-|Optional
-|Check if this assembly should only be accessible by xref:admin:spaces/assemblies/private_participants.adoc[Private Participants]
-
-|Is transparent
-|Optional
-|Check if this assembly is private but should be visible to all the rest of participants. This means that other participants
-or visitors will see it but they won't be able to interact with it.
+|Área
+|Opcional
+|A qué xref:admin:areas.adoc[Area] pertenece este ensamblaje.
 |===
 
 
-.New assembly form: Other
+.Nuevo formulario de ensamblado: Metadatos
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Created by
-|Optional
-|Choose one of "City Council", "Public" or "Other". If it's Other, you can specify the name of the organization that created
-this assembly.
+|Lo que se decide
+|Opcional
+|Información que se muestra en la barra lateral de metadatos de ensamblaje.
 
-|Assembly type
-|Optional
-|Which xref:_assemblies_types[assembly type] is this assembly.
+|Cómo se decide
+|Opcional
+|Información que se muestra en la barra lateral de metadatos de ensamblaje.
 
-|Related processes
-|Optional
-|Select other participatory processes that are related to this assembly.
+|Metadatos de ámbito
+|Opcional
+|Información que se muestra en la barra lateral de metadatos de ensamblaje.
+
+|Grupo promotor
+|Opcional
+|Información que se muestra en la barra lateral de metadatos de ensamblaje.
+
+|Zona de la organización
+|Opcional
+|Información que se muestra en la barra lateral de metadatos de ensamblaje.
+
+|Quién participa
+|Opcional
+|Información que se muestra en la barra lateral de metadatos de ensamblaje.
+|===
+
+
+.Nuevo formulario de ensamblado: visibilidad
+|===
+|Campo |Tipo |Descripción
+
+|Montaje padre
+|Opcional
+|¿Cuál es la asamblea a la que pertenece esta asamblea. Por ejemplo, en Metadecidim, el https://meta.decidim.org/assemblblies/coordination-committee[Coordination ñe]
+tiene el ensamblaje padre de la https://meta.decidim.org/assemblblies/general-ensambly-association[General%20Assembly%20of%20the%20Decidim%20Association].
+
+|Resaltado
+|Opcional
+|Marca si quieres que la asamblea tenga más visibilidad en la lista pública de Colmenas. También será visible en el Bloque de Contenido de la Colmena
+en la configuración xref:admin:homepage.adoc[Homepage].
+
+|Espacio privado
+|Opcional
+|Marque si esta asamblea solo debe ser accesible por xref:admin:spaces/assemblblies/private_participants.adoc[Participantes Privados]
+
+|Es transparente
+|Opcional
+|Compruebe si esta asamblea es privada pero debe ser visible para el resto de participantes. Esto significa que otros participantes
+o visitantes lo verán pero no podrán interactuar con él.
+|===
+
+
+.Nuevo formulario de ensamblado: Otros
+|===
+|Campo |Tipo |Descripción
+
+|Creado por
+|Opcional
+|Elija una de "Ciudad L", "Pública" o "Otro". Si es Otro, puedes especificar el nombre de la organización que creó
+esta Colmena.
+
+|Tipo de ensamblado
+|Opcional
+|Que xref:_assemblblies_types[assembly type] es este ensamblaje.
+
+|Procesos relacionados
+|Opcional
+|Seleccione otros procesos participativos relacionados con esta asamblea.
 
 |Social
-|Optional
-|Which social networks profile does this assembly has. Can be Twitter, Facebook, Instagram, YouTube and/or GitHub. It's
-displayed in the assembly metadata sidebar.
+|Opcional
+|Qué perfil de redes sociales tiene esta asamblea. Puede ser Twitter, Facebook, Instagram, YouTube y/o GitHub. Es
+mostrado en la barra lateral de metadatos de montaje.
 
-|Show statistics
-|Optional
-|Check if you want to show the Statistics section.
+|Mostrar estadísticas
+|Opcional
+|Compruebe si desea mostrar la sección de Estadísticas.
 |===
 
-After you've initially created your assembly you have a submenu where you need to keep configuring more information
-about your assembly.
+Después de haber creado inicialmente tu ensamblaje tienes un submenú donde necesitas seguir configurando más información
+sobre tu ensamblaje.
 
-image:assembly_submenu.png[Assembly submenu in admin]
+imagen:assemblbly_submenu.png[Submenú de ensamblado en admin]
 
-Here you can keep configuring your process:
+Aquí puedes seguir configurando tu proceso:
 
-. Info: the same form that we explained in this page.
-. xref:admin:spaces/assemblies/components.adoc[Components]
-. xref:admin:spaces/assemblies/categories.adoc[Categories]
-. xref:admin:spaces/assemblies/attachments.adoc[Attachments]
-. xref:admin:spaces/assemblies/members.adoc[Members]
-. xref:admin:spaces/assemblies/admins.adoc[Assembly admins]
-. xref:admin:spaces/assemblies/private_participants.adoc[Private participants]
-. xref:admin:spaces/assemblies/moderations.adoc[Moderations]
+. Información: la misma forma que explicamos en esta página.
+. xref:admin:spaces/assemblblies/components.adoc[Components]
+. xref:admin:spaces/assemblblies/categories.adoc[Categories]
+. xref:admin:spaces/assemblblies/attachments.adoc[Attachments]
+. xref:admin:spaces/assemblblies/members.adoc[Members]
+. xref:admin:spaces/assemblblies/admins.adoc[Assembly admins]
+. xref:admin:spaces/assemblblies/private_participants.adoc[Participantes privados]
+. xref:admin:spaces/assemblblies/moderations.adoc[Moderations]
 
-== Assemblies types
+== Tipos de ensamblado
 
-For clasyfing the assemblies in different kinds, you can define Assembly types. These types can be filtered in the public
-assemblies page.
+Para clasificar las Colmenas de diferentes tipos, puedes definir los tipos de Colmena. Estos tipos pueden filtrarse en la página
+de ensamblios.
 
-image:assemblies_type_filters.png[Filter by assembly type]
+image:assemblblies_type_filters.png[Filtrar por tipo de ensamblado]
 
-image:assemblies_new_type_form.png[New assembly type form]
+imagen:assemblblies_new_type_form.png[Nuevo formulario de tipo de ensamblado]
 
 
-.New assembly type form
+.Nuevo formulario de tipo de ensamblado
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Title
-|Required
-|Title of the this assembly type. For instance, "Consultative".
-|===
-
-== Settings
-
-At the moment there's only a setting for configuring the general behaviour of assemblies.
-
-image:assemblies_settings.png[Assemblies settings]
-
-
-.Settings for assemblies form
-|===
-|Field |Type |Description
-
-|Enable organization chart
-|Checkbox
-|Whether you want to show the organization chart in the assemblies list.
+|Título
+|Requerido
+|Título de este tipo de ensamblado. Por ejemplo, "Consultativa".
 |===
 
-The organization chart is shown in the bottotm of the assemblies page.
+== Ajustes
 
-image:assemblies_organization_chart.png[Assemblies organization chart]
+Por el momento sólo hay un ajuste para configurar el comportamiento general de los ensamblajes.
 
-It allows a navigation in the assemblies tree, with the possibility to see the sub-assemblies that belongs to a parent assembly.
+imagen:assemblblies_settings.png[Configuración de la Colmena]
 
-image:assemblies_organization_chart_filtered.png[Assemblies organization chart filtered]
+
+.Configuración del formulario ensamblado
+|===
+|Campo |Tipo |Descripción
+
+|Habilitar organigrama
+|Casilla
+|Si desea mostrar el gráfico de la organización en la lista de ensamblados.
+|===
+
+El gráfico de la organización se muestra en el bottotal de la página de ensamblas.
+
+imagen:assemblblies_organization_chart.png[Gráfico de organizaciones de ensamblas]
+
+Permite una navegación en el árbol de ensamblas, con la posibilidad de ver los subensamblajes que pertenecen a un montaje padre.
+
+imagen:assemblblies_organization_chart_filtered.png[Gráfica de organización de ensambladas]

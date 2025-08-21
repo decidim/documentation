@@ -1,0 +1,174 @@
+= Initiateur d'Initiatives
+
+Pour utiliser le module d'initiatives, vous voudrez revoir les configurations qui sont dans l'initialiseur. Reportez-vous à xref:configure:initializer.adoc[configuration générale d'initialisation] pour plus d'informations concernant ce fichier.
+
+Vous devrez changer dans le fichier `config/initializer/decidim.rb`. Vous pouvez également créer un fichier ad-hoc pour ces configurations, comme `config/initializer/initiatives.rb`.
+
+Après avoir apporté des modifications à ce fichier, vous devrez également redémarrer votre serveur d'application.
+
+== Création activée
+
+Définit si la création est autorisée à un utilisateur validé ou non. Vrai par défaut.
+
+[source,ruby]
+....
+  config_accessor :creation_enabled do
+    true
+  end
+....
+
+== Seuil de similitude
+
+Définition qui définit la valeur minimale de similarité pour considérer deux initiatives
+similaires. La valeur par défaut est 0,25.
+
+[source,ruby]
+....
+  config_accessor :similarity_threshold do
+    0.25
+  end
+....
+
+== Limite de similitude
+
+Définition qui définit combien d'initiatives similaires seront affichées.
+5 par défaut.
+
+[source,ruby]
+....
+  config_accessor :similarity_limit do
+    5
+  end
+....
+
+== Nombre minimum de membres du comité
+
+Minimum number of committee members required to pass the initiative to
+technical validation phase. Only applies to initiatives created by
+individuals.
+
+[source,ruby]
+....
+  config_accessor :minimum_committee_members do
+    2
+  end
+....
+
+== Durée de la période de signature par défaut
+
+Number of days available to collect supports after an initiative has been
+published.
+
+[source,ruby]
+....
+  config_accessor :default_signature_time_period_length do
+    120
+  end
+....
+
+== Composants par défaut
+
+Composants activés pour une nouvelle initiative
+
+[source,ruby]
+....
+  config_accessor :default_components do
+    [:pages, :meetings]
+  end
+....
+
+== Pourcentage de la première notification
+
+Notifie lorsque le pourcentage donné de soutiens est atteint pour une initiative
+.
+
+[source,ruby]
+....
+  config_accessor :first_notification_percentage do
+    33
+  end
+....
+
+== Pourcentage de la deuxième notification
+
+Notifie lorsque le pourcentage donné de soutiens est atteint pour une initiative
+.
+
+[source,ruby]
+....
+  config_accessor :second_notification_percentage do
+    66
+  end
+....
+
+== Durée d'expiration du cache des statistiques
+
+Définit la durée d'expiration des données statistiques.
+
+[source,ruby]
+....
+  config_accessor :stats_cache_expiration_time do
+    5.minutes
+  end
+....
+
+== Temps maximum dans l'état de validation
+
+Durée maximale en état de validation.
+After this time the initiative will be moved to
+discarded state.
+
+[source,ruby]
+....
+  config_accessor :max_time_in_validating_state do
+    60.days
+  end
+....
+
+== Impression activée
+
+Fonctionnalité d'impression activée. Allows the user to get
+a printed version of the initiative from the administration
+panel.
+
+[source,ruby]
+....
+  config_accessor :print_enabled do
+    true
+  end
+....
+
+== Service d'horodatage
+
+Définit un service pour générer un horodatage à chaque vote. L'attribut
+est le nom d'une classe dont les instances sont
+initialisées avec une chaîne contenant les données devant être
+horodatées et répondre à une méthode d'horodatage.
+
+[source,ruby]
+....
+  config_accessor :timestamp_service
+....
+
+== Service de signature PDF
+
+Définit un service pour ajouter une signature au pdf des signatures.
+L'attribut est le nom d'une classe dont les instances sont
+initialisées avec le document à signer et à répondre à une méthode
+signéd_pdf avec la signature ajoutée.
+
+[source,ruby]
+....
+  config_accessor :pdf_signature_service
+....
+
+== Ne pas exiger une autorisation
+
+Ce drapeau permet de créer des autorisations à des utilisateurs non autorisés.
+
+[source,ruby]
+....
+  config_accessor :do_not_require_authorization do
+    false
+  end
+....

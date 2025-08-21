@@ -1,40 +1,40 @@
-= Authorizations
+= Autorizações
 
-This section allows you to manage participants' authorizations. It depends on which Authorizations you have configured and
-enabled by your developers. To understand more what are authorizations and how to configure them, please refer to the
-xref:customize:authorizations.adoc[Authorizations section in the Customize Guide].
+Esta seção permite-lhe gerenciar as autorizações dos participantes. Depende de quais Autorizações você configurou e
+habilitado por seus desenvolvedores. Para entender mais o que são as autorizações e como configurá-las, por favor, consulte o
+xref:personalize:authorizations.adoc[Seção de Autorizações no Guia de Personalização].
 
-With authorizations an administrator can define different permissions so participants can make some actions in a component.
-For instance you can configure that only participants who have verified herselves by their identity documents can vote on
-proposals in a participatory process.
+Com as autorizações um administrador pode definir diferentes permissões para que os participantes possam realizar algumas ações em um componente.
+Por exemplo, você pode configurar que somente os participantes que se verificaram por seus documentos de identidade podem votar em
+propostas em um processo participativo.
 
 A participant can see which authorizations does she have available in her account settings.
 
-image:authorizations_account.png[Authorizations in participants account]
+image:authorizations_account.png[Autorizações na conta de participantes]
 
-== Authorizations revocation
+== Revogação de Autorizações
 
-A default Decidim installation will not have verified participants.
+Uma instalação padrão do Decidim não terá participantes verificados.
 
-image:authorizations_admin_default.png[Authorizations in a default installation]
+image:authorizations_admin_default.png[Autorizações em uma instalação padrão]
 
-In the moment that there are some participants verified, an administrator can revoke all the authorizations, as the attributes
-that give permissions to those participants could be changed in time and the platform didn't receive these changes in the
-participants statuses. For instance, an identity document of a participant could be expired, or if a participant have been
-authorized by the "code by postal letter", that participant could move in the meantime.
+No momento em que houver alguns participantes verificados, um administrador pode revogar todas as autorizações, como os atributos
+que dão permissões a esses participantes podem ser alterados a tempo e a plataforma não recebeu essas alterações nos status de
+participantes. Por exemplo, um documento de identidade de um participante pode ser expirado, ou se um participante tiver sido
+autorizado pelo "código por carta postal", o participante poderia mover-se enquanto isso.
 
-image:authorizations_admin_revocation.png[Authorizations revocation]
+image:authorizations_admin_revocation.png[Revogação de autorizações]
 
-It's possible to revoke all the authorizations with "Revoke all", or to only revoke authorizations before a given date.
-Another possiblity is to revoke only the xref:admin:participants/impersonations.adoc[impersonated participants].
+É possível revogar todas as autorizações com "Revogar todos", ou apenas revogar autorizações antes de uma determinada data.
+Outra possibilidade é revogar apenas o xref:admin:participants/impersonations.adoc[impersonated participants].
 
-== Verification methods
+== Métodos de verificação
 
-Some of the available authorizations by default are:
+Algumas das autorizações disponíveis por padrão são:
 
-* xref:admin:participants/authorizations/identity_documents.adoc[Identity documents]
-* xref:admin:participants/authorizations/code_postal_letter.adoc[Code by postal letter]
-* xref:admin:participants/authorizations/census.adoc[Organization's census]
+* xref:admin:participants/authorizations/identity_documents.adoc[Documentos de identidade]
+* xref:admin:participants/authorizations/code_postal_letter.adoc[Código por carta postal]
+* xref:admin:participants/authorizations/census.adoc[Cenário da organização]
 
-If any of these authorizations are not useful for your needs, talk with your implementer to see other alternatives. Learn
-more about xref:customize:authorizations.adoc[Authorizations in the Customize Guide section].
+Se alguma destas autorizações não for útil para as suas necessidades, fale com o seu implementador para ver outras alternativas. Aprenda
+mais sobre xref:Personalize:authorizations.adoc[Autorizações na seção Guia de Personalização].

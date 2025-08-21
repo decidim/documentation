@@ -1,0 +1,15 @@
+= Metriken
+
+NOTE: Sie suchen nach technischen Möglichkeiten, um diese Funktion zu aktivieren? Gehe zu xref:develop:metrics.adoc[Metriken in Entwickleranleitung]
+
+Mit Metriken können Teilnehmer die Entwicklung in der Zeit einiger Ressourcen sehen, wie zum Beispiel Vorschläge, Supports, Endorsements, Anhänger, Teilnehmer, akzeptierte Propsoals, Kommentare etc. Ein Beispiel dafür finden Sie unter https://meta.decidim.org/processes/roadmap/all-metrics[Metadecidim Roadmap].
+
+Damit dies funktioniert, muss es das erste xref:develop:metrics.adoc[technisch konfiguriert] sein und auch durch die Einstellung im Teilnehmerraum (`Show metrics` Checkbox) aktiviert sein.
+
+Dann wird dieser Abschnitt auf der Raum-Landungsseite angezeigt.
+
+image:features/metrics/example.png[Beispiel der Metrik]
+
+Durch Klicken auf "Alle Metriken anzeigen" können Besucher andere Metriken sehen und diese im CSV-Format herunterladen.
+
+image:features/metrics/page.png[Metriks-Seite]

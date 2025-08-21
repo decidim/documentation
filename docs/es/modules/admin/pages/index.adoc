@@ -1,27 +1,27 @@
-= Introduction
+= Introducción
 
-Deploying Decidim means taking account of all the activities that play a part in the configuration of the platform and the deployment of the participatory processes. Acquiring knowledge in administering Decidim enables control over fundamental matters such as:
+Desplegar Decidim significa tener en cuenta todas las actividades que juegan un papel en la configuración de la plataforma y el despliegue de los procesos participativos. Adquirir conocimientos en la administración de Decidim permite el control de asuntos fundamentales como:
 
-* configuring a participatory process
-* activating a consultation and receiving votes
-* moderating the platform
-* managing associated legal texts (as the privacy policy)
-* managing authorization from the administrators
-* monitoring and verifying organizations
+* configurando un proceso participativo
+* activando una consulta y recibiendo votos
+* moderando la plataforma
+* gestionar textos legales asociados (como la política de privacidad)
+* administrar autorización de los administradores
+* monitoreo y verificación de organizaciones
 
-None of these aspects are strictly technical but they do involve a series of political decisions over how we want Decidim to be, what messages and contents it has to contain, what the moderation policy for comments and debates has to be and, above all, how a specific participatory platform has to be, and what functions it has to have active. This is why it is essential to understand the socio-technical implications of the Decidim platform’s administration and management when it comes to deploying the platform.
+Ninguno de estos aspectos son estrictamente técnicos, pero implican una serie de decisiones políticas sobre cómo queremos que sea el Decidim qué mensajes y contenidos tiene que contener, cuál debe ser la política de moderación de los comentarios y los debates y, sobre todo, cuál debe ser la política de moderación de los comentarios y los debates cómo tiene que ser una plataforma participativa específica y qué funciones tiene que tener activa. Por eso es esencial entender las implicaciones técnicas de la administración y gestión de la plataforma Decidim a la hora de desplegar la plataforma.
 
-To understand how Decidim works, we need to distinguish between xref:spaces.adoc[*spaces*] and xref:components.adoc[*components*].  The participatory spaces are the channels that citizens can participate through when public decisions are being taken. These are participatory processes, initiatives, consultations and assemblies.
-Whereas participatory components are mechanisms that enable interaction between users of the platform and the various participatory spaces. These include meetings, pages, proposals and surveys.
+Para entender cómo funciona Decidim, necesitamos distinguir entre xref:spaces.adoc[*espacios*] y xref:components.adoc[*componentes*].  Los espacios de participación son los canales a través de los que los ciudadanos pueden participar cuando se toman decisiones públicas. Se trata de procesos participativos, iniciativas, consultas y asambleas.
+En cuanto a los componentes participativos son mecanismos que permiten la interacción entre los usuarios de la plataforma y los distintos espacios participativos. Estas incluyen reuniones, páginas, propuestas y encuestas.
 
-image:introduction.png[Spaces and components]
+imagen:introduction.png[Espacios y componentes]
 
-Therefore, a participatory space as a participatory process, in the various stages, can incorporate several components such as face-to-face meetings, proposals, surveys and results and the monitoring of these.
+Por lo tanto, un espacio participativo como proceso participativo, en las distintas etapas, puede incorporar varios componentes como reuniones cara a cara, propuestas, encuestas y resultados y el seguimiento de estos.
 
-image:introduction_process.png[Components in a participatory process]
+image:introduction_process.png[Componentes en un proceso participativo]
 
-So, participatory spaces are configured by defining (and configuring) the components they are going to have. It is important to bear in mind that these participatory components and the various functions are repeated in the various spaces, offering many opportunities when it comes to configuring the various spaces. This simplifies learning as once a space has been configured, it is then easier to configure another.
+Así, los espacios participativos se configuran definiendo (y configurando) los componentes que van a tener. Es importante tener en cuenta que estos componentes participativos y las diversas funciones se repiten en los distintos espacios, ofrecer muchas oportunidades a la hora de configurar los distintos espacios. Esto simplifica el aprendizaje ya que una vez que se ha configurado un espacio, entonces es más fácil configurar otro.
 
-This section provides a full description of how to configure the Decidim platform for any kind of organization and how to configure, manage and administer the various participatory processes. A description has been given in tutorial format, to help with understanding administration tasks, following Decidim’s literal fields and enclosing screenshots to facilitate their interpretation.
+Esta sección proporciona una descripción completa de cómo configurar la plataforma Decidim para cualquier tipo de organización y cómo configurar, gestionar y administrar los diferentes procesos participativos. Se ha dado una descripción en formato tutorial, para ayudar a entender las tareas administrativas, siguiendo los campos literales de Decidim y adjuntando capturas de pantalla para facilitar su interpretación.
 
-Managing (administering) the Decidim platform is relatively simple and intuitive and no specific IT knowledge is required. The administrators of a Decidim platform, in other words, those with the necessary authorization for managing the platform, can configure the platform in a general way (images, information pages, etc.,) and manage the various participatory processes (configuring, editing, analysing and concluding).
+La gestión (administración) de la plataforma Decidim es relativamente simple e intuitiva y no se requiere ningún conocimiento específico de TI. Los administradores de una plataforma Decidim, en otras palabras, aquellos con la autorización necesaria para gestionar la plataforma, puede configurar la plataforma de forma general (imágenes, páginas de información, etc.). ) y gestionar los diferentes procesos participativos (configurar, editar, analizar y concluir).

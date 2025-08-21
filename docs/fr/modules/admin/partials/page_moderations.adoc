@@ -1,0 +1,9 @@
+= Modération
+
+Les modérations à l'intérieur d'un espace fonctionnent comme xref:global_moderations.adoc[Modérations globales].
+
+La principale différence est que si vous le souhaitez, vous pouvez inviter les modérateurs de cet espace
+spécifique et ils n'auront accès qu'aux rapports réalisés pour le contenu
+de cet espace.
+
+Les modérateurs sont une sorte d'administrateurs de l'espace. Voir par exemple xref:spaces/processes/admins.adoc[les administrateurs de processus participatifs].

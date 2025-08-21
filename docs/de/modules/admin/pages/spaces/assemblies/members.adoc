@@ -1,0 +1,72 @@
+= Assembly Mitglieder
+
+Mitglieder der Schwärmerei erlauben es, alle Personen oder Gruppen, die einer bestimmten Versammlung angehören, zu zeigen. Es ist nützlich, um transparent zu sein.
+
+Ein Beispiel finden Sie unter https://meta.decidim.org/assemblies/coordination-committee/members[Decidim Coordination Commitee Assembly in Metadecidim].
+
+image:Assembly_members.png[Assembly-Mitglieder des Koordinierungsausschuss]
+
+== Neues Assembly-Mitglieds-Formular
+
+image:Assembly_members_list.png[Assembly Members admin list]
+
+Zum Erstellen einer neuen Phase eines partizipatorischen Prozesses:
+
+. Als Administrator anmelden
+. Gehe zum Assemblies Abschnitt in der Sidebar
+. Klicken Sie auf die Bearbeitungs-Aktion
+. Klicken Sie auf den Mitglieder-Link in der Seitenleiste
+. Klicken Sie auf den "Neues Mitglied" Button
+. Formular ausfüllen
+
+image:Assembly_members_new_form.png[Assembly Member new form]
+
+
+.Neues Assembly-Mitglieds-Formular
+|===
+|Feld |Typ |Beschreibung
+
+|Teilnehmertyp
+|Benötigt
+|Ist dieses Mitglied nicht teilnehmender oder bestehender Teilnehmer. Haben sie bereits ein Konto auf der Plattform erstellt?
+
+|Voller Name
+|Erforderlich, wenn es nicht teilnimmt.
+|
+
+|Benutzer oder Gruppe
+|Erforderlich, wenn es ein existierender Teilnehmer ist.
+|Geben Sie mindestens drei Zeichen für die Suche ein.
+
+|Position
+|Benötigt
+|Wählen Sie einen von Präsidenten, Vizepräsidenten, Sekretär oder anderen. Falls es etwas anderes ist, können Sie den Positionstitel eingeben.
+
+|Gewicht
+|Optional
+|Welche Bestellung hat sie im Verhältnis zu den anderen Mitgliedern. Eine niedrigere Zahl bedeutet eine höhere Priorität. Zum Beispiel, wenn Sie zwei Mitglieder haben, "Member a" mit Gewicht "10" und "Member b" mit Gewicht "0", dann ist "Member b" zuerst bei der Bestellung.
+
+|Benennungsdatum
+|Benötigt
+|Wann wurde diese Person oder Gruppe als Mitglied dieser Versammlung zugewiesen. Erwartetes Format: dd/mm/yyy
+
+|Benennungsmodus
+|Optional
+|Wie wurde diese Person gestaltet.
+
+|Enddatum
+|Optional
+|Wann war diese Person oder Gruppe nicht mehr Mitglied dieser Versammlung. Erwartetes Format: dd/mm/yyy
+
+|Geschlecht
+|Optional
+|Mit welchem Geschlecht identifiziert sich diese Person am meisten.
+
+|Geburtstag
+|Optional
+|Wann wurde diese Person geboren. Erwartetes Format: dd/mm/yyy
+
+|Geburtsort
+|Optional
+|Wo war diese Person geboren.
+|===

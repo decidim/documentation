@@ -1,0 +1,47 @@
+= Partner
+
+Die Partner sind die Sponsoren oder Unterstützer einer Konferenz. Sie sind auf der Landungsseite der Konferenz aufgelistet.
+
+image:spaces/conferences/partners_frontend.png[Conferences partners (frontend)]
+
+== Neuen Partner erstellen
+
+image:spaces/conferences/partners.png[Konferenzpartners]
+
+Für die Erstellung eines neuen Partners einer Konferenz:
+
+. Als Administrator anmelden
+. Gehe zum Konferenz-Abschnitt in der Sidebar
+. Klicken Sie auf die Konferenz Bearbeiten Aktion
+. Klicken Sie auf den Partner-Link in der Seitenleiste
+. Klicken Sie auf den "Neuer Partner"-Button
+. Formular ausfüllen
+
+image:spaces/conferences/new_partner.png[Konferenzpartner form]
+
+
+.Neues Partnerformular
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Wie lautet der Name dieses Partners.
+
+|Partnertyp
+|Benötigt
+|Wählen Sie eine dieser Optionen: Hauptpromotor oder Mitarbeiter
+
+|Gewicht
+|Optional
+|Welche Bestellung hat sie im Verhältnis zu den anderen Partnern. Eine niedrigere Zahl bedeutet eine höhere Priorität. Zum Beispiel, wenn Sie zwei Partner, "Partner a" mit Gewicht "10" und "Partner b" mit Gewicht "0", dann ist "Partner b" zuerst bei der Bestellung.
+
+|Link
+|
+|
+
+|Logo
+|Benötigt
+|Bildführung: Vorzugsweise ein Querformat ohne Text. Der Dienst erzeugt das Bild. Maximale Dateigröße: 5MB
+Erlaubte Dateiendungen: jpg jpeg gif png bmp ico
+|===

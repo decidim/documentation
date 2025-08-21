@@ -1,0 +1,27 @@
+= Folgt
+
+Die meisten Inhalte in Decidim erlauben es, befolgt zu werden. Dies bedeutet, dass du xref:features/notifications.adoc[notifications]
+der Aktivität erhältst, die durch die von dir verfolgte Aktion gemacht wird.
+
+Sie können diese Benachrichtigungen in den xref:features/my_account/notifications_settings.adoc[Einstellungen Ihres Kontos] steuern.
+
+Die Aktivität der Dinge, denen du folgst, ist in deinem xref:features/my_public_profile/timeline.adoc[Profil Timeline] sichtbar.
+
+Um einer Sache zu folgen:
+
+. Navigieren Sie zu dem, was Sie folgen möchten.
+. Klicken Sie auf die Schaltfläche "Folgen".
+image:button_follow.png[Schaltfläche folgen]
+. Sie sehen den "Follow"-Button verschwindet und die "Stop following"-Button erscheint.
+
+Um einer Sache nicht zu folgen:
+
+. Navigieren Sie zu dem, was Sie nicht folgen möchten.
+. Klicken Sie auf den "Stop following"-Button.
+image:button_stop_following.png[folgenden Button stoppen]
+. Sie sehen den "Stop following"-Button verschwindet und der "Follow"-Button erscheint.
+
+Administratoren folgen standardmäßig allen neuen Leerzeichen, die in der Decidim-Plattform erstellt wurden.
+
+Ein Teilnehmer kann auch anderen Teilnehmern folgen. Dies ist öffentlich und sichtbar in den Profilsektionen
+xref:features/my_public_profile/follows.adoc[follows] und xref:features/my_public_profile/followers.adoc[followers].

@@ -1,0 +1,53 @@
+= Konfiguration
+
+Auf dieser Seite können Sie allgemeine Einstellungen von Decidim konfigurieren.
+
+image::admin_configuration.png[Decidim Admin Configuration]
+
+Diese sind:
+
+* **Name**. Erforderlich. Der Name, den die Plattform hat. Sichtbar bei Titel, E-Mails, etc.
+* **Sozial**. Soziale Handler für verschiedene soziale Netzwerke. Sichtbar in der Fußzeile in jeder Seite. Das sind:
+** Twitter
+** Facebook
+** Instagram
+** YouTube
+** GitHub
+
+image::settings_configuration_social.png[Social networks configuration in Decidim]
+
+* **Standard Locale**. Erforderlich.
+* **Zeitzone**. Erforderlich. In welcher Zeitzone ist Ihre Organisation. Verwendet von Dingen wie Terminkalendern in Meetings.
+* **Referenzpräfix**. Erforderlich.
+* **Aktiviere Abzeichen**. Ob Sie wollen oder nicht, dass Ihre Teilnehmer Abzeichen als Spielmechanismus, zum Beispiel für die Erstellung von Vorschlägen oder Kommentare.
+* **Gruppen aktivieren**.  Ob Sie wollen oder nicht, dass Ihre Teilnehmer die Möglichkeit haben, xref:participants/groups.adoc[User Groups]. Nützlich zum Beispiel für Verbände oder andere Kollektiven.
+* **Aktiviere Rich-Text-Editor für Teilnehmer **.  Ob Sie wollen oder nicht, dass Ihre Teilnehmer die Möglichkeit haben, einen https://de.wikipedia.org/wiki/WYSIWYG[What You See Is What You Get (WYSIWYG) Editor]. In einigen Textbereichen können Teilnehmer mit Hilfe des Rich-Text-Editors HTML-Tags einfügen.
+* **Sende Willkommensbenachrichtigung**. Ob Sie möchten oder nicht, dass Ihre Teilnehmer eine Benachrichtigung erhalten, wenn ihre erste ihren Account erstellt. Wenn aktiviert, können Sie diese Benachrichtigung anpassen.
+** **Willkommensbenachrichtigung anpassen**.
+** **Willkommensnachrichten**.
+** **Willkommensbenachrichtigungskörper**.
+
+.Willkommensbenachrichtigung
+====
+Hallo {\{name}}, danke für die Teilnahme an {\{organization}} und willkommen!
+
+Wenn Sie eine kurze Vorstellung von dem, was Sie hier tun können, erhalten Sie einen Blick auf die Hilfeseite.
+Sobald Sie es gelesen haben, erhalten Sie Ihr erstes Abzeichen. Hier ist eine Liste aller Abzeichen, die du erhalten kannst, wenn du an {\{organization} } teilnimmst
+
+Last but not least join other people, share with them the experience of being engaged and participate in {\{organization}}. Vorschläge, Kommentare, Debatte, darüber nachdenken, wie man zum Gemeinwohl beitragen kann, Argumente liefern, um Überzeugungsarbeit zu leisten, zuzuhören und zu lesen, um überzeugt zu sein. Ihre Ideen konkret und direkt zum Ausdruck bringen, mit Geduld und Entscheidung reagieren verteidigen Sie Ihre Ideen und halten Sie offen für die Zusammenarbeit und schließen Sie sich den Ideen anderer Leute an.
+====
+
+image::settings_configuration_welcome.png[Welcome notification configuration in Decidim]
+
+* **Admin-Nutzungsbedingungen**. Welche Nachricht ein Administrator-Benutzer beim erstmaligen Zugriff auf das Administrationsfenster sieht.
+
+.Admin-Bedingungen
+====
+ADMIN BEDINGUNGSBEDINGUNGEN
+
+Wir vertrauen darauf, dass Sie die übliche Lektion vom lokalen Systemadministrator erhalten haben. Normalerweise läuft es auf diese drei Dinge hinaus:
+
+* Achtung der Privatsphäre anderer.
+* Denken Sie, bevor Sie klicken.
+* Mit großer Macht kommt große Verantwortung.
+====

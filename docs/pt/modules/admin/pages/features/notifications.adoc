@@ -1,16 +1,230 @@
-= Notifications
+= notificações
 
-Most of the actions in the platform generate notifications so particpants can know when there are new things to watch.
+== O menu de notificação
 
-This is accessible from the `Notifications` menu item (image:icon_bell.png[Notification icon]) in the header, after a participant has logged in.
+A maioria das ações na plataforma gera notificações para que calças de partículas possam saber quando há coisas novas para assistir.
 
-To see the notifications:
+Isto é acessível a partir do item de menu `Notificações` (image:icon_bell.png[Ícone de notificação]) no cabeçalho, depois que um participante estiver logado.
 
-. Sign in as participant
-. Click in the notifications icon in the header
+Para ver as notificações:
 
-If there are notifications, then the participant will see the icon with a color image:icon_bell_on.png[Notification icon with color]
+. Iniciar sessão como participante
+. Clique no ícone de notificações no cabeçalho
 
-image:features/notifications/notifications.png[Example of notifications page when there are notifications]
+Se houver notificações, o participante verá o ícone com uma imagem de cor:icon_bell_on.png[Ícone de notificação com cor]
 
-image:features/notifications/no_notifications_yet.png[Example of notifications page when there aren't notifications]
+imagem:features/notifications/notifications.png[Exemplo de página de notificações quando há notificações]
+
+imagem:features/notifications/no_notifications_yet.png[Exemplo de página de notificações quando não há notificações]
+
+== Lista de notificações
+
+Abaixo está uma lista exaustiva de ações que desencadeiam notificações aos participantes. Os participantes são divididos em três categorias: usuários afetados, seguidores e administradores.
+
+[NOTE]
+====
+Os usuários afetados dependem do contexto de notificação. Por exemplo, pode ser o autor de conteúdo moderado, um usuário que ganha uma medalha, um usuário que foi mencionado, etc.
+====
+
+[cols="7,2,1,1,1"]
+|===
+|Acão |Funcionalidade |Usuário afetado |Seguidor |Administrador
+
+|Um novo anexo foi criado |Administrador |❌ |✅ |❌
+
+|Um administrador solicitou uma exportação |Administrador |❌ |❌ |✅
+
+|Um componente foi publicado em um espaço participativo |Administrador |❌ |✅ |❌
+
+|Um usuário tentou se verificar com os dados de outro usuário |Verificações |❌ |❌ |✅
+
+|Um administrador moderou um recurso porque foi reportado |Moderação |✅ |❌ |❌
+
+|Um recurso foi reportado |Moderação |❌ |❌ |✅
+
+|Um usuário confirma o registro (se a notificação de boas-vindas estiver habilitada) |Usuário |✅ |❌ |❌
+
+|Um usuário ganhou um emblema (se os emblemas estiverem habilitados) |Usuário |✅ |❌ |❌
+
+|Um usuário atingiu um novo nível de emblema (se os emblemas estiverem habilitados) |Usuário |✅ |❌ |❌
+
+|Um usuário foi oficializado |Usuário |❌ |❌ |✅
+
+|Um usuário pediu sua exportação de dados |Usuário |✅ |❌ |❌
+
+|Um usuário que eu sigo endossou um recurso |Usuário |❌ |✅ |❌
+
+|Um perfil público foi atualizado |Usuário |❌ |✅ |❌
+
+|Um novo grupo de usuários foi criado |User groupsfootnote:user-group[Se grupos de usuários estiverem ativados] |❌ |❌ |✅
+
+|Um grupo de usuários atualizou seu perfil |User groupsfootnote:user-group[] |❌ |❌ |✅
+
+|Um usuário foi convidado para se juntar a um grupo de usuários |User groupsfootnote:user-group[] |✅ |❌ |❌
+
+|Um usuário foi promovido como administrador do grupo |User groupsfootnote:user-group[] |✅ |❌ |❌
+
+|Um usuário pediu para se juntar ao grupo de usuários |User groupsfootnote:user-group[] |✅ |❌ |❌
+
+|Uma solicitação de usuário foi aceita para participar do grupo de usuários |User groupsfootnote:user-group[] |✅ |❌ |❌
+
+|Um pedido de usuário para se juntar ao grupo de usuários foi rejeitado |User groupsfootnote:user-group[] |✅ |❌ |❌
+
+|O administrador do grupo foi rebaixado |User groupsfootnote:user-group[] |✅ |❌ |❌
+
+|O usuário foi removido do grupo |User groupsfootnote:user-group[] |✅ |❌ |❌
+
+|Um administrador da montagem adicionou você como um de seus membros |Assembleias |✅ |❌ |❌
+
+|Você foi atribuído um papel para a montagem |Assembleias |✅ |❌ |❌
+
+|Você foi atribuído um papel para o processo participativo |processos |✅ |❌ |❌
+
+|As datas das fases foram atualizadas |processos |❌ |✅ |❌
+
+|Uma nova etapa foi ativada |processos |❌ |✅ |❌
+
+|Você foi designado para uma função para a conferência |Conferências |✅ |❌ |❌
+
+|O registro da conferência foi confirmado |Conferências |✅ |❌ |❌
+
+|O registro para a conferência está aberto |Conferências |❌ |✅ |❌
+
+|Os slots ocupados pela conferência estão acima de X% |Conferências |❌ |❌ |✅
+
+|A conferência terá lugar dentro de 2 dias |Conferências |❌ |✅ |❌
+
+|A conferência foi atualizada |Conferências |❌ |✅ |❌
+
+|A eleição agora está ativa para o espaço participativo |Eleições |❌ |✅ |❌
+
+|Você foi adicionado como confiável para a eleição |Eleições |✅ |❌ |❌
+
+|Um administrador adicionou você como confiável |Eleições |✅ |❌ |❌
+
+|Seu voto foi aceito |Eleições |✅ |❌ |❌
+
+|Você recebeu um papel da Estação de Pesquisa |Eleições |✅ |❌ |❌
+
+|Aqui está seu Código de Acesso |Eleições |✅ |❌ |❌
+
+|Um usuário que eu sigo criou uma iniciativa |Iniciativas |❌ |✅ |❌
+
+|Minha iniciativa foi criada |Iniciativas |✅ |❌ |❌
+
+|Um usuário que eu sigo endossou uma iniciativa |Iniciativas |❌ |✅ |❌
+
+|Um usuário enviou sua iniciativa para validação técnica |Iniciativas |❌ |❌ |✅
+
+|A iniciativa mudou seu estado |Iniciativas |✅ |✅ |❌
+
+|A data final das assinaturas da iniciativa foi estendida |Iniciativas |❌ |✅ |❌
+
+|O pedido para fazer parte do comitê de promotores da iniciativa foi aceito |Iniciativas |✅ |❌ |❌
+
+|O pedido para fazer parte do comitê de promotores da iniciativa foi rejeitado |Iniciativas |✅ |❌ |❌
+
+|Um usuário quer participar da sua iniciativa |Iniciativas |✅ |❌ |❌
+
+|A iniciativa atingiu o limite de assinaturas |Iniciativas |❌ |❌ |✅
+
+|Sua iniciativa alcançou a X% de assinaturas |Iniciativas |❌ |✅ |❌
+
+|A iniciativa obteve X% de assinaturas |Iniciativas |✅ |❌ |❌
+
+|A proposta foi incluída em um resultado |Responsabilidade |❌ |✅ |❌
+
+|O progresso do resultado foi atualizado |Responsabilidade |❌ |✅ |❌
+
+|Uma postagem foi publicada |Blogs |❌ |✅ |❌
+
+|O orçamento agora está ativo |Orçamentos |❌ |✅ |❌
+
+|Um recurso tem um comentário |comentários |❌ |✅ |❌
+
+|Um grupo de usuários deixou um comentário em um recurso |comentários |❌ |✅ |❌
+
+|Um usuário deixou um comentário em um recurso |comentários |❌ |✅ |❌
+
+|Um usuário respondeu seu comentário |comentários |✅ |❌ |❌
+
+|Foi mencionado um grupo ao qual você pertence |comentários |✅ |❌ |❌
+
+|Você foi mencionado |comentários |✅ |❌ |❌
+
+|Seu comentário em foi votado favoravelmente |comentários |✅ |❌ |❌
+
+|Seu comentário em foi recusado |comentários |✅ |❌ |❌
+
+|Foi criado um debate |Debates |❌ |✅ |❌
+
+|Criação de debate está habilitada para participantes |Debates |❌ |✅ |❌
+
+|A criação do debate não está mais ativa |Debates |❌ |✅ |❌
+
+|Está encerrado o debate. |Debates |✅ |✅ |❌
+
+|Uma reunião foi criada |Encontros |❌ |✅ |❌
+
+|Uma reunião foi encerrada |Encontros |✅ |✅ |❌
+
+|Uma reunião foi atualizada |Encontros |❌ |✅ |❌
+
+|O registro da sua reunião foi confirmado |Encontros |✅ |❌ |❌
+
+|Os slots ocupados pela reunião são superiores a X% |Encontros |❌ |❌ |✅
+
+|A reunião permitiu inscrições |Encontros |❌ |✅ |❌
+
+|O código de registro para a reunião foi validado. |Encontros |✅ |❌ |❌
+
+|A reunião começará em menos de 48h |Encontros |❌ |✅ |❌
+
+|Uma nova proposta foi publicada |Propostas |❌ |✅ |❌
+
+|A criação da proposta está aberta |Propostas |❌ |✅ |❌
+
+|Suportes da proposta estão abertos |Propostas |❌ |✅ |❌
+
+|Os endossos da proposta estão abertos |Propostas |❌ |✅ |❌
+
+|Alguém deixou uma nota sobre a proposta |Propostas |❌ |❌ |✅
+
+|Uma proposta está sendo avaliada |Propostas |✅ |✅ |❌
+
+|Uma proposta foi rejeitada |Propostas |✅ |✅ |❌
+
+|Uma proposta foi aceita |Propostas |✅ |✅ |❌
+
+|Um administrador atualizou o escopo de sua proposta |Propostas |✅ |❌ |❌
+
+|Um administrador atualizou a categoria da sua proposta |Propostas |✅ |❌ |❌
+
+|Uma proposta foi mencionada |Propostas |✅ |❌ |❌
+
+|Um usuário solicitou acesso como um colaborador |Rascunhos de proposta |✅ |❌ |❌
+
+|Você foi aceito para acessar como colaborador |Rascunhos de proposta |✅ |❌ |❌
+
+|Você foi rejeitado para acessar como um colaborador |Rascunhos de proposta |✅ |❌ |❌
+
+|Um usuário foi rejeitado para acessar como colaborador |Rascunhos de proposta |✅ |❌ |❌
+
+|Um usuário foi aceito para acessar como colaborador |Rascunhos de proposta |✅ |❌ |❌
+
+|Um usuário retirou o rascunho colaborativo |Rascunhos de proposta |✅ |❌ |❌
+
+|Uma emenda foi rejeitada |Nota de rodapé:alterações[Se alterações estiverem habilitadas] |✅ |✅ |❌
+
+|Uma emenda foi aceita |Nota de rodapé:alterações[] |✅ |✅ |❌
+
+|Uma emenda foi criada |Nota de rodapé:alterações[] |✅ |✅ |❌
+
+|Uma emenda foi promovida |Nota de rodapé:alterações[] |✅ |✅ |❌
+
+|Uma classificação foi criada |Sorteios |❌ |✅ |❌
+
+|Uma pesquisa foi aberta |Pesquisas |❌ |✅ |❌
+
+|Uma pesquisa foi fechada |Pesquisas |❌ |✅ |❌
+|===

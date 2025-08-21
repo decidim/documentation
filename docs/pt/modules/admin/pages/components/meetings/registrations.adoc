@@ -1,105 +1,105 @@
-= Registrations
+= Inscrições
 
-Through registrations you can have capacity control of the attendance for a meeting. With this feature for instance you can
+Através de inscrições você pode ter controle de capacidade de participação para uma reunião. With this feature for instance you can
 limit how many people could attend to the meeting, or you can know before the start of a meeting if you need to find a bigger
 room to have the meeting.
 
-Enabling this feature will add a button so that participants can express their wish to go to the meeting. Depending in how
+Ao ativar esta funcionalidade, os participantes irão adicionar um botão para que possam expressar seus desejos de ir à reunião. Depending in how
 this feature is configured, then:
 
-. it's possible to define how many slots are available for controling the maximum capacity for this meeting
-. a xref:_registration_form[custom registration form] for asking information to participants can be configured
-. administrators can make xref:_invitations[invitations] to other participants or people that isn't registered in the platform
-. it's possible to control attendance to the meeting through xref:_registration_code[registration codes]
+. É possível definir quantos slots estão disponíveis para controlar a capacidade máxima desta reunião
+. um xref:_registration_form[custom registration form] para perguntar informações aos participantes pode ser configurado
+. Os administradores podem fazer xref:_invitations[invitations] para outros participantes ou pessoas que não estão registradas na plataforma
+. é possível controlar a presença da reunião por meio do xref:_registration_code[códigos de registro]
 
-image:components/meetings/registrations/frontend_join_meeting.png[Join a meeting sidebar button]
+image:components/meetings/registos/frontend_join_meeting.png[Participe de um botão da barra lateral de reunião]
 
-Once participants confirm joining a meeting they get asked if they're reprensenting a group and if they want to show publicly that they're attending.
+Assim que os participantes confirmarem participar de uma reunião, eles são perguntados se estão descansando um grupo e se querem mostrar publicamente que estão participando.
 
-image:components/meetings/registrations/frontend_confirm.png[Join a meeting confirm modal]
+image:components/meetings/registos/frontend_confirm.png[Participe de uma confirmação de reunião modal]
 
-== Enable registrations for a meeting
+== Habilitar inscrições para uma reunião
 
-To enable registrations for a meeting:
+Para habilitar inscrições para uma reunião:
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Click on "Meetings"
-. Search the meeting that you want to enable registrations for
-. Click on the "Edit" button image:action_edit.png[Edit button]
-. Change the "Registration type" field to "On this platform"
-. Define how many slots are available in "Available slots for this meeting"
-. Click on the "Update" button
-. Click on the "Registrations" button image:action_registrations.png[Registrations button]
-. Check the "Registrations enabled" checkbox
-. Fill the form
+. Iniciar sessão como administrador
+. Ir ao painel de administração
+. Na barra lateral principal, clique no botão para o espaço para o qual você deseja configurar o componente.
+Por exemplo, pode ser "Processos", "Assemblies", ou "Conferências"
+. Clique em "Reuniões"
+. Pesquise a reunião que você deseja permitir inscrições para
+. Clique no botão "Editar" imagem:action_edit.png[Botão Editar]
+. Altere o campo "Tipo de Registro" para "Nesta plataforma"
+. Definir quantos slots estão disponíveis em "Slots disponíveis para esta reunião"
+. Clique no botão "Atualizar"
+. Clique no botão "Registros" image:action_registrations.png[Botão de registros]
+. Verifique a caixa de seleção "Registrações habilitadas"
+. Preencha o formulário
 
-== Registrations settings form
+== Formulário de configurações de inscrições
 
-image:components/meetings/registrations/backend.png[Registrations settings in a meeting]
+image:components/meetings/registrations/backend.png[Configurações de registros em uma reunião]
 
 
-.Registrations settings form
+.Formulário de configurações de inscrições
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Registrations enabled
-|Required
-|Check to enable the registration for this meeting.
+|Inscrições habilitadas
+|Obrigatório
+|Marcar para permitir o registro para esta reunião.
 
-|Registration form enabled
-|Optional
-|Check if you want to enable the registration form
+|Formulário de inscrição ativado
+|Opcional
+|Marque se você quiser habilitar o formulário de cadastro
 
-|Available slots for this meeting
-|Required
-|How many slots are available. Leave it to 0 if you have unlimited slots available.
+|Slots disponíveis para esta reunião
+|Obrigatório
+|Quantos slots estão disponíveis. Deixe-o em 0 se você tiver slots ilimitados disponíveis.
 
-|Reserved slots
-|Required
-|How many slots are already reserved. Leave it to 0 if you don't have reserved slots
+|Slots reservados
+|Obrigatório
+|Quantos slots já estão reservados. Deixe para 0 se você não tiver slots reservados
 
-|Registration terms
-|Required
-|What terms of services participants need to accept to register or join the meeting.
+|Termos de registro
+|Obrigatório
+|Que termos os participantes nos serviços devem aceitar para se inscrever ou participar da reunião.
 |===
 
-== Registration form
+== Formulário de registro
 
-This feature allows you to define a custom form like the xref:admin:components/surveys.adoc[Surveys] component to ask participants
-for registration information.
+Esse recurso permite que você defina um formulário personalizado como o componente xref:admin:components/surveys.adoc[Surveys] para pedir informações aos participantes
+.
 
-== Export all
+== Exportar tudo
 
-It's possible to export registrations in multiple formats: CSV, JSON and XLSX (Excel).
+É possível exportar registros em vários formatos: CSV, JSON e XLSX (Excel).
 
-The exported data will have these fields:
+Os dados exportados terão estes campos:
 
-* id: The registration id
-* code: the xref:_registration_code[registration code] (if this feature is enabled)
-* user/name: the name of the user
-* user/email: the email of the user
+* ID: O ID de registo
+* código: xref:_registration_code[registration code] (se esta funcionalidade estiver ativada)
+* usuário/nome: o nome do usuário
+* usuário/email: o e-mail do usuário
 * user/user_group: the group of the user if she has selected that's representing a group when registering
 
-== Invitations
+== Convites
 
-This feature allows you to invite attendes to a meeting. These could be already registered or non-existing participants
-in the platform.
+Esse recurso permite convidar participantes para uma reunião. Estes poderiam estar registrados ou participantes não-existentes
+na plataforma.
 
-image:components/meetings/registrations/invite_attendee.png[Invite attendee for registration in a meeting]
+image:components/meetings/registrations/invite_attendee.png[Convidar participante para o cadastro em uma reunião]
 
-== Registration code
+== Código de registro
 
-This feature allows you to check if the attendee is registered in the meeting. She needs to provide her code, that gets
+Esse recurso permite verificar se o participante está registrado na reunião. She needs to provide her code, that gets
 entered in this form and it's checked against the database.
 
-image:components/meetings/registrations/backend_w_registration_code.png[Registration code form in a meeting]
+image:components/meetings/registrations/backend_w_registration_code.png[Formulário de registro em uma reunião]
 
-image:components/meetings/registrations/frontend_confirmed_w_code.png[Registration code in a meeting frontend]
+image:components/meetings/registrations/frontend_confirmed_w_code.png[Código de registro em um frontend de reunião]
 
-It can receive two kind of responses:
+Pode receber dois tipos de respostas:
 
-* Registration code successfully validated.
-* This registration code is invalid.
+* Código de registro validado com sucesso.
+* Este código de registro é inválido.

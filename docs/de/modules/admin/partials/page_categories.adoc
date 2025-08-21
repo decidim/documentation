@@ -1,0 +1,56 @@
+= Kategorien
+
+Kategorien (und Unterkategorien) werden verwendet, um Ressourcen innerhalb eines Raumes zu klassifizieren.
+
+Ein Administrator kann sie definieren, kann beim Erstellen von Ressourcen zugewiesen werden, und dann können die Teilnehmer die
+verschiedenen Ressourcen nach diesen Kategorien filtern. Sie können beispielsweise in Vorschlägen, Tagungen und Debatten eingerichtet werden.
+
+Als Beispiel für diesen Mechanismus finden Sie ihn in https://meta.decidim.org/processes/roadmap/f/122/[Neue Funktionalitäten für Decidim Software vorschlagen] Prozess:
+
+. Administratoren haben die Kategorien im Prozess definiert.
+. Teilnehmer können Vorschläge mit einer Kategorie erstellen.
+. Die Teilnehmer können nach diesen Kategorien filtern und unter allen Vorschlägen navigieren.
+
+image:spaces/categories_sidebar.png[Kategorien in Vorschlägen filtern]
+
+image:spaces/categories_form.png[Kategorie beim Erstellen eines Vorschlags auswählen]
+
+NOTE: Sobald eine Kategorie in Gebrauch ist, kann sie nicht entfernt werden, da es Ressourcen gibt, die sie verwenden.
+
+Decidim hat andere Möglichkeiten, Ressourcen zu klassifizieren, zum Beispiel xref:admin:scopes.adoc[Scopes] und xref:admin:features/hashtags.adoc[Hashtags].
+Der Hauptunterschied ist, dass Kategorien in einem gegebenen Raum definiert werden können Bereiche sind global für die gesamte Plattform, und Hashtags
+werden von den Teilnehmern definiert.
+
+Kategorien können verschachtelt werden, was bedeutet, dass eine Kategorie Unterkategorien haben kann.
+
+== Neue Kategorie erstellen
+
+Um eine neue Kategorie zu konfigurieren, gehen Sie zum Bereich-Admin-Panel und klicken Sie auf die Registerkarte "Kategorien".
+
+image:spaces/categories.png[Kategorien in einer Raum-Admin-Seite anzeigen]
+
+Dann klicken Sie auf "Kategorie hinzufügen" und füllen das Formular aus.
+
+image:spaces/categories_new_form.png[Neues Kategorie-Formular erstellen]
+
+
+.Kategorie erstellen
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Was ist der Name für diese Kategorie.
+
+|Gewicht
+|Optional
+|Welche Reihenfolge wird es in Bezug auf die anderen Kategorien haben. Eine niedrigere Zahl bedeutet eine höhere Priorität. Zum Beispiel, wenn Sie zwei Kategorien haben, "Kategorie a" mit Gewicht "10" und "Kategorie b" mit Gewicht "0", dann wird "Kategorie b" zuerst bei der Bestellung sein.
+
+|Beschreibung
+|Benötigt
+|Eine lange Beschreibung, die erklärt, worum es bei dieser Kategorie geht.
+
+|Elternteil
+|Optional
+|Was ist die übergeordnete Kategorie.
+|===

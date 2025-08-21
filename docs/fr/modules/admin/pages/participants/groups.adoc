@@ -1,0 +1,116 @@
+= Groupes d'utilisateurs
+
+Un groupe d'utilisateurs est un groupe de participants. Selon l'installation et le contexte de l'organisation, il pourrait être désactivé. Ceci est activé ou désactivé dans le tableau de bord de l'administration, dans Paramètres -> Configuration -> Modifier l'organisation -> Activer les groupes.
+
+== Création
+
+Cette action est faite par **un participant**. They need to go to their profile and in the sidebar there's a button that says "Create group":
+
+image:user_sidebar.png[Barre latérale de l'utilisateur]
+
+Lorsqu'il est cliqué, il ouvrira le formulaire "Nouveau groupe":
+
+image:user_group_new_form.png[Nouveau formulaire de groupe]
+
+
+.Nouveau formulaire de groupe
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Nom de votre organisation, association, collectif, groupe, etc.
+
+|Pseudo
+|Obligatoire
+|Surnom de votre organisation, association, collectif, groupe, etc. N'utilisez pas d'espaces ni d'accents. 20 caractères maximum.
+
+|Courriel
+|Obligatoire
+|Courriel de votre organisation, association, collectif, groupe, etc.
+
+|Avatars
+|Facultatif
+|Orientation pour l'image: De préférence une image de paysage qui n'a pas de texte. Le service récolte l'image. Taille maximale du fichier : 5 Mo. Extensions de fichier autorisées : jpg jpeg gif png bmp ico
+
+|À propos de
+|Facultatif
+|Description de ce groupe.
+
+|Numéro du document
+|Facultatif
+|Utilisé pour les vérifications. N'utilisez pas de tirets ni d'espaces.
+
+|Téléphone
+|Facultatif
+|Utilisé pour les vérifications. N'utilisez pas de tirets ni d'espaces.
+|===
+
+== Adhésion
+
+Une fois qu'un groupe a été créé, il est possible d'inviter des participants à devenir membres du groupe. Une fois qu'un participant a accepté de faire partie de ce groupe, il peut devenir administrateur.
+
+Les actions qui peuvent être effectuées par un participant dans le groupe d'utilisateurs sont:
+
+* Modifier le profil du groupe
+* Gérer les membres
+* Gérer les administrateurs
+* Invite participant
+* Quitter le groupe
+
+image:user_group_invite_participant.png[Groupes d'utilisateurs : inviter un participant]
+
+== Vérifications de groupe
+
+image:admin_user_group_verification.png[panneau d'administration: vérification des groupes d'utilisateurs]
+
+Cette action est effectuée par **un administrateur**. Un groupe peut être:
+* En attente
+* Vérifié
+* Rejeté
+
+Cela peut être fait avec les boutons de la barre latérale :
+
+image:admin_user_group_verification_actions.png[Panneau d'administration: actions de vérification des groupes d'utilisateurs]
+
+Lorsqu'un groupe d'utilisateurs est en attente, il peut être vérifié ou rejeté. Une fois vérifié, il peut être rejeté et une fois rejeté, il peut être vérifié.
+
+Si vous voulez vérifier plusieurs groupes d'utilisateurs en même temps, vous pouvez le faire avec l'option "Vérifier via CSV":
+
+image:admin_user_group_verification_csv.png[panneau d'administration: vérification de groupe d'utilisateurs CSV]
+
+....
+Téléchargez votre fichier CSV. Il doit avoir les courriels officiels des groupes de votre organisation dans la première colonne du fichier, sans en-têtes. Seuls les groupes qui ont confirmé leur adresse e-mail et qui ont un e-mail apparaissant dans le fichier CSV seront validés.
+....
+
+Une fois qu'un groupe est vérifié, cela est visible publiquement dans son pseudo dans la plateforme et il y a un message dans son profil : « Ce groupe est publiquement vérifié, son nom a été vérifié pour correspondre à son vrai nom".
+
+image:user_group_verified.png[Groupe d'utilisateurs : icône vérifiée]
+
+== Actions
+
+En tant que groupe d'utilisateurs vérifié, il y a certaines options que votre compte utilisateur peut faire au nom du groupe, telles que:
+
+=== Créer un Débat, une Proposition ou une Réunion
+
+Il y a une liste déroulante dans le formulaire pendant le processus de création :
+
+image:user_group_create_debate.png[Groupe d'utilisateurs : créer un débat]
+
+=== Faire un commentaire
+
+Il y a un menu déroulant dans le formulaire lorsque vous faites un commentaire :
+
+image:user_group_make_comment.png[Groupe d'utilisateurs : faire un commentaire]
+
+=== Soutenir
+
+Lors de la création d'une Endorse, il y a une fenêtre modale qui vous demande avec qui voulez-vous donner votre aval avec :
+
+image:user_group_endorse.png[Groupe d'utilisateurs : endorse]
+
+=== Conversations
+
+Vous pouvez également avoir des conversations en groupe. Ceci se trouve dans la page de profil du groupe:
+
+image:user_group_conversation.png[Groupe d'utilisateurs : conversations]

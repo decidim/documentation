@@ -1,18 +1,18 @@
-= Groups
+= grupos
 
-In this section participants can see which Groups they belong to.
+Nesta seção, os participantes podem ver a quais grupos eles pertencem.
 
-NOTE: Want to create a new group? Go to the xref:admin:features/my_public_profile.adoc[My public profile] page.
+NOTE: Deseja criar um novo grupo? Vá para página xref:admin:features/my_public_profile.adoc[Meu perfil público].
 
 image:features/my_account/groups.png[Groups]
 
-To go to this section:
+Para ir para esta turma:
 
-. Sign in as a participant
-. Click in the name of the participant in the header
-. Click in "My account"
-. Click in "Groups" in the sidebar
+. Iniciar sessão como participante
+. Clique no nome do usuário no cabeçalho
+. Clique em "Minha conta"
+. Clique em "Grupos" na barra lateral
 
-Here you can see in which date the group was created and which status does it have (`pending` or `verified`).
+Aqui você pode ver em qual data o grupo foi criado e qual status ele possui (`pendente` ou `verificado`).
 
-Read more about xref:admin:participants/groups.adoc[Groups in admin manual].
+Leia mais sobre o xref:admin:participants/groups.adoc[Groups in admin manual].

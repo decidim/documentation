@@ -1,38 +1,38 @@
-= Invites
+= Invitaciones
 
-Administrators can invite participants to join the conference.
+Los administradores pueden invitar a participantes a unirse a la conferencia.
 
-image:spaces/conferences/invites.png[Conferences user invites (backend)]
+imagen:espacios/conferences/invites.png[Invitaciones de usuario (backend)]
 
-== Flow
+== Flujo
 
-. An administrator sends an invitation to join the conference to a non-existing or existing participant
-. The participant accepts the invitation
+. Un administrador envía una invitación para unirse a la conferencia a un participante no existente o existente
+. El participante acepta la invitación
 
-image:spaces/conferences/invite_participant_form.png[Invite a participant form]
+imagen:spaces/conferences/invite_participant_form.png[Invitar a un formulario participante]
 
 
-.Invite participant form
+.Invitar formulario de participante
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Attendee type
-|Required
-|Wheter this invited person is a non-existing or existing participant. Does she already have an account created on the platform?
+|Tipo de asistente
+|Requerido
+|La persona invitada es un participante no existente o existente. ¿Ya tienen una cuenta creada en la plataforma?
 
-|Name
-|Required if it's a non-existing participant.
-|Name of the invited person.
+|Nombre
+|Requerido si es un participante no existente.
+|Nombre del invitado.
 
-|Email
-|Required if it's a non-existing participant.
-|Email of the invited person.
+|E-mail
+|Requerido si es un participante no existente.
+|Email de la persona invitada.
 
-|User
-|Required if it's an existing participant.
-|Type at least three characters to search.
+|Usuario
+|Requerido si es un participante existente.
+|Escriba al menos tres caracteres para buscar.
 
-|xref:admin:spaces/conferences/registrations/types.adoc[Registration type]
-|Required
-|What xref:admin:spaces/conferences/registrations/types.adoc[registration type] does this participant will have.
+|xref:admin:spaces/conferences/registrations/types.adoc[Tipo de registro]
+|Requerido
+|Lo que xref:admin:spaces/conferences/registrations/types.adoc[registration type] tendrá este participante.
 |===

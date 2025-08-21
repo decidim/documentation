@@ -1,51 +1,51 @@
-= Collaborative draft
+= Borrador colaborativo
 
-With the collaborative draft feature participants can make a proposal with multiple authors.
+Con el borrador colaborativo los participantes pueden hacer una propuesta con varios autores.
 
-It's useful to propose improvements or corrections.
+Es útil proponer mejoras o correcciones.
 
-It has similarities with xref:components/proposals/amendments.adoc[Amendments] but the main difference is that with collaborative
-drafts there is a need to trust other authors, as they can make any change to the original proposal without approval by the
-original author, although the original author can decide if she promotes the collaborative draft as a proposal.
+Tiene similitudes con xref:componentes/propuestas/enmiendas. documento[Amendments] pero la principal diferencia es que con borradores
+colaborativos hay una necesidad de confiar en otros autores, ya que pueden hacer cualquier cambio en la propuesta original sin la aprobación del autor
+original, aunque el autor original puede decidir si promueve el proyecto colaborativo como propuesta.
 
-image:components/proposals/collaborative_drafts/collaborative_draft_request_access.png[Collaborative draft with request access button]
+image:components/proposals/collaborative_drafts/collaborative_draft_request_access.png[Borrador colaborativo con botón de acceso a solicitud]
 
-To configure "Collaborative Drafts" in Proposals component:
+Para configurar "Borradores colaborativos" en el componente Propuestas:
 
-. Sign in as admin
-. Go to admin panel
-. In the main sidebar, click in the button for the space that you want to configure the component for.
-For instance, it could be "Processes", "Assemblies", or "Conferences"
-. Go to components
-. Click on "Add component" button
-. Click on "Proposals"
-. Check the "Collaborative drafts enabled" setting
-. Save the component
+. Iniciar sesión como administrador
+. Ir al panel de administración
+. En la barra lateral principal, haga clic en el botón para el espacio para el que desea configurar el componente.
+Por ejemplo, podría ser "Procesos", "Colmenas" o "Conferencias"
+. Ir a los componentes
+. Haga clic en el botón "Añadir componente"
+. Haga clic en "Propuestas"
+. Marca la opción "Borradores de colaboración habilitados"
+. Guardar el componente
 
-== How it works
+== Cómo funciona
 
-. A participant (Alice) wants to create a collaborative draft. For that, she goes to the proposals list page.
-. Alice clicks in the "Access collaborative drafts" button
+. Un participante (Alice) quiere crear un borrador colaborativo. Para ello, van a la página de la lista de propuestas.
+. Alice hace clic en el botón "Acceder a borradores colaborativos"
 image:components/proposals/collaborative_drafts/proposals_list01.png[]
-. Alice clicks in "New collaborative draft" button
+. Alice hace clic en el botón "Nuevo borrador colaborativo"
 image:components/proposals/collaborative_drafts/list_empty.png[]
-. Alice fills the form and submits it
+. Alice rellena el formulario y lo envía
 image:components/proposals/collaborative_drafts/create_form.png[]
-. Once the collaborative draft is created, Alice can: edit, withdraw or publish the collaborative draft and approve or
-reject collaboration requests
+. Una vez creado el borrador colaborativo, Alicia puede: editar, retirar o publicar el borrador colaborativo y aprobar o
+rechazar las solicitudes de colaboración
 image:components/proposals/collaborative_drafts/collaborative_draft.png[]
-. Another participant (Bob) has seen the collaborative draft and wants to make some changes
+. Otro participante (Bob) ha visto el borrador colaborativo y quiere hacer algunos cambios
 image:components/proposals/collaborative_drafts/collaborative_draft_request_access.png[]
-. Bob clicks in the "Request access" button
+. Bob hace clic en el botón "Solicitar acceso"
 image:components/proposals/collaborative_drafts/access_requested.png[]
-. Alice receives the notification
+. Alice recibe la notificación
 image:components/proposals/collaborative_drafts/notification.png[]
-. Alice goes to the collaborative draft. There she can accept or reject the collaboration request
+. Alicia va al borrador colaborativo. Allí pueden aceptar o rechazar la solicitud de colaboración
 image:components/proposals/collaborative_drafts/author_sidebar.png[]
-. Alice approves the collaboration request. Once a request is approved it can't be rejected
-. Now the collaborative draft has multiple authors
+. Alice aprueba la solicitud de colaboración. Una vez que una solicitud sea aprobada no puede ser rechazada
+. Ahora el borrador colaborativo tiene varios autores
 image:components/proposals/collaborative_drafts/multiple_authors.png[]
-. Bob can edit the collaborative draft by clicking in the "Edit collaborative draft" button
+. Bob puede editar el borrador colaborativo haciendo clic en el botón "Editar borrador colaborativo"
 image:components/proposals/collaborative_drafts/edit_collaborative_draft.png[]
 image:components/proposals/collaborative_drafts/edit_form.png[]
 . Once the collabrative draft is edited, then it's possible to see the old versions and its changes
@@ -53,18 +53,18 @@ image:components/proposals/collaborative_drafts/collaborative_draft_edited.png[]
 image:components/proposals/collaborative_drafts/collaborative_draft_edited_versions.png[]
 image:components/proposals/collaborative_drafts/collaborative_draft_edited_versions_show_v2_01.png[]
 image:components/proposals/collaborative_drafts/collaborative_draft_edited_versions_show_v2_02.png[]
-. Once Alice is satisfied with the collaborative draft, she can publish it by click in the "Publish" button
+. Una vez que Alice esté satisfecho con el borrador colaborativo, puede publicarlo haciendo clic en el botón "Publicar"
 image:components/proposals/collaborative_drafts/publish_modal.png[]
-. When it's published it becomes a proposal
+. Cuando se publica se convierte en una propuesta
 image:components/proposals/collaborative_drafts/proposal.png[]
 image:components/proposals/collaborative_drafts/proposals_list02.png[]
-. And the collaborative draft is still visible although it can't be edited anymore
+. Y el borrador colaborativo todavía es visible, aunque ya no puede editarse
 image:components/proposals/collaborative_drafts/collaborative_draft_published.png[]
 
-== Important aspects
+== Aspectos importantes
 
-- A collaborative draft can has any number of authors.
-- Only the original author can approve or reject the collaboration requests.
-- Only the original author can publish the collaborative draft.
-- Only the original author can withdraw the collaborative draft.
-- Once a collaboration request is approved, it can't be rejected.
+- Un borrador colaborativo puede tener cualquier número de autores.
+- Sólo el autor original puede aprobar o rechazar las solicitudes de colaboración.
+- Sólo el autor original puede publicar el borrador colaborativo.
+- Sólo el autor original puede retirar el borrador colaborativo.
+- Una vez que una solicitud de colaboración es aprobada, no puede ser rechazada.

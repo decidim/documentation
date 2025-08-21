@@ -1,12 +1,12 @@
-= Registrations
+= Registros
 
-As an administrator of a conference you can manage the registrations for the conference from the platform.
+Como administrador de una conferencia usted puede administrar las inscripciones para la conferencia desde la plataforma.
 
-For doing so, you have these admin sections:
+Para hacerlo, tienes estas secciones de administración:
 
-. xref:admin:spaces/conferences/registrations/types.adoc[**Registrations Types**] allows you to define which ways of registering participants
-will have. For instance if there are a number of prices depending if the attendees are students or workers.
-. xref:admin:spaces/conferences/registrations/users.adoc[**User Registrations**] allows you to confirm the requests for attending the conference.
-. xref:admin:spaces/conferences/registrations/invites.adoc[**Invites**] allows you to invite participants to the conference.
-. xref:admin:spaces/conferences/registrations/certificates.adoc[**Certificates of Attendance**] allows you to configure and send certificates
-of attendance in PDF format to people that has gone to the conference.
+. xref:admin:spaces/conferences/registrations/types.adoc[**Tipos de registros**] te permite definir qué formas de registrar participantes
+tendrá. Por ejemplo, si hay una serie de precios dependiendo de si los asistentes son estudiantes o trabajadores.
+. xref:admin:spaces/conferences/registrations/users.adoc[**Registro de usuarios**] le permite confirmar las solicitudes para asistir a la conferencia.
+. xref:admin:spaces/conferences/registrations/invites.adoc[**Invitaciones**] le permite invitar participantes a la conferencia.
+. xref:admin:spaces/conferences/registrations/certificates.adoc[**Certificados de asistencia**] te permite configurar y enviar certificados
+de asistencia en formato PDF a las personas que han ido a la conferencia.

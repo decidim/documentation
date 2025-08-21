@@ -1,0 +1,78 @@
+= Apparence
+
+Dans cette page, vous pouvez configurer l'apparence de votre instance Decidim.
+
+Veuillez noter que cela serait incompatible avec certains des changements que vos implémentateurs pourraient modifier dans votre installation générale. Par exemple, s'il y a eu des changements dans xref:customize:styles.adoc[Styles] cela n'a pas pu fonctionner.
+
+image::admin_appearance.png[Decidim Admin Appearance]
+
+---
+
+NOTE: Il s'agit d'un paramètre hérité qui sera supprimé dans la prochaine version. https://github.com/decidim/decidim/pull/6575[See PR].
+
+* **Afficher les statistiques** : si vous voulez afficher ou non les sections statistiques de la page d'accueil.
+
+---
+
+* **Description**: Quelle est la description de ce site. Utilisé pour les metatags pour les embeds Google et Twitter. Également utilisé par le ContentBlock "Sous-Héros" dans la page d'accueil.
+
+---
+
+NOTE: Ces paramètres hérités de la zone qui seront supprimés dans la prochaine version. https://github.com/decidim/decidim/pull/6284[See PR].
+
+* **Chemin du bouton d'Appel à l'Action**: Vous pouvez écraser le bouton d'appel à l'action de la page d'accueil. Utilisez ici des chemins partiels, pas des URL complètes. Accepte les lettres, chiffres, tirets et barres obliques, et doit commencer par une lettre. Le bouton Appel à l'action est affiché sur la page d'accueil entre le texte de bienvenue et la description. Exemple: https://meta.decidim.org/conferences/decidimfest2020/
+* **Texte du bouton d'appel** : Vous pouvez remplacer le texte du bouton "Appel à l'action" dans la page d'accueil pour chaque langue disponible dans votre organisation. Si non défini, la valeur par défaut sera utilisée. Le bouton Appel à l'action est affiché sur la page d'accueil entre le texte de bienvenue et la description.
+
+---
+
+NOTE: Il s'agit d'un paramètre hérité qui sera supprimé dans la prochaine version. Il n'y a as de demande de modifications (PR) pour l'instant.
+
+* **Bannière de contenu mis en valeur**
+** *Afficher la bannière de contenu en surbrillance*
+** *Titre*
+** *Brève description*
+** *Titre du bouton d'action*
+** *Sous-titre du bouton d'action*
+** *URL du bouton d'action*
+** *Image*
+
+---
+
+* *Modifier la bannière permanente*
+** **Activer la bannière permanente**
+** **Titre**
+** **Brève description**
+** **URL**
+
+---
+
+* **Modifier l’aspect de la mise en page**
+
+Cette sous-section définit les images de mise en page qui seront visibles dans presque toutes les pages. Il s'agit de :
+
+** Icône
+** Logo
+** Logo officiel - barre de navigation
+** Logo officiel - pied de page
+** Url officielle de l'organisation
+
+// TODO: Add examples
+
+---
+
+* **Couleurs de l'organisation** : Les couleurs de votre organisation. Veuillez noter que cela peut générer des problèmes d'accessibilité, par exemple pour les utilisateurs souffrant de certains types de daltonisme et d'autres particularités similaires, qui rencontrent un faible contraste et ont du mal à faire la différence entre des couleurs proches. Vous pouvez définir les couleurs suivantes :
+** Couleur primaire
+** Couleur secondaire
+** Couleur de succès
+** Couleur d'avertissement
+** Couleur d'alerte
+** Couleur de surbrillance
+** Couleur de surbrillance alternative
+
+// TODO: Add examples
+
+---
+
+* **Header snippets**: Utilisez ce champ pour ajouter des éléments à la HTML head. L’utilisation la plus courante est d’intégrer des services tiers qui nécessitent du JavaScript ou du CSS supplémentaires. De plus, vous pouvez l'utiliser pour ajouter des balises méta supplémentaires au HTML. Notez que cela ne sera rendu que dans les pages publiques, pas dans la section admin.
+
+// TODO: reference to HTML snippet setting

@@ -1,0 +1,408 @@
+= Initiatives
+
+Une initiative est un type spécial de processus participatif qui peut être promu par n'importe qui (indépendamment d'autres canaux ou espaces de participation) par le biais de la collecte de signatures (en ligne et en personne) pour que l'organisation mène une action spécifique (modifier un règlement, initier un projet, changer le nom d'un département ou d'une rue, etc.).
+
+Les promoteurs d'une initiative peuvent définir ses objectifs, rassembler le soutien, le débat, la diffuser et définir des points de rencontre où des signatures peuvent être recueillies auprès des participants ou des débats ouverts à d'autres participants.
+
+Exemples: Une initiative peut recueillir des signatures pour appeler à une consultation parmi toutes les personnes d'une organisation, ou de créer une assemblée, ou d'appeler à un processus d'augmentation du budget pour un territoire ou une zone de l'organisation. Au cours du processus de collecte des signatures, plus de gens peuvent ajouter à cette demande et la faire avancer au sein de l'organisation.
+
+Les initiatives doivent être distinguées des autres espaces de participation, car elles peuvent être utilisées comme un outil participatif ou un mécanisme promu par les participants. En d'autres termes, les initiatives sont des mécanismes de démocratie semi-directe par lesquels les participants peuvent promouvoir une certaine action d'intérêt commun pour l'organisation, en collectant un nombre spécifique de signatures. Dans ce cas, ce que l'organisation doit faire, c'est permettre la promotion de ces initiatives et offrir le soutien technique et les conseils nécessaires aux personnes concernées. Le rôle de l’administrateur de la plateforme est donc quelque peu différent de celui des autres espaces de participation.
+
+En premier lieu, vous devrez configurer les différentes formes d'initiatives. Cela pourrait être spécifié dans un règlement (comme une législation municipale ou un droit d'état), en précisant le nombre de signatures requises pour traiter les différents types d'initiatives. Par exemple, Une initiative visant à intégrer un ou plusieurs points à l’ordre du jour du Conseil municipal nécessite manifestement moins de signatures qu’une autre initiative visant à promouvoir une consultation contraignante.
+
+== 0. Configuration de l'initiative
+
+Le fonctionnement des initiatives dépend de deux choses : comment le module d'initiative est configuré via xref:admin:initiatives_initializer. doc[initializer] (en code) et comment le type d'initiative est configuré dans le panneau d'administration.
+
+En ce qui concerne le type d'initiatives, **un administrateur** doit en définir un. Pour que les initiatives puissent travailler sur une organisation, il doit y avoir au moins un type d'initiative créé et configuré avec au moins une portée de type d'initiative. S'il n'y a qu'un seul type alors le participant n'aura pas la possibilité de choisir le type d'initiative, cette étape sera ignorée dans l'assistant de création d'initiative.
+
+Quelques vrais exemples de la ville de Barcelone sont :
+
+* Ajouter un point à l'ordre du jour du conseil municipal ou des districts
+* Effectuer un processus participatif
+* Créer un nouvel assemblage
+* Approuver ou modifier un règlement
+* Demander la tenue d'une consultation citoyenne
+* Appeler des assemblées (conseils de voisinage ou public public)
+
+=== Formulaire de nouveau type d'initiative
+
+image:admin_initiative_type.png[Formulaire de type d'initiative]
+
+
+.Formulaire de type d'initiative : Informations générales
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|Titre du type d'initiative. Par exemple, "Nouveau parc au centre ville".
+
+|Description
+|Obligatoire
+|Explication de ce qui peut être fait avec ce type d'initiative.
+
+|Image de bannière
+|Obligatoire
+|Une image pour ce type d'initiative. REMARQUE : Pour le moment, ce n'est pas utilisé.
+|===
+
+
+.Formulaire de type d'initiative pour l'administrateur: Options
+|===
+|Champ |Type |Description
+
+|Type de signature
+|Facultatif
+|Quel type de signature sera autorisé. Les options sont : Online, In-person et Mixed. L'option Mixte permet à un participant de choisir quel type de signature aura l'initiative.
+
+|Activer les pièces jointes
+|Facultatif
+|Si cela permettra d'envoyer des pièces jointes à des initiatives.
+
+|Permettre aux participants d'annuler leurs signatures en ligne
+|Facultatif
+|Un participant peut-il annuler sa signature lorsqu'il a déjà signé ?
+
+|Permettre aux auteurs de choisir la fin de la période de collection de signatures
+|Facultatif
+|Les auteurs d'une initiative peuvent-ils modifier la fin de la période de collecte des signatures ?
+
+|Permettre aux auteurs de choisir la zone pour leur initiative
+|Facultatif
+|Les auteurs peuvent-ils choisir la zone de leur initiative?
+
+|Activer les signatures de portée enfant
+|Facultatif
+|Ce drapeau de configuration ne supporte pas les votes hors-ligne, il active les sous-portées et fonctionne avec un gestionnaire d'autorisation qui associe une portée à l'utilisateur, assurez-vous de sélectionner cette autorisation, dans les paramètres d'autorisation. Pour que cela fonctionne, les portées doivent être configurées de manière hiérarchique : 1 Parent - N Enfant.
+
+|Ne permettre que la création d'initiatives d'envergure mondiale
+|Facultatif
+|Cochez cette case si vous avez activé "Signature de la portée enfant" et configuré la portée globale comme votre portée parente. En activant cette option, la sélection de la portée sera ignorée dans l'assistant de création d'initiative.
+
+|Activer le comité de promotion
+|Facultatif
+|Que ce soit pour permettre des initiatives individuelles (réalisées par une seule personne) ou pour permettre des initiatives collectives (multiples promoteurs, multiples personnes ou groupes d'utilisateurs).
+
+|Minimum de membres du comité
+|Facultatif
+|Lorsque l'option "Activer le comité de promotion" est cochée, définit le nombre minimum de membres du comité promoteur pour envoyer l'initiative à la validation technique
+
+|Collecter les données personnelles des participants lors de la signature
+|Facultatif
+|Ajoute une étape au processus de signature. When a participant clicks on the signature button, they will be redirected to a form asking for some personal data. Ceci sera utilisé avec l'action d'exportation PDF après la fin de la période de rappel.
+
+|Informations légales sur la collecte de données personnelles
+|Dépend de la vérification de l'option "Collecter les données personnelles du participant sur la signature"
+|Avis de confidentialité et conditions d'utilisation pour les données personnelles du participant pendant le processus de signature.
+|===
+
+
+.Formulaire de type d'initiative : Paramètres d'autorisation
+|===
+|Champ |Type |Description
+
+|Autorisation de vérifier le numéro du document sur les signatures
+|Facultatif
+|When a participant is making the signature process, will they be asked for an authorization?
+
+|Ajouter une étape de validation de code SMS au processus de signature
+|
+|Lors du processus de signature, demandera-t-il une validation par SMS ? Voir xref:services:sms.adoc[configuration du service SMS].
+|===
+
+=== Formulaire de portée du nouveau type d'initiative
+
+Un type d'initiative peut également avoir des portées associées. Pour les Initiatives, il a besoin d'au moins une portée configurée.
+
+image:admin_initiative_type_scope.png[Formulaire de type d'initiative]
+
+
+.Formulaire de portée du nouveau type d'initiative admin
+|===
+|Champ |Type |Description
+
+|Portées
+|Obligatoire
+|Une portée. Un auteur peut choisir cette portée dans la création de l'initiative.
+
+|Signatures requises
+|Obligatoire
+|Nombre de signatures que l'initiative doit avoir avant la fin de la période afin qu'elle puisse être acceptée.
+|===
+
+== 1. Créer une initiative
+
+Cette action est faite par **l'auteur**. L'auteur est un participant qui crée l'initiative. Selon la façon dont le module des initiatives est configuré dans l'initialiseur ou comment le type d'initiative est configuré, il peut avoir besoin de demander une autorisation, ou il n'affichera même pas le bouton "Nouvelle initiative".
+
+image:initiative_list.png[Liste d'initiatives]
+
+Pour créer une initiative, un participant doit cliquer sur le bouton "Nouvelle initiative". Then they will have a wizard with multiple steps:
+
+=== 1.1 Choisissez le type d'initiative
+
+image:initiative_new_step1.png[Création de l'initiative : étape 1]
+
+=== 1.2 Ajouter un titre et une description
+
+image:initiative_new_step2.png[Création de l'initiative : étape 2]
+
+=== 1.3 [Optional] Comparaison de similarité
+
+Vérifie le reste des initiatives s'il y a d'autres initiatives similaires. S'il y en a, le système les affichera avant de continuer. C'est un moyen d'éviter les doublons.
+
+=== 1.4 Terminer
+
+image:initiative_new_step3.png[Création de l'initiative : étape 3]
+
+image:initiative_new_step4.png[Création de l'initiative : étape 4]
+
+=== Actions après sa création
+
+Après la création de l'initiative, un participant peut voir la page de l'initiative, mais jusqu'à ce que l'initiative soit examinée et acceptée par un administrateur, par le biais de la validation technique, elle ne sera pas publiée et visible pour tous les participants.
+
+image:initiative_show.png[Spectacle d'initiative]
+
+Dans la barre latérale un participant peut faire quelques actions : Modification, Impression et Envoi à la validation technique.
+
+image:initiative_actions.png[Actions d'initiative]
+
+==== Editer
+
+Après la création de l'initiative et avant qu'elle soit envoyée à la validation technique, **un auteur** peut modifier et corriger l'initiative s'il y a une erreur.
+
+image:initiative_edit.png[Édition de l'initiative]
+
+==== Imprimer
+
+Un auteur peut également imprimer l'initiative.
+
+image:initiative_print.png[Imprimer une initiative]
+
+==== Validation technique
+
+After the author has reviewed how the initiative will look, they can send it to technical validation.
+
+image:initiative_send_to_technical_validation.png[Envoyer l'initiative à la validation technique]
+
+== 2. Envoyer l'initiative à la validation technique
+
+Cette action est faite par **l'auteur**.
+
+Après avoir été examiné par l'auteur, il peut être envoyé à la "validation technique", mais cela dépend de la configuration du type d'initiative, si les options "Activer le comité de promotion" et "Minimum de membres du comité" sont configurées.
+
+=== Comité de promoteur
+
+Un type d'initiative peut éventuellement être soutenu par le comité de promoteur, avec un nombre minimum de membres du comité. Une fois que l'utilisateur a créé l'initiative et avant qu'elle puisse être envoyée pour validation technique, il doit inviter les membres du comité à la promouvoir.
+
+Lorsque l'utilisateur aura créé l'initiative, il recevra un lien à partager avec les membres éventuels du comité, ce qui ressemblera à `/initiatives/.../commissione_requests/new`
+
+Lorsqu'un membre potentiel d'un comité ouvre le lien, il peut cliquer sur un bouton qui lui permet de demander à faire partie du comité. L'auteur de l'initiative doit ensuite approuver chaque demande. L'auteur peut les approuver en cliquant sur le bouton "Modifier" de son initiative au bas du formulaire qu'il peut approuver ou rejeter les membres du comité.
+
+image:initiative_commitee_members_send_to_technical_false.png[Comité promoteur d'initiative: écran d'édition]
+
+L'initiative ne peut pas être envoyée à la validation technique tant qu'elle ne correspond pas au nombre minimum de membres du comité requis. Vous pouvez trouver le lien d'invitation dans le formulaire d'édition.
+
+image:initiative_edit_commitee_members.png[Comité promoteur d'initiative: écran d'édition]
+
+Partagez le lien d'invitation avec les personnes que vous aimeriez avoir au sein de votre comité.
+
+image:initiative_commitee_members_ask.png[Comité promoteur d'initiative: écran d'édition]
+
+Les personnes invitées avec le lien pourront lire l'initiative et demander à faire partie de la commission.
+
+image:initiative_commitee_members_sent.png[Comité promoteur d'initiative: écran d'édition]
+
+La demande est envoyée et l'auteur peut alors l'accepter ou le refuser dans le formulaire d'édition de l'initiative.
+
+image:initiative_commitee_members_approve.png[Comité promoteur de l'initiative : écran d'édition]
+
+image:initiative_commitee_members_send_to_technical_true.png[Comité promoteur d'initiative: écran d'édition]
+
+Une fois que suffisamment de personnes ont rejoint le comité promoteur, l'auteur de l'initiative peut l'envoyer pour
+validation technique.
+
+== 3. Publier une initiative
+
+Cette action est effectuée par **un administrateur**.
+
+Après que l'initiative a été envoyée à la validation technique par un participant, un administrateur peut voir toutes les initiatives dans le panneau d'administration et faire quelques corrections.
+
+image:initiative_admin_list.png[Liste d'initiatives d'administrateur]
+
+=== Actions
+
+Concernant les actions dans une initiative, un administrateur peut "Aperçu", "Modifier", "Réponse" ou "Imprimer" une initiative:
+
+image:initiative_admin_list_actions.png[Actions de la liste d'administration de l'initiative]
+
+|===
+|Icône |Nom |Définition
+
+|image:action_preview.png[Icône de prévisualisation]
+|Aperçu
+|Pour voir comment il est montré dans le frontend aux participants.
+
+|image:action_edit.png[Icône d'édition]
+|Editer
+|Modifier le formulaire d'initiative.
+
+|image:action_answer.png[Icône de réponse]
+|Répondre
+|Permet de répondre à une initiative.
+
+|image:action_print.png[Icône d'impression]
+|Imprimer
+|Permet d'imprimer.
+|===
+
+=== Fonctionnalités
+
+Une fois qu'une initiative a été créée, le composant Réunions et Page est activé par défaut par
+. The initiative author has no control over these - an admin will need to manage
+them. Tous les autres composants habituels peuvent également être ajoutés par un administrateur.
+
+image:initiative_admin_show.png[Page de présentation de l'initiative de l'administrateur]
+
+Il y a également d'autres caractéristiques au sein des initiatives, comme les pièces jointes et les Modérations pour les commentaires.
+
+image:initiative_admin_sidebar.png[Barre latérale de l'initiative de l'administrateur]
+
+=== Publier
+
+Après que l'initiative a été revue et techniquement approuvée par un administrateur, par exemple pour vérifier que ce que l'initiative demande est légale ou respecte la norme (c'est-à-dire sa compétence municipale), alors il peut être publié:
+
+image:initiative_admin_actions.png[Actions d'initiative d'administrateur]
+
+== 4. Signer une initiative
+
+Cette action est faite par **un participant**.
+
+Une fois l'initiative publiée, elle sera visible dans la page de liste des initiatives (/initiatives):
+
+image:initiative_list_published.png[Liste des initiatives après sa publication]
+
+image:initiative_admin_show_published.png[L'initiative de l'administrateur s'affiche après sa publication]
+image:initiative_show_published.png[L'initiative s'affiche après sa publication]
+
+Et les participants autorisés peuvent le signer :
+
+image:initiative_admin_show_published_detail.png[L'initiative de l'administrateur s'affiche après sa publication (détail)]
+
+image:initiative_show_signed.png[Initiative montrer après sa signature]
+
+== 5. Exporter les signatures
+
+Cette action est effectuée par **un administrateur**. Après que l'initiative ait commencé à obtenir des signatures, il y a une option pour exporter un PDF des signatures :
+
+image:initiative_actions_export.png[Actions d'initiative avec Export vers PDF]
+
+image:initiative_actions_export_pdf.png[Initiative exportée PDF]
+
+== 6. Répondre à une initiative
+
+Une fois que l'initiative a recueilli toutes les signatures, un administrateur peut y répondre. Une réponse d'initiative n'a pas de types différents.
+
+image:initiative_backend_answer.png[Réponse backend de l'initiative]
+
+image:initiative_frontend_answer.png[Réponse du frontend de l'initiative]
+
+== Statuts de l'initiative
+
+Pour mieux comprendre tout le statut, il s'agit d'un résumé :
+
+|===
+|Statut |Explication
+
+|Créé
+|L'initiative a été créée mais n'est pas encore publique pour chaque visiteur ou pour le reste des participants.
+
+|Validation technique
+|L'initiative doit être révisée par un administrateur. D'ici, il peut être "rejeté" ou "publié"
+
+|Expiré
+|L'initiative n'a pas été examinée par un administrateur et n'a pas été approuvée, et le délai maximum de validation est passé.
+
+|Abandonné
+|L'initiative a été examinée par un administrateur et a été rejetée, donc elle n'est pas publiée.
+
+|Publié
+|L'initiative a été examinée par un administrateur et a été approuvée, donc elle est publiée.
+
+|Rejeté
+|La période de rappel de la signature est terminée et il n'y avait pas assez de signatures.
+
+|Accepté
+|La période de rappel de la signature est terminée et il y a eu suffisamment de signatures.
+|===
+
+[plantuml]
+@startuml
+:Créé;
+:Validation technique;
+si (a dépassé le délai maximum de validation ?) puis (oui)
+  #rose:Expiré;
+  kill;
+elseif (validé?) then (no)
+  #rose:Discarded;
+  kill;
+else (oui)
+  #palegreen:Published;
+  if (assez de signatures ?) puis (non)
+    #rose:Rejeté
+    (pas assez de signatures);
+    kill;
+  sinon
+    #palegreen :Accepté
+    (assez de signatures);
+    arrêt ;
+  endif;
+endif
+@enduml
+
+Enfin, ce sont tous les paramètres pertinents à chaque instant dans les initiatives cicatrices de vie :
+
+[plantuml]
+@startuml
+(*) --> "Créer une nouvelle initiative"
+si "A un seul type? alors
+--> [Yes] "Remplir le formulaire d'initiative"
+else
+--> [No] "Sélectionner le type d'initiative"
+--> "Remplir le formulaire d'initiative"
+Endif
+partition Créée {
+  si "L'utilisateur est-il un groupe d'utilisateurs ? alors
+  --> [Yes] "Envoyer à la validation technique"
+  else
+  --> [No] Collecter le nombre minimum de membres du comité (2 par défaut)
+  --> "Envoyer à la validation technique"
+  Endif
+}
+partition Validation {
+  si "Est passé le délai maximum pour la validation (60 jours par défaut) ? alors
+    --> [Yes] "Expiré"
+  else
+    --> [No] si "Est accepté par un administrateur? alors
+      --> [No] "Discarted"
+      else
+      --> [Yes] "Publish"
+      endIf
+  endIf
+}
+partition Publiée {
+  --> "Processus de signature"
+  si "A passé la fenêtre de temps configurée pour la validation (60 jours par défaut)?"
+    --> [Yes] "Expiré"
+  else
+    --> [No] Exporter le PDF vers les signatures
+    --> Vérifier les signatures avec les signatures hors ligne pour les doublons (si l'initiative les possède)
+    --> si "L'initiative a-t-elle obtenu le nombre de signatures requises ? puis
+      --> [No] Rejeté
+    else
+      --> [Yes] Accepté
+    endIf
+  endIf
+}
+--> (*)
+@enduml

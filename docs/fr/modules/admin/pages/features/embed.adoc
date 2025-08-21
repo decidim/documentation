@@ -1,0 +1,23 @@
+= Intégrer
+
+Parfois, vous voulez intégrer du contenu à une page externe. Pour cela, vous pouvez utiliser la fonctionnalité `Embed`.
+
+image:features/embed/example.png[Une carte de proposition intégrée dans une autre page]
+
+== Comment intégrer
+
+. Naviguez vers le contenu que vous souhaitez intégrer.
+. Cliquez sur le lien `Embed` dans la barre latérale. image:features/embed/link.png[]
+image:features/embed/sidebar.png[]
+. Copiez le code de la modale.
+image:features/embed/modal.png[]
+. Collez ce code dans la page externe où vous voulez l'intégrer. The CMS or platform that you're using needs to supports
+changing HTML code.
+
+Un exemple de ce code est :
+
+[source,html]
+----
+<script src="https://meta.decidim.org/processes/roadmap/f/122/proposals/16243/embed.js"></script>
+<noscript><iframe src="https://meta.decidim.org/processes/roadmap/f/122/proposals/16243/embed.html" frameborder="0" scrolling="vertical"></iframe></noscript>
+----

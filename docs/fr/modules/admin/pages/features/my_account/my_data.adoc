@@ -1,0 +1,29 @@
+= Mes données
+
+Dans cette section, les participants peuvent demander un fichier contenant toutes les données qu'ils ont fournies à la plate-forme.
+
+image:features/my_account/my_data.png[Mes données]
+
+Pour demander les données :
+
+. Se connecter en tant que participant
+. Cliquez dans le nom du participant dans l'en-tête
+. Cliquez dans "Mon compte"
+. Cliquez sur "Mes données" dans la barre latérale
+. Cliquer dans "Données de requête"
+. Attendez quelques minutes pour que les fichiers soient générés. Cela peut dépendre du nombre de propositions, de commentaires, etc. que vous avez fait
+. Accédez à votre compte de messagerie et trouvez l'e-mail reçu
+. Cliquez dans "Télécharger"
+. Ouvrir avec un logiciel zip de support
+. Entrez le mot de passe que vous avez reçu dans l'e-mail
+. Décompresser ou extraire le contenu
+
+image:features/my_account/my_data_email.png[Mes données]
+
+== Applications Zip
+
+Pour ouvrir le fichier zip, le logiciel que vous utilisez doit supporter le chiffrement avec l'algorithme AES-256. Selon votre système d'exploitation, vous avez plusieurs alternatives.
+
+* Windows: https://www.7-zip.org/[7-Zip]
+* Mac: https://www.keka.io[Keka]
+* GNU/Linux : Rouleau de fichiers (disponible via votre gestionnaire de paquets) ou https://peazip.github.io/[PeaZip]

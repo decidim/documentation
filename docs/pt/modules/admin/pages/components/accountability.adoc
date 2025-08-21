@@ -1,10 +1,10 @@
-= Accountability
+= Responsabilidade
 
-The Accountability component allows people to follow project implementations. It works like a project management system built into the platform. It offers the following features:
+O componente de Responsabilidade permite que as pessoas sigam as implementações do projeto. Ele funciona como um sistema de gerenciamento de projetos integrado na plataforma. Ele oferece os seguintes recursos:
 
-* creating results that represent projects to be implemented
-* subdividing results into projects or sub-projects
-* defining and applying progress in implementation statuses (0% to 100% implemented) around their implementation
-* displaying the extent of the results’ implementation grouped by categories and scopes
+* criando resultados que representam os projetos a serem implementados
+* subdividindo resultados em projetos ou subprojetos
+* definir e aplicar o progresso em status de implementação (0% a 100% implementado) em torno da sua implementação
+* exibindo a extensão da implementação dos resultados agrupada por categorias e escopos
 
 Results, projects and statuses can be updated through a CVS, or manually by the administration interface.

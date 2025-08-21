@@ -1,105 +1,105 @@
-= Scopes
+= Ámbitos
 
-Scopes are the set of territories or subjects that an Organization has. A scope may have child scopes.
+Los alcances son el conjunto de territorios o sujetos que tiene una Organización. Un ámbito puede tener alcance infantil.
 
-For instance, in the case of the city of Barcelona the scopes are its districts, and the children of a district are its neighborhoods. They can also have types, so it can be configured, for example, by thematic and also territorial scopes.
+Por ejemplo, en el caso de la ciudad de Barcelona los alcances son sus barrios, y los niños de un distrito son sus vecinos. También pueden tener tipos, por lo que puede ser configurado, por ejemplo, por ámbitos temáticos y también territoriales.
 
-Most of the components and spaces in Decidim allow you to configure Scopes in one way or another. There are mainly three ways of using Scopes:
+La mayoría de los componentes y espacios en Decidim le permiten configurar Scopes de una manera u otra. Existen principalmente tres formas de usar Scopes:
 
-To configure Scope on the Decidim platform, go to menu:Settings[Scopes] in the admin sidebar menu. A list will appear with the existing scopes if there are any:
+Para configurar Scope en la plataforma Decidim, vaya al menú:Configuración[Scopes] en el menú lateral de administración. Aparecerá una lista con los ámbitos existentes si los hay:
 
-image:scopes_list.png[Scopes list]
+image:scopes_list.png[Lista de Scopes]
 
-If you need so, you need to first configure the Scope type.
+Si lo necesita, primero necesita configurar el tipo de alcance.
 
-== Form
+== Forma
 
-image:scopes_types_new_form.png[New scope type form]
+image:scopes_types_new_form.png[Nuevo campo tipo form]
 
 
-.Admin New Scope Type form
+.Admin Nuevo Tipo de Alcance
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
 |Singular
-|Required
-|Name of the scope type in singular.
+|Requerido
+|Nombre del tipo de ámbito en singular.
 
 |Plural
-|Required
-|Name of the scope type in plural.
+|Requerido
+|Nombre del tipo de ámbito en plural.
 |===
 
-image:scopes_new_form.png[New scope form]
+image:scopes_new_form.png[Nuevo formulario de ámbito]
 
 
-.Admin New Scope Form
+.Formulario Admin Nuevo Alcance
 |===
-|Field |Type |Description
+|Campo |Tipo |Descripción
 
-|Name
-|Required
-|Name of the scope.
+|Nombre
+|Requerido
+|Nombre del ámbito.
 
-|Code
-|Required
-|(Internal) name of the scope.
+|Código
+|Requerido
+|(Internacional) nombre del ámbito.
 
-|Scope type
-|Required
-|Which type of scope it's.
-|===
-
-== Actions
-
-You have 3 possible actions in this list after a Scope is created:
-
-|===
-|Icon |Name |Definition
-
-|image:action_browse.png[Browse icon]
-|Browse
-|See and configure the children scopes for this Scope.
-
-|image:action_edit.png[Edit icon]
-|Edit
-|Edit form for a Scope. It's the same form as "Create a new scope".
-
-|image:action_delete.png[Delete icon]
-|Delete
-|To delete this scope.
+|Tipo de ámbito
+|Requerido
+|Qué tipo de alcance tiene.
 |===
 
-== Features
+== Acciones
 
-The main features related with scopes are:
+Tienes 3 posibles acciones en esta lista después de crear un ámbito de aplicación:
 
-. Filtering
-. User interests and Newsletters
+|===
+|Icono |Nombre |Definición
 
-=== Filtering
+|image:action_browse.png[Buscar icono]
+|Navegar
+|Ver y configurar los ámbitos secundarios para este ámbito.
 
-For filtering. Most of the spaces and components allows an administrator or a participant to associate them to a scope. This allows to filter by scopes when exploring them.
+|image:action_edit.png[Editar icono]
+|Editar
+|Editar formulario para un ámbito. Es la misma forma que "Crear un nuevo ámbito".
 
-image:scopes_filter_initiatives.png[Initiatives scopes filtering]
+|image:action_delete.png[Borrar icono]
+|Eliminar
+|Para eliminar este ámbito.
+|===
 
-image:scopes_filter_processes.png[Processes scopes filtering]
+== Características
 
-Some examples:
+Las principales características relacionadas con el ámbito son:
 
-* With Accountability module, so it's possible to filter Results
-* Assemblies and Processes can have Scopes. It's used for filtering multiple assemblies in the main listing page (/assemblies or /processes). These can be hidden by unchecking the "Enable participatory space filters" in the xref:admin:configuration.adoc[admin's configuration page].
-* Filtering in the sidebar is possible in Budgets Projects, Initiatives and Proposals. In some of these components you can control if these filters are shown with the "Scopes enabled" checkbox in the component settings. This will also enable or disable the scope selector in the resource creation form.
+. Filtrando
+. Intereses de usuario y boletines
 
-You can also configure a participatory space so the filtering will only concern one scope and its children scopes. For example, let's imagine your organization have 3 different scopes for 3 cities, each of them having children scopes for the cities neighbourhoods.
-On a participatory space which concerns only one of the cities, you will be able to select only this scope and its children so that users do not see the scopes of other cities in the filter options.
+=== Filtrando
 
-=== User interests and Newsletters
+Para filtrar. La mayoría de los espacios y componentes permiten a un administrador o a un participante asociarlos a un ámbito. Esto permite filtrar por ámbitos cuando se exploran.
 
-A Participant can choose which Scopes she wants to follow in its account.
+image:scopes_filter_initiatives.png[Filtrado de ámbitos iniciales]
 
-image:account_my_interests.png[Account: my interests]
+image:scopes_filter_processes.png[Filtrado de ámbitos de proceso]
 
-This is used by the xref:admin:newsletters.adoc[Newsletters], in the "Select recipients to deliver" step, "Filter for users having activated any selected scope in their account's My Interests settings." section.
+Algunos ejemplos:
 
-image:newsletter_select_recipients.png[Newsletter: select recipients]
+* Con el módulo de contabilidad, por lo que es posible filtrar los resultados
+* Las Colmenas y los Procesos pueden tener Escaparates. Se utiliza para filtrar múltiples ensamblajes en la página principal de la lista (/assemblblies o /processes). Estos pueden ocultarse desmarcando los "filtros de espacio participativo" en la página de configuración de xref:admin:configuration.adoc[admin].
+* El filtrado en la barra lateral es posible en Proyectos de Presupuestos, Iniciativas y Propuestas. En algunos de estos componentes puede controlar si estos filtros se muestran con la casilla de verificación "Ámbitos habilitados" en la configuración del componente. Esto también activará o desactivará el selector de ámbito en el formulario de creación de recursos.
+
+También puede configurar un espacio participativo de modo que el filtrado sólo afectará a un ámbito de acción y a sus ámbitos de aplicación infantil. Por ejemplo, imaginemos que su organización tiene 3 ámbitos diferentes para 3 ciudades, cada una de ellas con alcance infantil para los barrios de las ciudades.
+En un espacio participativo que concierne solamente a una de las ciudades, sólo podrá seleccionar este ámbito y sus hijos para que los usuarios no vean el alcance de otras ciudades en las opciones de filtro.
+
+=== Intereses de usuario y boletines
+
+Un participante puede elegir qué ámbitos quieren seguir en su cuenta.
+
+image:account_my_interests.png[Cuenta: mis intereses]
+
+Esto es usado por xref:admin:newsletters. doc[Newsletters], en el paso "Seleccionar destinatarios para entregar", "Filtrar para los usuarios que hayan activado cualquier ámbito seleccionado en la configuración de Mis intereses de su cuenta".
+
+imagen:newsletter_select_recipients.png[Newsletter: select recipients]

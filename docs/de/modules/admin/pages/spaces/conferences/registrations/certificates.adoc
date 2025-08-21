@@ -1,0 +1,39 @@
+= Anwesenheitsbescheinigungen
+
+Administratoren können Teilnahmebescheinigungen an Teilnehmer erstellen.
+
+image:spaces/conferences/certificates_of_attendance.png[Konferenz-Anwesenheitszertifikat (backend)]
+
+
+.Anwesenheitszertifikat
+|===
+|Feld |Typ |Beschreibung
+
+|Hauptlogo
+|Benötigt
+|Logo der Konferenz der Organisation, die die Anwesenheitsbescheinigung.
+
+|Signatur
+|Benötigt
+|Bild der Person, die das Zertifikat signiert.
+
+|Signaturdatum
+|Benötigt
+|Datum der Unterschrift. Erwartetes Format: dd/mm/yyy
+
+|Signaturname
+|Benötigt
+|Name der Person, die das Zertifikat signiert.
+|===
+
+Nachdem das Formular ausgefüllt ist, gibt es einen Button zum Senden von Anwesenheitszertifikaten an alle bestätigten xref:admin:spaces/conferences/registrations/users.adoc[registrations] der Konferenz.
+
+image:spaces/conferences/certificates_of_attendance_button.png[Conferences Certificate of attendance send button]
+
+Sobald es gesendet wurde, kann es nicht erneut gesendet werden.
+
+image:spaces/conferences/certificates_of_attendance_button_disabled.png[Conferences Certificate of attentendance send disabled button]
+
+Die Anwesenheitsbescheinigungen werden den Teilnehmern per E-Mail im PDF-Format zugesandt.
+
+image:spaces/conferences/certificates_of_attendance_pdf.png[Conferences Certificate of attendance (frontend)]

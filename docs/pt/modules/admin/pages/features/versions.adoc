@@ -1,24 +1,24 @@
-= Versions
+= Versões
 
-The versions feature allows a visitor to see the evolution of the different versions of resources that can be edited,
-like proposals or results.
+O recurso de versões permite que um visitante veja a evolução das diferentes versões de recursos que podem ser editadas,
+como propostas ou resultados.
 
-With versions it's possible to see who made the change, when the change has been made and exactly what has changed.
+Com as versões é possível ver quem fez a mudança, quando a mudança foi feita e exatamente o que mudou.
 
-image:features/versions/side_by_side_escaped.png[Versions in resources]
+imagem:features/versions/side_by_side_escaped.png[Versões nos recursos]
 
-== See the versions
+== Veja as versões
 
-. Go to the content that you want to see the version of.
-. Click in the "see other versions" link in the sidebar
-image:features/versions/sidebar.png[See other versions link in sidebar]
-. Click in the past version that you want to see
-image:features/versions/list.png[List of versions]
-. From there you can change the visualiation of the version differences
-image:features/versions/unified_unescaped.png[Unified unescaped view]
+. Vá para o conteúdo que você deseja ver a versão de.
+. Clique no link "Ver outras versões" na barra lateral
+image:features/versions/sidebar.png[Ver outras versões link na barra lateral]
+. Clique na versão anterior que você quer ver
+imagem:features/versions/list.png[Lista de versões]
+. A partir daí, você pode alterar a visualização das diferenças de versão
+image:features/versions/unified_unescaped.png[Visão unificada sem escapar]
 
-It's possible to view the diffs of the versions in in two formats: side by side or unified. In case that the contents are
-in HTML then it's also possible to see the diff unescaped and escaped, and see the full HTML code.
+É possível ver os diffs das versões em dois formatos: lado a lado ou unificado. Caso o conteúdo seja
+em HTML então também é possível ver o diff sem escapar e escapar, e veja o código HTML completo.
 
-image:features/versions/side_by_side_unescaped.png[Side by side unescaped view]
-image:features/versions/unified_escaped.png[Unified escaped view]
+image:features/versions/side_by_side_unescaped.png[Lado a lado sem escapar]
+image:features/versions/unified_escaped.png[Visão unificada escapada]

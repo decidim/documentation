@@ -1,0 +1,52 @@
+= Komponenten
+
+partielle$components_list.adoc[]
+
+Um Komponenten zu konfigurieren, klicken Sie auf *Komponenten* im Untermenü Leerzeichen. Eine Liste wird angezeigt, die die Komponenten
+anzeigt, die bereits für den Raum konfiguriert wurden.
+
+image::spaces/components.png[Components of space]
+
+Neue Komponente konfigurieren, Klicken Sie auf *Komponente hinzufügen* oben rechts auf dem Bildschirm und wählen Sie den Typ der
+Komponente, die Sie konfigurieren möchten, aus dem Dropdown-Menü.
+
+image::spaces/components_new_dropdown.png[Add a component in a space]
+
+== Aktionen
+
+|===
+|Icon |Name |Definition
+
+|image:action_manage.png[Symbol verwalten]
+|Verwalten
+|Um alle Ressourcen innerhalb einer Komponente zu verwalten. Zum Beispiel alle Vorschläge einer Vorschlagskomponente, die Meetings
+in einer Meeting Komponente, etc.
+
+|image:action_publish.png[Icon veröffentlichen]
+|Veröffentlichen
+|Eine Komponente veröffentlichen. Das bedeutet, dass die Komponente für die Öffentlichkeit sichtbar ist.
+
+|image:action_unpublish.png[Icon zurückziehen]
+|Zurückziehen
+|Um eine Komponente zurückzuziehen. Das bedeutet, dass die Komponente für die Öffentlichkeit unsichtbar ist.
+
+|image:action_configure.png[Icon konfigurieren]
+|Konfigurieren
+|Eine Komponente mit den spezifischen Regeln konfigurieren. Abhängig vom Komponententyp. Zum Beispiel im Falle von Meetings:
+sind Kommentare aktiviert, Teilnehmer können Meetings erstellen usw.
+
+|image:action_permissions.png[Berechtigungs-Symbol]
+|Berechtigungen
+|Um zu konfigurieren, welche xref:customize:authorizations.adoc[Authorization] benötigt wird, um bestimmte Aktionen in
+dieser Komponente durchzuführen. Zum Beispiel, im Falle von Vorschlägen, welche Überprüfung notwendig ist, um einen neuen Vorschlag zu erstellen oder
+, um Unterstützung zu geben.
+
+|image:action_share.png[Symbol teilen]
+|Teilen
+|Privat teilen, bevor diese Komponente veröffentlicht wird. Nützlich für die Überprüfung mit anderen Personen innerhalb Ihrer Organisation.
+
+|image:action_delete.png[Icon löschen
+|Löschen
+|Diese Komponente löschen. Wenn es Inhalte gibt, können Sie die meisten Komponenten nicht löschen, so dass die Beziehungen von
+zu anderen Ressourcen nicht unterbrochen werden. In diesen Fällen ist es empfehlenswert, die Komponente einfach zurückzuziehen.
+|===

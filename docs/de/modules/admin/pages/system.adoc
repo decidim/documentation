@@ -1,0 +1,106 @@
+= System
+
+Jeder Decidim ist standardmäßig mehrere Mieter. Das bedeutet, dass Sie mehrere Organisationen innerhalb derselben Installation haben können. Dies wird zum Beispiel für die Regierungen der Provinzen Barcelona und Girona genutzt, um vielen kleinen Städten Decidim-Anlagen anzubieten. oder von der Stadt Barcelona, um vielen Organisationen (NGOs, Genossenschaften, etc).
+
+Auch wenn Sie nur eine Organisation haben, müssen Sie eine über das System-Panel erstellen. Es ist verfügbar, nachdem Sie Decidim installiert haben, unter `/system`. Wenn zum Beispiel die Domain `example.org` ist, dann sollte sie unter `http://example.org/system` verfügbar sein.
+
+Nachdem Sie Decidim frisch installiert haben, werden Sie zur Anmeldeseite des System-Panels weitergeleitet:
+
+image::system-log_in.png[system panel log in]
+
+== 1. Administratorkonto erstellen
+
+Um sich in dieses Dashboard einzuloggen, müssen Sie ein System-Admin-Konto von Ihrem Terminal aus erstellen:
+
+[source, console]
+....
+bin/rails decidim_system:create_admin
+....
+
+Sie werden nach einer E-Mail und einem Passwort gefragt. Aus Sicherheitsgründen wird das Passwort nicht wieder bei Ihnen angezeigt und Sie müssen es bestätigen.
+
+== 2. Zugriff auf das Dashboard
+
+Mit der E-Mail und dem Passwort, die Sie im letzten Schritt hinzugefügt haben, können Sie sich anmelden. Nachdem Sie sich angemeldet haben, sehen Sie ein leeres Dashboard:
+
+image::system-dashboard.png[system empty dashboard]
+
+== 3. Neue Organisation erstellen
+
+Innerhalb des System-Panels müssen Sie Ihre Organisation mithilfe des Formulars erstellen:
+
+TIP: Bitte beachten Sie, dass einige dieser Felder nicht über das Systemformular geändert werden können, da das Ändern dieser Felder möglicherweise Ihre Datenbank in einem beschädigten Zustand verlassen könnte. Sie können es über die Konsole wechseln, aber Sie sind auf eigene Faust.
+
+
+.System-Neues Organisationsformular
+|===
+|Feld |Typ |Beschreibung
+
+|Name
+|Benötigt
+|Name Ihrer Organisation. Zum Beispiel "Decidim Barcelona".
+
+|Referenzpräfix
+|Benötigt
+|Das Referenzpräfix dient zur eindeutigen Identifizierung von Ressourcen in allen Organisationen. Es ist für die Identifizierung verschiedener Ressourcen innerhalb von Decidim. Zum Beispiel "BCN". Sie können über xref:configure:initializer.adoc[Decidim's Initializer] ändern (siehe **Benutzerdefinierte Ressourcenreferenz**).
+
+|Host
+|Benötigt
+|Vollqualifizierter Domain-Name. Zum Beispiel "example.org" oder "decidim.barcelona".
+
+|Sekundäre Hosts
+|Optional
+|Andere Domains oder Subdomains, die auf dieselbe Installation verweisen. Normalerweise sollte dies nicht verwendet werden. Geben Sie jedes einzelne in eine neue Zeile ein. Zum Beispiel "beispiel.com"
+
+|Organisations-Administratorname
+|Benötigt
+|Name des Admin-Kontos. Zum Beispiel "Admin"
+
+|Organisations-Admin-E-Mail
+|Benötigt
+|E-Mail für das Admin-Konto. Zum Beispiel "admin@example.org"
+
+|Lokale Organisation
+|Benötigt
+|Sie müssen mindestens eine Sprache konfigurieren. Decidim ist mehrsprachig, was bedeutet, dass Sie die meisten Admininhalte mit beliebiger Anzahl von Sprachen haben können. Um andere Sprachen zu sehen, müssen Sie zuerst den xref:configure:initializer.adoc[Decidim's Initializer] konfigurieren.
+
+|Authentifizierung erzwingen
+|Optional
+|Markieren, wenn Sie **Benutzer zur Authentifizierung zwingen wollen, bevor Sie auf Organisation zugreifen**. Das bedeutet, dass sie keine veröffentlichten Inhalte sehen und nur Zugriff auf das Anmeldeformular haben.
+
+|Benutzer Registrierungsmodus
+|Optional
+|Legen Sie fest, wie der Login / die Teilnehmerregistrierung oder die Anmeldung funktionieren soll. Siehe unten.
+
+|Verfügbare Berechtigungen
+|Optional
+|Wie Sie autorisieren und verifizieren wollen, dass Ihre Teilnehmer sind, wer sie sind. Es hängt viel von Ihrer Organisation, Ihrem Land usw. ab. Siehe xref:customize:authorizations.adoc[Authorizations customization].
+
+|SMTP Einstellungen
+|Optional
+|Erlaubt Ihnen, verschiedene SMTP-Server für jede Organisation in dieser Installation zu konfigurieren. Siehe xref:services:smtp.adoc[SMTP Konfiguration].
+
+|Omniauth Einstellungen
+|Optional
+|Ermöglicht Ihnen die Konfiguration über externe OAUTH-Anbieter für jede Organisation in dieser Installation. Siehe xref:services:social_providers.adoc[Konfiguration sozialer Anbieter].
+|===
+
+=== Benutzer Registrierungsmodus
+
+==== Teilnehmern erlauben, sich zu registrieren und einzuloggen
+
+Die meisten Installationen verwenden diese Einstellung. Bedeutet dass jeder ein Teilnehmerkonto registrieren und sich ohne Einschränkungen anmelden kann nur mit einer Bestätigung des E-Mail-Kontos (und Sie können diese Bestätigung auch deaktivieren, wenn Sie über xref:configure:initializer möchten. doc[Decidim's Initializer])
+
+==== Teilnehmer dürfen sich nicht registrieren, aber bestehenden Teilnehmern erlauben, sich einzuloggen
+
+Dies gilt für den manuellen Import von Teilnehmerkonten.
+
+==== Zugriff nur mit externen Konten möglich
+
+Falls Sie einen externen Provider konfiguriert haben (wie die `Omniauth Einstellungen`) und nur von diesem Provider Konten haben möchten.
+
+== [Optional] 4. Organisation bearbeiten
+
+Schließlich können Sie auch eine Organisation bearbeiten, obwohl einige Felder nicht geändert werden können, da einige Inhalte in der Datenbank davon abhängen.
+
+Um auf Ihre neu erstellte Organisation zuzugreifen, können Sie dies zu der Domain oder Subdomain tun, die Sie in `Host` konfiguriert haben.

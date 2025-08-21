@@ -1,0 +1,33 @@
+= Gemeldete Benutzer
+
+Es gibt Fälle, in denen die Teilnehmer gegen die Nutzungsbedingungen der
+-Plattform verstoßen könnten so ist es nützlich, die Möglichkeit zu haben, Benutzer zu melden und zu blockieren. Sie
+können mehr darüber lesen, wie Moderation und Berichterstattung von Inhalten in xref:global_moderations.adoc[Globale Moderationen] funktionieren.
+
+Ein Teilnehmer kann von der xref:participants/participants.adoc[participants
+Sektion im Admin-Panel] oder durch diesen Abschnitt "Gemeldete Benutzer" geblockt werden.
+
+Jeder kann eine Moderation in Decidim durch das Symbol "Flag" im Profil des Teilnehmers
+vorschlagen. Nachdem ein Teilnehmer diese Aktion angeklickt hat, muss er einen
+Grund angeben, warum er diesen Bericht erstellt:
+
+* Enthält Clickbait, Werbung, Betrug oder Script-Bots.
+* Enthält Rassismus, Sexismus, Unruhen, persönliche Angriffe, Todesdrohungen, Suizide fordert
+oder jede Form von Hasssprache.
+* Enthält illegale Aktivitäten, Selbstmord-Bedrohungen, persönliche Informationen oder etwas
+, das deiner Meinung nach nicht auf Demo gehört.
+* Andere (und hinzufügen)
+
+image:reported_participant_modal.png[Grund für die Meldung eines Teilnehmers angeben]
+image:reported_participant_flag.png[Flagge im Profil der Seitenleiste]
+
+Nachdem Sie auf diese Option klicken, müssen Sie eine Begründung angeben, warum Sie
+diesen Teilnehmer blockieren:
+
+image:participants_block_user_justification.png[Blockierte Benutzeraktion]
+
+Sobald ein blockierter Teilnehmer versucht, sich anzumelden, wird eine Fehlermeldung angezeigt:
+
+image:participants_block_user_alert.png[Nachricht für blockierten Benutzer]
+
+Nachdem ein Teilnehmer gesperrt wurde, wird sein Name in "Blockierter Benutzer" geändert.

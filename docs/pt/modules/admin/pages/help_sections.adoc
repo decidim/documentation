@@ -1,23 +1,23 @@
-= Help sections
+= Seções de ajuda
 
-The first time a visitor goes to any Space page she'll see an information box about what's this Space about.
+Na primeira vez que um visitante vai a qualquer página de espaço, ele verá uma caixa de informações sobre o que é esse espaço.
 
-This is how the information box is shown to participants and visitors:
+É assim que a caixa de informações é mostrada aos participantes e visitantes:
 
-image:help_sections_frontend.png[Help sections: frontend]
+image:help_sections_frontend.png[Seções de ajuda: frontend]
 
-They can hide this box by clicking in the close button [X]. This gets remembered by the application. They can open this box again by clicking in [Help: ?].
+Eles podem esconder essa caixa clicando no botão fechar [X]. Isso é lembrado pelo aplicativo. Eles podem abrir esta caixa novamente clicando na [Ajuda: ?].
 
-image:help_sections_frontend_hide.png[Help sections: hide]
+image:help_sections_frontend_hide.png[Seções de ajuda: esconder]
 
-As this is something that depends on your given installation, an administrator can customize these *Help sections*, adapting them to your needs.
+Como isso depende da sua instalação, um administrador pode personalizar essas *seções de ajuda*, adaptando-as às suas necessidades.
 
-image:help_sections_backend.png[Help sections: backend]
+imag:help_sections_backend.png[Seção de ajuda: backend]
 
-== Disable
+== Desligado
 
-You can disable these information boxes by leaving the contents all empty for every language:
+Você pode desativar essas caixas de informações deixando o conteúdo vazio para cada idioma:
 
-image:help_sections_disable_backend.png[Disable help section in admin]
+image:help_sections_disable_backend.png[Desativar seção de ajuda no admin]
 
-image:help_sections_disable_frontend.png[Disabled help section]
+image:help_sections_disable_frontend.png[Seção de ajuda desativada]

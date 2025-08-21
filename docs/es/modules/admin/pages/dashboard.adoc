@@ -1,23 +1,23 @@
-= Dashboard
+= Tablero
 
-For your first time accessing to a Decidim plaform as Admin, you'll receive an invitation email so you can finish setting up your account with your nickname, name and password.
+Por primera vez accediendo a una plaforma de Decidim como administrador, recibirás un correo electrónico de invitación para que puedas terminar de configurar tu cuenta con tu apodo, nombre y contraseña.
 
-Once you've finished and you're logged-in, you'll be able to access the Admin panel, starting with the Dashboard page. For this you'll need to click on your username, and click on "Admin dashboard".
+Una vez que hayas terminado y hayas iniciado sesión, podrás acceder al panel de Administración, comenzando por la página de Panel de Control. Para ello tendrás que hacer clic en tu nombre de usuario y hacer clic en "Panel de control de administración".
 
 image::admin_dashboard_menu.png[Decidim Admin Dashboard in user menu]
 
-Here, you'll have a summary of the last activity of the platform.
+Aquí tendrás un resumen de la última actividad de la plataforma.
 
 image::admin_dashboard.png[Decidim Admin Dashboard]
 
-You'll have three blocks:
+Tendrás tres bloques:
 
-1. Activity: participants and admins that had logged in in last month, last week and last day.
-1. Metrics: the graphics for the evolution of multiple things inside of Decidim:
-* Participants
-* Proposals
-* Comments
-* Meetings
-* Accepted proposals
-* Results
-1. Admin log: last actions made by Administrator users in the platform.
+1. Actividad: participantes y administradores que se habían conectado el mes pasado, la semana pasada y el último día.
+1. Métricas: los gráficos para la evolución de múltiples cosas dentro de Decidim:
+* Participantes
+* Propuestas
+* Comentarios
+* Reuniones
+* Propuestas aceptadas
+* Resultados
+1. Registro de administradores: Últimas acciones realizadas por los usuarios del administrador en la plataforma.

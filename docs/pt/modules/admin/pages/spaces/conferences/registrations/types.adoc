@@ -1,56 +1,56 @@
-= Registration types
+= Tipos de registro
 
 You can enable registrations in conferences, so it's easier to register to the whole conference, or by days, rather than
 going meeting by meeting to enable registration for that particular event.
 
-After enabling registrations participants will have a button to register to the conference in the landing and the conference's header.
+Depois de permitir inscrições, os participantes terão um botão para se inscrever na conferência no destino e no cabeçalho da conferência.
 
-image:spaces/conferences/registration_landing01.png[Registration button on landing page]
+imagem:spaces/conferências/registration_landing01.png[Botão de registro na página inicial]
 
-image:spaces/conferences/registration_landing02.png[Registration button on landing page]
+imagem:spaces/conferências/registration_landing02.png[Botão de registro na página inicial]
 
-If you want to enable registration you'll need to define and publish at least one registration type.
+Se quiser habilitar o registro, será necessário definir e publicar pelo menos um tipo de registro.
 
-image:spaces/conferences/registration_types_frontend_wo_user.png[Select registration type without a user account]
+imagem:espaçaces/conferências/registration_types_frontend_wo_user.png[Selecione o tipo de registro sem uma conta de usuário]
 
-== Create a new registration type
+== Criar um novo tipo de registro
 
-For adding a new registration type, you need to:
+Para adicionar um novo tipo de registro, você precisa:
 
-. Sign in as administrator
-. Go to the conferences section in the sidebar
-. Click on the conference Edit action
-. Click on the "Registration types" link in the sidebar
-. Click on the "New Registration type" button
-. Fill the form
-. Publish the registration type
+. Entrar como administrador
+. Ir para a seção de conferências na barra lateral
+. Clique na ação Editar da conferência
+. Clique no link "Tipos de registro" na barra lateral
+. Clique no botão "Novo tipo de registro"
+. Preencha o formulário
+. Publicar o tipo de registro
 
-image:spaces/conferences/new_registration_type.png[Create a new registration type form]
+image:spaces/conferences/new_registration_type.png[Crie um novo formulário de tipo de registro]
 
-image:spaces/conferences/registration_types_backend.png[Manage registration types]
+imagem:spaces/conferências/registration_types_backend.png[Gerenciar tipos de registro]
 
 
-.Create a new registration type
+.Criar um novo tipo de registro
 |===
-|Field |Type |Description
+|Campo |tipo |Descrição:
 
-|Title
-|Required
-|What is the title of this registration type.
+|Título
+|Obrigatório
+|Qual é o título deste tipo de registro.
 
-|Weight
-|Which order will it have in relation to the other types. Having a lower number means a higher priority. For instance, if you have two types, "Day 1" with weight "10" and "Day 2" with weight "0", then "Day 2" will be first when ordering.
-|Description
+|Peso
+|Qual será a ordem que terá em relação aos outros tipos. Ter um número menor significa uma prioridade mais alta. Por exemplo, se você tem dois tipos, "Dia 1" com peso "10" e "Dia 2" com peso "0", em seguida "Dia 2" será o primeiro na ordenação.
+|Descrição:
 
-|Required
-|Description for this registration type
-|Price
+|Obrigatório
+|Descrição para este tipo de registro
+|Quantidade
 
-|Optional
-|Define a price for this registration type. If you don't define a price, the price will be "Free".
-|Select conference meetings
+|Opcional
+|Defina um preço para este tipo de registro. Se você não definir um preço, o preço será "Gratuito".
+|Selecionar reuniões de conferência
 |===
 
 If the participant is already logged in then she'll see her username and email in the registration page.
 
-image:spaces/conferences/registration_types_frontend_w_user.png[Select registration type with user account]
+image:spaces/conferências/cadastro_types_frontend_w_user.png[Selecionar tipo de registro com conta de usuário]

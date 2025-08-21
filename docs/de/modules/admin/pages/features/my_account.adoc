@@ -1,0 +1,19 @@
+= Mein Konto
+
+Mein Konto ist alle Seiten, auf denen ein Teilnehmer seine persönlichen Daten ändern kann, die in seinem xref:admin:features/my_public_profile angezeigt werden. doc[Mein öffentliches Profil] Seite, ändern Sie ihre Benachrichtigungseinstellungen, sehen Sie, zu welchen Gruppen sie gehören, usw.
+
+Um zu diesem Abschnitt zu gehen:
+
+. Als Teilnehmer anmelden
+. Klicken Sie im Namen des Teilnehmers in der Kopfzeile
+. Klicken Sie in "Mein Konto"
+
+Die Maßnahmen, die sie tun können:
+
+* xref:admin:features/my_account/account.adoc[Account]
+* xref:admin:features/my_account/notifications_settings.adoc[Benachrichtigungseinstellungen]
+* xref:admin:features/my_account/authorizations.adoc[Authorizations]
+* xref:admin:features/my_account/groups.adoc[Groups]
+* xref:admin:features/my_account/my_interests.adoc[Meine Interessen]
+* xref:admin:features/my_account/my_data.adoc[Meine Daten]
+* xref:admin:features/my_account/delete_my_account.adoc[Mein Konto löschen]

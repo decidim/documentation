@@ -1,0 +1,42 @@
+= Teilnehmer-Impersonationen
+
+Für Teilnehmer, die kein Wissen haben oder keine E-Mail zur Registrierung von
+eines Kontos haben, gibt es die Impersonations-Funktion.
+
+Dies erlaubt einem 'Administrator' oder 'Teilnehmermanager' die Suche durch ein
+Verifizierungssystem nach einem bereits existierenden Teilnehmer und auch die Erstellung eines
+Teilnehmers ohne E-Mail.
+
+NOTE: Beim Code und der Benutzeroberfläche sagen wir sowohl *Impersonation* als auch *Managed
+Teilnehmer*. Das ist dasselbe.
+
+== Platte
+
+image::participants_impersonations.png[Admin's Impersonations panel]
+
+Dies ist das Fenster, in dem Sie alle Teilnehmer finden:
+
+* durch Filtern durch verwaltete oder nicht verwaltete Teilnehmer
+* durch Suche nach Namen
+
+After you've clicked in `Manage new participant` you'll go to the form to enter
+the personal data to check against the verification:
+
+image::participants_impersonations_form.png[Admin's Impersonations form]
+
+NOTE: Wenn du die Schaltfläche "Neuen Teilnehmer verwalten" nicht siehst, liegt daran, dass diese Funktion
+nur funktioniert, wenn du eine Überprüfung der Art `direct` hast (auch
+als `Form-Autorisierungen`). Siehe in deinem xref:admin:system.adoc[system panel] welche
+`Available authorizations` aktiviert sind. Erfahren Sie mehr über die Programmierung von
+Ihrer Formular-Autorisierung unter https://github.com/decidim/decidim/blob/develop/decidim-verifications/README.md[decidim-verifizierung README].
+
+After this data is confirmed then there'll be a session for the participant for
+30 minutes:
+
+image::participants_impersonations_user.png[Impersonated user session]
+
+Finally, it's also possible to Promote a participant, meaning that after a
+participant has been managed, an administrator can add the email and send them
+an Invitation:
+
+image::participants_impersonations_promotion.png[Admin's promotion Impersonations]

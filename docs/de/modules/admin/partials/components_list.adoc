@@ -1,0 +1,18 @@
+Die Plattform hat derzeit die folgenden offiziellen Komponenten:
+
+* xref:admin:components/accountability.adoc[*Accountability*]: erlaubt es, den Überblick über die Ergebnisausführung eines Raumes zu behalten.
+Es erlaubt es Administratoren, sie auch mit den Vorschlägen und Meetings zu verbinden, die aus ihnen stammen.
+* xref:admin:components/blog.adoc[*Blog*]: erlaubt Administratoren Beiträge mit Nachrichten über einen Raum zu veröffentlichen.
+* xref:admin:components/budgets.adoc[*Budgets*]: erlaubt den Teilnehmern die Abstimmung in Projekten mit vordefinierten Beträgen. Wird für
+partizipative Budgetierungsprozesse verwendet. Erlaubt die Festlegung unterschiedlicher Regeln, zum Beispiel eines Mindestanteils des Gesamthaushalts oder eines Mindestbetrags an Projekten.
+* xref:admin:components/debates.adoc[*Debates*]: erlaubt den Teilnehmern Debatten zu führen. Debatten können zeitlich begrenzt sein oder nicht.
+* xref:admin:components/elections.adoc[*Wahl*]: um end-zu-Ende prüfbare Wahlen in einem Raum abzuhalten. Verwendet das gleiche
+externe System wie xref:admin:spaces/votings.adoc[Votings] Leerzeichen.
+* xref:admin:components/meetings.adoc[*Meetings*]: Versammlungen persönlich oder online über Videokonferenz-Plattformen.
+* xref:admin:components/pages.adoc[*Page*]: statische Seiten mit mehrsprachiger Unterstützung.
+* xref:admin:components/proposals.adoc[*Vorschläge *]: Beiträge von Teilnehmern, die Unterstützung erhalten können.
+* xref:admin:components/sortitions.adoc[*Sortitions*]: Dadurch können verschiedene Vorschläge zufällig ausgewählt werden.
+Zum Beispiel könnten die Vorschläge Kandidaten sein, die Teil einer Gruppe sind (wie etwa ein Ausschuss).
+* xref:admin:components/surveys.adoc[*Survey*]: zur Durchführung von Umfragen mit verschiedenen Arten von Fragen.
+
+In den Fällen, in denen Ihre Bedürfnisse nicht von einer der oben genannten Komponenten abgedeckt werden, können Sie über ein xref:develop:module Ihre eigene Komponente erstellen. doc[Module].

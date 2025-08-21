@@ -1,53 +1,53 @@
-= Participants
+= Participantes
 
 :page-partial:
 
-*Participants* of Decidim can be grouped into three different categories:
+*Los participantes * de Decidim pueden agruparse en tres categorías diferentes:
 
-* *Visitors* have access to all of the platform's content without having to sign up or provide any information.
-* *Registered* participants can submit proposals and comments, sign-up for meetings, endorse content, follow other Participants and receive notifications, mentions and private messages.
-Users may register *directly* on the platform or through gateways of other *social networks* (Facebook, Twitter or Google+). To register directly, users will need to associate a email account and a password to the user-account.
- Registered participants can also have their account officialized (meaning their username is accompanied by a special symbol indicating they really are who they claim they are on their profile).
-* *Verified* participants can make decisions. Decidim offers different ways to carry out this verification.
+* *Los visitantes* tienen acceso a todo el contenido de la plataforma sin tener que registrarse ni proporcionar ninguna información.
+* Los participantes *registrados* pueden enviar propuestas y comentarios, inscribirse para reuniones, respaldar contenido, seguir a otros participantes y recibir notificaciones, menciones y mensajes privados.
+Los usuarios pueden registrarse *directamente* en la plataforma o a través de pasarelas de otras *redes sociales* (Facebook, Twitter o Google+). Para registrarse directamente, los usuarios tendrán que asociar una cuenta de correo electrónico y una contraseña a la cuenta de usuario.
+ Los participantes registrados también pueden tener su cuenta oficializada (lo que significa que su nombre de usuario va acompañado de un símbolo especial que indica que realmente son quienes afirman estar en su perfil).
+* Los participantes *verificados* pueden tomar decisiones. Decidim ofrece diferentes maneras de llevar a cabo esta verificación.
 
-Administrators can *manage permissions* for *Registered* users and *Verified* users selectively. For example, _proposal creation_ can be activated for both Registered and Verified users but _supports to proposals_ only for Verified users.
+Los administradores pueden *administrar permisos* para usuarios *registrados* y usuarios *verificados* selectivamente. Por ejemplo, la _creación de propuestas_ puede activarse tanto para usuarios registrados como para usuarios verificados, pero _admite propuestas_ sólo para usuarios verificados.
 
-== Public registration of administrative activity
+== Registro público de la actividad administrativa
 
-The manual verification of participants, as well as other administrative actions can create vulnerability or may enable the administrators to use the platform in an abusive manner. To avoid it, Decidim includes a *public register of administrative activities* so these actions can be publicly and transparently audited.
+La verificación manual de los participantes, así como otras acciones administrativas pueden crear vulnerabilidad o pueden permitir que los administradores usen la plataforma de una manera abusiva. Para evitarlo, decidim incluye un *registro público de actividades administrativas* para que estas acciones puedan ser auditadas pública y transparentemente.
 
-== User profile and personal settings
+== Perfil de usuario y configuración personal
 
-There is a **user-profile page **where participants can make **changes to their data **(such as email account, password etc.), upload and enable an *avatar* image, set notifications or delete their account.
+Hay una **página de perfil de usuario **donde los participantes pueden hacer **cambios a sus datos** (tales como cuenta de correo electrónico, contraseña, etc.). , sube y activa una imagen *avatar*, establece notificaciones o elimina su cuenta.
 
-The user-profile page also allows participants to add *additional information* to include interests and skills, voluntarily and by selecting the level of visibility of that information. This allows personal notifications to be sent and participants can be matched with others for collaborations.
+La página de perfil de usuario también permite a los participantes añadir *información adicional* para incluir intereses y habilidades, voluntariamente y seleccionando el nivel de visibilidad de esa información. Esto permite enviar notificaciones personales y los participantes pueden ser emparejados con otros para colaboraciones.
 
-== Monitoring and notifications
+== Monitoreo y notificaciones
 
-Participants receive *automated notifications* regarding the content they have created: responses to comments and comments on their proposals, as well as the results of their proposals (whether accepted or rejected).
+Los participantes reciben *notificaciones automatizadas* con respecto al contenido que han creado: respuestas a comentarios y comentarios sobre sus propuestas, así como los resultados de sus propuestas (aceptadas o rechazadas).
 
-Besides automated notifications, participants can decide to **follow any element** of the system (other proposals, results, processes, assemblies, initiatives, groups or users etc.), and receive notifications.
+Además de las notificaciones automatizadas, los participantes pueden decidir **seguir cualquier elemento** del sistema (otras propuestas, resultados, procesos, ensamblajes, iniciativas, grupos o usuarios, etc.). , y recibir notificaciones.
 
-== Communication among participants
+== Comunicación entre participantes
 
-**Instant messages **can be sent to participants through the platform, who will receive an email notification.
+**Los mensajes instantáneos **pueden ser enviados a los participantes a través de la plataforma, que recibirán una notificación por correo electrónico.
 
-*Mentions* can also be added (in the comments section) to any registered user and a notification will be automatically sent.
+*Menciones* también se puede añadir (en la sección de comentarios) a cualquier usuario registrado y una notificación se enviará automáticamente.
 
-== User groups
+== Grupos de usuarios
 
-Participants can register with the platform as members of one or several organisations/collectives. Once the organisation and membership status have been verified, participants can carry out actions (make proposals or submit comments, etc.), with their user or with the organisation name.
+Los participantes pueden registrarse en la plataforma como miembros de una o varias organizaciones/coleccionistas. Una vez verificada la organización y la condición de miembro, los participantes pueden llevar a cabo acciones (hacer propuestas o enviar comentarios, etc.). , con su usuario o con el nombre de la organización.
 
-User groups can also manage user permissions and administration roles assigned to groups, as well as private debate spaces or share information among group users, for example, who attended an in-person meeting. [Feature currently missing]
+Grupos de usuarios también pueden administrar permisos de usuario y roles de administración asignados a grupos, así como espacios de debate privados o compartir información entre los usuarios del grupo, por ejemplo, que asistieron a una reunión en persona. [Característica que falta actualmente]
 
-== Engagement
+== Compromiso
 
-Decidim has a series of features geared to _gamifying_ the platform, to *attract and keep a growing number of participants interested*, as well as to promote practices that boost democratic quality and collective intelligence in participation [the gamification system is expected for 2018Q2-3, AjB-Lote1].
+Decidim tiene una serie de características orientadas a _gamifying_ la plataforma, para *atraer y mantener un creciente número de participantes interesados*, así como promover prácticas que impulsen la calidad democrática y la inteligencia colectiva en la participación [se espera el sistema de gamificación para 2018Q2-3, AjB-Lote1].
 
-The gamification system includes two modes, one centred on users and the other on proposals.
+El sistema de gamificación incluye dos modos, uno centrado en los usuarios y el otro en las propuestas.
 
-* The **user-centred **mode incorporates a *points system* based on several criteria (degree of detail of its user profile, number of invitations to others on the platform, number of proposals made and commented on, number of comments, number of endorsements obtained, number of followers, etc.)
+* El modo **centrado en el usuario** incorpora un *sistema de puntos* basado en varios criterios (grado de detalle de su perfil de usuario, número de invitaciones a otros en la plataforma, número de propuestas realizadas y comentadas, número de comentarios, número de aprobaciones obtenidas, número de seguidores, etc.)
 
-The combination of these and other indicators is used for generating gamification routes for each user and defining threads such as: most participatory person in the district, leadership in discussions and debates, etc.
+La combinación de estos y otros indicadores se utiliza para generar rutas de gamificación para cada usuario y definir hilos tales como: la persona más participativa en el distrito, liderazgo en discusiones y debates, etc.
 
-* Gamification *centred on proposals/initiatives* allows promoters, signatories and followers to boost interaction with them by incorporating several *metrics* (number of times that the proposal is shared in social networks, degree of controversy (number of positive and negative comments), quality of deliberation (depth of observation tree), number of hits received, etc.
+* Gamificación *centrada en propuestas/iniciativas* permite promotores, firmantes y seguidores para impulsar la interacción con ellos incorporando varias *métricas* (número de veces que la propuesta es compartida en redes sociales, grado de controversia (número de comentarios positivos y negativos), calidad de la deliberación (profundidad del árbol de observación), número de incidencias recibidas, etc.

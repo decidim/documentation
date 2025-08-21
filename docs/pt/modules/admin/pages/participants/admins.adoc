@@ -1,21 +1,21 @@
-= Admins
+= Administradores
 
-In the administrator listing page you can see all the administrators of the platform:
+Na página de listagem do administrador você pode ver todos os administradores da plataforma:
 
 image:admins.png[Admins list]
 
-Here you can:
+Aqui você pode:
 
-* invite new administrators
-* revoke administrators permissions
-* see when was the last time an administrator logged in
+* convidar novos administradores
+* revogar permissões de administradores
+* ver quando foi a última vez que um administrador fez login
 
 For inviting a new administrator, you need to go to the button "New user" and fill
 the form with the admin username, email and which role will she have:
 
-* Admin: to give full access to the platform
-* Participant manager: to give permission to only do xref:admin:participants/impersonations.adoc[Impersonations]
+* Administrador: permitir acesso total à plataforma
+* Gerenciador de participantes: dar permissão para apenas fazer xref:admin:participants/impersonations.adoc[Impersonations]
 
-image:admins_invite.png[Invite participant as administrator form]
+image:admins_invite.png[Participante de convite como formulário de administrador]
 
-You can invite an already registered or a non registered participant.
+Você pode convidar um usuário já registrado ou não registrado.
