@@ -1,0 +1,91 @@
+= Agenda
+
+The agenda feature allows an administrator to define the schedule for a meeting. It's possible to define agenda items and
+sub-items, with every one of the topics that will be discussed in the meeting, along with a description and the duration
+of every item and sub-item.
+
+image:components/meetings/agenda/agenda_frontend.png[Agenda in the frontend]
+
+== New agenda form
+
+To define an agenda for a meeting:
+
+. Sign in as admin
+. Go to admin panel
+. In the main sidebar, click in the button for the space that you want to configure the component for.
+For instance, it could be "Processes", "Assemblies", or "Conferences"
+. Click on "Meetings"
+. Search the meeting that you want to add the agenda to
+. Click on the "Agenda" button image:action_agenda.png[Agenda button]
+. Fill the form
+
+image:components/meetings/agenda/new_agenda_form.png[New agenda form in the backend]
+
+
+.New agenda form
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|Title for the agenda. For instance, "Schedule"
+
+|Visible
+|Optional
+|Check if you want to publish the agenda.
+
+|Agenda items
+|Required
+|List of agenda items.
+|===
+
+It's possible to create any number of Agenda items and sub-items. You can up or down the hierarchy of the agenda items.
+It's also possible to remove and edit the agenda items.
+
+
+.Agenda item form
+|===
+|Field |Type |Description
+
+|Title
+|Required
+|Title for the agenda item
+
+|Duration
+|Required
+|How many minutes will the agenda item last. For instance, "15".
+
+|Description
+|Optional
+|Title for the agenda item
+
+|Agenda sub-items
+|Optional
+|List of agenda sub-items.
+|===
+
+The only limitation that agenda items and sub-items have is that they have to respect the duration of the parent. For instance,
+if there's an Item that lasts 60 minutes, you can't create a sub-item that lasts 90 minutes.
+
+As an example, this agenda:
+
+image:components/meetings/agenda/agenda_frontend.png[Agenda in the frontend]
+
+Has the following configuration:
+
+* Title: "Schedule"
+* Visible: true
+* Agenda item #1:
+** Title: Diagnosis
+** Duration: 60
+* Agenda item #2:
+** Title: Ideation
+** Duration: 120
+** Agenda sub-item #2.1:
+*** Title: Future thinking
+*** Duration: 60
+*** Description: Imagining how we can solve the problem
+** Agenda sub-item #2.2:
+*** Title: Creating proposals
+*** Duration: 60
+*** Description: In the platform

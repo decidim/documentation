@@ -1,0 +1,116 @@
+= User Groups
+
+An user group is a group of participants. Depending in the installation and the context of the organization it could be disabled. This is enabled or disabled in the administration dashboard, in Settings -> Configuration -> Edit organization -> Enable groups.
+
+== Creation
+
+This action is done by **a participant**. She needs to go to their profile and in the sidebar there's a button that says "Create group":
+
+image:user_sidebar.png[User sidebar]
+
+When clicked it'll open the "New group form":
+
+image:user_group_new_form.png[New user group form]
+
+
+.New group form
+|===
+|Field |Type |Description
+
+|Name
+|Required
+|Name of your organization, association, collective, group, etc.
+
+|Nickname
+|Required
+|Nickname of your organization, association, collective, group, etc. Do not use spaces nor accents. 20 characters maximum.
+
+|Email
+|Required
+|Email of your organization, association, collective, group, etc.
+
+|Avatar
+|Optional
+|Guidance for image: Preferably a landscape image that does not have any text. The service crops the image. Maximum file size: 5MB. Allowed file extensions: jpg jpeg gif png bmp ico
+
+|About
+|Optional
+|Description of what's this group.
+
+|Document number
+|Optional
+|Used for verifications. Do not use dashes nor spaces.
+
+|Phone
+|Optional
+|Used for verifications. Do not use dashes nor spaces.
+|===
+
+== Membership
+
+After a group has been created, it's possible to invite participants to become members of the group. After a participant has accepted to be part of this group then she can become an admin.
+
+The actions that can be done by a participant in the user group are:
+
+* Edit group profile
+* Manage members
+* Manage admins
+* Invite participant
+* Leave group
+
+image:user_group_invite_participant.png[User groups: invite a participant]
+
+== Group verifications
+
+image:admin_user_group_verification.png[Admin panel: user group verifications]
+
+This action is done by **an administrator**. A group can be:
+* Pending
+* Verified
+* Rejected
+
+This can be done with the buttons at the sidebar:
+
+image:admin_user_group_verification_actions.png[Admin panel: user group verifications actions]
+
+When a user group is pending it can be verified or rejected. Once is verified it can be rejected and once is rejected it can be verified.
+
+If you want to verify multiple user groups at the same time you can do so with the option "Verify via CSV":
+
+image:admin_user_group_verification_csv.png[Admin panel: user group verifications CSV]
+
+....
+Upload your CSV file. It must have the official emails of the groups in your organization in the first column of the file, without headers. Only groups that have confirmed their email and that have an email appearing in the CSV file will be validated.
+....
+
+After a group is verified this is publicly visible in their nickname in the platform and there's a message in its profile: "This group is publicly verified, its name has been verified to correspond with its real name".
+
+image:user_group_verified.png[User group: verified icon]
+
+== Actions
+
+As a verified user group, there's some options that your participant account can do in behalf of the group, such as:
+
+=== Create a Debate, Proposal or Meeting
+
+There's a dropdown in the form during the creation process:
+
+image:user_group_create_debate.png[User group: create a debate]
+
+=== Make a comment
+
+There's a dropdown in the form when making a comment:
+
+image:user_group_make_comment.png[User group: make a comment]
+
+=== Endorse
+
+When making an Endorse there's a modal window asking who do you want to make the endorse with:
+
+image:user_group_endorse.png[User group: endorse]
+
+=== Conversations
+
+You can also have Conversations as a group. This is in the group profile page:
+
+image:user_group_conversation.png[User group: conversations]

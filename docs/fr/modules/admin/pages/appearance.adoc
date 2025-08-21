@@ -1,0 +1,78 @@
+= Appearance
+
+In this page you can configure the look and feel of your Decidim instance.
+
+Please mind that this would be incompatible with some of the changes that your implementers could change in your general installation. For instance if there were changes in the xref:customize:styles.adoc[Styles] this could not work.
+
+image::admin_appearance.png[Decidim Admin Appearance]
+
+---
+
+NOTE: This is a legacy setting that will be removed in the next version. https://github.com/decidim/decidim/pull/6575[See PR].
+
+* **Show statistics**: whether you want to show or not the statistics sections in the homepage.
+
+---
+
+* **Description**: What's the description of this site. Used for metatags for Google and Twitter embeds. Also used by the "SubHero" ContentBlock in the Homepage.
+
+---
+
+NOTE: These area legacy settings that will be removed in the next version. https://github.com/decidim/decidim/pull/6284[See PR].
+
+* **Call To Action button path**: You can overwrite where the Call To Action button in the homepage links to. Use partial paths, not full URLs here. Accepts letters, numbers, dashes and slashes, and must start with a letter. The Call To Action button is shown in the homepage between the welcome text and the description. Example: https://meta.decidim.org/conferences/decidimfest2020/
+* **Call To Action button text**:  You can overwrite the Call To Action button text in the homepage for each available language in your organization. If not set, the default value will be used. The Call To Action button is shown in the homepage between the welcome text and the description.
+
+---
+
+NOTE: This is a legacy setting that will be removed in the next version. Il n'y a as de demande de modifications (PR) pour l'instant.
+
+* **Bannière de contenu mis en valeur**
+** *Show the highlighted content banner*
+** *Title*
+** *Brève description*
+** *Titre du bouton d'action*
+** *Sous-titre du bouton d'action*
+** *URL du bouton d'action*
+** *Image*
+
+---
+
+* *Modifier la bannière permanente*
+** **Activer la bannière permanente**
+** **Titre**
+** **Brève description**
+** **URL**
+
+---
+
+* **Modifier l’aspect de la mise en page**
+
+Cette sous-section définit les images de mise en page qui seront visibles dans presque toutes les pages. Il s'agit de :
+
+** Icône
+** Logo
+** Logo officiel - barre de navigation
+** Logo officiel - pied de page
+** Url officielle de l'organisation
+
+// TODO: Add examples
+
+---
+
+* **Couleurs de l'organisation** : Les couleurs de votre organisation. Veuillez noter que cela peut générer des problèmes d'accessibilité, par exemple pour les utilisateurs souffrant de certains types de daltonisme et d'autres particularités similaires, qui rencontrent un faible contraste et ont du mal à faire la différence entre des couleurs proches. Vous pouvez définir les couleurs suivantes :
+** Couleur primaire
+** Couleur secondaire
+** Couleur de succès
+** Couleur d'avertissement
+** Couleur d'alerte
+** Couleur de surbrillance
+** Couleur de surbrillance alternative
+
+// TODO: Add examples
+
+---
+
+* **Header snippets**: Utilisez ce champ pour ajouter des éléments à la HTML head. L’utilisation la plus courante est d’intégrer des services tiers qui nécessitent du JavaScript ou du CSS supplémentaires. De plus, vous pouvez l'utiliser pour ajouter des balises méta supplémentaires au HTML. Notez que cela ne sera rendu que dans les pages publiques, pas dans la section admin.
+
+// TODO: reference to HTML snippet setting

@@ -1,0 +1,29 @@
+= Participants
+
+Sometimes as an administrator you'll need to make certain tasks with participants, among them:
+
+* To give permissions to other administrators so they can manage platform's content
+* To verify user groups (organizations or collectives)
+* To verify participants
+* To recognize that a participant has a special status in the platform, with Officializations
+* To authenticate that a person has the right to vote, with Authorizations
+* To contact a participant
+
+You can access this section on the main sidebar of the admin panel.
+
+image:participants_menu.png[Participants menu]
+
+Once you're in you can see all the different kind of participants and actions that you can do:
+
+image:participants_sidebar_menu.png[Participants sidebar menu]
+
+* xref:admin:participants/admins.adoc[Administrateurs]
+* xref:admin:participants/groups.adoc[Groupes d'utilisateurs]
+* xref:admin:participants/participants.adoc[Participants]
+* xref:admin:participants/impersonations.adoc[Utilisateurs représentés]
+** xref:admin:participants/verifications_conflicts.adoc[Conflits de vérification]
+* xref:admin:participants/reported_users.adoc[Utilisateurs signalés]
+* xref:admin:participants/authorizations.adoc[Autorisations]
+** xref:admin:participants/authorizations/identity_documents.adoc[Documents d'identité]
+** xref:admin:participants/authorizations/code_postal_letter.adoc[Code par lettre postale]
+** xref:admin:participants/authorizations/census.adoc[Recensement de l'organisation]

@@ -1,0 +1,57 @@
+= Code by postal letter authorization
+
+This authorization allows a participant to request for a verification code to be sent to its address, to confirm that she
+lives or works in this place. She'll need to then fill the code in the platform.
+
+The process is:
+
+. Participants request a verification code to be sent to their address.
+. An administrator sends the letter to their address with the verification code.
+. An administrator marks the letter as sent.
+. Once you mark the letter as sent, the participant will be able to introduce the code.
+. If this code matchs, then she gets verified.
+
+== 1. A participant request the verification code
+
+By going to the authorization section in its profile, or by clicking on the action button if this permission is requested,
+a participant can see the form for filling in her full address to request the verification code.
+
+image:authorizations_code_postal_letter_request.png[Code by postal letter request by participant]
+
+If she tries to edit it, she'll see this message:
+
+image:authorizations_code_postal_letter_edit.png[Edit the postal letter request]
+
+This is because the letter could be in the process of being sent. If this needs to be corrected, then the participant needs
+to contact to the organization.
+
+== 2. An administrator review this request and sent the letter
+
+In the admin panel, the administrator can review the request by going to the "Code by postal letter" in the "Participants" section.
+
+image:authorizations_code_postal_letter_ongoing.png[Code by postal letter ongoing panel in admin]
+
+Here she can see the verification code and can send it to the participant by mail. After the code is sent she can mark it
+as sent with the icon image:action_mark_as_sent.png[Mark as sent]. It'll also show when the letter was sent.
+
+== 3. A participant fills in the verification code
+
+After the participant has received the code, she can go to it's account settings and click in the "Code by postal letter"
+verfication method.
+
+image:authorizations_code_postal_letter_verify.png[Code by postal letter ongoing in the participant account]
+
+Then she'll see the form for confirming the code.
+
+image:authorizations_code_postal_letter_confirm.png[Code by postal letter confirmation form]
+
+== 4. The verification code matches or not
+
+If the verification code matches, then the participant will see the message "Congratulations. You've been successfully verified".
+
+On the other hand, if the verification code doesn't match, then the participant will see the message "Your verification
+code doesn't match ours. Please double-check the letter we sent to you."
+
+After is verified, as with other verifications, she can see it in her account settings.
+
+image:authorizations_code_postal_letter_verified.png[Verified by code by postal letter]

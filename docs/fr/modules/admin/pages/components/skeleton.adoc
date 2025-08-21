@@ -1,0 +1,167 @@
+= Skeleton
+
+The Skeleton component allows people to XXX
+
+From this starting point, there could be other configurations, such as:
+
+*
+
+Some examples of where this component was used:
+
+*
+
+image:components/skeleton/example01.png[]
+image:components/skeleton/example02.png[]
+image:components/skeleton/example03.png[]
+image:components/skeleton/example04.png[]
+
+To configure the Skeleton component:
+
+. Sign in as admin
+. Go to admin panel
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+Par exemple, il peut s'agir de "Concertations", d'"Assemblées" ou de "Conférences".
+. Aller dans les fonctionnalités
+. Cliquez sur le bouton "Ajouter une fonctionnalité"
+. Click on "Skeleton"
+. Remplissez le formulaire xref:_add_component[Ajouter une fonctionnalité]
+
+== Ajouter une fonctionnalité
+
+image:components/skeleton/component.png[Add component form]
+
+
+.Add component: Skeleton form
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Quel est le titre de cette fonctionnalité. For instance, "Skeletons"
+
+|Rang d'affichage
+|Facultatif
+|Which order will it have in relation to the other skeletons. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+For instance, if you have two skeletons, "Skeleton a" with weight "10" and "Skeleton b" with weight "0", then "Skeleton b" will be first when ordering.
+|===
+
+
+.Add component: Skeleton form - Global settings
+|===
+|Champ |Type |Description
+
+|Scopes enabled
+|Facultatif
+|Check if you want to have Scopes filtering in this component.
+
+|Secteur
+|Facultatif
+|Which xref:admin:scopes.adoc[Scope] does this component belongs to.
+
+|Portée générale
+|Facultatif
+|
+
+|Commentaires activés
+|Facultatif
+|Si vous voulez avoir des commentaires dans les rencontres.
+
+|Longueur maximale des commentaires
+|Facultatif
+|Quelle est la limite de caractères que les participants auront quand ils feront des commentaires. Laisser 0 pour la valeur par défaut.
+
+|Actions permissions can be set for each skeleton
+|Facultatif
+|Whether you want to be able to set permissions for every one of the skeletons. Most of the time you will want to leave this option disabled.
+
+|Annonce
+|Facultatif
+|A general announcement that'll be visible on the general skeletons landing page.
+|===
+
+In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
+xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
+
+
+.Add component: Skeletons form - Step settings
+|===
+|Champ |Type |Description
+
+|Commentaires désactivés
+|Facultatif
+|Whether you want to enable comments for this phase.
+
+|Annonce
+|Facultatif
+|A general announcement that'll be visible on the general skeleton landing page.
+|===
+
+== Autorisations
+
+An administrator can choose which kind of xref:customize:authorizations.adoc[Authorizations] a participant need to have to make
+certain actions in the skeletons:
+
+* Create
+* Soutenir
+
+== Manage skeletons
+
+image:components/skeleton/manage_skeletons.png[Manage skeletons table]
+
+=== Export all
+
+Allows exporting the skeletons in different formats.
+
+* Skeletons as CSV
+* Skeletons as JSON
+* Skeletons as Excel
+* Comments as CSV
+* Comments as JSON
+* Comments as Excel
+
+=== New skeleton form
+
+image:components/skeleton/new_skeleton.png[New skeleton form]
+
+
+.New skeleton form
+|===
+|Champ |Type |Description
+
+|Titre
+|Obligatoire
+|What is the title of this skeleton. For instance, "District A"
+
+|Rang d'affichage
+|Facultatif
+|Which order will it have in relation to the other skeletons. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+For instance, if you have two skeletons, "Skeleton a" with weight "10" and "Skeleton b" with weight "0", then "Skeleton b" will be first when ordering.
+
+|Description
+|Facultatif
+|What is the description of this skeleton.
+|===
+
+==== Actions
+
+
+.Actions
+|===
+|Icône |Nom |Definition
+
+|image:action_preview.png[Preview icon]
+|Preview
+|Pour voir comment il est montré dans le frontend aux participants.
+
+|image:action_list.png[Gérer l'icône des projets]
+|xref:_manage_projects[Gérer les projets]
+|Allows you to manage the projects of a skeleton.
+
+|image:action_edit.png[Edit icon]
+|Edit
+|Edit form for a skeleton. It's the same form as "New skeleton".
+
+|image:action_delete.png[Delete icon]
+|Delete
+|To delete this skeleton. Peut être fait unquement quand il n'y a pas de projets dans ce budget.
+|===

@@ -1,0 +1,39 @@
+= Certificates of Attendance
+
+Administrators can create Certificates of Attendance to participants.
+
+image:spaces/conferences/certificates_of_attendance.png[Conferences Certificate of Attendance (backend)]
+
+
+.Certificate of Attendance form
+|===
+|Champ |Type |Description
+
+|Main logo
+|Obligatoire
+|Logo of the conference of the organization that makes the certificate of attendance.
+
+|Signature
+|Obligatoire
+|Image of the person that signs the certificate.
+
+|Sign date
+|Obligatoire
+|Date of the signature. Expected format: dd/mm/yyyy
+
+|Signature name
+|Obligatoire
+|Name of the person that signs the certificate.
+|===
+
+After the form is filled then there's a button to "Send certificates of attendance" to all the confirmed xref:admin:spaces/conferences/registrations/users.adoc[registrations] of the conference.
+
+image:spaces/conferences/certificates_of_attendance_button.png[Conferences Certificate of Attendance send button]
+
+Once it's sent it can't be resent.
+
+image:spaces/conferences/certificates_of_attendance_button_disabled.png[Conferences Certificate of Attendance send disabled button]
+
+The certificates of attendance are sent to the participants by email in PDF format.
+
+image:spaces/conferences/certificates_of_attendance_pdf.png[Conferences Certificate of Attendance (frontend)]

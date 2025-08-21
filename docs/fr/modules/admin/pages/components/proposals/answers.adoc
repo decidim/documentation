@@ -1,0 +1,113 @@
+= Réponses
+
+Les réponses aux propositions permettent à un administrateur ou à un évaluateur d'examiner une proposition et de lui donner une réponse officielle.
+
+image:components/propositions/proposal_answer_state_accepted.png[État de la réponse à la proposition : acceptée]
+
+Pour répondre à une proposition :
+
+. Se connecter en tant qu'administrateur ou évaluateur
+. Go to admin panel
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+For instance, it could be "Processes", "Assemblies", or "Conferences"
+. Cliquer dans le composant "Propositions"
+. Rechercher la proposition auquelle vous souhaitez répondre
+. Cliquer sur le bouton "Répondre à la proposition" image:action_answer.png[Icône de réponse à la proposition]
+. Remplissez le formulaire
+
+Alternativement, vous pouvez aussi :
+
+. Se connecter en tant qu'administrateur ou évaluateur
+. Rechercher la proposition auquelle vous souhaitez répondre
+. Cliquez dans le bouton de réponse à la proposition dans l'en-tête image:components/propositions/answer_button_header.png[Bouton de réponse à la proposition]
+. Remplissez le formulaire
+
+== Page de réponse
+
+La page de réponse a trois sections :
+
+=== Métadonnées
+
+It has general information about the proposal, like the link, who is the author, the proposal body, how many supports, endorsements, comments, and so on.
+
+=== Private notes
+
+Allows an administrator or valuator to leave notes that will not be visible to the public.
+
+=== Answer for proposal
+
+Allows an administrator to answer a proposal.
+
+image:components/proposals/proposal_answer.png[Proposal answer form]
+
+
+.Answer for proposal form
+|===
+|Champ |Type |Description
+
+|Internal state
+|Obligatoire
+|Choose one of the following: Accepted, Rejected, or Evaluating
+
+|Answer
+|Facultatif
+|An explanation on why the proposal was accepted, rejected, or evaluated
+
+|Cost
+|Required if "Enable costs on proposal answers" is enabled in the proposals component settings and if it's accepted
+|A number that indicates the cost of the proposal
+
+|Cost report
+|Required if "Enable costs on proposal answers" is enabled in the proposals component settings and if it's accepted
+|An explanation of the cost of the proposal
+
+|Execution period
+|Required if "Enable costs on proposal answers" is enabled in the proposals component settings and if it's accepted
+|How much time the proposal will take to be executed
+|===
+
+== States
+
+If the proposals component setting "Publish proposal answers immediately" is checked, then the response of the proposal will be visible to the public immediately.
+
+The state is visible on the proposal page and card.
+
+image:components/proposals/proposal_answer_state_accepted_card.png[Proposal card answer state: Accepted]
+
+=== Evaluating
+
+image:components/proposals/proposal_answer_state_evaluating.png[Proposal answer state: Evaluating]
+
+=== Accepted
+
+After proposals have been accepted, they can be imported to the xref:components/budgets.adoc[budgets] component.
+
+image:components/propositions/proposal_answer_state_accepted.png[État de la réponse à la proposition : acceptée]
+
+=== Rejected
+
+image:components/proposals/proposal_answer_state_rejected.png[Proposal answer state: Rejected]
+
+== Publication
+
+You can control when the answers will be published by using the "Publish proposal answers immediately" checkbox.
+
+For enabling automatic publication, you'll need to check it.
+
+On the other hand, if you want to control when to publish the answer a proposal or multiple proposals, you'll need to follow these steps:
+
+. Se connecter en tant qu'administrateur ou évaluateur
+. Go to admin panel
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+For instance, it could be "Processes", "Assemblies", or "Conferences"
+. Cliquer dans le composant "Propositions"
+. Rechercher la proposition auquelle vous souhaitez répondre
+. Click in the left checkbox of the proposal that you want to publish
+. Click on the "Actions" button
+. Click on the "Publish answers" option
+image:components/proposals/proposal_answer_publish.png[Proposal answer publication: action]
+. Click on "Publish" button
+image:components/proposals/proposal_answer_publish_button.png[Proposal answer publication: publish button]
+
+NOTE: If you have unchecked the "Publish proposal answers immediately", answered the proposals and then checked the option again, the answers will not be
+published automatically. You'll still need to publish the answers manually with the "Actions" button.

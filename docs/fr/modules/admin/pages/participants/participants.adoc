@@ -1,0 +1,90 @@
+= Participants
+
+In this page an administrator can:
+
+* Block a participant, for instance because she's spamming or acting against the Terms of Service
+* Contact a participant with Decidim private messages (Conversations)
+* Officialize a participant
+* See its email
+
+image:participants_participants.png[Participants list]
+
+== Actions
+
+image:participants_participants_actions.png[Participants actions]
+
+|===
+|Icône |Nom |Definition
+
+|image:action_block.png[Block user]
+|xref:_block_user[Block user]
+|To block or moderate a participant.
+
+|image:action_show_email.png[Show email]
+|xref:_show_email_address[Show email address]
+|To show an email of a participant.
+
+|image:action_contact.png[Contact]
+|xref:_contact[Contact]
+|To contact a participant with Decidim private messages (Conversations)
+
+|image:action_officialize.png[Officialize]
+|xref:_officialize[Officialize]
+|To recognize that a participant has a special status in the platform
+
+|image:action_reofficialize.png[Reoffficialize]
+|Reoffficialize
+|To change an officialization. See xref:_officialize[Officialize]
+
+|image:action_unofficialize.png[Unofficialize]
+|Unofficialize
+|To revoke an officialization. See xref:_officialize[Officialize]
+|===
+
+=== Block user
+
+After clicking in this option you'll need to provide a justification why you're
+blocking this participant:
+
+image:participants_block_user_justification.png[Justificate the blocked user action]
+
+Once a blocked participant tries to log-in she'll see an error message:
+
+image:participants_block_user_alert.png[Message shown to blocked user]
+
+After a participant was blocked its name is changed to "Blocked user".
+
+See more at xref:admin:participants/reported_users.adoc[Reported users]
+
+=== Show email address
+
+After clicking this option, the admin will see a modal. She'll have to click in
+button "Show email address".
+
+image:participants_show_email.png[Modal in show email]
+image:participants_showed_email.png[Modal after the email is shown]
+
+This action will be logged in the Admin actvity log.
+
+image:participants_showed_email_admin_log.png[Admin activity log for show email]
+
+=== Contact
+
+By clicking on this option, it will open the private messaging (Conversation) for
+this participant.
+
+image:participants_conversation.png[Conversation with a participant].
+
+=== Officialize
+
+This option is useful to recognize that a participant has a special status in the
+platform. For instance, if someone is the City Mayor, a City Councillor or the
+President of an Association in an organization context.
+
+After Officializing a participant you can:
+
+- Change the Officialization text with "Reofficialize"
+- Revoke the Officialization status with "Unofficialize"
+
+image:participants_officialize.png[Officialize a participant]
+image:participants_participants_actions_officialize.png[Officialize a participant]

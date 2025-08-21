@@ -1,0 +1,85 @@
+= Page
+
+La fonctionnalité Page permet aux participants d'avoir plus d'information sur un espace. It's similar to the general xref:admin:pages.adoc[Pages] admin section, with
+the main difference is that this component allows to define pages in a space, and the general Pages admin section allows to
+define pages for all the platform (for instance, help pages, terms of services, or FAQs), that aren't associated to a space.
+
+From this starting point, there could be other configurations, such as:
+
+Some examples of where this component was used:
+
+* https://www.decidim.barcelona/processes/PressupostosParticipatius/f/4691/[More information page in 2020 Participatory Budgeting process in Decidim Barcelona]
+
+image:components/page/example01.png[More information page in 2020 Participatory Budgeting process in Decidim Barcelona - Frontend]
+image:components/page/example02.png[More information page in 2020 Participatory Budgeting process in Decidim Barcelona - Backend]
+
+Pour configurer la fonctionnalité Page :
+
+. Sign in as admin
+. Go to admin panel
+. Dans la barre latérale principale, cliquez sur le bouton de l'espace dont vous voulez configurer la fonctionnalité.
+For instance, it could be "Processes", "Assemblies", or "Conferences"
+. Aller dans les fonctionnalités
+. Cliquez sur le bouton "Ajouter une fonctionnalité"
+. Click on "Page"
+. Remplissez le formulaire xref:_add_component[Ajouter une fonctionnalité]
+
+== Ajouter une fonctionnalité
+
+image:components/page/component.png[Add component form]
+
+
+.Add component: Page form
+|===
+|Champ |Type |Description
+
+|Nom
+|Obligatoire
+|Quel est le titre de cette fonctionnalité. For instance, "More information".
+
+|Rang d'affichage
+|Facultatif
+|Which order will it have in relation to the other pages. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+For instance, if you have two pages, "Page a" with weight "10" and "Page b" with weight "0", then "Page b" will be first when ordering.
+|===
+
+
+.Add component: Page form - Global settings
+|===
+|Champ |Type |Description
+
+|Annonce
+|Facultatif
+|A general announcement that'll be visible on the general pages landing page.
+|===
+
+In the cases where the space that this component will be used has xref:admin:spaces/processes/phases.adoc[Phases], for instance, in
+xref:admin:spaces/processes.adoc[Participatory Processes], then you can also define different behaviors per Step.
+
+
+.Add component: Pages form - Step settings
+|===
+|Champ |Type |Description
+
+|Annonce
+|Facultatif
+|A general announcement that'll be visible on the general page landing page.
+|===
+
+== Autorisations
+
+As this component doesn't allow to do anything, there are no permissions to set up.
+
+=== New page form
+
+image:components/page/new_page.png[New page form]
+
+
+.New page form
+|===
+|Champ |Type |Description
+
+|Body
+|Obligatoire
+|What is the body for the page.
+|===
