@@ -1,11 +1,15 @@
 = Aparência
 
+== Understand the basics
+
 Nesta página você pode configurar a aparência da sua instância do Decidim.
 
 NOTE: Please mind that this would be incompatible with some of the changes that your implementers could make in your general installation.
 For instance if there were changes in the xref:customize:styles.adoc[Styles] some parameters couldn't be applied as expected.
 
-== Edit homepage appearance
+== Configuração
+
+=== Edit homepage appearance
 
 This section allows to provide a general description about the instance, and to configure a call to action button that can be
 shown to participants on the homepage to encourage them to go to a specific process, like a proposal component where they can participate.
@@ -35,7 +39,7 @@ image::settings/admin_appearance_homepage_appearance.png[Decidim Admin Appearanc
 
 NOTE: To understand how to enable the different homepage blocks, go to the xref:admin:settings/homepage.adoc[homepage] article.
 
-== Banner de conteúdo destacado
+=== Banner de conteúdo destacado
 
 This section allows to enable and give a description and CTA button to a banner, for example to highlight a specific space
 on your instance, to encourage users to create an account or to register to a meeting. You can make it evolve depending on the
@@ -79,7 +83,7 @@ image::settings/admin_appearance_highlighted_banner.png[Decidim Admin Appearance
 |The background image for the banner.
 |===
 
-== Edit omnipresent banner
+=== Edit omnipresent banner
 
 This section allows to enable a banner at the top of your instance, above the headers, visible at any time from every page.
 It can be useful to display very important information that all participants need to see, like announcing a maintenance date,
@@ -113,7 +117,7 @@ image::settings/admin_appearance_omnipresent_banner.png[Decidim Admin Appearance
 
 image::settings/appearance_omnipresent_banner.png[Decidim Appearance omnipresent banner frontend]
 
-== Edit layout appearance
+=== Edit layout appearance
 
 This section allows to download logos and icons, to be displayed in the header and footer, notification emails, newsletters, etc.
 
@@ -143,7 +147,7 @@ image::settings/admin_appearance_layout.png[Decidim Admin layout appearance togg
 
 image::settings/appearance_layout_footer_logo.png[Decidim Appearance official footer logo]
 
-== Organization colors
+=== Organization colors
 
 This section allows to choose colors for the organization.
 
@@ -162,7 +166,7 @@ In the following screenshot, the three different colors are displayed.
 
 image::settings/appearance_colors.png[Decidim layout appearance colors example]
 
-== Header snippets
+=== Header snippets
 
 NOTE: You might not see this field. For more information on how to enable it, see the xref:customize:styles.adoc[Styles] documentation.
 
