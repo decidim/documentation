@@ -7,10 +7,12 @@ statuses, and dates assigned.
 
 Les administrateurs peuvent également créer des sous-résultats, pour détailler les éléments nécessaires à une implémentation de résultats.
 
-== Créer un résultat
+== Configuration
 
-Pour commencer à créer des résultats, cliquez sur le titre du composant dans la barre de navigation ou dans la liste des composants, ou cliquez sur l'image
-: icônes/action_edit. Icône ng[Gérer l'icône du composant] dans la liste des composants.
+=== Créer un résultat
+
+To start creating results, click the component title in the navigation bar or in the component list, or click the
+image:icons/action_edit.png[Manage component icon] icon on the components list.
 
 image::components/accountability/new_result_button.png[New result button]
 
@@ -64,7 +66,7 @@ image::components/accountability/new_result.png[New result form]
 |Projets qui sont à l'origine du résultat.
 |===
 
-== Gérer les résultats
+=== Gérer les résultats
 
 Sur la liste des résultats dans le panneau d'administration, les administrateurs peuvent voir :
 
@@ -81,7 +83,7 @@ Vous pouvez également rechercher des résultats par leur ID et leur titre dans 
 
 image::components/accountability/results_list_filter.png[New result button]
 
-== Actions
+=== Actions
 
 .Actions - Responsabilité
 [cols="10h,20h,~"]
