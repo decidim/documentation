@@ -19,7 +19,9 @@ Une fois que vous avez créé un processus, dans le panneau de navigation second
 * xref:admin:spaces/processes/private_participants.adoc[Utilisateurs privés]
 * xref:admin:spaces/processes/moderations.adoc[Moderations]
 
-== Informations générales
+== Configuration
+
+=== Informations générales
 
 Cette section permet de fournir une description générale du processus, principalement un titre, une URL et une description.
 
@@ -72,7 +74,7 @@ commencer par une lettre.
 |Visible dans le bloc "Annoncement".
 |===
 
-== Durée
+=== Durée
 
 Cette section permet de fournir des informations sur les dates de début et de fin du processus.
 Il peut être activé sur la page d'accueil avec le bloc "Phase & durée".
@@ -93,7 +95,7 @@ image::spaces/processes/processes_new_form_duration.png[New participatory proces
 |Quand ce processus démarre. Vous avez un widget calendrier pour choisir la journée. Format attendu : jj/mm/aaaa
 |===
 
-== Images
+=== Images
 
 image::spaces/processes/processes_new_form_images.png[New participatory process form images section]
 
@@ -108,10 +110,10 @@ image::spaces/processes/processes_new_form_images.png[New participatory process 
 Pour les images, utilisez de préférence des images paysagères, le service récolte l'image. Taille maximale du fichier : 10 Mo
 |===
 
-== Métadonnées
+=== Métadonnées
 
 Cette section permet de fournir des méta-informations sur le processus.
-Il peut être activé sur la page d'accueil avec le bloc "Metadata".
+It can be enabled on the landing page with the "Metadata" landing page block.
 
 image::spaces/processes/processes_new_form_metadata.png[New participatory process form metadata section]
 
@@ -122,30 +124,30 @@ image::spaces/processes/processes_new_form_metadata.png[New participatory proces
 
 |Groupe de promoteurs
 |Facultatif
-|Si un groupe spécifique est à l'origine du processus, comme une direction de ville, un comité d'association, etc.
+|If a specific group is at the origin of the process, like a city direction, an association committee, etc.
 
 |Zone d'organisation
 |Facultatif
-|Le domaine ou la catégorie de l'organisation, s'il est pertinent.
+|The organization domain or category, if it's relevant.
 
 |Métadonnées du périmètre d'application
 |Facultatif
-|Métadonnées sur la portée du processus, si elle est pertinente.
+|Metadata on the process scope, if it's relevant.
 
 |Qui participe
 |Facultatif
-|Qui sont les participants autorisés, qui peuvent participer au processus.
+|Who are the authorized participants, who can participate to the process.
 
 |Ce qui est décidé
 |Facultatif
-|La question du processus, l'objet de ce qui est décidé.
+|The issue of the process, the object of what is decided.
 
 |Comment est-il décidé
 |Facultatif
-|Le processus de prise de décision.
+|The decision making process.
 |===
 
-== Filtres
+=== Filtres
 
 Cette section détermine les filtres disponibles dans le processus, dans les différents composants.
 Les filtres peuvent ensuite être activés et configurés dans chaque composant.
@@ -177,7 +179,7 @@ Provinces -> Villes -> Districts, et que le processus concerne une ville particu
 |Ce que xref:admin:settings/areas.adoc[Area] fait appartient à ce processus.
 |===
 
-== Visibilité
+=== Visibilité
 
 Cette section permet aux administrateurs de configurer le placement du processus dans les différentes pages et sa publicité ou non.
 
@@ -202,7 +204,7 @@ image::spaces/processes/processes_new_form_visibility.png[New participatory proc
 dans xref:admin:settings/homepage. configuration doc[Homepage].
 |===
 
-== Processus connexes
+=== Processus connexes
 
 Cette section permet de créer des relations entre les processus. C'est différent des groupes de processus.
 Il peut être activé sur la page d'accueil avec le bloc "Processus associés".
@@ -219,7 +221,7 @@ image::spaces/processes/processes_new_form_related_processes.png[New participato
 |Sélectionnez d'autres processus participatifs qui sont liés à celui-ci.
 |===
 
-== Autre
+=== Autre
 
 Cette section est vide, sauf si un administrateur a déjà créé xref:admin:spaces/processes/types.adoc[Process Types].
 Si c'est le cas, vous devriez pouvoir sélectionner un type de processus pour catégoriser le processus.
