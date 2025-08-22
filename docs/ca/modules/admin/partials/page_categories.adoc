@@ -22,13 +22,15 @@ can be defined by the participants.
 
 Categories can be nested, meaning that a category can have subcategories.
 
-== How to find it?
+=== How to find it?
 
 To configure categories, click the *Categories* item in any participatory space.
 
 image::spaces/categories.png[View categories in a space administration page]
 
-== Create a new category
+== Configuration
+
+=== Create a new category
 
 Click in "New category" button on the top right.
 
@@ -52,13 +54,13 @@ image:spaces/categories_new_form.png[Create a new category form]
 |What is the parent category.
 |===
 
-== Manage categories
+=== Manage categories
 
 You can find all the categories on the list in the administration panel, with:
 
 * *Name*: name of the category, given when creating or editing it by the administrator.
 
-== Actions
+=== Actions
 
 .Categories actions in categories list
 [cols="10h,20h,~"]
