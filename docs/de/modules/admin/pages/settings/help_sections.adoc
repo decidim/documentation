@@ -1,5 +1,7 @@
 = Hilfe-Abschnitte
 
+== Understand the basics
+
 On each participatory space index and landing page, you can see a "Help" button on the right border of the page.
 
 image::settings/help_sections_frontend_hide.png[Help sections: hide]
@@ -12,7 +14,9 @@ Administrators can customize these *help sections* to adapt them to the instance
 
 image::settings/help_sections_backend.png[Help sections: backend]
 
-== Deaktivieren
+== Konfiguration
+
+=== Deaktivieren
 
 You can hide these information boxes by leaving the contents all empty for every language.
 
