@@ -1,8 +1,12 @@
 = Modèles de questionnaires
 
+== Understand the basics
+
 Dans cette section, vous pouvez créer, modifier et supprimer des modèles de questionnaires, que vous pouvez ensuite utiliser dans n'importe quel composant d'enquête.
 
-== Créer un modèle de questionnaire
+== Configuration
+
+=== Créer un modèle de questionnaire
 
 Pour créer un nouveau modèle de questionnaire, vous devez cliquer sur le bouton "Nouveau modèle".
 
@@ -37,7 +41,7 @@ image::templates/templates_questionnaires_backend_survey_preview.png[Backend: ne
 
 Cliquez à nouveau sur le bouton "Enregistrer" pour enregistrer votre modèle.
 
-== Gérer les modèles
+=== Gérer les modèles
 
 Tous les questionnaires apparaissent dans la liste des questionnaires :
 
