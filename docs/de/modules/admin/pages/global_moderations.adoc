@@ -42,7 +42,7 @@ the administrator navigation bar.
 
 image::moderations/moderations_menu.png[Global moderations menu]
 
-The Global moderations panel allows to manage reported contents as well as reported participants.
+The Global moderations panel allows to manage xref:admin:moderations/reported_content.adoc[Reported content] as well as xref:admin:moderations/reported_users.adoc[Reported participants].
 
 image:moderations/moderations_backend_list_content.png[Global moderations panel for content]
 
