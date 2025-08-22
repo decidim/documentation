@@ -22,13 +22,15 @@ peuvent être définis par les participants.
 
 Les catégories peuvent être imbriquées, ce qui signifie qu'une catégorie peut avoir des sous-catégories.
 
-== How to find it?
+=== How to find it?
 
-Pour configurer les catégories, cliquez sur l'élément *Catégories* dans n'importe quel espace participatif.
+To configure categories, click the *Categories* item in any participatory space.
 
 image::spaces/categories.png[View categories in a space administration page]
 
-== Créer une nouvelle catégorie
+== Configuration
+
+=== Créer une nouvelle catégorie
 
 Cliquez sur le bouton "Nouvelle catégorie" en haut à droite.
 
@@ -52,13 +54,13 @@ image:espaces/categories_new_form.png[Créer un nouveau formulaire de catégorie
 |Quelle est la catégorie parente?
 |===
 
-== Gérer les catégories
+=== Gérer les catégories
 
 Vous pouvez trouver toutes les catégories dans la liste dans le panneau d'administration, avec:
 
 * *Nom*: nom de la catégorie, donné lors de la création ou de l'édition par l'administrateur.
 
-== Actions
+=== Actions
 
 .Actions des catégories dans la liste des catégories
 [cols="10h,20h,~"]
