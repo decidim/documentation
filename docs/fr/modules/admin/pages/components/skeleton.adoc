@@ -92,7 +92,7 @@ image:components/skeleton/component.png[Ajouter un formulaire de composant]
 |Une annonce générale qui sera visible sur la page d'atterrissage générale du squelette.
 |===
 
-== Gérer les squelettes
+=== Gérer les squelettes
 
 image:components/skeleton/manage_skeletons.png[Gérer la table des squelettes]
 
@@ -107,7 +107,7 @@ Permet d'exporter les squelettes dans différents formats.
 * Commentaires en JSON
 * Commentaires en tant qu'Excel
 
-== Nouveau formulaire de squelette
+=== Nouveau formulaire de squelette
 
 image:components/skeleton/new_skeleton.png[Nouvelle forme de squelette]
 
@@ -140,7 +140,7 @@ image:components/skeleton/new_skeleton.png[Nouvelle forme de squelette]
 |Aperçu
 |Pour voir comment il est montré dans le frontend aux participants.
 
-|image:icons/action_list.png[Gérer l'icône des projets]
+|image:icons/action_list.png[Manage projects icon]
 |xref:_manage_projects[Gérer les projets]
 |Vous permet de gérer les projets d'un squelette.
 
