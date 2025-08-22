@@ -1,5 +1,7 @@
 = Conflit de vérification
 
+== Understand the basics
+
 Un conflit de vérification peut se produire lorsque les autorisations sont activées, et que certains participants créent plusieurs comptes
 ou se font passer pour un usurpateur.
 
@@ -21,7 +23,9 @@ image:participants/verifications_conflicts.png[Panneau de conflits de vérificat
 
 En cas de conflit de vérification, les administrateurs reçoivent une notification par courriel.
 
-== Gérer les conflits de vérifications
+== Configuration
+
+=== Gérer les conflits de vérifications
 
 Dans le panneau de vérification de conflit, vous pouvez trouver tous les conflits, avec:
 
