@@ -1,9 +1,13 @@
 = Code par lettre postale d'autorisation
 
+== Understand the basics
+
 Cette autorisation permet à un participant de demander un code de vérification à envoyer à une adresse, pour confirmer qu'ils
 vivent ou travaillent dans cet endroit. Ils doivent ensuite remplir le code reçu dans la plate-forme.
 
 NOTE: Si vous ne voulez pas collecter de données, vous devez le désactiver dans le panneau système xref:configure:system.adoc[System panel].
+
+== Configuration
 
 Le processus est :
 
@@ -13,7 +17,7 @@ Le processus est :
 . Une fois que vous avez marqué la lettre comme envoyée, le participant est en mesure d'introduire le code.
 . Si ce code correspond, alors il sera vérifié.
 
-== 1. Demande de code de vérification
+=== 1. Demande de code de vérification
 
 By going to the authorization section in its profile, or by clicking on the action button if this permission is requested,
 a participant can see the form requesting their full address.
@@ -27,7 +31,7 @@ image::participants/authorizations_code_postal_letter_edit.png[Edit the postal l
 C'est parce que la lettre pourrait être en cours d'envoi. Si cela doit être corrigé, alors le participant a besoin de
 pour contacter un administrateur de la plateforme.
 
-== 2. Revue de l'administrateur
+=== 2. Revue de l'administrateur
 
 Dans le panneau d'administration, l'administrateur peut consulter la demande en allant à la section « Code par lettre postale » de la section « Participants ».
 
@@ -36,7 +40,7 @@ image::participants/authorizations_code_postal_letter_ongoing.png[Code by postal
 Ici, ils peuvent voir le code de vérification et l'envoyer au participant par lettre postale. Une fois le code envoyé, ils peuvent le marquer
 en tant que tel avec l'icône image:icons/action_verify.png[Marquer comme envoyé]. Il sera également affiché quand la lettre a été envoyée.
 
-== 3. Valider le code du participant
+=== 3. Valider le code du participant
 
 Une fois que le participant a reçu le code, il peut aller dans les paramètres de son compte et cliquer dans la méthode de vérification "Code par lettre postale"
 .
@@ -47,7 +51,7 @@ Ensuite, ils peuvent remplir le formulaire avec le code qu'ils ont reçu.
 
 image::participants/authorizations_code_postal_letter_confirm.png[Code by postal letter confirmation form]
 
-== 4. Correspondance de code
+=== 4. Correspondance de code
 
 Si le code de vérification correspond, alors le participant voit le message "Félicitations. Vous avez été vérifié avec succès. »
 
