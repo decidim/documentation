@@ -1,5 +1,7 @@
 = Bereiche
 
+== Understand the basics
+
 Bereiche sind eine Reihe von Territorien oder Subjekten, die eine Organisation hat. Ein Bereich kann Kindespektraten haben.
 
 For instance, in the case of the city of Barcelona the scopes correspond to its districts, and the children of a
@@ -10,7 +12,9 @@ Die meisten Komponenten und Leerzeichen in Decidim erlauben es Ihnen, die Bereic
 
 image::settings/scopes_list.png[Scopes list]
 
-== Create a scope type
+== Konfiguration
+
+=== Create a scope type
 
 To create a scope type, click the "Add" button in the Scope types tab.
 
@@ -30,7 +34,7 @@ image::settings/scopes_types_new_form.png[New scope type form]
 |Name des Geltungsbereichs im Plural.
 |===
 
-== Create a scope
+=== Create a scope
 
 To create a scope, click the "Add" button in the Scope tab.
 
@@ -54,7 +58,7 @@ image::settings/scopes_new_form.png[New scope form]
 |Which type of scope it's related to. It can be blank.
 |===
 
-== Aktionen
+=== Aktionen
 
 .Aktionen
 [cols="10h,20h,~"]
@@ -74,14 +78,7 @@ image::settings/scopes_new_form.png[New scope form]
 |Diesen Bereich löschen.
 |===
 
-== Funktionen
-
-Die wichtigsten Funktionen im Zusammenhang mit den Bereichen sind:
-
-. Filtern
-. Nutzerinteressen und Newsletter
-
-=== Filtern
+=== Content filtering
 
 Die meisten Leerzeichen und Komponenten ermöglichen es einem Administrator oder einem Teilnehmer, diese einem Anwendungsbereich zuzuordnen.
 Dies erlaubt es, nach Bereichen zu filtern, wenn Sie sie erforschen.
