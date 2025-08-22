@@ -3,10 +3,14 @@
 
 = Configuration
 
+== Understand the basics
+
 Dans cette page, vous pouvez configurer les paramètres généraux de Decidim, comme le nom de l'instance, la notification de bienvenue, les fonctionnalités
 générales, les langues disponibles, etc.
 
-== Configurations disponibles
+== Configuration
+
+=== Edit organization
 
 image::settings/admin_configuration.png[Decidim Admin Configuration]
 
