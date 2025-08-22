@@ -1,10 +1,14 @@
 = Contenu signalé
 
+== Understand the basics
+
 Lors de la rédaction des conditions générales de votre plateforme, ou de votre tableau de participation, vous voulez vous assurer que les participants
 respectent les règles de participation dans le contenu qu'ils écrivent.
 Tous les participants peuvent rapporter des commentaires, des propositions, des débats, etc.
 
-== Signaler un contenu
+== Configuration
+
+=== Signaler un contenu
 
 N'importe quel participant connecté peut rapporter du contenu, en cliquant sur le bouton "Rapport" disponible à côté de la ressource.
 
@@ -16,7 +20,7 @@ Les participants doivent sélectionner une raison pour le rapport et peuvent ajo
 
 image:moderations/moderation_modal.png[Donner raison de modération modale]
 
-== Gérer le contenu signalé
+=== Gérer le contenu signalé
 
 Après qu'un participant a signalé un contenu, il apparaît dans deux sections du panneau d'administration :
 
