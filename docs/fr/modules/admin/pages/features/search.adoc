@@ -6,16 +6,16 @@
 de manière générale et spécifique, en recherchant dans un processus participatif spécifique ou à l'intérieur de ses composantes
 (propositions, résultats, etc.). , par le biais de recherches avancées.
 
-== How to find it?
+=== How to find it?
 
-Le moteur de recherche est accessible dans l'en-tête de l'instance, à côté du logo de votre plate-forme.
+The search engine is accessible in the instance header, next to your platform logo.
 
 image::features/search/search_input.png[Search input in frontend navigation bar]
 
-Dans la barre de recherche, vous pouvez entrer un mot ou simplement faire une recherche vide pour accéder à la page de résultats de recherche.
+In the search bar, you can enter a word or just do an empty search to access the search results page.
 
 image::features/search/search_page.png[Search results page example]
 
-Le moteur de recherche recherche la saisie dans tous les titres et descriptions des ressources.
+The search engine searches for the entry in all the resources titles and descriptions.
 
-Vous pouvez également filtrer la recherche en cliquant sur les types de ressources dans la gauche.
+You can also filter the search by clicking the resources types in the left.
