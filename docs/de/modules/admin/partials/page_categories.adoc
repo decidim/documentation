@@ -22,13 +22,15 @@ can be defined by the participants.
 
 Kategorien können verschachtelt werden, was bedeutet, dass eine Kategorie Unterkategorien haben kann.
 
-== How to find it?
+=== How to find it?
 
 To configure categories, click the *Categories* item in any participatory space.
 
 image::spaces/categories.png[View categories in a space administration page]
 
-== Neue Kategorie erstellen
+== Konfiguration
+
+=== Neue Kategorie erstellen
 
 Click in "New category" button on the top right.
 
@@ -52,13 +54,13 @@ image:spaces/categories_new_form.png[Neues Kategorie-Formular erstellen]
 |Was ist die übergeordnete Kategorie.
 |===
 
-== Manage categories
+=== Manage categories
 
 You can find all the categories on the list in the administration panel, with:
 
 * *Name*: name of the category, given when creating or editing it by the administrator.
 
-== Aktionen
+=== Aktionen
 
 .Categories actions in categories list
 [cols="10h,20h,~"]
