@@ -7,7 +7,9 @@ They are usually created by administrators, but participants can also create mee
 
 Administrators can perform different actions on meetings, depending if they are created from the administration or by participants.
 
-== Official meetings
+== Configuration
+
+=== Official meetings
 
 image::components/meetings/new_meeting_form_backend.png[Create a new meeting form (backend)]
 
@@ -118,7 +120,7 @@ a place for children, deaf assistance, translations, etc. You can have multiple 
 |Description of the service.
 |===
 
-=== Actions
+==== Actions
 
 .Actions - Official meetings
 [cols="10h,20h,~"]
@@ -179,7 +181,7 @@ who can *Join* a meeting.
 |To delete this meeting.
 |===
 
-== Participants meetings
+=== Participants meetings
 
 Meetings can be created by participants if the component setting "Participants can create meetings" is checked.
 If a participant belongs to a verified xref:admin:participants/groups.adoc[user group], then they are also able to create meetings
@@ -271,7 +273,7 @@ with another service.
 
 After creating the meeting, participants can also edit and xref:components/meetings/close.adoc[close] it.
 
-=== Actions
+==== Actions
 
 .Actions - Citizens meetings
 [cols="10h,20h,~"]
@@ -287,7 +289,7 @@ After creating the meeting, participants can also edit and xref:components/meeti
 |To handle the authorizations needed to join, comment or reply to the poll for this specific meeting.
 |===
 
-== Online meetings
+=== Online meetings
 
 For online meetings, depending in the moment and configuration of the meeting, different messages are shown to the participants to
 inform them on how to join the online meeting.
