@@ -1,5 +1,7 @@
 = Authorizations
 
+== Understand the basics
+
 Authorizations allow to give specific participation rights to participants who have completed a verification process.
 This verification process can be direct, have multiple steps, be online or in-person.
 
@@ -8,7 +10,9 @@ proposals in a specific participatory process.
 
 NOTE: Several authorizations are available by default, but you can also develop your own authorizations.
 
-== Enable / disable authorizations
+== Configuration
+
+=== Enable / disable authorizations
 
 To enable an authorization, you need to have access to the xref:configure:system.adoc[System panel] or ask the instance implementer.
 To understand more what are authorizations and how to configure them, please refer to the
@@ -16,7 +20,7 @@ xref:customize:authorizations.adoc[Authorizations section in the Customize Guide
 
 Participants can access, update, or delete their authorizations in their xref:admin:features/participant_actions/my_account.adoc[account].
 
-== Verification methods
+=== Verification methods
 
 Some of the available authorizations by default are:
 
@@ -27,7 +31,7 @@ Some of the available authorizations by default are:
 If any of these authorizations are not useful for your needs, talk with your implementer to see other alternatives. Learn
 more about xref:customize:authorizations.adoc[Authorizations in the Customize Guide section].
 
-== Authorizations revocation
+=== Authorizations revocation
 
 A default Decidim installation don't have verified participants.
 
