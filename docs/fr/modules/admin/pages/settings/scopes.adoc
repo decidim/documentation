@@ -1,5 +1,7 @@
 = Portées
 
+== Understand the basics
+
 Les champs d'application sont l'ensemble des territoires ou des sujets qu'une Organisation possède. Une portée peut avoir des portées enfants.
 
 Par exemple, dans le cas de la ville de Barcelone, les périmètres correspondent à ses quartiers, et les enfants d'un quartier
@@ -10,7 +12,9 @@ La plupart des composants et des espaces de Decidim vous permettent de configure
 
 image::settings/scopes_list.png[Scopes list]
 
-== Créer un type de périmètre d'application
+== Configuration
+
+=== Créer un type de périmètre d'application
 
 Pour créer un type de périmètre, cliquez sur le bouton "Ajouter" dans l'onglet Types de portée.
 
@@ -30,7 +34,7 @@ image::settings/scopes_types_new_form.png[New scope type form]
 |Nom du type de portée au pluriel.
 |===
 
-== Créer un périmètre d'application
+=== Créer un périmètre d'application
 
 Pour créer un périmètre, cliquez sur le bouton "Ajouter" dans l'onglet Périmètre d'application.
 
@@ -54,7 +58,7 @@ image::settings/scopes_new_form.png[New scope form]
 |Le type de portée auquel il est lié. Il peut être vide.
 |===
 
-== Actions
+=== Actions
 
 .Actions
 [cols="10h,20h,~"]
@@ -74,14 +78,7 @@ image::settings/scopes_new_form.png[New scope form]
 |Supprimer ce périmètre.
 |===
 
-== Fonctionnalités
-
-Les principales fonctionnalités liées aux portées sont:
-
-. Filtrage
-. Intérêts des utilisateurs et newsletters
-
-=== Filtrage
+=== Content filtering
 
 La plupart des espaces et des composants permettent à un administrateur ou à un participant de les associer à une portée.
 Cela permet de filtrer par périmètre lors de leur exploration.
