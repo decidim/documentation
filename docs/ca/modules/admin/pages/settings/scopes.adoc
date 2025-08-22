@@ -1,5 +1,7 @@
 = Scopes
 
+== Understand the basics
+
 Scopes are the set of territories or subjects that an Organization has. A scope may have child scopes.
 
 For instance, in the case of the city of Barcelona the scopes correspond to its districts, and the children of a
@@ -10,7 +12,9 @@ Most of the components and spaces in Decidim allow you to configure Scopes in on
 
 image::settings/scopes_list.png[Scopes list]
 
-== Create a scope type
+== Configuration
+
+=== Create a scope type
 
 To create a scope type, click the "Add" button in the Scope types tab.
 
@@ -30,7 +34,7 @@ image::settings/scopes_types_new_form.png[New scope type form]
 |Name of the scope type in plural.
 |===
 
-== Create a scope
+=== Create a scope
 
 To create a scope, click the "Add" button in the Scope tab.
 
@@ -54,7 +58,7 @@ image::settings/scopes_new_form.png[New scope form]
 |Which type of scope it's related to. It can be blank.
 |===
 
-== Actions
+=== Actions
 
 .Actions
 [cols="10h,20h,~"]
@@ -74,14 +78,7 @@ image::settings/scopes_new_form.png[New scope form]
 |To delete this scope.
 |===
 
-== Features
-
-The main features related with scopes are:
-
-. Filtering
-. User interests and Newsletters
-
-=== Filtering
+=== Content filtering
 
 Most of the spaces and components allows an administrator or a participant to associate them to a scope.
 This allows to filter by scopes when exploring them.
