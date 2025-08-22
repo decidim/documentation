@@ -42,7 +42,7 @@ la barre de navigation de l'administrateur.
 
 image::moderations/moderations_menu.png[Global moderations menu]
 
-Le panel de modération globale permet de gérer les contenus signalés ainsi que les participants signalés.
+The Global moderations panel allows to manage xref:admin:moderations/reported_content.adoc[Reported content] as well as xref:admin:moderations/reported_users.adoc[Reported participants].
 
 image:moderations/moderations_backend_list_content.png[Panneau de modération globale pour le contenu]
 
