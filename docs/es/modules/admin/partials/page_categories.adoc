@@ -22,13 +22,15 @@ can be defined by the participants.
 
 Las categorías pueden ser anidadas, lo que significa que una categoría puede tener subcategorías.
 
-== How to find it?
+=== How to find it?
 
 To configure categories, click the *Categories* item in any participatory space.
 
 image::spaces/categories.png[View categories in a space administration page]
 
-== Crear una nueva categoría
+== Configuración
+
+=== Crear una nueva categoría
 
 Click in "New category" button on the top right.
 
@@ -52,13 +54,13 @@ imagen:spaces/categories_new_form.png[Crear un nuevo formulario de categoría]
 |¿Cuál es la categoría padre.
 |===
 
-== Manage categories
+=== Manage categories
 
 You can find all the categories on the list in the administration panel, with:
 
 * *Name*: name of the category, given when creating or editing it by the administrator.
 
-== Acciones
+=== Acciones
 
 .Categories actions in categories list
 [cols="10h,20h,~"]
