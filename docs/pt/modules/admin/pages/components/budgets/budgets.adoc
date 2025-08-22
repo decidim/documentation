@@ -21,7 +21,7 @@ The first thing to do is to create your first budget, by clicking the "New budge
 
 image::components/budgets/new_budget_button.png[New budget button]
 
-== Budget creation
+=== Budget creation
 
 image::components/budgets/new_budget.png[New budget form]
 
@@ -48,7 +48,7 @@ For instance, if you have two budgets, "Budget a" with weight "10" and "Budget b
 |The total amount of money available for this budget.
 |===
 
-== Gerenciar orçamentos
+=== Gerenciar orçamentos
 
 image::components/budgets/manage_budgets.png[Manage budgets table]
 
@@ -86,7 +86,7 @@ You can also export all the projects of the component in different formats in CS
 |Para excluir este orçamento. Can only be done when there aren't any projects.
 |===
 
-== Workflows
+=== Workflows
 
 Uma característica nítida do componente Orçamentos é a capacidade de definir seus próprios fluxos de trabalho.
 
