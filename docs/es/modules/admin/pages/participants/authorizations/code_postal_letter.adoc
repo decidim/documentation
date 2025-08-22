@@ -1,9 +1,13 @@
 = Código por autorización de carta postal
 
+== Understand the basics
+
 This authorization allows a participant to request for a verification code to be sent to an address, to confirm that they
 live or work in this place. They then need to fill the received code in the platform.
 
 NOTE: If you don't want to collect any data, you should turn it off in the xref:configure:system.adoc[System panel].
+
+== Configuración
 
 El proceso es:
 
@@ -13,7 +17,7 @@ El proceso es:
 . Once you mark the letter as sent, the participant is able to introduce the code.
 . If this code matches, then they get verified.
 
-== 1. Verification code request
+=== 1. Verification code request
 
 By going to the authorization section in its profile, or by clicking on the action button if this permission is requested,
 a participant can see the form requesting their full address.
@@ -27,7 +31,7 @@ image::participants/authorizations_code_postal_letter_edit.png[Edit the postal l
 Esto se debe a que la carta podría ser enviada. If this needs to be corrected, then the participant needs
 to contact a platform administrator.
 
-== 2. Administrator review
+=== 2. Administrator review
 
 In the administration panel, the administrator can review the request by going to the "Code by postal letter" in the "Participants" section.
 
@@ -36,7 +40,7 @@ image::participants/authorizations_code_postal_letter_ongoing.png[Code by postal
 Here they can see the verification code and can send it to the participant by postal letter. After the code is sent they can mark it
 as such with the icon image:icons/action_verify.png[Mark as sent]. También se mostrará cuando la carta fue enviada.
 
-== 3. Participant validate the code
+=== 3. Participant validate the code
 
 After the participant has received the code, they can go to their account settings and click in the "Code by postal letter"
 verification method.
@@ -47,7 +51,7 @@ Then they can fill the form with the code they received.
 
 image::participants/authorizations_code_postal_letter_confirm.png[Code by postal letter confirmation form]
 
-== 4. Code match
+=== 4. Code match
 
 If the verification code matches, then the participant sees the message "Congratulations. You've been successfully verified."
 
