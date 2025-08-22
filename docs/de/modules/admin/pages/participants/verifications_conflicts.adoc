@@ -1,5 +1,7 @@
 = Verifications conflicts
 
+== Understand the basics
+
 A verification conflict can happen when authorizations are enabled, and some participants create several accounts
 or get impersonated.
 
@@ -21,7 +23,9 @@ image:participants/verifications_conflicts.png[Verification's conflicts panel]
 
 When there is a verification conflict, administrators receive an email notification.
 
-== Manage verifications conflicts
+== Konfiguration
+
+=== Manage verifications conflicts
 
 In the verifications conflict panel, you can find all the conflicts, with:
 
