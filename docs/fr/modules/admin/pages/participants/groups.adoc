@@ -1,19 +1,23 @@
 = Groupes d'utilisateurs
 
+== Understand the basics
+
 Les groupes d'utilisateurs sont des entités créées par les participants pour représenter une structure, un club, une association, etc.
 Les groupes d'utilisateurs peuvent être gérés par différents administrateurs, et ont plusieurs membres.
 Si un administrateur vérifie un groupe d'utilisateurs, alors tous les administrateurs du groupe d'utilisateurs peuvent participer au nom du groupe.
 
 image::participants/user_group_frontend_show.png[Frontend: show a user group]
 
-== Activer / désactiver les groupes d'utilisateurs
+== Configuration
+
+=== Activer / désactiver les groupes d'utilisateurs
 
 Les administrateurs peuvent activer ou désactiver les groupes d'utilisateurs dans le panneau xref:admin:settings/configuration.adoc[Configuration].
 
 Lorsqu'il est activé, les participants peuvent créer et gérer des groupes à partir de leur profil.
 Pour en savoir plus sur la façon dont les participants peuvent le faire, allez dans l'article xref:admin:features/participant_actions/my_public_profile.adoc[public].
 
-== Gérer les groupes d'utilisateurs
+=== Gérer les groupes d'utilisateurs
 
 Lorsqu'un participant crée un groupe d'utilisateurs, il ajoute une ligne dans la liste des groupes d'utilisateurs dans le panneau d'administration, avec:
 
