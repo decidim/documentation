@@ -1,5 +1,7 @@
 = Administradores
 
+== Understand the basics
+
 Administrators are the persons managing the organization, creating the processes, managing the platform as a whole
 They can be of two types:
 
@@ -8,7 +10,9 @@ They can be of two types:
 
 image:participants/admins.png[Admins list]
 
-== Invite an administrator
+== Configuración
+
+=== Invite an administrator
 
 To invite an administrator, click the "New admin" button at the top right of the page.
 Puede invitar a un participante ya inscrito o no inscrito.
@@ -36,7 +40,7 @@ email to create an account. Otherwise, they won't be notified.
 
 If an administrator doesn't already have an account, but didn't register, you can also Resend the invitation.
 
-== Manage administrators
+=== Manage administrators
 
 You can find all the administrators on the administrators list in the administration panel, with:
 
