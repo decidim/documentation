@@ -21,6 +21,8 @@ In this documentation section, you can find how to configure and manage all of t
 
 == Configuração
 
+=== Budget component creation
+
 To create a Budgets component component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
 
 image::components/budgets/component_budgets.png[Add Budgets component button]
@@ -150,7 +152,7 @@ image::components/budgets/component_03.png[Add component form - Step settings]
 |The message shown when clicking on the "More information" link for this phase.
 |===
 
-== Resultados
+=== Publish the results
 
 After the voting has finished, an administrator need to:
 
