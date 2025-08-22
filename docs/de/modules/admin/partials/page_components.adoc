@@ -11,7 +11,7 @@ components enabled in an assembly space.
 
 partielle$components_list.adoc[]
 
-== How to find it?
+=== How to find it?
 
 To configure components, click the *Components* item in any participatory space.
 
@@ -19,7 +19,9 @@ image::spaces/components/components.png[Components of space]
 
 There, you are able to manage the already added components, configure them, add new ones, etc.
 
-== Manage components
+== Konfiguration
+
+=== Manage components
 
 You can find all the components on the list in the administration panel, with:
 
@@ -27,14 +29,14 @@ You can find all the components on the list in the administration panel, with:
 * *Component type*: type of the component.
 * *Component scope*: in a same space, components can have different scopes.
 
-== Create a component
+=== Create a component
 
 To configure a new component, click the *Add component* from the upper right part of the screen and select the type of
 component you want.
 
 image::spaces/components/components_new_dropdown.png[Add a component in a space]
 
-== Aktionen
+=== Aktionen
 
 .Components actions in component list
 [cols="10h,20h,~"]
