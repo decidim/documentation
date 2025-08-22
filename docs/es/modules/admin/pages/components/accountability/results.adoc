@@ -7,9 +7,11 @@ statuses, and dates assigned.
 
 Administrators can also create sub-results, to detail the elements needed for a result implementation.
 
-== Create a result
+== Configuración
 
-To start creating results, click on the component title in the navigation bar or in the component list, or click on the
+=== Create a result
+
+To start creating results, click the component title in the navigation bar or in the component list, or click the
 image:icons/action_edit.png[Manage component icon] icon on the components list.
 
 image::components/accountability/new_result_button.png[New result button]
@@ -64,7 +66,7 @@ image::components/accountability/new_result.png[New result form]
 |Projects that originated the result.
 |===
 
-== Manage results
+=== Manage results
 
 On the results list in the administration panel, administrators can see:
 
@@ -81,7 +83,7 @@ You can also search for results by their ID and title in the search bar.
 
 image::components/accountability/results_list_filter.png[New result button]
 
-== Acciones
+=== Acciones
 
 .Actions - Accountability
 [cols="10h,20h,~"]
