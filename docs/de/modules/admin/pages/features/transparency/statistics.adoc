@@ -5,9 +5,9 @@
 Decidim liefert allgemeine Statistiken über die gesamte Plattform und verschiedene Beteiligungsräume können auch Statistiken über diesen partizipatorischen Raum liefern.
 Dies sind generische Zahlen, die die Aktivität der Website angeben und können auch andere Menschen ermutigen, der Plattform beizutreten, wie sie es für beliebt halten.
 
-== The types of data
+=== How to find it?
 
-=== Statistiken
+==== Statistiken
 
 The homepage configuration allows administrators to enable a statistics content block to be displayed on the homepage.
 
@@ -17,7 +17,7 @@ Administrators can also enable metrics in a participatory process or an assembly
 
 image::features/metrics/example_stats.png[Example of statistics]
 
-=== Metriken
+==== Metriken
 
 NOTE: Sie suchen nach technischen Möglichkeiten, um diese Funktion zu aktivieren? Go to xref:develop:metrics.adoc[Metrics in Developers guide].
 
