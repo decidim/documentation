@@ -5,76 +5,76 @@
 Chaque participant a un profil public qui montre des détails à son sujet et son activité sur l'instance.
 Cette page de profil est accessible à tous les participants et visiteurs.
 
-== How to find it?
+=== How to find it?
 
-Pour voir le profil public d'un participant, cliquez directement dans son avatar ou son nom d'utilisateur dans le tool-tip du participant.
+To see a participant public profile, click directly in their avatar or their user name in the participant tool-tip.
 
 image::features/my_profile/profile_pop_up.png[Participant tool-tip]
 
-En tant que participant connecté, vous pouvez accéder à votre profil public à partir de deux endroits :
+As a signed in participant, you can access your public profile from two places:
 
-. Cliquez sur votre avatar dans l'en-tête, puis cliquez dans le menu "Mon profil public"
-. Cliquez sur le lien "Mon profil public" dans le pied de page, dans la section "Mon compte"
+. Click in your avatar in the header, and then click in the "My public profile" menu item
+. Click in the "My public profile" link in the footer, in the "My account" section
 
 image::features/my_profile/profile_dropdown.png[Frontend user menu dropdown]
 
-== Onglets de profil
+=== Profile tabs
 
-Vous y trouverez différents onglets.
+There, you'll find different tabs.
 
-NOTE: Vous pouvez ne pas voir l'onglet Badges et Groupes si vous ne les avez pas activés dans le panneau
-xref:admin:settings/configuration.adoc[Configuration].
+NOTE: You might not see the Badges and the Groups tab if you didn't enable them in the
+xref:admin:settings/configuration.adoc[Configuration] panel.
 
-=== Activité
+==== Activity
 
-Cet onglet affiche toute l'activité du participant, en commençant par le contenu le plus récent.
+This tab displays all the activity of the participant, starting with the most recent content.
 
 image::features/my_profile/profile_activity.png[Public profile activity tab]
 
-=== Badges
+==== Badges
 
 Les badges du profil public montrent quels badges le participant a accumulé et quel est son niveau actuel pour chaque badge.
 
-Plus d'informations sur les badges sont disponibles sur la page xref:admin:features/social_features/badges.adoc[Page des badges].
+More information about badges is available on the xref:admin:features/social_features/badges.adoc[Badges feature page].
 
 image::features/my_profile/profile_badges.png[Public profile badges tab]
 
-=== Abonnements
+==== Abonnements
 
 La section suivante contient une liste des participants et des groupes que le participant suit actuellement.
-En suivant un autre participant ou un groupe sur la plateforme, le participant reçoit des notifications sur l'activité
-effectuée par ces participants ou groupes sur la plateforme. Certains participants peuvent également exiger qu'ils doivent suivre
-un participant avant de pouvoir échanger des messages privés entre eux.
+By following another participant or a group on the platform, the participant receives notifications about the activity
+done by those participants or groups on the platform. Some participants may also require that they need to be following
+a participant before they can exchange private messages with each other.
 
 image::features/my_profile/profile_follows.png[Public profile follows tab]
 
-=== Abonnés
+==== Abonnés
 
-La section des abonnés contient une liste des participants et des groupes qui suivent le participant.
+The followers section contains a list of participants and groups that are following the participant.
 
 image::features/my_profile/profile_followers.png[Public profile followers tab]
 
-=== Groupes
+==== Groupes
 
 La section Groupes contient tous les groupes auxquels l'utilisateur appartient.
 
 image::features/my_profile/profile_groups.png[Public profile groups tab]
 
-== Actions disponibles
+== Configuration
 
-=== Quand sur le profil d'un autre participant
+=== When on another participant profile
 
-Les participants connectés peuvent effectuer deux actions depuis une autre page de profil public du participant :
+Logged in participants can perform two actions from another participant public profile page:
 
-. Envoyez-leur un message
-. Suivez les
-. Signalez les
+. Send them a message
+. Follow them
+. Report them
 
-=== Quand vous êtes sur votre propre profil
+=== When on your own profile
 
-Les participants connectés peuvent effectuer deux actions à partir de leur page de profil publique :
+Logged in participants can perform two actions from their public profile page:
 
-. Modifiez leur profil : En cliquant sur ce bouton, ils sont redirigés vers leur xref:admin:features/participant_actions/my_account.adoc[account].
-. Créer un groupe : En cliquant sur ce bouton, ils sont redirigés vers xref:admin:features/participant_actions/group_profile.adoc[formulaire de création de groupe].
+. Edit their profile: When clicking this button, they're redirected to their xref:admin:features/participant_actions/my_account.adoc[account].
+. Create a group: When clicking this button, they're redirected to the xref:admin:features/participant_actions/group_profile.adoc[group creation form].
 
 NOTE: L'option de création de groupe n'est disponible que lorsque les groupes sont activés pour l'organisation.
