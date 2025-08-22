@@ -9,11 +9,11 @@ In Decidim, there are mainly two types of participants:
 
 For one-time participants, the registration and verification process can be a barrier, leading to incomplete participation. To address this, Decidim introduces the Ephemeral Verification Method, allowing users to verify their identity and participate without registering an account.
 
-=== Purpose
+The Ephemeral Verification Method is designed to streamline participation for one-time users by enabling direct verification without requiring account creation.
 
-The Ephemeral Verification Method is designed to streamline participation for one-time users by enabling direct verification without requiring account creation. **This feature is intended for limited durations** **during a specific participatory process**, such as a voting phase of participatory budgeting.
+NOTE: This feature is intended for limited duration during a specific participatory process, such as a voting phase of participatory budgeting.
 
-=== How it works?
+=== How does it works?
 
 This feature allows participants to participate without registering on the platform, by verifying their identity with the system chosen by the organisation. The key features are:
 
