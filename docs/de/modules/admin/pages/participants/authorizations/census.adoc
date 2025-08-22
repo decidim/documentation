@@ -1,5 +1,12 @@
 = Ermächtigung zur Volkszählung der Organisation
 
+== Understand the basics
+
+The Organization's census authorization allows administrators to upload a list of participant's emails, in order to allow this
+list to perform specific actions on the plaform, like creating proposal in a specific space, etc.
+
+== Konfiguration
+
 Der Prozess lautet wie folgt:
 
 . Admins upload a CSV with the emails of the verified participants
@@ -9,7 +16,7 @@ Der Prozess lautet wie folgt:
 NOTE: This authorization is too basic and you need more features related to CSV census imports?
 Check all the CSV or file based authorizations in the https://decidim.org/modules/[Modules page].
 
-== 1. CSV upload
+=== 1. CSV upload
 
 In the administrator panel, you can upload a CSV file by clicking on "Organization's census" in the "Participants" section.
 
@@ -20,14 +27,14 @@ importierte Volkszählung löschen.
 
 image::participants/authorizations_organization_census_imported.png[Imported CSV]
 
-== 2. Participant request
+=== 2. Participant request
 
 Gehen Sie zum Autorisierungsbereich in seinem Profil oder klicken Sie auf die Schaltfläche "Aktion", wenn diese Erlaubnis angefordert wird,
 ein Teilnehmer kann eine Überprüfung beantragen.
 
 image::participants/authorizations_organization_census_account.png[Organization's census in participant's accounts]
 
-== 3. Participant verification
+=== 3. Participant verification
 
 Nach der Überprüfung können sie es wie bei anderen Überprüfungen in ihren Kontoeinstellungen sehen.
 
