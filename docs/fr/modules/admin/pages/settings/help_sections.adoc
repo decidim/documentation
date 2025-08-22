@@ -1,5 +1,7 @@
 = Sections d'aide
 
+== Understand the basics
+
 Sur chaque index d'espace participatif et page de destination, vous pouvez voir un bouton "Aide" sur la bordure droite de la page.
 
 image::settings/help_sections_frontend_hide.png[Help sections: hide]
@@ -12,7 +14,9 @@ Les administrateurs peuvent personnaliser ces *sections d'aide* pour les adapter
 
 image::settings/help_sections_backend.png[Help sections: backend]
 
-== Désactiver
+== Configuration
+
+=== Désactiver
 
 Vous pouvez masquer ces boîtes d'information en laissant tout le contenu vide pour chaque langue.
 
