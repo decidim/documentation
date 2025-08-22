@@ -1,19 +1,23 @@
 = Grupos de usuários
 
+== Understand the basics
+
 User groups are entities created by participants to represent a structure, a club, an association, etc.
 User groups can be managed by different administrators, and have several members.
 If an administrator verifies a user group, then all the user group administrators can participate in the name of the group.
 
 image::participants/user_group_frontend_show.png[Frontend: show a user group]
 
-== Enable / disable user groups
+== Configuração
+
+=== Enable / disable user groups
 
 Administrators can enable or disable user groups in the xref:admin:settings/configuration.adoc[Configuration] panel.
 
 When enabled, participants are able to create and manage groups from their profile.
 To learn more about how participants can do this, go to the xref:admin:features/participant_actions/my_public_profile.adoc[public profile] article.
 
-== Manage user groups
+=== Manage user groups
 
 When a participant creates a user group, it adds a line in the user groups list in the administration panel, with:
 
