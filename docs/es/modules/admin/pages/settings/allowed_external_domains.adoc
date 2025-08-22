@@ -11,6 +11,8 @@ It warns participants that they're leaving your instance.
 
 == Configuración
 
+=== Allow an external domain
+
 There may be some websites redirection for which you don't want this feature enabled.
 For example, if your site is deployed at a URL like `+decidim.example.org+` and you want every `+example.org+` URLs
 to omit this alert message, you can configure this by adding your URL, and as many as you want, in the Allowed external domains page.
