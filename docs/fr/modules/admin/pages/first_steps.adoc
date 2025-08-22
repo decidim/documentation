@@ -1,6 +1,8 @@
 = Premiers pas dans Decidim
 
-== Connectez-vous pour la première fois
+== Understand the basics
+
+=== Connectez-vous pour la première fois
 
 Once you or your developers have successfully installed Decidim, and created an organization in the System panel, you should
 receive an email asking you to complete your account creation.
@@ -12,51 +14,49 @@ L'e-mail d'invitation vous redirige vers un formulaire pour que vous puissiez te
 
 image::first_steps_account_creation.png[Administrator invitation email]
 
-== Découvrez le tableau de bord d'administration
+=== Access the administration dashboard
 
-=== Accéder au tableau de bord d'administration
+After logging in, you can see the platform as a participant, but it's not where you can configure and manage the platform.
+To access the administration dashboard, or administration panel, you can click in three different items:
 
-Après vous être connecté, vous pouvez voir la plate-forme en tant que participant, mais ce n'est pas là où vous pouvez configurer et gérer la plate-forme.
-Pour accéder au tableau de bord de l'administration, ou au panneau d'administration, vous pouvez cliquer sur trois éléments différents :
-
-. Le bouton "Tableau de bord de l'administrateur" à gauche de l'en-tête administrateur que seuls les administrateurs peuvent voir.
-. Le bouton "Modifier" à droite de l'en-tête de l'administrateur.
-. Le bouton "Tableau de bord de l'administrateur" dans la liste déroulante disponible lorsque vous cliquez sur l'avatar de votre compte.
+. The "Admin dashboard" button at the left of the administrator header only administrators can see.
+. The "Edit" button at the right of the administrator header.
+. The "Admin dashboard" button in the drop-down list available when you click your account avatar.
 
 image::admin_dashboard_menu.png[Decidim Admin Dashboard in user menu]
 
-Le bouton "Éditer" redirige vers l'administration de l'espace que vous voyez dans le panneau de participant, alors que les deux autres boutons
-redirigent vers le tableau de bord de l'administration.
+The "Edit" button redirects to the administration of the space you're seeing in the participant panel, whereas the other two buttons
+redirect to the administration dashboard.
 
-=== Conditions d'utilisation des administrateurs
+=== Administrators terms of service
 
-Pour la première fois que vous accédez à l'administration de Decidim, il vous est demandé d'examiner les conditions d'administration du service.
-Cliquez sur le bouton « J'accepte ces conditions » pour pouvoir commencer la configuration de la plate-forme.
+For your first time accessing to the administration of Decidim, you are asked to review the administration terms of service.
+Click on the "I agree with this terms" button to be able to start configuring the platform.
 
 image::admin_tos_pending.png[Decidim Admin Dashboard in user menu]
 
-Ces conditions d'utilisation peuvent vous être utiles si vous commencez à inviter d'autres administrateurs sur la plate-forme, et vous devez être au courant de
-des règles de confidentialité spécifiques, ou de tout ce qui les concerne avant d'avoir accès à l'administration.
+Those terms of service can be useful for you if you start inviting other administrators to the platform, and you need them to be aware
+of specific privacy rules, or anything relevant for them before they have access to the administration.
 
-Ces conditions de service peuvent être configurées dans le panneau de configuration xref:admin:settings/configuration.adoc[panneau de configuration].
+Those terms of service can be configured in the xref:admin:settings/configuration.adoc[Configuration panel].
 
-=== Explication du tableau de bord
+=== Explanation of the dashboard
 
-Une fois que vous avez accepté les conditions d'administration du service, vous pouvez voir le tableau de bord.
-Sur une nouvelle instance, presque aucune donnée n'est affichée, mais vous pouvez voir à quoi elle ressemble sur une instance active :
+Once you accepted the administrator terms of service, you can see the dashboard.
+On a new instance, almost no data is displayed, but you can see how it looks like on an active instance:
 
 image::admin_dashboard.png[Decidim Admin Dashboard]
 
-Vous pouvez voir plusieurs sections sur cette page :
+You can see several sections on this page:
 
-. *Modérations en attente* : met en évidence le nombre de modérations en attente, d'utilisateurs signalés et de contenus combinés.
-. *Activité* : nombre de participants et d'administrateurs qui se sont connectés le mois dernier, la semaine dernière et le dernier jour.
-. *Metrics* : les graphiques pour l'évolution de plusieurs composants à l'intérieur de Decidim:
-. *Journal d'administrateur* : les dernières actions effectuées par tous les administrateurs de la plateforme.
+. *Pending moderations*: highlights the number of pending moderations, reported users and contents combined.
+. *Activity*: number of participants and admins that logged in the last month, last week and last day.
+. *Metrics*: the graphics for the evolution of multiple components inside of Decidim:
+. *Admin log*: last actions made by all the administrators in the platform.
 
-== Navigation d'administration
+=== Administration navigation
 
-Pour naviguer dans le panneau d'administration, vous pouvez cliquer sur tous les éléments affichés dans la barre de navigation verticale à gauche.
+To navigate in the administration panel, you can click in all of the items displayed in the vertical navigation bar on the left.
 
 * xref:admin:spaces/processes.adoc[Concertations]
 * xref:admin:spaces/assemblies.adoc[Assemblies]
@@ -67,5 +67,5 @@ Pour naviguer dans le panneau d'administration, vous pouvez cliquer sur tous les
 * xref:admin:participants.adoc[Utilisateurs]
 * xref:admin:features/social_features/newsletters.adoc[Newsletters]
 * xref:admin:settings.adoc[Settings]
-* Journal d'activité personnel
+* Admin activity log
 * xref:admin:templates.adoc[Templates]
