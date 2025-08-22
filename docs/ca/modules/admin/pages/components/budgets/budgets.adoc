@@ -21,7 +21,7 @@ The first thing to do is to create your first budget, by clicking the "New budge
 
 image::components/budgets/new_budget_button.png[New budget button]
 
-== Budget creation
+=== Budget creation
 
 image::components/budgets/new_budget.png[New budget form]
 
@@ -48,7 +48,7 @@ For instance, if you have two budgets, "Budget a" with weight "10" and "Budget b
 |The total amount of money available for this budget.
 |===
 
-== Manage budgets
+=== Manage budgets
 
 image::components/budgets/manage_budgets.png[Manage budgets table]
 
@@ -86,7 +86,7 @@ You can also export all the projects of the component in different formats in CS
 |To delete this budget. Can only be done when there aren't any projects.
 |===
 
-== Workflows
+=== Workflows
 
 One neat feature of the Budgets component is the ability to define your own workflows.
 
