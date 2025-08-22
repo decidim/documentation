@@ -1,5 +1,7 @@
 = Administrateurs
 
+== Understand the basics
+
 Administrators are the persons managing the organization, creating the processes, managing the platform as a whole
 They can be of two types:
 
@@ -8,7 +10,9 @@ They can be of two types:
 
 image:participants/admins.png[Liste des admins]
 
-== Inviter un administrateur
+== Configuration
+
+=== Inviter un administrateur
 
 Pour inviter un administrateur, cliquez sur le bouton "Nouvel administrateur" en haut à droite de la page.
 Vous pouvez inviter un participant déjà inscrit ou non enregistré.
@@ -36,7 +40,7 @@ pour créer un compte. Sinon, ils ne seront pas notifiés.
 
 Si un administrateur n'a pas encore de compte, mais n'est pas enregistré, vous pouvez également renvoyer l'invitation.
 
-== Gérer les administrateurs
+=== Gérer les administrateurs
 
 Vous pouvez trouver tous les administrateurs dans la liste des administrateurs dans le panneau d'administration, avec:
 
