@@ -1,11 +1,15 @@
 = Identités des participants
 
+== Understand the basics
+
 Parfois, les gens n'ont pas le temps de créer un compte ou n'ont pas la connaissance ou la capacité d'utiliser des outils technologiques.
 Les usurpations permettent aux administrateurs et aux gestionnaires de participants de participer de toute façon.
 
 NOTE: Dans le code et l'interface utilisateur, l'*personnification* et les *Participants gérés* sont les mêmes choses.
 
-== Activer / désactiver les identifications
+== Configuration
+
+=== Activer / désactiver les identifications
 
 Les usurpations d'identité ne sont disponibles que si au moins une autorisation est activée pour l'organisation.
 Indeed, they allow the system to search through a Verification system for an already existing participant, and to create
@@ -27,7 +31,7 @@ image::participants/participants_impersonations_backend_list_logs.png[Administra
 
 image::participants/participants_impersonations_backend_list_button.png[Administrators Impersonations panel with impersonation action]
 
-== Gérer les empreintes digitales
+=== Gérer les empreintes digitales
 
 Vous pouvez trouver tous les participants de la plateforme, avec:
 
