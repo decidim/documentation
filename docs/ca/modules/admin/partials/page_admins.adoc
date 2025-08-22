@@ -13,9 +13,15 @@ They can't edit anything.
 
 === How to find it?
 
+=== How to find it?
+
 To configure space administrators, click the "Process admins" or "Assembly admins" item in the corresponding space.
 
 image::spaces/admins_list.png[Administrators of space]
+
+== Configuration
+
+=== Manage admins
 
 == Configuration
 
@@ -28,6 +34,8 @@ You can find all the administrators on the list in the administration panel, wit
 * *Last log in date*: last time the administrator was logged in.
 * *Invitation accepted at*: date when the administrator accepted the invitation by clicking the link in the invitation email.
 * *Role*: administrator role.
+
+=== Actions
 
 === Actions
 
@@ -44,6 +52,8 @@ You can find all the administrators on the list in the administration panel, wit
 |Delete
 |To delete the space administrator rights. It doesn't delete the account of the administrator.
 |===
+
+=== Add a space administrator
 
 === Add a space administrator
 
@@ -69,7 +79,9 @@ image:spaces/admins_form.png[New space administrator form]
 |Which role does this administrator should have in the space. Can be any of Administrator, Collaborator, Moderator, or Valuator.
 |===
 
-=== Administrators
+=== Roles
+
+==== Administrators
 
 A space administrator can administer the space and change the space settings. They can also invite new space administrators.
 When managing the space, they would only see the following views and tabs.
@@ -78,20 +90,20 @@ image:spaces/admins_role_admin01.png[Process administrators view 01]
 
 image:spaces/admins_role_admin02.png[Process administrators view 02]
 
-=== Collaborators
+==== Collaborators
 
 A space collaborator can preview a space before it's published.
 
 image:spaces/admins_role_collaborator.png[Process collaborators view]
 
-=== Moderators
+==== Moderators
 
 A space moderator can review the reported contents of the space and hide or unhide them. They can also
 access the reported content in the global moderation panel, but don't see the contents reported from other spaces.
 
 image:spaces/admins_role_moderator.png[Process moderators view]
 
-=== Valuators
+==== Valuators
 
 A space valuator can review the proposals of the space that were assigned to them, by:
 
