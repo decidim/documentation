@@ -1,5 +1,7 @@
 = Ámbitos
 
+== Understand the basics
+
 Los alcances son el conjunto de territorios o sujetos que tiene una Organización. Un ámbito puede tener alcance infantil.
 
 For instance, in the case of the city of Barcelona the scopes correspond to its districts, and the children of a
@@ -10,7 +12,9 @@ La mayoría de los componentes y espacios en Decidim le permiten configurar Scop
 
 image::settings/scopes_list.png[Scopes list]
 
-== Create a scope type
+== Configuración
+
+=== Create a scope type
 
 To create a scope type, click the "Add" button in the Scope types tab.
 
@@ -30,7 +34,7 @@ image::settings/scopes_types_new_form.png[New scope type form]
 |Nombre del tipo de ámbito en plural.
 |===
 
-== Create a scope
+=== Create a scope
 
 To create a scope, click the "Add" button in the Scope tab.
 
@@ -54,7 +58,7 @@ image::settings/scopes_new_form.png[New scope form]
 |Which type of scope it's related to. It can be blank.
 |===
 
-== Acciones
+=== Acciones
 
 .Acciones
 [cols="10h,20h,~"]
@@ -74,14 +78,7 @@ image::settings/scopes_new_form.png[New scope form]
 |Para eliminar este ámbito.
 |===
 
-== Características
-
-Las principales características relacionadas con el ámbito son:
-
-. Filtrando
-. Intereses de usuario y boletines
-
-=== Filtrando
+=== Content filtering
 
 La mayoría de los espacios y componentes permiten a un administrador o a un participante asociarlos a un ámbito.
 Esto permite filtrar por ámbitos cuando se exploran.
