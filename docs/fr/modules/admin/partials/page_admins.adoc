@@ -13,9 +13,15 @@ Ils ne peuvent rien modifier.
 
 === How to find it?
 
+=== How to find it?
+
 Pour configurer les administrateurs de l'espace, cliquez sur l'élément "Administrateurs du processus" ou "Administrateurs de l'assemblée" dans l'espace correspondant.
 
 image::spaces/admins_list.png[Administrators of space]
+
+== Configuration
+
+=== Gérer les administrateurs
 
 == Configuration
 
@@ -28,6 +34,8 @@ Vous pouvez trouver tous les administrateurs dans la liste dans le panneau d'adm
 * *Date de dernière connexion*: dernière fois que l'administrateur a été connecté.
 * *Invitation acceptée à* : date à laquelle l'administrateur a accepté l'invitation en cliquant sur le lien dans l'e-mail d'invitation.
 * *Role*: administrator role.
+
+=== Actions
 
 === Actions
 
@@ -44,6 +52,8 @@ Vous pouvez trouver tous les administrateurs dans la liste dans le panneau d'adm
 |Supprimez
 |Supprimer les droits d'administrateur de l'espace. Il ne supprime pas le compte de l'administrateur.
 |===
+
+=== Ajouter un administrateur d'espace
 
 === Ajouter un administrateur d'espace
 
@@ -69,7 +79,9 @@ image:espaces/admins_form.png[Nouveau formulaire d'administrateur d'espace]
 |Quel rôle cet administrateur doit avoir dans l'espace. Peut être un administrateur, un collaborateur, un modérateur ou un évaluateur.
 |===
 
-=== Administrateurs
+=== Rôles
+
+==== Administrateurs
 
 Un administrateur de l'espace peut administrer l'espace et modifier les paramètres de l'espace. Ils peuvent également inviter de nouveaux administrateurs de l'espace.
 Lors de la gestion de l'espace, ils ne verraient que les vues et les onglets suivants.
@@ -78,20 +90,20 @@ image:espaces/admins_role_admin01.png[Vue des administrateurs de processus 01]
 
 image:espaces/admins_role_admin02.png[Vue des administrateurs de processus 02]
 
-=== Collaborateurs
+==== Collaborateurs
 
 Un collaborateur de l'espace peut prévisualiser un espace avant sa publication.
 
 image:espaces/admins_role_collaborator.png[Vue des collaborateurs]
 
-=== Modérateurs
+==== Modérateurs
 
 Un modérateur d'espace peut examiner le contenu signalé de l'espace et les masquer ou les dévoiler. Ils peuvent aussi
 accéder au contenu signalé dans le panneau de modération globale, mais ne voir pas le contenu rapporté depuis d'autres espaces.
 
 image:espaces/admins_role_moderator.png[Vue des modérateurs]
 
-=== Évaluateurs
+==== Évaluateurs
 
 Un évaluateur d'espace peut examiner les propositions de l'espace qui leur ont été attribuées par:
 
