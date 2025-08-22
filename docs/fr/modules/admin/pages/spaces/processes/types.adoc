@@ -8,13 +8,15 @@ Les participants sont alors en mesure de filtrer les processus par les types de 
 
 NOTE: Les types de processus fonctionnent de la même façon que xref:admin:spaces/assemblies.adoc#_assemblies_types[Type d'assemblée].
 
-== Gérer les types de processus
+== Configuration
+
+=== Gérer les types de processus
 
 Pour accéder à la liste des types de processus, cliquez sur le bouton « Gérer » en haut à droite de la page, puis cliquez sur le lien de menu « Type de processus ».
 
 image::spaces/processes/process_types_list.png[Backend process types menu item]
 
-== Créer un type de processus
+=== Créer un type de processus
 
 Cliquez sur le bouton "Nouveau type de processus" en haut à droite de la page.
 
@@ -30,13 +32,13 @@ image:spaces/processes/process_types_form.png[Formulaire de création du type de
 |Titre du type de processus participatif.
 |===
 
-== Ajouter un type de processus à un processus
+=== Ajouter un type de processus à un processus
 
 Pour relier les processus aux types de processus, dans la page d'édition d'un processus, sélectionnez le type de processus sous la section intitulée Autre.
 
 image::spaces/processes/process_types_edit_process.png[Choose a process type when editing a process]
 
-== Filtrer par types de processus
+=== Filtrer par types de processus
 
 S'il y a au moins un type de processus défini et lié à un processus, un filtre est affiché à gauche de la liste des processus
 dans l'interface participante, permettant le filtrage des processus.
