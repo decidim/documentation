@@ -1,5 +1,7 @@
 = Autorização de documentos de identidade
 
+== Understand the basics
+
 This authorization allows a participant to upload its identity documents into the platform, and get their account verified.
 These documents depend on the organization, they could be a driver's license, a passport, a national identity card,
 a club membership card, etc.
@@ -35,7 +37,7 @@ eles precisam ir a um lugar específico para mostrar seus documentos? Este lugar
 por certas horas?
 |===
 
-== Online verification
+=== Online verification
 
 O processo é:
 
@@ -45,7 +47,7 @@ O processo é:
 . If the administrator can't see the information or they can't get it verified, they can reject the request and
 the user will be able to fix it.
 
-=== 1. Participant authorization creation
+==== 1. Participant authorization creation
 
 Ao ir para a seção de autorização no seu perfil, ou clicando no botão de ação se esta permissão for solicitada,
 um participante pode ver o formulário para o upload de uma cópia de seus documentos. Também precisam de preencher o seu tipo e número de documento.
@@ -54,7 +56,7 @@ image::participants/authorizations_id_document_online.png[ID document authorizat
 
 NOTE: You can change the document types options by xref:customize:code.adoc[customizing or overriding the code].
 
-=== 2. Administrator document review
+==== 2. Administrator document review
 
 After this document is uploaded, an administrator can review it by going to the Identity documents section in the administration
 panel.
@@ -66,7 +68,7 @@ the document number in the field. This number needs to match with the one provid
 
 image:participants/authorizations_id_document_online_confirm.png[ID document authorization online confirmation form]
 
-=== 3. Administrator decision
+==== 3. Administrator decision
 
 There are two actions an administrator can do:
 
@@ -79,7 +81,7 @@ image::participants/authorizations_id_document_online_rejected.png[ID document a
 
 Once a participant is verified, their documents are deleted from the list.
 
-== Offline verification
+=== Offline verification
 
 O processo é:
 
@@ -96,14 +98,14 @@ what the participant need to do to finish the verification process.
 
 image:participants/authorizations_id_document_configuration_offline.png[ID document authorization configuration: offline instructions]
 
-=== 1. Participant authorization creation
+==== 1. Participant authorization creation
 
 By going to the authorization section in its profile, or by clicking on the action button if this permission is requested,
 a participant can see the form for filling in their document type and number.
 
 image:participants/authorizations_id_document_offline_request.png[ID document authorization offline form]
 
-=== 2. Administrator document review
+==== 2. Administrator document review
 
 In the administration panel, the administrator can review the request by clicking the "Offline verification" button.
 
@@ -131,13 +133,13 @@ image::participants/authorizations_id_document_offline_confirm.png[ID document a
 |Número do documento do participante. Por exemplo, "12345678Z"
 |===
 
-=== 3. Administrator decision
+==== 3. Administrator decision
 
 In the cases where the verifications don't match (meaning that the email or the document number provided by the
 participant and the ones filled by the administrators aren't the same), then the participant needs to edit it within their
 user account.
 
-== Ambos
+=== Ambos
 
 Também é possível habilitar os dois métodos de verificação. In this case, the participant has to choose
 which kind of verification they want to do.
