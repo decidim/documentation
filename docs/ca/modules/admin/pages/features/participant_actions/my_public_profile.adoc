@@ -5,7 +5,7 @@
 Every participant has a public profile that shows details about them and their activity on the instance.
 This profile page is accessible to all participants and visitors.
 
-== How to find it?
+=== How to find it?
 
 To see a participant public profile, click directly in their avatar or their user name in the participant tool-tip.
 
@@ -18,20 +18,20 @@ As a signed in participant, you can access your public profile from two places:
 
 image::features/my_profile/profile_dropdown.png[Frontend user menu dropdown]
 
-== Profile tabs
+=== Profile tabs
 
 There, you'll find different tabs.
 
 NOTE: You might not see the Badges and the Groups tab if you didn't enable them in the
 xref:admin:settings/configuration.adoc[Configuration] panel.
 
-=== Activity
+==== Activity
 
 This tab displays all the activity of the participant, starting with the most recent content.
 
 image::features/my_profile/profile_activity.png[Public profile activity tab]
 
-=== Badges
+==== Badges
 
 The public profile's badges shows which badges the participant has accumulated and what their current level is for each badge.
 
@@ -39,7 +39,7 @@ More information about badges is available on the xref:admin:features/social_fea
 
 image::features/my_profile/profile_badges.png[Public profile badges tab]
 
-=== Follows
+==== Follows
 
 The follows section contains a list of participants and groups the participant is currently following.
 By following another participant or a group on the platform, the participant receives notifications about the activity
@@ -48,19 +48,19 @@ a participant before they can exchange private messages with each other.
 
 image::features/my_profile/profile_follows.png[Public profile follows tab]
 
-=== Followers
+==== Followers
 
 The followers section contains a list of participants and groups that are following the participant.
 
 image::features/my_profile/profile_followers.png[Public profile followers tab]
 
-=== Groups
+==== Groups
 
 The groups section contains all the groups that the user belongs to.
 
 image::features/my_profile/profile_groups.png[Public profile groups tab]
 
-== Actions available
+== Configuration
 
 === When on another participant profile
 
