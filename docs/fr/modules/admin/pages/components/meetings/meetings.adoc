@@ -7,7 +7,9 @@ Ils sont généralement créés par les administrateurs, mais les participants p
 
 Les administrateurs peuvent effectuer différentes actions lors de réunions, selon qu'elles sont créées à partir de l'administration ou par les participants.
 
-== Réunions officielles
+== Configuration
+
+=== Réunions officielles
 
 image::components/meetings/new_meeting_form_backend.png[Create a new meeting form (backend)]
 
@@ -118,7 +120,7 @@ a place for children, deaf assistance, translations, etc. Vous pouvez avoir plus
 |Description du service.
 |===
 
-=== Actions
+==== Actions
 
 .Actions - Réunions officielles
 [cols="10h,20h,~"]
@@ -179,7 +181,7 @@ qui peut *rejoindre* une réunion.
 |Supprimer cette réunion.
 |===
 
-== Réunions des participants
+=== Réunions des participants
 
 Les réunions peuvent être créées par les participants si le paramètre "Participants peuvent créer des réunions" est coché.
 Si un participant appartient à un xref:admin:participants/groups.adoc[groupe d'utilisateurs], alors il est également en mesure de créer des réunions
@@ -271,7 +273,7 @@ avec un autre service.
 
 Après avoir créé la réunion, les participants peuvent également éditer et xref:components/meetings/close.adoc[close] le.
 
-=== Actions
+==== Actions
 
 .Actions - Réunions de citoyens
 [cols="10h,20h,~"]
@@ -287,7 +289,7 @@ Après avoir créé la réunion, les participants peuvent également éditer et 
 |Pour gérer les autorisations nécessaires pour rejoindre, commenter ou répondre au sondage pour cette réunion spécifique.
 |===
 
-== Réunions en ligne
+=== Réunions en ligne
 
 Pour les réunions en ligne, selon le moment et la configuration de la réunion, différents messages sont affichés aux participants pour
 les informer sur la façon de participer à la réunion en ligne.
