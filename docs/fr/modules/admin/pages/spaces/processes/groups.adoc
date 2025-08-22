@@ -15,34 +15,34 @@ Vous y trouverez la liste des groupes de processus.
 
 image::spaces/processes/processes_group_list.png[Participatory process groups list]
 
-==== Actions
+=== Actions
 
 .Actions
 [cols="10h,20h,~"]
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_edit.png[Modifier l'icône du groupe de processus]
+|image:icons/action_edit.png[Edit process group icon]
 |Editer
-|Éditer la configuration et les composants du groupe de processus.
+|To edit the configuration and components for the process group.
 
-|image:icons/action_preview.png[Aperçu de l'icône du groupe de processus]
+|image:icons/action_preview.png[Preview process group icon]
 |Aperçu
-|Voir un aperçu de la page d'accueil du groupe de processus.
+|See a preview of the process group landing page.
 
-|image:icons/action_delete.png[Supprimer l'icône du groupe de processus]
+|image:icons/action_delete.png[Delete process group icon]
 |Supprimez
-|Supprimer ce groupe de processus.
+|To delete this process group.
 |===
 
-=== Créer un groupe de processus
+=== Create a process group
 
-Pour créer un nouveau groupe de processus, cliquez sur le bouton "Nouveau groupe de processus" en haut à droite de la page.
+To create a new process group, click the "New process group" button in the top right of the page.
 
-==== A propos de cette concertation
+==== About this process
 
-Cette section permet de fournir une description générale du groupe de processus, principalement un titre, une image, et description, et à
-sélectionnez les processus existants qui appartiennent au groupe.
+This section allows to provide a general description about the process group, mainly a title, image, and description, and to
+select the existing processes that pertain to the group.
 
 image::spaces/processes/processes_group_form_about.png[Participatory process groups creation form about this process]
 
@@ -54,31 +54,31 @@ image::spaces/processes/processes_group_form_about.png[Participatory process gro
 |Titre
 |Obligatoire
 |Titre du groupe de processus participatif.
-|Visible dans la carte des groupes de processus sur la page d'accueil, l'index des processus, la navigation, les blocs « titre et description»
-et « image héros et CTA» de la page d’atterrissage.
+|Visible in the card of the process groups on the homepage, the processes index, the navigation, the "title and description"
+and the "Hero image and CTA" landing page blocks.
 
 |Description
 |Obligatoire
-|Une longue explication du groupe de processus.
-|Visible dans la carte de l'index des processus et le bloc de page d'accueil "titre et description".
+|A long explanation of what's the process group about.
+|Visible in the card of the processes index and the "title and description" landing page block.
 
 |Processus connexes
 |Facultatif
-|Les processus à regrouper dans ce groupe de processus. Pour sélectionner plusieurs processus, utilisez la touche *CTRL* ou *CMD*.
-|Visible dans le bloc de page d'accueil "Processus participatifs".
+|The processes that should be grouped inside this process group. To select multiple processes, use the *CTRL* or *CMD* key.
+|Visible in the "Participatory processes" landing page block.
 
 |Image
 |Facultatif
 |Image qui sera utilisée dans les cartes de présentation de ce groupe de processus. Orientation pour l'image :
 De préférence une image de paysage qui n'a pas de texte. Le service récolte l'image.
-Taille maximale du fichier : 10 Mo. Extensions de fichier autorisées : JPEG JPG PNG
-|Visible dans la carte des groupes de processus sur la page d'accueil et dans l'index des processus.
+Taille maximale du fichier : 10 Mo. Allowed file extensions: JPEG JPG PNG
+|Visible in the card of the process groups on the homepage and the processes index.
 |===
 
 ==== Métadonnées
 
-Cette section permet de fournir des métadonnées sur le groupe de processus.
-Il peut être activé sur la page d'accueil avec le bloc "Metadata".
+This section allows to provide meta information about the process group.
+It can be enabled on the landing page with the "Metadata" landing page block.
 
 image::spaces/processes/processes_group_form_metadata.png[Participatory process groups creation form metadata]
 
@@ -91,38 +91,38 @@ image::spaces/processes/processes_group_form_metadata.png[Participatory process 
 |Facultatif
 |Hashtag redirigeant vers le réseau social X.
 
-|Site web
+|Website
 |Facultatif
-|Site Web lié à ce groupe de processus.
+|Website related to this process group.
 
 |Groupe de promoteurs
 |Facultatif
-|Si un groupe spécifique est à l'origine du processus, comme une direction de ville, un comité d'association, etc.
+|If a specific group is at the origin of the process, like a city direction, an association committee, etc.
 
 |Zone d'organisation
 |Facultatif
-|Le domaine ou la catégorie de l'organisation, s'il est pertinent.
+|The organization domain or category, if it's relevant.
 
 |Métadonnées du périmètre d'application
 |Facultatif
-|Métadonnées sur la portée du processus, si elle est pertinente.
+|Metadata on the process scope, if it's relevant.
 
 |Qui participe
 |Facultatif
-|Qui sont les participants autorisés, qui peuvent participer au processus.
+|Who are the authorized participants, who can participate to the process.
 
 |Ce qui est décidé
 |Facultatif
-|La question du processus, l'objet de ce qui est décidé.
+|The issue of the process, the object of what is decided.
 
 |Comment est-il décidé
 |Facultatif
-|Le processus de prise de décision.
+|The decision making process.
 |===
 
 ==== Visibilité
 
-Cette section permet aux administrateurs de configurer la visibilité du groupe de processus dans la page d'accueil et l'index de processus.
+This section allows administrators to configure the process group visibility in the homepage and processes index.
 
 image::spaces/processes/processes_group_form_visibility.png[Participatory process groups creation form visibility]
 
@@ -133,35 +133,35 @@ image::spaces/processes/processes_group_form_visibility.png[Participatory proces
 
 |Promu
 |Facultatif
-|Cochez cette case si vous voulez que le processus ait plus de visibilité dans la liste publique Processus . Il sera également visible dans le bloc de contenu "Processus surlignés"
-dans xref:admin:settings/homepage.adoc[Homepage].
+|Cochez cette case si vous voulez que le processus ait plus de visibilité dans la liste publique Processus . It'll also be visible in the "Highlighted processes"
+content block in the xref:admin:settings/homepage.adoc[Homepage].
 |===
 
-=== Blocs de contenu de la page d'accueil
+=== Landing page content blocks
 
-Les groupes de processus sont principalement des pages de destination, regroupant des processus participatifs plus complexes.
-Cette page d'accueil fonctionne avec différents blocs de contenu, tout comme la page d'accueil générale de la plateforme.
-Cela signifie que vous pouvez activer différentes sections de la page d'accueil et configurer certaines de ces sections.
+Process groups are mainly landing pages, grouping more complex participatory processes.
+This landing page works with different content blocks, just like the general homepage of the platform.
+This means that you can enable different sections of the landing page and configure some of these sections.
 
-Pour configurer une page d'accueil de groupe de processus, lors de l'édition du groupe de processus, cliquez sur le bouton "Gérer" en haut à droite de la page,
-et cliquez sur le lien de menu "Page d'accueil".
+To configure a process group landing page, when editing the process group, click the "Manage" button in the top right of the page,
+and click the "Landing page" menu item.
 
 image::spaces/processes/processes_group_landing.png[Participatory process group landing page]
 
-Ci-dessous, vous trouverez tous les guides de configuration des blocs de contenu et les captures d'écran de la façon dont ils sont affichés sur la page de destination.
+Below, you'll find all the content blocks configuration guides and screenshots of how there are displayed on the landing page.
 
-NOTE: S'il n'y a pas de contenu à afficher dans un bloc de contenu ou s'il n'est pas configuré, il ne sera pas affiché sur la page d'atterrissage.
+NOTE: If there is no content to display in a content block, or if wasn't configured, it won't be displayed on the landing page.
 
 ==== Titre et description
 
-Le bloc de contenu Titre et description permet d'afficher :
+The Title and description content block allows to display:
 
-* *Titre* : le titre du groupe de processus.
-* *Description* : la description du groupe de processus.
-* *Nombre de processus associés* : le nombre de processus participatifs publiés liés à ce groupe de processus.
-* *Portée* : la portée du groupe de processus.
-* *Hashtag* : le hashtag, redirection vers les médias sociaux X.
-* *Site Web* : un lien vers le site Web.
+* *Title*: the title of the process group.
+* *Description*: the description of the process group.
+* *Number of related processes*: the number of published participatory processes related to this process group.
+* *Scope*: the scope of the process group.
+* *Hashtag*: the hashtag, redirecting to the X social media.
+* *Website*: a link to the website.
 
 image::spaces/processes/processes_group_landing_title.png[Participatory process group landing page title and description block]
 
@@ -173,32 +173,32 @@ image::spaces/processes/processes_group_landing_metadata.png[Participatory proce
 
 Le bloc image héros et contenu CTA permet d'afficher :
 
-* *Titre* : le titre du groupe de processus.
-* *un hashtag* : le hashtag, redirigeant vers les médias sociaux X.
-* *un bouton d'appel à l'action*: activez-le en cliquant sur l'icône "Modifier" sur le bloc de contenu de la page d'accueil.
-* *une image*: téléchargez une image pour ce bloc en cliquant sur l'icône "Modifier" sur le bloc de contenu de la page d'accueil.
+* *Title*: the title of the process group.
+* *an hashtag*: the hashtag, redirecting to the X social media.
+* *a call to action button*: enable it by clicking the "Edit" icon on the landing page content block.
+* *an image*: download an image for this block by clicking the "Edit" icon on the landing page content block.
 
 image::spaces/processes/processes_group_landing_hero.png[Participatory process group landing page hero block]
 
 ==== Propositions
 
-Le bloc de contenu des propositions permet d'afficher une sélection de propositions provenant des différents processus participatifs du groupe de processus.
-Vous pouvez configurer comment les propositions sont triées par ordre le plus récent ou le plus aléatoire en cliquant sur l'icône "Modifier" sur le bloc de contenu de la page d'accueil.
+The Proposals content block allows to display a selection of proposals from the different participatory processes of the process group.
+You can configure how the proposals are sorted by most recent or random by clicking the "Edit" icon on the landing page content block.
 
 image::spaces/processes/processes_group_landing_proposals.png[Participatory process group landing page proposals block]
 
 ==== Résultats
 
-Le bloc de contenu Résultats permet d'afficher une sélection des résultats des différents processus participatifs.
-Vous pouvez configurer la façon dont les résultats sont triés par le plus récent ou au hasard en cliquant sur l'icône "Modifier" sur le bloc de contenu de la page d'accueil.
+The Results content block allows to display a selection of results from the different participatory processes.
+You can configure how the results are sorted by most recent or random by clicking the "Edit" icon on the landing page content block.
 
 image::spaces/processes/processes_group_landing_results.png[Participatory process group landing page results block]
 
 ==== Réunions à venir
 
-Le bloc de contenu des réunions à venir permet d'afficher une sélection de réunions des différents processus participatifs.
-Vous pouvez configurer la façon dont les résultats sont triés par le plus récent ou au hasard en cliquant sur l'icône "Modifier" sur le bloc de contenu de la page d'accueil.
-S'il n'y a pas de réunions à venir, ce bloc montre les réunions passées.
+The Upcoming meetings content block allows to display a selection of meetings from the different participatory processes.
+You can configure how the results are sorted by most recent or random by clicking  the "Edit" icon on the landing page content block.
+If there is no upcoming meetings, this block shows the past ones.
 
 image::spaces/processes/processes_group_landing_events.png[Participatory process group landing page events block]
 
@@ -208,14 +208,14 @@ image::spaces/processes/processes_group_landing_stats.png[Participatory process 
 
 ==== Processus participatifs
 
-Le bloc de contenu du processus participatif affiche une grille de processus participatifs sur la page d'atterrissage.
-Vous pouvez configurer si seulement les processus actifs seront affichés en cliquant sur l'icône "Modifier" sur le bloc de contenu de la page de destination.
+The participatory processes content block displays a grid of participatory processes on the landing page.
+You can configure if only active processes will be displayed by clicking the "Edit" icon on the landing page content block.
 
 image::spaces/processes/processes_group_landing_processes.png[Participatory process group landing page processes block]
 
-==== Blocs HTML
+==== HTML blocks
 
-Le bloc contenu du bloc HTML permet d'ajouter un bloc HTML modifiable sur la page d'atterrissage, et donc de créer une section personnalisée.
+The HTML block content block allows to add an editable HTML block on the landing page, and therefore to create a personalized section.
 
 image::spaces/processes/processes_group_landing_html.png[Participatory process group landing page HTML blocks]
 
