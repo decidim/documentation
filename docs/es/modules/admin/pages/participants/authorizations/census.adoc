@@ -1,5 +1,12 @@
 = Autorización de censos de la organización
 
+== Understand the basics
+
+The Organization's census authorization allows administrators to upload a list of participant's emails, in order to allow this
+list to perform specific actions on the plaform, like creating proposal in a specific space, etc.
+
+== Configuración
+
 El proceso es el siguiente:
 
 . Admins upload a CSV with the emails of the verified participants
@@ -9,7 +16,7 @@ El proceso es el siguiente:
 NOTE: This authorization is too basic and you need more features related to CSV census imports?
 Check all the CSV or file based authorizations in the https://decidim.org/modules/[Modules page].
 
-== 1. CSV upload
+=== 1. CSV upload
 
 In the administrator panel, you can upload a CSV file by clicking on "Organization's census" in the "Participants" section.
 
@@ -20,14 +27,14 @@ imported census.
 
 image::participants/authorizations_organization_census_imported.png[Imported CSV]
 
-== 2. Participant request
+=== 2. Participant request
 
 Viendo a la sección de autorización en su perfil, o haciendo clic en el botón de acción si este permiso es solicitado,
 un participante puede solicitar ser verificado.
 
 image::participants/authorizations_organization_census_account.png[Organization's census in participant's accounts]
 
-== 3. Participant verification
+=== 3. Participant verification
 
 Después de ser verificado, como en otras verificaciones, pueden verlo en la configuración de su cuenta.
 
