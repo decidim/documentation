@@ -11,6 +11,8 @@ Il avertit les participants qu'ils quittent votre instance.
 
 == Configuration
 
+=== Allow an external domain
+
 Il peut y avoir des redirections pour lesquelles vous ne voulez pas que cette fonctionnalité soit activée.
 Par exemple, si votre site est déployé à une URL comme `+decidim.example.org+` et que vous voulez chaque `+example. rg+` URL
 pour omettre ce message d'alerte, vous pouvez le configurer en ajoutant votre URL, et autant que vous le souhaitez, dans la page des domaines externes autorisés.
