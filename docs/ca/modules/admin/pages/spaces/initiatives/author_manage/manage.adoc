@@ -5,7 +5,9 @@
 Initiatives have the peculiarity of being both manageable by administrators and their authors.
 Administrators have greater rights, but authors can also manage a certain number of configurations of their initiatives.
 
-== Edit the initiative
+== Configuration
+
+=== Edit the initiative
 
 Once the initiative is created, the author can see the initiative page, but until the initiative is reviewed and accepted by an administrator, through the technical validation,
 it is not published and visible for all the participants.
@@ -18,14 +20,14 @@ image::spaces/initiatives/initiative_edit.png[Initiative edit]
 
 If the xref:admin:spaces/initiatives/author_manage/committee.adoc[Promoting committee] is enabled for the initiative type of this initiative, the author of an initiative can manage requests and committee members at the end of the edit form.
 
-== Send to technical validation
+=== Send to technical validation
 
 Once all the conditions are right, if the initiative is ready and has enough committee members, the author can send the initiative to technical validation.
 When clicking on the "Send to technical validation" button, a modal is displayed to warn the author that they won't be able to edit it after this action.
 
 image::spaces/initiatives/initiative_send_to_technical_validation.png[Send initiative to technical validation]
 
-== Retrieve created initiatives
+=== Retrieve created initiatives
 
 Authors can also find their initiatives in the initiatives index by un-checking the "Open" status filter, and clicking on the "My initiatives" filter.
 
