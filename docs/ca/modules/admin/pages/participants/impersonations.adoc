@@ -1,11 +1,15 @@
 = Participants impersonations
 
+== Understand the basics
+
 Sometimes, people don't have the time to create an account, or don't have the knowledge or ability to use technological tools.
 Impersonations allow administrators and participant managers to enable those persons to participate anyway.
 
 NOTE: In the code and the User Interface, *Impersonation* and *Managed Participants* are the same thing.
 
-== Enable / disable impersonations
+== Configuration
+
+=== Enable / disable impersonations
 
 Impersonations are only available when at least one authorization is enabled for the organization.
 Indeed, they allow the system to search through a Verification system for an already existing participant, and to create
@@ -27,7 +31,7 @@ image::participants/participants_impersonations_backend_list_logs.png[Administra
 
 image::participants/participants_impersonations_backend_list_button.png[Administrators Impersonations panel with impersonation action]
 
-== Manage impersonations
+=== Manage impersonations
 
 You can find all the participants of the platform, with:
 
