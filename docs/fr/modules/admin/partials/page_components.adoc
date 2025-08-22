@@ -11,15 +11,17 @@ activés dans un espace de montage.
 
 include::partial$components_list.adoc[]
 
-== How to find it?
+=== How to find it?
 
-Pour configurer les composants, cliquez sur l'élément *Composants* dans un espace participatif.
+To configure components, click the *Components* item in any participatory space.
 
 image::spaces/components/components.png[Components of space]
 
-Là, vous pouvez gérer les composants déjà ajoutés, les configurer, en ajouter de nouveaux, etc.
+There, you are able to manage the already added components, configure them, add new ones, etc.
 
-== Manage components
+== Configuration
+
+=== Manage components
 
 Vous pouvez trouver tous les composants dans la liste dans le panneau d'administration, avec:
 
@@ -27,14 +29,14 @@ Vous pouvez trouver tous les composants dans la liste dans le panneau d'administ
 * *Type de composant* : type du composant.
 * *Portée des composants* : dans un même espace, les composants peuvent avoir des portées différentes.
 
-== Créer un composant
+=== Créer un composant
 
 Pour configurer un nouveau composant, cliquez sur *Ajouter un composant* dans la partie supérieure droite de l'écran et sélectionnez le type de composant
 que vous souhaitez.
 
 image::spaces/components/components_new_dropdown.png[Add a component in a space]
 
-== Actions
+=== Actions
 
 .Actions des composants dans la liste des composants
 [cols="10h,20h,~"]
