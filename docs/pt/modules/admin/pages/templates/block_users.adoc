@@ -1,8 +1,12 @@
 = Block user messages templates
 
+== Understand the basics
+
 In this section, you can create, edit, and delete block user justification templates, that you can then use when moderating users.
 
-== Create a block user message template
+== Configuração
+
+=== Create a block user message template
 
 To create a new block user message template, you need to click the "New template" button.
 
@@ -22,7 +26,7 @@ image::templates/templates_block_user_backend_form.png[Backend: new template for
 |Block user message that is used for justifying the blocking of the participant.
 |===
 
-== Administrar
+=== Administrar
 
 All the block user messages templates appear in the templates list:
 
