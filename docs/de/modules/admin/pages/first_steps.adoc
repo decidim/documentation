@@ -1,6 +1,8 @@
 = First steps in Decidim
 
-== Log in for the first time
+== Understand the basics
+
+=== Log in for the first time
 
 Once you or your developers have successfully installed Decidim, and created an organization in the System panel, you should
 receive an email asking you to complete your account creation.
@@ -11,8 +13,6 @@ image::first_steps_invitation_email.png[Administrator invitation email]
 The invitation email redirects you to a form so you can finish setting up your account with your nickname, name, and password.
 
 image::first_steps_account_creation.png[Administrator invitation email]
-
-== Discover the administration dashboard
 
 === Access the administration dashboard
 
@@ -54,7 +54,7 @@ You can see several sections on this page:
 . *Metrics*: the graphics for the evolution of multiple components inside of Decidim:
 . *Admin log*: last actions made by all the administrators in the platform.
 
-== Administration navigation
+=== Administration navigation
 
 To navigate in the administration panel, you can click in all of the items displayed in the vertical navigation bar on the left.
 
