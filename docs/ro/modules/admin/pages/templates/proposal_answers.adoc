@@ -1,8 +1,12 @@
 = Proposal answers templates
 
+== Understand the basics
+
 In this section, you can create, edit, and delete proposal answers templates, that you can then use when answering proposals.
 
-== Create a proposal answers template
+== Configuration
+
+=== Create a proposal answers template
 
 NOTE: To be able to create a proposal answers template, you need to have created at least one
 xref:admin:components/proposals.adoc[proposals] component.
@@ -33,7 +37,7 @@ image::templates/templates_proposal_answers_backend_form.png[Backend: new propos
 |By default, you can choose Evaluating, Accepted, or Rejected.
 |===
 
-== Manage
+=== Manage
 
 All the templates appear in the proposal answers templates list:
 
