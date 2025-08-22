@@ -7,7 +7,9 @@ participatory budget projects in external files, so it can be useful to import n
 
 For this, you can use the functionalities of exporting and importing results.
 
-== Export results
+== Konfiguration
+
+=== Export results
 
 You can export results and their comments in different formats by clicking the "Export all" button in the results list:
 
@@ -20,20 +22,20 @@ You can export results and their comments in different formats by clicking the "
 
 image::components/accountability/export.png[Import results from CSV form]
 
-== Import results
+=== Import results
 
 You can also import results by clicking the "Import" button in the results list in the administration panel.
 
 image::components/accountability/import.png[Import results from CSV form]
 
-=== Import from a component
+==== Import from a component
 
 You can import results directly from a xref:admin:components/budgets.adoc[Budget] component of the same participatory space,
 and choose if you want to import all the projects into results or only the one selected for implementation.
 
 image:components/accountability/import_component.png[Import results from CSV form]
 
-=== Import from a CSV
+==== Import from a CSV
 
 You can also import results from a CSV file.
 
