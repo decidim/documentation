@@ -2,7 +2,7 @@
 
 == Understand the basics
 
-Meetings polls allow administrators to define questions for a meeting, that participants can answer
+Meeting polls allow administrators to define questions for a meeting, that participants can answer
 while it's happening. It can be very useful to gather quick feedback and make decisions during meetings without having to leave the meeting and use
 other kind of tools.
 
@@ -10,6 +10,8 @@ With this feature, administrators can define questions and manage when these que
 to participants.
 
 == Configuração
+
+=== Create poll
 
 To configure polls for a specific meeting, click the image:icons/action_list.png[Manage polls button] "Manage polls" button.
 
@@ -35,7 +37,7 @@ image::components/meetings/polls/backend.png[Backend for meeting polls]
 
 You can add as many questions and answer options as you want.
 
-=== Administrar
+=== Manage poll
 
 Prior to the meeting, if the administrators already configured the polls questions, participants can see a button "Reply poll"
 on the meeting page, warning them that a poll is going to be published on this meeting.
