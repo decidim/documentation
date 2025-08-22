@@ -1,8 +1,12 @@
 = Questionnaires templates
 
+== Understand the basics
+
 In this section, you can create, edit, and delete questionnaire templates, that you can then use in any survey component.
 
-== Create a questionnaire template
+== Konfiguration
+
+=== Create a questionnaire template
 
 To create a new questionnaire template, you need to click the "New template" button.
 
@@ -37,7 +41,7 @@ image::templates/templates_questionnaires_backend_survey_preview.png[Backend: ne
 
 Click on the "Save" button again to save your template.
 
-== Manage templates
+=== Manage templates
 
 All the templates appear in the questionnaire templates list:
 
