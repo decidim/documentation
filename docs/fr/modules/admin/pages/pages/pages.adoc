@@ -1,5 +1,7 @@
 = Pages
 
+== Understand the basics
+
 Dans cette section, vous pouvez configurer des pages statiques pour donner des informations générales aux participants de la plateforme.
 
 À titre d'exemple, certaines de ces pages pourraient faire référence à :
@@ -9,7 +11,9 @@ Dans cette section, vous pouvez configurer des pages statiques pour donner des i
 * Comment créer et vérifier un compte ?
 * Quelles sont les conditions générales et les informations légales sur cette plateforme?
 
-== Gérer les pages
+== Configuration
+
+=== Gérer les pages
 
 Vous pouvez gérer les pages de cette section du panneau d'administration :
 
@@ -20,7 +24,7 @@ Comme vous pouvez le voir, vous pouvez modifier toutes les pages et les réorgan
 Il n'y a qu'une seule page que vous ne pouvez pas supprimer. Comme la plate-forme permet aux Participants de s'inscrire et d'enregistrer certaines de leurs données personnelles, Il est important d'avoir une page pour les **Termes et Conditions**.
 C'est là que vous devez mettre vos conditions légales, par exemple qui est propriétaire des données collectées, pour combien de fois il est enregistré, etc. Idéalement, cela devrait être écrit et examiné par un avocat.
 
-== Créer une nouvelle page
+=== Créer une nouvelle page
 
 Pour créer une nouvelle page, vous devez cliquer sur le bouton "Créer une page".
 
@@ -54,14 +58,14 @@ Par exemple, si le slug est "faq" et que votre domaine est "https://example.org"
 Par exemple, si vous avez deux pages, "Page a" avec le poids "10" et "Page b" avec le poids "0" alors "Page b" est d'abord lors de la commande.
 |===
 
-== Modifier une page
+=== Modifier une page
 
 Vous pouvez modifier les pages à tout moment, en cliquant sur l'icône crayon dans la liste des pages.
 Tout le contenu et la configuration de la page sont modifiables.
 
 image::pages/pages_backend_edit.png[Backend: edit a page]
 
-== La page "Conditions Générales"
+=== La page "Conditions Générales"
 
 Cette page est générée par défaut dans chaque nouvelle organisation. Il ne peut pas être supprimé, et il a quelques détails spécifiques liés à sa nature juridique :
 
