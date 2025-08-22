@@ -2,14 +2,16 @@
 
 == Understand the basics
 
-Les sondages de réunions permettent aux administrateurs de définir des questions pour une réunion, que les participants peuvent répondre à
-pendant que cela se produit. It can be very useful to gather quick feedback and make decisions during meetings without having to leave the meeting and use
+Meeting polls allow administrators to define questions for a meeting, that participants can answer
+while it's happening. It can be very useful to gather quick feedback and make decisions during meetings without having to leave the meeting and use
 other kind of tools.
 
 Grâce à cette fonctionnalité, les administrateurs peuvent définir des questions et gérer lorsque ces questions et leurs résultats sont affichés
 aux participants.
 
 == Configuration
+
+=== Create poll
 
 Pour configurer les sondages pour une réunion spécifique, cliquez sur le bouton "Gérer les sondages": icons/action_list.png[Gérer le bouton des sondages] "Gérer les sondages".
 
@@ -35,7 +37,7 @@ image::components/meetings/polls/backend.png[Backend for meeting polls]
 
 Vous pouvez ajouter autant de questions et de réponses que vous le souhaitez.
 
-=== Gérer
+=== Manage poll
 
 Avant la réunion, si les administrateurs ont déjà configuré les questions des sondages, les participants peuvent voir un bouton "Répondre au sondage"
 sur la page de la réunion, les avertissant qu'un sondage sera publié sur cette réunion.
