@@ -74,8 +74,7 @@ Seuls quelques services permettent l'intégration (YouTube, Twitch, Jitsi, ...)
 |Type d'inscription
 |Obligatoire
 |Choisissez une option entre "Inscription désactivée" pour aucune inscription, "Sur cette plateforme" pour afficher un bouton d'enregistrement lié à
-le xref:admin:components/meetings/registrations. doc[Registrations] ou "Sur une plate-forme différente" si vous gérez des réunions Inscriptions
-avec un autre service.
+le xref:admin:components/meetings/registrations.
 
 |URL d'enregistrement
 |Requis si l'inscription sur une plateforme différente
@@ -96,11 +95,11 @@ participate in it. Ceci n'est disponible que pour les réunions officielles.
 
 |Commentaires activés depuis
 |Facultatif
-|Date à partir de laquelle les participants peuvent commenter cette réunion.
+|Date à laquelle les participants peuvent commenter cette réunion.
 
 |Commentaires activés jusqu'à
 |Facultatif
-|Date à laquelle les participants peuvent commenter cette réunion.
+|Date à partir de laquelle les participants peuvent commenter cette réunion.
 |===
 
 Vous pouvez également définir des *Services* pour une réunion. These are metadata that allows to communicate, for instance, if there's
@@ -251,8 +250,7 @@ ouvrir les réunions dans un nouvel onglet. Seuls quelques services permettent l
 |Type d'inscription
 |Obligatoire
 |Choisissez une option entre "Inscription désactivée" pour aucune inscription, "Sur cette plateforme" pour afficher un bouton d'enregistrement lié à
-le xref:admin:components/meetings/registrations. doc[Registrations] ou "Sur une plate-forme différente" si vous gérez des réunions Inscriptions
-avec un autre service.
+le xref:admin:components/meetings/registrations.
 
 |Emplacements disponibles pour cette réunion
 |Requis si l'inscription sur cette plateforme
