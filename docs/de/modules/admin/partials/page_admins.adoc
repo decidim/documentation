@@ -13,15 +13,9 @@ They can't edit anything.
 
 === How to find it?
 
-=== How to find it?
-
 To configure space administrators, click the "Process admins" or "Assembly admins" item in the corresponding space.
 
 image::spaces/admins_list.png[Administrators of space]
-
-== Konfiguration
-
-=== Administratoren verwalten
 
 == Konfiguration
 
@@ -34,8 +28,6 @@ You can find all the administrators on the list in the administration panel, wit
 * *Last log in date*: last time the administrator was logged in.
 * *Invitation accepted at*: date when the administrator accepted the invitation by clicking the link in the invitation email.
 * *Role*: administrator role.
-
-=== Aktionen
 
 === Aktionen
 
@@ -52,8 +44,6 @@ You can find all the administrators on the list in the administration panel, wit
 |Löschen
 |To delete the space administrator rights. It doesn't delete the account of the administrator.
 |===
-
-=== Add a space administrator
 
 === Add a space administrator
 
