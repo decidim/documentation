@@ -1,6 +1,6 @@
 = Administrateurs de l'espace
 
-== Understand the basics
+== En bref
 
 Vous pouvez donner des permissions spécifiques aux utilisateurs dans les différents espaces, donc ils ne peuvent avoir accès qu'à certaines actions d'administration.
 Ces rôles sont des administrateurs, des modérateurs, des collaborateurs et des évaluateurs.
@@ -13,15 +13,9 @@ Ils ne peuvent rien modifier.
 
 === How to find it?
 
-=== How to find it?
-
 Pour configurer les administrateurs de l'espace, cliquez sur l'élément "Administrateurs du processus" ou "Administrateurs de l'assemblée" dans l'espace correspondant.
 
 image::spaces/admins_list.png[Administrators of space]
-
-== Configuration
-
-=== Gérer les administrateurs
 
 == Configuration
 
@@ -34,8 +28,6 @@ Vous pouvez trouver tous les administrateurs dans la liste dans le panneau d'adm
 * *Date de dernière connexion*: dernière fois que l'administrateur a été connecté.
 * *Invitation acceptée à* : date à laquelle l'administrateur a accepté l'invitation en cliquant sur le lien dans l'e-mail d'invitation.
 * *Role*: administrator role.
-
-=== Actions
 
 === Actions
 
@@ -52,8 +44,6 @@ Vous pouvez trouver tous les administrateurs dans la liste dans le panneau d'adm
 |Supprimez
 |Supprimer les droits d'administrateur de l'espace. Il ne supprime pas le compte de l'administrateur.
 |===
-
-=== Ajouter un administrateur d'espace
 
 === Ajouter un administrateur d'espace
 
