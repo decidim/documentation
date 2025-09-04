@@ -2,28 +2,28 @@
 
 == En bref
 
-Un statut représente l'état actuel d'un résultat.
-Pour les participants, les statuts indiquent clairement l'état de chaque résultat, car les noms de statut sont toujours affichés avec les résultats.
-Pour les administrateurs, les statuts aident à garder à jour la progression des résultats, puisque chaque statut peut avoir un pourcentage de progression par défaut.
+Le progrès représente l'état d'une réalisation en cours.
+Pour les participants, les progrès indiquent clairement l'état de chaque réalisation, car les progrès sont toujours affichés avec les réalisations.
+Pour les administrateurs, les progrès aident à garder à jour l'avancement des réalisations, puisque chaque progrès peut avoir un pourcentage d'avancement par défaut.
 
-Après la configuration des statuts, vous pouvez assigner xref:admin:components/Accounability/results.adoc[un statut à un résultat].
-Une fois le résultat mis à jour son statut, sa progression est automatiquement définie sur la progression par défaut définie dans le statut.
+Après la configuration des progrès, il est possible d'assigner [un progrès à une réalisation].
+Une fois le progrès d'une réalisation mis à jour, son avancement est automatiquement défini par défaut sur l'état défini dans le progrès.
 
-La mise à jour du statut d'un résultat ne mettra pas à jour l'historique des résultats, mais peut xref:admin:features/participant_actions/notifications.adoc[envoyer des notifications].
+La mise à jour du progrès d'une réalisation ne mettra pas à jour l'historique de la réalisation, mais peut [envoyer des notifications].
 
 == Configuration
 
-Pour créer des statuts, cliquez sur le bouton "Statuts" en haut à droite de la liste des résultats.
+Pour créer des Progrès, cliquez sur "Progrès" en haut à droite de la liste des réalisations.
 
 image::components/accountability/statuses_button.png[Statuses button]
 
-Là, vous pouvez créer et gérer les différents statuts pour les résultats.
+Ici, il est possible de créer et gérer les différents progrès pour les réalisations.
 
 image::components/accountability/statuses_list.png[Statuses list]
 
-Cliquez sur le bouton "Nouveau statut" pour commencer à créer des statuts.
+Cliquer "Nouveau statut" pour commencer à créer des progrès.
 
-image:components/Accounability/new_status.png[Nouveau formulaire de statut]
+[Nouveau formulaire de progrès]
 
 
 .Formulaire de nouveau statut
@@ -32,17 +32,17 @@ image:components/Accounability/new_status.png[Nouveau formulaire de statut]
 
 |Clé
 |Obligatoire
-|Utilisé comme identifiant unique pour xref:admin:components/Accounability/import.adoc[CSV Import].
+|Utilisé comme identifiant unique pour [import CSV].
 
 |Nom
 |Obligatoire
-|Nom pour ce statut.
+|Nom pour du progrès.
 
 |Description
 |Facultatif
-|Description pour ce statut.
+|Description pour du progrès.
 
 |Avancement
 |Facultatif
-|Progression par défaut pour un résultat assigné à cet état (pourcentage de 0 à 100).
+|Avancement par défaut pour un progrès assigné à cet état (pourcentage de 0 à 100).
 |===
