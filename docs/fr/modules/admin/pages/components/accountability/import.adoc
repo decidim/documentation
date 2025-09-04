@@ -2,18 +2,17 @@
 
 == En bref
 
-Sometimes, the accountability content is used after an internal process in an organization, such as evaluating the cost of
-participatory budget projects in external files, so it can be useful to import new results and results modifications in a batch.
+Parfois, le contenu de suivi est utilisé après un processus interne dans une organisation, telle l'évaluation du coût des projets de budget participatif dans des fichiers externes, il peut donc être utile d'importer de nouvelles réalisations et des modifications de réalisations par lots.
 
-For this, you can use the functionalities of exporting and importing results.
+Pour cela, vous pouvez utiliser les fonctionnalités d'exportation et d'importation de réalisations.
 
-== Export results
+== Export de réalisations
 
-You can export results and their comments in different formats by clicking the "Export all" button in the results list:
+Vous pouvez exporter les réalisations et leurs commentaires dans différents formats en cliquant sur « Tout exporter » dans la liste des réalisations :
 
-* Results as CSV
-* Results as JSON
-* Results as Excel
+* Réalisations au format CSV
+* Réalisations au format JSON
+* Réalisations au format Excel
 * Commentaires en tant que CSV
 * Commentaires en JSON
 * Commentaires en tant qu'Excel
@@ -22,37 +21,35 @@ image::components/accountability/export.png[Import results from CSV form]
 
 == Réalisations
 
-You can also import results by clicking the "Import" button in the results list in the administration panel.
+Vous pouvez également importer des réalisations en cliquant sur « Importer » dans la liste des réalisations du panneau d’administration.
 
 image::components/accountability/import.png[Import results from CSV form]
 
-=== Import from a component
+=== Importer à partir d'une fonctionnalité
 
-You can import results directly from a xref:admin:components/budgets.adoc[Budget] component of the same participatory space,
-and choose if you want to import all the projects into results or only the one selected for implementation.
+Vous pouvez importer les réalisations directement depuis une fonctionnalité [Budget] du même espace participatif, et choisir d'importer tous les projets dans les réalisations ou seulement celle sélectionnés pour la mise en œuvre.
 
 image:components/accountability/import_component.png[Import results from CSV form]
 
-=== Import from a CSV
+=== Importer à partir d'un CSV
 
-You can also import results from a CSV file.
+Vous pouvez aussi importer des réalisations à partir d'un fichier CSV.
 
 image:components/accountability/import_csv.png[Import results from CSV form]
 
-To do this, you should follow these steps:
+Pour ce faire, suivre ces étapes :
 
-. Create the xref:admin:components/accountability/statuses.adoc[Statuses] for the Results that you want to add
-. Create at least one xref:admin:components/accountability/results.adoc[Results] manually through this administration panel
-before doing the import, to have a better understanding of the format and what you'll need to fill out.
-. Download the xref:_export_results[Export with CSV format]
-. Make the changes locally. You can only change the following columns of the CSV:
-** category/id: ID for the result category
-** scope/id: ID for the result scope
-** parent/id: ID of the parent (for related Results). Facultatif
-** title/en: Title in english language. This depends on your platform language configuration.
-** description/en: Description in english language. This depends on your platform language configuration.
-** start_date: date when the result starts execution (format YYYY-MM-DD)
-** end_date: date when the result ends execution (format YYYY-MM-DD)
-** status/id: ID of the Status for this result
-** progress: Percentage (from 0 to 100) of the execution
-** proposals_ids: internal ID of the related proposals (separated with a comma). It gets automatically converted to proposal_url
+. Créer les [Progrès] pour les Réalisations à ajouter
+. Créer au moins une [Réalisation] manuellement à l'aide de ce panneau d'administration avant d'effectuer l'importation, afin d'avoir une meilleure compréhension du format et de ce que qu'il faut remplir.
+. Télécharger l'[Export au format CSV]
+. Effectuer les modifications localement. Il est seulement possible de modifier les colonnes CSV suivantes :
+** category/id: ID pour la catégorie réalisation
+** scope/id: ID pour l'objectif de la réalisation
+** parent/id: ID du parent (pour les Réalisations liées). Facultatif
+** title/en: Titre en français. Celui-ci dépend de la langue de configuration de la plateforme.
+** description/en: Description en français. Celui-ci dépend de la langue de configuration de la plateforme.
+** start_date: Date à laquelle la réalisation commence à s'exécuter (format AAAA-MM-JJ)
+** end_date: Date à laquelle la réalisation termine l'exécution (format AAAA-MM-JJ)
+** status/id: ID du Progrès de cette réalisation
+** progress: Pourcentage (de 0 à 100) de l'exécution
+** progress: ID interne des propositions associées (séparées par une virgule). Il est automatiquement converti en proposal_url
