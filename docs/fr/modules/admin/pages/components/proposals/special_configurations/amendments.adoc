@@ -2,20 +2,20 @@
 
 == En bref
 
-La fonction de modification permet aux participants de proposer des modifications aux propositions existantes et donc de collaborer avec d'autres participants.
+La fonctionnalité de modification permet aux participants de proposer de modifier les propositions existantes et donc de collaborer avec d'autres participants.
 
 Il est utile de proposer des améliorations ou des corrections, en particulier lors de la rédaction de lois ou de normes avec la fonctionnalité
-xref:components/proposals/special_configurations/participatory_texts.adoc[Textes participatifs].
+[Textes participatifs].
 
-Il a des similitudes avec xref:components/proposals/special_configurations/collaborative_drafts. doc[Brouillons collaboratifs], mais la principale différence
-est qu'avec les amendements, il n'est pas nécessaire de faire confiance aux intentions des autres auteurs, comme chaque changement est révisé et doit être
+Il a des similitudes avec [Brouillons collaboratifs], mais la principale différence
+est qu'avec les modifications, il n'est pas nécessaire de faire confiance aux intentions des autres auteurs, comme chaque changement est révisé et doit être
 approuvé par l'auteur de la proposition initiale.
 
 image::components/proposals/amendments/amendment.png[Amendment of a proposal]
 
 == Configuration
 
-Pour configurer les "amendements" dans les propositions, activez le paramètre "Modifications activées" dans le formulaire de configuration du composant.
+Pour configurer les "modifications" dans les propositions, activer le paramètre "Modifications activées" dans le formulaire de configuration de la fonctionnalité.
 
 image::components/proposals/component_specific_conf.png[Add component form - Specific configurations]
 
@@ -26,7 +26,7 @@ image::components/proposals/component_specific_conf.png[Add component form - Spe
 
 |Amendements activés
 |Global
-|Cochez cette case pour permettre des amendements dans les composants des propositions. D'autres paramètres apparaissent quand il est activé.
+|Cocher cette case pour permettre des modifications dans les fonctionnalités des propositions. D'autres paramètres apparaissent quand il est activé.
 
 |Texte d'aide pour les amendements Assistant
 |Global
@@ -38,36 +38,36 @@ image::components/proposals/component_specific_conf.png[Add component form - Spe
 
 |Réaction des amendements activée
 |Étape
-|Les auteurs de la proposition peuvent accepter ou rejeter les amendements du participant pour cette phase.
+|Les auteurs de la proposition peuvent accepter ou rejeter les modifications du participant pour cette phase.
 
 |La promotion de l'amendement est activée
 |Étape
-|Si elle est rejetée, les auteurs d'amendements peuvent promouvoir leur amendement en tant que proposition pour cette phase.
+|Si elle est rejetée, les auteurs de modifications peuvent promouvoir leur modification en tant que proposition pour cette phase.
 
 |Visibilité des amendements
 |Étape
-|Choisissez entre "les amendements sont visibles pour tous" ou "les amendements ne sont visibles que pour leurs auteurs"
+|Choisissez entre "les modifications sont visibles pour tous" ou "les modifications ne sont visibles que pour leurs auteurs"
 |===
 
 === Créer un amendement
 
 Imaginons qu'un participant voit la proposition d'un autre participant et veut l'améliorer.
-Lorsque les amendements sont activés, ils peuvent cliquer sur le bouton "amendement" sur la page de la proposition.
+Lorsque les modifications sont activées, les participants peuvent cliquer sur le bouton "modification" sur la page de la proposition.
 
 image::components/proposals/amendments/proposal_to_amend.png[Amend button on proposal page]
 
-Ils peuvent ensuite apporter les modifications dans le formulaire "Créer un projet d'amendement", directement sur le texte original.
+Ils peuvent ensuite apporter les modifications dans le formulaire "Créer un projet de modification", directement sur le texte original.
 
 image::components/proposals/amendments/create_amendment_draft.png[Create amendment draft]
 
-Le participant peut ensuite prévisualiser son amendement avant de le publier.
+Le participant peut ensuite prévisualiser sa modification avant de la publier.
 
 image::components/proposals/amendments/publish_amendment_draft.png[Publish amendment draft]
 
-=== Revoir un amendement
+=== Revoir une modification
 
-Tous les participants peuvent voir les propositions d'amendement faites sur la page de la proposition.
-Les amendements apparaissent également comme des propositions dans la liste des propositions et le réseau et peuvent être filtrés par les participants.
+Tous les participants peuvent voir les propositions de modification effectuées sur la page de la proposition.
+Les modifications apparaissent également comme des propositions dans la liste des propositions et le réseau, et peuvent être filtrées par les participants.
 
 image::components/proposals/amendments/proposal_amended.png[Proposal with amendments]
 
@@ -75,17 +75,16 @@ L'auteur de la proposition modifiée reçoit une notification pour passer en rev
 
 image::components/proposals/amendments/amendment.png[Amendment of a proposal]
 
-L'auteur peut alors accepter ou rejeter l'amendement. En cliquant sur le bouton « Accepter », ils sont redirigés vers la page de révision des modifications.
+L'auteur peut alors accepter ou rejeter la modification. En cliquant sur « Accepter », il est redirigé vers la page de révision des modifications.
 
 image::components/proposals/amendments/proposal_amendment_review.png[Proposal amendment review]
 
-Une fois que l'amendement a été approuvé, la proposition initiale est mise à jour et le fait qu'il ait été modifié apparaît sur la proposition.
+Une fois la modification approuvée, la proposition initiale est mise à jour et la modification apparaît dans la proposition.
 
 image::components/proposals/amendments/proposal_amended_accepted.png[Proposal amendment accepted]
 
 L’historique des versions de la proposition et de ses modifications successives est disponible en cliquant sur le lien « Voir les autres versions » en bas de page.
 
-=== Promouvoir un amendement
+=== Promouvoir une modification
 
-If a proposal is rejected and the "Amendment promotion enabled" is enabled, then the amendment author can promote it to create
- a new proposal.
+Si la proposition est rejetée et que "Promotion de modification activée" est activé, alors l'auteur de la modification peut la promouvoir pour créer une nouvelle proposition.
