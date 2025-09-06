@@ -2,9 +2,7 @@
 
 == En bref
 
-La fonctionnalité ordre du jour permet à une administratrice de définir le calendrier d'une rencontre. It's possible to define agenda items and
-sub-items, with every one of the topics to be discussed in the meeting, along with a description and the duration
-of every item and sub-item.
+La fonctionnalité ordre du jour permet à une administratrice de définir le calendrier d'une rencontre. Il est possible de définir des points et des sous-points dans l'ordre du jour, avec tous les sujets à aborder lors de la réunion, avec la description et la durée de chaque point et sous-point.
 
 image::components/meetings/agenda/agenda_frontend.png[Agenda in the frontend]
 
@@ -12,7 +10,7 @@ image::components/meetings/agenda/agenda_frontend.png[Agenda in the frontend]
 
 === Formulaire de création d'ordre du jour
 
-Pour définir un agenda pour une réunion, cliquez sur l'icone Agenda : icons/action_agenda.png[icône de l'Agenda].
+Pour définir l'ordre du jour pour une réunion, cliquer sur [icône de l'Agenda].
 
 image:components/meetings/agenda/new_agenda_form.png[Formulaire de création d'ordre du jour dans le backoffice]
 
@@ -27,7 +25,7 @@ image:components/meetings/agenda/new_agenda_form.png[Formulaire de création d'o
 
 |Visible
 |Facultatif
-|Cochez cette case si vous voulez que l'ordre du jour soit visible pour les participants.
+|Cocher cette case permet de rendre visible l'ordre du jour aux participants.
 
 |Points de l'ordre du jour
 |Obligatoire
@@ -48,7 +46,7 @@ Il est également possible de supprimer et de modifier les éléments de l'ordre
 
 |Durée
 |Obligatoire
-|Combien de minutes durent le point de l'ordre du jour.
+|La durée du point de l'ordre du jour en minutes.
 
 |Description
 |Facultatif
@@ -60,4 +58,4 @@ Il est également possible de supprimer et de modifier les éléments de l'ordre
 |===
 
 La seule limite des points et des sous-points de l'ordre du jour est qu'ils doivent avoir une durée inférieure à celle du parent. Par exemple,
-s'il y a un objet qui dure 60 minutes, vous ne pouvez pas créer de sous-objet qui dure 90 minutes.
+s'il y a un point qui dure 60 minutes, vous ne pouvez pas créer de sous-point qui dure 90 minutes.
