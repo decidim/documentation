@@ -2,23 +2,22 @@
 
 == En bref
 
-Une fois la réunion terminée, l'auteur de la réunion peut la fermer. Cela permet d'ajouter les procès-verbaux de la réunion, les notes
-qui donnent un résumé de ce qui a été discuté pendant la réunion, les accords conclus, les décisions prises, etc.
+Une fois la réunion terminée, l'auteur de la réunion peut la conclure. Cela permet d'ajouter le procès-verbal de la réunion, 
+qui résume ce qui a été discuté pendant, les accords conclus, les décisions prises, etc.
 
 Cela permet d’apporter de la transparence à la réunion et sert également de compte rendu des différentes réunions.
 
-It's also possible to add other kind of metadata to the meeting, such as the organizations who attended, how many attendees
-and contributions there were, and what proposals were discussed.
+Il est également possible d'ajouter des méta-données supplémentaires, telles les organisations participantes, le nombre de présences, les contributions apportées et les propositions discutées.
 
 image::components/meetings/close/frontend.png[Close report in the frontend]
 
 == Configuration
 
-=== Fermer une réunion
+=== Clore une réunion
 
 ==== Réunions officielles
 
-Pour fermer une réunion en tant qu'administrateur, cliquez sur l'icône image:icons/action_close.png[Fermer le bouton] "Fermer".
+Pour clore une réunion en tant qu'administrateur, cliquez sur l'icône [Icône fermer] "Fermer".
 
 image::components/meetings/close/form_backend.png[Close meeting form in the backend]
 
@@ -45,7 +44,7 @@ image::components/meetings/close/form_backend.png[Close meeting form in the back
 
 |Propositions
 |Facultatif
-|Choisissez des propositions de cet espace participatif qui ont été discutées ou élaborées lors de cette réunion.
+|Choisir des propositions de cet espace participatif qui ont été discutées ou élaborées lors de cette réunion.
 
 |URL de la vidéo
 |Facultatif
@@ -57,7 +56,7 @@ image::components/meetings/close/form_backend.png[Close meeting form in the back
 
 |Est visible
 |Facultatif
-|Cochez cette case si vous souhaitez publier le rapport de clôture pour qu'il puisse être lu par les participants.
+|Cocher cette case pour publier le rapport de clôture afin qu'il puisse être lu par les participants.
 |===
 
 ==== Réunions des participants
@@ -67,7 +66,7 @@ Tout comme les participants peuvent créer des réunions, ils peuvent également
 image::components/meetings/close/button_frontend.png[Close meeting button in the frontend]
 
 Une fois la réunion terminée, l'auteur de la réunion peut voir le bouton « Fermer la réunion ». En cliquant dessus, ils sont redirigés vers
-le formulaire de fermeture.
+le formulaire de clôture.
 
 image::components/meetings/close/form_frontend.png[Close meeting form in the frontend]
 
@@ -86,15 +85,15 @@ image::components/meetings/close/form_frontend.png[Close meeting form in the fro
 
 |Propositions
 |Facultatif
-|Choisissez des propositions de cet espace participatif qui ont été discutées ou élaborées lors de cette réunion.
+|Choisir des propositions de cet espace participatif qui ont été discutées ou élaborées lors de cette réunion.
 |===
 
 === Propositions associées
 
-Si vous liez une proposition à une réunion lorsque vous la fermez, la réunion apparaît également dans la page des propositions.
+Si une proposition est liée à une réunion lors de la clôture, la réunion apparaît également dans la page des propositions.
 
 image::components/meetings/close/related_meeting.png[Related meeting in a proposal]
 
-Cela permet aux participants de naviguer rapidement dans un voyage de propositions.
+Cela permet aux participants de naviguer rapidement parmi les propositions.
 
 image::components/meetings/close/related_proposal.png[Related proposal in a meeting]
