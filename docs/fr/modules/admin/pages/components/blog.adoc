@@ -2,31 +2,30 @@
 
 == En bref
 
-Le volet Blog permet aux administrateurs de publier des nouvelles sur un espace participatif, que les participants peuvent lire pour obtenir des mises à jour.
+La fonctionnalité Blog permet aux administrateurs de publier des nouvelles à propos d'un espace participatif, que les participants peuvent lire pour obtenir des mises à jour.
 
 image::components/blog/example01.png[Example of blog posts list]
 
-Tous les articles de blog sont disponibles sur la liste des postes, et les participants peuvent cliquer sur chaque article de blog pour en savoir plus sur les nouveautés.
+Tous les articles du blog sont disponibles sur la liste des posts, et les participants peuvent cliquer sur chaque article du blog pour en savoir plus sur les nouveautés.
 
 image::components/blog/example02.png[Example of a blog post]
 
 == Configuration
 
-=== Créer un composant de blog
+=== Créer une fonctionnalité de blog
 
-Pour créer un composant de blog, allez d'abord dans xref:admin:spaces.adoc[espace participatif] où vous voulez le créer.
+Pour créer une fonctionnalité de blog, aller d'abord dans [espace participatif] à l'endroit de création souhaité.
 
 image::components/blog/component_blog.png[Add Blog component button]
 
-Alors:
+Ensuite :
 
-. Cliquez sur l'élément "Composants" dans le menu secondaire
-. Cliquez sur le bouton "Ajouter un composant"
-. Sélectionnez "Blog"
-. Remplissez le formulaire de création de composant
+. Cliquer sur l'élément "Fonctionnalités" dans le menu secondaire
+. Cliquer sur "Ajouter une fonctionnalité"
+. Sélectionner "Blog"
+. Remplir le formulaire de création de fonctionnalité
 
-Vous pouvez toujours mettre à jour ce formulaire et la configuration après avoir créé le composant, en cliquant sur l’icône
-image:icons/action_configure.png[Configurer l’icône] dans la liste des composants.
+Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur l’icône [Icône Configurer] dans la liste des fonctionnalités.
 
 image::components/blog/component.png[Add component form]
 
@@ -37,39 +36,39 @@ image::components/blog/component.png[Add component form]
 
 |Nom
 |Obligatoire
-|Le titre de ce composant. Par exemple, "Blogs" ou "Dernières nouvelles"
+|Le titre de cette fonctionnalité. Par exemple, "Blogs" ou "Dernières nouvelles"
 
 |Rang d'affichage
 |Facultatif
-|Quel ordre il a en relation avec les autres composants. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+|Position de la fonctionnalité par rapport aux autres fonctionnalités. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
 |===
 
-.Formulaire de blog - Paramètres globaux
+.Formulaire de blog - Paramètres généraux
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Annonce
 |Facultatif
-|Une annonce générale visible sur la page d'accueil du composant Blog .
+|Une annonce générale visible sur la page d'accueil de la fonctionnalité Blog.
 
 |Commentaires activés
 |Facultatif
-|Si vous voulez que les participants soient en mesure de commenter sur les articles de blog.
+|Pour activer les commentaires de cette fonctionnalité. Les participants peuvent ainsi commenter les articles du blog.
 
 |Longueur maximale des commentaires
 |Facultatif
 |La limite de caractères que les participants ont lors de la rédaction de commentaires. Laisser 0 pour la valeur par défaut.
 |===
 
-.Définition des étapes
+.Définition des paramètres
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Annonce
 |Facultatif
-|Une annonce générale qui sera visible sur la page générale de destination du blog.
+|Une annonce générale visible sur la page d’accueil du blog.
 
 |Commentaires désactivés
 |Facultatif
@@ -81,19 +80,18 @@ image::components/blog/component.png[Add component form]
 
 |Soutiens bloqués
 |Facultatif
-|Si vous voulez activer l'ajout de nouvelles approbations pour cette phase.
+|Pour permettre l'ajout de nouveaux soutiens pour cette phase.
 |===
 
 === Gérer les messages
 
-Pour commencer à créer et à gérer des messages, cliquez sur le titre du composant dans la barre de navigation ou dans la liste des composants, ou cliquez sur l'image
-: icons/action_edit. Icône ng[Gérer l'icône du composant] dans la liste des composants.
+Pour créer et à gérer des messages, cliquer sur le titre de la fonctionnalité dans la barre de navigation ou dans la liste des fonctionnalités, ou cliquer sur [Icône Gérer la fonctionnalité] dans la liste des fonctionnalités.
 
 image:components/blog/manage_posts.png[Gérer la table des posts]
 
 === Créer un message
 
-Pour créer un message, cliquez sur le bouton "Nouveau post" en haut à droite de la page.
+Pour créer un message, cliquer sur "Nouveau post" en haut à droite de la page.
 
 image:components/blog/new_post.png[Formulaire du nouveau post]
 
@@ -116,7 +114,7 @@ image:components/blog/new_post.png[Formulaire du nouveau post]
 
 |Date de publication
 |Facultatif
-|Date de publication de la publication. Si dans le futur, la publication n'est pas publiée avant cette date.
+|Date de publication du message. Si dans le futur, le post n'est pas publié avant cette date.
 |===
 
 === Actions
@@ -136,24 +134,24 @@ image:components/blog/new_post.png[Formulaire du nouveau post]
 
 |image:icons/action_attachments.png[Icône des pièces jointes]
 |Fichiers joints
-|Ajouter des documents liés à la publication.
+|Ajouter des documents liés au post.
 
 |image:icons/action_preview.png[Icône d'aperçu]
 |Aperçu
-|Voyez comment il est montré dans le frontend aux participants.
+|Pour voir comment il s'affiche dans le frontend.
 
 |image:icons/action_permissions.png[Permissions icon]
 |Autorisations
-|Gérer les autorisations nécessaires pour commenter ou avaliser ce billet de blog spécifique.
+|Gérer les autorisations nécessaires pour commenter ou valider ce post spécifique.
 
 |image:icons/action_delete.png[Supprimer l'icône]
 |Supprimez
-|Supprimer ce message.
+|Supprimer ce post.
 |===
 
 == Exemples
 
-Ci-dessous, vous pouvez trouver quelques liens vers des exemples de composants de blog:
+Ci-dessous, vous pouvez trouver quelques liens vers des exemples de fonctionnalités de blog :
 
 * https://meta.decidim.org/processes/news/f/1719/posts[Dernière nouvelle de l'association Decidim]
 * https://www.decidim.barcelona/processes/volem-decidir/f/6338/posts[News on a participatory process in Barcelona]
