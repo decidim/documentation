@@ -150,7 +150,7 @@ Il est également possible de rechercher des propositions titre ou par ID dans l
 
 |image:icons/action_edit.png[Modifier l'icône]
 |Editer
-|Modifier le formulaire, uniquement pour xref:_official_propositions[Propositions officielles].
+|Modifier le formulaire, uniquement pour les [Propositions officielles].
 
 |image:icons/action_answers.png[Icône de proposition de réponse]
 |xref:components/propositions/answers.adoc[Répondre à la proposition]
@@ -162,12 +162,12 @@ Il est également possible de rechercher des propositions titre ou par ID dans l
 
 |image:icons/action_permissions.png[Permissions icon]
 |Autorisations
-|Pour gérer les autorisations nécessaires pour aimer, amender, voter sur un commentaire ou un commentaire sur cette proposition spécifique.
+|Pour gérer les autorisations nécessaires pour aimer, modifier, voter un commentaire ou commenter cette proposition spécifique.
 |===
 
-=== Actions en bloc
+=== Actions regroupées
 
-Lorsque vous gérez des propositions, vous pouvez sélectionner plusieurs propositions en même temps pour effectuer des actions en vrac.
+Lorsque vous gérez des propositions, vous pouvez sélectionner plusieurs propositions en même temps pour effectuer plusieurs actions en même temps.
 
 image::components/proposals/bulk_actions.png[Proposals bulk actions]
 
@@ -184,6 +184,6 @@ Le bouton "Exporter tout" permet aux administrateurs d'exporter les propositions
 
 === Importation
 
-* Importer des propositions depuis un autre composant : Permet d'importer des propositions depuis un composant de proposition du même espace.
+* Importer des propositions depuis un autre volet : Permet d'importer des propositions depuis un volet de proposition du même espace.
 * Importer des propositions depuis un fichier
 * Importer des réponses depuis un fichier
