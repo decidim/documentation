@@ -15,7 +15,7 @@ body collecting incidents, abuses, or proposals to improve decision-making proce
 NOTE: The main difference between xref:admin:spaces/processes.adoc[participatory processes] and assemblies is that assemblies don't
 have phases, meaning that they don't have timelines.
 
-Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments:
+Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments :
 
 * xref:admin:espace/assemblies/types.adoc[Type d'assemblée]
 * xref:admin:espace/assemblies/assembly_creation.adoc[Création de l'assemblée]
@@ -48,7 +48,7 @@ Vous pouvez trouver tous les assemblages dans la liste dans le panneau d'adminis
 * *Privé* : si l'assemblée est ouverte à tous les participants ou à certains participants.
 * *Publié* : si l'assemblage est publié ou non.
 
-Vous pouvez filtrer et trier cette liste en cliquant sur le bouton "Filtre" et sur les en-têtes des colonnes.
+Il est possible de filtrer et trier cette liste en cliquant sur "Filtrer" et sur les en-têtes des colonnes.
 Vous pouvez également rechercher des assemblages par titre dans la barre de recherche.
 
 image::spaces/assemblies/assemblies_list_filter.png[Assemblies list filtered]
