@@ -5,31 +5,31 @@
 Results are the entities composing the accountability component. They can be linked to proposals, projects, meetings, and have
 categories, statuses and dates assigned.
 
-Les administrateurs peuvent également créer des sous-résultats, pour détailler les éléments nécessaires à une implémentation de résultats.
+Les administrateurs peuvent également créer des sous-réalisations, pour détailler les éléments nécessaires à une mise en oeuvre de réalisations.
 
-== Créer un résultat
+== Créer une réalisation
 
 To start creating results, click in the component title in the navigation bar or in the component list, or click in the
 image:icons/action_edit.png[Manage component icon] icon on the components list.
 
 image::components/accountability/new_result_button.png[New result button]
 
-Ensuite, cliquez sur le bouton "Nouveau résultat" en haut à droite de la page.
+Ensuite, cliquez sur "Nouvelle réalisation" en haut à droite de la page.
 
 image::components/accountability/new_result.png[New result form]
 
-.Formulaire de nouveau résultat
+.Tableau nouvelle réalisation
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Titre
 |Obligatoire
-|Titre du résultat.
+|Titre de la réalisation.
 
 |Description
 |Facultatif
-|Description du résultat.
+|Description de la réalisation.
 
 |Secteur
 |Facultatif
@@ -37,7 +37,7 @@ image::components/accountability/new_result.png[New result form]
 
 |Catégorie
 |Facultatif
-|Permet de catégoriser les résultats sur la page d'atterrissage de la responsabilité.
+|Permet de catégoriser les réalisations sur la page d'accueil du Suivi.
 
 |Date de début
 |Facultatif
@@ -49,11 +49,11 @@ image::components/accountability/new_result.png[New result form]
 
 |Statut
 |Facultatif
-|Permet de donner un statut aux résultats.
+|Permet de donner un statut aux réalisations.
 
 |Avancement
 |Facultatif
-|Pourcentage de progression du résultat.
+|Pourcentage de progression de la réalisation.
 
 |Propositions
 |Facultatif
@@ -61,23 +61,23 @@ image::components/accountability/new_result.png[New result form]
 
 |Projets inclus
 |Facultatif
-|Projets qui sont à l'origine du résultat.
+|Projets à l'origine de la réalisation.
 |===
 
-== Gérer les résultats
+== Gérer les réalisations
 
 Sur la liste des résultats dans le panneau d'administration, les administrateurs peuvent voir :
 
-* *ID* : Numéro d'identification pour ce résultat.
-* *Titre* : Titre du résultat.
-* *Catégorie* : Catégorie du résultat.
-* *Portée* : Portée du résultat, si activé dans l'espace participatif.
-* *xref:admin:admin:components/Accounability/statuses.adoc[Status]*: Statut du résultat.
+* *ID* : Numéro d'identification pour cette réalisation.
+* *Titre* : Titre de la réalisation.
+* *Catégorie* : Catégorie de la réalisation.
+* *Portée* : Objectif de la réalisation, si activé dans l'espace participatif.
+* [Progrès]*: Progrès de la réalisation.
 * *Progression* : Pourcentage de progression.
-* *Créé*: Date de création du résultat.
+* *Créé*: Date de création de la réalisation.
 
-Vous pouvez filtrer et trier cette liste en cliquant sur le bouton "Filtre" et sur les en-têtes des colonnes.
-Vous pouvez également rechercher des résultats par leur ID et leur titre dans la barre de recherche.
+Il est possible de filtrer et trier cette liste en cliquant sur "Filtrer" et sur les en-têtes des colonnes.
+Il est également possible de rechercher des résultats par leur ID et leur titre dans la barre de recherche.
 
 image::components/accountability/results_list_filter.png[New result button]
 
