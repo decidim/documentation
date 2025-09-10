@@ -11,7 +11,7 @@ Lors des conférences, les composantes des réunions sont affichées sous forme 
 
 NOTE: Vous voulez créer une conférence ? Vérifiez l'article xref:admin:spaces/conferences/conference_creation.adoc[conference creation].
 
-Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments:
+Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments :
 
 * xref:admin:admin:espaces/conférences/conference_creation.adoc[Création de la conférence]
 * xref:admin:spaces/conferences/components.adoc[Components]
@@ -47,7 +47,7 @@ Vous pouvez trouver toutes les conférences dans la liste dans le panneau d'admi
 * *Créé à* : date de création de la conférence.
 * *Publié* : si la conférence est publiée ou non.
 
-Vous pouvez filtrer et trier cette liste en cliquant sur le bouton "Filtre" et sur les en-têtes des colonnes.
+Il est possible de filtrer et trier cette liste en cliquant sur "Filtrer" et sur les en-têtes des colonnes.
 Vous pouvez également rechercher des conférences par titre dans la barre de recherche.
 
 == Actions
