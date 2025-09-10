@@ -18,7 +18,7 @@ Dans cette section de documentation, vous pouvez trouver comment configurer et g
 
 * [Réalisations]
 * xref:admin:components/Accounability/statuses.adoc[Statuses]
-* xref:admin:components/Accounability/milestone.adoc[Milestones]
+* [Étapes]
 * xref:admin:components/Accounability/import.adoc[Importer et exporter les résultats]
 
 == Configuration
@@ -111,7 +111,7 @@ image::components/accountability/add_taxonomy_filter.png[Add taxonomy filter to 
 
 image::components/accountability/grouped_by_taxonomy.png[Participant can now group result by taxonomy]
 
-=== Sous-résultats
+=== Sous-réalisations
 
 Une réalisation peut parfois être le produit de plusieurs réalisations.
 Par exemple, la réalisation de la « construction de 3 skate-parcs en ville » pourraient utiliser trois sous-réalisations pour superviser l'élaboration détaillée de la réalisation.
