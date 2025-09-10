@@ -29,7 +29,7 @@ Lorsqu'un participant crée un groupe d'utilisateurs, il ajoute une ligne dans l
 * *Créé à* : date de création du groupe d'utilisateurs.
 * *État* : l'état de la vérification, ne peut être qu'en attente, vérifiée ou rejetée.
 
-Vous pouvez filtrer et trier cette liste en cliquant sur le bouton "Filtre" et sur les en-têtes des colonnes.
+Il est possible de filtrer et trier cette liste en cliquant sur "Filtrer" et sur les en-têtes des colonnes.
 Vous pouvez également rechercher des groupes d'utilisateurs par e-mail, par nom ou par surnom dans la barre de recherche.
 
 image::participants/admin_user_group_verification.png[Admin panel: user group verifications]
