@@ -27,7 +27,7 @@ les composants pour chaque phase comme vous en avez besoin pour votre processus.
 
 Dans chacune de ces Phases, vous pouvez activer xref:admin:components.adoc[Components] dont vous avez besoin.
 
-Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments:
+Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments :
 
 * xref:admin:spaces/processes/groups.adoc[Process Groups]
 * xref:admin:admin:espaces/processes/types.adoc[Types de processus]
@@ -65,7 +65,7 @@ Vous pouvez trouver tous les processus dans la liste dans le panneau d'administr
 * *Privé* : si le processus est ouvert à tous les participants ou seulement à certains participants.
 * *Publié* : si le processus est publié ou non.
 
-Vous pouvez filtrer et trier cette liste en cliquant sur le bouton "Filtre" et sur les en-têtes des colonnes.
+Il est possible de filtrer et trier cette liste en cliquant sur "Filtrer" et sur les en-têtes des colonnes.
 Vous pouvez également rechercher des processus par leur titre dans la barre de recherche.
 
 image::spaces/processes/processes_list_filter.png[Participatory processes list filtered]
