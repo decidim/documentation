@@ -2,40 +2,39 @@
 
 == En bref
 
-Le volet Budget permet aux participants de voter en sélectionnant les projets de leur choix. Ce composant a été conçu pour
+La fonctionnalité Budget permet aux participants de voter en sélectionnant les projets de leur choix. Cette fonctionnalité a été conçue pour
 organiser le vote dans la phase finale d'un budget participatif, bien qu'il puisse être utilisé pour d'autres types de processus.
 
-Les administrateurs peuvent décider des règles de vote, pour que les participants sélectionnent un nombre défini de projets, ou votez pour comme
-plusieurs projets qu'ils veulent jusqu'à atteindre un certain montant.
+Les administrateurs peuvent décider des règles de vote, pour que les participants sélectionnent un nombre défini de projets, ou votent pour autant de
+ projets qu'ils le souhaitent jusqu'à atteindre un certain montant.
 
 image::components/budgets/example01.png[Budgets example voting]
 
-Les administrateurs ont plusieurs options pour le flux de vote et pour les règles de vote.
+Les administrateurs ont plusieurs options pour le workflow de vote et pour les règles de vote.
 
 image::components/budgets/example02.png[Budgets example voting]
 
-Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments:
+Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments :
 
 * xref:admin:components/budgets/budgets.adoc[Budgets]
 * xref:admin:components/budgets/projects.adoc[Projects]
 
 == Configuration
 
-Pour créer un composant Budget, allez d'abord dans xref:admin:spaces.adoc[espace participatif] où vous voulez le créer.
+Pour créer une fonctionnalité Budget, aller d'abord dans [espace participatif] à l'endroit de création souhaité.
 
 image::components/budgets/component_budgets.png[Add Budgets component button]
 
-Alors:
+Ensuite :
 
-. Cliquez sur l'élément "Composants" dans le menu secondaire
-. Cliquez sur le bouton "Ajouter un composant"
-. Sélectionnez "Budgets"
-. Remplissez le formulaire de création de composant
+. Cliquer sur l'élément "Fonctionnalités" dans le menu secondaire
+. Cliquer sur "Ajouter une fonctionnalité"
+. Sélectionner "Budgets"
+. Remplir le formulaire de création de fonctionnalité
 
-Vous pouvez toujours mettre à jour ce formulaire et la configuration après avoir créé le composant, en cliquant sur l'image
-image:icons/action_configure.png[Configurer l'icône] Configurer l'icône dans la liste des composants.
+Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur l'image [Icône Configurer] dans la liste des fonctionnalités.
 
-Le formulaire de création de composants est divisé en différentes sections détaillées ci-dessous.
+Le formulaire de création de fonctionnalité est divisé en différentes sections détaillées ci-dessous.
 
 image::components/budgets/component_01.png[Add component form title]
 
@@ -46,29 +45,29 @@ image::components/budgets/component_01.png[Add component form title]
 
 |Nom
 |Obligatoire
-|Le titre de ce composant.
+|Le titre de cette fonctionnalité.
 
 |Rang d'affichage
 |Facultatif
-|L'ordre du composant en relation avec les autres composants. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
-Par exemple, si vous avez deux composants, "Composant a" avec le poids "10" et "Composant b" avec le poids "0"
-puis "Composant b" est d'abord lors de la commande.
+|Position de la fonctionnalité par rapport aux autres fonctionnalités. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux fonctionnalités, "Fonctionnalité a" de poids "10" et "Fonctionnalité b" de poids "0"
+alors "Fonctionnalité b" est placée avant dans le listage.
 |===
 
 image::components/budgets/component_02.png[Add component form - Global settings]
 
 
-.Formulaire de budgets - Paramètres globaux
+.Formulaire de budgets - Paramètres généraux
 |===
 |Champ |Type |Description
 
 |Portées activées
 |Facultatif
-|Cochez cette case si vous voulez que le filtrage des portées soit disponible dans ce composant.
+|Cocher cette case pour que le filtrage des Objectifs soit disponible dans cette fonctionnalité.
 
 |Secteur
 |Facultatif
-|Ce composant appartient à xref:admin:settings/scopes.adoc[Scope].
+|Cette fonctionnalité appartient à [Objectif].
 
 |Processus
 |Obligatoire
@@ -76,7 +75,7 @@ image::components/budgets/component_02.png[Add component form - Global settings]
 
 |Projets par page
 |Obligatoire
-|Combien de projets sont affichés par page sur la page d'accueil du budget.
+|Nombre de projets affichés par page sur la page d'accueil du budget.
 
 |Activer la règle : Pourcentage de budget minimum
 |Optionnel, mais incompatible avec les 2 autres règles de vote.
@@ -95,7 +94,7 @@ le nombre de projets que les participants doivent voter comme un minimum et maxi
 
 |Commentaires activés
 |Facultatif
-|Si vous voulez que les participants soient en mesure de commenter les projets.
+|Pour activer les commentaires. Les participants peuvent ainsi commenter les projets.
 
 |Longueur maximale des commentaires
 |Facultatif
@@ -131,11 +130,11 @@ image::components/budgets/component_03.png[Add component form - Step settings]
 
 |Vote
 |Obligatoire
-|Choisissez l'une des options suivantes selon la phase du processus : Vote désactivé, Vote activé ou Vote terminé.
+|Choisir l'une des options suivantes selon la phase du processus : Vote désactivé, Vote activé ou Vote terminé.
 
 |Afficher les votes
 |Facultatif
-|Que le nombre de votes soit public. Nous vous recommandons fortement de ne cocher cette option qu'une fois le vote terminé.
+|Pour que le nombre de votes soit public. Nous vous recommandons fortement de ne cocher cette option qu'une fois le vote terminé.
 
 |Annonce
 |Facultatif
@@ -143,7 +142,7 @@ image::components/budgets/component_03.png[Add component form - Step settings]
 
 |Page d'accueil des budgets
 |Facultatif
-|Le message affiché sur la page d'accueil des budgets quand il y a plusieurs budgets pour cette phase.
+|Le message affiché sur la page d'accueil des budgets dans le cas où cette phase contient plusieurs budgets.
 
 |Plus d'informations modales
 |Facultatif
@@ -156,7 +155,7 @@ Une fois le vote terminé, un administrateur doit :
 
 . Modifier la configuration de vote pour le volet budget en "Vote terminé"
 . Accéder à la liste des projets et afficher les résultats
-. Sur les projets qui ont été sélectionnés, allez dans chaque projet, éditez-le et cochez la case "Sélectionné pour l'implémentation".
+. Sur les projets qui ont été sélectionnés, aller dans chaque projet, l'éditer et cocher la case "Sélectionné pour mise en oeuvre".
 
 image::components/budgets/results_select_project.png[Select a project for implementation]
 
