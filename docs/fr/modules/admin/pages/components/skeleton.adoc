@@ -17,16 +17,16 @@ image:components/skeleton/example04.png[]
 
 == Configuration
 
-Pour créer un composant de blog, allez d'abord dans xref:admin:spaces.adoc[espace participatif] où vous voulez le créer.
+Pour créer une fonctionnalité de blog, aller d'abord dans [espace participatif] à l'endroit de création souhaité.
 
 image::components/skeleton/component_skeleton.png[Add component button]
 
-Alors:
+Ensuite :
 
-. Cliquez sur l'élément "Composants" dans le menu secondaire
-. Cliquez sur le bouton "Ajouter un composant"
+. Cliquer sur l'élément "Fonctionnalités" dans le menu secondaire
+. Cliquer sur "Ajouter une fonctionnalité"
 . Sélectionnez "Skeleton"
-. Remplissez le formulaire de création de composant
+. Remplir le formulaire de création de fonctionnalité
 
 image:components/skeleton/component.png[Ajouter un formulaire de composant]
 
@@ -55,7 +55,7 @@ image:components/skeleton/component.png[Ajouter un formulaire de composant]
 
 |Secteur
 |Facultatif
-|Ce composant appartient à xref:admin:settings/scopes.adoc[Scope].
+|Cette fonctionnalité appartient à [Objectif].
 
 |Portée générale
 |Facultatif
