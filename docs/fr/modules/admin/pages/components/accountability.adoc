@@ -1,4 +1,4 @@
-= Suivi des réalisations
+= Suivi
 
 == En bref
 
@@ -16,7 +16,7 @@ image::components/accountability/example02.png[Example of a result]
 
 Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments :
 
-* [Réalisations]
+* xref:admin:components/accountability/results.adoc[Réalisations]
 * xref:admin:components/Accounability/statuses.adoc[Statuses]
 * [Étapes]
 * xref:admin:components/Accounability/import.adoc[Importer et exporter les résultats]
