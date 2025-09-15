@@ -49,7 +49,7 @@ image::participants/authorizations_code_postal_letter_confirm.png[Code by postal
 
 == 4. Correspondance de code
 
-Si le code de vérification correspond, alors le participant voit le message "Félicitations. Vous avez été vérifié avec succès. »
+Si le code de vérification correspond, alors le participant voit le message "Félicitations. Vous avez été vérifié avec succès.
 
 D'un autre côté, si le code de vérification ne correspond pas, alors le participant voit une erreur demandant de vérifier le code dans
 la lettre.

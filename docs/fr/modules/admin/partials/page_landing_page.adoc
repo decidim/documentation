@@ -1,9 +1,9 @@
 = Page d'accueil
 
-== Understand the basics
+== En bref
 
 Chaque processus et assemblage a une page de destination, avec différents blocs de contenu qui peuvent être ajoutés, supprimé, activé, ordonné et configuré,
-comme xref:admin:settings/homepage. doc[Homepage] blocs de contenu.
+comme xref:admin:settings/homepage.
 
 Pour organiser une page de destination, entrez l'espace et cliquez sur l'élément de la page d'accueil dans la barre de navigation de gauche.
 Vous êtes redirigé vers le panneau de configuration de la page d'accueil.
@@ -14,7 +14,7 @@ Vous êtes redirigé vers le panneau de configuration de la page d'accueil.
 
 image::spaces/landing_page/landing_page_admin.png[Landing page content blocks]
 
-== Blocs de contenu de la page d'accueil
+== Landing page content blocks
 
 Ci-dessous, vous trouverez tous les guides de configuration des blocs de contenu et les captures d'écran de la façon dont ils sont affichés sur la page d'accueil.
 
@@ -151,4 +151,4 @@ Vous pouvez configurer l'ordre d'affichage et la responsabilisation pour prendre
 
 === HTML
 
-Le bloc contenu du bloc HTML permet d'ajouter un bloc HTML modifiable sur la page d'atterrissage, et donc de créer une section personnalisée.
+The HTML block content block allows to add an editable HTML block on the landing page, and therefore to create a personalized section.

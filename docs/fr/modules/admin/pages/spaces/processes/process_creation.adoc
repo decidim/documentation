@@ -1,6 +1,6 @@
 = Création du processus participatif
 
-== Understand the basics
+== En bref
 
 Les processus participatifs permettent aux administrateurs de configurer des composants en articulation avec différentes phases participatives.
 Pour commencer à créer un processus, lorsque dans la liste des processus, cliquez sur le bouton "Nouveau processus" en haut à droite de la page.
@@ -111,7 +111,7 @@ Pour les images, utilisez de préférence des images paysagères, le service ré
 == Métadonnées
 
 Cette section permet de fournir des méta-informations sur le processus.
-Il peut être activé sur la page d'accueil avec le bloc "Metadata".
+It can be enabled on the landing page with the "Metadata" landing page block.
 
 image::spaces/processes/processes_new_form_metadata.png[New participatory process form metadata section]
 
@@ -122,27 +122,27 @@ image::spaces/processes/processes_new_form_metadata.png[New participatory proces
 
 |Groupe de promoteurs
 |Facultatif
-|Si un groupe spécifique est à l'origine du processus, comme une direction de ville, un comité d'association, etc.
+|If a specific group is at the origin of the process, like a city direction, an association committee, etc.
 
 |Zone d'organisation
 |Facultatif
-|Le domaine ou la catégorie de l'organisation, s'il est pertinent.
+|The organization domain or category, if it's relevant.
 
 |Métadonnées du périmètre d'application
 |Facultatif
-|Métadonnées sur la portée du processus, si elle est pertinente.
+|Metadata on the process scope, if it's relevant.
 
 |Qui participe
 |Facultatif
-|Qui sont les participants autorisés, qui peuvent participer au processus.
+|Who are the authorized participants, who can participate to the process.
 
 |Ce qui est décidé
 |Facultatif
-|La question du processus, l'objet de ce qui est décidé.
+|The issue of the process, the object of what is decided.
 
 |Comment est-il décidé
 |Facultatif
-|Le processus de prise de décision.
+|The decision making process.
 |===
 
 == Filtres
@@ -199,7 +199,7 @@ image::spaces/processes/processes_new_form_visibility.png[New participatory proc
 |Promu
 |Facultatif
 |Cochez cette case si vous voulez que le processus ait plus de visibilité dans la liste publique Processus et le bloc de contenu "Processus mis en surbrillance"
-dans xref:admin:settings/homepage. configuration doc[Homepage].
+dans xref:admin:settings/homepage.
 |===
 
 == Processus connexes

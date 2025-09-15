@@ -1,6 +1,6 @@
 = Propositions
 
-== Understand the basics
+== En bref
 
 Le volet Propositions permet aux gens de créer, de commenter et de donner leur vote aux propositions. C'est l'un des principaux composants de
 Decidim, et a un grand nombre de paramètres de configuration.
@@ -22,17 +22,16 @@ Pour créer un composant Propositions, allez d'abord dans xref:admin:spaces.adoc
 
 image::components/proposals/component_proposals.png[Add Proposals component button]
 
-Alors:
+Ensuite :
 
-. Cliquez sur l'élément "Composants" dans le menu secondaire
-. Cliquez sur le bouton "Ajouter un composant"
+. Cliquer sur l'élément "Fonctionnalités" dans le menu secondaire
+. Cliquer sur "Ajouter une fonctionnalité"
 . Sélectionnez "Propositions"
-. Remplissez le formulaire de création de composant
+. Remplir le formulaire de création de fonctionnalité
 
-Vous pouvez toujours mettre à jour ce formulaire et la configuration après avoir créé le composant, en cliquant sur l'image
-image:icons/action_configure.png[Configurer l'icône] Configurer l'icône dans la liste des composants.
+Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur l'image [Icône Configurer] dans la liste des fonctionnalités.
 
-Le formulaire de création de composants est divisé en différentes sections détaillées ci-dessous.
+Le formulaire de création de fonctionnalité est divisé en différentes sections détaillées ci-dessous.
 
 image::components/proposals/component_01.png[Add component form]
 
@@ -43,13 +42,13 @@ image::components/proposals/component_01.png[Add component form]
 
 |Nom
 |Obligatoire
-|Le titre de ce composant.
+|Le titre de cette fonctionnalité.
 
 |Rang d'affichage
 |Facultatif
-|L'ordre du composant en relation avec les autres composants. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
-Par exemple, si vous avez deux composants, "Composant a" avec le poids "10" et "Composant b" avec le poids "0"
-puis "Composant b" est d'abord lors de la commande.
+|Position de la fonctionnalité par rapport aux autres fonctionnalités. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux fonctionnalités, "Fonctionnalité a" de poids "10" et "Fonctionnalité b" de poids "0"
+alors "Fonctionnalité b" est placée avant dans le listage.
 |===
 
 image::components/proposals/component_02.png[Add component form]
@@ -65,11 +64,11 @@ image::components/proposals/component_02.png[Add component form]
 
 |Portées activées
 |Facultatif
-|Cochez cette case si vous voulez que le filtrage des portées soit disponible dans ce composant.
+|Cocher cette case pour que le filtrage des Objectifs soit disponible dans cette fonctionnalité.
 
 |Secteur
 |Facultatif
-|Ce composant appartient à xref:admin:settings/scopes.adoc[Scope].
+|Cette fonctionnalité appartient à [Objectif].
 
 |Limite de votes par utilisateur
 |Facultatif

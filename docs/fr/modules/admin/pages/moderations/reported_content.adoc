@@ -56,12 +56,12 @@ Une fois que vous modérez un contenu, il apparaît dans la liste de contenu "Ca
 |Permet à un administrateur ou un modérateur de continuer à afficher ce contenu et d'annuler le rapport.
 |Disponible lorsque le contenu n'est pas encore masqué.
 
-|image:icons/action_hide.png[Masquer l'icône]
+|image:icons/action_hide.png[Démasquer l'icône]
 |Cacher
 |Permet à un administrateur ou un modérateur de masquer ce contenu et d'accepter le rapport.
 |Disponible lorsque le contenu n'est pas encore masqué.
 
-|image:icons/action_hide.png[Démasquer l'icône]
+|image:icons/action_hide.png[Masquer l'icône]
 |Unhide
 |Autorise un administrateur ou un modérateur à masquer ce contenu (l'afficher à nouveau publiquement).
 |Disponible lorsque le contenu est masqué.

@@ -1,11 +1,11 @@
 = Gérer les initiatives
 
-== Understand the basics
+== En bref
 
 Lorsqu'un participant crée une initiative, il ne crée pas seulement une ressource comme une proposition, il crée un espace entier
 permettant aux administrateurs de gérer dans l'administration :
 
-* xref:admin:espaces/initiatives/admin_manage/commissione.adoc[Membres du Comité]
+* xref:admin:espace:initiatives/author_manage/commissione.adoc[Comité du promoteur]
 * xref:admin:espaces/initiatives/admin_manage/components.adoc[Components]
 * xref:admin:espaces/initiatives/admin_manage/attachments.adoc[Attachments]
 * xref:admin:espaces/initiatives/admin_manage/moderations.adoc[Moderations]
@@ -30,7 +30,7 @@ Vous pouvez trouver tous les processus dans cette liste avec:
 * *Créé à* : date de création de l'initiative.
 * *Publié à*: date de publication de l'initiative.
 
-Vous pouvez filtrer et trier cette liste en cliquant sur le bouton "Filtre" et sur les en-têtes des colonnes.
+Il est possible de filtrer et trier cette liste en cliquant sur "Filtrer" et sur les en-têtes des colonnes.
 Vous pouvez également rechercher des initiatives par titre dans la barre de recherche.
 
 image::spaces/initiatives/initiative_list_filters.png[Initiatives list filtered]

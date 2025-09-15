@@ -1,11 +1,10 @@
-= Suivi des réalisations
+= Suivi
 
-== Understand the basics
+== En bref
 
 The Accountability component allows participants to know the status of a project's implementation and to follow its evolution.
 
-This feature allows administrators to present a summary of the achievements decided upon in assemblies, during
-participatory processes, or any other space. Les administrateurs créent des résultats qu'ils peuvent ensuite catégoriser et lier à des propositions, des réunions ou des projets d'investissement
+Cette fonctionnalité permet aux administrateurs de présenter un résumé ce qui a été accompli et décidé lors d'assemblées, dans les processus participatifs ou d'autres espaces. Les administrateurs créent des Réalisations qu'ils peuvent ensuite catégoriser et lier à des propositions, des réunions ou des projets d'investissement
 (par exemple, dans le cadre d'un budget participatif).
 
 image::components/accountability/example01.png[Example of results list]
@@ -15,9 +14,9 @@ indicating their progress. The results, projects, and states can be updated manu
 
 image::components/accountability/example02.png[Example of a result]
 
-Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments:
+Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments :
 
-* xref:admin:components/Accounability/results.adoc[Results]
+* xref:admin:components/accountability/results.adoc[Réalisations]
 * xref:admin:components/Accounability/statuses.adoc[Statuses]
 * xref:admin:components/accountability/timeline.adoc[Project evolution]
 * xref:admin:components/Accounability/import.adoc[Importer et exporter les résultats]
@@ -28,32 +27,31 @@ To create an Accountability component, first go in the xref:admin:spaces.adoc[pa
 
 image::components/accountability/component_accountability.png[Add Accountability component button]
 
-Alors:
+Ensuite :
 
-. Cliquez sur l'élément "Composants" dans le menu secondaire
-. Cliquez sur le bouton "Ajouter un composant"
-. Sélectionnez "Accountability"
-. Remplissez le formulaire de création de composant
+. Cliquer sur l'élément "Fonctionnalités" dans le menu secondaire
+. Cliquer sur "Ajouter une fonctionnalité"
+. Sélectionner "Suivi"
+. Remplir le formulaire de création de fonctionnalité
 
-Vous pouvez toujours mettre à jour ce formulaire et la configuration après avoir créé le composant, en cliquant sur l'image
-image:icons/action_configure.png[Configurer l'icône] dans la liste des composants.
+Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant [Icône configurer] dans la liste des fonctionnalités.
 
 image::components/accountability/component.png[Add component form]
 
-.Formulaire de responsabilisation
+.Formulaire de suivi
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Nom
 |Obligatoire
-|Quel est le titre de cette fonctionnalité. Par exemple "Responsabilité"
+|Quel est le titre de cette fonctionnalité. Par exemple "Suivi"
 
 |Rang d'affichage
 |Facultatif
-|L'ordre du composant en relation avec les autres composants. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
-Par exemple, si vous avez deux composants, "Composant a" avec le poids "10" et "Composant b" avec le poids "0"
-puis "Composant b" est d'abord lors de la commande.
+|Position de la fonctionnalité par rapport aux autres fonctionnalités. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux fonctionnalités, "Fonctionnalité a" de poids "10" et "Fonctionnalité b" de poids "0"
+alors "Fonctionnalité b" est placée avant dans le listage.
 |===
 
 .Paramètres généraux
@@ -63,7 +61,7 @@ puis "Composant b" est d'abord lors de la commande.
 
 |Portées activées
 |Facultatif
-|Cochez cette case si vous voulez que le filtrage xref:admin:settings/scopes.adoc[Scopes] soit disponible dans ce composant.
+|Cocher cette case pour que le filtrage [Objectifs] soit disponible dans cette fonctionnalité.
 
 |Secteur
 |Facultatif
@@ -71,7 +69,7 @@ puis "Composant b" est d'abord lors de la commande.
 
 |Commentaires activés
 |Facultatif
-|Si vous voulez avoir des commentaires dans le composant.
+|Pour activer les commentaires dans la fonctionnalité.
 
 |Longueur maximale des commentaires
 |Facultatif
@@ -79,14 +77,14 @@ puis "Composant b" est d'abord lors de la commande.
 
 |Intro
 |Facultatif
-|Une introduction générale qui sera affichée sur la page d’atterrissage de la responsabilité.
+|Une introduction générale qui sera affichée sur la page d’atterrissage du suivi.
 
 |Afficher les progrès
 |Facultatif
-|Cochez cette case si vous voulez que la barre de progression soit affichée sur les résultats avec un niveau de progression aa.
+|Cocher cette case pour que la barre de progression des réalisations soit affichée avec un niveau de progression aa.
 |===
 
-.Définition des étapes
+.Définition des paramètres
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -98,7 +96,7 @@ puis "Composant b" est d'abord lors de la commande.
 
 == Exemples
 
-Ci-dessous, vous pouvez trouver quelques liens vers des exemples de composants de responsabilité:
+Ci-dessous, vous trouverez quelques liens vers des exemples de fonctionnalité de Suivi :
 
 * https://www.decidim.barcelona/processes/pam/f/8/[2016-2019 Plan d’action municipale à Decidim Barcelona]
 * https://ecrivons.angers.fr/processes/BP2022/f/411/[Résultats du budget participatif 2022 à Angers]

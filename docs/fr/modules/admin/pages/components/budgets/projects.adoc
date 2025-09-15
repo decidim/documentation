@@ -1,17 +1,17 @@
 = Projets
 
-== Understand the basics
+== En bref
 
 Projects are the entities making part of the budgets.
 
 == Créer un projet
 
-Pour accéder à la création et à la gestion des projets, cliquez sur le titre du budget ou sur l'image:icons/action_list.png[l'icône Gérer les projets]
-sur la liste des budgets.
+Pour accéder à la création et à la gestion de projets, cliquer sur le titre du budget ou sur [l'icône Gérer les projets]
+dans la liste des budgets.
 
 image::components/budgets/new_project_button.png[New project button]
 
-Ensuite, cliquez sur le bouton "Nouveau projet" en haut à droite de la page.
+Ensuite, cliquer sur "Nouveau projet" en haut à droite de la page.
 
 image::components/budgets/new_project.png[New project form]
 
@@ -46,25 +46,25 @@ image::components/budgets/new_project.png[New project form]
 
 |Ajouter une galerie d'images
 |Facultatif
-|Ajoutez plusieurs images illustrant ce qu'est ce projet, les maquettes, etc.
+|Ajouter plusieurs images illustrant le projet, les maquettes, etc.
 |===
 
 == Gérer les projets
 
 image::components/budgets/results_selected.png[Selected projects after voting]
 
-Sur la liste des projets dans le panneau d'administration, les administrateurs peuvent voir :
+Dans la liste des projets dans le panneau d'administration, les administrateurs peuvent voir :
 
 * *ID* : Numéro d'identification de ce projet.
 * *Titre* : Titre du projet.
 * *Catégorie* : Catégorie du projet.
-* *Portée* : Portée du projet, si activé dans l'espace participatif.
+* *Portée* : Objectif du projet, si activé dans l'espace participatif.
 * *Nombre de votes* : Nombre de votes sur ce projet.
-* *Sélectionné* : Si le projet est sélectionné pour l'implémentation à la fin du processus.
+* *Sélectionné* : Si le projet est sélectionné pour sa mise en oeuvre à la fin du processus.
 * *Carte* : emplacement du projet quand il a une adresse.
 
-Vous pouvez filtrer et trier cette liste en cliquant sur le bouton "Filtre" et sur les en-têtes des colonnes.
-Vous pouvez également rechercher des projets par leur ID et leur titre dans la barre de recherche.
+Il est possible de filtrer et trier cette liste en cliquant sur "Filtrer" et sur les en-têtes des colonnes.
+ainsi que de rechercher des projets par ID et leur titre dans la barre de recherche.
 
 image::components/budgets/projects_list_filter.png[Projects list filter]
 

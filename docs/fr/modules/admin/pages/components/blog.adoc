@@ -1,6 +1,6 @@
 = Actualités
 
-== Understand the basics
+== En bref
 
 The Blog component allows administrators to post news about a participatory space, that participants can read to get updates.
 
@@ -12,16 +12,16 @@ image::components/blog/example02.png[Example of a blog post]
 
 == Configuration
 
-Pour créer un composant de blog, allez d'abord dans xref:admin:spaces.adoc[espace participatif] où vous voulez le créer.
+Pour créer une fonctionnalité de blog, aller d'abord dans [espace participatif] à l'endroit de création souhaité.
 
 image::components/blog/component_blog.png[Add Blog component button]
 
-Alors:
+Ensuite :
 
-. Cliquez sur l'élément "Composants" dans le menu secondaire
-. Cliquez sur le bouton "Ajouter un composant"
-. Sélectionnez "Blog"
-. Remplissez le formulaire de création de composant
+. Cliquer sur l'élément "Fonctionnalités" dans le menu secondaire
+. Cliquer sur "Ajouter une fonctionnalité"
+. Sélectionner "Blog"
+. Remplir le formulaire de création de fonctionnalité
 
 Vous pouvez toujours mettre à jour ce formulaire et la configuration après avoir créé le composant, en cliquant sur l’icône
 image:icons/action_configure.png[Configurer l’icône] dans la liste des composants.
@@ -35,21 +35,21 @@ image::components/blog/component.png[Add component form]
 
 |Nom
 |Obligatoire
-|Le titre de ce composant. Par exemple, "Blogs" ou "Dernières nouvelles"
+|Le titre de cette fonctionnalité. Par exemple, "Blogs" ou "Dernières nouvelles"
 
 |Rang d'affichage
 |Facultatif
-|Quel ordre il a en relation avec les autres composants. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+|Position de la fonctionnalité par rapport aux autres fonctionnalités. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
 |===
 
-.Formulaire de blog - Paramètres globaux
+.Formulaire de blog - Paramètres généraux
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Annonce
 |Facultatif
-|Une annonce générale visible sur la page d'accueil du composant Blog .
+|Une annonce générale visible sur la page d'accueil de la fonctionnalité Blog.
 
 |Commentaires activés
 |Facultatif
@@ -60,7 +60,7 @@ image::components/blog/component.png[Add component form]
 |La limite de caractères que les participants ont lors de la rédaction de commentaires. Laisser 0 pour la valeur par défaut.
 |===
 
-.Définition des étapes
+.Définition des paramètres
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -79,7 +79,7 @@ image::components/blog/component.png[Add component form]
 
 |Soutiens bloqués
 |Facultatif
-|Si vous voulez activer l'ajout de nouvelles approbations pour cette phase.
+|Pour permettre l'ajout de nouveaux soutiens pour cette phase.
 |===
 
 == Gérer les messages
@@ -91,7 +91,7 @@ image:components/blog/manage_posts.png[Gérer la table des posts]
 
 == Créer un message
 
-Pour créer un message, cliquez sur le bouton "Nouveau post" en haut à droite de la page.
+Pour créer un message, cliquer sur "Nouveau post" en haut à droite de la page.
 
 image:components/blog/new_post.png[Formulaire du nouveau post]
 
@@ -114,7 +114,7 @@ image:components/blog/new_post.png[Formulaire du nouveau post]
 
 |Date de publication
 |Facultatif
-|Date de publication de la publication. Si dans le futur, la publication n'est pas publiée avant cette date.
+|Date de publication du message. Si dans le futur, le post n'est pas publié avant cette date.
 |===
 
 === Actions

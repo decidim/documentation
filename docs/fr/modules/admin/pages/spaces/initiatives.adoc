@@ -1,6 +1,6 @@
 = Initiatives
 
-== Understand the basics
+== En bref
 
 Une initiative est un type spécifique d'espace participatif, qui peut être créé par n'importe quel participant, indépendamment
 d'autres canaux ou espaces.
@@ -29,14 +29,14 @@ action of common interest by collecting a specific number of signatures.
 Le rôle de l'administrateur de la plateforme est donc quelque peu différent de celui des autres espaces de participation, comme
 l'organisation doit permettre aux participants et leur offrir le soutien technique et les conseils nécessaires.
 
-Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments:
+Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments :
 
 * xref:admin:admin:spaces/initiatives/types.adoc[Types d'initiatives]
 * xref:admin:spaces/initiatives/initiative_creation.adoc[Création de l'initiative]
 ** xref:admin:espaces/initiatives/author_manage/commissione.adoc[Comité du promoteur]
 ** xref:admin:spaces/initiatives/author_manage/manage.adoc[Actions auteurs]
 * xref:admin:admin:spaces/initiatives/manage.adoc[Gestion des initiatives]
-** xref:admin:espaces/initiatives/admin_manage/commissione.adoc[Membres du Comité]
+** xref:admin:espace:initiatives/author_manage/commissione.adoc[Comité du promoteur]
 ** xref:admin:espaces/initiatives/admin_manage/components.adoc[Components]
 ** xref:admin:espaces/initiatives/admin_manage/attachments.adoc[Attachments]
 ** xref:admin:espaces/initiatives/admin_manage/moderations.adoc[Moderations]
