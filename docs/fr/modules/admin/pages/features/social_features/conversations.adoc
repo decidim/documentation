@@ -2,7 +2,7 @@
 
 == En bref
 
-Avec des conversations, les participants peuvent envoyer des messages privés à un autre participant, à un groupe de participants ou à des groupes d'utilisateurs.
+Les Conversations permettent aux participants d'envoyer des messages privés à un autre participant, à un groupe de participants ou à des groupes d'utilisateurs.
 Seuls les participants qui sont dans la conversation peuvent voir chaque message.
 
 NOTE: Il n'est pas possible de supprimer une conversation ni de modifier un message dans une conversation.
@@ -11,28 +11,28 @@ NOTE: Il n'est pas possible de supprimer une conversation ni de modifier un mess
 
 En tant que participant connecté, vous pouvez accéder à vos conversations à partir de deux endroits :
 
-. Cliquez dans votre avatar dans l'en-tête, puis cliquez dans le menu "Conversations"
-. Cliquez sur le lien "Conversations" dans le pied de page, dans la section "Mon compte"
+. En cliquant sur votre avatar dans l'en-tête, puis sur "Conversations" dans le menu
+. En cliquant sur le lien "Conversations" en pied de page, dans la section "Mon compte"
 
 image::features/conversations/conversations_dropdown.png[Frontend user menu dropdown]
 
-S'il y a des notifications, le participant voit un petit badge à côté de son avatar, et dans le menu déroulant.
+Les notifications apparaissent dans un petit badge à côté de l'avatar du participant, ainsi que dans le menu déroulant.
 
 == Configuration
 
 === Démarrer une conversation
 
-Un participant peut commencer une conversation avec n'importe quel participant ou groupe inscrit sur la plateforme.
+Un participant peut commencer une conversation avec n'importe quel autre participant ou groupe inscrit sur la plateforme.
 
 image::features/conversations/conversations.png[Conversations list]
 
-Il y a deux façons de commencer une conversation.
+Il y a deux possibilité pour démarrer une conversation.
 
 ==== Depuis un profil de participant
 
 . Accéder au profil du participant avec qui vous voulez démarrer une conversation
 . Cliquez sur le bouton "Message"
-. Écrivez votre message
+. Écrire votre message
 
 image:features/conversations/profile.png[Profil des participants]
 
@@ -43,10 +43,10 @@ image:features/conversations/start_a_conversation_form.png[Formulaire de convers
 image::features/conversations/conversation.png[Example of a conversation]
 
 . Cliquez sur votre avatar dans l'en-tête
-. Cliquez dans "Conversations"
-. Cliquez sur le bouton "Nouvelle conversation"
+. Cliquer sur "Conversations"
+. Cliquer sur "Nouvelle conversation"
 . Recherchez les participants ou le groupe avec lequel vous voulez commencer une conversation
-. Écrivez votre message
+. Écrire votre message
 
 NOTE: Vous pouvez commencer une conversation avec plusieurs participants, avec une limite de 9 participants.
 
