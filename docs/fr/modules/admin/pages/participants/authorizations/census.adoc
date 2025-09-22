@@ -2,27 +2,26 @@
 
 == En bref
 
-The Organization's census authorization allows administrators to upload a list of participant's emails, in order to allow this
-list to perform specific actions on the plaform, like creating proposal in a specific space, etc.
+L'Autorisation de recensement de l'organisation permet aux administrateurices de télécharger une liste de mails de paprticipant·e·x·s, pour que cette liste puisse effectuer des actions spécifiques, telles la création d'une proposition dans un espace spécific, etc.
 
 == Configuration
 
 Le processus est le suivant:
 
-. Les administrateurs téléchargent un CSV avec les e-mails des participants vérifiés
-. Les participants vont sur leur compte et demandent à être vérifiés
+. Les administrateurices téléchargent un CSV avec les mails vérifés de participant·e·x·s
+. Les participant·e·x·s font une demande de vérification sur leur compte
 . Seuls les participants avec un email dans ce fichier CSV peuvent être vérifiés
 
 NOTE: Cette autorisation est trop basique et vous avez besoin de plus de fonctionnalités liées aux importations de recensement CSV?
-Vérifiez toutes les autorisations CSV ou basées sur des fichiers dans la page https://decidim.org/modules/[Modules page].
+Vérifier tous les CSV ou fichiers d'autorisations dans la page https://decidim.org/modules/[Modules page].
 
 === 1. Téléchargement CSV
 
-Dans le panneau d'administration, vous pouvez télécharger un fichier CSV en cliquant sur "Recensement de l'organisation" dans la section "Participants".
+Dans le panneau d'administration, vous pouvez télécharger un fichier CSV en cliquant sur "Recensement de l'organisation" dans la section "Participant·e·x·s".
 
 image::participants/authorizations_organization_census.png[Organization's census in administrator panel]
 
-Une fois que le CSV est importé, l'administrateur peut voir combien de participants ont été importés. Ils peuvent également supprimer ce recensement
+Une fois que le CSV est importé, l'administrateurice peut voir combien de participant·e·x·s ont été importé·e·x·s. Iels peuvent également supprimer ce recensement
 importé.
 
 image::participants/authorizations_organization_census_imported.png[Imported CSV]
@@ -34,8 +33,8 @@ a participant can request to be verified.
 
 image::participants/authorizations_organization_census_account.png[Organization's census in participant's accounts]
 
-=== 3. Vérification des participants
+=== 3. Vérification des participant·e·x·s
 
-Après vérification, comme avec d'autres vérifications, ils peuvent le voir dans les paramètres de leur compte.
+Après vérification, comme avec d'autres vérifications, elles sont visibles dans les paramètres de leur compte.
 
 image::participants/authorizations_organization_census_verified.png[Verified by organization's census]
