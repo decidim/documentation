@@ -44,7 +44,7 @@ commencer par une lettre.
 |Surligné
 |Facultatif
 |Cochez cette case si vous voulez que la conférence ait plus de visibilité dans la liste des conférences publiques et le bloc de contenu "Conférences en surbrillance"
-dans la page xref:admin:settings/homepage. configuration doc[Homepage].
+dans la page xref:admin:settings/homepage.
 
 |Courte description
 |Obligatoire
@@ -80,6 +80,7 @@ Pour les images, utilisez de préférence des images paysagères, le service ré
 |Image de bannière
 |Facultatif
 |Image utilisée dans l'en-tête de la conférence. De préférence une image au format paysage ne contenant pas de texte. Le service récolte
+l'image Le service récolte
 l'image Taille maximale du fichier : 10 Mo.
 |===
 
