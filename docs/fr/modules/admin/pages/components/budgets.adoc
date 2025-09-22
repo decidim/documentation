@@ -34,7 +34,7 @@ Ensuite :
 . Sélectionner "Budgets"
 . Remplir le formulaire de création de fonctionnalité
 
-Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur l'image [Icône Configurer] dans la liste des fonctionnalités.
+Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur [Icône Configurer] dans la liste des fonctionnalités.
 
 Le formulaire de création de fonctionnalité est divisé en différentes sections détaillées ci-dessous.
 
@@ -65,7 +65,7 @@ image::components/budgets/component_02.png[Add component form - Global settings]
 
 |Portées activées
 |Facultatif
-|Cocher cette case pour que le filtrage des Objectifs soit disponible dans cette fonctionnalité.
+|Cocher cette case pour que le filtrage des Secteurs soit disponible dans cette fonctionnalité.
 
 |Secteur
 |Facultatif
@@ -96,7 +96,7 @@ le nombre de projets que les participants doivent voter comme un minimum et maxi
 
 |Commentaires activés
 |Facultatif
-|Pour activer les commentaires. Les participants peuvent ainsi commenter les projets.
+|Les participants peuvent ainsi commenter les projets.
 
 |Longueur maximale des commentaires
 |Facultatif
@@ -157,11 +157,11 @@ Une fois le vote terminé, un administrateur doit :
 
 . Modifier la configuration de vote pour le volet budget en "Vote terminé"
 . Accéder à la liste des projets et afficher les résultats
-. Sur les projets qui ont été sélectionnés, aller dans chaque projet, l'éditer et cocher la case "Sélectionné pour mise en oeuvre".
+. Sur les projets qui ont été sélectionnés, aller dans chaque projet, l'éditer et cocher la case "Sélectionné pour la mise en oeuvre".
 
 image::components/budgets/results_select_project.png[Select a project for implementation]
 
-Ensuite, la liste des projets montre tous les projets qui ont été sélectionnés pour l'implémentation.
+Ensuite, la liste des projets montre tous les projets qui ont été sélectionnés pour leur mise en oeuvre.
 
 image::components/budgets/results_selected.png[Selected projects after voting]
 
@@ -169,8 +169,8 @@ Un filtre est également affiché pour les participants afin de voir quels proje
 
 image::components/budgets/results_selected_frontend.png[Selected projects after voting in the frontend]
 
-TIP: Une fois que vous avez sélectionné des projets, vous pouvez activer le composant xref:components/Accounability.adoc[Accountability]
-pour que les participants puissent voir l'état d'avancement de l'implémentation des projets.
+TIP: Une fois que vous avez sélectionné des projets, vous pouvez activer la fonctionnalité xref:components/Accounability.adoc[Accountability]
+pour que les participants puissent voir l'état d'avancement de la mise en oeuvre des projets.
 
 == Exemples
 
