@@ -2,16 +2,16 @@
 
 == En bref
 
-Le volet Debate permet aux gens d'avoir des discussions, sans voter ni prioriser. Il permet également de clore les débats,
-en ajoutant des conclusions ou un résumé de ce que la discussion portait.
+La fonctionnalité Débat permet aux personnes d'avoir des discussions, sans votes ni priorités. Il permet également de clore les débats,
+en ajoutant des conclusions ou un résumé des sujets de la discussion.
 
 image::components/debates/example01.png[Debates listing example]
 
 == Configuration
 
-=== Créer un composant de débat
+=== Créer une fonctionnalité Débat
 
-Pour créer un composant Debate, allez d'abord dans xref:admin:spaces.adoc[espace participatif] où vous voulez le créer.
+Pour créer une fonctionnalité Débat, aller d'abord dans xref:admin:spaces.adoc[espace participatif] à l'endroit de création souhaité.
 
 image::components/debates/component_debate.png[Add Debate component button]
 
@@ -19,10 +19,10 @@ Ensuite :
 
 . Cliquer sur l'élément "Fonctionnalités" dans le menu secondaire
 . Cliquer sur "Ajouter une fonctionnalité"
-. Sélectionnez "Debate"
+. Sélectionnez "Débat"
 . Remplir le formulaire de création de fonctionnalité
 
-Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur l'image [Icône Configurer] dans la liste des fonctionnalités.
+Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur [Icône Configurer] dans la liste des fonctionnalités.
 
 image::components/debates/component.png[Add component form]
 
@@ -42,7 +42,7 @@ Par exemple, si vous avez deux fonctionnalités, "Fonctionnalité a" de poids "1
 alors "Fonctionnalité b" est placée avant dans le listage.
 |===
 
-.Formulaire de débat - Paramètres globaux
+.Formulaire de débat - Paramètres généraux
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -53,11 +53,11 @@ alors "Fonctionnalité b" est placée avant dans le listage.
 
 |Secteur
 |Facultatif
-|Ce composant appartient à xref:admin:settings/scopes.adoc[Scopes].
+|Cette fonctionnalité appartient à xref:admin:settings/scopes.adoc[Scopes].
 
 |Commentaires activés
 |Facultatif
-|Si vous voulez avoir des commentaires dans les débats.
+|Pour activer les commentaires dans les débats.
 
 |Longueur maximale des commentaires
 |Facultatif
@@ -75,15 +75,15 @@ alors "Fonctionnalité b" est placée avant dans le listage.
 
 |Soutiens activés
 |Facultatif
-|Cochez cette case si vous voulez permettre aux participants de montrer un soutien public pour les débats.
+|Cocher cette case pour permettre aux participants de montrer un soutien public pour les débats.
 
 |Soutiens bloqués
 |Facultatif
-|Vérifiez si les participants sont en mesure de voir les approbations existantes mais ne faites pas de nouvelles.
+|Vérifier que les participants soient en mesure de voir les soutiens existants mais ne pas faire de soutien supplémentaire.
 
 |Les participants peuvent créer des débats
 |Facultatif
-|Cochez cette case si vous voulez permettre la création de nouveaux débats par les participants durant cette phase.
+|Cocher cette case pour permettre la création de nouveaux débats par les participants durant cette étape.
 
 |Commentaires désactivés
 |Facultatif
@@ -105,11 +105,11 @@ image::components/debates/new_debate_backend.png[New debate backend form]
 
 |Titre
 |Obligatoire
-|Le titre de ce débat.
+|Le titre du débat.
 
 |Description
 |Obligatoire
-|La description de ce débat.
+|La description du débat.
 
 |Instructions pour participer
 |Obligatoire
@@ -121,7 +121,7 @@ image::components/debates/new_debate_backend.png[New debate backend form]
 
 |xref:_debate_types[Type de débat]
 |Obligatoire
-|Choisissez entre Finite et Ouvrir. Finite signifie que le débat a une date et une heure de début et de fin, Ouverture signifie que
+|Choisissez entre Finite et Ouvrir. Limité signifie que le débat a une date et une heure de début et de fin, Ouvert signifie que
 il n'y a pas de plage horaire.
 
 |Commence à
@@ -138,13 +138,13 @@ il n'y a pas de plage horaire.
 
 |Commentaires activés
 |Facultatif
-|Si vous voulez que les participants puissent commenter ce débat.
+|Pour activer les commentaires. Les participants peuvent ainsi commenter le débat.
 |===
 
 === Gérer les débats
 
 Pour commencer à créer et à gérer des débats, cliquez dans le titre du composant dans la barre de navigation ou dans la liste des composants, ou cliquez dans l'image
-: icons/action_edit. Icône ng[Gérer l'icône du composant] dans la liste des composants.
+: icons/action_edit.
 
 image::components/debates/manage_debates.png[Manage debates table]
 
@@ -153,9 +153,9 @@ Sur la liste des débats dans le panneau d'administration, les administrateurs p
 * *Titre* : Titre du débat.
 * *Date de début* : Date de début du débat.
 * *Date de fin*: Date de fin du débat.
-* *Portée* : Portée du débat, si activé dans l'espace participatif.
+* *Secteur* : Secteur du débat, si activé dans l'espace participatif.
 
-Vous pouvez également exporter les commentaires dans les débats au format CSV, JSON et Excel en cliquant sur le bouton "Exporter tous".
+Il est également possible d'exporter les commentaires dans les débats au format CSV, JSON et Excel en cliquant sur "Tout exporter".
 
 === Types de débats
 
@@ -191,7 +191,7 @@ NOTE: Lorsque les participants peuvent créer des débats, les administrateurs o
 
 |image:icons/action_permissions.png[Permissions icon]
 |Autorisations
-|Pour gérer les autorisations nécessaires à la création ou à l'approbation de débats.
+|Pour gérer les autorisations nécessaires à la création ou la validation de débats.
 
 |image:icons/action_delete.png[Supprimer l'icône]
 |Supprimez
@@ -205,7 +205,7 @@ Après la fermeture d'un débat, il ne peut plus être édité ni commenté.
 
 image::components/debates/close_debate_backend.png[Close debate backend form]
 
-Prenez en compte que si le débat a été créé par un participant, alors seul ce participant peut le fermer.
+Prendre en compte que si le débat a été créé par un participant, alors seul ce participant peut le fermer.
 
 image::components/debates/close_debate_frontend.png[Close debate frontend form]
 
@@ -225,6 +225,6 @@ image::components/debates/debate_closed.png[Closed debate]
 
 == Exemples
 
-Quelques exemples d'utilisation de ce composant :
+Quelques exemples d'utilisation de cette fonctionnalité :
 
 * https://meta.decidim.org/processes/roadmap/f/219/[Proposer de nouvelles fonctionnalités pour le logiciel Decidim dans Metadecidim]
