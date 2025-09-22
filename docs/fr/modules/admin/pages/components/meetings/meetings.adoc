@@ -61,11 +61,11 @@ Seuls quelques services permettent l'intégration (YouTube, Twitch, Jitsi, ...)
 
 |Heure de début
 |Obligatoire
-|Le jour et l'heure de la réunion. Format attendu : jj/mm/aaaa hh:mm.
+|Le jour et l'heure de début de la réunion. Format attendu : jj/mm/aaaa hh:mm.
 
 |Heure de fin
 |Obligatoire
-|Le jour et l'heure de la réunion. Format attendu : jj/mm/aaaa hh:mm.
+|Le jour et l'heure de début de la réunion. Format attendu : jj/mm/aaaa hh:mm.
 
 |Catégorie
 |Facultatif
@@ -235,11 +235,11 @@ ouvrir les réunions dans un nouvel onglet. Seuls quelques services permettent l
 
 |Heure de début
 |Obligatoire
-|Le jour et l'heure de début de la réunion. Format attendu : jj/mm/aaaa hh:mm.
+|Le jour et l'heure de la réunion. Format attendu : jj/mm/aaaa hh:mm.
 
 |Heure de fin
 |Obligatoire
-|Le jour et l'heure de début de la réunion. Format attendu : jj/mm/aaaa hh:mm.
+|Le jour et l'heure de la réunion. Format attendu : jj/mm/aaaa hh:mm.
 
 |Catégorie
 |Facultatif
@@ -303,7 +303,7 @@ Si l'"URL de la réunion en ligne" est définie, alors que la réunion a début�
 
 image::components/meetings/online_meeting_happening.png[Online meeting available before it starts]
 
-Si l'"URL de la réunion en ligne" est définie, alors que la réunion a débuté, et le type d'intégration Iframe 
+Si l'"URL de la réunion en ligne" est définie, alors que la réunion a débuté, et le type d'intégration Iframe
 "Intégrer à la réunion" est sélectionné, le message sera "la réunion se déroule en ce moment" avec la réunion intégrée dans le bloc.
 
 image::components/meetings/online_meeting_happening_embed.png[Online meeting available before it starts]
