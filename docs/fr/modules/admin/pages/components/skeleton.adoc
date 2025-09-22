@@ -8,7 +8,7 @@ Le composant Squelette permet à des personnes de XXX
 
 *
 
-À quoi ressemble le composant en front-office :
+L'affichage de la fonctionnalité dans front-office :
 
 image:components/skeleton/example01.png[]
 image:components/skeleton/example02.png[]
@@ -25,7 +25,7 @@ Ensuite :
 
 . Cliquer sur l'élément "Fonctionnalités" dans le menu secondaire
 . Cliquer sur "Ajouter une fonctionnalité"
-. Sélectionnez "Skeleton"
+. Sélectionnez "Squelette"
 . Remplir le formulaire de création de fonctionnalité
 
 image:components/skeleton/component.png[Ajouter un formulaire de composant]
@@ -41,7 +41,7 @@ image:components/skeleton/component.png[Ajouter un formulaire de composant]
 
 |Rang d'affichage
 |Facultatif
-|Quel ordre il a en relation avec les autres squelettes. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+|L'ordre par rapport aux autres squelettes. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
 |===
 
 
@@ -67,7 +67,7 @@ image:components/skeleton/component.png[Ajouter un formulaire de composant]
 
 |Longueur maximale des commentaires
 |Facultatif
-|Quelle est la limite de caractères que les participants ont pour faire des commentaires. Laisser 0 pour la valeur par défaut.
+|La limite de caractères que les participants ont pour faire des commentaires. Laisser 0 pour la valeur par défaut.
 
 |Les autorisations d'actions peuvent être définies pour chaque squelette
 |Facultatif
