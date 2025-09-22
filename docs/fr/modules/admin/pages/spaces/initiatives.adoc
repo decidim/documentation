@@ -100,16 +100,7 @@ endif
 Enfin, ce sont tous les paramètres pertinents à chaque moment du cycle de vie des initiatives :
 
 [plantuml]
-@startuml
-(*) --> "Créer une nouvelle initiative"
-si "A un seul type? alors
---> [Yes] "Remplir le formulaire d'initiative"
-else
---> [No] "Sélectionner le type d'initiative"
---> "Remplir le formulaire d'initiative"
-Endif
-partition Créée {
-  si "L'utilisateur est-il un groupe d'utilisateurs ? alors
+alors
   --> [Yes] "Envoyer à la validation technique"
   else
   --> [No] Collecter le nombre minimum de membres du comité
@@ -117,19 +108,7 @@ partition Créée {
   Endif
 }
 partition Validation {
-  si "Est passé le délai maximum pour la validation (60 jours par défaut) ? alors
-    --> [Yes] "Expiré"
-  else
-    --> [No] si "Est accepté par un administrateur? alors
-      --> [No] "Discarted"
-      else
-      --> [Yes] "Publish"
-      endIf
-  endIf
-}
-partition Publiée {
-  --> "Processus de signature"
-  si "A passé la fenêtre de temps configurée pour la validation (60 jours par défaut)?"
+  si "Est passé le délai maximum pour la validation (60 jours par défaut) ?
     --> [Yes] "Expiré"
   else
     --> [No] Exporter le PDF vers les signatures
