@@ -2,12 +2,12 @@
 
 == En bref
 
-Le volet Propositions permet aux gens de créer, de commenter et de donner leur vote aux propositions. C'est l'un des principaux composants de
-Decidim, et a un grand nombre de paramètres de configuration.
+La fonctionnalité Propositions permet aux personnes de créer, de commenter et de donner leur vote aux propositions. C'est l'une des principales fonctionnalités de
+Decidim, et contient un grand nombre de paramètres.
 
 image::components/proposals/example01.png[Proposals example]
 
-Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces paramètres:
+Dans cette section de documentation, il est possible de trouver comment configurer et gérer tous ces paramètres :
 
 * xref:admin:components/propositions/proposals.adoc[Gestion des propositions]
 * xref:admin:components/proposals/answers.adoc[Answers]
@@ -18,7 +18,7 @@ Dans cette section de documentation, vous pouvez trouver comment configurer et g
 
 == Configuration
 
-Pour créer un composant Propositions, allez d'abord dans xref:admin:spaces.adoc[espace participatif] où vous voulez le créer.
+Pour créer une fonctionnalité Propositions, aller d'abord dans xref:admin:spaces.adoc[espace participatif] à l'endroit de création souhaité.
 
 image::components/proposals/component_proposals.png[Add Proposals component button]
 
@@ -26,10 +26,10 @@ Ensuite :
 
 . Cliquer sur l'élément "Fonctionnalités" dans le menu secondaire
 . Cliquer sur "Ajouter une fonctionnalité"
-. Sélectionnez "Propositions"
+. Sélectionner "Propositions"
 . Remplir le formulaire de création de fonctionnalité
 
-Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur l'image [Icône Configurer] dans la liste des fonctionnalités.
+Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur [Icône Configurer] dans la liste des fonctionnalités.
 
 Le formulaire de création de fonctionnalité est divisé en différentes sections détaillées ci-dessous.
 
@@ -64,7 +64,7 @@ image::components/proposals/component_02.png[Add component form]
 
 |Portées activées
 |Facultatif
-|Cocher cette case pour que le filtrage des Objectifs soit disponible dans cette fonctionnalité.
+|Cocher cette case pour que le filtrage des Secteurs soit disponible dans cette fonctionnalité.
 
 |Secteur
 |Facultatif
@@ -80,7 +80,7 @@ image::components/proposals/component_02.png[Add component form]
 
 |Limite de proposition par participant
 |Facultatif
-|Doit être un nombre. Combien de propositions un participant peut créer dans ce composant.
+|Doit être un nombre. Combien de propositions un participant peut créer dans cette fonctionnalité.
 
 |Longueur maximale du corps de la proposition
 |Facultatif
@@ -88,9 +88,9 @@ image::components/proposals/component_02.png[Add component form]
 
 |Édition d'une proposition
 |Obligatoire
-|Choisissez si les participants ont un temps limité pour modifier leurs propositions ou peuvent les modifier sans limite.
-Si c'est dans un laps de temps spécifique, vous devez spécifier l'heure dans le champ ci-dessous.
-Notez que si un administrateur xref:components/proposals/answers.adoc[répond à une proposition] alors il ne peut plus être édité.
+|Choisir si les participants ont un temps limité pour modifier leurs propositions ou peuvent les modifier sans limite.
+Si la modification est permise dans un laps de temps défini, alors, il est impératif de le spécifier dans le champ ci-dessous.
+À noter que si un administrateur xref:components/proposals/answers.adoc[répond à une proposition] alors elle ne peut plus être modifiée.
 
 |Délai (en minutes) après lequel les auteurs ne peuvent plus modifier leurs propositions
 |Obligatoire
@@ -98,11 +98,11 @@ Notez que si un administrateur xref:components/proposals/answers.adoc[répond à
 
 |Seuil par proposition
 |Facultatif
-|Doit être un nombre. Combien de votes une proposition doit être considérée comme acceptée.
+|Doit être un nombre. Le nombre de votes pour qu'une proposition soit validée.
 
 |Peut accumuler des votes au-delà du seuil
 |Facultatif.
-|La question de savoir si la proposition peut accumuler plus de votes que le seuil.
+|Permet d'accumuler plus de votes que le seuil défini.
 
 |Réponses aux propositions activées
 |Facultatif
@@ -110,16 +110,15 @@ Notez que si un administrateur xref:components/proposals/answers.adoc[répond à
 
 |Tri des propositions par défaut
 |Facultatif
-|L'ordre de tri des propositions dans la liste des propositions. Automatic means that if the votes are enabled, the proposals are
-shown sorted by random, and if the votes are blocked, then they are sorted by the most voted.
+|L'ordre de tri des propositions dans la liste des propositions. Par défaut signifie que si les votes sont autorisés, le listage des propositions sera aléatoire, tandis que si les votes sont clôturés, alors la listes sera triée par le nombre de votes décroissant.
 
 |Propositions officielles activées
 |Facultatif
-|Si les administrateurs peuvent créer des propositions officielles à partir du panneau d'administration.
+|Pour que administrateurs puissent créer des propositions officielles à partir du panneau d'administration.
 
 |Commentaires activés
 |Facultatif
-|Si vous voulez permettre aux participants de commenter les propositions.
+|Pour activer les commentaires. Les participants peuvent ainsi commenter les propositions.
 
 |Longueur maximale des commentaires
 |Facultatif
@@ -127,7 +126,7 @@ shown sorted by random, and if the votes are blocked, then they are sorted by th
 
 |Géocodage activé
 |Facultatif
-|Si les participants peuvent définir une adresse de géocodage pour leurs propositions.
+|Pour que les participants puissent définir une adresse de géocodage pour leurs propositions.
 xref:configure:geocoding[Geocoding] doit être activé.
 
 |Autoriser les pièces jointes
@@ -137,11 +136,11 @@ et la première image apparaît sur la carte.
 
 |Les autorisations d'actions peuvent être définies pour chaque proposition
 |Facultatif
-|Si vous voulez être en mesure de définir les autorisations pour chaque proposition.
+|Pour définir les autorisations de chaque proposition.
 
 |Brouillons collaboratifs activés
 |Facultatif
-|Cochez cette case pour activer xref:components/proposs/special_configurations/collaborative_drafts.adoc[collaboratifs] dans les propositions.
+|Cocher cette case pour activer xref:components/proposs/special_configurations/collaborative_drafts.adoc[collaboratifs] dans les propositions.
 
 |Textes participatifs activés
 |Facultatif
@@ -149,8 +148,8 @@ et la première image apparaît sur la carte.
 
 |Amendements activés
 |Facultatif
-|Cochez cette case pour activer xref:components/propositions/special_configurations/amendements.adoc[amendments] dans les propositions.
-Si activé, configurez les paramètres d’amendement pour chaque étape.
+|Cocher cette case pour activer xref:components/propositions/special_configurations/amendements.adoc[amendments] dans les propositions.
+Si activé, configurer les paramètres d'Amendement pour chaque étape.
 
 |Texte d'aide pour les amendements Assistant
 |Facultatif.
@@ -171,11 +170,11 @@ suivre lors de la création de nouvelles propositions.
 
 |Texte d'aide à l'étape "Créer" de l'assistant de proposition
 |Facultatif
-|Le texte d'aide visible lors de la création de nouvelles propositions à l'étape "Créer".
+|Le texte d'aide visible lors de la création de nouvelles propositions à l'étape "Publier".
 
 |Texte d'aide à l'étape "Publier" de l'assistant de proposition
 |Facultatif
-|Le texte d'aide visible lors de la création de nouvelles propositions à l'étape "Publier".
+|Le texte d'aide visible lors de la création de nouvelles propositions à l'étape "Créer".
 |===
 
 ---
@@ -193,15 +192,15 @@ image::components/proposals/component_03.png[Add component form]
 
 |Soutiens bloqués
 |Facultatif
-|Vérifiez si les participants sont en mesure de voir les approbations existantes mais ne faites pas de nouvelles.
+|Vérifier que les participants soient en mesure de voir les soutiens existants mais ne pas faire de soutien supplémentaire.
 
 |Activer le module de vote simple
 |Facultatif
-|Permettre aux participants de voter pour des propositions dans cette phase.
+|Permettre aux participants de voter pour des propositions dans cette étape.
 
 |Votes bloqués
 |Facultatif
-|Vérifiez si les participants peuvent voir les votes existants sans en faire de nouveaux.
+|Vérifier si les participants peuvent voir les votes existants sans en faire de nouveaux.
 
 |Votes masqués
 |Facultatif
@@ -217,25 +216,25 @@ image::components/proposals/component_03.png[Add component form]
 
 |Réponses aux propositions activées
 |Facultatif
-|Si vous voulez activer xref:components/propositions/answers.adoc[réponse aux propositions] par les administrateurs.
+|Pour activer xref:components/propositions/answers.adoc[réponse aux propositions] par les administrateurs.
 
 |Publier les réponses de la proposition immédiatement
 |Facultatif
 |Si vous voulez que les réponses des propositions soient publiées directement lorsque les administrateurs sont
-xref:components/propositions/réponses. doc[answering] ou vous voulez contrôler quand publier les réponses.
+xref:components/propositions/réponses.
 
 |Activer les coûts sur les réponses aux propositions
 |Facultatif
-|Si vous voulez ajouter des coûts économiques aux réponses à la proposition. Utile pour importer des propositions sur xref:components/budgets.adoc[budgets].
+|Pour ajouter des coûts économiques aux réponses à la proposition. Utile pour importer des propositions sur xref:components/budgets.adoc[budgets].
 
 |Tri des propositions par défaut
 |Facultatif
-|L'ordre de tri des propositions dans la liste des propositions pour cette phase. Automatique signifie que si les votes sont activés, les propositions
-sont affichées par hasard, et si les votes sont bloqués, alors ils sont triés par le plus de votes.
+|L'ordre de tri des propositions dans la liste des propositions pour cette étape. Par défaut signifie que si les votes sont activés, les propositions
+sont affichées de manière aléatoire, et si les votes sont bloqués, alors ils sont triés par nombre de votes décroissant.
 
 |Annonce
 |Facultatif
-|Une annonce générale visible sur la page de la liste des propositions pour cette phase.
+|Une annonce générale visible sur la page de la liste des propositions pour cette étape.
 
 |Hashtags ajoutés à toutes les propositions
 |Facultatif
