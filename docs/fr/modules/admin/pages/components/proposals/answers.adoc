@@ -4,7 +4,7 @@
 
 Les réponses aux propositions permettent aux administrateurs ou aux évaluateurs d'examiner une proposition et de lui donner une réponse officielle, avec les statuts associés.
 Il permet alors de filtrer les propositions par leurs statuts, de lire la réponse qui a été donnée, et d'importer les propositions acceptées dans les
-xref:components/budgets. composant doc[budgets]
+xref:components/budgets.
 
 NOTE: Pour en savoir plus sur les évaluateurs, reportez-vous à xref:admin:participants/admins.adoc#_valuators[Administrateurs Valuateurs].
 
@@ -55,7 +55,6 @@ et d'utiliser la réponse du modèle associée.
 |Obligatoire
 |Par défaut, vous pouvez choisir entre : Sans réponse, Évaluation, Acceptée, rejetée. Vous pouvez modifier et ajouter des statuts dans la page de gestion de la proposition
 
-
 |Répondre
 |Facultatif
 |Une explication sur la raison pour laquelle la proposition est acceptée, rejetée, évaluée, ou autre.
@@ -102,7 +101,7 @@ Cliquez sur le bouton "Nouveau statut" pour commencer à créer vos statuts pers
 |Obligatoire
 |Le titre de la réponse, qui apparaît sur la page de la proposition dans la boîte de réponses.
 
-|Couleur 
+|Couleur
 |Obligatoire
 |La couleur de la zone de statut et du tag.
 |===
