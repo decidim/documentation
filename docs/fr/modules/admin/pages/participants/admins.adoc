@@ -2,22 +2,22 @@
 
 == En bref
 
-Administrators are the persons managing the organization, creating the processes, managing the platform as a whole
-They can be of two types:
+Les administrateur·ices sont les personnes qui gèrent l'organisation, créent des processus, et gère la plateforme dans son ensemble
+Il y a deux types d'administrateur·ices :
 
-* Administrateurs : ont accès à toute la configuration de la plate-forme.
-* Gestionnaires de participants : seuls les participants xref:admin:participants/impersonations.adoc[impersonations] peuvent être gérés.
+* Administrateur·ices : ont accès à toute la configuration de la plateforme.
+* Gestionnaires de participant·e·x·s : seul·e·x·s les participant·e·x·s xref:admin:participants/impersonations.adoc[impersonations] peuvent être géré·e·x·s.
 
 image:participants/admins.png[Liste des admins]
 
 == Configuration
 
-=== Inviter un administrateur
+=== Inviter unx administrateur·ice
 
-Pour inviter un administrateur, cliquez sur le bouton "Nouvel administrateur" en haut à droite de la page.
-Vous pouvez inviter un participant déjà inscrit ou non enregistré.
+Pour inviter unx administrateur,·ice cliquer sur le bouton "Nouvel·le·x administrateur·ice" en haut à droite de la page.
+Vous pouvez inviter unx participant·e·x déjà inscri·e·x ou non enregistré·e·x.
 
-image:participants/admins_invite.png[Formulaire d'invitation d'un participant]
+image:participants/admins_invite.png[Formulaire d'invitation d'unx participant·e·x]
 
 .Formulaire d'administrateur
 [cols="20h,10h,~"]
