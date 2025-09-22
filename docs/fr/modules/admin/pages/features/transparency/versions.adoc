@@ -11,16 +11,16 @@ image::features/versions/side_by_side_escaped.png[Versions in resources]
 
 === How to find it?
 
-. Allez au contenu pour lequel vous souhaitez revoir les différentes versions.
-. Cliquez sur le lien "Voir les autres versions" en bas de la page.
-. À partir de là, vous pouvez modifier la visualisation des différences de version et examiner toutes les versions passées.
+. Aller sur le contenu pour lequel vous souhaitez revoir les différentes versions.
+. Cliquer sur le lien "Voir les autres versions" en bas de la page.
+. Vous pouvez maintenant modifier la visualisation les différences de la version et examiner toutes les versions passées.
 
 image::features/versions/sidebar.png[See other versions link in page bottom]
 
 image::features/versions/list.png[List of versions]
 
 Il est possible de voir les différences entre les versions en deux formats : côte à côte ou unifié. Dans le cas où le contenu est
-en HTML, alors il est également possible de voir la différence non échappée et échappée, et voir le code HTML complet.
+en HTML, alors il est également possible de voir la différence déséchappée et échappée, et voir le code HTML complet.
 
 image:features/versions/unified_escaped.png[Vue échappée unifiée]
 
