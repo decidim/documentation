@@ -98,17 +98,27 @@ async function getMetadataFromEnvironment() {
 // @param {string} metadata.headRef - the head reference of git
 //                                    It's the name of the current branch
 function writeToFile(antoraPlaybookFile, metadata) {
-  fs.readFile(antoraPlaybookFile, "utf8", function (err,data) {
+  fs.readFile(antoraPlaybookFile, "utf8", function (err, data) {
     if (err) {
-      return console.err(err);
+      return console.error(err);
     }
 
-    let result = data.replace(metadata.baseRef, metadata.headRef);
+    let result = data;
 
     const isDevelopment = metadata.headRef === "HEAD";
+
+    // Only modify inside documentation sources
+    result = result.replace(
+      /(- url: &documentation[^\n]*\n(?:\s+.*\n)*?\s+branches:\s*\[[^\]]*?),\s*develop(\s*\])/gm,
+      `$1, ${metadata.headRef}$2`
+    );
+
     if (isDevelopment) {
-      const antoraDocumentationUrl = "https://github.com/decidim/documentation";
-      result = result.replace(antoraDocumentationUrl, ".");
+      // Replace only the documentation URLs, not the decidim/decidim one
+      result = result.replace(
+        /^(\s*-\s*url:\s*&documentation\s*)https:\/\/github\.com\/decidim\/documentation/mg,
+        "$1."
+      );
     }
 
     console.log("********************************")
@@ -118,7 +128,7 @@ function writeToFile(antoraPlaybookFile, metadata) {
 
     fs.writeFile(antoraPlaybookFile, result, "utf8", function (err) {
       if (err) {
-        return console.err(err);
+        return console.error(err);
       }
     });
   });

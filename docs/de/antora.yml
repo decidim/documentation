@@ -1,8 +1,8 @@
-name: en
+name: de
 title: "Decidim Documentation"
 version: develop
 asciidoc:
   attributes:
-    page-lang: en@
+    page-lang: de@
 nav:
 - modules/ROOT/nav.adoc

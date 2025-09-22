@@ -2,9 +2,7 @@
   "name": "decidim-documentation",
   "private": true,
   "scripts": {
-    "prebuild": "./bin/playbook-changer.js",
     "build": "antora antora-playbook.yml $@",
-    "postbuild": "./bin/postbuild.js",
     "test": "./bin/test"
   },
   "devDependencies": {

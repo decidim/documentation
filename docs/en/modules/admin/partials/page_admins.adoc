@@ -12,15 +12,11 @@ They can't edit anything.
 * *Valuators*: they can evaluate proposals, give them answers and update their statuses. 
 
 === How to find it?
-=== How to find it?
 
 To configure space administrators, click the "Process admins" or "Assembly admins" item in the corresponding space. 
 
 image::spaces/admins_list.png[Administrators of space]
 
-== Configuration
-
-=== Manage admins
 == Configuration
 
 === Manage admins
@@ -33,7 +29,6 @@ You can find all the administrators on the list in the administration panel, wit
 * *Invitation accepted at*: date when the administrator accepted the invitation by clicking the link in the invitation email. 
 * *Role*: administrator role. 
 
-=== Actions
 === Actions
 
 .Actions in administrators list
@@ -51,7 +46,6 @@ You can find all the administrators on the list in the administration panel, wit
 
 |===
 
-=== Add a space administrator
 === Add a space administrator
 
 Click on the *New space admin* button (depending in the kind of space you're in). 
