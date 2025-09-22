@@ -2,8 +2,8 @@
 
 == En bref
 
-The Sortitions component allows to sort a number of proposals with random, yet reproducible, procedures that guarantees non-biased
-and uniform distributions.
+La fonctionnalité Tirage au sort permet de trier un certain nombre de propositions à l'aide de procédures aléatoires, mais reproductibles, qui garantissent des distributions non biaisées
+et uniformes.
 
 Par exemple, il peut être utile pour trier les candidats à un jury ou à des propositions de budgétisation participative.
 
@@ -13,7 +13,7 @@ image::components/sortitions/example01.png[Example of a sortition]
 
 == Configuration
 
-Pour créer un composant Sortitions, allez d'abord dans xref:admin:spaces.adoc[espace participatif] où vous voulez le créer.
+Pour créer une fonctionnalité Tirage au sort, aller d'abord dans xref:admin:spaces.adoc[espace participatif] à l'endroit de création souhaité.
 
 image::components/sortitions/component_sortitions.png[Add Sortitions component button]
 
@@ -21,21 +21,21 @@ Ensuite :
 
 . Cliquer sur l'élément "Fonctionnalités" dans le menu secondaire
 . Cliquer sur "Ajouter une fonctionnalité"
-. Sélectionnez "Sortitions"
+. Sélectionnez "Tirages au sort"
 . Remplir le formulaire de création de fonctionnalité
 
-Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur l'image [Icône Configurer] dans la liste des fonctionnalités.
+Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur [Icône Configurer] dans la liste des fonctionnalités.
 
 image::components/sortitions/component.png[Add component form]
 
-.Ajouter un composant : Formulaire de tri
+.Ajouter une fonctionnalité : Formulaire de tirages au sort
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Nom
 |Obligatoire
-|Titre de ce composant.
+|Titre de cette fonctionnalité.
 
 |Rang d'affichage
 |Facultatif
@@ -44,14 +44,14 @@ Par exemple, si vous avez deux fonctionnalités, "Fonctionnalité a" de poids "1
 alors "Fonctionnalité b" est placée avant dans le listage.
 |===
 
-.Ajouter un composant : Formulaire de tri - Paramètres globaux
+.Ajouter une fonctionnalité : Formulaire de tirage au sort - Paramètres généraux
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Commentaires activés
 |Facultatif
-|Si vous voulez avoir des commentaires dans les tiroirs.
+|Pour activer les commentaires. Les participants peuvent ainsi commenter les tirages au sort.
 
 |Longueur maximale des commentaires
 |Facultatif
@@ -73,7 +73,7 @@ image::components/sortitions/new_sortition_backend.png[New sortition backend for
 
 |Ensemble de propositions
 |Obligatoire
-|La composante de la proposition sur laquelle baser le tirage au sort. Les deux composants doivent être dans le même espace.
+|La fonctionnalité de la proposition sur laquelle se base le tirage au sort. Les deux fonctionnalités doivent être dans le même espace.
 
 |Catégories des propositions sur lesquelles vous souhaitez appliquer le tirage au sort
 |Facultatif
@@ -81,7 +81,7 @@ image::components/sortitions/new_sortition_backend.png[New sortition backend for
 
 |Nombre de propositions à sélectionner
 |Obligatoire
-|Indiquez le nombre de propositions que vous voulez être sélectionné en dessinant un grand nombre de propositions que vous avez précédemment choisies.
+|Nombre de propositions à sélectionner (indique le nombre de propositions que vous voulez tirer au sort parmi celles du groupe de propositions que vous avez choisi précédemment).
 
 |Témoins
 |Obligatoire
@@ -89,22 +89,21 @@ image::components/sortitions/new_sortition_backend.png[New sortition backend for
 
 |Information sur le tirage au sort
 |Obligatoire
-|Explication sur les raisons pour lesquelles le tirage au sort est fait.
+|Explication sur les raisons du tirage au sort.
 
 |Résultat du jet de dé
 |Obligatoire
-|Lancer un dé à 6 côtés, ou chercher un autre moyen aléatoire de générer un nombre de 1 à 6, et entrez ici le numéro
-résultant devant certains témoins. Cela contribue à la qualité et aux garanties de la randomité du résultat.
+|Lancer un dé à 6 côtés, ou chercher un autre moyen aléatoire de générer un nombre de 1 à 6, et entrer ici le résultat en présence de témoins. Cela contribue à la qualité et garantie le caractère aléatoire du résultat.
 |===
 
-=== Gérer les tirets
+=== Gérer les tirages
 
 Pour commencer à créer et à gérer des partitions, cliquez dans le titre du composant dans la barre de navigation ou dans la liste des composants, ou cliquez dans l'image
-: icons/action_edit. ng[Gérer l'icône du composant] Gérer l'icône dans la liste des composants.
+: icons/action_edit.
 
 image::components/sortitions/manage_sortitions.png[Manage sortitions table]
 
-Sur la liste des tirets dans le panneau d'administration, les administrateurs peuvent voir :
+Sur la liste des tirages au sort dans le panneau d'administration, les administrateurs peuvent voir :
 
 * *Référence* : Référence du tirage au sort.
 * *Titre* : Titre du tirage au sort.
@@ -127,7 +126,7 @@ Sur la liste des tirets dans le panneau d'administration, les administrateurs pe
 
 |image:icons/action_permissions.png[Permissions icon]
 |Autorisations
-|Pour gérer les autorisations nécessaires pour commenter les titres.
+|Pour gérer les autorisations nécessaires pour commenter les tirages.
 
 |image:icons/action_delete.png[Supprimer l'icône]
 |Supprimez
