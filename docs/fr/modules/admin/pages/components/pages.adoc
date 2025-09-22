@@ -2,19 +2,18 @@
 
 == En bref
 
-La fonctionnalité Page permet aux participants d'avoir plus d'information sur un espace. Les administrateurs peuvent remplir une page avec du contenu d'information, des images
-, des liens, pour informer et mettre à jour les participants.
+La fonctionnalité Page permet aux participants d'avoir plus d'information sur un espace. Les administrateurs peuvent remplir une page avec des informations, des images, des liens, afin d'informer et mettre à jour les participants.
 
-C'est la même chose que les pages générales xref:admin:pages. doc[Pages], la principale différence étant que ce composant permet de définir des pages à l'intérieur de
+doc[Pages], la principale différence étant que ce composant permet de définir des pages à l'intérieur de
 un espace participatif, et non dans la section Aide.
 
 image::components/page/example01.png[Example of a page component in a participatory process]
 
 == Configuration
 
-=== Créer un composant de page
+=== Créer une fonctionnalité de page
 
-Pour créer un composant de page, allez d'abord dans xref:admin:spaces.adoc[espace participatif] où vous voulez le créer.
+Pour créer une fonctionnalité Page, allezrd'abord dans xref:admin:spaces.adoc[espace participatif] à l'endroit de création souhaité.
 
 image::components/page/component_page.png[Add Page component button]
 
@@ -22,11 +21,11 @@ Ensuite :
 
 . Cliquer sur l'élément "Fonctionnalités" dans le menu secondaire
 . Cliquer sur "Ajouter une fonctionnalité"
-. Sélectionnez "page"
+. Sélectionnez "Page"
 . Remplir le formulaire de création de fonctionnalité
 
-Vous pouvez toujours mettre à jour ce formulaire et la configuration après avoir créé le composant, en cliquant sur l’icône
-image:icons/action_configure.png[Configurer l’icône] dans la liste des composants.
+Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur l’icône
+image:icons/action_configure.png[Configurer l’icône] dans la liste des fonctionnalités.
 
 image::components/page/component.png[Add component form]
 
@@ -68,7 +67,7 @@ alors "Fonctionnalité b" est placée avant dans le listage.
 
 === Créer une page
 
-Une fois que vous avez créé le composant de la page, cliquez sur l'icône Modifier pour écrire le contenu à afficher sur la page.
+Une fois la fonctionnalité de la page créée, cliquer sur l'icône Modifier pour rédiger le contenu à afficher sur la page.
 
 image:components/page/new_page.png[Formulaire de nouvelle page]
 
@@ -79,7 +78,7 @@ image:components/page/new_page.png[Formulaire de nouvelle page]
 
 |Corps
 |Obligatoire
-|Le contenu affiché sur la page. Vous pouvez ajouter des images, des liens, des vidéos, du formatage, etc.
+|Le contenu affiché sur la page. Il est possible d'ajouter des images, des liens, des vidéos, du formatage, etc.
 |===
 
 == Exemples
