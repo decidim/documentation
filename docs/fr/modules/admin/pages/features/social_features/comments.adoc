@@ -2,9 +2,9 @@
 
 == En bref
 
-Les commentaires sont des messages publics qui permettent aux participants de partager des informations ou des opinions sur une proposition, un débat, une réunion, une initiative, etc.
+Les commentaires sont des messages publics qui permettent aux participants de partager des informations ou des opinions à propos d'une proposition, un débat, une réunion, une initiative, etc.
 
-NOTE: Les commentaires doivent être activés par les administrateurs, sinon les participants ne sont pas en mesure de commenter. Pour savoir comment activer les commentaires sur un composant, veuillez vous référer à l'article xref:features:components.adoc[Components].
+NOTE: Les commentaires doivent être activés par les administrateurs, sinon les participants ne sont pas en mesure de commenter. Pour savoir comment activer les commentaires dans une fonctionnalité, se référer à l'article xref:features:components.adoc[Components].
 
 image::features/comments/nested_comment.png[Comments example]
 
@@ -14,11 +14,11 @@ image::features/comments/nested_comment.png[Comments example]
 
 . Accéder au contenu que vous souhaitez commenter
 . Aller au bas de la page
-. Remplissez le champ "Ajouter un commentaire" et laissez votre commentaire
+. Remplir le champ "Ajouter un commentaire" et laisser votre commentaire
 
 image::features/comments/form.png[Comments form]
 
-Lors de vos commentaires, les participants peuvent :
+Les commentaires permettent les actions suivantes :
 
 .Actions de commentaire
 [cols="10h,~,~,~"]
@@ -26,22 +26,22 @@ Lors de vos commentaires, les participants peuvent :
 |Type |Description |Syntaxe |Exemple
 
 |Mention
-|Mentionnez un utilisateur ou un groupe d'utilisateurs. Ils recevront une notification pour la mention.
+|Mentionner un utilisateur ou un groupe d'utilisateurs. Ils recevront une notification pour la mention.
 |@pseudonyme
 |@carmelia_hudson
 
 |Hashtag
-|Les hashtags sont redirigés vers la page de recherche générale xref:admin:features/search.adoc[page de recherche]
+|Les hashtags sont redirigés sur la page de recherche générale xref:admin:features/search.adoc[page de recherche]
 |#exemple
 |#sedep
 
-|Devis
-|Les hashtags sont redirigés vers la page de recherche générale xref:admin:features/search.adoc[page de recherche]
-|> Votre devis ici
-|> le financement de ce programme pourrait être mieux alloué à l'amélioration des options de transport en commun
+|Estimation
+|Les hashtags sont redirigés sur la page de recherche générale xref:admin:features/search.adoc[page de recherche]
+|> Votre estimation ici
+|> le financement de ce programme pourrait être mieux alloué pour améliorer les options de transport en commun
 
 |URL
-|Une fois publié, l'URL devient cliquable, et peut être interne ou externe. S'ils font référence à un contenu de la plate-forme, l'étiquette de lien
+|Une fois publié, l'URL devient cliquable, et peut être interne ou externe. S'ils font référence à un contenu de la plateforme, le lien
 prend le titre du contenu.
 |https://domain.name/
 |https://en.wikipedia.org/wiki/Decidim
@@ -57,11 +57,11 @@ prend le titre du contenu.
 |Pour
 |===
 
-Ci-dessous, vous pouvez trouver un exemple de champ commentaire avec plusieurs de ces éléments.
+Ci-dessous, vous trouverez un exemple de champ commentaire avec plusieurs de ces éléments.
 
 image::features/comments/rich_text_write.png[Comments with rich text (write)]
 
-Une fois publié, ce commentaire et ses différents éléments sont affichés comme ci-dessous.
+Une fois publié, ce commentaire et ses différents éléments sont affichés tel que ci-dessous.
 
 image::features/comments/rich_text_read.png[Comments with rich text (read)]
 
@@ -69,7 +69,7 @@ En cliquant sur un hashtag dans un commentaire ou un autre contenu, les particip
 
 image::features/comments/hashtag_search.png[Hashtags in comments]
 
-NOTE: Injection HTML ajoutée dans les commentaires sont échappés et ne sont pas affichés.
+NOTE: Les injections d'HTML ajoutées dans les commentaires sont évitées et ne sont pas affichées.
 
 image::features/comments/xss_write.png[XSS in comments (write)]
 
@@ -79,25 +79,25 @@ image::features/comments/xss_read.png[XSS in comments (read)]
 
 Les participants peuvent interagir avec les commentaires de différentes manières.
 
-* Tout le monde peut les trier et afficher et masquer le fil de réponse.
-* Les participants peuvent également répondre aux commentaires, voter positivement ou négativement pour eux, les signaler ou obtenir le lien vers le commentaire.
+* Tout le monde peut les trier et afficher et masquer le fil de réponses.
+* Les participants peuvent également répondre aux commentaires, leur donner un vote positivement ou négativement, les signaler ou obtenir le lien vers le commentaire.
 * Les auteurs de commentaires peuvent également modifier et supprimer leurs propres commentaires.
 
-Ils peuvent accéder à certaines actions directement sur le commentaire, et d'autres en cliquant sur le menu des trois points à côté d'un commentaire.
+Certaines actions sont accessibles directement sur le commentaire, alors que d'autres sont accessibles dans le menu en cliquant sur les trois points à côté d'un commentaire.
 
 image::features/comments/actions.png[Comments actions]
 
 ==== Trier
 
-Les participants peuvent trier les commentaires par:
-* Meilleure note : les commentaires avec le plus de votes positifs apparaissent en premier dans la liste
-* Récents: les commentaires les plus récents apparaissent en premier.
-* Ancien : les commentaires plus anciens apparaissent en premier.
-* Plus discuté: les commentaires avec les commentaires plus imbriqués apparaissent en premier.
+Les participants peuvent trier les commentaires selon :
+* La meilleure note : les commentaires avec le plus de votes positifs apparaissent en premier dans la liste
+* La date : les commentaires les plus récents apparaissent en premier.
+* Ancienneté : les commentaires plus anciens apparaissent en premier.
+* Plus discuté : les commentaires avec avec le plus de réponses apparaissent en premier.
 
 image::features/comments/order_by.png[Order comments]
 
-Ils peuvent également masquer les réponses, quand ils ne veulent pas afficher un sujet de commentaire entier.
+Il est également possible de masquer les réponses pour ne pas afficher le fil de commentaires en entier.
 
 ==== Répondre
 
@@ -118,22 +118,22 @@ Veuillez lire l'article xref:admin:moderations/reported_content.adoc[Contenu sig
 ==== Obtenir le lien
 
 En cliquant sur l'élément "Obtenir un lien", les participants sont redirigés vers l'URL dédiée au commentaire.
-Ils peuvent ensuite partager ce lien avec d'autres, et il les mène directement à un commentaire.
+Ils peuvent ensuite partager ce lien avec d'autres personnes, qui les mène directement à un commentaire.
 Un message est affiché pour avertir le visiteur qu'il voit un seul commentaire, avec un lien pour voir tous les autres commentaires.
 
 image::features/comments/single_comment.png[Edited comment]
 
 ==== Editer
 
-Les participants peuvent modifier leurs commentaires, et après avoir fait, une mention « Éditée » apparaît sur leur commentaire pour indiquer aux autres participants
+Les participants peuvent modifier leurs commentaires. Une mention « Édité » apparaît sur leur commentaire pour indiquer aux autres participants
 que ce contenu a été modifié.
 
-Les commentaires n'ont pas d'historique de version des modifications apportées.
+Les commentaires ne contiennent pas l'historique des versions modifiées.
 
 image::features/comments/edited_comment.png[Edited comment]
 
 ==== Supprimez
 
-Une fois qu'un commentaire est supprimé, il n'est plus visible, et un message indique la date à laquelle il a été supprimé.
+Une fois supprimé, un commentaire n'est plus visible, et un message indique la date à laquelle il a été supprimé.
 
 image::features/comments/deleted_comment.png[Deleted comment]
