@@ -2,20 +2,20 @@
 
 == En bref
 
-*Le moteur de recherche* permet aux participants d'effectuer des recherches sur tout le contenu de la plateforme qui peut être indexé,
-de manière générale et spécifique, en recherchant dans un processus participatif spécifique ou à l'intérieur de ses composantes
-(propositions, résultats, etc.).
+*Le moteur de recherche* permet aux participant·e·x·s d'effectuer des recherches sur tout le contenu de la plateforme indexé,
+de manière générale et spécifique, en recherchant dans un processus participatif spécifique ou à l'intérieur de ses fonctionnalités
+(propositions, réalisations, etc.).
 
 === How to find it?
 
-The search engine is accessible in the instance header, next to your platform logo.
+Le moteur de recherche est accessible dans l'en-tête, à côté du logo de votre plateforme.
 
 image::features/search/search_input.png[Search input in frontend navigation bar]
 
-In the search bar, you can enter a word or just do an empty search to access the search results page.
+Dans la barre de recherche, il est possible d'entrer un mot ou effectuer une recherche vide pour accéder à la page de résultats de recherche.
 
 image::features/search/search_page.png[Search results page example]
 
-The search engine searches for the entry in all the resources titles and descriptions.
+Le moteur de recherche explore les entrées dans tous les titres des ressources et des descritpions.
 
-You can also filter the search by clicking the resources types in the left.
+Il est également possible de filtrer la recherche en cliquant sur les types de ressources se trouvant à gauche.
