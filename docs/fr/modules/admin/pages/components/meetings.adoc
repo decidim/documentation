@@ -2,22 +2,22 @@
 
 == En bref
 
-Le volet Réunions permet aux administrateurs d'organiser, d'annoncer, de traiter des inscriptions et de clôturer des réunions en personne ou en ligne.
-Selon la configuration du composant, les réunions ne peuvent être créées que par les administrateurs, ou aussi par les participants.
+La fonctionnalité Rencontres permet aux administrateurs d'organiser, d'annoncer, de traiter les inscriptions et de clôturer des rencontres en présentiel ou en ligne.
+Selon la configuration de la fonctionnalité, les rencontres ne peuvent être créées uniquement par les administrateurs, ou par les administrateurs et les participants.
 
 Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments :
 
-* xref:admin:admin:components/meetings/meetings.adoc[Meeting creation]: Créer des réunions officielles ou participantes.
-* xref:admin:admin:components/meetings/registrations.adoc[Registrations]: Gérer comment les participants peuvent s'inscrire pour assister aux réunions.
-* xref:admin:components/meetings/agenda.adoc[Agenda]: Annoncez les sujets des réunions à discuter.
-* xref:admin:admin:components/meetings/polls.adoc[Polls]: Activer le vote rapide pendant une réunion en ligne.
-* xref:admin:components/meetings/close.adoc[Close]: Ajoute le rapport final et les minutes de la réunion.
+* xref:admin:admin:components/meetings/meetings.adoc[Meeting creation]: Créer des rencontres officielles ou participatives.
+* xref:admin:admin:components/meetings/registrations.adoc[Registrations]: Gérer comment les participants peuvent s'inscrire pour assister aux rencontres.
+* xref:admin:components/meetings/agenda.adoc[Agenda]: Annoncer les sujets des rencontres à discuter.
+* xref:admin:admin:components/meetings/polls.adoc[Polls]: Activer le vote rapide pendant une rencontre en ligne.
+* xref:admin:components/meetings/close.adoc[Close]: Ajoute le rapport final et le procès verbal de la rencontre.
 
 image::components/meetings/example01.png[Example meeting detail 01]
 
 == Configuration
 
-Pour créer un composant de réunions, allez d'abord sur xref:admin:spaces.adoc[espace participatif] où vous voulez le créer.
+Pour créer une fonctionnalité de Rencontres, aller d'abord sur xref:admin:spaces.adoc[espace participatif] à l'endroit de création souhaité.
 
 image::components/meetings/component_meeting.png[Add Meetings component button]
 
@@ -25,11 +25,11 @@ Ensuite :
 
 . Cliquer sur l'élément "Fonctionnalités" dans le menu secondaire
 . Cliquer sur "Ajouter une fonctionnalité"
-. Sélectionnez "Réunions"
+. Sélectionner "Rencontres"
 . Remplir le formulaire de création de fonctionnalité
 
-Vous pouvez toujours mettre à jour ce formulaire et la configuration après avoir créé le composant, en cliquant sur l’icône
-image:icons/action_configure.png[Configurer l’icône] dans la liste des composants.
+Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur l’icône
+image:icons/action_configure.png[Configurer l’icône] dans la liste des fonctionnalités.
 
 image::components/meetings/component.png[Add a meetings component]
 
@@ -60,19 +60,19 @@ alors "Fonctionnalité b" est placée avant dans le listage.
 
 |Secteur
 |Facultatif
-|Ce composant appartient à xref:admin:settings/scopes.adoc[Scopes].
+|Cette fonctionnalité appartient à xref:admin:settings/scopes.adoc[Scopes].
 
 |Annonce
 |Facultatif
-|Une annonce générale visible dans la liste des réunions dans l'interface participante.
+|Une annonce générale visible dans la liste des rencontres dans l'interface participant.e.x.s.
 
 |Conditions d'inscription par défaut
 |Facultatif
-|Les conditions de service que le participant doit accepter lors de son inscription.
+|Les conditions d'inscription que le participant doit accepter lors de son inscription.
 
 |Commentaires activés
 |Facultatif
-|Si vous voulez que la création de commentaires soit activée dans les réunions.
+|Pour activer les commentaires. Les participants peuvent ainsi commenter les rencontres.
 
 |Longueur maximale des commentaires
 |Facultatif
@@ -80,7 +80,7 @@ alors "Fonctionnalité b" est placée avant dans le listage.
 
 |Code d'enregistrement activé
 |Facultatif
-|Cochez cette case si vous souhaitez donner automatiquement des codes d'inscription aux participants.
+|Cocher pour donner automatiquement des codes d'inscription aux participants.
 En savoir plus sur xref:components/meetings/registrations.adoc[Registrations].
 
 |Les autorisations d'actions peuvent être définies pour chaque réunion
@@ -97,7 +97,7 @@ En savoir plus sur xref:components/meetings/registrations.adoc[Registrations].
 
 |Cartes activées
 |Facultatif
-|Si vous voulez afficher une carte avec les adresses des réunions dans la liste et les pages des réunions.
+|Pour afficher une carte avec les adresses des rencontres dans la liste et les pages des rencontres.
 |===
 
 .Ajouter un composant - Formulaire de réunions: Paramètres de l'étape
@@ -107,16 +107,16 @@ En savoir plus sur xref:components/meetings/registrations.adoc[Registrations].
 
 |Annonce
 |Facultatif
-|Une annonce générale visible dans la liste des assemblées générales pour cette phase.
+|Une annonce générale visible dans la liste des assemblées générales pour cette étape.
 
 |Commentaires activés
 |Facultatif
-|Si vous voulez que la création de commentaires soit activée dans les réunions pour cette phase.
+|Pour activer les commentaires. Les participants peuvent ainsi commenter les rencontre lors de cette étape.
 |===
 
 == Exemples
 
-Quelques exemples d'utilisation de ce composant :
+Quelques exemples d'utilisation de cette fonctionnalité :
 
 * https://www.decidim.barcelona/processes/PAM2020/f/3734/[Programme d'Actuació Municipal (PAM) 2020-2023]
 * https://meta.decidim.org/assemblies/coordination-commissione/f/1037/réunions[Les réunions du comité de coordination de l'association Decidim]
