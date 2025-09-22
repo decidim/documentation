@@ -2,46 +2,46 @@
 
 == En bref
 
-Lors de la rédaction des conditions générales de votre plateforme, ou de votre tableau de participation, vous voulez vous assurer que les participants
-respectent les règles de participation dans le contenu qu'ils écrivent.
-Tous les participants peuvent rapporter des commentaires, des propositions, des débats, etc.
+Lors de la rédaction des conditions générales de votre plateforme, ou de votre charte de participation, vous il est important de s'assurer que les participant·e·x·s
+respectent les règles de participation dans le contenu qu'iels rédigent.
+Touxtes les participant·e·x·s peuvent signaler des commentaires, des propositions, des débats, etc.
 
 == Configuration
 
 === Signaler un contenu
 
-N'importe quel participant connecté peut rapporter du contenu, en cliquant sur le bouton "Rapport" disponible à côté de la ressource.
+Chaque participant·e·x connecté·e·x peut signaler du contenu, en cliquant sur le bouton "Signaler" disponible à côté de la ressource.
 
 image:moderations/moderations_reported_content_flag.png[Signaler le drapeau dans le contenu]
 
 image:moderations/moderations_reported_comment_flag.png[Signaler le drapeau dans le commentaire]
 
-Les participants doivent sélectionner une raison pour le rapport et peuvent ajouter des informations supplémentaires si nécessaire.
+Les participant·e·x·s doivent sélectionner une raison pour le signalement et peuvent ajouter des informations supplémentaires si nécessaire.
 
 image:moderations/moderation_modal.png[Donner raison de modération modale]
 
 === Gérer le contenu signalé
 
-Après qu'un participant a signalé un contenu, il apparaît dans deux sections du panneau d'administration :
+Après le signalement d'un contenu, lea participant·e·x apparaît dans deux sections du panneau d'administration :
 
 * Panneau de modération globale
 * Panneau de modération d'espace participatif
 
 image:moderations/moderations_backend_list_content.png[Panneau de modération globale pour le contenu]
 
-Là, vous trouverez d'abord tous les rapports non traités s'il y en a, avec:
+Ici, vous trouverez d'abord tous les rapports non traités s'il y en a, avec :
 
 * *Id* : identifiant unique du contenu signalé.
-* *Type* : le type de contenu rapporté, par exemple commentaire, proposition, débat, etc.
+* *Type* : le type de contenu signalé, par exemple commentaire, proposition, débat, etc.
 * *Espace participatif* : à quel espace ce contenu appartient.
 * *URL de contenu signalé*: lien pour voir le contenu signalé et voir le contexte de la plainte.
 * *Raison* : pourquoi le contenu est signalé. Si le participant qui a fait le rapport a donné des informations supplémentaires
 il est possible de le voir en le survolant.
-* *Signalé à* : quand il a été signalé à l'origine.
-* *Nombre*: nombre de rapports par différents utilisateurs.
+* *Signalé à* : quand il a été signalé.
+* *Nombre*: nombre de signalements par différents utilisateurices.
 * *Actions* : vous pouvez *Développer*, *Désigner* ou *Masquer*.
 
-Une fois que vous modérez un contenu, il apparaît dans la liste de contenu "Caché", accessible en haut à droite de la page.
+Quand vous modérez un contenu, il apparaît dans la liste de contenu "Caché", accessible en haut à droite de la page.
 
 === Actions
 
@@ -52,22 +52,22 @@ Une fois que vous modérez un contenu, il apparaît dans la liste de contenu "Ca
 
 |image:icons/action_expand.png[Développer l'icône]
 |Agrandir
-|Pour voir tous les détails du contenu et des rapports signalés.
+|Pour voir tous les détails du contenu signalé et les rapports.
 |Toujours disponible.
 
 |image:icons/action_unreport.png[Désignaler l'icône]
 |Ne plus signaler
-|Permet à un administrateur ou un modérateur de continuer à afficher ce contenu et d'annuler le rapport.
+|Permet à unx administrateurice ou unx modérateurice de continuer à afficher ce contenu et d'annuler le signalement.
 |Disponible lorsque le contenu n'est pas encore masqué.
 
 |image:icons/action_hide.png[Démasquer l'icône]
 |Cacher
-|Permet à un administrateur ou un modérateur de masquer ce contenu et d'accepter le rapport.
+|Permet à unx administrateurice ou unx modérateurice de masquer ce contenu et d'accepter le signalement.
 |Disponible lorsque le contenu n'est pas encore masqué.
 
 |image:icons/action_hide.png[Masquer l'icône]
 |Unhide
-|Autorise un administrateur ou un modérateur à masquer ce contenu (l'afficher à nouveau publiquement).
+|Autorise unx administrateurice ou unx modérateurice à réafficher ce contenu (l'afficher à nouveau publiquement).
 |Disponible lorsque le contenu est masqué.
 |===
 
@@ -77,11 +77,11 @@ et le signaler à nouveau afin que vous puissiez le modérer.
 === Agrandir
 
 Pour consulter les détails d'un contenu et les différents rapports des participants, vous pouvez cliquer sur le bouton "Développer".
-voir toutes les métadonnées d'un rapport, vous pouvez le voir étendu.
+Pour voir toutes les métadonnées d'un rapport, vous pouvez le voir en étendu.
 
 image:moderations/moderations_backend_report_content.png[Panneau de modération globale pour le contenu]
 
-Cette vue vous permet d'évaluer rapidement s'il est nécessaire de cacher ou non le contenu.
-Au bas du rapport, vous pouvez également examiner les différents rapports faits par les autres participants et les étendre également.
+Cet affichage vous permet d'évaluer rapidement s'il est nécessaire de masquer ou non le contenu.
+Au bas du rapport, vous pouvez également examiner les différents signalements effectués par les autres participant·e·x·s et les étendre également.
 
 image:moderations/moderations_backend_report_details.png[Panneau de modération globale pour le contenu]
