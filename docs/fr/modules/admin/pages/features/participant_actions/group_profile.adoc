@@ -1,9 +1,9 @@
-= Profils des groupes
+= Profils de groupes
 
 == En bref
 
-En tant que participant, vous voudrez peut-être créer un groupe d'utilisateurs pour votre association, votre entreprise, votre club, etc.
-Si un administrateur vérifie que vous avez le droit de représenter ce groupe, alors vous pouvez participer à l'instance au nom
+En tant que participant, il peut être utile de créer un groupe d'utilisateurs pour votre association, votre entreprise, votre club, etc.
+Si un administrateur valide votre droit de représenter ce groupe, alors vous pouvez participer dans ce cas au nom
 du groupe.
 
 NOTE: L'option de création de groupe n'est disponible que lorsque les groupes sont activés pour l'organisation.
@@ -13,7 +13,7 @@ Vous pouvez demander à un administrateur de la plateforme ou l'activer depuis l
 
 === Créer un groupe
 
-Pour créer un groupe, cliquez sur le bouton "Créer un groupe" dans votre profil public.
+Pour créer un groupe, cliquez sur "Créer un groupe" dans votre profil public.
 
 image::features/my_profile/profile_create_group.png[Public profile group creation form]
 
@@ -36,37 +36,37 @@ image::features/my_profile/profile_create_group.png[Public profile group creatio
 
 |Avatars
 |Facultatif
-|Avatar de votre organisation, qui est affiché comme avatar de l'utilisateur. Peut être un logo, une photo, etc.
+|Avatar de votre organisation, qui s'affiche comme avatar de l'utilisateur. Peut être un logo, une photo, etc.
 
 |À propos de
 |Facultatif
-|Plus d'informations sur votre organisation. Ceci est affiché publiquement sur la page de profil du groupe d'utilisateurs.
+|Plus d'informations sur votre organisation. Ceci s'affiche publiquement sur la page de profil du groupe d'utilisateurs.
 
 |Numéro du document
 |Facultatif
-|Remplissez ce champ si vous voulez qu'un administrateur vérifie l'authenticité de votre groupe.
+|À remplir ce champ si vous souhaitez qu'un administrateur vérifie l'authenticité de votre groupe.
 
 |Téléphone
 |Facultatif
-|Remplissez ce champ si vous voulez qu'un administrateur puisse appeler quelqu'un de votre organisation à
+|À remplir si vous souhaitez qu'un administrateur puisse designer une personne de votre organisation pour
 vérifier l'authenticité du groupe d'utilisateurs.
 |===
 
-Le groupe d'utilisateurs est visible sur la plateforme dès que vous le créez. Après sa création, vous êtes redirigé vers la page de profil du groupe d'utilisateurs
+Le groupe d'utilisateurs est visible sur la plateforme dès sa création. Après sa création, vous serez redirigé vers la page de profil du groupe d'utilisateurs
 .
 
-Afficher les pages des profils des groupes d'utilisateurs :
+Les pages des profils des groupes d'utilisateurs affichent :
 
-* Membres: Les membres des groupes, et qui sont les administrateurs.
+* Membres: Les membres des groupes, et qui en sont les administrateurs.
 * Badges : badges du groupe d'utilisateurs.
 * Abonnés: Les participants peuvent également suivre les groupes d'utilisateurs.
 
 === Gérer un groupe
 
 Une fois qu'un groupe a été créé, il est possible d'inviter des participants à devenir membres du groupe.
-Une fois qu'un participant a accepté de faire partie de ce groupe, il peut devenir administrateur.
+Un participant a accepté dans ce groupe peut devenir administrateur.
 
-Les actions qui peuvent être effectuées par un administrateur de groupe d'utilisateurs sont:
+Les actions suivantes peuvent être effectuées par un administrateur de groupe d'utilisateurs :
 
 * Modifier le profil du groupe
 * Gérer les membres
@@ -78,25 +78,25 @@ image::features/my_profile/profile_manage_group.png[Public profile group drop do
 
 ==== Gérer les membres
 
-Sur cette page, vous pouvez accepter ou refuser les demandes des participants à rejoindre votre groupe, mais aussi promouvoir les membres du groupe aux administrateurs
+Sur cette page, vous pouvez accepter ou refuser les demandes des participants à rejoindre votre groupe. Vous pouvez aussi promouvoir les membres du groupe au rôle d'administrateur
 ou les retirer du groupe.
 
 image::features/my_profile/user_group_manage_participant.png[User groups: manage participants]
 
 ==== Gérer les administrateurs
 
-Sur cette page, vous pouvez seulement supprimer les droits d'administrateur du groupe, mais cela ne supprimera pas le participant du groupe.
+Sur cette page, vous pouvez seulement supprimer les droits d'administrateur du groupe, mais non le status de participant au groupe.
 
 image::features/my_profile/user_group_manage_admins.png[User groups: manage admins]
 
 ==== Inviter des participants
 
-Pour inviter un participant, il doit avoir un compte sur la plateforme.
-Vous pouvez les inviter avec leur surnom.
+Pour inviter une personne à devenir participante, elle doit avoir un compte sur la plateforme.
+Les personnes peuvent être invitées à l'aide leur surnom.
 
 image::features/my_profile/user_group_invite_participant.png[User groups: invite a participant]
 
-Ensuite, ils reçoivent une invitation à rejoindre le groupe. Ils peuvent l'accepter ou non.
+Elles recevront ensuite une invitation à rejoindre le groupe. Elles peuvent l'accepter ou la refuser.
 
 ==== Conversations
 
