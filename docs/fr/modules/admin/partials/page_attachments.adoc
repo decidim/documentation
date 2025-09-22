@@ -52,7 +52,8 @@ image:espaces/attachments_new_form.png[Créer un nouveau formulaire de pièces j
 
 |Fichier
 |Obligatoire
-|Télécharger le fichier. Orientation pour le fichier: Doit être une image ou un document. Taille maximale du fichier : 10 Mo. Les extensions de fichier
+|Télécharger le fichier. Orientation pour le fichier: Doit être une image ou un document. Le service récolte
+l'image Taille maximale du fichier : 10 Mo. Les extensions de fichier
 autorisées dépendent de la configuration de votre serveur.
 |===
 
