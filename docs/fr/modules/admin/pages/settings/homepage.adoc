@@ -3,14 +3,14 @@
 Dans cette page, vous pouvez configurer la page d'accueil de votre instance en activant différents blocs de contenu, que vous pouvez organiser comme vous le voulez
 en les glissant et en les déposant dans les deux colonnes.
 
-. Ajoutez différents blocs de contenu en cliquant sur le bouton « Ajouter un bloc de contenu » et choisissez celui que vous souhaitez ajouter.
+. Ajouter différents blocs de contenu en cliquant sur le bouton « Ajouter un bloc de contenu » et choisir celui que vous souhaitez ajouter.
 . Configurer le bloc de contenu (si configurable) alors qu'il est dans les colonnes de blocs de contenu inactifs
-. Enfin, déplacez le bloc de contenu dans la colonne des blocs de contenu actifs pour le faire apparaître sur la page d'accueil
+. Enfin, déplacer le bloc de contenu dans la colonne des blocs de contenu actifs pour le faire apparaître sur la page d'accueil
 
 image::settings/admin_homepage.png[Decidim Admin Homepage]
 
-NOTE: Dans votre installation, vous pouvez avoir d'autres blocs de contenu, car cela dépend des modules que vous avez actifs.
-Veuillez contacter votre administrateur système si vous voyez quelque chose de différent ici, comme un bloc de contenu manquant.
+NOTE: Dans votre installation, vous pouvez avoir d'autres blocs de contenu, car cela dépend des modules actifs.
+Veuillez contacter votre administrateur·ice système si vous voyez quelque chose de différent ici, comme un bloc de contenu manquant.
 
 Ci-dessous, vous trouverez tous les guides de configuration des blocs de contenu et les captures d'écran de la façon dont ils sont affichés sur la page d'accueil.
 
@@ -18,121 +18,119 @@ Ci-dessous, vous trouverez tous les guides de configuration des blocs de contenu
 
 Ce sont les différents blocs de contenu activés avec les modules officiels Decidim.
 
-=== Image principale et bouton d'action
+=== Image principale et CTA
 
-Le bloc image héros et contenu CTA permet d'afficher :
+Le bloc image principale et contenu CTA permet d'afficher :
 
-* *un texte de bienvenue* : pour accueillir les participants, ou pour annoncer un nouveau processus par exemple.
+* *un texte de bienvenue* : pour accueillir les participant·e·x·s, ou pour annoncer un nouveau processus par exemple.
 * *un bouton d'appel à l'action*: par défaut, un bouton "Participer" redirigeant vers l'index des processus participatifs.
-Peut être personnalisé dans xref:admin:settings/appearance.adoc#edit_homepage_appearance[Appearance] grâce aux champs bouton du bouton Appel à l'action.
+Peut être personnalisé dans xref:admin:settings/appearance.adoc#edit_homepage_appearance[Apparence] grâce aux champs bouton du bouton Appel à l'action.
 * *une image*: l'image téléchargée est affichée avec un filtre d'opacité, pour s'assurer que le texte de bienvenue est lisible.
 
 image::settings/homepage_hero_image_back.png[Hero image in Homepage backend content block]
 
-Dans la capture d'écran ci-dessous, le bouton CTA a été personnalisé dans la section xref:admin:settings/appearance.adoc#_edit_homepage_appearance[Appearance].
+Dans la capture d'écran ci-dessous, le bouton CTA a été personnalisé dans la section xref:admin:settings/appearance.adoc#_edit_homepage_appearance[Apparence].
 
 image::settings/homepage_hero_image_front.png[Hero image in Homepage frontend content block]
 
-=== Menu global
+=== Menu général
 
-The global menu content block displays a navigation menu on the homepage with all the participatory spaces types that you
-created on your instance.
+Le menu général du bloc de contenu affiche un menu de navigation sur la page d'accueil montrant tous les types d'espaces participatifs crées sur votre instance.
 
 image::settings/homepage_global_menu.png[Global menu in Homepage frontend content block]
 
-=== Bannière sous héros
+=== Bannière secondaire
 
-Le bloc de contenu de la bannière de sous-héros affiche la description de l'instance
-configurée dans xref:admin:settings/appearance.adoc#_edit_homepage_appearance[Appearance].
+Le bloc de contenu de la bannière secondaire affiche la description de l'instance
+configurée dans xref:admin:settings/appearance.adoc#_edit_homepage_appearance[Apparance].
 
 image::settings/homepage_sub_hero_banner.png[Sub hero banner in Homepage content block]
 
-=== Bannière de contenu en surbrillance
+=== Bannière de contenu mis en avant
 
-Le bloc de contenu de la bannière de contenu en surbrillance affiche la bannière configurée dans
-xref:admin:settings/appearance.adoc#_highlighted_content_banner[Appearance].
+Le bloc de contenu de la bannière de contenu mis en avant affiche la bannière configurée dans
+xref:admin:settings/appearance.adoc#_highlighted_content_banner[Apparance].
 
 image::settings/homepage_highlighted_content_banner.png[Highlighted content banner in Homepage content block]
 
-=== Bannière de sous-héros du pied de page
+=== Bannière secondaire de pied de page
 
-Le bloc de contenu de la bannière de sous-héros de bas de page affiche un texte par défaut qui ne peut pas être configuré.
-Déplacez-la inactive ou supprimez-la si vous ne voulez pas qu'elle soit affichée sur la page d'accueil.
+Le bloc de contenu de la bannière secondaire de bas de page affiche un texte par défaut qui ne peut pas être configuré.
+Déplacez-le dans inactif ou supprimez-le si vous ne voulez pas qu'elle soit affichée sur la page d'accueil.
 
 image::settings/homepage_footer_sub_hero_banner.png[Hero image in Homepage content block]
 
 === Comment participer
 
-La façon de participer au bloc de contenu affiche un texte par défaut qui ne peut pas être configuré, et un bouton redirigeant les participants vers
+Le bloc de contenu de Comment participer affiche un texte par défaut qui ne peut pas être configuré, et un bouton redirigeant les participant·e·x·s vers
 l'aide xref:admin:pages.
 
 image::settings/homepage_how_to_participate.png[How to participate in Homepage content block]
 
-=== Réunions à venir
+=== Rencontres à venir
 
-Le bloc de contenu des réunions à venir s'affiche:
+Le bloc de contenu des rencontres à venir s'affiche :
 
-* une liste des réunions à venir : les réunions entrantes publiées et visibles apparaissent comme une liste.
-* une carte : les réunions à venir sont affichées sous forme d'épingles sur la carte quand elles ont une adresse.
-* un calendrier : le calendrier affiche en gris la date courante et en couleur secondaire la date de la prochaine réunion du mois.
-* un lien pour voir toutes les réunions: ce lien redirige vers la page de la réunion de l'instance, également accessible via le bouton "Réunions" dans l'en-tête.
+* une liste des rencontres à venir : les rencontres à venir publiées et visibles apparaissent comme en liste.
+* une carte : les rencontres à venir sont affichées sous forme d'épingles sur la carte quand elles ont une adresse.
+* un calendrier : le calendrier affiche en gris la date du jour et en couleur secondaire la date de la prochaine rencontre du mois.
+* un lien pour voir toutes les rencontres : ce lien redirige vers la page de la rencontre de l'instance, également accessible via le bouton "Rencontres" dans l'en-tête.
 
 image::settings/homepage_upcoming_meetings.png[Upcoming meetings in Homepage content block]
 
 === Dernière activité
 
-Le dernier bloc de contenu d'activité affiche une liste des contenus publiés par les participants et les administrateurs au cours des derniers jours.
-Les participants peuvent voir :
+Le dernier bloc de contenu d'activité affiche une liste des contenus publiés par les participant·e·x·s et les administrateur·ices au cours des derniers jours.
+Les participant·e·x·s peuvent voir :
 
 * la date de publication
 * le titre du contenu
-* le type de contenu : commentaire, réunion, proposition, blog post, etc.
-* l'espace ou le contenu où il a été publié
-* l'utilisateur qui l'a publié
+* le type de contenu : commentaire, rencontre, proposition, blog post, etc.
+* l'endroit de publication de l'espace ou du contenu
+* l'utilisateur·ice à l'origine de la publication
 
 image::settings/homepage_last_activity.png[Last activity in Homepage content block]
 
 === Processus mis en avant
 
-Le bloc de contenu des processus mis en évidence affiche une grille de processus participatifs sur la page d'accueil.
+Le bloc de contenu des processus mis en avant affiche une grille de processus participatifs sur la page d'accueil.
 Vous pouvez configurer le nombre maximum de processus à afficher en cliquant sur le bouton "Modifier" du bloc de contenu (6, 9 ou 10).
 
 image::settings/homepage_highlighted_processes.png[Highlighted processes in Homepage content block]
 
-=== Assemblées en surbrillance
+=== Assemblées mises en avant
 
-Le bloc de contenu des assemblages en surbrillance affiche une grille d'assemblages sur la page d'accueil.
-Vous pouvez configurer le nombre maximum d'assemblages à afficher en cliquant sur le bouton "Éditer" sur le bloc de contenu (6, 9 ou 10).
+Le bloc de contenu des assemblées mises en avant affiche une grille d'assemblées sur la page d'accueil.
+Vous pouvez configurer le nombre maximum d'assemblées à afficher en cliquant sur le bouton "Modifier" sur le bloc de contenu (6, 9 ou 10).
 
 image::settings/homepage_highlighted_assemblies.png[Highlighted assemblies in Homepage content block]
 
 === Conférences mises en avant
 
-Le bloc de contenu des conférences en surbrillance affiche une grille de conférences sur la page d'accueil.
+Le bloc de contenu des conférences mises en avant affiche une grille de conférences sur la page d'accueil.
 Vous pouvez configurer le nombre maximum de conférences à afficher en cliquant sur le bouton « Modifier » sur le bloc de contenu (6, 9 ou 10).
 
 image::settings/homepage_highlighted_conferences.png[Highlighted conferences in Homepage content block]
 
 === Initiatives mises en avant
 
-Le bloc de contenu des processus mis en évidence affiche une grille de processus participatifs sur la page d'accueil.
+Le bloc de contenu des processus mis en avant affiche une grille de processus participatifs sur la page d'accueil.
 Vous pouvez configurer le nombre maximum de processus à afficher en cliquant sur le bouton "Modifier" du bloc de contenu (6, 9 ou 10).
-Vous pouvez également choisir si vous voulez afficher les initiatives par les moins ou les plus récentes.
+Vous pouvez également choisir d'afficher les initiatives de la plus ancienne à la plus récente.
 
 image::settings/homepage_highlighted_initiatives.png[Highlighted initiatives in Homepage content block]
 
 === Statistiques de l'organisation
 
-The organization statistics content block displays statistics about the participation on your instance, such as the number of
-participants, proposals, meetings, etc.
+Le bloc de contenu des statistiques de l'organisation affiche les statistiques à propos de la participation à votre instance, telle que le nombre de participant·e·x·s, propositions, rencontres, etc.
 
 image::settings/homepage_organization_statistics.png[Organizations statistics in Homepage content block]
 
-=== Mesures de l'organisation
+=== Métriques de l'organisation
 
 Le bloc de contenu des métriques de l'organisation affiche l'évolution de la participation sur votre instance.
 
-NOTE: Vous recherchez comment activer cette fonctionnalité techniquement ? Allez sur xref:develop:metrics.adoc[Metrics in Developers guide]
+NOTE: Vous recherchez comment activer cette fonctionnalité techniquement ? Allez sur xref:develop:metrics.adoc[Guide des métriques]
 
 image::settings/homepage_organization_metrics.png[Organization metrics in Homepage content block]
 
@@ -146,16 +144,16 @@ Voici quelques exemples de la façon dont certaines organisations personnalisent
 
 image::settings/homepage_html_block_barcelona.png[HTML block in Homepage content block Barcelona example]
 
-Page d'accueil bloc HTML de la plate-forme de la ville de Barcelone en Espagne (www.decidim.barcelona).
+Page d'accueil bloc HTML de la plateforme de la ville de Barcelone en Espagne (www.decidim.barcelona).
 
 image::settings/homepage_html_block_nyc.png[HTML block in Homepage content block NYC example]
 
-Page d'accueil bloc HTML de la plate-forme de New York City aux États-Unis (www.participate.nyc.gov).
+Page d'accueil bloc HTML de la plateforme de New York City aux États-Unis (www.participate.nyc.gov).
 
 image::settings/homepage_html_block_kakogawa.png[HTML block in Homepage content block Kakogawa example]
 
-Page d'accueil bloc HTML de la plate-forme de la ville de Kakogawa au Japon (kakogawa.diycities.jp).
+Page d'accueil bloc HTML de la plateforme de la ville de Kakogawa au Japon (kakogawa.diycities.jp).
 
 image::settings/homepage_html_block_lausanne.png[HTML block in Homepage content block Lausanne example]
 
-Page d'accueil bloc HTML de la plate-forme de la ville de Lausanne en Suisse (participer.lausanne.ch).
+Page d'accueil bloc HTML de la plateforme de la ville de Lausanne en Suisse (participer.lausanne.ch).
