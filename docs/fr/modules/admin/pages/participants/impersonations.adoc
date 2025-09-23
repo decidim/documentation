@@ -1,11 +1,11 @@
-= Identités des participants
+= Identités des participant·e·x·s
 
 == En bref
 
 Parfois, les gens n'ont pas le temps de créer un compte ou n'ont pas la connaissance ou la capacité d'utiliser des outils technologiques.
 Les usurpations permettent aux administrateurs et aux gestionnaires de participants de participer de toute façon.
 
-NOTE: Dans le code et l'interface utilisateur, l'*personnification* et les *Participants gérés* sont les mêmes choses.
+NOTE: Dans le code et l'interface utilisateur·ice, *Identification* et les *Gestion des participant·e·x·s* sont les mêmes choses.
 
 == Configuration
 
@@ -35,7 +35,7 @@ image::participants/participants_impersonations_backend_list_button.png[Administ
 
 Vous pouvez trouver tous les participants de la plateforme, avec:
 
-* *Nom*: nom du participant.
+* *Nom*: nom de lae participant·e·x.
 * *Statut* : si le participant est impersonné/géré ou non.
 
 Vous pouvez filtrer cette liste en cliquant sur le bouton "Filtre" et rechercher les participants par leur nom.
