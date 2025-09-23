@@ -39,24 +39,24 @@ image::settings/admin_appearance_homepage_appearance.png[Decidim Admin Appearanc
 
 NOTE: Pour comprendre comment activer les différents blocs de la page d'accueil, aller dans l'article xref:admin:settings/homepage.adoc[page d'accueil].
 
-=== Contenu de bannière mis en évidence
+=== Bannière de contenu mis en avant
 
-Cette section permet d'activer et de donner une description et un bouton CTA à une bannière, par exemple pour mettre en évidence un espace spécifique
+Cette section permet d'activer et de donner une description et un bouton CTA à une bannière, par exemple pour mettre en avant un espace spécifique
 sur votre instance, pour encourager les utilisateur·ices à créer un compte ou à s'inscrire à une réunion. Vous pouvez le faire évoluer en fonction de l'actualité
 de votre instance, et le désactiver quand ce n'est pas nécessaire.
 
-NOTE: Pour apparaître sur la page d'accueil, le bloc de contenu "Contenu de bannière mis en évidence" doit être activé sur xref:admin:settings/homepage.adoc[page d'accueil].
+NOTE: Pour apparaître sur la page d'accueil, le bloc de contenu "Bannière de contenu mis en avant" doit être activé sur xref:admin:settings/homepage.adoc[page d'accueil].
 
 image::settings/admin_appearance_highlighted_banner.png[Decidim Admin Appearance edit Highlighted content banner toggle]
 
-.Formulaire de bascule pour modifier le contenu de bannière mis en évidence
+.Formulaire dépliant pour modifier la bannière de contenu mis en avant
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
-|Afficher le contenu de la bannière mis en évidence
+|Afficher la bannière de contenu mis en avant
 |Case à cocher
-|Lorsque cette case est cochée, le contenu mis en évidence de la bannière apparaît sur la page d'accueil si le bloc de contenu "Contenu de bannière mis en évidence" est également activé.
+|Lorsque cette case est cochée, le contenu mis en évidence de la bannière apparaît sur la page d'accueil si le bloc de contenu "Bannière de contenu mis en avant" est également activé.
 
 |Titre
 |Obligatoire
@@ -92,7 +92,7 @@ NOTE: Cette bannière n'est configurée que sur cette page et n'a pas besoin d'�
 
 image::settings/admin_appearance_omnipresent_banner.png[Decidim Admin Appearance edit omnipresent banner toggle]
 
-.Formulaire de bascule pour modifier le contenu de bannière mis en évidence
+.Formulaire dépliant pour modifier la bannière de contenu mis en avant
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -169,6 +169,5 @@ image::settings/appearance_colors.png[Decidim layout appearance colors example]
 
 NOTE: Ce champ n'est pas visible. Pour plus d'informations sur la façon de l'activer, consulter la documentation xref:customize:styles.adoc[Styles].
 
-Ce champ permet d'ajouter du code à la tête HTML. The most common use is to integrate third-party services that require
-some extra JavaScript or CSS. De plus, vous pouvez l'utiliser pour ajouter des balises méta supplémentaires au HTML.
+Ce champ permet d'ajouter du code à la balise <head> en HTML. Le plus commun est d'intégrer un service tiers qui nécessite du JavaScript ou du CSS supplémentaire. De plus, vous pouvez l'utiliser pour ajouter des tags méta supplémentaires au HTML.
 Notez que ceci n'est rendu que dans les pages publiques, pas dans l'administration.
