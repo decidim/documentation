@@ -1,32 +1,32 @@
-= Participants
+= Participant·e·x·s
 
 == En bref
 
-Les participants sont tous des personnes ayant un compte sur la plateforme, qu'ils aient confirmé leur adresse e-mail ou non.
-Dans cette page, un administrateur peut :
+Les participant·e·x·s sont toutes les personnes ayant un compte sur la plateforme, avec une adresse e-mail confirmée ou non.
+Dans cette page, unx administrateur·ice peut :
 
-* Bloquer un participant, par exemple parce qu'il spamme ou agit contre les conditions d'utilisation
-* Contactez un participant avec des messages privés Decidim
-* Officialiser un participant
-* Afficher un e-mail de l'utilisateur
+* Bloquer unx participant·e·x, par exemple parce qu'iel spamme ou agit contre les conditions d'utilisation
+* Contacter unx participant·e·x avec des messages privés Decidim
+* Officialiser unx participant·e·x
+* Afficher l'e-mail d'unx participant·e·x
 
-image:participants/participants_participants.png[Liste des participants]
+image:participants/participants_participants.png[Liste des participant·e·x·s]
 
 == Configuration
 
-=== Gérer les participants
+=== Gérer les participant·e·x·s
 
-Vous pouvez trouver tous les participants ici, avec:
+Vous pouvez trouver touxtes les participant·e·x·s ici, avec :
 
-* *Nom*: nom du participant, avec un lien vers son profil.
-* *Surnom*: surnom du participant, avec un lien vers son profil.
-* *Créé à* : date de création du compte participant.
-* *Statut* : si le participant est officialisé ou non.
-* *Badge* : le badge d'officialisation, donné lors de l'officialisation du participant.
-* *Rapports* : nombre de rapports par différents utilisateurs.
+* *Nom*: nom de lae participant·e·x, avec un lien vers son profil.
+* *Surnom*: surnom de lae participant·e·x, avec un lien vers son profil.
+* *Créé à* : date de création du compte de lae participant·e·x.
+* *Statut* : si lae participant·e·x est officialisé·e·x ou non.
+* *Badge* : le badge d'officialisation, donné lors de l'officialisation de lae participant·e·x.
+* *Rapports* : nombre de rapports par différents utilisateur·ices.
 
 Il est possible de filtrer et trier cette liste en cliquant sur "Filtrer" et sur les en-têtes des colonnes.
-Vous pouvez également rechercher des participants par courriel, nom ou surnom dans la barre de recherche.
+Vous pouvez également rechercher des participant·e·x·s par adresse mail, nom ou surnom dans la barre de recherche.
 
 === Actions
 
@@ -36,61 +36,60 @@ Vous pouvez également rechercher des participants par courriel, nom ou surnom d
 |Icône |Nom |Définition |Condition
 
 |image:icons/action_block.png[Bloquer l'utilisateur]
-|Bloquer / Débloquer l'utilisateur
-|Bloquer ou débloquer un participant. Voir xref:admin:moderations/reported_users.adoc[Utilisateurs signalés] pour plus d'informations.
-|L'action de blocage est disponible pour les utilisateurs non bloqués, et vice versa.
+|Bloquer / Débloquer l'utilisateur·ice
+|Bloquer ou débloquer unx participant·e·x. Voir xref:admin:moderations/reported_users.adoc[Utilisateur·ices signalé·e·x·s] pour plus d'informations.
+|L'action Bloquer est disponible pour les utilisateur·ices non bloqué·e·x·s, et vice versa.
 
 |image:icons/action_show_email.png[Afficher l'e-mail]
 |xref:_show_email_address[Afficher l'adresse e-mail]
-|Afficher l'adresse e-mail d'un participant.
+|Afficher l'adresse e-mail d'unx participant·e·x.
 |Disponible en permanence.
 
 |image:icons/action_contact.png[Contact]
 |xref:_contact[Contact]
-|Pour contacter un participant par un message privé.
+|Pour contacter unx participant·e·x avec un message privé.
 |Disponible en permanence.
 
 |image:icons/action_verify.png[Officialize]
-|xref:_officialiser[Officialize]
-|Reconnaître qu'un participant a un statut spécial, comme le maire, le président de l'association, etc.
-|Disponible pour les participants non officialisés.
+|xref:_officialiser[Officialiser]
+|Pour reconnaître le statut spécial d'unx participant·e·x, comme lae maire, lae président·e·x de l'association, etc.
+|Disponible pour les participant·e·x·s non officialisé·e·x·s.
 
-|image:icons/action_reofficialize.png[Reoffficialize]
-|De nouveau validé
+|image:icons/action_reofficialize.png[Reoffficialiser]
+|Réofficialiser
 |Pour changer le badge d'officialisation.
-|Disponible pour les participants officialisés.
+|Disponible pour les participant·e·x·s officialisé·e·x·s.
 
-|image:icons/action_delete.png[Unofficialize]
-|Dénofficialiser
+|image:icons/action_delete.png[Inofficialiser]
+|Inofficialiser
 |Pour révoquer une officialisation.
-|Disponible pour les participants officialisés.
+|Disponible pour les participant·e·x·s officialisé·e·x·s.
 |===
 
 === Afficher l'adresse e-mail
 
-Parfois, les administrateurs doivent trouver une adresse e-mail utilisateur. Ils peuvent cliquer sur l'option "Afficher l'adresse de courriel".
-Un modal apparaît, avec le nom du participant, et un champ caché.
+Parfois, les administrateur·ices doivent trouver une adresse e-mail utilisateur·ice. Iels peuvent cliquer sur l'option "Afficher l'adresse e-mail".
+Un modal apparaît, avec le nom de lae participant·e·x, et un champ caché.
 
-image:participants/participants_show_email.png[Modal dans l'email]
+image:participants/participants_show_email.png[Modal affiché dans l'email]
 
 Pour afficher l'adresse e-mail, vous devez cliquer sur le bouton "Afficher".
 
-image:participants/participants_showed_email.png[Modal après l'email est affiché]
+image:participants/participants_showed_email.png[Modal après que l'email est affiché]
 
 Pour la transparence de l'administration, cette action est enregistrée dans les journaux d'activités.
 
-image:participants/participants_showed_email_admin_log.png[Journal des activités de l'administrateur pour afficher l'e-mail]
+image:participants/participants_showed_email_admin_log.png[Journal des activités de l'administration pour afficher l'e-mail]
 
 === Contacter
 
-Pour contacter les participants directement via la messagerie privée de la plateforme, cliquez sur l'icône "Contact".
+Pour contacter les participant·e·x·s directement via la messagerie privée de la plateforme, cliquer sur l'icône "Contact".
 
 image::participants/participants_conversation.png[Conversation with a participant]
 
 === Officialiser
 
-Cette option est utile pour reconnaître qu'un participant a un statut spécifique sur la plateforme
-. For instance, if someone is the city mayor, a city councillor, the
-president of an association, etc.
+Cette option est utile pour reconnaître si unx participant·e·x a un statut spécifique sur la plateforme
+. Par exemple, si une personne est maire ou conseiller·e·x de la ville, président·e·x d'une association, etc.
 
-image:participants/participants_officialize.png[Officialiser un participant]
+image:participants/participants_officialize.png[Officialiser unx participant·e·x]
