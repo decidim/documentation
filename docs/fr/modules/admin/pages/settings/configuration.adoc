@@ -10,7 +10,7 @@ générales, les langues disponibles, etc.
 
 == Configuration
 
-=== Edit organization
+=== Modifier l'organisation
 
 image::settings/admin_configuration.png[Decidim Admin Configuration]
 
@@ -20,18 +20,18 @@ image::settings/admin_configuration.png[Decidim Admin Configuration]
 
 |Nom
 |Obligatoire
-|Le nom de la plate-forme.
-|Visible dans le titre de la plate-forme, les e-mails, les notifications, etc.
+|Le nom de la plateforme.
+|Visible dans le titre de la plateforme, les e-mails, les notifications, etc.
 
 |Réseaux sociaux
 |Obligatoire
-|Gestionnaires sociaux pour différents réseaux sociaux. Dans le champ, ajoutez seulement le slug nécessaire au lieu de l'URL entière.
-|Visible dans le pied de page, dans chaque page.
+|Gestionnaires sociaux pour différents réseaux sociaux. Dans le champ, ajouter seulement l'identifiant URL nécessaire au lieu de l'URL en entier.
+|Visible dans le pied de page, à chaque page.
 
 |Langue par défaut
 |Obligatoire
-|Langue par défaut pour la plateforme. Si vous voulez activer plus de langues, demandez à votre administrateur technique.
-|Si plusieurs langues, les participants peuvent choisir leur langue préférée dans les paramètres de leur compte.
+|Langue par défaut pour la plateforme. Si vous voulez activer plus de langues, demandez à votre administrateur·ice technique.
+|S'il y a plusieurs langues, les participant·e·x·s peuvent choisir leur langue préférée dans les paramètres de leur compte.
 
 |Fuseau horaire
 |Obligatoire
@@ -45,52 +45,52 @@ image::settings/admin_configuration.png[Decidim Admin Configuration]
 
 |Activer les badges
 |Case à cocher
-|Que vous vouliez ou non que vos participants aient des badges comme mécanisme de gamification lors de leur participation.
-|Si activé, les badges sont visibles dans les profils des participants et la participation déclenche la réalisation du niveau des badges.
+|Si vous souhaitez que vos participant·e·x·s aient des badges comme mécanisme de ludification lors de leur participation.
+|Si activé, les badges sont visibles dans les profils des participant·e·x·s et la participation déclenche les niveaux de badges.
 
-|Activer les groupes d'utilisateurs
+|Activer les groupes d'utlisateur·ices
 |Case à cocher
-|Que vous vouliez ou non que vos participants aient la possibilité de créer xref:participants/groups.adoc[groupes d'utilisateurs].
-|Si activé, les groupes sont visibles dans les profils et comptes des participants et ils peuvent créer des groupes d'utilisateurs.
+|Si vous souhaitez que vos participant·e·x·s aient la possibilité de créer xref:participants/groups.adoc[groupes d'utilisateur·ices].
+|Si activé, les groupes sont visibles dans les profils et comptes des participant·e·x·s et peuvent créer des groupes d'utilisateur·ices.
 
 |Activer les filtres d'espace participatif
 |Case à cocher
 |Si vous voulez ou non afficher les filtres dans les pages d'index des espaces participatifs.
-|Si activé, les participants peuvent filtrer les espaces, comme les assemblées, par différents filtres sur l'index de l'espace.
+|Si activé, les participant·e·x·s peuvent filtrer les espaces, comme les assemblées, par différents filtres sur l'index de l'espace.
 
 |Longueur maximale des commentaires
 |Obligatoire
 |Si vous voulez ou non limiter le nombre de caractères dans les commentaires. Laisser 0 pour la valeur par défaut (1000).
-|Limite visible si vous activez les commentaires dans un composant participatif.
+|Limite visible si vous activez les commentaires dans une fonctionnalité participative.
 
-|Activer l'éditeur de texte avancé pour les participants
+|Activer l'éditeur de texte avancé pour les participant·e·x·s
 |Case à cocher
-|Si vous voulez ou non permettre aux participants d'avoir un https://fr.wikipedia.org/wiki/WYSIWYG[éditeur WYSIWYG].
-|Dans certaines zones de texte, comme la création de propositions, les participants peuvent insérer des balises HTML en utilisant l'éditeur de texte riche.
+|Si vous voulez ou non permettre aux participant·e·x·s d'avoir un https://fr.wikipedia.org/wiki/WYSIWYG[éditeur WYSIWYG].
+|Dans certaines zones de texte, comme la création de propositions, les participant·e·x·s peuvent insérer des balises HTML en utilisant l'éditeur de texte riche.
 
 |Envoyer un mail de bienvenue
 |Case à cocher
-|Si vous voulez ou non que les participants reçoivent une notification lorsqu'ils créent leur compte pour la première fois.
-|Si vous activez simplement ceci, les participants reçoivent la notification par défaut.
+|Si vous voulez ou non que les participant·e·x·s reçoivent une notification lors de la création de leur compte pour la première fois.
+|Si activé, les participant·e·x·s reçoivent la notification par défaut.
 
 |Personnaliser le mail de bienvenue
 |Case à cocher
-|Vous permet de personnaliser la notification envoyée aux participants lorsqu'ils créent un compte.
+|Vous permet de personnaliser la notification envoyée aux participant·e·x·s lors de la création de leur compte.
 |Si activé, vous pouvez personnaliser la notification de bienvenue dans les champs ci-dessous.
 
 |Objet du mail de bienvenue
 |Obligatoire
-|Vous permet de personnaliser le sujet de la notification de bienvenue. Vous pouvez ajouter des variables, comme {{name}} ou {{organization}}.
-|Champ visible si vous activez la case à cocher "Personnaliser la notification de bienvenue".
+|Vous permet de personnaliser le sujet de la notification de bienvenue. Vous pouvez ajouter des variables, comme {{nom}} ou {{organisation}}.
+|Champ visible si vous activez la case "Personnaliser la notification de bienvenue".
 
 |Corps du mail de bienvenue
 |Obligatoire
-|Vous permet de personnaliser le corps de notification de bienvenue. Vous pouvez ajouter des variables, comme {{name}} ou {{organization}}.
-|Champ visible si vous activez la case à cocher "Personnaliser la notification de bienvenue".
+|Vous permet de personnaliser le corps de notification de bienvenue. Vous pouvez ajouter des variables, comme {{nom}} ou {{organisation}}.
+|Champ visible si vous activez la case "Personnaliser la notification de bienvenue".
 
-|Corps des conditions de service de l'administrateur
+|Corps des conditions de service de l'administrateur·ice
 |Obligatoire
-|Quel message un administrateur voit quand il accède pour la première fois au panneau d'administration.
+|Le message visible par unx administrateur·ice lorsqu'il accède pour la première fois au panneau d'administration.
 |Message affiché lorsqu'un administrateur accède pour la première fois au panneau d'administration.
 |===
 
@@ -105,6 +105,6 @@ image::settings/settings_configuration_social.png[Social networks configuration 
 
 === Notification de bienvenue
 
-Les participants reçoivent une notification de bienvenue lorsqu'ils finalisent la création de leur compte, sur leur panneau de notification et par courriel.
+Les participant·e·x·s reçoivent une notification de bienvenue lorsqu'iels finalisent la création de leur compte, sur leur panneau de notification et par email.
 
 image::settings/settings_configuration_welcome.png[Welcome notification configuration in Decidim]
