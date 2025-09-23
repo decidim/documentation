@@ -2,10 +2,9 @@
 
 include::partial$deprecated.adoc[]
 
-Les zones sont tous les secteurs qu'une organisation peut avoir.
+Les Périmètres d'assemblée sont tous les secteurs qu'une organisation peut avoir.
 
-Areas are pretty similar to xref:admin:settings/scopes.adoc[scopes], meaning that they're a way of allowing a
-better navigation and filtering in the spaces and components.
+Les Périmètres d'assemblée sont similaires aux xref:admin:settings/scopes.adoc[escteurs], c'est à dire qu'ils sont un moyen de permettre une meilleure navigation et un filtrage dans les espaces participatifs et les fonctionnalités.
 
-Vous pouvez lire plus d'informations sur l'histoire des Zones dans
-ce https://github.com/decidim/decidim/issues/3540#issuecomment-427324532[Commentaire GitHub].
+Vous pouvez lire plus d'informations sur l'historique des Périmètres d'assemblée dans
+ce https://github.com/decidim/decidim/issues/3540#issuecomment-427324532[Commentaires GitHub].
