@@ -12,19 +12,18 @@ NOTE: Dans le code et l'interface utilisateur·ice, *Identification* et les *Ges
 === Activer / désactiver les identifications
 
 Les usurpations d'identité ne sont disponibles que si au moins une autorisation est activée pour l'organisation.
-Indeed, they allow the system to search through a Verification system for an already existing participant, and to create
-a participant without the need for an email address.
+En effet, elles permettent de rechercher dans le Système de vérification des participant·e·x·s déjà existant·e·x·s et de créer unx participant·e·x sans avoir besoin d'une adresse e-mail.
 
-Pour activer une autorisation, vous devez avoir accès à xref:configure:system.adoc[System panel] ou demander à votre implémentateur d'instance.
+Pour activer une autorisation, vous devez avoir accès à xref:configure:system.adoc[Panneau de système] ou demander à votre fournisseur·euse d'instance.
 
 image::participants/participants_impersonations_backend_list_no_auth.png[Administrators Impersonations panel with no authorizations]
 
-Les différentes autorisations vous donnent différentes possibilités :
+Les autorisations vous donnent différentes possibilités :
 
-* Afficher uniquement les journaux d'identité : lorsque les documents d'identité, le code par lettre postale, et/ou le recensement de l'organisation sont activés
-* Identifier les utilisateurs existants et les nouveaux utilisateurs : la vérification directe est activée, comme l’autorisation d’exemple ou d’autres autorisations directes personnalisées.
+* Afficher uniquement les documents d'identité : lorsque les documents d'identité, le code par lettre postale, et/ou le recensement de l'organisation sont activés
+* Identifier les utilisateur·ices existant·e·x·s et les nouvellaux utilisateur·ices : la vérification directe est activée, comme l’autorisation d’exemple ou d’autres autorisations directes personnalisées.
 
-NOTE: Vous pouvez en apprendre plus sur la façon de programmer votre autorisation de formulaire dans
+NOTE: Vous pouvez en apprendre plus sur la façon de programmer votre formulaire d'autorisation dans
 https://github.com/decidim/decidim/blob/develop/decidim-verifications/README.md[README] Decidim-verification README].
 
 image::participants/participants_impersonations_backend_list_logs.png[Administrators Impersonations panel with view log]
@@ -33,12 +32,12 @@ image::participants/participants_impersonations_backend_list_button.png[Administ
 
 === Gérer les empreintes digitales
 
-Vous pouvez trouver tous les participants de la plateforme, avec:
+Vous pouvez trouver touxtes les participant·e·x·s de la plateforme, avec :
 
 * *Nom*: nom de lae participant·e·x.
-* *Statut* : si le participant est impersonné/géré ou non.
+* *Statut* : si le participant·e·x est identifié·e·x/géré·e·x ou non.
 
-Vous pouvez filtrer cette liste en cliquant sur le bouton "Filtre" et rechercher les participants par leur nom.
+Vous pouvez filtrer cette liste en cliquant sur le bouton "Filtre" et rechercher les participant·e·x·s par leur nom.
 
 === Actions
 
@@ -54,29 +53,29 @@ Vous pouvez filtrer cette liste en cliquant sur le bouton "Filtre" et rechercher
 
 |image:icons/action_clock.png[Afficher l'icône des logs]
 |Consultez les journaux d'activité
-|Voir l'historique de l'identité du participant.
+|Voir l'historique de l'identité de lae participant·e·x.
 |Disponible en permanence.
 
 |image:icons/action_promote.png[Promouvoir l'icône]
 |Transformer
-|Voir l'historique de l'identité du participant.
-|Disponible uniquement pour les utilisateurs gérés.
+|Voir l'historique de l'identité de lae participant·e·x.
+|Disponible uniquement pour les utilisateur·ices géré·e·x·s.
 |===
 
-=== Identifier un participant
+=== Identifier unx participant·e·x
 
-Cliquez sur le bouton "Gérer les nouveaux participants". Vous pouvez ensuite saisir les données personnelles pour vérifier la vérification :
+Cliquer sur le bouton "Gérer les nouvellaux participant·e·x·s". Vous pouvez ensuite saisir les données personnelles pour réviser la vérification :
 
 image::participants/participants_impersonations_form.png[Administrators Impersonations form]
 
-Une fois ces données vérifiées par le système, il ouvre une session pour le participant pendant 30 minutes.
-Une bannière en haut de la page rappelle à l'administrateur qu'il est en train d'usurper l'identité du participant et le temps restant.
+Une fois ces données vérifiées par le système, une session pour lae participant·e·x s'ouvre pendant 30 minutes.
+Une bannière en haut de la page rappelle à l'administrateur·ice qu'iel est en train d'usurper l'identité de lae participant·e·x le temps restant.
 
 image::participants/participants_impersonations_user.png[Impersonated user session]
 
-=== Promouvoir un participant géré
+=== Promouvoir unx participant·e·x géré·e·x
 
-Les administrateurs peuvent promouvoir les participants gérés, les inviter à créer un compte sur la plateforme.
-Cliquez sur l'icône "Promouvoir" pour pouvoir ajouter une adresse e-mail au participant et l'inviter par courriel.
+Les administrateur·ices peuvent promouvoir les participant·e·x·s géré·e·x·s, les inviter à créer un compte sur la plateforme.
+Cliquer sur l'icône "Promouvoir" pour pouvoir ajouter une adresse e-mail au participant·e·x et l'inviter par mail.
 
 image::participants/participants_impersonations_promotion.png[Administrators promotion Impersonations]
