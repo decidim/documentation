@@ -10,21 +10,21 @@ avant la fin de la période de collecte.
 
 === Répondre à une initiative
 
-Cliquez sur l’icône « Répondre » dans la liste des initiatives pour répondre à une initiative.
+Cliquer sur « Répondre » dans la liste des initiatives pour répondre à une initiative.
 
 image::spaces/initiatives/initiative_backend_answer.png[Initiative backend answer]
 
-Sur cette page, vous pouvez voir le titre de l'initiative, la description, la date de création, l'état et le numéro de la signature, ainsi que les champs de la réponse
+Sur cette page, est affiché le titre de l'initiative, la description, la date de création, l'état et le nombre de signatures, ainsi que les champs de réponse.
 .
 
-.Formulaire de réponse à l'initiative
+.Formulaire réponse à l'initiative
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Répondre
 |Facultatif
-|Contenu de la réponse de l'initiative, qui est visible sur la page d'initiative.
+|Contenu de la réponse de l'initiative visible sur la page d'initiative.
 
 |URL de la réponse
 |Facultatif
@@ -43,9 +43,9 @@ image::spaces/initiatives/initiative_frontend_answer.png[Initiative frontend ans
 
 === Accepter ou rejeter
 
-Afin d'opérer le changement sur la liste des initiatives, l'administrateur doit aller sur la page d'édition de l'initiative et
-cliquez sur le bouton correspondant à la situation de l'initiative.
-Une fois qu'une période de collecte d'initiative publiée est terminée, il y a deux options :
+Afin d'opérer le changement sur la liste des initiatives, l'administrateur·ice doit aller sur la page de modification de l'initiative et
+cliquer sur le bouton correspondant à la situation de l'initiative.
+Une fois la période de collecte d'initiative publiée est terminée, il y a deux options :
 
-. L'initiative a reçu suffisamment de signatures : Cliquez sur le bouton "Accepter l'initiative"
-. L'initiative n'a pas assez de signatures: Cliquez sur le bouton "Rejeter l'initiative"
+. L'initiative a reçu suffisamment de signatures : Cliquer sur le bouton "Accepter l'initiative"
+. L'initiative n'a pas assez de signatures : Cliquer sur le bouton "Rejeter l'initiative"
