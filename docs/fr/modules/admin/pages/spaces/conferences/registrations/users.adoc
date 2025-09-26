@@ -1,24 +1,24 @@
-= Inscriptions d'utilisateurs
+= Inscription d'utilisateur·ices
 
 == En bref
 
-Une fois les participants enregistrés, les administrateurs peuvent avoir accès à leurs informations d'inscription.
-Il permet aux organisateurs de la conférence de gérer efficacement les participants à la conférence, à ses voies, etc.
+Une fois les participant·e·x·s enregistré·e·x·s, les administrateur·ices peuvent avoir accès à leurs informations d'inscription.
+Il permet aux organisateur·eices de la conférence de gérer efficacement les participant·e·x·s à la conférence, son fil, etc.
 
-Par exemple, il peut suivre ce flux :
+Par exemple, le flux peut être comme suit :
 
-. Un participant s'inscrit à la conférence
-. Ils reçoivent une notification d'inscription en attente
-. Ils reçoivent un email d'inscription en attente
-. Un administrateur vérifie et confirme l'enregistrement avec le bouton image:icons/action_activate.png[Confirm]
-. Le participant reçoit une notification d'inscription confirmée
-. Ils reçoivent un email d’inscription confirmé avec un fichier .ics du calendrier
+. Unx participant·e·x s'inscrit à la conférence
+. Iel reçoit une notification d'inscription en attente
+. Iel reçoit un email d'inscription en attente
+. Unx administrateur·ice vérifie et confirme l'inscription avec le bouton image:icons/action_activate.png[Confirmer]
+. Lae participant·e·x reçoit une notification d'inscription confirmée
+. Iel reçoit un email d’inscription confirmé avec un calendrier au format .ics
 
 == Configuration
 
 === Gérer les inscriptions
 
-Pour accéder à la configuration des inscriptions d'utilisateur, cliquez dans le panneau de navigation secondaire de l'élément "Inscriptions d'utilisateur".
+Pour accéder à la configuration des inscriptions d'utilisateur·ice, cliquer dans le panneau de navigation secondaire sur "Inscriptions d'utilisateur·ices".
 
 image::spaces/conferences/user_registrations.png[Conferences user registrations (backend)]
 
@@ -31,20 +31,20 @@ image::spaces/conferences/user_registrations.png[Conferences user registrations 
 
 |image:icons/action_activate.png[Confirmer l'icône d'inscription]
 |Confirmer votre vote
-|Pour confirmer l'inscription de l'utilisateur
+|Pour confirmer l'inscription de l'utilisateur·ice
 |===
 
 === Confirmer une inscription
 
 Les confirmations d'inscription peuvent être utilisées avant ou après la conférence.
-Ils peuvent permettre aux administrateurs de confirmer aux participants que leur inscription a été prise en compte, ou
-qu'ils ont effectivement assisté à la conférence après qu'elle se soit produite.
+Elles peuvent permettre aux administrateur·ices de confirmer aux participant·e·x·s que leur inscription a été prise en compte, ou
+qu'iels ont effectivement assisté à la conférence après qu'elle se soit produite.
 
-La confirmation des inscriptions permet aux administrateurs d'envoyer un
-xref:admin:spaces/conferences/registrations/certificates.adoc[**Certificats de présence**] après la conférence à
-tous les participants confirmés à la conférence.
+La confirmation des inscriptions permet aux administrateur·ices d'envoyer une
+xref:admin:spaces/conferences/registrations/certificates.adoc[**Attestation de présence**] après la conférence à
+touxtes les participant·e·x·s confirmé·e·x·s de la conférence.
 
 === Exporter les inscriptions
 
-Il est possible d'exporter les enregistrements en plusieurs formats : .CSV, .JSON et .XSLX.
-Le fichier avec tous les participants enregistrés est téléchargé directement sur le périphérique administrateur.
+Il est possible d'exporter les inscriptions en plusieurs formats : .CSV, .JSON et .XSLX.
+Le fichier avec touxtes les participant·e·x·s enregistré·e·x·s est téléchargé directement sur le périphérique administrateur.
