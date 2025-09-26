@@ -1,18 +1,17 @@
-= Liens média
+= Liens médias
 
 == En bref
 
-Les conférences peuvent avoir une section appelée "Liens médias" qui montre une liste de fichiers multimédias et les liens
-qui sont associés à la conférence. Il s'affiche dans une page spécifique de la conférence :
+Les conférences peuvent avoir une section appelée "Liens médias" qui montre une liste de fichiers et les liens associés à la conférence. Les liens médias s'affichent dans une page spécifique de la conférence :
 
-* Documents et images connexes de la section xref:admin:spaces/conferences/attachments.adoc[attachments]
-* Liens médiatiques à partir de la section des liens média.
+* Documents et images connexes de la section xref:admin:spaces/conferences/attachments.adoc[pièces jointes].
+* Liens à partir de la section des liens médias.
 
-image:espaces/conferences/media_links_frontend.png[Conférences liens média frontend]
+image:espaces/conferences/media_links_frontend.png[Gestion des liens médias de la conférence]
 
 === How to find it?
 
-Pour accéder à la configuration des liens média, cliquez dans le panneau de navigation secondaire de l'élément "Liens médias".
+Pour accéder à la configuration des liens média, cliquer dans le panneau de navigation secondaire sur "Liens médias".
 
 image::spaces/conferences/media_links_backend.png[Conferences media links]
 
@@ -27,7 +26,7 @@ image::spaces/conferences/media_links_backend.png[Conferences media links]
 
 |image:icons/action_edit.png[Modifier l'icône]
 |Editer
-|Éditer ce lien.
+|Modifier ce lien.
 
 |image:icons/action_delete.png[Supprimer l'icône]
 |Supprimez
@@ -40,7 +39,7 @@ Pour créer un nouveau lien média, cliquez sur le bouton « Nouveau média » e
 
 image::spaces/conferences/new_media_link.png[Create a new conferences media link]
 
-.Nouveau formulaire de lien média
+.Formulaire de nouveau lien média
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -59,5 +58,5 @@ image::spaces/conferences/new_media_link.png[Create a new conferences media link
 
 |Rang d'affichage
 |Facultatif
-|Quel ordre il a en relation avec les autres liens. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux liens, "Link a" avec le poids "10" et "Link b" avec le poids "0" puis "Link b" est d'abord lors de la commande.
+|La position en relation avec les autres liens. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux liens, "Line a" dele poids "10" et "Lien b" de poids "0" alors "Link b" apparait en premier dans laliste.
 |===
