@@ -1,21 +1,20 @@
-= Haut-parleurs
+= Conférencier·e·x·s
 
 == En bref
 
-Les orateurs sont les personnes qui parlent à la conférence. They can be linked to meetings, so participants can
-see who is going to speak in each item of the program.
+Les conférencier·e·x·s sont les personnes qui donnent la conférence. Iels peuvent être lié·e·x·s à des rencontres pour que les participant·e·x·s puisent être au courant des personne qui interviennent durant la conférence dans le preogramme.
 
 image::spaces/conferences/speakers_frontend.png[Conferences speakers frontend]
 
 == Configuration
 
-=== Gérer les orateurs
+=== Gérer les conférencier·e·x·s
 
-Pour accéder à la configuration des haut-parleurs, cliquez dans le panneau de navigation secondaire de l'élément "Haut-parleurs".
+Pour accéder à la configuration des conférencier·e·x·s, cliquer dans le panneau de navigation secondaire "Conférencier·e·x·s".
 
-image:espaces/conférences/haut-parleurs.png[conférenciers de conférences]
+image:espaces/conférences/haut-parleurs.png[conférencier·e·x·s]
 
-Vous pouvez rechercher des haut-parleurs grâce à la barre de recherche.
+Vous pouvez rechercher des conférencier·e·x·s grâce à la barre de recherche.
 
 === Actions
 
@@ -24,19 +23,19 @@ Vous pouvez rechercher des haut-parleurs grâce à la barre de recherche.
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_edit.png[Modifier l'icône du haut-parleur]
+|image:icons/action_edit.png[Modifier l'icône de lae conférencier·e·x]
 |Editer
-|Pour éditer ce haut-parleur.
+|Pour modifier lae conférencier·e·x·s.
 
-|image:icons/action_activate.png[Publier l'icône du haut-parleur]
+|image:icons/action_activate.png[Publier l'icône de lae conférencier·e·x]
 |Publier
-|Pour publier ce haut-parleur (lorsqu'il n'est pas publié)
+|Pour publier lae conférencier·e·x (si ce n'est pas déjà publié)
 
-|image:icons/action_unpublish.png[Dépublier l'icône du haut-parleur]
+|image:icons/action_unpublish.png[Dépublier l'icône de lae conférencier·e·x]
 |Dépublier
-|Dépublier ce haut-parleur (lorsqu'il est publié)
+|Supprimer lae conférencier·e·x·s (si c'est déjà publié)
 
-|image:icons/action_delete.png[Supprimer l'icône du haut-parleur]
+|image:icons/action_delete.png[Supprimer l'icône de lae conférencier·e·x]
 |Supprimez
 |Supprimer ce haut-parleur.
 |===
@@ -52,7 +51,7 @@ image::spaces/conferences/new_speaker.png[Conferences speakers]
 |===
 |Champ |Type |Description
 
-|Type de participant
+|Type de participant·e·x
 |Obligatoire
 |Que ce conférencier soit un participant ou un participant existant. Ont-ils déjà un compte créé sur la plateforme?
 
@@ -60,8 +59,8 @@ image::spaces/conferences/new_speaker.png[Conferences speakers]
 |Requis si c'est un non-participant.
 |Nom de l'orateur.
 
-|Utilisateur ou groupe
-|Requis si c'est un participant existant.
+|Utilisateur·ice ou groupe
+|Requis si c'est unx participant·e·x existant·e·x.
 |Tapez au moins trois caractères à rechercher.
 
 |Réunions connexes
