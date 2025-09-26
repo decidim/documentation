@@ -25,7 +25,7 @@ Vous pouvez rechercher des conférencier·e·x·s grâce à la barre de recherch
 
 |image:icons/action_edit.png[Modifier l'icône de lae conférencier·e·x]
 |Editer
-|Pour modifier lae conférencier·e·x·s.
+|Pour modifier lae conférencier·e·x.
 
 |image:icons/action_activate.png[Publier l'icône de lae conférencier·e·x]
 |Publier
@@ -37,57 +37,57 @@ Vous pouvez rechercher des conférencier·e·x·s grâce à la barre de recherch
 
 |image:icons/action_delete.png[Supprimer l'icône de lae conférencier·e·x]
 |Supprimez
-|Supprimer ce haut-parleur.
+|Supprimer lae conférencier·e·x.
 |===
 
-=== Créer un nouveau haut-parleur
+=== Ajouter unx conférencier·e·x
 
-Pour créer un nouveau haut-parleur, cliquez sur le bouton "Nouveau haut-parleur" en haut à droite de la page.
+Pour ajouter unx conférencier·e·x, cliquer sur "Ajouter conférencier·e·x" en haut à droite de la page.
 
 image::spaces/conferences/new_speaker.png[Conferences speakers]
 
-.Formulaire des nouveaux conférenciers
+.Formulaire d'ajout de conférencier·e·x
 [cols="20h,~,~"]
 |===
 |Champ |Type |Description
 
 |Type de participant·e·x
 |Obligatoire
-|Que ce conférencier soit un participant ou un participant existant. Ont-ils déjà un compte créé sur la plateforme?
+|Selon que lae conférencier·e·x est unx participant·e·x exostant·e·x ou non. Et s'iel a déjà un compte sur la plateforme?
 
 |Nom complet
-|Requis si c'est un non-participant.
-|Nom de l'orateur.
+|Requis si ce n'est pas uinx participant.
+|Nom de lae conférencier·e·x.
 
 |Utilisateur·ice ou groupe
 |Requis si c'est unx participant·e·x existant·e·x.
-|Tapez au moins trois caractères à rechercher.
+|Taper au moins trois caractères pour rechercher.
 
-|Réunions connexes
+|Rencontres connexes
 |Facultatif
-|Les réunions au cours desquelles l'orateur intervient ou facilite.
+|Les réunions au cours desquelles lae conférencier·e·x intervient ou modère.
 
 |Position
 |Obligatoire
-|Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
+|Méta données pour afficher des informations supplémentaires sur lae conférencier·e·x.
 
 |Affiliation
 |Obligatoire
-|Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
+|Méta données pour afficher des informations supplémentaires sur lae conférencier·e·x.
 
 |Courte Bio
 |Facultatif
-|Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
+|Méta données pour afficher des informations supplémentaires sur lae conférencier·e·x.
 
 |Compte X
 |Facultatif
-|Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
+|Méta données pour afficher des informations supplémentaires sur lae conférencier·e·x.
 
 |URL personnelle
 |Facultatif
-|Métadonnées pour afficher des informations supplémentaires sur le haut-parleur.
+|Méta données pour afficher des informations supplémentaires sur lae conférencier·e·x.
 
 |Avatars
 |Facultatif
-|Image d'avatar pour le haut-parleur. Ignoré si le conférencier est un participant « déjà inscrit ».
+|Image d'avatar pour lae conférencier·e·x. Ignoré si lae conférencie·e·xr est unx participant·e·x « déjà inscrit·e·x ».
 |===
