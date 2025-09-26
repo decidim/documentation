@@ -207,57 +207,56 @@ image::spaces/assemblies/assemblies_new_form_metadata.png[New assembly form meta
 
 === Visibilité
 
-Cette section permet aux administrateurs de configurer le placement du processus dans les différentes pages et leur publicité.
+Cette section permet aux administrateur·ices de configurer le placement du processus dans les différentes pages et leur publicité.
 
 image::spaces/assemblies/assemblies_new_form_visibility.png[New assembly form visibility section]
 
-.Nouveau formulaire d'assemblage : Visibilité
+.Formulaire pour la création d'une nouvelle assemblée : Visibilité
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
-|Assemblage parent
+|Assemblée parente
 |Facultatif
-|À laquelle appartiennent d'autres assemblages de cette assemblée. Les assemblages peuvent être imbriqués les uns dans les autres.
+|Les assemblées à laquelle cette assemblée appartient. Les assemblées peuvent être imbriquées les unes aux autres.
 
 |Surligné
 |Facultatif
-|Cochez cette case si vous voulez que l'assemblage ait plus de visibilité dans la liste publique des Ruches. It's also visible in the "Highlighted
-Assemblies" Content Block in the xref:admin:settings/homepage.adoc[Homepage] configuration.
+|Cocher cette case pour que l'assemblée ait plus de visibilité dans la liste publique des Assemblées. Ce sera également visible dans la configuration du contenu du bloc "Assemblées mise en avant" xref:admin:settings/homepage.adoc[Page d'accueil].
 
 |Espace privé
 |Facultatif
-|Vérifier si cette assemblée ne doit être accessible que par xref:admin:spaces/assemblies/private_participants.adoc[Participants privés].
+|Vérifier si cette assemblée ne doit être accessible que par xref:admin:spaces/assemblies/private_participants.adoc[Participant·e·x·s privé·e·x·s].
 
 |Est transparent
 |Facultatif
-|Vérifie si cette assemblée est privée mais doit être visible pour tous les participants. Cela signifie que les autres participants
-ou les visiteurs peuvent le voir, mais ils ne peuvent pas y participer.
+|Vérifier si cette assemblée est privée mais doit être visible par touxtes les participant·e·x·s. Cela signifie que les autres participant·e·x·s
+ou les visiteur·euses peuvent le voir, mais ne peuvent pas y participer.
 |===
 
 === Autre
 
 image::spaces/assemblies/assemblies_new_form_other.png[New assembly form other section]
 
-.Nouveau formulaire d'assemblage : Autre
+.Formulaire pour la création d'une nouvelle assemblée : Autre
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Créé par
 |Facultatif
-|Choisissez "Mairie", "Public", ou "Autres" si vous voulez spécifier le nom de l'organisation qui a créé
+|Choisir "Mairie", "Public", ou "Autres" pour spécifier le nom de l'organisation qui a créé
 cette assemblée.
 
-|Type d'assemblage
+|Type d'assemblée
 |Facultatif
-|Ce que xref:admin:admin:espace/assemblies/types.adoc[Type d'assemblée] est lié à cette assemblée.
+|À quel xref:admin:admin:espace/assemblies/types.adoc[Type d'assemblée] est lié à cette assemblée.
 
 |Processus participatifs liés
 |Facultatif
-|Sélectionnez d'autres processus participatifs liés à cette assemblée.
+|Sélectionner d'autres processus participatifs liés à cette assemblée.
 
 |Réseaux sociaux
 |Facultatif
-|Quels réseaux sociaux profilent cette assemblée. Peut être X, Facebook, Instagram, YouTube et/ou GitHub.
+|Les profiles de réseaux sociaux que détient cette assemblée. Par exemple, X, Facebook, Instagram, YouTube et/ou GitHub.
 |===
