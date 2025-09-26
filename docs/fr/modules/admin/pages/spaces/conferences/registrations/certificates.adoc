@@ -2,31 +2,31 @@
 
 == En bref
 
-Pour certains événements, les participants peuvent avoir un certificat de présence, certifier à leur employeur qu'ils y ont participé,
-ou certifier qu'ils ont suivi une formation par exemple.
+Pour certains événements, les participant·e·x·s peuvent avoir une attestation de présence, pour certifier à leur employeur qu'iels y ont participé,
+ou certifier qu'iels ont suivi une formation.
 
-Pour cela, les administrateurs peuvent créer des certificats de présence.
+Pour cela, les administrateur·ices peuvent créer des attestations de présence.
 
 == Configuration
 
-=== Créer un certificat de présence
+=== Créer une attestation de présence
 
-Pour accéder à la configuration du certificat de présence, cliquez dans le panneau de navigation secondaire de l'article "Certificat de présence".
+Pour accéder à la configuration de l'attestation de présence, cliquer dans le panneau de navigation secondaire sur "Attestation de présence".
 
-image:espaces/conferences/certificates_of_attendance.png[Backend de certificat de présence de la conférence]
+image:espaces/conferences/certificates_of_attendance.png[Système de gestion Attestation de présence de la conférence]
 
-.Formulaire de certificat de présence
+.Formulaire d'attestation de présence
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Logo principal
 |Obligatoire
-|Logo de la conférence ou de l'organisation qui fait le certificat de présence.
+|Logo de la conférence ou de l'organisation qui émet l'attestation de présence.
 
 |Signature
 |Obligatoire
-|Image de la signature de la personne qui signe le certificat.
+|Image de la signature de la personne qui signe l'attestation.
 
 |Date de signature
 |Obligatoire
@@ -34,19 +34,19 @@ image:espaces/conferences/certificates_of_attendance.png[Backend de certificat d
 
 |Nom de la signature
 |Obligatoire
-|Nom de la personne qui signe le certificat.
+|Nom de la personne qui signe l'attestation.
 |===
 
-=== Envoyer le certificat
+=== Envoyer l'attestation
 
-Une fois le formulaire de certificat de présence terminé, vous pouvez voir le bouton "Envoyer les certificats de présence" en haut à droite.
-Ce bouton permet aux administrateurs d'envoyer le certificat à tous les *confirmés*
-xref:admin:spaces/conferences/registrations/users.adoc[utilisateurs enregistrés] de la conférence.
+Une fois le formulaire d'attestation de présence complété, vous pouvez voir le bouton "Envoyer les attestations de présence" en haut à droite.
+Ce bouton permet aux administrateur·ices d'envoyer l'attestation à touxtes
+xref:admin:spaces/conferences/registrations/users.adoc[utilisateur·ices enregistré·ices] *confirmé·e·x·s* de la conférence.
 
 image::spaces/conferences/certificates_of_attendance_button.png[Conferences Certificate of Attendance send button]
 
-NOTE: Une fois le certificat envoyé, il ne peut pas être renvoyé.
+NOTE: Une fois l'attestation envoyée, elle ne peut pas être renvoyé une deuxième fois.
 
-Les certificats de participation sont envoyés aux participants par courriel en format PDF.
+Les attestations de participation sont envoyées aux participant·e·x·s par email au format PDF.
 
-image:espaces/conférences/certificates_of_attendance_pdf.png[Certificat de présence des conférences]
+image:espaces/conférences/certificates_of_attendance_pdf.png[Attestations de présence des conférences]
