@@ -2,8 +2,8 @@
 
 == En bref
 
-Les membres de l'Assemblée permettent de montrer à tous les participants qui appartiennent à une assemblée donnée, que ce soit des individus ou des groupes.
-Il s'agit d'une caractéristique spécifique à l'espace d'assemblage, fait pour améliorer la transparence des assemblages de l'organisation.
+Les membres de l'Assemblée permettent de montrer touxtes les participant·e·x·s qui appartiennent à une assemblée donnée, que ce soit des personnes ou des groupes.
+Il s'agit d'une caractéristique spécifique à l'espace des assemblées, fait pour améliorer la transparence des assemblées de l'organisation.
 
 image::spaces/assemblies/assembly_members.png[Assembly members]
 
@@ -11,7 +11,7 @@ image::spaces/assemblies/assembly_members.png[Assembly members]
 
 === Gérer les membres de l'assemblée
 
-Pour accéder à la liste des membres de l'assemblée, cliquez dans le panneau de navigation secondaire de l'élément "Membres".
+Pour accéder à la liste des membres de l'assemblée, cliquer dans le panneau de navigation secondaire sur "Membres".
 
 image::spaces/assemblies/assembly_members_list.png[Assembly members administration list]
 
@@ -37,45 +37,45 @@ Pour créer un nouveau membre de l'assemblée, cliquez sur le bouton "Nouveau me
 
 image::spaces/assemblies/assembly_members_new_form.png[Assembly members new form]
 
-.Nouveau formulaire de membre de l'assemblée
+.Formulaire de nouveau membre de l'assemblée
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
-|Type de participant
+|Type de participant·e·x
 |Obligatoire
 |Si le membre de cette assemblée a déjà un compte sur l'instance ou non.
 
 |Nom complet
 |Requis.
-|Champ affiché si "non participant" a été sélectionné.
+|Champ qui s'affiche si "non participant·e·x" a été sélectionné.
 
 |Avatars
 |Facultatif.
-|Champ affiché si "non participant" a été sélectionné.
+|Champ qui s'affiche si "non participant·e·x" a été sélectionné.
 
-|Utilisateur ou groupe
-|Requis si c'est un participant existant.
-|Tapez au moins trois caractères pour rechercher le compte du participant.
+|Utilisateur·ice ou groupe
+|Requis si c'est unx participant·e·x existant·e·x.
+|Taper au moins trois caractères pour rechercher le compte de lae participant·e·x.
 
 |Position
 |Obligatoire
-|Choisissez l'un des présidents, vice-président, secrétaire ou autre. Dans le cas contraire, vous pouvez remplir le titre du poste.
+|Choisir parmi président·e·x, vice-président·e·x, secrétaire ou autre. Le cas échéant, vous pouvez compléter le titre du poste.
 
 |Rang d'affichage
 |Facultatif
-|Quel ordre les membres ont en relation avec les autres membres. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
-Par exemple, si vous avez deux membres, "Member a" avec le poids "10" et "Member b" avec le poids "0" alors "Member b" est d'abord lors de la commande.
+|La position des membres en relation avec les autres membres. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
+Par exemple, si vous avez deux membres, "Membre a" de poids "10" et "Membre b" de poids "0" alors "Membre b" s'affiche en premier dans le listage.
 
 |Date de désignation
 |Obligatoire
-|Lorsque cette personne ou ce groupe a été assigné en tant que membre de cette assemblée. Format attendu : jj/mm/aaaa.
+|Lorsqu'une personne ou un groupe devient membre de cette assemblée. Format attendu : jj/mm/aaaa.
 
 |Date de fin
 |Facultatif
-|Quand cette personne ou ce groupe a cessé d'être un membre de cette assemblée. Format attendu : jj/mm/aaaa.
+|Date à laquelle cette personne ou ce groupe cessé d'être un membre de l'assemblée. Format attendu : jj/mm/aaaa.
 
-|Sexe
+|Genre
 |Facultatif
 |À quel genre cette personne s'identifie le plus.
 
