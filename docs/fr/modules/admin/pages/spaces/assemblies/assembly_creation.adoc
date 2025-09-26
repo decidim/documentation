@@ -1,14 +1,14 @@
-= Création de l'assemblage
+= Créer une assemblée
 
 == En bref
 
-Les assemblages permettent aux administrateurs de configurer des composants dans un espace de longue durée, avec des membres définis. Pour commencer à créer une assemblée, sur le lien :https://docs.decidim.org/fr/develop/admin/spaces/assemblies#_manage_assemblies[assembly list], cliquez sur le bouton "New assembly" en haut à droite de la page.
+Les assemblées permettent aux administrateur·ices de configurer des fonctionnalités dans un espace de longue durée, avec des membres définis. Pour créer une assemblée, sur le lien :https://docs.decidim.org/fr/develop/admin/spaces/assemblies#_manage_assemblies[liste des assemblées], cliquer sur "Nouvelle assemblée" en haut à droite de la page.
 
-Le formulaire de création d'assemblage est divisé en différentes sections qui sont détaillées dans les sections ci-dessous.
+Le formulaire de création d'assemblée est divisé en différentes sections qui sont détaillées ci-dessous.
 
-Une fois que vous créez un assemblage, vous pouvez voir toutes les configurations d'assemblage disponibles dans le panneau de navigation secondaire :
+Une fois une assemblée créée, il est possible de voir toutes les options de l'assemblée disponibles dans le panneau de navigation secondaire :
 
-* xref:admin:admin:spaces/assemblies/assembly_creation.adoc[À propos de cette assemblée] (Ici vous pouvez accéder et éditer tous les champs du formulaire de création.)
+* xref:admin:admin:spaces/assemblies/assembly_creation.adoc[À propos de cette assemblée] (Ici vous pouvez accéder et modifier tous les champs du formulaire de création.)
 * xref:admin:espace/assemblies/landing_page.adoc[Page d'accueil]
 * xref:admin:spaces/assemblies/components.adoc[Components]
 * xref:admin:spaces/assemblies/categories.adoc[Categories]
@@ -22,40 +22,40 @@ Une fois que vous créez un assemblage, vous pouvez voir toutes les configuratio
 
 === Informations générales
 
-Cette section permet à un administrateur de fournir des informations générales sur l'assemblage : titre, URL, et description.
+Cette section permet à un administrateur·ice de fournir des informations générales sur l'assemblée : titre, URL et description.
 
 image::spaces/assemblies/assemblies_new_form_general_info.png[New assembly form general info section]
 
-.Nouveau formulaire d'assemblage : Informations générales
+.Formulaire pour la création d'une assemblée : Informations générales
 [cols="20h,10h,~,~"]
 |===
 |Champ |Type |Description |Visibilité
 
 |Titre
 |Obligatoire
-|Titre de l'assemblée: "Comité Général" ou "Conseil Municipal de quartier" par exemple.
-|Visible dans la carte de l'assemblage sur la page d'accueil, l'index des assemblées, la navigation, et le bloc de page d'accueil "Image du héros et CTA".
+|Titre de l'assemblée : "Comité Général" ou "Conseil Municipal de quartier", par exemple.
+|Visible dans la carte de l'assemblée sur la page d'accueil, l'index des assemblées, le navigateur, et le bloc de page d'accueil "Image de la bannière et CTA".
 
 |Sous-titre
 |Obligatoire
 |Sous-titre de l'assemblée.
-|Visible dans le bloc « Image du héros et CTA ».
+|Visible dans le bloc « Image de la bannière et CTA ».
 
 |Rang d'affichage
 |Obligatoire
-|Détermine l'ordre de l'assemblage lorsqu'il est affiché dans l'index des processus ou la page d'accueil.
+|Détermine la position de l'assemblée lorsqu'elle est affichée dans l'index des processus ou la page d'accueil.
 |N/A
 
 |Identifiant d'URL
 |Obligatoire
-|Les identifiants d'URL sont utilisés pour générer les URL qui pointent vers ce processus. N'accepte que des lettres, des chiffres et des tirets et doit
+|Les identifiants d'URL sont utilisés pour générer les URL qui dirige vers ce processus. N'accepte que des lettres, des chiffres et des tirets et doit
 commencer par une lettre.
 |Visible dans l'URL de l'assemblée, par exemple https://example.org/assemblies/city_coucil.
 
 |Hashtag
 |Facultatif
 |Hashtag redirigeant vers le réseau social X.
-|Visible dans le bloc « Image du héros et CTA ».
+|Visible dans le bloc « Image de la bannière et CTA ».
 
 |Courte description
 |Obligatoire
@@ -84,8 +84,8 @@ commencer par une lettre.
 
 |Annonce
 |Facultatif
-|Le texte que vous entrez ici est affiché à l'utilisateur juste en dessous des informations de processus.
-|Visible dans le bloc "Annoncement".
+|Le texte entré ici est s'affiche juste en dessous des informations de processus, visible par les utilisateur·ices.
+|Visible dans le bloc de la page d'accueil "Annonce".
 |===
 
 === Durée
@@ -94,7 +94,7 @@ Cette section permet de fournir des informations sur les dates importantes de l'
 
 image::spaces/assemblies/assemblies_new_form_duration.png[New assembly form duration section]
 
-.Nouveau formulaire d'assemblage : Durée
+.Formulaire pour la création d'une nouvelle assemblée : Durée
 [cols="20h,10h,~,~"]
 |===
 |Champ |Type |Description |Visibilité
@@ -102,97 +102,97 @@ image::spaces/assemblies/assemblies_new_form_duration.png[New assembly form dura
 |Date de création
 |Facultatif
 |Quand cette assemblée a été créée. Vous avez un widget calendrier pour choisir la journée. Format attendu : jj/mm/aaaa.
-|Visible dans le bloc "Dates metadata".
+|Visible dans le bloc de la page d'accueil "Dates méta-données".
 
 |Inclus le
 |Facultatif
 |La date à laquelle cette assemblée a été ajoutée à l'instance. Elle ne doit pas nécessairement être la même que la date de création. Format attendu : jj/mm/aaaa.
-|Visible dans le bloc "Dates metadata".
+|Visible dans le bloc de la page d'accueil "Dates méta-données".
 
 |Durée
 |Facultatif
 |Si la durée de cette assemblée est limitée, sélectionnez la date de fin. Dans le cas contraire, elle apparaît comme indéfinie. Format attendu : jj/mm/aaaa.
-|Visible dans le bloc "Type et durée".
+|Visible dans le bloc de la page d'accueil "Type et durée".
 
 |Date de clôture
 |Facultatif
-|Lorsque cette assemblée est fermée. Format attendu : jj/mm/aaaa.
-|Visible dans le bloc "Dates metadata".
+|Lorsque cette assemblée est clôturée. Format attendu : jj/mm/aaaa.
+|Visible dans le bloc de la page d'accueil "Dates méta-données".
 
-|Raison de la date de fermeture
+|Raison de la date de clôture
 |Facultatif
-|Pourquoi cette assemblée est fermée.
-|Non affiché sur la page de destination.
+|Pourquoi cette assemblée est clôturée.
+|Non affiché sur la page d'accueil.
 |===
 
 === Images
 
 image::spaces/assemblies/assemblies_new_form_images.png[New assembly form images section]
 
-.Nouveau formulaire d'assemblage : Images
+.Formulaire pour la création d'une nouvelle assemblée : Images
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
-|Image de la maison
+|Image d'accueil
 |Facultatif
-|Image utilisée dans les cartes de présentation de ce processus. Orientation pour le fichier: Doit être une image ou un document.
-Pour les images, les images paysagères sont préférées, car le service récolte l'image. Taille maximale du fichier : 10 Mo
+|Image utilisée dans les cartes de présentation de ce processus. Instruction pour le fichier : Doit être une image ou un document.
+Pour les images, les images au format paysage sont préférées, car le service recadre l'image. Taille maximale du fichier : 10 Mo
 
 |Image de bannière
 |Déprécié
-|Use link:https://docs.decidim.org/fr/develop/admin/spaces/assemblies/landing_page.html#_hero_image_and_cta[Hero image and CTA] content block on the landing page.
+|Utiliser le bloc de contenu sur la page d'accueil link:https://docs.decidim.org/fr/develop/admin/spaces/assemblies/landing_page.html#_hero_image_and_cta[Image de bannière et CTA].
 |===
 
 === Filtres
 
-Cette section détermine les filtres disponibles dans l'assemblage, dans les différents composants.
-Les filtres peuvent ensuite être activés et configurés dans chaque composant.
+Cette section détermine les filtres disponibles dans l'assemblée, dans les différentes fonctionnalités.
+Les filtres peuvent ensuite être activés et configurés dans chaque fonctionnalité.
 
 image::spaces/assemblies/assemblies_new_form_filters.png[New assembly form filters section]
 
-.Nouveau formulaire d'assemblage : Filtres
+.Formulaire pour la création d'une nouvelle assemblée : Flitres
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Portées activées
 |Facultatif
-|Cochez cette case si vous voulez que le filtrage des portées dans cette assemblée.
+|Cocher cette case pour que les sections soient filtrés pour cette assemblée.
 
 |Secteur
 |Facultatif
-|Ce à quoi appartient xref:admin:settings/scopes.adoc[Scopes] cette assemblée.
+|À quelles xref:admin:settings/scopes.adoc[Sections] appartient cette assemblée.
 
 |Zone de stockage
 |Facultatif
-|Ce à quoi appartient xref:admin:settings/areas.adoc[Areas] cette assemblée.
+|À quelles xref:admin:settings/areas.adoc[Zones] appartient cette assemblée.
 |===
 
 === Métadonnées
 
-Cette section permet de fournir des métadonnées sur l'assemblage.
+Cette section permet de fournir des méta-données sur l'assemblage.
 
 image::spaces/assemblies/assemblies_new_form_metadata.png[New assembly form metadata section]
 
-.Nouveau formulaire d'assemblage : Métadonnées
+.Formulaire pour la création d'une nouvelle assemblée : Méta-données
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Ce qui est décidé
 |Facultatif
-|La question de l'assemblée; l'objet de ce qui est décidé.
+|Les problématiques de l'assemblée ; l'objet de ce qui est décidé.
 
-|Comment est-il décidé
+|Comment sont prises les décisions
 |Facultatif
 |Le processus de prise de décision à l'intérieur de l'assemblée.
 
-|Métadonnées du périmètre d'application
+|Méta-données du secteur
 |Facultatif
-|Métadonnées sur la portée de l'assemblage, le cas échéant.
+|Méta données du secteur de l'assemblage, le cas échéant.
 
-|Groupe de promoteurs
+|Groupe de promoteur·ices
 |Facultatif
 |Si un groupe spécifique est à l'origine de l'assemblée, comme une direction de ville, un comité d'association, etc.
 
@@ -202,7 +202,7 @@ image::spaces/assemblies/assemblies_new_form_metadata.png[New assembly form meta
 
 |Qui participe
 |Facultatif
-|Qui sont les participants autorisés qui peuvent participer à l'assemblée.
+|Qui sont les participant·e·x·s autorisé·e·x·s à participer à l'assemblée.
 |===
 
 === Visibilité
