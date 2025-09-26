@@ -1,11 +1,11 @@
-= Création de la conférence
+= Créer une conférence
 
 == En bref
 
-Les conférences permettent aux administrateurs de configurer des composants dans le contexte d'un événement, en général en articulation avec un programme.
-Pour commencer à créer une conférence, lorsque dans la liste des conférences, cliquez sur le bouton "Nouvelle conférence" en haut à droite de la page.
+Les conférences permettent aux administrateur·ices de configurer des fonctionnalités dans le contexte d'un événement, en général en articulation avec un programme.
+Pour créer une conférence, cliquer sur "Nouvelle conférence" en haut à droite de la page de la liste des conférences.
 
-Le formulaire de création de la conférence est divisé en différentes sections détaillées dans les sections ci-dessous.
+Le formulaire de création de la conférence est divisé en différentes sections détaillées ci-dessous.
 
 La page d'accueil des conférences est construite par défaut et n'est pas encore configurable.
 
@@ -15,7 +15,7 @@ La page d'accueil des conférences est construite par défaut et n'est pas encor
 
 image::spaces/conferences/conference_new_form_general_info.png[New conference form general info section]
 
-.Nouveau formulaire de conférence : Informations générales
+.Formulaire de création de conférence : Informations générales
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -34,7 +34,7 @@ image::spaces/conferences/conference_new_form_general_info.png[New conference fo
 
 |Identifiant d'URL
 |Obligatoire
-|Les identifiants d'URL sont utilisés pour générer les URL qui pointent vers ce processus. N'accepte que des lettres, des chiffres et des tirets et doit
+|Les identifiants d'URL sont utilisés pour générer les URL qui dirige vers ce processus. N'accepte que des lettres, des chiffres et des tirets et doit
 commencer par une lettre.
 
 |Hashtag
@@ -43,7 +43,7 @@ commencer par une lettre.
 
 |Surligné
 |Facultatif
-|Cochez cette case si vous voulez que la conférence ait plus de visibilité dans la liste des conférences publiques et le bloc de contenu "Conférences en surbrillance"
+|Cocher cette case pour que la conférence ait plus de visibilité dans la liste des conférences publiques et le bloc "Conférences mises en avant"
 dans la page xref:admin:settings/homepage.
 
 |Courte description
@@ -56,53 +56,53 @@ dans la page xref:admin:settings/homepage.
 
 |Objectifs
 |Facultatif
-|Les objectifs ou les objectifs de cette conférence.
+|Les objectifs ou les buts de cette conférence.
 
 |Localisation
 |Facultatif
-|Là où la conférence a lieu.
+|Le lieu de la conférence.
 |===
 
 === Images
 
 image::spaces/conferences/conference_new_form_images.png[New conference form images section]
 
-.Nouveau formulaire de conférence : Images
+.Formulaire de création de conférence : Images
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
-|Image de la maison
+|Image d'accueil
 |Facultatif
-|Image utilisée dans les cartes de présentation de cette conférence. Orientation pour le fichier: Doit être une image ou un document.
-Pour les images, utilisez de préférence des images paysagères, le service récolte l'image. Taille maximale du fichier : 10 Mo
+|Image utilisée dans les cartes de présentation de cette conférence. Instruction pour le fichier : Doit être une image ou un document.
+Pour les images, utiliser de préférence des images au format paysage, car le service les recadre. Taille maximale du fichier : 10 Mo
 
 |Image de bannière
 |Facultatif
-|Image utilisée dans l'en-tête de la conférence. De préférence une image au format paysage ne contenant pas de texte. Le service récolte
-l'image Le service récolte
+|Image utilisée dans l'en-tête de la conférence. De préférence une image au format paysage ne contenant pas de texte. Le service recadre
+l'image. Le service récolte
 l'image Taille maximale du fichier : 10 Mo.
 |===
 
 === Filtres
 
-Cette section détermine les filtres disponibles dans la conférence, dans les différents composants.
-Les filtres peuvent ensuite être activés et configurés dans chaque composant.
+Cette section détermine les filtres disponibles pour la conférence, dans les différentes fonctionnalités.
+Les filtres peuvent ensuite être activés et configurés dans chaque fonctionnalité.
 
 image::spaces/conferences/conference_new_form_filters.png[New conference form filters section]
 
-.Nouveau formulaire de conférence : Filtres
+.Formulaire de création de conférence : Filtres
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Portées activées
 |Facultatif
-|Cochez cette case si vous voulez que le filtrage des portées soit effectué dans cette conférence.
+|Cocher cette case si vous voulez que le filtrage des sections soit effectué dans cette conférence.
 
 |Secteur
 |Facultatif
-|Ce à quoi appartient xref:admin:settings/scopes.adoc[Scope] cette conférence.
+|La xref:admin:settings/scopes.adoc[Section] à laquelle appartient cette conférence.
 
 |Afficher les statistiques
 |Facultatif
@@ -111,23 +111,23 @@ image::spaces/conferences/conference_new_form_filters.png[New conference form fi
 
 === Durée
 
-Cette section permet de fournir des informations sur les dates de début et de fin du processus.
-Il peut être activé sur la page d'accueil avec le bloc "Phase & durée".
+Cette section permet de fournir des informations concernant les dates de début et de fin du processus.
+Peut être activé sur la page d'accueil avec le bloc "Étapes & durée".
 
 image::spaces/conferences/conference_new_form_duration.png[New conference form duration section]
 
-.Nouvelle forme de processus participatif : Durée
+.Formulaire de création d'un processus participatif : Durée
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Date de début
 |Facultatif
-|Quand cette conférence commence. Vous avez un widget calendrier pour choisir la journée. Format attendu : jj/mm/aaaa.
+|Quand cette conférence débute. Vous avez un widget calendrier pour choisir la journée. Format attendu : jj/mm/aaaa.
 
 |Date de fin
 |Facultatif
-|À la fin de cette conférence. Vous avez un widget calendrier pour choisir la journée. Format attendu : jj/mm/aaaa.
+|Quand la conférence se termine. Vous avez un widget calendrier pour choisir la journée. Format attendu : jj/mm/aaaa.
 |===
 
 === Inscriptions
@@ -136,14 +136,14 @@ Cette section vous permet d'activer les inscriptions et de définir des créneau
 
 image::spaces/conferences/conference_new_form_registrations.png[New conference form Registrations sections]
 
-.Nouveau formulaire de conférence : Inscriptions
+.Formulaire de création de conférence : Inscriptions
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Enregistrements activés
 |Facultatif
-|Cochez cette case si vous souhaitez gérer les inscriptions sur la plateforme.
+|Cocher cette case pour gérer les inscriptions sur la plateforme.
 
 |Emplacements disponibles
 |Facultatif
@@ -151,33 +151,31 @@ image::spaces/conferences/conference_new_form_registrations.png[New conference f
 
 |Conditions d'inscription
 |Requis si "Inscriptions activées" est coché.
-|Les conditions de service ou conditions qu'un participant doit accepter pour s'inscrire à la conférence.
+|Les conditions de service ou conditions générales qu'unx participant·e·x doit accepter pour s'inscrire à la conférence.
 |===
 
 === Espaces liés
 
-Cette section permet de créer des relations entre les processus, les assemblages et les conférences.
+Cette section permet de créer des relations entre les processus, les assemblées et les conférences.
 
 image::spaces/conferences/conferences_new_form_related_processes.png[New conference form Related spaces section]
 
-.Nouveau formulaire de conférence : Espaces liés
+.Formulaire de création de conférence : Espaces liés
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Processus participatifs liés
 |Facultatif
-|Sélectionnez les processus participatifs liés à la conférence. Utilisez la fonction *CTRL* ou *CMD* pour sélectionner plus d'une option.
+|Sélectionner les processus participatifs liés à la conférence. Utiliser la fonction *CTRL* ou *CMD* pour sélectionner plus d'une option.
 
 |Assemblées liées
 |Facultatif
-|Sélectionnez les assemblées liées à la conférence. Utilisez la fonction *CTRL* ou *CMD* pour sélectionner plus d'une option.
+|Sélectionner les assemblées liées à la conférence. Utiliser la fonction *CTRL* ou *CMD* pour sélectionner plus d'une option.
 |===
 
 === Création du programme
 
-For creating the program of the conference you need to create a new xref:components/meetings.adoc[Meeting component] with the
-dates and times of the different talks, workshops, sessions, etc. After publishing the meetings, the program button
-is visible in the landing page.
+Pour créer le programme d'une conférence, il est nécessaire de créer une nouvelle xref:components/meetings.adoc[Fonctionnalité de rencontre] avec les dates et les heures des différentes interventions, workshops, sessions, etc. Après publication des rencontres, le bouton Programme est visible sur la page de destination.
 
 image::spaces/conferences/program_frontend.png[Conferences program frontend]
