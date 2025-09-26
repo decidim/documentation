@@ -1,34 +1,34 @@
-= Gérer l'initiative en tant qu'auteur
+= Gérer l'initiative en tant qu'auteur·ice
 
 == En bref
 
-Les initiatives ont la particularité d'être à la fois gérables par les administrateurs et leurs auteurs.
-Les administrateurs ont plus de droits, mais les auteurs peuvent également gérer un certain nombre de configurations de leurs initiatives.
+Les initiatives ont la particularité d'être à la fois gérables par les administrateur·ices et leurs auteur·ices.
+Les administrateur·ices ont plus de droits, mais les auteur·ices peuvent également gérer un certain nombre de configurations de leurs initiatives.
 
 == Configuration
 
 === Modifier l'initiative
 
-Une fois que l'initiative est créée, l'auteur peut voir la page de l'initiative, mais jusqu'à ce que l'initiative soit examinée et acceptée par un administrateur, par la validation technique,
-elle n'est pas publiée et visible pour tous les participants.
+Une fois l'initiative créée, l'auteur·ice peut voir la page de l'initiative, mais jusqu'à ce que l'initiative ne soit examinée et acceptée par unx administrateur,·ice par validation technique,
+elle n'est visible par les autres participant·e·x·s.
 
 image::spaces/initiatives/initiative_show.png[Initiative show]
 
-Une fois que l'initiative est créée et avant qu'elle ne soit envoyée à la validation technique, l'auteur peut modifier et corriger l'initiative en cas d'erreur.
+Une fois l'initiative créée et avant qu'elle ne soit envoyée à la validation technique, l'auteur·ice peut modifier et corriger l'initiative en cas d'erreur.
 
 image::spaces/initiatives/initiative_edit.png[Initiative edit]
 
-do[Comité de promotion] est activé pour le type d'initiative de cette initiative, l'auteur d'une initiative peut gérer les demandes et les membres du comité à la fin du formulaire d'édition.
+Si le [Comité de promotion] est activé pour ce type d'initiative, l'auteur·ice d'une initiative peut gérer les demandes et les membres du comité à la fin du formulaire de modification.
 
 === Envoyer à la validation technique
 
-Une fois que toutes les conditions sont réunies, si l'initiative est prête et compte suffisamment de membres du comité, l'auteur peut envoyer l'initiative à la validation technique.
-En cliquant sur le bouton "Envoyer à la validation technique", un modal est affiché pour avertir l'auteur qu'il ne sera pas en mesure de le modifier après cette action.
+Une fois toutes les conditions réunies, si l'initiative est prête et compte suffisamment de membres dans le comité, l'auteur·ice peut envoyer l'initiative à la validation technique.
+En cliquant sur le bouton "Envoyer à la validation technique", un modal est affiché pour avertir l'auteur·ice qu'iel ne sera pas en mesure de le modifier après cette action.
 
 image::spaces/initiatives/initiative_send_to_technical_validation.png[Send initiative to technical validation]
 
 === Récupérer les initiatives créées
 
-Les auteurs peuvent également trouver leurs initiatives dans l'index des initiatives en décochant le filtre "Ouvrir" et en cliquant sur le filtre "Mes initiatives".
+Les auteur·ices peuvent également trouver leurs initiatives dans l'index des initiatives en décochant le filtre "Ouvrir" et en cliquant sur le filtre "Mes initiatives".
 
 image::spaces/initiatives/initiative_filters_my_initiatives.png[Filters for my initiatives]
