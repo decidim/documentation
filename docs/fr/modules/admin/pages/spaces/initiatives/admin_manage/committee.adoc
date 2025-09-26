@@ -2,21 +2,21 @@
 
 == En bref
 
-NOTE: L'explication du comité de promotion est disponible sur xref:admin:spaces/initiatives/author_manage/committee.adoc[Comité du promoteur].
+NOTE: L'explication du comité promotion est disponible sur xref:admin:spaces/initiatives/author_manage/committee.adoc[Comité promoteur].
 
 Les membres du comité pourraient être nécessaires, selon les règles établies pour les types d'initiative.
-Les participants peuvent les gérer à partir de leur formulaire d'édition d'initiative, mais les administrateurs peuvent également accéder à la liste des membres du comité
+Les participant·e·x·s peuvent les gérer à partir de leur formulaire de modification d'initiative, mais les administrateur·ices peuvent également accéder à la liste des membres du comité
 .
 
 == Configuration
 
 === Gérer les membres du comité
 
-Pour accéder à la liste des membres du comité, cliquez dans le panneau de navigation secondaire du point « Membres du comité ».
+Pour accéder à la liste des membres du comité, cliquer dans le panneau de navigation secondaire sur « Membres du comité ».
 
 image::spaces/initiatives/initiative_members_admin.png[Initiative committee members list in administration]
 
-Là, l'auteur peut voir et copier le lien d'invitation d'initiative, et voir la liste des membres du comité.
+Là, l'auteur·ice peut voir et copier le lien d'invitation à l'initiative, et voir la liste des membres du comité.
 
 === Actions
 
@@ -29,7 +29,7 @@ Là, l'auteur peut voir et copier le lien d'invitation d'initiative, et voir la 
 |Révoquer
 |Permet de refuser ou de révoquer les membres du comité directement sur cette initiative.
 
-|image:icons/action_publish.png[Approuver l'icône]
+|image:icons/action_publish.png[Icône Approuver]
 |Accepter
 |Pour approuver la demande d'adhésion.
 |===
