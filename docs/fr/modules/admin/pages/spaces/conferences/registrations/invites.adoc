@@ -2,19 +2,19 @@
 
 == En bref
 
-Les administrateurs peuvent inviter les participants à participer à la conférence.
-Ils peuvent inviter des participants existants, avec un compte sur la plateforme, ainsi que des personnes sans compte.
-Inviter un participant envoie un e-mail à l'adresse e-mail du compte, encourageant le participant à s'inscrire à la conférence.
+Les administrateur·ices peuvent inviter les participant·e·x·s à participer à la conférence.
+Iels peuvent inviter des participant·e·x·s existant·e·x·s, détenant un compte sur la plateforme, ainsi que des personnes sans compte.
+Lorsqu'unx participant·e·x est invité·e·x, un mail est envoyé à l'adresse de son compte, l'encourageant à s'inscrire à la conférence.
 
 == Configuration
 
 === Gérer les invitations
 
-Pour accéder à la configuration des invitations, cliquez dans le panneau de navigation secondaire de l'élément "Invitations".
+Pour accéder à la configuration des invitations, cliquer dans le panneau de navigation secondaire sur "Invitations".
 
 image::spaces/conferences/invites.png[Conferences user invites in backend]
 
-Vous pouvez filtrer les invitations et rechercher par nom d'invité ou par email.
+Vous pouvez filtrer les invitations et rechercher par nom ou par adresse email.
 
 === Envoyer une invitation
 
@@ -22,26 +22,26 @@ Pour inviter un participant, cliquez sur le bouton "Inviter un participant" en h
 
 image::spaces/conferences/invite_participant_form.png[Invite a participant form]
 
-.Formulaire d'invitation de l'utilisateur
+.Formulaire d'invitation de participant·e·x
 [cols="20h,~,~"]
 |===
 |Champ |Type |Description
 
-|Type de participant
+|Type de participant·e·x
 |Obligatoire
 |Si cette personne invitée a déjà un compte
 
 |Nom
-|Requis si l'invité n'est pas déjà un participant.
+|Requis si l'invité·e·x n'est pas unx participant·e·x de la plateforme.
 |Nom de la personne invitée.
 
-|Courriel
-|Requis si l'invité n'est pas déjà un participant.
-|Courriel de la personne invitée.
+|E-mail
+|Requis si l'invité·e·x n'est pas unx participant·e·x de la plateforme.
+|Email de la personne invitée.
 
 |Utilisateur
-|Requis si c'est un participant existant.
-|Tapez au moins trois caractères pour rechercher un compte participant.
+|Requis si c'est unx participant·e·x existant·e·x.
+|Taper au moins trois caractères pour rechercher un compte participant·e·x.
 
 |xref:admin:admin:espaces/conférences/registrations/types.adoc[Type d'enregistrement]
 |Obligatoire
