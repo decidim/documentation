@@ -1,28 +1,28 @@
-= Types d'assemblages
+= Types d'assemblées
 
 == En bref
 
-Dans certains cas, il est nécessaire d'organiser des assemblages par plus que des enfants et des sous-assemblées.
-C'est là que les types d'assemblage peuvent être utiles, et ajouter une couche de catégorisation.
-Les participants sont alors en mesure de filtrer les assemblages par les types d'assemblage que vous avez créés.
+Dans certains cas, il est nécessaire de ne pas organiser des assemblées par des enfants seulement et des sous-assemblées.
+C'est là que les types d'assemblée peuvent être utiles, qui peuvent ajouter un niveau de catégorisation.
+Les participant·e·x·s sont alors en mesure de filtrer les assemblées par types d'assemblées créés.
 
-NOTE: Les types d'assemblage fonctionnent de la même façon que xref:admin:spaces/processes/types.adoc[Types de processus].
+NOTE: Les types d'assemblées fonctionnent de la même façon que xref:admin:spaces/processes/types.adoc[Types de processus].
 
 == Configuration
 
-=== Gérer les types d'assemblages
+=== Gérer les types d'assemblées
 
-Pour accéder à la liste des types d'assemblage, cliquez sur le bouton "Gérer" en haut à droite de la page, puis cliquez sur le lien de menu "Type d'assemblage".
+Pour accéder à la liste des types d'assemblées, cliquer sur le bouton "Gérer" en haut à droite de la page, puis cliquer sur le lien du menu "Types d'assembées".
 
 image::spaces/assemblies/assemblies_types_list.png[Backend assemblies types menu item]
 
-=== Créer un type d'assemblage
+=== Créer un type d'assemblée
 
-Cliquez sur le bouton "Nouveau type d'assemblage" en haut à droite de la page.
+Cliquer sur le bouton "Nouveau type d'assemblée" en haut à droite de la page.
 
 image::spaces/assemblies/assemblies_types_form.png[Process type creation form]
 
-.Formulaire de nouveau type d'assemblage : Informations générales
+.Formulaire de nouveau type d'assemblée : Informations générales
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -32,15 +32,15 @@ image::spaces/assemblies/assemblies_types_form.png[Process type creation form]
 |Titre du type d'assemblée.
 |===
 
-=== Ajouter un type d'assembly à une assembly
+=== Ajouter un type d'assemblée à une assemblée
 
-Pour relier les assemblages aux types d'assemblage, dans la page d'édition d'une assemblée, sélectionnez le type d'assemblage sous la section intitulée Autre.
+Pour relier les assemblées aux types d'assemblées, dans la page d'édition d'une assemblée, sélectionner le type d'assemblée sous la section intitulée Autre.
 
-image:espaces/assemblies/assemblies_types_edit_process.png[Choisir un type d'assemblage lors de l'édition d'une assemblée]
+image:espaces/assemblies/assemblies_types_edit_process.png[Choisir un type d'assemblée lors de la modification d'une assemblée]
 
-=== Filtrer par types d'assemblage
+=== Filtrer par types d'assemblées
 
-S'il y a au moins un type d'assemblage défini et lié à une assemblée, un filtre est affiché à gauche de la liste des assemblages
-dans l'interface participante, permettant le filtrage des assemblées.
+S'il y a au moins un type d'assemblée défini et lié à une assemblée, un filtre est affiché à gauche de la liste des assemblées
+dans l'interface participant·e·x·s, permettant le filtrage des assemblées.
 
 image::spaces/assemblies/assemblies_types_filter.png[Assemblies types filter in the assemblies index]
