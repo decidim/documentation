@@ -2,26 +2,26 @@
 
 == En bref
 
-Les initiatives sont censées être signées, que ce soit avec des signatures en ligne ou en personne. Le but de l'auteur d'une initiative est de promouvoir son initiative
-et de recueillir du soutien pour elle.
+Les initiatives sont censées être signées, que ce soit par des signatures en ligne ou en personne. Le but de l'auteur·ice d'une initiative est de promouvoir son initiative
+et d'obtenir du soutien.
 
 == Configuration
 
 === Processus de signature
 
-Une fois que l'initiative est publiée par un administrateur, elle devient visible dans la page de liste des initiatives.
+Une fois l'initiative publiée par unx administrateur·ice, elle devient visible dans la page de liste des initiatives.
 
 image::spaces/initiatives/initiatives_index_front_with_initiatives.png[Initiatives index in front with initiatives]
 
-La page d'initiative affiche un bouton « Signer » et un compteur de signature, avec l'objectif de signature à atteindre et le numéro de signature actuel.
+La page des initiatives affiche un bouton « Signer » et un compteur de signatures, avec le quota de signatures à atteindre et le nombre de signatures actuel.
 
 image::spaces/initiatives/initiative_show_published.png[Initiative show after it was published]
 
-Les participants autorisés n'ont qu'à cliquer sur le bouton « Signer » pour que leur signature soit prise en compte.
+Les participant·e·x·s autorisé·e·x·s n'ont qu'à cliquer sur le bouton « Signer » pour que leur signature soit prise en compte.
 
-NOTE: Selon les autorisations que vous demandez la signature, le processus peut être différent et inclure des étapes supplémentaires.
+NOTE: Selon les autorisations exigées pour signer, le processus peut être différent et présenter des étapes supplémentaires.
 
-Une fois que le participant a cliqué sur le bouton, la signature est incrémentée dans le comptoir de signature.
-Si elle est autorisée pour ce type d'initiative, les participants peuvent également annuler leur signature en cliquant sur le bouton "Déjà signé".
+Une fois le bouton cliqué par unx participant·e·x, la signature est ajoutée au comptoir de signatures.
+Si elle est autorisée pour ce type d'initiative, les participant·e·x·s peuvent également annuler leur signature en cliquant sur le bouton "Déjà signé".
 
 image::spaces/initiatives/initiative_show_signed.png[Initiative show after it was signed]
