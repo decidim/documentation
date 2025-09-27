@@ -26,13 +26,13 @@ Pour créer un type d'initiative, cliquer sur « Gérer » en haut à droite de 
 
 image::spaces/initiatives/initiatives_menu_types.png[Access Initiatives types panel]
 
-Ensuite, cliquez sur le bouton « Nouveau type d'initiative ». Vous êtes redirigé vers le formulaire de création de type d'initiative.
+Ensuite, cliquer sur « Nouveau type d'initiative ». Vous êtes redirigé vers le formulaire de création de type d'initiative.
 
 ==== Informations générales
 
 image::spaces/initiatives/type_form_general.png[Initiative type form general information]
 
-.Formulaire de type d'initiative : Informations générales
+.Formulaire admin de nouveau type d'initiative : Informations générales
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -54,60 +54,60 @@ image::spaces/initiatives/type_form_general.png[Initiative type form general inf
 
 image::spaces/initiatives/type_form_options.png[Initiative type form options]
 
-.Formulaire de type d'initiative pour l'administrateur: Options
+.Formulaire admin de nouveau type d'initiative : Options
 [cols="~,10h,~"]
 |===
 |Champ |Type |Description
 
 |Type de signature
 |Facultatif
-|Quel type de signature est autorisé. Les options sont : Online, In-person et Mixed. L'option Mixte permet à un participant de choisir le type de signature que l'initiative peut collecter.
+|Quel type de signature est autorisé. Les options sont : en ligne, en person et les deux. L'option "les deux" permet à unx participant·e·x de choisir le type de signature que l'initiative peut collecter.
 
 |Activer les pièces jointes
 |Facultatif
-|Que ce soit pour télécharger des pièces jointes à des initiatives de ce type.
+|Pour pouvoir télécharger ou non des pièces jointes pour des initiatives de ce type.
 
-|Permettre aux participants d'annuler leurs signatures en ligne
+|Permettre aux participant·e·x·s d'annuler leurs signatures en ligne
 |Facultatif
-|Un participant peut-il annuler sa signature lorsqu'il a déjà signé ?
+|Unx participant·e·x peut-il annuler sa signature lorsqu'iel a déjà signé ?
 
-|Permettre aux auteurs de choisir la fin de la période de collection de signatures
+|Permettre aux auteur·ices de choisir la fin de la période de collecte de signatures
 |Facultatif
-|Les auteurs d'une initiative peuvent-ils modifier la fin de la période de collecte des signatures lors de la création de leur initiative?
+|Les auteur·ices d'une initiative peuvent-iels modifier la fin de la période de collecte des signatures lors de la création de leur initiative ?
 
-|Permettre aux auteurs de choisir le xref:admin:settings/areas.adoc[area] pour leur initiative
+|Permettre aux auteur·ices de choisir le xref:admin:settings/areas.adoc[zone] pour leur initiative
 |Facultatif
-|Permettre aux auteurs et aux administrateurs de catégoriser les initiatives grâce à l'organisation xref:admin:settings/areas.adoc[Areas].
+|Permettre aux auteur·ices et aux administrateur·ices de catégoriser les initiatives grâce à l'organisation xref:admin:settings/areas.adoc[Zones].
 
-|Activer les signatures de portée enfant
+|Activer les signatures de secteur enfants
 |Facultatif
-|Ce drapeau de configuration ne supporte que les votes en ligne. Il active les sous-portées et fonctionne avec un gestionnaire d'autorisation qui associe une portée à l'utilisateur.
-Assurez-vous de sélectionner cette autorisation ci-dessous dans les paramètres d'autorisation. Pour que cela fonctionne, les portées doivent être configurées de manière hiérarchique : 1 Parent - N Enfant.
+|Ce drapeau de configuration ne supporte que les votes en ligne. Il active les sous-secteurs et fonctionne avec un gestionnaire d'autorisation qui associe un secteur à l'utilisateur·ice.
+Assurez-vous de sélectionner cette autorisation ci-dessous dans les paramètres d'autorisation. Pour que cela fonctionne, les secteurs doivent être configurés de manière hiérarchique : 1 Parent - N Enfant.
 
-|Ne permettre que la création d'initiatives d'envergure mondiale
+|Ne permettre que la création d'initiatives de secteurs globaux
 |Facultatif
-|Cochez cette case si vous avez activé "Signature de la portée enfant" et configuré la portée globale comme votre portée parente. En activant cette option, la sélection de la portée est ignorée dans l'assistant de création d'initiative.
+|Cocher cette case si "Signature de secteur enfants" est activé et configuré le secteur global comme votre secteur parent. En activant cette option, la sélection du secteur est ignorée dans l'assistant de création d'initiative.
 
 |Activer le comité de promotion
 |Facultatif
-|Si ce type ne permet que des initiatives individuelles ou permet des initiatives collectives (plusieurs promoteurs, plusieurs personnes ou un groupe d'utilisateurs).
+|Selon que ce type ne permet que des initiatives individuelles ou permet aussi des initiatives collectives (plusieurs promoteur·euses, plusieurs personnes ou un groupe d'utilisateur·ices).
 
 |Minimum de membres du comité
 |Facultatif
-|Lorsque l'option "Activer le comité de promotion" est cochée, définit le nombre minimum de membres du comité promoteur à envoyer l'initiative à la validation technique.
+|Lorsque l'option "Activer le comité de promotion" est cochée, elle définit le nombre minimum de membres du comité de promotion pour pouvoir soumettre l'initiative à la validation technique.
 
 |Activer les commentaires
 |Facultatif
-|Si des initiatives de ce type peuvent recevoir des commentaires des participants.
+|Pour permettre aux participant·e·x·s de commenter l'initiatives de ce type.
 
-|Collecter les données personnelles des participants lors de la signature
+|Collecter les données personnelles des participant·e·x·s lors de la signature
 |Facultatif
-|Ajoute une étape au processus de signature. Lorsqu'un participant clique sur le bouton de signature, il est redirigé vers un formulaire demandant des données personnelles.
-Il est ensuite utilisé avec l'action d'exportation PDF après la fin de la période de rappel.
+|Ajoute une étape au processus de signature. Lorsqu'unx participant·e·x clique sur le bouton de signature, iel est redirigé·e·x vers un formulaire demandant des données personnelles.
+Les données peuvent être exportées en PDF, une fois la collecte de signatures terminée.
 
 |Informations légales sur la collecte de données personnelles
-|Requis si le drapeau précédent est vérifié.
-|Avis de confidentialité et conditions d'utilisation pour les données personnelles du participant pendant le processus de signature.
+|Requis si l'option précédente est choisie.
+|Avis de confidentialité et conditions d'utilisation pour les données personnelles des participant·e·x·s pendant le processus de signature.
 |===
 
 ==== Paramètres d'autorisation
@@ -124,38 +124,38 @@ image::spaces/initiatives/type_form_authorizations.png[Initiative type form auth
 |Le type d'autorisation requis pour signer une initiative. Laisser vide ne nécessite aucune autorisation.
 |===
 
-Cliquez sur le bouton Créer en bas du formulaire pour enregistrer votre type d'initiative.
+Cliquer sur le bouton Créer en bas du formulaire pour enregistrer votre type d'initiative.
 Ce n’est qu’après cela que vous pourrez créer la marge de manœuvre nécessaire à la création des premières initiatives.
 
-==== Créer une portée de type d'initiative
+==== Créer un secteur de type d'initiative
 
-Un type d'initiative doit avoir des champs d'application associés pour permettre aux participants de créer des initiatives.
-En effet, elles permettent d'associer une portée à un certain nombre de signatures, et donc d'avoir un seuil de signatures multiples pour un même type d'initiative.
+Un type d'initiative doit avoir des secteurs associés pour permettre aux participant·e·x·s de créer des initiatives.
+En effet, ils permettent d'associer un secteur à un certain nombre de signatures, et donc d'avoir différents seuils de signatures pour un même type d'initiative.
 
-Dans le formulaire de type d'initiative, faites défiler vers le bas pour trouver une nouvelle section appelée « Scopes pour le type d'initiative » et un bouton.
+Dans le formulaire de type d'initiative, faire défiler vers le bas pour trouver une nouvelle section appelée « Secteur pour le type d'initiative » et un bouton.
 
 image::spaces/initiatives/type_form_scopes.png[Initiative type form scopes]
 
-Cliquez sur le bouton « Nouveau champ d'application du type d'initiative » pour en créer un.
+Cliquer sur le bouton « Nouveau secteur du type d'initiative » pour en créer un.
 
 image::spaces/initiatives/admin_initiative_type_scope.png[New initiative type form]
 
-.Formulaire de portée du nouveau type d'initiative admin
+.Formulaire admin de nouveau secteur de type d'initiative
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Portées
 |Obligatoire
-|Choisissez la portée liée à ce numéro si les signatures. Si vous n'avez aucune règle, conservez la portée globale.
+|Choisir le secteur lié à ce nombre de signatures. S'il n'y a aucune règle, conserver le secteur globale.
 
 |Signatures requises
 |Obligatoire
-|Nombre de signatures que l'initiative doit avoir avant la date de fin de collecte pour être acceptée.
+|Nombre de signatures que l'initiative obtenir avant la date de fin de collecte pour être acceptée.
 |===
 
-Vous pouvez ajouter plusieurs portées de type initiative si vous avez un nombre spécifique de signatures pour des portées spécifiques.
-Par exemple, il peut s'agir d'un pourcentage de différents territoires.
+Vous pouvez ajouter plusieurs secteurs de type initiative si vous avez un nombre spécifique de signatures pour des secteurs spécifiques.
+Par exemple, il peut s'agir d'un pourcentage des différents habitant·e·x·s d'e différents territoires.
 
 image::spaces/initiatives/type_form_scopes_multiple.png[Initiative type form scopes with three scopes]
 
@@ -163,10 +163,10 @@ image::spaces/initiatives/type_form_scopes_multiple.png[Initiative type form sco
 
 image::spaces/initiatives/initiatives_types_list.png[Initiatives types list]
 
-Une fois que vous avez créé un ou plusieurs types d'initiatives, vous pouvez les gérer dans la liste dans le panneau d'administration, avec:
+Une fois un ou plusieurs types d'initiatives crées, vous pouvez les gérer dans la liste dans le panneau d'administration, avec :
 
 * *Types d'initiatives* : titre du type d'initiative.
-* *Créé à* : date de création des types d'initiative.
+* *Créé le* : date de création des types d'initiative.
 
 === Actions
 
@@ -175,15 +175,15 @@ Une fois que vous avez créé un ou plusieurs types d'initiatives, vous pouvez l
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_edit.png[Configurer le type d'icône des initiatives]
+|image:icons/action_edit.png[Icône configurer le type des initiatives]
 |Configurer
-|Éditer la configuration et initialiser les portées de type pour ce type.
+|Pour modifier la configuration et initier les types de secteurs pour ce type.
 
 |image:icons/action_permissions.png[Permissions icon]
 |Autorisations
-|Éditer les permissions pour ce type d'initiative.
+|Pour modifier les permissions pour ce type d'initiative.
 
-|image:icons/action_delete.png[Supprimer le type d'icône d'initiatives]
+|image:icons/action_delete.png[Icône supprimer le type d'initiatives]
 |Supprimez
 |Pour supprimer le type d'initiation. Ne peut être fait que si aucune initiative n'est liée à ce type.
 |===
@@ -194,4 +194,4 @@ Vous pouvez configurer les permissions pour un type d'initiative en cliquant sur
 
 image::spaces/initiatives/initiatives_types_permissions.png[Initiatives types permissions edition]
 
-Sur cette page, vous pouvez demander à xref:admin:participants/authorizations.adoc[Authorizations] spécifique afin que les participants puissent signer ou créer une initiative.
+Sur cette page, vous pouvez demander des xref:admin:participants/authorizations.adoc[Autorisations] spécifiques pour que les participant·e·x·s puissent signer ou créer une initiative.
