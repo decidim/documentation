@@ -1,11 +1,11 @@
-= Types de pétition
+= Types d'initiatives
 
 == En bref
 
-Les types d'initiatives sont le cadre principal des initiatives, car ils permettent aux administrateurs de définir les différentes formes d'initiatives
+Les types d'initiatives sont le cadre principal des initiatives, car ils permettent aux administrateur·ices de définir les différentes formes que les initiatives
 peuvent prendre, ainsi que les règles spécifiques et le nombre de signatures nécessaires pour chaque type d'initiative.
 
-Par exemple, votre organisation pourrait autoriser les participants à :
+Par exemple, votre organisation pourrait autoriser les participant·e·x·s à :
 
 * proposer un nouveau règlement
 * ouvrir un groupe de travail ou un comité
@@ -13,17 +13,16 @@ Par exemple, votre organisation pourrait autoriser les participants à :
 * demande une assemblée générale extraordinaire
 * ajouter des éléments à l'ordre du jour d'un conseil de ville
 
-In general, such mechanisms are specified in an internal regulation (like a municipal normative or state law), specifying
-the number of signatures required.
+En général, ses règles sont spécifiées par des régulations internes (selon les normes municipales ou la législation nationale, par exemple), définissant le nombre de signatures nécessaire.
 
-Vous devez créer au moins *un type d'initiative* et *une portée de type d'initiative* pour permettre aux participants de publier des initiatives.
-Si vous créez plusieurs types d'initiatives, les participants peuvent choisir le type auquel appartient leur initiative.
+Vous devez créer au moins *un type d'initiative* et *un secteur de type d'initiative* pour permettre aux participant·e·x·s de publier des initiatives.
+Si vous créez plusieurs types d'initiatives, les participant·e·x·s peuvent choisir le type auquel appartient leur initiative.
 
 == Configuration
 
 === Créer un type d'initiative
 
-Pour créer un type d'initiative, cliquez sur le bouton « Gérer » en haut à droite de la page, puis sur l'élément de menu « Types d'initiatives ».
+Pour créer un type d'initiative, cliquer sur « Gérer » en haut à droite de la page, puis « Types d'initiatives » dans le menu.
 
 image::spaces/initiatives/initiatives_menu_types.png[Access Initiatives types panel]
 
