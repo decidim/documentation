@@ -8,14 +8,14 @@ Grâce aux inscriptions, vous pouvez avoir le contrôle de la capacité de parti
 limiter le nombre de personnes pouvant assister à une réunion, ou de d'estimer s'il faut trouver une plus grande salle
 pour tenir la réunion.
 
-L'activation de cette fonctionnalité ajoute un bouton « S'inscrire » afin que les participants puissent exprimer leur souhait d'assister à la réunion.
+L'activation de cette fonctionnalité ajoute un bouton « S'inscrire » afin que les participant·e·x·s puissent exprimer leur souhait d'assister à la réunion.
 
 image::components/meetings/registrations/frontend_join_meeting.png[Join a meeting button on meeting page]
 
-Selon la façon dont cette fonctionnalité est configurée, les administrateurs peuvent :
+Selon la façon dont cette fonctionnalité est configurée, les administrateur·ices peuvent :
 
 . définir le nombre de créneaux disponibles pour contrôler la capacité maximale de cette réunion
-. créer un [formulaire d'inscription personnalisé] pour demander des informations aux participants
+. créer un [formulaire d'inscription personnalisé] pour demander des informations aux participant·e·x·s
 . envoyer des [invitations] à d'autres participants ou personnes non enregistrées sur la plateforme
 . contrôler la présence à la réunion via [codes d'inscription]
 
@@ -43,7 +43,7 @@ image:components/meetings/registrations/backend.png[Paramètres des inscriptions
 
 |Valider le code d'inscription
 |Facultatif
-|Pour vérifier les [codes d'inscription] des participants, si activés pour cette réunion.
+|Pour vérifier les [codes d'inscription] des participant·e·x·s, si activés pour cette réunion.
 
 |Enregistrements activés
 |Obligatoire
@@ -51,7 +51,7 @@ image:components/meetings/registrations/backend.png[Paramètres des inscriptions
 
 |Formulaire d'inscription activé
 |Facultatif
-|Cocher cette case pour activer un formulaire d'inscription pour cette réunion, afin de demander des informations aux participants.
+|Cocher cette case pour activer un formulaire d'inscription pour cette réunion, afin de demander des informations aux participant·e·x·s.
 
 |Emplacements disponibles pour cette réunion
 |Obligatoire
@@ -91,31 +91,31 @@ Les données exportées contiennent ces champs :
 
 * id : l'identifiant d'enregistrement
 * code: le xref:_registration_code[code d'inscription] (si cette fonctionnalité est activée)
-* utilisateur/nom : le nom de l'utilisateur
-* utilisateur/email: l'email de l'utilisateur
-* user/user_group: le groupe de l'utilisateur s'il a sélectionné qu'il représente un groupe lors de l'inscription
+* utilisateur/nom : le nom de l'utilisateur·ice
+* utilisateur/email: l'email de l'utilisateur·ice
+* user/user_group: le groupe de l'utilisateur·ice s'iel à sélection l'option de représenter le groupe lors de l'inscription
 
 === Invitations
 
-Cette fonctionnalité permet d'inviter des participants à une réunion. Ils peuvent être des participants actifs ou des participants
-absents de la plateforme.
+Cette fonctionnalité permet d'inviter des participant·e·x·s à une réunion. Iels peuvent être des participant·e·x·s enregistré·e·x·s ou des participant·e·x·s
+absent·e·x·s de la plateforme.
 
 image::components/meetings/registrations/invite_attendee.png[Invite attendee for registration in a meeting]
 
 === Code d'enregistrement
 
-Cette fonctionnalité permet de vérifier si un participant est bien inscrit à la réunion.
+Cette fonctionnalité permet de vérifier si unx participant·e·x est bien inscrit·e·x à la réunion.
 
-Après l’inscription, le participant reçoit un code d’inscription dans l’e-mail de confirmation et sur la page de la réunion.
+Après l’inscription, lae participant·e·x reçoit un code d’inscription dans l’e-mail de confirmation et sur la page de la réunion.
 
 image : [Code d'enregistrement dans une interface de réunion]
 
-La validation du code est en attente. Cela signifie que lors de la participation à une réunion, le participant doit donner le code à un organisateur
+La validation du code est en attente. Cela signifie que lors de la participation à une réunion, lae participant·e·x doit donner le code à unx organisateur·ice
 pour le valider.
-L'organisateur saisit ensuite le code dans le champ "Valider le code d'inscription", pour confirmer qu'il existe dans la base de données.
+L'organisateur·ice saisit ensuite le code dans le champ "Valider le code d'inscription", pour confirmer qu'iel existe dans la base de données.
 
 image:components/meetings/registrations/backend_w_registration_code.png[Formulaire de code d'inscription dans une réunion]
 
-Une fois le code vérifié, le participant est considéré comme ayant participé à la réunion et le code est marqué comme validé.
+Une fois le code vérifié, lae participant·e·x est considéré·e·x comme ayant participé à la réunion et le code est marqué comme validé.
 
 image:components/meetings/registrations/frontend_confirmed_w_code.png[Code d'enregistrement dans une interface de réunion]
