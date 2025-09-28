@@ -61,16 +61,16 @@ image::components/meetings/close/form_backend.png[Close meeting form in the back
 
 ==== Rencontres de participant·e·x·s
 
-Tout comme les participants peuvent créer des réunions, ils peuvent également clôturer une réunion. Ils ont moins de champs à remplir que les administrateurs.
+Tout comme les participant·e·x·s peuvent créer des rencontres, iels peuvent également clôturer une rencontre. Iels ont moins de champs à remplir que les administrateur·ices.
 
 image::components/meetings/close/button_frontend.png[Close meeting button in the frontend]
 
-Une fois la réunion terminée, l'auteur de la réunion peut voir le bouton « Fermer la réunion ». En cliquant dessus, ils sont redirigés vers
+Une fois la rencontre terminée, l'auteur·ice de la rencontre peut voir le bouton « Fermer la réunion ». En cliquant dessus, iles sont redirigé·e·x·s vers
 le formulaire de clôture.
 
 image::components/meetings/close/form_frontend.png[Close meeting form in the frontend]
 
-.Fermer le formulaire de réunion (frontend)
+.Formulaire de clôture de rencontre (frontend)
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -90,10 +90,10 @@ image::components/meetings/close/form_frontend.png[Close meeting form in the fro
 
 === Propositions associées
 
-Si une proposition est liée à une réunion lors de la clôture, la réunion apparaît également dans la page des propositions.
+Si une proposition est liée à une rencontre lors de la clôture, la rencontre apparaît également dans la page des propositions.
 
 image::components/meetings/close/related_meeting.png[Related meeting in a proposal]
 
-Cela permet aux participants de naviguer rapidement parmi les propositions.
+Cela permet aux participant·e·x·s de naviguer rapidement parmi les propositions.
 
 image::components/meetings/close/related_proposal.png[Related proposal in a meeting]
