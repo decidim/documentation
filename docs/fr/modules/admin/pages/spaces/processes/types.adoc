@@ -1,46 +1,46 @@
-= Types de processus
+= Types de concertation
 
 == En bref
 
-Dans certains cas, il est nécessaire d'organiser des processus participatifs par plus que les seuls xref:spaces/processes/groups.adoc[Process Groups].
-C'est là que les types de processus peuvent être utiles, et ajouter une couche de catégorisation.
-Les participants sont alors en mesure de filtrer les processus par les types de processus que vous avez créés.
+Dans certains cas, il est nécessaire d'organiser des concertations par plus que les seuls xref:spaces/processes/groups.adoc[Groupes de concertation].
+C'est là que les types de concertation peuvent être utiles, et ajouter un niveau de catégorisation.
+Les participant·e·x·s sont alors en mesure de filtrer les concertations par les types de concertation que vous avez créés.
 
-NOTE: Les types de processus fonctionnent de la même façon que xref:admin:spaces/assemblies.adoc#_assemblies_types[Type d'assemblée].
+NOTE: Les types de concertation fonctionnent de la même façon que lesxref:admin:spaces/assemblies.adoc#_assemblies_types[Types d'assemblée].
 
 == Configuration
 
-=== Gérer les types de processus
+=== Gérer les types de concertation
 
-Pour accéder à la liste des types de processus, cliquez sur le bouton « Gérer » en haut à droite de la page, puis cliquez sur le lien de menu « Type de processus ».
+Pour accéder à la liste des types de concertation, cliquer sur « Gérer » en haut à droite de la page, puis cliquer sur « Types de concertation » dans le menu.
 
 image::spaces/processes/process_types_list.png[Backend process types menu item]
 
-=== Créer un type de processus
+=== Créer un type de concertation
 
-Cliquez sur le bouton "Nouveau type de processus" en haut à droite de la page.
+Cliquer sur "Nouveau type de concertation" en haut à droite de la page.
 
-image:spaces/processes/process_types_form.png[Formulaire de création du type de processus]
+image:spaces/processes/process_types_form.png[Formulaire de création de type de concertation]
 
-.Nouveau formulaire de type de processus participatif : Informations générales
+.Formulaire de création de type de concertation : Informations générales
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Titre
 |Obligatoire
-|Titre du type de processus participatif.
+|Titre du type de concertation.
 |===
 
-=== Ajouter un type de processus à un processus
+=== Ajouter un type de concertation à une concertation
 
-Pour relier les processus aux types de processus, dans la page d'édition d'un processus, sélectionnez le type de processus sous la section intitulée Autre.
+Pour relier les concertations aux types de concertation, dans la page de modification d'une concertation, sélectionner le type de concertation sous la section intitulée Autre.
 
 image::spaces/processes/process_types_edit_process.png[Choose a process type when editing a process]
 
-=== Filtrer par types de processus
+=== Filtrer par types de concertation
 
-S'il y a au moins un type de processus défini et lié à un processus, un filtre est affiché à gauche de la liste des processus
-dans l'interface participante, permettant le filtrage des processus.
+S'il y a au moins un type de concertation défini et lié à une concertation, un filtre est affiché à gauche de la liste des concertations
+dans l'interface participant·e·x·, permettant le filtrage des concertations.
 
 image::spaces/processes/process_types_filter.png[Process types filter in the processes index]
