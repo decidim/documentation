@@ -2,38 +2,37 @@
 
 == En bref
 
-Une initiative est un type spécifique d'espace participatif, qui peut être créé par n'importe quel participant, indépendamment
-d'autres canaux ou espaces.
-Il travaille à travers la collecte de signatures en ligne et/ou en personne pour que l'organisation effectue une action spécifique, comme
+Une initiative est un type spécifique d'espace participatif, qui peut être créé par n'importe quel·le·x participant·e·x, indépendamment
+des autres canaux ou espaces.
+Cela fonctionne par la collecte de signatures en ligne et/ou en personne pour que l'organisation exécuter une action spécifique, comme
 modifier un règlement, initier un projet, changer le nom d'un département ou d'une rue, etc.
 
-Les promoteurs d'une initiative peuvent définir ses objectifs, rassembler le soutien, le débat, la diffuser et définir des salles de réunion
-où les signatures peuvent être collectées auprès des participants ou des débats ouverts à d'autres participants.
+Les promoteur·e·uses d'une initiative peuvent définir ses objectifs, rassembler le soutien, débattre, la diffuser et définir des salles de réunion
+où peuvent se dérouler la collecte de signatures des participant·e·x·s ou des débats ouverts à d'autres participant·e·x·s.
 
 NOTE: Un grand nombre des comportements et des paramètres des initiatives sont configurables dans l'initiative
-xref:admin:initiatives_initializer.adoc[initializer]. Demandez à l'organisateur de mettre en œuvre si vous avez des doutes quant à la configuration de votre organisation
+xref:admin:initiatives_initializer.adoc[initialiseur]. Demandez à l'organisateur·ice la mise en œuvre si vous avez des doutes quant à la configuration de votre organisation
 .
 
 Exemples de types d'initiatives :
 
 * Ajouter un élément à un ordre du jour de l'assemblée
-* Effectuer un processus participatif
-* Créer un nouvel assemblage
+* Effectuer une concertation
+* Créer une nouvelle assemblée
 * Approuver ou modifier un règlement
-* Demander des assemblées
+* Demander l'organisation d'une assemblée
 
-Les initiatives doivent être distinguées des autres espaces car elles peuvent être utilisées comme un outil participatif promu *par les participants*.
-In other words, the initiatives are mechanisms for *semi-direct democracy* through which participants can promote a certain
-action of common interest by collecting a specific number of signatures.
+Les initiatives doivent être distinguées des autres espaces car elles peuvent être utilisées comme un outil participatif promu *par les participant·e·x·s*.
+C'est-à-dire que les initiatives fonctionnent comme un processus de *démocratie semi-directe* par lequel les participant·e·x·s peuvent promouvoir une certaine action d'intérêt commun en récoltant un certain nombre de signatures.
 
-Le rôle de l'administrateur de la plateforme est donc quelque peu différent de celui des autres espaces de participation, comme
-l'organisation doit permettre aux participants et leur offrir le soutien technique et les conseils nécessaires.
+Le rôle de l'administrateur·ice de la plateforme est donc quelque peu différent de celui des autres espaces de participation, comme
+l'organisation doit activer les comptes des participant·e·x·s et leur offrir le soutien technique et les conseils nécessaires.
 
 Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments :
 
 * xref:admin:admin:spaces/initiatives/types.adoc[Types d'initiatives]
 * xref:admin:spaces/initiatives/initiative_creation.adoc[Création de l'initiative]
-** xref:admin:espaces/initiatives/author_manage/commissione.adoc[Comité du promoteur]
+** xref:admin:espaces/initiatives/author_manage/commissione.adoc[Comité de promotion]
 ** xref:admin:spaces/initiatives/author_manage/manage.adoc[Actions auteurs]
 * xref:admin:admin:spaces/initiatives/manage.adoc[Gestion des initiatives]
 ** xref:admin:espace:initiatives/author_manage/commissione.adoc[Comité du promoteur]
@@ -45,38 +44,38 @@ Dans cette section de documentation, vous pouvez trouver comment configurer et g
 
 === How to find it?
 
-Pour accéder au panneau des initiatives, allez dans le panneau d'administration et cliquez sur l'élément "Initiatives" dans la barre de navigation de l'administration
+Pour accéder au panneau des initiatives, aller dans le panneau d'administration et cliquer sur "Initiatives" dans la barre de navigation de l'administration
 .
 
 image::spaces/initiatives/initiatives_menu.png[Access Initiatives panel]
 
-Là, vous pouvez commencer à configurer l'espace des initiatives, en :
+Ici vous pouvez configurer l'espace des initiatives comme suit :
 
-. Création de xref:admin:admin:spaces/initiatives/types.adoc[Types d'initiatives] et de types d'initiative
-. Configuration des autorisations si nécessaire
-. Gérer les initiatives des participants
+. Créer des xref:admin:admin:spaces/initiatives/types.adoc[Types d'initiatives] et des secteurs de types d'initiative
+. Configurer des autorisations si nécessaire
+. Gérer les initiatives des participant·e·x·s
 
 image::spaces/initiatives/initiatives_list_empty.png[Initiatives panel without initiatives]
 
-NOTE: Au début, la liste est vide et les participants ne peuvent pas créer d'initiatives.
-Pour faire la configuration initiale de l'espace d'initiative, lisez l'article xref:admin:spaces/initiatives/types.adoc[Types d'initiatives].
+NOTE: Au début, la liste est vide et les participant·e·x·s ne peuvent pas créer d'initiatives.
+Pour la configuration initiale de l'espace d'initiative, lire l'article xref:admin:spaces/initiatives/types.adoc[Types d'initiatives].
 
 === Cycle de vie des initiatives
 
 Les initiatives passent par différentes étapes et suivent un cycle de vie spécifique :
 
-* *Créé* : L'auteur a créé l'initiative, il n'est visible que par l'auteur, les membres du comité de promotion et les administrateurs.
-* *Validation technique* : L'initiative est prête à être examinée par un administrateur.
-* *Publié* : Un administrateur a passé en revue l'initiative et l'a publiée.
-* *Expiré* : Si aucun administrateur ne l'a publié avant un moment configuré dans l'initialiseur de l'initiative.
-* *Abandonné* : Si l'initiative n'a pas réussi l'examen par un administrateur.
-* *Rejeté* : Si l'initiative n'a pas reçu assez de signatures durant la période de collecte des signatures.
-* *Accepté* : Si l'initiative a reçu suffisamment de signatures durant la période de collecte des signatures.
+* *Créée* : L'auteur·ice a créé l'initiative, elle n'est visible que par l'auteur·ice, les membres du comité de promotion et les administrateur·ices.
+* *Validation technique* : L'initiative est prête à être examinée par unx administrateur·ice.
+* *Publiée* : Unx administrateur·ice a passé en revue l'initiative et l'a publiée.
+* *Expirée* : Si elle n'est pas publiée avant un certain temps, configuré dans l'initialiseur de l'initiative.
+* *Abandonnée* : Si l'initiative est refoulée par unx administrateur·ice après examen.
+* *Rejetée* : Si l'initiative n'a pas reçu assez de signatures durant la période de collecte des signatures.
+* *Acceptée* : Si l'initiative a reçu suffisamment de signatures durant la période de collecte des signatures.
 
 [plantuml]
 @startuml
 :Créé;
-:Validation technique;
+:Validation technique ;
 si (a dépassé le délai maximum de validation ?) puis (oui)
   #rose:Expiré;
   kill;
