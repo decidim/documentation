@@ -34,7 +34,7 @@ image::components/accountability/new_result.png[New result form]
 
 |Secteur
 |Déprécié
-|Utiliser [taxonomies] à la place.
+|Utiliser link:https://docs.decidim.org/en/develop/develop/taxonomies.html[taxonomies] à la place.
 
 |Catégorie
 |Facultatif
@@ -67,7 +67,7 @@ image::components/accountability/new_result.png[New result form]
 
 === Gérer les réalisations
 
-Sur la liste des résultats dans le panneau d'administration, les administrateurs peuvent voir :
+Dans la liste des réalisations dans le panneau de l'administration sont affichés :
 
 * *ID* : Numéro d'identification pour cette réalisation.
 * *Titre* : Titre de la réalisation.
@@ -119,7 +119,7 @@ image::components/accountability/results_list_filter.png[New result button]
 
 |image:icons/action_permissions.png[Permissions icon]
 |Autorisations
-|Pour gérer les permissions de cette réalisation, en fonction de la vérification effectuée par un participant. Permet à un administrateur de configurer
+|Pour gérer les permissions de cette réalisation, en fonction de la vérification effectuée par unx participant·e·x. Permet à un administrateur·ice de configurer
 qui peut *Commenter* une réalisation.
 
 |image:icons/action_delete.png[Supprimer l'icône]
