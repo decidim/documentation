@@ -1,36 +1,35 @@
-= Phases
+= Étapes
 
 == En bref
 
-Un processus participatif est une séquence de phases ordonnées dans le temps. Selon la phase de la timeline du processus que vous
-êtes, vous pouvez alors activer et configurer les fonctionnalités dont vous avez besoin pour chaque phase.
+Une concertation est une séquence d'étapes ordonnées dans le temps. Selon l'étape de la chronologie du processus sur laquelle vous
+êtes, vous pouvez alors activer et configurer les fonctionnalités dont vous avez besoin pour chaque étape.
 
-Idéalement, les phases d'un processus participatif sont toujours les mêmes et ne sont pas modifiées, pour que les participants puissent savoir ce qui est
-les règles et les délais et peuvent s'organiser pour savoir quand il serait préférable pour eux de participer à ce processus.
+Idéalement, les Étapes d'une Concertation sont toujours les mêmes et ne sont pas modifiées, pour que les participant·e·x·s puissent connaitre
+les règles et les délais, et peuvent ainsi s'organiser pour savoir quand il serait préférable de participer à ce processus.
 
-Par exemple, la structure standard d'un processus participatif pourrait être la suivante:
+Par exemple, la structure standard d'une concertation pourrait être la suivante :
 
 . Présentation
 . Diagnostic
 . Création et débat de propositions
 . Priorisation des propositions
 . Évaluation des propositions
-. Surveillance
+. Suivi
 
-Participants can find the link to different phases of a participatory process in the "Phase and duration" landing page content block,
-when it's enabled by an administrator in the process xref:admin:spaces/processes/landing_page.adoc[Landing page].
+Les participant·e·x·s ont accès au lien des différentes étapes de la concertation dans le bloc de contenu de la page d'accueil "Étape et durée", si activé par unx administrateur·ice dans la xref:admin:spaces/processes/landing_page.adoc[Page d'accueil] de la concertation.
 
 image::spaces/processes/process_phases_block.png[Block with processes phases link]
 
-En cliquant sur le lien pour la phase active, ils peuvent voir la description complète et l'explication des phases dans une fenêtre contextuelle.
+En cliquant sur le lien pour l'étape active, il est possible consulter la description complète et l'explication des étapes dans un pop-up.
 
 image::spaces/processes/process_phases.png[Process phases explanation]
 
 == Configuration
 
-=== Gérer les phases
+=== Gérer les étpaes
 
-Pour accéder à la configuration des phases, cliquez dans le panneau de navigation secondaire de l'élément "Phases".
+Pour accéder à la configuration des étapes, cliquer dans le panneau de navigation secondaire sur "Étapes".
 
 image::spaces/processes/process_phases_list.png[Phases of a participatory process]
 
@@ -43,7 +42,7 @@ image::spaces/processes/process_phases_list.png[Phases of a participatory proces
 
 |image:icons/action_edit.png[Modifier l'icône]
 |Editer
-|Éditer cette phase.
+|Modifier cette étape.
 |Toujours disponible
 
 |image:icons/action_activate.png[Activer l'icône]
