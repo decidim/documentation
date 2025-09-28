@@ -40,7 +40,7 @@ image::spaces/processes/processes_new_form_general_info.png[New participatory pr
 |Sous-titre
 |Obligatoire
 |Sous-titre. Par exemple, "décidons ensemble de nos priorités"
-|Visible dans le bloc « Image du héros et CTA ».
+|Visible dans le bloc « Image de la bannière et CTA ».
 
 |Rang d'affichage
 |Obligatoire
@@ -49,14 +49,14 @@ image::spaces/processes/processes_new_form_general_info.png[New participatory pr
 
 |Identifiant d'URL
 |Obligatoire
-|Les identifiants d'URL sont utilisés pour générer les URL qui pointent vers ce processus. N'accepte que des lettres, des chiffres et des tirets et doit
+|Les identifiants d'URL sont utilisés pour générer les URL qui dirige vers ce processus. N'accepte que des lettres, des chiffres et des tirets et doit
 commencer par une lettre.
 |Visible dans l'URL du processus participatif, par exemple https://example.org/processes/participatory-budget-2020.
 
 |Hashtag
 |Facultatif
 |Hashtag redirigeant vers le réseau social X.
-|Visible dans le bloc « Image du héros et CTA ».
+|Visible dans le bloc « Image de la bannière et CTA ».
 
 |Courte description
 |Obligatoire
@@ -70,18 +70,18 @@ commencer par une lettre.
 
 |Annonce
 |Facultatif
-|Le texte que vous entrez ici est affiché à l'utilisateur juste en dessous des informations de processus.
-|Visible dans le bloc "Annoncement".
+|Le texte entré ici est s'affiche juste en dessous des informations de processus, visible par les utilisateur·ices.
+|Visible dans le bloc de la page d'accueil "Annonce".
 |===
 
 === Durée
 
-Cette section permet de fournir des informations sur les dates de début et de fin du processus.
-Il peut être activé sur la page d'accueil avec le bloc "Phase & durée".
+Cette section permet de fournir des informations concernant les dates de début et de fin du processus.
+Peut être activé sur la page d'accueil avec le bloc "Étapes & durée".
 
 image::spaces/processes/processes_new_form_duration.png[New participatory process form duration section]
 
-.Nouvelle forme de processus participatif : Durée
+.Formulaire de création d'un processus participatif : Durée
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -104,16 +104,16 @@ image::spaces/processes/processes_new_form_images.png[New participatory process 
 |===
 |Champ |Type |Description
 
-|Image de la maison
+|Image d'accueil
 |Facultatif
-|Image utilisée dans les cartes de présentation de ce processus. Orientation pour le fichier: Doit être une image ou un document.
-Pour les images, utilisez de préférence des images paysagères, le service récolte l'image. Taille maximale du fichier : 10 Mo
+|Image utilisée dans les cartes de présentation de ce processus. Instruction pour le fichier : Doit être une image ou un document.
+Pour les images, utiliser de préférence des images au format paysage, car le service les recadre. Taille maximale du fichier : 10 Mo
 |===
 
 === Métadonnées
 
 Cette section permet de fournir des méta-informations sur le processus.
-It can be enabled on the landing page with the "Metadata" landing page block.
+Elle peut être activée sur la page d'accueil avec le bloc "Métadonnée" de la page d'accueil.
 
 image::spaces/processes/processes_new_form_metadata.png[New participatory process form metadata section]
 
@@ -122,35 +122,35 @@ image::spaces/processes/processes_new_form_metadata.png[New participatory proces
 |===
 |Champ |Type |Description
 
-|Groupe de promoteurs
+|Groupe de promoteur·ices
 |Facultatif
-|If a specific group is at the origin of the process, like a city direction, an association committee, etc.
+|Si un groupe spécifique est à l'origine de la concertation, tel que la direction d'une ville, le comité d'une association, etc.
 
 |Zone d'organisation
 |Facultatif
-|The organization domain or category, if it's relevant.
+|Domaine ou catégorie de l'organisation, si pertinent.
 
-|Métadonnées du périmètre d'application
+|Méta-données du secteur
 |Facultatif
-|Metadata on the process scope, if it's relevant.
+|Métadonnée du secteur du processus, si pertinent.
 
 |Qui participe
 |Facultatif
-|Who are the authorized participants, who can participate to the process.
+|Qui sont les participant·e·x·s, qui peut participer au processus.
 
 |Ce qui est décidé
 |Facultatif
-|The issue of the process, the object of what is decided.
+|La problématique de la concertation, l'objet de ce qui est décidé.
 
-|Comment est-il décidé
+|Comment sont prises les décisions
 |Facultatif
-|The decision making process.
+|Le processus de décision.
 |===
 
 === Filtres
 
 Cette section détermine les filtres disponibles dans le processus, dans les différents composants.
-Les filtres peuvent ensuite être activés et configurés dans chaque composant.
+Les filtres peuvent ensuite être activés et configurés dans chaque fonctionnalité.
 
 image::spaces/processes/processes_new_form_filters.png[New participatory process form filters section]
 
