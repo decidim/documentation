@@ -2,7 +2,7 @@
 
 == En bref
 
-La fonctionnalité ordre du jour permet à une administratrice de définir le calendrier d'une rencontre. Il est possible de définir des points et des sous-points dans l'ordre du jour, avec tous les sujets à aborder lors de la réunion, avec la description et la durée de chaque point et sous-point.
+La fonctionnalité ordre du jour permet à unx administrateur·rice de définir le calendrier d'une rencontre. Il est possible de définir des points et des sous-points dans l'ordre du jour, avec tous les sujets à aborder lors de la réunion, avec la description et la durée de chaque point et sous-point.
 
 image::components/meetings/agenda/agenda_frontend.png[Agenda in the frontend]
 
@@ -25,7 +25,7 @@ image:components/meetings/agenda/new_agenda_form.png[Formulaire de création d'o
 
 |Visible
 |Facultatif
-|Cocher cette case permet de rendre visible l'ordre du jour aux participants.
+|Cocher cette case permet de rendre visible l'ordre du jour aux participant·e·x·s.
 
 |Points de l'ordre du jour
 |Obligatoire
