@@ -2,10 +2,10 @@
 
 == En bref
 
-Les sondages des réunions permettent aux administrateurs de définir les questions pour les réunions auxqellles les participants pourront répondre alors qu'elles se déroulent. Il peut être très utile de recueillir des retours rapides et prendre des décisions durant les réunions, sans devoir quitter la réunion et utiliser d'autres outils.
+Les sondages des réunions permettent aux administrateur·ices de définir les questions pour les rencontres auxqellles les participant·e·x·s pourront répondre alors qu'elles se déroulent. Il peut être très utile de recueillir des retours rapides et prendre des décisions durant les rencontres, sans devoir quitter la rencontre et utiliser d'autres outils.
 
-Grâce à cette fonctionnalité, les administrateurs peuvent définir des questions et les gérer lorsque ces questions et leurs résultats sont présentés
-aux participants.
+Grâce à cette fonctionnalité, les administrateur·ices peuvent définir des questions et les gérer lorsque ces questions et leurs résultats sont présentés
+aux participant·e·x·s.
 
 == Configuration
 
@@ -37,24 +37,24 @@ Il est possible d'ajouter autant de questions et de réponses que souhaité.
 
 === Gérer le sondage
 
-Avant la réunion, si les administrateurs ont déjà configuré les questions des sondages, les participants peuvent voir un bouton "Répondre au sondage"
-sur la page de la réunion, les avertissant qu'un sondage sera publié sur cette réunion.
+Avant la rencontre, si les administrateur·ices ont déjà configuré les questions des sondages, les participant·e·x·s peuvent voir un bouton "Répondre au sondage"
+sur la page de la rencontre, les avertissant qu'un sondage sera publié sur cette rencontre.
 
 image::components/meetings/polls/frontend_before_meeting.png[Reply poll page before meeting]
 
-Lorsque la réunion commence, l'administrateur peut aller à la page d'administration du sondage dans le frontend envoyer les questions
-aux participants.
+Lorsque la rencontre commence, l'administrateur·ice peut aller à la page d'administration du sondage dans le frontend pour envoyer les questions
+aux participant·e·x·s.
 
 image::components/meetings/polls/poll_administration_page.png[Polls administration page]
 
-De leur côté, une fois la question est envoyée, les participants la voient apparaître sur la page des sondages et peuvent y répondre.
+De leur côté, une fois la question est envoyée, les participant·e·x·s la voient apparaître sur la page des sondages et peuvent y répondre.
 
 image::components/meetings/polls/poll_participant_reply.png[Polls question for participant]
 
-Ensuite, les administrateurs peuvent décider d'envoyer les réponses aux questions aux participants, afin qu'ils sachent quelle option est la plus votée.
+Ensuite, les administrateur·ices peuvent décider d'envoyer les réponses aux questions aux participant·e·x·s, afin qu'iels sachent quelle option est la plus votée.
 
 image::components/meetings/polls/poll_participant_replies_sent.png[Polls replies view for participant]
 
 === Exportation
 
-Les réponses des participants peuvent être exportées via le bouton "Tout exporter" en CSV, JSON, Excel et PDF.
+Les réponses des participant·e·x·s peuvent être exportées via le bouton "Tout exporter" en CSV, JSON, Excel et PDF.
