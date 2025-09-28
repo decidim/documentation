@@ -1,17 +1,16 @@
-= Groupes de processus
+= Groupes de concertation
 
 == En bref
 
-Un groupe de processus peut être utile pour subdiviser les grands processus participatifs en sous-processus selon des critères.
-It can also allow administrators to organize an instance with a lot of processes, to gather together the ones related to a
-specific type of process, or a specific scope, like participatory budgeting annual editions, mobility planning processes, etc.
+Un groupe de concertation peut être utile pour subdiviser les grandes concertations participatives en sous-concertations selon des critères.
+Cela permet aussi aux administrateur·ices d'organiser une instance avec plusieurs processus, pour regrouper les personnes liées à un type de processus spécifique, ou un secteur spécifique, comme une édition annuelle de budget participatif, planifier un processus de mobilité, etc.
 
 == Configuration
 
-=== Gérer les groupes de processus
+=== Gérer les groupes de concertation
 
-Pour accéder à la page de gestion des groupes de processus, cliquez sur l'onglet "Groupes de processus" dans la page d'index des processus.
-Vous y trouverez la liste des groupes de processus.
+Pour accéder à la page de gestion des groupes de concertation, cliquer sur l'onglet "Groupes de concertation" dans la page d'index des processus.
+Vous y trouverez la liste des groupes de concertation.
 
 image::spaces/processes/processes_group_list.png[Participatory process groups list]
 
@@ -22,27 +21,26 @@ image::spaces/processes/processes_group_list.png[Participatory process groups li
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_edit.png[Edit process group icon]
+|image:icons/action_edit.png[Icône Modifier le groupe de concertation]
 |Editer
-|To edit the configuration and components for the process group.
+|Pour modifier la configuration et les fonctionnalités d'un groupe de concertation.
 
-|image:icons/action_preview.png[Preview process group icon]
+|image:icons/action_preview.png[Icône Aperçu du groupe de concertation]
 |Aperçu
-|See a preview of the process group landing page.
+|Pour avoir un aperçu du groupe de concertation dans la page de destination.
 
-|image:icons/action_delete.png[Delete process group icon]
+|image:icons/action_delete.png[Icône Supprimer le groupe de concertation]
 |Supprimez
-|To delete this process group.
+|Pour supprimer le groupe de concertation.
 |===
 
-=== Create a process group
+=== Créer un groupe de concertation
 
-To create a new process group, click the "New process group" button in the top right of the page.
+Pour créer un nouveau groupe de concertation, cliquer sur "Nouveau groupe de concertation" en haut à droite de la page.
 
-==== About this process
+==== À propos de cette concertation
 
-This section allows to provide a general description about the process group, mainly a title, image, and description, and to
-select the existing processes that pertain to the group.
+Cette section permet de fournir une description générale concernant le groupe de concertation, le titre principale et une image, et de sélectionner le processus existant correspondant au groupe.
 
 image::spaces/processes/processes_group_form_about.png[Participatory process groups creation form about this process]
 
@@ -96,7 +94,7 @@ image::spaces/processes/processes_group_form_metadata.png[Participatory process 
 |Facultatif
 |Website related to this process group.
 
-|Groupe de promoteurs
+|Groupe de promoteur·ices
 |Facultatif
 |If a specific group is at the origin of the process, like a city direction, an association committee, etc.
 
@@ -104,7 +102,7 @@ image::spaces/processes/processes_group_form_metadata.png[Participatory process 
 |Facultatif
 |The organization domain or category, if it's relevant.
 
-|Métadonnées du périmètre d'application
+|Méta-données du secteur
 |Facultatif
 |Metadata on the process scope, if it's relevant.
 
@@ -116,7 +114,7 @@ image::spaces/processes/processes_group_form_metadata.png[Participatory process 
 |Facultatif
 |The issue of the process, the object of what is decided.
 
-|Comment est-il décidé
+|Comment sont prises les décisions
 |Facultatif
 |The decision making process.
 |===
@@ -170,9 +168,9 @@ image::spaces/processes/processes_group_landing_title.png[Participatory process 
 
 image::spaces/processes/processes_group_landing_metadata.png[Participatory process group landing page metadata block]
 
-==== Image principale et bouton d'action
+==== Image principale et CTA
 
-Le bloc image héros et contenu CTA permet d'afficher :
+Le bloc image principale et contenu CTA permet d'afficher :
 
 * *Title*: the title of the process group.
 * *an hashtag*: the hashtag, redirecting to the X social media.
@@ -195,7 +193,7 @@ You can configure how the results are sorted by most recent or random by clickin
 
 image::spaces/processes/processes_group_landing_results.png[Participatory process group landing page results block]
 
-==== Réunions à venir
+==== Rencontres à venir
 
 The Upcoming meetings content block allows to display a selection of meetings from the different participatory processes.
 You can configure how the results are sorted by most recent or random by clicking  the "Edit" icon on the landing page content block.
