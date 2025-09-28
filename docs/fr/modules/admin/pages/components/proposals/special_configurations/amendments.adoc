@@ -2,14 +2,14 @@
 
 == En bref
 
-La fonctionnalité de modification permet aux participants de proposer de modifier les propositions existantes et donc de collaborer avec d'autres participants.
+La fonctionnalité de modification permet aux participants de proposer de modifier les propositions existantes et donc de collaborer avec d'autres participant·e·x·s.
 
 Il est utile de proposer des améliorations ou des corrections, en particulier lors de la rédaction de lois ou de normes avec la fonctionnalité
 [Textes participatifs].
 
 Il a des similitudes avec [Brouillons collaboratifs], mais la principale différence
-est qu'avec les modifications, il n'est pas nécessaire de faire confiance aux intentions des autres auteurs, comme chaque changement est révisé et doit être
-approuvé par l'auteur de la proposition initiale.
+est qu'avec les modifications, il n'est pas nécessaire de faire confiance aux intentions des autres auteur·ices, comme chaque changement est révisé et doit être
+approuvé par l'auteur·ice de la proposition initiale.
 
 image::components/proposals/amendments/amendment.png[Amendment of a proposal]
 
@@ -38,44 +38,44 @@ image::components/proposals/component_specific_conf.png[Add component form - Spe
 
 |Réaction des amendements activée
 |Étape
-|Les auteurs de la proposition peuvent accepter ou rejeter les modifications du participant pour cette phase.
+|Les auteur·ices de la proposition peuvent accepter ou rejeter les modifications de lae participant·e·x pour cette étape.
 
 |La promotion de l'amendement est activée
 |Étape
-|Si elle est rejetée, les auteurs de modifications peuvent promouvoir leur modification en tant que proposition pour cette phase.
+|Si elle est rejetée, les auteur·ices de modifications peuvent promouvoir leur modification en tant que proposition pour cette étape.
 
 |Visibilité des amendements
 |Étape
-|Choisissez entre "les modifications sont visibles pour tous" ou "les modifications ne sont visibles que pour leurs auteurs"
+|Choisissez entre "les modifications sont visibles pour touxte" ou "les modifications ne sont visibles que pour leurs auteur·ices"
 |===
 
 === Créer un amendement
 
-Imaginons qu'un participant voit la proposition d'un autre participant et veut l'améliorer.
-Lorsque les modifications sont activées, les participants peuvent cliquer sur le bouton "modification" sur la page de la proposition.
+Imaginons qu'unx participant·e·x voit la proposition d'unx autre participant·e·x et veut l'améliorer.
+Lorsque les modifications sont activées, les participant·e·x·s peuvent cliquer sur le bouton "modification" sur la page de la proposition.
 
 image::components/proposals/amendments/proposal_to_amend.png[Amend button on proposal page]
 
-Ils peuvent ensuite apporter les modifications dans le formulaire "Créer un projet de modification", directement sur le texte original.
+Iel peut ensuite apporter les modifications dans le formulaire "Créer un projet de modification", directement sur le texte original.
 
 image::components/proposals/amendments/create_amendment_draft.png[Create amendment draft]
 
-Le participant peut ensuite prévisualiser sa modification avant de la publier.
+Lae participant·e·x peut ensuite prévisualiser sa modification avant de la publier.
 
 image::components/proposals/amendments/publish_amendment_draft.png[Publish amendment draft]
 
 === Revoir une modification
 
-Tous les participants peuvent voir les propositions de modification effectuées sur la page de la proposition.
-Les modifications apparaissent également comme des propositions dans la liste des propositions et le réseau, et peuvent être filtrées par les participants.
+Tous les participant·e·x·s peuvent voir les propositions de modification effectuées sur la page de la proposition.
+Les modifications apparaissent également comme des propositions dans la liste des propositions et le réseau, et peuvent être filtrées par les participant·e·x·s.
 
 image::components/proposals/amendments/proposal_amended.png[Proposal with amendments]
 
-L'auteur de la proposition modifiée reçoit une notification pour passer en revue la modification.
+L'auteur·ice de la proposition modifiée reçoit une notification pour passer en revue la modification.
 
 image::components/proposals/amendments/amendment.png[Amendment of a proposal]
 
-L'auteur peut alors accepter ou rejeter la modification. En cliquant sur « Accepter », il est redirigé vers la page de révision des modifications.
+L'auteur·ice peut alors accepter ou rejeter la modification. En cliquant sur « Accepter », iel est redirigé·e·x vers la page de révision des modifications.
 
 image::components/proposals/amendments/proposal_amendment_review.png[Proposal amendment review]
 
