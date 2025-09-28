@@ -2,13 +2,13 @@
 
 == En bref
 
-Le brouillon collaboratif permet aux participants d'écrire des propositions de manière collaborative, et de l'écrire à plusieurs.
+Le brouillon collaboratif permet aux participant·e·x·s d'écrire des propositions de manière collaborative, et de l'écrire à plusieurs.
 
-NOTE: Seul l'auteur original peut approuver ou rejeter les demandes de collaboration, retirer ou publier la proposition collaborative.
+NOTE: Seul l'auteur·ice original·e·xl peut approuver ou rejeter les demandes de collaboration, retirer ou publier la proposition collaborative.
 
 Il a des similitudes avec [Modifications] mais la principale différence
-est qu'avec les brouillons collaboratifs, il est nécessaire de faire confiance aux autres auteurs, car ils peuvent apporter des modifications à la proposition originale
-sans approbation de l'auteur original, bien que l'auteur original puisse décider de promouvoir le brouillon collaboratif pour une proposition.
+est qu'avec les brouillons collaboratifs, il est nécessaire de faire confiance aux autres auteur·ices, car iels peuvent apporter des modifications à la proposition originale
+sans approbation de l'auteur·ice original·e·x, bien que l'auteur·ice original·e·x puisse décider de promouvoir le brouillon collaboratif pour une proposition.
 
 image::components/proposals/collaborative_drafts/collaborative_draft_request_access.png[Collaborative draft with request access button]
 
@@ -20,30 +20,30 @@ image::components/proposals/component_specific_conf.png[Add component form - Spe
 
 === Créer un brouillon
 
-Une fois que les brouillons collaboratifs sont activés, les participants peuvent voir le bouton « Accéder aux brouillons collaboratifs » dans la liste des propositions.
+Une fois que les brouillons collaboratifs sont activés, les participant·e·x·s peuvent voir le bouton « Accéder aux brouillons collaboratifs » dans la liste des propositions.
 
 image::components/proposals/collaborative_drafts/proposals_list.png[collaborative draft button on proposals list]
 
-Les participants sont ensuite redirigés sur une liste dédiée aux brouillons collaboratifs, où ils peuvent commencer à créer de nouveaux brouillons collaboratifs.
+Les participant·e·x·s sont ensuite redirigé·e·x·s sur une liste dédiée aux brouillons collaboratifs, où iels peuvent commencer à créer de nouveaux brouillons collaboratifs.
 
 image::components/proposals/collaborative_drafts/list.png[Collaborative draft list]
 
-En cliquant sur "Nouveau brouillon collaboratif", ils sont redirigés sur le formulaire de création de brouillon collaboratif.
+En cliquant sur "Nouveau brouillon collaboratif", iels sont redirigés sur le formulaire de création de brouillon collaboratif.
 
 image::components/proposals/collaborative_drafts/create_form.png[Collaborative draft creation form]
 
-Une fois le brouillon collaboratif créé, l'auteur peut le modifier, le retirer ou le publier, approuver ou rejeter d'éventuelles demandes de collaboration.
+Une fois le brouillon collaboratif créé, l'auteur·ice peut le modifier, le retirer ou le publier, approuver ou rejeter d'éventuelles demandes de collaboration.
 
 image::components/proposals/collaborative_drafts/collaborative_draft.png[Collaborative draft page]
 
 === Collaborer à un brouillon
 
-Les autres participants peuvent ensuite demander d'accéder au brouillon collaboratif pour apporter quelques changements et apparaître en tant qu'auteurs.
+Les autres participant·e·x·s peuvent ensuite demander d'accéder au brouillon collaboratif pour apporter quelques changements et apparaître en tant qu'auteur·ices.
 
 image::components/proposals/collaborative_drafts/collaborative_draft_request_access.png[Collaborative draft with request access button]
 
-Lorsque le bouton "Demander l'accès" est cliqué, une notification est envoyée à l'auteur d'origine.
-Il peut ensuite accepter ou rejeter la demande dans le brouillon collaboratif sur la barre de droite.
+Lorsque le bouton "Demander l'accès" est cliqué, une notification est envoyée à l'auteur·ice d'origine.
+Iel peut ensuite accepter ou rejeter la demande dans le brouillon collaboratif sur la barre de droite.
 
 image::components/proposals/collaborative_drafts/author_sidebar.png[Collaboration requests]
 
@@ -51,13 +51,13 @@ Une fois la demande approuvée, elle ne peut plus être rejetée. Maintenant, le
 
 image::components/proposals/collaborative_drafts/multiple_authors.png[Draft with two authors]
 
-Tous les auteurs peuvent modifier le brouillon collaboratif en cliquant sur "Modifier le brouillon collaboratif".
+Tous les auteur·ices peuvent modifier le brouillon collaboratif en cliquant sur "Modifier le brouillon collaboratif".
 
 L'historique des versions du brouillon et de ses modifications successives est disponible en cliquant sur le lien "Voir les autres versions" en bas de page.
 
 === Publier un brouillon
 
-Une fois l'auteur original satisfait du brouillon collaboratif, il peut la publier en cliquant sur "Publier".
+Une fois l'auteur·ice d'origine satisfait du brouillon collaboratif, iel peut la publier en cliquant sur "Publier".
 
 image::components/proposals/collaborative_drafts/publish_modal.png[Publish draft modal]
 
