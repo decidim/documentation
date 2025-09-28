@@ -2,10 +2,10 @@
 
 == En bref
 
-Une fois la réunion terminée, l'auteur de la réunion peut la conclure. Cela permet d'ajouter le procès-verbal de la réunion,
+Une fois la rencontre terminée, l'auteur de la réunion peut la conclure. Cela permet d'ajouter le procès-verbal de la rencontre,
 qui résume ce qui a été discuté pendant, les accords conclus, les décisions prises, etc.
 
-Cela permet d’apporter de la transparence à la réunion et sert également de compte rendu des différentes réunions.
+Cela permet d’apporter de la transparence à la rencontre et sert également de compte rendu des différentes réunions.
 
 Il est également possible d'ajouter des méta-données supplémentaires, telles les organisations participantes, le nombre de présences, les contributions apportées et les propositions discutées.
 
@@ -13,38 +13,38 @@ image::components/meetings/close/frontend.png[Close report in the frontend]
 
 == Configuration
 
-=== Clore une réunion
+=== Clore une rencontre
 
-==== Réunions officielles
+==== Rencontres officielles
 
-Pour clore une réunion en tant qu'administrateur, cliquez sur l'icône [Icône fermer] "Fermer".
+Pour clore une rencontre en tant qu'administrateur·ice, cliquez sur l'icône [Icône fermer] "Fermer".
 
 image::components/meetings/close/form_backend.png[Close meeting form in the backend]
 
-.Fermer le formulaire de réunion (backend)
+.Formulaire de clôture de rencontre (backend)
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Minutes
 |Obligatoire
-|Description de ce qui s'est passé lors de la réunion.
+|Description de ce qui s'est passé lors de la rencontre.
 
 |Liste des organisations qui ont assisté
 |Facultatif
-|Métadonnées qui sont affichées dans la barre latérale de la réunion.
+|Métadonnées qui sont affichées dans la barre latérale de la rencontre.
 
-|Nombre de participants
+|Nombre de participant·e·x·s
 |Obligatoire
-|Nombre de personnes qui ont assisté à la réunion. Doit être un nombre.
+|Nombre de personnes qui ont assisté à la rencontre. Doit être un nombre.
 
 |Nombre de contributions
 |Facultatif
-|Métadonnées qui sont affichées dans la barre latérale de la réunion. Doit être un nombre.
+|Métadonnées qui sont affichées dans la barre latérale de la rencontre. Doit être un nombre.
 
 |Propositions
 |Facultatif
-|Choisir des propositions de cet espace participatif qui ont été discutées ou élaborées lors de cette réunion.
+|Choisir des propositions de cet espace participatif qui ont été discutées ou élaborées lors de cette rencontre.
 
 |URL de la vidéo
 |Facultatif
@@ -56,10 +56,10 @@ image::components/meetings/close/form_backend.png[Close meeting form in the back
 
 |Est visible
 |Facultatif
-|Cocher cette case pour publier le rapport de clôture afin qu'il puisse être lu par les participants.
+|Cocher cette case pour publier le rapport de clôture afin qu'il puisse être lu par les participant·e·x·s.
 |===
 
-==== Réunions des participants
+==== Rencontres de participant·e·x·s
 
 Tout comme les participants peuvent créer des réunions, ils peuvent également clôturer une réunion. Ils ont moins de champs à remplir que les administrateurs.
 
@@ -77,15 +77,15 @@ image::components/meetings/close/form_frontend.png[Close meeting form in the fro
 
 |Minutes
 |Obligatoire
-|Description de ce qui s'est passé lors de la réunion.
+|Description de ce qui s'est passé lors de la rencontre.
 
-|Nombre de participants
+|Nombre de participant·e·x·s
 |Obligatoire
-|Nombre de personnes qui ont assisté à la réunion. Doit être un nombre.
+|Nombre de personnes qui ont assisté à la rencontre. Doit être un nombre.
 
 |Propositions
 |Facultatif
-|Choisir des propositions de cet espace participatif qui ont été discutées ou élaborées lors de cette réunion.
+|Choisir des propositions de cet espace participatif qui ont été discutées ou élaborées lors de cette rencontre.
 |===
 
 === Propositions associées
