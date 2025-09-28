@@ -36,7 +36,7 @@ image::components/budgets/new_project.png[New project form]
 
 |Adresses
 |Facultatif
-|L'adresse du projet. Il permet d'afficher une épingle sur une carte pour que les participants puissent localiser le projet.
+|L'adresse du projet. Il permet d'afficher une épingle sur une carte pour que les participant·e·x·s puissent localiser le projet.
 
 |Catégorie
 |Facultatif
@@ -44,7 +44,7 @@ image::components/budgets/new_project.png[New project form]
 
 |Propositions
 |Facultatif
-|Choisissez des propositions liées à ce projet. Assigné automatiquement lors de l'importation des propositions.
+|Choisir des propositions liées à ce projet. Assigné automatiquement lors de l'importation des propositions.
 
 |Ajouter une galerie d'images
 |Facultatif
@@ -55,7 +55,7 @@ image::components/budgets/new_project.png[New project form]
 
 image::components/budgets/results_selected.png[Selected projects after voting]
 
-Dans la liste des projets dans le panneau d'administration, les administrateurs peuvent voir :
+Dans la liste des projets dans le panneau d'administration, les administrateur·ices peuvent voir :
 
 * *ID* : Numéro d'identification de ce projet.
 * *Titre* : Titre du projet.
@@ -104,18 +104,18 @@ image::components/budgets/projects_list_filter.png[Projects list filter]
 
 === Importer des propositions dans des projets
 
-Selon votre concertation, vous pourriez vouloir avoir une première étape pendant laquelle les participants créent des propositions, puis ces propositions sont sélectionnés (par le vote ou par une revue technique), enfin vous pouvez importer ces propositions et les convertir en projets.
+Selon votre concertation, vous pourriez vouloir avoir une première étape pendant laquelle les participant·e·x·s créent des propositions, puis ces propositions sont sélectionnées (par le vote ou par une revue technique), enfin vous pouvez importer ces propositions et les convertir en projets.
 
 Pour que cela fonctionne :
 
 . Les paramètres suivants doivent être activés dans la fonctionnalité de propositions :
 .. Réponses aux propositions activées
 .. Activer les coûts sur les réponses aux propositions
-. Un évaluateur ou un administrateur doit répondre aux propositions :
+. Unx évaluateur ·ice ou unx administrateur·ice doit répondre aux propositions :
 .. Relire les propositions
-.. Acceptez ou rejetez les en fonction de votre règlement
+.. Accepter ou rejeter les en fonction de votre règlement
 .. Ajouter des coûts aux propositions si elles ont été acceptées
-. Un administrateur peut importer des propositions vers des projets
+. Unx administrateur·ice peut importer des propositions vers des projets
 
 image:components/budgets/import_proposals.png[Importer des propositions dans les projets]
 
