@@ -8,7 +8,7 @@ comme xref:admin:settings/homepage.
 Pour organiser une page de destination, entrez l'espace et cliquez sur l'élément de la page d'accueil dans la barre de navigation de gauche.
 Vous êtes redirigé vers le panneau de configuration de la page d'accueil.
 
-. Ajoutez différents blocs de contenu en cliquant sur le bouton « Ajouter un bloc de contenu » et choisissez celui que vous souhaitez ajouter.
+. Ajouter différents blocs de contenu en cliquant sur le bouton « Ajouter un bloc de contenu » et choisir celui que vous souhaitez ajouter.
 . Configurer le bloc de contenu quand c'est possible.
 . Enfin, déplacez le bloc de contenu dans la colonne des blocs de contenu actifs pour le faire apparaître sur la page d'accueil.
 
@@ -18,7 +18,7 @@ image::spaces/landing_page/landing_page_admin.png[Landing page content blocks]
 
 Ci-dessous, vous trouverez tous les contenus de la page d'accueil qui bloquent les guides de configuration et les captures d'écran de la façon dont ils sont affichés sur la page d'accueil.
 
-=== Image principale et bouton d'action
+=== Image principale et CTA
 
 Les blocs d'image héros et de contenu CTA permettent d'afficher dans la page de destination de l'espace:
 
@@ -119,7 +119,7 @@ Les images associées permettent à l'administrateur d'afficher les images xref:
 
 image::spaces/landing_page/images.png[Landing page content Related images content block]
 
-=== Réunions à venir
+=== Rencontres à venir
 
 Les réunions à venir permettent à l'administrateur d'afficher le prochain xref:admin:components/meetings.adoc[Meetings] sur la page d'accueil avec une carte quand ils ont un emplacement.
 Vous pouvez configurer le composant pour qu'il prenne les réunions en cliquant sur le bouton Modifier du bloc de contenu.
@@ -151,4 +151,4 @@ Vous pouvez configurer l'ordre d'affichage et la responsabilisation pour prendre
 
 === HTML
 
-The HTML block content block allows to add an editable HTML block on the landing page, and therefore to create a personalized section.
+Le bloc de contenu HTML permet d'ajouter un bloc HTML modifiable sur la page d'accueil et créer ainsi une section personnalisée.
