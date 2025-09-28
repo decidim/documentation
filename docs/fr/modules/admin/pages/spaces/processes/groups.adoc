@@ -52,32 +52,31 @@ image::spaces/processes/processes_group_form_about.png[Participatory process gro
 |Titre
 |Obligatoire
 |Titre du groupe de processus participatif.
-|Visible in the card of the process groups on the homepage, the processes index, the navigation, the "title and description"
-and the "Hero image and CTA" landing page blocks.
+|Visible sur la carte des groupes de concertation sur la page d'accueil, l'index des concertations, le navigateur, le "titre et la description" et "L'image de bannière et CTA" les blocs de la page de destination.
 
 |Description
 |Obligatoire
-|A long explanation of what's the process group about.
-|Visible in the card of the processes index and the "title and description" landing page block.
+|Une explication longue à propos du groupe de concertation.
+|Visible sur la carte de l'index des concertations et dans "titre et description" de la page de destination.
 
 |Processus connexes
 |Facultatif
-|The processes that should be grouped inside this process group. To select multiple processes, use the *CTRL* or *CMD* key.
-|Visible in the "Participatory processes" landing page block.
+|La concertation à regrouper dans le groupe de concertation. Pour sélectionner plusieurs concertations, utiliser la touche *CTRL* ou *CMD*.
+|Visible dans les "Concertations" dans le bloc de la page d'accueil.
 
 |Image
 |Facultatif
 |Image qui sera utilisée dans les cartes de présentation de ce groupe de processus. Orientation pour l'image :
 De préférence une image de paysage qui n'a pas de texte. Le service récolte l'image.
 Le service récolte
-l'image Taille maximale du fichier : 10 Mo. Allowed file extensions: JPEG JPG PNG
-|Visible in the card of the process groups on the homepage and the processes index.
+l'image Taille maximale du fichier : 10 Mo. Extensions de fichier autorisées : JPEG, JPG, PNG
+|Visible sur la carte des groupes de concertation sur la page d'accueil et l'index des concertations.
 |===
 
 ==== Métadonnées
 
-This section allows to provide meta information about the process group.
-It can be enabled on the landing page with the "Metadata" landing page block.
+Cette section permet de fournir des informations méta à propos du groupe de concertation.
+Elle peut être activée sur la page d'accueil avec le bloc "Métadonnée" de la page d'accueil.
 
 image::spaces/processes/processes_group_form_metadata.png[Participatory process groups creation form metadata]
 
@@ -90,38 +89,38 @@ image::spaces/processes/processes_group_form_metadata.png[Participatory process 
 |Facultatif
 |Hashtag redirigeant vers le réseau social X.
 
-|Website
+|Site web
 |Facultatif
-|Website related to this process group.
+|Site web lié à ce groupe de concertation.
 
 |Groupe de promoteur·ices
 |Facultatif
-|If a specific group is at the origin of the process, like a city direction, an association committee, etc.
+|Si un groupe spécifique est à l'origine de la concertation, tel que la direction d'une ville, le comité d'une association, etc.
 
 |Zone d'organisation
 |Facultatif
-|The organization domain or category, if it's relevant.
+|Domaine ou catégorie de l'organisation, si pertinent.
 
 |Méta-données du secteur
 |Facultatif
-|Metadata on the process scope, if it's relevant.
+|Métadonnée du secteur du processus, si pertinent.
 
 |Qui participe
 |Facultatif
-|Who are the authorized participants, who can participate to the process.
+|Qui sont les participant·e·x·s, qui peut participer au processus.
 
 |Ce qui est décidé
 |Facultatif
-|The issue of the process, the object of what is decided.
+|La problématique de la concertation, l'objet de ce qui est décidé.
 
 |Comment sont prises les décisions
 |Facultatif
-|The decision making process.
+|Le processus de décision.
 |===
 
 ==== Visibilité
 
-This section allows administrators to configure the process group visibility in the homepage and processes index.
+Cette section permet aux administrateur·ices de configurer la visibilité du groupe de concertation dans la page d'accueil et l'index des concertations.
 
 image::spaces/processes/processes_group_form_visibility.png[Participatory process groups creation form visibility]
 
@@ -132,35 +131,33 @@ image::spaces/processes/processes_group_form_visibility.png[Participatory proces
 
 |Promu
 |Facultatif
-|Cochez cette case si vous voulez que le processus ait plus de visibilité dans la liste publique Processus . It'll also be visible in the "Highlighted processes"
-content block in the xref:admin:settings/homepage.adoc[Homepage].
+|Cochez cette case si vous voulez que le processus ait plus de visibilité dans la liste publique Processus . C'est aussi visible dans le bloc de contenu "Concertations mises en avant" dans xref:admin:settings/homepage.adoc[page d'accueil].
 |===
 
-=== Landing page content blocks
+=== Blocs de contenu de la page d'accueil
 
-Process groups are mainly landing pages, grouping more complex participatory processes.
-This landing page works with different content blocks, just like the general homepage of the platform.
-This means that you can enable different sections of the landing page and configure some of these sections.
+Les groupe de concertation sont principalement des pages d'accueil, regroupant des concertations plus complexes.
+Cette page d'accueil fonctionne avec différents blocs de contenu, comme la page d'accueil principale de la plateforme.
+Cela signifie qu'il est possible d'activer différentes sections de la page d'accueil and configurer certaines de ces sections.
 
-To configure a process group landing page, when editing the process group, click the "Manage" button in the top right of the page,
-and click the "Landing page" menu item.
+Pour configurer la page d'accueil d'un groupe de concertation, lors de la modification du groupe de concertation, cliquer sur "Gérer" en haut à droite de la page, et puis cliquer sur "Page d'accueil".
 
 image::spaces/processes/processes_group_landing.png[Participatory process group landing page]
 
-Below, you'll find all the content blocks configuration guides and screenshots of how there are displayed on the landing page.
+Ci-dessous, vous trouverez les guides de configuration de blocs de contenu et les captures d'écran qui montre comment ils sont affichés sur la page d'accueil.
 
-NOTE: If there is no content to display in a content block, or if wasn't configured, it won't be displayed on the landing page.
+NOTE: S'il n'y a pas de contenu affiché dans le bloc de contenu, ou s'il n'a pas été configuré, il n'apparait pas dans la page d'accueil.
 
 ==== Titre et description
 
-The Title and description content block allows to display:
+Le Titre et la description du bloc de contenu permet d'afficher :
 
-* *Title*: the title of the process group.
-* *Description*: the description of the process group.
-* *Number of related processes*: the number of published participatory processes related to this process group.
-* *Scope*: the scope of the process group.
-* *Hashtag*: the hashtag, redirecting to the X social media.
-* *Website*: a link to the website.
+* *Titre* : le titre du groupe de concertation.
+* *Description* : la description du groupe de concertation.
+* *Nombre de concertations liées* : le nombre de concertations publiées liées à cette concertation.
+* *Secteur* : le secteur du groupe de concertation.
+* *Hashtag* : l'hashtag redirigeant sur le réseau social X.
+* *Site web* : un lien qui mène au site web.
 
 image::spaces/processes/processes_group_landing_title.png[Participatory process group landing page title and description block]
 
@@ -172,8 +169,8 @@ image::spaces/processes/processes_group_landing_metadata.png[Participatory proce
 
 Le bloc image principale et contenu CTA permet d'afficher :
 
-* *Title*: the title of the process group.
-* *an hashtag*: the hashtag, redirecting to the X social media.
+* *Titre* : le titre du groupe de concertation.
+* *un hashtag* : l'hashtag qui redirige sur le réseau social X.
 * *a call to action button*: enable it by clicking the "Edit" icon on the landing page content block.
 * *an image*: download an image for this block by clicking the "Edit" icon on the landing page content block.
 
