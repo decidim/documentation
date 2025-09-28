@@ -45,54 +45,54 @@ image::spaces/processes/process_phases_list.png[Phases of a participatory proces
 |Modifier cette étape.
 |Toujours disponible
 
-|image:icons/action_activate.png[Activer l'icône]
+|image:icons/action_activate.png[Icône Activer]
 |Activer
-|Pour faire de cette phase la phase active.
-|Disponible uniquement pour les phases inactives.
+|Pour faire de cette étape l'étape active.
+|Disponible uniquement pour les étapes inactives.
 
 |image:icons/action_delete.png[Supprimer l'icône]
 |Supprimez
-|Supprimer cette phase.
+|Supprimer cette étape.
 |Toujours disponible
 |===
 
-=== Créer une nouvelle phase
+=== Créer une nouvelle étape
 
-Pour créer une nouvelle phase, cliquez sur le bouton "Nouvelle phase" en haut à droite de la page.
+Pour créer une nouvelle étape, cliquer sur "Nouvelle étape" en haut à droite de la page.
 
 image::spaces/processes/process_phases_new_form.png[Create a new participatory process phase form]
 
-.Créer un formulaire de phase de processus
+.Formulaire de création d'étape de concertation
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Titre
 |Obligatoire
-|Le titre de cette phase, affiché dans le bloc de contenu de phase et sur les cartes de processus lorsque la phase est active.
+|Le titre de cette étape, affiché dans le bloc de contenu des étapes et sur les cartes de concertation lorsque l'étape est active.
 
 |Description
 |Facultatif
-|Une longue description expliquant à quoi sert cette phase.
+|Une longue description expliquant en quoi consiste cette étape.
 
 |Date de début
 |Facultatif
-|La date de début de cette phase de processus. Format attendu : jj/mm/aaaa
+|La date de début de cette étape de concertation. Format attendu : jj/mm/aaaa
 
 |Date de fin
 |Facultatif
-|La date de fin de cette phase de processus. Format attendu : jj/mm/aaaa
+|La date de fin de cette étape de concertation. Format attendu : jj/mm/aaaa
 
-|Chemin de l'appel à l'action
+|Chemin de l'appel à action
 |Facultatif
 |Déprécié
 
-|Texte de l'appel à l'action
+|Texte de l'appel à action
 |Facultatif
 |Déprécié
 |===
 
-CAUTION: La configuration de l'ATC à travers la phase du processus participatif est dépréciée avec la nouvelle conception.
+CAUTION: La configuration de l'ATC à travers l'étape de la concertation est obsolète dans le nouveau design.
 Maintenant cela se fait dans la page d'atterrissage, en utilisant le bloc de contenu Héros et image.
 
 == Exemples
