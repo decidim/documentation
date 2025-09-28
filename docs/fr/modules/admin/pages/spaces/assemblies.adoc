@@ -6,13 +6,12 @@ Une assemblée est un groupe de membres d'une organisation qui se rencontre rég
 
 Les assemblées peuvent organiser des rencontres pour consulter leurs membres de manière privée ou publique.
 
-Examples of assemblies are: a general assembly meeting once a year to define the organisation's main lines of action as well as its
-executive bodies by vote, an equality advisory council meeting regularly to make proposals on how to improve
-gender relations in the organisation, an evaluation commission meeting every month to monitor a process, or a guarantee
-body collecting incidents, abuses, or proposals to improve decision-making procedures.
+Parmi les exemples d'assemblées, on peut citer : une assemblée générale qui se réunit une fois par an pour définir les grandes lignes d'action de l'organisation ainsi que ses
+organes exécutifs par vote, un conseil consultatif pour l'égalité qui se réunit régulièrement pour faire des propositions sur la manière d'améliorer les
+relations entre les genres au sein de l'organisation, une commission d'évaluation qui se réunit tous les mois pour suivre un processus, ou un organisme de garantie
+qui recueille les incidents, les abus ou les propositions visant à améliorer les procédures décisionnelles.
 
-NOTE: The main difference between xref:admin:spaces/processes.adoc[participatory processes] and assemblies is that assemblies don't
-have phases, meaning that they don't have timelines.
+NOTE: La différence principale entre les xref:admin:spaces/processes.adoc[concertations] et les assemblées est que les assemblées n'ont pas d'étapes, signifiant qu'elles n'ont pas de chronologie.
 
 Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments :
 
@@ -28,12 +27,12 @@ Dans cette section de documentation, vous pouvez trouver comment configurer et g
 
 === How to find it?
 
-Pour accéder au panneau Ruches, allez dans le panneau d'administration et cliquez sur l'élément "Ruches" dans la barre de navigation d'administration
+Pour accéder au panneau des Assemblées, aller dans le panneau d'administration et cliquer "Ruches" dans la barre de navigation d'administration
 .
 
 image::spaces/assemblies/assemblies_menu.png[Pages: Access assemblies panel]
 
-Là, vous pouvez gérer les assemblages et les types d'assemblages.
+Là, vous pouvez gérer les assemblées et les types d'assemblée.
 
 == Configuration
 
@@ -41,16 +40,16 @@ Là, vous pouvez gérer les assemblages et les types d'assemblages.
 
 image::spaces/assemblies/assemblies_list.png[Assemblies list]
 
-Sur cette page, vous pouvez gérer les assemblages et xref:admin:spaces/processes/groups.adoc[types d'assemblées].
-Vous pouvez trouver tous les assemblages dans la liste dans le panneau d'administration, avec:
+Sur cette page, vous pouvez gérer les assemblées et xref:admin:spaces/processes/groups.adoc[types d'assemblée].
+Vous pouvez trouver toutes les assemblées dans la liste dans le panneau d'administration, avec :
 
 * *Titre* : titre de l'assemblée.
-* *Créé à* : date de création de l'assemblée.
-* *Privé* : si l'assemblée est ouverte à tous les participants ou à certains participants.
-* *Publié* : si l'assemblage est publié ou non.
+* *Créé le* : date de création de l'assemblée.
+* *Privé* : si l'assemblée est ouverte à touxtes les participant·e·x·s ou à certain·e·x·s participant·e·x·s seulement.
+* *Publié* : si l'assemblée est publiée ou non.
 
 Il est possible de filtrer et trier cette liste en cliquant sur "Filtrer" et sur les en-têtes des colonnes.
-Vous pouvez également rechercher des assemblages par titre dans la barre de recherche.
+Vous pouvez également rechercher des assemblées par titre dans la barre de recherche.
 
 image::spaces/assemblies/assemblies_list_filter.png[Assemblies list filtered]
 
@@ -61,55 +60,55 @@ image::spaces/assemblies/assemblies_list_filter.png[Assemblies list filtered]
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_edit.png[Configurer l'icône d'assemblée]
+|image:icons/action_edit.png[Icône configurer l'assemblée]
 |Configurer
-|Éditer la configuration et les composants d'un assemblage.
+|Modifier la configuration et les fonctionnalités d'une assemblée.
 
-|image:icons/action_assemblies.png[Icône des assemblages enfants]
+|image:icons/action_assemblies.png[Icône assemblée enfants]
 |Ruches
-|Gérer tous les assemblages enfants pour une assemblée.
+|Gérer toutes les assemblées enfants pour une assemblée.
 
-|image:icons/action_duplicate.png[Dupliquer l'icône d'assemblée]
+|image:icons/action_duplicate.png[Icône Dupliquer l'assemblée]
 |Duplicate
 |Dupliquer cette assemblée.
 
-|image:icons/action_export.png[Exporter l'icône de l'assemblée]
+|image:icons/action_export.png[Icône Exporter l'assemblée]
 |Exporter tout
-|Envoyer le fichier de configuration JSON de l'assemblage par courriel. Puis il peut être importé dans une autre installation de Decidim.
+|Envoyer le fichier de configuration JSON de l'assemblée par mail. Il peut être ensuite être importé dans une autre installation de Decidim.
 
-|image:icons/action_preview.png[Aperçu de l'icône d'assemblée]
+|image:icons/action_preview.png[Icône Aperçu de l'assemblée]
 |Aperçu
-|Aperçu de l'apparence de l'assemblage dans l'interface utilisateur.
+|Aperçu de l'apparence de l'assemblée dans l'interface utilisateur·ice.
 
-|image:icons/action_moderate.png[Icône de l'assemblée modérée]
+|image:icons/action_moderate.png[Icône Modération de l'assemblée]
 |Modérer
 |Pour accéder au panneau de modération de l'assemblée.
 |===
 
-Vous pouvez également cliquer sur le bouton "Gérer" en haut à droite de la page, pour pouvoir importer un processus ou
-configurer les types de Ruches.
+Vous pouvez également cliquer sur "Gérer" en haut à droite de la page, pour importer une concertation ou
+configurer les types d'assemblée.
 
-=== Importer un assemblage
+=== Importer une assemblée
 
-Pour importer une assemblée, cliquez sur le bouton "Gérer" en haut à droite de la page.
+Pour importer une assemblée, cliquer sur "Gérer" en haut à droite de la page.
 
 image::spaces/assemblies/import_menu.png[Assemblies import menu]
 
-Vous êtes redirigé vers la page d'importation, où vous devez remplir ces champs :
+Cela vous redirige vers la page d'importation, où vous devez remplir les champs suivants :
 
 * Titre : Le titre que vous souhaitez donner à l'assemblée.
-* Identifiant d'URL : Le « slug » pour l'assemblage.
-* Ajouter un document : Ici vous devez charger le fichier JSON de l'assembly obtenu par email lors de l'exportation.
+* Identifiant d'URL : Le « slug » pour l'assemblée.
+* Ajouter un document : Ici vous devez télécharger le fichier JSON de l'assemblée obtenu par email lors de l'exportation.
 
 Vous pouvez ensuite sélectionner le type de données que vous souhaitez importer à partir du fichier.
 
-* Catégories d'importation : Importe toutes les catégories présentes dans le fichier original.
-* Importer des pièces jointes : Importer des pièces jointes de l'assemblage original.
-* Importer des composants : Importe tous les composants et leur configuration à partir du fichier original, sans importer leur contenu.
+* Catégories d'importation : Importation de toutes les catégories présentes dans le fichier original.
+* Importer des pièces jointes : Importer des pièces jointes de l'assemblée originale.
+* Importer des fonctionnalités : Importation de toutes les fonctionnalités et leur configuration à partir du fichier original, sans importer leur contenu.
 
 == Exemples
 
-Ci-dessous, vous pouvez trouver quelques liens vers des exemples d'assemblages :
+Ci-dessous, vous pouvez trouver quelques liens vers des exemples d'assemblées :
 
 * https://www.decidim.barcelona/assemblies[Les assemblées du quartier de Decidim]
 * https://meta.decidim.org/assemblies/general-assembly-association[Assemblée générale de l'association Decidim]
