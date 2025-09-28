@@ -2,16 +2,16 @@
 
 == En bref
 
-Une conférence est une collection de réunions organisées dans un programme, avec un certain nombre de personnes invitées en tant qu'orateurs, et les autres champs d'information
+Une conférence est une série de rencontres organisées dans un programme, listant un certain nombre de personnes invitées intervenantes, ainsi qu'exposant des champs d'information
 typiques des grands congrès ou événements sociaux (inscription, liste des organisations qui soutiennent ou parrainent l'événement
 , etc.) Une conférence peut être un événement pertinent pour une organisation et ses membres, ou se dérouler dans le cadre d'un processus participatif
 ou suivre une consultation.
 
-Lors des conférences, les composantes des réunions sont affichées sous forme de programme, les jours et les heures étant énumérés comme dans un programme d'événement.
+Lors des conférences, les fonctionnalités des rencontres sont affichées sous forme de programme, les jours et les heures étant énumérés comme dans un programme d'événement.
 
-NOTE: Vous voulez créer une conférence ? Vérifiez l'article xref:admin:spaces/conferences/conference_creation.adoc[conference creation].
+NOTE: Vous voulez créer une conférence ? Consultez l'article xref:admin:spaces/conferences/conference_creation.adoc[Créer une conférence].
 
-Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments:
+Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments :
 
 * xref:admin:admin:espaces/conférences/conference_creation.adoc[Création de la conférence]
 * xref:admin:spaces/conferences/components.adoc[Components]
@@ -30,7 +30,7 @@ Dans cette section de documentation, vous pouvez trouver comment configurer et g
 
 === How to find it?
 
-Pour accéder au panneau Conférences, allez dans le panneau d'administration et cliquez sur l'élément "Conférences" dans la barre de navigation d'administration
+Pour accéder au panneau Conférences, aller dans le panneau d'administration et cliquer sur "Conférences" dans la barre de navigation d'administration.
 .
 
 image::spaces/conferences/menu.png[Conferences menu]
@@ -43,11 +43,11 @@ Là, vous pouvez gérer toutes les conférences existantes.
 
 image::spaces/conferences/manage_conferences.png[Conferences list in administration panel]
 
-Vous pouvez trouver toutes les conférences dans la liste dans le panneau d'administration, avec:
+Vous pouvez trouver toutes les conférences listées dans le panneau d'administration, avec :
 
 * *Titre* : titre de la conférence.
-* *Créé à* : date de création de la conférence.
-* *Publié* : si la conférence est publiée ou non.
+* *Créée le* : date de création de la conférence.
+* *Publiée* : si la conférence est publiée ou non.
 
 Il est possible de filtrer et trier cette liste en cliquant sur "Filtrer" et sur les en-têtes des colonnes.
 Vous pouvez également rechercher des conférences par titre dans la barre de recherche.
@@ -59,19 +59,19 @@ Vous pouvez également rechercher des conférences par titre dans la barre de re
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_edit.png[Configurer l'icône de la conférence]
+|image:icons/action_edit.png[Icône Configurer la conférence]
 |Configurer
-|Éditer la configuration et les composants d'une conférence.
+|Modifier la configuration et les fonctionnalités d'une conférence.
 
-|image:icons/action_duplicate.png[Dupliquer l'icône de la conférence]
+|image:icons/action_duplicate.png[Icône Dupliquer la conférence]
 |Duplicate
 |Dupliquer cette conférence.
 
-|image:icons/action_preview.png[Aperçu icône de la conférence]
+|image:icons/action_preview.png[Icône Aperçu de la conférence]
 |Aperçu
-|Aperçu de l'apparence de la conférence dans l'interface utilisateur.
+|Aperçu de l'apparence de la conférence dans l'interface utilisateur·ice.
 
-|image:icons/action_moderate.png[Icône de conférence modérée]
+|image:icons/action_moderate.png[Icône Modération de la conférence]
 |Modérer
 |Pour accéder au panneau de modération de la conférence.
 |===
