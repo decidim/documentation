@@ -171,30 +171,30 @@ Le bloc image principale et contenu CTA permet d'afficher :
 
 * *Titre* : le titre du groupe de concertation.
 * *un hashtag* : l'hashtag qui redirige sur le réseau social X.
-* *a call to action button*: enable it by clicking the "Edit" icon on the landing page content block.
-* *an image*: download an image for this block by clicking the "Edit" icon on the landing page content block.
+* *un bouton appel à action* : activé en cliquant l'icône "Modifier" sur le bloc de contenu de la page d'accueil.
+* *une image* : télécharger une image pour ce bloc en cliquant sur l'icône "Modifier" dans le bloc de contenu de la page d'accueil.
 
 image::spaces/processes/processes_group_landing_hero.png[Participatory process group landing page hero block]
 
 ==== Propositions
 
-The Proposals content block allows to display a selection of proposals from the different participatory processes of the process group.
-You can configure how the proposals are sorted by most recent or random by clicking the "Edit" icon on the landing page content block.
+Le bloc de contenu des Propositions permet d'afficher une sélection de propositions à partir de différentes concertations du groupe de concertation.
+Il est possible de configurer la façon dont les propositions sont listées, de la plus récente ou au hasard, en cliquant sur l'icône "Modifier" dans le bloc de contenu de la page d'accueil.
 
 image::spaces/processes/processes_group_landing_proposals.png[Participatory process group landing page proposals block]
 
 ==== Résultats
 
-The Results content block allows to display a selection of results from the different participatory processes.
-You can configure how the results are sorted by most recent or random by clicking the "Edit" icon on the landing page content block.
+Le bloc de contenu des Réalisations permet d'afficher une sélection de réalisation à partir de différentes concertations.
+Il est possible de configurer la façon dont les réalisations sont listées, de la plus récente ou au hasard, en cliquant sur l'icône "Modifier" dans le bloc de contenu de la page d'accueil.
 
 image::spaces/processes/processes_group_landing_results.png[Participatory process group landing page results block]
 
 ==== Rencontres à venir
 
-The Upcoming meetings content block allows to display a selection of meetings from the different participatory processes.
-You can configure how the results are sorted by most recent or random by clicking  the "Edit" icon on the landing page content block.
-If there is no upcoming meetings, this block shows the past ones.
+Le bloc de contenu des Rencontres à venir permet d'afficher une sélection de rencontres à partir de différentes concertations.
+Il est possible de configurer la façon dont les rencontres sont listées, de la plus récente ou au hasard, en cliquant sur l'icône "Modifier" dans le bloc de contenu de la page d'accueil.
+S'il n'y a pas de rencontre à venir, ce bloc affiche les rencontres passées.
 
 image::spaces/processes/processes_group_landing_events.png[Participatory process group landing page events block]
 
@@ -204,21 +204,21 @@ image::spaces/processes/processes_group_landing_stats.png[Participatory process 
 
 ==== Processus participatifs
 
-The participatory processes content block displays a grid of participatory processes on the landing page.
-You can configure if only active processes will be displayed by clicking the "Edit" icon on the landing page content block.
+Le bloc de contenu des concertations affiche une grille des concertations sur la page d'accueil.
+Il est possible de configurer l'affichage des processus actifs uniquement en cliquant sur l'icône « Modifier » dans le bloc de contenu de la page d'accueil.
 
 image::spaces/processes/processes_group_landing_processes.png[Participatory process group landing page processes block]
 
-==== HTML blocks
+==== Blocs HTML
 
-The HTML block content block allows to add an editable HTML block on the landing page, and therefore to create a personalized section.
+Le bloc de contenu HTML permet d'ajouter un bloc HTML modifiable sur la page d'accueil et créer ainsi une section personnalisée.
 
 image::spaces/processes/processes_group_landing_html.png[Participatory process group landing page HTML blocks]
 
 == Exemples
 
 Le https://www.decidim.barcelona/processes_groups/4[Plan de quartier du conseil de la ville de Barcelone], un plan de choc de 150 millions
-euro qui vise à réduire les inégalités au sein de la ville. Il y a 10 sous-processus, un pour chaque quartier impliqué.
+euro qui vise à réduire les inégalités au sein de la ville. Il y a 10 sous-concertations, un pour chaque quartier impliqué.
 
 image::spaces/processes/processes_group__barcelona_example.png[Participatory process group example]
 
