@@ -1,31 +1,31 @@
-= Processus participatifs
+= Concertations
 
 == En bref
 
-Un processus participatif est une séquence d'activités participatives dans le but de définir et de prendre une décision sur un sujet spécifique.
-Par exemple, vous pourriez avoir un processus participatif comme ceci :
+Une concertation est une séquence d'activités participatives dans le but de définir et de prendre une décision sur un sujet donnée.
+Par exemple, vous pourriez avoir une concertation comme suit :
 
-. Répondre d'abord à une enquête pour recueillir l'opinion des participants ;
-. Puis ouvrir des propositions;
+. Répondre d'abord à une enquête pour recueillir l'opinion des participant·e·x·s ;
+. Puis lancer des propositions ;
 . Discuter en face à face ou en réunion virtuelle ;
 . Enfin en les priorisant avant leur mise en œuvre.
 
-NOTE: Vous voulez créer un processus participatif ? Vérifiez l'article xref:admin:spaces/processes/process_creation.adoc[création de processus] .
+NOTE: Vous voulez créer un processus participatif ? Vérifiez l'article xref:admin:spaces/processes/process_creation.adoc[Créer une concertation] .
 
-Les exemples de processus participatifs sont : un processus d'élection des membres du comité (où les candidatures sont présentées pour la première fois,
+Les exemples de concertations sont : une concertation pour l'élection des membres du comité (où les candidatures sont présentées pour la première fois,
 alors débattu et finalement une candidature est choisie), des budgets participatifs (où des propositions sont faites, évalué économiquement,
-et voté avec l'argent disponible), un processus de planification stratégique, l'élaboration collaborative d'un règlement ou d'une norme,
+et voté avec l'argent disponible), une concertation de planification stratégique, l'élaboration collaborative d'un règlement ou d'une norme,
 la conception d'un espace urbain ou la production d'un plan de politique publique.
 
-Un concept vraiment important pour faire un bon usage de Decidim est de comprendre la relation entre les Phases et les Composants
-dans un processus participatif de Decidim :
+Un concept vraiment important pour faire un bon usage de Decidim est de comprendre la relation entre les Étapes et les Fonctionnalités
+dans une concertation Decidim :
 
 image::process_steps_components.png[Relation between Steps and Components in a Process in Decidim]
 
-Ce que ce diagramme montre est que pour un processus participatif, vous pouvez configurer différentes phases, et activez et configurez
-les composants pour chaque phase comme vous en avez besoin pour votre processus.
+Ce que ce diagramme montre est que pour une concertation, vous pouvez configurer différentes étapes, et activer et configurer
+les fonctionnalités pour chaque étape selon les besoins de la concertation.
 
-Dans chacune de ces Phases, vous pouvez activer xref:admin:components.adoc[Components] dont vous avez besoin.
+Dans chacune de ces Étapes, vous pouvez activer les xref:admin:components.adoc[Fonctionnalités] dont vous avez besoin.
 
 Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments :
 
@@ -43,30 +43,30 @@ Dans cette section de documentation, vous pouvez trouver comment configurer et g
 
 === How to find it?
 
-Pour accéder au panneau des processus participatifs, allez dans le panneau d'administration et cliquez sur l'élément "Processus" dans la barre de navigation d'administration
+Pour accéder au panneau des concertations, aller dans le panneau d'administration et cliquer sur "Concertations" dans la barre de navigation d'administration
 .
 
 image::spaces/processes/processes_menu.png[Pages: Access processes panel]
 
-Là, vous pouvez gérer des processus et des groupes de processus participatifs.
+Ici, vous pouvez gérer des concertations et des groupes de concertation.
 
 == Configuration
 
-=== Gérer les processus
+=== Gérer les concertations
 
 image::spaces/processes/processes_list.png[Participatory processes list]
 
-Sur cette page, vous pouvez gérer les processus et xref:admin:spaces/processes/groups.adoc[process groups].
+Sur cette page, vous pouvez gérer les concertation et xref:admin:spaces/processes/groups.adoc[groupes de concertation].
 
-Vous pouvez trouver tous les processus dans la liste dans le panneau d'administration, avec:
+Vous pouvez trouver toutes les concertations listées dans le panneau d'administration, avec :
 
-* *Titre* : titre du processus.
-* *Créé à* : date de création du processus.
-* *Privé* : si le processus est ouvert à tous les participants ou seulement à certains participants.
-* *Publié* : si le processus est publié ou non.
+* *Titre* : titre de la concertation.
+* *Créé le* : date de création de la concertation.
+* *Privée* : si la concertation est ouverte à touxtes les participant·e·x·s ou seulement à certain·e·x·s participant·e·x·s.
+* *Publiée* : si la concertation est publiée ou non.
 
 Il est possible de filtrer et trier cette liste en cliquant sur "Filtrer" et sur les en-têtes des colonnes.
-Vous pouvez également rechercher des processus par leur titre dans la barre de recherche.
+Vous pouvez également rechercher des concertations par titre dans la barre de recherche.
 
 image::spaces/processes/processes_list_filter.png[Participatory processes list filtered]
 
@@ -77,52 +77,52 @@ image::spaces/processes/processes_list_filter.png[Participatory processes list f
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_edit.png[Configurer l'icône du processus]
+|image:icons/action_edit.png[Icône Configuration de la concertation]
 |Configurer
-|Éditer la configuration et les composants d'un processus.
+|Modifier la configuration et les fonctionnalitée d'une concertation.
 
-|image:icons/action_export.png[Icône du processus d'exportation]
+|image:icons/action_export.png[Icône Exporter la concertation]
 |Exporter tout
-|Envoyer le fichier JSON de configuration du processus par courriel. Puis il peut être importé dans une autre installation de Decidim.
+|Envoyer le fichier JSON de configuration de la concertation par mail. Il peut être ensuite être importé dans une autre installation de Decidim.
 
-|image:icons/action_duplicate.png[Icône du processus dupliqué]
+|image:icons/action_duplicate.png[Icône Dupliquer la concertation]
 |Duplicate
-|Dupliquer ce processus.
+|Dupliquer cette concertation.
 
-|image:icons/action_preview.png[Icône du processus d'aperçu]
+|image:icons/action_preview.png[Icône Aperçu de la concertation]
 |Aperçu
-|Aperçu de l'apparence du processus dans l'interface utilisateur.
+|Aperçu de l'apparence de la concertation dans l'interface utilisateur·ice.
 
-|image:icons/action_moderate.png[Icône du processus modéré]
+|image:icons/action_moderate.png[Icône Modération de la concertation]
 |Modérer
-|Pour accéder au panneau de modération du processus.
+|Pour accéder au panneau de modération de la concertation.
 |===
 
-Vous pouvez également cliquer sur le bouton "Gérer" en haut à droite de la page, pour pouvoir importer un processus ou
-configurer des xref:admin:spaces/processes/types. doc[Types de processus].
+Vous pouvez également cliquer sur "Gérer" en haut à droite de la page pour importer une concertation ou
+configurer des xref:admin:spaces/processes/types. doc[Types de concertation].
 
-=== Importer un processus
+=== Importer une concertation
 
-Pour importer un processus, cliquez sur le bouton "Gérer" en haut à droite de la page.
+Pour importer une concertation, cliquer sur "Gérer" en haut à droite de la page.
 
 image::spaces/processes/import_menu.png[Participatory processes import menu]
 
-Vous êtes redirigé vers la page d'importation, où vous devez remplir ces champs :
+Cela vous redirige vers la page d'importation, où vous devez remplir les champs suivants :
 
-* Titre : Le titre que vous souhaitez donner au processus.
-* Identificateur d'URL : Le « slug » pour le processus.
-* Ajouter un document : Ici vous devez charger le fichier JSON processus obtenu par e-mail lors de l'exportation.
+* Titre : Le titre que vous souhaitez donner à la concertation.
+* Identificateur d'URL : Le « slug » pour la concertation.
+* Ajouter un document : Ici vous devez charger le fichier JSON de la concertation obtenu par mail lors de l'exportation.
 
 Vous pouvez ensuite sélectionner le type de données que vous souhaitez importer à partir du fichier.
 
-* Étapes d'import : Importe toutes les phases présentes dans le fichier original.
-* Catégories d'importation : Importe toutes les catégories présentes dans le fichier original.
-* Importer des pièces jointes : Importer des pièces jointes du processus original.
-* Importer des composants : Importe tous les composants et leur configuration à partir du fichier original, sans importer leur contenu.
+* Étapes d'importation : Importation de toutes les étapes présentes dans le fichier original.
+* Catégories d'importation : Importation de toutes les catégories présentes dans le fichier original.
+* Importer des pièces jointes : Importation des pièces jointes de la concertation originale.
+* Importer des fonctionnalités : Importation de toutes les fonctionnalités et leur configuration à partir du fichier original, sans importer leur contenu.
 
 == Exemples
 
-Ci-dessous, vous pouvez trouver quelques liens vers des exemples de processus participatifs:
+Ci-dessous, vous pouvez trouver quelques liens vers des exemples de concertations :
 
 * https://www.decidim.barcelona/processes/PAM2020[Procés participatiu del Programa d'Actuació Municipal (PAM) 2020-2023, Barcelona]
 * https://www.participate.nyc.gov/processes/Citywidepb2024[The People's Money (2024-2025), budget participatif de New York]
