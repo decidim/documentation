@@ -2,15 +2,15 @@
 
 == En bref
 
-La fonctionnalité Budget permet aux participants de voter en sélectionnant les projets de leur choix. Cette fonctionnalité a été conçue pour
+La fonctionnalité Budget permet aux participant·e·x·s de voter en sélectionnant les projets de leur choix. Cette fonctionnalité a été conçue pour
 organiser le vote dans la phase finale d'un budget participatif, bien qu'il puisse être utilisé pour d'autres types de processus.
 
-Les administrateurs peuvent décider des règles de vote, pour que les participants sélectionnent un nombre défini de projets, ou votent pour autant de
- projets qu'ils le souhaitent jusqu'à atteindre un certain montant.
+Les administrateur·ices peuvent décider des règles de vote, pour que les participant·e·x·s sélectionnent un nombre défini de projets, ou votent pour autant de
+ projets qu'iels le souhaitent jusqu'à atteindre un certain montant.
 
 image::components/budgets/example01.png[Budgets example voting]
 
-Les administrateurs ont plusieurs options pour le workflow de vote et pour les règles de vote.
+Les administrateur·ices ont plusieurs options pour le workflow de vote et pour les règles de vote.
 
 image::components/budgets/example02.png[Budgets example voting]
 
@@ -73,7 +73,7 @@ image::components/budgets/component_02.png[Add component form - Global settings]
 
 |Processus
 |Obligatoire
-|Comment les participants peuvent voter s'il y a plusieurs ensembles de budget. Vous pouvez définir votre propre workflow ou en utiliser un déjà disponible.
+|Comment les participant·e·x·s peuvent voter s'il y a plusieurs ensembles de budget. Vous pouvez définir votre propre workflow ou en utiliser un déjà disponible.
 
 |Projets par page
 |Obligatoire
@@ -81,22 +81,22 @@ image::components/budgets/component_02.png[Add component form - Global settings]
 
 |Activer la règle : Pourcentage de budget minimum
 |Optionnel, mais incompatible avec les 2 autres règles de vote.
-|Permet de définir un "Pourcentage de seuil de vote" signifiant un pourcentage du budget total que les participants
+|Permet de définir un "Pourcentage de seuil de vote" signifiant un pourcentage du budget total que les participant·e·x·s
 doivent atteindre pour pouvoir terminer le vote.
 
 |Activer la règle : Nombre minimum de projets à voter
 |Optionnel, mais incompatible avec les 2 autres règles de vote.
-|Permet de définir un "nombre minimum de projets à voter" signifiant un nombre de projets que les participants
+|Permet de définir un "nombre minimum de projets à voter" signifiant un nombre de projets que les participant·e·x·s
 doivent atteindre pour pouvoir terminer le vote.
 
 |Activer la règle : Les projets sélectionnés avec un nombre minimum et maximum de projets à voter
 |Optionnel, mais incompatible avec les 2 autres règles de vote.
 |Permet de définir un "nombre minimum de projets à sélectionner" et un "nombre maximum de projets à sélectionner" signifiant
-le nombre de projets que les participants doivent voter comme un minimum et maximum pour pouvoir terminer le vote.
+le nombre de projets que les participant·e·x·s doivent voter comme un minimum et maximum pour pouvoir terminer le vote.
 
 |Commentaires activés
 |Facultatif
-|Pour activer les commentaires. Les participants peuvent ainsi commenter les projets.
+|Les participant·e·x·s peuvent ainsi commenter les projets.
 
 |Longueur maximale des commentaires
 |Facultatif
@@ -153,7 +153,7 @@ image::components/budgets/component_03.png[Add component form - Step settings]
 
 === Publier les résultats
 
-Une fois le vote terminé, un administrateur doit :
+Une fois le vote terminé, unx administrateur·ice doit :
 
 . Modifier la configuration de vote pour le volet budget en "Vote terminé"
 . Accéder à la liste des projets et afficher les résultats
@@ -165,7 +165,7 @@ Ensuite, la liste des projets montre tous les projets qui ont été sélectionn�
 
 image::components/budgets/results_selected.png[Selected projects after voting]
 
-Un filtre est également affiché pour les participants afin de voir quels projets ont été sélectionnés, et trouver ceux qui n'ont pas été sélectionnés.
+Un filtre est également affiché pour les participant·e·x·s afin de voir quels projets ont été sélectionnés, et trouver ceux qui n'ont pas été sélectionnés.
 
 image::components/budgets/results_selected_frontend.png[Selected projects after voting in the frontend]
 
@@ -174,7 +174,7 @@ pour que les participants puissent voir l'état d'avancement de la mise en oeuvr
 
 == Exemples
 
-Quelques exemples d'utilisation de ce composant :
+Quelques exemples d'utilisation de cette fonctionnalité :
 
 * https://www.decidim.barcelona/processes/PressupostosParticipatius[2020/2021 Processus de budgétisation participative dans Decidim Barcelona].
 00 EUR pour que les gens puissent présenter, définir, prioriser, voter
