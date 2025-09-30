@@ -2,13 +2,13 @@
 
 == En bref
 
-La fonctionnalité Rencontres permet aux administrateurs d'organiser, d'annoncer, de traiter les inscriptions et de clôturer des rencontres en présentiel ou en ligne.
-Selon la configuration de la fonctionnalité, les rencontres ne peuvent être créées uniquement par les administrateurs, ou par les administrateurs et les participants.
+La fonctionnalité Rencontres permet aux administrateur·ices d'organiser, d'annoncer, de traiter les inscriptions et de clôturer des rencontres en présentiel ou en ligne.
+Selon la configuration de la fonctionnalité, les rencontres ne peuvent être créées uniquement par les administrateur·ices, ou par les administrateur·ices et les participant·e·x·s.
 
 Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments :
 
 * xref:admin:admin:components/meetings/meetings.adoc[Meeting creation]: Créer des rencontres officielles ou participatives.
-* xref:admin:admin:components/meetings/registrations.adoc[Registrations]: Gérer comment les participants peuvent s'inscrire pour assister aux rencontres.
+* xref:admin:admin:components/meetings/registrations.adoc[Inscriptions]: Gérer comment les participant·e·x·s peuvent s'inscrire pour assister aux rencontres.
 * xref:admin:components/meetings/agenda.adoc[Agenda]: Annoncer les sujets des rencontres à discuter.
 * xref:admin:admin:components/meetings/polls.adoc[Polls]: Activer le vote rapide pendant une rencontre en ligne.
 * xref:admin:components/meetings/close.adoc[Close]: Ajoute le rapport final et le procès verbal de la rencontre.
@@ -33,14 +33,14 @@ image:icons/action_configure.png[Configurer l’icône] dans la liste des foncti
 
 image::components/meetings/component.png[Add a meetings component]
 
-.Ajouter un composant - Formulaire de réunions
+.Ajouter une fonctionnalité - Formulaire de rencontres
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Nom
 |Obligatoire
-|Quel est le nom de ce composant.
+|Quel est le nom de cette fonctionnalité.
 
 |Rang d'affichage
 |Facultatif
@@ -49,14 +49,14 @@ Par exemple, si vous avez deux fonctionnalités, "Fonctionnalité a" de poids "1
 alors "Fonctionnalité b" est placée avant dans le listage.
 |===
 
-.Ajouter un composant - Formulaire de réunions: Paramètres globaux
+.Ajouter une fonctionnalité - Formulaire de rencontres : Paramètres généraux
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Portées activées
 |Facultatif
-|Cochez cette case si vous voulez que le filtrage des portées dans ce composant.
+|Cochez cette case si vous voulez que le filtrage des secteurs dans cette fonctionnalité.
 
 |Secteur
 |Facultatif
@@ -80,10 +80,10 @@ alors "Fonctionnalité b" est placée avant dans le listage.
 
 |Code d'enregistrement activé
 |Facultatif
-|Cocher pour donner automatiquement des codes d'inscription aux participants.
+|Cocher pour donner automatiquement des codes d'inscription aux participant·e·x·s.
 En savoir plus sur xref:components/meetings/registrations.adoc[Registrations].
 
-|Les autorisations d'actions peuvent être définies pour chaque réunion
+|Les autorisations d'actions peuvent être définies pour chaque rencontre
 |Facultatif
 |Si vous voulez des permissions plus granulaires à l'intérieur de chaque réunion.
 
@@ -91,16 +91,16 @@ En savoir plus sur xref:components/meetings/registrations.adoc[Registrations].
 |Facultatif
 |Si vous voulez un Etherpad intégré à vos réunions. Doit avoir l'intégration xref:services:etherpad.adoc[Etherpad] configurée.
 
-|Les participants peuvent créer des réunions
+|Les participant·e·x·s peuvent créer des rencontres
 |Facultatif
-|Permet aux participants de créer de nouvelles réunions. En savoir plus dans xref:components/meetings/meetings.adoc#_participants_meetings[Participants meetings].
+|Permet aux participant·e·x·s de créer de nouvelles rencontres. En savoir plus dans xref:components/meetings/meetings.adoc#_participants_meetings[Rencontres de participant·e·x·s].
 
 |Cartes activées
 |Facultatif
 |Pour afficher une carte avec les adresses des rencontres dans la liste et les pages des rencontres.
 |===
 
-.Ajouter un composant - Formulaire de réunions: Paramètres de l'étape
+.Ajouter une fonctionnalité - Formulaire de rencontres: Paramètres de l'étape
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -111,7 +111,7 @@ En savoir plus sur xref:components/meetings/registrations.adoc[Registrations].
 
 |Commentaires activés
 |Facultatif
-|Pour activer les commentaires. Les participants peuvent ainsi commenter les rencontre lors de cette étape.
+|Pour activer les commentaires. Les participant·e·x·s peuvent ainsi commenter les rencontres lors de cette étape.
 |===
 
 == Exemples
