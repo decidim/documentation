@@ -2,8 +2,8 @@
 
 == En bref
 
-La fonctionnalité Enquête permet aux participants de répondre à des questionnaires. Ceci est utile lorsqu'une organisation souhaite recevoir des retours privés
-de la part des participants. Il permet de définir un ensemble de questions avec plusieurs types de réponses.
+La fonctionnalité Enquête permet aux participant·e·x·s de répondre à des questionnaires. Ceci est utile lorsqu'une organisation souhaite recevoir des retours privés
+de la part des participant·e·x·s. Il permet de définir un ensemble de questions avec plusieurs types de réponses.
 
 NOTE: Une fois l'enquête complétée par participants, il n'est pas possible de modifier ses questions, car cela affecterait l'intégrité
 des réponses. Pour modifier les questions, il faut créer une nouvelle enquête et supprimer la version originale.
@@ -29,7 +29,7 @@ Il est toujours possible de mettre à jour ce formulaire et la configuration apr
 
 image::components/surveys/component.png[Add component form]
 
-.Ajouter un composant : formulaire de sondage
+.Ajouter une fonctionnalité : formulaire d'enquête
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -45,14 +45,14 @@ Par exemple, si vous avez deux fonctionnalités, "Fonctionnalité a" de poids "1
 alors "Fonctionnalité b" est placée avant dans le listage.
 |===
 
-.Ajouter un composant : Formulaire de sondage - Paramètres globaux
+.Ajouter une fonctionnalité : Formulaire d'enquête - Paramètres généraux
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Portées activées
 |Facultatif
-|Cochez cette case si vous voulez que le filtrage des portées dans ce composant.
+|Cochez cette case si vous voulez que le filtrage des secteurs dans cette fonctionnalité.
 
 |Secteur
 |Facultatif
@@ -75,7 +75,7 @@ alors "Fonctionnalité b" est placée avant dans le listage.
 |Cocher cette case pour supprimer les réponses lorsque l'enquête est publiée. Utile pour tester l'enquête avant de la publier.
 |===
 
-.Ajouter un composant : Formulaire de sondages - Paramètres d'étape
+.Ajouter une fonctionnalité : Formulaire d'enquête - Paramètres d'étape
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -84,11 +84,11 @@ alors "Fonctionnalité b" est placée avant dans le listage.
 |Facultatif
 |Cocher cette case pour recevoir des réponses de cette enquête pour cette étape.
 
-|Autoriser les utilisateurs non enregistrés à répondre à l'enquête
+|Autoriser les utilisateur·ices non enregistrés à répondre à l'enquête
 |Facultatif
 |Si activé, aucune connexion n'est requise pour répondre à l'enquête. Cela peut entraîner des données de mauvaise qualité ou peu fiables et vous rendre plus vulnérable aux
 attaques automatisées. À utiliser avec prudence. N'oubliez pas que cette option ne permet qu'une réponse par session du navigateur,
-mais les participants peuvent utiliser l'option de navigation privée et faire plusieurs réponses avec le même appareil.
+mais les participant·e·x·s peuvent utiliser l'option de navigation privée et faire plusieurs réponses avec le même appareil.
 
 |Annonce
 |Facultatif
@@ -123,7 +123,7 @@ image::components/surveys/edit_form.png[Edit survey form]
 
 |Conditions d'utilisation
 |Obligatoire
-|Les conditions légales que les participants doivent remplir pour répondre à l'enquête.
+|Les conditions légales que les participant·e·x·s doivent remplir pour répondre à l'enquête.
 |===
 
 === Questions
@@ -152,7 +152,7 @@ image::components/surveys/question_form.png[Question form on survey creation]
 
 |Mandatory
 |Facultatif
-|À cocher dans le cas où les participants doivent répondre à cette question pour compléter l'enquête.
+|À cocher dans le cas où les participant·e·x·s doivent répondre à cette question pour compléter l'enquête.
 
 |Limite de caractères
 |Facultatif
@@ -189,45 +189,45 @@ image::components/surveys/question_form_frontend.png[]
 |image:components/surveys/type_single_option_frontend.png[Type d'option simple - frontend,link=../_images/components/surveys/type_single_option_frontend.png]
 |image:components/surveys/type_single_option_backend.png[Type d'option unique - backend,link=../_images/components/surveys/type_single_option_backend.png]
 |Les participants doivent choisir une seule option, avec des boutons radio. Ajoutez au moins 2 options de réponse.
-Il est possible de définir une option "Texte libre" pour que les participants soumettent leur propre réponse.
+Il est possible de définir une option "Texte libre" pour que les participant·e·x·s soumettent leur propre réponse.
 
 |Options multiples
 |image:components/surveys/type_multiple_option_frontend.png[Type d'option multiple - frontend,link=../_images/components/surveys/type_multiple_option_frontend.png]
 |image:components/surveys/type_multiple_option_backend.png[Type d'option multiple - backend,link=../_images/components/surveys/type_multiple_option_backend.png]
-|Les participants peuvent choisir plusieurs options, avec des cases à cocher. Ajoutez au moins 2 options de réponse. Il est possible d'ajouter une validation,
-avec un nombre maximum de choix. Il est possible de définir une option "Texte libre" pour que les participants soumettent leur propre réponse.
+|Les participant·e·x·s peuvent choisir plusieurs options, avec des cases à cocher. Ajoutez au moins 2 options de réponse. Il est possible d'ajouter une validation,
+avec un nombre maximum de choix. Il est possible de définir une option "Texte libre" pour que les participant·e·x·s soumettent leur propre réponse.
 
 |Tri en cours
 |image:components/surveys/type_sorting_frontend.png[Type de tri - frontend,link=../_images/components/surveys/type_sorting_frontend.png]
 |image:components/surveys/type_sorting_backend.png[Type de tri - backend,link=../_images/components/surveys/type_sorting_backend.png]
-|Ajoutez au moins 2 options de réponse. Les participants peuvent faire glisser et déposer les options de réponse pour les ordonner.
+|Ajoutez au moins 2 options de réponse. Les participant·e·x·s peuvent faire glisser et déposer les options de réponse pour les ordonner.
 
 |Fichiers
 |image:components/surveys/type_files_frontend.png[Type de fichiers - frontend,link=../_images/components/surveys/type_files_frontend.png]
 |image:components/surveys/type_files_backend.png[Type de fichiers - backend,link=../_images/components/surveys/type_files_backend.png]
-|Permettre aux participants de télécharger des fichiers.
+|Permettre aux participant·e·x·s de télécharger des fichiers.
 
 |Matrice (option Single)
 |image:components/surveys/type_matrix_single_option_frontend.png[Type de matrice (Single option) - frontend,link=../_images/components/surveys/type_matrix_single_option_frontend.png]
 |image:components/surveys/type_matrix_single_option_backend.png[Type de matrice (Single option) - backend,link=../_images/components/surveys/type_matrix_single_option_backend.png]
-|Les participants doivent choisir entre les lignes et les colonnes d'options simples, avec les boutons radio.
+|Les participant·e·x·s doivent choisir entre les lignes et les colonnes d'options simples, avec les boutons radio.
 
 |Matrice (option multiple)
 |image:components/surveys/type_matrix_multiple_option_frontend.png[Matrice (option multiple) type - frontend,link=../_images/components/surveys/type_matrix_multiple_option_frontend.png]
 |image:components/surveys/type_matrix_multiple_option_backend.png[Type de matrice (option multiple) - backend,link=../_images/components/surveys/type_matrix_multiple_option_backend.png]
-|Les participants doivent choisir entre des lignes et des colonnes d'options multiples, avec des cases à cocher.
+|Les participant·e·x·s doivent choisir entre des lignes et des colonnes d'options multiples, avec des cases à cocher.
 |===
 
 ==== Questions conditionnelles
 
 Une fois l'enquête enregistrées, un bouton "Ajouter une condition d'affichage" apparait dans les blocs de questions.
-Cette fonctionnalité permet aux administrateurs de créer des enquêtes complexes, c'est-à-dire que certaines questions s'affichent seulement si les participants ont sélectionné certaines réponses spécifiques aux questions précédentes.
+Cette fonctionnalité permet aux administrateur·ices de créer des enquêtes complexes, c'est-à-dire que certaines questions s'affichent seulement si les participant·e·x·s ont sélectionné certaines réponses spécifiques aux questions précédentes.
 
 TIP: Les questions conditionnelles peuvent être difficiles à configurer, alors assurez-vous de tester le comportement de l'enquête avant de la publier.
 
 image::components/surveys/conditional_question.png[Display condition in backend]
 
-.Ajouter un formulaire de condition d'affichage
+.Formulaire Ajouter une condition d'affichage
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -242,7 +242,7 @@ image::components/surveys/conditional_question.png[Display condition in backend]
 
 |Option de réponse
 |Obligatoire
-|Ce champ propose les options de réponse aux questions qui doivent être choisies par les participants pour remplir la condition.
+|Ce champ propose les options de réponse aux questions qui doivent être choisies par les participant·e·x·s pour remplir la condition.
 Disponible uniquement pour les conditions "Égal" et "Pas Égal".
 
 |Texte inclus
@@ -273,10 +273,10 @@ image::components/surveys/title_description_backend.png[Title and description in
 
 === Exporter les réponses
 
-Il est possible d'exporter les réponses des participants à l'enquête dans différents formats : CSV, JSON, XLSX (Excel) ou PDF.
-L'exportation n'inclue pas les données des utilisateurs. Pour les collecter, assurez-vous de créer des questions d'enquête spécifiques à ces données.
+Il est possible d'exporter les réponses des participant·e·x·s à l'enquête dans différents formats : CSV, JSON, XLSX (Excel) ou PDF.
+L'exportation n'inclue pas les données des utilisateur·ices. Pour les collecter, assurez-vous de créer des questions d'enquête spécifiques à ces données.
 
-NOTE: La plateforme ne gère pas le traitement des réponses ni la présentation des résultats ou le résumé aux utilisateurs. Il est nécessaire de le faire en dehors de l'exportation.
+NOTE: La plateforme ne gère pas le traitement des réponses ni la présentation des résultats ou le résumé aux utilisateur·ices. Il est nécessaire de le faire en dehors de l'exportation.
 
 == Exemples
 
