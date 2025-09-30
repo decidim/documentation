@@ -2,19 +2,19 @@
 
 == En bref
 
-La fonctionnalité Blog permet aux administrateurs de publier des nouvelles à propos d'un espace participatif, que les participants peuvent lire pour obtenir des mises à jour.
+La fonctionnalité Actualité permet aux administrateur·ices de publier des nouvelles à propos d'un espace participatif, que les participant·e·x·s peuvent lire pour obtenir des mises à jour.
 
 image::components/blog/example01.png[Example of blog posts list]
 
-Tous les articles du blog sont disponibles sur la liste des posts, et les participants peuvent cliquer sur chaque article du blog pour en savoir plus sur les nouveautés.
+Tous les articles de l'actualité sont disponibles sur la liste des posts, et les participant·e·x·s peuvent cliquer sur chaque article de l'actualité pour en savoir plus sur les nouveautés.
 
 image::components/blog/example02.png[Example of a blog post]
 
 == Configuration
 
-=== Créer une fonctionnalité de blog
+=== Créer une fonctionnalité d'actualité
 
-Pour créer une fonctionnalité de blog, aller d'abord dans [espace participatif] à l'endroit de création souhaité.
+Pour créer une fonctionnalité d'actualité, aller d'abord dans [espace participatif] à l'endroit de création souhaité.
 
 image::components/blog/component_blog.png[Add Blog component button]
 
@@ -22,7 +22,7 @@ Ensuite :
 
 . Cliquer sur l'élément "Fonctionnalités" dans le menu secondaire
 . Cliquer sur "Ajouter une fonctionnalité"
-. Sélectionner "Blog"
+. Sélectionner "Actualité"
 . Remplir le formulaire de création de fonctionnalité
 
 Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur l’icône [Icône Configurer] dans la liste des fonctionnalités.
@@ -36,21 +36,21 @@ image::components/blog/component.png[Add component form]
 
 |Nom
 |Obligatoire
-|Le titre de cette fonctionnalité. Par exemple, "Blogs" ou "Dernières nouvelles"
+|Le titre de cette fonctionnalité. Par exemple, "Actualités" ou "Dernières nouvelles"
 
 |Rang d'affichage
 |Facultatif
 |Position de la fonctionnalité par rapport aux autres fonctionnalités. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
 |===
 
-.Formulaire de blog - Paramètres généraux
+.Formulaire d'actualité - Paramètres généraux
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Annonce
 |Facultatif
-|Une annonce générale visible sur la page d'accueil de la fonctionnalité Blog.
+|Une annonce générale visible sur la page d'accueil de la fonctionnalité Actualité.
 
 |Commentaires activés
 |Facultatif
@@ -68,7 +68,7 @@ image::components/blog/component.png[Add component form]
 
 |Annonce
 |Facultatif
-|Une annonce générale visible sur la page d’accueil du blog.
+|Une annonce générale visible sur la page d’accueil de l'actualité.
 
 |Commentaires désactivés
 |Facultatif
@@ -102,7 +102,7 @@ image:components/blog/new_post.png[Formulaire du nouveau post]
 
 |Auteur
 |Obligatoire
-|Compte des participants ou groupe d'utilisateurs qui créent le message.
+|Compte des participant·e·x·s ou groupe d'utilisateur·ices qui créent le message.
 
 |Titre
 |Obligatoire
@@ -151,7 +151,7 @@ image:components/blog/new_post.png[Formulaire du nouveau post]
 
 == Exemples
 
-Ci-dessous, vous pouvez trouver quelques liens vers des exemples de fonctionnalités de blog :
+Ci-dessous, vous pouvez trouver quelques liens vers des exemples de fonctionnalités d'actualité :
 
 * https://meta.decidim.org/processes/news/f/1719/posts[Dernière nouvelle de l'association Decidim]
 * https://www.decidim.barcelona/processes/volem-decidir/f/6338/posts[News on a participatory process in Barcelona]
