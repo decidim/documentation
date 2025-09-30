@@ -5,7 +5,7 @@
 La fonctionnalité Tirage au sort permet de trier un certain nombre de propositions à l'aide de procédures aléatoires, mais reproductibles, qui garantissent des distributions non biaisées
 et uniformes.
 
-Par exemple, il peut être utile pour trier les candidats à un jury ou à des propositions de budgétisation participative.
+Par exemple, il peut être utile pour trier les candidat·e·x·s à un jury ou à des propositions de budgétisation participative.
 
 Pour effectuer un tirage au sort, vous avez besoin d'un dé ou d'un autre moyen aléatoire de générer un nombre de 1 à 6, ainsi que des témoins.
 
@@ -51,7 +51,7 @@ alors "Fonctionnalité b" est placée avant dans le listage.
 
 |Commentaires activés
 |Facultatif
-|Pour activer les commentaires. Les participants peuvent ainsi commenter les tirages au sort.
+|Pour activer les commentaires. Les participant·e·x·s peuvent ainsi commenter les tirages au sort.
 
 |Longueur maximale des commentaires
 |Facultatif
@@ -85,7 +85,7 @@ image::components/sortitions/new_sortition_backend.png[New sortition backend for
 
 |Témoins
 |Obligatoire
-|Les témoins qui assistent au tirage au sort et qui peuvent témoigner de son authenticité.
+|Les témoin·x·s qui assistent au tirage au sort et qui peuvent témoigner de son authenticité.
 
 |Information sur le tirage au sort
 |Obligatoire
@@ -93,17 +93,17 @@ image::components/sortitions/new_sortition_backend.png[New sortition backend for
 
 |Résultat du jet de dé
 |Obligatoire
-|Lancer un dé à 6 côtés, ou chercher un autre moyen aléatoire de générer un nombre de 1 à 6, et entrer ici le résultat en présence de témoins. Cela contribue à la qualité et garantie le caractère aléatoire du résultat.
+|Lancer un dé à 6 côtés, ou chercher un autre moyen aléatoire de générer un nombre de 1 à 6, et entrer ici le résultat en présence de témoin·x·s. Cela contribue à la qualité et garantie le caractère aléatoire du résultat.
 |===
 
 === Gérer les tirages
 
-Pour commencer à créer et à gérer des partitions, cliquez dans le titre du composant dans la barre de navigation ou dans la liste des composants, ou cliquez dans l'image
+Pour commencer à créer et à gérer des partitions, cliquez dans le titre du composant dans la barre de navigation ou dans la liste des fonctionnalités, ou cliquez dans l'image
 : icons/action_edit.
 
 image::components/sortitions/manage_sortitions.png[Manage sortitions table]
 
-Sur la liste des tirages au sort dans le panneau d'administration, les administrateurs peuvent voir :
+Sur la liste des tirages au sort dans le panneau d'administration, les administrateur·ices peuvent voir :
 
 * *Référence* : Référence du tirage au sort.
 * *Titre* : Titre du tirage au sort.
