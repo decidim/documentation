@@ -77,15 +77,15 @@ Un nombre qui indique le coût de la proposition.
 Si le composant Propositions paramètre "Publier les réponses immédiatement" est coché, alors la réponse est visible au public
 immédiatement après avoir cliqué sur le bouton "Répondre".
 
-Les statuts sont visibles sur la liste des propositions, les cartes et les pages. De nouveaux statuts peuvent être créés, et ceux par défaut peuvent être modifiés ou supprimés.
+Les progrès sont visibles sur la liste des propositions, les cartes et les pages. De nouveaux progrès peuvent être créés, et ceux par défaut peuvent être modifiés ou supprimés.
 
 image::components/proposals/answers/proposal_answer_state_accepted_card.png[Proposal card answer custom status]
 
-Les statuts peuvent être adaptés aux besoins de votre organisation en cliquant sur le bouton "Statuts" dans la liste des propositions d'administration.
+Les progrès peuvent être adaptés aux besoins de votre organisation en cliquant sur le bouton "Progrès" dans la liste des propositions d'administration.
 
 image::components/proposals/answers/proposal_statuses_back.png[Proposal statuses list]
 
-Cliquez sur le bouton "Nouveau statut" pour commencer à créer vos statuts personnalisés.
+Cliquer sur "Nouveau progrès" pour créer vos progrès personnalisés.
 
 .Répondre au formulaire de proposition
 [cols="20h,10h,~"]
@@ -94,7 +94,7 @@ Cliquez sur le bouton "Nouveau statut" pour commencer à créer vos statuts pers
 
 |Titre
 |Obligatoire
-|Le titre du statut, affiché sur les fiches de proposition, les listes et les filtres.
+|Le titre du progrès, affiché sur les fiches de proposition, les listes et les filtres.
 
 |En-tête de réponse
 |Obligatoire
@@ -111,20 +111,20 @@ image::components/proposals/answers/proposal_status_form.png[Proposal new status
 
 === Publication
 
-Vous pouvez contrôler quand les réponses sont publiées en utilisant la case "Publier les réponses immédiatement" dans la configuration de la proposition.
-Pour activer la publication automatique, cochez cette case.
+Il est possible de contrôler quand les réponses sont publiées en utilisant la case "Publier les réponses immédiatement" dans la configuration de la proposition.
+Pour activer la publication automatique, cocher cette case.
 
 Si vous voulez contrôler quand publier les réponses d'une proposition ou de propositions multiples, suivez ces étapes :
 
 . Ne pas cocher la case "Publier les réponses immédiatement" dans la configuration du composant de proposition
 . Répondre aux propositions (les réponses ne sont pas encore publiées)
 . Lorsque vous voulez publier les réponses, sélectionnez les propositions
-. Cliquez sur le bouton "Actions"
-. Cliquez sur l'option "Publier les réponses"
+. Cliquer sur "Actions"
+. Cliquer sur l'option "Publier les réponses"
 
 image::components/proposals/answers/proposal_answer_publish.png[Proposal answer publication: action]
 
-Ensuite, cliquez sur le bouton "Publier".
+Ensuite, cliquer sur "Publier".
 
 image::components/proposals/answers/proposal_answer_publish_button.png[Proposal answer publication: publish button]
 
