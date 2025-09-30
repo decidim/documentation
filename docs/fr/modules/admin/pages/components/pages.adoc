@@ -2,9 +2,9 @@
 
 == En bref
 
-La fonctionnalité Page permet aux participants d'avoir plus d'information sur un espace. Les administrateurs peuvent remplir une page avec des informations, des images, des liens, afin d'informer et mettre à jour les participants.
+La fonctionnalité Page permet aux participant·e·x·s d'avoir plus d'information sur un espace. Les administrateur·ices peuvent remplir une page avec des informations, des images, des liens, afin d'informer et mettre à jour les participant·e·x·s.
 
-doc[Pages], la principale différence étant que ce composant permet de définir des pages à l'intérieur de
+doc[Pages], la principale différence étant que cette fonctionnalité permet de définir des pages à l'intérieur de
 un espace participatif, et non dans la section Aide.
 
 image::components/page/example01.png[Example of a page component in a participatory process]
@@ -21,7 +21,7 @@ Ensuite :
 
 . Cliquer sur l'élément "Fonctionnalités" dans le menu secondaire
 . Cliquer sur "Ajouter une fonctionnalité"
-. Sélectionnez "page"
+. Sélectionnez "Page"
 . Remplir le formulaire de création de fonctionnalité
 
 Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur l’icône
@@ -45,7 +45,7 @@ Par exemple, si vous avez deux fonctionnalités, "Fonctionnalité a" de poids "1
 alors "Fonctionnalité b" est placée avant dans le listage.
 |===
 
-.Ajouter un composant : Formulaire de page - Paramètres globaux
+.Ajouter une fonctionnalité : Formulaire de page - Paramètres généraux
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -55,7 +55,7 @@ alors "Fonctionnalité b" est placée avant dans le listage.
 |Une annonce générale visible en haut de la page.
 |===
 
-.Ajouter un composant : Formulaire de pages - Paramètres de l'étape
+.Ajouter une fonctionnalité : Formulaire de pages - Paramètres de l'étape
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -83,7 +83,7 @@ image:components/page/new_page.png[Formulaire de nouvelle page]
 
 == Exemples
 
-Quelques exemples d'utilisation de ce composant :
+Quelques exemples d'utilisation de cette fonctionnalité :
 
 * https://meta.decidim.org/processes/Welcome/f/1686/[Prenez la page de la visite pour découvrir la communauté Decidim]
 * https://www.decidim.barcelona/processes/PressupostosParticipatius/f/4691/[Page d'information pour un budget participatif de Barcelona]
