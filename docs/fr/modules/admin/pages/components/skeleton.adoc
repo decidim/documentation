@@ -17,7 +17,7 @@ image:components/skeleton/example04.png[]
 
 == Configuration
 
-Pour créer une fonctionnalité de blog, aller d'abord dans [espace participatif] à l'endroit de création souhaité.
+Pour créer une fonctionnalité d'actualité, aller d'abord dans [espace participatif] à l'endroit de création souhaité.
 
 image::components/skeleton/component_skeleton.png[Add component button]
 
@@ -31,7 +31,7 @@ Ensuite :
 image:components/skeleton/component.png[Ajouter un formulaire de composant]
 
 
-.Ajouter un composant : formulaire de squelette
+.Ajouter une fonctionnalité : formulaire de squelette
 |===
 |Champ |Type |Description
 
@@ -45,13 +45,13 @@ image:components/skeleton/component.png[Ajouter un formulaire de composant]
 |===
 
 
-.Ajouter un composant : Formulaire de squelette - Paramètres globaux
+.Ajouter une fonctionnalité : Formulaire de squelette - Paramètres généraux
 |===
 |Champ |Type |Description
 
 |Portées activées
 |Facultatif
-|Cochez cette case si vous voulez que le filtrage des portées dans ce composant.
+|Cochez cette case si vous voulez que le filtrage des secteurs dans cette fonctionnalité.
 
 |Secteur
 |Facultatif
@@ -67,7 +67,7 @@ image:components/skeleton/component.png[Ajouter un formulaire de composant]
 
 |Longueur maximale des commentaires
 |Facultatif
-|La limite de caractères que les participants ont pour faire des commentaires. Laisser 0 pour la valeur par défaut.
+|La limite de caractères que les participant·e·x·s ont pour faire des commentaires. Laisser 0 pour la valeur par défaut.
 
 |Les autorisations d'actions peuvent être définies pour chaque squelette
 |Facultatif
@@ -79,7 +79,7 @@ image:components/skeleton/component.png[Ajouter un formulaire de composant]
 |===
 
 
-.Ajouter un composant : Formulaire de squelettes - Paramètres de l'étape
+.Ajouter une fonctionnalit : Formulaire de squelettes - Paramètres de l'étape
 |===
 |Champ |Type |Description
 
@@ -109,7 +109,7 @@ Permet d'exporter les squelettes dans différents formats.
 
 === Nouveau formulaire de squelette
 
-image:components/skeleton/new_skeleton.png[Nouvelle forme de squelette]
+image:components/skeleton/new_skeleton.png[Nouveau formulaire de squelette]
 
 
 .Nouveau formulaire de squelette
@@ -155,6 +155,6 @@ image:components/skeleton/new_skeleton.png[Nouvelle forme de squelette]
 
 == Exemples
 
-Quelques exemples d'utilisation de ce composant :
+Quelques exemples d'utilisation de cette fonctionnalité :
 
 *
