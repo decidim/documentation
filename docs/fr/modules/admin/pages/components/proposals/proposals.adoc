@@ -8,10 +8,10 @@ image::components/proposals/proposals_list_frontend.png[Proposals list frontend]
 
 == Configuration
 
-Une fois que vous avez créé votre volet Propositions, vous êtes redirigé vers la liste des propositions. Là, vous pouvez créer et gérer les propositions de
+Une fois que vous avez créé votre volet Propositions, vous êtes redirigé·e·x vers la liste des propositions. Là, vous pouvez créer et gérer les propositions de
 votre volet.
 
-Selon que vous ne souhaitez réunir que des propositions de participants, ou que vous voulez également créer des propositions officielles, lisez la section
+Selon que vous ne souhaitez réunir que des propositions de participant·e·x·s, ou que vous voulez également créer des propositions officielles, lisez la section
 pertinente.
 
 === Création de propositions
@@ -38,7 +38,7 @@ par défaut, mais il peut être modifié avec le paramètre "Longueur maximale d
 
 |Hashtags suggérés
 |Facultatif
-|Si les [hashtags] ont été configurés, les participants peuvent sélectionner ceux liés à leur proposition.
+|Si les [hashtags] ont été configurés, les participant·e·x·s peuvent sélectionner ceux liés à leur proposition.
 
 |Cette proposition provient d'une réunion
 |Facultatif
@@ -51,7 +51,7 @@ L'auteur de la proposition devient la réunion.
 
 |Adresses
 |Facultatif
-|Si activé, le géocodage permet au participant de localiser ses propositions sur un emplacement spécifique. Les propositions avec une adresse sont alors
+|Si activé, le géocodage permet à lae participant·e·x de localiser ses propositions dans un emplacement spécifique. Les propositions avec une adresse sont alors
 affichées sur la carte dans la liste des propositions.
 
 |Catégorie
@@ -60,18 +60,18 @@ affichées sur la carte dans la liste des propositions.
 
 |Ajouter des documents
 |Facultatif
-|Si activé, les participants peuvent ajouter des fichiers et des images à leur proposition. La première image ajoutée est également l'image de la proposition dans
+|Si activé, les participant·e·x·s peuvent ajouter des fichiers et des images à leur proposition. La première image ajoutée est également l'image de la proposition dans
 la liste de la grille de la proposition.
 |===
 
 ==== Propositions des participants
 
-Une fois la création de propositions de participants activée pour la phase active, les participants peuvent voir un bouton "Nouvelle proposition" sur la page d'annonce de la proposition
+Une fois la création de propositions de participant·e·x·s activée pour la phase active, les participant·e·x·s peuvent voir un bouton "Nouvelle proposition" sur la page d'annonce de la proposition
 .
 
 image::components/proposals/new_proposal_button_frontend.png[New proposal button on proposals list]
 
-Lorsqu'ils cliquent sur le bouton, ils sont redirigés sur un formulaire en deux étapes, leur permettant de créer leur proposition.
+Lorsqu'iels cliquent sur le bouton, iels sont redirigé·e·x·s sur un formulaire en deux étapes, leur permettant de créer leur proposition.
 Ce formulaire dépend de beaucoup de paramètres activés dans la fonctionnalité.
 
 image::components/proposals/new_proposal_frontend.png[New proposal form - Create]
@@ -92,11 +92,11 @@ par défaut, mais il peut être modifié avec le paramètre "Longueur maximale d
 
 |Hashtags suggérés
 |Facultatif
-|Si les [hashtags] ont été configurés, les participants peuvent sélectionner ceux liés à leur proposition.
+|Si les [hashtags] ont été configurés, les participant·e·x·s peuvent sélectionner ceux liés à leur proposition.
 
 |Adresses
 |Facultatif
-|Si activé, le géocodage permet au participant de localiser ses propositions sur un emplacement spécifique. Les propositions avec une adresse sont alors
+|Si activé, le géocodage permet à lae participant·e·x de localiser ses propositions dans un emplacement spécifique. Les propositions avec une adresse sont alors
 affichées sur la carte dans la liste des propositions.
 
 |Catégorie
@@ -105,27 +105,27 @@ affichées sur la carte dans la liste des propositions.
 
 |Ajouter des documents
 |Facultatif
-|Si activé, les participants peuvent ajouter des fichiers et des images à leur proposition. La première image ajoutée est également l'image de la proposition dans
+|Si activé, les participant·e·x·s peuvent ajouter des fichiers et des images à leur proposition. La première image ajoutée est également l'image de la proposition dans
 la liste de la grille de la proposition.
 
 |Créer une proposition en tant que
 |Facultatif
-|Si le participant appartient à un [groupe d'utilisateurs], il peut créer une proposition au nom de
+|Si lae participant·e·x appartient à un [groupe d'utilisateur·ices], iel peut créer une proposition au nom de
 ce groupe
 |===
 
-Une fois que la proposition est écrite et que toutes les propriétés sont définies, le participant peut cliquer sur le bouton d'aperçu pour examiner sa proposition.
-La proposition est enregistrée comme brouillon au cas où les participants voudraient la modifier plus tard.
+Une fois que la proposition est écrite et que toutes les propriétés sont définies, lae participant·e·x peut cliquer sur le bouton d'aperçu pour examiner sa proposition.
+La proposition est enregistrée comme brouillon au cas où les participant·e·x·s voudraient la modifier plus tard.
 
 image::components/proposals/new_proposal_frontend_publish.png[New proposal form (by a participant) - Publish]
 
-Ils peuvent cliquer sur le bouton "Publier" pour finaliser la publication de la proposition.
+Iel peut cliquer sur le bouton "Publier" pour finaliser la publication de la proposition.
 
 image::components/proposals/new_proposal_frontend_published.png[Published proposal made by a participant]
 
 === Gérer les propositions
 
-Une fois qu'il y a plusieurs propositions dans le processus, les administrateurs peuvent les gérer.
+Une fois qu'il y a plusieurs propositions dans le processus, les administrateur·ices peuvent les gérer.
 
 image::components/proposals/manage_proposals.png[Manage proposals table]
 
@@ -135,7 +135,7 @@ Sur la liste des propositions dans le panneau d'administration, les administrate
 * *Publié à* : Date de publication de la proposition.
 * *Commentaires* : Le nombre de commentaires que contient cette proposition.
 * *Notes* : Le nombre de votes que cette proposition possède.
-* *Valuators* : Le nombre d'évaluateurs pour cette proposition.
+* *Évaluateur·ices* : Le nombre d'évaluateur·ices pour cette proposition.
 * *Statut* : Le statut de [réponse] de cette proposition.
 
 Il est possible de filtrer et trier cette liste en cliquant sur "Filtrer" et sur les en-têtes des colonnes.
@@ -154,7 +154,7 @@ Il est également possible de rechercher des propositions titre ou par ID dans l
 
 |image:icons/action_answers.png[Icône de proposition de réponse]
 |xref:components/propositions/answers.adoc[Répondre à la proposition]
-|Permet aux administrateurs et aux évaluateurs de donner une réponse officielle à une proposition.
+|Permet aux administrateur·ices et aux évaluateur·ices de donner une réponse officielle à une proposition.
 
 |image:icons/action_preview.png[Icône d'aperçu]
 |Aperçu
@@ -173,7 +173,7 @@ image::components/proposals/bulk_actions.png[Proposals bulk actions]
 
 === Exportation
 
-Le bouton "Exporter tout" permet aux administrateurs d'exporter les propositions et leurs commentaires dans différents formats.
+Le bouton "Tout exporter" permet aux administrateur·ices d'exporter les propositions et leurs commentaires dans différents formats.
 
 * Propositions au format CSV
 * Propositions en JSON
