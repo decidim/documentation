@@ -2,37 +2,37 @@
 
 == En bref
 
-Decidim fournit des statistiques générales sur l'ensemble de la plate-forme et différents espaces participatifs peuvent également fournir des statistiques relatives à cet espace participatif seulement.
-Ce sont des numéros génériques qui indiquent l'activité du site Web et peuvent également encourager d'autres personnes à rejoindre la plateforme comme elles le voient populaire.
+Decidim fournit des statistiques générales sur l'ensemble de la plateforme et différents espaces participatifs peuvent également fournir des statistiques relatives à cet espace participatif seulement.
+Ce sont des nombres génériques qui indiquent l'activité du site Web et peuvent également encourager d'autres personnes à rejoindre la plateforme comme elles le voient populaire.
 
 === How to find it?
 
 ==== Statistiques
 
-Les options de la page d'accueil permettent aux administrateurs d'activer des statistiques de bloc de contenu qui s'affiche sur la page d'accueil.
+Les options de la page d'accueil permettent aux administrateur·ices d'activer des statistiques de bloc de contenu qui s'affiche sur la page d'accueil.
 
 image::features/metrics/homepage_stats.png[Example of statistics content block]
 
-Les administrateurs peuvent également activer des métriques dans un processus participatif ou dans une page d'accueil d'une assemblée.
+Les administrateur·ices peuvent également activer des métriques dans un processus participatif ou dans une page d'accueil d'une assemblée.
 
 image::features/metrics/example_stats.png[Example of statistics]
 
 ==== Métriques
 
-NOTE: Vous recherchez comment activer cette fonctionnalité techniquement ? Aller sur xref:develop:metrics.adoc[Metrics in Developers guide].
+NOTE: Vous recherchez comment activer cette fonctionnalité techniquement ? Aller sur xref:develop:metrics.adoc[Guide developpers métriques].
 
-Avec les métriques, les participants peuvent voir l'évolution en temps réel de certaines ressources, telles que les Propositions, l'Aide, les Soutiens, les Abonnés, les Participants, les Propositions acceptées, les Commentaires, etc.
+Avec les métriques, les participant·e·x·s peuvent voir l'évolution en temps réel de certaines ressources, telles que les Propositions, l'Aide, les Soutiens, les Abonnés, les Participant·e·x·s, les Propositions acceptées, les Commentaires, etc.
 
-Les options de la page d'accueil permettent aux administrateurs d'activer un bloc de contenu métrique, qui s'affiche sur la page d'accueil.
+Les options de la page d'accueil permettent aux administrateur·ices d'activer un bloc de contenu métrique, qui s'affiche sur la page d'accueil.
 
 image::features/metrics/homepage.png[Example of metrics content block]
 
-Les administrateurs peuvent également activer des métriques dans des pages d'accueil 'un processus participatif.
+Les administrateur·ices peuvent également activer des métriques dans des pages d'accueil d'un processus participatif.
 
 Vous pouvez voir un exemple réel de ceci dans https://meta.decidim.org/processes/roadmap/all-metrics[Processus de feuille de route Metadecidim].
 
 image::features/metrics/example.png[Example of metrics]
 
-En cliquant sur "Afficher tout", les visiteurs peuvent voir d'autres métriques et télécharger les données au format CSV.
+En cliquant sur "Afficher tout", les visiteur·euses peuvent voir d'autres métriques et télécharger les données au format CSV.
 
 image:features/metrics/page.png[Metrics page]
