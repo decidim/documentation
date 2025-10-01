@@ -2,8 +2,8 @@
 
 == En bref
 
-Les participants peuvent s'abonner au contenu de Decidim, tels que des espaces participatifs, des propositions, une rencontre spécifique, d'autres participants, des groupes d'utilisateurs, etc.
-Suivre une personne ou un contenu signifie que lorsqu'il y a des actualités liées à ce contenu, le participant reçoit des xref:features/participant_actions/notifications.adoc[notifications].
+Les participant·e·x·s peuvent s'abonner au contenu de Decidim, tels que des espaces participatifs, des propositions, une rencontre spécifique, d'autres participant·e·x·s, des groupes d'utilisateur·ices, etc.
+Suivre une personne ou un contenu signifie que lorsqu'il y a des actualités liées à ce contenu, lae participant·e·x reçoit des xref:features/participant_actions/notifications.adoc[notifications].
 
 Les notifications sont accessibles dans la page de notifications, mais peuvent également être envoyées par email.
 Vous pouvez contrôler ces notifications dans les xref:features/participant_actions/my_account.adoc#_notifications_settings[paramètres de votre compte].
@@ -14,7 +14,7 @@ L'activité que vous suivez est visible dans votre activité xref:features/parti
 
 === S'abonner à un contenu
 
-NOTE: Par défaut, les administrateurs suivent tous les nouveaux espaces créés sur la plateforme.
+NOTE: Par défaut, les administrateur·ices suivent tous les nouveaux espaces créés sur la plateforme.
 
 Pour suivre un contenu:
 
@@ -34,10 +34,10 @@ Pour ne plus être abonné à un contenu:
 
 image::features/follows/button_stop_following.png[Stop following button]
 
-=== S'abonner à un participant
+=== S'abonner à unx participant·e·x
 
-Un participant peut également suivre d'autres participants. Ceci est public et visible dans le profil xref:features/participant_actions/my_public_profile.adoc[suit la section].
+Unx participant·e·x peut également suivre d'autres participant·e·x·s. Ceci est public et visible dans le profil xref:features/participant_actions/my_public_profile.adoc[suit la section].
 
-Pour suivre un participant, passez le curseur sur son avatar ou cliquez sur le bouton « S'abonner » dans sa page de profil public.
+Pour suivre unx participant·e·x, passez le curseur sur son avatar ou cliquez sur le bouton « S'abonner » dans sa page de profil public.
 
 image::features/follows/user_tooltip_follow.png[Follow user]
