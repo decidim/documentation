@@ -2,9 +2,9 @@
 
 == En bref
 
-Les commentaires sont des messages publics qui permettent aux participants de partager des informations ou des opinions à propos d'une proposition, un débat, une réunion, une initiative, etc.
+Les commentaires sont des messages publics qui permettent aux participant·e·x·s de partager des informations ou des opinions à propos d'une proposition, un débat, une réunion, une initiative, etc.
 
-NOTE: Les commentaires doivent être activés par les administrateurs, sinon les participants ne sont pas en mesure de commenter. Pour savoir comment activer les commentaires dans une fonctionnalité, se référer à l'article xref:features:components.adoc[Components].
+NOTE: Les commentaires doivent être activés par les administrateur·ices, sinon les participant·e·x·s ne sont pas en mesure de commenter. Pour savoir comment activer les commentaires dans une fonctionnalité, se référer à l'article xref:features:components.adoc[Fonctionnalités].
 
 image::features/comments/nested_comment.png[Comments example]
 
@@ -26,7 +26,7 @@ Les commentaires permettent les actions suivantes :
 |Type |Description |Syntaxe |Exemple
 
 |Mention
-|Mentionner un utilisateur ou un groupe d'utilisateurs. Ils recevront une notification pour la mention.
+|Mentionner unx utilisateur·ice ou un groupe d'utilisateur·ices. Iels recevront une notification pour la mention.
 |@pseudonyme
 |@carmelia_hudson
 
@@ -47,12 +47,12 @@ prend le titre du contenu.
 |https://en.wikipedia.org/wiki/Decidim
 
 |Emojis
-|Les participants peuvent ajouter des émoticônes en cliquant sur l'icône emoji en bas à droite du champ de commentaire.
+|Les participant·e·x·s peuvent ajouter des émoticônes en cliquant sur l'icône emoji en bas à droite du champ de commentaire.
 |Pas de syntaxe
 |😁
 
 |Donner son opinion
-|Les participants peuvent dire qu'ils sont pour, neutres ou contre le contenu
+|Les participant·e·x·s peuvent dire qu'iels sont pour, neutres ou contre le contenu
 |Pas de syntaxe
 |Pour
 |===
@@ -65,7 +65,7 @@ Une fois publié, ce commentaire et ses différents éléments sont affichés te
 
 image::features/comments/rich_text_read.png[Comments with rich text (read)]
 
-En cliquant sur un hashtag dans un commentaire ou un autre contenu, les participants sont redirigés vers la recherche globale.
+En cliquant sur un hashtag dans un commentaire ou un autre contenu, les participant·e·x·s sont redirigé·e·x·s vers la recherche globale.
 
 image::features/comments/hashtag_search.png[Hashtags in comments]
 
@@ -77,11 +77,11 @@ image::features/comments/xss_read.png[XSS in comments (read)]
 
 === Actions
 
-Les participants peuvent interagir avec les commentaires de différentes manières.
+Les participant·e·x·s peuvent interagir avec les commentaires de différentes manières.
 
 * Tout le monde peut les trier et afficher et masquer le fil de réponses.
-* Les participants peuvent également répondre aux commentaires, leur donner un vote positivement ou négativement, les signaler ou obtenir le lien vers le commentaire.
-* Les auteurs de commentaires peuvent également modifier et supprimer leurs propres commentaires.
+* Les participant·e·x·s peuvent également répondre aux commentaires, leur donner un vote positivement ou négativement, les signaler ou obtenir le lien vers le commentaire.
+* Les auteur·ices de commentaires peuvent également modifier et supprimer leurs propres commentaires.
 
 Certaines actions sont accessibles directement sur le commentaire, alors que d'autres sont accessibles dans le menu en cliquant sur les trois points à côté d'un commentaire.
 
@@ -89,7 +89,7 @@ image::features/comments/actions.png[Comments actions]
 
 ==== Trier
 
-Les participants peuvent trier les commentaires selon :
+Les participant·e·x·s peuvent trier les commentaires selon :
 * La meilleure note : les commentaires avec le plus de votes positifs apparaissent en premier dans la liste
 * La date : les commentaires les plus récents apparaissent en premier.
 * Ancienneté : les commentaires plus anciens apparaissent en premier.
@@ -101,14 +101,14 @@ Il est également possible de masquer les réponses pour ne pas afficher le fil 
 
 ==== Répondre
 
-En cliquant sur le bouton « Répondre » sous un commentaire, les participants peuvent répondre à d'autres participants et avoir des discussions publiques.
+En cliquant sur le bouton « Répondre » sous un commentaire, les participant·e·x·s peuvent répondre à d'autres participant·e·x·s et avoir des discussions publiques.
 Les commentaires peuvent être imbriqués jusqu'à quatre niveaux. Au quatrième niveau, le bouton "Répondre" n'est plus disponible.
 
 image::features/comments/anidation_levels.png[Nested comments]
 
 ==== Vote positif / négatif
 
-Les participants peuvent soutenir les commentaires en cliquant sur l'icône "Pouce vers le haut" en bas à droite de chaque commentaire.
+Les participant·e·x·s peuvent soutenir les commentaires en cliquant sur l'icône "Pouce vers le haut" en bas à droite de chaque commentaire.
 Il leur permet de participer et de donner leur avis, sans devoir répondre à un commentaire.
 
 ==== Signaler
@@ -117,15 +117,15 @@ Veuillez lire l'article xref:admin:moderations/reported_content.adoc[Contenu sig
 
 ==== Obtenir le lien
 
-En cliquant sur l'élément "Obtenir un lien", les participants sont redirigés vers l'URL dédiée au commentaire.
-Ils peuvent ensuite partager ce lien avec d'autres personnes, qui les mène directement à un commentaire.
-Un message est affiché pour avertir le visiteur qu'il voit un seul commentaire, avec un lien pour voir tous les autres commentaires.
+En cliquant sur l'élément "Obtenir un lien", les participant·e·x·s sont redirigé·e·x·s vers l'URL dédiée au commentaire.
+Iels peuvent ensuite partager ce lien avec d'autres personnes, qui les mène directement à un commentaire.
+Un message est affiché pour avertir lae visiteur·euse qu'iel voit un seul commentaire, avec un lien pour voir tous les autres commentaires.
 
 image::features/comments/single_comment.png[Edited comment]
 
 ==== Editer
 
-Les participants peuvent modifier leurs commentaires. Une mention « Édité » apparaît sur leur commentaire pour indiquer aux autres participants
+Les participant·e·x·s peuvent modifier leurs commentaires. Une mention « Modifié » apparaît sur leur commentaire pour indiquer aux autres participant·e·x·s
 que ce contenu a été modifié.
 
 Les commentaires ne contiennent pas l'historique des versions modifiées.
