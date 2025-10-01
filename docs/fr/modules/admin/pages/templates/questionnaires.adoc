@@ -2,7 +2,7 @@
 
 == En bref
 
-Dans cette section, vous pouvez créer, modifier et supprimer des modèles de questionnaires, que vous pouvez ensuite utiliser dans n'importe quel composant d'enquête.
+Dans cette section, vous pouvez créer, modifier et supprimer des modèles de questionnaires, que vous pouvez ensuite utiliser dans n'importe quelle fonctionnalité d'enquête.
 
 == Configuration
 
@@ -12,7 +12,7 @@ Pour créer un nouveau modèle de questionnaire, vous devez cliquer sur le bouto
 
 image::templates/templates_questionnaires_backend_form.png[Backend: new template form]
 
-.Nouveau formulaire de questionnaire
+.Formulaire Nouveau modèle de questionnaire
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -23,8 +23,7 @@ image::templates/templates_questionnaires_backend_form.png[Backend: new template
 
 |Description
 |Obligatoire
-|Description de ce que le modèle est conçu. This description is only available in the templates panel, to describe precisely what
-the survey is for.
+|Description des raisons de ce modèle. Cette description n'est disponible que dans le paneau des modèles, pour décrire les raisons précises de l'enquête.
 |===
 
 Cliquez sur le bouton "Enregistrer" pour continuer à créer votre questionnaire de modèle.
@@ -33,7 +32,7 @@ image::templates/templates_questionnaires_backend_survey_form.png[Backend: new s
 
 Ensuite, cliquez sur le bouton "Modifier". Vous entrez le processus de création de l'enquête. Cliquez sur le bouton « Passer » si vous ne voulez pas utiliser un modèle existant.
 
-Sur la page suivante, vous pouvez créer un sondage. Veuillez vous référer à la documentation xref:admin:components/surveys.adoc[Surveys] pour plus d'informations.
+Sur la page suivante, vous pouvez créer un sondage. Veuillez vous référer à la documentation xref:admin:components/surveys.adoc[Enquêtes] pour plus d'informations.
 
 Cliquez sur le bouton "Enregistrer" pour voir un aperçu de votre enquête.
 
@@ -48,10 +47,10 @@ Tous les questionnaires apparaissent dans la liste des questionnaires :
 * *Modèle*: nom du modèle.
 * *Titre du questionnaire*: nom de l'enquête par défaut lors du choix de ce modèle.
 * *Nombre de questions* : nombre de questions différentes dans l'enquête.
-* *Créé à* : date de création.
+* *Créé le* : date de création.
 
 Vous pouvez modifier un modèle et ses questions à tout moment. Veuillez également noter que lorsque vous choisissez un modèle lors de la création d'une enquête,
-vous pouvez également modifier les questions, en ajouter ou en supprimer pour ce composant spécifique.
+vous pouvez également modifier les questions, en ajouter ou en supprimer pour cette fonctionnalité spécifique.
 
 === Actions
 
@@ -62,7 +61,7 @@ vous pouvez également modifier les questions, en ajouter ou en supprimer pour c
 
 |image:icons/action_edit.png[Modifier le modèle]
 |Editer
-|Éditer le modèle et les questions de l'enquête.
+|Modifier le modèle et les questions de l'enquête.
 
 |image:icons/action_duplicate.png[Dupliquer le modèle]
 |Duplicate
@@ -75,7 +74,7 @@ vous pouvez également modifier les questions, en ajouter ou en supprimer pour c
 
 === Utiliser le modèle
 
-Pour utiliser le modèle, créez un composant xref:admin:components/surveys.adoc[survey] dans un espace participatif, puis éditez-le.
+Pour utiliser le modèle, créez une fonctionnalité xref:admin:components/surveys.adoc[Enquête] dans un espace participatif, puis modifiez-le.
 Vous voyez ensuite une page vous proposant de choisir un modèle pour ce sondage.
 
 image::templates/templates_questionnaires_survey_choice.png[Backend: choose template when creating survey]
