@@ -21,7 +21,7 @@ image::pages/pages_backend_list.png[Backend: list pages]
 
 Comme vous pouvez le voir, vous pouvez modifier toutes les pages et les réorganiser dans différents sujets à tout moment.
 
-Il n'y a qu'une seule page que vous ne pouvez pas supprimer. Comme la plate-forme permet aux Participants de s'inscrire et d'enregistrer certaines de leurs données personnelles, Il est important d'avoir une page pour les **Termes et Conditions**.
+Il n'y a qu'une seule page que vous ne pouvez pas supprimer. Comme la plate-forme permet aux Participant·e·x·s de s'inscrire et d'enregistrer certaines de leurs données personnelles, Il est important d'avoir une page pour les **Termes et Conditions**.
 C'est là que vous devez mettre vos conditions légales, par exemple qui est propriétaire des données collectées, pour combien de fois il est enregistré, etc. Idéalement, cela devrait être écrit et examiné par un avocat.
 
 === Créer une nouvelle page
@@ -69,17 +69,17 @@ image::pages/pages_backend_edit.png[Backend: edit a page]
 
 Cette page est générée par défaut dans chaque nouvelle organisation. Il ne peut pas être supprimé, et il a quelques détails spécifiques liés à sa nature juridique :
 
-. Elle est montrée aux participants lorsqu'ils s'inscrivent et ils doivent l'accepter pour pouvoir participer ;
-. S'il y a des changements significatifs, les administrateurs peuvent décider que tous les utilisateurs doivent accepter la nouvelle version lors de leur prochaine connexion ;
+. Elle est montrée aux participant·e·x·s lorsqu'iels s'inscrivent et iels doivent l'accepter pour pouvoir participer ;
+. S'il y a des changements significatifs, les administrateur·ices peuvent décider que touxtes les utilisateur·ices doivent accepter la nouvelle version lors de leur prochaine connexion ;
 . La structure de cette page peut être plus complexe que les autres, avec des sections sommaires et à deux colonnes.
 
 image::pages/pages_backend_tos_change.png[Backend: ToS change]
 
 image::pages/pages_frontend_tos_change.png[Frontend: ToS change]
 
-Si un participant refuse d'accepter les conditions, il a trois options :
+Si unx participant·e·x refuse d'accepter les conditions, iel a trois options :
 
-. Pour le revoir plus tard. Il les signale automatiquement.
+. Pour le revoir plus tard. Iel les signale automatiquement.
 . Pour télécharger leurs données personnelles.
 . Pour supprimer leur compte.
 
