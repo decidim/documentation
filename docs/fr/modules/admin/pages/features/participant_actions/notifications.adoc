@@ -2,87 +2,87 @@
 
 == En bref
 
-Les notifications permettent aux participants de se tenir au courant des dernières nouvelles de la plateforme, des espaces, du contenu, des participants qu'ils suivent, etc.
+Les notifications permettent aux participant·e·x·s de se tenir au courant des dernières nouvelles de la plateforme, des espaces, du contenu, des participant·e·x·s qu'iels suivent, etc.
 La plupart des actions sur la plateforme génèrent des notifications.
 
-Les participants peuvent gérer leurs préférences de notification dans leur xref:admin:features/participant_actions/my_account.adoc[account].
+Les participant·e·x·s peuvent gérer leurs préférences de notification dans leur xref:admin:features/participant_actions/my_account.adoc[compte].
 
 === How to find it?
 
-En tant que participant connecté, vous pouvez accéder à vos notifications depuis deux endroits :
+En tant que participant·e·x connecté·e·x, vous pouvez accéder à vos notifications depuis deux endroits :
 
 . En cliquant sur votre avatar dans l'en-tête, puis sur "Notifications" dans le menu
 . En cliquant sur le lien "Notifications" en pied de page, dans la section "Mon compte"
 
 image::features/notifications/notifications_dropdown.png[Frontend user menu dropdown]
 
-Les notifications apparaissent dans un petit badge à côté de l'avatar du participant, ainsi que dans le menu déroulant.
+Les notifications apparaissent dans un petit badge à côté de l'avatar de lae participant·e·x, ainsi que dans le menu déroulant.
 
 image:features/notifications/notifications.png[Exemple de page de notifications lorsqu'il y a des notifications]
 
-Lorsqu’il n’y a pas de notifications, ou que le participant a marqué toutes les notifications comme lues, un message s’affiche indiquant qu’il n’y a pas de nouvelles notifications.
+Lorsqu’il n’y a pas de notifications, ou que lae participant·e·x a marqué toutes les notifications comme lues, un message s’affiche indiquant qu’il n’y a pas de nouvelles notifications.
 
 image:features/notifications/no_notifications_yet.png[Exemple de page de notifications quand il n'y a pas de notifications]
 
 === Liste des notifications
 
-Ci-dessous se trouve une liste exhaustive des actions qui déclenchent des notifications aux participants. Les participants sont répartis en trois catégories : les utilisateurs, les abonnés et les administrateurs.
+Ci-dessous se trouve une liste exhaustive des actions qui déclenchent des notifications aux participant·e·x·s. Les participant·e·x·s sont réparti·e·x·s en trois catégories : les utilisateur·ices, les abonné·e·x·s et les administrateur·ices.
 
-NOTE: Les utilisateurs touchés dépendent du contexte de notification. Par exemple, il peut être l'auteur d'un contenu modéré, un utilisateur gagne un badge ou un utilisateur a été mentionné, etc, selon l'interaction de l'utilisateur avec les espaces et les autres utilisateurs de la plateforme.
+NOTE: Les utilisateur·ices touché·e·x·s dépendent du contexte de notification. Par exemple, iel peut être l'auteur·ice d'un contenu modéré, unx utilisateur·ice gagne un badge ou un utilisateur·ice a été mentionné·e·x, etc, selon l'interaction de l'utilisateur·ice avec les espaces et les autres utilisateur·ices de la plateforme.
 
 [cols="7,2,1,1,1"]
 |===
-|Action |Fonctionnalités |Utilisateur affecté |Abonné |Administrateur
+|Action |Fonctionnalités |Utilisateur·ice affecté·e·x |Abonné·e·x |Administrateur·ice
 
 |Une nouvelle pièce jointe a été créée |Administration |❌ |✅ |❌
 
-|Un administrateur a demandé une exportation |Administration |❌ |❌ |✅
+|Unx administrateur·ice a demandé une exportation |Administration |❌ |❌ |✅
 
 |Une fonctionnalité a été publiée dans un espace participatif |Administration |❌ |✅ |❌
 
-|Un participant a essayé de se vérifier avec les données d'un autre participant |Vérifications |❌ |❌ |✅
+|Unx participant·e·x a essayé de se vérifier avec les données d'unx autre participant·e·x |Vérifications |❌ |❌ |✅
 
-|Un administrateur a modéré une ressource car elle a été signalée |Modération |✅ |❌ |❌
+|Unx administrateur·ice a modéré une ressource car elle a été signalée |Modération |✅ |❌ |❌
 
 |Une ressource a été signalée |Modération |❌ |❌ |✅
 
-|Un utilisateur confirme l'enregistrement (si les notifications de bienvenue sont activées) |Utilisateur |✅ |❌ |❌
+|Unx utilisateur·ice confirme l'enregistrement (si les notifications de bienvenue sont activées) |Utilisateur·ice |✅ |❌ |❌
 
-|Un utilisateur a gagné un badge (si les badges sont activés) |Utilisateur |✅ |❌ |❌
+|Unx utilisateur·ice a gagné un badge (si les badges sont activés) |Utilisateur·ice |✅ |❌ |❌
 
-|Un utilisateur a atteint un nouveau niveau de badge (si les badges sont activés) |Utilisateur |✅ |❌ |❌
+|Unx utilisateur·ice a atteint un nouveau niveau de badge (si les badges sont activés) |Utilisateur·ice |✅ |❌ |❌
 
-|Un utilisateur a été officialisé |Utilisateur |❌ |❌ |✅
+|Unx utilisateur·ice a été officialisé·e·x |Utilisateur·ice |❌ |❌ |✅
 
-|Un utilisateur demande l'exportation de ses données |Utilisateur |✅ |❌ |❌
+|Unx utilisateur·ice demande l'exportation de ses données |Utilisateur·ice |✅ |❌ |❌
 
-|Un utilisateur auquel je suis abonné a approuvé une ressource |Utilisateur |❌ |✅ |❌
+|Unx utilisateur·ice que je suis a approuvé une ressource |Utilisateur·ice |❌ |✅ |❌
 
-|Un profil public a été mis à jour |Utilisateur |❌ |✅ |❌
+|Un profil public a été mis à jour |Utilisateur·ice |❌ |✅ |❌
 
-|Un nouveau groupe d'utilisateurs a été créé |Note de bas de page utilisateur : groupe d'utilisateur[Si les groupes d'utilisateurs sont activés] |❌ |❌ |✅
+|Un nouveau groupe d'utilisateur·ices a été créé |Note de bas de page utilisateur·ice : groupe d'utilisateur·ices[Si les groupes d'utilisateur·ices sont activés] |❌ |❌ |✅
 
-|Un groupe d'utilisateurs a mis à jour son profil |Note de bas de page utilisateur : groupe d'utilisateur[] |❌ |❌ |✅
+|Un groupe d'utilisateur·ices a mis à jour son profil |Note de bas de page utilisateur·ice : groupe d'utilisateur·ices[] |❌ |❌ |✅
 
-|Un utilisateur a été invité à rejoindre un groupe d'utilisateurs |Note de bas de page utilisateur : groupe d'utilisateur[] |✅ |❌ |❌
+|Unx utilisateur·ice a été invité·e·x à rejoindre un groupe d'utilisateur·ices |Note de bas de page utilisateur·ice : groupe d'utilisateur·ices[] |✅ |❌ |❌
 
-|Un utilisateur a été promu administrateur de groupe |Note de bas de page utilisateur : groupe d'utilisateur[] |✅ |❌ |❌
+|Unx utilisateur·ice a été promu·e·x administrateur·ice de groupe |Note de bas de page utilisateur·ice : groupe d'utilisateur·ices[] |✅ |❌ |❌
 
-|Un utilisateur a demandé à rejoindre le groupe d'utilisateurs |Note de bas de page utilisateur : groupe d'utilisateur[] |✅ |❌ |❌
+|Unx utilisateur·ice a demandé à rejoindre le groupe d'utilisateur·ices |Note de bas de page utilisateur·ice : groupe d'utilisateur·ices[] |✅ |❌ |❌
 
-|Une demande d'utilisateur a été acceptée pour rejoindre le groupe d'utilisateurs |Note de bas de page utilisateur : groupe d'utilisateur[] |✅ |❌ |❌
+|Une demande d'utilisateur·ice a été acceptée pour rejoindre le groupe d'utilisateur·ices |Note de bas de page utilisateur·ice : groupe d'utilisateur·ices[] |✅ |❌ |❌
 
-|Une demande d'utilisateur pour rejoindre le groupe d'utilisateurs a été rejetée |Note de bas de page utilisateur : groupe d'utilisateur[] |✅ |❌ |❌
+|Une demande d'utilisateur·ice pour rejoindre le groupe d'utilisateur·ices a été rejetée |Note de bas de page utilisateur·ice : groupe d'utilisateur·ices[] |✅ |❌ |❌
 
-|L'administrateur du groupe a été rétrogradé |Note de bas de page utilisateur : groupe d'utilisateur[] |✅ |❌ |❌
+|L'administrateur·ice du groupe a été rétrogradé·e·x |Note de bas de page utilisateur·ice : groupe d'utilisateur·ices[] |✅ |❌ |❌
 
-|L'utilisateur a été retiré du groupe |Note de bas de page utilisateur : groupe d'utilisateur[] |✅ |❌ |❌
+|L'utilisateur·ice a été retiré·e·x du groupe |Note de bas de page utilisateur·ice : groupe d'utilisateur·ices[] |✅ |❌ |❌
 
-|Un administrateur de l'assemblée vous a ajouté comme l'un de ses membres |Ruches |✅ |❌ |❌
+|Unx administrateur·ice de l'assemblée vous a ajouté·e·x comme l'unx de ses membres |Assemblées |✅ |❌ |❌
 
-|Un rôle vous a été assigné pour une assemblée |Ruches |✅ |❌ |❌
+|Un rôle vous a été assigné pour une assemblée |Assemblées |✅ |❌ |❌
 
-|Vous avez été désigné pour un rôle dans un processus participatif |Processus |✅ |❌ |❌
+|Vous avez été désigné·e·x pour un rôle dans un processus participatif |Processus |✅ |❌ |❌
 
 |Les dates de phase ont été mises à jour |Processus |❌ |✅ |❌
 
@@ -102,23 +102,23 @@ NOTE: Les utilisateurs touchés dépendent du contexte de notification. Par exem
 
 |Une élection est maintenant active pour un espace participatif |Élections |❌ |✅ |❌
 
-|Vous avez été ajouté en tant que membre du comité pour une élection |Élections |✅ |❌ |❌
+|Vous avez été ajouté·e·x en tant que membre du comité pour une élection |Élections |✅ |❌ |❌
 
-|Un administrateur vous a ajouté en tant que membre du comité |Élections |✅ |❌ |❌
+|Unx administrateur·ice vous a ajouté·e·x en tant que membre du comité |Élections |✅ |❌ |❌
 
-|Votre vote a été accepté |Élections |✅ |❌ |❌
+|Votre vote a été accepté·e·x |Élections |✅ |❌ |❌
 
 |Un rôle au Bureau de vote vous a été assigné |Élections |✅ |❌ |❌
 
 |Voici votre code d'accès |Élections |✅ |❌ |❌
 
-|Un utilisateur auquel je suis abonné a créé une initiative |Initiatives |❌ |✅ |❌
+|Unx utilisateur·ice que je suis a créé une initiative |Initiatives |❌ |✅ |❌
 
 |Mon initiative a été créée |Initiatives |✅ |❌ |❌
 
-|Un utilisateur auquel je suis abonné a approuvé une initiative |Initiatives |❌ |✅ |❌
+|Unx utilisateur·ice que je suis a approuvé une initiative |Initiatives |❌ |✅ |❌
 
-|Un utilisateur a envoyé son initiative à la validation technique |Initiatives |❌ |❌ |✅
+|Uns utilisateur·ice a envoyé son initiative à la validation technique |Initiatives |❌ |❌ |✅
 
 |Une initiative a changé son statut |Initiatives |✅ |✅ |❌
 
@@ -128,9 +128,9 @@ NOTE: Les utilisateurs touchés dépendent du contexte de notification. Par exem
 
 |La demande de faire partie du comité de promotion pour une initiative a été rejetée |Initiatives |✅ |❌ |❌
 
-|Un utilisateur souhaite rejoindre votre initiative |Initiatives |✅ |❌ |❌
+|Unx utilisateur·ice souhaite rejoindre votre initiative |Initiatives |✅ |❌ |❌
 
-|An initiative has reached the signatures threshold |Initiatives |❌ |❌ |✅
+|Une initiative a atteint le seuil de signatures |Initiatives |❌ |❌ |✅
 
 |Votre initiative a atteint X% de signatures |Initiatives |❌ |✅ |❌
 
@@ -146,15 +146,15 @@ NOTE: Les utilisateurs touchés dépendent du contexte de notification. Par exem
 
 |Une ressource a un commentaire |Commentaires |❌ |✅ |❌
 
-|Un groupe d'utilisateurs a laissé un commentaire sur une ressource |Commentaires |❌ |✅ |❌
+|Un groupe d'utilisateur·ices a laissé un commentaire sur une ressource |Commentaires |❌ |✅ |❌
 
-|Un utilisateur a laissé un commentaire sur une ressource |Commentaires |❌ |✅ |❌
+|Unx utilisateur·ice a laissé un commentaire sur une ressource |Commentaires |❌ |✅ |❌
 
-|Un utilisateur a répondu à votre commentaire |Commentaires |✅ |❌ |❌
+|Unx utilisateur·ice a répondu à votre commentaire |Commentaires |✅ |❌ |❌
 
 |Un groupe auquel vous appartenez a été mentionné |Commentaires |✅ |❌ |❌
 
-|Vous avez été mentionné |Commentaires |✅ |❌ |❌
+|Vous avez été mentionné·e·x |Commentaires |✅ |❌ |❌
 
 |Votre commentaire a obtenu un vote positif |Commentaires |✅ |❌ |❌
 
@@ -162,27 +162,27 @@ NOTE: Les utilisateurs touchés dépendent du contexte de notification. Par exem
 
 |Un débat a été créé |Débats |❌ |✅ |❌
 
-|La création de débats est activée pour les participants |Débats |❌ |✅ |❌
+|La création de débats est activée pour les participant·e·x·s |Débats |❌ |✅ |❌
 
 |La création de débats n'est plus active |Débats |❌ |✅ |❌
 
 |Un débat a été clos |Débats |✅ |✅ |❌
 
-|Une rencontre a été créée |Réunions |❌ |✅ |❌
+|Une rencontre a été créée |Rencontres |❌ |✅ |❌
 
-|Une rencontre a été clôturée |Réunions |✅ |✅ |❌
+|Une rencontre a été clôturée |Rencontres |✅ |✅ |❌
 
-|Une rencontre a été mise à jour |Réunions |❌ |✅ |❌
+|Une rencontre a été mise à jour |Rencontres |❌ |✅ |❌
 
-|L'inscription à la rencontre a été confirmée |Réunions |✅ |❌ |❌
+|L'inscription à la rencontre a été confirmée |Rencontres |✅ |❌ |❌
 
-|Les créneaux attribués à une rencontre sont suppérieurs à X% |Réunions |❌ |❌ |✅
+|Les créneaux attribués à une rencontre sont suppérieurs à X% |Rencontres |❌ |❌ |✅
 
-|Une rencontre a activé les inscriptions |Réunions |❌ |✅ |❌
+|Une rencontre a activé les inscriptions |Rencontres |❌ |✅ |❌
 
-|Le code d'inscription d'une rencontre a été validé. |Réunions |✅ |❌ |❌
+|Le code d'inscription d'une rencontre a été validé. |Rencontres |✅ |❌ |❌
 
-|La rencontre débute dans moins de 48h |Réunions |❌ |✅ |❌
+|La rencontre débute dans moins de 48h |Rencontres |❌ |✅ |❌
 
 |Une nouvelle proposition a été publiée |Propositions |❌ |✅ |❌
 
@@ -200,13 +200,13 @@ NOTE: Les utilisateurs touchés dépendent du contexte de notification. Par exem
 
 |Une proposition a été acceptée |Propositions |✅ |✅ |❌
 
-|Un administrateur a mis à jour le secteur de votre proposition |Propositions |✅ |❌ |❌
+|Unx administrateur·ice a mis à jour le secteur de votre proposition |Propositions |✅ |❌ |❌
 
-|Un administrateur a mis à jour la catégorie de votre proposition |Propositions |✅ |❌ |❌
+|Unx administrateur·ice a mis à jour la catégorie de votre proposition |Propositions |✅ |❌ |❌
 
 |Une proposition a été mentionnée |Propositions |✅ |❌ |❌
 
-|Un utilisateur a demandé l'accès en tant que contributeur |Brouillon de roposition |✅ |❌ |❌
+|Unx utilisateur·ice a demandé l'accès en tant que contributeur·ice |Brouillon de roposition |✅ |❌ |❌
 
 |Vous avez été accepté pour accéder au brouillon en tant que contributeur |Brouillon de roposition |✅ |❌ |❌
 
