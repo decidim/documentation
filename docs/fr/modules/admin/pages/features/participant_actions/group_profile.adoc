@@ -2,18 +2,18 @@
 
 == En bref
 
-En tant que participant, il peut être utile de créer un groupe d'utilisateurs pour votre association, votre entreprise, votre club, etc.
-Si un administrateur valide votre droit de représenter ce groupe, alors vous pouvez participer dans ce cas au nom
+En tant que participant·e·x, il peut être utile de créer un groupe d'utilisateur·ices pour votre association, votre entreprise, votre club, etc.
+Si unx administrateur·ice valide votre droit de représenter ce groupe, alors vous pouvez participer dans ce cas au nom
 du groupe.
 
 NOTE: L'option de création de groupe n'est disponible que lorsque les groupes sont activés pour l'organisation.
-Vous pouvez demander à un administrateur de la plateforme ou l'activer depuis le panneau xref:admin:settings/configuration.adoc[Configuration].
+Vous pouvez demander à unx administrateur·ice de la plateforme ou l'activer depuis le panneau xref:admin:settings/configuration.adoc[Configuration].
 
 == Configuration
 
 === Créer un groupe
 
-Pour créer un groupe, cliquez sur "Créer un groupe" dans votre profil public.
+Pour créer un groupe, cliquer sur "Créer un groupe" dans votre profil public.
 
 image::features/my_profile/profile_create_group.png[Public profile group creation form]
 
@@ -30,48 +30,48 @@ image::features/my_profile/profile_create_group.png[Public profile group creatio
 |Obligatoire
 |Surnom de l'organisation, de l'association, du groupe, etc. N'utilisez pas d'espaces ni d'accents.
 
-|Courriel
+|E-mail
 |Obligatoire
 |Courriel de votre organisation, association, collectif, groupe, etc.
 
 |Avatars
 |Facultatif
-|Avatar de votre organisation, qui s'affiche comme avatar de l'utilisateur. Peut être un logo, une photo, etc.
+|Avatar de votre organisation, qui s'affiche comme avatar de l'utilisateur·ice. Peut être un logo, une photo, etc.
 
 |À propos de
 |Facultatif
-|Plus d'informations sur votre organisation. Ceci s'affiche publiquement sur la page de profil du groupe d'utilisateurs.
+|Plus d'informations sur votre organisation. Ceci s'affiche publiquement sur la page de profil du groupe d'utilisateur·ices.
 
 |Numéro du document
 |Facultatif
-|À remplir ce champ si vous souhaitez qu'un administrateur vérifie l'authenticité de votre groupe.
+|À remplir ce champ si vous souhaitez qu'unx administrateur·ice vérifie l'authenticité de votre groupe.
 
 |Téléphone
 |Facultatif
-|À remplir si vous souhaitez qu'un administrateur puisse designer une personne de votre organisation pour
-vérifier l'authenticité du groupe d'utilisateurs.
+|À remplir si vous souhaitez qu'unx administrateur·ice puisse designer une personne de votre organisation pour
+vérifier l'authenticité du groupe d'utilisateur·ices.
 |===
 
-Le groupe d'utilisateurs est visible sur la plateforme dès sa création. Après sa création, vous serez redirigé vers la page de profil du groupe d'utilisateurs
+Le groupe d'utilisateur·ices est visible sur la plateforme dès sa création. Après sa création, vous serez redirigé vers la page de profil du groupe d'utilisateur·ices
 .
 
-Les pages des profils des groupes d'utilisateurs affichent :
+Les pages des profils des groupes d'utilisateur·ices affichent :
 
-* Membres: Les membres des groupes, et qui en sont les administrateurs.
-* Badges : badges du groupe d'utilisateurs.
-* Abonnés: Les participants peuvent également suivre les groupes d'utilisateurs.
+* Membres : Les membres des groupes, et qui en sont les administrateur·ices.
+* Badges : badges du groupe d'utilisateur·ices.
+* Abonnés: Les participant·e·x·s peuvent également suivre les groupes d'utilisateur·ices.
 
 === Gérer un groupe
 
-Une fois qu'un groupe a été créé, il est possible d'inviter des participants à devenir membres du groupe.
-Un participant a accepté dans ce groupe peut devenir administrateur.
+Une fois qu'un groupe a été créé, il est possible d'inviter des participant·e·x·s à devenir membres du groupe.
+Unx participant·e·x a accepté dans ce groupe peut devenir administrateur·ice.
 
-Les actions suivantes peuvent être effectuées par un administrateur de groupe d'utilisateurs :
+Les actions suivantes peuvent être effectuées par unx administrateur·ice de groupe d'utilisateur·ices :
 
 * Modifier le profil du groupe
 * Gérer les membres
-* Gérer les administrateurs
-* Invite participant
+* Gérer les administrateur·ices
+* Inviter un participant·e·x
 * Quitter le groupe
 
 image::features/my_profile/profile_manage_group.png[Public profile group drop down menu]
