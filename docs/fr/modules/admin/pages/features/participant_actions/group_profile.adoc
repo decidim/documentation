@@ -78,18 +78,18 @@ image::features/my_profile/profile_manage_group.png[Public profile group drop do
 
 ==== Gérer les membres
 
-Sur cette page, vous pouvez accepter ou refuser les demandes des participants à rejoindre votre groupe. Vous pouvez aussi promouvoir les membres du groupe au rôle d'administrateur
+Sur cette page, vous pouvez accepter ou refuser les demandes des participant·e·x·s à rejoindre votre groupe. Vous pouvez aussi promouvoir les membres du groupe au rôle d'administrateur·ice
 ou les retirer du groupe.
 
 image::features/my_profile/user_group_manage_participant.png[User groups: manage participants]
 
-==== Gérer les administrateurs
+==== Gérer les administrateur·ices
 
-Sur cette page, vous pouvez seulement supprimer les droits d'administrateur du groupe, mais non le status de participant au groupe.
+Sur cette page, vous pouvez seulement supprimer les droits d'administrateur·ice du groupe, mais non le status de participant·e·x au groupe.
 
 image::features/my_profile/user_group_manage_admins.png[User groups: manage admins]
 
-==== Inviter des participants
+==== Inviter des participant·e·x·s
 
 Pour inviter une personne à devenir participante, elle doit avoir un compte sur la plateforme.
 Les personnes peuvent être invitées à l'aide leur surnom.
@@ -106,15 +106,14 @@ image::features/my_profile/user_group_conversation.png[User group: conversations
 
 === Participer en tant que groupe
 
-NOTE: Pour que les administrateurs des groupes d'utilisateurs puissent participer en tant que groupe, un administrateur de l'instance doit l'avoir vérifié.
+NOTE: Pour que les administrateur·ices des groupes d'utilisateur·ices puissent participer en tant que groupe, un administrateur·ice de l'instance doit l'avoir vérifié.
 
-The interest of having an administrator verify the user group is that you can then participate to the platform as a group,
-and create debates, proposals, meetings, comments, etc.
+L'intérêt d'avoir unx administrateur·ice qui vérifie le groupe d'utilisateur·ices est de pouvoir participaer à la plateforme en tant que groupe, et créer des débats, des propositions, des rencontres, commenter, etc.
 
-Les administrateurs du groupe d'utilisateurs peuvent par exemple commenter au nom de leur groupe.
+Les administrateur·ices du groupe d'utilisateur·ices peuvent par exemple commenter au nom de leur groupe.
 
 image::features/my_profile/user_group_make_comment.png[User group: make a comment]
 
-Ils peuvent également choisir d'approuver un débat ou une proposition au nom de leur groupe et/ou en leur propre nom.
+Iels peuvent également choisir d'approuver un débat ou une proposition au nom de leur groupe et/ou en leur propre nom.
 
 image::features/my_profile/user_group_endorse.png[User group: endorse]
