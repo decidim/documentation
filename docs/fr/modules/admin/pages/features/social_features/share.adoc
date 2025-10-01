@@ -2,7 +2,7 @@
 
 == En bref
 
-Les participants peuvent partager du contenu sur la plateforme par le biais de liens de partage disponibles sur les différentes pages de contenu.
+Les participant·e·x·s peuvent partager du contenu sur la plateforme par le biais de liens de partage disponibles sur les différentes pages de contenu.
 Les liens de partage permettent un partage plus facile vers différents services de médias sociaux qui peuvent être configurés pour Decidim à travers les fichiers de configuration.
 
 NOTE: Consulter xref:customize:social_shares.adoc[Services de partage social] pour plus d'informations.
@@ -15,8 +15,8 @@ Pour partager un contenu, comme une proposition, aller sur la page de contenu et
 
 image::features/share/share_button.png[Share button on resources]
 
-Un modal apparaît, avec des boutons différents de différents fournisseurs de services sociaux.
-En cliquant sur un bouton, le participant est redirigé vers le réseau social, et peut rapidement publier ou envoyer un message avec un lien vers la page de contenu.
-Les participants peuvent également copier le lien sous les boutons, ou cliquer sur le lien "Copier" ou sur l'icône.
+Un modal apparaît, avec plusieurs boutons de différents fournisseurs de services sociaux.
+En cliquant sur un bouton, lae participant·e·x est redirigé·e·x vers le réseau social, et peut rapidement publier ou envoyer un message avec un lien vers la page de contenu.
+Les participant·e·x·s peuvent également copier le lien sous les boutons, ou cliquer sur "Copier" dans le lien ou sur l'icône.
 
 image::features/share/share_modal.png[Share modal]
