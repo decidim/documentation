@@ -1,18 +1,18 @@
-= Bloquer les modèles de messages utilisateur
+= Bloquer les messages d'utilisateur·ices
 
 == En bref
 
-Dans cette section, vous pouvez créer, modifier et supprimer des modèles de justification d'utilisateur de bloc, que vous pouvez ensuite utiliser lors de la modération des utilisateurs.
+Dans cette section, vous pouvez créer, modifier, supprimer des modèles bloquer les utilisateur·ice, que vous pouvez ensuite utiliser lors de la modération des utilisateur·ices.
 
 == Configuration
 
-=== Créer un modèle de message utilisateur de bloc
+=== Créer un modèle bloquer les messages d'utilisateur·ice
 
-Pour créer un nouveau modèle de message utilisateur de blocage, vous devez cliquer sur le bouton "Nouveau modèle".
+Pour créer un nouveau modèle pour bloquer des utilisateur·ices, vous devez cliquer sur "Nouveau modèle".
 
 image::templates/templates_block_user_backend_form.png[Backend: new template form]
 
-.Nouveau formulaire de questionnaire
+.Formulaire Nouveau modèle de questionnaire
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -23,15 +23,15 @@ image::templates/templates_block_user_backend_form.png[Backend: new template for
 
 |Description
 |Obligatoire
-|Bloquer le message utilisateur qui est utilisé pour justifier le blocage du participant.
+|Bloquer le message utilisateur·ice qui est utilisé pour justifier le blocage de lae participant·e·x.
 |===
 
 === Gérer
 
-Tous les modèles de messages utilisateur bloqués apparaissent dans la liste des gabarits :
+Tous les modèles Bloquer les messages d'utilisateur·ices apparaissent dans la liste des modèles :
 
 * *Modèle*: nom du modèle.
-* *Créé à* : date de création.
+* *Créé le* : date de création.
 
 Vous pouvez modifier un modèle à tout moment.
 
@@ -44,7 +44,7 @@ Vous pouvez modifier un modèle à tout moment.
 
 |image:icons/action_edit.png[Modifier le modèle]
 |Editer
-|Éditer le message de l'utilisateur de blocage.
+|Modifier Bloquer les messages d'utilisateur·ices.
 
 |image:icons/action_duplicate.png[Dupliquer le modèle]
 |Duplicate
@@ -57,7 +57,7 @@ Vous pouvez modifier un modèle à tout moment.
 
 === Utiliser le modèle
 
-Pour utiliser le modèle, allez dans le panneau xref:admin:moderations/reported_users.adoc[reporteds] et cliquez sur l'icône "Bloquer l'utilisateur".
-Vous voyez ensuite une page vous proposant de choisir un modèle de justification pour bloquer ce participant.
+Pour utiliser le modèle, allez dans le panneau xref:admin:moderations/reported_users.adoc[Utilisateur·ices signalé·e·x·s] et cliquez sur l'icône "Bloquer l'utilisateur·ice".
+Vous voyez ensuite une page vous proposant de choisir un modèle de justification pour bloquer lae participant·e·x.
 
 image::templates/templates_block_user_choice.png[Backend: choose template when blocking user]
