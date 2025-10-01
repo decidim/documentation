@@ -2,13 +2,13 @@
 
 == En bref
 
-Cette fonctionnalité permet aux participants de gérer leurs informations de leur compte, les préférences de notifications, les autorisations, voir leurs groupes, etc.
-Cette page de compte n'est accessible qu'aux participants et certaines informations de compte (telles que le champ "À propos") sont affichées dans la page
-participant xref:admin:features/participant_actions/my_public_profile.
+Cette fonctionnalité permet aux participant·e·x·s de gérer leurs informations de leur compte, les préférences de notifications, les autorisations, voir leurs groupes, etc.
+Cette page de compte n'est accessible qu'aux participant·e·x·s et certaines informations de compte (telles que le champ "À propos") sont affichées dans la page
+participant xref:admin:features/participant_actions/my_public_profile[profil public].
 
 === How to find it?
 
-En tant que participant connecté, vous pouvez accéder à la configuration de votre compte à partir de deux endroits :
+En tant que participant·e·x connecté·e·x, vous pouvez accéder à la configuration de votre compte à partir de deux endroits :
 
 . En cliquant sur votre avatar dans l'en-tête, puis sur "Mon compte" dans le menu
 . En cliquant sur le lien "Options" en pied de page, dans la section "Mon compte"
@@ -17,13 +17,13 @@ image::features/my_account/account_dropdown.png[Frontend user menu dropdown]
 
 == Configuration
 
-Vous y trouverez différentes sections, vous permettant de définir des paramètres différents pour votre compte participant.
+Vous y trouverez différentes sections, vous permettant de définir des paramètres différents pour votre compte participant.·e·x.
 
 NOTE: Les sections Autorisations et Paramètres Groupes ne seront pas visibles si vous ne les avez pas activées.
 
 === Compte client
 
-Dans cette section, les participants peuvent modifier les informations affichées dans leur profil xref:features/participant_actions/my_public_profile.
+Dans cette section, les participants peuvent modifier les informations affichées dans leur profil xref:features/participant_actions/my_public_profile[profil public].
 
 image::features/my_account/account.png[My account form]
 
@@ -34,7 +34,7 @@ image::features/my_account/account.png[My account form]
 
 |Avatars
 |Facultatif
-|Avatar ou photo pour le participant. Orientation pour l'image: De préférence une image de paysage qui n'a pas de texte.
+|Avatar ou photo pour le participant. Orientation pour l'image : De préférence une image en paysage qui n'a pas de texte.
 Le service récolte l'image. Taille maximale du fichier : 5 Mo
 
 |Votre nom
@@ -55,21 +55,21 @@ Le service récolte l'image. Taille maximale du fichier : 5 Mo
 
 |À propos de
 |Facultatif
-|Informations sur le participant affichées dans le profil du participant.
+|Informations sur lae participant·e·x affichées dans le profil de lae participant·e·x.
 
 |Locale
 |Obligatoire
 |Langue que vous souhaitez utiliser pour naviguer et recevoir des notifications dans Decidim.
 |===
 
-Les participants peuvent également modifier leur mot de passe sur cette page, en cliquant sur le lien "Changer le mot de passe". Ils doivent choisir un nouveau mot de passe et entrer
+Les participant·e·x·s peuvent également modifier leur mot de passe sur cette page, en cliquant sur le lien "Changer le mot de passe". Iels doivent choisir un nouveau mot de passe et entrer
 leur mot de passe actuel pour pouvoir le changer.
 
 image::features/my_account/password_change.png[My account form - password change]
 
 === Paramètres des notifications
 
-Dans cette section, les participants peuvent choisir le type de notifications qu'ils souhaitent recevoir et la fréquence à laquelle ils veulent les recevoir.
+Dans cette section, les participant·e·x·s peuvent choisir le type de notifications qu'iels souhaitent recevoir et la fréquence à laquelle iels veulent les recevoir.
 
 image:features/my_account/notifications_settings.png[Paramètres des notifications]
 
@@ -92,14 +92,13 @@ Les options disponibles sont :
 
 === Autorisations
 
-Dans cette section, les participants peuvent consulter leurs Autorisations et avoir accès à certaines métadonnées, comme la date à laquelle une autorisation a été accordée
+Dans cette section, les participant·e·x·s peuvent consulter leurs Autorisations et avoir accès à certaines métadonnées, comme la date à laquelle une autorisation a été accordée
 ou le statut de l'autorisation.
 
-It depends on how it's configured for the organization, as depending in the context (like normative or laws) it could work
-in different ways. Pour plus d'informations sur les autorisations, voir xref:admin:participants/authorizations.adoc[authorizations
-dans le manuel d'administration] et xref:customize:authorizations.adoc[authorizations in customguide].
+Selon la configuration de l'organisation, ceci peut dépendre du contexte (comme certaines normes ou lois) et pourrait fonctionner de manière différente, selon les cas. Pour plus d'informations sur les autorisations, voir xref:admin:participants/authorizations.adoc[autorisations
+dans le manuel d'administration] et xref:customize:authorizations.adoc[autorisations dans le guide personnalisé].
 
-image:features/my_account/authorizations.png[Authorizations]
+image:features/my_account/authorizations.png[Autorisations]
 
 Pour toute autorisation donnée, vous pouvez voir les informations suivantes :
 
@@ -109,37 +108,37 @@ Pour toute autorisation donnée, vous pouvez voir les informations suivantes :
 
 === Groupes
 
-Dans cette section, les participants peuvent voir à quels groupes ils appartiennent.
+Dans cette section, les participant·e·x·s peuvent voir à quels groupes iels appartiennent.
 
 NOTE: Vous voulez créer un nouveau groupe ? Aller à la page xref:admin:features/participant_actions/group_profile.adoc[Profil du groupe].
 
 image::features/my_account/groups.png[Groups]
 
-En savoir plus sur la configuration des groupes dans xref:admin:participants/groups.adoc[Groupes dans le manuel d'administrateur].
+En savoir plus sur la configuration des groupes dans xref:admin:participants/groups.adoc[Groupes dans le manuel d'administration].
 
 === Mes intérêts
 
-Dans cette section, les participants peuvent choisir les intérêts sur lesquels ils doivent recevoir plus de renseignements.
+Dans cette section, les participant·e·x·s peuvent choisir les intérêts sur lesquels ils doivent recevoir plus de renseignements.
 
 Par défaut, ce qui s'affiche ici est une liste de tous les xref:admin:settings/scopes.adoc[Scopes] de l'organisation. Cette sélection
-peut être utilisée par les administrateurs lors de la segmentation pour les xref:admin:features/social_features/newsletters.adoc[Newsletters].
+peut être utilisée par les administrateur·ices lors de la segmentation pour les xref:admin:features/social_features/newsletters.adoc[Newsletters].
 
 image::features/my_account/my_interests.png[My interests]
 
 === Mes données
 
-Dans cette section, les participants peuvent demander un fichier contenant toutes les données qu'ils ont fournies dans la plateforme.
+Dans cette section, les participant·e·x·s peuvent demander un fichier contenant toutes les données qu'iels ont fournies dans la plateforme.
 
 image::features/my_account/my_data.png[My data]
 
 Pour demander les données :
 
 . Cliquer dans "Données de requête"
-. Attendez quelques minutes pour que les fichiers soient générés. Cela peut dépendre du nombre de propositions, de commentaires, etc. que vous avez fait
-. Accédez à votre compte de messagerie et trouvez l'e-mail reçu
-. Cliquez dans "Télécharger"
-. Ouvrir avec un logiciel zip de support
-. Entrez le mot de passe que vous avez reçu dans l'e-mail
+. Attendre quelques minutes pour que les fichiers soient générés. Cela peut dépendre du nombre de propositions, de commentaires, etc. que vous avez fait
+. Accéder le compte email du profil et trouver l'e-mail reçu
+. Cliquer sur "Télécharger"
+. Ouvrir avec un logiciel zip
+. Entrer le mot de passe que vous avez reçu dans l'e-mail
 . Décompresser ou extraire le contenu
 
 image:features/my_account/my_data_email.png[Mes données]
@@ -152,7 +151,7 @@ Pour ouvrir le fichier zip, le logiciel que vous utilisez doit supporter le chif
 
 === Supprimer mon compte
 
-Dans cette section, les participants peuvent supprimer leurs propres comptes. Une fois terminé, ils ne peuvent plus accéder au système.
+Dans cette section, les participant·e·x·s peuvent supprimer leurs propres comptes. Une fois terminé, iels ne peuvent plus accéder au système.
 Cette action est irréversible. Toutes les contributions sur la plateforme deviennent anonymes.
 
 image:features/my_account/delete_my_account.png[Supprimer le formulaire de compte]
@@ -165,7 +164,7 @@ Pour supprimer le compte :
 
 image:features/my_account/delete_my_account_confirm.png[Confirmer la suppression du compte]
 
-etc) sont toujours visibles mais toutes les informations d'auteurs sont anonymisées,
-et transférées à un auteur "Participant supprimé".
+Une le compte supprimé, les contrubutions (telles que les commentaires, les propositions, etc) sont toujours visibles mais toutes les informations sont anonymisées,
+et transférées à unx auteur·ice "Participant·e·x supprimé·e·x".
 
 image:features/my_account/delete_my_account_deleted.png[Contribution des participants supprimés]
