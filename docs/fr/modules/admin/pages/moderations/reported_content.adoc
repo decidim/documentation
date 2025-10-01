@@ -35,10 +35,10 @@ Ici, vous trouverez d'abord tous les rapports non traités s'il y en a, avec :
 * *Type* : le type de contenu signalé, par exemple commentaire, proposition, débat, etc.
 * *Espace participatif* : à quel espace ce contenu appartient.
 * *URL de contenu signalé*: lien pour voir le contenu signalé et voir le contexte de la plainte.
-* *Raison* : pourquoi le contenu est signalé. Si le participant qui a fait le rapport a donné des informations supplémentaires
+* *Raison* : pourquoi le contenu est signalé. Si lae participant·e·x qui a fait le rapport a donné des informations supplémentaires
 il est possible de le voir en le survolant.
 * *Signalé à* : quand il a été signalé.
-* *Nombre*: nombre de signalements par différents utilisateurices.
+* *Nombre*: nombre de signalements par différents utilisateur·ices.
 * *Actions* : vous pouvez *Développer*, *Désigner* ou *Masquer*.
 
 Quand vous modérez un contenu, il apparaît dans la liste de contenu "Caché", accessible en haut à droite de la page.
@@ -57,17 +57,17 @@ Quand vous modérez un contenu, il apparaît dans la liste de contenu "Caché", 
 
 |image:icons/action_unreport.png[Désignaler l'icône]
 |Ne plus signaler
-|Permet à unx administrateurice ou unx modérateurice de continuer à afficher ce contenu et d'annuler le signalement.
+|Permet à unx administrateur·ice ou unx modérateur·ice de continuer à afficher ce contenu et d'annuler le signalement.
 |Disponible lorsque le contenu n'est pas encore masqué.
 
 |image:icons/action_hide.png[Démasquer l'icône]
 |Cacher
-|Permet à unx administrateurice ou unx modérateurice de masquer ce contenu et d'accepter le signalement.
+|Permet à unx administrateur·ice ou unx modérateur·ice de masquer ce contenu et d'accepter le signalement.
 |Disponible lorsque le contenu n'est pas encore masqué.
 
 |image:icons/action_hide.png[Masquer l'icône]
 |Unhide
-|Autorise unx administrateurice ou unx modérateurice à réafficher ce contenu (l'afficher à nouveau publiquement).
+|Autorise unx administrateur·ice ou unx modérateur·ice à réafficher ce contenu (l'afficher à nouveau publiquement).
 |Disponible lorsque le contenu est masqué.
 |===
 
@@ -76,7 +76,7 @@ et le signaler à nouveau afin que vous puissiez le modérer.
 
 === Agrandir
 
-Pour consulter les détails d'un contenu et les différents rapports des participants, vous pouvez cliquer sur le bouton "Développer".
+Pour consulter les détails d'un contenu et les différents rapports des participant·e·x·s, vous pouvez cliquer sur le bouton "Développer".
 Pour voir toutes les métadonnées d'un rapport, vous pouvez le voir en étendu.
 
 image:moderations/moderations_backend_report_content.png[Panneau de modération globale pour le contenu]
