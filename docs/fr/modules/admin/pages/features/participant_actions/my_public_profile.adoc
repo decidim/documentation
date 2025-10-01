@@ -2,16 +2,16 @@
 
 == En bref
 
-Chaque participant a un profil public qui affiche des détails à son sujet et son activité sur la plateforme.
-Cette page de profil est accessible à tous les participants et visiteurs.
+Chaque participant·e·x a un profil public qui affiche des détails à son sujet et son activité sur la plateforme.
+Cette page de profil est accessible à touxtes les participant·e·x·s et visiteur·euses.
 
 === How to find it?
 
-Pour voir le profil public d'un participant, cliquer directement sur son avatar ou son nom d'utilisateur dans l'info-bulle du participant.
+Pour voir le profil public d'unx participant·e·x, cliquer directement sur son avatar ou son nom d'utilisateur·ice dans l'info-bulle de lae participant·e·x.
 
 image::features/my_profile/profile_pop_up.png[Participant tool-tip]
 
-En tant que participant connecté, vous pouvez accéder à votre profil public à partir de deux endroits :
+En tant que participant·e·x connecté·e·x, vous pouvez accéder à votre profil public à partir de deux endroits :
 
 . En cliquant sur votre avatar dans l'en-tête, puis sur "Mon profil public" dans le menu
 . En cliquant sur le lien "Mon profil public" en pied de page, dans la section "Mon compte"
@@ -26,7 +26,7 @@ NOTE: Les onglets Badges et Groupes ne seront pas visibles si vous ne les avez p
 
 ==== Activité
 
-Cet onglet affiche les activités du participant, à commencer par le contenu le plus récent.
+Cet onglet affiche les activités de lae participant·e·x, à commencer par le contenu le plus récent.
 
 image::features/my_profile/profile_activity.png[Public profile activity tab]
 
@@ -41,15 +41,15 @@ image::features/my_profile/profile_badges.png[Public profile badges tab]
 ==== Abonnements
 
 La section suivante contient une liste des participants et des groupes que le participant suit actuellement.
-En suivant un autre participant ou un groupe sur la plateforme, le participant reçoit des notifications concernant l'activité
-de ces participants ou groupes sur la plateforme. Certains participants peuvent également exiger qu'ils soient abonnés
-un participant avant de pouvoir échanger des messages privés entre eux.
+En suivant un autre participant·e·x ou un groupe sur la plateforme, lae participant·e·x reçoit des notifications concernant l'activité
+de ces participant·e·x·s ou groupes sur la plateforme. Certain·e·x·s participant·e·x·s peuvent également exiger qu'iels soient abonné·e·x·s
+unx participant·e·x avant de pouvoir échanger des messages privés entre elleux.
 
 image::features/my_profile/profile_follows.png[Public profile follows tab]
 
 ==== Abonnés
 
-La section « Abonnés » contient une liste des participants et des groupes qui suivent le participant.
+La section « Abonné·e·x·s » contient une liste des participant·e·x·s et des groupes qui suivent lae participant·e·x.
 
 image::features/my_profile/profile_followers.png[Public profile followers tab]
 
@@ -61,19 +61,19 @@ image::features/my_profile/profile_groups.png[Public profile groups tab]
 
 == Configuration
 
-=== Dans le profil d'un autre participant
+=== Dans le profil d'unx autre participant·e·x
 
-Un participant connecté peut effectuer trois actions depuis la page du profil public d'un autre participant :
+Unx participant·e·x connecté·e·x peut effectuer trois actions depuis la page du profil public d'unx autre participant·e·x :
 
 . Lui envoyer un message
-. Le suivre
-. Le signaler
+. Lae suivre
+. Lae signaler
 
 === Dans votre propre profil
 
-Les participants connectés peuvent effectuer deux actions depuis leur page de profil public :
+Les participant·e·x·s connecté·e·x·s peuvent effectuer deux actions depuis leur page de profil public :
 
-. Modifier son propre profil : en cliquant sur ce bouton, ils sont redirigés sur leur xref:admin:features/participant_actions/my_account.adoc[account].
-. Créer un groupe : en cliquant sur ce bouton, ils sont redirigés sur le xref:admin:features/participant_actions/group_profile.adoc[group creation form].
+. Modifier son propre profil : en cliquant sur ce bouton, iels sont redirigé·e·x·s sur leur xref:admin:features/participant_actions/my_account.adoc[compte].
+. Créer un groupe : en cliquant sur ce bouton, iels sont redirigé·e·x·s sur le xref:admin:features/participant_actions/group_profile.adoc[formulaire de création de groupe].
 
 NOTE: L'option de création de groupe n'est disponible que lorsque les groupes sont activés pour l'organisation.
