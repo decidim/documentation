@@ -2,24 +2,24 @@
 
 == En bref
 
-Dans cette section, vous pouvez créer, modifier et supprimer des modèles de réponses de proposition que vous pouvez ensuite utiliser lorsque vous répondez aux propositions.
+Dans cette section, vous pouvez créer, modifier et supprimer des modèles de réponses aux propositions que vous pouvez ensuite utiliser lorsque vous répondez aux propositions.
 
 == Configuration
 
-=== Créer un modèle de réponse à la proposition
+=== Créer un modèle de réponse aux propositionx
 
-NOTE: Pour pouvoir créer un modèle de réponse à la proposition, vous devez avoir créé au moins un composant
-xref:admin:components/proposals.adoc[proposals].
+NOTE: Pour créer un modèle de réponse aux propositions, vous devez avoir créé au moins une fonctionnalité
+xref:admin:components/proposals.adoc[propositions].
 
 Pour créer un modèle de réponse à une nouvelle proposition, vous devez cliquer sur le bouton "Nouveau modèle".
 
 image::templates/templates_proposal_answers_choice_component.png[Backend: Proposal component choice for template]
 
-Choisissez l'espace participatif et le composant pour lesquels vous voulez créer des réponses de proposition pour voir le formulaire de réponse du modèle.
+Choisissez l'espace participatif et la fonctionnalité pour lesquels vous voulez créer des réponses aux propositions pour voir le formulaire Modèle de réponse.
 
 image::templates/templates_proposal_answers_backend_form.png[Backend: new proposal answer template form]
 
-.Formulaire de nouveau modèle de réponse à la proposition
+.Formulaire de nouveau modèle de réponse aux propositions
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -39,12 +39,12 @@ image::templates/templates_proposal_answers_backend_form.png[Backend: new propos
 
 === Gérer
 
-Tous les modèles apparaissent dans la liste des réponses à la proposition :
+Tous les modèles apparaissent dans la liste des réponses aux propositions :
 
-* *Modèle* : nom du modèle de réponse à la proposition.
-* *Etat interne* : état donné aux propositions lors de l'utilisation de ce modèle.
-* *Ajouter une contrainte* : composant de proposition où vous pouvez utiliser ce modèle.
-* *Créé à* : date de création.
+* *Modèle* : nom du modèle de Réponses aux propositions.
+* *État interne* : état donné aux propositions lors de l'utilisation de ce modèle.
+* *Ajouter une contrainte* : la fonctionnalité de proposition où vous pouvez utiliser ce modèle.
+* *Créé le* : date de création.
 
 Vous pouvez modifier un modèle et ses champs à tout moment.
 
@@ -57,7 +57,7 @@ Vous pouvez modifier un modèle et ses champs à tout moment.
 
 |image:icons/action_edit.png[Modifier le modèle]
 |Editer
-|Pour modifier la réponse de la proposition.
+|Pour modifier la réponse à la proposition.
 
 |image:icons/action_duplicate.png[Dupliquer le modèle]
 |Duplicate
@@ -70,7 +70,7 @@ Vous pouvez modifier un modèle et ses champs à tout moment.
 
 === Utiliser le modèle
 
-Pour utiliser le modèle, allez à l'un des composants de proposition pour lequel vous avez créé un modèle de réponse de proposition et cliquez sur l'icône "Réponse".
+Pour utiliser le modèle, allez à l'une des fonctionnalités de proposition pour laquelle vous avez créé un modèle de réponse aux propositions et cliquez sur l'icône "Réponse".
 Vous pouvez choisir un modèle de réponse pour remplir le champ de réponse.
 
 image::templates/templates_proposal_answers_choice.png[Backend: choose template when answering proposal]
