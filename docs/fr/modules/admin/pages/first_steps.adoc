@@ -4,59 +4,56 @@
 
 === Connectez-vous pour la première fois
 
-Once you or your developers have successfully installed Decidim, and created an organization in the System panel, you should
-receive an email asking you to complete your account creation.
-Si vous n'avez pas reçu d'e-mail d'invitation, demandez à la personne responsable de l'administration du système de vous ajouter en tant qu'administrateur.
+Une fois Decidim installé, par vous ou votre developer, et qu'une organisation est créée dans le panneau Système, vous devriez recevoir un email vous demandant de compléter la création de votre compte.
+Si vous n'avez pas reçu d'email d'invitation, demandez à la personne responsable de l'administration du système de vous ajouter en tant qu'administrateur·ice.
 
 image::first_steps_invitation_email.png[Administrator invitation email]
 
-L'e-mail d'invitation vous redirige vers un formulaire pour que vous puissiez terminer la configuration de votre compte avec votre pseudo, votre nom et votre mot de passe.
+L'email d'invitation vous redirige vers un formulaire pour que vous puissiez terminer la configuration de votre compte avec votre surnom, votre nom et votre mot de passe.
 
 image::first_steps_account_creation.png[Administrator invitation email]
 
-=== Access the administration dashboard
+=== Accéder au tableau de bord de l'administration
 
-After logging in, you can see the platform as a participant, but it's not where you can configure and manage the platform.
-To access the administration dashboard, or administration panel, you can click in three different items:
+Une fois conné·e·x, vous pouvez voir la plateforme en tant que participant·e·x, mais vous ne pouvez pas configurer et gérer la plateforme.
+Pour accéder au tableau de bord de l'administration, ou le panneau d'administration, il est possible de cliquer sur trois éléments différents:
 
-. The "Admin dashboard" button at the left of the administrator header only administrators can see.
-. The "Edit" button at the right of the administrator header.
-. The "Admin dashboard" button in the drop-down list available when you click your account avatar.
+. Le bouton "Tableau de bord de l'administration" à gauche de l''en-tête de l'administration, que seul·e·x·s les administrateur·e·x·s peuvent voir.
+. Le bouton "Modifier" à droit de l'en-tête de l'administration.
+. Le bouton "Tableau de bord de l'admin" dans la liste déroulante qui apparait en cliquant sur l'avatar de votre compte.
 
 image::admin_dashboard_menu.png[Decidim Admin Dashboard in user menu]
 
-The "Edit" button redirects to the administration of the space you're seeing in the participant panel, whereas the other two buttons
-redirect to the administration dashboard.
+Le bouton "Modifier" redirige vers l'administration de l'espace visible dans le panneau participant·e·x, alors que les deux autres boutons redirigent vers le tableau de bord de l'administration.
 
-=== Administrators terms of service
+=== Condition de service des administrateur·ices
 
-For your first time accessing to the administration of Decidim, you are asked to review the administration terms of service.
-Click on the "I agree with this terms" button to be able to start configuring the platform.
+En accédant pour la première fois l'administration de Decidim, il vous est demandé·e·x de consulter les conditions de service de l'administration.
+Cliquer sur "J'accepte les conditions" pour pouvoir débuter la configuration de la plateforme.
 
 image::admin_tos_pending.png[Decidim Admin Dashboard in user menu]
 
-Those terms of service can be useful for you if you start inviting other administrators to the platform, and you need them to be aware
-of specific privacy rules, or anything relevant for them before they have access to the administration.
+Ces conditions de service peuvent vous être utiles si vous commencez à inviter d'autres administrateur·ices sur la plateforme et que vous souhaitez les informer des règles spécifiques en matière de confidentialité ou de tout autre élément pertinent avant qu'iles n'aient accès à l'administration.
 
-Those terms of service can be configured in the xref:admin:settings/configuration.adoc[Configuration panel].
+Ces conditions de service peuvent être configurées dans le xref:admin:settings/configuration.adoc[Panneau de configuration].
 
-=== Explanation of the dashboard
+=== Explication du tableau de bord
 
-Once you accepted the administrator terms of service, you can see the dashboard.
-On a new instance, almost no data is displayed, but you can see how it looks like on an active instance:
+Une fois les conditions de service des administrateur·ices acceptées, vous pouvez voir le tableau de bord.
+Sur une instance nouvellement créée, presque aucune donnée n'est visible, mais il est possible de voir à quoi ressemble une instance active :
 
 image::admin_dashboard.png[Decidim Admin Dashboard]
 
-You can see several sections on this page:
+Sur cette page, il vous est possible de voir plusieurs sections :
 
-. *Pending moderations*: highlights the number of pending moderations, reported users and contents combined.
-. *Activity*: number of participants and admins that logged in the last month, last week and last day.
-. *Metrics*: the graphics for the evolution of multiple components inside of Decidim:
-. *Admin log*: last actions made by all the administrators in the platform.
+. *Modérations en attente" : met en évidence le nombre de modérations en attente, les utilisateur·ices signalé·e·x·s et les contenus combinés.
+. *Activité" : nombre de participant·e·x·s et adminstrateur·ices s'étant connecté·e·x·s le mois précédent, la semaine précédente et la veille.
+. *Métriques* : les graphiques d'évolution des différentes fonctionnalités dans Decidim.
+. *Journal Admin* : les dernières actions effectuées par touxtes les administrateur·ices sur la plateforme.
 
-=== Administration navigation
+=== Navigation dans l'administration
 
-To navigate in the administration panel, you can click in all of the items displayed in the vertical navigation bar on the left.
+Pour naviguer dans le panneau d'administration, il est possible de cliquer sur tous les éléments présents dans la barre de navigation verticale de gauche.
 
 * xref:admin:spaces/processes.adoc[Concertations]
 * xref:admin:spaces/assemblies.adoc[Assemblies]
@@ -67,5 +64,5 @@ To navigate in the administration panel, you can click in all of the items displ
 * xref:admin:participants.adoc[Utilisateurs]
 * xref:admin:features/social_features/newsletters.adoc[Newsletters]
 * xref:admin:settings.adoc[Settings]
-* Admin activity log
+* Journal d'activité admin
 * xref:admin:templates.adoc[Templates]
