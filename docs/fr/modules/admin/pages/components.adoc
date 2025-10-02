@@ -2,37 +2,36 @@
 
 == En bref
 
-Grâce aux fonctionnalités, un administrateur peut activer et configurer différents mécanismes de participation.
-All components are available in all the different xref:admin:spaces.adoc[spaces].
+Grâce aux fonctionnalités, unx administrateur·ice peut activer et configurer différents mécanismes de participation.
+Toutes les fonctionnalités sont disponibles dans tous les différents xref:admin:spaces.adoc[espaces].
 
-When you create a participatory space, by default, it won't have any components in it.
+Lors de la création d'un espace participatif, l'espace, par défaut, n'aura aucune fonctionnalité.
 
 include::partial$components_list.adoc[]
 
 === How to find it?
 
-Components are accessible in each xref:admin:spaces.adoc[space], through the administration secondary navigation bar.
+Les fonctionnalités sont atteignables dans chaque xref:admin:spaces.adoc[espace], en passant par la barre de navigation secondaire de l'administration.
 
 image::components/components_index_back.png[Component index backend in an assembly]
 
-To create a component, click the "Add component" button and select the type of component you want to create.
+POur créer une fonctionnalité, cliquer sur "Ajouter fonctionnalité" et sélectionner le type de fonctionnalité à créer.
 
-Once you start publishing components, participants see links to the different components appear in the space "Main data"
-content block in the landing page, in the general search engine, and in the dedicated homepage content blocks.
+Une fois la publication de fonctionnalités entamée, les participant·e·x·s voient les liens des différentes fonctionnalités apparaitre dans l'espace du bloc de contenu "Données principales" dans la page d'accueil, dans le moteur de recherche général et dansde bloc de contenu de la page d'accueil dédiée.
 
 image::components/components_index_front.png[Component index frontend in an assembly]
 
 == Configuration
 
-=== Manage components
+=== Gérer les fonctionnalités
 
-On this page, you are able to manage components and create new ones.
+Sur cette page, il est possible de gérer les fonctionnalités et d'en créer de nouvelles.
 
-You can find all the components of the space on the list, with:
+Les fonctionnalités de l'espace se trouvent dans la liste, avec :
 
-* *Component name*: title of the component, chosen at its creation and editable.
-* *Component type*: type of component.
-* *Component scope*: the xref:admin:scopes.adoc[scope] of the component.
+* *Nom de la fonctionnalité* : le titre de la fonctionnalité choisi à sa création et modifiable.
+* *Le type de fonctionnalité* : le type de la fonctionnalité.
+* *Le secteur de la fonctionnalité* : le xref:admin:scopes.adoc[secteur] de la fonctionnalité.
 
 === Actions
 
@@ -40,7 +39,7 @@ You can find all the components of the space on the list, with:
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_edit.png[Manage component icon]
+|image:icons/action_edit.png[Icône Gérer la fonctionnalité]
 |Gérer
 |To edit the resources inside the component, like blog posts, proposals, meetings, etc.
 
