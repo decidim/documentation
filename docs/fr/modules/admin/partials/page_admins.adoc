@@ -9,11 +9,11 @@ Ces rôles sont administrateur·ices, modérateur·ices, collaborateur·ices et 
 * *Collaborateur·ices* : peuvent voir l'espace et ses fonctionnalités avant leur publication et voir les paramètres de l'espace.
 Iels ne peuvent rien modifier.
 * *Modérateur·ices* : peuvent voir le contenu signalé de l'espace et le masquer ou le dévoiler.
-* *Valuators* : ils peuvent évaluer les propositions, leur donner des réponses et mettre à jour leurs statuts.
+* *Évaluateur·ices* : peuvent évaluer les propositions, leur donner des réponses et mettre à jour leurs progrès.
 
 === How to find it?
 
-Pour configurer les administrateurs de l'espace, cliquez sur l'élément "Administrateurs du processus" ou "Administrateurs de l'assemblée" dans l'espace correspondant.
+Pour configurer les administrateur·ices d'espace, cliquez sur l'élément "Administrateur·ices de concertation" ou "Administrateur·ices de l'assemblée" dans l'espace correspondant.
 
 image::spaces/admins_list.png[Administrators of space]
 
@@ -21,84 +21,84 @@ image::spaces/admins_list.png[Administrators of space]
 
 === Gérer les administrateur·ices
 
-Vous pouvez trouver tous les administrateurs dans la liste dans le panneau d'administration, avec:
+Vous pouvez trouver touxtes les administrateur·ices dans la liste dans le panneau d'administration, avec :
 
-* *Nom*: nom du compte administrateur.
-* *E-mail* : e-mail du compte administrateur.
-* *Date de dernière connexion*: dernière fois que l'administrateur a été connecté.
-* *Invitation acceptée à* : date à laquelle l'administrateur a accepté l'invitation en cliquant sur le lien dans l'e-mail d'invitation.
-* *Role*: administrator role.
+* *Nom*: nom du compte administrateur·ice.
+* *E-mail* : e-mail du compte administrateur·ice.
+* *Date de dernière connexion*: dernière fois que l'administrateur·ice s'est connecté·e·x.
+* *Invitation acceptée le* : date à laquelle l'administrateur·ice a accepté l'invitation en cliquant sur le lien dans l'e-mail d'invitation.
+* *Rôle* : le rôle de l'administrateur·ice.
 
 === Actions
 
-.Actions dans la liste des administrateurs
+.Actions dans la liste des administrateur·ices
 [cols="10h,20h,~"]
 |===
 |Icône |Nom |Définition
 
 |image:icons/action_edit.png[Modifier l'icône]
 |Modifier
-|Éditer le rôle d'administrateur.
+|Modifier le rôle de l'administrateur·ice.
 
 |image:icons/action_delete.png[Supprimer l'icône]
 |Supprimer
-|Supprimer les droits d'administrateur de l'espace. Il ne supprime pas le compte de l'administrateur.
+|Supprimer les droits de l'administrateur·ice de l'espace. Il ne supprime pas le compte de l'administrateur·ice.
 |===
 
-=== Ajouter un administrateur d'espace
+=== Ajouter unx administrateur·ice d'espace
 
-Cliquez sur le bouton *Nouvel espace admin* (selon le type d'espace dans lequel vous êtes).
+Cliquer sur le bouton *Nouvel espace admin* (selon le type d'espace dans lequel vous êtes).
 
-image:espaces/admins_form.png[Nouveau formulaire d'administrateur d'espace]
+image:espaces/admins_form.png[Formulaire Nouvel·le·x administrateur·ice d'espace]
 
-.Nouveau formulaire d'administration de l'espace
+.Formulaire Nouvel·le·x administrateur·ice d'espace
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Nom
 |Obligatoire
-|Quel est le nom du nouvel administrateur.
+|Quel est le nom de lae nouvel·le·x administrateur·ice.
 
 |E-mail
 |Obligatoire
-|Quel est l'e-mail du nouvel administrateur, afin qu'il puisse recevoir une invitation s'il n'a pas encore de compte.
+|Quel est l'e-mail de lae nouvel·le·x administrateur·ice, afin qu'iel puisse recevoir une invitation s'iel n'a pas encore de compte.
 
 |Rôle
 |Obligatoire
-|Quel rôle cet administrateur doit avoir dans l'espace. Peut être un administrateur, un collaborateur, un modérateur ou un évaluateur.
+|Quel rôle l'administrateur·ice doit avoir dans l'espace. Peut être administrateur·ice, collaborateur·ice, modérateur·ice ou évaluateur·ice.
 |===
 
 === Rôles
 
-==== Administrateurs
+==== Administrateur·ices
 
-Un administrateur de l'espace peut administrer l'espace et modifier les paramètres de l'espace. Ils peuvent également inviter de nouveaux administrateurs de l'espace.
-Lors de la gestion de l'espace, ils ne verraient que les vues et les onglets suivants.
+Unx administrateur·ice de l'espace peut administrer l'espace et modifier les paramètres de l'espace. Il peut également inviter de nouveaulx administrateur·ices de l'espace.
+Lors de la gestion de l'espace, iel ne voit que les vues et les onglets suivants.
 
 image:espaces/admins_role_admin01.png[Vue des administrateurs de processus 01]
 
 image:espaces/admins_role_admin02.png[Vue des administrateurs de processus 02]
 
-==== Collaborateurs
+==== Collaborateur·ices
 
-Un collaborateur de l'espace peut prévisualiser un espace avant sa publication.
+Unx collaborateur·ice de l'espace peut prévisualiser un espace avant sa publication.
 
-image:espaces/admins_role_collaborator.png[Vue des collaborateurs]
+image:espaces/admins_role_collaborator.png[Vue des collaborateur·ices]
 
-==== Modérateurs
+==== Modérateur·ices
 
-Un modérateur d'espace peut examiner le contenu signalé de l'espace et les masquer ou les dévoiler. Ils peuvent aussi
-accéder au contenu signalé dans le panneau de modération globale, mais ne voir pas le contenu rapporté depuis d'autres espaces.
+Unx modérateur·ice d'espace peut examiner le contenu signalé de l'espace et les masquer ou les dévoiler. Iel peut aussi
+accéder au contenu signalé dans le panneau de modération globale, mais ne verra pas le contenu signalé depuis d'autres espaces.
 
-image:espaces/admins_role_moderator.png[Vue des modérateurs]
+image:espaces/admins_role_moderator.png[Vue des modérateur·ices]
 
-==== Évaluateurs
+==== Évaluateur·ices
 
-Un évaluateur d'espace peut examiner les propositions de l'espace qui leur ont été attribuées par:
+Unx évaluateur·ice d'espace peut examiner les propositions de l'espace qui lui ont été attribuées par:
 
 * modifier le statut des propositions en les acceptant ou en les rejetant.
 * donner une réponse aux propositions.
-* ajouter une valeur monétaire aux propositions, afin qu'elles puissent être votées avec la composante budgétaire.
+* ajouter une valeur monétaire aux propositions, afin qu'elles puissent être votées avec la fonctionnalité budgétaire.
 
-image:espaces/admins_role_valuator.png[Vue des évaluateurs de processus]
+image:espaces/admins_role_valuator.png[Vue des évaluateur·ices de processus]
