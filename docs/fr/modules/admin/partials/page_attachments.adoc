@@ -2,20 +2,20 @@
 
 == En bref
 
-Les pièces jointes permettent à un administrateur de télécharger des fichiers statiques dans un espace.
+Les pièces jointes permettent à unx administrateur·ice de télécharger des fichiers statiques dans un espace.
 
-Quand un espace est lancé, Il est important de fournir aux citoyens autant d'informations que possible à leur sujet afin qu'ils puissent participer avec des connaissances.
+Quand un espace est lancé, il est important de fournir aux citoyen·ne·x·s autant d'informations que possible à leur sujet afin qu'iles puissent participer en connaissance de cause.
 C'est pourquoi il est utile d'ajouter des fichiers, des documents, des images avec des informations pertinentes.
 
-Ces documents peuvent être regroupés dans *Dossiers*. Par exemple, pour un processus participatif de remodelage d'un carré, des dossiers peuvent être créés avec des informations sur les utilisations possibles, avec des plans, avec des informations économiques, etc.
+Ces documents peuvent être regroupés dans *Dossiers*. Par exemple, pour une concertation de remodelage d'une place publique, des dossiers peuvent être créés avec des informations sur les utilisations possibles, avec des plans, avec des informations économiques, etc.
 
-Ils peuvent être trouvés dans l'espace xref:admin:spaces/processes/landing_page.adoc[landing page] lorsque le bloc de contenu est activé.
+Les documents se trouvent dans l'espace xref:admin:spaces/processes/landing_page.adoc[page d'accueil] lorsque le bloc de contenu est activé.
 
 image:espaces/attachments.png[Voir les pièces jointes dans l'interface publique]
 
 === How to find it?
 
-Pour créer et gérer les pièces jointes, cliquez sur l'élément *Pièces jointes* dans la barre de navigation de gauche de tout espace participatif.
+Pour créer et gérer les pièces jointes, cliquez sur *Pièces jointes* dans la barre de navigation de gauche de tout espace participatif.
 
 image:espaces/attachments_admin.png[Voir les pièces jointes dans l'interface d'administration]
 
@@ -25,7 +25,7 @@ Là, vous pouvez gérer les pièces jointes et les dossiers, les configurer, en 
 
 === Créer une nouvelle pièce jointe
 
-Pour créer une nouvelle pièce jointe, cliquez sur le bouton "Nouvelle pièce jointe".
+Pour créer une nouvelle pièce jointe, cliquez sur "Nouvelle pièce jointe".
 
 image:espaces/attachments_new_form.png[Créer un nouveau formulaire de pièces jointes]
 
@@ -40,7 +40,7 @@ image:espaces/attachments_new_form.png[Créer un nouveau formulaire de pièces j
 
 |Rang d'affichage
 |Facultatif
-|Quel ordre il a en relation avec les autres pièces jointes. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux catégories, « Attachment a » avec le poids « 10 » et « Attachment b » avec le poids « 0 » puis « Attachment b » sera d'abord lors de la commande.
+|Quel ordre il a en relation avec les autres pièces jointes. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux catégories, « Pièce jointe a » de poids « 10 » et « Pièce jointe b » de poids « 0 » puis « Pièce jointe b » apparaitra en premier dans le listage.
 
 |Description
 |Obligatoire
@@ -52,7 +52,7 @@ image:espaces/attachments_new_form.png[Créer un nouveau formulaire de pièces j
 
 |Fichier
 |Obligatoire
-|Télécharger le fichier. Orientation pour le fichier: Doit être une image ou un document. Le service récolte
+|Télécharger le fichier. Instruction pour le fichier : Doit être une image ou un document. Le service récolte
 l'image Taille maximale du fichier : 10 Mo. Les extensions de fichier
 autorisées dépendent de la configuration de votre serveur.
 |===
@@ -63,7 +63,7 @@ image:espaces/attachments_folders_admin.png[Voir les dossiers dans l'interface d
 
 Pour créer et gérer les dossiers de pièces jointes, cliquez sur l'onglet *Dossiers*.
 
-image:espaces/attachments_new_folder_form.png[Créer un nouveau dossier pour le formulaire de pièces jointes]
+image:espaces/attachments_new_folder_form.png[Formulaire de nouveau dossier de pièces jointes]
 
 .Créer un dossier
 [cols="20h,10h,~"]
@@ -76,16 +76,16 @@ image:espaces/attachments_new_folder_form.png[Créer un nouveau dossier pour le 
 
 |Rang d'affichage
 |Facultatif
-|Quel ordre il a en relation avec les autres dossiers. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux dossiers, "Dossier a" avec le poids "10" et "Dossier b" avec le poids "0" puis "Dossier b" sera d'abord lors de la commande.
+|Quel ordre il a en relation avec les autres dossiers. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux dossiers, "Dossier a" de poids "10" et "Dossier b" de poids "0" puis "Dossier b" apparaitra en premier dans le listage.
 
 |Description
 |Obligatoire
-|Une longue description expliquant de quoi il s'agit dans ce dossier.
+|Une longue description expliquant le dossier.
 |===
 
 === Gérer les pièces jointes
 
-Vous pouvez trouver toutes les pièces jointes dans la liste dans le panneau d'administration, avec:
+Vous pouvez trouver toutes les pièces jointes dans la liste dans le panneau d'administration, avec :
 
 * *Titre* : titre de la pièce jointe, donné lors de la création ou de l'édition.
 * *Dossier* : dossier où la pièce jointe est stockée.
@@ -96,16 +96,16 @@ Vous pouvez également accéder à la liste des dossiers en cliquant sur l'ongle
 
 === Actions
 
-.Actions des composants dans la liste des composants
+.Actions des fonctionnalités dans la liste des fonctionnalités
 [cols="10h,20h,~"]
 |===
 |Icône |Nom |Définition
 
 |image:icons/action_edit.png[Modifier l'icône]
-|Editer
+|Modifier
 |Pour modifier le nom, la description, la position de l'ordre et le dossier de la pièce jointe.
 
 |image:icons/action_delete.png[Supprimer l'icône]
-|Supprimez
+|Supprimer
 |Supprimer la pièce jointe.
 |===
