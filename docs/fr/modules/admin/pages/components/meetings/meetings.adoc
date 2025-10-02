@@ -1,4 +1,4 @@
-= Réunions
+= Rencontres
 
 == En bref
 
@@ -168,7 +168,7 @@ Des *Services* pour une réunion peuvent être définis. Ce sont des méta-donn�
 |Aperçu
 |Pour voir comment il est montré dans le frontend aux participants.
 
-|image:icons/action_permissions.png[Permissions icon]
+|image:icons/action_permissions.png[Icône Autorisations]
 |Autorisations
 |Pour gérer les permissions de cette réunion, selon la vérification d'unx participant·e·x. Permet à unx administrateur·ice de configurer
 qui peut *rejoindre* une réunion.
@@ -280,7 +280,7 @@ Après avoir créé la réunion, les participant·e·x·s peuvent également éd
 |Aperçu
 |Pour voir comment il est montré dans le frontend aux participants.
 
-|image:icons/action_permissions.png[Permissions icon]
+|image:icons/action_permissions.png[Icône Autorisations]
 |Autorisations
 |Pour gérer les autorisations nécessaires pour contribuer, commenter ou répondre au sondage pour cette réunion spécifique.
 |===
