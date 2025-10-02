@@ -1,14 +1,14 @@
-= Administrateurs de l'espace
+= Administrateur·ices d'espace
 
 == En bref
 
-Vous pouvez donner des permissions spécifiques aux utilisateurs dans les différents espaces, donc ils ne peuvent avoir accès qu'à certaines actions d'administration.
-Ces rôles sont des administrateurs, des modérateurs, des collaborateurs et des évaluateurs.
+Vous pouvez donner des permissions spécifiques aux utilisateur·ices dans les différents espaces, et ne peuvent donc avoir accès qu'à certaines actions d'administration.
+Ces rôles sont administrateur·ices, modérateur·ices, collaborateur·ices et des évaluateur·ices.
 
-* *Administrateurs* : ils peuvent administrer l'espace et modifier les paramètres de l'espace.
-* *Collaborateurs* : ils peuvent voir l'espace et ses composants avant leur publication et voir les paramètres de l'espace.
-Ils ne peuvent rien modifier.
-* *Modérateurs* : ils peuvent voir le contenu signalé de l'espace et le masquer ou le dévoiler.
+* *Administrateur·ices* : peuvent administrer l'espace et modifier les paramètres de l'espace.
+* *Collaborateur·ices* : peuvent voir l'espace et ses fonctionnalités avant leur publication et voir les paramètres de l'espace.
+Iels ne peuvent rien modifier.
+* *Modérateur·ices* : peuvent voir le contenu signalé de l'espace et le masquer ou le dévoiler.
 * *Valuators* : ils peuvent évaluer les propositions, leur donner des réponses et mettre à jour leurs statuts.
 
 === How to find it?
@@ -19,7 +19,7 @@ image::spaces/admins_list.png[Administrators of space]
 
 == Configuration
 
-=== Gérer les administrateurs
+=== Gérer les administrateur·ices
 
 Vous pouvez trouver tous les administrateurs dans la liste dans le panneau d'administration, avec:
 
@@ -37,11 +37,11 @@ Vous pouvez trouver tous les administrateurs dans la liste dans le panneau d'adm
 |Icône |Nom |Définition
 
 |image:icons/action_edit.png[Modifier l'icône]
-|Editer
+|Modifier
 |Éditer le rôle d'administrateur.
 
 |image:icons/action_delete.png[Supprimer l'icône]
-|Supprimez
+|Supprimer
 |Supprimer les droits d'administrateur de l'espace. Il ne supprime pas le compte de l'administrateur.
 |===
 
@@ -60,7 +60,7 @@ image:espaces/admins_form.png[Nouveau formulaire d'administrateur d'espace]
 |Obligatoire
 |Quel est le nom du nouvel administrateur.
 
-|Courriel
+|E-mail
 |Obligatoire
 |Quel est l'e-mail du nouvel administrateur, afin qu'il puisse recevoir une invitation s'il n'a pas encore de compte.
 
