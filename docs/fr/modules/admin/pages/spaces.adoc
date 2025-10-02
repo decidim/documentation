@@ -1,8 +1,8 @@
-= Espaces
+= Espaces participatifs
 
 == En bref
 
-Les espaces participatifs sont les canaux par lesquels les citoyens peuvent participer à la prise de décision publique.
+Les espaces participatifs sont les canaux par lesquels les citoyen·ne·x·s peuvent participer à la prise de décision publique.
 Par défaut, une instance est fournie avec ces différents espaces :
 
 
@@ -11,19 +11,19 @@ Par défaut, une instance est fournie avec ces différents espaces :
 |Nom |Description |Cas d'utilisation
 
 |*xref:admin:spaces/processes.adoc[Concertations]*
-|Un processus participatif permet aux administrateurs de configurer différents composants participatifs, qui évoluent au cours des différentes phases participatives.
+|Une concertation permet aux administrateur·ices de configurer différentes fonctionnalités participatives, qui évoluent au cours des différentes étapes de participation.
 |budgétisation participative, rappel des propositions, processus de vote ou de débat, etc.
 
-|*xref:admin:spaces/assemblies.adoc[Assemblies]*
-|Une assemblée permet aux administrateurs de configurer des composants participatifs dans un espace continu, avec la possibilité de définir des membres.
+|*xref:admin:spaces/assemblies.adoc[Assemblées]*
+|Une assemblée permet aux administrateur·ices de configurer des fonctionnalités participatives dans un espace continu, avec la possibilité de définir des membres.
 |Espace d'organisation du comité, assemblée citoyenne, etc.
 
 |*xref:admin:spaces/initiatives.adoc[Initiatives]*
-|L'espace des initiatives permet aux administrateurs d'ouvrir un espace ascendant, avec différents types d'initiatives.
+|L'espace des initiatives permet aux administrateur·ices d'ouvrir un espace bottom-up, avec différents types d'initiatives.
 |pétitions, demandes d'audience, demandes de concertation, etc.
 
-|*xref:admin:spaces/conferences.adoc[Conferences]*
-|Une conférence permet aux administrateurs d'organiser et de diffuser des événements, de traiter des inscriptions, des programmes , des conférenciers et des lieux.
+|*xref:admin:spaces/conferences.adoc[Conférences]*
+|Une conférence permet aux administrateur·ices d'organiser et de diffuser des événements, de traiter des inscriptions, des programmes, des conférencier·e·x·s et des lieux.
 |Événement participatif, assemblée citoyenne, festival d'association, etc.
 |===
 
@@ -35,7 +35,7 @@ Les espaces sont accessibles via la barre de navigation de l'administration.
 
 image::spaces_admin.png[Spaces in administrator sidebar]
 
-Une fois que vous commencez à publier des espaces, les participants voient les liens vers les différents index d'espaces apparaître dans le menu global de la page d'accueil,
+Une fois des espaces publiés, les participant·e·x·s voient les liens vers les différents index d'espaces apparaître dans le menu global de la page d'accueil,
 la barre de navigation de l'instance et le pied de page.
 
 image::spaces_visitor.png[Spaces visible in the public interface]
