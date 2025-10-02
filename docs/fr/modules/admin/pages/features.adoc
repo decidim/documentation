@@ -2,13 +2,13 @@
 
 == En bref
 
-doc[Components], mais offre aussi à
-beaucoup d'autres fonctionnalités, pour permettre aux administrateurs de maintenir l'engagement des participants, encourager la collaboration et la participation
-sur la plate-forme, etc.
+Decidim est principalement organisé autour d'xref:admin:spaces.adoc[espaces] doc[Fonctionnalités], mais offre aussi 
+beaucoup d'autres possibilités, pour permettre aux administrateur·ices de maintenir l'engagement des participant·e·x·s, encourager la collaboration et la participation
+sur la plateforme, etc.
 
-Pour la lisibilité de cette documentation, ils sont divisés en quatre sections différentes :
+Pour la lisibilité de cette documentation, elles sont divisés en quatre sections différentes :
 
 . *xref:admin:features/search.adoc[moteur de recherche]*
-. *xref:admin:admin:features/social_features.adoc[Social features]*
+. *xref:admin:admin:features/social_features.adoc[Social]*
 . *xref:admin:admin:features/transparency_features.adoc[Fonctionnalités de transparence]*
-. *xref:admin:admin:features/participants_actions.adoc[Compte des participants et actions]*
+. *xref:admin:admin:features/participants_actions.adoc[Compte des participant·e·x·s et actions]*
