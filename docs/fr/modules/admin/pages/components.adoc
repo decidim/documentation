@@ -41,34 +41,33 @@ Les fonctionnalités de l'espace se trouvent dans la liste, avec :
 
 |image:icons/action_edit.png[Icône Gérer la fonctionnalité]
 |Gérer
-|To edit the resources inside the component, like blog posts, proposals, meetings, etc.
+|Pour modifier les ressources internes de la fonctionnalité, comme les posts d'actualité, les propositions, les rencontres, etc.
 
-|image:icons/action_share.png[Share icon]
+|image:icons/action_share.png[Icône Partager]
 |Partager
-|Creates a link with a token to share the component with other users.
+|Crée un lien avec un token pour partager la fonctionnalité avec d'autres utilisateur·ices.
 
-|image:icons/action_configure.png[Configure icon]
+|image:icons/action_configure.png[Icône Configurer]
 |Configurer
-|To edit the general configuration of the component.
+|Pour modifier la configuration générale de la fonctionnilité.
 
-|image:icons/action_publish.png[Publish component icon]
+|image:icons/action_publish.png[Icône Publier la fonctionnalité]
 |Publier
-|To publish the component.
+|Pour publier la fonctionnalité.
 
-|image:icons/action_unpublish.png[Unpublish component icon]
+|image:icons/action_unpublish.png[Icône Dépublier la fonfctionnalité]
 |Dépublier
-|To unpublish the component.
+|Pour dépublier la focntionnalité.
 
-|image:icons/action_preview.png[Preview component icon]
+|image:icons/action_preview.png[Icône Aperçu de la fonctionnalité]
 |Aperçu
-|Preview of how the component looks in the user interface.
+|Aperçu de l'apparence de la fonctionnalité dans l'interface utilisateur·ice.
 
-|image:icons/action_permissions.png[Permissions icon]
+|image:icons/action_permissions.png[Icône Autorisations]
 |Autorisations
-|To configure which kind of xref:admin:participants/authorizations.adoc[Authorizations]
-a participant need to have to be able to perform certain actions in a component.
+|Pour configurer les types d'xref:admin:participants/authorizations.adoc[Autorisations] que les participant·e·x·s doivent obtenir pour pouvoir mener certaines actions dans la fonctionnalité.
 
-|image:icons/action_delete.png[Delete component icon]
+|image:icons/action_delete.png[Icône Supprimer la fonctionnalité]
 |Supprimez
-|To delete the component, only possible when there is no participant participation in it.
+|Pour supprimer la fonctionnalité, seulement possible lorsqu'auncunx participant·e·x n'y participe.
 |===
