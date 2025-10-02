@@ -5,11 +5,11 @@
 L'onglet Modèles vous permet de créer des modèles et de gagner du temps dans la gestion de votre instance.
 Vous pouvez créer des modèles pour trois éléments différents :
 
-* *Questionnaires* : pour créer des questionnaires dans le xref:admin:components/surveys.adoc[composant d'enquête]
-* *Bloquer les messages utilisateur*: pour créer une justification pour le modèle de blocage de xref:admin:admin:moderations/reported_users.adoc[utilisateurs signalés]
+* *Questionnaires* : pour créer des questionnaires dans la xref:admin:components/surveys.adoc[fonctionnalité enquête]
+* *Bloquer les messages utilisateur·ice*: pour créer une justification pour le modèle de blocage de xref:admin:admin:moderations/reported_users.adoc[utilisateur·ices signalé·e·x·s]
 * *Réponses aux propositions* : pour créer le modèle xref:admin:components/proposs/answers.adoc[réponses aux propositions]
 
-Une fois créés, ces modèles sont disponibles pour tous les administrateurs, et les aident à gérer l'instance plus efficacement.
+Une fois créés, ces modèles sont à disposition touxtes les administrateur·ices, et les aident à gérer l'instance plus efficacement.
 
 == Configuration
 
@@ -27,12 +27,11 @@ image::templates/templates_questionnaires_list.png[Backend: templates panel]
 
 == Exemples
 
-À la fin de chacun des processus participatifs que vous faites, vous voulez recueillir les commentaires des participants.
+À la fin de chacune des concertations que vous faites, vous pouvez accepter les commentaires des participant·e·x·s.
 La création d'un modèle de questionnaire rend la création de l'enquête plus rapide que la recréation de l'enquête et de ses questions pour chaque processus.
 
-Sur certaines plateformes, vous pouvez également avoir des utilisateurs de spam, que vous voulez pouvoir bloquer rapidement pour la même raison à chaque fois.
-Creating a justification template allow you to quickly choose this justification when blocking a spam user, rather than writing it
-again each time.
+Sur certaines plateformes, vous pouvez également avoir des utilisateur·ices qui spamment, qu'il est préférable de pouvoir bloquer rapidement pour la même raison à chaque fois.
+Créer un modèle de justification permet de choisir rapidement la justification pour bloquer unx utilisateur·ice que spamme, plutôt que de le réécrire à chaque fois.
 
-Il en va de même pour les réponses aux propositions, parfois vous voulez donner la même réponse à de nombreuses propositions différentes. Créer un modèle de réponse de proposition
-permet aux administrateurs de processus de gérer les propositions plus efficacement.
+Il en va de même pour les réponses aux propositions, parfois il est utile donner la même réponse à de nombreuses propositions différentes. Créer un modèle de réponse aux propositions vous permet, ainsi
+qu'aux administrateur·ices de processus de gérer les propositions plus efficacement.
