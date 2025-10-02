@@ -4,27 +4,27 @@
 
 Les catégories (et sous-catégories) sont utilisées pour classer les ressources à l'intérieur d'un espace.
 
-Un administrateur peut les définir, peut être affecté lors de la création de ressources, et les participants peuvent ensuite filtrer les
+Unx administrateur·ice peut définir les catégories, peut être affecté lors de la création de ressources, et les participant·e·x·s peuvent ensuite filtrer les
 différentes ressources par ces catégories. Par exemple, elles peuvent être utilisées dans des propositions, des réunions et des débats.
 
-. Les administrateurs définissent les catégories dans un espace.
-. Les participants peuvent créer des ressources et leur donner une catégorie.
-. Les participants peuvent ensuite filtrer par catégories.
+. Les administrateur·ices définissent les catégories dans un espace.
+. Les participant·e·x·s peuvent créer des ressources et leur donner une catégorie.
+. Les participant·e·x·s peuvent ensuite filtrer par catégories.
 
 image::spaces/categories_sidebar.png[Filter categories in proposals]
 
-NOTE: Une fois qu'une catégorie est utilisée, elle ne peut pas être supprimée, car il y a des ressources qui y sont liées.
+NOTE: Une fois une catégorie utilisée, elle ne peut pas être supprimée, car il y a des ressources qui y sont liées.
 
-Decidim a d'autres moyens de classer les ressources, par exemple xref:admin:settings/scopes.adoc[Scopes] et
+Decidim a d'autres moyens de classer les ressources, par exemple xref:admin:settings/scopes.adoc[Secteurs] et
 xref:admin:features/social_features/hashtags.adoc[Hashtags].
-La principale différence est que les catégories peuvent être définies dans un espace donné, Les périmètres sont globaux pour toute la plate-forme, et les Hashtags
-peuvent être définis par les participants.
+La principale différence est que les Catégories peuvent être définies dans un espace donné, tandis que les Secteurs sont généraux pour toute la plateforme et les Hashtags
+peuvent être définis par les participant·e·x·s.
 
 Les catégories peuvent être imbriquées, ce qui signifie qu'une catégorie peut avoir des sous-catégories.
 
 === How to find it?
 
-To configure categories, click the *Categories* item in any participatory space.
+Pour configurer les catégories, cliquer sur Catégories dans un espace participatif.
 
 image::spaces/categories.png[View categories in a space administration page]
 
@@ -36,7 +36,7 @@ Cliquez sur le bouton "Nouvelle catégorie" en haut à droite.
 
 image:espaces/categories_new_form.png[Créer un nouveau formulaire de catégorie]
 
-.Créer un formulaire de catégorie
+.Formulaire Créer une nouvelle catégorie
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -47,7 +47,7 @@ image:espaces/categories_new_form.png[Créer un nouveau formulaire de catégorie
 
 |Rang d'affichage
 |Facultatif
-|Quel ordre il a en relation avec les autres catégories. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux catégories, "Catégorie a" avec le poids "10" et "Catégorie b" avec le poids "0", alors "Catégorie b" est d'abord lors de la commande.
+|Quel ordre il a en relation avec les autres catégories. Avoir un nombre inférieur signifie un rang d'affichage plus élevé. Par exemple, si vous avez deux catégories, "Catégorie a" de poids "10" et "Catégorie b" de poids "0", alors "Catégorie b" apparaitra en premier dans le listage.
 
 |Parent
 |Facultatif
@@ -58,7 +58,7 @@ image:espaces/categories_new_form.png[Créer un nouveau formulaire de catégorie
 
 Vous pouvez trouver toutes les catégories dans la liste dans le panneau d'administration, avec:
 
-* *Nom*: nom de la catégorie, donné lors de la création ou de l'édition par l'administrateur.
+* *Nom*: nom de la catégorie, donné lors de la création ou de la modification par l'administrateur·ice.
 
 === Actions
 
@@ -68,10 +68,10 @@ Vous pouvez trouver toutes les catégories dans la liste dans le panneau d'admin
 |Icône |Nom |Définition
 
 |image:icons/action_edit.png[Modifier l'icône]
-|Editer
+|Modifier
 |Pour modifier le nom, la position de la commande et le parent de la catégorie.
 
 |image:icons/action_delete.png[Supprimer l'icône]
-|Supprimez
+|Supprimer
 |Supprimer la catégorie. Une catégorie ne peut pas être supprimée si elle contient des ressources.
 |===
