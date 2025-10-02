@@ -4,16 +4,16 @@
 
 L'onglet Paramètres vous permet :
 
-* Pour commencer à configurer votre instance
-* Pour activer les fonctionnalités générales dans l'instance
-* Pour mettre à jour l'apparence de la page d'accueil et l'apparence générale de votre instance
-* Créer et gérer les portées et les zones
-* Pour ajouter des informations d'aide à l'utilisateur
-* Pour configurer les domaines externes autorisés
+* de configurer votre instance
+* d'activer les fonctionnalités générales dans l'instance
+* de mettre à jour l'apparence de la page d'accueil et l'apparence générale de votre instance
+* de créer et gérer les secteurs et les périmètres d'assemblées
+* d'ajouter des informations d'aide pour l'utilisateur·ice
+* de configurer les domaines externes autorisés
 
 == Configuration
 
-Pour accéder au panneau de configuration des paramètres, allez dans le panneau d'administration et cliquez sur l'élément "Paramètres" dans la barre de navigation de l'administration
+Pour accéder au panneau de configuration des paramètres, allez dans le panneau d'administration et cliquez sur "Paramètres" dans la barre de navigation de l'administration
 .
 
 image::settings/settings_menu.png[Settings: Access settings panel]
@@ -21,11 +21,11 @@ image::settings/settings_menu.png[Settings: Access settings panel]
 Dans le panneau de navigation secondaire, vous pouvez voir tous les paramètres disponibles :
 
 * xref:admin:settings/configuration.adoc[Configuration]: pour configurer les paramètres généraux.
-* xref:admin:settings/appearance.adoc[Appearance]: pour configurer l'apparence de l'instance.
-* xref:admin:settings/homepage.adoc[Homepage]: pour configurer ce qu'il faut afficher sur la page d'accueil.
-* xref:admin:settings/scopes.adoc[Scopes]: pour gérer les portées, une fonctionnalité de catégorisation.
-* xref:admin:settings/areas.adoc[Areas]: pour gérer les zones, une autre fonctionnalité de catégorisation.
-* xref:admin:admin:settings/help_sections.adoc[Sections d'aide]: créer et éditer des textes d'aide pour les participants.
+* xref:admin:settings/appearance.adoc[Apparence]: pour configurer l'apparence de l'instance.
+* xref:admin:settings/homepage.adoc[Page d'accueil]: pour configurer ce qu'il faut afficher sur la page d'accueil.
+* xref:admin:settings/scopes.adoc[Secteurs]: pour gérer les secteurs, une fonctionnalité de catégorisation.
+* xref:admin:settings/areas.adoc[Périmètres d'assemblée]: pour gérer les périmètre d'assemblée, une autre fonctionnalité de catégorisation.
+* xref:admin:admin:settings/help_sections.adoc[Sections d'aide]: créer et modifier des textes d'aide pour les participant·e·x·s.
 * xref:admin:settings/allowed_external_domains.adoc[Domaines externes autorisés]: gérer les domaines externes autorisés.
 
 image::settings/settings_sidebar_menu.png[Settings sidebar menu]
