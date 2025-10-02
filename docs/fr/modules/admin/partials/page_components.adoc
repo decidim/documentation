@@ -48,11 +48,11 @@ image::spaces/components/components_new_dropdown.png[Add a component in a space]
 |Gérer toutes les ressources à l'intérieur d'un composant. Par exemple, toutes les propositions d'un composant de proposition, les réunions
 dans un composant de réunion, etc.
 
-|image:icons/action_share.png[Share icon]
+|image:icons/action_share.png[Icône Partager]
 |Partager
 |Partager en privé avant de publier ce composant. Utile pour obtenir des avis d'autres personnes de votre organisation.
 
-|image:icons/action_configure.png[Configure icon]
+|image:icons/action_configure.png[Icône Configurer]
 |Configurer
 |Pour configurer un composant avec des règles spécifiques, par exemple, dans le cas de réunions :
 sont des commentaires activés, les participants peuvent créer des réunions ou pas, etc.
@@ -69,7 +69,7 @@ sont des commentaires activés, les participants peuvent créer des réunions ou
 |Aperçu
 |Pour prévisualiser l'espace avant qu'il ne soit publié.
 
-|image:icons/action_permissions.png[Permissions icon]
+|image:icons/action_permissions.png[Icône Autorisations]
 |Autorisations
 |Pour configurer quel xref:customize:authorizations.adoc[Authorization] est nécessaire pour effectuer certaines actions dans
 ce composant. Par exemple, dans le cas des propositions, dont la vérification est nécessaire pour créer une nouvelle proposition ou
