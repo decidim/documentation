@@ -1,26 +1,26 @@
-= Participants
+= Participant·e·x·s
 
 == En bref
 
-L'onglet participants vous permet de faire certaines tâches avec les participants, parmi eux:
+L'onglet participants·e·x·s vous permet de faire les tâches suivantes avec les participants·e·x·s :
 
 * Gérer les droits d'accès à l'administration de la plateforme
-* Pour contacter les participants
-* Gérer l'accès des participants à des espaces spécifiques
-* certifier l'identité des participants spécifiques
-* certifier l'authenticité des organisations d'utilisateurs ou collectifs
+* Contacter les participant·e·x·s
+* Gérer l'accès des participant·e·x·s à des espaces spécifiques
+* Certifier l'identité des participant·e·x·s spécifiques
+* Certifier l'authenticité des organisations d'utilisateur·ices ou de collectifs
 
 == Configuration
 
-Pour accéder au panneau de configuration des Participants, allez dans le panneau d'administration et cliquez sur l'élément "Participants" dans la barre de navigation d'administration.
+Pour accéder au panneau de configuration des Participant·e·x·s, allez dans le panneau d'administration et cliquez sur "Participant·e·x·s" dans la barre de navigation d'administration.
 
 image::participants/participants_menu.png[Participants menu]
 
-Là, vous voyez d'abord la liste des administrateurs de la plate-forme.
+Là, vous verrez d'abord la liste des administrateur·ices de la plateforme.
 
 image::participants/participants_sidebar_menu.png[Participants sidebar menu]
 
-Dans le panneau de navigation secondaire, vous pouvez voir toutes les possibilités de configuration des participants :
+Dans le panneau de navigation secondaire, vous pouvez voir toutes les possibilités de configuration des participant·e·x·s :
 
 * xref:admin:participants/admins.adoc[Administrateurs]
 * xref:admin:participants/groups.adoc[Groupes d'utilisateurs]
@@ -32,10 +32,10 @@ Dans le panneau de navigation secondaire, vous pouvez voir toutes les possibilit
 ** xref:admin:participants/authorizations/code_postal_letter.adoc[Code par lettre postale]
 ** xref:admin:participants/authorizations/census.adoc[Recensement de l'organisation]
 
-Certains de ces éléments peuvent ne pas apparaître dans ce menu, car ils ne sont pas activés.
-Pour vérifier comment les activer, allez sur l'article de documentation de l'élément manquant.
+Certains de ces éléments peuvent ne pas apparaître dans ce menu, s'ils ne sont pas activés.
+Pour comprendre comment les activer, allez sur l'article de documentation de l'élément manquant.
 
 == Exemples
 
-Vous voulez ajouter vos collègues pour qu'ils puissent modifier la plateforme.
-Vous voulez définir des flux spécifiques pour que les participants puissent participer à un espace participatif spécifique.
+Vous pouvez ajouter vos collègues pour qu'iels puissent modifier la plateforme.
+Vous pouvez définir des flux spécifiques pour que les participant·e·x·s puissent participer à un espace participatif spécifique.
