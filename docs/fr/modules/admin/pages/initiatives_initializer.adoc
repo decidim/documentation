@@ -1,6 +1,6 @@
 = Initiateur d'Initiatives
 
-Pour utiliser le module d'initiatives, vous voudrez revoir les configurations qui sont dans l'initialiseur. Reportez-vous à xref:configure:initializer.adoc[configuration générale d'initialisation] pour plus d'informations concernant ce fichier.
+Pour utiliser le module d'initiatives, il vous faut consulter les configurations qui sont dans l'initialiseur. Reportez-vous à xref:configure:initializer.adoc[configuration générale d'initialisation] pour plus d'informations concernant ce fichier.
 
 Vous devrez changer dans le fichier `config/initializer/decidim.rb`. Vous pouvez également créer un fichier ad-hoc pour ces configurations, comme `config/initializer/initiatives.rb`.
 
@@ -43,9 +43,7 @@ Définition qui définit combien d'initiatives similaires seront affichées.
 
 == Nombre minimum de membres du comité
 
-Minimum number of committee members required to pass the initiative to
-technical validation phase. Only applies to initiatives created by
-individuals.
+Le nombre minimum de membres de comité requis pour faire passer une initiative à la l'étape de la validation technique. S'applique uniquement aux initiatives créées par des individus.
 
 [source,ruby]
 ....
@@ -115,8 +113,7 @@ Définit la durée d'expiration des données statistiques.
 == Temps maximum dans l'état de validation
 
 Durée maximale en état de validation.
-After this time the initiative will be moved to
-discarded state.
+Dépassé ce délai, l'initiative est supprimée.
 
 [source,ruby]
 ....
@@ -127,9 +124,7 @@ discarded state.
 
 == Impression activée
 
-Fonctionnalité d'impression activée. Allows the user to get
-a printed version of the initiative from the administration
-panel.
+Fonctionnalité d'impression activée. Permet à l'utilisateur·ice d'obtenir du panneau d'administration une version imprimée de l'initiative.
 
 [source,ruby]
 ....
