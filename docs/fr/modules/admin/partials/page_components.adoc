@@ -2,55 +2,53 @@
 
 == En bref
 
-Comme expliqué dans la page d'introduction xref:admin:index.adoc[, pour comprendre comment Decidim fonctionne, vous devez distinguer entre les *espaces* et les *composants*.
-The participatory spaces are the channels that citizens can participate through when public decisions are being taken, whereas participatory components are
-mechanisms that enable interaction between users of the platform and the various participatory spaces.
+Comme expliqué dans la page d'introduction xref:admin:index.adoc[, pour comprendre comment Decidim fonctionne, il faut distinguer les *espaces* des *fonctionnalités*.
+Les espaces participatifs sont des canaux auxquels les citoyen·ne·x·s peuvent participer pour la prise de décisions publiques, alors que les fonctionnalités participatives sont des mécanismes qui permettent une interaction entre des utilisateur·ices de la plateforme et les différents espaces participatifs.
 
-Tous les composants peuvent être activés dans chaque espace, par exemple vous pouvez activer trois composants Propositions dans un même processus participatif, ou avoir tous les composants
-activés dans un espace de montage.
+Toutes les fonctionnalités peuvent être activées dans chacun des espace, par exemple vous pouvez activer trois fonctionnalités Propositions dans une même concertation, ou avoir toutes les fonctionnalités
+actives dans un espace d'assemblée.
 
 include::partial$components_list.adoc[]
 
 === How to find it?
 
-To configure components, click the *Components* item in any participatory space.
+Pour configurer les fonctionnalités, cliquer sur "Fonctionnalités" dans un espace participatif.
 
 image::spaces/components/components.png[Components of space]
 
-There, you are able to manage the already added components, configure them, add new ones, etc.
+Ensuite, il est possible de gérer les fonctionnalités déjà ajoutées, les configurer et en ajouter de nouvelles, etc.
 
 == Configuration
 
 === Gérer les fonctionnalités
 
-Vous pouvez trouver tous les composants dans la liste dans le panneau d'administration, avec:
+Toutes les fonctionnalités se trouvent dans la liste dans le panneau d'administration, comprenant :
 
-* *Nom du composant* : titre du composant, donné lors de la création ou de l'édition.
-* *Type de composant* : type du composant.
-* *Portée des composants* : dans un même espace, les composants peuvent avoir des portées différentes.
+* *Nom de la fonctionnalité* : titre de la fonctionnalité, donné lors de la création ou de la modification.
+* *Type de fonctionnalité* : type de la fonctionnalité.
+* *Secteur des fonctionnalités* : dans un même espace, les fonctionnalités peuvent avoir des secteurs différents.
 
-=== Créer un composant
+=== Créer une fonctionnalité
 
-Pour configurer un nouveau composant, cliquez sur *Ajouter un composant* dans la partie supérieure droite de l'écran et sélectionnez le type de composant
-que vous souhaitez.
+Pour configurer une nouvelle fonctionnalité, cliquer sur *Ajouter une fonctionnalité* en haut à droite de l'écran et sélectionner le type de fonctionnalité souhaité.
 
 image::spaces/components/components_new_dropdown.png[Add a component in a space]
 
 === Actions
 
-.Actions des composants dans la liste des composants
+.Actions des fonctionnalités dans la liste des fonctionnalités
 [cols="10h,20h,~"]
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_edit.png[Gérer l'icône]
+|image:icons/action_edit.png[Icône Gérer]
 |Gérer
-|Gérer toutes les ressources à l'intérieur d'un composant. Par exemple, toutes les propositions d'un composant de proposition, les réunions
-dans un composant de réunion, etc.
+|Gérer toutes les ressources à l'intérieur d'une fonctionnalité. Par exemple, toutes les propositions d'une fonctionnalité de proposition, les rencontres
+dans une fonctionnalité de rencontre, etc.
 
 |image:icons/action_share.png[Icône Partager]
 |Partager
-|Partager en privé avant de publier ce composant. Utile pour obtenir des avis d'autres personnes de votre organisation.
+|Partager de manière privée avant de publier la fonctionnalité. Utile pour obtenir des avis d'autres personnes de votre organisation.
 
 |image:icons/action_configure.png[Icône Configurer]
 |Configurer
@@ -76,7 +74,7 @@ ce composant. Par exemple, dans le cas des propositions, dont la vérification e
 pour apporter un soutien.
 
 |image:icons/action_delete.png[Supprimer l'icône]
-|Supprimez
+|Supprimer
 |Supprimer ce composant. If there are content inside, most of the components don't let you delete them so it doesn't break
 relations with other resources. Dans ces cas, il est recommandé de dépublier simplement le composant.
 |===
