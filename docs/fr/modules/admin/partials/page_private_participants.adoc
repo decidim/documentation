@@ -1,85 +1,82 @@
-= Participants privés
+= Participant·e·x·s privé·e·x·s
 
 == En bref
 
-In some cases, you might want to restrict the participation to a specific group of participants.
-For instance, a space dedicated to the members of a commission in a big organization.
-For these cases you can use the private participants feature.
+Dans certains cas, il est possible de restreindre la participation à un groupe spécifique de participant·e·x·s.
+Par exemple, un espace dédié aux membres d'une commission au sein d'une grande organisation.
+Pour ce faire, il est possible d'utiliser la fonctionnalité Participant·e·x·s privé·e·x·s.
 
-NOTE: Private participants list can only be reviewed in the administration panel, and is not publicly displayed.
+NOTE: La liste des Participant·e·x·s privé·e·x·s peut être consultée uniquement dans le panneau d'administration et n'est pas affichée publiquement.
 
 === How to find it?
 
-NOTE: Private participants are only available in private spaces. To enable them, make sure you tick the "Private space" checkbox when
-creating or editing your process or assembly.
+NOTE: Les Participant·e·x·s privé·e·x·s sont atteignables uniquement dans des espaces privés. Pour les activer, s'assurer d'avoir coché la case "Espace privé" lors de la création ou de la modification de votre concertation ou de votre assemblée.
 
-To create and manage private participants, click the *Private participants* item in the left navigation bar of the space.
+Pour créer et gérer des participant·e·x·s privé·e·x·s, cliquer sur "Participant·e·x·s privé·e·x·s" dans la barre de navigation à gauche de l'espace participatif.
 
 image::spaces/private_participants.png[Private participants list]
 
-There, you are able to manage the private participants, import them in a batch, add new participants manually, etc.
+Lé, il est possible de gérer les participant·e·x·s privé·e·x·s, les importer dans un batch, ajouter des participant·e·x·s manuellement, etc.
 
 == Configuration
 
-=== Invite a private participant
+=== Inviter unx participant·e·x privé·e·x
 
-Click on the "New participatory space private user" button.
+Cliquer sur "Ajouter un utilisateur·ice privé·e·x à l'espace participatif.
 
-image:espaces/private_participants_new_form.png[Nouveau formulaire de participant privé]
+image:espaces/private_participants_new_form.png[Formulaire Ajouter unx participant·e·x privé·e·x]
 
-.Nouveau formulaire utilisateur privé d'espace participatif
+.Formulaire Ajouter unx utlisateur·ice privé·e·x à l'espace participatif
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
 
 |Nom
 |Obligatoire
-|The name of the new private participant.
+|Le nom de lae participant·e·x privé·e·x à ajouter.
 
-|Courriel
+|E-mail
 |Obligatoire
-|The email of the new private participant.
+|L'adresse mail de lae participant·e·x privé·e·x à ajouter.
 |===
 
 === Importer via CSV
 
-Click on the "Import via CSV" button.
+Cliquer sur "Importer via CSV".
 
 image::spaces/private_participants_csv_import.png[Import private participants via CSV]
 
-This form allows you to delete all private participants access at once, and to bulk import via CSV.
+Ce formulaire permet de supprimer l'accès de touxtes les participant·e·x·s privé·e·x·s en une fois, et à regrouper l'importation via CSV.
 
-The CSV must follow the following formatting:
+Le CSV doit suivre ces étapes de formattage :
 
-* The file must have two columns: emails and names of the participants you want to import.
-* Le fichier ne doit pas avoir d'en-têtes. That means that you do not have to add a row that says "email, name"
-* You must avoid using invalid chars like `<>?%&^*#@()[]=+:;"{}\|` in the name.
-* The separator between columns must be a comma (",").
+* Le fichier doit contenir deux colonnes : les emails et les noms des participant·e·x·s à exporter.
+* Le fichier ne doit pas avoir d'en-têtes. Ceci signifie qu'il n'est pas nécessaire d'ajouter une ligne qui indique "email, nom"
+* Il est important d'éviter des symboles invalides dans le nom, tels que `<>?%&^*#@()[]=+:;"{}\|`.
+* Le séparateur entre colonnes doit être une virgule (",").
 
 === Invitation
 
-NOTE: If the email is already linked to an account on the instance, the participant won't receive an invitation email, but will be added to the space.
+NOTE: Si le mail est déjà lié à un compte de l'instance, lae participant·e·x ne recevra par de mail d'invitation, mais sera ajouté·e·x à l'espace participatif.
 
-When a participant is added to the private participant list, but doesn't already have an account, they get an email
-with a link for accepting the invitation:
+Lorsqu'unx participant·e·x est ajouté·e·x à une liste de participant·e·x·s privé·e·x·s, mais n'a pas encore de compte, il leur parvient un mail contenant un lien pour accepter l'invitation :
 
 image::spaces/private_participants_email_invite.png[Email invitation of a private participant]
 
-After clicking in the "Accept invitation" link in the email, they are redirected to the instance and have to finish creating
-their account by setting their nickname, password, and accepting the Terms of Service.
+Après avoir cliqué sur le lien "Accepter invitation" dans le mail, le participant·e·x est redirigé·e·x sur l'instance pour compléter la création de son compte en ajoutant son surnom, mot de passe et en acceptant les Conditions.
 
 image::spaces/private_participants_user_registration_form.png[User registration form of a private participant]
 
-=== Manage private participants
+=== Gérer les Participant·e·x·s privé·e·x·s
 
-You can find all the private participants on the list in the administration panel, with:
+Les participant·e·x·s privé·e·x·s se trouvent dans la liste du panneau d'administration, avec :
 
-* *Name*: Name of the private participant. If the account already exists, it is automatically changed to the account username.
-* *Email*: Email of the participant.
-* *Invitation sent at*: Day and hour when the invitation email was sent (if participant doesn't already have an account).
-* *Invitation accepted at*: Day and hour when the invitation email was accepted by the participant.
+* *Nom* : Nom de lae participant·e·x privé·e·x. Si un compte existe déjà, le nom est automatiquement remplacé par le nom d'utilisateur·ice du compte.
+* *Email* : Email de lae participant·e·x.
+* *Invitation envoyé le* : Le jour et l'heure à laquelle l'invitation a été envoyée (si lae participant·e·x n'a pas déjà un compte).
+* *Invitation acceptée le* : Le jour et l'heure à laquelle le mail d'invitation a été accepté par lae participant·e·x.
 
-You can sort the list by clicking on the columns header, filter it, and search for participants by their name or email.
+Il est possible de trier la liste en cliquant sur l'en-tête des colonnes, la filtrer et chercher les participant·e·x·s par leur nom et adresse mail.
 
 === Actions
 
@@ -88,11 +85,11 @@ You can sort the list by clicking on the columns header, filter it, and search f
 |===
 |Icône |Nom |Définition
 
-|image:icons/action_resend.png[Resend invitation]
+|image:icons/action_resend.png[Renvoyer l'invitation]
 |Renvoyer l'invitation
-|If the invitation wasn't accepted, send it again.
+|Si l'invitation n'a pas été accepter, l'enoyer à nouveau.
 
 |image:icons/action_delete.png[Delete]
 |Supprimer l'invitation
-|Revoke the access granted to the participant.
+|Révoquer l'accès accordé à lae participant·e·x.
 |===
