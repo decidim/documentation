@@ -48,20 +48,20 @@ dans une fonctionnalité de rencontre, etc.
 
 |image:icons/action_share.png[Icône Partager]
 |Partager
-|Partager de manière privée avant de publier la fonctionnalité. Utile pour obtenir des avis d'autres personnes de votre organisation.
+|Partager de manière privée avant de publier la fonctionnalité. Utile pour obtenir les avis de la part d'autres personnes au sein de votre organisation.
 
 |image:icons/action_configure.png[Icône Configurer]
 |Configurer
-|Pour configurer un composant avec des règles spécifiques, par exemple, dans le cas de réunions :
-sont des commentaires activés, les participants peuvent créer des réunions ou pas, etc.
+|Pour configurer une fonctionnalité avec des règles spécifiques, par exemple, dans le cas de rencontres :
+ les commentaires dont-ils activés, les participant·e·x·s peuvent créer des rencontres ou non, etc.
 
 |[Icône de publication]
 |Publier
-|Publier un composant. Cela signifie que le composant est alors visible au public.
+|Publier une fonctionnalité. Cela signifie que la fonctionnalité est alors visible par le public.
 
 |[Dépublier l'icône]
 |Dépublier
-|Dépublier un composant. Cela signifie que le composant est alors invisible au public.
+|Dépublier une fonctionnalité. Cela signifie que la fonctionnalité n'est alors plus visible pour le public.
 
 |image:icons/action_preview.png[Icône d'aperçu]
 |Aperçu
@@ -69,12 +69,11 @@ sont des commentaires activés, les participants peuvent créer des réunions ou
 
 |image:icons/action_permissions.png[Icône Autorisations]
 |Autorisations
-|Pour configurer quel xref:customize:authorizations.adoc[Authorization] est nécessaire pour effectuer certaines actions dans
-ce composant. Par exemple, dans le cas des propositions, dont la vérification est nécessaire pour créer une nouvelle proposition ou
+|Pour configurer l'xref:customize:authorizations.adoc[Autorisation] nécessaire pour effectuer certaines actions dans
+la fonctionnalité. Par exemple, dans le cas des propositions, dont la vérification est nécessaire pour créer une nouvelle proposition ou
 pour apporter un soutien.
 
 |image:icons/action_delete.png[Supprimer l'icône]
 |Supprimer
-|Supprimer ce composant. If there are content inside, most of the components don't let you delete them so it doesn't break
-relations with other resources. Dans ces cas, il est recommandé de dépublier simplement le composant.
+|Supprimer la fonctionnalité. La plupart des fonctionnalités ne peuvent pas être supprimées si leur contenu est encore présent, afin que les relations entres les autres ressources ne soient pas brisées. Dans ces cas, il est recommandé de dépublier simplement la fcontionnalité.
 |===
