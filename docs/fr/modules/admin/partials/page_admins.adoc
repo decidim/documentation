@@ -49,7 +49,7 @@ Vous pouvez trouver touxtes les administrateur·ices dans la liste dans le panne
 
 Cliquer sur le bouton *Nouvel espace admin* (selon le type d'espace dans lequel vous êtes).
 
-image:espaces/admins_form.png[Formulaire Nouvel·le·x administrateur·ice d'espace]
+image:espaces/admins_form.png[Formulaire Nouvel·le·x admin d'espace]
 
 .Formulaire Nouvel·le·x administrateur·ice d'espace
 [cols="20h,10h,~"]
@@ -76,22 +76,22 @@ image:espaces/admins_form.png[Formulaire Nouvel·le·x administrateur·ice d'esp
 Unx administrateur·ice de l'espace peut administrer l'espace et modifier les paramètres de l'espace. Il peut également inviter de nouveaulx administrateur·ices de l'espace.
 Lors de la gestion de l'espace, iel ne voit que les vues et les onglets suivants.
 
-image:espaces/admins_role_admin01.png[Vue des administrateurs de processus 01]
+image:espaces/admins_role_admin01.png[Vue des admins de processus 01]
 
-image:espaces/admins_role_admin02.png[Vue des administrateurs de processus 02]
+image:espaces/admins_role_admin02.png[Vue des admins de processus 02]
 
 ==== Collaborateur·ices
 
 Unx collaborateur·ice de l'espace peut prévisualiser un espace avant sa publication.
 
-image:espaces/admins_role_collaborator.png[Vue des collaborateur·ices]
+image:espaces/admins_role_collaborator.png[Vue des collaborateur·ixces]
 
 ==== Modérateur·ices
 
 Unx modérateur·ice d'espace peut examiner le contenu signalé de l'espace et les masquer ou les dévoiler. Iel peut aussi
 accéder au contenu signalé dans le panneau de modération globale, mais ne verra pas le contenu signalé depuis d'autres espaces.
 
-image:espaces/admins_role_moderator.png[Vue des modérateur·ices]
+image:espaces/admins_role_moderator.png[Vue des modérateur·ixces]
 
 ==== Évaluateur·ices
 
@@ -101,4 +101,4 @@ Unx évaluateur·ice d'espace peut examiner les propositions de l'espace qui lui
 * donner une réponse aux propositions.
 * ajouter une valeur monétaire aux propositions, afin qu'elles puissent être votées avec la fonctionnalité budgétaire.
 
-image:espaces/admins_role_valuator.png[Vue des évaluateur·ices de processus]
+image:espaces/admins_role_valuator.png[Vue des évaluateur·ixces de processus]
