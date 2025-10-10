@@ -70,11 +70,11 @@ Il est possible d'exporter tous les projets de la fonctionnalité aux formats CS
 |Icône |Nom |Définition
 
 |image:icons/action_edit.png[Modifier l'icône]
-|Editer
+|Modifier
 |Modifier le budget.
 
-|[Gérer l'icône des projets]
-|[Gérer les projets]
+|image:icons/action_list.png[Gérer l'icône des projets]
+|xref:admin:components/budgets/projects.adoc[Gérer les projets]
 |Permet de gérer les projets d'un budget.
 
 |image:icons/action_preview.png[Icône d'aperçu]
@@ -82,7 +82,7 @@ Il est possible d'exporter tous les projets de la fonctionnalité aux formats CS
 |Voir le page budget dans l'interface d'utilisateur.
 
 |image:icons/action_delete.png[Supprimer l'icône]
-|Supprimez
+|Supprimer
 |Pour supprimer le budget. Seulement possible quand il n'y a aucun projet.
 |===
 
@@ -101,6 +101,6 @@ https://www.decidim. arcelona/processes/PressupostosParticipatius[2020/2021 Proc
 les gens pouvaient voter dans deux districts : celui où ils vivaient et celui de leur choix. Ceci a été défini dans la
 https://github.com/AjuntamentdeBarcelona/decidim-barcelona/blob/743be2a210e8745d2dc443166642b285aed2b356/lib/budgets_workflow_pam2021.rb[application decidim-barcelona elle-même].
 
-Plus d'informations à propos des Workflows sur [lien].
+Plus d'informations à propos des Workflows sur https://github.com/decidim/decidim/blob/1ab5cd8fdabef48f5be94ff9c30c6bb3bc9a2f8f/decidim-budgets/README.md#budget-workflows[decidim-budgets README.md].
 
 NOTE: Vous voulez seulement avoir un vote sans beaucoup de complications ? Vous aimez un vote à l'échelle de la ville? Ne vous inquiétez pas : si un seul Budget est défini, les personnes seront redirigées directement sur la liste des projets.
