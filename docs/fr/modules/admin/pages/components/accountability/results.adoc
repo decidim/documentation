@@ -2,8 +2,7 @@
 
 == En bref
 
-Les réalisations sont les entités qui constituent la fonctionnalité du suivi. They can be linked to proposals, projects, meetings, and have
-statuses, and dates assigned.
+Les réalisations sont les entités qui constituent la fonctionnalité du suivi. Elles peuvent être liées à des propositions, des projets, des rencontres et avoir des statuts ainsi que des dates qui leur sont assignées.
 
 Les administrateurs peuvent également créer des sous-réalisations, pour détailler les éléments nécessaires à une mise en oeuvre de réalisations.
 
@@ -11,7 +10,7 @@ Les administrateurs peuvent également créer des sous-réalisations, pour déta
 
 === Créer une réalisation
 
-Pour commencer, cliquer sur la fonctionnalité titre dans la barre de navigation ou dans la liste de fonctionnalités, ou cliquer sur l'icône [Icôn gérér fonctonnalité] dans la liste des fonctionnalités.
+Pour commencer, cliquer sur la fonctionnalité titre dans la barre de navigation ou dans la liste de fonctionnalités, ou cliquer sur l'image:icons/action_edit.png[Icône gérér fonctonnalité] dans la liste des fonctionnalités.
 
 image::components/accountability/new_result_button.png[New result button]
 
@@ -19,7 +18,7 @@ Ensuite, cliquez sur "Nouvelle réalisation" en haut à droite de la page.
 
 image::components/accountability/new_result.png[New result form]
 
-.Tableau nouvelle réalisation
+.Formulaire nouvelle réalisation
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -90,7 +89,7 @@ image::components/accountability/results_list_filter.png[New result button]
 |Icône |Nom |Définition
 
 |image:icons/action_edit.png[Modifier l'icône]
-|Editer
+|Modifier
 |Modifier une réalisation.
 
 |image:icons/action_plus.png[Plus icon]
@@ -123,6 +122,6 @@ image::components/accountability/results_list_filter.png[New result button]
 qui peut *Commenter* une réalisation.
 
 |image:icons/action_delete.png[Supprimer l'icône]
-|Supprimez
+|Supprimer
 |Mettre la réalisation dans la liste des réalisations supprimées.
 |===
