@@ -6,7 +6,7 @@ Le progrès représente l'état d'une réalisation en cours.
 Pour les participant·e·x·s, les progrès indiquent clairement l'état de chaque réalisation, car les progrès sont toujours affichés avec les réalisations.
 Pour les administrateur·ices, les progrès aident à garder à jour l'avancement des réalisations, puisque chaque progrès peut avoir un pourcentage d'avancement par défaut.
 
-Après la configuration des progrès, il est possible d'assigner [un progrès à une réalisation].
+Après la configuration des progrès, il est possible d'assigner xref:admin:components/accountability/results.adoc[un progrès à une réalisation].
 Une fois le progrès d'une réalisation mis à jour, son avancement est automatiquement défini par défaut sur l'état défini dans le progrès.
 
 La mise à jour du progrès d'une réalisation ne mettra pas à jour l'historique de la réalisation, mais peut [envoyer des notifications].
@@ -32,7 +32,7 @@ Cliquer "Nouveau statut" pour commencer à créer des progrès.
 
 |Clé
 |Obligatoire
-|Utilisé comme identifiant unique pour [import CSV].
+|Utilisé comme identifiant unique pour xref:admin:components/accountability/import.adoc[import CSV].
 
 |Nom
 |Obligatoire
