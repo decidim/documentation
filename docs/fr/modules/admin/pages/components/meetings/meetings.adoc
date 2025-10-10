@@ -74,7 +74,7 @@ Seuls quelques services permettent l'intégration (YouTube, Twitch, Jitsi, ...)
 |Type d'inscription
 |Obligatoire
 |Choisissez une option entre "Inscription désactivée" pour aucune inscription, "Sur cette plateforme" pour afficher un bouton d'enregistrement lié à
-[inscriptions] ou "Sur une plateforme différente" si la gestion de la réunion se fait sur un autre service.
+xref:admin:components/meetings/registrations.adoc[inscriptions] ou "Sur une plateforme différente" si la gestion de la réunion se fait sur un autre service.
 
 |URL d'enregistrement
 |Requis si l'inscription sur une plateforme différente
@@ -82,7 +82,7 @@ Seuls quelques services permettent l'intégration (YouTube, Twitch, Jitsi, ...)
 
 |Réunion privée
 |Facultatif
-|Vérifier si la réunion ne devrait pas être visible pour tous les visiteurs. Ceci n'est disponible que pour les réunions officielles.
+|Vérifier si la réunion ne devrait pas être visible pour touxtes les visiteur·euses. Ceci n'est disponible que pour les réunions officielles.
 
 |Transparence
 |Facultatif
@@ -125,7 +125,7 @@ Des *Services* pour une réunion peuvent être définis. Ce sont des méta-donn�
 |Icône |Nom |Définition
 
 |image:icons/action_edit.png[Modifier l'icône]
-|Editer
+|Modifier
 |Modifier une réunion.
 
 |[Icône dupliquer]
@@ -174,7 +174,7 @@ Des *Services* pour une réunion peuvent être définis. Ce sont des méta-donn�
 qui peut *rejoindre* une réunion.
 
 |image:icons/action_delete.png[Supprimer l'icône]
-|Supprimez
+|Supprimer
 |Supprimer cette réunion.
 |===
 
@@ -248,7 +248,7 @@ ouvrir les réunions dans un nouvel onglet. Seuls quelques services permettent l
 |Type d'inscription
 |Obligatoire
 |Choisissez une option entre "Inscription désactivée" pour aucune inscription, "Sur cette plateforme" pour afficher un bouton d'enregistrement lié à
-[inscriptions] ou "Sur une plateforme différente" si la gestion de la réunion se fait sur un autre service.
+xref:admin:components/meetings/registrations.adoc[inscriptions] ou "Sur une plateforme différente" si la gestion de la réunion se fait sur un autre service.
 
 |Emplacements disponibles pour cette réunion
 |Requis si l'inscription se fait sur cette plateforme
@@ -267,7 +267,7 @@ ouvrir les réunions dans un nouvel onglet. Seuls quelques services permettent l
 |Avec quelle identité cette réunion est créée, lae participant·e·x ou le groupe d'utilisateur·ices.
 |===
 
-Après avoir créé la réunion, les participant·e·x·s peuvent également éditer et xref:components/meetings/close.adoc[close] le.
+Après avoir créé la réunion, les participant·e·x·s peuvent également modifier et xref:components/meetings/close.adoc[fermer].
 
 ==== Actions
 
@@ -293,7 +293,7 @@ Si l'"URL de la réunion en ligne" n'est pas encore défini, un message indiquan
 
 image::components/meetings/online_meeting_available_soon.png[Online meeting available soon]
 
-Si l'"URL de la réunion en ligne" est défini, quelques minutes avant le début de la réunion, le message dit « "Le lien pour rejoindre
+Si l'"URL de la réunion en ligne" est défini, quelques minutes avant le début de la réunion, le message dit « Le lien pour rejoindre
 la réunion sera disponible quelques minutes avant le début »
 
 image::components/meetings/online_meeting_available_before.png[Online meeting available before it starts]
