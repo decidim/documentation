@@ -29,15 +29,15 @@ image::components/accountability/import.png[Import results from CSV form]
 
 ==== Importer à partir d'une fonctionnalité
 
-Vous pouvez importer les réalisations directement depuis une fonctionnalité [Budget] du même espace participatif, et choisir d'importer tous les projets dans les réalisations ou seulement celle sélectionnés pour la mise en œuvre.
+Vous pouvez importer les réalisations directement depuis une fonctionnalité xref:admin:components/budgets.adoc[Budget] du même espace participatif, et choisir d'importer tous les projets dans les réalisations ou seulement celle sélectionnés pour la mise en œuvre.
 
-image:components/accountability/import_component.png[Import results from CSV form]
+image:components/accountability/import_component.png[Importer les réalisations à partir d'un formulaire CSV]
 
 ==== Importer à partir d'un CSV
 
 Vous pouvez aussi importer des réalisations à partir d'un fichier CSV.
 
-image:components/accountability/import_csv.png[Import results from CSV form]
+image:components/accountability/import_csv.png[Importer les réalisations à partir d'un formulaire CSV]
 
 Pour ce faire, suivre ces étapes :
 
