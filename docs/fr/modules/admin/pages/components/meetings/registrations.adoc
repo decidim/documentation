@@ -15,9 +15,9 @@ image::components/meetings/registrations/frontend_join_meeting.png[Join a meetin
 Selon la façon dont cette fonctionnalité est configurée, les administrateur·ices peuvent :
 
 . définir le nombre de créneaux disponibles pour contrôler la capacité maximale de cette réunion
-. créer un [formulaire d'inscription personnalisé] pour demander des informations aux participant·e·x·s
+. créer un xref:_registration_form[formulaire d'inscription personnalisé] pour demander des informations aux participant·e·x·s
 . envoyer des [invitations] à d'autres participants ou personnes non enregistrées sur la plateforme
-. contrôler la présence à la réunion via [codes d'inscription]
+. contrôler la présence à la réunion via xref:_registration_code[codes d'inscription].
 
 == Configuration
 
@@ -32,7 +32,7 @@ image::components/meetings/registrations/frontend_confirm.png[Join a meeting con
 
 === Gérer les inscriptions
 
-Une fois les inscriptions activées "Sur cette plateforme" lore de la création d'une réunion, il est possible de gérer les inscriptions vis l'icône Inscriptions [Icône inscriptions].
+Une fois les inscriptions activées "Sur cette plateforme" lore de la création d'une réunion, il est possible de gérer les inscriptions vis image:icons/action_registrations.png[Icône inscriptions].
 
 image:components/meetings/registrations/backend.png[Paramètres des inscriptions dans une réunion]
 
@@ -90,7 +90,7 @@ Vous pouvez exporte les enregistrements dans plusieurs formats : CSV, JSON et Ex
 Les données exportées contiennent ces champs :
 
 * id : l'identifiant d'enregistrement
-* code: le xref:_registration_code[code d'inscription] (si cette fonctionnalité est activée)
+* code : le xref:_registration_code[code d'inscription] (si cette fonctionnalité est activée)
 * utilisateur/nom : le nom de l'utilisateur·ice
 * utilisateur/email: l'email de l'utilisateur·ice
 * user/user_group: le groupe de l'utilisateur·ice s'iel à sélection l'option de représenter le groupe lors de l'inscription
@@ -108,7 +108,7 @@ Cette fonctionnalité permet de vérifier si unx participant·e·x est bien insc
 
 Après l’inscription, lae participant·e·x reçoit un code d’inscription dans l’e-mail de confirmation et sur la page de la réunion.
 
-image : [Code d'enregistrement dans une interface de réunion]
+image:components/meetings/registrations/frontend_w_code.png[Code d'enregistrement dans une interface de réunion].
 
 La validation du code est en attente. Cela signifie que lors de la participation à une réunion, lae participant·e·x doit donner le code à unx organisateur·ice
 pour le valider.
