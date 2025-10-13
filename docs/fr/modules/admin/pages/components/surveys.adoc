@@ -5,7 +5,7 @@
 La fonctionnalité Enquête permet aux participant·e·x·s de répondre à des questionnaires. Ceci est utile lorsqu'une organisation souhaite recevoir des retours privés
 de la part des participant·e·x·s. Il permet de définir un ensemble de questions avec plusieurs types de réponses.
 
-NOTE: Une fois l'enquête complétée par participants, il n'est pas possible de modifier ses questions, car cela affecterait l'intégrité
+NOTE: Une fois l'enquête complétée par les participant·e·x·s, il n'est pas possible de modifier les questions, car cela affecterait l'intégrité
 des réponses. Pour modifier les questions, il faut créer une nouvelle enquête et supprimer la version originale.
 
 image::components/surveys/example01.png[Example of a survey]
@@ -25,7 +25,7 @@ Ensuite :
 . Sélectionnez "Enquête"
 . Remplir le formulaire de création de fonctionnalité
 
-Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur [Icône Configurer] dans la liste des fonctionnalités.
+Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur image:icons/action_configure.png[Icône Configurer] dans la liste des fonctionnalités.
 
 image::components/surveys/component.png[Add component form]
 
@@ -84,7 +84,7 @@ alors "Fonctionnalité b" est placée avant dans le listage.
 |Facultatif
 |Cocher cette case pour recevoir des réponses de cette enquête pour cette étape.
 
-|Autoriser les utilisateur·ices non enregistrés à répondre à l'enquête
+|Autoriser les utilisateur·ices non enregistré·e·x·s à répondre à l'enquête
 |Facultatif
 |Si activé, aucune connexion n'est requise pour répondre à l'enquête. Cela peut entraîner des données de mauvaise qualité ou peu fiables et vous rendre plus vulnérable aux
 attaques automatisées. À utiliser avec prudence. N'oubliez pas que cette option ne permet qu'une réponse par session du navigateur,
@@ -188,7 +188,7 @@ image::components/surveys/question_form_frontend.png[]
 |Option simple
 |image:components/surveys/type_single_option_frontend.png[Type d'option simple - frontend,link=../_images/components/surveys/type_single_option_frontend.png]
 |image:components/surveys/type_single_option_backend.png[Type d'option unique - backend,link=../_images/components/surveys/type_single_option_backend.png]
-|Les participants doivent choisir une seule option, avec des boutons radio. Ajoutez au moins 2 options de réponse.
+|Les participant·e·x·s doivent choisir une seule option, avec des boutons radio. Ajoutez au moins 2 options de réponse.
 Il est possible de définir une option "Texte libre" pour que les participant·e·x·s soumettent leur propre réponse.
 
 |Options multiples
