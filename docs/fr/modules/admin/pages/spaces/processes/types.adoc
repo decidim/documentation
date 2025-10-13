@@ -6,7 +6,7 @@ Dans certains cas, il est nécessaire d'organiser des concertations par plus que
 C'est là que les types de concertation peuvent être utiles, et ajouter un niveau de catégorisation.
 Les participant·e·x·s sont alors en mesure de filtrer les concertations par les types de concertation que vous avez créés.
 
-NOTE: Les types de concertation fonctionnent de la même façon que lesxref:admin:spaces/assemblies.adoc#_assemblies_types[Types d'assemblée].
+NOTE: Les types de concertation fonctionnent de la même façon que les xref:admin:spaces/assemblies.adoc#_assemblies_types[Types d'assemblée].
 
 == Configuration
 
@@ -41,6 +41,6 @@ image::spaces/processes/process_types_edit_process.png[Choose a process type whe
 === Filtrer par types de concertation
 
 S'il y a au moins un type de concertation défini et lié à une concertation, un filtre est affiché à gauche de la liste des concertations
-dans l'interface participant·e·x·, permettant le filtrage des concertations.
+dans l'interface participant·e·x, permettant le filtrage des concertations.
 
 image::spaces/processes/process_types_filter.png[Process types filter in the processes index]
