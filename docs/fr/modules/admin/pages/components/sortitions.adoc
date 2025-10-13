@@ -24,7 +24,7 @@ Ensuite :
 . Sélectionnez "Tirages au sort"
 . Remplir le formulaire de création de fonctionnalité
 
-Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur [Icône Configurer] dans la liste des fonctionnalités.
+Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur image:icons/action_configure.png[Icône Configurer] dans la liste des fonctionnalités.
 
 image::components/sortitions/component.png[Add component form]
 
@@ -55,7 +55,7 @@ alors "Fonctionnalité b" est placée avant dans le listage.
 
 |Longueur maximale des commentaires
 |Facultatif
-|La limite de caractères que les participants ont lors de la rédaction de commentaires. Laisser 0 pour la valeur par défaut.
+|La limite de caractères que les participant·e·x·s ont lors de la rédaction de commentaires. Laisser 0 pour la valeur par défaut.
 |===
 
 === Créer un tirage au sort
@@ -98,8 +98,7 @@ image::components/sortitions/new_sortition_backend.png[New sortition backend for
 
 === Gérer les tirages
 
-Pour commencer à créer et à gérer des partitions, cliquez dans le titre du composant dans la barre de navigation ou dans la liste des fonctionnalités, ou cliquez dans l'image
-: icons/action_edit.
+Pour commencer à créer et à gérer des partitions, cliquez dans le titre du composant dans la barre de navigation ou dans la liste des fonctionnalités, ou cliquez sur image:icons/action_edit.png[Icône gérer la fonctionnalité].
 
 image::components/sortitions/manage_sortitions.png[Manage sortitions table]
 
@@ -117,7 +116,7 @@ Sur la liste des tirages au sort dans le panneau d'administration, les administr
 |Icône |Nom |Définition
 
 |image:icons/action_edit.png[Modifier l'icône]
-|Editer
+|Modifier
 |Modifier le formulaire pour un tirage au sort.
 
 |image:icons/action_preview.png[Icône d'aperçu]
@@ -129,6 +128,6 @@ Sur la liste des tirages au sort dans le panneau d'administration, les administr
 |Pour gérer les autorisations nécessaires pour commenter les tirages.
 
 |image:icons/action_delete.png[Supprimer l'icône]
-|Supprimez
+|Supprimer
 |Supprimer ce débat.
 |===
