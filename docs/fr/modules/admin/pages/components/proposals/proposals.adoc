@@ -38,7 +38,7 @@ par défaut, mais il peut être modifié avec le paramètre "Longueur maximale d
 
 |Hashtags suggérés
 |Facultatif
-|Si les [hashtags] ont été configurés, les participant·e·x·s peuvent sélectionner ceux liés à leur proposition.
+|Si les xref:admin:features/social_features/hashtags.adoc[hashtags] ont été configurés, les participant·e·x·s peuvent sélectionner ceux liés à leur proposition.
 
 |Cette proposition provient d'une réunion
 |Facultatif
@@ -47,7 +47,7 @@ par défaut, mais il peut être modifié avec le paramètre "Longueur maximale d
 |Sélectionnez une réunion
 |Obligatoire
 |Sélecteur de liste déroulante avec toutes les réunions de cet espace participatif. Champ affiché si la case à cocher "Cette proposition provient d'une réunion" est cochée.
-L'auteur de la proposition devient la réunion.
+L'auteur·ice de la proposition devient la réunion.
 
 |Adresses
 |Facultatif
@@ -92,7 +92,7 @@ par défaut, mais il peut être modifié avec le paramètre "Longueur maximale d
 
 |Hashtags suggérés
 |Facultatif
-|Si les [hashtags] ont été configurés, les participant·e·x·s peuvent sélectionner ceux liés à leur proposition.
+|Si les xref:admin:features/social_features/hashtags.adoc[hashtags] ont été configurés, les participant·e·x·s peuvent sélectionner ceux liés à leur proposition.
 
 |Adresses
 |Facultatif
@@ -149,7 +149,7 @@ Il est également possible de rechercher des propositions titre ou par ID dans l
 |Icône |Nom |Définition
 
 |image:icons/action_edit.png[Modifier l'icône]
-|Editer
+|Modifier
 |Modifier le formulaire, uniquement pour les [Propositions officielles].
 
 |image:icons/action_answers.png[Icône de proposition de réponse]
