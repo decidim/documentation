@@ -84,7 +84,7 @@ Les options disponibles sont :
 ** Je veux recevoir des newsletters
 * Recevoir des messages directs de n'importe qui
 ** Permettre à n'importe qui de m'envoyer un message direct, même si je ne les suit pas
-* Administrateurs
+* Administrateur·ices
 ** Je souhaite recevoir un email chaque fois qu'une personne ou une entité est signalée comme modératrice.
 ** Je souhaite recevoir des rappels par e-mail pour les comptes-rendus de rencontres clôturées qui n'ont pas encore été publiés
 * Notifications "push"
@@ -120,7 +120,7 @@ En savoir plus sur la configuration des groupes dans xref:admin:participants/gro
 
 Dans cette section, les participant·e·x·s peuvent choisir les intérêts sur lesquels ils doivent recevoir plus de renseignements.
 
-Par défaut, ce qui s'affiche ici est une liste de tous les xref:admin:settings/scopes.adoc[Scopes] de l'organisation. Cette sélection
+Par défaut, ce qui s'affiche ici est une liste de tous les xref:admin:settings/scopes.adoc[Secteurs] de l'organisation. Cette sélection
 peut être utilisée par les administrateur·ices lors de la segmentation pour les xref:admin:features/social_features/newsletters.adoc[Newsletters].
 
 image::features/my_account/my_interests.png[My interests]
@@ -167,4 +167,4 @@ image:features/my_account/delete_my_account_confirm.png[Confirmer la suppression
 Une le compte supprimé, les contrubutions (telles que les commentaires, les propositions, etc) sont toujours visibles mais toutes les informations sont anonymisées,
 et transférées à unx auteur·ice "Participant·e·x supprimé·e·x".
 
-image:features/my_account/delete_my_account_deleted.png[Contribution des participants supprimés]
+image:features/my_account/delete_my_account_deleted.png[Contribution des participant·e·x·s supprimé·e·x·s]
