@@ -76,7 +76,7 @@ Ce formulaire dépend de beaucoup de paramètres activés dans la fonctionnalit�
 
 image::components/proposals/new_proposal_frontend.png[New proposal form - Create]
 
-.Formulaire de proposition de nouveaux participants - Étape de création
+.Formulaire de proposition de nouveaux participant·e·x·s - Étape de création
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -129,14 +129,14 @@ Une fois qu'il y a plusieurs propositions dans le processus, les administrateur�
 
 image::components/proposals/manage_proposals.png[Manage proposals table]
 
-Sur la liste des propositions dans le panneau d'administration, les administrateurs peuvent voir :
+Sur la liste des propositions dans le panneau d'administration, les administrateur·ices peuvent voir :
 
 * *Titre* : Titre de la proposition.
 * *Publié à* : Date de publication de la proposition.
 * *Commentaires* : Le nombre de commentaires que contient cette proposition.
 * *Notes* : Le nombre de votes que cette proposition possède.
 * *Évaluateur·ices* : Le nombre d'évaluateur·ices pour cette proposition.
-* *Statut* : Le statut de [réponse] de cette proposition.
+* *Statut* : Le statut de xref:admin:components/proposals/answers.adoc[réponse] de cette proposition.
 
 Il est possible de filtrer et trier cette liste en cliquant sur "Filtrer" et sur les en-têtes des colonnes.
 Il est également possible de rechercher des propositions titre ou par ID dans la barre de recherche.
@@ -150,7 +150,7 @@ Il est également possible de rechercher des propositions titre ou par ID dans l
 
 |image:icons/action_edit.png[Modifier l'icône]
 |Modifier
-|Modifier le formulaire, uniquement pour les [Propositions officielles].
+|Modifier le formulaire, uniquement pour les xref:_official_proposals[Propositions officielles].
 
 |image:icons/action_answers.png[Icône de proposition de réponse]
 |xref:components/propositions/answers.adoc[Répondre à la proposition]
