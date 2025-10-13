@@ -29,7 +29,7 @@ Ensuite :
 . Sélectionner "Propositions"
 . Remplir le formulaire de création de fonctionnalité
 
-Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur [Icône Configurer] dans la liste des fonctionnalités.
+Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur image:icons/action_configure.png[Icône Configurer] dans la liste des fonctionnalités.
 
 Le formulaire de création de fonctionnalité est divisé en différentes sections détaillées ci-dessous.
 
@@ -68,7 +68,7 @@ image::components/proposals/component_02.png[Add component form]
 
 |Secteur
 |Facultatif
-|Cette fonctionnalité appartient à [Objectif].
+|Cette fonctionnalité appartient à xref:admin:settings/scopes.adoc[Secteur].
 
 |Limite de votes par utilisateur·ice
 |Facultatif
@@ -122,7 +122,7 @@ Si la modification est permise dans un laps de temps défini, alors, il est imp�
 
 |Longueur maximale des commentaires
 |Facultatif
-|La limite de caractères que les participants ont lors de la rédaction de commentaires. Laisser 0 pour la valeur par défaut.
+|La limite de caractères que les participant·e·x·s ont lors de la rédaction de commentaires. Laisser 0 pour la valeur par défaut.
 
 |Géocodage activé
 |Facultatif
@@ -161,7 +161,7 @@ Si activé, configurer les paramètres d'Amendement pour chaque étape.
 
 |Nouveau modèle du corps de la proposition
 |Facultatif
-|Un texte prédéfini utilisé lors de la création de nouvelles propositions. Utile si vous voulez définir un format que les participants ont besoin de
+|Un texte prédéfini utilisé lors de la création de nouvelles propositions. Utile si vous voulez définir un format que les participant·e·x·s ont besoin de
 suivre lors de la création de nouvelles propositions.
 
 |Texte d'aide pour la nouvelle proposition
@@ -220,8 +220,8 @@ image::components/proposals/component_03.png[Add component form]
 
 |Publier les réponses de la proposition immédiatement
 |Facultatif
-|Si vous voulez que les réponses des propositions soient publiées directement lorsque les administrateur·ices sont
-xref:components/propositions/réponses.
+|Si vous voulez que les réponses des propositions soient publiées directement lorsque les administrateur·ices y
+xref:components/propositions/réponses[répondent] ou si vous voulez contrôler le moment de publier les réponses.
 
 |Activer les coûts sur les réponses aux propositions
 |Facultatif
