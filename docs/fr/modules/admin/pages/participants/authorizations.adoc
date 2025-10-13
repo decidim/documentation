@@ -18,7 +18,7 @@ Pour activer une autorisation, vous devez avoir accès à xref:configure:system.
 Pour mieux comprendre ce que sont les autorisations et comment les configurer, veuillez vous référer à la section
 xref:customize:authorizations.adoc[Autorisations dans le Guide de Personnalisation].
 
-Les participant·e·x·s peuvent accéder, mettre à jour ou supprimer leurs autorisations dans leur xref:admin:features/participant_actions/my_account.adoc[account].
+Les participant·e·x·s peuvent accéder, mettre à jour ou supprimer leurs autorisations dans leur xref:admin:features/participant_actions/my_account.adoc[compte].
 
 === Méthodes de vérification
 
@@ -28,7 +28,7 @@ Certaines des autorisations disponibles par défaut sont :
 * xref:admin:participants/authorizations/code_postal_letter.adoc[Code par lettre postale]
 * xref:admin:participants/authorizations/census.adoc[Recensement de l'organisation]
 
-Si l'une de ces autorisations n'est pas utile pour vos besoins, parlez-en avec votre fournisseur·euse pour trouver d'autres alternatives. Plus d'informations sur xref:customize:authorizations.adoc[Authorizations in the Customize Guide section].
+Si l'une de ces autorisations n'est pas utile pour vos besoins, parlez-en avec votre fournisseur·euse pour trouver d'autres alternatives. Plus d'informations sur xref:customize:authorizations.adoc[Autorisations dans la section du guide personnalisé].
 
 === Révocation des autorisations
 
@@ -44,4 +44,4 @@ Ensuite, unx administrateur·ice peut vouloir forcer les participant·e·x·s à
 image:participants/authorizations_admin_revocation.png[Révocation des autorisations]
 
 Il est possible de révoquer toutes les autorisations avec "Révoquer tout" ou de ne révoquer que les autorisations créées avant une date donnée.
-Une autre possibilité est de ne révoquer que les vérifications pour xref:admin:participants/impersonations.adoc[participants].
+Une autre possibilité est de ne révoquer que les vérifications pour xref:admin:participants/impersonations.adoc[participant·e·x·s].
