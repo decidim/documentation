@@ -18,14 +18,14 @@ Dans cette section de documentation, vous pouvez trouver comment configurer et g
 
 * xref:admin:components/accountability/results.adoc[Réalisations]
 * xref:admin:components/Accounability/statuses.adoc[Statuses]
-* [Étapes]
+* xref:admin:components/accountability/milestone.adoc[Étapes]
 * xref:admin:components/Accounability/import.adoc[Importer et exporter les résultats]
 
 == Configuration
 
 === Créer une fonctionnalité de suivi
 
-Pour créer une fonctionnalité de suivi, aller d'abord dans [espace participatif] à l'endroit de création souhaité.
+Pour créer une fonctionnalité de suivi, aller d'abord dans xref:admin:spaces.adoc[espace participatif] à l'endroit de création souhaité.
 
 image::components/accountability/component_accountability.png[Add accountability component button]
 
@@ -63,11 +63,11 @@ alors "Fonctionnalité b" est placée avant dans le listage.
 
 |Portées activées
 |Facultatif
-|Cocher cette case pour que le filtrage [Objectifs] soit disponible dans cette fonctionnalité.
+|Cocher cette case pour que le filtrage xref:admin:settings/scopes.adoc[Secteurs] soit disponible dans cette fonctionnalité.
 
 |Secteur
 |Facultatif
-|Cette fonctionnalité appartient à [Objectif].
+|Cette fonctionnalité appartient à xref:admin:settings/scopes.adoc[Secteur].
 
 |Commentaires activés
 |Facultatif
@@ -75,7 +75,7 @@ alors "Fonctionnalité b" est placée avant dans le listage.
 
 |Longueur maximale des commentaires
 |Facultatif
-|La limite de caractères que les participants ont lors de la rédaction de commentaires. Laisser 0 pour la valeur par défaut.
+|La limite de caractères que les participant·e·x·s ont lors de la rédaction de commentaires. Laisser 0 pour la valeur par défaut.
 
 |Intro
 |Facultatif
