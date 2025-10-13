@@ -4,7 +4,7 @@ include::partial$deprecated.adoc[]
 
 Les Périmètres d'assemblée sont tous les secteurs qu'une organisation peut avoir.
 
-Les Périmètres d'assemblée sont similaires aux xref:admin:settings/scopes.adoc[escteurs], c'est à dire qu'ils sont un moyen de permettre une meilleure navigation et un filtrage dans les espaces participatifs et les fonctionnalités.
+Les Périmètres d'assemblée sont similaires aux xref:admin:settings/scopes.adoc[secteurs], c'est à dire qu'ils sont un moyen de permettre une meilleure navigation et un filtrage dans les espaces participatifs et les fonctionnalités.
 
 Vous pouvez lire plus d'informations sur l'historique des Périmètres d'assemblée dans
 ce https://github.com/decidim/decidim/issues/3540#issuecomment-427324532[Commentaires GitHub].
