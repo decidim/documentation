@@ -22,7 +22,7 @@ Ensuite :
 . Sélectionnez "Débat"
 . Remplir le formulaire de création de fonctionnalité
 
-Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur [Icône Configurer] dans la liste des fonctionnalités.
+Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur image:icons/action_configure.png[Icône Configurer] dans la liste des fonctionnalités.
 
 image::components/debates/component.png[Add component form]
 
@@ -61,7 +61,7 @@ alors "Fonctionnalité b" est placée avant dans le listage.
 
 |Longueur maximale des commentaires
 |Facultatif
-|La limite de caractères que les participants ont lors de la rédaction de commentaires. Laisser 0 pour la valeur par défaut.
+|La limite de caractères que les participant·e·x·s ont lors de la rédaction de commentaires. Laisser 0 pour la valeur par défaut.
 
 |Annonce
 |Facultatif
@@ -143,8 +143,7 @@ il n'y a pas de plage horaire.
 
 === Gérer les débats
 
-Pour commencer à créer et à gérer des débats, cliquez dans le titre de la fonctionnalité dans la barre de navigation ou dans la liste des fonctionnalités, ou cliquez dans l'image
-: icons/action_edit.
+Pour commencer à créer et à gérer des débats, cliquez dans le titre de la fonctionnalité dans la barre de navigation ou dans la liste des fonctionnalités, ou cliquez sur image:icons/action_edit.png[Icône gérer la fonctionnalité].
 
 image::components/debates/manage_debates.png[Manage debates table]
 
@@ -178,7 +177,7 @@ NOTE: Lorsque les participant·e·x·s peuvent créer des débats, les administr
 |Icône |Nom |Définition
 
 |image:icons/action_edit.png[Modifier l'icône]
-|Editer
+|Modifier
 |Modifier le formulaire pour un débat.
 
 |image:icons/action_close.png[Icône fermée]
@@ -194,7 +193,7 @@ NOTE: Lorsque les participant·e·x·s peuvent créer des débats, les administr
 |Pour gérer les autorisations nécessaires à la création ou la validation de débats.
 
 |image:icons/action_delete.png[Supprimer l'icône]
-|Supprimez
+|Supprimer
 |Supprimer ce débat.
 |===
 
