@@ -2,7 +2,7 @@
 
 == En bref
 
-La fonctionnalité Actualité permet aux administrateur·ices de publier des nouvelles à propos d'un espace participatif, que les participant·e·x·s peuvent lire pour obtenir des mises à jour.
+La fonctionnalité Actualités permet aux administrateur·ices de publier des nouvelles à propos d'un espace participatif, que les participant·e·x·s peuvent lire pour obtenir des mises à jour.
 
 image::components/blog/example01.png[Example of blog posts list]
 
@@ -14,7 +14,7 @@ image::components/blog/example02.png[Example of a blog post]
 
 === Créer une fonctionnalité d'actualité
 
-Pour créer une fonctionnalité d'actualité, aller d'abord dans [espace participatif] à l'endroit de création souhaité.
+Pour créer une fonctionnalité d'actualité, aller d'abord dans xref:admin:spaces.adoc[espace participatif] à l'endroit de création souhaité.
 
 image::components/blog/component_blog.png[Add Blog component button]
 
@@ -25,7 +25,7 @@ Ensuite :
 . Sélectionner "Actualité"
 . Remplir le formulaire de création de fonctionnalité
 
-Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur l’icône [Icône Configurer] dans la liste des fonctionnalités.
+Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur l’icône image:icons/action_configure.png[Icône Configurer] dans la liste des fonctionnalités.
 
 image::components/blog/component.png[Add component form]
 
@@ -58,7 +58,7 @@ image::components/blog/component.png[Add component form]
 
 |Longueur maximale des commentaires
 |Facultatif
-|La limite de caractères que les participants ont lors de la rédaction de commentaires. Laisser 0 pour la valeur par défaut.
+|La limite de caractères que les participant·e·x·s ont lors de la rédaction de commentaires. Laisser 0 pour la valeur par défaut.
 |===
 
 .Définition des paramètres
@@ -85,7 +85,7 @@ image::components/blog/component.png[Add component form]
 
 === Gérer les messages
 
-Pour créer et à gérer des messages, cliquer sur le titre de la fonctionnalité dans la barre de navigation ou dans la liste des fonctionnalités, ou cliquer sur [Icône Gérer la fonctionnalité] dans la liste des fonctionnalités.
+Pour créer et à gérer des messages, cliquer sur le titre de la fonctionnalité dans la barre de navigation ou dans la liste des fonctionnalités, ou cliquer sur image:icons/action_edit.png[Icône Gérer la fonctionnalité] dans la liste des fonctionnalités.
 
 image:components/blog/manage_posts.png[Gérer la table des posts]
 
@@ -95,7 +95,7 @@ Pour créer un message, cliquer sur "Nouveau post" en haut à droite de la page.
 
 image:components/blog/new_post.png[Formulaire du nouveau post]
 
-.Formulaire de création d'article d'actualités
+.Formulaire de création d'article d'actualité
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -125,7 +125,7 @@ image:components/blog/new_post.png[Formulaire du nouveau post]
 |Icône |Nom |Définition
 
 |image:icons/action_edit.png[Modifier l'icône]
-|Editer
+|Modifier
 |Modifier ce post.
 
 |image:icons/action_folder.png[Icône du dossier]
@@ -145,7 +145,7 @@ image:components/blog/new_post.png[Formulaire du nouveau post]
 |Gérer les autorisations nécessaires pour commenter ou valider ce post spécifique.
 
 |image:icons/action_delete.png[Supprimer l'icône]
-|Supprimez
+|Supprimer
 |Supprimer ce post.
 |===
 
