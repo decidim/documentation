@@ -2,9 +2,9 @@
 
 == En bref
 
-Le composant Squelette permet à des personnes de XXX
+La fonctionnalité Squelette permet à des personnes de XXX
 
-À partir de ce point de départ, il pourrait y avoir d'autres configurations, telles que:
+À partir de ce point de départ, il pourrait y avoir d'autres configurations, telles que :
 
 *
 
@@ -17,7 +17,7 @@ image:components/skeleton/example04.png[]
 
 == Configuration
 
-Pour créer une fonctionnalité d'actualité, aller d'abord dans [espace participatif] à l'endroit de création souhaité.
+Pour créer une fonctionnalité d'actualité, aller d'abord dans xref:admin:spaces.adoc[espace participatif] à l'endroit de création souhaité.
 
 image::components/skeleton/component_skeleton.png[Add component button]
 
@@ -37,7 +37,7 @@ image:components/skeleton/component.png[Ajouter un formulaire de composant]
 
 |Nom
 |Obligatoire
-|Quel est le titre de cette fonctionnalité. Par exemple, "Skeletons"
+|Quel est le titre de cette fonctionnalité. Par exemple, "Squelettes"
 
 |Rang d'affichage
 |Facultatif
@@ -55,7 +55,7 @@ image:components/skeleton/component.png[Ajouter un formulaire de composant]
 
 |Secteur
 |Facultatif
-|Cette fonctionnalité appartient à [Objectif].
+|Cette fonctionnalité appartient à xref:admin:settings/scopes.adoc[Secteur].
 
 |Portée générale
 |Facultatif
@@ -140,16 +140,16 @@ image:components/skeleton/new_skeleton.png[Nouveau formulaire de squelette]
 |Aperçu
 |Pour voir comment il est montré dans le frontend aux participants.
 
-|[Gérer l'icône des projets]
+|image:icons/action_list.png[Gérer l'icône des projets]
 |xref:_manage_projects[Gérer les projets]
 |Vous permet de gérer les projets d'un squelette.
 
 |image:icons/action_edit.png[Modifier l'icône]
-|Editer
+|Modifier
 |Modifier le formulaire pour un squelette.
 
 |image:icons/action_delete.png[Supprimer l'icône]
-|Supprimez
+|Supprimer
 |Supprimer ce squelette. Peut être fait unquement quand il n'y a pas de projets dans ce budget.
 |===
 
