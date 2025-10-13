@@ -4,7 +4,7 @@
 
 La fonctionnalité Page permet aux participant·e·x·s d'avoir plus d'information sur un espace. Les administrateur·ices peuvent remplir une page avec des informations, des images, des liens, afin d'informer et mettre à jour les participant·e·x·s.
 
-doc[Pages], la principale différence étant que cette fonctionnalité permet de définir des pages à l'intérieur de
+Similaire à xref:admin:pages.adoc[Pages], la principale différence étant que cette fonctionnalité permet de définir des pages à l'intérieur de
 un espace participatif, et non dans la section Aide.
 
 image::components/page/example01.png[Example of a page component in a participatory process]
@@ -13,7 +13,7 @@ image::components/page/example01.png[Example of a page component in a participat
 
 === Créer une fonctionnalité de page
 
-Pour créer une fonctionnalité Page, allezrd'abord dans xref:admin:spaces.adoc[espace participatif] à l'endroit de création souhaité.
+Pour créer une fonctionnalité Page, aller d'abord dans xref:admin:spaces.adoc[espace participatif] à l'endroit de création souhaité.
 
 image::components/page/component_page.png[Add Page component button]
 
@@ -21,7 +21,7 @@ Ensuite :
 
 . Cliquer sur l'élément "Fonctionnalités" dans le menu secondaire
 . Cliquer sur "Ajouter une fonctionnalité"
-. Sélectionnez "Page"
+. Sélectionner "Page"
 . Remplir le formulaire de création de fonctionnalité
 
 Il est toujours possible de mettre à jour ce formulaire et la configuration après avoir créé la fonctionnalité, en cliquant sur l’icône
