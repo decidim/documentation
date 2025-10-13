@@ -36,11 +36,11 @@ image::components/proposals/answers/proposal_answer_notes.png[Proposal answer pr
 Cette section permet aux administrateur·ices ou aux évaluateur·ices de donner une réponse et un statut à la proposition.
 
 NOTE: Pour créer le modèle de réponse à la proposition et répondre rapidement aux différentes propositions, consultez l'article
-xref:admin:admin:templates/proposal_answers.adoc[Réponses aux propositions] .
+xref:admin:admin:templates/proposal_answers.adoc[Réponses aux propositions].
 
 image::components/proposals/answers/proposal_answer.png[Proposal answer form]
 
-.Répondre au formulaire de proposition
+.Formulaire de réponse à une propoosition
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -87,7 +87,7 @@ image::components/proposals/answers/proposal_statuses_back.png[Proposal statuses
 
 Cliquer sur "Nouveau progrès" pour créer vos progrès personnalisés.
 
-.Répondre au formulaire de proposition
+.Formulaire de réponse à une propoosition
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
