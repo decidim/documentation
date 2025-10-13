@@ -1,4 +1,4 @@
-= Réunions
+= Rencontres
 
 == En bref
 
@@ -7,11 +7,11 @@ Selon la configuration de la fonctionnalité, les rencontres ne peuvent être cr
 
 Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments :
 
-* xref:admin:admin:components/meetings/meetings.adoc[Meeting creation]: Créer des rencontres officielles ou participatives.
+* xref:admin:admin:components/meetings/meetings.adoc[Créations de rencontres]: Créer des rencontres officielles ou participatives.
 * xref:admin:admin:components/meetings/registrations.adoc[Inscriptions]: Gérer comment les participant·e·x·s peuvent s'inscrire pour assister aux rencontres.
-* xref:admin:components/meetings/agenda.adoc[Agenda]: Annoncer les sujets des rencontres à discuter.
-* xref:admin:admin:components/meetings/polls.adoc[Polls]: Activer le vote rapide pendant une rencontre en ligne.
-* xref:admin:components/meetings/close.adoc[Close]: Ajoute le rapport final et le procès verbal de la rencontre.
+* xref:admin:components/meetings/agenda.adoc[Ordre du jour]: Annoncer les sujets des rencontres à discuter.
+* xref:admin:admin:components/meetings/polls.adoc[Sondages]: Activer le vote rapide pendant une rencontre en ligne.
+* xref:admin:components/meetings/close.adoc[Clôturer]: Ajoute le rapport final et le procès verbal de la rencontre.
 
 image::components/meetings/example01.png[Example meeting detail 01]
 
@@ -76,12 +76,12 @@ alors "Fonctionnalité b" est placée avant dans le listage.
 
 |Longueur maximale des commentaires
 |Facultatif
-|La limite de caractères que les participants ont lors de la rédaction de commentaires. Laisser 0 pour la valeur par défaut.
+|La limite de caractères que les participant·e·x·s ont lors de la rédaction de commentaires. Laisser 0 pour la valeur par défaut.
 
 |Code d'enregistrement activé
 |Facultatif
 |Cocher pour donner automatiquement des codes d'inscription aux participant·e·x·s.
-En savoir plus sur xref:components/meetings/registrations.adoc[Registrations].
+En savoir plus sur xref:components/meetings/registrations.adoc[Inscriptions].
 
 |Les autorisations d'actions peuvent être définies pour chaque rencontre
 |Facultatif
