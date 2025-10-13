@@ -2,12 +2,11 @@
 
 == En bref
 
-La fonctionnalité de modification permet aux participants de proposer de modifier les propositions existantes et donc de collaborer avec d'autres participant·e·x·s.
+La fonctionnalité de modification permet aux participant·e·x·s de proposer de modifier les propositions existantes et donc de collaborer avec d'autres participant·e·x·s.
 
-Il est utile de proposer des améliorations ou des corrections, en particulier lors de la rédaction de lois ou de normes avec la fonctionnalité
-[Textes participatifs].
+Il est utile de proposer des améliorations ou des corrections, en particulier lors de la rédaction de lois ou de normes avec la fonctionnalité xref:components/proposals/special_configurations/participatory_texts.adoc[Textes participatifs].
 
-Il a des similitudes avec [Brouillons collaboratifs], mais la principale différence
+Il a des similitudes avec xref:components/proposals/special_configurations/collaborative_drafts.adoc[Brouillons collaboratifs], mais la principale différence
 est qu'avec les modifications, il n'est pas nécessaire de faire confiance aux intentions des autres auteur·ices, comme chaque changement est révisé et doit être
 approuvé par l'auteur·ice de la proposition initiale.
 
@@ -34,7 +33,7 @@ image::components/proposals/component_specific_conf.png[Add component form - Spe
 
 |Création d'amendement activée
 |Étape
-|Le participant peut modifier les propositions pour cette phase.
+|Lae participant·e·x peut modifier les propositions pour cette phase.
 
 |Réaction des amendements activée
 |Étape
@@ -46,10 +45,10 @@ image::components/proposals/component_specific_conf.png[Add component form - Spe
 
 |Visibilité des amendements
 |Étape
-|Choisissez entre "les modifications sont visibles pour touxte" ou "les modifications ne sont visibles que pour leurs auteur·ices"
+|Choisissez entre "les modifications sont visibles pour touxtes" ou "les modifications ne sont visibles que pour leurs auteur·ices"
 |===
 
-=== Créer un amendement
+=== Créer une modification
 
 Imaginons qu'unx participant·e·x voit la proposition d'unx autre participant·e·x et veut l'améliorer.
 Lorsque les modifications sont activées, les participant·e·x·s peuvent cliquer sur le bouton "modification" sur la page de la proposition.
