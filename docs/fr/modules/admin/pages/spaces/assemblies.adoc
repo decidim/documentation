@@ -1,4 +1,4 @@
-= Ruches
+= Assemblées
 
 == En bref
 
@@ -27,7 +27,7 @@ Dans cette section de documentation, vous pouvez trouver comment configurer et g
 
 === How to find it?
 
-Pour accéder au panneau des Assemblées, aller dans le panneau d'administration et cliquer "Ruches" dans la barre de navigation d'administration
+Pour accéder au panneau des Assemblées, aller dans le panneau d'administration et cliquer "Assemblées" dans la barre de navigation d'administration
 .
 
 image::spaces/assemblies/assemblies_menu.png[Pages: Access assemblies panel]
@@ -65,7 +65,7 @@ image::spaces/assemblies/assemblies_list_filter.png[Assemblies list filtered]
 |Modifier la configuration et les fonctionnalités d'une assemblée.
 
 |image:icons/action_assemblies.png[Icône assemblée enfants]
-|Ruches
+|Assemblées
 |Gérer toutes les assemblées enfants pour une assemblée.
 
 |image:icons/action_duplicate.png[Icône Dupliquer l'assemblée]
