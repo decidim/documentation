@@ -50,7 +50,7 @@ image::settings/admin_configuration.png[Decidim Admin Configuration]
 
 |Activer les groupes d'utlisateur·ices
 |Case à cocher
-|Si vous souhaitez que vos participant·e·x·s aient la possibilité de créer xref:participants/groups.adoc[groupes d'utilisateur·ices].
+|Si vous souhaitez que vos participant·e·x·s aient la possibilité de créer des xref:participants/groups.adoc[groupes d'utilisateur·ices].
 |Si activé, les groupes sont visibles dans les profils et comptes des participant·e·x·s et peuvent créer des groupes d'utilisateur·ices.
 
 |Activer les filtres d'espace participatif
@@ -90,8 +90,8 @@ image::settings/admin_configuration.png[Decidim Admin Configuration]
 
 |Corps des conditions de service de l'administrateur·ice
 |Obligatoire
-|Le message visible par unx administrateur·ice lorsqu'il accède pour la première fois au panneau d'administration.
-|Message affiché lorsqu'un administrateur accède pour la première fois au panneau d'administration.
+|Le message visible par unx administrateur·ice lorsqu'iel accède pour la première fois au panneau d'administration.
+|Message affiché lorsqu'un administrateur·ice accède pour la première fois au panneau d'administration.
 |===
 
 == Exemples
