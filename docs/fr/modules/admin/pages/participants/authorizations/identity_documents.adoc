@@ -6,7 +6,7 @@ Cette autorisation permet à unx participant·e·x de télécharger ses document
 Ces documents dépendent de l'organisation, ce peut être un permis de conduire, un passeport, une carte d'identité nationale,
 une carte de membre du club, etc.
 
-NOTE: Si vous ne voulez pas collecter de données, vous devez le désactiver dans le panneau système xref:configure:system.adoc[System panel].
+NOTE: Si vous ne voulez pas collecter de données, vous devez le désactiver dans le xref:configure:system.adoc[Panneau système].
 
 Ces documents sont examinés par unx administrateur·ice qui peut les accepter ou les rejeter. Il est possible de faire ce processus
 de deux manières :
@@ -120,7 +120,7 @@ image::participants/authorizations_id_document_offline_confirm.png[ID document a
 
 |Mail de lae participant·e·x
 |Obligatoire
-|Courriel du participant enregistré
+|Adresse mail de lae participant·e·x enregistré·e·x
 
 |Type de document
 |Obligatoire
