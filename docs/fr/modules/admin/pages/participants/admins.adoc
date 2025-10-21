@@ -1,4 +1,4 @@
-= Administrateurs
+= Administrateur·ices
 
 == En bref
 
@@ -6,7 +6,7 @@ Les administrateur·ices sont les personnes qui gèrent l'organisation, créent 
 Il y a deux types d'administrateur·ices :
 
 * Administrateur·ices : ont accès à toute la configuration de la plateforme.
-* Gestionnaires de participant·e·x·s : seul·e·x·s les participant·e·x·s xref:admin:participants/impersonations.adoc[impersonations] peuvent être géré·e·x·s.
+* Gestionnaires de participant·e·x·s : seul·e·x·s les participant·e·x·s xref:admin:participants/impersonations.adoc[identifé·e·x·s] peuvent être géré·e·x·s.
 
 image:participants/admins.png[Liste des admins]
 
@@ -14,7 +14,7 @@ image:participants/admins.png[Liste des admins]
 
 === Inviter unx administrateur·ice
 
-Pour inviter unx administrateur,·ice cliquer sur le bouton "Nouvel·le·x administrateur·ice" en haut à droite de la page.
+Pour inviter unx administrateur·ice cliquer sur le bouton "Nouvel·le·x administrateur·ice" en haut à droite de la page.
 Vous pouvez inviter unx participant·e·x déjà inscri·e·x ou non enregistré·e·x.
 
 image:participants/admins_invite.png[Formulaire d'invitation d'unx participant·e·x]
@@ -28,7 +28,7 @@ image:participants/admins_invite.png[Formulaire d'invitation d'unx participant·
 |Obligatoire
 |Nom de l'administrateur·ice. S'iel a déjà un compte, iel change automatiquement pour leur nom d'utilisateur·ice.
 
-|Courriel
+|E-mail
 |Obligatoire
 |Mail de lae participant·e·x à inviter. S'iel n'a pas de compte lié à cet e-mail, iel devrait recevoir un e-mail d'invitation
 pour créer un compte. Sinon, iel n'est pas notifié·e·x·s.
@@ -40,7 +40,7 @@ pour créer un compte. Sinon, iel n'est pas notifié·e·x·s.
 
 Si unx administrateur·e·x n'a pas encore de compte, mais n'est pas enregistré·e·x, vous pouvez également renvoyer l'invitation.
 
-=== Gérer les administrateurs
+=== Gérer les administrateur·ices
 
 Vous pouvez trouver touxtes les administrateur·ices dans la liste des administrateur·ices dans le panneau d'administration, avec :
 
@@ -68,7 +68,7 @@ Vous pouvez également rechercher des administrateur·ices par e-mail, nom ou su
 |Disponible lorsque lae participant·e·x n'a pas accepté l'invitation.
 
 |image:icons/action_delete.png[Supprimer l'icône]
-|Supprimez
+|Supprimer
 |Pour révoquer les droits d'accès d'administration de lae participant·e·x.
 |Disponible pour touxtes les administrateur·ices, sauf pour lae premier·e·x.
 |===
