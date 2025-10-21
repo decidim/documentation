@@ -14,9 +14,9 @@ NOTE: Plusieurs autorisations sont disponibles par défaut, mais vous pouvez ég
 
 === Activer / désactiver les autorisations
 
-Pour activer une autorisation, vous devez avoir accès à xref:configure:system.adoc[System panel] ou demander à l'instance implémentée.
+Pour activer une autorisation, vous devez avoir accès au xref:configure:system.adoc[Panneau système] ou demander à l'instance implémentée.
 Pour mieux comprendre ce que sont les autorisations et comment les configurer, veuillez vous référer à la section
-xref:customize:authorizations.adoc[Autorisations dans le Guide de Personnalisation].
+xref:customize:authorizations.adoc[Autorisations dans le Guide Personnalisé].
 
 Les participant·e·x·s peuvent accéder, mettre à jour ou supprimer leurs autorisations dans leur xref:admin:features/participant_actions/my_account.adoc[compte].
 
