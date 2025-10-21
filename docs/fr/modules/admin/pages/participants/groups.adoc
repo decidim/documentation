@@ -21,12 +21,12 @@ Pour en savoir plus sur la façon dont les participant·e·x·s peuvent le faire
 
 Lorsqu'unx participant·e·x crée un groupe d'utilisateur·ices, iel ajoute une ligne dans la liste des groupes d'utilisateur·ices dans le panneau d'administration, avec :
 
-* *Nom*: nom du groupe d'utilisateur·ices.
-* *Pseudo*: pseudo du groupe d'utilisateur·ices.
-* *Numéro de document*: peut être le numéro d'identification de la structure, comme le numéro d'identification d'une entreprise ou d'une association.
+* *Nom* : nom du groupe d'utilisateur·ices.
+* *Pseudo* : pseudo du groupe d'utilisateur·ices.
+* *Numéro de document* : peut être le numéro d'identification de la structure, comme le numéro d'identification d'une entreprise ou d'une association.
 * *Téléphone* : numéro de téléphone de la structure ou de l'administrateur·ice du groupe d'utilisateur·ices.
 * *Nombre de participant·e·x·s* : nombre de membres du groupe d'utilisateur·ices.
-* *Créé à* : date de création du groupe d'utilisateur·ices.
+* *Créé le* : date de création du groupe d'utilisateur·ices.
 * *État* : l'état de la vérification, ne peut être qu'en attente, vérifiée ou rejetée.
 
 Il est possible de filtrer et trier cette liste en cliquant sur "Filtrer" et sur les en-têtes des colonnes.
@@ -36,9 +36,9 @@ image::participants/admin_user_group_verification.png[Admin panel: user group ve
 
 Un groupe d'utilisateur·ices peut avoir trois états :
 
-* En attente: en attente d'une réponse d'unx administrateur·ice
+* En attente : en attente d'une réponse d'unx administrateur·ice
 * Vérifié : unx administrateur·ice a vérifié l'authenticité de ce groupe
-* Rejeté : unx administrateur ·ice a décidé que ce groupe n'était pas authentique ou conforme
+* Rejeté : unx administrateur·ice a décidé que ce groupe n'était pas authentique ou conforme
 
 === Actions
 
@@ -47,12 +47,12 @@ Un groupe d'utilisateur·ices peut avoir trois états :
 |===
 |Icône |Nom |Définition |Condition
 
-|image:icons/action_verify.png[Vérifier l'icône]
+|image:icons/action_verify.png[Icône Vérifier]
 |Vérifier
 |Valider la vérification du groupe d'utilisateur·ices.
 |Disponible lorsque l'état du groupe d'utilisateur·ices est en attente ou rejeté.
 
-|image:icons/action_delete.png[Rejeter l'icône]
+|image:icons/action_delete.png[Icône Rejeter]
 |Rejeter
 |Pour rejeter la demande de vérification du groupe d'utilisateur·ices.
 |Disponible lorsque l'état du groupe d'utilisateur·ices est en attente ou vérifié.
