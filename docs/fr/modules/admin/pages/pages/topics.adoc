@@ -2,7 +2,7 @@
 
 == En bref
 
-Dans cette section, vous pouvez configurer des Rubriques, pour organiser les pages statiques et fournir plus de clarté aux participants.
+Dans cette section, vous pouvez configurer des Rubriques, pour organiser les pages statiques et fournir plus de clarté aux participant·e·x·s.
 
 == Configuration
 
@@ -19,7 +19,7 @@ Pour créer un nouveau sujet, cliquez sur le bouton "Créer un sujet".
 
 image::pages/pages_backend_topic_form.png[Backend: new topic form]
 
-.Formulaire nouvelle discussion
+.Formulaire nouveau sujet
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -35,7 +35,7 @@ image::pages/pages_backend_topic_form.png[Backend: new topic form]
 |Rang d'affichage
 |Facultatif
 |L'ordre du sujet en relation avec les autres sujets. Avoir un nombre inférieur signifie un rang d'affichage plus élevé.
-Par exemple, si vous avez deux sujets, "Topic a" avec le poids "10" et "Topic b" avec le poids "0" puis "Topic b" est d'abord lors de la commande.
+Par exemple, si vous avez deux sujets, "Topic a" de poids "10" et "Topic b" de poids "0" puis "Topic b" apparait en premier dans la liste.
 
 |Afficher dans le pied de page
 |Facultatif
