@@ -23,9 +23,9 @@ Ce sont les différents blocs de contenu activés avec les modules officiels Dec
 Le bloc image principale et contenu CTA permet d'afficher :
 
 * *un texte de bienvenue* : pour accueillir les participant·e·x·s, ou pour annoncer un nouveau processus par exemple.
-* *un bouton d'appel à l'action*: par défaut, un bouton "Participer" redirigeant vers l'index des processus participatifs.
+* *un bouton d'appel à l'action* : par défaut, un bouton "Participer" redirigeant vers l'index des processus participatifs.
 Peut être personnalisé dans xref:admin:settings/appearance.adoc#edit_homepage_appearance[Apparence] grâce aux champs bouton du bouton Appel à l'action.
-* *une image*: l'image téléchargée est affichée avec un filtre d'opacité, pour s'assurer que le texte de bienvenue est lisible.
+* *une image* : l'image téléchargée est affichée avec un filtre d'opacité, pour s'assurer que le texte de bienvenue est lisible.
 
 image::settings/homepage_hero_image_back.png[Hero image in Homepage backend content block]
 
@@ -42,14 +42,14 @@ image::settings/homepage_global_menu.png[Global menu in Homepage frontend conten
 === Bannière secondaire
 
 Le bloc de contenu de la bannière secondaire affiche la description de l'instance
-configurée dans xref:admin:settings/appearance.adoc#_edit_homepage_appearance[Apparance].
+configurée dans xref:admin:settings/appearance.adoc#_edit_homepage_appearance[Apparence].
 
 image::settings/homepage_sub_hero_banner.png[Sub hero banner in Homepage content block]
 
 === Bannière de contenu mis en avant
 
 Le bloc de contenu de la bannière de contenu mis en avant affiche la bannière configurée dans
-xref:admin:settings/appearance.adoc#_highlighted_content_banner[Apparance].
+xref:admin:settings/appearance.adoc#_highlighted_content_banner[Apparence].
 
 image::settings/homepage_highlighted_content_banner.png[Highlighted content banner in Homepage content block]
 
@@ -62,8 +62,7 @@ image::settings/homepage_footer_sub_hero_banner.png[Hero image in Homepage conte
 
 === Comment participer
 
-Le bloc de contenu de Comment participer affiche un texte par défaut qui ne peut pas être configuré, et un bouton redirigeant les participant·e·x·s vers
-l'aide xref:admin:pages.
+Le bloc de contenu de Comment participer affiche un texte par défaut qui ne peut pas être configuré, et un bouton redirigeant les participant·e·x·s aux xref:admin:pages.adoc[pages] d'aide.
 
 image::settings/homepage_how_to_participate.png[How to participate in Homepage content block]
 
@@ -126,11 +125,11 @@ Le bloc de contenu des statistiques de l'organisation affiche les statistiques �
 
 image::settings/homepage_organization_statistics.png[Organizations statistics in Homepage content block]
 
-=== Métriques de l'organisation
+=== Indicateurs de l'organisation
 
-Le bloc de contenu des métriques de l'organisation affiche l'évolution de la participation sur votre instance.
+Le bloc de contenu des indicateurs de l'organisation affiche l'évolution de la participation sur votre instance.
 
-NOTE: Vous recherchez comment activer cette fonctionnalité techniquement ? Allez sur xref:develop:metrics.adoc[Guide des métriques]
+NOTE: Vous recherchez comment activer cette fonctionnalité techniquement ? Allez sur xref:develop:metrics.adoc[Guide des indicateurs]
 
 image::settings/homepage_organization_metrics.png[Organization metrics in Homepage content block]
 
