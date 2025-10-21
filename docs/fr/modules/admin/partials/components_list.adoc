@@ -1,14 +1,14 @@
 La plateforme contient actuellement les fonctionnalités officielles suivantes :
 
-* xref:admin:components/Accounability.adoc[*Suivi*]: permet de garder une trace des projets en cours.
-* xref:admin:components/blog.adoc[*Actualité*]: permet aux admins de publier des articles et des actualités.
+* xref:admin:components/Accounability.adoc[*Suivi*] : permet de garder une trace des projets en cours.
+* xref:admin:components/blog.adoc[*Actualité*] : permet aux admins de publier des articles et des actualités.
 * xref:admin:components/budgets.adoc[*Budgets*] : permet aux participant·e·x·s de voter pour un projet avec une somme prédéfinie, pour un budget participatif, par exemple.
-* xref:admin:components/debates.adoc[*Débats*]: permet aux participant·e·x·s d'avoir des débats.
-* xref:admin:components/meetings.adoc[*Rencontres*]: en personne ou en ligne, réunions, agenda, procès verbal, etc.
-* xref:admin:components/pages.adoc[*Page*]: pages statiques avec support multilingue.
-* xref:admin:components/proposals.adoc[*Propositions*]: contributions postées par les participant·e·x·s.
-* xref:admin:components/sortitions.adoc[*Tirage au sort*]: permet de sélectionner aléatoirement les propositions.
-* xref:admin:components/surveys.adoc[*Enquête*]: pour mener des enquêtes avec différents types de questions.
+* xref:admin:components/debates.adoc[*Débats*] : permet aux participant·e·x·s d'avoir des débats.
+* xref:admin:components/meetings.adoc[*Rencontres*] : en personne ou en ligne, réunions, agenda, procès verbal, etc.
+* xref:admin:components/pages.adoc[*Page*] : pages statiques avec support multilingue.
+* xref:admin:components/proposals.adoc[*Propositions*] : contributions postées par les participant·e·x·s.
+* xref:admin:components/sortitions.adoc[*Tirage au sort*] : permet de sélectionner aléatoirement les propositions.
+* xref:admin:components/surveys.adoc[*Enquête*] : pour mener des enquêtes avec différents types de questions.
 
 NOTE: Dans les cas où vos besoins ne sont pas couverts par l'une de ces fonctionnalités,
 vous pouvez créer votre propre composant via un xref:develop:modules.adoc[Module].
