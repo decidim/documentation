@@ -22,7 +22,7 @@ Cette fonctionnalité permet aux participant·e·x·s de participer sans s'inscr
 - **Session éphémère** : Une session temporaire est ouverte lorsque les participant·e·x·s sont vérifié·e·x·s. Cette session permettra uniquement aux participant·e·x·s de compléter des actions dans la fonctionnalité spécifique. Si l'utilisateur·ice éphémère veut quitter la fonctionnalité, la session sera fermée.
 - **Mode Focus :** Un mode focus est activé lorsque vous faites l'action restreinte par vérification éphémère, lae participant·e·x est dongardé·e·x·s au centre de l'action principale.
 - **Lien vers une méthode de vérification existante :** La vérification éphémère doit être liée à une méthode de vérification préexistante (par exemple un recensement organisationnel).
-- **Révoquer les vérifications préalables:** Lorsque vous activez la vérification éphémère, toutes les vérifications précédentes sont révoquées pour éviter les conflits de vérification.
+- **Révoquer les vérifications préalables :** Lorsque vous activez la vérification éphémère, toutes les vérifications précédentes sont révoquées pour éviter les conflits de vérification.
 - **Récupération de la session éphémère**. Les participant·e·x·s éphémères peuvent vérifier à nouveau et se connecter avec la session éphémère. Iels peuvent donc voir leurs votes et les modifier.
 
 == Configuration
