@@ -25,7 +25,7 @@ Les blocs de contenu de l'image de bannière et CTA permettent d'afficher dans l
 * *Titre* : le titre de l'espace.
 * *Hashtag* : le hashtag de l'espace redirigeant vers la plateforme X.
 * *Sous-titre* : le sous-titre de l'espace.
-* *Un bouton d'appel à action*: par défaut, le bouton n'est pas affiché. Pour l'activer, cliquer sur l'icône "Modifier" du bloc de contenu.
+* *Un bouton d'appel à action* : par défaut, le bouton n'est pas affiché. Pour l'activer, cliquer sur l'icône "Modifier" du bloc de contenu.
 * *Une image* : l'image téléchargée est affichée avec un filtre d'opacité, pour s'assurer que le texte est lisible.
 
 image::spaces/landing_page/hero_admin.png[Landing page content Hero image content block form]
@@ -87,7 +87,7 @@ image::spaces/landing_page/activities.png[Landing page content Last activity con
 
 image::spaces/landing_page/statistics.png[Landing page content Statistics content block]
 
-=== Métriques
+=== Indicateurs
 
 image::spaces/landing_page/metrics.png[Landing page content Metrics content block]
 
