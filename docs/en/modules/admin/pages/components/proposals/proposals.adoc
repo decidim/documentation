@@ -111,7 +111,7 @@ the proposal grid list.
 
 |Create proposal as
 |Optional
-|If the participant belongs to a verified xref:admin:participants/groups.adoc[user group], they can create a proposal in the name of 
+|If the participant is an administrator of a verified xref:admin:participants/groups.adoc[user group], they can create a proposal in the name of 
 this group
 
 |===
