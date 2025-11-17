@@ -8,7 +8,7 @@ site:
   start_page: develop@en:ROOT:index.adoc
 content:
   sources:
-    - url: &documentation https://github.com/decidim/documentation
+    - url: &documentation /home/carol/documentation
       start_path: docs/en
       branches: [release/0.30-stable, develop]
       edit_url: "https://github.com/decidim/documentation/edit/{refname}/{path}"
