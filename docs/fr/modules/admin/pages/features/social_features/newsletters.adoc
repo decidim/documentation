@@ -13,9 +13,9 @@ image::features/newsletters/newsletter_participant_notifications_settings.png[Co
 
 Quelques exemples de quand vous pouvez et devriez envoyer une newsletter sont :
 
-* Quand un nouveau processus pourrait être intéressant pour tous les citoyens d'une ville,
+* Quand un nouveau processus pourrait être intéressant pour touxtes les citoyen·ne·x·s d'une ville,
 par exemple un processus de budgétisation participative.
-* Quand il y a les résultats publiés pour un processus donné.
+* Quand il y a les réalisations publiées pour une concertation donnée.
 * Quand une assemblée a un sujet important à discuter.
 * Quand il y a un nouveau vote prévu.
 * Quand une nouvelle conférence est publiée.
@@ -58,7 +58,7 @@ NOTE: Vous pouvez utiliser "%\{name}" n'importe où dans le corps ou l'objet pou
 
 image::features/newsletters/newsletter_new_basic.png[Newsletter new template basic form]
 
-.Formulaire "basique (texte uniquement) de nouvelle Newsletter
+.Formulaire "Nouvelle Newsletter basique (texte uniquement)"
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -74,7 +74,7 @@ image::features/newsletters/newsletter_new_basic.png[Newsletter new template bas
 
 image::features/newsletters/newsletter_new_cta.png[Newsletter new template Image, text and CTA form]
 
-.Nouveau formulaire "Image, texte et bouton d'appel à l'action" de la newsletter
+.Formulaire Nouvelle newsletter "Image, texte et bouton d'appel à action"
 [cols="20h,10h,~"]
 |===
 |Champ |Type |Description
@@ -87,11 +87,11 @@ image::features/newsletters/newsletter_new_cta.png[Newsletter new template Image
 |Facultatif
 |Introduction du courrier électronique affiché avant le bouton CTA.
 
-|Texte du bouton d'appel à l'action
+|Texte du bouton d'appel à action
 |Facultatif
 |Le texte du bouton CTA
 
-|URL du bouton d'appel à l'action
+|URL du bouton d'appel à action
 |Facultatif
 |Où le lien CTA redirige.
 
@@ -119,7 +119,7 @@ image::features/newsletters/newsletter_preview_basic_example.png[Newsletter new 
 Si vous souhaitez consulter la newsletter directement dans votre boîte aux lettres, cliquez sur le bouton "Envoyez-moi un email de test" en haut à droite de la page.
 Vous recevrez la newsletter directement sur l'adresse e-mail enregistrée sur votre compte participant.
 
-==== Sélectionnez les destinataires à livrer
+==== Sélectionner les destinataires
 
 Si vous voulez seulement communiquer sur un espace ou un quartier donné, vous pouvez choisir à quels participants vous envoyez la newsletter.
 Pour ce faire, cliquez sur le bouton "Sélectionner les destinataires à livrer".
@@ -171,7 +171,7 @@ Vous pouvez trouver toutes les newsletters sur la page de la newsletter, avec:
 
 |Condition
 |image:icons/action_edit.png[Modifier la newsletter]
-|Editer
+|Modifier
 
 |Éditer la newsletter.
 |Newsletter non envoyée.
@@ -187,5 +187,5 @@ Vous pouvez trouver toutes les newsletters sur la page de la newsletter, avec:
 
 |Toujours.
 |image:icons/action_delete.png[Delete]
-|Supprimez
+|Supprimer
 |===
