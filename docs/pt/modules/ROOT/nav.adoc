@@ -170,6 +170,7 @@
 *** xref:Desenvolva :guide_commands.adoc[3. Comandos]
 *** xref:Desenvolva :guide_conventions.adoc[4. Convenções]
 *** xref:Desenvolva :guide_architecture.adoc[5. Arquitetura
+*** xref:develop:guide_data_migrations.adoc[6. Data Migrations]
 ** xref:Desenvolva :security.adoc[Security]
 ** Avançado
 *** Criando aulas personalizadas
@@ -198,7 +199,6 @@
 **** xref:develop:ai_tools/spam_detection_strategy.adoc[Spam detection Strategy]
 **** xref:develop:ai_tools/spam_detection_service.adoc[Spam detection Service]
 **** xref:develop:ai_tools/spam_detection_analyzer.adoc[Spam detection Analyzer]
-*** xref:Desenvolva :api.adoc[API]
 *** xref:develop:components.adoc[Components]
 *** xref:develop:content_processors.adoc[Content Processors]
 *** xref:develop:custom_seed_data.adoc[Dados de Sementes Personalizados]
@@ -230,6 +230,8 @@
 **** xref:develop:newsletter_templates.adoc[Newsletter Templates]
 **** xref:develop:view_hooks.adoc[View Hooks]
 **** xref:develop:view_models_aka_cells.adoc[View Models (Cells)]
+** xref:develop:api/index.adoc[API]
+*** xref:develop:api/proposals/mutations.adoc[Proposals]
 * Compreensão
 ** xref:Entenda:about.adoc[About]
 ** xref:understand:background.adoc[Background]
