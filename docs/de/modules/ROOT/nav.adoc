@@ -170,6 +170,7 @@
 *** xref:develop:guide_commands.adoc[3. Befehle]
 *** xref:develop:guide_conventions.adoc[4. Konventionen]
 *** xref:develop:guide_architecture.adoc[5. Architektur]
+*** xref:develop:guide_data_migrations.adoc[6. Data Migrations]
 ** xref:develop:security.adoc[Security]
 ** Erweitert
 *** Erstelle benutzerdefinierte Klassen
@@ -198,7 +199,6 @@
 **** xref:develop:ai_tools/spam_detection_strategy.adoc[Spam detection Strategy]
 **** xref:develop:ai_tools/spam_detection_service.adoc[Spam detection Service]
 **** xref:develop:ai_tools/spam_detection_analyzer.adoc[Spam detection Analyzer]
-*** xref:develop:api.adoc[API]
 *** xref:develop:components.adoc[Components]
 *** xref:develop:content_processors.adoc[Content-Prozessoren]
 *** xref:develop:custom_seed_data.adoc[Benutzerdefinierte Seed Daten]
@@ -230,6 +230,8 @@
 **** xref:develop:newsletter_templates.adoc[Newsletter Templates]
 **** xref:develop:view_hooks.adoc[Hooks]
 **** xref:develop:view_models_aka_cells.adoc[Modelle anzeigen (Cells)]
+** xref:develop:api/index.adoc[API]
+*** xref:develop:api/proposals/mutations.adoc[Proposals]
 * Verstehen
 ** xref:understand:about.adoc[About]
 ** xref:understand:background.adoc[Background]
