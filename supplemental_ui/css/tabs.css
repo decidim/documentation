@@ -1,0 +1,87 @@
+/* Generic Tabs Component for Antora Documentation */
+
+.tabs {
+    margin: 1.5rem 0;
+}
+
+.tabs-nav {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 0;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 2px;
+    flex-wrap: wrap;
+}
+
+.tabs-nav__button {
+    padding: 8px 16px;
+    background: none;
+    border: none;
+    color: #718096;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+    font-family: inherit;
+}
+
+.tabs-nav__button:hover {
+    color: #667eea;
+    background: #f7fafc;
+}
+
+.tabs-nav__button.is-active {
+    color: #667eea;
+    background: #edf2f7;
+}
+
+.tabs-nav__button.is-active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #667eea;
+}
+
+.tabs-content {
+    position: relative;
+}
+
+.tabs-content__panel {
+    display: none;
+}
+
+.tabs-content__panel.is-active {
+    display: block;
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ensure proper spacing for nested content */
+.tabs .tabs-content__panel > *:first-child {
+    margin-top: 0;
+}
+
+.tabs .tabs-content__panel > *:last-child {
+    margin-bottom: 0;
+}
+
+/* Specific styling for code blocks in tabs */
+.tabs-content .listingblock {
+    margin-top: 0;
+    margin-bottom: 0;
+}
