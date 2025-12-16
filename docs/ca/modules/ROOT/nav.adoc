@@ -231,7 +231,12 @@
 **** xref:develop:view_hooks.adoc[View Hooks]
 **** xref:develop:view_models_aka_cells.adoc[View Models (Cells)]
 ** xref:develop:api/index.adoc[API]
-*** xref:develop:api/proposals/mutations.adoc[Proposals]
+*** xref:develop:api/authentication.adoc[Authentication]
+*** xref:develop:api/core-concepts.adoc[Core concepts]
+*** API reference by module
+**** Spaces
+**** Components
+***** xref:develop:api/reference/components/proposals.adoc[Proposals]
 * Understand
 ** xref:understand:about.adoc[About]
 ** xref:understand:background.adoc[Background]
