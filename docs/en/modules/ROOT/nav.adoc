@@ -239,9 +239,12 @@
 ** xref:develop:api/index.adoc[API]
 *** xref:develop:api/authentication.adoc[Authentication]
 *** xref:develop:api/core-concepts.adoc[Core concepts]
+*** xref:develop:api/reference/errors.adoc[Errors tracked]
 *** API reference by module
 **** Spaces
 **** Components
+***** xref:develop:api/reference/components/debates.adoc[Debates]
+***** xref:develop:api/reference/components/meetings.adoc[Meetings]
 ***** xref:develop:api/reference/components/proposals.adoc[Proposals]
 
 * Understand
