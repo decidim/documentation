@@ -5,7 +5,7 @@
 The Meetings component allows administrators to organize, advertise, deal with registration and wrap up in-person or online meetings.
 Depending on the component configuration, meetings can be created only by administrators, or also by participants.
 
-In this documentation section, you can find how to configure and manage all of those items:
+In diesem Abschnitt der Dokumentation findest du Informationen dazu, wie du all diese Elemente konfigurierst und verwaltest:
 
 * xref:admin:components/meetings/meetings.adoc[Meetings creation]: Create official or participant meetings.
 * xref:admin:components/meetings/registrations.adoc[Registrations]: Manage how participants can register to attend the meetings.
