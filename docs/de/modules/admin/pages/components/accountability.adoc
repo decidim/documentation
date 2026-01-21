@@ -2,20 +2,17 @@
 
 == Understand the basics
 
-The accountability component allows participants to know the status of a project's implementation and to follow its evolution.
+Die Rechenschaftspflicht-Komponente ermöglicht es Teilnehmenden, den Umsetzungsstand eines Projekts zu sehen und seine Entwicklung zu verfolgen.
 
-This feature allows administrators to present a summary of the achievements decided upon in assemblies, during
-participatory processes, or any other space. Administrators create Results they can then categorize and link to proposals, meetings, or
-investment projects (for example, as part of a participatory budget).
+Diese Funktion ermöglicht es Administrator:innen, eine Zusammenfassung der in Versammlungen, partizipativen Prozessen oder anderen Räumen beschlossenen Ergebnisse darzustellen. Administrator:innen erstellen Ergebnisse, die sie anschließend kategorisieren und mit Vorschlägen, Treffen oder Investitionsprojekten verknüpfen können (zum Beispiel im Rahmen eines partizipativen Budgets).
 
 image::components/accountability/example01.png[Example of results list]
 
-Results can be closely monitored, with a history of modifications, a percentage of completion and milestones
-indicating their progress. The results, milestones, and states can be updated manually through the administration panel or through a CSV.
+Ergebnisse können detailliert nachverfolgt werden, mit einer Änderungshistorie, einem prozentualen Umsetzungsstand und Meilensteinen. Die Ergebnisse, Meilensteine und Status können manuell über das Administrationspanel oder per CSV aktualisiert werden.
 
 image::components/accountability/example02.png[Example of a result]
 
-In this documentation section, you can find how to configure and manage all of those items:
+In diesem Abschnitt der Dokumentation findest du Informationen dazu, wie du all diese Elemente konfigurierst und verwaltest:
 
 * xref:admin:components/accountability/results.adoc[Results]
 * xref:admin:components/accountability/statuses.adoc[Statuses]
@@ -88,7 +85,7 @@ then "component b" is first when ordering.
 |Check it if you want a progress bar to be displayed on the results with aa progress level.
 |===
 
-.Step settings
+.Schritteinstellungen
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
