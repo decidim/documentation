@@ -29,7 +29,7 @@ image::spaces/processes/process_phases.png[Process phases explanation]
 [NOTE]
 -----
 Phases can be automatically changed if the scheduled task `decidim_participatory_processes:change_active_step` is configured.
-If you want to manage them manually, then the implementer/operator of the installation need to disable this scheduled task server-side.
+If you want to manage them manually, then the implementer/operator of the installation needs to disable this scheduled task server-side.
 -----
 
 == Configuration
