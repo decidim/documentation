@@ -24,8 +24,8 @@ In the secondary navigation panel, you can see all the settings panel available:
 * xref:admin:settings/appearance.adoc[Appearance]: to configure the instance look and feel.
 * xref:admin:settings/homepage.adoc[Homepage]: to configure what to display on the homepage.
 * xref:admin:settings/taxonomies.adoc[Taxonomies]: to manage taxonomies, a categorization feature. 
-* xref:admin:settings/scopes.adoc[Scopes]: to manage scopes, a categorization feature. 
-* xref:admin:settings/areas.adoc[Areas]: to manage areas, another categorization feature. 
+* xref:admin:settings/scopes.adoc[Scopes]: to manage scopes, a categorization feature. Still used for the Initiatives space, but soon to be fully deprecated.
+* xref:admin:settings/areas.adoc[Areas]: to manage areas, another categorization feature. Still used for the Initiatives space, but soon to be fully deprecated.
 * xref:admin:settings/help_sections.adoc[Help sections]: to create and edit help texts for participants. 
 * xref:admin:settings/allowed_external_domains.adoc[Allowed external domains]: to manage authorized external domains. 
 
