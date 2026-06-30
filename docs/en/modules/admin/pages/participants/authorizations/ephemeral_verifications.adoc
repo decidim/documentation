@@ -13,7 +13,7 @@ The Ephemeral Verification Method is designed to streamline participation for on
 
 NOTE: This feature is intended for limited duration during a specific participatory process, such as a voting phase of participatory budgeting.
 
-=== How does it works?
+=== How does it work?
 
 This feature allows participants to participate without registering on the platform, by verifying their identity with the system chosen by the organisation. The key features are:
 
@@ -27,9 +27,11 @@ This feature allows participants to participate without registering on the platf
 
 == Configuration
 
+NOTE: To enable Ephemeral Verification, some customization to the Decidim code is required. The below steps will not work on a vanilla Decidim instance. You will first need to develop and register a custom form class or, in the case of SMS verification, a custom engine for the ephemeral verification workflow. Only then will it become available for selection in the system panel.
+
 To enable Ephemeral Verification you need to follow these steps:
 
-1. Access to the system panel.
+1. Access the system panel.
 2. Enable the ephemeral-verification method.
 3. Link it to an existing verification method (for example organization census).
 4. Go to the admin dashboard.
