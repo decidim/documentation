@@ -10,7 +10,7 @@ content:
   sources:
     - url: &documentation https://github.com/decidim/documentation
       start_path: docs/en
-      branches: [release/0.31-stable, release/0.30-stable, develop]
+      branches: [release/0.31-stable, release/0.32-stable, develop]
       edit_url: "https://github.com/decidim/documentation/edit/{refname}/{path}"
     - url: &documentation https://github.com/decidim/documentation
       start_path: docs/fr
@@ -26,7 +26,7 @@ content:
       branches: [develop]
     - url: https://github.com/decidim/decidim
       start_path: docs
-      branches: [release/0.30-stable, release/0.31-stable, develop]
+      branches: [release/0.31-stable, release/0.32-stable, develop]
 ui:
   bundle:
     url: https://github.com/decidim/documentation-antora-ui/releases/download/v0.4/ui-bundle.zip
