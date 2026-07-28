@@ -31,7 +31,7 @@ Les fonctionnalités de l'espace se trouvent dans la liste, avec :
 
 * *Nom de la fonctionnalité* : le titre de la fonctionnalité choisi à sa création et modifiable.
 * *Le type de fonctionnalité* : le type de la fonctionnalité.
-* *Le secteur de la fonctionnalité* : le xref:admin:scopes.adoc[secteur] de la fonctionnalité.
+* *Component scope*: the xref:admin:settings/scopes.adoc[scope] of the component.
 
 === Actions
 
