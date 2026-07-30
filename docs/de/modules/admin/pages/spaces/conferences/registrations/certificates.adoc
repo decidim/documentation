@@ -1,19 +1,19 @@
-= Certificate of attendance
+= Teilnahmebestätigung
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-For some events, participants may want to have an attendance certificate, to certify to their employer that they attended,
-or to certify they followed a training for example.
+Für manche Veranstaltungen möchten Teilnehmende möglicherweise eine Teilnahmebestätigung erhalten, um ihrem Arbeitgeber zu bestätigen, dass sie teilgenommen haben,
+oder um beispielsweise zu bestätigen, dass sie eine Schulung absolviert haben.
 
-For this, administrators can create Certificates of attendance.
+Dafür können Admins Teilnahmebestätigungen erstellen.
 
 == Konfiguration
 
-=== Create certificate of attendance
+=== Teilnahmebestätigung erstellen
 
-To access the certificate of attendance configuration, click in the secondary navigation panel on the "Certificate of attendance" item.
+Um auf die Konfiguration der Teilnahmebestätigung zuzugreifen, klicken Sie im sekundären Navigationspanel auf den Punkt "Teilnahmebestätigung".
 
-image:spaces/conferences/certificates_of_attendance.png[Conference Certificate of attendance backend]
+image:spaces/conferences/certificates_of_attendance.png[Verwaltung der Teilnahmebestätigung für die Konferenz]
 
 .Anwesenheitszertifikat
 [cols="20h,10h,~"]
@@ -22,11 +22,11 @@ image:spaces/conferences/certificates_of_attendance.png[Conference Certificate o
 
 |Hauptlogo
 |Benötigt
-|Logo of the conference or of the organization that makes the certificate of attendance.
+|Logo der Konferenz oder der Organisation, die die Teilnahmebestätigung ausstellt.
 
 |Signatur
 |Benötigt
-|Image of the person signature that signs the certificate.
+|Bild der Unterschrift der Person, die die Bestätigung unterzeichnet.
 
 |Signaturdatum
 |Benötigt
@@ -37,16 +37,16 @@ image:spaces/conferences/certificates_of_attendance.png[Conference Certificate o
 |Name der Person, die das Zertifikat signiert.
 |===
 
-=== Send the certificate
+=== Die Bestätigung senden
 
-Once the certificate of attendance form is done, you can see a "Send certificates of attendance" button on the top right.
-This button allows administrators to send the certificate to all the *confirmed*
-xref:admin:spaces/conferences/registrations/users.adoc[registered users] of the conference.
+Sobald das Formular für die Teilnahmebestätigung ausgefüllt ist, sehen Sie oben rechts eine Schaltfläche "Teilnahmebestätigungen senden".
+Mit dieser Schaltfläche können Admins die Bestätigung an alle *bestätigten*
+xref:admin:spaces/conferences/registrations/users.adoc[angemeldeten Nutzenden] der Konferenz senden.
 
 image::spaces/conferences/certificates_of_attendance_button.png[Conferences Certificate of Attendance send button]
 
-NOTE: Once the certificate has been sent it can't be resent.
+NOTE: Sobald die Bestätigung gesendet wurde, kann sie nicht erneut gesendet werden.
 
 Die Anwesenheitsbescheinigungen werden den Teilnehmern per E-Mail im PDF-Format zugesandt.
 
-image:spaces/conferences/certificates_of_attendance_pdf.png[Conferences Certificate of Attendance frontend]
+image:spaces/conferences/certificates_of_attendance_pdf.png[Teilnahmebestätigung der Konferenz im Frontend]
