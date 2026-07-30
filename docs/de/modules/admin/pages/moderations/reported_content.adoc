@@ -1,6 +1,6 @@
 = Gemeldete Inhalte
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Beim Verfassen der Nutzungsbedingungen Ihrer Plattform oder Ihrer Beteiligungscharta möchten Sie sicherstellen, dass
 Teilnehmende die Beteiligungsregeln in den von ihnen verfassten Inhalten einhalten.
@@ -25,21 +25,21 @@ image:moderations/moderation_modal.png[Modal zur Grundangabe für Moderation]
 Nachdem eine teilnehmende Person einen Inhalt gemeldet hat, erscheint dieser in zwei Abschnitten des Verwaltungspanels:
 
 * Globales Moderationsfenster
-* Moderationsfeld für Teilnehmerraum
+* Moderationsfeld für den beteiligten Raum
 
-image:moderations/moderations_backend_list_content.png[Global moderations panel for content]
+image:moderations/moderations_backend_list_content.png[Panel Globale Moderationen für Inhalte]
 
 Dort finden Sie zunächst alle unbearbeiteten Meldungen, falls vorhanden, mit:
 
 * *ID*: eindeutige Kennung des gemeldeten Inhalts.
 * *Typ*: die Art des gemeldeten Inhalts, zum Beispiel Kommentar, Vorschlag, Debatte usw.
 * *Beteiligter Raum*: zu welchem Raum dieser Inhalt gehört.
-* *Reportierte Inhalts-URL*: Link zum Anzeigen des gemeldeten Inhalts und den Kontext der Beschwerde sehen.
+* *URL des gemeldeten Inhalts*: Link zum Anzeigen des gemeldeten Inhalts und zum Ansehen des Kontexts der Beschwerde.
 * *Grund*: warum der Inhalt gemeldet wird. Wenn der Teilnehmer, der den Bericht erstellt hat, zusätzliche
 -Informationen gegeben hat, ist es möglich, ihn zu sehen, indem Sie ihn bewegen.
 * *Gemeldet am*: wann es ursprünglich gemeldet wurde.
 * *Anzahl*: Anzahl der Meldungen von verschiedenen Nutzenden.
-* *Aktionen*: Sie können *Erweitern*, *Abmelden* oder *Verstecken*.
+* *Aktionen*: Sie können *Erweitern*, *Entmelden* oder *Verstecken*.
 
 Sobald Sie einen Inhalt moderiert haben, erscheint er in der Liste "Verborgen", die oben rechts auf der Seite zugänglich ist.
 
@@ -66,7 +66,7 @@ Sobald Sie einen Inhalt moderiert haben, erscheint er in der Liste "Verborgen", 
 |Verfügbar, wenn der Inhalt noch nicht verborgen ist.
 
 |image:icons/action_hide.png[Symbol: Einblenden]
-|Unhide
+|Einblenden
 |Ermöglicht es einem Admin oder einer moderierenden Person, diesen Inhalt wieder einzublenden (ihn erneut öffentlich anzuzeigen).
 |Verfügbar, wenn der Inhalt verborgen ist.
 |===
