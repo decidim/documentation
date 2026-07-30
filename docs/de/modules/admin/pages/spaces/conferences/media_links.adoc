@@ -1,18 +1,18 @@
 = Medienlinks
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Conferences can have a section called "Media links" which shows a list of media files and links
-that are associated to the conference. It displays in a specific page of the conference:
+Konferenzen können einen Abschnitt namens "Medienlinks" haben, der eine Liste von Mediendateien und Links anzeigt,
+die mit der Konferenz verknüpft sind. Er wird auf einer bestimmten Seite der Konferenz angezeigt:
 
-* Related documents and images from the xref:admin:spaces/conferences/attachments.adoc[attachments] section.
-* Media links from the media links section.
+* Zugehörige Dokumente und Bilder aus dem Abschnitt xref:admin:spaces/conferences/attachments.adoc[Anhänge].
+* Medienlinks aus dem Abschnitt Medienlinks.
 
-image:spaces/conferences/media_links_frontend.png[Conferences media links frontend]
+image:spaces/conferences/media_links_frontend.png[Medienlinks der Konferenz im Frontend]
 
-=== How to find it?
+=== Wie findet man sie?
 
-To access the media links configuration, click in the secondary navigation panel on the "Media links" item.
+Um auf die Konfiguration der Medienlinks zuzugreifen, klicken Sie im sekundären Navigationspanel auf den Punkt "Medienlinks".
 
 image::spaces/conferences/media_links_backend.png[Conferences media links]
 
@@ -27,16 +27,16 @@ image::spaces/conferences/media_links_backend.png[Conferences media links]
 
 |image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
-|To edit this link.
+|Um diesen Link zu bearbeiten.
 
 |image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
-|To delete this link.
+|Um diesen Link zu löschen.
 |===
 
 === Neuen Medienlink erstellen
 
-To create a new media link, click the "New media link" button in the top right of the page.
+Um einen neuen Medienlink zu erstellen, klicken Sie oben rechts auf der Seite auf die Schaltfläche "Neuer Medienlink".
 
 image::spaces/conferences/new_media_link.png[Create a new conferences media link]
 
@@ -47,17 +47,17 @@ image::spaces/conferences/new_media_link.png[Create a new conferences media link
 
 |Titel
 |Benötigt
-|The title of the link.
+|Der Titel des Links.
 
 |Link
 |Benötigt
-|URL of the link.
+|URL des Links.
 
 |Datum
 |Benötigt
-|Publication date of the link.
+|Veröffentlichungsdatum des Links.
 
 |Reihenfolge
 |Optional
-|Which order it has in relation to the other links. Eine niedrigere Zahl bedeutet eine höhere Priorität. For instance, if you have two links, "Link a" with weight "10" and "Link b" with weight "0" then "Link b" is first when ordering.
+|Welche Reihenfolge er im Verhältnis zu den anderen Links hat. Eine niedrigere Zahl bedeutet eine höhere Priorität. Wenn Sie zum Beispiel zwei Links haben, "Link a" mit der Gewichtung "10" und "Link b" mit der Gewichtung "0", dann steht "Link b" bei der Sortierung an erster Stelle.
 |===
