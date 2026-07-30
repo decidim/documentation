@@ -52,7 +52,7 @@ For instance if the slug is "faq" and your domain is "https://example.org" your 
 |Optional
 |In which Topic it's stored.
 
-|Bestellposition
+|Reihenfolge
 |Optional
 |The order of the page in relation with the other pages. Eine niedrigere Zahl bedeutet eine höhere Priorität.
 For instance, if you have two pages, "Page a" with weight "10" and "Page b" with weight "0" then "Page b" is first when ordering.
