@@ -1,48 +1,48 @@
-= Statuses
+= Status
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-A status represents the current state of a result.
-For participants, statuses clearly indicate the state of each result, as status names are always shown with results.
-For administrators, statuses help to keep result's progress updated, since each status can have a default progress percentage.
+Ein Status stellt den aktuellen Zustand eines Ergebnisses dar.
+Für Teilnehmende zeigen Status den Zustand jedes Ergebnisses klar an, da die Statusnamen immer zusammen mit den Ergebnissen angezeigt werden.
+Für Admins helfen Status dabei, den Fortschritt der Ergebnisse aktuell zu halten, da jeder Status einen Standard-Fortschrittsprozentsatz haben kann.
 
-After configuring statuses, you can assign xref:admin:components/accountability/results.adoc[a status to a result].
-Once a result have its status updated, its progress is automatically set to the default progress defined in the status.
+Nach der Konfiguration der Status können Sie xref:admin:components/accountability/results.adoc[einem Ergebnis einen Status zuweisen].
+Sobald der Status eines Ergebnisses aktualisiert wird, wird dessen Fortschritt automatisch auf den im Status definierten Standardfortschritt gesetzt.
 
-Updating a result's status won't update the result history, but may xref:admin:features/participant_actions/notifications.adoc[send notifications].
+Das Aktualisieren des Status eines Ergebnisses aktualisiert nicht dessen Verlauf, kann jedoch xref:admin:features/participant_actions/notifications.adoc[Benachrichtigungen senden].
 
 == Konfiguration
 
-To create Statuses, click the "Statuses" button on the top right of the results list.
+Um Status zu erstellen, klicken Sie oben rechts in der Ergebnisliste auf die Schaltfläche "Status".
 
 image::components/accountability/statuses_button.png[Statuses button]
 
-There, you can create and manage the different statuses for the results.
+Dort können Sie die verschiedenen Status für die Ergebnisse erstellen und verwalten.
 
 image::components/accountability/statuses_list.png[Statuses list]
 
-Click on the "New status" button to start creating statuses.
+Klicken Sie auf die Schaltfläche "Neuer Status", um mit der Erstellung von Status zu beginnen.
 
-image:components/accountability/new_status.png[New status form]
+image:components/accountability/new_status.png[Formular für neuen Status]
 
 
-.New status form
+.Formular für neuen Status
 |===
 |Feld |Typ |Beschreibung
 
-|Key
+|Schlüssel
 |Benötigt
-|Used as the unique identifier for the xref:admin:components/accountability/import.adoc[CSV Import].
+|Wird als eindeutige Kennung für den xref:admin:components/accountability/import.adoc[CSV-Import] verwendet.
 
 |Name
 |Benötigt
-|Name for this status.
+|Name für diesen Status.
 
 |Beschreibung
 |Optional
-|Description for this status.
+|Beschreibung für diesen Status.
 
 |Fortschritt
 |Optional
-|Default progress for a result assigned to this state (percentage from 0 to 100).
+|Standardfortschritt für ein Ergebnis, dem dieser Status zugewiesen ist (Prozentsatz von 0 bis 100).
 |===
