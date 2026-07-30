@@ -21,12 +21,12 @@ To create a Blog component, first go in the xref:admin:spaces.adoc[participatory
 
 image::components/skeleton/component_skeleton.png[Add component button]
 
-Then:
+Dann:
 
-. Click on the "Components" item in the secondary menu
-. Click the "Add component" button
+. Klicken Sie im Sekundärmenü auf den Punkt "Komponenten"
+. Klicken Sie auf die Schaltfläche "Komponente hinzufügen"
 . Select "Skeleton"
-. Fill the component creation form
+. Füllen Sie das Formular zur Komponentenerstellung aus
 
 image:components/skeleton/component.png[Komponentenform] hinzufügen
 
@@ -39,7 +39,7 @@ image:components/skeleton/component.png[Komponentenform] hinzufügen
 |Benötigt
 |Wie lautet der Titel dieser Komponente. Zum Beispiel "Skelette"
 
-|Bestellposition
+|Reihenfolge
 |Optional
 |Which order it has in relation to the other skeletons. Eine niedrigere Zahl bedeutet eine höhere Priorität.
 |===
@@ -55,7 +55,7 @@ image:components/skeleton/component.png[Komponentenform] hinzufügen
 
 |Bereich
 |Optional
-|Which xref:admin:settings/scopes.adoc[Scope] does this component belongs to.
+|Zu welchem xref:admin:settings/scopes.adoc[Thema] diese Komponente gehört.
 
 |Globaler Umfang
 |Optional
@@ -120,7 +120,7 @@ image:components/skeleton/new_skeleton.png[Neue skelett-Form]
 |Benötigt
 |Wie lautet der Titel dieses Skeletts. Zum Beispiel "Bezirk A"
 
-|Bestellposition
+|Reihenfolge
 |Optional
 |Welche Reihenfolge wird es in Bezug auf die anderen Skelette haben. Eine niedrigere Zahl bedeutet eine höhere Priorität.
 
@@ -136,7 +136,7 @@ image:components/skeleton/new_skeleton.png[Neue skelett-Form]
 |===
 |Icon |Name |Definition
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
 |Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
 
@@ -144,11 +144,11 @@ image:components/skeleton/new_skeleton.png[Neue skelett-Form]
 |xref:_manage_projects[Projekte verwalten]
 |Ermöglicht Ihnen die Verwaltung der Projekte eines Skeletts.
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
 |Formular für ein Skelett bearbeiten.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
 |Diesen Skelett löschen. Nur möglich, wenn es keine Projekte gibt.
 |===
