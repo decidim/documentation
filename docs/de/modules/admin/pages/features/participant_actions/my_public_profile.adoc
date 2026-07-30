@@ -77,4 +77,4 @@ Logged in participants can perform two actions from their public profile page:
 . Edit their profile: When clicking this button, they're redirected to their xref:admin:features/participant_actions/my_account.adoc[account].
 . Create a group: When clicking this button, they're redirected to the xref:admin:features/participant_actions/group_profile.adoc[group creation form].
 
-NOTE: The group creation option is only available when groups are enabled for the organization.
+NOTE: Die Option zur Gruppenerstellung ist nur verfügbar, wenn Gruppen für die Organisation aktiviert sind.
