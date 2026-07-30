@@ -1,6 +1,6 @@
 = Konferenzerstellung
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Konferenzen ermöglichen es Admins, Komponenten im Kontext einer Veranstaltung zu konfigurieren, in der Regel in Verbindung mit einem Programm.
 Um mit der Erstellung einer Konferenz zu beginnen, klicken Sie in der Konferenzliste oben rechts auf der Seite auf die Schaltfläche "Neue Konferenz".
@@ -75,11 +75,11 @@ image::spaces/conferences/conference_new_form_images.png[New conference form ima
 |Home-Bild
 |Optional
 |Bild, das auf den Präsentationskarten dieser Konferenz verwendet wird. Anleitung für Datei: Muss ein Bild oder ein Dokument sein.
-Für Bilder verwenden Sie vorzugsweise Landschaftsbilder, der Dienst bewirtschaftet das Bild. Maximale Dateigrösse: 10 MB
+Für Bilder verwenden Sie vorzugsweise Bilder im Querformat, der Dienst beschneidet das Bild. Maximale Dateigrösse: 10 MB
 
 |Bannerbild
 |Optional
-|Bild, das im Kopfbereich der Konferenz verwendet wird. Vorzugsweise ein Querformatbild ohne Text. Der Dienst bewirkt
+|Bild, das im Kopfbereich der Konferenz verwendet wird. Vorzugsweise ein Querformatbild ohne Text. Der Dienst beschneidet
 das Bild. Maximale Dateigrösse: 10 MB.
 |===
 
@@ -95,11 +95,11 @@ image::spaces/conferences/conference_new_form_filters.png[New conference form fi
 |===
 |Feld |Typ |Beschreibung
 
-|Bereiche aktiviert
+|Themen aktiviert
 |Optional
 |Aktivieren Sie dies, wenn Sie die Filterung nach Themen in dieser Konferenz haben möchten.
 
-|Bereich
+|Thema
 |Optional
 |Zu welchem xref:admin:settings/scopes.adoc[Thema] diese Konferenz gehört.
 
@@ -115,7 +115,7 @@ Es kann auf der Startseite mit dem Startseiten-Block "Phase & Dauer" aktiviert w
 
 image::spaces/conferences/conference_new_form_duration.png[New conference form duration section]
 
-.Neues Teilnahme-Prozess-Formular: Dauer
+.Neues Beteiligungsprozess-Formular: Dauer
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
@@ -173,10 +173,10 @@ image::spaces/conferences/conferences_new_form_related_processes.png[New confere
 |Wählen Sie Versammlungen aus, die mit der Konferenz verwandt sind. Verwenden Sie die Funktion *STRG* oder *CMD*, um mehr als eine Option auszuwählen.
 |===
 
-=== Erstelle das Programm
+=== Programm erstellen
 
-Um das Programm der Konferenz zu erstellen, müssen Sie ein neues xref:components/meetings erstellen. doc[Meeting component] mit den
-Daten und Zeiten der verschiedenen Vorträge, Workshops, Sessions, etc. Nach der Veröffentlichung der Veranstaltungen ist die Schaltfläche für das Programm
+Um das Programm der Konferenz zu erstellen, müssen Sie ein neues xref:components/meetings.adoc[Meeting component] mit den
+Daten und Zeiten der verschiedenen Vorträge, Workshops, Sessions, etc. erstellen. Nach der Veröffentlichung der Veranstaltungen ist die Schaltfläche für das Programm
 auf der Startseite sichtbar.
 
 image::spaces/conferences/program_frontend.png[Conferences program frontend]
