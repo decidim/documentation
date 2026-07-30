@@ -21,12 +21,12 @@ To create a Meetings component, first go to the xref:admin:spaces.adoc[participa
 
 image::components/meetings/component_meeting.png[Add Meetings component button]
 
-Then:
+Dann:
 
-. Click on the "Components" item in the secondary menu
-. Click the "Add component" button
+. Klicken Sie im Sekundärmenü auf den Punkt "Komponenten"
+. Klicken Sie auf die Schaltfläche "Komponente hinzufügen"
 . Select "Meetings"
-. Fill the component creation form
+. Füllen Sie das Formular zur Komponentenerstellung aus
 
 You can still update this form and the configuration after creating the component, by clicking the
 image:icons/action_configure.png[Configure icon] icon in the components list.
@@ -42,11 +42,11 @@ image::components/meetings/component.png[Add a meetings component]
 |Benötigt
 |Wie lautet der Name dieser Komponente.
 
-|Bestellposition
+|Reihenfolge
 |Optional
-|The order of the component in relation with the other components. Eine niedrigere Zahl bedeutet eine höhere Priorität.
-For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0"
-then "component b" is first when ordering.
+|Die Reihenfolge der Komponente im Verhältnis zu den anderen Komponenten. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+Wenn Sie beispielsweise zwei Komponenten haben, "Komponente a" mit der Gewichtung "10" und "Komponente b" mit der Gewichtung "0",
+steht "Komponente b" bei der Sortierung an erster Stelle.
 |===
 
 .Komponente hinzufügen - Meeting-Formular: Globale Einstellungen
@@ -60,7 +60,7 @@ then "component b" is first when ordering.
 
 |Bereich
 |Optional
-|Which xref:admin:settings/scopes.adoc[Scopes] does this component belongs to.
+|Zu welchen xref:admin:settings/scopes.adoc[Themen] diese Komponente gehört.
 
 |Mitteilung
 |Optional
@@ -76,7 +76,7 @@ then "component b" is first when ordering.
 
 |Maximale Länge der Kommentare
 |Optional
-|The characters limit that participants have when making comments. Lassen Sie 0 für den Standardwert.
+|Das Zeichenlimit, das Teilnehmenden beim Verfassen von Kommentaren zur Verfügung steht. Lassen Sie 0 für den Standardwert.
 
 |Registrierungscode aktiviert
 |Optional
@@ -116,7 +116,7 @@ Erfahren Sie mehr unter xref:components/meetings/registrations.adoc[Registration
 
 == Beispiele
 
-Some examples of where this component is used:
+Einige Beispiele, wo diese Komponente verwendet wird:
 
 * https://www.decidim.barcelona/processes/PAM2020/f/3734/[Program d'Actuació Municipal (PAM) 2020-2023]
 * https://meta.decidim.org/assemblies/coordination-committee/f/1037/meetings[The Decidim association coordination committee meetings]
