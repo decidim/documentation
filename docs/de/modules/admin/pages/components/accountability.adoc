@@ -1,10 +1,10 @@
 = Verantwortlichkeit
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Die Rechenschaftspflicht-Komponente ermöglicht es Teilnehmenden, den Umsetzungsstand eines Projekts zu sehen und seine Entwicklung zu verfolgen.
 
-Diese Funktion ermöglicht es Administrator:innen, eine Zusammenfassung der in Versammlungen, partizipativen Prozessen oder anderen Räumen beschlossenen Ergebnisse darzustellen. Administrator:innen erstellen Ergebnisse, die sie anschließend kategorisieren und mit Vorschlägen, Treffen oder Investitionsprojekten verknüpfen können (zum Beispiel im Rahmen eines partizipativen Budgets).
+Diese Funktion ermöglicht es Admins, eine Zusammenfassung der in Versammlungen, Beteiligungsprozessen oder anderen Räumen beschlossenen Ergebnisse darzustellen. Admins erstellen Ergebnisse, die sie anschliessend kategorisieren und mit Vorschlägen, Veranstaltungen oder Investitionsprojekten verknüpfen können (zum Beispiel im Rahmen eines partizipativen Budgets).
 
 image::components/accountability/example01.png[Example of results list]
 
@@ -12,11 +12,11 @@ Ergebnisse können detailliert nachverfolgt werden, mit einer Änderungshistorie
 
 image::components/accountability/example02.png[Example of a result]
 
-In diesem Abschnitt der Dokumentation findest du Informationen dazu, wie du all diese Elemente konfigurierst und verwaltest:
+In diesem Abschnitt der Dokumentation finden Sie Informationen dazu, wie Sie all diese Elemente konfigurieren und verwalten:
 
-* xref:admin:components/accountability/results.adoc[Results]
+* xref:admin:components/accountability/results.adoc[Ergebnisse]
 * xref:admin:components/accountability/statuses.adoc[Status]
-* xref:admin:components/accountability/milestone.adoc[Milestones]
+* xref:admin:components/accountability/milestone.adoc[Meilensteine]
 * xref:admin:components/accountability/import.adoc[Ergebnisse importieren und exportieren]
 
 == Konfiguration
@@ -60,11 +60,11 @@ steht "Komponente b" bei der Sortierung an erster Stelle.
 |===
 |Feld |Typ |Beschreibung
 
-|Bereiche aktiviert
+|Themen aktiviert
 |Optional
 |Aktivieren Sie dies, wenn Sie die Filterung nach xref:admin:settings/scopes.adoc[Themen] in dieser Komponente verfügbar haben möchten.
 
-|Bereich
+|Thema
 |Optional
 |Zu welchem xref:admin:settings/scopes.adoc[Thema] diese Komponente gehört.
 
