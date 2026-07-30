@@ -1,13 +1,13 @@
-= Teilnehmer
+= Teilnehmende
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Teilnehmende sind alle Personen mit einem Konto auf der Plattform, unabhängig davon, ob sie ihre E-Mail-Adresse bestätigt haben oder nicht.
-Auf dieser Seite kann ein Administrator:
+Auf dieser Seite kann ein Admin:
 
-* Teilnehmer blockieren, zum Beispiel, weil sie gegen die Nutzungsbedingungen spammen oder handeln
+* Teilnehmende blockieren, zum Beispiel weil sie spammen oder gegen die Nutzungsbedingungen verstossen
 * Eine teilnehmende Person über private Decidim-Nachrichten kontaktieren
-* Offizialisiere einen Teilnehmer
+* Teilnehmende offizialisieren
 * Die E-Mail-Adresse einer teilnehmenden Person anzeigen
 
 image:participants/participants_participants.png[Teilnehmendenliste]
@@ -46,12 +46,12 @@ Sie können auch in der Suchleiste nach Teilnehmenden anhand ihrer E-Mail-Adress
 |Immer verfügbar.
 
 |image:icons/action_contact.png[Kontaktieren]
-|xref:_Kontakt[Contact]
+|xref:_contact[Kontakt]
 |Um eine teilnehmende Person über eine private Nachricht zu kontaktieren.
 |Immer verfügbar.
 
 |image:icons/action_verify.png[Offizialisieren]
-|xref:_offiziell[Officialize]
+|xref:_officialize[Offizialisieren]
 |Um anzuerkennen, dass eine teilnehmende Person einen besonderen Status hat, wie Bürgermeister:in, Vereinspräsident:in usw.
 |Verfügbar für nicht offizialisierte Teilnehmende.
 
@@ -62,7 +62,7 @@ Sie können auch in der Suchleiste nach Teilnehmenden anhand ihrer E-Mail-Adress
 
 |image:icons/action_delete.png[Offizialisierung aufheben]
 |Unoffizialisieren
-|Eine Amtsenthebung aufzuheben.
+|Eine Offizialisierung aufzuheben.
 |Verfügbar für offizialisierte Teilnehmende.
 |===
 
@@ -87,7 +87,7 @@ Um Teilnehmende direkt über die private Nachrichtenfunktion der Plattform zu ko
 
 image::participants/participants_conversation.png[Conversation with a participant]
 
-=== Offiziell
+=== Offizialisieren
 
 Diese Option ist nützlich, um anzuerkennen, dass eine teilnehmende Person einen bestimmten Status auf der
 Plattform hat. Zum Beispiel, wenn jemand Bürgermeister:in einer Stadt, Gemeinderät:in oder
