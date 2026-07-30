@@ -1,6 +1,6 @@
 = Newsletter
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Newsletter können versendet werden, um Teilnehmende über die neuesten Nachrichten auf der Plattform zu informieren: die Lancierung einer neuen Konsultation, einen Hinweis
 vor dem Ablauf einer Abstimmungsfrist, die Bekanntgabe eines Ergebnisses, den Fortschritt laufender Projekte usw.
@@ -21,7 +21,7 @@ zum Beispiel ein partizipatorischer Budgetprozess.
 * Wenn eine neue Konferenz veröffentlicht wird.
 * Usw.
 
-=== How to find it?
+=== Wie findet man sie?
 
 Um auf das Newsletter-Panel zuzugreifen, gehen Sie zum Admin-Dashboard und klicken Sie in der Verwaltungsnavigation auf den Eintrag "Newsletter".
 
@@ -58,7 +58,7 @@ NOTE: Sie können "%\{name}" an beliebiger Stelle im Text oder Betreff verwenden
 
 image::features/newsletters/newsletter_new_basic.png[Newsletter new template basic form]
 
-.Neuer Newsletter "basic (only text)" Formular
+.Neues Newsletter-Formular "einfach (nur Text)"
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
@@ -91,7 +91,7 @@ image::features/newsletters/newsletter_new_cta.png[Newsletter new template Image
 |Optional
 |Der Text der Handlungsaufforderungs-Schaltfläche.
 
-|URL des Aktions-Buttons aufrufen
+|Call-to-Action-Button-URL
 |Optional
 |Wohin der Link der Handlungsaufforderung führt.
 
@@ -101,7 +101,7 @@ image::features/newsletters/newsletter_new_cta.png[Newsletter new template Image
 
 |Hauptbild
 |Optional
-|Bildführung: Vorzugsweise ein Querformat ohne Text. Der Dienst erzeugt das Bild.
+|Bildführung: Vorzugsweise ein Querformat ohne Text. Der Dienst beschneidet das Bild.
 Erlaubte Dateiendungen: JPG JPEG PNG WEBP
 |===
 
