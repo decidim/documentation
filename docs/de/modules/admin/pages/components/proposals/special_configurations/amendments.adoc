@@ -1,21 +1,21 @@
-= Änderungen
+= Änderungsanträge
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-The amendment feature allows participants to propose changes to existing proposals, and therefore collaborate with other participants.
+Die Funktion für Änderungsanträge ermöglicht es Teilnehmenden, Änderungen an bestehenden Vorschlägen vorzuschlagen und so mit anderen Teilnehmenden zusammenzuarbeiten.
 
-It's useful to propose improvements or corrections, specially when redacting laws or norms with the
-xref:components/proposals/special_configurations/participatory_texts.adoc[Participatory Texts] feature.
+Sie ist nützlich, um Verbesserungen oder Korrekturen vorzuschlagen, besonders bei der Ausarbeitung von Gesetzen oder Normen mit der Funktion
+      xref:components/proposals/special_configurations/participatory_texts.adoc[Partizipative Texte].
 
-It has similarities with xref:components/proposals/special_configurations/collaborative_drafts.adoc[Collaborative Drafts], but the main difference
-is that with amendments there is no need to trust the other authors intentions, as every change is reviewed and must be
-approved by the author of the original proposal.
+Sie weist Ähnlichkeiten mit xref:components/proposals/special_configurations/collaborative_drafts.adoc[Kollaborativen Entwürfen] auf, der Hauptunterschied
+      besteht jedoch darin, dass bei Änderungsanträgen kein Vertrauen in die Absichten der anderen Urheberschaft nötig ist, da jede Änderung geprüft und
+      von der Urheberschaft des ursprünglichen Vorschlags genehmigt werden muss.
 
 image::components/proposals/amendments/amendment.png[Amendment of a proposal]
 
 == Konfiguration
 
-To configure "Amendments" in proposals, enable the "Amendments enabled" setting in the component configuration form.
+Um "Änderungsanträge" bei Vorschlägen zu konfigurieren, aktivieren Sie die Einstellung "Änderungsanträge aktiviert" im Konfigurationsformular der Komponente.
 
 image::components/proposals/component_specific_conf.png[Add component form - Specific configurations]
 
@@ -24,68 +24,68 @@ image::components/proposals/component_specific_conf.png[Add component form - Spe
 |===
 |Feld |Typ |Beschreibung
 
-|Änderungen aktiviert
-|Globale
-|Check to enable amendments in the proposals components. Other settings appear when it's enabled.
+|Änderungsanträge aktiviert
+|Global
+|Aktivieren Sie dies, um Änderungsanträge in der Vorschläge-Komponente zu ermöglichen. Weitere Einstellungen erscheinen, wenn dies aktiviert ist.
 
-|Änderungsassistent Hilfetext
-|Globale
+|Hilfetext für den Änderungsantrags-Assistenten
+|Global
 |Der Hilfetext, der beim Erstellen neuer Änderungsanträge sichtbar ist.
 
 |Änderungserstellung aktiviert
 |Schritt
-|Participant can amend proposals for this phase.
+|Teilnehmende können in dieser Phase Änderungsanträge zu Vorschlägen stellen.
 
 |Änderungsreaktion aktiviert
 |Schritt
-|Proposal's authors are able to accept or reject Participant's amendments for this phase.
+|Die Urheberschaft eines Vorschlags kann in dieser Phase die Änderungsanträge von Teilnehmenden annehmen oder ablehnen.
 
-|Förderung von Änderungen aktiviert
+|Förderung von Änderungsanträgen aktiviert
 |Schritt
-|If it's rejected, amendments authors are able to promote their amendment as a proposal for this phase.
+|Wird er abgelehnt, kann die Urheberschaft des Änderungsantrags diesen in dieser Phase zu einem eigenen Vorschlag hochstufen.
 
 |Sichtbarkeit von Änderungen
 |Schritt
-|Choose between "Amendments are visible to all" or "Amendments are visible only to their authors"
+|Wählen Sie zwischen "Änderungsanträge sind für alle sichtbar" oder "Änderungsanträge sind nur für ihre Urheberschaft sichtbar"
 |===
 
-=== Create an amendment
+=== Einen Änderungsantrag erstellen
 
-Let's imagine a participant sees another participant's proposal, and wants to enhance it.
-When amendments are enabled, they can click the "Amend" button on the proposal page.
+Stellen wir uns vor, eine teilnehmende Person sieht den Vorschlag einer anderen teilnehmenden Person und möchte ihn verbessern.
+Wenn Änderungsanträge aktiviert sind, kann sie auf der Vorschlagsseite auf die Schaltfläche "Ändern" klicken.
 
 image::components/proposals/amendments/proposal_to_amend.png[Amend button on proposal page]
 
-They can then make the changes in the "Create amendment draft" form, directly on the original text.
+Sie kann dann die Änderungen im Formular "Entwurf für Änderungsantrag erstellen" direkt am Originaltext vornehmen.
 
 image::components/proposals/amendments/create_amendment_draft.png[Create amendment draft]
 
-The participant can then preview their amendment before publishing it.
+Die teilnehmende Person kann anschliessend eine Vorschau ihres Änderungsantrags ansehen, bevor sie ihn veröffentlicht.
 
 image::components/proposals/amendments/publish_amendment_draft.png[Publish amendment draft]
 
-=== Review an amendment
+=== Einen Änderungsantrag prüfen
 
-All the participants can see the amendment drafts made on proposals, on the proposal page.
-Amendments also appear as proposals in the proposal list and grid and can be filtered by participants.
+Alle Teilnehmenden können die Entwürfe von Änderungsanträgen zu Vorschlägen auf der Vorschlagsseite sehen.
+Änderungsanträge erscheinen auch als Vorschläge in der Vorschlagsliste und -übersicht und können von Teilnehmenden gefiltert werden.
 
 image::components/proposals/amendments/proposal_amended.png[Proposal with amendments]
 
-The author of the amended proposal receives a notification to go review the amendment.
+Die Urheberschaft des geänderten Vorschlags erhält eine Benachrichtigung, den Änderungsantrag zu prüfen.
 
 image::components/proposals/amendments/amendment.png[Amendment of a proposal]
 
-The author can then accept or reject the amendment. By clicking on the "Accept" button, they are redirected to the amendment review page.
+Die Urheberschaft kann den Änderungsantrag dann annehmen oder ablehnen. Durch Klicken auf die Schaltfläche "Annehmen" wird sie zur Prüfseite des Änderungsantrags weitergeleitet.
 
 image::components/proposals/amendments/proposal_amendment_review.png[Proposal amendment review]
 
-Once the amendment is approved, the original proposal is updated, and the fact that it was amended appears on the proposal.
+Sobald der Änderungsantrag genehmigt ist, wird der ursprüngliche Vorschlag aktualisiert, und die Tatsache, dass er geändert wurde, wird beim Vorschlag angezeigt.
 
 image::components/proposals/amendments/proposal_amended_accepted.png[Proposal amendment accepted]
 
-The version history for the proposal and its successive amendments is available by clicking the "See other versions" link at the bottom.
+Der Versionsverlauf des Vorschlags und seiner aufeinanderfolgenden Änderungsanträge ist über den Link "Weitere Versionen ansehen" unten verfügbar.
 
-=== Promote an amendment
+=== Einen Änderungsantrag hochstufen
 
-If a proposal is rejected and the "Amendment promotion enabled" is enabled, then the amendment author can promote it to create
- a new proposal.
+Wenn ein Vorschlag abgelehnt wird und "Hochstufung von Änderungsanträgen aktiviert" aktiviert ist, kann die Urheberschaft des Änderungsantrags diesen hochstufen, um
+      einen neuen Vorschlag zu erstellen.
