@@ -1,6 +1,6 @@
 = Initiativentypen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Initiativentypen bilden das grundlegende Rahmenwerk für Initiativen, da sie es Admins ermöglichen, die verschiedenen Formen festzulegen, die Initiativen
 annehmen können, sowie die spezifischen Regeln und die Anzahl der benötigten Unterschriften für jeden Initiativentyp.
@@ -33,29 +33,29 @@ Klicken Sie dann auf die Schaltfläche "Neuer Initiativentyp". Sie werden zum Er
 
 image::spaces/initiatives/type_form_general.png[Initiative type form general information]
 
-.Admin-Formular für neue Initiative Typ: Allgemeine Informationen
+.Admin-Formular für neuen Initiativentyp: Allgemeine Informationen
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Titel
 |Benötigt
-|Titel der Art der Initiative.
+|Titel des Initiativentyps.
 
 |Beschreibung
 |Benötigt
-|Erläuterung dessen, was mit dieser Initiative getan werden kann.
+|Erläuterung dessen, was mit diesem Initiativentyp getan werden kann.
 
 |Bannerbild
 |Benötigt
-|Ein Bild für diese Initiative. HINWEIS: Im Moment wird dies nicht verwendet.
+|Ein Bild für diesen Initiativentyp. HINWEIS: Im Moment wird dies nicht verwendet.
 |===
 
 ==== Optionen
 
 image::spaces/initiatives/type_form_options.png[Initiative type form options]
 
-.Admin-Formular für neue Initiative Typ: Optionen
+.Admin-Formular für neuen Initiativentyp: Optionen
 [cols="~,10h,~"]
 |===
 |Feld |Typ |Beschreibung
@@ -80,16 +80,16 @@ image::spaces/initiatives/type_form_options.png[Initiative type form options]
 |Optional
 |Urheber:innen und Admins erlauben, Initiativen anhand der Organisations-xref:admin:settings/areas.adoc[Bereiche] zu kategorisieren.
 
-|Unterschriftsbereich aktivieren
+|Unterschriften für untergeordnete Themen aktivieren
 |Optional
 |Diese Konfigurationsoption unterstützt nur Online-Abstimmungen. Sie aktiviert Unterthemen und funktioniert mit einem Berechtigungshandler, der einer Person ein Thema zuordnet.
-Stellen Sie sicher, dass Sie diese Berechtigung weiter unten in den Berechtigungseinstellungen auswählen. Damit es funktioniert, müssen Skizzen auf hierarchische Weise konfiguriert werden: 1 Elternteil - N Child.
+Stellen Sie sicher, dass Sie diese Berechtigung weiter unten in den Berechtigungseinstellungen auswählen. Damit es funktioniert, müssen die Themen hierarchisch konfiguriert werden: 1 übergeordnet - N untergeordnet.
 
 |Ermöglicht nur die Erstellung globaler Initiativen
 |Optional
-|Markieren Sie dieses Flag, wenn Sie "Child scope signature" aktiviert haben und den globalen Geltungsbereich als Ihren Elternbereich konfiguriert haben. Wenn dies aktiviert ist, wird die Auswahl des Themas im Erstellungsassistenten für Initiativen übersprungen.
+|Markieren Sie dieses Flag, wenn Sie "Unterschriften für untergeordnete Themen" aktiviert haben und das globale Thema als Ihr übergeordnetes Thema konfiguriert haben. Wenn dies aktiviert ist, wird die Auswahl des Themas im Erstellungsassistenten für Initiativen übersprungen.
 
-|Werbeausschuss aktivieren
+|Initiativkomitee aktivieren
 |Optional
 |Ob dieser Typ nur individuelle Initiativen zulässt oder auch kollektive Initiativen erlaubt (mehrere Urheber:innen, entweder mehrere Einzelpersonen oder eine Benutzergruppe).
 
@@ -115,7 +115,7 @@ Diese werden anschliessend für die PDF-Exportfunktion nach Ablauf der Sammelfri
 
 image::spaces/initiatives/type_form_authorizations.png[Initiative type form authorizations]
 
-.Admin-Formular für neuen Initiationstyp: Autorisierungseinstellungen
+.Admin-Formular für neuen Initiativentyp: Autorisierungseinstellungen
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
@@ -141,12 +141,12 @@ Klicken Sie auf die Schaltfläche "Neuer Geltungsbereich für Initiativentyp", u
 
 image::spaces/initiatives/admin_initiative_type_scope.png[New initiative type form]
 
-.Admin-Formular für neue Initiative Typ Anwendungsbereich
+.Admin-Formular für neuen Initiativentyp: Thema
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
-|Bereiche
+|Themen
 |Benötigt
 |Wählen Sie den Geltungsbereich aus, der zu dieser Anzahl an Unterschriften gehört. Wenn Sie keine spezifische Regel haben, behalten Sie den globalen Geltungsbereich bei.
 
@@ -180,7 +180,7 @@ Sobald Sie einen oder mehrere Initiativentypen erstellt haben, können Sie sie i
 |Konfigurieren
 |Um die Konfiguration und die Geltungsbereiche dieses Typs zu bearbeiten.
 
-|image:icons/action_permissions.png[Permissions icon]
+|image:icons/action_permissions.png[Symbol: Berechtigungen]
 |Berechtigungen
 |Um die Berechtigungen für diesen Initiativentyp zu bearbeiten.
 
