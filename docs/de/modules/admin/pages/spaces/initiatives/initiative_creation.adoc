@@ -1,6 +1,6 @@
 = Initiativenerstellung
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Sobald Sie die xref:admin:spaces/initiatives/types.adoc[Initiativentypen und -bereiche] konfiguriert haben, sollten Sie in der Lage sein, auf den Initiativenraum in der Benutzeroberfläche zuzugreifen.
 
@@ -48,15 +48,15 @@ image::spaces/initiatives/initiative_new_step_content.png[Initiative creation: i
 |Benötigt
 |Hängt von der Konfiguration des Initiativentyps ab.
 
-|Bereich
+|Thema
 |Benötigt
 |Hängt von der Konfiguration des Initiativentyps und der Typbereiche ab.
 
-|End of signature collection period
+|Ende der Unterschriftensammlung
 |Optional
 |Ob die Urheberschaft das Enddatum der Unterschriftensammlung ändern möchte. Kann über den Initiativentyp konfiguriert werden.
 
-|Fläche
+|Bereich
 |Optional
 |Ob die Urheberschaft ihre Initiative kategorisieren möchte.
 
