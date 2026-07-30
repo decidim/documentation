@@ -1,71 +1,71 @@
-= First steps in Decidim
+= Erste Schritte in Decidim
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-=== Log in for the first time
+=== Erstmalig anmelden
 
-Once you or your developers have successfully installed Decidim, and created an organization in the System panel, you should
-receive an email asking you to complete your account creation.
-If you didn't receive an invitation email, ask the person in charge of the system administration to add you as an administrator.
+Sobald Sie oder Ihre Entwickelnden Decidim erfolgreich installiert und eine Organisation im Systempanel erstellt haben, sollten Sie
+      eine E-Mail erhalten, in der Sie gebeten werden, Ihre Kontoerstellung abzuschliessen.
+Falls Sie keine Einladungs-E-Mail erhalten haben, bitten Sie die für die Systemverwaltung zuständige Person, Sie als Admin hinzuzufügen.
 
 image::first_steps_invitation_email.png[Administrator invitation email]
 
-The invitation email redirects you to a form so you can finish setting up your account with your nickname, name, and password.
+Die Einladungs-E-Mail leitet Sie zu einem Formular weiter, in dem Sie die Einrichtung Ihres Kontos mit Spitzname, Name und Passwort abschliessen können.
 
 image::first_steps_account_creation.png[Administrator invitation email]
 
-=== Access the administration dashboard
+=== Auf das Verwaltungs-Dashboard zugreifen
 
-After logging in, you can see the platform as a participant, but it's not where you can configure and manage the platform.
-To access the administration dashboard, or administration panel, you can click in three different items:
+Nach der Anmeldung sehen Sie die Plattform als teilnehmende Person, aber dort können Sie die Plattform nicht konfigurieren und verwalten.
+Um auf das Verwaltungs-Dashboard bzw. das Verwaltungspanel zuzugreifen, können Sie auf drei verschiedene Elemente klicken:
 
-. The "Admin dashboard" button at the left of the administrator header only administrators can see.
-. The "Edit" button at the right of the administrator header.
-. The "Admin dashboard" button in the drop-down list available when you click your account avatar.
+. Die Schaltfläche "Admin-Dashboard" links in der Admin-Kopfzeile, die nur Admins sehen können.
+. Die Schaltfläche "Bearbeiten" rechts in der Admin-Kopfzeile.
+. Die Schaltfläche "Admin-Dashboard" in der Dropdown-Liste, die erscheint, wenn Sie auf Ihren Kontoavatar klicken.
 
 image::admin_dashboard_menu.png[Decidim Admin Dashboard in user menu]
 
-The "Edit" button redirects to the administration of the space you're seeing in the participant panel, whereas the other two buttons
-redirect to the administration dashboard.
+Die Schaltfläche "Bearbeiten" leitet Sie zur Verwaltung des Raums weiter, den Sie gerade im Teilnehmenden-Panel sehen, während die beiden anderen Schaltflächen
+      zum Verwaltungs-Dashboard weiterleiten.
 
-=== Administrators terms of service
+=== Nutzungsbedingungen für Admins
 
-For your first time accessing to the administration of Decidim, you are asked to review the administration terms of service.
-Click on the "I agree with this terms" button to be able to start configuring the platform.
+Wenn Sie zum ersten Mal auf die Verwaltung von Decidim zugreifen, werden Sie gebeten, die Nutzungsbedingungen für die Verwaltung zu prüfen.
+Klicken Sie auf die Schaltfläche "Ich stimme diesen Bedingungen zu", um mit der Konfiguration der Plattform beginnen zu können.
 
 image::admin_tos_pending.png[Decidim Admin Dashboard in user menu]
 
-Those terms of service can be useful for you if you start inviting other administrators to the platform, and you need them to be aware
-of specific privacy rules, or anything relevant for them before they have access to the administration.
+Diese Nutzungsbedingungen können nützlich sein, wenn Sie beginnen, weitere Admins auf die Plattform einzuladen, und diese über bestimmte
+      Datenschutzregeln oder andere für sie relevante Punkte informiert sein sollen, bevor sie Zugriff auf die Verwaltung erhalten.
 
-Those terms of service can be configured in the xref:admin:settings/configuration.adoc[Configuration panel].
+Diese Nutzungsbedingungen können im xref:admin:settings/configuration.adoc[Konfigurationspanel] konfiguriert werden.
 
-=== Explanation of the dashboard
+=== Erklärung des Dashboards
 
-Once you accepted the administrator terms of service, you can see the dashboard.
-On a new instance, almost no data is displayed, but you can see how it looks like on an active instance:
+Sobald Sie die Nutzungsbedingungen für Admins akzeptiert haben, können Sie das Dashboard sehen.
+Bei einer neuen Instanz werden fast keine Daten angezeigt, aber Sie können sehen, wie es bei einer aktiven Instanz aussieht:
 
 image::admin_dashboard.png[Decidim Admin Dashboard]
 
-You can see several sections on this page:
+Auf dieser Seite sehen Sie mehrere Abschnitte:
 
-. *Pending moderations*: highlights the number of pending moderations, reported users and contents combined.
-. *Activity*: number of participants and admins that logged in the last month, last week and last day.
-. *Metrics*: the graphics for the evolution of multiple components inside of Decidim:
-. *Admin log*: last actions made by all the administrators in the platform.
+. *Ausstehende Moderationen*: hebt die Anzahl der ausstehenden Moderationen, gemeldeten Teilnehmenden und Inhalte zusammen hervor.
+. *Aktivität*: Anzahl der Teilnehmenden und Admins, die sich im letzten Monat, in der letzten Woche und am letzten Tag angemeldet haben.
+. *Metriken*: die Grafiken zur Entwicklung mehrerer Komponenten innerhalb von Decidim:
+. *Admin-Protokoll*: die letzten Aktionen, die von allen Admins auf der Plattform durchgeführt wurden.
 
-=== Administration navigation
+=== Verwaltungsnavigation
 
-To navigate in the administration panel, you can click in all of the items displayed in the vertical navigation bar on the left.
+Um im Verwaltungspanel zu navigieren, können Sie auf alle Elemente klicken, die in der vertikalen Navigationsleiste auf der linken Seite angezeigt werden.
 
-* xref:admin:spaces/processes.adoc[Teilnehmende Prozessen]
-* xref:admin:spaces/assemblies.adoc[Assemblies]
-* xref:admin:spaces/initiatives.adoc[Initiatives]
-* xref:admin:spaces/conferences.adoc[Conferences]
+* xref:admin:spaces/processes.adoc[Beteiligungsprozesse]
+* xref:admin:spaces/assemblies.adoc[Versammlungen]
+* xref:admin:spaces/initiatives.adoc[Initiativen]
+* xref:admin:spaces/conferences.adoc[Konferenzen]
 * xref:admin:global_moderations.adoc[Globale Moderationen]
 * xref:admin:pages.adoc[Pages]
-* xref:admin:participants.adoc[Participants]
+* xref:admin:participants.adoc[Teilnehmende]
 * xref:admin:features/social_features/newsletters.adoc[Newsletter]
 * xref:admin:settings.adoc[Einstellungen]
-* Admin activity log
+* Admin-Aktivitätsprotokoll
 * xref:admin:templates.adoc[Vorlagen]
