@@ -1,31 +1,31 @@
 = Anhänge
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Anhänge erlauben es einem Administrator, statische Dateien in einen Raum hochzuladen.
+Anhänge erlauben es einem Admin, statische Dateien in einen Raum hochzuladen.
 
-Wenn ein Raum gestartet wird, Es ist wichtig, den Bürgern so viele Informationen wie möglich über sie zur Verfügung zu stellen, damit sie mit Wissen teilnehmen können.
-That is why it is helpful to add files, documents, images with relevant information.
+Wenn ein Raum gestartet wird, ist es wichtig, den Bürgern so viele Informationen wie möglich über sie zur Verfügung zu stellen, damit sie mit Wissen teilnehmen können.
+Deshalb ist es hilfreich, Dateien, Dokumente und Bilder mit relevanten Informationen hinzuzufügen.
 
-These documents can be grouped in *Folders*. Zum Beispiel könnten für einen partizipatorischen Prozess der Umgestaltung eines Quadrats Verzeichnisse mit Informationen über mögliche Verwendungen, Pläne, Wirtschaftsinformationen usw. erstellt werden.
+Diese Dokumente können in *Ordnern* gruppiert werden. Zum Beispiel könnten für einen partizipatorischen Prozess der Umgestaltung eines Platzes Ordner mit Informationen über mögliche Verwendungen, Pläne, Wirtschaftsinformationen usw. erstellt werden.
 
-They can be found on the space xref:admin:spaces/processes/landing_page.adoc[landing page] when the content block is enabled.
+Sie sind auf der xref:admin:spaces/processes/landing_page.adoc[Startseite] des Raums zu finden, wenn der Inhaltsblock aktiviert ist.
 
 image:spaces/attachments.png[Anhänge in der öffentlichen Schnittstelle anzeigen]
 
-=== How to find it?
+=== Wie findet man sie?
 
-To create and manage attachments, click the *Attachments* item in the left navigation bar of any participatory space.
+Um Anhänge zu erstellen und zu verwalten, klicken Sie in der linken Navigationsleiste eines beliebigen partizipativen Raums auf den Punkt *Anhänge*.
 
-image:spaces/attachments_admin.png[View the attachments in the administration interface]
+image:spaces/attachments_admin.png[Anhänge in der Verwaltungsoberfläche ansehen]
 
-There, you are able to manage the attachments and folders, configure them, add new ones, etc.
+Dort können Sie die Anhänge und Ordner verwalten, konfigurieren, neue hinzufügen usw.
 
 == Konfiguration
 
 === Einen neuen Anhang erstellen
 
-To create a new attachment, click the "New attachment" button.
+Um einen neuen Anhang zu erstellen, klicken Sie auf die Schaltfläche "Neuer Anhang".
 
 image:spaces/attachments_new_form.png[Neues Anhang-Formular erstellen]
 
@@ -40,11 +40,11 @@ image:spaces/attachments_new_form.png[Neues Anhang-Formular erstellen]
 
 |Reihenfolge
 |Optional
-|Which order it has in relation to the other attachments. Eine niedrigere Zahl bedeutet eine höhere Priorität. For instance, if you have two categories, "Attachment a" with weight "10" and "Attachment b" with weight "0" then "Attachment b" will be first when ordering.
+|Welche Reihenfolge er im Verhältnis zu den anderen Anhängen hat. Eine niedrigere Zahl bedeutet eine höhere Priorität. Wenn Sie zum Beispiel zwei Kategorien haben, "Anhang a" mit der Gewichtung "10" und "Anhang b" mit der Gewichtung "0", dann steht "Anhang b" bei der Sortierung an erster Stelle.
 
 |Beschreibung
 |Benötigt
-|A long description explaining what this attachment is about.
+|Eine ausführliche Beschreibung, worum es bei diesem Anhang geht.
 
 |Ordner
 |Optional
@@ -53,14 +53,14 @@ image:spaces/attachments_new_form.png[Neues Anhang-Formular erstellen]
 |Datei
 |Benötigt
 |Datei hochladen. Anleitung für Datei: Muss ein Bild oder ein Dokument sein. Maximale Dateigrösse: 10 MB. Erlaubte
--Dateierweiterungen hängen von Ihrer Serverkonfiguration ab.
+Dateierweiterungen hängen von Ihrer Serverkonfiguration ab.
 |===
 
 === Neuen Ordner erstellen
 
-image:spaces/attachments_folders_admin.png[View the folders in the administration interface]
+image:spaces/attachments_folders_admin.png[Ordner in der Verwaltungsoberfläche ansehen]
 
-To create and manage attachments folders, click the *Folders* tab.
+Um Anhangsordner zu erstellen und zu verwalten, klicken Sie auf den Tab *Ordner*.
 
 image:spaces/attachments_new_folder_form.png[Erstellen eines neuen Ordners für Dateiformen]
 
@@ -75,36 +75,36 @@ image:spaces/attachments_new_folder_form.png[Erstellen eines neuen Ordners für 
 
 |Reihenfolge
 |Optional
-|Which order it has in relation to the other folders. Eine niedrigere Zahl bedeutet eine höhere Priorität. For instance, if you have two folders, "Folder a" with weight "10" and "Folder b" with weight "0" then "Folder b" will be first when ordering.
+|Welche Reihenfolge er im Verhältnis zu den anderen Ordnern hat. Eine niedrigere Zahl bedeutet eine höhere Priorität. Wenn Sie zum Beispiel zwei Ordner haben, "Ordner a" mit der Gewichtung "10" und "Ordner b" mit der Gewichtung "0", dann steht "Ordner b" bei der Sortierung an erster Stelle.
 
 |Beschreibung
 |Benötigt
 |Eine lange Beschreibung, die erklärt, worum es in diesem Ordner geht.
 |===
 
-=== Manage attachments
+=== Anhänge verwalten
 
-You can find all the attachments on the list in the administration panel, with:
+Sie finden alle Anhänge in der Liste im Verwaltungspanel mit:
 
-* *Title*: title of the attachment, given when creating or editing it.
-* *Folder*: folder where the attachment is stored.
-* *Type*: extension type of the attachment.
-* *Size*: size of the attachment in bytes.
+* *Titel*: Titel des Anhangs, bei der Erstellung oder Bearbeitung vergeben.
+* *Ordner*: Ordner, in dem der Anhang gespeichert ist.
+* *Typ*: Dateiendung des Anhangs.
+* *Grösse*: Grösse des Anhangs in Bytes.
 
-You can also access the folders list by clicking the "Folders" tab on top of the attachments list.
+Sie können auch auf die Ordnerliste zugreifen, indem Sie oben in der Anhangsliste auf den Tab "Ordner" klicken.
 
 === Aktionen
 
-.Components actions in component list
+.Anhangsaktionen in der Anhangsliste
 [cols="10h,20h,~"]
 |===
 |Icon |Name |Definition
 
 |image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
-|To edit the name, description, order position and the folder of the attachment.
+|Um den Namen, die Beschreibung, die Reihenfolge und den Ordner des Anhangs zu bearbeiten.
 
 |image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
-|To delete the attachment.
+|Um den Anhang zu löschen.
 |===
