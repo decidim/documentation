@@ -1,20 +1,20 @@
 = Blog
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-The Blog component allows administrators to post news about a participatory space, which participants can read to get updates.
+Die Blog-Komponente ermöglicht es Admins, Neuigkeiten zu einem partizipativen Raum zu veröffentlichen, die Teilnehmende lesen können, um auf dem Laufenden zu bleiben.
 
 image::components/blog/example01.png[Example of blog posts list]
 
-All blog posts are available on the post list, and participants can click each blog post to learn more about what's new.
+Alle Blogbeiträge sind in der Beitragsliste verfügbar, und Teilnehmende können auf jeden Blogbeitrag klicken, um mehr über die Neuigkeiten zu erfahren.
 
 image::components/blog/example02.png[Example of a blog post]
 
 == Konfiguration
 
-=== Create a blog component
+=== Eine Blog-Komponente erstellen
 
-To create a Blog component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
+Um eine Blog-Komponente zu erstellen, gehen Sie zunächst zum xref:admin:spaces.adoc[partizipativen Raum], in dem Sie sie erstellen möchten.
 
 image::components/blog/component_blog.png[Add Blog component button]
 
@@ -22,11 +22,11 @@ Dann:
 
 . Klicken Sie im Sekundärmenü auf den Punkt "Komponenten"
 . Klicken Sie auf die Schaltfläche "Komponente hinzufügen"
-. Select "Blog"
+. Wählen Sie "Blog"
 . Füllen Sie das Formular zur Komponentenerstellung aus
 
-You can still update this form and the configuration after creating the component, by clicking the
-image:icons/action_configure.png[Configure icon] icon on the components list.
+Sie können dieses Formular und die Konfiguration auch nach der Erstellung der Komponente noch aktualisieren, indem Sie in der Komponentenliste auf das
+      image:icons/action_configure.png[Symbol: Konfigurieren] Konfigurieren-Symbol klicken.
 
 image::components/blog/component.png[Add component form]
 
@@ -37,25 +37,25 @@ image::components/blog/component.png[Add component form]
 
 |Name
 |Benötigt
-|The title of this component. For instance, "Blogs" or "Latest news"
+|Der Titel dieser Komponente. Zum Beispiel "Blogs" oder "Neuigkeiten"
 
 |Reihenfolge
 |Optional
-|Which order it has in relation to the other components. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+|Welche Reihenfolge sie im Verhältnis zu den anderen Komponenten hat. Eine niedrigere Zahl bedeutet eine höhere Priorität.
 |===
 
-.Blog form - Global settings
+.Blogformular - Globale Einstellungen
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Mitteilung
 |Optional
-|A general announcement visible on the Blog component landing page.
+|Eine allgemeine Ankündigung, die auf der Startseite der Blog-Komponente sichtbar ist.
 
 |Kommentare aktiviert
 |Optional
-|If you want participants to be able to comment on the blog posts.
+|Wenn Teilnehmende die Blogbeiträge kommentieren können sollen.
 
 |Maximale Länge der Kommentare
 |Optional
@@ -69,31 +69,31 @@ image::components/blog/component.png[Add component form]
 
 |Mitteilung
 |Optional
-|A general announcement that will be visible on the general blog landing page.
+|Eine allgemeine Ankündigung, die auf der allgemeinen Startseite des Blogs sichtbar sein wird.
 
 |Kommentare blockiert
 |Optional
 |Ob Sie das Erstellen von Kommentaren für diese Phase aktivieren möchten.
 
-|Befürworter aktiviert
+|Unterstützungen aktiviert
 |Optional
 |Ob Sie Bestätigungen für diese Phase aktivieren möchten.
 
-|Befürworter blockiert
+|Unterstützungen blockiert
 |Optional
-|Whether you want to enable adding new endorsements for this phase.
+|Ob Sie das Hinzufügen neuer Unterstützungen für diese Phase aktivieren möchten.
 |===
 
 === Beiträge verwalten
 
-To start creating and managing posts, click on the component title in the navigation bar or on the component list, or click on the
-image:icons/action_edit.png[Manage component icon] icon on the components list.
+Um mit dem Erstellen und Verwalten von Beiträgen zu beginnen, klicken Sie auf den Komponententitel in der Navigationsleiste oder in der Komponentenliste, oder klicken Sie auf das
+      image:icons/action_edit.png[Symbol: Komponente verwalten] Verwalten-Symbol in der Komponentenliste.
 
 image:components/blog/manage_posts.png[Beitragstabelle verwalten]
 
-=== Create a post
+=== Einen Beitrag erstellen
 
-To create a post, click the "New post" button on the top right of the page.
+Um einen Beitrag zu erstellen, klicken Sie oben rechts auf der Seite auf die Schaltfläche "Neuer Beitrag".
 
 image:components/blog/new_post.png[Neues Beitragsformular]
 
@@ -102,9 +102,9 @@ image:components/blog/new_post.png[Neues Beitragsformular]
 |===
 |Feld |Typ |Beschreibung
 
-|Author
+|Urheberschaft
 |Benötigt
-|Participant account or user group authoring the post.
+|Teilnehmendenkonto oder Benutzergruppe, die den Beitrag verfasst hat.
 
 |Titel
 |Benötigt
@@ -114,9 +114,9 @@ image:components/blog/new_post.png[Neues Beitragsformular]
 |Benötigt
 |Was ist die Beschreibung dieses Beitrags.
 
-|Publish time
+|Veröffentlichungszeitpunkt
 |Optional
-|Publication date for the post. If in the future, the post is not published until this date.
+|Veröffentlichungsdatum des Beitrags. Falls dieses Datum in der Zukunft liegt, wird der Beitrag erst zu diesem Zeitpunkt veröffentlicht.
 |===
 
 === Aktionen
@@ -128,32 +128,32 @@ image:components/blog/new_post.png[Neues Beitragsformular]
 
 |image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
-|Edit this post.
+|Diesen Beitrag bearbeiten.
 
-|image:icons/action_folder.png[Folder icon]
+|image:icons/action_folder.png[Symbol: Ordner]
 |Ordner
-|For classifying attachments.
+|Zum Klassifizieren von Anhängen.
 
 |image:icons/action_attachments.png[Symbol: Anhänge]
 |Anhänge
-|Add documents related to the post.
+|Dokumente hinzufügen, die sich auf den Beitrag beziehen.
 
 |image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
-|See how it's shown in the frontend to participants.
+|Sehen Sie, wie er Teilnehmenden im Frontend angezeigt wird.
 
-|image:icons/action_permissions.png[Permissions icon]
+|image:icons/action_permissions.png[Symbol: Berechtigungen]
 |Berechtigungen
-|Handle the authorizations needed to comment or endorse this specific blog post.
+|Verwalten Sie die Berechtigungen, die zum Kommentieren oder Unterstützen dieses spezifischen Blogbeitrags erforderlich sind.
 
 |image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
-|Delete this post.
+|Diesen Beitrag löschen.
 |===
 
 == Beispiele
 
-Below, you can find some links to example blog components:
+Nachfolgend finden Sie einige Links zu Beispiel-Blog-Komponenten:
 
-* https://meta.decidim.org/processes/news/f/1719/posts[Latest news of the Decidim association]
-* https://www.decidim.barcelona/processes/volem-decidir/f/6338/posts[News on a participatory process in Barcelona]
+* https://meta.decidim.org/processes/news/f/1719/posts[Neuigkeiten des Decidim-Vereins]
+* https://www.decidim.barcelona/processes/volem-decidir/f/6338/posts[Neuigkeiten zu einem Beteiligungsprozess in Barcelona]
