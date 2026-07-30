@@ -2,15 +2,15 @@
 
 == Understand the basics
 
-A participatory process is a sequence of participatory activities with the aim of defining and making a decision on a specific topic.
-For example, you could have a participatory process like this:
+Ein Beteiligungsprozess ist eine Abfolge von Beteiligungsaktivitäten mit dem Ziel, eine Entscheidung zu einem bestimmten Thema zu definieren und zu treffen.
+Zum Beispiel könnte ein Beteiligungsprozess wie folgt aussehen:
 
-. First filling out a survey for collect participants opinion;
-. Then opening proposals;
-. Discussing them in face-to-face or virtual meetings;
-. Finally prioritizing them before implementation.
+. Zunächst das Ausfüllen einer Umfrage, um die Meinung der Teilnehmenden einzuholen;
+. Dann die Eröffnung von Vorschlägen;
+. Deren Diskussion in persönlichen oder virtuellen Veranstaltungen;
+. Schliesslich deren Priorisierung vor der Umsetzung.
 
-NOTE: You want to create a participatory process? Check the xref:admin:spaces/processes/process_creation.adoc[process creation] article.
+NOTE: Möchten Sie einen Beteiligungsprozess erstellen? Lesen Sie den Artikel xref:admin:spaces/processes/process_creation.adoc[Prozesserstellung].
 
 Beispiele für partizipatorische Prozesse sind: ein Prozess der Wahl der Mitglieder des Ausschusses (bei dem die Kandidaten zuerst vorgestellt werden,
 dann debattiert und schließlich wird eine Kandidatur gewählt), partizipative Budgets (wo Vorschläge gemacht werden Wirtschaftlich bewertet,
@@ -22,10 +22,10 @@ in einem partizipatorischen Prozess in Decidim zu verstehen:
 
 image::process_steps_components.png[Relation between Steps and Components in a Process in Decidim]
 
-What this diagram is showing is that for a participatory process you can configure different phases, and enable and configure
-the components for each phase as you need it for your process.
+Dieses Diagramm zeigt, dass Sie für einen Beteiligungsprozess verschiedene Phasen konfigurieren und die Komponenten für jede Phase
+nach Bedarf für Ihren Prozess aktivieren und konfigurieren können.
 
-Inside of every one of these Phases, you can enable the xref:admin:components.adoc[Components] you need.
+Innerhalb jeder dieser Phasen können Sie die benötigten xref:admin:components.adoc[Komponenten] aktivieren.
 
 In diesem Abschnitt der Dokumentation findest du Informationen dazu, wie du all diese Elemente konfigurierst und verwaltest:
 
@@ -43,30 +43,30 @@ In diesem Abschnitt der Dokumentation findest du Informationen dazu, wie du all 
 
 === How to find it?
 
-To access the Participatory processes panel, go in the administration panel and click the "Processes" item in the administration
-navigation bar.
+Um auf das Panel der Beteiligungsprozesse zuzugreifen, gehen Sie zum Verwaltungspanel und klicken Sie in der Verwaltungsnavigation
+auf den Eintrag "Prozesse".
 
 image::spaces/processes/processes_menu.png[Pages: Access processes panel]
 
-There, you are able to manage participatory processes and processes groups.
+Dort können Sie Beteiligungsprozesse und Prozessgruppen verwalten.
 
 == Konfiguration
 
-=== Manage processes
+=== Prozesse verwalten
 
 image::spaces/processes/processes_list.png[Participatory processes list]
 
-On this page, you are able to manage processes and xref:admin:spaces/processes/groups.adoc[process groups].
+Auf dieser Seite können Sie Prozesse und xref:admin:spaces/processes/groups.adoc[Prozessgruppen] verwalten.
 
-You can find all the processes on the list in the administration panel, with:
+Sie finden alle Prozesse in der Liste im Verwaltungspanel, mit:
 
-* *Title*: title of the process.
-* *Created at*: date of creation of the process.
-* *Private*: if the process is opened to all participants or to only certain participants.
-* *Published*: if the process is published or no.
+* *Titel*: Titel des Prozesses.
+* *Erstellt am*: Erstellungsdatum des Prozesses.
+* *Privat*: ob der Prozess für alle Teilnehmenden oder nur für bestimmte Teilnehmende offen ist.
+* *Veröffentlicht*: ob der Prozess veröffentlicht ist oder nicht.
 
-You can filter and sort this list by clicking the "Filter" button and the columns headers.
-You can also search for processes by their title in the search bar.
+Sie können diese Liste filtern und sortieren, indem Sie auf die Schaltfläche "Filter" und die Spaltenüberschriften klicken.
+Sie können auch in der Suchleiste nach Prozessen anhand ihres Titels suchen.
 
 image::spaces/processes/processes_list_filter.png[Participatory processes list filtered]
 
@@ -77,55 +77,55 @@ image::spaces/processes/processes_list_filter.png[Participatory processes list f
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Configure process icon]
+|image:icons/action_edit.png[Symbol: Prozess konfigurieren]
 |Konfigurieren
-|To edit the configuration and components for a process.
+|Um die Konfiguration und die Komponenten eines Prozesses zu bearbeiten.
 
-|image:icons/action_export.png[Export process icon]
+|image:icons/action_export.png[Symbol: Prozess exportieren]
 |Alle exportieren
-|Send the process configuration JSON file by email. Then it can be imported in other Decidim installation.
+|Die JSON-Konfigurationsdatei des Prozesses per E-Mail versenden. Anschliessend kann sie in einer anderen Decidim-Installation importiert werden.
 
-|image:icons/action_duplicate.png[Duplicate process icon]
+|image:icons/action_duplicate.png[Symbol: Prozess duplizieren]
 |Duplicate
-|To duplicate this process.
+|Um diesen Prozess zu duplizieren.
 
-|image:icons/action_preview.png[Preview process icon]
+|image:icons/action_preview.png[Symbol: Prozess-Vorschau]
 |Vorschau
-|Preview of how the process looks in the user interface.
+|Vorschau, wie der Prozess in der Benutzeroberfläche aussieht.
 
-|image:icons/action_moderate.png[Moderate process icon]
-|Moderate
-|To access the process moderation panel.
+|image:icons/action_moderate.png[Symbol: Prozess moderieren]
+|Moderieren
+|Um auf das Moderationspanel des Prozesses zuzugreifen.
 |===
 
-You can also click the "Manage" button at the top right of the page, to be able to import a process or
-configure xref:admin:spaces/processes/types.adoc[Process Types].
+Sie können auch oben rechts auf der Seite auf die Schaltfläche "Verwalten" klicken, um einen Prozess zu importieren oder
+xref:admin:spaces/processes/types.adoc[Prozesstypen] zu konfigurieren.
 
-=== Import a process
+=== Einen Prozess importieren
 
-To import a process, click the "Manage" button at the top right of the page.
+Um einen Prozess zu importieren, klicken Sie oben rechts auf der Seite auf die Schaltfläche "Verwalten".
 
 image::spaces/processes/import_menu.png[Participatory processes import menu]
 
-You are redirected to the import page, where you need to fill in those fields:
+Sie werden auf die Importseite weitergeleitet, auf der Sie folgende Felder ausfüllen müssen:
 
-* Title : The title you wish to give to the process.
-* URL identifier: The ‘slug’ for the process.
-* Add a document: Here you need to load the process JSON file obtained by email when exporting.
+* Titel: Der Titel, den Sie dem Prozess geben möchten.
+* URL-Kennung: Der „Slug“ für den Prozess.
+* Ein Dokument hinzufügen: Hier müssen Sie die beim Export per E-Mail erhaltene JSON-Datei des Prozesses hochladen.
 
-You can then select the type of data you want to import from the file.
+Anschliessend können Sie auswählen, welche Art von Daten Sie aus der Datei importieren möchten.
 
-* Import steps: Imports all the phases present in the original file.
-* Import categories: Imports all the categories present in the original file.
-* Import attachments : Import attachments of the original process.
-* Import components : Imports all the components and their configuration from the original file, without importing their content.
+* Schritte importieren: Importiert alle in der Originaldatei vorhandenen Phasen.
+* Kategorien importieren: Importiert alle in der Originaldatei vorhandenen Kategorien.
+* Anhänge importieren: Importiert die Anhänge des ursprünglichen Prozesses.
+* Komponenten importieren: Importiert alle Komponenten und ihre Konfiguration aus der Originaldatei, ohne deren Inhalt zu importieren.
 
 == Beispiele
 
-Below, you can find some links to examples participatory processes:
+Nachfolgend finden Sie einige Links zu Beispielen partizipativer Prozesse:
 
 * https://www.decidim.barcelona/processes/PAM2020[Procés participatiu del Programa d'Actuació Municipal (PAM) 2020-2023, Barcelona]
-* https://www.participate.nyc.gov/processes/Citywidepb2024[The People's Money (2024-2025), New York city participatory budget]
-* https://brasilparticipativo.presidencia.gov.br/processes/planoclima/[Plano Clima, Brazilian government]
-* https://omastadi.hel.fi/processes/osbu-2023/[Helsinki city participatory budget]
-* https://ecrivons.angers.fr/processes/BP24-25[Angers city participatory budget]
+* https://www.participate.nyc.gov/processes/Citywidepb2024[The People's Money (2024-2025), partizipatives Budget von New York City]
+* https://brasilparticipativo.presidencia.gov.br/processes/planoclima/[Plano Clima, brasilianische Regierung]
+* https://omastadi.hel.fi/processes/osbu-2023/[Partizipatives Budget der Stadt Helsinki]
+* https://ecrivons.angers.fr/processes/BP24-25[Partizipatives Budget der Stadt Angers]
