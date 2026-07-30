@@ -18,12 +18,12 @@ To create a Page component, first go in the xref:admin:spaces.adoc[participatory
 
 image::components/page/component_page.png[Add Page component button]
 
-Then:
+Dann:
 
-. Click on the "Components" item in the secondary menu
-. Click the "Add component" button
+. Klicken Sie im Sekundärmenü auf den Punkt "Komponenten"
+. Klicken Sie auf die Schaltfläche "Komponente hinzufügen"
 . Select "Page"
-. Fill the component creation form
+. Füllen Sie das Formular zur Komponentenerstellung aus
 
 You can still update this form and the configuration after creating the component, by clicking the
 image:icons/action_configure.png[Configure icon] icon in the components list.
@@ -39,11 +39,11 @@ image::components/page/component.png[Add component form]
 |Benötigt
 |The title of this component.
 
-|Bestellposition
+|Reihenfolge
 |Optional
-|The order of the component in relation with the other components. Eine niedrigere Zahl bedeutet eine höhere Priorität.
-For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0"
-then "component b" is first when ordering.
+|Die Reihenfolge der Komponente im Verhältnis zu den anderen Komponenten. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+Wenn Sie beispielsweise zwei Komponenten haben, "Komponente a" mit der Gewichtung "10" und "Komponente b" mit der Gewichtung "0",
+steht "Komponente b" bei der Sortierung an erster Stelle.
 |===
 
 .Komponente hinzufügen: Seitenformular - Globale Einstellungen
