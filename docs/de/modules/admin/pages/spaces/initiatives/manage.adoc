@@ -5,11 +5,11 @@
 When a participant creates an initiative, it doesn't only create a resource like a proposal, it creates a whole space,
 allowing administrators to manage in the administration:
 
-* xref:admin:spaces/initiatives/admin_manage/committee.adoc[Committee members]
-* xref:admin:spaces/initiatives/admin_manage/components.adoc[Components]
-* xref:admin:spaces/initiatives/admin_manage/attachments.adoc[Attachments]
-* xref:admin:spaces/initiatives/admin_manage/moderations.adoc[Moderations]
-* xref:admin:spaces/initiatives/admin_manage/answer.adoc[Answer an initiative]
+* xref:admin:spaces/initiatives/admin_manage/committee.adoc[Ausschussmitglieder]
+* xref:admin:spaces/initiatives/admin_manage/components.adoc[Komponenten]
+* xref:admin:spaces/initiatives/admin_manage/attachments.adoc[Anhänge]
+* xref:admin:spaces/initiatives/admin_manage/moderations.adoc[Moderationen]
+* xref:admin:spaces/initiatives/admin_manage/answer.adoc[Eine Initiative beantworten]
 
 NOTE: If you didn't configure it, once an initiative is created, it gets the Meetings and Page component enabled by
 default. Ask your instance implementer to modify this parameter if you don't need it, or want other components enabled by default.
