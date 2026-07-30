@@ -18,12 +18,12 @@ To create a Blog component, first go in the xref:admin:spaces.adoc[participatory
 
 image::components/blog/component_blog.png[Add Blog component button]
 
-Then:
+Dann:
 
-. Click on the "Components" item in the secondary menu
-. Click the "Add component" button
+. Klicken Sie im Sekundärmenü auf den Punkt "Komponenten"
+. Klicken Sie auf die Schaltfläche "Komponente hinzufügen"
 . Select "Blog"
-. Fill the component creation form
+. Füllen Sie das Formular zur Komponentenerstellung aus
 
 You can still update this form and the configuration after creating the component, by clicking the
 image:icons/action_configure.png[Configure icon] icon on the components list.
@@ -39,7 +39,7 @@ image::components/blog/component.png[Add component form]
 |Benötigt
 |The title of this component. For instance, "Blogs" or "Latest news"
 
-|Bestellposition
+|Reihenfolge
 |Optional
 |Which order it has in relation to the other components. Eine niedrigere Zahl bedeutet eine höhere Priorität.
 |===
@@ -59,7 +59,7 @@ image::components/blog/component.png[Add component form]
 
 |Maximale Länge der Kommentare
 |Optional
-|The characters limit that participants have when making comments. Lassen Sie 0 für den Standardwert.
+|Das Zeichenlimit, das Teilnehmenden beim Verfassen von Kommentaren zur Verfügung steht. Lassen Sie 0 für den Standardwert.
 |===
 
 .Schritteinstellungen
@@ -126,7 +126,7 @@ image:components/blog/new_post.png[Neues Beitragsformular]
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
 |Edit this post.
 
@@ -134,11 +134,11 @@ image:components/blog/new_post.png[Neues Beitragsformular]
 |Ordner
 |For classifying attachments.
 
-|image:icons/action_attachments.png[Attachments icon]
+|image:icons/action_attachments.png[Symbol: Anhänge]
 |Anhänge
 |Add documents related to the post.
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
 |See how it's shown in the frontend to participants.
 
@@ -146,7 +146,7 @@ image:components/blog/new_post.png[Neues Beitragsformular]
 |Berechtigungen
 |Handle the authorizations needed to comment or endorse this specific blog post.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
 |Delete this post.
 |===
