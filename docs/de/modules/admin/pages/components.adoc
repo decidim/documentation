@@ -1,38 +1,38 @@
 = Komponenten
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Durch Komponenten kann ein Administrator verschiedene Beteiligungsmechanismen aktivieren und konfigurieren.
-All components are available in all the different xref:admin:spaces.adoc[spaces].
+Alle Komponenten sind in allen verschiedenen xref:admin:spaces.adoc[Räumen] verfügbar.
 
-When you create a participatory space, by default, it won't have any components in it.
+Wenn Sie einen partizipativen Raum erstellen, enthält dieser standardmässig keine Komponenten.
 
-partielle$components_list.adoc[]
+include::partial$components_list.adoc[]
 
-=== How to find it?
+=== Wie findet man sie?
 
-Components are accessible in each xref:admin:spaces.adoc[space], through the administration secondary navigation bar.
+Komponenten sind in jedem xref:admin:spaces.adoc[Raum] über die sekundäre Verwaltungsnavigationsleiste zugänglich.
 
 image::components/components_index_back.png[Component index backend in an assembly]
 
-To create a component, click the "Add component" button and select the type of component you want to create.
+Um eine Komponente zu erstellen, klicken Sie auf die Schaltfläche "Komponente hinzufügen" und wählen Sie die Art der Komponente aus, die Sie erstellen möchten.
 
-Once you start publishing components, participants see links to the different components appear in the space "Main data"
-content block in the landing page, in the general search engine, and in the dedicated homepage content blocks.
+Sobald Sie mit der Veröffentlichung von Komponenten beginnen, sehen Teilnehmende Links zu den verschiedenen Komponenten im Inhaltsblock "Hauptdaten"
+      des Raums auf der Startseite, in der allgemeinen Suchmaschine und in den dafür vorgesehenen Inhaltsblöcken der Startseite.
 
 image::components/components_index_front.png[Component index frontend in an assembly]
 
 == Konfiguration
 
-=== Manage components
+=== Komponenten verwalten
 
-On this page, you are able to manage components and create new ones.
+Auf dieser Seite können Sie Komponenten verwalten und neue erstellen.
 
-You can find all the components of the space on the list, with:
+Sie finden alle Komponenten des Raums in der Liste mit:
 
-* *Component name*: title of the component, chosen at its creation and editable.
-* *Component type*: type of component.
-* *Component scope*: the xref:admin:settings/scopes.adoc[scope] of the component.
+* *Komponentenname*: Titel der Komponente, bei ihrer Erstellung gewählt und bearbeitbar.
+* *Komponententyp*: Art der Komponente.
+* *Thema der Komponente*: das xref:admin:settings/scopes.adoc[Thema] der Komponente.
 
 === Aktionen
 
@@ -40,36 +40,36 @@ You can find all the components of the space on the list, with:
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Manage component icon]
+|image:icons/action_edit.png[Symbol: Komponente verwalten]
 |Verwalten
-|To edit the resources inside the component, like blog posts, proposals, meetings, etc.
+|Um die Inhalte innerhalb der Komponente zu bearbeiten, wie Blogbeiträge, Vorschläge, Veranstaltungen usw.
 
-|image:icons/action_share.png[Share icon]
+|image:icons/action_share.png[Symbol: Teilen]
 |Teilen
-|Creates a link with a token to share the component with other users.
+|Erstellt einen Link mit einem Token, um die Komponente mit anderen Nutzenden zu teilen.
 
-|image:icons/action_configure.png[Configure icon]
+|image:icons/action_configure.png[Symbol: Konfigurieren]
 |Konfigurieren
-|To edit the general configuration of the component.
+|Um die allgemeine Konfiguration der Komponente zu bearbeiten.
 
-|image:icons/action_publish.png[Publish component icon]
+|image:icons/action_publish.png[Symbol: Veröffentlichen]
 |Veröffentlichen
-|To publish the component.
+|Um die Komponente zu veröffentlichen.
 
-|image:icons/action_unpublish.png[Unpublish component icon]
+|image:icons/action_unpublish.png[Symbol: Veröffentlichung rückgängig machen]
 |Zurückziehen
-|To unpublish the component.
+|Um die Veröffentlichung der Komponente aufzuheben.
 
-|image:icons/action_preview.png[Preview component icon]
+|image:icons/action_preview.png[Symbol: Komponentenvorschau]
 |Vorschau
-|Preview of how the component looks in the user interface.
+|Vorschau, wie die Komponente in der Benutzeroberfläche aussieht.
 
-|image:icons/action_permissions.png[Permissions icon]
+|image:icons/action_permissions.png[Symbol: Berechtigungen]
 |Berechtigungen
-|To configure which kind of xref:admin:participants/authorizations.adoc[Authorizations]
-a participant need to have to be able to perform certain actions in a component.
+|Um zu konfigurieren, welche Art von xref:admin:participants/authorizations.adoc[Berechtigungen]
+      eine teilnehmende Person benötigt, um bestimmte Aktionen in einer Komponente durchführen zu können.
 
-|image:icons/action_delete.png[Delete component icon]
+|image:icons/action_delete.png[Symbol: Komponente löschen]
 |Löschen
-|To delete the component, only possible when there is no participant participation in it.
+|Um die Komponente zu löschen; dies ist nur möglich, wenn keine Teilnahme von Teilnehmenden vorliegt.
 |===
