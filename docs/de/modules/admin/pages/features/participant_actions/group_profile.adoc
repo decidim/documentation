@@ -1,6 +1,6 @@
 = Gruppenprofile
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Als teilnehmende Person möchten Sie vielleicht eine Benutzergruppe für Ihren Verein, Ihr Unternehmen, Ihren Club usw. erstellen.
 Wenn ein Admin bestätigt, dass Sie berechtigt sind, diese Gruppe zu vertreten, können Sie in der Instanz im
@@ -28,7 +28,7 @@ image::features/my_profile/profile_create_group.png[Public profile group creatio
 
 |Spitzname
 |Benötigt
-|Spitzname der Organisation, des Vereins, des Kollektivs, der Gruppe usw. Verwenden Sie keine Leerzeichen oder Akzenten.
+|Spitzname der Organisation, des Vereins, des Kollektivs, der Gruppe usw. Verwenden Sie keine Leerzeichen oder Akzente.
 
 |E-Mail
 |Benötigt
@@ -63,15 +63,15 @@ Die Profilseiten von Benutzergruppen zeigen:
 
 === Eine Gruppe verwalten
 
-Nach der Bildung einer Gruppe ist es möglich, Teilnehmer einzuladen, Mitglieder der Gruppe zu werden.
-Nachdem ein Teilnehmer akzeptiert hat, dieser Gruppe beizutreten, kann er Admin-Mitglied werden.
+Nach der Bildung einer Gruppe ist es möglich, Teilnehmende einzuladen, Mitglieder der Gruppe zu werden.
+Nachdem eine teilnehmende Person der Aufnahme in diese Gruppe zugestimmt hat, kann sie Admin werden.
 
 Die Aktionen, die ein Admin einer Benutzergruppe durchführen kann, sind:
 
 * Gruppenprofil bearbeiten
 * Mitglieder verwalten
-* Administratoren verwalten
-* Invite participant
+* Admins verwalten
+* Teilnehmende einladen
 * Gruppe verlassen
 
 image::features/my_profile/profile_manage_group.png[Public profile group drop down menu]
