@@ -1,20 +1,20 @@
 = Seiten
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Die Seitenkomponente erlaubt es den Menschen, Informationen über einen Raum zu erhalten. Administrators can fill a page with informational content,
-images, links, to inform and update the participants.
+Die Seitenkomponente erlaubt es den Menschen, Informationen über einen Raum zu erhalten. Admins können eine Seite mit informativen Inhalten,
+Bildern und Links füllen, um Teilnehmende zu informieren und auf dem Laufenden zu halten.
 
-It's similar to the general xref:admin:pages.adoc[Pages], the main difference being that this component allows to define pages inside
-a participatory space, and not in the Help section.
+Dies ähnelt den allgemeinen xref:admin:pages.adoc[Seiten], wobei der Hauptunterschied darin besteht, dass diese Komponente es ermöglicht, Seiten innerhalb
+eines partizipativen Raums zu definieren und nicht im Hilfebereich.
 
 image::components/page/example01.png[Example of a page component in a participatory process]
 
 == Konfiguration
 
-=== Create a page component
+=== Eine Seiten-Komponente erstellen
 
-To create a Page component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
+Um eine Seiten-Komponente zu erstellen, gehen Sie zunächst zum xref:admin:spaces.adoc[partizipativen Raum], in dem Sie sie erstellen möchten.
 
 image::components/page/component_page.png[Add Page component button]
 
@@ -22,11 +22,11 @@ Dann:
 
 . Klicken Sie im Sekundärmenü auf den Punkt "Komponenten"
 . Klicken Sie auf die Schaltfläche "Komponente hinzufügen"
-. Select "Page"
+. Wählen Sie "Seite"
 . Füllen Sie das Formular zur Komponentenerstellung aus
 
-You can still update this form and the configuration after creating the component, by clicking the
-image:icons/action_configure.png[Configure icon] icon in the components list.
+Sie können dieses Formular und die Konfiguration auch nach der Erstellung der Komponente noch aktualisieren, indem Sie in der Komponentenliste auf das
+      image:icons/action_configure.png[Symbol: Konfigurieren] Konfigurieren-Symbol klicken.
 
 image::components/page/component.png[Add component form]
 
@@ -37,7 +37,7 @@ image::components/page/component.png[Add component form]
 
 |Name
 |Benötigt
-|The title of this component.
+|Der Titel dieser Komponente.
 
 |Reihenfolge
 |Optional
@@ -53,7 +53,7 @@ steht "Komponente b" bei der Sortierung an erster Stelle.
 
 |Mitteilung
 |Optional
-|A general announcement visible on the top of the page.
+|Eine allgemeine Mitteilung, die oben auf der Seite sichtbar ist.
 |===
 
 .Komponente hinzufügen: Seitenformular - Schritteinstellungen
@@ -63,12 +63,12 @@ steht "Komponente b" bei der Sortierung an erster Stelle.
 
 |Mitteilung
 |Optional
-|A general announcement visible on the top of the page for this phase.
+|Eine allgemeine Mitteilung, die für diese Phase oben auf der Seite sichtbar ist.
 |===
 
-=== Create a page
+=== Eine Seite erstellen
 
-Once you created the Page component, click the Edit icon to write the content to be displayed on the page.
+Sobald Sie die Seiten-Komponente erstellt haben, klicken Sie auf das Symbol Bearbeiten, um den auf der Seite anzuzeigenden Inhalt zu schreiben.
 
 image:components/page/new_page.png[Neue Seitenform]
 
@@ -79,12 +79,12 @@ image:components/page/new_page.png[Neue Seitenform]
 
 |Körper
 |Benötigt
-|The content displayed on the page. You can add images, links, videos, formatting, etc.
+|Der auf der Seite angezeigte Inhalt. Sie können Bilder, Links, Videos, Formatierungen usw. hinzufügen.
 |===
 
 == Beispiele
 
 Einige Beispiele, wo diese Komponente verwendet wurde:
 
-* https://meta.decidim.org/processes/Welcome/f/1686/[Take the tour page to discover the Decidim community]
-* https://www.decidim.barcelona/processes/PressupostosParticipatius/f/4691/[Information page for a Participatory Budget Barcelona]
+* https://meta.decidim.org/processes/Welcome/f/1686/[Rundgangsseite, um die Decidim-Community zu entdecken]
+* https://www.decidim.barcelona/processes/PressupostosParticipatius/f/4691/[Informationsseite für ein partizipatives Budget in Barcelona]
