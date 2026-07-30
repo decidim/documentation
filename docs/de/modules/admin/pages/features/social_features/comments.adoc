@@ -2,9 +2,9 @@
 
 == Understand the basics
 
-Comments are public messages allowing participants to share information or opinions about a proposal, debate, meeting, initiative, etc.
+Kommentare sind öffentliche Nachrichten, mit denen Teilnehmende Informationen oder Meinungen zu einem Vorschlag, einer Debatte, einer Veranstaltung, einer Initiative usw. teilen können.
 
-NOTE: Comments need to be enabled by administrators, otherwise participants are not able to comment. To learn how to enable comments on a component, please refer to the xref:features:components.adoc[Components] article.
+NOTE: Kommentare müssen von Admins aktiviert werden, andernfalls können Teilnehmende nicht kommentieren. Um zu erfahren, wie Sie Kommentare für eine Komponente aktivieren, lesen Sie bitte den Artikel xref:features:components.adoc[Komponenten].
 
 image::features/comments/nested_comment.png[Comments example]
 
@@ -12,64 +12,64 @@ image::features/comments/nested_comment.png[Comments example]
 
 === Kommentar erstellen
 
-. Go to the content that you want to comment
+. Gehen Sie zu dem Inhalt, den Sie kommentieren möchten
 . Zum Ende der Seite gehen
-. Fill the "Add comment" field and leave your comment
+. Füllen Sie das Feld "Kommentar hinzufügen" aus und hinterlassen Sie Ihren Kommentar
 
 image::features/comments/form.png[Comments form]
 
-When commenting, participants can:
+Beim Kommentieren können Teilnehmende:
 
-.Comment actions
+.Kommentaraktionen
 [cols="10h,~,~,~"]
 |===
-|Typ |Beschreibung |Syntax |Example
+|Typ |Beschreibung |Syntax |Beispiel
 
-|Mention
-|Mention a participant or a user group. They'll receive a notification for the mention.
-|@nickname
+|Erwähnung
+|Eine teilnehmende Person oder eine Benutzergruppe erwähnen. Sie erhalten eine Benachrichtigung über die Erwähnung.
+|@spitzname
 |@carmelia_hudson
 
 |Hashtag
-|Hashtags are redirecting to the general xref:admin:features/search.adoc[search page]
-|#example
+|Hashtags leiten auf die allgemeine xref:admin:features/search.adoc[Suchseite] weiter
+|#beispiel
 |#sedep
 
-|Quote
-|Hashtags are redirecting to the general xref:admin:features/search.adoc[search page]
-|> Your quote here
-|> the funding for this program could be better allocated to improving public transportation options
+|Zitat
+|Hashtags leiten auf die allgemeine xref:admin:features/search.adoc[Suchseite] weiter
+|> Ihr Zitat hier
+|> die Finanzierung dieses Programms könnte besser für die Verbesserung der öffentlichen Verkehrsmittel eingesetzt werden
 
 |URL
-|Once published, URL become clickable, and can be internal or external. If they refer to a content of the platform, the
-link label takes the content title.
+|Nach der Veröffentlichung wird die URL anklickbar und kann intern oder extern sein. Wenn sie sich auf einen Inhalt der Plattform bezieht,
+übernimmt die Linkbezeichnung den Titel des Inhalts.
 |https://domain.name/
 |https://en.wikipedia.org/wiki/Decidim
 
 |Emojis
-|Participants can add emojis by clicking on the emoji icon at the bottom right of the comment field.
-|No syntax
+|Teilnehmende können Emojis hinzufügen, indem sie unten rechts im Kommentarfeld auf das Emoji-Symbol klicken.
+|Keine Syntax
 |😁
 
-|Give their opinion
-|Participants can say they are in favor, neutral, or against the content
-|No syntax
-|In favor
+|Ihre Meinung äussern
+|Teilnehmende können angeben, ob sie für, neutral oder gegen den Inhalt sind
+|Keine Syntax
+|Dafür
 |===
 
-Below, you can find an example of a comment field with several of those elements.
+Nachfolgend finden Sie ein Beispiel eines Kommentarfelds mit mehreren dieser Elemente.
 
 image::features/comments/rich_text_write.png[Comments with rich text (write)]
 
-Once published, this comment and its different elements are displayed like below.
+Nach der Veröffentlichung werden dieser Kommentar und seine verschiedenen Elemente wie folgt angezeigt.
 
 image::features/comments/rich_text_read.png[Comments with rich text (read)]
 
-When clicking on a hashtag in a comment or another content, participants are redirected to the global search.
+Wenn Teilnehmende auf einen Hashtag in einem Kommentar oder einem anderen Inhalt klicken, werden sie zur globalen Suche weitergeleitet.
 
 image::features/comments/hashtag_search.png[Hashtags in comments]
 
-NOTE: HTML injection added in comments are escaped and not shown.
+NOTE: In Kommentaren eingeschleuster HTML-Code wird maskiert und nicht angezeigt.
 
 image::features/comments/xss_write.png[XSS in comments (write)]
 
@@ -77,63 +77,63 @@ image::features/comments/xss_read.png[XSS in comments (read)]
 
 === Aktionen
 
-Participants can interact with comments in different ways.
+Teilnehmende können auf verschiedene Arten mit Kommentaren interagieren.
 
-* Everyone can sort them and show and hide replies thread.
-* Participants can additionally reply to comments, up-vote or down-vote them, report them or get the link to the comment.
-* Authors of comments can also edit and delete their own comments.
+* Jede Person kann sie sortieren sowie Antwortthreads ein- und ausblenden.
+* Teilnehmende können ausserdem auf Kommentare antworten, sie positiv oder negativ bewerten, sie melden oder den Link zum Kommentar abrufen.
+* Autor:innen von Kommentaren können ihre eigenen Kommentare auch bearbeiten und löschen.
 
-They can access some actions directly on the comment, and others by clicking the three dots menu next to a comment.
+Sie können auf einige Aktionen direkt über den Kommentar zugreifen, auf andere über das Drei-Punkte-Menü neben einem Kommentar.
 
 image::features/comments/actions.png[Comments actions]
 
 ==== Sortieren
 
-Participants can sort comments by:
-* Best rated: comments with the more up-votes appear first in the list
-* Recent: most recent comments appear first.
-* Older: older comments appear first.
-* More discussed: comments with the more nested comments appear first.
+Teilnehmende können Kommentare sortieren nach:
+* Am besten bewertet: Kommentare mit den meisten positiven Bewertungen erscheinen zuerst in der Liste
+* Aktuell: die neuesten Kommentare erscheinen zuerst.
+* Älteste: ältere Kommentare erscheinen zuerst.
+* Meist diskutiert: Kommentare mit den meisten verschachtelten Kommentaren erscheinen zuerst.
 
 image::features/comments/order_by.png[Order comments]
 
-They can also hide replies, when they don't want to display a whole comment thread.
+Sie können Antworten auch ausblenden, wenn sie einen ganzen Kommentarthread nicht anzeigen möchten.
 
 ==== Antwort
 
-By clicking on the "Reply" button below a comment, participants can reply to other participants and have public discussions.
-Comments can be nested until four levels. On the fourth level, the "Reply" button is not available anymore.
+Durch Klicken auf die Schaltfläche "Antworten" unter einem Kommentar können Teilnehmende anderen Teilnehmenden antworten und öffentliche Diskussionen führen.
+Kommentare können bis zu vier Ebenen verschachtelt werden. Auf der vierten Ebene ist die Schaltfläche "Antworten" nicht mehr verfügbar.
 
 image::features/comments/anidation_levels.png[Nested comments]
 
-==== Up-vote / down-vote
+==== Positiv/negativ bewerten
 
-Participants can support comments by clicking on the "Thumbs up" icon at the bottom right of each comment.
-It allows them to participate and give their opinion, without necessary having to answer a comment.
+Teilnehmende können Kommentare unterstützen, indem sie unten rechts bei jedem Kommentar auf das Symbol "Daumen hoch" klicken.
+So können sie sich beteiligen und ihre Meinung äussern, ohne notwendigerweise auf einen Kommentar antworten zu müssen.
 
-==== Report
+==== Melden
 
-Please read the xref:admin:moderations/reported_content.adoc[Reported content] article to know more about reporting content.
+Bitte lesen Sie den Artikel xref:admin:moderations/reported_content.adoc[Gemeldete Inhalte], um mehr über das Melden von Inhalten zu erfahren.
 
-==== Get link
+==== Link abrufen
 
-By clicking on the "Get link" item, participants are redirected to the comment dedicated URL.
-They can then share this link to others, and it lead them directly to the one comment.
-A message is displayed to warn the visitor that they are seeing a single comment, with a link to see all the other comments.
+Durch Klicken auf den Eintrag "Link abrufen" werden Teilnehmende zur eigenen URL des Kommentars weitergeleitet.
+Sie können diesen Link dann mit anderen teilen, und er führt sie direkt zu diesem einen Kommentar.
+Es wird eine Meldung angezeigt, die die besuchende Person darauf hinweist, dass nur ein einzelner Kommentar angezeigt wird, mit einem Link, um alle anderen Kommentare zu sehen.
 
 image::features/comments/single_comment.png[Edited comment]
 
 ==== Bearbeiten
 
-Participants can edit their comments, and after they do, a "Edited" mention appears on their comment to indicate to other
-participants that this content was edited.
+Teilnehmende können ihre Kommentare bearbeiten, und nachdem sie dies getan haben, erscheint der Hinweis "Bearbeitet" bei ihrem Kommentar, um anderen
+Teilnehmenden anzuzeigen, dass dieser Inhalt bearbeitet wurde.
 
-Comments don't have a version history of the changes made.
+Kommentare verfügen über keinen Versionsverlauf der vorgenommenen Änderungen.
 
 image::features/comments/edited_comment.png[Edited comment]
 
 ==== Löschen
 
-Once a comment is deleted, it's no longer visible, and a message indicates the date when it was deleted.
+Sobald ein Kommentar gelöscht wurde, ist er nicht mehr sichtbar, und eine Meldung gibt das Datum an, an dem er gelöscht wurde.
 
 image::features/comments/deleted_comment.png[Deleted comment]
