@@ -1,129 +1,129 @@
-= Accountability management
+= Rechenschaftsverwaltung
 
 == Understand the basics
 
-Results are the entities that constitute the accountability component. They can be linked to proposals, projects, meetings, and have
-statuses, and dates assigned.
+Ergebnisse sind die Entitäten, die die Rechenschaftskomponente bilden. Sie können mit Vorschlägen, Projekten und Veranstaltungen verknüpft werden und haben
+zugewiesene Status und Daten.
 
-Administrators can also create sub-results, to detail the elements needed for a result implementation.
+Admins können auch Teilergebnisse erstellen, um die für die Umsetzung eines Ergebnisses nötigen Elemente zu detaillieren.
 
 == Konfiguration
 
-=== Create a result
+=== Ein Ergebnis erstellen
 
-To start creating results, click the component title in the navigation bar or in the component list, or click the
-image:icons/action_edit.png[Manage component icon] icon on the components list.
+Um mit der Erstellung von Ergebnissen zu beginnen, klicken Sie auf den Komponententitel in der Navigationsleiste oder in der Komponentenliste, oder klicken Sie auf das
+Symbol image:icons/action_edit.png[Komponente verwalten] in der Komponentenliste.
 
 image::components/accountability/new_result_button.png[New result button]
 
-Then, click the "New result" button on the top right of the page.
+Klicken Sie dann oben rechts auf der Seite auf die Schaltfläche "Neues Ergebnis".
 
 image::components/accountability/new_result.png[New result form]
 
-.New result form
+.Formular für neues Ergebnis
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Titel
 |Benötigt
-|Title of the result.
+|Titel des Ergebnisses.
 
 |Beschreibung
 |Optional
-|Description of the result.
+|Beschreibung des Ergebnisses.
 
 |Bereich
 |Abgelehnt
-|Please use link:https://docs.decidim.org/en/develop/develop/taxonomies.html[taxonomies] instead.
+|Bitte verwenden Sie stattdessen link:https://docs.decidim.org/en/develop/develop/taxonomies.html[Klassifizierungen].
 
 |Kategorie
 |Optional
-|Allows categorizing the results on the Accountability landing page.
+|Ermöglicht die Kategorisierung der Ergebnisse auf der Startseite der Rechenschaftskomponente.
 
 |Startdatum
 |Optional
-|Expected format: dd/mm/yyyy.
+|Erwartetes Format: tt/mm/jjjj.
 
 |Enddatum
 |Optional
-|Expected format: dd/mm/yyyy.
+|Erwartetes Format: tt/mm/jjjj.
 
 |Status
 |Optional
-|Allows to give a status to results.
+|Ermöglicht es, Ergebnissen einen Status zuzuweisen.
 
-|Progress
+|Fortschritt
 |Optional
-|Percentage of progression of the result.
+|Fortschrittsprozentsatz des Ergebnisses.
 
 |Vorschläge
 |Optional
-|Proposals that originated the result.
+|Vorschläge, aus denen das Ergebnis entstanden ist.
 
-|Included projects
+|Enthaltene Projekte
 |Optional
-|Projects that originated the result.
+|Projekte, aus denen das Ergebnis entstanden ist.
 |===
 
-=== Manage results
+=== Ergebnisse verwalten
 
-On the results list in the administration panel, administrators can see:
+In der Ergebnisliste im Verwaltungspanel können Admins Folgendes sehen:
 
-* *ID*: Identification number for this result.
-* *Title*: Title of the result.
-* *Category*: Category of the result.
-* *Scope*: Scope of the result, if enabled in the participatory space.
-* *xref:admin:components/accountability/statuses.adoc[Status]*: Status of the result.
-* *Progress*: Result percentage progress.
-* *Created*: Creation date of the result.
+* *ID*: Identifikationsnummer für dieses Ergebnis.
+* *Titel*: Titel des Ergebnisses.
+* *Kategorie*: Kategorie des Ergebnisses.
+* *Thema*: Thema des Ergebnisses, sofern im partizipativen Raum aktiviert.
+* *xref:admin:components/accountability/statuses.adoc[Status]*: Status des Ergebnisses.
+* *Fortschritt*: Fortschrittsprozentsatz des Ergebnisses.
+* *Erstellt*: Erstellungsdatum des Ergebnisses.
 
-You can filter and sort this list by clicking the "Filter" button and the columns headers.
-You can also search for results by their ID and title in the search bar.
+Sie können diese Liste filtern und sortieren, indem Sie auf die Schaltfläche "Filter" und die Spaltenüberschriften klicken.
+Sie können auch in der Suchleiste nach Ergebnissen anhand ihrer ID und ihres Titels suchen.
 
 image::components/accountability/results_list_filter.png[New result button]
 
 === Aktionen
 
-.Actions - Accountability
+.Aktionen - Rechenschaft
 [cols="10h,20h,~"]
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
-|To edit a result.
+|Um ein Ergebnis zu bearbeiten.
 
-|image:icons/action_plus.png[Plus icon]
-|Add Sub-Result
-|To quickly add a new sub-result
+|image:icons/action_plus.png[Symbol: Plus]
+|Teilergebnis hinzufügen
+|Um schnell ein neues Teilergebnis hinzuzufügen
 
-|image:icons/action_folder.png[Folders icon]
+|image:icons/action_folder.png[Symbol: Ordner]
 |Ordner
 |Zur Klassifizierung von Anhängen.
 
-|image:icons/action_clock.png[Clock icon]
-|Milestone
-|Manage milestones of the result.
+|image:icons/action_clock.png[Symbol: Uhr]
+|Meilenstein
+|Die Meilensteine des Ergebnisses verwalten.
 
-|image:icons/action_folder.png[Folders icon]
+|image:icons/action_folder.png[Symbol: Ordner]
 |Ordner
 |Zur Klassifizierung von Anhängen.
 
-|image:icons/action_attachments.png[Attachments icon]
+|image:icons/action_attachments.png[Symbol: Anhänge]
 |Anhänge
-|To add documents and images related to the result.
+|Um Dokumente und Bilder zum Ergebnis hinzuzufügen.
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
 |Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
 
 |image:icons/action_permissions.png[Permissions icon]
 |Berechtigungen
-|To handle the permissions of this result, depending on the verification a participant has. Allows an admin to configure
-who can *Comment* a result.
+|Um die Berechtigungen dieses Ergebnisses zu verwalten, abhängig von der Verifizierung, die eine teilnehmende Person hat. Ermöglicht es einem Admin, zu konfigurieren,
+wer ein Ergebnis *kommentieren* kann.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
-|Put the result in the deleted result list.
+|Das Ergebnis in die Liste der gelöschten Ergebnisse verschieben.
 |===
