@@ -1,27 +1,27 @@
 = Budget
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-It's important to understand that Budget is not only the name of the component, but is also an entity of the component.
-Indeed, a same Budget component can contain multiple budgets.
+Es ist wichtig zu verstehen, dass Budget nicht nur der Name der Komponente ist, sondern auch eine Entität der Komponente.
+Tatsächlich kann ein und dieselbe Budget-Komponente mehrere Budgets enthalten.
 
 image::components/budgets/multiple_budgets_front.png[Budgets list in frontend]
 
-This allows to create complex workflows and answer several use cases.
+Dies ermöglicht es, komplexe Abläufe zu erstellen und mehrere Anwendungsfälle abzudecken.
 
 == Konfiguration
 
-Once you created your Budget component, you are redirected to the Budget list. There, you can create and manage the budgets of
-your component. Depending on the process you want to organize, you can choose:
+Sobald Sie Ihre Budget-Komponente erstellt haben, werden Sie zur Budgetliste weitergeleitet. Dort können Sie die Budgets
+      Ihrer Komponente erstellen und verwalten. Je nachdem, welchen Prozess Sie organisieren möchten, können Sie wählen:
 
-* To create a unique budget, where all your projects to be voted on are displayed.
-* To create multiple budgets, with dedicated projects inside each of them.
+* Ein einziges Budget zu erstellen, in dem alle Ihre zur Abstimmung stehenden Projekte angezeigt werden.
+* Mehrere Budgets zu erstellen, mit jeweils eigenen Projekten darin.
 
-The first thing to do is to create your first budget, by clicking the "New budget" button.
+Als Erstes erstellen Sie Ihr erstes Budget, indem Sie auf die Schaltfläche "Neues Budget" klicken.
 
 image::components/budgets/new_budget_button.png[New budget button]
 
-=== Budget creation
+=== Budgeterstellung
 
 image::components/budgets/new_budget.png[New budget form]
 
@@ -32,35 +32,35 @@ image::components/budgets/new_budget.png[New budget form]
 
 |Titel
 |Benötigt
-|Wie lautet der Titel dieses Haushaltsplans. Zum Beispiel "Bezirk A"
+|Wie lautet der Titel dieses Budgets. Zum Beispiel "Bezirk A"
 
 |Reihenfolge
 |Optional
-|Which order it has in relation to the other budgets. Eine niedrigere Zahl bedeutet eine höhere Priorität.
-For instance, if you have two budgets, "Budget a" with weight "10" and "Budget b" with weight "0" then "Budget b" is first when ordering.
+|Welche Reihenfolge es im Verhältnis zu den anderen Budgets hat. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+Wenn Sie zum Beispiel zwei Budgets haben, "Budget a" mit der Gewichtung "10" und "Budget b" mit der Gewichtung "0", dann steht "Budget b" bei der Sortierung an erster Stelle.
 
 |Beschreibung
 |Optional
-|The description of this budget, only displayed visible by participants if there is multiple budgets.
+|Die Beschreibung dieses Budgets, die Teilnehmenden nur angezeigt wird, wenn es mehrere Budgets gibt.
 
 |Gesamt Budget
 |Benötigt
-|The total amount of money available for this budget.
+|Der für dieses Budget insgesamt verfügbare Geldbetrag.
 |===
 
 === Budgets verwalten
 
 image::components/budgets/manage_budgets.png[Manage budgets table]
 
-On the budgets list in the administration panel, administrators can see:
+In der Budgetliste im Verwaltungspanel können Admins Folgendes sehen:
 
-* *Name*: Name of the budget.
-* *Total budget*: The total budget allocated to the budget.
-* *Projects count*: The number of projects included in each budget.
+* *Name*: Name des Budgets.
+* *Gesamtbudget*: Das dem Budget insgesamt zugewiesene Budget.
+* *Anzahl Projekte*: Die Anzahl der in jedem Budget enthaltenen Projekte.
 
-This page also lets you see the finished and pending votes that the various projects have received across all budgets.
+Auf dieser Seite können Sie ausserdem die abgeschlossenen und ausstehenden Stimmen einsehen, die die verschiedenen Projekte über alle Budgets hinweg erhalten haben.
 
-You can also export all the projects of the component in different formats in CSV, JSON and Excel formats.
+Sie können auch alle Projekte der Komponente in verschiedenen Formaten exportieren: CSV, JSON und Excel.
 
 === Aktionen
 
@@ -71,38 +71,38 @@ You can also export all the projects of the component in different formats in CS
 
 |image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
-|To edit the budget.
+|Um das Budget zu bearbeiten.
 
-|image:icons/action_list.png[Manage projects icon]
-|xref:admin:components/budgets/projects.adoc[Manage projects]
-|Allows to manage the projects of a budget.
+|image:icons/action_list.png[Symbol: Projekte verwalten]
+|xref:admin:components/budgets/projects.adoc[Projekte verwalten]
+|Ermöglicht die Verwaltung der Projekte eines Budgets.
 
 |image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
-|To see the budget page in the user interface.
+|Um die Budgetseite in der Benutzeroberfläche zu sehen.
 
 |image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
-|Dieses Budget löschen. Can only be done when there aren't any projects.
+|Dieses Budget löschen. Kann nur durchgeführt werden, wenn keine Projekte vorhanden sind.
 |===
 
 === Workflows
 
 Ein nettes Feature der Budget-Komponente ist die Möglichkeit, eigene Workflows zu definieren.
 
-This means that you can define multiple Budgets, for instance one for every city neighborhood or district, define multiple
-rules regarding how people can vote on those Budgets. By default, three workflows are available:
+Das bedeutet, dass Sie mehrere Budgets definieren können, zum Beispiel eines für jeden Stadtteil oder Bezirk, und mehrere
+      Regeln dazu festlegen können, wie Personen über diese Budgets abstimmen können. Standardmässig sind drei Workflows verfügbar:
 
-* Stimmen Sie in einem: ermöglicht den Teilnehmern die Abstimmung in jedem Haushalt, aber nur in einem.
-* Stimmt insgesamt: Erlaubt den Teilnehmern, in allen Haushaltsplänen abzustimmen.
-* Vote in einer zufälligen Komponent: Erlaubt den Teilnehmern, nur in einem Budget zu wählen, zufällig ausgewählt.
+* Stimmen Sie in einem: ermöglicht den Teilnehmenden die Abstimmung in jedem Budget, aber nur in einem.
+* Stimmen Sie in allen: Erlaubt den Teilnehmenden, in allen Budgets abzustimmen.
+* Stimmen Sie in einer zufälligen Komponente: Erlaubt den Teilnehmenden, nur in einem zufällig ausgewählten Budget abzustimmen.
 
-This can be extended in your application by a developer, by developing your own Workflows. Zum Beispiel für die
+Dies kann in Ihrer Anwendung von einer entwickelnden Person erweitert werden, indem eigene Workflows entwickelt werden. Zum Beispiel für die
 https://www.decidim. arcelona/processes/PressupostosParticipatius[2020/2021 partizipatorische Budgetverfahren in Decidim Barcelona],
 die Menschen konnten in zwei Bezirken wählen: in dem Bezirk, in dem sie lebten und in dem sie sich entschieden haben. Dies wurde in der
 https://github.com/AjuntamentdeBarcelona/decidim-barcelona/blob/743be2a210e8745d2dc443166642b285aed2b356/lib/budgets_workflow_pam2021.rb[decidim-barcelona Applikation] definiert.
 
-You can read more about Workflows in https://github.com/decidim/decidim/blob/1ab5cd8fdabef48f5be94ff9c30c6bb3bc9a2f8f/decidim-budgets/README.md#budget-workflows[decidim-budgets README.md].
+Weitere Informationen zu Workflows finden Sie in der https://github.com/decidim/decidim/blob/1ab5cd8fdabef48f5be94ff9c30c6bb3bc9a2f8f/decidim-budgets/README.md#budget-workflows[decidim-budgets README.md].
 
-NOTE: Sie möchten nur eine Abstimmung ohne große Komplikationen haben? Wie eine städtische Abstimmung? Don't worry: if you define only one
-Budget, then people are redirected directly on the projects list.
+NOTE: Sie möchten nur eine Abstimmung ohne grosse Komplikationen haben? Wie eine städtische Abstimmung? Keine Sorge: Wenn Sie nur ein
+      Budget definieren, werden Personen direkt zur Projektliste weitergeleitet.
