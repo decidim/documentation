@@ -1,24 +1,24 @@
-= Proposals management
+= Vorschlagsverwaltung
 
 == Understand the basics
 
-It's important to understand that Proposals is not only the name of the component, but is also the entities of the component.
+Es ist wichtig zu verstehen, dass Vorschläge nicht nur der Name der Komponente ist, sondern auch die Entitäten der Komponente.
 
 image::components/proposals/proposals_list_frontend.png[Proposals list frontend]
 
 == Konfiguration
 
-Once you created your Proposals component, you are redirected to the Proposals list. There, you can create and manage the proposals of
-your component.
+Sobald Sie Ihre Vorschläge-Komponente erstellt haben, werden Sie zur Vorschlagsliste weitergeleitet. Dort können Sie die Vorschläge
+Ihrer Komponente erstellen und verwalten.
 
-Depending on whether you want to gather only participants proposals, or you also want to create official proposals, read the
-relevant section.
+Je nachdem, ob Sie nur Vorschläge von Teilnehmenden sammeln oder auch offizielle Vorschläge erstellen möchten, lesen Sie den
+entsprechenden Abschnitt.
 
-=== Proposals creation
+=== Erstellung von Vorschlägen
 
 ==== Offizielle Vorschläge
 
-To start creating official proposals, the first thing to do is to create your first proposal, by clicking the "New proposal" button.
+Um mit der Erstellung offizieller Vorschläge zu beginnen, müssen Sie zunächst Ihren ersten Vorschlag erstellen, indem Sie auf die Schaltfläche "Neuer Vorschlag" klicken.
 
 image::components/proposals/new_proposal_backend.png[New proposal form - with multiple settings (official proposals)]
 
@@ -29,117 +29,117 @@ image::components/proposals/new_proposal_backend.png[New proposal form - with mu
 
 |Titel
 |Benötigt
-|The title of this proposal. It must have 15 characters at minimum and 150 characters as maximum and start with a capital letter.
+|Der Titel dieses Vorschlags. Er muss mindestens 15 und maximal 150 Zeichen umfassen und mit einem Grossbuchstaben beginnen.
 
 |Körper
 |Benötigt
-|The full description for this proposal. Must have 15 characters at minimum and 450 characters at maximum
-by default, but it can be changed with the setting "Maximum proposal body length" in the component configuration.
+|Die vollständige Beschreibung für diesen Vorschlag. Muss standardmässig mindestens 15 und maximal 450 Zeichen umfassen,
+kann aber mit der Einstellung "Maximale Länge des Vorschlagstexts" in der Komponentenkonfiguration geändert werden.
 
-|Suggested hashtags
+|Vorgeschlagene Hashtags
 |Optional
-|If xref:admin:features/social_features/hashtags.adoc[hashtags] were configured, participants can select the ones related to their proposal.
+|Wenn xref:admin:features/social_features/hashtags.adoc[Hashtags] konfiguriert wurden, können Teilnehmende die für ihren Vorschlag relevanten auswählen.
 
 |Dieser Vorschlag stammt aus einer Sitzung
 |Optional
-|Überprüfen Sie, ob dieser Vorschlag von einem Meeting kommt. It displays a link in the proposal page to the meeting.
+|Überprüfen Sie, ob dieser Vorschlag von einem Meeting kommt. Es zeigt auf der Vorschlagsseite einen Link zur Veranstaltung an.
 
 |Besprechung auswählen
 |Benötigt
-|Dropdown selector with all the meetings of this participatory space. Field displayed if the "This proposal comes from a meeting" checkbox is checked.
-The author of the proposal becomes the meeting.
+|Dropdown-Auswahl mit allen Veranstaltungen dieses partizipativen Raums. Feld, das angezeigt wird, wenn das Kontrollkästchen "Dieser Vorschlag stammt aus einer Veranstaltung" aktiviert ist.
+Die Veranstaltung wird zur Urheberin des Vorschlags.
 
 |Adresse
 |Optional
-|If enabled, geocoding allow participant to locate their proposals on a specific location. Proposals with an address are then
-displayed on the map in the proposals list.
+|Wenn aktiviert, ermöglicht die Geokodierung Teilnehmenden, ihre Vorschläge an einem bestimmten Ort zu verorten. Vorschläge mit einer Adresse werden dann
+auf der Karte in der Vorschlagsliste angezeigt.
 
 |Kategorie
 |Optional
-|To which predefined category the proposal belongs. Used for filtering in the proposals list.
+|Zu welcher vordefinierten Kategorie der Vorschlag gehört. Wird zum Filtern in der Vorschlagsliste verwendet.
 
-|Add documents
+|Dokumente hinzufügen
 |Optional
-|If enabled, participants can add files and images to their proposal. The first image added is also added as the proposal image in
-the proposal grid list.
+|Wenn aktiviert, können Teilnehmende ihrem Vorschlag Dateien und Bilder hinzufügen. Das erste hinzugefügte Bild wird auch als Vorschlagsbild in
+der Rasteransicht der Vorschlagsliste verwendet.
 |===
 
-==== Participants proposals
+==== Vorschläge von Teilnehmenden
 
-Once you enabled participant proposals creation for the active phase, participants can see a "New proposal" button on the proposal
-listing page.
+Sobald Sie das Erstellen von Vorschlägen durch Teilnehmende für die aktive Phase aktiviert haben, sehen Teilnehmende auf der Vorschlagsliste
+eine Schaltfläche "Neuer Vorschlag".
 
 image::components/proposals/new_proposal_button_frontend.png[New proposal button on proposals list]
 
-When they click the button, they are redirected on a two step form, enabling them to create their proposal.
-This form depends a lot on which settings you've enabled in the component.
+Wenn sie auf die Schaltfläche klicken, werden sie zu einem zweistufigen Formular weitergeleitet, mit dem sie ihren Vorschlag erstellen können.
+Dieses Formular hängt stark davon ab, welche Einstellungen Sie in der Komponente aktiviert haben.
 
 image::components/proposals/new_proposal_frontend.png[New proposal form - Create]
 
-.New participant proposal form - Creation step
+.Formular für neuen Vorschlag von Teilnehmenden - Schritt: Erstellung
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Titel
 |Benötigt
-|The title of this proposal. It must have 15 characters at minimum and 150 characters as maximum and start with a capital letter.
+|Der Titel dieses Vorschlags. Er muss mindestens 15 und maximal 150 Zeichen umfassen und mit einem Grossbuchstaben beginnen.
 
 |Körper
 |Benötigt
-|The full description for this proposal. Must have 15 characters at minimum and 450 characters at maximum
-by default, but it can be changed with the setting "Maximum proposal body length" in the component configuration.
+|Die vollständige Beschreibung für diesen Vorschlag. Muss standardmässig mindestens 15 und maximal 450 Zeichen umfassen,
+kann aber mit der Einstellung "Maximale Länge des Vorschlagstexts" in der Komponentenkonfiguration geändert werden.
 
-|Suggested hashtags
+|Vorgeschlagene Hashtags
 |Optional
-|If xref:admin:features/social_features/hashtags.adoc[hashtags] were configured, participants can select the ones related to their proposal.
+|Wenn xref:admin:features/social_features/hashtags.adoc[Hashtags] konfiguriert wurden, können Teilnehmende die für ihren Vorschlag relevanten auswählen.
 
 |Adresse
 |Optional
-|If enabled, geocoding allow participant to locate their proposals on a specific location. Proposals with an address are then
-displayed on the map in the proposals list.
+|Wenn aktiviert, ermöglicht die Geokodierung Teilnehmenden, ihre Vorschläge an einem bestimmten Ort zu verorten. Vorschläge mit einer Adresse werden dann
+auf der Karte in der Vorschlagsliste angezeigt.
 
 |Kategorie
 |Optional
-|To which predefined category the proposal belongs. Used for filtering in the proposals list.
+|Zu welcher vordefinierten Kategorie der Vorschlag gehört. Wird zum Filtern in der Vorschlagsliste verwendet.
 
-|Add documents
+|Dokumente hinzufügen
 |Optional
-|If enabled, participants can add files and images to their proposal. The first image added is also added as the proposal image in
-the proposal grid list.
+|Wenn aktiviert, können Teilnehmende ihrem Vorschlag Dateien und Bilder hinzufügen. Das erste hinzugefügte Bild wird auch als Vorschlagsbild in
+der Rasteransicht der Vorschlagsliste verwendet.
 
-|Create proposal as
+|Vorschlag erstellen als
 |Optional
-|If the participant is an administrator of a verified xref:admin:participants/groups.adoc[user group], they can create a proposal in the name of
-this group
+|Wenn die teilnehmende Person Admin einer verifizierten xref:admin:participants/groups.adoc[Benutzergruppe] ist, kann sie im Namen dieser Gruppe
+einen Vorschlag erstellen
 |===
 
-Once the proposal is written and all properties are set, the participant can click the preview button to review their proposal.
-The proposal is saved as a draft in case participants want to modify it later.
+Sobald der Vorschlag verfasst und alle Eigenschaften festgelegt sind, kann die teilnehmende Person auf die Schaltfläche Vorschau klicken, um ihren Vorschlag zu überprüfen.
+Der Vorschlag wird als Entwurf gespeichert, falls Teilnehmende ihn später noch bearbeiten möchten.
 
 image::components/proposals/new_proposal_frontend_publish.png[New proposal form (by a participant) - Publish]
 
-They can click the "Publish" button to finalize the publication of the proposal.
+Sie können auf die Schaltfläche "Veröffentlichen" klicken, um die Veröffentlichung des Vorschlags abzuschliessen.
 
 image::components/proposals/new_proposal_frontend_published.png[Published proposal made by a participant]
 
 === Vorschläge verwalten
 
-Once there are multiple proposals in the process, administrators can manage them.
+Sobald mehrere Vorschläge im Prozess vorhanden sind, können Admins sie verwalten.
 
 image::components/proposals/manage_proposals.png[Manage proposals table]
 
-On the proposals list in the administration panel, administrators can see:
+In der Vorschlagsliste im Verwaltungspanel können Admins Folgendes sehen:
 
-* *Title*: Title of the proposal.
-* *Published at*: Publication date of the proposal.
-* *Comments*: The number of comments this proposal has.
-* *Notes*: The number of votes this proposal has.
-* *Valuators*: The number of valuators for this proposal.
-* *Status*: The status of the xref:admin:components/proposals/answers.adoc[answer] of this proposal.
+* *Titel*: Titel des Vorschlags.
+* *Veröffentlicht am*: Veröffentlichungsdatum des Vorschlags.
+* *Kommentare*: Die Anzahl der Kommentare zu diesem Vorschlag.
+* *Stimmen*: Die Anzahl der Stimmen, die dieser Vorschlag hat.
+* *Bewertende*: Die Anzahl der bewertenden Personen für diesen Vorschlag.
+* *Status*: Der Status der xref:admin:components/proposals/answers.adoc[Antwort] zu diesem Vorschlag.
 
-You can filter and sort this list by clicking the "Filter" button and the columns headers.
-You can also search for proposals by their title or ID in the search bar.
+Sie können diese Liste filtern und sortieren, indem Sie auf die Schaltfläche "Filter" und die Spaltenüberschriften klicken.
+Sie können auch in der Suchleiste nach Vorschlägen anhand ihres Titels oder ihrer ID suchen.
 
 === Aktionen
 
@@ -148,32 +148,32 @@ You can also search for proposals by their title or ID in the search bar.
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
-|Edit form, only for xref:_official_proposals[Official proposals].
+|Bearbeitungsformular, nur für xref:_official_proposals[offizielle Vorschläge].
 
-|image:icons/action_answers.png[Answer proposal icon]
-|xref:components/proposals/answers.adoc[Answer the proposal]
-|Allows administrators and valuators to give an official answer to a proposal.
+|image:icons/action_answers.png[Symbol: Vorschlag beantworten]
+|xref:components/proposals/answers.adoc[Den Vorschlag beantworten]
+|Ermöglicht es Admins und bewertenden Personen, eine offizielle Antwort auf einen Vorschlag zu geben.
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
 |Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
 
 |image:icons/action_permissions.png[Permissions icon]
 |Berechtigungen
-|To handle the authorizations needed to like, amend, vote on comment or comment on this specific proposal.
+|Um die Berechtigungen zu verwalten, die erforderlich sind, um diesen spezifischen Vorschlag mit Gefällt mir zu markieren, zu ändern, in einem Kommentar abzustimmen oder zu kommentieren.
 |===
 
-=== Bulk actions
+=== Massenaktionen
 
-When managing proposals, you can select multiple proposals at the same time to perform bulk actions.
+Bei der Verwaltung von Vorschlägen können Sie mehrere Vorschläge gleichzeitig auswählen, um Massenaktionen durchzuführen.
 
 image::components/proposals/bulk_actions.png[Proposals bulk actions]
 
 === Exportieren
 
-The "Export all" button allows administrators to export the proposals and their comments in different formats.
+Mit der Schaltfläche "Alles exportieren" können Admins die Vorschläge und ihre Kommentare in verschiedenen Formaten exportieren.
 
 * Vorschläge als CSV
 * Vorschläge als JSON
@@ -184,6 +184,6 @@ The "Export all" button allows administrators to export the proposals and their 
 
 === Importieren
 
-* Import proposals from another component: Allows to import proposals from a proposal component of the same space.
-* Import proposals from a file
-* Import answers from a file
+* Vorschläge aus einer anderen Komponente importieren: Ermöglicht den Import von Vorschlägen aus einer Vorschläge-Komponente desselben Raums.
+* Vorschläge aus einer Datei importieren
+* Antworten aus einer Datei importieren
