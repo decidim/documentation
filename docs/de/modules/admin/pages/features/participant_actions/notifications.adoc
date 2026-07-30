@@ -1,13 +1,13 @@
 = Benachrichtigungen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Benachrichtigungen ermöglichen es Teilnehmenden, über die neuesten Nachrichten der Plattform, Räume, Inhalte, Teilnehmende, denen sie folgen, usw. auf dem Laufenden zu bleiben.
 Die meisten Aktionen auf der Plattform lösen Benachrichtigungen aus.
 
 Teilnehmende können ihre Benachrichtigungseinstellungen in ihrem xref:admin:features/participant_actions/my_account.adoc[Konto] verwalten.
 
-=== How to find it?
+=== Wie findet man sie?
 
 Als angemeldete teilnehmende Person können Sie an zwei Stellen auf Ihre Benachrichtigungen zugreifen:
 
@@ -26,49 +26,49 @@ image:features/notifications/no_notifications_yet.png[Beispiel der Benachrichtig
 
 === Benachrichtigungsliste
 
-Unten ist eine erschöpfende Liste von Aktionen, die Benachrichtigungen an Teilnehmer auslösen. Die Teilnehmer sind in drei Kategorien unterteilt: betroffene Benutzer, Follower und Administratoren.
+Unten ist eine erschöpfende Liste von Aktionen, die Benachrichtigungen an Teilnehmende auslösen. Die Teilnehmenden sind in drei Kategorien unterteilt: betroffene Nutzende, Follower und Admins.
 
-NOTE: Betroffene Benutzer sind abhängig vom Benachrichtigungskontext. Zum Beispiel könnte es sich um die Autorenschaft eines moderierten Inhalts handeln, dass eine nutzende Person ein Abzeichen erhält, dass eine nutzende Person erwähnt wurde usw., je nach Interaktion der nutzenden Person mit den Räumen und anderen Nutzenden auf der Plattform.
+NOTE: Betroffene Nutzende sind abhängig vom Benachrichtigungskontext. Zum Beispiel könnte es sich um die Autorenschaft eines moderierten Inhalts handeln, dass eine nutzende Person ein Abzeichen erhält, dass eine nutzende Person erwähnt wurde usw., je nach Interaktion der nutzenden Person mit den Räumen und anderen Nutzenden auf der Plattform.
 
 [cols="7,2,1,1,1"]
 |===
-|Aktion |Feature |Betroffener Benutzer |Follower |Administrator
+|Aktion |Feature |Betroffene nutzende Person |Follower |Admin
 
-|Ein neuer Anhang wurde erstellt |Administrator |❌ |✅ |❌
+|Ein neuer Anhang wurde erstellt |Admin |❌ |✅ |❌
 
-|Ein Admin hat einen Export angefordert |Administrator |❌ |❌ |✅
+|Ein Admin hat einen Export angefordert |Admin |❌ |❌ |✅
 
-|Eine Komponente wurde in einem partizipatorischen Raum veröffentlicht |Administrator |❌ |✅ |❌
+|Eine Komponente wurde in einem partizipatorischen Raum veröffentlicht |Admin |❌ |✅ |❌
 
 |Eine teilnehmende Person hat versucht, sich mit den Daten einer anderen teilnehmenden Person zu verifizieren |Überprüfungen |❌ |❌ |✅
 
-|Ein Administrator moderierte eine Ressource, weil sie gemeldet wurde |Moderation |✅ |❌ |❌
+|Ein Admin moderierte eine Ressource, weil sie gemeldet wurde |Moderation |✅ |❌ |❌
 
 |Eine Ressource wurde gemeldet |Moderation |❌ |❌ |✅
 
-|Eine nutzende Person bestätigt die Registrierung (sofern Willkommensbenachrichtigungen aktiviert sind) |Benutzer |✅ |❌ |❌
+|Eine nutzende Person bestätigt die Registrierung (sofern Willkommensbenachrichtigungen aktiviert sind) |Nutzende |✅ |❌ |❌
 
-|Ein Benutzer verdient ein Abzeichen (wenn Abzeichen aktiviert sind) |Benutzer |✅ |❌ |❌
+|Eine nutzende Person verdient ein Abzeichen (wenn Abzeichen aktiviert sind) |Nutzende |✅ |❌ |❌
 
-|Ein Benutzer hat ein neues Abzeichen Level erreicht (wenn Abzeichen aktiviert sind) |Benutzer |✅ |❌ |❌
+|Eine nutzende Person hat ein neues Abzeichen-Level erreicht (wenn Abzeichen aktiviert sind) |Nutzende |✅ |❌ |❌
 
-|Ein Benutzer wurde offiziell |Benutzer |❌ |❌ |✅
+|Eine nutzende Person wurde offizialisiert |Nutzende |❌ |❌ |✅
 
-|Eine nutzende Person fordert den Export ihrer Daten an |Benutzer |✅ |❌ |❌
+|Eine nutzende Person fordert den Export ihrer Daten an |Nutzende |✅ |❌ |❌
 
-|Ein Benutzer, dem ich folge hat eine Ressource bestätigt |Benutzer |❌ |✅ |❌
+|Eine nutzende Person, der ich folge, hat eine Ressource unterstützt |Nutzende |❌ |✅ |❌
 
-|Ein öffentliches Profil wurde aktualisiert |Benutzer |❌ |✅ |❌
+|Ein öffentliches Profil wurde aktualisiert |Nutzende |❌ |✅ |❌
 
 |Eine neue Benutzergruppe wurde erstellt |Benutzergruppenfootnote:Benutzergruppe[Wenn Benutzergruppen aktiviert sind] |❌ |❌ |✅
 
 |Eine Benutzergruppe hat ihr Profil aktualisiert |Benutzergruppenfootnote:Benutzergruppe[] |❌ |❌ |✅
 
-|Ein Benutzer wurde eingeladen, einer Benutzergruppe beizutreten |Benutzergruppenfootnote:Benutzergruppe[] |✅ |❌ |❌
+|Eine nutzende Person wurde eingeladen, einer Benutzergruppe beizutreten |Benutzergruppenfootnote:Benutzergruppe[] |✅ |❌ |❌
 
 |Eine nutzende Person wurde zur Gruppenadministration befördert |Benutzergruppenfootnote:Benutzergruppe[] |✅ |❌ |❌
 
-|Ein Benutzer beantragt, der Benutzergruppe beizutreten |Benutzergruppenfootnote:Benutzergruppe[] |✅ |❌ |❌
+|Eine nutzende Person hat beantragt, der Benutzergruppe beizutreten |Benutzergruppenfootnote:Benutzergruppe[] |✅ |❌ |❌
 
 |Eine Benutzeranfrage wurde angenommen, um der Benutzergruppe beizutreten |Benutzergruppenfootnote:Benutzergruppe[] |✅ |❌ |❌
 
@@ -76,11 +76,11 @@ NOTE: Betroffene Benutzer sind abhängig vom Benachrichtigungskontext. Zum Beisp
 
 |Die Gruppenadministration wurde zurückgestuft |Benutzergruppenfootnote:Benutzergruppe[] |✅ |❌ |❌
 
-|Der Benutzer wurde aus der Gruppe entfernt |Benutzergruppenfootnote:Benutzergruppe[] |✅ |❌ |❌
+|Die nutzende Person wurde aus der Gruppe entfernt |Benutzergruppenfootnote:Benutzergruppe[] |✅ |❌ |❌
 
-|Ein Admin der Versammlung hat Sie als eines ihrer Mitglieder hinzugefügt |Schwärmerei |✅ |❌ |❌
+|Ein Admin der Versammlung hat Sie als eines ihrer Mitglieder hinzugefügt |Versammlungen |✅ |❌ |❌
 
-|Ihnen wurde eine Rolle für eine Versammlung zugewiesen |Schwärmerei |✅ |❌ |❌
+|Ihnen wurde eine Rolle für eine Versammlung zugewiesen |Versammlungen |✅ |❌ |❌
 
 |Ihnen wurde eine Rolle für einen Beteiligungsprozess zugewiesen |Prozesse |✅ |❌ |❌
 
@@ -106,19 +106,19 @@ NOTE: Betroffene Benutzer sind abhängig vom Benachrichtigungskontext. Zum Beisp
 
 |Ein Admin hat Sie als Vertrauensperson hinzugefügt |Wahlen |✅ |❌ |❌
 
-|Deine Stimme wurde angenommen |Wahlen |✅ |❌ |❌
+|Ihre Stimme wurde angenommen |Wahlen |✅ |❌ |❌
 
-|Ihnen wurde eine Rolle der Umfragestelle zugewiesen |Wahlen |✅ |❌ |❌
+|Ihnen wurde eine Rolle des Wahllokals zugewiesen |Wahlen |✅ |❌ |❌
 
 |Hier ist Ihr Zugangscode |Wahlen |✅ |❌ |❌
 
-|Ein Benutzer, dem ich folge hat eine Initiative erstellt |Initiativen |❌ |✅ |❌
+|Eine nutzende Person, der ich folge, hat eine Initiative erstellt |Initiativen |❌ |✅ |❌
 
 |Meine Initiative wurde erstellt |Initiativen |✅ |❌ |❌
 
-|Ein Benutzer, dem ich folge hat eine Initiative bestätigt |Initiativen |❌ |✅ |❌
+|Eine nutzende Person, der ich folge, hat eine Initiative unterstützt |Initiativen |❌ |✅ |❌
 
-|Ein Benutzer hat seine Initiative zur technischen Validierung gesendet |Initiativen |❌ |❌ |✅
+|Eine nutzende Person hat ihre Initiative zur technischen Validierung gesendet |Initiativen |❌ |❌ |✅
 
 |Eine Initiative hat ihren Status geändert |Initiativen |✅ |✅ |❌
 
@@ -128,7 +128,7 @@ NOTE: Betroffene Benutzer sind abhängig vom Benachrichtigungskontext. Zum Beisp
 
 |Der Antrag, Teil des Initiativkomitees für eine Initiative zu werden, wurde abgelehnt |Initiativen |✅ |❌ |❌
 
-|Ein Benutzer möchte Ihrer Initiative beitreten |Initiativen |✅ |❌ |❌
+|Eine nutzende Person möchte Ihrer Initiative beitreten |Initiativen |✅ |❌ |❌
 
 |Eine Initiative hat den Unterschriftenschwellenwert erreicht |Initiativen |❌ |❌ |✅
 
@@ -148,9 +148,9 @@ NOTE: Betroffene Benutzer sind abhängig vom Benachrichtigungskontext. Zum Beisp
 
 |Eine Benutzergruppe hat einen Kommentar zu einer Ressource hinterlassen |Kommentare |❌ |✅ |❌
 
-|Ein Benutzer hat einen Kommentar zu einer Ressource hinterlassen |Kommentare |❌ |✅ |❌
+|Eine nutzende Person hat einen Kommentar zu einer Ressource hinterlassen |Kommentare |❌ |✅ |❌
 
-|Ein Benutzer hat Ihren Kommentar beantwortet |Kommentare |✅ |❌ |❌
+|Eine nutzende Person hat Ihren Kommentar beantwortet |Kommentare |✅ |❌ |❌
 
 |Eine Gruppe, der Sie angehören, wurde erwähnt |Kommentare |✅ |❌ |❌
 
@@ -162,7 +162,7 @@ NOTE: Betroffene Benutzer sind abhängig vom Benachrichtigungskontext. Zum Beisp
 
 |Eine Debatte wurde erstellt |Debatten |❌ |✅ |❌
 
-|Die Erstellung von Debatten ist für Teilnehmer aktiviert |Debatten |❌ |✅ |❌
+|Die Erstellung von Debatten ist für Teilnehmende aktiviert |Debatten |❌ |✅ |❌
 
 |Debate-Erstellung ist nicht mehr aktiv |Debatten |❌ |✅ |❌
 
@@ -190,7 +190,7 @@ NOTE: Betroffene Benutzer sind abhängig vom Benachrichtigungskontext. Zum Beisp
 
 |Vorschlagsunterstützung ist offen |Vorschläge |❌ |✅ |❌
 
-|Vorschläge Unterstützungen sind offen |Vorschläge |❌ |✅ |❌
+|Vorschlagsunterstützungen sind offen |Vorschläge |❌ |✅ |❌
 
 |Jemand hat eine Anmerkung zu einem Vorschlag hinterlassen |Vorschläge |❌ |❌ |✅
 
@@ -206,27 +206,27 @@ NOTE: Betroffene Benutzer sind abhängig vom Benachrichtigungskontext. Zum Beisp
 
 |Ein Vorschlag wurde erwähnt |Vorschläge |✅ |❌ |❌
 
-|Ein Benutzer hat Zugriff als Mitwirkender angefordert |Vorschlagsentwürfe |✅ |❌ |❌
+|Eine nutzende Person hat Zugriff als Mitwirkende angefordert |Vorschlagsentwürfe |✅ |❌ |❌
 
-|Du wurdest als Mitwirkender akzeptiert |Vorschlagsentwürfe |✅ |❌ |❌
+|Sie wurden als Mitwirkende akzeptiert |Vorschlagsentwürfe |✅ |❌ |❌
 
-|Du wurdest als Beitragender abgelehnt |Vorschlagsentwürfe |✅ |❌ |❌
+|Sie wurden als Mitwirkende abgelehnt |Vorschlagsentwürfe |✅ |❌ |❌
 
-|Ein Benutzer wurde als Mitwirkender abgelehnt |Vorschlagsentwürfe |✅ |❌ |❌
+|Eine nutzende Person wurde als Mitwirkende abgelehnt |Vorschlagsentwürfe |✅ |❌ |❌
 
-|Ein Benutzer wurde als Mitwirkender akzeptiert |Vorschlagsentwürfe |✅ |❌ |❌
+|Eine nutzende Person wurde als Mitwirkende akzeptiert |Vorschlagsentwürfe |✅ |❌ |❌
 
-|Ein Benutzer hat den gemeinschaftlichen Entwurf zurückgezogen |Vorschlagsentwürfe |✅ |❌ |❌
+|Eine nutzende Person hat den gemeinschaftlichen Entwurf zurückgezogen |Vorschlagsentwürfe |✅ |❌ |❌
 
-|Ein Änderungsantrag wurde abgelehnt |Änderungsantragsfußnotiz:Änderungen[wenn Änderungen aktiviert sind] |✅ |✅ |❌
+|Ein Änderungsantrag wurde abgelehnt |Änderungsanträgefootnote:amendments[Wenn Änderungsanträge aktiviert sind] |✅ |✅ |❌
 
-|Ein Änderungsantrag wurde angenommen |Änderungsanträge:Änderungen[] |✅ |✅ |❌
+|Ein Änderungsantrag wurde angenommen |Änderungsanträgefootnote:amendments[] |✅ |✅ |❌
 
-|Eine Änderung wurde erstellt |Änderungsanträge:Änderungen[] |✅ |✅ |❌
+|Eine Änderung wurde erstellt |Änderungsanträgefootnote:amendments[] |✅ |✅ |❌
 
-|Ein Änderungsantrag wurde beworben. |Änderungsanträge:Änderungen[] |✅ |✅ |❌
+|Ein Änderungsantrag wurde befördert. |Änderungsanträgefootnote:amendments[] |✅ |✅ |❌
 
-|Eine Sortierung wurde erstellt |Sortierungen |❌ |✅ |❌
+|Eine Auslosung wurde erstellt |Auslosungen |❌ |✅ |❌
 
 |Eine Umfrage wurde geöffnet |Umfragen |❌ |✅ |❌
 
