@@ -1,6 +1,6 @@
 = Aussehen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Auf dieser Seite können Sie das Look-and-Feel Ihrer Decidim-Instanz konfigurieren.
 
@@ -171,5 +171,5 @@ image::settings/appearance_colors.png[Decidim layout appearance colors example]
 NOTE: Möglicherweise sehen Sie dieses Feld nicht. Weitere Informationen zur Aktivierung finden Sie in der Dokumentation zu xref:customize:styles.adoc[Styles].
 
 Mit diesem Feld können Sie Code zum HTML-Head hinzufügen. Der häufigste Anwendungsfall ist die Einbindung von Drittanbieterdiensten, die
-zusätzliches JavaScript oder CSS erfordern. Außerdem können Sie zusätzliche Meta-Tags dem HTML hinzuzufügen.
+zusätzliches JavaScript oder CSS erfordern. Ausserdem können Sie damit zusätzliche Meta-Tags zum HTML hinzufügen.
 Beachten Sie, dass dies nur auf öffentlichen Seiten dargestellt wird, nicht in der Administration.
