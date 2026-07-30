@@ -1,6 +1,6 @@
 = Prozessgruppen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Eine Prozessgruppe kann nützlich sein, um grosse Beteiligungsprozesse anhand eines Kriteriums in Teilprozesse zu unterteilen.
 Ausserdem ermöglicht sie es Admins, eine Instanz mit vielen Prozessen zu organisieren, indem sie diejenigen zusammenfassen, die zu einem
@@ -62,15 +62,15 @@ image::spaces/processes/processes_group_form_about.png[Participatory process gro
 |Eine ausführliche Erklärung, worum es in der Prozessgruppe geht.
 |Sichtbar auf der Karte in der Prozessübersicht und im Inhaltsblock "Titel und Beschreibung" der Startseite.
 
-|Verwandte Prozesse
+|Ähnliche Prozesse
 |Optional
 |Die Prozesse, die in dieser Prozessgruppe zusammengefasst werden sollen. Um mehrere Prozesse auszuwählen, verwenden Sie die Taste *STRG* oder *CMD*.
 |Sichtbar im Inhaltsblock "Beteiligungsprozesse" der Startseite.
 
 |Bild
 |Optional
-|Bild, das in Präsentationskarten dieser Prozessgruppe verwendet wird. Bildführung:
-Vorzugsweise ein Querformat ohne Text. Der Dienst erzeugt das Bild.
+|Bild, das in Präsentationskarten dieser Prozessgruppe verwendet wird. Hinweise zum Bild:
+Vorzugsweise ein Querformat ohne Text. Der Dienst beschneidet das Bild.
 Maximale Dateigrösse: 10 MB. Erlaubte Dateiendungen: JPEG JPG PNG
 |Sichtbar auf der Karte der Prozessgruppen auf der Startseite und in der Prozessübersicht.
 |===
@@ -103,7 +103,7 @@ image::spaces/processes/processes_group_form_metadata.png[Participatory process 
 |Optional
 |Der Tätigkeitsbereich oder die Kategorie der Organisation, falls relevant.
 
-|Bereichsmetadaten
+|Themenmetadaten
 |Optional
 |Metadaten zum Geltungsbereich des Prozesses, falls relevant.
 
@@ -194,7 +194,7 @@ Sie können konfigurieren, ob die Ergebnisse nach den neuesten oder zufällig so
 
 image::spaces/processes/processes_group_landing_results.png[Participatory process group landing page results block]
 
-==== Anstehende Meetings
+==== Anstehende Veranstaltungen
 
 Der Inhaltsblock Bevorstehende Veranstaltungen zeigt eine Auswahl von Veranstaltungen aus den verschiedenen Beteiligungsprozessen an.
 Sie können konfigurieren, ob die Ergebnisse nach den neuesten oder zufällig sortiert werden, indem Sie im Inhaltsblock der Startseite auf das Symbol "Bearbeiten" klicken.
