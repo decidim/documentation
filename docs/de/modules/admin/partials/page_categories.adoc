@@ -45,7 +45,7 @@ image:spaces/categories_new_form.png[Neues Kategorie-Formular erstellen]
 |Benötigt
 |Was ist der Name für diese Kategorie.
 
-|Bestellposition
+|Reihenfolge
 |Optional
 |Which order it has in relation to the other categories. Eine niedrigere Zahl bedeutet eine höhere Priorität. For instance, if you have two categories, "Category a" with weight "10" and "Category b" with weight "0" then "Category b" is first when ordering.
 
@@ -67,11 +67,11 @@ You can find all the categories on the list in the administration panel, with:
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
 |To edit the name, the order position and the parent of the category.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
 |To delete the category. A category can't be deleted if it has resources attached to it.
 |===
