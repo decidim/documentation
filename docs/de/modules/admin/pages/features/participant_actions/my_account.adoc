@@ -2,29 +2,29 @@
 
 == Understand the basics
 
-This feature allows participants to manage their account information, notifications preferences, authorizations, see their groups, etc.
-This account page is only accessible to the participant, and some account information (such as the "About" field) is displayed in the
-participant xref:admin:features/participant_actions/my_public_profile.adoc[public profile].
+Mit dieser Funktion können Teilnehmende ihre Kontoinformationen, Benachrichtigungseinstellungen und Berechtigungen verwalten, ihre Gruppen einsehen usw.
+Diese Kontoseite ist nur für die teilnehmende Person selbst zugänglich, und einige Kontoinformationen (wie das Feld "Über") werden im
+xref:admin:features/participant_actions/my_public_profile.adoc[öffentlichen Profil] der teilnehmenden Person angezeigt.
 
 === How to find it?
 
-As a signed in participant, you can access your account configuration from two places:
+Als angemeldete teilnehmende Person können Sie an zwei Stellen auf Ihre Kontokonfiguration zugreifen:
 
-. Click in your avatar in the header, and then click in the "My account" menu item
-. Click in the "Configuration" link in the footer, in the "My account" section
+. Klicken Sie in der Kopfzeile auf Ihren Avatar und anschliessend auf den Menüpunkt "Mein Konto"
+. Klicken Sie auf den Link "Konfiguration" in der Fusszeile, im Abschnitt "Mein Konto"
 
 image::features/my_account/account_dropdown.png[Frontend user menu dropdown]
 
 == Konfiguration
 
-There, you'll find different sections, allowing you to set different settings for your participant account.
+Dort finden Sie verschiedene Abschnitte, in denen Sie unterschiedliche Einstellungen für Ihr Teilnehmendenkonto vornehmen können.
 
-NOTE: You might not see the Authorizations and the Groups settings sections if you didn't enable them.
+NOTE: Möglicherweise sehen Sie die Abschnitte für Berechtigungen und Gruppeneinstellungen nicht, wenn Sie diese nicht aktiviert haben.
 
 === Konto
 
-In this section, participants can modify the information displayed in their xref:features/participant_actions/my_public_profile.adoc[public profile], modify their email address or
-the language they want to use by default.
+In diesem Abschnitt können Teilnehmende die in ihrem xref:features/participant_actions/my_public_profile.adoc[öffentlichen Profil] angezeigten Informationen ändern sowie ihre E-Mail-Adresse oder
+die standardmässig verwendete Sprache anpassen.
 
 image::features/my_account/account.png[My account form]
 
@@ -36,7 +36,7 @@ image::features/my_account/account.png[My account form]
 |Avatar
 |Optional
 |Avatar oder Bild für den Teilnehmer. Bildführung: Vorzugsweise ein Querformat ohne Text.
-Der Dienst erzeugt das Bild. Maximum file size: 5 MB
+Der Dienst erzeugt das Bild. Maximale Dateigrösse: 5 MB
 
 |Ihr Name
 |Benötigt
@@ -48,8 +48,8 @@ Der Dienst erzeugt das Bild. Maximum file size: 5 MB
 
 |Ihre E-Mail
 |Benötigt
-|Die E-Mail des Teilnehmers, wo sie Benachrichtigungen, Passwortwiederherstellung usw. erhalten. If it's changed it needs to be
-confirmed again.
+|Die E-Mail des Teilnehmers, wo sie Benachrichtigungen, Passwortwiederherstellung usw. erhalten. Wenn sie geändert wird, muss sie erneut
+bestätigt werden.
 
 |Persönliche URL
 |Optional
@@ -57,21 +57,21 @@ confirmed again.
 
 |Über
 |Optional
-|Information about the participant displayed in the participant's profile.
+|Informationen über die teilnehmende Person, die in ihrem Profil angezeigt werden.
 
 |Lokal
 |Benötigt
-|Language you want to use to browse and receive notifications in Decidim.
+|Sprache, die Sie zum Navigieren und für den Empfang von Benachrichtigungen in Decidim verwenden möchten.
 |===
 
-Participants can also change their password on this page, by clicking the "Change password" link. They need to choose a new password and enter
-their current password to be able to change it.
+Teilnehmende können auf dieser Seite auch ihr Passwort ändern, indem sie auf den Link "Passwort ändern" klicken. Sie müssen ein neues Passwort wählen und ihr
+aktuelles Passwort eingeben, um es ändern zu können.
 
 image::features/my_account/password_change.png[My account form - password change]
 
-=== Notifications settings
+=== Benachrichtigungseinstellungen
 
-In this section participants can choose which kind of notifications they want to receive and how often they want to receive them.
+In diesem Abschnitt können Teilnehmende auswählen, welche Art von Benachrichtigungen sie erhalten möchten und wie oft.
 
 image:features/my_account/notifications_settings.png[Benachrichtigungseinstellungen]
 
@@ -80,25 +80,25 @@ Die verfügbaren Optionen sind:
 * Ich möchte Benachrichtigungen erhalten über
 ** Meine eigene Tätigkeit, wie wenn jemand in meinem Vorschlag kommentiert oder mich erwähnt
 ** Alles, was ich folge
-* How often do you want to receive the notifications email?
-** None, Real time, Daily, or Weekly
+* Wie oft möchten Sie die Benachrichtigungs-E-Mail erhalten?
+** Keine, In Echtzeit, Täglich oder Wöchentlich
 * Newsletter
 ** Ich möchte Newsletter erhalten
 * Empfange Direktnachrichten von jedem
 ** Erlaube mir jemandem eine Direktnachricht zu senden, auch wenn ich ihnen nicht folge
 * Administratoren
-** I want to receive an email every time something or someone is reported for moderation.
-** I want to receive email reminders of closed meetings unpublished reports
-* Push notifications
-** Get push notifications to find out what is going on when you are not on the platform. You can turn them off anytime.
+** Ich möchte jedes Mal eine E-Mail erhalten, wenn etwas oder jemand zur Moderation gemeldet wird.
+** Ich möchte E-Mail-Erinnerungen zu unveröffentlichten Berichten abgeschlossener Veranstaltungen erhalten
+* Push-Benachrichtigungen
+** Erhalten Sie Push-Benachrichtigungen, um zu erfahren, was passiert, wenn Sie nicht auf der Plattform sind. Sie können diese jederzeit deaktivieren.
 
 === Autorisierungen
 
-In this section participants are able to review their Authorizations and see some metadata, like when it was granted
-or the status of the authorization.
+In diesem Abschnitt können Teilnehmende ihre Berechtigungen einsehen und einige Metadaten anzeigen, wie zum Beispiel, wann sie erteilt wurden,
+oder den Status der Berechtigung.
 
-It depends on how it's configured for the organization, as depending in the context (like normative or laws) it could work
-in different ways. Weitere Informationen über Autorisationen finden Sie unter xref:admin:participants/authorizations.adoc[Autorisationen
+Dies hängt davon ab, wie es für die Organisation konfiguriert ist, da es je nach Kontext (z. B. Vorschriften oder Gesetze) auf unterschiedliche
+Weise funktionieren kann. Weitere Informationen über Autorisationen finden Sie unter xref:admin:participants/authorizations.adoc[Autorisationen
 im Admin-Handbuch] und xref:customize:authorizations.adoc[Autorisationen in der Anleitung].
 
 image:features/my_account/authorizations.png[Authorizations]
@@ -111,26 +111,26 @@ Für eine beliebige Autorisierung können Sie folgende Informationen sehen:
 
 === Gruppen
 
-In this section participants can see which groups they belong to.
+In diesem Abschnitt können Teilnehmende sehen, welchen Gruppen sie angehören.
 
-NOTE: Willst du eine neue Gruppe erstellen? Go to the xref:admin:features/participant_actions/group_profile.adoc[Group profile] page.
+NOTE: Willst du eine neue Gruppe erstellen? Gehen Sie zur Seite xref:admin:features/participant_actions/group_profile.adoc[Gruppenprofil].
 
 image::features/my_account/groups.png[Groups]
 
-Read more about groups configuration in the xref:admin:participants/groups.adoc[Groups in the administrator manual].
+Weitere Informationen zur Gruppenkonfiguration finden Sie unter xref:admin:participants/groups.adoc[Gruppen im Administrationshandbuch].
 
 === Meine Interessen
 
 In diesem Bereich können die Teilnehmer wählen, über welche Interessen sie mehr Informationen erhalten müssen.
 
-By default what they see here is a list of all the xref:admin:settings/scopes.adoc[Scopes] of the organization. Those selections
-can be used by administrators when segmenting for the xref:admin:features/social_features/newsletters.adoc[Newsletters].
+Standardmässig sehen sie hier eine Liste aller xref:admin:settings/scopes.adoc[Themen] der Organisation. Diese Auswahl
+kann von Admins beim Segmentieren für xref:admin:features/social_features/newsletters.adoc[Newsletter] verwendet werden.
 
 image::features/my_account/my_interests.png[My interests]
 
 === Meine Daten
 
-In this section participants can request a file with all the data that they've provided in the platform.
+In diesem Abschnitt können Teilnehmende eine Datei mit allen Daten anfordern, die sie auf der Plattform bereitgestellt haben.
 
 image::features/my_account/my_data.png[My data]
 
@@ -154,20 +154,20 @@ Zum Öffnen der Zip-Datei muss die Software, die Sie verwenden, die Verschlüsse
 
 === Mein Konto löschen
 
-In this section participants are able to delete their own accounts. Once it's done, they are unable to access the system anymore.
-Diese Aktion ist unumkehrbar. All the contributions on the platform become anonymous.
+In diesem Abschnitt können Teilnehmende ihr eigenes Konto löschen. Sobald dies geschehen ist, können sie nicht mehr auf das System zugreifen.
+Diese Aktion ist unumkehrbar. Alle Beiträge auf der Plattform werden anonymisiert.
 
 image:features/my_account/delete_my_account.png[Kontoformular löschen]
 
 Zum Löschen des Kontos:
 
-. Optionally, you can provide a reason for the deletion
+. Optional können Sie einen Grund für die Löschung angeben
 . Klicken Sie in "Mein Konto löschen"
 . Klicken Sie auf "Ja, ich möchte mein Konto löschen"
 
 image:features/my_account/delete_my_account_confirm.png[Account löschen bestätigen]
 
-After the account has been deleted, the contributions (such as comments, proposals, etc) are still visible but all the authorship information is anonymised,
-and transferred to a "Deleted participant" author.
+Nachdem das Konto gelöscht wurde, sind die Beiträge (wie Kommentare, Vorschläge usw.) weiterhin sichtbar, aber alle Angaben zur Urheberschaft werden anonymisiert
+und einer Urheberschaft namens "Gelöschte teilnehmende Person" zugewiesen.
 
 image:features/my_account/delete_my_account_deleted.png[Gelöschter Teilnehmerbeitrag]
