@@ -1,6 +1,6 @@
 = Debatten
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Die Debatten-Komponente ermöglicht es Personen, Diskussionen zu führen, ohne Abstimmung oder Priorisierung. Sie ermöglicht es auch, Debatten zu schliessen,
 indem ein Fazit oder eine Zusammenfassung dessen hinzugefügt wird, worum es in der Diskussion ging.
@@ -27,14 +27,14 @@ image:icons/action_configure.png[Symbol: Konfigurieren] Konfigurieren-Symbol kli
 
 image::components/debates/component.png[Add component form]
 
-.Komponente hinzufügen: Debate Formular
+.Komponente hinzufügen: Debatten-Formular
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Name
 |Benötigt
-|The title of this component.
+|Der Titel dieser Komponente.
 
 |Reihenfolge
 |Optional
@@ -48,11 +48,11 @@ steht "Komponente b" bei der Sortierung an erster Stelle.
 |===
 |Feld |Typ |Beschreibung
 
-|Bereiche aktiviert
+|Themen aktiviert
 |Optional
-|Aktivieren, wenn die Bereichsfilterung in dieser Komponente erfolgen soll.
+|Aktivieren, wenn die Themenfilterung in dieser Komponente erfolgen soll.
 
-|Bereich
+|Thema
 |Optional
 |Zu welchen xref:admin:settings/scopes.adoc[Themen] diese Komponente gehört.
 
@@ -69,16 +69,16 @@ steht "Komponente b" bei der Sortierung an erster Stelle.
 |Eine allgemeine Ankündigung, die auf der Landungsseite für allgemeine Debatten zu sehen sein wird.
 |===
 
-.Komponente hinzufügen: Debates Formular - Schritteinstellungen
+.Komponente hinzufügen: Debatten-Formular - Schritteinstellungen
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
-|Befürworter aktiviert
+|Unterstützungen aktiviert
 |Optional
 |Aktivieren Sie dies, wenn Teilnehmende öffentlich ihre Unterstützung für Debatten zeigen können sollen.
 
-|Befürworter blockiert
+|Unterstützungen blockiert
 |Optional
 |Aktivieren Sie dies, damit Teilnehmende die bestehenden Unterstützungen sehen, aber keine neuen abgeben können.
 
@@ -120,18 +120,18 @@ image::components/debates/new_debate_backend.png[New debate backend form]
 |Optional
 |Fügen Sie eine Nachricht für Teilnehmende hinzu, die auf der Debattenseite in einem Infofeld angezeigt wird.
 
-|xref:_debate_types[Debat-Typ]
+|xref:_debate_types[Debatten-Typ]
 |Benötigt
-|Wählen Sie zwischen Finite und Open aus. Endlich bedeutet, dass die Debatte ein Start- und Enddatum sowie eine Start- und Endzeit hat, Offen bedeutet, dass
+|Wählen Sie zwischen Begrenzt und Offen aus. Endlich bedeutet, dass die Debatte ein Start- und Enddatum sowie eine Start- und Endzeit hat, Offen bedeutet, dass
 kein Zeitrahmen vorgegeben ist.
 
 |Beginnt am
-|Erforderlich, wenn der Diskussionstyp endgültig ist
-|Erwartetes Format: tt/mm/yyy hh:ii
+|Erforderlich, wenn der Diskussionstyp Begrenzt ist
+|Erwartetes Format: tt/mm/yyyy hh:ii
 
 |Endet am
-|Erforderlich, wenn der Diskussionstyp endgültig ist
-|Erwartetes Format: tt/mm/yyy hh:ii
+|Erforderlich, wenn der Diskussionstyp Begrenzt ist
+|Erwartetes Format: tt/mm/yyyy hh:ii
 
 |Kategorie
 |Optional
@@ -158,12 +158,12 @@ In der Debattenliste im Verwaltungspanel können Admins Folgendes sehen:
 
 Sie können die Kommentare in den Debatten auch im CSV-, JSON- und Excel-Format exportieren, indem Sie auf die Schaltfläche "Alle exportieren" klicken.
 
-=== Debat-Typen
+=== Debatten-Typen
 
 Es ist möglich, zwei Arten von Debatten zu führen:
 
-. Fertig: mit einem Start- und Enddatum
-. Öffnen: ohne Start- und Enddatum
+. Begrenzt: mit einem Start- und Enddatum
+. Offen: ohne Start- und Enddatum
 
 Teilnehmende können die Arten der Debatten in der öffentlichen Debattenliste sehen.
 
@@ -183,14 +183,14 @@ NOTE: Wenn Teilnehmende Debatten erstellen können, stehen Admins weniger Aktion
 |Formular für eine Debatte bearbeiten.
 
 |image:icons/action_close.png[Symbol: Schliessen]
-|Schließen
-|Formular für eine Aussprache schließen. Zum Hinzufügen von Schlussfolgerungen.
+|Schliessen
+|Formular für eine Aussprache schliessen. Zum Hinzufügen von Schlussfolgerungen.
 
 |image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
-|Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
+|Um zu sehen, wie es im Frontend den Teilnehmenden gezeigt wird.
 
-|image:icons/action_permissions.png[Permissions icon]
+|image:icons/action_permissions.png[Symbol: Berechtigungen]
 |Berechtigungen
 |Um die Berechtigungen zu verwalten, die zum Erstellen oder Unterstützen von Debatten erforderlich sind.
 
@@ -199,7 +199,7 @@ NOTE: Wenn Teilnehmende Debatten erstellen können, stehen Admins weniger Aktion
 |Diese Debatte löschen.
 |===
 
-=== Diskussionsformular schließen
+=== Diskussionsformular schliessen
 
 Eine Aussprache kann geschlossen werden. Dies ist nützlich, um die Zusammenfassungen der Debatten zu veröffentlichen.
 Nachdem eine Debatte geschlossen wurde, kann sie nicht mehr bearbeitet oder kommentiert werden.
@@ -210,7 +210,7 @@ Beachten Sie, dass, wenn die Debatte von einer teilnehmenden Person erstellt wur
 
 image::components/debates/close_debate_frontend.png[Close debate frontend form]
 
-.Diskussionsformular schließen
+.Diskussionsformular schliessen
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
