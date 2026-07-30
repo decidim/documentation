@@ -5,106 +5,106 @@
 
 == Understand the basics
 
-In this page you can configure general settings from Decidim, such as the name of the instance, the welcome notification, the
-general features, the languages available, etc.
+Auf dieser Seite können Sie allgemeine Einstellungen von Decidim konfigurieren, wie den Namen der Instanz, die Willkommensbenachrichtigung, die
+allgemeinen Funktionen, die verfügbaren Sprachen usw.
 
 == Konfiguration
 
-=== Edit organization
+=== Organisation bearbeiten
 
 image::settings/admin_configuration.png[Decidim Admin Configuration]
 
 [cols="20h,10h,~,~"]
 |===
-|Feld |Typ |Beschreibung |Visibility
+|Feld |Typ |Beschreibung |Sichtbarkeit
 
 |Name
 |Benötigt
-|The name of the platform.
-|Visible in platform title, emails, notifications, etc.
+|Der Name der Plattform.
+|Sichtbar im Plattformtitel, in E-Mails, Benachrichtigungen usw.
 
 |Soziale
 |Benötigt
-|Soziale Handler für verschiedene soziale Netzwerke. In the field, only add the necessary slug instead of the whole URL.
-|Visible in the footer, in every page.
+|Soziale Handler für verschiedene soziale Netzwerke. Fügen Sie im Feld nur den benötigten Slug hinzu, nicht die gesamte URL.
+|Sichtbar in der Fusszeile auf jeder Seite.
 
-|Default locale
+|Standardgebietsschema
 |Benötigt
-|Default language for the platform. If you want to enable more languages, ask your technical administrator.
-|If multiple languages, participants can choose their preferred one in their account settings.
+|Standardsprache der Plattform. Wenn Sie weitere Sprachen aktivieren möchten, wenden Sie sich an Ihren technischen Administrator.
+|Bei mehreren Sprachen können Teilnehmende ihre bevorzugte Sprache in ihren Kontoeinstellungen auswählen.
 
-|Time Zone
+|Zeitzone
 |Benötigt
 |In welcher Zeitzone ist Ihre Organisation.
-|Used in multiple places, like meetings calendar.
+|Wird an mehreren Stellen verwendet, z. B. im Veranstaltungskalender.
 
 |Referenzpräfix
 |Benötigt
-|Reference prefix used to publicly identify all the instance resources.
-|Visible in every resource page, like an assembly, meeting, proposal, etc.
+|Referenzpräfix, das verwendet wird, um alle Ressourcen der Instanz öffentlich zu identifizieren.
+|Sichtbar auf jeder Ressourcenseite, wie einer Versammlung, einer Veranstaltung, einem Vorschlag usw.
 
-|Enable badges
+|Abzeichen aktivieren
 |Checkbox
-|Whether you want or not that your participants have badges as a gamification mechanism when participating.
-|If enabled, badges are visible in the participants profiles, and participation triggers badges level completion.
+|Ob Ihre Teilnehmenden bei der Teilnahme Abzeichen als Gamification-Mechanismus erhalten sollen.
+|Wenn aktiviert, sind Abzeichen in den Profilen der Teilnehmenden sichtbar, und die Teilnahme löst das Erreichen von Abzeichenstufen aus.
 
-|Enable groups
+|Gruppen aktivieren
 |Checkbox
-|Whether you want or not that your participants have the possibility to create xref:participants/groups.adoc[user groups].
-|If enabled, groups are visible in the participants profiles and accounts, and they can create user groups.
+|Ob Ihre Teilnehmenden die Möglichkeit haben sollen, xref:participants/groups.adoc[Benutzergruppen] zu erstellen.
+|Wenn aktiviert, sind Gruppen in den Profilen und Konten der Teilnehmenden sichtbar, und diese können Benutzergruppen erstellen.
 
-|Enable participatory space filters
+|Filter für partizipative Räume aktivieren
 |Checkbox
-|Whether you want or not to display filters in the participatory spaces index pages.
-|If enabled, participants are able to filter spaces, like assemblies, by different filters on the space index.
+|Ob Sie Filter auf den Übersichtsseiten der partizipativen Räume anzeigen möchten.
+|Wenn aktiviert, können Teilnehmende Räume, wie Versammlungen, anhand verschiedener Filter auf der Raumübersicht filtern.
 
 |Maximale Länge der Kommentare
 |Benötigt
-|Whether you want or not to limit the number of character in comments. Leave 0 for default value (1000).
-|Limit visible if you enable comments in a participatory component.
+|Ob Sie die Anzahl der Zeichen in Kommentaren begrenzen möchten. Lassen Sie 0 für den Standardwert (1000).
+|Das Limit ist sichtbar, wenn Sie Kommentare in einer partizipativen Komponente aktivieren.
 
-|Enable rich text editor for participants
+|Rich-Text-Editor für Teilnehmende aktivieren
 |Checkbox
-|Whether you want or not to enable participants to have a https://en.wikipedia.org/wiki/WYSIWYG[WYSIWYG editor].
-|In some text areas, like proposal creation, participants are able to insert some HTML tags by using the rich text editor.
+|Ob Sie Teilnehmenden einen https://en.wikipedia.org/wiki/WYSIWYG[WYSIWYG-Editor] zur Verfügung stellen möchten.
+|In einigen Textfeldern, wie der Vorschlagserstellung, können Teilnehmende mithilfe des Rich-Text-Editors bestimmte HTML-Tags einfügen.
 
-|Send welcome notification
+|Willkommensbenachrichtigung senden
 |Checkbox
-|Whether you want or not that participants receive a notification when they first create their account.
-|If you just enable this, participants receive the default notification.
+|Ob Teilnehmende eine Benachrichtigung erhalten sollen, wenn sie zum ersten Mal ihr Konto erstellen.
+|Wenn Sie nur dies aktivieren, erhalten Teilnehmende die Standardbenachrichtigung.
 
-|Customize welcome notification
+|Willkommensbenachrichtigung anpassen
 |Checkbox
-|Enable you to customize the notification sent to participant when they create an account.
-|If enabled you can customize the welcome notification in the fields below.
+|Ermöglicht es Ihnen, die Benachrichtigung anzupassen, die an Teilnehmende gesendet wird, wenn sie ein Konto erstellen.
+|Wenn aktiviert, können Sie die Willkommensbenachrichtigung in den untenstehenden Feldern anpassen.
 
-|Welcome notification subject
+|Betreff der Willkommensbenachrichtigung
 |Benötigt
-|Enable you to customize the welcome notification subject. You can add variables, such as {{name}} or {{organization}}.
-|Field visible if you enable the "Customize welcome notification" checkbox.
+|Ermöglicht es Ihnen, den Betreff der Willkommensbenachrichtigung anzupassen. Sie können Variablen wie {{name}} oder {{organization}} hinzufügen.
+|Feld sichtbar, wenn Sie das Kontrollkästchen "Willkommensbenachrichtigung anpassen" aktivieren.
 
-|Welcome notification body
+|Text der Willkommensbenachrichtigung
 |Benötigt
-|Enable you to customize the welcome notification body. You can add variables, such as {{name}} or {{organization}}.
-|Field visible if you enable the "Customize welcome notification" checkbox.
+|Ermöglicht es Ihnen, den Text der Willkommensbenachrichtigung anzupassen. Sie können Variablen wie {{name}} oder {{organization}} hinzufügen.
+|Feld sichtbar, wenn Sie das Kontrollkästchen "Willkommensbenachrichtigung anpassen" aktivieren.
 
-|Body for the administrator terms of service
+|Text für die Nutzungsbedingungen für Admins
 |Benötigt
-|Which message an administrator sees when accessing for the first time to the Administration panel.
-|Message displayed when an administrator access the administration panel for the first time.
+|Welche Meldung ein Admin beim erstmaligen Zugriff auf das Verwaltungspanel sieht.
+|Meldung, die angezeigt wird, wenn ein Admin zum ersten Mal auf das Verwaltungspanel zugreift.
 |===
 
 == Beispiele
 
-=== Social networks
+=== Soziale Netzwerke
 
-If you enter a value for each social network, their icons are displayed in the footer with a link to your account page.
-Check that all the links are working well.
+Wenn Sie für jedes soziale Netzwerk einen Wert eingeben, werden deren Symbole in der Fusszeile mit einem Link zu Ihrer Kontoseite angezeigt.
+Überprüfen Sie, ob alle Links einwandfrei funktionieren.
 
 image::settings/settings_configuration_social.png[Social networks configuration in Decidim]
 
 === Willkommensbenachrichtigung
 
-Participants receive welcome notification when they finalize the creation of their account, on their notification panel and by email.
+Teilnehmende erhalten eine Willkommensbenachrichtigung, wenn sie die Erstellung ihres Kontos abschliessen, in ihrem Benachrichtigungspanel und per E-Mail.
 
 image::settings/settings_configuration_welcome.png[Welcome notification configuration in Decidim]
