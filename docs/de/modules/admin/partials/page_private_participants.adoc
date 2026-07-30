@@ -1,6 +1,6 @@
-= Private Teilnehmer
+= Private Teilnehmende
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 In manchen Fällen möchten Sie die Teilnahme auf eine bestimmte Gruppe von Teilnehmenden beschränken.
 Zum Beispiel ein Raum, der den Mitgliedern einer Kommission in einer grossen Organisation gewidmet ist.
@@ -8,7 +8,7 @@ Für diese Fälle können Sie die Funktion für private Teilnehmende verwenden.
 
 NOTE: Die Liste der privaten Teilnehmenden kann nur im Verwaltungspanel eingesehen werden und wird nicht öffentlich angezeigt.
 
-=== How to find it?
+=== Wie findet man sie?
 
 NOTE: Private Teilnehmende sind nur in privaten Räumen verfügbar. Um sie zu aktivieren, stellen Sie sicher, dass Sie beim Erstellen oder Bearbeiten Ihres Prozesses oder Ihrer Versammlung das Kontrollkästchen "Privater Raum"
       aktivieren.
@@ -25,9 +25,9 @@ Dort können Sie die privaten Teilnehmenden verwalten, sie im Batch importieren,
 
 Klicken Sie auf die Schaltfläche "Neue private Teilnehmende".
 
-image:spaces/private_participants_new_form.png[Neue private Teilnehmerform]
+image:spaces/private_participants_new_form.png[Neues Formular für private Teilnehmende]
 
-.Neues partizipatorisches Formular für private Benutzer
+.Neues Formular für private Teilnehmende des partizipatorischen Raums
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
