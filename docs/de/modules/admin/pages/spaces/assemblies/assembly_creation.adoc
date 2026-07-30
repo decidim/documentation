@@ -29,7 +29,7 @@ image::spaces/assemblies/assemblies_new_form_general_info.png[New assembly form 
 .Neues Baugruppenformular: Allgemeine Informationen
 [cols="20h,10h,~,~"]
 |===
-|Feld |Typ |Beschreibung |Visibility
+|Feld |Typ |Beschreibung |Sichtbarkeit
 
 |Titel
 |Benötigt
@@ -41,7 +41,7 @@ image::spaces/assemblies/assemblies_new_form_general_info.png[New assembly form 
 |Untertitel der Versammlung.
 |Sichtbar im Inhaltsblock "Banner-Bild und Handlungsaufforderung" der Startseite.
 
-|Bestellposition
+|Reihenfolge
 |Benötigt
 |Bestimmt die Reihenfolge der Versammlung bei der Anzeige in der Prozessübersicht oder auf der Startseite.
 |Nicht zutreffend
@@ -97,26 +97,26 @@ image::spaces/assemblies/assemblies_new_form_duration.png[New assembly form dura
 .Neues Baugruppenformular: Dauer
 [cols="20h,10h,~,~"]
 |===
-|Feld |Typ |Beschreibung |Visibility
+|Feld |Typ |Beschreibung |Sichtbarkeit
 
 |Erstellungsdatum
 |Optional
-|Wann diese Versammlung erstellt wurde. Sie haben ein Kalender-Widget zum Auswählen des Tages. Expected format: dd/mm/yyyy.
+|Wann diese Versammlung erstellt wurde. Sie haben ein Kalender-Widget zum Auswählen des Tages. Erwartetes Format: tt/mm/jjjj.
 |Sichtbar im Inhaltsblock "Datumsmetadaten" der Startseite.
 
 |Beinhaltet am
 |Optional
-|Das Datum, an dem diese Versammlung der Instanz hinzugefügt wurde. Es muss nicht zwingend mit dem Erstellungsdatum übereinstimmen. Expected format: dd/mm/yyyy.
+|Das Datum, an dem diese Versammlung der Instanz hinzugefügt wurde. Es muss nicht zwingend mit dem Erstellungsdatum übereinstimmen. Erwartetes Format: tt/mm/jjjj.
 |Sichtbar im Inhaltsblock "Datumsmetadaten" der Startseite.
 
 |Dauer
 |Optional
-|Wenn die Dauer dieser Versammlung begrenzt ist, wählen Sie das Enddatum aus. Andernfalls erscheint sie als unbefristet. Expected format: dd/mm/yyyy.
+|Wenn die Dauer dieser Versammlung begrenzt ist, wählen Sie das Enddatum aus. Andernfalls erscheint sie als unbefristet. Erwartetes Format: tt/mm/jjjj.
 |Sichtbar im Inhaltsblock "Typ und Dauer" der Startseite.
 
 |Enddatum
 |Optional
-|Wenn diese Schwärmerei geschlossen wird. Expected format: dd/mm/yyyy.
+|Wenn diese Schwärmerei geschlossen wird. Erwartetes Format: tt/mm/jjjj.
 |Sichtbar im Inhaltsblock "Datumsmetadaten" der Startseite.
 
 |Grund des Abschlusses
@@ -162,11 +162,11 @@ image::spaces/assemblies/assemblies_new_form_filters.png[New assembly form filte
 
 |Bereich
 |Optional
-|Zu welchen xref:admin:settings/scopes.adoc[Bereichen] diese Versammlung gehört.
+|Zu welchen xref:admin:settings/scopes.adoc[Themen] diese Versammlung gehört.
 
 |Fläche
 |Optional
-|Zu welchen xref:admin:settings/areas.adoc[Zonen] diese Versammlung gehört.
+|Zu welchen xref:admin:settings/areas.adoc[Bereichen] diese Versammlung gehört.
 |===
 
 === Metadaten
@@ -205,7 +205,7 @@ image::spaces/assemblies/assemblies_new_form_metadata.png[New assembly form meta
 |Wer die berechtigten Teilnehmenden sind, die an der Versammlung teilnehmen können.
 |===
 
-=== Visibility
+=== Sichtbarkeit
 
 In diesem Abschnitt können Admins die Platzierung des Prozesses auf den verschiedenen Seiten sowie seine Öffentlichkeit konfigurieren.
 
