@@ -34,7 +34,7 @@ image::components/budgets/new_budget.png[New budget form]
 |Benötigt
 |Wie lautet der Titel dieses Haushaltsplans. Zum Beispiel "Bezirk A"
 
-|Bestellposition
+|Reihenfolge
 |Optional
 |Which order it has in relation to the other budgets. Eine niedrigere Zahl bedeutet eine höhere Priorität.
 For instance, if you have two budgets, "Budget a" with weight "10" and "Budget b" with weight "0" then "Budget b" is first when ordering.
@@ -69,7 +69,7 @@ You can also export all the projects of the component in different formats in CS
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
 |To edit the budget.
 
@@ -77,11 +77,11 @@ You can also export all the projects of the component in different formats in CS
 |xref:admin:components/budgets/projects.adoc[Manage projects]
 |Allows to manage the projects of a budget.
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
 |To see the budget page in the user interface.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
 |Dieses Budget löschen. Can only be done when there aren't any projects.
 |===
