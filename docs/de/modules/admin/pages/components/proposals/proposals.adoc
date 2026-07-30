@@ -1,6 +1,6 @@
 = Vorschlagsverwaltung
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Es ist wichtig zu verstehen, dass Vorschläge nicht nur der Name der Komponente ist, sondern auch die Entitäten der Komponente.
 
@@ -40,11 +40,11 @@ kann aber mit der Einstellung "Maximale Länge des Vorschlagstexts" in der Kompo
 |Optional
 |Wenn xref:admin:features/social_features/hashtags.adoc[Hashtags] konfiguriert wurden, können Teilnehmende die für ihren Vorschlag relevanten auswählen.
 
-|Dieser Vorschlag stammt aus einer Sitzung
+|Dieser Vorschlag stammt aus einem Meeting
 |Optional
 |Überprüfen Sie, ob dieser Vorschlag von einem Meeting kommt. Es zeigt auf der Vorschlagsseite einen Link zur Veranstaltung an.
 
-|Besprechung auswählen
+|Meeting auswählen
 |Benötigt
 |Dropdown-Auswahl mit allen Veranstaltungen dieses partizipativen Raums. Feld, das angezeigt wird, wenn das Kontrollkästchen "Dieser Vorschlag stammt aus einer Veranstaltung" aktiviert ist.
 Die Veranstaltung wird zur Urheberin des Vorschlags.
@@ -158,9 +158,9 @@ Sie können auch in der Suchleiste nach Vorschlägen anhand ihres Titels oder ih
 
 |image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
-|Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
+|Um zu sehen, wie es im Frontend den Teilnehmenden gezeigt wird.
 
-|image:icons/action_permissions.png[Permissions icon]
+|image:icons/action_permissions.png[Symbol: Berechtigungen]
 |Berechtigungen
 |Um die Berechtigungen zu verwalten, die erforderlich sind, um diesen spezifischen Vorschlag mit Gefällt mir zu markieren, zu ändern, in einem Kommentar abzustimmen oder zu kommentieren.
 |===
