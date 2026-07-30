@@ -2,12 +2,12 @@
 
 == Understand the basics
 
-The Proposals component allows people to create, comment, like, and give their votes to proposals. It's one of the main components of
-Decidim, and has a large number of configuration settings.
+Die Vorschläge-Komponente ermöglicht es Personen, Vorschläge zu erstellen, zu kommentieren, mit Gefällt mir zu markieren und für sie abzustimmen. Sie ist eine der Hauptkomponenten von
+Decidim und verfügt über eine grosse Anzahl an Konfigurationseinstellungen.
 
 image::components/proposals/example01.png[Proposals example]
 
-In this documentation section, you can find how to configure and manage all of those settings:
+In diesem Dokumentationsabschnitt erfahren Sie, wie Sie all diese Einstellungen konfigurieren und verwalten:
 
 * xref:admin:components/proposals/proposals.adoc[Vorschlagsverwaltung]
 * xref:admin:components/proposals/answers.adoc[Answers]
@@ -18,21 +18,21 @@ In this documentation section, you can find how to configure and manage all of t
 
 == Konfiguration
 
-To create a Proposals component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
+Um eine Vorschläge-Komponente zu erstellen, gehen Sie zunächst zum xref:admin:spaces.adoc[partizipativen Raum], in dem Sie sie erstellen möchten.
 
 image::components/proposals/component_proposals.png[Add Proposals component button]
 
-Then:
+Dann:
 
-. Click on the "Components" item in the secondary menu
-. Click the "Add component" button
-. Select "Proposals"
-. Fill the component creation form
+. Klicken Sie im Sekundärmenü auf den Punkt "Komponenten"
+. Klicken Sie auf die Schaltfläche "Komponente hinzufügen"
+. Wählen Sie "Vorschläge"
+. Füllen Sie das Formular zur Komponentenerstellung aus
 
-You can still update this form and the configuration after creating the component, by clicking the
-image:icons/action_configure.png[Configure icon] Configure icon in the components list.
+Sie können dieses Formular und die Konfiguration auch nach der Erstellung der Komponente noch aktualisieren, indem Sie in der Komponentenliste auf das
+image:icons/action_configure.png[Symbol: Konfigurieren] Konfigurieren-Symbol klicken.
 
-The component creation form is divided into different sections detailed below.
+Das Formular zur Komponentenerstellung ist in verschiedene Abschnitte unterteilt, die im Folgenden näher beschrieben werden.
 
 image::components/proposals/component_01.png[Add component form]
 
@@ -45,11 +45,11 @@ image::components/proposals/component_01.png[Add component form]
 |Benötigt
 |The title of this component.
 
-|Bestellposition
+|Reihenfolge
 |Optional
-|The order of the component in relation with the other components. Eine niedrigere Zahl bedeutet eine höhere Priorität.
-For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0"
-then "component b" is first when ordering.
+|Die Reihenfolge der Komponente im Verhältnis zu den anderen Komponenten. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+Wenn Sie beispielsweise zwei Komponenten haben, "Komponente a" mit der Gewichtung "10" und "Komponente b" mit der Gewichtung "0",
+steht "Komponente b" bei der Sortierung an erster Stelle.
 |===
 
 image::components/proposals/component_02.png[Add component form]
@@ -65,23 +65,23 @@ image::components/proposals/component_02.png[Add component form]
 
 |Bereiche aktiviert
 |Optional
-|Check if you want to have Scopes filtering available in this component.
+|Aktivieren Sie dies, wenn Sie die Filterung nach Themen in dieser Komponente verfügbar haben möchten.
 
 |Bereich
 |Optional
-|Which xref:admin:settings/scopes.adoc[Scope] does this component belongs to.
+|Zu welchem xref:admin:settings/scopes.adoc[Thema] diese Komponente gehört.
 
-|Vote limit per participant
+|Abstimmungslimit pro teilnehmender Person
 |Optional
-|Muss eine Zahl sein. The maximum number of votes a participant can give to proposals.
+|Muss eine Zahl sein. Die maximale Anzahl an Stimmen, die eine teilnehmende Person Vorschlägen geben kann.
 
-|Minimum votes per user
+|Mindestanzahl an Stimmen pro Nutzendem
 |Optional
-|Muss eine Zahl sein. The minimum number of votes a participant needs to give to proposals so their votes are taken into account.
+|Muss eine Zahl sein. Die Mindestanzahl an Stimmen, die eine teilnehmende Person Vorschlägen geben muss, damit ihre Stimmen berücksichtigt werden.
 
 |Vorschlagslimit pro Teilnehmer
 |Optional
-|Muss eine Zahl sein. How many proposals a participant can create in this component.
+|Muss eine Zahl sein. Wie viele Vorschläge eine teilnehmende Person in dieser Komponente erstellen kann.
 
 |Maximale Länge des Vorschlagskörpers
 |Optional
@@ -89,9 +89,9 @@ image::components/proposals/component_02.png[Add component form]
 
 |Änderungsvorschlag
 |Benötigt
-|Choose if participants have a limited time to edit their proposals, or can edit them without limit.
-In case it's within a specific time frame, you must specify the time in the field below.
-Note that if an administrator xref:components/proposals/answers.adoc[answers a proposal] then it can't be edited anymore.
+|Wählen Sie, ob Teilnehmende nur begrenzt Zeit haben, ihre Vorschläge zu bearbeiten, oder ob sie diese unbegrenzt bearbeiten können.
+Falls dies innerhalb eines bestimmten Zeitraums liegen soll, müssen Sie die Zeit im untenstehenden Feld angeben.
+Beachten Sie, dass ein Vorschlag nicht mehr bearbeitet werden kann, sobald ein Admin xref:components/proposals/answers.adoc[ihn beantwortet].
 
 |Vorschläge können von Autoren bearbeitet werden, bevor diese Minuten vergangen sind
 |Benötigt
@@ -99,84 +99,84 @@ Note that if an administrator xref:components/proposals/answers.adoc[answers a p
 
 |Schwellenwert pro Vorschlag
 |Optional
-|Muss eine Zahl sein. How many votes a proposal needs to have to be considered as accepted.
+|Muss eine Zahl sein. Wie viele Stimmen ein Vorschlag benötigt, um als angenommen zu gelten.
 
-|Can accumulate votes beyond threshold
+|Kann Stimmen über den Schwellenwert hinaus ansammeln
 |Optional.
-|Whether the proposal can accumulate more votes than the threshold.
+|Ob der Vorschlag mehr Stimmen ansammeln kann als der Schwellenwert.
 
 |Vorschlagsantwort aktiviert
 |Optional
 |Ob Administratoren oder Bewerber Vorschläge beantworten können.
 
-|Default proposal sorting
+|Standardsortierung der Vorschläge
 |Optional
-|The sorting order of the proposals in the proposals list. Automatic means that if the votes are enabled, the proposals are
-shown sorted by random, and if the votes are blocked, then they are sorted by the most voted.
+|Die Sortierreihenfolge der Vorschläge in der Vorschlagsliste. Automatisch bedeutet, dass die Vorschläge zufällig sortiert angezeigt werden, wenn die Abstimmung aktiviert ist,
+und nach den meisten Stimmen sortiert, wenn die Abstimmung gesperrt ist.
 
 |Offizielle Vorschläge aktiviert
 |Optional
-|Whether administrators can create official proposals from the administration panel.
+|Ob Admins offizielle Vorschläge über das Verwaltungspanel erstellen können.
 
 |Kommentare aktiviert
 |Optional
-|Whether you want to enable participants to comment the proposals.
+|Ob Sie Teilnehmenden erlauben möchten, die Vorschläge zu kommentieren.
 
 |Maximale Länge der Kommentare
 |Optional
-|The characters limit that participants have when making comments. Lassen Sie 0 für den Standardwert.
+|Das Zeichenlimit, das Teilnehmenden beim Verfassen von Kommentaren zur Verfügung steht. Lassen Sie 0 für den Standardwert.
 
 |Geocoding aktiviert
 |Optional
-|Whether participants can define a geocoding address for their proposals.
-You need to have xref:configure:geocoding[Geocoding] enabled.
+|Ob Teilnehmende eine Geokodierungsadresse für ihre Vorschläge angeben können.
+Sie müssen xref:configure:geocoding[Geokodierung] aktiviert haben.
 
 |Anhänge erlauben
 |Optional
-|Aktivieren, um den Teilnehmern zu erlauben, Dateien an ihre Vorschläge anzuhängen. By enabling this option, proposals are by default in grid mode,
-and the first image appears on the card.
+|Aktivieren, um den Teilnehmern zu erlauben, Dateien an ihre Vorschläge anzuhängen. Wenn Sie diese Option aktivieren, werden Vorschläge standardmässig in der Rasteransicht angezeigt,
+und das erste Bild erscheint auf der Karte.
 
 |Aktionsberechtigungen können für jeden Vorschlag festgelegt werden
 |Optional
-|Whether you want to be able to set permissions for every proposals.
+|Ob Sie in der Lage sein möchten, Berechtigungen für jeden Vorschlag festzulegen.
 
 |Gemeinschaftliche Entwürfe aktiviert
 |Optional
-|Check to enable xref:components/proposals/special_configurations/collaborative_drafts.adoc[collaborative drafts] in proposals.
+|Aktivieren, um xref:components/proposals/special_configurations/collaborative_drafts.adoc[kollaborative Entwürfe] bei Vorschlägen zu aktivieren.
 
 |Teilnehmende Texte aktiviert
 |Optional
-|Check to enable xref:components/proposals/special_configurations/participatory_texts.adoc[participatory texts] in proposals.
+|Aktivieren, um xref:components/proposals/special_configurations/participatory_texts.adoc[partizipative Texte] bei Vorschlägen zu aktivieren.
 
 |Änderungen aktiviert
 |Optional
-|Check to enable xref:components/proposals/special_configurations/amendments.adoc[amendments] in proposals.
-If active, configure Amendment settings for each step.
+|Aktivieren, um xref:components/proposals/special_configurations/amendments.adoc[Änderungsanträge] bei Vorschlägen zu aktivieren.
+Falls aktiviert, konfigurieren Sie die Einstellungen für Änderungsanträge für jede Phase.
 
 |Änderungsassistent Hilfetext
 |Optional.
-|The help text visible when creating new amendments.
+|Der Hilfetext, der beim Erstellen neuer Änderungsanträge sichtbar ist.
 
 |Mitteilung
 |Optional
-|A general announcement visible on the proposals list page.
+|Eine allgemeine Ankündigung, die auf der Vorschlagslisten-Seite sichtbar ist.
 
 |Neue Vorlage für Vorschlagskörper
 |Optional
-|A pre-defined text used when creating new proposals. Useful if you want to define a format that participants need to
-follow when creating new proposals.
+|Ein vordefinierter Text, der beim Erstellen neuer Vorschläge verwendet wird. Nützlich, wenn Sie ein Format definieren möchten, das Teilnehmende beim Erstellen neuer Vorschläge
+einhalten müssen.
 
 |Neuer Hilfetext für Vorschläge
 |Optional
-|The help text visible when creating new proposals.
+|Der Hilfetext, der beim Erstellen neuer Vorschläge sichtbar ist.
 
 |Assistent "Erstellen" Schritt-Hilfetext
 |Optional
-|The help text visible when creating new proposals in the "Create" step.
+|Der Hilfetext, der beim Erstellen neuer Vorschläge im Schritt "Erstellen" sichtbar ist.
 
 |Assistent für den Vorschlag "Veröffentlichen" Schritt Hilfe Text
 |Optional
-|The help text visible when creating new proposals in the "Publish" step.
+|Der Hilfetext, der beim Erstellen neuer Vorschläge im Schritt "Veröffentlichen" sichtbar ist.
 |===
 
 ---
@@ -190,67 +190,67 @@ image::components/proposals/component_03.png[Add component form]
 
 |Befürworter aktiviert
 |Optional
-|To enable participants to show public support for these proposals, with a "Like" button.
+|Um Teilnehmenden zu ermöglichen, mit einer Schaltfläche "Gefällt mir" öffentlich Unterstützung für diese Vorschläge zu zeigen.
 
 |Befürworter blockiert
 |Optional
-|Check for participants to be able to see the existing endorsements but not make any new one.
+|Aktivieren Sie dies, damit Teilnehmende die bestehenden Unterstützungen sehen, aber keine neuen abgeben können.
 
-|Votes enabled
+|Abstimmung aktiviert
 |Optional
-|To enable participants to vote for proposals in this phase.
+|Um Teilnehmenden zu ermöglichen, in dieser Phase für Vorschläge abzustimmen.
 
-|Votes blocked
+|Abstimmung gesperrt
 |Optional
-|Check for participants to be able to see the existing votes but not make any new one.
+|Aktivieren, damit Teilnehmende die bestehenden Stimmen sehen, aber keine neuen abgeben können.
 
-|Votes hidden
+|Stimmen ausgeblendet
 |Optional
-|If votes are enabled, checking this hides the number of votes to participants.
+|Wenn die Abstimmung aktiviert ist, wird durch Aktivieren dieser Option die Anzahl der Stimmen vor Teilnehmenden verborgen.
 
 |Kommentare blockiert
 |Optional
 |Ob Sie Kommentare für diese Phase aktivieren möchten.
 
-|Participants can create proposals
+|Teilnehmende können Vorschläge erstellen
 |Optional
 |Ob Sie die Erstellung von Angebotsvorschlägen von Teilnehmern für diese Phase aktivieren möchten.
 
 |Vorschlagsantwort aktiviert
 |Optional
-|Whether you want to enable xref:components/proposals/answers.adoc[proposal answering] by administrators.
+|Ob Sie xref:components/proposals/answers.adoc[das Beantworten von Vorschlägen] durch Admins aktivieren möchten.
 
 |Vorschläge sofort veröffentlichen
 |Optional
-|Whether you want that the answers of proposals are published directly when administrators are
-xref:components/proposals/answers.adoc[answering] them or you want to control when to publish the answers.
+|Ob die Antworten zu Vorschlägen direkt veröffentlicht werden sollen, wenn Admins sie
+xref:components/proposals/answers.adoc[beantworten], oder ob Sie selbst steuern möchten, wann die Antworten veröffentlicht werden.
 
 |Kosten bei Angebotsantworten aktivieren
 |Optional
-|Whether you want to add economical costs to proposal answers. Useful for importing proposals to xref:components/budgets.adoc[budgets].
+|Ob Sie den Antworten auf Vorschläge wirtschaftliche Kosten hinzufügen möchten. Nützlich für den Import von Vorschlägen in xref:components/budgets.adoc[Budgets].
 
-|Default proposal sorting
+|Standardsortierung der Vorschläge
 |Optional
-|The sorting order of the proposals in the proposals list for this phase. Automatic means that if the votes are enabled, the proposals
-are shown sorted by random, and if the votes are blocked, then they are sorted by the most voted.
+|Die Sortierreihenfolge der Vorschläge in der Vorschlagsliste für diese Phase. Automatisch bedeutet, dass die Vorschläge zufällig sortiert
+angezeigt werden, wenn die Abstimmung aktiviert ist, und nach den meisten Stimmen sortiert, wenn die Abstimmung gesperrt ist.
 
 |Mitteilung
 |Optional
-|A general announcement visible on the proposals list page for this phase.
+|Eine allgemeine Ankündigung, die auf der Vorschlagslisten-Seite für diese Phase sichtbar ist.
 
 |Hashtags zu allen Vorschlägen hinzugefügt
 |Optional
-|Automatically add hashtags to every proposal.
+|Fügt automatisch Hashtags zu jedem Vorschlag hinzu.
 
 |Hashtags den Teilnehmern für neue Vorschläge vorgeschlagen
 |Optional
-|Suggest hashtags to participants creating new proposals. Teilnehmer können mehrere Hashtag auswählen.
+|Schlägt Teilnehmenden, die neue Vorschläge erstellen, Hashtags vor. Teilnehmer können mehrere Hashtag auswählen.
 |===
 
 == Beispiele
 
 Einige Beispiele, wo diese Komponente verwendet wurde:
 
-* https://www.decidim.barcelona/assemblies/accionssostenibilitat/f/6259/proposals[Sustainable actions in Barcelona City 2024]
+* https://www.decidim.barcelona/assemblies/accionssostenibilitat/f/6259/proposals[Nachhaltige Massnahmen in der Stadt Barcelona 2024]
 * https://futureu.europa.eu/[Konferenz der Zukunft Europas]
-* https://meta.decidim.org/processes/roadmap/f/122/[Propose new functionalities for Decidim software]
+* https://meta.decidim.org/processes/roadmap/f/122/[Neue Funktionen für die Decidim-Software vorschlagen]
