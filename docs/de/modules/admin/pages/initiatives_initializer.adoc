@@ -8,7 +8,7 @@ Nachdem Sie Änderungen an dieser Datei vorgenommen haben, müssen Sie auch Ihre
 
 == Erstellen aktiviert
 
-Legt fest, ob die Erstellung einem validierten Benutzer erlaubt ist oder nicht. Standard ist wahr.
+Legt fest, ob die Erstellung einer validierten teilnehmenden Person erlaubt ist oder nicht. Standard ist wahr.
 
 [source,ruby]
 ....
@@ -77,7 +77,7 @@ Komponenten aktiviert für eine neue Initiative
   end
 ....
 
-== Erste Benachrichtigung Prozentsatz
+== Prozentsatz der ersten Benachrichtigung
 
 Benachrichtigt wenn der angegebene Prozentsatz der Unterstützung für eine
 Initiative erreicht wurde.
@@ -89,7 +89,7 @@ Initiative erreicht wurde.
   end
 ....
 
-== Zweite Benachrichtigung Prozentsatz
+== Prozentsatz der zweiten Benachrichtigung
 
 Benachrichtigt wenn der angegebene Prozentsatz der Unterstützung für eine
 Initiative erreicht wurde.
@@ -127,9 +127,9 @@ verworfenen Zustand verschoben.
 
 == Drucken aktiviert
 
-Druckfunktionalität aktiviert. Allows the user to get
-a printed version of the initiative from the administration
-panel.
+Druckfunktionalität aktiviert. Ermöglicht es der nutzenden Person, eine
+gedruckte Version der Initiative aus dem Verwaltungspanel
+zu erhalten.
 
 [source,ruby]
 ....
@@ -138,7 +138,7 @@ panel.
   end
 ....
 
-== Zeitstempel Dienst
+== Zeitstempeldienst
 
 Legen Sie einen Dienst fest, um für jede Abstimmung einen Zeitstempel zu erzeugen. Das Attribut
 ist der Name einer Klasse, deren Instanzen
@@ -164,7 +164,7 @@ signed_pdf Methode mit der hinzugefügten Signatur antwortet.
 
 == Keine Autorisierung erforderlich
 
-Dieses Flag erlaubt das Erstellen von Berechtigungen für nicht autorisierte Benutzer.
+Dieses Flag erlaubt das Erstellen von Autorisierungen für nicht autorisierte Personen.
 
 [source,ruby]
 ....
