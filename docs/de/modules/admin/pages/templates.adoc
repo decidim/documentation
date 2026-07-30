@@ -19,9 +19,9 @@ image::templates/templates_menu.png[Pages: Access templates panel]
 
 There, you can start creating and managing:
 
-* xref:admin:templates/questionnaires.adoc[Questionnaires templates]
-* xref:admin:templates/block_users.adoc[Block user messages]
-* xref:admin:templates/proposal_answers.adoc[Proposal answers]
+* xref:admin:templates/questionnaires.adoc[Fragebogenvorlagen]
+* xref:admin:templates/block_users.adoc[Nachrichten für gesperrte Nutzende]
+* xref:admin:templates/proposal_answers.adoc[Vorschlagsantworten]
 
 image::templates/templates_questionnaires_list.png[Backend: templates panel]
 
