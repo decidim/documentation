@@ -65,7 +65,7 @@ are comments enabled, participants can create meetings or not, etc.
 |Zurückziehen
 |Um eine Komponente zurückzuziehen. This means that the component is then invisible to the public.
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
 |To preview the space before it's published.
 
@@ -75,7 +75,7 @@ are comments enabled, participants can create meetings or not, etc.
 this component. For instance, in the case of Proposals, which Verification is needed to create a new proposal or
 to give supports.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
 |Diese Komponente löschen. If there are content inside, most of the components don't let you delete them so it doesn't break
 relations with other resources. In diesen Fällen ist es empfehlenswert, die Komponente einfach zurückzuziehen.
