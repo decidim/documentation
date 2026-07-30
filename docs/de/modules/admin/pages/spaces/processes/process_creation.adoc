@@ -10,7 +10,7 @@ The process creation form is divided into different sections that are detailed i
 Once you created a process, in the secondary navigation panel, you can see all the process configuration available:
 
 * xref:admin:spaces/processes/process_creation.adoc[About this process]: here you can access and edit all the fields from the creation form.
-* xref:admin:spaces/processes/landing_page.adoc[Landing page]
+* xref:admin:spaces/processes/landing_page.adoc[Startseite]
 * xref:admin:spaces/processes/phases.adoc[Phases]
 * xref:admin:spaces/processes/components.adoc[Components]
 * xref:admin:spaces/processes/categories.adoc[Categories]
@@ -21,7 +21,7 @@ Once you created a process, in the secondary navigation panel, you can see all t
 
 == Konfiguration
 
-=== General information
+=== Allgemeine Informationen
 
 This section allows to provide a general description about the process, mainly a title, URL, and description.
 
@@ -40,12 +40,12 @@ image::spaces/processes/processes_new_form_general_info.png[New participatory pr
 |Untertitel
 |Benötigt
 |Untertitel. Zum Beispiel "Lassen Sie uns unsere Prioritäten gemeinsam festlegen"
-|Visible in the "Hero image and CTA" landing page block.
+|Sichtbar im Inhaltsblock "Banner-Bild und Handlungsaufforderung" der Startseite.
 
 |Bestellposition
 |Benötigt
 |Determines the order of the process when displayed in the processes index or homepage.
-|N/A
+|Nicht zutreffend
 
 |URL Slug
 |Benötigt
@@ -55,23 +55,23 @@ mit einem Buchstaben beginnen.
 
 |Hashtag
 |Optional
-|Hashtag redirecting to the X social network.
-|Visible in the "Hero image and CTA" landing page block.
+|Hashtag, der auf das soziale Netzwerk X verweist.
+|Sichtbar im Inhaltsblock "Banner-Bild und Handlungsaufforderung" der Startseite.
 
 |Kurze Beschreibung
 |Benötigt
 |A short explanation of what's the participatory process about.
-|Visible in the "Main data" landing page block.
+|Sichtbar im Inhaltsblock "Hauptdaten" der Startseite.
 
 |Beschreibung
 |Benötigt
 |A detailed explanation of what's the participatory process about.
-|Visible in the "Main data" landing page block.
+|Sichtbar im Inhaltsblock "Hauptdaten" der Startseite.
 
 |Mitteilung
 |Optional
-|The text you enter here is shown to the user right below the process information.
-|Visible in the "Announcement" landing page block.
+|Der hier eingegebene Text wird den Nutzenden direkt unterhalb der Prozessinformationen angezeigt.
+|Sichtbar im Inhaltsblock "Mitteilung" der Startseite.
 |===
 
 === Dauer
@@ -95,7 +95,7 @@ image::spaces/processes/processes_new_form_duration.png[New participatory proces
 |Wenn dieser Prozess beginnt. Sie haben ein Kalender-Widget zum Auswählen des Tages. Erwartetes Format: dd/mm/yyy
 |===
 
-=== Images
+=== Bilder
 
 image::spaces/processes/processes_new_form_images.png[New participatory process form images section]
 
@@ -106,14 +106,14 @@ image::spaces/processes/processes_new_form_images.png[New participatory process 
 
 |Home-Bild
 |Optional
-|Image used in presentation cards of this process. Anleitung für Datei: Muss ein Bild oder ein Dokument sein.
-Für Bilder verwenden Sie vorzugsweise Landschaftsbilder, der Dienst bewirtschaftet das Bild. Maximum file size: 10 MB
+|Bild, das in Präsentationskarten dieses Prozesses verwendet wird. Anleitung für Datei: Muss ein Bild oder ein Dokument sein.
+Für Bilder verwenden Sie vorzugsweise Landschaftsbilder, der Dienst bewirtschaftet das Bild. Maximale Dateigrösse: 10 MB
 |===
 
 === Metadaten
 
 This section allows to provide meta information about the process.
-It can be enabled on the landing page with the "Metadata" landing page block.
+Sie kann auf der Startseite über den Inhaltsblock "Metadaten" aktiviert werden.
 
 image::spaces/processes/processes_new_form_metadata.png[New participatory process form metadata section]
 
@@ -124,33 +124,33 @@ image::spaces/processes/processes_new_form_metadata.png[New participatory proces
 
 |Promoter-Gruppe
 |Optional
-|If a specific group is at the origin of the process, like a city direction, an association committee, etc.
+|Falls eine bestimmte Gruppe am Ursprung des Prozesses steht, wie z. B. eine städtische Abteilung, ein Vereinsvorstand usw.
 
 |Organisationsbereich
 |Optional
-|The organization domain or category, if it's relevant.
+|Der Tätigkeitsbereich oder die Kategorie der Organisation, falls relevant.
 
 |Bereichsmetadaten
 |Optional
-|Metadata on the process scope, if it's relevant.
+|Metadaten zum Geltungsbereich des Prozesses, falls relevant.
 
 |Wer beteiligt sich
 |Optional
-|Who are the authorized participants, who can participate to the process.
+|Wer die berechtigten Teilnehmenden sind, die am Prozess teilnehmen können.
 
 |Was beschlossen wird
 |Optional
-|The issue of the process, the object of what is decided.
+|Das Thema des Prozesses, also der Gegenstand der Entscheidung.
 
 |Wie wird es beschlossen
 |Optional
-|The decision making process.
+|Der Entscheidungsprozess.
 |===
 
-=== Filters
+=== Filter
 
 This section determines the filters available in the process, in the different components.
-Filters can then be enabled and configured in each components.
+Filter können anschliessend in jeder Komponente aktiviert und konfiguriert werden.
 
 image::spaces/processes/processes_new_form_filters.png[New participatory process form filters section]
 
@@ -221,7 +221,7 @@ image::spaces/processes/processes_new_form_related_processes.png[New participato
 |Wählen Sie andere Beteiligungsprozesse, die mit diesem verwandt sind.
 |===
 
-=== Other
+=== Andere
 
 This section is empty, unless an administrator already created xref:admin:spaces/processes/types.adoc[Process Types].
 If so, you should be able to select a process type to categorize the process.
