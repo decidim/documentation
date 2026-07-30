@@ -1,6 +1,6 @@
 = Initiativen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Eine Initiative ist eine spezifische Art von partizipativem Raum, der von jeder teilnehmenden Person unabhängig
       von anderen Kanälen oder Räumen erstellt werden kann.
@@ -17,8 +17,8 @@ NOTE: Ein Grossteil des Verhaltens und der Einstellungen von Initiativen ist im
 Beispiele für Initiativentypen:
 
 * Um einen Punkt zur Traktandenliste einer Versammlung hinzuzufügen
-* Einen partizipativen Prozess durchführen
-* Neue Baugruppe erstellen
+* Einen Beteiligungsprozess durchführen
+* Eine neue Versammlung erstellen
 * Eine Verordnung genehmigen oder ändern
 * Um zu Versammlungen aufzurufen
 
@@ -29,7 +29,7 @@ Mit anderen Worten sind Initiativen Mechanismen der *semidirekten Demokratie*, d
 Die Rolle des Admins der Plattform unterscheidet sich daher etwas von der in den anderen Beteiligungsräumen, da
       die Organisation die Teilnehmenden befähigen und ihnen die notwendige technische Unterstützung und Beratung anbieten muss.
 
-In diesem Abschnitt der Dokumentation findest du Informationen dazu, wie du all diese Elemente konfigurierst und verwaltest:
+In diesem Abschnitt der Dokumentation finden Sie Informationen dazu, wie Sie all diese Elemente konfigurieren und verwalten:
 
 * xref:admin:spaces/initiatives/types.adoc[Initiativentypen]
 * xref:admin:spaces/initiatives/initiative_creation.adoc[Initiative erstellen]
@@ -43,7 +43,7 @@ In diesem Abschnitt der Dokumentation findest du Informationen dazu, wie du all 
 ** xref:admin:spaces/initiatives/admin_manage/answer.adoc[Eine Initiative beantworten]
 * xref:admin:spaces/initiatives/sign.adoc[Eine Initiative unterzeichnen]
 
-=== How to find it?
+=== Wie findet man sie?
 
 Um auf das Initiativen-Panel zuzugreifen, gehen Sie zum Verwaltungspanel und klicken Sie in der Verwaltungs-
       Navigationsleiste auf den Punkt "Initiativen".
