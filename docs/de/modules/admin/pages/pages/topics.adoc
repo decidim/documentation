@@ -32,7 +32,7 @@ image::pages/pages_backend_topic_form.png[Backend: new topic form]
 |Optional
 |Worum geht es bei diesem Thema.
 
-|Bestellposition
+|Reihenfolge
 |Optional
 |The order of the topic in relation with the other topics. Eine niedrigere Zahl bedeutet eine höhere Priorität.
 For instance, if you have two topics, "Topic a" with weight "10" and "Topic b" with weight "0" then "Topic b" is first when ordering.
