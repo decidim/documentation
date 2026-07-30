@@ -1,6 +1,6 @@
 = Budget
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Die Budget-Komponente ermöglicht es Teilnehmenden, abzustimmen, indem sie Projekte ihrer Wahl auswählen. Diese Komponente wurde entwickelt, um
 die Abstimmung in der letzten Phase eines partizipativen Budgets zu organisieren, kann jedoch auch für andere Arten von Prozessen verwendet werden.
@@ -14,7 +14,7 @@ Admins haben mehrere Optionen für den Abstimmungsablauf und die Abstimmungsrege
 
 image::components/budgets/example02.png[Budgets example voting]
 
-In diesem Abschnitt der Dokumentation findest du Informationen dazu, wie du all diese Elemente konfigurierst und verwaltest:
+In diesem Abschnitt der Dokumentation finden Sie Informationen dazu, wie Sie all diese Elemente konfigurieren und verwalten:
 
 * xref:admin:components/budgets/budgets.adoc[Budgets]
 * xref:admin:components/budgets/projects.adoc[Projekte]
@@ -48,7 +48,7 @@ image::components/budgets/component_01.png[Add component form title]
 
 |Name
 |Benötigt
-|The title of this component.
+|Der Titel dieser Komponente.
 
 |Reihenfolge
 |Optional
@@ -64,23 +64,23 @@ image::components/budgets/component_02.png[Add component form - Global settings]
 |===
 |Feld |Typ |Beschreibung
 
-|Bereiche aktiviert
+|Themen aktiviert
 |Optional
 |Aktivieren Sie dies, wenn Sie die Filterung nach Themen in dieser Komponente verfügbar haben möchten.
 
-|Bereich
+|Thema
 |Optional
 |Zu welchem xref:admin:settings/scopes.adoc[Thema] diese Komponente gehört.
 
 |Ablauf
 |Benötigt
-|Wie die Teilnehmer abstimmen können, wenn es mehrere Budgetsätze gibt. Sie können Ihren eigenen Ablauf definieren oder einen bereits verfügbaren verwenden.
+|Wie die Teilnehmenden abstimmen können, wenn es mehrere Budgetsätze gibt. Sie können Ihren eigenen Ablauf definieren oder einen bereits verfügbaren verwenden.
 
 |Projekte pro Seite
 |Benötigt
 |Wie viele Projekte pro Seite auf der Startseite des Budgets angezeigt werden.
 
-|Regel aktivieren: Mindestbudget Prozentsatz
+|Regel aktivieren: Mindestbudget-Prozentsatz
 |Optional, aber nicht kompatibel mit den beiden anderen Abstimmungsregeln.
 |Ermöglicht die Definition einer "Abstimmungsschwelle in Prozent", also eines Prozentsatzes des Gesamtbudgets, den Teilnehmende
 erreichen müssen, um die Abstimmung abschliessen zu können.
@@ -115,7 +115,7 @@ der Anzahl von Projekten, für die Teilnehmende mindestens und höchstens abstim
 |Optional
 |Die Nachricht, die auf der Startseite der Budgets angezeigt wird, wenn es mehrere Budgets gibt.
 
-|Weitere Informationen modal
+|Budgets-Startseite
 |Optional
 |Die Nachricht, die beim Klicken auf den Link "Weitere Informationen" angezeigt wird.
 |===
@@ -147,7 +147,7 @@ image::components/budgets/component_03.png[Add component form - Step settings]
 |Optional
 |Die Nachricht, die auf der Startseite der Budgets angezeigt wird, wenn es für diese Phase mehrere Budgets gibt.
 
-|Weitere Informationen modal
+|Budgets-Startseite
 |Optional
 |Die Nachricht, die beim Klicken auf den Link "Weitere Informationen" für diese Phase angezeigt wird.
 |===
@@ -178,10 +178,10 @@ Komponente aktivieren, damit Teilnehmende den Fortschritt der Projektumsetzung s
 Einige Beispiele, wo diese Komponente verwendet wurde:
 
 * https://www.decidim.barcelona/processes/PressupostosParticipatius[2020/2021 Participatory Budgeting Process in Decidim Barcelona].
-00 EUR, so dass die Menschen präsentieren können, definieren, priorisieren und mit
-abstimmen und wählen können, welche Investitionsprojekte die Stadtverwaltung durchführen soll.
+Die Stadt Barcelona (Spanien) hat ein Budget von 30.000.000 EUR bereitgestellt, damit die Menschen Investitionsprojekte vorschlagen, definieren, priorisieren, darüber abstimmen
+und auswählen können, welche die Stadtverwaltung umsetzen soll.
 * https://ecrivons.angers.fr/processes/BP2021[2021 Partizipative Budgeting Process in Angers]. Die Stadt Angers (Frankreich) hat
-ein Budget von 1000 zugewiesen. 00 EUR so dass Menschen aus 11 Jahren können maximal 3 Ideen vorschlagen und wählen Sie dann für ihre 5 Lieblings-Projekte.
-* https://omastadi.hel.fi/[2021 Participatory Budgeting Process in Helsinki]. Helsinki hat 8,8 Millionen Euro für die Verwirklichung der Wünsche der Bewohner von
-bereitgestellt. Die Ideen werden gemeinsam zu Vorschlägen entwickelt, über die die Einwohner von Helsinki abstimmen können. Die Vorschläge mit den
+ein Budget von 1.000.000 EUR bereitgestellt, sodass Menschen ab 11 Jahren maximal 3 Ideen vorschlagen und dann für ihre 5 Lieblingsprojekte abstimmen können.
+* https://omastadi.hel.fi/[2021 Participatory Budgeting Process in Helsinki]. Helsinki hat 8,8 Millionen Euro bereitgestellt, um die Wünsche der
+Bewohnenden zu verwirklichen. Die Ideen werden gemeinsam zu Vorschlägen entwickelt, über die die Einwohnenden von Helsinki abstimmen können. Die Vorschläge mit den
 meisten Stimmen werden von der Stadt realisiert.
