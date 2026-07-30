@@ -1,6 +1,6 @@
 = Anmeldungen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 NOTE: Dieser Artikel widmet sich Anmeldungen über "Auf dieser Plattform" beim Erstellen oder Bearbeiten einer Veranstaltung.
 
@@ -37,7 +37,7 @@ image:icons/action_registrations.png[Symbol: Anmeldungen] Anmeldungen-Symbol kli
 
 image:components/meetings/registrations/backend.png[Registrierungseinstellungen in einem Meeting]
 
-.Anmeldeformular
+.Einstellungen für Anmeldungen
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
@@ -78,7 +78,7 @@ nach dem Anmeldecode, sofern dieser aktiviert ist.
 
 === Anmeldeformular
 
-Mit dieser Funktion können Sie ein individuelles Formular wie die xref:admin:components/surveys.adoc[Surveys] Komponente definieren, um Teilnehmer
+Mit dieser Funktion können Sie ein individuelles Formular wie die xref:admin:components/surveys.adoc[Surveys] Komponente definieren, um Teilnehmende
 nach Registrierungsinformationen zu fragen.
 
 Um ein Anmeldeformular zu erstellen, aktivieren Sie "Anmeldeformular aktiviert" auf der Anmeldeseite und klicken Sie auf die Schaltfläche "Speichern".
