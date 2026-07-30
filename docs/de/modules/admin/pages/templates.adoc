@@ -1,23 +1,23 @@
 = Vorlagen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-The templates tab allow you to create templates and to save time when managing your instance.
-You can create templates for three different items:
+Der Tab Vorlagen ermöglicht es Ihnen, Vorlagen zu erstellen und Zeit bei der Verwaltung Ihrer Instanz zu sparen.
+Sie können Vorlagen für drei verschiedene Elemente erstellen:
 
-* *Questionnaires*: for creating template surveys in the xref:admin:components/surveys.adoc[survey component]
-* *Block user messages*: for creating template justification for blocking xref:admin:moderations/reported_users.adoc[reported users]
-* *Proposal answers*: for creating template xref:admin:components/proposals/answers.adoc[answers to proposals]
+* *Fragebögen*: zur Erstellung von Vorlagenumfragen in der xref:admin:components/surveys.adoc[Umfrage-Komponente]
+* *Nachrichten zum Blockieren von Nutzenden*: zur Erstellung von Vorlagenbegründungen für das Blockieren von xref:admin:moderations/reported_users.adoc[gemeldeten Teilnehmenden]
+* *Vorschlagsantworten*: zur Erstellung von Vorlagen für xref:admin:components/proposals/answers.adoc[Antworten auf Vorschläge]
 
-Once created, those templates are available to all the administrators, and help them manage the instance more efficiently.
+Einmal erstellt, stehen diese Vorlagen allen Admins zur Verfügung und helfen ihnen, die Instanz effizienter zu verwalten.
 
 == Konfiguration
 
-To access the Templates configuration panel, go in the administration panel and click the "Templates" item in the administration navigation bar.
+Um auf das Konfigurationspanel für Vorlagen zuzugreifen, gehen Sie zum Verwaltungspanel und klicken Sie in der Verwaltungsnavigationsleiste auf den Punkt "Vorlagen".
 
 image::templates/templates_menu.png[Pages: Access templates panel]
 
-There, you can start creating and managing:
+Dort können Sie mit dem Erstellen und Verwalten beginnen:
 
 * xref:admin:templates/questionnaires.adoc[Fragebogenvorlagen]
 * xref:admin:templates/block_users.adoc[Nachrichten für gesperrte Nutzende]
@@ -27,12 +27,11 @@ image::templates/templates_questionnaires_list.png[Backend: templates panel]
 
 == Beispiele
 
-At the end of each of the participatory processes you do, you want to collect the feedback of the participants.
-Creating a questionnaire template makes the survey creation quicker than re-creating the survey and its questions for each process.
+Am Ende jedes durchgeführten Beteiligungsprozesses möchten Sie das Feedback der Teilnehmenden einholen.
+Die Erstellung einer Fragebogenvorlage macht die Umfrageerstellung schneller, als die Umfrage und ihre Fragen für jeden Prozess neu zu erstellen.
 
-On some platforms, you can also have spam users, that you want to be able to block quickly for the same reason each time.
-Creating a justification template allow you to quickly choose this justification when blocking a spam user, rather than writing it
-again each time.
+Auf einigen Plattformen kann es auch Spam-Konten geben, die Sie jedes Mal aus demselben Grund schnell blockieren möchten.
+Die Erstellung einer Begründungsvorlage ermöglicht es Ihnen, diese Begründung beim Blockieren eines Spam-Kontos schnell auszuwählen, anstatt sie jedes Mal
+erneut zu schreiben.
 
-Same goes for proposal answers, sometimes you want to give a same answer to a lot of different proposals. Creating a proposal
-answer template allows you and the processes administrators to manage proposals more efficiently.
+Dasselbe gilt für Vorschlagsantworten: Manchmal möchten Sie dieselbe Antwort auf viele verschiedene Vorschläge geben. Die Erstellung einer Vorschlagsantwort-Vorlage ermöglicht es Ihnen und den Prozess-Admins, Vorschläge effizienter zu verwalten.
