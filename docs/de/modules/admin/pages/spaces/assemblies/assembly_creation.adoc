@@ -1,6 +1,6 @@
 = Versammlung erstellen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Versammlungen ermöglichen es Admins, Komponenten innerhalb eines langfristigen Raums mit festgelegten Mitgliedern zu konfigurieren. Um mit der Erstellung einer Versammlung zu beginnen, klicken Sie auf der link:https://docs.decidim.org/en/develop/admin/spaces/assemblies#_manage_assemblies[Versammlungsliste] oben rechts auf der Seite auf die Schaltfläche "Neue Versammlung".
 
@@ -10,13 +10,13 @@ Sobald Sie eine Versammlung erstellt haben, finden Sie alle verfügbaren Versamm
 
 * xref:admin:spaces/assemblies/assembly_creation.adoc[Über diese Versammlung] (Hier können Sie auf alle Felder des Erstellungsformulars zugreifen und sie bearbeiten.)
 * xref:admin:spaces/assemblies/landing_page.adoc[Startseite]
-* xref:admin:spaces/assemblies/components.adoc[Components]
-* xref:admin:spaces/assemblies/categories.adoc[Categories]
-* xref:admin:spaces/assemblies/attachments.adoc[Attachments]
-* xref:admin:spaces/assemblies/members.adoc[Members]
-* xref:admin:spaces/assemblies/admins.adoc[Assembly admins]
-* xref:admin:spaces/assemblies/private_participants.adoc[Private Teilnehmer]
-* xref:admin:spaces/assemblies/moderations.adoc[Moderations]
+* xref:admin:spaces/assemblies/components.adoc[Komponenten]
+* xref:admin:spaces/assemblies/categories.adoc[Kategorien]
+* xref:admin:spaces/assemblies/attachments.adoc[Anhänge]
+* xref:admin:spaces/assemblies/members.adoc[Mitglieder]
+* xref:admin:spaces/assemblies/admins.adoc[Versammlungs-Admins]
+* xref:admin:spaces/assemblies/private_participants.adoc[Private Teilnehmende]
+* xref:admin:spaces/assemblies/moderations.adoc[Moderationen]
 
 == Konfiguration
 
@@ -26,7 +26,7 @@ In diesem Abschnitt kann ein Admin allgemeine Informationen zur Versammlung ange
 
 image::spaces/assemblies/assemblies_new_form_general_info.png[New assembly form general info section]
 
-.Neues Baugruppenformular: Allgemeine Informationen
+.Neues Versammlungsformular: Allgemeine Informationen
 [cols="20h,10h,~,~"]
 |===
 |Feld |Typ |Beschreibung |Sichtbarkeit
@@ -94,7 +94,7 @@ Dieser Abschnitt ermöglicht es, Informationen zu den wichtigen Daten der Versam
 
 image::spaces/assemblies/assemblies_new_form_duration.png[New assembly form duration section]
 
-.Neues Baugruppenformular: Dauer
+.Neues Versammlungsformular: Dauer
 [cols="20h,10h,~,~"]
 |===
 |Feld |Typ |Beschreibung |Sichtbarkeit
@@ -116,7 +116,7 @@ image::spaces/assemblies/assemblies_new_form_duration.png[New assembly form dura
 
 |Enddatum
 |Optional
-|Wenn diese Schwärmerei geschlossen wird. Erwartetes Format: tt/mm/jjjj.
+|Wenn diese Versammlung geschlossen wurde. Erwartetes Format: tt/mm/jjjj.
 |Sichtbar im Inhaltsblock "Datumsmetadaten" der Startseite.
 
 |Grund des Abschlusses
@@ -129,7 +129,7 @@ image::spaces/assemblies/assemblies_new_form_duration.png[New assembly form dura
 
 image::spaces/assemblies/assemblies_new_form_images.png[New assembly form images section]
 
-.Neues Baugruppenformular: Bilder
+.Neues Versammlungsformular: Bilder
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
@@ -140,7 +140,7 @@ image::spaces/assemblies/assemblies_new_form_images.png[New assembly form images
 Bei Bildern werden Querformat-Bilder bevorzugt, da der Dienst das Bild zuschneidet. Maximale Dateigrösse: 10 MB
 
 |Bannerbild
-|Abgelehnt
+|Veraltet
 |Verwenden Sie stattdessen den Inhaltsblock link:https://docs.decidim.org/en/develop/admin/spaces/assemblies/landing_page.html#_hero_image_and_cta[Banner-Bild und Handlungsaufforderung] auf der Startseite.
 |===
 
@@ -151,20 +151,20 @@ Filter können anschliessend in jeder Komponente aktiviert und konfiguriert werd
 
 image::spaces/assemblies/assemblies_new_form_filters.png[New assembly form filters section]
 
-.Neues Baugruppenformular: Filter
+.Neues Versammlungsformular: Filter
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
-|Bereiche aktiviert
+|Themen aktiviert
 |Optional
-|Auswählen, ob die Bereichsfilterung in dieser Schwärmerei erfolgen soll.
+|Auswählen, ob die Themenfilterung in dieser Versammlung erfolgen soll.
 
-|Bereich
+|Thema
 |Optional
 |Zu welchen xref:admin:settings/scopes.adoc[Themen] diese Versammlung gehört.
 
-|Fläche
+|Bereich
 |Optional
 |Zu welchen xref:admin:settings/areas.adoc[Bereichen] diese Versammlung gehört.
 |===
@@ -175,7 +175,7 @@ In diesem Abschnitt können Sie Metainformationen zur Versammlung angeben.
 
 image::spaces/assemblies/assemblies_new_form_metadata.png[New assembly form metadata section]
 
-.Neues Baugruppenformular: Metadaten
+.Neues Versammlungsformular: Metadaten
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
@@ -188,7 +188,7 @@ image::spaces/assemblies/assemblies_new_form_metadata.png[New assembly form meta
 |Optional
 |Der Entscheidungsprozess innerhalb der Versammlung.
 
-|Bereichsmetadaten
+|Themenmetadaten
 |Optional
 |Metadaten zum Geltungsbereich der Versammlung, falls relevant.
 
@@ -211,18 +211,18 @@ In diesem Abschnitt können Admins die Platzierung des Prozesses auf den verschi
 
 image::spaces/assemblies/assemblies_new_form_visibility.png[New assembly form visibility section]
 
-.Neues Baugruppenformular: Sichtbarkeit
+.Neues Versammlungsformular: Sichtbarkeit
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
-|Übergeordnete Baugruppe
+|Übergeordnete Versammlung
 |Optional
 |Zu welchen anderen Versammlungen diese Versammlung gehört. Versammlungen können ineinander verschachtelt werden.
 
 |Hervorgehoben
 |Optional
-|Aktivieren, wenn die Assembly mehr Sichtbarkeit in der öffentlichen Schwärmerliste haben soll. Sie ist ausserdem im Inhaltsblock "Hervorgehobene
+|Aktivieren, wenn die Versammlung mehr Sichtbarkeit in der öffentlichen Versammlungsliste haben soll. Sie ist ausserdem im Inhaltsblock "Hervorgehobene
 Versammlungen" in der Konfiguration der xref:admin:settings/homepage.adoc[Startseite] sichtbar.
 
 |Privater Raum
@@ -239,7 +239,7 @@ oder Besuchende sie sehen, aber nicht daran teilnehmen können.
 
 image::spaces/assemblies/assemblies_new_form_other.png[New assembly form other section]
 
-.Neues Baugruppenformular: Andere
+.Neues Versammlungsformular: Andere
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
@@ -249,7 +249,7 @@ image::spaces/assemblies/assemblies_new_form_other.png[New assembly form other s
 |Wählen Sie "Stadtrat", "Öffentlich" oder "Andere", wenn Sie den Namen der Organisation angeben möchten, die
 diese Versammlung erstellt hat.
 
-|Baugruppentyp
+|Versammlungstyp
 |Optional
 |Welcher xref:admin:spaces/assemblies/types.adoc[Versammlungstyp] dieser Versammlung zugeordnet ist.
 
