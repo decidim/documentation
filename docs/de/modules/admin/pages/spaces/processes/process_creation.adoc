@@ -1,6 +1,6 @@
 = Erstellung eines Beteiligungsprozesses
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Beteiligungsprozesse ermöglichen es Admins, Komponenten in Verbindung mit verschiedenen Beteiligungsphasen zu konfigurieren.
 Um mit der Erstellung eines Prozesses zu beginnen, klicken Sie in der Prozessliste oben rechts auf der Seite auf die Schaltfläche "Neuer Prozess".
@@ -11,13 +11,13 @@ Sobald Sie einen Prozess erstellt haben, sehen Sie im sekundären Navigationspan
 
 * xref:admin:spaces/processes/process_creation.adoc[Über diesen Prozess]: hier können Sie auf alle Felder des Erstellungsformulars zugreifen und sie bearbeiten.
 * xref:admin:spaces/processes/landing_page.adoc[Startseite]
-* xref:admin:spaces/processes/phases.adoc[Phases]
-* xref:admin:spaces/processes/components.adoc[Components]
-* xref:admin:spaces/processes/categories.adoc[Categories]
-* xref:admin:spaces/processes/attachments.adoc[Attachments]
-* xref:admin:spaces/processes/admins.adoc[admins]
-* xref:admin:spaces/processes/private_participants.adoc[Private Teilnehmer]
-* xref:admin:spaces/processes/moderations.adoc[Moderations]
+* xref:admin:spaces/processes/phases.adoc[Phasen]
+* xref:admin:spaces/processes/components.adoc[Komponenten]
+* xref:admin:spaces/processes/categories.adoc[Kategorien]
+* xref:admin:spaces/processes/attachments.adoc[Anhänge]
+* xref:admin:spaces/processes/admins.adoc[Prozess-Admins]
+* xref:admin:spaces/processes/private_participants.adoc[Private Teilnehmende]
+* xref:admin:spaces/processes/moderations.adoc[Moderationen]
 
 == Konfiguration
 
@@ -27,7 +27,7 @@ Dieser Abschnitt ermöglicht es, eine allgemeine Beschreibung des Prozesses anzu
 
 image::spaces/processes/processes_new_form_general_info.png[New participatory process form general info section]
 
-.Neues Teilnahme-Prozess-Formular: Allgemeine Informationen
+.Neues Beteiligungsprozess-Formular: Allgemeine Informationen
 [cols="20h,10h,~,~"]
 |===
 |Feld |Typ |Beschreibung |Sichtbarkeit
@@ -81,25 +81,25 @@ Es kann auf der Startseite mit dem Startseiten-Block "Phase & Dauer" aktiviert w
 
 image::spaces/processes/processes_new_form_duration.png[New participatory process form duration section]
 
-.Neues Teilnahme-Prozess-Formular: Dauer
+.Neues Beteiligungsprozess-Formular: Dauer
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Startdatum
 |Optional
-|Wenn dieser Prozess beginnt. Sie haben ein Kalender-Widget zum Auswählen des Tages. Erwartetes Format: dd/mm/yyy
+|Wenn dieser Prozess beginnt. Sie haben ein Kalender-Widget zum Auswählen des Tages. Erwartetes Format: dd/mm/yyyy
 
 |Enddatum
 |Optional
-|Wenn dieser Prozess beginnt. Sie haben ein Kalender-Widget zum Auswählen des Tages. Erwartetes Format: dd/mm/yyy
+|Wenn dieser Prozess beginnt. Sie haben ein Kalender-Widget zum Auswählen des Tages. Erwartetes Format: dd/mm/yyyy
 |===
 
 === Bilder
 
 image::spaces/processes/processes_new_form_images.png[New participatory process form images section]
 
-.Neues Teilnahme-Prozess-Formular: Bilder
+.Neues Beteiligungsprozess-Formular: Bilder
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
@@ -107,7 +107,7 @@ image::spaces/processes/processes_new_form_images.png[New participatory process 
 |Home-Bild
 |Optional
 |Bild, das in Präsentationskarten dieses Prozesses verwendet wird. Anleitung für Datei: Muss ein Bild oder ein Dokument sein.
-Für Bilder verwenden Sie vorzugsweise Landschaftsbilder, der Dienst bewirtschaftet das Bild. Maximale Dateigrösse: 10 MB
+Für Bilder verwenden Sie vorzugsweise Bilder im Querformat, der Dienst beschneidet das Bild. Maximale Dateigrösse: 10 MB
 |===
 
 === Metadaten
@@ -117,7 +117,7 @@ Sie kann auf der Startseite über den Inhaltsblock "Metadaten" aktiviert werden.
 
 image::spaces/processes/processes_new_form_metadata.png[New participatory process form metadata section]
 
-.Neues partizipatorisches Prozessformular: Metadaten
+.Neues Beteiligungsprozess-Formular: Metadaten
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
@@ -130,7 +130,7 @@ image::spaces/processes/processes_new_form_metadata.png[New participatory proces
 |Optional
 |Der Tätigkeitsbereich oder die Kategorie der Organisation, falls relevant.
 
-|Bereichsmetadaten
+|Themenmetadaten
 |Optional
 |Metadaten zum Geltungsbereich des Prozesses, falls relevant.
 
@@ -154,27 +154,27 @@ Filter können anschliessend in jeder Komponente aktiviert und konfiguriert werd
 
 image::spaces/processes/processes_new_form_filters.png[New participatory process form filters section]
 
-.Neues Teilnahme-Prozess-Formular: Filter
+.Neues Beteiligungsprozess-Formular: Filter
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
-|Bereiche aktiviert
+|Themen aktiviert
 |Optional
-|Aktivieren, wenn Sie die Bereichsfilterung in diesem Prozess verwenden möchten.
+|Aktivieren, wenn Sie die Themenfilterung in diesem Prozess verwenden möchten.
 
-|Bereich
+|Thema
 |Optional
 |Zu welchem xref:admin:settings/scopes.adoc[Thema] dieser Prozess gehört.
 
-|Reichweite Filtertiefe
+|Themenfilter-Tiefe
 |Optional
 |Die Tiefe des Themenfilters einschränken. Dies ist relevant, wenn Sie komplexe Beziehungen bei untergeordneten Themen haben (wie eine Matroschka).
 Wenn Sie zum Beispiel verschachtelte Themen Grossmutter -> Mutter -> Kind haben, können Sie mit dieser Einstellung das Thema Mutter auswählen,
       sodass Teilnehmende nur zwischen den Unterthemen Kind filtern können. Dies wäre zum Beispiel der Fall, wenn Sie
       Provinzen -> Städte -> Bezirke haben und der Prozess sich auf eine bestimmte Stadt bezieht.
 
-|Fläche
+|Bereich
 |Optional
 |Zu welchem xref:admin:settings/areas.adoc[Bereich] dieser Prozess gehört.
 |===
@@ -185,7 +185,7 @@ Dieser Abschnitt ermöglicht es Admins, die Platzierung des Prozesses auf den ve
 
 image::spaces/processes/processes_new_form_visibility.png[New participatory process form visibility section]
 
-.Neues partizipatorisches Prozessformular: Sichtbarkeit
+.Neues Beteiligungsprozess-Formular: Sichtbarkeit
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
@@ -204,7 +204,7 @@ image::spaces/processes/processes_new_form_visibility.png[New participatory proc
       in der Konfiguration der xref:admin:settings/homepage.adoc[Startseite] haben soll.
 |===
 
-=== Verwandte Prozesse
+=== Ähnliche Prozesse
 
 Dieser Abschnitt ermöglicht es, Beziehungen zwischen Prozessen herzustellen. Dies unterscheidet sich von Prozessgruppen.
 Es kann auf der Startseite mit dem Startseiten-Block "Ähnliche Prozesse" aktiviert werden.
@@ -216,7 +216,7 @@ image::spaces/processes/processes_new_form_related_processes.png[New participato
 |===
 |Feld |Typ |Beschreibung
 
-|Verwandte Prozesse
+|Ähnliche Prozesse
 |Optional
 |Wählen Sie andere Beteiligungsprozesse, die mit diesem verwandt sind.
 |===
