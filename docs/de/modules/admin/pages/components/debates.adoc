@@ -2,28 +2,28 @@
 
 == Understand the basics
 
-The Debate component allows people to have discussions, without voting nor prioritization. It also allows to close debates,
-by adding conclusions or a summary of what the discussion was about.
+Die Debatten-Komponente ermöglicht es Personen, Diskussionen zu führen, ohne Abstimmung oder Priorisierung. Sie ermöglicht es auch, Debatten zu schliessen,
+indem ein Fazit oder eine Zusammenfassung dessen hinzugefügt wird, worum es in der Diskussion ging.
 
 image::components/debates/example01.png[Debates listing example]
 
 == Konfiguration
 
-=== Create a debate component
+=== Eine Debatten-Komponente erstellen
 
-To create a Debate component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
+Um eine Debatten-Komponente zu erstellen, gehen Sie zunächst zum xref:admin:spaces.adoc[partizipativen Raum], in dem Sie sie erstellen möchten.
 
 image::components/debates/component_debate.png[Add Debate component button]
 
-Then:
+Dann:
 
-. Click on the "Components" item in the secondary menu
-. Click the "Add component" button
-. Select "Debate"
-. Fill the component creation form
+. Klicken Sie im Sekundärmenü auf den Punkt "Komponenten"
+. Klicken Sie auf die Schaltfläche "Komponente hinzufügen"
+. Wählen Sie "Debatte"
+. Füllen Sie das Formular zur Komponentenerstellung aus
 
-You can still update this form and the configuration after creating the component, by clicking the
-image:icons/action_configure.png[Configure icon] Configure icon in the components list.
+Sie können dieses Formular und die Konfiguration auch nach der Erstellung der Komponente noch aktualisieren, indem Sie in der Komponentenliste auf das
+image:icons/action_configure.png[Symbol: Konfigurieren] Konfigurieren-Symbol klicken.
 
 image::components/debates/component.png[Add component form]
 
@@ -36,14 +36,14 @@ image::components/debates/component.png[Add component form]
 |Benötigt
 |The title of this component.
 
-|Bestellposition
+|Reihenfolge
 |Optional
-|The order of the component in relation with the other components. Eine niedrigere Zahl bedeutet eine höhere Priorität.
-For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0"
-then "component b" is first when ordering.
+|Die Reihenfolge der Komponente im Verhältnis zu den anderen Komponenten. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+Wenn Sie beispielsweise zwei Komponenten haben, "Komponente a" mit der Gewichtung "10" und "Komponente b" mit der Gewichtung "0",
+steht "Komponente b" bei der Sortierung an erster Stelle.
 |===
 
-.Debate form - Global settings
+.Debattenformular - Globale Einstellungen
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
@@ -54,15 +54,15 @@ then "component b" is first when ordering.
 
 |Bereich
 |Optional
-|Which xref:admin:settings/scopes.adoc[Scopes] does this component belongs to.
+|Zu welchen xref:admin:settings/scopes.adoc[Themen] diese Komponente gehört.
 
 |Kommentare aktiviert
 |Optional
-|Whether you want to have comments in the debates.
+|Ob Sie Kommentare bei den Debatten aktivieren möchten.
 
 |Maximale Länge der Kommentare
 |Optional
-|The characters limit that participants have when making comments. Lassen Sie 0 für den Standardwert.
+|Das Zeichenlimit, das Teilnehmenden beim Verfassen von Kommentaren zur Verfügung steht. Lassen Sie 0 für den Standardwert.
 
 |Mitteilung
 |Optional
@@ -76,15 +76,15 @@ then "component b" is first when ordering.
 
 |Befürworter aktiviert
 |Optional
-|Check if you want to enable participants to show public support for debates.
+|Aktivieren Sie dies, wenn Teilnehmende öffentlich ihre Unterstützung für Debatten zeigen können sollen.
 
 |Befürworter blockiert
 |Optional
-|Check for participants to be able to see the existing endorsements but not make any new one.
+|Aktivieren Sie dies, damit Teilnehmende die bestehenden Unterstützungen sehen, aber keine neuen abgeben können.
 
-|Participants can create debates
+|Teilnehmende können Debatten erstellen
 |Optional
-|Check if you want to allow the creation of new debates by participants during this phase.
+|Aktivieren Sie dies, wenn Sie die Erstellung neuer Debatten durch Teilnehmende während dieser Phase erlauben möchten.
 
 |Kommentare blockiert
 |Optional
@@ -95,7 +95,7 @@ then "component b" is first when ordering.
 |Eine allgemeine Ankündigung, die auf der Landungsseite der allgemeinen Debatte zu sehen sein wird.
 |===
 
-=== Create a debate
+=== Eine Debatte erstellen
 
 image::components/debates/new_debate_backend.png[New debate backend form]
 
@@ -106,24 +106,24 @@ image::components/debates/new_debate_backend.png[New debate backend form]
 
 |Titel
 |Benötigt
-|The title of this debate.
+|Der Titel dieser Debatte.
 
 |Beschreibung
 |Benötigt
-|The description of this debate.
+|Die Beschreibung dieser Debatte.
 
 |Anleitung zur Teilnahme
 |Benötigt
-|Add a message for the participants, displayed on the debate page in an information box.
+|Fügen Sie eine Nachricht für Teilnehmende hinzu, die auf der Debattenseite in einem Infofeld angezeigt wird.
 
 |Informations-Updates
 |Optional
-|Add a message for the participants, displayed on the debate page in an information box.
+|Fügen Sie eine Nachricht für Teilnehmende hinzu, die auf der Debattenseite in einem Infofeld angezeigt wird.
 
 |xref:_debate_types[Debat-Typ]
 |Benötigt
-|Wählen Sie zwischen Finite und Open aus. Finite means that the debate has a starting and ending date and time, Open means that
-there isn't any time frame.
+|Wählen Sie zwischen Finite und Open aus. Endlich bedeutet, dass die Debatte ein Start- und Enddatum sowie eine Start- und Endzeit hat, Offen bedeutet, dass
+kein Zeitrahmen vorgegeben ist.
 
 |Beginnt am
 |Erforderlich, wenn der Diskussionstyp endgültig ist
@@ -139,24 +139,24 @@ there isn't any time frame.
 
 |Kommentare aktiviert
 |Optional
-|Whether you want participants to be able to comment on this debate.
+|Ob Teilnehmende diese Debatte kommentieren können sollen.
 |===
 
 === Debatten verwalten
 
-To start creating and managing debates, click in the component title in the navigation bar or in the component list, or click in the
-image:icons/action_edit.png[Manage component icon] icon on the components list.
+Um mit der Erstellung und Verwaltung von Debatten zu beginnen, klicken Sie auf den Komponententitel in der Navigationsleiste oder in der Komponentenliste, oder klicken Sie in der Komponentenliste auf das
+image:icons/action_edit.png[Symbol: Komponente verwalten]-Symbol.
 
 image::components/debates/manage_debates.png[Manage debates table]
 
-On the debates list in the administration panel, administrators can see:
+In der Debattenliste im Verwaltungspanel können Admins Folgendes sehen:
 
-* *Title*: Title of the debate.
-* *Start date*: Start date of the debate.
-* *End date*: End date of the debate.
-* *Scope*: Scope of the debate, if enabled in the participatory space.
+* *Titel*: Titel der Debatte.
+* *Startdatum*: Startdatum der Debatte.
+* *Enddatum*: Enddatum der Debatte.
+* *Thema*: Thema der Debatte, sofern im partizipativen Raum aktiviert.
 
-You can also export the comments in the debates in CSV, JSON and Excel format by clicking the "Export all" button.
+Sie können die Kommentare in den Debatten auch im CSV-, JSON- und Excel-Format exportieren, indem Sie auf die Schaltfläche "Alle exportieren" klicken.
 
 === Debat-Typen
 
@@ -165,48 +165,48 @@ Es ist möglich, zwei Arten von Debatten zu führen:
 . Fertig: mit einem Start- und Enddatum
 . Öffnen: ohne Start- und Enddatum
 
-Participants can see the types of the debates in the debate public list.
+Teilnehmende können die Arten der Debatten in der öffentlichen Debattenliste sehen.
 
-image:components/debates/debates_list.png[Debates list]
+image:components/debates/debates_list.png[Debattenliste]
 
 === Aktionen
 
-NOTE: When participants can create debates, administrators have less actions available, and can't edit nor delete the debates.
+NOTE: Wenn Teilnehmende Debatten erstellen können, stehen Admins weniger Aktionen zur Verfügung, und sie können die Debatten weder bearbeiten noch löschen.
 
 .Aktionen
 [cols="10h,20h,~"]
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
 |Formular für eine Debatte bearbeiten.
 
-|image:icons/action_close.png[Close icon]
+|image:icons/action_close.png[Symbol: Schliessen]
 |Schließen
 |Formular für eine Aussprache schließen. Zum Hinzufügen von Schlussfolgerungen.
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
 |Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
 
 |image:icons/action_permissions.png[Permissions icon]
 |Berechtigungen
-|To handle the authorizations needed to create or endorse debates.
+|Um die Berechtigungen zu verwalten, die zum Erstellen oder Unterstützen von Debatten erforderlich sind.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
 |Diese Debatte löschen.
 |===
 
 === Diskussionsformular schließen
 
-Eine Aussprache kann geschlossen werden. This is useful for publishing debates conclusions.
-After a debate was closed it can't be edited nor commented any more.
+Eine Aussprache kann geschlossen werden. Dies ist nützlich, um die Zusammenfassungen der Debatten zu veröffentlichen.
+Nachdem eine Debatte geschlossen wurde, kann sie nicht mehr bearbeitet oder kommentiert werden.
 
 image::components/debates/close_debate_backend.png[Close debate backend form]
 
-Take into account that if the debate was created by a participant, then only that participant can close it.
+Beachten Sie, dass, wenn die Debatte von einer teilnehmenden Person erstellt wurde, nur diese Person sie schliessen kann.
 
 image::components/debates/close_debate_frontend.png[Close debate frontend form]
 
@@ -226,6 +226,6 @@ image::components/debates/debate_closed.png[Closed debate]
 
 == Beispiele
 
-Some examples of where this component is used:
+Einige Beispiele, wo diese Komponente verwendet wird:
 
 * https://meta.decidim.org/processes/roadmap/f/219/[Neue Funktionalitäten für Decidim-Software in Metadecidim]
