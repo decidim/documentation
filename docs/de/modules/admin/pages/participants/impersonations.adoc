@@ -1,44 +1,44 @@
-= Participants impersonations
+= Identitätsübernahme von Teilnehmenden
 
 == Understand the basics
 
-Sometimes, people don't have the time to create an account, or don't have the knowledge or ability to use technological tools.
-Impersonations allow administrators and participant managers to enable those persons to participate anyway.
+Manchmal haben Personen nicht die Zeit, ein Konto zu erstellen, oder verfügen nicht über die Kenntnisse oder Fähigkeiten, um technologische Werkzeuge zu nutzen.
+Die Identitätsübernahme ermöglicht es Admins und Teilnehmendenverwaltenden, diesen Personen trotzdem eine Teilnahme zu ermöglichen.
 
-NOTE: In the code and the User Interface, *Impersonation* and *Managed Participants* are the same thing.
+NOTE: Im Code und in der Benutzeroberfläche sind *Identitätsübernahme* und *Verwaltete Teilnehmende* dasselbe.
 
 == Konfiguration
 
-=== Enable / disable impersonations
+=== Identitätsübernahme aktivieren/deaktivieren
 
-Impersonations are only available when at least one authorization is enabled for the organization.
-Indeed, they allow the system to search through a Verification system for an already existing participant, and to create
-a participant without the need for an email address.
+Die Identitätsübernahme ist nur verfügbar, wenn mindestens eine Berechtigung für die Organisation aktiviert ist.
+Sie ermöglichen es dem System nämlich, über ein Verifizierungssystem nach einer bereits bestehenden teilnehmenden Person zu suchen und
+eine teilnehmende Person ohne die Notwendigkeit einer E-Mail-Adresse zu erstellen.
 
-To enable an authorization, you need to have access to the xref:configure:system.adoc[System panel] or ask your instance implementer.
+Um eine Berechtigung zu aktivieren, benötigen Sie Zugriff auf das xref:configure:system.adoc[Systempanel] oder müssen die für Ihre Instanz zuständige entwickelnde Person fragen.
 
 image::participants/participants_impersonations_backend_list_no_auth.png[Administrators Impersonations panel with no authorizations]
 
-The different authorizations give you different possibilities:
+Die verschiedenen Berechtigungen bieten unterschiedliche Möglichkeiten:
 
-* View impersonation logs only: When Identity documents, Code by postal letter, and/or Organization's census are enabled
-* Impersonate existing and new users: Direct verification enabled, like example authorization or other custom direct authorizations.
+* Nur Protokolle der Identitätsübernahme einsehen: Wenn Identitätsdokumente, Code per Post und/oder Zählung der Organisation aktiviert sind
+* Identität von bestehenden und neuen Nutzenden annehmen: Direkte Verifizierung aktiviert, wie Beispiel-Berechtigung oder andere benutzerdefinierte direkte Berechtigungen.
 
-NOTE: You can learn more regarding how to program your form authorization in
+NOTE: Weitere Informationen dazu, wie Sie Ihre Formularberechtigung programmieren können, finden Sie in der
 https://github.com/decidim/decidim/blob/develop/decidim-verifications/README.md[Decidim-verification README].
 
 image::participants/participants_impersonations_backend_list_logs.png[Administrators Impersonations panel with view log]
 
 image::participants/participants_impersonations_backend_list_button.png[Administrators Impersonations panel with impersonation action]
 
-=== Manage impersonations
+=== Identitätsübernahmen verwalten
 
-You can find all the participants of the platform, with:
+Sie finden alle Teilnehmenden der Plattform mit:
 
-* *Name*: name of the participant.
-* *Status*: if the participant is impersonated/managed or not.
+* *Name*: Name der teilnehmenden Person.
+* *Status*: ob bei der teilnehmenden Person die Identität übernommen wurde/sie verwaltet wird oder nicht.
 
-You can filter this list by clicking the "Filter" button and search for participants by their name.
+Sie können diese Liste filtern, indem Sie auf die Schaltfläche "Filter" klicken, und nach Teilnehmenden anhand ihres Namens suchen.
 
 === Aktionen
 
@@ -47,36 +47,36 @@ You can filter this list by clicking the "Filter" button and search for particip
 |===
 |Icon |Name |Definition |Bedingung
 
-|image:icons/action_impersonate.png[Impersonate icon]
-|Impersonate
-|To impersonate the participant.
-|Available all the time.
+|image:icons/action_impersonate.png[Symbol: Identität annehmen]
+|Identität annehmen
+|Um die Identität der teilnehmenden Person anzunehmen.
+|Immer verfügbar.
 
-|image:icons/action_clock.png[View logs icon]
-|View logs
-|To view the impersonation history of the participant.
-|Available all the time.
+|image:icons/action_clock.png[Symbol: Protokolle ansehen]
+|Protokolle ansehen
+|Um den Verlauf der Identitätsübernahme der teilnehmenden Person einzusehen.
+|Immer verfügbar.
 
-|image:icons/action_promote.png[Promote icon]
-|Promote
-|To view the impersonation history of the participant.
-|Available only for managed users.
+|image:icons/action_promote.png[Symbol: Hochstufen]
+|Hochstufen
+|Um den Verlauf der Identitätsübernahme der teilnehmenden Person einzusehen.
+|Nur für verwaltete Teilnehmende verfügbar.
 |===
 
-=== Impersonate a participant
+=== Die Identität einer teilnehmenden Person annehmen
 
-Click the "Manage new participant" button. You are then able to enter the personal data to check against the verification:
+Klicken Sie auf die Schaltfläche "Neue teilnehmende Person verwalten". Anschliessend können Sie die persönlichen Daten eingeben, die mit der Verifizierung abgeglichen werden:
 
 image::participants/participants_impersonations_form.png[Administrators Impersonations form]
 
-After this data is checked by the system, it opens a session for the participant for 30 minutes.
-A banner at the top of the page reminds the administrator that they are impersonating the participant, and the remaining time.
+Nachdem diese Daten vom System überprüft wurden, wird für die teilnehmende Person eine Sitzung für 30 Minuten geöffnet.
+Ein Banner oben auf der Seite erinnert den Admin daran, dass er gerade die Identität der teilnehmenden Person angenommen hat, sowie an die verbleibende Zeit.
 
 image::participants/participants_impersonations_user.png[Impersonated user session]
 
-=== Promote a managed participant
+=== Eine verwaltete teilnehmende Person hochstufen
 
-Administrators can promote managed participants, to invite them to the create an account on the platform.
-Click the "Promote" icon to be able to add an email address to the participant and invite them by email.
+Admins können verwaltete Teilnehmende hochstufen, um sie einzuladen, ein Konto auf der Plattform zu erstellen.
+Klicken Sie auf das Symbol "Hochstufen", um der teilnehmenden Person eine E-Mail-Adresse hinzufügen und sie per E-Mail einladen zu können.
 
 image::participants/participants_impersonations_promotion.png[Administrators promotion Impersonations]
