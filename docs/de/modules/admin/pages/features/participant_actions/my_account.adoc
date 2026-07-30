@@ -1,12 +1,12 @@
 = Mein Konto
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Mit dieser Funktion können Teilnehmende ihre Kontoinformationen, Benachrichtigungseinstellungen und Berechtigungen verwalten, ihre Gruppen einsehen usw.
 Diese Kontoseite ist nur für die teilnehmende Person selbst zugänglich, und einige Kontoinformationen (wie das Feld "Über") werden im
 xref:admin:features/participant_actions/my_public_profile.adoc[öffentlichen Profil] der teilnehmenden Person angezeigt.
 
-=== How to find it?
+=== Wie findet man sie?
 
 Als angemeldete teilnehmende Person können Sie an zwei Stellen auf Ihre Kontokonfiguration zugreifen:
 
@@ -28,38 +28,38 @@ die standardmässig verwendete Sprache anpassen.
 
 image::features/my_account/account.png[My account form]
 
-.Teilnehmereinstellungen - Mein Kontoformular
+.Teilnehmenden-Einstellungen - Mein Kontoformular
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Avatar
 |Optional
-|Avatar oder Bild für den Teilnehmer. Bildführung: Vorzugsweise ein Querformat ohne Text.
-Der Dienst erzeugt das Bild. Maximale Dateigrösse: 5 MB
+|Avatar oder Bild für die teilnehmende Person. Bildführung: Vorzugsweise ein Querformat ohne Text.
+Der Dienst beschneidet das Bild. Maximale Dateigrösse: 5 MB
 
 |Ihr Name
 |Benötigt
-|Der Name des Teilnehmers.
+|Der Name der teilnehmenden Person.
 
 |Spitzname
 |Benötigt
-|Der Spitzname des Teilnehmers.
+|Der Spitzname der teilnehmenden Person.
 
 |Ihre E-Mail
 |Benötigt
-|Die E-Mail des Teilnehmers, wo sie Benachrichtigungen, Passwortwiederherstellung usw. erhalten. Wenn sie geändert wird, muss sie erneut
+|Die E-Mail-Adresse der teilnehmenden Person, worüber sie Benachrichtigungen, Passwortwiederherstellung usw. erhält. Wenn sie geändert wird, muss sie erneut
 bestätigt werden.
 
 |Persönliche URL
 |Optional
-|Metadaten, die im Teilnehmerprofil angezeigt werden.
+|Metadaten, die im Profil der teilnehmenden Person angezeigt werden.
 
 |Über
 |Optional
 |Informationen über die teilnehmende Person, die in ihrem Profil angezeigt werden.
 
-|Lokal
+|Sprache
 |Benötigt
 |Sprache, die Sie zum Navigieren und für den Empfang von Benachrichtigungen in Decidim verwenden möchten.
 |===
@@ -78,15 +78,15 @@ image:features/my_account/notifications_settings.png[Benachrichtigungseinstellun
 Die verfügbaren Optionen sind:
 
 * Ich möchte Benachrichtigungen erhalten über
-** Meine eigene Tätigkeit, wie wenn jemand in meinem Vorschlag kommentiert oder mich erwähnt
-** Alles, was ich folge
+** Meine eigene Tätigkeit, z. B. wenn jemand meinen Vorschlag kommentiert oder mich erwähnt
+** Alles, was ich verfolge
 * Wie oft möchten Sie die Benachrichtigungs-E-Mail erhalten?
 ** Keine, In Echtzeit, Täglich oder Wöchentlich
 * Newsletter
 ** Ich möchte Newsletter erhalten
-* Empfange Direktnachrichten von jedem
-** Erlaube mir jemandem eine Direktnachricht zu senden, auch wenn ich ihnen nicht folge
-* Administratoren
+* Direktnachrichten von allen erhalten
+** Direktnachrichten von allen zulassen, auch wenn ich ihnen nicht folge
+* Admins
 ** Ich möchte jedes Mal eine E-Mail erhalten, wenn etwas oder jemand zur Moderation gemeldet wird.
 ** Ich möchte E-Mail-Erinnerungen zu unveröffentlichten Berichten abgeschlossener Veranstaltungen erhalten
 * Push-Benachrichtigungen
@@ -98,14 +98,14 @@ In diesem Abschnitt können Teilnehmende ihre Berechtigungen einsehen und einige
 oder den Status der Berechtigung.
 
 Dies hängt davon ab, wie es für die Organisation konfiguriert ist, da es je nach Kontext (z. B. Vorschriften oder Gesetze) auf unterschiedliche
-Weise funktionieren kann. Weitere Informationen über Autorisationen finden Sie unter xref:admin:participants/authorizations.adoc[Autorisationen
-im Admin-Handbuch] und xref:customize:authorizations.adoc[Autorisationen in der Anleitung].
+Weise funktionieren kann. Weitere Informationen über Autorisierungen finden Sie unter xref:admin:participants/authorizations.adoc[Autorisierungen
+im Admin-Handbuch] und xref:customize:authorizations.adoc[Autorisierungen in der Anleitung].
 
-image:features/my_account/authorizations.png[Authorizations]
+image:features/my_account/authorizations.png[Autorisierungen]
 
 Für eine beliebige Autorisierung können Sie folgende Informationen sehen:
 
-* Wenn der Autorisierungsprozess nicht beendet ist, wenn der Autorisierungsprozess gestartet wurde
+* Wenn sie nicht beendet ist, das Datum, an dem der Autorisierungsprozess gestartet wurde
 * Wenn sie beendet ist und gewährt wurde, dann ist das Datum der Erteilung
 * Wenn die Autorisierung sie zur Verfügung stellt, sind einige Metadaten wie der Umfang der Autorisierung
 
@@ -113,7 +113,7 @@ Für eine beliebige Autorisierung können Sie folgende Informationen sehen:
 
 In diesem Abschnitt können Teilnehmende sehen, welchen Gruppen sie angehören.
 
-NOTE: Willst du eine neue Gruppe erstellen? Gehen Sie zur Seite xref:admin:features/participant_actions/group_profile.adoc[Gruppenprofil].
+NOTE: Möchten Sie eine neue Gruppe erstellen? Gehen Sie zur Seite xref:admin:features/participant_actions/group_profile.adoc[Gruppenprofil].
 
 image::features/my_account/groups.png[Groups]
 
@@ -121,7 +121,7 @@ Weitere Informationen zur Gruppenkonfiguration finden Sie unter xref:admin:parti
 
 === Meine Interessen
 
-In diesem Bereich können die Teilnehmer wählen, über welche Interessen sie mehr Informationen erhalten müssen.
+In diesem Bereich können Teilnehmende auswählen, zu welchen Interessen sie mehr Informationen erhalten möchten.
 
 Standardmässig sehen sie hier eine Liste aller xref:admin:settings/scopes.adoc[Themen] der Organisation. Diese Auswahl
 kann von Admins beim Segmentieren für xref:admin:features/social_features/newsletters.adoc[Newsletter] verwendet werden.
@@ -136,13 +136,13 @@ image::features/my_account/my_data.png[My data]
 
 Um die Daten anzufordern:
 
-. Klicken Sie in "Daten anfordern"
+. Klicken Sie auf "Daten anfordern"
 . Warten Sie ein paar Minuten, damit die Dateien generiert werden. Es könnte davon abhängen, wie viele Vorschläge, Kommentare, usw. Sie gemacht haben
 . Gehen Sie zu Ihrem E-Mail-Konto und finden Sie die empfangene E-Mail
-. Klicken Sie in "Download"
-. Mit einer Zip-Software für Support öffnen
+. Klicken Sie auf "Download"
+. Mit einer entsprechenden Zip-Software öffnen
 . Geben Sie das Passwort ein, das Sie in der E-Mail erhalten haben
-. Inhalt entpacken oder entpacken
+. Inhalt entpacken oder extrahieren
 
 image:features/my_account/my_data_email.png[Meine Daten]
 
@@ -170,4 +170,4 @@ image:features/my_account/delete_my_account_confirm.png[Account löschen bestät
 Nachdem das Konto gelöscht wurde, sind die Beiträge (wie Kommentare, Vorschläge usw.) weiterhin sichtbar, aber alle Angaben zur Urheberschaft werden anonymisiert
 und einer Urheberschaft namens "Gelöschte teilnehmende Person" zugewiesen.
 
-image:features/my_account/delete_my_account_deleted.png[Gelöschter Teilnehmerbeitrag]
+image:features/my_account/delete_my_account_deleted.png[Beitrag einer gelöschten teilnehmenden Person]
