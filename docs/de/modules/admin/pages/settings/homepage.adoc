@@ -40,7 +40,7 @@ auf Ihrer Instanz erstellt haben.
 
 image::settings/homepage_global_menu.png[Global menu in Homepage frontend content block]
 
-=== Sub-Helden-Banner
+=== Sub-Hero-Banner
 
 Der Inhaltsblock Banner unter dem Hauptbild zeigt den Beschreibungstext der Instanz an, der unter
 xref:admin:settings/appearance.adoc#_edit_homepage_appearance[Erscheinungsbild] konfiguriert wurde.
@@ -54,7 +54,7 @@ xref:admin:settings/appearance.adoc#_highlighted_content_banner[Erscheinungsbild
 
 image::settings/homepage_highlighted_content_banner.png[Highlighted content banner in Homepage content block]
 
-=== Fußzeilen-Sub-Helden-Banner
+=== Fusszeilen-Sub-Hero-Banner
 
 Der Inhaltsblock Fusszeilen-Banner unter dem Hauptbild zeigt einen Standardtext an, der nicht konfiguriert werden kann.
 Verschieben Sie ihn zu Inaktiv oder löschen Sie ihn, wenn er nicht auf der Startseite angezeigt werden soll.
@@ -68,7 +68,7 @@ Hilfe-xref:admin:pages.adoc[Seiten] weiterleitet.
 
 image::settings/homepage_how_to_participate.png[How to participate in Homepage content block]
 
-=== Anstehende Meetings
+=== Anstehende Veranstaltungen
 
 Der Inhaltsblock Bevorstehende Veranstaltungen zeigt Folgendes an:
 
@@ -99,7 +99,7 @@ Sie können die maximale Anzahl anzuzeigender Prozesse konfigurieren, indem Sie 
 
 image::settings/homepage_highlighted_processes.png[Highlighted processes in Homepage content block]
 
-=== Hervorgehobene Assemblies
+=== Hervorgehobene Versammlungen
 
 Der Inhaltsblock Hervorgehobene Versammlungen zeigt ein Raster von Versammlungen auf der Startseite an.
 Sie können die maximale Anzahl anzuzeigender Versammlungen konfigurieren, indem Sie auf die Schaltfläche "Bearbeiten" im Inhaltsblock klicken (6, 9 oder 10).
@@ -132,7 +132,7 @@ image::settings/homepage_organization_statistics.png[Organizations statistics in
 
 Der Inhaltsblock Organisationskennzahlen zeigt die Entwicklung der Beteiligung auf Ihrer Instanz an.
 
-NOTE: Sie suchen nach technischen Möglichkeiten, um diese Funktion zu aktivieren? Gehe zu xref:develop:metrics.adoc[Metriken in Entwickleranleitung]
+NOTE: Sie suchen nach technischen Möglichkeiten, um diese Funktion zu aktivieren? Gehen Sie zu xref:develop:metrics.adoc[Metriken in Entwickleranleitung]
 
 image::settings/homepage_organization_metrics.png[Organization metrics in Homepage content block]
 
