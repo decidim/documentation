@@ -17,15 +17,15 @@ Um eine Umfrage-Komponente zu erstellen, gehen Sie zunächst zum xref:admin:spac
 
 image::components/surveys/component_survey.png[Add Survey component button]
 
-Then:
+Dann:
 
-. Click on the "Components" item in the secondary menu
-. Click the "Add component" button
+. Klicken Sie im Sekundärmenü auf den Punkt "Komponenten"
+. Klicken Sie auf die Schaltfläche "Komponente hinzufügen"
 . Wählen Sie "Umfrage"
-. Fill the component creation form
+. Füllen Sie das Formular zur Komponentenerstellung aus
 
-You can still update this form and the configuration after creating the component, by clicking the
-image:icons/action_configure.png[Configure icon] Configure icon in the components list.
+Sie können dieses Formular und die Konfiguration auch nach der Erstellung der Komponente noch aktualisieren, indem Sie in der Komponentenliste auf das
+image:icons/action_configure.png[Symbol: Konfigurieren] Konfigurieren-Symbol klicken.
 
 image::components/surveys/component.png[Add component form]
 
@@ -36,13 +36,13 @@ image::components/surveys/component.png[Add component form]
 
 |Name
 |Benötigt
-|Title of this component.
+|Titel dieser Komponente.
 
-|Bestellposition
+|Reihenfolge
 |Optional
-|The order of the component in relation with the other components. Eine niedrigere Zahl bedeutet eine höhere Priorität.
-For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0"
-then "component b" is first when ordering.
+|Die Reihenfolge der Komponente im Verhältnis zu den anderen Komponenten. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+Wenn Sie beispielsweise zwei Komponenten haben, "Komponente a" mit der Gewichtung "10" und "Komponente b" mit der Gewichtung "0",
+steht "Komponente b" bei der Sortierung an erster Stelle.
 |===
 
 .Komponente hinzufügen: Umfrageformular - Globale Einstellungen
@@ -56,7 +56,7 @@ then "component b" is first when ordering.
 
 |Bereich
 |Optional
-|Which xref:admin:settings/scopes.adoc[Scopes] does this component belongs to.
+|Zu welchen xref:admin:settings/scopes.adoc[Themen] diese Komponente gehört.
 
 |Antworten akzeptiert von
 |Optional
@@ -282,6 +282,6 @@ extern erfolgen.
 
 == Beispiele
 
-Some examples of where this component is used:
+Einige Beispiele, wo diese Komponente verwendet wird:
 
 * https://consultation.quebec.ca/processes/donneesquebec/f/82/[Data Quebec: an der Verbesserung im Rahmen der Québec-Konsultationen mitwirken]
