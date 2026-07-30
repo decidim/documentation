@@ -65,7 +65,7 @@ On the projects list in the administration panel, administrators can see:
 * *Selected*: If the project is selected for implementation at the end of the process.
 * *Map*: Location of the project when it has an address.
 
-You can filter and sort this list by clicking the "Filter" button and the columns headers.
+Sie können diese Liste filtern und sortieren, indem Sie auf die Schaltfläche "Filter" und die Spaltenüberschriften klicken.
 You can also search for projects by their ID and title in the search bar.
 
 image::components/budgets/projects_list_filter.png[Projects list filter]
@@ -77,19 +77,19 @@ image::components/budgets/projects_list_filter.png[Projects list filter]
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
 |Formular für ein Projekt bearbeiten.
 
-|image:icons/action_folder.png[Folders icon]
+|image:icons/action_folder.png[Symbol: Ordner]
 |Ordner
 |Zur Klassifizierung von Anhängen.
 
-|image:icons/action_attachments.png[Attachments icon]
+|image:icons/action_attachments.png[Symbol: Anhänge]
 |Anhänge
 |To add documents and images related to the project.
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
 |Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
 
@@ -97,7 +97,7 @@ image::components/budgets/projects_list_filter.png[Projects list filter]
 |Berechtigungen
 |To handle the authorizations needed to vote or comment on this specific project.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
 |Dieses Projekt löschen.
 |===
