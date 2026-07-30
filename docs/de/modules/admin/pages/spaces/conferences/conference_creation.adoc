@@ -1,13 +1,13 @@
-= Conference creation
+= Konferenzerstellung
 
 == Understand the basics
 
-Conferences allows administrators to configure components in the context of an event, in general in articulation with a program.
-To start creating a conference, when on the conferences list, click the "New conference" button at the top right of the page.
+Konferenzen ermöglichen es Admins, Komponenten im Kontext einer Veranstaltung zu konfigurieren, in der Regel in Verbindung mit einem Programm.
+Um mit der Erstellung einer Konferenz zu beginnen, klicken Sie in der Konferenzliste oben rechts auf der Seite auf die Schaltfläche "Neue Konferenz".
 
-The conference creation form is divided into different sections that are detailed in the sections below.
+Das Formular zur Konferenzerstellung ist in verschiedene Abschnitte unterteilt, die im Folgenden näher beschrieben werden.
 
-Conferences landing page is built by default and is not yet configurable.
+Die Startseite der Konferenzen wird standardmässig erstellt und ist noch nicht konfigurierbar.
 
 == Konfiguration
 
@@ -15,22 +15,22 @@ Conferences landing page is built by default and is not yet configurable.
 
 image::spaces/conferences/conference_new_form_general_info.png[New conference form general info section]
 
-.New conference form: General information
+.Formular für neue Konferenz: Allgemeine Informationen
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Titel
 |Benötigt
-|The title of this conference.
+|Der Titel dieser Konferenz.
 
 |Slogan
 |Benötigt
 |Ein Untertitel für diese Konferenz.
 
-|Bestellposition
+|Reihenfolge
 |Benötigt
-|Determines the order of the conference when displayed in the conferences index or homepage.
+|Bestimmt die Reihenfolge der Konferenz bei der Anzeige im Konferenzverzeichnis oder auf der Startseite.
 
 |URL Slug
 |Benötigt
@@ -43,75 +43,75 @@ mit einem Buchstaben beginnen.
 
 |Hervorgehoben
 |Optional
-|Check if you want the conference to have more visibility in the conferences public list and the "Highlighted conferences" content block
-in the xref:admin:settings/homepage.adoc[Homepage] configuration.
+|Aktivieren Sie dies, wenn die Konferenz mehr Sichtbarkeit in der öffentlichen Konferenzliste und im Inhaltsblock "Hervorgehobene Konferenzen"
+in der Konfiguration der xref:admin:settings/homepage.adoc[Startseite] haben soll.
 
 |Kurze Beschreibung
 |Benötigt
-|A short explanation of what's the conference about.
+|Eine kurze Erklärung, worum es bei der Konferenz geht.
 
 |Beschreibung
 |Benötigt
-|A long explanation of what's the conference about.
+|Eine ausführliche Erklärung, worum es bei der Konferenz geht.
 
 |Ziele
 |Optional
-|The objectives or goals for this conference.
+|Die Ziele dieser Konferenz.
 
 |Standort
 |Optional
-|Where the conference takes place.
+|Wo die Konferenz stattfindet.
 |===
 
 === Bilder
 
 image::spaces/conferences/conference_new_form_images.png[New conference form images section]
 
-.New conference form: Images
+.Formular für neue Konferenz: Bilder
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Home-Bild
 |Optional
-|Image used in presentation cards of this conference. Anleitung für Datei: Muss ein Bild oder ein Dokument sein.
+|Bild, das auf den Präsentationskarten dieser Konferenz verwendet wird. Anleitung für Datei: Muss ein Bild oder ein Dokument sein.
 Für Bilder verwenden Sie vorzugsweise Landschaftsbilder, der Dienst bewirtschaftet das Bild. Maximale Dateigrösse: 10 MB
 
 |Bannerbild
 |Optional
-|Image used in the header of the conference. Preferably a landscape image that does not have any text. Der Dienst bewirkt
-das Bild. Maximum file size: 10 MB.
+|Bild, das im Kopfbereich der Konferenz verwendet wird. Vorzugsweise ein Querformatbild ohne Text. Der Dienst bewirkt
+das Bild. Maximale Dateigrösse: 10 MB.
 |===
 
 === Filter
 
-This section determines the filters available in the conference, in the different components.
+Dieser Abschnitt bestimmt die in der Konferenz verfügbaren Filter in den verschiedenen Komponenten.
 Filter können anschliessend in jeder Komponente aktiviert und konfiguriert werden.
 
 image::spaces/conferences/conference_new_form_filters.png[New conference form filters section]
 
-.New conference form: Filters
+.Formular für neue Konferenz: Filter
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Bereiche aktiviert
 |Optional
-|Check if you want to have Scopes filtering in this conference.
+|Aktivieren Sie dies, wenn Sie die Filterung nach Themen in dieser Konferenz haben möchten.
 
 |Bereich
 |Optional
-|Which xref:admin:settings/scopes.adoc[Scope] does this conference belongs to.
+|Zu welchem xref:admin:settings/scopes.adoc[Thema] diese Konferenz gehört.
 
 |Statistiken anzeigen
 |Optional
-|If you want statistics to be displayed on the conference landing page.
+|Ob Statistiken auf der Startseite der Konferenz angezeigt werden sollen.
 |===
 
 === Dauer
 
-This section allows to provide information about the process start and end dates.
-It can be enabled on the landing page with the "Phase & duration" landing page block.
+Dieser Abschnitt ermöglicht es, Informationen zu den Start- und Enddaten der Konferenz anzugeben.
+Es kann auf der Startseite mit dem Startseiten-Block "Phase & Dauer" aktiviert werden.
 
 image::spaces/conferences/conference_new_form_duration.png[New conference form duration section]
 
@@ -122,20 +122,20 @@ image::spaces/conferences/conference_new_form_duration.png[New conference form d
 
 |Startdatum
 |Optional
-|When this conference starts. Sie haben ein Kalender-Widget zum Auswählen des Tages. Expected format: dd/mm/yyyy.
+|Wann diese Konferenz beginnt. Sie haben ein Kalender-Widget zum Auswählen des Tages. Erwartetes Format: tt/mm/jjjj.
 
 |Enddatum
 |Optional
-|When this conference ends. Sie haben ein Kalender-Widget zum Auswählen des Tages. Expected format: dd/mm/yyyy.
+|Wann diese Konferenz endet. Sie haben ein Kalender-Widget zum Auswählen des Tages. Erwartetes Format: tt/mm/jjjj.
 |===
 
 === Anmeldungen
 
-This section is allows you to enable registrations and set slots and registration terms for your conference.
+In diesem Abschnitt können Sie Anmeldungen aktivieren und Plätze sowie Anmeldebedingungen für Ihre Konferenz festlegen.
 
 image::spaces/conferences/conference_new_form_registrations.png[New conference form Registrations sections]
 
-.New conference form: Registrations
+.Formular für neue Konferenz: Anmeldungen
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
@@ -149,34 +149,34 @@ image::spaces/conferences/conference_new_form_registrations.png[New conference f
 |Lassen Sie es auf 0 wenn Sie unbegrenzte Slots zur Verfügung haben.
 
 |Registrierungsbedingungen
-|Required if "Registrations enabled" is checked.
-|The terms of service or conditions that a participant must accept for registering to the conference.
+|Erforderlich, wenn "Anmeldung aktiviert" angekreuzt ist.
+|Die Nutzungsbedingungen, die Teilnehmende für die Anmeldung zur Konferenz akzeptieren müssen.
 |===
 
-=== Related spaces
+=== Ähnliche Bereiche
 
-This section allows to create relations between processes, assemblies, and conferences.
+Dieser Abschnitt ermöglicht es, Beziehungen zwischen Prozessen, Versammlungen und Konferenzen herzustellen.
 
 image::spaces/conferences/conferences_new_form_related_processes.png[New conference form Related spaces section]
 
-.New conference form: Related spaces
+.Formular für neue Konferenz: Ähnliche Bereiche
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Zugehörige partizipative Prozesse
 |Optional
-|Select participatory processes related to the conference. Use the *CTRL* or *CMD* function to select more than one option.
+|Wählen Sie Beteiligungsprozesse aus, die mit der Konferenz verwandt sind. Verwenden Sie die Funktion *STRG* oder *CMD*, um mehr als eine Option auszuwählen.
 
-|Related assemblies
+|Ähnliche Versammlungen
 |Optional
-|Select assemblies related to the conference. Use the *CTRL* or *CMD* function to select more than one option.
+|Wählen Sie Versammlungen aus, die mit der Konferenz verwandt sind. Verwenden Sie die Funktion *STRG* oder *CMD*, um mehr als eine Option auszuwählen.
 |===
 
 === Erstelle das Programm
 
 Um das Programm der Konferenz zu erstellen, müssen Sie ein neues xref:components/meetings erstellen. doc[Meeting component] mit den
-Daten und Zeiten der verschiedenen Vorträge, Workshops, Sessions, etc. After publishing the meetings, the program button
-is visible in the landing page.
+Daten und Zeiten der verschiedenen Vorträge, Workshops, Sessions, etc. Nach der Veröffentlichung der Veranstaltungen ist die Schaltfläche für das Programm
+auf der Startseite sichtbar.
 
 image::spaces/conferences/program_frontend.png[Conferences program frontend]
