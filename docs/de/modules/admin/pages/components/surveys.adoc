@@ -1,6 +1,6 @@
 = Umfrage
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Die Umfrage-Komponente ermöglicht es Teilnehmenden, Fragebögen zu beantworten. Dies ist nützlich, wenn eine Organisation privates Feedback von Teilnehmenden erhalten möchte. Es erlaubt eine Reihe von Fragen mit mehreren Arten von Antworten zu definieren.
 
@@ -50,11 +50,11 @@ steht "Komponente b" bei der Sortierung an erster Stelle.
 |===
 |Feld |Typ |Beschreibung
 
-|Bereiche aktiviert
+|Themen aktiviert
 |Optional
-|Aktivieren, wenn die Bereichsfilterung in dieser Komponente erfolgen soll.
+|Aktivieren, wenn die Themenfilterung in dieser Komponente erfolgen soll.
 
-|Bereich
+|Thema
 |Optional
 |Zu welchen xref:admin:settings/scopes.adoc[Themen] diese Komponente gehört.
 
@@ -87,8 +87,8 @@ steht "Komponente b" bei der Sortierung an erster Stelle.
 |Nicht registrierten Benutzern erlauben, die Umfrage zu beantworten
 |Optional
 |Wenn aktiviert, ist keine Anmeldung erforderlich, um die Umfrage zu beantworten. Dies kann zu ungenauen oder unzuverlässigen Daten führen und Sie anfälliger für
-automatisierte Angriffe machen. Bitte mit Vorsicht verwenden. Beachten Sie, dass diese Option nur eine Antwort von Browser-Session zulässt,
-, aber die Teilnehmer können die Private Navigation Option verwenden und mehrere Antworten mit demselben Gerät machen.
+automatisierte Angriffe machen. Bitte mit Vorsicht verwenden. Beachten Sie, dass diese Option nur eine Antwort pro Browser-Sitzung zulässt,
+aber die Teilnehmenden können die Private-Navigation-Option verwenden und mehrere Antworten mit demselben Gerät machen.
 
 |Mitteilung
 |Optional
@@ -97,7 +97,7 @@ automatisierte Angriffe machen. Bitte mit Vorsicht verwenden. Beachten Sie, dass
 
 === Eine Umfrage erstellen
 
-NOTE: Haben Sie wiederholende Umfrage? Zum Beispiel das gleiche Feedback-Formular für jeden Prozess? Sie können eine Umfrage als Vorlage anlegen, die kopiert wird, sodass Sie nicht jedes Mal dieselbe Umfrage manuell konfigurieren müssen. Weitere Informationen finden Sie
+NOTE: Haben Sie wiederholende Umfragen? Zum Beispiel das gleiche Feedback-Formular für jeden Prozess? Sie können eine Umfrage als Vorlage anlegen, die kopiert wird, sodass Sie nicht jedes Mal dieselbe Umfrage manuell konfigurieren müssen. Weitere Informationen finden Sie
 unter xref:admin:templates/questionnaires.adoc[Fragebogenvorlagen].
 
 image::components/surveys/edit_questionnaire.png[Choose template form]
@@ -144,24 +144,24 @@ image::components/surveys/question_form.png[Question form on survey creation]
 
 |Anweisung
 |Benötigt
-|Die Frage selbst. Zum Beispiel "Was ist deine Alterskategorie?"
+|Die Frage selbst. Zum Beispiel "Was ist Ihre Alterskategorie?"
 
 |Beschreibung
 |Optional
 |Zusätzliche Informationen zur Frage, falls erforderlich.
 
-|Mandatory
+|Pflichtfeld
 |Optional
 |Aktivieren, wenn Teilnehmende diese Frage beantworten müssen, um die Umfrage abzuschliessen.
 
 |Zeichenlimit
 |Optional
-|Die maximale Anzahl Zeichen, die die Antwort haben darf. Auf 0 lassen, wenn kein Limit. Kompatibel mit Kurz- und Langzeitfragetypen.
+|Die maximale Anzahl Zeichen, die die Antwort haben darf. Auf 0 lassen, wenn kein Limit. Kompatibel mit den Fragetypen Kurze Antwort und Lange Antwort.
 
 |Typ
 |Benötigt
-|Eine der folgenden Antworten: Kurze Antwort, lange Antwort, Single Option, Multiple Option, Sortierung, Dateien, Matrix (Single option)
-oder Matrix (Multiple option). Siehe xref:_question_types[Question types] für weitere Informationen.
+|Eine der folgenden Optionen: Kurze Antwort, Lange Antwort, Einzelne Option, Mehrere Optionen, Sortierung, Dateien, Matrix (Einzeloption)
+oder Matrix (mehrere Optionen). Siehe xref:_question_types[Fragetypen] für weitere Informationen.
 |===
 
 image::components/surveys/question_form_backend.png[]
@@ -181,40 +181,40 @@ image::components/surveys/question_form_frontend.png[]
 |Kompatibel mit der Überprüfung des "Zeichenlimits"
 
 |Lange Antwort
-|image:components/surveys/type_long_answer_frontend.png[Long answer type - frontend,link=../_images/components/surveys/type_long_answer_frontend.png]
-|image:components/surveys/type_long_answer_backend.png[Long answer type - backend,link=../_images/components/surveys/type_long_answer_backend.png]
+|image:components/surveys/type_long_answer_frontend.png[Langer Antworttyp - frontend,link=../_images/components/surveys/type_long_answer_frontend.png]
+|image:components/surveys/type_long_answer_backend.png[Langer Antworttyp - backend,link=../_images/components/surveys/type_long_answer_backend.png]
 |Kompatibel mit der Überprüfung des "Zeichenlimits"
 
 |Einzelne Option
-|image:components/surveys/type_single_option_frontend.png[Single option type - frontend,link=../_images/components/surveys/type_single_option_frontend.png]
-|image:components/surveys/type_single_option_backend.png[Single option type - backend,link=../_images/components/surveys/type_single_option_backend.png]
+|image:components/surveys/type_single_option_frontend.png[Einzeloptionstyp - frontend,link=../_images/components/surveys/type_single_option_frontend.png]
+|image:components/surveys/type_single_option_backend.png[Einzeloptionstyp - backend,link=../_images/components/surveys/type_single_option_backend.png]
 |Teilnehmende müssen mit Radiobuttons eine einzelne Option auswählen. Fügen Sie mindestens 2 Antwortoptionen hinzu.
 Es ist möglich, eine Option "Freier Text" zu definieren, damit Teilnehmende ihre eigene Antwort abgeben können.
 
 |Mehrere Optionen
-|image:components/surveys/type_multiple_option_frontend.png[Multiple option type - frontend,link=../_images/components/surveys/type_multiple_option_frontend.png]
-|image:components/surveys/type_multiple_option_backend.png[Multiple option type - backend,link=../_images/components/surveys/type_multiple_option_backend.png]
+|image:components/surveys/type_multiple_option_frontend.png[Mehrfachoptionstyp - frontend,link=../_images/components/surveys/type_multiple_option_frontend.png]
+|image:components/surveys/type_multiple_option_backend.png[Mehrfachoptionstyp - backend,link=../_images/components/surveys/type_multiple_option_backend.png]
 |Teilnehmende können mit Kontrollkästchen mehrere Optionen auswählen. Fügen Sie mindestens 2 Antwortoptionen hinzu. Es ist möglich, eine Validierung mit der maximalen Anzahl an Auswahlmöglichkeiten
 hinzuzufügen. Es ist möglich, eine Option "Freier Text" zu definieren, damit Teilnehmende ihre eigene Antwort abgeben können.
 
 |Sortieren
 |image:components/surveys/type_sorting_frontend.png[Sortiertyp - frontend,link=../_images/components/surveys/type_sorting_frontend.png]
-|image:components/surveys/type_sorting_backend.png[Sortierart - backend,link=../_images/components/surveys/type_sorting_backend.png]
+|image:components/surveys/type_sorting_backend.png[Sortiertyp - backend,link=../_images/components/surveys/type_sorting_backend.png]
 |Fügen Sie mindestens 2 Antwortoptionen hinzu. Teilnehmende können Antwortoptionen per Drag-and-drop anordnen.
 
 |Dateien
-|image:components/surveys/type_files_frontend.png[Dateien Typ - frontend,link=../_images/components/surveys/type_files_frontend.png]
+|image:components/surveys/type_files_frontend.png[Dateityp - frontend,link=../_images/components/surveys/type_files_frontend.png]
 |image:components/surveys/type_files_backend.png[Dateityp - backend,link=../_images/components/surveys/type_files_backend.png]
 |Teilnehmenden erlauben, Dateien hochzuladen.
 
 |Matrix (Einzeloption)
-|image:components/surveys/type_matrix_single_option_frontend.png[Matrix (Single option) Typ - frontend,link=../_images/components/surveys/type_matrix_single_option_frontend.png]
-|image:components/surveys/type_matrix_single_option_backend.png[Matrix (Single option) Typ - backend,link=../_images/components/surveys/type_matrix_single_option_backend.png]
+|image:components/surveys/type_matrix_single_option_frontend.png[Matrix (Einzeloption) Typ - frontend,link=../_images/components/surveys/type_matrix_single_option_frontend.png]
+|image:components/surveys/type_matrix_single_option_backend.png[Matrix (Einzeloption) Typ - backend,link=../_images/components/surveys/type_matrix_single_option_backend.png]
 |Teilnehmende müssen mit Radiobuttons zwischen Zeilen und Spalten einzelner Optionen wählen.
 
-|Matrix (mehrere Option)
-|image:components/surveys/type_matrix_multiple_option_frontend.png[Matrix (Multiple Option) Typ - frontend,link=../_images/components/surveys/type_matrix_multiple_option_frontend.png]
-|image:components/surveys/type_matrix_multiple_option_backend.png[Matrix (Multiple Option) Typ - backend,link=../_images/components/surveys/type_matrix_multiple_option_backend.png]
+|Matrix (mehrere Optionen)
+|image:components/surveys/type_matrix_multiple_option_frontend.png[Matrix (mehrere Optionen) Typ - frontend,link=../_images/components/surveys/type_matrix_multiple_option_frontend.png]
+|image:components/surveys/type_matrix_multiple_option_backend.png[Matrix (mehrere Optionen) Typ - backend,link=../_images/components/surveys/type_matrix_multiple_option_backend.png]
 |Teilnehmende müssen mit Kontrollkästchen zwischen Zeilen und Spalten mehrerer Optionen wählen.
 |===
 
