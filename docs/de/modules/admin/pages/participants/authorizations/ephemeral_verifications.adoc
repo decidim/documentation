@@ -1,81 +1,81 @@
-= Ephemeral verifications
+= Temporäre Verifizierungen
 
 == Understand the basics
 
-In Decidim, there are mainly two types of participants:
+In Decidim gibt es hauptsächlich zwei Arten von Teilnehmenden:
 
-- One-time participants: Users who access the platform for a single action, such as voting in participatory budgets, and don't return.
-- Recurrent participants: Users who engage regularly in different participatory processes.
+- Einmalige Teilnehmende: Nutzende, die die Plattform für eine einzelne Aktion nutzen, wie z. B. das Abstimmen bei partizipativen Budgets, und danach nicht wiederkehren.
+- Wiederkehrende Teilnehmende: Nutzende, die sich regelmässig an verschiedenen Beteiligungsprozessen beteiligen.
 
-For one-time participants, the registration and verification process can be a barrier, leading to incomplete participation. To address this, Decidim introduces the Ephemeral Verification Method, allowing users to verify their identity and participate without registering an account.
+Für einmalige Teilnehmende können die Registrierung und der Verifizierungsprozess eine Hürde darstellen, die zu unvollständiger Teilnahme führt. Um dem entgegenzuwirken, führt Decidim die temporäre Verifizierungsmethode ein, mit der Nutzende ihre Identität verifizieren und teilnehmen können, ohne ein Konto zu registrieren.
 
-The Ephemeral Verification Method is designed to streamline participation for one-time users by enabling direct verification without requiring account creation.
+Die temporäre Verifizierungsmethode wurde entwickelt, um die Teilnahme für einmalige Nutzende zu vereinfachen, indem eine direkte Verifizierung ohne Kontoerstellung ermöglicht wird.
 
-NOTE: This feature is intended for limited duration during a specific participatory process, such as a voting phase of participatory budgeting.
+NOTE: Diese Funktion ist für eine begrenzte Dauer während eines bestimmten Beteiligungsprozesses gedacht, z. B. während einer Abstimmungsphase eines partizipativen Budgets.
 
-=== How does it works?
+=== Wie funktioniert es?
 
-This feature allows participants to participate without registering on the platform, by verifying their identity with the system chosen by the organisation. The key features are:
+Diese Funktion ermöglicht es Teilnehmenden, ohne Registrierung auf der Plattform teilzunehmen, indem sie ihre Identität mit dem von der Organisation gewählten System verifizieren. Die wichtigsten Merkmale sind:
 
-- **Direct Verification Without Registration:** Participants can verify themselves and complete their action without signing up.
-- **Configurable at a component level:** Administrators can enable or disable ephemeral verification for specific components, as all the authorizations methods works.
-- **Ephemeral session**: A temporary session is opened when participants are verified. This session will only allow participants to complete actions in the specific component. If the ephemeral user wants to quit the component, the session will be closed.
-- **Focus mode:** A focus mode is enabled when doing the restricted action by ephemeral, so we keep the participant focus on the main action.
-- **Link to an Existing Verification Method:** Ephemeral verification must be linked to a pre-existing verification method (for example an organizational census).
-- **Revoking Prior Verifications:** When enabling ephemeral verification, all previous verifications are revoked to prevent verification conflicts.
-- **Retrieving the ephemeral session**. So ephemeral participants can verify again and logging with the ephemeral session. So they can see their votes and modify it.
+- **Direkte Verifizierung ohne Registrierung:** Teilnehmende können sich verifizieren und ihre Aktion abschliessen, ohne sich anzumelden.
+- **Auf Komponentenebene konfigurierbar:** Admins können die temporäre Verifizierung für bestimmte Komponenten aktivieren oder deaktivieren, wie bei allen Verifizierungsmethoden.
+- **Temporäre Sitzung**: Wenn Teilnehmende verifiziert werden, wird eine temporäre Sitzung eröffnet. Diese Sitzung erlaubt es Teilnehmenden nur, Aktionen in der jeweiligen Komponente abzuschliessen. Wenn die temporär verifizierte Person die Komponente verlassen möchte, wird die Sitzung geschlossen.
+- **Fokusmodus:** Beim Ausführen der eingeschränkten Aktion über die temporäre Verifizierung wird ein Fokusmodus aktiviert, damit die Aufmerksamkeit der teilnehmenden Person auf die Hauptaktion gerichtet bleibt.
+- **Verknüpfung mit einer bestehenden Verifizierungsmethode:** Die temporäre Verifizierung muss mit einer bereits bestehenden Verifizierungsmethode verknüpft werden (zum Beispiel einer Zählung der Organisation).
+- **Widerruf früherer Verifizierungen:** Beim Aktivieren der temporären Verifizierung werden alle vorherigen Verifizierungen widerrufen, um Verifizierungskonflikte zu vermeiden.
+- **Abrufen der temporären Sitzung**. So können temporär verifizierte Teilnehmende sich erneut verifizieren und sich mit der temporären Sitzung anmelden. So können sie ihre Stimmen einsehen und ändern.
 
 == Konfiguration
 
-To enable Ephemeral Verification you need to follow these steps:
+Um die temporäre Verifizierung zu aktivieren, gehen Sie wie folgt vor:
 
-1. Access to the system panel.
-1. Enable the ephemeral-verification method.
-1. Link it to an existing verification method (for example organization census).
-1. Go to the admin dashboard.
-1. Enable the ephemeral-verification permissions in a component.
-1. Confirm the action, which will revoke all current verifications.
-1. Great! You have enabled the ephemeral verification for a specific component.
+1. Auf das Systempanel zugreifen.
+1. Die Methode der temporären Verifizierung aktivieren.
+1. Sie mit einer bestehenden Verifizierungsmethode verknüpfen (zum Beispiel einer Zählung der Organisation).
+1. Zum Admin-Dashboard gehen.
+1. Die Berechtigungen für die temporäre Verifizierung in einer Komponente aktivieren.
+1. Die Aktion bestätigen, wodurch alle aktuellen Verifizierungen widerrufen werden.
+1. Grossartig! Sie haben die temporäre Verifizierung für eine bestimmte Komponente aktiviert.
 
 == Beispiele
 
-To better understand how this feature works, we explain the different flows and edge-cases as follows:
+Um besser zu verstehen, wie diese Funktion funktioniert, erklären wir im Folgenden die verschiedenen Abläufe und Sonderfälle:
 
-=== Flow 1: Unregistered visitant
+=== Ablauf 1: Nicht registrierte besuchende Person
 
-1. As an unregistered visitant, I click on the restricted action
-1. Then, I’m Prompted with verification form and I filled it with my data
-1. So, I’m successfully verified
-1. Then, a temporary session is open
-1. And I gain access to the restricted action
-1. When I completed the task (i.e. voting in a participatory budget). Then I can quit the focus mode and the temporary session will be closed.
+1. Als nicht registrierte besuchende Person klicke ich auf die eingeschränkte Aktion
+1. Daraufhin wird mir das Verifizierungsformular angezeigt, das ich mit meinen Daten ausfülle
+1. So werde ich erfolgreich verifiziert
+1. Anschliessend wird eine temporäre Sitzung eröffnet
+1. Und ich erhalte Zugang zur eingeschränkten Aktion
+1. Wenn ich die Aufgabe abgeschlossen habe (z. B. Abstimmung bei einem partizipativen Budget). Dann kann ich den Fokusmodus verlassen und die temporäre Sitzung wird geschlossen.
 
-=== Flow 2: Registered participant with logged-in session
+=== Ablauf 2: Registrierte teilnehmende Person mit angemeldeter Sitzung
 
-1. As a registered participant logged in, I click on the restricted action
-1. Then, I'm prompted with the verification form and I filled it with my data
-1. So, I’m successfully verified
-1. Then I gain access to the restricted action
-1. Then, the verification is saved in my profile
+1. Als angemeldete registrierte teilnehmende Person klicke ich auf die eingeschränkte Aktion
+1. Daraufhin wird mir das Verifizierungsformular angezeigt, das ich mit meinen Daten ausfülle
+1. So werde ich erfolgreich verifiziert
+1. Dann erhalte ich Zugang zur eingeschränkten Aktion
+1. Anschliessend wird die Verifizierung in meinem Profil gespeichert
 
-=== Edge cases
+=== Sonderfälle
 
-==== Flow 3: Preventing Verification Conflicts
+==== Ablauf 3: Verifizierungskonflikte vermeiden
 
-1. As a visitor, I attempt to verify using the data of a registered participant who has already been verified.
-1. The system detects a verification conflict.
-1. Then, I’m prevented from proceeding with the verification.
+1. Als besuchende Person versuche ich, mich mit den Daten einer bereits verifizierten registrierten teilnehmenden Person zu verifizieren.
+1. Das System erkennt einen Verifizierungskonflikt.
+1. Daraufhin werde ich daran gehindert, die Verifizierung fortzusetzen.
 
-==== Flow 4: Merging Ephemeral and Registered Accounts
+==== Ablauf 4: Zusammenführen von temporären und registrierten Konten
 
-1. As an ephemeral user, who has completed the voting process. And closed their ephemeral session.
-1. Register on the platform.
-1. Attempt to verify yourself using the same personal information.
-1. The system retrieves and merges your ephemeral user data with your new registered account.
-1. You can now view and edit your votes.
+1. Als temporär verifizierte Person, die den Abstimmungsprozess abgeschlossen hat. Und ihre temporäre Sitzung geschlossen hat.
+1. Auf der Plattform registrieren.
+1. Versuchen, sich mit denselben persönlichen Daten zu verifizieren.
+1. Das System ruft Ihre temporären Nutzendendaten ab und führt sie mit Ihrem neuen registrierten Konto zusammen.
+1. Sie können nun Ihre Stimmen einsehen und bearbeiten.
 
-=== How does the ephemeral session work?
+=== Wie funktioniert die temporäre Sitzung?
 
-1. This session will only allow you to make actions in the specific component. If the ephemeral user wants to quit the component, the session will be closed.
-1. The session will be closed after a time of inactivity.
-1. The session can be retrieved. That means, that if I try to verify again using the same data, then my session will be retrieved, and I will be able to view and edit my votes.
+1. Diese Sitzung erlaubt es Ihnen nur, Aktionen in der jeweiligen Komponente auszuführen. Wenn die temporär verifizierte Person die Komponente verlassen möchte, wird die Sitzung geschlossen.
+1. Die Sitzung wird nach einer gewissen Zeit der Inaktivität geschlossen.
+1. Die Sitzung kann wiederhergestellt werden. Das bedeutet, dass wenn Sie erneut versuchen, sich mit denselben Daten zu verifizieren, Ihre Sitzung wiederhergestellt wird und Sie Ihre Stimmen einsehen und bearbeiten können.
