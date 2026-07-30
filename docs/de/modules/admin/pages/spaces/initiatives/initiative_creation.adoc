@@ -1,101 +1,101 @@
-= Initiative creation
+= Initiativenerstellung
 
 == Understand the basics
 
-Once you configured the xref:admin:spaces/initiatives/types.adoc[initiatives types and scopes], you should be able to access the initiative space in the user interface.
+Sobald Sie die xref:admin:spaces/initiatives/types.adoc[Initiativentypen und -bereiche] konfiguriert haben, sollten Sie in der Lage sein, auf den Initiativenraum in der Benutzeroberfläche zuzugreifen.
 
 image::spaces/initiatives/initiatives_index_front.png[Initiatives index in front without initiatives]
 
-Participants are now able to create initiatives.
-Depending on how the initiatives module is configured in the initializer or how the initiative type is configured, it may need to ask for an authorization.
+Teilnehmende können nun Initiativen erstellen.
+Je nachdem, wie das Initiativenmodul im Initializer oder wie der Initiativentyp konfiguriert ist, kann eine Autorisierung erforderlich sein.
 
 == Konfiguration
 
-To start creating an initiative, the participant must click in the "New initiative" button.
-Depending on the configuration of your instance, they have to pass different steps before being able to send their initiative to technical validation, where it gets reviewed
-by an administrator before being published and starting collecting signatures.
+Um mit der Erstellung einer Initiative zu beginnen, muss die teilnehmende Person auf die Schaltfläche "Neue Initiative" klicken.
+Je nach Konfiguration Ihrer Instanz müssen sie verschiedene Schritte durchlaufen, bevor sie ihre Initiative zur technischen Validierung einreichen können, wo sie von einem Admin
+geprüft wird, bevor sie veröffentlicht wird und mit der Unterschriftensammlung beginnt.
 
-=== Initiative type choice
+=== Wahl des Initiativentyps
 
-If the instance has multiple initiative types, then the first step is the choice of the initiative type.
+Wenn die Instanz mehrere Initiativentypen hat, besteht der erste Schritt in der Wahl des Initiativentyps.
 
 image::spaces/initiatives/initiative_new_step_type.png[Initiative creation: initiative type choice]
 
-If there is only one initiative type configured, this step is automatically skipped.
+Wenn nur ein Initiativentyp konfiguriert ist, wird dieser Schritt automatisch übersprungen.
 
-=== Content creation
+=== Inhaltserstellung
 
 image::spaces/initiatives/initiative_new_step_content.png[Initiative creation: initiative content creation]
 
-.New initiative form
+.Formular für neue Initiative
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Titel
 |Benötigt
-|The title of the initiative.
+|Der Titel der Initiative.
 
 |Beschreibung
 |Benötigt
-|The content of the initiative.
+|Der Inhalt der Initiative.
 
 |Hashtag
 |Optional
-|A hashtag for the initiative, to communicate about it on the platform and social media.
+|Ein Hashtag für die Initiative, um darüber auf der Plattform und in den sozialen Medien zu kommunizieren.
 
-|Signature collection type
+|Art der Unterschriftensammlung
 |Benötigt
-|Depends on the configuration of the initiative type.
+|Hängt von der Konfiguration des Initiativentyps ab.
 
 |Bereich
 |Benötigt
-|Depends on the configuration of the initiative type  and type scopes.
+|Hängt von der Konfiguration des Initiativentyps und der Typbereiche ab.
 
 |End of signature collection period
 |Optional
-|If the author wants to change the signature collection end date. Can be configured from the initiative type.
+|Ob die Urheberschaft das Enddatum der Unterschriftensammlung ändern möchte. Kann über den Initiativentyp konfiguriert werden.
 
 |Fläche
 |Optional
-|If the author wants to categorize their initiative.
+|Ob die Urheberschaft ihre Initiative kategorisieren möchte.
 
-|Add documents
+|Dokumente hinzufügen
 |Optional
-|If the author wants to add attachments to their initiative.
+|Ob die Urheberschaft Anhänge zu ihrer Initiative hinzufügen möchte.
 
-|Add image
+|Bild hinzufügen
 |Optional
-|If the author wants to add an image, that is then displayed on the initiative card in the initiatives list.
+|Ob die Urheberschaft ein Bild hinzufügen möchte, das dann auf der Initiativenkarte in der Initiativenliste angezeigt wird.
 |===
 
-=== Similarity comparison
+=== Ähnlichkeitsvergleich
 
-Can be disabled by your organization implementer.
-Überprüft den Rest der Initiativen, ob es ähnliche Initiativen gibt. If there are, the system shows them before continuing.
-This is a way to avoid duplicates and encourage participants to support other similar initiatives.
+Kann von den Entwickelnden Ihrer Organisation deaktiviert werden.
+Überprüft den Rest der Initiativen, ob es ähnliche Initiativen gibt. Falls es solche gibt, zeigt das System sie an, bevor es fortfährt.
+Dies ist eine Möglichkeit, Duplikate zu vermeiden und Teilnehmende zu ermutigen, andere ähnliche Initiativen zu unterstützen.
 
-=== Promoter committee
+=== Initiativkomitee
 
-If promoter committee is enabled for this initiative type, this step allows participants to understand what they need to do before being able to send their initiative for publication.
+Wenn das Initiativkomitee für diesen Initiativentyp aktiviert ist, ermöglicht dieser Schritt Teilnehmenden zu verstehen, was sie tun müssen, bevor sie ihre Initiative zur Veröffentlichung einreichen können.
 
 image::spaces/initiatives/initiative_new_step_committee.png[Initiative creation: initiative promoting committee]
 
-See the xref:admin:spaces/initiatives/author_manage/committee.adoc[Promoting committee] article for more information.
+Weitere Informationen finden Sie im Artikel xref:admin:spaces/initiatives/author_manage/committee.adoc[Initiativkomitee].
 
-=== Finish
+=== Abschluss
 
-The finish step announces the initiative creation to the participant, and shows them different buttons depending if they still need to find promoting committee members.
+Der Abschlussschritt teilt der teilnehmenden Person die Erstellung der Initiative mit und zeigt ihr je nach Bedarf unterschiedliche Schaltflächen an, falls noch Mitglieder für das Initiativkomitee gefunden werden müssen.
 
 image::spaces/initiatives/initiative_new_step_finish.png[Initiative creation: initiative finish]
 
-If the initiative type doesn't require multiple committee members, participants can directly send their initiative to technical validation.
+Wenn der Initiativentyp nicht mehrere Mitglieder des Initiativkomitees erfordert, können Teilnehmende ihre Initiative direkt zur technischen Validierung einreichen.
 
-NOTE: The initiative won't be publicly visible on the initiatives list until reviewed and published by an administrator.
+NOTE: Die Initiative ist erst dann öffentlich in der Initiativenliste sichtbar, wenn sie von einem Admin geprüft und veröffentlicht wurde.
 
-From this page, participants can:
+Auf dieser Seite können Teilnehmende:
 
-* Go back to the initiatives list
-* Edit their initiative
-* Go to their initiatives
-* Send their initiate to technical validation
+* Zur Initiativenliste zurückkehren
+* Ihre Initiative bearbeiten
+* Zu ihren Initiativen gehen
+* Ihre Initiative zur technischen Validierung einreichen
