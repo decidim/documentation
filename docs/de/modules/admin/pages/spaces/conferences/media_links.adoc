@@ -25,11 +25,11 @@ image::spaces/conferences/media_links_backend.png[Conferences media links]
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
 |To edit this link.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
 |To delete this link.
 |===
@@ -57,7 +57,7 @@ image::spaces/conferences/new_media_link.png[Create a new conferences media link
 |Benötigt
 |Publication date of the link.
 
-|Bestellposition
+|Reihenfolge
 |Optional
 |Which order it has in relation to the other links. Eine niedrigere Zahl bedeutet eine höhere Priorität. For instance, if you have two links, "Link a" with weight "10" and "Link b" with weight "0" then "Link b" is first when ordering.
 |===
