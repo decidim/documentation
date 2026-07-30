@@ -1,6 +1,6 @@
 = Admins des Raums
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Sie können Nutzenden in den verschiedenen Räumen spezifische Berechtigungen erteilen, sodass diese nur Zugriff auf bestimmte Verwaltungsaktionen haben.
 Diese Rollen sind Admins, Moderierende, Mitwirkende und Bewertende.
@@ -11,7 +11,7 @@ Sie können nichts bearbeiten.
 * *Moderierende*: Sie können die gemeldeten Inhalte des Raums sehen und diese verbergen oder wieder einblenden.
 * *Bewertende*: Sie können Vorschläge bewerten, ihnen Antworten geben und ihren Status aktualisieren.
 
-=== How to find it?
+=== Wie findet man sie?
 
 Um die Admins des Raums zu konfigurieren, klicken Sie im entsprechenden Raum auf den Punkt "Prozess-Admins" oder "Versammlungs-Admins".
 
@@ -19,7 +19,7 @@ image::spaces/admins_list.png[Administrators of space]
 
 == Konfiguration
 
-=== Administratoren verwalten
+=== Admins verwalten
 
 Sie finden alle Admins in der Liste im Verwaltungspanel mit:
 
@@ -66,32 +66,32 @@ image:spaces/admins_form.png[Formular für neuen Raum-Admin]
 
 |Rolle
 |Benötigt
-|Welche Rolle dieser Admin im Raum haben soll. Kann jeder von Administrator, Kollaborator, Moderator oder Valuator sein.
+|Welche Rolle dieser Admin im Raum haben soll. Kann jede der Rollen Admin, Mitwirkende, Moderierende oder Bewertende sein.
 |===
 
 === Rollen
 
-==== Administratoren
+==== Admins
 
-Ein Raum-Administrator kann den Raum verwalten und die Raum-Einstellungen ändern. Sie können auch neue Raum-Admins einladen.
+Ein Raum-Admin kann den Raum verwalten und die Raum-Einstellungen ändern. Sie können auch neue Raum-Admins einladen.
 Bei der Verwaltung des Raums sehen sie nur die folgenden Ansichten und Tabs.
 
-image:spaces/admins_role_admin01.png[Process administrators view 01]
+image:spaces/admins_role_admin01.png[Admin-Ansicht des Prozesses 01]
 
-image:spaces/admins_role_admin02.png[Process administrators view 02]
+image:spaces/admins_role_admin02.png[Admin-Ansicht des Prozesses 02]
 
-==== Mitarbeiter
+==== Mitwirkende
 
 Eine mitwirkende Person im Raum kann eine Vorschau des Raums vor der Veröffentlichung ansehen.
 
-image:spaces/admins_role_collaborator.png[Prozesskollaboratorenansicht]
+image:spaces/admins_role_collaborator.png[Ansicht der Mitwirkenden des Prozesses]
 
-==== Moderatoren
+==== Moderierende
 
-Ein Moderator kann den gemeldeten Inhalt des Raumes überprüfen und ihn ausblenden oder enthüllen. Sie können auch
+Moderierende können den gemeldeten Inhalt des Raumes überprüfen und ihn ausblenden oder einblenden. Sie können auch
 auf die gemeldeten Inhalte im globalen Moderationspanel zugreifen, sehen jedoch keine Inhalte, die aus anderen Räumen gemeldet wurden.
 
-image:spaces/admins_role_moderator.png[Prozessmoderatorenansicht]
+image:spaces/admins_role_moderator.png[Ansicht der Moderierenden des Prozesses]
 
 ==== Bewertende
 
@@ -101,4 +101,4 @@ Eine bewertende Person im Raum kann die ihr zugewiesenen Vorschläge des Raums p
 * den Vorschlägen eine Antwort gibt.
 * fügen Sie den Vorschlägen einen monetären Wert hinzu, so dass sie mit der Haushaltskomponente abgestimmt werden können.
 
-image:spaces/admins_role_valuator.png[Prozess-Bewertung ansicht]
+image:spaces/admins_role_valuator.png[Ansicht der Bewertenden des Prozesses]
