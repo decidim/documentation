@@ -127,7 +127,7 @@ einen Kinderbereich, Hörassistenz, Übersetzungen usw. gibt. Sie können mehrer
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
 |Um eine Veranstaltung zu bearbeiten.
 
@@ -135,11 +135,11 @@ einen Kinderbereich, Hörassistenz, Übersetzungen usw. gibt. Sie können mehrer
 |Duplicate
 |Ermöglicht es einem Admin, eine Veranstaltung schnell zu duplizieren.
 
-|image:icons/action_folder.png[Folders icon]
+|image:icons/action_folder.png[Symbol: Ordner]
 |Ordner
 |Zur Klassifizierung von Anhängen.
 
-|image:icons/action_attachments.png[Attachments icon]
+|image:icons/action_attachments.png[Symbol: Anhänge]
 |Anhänge
 |Um Dokumente und Bilder zur Veranstaltung hinzuzufügen.
 
@@ -155,7 +155,7 @@ einen Kinderbereich, Hörassistenz, Übersetzungen usw. gibt. Sie können mehrer
 |xref:admin:components/meetings/polls.adoc[Polls]
 |Um die Umfragen für die Veranstaltung zu verwalten.
 
-|image:icons/action_close.png[Close icon]
+|image:icons/action_close.png[Symbol: Schliessen]
 |xref:admin:components/meetings/close.adoc[Close]
 |Ermöglicht es einem Admin, die Veranstaltung mit dem Protokoll der Diskussion abzuschliessen und zusätzliche Informationen hinzuzufügen.
 
@@ -167,7 +167,7 @@ einen Kinderbereich, Hörassistenz, Übersetzungen usw. gibt. Sie können mehrer
 |Zurückziehen
 |Das Meeting nicht öffentlich anzeigen.
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
 |Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
 
@@ -176,7 +176,7 @@ einen Kinderbereich, Hörassistenz, Übersetzungen usw. gibt. Sie können mehrer
 |Um die Berechtigungen dieses Treffens zu verwalten, abhängig von der Überprüfung, die ein Teilnehmer hat. Ermöglicht einem Administrator,
 zu konfigurieren, der einem Meeting *beitritt* kann.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
 |Diesen Termin löschen.
 |===
@@ -280,7 +280,7 @@ Nach der Erstellung des Meetings können die Teilnehmer auch xref:components/mee
 |===
 |Icon |Name |Definition
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
 |Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
 
