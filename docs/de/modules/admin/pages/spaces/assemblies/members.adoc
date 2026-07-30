@@ -22,11 +22,11 @@ image::spaces/assemblies/assembly_members_list.png[Assembly members administrati
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
 |To edit this member fields.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
 |To delete this member.
 |===
@@ -62,18 +62,18 @@ image::spaces/assemblies/assembly_members_new_form.png[Assembly members new form
 |Benötigt
 |Wählen Sie einen von Präsidenten, Vizepräsidenten, Sekretär oder anderen. Falls es etwas anderes ist, können Sie den Positionstitel eingeben.
 
-|Bestellposition
+|Reihenfolge
 |Optional
 |Which order the members has in relation to the other members. Eine niedrigere Zahl bedeutet eine höhere Priorität.
 For instance, if you have two members, "Member a" with weight "10" and "Member b" with weight "0" then "Member b" is first when ordering.
 
 |Benennungsdatum
 |Benötigt
-|When this person or group was assigned as a member of this assembly. Expected format: dd/mm/yyyy.
+|When this person or group was assigned as a member of this assembly. Erwartetes Format: tt/mm/jjjj.
 
 |Enddatum
 |Optional
-|When this person or group ceased to be a member of this assembly. Expected format: dd/mm/yyyy.
+|When this person or group ceased to be a member of this assembly. Erwartetes Format: tt/mm/jjjj.
 
 |Geschlecht
 |Optional
@@ -81,7 +81,7 @@ For instance, if you have two members, "Member a" with weight "10" and "Member b
 
 |Geburtstag
 |Optional
-|Wann wurde diese Person geboren. Expected format: dd/mm/yyyy.
+|Wann wurde diese Person geboren. Erwartetes Format: tt/mm/jjjj.
 
 |Geburtsort
 |Optional
