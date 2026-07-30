@@ -4,7 +4,7 @@
 
 Eine Prozessgruppe kann nützlich sein, um grosse Beteiligungsprozesse anhand eines Kriteriums in Teilprozesse zu unterteilen.
 Ausserdem ermöglicht sie es Admins, eine Instanz mit vielen Prozessen zu organisieren, indem sie diejenigen zusammenfassen, die zu einem
-bestimmten Prozesstyp oder Bereich gehören, zum Beispiel jährliche Ausgaben eines partizipativen Budgets, Mobilitätsplanungsprozesse usw.
+      bestimmten Prozesstyp oder Thema gehören, zum Beispiel jährliche Ausgaben eines partizipativen Budgets, Mobilitätsplanungsprozesse usw.
 
 == Konfiguration
 
@@ -49,7 +49,7 @@ image::spaces/processes/processes_group_form_about.png[Participatory process gro
 .Neues partizipatorisches Prozessgruppenformular: Allgemeine Informationen
 [cols="20h,10h,~,~"]
 |===
-|Feld |Typ |Beschreibung |Visibility
+|Feld |Typ |Beschreibung |Sichtbarkeit
 
 |Titel
 |Benötigt
@@ -71,7 +71,7 @@ image::spaces/processes/processes_group_form_about.png[Participatory process gro
 |Optional
 |Bild, das in Präsentationskarten dieser Prozessgruppe verwendet wird. Bildführung:
 Vorzugsweise ein Querformat ohne Text. Der Dienst erzeugt das Bild.
-Maximum file size: 10 MB. Erlaubte Dateiendungen: JPEG JPG PNG
+Maximale Dateigrösse: 10 MB. Erlaubte Dateiendungen: JPEG JPG PNG
 |Sichtbar auf der Karte der Prozessgruppen auf der Startseite und in der Prozessübersicht.
 |===
 
@@ -120,7 +120,7 @@ image::spaces/processes/processes_group_form_metadata.png[Participatory process 
 |Der Entscheidungsprozess.
 |===
 
-==== Visibility
+==== Sichtbarkeit
 
 In diesem Abschnitt können Admins die Sichtbarkeit der Prozessgruppe auf der Startseite und in der Prozessübersicht konfigurieren.
 
@@ -169,9 +169,9 @@ image::spaces/processes/processes_group_landing_title.png[Participatory process 
 
 image::spaces/processes/processes_group_landing_metadata.png[Participatory process group landing page metadata block]
 
-==== Hero image and CTA
+==== Banner-Bild und Handlungsaufforderung
 
-The hero image and CTA content block allows to display:
+Der Inhaltsblock Banner-Bild und Handlungsaufforderung ermöglicht die Anzeige von:
 
 * *Titel*: der Titel der Prozessgruppe.
 * *ein Hashtag*: der Hashtag, der auf das soziale Netzwerk X verweist.
