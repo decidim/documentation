@@ -1,6 +1,6 @@
 = Beteiligte Prozesse
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Ein Beteiligungsprozess ist eine Abfolge von Beteiligungsaktivitäten mit dem Ziel, eine Entscheidung zu einem bestimmten Thema zu definieren und zu treffen.
 Zum Beispiel könnte ein Beteiligungsprozess wie folgt aussehen:
@@ -12,9 +12,9 @@ Zum Beispiel könnte ein Beteiligungsprozess wie folgt aussehen:
 
 NOTE: Möchten Sie einen Beteiligungsprozess erstellen? Lesen Sie den Artikel xref:admin:spaces/processes/process_creation.adoc[Prozesserstellung].
 
-Beispiele für partizipatorische Prozesse sind: ein Prozess der Wahl der Mitglieder des Ausschusses (bei dem die Kandidaten zuerst vorgestellt werden,
-dann debattiert und schließlich wird eine Kandidatur gewählt), partizipative Budgets (wo Vorschläge gemacht werden Wirtschaftlich bewertet,
-und mit dem zur Verfügung stehenden Geld abstimmt), einem strategischen Planungsprozess, die kollaborative Ausarbeitung einer Verordnung oder Norm,
+Beispiele für partizipatorische Prozesse sind: ein Prozess der Wahl der Ausschussmitglieder (bei dem die Kandidaturen zuerst vorgestellt,
+dann debattiert und schliesslich eine Kandidatur gewählt wird), partizipative Budgets (bei denen Vorschläge gemacht, wirtschaftlich bewertet
+und mit dem zur Verfügung stehenden Geld abgestimmt wird), ein strategischer Planungsprozess, die kollaborative Ausarbeitung einer Verordnung oder Norm,
 die Gestaltung eines städtischen Raums oder die Erstellung eines öffentlichen Politikplans.
 
 Ein wirklich wichtiges Konzept für die gute Nutzung von Decidim ist es, die Beziehung zwischen Phasen und Komponenten
@@ -27,21 +27,21 @@ nach Bedarf für Ihren Prozess aktivieren und konfigurieren können.
 
 Innerhalb jeder dieser Phasen können Sie die benötigten xref:admin:components.adoc[Komponenten] aktivieren.
 
-In diesem Abschnitt der Dokumentation findest du Informationen dazu, wie du all diese Elemente konfigurierst und verwaltest:
+In diesem Abschnitt der Dokumentation finden Sie Informationen dazu, wie Sie all diese Elemente konfigurieren und verwalten:
 
-* xref:admin:spaces/processes/groups.adoc[Process Groups]
+* xref:admin:spaces/processes/groups.adoc[Prozessgruppen]
 * xref:admin:spaces/processes/types.adoc[Prozesstypen]
 ** xref:admin:spaces/processes/process_creation.adoc[Prozesserstellung]
 ** xref:admin:spaces/processes/landing_page.adoc[Startseite]
-** xref:admin:spaces/processes/phases.adoc[Phases]
-** xref:admin:spaces/processes/components.adoc[Components]
-** xref:admin:spaces/processes/categories.adoc[Categories]
-** xref:admin:spaces/processes/attachments.adoc[Attachments]
-** xref:admin:spaces/processes/admins.adoc[admins]
-** xref:admin:spaces/processes/private_participants.adoc[Private Teilnehmer]
-** xref:admin:spaces/processes/moderations.adoc[Moderations]
+** xref:admin:spaces/processes/phases.adoc[Phasen]
+** xref:admin:spaces/processes/components.adoc[Komponenten]
+** xref:admin:spaces/processes/categories.adoc[Kategorien]
+** xref:admin:spaces/processes/attachments.adoc[Anhänge]
+** xref:admin:spaces/processes/admins.adoc[Prozess-Admins]
+** xref:admin:spaces/processes/private_participants.adoc[Private Teilnehmende]
+** xref:admin:spaces/processes/moderations.adoc[Moderationen]
 
-=== How to find it?
+=== Wie findet man sie?
 
 Um auf das Panel der Beteiligungsprozesse zuzugreifen, gehen Sie zum Verwaltungspanel und klicken Sie in der Verwaltungsnavigation
 auf den Eintrag "Prozesse".
