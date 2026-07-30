@@ -1,6 +1,6 @@
 = Antworten
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Antworten auf Vorschläge ermöglichen es Admins oder Bewertenden, einen Vorschlag zu prüfen und ihm eine offizielle Antwort mit zugehörigem Status zu geben.
 Dies ermöglicht es dann, die Vorschläge nach ihrem Status zu filtern, die gegebene Antwort zu lesen und die akzeptierten Vorschläge in die
@@ -73,7 +73,7 @@ Eine Zahl, die die Kosten des Vorschlags angibt.
 |Benötigt
 |===
 
-=== Statuses
+=== Status
 
 Wenn die Einstellung "Vorschlagsantworten sofort veröffentlichen" der Vorschläge-Komponente aktiviert ist, ist die Antwort sofort nach dem Klicken auf die Schaltfläche "Antworten"
 öffentlich sichtbar.
