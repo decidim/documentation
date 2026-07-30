@@ -1,6 +1,6 @@
 = Meetings
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Veranstaltungen sind auch die Entitäten, die Teil der Veranstaltungen-Komponente sind.
 Sie werden in der Regel von Admins erstellt, aber Teilnehmende können ebenfalls Veranstaltungen erstellen, wenn diese Funktion aktiviert ist.
@@ -69,7 +69,7 @@ Nur wenige Dienste erlauben eine Einbettung (YouTube, Twitch, Jitsi ...)
 
 |Kategorie
 |Optional
-|Welche Kategorie die Veranstaltung hat. Wird zum Filtern in der Besprechungsliste verwendet.
+|Welche Kategorie die Veranstaltung hat. Wird zum Filtern in der Meetingliste verwendet.
 
 |Registrierungstyp
 |Benötigt
@@ -122,7 +122,7 @@ einen Kinderbereich, Hörassistenz, Übersetzungen usw. gibt. Sie können mehrer
 
 ==== Aktionen
 
-.Aktionen - Offizielle Treffen
+.Aktionen - Offizielle Meetings
 [cols="10h,20h,~"]
 |===
 |Icon |Name |Definition
@@ -144,7 +144,7 @@ einen Kinderbereich, Hörassistenz, Übersetzungen usw. gibt. Sie können mehrer
 |Um Dokumente und Bilder zur Veranstaltung hinzuzufügen.
 
 |image:icons/action_registrations.png[Symbol: Anmeldungen]
-|xref:admin:components/meetings/registrations.adoc[Registrations]
+|xref:admin:components/meetings/registrations.adoc[Registrierungen]
 |Ermöglicht es festzulegen, wer sich für die Teilnahme an der Veranstaltung anmelden kann. Nur verfügbar, wenn die Anmeldungen im Veranstaltungsformular aktiviert sind.
 
 |image:icons/action_agenda.png[Symbol: Traktandenliste]
@@ -152,11 +152,11 @@ einen Kinderbereich, Hörassistenz, Übersetzungen usw. gibt. Sie können mehrer
 |Um die zu besprechenden Themen der Veranstaltung zu veröffentlichen.
 
 |image:icons/action_list.png[Symbol: Umfrage]
-|xref:admin:components/meetings/polls.adoc[Polls]
+|xref:admin:components/meetings/polls.adoc[Umfragen während Veranstaltungen]
 |Um die Umfragen für die Veranstaltung zu verwalten.
 
 |image:icons/action_close.png[Symbol: Schliessen]
-|xref:admin:components/meetings/close.adoc[Close]
+|xref:admin:components/meetings/close.adoc[Schliessen]
 |Ermöglicht es einem Admin, die Veranstaltung mit dem Protokoll der Diskussion abzuschliessen und zusätzliche Informationen hinzuzufügen.
 
 |image:icons/action_publish.png[Symbol: Veröffentlichen]
@@ -169,19 +169,19 @@ einen Kinderbereich, Hörassistenz, Übersetzungen usw. gibt. Sie können mehrer
 
 |image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
-|Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
+|Um zu sehen, wie es im Frontend den Teilnehmenden gezeigt wird.
 
-|image:icons/action_permissions.png[Permissions icon]
+|image:icons/action_permissions.png[Symbol: Berechtigungen]
 |Berechtigungen
-|Um die Berechtigungen dieses Treffens zu verwalten, abhängig von der Überprüfung, die ein Teilnehmer hat. Ermöglicht einem Administrator,
-zu konfigurieren, der einem Meeting *beitritt* kann.
+|Um die Berechtigungen dieses Meetings zu verwalten, abhängig von der Überprüfung, die eine teilnehmende Person hat. Ermöglicht es einem Admin,
+zu konfigurieren, wer einem Meeting *beitreten* kann.
 
 |image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
-|Diesen Termin löschen.
+|Dieses Meeting löschen.
 |===
 
-=== Participants meetings
+=== Veranstaltungen für Teilnehmende
 
 Veranstaltungen können von Teilnehmenden erstellt werden, wenn die Komponenteneinstellung "Teilnehmende können Veranstaltungen erstellen" aktiviert ist.
 Wenn ein Teilnehmender einer verifizierten xref:admin:participants/groups.adoc[Benutzergruppe] angehört, kann er Veranstaltungen
@@ -246,7 +246,7 @@ die Veranstaltung in einem neuen Tab öffnen können. Nur wenige Dienste erlaube
 
 |Kategorie
 |Optional
-|Welche Kategorie die Veranstaltung hat. Wird zum Filtern in der Besprechungsliste verwendet.
+|Welche Kategorie die Veranstaltung hat. Wird zum Filtern in der Meetingliste verwendet.
 
 |Registrierungstyp
 |Benötigt
@@ -260,31 +260,31 @@ mit einem anderen Dienst verwalten.
 
 |Registrierungsbedingungen
 |Erforderlich bei Anmeldung auf dieser Plattform
-|Welche Bedingungen für die Teilnahme an der Veranstaltung müssen die Teilnehmer akzeptieren, um sich zu registrieren oder an der Sitzung teilzunehmen.
+|Welche Bedingungen müssen die Teilnehmenden akzeptieren, um sich für das Meeting zu registrieren oder daran teilzunehmen.
 
 |Registrierungs-URL
 |Erforderlich bei Anmeldung auf einer anderen Plattform
 |Muss eine URL sein. Link, über den Teilnehmende zum externen Dienst gelangen, den Sie für Anmeldungen verwenden.
 
 |Meeting erstellen als
-|Erforderlich, wenn der Teilnehmer zu einer Gruppe gehört
+|Erforderlich, wenn die teilnehmende Person zu einer Gruppe gehört
 |Mit welcher Identität diese Veranstaltung erstellt wird, der des Teilnehmenden oder der der Benutzergruppe.
 |===
 
-Nach der Erstellung des Meetings können die Teilnehmer auch xref:components/meetings/close.adoc[close] bearbeiten.
+Nach der Erstellung des Meetings können die Teilnehmenden es auch bearbeiten und xref:components/meetings/close.adoc[schliessen].
 
 ==== Aktionen
 
-.Aktionen - Bürgertreffen
+.Aktionen - Bürger-Meetings
 [cols="10h,20h,~"]
 |===
 |Icon |Name |Definition
 
 |image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
-|Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
+|Um zu sehen, wie es im Frontend den Teilnehmenden gezeigt wird.
 
-|image:icons/action_permissions.png[Permissions icon]
+|image:icons/action_permissions.png[Symbol: Berechtigungen]
 |Berechtigungen
 |Um die Berechtigungen zu verwalten, die für die Teilnahme, das Kommentieren oder das Beantworten der Umfrage zu dieser spezifischen Veranstaltung erforderlich sind.
 |===
