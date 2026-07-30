@@ -1,15 +1,15 @@
-The platform currently has the following official components:
+Die Plattform verfügt derzeit über die folgenden offiziellen Komponenten:
 
-* xref:admin:components/accountability.adoc[*Accountability*]: allows to keep track of ongoing projects.
-* xref:admin:components/blog.adoc[*Blog*]: allows administrators to publish blog posts and news.
-* xref:admin:components/budgets.adoc[*Budgets*]: allows participants to vote for projects with amounts predefined, for
-participatory budgeting for example.
+* xref:admin:components/accountability.adoc[*Accountability*]: ermöglicht es, laufende Projekte zu verfolgen.
+* xref:admin:components/blog.adoc[*Blog*]: ermöglicht es Admins, Blogbeiträge und Neuigkeiten zu veröffentlichen.
+* xref:admin:components/budgets.adoc[*Budgets*]: ermöglicht es Teilnehmenden, für Projekte mit vordefinierten Beträgen abzustimmen, zum Beispiel für ein
+partizipatives Budget.
 * xref:admin:components/debates.adoc[*Debates*]: erlaubt den Teilnehmern Debatten zu führen.
-* xref:admin:components/meetings.adoc[*Meetings*]: in person or online gatherings, agenda, minutes, etc.
+* xref:admin:components/meetings.adoc[*Meetings*]: persönliche oder Online-Zusammenkünfte, Traktandenliste, Protokolle usw.
 * xref:admin:components/pages.adoc[*Page*]: statische Seiten mit mehrsprachiger Unterstützung.
-* xref:admin:components/proposals.adoc[*Proposals*]: contributions posted by participants.
-* xref:admin:components/sortitions.adoc[*Sortitions*]: allows to randomly select proposals.
-* xref:admin:components/surveys.adoc[*Survey*]: zur Durchführung von Umfragen mit verschiedenen Arten von Fragen.
+* xref:admin:components/proposals.adoc[*Proposals*]: von Teilnehmenden eingereichte Beiträge.
+* xref:admin:components/sortitions.adoc[*Sortitions*]: ermöglicht die zufällige Auswahl von Vorschlägen.
+* xref:admin:components/surveys.adoc[*Umfrage*]: zur Durchführung von Umfragen mit verschiedenen Arten von Fragen.
 
-NOTE: In the cases where your needs aren't covered by one of those components,
-you can create your own component through a xref:develop:modules.adoc[Module].
+NOTE: Falls Ihre Anforderungen durch keine dieser Komponenten abgedeckt werden,
+können Sie über ein xref:develop:modules.adoc[Modul] Ihre eigene Komponente erstellen.
