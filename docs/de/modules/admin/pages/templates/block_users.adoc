@@ -1,39 +1,39 @@
-= Block user messages templates
+= Vorlagen für Blockierungsnachrichten
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-In this section, you can create, edit, and delete block user justification templates, that you can then use when moderating users.
+In diesem Abschnitt können Sie Vorlagen für Blockierungsbegründungen erstellen, bearbeiten und löschen, die Sie anschliessend bei der Moderation von Teilnehmenden verwenden können.
 
 == Konfiguration
 
-=== Create a block user message template
+=== Eine Vorlage für Blockierungsnachrichten erstellen
 
-To create a new block user message template, you need to click the "New template" button.
+Um eine neue Vorlage für Blockierungsnachrichten zu erstellen, müssen Sie auf die Schaltfläche "Neue Vorlage" klicken.
 
 image::templates/templates_block_user_backend_form.png[Backend: new template form]
 
-.New questionnaire template form
+.Formular für neue Vorlage für Blockierungsnachrichten
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Name
 |Benötigt
-|Title of this template. Choose a clear title, describing precisely what the message is for, like "spam users."
+|Titel dieser Vorlage. Wählen Sie einen klaren Titel, der genau beschreibt, wofür die Nachricht dient, wie zum Beispiel "Spam-Nutzende."
 
 |Beschreibung
 |Benötigt
-|Block user message that is used for justifying the blocking of the participant.
+|Blockierungsnachricht, die zur Begründung der Blockierung der teilnehmenden Person verwendet wird.
 |===
 
 === Verwalten
 
-All the block user messages templates appear in the templates list:
+Alle Vorlagen für Blockierungsnachrichten erscheinen in der Vorlagenliste:
 
-* *Template*: name of the template.
-* *Created at*: date of creation.
+* *Vorlage*: Name der Vorlage.
+* *Erstellt am*: Erstellungsdatum.
 
-You can edit a template at any moment.
+Sie können eine Vorlage jederzeit bearbeiten.
 
 === Aktionen
 
@@ -42,22 +42,22 @@ You can edit a template at any moment.
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit template]
+|image:icons/action_edit.png[Symbol: Vorlage bearbeiten]
 |Bearbeiten
-|To edit the block user message.
+|Um die Blockierungsnachricht zu bearbeiten.
 
-|image:icons/action_duplicate.png[Duplicate template]
+|image:icons/action_duplicate.png[Symbol: Vorlage duplizieren]
 |Duplicate
-|To duplicate the template.
+|Um die Vorlage zu duplizieren.
 
-|image:icons/action_delete.png[Delete template]
+|image:icons/action_delete.png[Symbol: Vorlage löschen]
 |Löschen
-|To delete the template.
+|Um die Vorlage zu löschen.
 |===
 
-=== Use the template
+=== Die Vorlage verwenden
 
-To use the template, go to the xref:admin:moderations/reported_users.adoc[reported users] panel, and click a "Block user" icon.
-You then see a page proposing you to choose a template for the justification to block this participant.
+Um die Vorlage zu verwenden, gehen Sie zum Panel xref:admin:moderations/reported_users.adoc[Gemeldete Teilnehmende] und klicken Sie auf ein Symbol "Nutzende blockieren".
+Anschliessend sehen Sie eine Seite, die Ihnen vorschlägt, eine Vorlage für die Begründung der Blockierung dieser teilnehmenden Person auszuwählen.
 
 image::templates/templates_block_user_choice.png[Backend: choose template when blocking user]
