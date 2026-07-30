@@ -1,19 +1,19 @@
-= Projects
+= Projekte
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Projects are parts of budgets.
+Projekte sind Teile von Budgets.
 
 == Konfiguration
 
-=== Create a project
+=== Ein Projekt erstellen
 
-To access the creation and management of projects, click the title of the budget or the image:icons/action_list.png[Manage projects icon]
-icon on the budgets list.
+Um auf die Erstellung und Verwaltung von Projekten zuzugreifen, klicken Sie auf den Titel des Budgets oder auf das Symbol
+      image:icons/action_list.png[Symbol: Projekte verwalten] in der Budgetliste.
 
 image::components/budgets/new_project_button.png[New project button]
 
-Then, click the "New project" button on the top right of the page.
+Klicken Sie dann oben rechts auf der Seite auf die Schaltfläche "Neues Projekt".
 
 image::components/budgets/new_project.png[New project form]
 
@@ -32,41 +32,41 @@ image::components/budgets/new_project.png[New project form]
 
 |Budgetbetrag
 |Benötigt
-|What’s the budget amount for this project. How much money does it cost to implement this project?
+|Wie hoch ist der Budgetbetrag für dieses Projekt. Wie viel Geld kostet die Umsetzung dieses Projekts?
 
 |Adresse
 |Optional
-|The address of the project. It allows to display a pin on a map for participants to locate the project.
+|Die Adresse des Projekts. Dies ermöglicht die Anzeige einer Stecknadel auf einer Karte, damit Teilnehmende das Projekt lokalisieren können.
 
 |Kategorie
 |Optional
-|What Category is assigned to the project. Wird zum Filtern in der Budgetliste verwendet.
+|Welche Kategorie dem Projekt zugewiesen ist. Wird zum Filtern in der Budgetliste verwendet.
 
 |Vorschläge
 |Optional
-|Wählen Sie verwandte Vorschläge für dieses Projekt. Automatically assigned when importing proposals.
+|Wählen Sie verwandte Vorschläge für dieses Projekt. Wird beim Importieren von Vorschlägen automatisch zugewiesen.
 
 |Bildergalerie hinzufügen
 |Optional
-|Add multiple images illustrating what this project is about, mock-ups, etc.
+|Fügen Sie mehrere Bilder hinzu, die veranschaulichen, worum es bei diesem Projekt geht, wie Entwürfe usw.
 |===
 
 === Projekte verwalten
 
 image::components/budgets/results_selected.png[Selected projects after voting]
 
-On the projects list in the administration panel, administrators can see:
+In der Projektliste im Verwaltungspanel können Admins Folgendes sehen:
 
-* *ID*: Identification number for this project.
-* *Title*: Title of the project.
-* *Category*: Category of the project.
-* *Scope*: Scope of the project, if enabled in the participatory space.
-* *Votes count*: Number of votes on this project.
-* *Selected*: If the project is selected for implementation at the end of the process.
-* *Map*: Location of the project when it has an address.
+* *ID*: Identifikationsnummer für dieses Projekt.
+* *Titel*: Titel des Projekts.
+* *Kategorie*: Kategorie des Projekts.
+* *Thema*: Thema des Projekts, sofern im partizipativen Raum aktiviert.
+* *Anzahl Stimmen*: Anzahl der Stimmen für dieses Projekt.
+* *Ausgewählt*: Ob das Projekt am Ende des Prozesses zur Umsetzung ausgewählt wurde.
+* *Karte*: Standort des Projekts, wenn es eine Adresse hat.
 
 Sie können diese Liste filtern und sortieren, indem Sie auf die Schaltfläche "Filter" und die Spaltenüberschriften klicken.
-You can also search for projects by their ID and title in the search bar.
+Sie können in der Suchleiste auch nach Projekten anhand ihrer ID und ihres Titels suchen.
 
 image::components/budgets/projects_list_filter.png[Projects list filter]
 
@@ -87,15 +87,15 @@ image::components/budgets/projects_list_filter.png[Projects list filter]
 
 |image:icons/action_attachments.png[Symbol: Anhänge]
 |Anhänge
-|To add documents and images related to the project.
+|Um Dokumente und Bilder hinzuzufügen, die sich auf das Projekt beziehen.
 
 |image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
-|Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
+|Um zu sehen, wie es im Frontend den Teilnehmenden gezeigt wird.
 
-|image:icons/action_permissions.png[Permissions icon]
+|image:icons/action_permissions.png[Symbol: Berechtigungen]
 |Berechtigungen
-|To handle the authorizations needed to vote or comment on this specific project.
+|Um die Berechtigungen zu verwalten, die zum Abstimmen oder Kommentieren dieses spezifischen Projekts erforderlich sind.
 
 |image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
@@ -104,16 +104,16 @@ image::components/budgets/projects_list_filter.png[Projects list filter]
 
 === Vorschläge in Projekte importieren
 
-Je nach Normativ kannst du eine erste Phase in der die Teilnehmer
-Vorschläge machen möchten und diese Vorschläge werden ausgewählt (durch Abstimmung oder durch technische Überprüfung),
+Je nach Normativ könnten Sie eine erste Phase haben, in der Teilnehmende
+Vorschläge machen, und diese Vorschläge werden ausgewählt (durch Abstimmung oder durch technische Überprüfung),
 dann können Sie diese Vorschläge importieren und in Projekte umwandeln.
 
 Damit dies funktioniert:
 
 . Die folgenden Einstellungen in der Vorschlags-Komponente müssen aktiviert sein:
 .. Vorschlagsantwort aktiviert
-.. Kosten bei Angebotsantworten aktivieren
-. A valuator or administrator needs to answer proposals:
+.. Kosten bei Vorschlagsantworten aktivieren
+. Eine bewertende Person oder ein Admin muss Vorschläge beantworten:
 .. Vorschläge ansehen
 .. Akzeptieren oder ablehnen Sie sie entsprechend Ihrer Normativen
 .. Kosten zu den Vorschlägen hinzufügen, wenn angenommen wurde
