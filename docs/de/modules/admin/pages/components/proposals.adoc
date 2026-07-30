@@ -1,6 +1,6 @@
 = Vorschläge
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Die Vorschläge-Komponente ermöglicht es Personen, Vorschläge zu erstellen, zu kommentieren, mit Gefällt mir zu markieren und für sie abzustimmen. Sie ist eine der Hauptkomponenten von
 Decidim und verfügt über eine grosse Anzahl an Konfigurationseinstellungen.
@@ -10,7 +10,7 @@ image::components/proposals/example01.png[Proposals example]
 In diesem Dokumentationsabschnitt erfahren Sie, wie Sie all diese Einstellungen konfigurieren und verwalten:
 
 * xref:admin:components/proposals/proposals.adoc[Vorschlagsverwaltung]
-* xref:admin:components/proposals/answers.adoc[Answers]
+* xref:admin:components/proposals/answers.adoc[Antworten]
 * xref:admin:components/proposals/special_configurations.adoc[Spezifische Vorschlagskonfigurationen]
 ** xref:admin:components/proposals/special_configurations/amendments.adoc[Änderungsanträge]
 ** xref:admin:components/proposals/special_configurations/collaborative_drafts.adoc[Kollaborative Entwürfe]
@@ -43,7 +43,7 @@ image::components/proposals/component_01.png[Add component form]
 
 |Name
 |Benötigt
-|The title of this component.
+|Der Titel dieser Komponente.
 
 |Reihenfolge
 |Optional
@@ -59,15 +59,15 @@ image::components/proposals/component_02.png[Add component form]
 |===
 |Feld |Typ |Beschreibung
 
-|Bereiche aktiviert
+|Themen aktiviert
 |Optional
-|Aktivieren, wenn die Bereichsfilterung in dieser Komponente erfolgen soll.
+|Aktivieren, wenn die Themenfilterung in dieser Komponente erfolgen soll.
 
-|Bereiche aktiviert
+|Themen aktiviert
 |Optional
 |Aktivieren Sie dies, wenn Sie die Filterung nach Themen in dieser Komponente verfügbar haben möchten.
 
-|Bereich
+|Thema
 |Optional
 |Zu welchem xref:admin:settings/scopes.adoc[Thema] diese Komponente gehört.
 
@@ -79,15 +79,15 @@ image::components/proposals/component_02.png[Add component form]
 |Optional
 |Muss eine Zahl sein. Die Mindestanzahl an Stimmen, die eine teilnehmende Person Vorschlägen geben muss, damit ihre Stimmen berücksichtigt werden.
 
-|Vorschlagslimit pro Teilnehmer
+|Vorschlagslimit pro teilnehmender Person
 |Optional
 |Muss eine Zahl sein. Wie viele Vorschläge eine teilnehmende Person in dieser Komponente erstellen kann.
 
 |Maximale Länge des Vorschlagskörpers
 |Optional
-|Muss eine Zahl sein. Wie viele Zeichen ein Vorschlagsgremium maximal haben kann.
+|Muss eine Zahl sein. Wie viele Zeichen der Vorschlagskörper maximal haben kann.
 
-|Änderungsvorschlag
+|Bearbeitung von Vorschlägen
 |Benötigt
 |Wählen Sie, ob Teilnehmende nur begrenzt Zeit haben, ihre Vorschläge zu bearbeiten, oder ob sie diese unbegrenzt bearbeiten können.
 Falls dies innerhalb eines bestimmten Zeitraums liegen soll, müssen Sie die Zeit im untenstehenden Feld angeben.
@@ -107,7 +107,7 @@ Beachten Sie, dass ein Vorschlag nicht mehr bearbeitet werden kann, sobald ein A
 
 |Vorschlagsantwort aktiviert
 |Optional
-|Ob Administratoren oder Bewerber Vorschläge beantworten können.
+|Ob Admins oder Bewertende Vorschläge beantworten können.
 
 |Standardsortierung der Vorschläge
 |Optional
@@ -133,7 +133,7 @@ Sie müssen xref:configure:geocoding[Geokodierung] aktiviert haben.
 
 |Anhänge erlauben
 |Optional
-|Aktivieren, um den Teilnehmern zu erlauben, Dateien an ihre Vorschläge anzuhängen. Wenn Sie diese Option aktivieren, werden Vorschläge standardmässig in der Rasteransicht angezeigt,
+|Aktivieren, um den Teilnehmenden zu erlauben, Dateien an ihre Vorschläge anzuhängen. Wenn Sie diese Option aktivieren, werden Vorschläge standardmässig in der Rasteransicht angezeigt,
 und das erste Bild erscheint auf der Karte.
 
 |Aktionsberechtigungen können für jeden Vorschlag festgelegt werden
@@ -144,16 +144,16 @@ und das erste Bild erscheint auf der Karte.
 |Optional
 |Aktivieren, um xref:components/proposals/special_configurations/collaborative_drafts.adoc[kollaborative Entwürfe] bei Vorschlägen zu aktivieren.
 
-|Teilnehmende Texte aktiviert
+|Partizipative Texte aktiviert
 |Optional
 |Aktivieren, um xref:components/proposals/special_configurations/participatory_texts.adoc[partizipative Texte] bei Vorschlägen zu aktivieren.
 
-|Änderungen aktiviert
+|Änderungsanträge aktiviert
 |Optional
 |Aktivieren, um xref:components/proposals/special_configurations/amendments.adoc[Änderungsanträge] bei Vorschlägen zu aktivieren.
 Falls aktiviert, konfigurieren Sie die Einstellungen für Änderungsanträge für jede Phase.
 
-|Änderungsassistent Hilfetext
+|Hilfetext für den Änderungsantrags-Assistenten
 |Optional.
 |Der Hilfetext, der beim Erstellen neuer Änderungsanträge sichtbar ist.
 
@@ -170,11 +170,11 @@ einhalten müssen.
 |Optional
 |Der Hilfetext, der beim Erstellen neuer Vorschläge sichtbar ist.
 
-|Assistent "Erstellen" Schritt-Hilfetext
+|Hilfetext für den Schritt "Erstellen" des Vorschlagsassistenten
 |Optional
 |Der Hilfetext, der beim Erstellen neuer Vorschläge im Schritt "Erstellen" sichtbar ist.
 
-|Assistent für den Vorschlag "Veröffentlichen" Schritt Hilfe Text
+|Hilfetext für den Schritt "Veröffentlichen" des Vorschlagsassistenten
 |Optional
 |Der Hilfetext, der beim Erstellen neuer Vorschläge im Schritt "Veröffentlichen" sichtbar ist.
 |===
@@ -188,11 +188,11 @@ image::components/proposals/component_03.png[Add component form]
 |===
 |Feld |Typ |Beschreibung
 
-|Befürworter aktiviert
+|Unterstützungen aktiviert
 |Optional
 |Um Teilnehmenden zu ermöglichen, mit einer Schaltfläche "Gefällt mir" öffentlich Unterstützung für diese Vorschläge zu zeigen.
 
-|Befürworter blockiert
+|Unterstützungen blockiert
 |Optional
 |Aktivieren Sie dies, damit Teilnehmende die bestehenden Unterstützungen sehen, aber keine neuen abgeben können.
 
@@ -214,18 +214,18 @@ image::components/proposals/component_03.png[Add component form]
 
 |Teilnehmende können Vorschläge erstellen
 |Optional
-|Ob Sie die Erstellung von Angebotsvorschlägen von Teilnehmern für diese Phase aktivieren möchten.
+|Ob Sie die Erstellung von Vorschlägen durch Teilnehmende für diese Phase aktivieren möchten.
 
 |Vorschlagsantwort aktiviert
 |Optional
 |Ob Sie xref:components/proposals/answers.adoc[das Beantworten von Vorschlägen] durch Admins aktivieren möchten.
 
-|Vorschläge sofort veröffentlichen
+|Vorschlagsantworten sofort veröffentlichen
 |Optional
 |Ob die Antworten zu Vorschlägen direkt veröffentlicht werden sollen, wenn Admins sie
 xref:components/proposals/answers.adoc[beantworten], oder ob Sie selbst steuern möchten, wann die Antworten veröffentlicht werden.
 
-|Kosten bei Angebotsantworten aktivieren
+|Kosten bei Vorschlagsantworten aktivieren
 |Optional
 |Ob Sie den Antworten auf Vorschläge wirtschaftliche Kosten hinzufügen möchten. Nützlich für den Import von Vorschlägen in xref:components/budgets.adoc[Budgets].
 
@@ -242,9 +242,9 @@ angezeigt werden, wenn die Abstimmung aktiviert ist, und nach den meisten Stimme
 |Optional
 |Fügt automatisch Hashtags zu jedem Vorschlag hinzu.
 
-|Hashtags den Teilnehmern für neue Vorschläge vorgeschlagen
+|Den Teilnehmenden für neue Vorschläge vorgeschlagene Hashtags
 |Optional
-|Schlägt Teilnehmenden, die neue Vorschläge erstellen, Hashtags vor. Teilnehmer können mehrere Hashtag auswählen.
+|Schlägt Teilnehmenden, die neue Vorschläge erstellen, Hashtags vor. Teilnehmende können mehrere Hashtags auswählen.
 |===
 
 == Beispiele
