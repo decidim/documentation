@@ -4,172 +4,172 @@
 
 Auf dieser Seite können Sie das Look-and-Feel Ihrer Decidim-Instanz konfigurieren.
 
-NOTE: Please mind that this would be incompatible with some of the changes that your implementers could make in your general installation.
-For instance if there were changes in the xref:customize:styles.adoc[Styles] some parameters couldn't be applied as expected.
+NOTE: Bitte beachten Sie, dass dies mit einigen Änderungen, die Ihre Entwickler:innen an Ihrer allgemeinen Installation vorgenommen haben könnten, nicht kompatibel sein kann.
+Wenn beispielsweise Änderungen an den xref:customize:styles.adoc[Styles] vorgenommen wurden, könnten einige Parameter nicht wie erwartet angewendet werden.
 
 == Konfiguration
 
-=== Edit homepage appearance
+=== Erscheinungsbild der Startseite bearbeiten
 
-This section allows to provide a general description about the instance, and to configure a call to action button that can be
-shown to participants on the homepage to encourage them to go to a specific process, like a proposal component where they can participate.
+Dieser Abschnitt ermöglicht es, eine allgemeine Beschreibung der Instanz anzugeben und eine Handlungsaufforderungs-Schaltfläche zu konfigurieren, die
+Teilnehmenden auf der Startseite angezeigt werden kann, um sie zu einem bestimmten Prozess zu führen, z. B. zu einer Vorschlagskomponente, an der sie teilnehmen können.
 
 image::settings/admin_appearance_homepage_appearance.png[Decidim Admin Appearance edit homepage appearance toggle]
 
-.Edit Homepage appearance toggle form
+.Umschaltformular für das Erscheinungsbild der Startseite bearbeiten
 [cols="20h,10h,~,~"]
 |===
-|Feld |Typ |Beschreibung |Visibility
+|Feld |Typ |Beschreibung |Sichtbarkeit
 
 |Beschreibung
 |Optional
-|The description of this instance, used for meta tags for Google and Twitter embeds.
-|Visible in the footer and in the "Sub hero banner" content block in homepage if this block is enabled.
+|Die Beschreibung dieser Instanz, die für Meta-Tags für Google- und Twitter-Einbettungen verwendet wird.
+|Sichtbar in der Fusszeile und im Inhaltsblock "Banner unter dem Hauptbild" auf der Startseite, sofern dieser Block aktiviert ist.
 
-|Call To Action button path
+|Pfad der Handlungsaufforderungs-Schaltfläche
 |Optional
-|Path to the place on the platform when you want to quickly redirect participants.
-|Visible in the "Hero image and CTA" content block in homepage if this block is enabled.
+|Pfad zu der Stelle auf der Plattform, zu der Sie Teilnehmende schnell weiterleiten möchten.
+|Sichtbar im Inhaltsblock "Banner-Bild und Handlungsaufforderung" auf der Startseite, sofern dieser Block aktiviert ist.
 
 |Text zum Aktion-Button aufrufen
 |Optional
-|Text displayed on the CTA button.
-|Visible in the "Hero image and CTA" content block in homepage if this block is enabled.
+|Der auf der Handlungsaufforderungs-Schaltfläche angezeigte Text.
+|Sichtbar im Inhaltsblock "Banner-Bild und Handlungsaufforderung" auf der Startseite, sofern dieser Block aktiviert ist.
 |===
 
-NOTE: To understand how to enable the different homepage blocks, go to the xref:admin:settings/homepage.adoc[homepage] article.
+NOTE: Um zu verstehen, wie Sie die verschiedenen Inhaltsblöcke der Startseite aktivieren können, lesen Sie den Artikel xref:admin:settings/homepage.adoc[Startseite].
 
 === Hervorgehobener Inhalts-Banner
 
-This section allows to enable and give a description and CTA button to a banner, for example to highlight a specific space
-on your instance, to encourage users to create an account or to register to a meeting. You can make it evolve depending on the
-actuality of your instance, and deactivate it when it's not needed.
+Dieser Abschnitt ermöglicht es, ein Banner mit Beschreibung und Handlungsaufforderungs-Schaltfläche zu aktivieren, zum Beispiel um einen bestimmten Raum
+auf Ihrer Instanz hervorzuheben, Nutzende zur Kontoerstellung zu ermutigen oder sie zur Anmeldung für eine Veranstaltung aufzufordern. Sie können es je nach
+aktuellem Geschehen Ihrer Instanz anpassen und deaktivieren, wenn es nicht benötigt wird.
 
-NOTE: To appear on the homepage, the "Highlighted content banner" content block needs to be enabled on the xref:admin:settings/homepage.adoc[homepage].
+NOTE: Damit es auf der Startseite erscheint, muss der Inhaltsblock "Hervorgehobenes Inhaltsbanner" auf der xref:admin:settings/homepage.adoc[Startseite] aktiviert sein.
 
 image::settings/admin_appearance_highlighted_banner.png[Decidim Admin Appearance edit Highlighted content banner toggle]
 
-.Edit Highlighted content banner toggle form
+.Umschaltformular für das hervorgehobene Inhaltsbanner bearbeiten
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
-|Show the highlighted content banner
+|Hervorgehobenes Inhaltsbanner anzeigen
 |Checkbox
-|When checked, the highlighted content banner appears on the homepage if the "Highlighted content banner" content block is also enabled.
+|Wenn aktiviert, erscheint das hervorgehobene Inhaltsbanner auf der Startseite, sofern der Inhaltsblock "Hervorgehobenes Inhaltsbanner" ebenfalls aktiviert ist.
 
 |Titel
 |Benötigt
-|The title of the banner.
+|Der Titel des Banners.
 
 |Kurze Beschreibung
 |Benötigt
-|The description for the banner.
+|Die Beschreibung für das Banner.
 
-|Action button title
+|Titel der Aktionsschaltfläche
 |Benötigt
-|The text displayed in the banner CTA.
+|Der im Banner-CTA angezeigte Text.
 
-|Action button subtitle
+|Untertitel der Aktionsschaltfläche
 |Optional
-|An optional subtitle displayed in your CTA.
+|Ein optionaler Untertitel, der in Ihrer Handlungsaufforderung angezeigt wird.
 
-|Action button URL
+|URL der Aktionsschaltfläche
 |Benötigt
-|The URL where the CTA button redirects.
+|Die URL, zu der die Handlungsaufforderungs-Schaltfläche weiterleitet.
 
 |Bild
 |Optional
-|The background image for the banner.
+|Das Hintergrundbild für das Banner.
 |===
 
-=== Edit omnipresent banner
+=== Allgegenwärtiges Banner bearbeiten
 
-This section allows to enable a banner at the top of your instance, above the headers, visible at any time from every page.
-It can be useful to display very important information that all participants need to see, like announcing a maintenance date,
-availability of a process results, an important notice, etc.
+Dieser Abschnitt ermöglicht es, ein Banner oben auf Ihrer Instanz zu aktivieren, oberhalb der Kopfzeilen, das jederzeit auf jeder Seite sichtbar ist.
+Es kann nützlich sein, um sehr wichtige Informationen anzuzeigen, die alle Teilnehmenden sehen müssen, wie die Ankündigung eines Wartungstermins,
+die Verfügbarkeit von Prozessergebnissen, einen wichtigen Hinweis usw.
 
-NOTE: This banner is configured on this page only, and doesn't need to be enabled in the homepage section.
+NOTE: Dieses Banner wird ausschliesslich auf dieser Seite konfiguriert und muss nicht im Abschnitt der Startseite aktiviert werden.
 
 image::settings/admin_appearance_omnipresent_banner.png[Decidim Admin Appearance edit omnipresent banner toggle]
 
-.Edit Highlighted content banner toggle form
+.Umschaltformular für das hervorgehobene Inhaltsbanner bearbeiten
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
-|Show omnipresent banner
+|Allgegenwärtiges Banner anzeigen
 |Checkbox
-|When checked, the omnipresent banner appears at the top of each page of the platform, above the headers.
+|Wenn aktiviert, erscheint das allgegenwärtige Banner oben auf jeder Seite der Plattform, oberhalb der Kopfzeilen.
 
 |Titel
 |Benötigt
-|The title of the banner.
+|Der Titel des Banners.
 
 |Kurze Beschreibung
 |Benötigt
-|The description for the banner.
+|Die Beschreibung für das Banner.
 
 |URL
 |Benötigt
-|The URL where the banner redirects.
+|Die URL, zu der das Banner weiterleitet.
 |===
 
 image::settings/appearance_omnipresent_banner.png[Decidim Appearance omnipresent banner frontend]
 
-=== Edit layout appearance
+=== Erscheinungsbild des Layouts bearbeiten
 
-This section allows to download logos and icons, to be displayed in the header and footer, notification emails, newsletters, etc.
+Dieser Abschnitt ermöglicht es, Logos und Symbole herunterzuladen, die in der Kopf- und Fusszeile, in Benachrichtigungs-E-Mails, Newslettern usw. angezeigt werden.
 
 image::settings/admin_appearance_layout.png[Decidim Admin layout appearance toggle]
 
-.Edit layout appearance toggle
+.Umschalter für das Erscheinungsbild des Layouts bearbeiten
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Icon
-|Download
-|Displayed as a "favicon" in the browser tabs of the instance.
+|Herunterladen
+|Wird als "Favicon" in den Browser-Tabs der Instanz angezeigt.
 
 |Logo
-|Download
-|Displayed in the header of the instance, and the header of the newsletter and notification emails.
+|Herunterladen
+|Wird in der Kopfzeile der Instanz sowie in der Kopfzeile von Newsletter- und Benachrichtigungs-E-Mails angezeigt.
 
 |Offizielles Footer-Logo
-|Download
-|Displayed in the footer of the instance, and redirects to the official organization URL.
+|Herunterladen
+|Wird in der Fusszeile der Instanz angezeigt und leitet zur offiziellen URL der Organisation weiter.
 
 |Offizielle URL der Organisation
 |Optional
-|The URL where the official logo footer redirects.
+|Die URL, zu der das offizielle Logo in der Fusszeile weiterleitet.
 |===
 
 image::settings/appearance_layout_footer_logo.png[Decidim Appearance official footer logo]
 
-=== Organization colors
+=== Organisationsfarben
 
-This section allows to choose colors for the organization.
+Dieser Abschnitt ermöglicht es, Farben für die Organisation auszuwählen.
 
-NOTE: Be aware of potential accessibility issues, for instance with people that doesn't have a good contrast notion.
-You can check the contrast of your choosing with WebAIM Contrast Checker or other similar tools.
+NOTE: Achten Sie auf mögliche Barrierefreiheitsprobleme, zum Beispiel bei Personen ohne ausgeprägtes Kontrastempfinden.
+Sie können den Kontrast Ihrer Wahl mit dem WebAIM Contrast Checker oder ähnlichen Tools überprüfen.
 
 image::settings/admin_appearance_colors.png[Decidim Admin layout appearance toggle]
 
-You can configure:
+Sie können konfigurieren:
 
-* Primary color: Used for global menu background, components menu backgrounds, etc.
-* Secondary color: Used for titles links, primary buttons, header font color, etc.
-* Tertiary color: Used for titles underlines, card border color, etc.
+* Primärfarbe: Wird für den Hintergrund des globalen Menüs, die Hintergründe der Komponentenmenüs usw. verwendet.
+* Sekundärfarbe: Wird für Titel-Links, primäre Schaltflächen, die Schriftfarbe der Kopfzeile usw. verwendet.
+* Tertiärfarbe: Wird für Titel-Unterstreichungen, die Rahmenfarbe von Karten usw. verwendet.
 
-In the following screenshot, the three different colors are displayed.
+Im folgenden Screenshot werden die drei verschiedenen Farben angezeigt.
 
 image::settings/appearance_colors.png[Decidim layout appearance colors example]
 
-=== Header snippets
+=== Header-Snippets
 
-NOTE: You might not see this field. For more information on how to enable it, see the xref:customize:styles.adoc[Styles] documentation.
+NOTE: Möglicherweise sehen Sie dieses Feld nicht. Weitere Informationen zur Aktivierung finden Sie in der Dokumentation zu xref:customize:styles.adoc[Styles].
 
-This field allows to add code to the HTML head. The most common use is to integrate third-party services that require
-some extra JavaScript or CSS. Außerdem können Sie zusätzliche Meta-Tags dem HTML hinzuzufügen.
-Note that this is only rendered in public pages, not in the administration.
+Mit diesem Feld können Sie Code zum HTML-Head hinzufügen. Der häufigste Anwendungsfall ist die Einbindung von Drittanbieterdiensten, die
+zusätzliches JavaScript oder CSS erfordern. Außerdem können Sie zusätzliche Meta-Tags dem HTML hinzuzufügen.
+Beachten Sie, dass dies nur auf öffentlichen Seiten dargestellt wird, nicht in der Administration.
