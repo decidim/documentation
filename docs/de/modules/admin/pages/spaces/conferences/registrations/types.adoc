@@ -39,7 +39,7 @@ NOTE: Once participants register to a registration type, it can't be edited nor 
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
 |To edit this registration type.
 
@@ -51,7 +51,7 @@ NOTE: Once participants register to a registration type, it can't be edited nor 
 |Zurückziehen
 |To unpublish this registration type (when published)
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
 |To delete this registration type.
 |===
@@ -71,7 +71,7 @@ image::spaces/conferences/new_registration_type.png[Create a new registration ty
 |Benötigt
 |The title of this registration type.
 
-|Bestellposition
+|Reihenfolge
 |Benötigt
 |Which order it has in relation to the other types. Eine niedrigere Zahl bedeutet eine höhere Priorität. For instance, if you have two types, "Day 1" with weight "10" and "Day 2" with weight "0" then "Day 2" is first when ordering.
 
