@@ -1,6 +1,6 @@
-= Zielseite
+= Startseite
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Jeder Prozess und jede Versammlung verfügt über eine Startseite mit verschiedenen Inhaltsblöcken, die hinzugefügt, gelöscht, aktiviert, geordnet und konfiguriert werden können,
 genau wie die Inhaltsblöcke der xref:admin:settings/homepage.adoc[Startseite].
@@ -91,7 +91,7 @@ image::spaces/landing_page/statistics.png[Landing page content Statistics conten
 
 image::spaces/landing_page/metrics.png[Landing page content Metrics content block]
 
-=== Verwandte Prozesse
+=== Ähnliche Prozesse
 
 image::spaces/landing_page/processes.png[Landing page content Related processes content block]
 
@@ -119,7 +119,7 @@ Die zugehörigen Bilder ermöglichen es Admins, die Bild-xref:admin:spaces/proce
 
 image::spaces/landing_page/images.png[Landing page content Related images content block]
 
-=== Anstehende Meetings
+=== Anstehende Veranstaltungen
 
 Die bevorstehenden Veranstaltungen ermöglichen es Admins, die bevorstehenden xref:admin:components/meetings.adoc[Veranstaltungen] auf der Startseite anzuzeigen, mit einer Karte, sofern sie einen Standort haben.
 Sie können die Komponente konfigurieren, aus der die Veranstaltungen stammen, indem Sie auf die Schaltfläche Bearbeiten des Inhaltsblocks klicken.
