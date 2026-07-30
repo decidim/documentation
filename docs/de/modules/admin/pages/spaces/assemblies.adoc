@@ -1,9 +1,9 @@
-= Schwärmerei
+= Versammlungen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Eine Versammlung ist eine Gruppe von Mitgliedern einer Organisation, die regelmäßig zusammenkommen, um Entscheidungen über einen bestimmten Bereich oder den
--Bereich der Organisation zu treffen.
+Eine Versammlung ist eine Gruppe von Mitgliedern einer Organisation, die regelmässig zusammenkommen, um Entscheidungen über einen bestimmten Bereich oder ein bestimmtes
+Thema der Organisation zu treffen.
 
 Versammlungen können Veranstaltungen abhalten, ihre Mitglieder konsultieren und können privat oder für alle offen sein.
 
@@ -12,22 +12,22 @@ Exekutivorgane per Abstimmung festzulegen, ein Gleichstellungsbeirat, der regelm
 der Geschlechterbeziehungen in der Organisation zu erarbeiten, eine Evaluierungskommission, die sich monatlich trifft, um einen Prozess zu überwachen, oder ein Kontrollgremium,
 das Vorfälle, Missstände oder Vorschläge zur Verbesserung der Entscheidungsverfahren sammelt.
 
-NOTE: Der Hauptunterschied zwischen xref:admin:spaces/processes.adoc[participatory processes] und Assemblies ist, dass Assemblys keine
+NOTE: Der Hauptunterschied zwischen xref:admin:spaces/processes.adoc[Beteiligungsprozessen] und Versammlungen ist, dass Versammlungen keine
 Phasen haben, was bedeutet, dass sie keine Zeitachsen haben.
 
-In diesem Abschnitt der Dokumentation findest du Informationen dazu, wie du all diese Elemente konfigurierst und verwaltest:
+In diesem Abschnitt der Dokumentation finden Sie Informationen dazu, wie Sie all diese Elemente konfigurieren und verwalten:
 
 * xref:admin:spaces/assemblies/types.adoc[Versammlungstypen]
 * xref:admin:spaces/assemblies/assembly_creation.adoc[Versammlung erstellen]
-* xref:admin:spaces/assemblies/components.adoc[Components]
-* xref:admin:spaces/assemblies/categories.adoc[Categories]
-* xref:admin:spaces/assemblies/attachments.adoc[Attachments]
-* xref:admin:spaces/assemblies/members.adoc[Members]
-* xref:admin:spaces/assemblies/admins.adoc[Assembly admins]
-* xref:admin:spaces/assemblies/private_participants.adoc[Private Teilnehmer]
-* xref:admin:spaces/assemblies/moderations.adoc[Moderations]
+* xref:admin:spaces/assemblies/components.adoc[Komponenten]
+* xref:admin:spaces/assemblies/categories.adoc[Kategorien]
+* xref:admin:spaces/assemblies/attachments.adoc[Anhänge]
+* xref:admin:spaces/assemblies/members.adoc[Mitglieder]
+* xref:admin:spaces/assemblies/admins.adoc[Versammlungs-Admins]
+* xref:admin:spaces/assemblies/private_participants.adoc[Private Teilnehmende]
+* xref:admin:spaces/assemblies/moderations.adoc[Moderationen]
 
-=== How to find it?
+=== Wie findet man sie?
 
 Um auf das Versammlungen-Panel zuzugreifen, gehen Sie zum Verwaltungspanel und klicken Sie in der Verwaltungs-
 Navigationsleiste auf den Punkt "Versammlungen".
@@ -67,7 +67,7 @@ image::spaces/assemblies/assemblies_list_filter.png[Assemblies list filtered]
 |Um die Konfiguration und die Komponenten einer Versammlung zu bearbeiten.
 
 |image:icons/action_assemblies.png[Symbol: Unterversammlungen]
-|Schwärmerei
+|Versammlungen
 |Um alle Unterversammlungen einer Versammlung zu verwalten.
 
 |image:icons/action_duplicate.png[Symbol: Versammlung duplizieren]
