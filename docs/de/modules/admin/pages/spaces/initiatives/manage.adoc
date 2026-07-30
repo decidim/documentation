@@ -32,7 +32,7 @@ You can find all the processes on this list with:
 * *Created at*: date of creation of the initiative.
 * *Published at*: date of publication of the initiative.
 
-You can filter and sort this list by clicking the "Filter" button and the columns headers.
+Sie können diese Liste filtern und sortieren, indem Sie auf die Schaltfläche "Filter" und die Spaltenüberschriften klicken.
 You can also search for initiatives by their title in the search bar.
 
 image::spaces/initiatives/initiative_list_filters.png[Initiatives list filtered]
@@ -44,7 +44,7 @@ image::spaces/initiatives/initiative_list_filters.png[Initiatives list filtered]
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
 |To edit the initiative, its attachments, committee members, components, etc.
 
@@ -52,7 +52,7 @@ image::spaces/initiatives/initiative_list_filters.png[Initiatives list filtered]
 |Antwort
 |Allows to xref:admin:spaces/initiatives/admin_manage/answer.adoc[Answer an initiative].
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
 |To see how the initiative looks in the frontend to participants.
 
