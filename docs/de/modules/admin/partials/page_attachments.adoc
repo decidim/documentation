@@ -38,7 +38,7 @@ image:spaces/attachments_new_form.png[Neues Anhang-Formular erstellen]
 |Benötigt
 |Was ist der Titel für diesen Anhang.
 
-|Bestellposition
+|Reihenfolge
 |Optional
 |Which order it has in relation to the other attachments. Eine niedrigere Zahl bedeutet eine höhere Priorität. For instance, if you have two categories, "Attachment a" with weight "10" and "Attachment b" with weight "0" then "Attachment b" will be first when ordering.
 
@@ -52,7 +52,7 @@ image:spaces/attachments_new_form.png[Neues Anhang-Formular erstellen]
 
 |Datei
 |Benötigt
-|Datei hochladen. Anleitung für Datei: Muss ein Bild oder ein Dokument sein. Maximum file size: 10 MB. Erlaubte
+|Datei hochladen. Anleitung für Datei: Muss ein Bild oder ein Dokument sein. Maximale Dateigrösse: 10 MB. Erlaubte
 -Dateierweiterungen hängen von Ihrer Serverkonfiguration ab.
 |===
 
@@ -73,7 +73,7 @@ image:spaces/attachments_new_folder_form.png[Erstellen eines neuen Ordners für 
 |Benötigt
 |Name des Ordners
 
-|Bestellposition
+|Reihenfolge
 |Optional
 |Which order it has in relation to the other folders. Eine niedrigere Zahl bedeutet eine höhere Priorität. For instance, if you have two folders, "Folder a" with weight "10" and "Folder b" with weight "0" then "Folder b" will be first when ordering.
 
@@ -100,11 +100,11 @@ You can also access the folders list by clicking the "Folders" tab on top of the
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
 |To edit the name, description, order position and the folder of the attachment.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
 |To delete the attachment.
 |===
