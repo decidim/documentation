@@ -11,7 +11,7 @@ Conferences landing page is built by default and is not yet configurable.
 
 == Konfiguration
 
-=== General information
+=== Allgemeine Informationen
 
 image::spaces/conferences/conference_new_form_general_info.png[New conference form general info section]
 
@@ -39,7 +39,7 @@ mit einem Buchstaben beginnen.
 
 |Hashtag
 |Optional
-|Hashtag redirecting to the X social network.
+|Hashtag, der auf das soziale Netzwerk X verweist.
 
 |Hervorgehoben
 |Optional
@@ -63,7 +63,7 @@ in the xref:admin:settings/homepage.adoc[Homepage] configuration.
 |Where the conference takes place.
 |===
 
-=== Images
+=== Bilder
 
 image::spaces/conferences/conference_new_form_images.png[New conference form images section]
 
@@ -75,7 +75,7 @@ image::spaces/conferences/conference_new_form_images.png[New conference form ima
 |Home-Bild
 |Optional
 |Image used in presentation cards of this conference. Anleitung für Datei: Muss ein Bild oder ein Dokument sein.
-Für Bilder verwenden Sie vorzugsweise Landschaftsbilder, der Dienst bewirtschaftet das Bild. Maximum file size: 10 MB
+Für Bilder verwenden Sie vorzugsweise Landschaftsbilder, der Dienst bewirtschaftet das Bild. Maximale Dateigrösse: 10 MB
 
 |Bannerbild
 |Optional
@@ -83,10 +83,10 @@ Für Bilder verwenden Sie vorzugsweise Landschaftsbilder, der Dienst bewirtschaf
 das Bild. Maximum file size: 10 MB.
 |===
 
-=== Filters
+=== Filter
 
 This section determines the filters available in the conference, in the different components.
-Filters can then be enabled and configured in each components.
+Filter können anschliessend in jeder Komponente aktiviert und konfiguriert werden.
 
 image::spaces/conferences/conference_new_form_filters.png[New conference form filters section]
 
