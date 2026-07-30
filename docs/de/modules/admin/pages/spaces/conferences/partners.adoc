@@ -22,11 +22,11 @@ image::spaces/conferences/partners.png[Conferences partners]
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
 |To edit this link.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
 |To delete this link.
 |===
@@ -50,7 +50,7 @@ image::spaces/conferences/new_partner.png[Conferences partners form]
 |Benötigt
 |Choose one of these options: Main promoter or Collaborator.
 
-|Bestellposition
+|Reihenfolge
 |Optional
 |Which order it has in relation to the other partners. Eine niedrigere Zahl bedeutet eine höhere Priorität. For instance, if you have two partners, "Partner a" with weight "10" and "Partner b" with weight "0" then "Partner b" is first when ordering.
 
@@ -60,5 +60,5 @@ image::spaces/conferences/new_partner.png[Conferences partners form]
 
 |Logo
 |Benötigt
-|Bildführung: Vorzugsweise ein Querformat ohne Text. Der Dienst erzeugt das Bild. Maximum file size: 5 MB
+|Bildführung: Vorzugsweise ein Querformat ohne Text. Der Dienst erzeugt das Bild. Maximale Dateigrösse: 5 MB
 |===
