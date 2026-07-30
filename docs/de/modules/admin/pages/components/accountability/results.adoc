@@ -1,6 +1,6 @@
 = Rechenschaftsverwaltung
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Ergebnisse sind die Entitäten, die die Rechenschaftskomponente bilden. Sie können mit Vorschlägen, Projekten und Veranstaltungen verknüpft werden und haben
 zugewiesene Status und Daten.
@@ -33,8 +33,8 @@ image::components/accountability/new_result.png[New result form]
 |Optional
 |Beschreibung des Ergebnisses.
 
-|Bereich
-|Abgelehnt
+|Thema
+|Veraltet
 |Bitte verwenden Sie stattdessen link:https://docs.decidim.org/en/develop/develop/taxonomies.html[Klassifizierungen].
 
 |Kategorie
@@ -116,9 +116,9 @@ image::components/accountability/results_list_filter.png[New result button]
 
 |image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
-|Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
+|Um zu sehen, wie es im Frontend den Teilnehmenden gezeigt wird.
 
-|image:icons/action_permissions.png[Permissions icon]
+|image:icons/action_permissions.png[Symbol: Berechtigungen]
 |Berechtigungen
 |Um die Berechtigungen dieses Ergebnisses zu verwalten, abhängig von der Verifizierung, die eine teilnehmende Person hat. Ermöglicht es einem Admin, zu konfigurieren,
 wer ein Ergebnis *kommentieren* kann.
