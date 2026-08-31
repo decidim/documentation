@@ -1,61 +1,61 @@
-= Bereiche
+= Themen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Bereiche sind eine Reihe von Territorien oder Subjekten, die eine Organisation hat. Ein Bereich kann Kindespektraten haben.
+Themen sind eine Reihe von Territorien oder Themenfeldern, die eine Organisation hat. Ein Thema kann Kind-Themen haben.
 
-For instance, in the case of the city of Barcelona the scopes correspond to its districts, and the children of a
-district are its neighborhoods.
-Sie können auch Typen haben, so dass sie zum Beispiel durch thematische und auch territoriale Bereiche konfiguriert werden können.
+Im Fall der Stadt Barcelona entsprechen die Themen beispielsweise ihren Bezirken, und die Unterthemen eines
+Bezirks sind seine Stadtteile.
+Sie können auch Typen haben, so dass sie zum Beispiel durch thematische und auch territoriale Themen konfiguriert werden können.
 
-Die meisten Komponenten und Leerzeichen in Decidim erlauben es Ihnen, die Bereiche auf die eine oder andere Weise zu konfigurieren.
+Die meisten Komponenten und Bereiche in Decidim erlauben es Ihnen, die Themen auf die eine oder andere Weise zu konfigurieren.
 
 image::settings/scopes_list.png[Scopes list]
 
 == Konfiguration
 
-=== Create a scope type
+=== Einen Themen-Typ erstellen
 
-To create a scope type, click the "Add" button in the Scope types tab.
+Um einen Themen-Typ zu erstellen, klicken Sie im Tab Themen-Typen auf die Schaltfläche "Hinzufügen".
 
 image::settings/scopes_types_new_form.png[New scope type form]
 
-.Admin new scope type form
+.Verwaltungsformular für neuen Themen-Typ
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Name
 |Benötigt
-|Name des Scope Typs in Singular.
+|Name des Thementyps im Singular.
 
 |Plural
 |Benötigt
-|Name des Geltungsbereichs im Plural.
+|Name des Thementyps im Plural.
 |===
 
-=== Create a scope
+=== Ein Thema erstellen
 
-To create a scope, click the "Add" button in the Scope tab.
+Um ein Thema zu erstellen, klicken Sie im Tab Thema auf die Schaltfläche "Hinzufügen".
 
 image::settings/scopes_new_form.png[New scope form]
 
-.Admin new scope form
+.Verwaltungsformular für neues Thema
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Name
 |Benötigt
-|Name des Anwendungsbereichs.
+|Name des Themas.
 
 |Code
 |Benötigt
-|Internal identifier of the scope.
+|Interne Kennung des Themas.
 
-|Bereichstyp
+|Thementyp
 |Optional
-|Which type of scope it's related to. It can be blank.
+|Zu welchem Themen-Typ es gehört. Es kann leer bleiben.
 |===
 
 === Aktionen
@@ -65,23 +65,23 @@ image::settings/scopes_new_form.png[New scope form]
 |===
 |Icon |Name |Definition
 
-|image:icons/action_browse.png[Browse icon]
+|image:icons/action_browse.png[Symbol: Durchsuchen]
 |Durchsuchen
-|Sehen und konfigurieren Sie die Kind-Bereiche für diesen Anwendungsbereich.
+|Sehen und konfigurieren Sie die Kind-Themen für dieses Thema.
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
-|Formular für einen Bereich bearbeiten.
+|Formular für ein Thema bearbeiten.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
-|Diesen Bereich löschen.
+|Dieses Thema löschen.
 |===
 
-=== Content filtering
+=== Inhaltsfilterung
 
-Die meisten Leerzeichen und Komponenten ermöglichen es einem Administrator oder einem Teilnehmer, diese einem Anwendungsbereich zuzuordnen.
-Dies erlaubt es, nach Bereichen zu filtern, wenn Sie sie erforschen.
+Die meisten Bereiche und Komponenten ermöglichen es einem Admin oder einem Teilnehmenden, diese einem Thema zuzuordnen.
+Dies erlaubt es, nach Themen zu filtern, wenn Sie sie erforschen.
 
 image::settings/scopes_filter_assemblies.png[Assemblies scopes filtering]
 
@@ -90,18 +90,18 @@ image::settings/scopes_filter_processes.png[Processes scopes filtering]
 Einige Beispiele:
 
 * Mit dem Modul Verantwortlichkeit können Ergebnisse gefiltert werden
-* Schwärmereien und Prozesse können Bereiche haben. Es wird zum Filtern mehrerer Assemblies auf der Hauptseite (/assemblies oder /processes) verwendet. These can be hidden with the "Enable participatory space filters" in the xref:admin:settings/configuration.adoc[configuration].
-* Filtering in the sidebar is also available in some components, where you can control if these filters are shown with the "Scopes enabled" checkbox in the settings. It also enables the scope selector in the resource creation form.
+* Versammlungen und Prozesse können Themen haben. Es wird zum Filtern mehrerer Versammlungen auf der Hauptseite (/assemblies oder /processes) verwendet. Diese können mit "Filter für partizipative Räume aktivieren" in der xref:admin:settings/configuration.adoc[Konfiguration] ausgeblendet werden.
+* Die Filterung in der Seitenleiste ist auch in einigen Komponenten verfügbar, wo Sie mit dem Kontrollkästchen "Themen aktiviert" in den Einstellungen steuern können, ob diese Filter angezeigt werden. Dies aktiviert ausserdem die Themenauswahl im Formular zur Ressourcenerstellung.
 
-You can also configure a participatory space so the filtering only concerns one scope and its children scopes. Stellen wir uns zum Beispiel vor, dass Ihre Organisation 3 verschiedene Bereiche für 3 Städte hat, von denen jeweils Kinder für die Stadtviertel zuständig sind.
-On a participatory space which concerns only one of the cities, you are able to select only this scope and its children so that users do not see the scopes of other cities in the filter options.
+Sie können einen partizipativen Raum auch so konfigurieren, dass sich die Filterung nur auf ein Thema und seine Unterthemen bezieht. Stellen wir uns zum Beispiel vor, dass Ihre Organisation 3 verschiedene Themen für 3 Städte hat, von denen jedes Kind-Themen für die Stadtviertel hat.
+Bei einem partizipativen Raum, der sich nur auf eine der Städte bezieht, können Sie nur dieses Thema und seine Unterthemen auswählen, sodass Nutzende die Themen anderer Städte nicht in den Filteroptionen sehen.
 
-=== User interests and newsletters
+=== Nutzendeninteressen und Newsletter
 
-A participant can choose which scopes they want to follow in its account.
+Eine teilnehmende Person kann in ihrem Konto auswählen, welchen Themen sie folgen möchte.
 
 image::settings/account_my_interests.png[Account: my interests]
 
-This is used in the xref:admin:features/social_features/newsletters.adoc[Newsletters], in the "Select recipients to deliver" step.
+Dies wird bei den xref:admin:features/social_features/newsletters.adoc[Newslettern] im Schritt "Empfänger:innen für den Versand auswählen" verwendet.
 
 image::features/newsletters/newsletter_select_recipients.png[Newsletter: select recipients]

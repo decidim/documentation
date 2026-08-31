@@ -1,14 +1,14 @@
 = Phasen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Ein partizipatorischer Prozess ist eine Abfolge von Phasen, die rechtzeitig bestellt werden. Depending on which phase of the process timeline you
-are, then you can enable and configure the features you need for each phase.
+Ein partizipatorischer Prozess ist eine Abfolge von Phasen, die zeitlich geordnet sind. Je nachdem, in welcher Phase der Prozesszeitachse Sie sich
+befinden, können Sie die für jede Phase benötigten Funktionen aktivieren und konfigurieren.
 
-Ideally, the Phases of a Participatory Process are always the same and are not changed, so participants can know what are
-the rules and timeframe and can organize to know when it'd be best for them to participate in this process.
+Idealerweise sind die Phasen eines Beteiligungsprozesses immer gleich und werden nicht geändert, damit Teilnehmende die
+Regeln und den Zeitrahmen kennen und sich darauf einstellen können, wann es für sie am besten ist, an diesem Prozess teilzunehmen.
 
-For example, the standard structure of a participatory process could be as follows:
+Zum Beispiel könnte die Standardstruktur eines Beteiligungsprozesses wie folgt aussehen:
 
 . Präsentation
 . Diagnose
@@ -17,20 +17,24 @@ For example, the standard structure of a participatory process could be as follo
 . Bewertung von Vorschlägen
 . Überwachung
 
-Participants can find the link to different phases of a participatory process in the "Phase and duration" landing page content block,
-when it's enabled by an administrator in the process xref:admin:spaces/processes/landing_page.adoc[Landing page].
+Teilnehmende finden den Link zu den verschiedenen Phasen eines Beteiligungsprozesses im Inhaltsblock "Phase und Dauer" der Startseite,
+sofern dieser von einem Admin auf der xref:admin:spaces/processes/landing_page.adoc[Startseite] des Prozesses aktiviert wurde.
 
 image::spaces/processes/process_phases_block.png[Block with processes phases link]
 
-When clicking on the link for the active phase, they can see the full description and explanation of the phases in a pop-up.
+Beim Klicken auf den Link für die aktive Phase sehen sie die vollständige Beschreibung und Erklärung der Phasen in einem Pop-up.
 
 image::spaces/processes/process_phases.png[Process phases explanation]
 
+[NOTE]
+Phases can be automatically changed if the scheduled task `decidim_participatory_processes:change_active_step` is configured.
+If you want to manage them manually, then the implementer/operator of the installation needs to disable this scheduled task server-side.
+
 == Konfiguration
 
-=== Manage phases
+=== Phasen verwalten
 
-To access the phases configuration, click in the secondary navigation panel on the "Phases" item.
+Um auf die Konfiguration der Phasen zuzugreifen, klicken Sie im sekundären Navigationspanel auf den Punkt "Phasen".
 
 image::spaces/processes/process_phases_list.png[Phases of a participatory process]
 
@@ -39,38 +43,38 @@ image::spaces/processes/process_phases_list.png[Phases of a participatory proces
 .Aktionen
 [cols="10h,20h,~,~"]
 |===
-|Icon |Name |Definition |Condition
+|Icon |Name |Definition |Bedingung
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
 |Diese Phase bearbeiten.
-|Always available
+|Immer verfügbar
 
-|image:icons/action_activate.png[Activate icon]
+|image:icons/action_activate.png[Symbol: Aktivieren]
 |Aktivieren
 |Um diese Phase zur aktiven zu machen.
-|Only available for inactive phases.
+|Nur für inaktive Phasen verfügbar.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
 |Diese Phase löschen.
-|Always available
+|Immer verfügbar
 |===
 
 === Eine neue Phase erstellen
 
-To create a new phase, click the "New phase" button in the top right of the page.
+Um eine neue Phase zu erstellen, klicken Sie oben rechts auf der Seite auf die Schaltfläche "Neue Phase".
 
 image::spaces/processes/process_phases_new_form.png[Create a new participatory process phase form]
 
-.Create process phase form
+.Formular zur Erstellung einer Prozessphase
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Titel
 |Benötigt
-|The title for this phase, displayed in the phase content block and on the process cards when phase is active.
+|Der Titel für diese Phase, angezeigt im Phasen-Inhaltsblock und auf den Prozesskarten, wenn die Phase aktiv ist.
 
 |Beschreibung
 |Optional
@@ -78,23 +82,23 @@ image::spaces/processes/process_phases_new_form.png[Create a new participatory p
 
 |Startdatum
 |Optional
-|The start date of this process phase. Erwartetes Format: dd/mm/yyy
+|Das Startdatum dieser Prozessphase. Erwartetes Format: dd/mm/yyyy
 
 |Enddatum
 |Optional
-|The end date of this process phase. Erwartetes Format: dd/mm/yyy
+|Das Enddatum dieser Prozessphase. Erwartetes Format: dd/mm/yyyy
 
-|Aktionspfad aufrufen
+|Call-to-Action-Pfad
 |Optional
-|Abgelehnt
+|Veraltet
 
-|Aktionstext aufrufen
+|Call-to-Action-Text
 |Optional
-|Abgelehnt
+|Veraltet
 |===
 
-CAUTION: Configuring the CTA through the Phase of the participatory process is deprecated with the new design.
-Now this is done in the Landing Page, using the Hero and image content block.
+CAUTION: Die Konfiguration der Handlungsaufforderung über die Phase des Beteiligungsprozesses ist mit dem neuen Design veraltet.
+Dies erfolgt nun auf der Startseite über den Inhaltsblock Banner-Bild und Handlungsaufforderung.
 
 == Beispiele
 

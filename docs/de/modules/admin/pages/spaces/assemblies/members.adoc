@@ -1,17 +1,17 @@
-= Assembly Mitglieder
+= Versammlungsmitglieder
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Assembly members allow showing all the participants that belong to a given assembly, whether individuals or groups.
-This is a feature specific to the assemblies space, made for improving transparency of the organization assemblies.
+Versammlungsmitglieder ermöglichen es, alle Teilnehmenden anzuzeigen, die zu einer bestimmten Versammlung gehören, unabhängig davon, ob es sich um Einzelpersonen oder Gruppen handelt.
+Dies ist eine spezifische Funktion des Versammlungsraums, die dazu dient, die Transparenz der Versammlungen der Organisation zu verbessern.
 
 image::spaces/assemblies/assembly_members.png[Assembly members]
 
 == Konfiguration
 
-=== Manage assembly members
+=== Versammlungsmitglieder verwalten
 
-To access the assembly members list, click in the secondary navigation panel on the "Members" item.
+Um auf die Liste der Versammlungsmitglieder zuzugreifen, klicken Sie im sekundären Navigationspanel auf den Punkt "Mitglieder".
 
 image::spaces/assemblies/assembly_members_list.png[Assembly members administration list]
 
@@ -22,58 +22,58 @@ image::spaces/assemblies/assembly_members_list.png[Assembly members administrati
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
-|To edit this member fields.
+|Um die Felder dieses Mitglieds zu bearbeiten.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
-|To delete this member.
+|Um dieses Mitglied zu löschen.
 |===
 
-=== Create an assembly member
+=== Ein Versammlungsmitglied erstellen
 
-To create a new assembly member, click the "New assembly member" button in the top right of the page.
+Um ein neues Versammlungsmitglied zu erstellen, klicken Sie oben rechts auf der Seite auf die Schaltfläche "Neues Versammlungsmitglied".
 
 image::spaces/assemblies/assembly_members_new_form.png[Assembly members new form]
 
-.Neues Assembly-Mitglieds-Formular
+.Neues Versammlungsmitglied-Formular
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Teilnehmertyp
 |Benötigt
-|Wether this assembly member already has an account on the instance or not.
+|Ob dieses Versammlungsmitglied bereits über ein Konto in der Instanz verfügt oder nicht.
 
 |Voller Name
 |Erforderlich.
-|Field displayed if "non participant" was selected.
+|Feld wird angezeigt, wenn "Nicht teilnehmend" ausgewählt wurde.
 
 |Avatar
 |Optional.
-|Field displayed if "non participant" was selected.
+|Feld wird angezeigt, wenn "Nicht teilnehmend" ausgewählt wurde.
 
 |Benutzer oder Gruppe
-|Erforderlich, wenn es ein existierender Teilnehmer ist.
-|Type at least three characters to search for the participant account.
+|Erforderlich, wenn es sich um eine bereits teilnehmende Person handelt.
+|Geben Sie mindestens drei Zeichen ein, um nach dem Teilnehmendenkonto zu suchen.
 
 |Position
 |Benötigt
 |Wählen Sie einen von Präsidenten, Vizepräsidenten, Sekretär oder anderen. Falls es etwas anderes ist, können Sie den Positionstitel eingeben.
 
-|Bestellposition
+|Reihenfolge
 |Optional
-|Which order the members has in relation to the other members. Eine niedrigere Zahl bedeutet eine höhere Priorität.
-For instance, if you have two members, "Member a" with weight "10" and "Member b" with weight "0" then "Member b" is first when ordering.
+|Welche Reihenfolge das Mitglied im Verhältnis zu den anderen Mitgliedern hat. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+Wenn Sie zum Beispiel zwei Mitglieder haben, "Mitglied a" mit der Gewichtung "10" und "Mitglied b" mit der Gewichtung "0", dann steht "Mitglied b" bei der Sortierung an erster Stelle.
 
 |Benennungsdatum
 |Benötigt
-|When this person or group was assigned as a member of this assembly. Expected format: dd/mm/yyyy.
+|Wann diese Person oder Gruppe als Mitglied dieser Versammlung zugewiesen wurde. Erwartetes Format: tt/mm/jjjj.
 
 |Enddatum
 |Optional
-|When this person or group ceased to be a member of this assembly. Expected format: dd/mm/yyyy.
+|Wann diese Person oder Gruppe aufgehört hat, Mitglied dieser Versammlung zu sein. Erwartetes Format: tt/mm/jjjj.
 
 |Geschlecht
 |Optional
@@ -81,7 +81,7 @@ For instance, if you have two members, "Member a" with weight "10" and "Member b
 
 |Geburtstag
 |Optional
-|Wann wurde diese Person geboren. Expected format: dd/mm/yyyy.
+|Wann wurde diese Person geboren. Erwartetes Format: tt/mm/jjjj.
 
 |Geburtsort
 |Optional

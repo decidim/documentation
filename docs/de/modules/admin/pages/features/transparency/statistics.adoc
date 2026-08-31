@@ -1,38 +1,38 @@
 = Statistiken
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Decidim liefert allgemeine Statistiken über die gesamte Plattform und verschiedene Beteiligungsräume können auch Statistiken über diesen partizipatorischen Raum liefern.
 Dies sind generische Zahlen, die die Aktivität der Website angeben und können auch andere Menschen ermutigen, der Plattform beizutreten, wie sie es für beliebt halten.
 
-=== How to find it?
+=== Wie findet man sie?
 
 ==== Statistiken
 
-The homepage configuration allows administrators to enable a statistics content block to be displayed on the homepage.
+Die Startseitenkonfiguration ermöglicht es Admins, einen Statistik-Inhaltsblock zu aktivieren, der auf der Startseite angezeigt wird.
 
 image::features/metrics/homepage_stats.png[Example of statistics content block]
 
-Administrators can also enable metrics in a participatory process or an assembly landing page.
+Admins können Metriken zudem auf der Startseite eines Beteiligungsprozesses oder einer Versammlung aktivieren.
 
 image::features/metrics/example_stats.png[Example of statistics]
 
 ==== Metriken
 
-NOTE: Sie suchen nach technischen Möglichkeiten, um diese Funktion zu aktivieren? Go to xref:develop:metrics.adoc[Metrics in Developers guide].
+NOTE: Sie suchen nach technischen Möglichkeiten, um diese Funktion zu aktivieren? Gehen Sie zu xref:develop:metrics.adoc[Metriken im Entwicklerleitfaden].
 
-With metrics, participants can see the evolution in time of some resources, such as Proposals, Supports, Endorsements, Followers, Participants, Accepted proposals, Comments, etc.
+Mit Metriken können Teilnehmende die zeitliche Entwicklung einiger Ressourcen sehen, wie zum Beispiel Vorschläge, Unterstützungen, Befürwortungen, Follower, Teilnehmende, angenommene Vorschläge, Kommentare usw.
 
-The homepage configuration allows administrators to enable a metrics content block to be displayed on the homepage.
+Die Startseitenkonfiguration ermöglicht es Admins, einen Metriken-Inhaltsblock zu aktivieren, der auf der Startseite angezeigt wird.
 
 image::features/metrics/homepage.png[Example of metrics content block]
 
-Administrators can also enable metrics in a participatory process landing page.
+Admins können Metriken zudem auf der Startseite eines Beteiligungsprozesses aktivieren.
 
 Ein Beispiel dafür finden Sie unter https://meta.decidim.org/processes/roadmap/all-metrics[Metadecidim Roadmap].
 
 image::features/metrics/example.png[Example of metrics]
 
-By clicking in the "Show all" button visitors can see other metrics and download this data in CSV format.
+Durch Klicken auf die Schaltfläche "Alle anzeigen" können Besuchende weitere Metriken einsehen und diese Daten im CSV-Format herunterladen.
 
-image:features/metrics/page.png[Metriks-Seite]
+image:features/metrics/page.png[Metriken-Seite]

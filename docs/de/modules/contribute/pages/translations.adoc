@@ -9,7 +9,7 @@ Da Decidim ein lebendiger und in ständiger Entwicklung befindlicher Prozess ist
 
 == Vorhandene Sprache
 
-Du kannst in der Sprache deiner Wahl um Erlaubnis bitten, zum Beispiel für Esperanto:
+Sie können in der Sprache Ihrer Wahl um Erlaubnis bitten, zum Beispiel für Esperanto:
 
 image::translation-join-01.png[Join to Decidim Translations]
 
@@ -21,13 +21,13 @@ Wenn Ihre Sprache noch nicht erstellt wurde, dann müssen wir es tun, da es notw
 
 == So funktioniert es
 
-If you're curious, in the technical level we have a bot (the great decidim-bot) that periodically makes a PR to the relevant branches (last releases and develop).
+Falls Sie neugierig sind: Auf technischer Ebene haben wir einen Bot (den grossartigen decidim-bot), der regelmässig einen PR in die relevanten Branches (letzte Releases und develop) erstellt.
 
 image::translation-bot.png[Decidim Bot in GitHub]
 
-Wenn Sie eine neue Übersetzung ausprobieren wollen, bevor sie freigegeben wird, dann können Sie dies tun, indem Sie auf das xref:install:update verweisen. doc#_from_git_repositories[relevanter Branch], zum Beispiel `chore/l10n/develop`.
+Wenn Sie eine neue Übersetzung ausprobieren wollen, bevor sie freigegeben wird, dann können Sie dies tun, indem Sie auf den xref:install:update.adoc#_from_git_repositories[relevanten Branch] verweisen, zum Beispiel `chore/l10n/develop`.
 
-=== Überprüfe Gebietsschemata
+=== Gebietsschemata überprüfen
 
 Sie können sicherstellen, dass neue Übersetzungen für alle Sprachen Ihrer Anwendung vollständig sind mit:
 
@@ -49,7 +49,7 @@ Wenn Sie 100% in Ihrer Crowdin-Sprache haben, können Sie ziemlich sicher sein, 
 
 == Regeln
 
-* Alle Übersetzungen beginnen immer bei Englisch. Wenn Sie Änderungen an der englischen Sprache vorschlagen wollen, dann müssen Sie dies in den Ruby on Rails Übersetzungen Dateien direkt tun (wie `decidim-core/config/locales/de). ml`)
-* Für jede Sprache (außer Englisch) können Sie keine Änderungen in den Ruby on Rails Übersetzungsdateien direkt vornehmen (zum Beispiel `decidim-core/config/locales/es. ml`) da diese Übersetzungen in Zukunft von Dezimalbot ungültig gemacht werden könnten. Siehe Abschnitt "Wie es funktioniert".
-* Wir versuchen, von Teilnehmern anstelle von Benutzern zu sprechen, wenn es möglich ist
-* Auf Spanisch und Katalanisch folgen wir https://de.wikipedia.org/wiki/Gender_neutrality_in_Spanish[Gender Neutrality]
+* Alle Übersetzungen beginnen immer bei Englisch. Wenn Sie Änderungen an der englischen Sprache vorschlagen wollen, dann müssen Sie dies direkt in den Ruby-on-Rails-Übersetzungsdateien tun (wie `decidim-core/config/locales/en.yml`)
+* Für jede Sprache (außer Englisch) können Sie keine Änderungen in den Ruby on Rails Übersetzungsdateien direkt vornehmen (zum Beispiel `decidim-core/config/locales/es.yml`), da diese Übersetzungen in Zukunft von decidim-bot ungültig gemacht werden könnten. Siehe Abschnitt "Wie es funktioniert".
+* Wir versuchen, von Teilnehmenden anstelle von Nutzenden zu sprechen, wenn es möglich ist
+* Auf Spanisch und Katalanisch folgen wir https://en.wikipedia.org/wiki/Gender_neutrality_in_Spanish[Gender Neutrality]

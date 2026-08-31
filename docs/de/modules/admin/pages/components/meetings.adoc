@@ -1,39 +1,39 @@
 = Meetings
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-The Meetings component allows administrators to organize, advertise, deal with registration and wrap up in-person or online meetings.
-Depending on the component configuration, meetings can be created only by administrators, or also by participants.
+Die Veranstaltungen-Komponente ermöglicht es Admins, persönliche oder Online-Veranstaltungen zu organisieren, zu bewerben, deren Anmeldungen zu verwalten und abzuschliessen.
+Je nach Konfiguration der Komponente können Veranstaltungen nur von Admins oder auch von Teilnehmenden erstellt werden.
 
-In this documentation section, you can find how to configure and manage all of those items:
+In diesem Abschnitt der Dokumentation finden Sie Informationen dazu, wie Sie all diese Elemente konfigurieren und verwalten:
 
-* xref:admin:components/meetings/meetings.adoc[Meetings creation]: Create official or participant meetings.
-* xref:admin:components/meetings/registrations.adoc[Registrations]: Manage how participants can register to attend the meetings.
-* xref:admin:components/meetings/agenda.adoc[Agenda]: Announce the meetings topics to be discussed.
-* xref:admin:components/meetings/polls.adoc[Polls]: Enable quick voting during an online meeting.
-* xref:admin:components/meetings/close.adoc[Close]: Add the final report and minutes of the meeting.
+* xref:admin:components/meetings/meetings.adoc[Veranstaltungserstellung]: Offizielle Veranstaltungen oder Veranstaltungen von Teilnehmenden erstellen.
+* xref:admin:components/meetings/registrations.adoc[Anmeldungen]: Verwalten, wie sich Teilnehmende für die Teilnahme an den Veranstaltungen anmelden können.
+* xref:admin:components/meetings/agenda.adoc[Traktandenliste]: Die zu besprechenden Themen der Veranstaltungen ankündigen.
+* xref:admin:components/meetings/polls.adoc[Umfragen]: Schnelle Abstimmungen während einer Online-Veranstaltung ermöglichen.
+* xref:admin:components/meetings/close.adoc[Abschliessen]: Den Abschlussbericht und das Protokoll der Veranstaltung hinzufügen.
 
 image::components/meetings/example01.png[Example meeting detail 01]
 
 == Konfiguration
 
-To create a Meetings component, first go to the xref:admin:spaces.adoc[participatory space] where you want to create it.
+Um eine Veranstaltungen-Komponente zu erstellen, gehen Sie zunächst zum xref:admin:spaces.adoc[partizipativen Raum], in dem Sie sie erstellen möchten.
 
 image::components/meetings/component_meeting.png[Add Meetings component button]
 
-Then:
+Dann:
 
-. Click on the "Components" item in the secondary menu
-. Click the "Add component" button
-. Select "Meetings"
-. Fill the component creation form
+. Klicken Sie im Sekundärmenü auf den Punkt "Komponenten"
+. Klicken Sie auf die Schaltfläche "Komponente hinzufügen"
+. Wählen Sie "Veranstaltungen"
+. Füllen Sie das Formular zur Komponentenerstellung aus
 
-You can still update this form and the configuration after creating the component, by clicking the
-image:icons/action_configure.png[Configure icon] icon in the components list.
+Sie können dieses Formular und die Konfiguration auch nach der Erstellung der Komponente noch aktualisieren, indem Sie in der Komponentenliste auf das
+      image:icons/action_configure.png[Symbol: Konfigurieren] Konfigurieren-Symbol klicken.
 
 image::components/meetings/component.png[Add a meetings component]
 
-.Komponente hinzufügen - Meetings Formular
+.Komponente hinzufügen - Meetings-Formular
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
@@ -42,11 +42,11 @@ image::components/meetings/component.png[Add a meetings component]
 |Benötigt
 |Wie lautet der Name dieser Komponente.
 
-|Bestellposition
+|Reihenfolge
 |Optional
-|The order of the component in relation with the other components. Eine niedrigere Zahl bedeutet eine höhere Priorität.
-For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0"
-then "component b" is first when ordering.
+|Die Reihenfolge der Komponente im Verhältnis zu den anderen Komponenten. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+Wenn Sie beispielsweise zwei Komponenten haben, "Komponente a" mit der Gewichtung "10" und "Komponente b" mit der Gewichtung "0",
+steht "Komponente b" bei der Sortierung an erster Stelle.
 |===
 
 .Komponente hinzufügen - Meeting-Formular: Globale Einstellungen
@@ -54,33 +54,33 @@ then "component b" is first when ordering.
 |===
 |Feld |Typ |Beschreibung
 
-|Bereiche aktiviert
+|Themen aktiviert
 |Optional
-|Aktivieren, wenn die Bereichsfilterung in dieser Komponente erfolgen soll.
+|Aktivieren, wenn die Themenfilterung in dieser Komponente erfolgen soll.
 
-|Bereich
+|Thema
 |Optional
-|Which xref:admin:settings/scopes.adoc[Scopes] does this component belongs to.
+|Zu welchen xref:admin:settings/scopes.adoc[Themen] diese Komponente gehört.
 
 |Mitteilung
 |Optional
-|A general announcement visible in the meetings list in the participant interface.
+|Eine allgemeine Ankündigung, die in der Veranstaltungsliste in der Teilnehmenden-Oberfläche sichtbar ist.
 
 |Standard-Registrierungsbedingungen
 |Optional
-|The registration terms of service that the participant need to accept when registering.
+|Die Anmeldebedingungen, die die teilnehmende Person bei der Anmeldung akzeptieren muss.
 
 |Kommentare aktiviert
 |Optional
-|Whether you want to have comments creation enabled in the meetings.
+|Ob Sie das Erstellen von Kommentaren bei den Veranstaltungen aktivieren möchten.
 
 |Maximale Länge der Kommentare
 |Optional
-|The characters limit that participants have when making comments. Lassen Sie 0 für den Standardwert.
+|Das Zeichenlimit, das Teilnehmenden beim Verfassen von Kommentaren zur Verfügung steht. Lassen Sie 0 für den Standardwert.
 
 |Registrierungscode aktiviert
 |Optional
-|Check if you want to automatically give registration codes to participants.
+|Aktivieren Sie dies, wenn Teilnehmenden automatisch Anmeldecodes zugeteilt werden sollen.
 Erfahren Sie mehr unter xref:components/meetings/registrations.adoc[Registrations].
 
 |Aktionsberechtigungen können für jedes Meeting festgelegt werden
@@ -89,15 +89,15 @@ Erfahren Sie mehr unter xref:components/meetings/registrations.adoc[Registration
 
 |Pad-Erstellung aktivieren
 |Optional
-|Wenn Sie möchten, dass ein Etherpad in Ihre Meetings eingebettet ist. Must have the xref:services:etherpad.adoc[Etherpad] integration configured.
+|Wenn Sie möchten, dass ein Etherpad in Ihre Meetings eingebettet ist. Die xref:services:etherpad.adoc[Etherpad]-Integration muss konfiguriert sein.
 
-|Teilnehmer können Meetings erstellen
+|Teilnehmende können Meetings erstellen
 |Optional
-|Erlaubt Teilnehmern neue Meetings zu erstellen. Learn more in xref:components/meetings/meetings.adoc#_participants_meetings[Participants meetings].
+|Erlaubt Teilnehmern neue Meetings zu erstellen. Weitere Informationen finden Sie unter xref:components/meetings/meetings.adoc#_participants_meetings[Veranstaltungen von Teilnehmenden].
 
 |Karten aktiviert
 |Optional
-|Whether you want to show a map with the meetings addresses in the meetings list and pages.
+|Ob Sie eine Karte mit den Adressen der Veranstaltungen in der Veranstaltungsliste und auf den Seiten anzeigen möchten.
 |===
 
 .Komponente hinzufügen - Meeting-Formular: Schritteinstellungen
@@ -107,16 +107,16 @@ Erfahren Sie mehr unter xref:components/meetings/registrations.adoc[Registration
 
 |Mitteilung
 |Optional
-|A general announcement visible in the general meetings list for this phase.
+|Eine allgemeine Ankündigung, die in der allgemeinen Veranstaltungsliste für diese Phase sichtbar ist.
 
 |Kommentare aktiviert
 |Optional
-|Whether you want to have comments creation enabled in the meetings for this phase.
+|Ob Sie das Erstellen von Kommentaren bei den Veranstaltungen für diese Phase aktivieren möchten.
 |===
 
 == Beispiele
 
-Some examples of where this component is used:
+Einige Beispiele, wo diese Komponente verwendet wird:
 
 * https://www.decidim.barcelona/processes/PAM2020/f/3734/[Program d'Actuació Municipal (PAM) 2020-2023]
-* https://meta.decidim.org/assemblies/coordination-committee/f/1037/meetings[The Decidim association coordination committee meetings]
+* https://meta.decidim.org/assemblies/coordination-committee/f/1037/meetings[Veranstaltungen des Koordinationsausschusses des Decidim-Vereins]

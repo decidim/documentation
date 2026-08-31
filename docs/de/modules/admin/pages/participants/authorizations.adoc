@@ -1,48 +1,48 @@
 = Autorisierungen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Authorizations allow to give specific participation rights to participants who have completed a verification process.
-This verification process can be direct, have multiple steps, be online or in-person.
+Berechtigungen ermöglichen es, teilnehmenden Personen, die einen Verifizierungsprozess abgeschlossen haben, spezifische Teilnahmerechte zu gewähren.
+Dieser Verifizierungsprozess kann direkt erfolgen, mehrere Schritte umfassen sowie online oder persönlich stattfinden.
 
-For instance you can configure that only participants who have verified themselves by their identity documents can vote on
-proposals in a specific participatory process.
+Sie können beispielsweise konfigurieren, dass nur Teilnehmende, die sich mit ihren Ausweisdokumenten verifiziert haben, über
+Vorschläge in einem bestimmten Beteiligungsprozess abstimmen können.
 
-NOTE: Several authorizations are available by default, but you can also develop your own authorizations.
+NOTE: Standardmässig sind mehrere Berechtigungen verfügbar, Sie können jedoch auch eigene Berechtigungen entwickeln.
 
 == Konfiguration
 
-=== Enable / disable authorizations
+=== Berechtigungen aktivieren/deaktivieren
 
-To enable an authorization, you need to have access to the xref:configure:system.adoc[System panel] or ask the instance implementer.
-To understand more what are authorizations and how to configure them, please refer to the
-xref:customize:authorizations.adoc[Authorizations section in the Customize Guide].
+Um eine Berechtigung zu aktivieren, benötigen Sie Zugriff auf das xref:configure:system.adoc[Systempanel] oder müssen die für die Implementierung Ihrer Instanz zuständige Person fragen.
+Um mehr darüber zu erfahren, was Berechtigungen sind und wie Sie diese konfigurieren, lesen Sie bitte den
+xref:customize:authorizations.adoc[Abschnitt Berechtigungen im Customize Guide].
 
-Participants can access, update, or delete their authorizations in their xref:admin:features/participant_actions/my_account.adoc[account].
+Teilnehmende können in ihrem xref:admin:features/participant_actions/my_account.adoc[Konto] auf ihre Berechtigungen zugreifen, sie aktualisieren oder löschen.
 
 === Verifizierungsmethoden
 
-Einige der verfügbaren Autorisierungen sind standardmäßig:
+Einige der verfügbaren Autorisierungen sind standardmässig:
 
 * xref:admin:participants/authorizations/identity_documents.adoc[Identifizierungsdokumente]
-* xref:admin:participants/authorizations/code_postal_letter.adoc[Postleitzahlen]
-* xref:admin:participants/authorizations/census.adoc[Organization's census]
+* xref:admin:participants/authorizations/code_postal_letter.adoc[Code per Post]
+* xref:admin:participants/authorizations/census.adoc[Zählung der Organisation]
 
-Wenn eine dieser Genehmigungen nicht für Ihre Bedürfnisse nützlich ist, sprechen Sie mit Ihrem Implementierer, um andere Alternativen zu sehen. Erfahren Sie
-mehr über xref:customize:authorizations.adoc[Autorisationen im Abschnitt Leitfaden anpassen].
+Wenn eine dieser Autorisierungen nicht für Ihre Bedürfnisse nützlich ist, sprechen Sie mit Ihrem Implementierer, um andere Alternativen zu sehen. Erfahren Sie
+mehr über xref:customize:authorizations.adoc[Autorisierungen im Abschnitt Leitfaden anpassen].
 
 === Widerruf der Autorisierungen
 
-A default Decidim installation don't have verified participants.
+Eine Standard-Decidim-Installation hat keine verifizierten Teilnehmenden.
 
 image::participants/authorizations_admin_default.png[Authorizations in a default installation]
 
-From the moment some participants get verified with an authorization, administrators can revoke all the authorizations at once.
-Indeed, after some time, some of the verifications can be deprecated.
-For instance, identity documents expire after some time, or participants can move from a city.
-Then, an administrator can want to force participants to renew their verification information.
+Sobald einige Teilnehmende mit einer Berechtigung verifiziert wurden, können Admins alle Berechtigungen auf einmal entziehen.
+Tatsächlich können einige Verifizierungen nach einiger Zeit veraltet sein.
+Zum Beispiel laufen Ausweisdokumente nach einiger Zeit ab, oder Teilnehmende ziehen aus einer Stadt weg.
+In diesem Fall möchte ein Admin möglicherweise Teilnehmende dazu zwingen, ihre Verifizierungsinformationen zu erneuern.
 
-image:participants/authorizations_admin_revocation.png[Authorizations revocation]
+image:participants/authorizations_admin_revocation.png[Widerruf von Berechtigungen]
 
-It's possible to revoke all the authorizations with "Revoke all," or to only revoke authorizations created before a given date.
-Another possibility is to revoke only the verifications for xref:admin:participants/impersonations.adoc[impersonated participants].
+Es ist möglich, alle Berechtigungen mit "Alle entziehen" zu entziehen oder nur Berechtigungen zu entziehen, die vor einem bestimmten Datum erstellt wurden.
+Eine weitere Möglichkeit besteht darin, nur die Verifizierungen für xref:admin:participants/impersonations.adoc[Teilnehmende mit angenommener Identität] zu entziehen.
