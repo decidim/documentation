@@ -1,34 +1,34 @@
-= Groups profiles
+= Gruppenprofile
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-As a participant, you might want to create a user group for you association, your company, your club, etc.
-If an administrator verifies that you are entitled to represent this group, then you are able to participate in the instance in the
-name of the group.
+Als teilnehmende Person möchten Sie vielleicht eine Benutzergruppe für Ihren Verein, Ihr Unternehmen, Ihren Club usw. erstellen.
+Wenn ein Admin bestätigt, dass Sie berechtigt sind, diese Gruppe zu vertreten, können Sie in der Instanz im
+Namen der Gruppe teilnehmen.
 
-NOTE: The group creation option is only available when groups are enabled for the organization.
-You can ask an administrator of the platform or enable it from the xref:admin:settings/configuration.adoc[Configuration] panel.
+NOTE: Die Option zur Gruppenerstellung ist nur verfügbar, wenn Gruppen für die Organisation aktiviert sind.
+Sie können einen Admin der Plattform darum bitten, oder es im Panel xref:admin:settings/configuration.adoc[Konfiguration] aktivieren.
 
 == Konfiguration
 
-=== Create a group
+=== Eine Gruppe erstellen
 
-To create a group, click the "Create group" button in your public profile.
+Um eine Gruppe zu erstellen, klicken Sie in Ihrem öffentlichen Profil auf die Schaltfläche "Gruppe erstellen".
 
 image::features/my_profile/profile_create_group.png[Public profile group creation form]
 
-.Group creation form
+.Formular zur Gruppenerstellung
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Name
 |Benötigt
-|Name of the organization, association, collective, group, etc.
+|Name der Organisation, des Vereins, des Kollektivs, der Gruppe usw.
 
 |Spitzname
 |Benötigt
-|Nickname of the organization, association, collective, group, etc. Verwenden Sie keine Leerzeichen oder Akzenten.
+|Spitzname der Organisation, des Vereins, des Kollektivs, der Gruppe usw. Verwenden Sie keine Leerzeichen oder Akzente.
 
 |E-Mail
 |Benötigt
@@ -36,67 +36,67 @@ image::features/my_profile/profile_create_group.png[Public profile group creatio
 
 |Avatar
 |Optional
-|Avatar of your organization, that is displayed as a user avatar. Can be a logo, a picture, etc.
+|Avatar Ihrer Organisation, der als Benutzeravatar angezeigt wird. Kann ein Logo, ein Bild usw. sein.
 
 |Über
 |Optional
-|More information about your organization. This is publicly displayed on the user group profile page.
+|Weitere Informationen über Ihre Organisation. Dies wird öffentlich auf der Profilseite der Benutzergruppe angezeigt.
 
 |Dokumentennummer
 |Optional
-|Fill this field if you want an administrator to verify the authenticity of your user group.
+|Füllen Sie dieses Feld aus, wenn ein Admin die Echtheit Ihrer Benutzergruppe verifizieren soll.
 
 |Telefon
 |Optional
-|Fill this field if you want an administrator to be able to call someone in your organization to
-verify the authenticity of the user group.
+|Füllen Sie dieses Feld aus, wenn ein Admin jemanden in Ihrer Organisation anrufen können soll, um
+die Echtheit der Benutzergruppe zu verifizieren.
 |===
 
-The user group is visible on the platform as soon as you create it. After its creation, you are redirected to the
-user group profile page.
+Die Benutzergruppe ist auf der Plattform sichtbar, sobald Sie sie erstellen. Nach der Erstellung werden Sie auf die
+Profilseite der Benutzergruppe weitergeleitet.
 
-User groups profiles pages display:
+Die Profilseiten von Benutzergruppen zeigen:
 
-* Members: Members of the groups, and who are the administrators.
-* Badges: User group badges.
-* Followers: Participants can also follow user groups.
+* Mitglieder: Mitglieder der Gruppe und wer die Admins sind.
+* Abzeichen: Abzeichen der Benutzergruppe.
+* Follower: Teilnehmende können Benutzergruppen auch folgen.
 
-=== Manage a group
+=== Eine Gruppe verwalten
 
-Nach der Bildung einer Gruppe ist es möglich, Teilnehmer einzuladen, Mitglieder der Gruppe zu werden.
-Nachdem ein Teilnehmer akzeptiert hat, dieser Gruppe beizutreten, kann er Admin-Mitglied werden.
+Nach der Bildung einer Gruppe ist es möglich, Teilnehmende einzuladen, Mitglieder der Gruppe zu werden.
+Nachdem eine teilnehmende Person der Aufnahme in diese Gruppe zugestimmt hat, kann sie Admin werden.
 
-The actions that can be done by a user group administrator are:
+Die Aktionen, die ein Admin einer Benutzergruppe durchführen kann, sind:
 
 * Gruppenprofil bearbeiten
 * Mitglieder verwalten
-* Administratoren verwalten
-* Invite participant
+* Admins verwalten
+* Teilnehmende einladen
 * Gruppe verlassen
 
 image::features/my_profile/profile_manage_group.png[Public profile group drop down menu]
 
 ==== Mitglieder verwalten
 
-On this page, you can accept or refuse participants requests to join your group, but also promote group members to administrators
-or remove them from the group.
+Auf dieser Seite können Sie Beitrittsanfragen von Teilnehmenden zu Ihrer Gruppe annehmen oder ablehnen, aber auch Gruppenmitglieder zu Admins befördern
+oder sie aus der Gruppe entfernen.
 
 image::features/my_profile/user_group_manage_participant.png[User groups: manage participants]
 
-==== Manage administrators
+==== Admins verwalten
 
-On this page, you can only remove group administrator rights, but it won't remove the participant from the group.
+Auf dieser Seite können Sie nur die Admin-Rechte in der Gruppe entziehen, wodurch die teilnehmende Person jedoch nicht aus der Gruppe entfernt wird.
 
 image::features/my_profile/user_group_manage_admins.png[User groups: manage admins]
 
-==== Invite participants
+==== Teilnehmende einladen
 
-To invite a participant, they need to have an account on the platform.
-You can invite them with their nickname.
+Um eine teilnehmende Person einzuladen, muss sie ein Konto auf der Plattform haben.
+Sie können sie über ihren Spitznamen einladen.
 
 image::features/my_profile/user_group_invite_participant.png[User groups: invite a participant]
 
-Then, they receive an invitation to join the group. They can accept it or not.
+Anschliessend erhält sie eine Einladung, der Gruppe beizutreten. Sie kann diese annehmen oder ablehnen.
 
 ==== Unterhaltungen
 
@@ -104,17 +104,17 @@ Sie können auch Gespräche als Gruppe führen.
 
 image::features/my_profile/user_group_conversation.png[User group: conversations]
 
-=== Participate as a group
+=== Als Gruppe teilnehmen
 
-NOTE: For user group administrators to be able to participate as a group, an administrator of the instance must have verified it.
+NOTE: Damit Admins einer Benutzergruppe als Gruppe teilnehmen können, muss ein Admin der Instanz die Gruppe verifiziert haben.
 
-The interest of having an administrator verify the user group is that you can then participate to the platform as a group,
-and create debates, proposals, meetings, comments, etc.
+Der Vorteil, wenn ein Admin die Benutzergruppe verifiziert, besteht darin, dass Sie dann als Gruppe an der Plattform teilnehmen
+und Debatten, Vorschläge, Veranstaltungen, Kommentare usw. erstellen können.
 
-Administrators of the user group can for example comment in the name of their group.
+Admins der Benutzergruppe können zum Beispiel im Namen ihrer Gruppe kommentieren.
 
 image::features/my_profile/user_group_make_comment.png[User group: make a comment]
 
-They can also choose to endorse a debate or a proposal in the name of their group and / or in their own name.
+Sie können auch wählen, eine Debatte oder einen Vorschlag im Namen ihrer Gruppe und/oder in ihrem eigenen Namen zu unterstützen.
 
 image::features/my_profile/user_group_endorse.png[User group: endorse]

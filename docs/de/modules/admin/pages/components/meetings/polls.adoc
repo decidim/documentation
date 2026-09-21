@@ -1,62 +1,62 @@
 = Umfragen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Meeting polls allow administrators to define questions for a meeting, that participants can answer
-while it's happening. It can be very useful to gather quick feedback and make decisions during meetings without having to leave the meeting and use
-other kind of tools.
+Veranstaltungsumfragen ermöglichen es Admins, Fragen für eine Veranstaltung zu definieren, die Teilnehmende beantworten können,
+während diese stattfindet. Dies kann sehr nützlich sein, um schnelles Feedback zu sammeln und während Veranstaltungen Entscheidungen zu treffen, ohne die Veranstaltung verlassen und
+andere Arten von Tools verwenden zu müssen.
 
-With this feature, administrators can define questions and manage when these questions and their results are shown
-to participants.
+Mit dieser Funktion können Admins Fragen definieren und festlegen, wann diese Fragen und ihre Ergebnisse
+Teilnehmenden angezeigt werden.
 
 == Konfiguration
 
-=== Create poll
+=== Umfrage erstellen
 
-To configure polls for a specific meeting, click the image:icons/action_list.png[Manage polls button] "Manage polls" button.
+Um Umfragen für eine bestimmte Veranstaltung zu konfigurieren, klicken Sie auf die Schaltfläche image:icons/action_list.png[Symbol: Umfragen verwalten] "Umfragen verwalten".
 
 image::components/meetings/polls/backend.png[Backend for meeting polls]
 
-.Polls questions form
+.Formular für Umfragefragen
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Anweisung
 |Benötigt
-|Title for the question
+|Titel für die Frage
 
 |Typ
 |Benötigt
-|Choose between single or multiple options question.
+|Wählen Sie zwischen einer Frage mit Einzel- oder Mehrfachauswahl.
 
-|Answer options
+|Antwortoptionen
 |Benötigt
-|Each possible answer.
+|Jede mögliche Antwort.
 |===
 
-You can add as many questions and answer options as you want.
+Sie können so viele Fragen und Antwortoptionen hinzufügen, wie Sie möchten.
 
-=== Manage poll
+=== Umfrage verwalten
 
-Prior to the meeting, if the administrators already configured the polls questions, participants can see a button "Reply poll"
-on the meeting page, warning them that a poll is going to be published on this meeting.
+Vor der Veranstaltung, sofern die Admins die Umfragefragen bereits konfiguriert haben, sehen Teilnehmende auf der Veranstaltungsseite eine Schaltfläche "Umfrage beantworten",
+die sie darauf hinweist, dass bei dieser Veranstaltung eine Umfrage veröffentlicht wird.
 
 image::components/meetings/polls/frontend_before_meeting.png[Reply poll page before meeting]
 
-When the meeting starts, the administrator can go to the poll administration page in the frontend to start sending the questions
-to the participants.
+Wenn die Veranstaltung beginnt, kann der Admin im Frontend zur Umfrageverwaltungsseite gehen, um mit dem Versenden der Fragen
+an die Teilnehmenden zu beginnen.
 
 image::components/meetings/polls/poll_administration_page.png[Polls administration page]
 
-On their end, once a question is sent, the participants see it appear on the polls page, and can answer it.
+Sobald eine Frage gesendet wurde, sehen die Teilnehmenden sie auf der Umfrageseite erscheinen und können sie beantworten.
 
 image::components/meetings/polls/poll_participant_reply.png[Polls question for participant]
 
-Then, administrators can decide to send the questions results to participants, so they know what option is the most voted.
+Anschliessend können Admins entscheiden, die Ergebnisse der Fragen an die Teilnehmenden zu senden, damit diese wissen, welche Option am meisten Stimmen erhalten hat.
 
 image::components/meetings/polls/poll_participant_replies_sent.png[Polls replies view for participant]
 
 === Exportieren
 
-Participants' answers can be exported through the "Export all" button in CSV, JSON, Excel and PDF.
+Die Antworten der Teilnehmenden können über die Schaltfläche "Alle exportieren" im CSV-, JSON-, Excel- und PDF-Format exportiert werden.

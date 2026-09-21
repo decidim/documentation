@@ -1,41 +1,41 @@
 = Räume
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Participatory spaces are the channels through which citizens can take part in public decision-making.
-By default, an instance is provided with those different spaces:
+Partizipative Räume sind die Kanäle, über die die Bevölkerung an öffentlichen Entscheidungsprozessen teilnehmen kann.
+Standardmässig verfügt eine Instanz über diese verschiedenen Räume:
 
 
 .Beteiligte Räume
 |===
-|Name |Beschreibung |Use cases
+|Name |Beschreibung |Anwendungsfälle
 
-|*xref:admin:spaces/processes.adoc[Participatory Processes]*
-|A participatory process allows administrators to configure different participatory components, which evolve over different participatory phases.
-|Participatory budgeting, Proposal recollection, Voting or debate process, etc.
+|*xref:admin:spaces/processes.adoc[Beteiligungsprozesse]*
+|Ein Beteiligungsprozess ermöglicht es Admins, verschiedene partizipative Komponenten zu konfigurieren, die sich über verschiedene Beteiligungsphasen entwickeln.
+|Partizipative Budgetierung, Sammlung von Vorschlägen, Abstimmungs- oder Debattenprozess usw.
 
-|*xref:admin:spaces/assemblies.adoc[Assemblies]*
-|An assembly allows administrators to configure participatory components in a continued space, with the possibility to define members.
-|Committee organization space, citizen assembly, etc.
+|*xref:admin:spaces/assemblies.adoc[Versammlungen]*
+|Eine Versammlung ermöglicht es Admins, partizipative Komponenten in einem fortlaufenden Raum zu konfigurieren, mit der Möglichkeit, Mitglieder festzulegen.
+|Organisationsraum eines Komitees, Bürgerversammlung usw.
 
-|*xref:admin:spaces/initiatives.adoc[Initiatives]*
-|Initiatives space allows administrators to open a bottom-up space, with different initiatives types.
-|Petitions, Hearing requests, Participatory process requests, etc.
+|*xref:admin:spaces/initiatives.adoc[Initiativen]*
+|Der Initiativenraum ermöglicht es Admins, einen Bottom-up-Raum mit verschiedenen Initiativentypen zu eröffnen.
+|Petitionen, Anhörungsanträge, Anträge auf Beteiligungsprozesse usw.
 
-|*xref:admin:spaces/conferences.adoc[Conferences]*
-|A conference allows administrators to organize and publicize events, deal with registrations, program , speakers and venues.
-|Participatory event, Citizen assembly, Association festival, etc.
+|*xref:admin:spaces/conferences.adoc[Konferenzen]*
+|Eine Konferenz ermöglicht es Admins, Veranstaltungen zu organisieren und zu bewerben sowie Anmeldungen, Programm, Vortragende und Veranstaltungsorte zu verwalten.
+|Partizipative Veranstaltung, Bürgerversammlung, Vereinsfest usw.
 |===
 
-NOTE: Any organization can develop its own spaces by creating xref:develop:modules.adoc[Modules].
+NOTE: Jede Organisation kann eigene Räume entwickeln, indem sie xref:develop:modules.adoc[Module] erstellt.
 
 == Konfiguration
 
-Spaces are accessible through the administration navigation bar.
+Räume sind über die Verwaltungsnavigationsleiste zugänglich.
 
 image::spaces_admin.png[Spaces in administrator sidebar]
 
-Once you start publishing spaces, participants see links to the different spaces indexes appear in the homepage global menu,
-the instance navigation bar and the footer.
+Sobald Sie mit der Veröffentlichung von Räumen beginnen, sehen Teilnehmende Links zu den verschiedenen Raumübersichten im globalen Menü der Startseite,
+in der Navigationsleiste der Instanz und in der Fusszeile.
 
 image::spaces_visitor.png[Spaces visible in the public interface]

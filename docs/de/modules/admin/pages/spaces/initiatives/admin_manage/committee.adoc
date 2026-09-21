@@ -1,22 +1,22 @@
-= Committee members
+= Ausschussmitglieder
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-NOTE: Promoter's committee explanation is available on xref:admin:spaces/initiatives/author_manage/committee.adoc[Promoter’s committee].
+NOTE: Erläuterungen zum Initiativkomitee finden Sie unter xref:admin:spaces/initiatives/author_manage/committee.adoc[Initiativkomitee].
 
-Committee members might be necessary, depending on the rules set for the initiative types.
-Participants can manage them from their initiative edition form, but administrators can also access the list of
-committee members.
+Ausschussmitglieder können je nach den für die Initiativtypen festgelegten Regeln erforderlich sein.
+Teilnehmende können diese über ihr Bearbeitungsformular der Initiative verwalten, aber auch Admins können auf die Liste der
+Ausschussmitglieder zugreifen.
 
 == Konfiguration
 
-=== Manage committee members
+=== Ausschussmitglieder verwalten
 
-To access the committee members list, click in the secondary navigation panel on the "Committee members" item.
+Um auf die Liste der Ausschussmitglieder zuzugreifen, klicken Sie im sekundären Navigationspanel auf den Punkt "Ausschussmitglieder".
 
 image::spaces/initiatives/initiative_members_admin.png[Initiative committee members list in administration]
 
-There, the author can see and copy the initiative invitation link, and see the list of committee members.
+Dort kann die Urheberschaft den Einladungslink der Initiative einsehen und kopieren sowie die Liste der Ausschussmitglieder einsehen.
 
 === Aktionen
 
@@ -25,11 +25,11 @@ There, the author can see and copy the initiative invitation link, and see the l
 |===
 |Icon |Name |Definition
 
-|image:icons/action_delete.png[Delete icon]
-|Revoke
-|Allows to refuse or revoke the committee members right on this initiative.
+|image:icons/action_delete.png[Symbol: Löschen]
+|Widerrufen
+|Ermöglicht es, das Recht der Ausschussmitglieder für diese Initiative abzulehnen oder zu widerrufen.
 
-|image:icons/action_publish.png[Approve icon]
-|Approve
-|To approve the membership request.
+|image:icons/action_publish.png[Symbol: Genehmigen]
+|Genehmigen
+|Um die Mitgliedschaftsanfrage zu genehmigen.
 |===

@@ -1,35 +1,34 @@
-= Promoter-Ausschuss
+= Initiativkomitee
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-A promoter's committee is a group of people carrying and promoting the initiative jointly. For example, it could be a collective initiative that needs to be
-carried out by several citizens to be accepted by the administration, etc.
-Promoter's committee rules are set by the administrators when managing the initiative types, so they can be optional for some initiatives, and mandatory for others,
-with the necessity of having three people carrying an initiative for example.
+Ein Initiativkomitee ist eine Gruppe von Personen, die die Initiative gemeinsam vorantreiben und fördern. Zum Beispiel könnte es sich um eine kollektive Initiative handeln, die von mehreren Bürger:innen durchgeführt werden muss, um von der Verwaltung akzeptiert zu werden, usw.
+Die Regeln für das Initiativkomitee werden von den Admins bei der Verwaltung der Initiativtypen festgelegt. Sie können daher für einige Initiativen optional und für andere obligatorisch sein,
+zum Beispiel mit der Notwendigkeit, dass drei Personen eine Initiative tragen müssen.
 
-For those initiatives that need a minimum number of members in the promoter's committee, the author needs to send them a link for them to be able to join the committee
-before it can be sent for technical validation.
+Für Initiativen, die eine Mindestanzahl an Mitgliedern im Initiativkomitee benötigen, muss die Urheberschaft ihnen einen Link senden, damit sie dem Komitee beitreten können,
+bevor die Initiative zur technischen Validierung eingereicht werden kann.
 
-NOTE: Committee members can only be added before the initiative is sent to technical validation.
+NOTE: Mitglieder des Initiativkomitees können nur hinzugefügt werden, bevor die Initiative zur technischen Validierung eingereicht wird.
 
 == Konfiguration
 
-=== Inviting a committee member
+=== Ein Komiteemitglied einladen
 
-During the initiative creation process, or later on the initiative page and edit form, the author can copy an invitation link.
-They should send this link to the other initiative promoters.
+Während des Erstellungsprozesses der Initiative oder später auf der Initiativseite und im Bearbeitungsformular kann die Urheberschaft einen Einladungslink kopieren.
+Sie sollten diesen Link an die anderen Initiierenden der Initiative senden.
 
 image::spaces/initiatives/promoter_link_show.png[Promoter's committee link in initiative show]
 
 image::spaces/initiatives/promoter_link_edit.png[Promoter's committee link in initiative edit form]
 
-When going on the link, the invited committee member can see the initiative title and content, and can request to become a member of the promoter committee.
+Beim Öffnen des Links kann das eingeladene Komiteemitglied den Titel und Inhalt der Initiative sehen und beantragen, Mitglied des Initiativkomitees zu werden.
 
 image::spaces/initiatives/promoter_link_page.png[Promoter's committee request page]
 
-The author of an initiative can manage the committee members requests in the edition page of the initiative.
+Die Urheberschaft einer Initiative kann die Anträge der Komiteemitglieder auf der Bearbeitungsseite der Initiative verwalten.
 
 image::spaces/initiatives/promoter_members_edit.png[Promoter's committee management in initiative edit form]
 
-All the approved committee members are then able to access the initiative, edit it, manage its members, and send it to technical validation.
-The initiative can't be sent to technical validation until it meets the minimum number of committee members required.
+Alle genehmigten Komiteemitglieder können dann auf die Initiative zugreifen, sie bearbeiten, ihre Mitglieder verwalten und sie zur technischen Validierung einreichen.
+Die Initiative kann erst zur technischen Validierung eingereicht werden, wenn sie die erforderliche Mindestanzahl an Komiteemitgliedern erreicht hat.

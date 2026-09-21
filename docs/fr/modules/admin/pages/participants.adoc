@@ -22,10 +22,10 @@ image::participants/participants_sidebar_menu.png[Participants sidebar menu]
 
 Dans le panneau de navigation secondaire, vous pouvez voir toutes les possibilités de configuration des participant·e·x·s :
 
-* xref:admin:participants/admins.adoc[Administrateurs]
-* xref:admin:participants/groups.adoc[Groupes d'utilisateurs]
-* xref:admin:participants/participants.adoc[Participants]
-* xref:admin:participants/impersonations.adoc[Utilisateurs représentés]
+* xref:admin:participants/admins.adoc[Admins]
+* xref:admin:participants/groups.adoc[Groupes d'utilisateur·trixces]
+* xref:admin:participants/participants.adoc[Participant·e·x·s]
+* xref:admin:participants/impersonations.adoc[Utilisateur·trixces représenté·exs]
 ** xref:admin:participants/verifications_conflicts.adoc[Conflits de vérification]
 * xref:admin:participants/authorizations.adoc[Autorisations]
 ** xref:admin:participants/authorizations/identity_documents.adoc[Documents d'identité]

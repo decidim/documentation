@@ -1,24 +1,24 @@
-= Allowed external domains
+= Erlaubte externe Domains
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-As means to protect against spam, and increase the security on your instance, Decidim can identify any links that direct
-to an external webpage, and add the following alert pop-up after the user clicks it:
+Als Mittel zum Schutz vor Spam und zur Erhöhung der Sicherheit Ihrer Instanz kann Decidim Links erkennen, die
+auf eine externe Webseite führen, und zeigt nach dem Klicken das folgende Warn-Pop-up an:
 
 image::settings/allowed_external_domains_pop-up.png[Pop-up that appears when clicking any external domains on Decidim]
 
-It warns participants that they're leaving your instance.
+Es warnt Teilnehmende davor, dass sie Ihre Instanz verlassen.
 
 == Konfiguration
 
-=== Allow an external domain
+=== Eine externe Domain erlauben
 
-There may be some websites redirection for which you don't want this feature enabled.
-For example, if your site is deployed at a URL like `+decidim.example.org+` and you want every `+example.org+` URLs
-to omit this alert message, you can configure this by adding your URL, and as many as you want, in the Allowed external domains page.
+Es kann Weiterleitungen zu Websites geben, für die Sie diese Funktion nicht aktiviert haben möchten.
+Wenn Ihre Website beispielsweise unter einer URL wie `+decidim.example.org+` bereitgestellt wird und Sie möchten, dass für alle `+example.org+`-URLs
+diese Warnmeldung nicht angezeigt wird, können Sie dies konfigurieren, indem Sie Ihre URL – und so viele weitere wie gewünscht – auf der Seite Erlaubte externe Domains hinzufügen.
 
-To do so, click the "Add to allowed list" button and enter the website URL you want to authorize.
+Um dies zu tun, klicken Sie auf die Schaltfläche "Zur erlaubten Liste hinzufügen" und geben Sie die URL der Website ein, die Sie autorisieren möchten.
 
 image::settings/allowed_external_domains_admin_panel.png[Allowed external domains panel]
 
-When clicking on a URL to those domains, participants won't see the alert message.
+Wenn Teilnehmende auf eine URL zu diesen Domains klicken, sehen sie die Warnmeldung nicht.

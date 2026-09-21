@@ -1,263 +1,263 @@
-= Assembly creation
+= Versammlung erstellen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Assemblies allow administrators to configure components inside a long-lasting space, with defined members. To start creating an assembly, when on the link:https://docs.decidim.org/en/develop/admin/spaces/assemblies#_manage_assemblies[assembly list], click the "New assembly" button at the top right of the page.
+Versammlungen ermöglichen es Admins, Komponenten innerhalb eines langfristigen Raums mit festgelegten Mitgliedern zu konfigurieren. Um mit der Erstellung einer Versammlung zu beginnen, klicken Sie auf der link:https://docs.decidim.org/en/develop/admin/spaces/assemblies#_manage_assemblies[Versammlungsliste] oben rechts auf der Seite auf die Schaltfläche "Neue Versammlung".
 
-The assembly creation form is divided into different sections that are detailed in the sections below.
+Das Formular zur Erstellung einer Versammlung ist in verschiedene Abschnitte unterteilt, die nachfolgend im Detail beschrieben werden.
 
-Once you create an assembly, you can see all the assembly configurations available in the secondary navigation panel:
+Sobald Sie eine Versammlung erstellt haben, finden Sie alle verfügbaren Versammlungskonfigurationen im sekundären Navigationsbereich:
 
-* xref:admin:spaces/assemblies/assembly_creation.adoc[About this assembly] (Here you can access and edit all the fields from the creation form.)
-* xref:admin:spaces/assemblies/landing_page.adoc[Landing page]
-* xref:admin:spaces/assemblies/components.adoc[Components]
-* xref:admin:spaces/assemblies/categories.adoc[Categories]
-* xref:admin:spaces/assemblies/attachments.adoc[Attachments]
-* xref:admin:spaces/assemblies/members.adoc[Members]
-* xref:admin:spaces/assemblies/admins.adoc[Assembly admins]
-* xref:admin:spaces/assemblies/private_participants.adoc[Private Teilnehmer]
-* xref:admin:spaces/assemblies/moderations.adoc[Moderations]
+* xref:admin:spaces/assemblies/assembly_creation.adoc[Über diese Versammlung] (Hier können Sie auf alle Felder des Erstellungsformulars zugreifen und sie bearbeiten.)
+* xref:admin:spaces/assemblies/landing_page.adoc[Startseite]
+* xref:admin:spaces/assemblies/components.adoc[Komponenten]
+* xref:admin:spaces/assemblies/categories.adoc[Kategorien]
+* xref:admin:spaces/assemblies/attachments.adoc[Anhänge]
+* xref:admin:spaces/assemblies/members.adoc[Mitglieder]
+* xref:admin:spaces/assemblies/admins.adoc[Versammlungs-Admins]
+* xref:admin:spaces/assemblies/private_participants.adoc[Private Teilnehmende]
+* xref:admin:spaces/assemblies/moderations.adoc[Moderationen]
 
 == Konfiguration
 
-=== General information
+=== Allgemeine Informationen
 
-This section allows an admin to provide general information about the assembly: title, URL, and description.
+In diesem Abschnitt kann ein Admin allgemeine Informationen zur Versammlung angeben: Titel, URL und Beschreibung.
 
 image::spaces/assemblies/assemblies_new_form_general_info.png[New assembly form general info section]
 
-.Neues Baugruppenformular: Allgemeine Informationen
+.Neues Versammlungsformular: Allgemeine Informationen
 [cols="20h,10h,~,~"]
 |===
-|Feld |Typ |Beschreibung |Visibility
+|Feld |Typ |Beschreibung |Sichtbarkeit
 
 |Titel
 |Benötigt
-|Title of the assembly: "General Committee" or "neighborhood city council" for example.
-|Visible in the card of the assembly on the homepage, the assemblies index, the navigation, and the "Hero image and CTA" landing page block.
+|Titel der Versammlung: zum Beispiel "Generalausschuss" oder "Quartierrat".
+|Sichtbar auf der Karte der Versammlung auf der Startseite, in der Versammlungsübersicht, in der Navigation und im Inhaltsblock "Banner-Bild und Handlungsaufforderung" der Startseite.
 
 |Untertitel
 |Benötigt
-|Subtitle of the assembly.
-|Visible in the "Hero image and CTA" landing page block.
+|Untertitel der Versammlung.
+|Sichtbar im Inhaltsblock "Banner-Bild und Handlungsaufforderung" der Startseite.
 
-|Bestellposition
+|Reihenfolge
 |Benötigt
-|Determines the order of the assembly when displayed in the processes index or homepage.
-|N/A
+|Bestimmt die Reihenfolge der Versammlung bei der Anzeige in der Prozessübersicht oder auf der Startseite.
+|Nicht zutreffend
 
 |URL Slug
 |Benötigt
 |URL-Slugs werden verwendet, um die URLs zu generieren, die auf diesen Prozess verweisen. Akzeptiert nur Buchstaben, Zahlen und Bindestriche und muss
 mit einem Buchstaben beginnen.
-|Visible in the URL of the assembly, for example https://example.org/assemblies/city_coucil.
+|Sichtbar in der URL der Versammlung, zum Beispiel https://example.org/assemblies/city_coucil.
 
 |Hashtag
 |Optional
-|Hashtag redirecting to the X social network.
-|Visible in the "Hero image and CTA" landing page block.
+|Hashtag, der auf das soziale Netzwerk X verweist.
+|Sichtbar im Inhaltsblock "Banner-Bild und Handlungsaufforderung" der Startseite.
 
 |Kurze Beschreibung
 |Benötigt
-|A short explanation of what your assembly is about.
-|Visible in the "Main data" landing page block.
+|Eine kurze Erklärung, worum es in Ihrer Versammlung geht.
+|Sichtbar im Inhaltsblock "Hauptdaten" der Startseite.
 
 |Beschreibung
 |Benötigt
-|A long explanation of what your assembly is about.
-|Visible in the "Main data" landing page block.
+|Eine ausführliche Erklärung, worum es in Ihrer Versammlung geht.
+|Sichtbar im Inhaltsblock "Hauptdaten" der Startseite.
 
 |Zweck der Aktion
 |Optional
-|The explanation of the assembly's goals.
-|Visible in the "Main data" landing page block.
+|Die Erläuterung der Ziele der Versammlung.
+|Sichtbar im Inhaltsblock "Hauptdaten" der Startseite.
 
 |Komposition
 |Optional
-|Who composes the assembly.
-|Visible in the "Main data" landing page block.
+|Wer die Versammlung zusammensetzt.
+|Sichtbar im Inhaltsblock "Hauptdaten" der Startseite.
 
 |Interne Organisation
 |Optional
-|How the assembly is organized.
-|Visible in the "Main data" landing page block.
+|Wie die Versammlung organisiert ist.
+|Sichtbar im Inhaltsblock "Hauptdaten" der Startseite.
 
 |Mitteilung
 |Optional
-|The text you enter here is shown to the user right below the process information.
-|Visible in the "Announcement" landing page block.
+|Der hier eingegebene Text wird den Nutzenden direkt unterhalb der Prozessinformationen angezeigt.
+|Sichtbar im Inhaltsblock "Mitteilung" der Startseite.
 |===
 
 === Dauer
 
-This section allows to provide information about the assembly's important dates.
+Dieser Abschnitt ermöglicht es, Informationen zu den wichtigen Daten der Versammlung anzugeben.
 
 image::spaces/assemblies/assemblies_new_form_duration.png[New assembly form duration section]
 
-.Neues Baugruppenformular: Dauer
+.Neues Versammlungsformular: Dauer
 [cols="20h,10h,~,~"]
 |===
-|Feld |Typ |Beschreibung |Visibility
+|Feld |Typ |Beschreibung |Sichtbarkeit
 
 |Erstellungsdatum
 |Optional
-|When this assembly was created. Sie haben ein Kalender-Widget zum Auswählen des Tages. Expected format: dd/mm/yyyy.
-|Visible in the "Dates metadata" landing page block.
+|Wann diese Versammlung erstellt wurde. Sie haben ein Kalender-Widget zum Auswählen des Tages. Erwartetes Format: tt/mm/jjjj.
+|Sichtbar im Inhaltsblock "Datumsmetadaten" der Startseite.
 
 |Beinhaltet am
 |Optional
-|The date when this assembly was added to the instance. It does not necessarily have to be the same as the creation date. Expected format: dd/mm/yyyy.
-|Visible in the "Dates metadata" landing page block.
+|Das Datum, an dem diese Versammlung der Instanz hinzugefügt wurde. Es muss nicht zwingend mit dem Erstellungsdatum übereinstimmen. Erwartetes Format: tt/mm/jjjj.
+|Sichtbar im Inhaltsblock "Datumsmetadaten" der Startseite.
 
 |Dauer
 |Optional
-|If the duration of this assembly is limited, select the end date. Otherwise, it appears as indefinite. Expected format: dd/mm/yyyy.
-|Visible in the "Type and duration" landing page block.
+|Wenn die Dauer dieser Versammlung begrenzt ist, wählen Sie das Enddatum aus. Andernfalls erscheint sie als unbefristet. Erwartetes Format: tt/mm/jjjj.
+|Sichtbar im Inhaltsblock "Typ und Dauer" der Startseite.
 
 |Enddatum
 |Optional
-|Wenn diese Schwärmerei geschlossen wird. Expected format: dd/mm/yyyy.
-|Visible in the "Dates metadata" landing page block.
+|Wenn diese Versammlung geschlossen wurde. Erwartetes Format: tt/mm/jjjj.
+|Sichtbar im Inhaltsblock "Datumsmetadaten" der Startseite.
 
 |Grund des Abschlusses
 |Optional
 |Warum diese Versammlung geschlossen wurde.
-|Not displayed on the landing page.
+|Wird nicht auf der Startseite angezeigt.
 |===
 
-=== Images
+=== Bilder
 
 image::spaces/assemblies/assemblies_new_form_images.png[New assembly form images section]
 
-.Neues Baugruppenformular: Bilder
+.Neues Versammlungsformular: Bilder
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Home-Bild
 |Optional
-|Image used in presentation cards of this process. Anleitung für Datei: Muss ein Bild oder ein Dokument sein.
-For images, landscape images are preferred, as the service crops the image. Maximum file size: 10 MB
+|Bild, das in Präsentationskarten dieses Prozesses verwendet wird. Anleitung für Datei: Muss ein Bild oder ein Dokument sein.
+Bei Bildern werden Querformat-Bilder bevorzugt, da der Dienst das Bild zuschneidet. Maximale Dateigrösse: 10 MB
 
 |Bannerbild
-|Abgelehnt
-|Use link:https://docs.decidim.org/en/develop/admin/spaces/assemblies/landing_page.html#_hero_image_and_cta[Hero image and CTA] content block on the landing page instead.
+|Veraltet
+|Verwenden Sie stattdessen den Inhaltsblock link:https://docs.decidim.org/en/develop/admin/spaces/assemblies/landing_page.html#_hero_image_and_cta[Banner-Bild und Handlungsaufforderung] auf der Startseite.
 |===
 
-=== Filters
+=== Filter
 
-This section determines the filters available in the assembly, in the different components.
-Filters can then be enabled and configured in each components.
+Dieser Abschnitt legt fest, welche Filter in der Versammlung, in den verschiedenen Komponenten, verfügbar sind.
+Filter können anschliessend in jeder Komponente aktiviert und konfiguriert werden.
 
 image::spaces/assemblies/assemblies_new_form_filters.png[New assembly form filters section]
 
-.Neues Baugruppenformular: Filter
+.Neues Versammlungsformular: Filter
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
-|Bereiche aktiviert
+|Themen aktiviert
 |Optional
-|Auswählen, ob die Bereichsfilterung in dieser Schwärmerei erfolgen soll.
+|Auswählen, ob die Themenfilterung in dieser Versammlung erfolgen soll.
+
+|Thema
+|Optional
+|Zu welchen xref:admin:settings/scopes.adoc[Themen] diese Versammlung gehört.
 
 |Bereich
 |Optional
-|Which xref:admin:settings/scopes.adoc[Scopes] this assembly belongs to.
-
-|Fläche
-|Optional
-|Which xref:admin:settings/areas.adoc[Areas] this assembly belongs to.
+|Zu welchen xref:admin:settings/areas.adoc[Bereichen] diese Versammlung gehört.
 |===
 
 === Metadaten
 
-This section allows to provide meta information about the assembly.
+In diesem Abschnitt können Sie Metainformationen zur Versammlung angeben.
 
 image::spaces/assemblies/assemblies_new_form_metadata.png[New assembly form metadata section]
 
-.Neues Baugruppenformular: Metadaten
+.Neues Versammlungsformular: Metadaten
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Was beschlossen wird
 |Optional
-|The issue of the assembly; the object of what is decided.
+|Das Thema der Versammlung; der Gegenstand der Entscheidung.
 
 |Wie wird es beschlossen
 |Optional
-|The decision making process inside the assembly.
+|Der Entscheidungsprozess innerhalb der Versammlung.
 
-|Bereichsmetadaten
+|Themenmetadaten
 |Optional
-|Metadata on the assembly scope, if relevant.
+|Metadaten zum Geltungsbereich der Versammlung, falls relevant.
 
 |Promoter-Gruppe
 |Optional
-|If a specific group is at the origin of the assembly, like a city direction, an association committee, etc.
+|Falls eine bestimmte Gruppe am Ursprung der Versammlung steht, wie z. B. eine städtische Abteilung, ein Vereinsvorstand usw.
 
 |Organisationsbereich
 |Optional
-|The organization domain or category, if relevant.
+|Der Tätigkeitsbereich oder die Kategorie der Organisation, falls relevant.
 
 |Wer beteiligt sich
 |Optional
-|Who are the authorized participants that can participate to the assembly.
+|Wer die berechtigten Teilnehmenden sind, die an der Versammlung teilnehmen können.
 |===
 
-=== Visibility
+=== Sichtbarkeit
 
-This section allows administrators to configure the process placement in the different pages and its publicity.
+In diesem Abschnitt können Admins die Platzierung des Prozesses auf den verschiedenen Seiten sowie seine Öffentlichkeit konfigurieren.
 
 image::spaces/assemblies/assemblies_new_form_visibility.png[New assembly form visibility section]
 
-.Neues Baugruppenformular: Sichtbarkeit
+.Neues Versammlungsformular: Sichtbarkeit
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
-|Übergeordnete Baugruppe
+|Übergeordnete Versammlung
 |Optional
-|To which other assemblies this assembly belongs. Assemblies can be nested inside one another.
+|Zu welchen anderen Versammlungen diese Versammlung gehört. Versammlungen können ineinander verschachtelt werden.
 
 |Hervorgehoben
 |Optional
-|Aktivieren, wenn die Assembly mehr Sichtbarkeit in der öffentlichen Schwärmerliste haben soll. It's also visible in the "Highlighted
-Assemblies" Content Block in the xref:admin:settings/homepage.adoc[Homepage] configuration.
+|Aktivieren, wenn die Versammlung mehr Sichtbarkeit in der öffentlichen Versammlungsliste haben soll. Sie ist ausserdem im Inhaltsblock "Hervorgehobene
+Versammlungen" in der Konfiguration der xref:admin:settings/homepage.adoc[Startseite] sichtbar.
 
 |Privater Raum
 |Optional
-|Check if this assembly should only be accessible by xref:admin:spaces/assemblies/private_participants.adoc[Private Participants].
+|Aktivieren, wenn diese Versammlung nur für xref:admin:spaces/assemblies/private_participants.adoc[private Teilnehmende] zugänglich sein soll.
 
 |Ist transparent
 |Optional
-|Check if this assembly is private but should be visible to all the participants. This means that other participants
-or visitors can see it but they can't participate in it.
+|Aktivieren, wenn diese Versammlung privat, aber für alle Teilnehmenden sichtbar sein soll. Das bedeutet, dass andere Teilnehmende
+oder Besuchende sie sehen, aber nicht daran teilnehmen können.
 |===
 
-=== Other
+=== Andere
 
 image::spaces/assemblies/assemblies_new_form_other.png[New assembly form other section]
 
-.Neues Baugruppenformular: Andere
+.Neues Versammlungsformular: Andere
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Erstellt von
 |Optional
-|Choose "City Council", "Public", or "Other" if you want to specify the name of the organization that created
-this assembly.
+|Wählen Sie "Stadtrat", "Öffentlich" oder "Andere", wenn Sie den Namen der Organisation angeben möchten, die
+diese Versammlung erstellt hat.
 
-|Baugruppentyp
+|Versammlungstyp
 |Optional
-|Which xref:admin:spaces/assemblies/types.adoc[Assembly type] is related to this assembly.
+|Welcher xref:admin:spaces/assemblies/types.adoc[Versammlungstyp] dieser Versammlung zugeordnet ist.
 
 |Zugehörige partizipative Prozesse
 |Optional
-|Select other participatory processes related to this assembly.
+|Wählen Sie andere Beteiligungsprozesse aus, die mit dieser Versammlung in Zusammenhang stehen.
 
 |Soziale
 |Optional
-|Which social networks profile this assembly has. Can be X, Facebook, Instagram, YouTube, and/or GitHub.
+|Welche Profile in sozialen Netzwerken diese Versammlung hat. Kann X, Facebook, Instagram, YouTube und/oder GitHub sein.
 |===

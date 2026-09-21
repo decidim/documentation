@@ -145,7 +145,7 @@ image::spaces/initiatives/admin_initiative_type_scope.png[New initiative type fo
 |===
 |Champ |Type |Description
 
-|Portées
+|Secteurs
 |Obligatoire
 |Choisir le secteur lié à ce nombre de signatures. S'il n'y a aucune règle, conserver le secteur globale.
 
@@ -184,7 +184,7 @@ Une fois un ou plusieurs types d'initiatives crées, vous pouvez les gérer dans
 |Pour modifier les permissions pour ce type d'initiative.
 
 |image:icons/action_delete.png[Icône supprimer le type d'initiatives]
-|Supprimez
+|Supprimer
 |Pour supprimer le type d'initiation. Ne peut être fait que si aucune initiative n'est liée à ce type.
 |===
 

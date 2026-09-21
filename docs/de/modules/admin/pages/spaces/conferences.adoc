@@ -1,56 +1,56 @@
 = Konferenzen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-A conference is a collection of meetings arranged in a program, with a number of people invited as speakers, and other
-information fields typical of large congresses or social events (registration, list of organizations that support or sponsor the
-event, etc.) Eine Konferenz kann eine relevante Veranstaltung für eine Organisation und ihre Mitglieder sein oder im Rahmen eines partizipativen
--Prozesses oder einer Beratung folgen.
+Eine Konferenz ist eine Sammlung von Veranstaltungen, die in einem Programm organisiert sind, mit einer Anzahl von Personen, die als Vortragende eingeladen sind, sowie weiteren
+      Informationsfeldern, die für grosse Kongresse oder gesellschaftliche Veranstaltungen typisch sind (Anmeldung, Liste der Organisationen, die die
+      Veranstaltung unterstützen oder sponsern, usw.) Eine Konferenz kann eine relevante Veranstaltung für eine Organisation und ihre Mitglieder sein oder im Rahmen eines
+Beteiligungsprozesses stattfinden oder einer Konsultation folgen.
 
-In conferences, meetings components are displayed in a program form, with days and hours being listed like in an event program.
+In Konferenzen werden Veranstaltungskomponenten in Form eines Programms angezeigt, wobei Tage und Uhrzeiten wie in einem Veranstaltungsprogramm aufgelistet werden.
 
-NOTE: You want to create a conference? Check the xref:admin:spaces/conferences/conference_creation.adoc[conference creation] article.
+NOTE: Möchten Sie eine Konferenz erstellen? Lesen Sie den Artikel xref:admin:spaces/conferences/conference_creation.adoc[Konferenzerstellung].
 
-In this documentation section, you can find how to configure and manage all of these items:
+In diesem Dokumentationsabschnitt erfahren Sie, wie Sie all diese Elemente konfigurieren und verwalten:
 
-* xref:admin:spaces/conferences/conference_creation.adoc[Conference creation]
-* xref:admin:spaces/conferences/components.adoc[Components]
-* xref:admin:spaces/conferences/categories.adoc[Categories]
-* xref:admin:spaces/conferences/attachments.adoc[Attachments]
-* xref:admin:spaces/conferences/media_links.adoc[Media Links]
-* xref:admin:spaces/conferences/partners.adoc[Partners]
-* xref:admin:spaces/conferences/speakers.adoc[Speakers]
-* xref:admin:spaces/conferences/registrations.adoc[Registrations]
+* xref:admin:spaces/conferences/conference_creation.adoc[Konferenz erstellen]
+* xref:admin:spaces/conferences/components.adoc[Komponenten]
+* xref:admin:spaces/conferences/categories.adoc[Kategorien]
+* xref:admin:spaces/conferences/attachments.adoc[Anhänge]
+* xref:admin:spaces/conferences/media_links.adoc[Medienlinks]
+* xref:admin:spaces/conferences/partners.adoc[Partner]
+* xref:admin:spaces/conferences/speakers.adoc[Vortragende]
+* xref:admin:spaces/conferences/registrations.adoc[Registrierungen]
 ** xref:admin:spaces/conferences/registrations/types.adoc[Registrierungstypen]
 ** xref:admin:spaces/conferences/registrations/users.adoc[Benutzerregistrierung]
-** xref:admin:spaces/conferences/registrations/invites.adoc[Invites]
-** xref:admin:spaces/conferences/registrations/certificates.adoc[Certificate of Attendance]
-* xref:admin:spaces/conferences/admins.adoc[Conference admins]
-* xref:admin:spaces/conferences/moderations.adoc[Moderations]
+** xref:admin:spaces/conferences/registrations/invites.adoc[Einladungen]
+** xref:admin:spaces/conferences/registrations/certificates.adoc[Teilnahmebescheinigung]
+* xref:admin:spaces/conferences/admins.adoc[Konferenz-Admins]
+* xref:admin:spaces/conferences/moderations.adoc[Moderationen]
 
-=== How to find it?
+=== Wie findet man sie?
 
-To access the Conferences panel, go in the administration panel and click the "Conferences" item in the administration
-navigation bar.
+Um auf das Konferenzen-Panel zuzugreifen, gehen Sie zum Verwaltungspanel und klicken Sie in der Verwaltungs-
+      Navigationsleiste auf den Punkt "Konferenzen".
 
 image::spaces/conferences/menu.png[Conferences menu]
 
-There, you are able to manage all existing conferences.
+Dort können Sie alle bestehenden Konferenzen verwalten.
 
 == Konfiguration
 
-=== Manage conferences
+=== Konferenzen verwalten
 
 image::spaces/conferences/manage_conferences.png[Conferences list in administration panel]
 
-You can find all the conferences on the list in the administration panel, with:
+Sie finden alle Konferenzen in der Liste im Verwaltungspanel mit:
 
-* *Title*: title of the conference.
-* *Created at*: date of creation of the conference.
-* *Published*: if the conference is published or no.
+* *Titel*: Titel der Konferenz.
+* *Erstellt am*: Erstellungsdatum der Konferenz.
+* *Veröffentlicht*: ob die Konferenz veröffentlicht ist oder nicht.
 
-You can filter and sort this list by clicking the "Filter" button and the columns headers.
-You can also search for conferences by their title in the search bar.
+Sie können diese Liste filtern und sortieren, indem Sie auf die Schaltfläche "Filter" und die Spaltenüberschriften klicken.
+Sie können auch in der Suchleiste nach Konferenzen anhand ihres Titels suchen.
 
 === Aktionen
 
@@ -59,26 +59,26 @@ You can also search for conferences by their title in the search bar.
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Configure conference icon]
+|image:icons/action_edit.png[Symbol: Konferenz konfigurieren]
 |Konfigurieren
-|To edit the configuration and components for a conference.
+|Um die Konfiguration und die Komponenten einer Konferenz zu bearbeiten.
 
-|image:icons/action_duplicate.png[Duplicate conference icon]
+|image:icons/action_duplicate.png[Symbol: Konferenz duplizieren]
 |Duplicate
-|To duplicate this conference.
+|Um diese Konferenz zu duplizieren.
 
-|image:icons/action_preview.png[Preview conference icon]
+|image:icons/action_preview.png[Symbol: Konferenz-Vorschau]
 |Vorschau
-|Preview of how the conference looks in the user interface.
+|Vorschau, wie die Konferenz in der Benutzeroberfläche aussieht.
 
-|image:icons/action_moderate.png[Moderate conference icon]
-|Moderate
-|To access the conference moderation panel.
+|image:icons/action_moderate.png[Symbol: Konferenz moderieren]
+|Moderieren
+|Um auf das Moderationspanel der Konferenz zuzugreifen.
 |===
 
 == Beispiele
 
-Below, you can find some links to examples of conferences:
+Nachfolgend finden Sie einige Links zu Beispielkonferenzen:
 
 * https://meta.decidim.org/conferences/DecidimFest24[Decidim Fest 2024]
-* https://barcelonadema-participa.cat/conferences/jornada-resilient[Resilient metropolis initial day of the Strategic plan of the Barcelona metropolis]
+* https://barcelonadema-participa.cat/conferences/jornada-resilient[Auftakttag zur widerstandsfähigen Metropole des Strategieplans der Metropolregion Barcelona]

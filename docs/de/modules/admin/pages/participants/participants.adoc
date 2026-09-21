@@ -1,96 +1,96 @@
-= Teilnehmer
+= Teilnehmende
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Participants are all people with an account on the platform, whether they have confirmed their email address or not.
-Auf dieser Seite kann ein Administrator:
+Teilnehmende sind alle Personen mit einem Konto auf der Plattform, unabhängig davon, ob sie ihre E-Mail-Adresse bestätigt haben oder nicht.
+Auf dieser Seite kann ein Admin:
 
-* Teilnehmer blockieren, zum Beispiel, weil sie gegen die Nutzungsbedingungen spammen oder handeln
-* Contact a participant with Decidim private messages
-* Offizialisiere einen Teilnehmer
-* Show a participant email
+* Teilnehmende blockieren, zum Beispiel weil sie spammen oder gegen die Nutzungsbedingungen verstossen
+* Eine teilnehmende Person über private Decidim-Nachrichten kontaktieren
+* Teilnehmende offizialisieren
+* Die E-Mail-Adresse einer teilnehmenden Person anzeigen
 
-image:participants/participants_participants.png[Participants list]
+image:participants/participants_participants.png[Teilnehmendenliste]
 
 == Konfiguration
 
-=== Manage participants
+=== Teilnehmende verwalten
 
-You can find all the participants here, with:
+Hier finden Sie alle Teilnehmenden, mit:
 
-* *Name*: name of the participant, with a link to their profile.
-* *Nickname*: nickname of the participant, with a link to their profile.
-* *Created at*: date of the participant account creation.
-* *Status*: if the participant is officialized or not.
-* *Badge*: the officialization badge, given when officializing the participant.
-* *Reports*: number of reports by different users.
+* *Name*: Name der teilnehmenden Person, mit einem Link zu ihrem Profil.
+* *Spitzname*: Spitzname der teilnehmenden Person, mit einem Link zu ihrem Profil.
+* *Erstellt am*: Datum der Kontoerstellung der teilnehmenden Person.
+* *Status*: ob die teilnehmende Person offizialisiert ist oder nicht.
+* *Abzeichen*: das Offizialisierungsabzeichen, das bei der Offizialisierung der teilnehmenden Person vergeben wird.
+* *Meldungen*: Anzahl der Meldungen durch verschiedene Nutzende.
 
-You can filter and sort this list by clicking the "Filter" button and the columns headers.
-You can also search for participants by email, name, or nickname in the search bar.
+Sie können diese Liste filtern und sortieren, indem Sie auf die Schaltfläche "Filter" und die Spaltenüberschriften klicken.
+Sie können auch in der Suchleiste nach Teilnehmenden anhand ihrer E-Mail-Adresse, ihres Namens oder Spitznamens suchen.
 
 === Aktionen
 
 .Aktionen
 [cols="10h,20h,~,~"]
 |===
-|Icon |Name |Definition |Condition
+|Icon |Name |Definition |Bedingung
 
-|image:icons/action_block.png[Block user]
-|Block / Unblock user
-|To block or unblock a participant. See xref:admin:moderations/reported_users.adoc[Reported users] for more information.
-|Block action is available for unblocked users, and vice versa.
+|image:icons/action_block.png[Nutzende:n sperren]
+|Nutzende:n sperren / entsperren
+|Um eine teilnehmende Person zu sperren oder zu entsperren. Weitere Informationen finden Sie unter xref:admin:moderations/reported_users.adoc[Gemeldete Nutzende].
+|Die Aktion Sperren ist für nicht gesperrte Nutzende verfügbar, und umgekehrt.
 
-|image:icons/action_show_email.png[Show email]
+|image:icons/action_show_email.png[E-Mail anzeigen]
 |xref:_show_email_address[E-Mail-Adresse anzeigen]
-|To show the email address of a participant.
-|Available all the time.
+|Um die E-Mail-Adresse einer teilnehmenden Person anzuzeigen.
+|Immer verfügbar.
 
-|image:icons/action_contact.png[Contact]
-|xref:_Kontakt[Contact]
-|To contact a participant through a private message.
-|Available all the time.
+|image:icons/action_contact.png[Kontaktieren]
+|xref:_contact[Kontakt]
+|Um eine teilnehmende Person über eine private Nachricht zu kontaktieren.
+|Immer verfügbar.
 
-|image:icons/action_verify.png[Officialize]
-|xref:_offiziell[Officialize]
-|To recognize that a participant has a special status, like mayor, association's president, etc.
-|Available for unofficialized participants.
+|image:icons/action_verify.png[Offizialisieren]
+|xref:_officialize[Offizialisieren]
+|Um anzuerkennen, dass eine teilnehmende Person einen besonderen Status hat, wie Bürgermeister:in, Vereinspräsident:in usw.
+|Verfügbar für nicht offizialisierte Teilnehmende.
 
-|image:icons/action_reofficialize.png[Reoffficialize]
-|Reofficialize
-|To change the officialization badge.
-|Available for officialized participants.
+|image:icons/action_reofficialize.png[Reoffizialisieren]
+|Reoffizialisieren
+|Um das Offizialisierungsabzeichen zu ändern.
+|Verfügbar für offizialisierte Teilnehmende.
 
-|image:icons/action_delete.png[Unofficialize]
+|image:icons/action_delete.png[Offizialisierung aufheben]
 |Unoffizialisieren
-|Eine Amtsenthebung aufzuheben.
-|Available for officialized participants.
+|Eine Offizialisierung aufzuheben.
+|Verfügbar für offizialisierte Teilnehmende.
 |===
 
 === E-Mail-Adresse anzeigen
 
-Sometimes, administrators need to find a user email address. They can click the "Show email address" option.
-A modal appears, with the name of the participant, and an hidden field.
+Manchmal müssen Admins die E-Mail-Adresse einer nutzenden Person finden. Dazu können sie auf die Option "E-Mail-Adresse anzeigen" klicken.
+Es erscheint ein modales Fenster mit dem Namen der teilnehmenden Person und einem ausgeblendeten Feld.
 
-image:participants/participants_show_email.png[Modal in show email]
+image:participants/participants_show_email.png[Modales Fenster bei E-Mail-Anzeige]
 
-To show the email address, you need to click the "Show" button.
+Um die E-Mail-Adresse anzuzeigen, müssen Sie auf die Schaltfläche "Anzeigen" klicken.
 
-image:participants/participants_showed_email.png[Modal after the email is shown]
+image:participants/participants_showed_email.png[Modales Fenster nach Anzeige der E-Mail]
 
-For administration transparency, this action is logged in the activity logs.
+Aus Gründen der Transparenz der Verwaltung wird diese Aktion in den Aktivitätsprotokollen erfasst.
 
-image:participants/participants_showed_email_admin_log.png[Admin activity log for show email]
+image:participants/participants_showed_email_admin_log.png[Admin-Aktivitätsprotokoll für E-Mail-Anzeige]
 
 === Kontakt
 
-To contact participants directly through the private messaging of the platform, click the "Contact" icon.
+Um Teilnehmende direkt über die private Nachrichtenfunktion der Plattform zu kontaktieren, klicken Sie auf das Symbol "Kontaktieren".
 
 image::participants/participants_conversation.png[Conversation with a participant]
 
-=== Offiziell
+=== Offizialisieren
 
-This option is useful to recognize that a participant has a specific status in the
-platform. For instance, if someone is the city mayor, a city councillor, the
-president of an association, etc.
+Diese Option ist nützlich, um anzuerkennen, dass eine teilnehmende Person einen bestimmten Status auf der
+Plattform hat. Zum Beispiel, wenn jemand Bürgermeister:in einer Stadt, Gemeinderät:in oder
+Präsident:in eines Vereins ist usw.
 
-image:participants/participants_officialize.png[Officialize a participant]
+image:participants/participants_officialize.png[Eine teilnehmende Person offizialisieren]

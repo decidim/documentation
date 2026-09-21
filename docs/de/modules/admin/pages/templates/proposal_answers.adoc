@@ -1,52 +1,52 @@
-= Proposal answers templates
+= Vorlagen für Vorschlagsantworten
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-In this section, you can create, edit, and delete proposal answers templates, that you can then use when answering proposals.
+In diesem Abschnitt können Sie Vorlagen für Vorschlagsantworten erstellen, bearbeiten und löschen, die Sie anschliessend beim Beantworten von Vorschlägen verwenden können.
 
 == Konfiguration
 
-=== Create a proposal answers template
+=== Eine Vorlage für Vorschlagsantworten erstellen
 
-NOTE: To be able to create a proposal answers template, you need to have created at least one
-xref:admin:components/proposals.adoc[proposals] component.
+NOTE: Um eine Vorlage für Vorschlagsantworten erstellen zu können, müssen Sie mindestens eine
+      xref:admin:components/proposals.adoc[Vorschläge]-Komponente erstellt haben.
 
-To create a new proposal answers template, you need to click the "New template" button.
+Um eine neue Vorlage für Vorschlagsantworten zu erstellen, müssen Sie auf die Schaltfläche "Neue Vorlage" klicken.
 
 image::templates/templates_proposal_answers_choice_component.png[Backend: Proposal component choice for template]
 
-Choose the participatory space and component for which you want to create proposal answers to see the template answer form.
+Wählen Sie den partizipativen Raum und die Komponente, für die Sie Vorschlagsantworten erstellen möchten, um das Antwortvorlagenformular zu sehen.
 
 image::templates/templates_proposal_answers_backend_form.png[Backend: new proposal answer template form]
 
-.New proposal answer template form
+.Formular für neue Vorlage für Vorschlagsantworten
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Name
 |Benötigt
-|Title of this answer template. Choose a clear title, describing precisely what the answer is for.
+|Titel dieser Antwortvorlage. Wählen Sie einen klaren Titel, der genau beschreibt, wofür die Antwort dient.
 
 |Beschreibung
 |Benötigt
-|Content of the answer provided to the proposals for which you choose this template. You can use variables in your answer.
+|Inhalt der Antwort, die den Vorschlägen gegeben wird, für die Sie diese Vorlage auswählen. Sie können Variablen in Ihrer Antwort verwenden.
 
-|Proposal state
+|Vorschlagsstatus
 |Benötigt
-|By default, you can choose Evaluating, Accepted, or Rejected.
+|Standardmässig können Sie zwischen In Bewertung, Akzeptiert oder Abgelehnt wählen.
 |===
 
 === Verwalten
 
-All the templates appear in the proposal answers templates list:
+Alle Vorlagen erscheinen in der Liste der Vorlagen für Vorschlagsantworten:
 
-* *Template*: name of the proposal answer template.
-* *Internal state*: state given to proposals when using this template.
-* *Add constraint*: proposal component where you can use this template.
-* *Created at*: date of creation.
+* *Vorlage*: Name der Vorlage für Vorschlagsantworten.
+* *Interner Status*: Status, der Vorschlägen bei Verwendung dieser Vorlage zugewiesen wird.
+* *Einschränkung hinzufügen*: Vorschläge-Komponente, in der Sie diese Vorlage verwenden können.
+* *Erstellt am*: Erstellungsdatum.
 
-You can edit a template and its fields at any moment.
+Sie können eine Vorlage und ihre Felder jederzeit bearbeiten.
 
 === Aktionen
 
@@ -55,22 +55,22 @@ You can edit a template and its fields at any moment.
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit template]
+|image:icons/action_edit.png[Symbol: Vorlage bearbeiten]
 |Bearbeiten
-|To edit the proposal answer.
+|Um die Vorschlagsantwort zu bearbeiten.
 
-|image:icons/action_duplicate.png[Duplicate template]
+|image:icons/action_duplicate.png[Symbol: Vorlage duplizieren]
 |Duplicate
-|To duplicate the template.
+|Um die Vorlage zu duplizieren.
 
-|image:icons/action_delete.png[Delete template]
+|image:icons/action_delete.png[Symbol: Vorlage löschen]
 |Löschen
-|To delete the template.
+|Um die Vorlage zu löschen.
 |===
 
-=== Use the template
+=== Die Vorlage verwenden
 
-To use the template, go to one of the proposal component for which you created a proposal answer template, and click an "Answer" icon.
-You can choose an answer template to fill the answer field.
+Um die Vorlage zu verwenden, gehen Sie zu einer der Vorschläge-Komponenten, für die Sie eine Vorlage für Vorschlagsantworten erstellt haben, und klicken Sie auf ein Symbol "Antworten".
+Sie können eine Antwortvorlage auswählen, um das Antwortfeld auszufüllen.
 
 image::templates/templates_proposal_answers_choice.png[Backend: choose template when answering proposal]

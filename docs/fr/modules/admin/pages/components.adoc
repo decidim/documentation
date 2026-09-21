@@ -31,7 +31,7 @@ Les fonctionnalités de l'espace se trouvent dans la liste, avec :
 
 * *Nom de la fonctionnalité* : le titre de la fonctionnalité choisi à sa création et modifiable.
 * *Le type de fonctionnalité* : le type de la fonctionnalité.
-* *Le secteur de la fonctionnalité* : le xref:admin:scopes.adoc[secteur] de la fonctionnalité.
+* *Component scope*: the xref:admin:settings/scopes.adoc[scope] of the component.
 
 === Actions
 
@@ -68,6 +68,6 @@ Les fonctionnalités de l'espace se trouvent dans la liste, avec :
 |Pour configurer les types d'xref:admin:participants/authorizations.adoc[Autorisations] que les participant·e·x·s doivent obtenir pour pouvoir mener certaines actions dans la fonctionnalité.
 
 |image:icons/action_delete.png[Icône Supprimer la fonctionnalité]
-|Supprimez
+|Supprimer
 |Pour supprimer la fonctionnalité, seulement possible lorsqu'auncunx participant·e·x n'y participe.
 |===

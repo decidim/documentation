@@ -1,104 +1,104 @@
-= Space administrators
+= Admins des Raums
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-You can give specific permissions to users in the different spaces, so they can only have access to some of the administration actions.
-These roles are administrators, moderators, collaborators, and valuators.
+Sie können Nutzenden in den verschiedenen Räumen spezifische Berechtigungen erteilen, sodass diese nur Zugriff auf bestimmte Verwaltungsaktionen haben.
+Diese Rollen sind Admins, Moderierende, Mitwirkende und Bewertende.
 
-* *Administrators*: they can administer the space and change the space settings.
-* *Collaborators*: they can see the space and its components before it's published and view the space settings.
-They can't edit anything.
-* *Moderators*: they can see the reported contents of the space and hide or unhide it.
-* *Valuators*: they can evaluate proposals, give them answers and update their statuses.
+* *Admins*: Sie können den Raum verwalten und die Raumeinstellungen ändern.
+* *Mitwirkende*: Sie können den Raum und seine Komponenten vor der Veröffentlichung sehen und die Raumeinstellungen einsehen.
+Sie können nichts bearbeiten.
+* *Moderierende*: Sie können die gemeldeten Inhalte des Raums sehen und diese verbergen oder wieder einblenden.
+* *Bewertende*: Sie können Vorschläge bewerten, ihnen Antworten geben und ihren Status aktualisieren.
 
-=== How to find it?
+=== Wie findet man sie?
 
-To configure space administrators, click the "Process admins" or "Assembly admins" item in the corresponding space.
+Um die Admins des Raums zu konfigurieren, klicken Sie im entsprechenden Raum auf den Punkt "Prozess-Admins" oder "Versammlungs-Admins".
 
 image::spaces/admins_list.png[Administrators of space]
 
 == Konfiguration
 
-=== Administratoren verwalten
+=== Admins verwalten
 
-You can find all the administrators on the list in the administration panel, with:
+Sie finden alle Admins in der Liste im Verwaltungspanel mit:
 
-* *Name*: name of the administrator account.
-* *Email*: email of the administrator account.
-* *Last log in date*: last time the administrator was logged in.
-* *Invitation accepted at*: date when the administrator accepted the invitation by clicking the link in the invitation email.
-* *Role*: administrator role.
+* *Name*: Name des Admin-Kontos.
+* *E-Mail*: E-Mail-Adresse des Admin-Kontos.
+* *Letztes Anmeldedatum*: letzter Zeitpunkt, zu dem der Admin angemeldet war.
+* *Einladung akzeptiert am*: Datum, an dem der Admin die Einladung durch Klicken auf den Link in der Einladungs-E-Mail akzeptiert hat.
+* *Rolle*: Rolle des Admins.
 
 === Aktionen
 
-.Actions in administrators list
+.Aktionen in der Admin-Liste
 [cols="10h,20h,~"]
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
-|To edit the administrator role.
+|Um die Rolle des Admins zu bearbeiten.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
-|To delete the space administrator rights. It doesn't delete the account of the administrator.
+|Um die Admin-Rechte im Raum zu entziehen. Dadurch wird das Konto des Admins nicht gelöscht.
 |===
 
-=== Add a space administrator
+=== Einen Raum-Admin hinzufügen
 
-Click on the *New space admin* button (depending in the kind of space you're in).
+Klicken Sie auf die Schaltfläche *Neuer Raum-Admin* (abhängig von der Art des Raums, in dem Sie sich befinden).
 
-image:spaces/admins_form.png[New space administrator form]
+image:spaces/admins_form.png[Formular für neuen Raum-Admin]
 
-.New space administrator form
+.Formular für neuen Raum-Admin
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Name
 |Benötigt
-|What's the name of the new administrator.
+|Der Name des neuen Admins.
 
 |E-Mail
 |Benötigt
-|What's the email of the new administrator, so they can receive an invitation if they don't already have an account.
+|Die E-Mail-Adresse des neuen Admins, damit er eine Einladung erhalten kann, falls er noch kein Konto hat.
 
 |Rolle
 |Benötigt
-|Which role does this administrator should have in the space. Kann jeder von Administrator, Kollaborator, Moderator oder Valuator sein.
+|Welche Rolle dieser Admin im Raum haben soll. Kann jede der Rollen Admin, Mitwirkende, Moderierende oder Bewertende sein.
 |===
 
 === Rollen
 
-==== Administratoren
+==== Admins
 
-Ein Raum-Administrator kann den Raum verwalten und die Raum-Einstellungen ändern. They can also invite new space administrators.
-When managing the space, they would only see the following views and tabs.
+Ein Raum-Admin kann den Raum verwalten und die Raum-Einstellungen ändern. Sie können auch neue Raum-Admins einladen.
+Bei der Verwaltung des Raums sehen sie nur die folgenden Ansichten und Tabs.
 
-image:spaces/admins_role_admin01.png[Process administrators view 01]
+image:spaces/admins_role_admin01.png[Admin-Ansicht des Prozesses 01]
 
-image:spaces/admins_role_admin02.png[Process administrators view 02]
+image:spaces/admins_role_admin02.png[Admin-Ansicht des Prozesses 02]
 
-==== Mitarbeiter
+==== Mitwirkende
 
-A space collaborator can preview a space before it's published.
+Eine mitwirkende Person im Raum kann eine Vorschau des Raums vor der Veröffentlichung ansehen.
 
-image:spaces/admins_role_collaborator.png[Prozesskollaboratorenansicht]
+image:spaces/admins_role_collaborator.png[Ansicht der Mitwirkenden des Prozesses]
 
-==== Moderatoren
+==== Moderierende
 
-Ein Moderator kann den gemeldeten Inhalt des Raumes überprüfen und ihn ausblenden oder enthüllen. They can also
-access the reported content in the global moderation panel, but don't see the contents reported from other spaces.
+Moderierende können den gemeldeten Inhalt des Raumes überprüfen und ihn ausblenden oder einblenden. Sie können auch
+auf die gemeldeten Inhalte im globalen Moderationspanel zugreifen, sehen jedoch keine Inhalte, die aus anderen Räumen gemeldet wurden.
 
-image:spaces/admins_role_moderator.png[Prozessmoderatorenansicht]
+image:spaces/admins_role_moderator.png[Ansicht der Moderierenden des Prozesses]
 
-==== Valuators
+==== Bewertende
 
-A space valuator can review the proposals of the space that were assigned to them, by:
+Eine bewertende Person im Raum kann die ihr zugewiesenen Vorschläge des Raums prüfen, indem sie:
 
-* change the status of the proposals, by accepting or rejecting them.
-* give an answer to the proposals.
+* den Status der Vorschläge ändert, indem sie diese annimmt oder ablehnt.
+* den Vorschlägen eine Antwort gibt.
 * fügen Sie den Vorschlägen einen monetären Wert hinzu, so dass sie mit der Haushaltskomponente abgestimmt werden können.
 
-image:spaces/admins_role_valuator.png[Prozess-Bewertung ansicht]
+image:spaces/admins_role_valuator.png[Ansicht der Bewertenden des Prozesses]

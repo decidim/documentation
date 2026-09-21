@@ -10,10 +10,10 @@ image::components/proposals/example01.png[Proposals example]
 Dans cette section de documentation, il est possible de trouver comment configurer et gérer tous ces paramètres :
 
 * xref:admin:components/propositions/proposals.adoc[Gestion des propositions]
-* xref:admin:components/proposals/answers.adoc[Answers]
+* xref:admin:components/proposals/answers.adoc[Réponses]
 * xref:admin:components/proposals/special_configurations.adoc[Configuration des propositions spécifiques]
-** xref:admin:components/proposals/special_configurations/amendements.adoc[Amendments]
-** xref:admin:components/proposs/special_configurations/collaborative_drafts.adoc[Collaborative drafts]
+** xref:admin:components/proposals/special_configurations/amendements.adoc[Amendements]
+** xref:admin:components/proposs/special_configurations/collaborative_drafts.adoc[Brouillons collaboratifs]
 ** xref:admin:components/proposals/special_configurations/participatory_texts.adoc[Textes participatifs]
 
 == Configuration

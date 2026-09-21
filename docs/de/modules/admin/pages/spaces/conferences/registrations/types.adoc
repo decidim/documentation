@@ -1,20 +1,20 @@
 = Registrierungsarten
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Registrations are one of the specificity of the conference space, as they can allow participants to register to the whole conference,
-to certain days only, or to specific tracks for example, rather than registering meeting by meeting.
+Anmeldungen sind eine Besonderheit des Konferenzraums, da sie es Teilnehmenden ermöglichen können, sich für die gesamte Konferenz,
+      nur für bestimmte Tage oder zum Beispiel für bestimmte Tracks anzumelden, anstatt sich für jede Veranstaltung einzeln anzumelden.
 
 NOTE: Wenn Sie die Registrierung aktivieren möchten, müssen Sie mindestens einen Registrierungstyp definieren und veröffentlichen.
 
-Administrators can configure those different types of "tickets" in the registration types section:
+Admins können diese verschiedenen Arten von "Tickets" im Abschnitt Anmeldungstypen konfigurieren:
 
-. Define the registration types
-. Enable registrations when it's ready
-. Participants are then able to register and choose the fit type of registration
+. Die Anmeldungstypen definieren
+. Anmeldungen aktivieren, sobald sie bereit sind
+. Teilnehmende können sich dann anmelden und den passenden Anmeldungstyp wählen
 
-Once registrations are enabled, participants can click a button to register to the conference in the landing page
-and the conference's header.
+Sobald Anmeldungen aktiviert sind, können Teilnehmende auf eine Schaltfläche klicken, um sich auf der Startseite
+      und in der Kopfzeile der Konferenz für die Konferenz anzumelden.
 
 image::spaces/conferences/registration_button_hero.png[Registration button on hero section]
 
@@ -24,41 +24,41 @@ image::spaces/conferences/registration_button_landing_footer.png[Registration bu
 
 == Konfiguration
 
-=== Manage registration types
+=== Anmeldungstypen verwalten
 
-To access the registration types configuration, click in the secondary navigation panel on the "Media links" item.
+Um auf die Konfiguration der Anmeldungstypen zuzugreifen, klicken Sie im sekundären Navigationspanel auf den Punkt "Anmeldungstypen".
 
 image::spaces/conferences/registration_types_backend.png[Manage registration types]
 
 === Aktionen
 
-NOTE: Once participants register to a registration type, it can't be edited nor deleted.
+NOTE: Sobald sich Teilnehmende für einen Anmeldungstyp angemeldet haben, kann dieser weder bearbeitet noch gelöscht werden.
 
 .Aktionen
 [cols="10h,20h,~"]
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
-|To edit this registration type.
+|Um diesen Anmeldungstyp zu bearbeiten.
 
-|image:icons/action_activate.png[Publish speaker icon]
+|image:icons/action_activate.png[Symbol: Vortragende veröffentlichen]
 |Veröffentlichen
-|To publish this registration type (when not published)
+|Um diesen Anmeldungstyp zu veröffentlichen (wenn er noch nicht veröffentlicht ist)
 
-|image:icons/action_unpublish.png[Unpublish speaker icon]
+|image:icons/action_unpublish.png[Symbol: Veröffentlichung von Vortragenden rückgängig machen]
 |Zurückziehen
-|To unpublish this registration type (when published)
+|Um die Veröffentlichung dieses Anmeldungstyps aufzuheben (wenn er veröffentlicht ist)
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
-|To delete this registration type.
+|Um diesen Anmeldungstyp zu löschen.
 |===
 
 === Neuen Registrierungstyp erstellen
 
-To create a new registration type, click the "New registration type" button in the top right of the page.
+Um einen neuen Anmeldungstyp zu erstellen, klicken Sie oben rechts auf der Seite auf die Schaltfläche "Neuer Anmeldungstyp".
 
 image::spaces/conferences/new_registration_type.png[Create a new registration type form]
 
@@ -69,37 +69,37 @@ image::spaces/conferences/new_registration_type.png[Create a new registration ty
 
 |Titel
 |Benötigt
-|The title of this registration type.
+|Der Titel dieses Anmeldungstyps.
 
-|Bestellposition
+|Reihenfolge
 |Benötigt
-|Which order it has in relation to the other types. Eine niedrigere Zahl bedeutet eine höhere Priorität. For instance, if you have two types, "Day 1" with weight "10" and "Day 2" with weight "0" then "Day 2" is first when ordering.
+|Welche Reihenfolge er im Verhältnis zu den anderen Typen hat. Eine niedrigere Zahl bedeutet eine höhere Priorität. Wenn Sie zum Beispiel zwei Typen haben, "Tag 1" mit der Gewichtung "10" und "Tag 2" mit der Gewichtung "0", dann steht "Tag 2" bei der Sortierung an erster Stelle.
 
 |Beschreibung
 |Benötigt
-|Description for this registration type.
+|Beschreibung für diesen Anmeldungstyp.
 
 |Preis
 |Optional
-|Legen Sie einen Preis für diesen Registrierungstyp fest. If you don't define a price, then it's free.
+|Legen Sie einen Preis für diesen Registrierungstyp fest. Wenn Sie keinen Preis festlegen, ist er kostenlos.
 
 |Konferenzbesprechungen auswählen
 |Optional
-|The meetings this registration type gives access to.
+|Die Veranstaltungen, zu denen dieser Anmeldungstyp Zugang gewährt.
 |===
 
-=== Register as a participant
+=== Sich als teilnehmende Person anmelden
 
-If the participant isn't logged in, when clicking on one of the "Register" buttons, they can log in or create an account,
-and see the registration types.
+Wenn die teilnehmende Person nicht angemeldet ist, kann sie sich beim Klicken auf eine der Schaltflächen "Anmelden" anmelden oder ein Konto erstellen
+      und die Anmeldungstypen sehen.
 
-image:spaces/conferences/registration_types_frontend_wo_user.png[Registrierungstyp ohne Benutzerkonto] auswählen
+image:spaces/conferences/registration_types_frontend_wo_user.png[Registrierungstyp ohne Benutzerkonto auswählen]
 
-If the participant is logged in, when clicking on one of the "Register" buttons, they can directly register.
+Wenn die teilnehmende Person angemeldet ist, kann sie sich beim Klicken auf eine der Schaltflächen "Anmelden" direkt anmelden.
 
 image::spaces/conferences/registration_types_frontend_w_user.png[Select registration type with user account]
 
-When clicking on the Register button for a registration type, a pop-up is displayed with the registration terms
-from the conference configuration form.
+Beim Klicken auf die Schaltfläche Anmelden für einen Anmeldungstyp wird ein Pop-up mit den Anmeldebedingungen
+      aus dem Konferenz-Konfigurationsformular angezeigt.
 
 image::spaces/conferences/registration_pop_up.png[Pop up with registration terms]

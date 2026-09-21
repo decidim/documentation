@@ -1,11 +1,11 @@
 = Meetings
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Meetings are also the entities making part of the Meetings component.
-They are usually created by administrators, but participants can also create meetings when the feature is enabled.
+Veranstaltungen sind auch die Entitäten, die Teil der Veranstaltungen-Komponente sind.
+Sie werden in der Regel von Admins erstellt, aber Teilnehmende können ebenfalls Veranstaltungen erstellen, wenn diese Funktion aktiviert ist.
 
-Administrators can perform different actions on meetings, depending if they are created from the administration or by participants.
+Admins können verschiedene Aktionen für Veranstaltungen durchführen, je nachdem, ob diese über die Administration oder von Teilnehmenden erstellt wurden.
 
 == Konfiguration
 
@@ -20,91 +20,91 @@ image::components/meetings/new_meeting_form_backend.png[Create a new meeting for
 
 |Titel
 |Benötigt
-|The title of the meeting.
+|Der Titel der Veranstaltung.
 
 |Beschreibung
 |Benötigt
-|A description of what the meeting is about, like the topics, participants, etc.
+|Eine Beschreibung, worum es bei der Veranstaltung geht, z. B. Themen, Teilnehmende usw.
 
 |Typ
 |Benötigt
-|The meeting type, if it's in person, online, or both.
+|Die Art der Veranstaltung: vor Ort, online oder beides.
 
 |Adresse
 |Optional
-|Address: used to localize the meeting on a map. Is displayed only for in-person and hybrid meetings types.
+|Adresse: dient zur Verortung der Veranstaltung auf einer Karte. Wird nur für Veranstaltungen vor Ort und Hybridveranstaltungen angezeigt.
 
 |Standort
 |Optional
-|Location: message directed to the users implying the spot to meet at, like the name of the building, the name of a room, etc.
-Is displayed only for in-person and hybrid meetings types.
+|Treffpunkt: eine Mitteilung an die Nutzenden, die den Treffpunkt angibt, z. B. den Namen des Gebäudes, den Namen eines Raums usw.
+Wird nur für Veranstaltungen vor Ort und Hybridveranstaltungen angezeigt.
 
 |Standorthinweise
 |Optional
-|Standorthinweise: Zusätzliche Informationen. Example: the floor of the building if it is an in-person meeting, or the meeting password
-if it is an online meeting with restricted access.
+|Standorthinweise: Zusätzliche Informationen. Beispiel: das Stockwerk des Gebäudes bei einer Veranstaltung vor Ort, oder das Veranstaltungspasswort,
+falls es sich um eine Online-Veranstaltung mit eingeschränktem Zugang handelt.
 
 |URL für Online-Meetings
 |Optional
-|The link for participants to be able to connect directly to the online meeting.
+|Der Link, über den sich Teilnehmende direkt mit der Online-Veranstaltung verbinden können.
 
-|Iframe embed type
+|Iframe-Einbettungstyp
 |Optional
-|Allows to say how the online meeting URL is displayed on the meeting page. Choose "None" for no iframe integration, "Embed in
-meeting page" for participants to open the meeting directly on the meeting page, "Open in live event page" for participants to be
-redirected to the live event page, or "Open URL in a new tab" for participants to open the meetings in a new tab.
-Only a few services allow embedding (YouTube, Twitch, Jitsi, ...)
+|Legt fest, wie die URL der Online-Veranstaltung auf der Veranstaltungsseite angezeigt wird. Wählen Sie "Keine" für keine Iframe-Integration, "In Veranstaltungsseite
+einbetten", damit Teilnehmende die Veranstaltung direkt auf der Veranstaltungsseite öffnen können, "Auf Live-Event-Seite öffnen", damit Teilnehmende zur
+Live-Event-Seite weitergeleitet werden, oder "URL in neuem Tab öffnen", damit Teilnehmende die Veranstaltung in einem neuen Tab öffnen können.
+Nur wenige Dienste erlauben eine Einbettung (YouTube, Twitch, Jitsi ...)
 
-|Iframe access level
+|Iframe-Zugriffsebene
 |Benötigt
-|Who is able to see the iframe.
+|Wer den Iframe sehen kann.
 
-|Start time
+|Startzeit
 |Benötigt
-|On which day and time the meeting starts. Expected format: dd/mm/yyyy hh:mm.
+|An welchem Tag und zu welcher Uhrzeit die Veranstaltung beginnt. Erwartetes Format: tt/mm/jjjj hh:mm.
 
-|End time
+|Endzeit
 |Benötigt
-|On which day and time the meeting starts. Expected format: dd/mm/yyyy hh:mm.
+|An welchem Tag und zu welcher Uhrzeit die Veranstaltung beginnt. Erwartetes Format: tt/mm/jjjj hh:mm.
 
 |Kategorie
 |Optional
-|Which category has the meeting. Wird zum Filtern in der Besprechungsliste verwendet.
+|Welche Kategorie die Veranstaltung hat. Wird zum Filtern in der Meetingliste verwendet.
 
 |Registrierungstyp
 |Benötigt
-|Choose an option between "Registration disabled" for no registrations, "On this platform" to display a registration button linked to
-the xref:admin:components/meetings/registrations.adoc[Registrations] or "On a different platform" if you manage meetings Registrations
-with another service.
+|Wählen Sie zwischen "Anmeldung deaktiviert" für keine Anmeldungen, "Auf dieser Plattform" für eine Anmeldeschaltfläche, die mit den
+xref:admin:components/meetings/registrations.adoc[Anmeldungen] verknüpft ist, oder "Auf einer anderen Plattform", wenn Sie die Anmeldungen zu Veranstaltungen
+mit einem anderen Dienst verwalten.
 
 |Registrierungs-URL
-|Required if Registration on a different platform
-|Muss eine URL sein. Link for participants to go to the external service that you are using for registrations.
+|Erforderlich bei Anmeldung auf einer anderen Plattform
+|Muss eine URL sein. Link, über den Teilnehmende zum externen Dienst gelangen, den Sie für Anmeldungen verwenden.
 
 |Privates Meeting
 |Optional
-|Überprüfen Sie, ob das Meeting nicht für alle Besucher sichtbar sein soll. This is only available for official meetings.
+|Überprüfen Sie, ob das Meeting nicht für alle Besucher sichtbar sein soll. Dies ist nur für offizielle Veranstaltungen verfügbar.
 
 |Transparent
 |Optional
-|If the meeting is private, check if the meeting should be visible for all the visitors but they shouldn't be able to
-participate in it. This is only available for official meetings.
+|Wenn die Veranstaltung privat ist, aktivieren Sie diese Option, falls die Veranstaltung für alle Besuchenden sichtbar sein soll, diese aber
+nicht daran teilnehmen können sollen. Dies ist nur für offizielle Veranstaltungen verfügbar.
 
 |Kommentare aktiviert
 |Optional
-|Whether you want participants to be able to comment on this specific meeting.
+|Ob Teilnehmende diese spezifische Veranstaltung kommentieren können sollen.
 
-|Comments enabled from
+|Kommentare aktiviert ab
 |Optional
-|Date from which participants are able to comment on this specific meeting.
+|Datum, ab dem Teilnehmende diese spezifische Veranstaltung kommentieren können.
 
-|Comments enabled until
+|Kommentare aktiviert bis
 |Optional
-|Date until which participants are able to comment on this specific meeting.
+|Datum, bis zu dem Teilnehmende diese spezifische Veranstaltung kommentieren können.
 |===
 
-You can also define *Services* for a Meeting. These are metadata that allows to communicate, for instance, if there's
-a place for children, deaf assistance, translations, etc. Sie können mehrere Dienste innerhalb eines Meetings nutzen.
+Sie können für eine Veranstaltung auch *Dienstleistungen* festlegen. Dies sind Metadaten, mit denen zum Beispiel mitgeteilt werden kann, ob es
+einen Kinderbereich, Hörassistenz, Übersetzungen usw. gibt. Sie können mehrere Dienste innerhalb eines Meetings nutzen.
 
 .Meeting erstellen - Dienste
 [cols="20h,10h,~"]
@@ -122,76 +122,76 @@ a place for children, deaf assistance, translations, etc. Sie können mehrere Di
 
 ==== Aktionen
 
-.Aktionen - Offizielle Treffen
+.Aktionen - Offizielle Meetings
 [cols="10h,20h,~"]
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
-|To edit a meeting.
+|Um eine Veranstaltung zu bearbeiten.
 
-|image:icons/action_duplicate.png[Duplicate icon]
+|image:icons/action_duplicate.png[Symbol: Duplizieren]
 |Duplicate
-|Allows an administrator to duplicate quickly a meeting.
+|Ermöglicht es einem Admin, eine Veranstaltung schnell zu duplizieren.
 
-|image:icons/action_folder.png[Folders icon]
+|image:icons/action_folder.png[Symbol: Ordner]
 |Ordner
 |Zur Klassifizierung von Anhängen.
 
-|image:icons/action_attachments.png[Attachments icon]
+|image:icons/action_attachments.png[Symbol: Anhänge]
 |Anhänge
-|To add documents and images related to the meeting.
+|Um Dokumente und Bilder zur Veranstaltung hinzuzufügen.
 
-|image:icons/action_registrations.png[Registrations icon]
-|xref:admin:components/meetings/registrations.adoc[Registrations]
-|Allows to define who can register for attending the meeting. Only available if the registrations are enabled in the meeting form.
+|image:icons/action_registrations.png[Symbol: Anmeldungen]
+|xref:admin:components/meetings/registrations.adoc[Registrierungen]
+|Ermöglicht es festzulegen, wer sich für die Teilnahme an der Veranstaltung anmelden kann. Nur verfügbar, wenn die Anmeldungen im Veranstaltungsformular aktiviert sind.
 
-|image:icons/action_agenda.png[Agenda icon]
+|image:icons/action_agenda.png[Symbol: Traktandenliste]
 |xref:admin:components/meetings/agenda.adoc[Agenda]
-|To publish the topics to be discussed in the meeting.
+|Um die zu besprechenden Themen der Veranstaltung zu veröffentlichen.
 
-|image:icons/action_list.png[Poll icon]
-|xref:admin:components/meetings/polls.adoc[Polls]
-|To manage the polls for the meeting.
+|image:icons/action_list.png[Symbol: Umfrage]
+|xref:admin:components/meetings/polls.adoc[Umfragen während Veranstaltungen]
+|Um die Umfragen für die Veranstaltung zu verwalten.
 
-|image:icons/action_close.png[Close icon]
-|xref:admin:components/meetings/close.adoc[Close]
-|Allows and administrator to close the meeting with the minutes on the discussion and add extra information.
+|image:icons/action_close.png[Symbol: Schliessen]
+|xref:admin:components/meetings/close.adoc[Schliessen]
+|Ermöglicht es einem Admin, die Veranstaltung mit dem Protokoll der Diskussion abzuschliessen und zusätzliche Informationen hinzuzufügen.
 
-|image:icons/action_publish.png[Publish icon]
+|image:icons/action_publish.png[Symbol: Veröffentlichen]
 |Veröffentlichen
 |Das Meeting öffentlich anzeigen.
 
-|image:icons/action_unpublish.png[Unpublish icon]
+|image:icons/action_unpublish.png[Symbol: Veröffentlichung rückgängig machen]
 |Zurückziehen
 |Das Meeting nicht öffentlich anzeigen.
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
-|Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
+|Um zu sehen, wie es im Frontend den Teilnehmenden gezeigt wird.
 
-|image:icons/action_permissions.png[Permissions icon]
+|image:icons/action_permissions.png[Symbol: Berechtigungen]
 |Berechtigungen
-|Um die Berechtigungen dieses Treffens zu verwalten, abhängig von der Überprüfung, die ein Teilnehmer hat. Ermöglicht einem Administrator,
-zu konfigurieren, der einem Meeting *beitritt* kann.
+|Um die Berechtigungen dieses Meetings zu verwalten, abhängig von der Überprüfung, die eine teilnehmende Person hat. Ermöglicht es einem Admin,
+zu konfigurieren, wer einem Meeting *beitreten* kann.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
-|Diesen Termin löschen.
+|Dieses Meeting löschen.
 |===
 
-=== Participants meetings
+=== Veranstaltungen für Teilnehmende
 
-Meetings can be created by participants if the component setting "Participants can create meetings" is checked.
-If a participant belongs to a verified xref:admin:participants/groups.adoc[user group], then they are also able to create meetings
-as that group.
+Veranstaltungen können von Teilnehmenden erstellt werden, wenn die Komponenteneinstellung "Teilnehmende können Veranstaltungen erstellen" aktiviert ist.
+Wenn ein Teilnehmender einer verifizierten xref:admin:participants/groups.adoc[Benutzergruppe] angehört, kann er Veranstaltungen
+auch im Namen dieser Gruppe erstellen.
 
-When a participant is on the meetings list, they can click the "New meeting" button.
+Wenn sich ein Teilnehmender in der Veranstaltungsliste befindet, kann er auf die Schaltfläche "Neue Veranstaltung" klicken.
 
 image::components/meetings/new_meeting_button_front.png[Create a new meeting button (frontend)]
 
-Then, they are redirected on the participants meetings creation form.
+Anschliessend wird er zum Erstellungsformular für Teilnehmenden-Veranstaltungen weitergeleitet.
 
 image::components/meetings/new_meeting_form_frontend01.png[Create a new meeting form (frontend)]
 
@@ -202,113 +202,113 @@ image::components/meetings/new_meeting_form_frontend01.png[Create a new meeting 
 
 |Titel
 |Benötigt
-|The title of the meeting.
+|Der Titel der Veranstaltung.
 
 |Beschreibung
 |Benötigt
-|A description of what the meeting is about, like the topics, participants, etc.
+|Eine Beschreibung, worum es bei der Veranstaltung geht, z. B. Themen, Teilnehmende usw.
 
 |Typ
 |Benötigt
-|The meeting type, if it's in person, online, or both.
+|Die Art der Veranstaltung: vor Ort, online oder beides.
 
 |Adresse
 |Optional
-|Address: used to localize the meeting on a map. Is displayed only for in-person and hybrid meetings types.
+|Adresse: dient zur Verortung der Veranstaltung auf einer Karte. Wird nur für Veranstaltungen vor Ort und Hybridveranstaltungen angezeigt.
 
 |Standort
 |Optional
-|Location: message directed to the users implying the spot to meet at, like the name of the building, the name of a room, etc.
-Is displayed only for in-person and hybrid meetings types.
+|Treffpunkt: eine Mitteilung an die Nutzenden, die den Treffpunkt angibt, z. B. den Namen des Gebäudes, den Namen eines Raums usw.
+Wird nur für Veranstaltungen vor Ort und Hybridveranstaltungen angezeigt.
 
 |Standorthinweise
 |Optional
-|Standorthinweise: Zusätzliche Informationen. Example: the floor of the building if it is an in-person meeting, or the meeting password
-if it is an online meeting with restricted access.
+|Standorthinweise: Zusätzliche Informationen. Beispiel: das Stockwerk des Gebäudes bei einer Veranstaltung vor Ort, oder das Veranstaltungspasswort,
+falls es sich um eine Online-Veranstaltung mit eingeschränktem Zugang handelt.
 
 |URL für Online-Meetings
 |Optional
-|The link for participants to be able to connect directly to the online meeting.
+|Der Link, über den sich Teilnehmende direkt mit der Online-Veranstaltung verbinden können.
 
-|Iframe embed type
+|Iframe-Einbettungstyp
 |Optional
-|Allows to say how the online meeting URL is displayed on the meeting page. Choose "None" for no iframe integration, "Embed in
-meeting page" for participants to open the meeting directly on the meeting page, or "Open URL in a new tab" for participants to
-open the meetings in a new tab. Only a few services allow embedding (YouTube, Twitch, Jitsi, ...)
+|Legt fest, wie die URL der Online-Veranstaltung auf der Veranstaltungsseite angezeigt wird. Wählen Sie "Keine" für keine Iframe-Integration, "In Veranstaltungsseite
+einbetten", damit Teilnehmende die Veranstaltung direkt auf der Veranstaltungsseite öffnen können, oder "URL in neuem Tab öffnen", damit Teilnehmende
+die Veranstaltung in einem neuen Tab öffnen können. Nur wenige Dienste erlauben eine Einbettung (YouTube, Twitch, Jitsi ...)
 
-|Start time
+|Startzeit
 |Benötigt
-|On which day and time the meeting start. Expected format: dd/mm/yyyy hh:mm.
+|An welchem Tag und zu welcher Uhrzeit die Veranstaltung beginnt. Erwartetes Format: tt/mm/jjjj hh:mm.
 
-|End time
+|Endzeit
 |Benötigt
-|On which day and time the meeting start. Expected format: dd/mm/yyyy hh:mm.
+|An welchem Tag und zu welcher Uhrzeit die Veranstaltung beginnt. Erwartetes Format: tt/mm/jjjj hh:mm.
 
 |Kategorie
 |Optional
-|Which category has the meeting. Wird zum Filtern in der Besprechungsliste verwendet.
+|Welche Kategorie die Veranstaltung hat. Wird zum Filtern in der Meetingliste verwendet.
 
 |Registrierungstyp
 |Benötigt
-|Choose an option between "Registration disabled" for no registrations, "On this platform" to display a registration button linked to
-the xref:admin:components/meetings/registrations.adoc[Registrations] or "On a different platform" if you manage meetings Registrations
-with another service.
+|Wählen Sie zwischen "Anmeldung deaktiviert" für keine Anmeldungen, "Auf dieser Plattform" für eine Anmeldeschaltfläche, die mit den
+xref:admin:components/meetings/registrations.adoc[Anmeldungen] verknüpft ist, oder "Auf einer anderen Plattform", wenn Sie die Anmeldungen zu Veranstaltungen
+mit einem anderen Dienst verwalten.
 
 |Verfügbare Plätze für dieses Meeting
-|Required if Registration on this platform
+|Erforderlich bei Anmeldung auf dieser Plattform
 |Wie viele Plätze sind für dieses Meeting verfügbar? Lassen Sie es auf 0 wenn Sie unbegrenzte Slots zur Verfügung haben.
 
 |Registrierungsbedingungen
-|Required if Registration on this platform
-|Welche Bedingungen für die Teilnahme an der Veranstaltung müssen die Teilnehmer akzeptieren, um sich zu registrieren oder an der Sitzung teilzunehmen.
+|Erforderlich bei Anmeldung auf dieser Plattform
+|Welche Bedingungen müssen die Teilnehmenden akzeptieren, um sich für das Meeting zu registrieren oder daran teilzunehmen.
 
 |Registrierungs-URL
-|Required if Registration on a different platform
-|Muss eine URL sein. Link for participants to go to the external service that you are using for registrations.
+|Erforderlich bei Anmeldung auf einer anderen Plattform
+|Muss eine URL sein. Link, über den Teilnehmende zum externen Dienst gelangen, den Sie für Anmeldungen verwenden.
 
 |Meeting erstellen als
-|Erforderlich, wenn der Teilnehmer zu einer Gruppe gehört
-|With which identity this meeting is created, the participant or the user group one.
+|Erforderlich, wenn die teilnehmende Person zu einer Gruppe gehört
+|Mit welcher Identität diese Veranstaltung erstellt wird, der des Teilnehmenden oder der der Benutzergruppe.
 |===
 
-Nach der Erstellung des Meetings können die Teilnehmer auch xref:components/meetings/close.adoc[close] bearbeiten.
+Nach der Erstellung des Meetings können die Teilnehmenden es auch bearbeiten und xref:components/meetings/close.adoc[schliessen].
 
 ==== Aktionen
 
-.Aktionen - Bürgertreffen
+.Aktionen - Bürger-Meetings
 [cols="10h,20h,~"]
 |===
 |Icon |Name |Definition
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
-|Um zu sehen, wie es im Frontend den Teilnehmern gezeigt wird.
+|Um zu sehen, wie es im Frontend den Teilnehmenden gezeigt wird.
 
-|image:icons/action_permissions.png[Permissions icon]
+|image:icons/action_permissions.png[Symbol: Berechtigungen]
 |Berechtigungen
-|To handle the authorizations needed to join, comment or reply to the poll for this specific meeting.
+|Um die Berechtigungen zu verwalten, die für die Teilnahme, das Kommentieren oder das Beantworten der Umfrage zu dieser spezifischen Veranstaltung erforderlich sind.
 |===
 
 === Online-Meetings
 
-For online meetings, depending in the moment and configuration of the meeting, different messages are shown to the participants to
-inform them on how to join the online meeting.
+Bei Online-Veranstaltungen werden den Teilnehmenden je nach Zeitpunkt und Konfiguration der Veranstaltung unterschiedliche Meldungen angezeigt,
+um sie darüber zu informieren, wie sie der Online-Veranstaltung beitreten können.
 
-If the "Online meeting URL" isn't set yet, a message that says "Link available soon" is displayed.
+Wenn die "URL der Online-Veranstaltung" noch nicht festgelegt ist, wird die Meldung "Link demnächst verfügbar" angezeigt.
 
 image::components/meetings/online_meeting_available_soon.png[Online meeting available soon]
 
-If the "Online meeting URL" is set, a few minutes before the meeting start, the message says "The link to join
-the meeting will be available a few minutes before it starts"
+Wenn die "URL der Online-Veranstaltung" festgelegt ist, lautet die Meldung wenige Minuten vor Beginn der Veranstaltung: "Der Link zur Teilnahme
+an der Veranstaltung wird wenige Minuten vor Beginn verfügbar sein"
 
 image::components/meetings/online_meeting_available_before.png[Online meeting available before it starts]
 
-If the "Online meeting URL" is set, the start time of the meeting has arrived, and you chose the Iframe embed type to be
-"Open URL in a new tab" then the message says that "the meeting is happening right now" with a link to join the meeting.
+Wenn die "URL der Online-Veranstaltung" festgelegt ist, die Startzeit der Veranstaltung erreicht wurde und Sie als Iframe-Einbettungstyp
+"URL in neuem Tab öffnen" gewählt haben, lautet die Meldung, dass "die Veranstaltung gerade jetzt stattfindet", mit einem Link zur Teilnahme an der Veranstaltung.
 
 image::components/meetings/online_meeting_happening.png[Online meeting available before it starts]
 
-If the "Online meeting URL" is set, the start time of the meeting has arrived, and you chose the Iframe embed type to be
-"Embed in meeting page" then the message says that "the meeting is happening right now" with the meeting embedded in the block.
+Wenn die "URL der Online-Veranstaltung" festgelegt ist, die Startzeit der Veranstaltung erreicht wurde und Sie als Iframe-Einbettungstyp
+"In Veranstaltungsseite einbetten" gewählt haben, lautet die Meldung, dass "die Veranstaltung gerade jetzt stattfindet", wobei die Veranstaltung im Block eingebettet ist.
 
 image::components/meetings/online_meeting_happening_embed.png[Online meeting available before it starts]

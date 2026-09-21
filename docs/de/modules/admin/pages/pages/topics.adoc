@@ -1,21 +1,21 @@
 = Themen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-In this section, you can configure Topics, to organize the static pages and provide more clarity to the participants.
+In diesem Abschnitt können Sie Themen konfigurieren, um die statischen Seiten zu organisieren und den Teilnehmenden mehr Klarheit zu bieten.
 
 == Konfiguration
 
-=== Manage the topics
+=== Die Themen verwalten
 
-To access the topics list, click the Topics tab at the top of the panel.
-Here, you are able to edit, delete, and create topics for your static pages.
+Um auf die Themenliste zuzugreifen, klicken Sie auf den Tab Themen oben im Panel.
+Hier können Sie Themen für Ihre statischen Seiten bearbeiten, löschen und erstellen.
 
 image::pages/pages_backend_list_topics.png[Backend: list topics of pages]
 
 === Neues Thema erstellen
 
-To create a new topic, click the "Create topic" button.
+Um ein neues Thema zu erstellen, klicken Sie auf die Schaltfläche "Thema erstellen".
 
 image::pages/pages_backend_topic_form.png[Backend: new topic form]
 
@@ -32,14 +32,14 @@ image::pages/pages_backend_topic_form.png[Backend: new topic form]
 |Optional
 |Worum geht es bei diesem Thema.
 
-|Bestellposition
+|Reihenfolge
 |Optional
-|The order of the topic in relation with the other topics. Eine niedrigere Zahl bedeutet eine höhere Priorität.
-For instance, if you have two topics, "Topic a" with weight "10" and "Topic b" with weight "0" then "Topic b" is first when ordering.
+|Die Reihenfolge des Themas im Verhältnis zu den anderen Themen. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+Wenn Sie zum Beispiel zwei Themen haben, "Thema a" mit der Gewichtung "10" und "Thema b" mit der Gewichtung "0", dann steht "Thema b" bei der Sortierung an erster Stelle.
 
 |Im Footer anzeigen
 |Optional
-|Wether you want to show this topic in the "Help" section of the general footer (accessible in every page).
+|Ob Sie dieses Thema im Abschnitt "Hilfe" der allgemeinen Fusszeile anzeigen möchten (auf jeder Seite zugänglich).
 |===
 
 image::pages/pages_frontend_footer.png[Frontend: example of a page in the footer]
