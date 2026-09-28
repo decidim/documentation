@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Decidim Docs — Content Manager</title>
+    <script src="https://cdn.jsdelivr.net/npm/@asciidoctor/core@2.2.9/dist/browser/asciidoctor.js"></script>
+  </head>
+  <body>
+    <script>
+      window.CMS_MANUAL_INIT = true;
+    </script>
+    <script src="https://unpkg.com/decap-cms@^3.16.0/dist/decap-cms.js"></script>
+    <script>
+      const { CMS, initCMS: init, h, createClass } = window;
+
+      // Decap has no built-in AsciiDoc support, and Antora pages carry no
+      // front matter. This custom formatter treats the whole file as one raw
+      // text body so editing never injects or rewrites front matter.
+      CMS.registerCustomFormat('adoc', 'adoc', {
+        fromFile: (text) => ({ body: text }),
+        toFile: (value) => value.body,
+      });
+
+      // Antora-only constructs the in-browser renderer cannot resolve.
+      const toPreviewable = (source) =>
+        source
+          .replace(/^include::[^\n]*$/gm, '')
+          .replace(/xref:([^\[\]]+)\[([^\]]*)\]/g, (_, target, label) => label || target);
+
+      const processor = window.Asciidoctor ? window.Asciidoctor() : null;
+
+      // Approximate, instant preview. For an exact Antora build use the
+      // "View Preview" deploy preview link provided by the backend.
+      const DocPreview = createClass({
+        render() {
+          const source = this.props.entry.getIn(['data', 'body']) || '';
+          let html;
+          try {
+            html = processor
+              ? processor.convert(toPreviewable(source), { safe: 'safe' })
+              : undefined;
+          } catch (error) {
+            console.error('AsciiDoc preview failed', error);
+          }
+          return h('div', {
+            className: 'doc-preview',
+            dangerouslySetInnerHTML: { __html: html || `<pre>${source}</pre>` },
+          });
+        },
+      });
+
+      CMS.registerPreviewTemplate('contribute', DocPreview);
+      CMS.registerPreviewStyle('/_/css/styles.css');
+      CMS.registerPreviewStyle('/_/css/icons.css');
+
+      // Enable the local proxy (and disable the unsupported editorial workflow)
+      // only when running the admin locally.
+      const isLocal = ['localhost', '127.0.0.1'].includes(location.hostname);
+      init(isLocal ? { config: { local_backend: true, publish_mode: 'simple' } } : undefined);
+    </script>
+  </body>
+</html>

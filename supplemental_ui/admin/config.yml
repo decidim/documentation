@@ -1,0 +1,25 @@
+backend:
+  name: github
+  repo: decidim/documentation
+  branch: develop
+
+publish_mode: editorial_workflow
+site_url: https://docs.decidim.org
+
+media_folder: docs/en/modules/ROOT/assets/images
+
+collections:
+  - name: contribute
+    label: Contribute
+    label_singular: Page
+    folder: docs/en/modules/contribute/pages
+    extension: adoc
+    format: adoc
+    create: false
+    delete: false
+    summary: "{{filename}}"
+    preview_path: "en/develop/contribute/{{filename}}.html"
+    fields:
+      - name: body
+        label: AsciiDoc
+        widget: text
