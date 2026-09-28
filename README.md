@@ -32,14 +32,14 @@ npm run build
 xdg-open build/site/index.html
 ```
 
-### Docker
+### Devcontainer
 
-You can check this locally and install with Docker.
+You can work locally using the development container.
 
 ```bash
 git clone https://github.com/decidim/documentation
 cd documentation
-./bin/dbuild
+bin/devcontainer up
+bin/devcontainer npm run build
 xdg-open build/site/index.html
 ```
-

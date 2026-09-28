@@ -1,0 +1,34 @@
+{
+  "name": "decidim-documentation",
+  "dockerComposeFile": "compose.yaml",
+  "service": "docs-app",
+  "workspaceFolder": "/workspaces/documentation",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "asciidoctor.asciidoctor-vscode"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+      "moby": false
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22.10.0"
+    }
+  },
+  "appPort": [
+    "1313:1313"
+  ],
+  "forwardPorts": [
+    1313
+  ],
+  "portsAttributes": {
+    "1313": {
+      "label": "Antora preview server"
+    }
+  },
+  "postCreateCommand": "npm install"
+}
