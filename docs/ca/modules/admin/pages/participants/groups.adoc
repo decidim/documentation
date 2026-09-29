@@ -29,7 +29,7 @@ When a participant creates a user group, it adds a line in the user groups list 
 * *Created at*: date of the user group creation.
 * *State*: state of the verification, can only be pending, verified, or rejected.
 
-You can filter and sort this list by clicking the "Filter" button and the columns headers.
+Podeu filtrar i ordenar aquesta llista fent clic al botó "Filtre" i a les capçaleres de les columnes.
 You can also search for user groups by email, name, or nickname in the search bar.
 
 image::participants/admin_user_group_verification.png[Admin panel: user group verifications]
