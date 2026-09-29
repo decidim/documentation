@@ -567,6 +567,14 @@ const renderAsciiDoc = (source, imagesDir) => {
   });
 };
 
+// Asciidoctor's `safe: 'safe'` mode still passes through raw HTML, so the
+// converted markup is sanitized before it reaches dangerouslySetInnerHTML.
+const sanitizeHtml = (html) => {
+  if (!html) return '';
+  if (window.DOMPurify) return window.DOMPurify.sanitize(html);
+  return '';
+};
+
 // Build the images dir for a page: strip the module `pages/` prefix and the
 // .adoc extension, keep any subdirectories, then append `_images`.
 const imagesDirForEntry = (module, entry) => {
@@ -587,7 +595,9 @@ const makeDocPreview = (module) =>
   createClass({
     render() {
       const source = this.props.entry.getIn(['data', 'body']) || '';
-      const html = renderAsciiDoc(source, imagesDirForEntry(module, this.props.entry));
+      const html = sanitizeHtml(
+        renderAsciiDoc(source, imagesDirForEntry(module, this.props.entry)),
+      );
       if (html) {
         return h('div', {
           className: 'doc-preview',
