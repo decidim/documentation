@@ -75,7 +75,12 @@ fi
 # Handle commands that don't need container ID first
 case "$1" in
     up)
-        use_local_config
+        if use_local_config; then
+            :
+        elif [ -f "$DEVCONTAINER_LOCAL_JSON" ]; then
+            echo "Error: Failed to apply devcontainer.local.json." >&2
+            exit 1
+        fi
         trap restore_devcontainer_config EXIT
         devcontainer up --workspace-folder=.
         status=$?
@@ -97,7 +102,12 @@ case "$1" in
         exit 0
         ;;
     rebuild)
-        use_local_config
+        if use_local_config; then
+            :
+        elif [ -f "$DEVCONTAINER_LOCAL_JSON" ]; then
+            echo "Error: Failed to apply devcontainer.local.json." >&2
+            exit 1
+        fi
         trap restore_devcontainer_config EXIT
         devcontainer up --workspace-folder=. --remove-existing-container
         status=$?
