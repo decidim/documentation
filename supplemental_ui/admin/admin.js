@@ -168,27 +168,50 @@ const AdocControl = createClass({
     this.apply(next, cursor, cursor);
   },
 
+  // Decap tracks picked files in `mediaPaths`, keyed by a control id. The
+  // wrapper calls our `shouldComponentUpdate` with the wrapper's own props
+  // (which expose `uniqueFieldId`, not `forID`), so generate and reuse our
+  // own stable id for the media control, like the built-in file widget does.
+  mediaControlID() {
+    if (!this._mediaControlID) {
+      this._mediaControlID = `adoc-${Math.random().toString(36).slice(2)}${Date.now()}`;
+    }
+    return this._mediaControlID;
+  },
+
+  // Decap's Widget wrapper only re-renders custom controls when their value
+  // changes, unless the control provides its own shouldComponentUpdate. The
+  // media library reports a picked image through `mediaPaths` without touching
+  // the value, so opt into those updates too.
+  shouldComponentUpdate(nextProps) {
+    if (this.props.value !== nextProps.value) return true;
+    if (this.props.classNameWrapper !== nextProps.classNameWrapper) return true;
+    if (this.props.hasActiveStyle !== nextProps.hasActiveStyle) return true;
+    const mediaPath = nextProps.mediaPaths && nextProps.mediaPaths.get(this.mediaControlID());
+    return !!mediaPath;
+  },
+
   componentDidUpdate() {
-    const mediaPath = this.props.mediaPaths && this.props.mediaPaths.get(this.props.forID);
+    const mediaPath = this.props.mediaPaths && this.props.mediaPaths.get(this.mediaControlID());
     if (mediaPath) {
       // Uploads go to the shared ROOT module folder, so the macro uses
       // Antora's cross-module target form to resolve from any module.
       this.insertAtCursor(`image::ROOT:${basename(mediaPath)}[Alt text]`);
-      this.props.onRemoveInsertedMedia(this.props.forID);
+      this.props.onRemoveInsertedMedia(this.mediaControlID());
     }
   },
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateHeight);
     if (this.props.onRemoveMediaControl) {
-      this.props.onRemoveMediaControl(this.props.forID);
+      this.props.onRemoveMediaControl(this.mediaControlID());
     }
   },
 
   openMediaLibrary() {
     this.saveSelection();
     this.props.onOpenMediaLibrary({
-      controlID: this.props.forID,
+      controlID: this.mediaControlID(),
       forImage: true,
       allowMultiple: false,
       field: this.props.field,
