@@ -47,6 +47,6 @@ git clone https://github.com/decidim/documentation
 cd documentation
 bin/devcontainer up
 bin/devcontainer npm run build
-npm run dev:admin
+bin/devcontainer npm run dev:admin
 xdg-open build/site/index.html
 ```
