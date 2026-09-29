@@ -10,9 +10,41 @@ local_backend: true
 publish_mode: editorial_workflow
 site_url: https://docs.decidim.org
 
-media_folder: docs/en/modules/contribute/assets/images
+media_folder: docs/en/modules/ROOT/assets/images
 
 collections:
+  - name: root
+    label: Home
+    label_singular: Page
+    folder: docs/en/modules/ROOT/pages
+    extension: adoc
+    format: adoc
+    create: false
+    delete: false
+    summary: "{{filename}}"
+    preview_path: "en/develop/{{filename}}.html"
+    fields:
+      - name: body
+        label: AsciiDoc
+        widget: adoc
+  - name: admin
+    label: Admin
+    label_singular: Page
+    folder: docs/en/modules/admin/pages
+    extension: adoc
+    format: adoc
+    create: false
+    delete: false
+    summary: "{{filename}}"
+    nested:
+      depth: 100
+      summary: "{{filename}}"
+      subfolders: false
+    preview_path: "en/develop/admin/{{dirname}}/{{filename}}.html"
+    fields:
+      - name: body
+        label: AsciiDoc
+        widget: adoc
   - name: contribute
     label: Contribute
     label_singular: Page
@@ -23,6 +55,76 @@ collections:
     delete: false
     summary: "{{filename}}"
     preview_path: "en/develop/contribute/{{filename}}.html"
+    fields:
+      - name: body
+        label: AsciiDoc
+        widget: adoc
+  - name: features
+    label: Features
+    label_singular: Page
+    folder: docs/en/modules/features/pages
+    extension: adoc
+    format: adoc
+    create: false
+    delete: false
+    summary: "{{filename}}"
+    preview_path: "en/develop/features/{{filename}}.html"
+    fields:
+      - name: body
+        label: AsciiDoc
+        widget: adoc
+  - name: publications
+    label: Publications
+    label_singular: Page
+    folder: docs/en/modules/publications/pages
+    extension: adoc
+    format: adoc
+    create: false
+    delete: false
+    summary: "{{filename}}"
+    preview_path: "en/develop/publications/{{filename}}.html"
+    fields:
+      - name: body
+        label: AsciiDoc
+        widget: adoc
+  - name: releases
+    label: Releases
+    label_singular: Page
+    folder: docs/en/modules/releases/pages
+    extension: adoc
+    format: adoc
+    create: false
+    delete: false
+    summary: "{{filename}}"
+    preview_path: "en/develop/releases/{{filename}}.html"
+    fields:
+      - name: body
+        label: AsciiDoc
+        widget: adoc
+  - name: understand
+    label: Understand
+    label_singular: Page
+    folder: docs/en/modules/understand/pages
+    extension: adoc
+    format: adoc
+    create: false
+    delete: false
+    summary: "{{filename}}"
+    preview_path: "en/develop/understand/{{filename}}.html"
+    fields:
+      - name: body
+        label: AsciiDoc
+        widget: adoc
+  - name: whitepaper
+    label: Whitepaper
+    label_singular: Page
+    folder: docs/en/modules/whitepaper/pages
+    extension: adoc
+    format: adoc
+    create: false
+    delete: false
+    summary: "{{filename}}"
+    preview_path: "en/develop/whitepaper/{{filename}}.html"
     fields:
       - name: body
         label: AsciiDoc
