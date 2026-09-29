@@ -8,4 +8,5 @@ services:
     ports:
       - "${DEVCONTAINER_APP_PORT:-1313}:1313"
       - "8080:8080"
+      - "8081:8081"
     command: sleep infinity
