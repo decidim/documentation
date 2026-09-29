@@ -10,7 +10,7 @@ local_backend: true
 publish_mode: editorial_workflow
 site_url: https://docs.decidim.org
 
-media_folder: docs/en/modules/ROOT/assets/images
+media_folder: docs/en/modules/contribute/assets/images
 
 collections:
   - name: contribute
@@ -26,4 +26,4 @@ collections:
     fields:
       - name: body
         label: AsciiDoc
-        widget: text
+        widget: adoc

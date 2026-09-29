@@ -13,65 +13,22 @@
     </script>
     <script src="https://unpkg.com/decap-cms@^3.16.0/dist/decap-cms.js"></script>
     <script>
-      const { CMS, initCMS: init, h, createClass } = window;
-
-      // Decap has no built-in AsciiDoc support, and Antora pages carry no
-      // front matter. This custom formatter treats the whole file as one raw
-      // text body so editing never injects or rewrites front matter.
-      CMS.registerCustomFormat('adoc', 'adoc', {
-        fromFile: (text) => ({ body: text }),
-        toFile: (value) => value.body,
-      });
-
-      // Antora-only constructs the in-browser renderer cannot resolve.
-      const toPreviewable = (source) =>
-        source
-          .replace(/^include::[^\n]*$/gm, '')
-          .replace(/xref:([^\[\]]+)\[([^\]]*)\]/g, (_, target, label) => label || target);
-
-      const processor = window.Asciidoctor ? window.Asciidoctor() : null;
-
-      // Approximate, instant preview. For an exact Antora build use the
-      // "View Preview" deploy preview link provided by the backend.
-      const DocPreview = createClass({
-        render() {
-          const source = this.props.entry.getIn(['data', 'body']) || '';
-          let html;
-          try {
-            html = processor
-              ? processor.convert(toPreviewable(source), { safe: 'safe' })
-              : undefined;
-          } catch (error) {
-            console.error('AsciiDoc preview failed', error);
-          }
-          return h('div', {
-            className: 'doc-preview',
-            dangerouslySetInnerHTML: { __html: html || `<pre>${source}</pre>` },
-          });
-        },
-      });
-
-      CMS.registerPreviewTemplate('contribute', DocPreview);
-      CMS.registerPreviewStyle('/_/css/styles.css');
-      CMS.registerPreviewStyle('/_/css/icons.css');
-
-      // Resolve config.yml against the admin page's own directory. Static
-      // servers (e.g. `serve`, Netlify) may serve /admin without a trailing
-      // slash, which would otherwise make Decap's relative fetch resolve to
-      // /config.yml and fail with a 404.
-      const adminDir = (() => {
+      // Static servers (e.g. `serve`, Netlify) may serve /admin without a
+      // trailing slash, so resolve the admin directory from the page URL
+      // before loading the asset files relative to it.
+      window.ADMIN_DIR = (() => {
         const path = window.location.pathname;
         if (path.endsWith('/')) return path;
         if (path.endsWith('index.html')) return path.slice(0, path.lastIndexOf('/') + 1);
         return `${path}/`;
       })();
-      const configLink = document.createElement('link');
-      configLink.rel = 'cms-config-url';
-      configLink.type = 'text/yaml';
-      configLink.href = `${adminDir}config.yml`;
-      document.head.appendChild(configLink);
-
-      init();
+      const css = document.createElement('link');
+      css.rel = 'stylesheet';
+      css.href = `${window.ADMIN_DIR}admin.css`;
+      document.head.appendChild(css);
+      const js = document.createElement('script');
+      js.src = `${window.ADMIN_DIR}admin.js`;
+      document.body.appendChild(js);
     </script>
   </body>
 </html>

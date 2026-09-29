@@ -2,3 +2,5 @@ static_files:
 - _redirects
 - admin/index.html
 - admin/config.yml
+- admin/admin.css
+- admin/admin.js

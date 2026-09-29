@@ -1,0 +1,87 @@
+.adoc-widget {
+  border: 1px solid #d3d7db;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.adoc-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 8px;
+  background: #f3f5f7;
+  border-bottom: 1px solid #d3d7db;
+}
+
+.adoc-toolbar-group {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.adoc-toolbar-group + .adoc-toolbar-group {
+  border-left: 1px solid #d3d7db;
+  padding-left: 6px;
+  margin-left: 6px;
+}
+
+.adoc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: #3d4449;
+  cursor: pointer;
+}
+
+.adoc-btn:hover {
+  background: #e2e6ea;
+}
+
+.adoc-btn:active {
+  background: #d3d7db;
+}
+
+.adoc-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.adoc-select {
+  height: 30px;
+  padding: 0 6px;
+  border: 1px solid #d3d7db;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #3d4449;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.adoc-btn:hover {
+  background: #eef1f4;
+}
+
+.adoc-btn:active {
+  background: #dfe4e8;
+}
+
+.adoc-textarea {
+  display: block;
+  width: 100%;
+  min-height: 240px;
+  padding: 12px;
+  border: 0;
+  outline: none;
+  resize: vertical;
+  box-sizing: border-box;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 14px;
+  line-height: 1.6;
+}
