@@ -267,11 +267,11 @@ const AdocControl = createClass({
     // Longest prefixes first so `[.underline]#...#`/`[.line-through]#...#`
     // win over the shorter `*`, `_` and backtick patterns.
     const patterns = [
-      /\[\.underline\]#([\s\S]*?)#/,
-      /\[\.line-through\]#([\s\S]*?)#/,
-      /\*([\s\S]*?)\*/,
-      /_([\s\S]*?)_/,
-      /`([\s\S]*?)`/,
+      /\[\.underline\]#([\s\S]*?)#/g,
+      /\[\.line-through\]#([\s\S]*?)#/g,
+      /\*([\s\S]*?)\*/g,
+      /_([\s\S]*?)_/g,
+      /`([\s\S]*?)`/g,
     ];
     for (const pattern of patterns) {
       pattern.lastIndex = 0;
@@ -297,23 +297,27 @@ const AdocControl = createClass({
 
   // Wrap the selection in an AsciiDoc listing block.
   codeBlock() {
-    this.wrapBlock('[source]\n----\n', '\n----', 'code');
+    this.wrapBlock('[source]\n----\n', '\n----\n', 'code');
   },
 
   // Wrap the selection in an AsciiDoc quote block.
   blockquote() {
-    this.wrapBlock('[quote]\n____\n', '\n____', 'quote');
+    this.wrapBlock('[quote]\n____\n', '\n____\n', 'quote');
   },
 
+  // Delimited blocks require the markers to sit on their own lines. Start on a
+  // fresh line, keep the selected text on its own line, and leave a trailing
+  // newline so following content is not glued to the closing marker.
   wrapBlock(prefix, suffix, placeholder) {
     const value = this.value();
     const el = this.textarea;
     const start = el.selectionStart;
     const end = el.selectionEnd;
     const selected = value.slice(start, end) || placeholder;
-    const block = `${prefix}${selected}${suffix}`;
+    const leading = start > 0 && value[start - 1] !== '\n' ? '\n' : '';
+    const block = `${leading}${prefix}${selected}${suffix}`;
     const next = value.slice(0, start) + block + value.slice(end);
-    const selStart = start + prefix.length;
+    const selStart = start + leading.length + prefix.length;
     const selEnd = selStart + selected.length;
     this.apply(next, selStart, selEnd);
   },
@@ -575,18 +579,14 @@ const sanitizeHtml = (html) => {
   return '';
 };
 
-// Build the images dir for a page: strip the module `pages/` prefix and the
-// .adoc extension, keep any subdirectories, then append `_images`.
+// Build the images dir for a page. Antora publishes a module's images under
+// its module-level `_images` directory regardless of the page's subdirectory,
+// so image macros such as `image::spaces/processes/foo.png` resolve from there.
 const imagesDirForEntry = (module, entry) => {
-  const path = entry.get('path') || '';
-  const rel = path
-    .replace(new RegExp(`^docs/en/modules/${module}/pages/`, 'i'), '')
-    .replace(/\.adoc$/, '');
-  const dir = rel.includes('/') ? `${rel.slice(0, rel.lastIndexOf('/'))}/` : '';
   // The ROOT module maps to the component root, so its images live at
   // en/develop/_images rather than en/develop/root/_images.
   const base = module === 'root' ? '/en/develop' : `/en/develop/${module}`;
-  return `${base}/${dir}_images`;
+  return `${base}/_images`;
 };
 
 // Approximate, instant preview. For an exact Antora build use the "View
