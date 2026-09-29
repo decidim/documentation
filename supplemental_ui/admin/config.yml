@@ -3,6 +3,10 @@ backend:
   repo: decidim/documentation
   branch: develop
 
+# Inert on non-local hosts; detected automatically when running the
+# admin locally against the Decap proxy server.
+local_backend: true
+
 publish_mode: editorial_workflow
 site_url: https://docs.decidim.org
 

@@ -55,10 +55,23 @@
       CMS.registerPreviewStyle('/_/css/styles.css');
       CMS.registerPreviewStyle('/_/css/icons.css');
 
-      // Enable the local proxy (and disable the unsupported editorial workflow)
-      // only when running the admin locally.
-      const isLocal = ['localhost', '127.0.0.1'].includes(location.hostname);
-      init(isLocal ? { config: { local_backend: true, publish_mode: 'simple' } } : undefined);
+      // Resolve config.yml against the admin page's own directory. Static
+      // servers (e.g. `serve`, Netlify) may serve /admin without a trailing
+      // slash, which would otherwise make Decap's relative fetch resolve to
+      // /config.yml and fail with a 404.
+      const adminDir = (() => {
+        const path = window.location.pathname;
+        if (path.endsWith('/')) return path;
+        if (path.endsWith('index.html')) return path.slice(0, path.lastIndexOf('/') + 1);
+        return `${path}/`;
+      })();
+      const configLink = document.createElement('link');
+      configLink.rel = 'cms-config-url';
+      configLink.type = 'text/yaml';
+      configLink.href = `${adminDir}config.yml`;
+      document.head.appendChild(configLink);
+
+      init();
     </script>
   </body>
 </html>
