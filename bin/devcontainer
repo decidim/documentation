@@ -10,6 +10,7 @@ DEVCONTAINER_LOCAL_JSON="$DEVCONTAINER_DIR/devcontainer.local.json"
 DEVCONTAINER_BACKUP_JSON="$DEVCONTAINER_DIR/devcontainer.json.backup"
 DEVCONTAINER_BACKUP_FLAG="$DEVCONTAINER_DIR/devcontainer.json.backup.managed"
 DEVCONTAINER_MERGE_HASH="$DEVCONTAINER_DIR/devcontainer.json.merge.hash"
+DEVCONTAINER_LOCK="$DEVCONTAINER_DIR/devcontainer.json.lock"
 
 # Hash a file's contents, using whichever tool is available.
 file_hash() {
@@ -19,6 +20,96 @@ file_hash() {
         shasum -a 256 "$1" | cut -d ' ' -f1
     elif command -v cksum &> /dev/null; then
         cksum "$1"
+    fi
+}
+
+# Acquire an exclusive lock so concurrent `up`/`rebuild` runs cannot clobber
+# each other's backup, flag and hash files. Released by release_config_lock.
+# Falls back to a best-effort mkdir lock when flock is unavailable.
+CONFIG_LOCK_DIR=""
+CONFIG_LOCK_FD=""
+CONFIG_LOCK_HELD=0
+acquire_config_lock() {
+    if [ "$CONFIG_LOCK_HELD" = "1" ]; then
+        return 0
+    fi
+    if command -v flock &> /dev/null; then
+        exec {CONFIG_LOCK_FD}> "$DEVCONTAINER_LOCK"
+        if ! flock -w 600 "$CONFIG_LOCK_FD"; then
+            echo "Error: Could not acquire the devcontainer configuration lock." >&2
+            return 1
+        fi
+        CONFIG_LOCK_HELD=1
+        return 0
+    fi
+    CONFIG_LOCK_DIR="${DEVCONTAINER_LOCK}.d"
+    local waited=0
+    while ! mkdir "$CONFIG_LOCK_DIR" 2> /dev/null; do
+        if [ "$waited" -ge 600 ]; then
+            echo "Error: Could not acquire the devcontainer configuration lock." >&2
+            return 1
+        fi
+        sleep 1
+        waited=$((waited + 1))
+    done
+    CONFIG_LOCK_HELD=1
+    return 0
+}
+
+release_config_lock() {
+    if [ "$CONFIG_LOCK_HELD" != "1" ]; then
+        return 0
+    fi
+    if [ -n "$CONFIG_LOCK_FD" ]; then
+        flock -u "$CONFIG_LOCK_FD" 2> /dev/null || true
+        eval "exec ${CONFIG_LOCK_FD}>&-" 2> /dev/null || true
+        CONFIG_LOCK_FD=""
+    fi
+    if [ -n "$CONFIG_LOCK_DIR" ]; then
+        rmdir "$CONFIG_LOCK_DIR" 2> /dev/null || true
+        CONFIG_LOCK_DIR=""
+    fi
+    CONFIG_LOCK_HELD=0
+}
+
+# Restore the original configuration from a backup left by an interrupted run
+# (or by the current run) and clear the companion state files.
+#
+# Only a backup this script created is used, and the original is only restored
+# when the current file still matches the merged output that run wrote, so a
+# configuration edited during the run is never discarded. Set FORCE_RESTORE=1
+# to skip the change check (used on the interruption trap to guarantee the
+# pre-run configuration is restored).
+recover_previous_config() {
+    if [ ! -f "$DEVCONTAINER_BACKUP_FLAG" ] || [ ! -f "$DEVCONTAINER_BACKUP_JSON" ]; then
+        # No usable backup; drop any stale companions.
+        rm -f "$DEVCONTAINER_BACKUP_JSON" "$DEVCONTAINER_BACKUP_FLAG" "$DEVCONTAINER_MERGE_HASH"
+        return 0
+    fi
+    if [ "${FORCE_RESTORE:-0}" != "1" ] \
+        && [ -f "$DEVCONTAINER_MERGE_HASH" ] \
+        && [ "$(file_hash "$DEVCONTAINER_JSON")" != "$(cat "$DEVCONTAINER_MERGE_HASH")" ]; then
+        echo "Warning: $DEVCONTAINER_JSON was edited since it was merged; keeping the current configuration." >&2
+        rm -f "$DEVCONTAINER_BACKUP_JSON" "$DEVCONTAINER_BACKUP_FLAG" "$DEVCONTAINER_MERGE_HASH"
+        return 0
+    fi
+    mv "$DEVCONTAINER_BACKUP_JSON" "$DEVCONTAINER_JSON"
+    rm -f "$DEVCONTAINER_BACKUP_FLAG" "$DEVCONTAINER_MERGE_HASH"
+}
+
+# Restore the original devcontainer config. Safe to call from any command:
+# the lock is acquired when not already held by the caller.
+restore_devcontainer_config() {
+    local acquired=0
+    if [ "$CONFIG_LOCK_HELD" != "1" ]; then
+        if ! acquire_config_lock; then
+            return 1
+        fi
+        acquired=1
+    fi
+    recover_previous_config
+    if [ "$acquired" = "1" ]; then
+        release_config_lock
     fi
 }
 
@@ -41,14 +132,20 @@ use_local_config() {
         if command -v jq &> /dev/null; then
             echo "Merging devcontainer.local.json with devcontainer.json..." >&2
 
-            # A leftover backup is ignored here: it belongs to a previous run
-            # (possibly one whose active merge remains in place). Discard it and
-            # start from whatever configuration the developer currently has, so
-            # their edits are not overwritten by a stale copy.
-            rm -f "$DEVCONTAINER_BACKUP_JSON" "$DEVCONTAINER_BACKUP_FLAG" "$DEVCONTAINER_MERGE_HASH"
+            # Serialize config mutation so concurrent runs cannot clobber each
+            # other's backup, flag and hash files.
+            if ! acquire_config_lock; then
+                return 1
+            fi
 
-            # Backup the current configuration. The flag file marks this backup
-            # as owned by us, so restore only happens for backups we created.
+            # Recover an interrupted run's original config before taking a new
+            # backup. Deleting it here would lose the only clean copy and cause
+            # the already-merged file to be backed up instead.
+            recover_previous_config
+
+            # Backup the current (original) configuration. The flag file marks
+            # this backup as owned by us, so restore only happens for backups we
+            # created.
             cp "$DEVCONTAINER_JSON" "$DEVCONTAINER_BACKUP_JSON"
             : > "$DEVCONTAINER_BACKUP_FLAG"
 
@@ -58,10 +155,12 @@ use_local_config() {
                 # Remember the merged result so a later restore can tell whether
                 # the developer edited the file while the command was running.
                 file_hash "$DEVCONTAINER_JSON" > "$DEVCONTAINER_MERGE_HASH"
+                release_config_lock
                 return 0
             else
                 echo "Error: Failed to merge JSON configs. Restoring backup..." >&2
                 restore_devcontainer_config
+                release_config_lock
                 return 1
             fi
         else
@@ -70,30 +169,6 @@ use_local_config() {
         fi
     fi
     return 1
-}
-
-# Function to restore the original devcontainer config.
-#
-# Only a backup this script created (marked by the flag file) is restored, and
-# it is restored only when doing so would not discard changes the developer
-# made while the script was running: the current file must still match the
-# merged output we wrote. A backup left by an interrupted run has no flag, so
-# later commands such as `down`, `rm` or `ps` leave the current config
-# untouched. Set FORCE_RESTORE=1 to skip the change check (used on the
-# interruption trap to guarantee the pre-run configuration is restored).
-restore_devcontainer_config() {
-    if [ ! -f "$DEVCONTAINER_BACKUP_FLAG" ] || [ ! -f "$DEVCONTAINER_BACKUP_JSON" ]; then
-        return 0
-    fi
-    if [ "${FORCE_RESTORE:-0}" != "1" ]; then
-        if [ -f "$DEVCONTAINER_MERGE_HASH" ] && [ "$(file_hash "$DEVCONTAINER_JSON")" != "$(cat "$DEVCONTAINER_MERGE_HASH")" ]; then
-            echo "Warning: $DEVCONTAINER_JSON was edited during the run; keeping the current configuration and discarding the backup." >&2
-            rm -f "$DEVCONTAINER_BACKUP_JSON" "$DEVCONTAINER_BACKUP_FLAG" "$DEVCONTAINER_MERGE_HASH"
-            return 0
-        fi
-    fi
-    mv "$DEVCONTAINER_BACKUP_JSON" "$DEVCONTAINER_JSON"
-    rm -f "$DEVCONTAINER_BACKUP_FLAG" "$DEVCONTAINER_MERGE_HASH"
 }
 
 # Check if devcontainer CLI is installed
