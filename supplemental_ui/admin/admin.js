@@ -588,10 +588,13 @@ const makeDocPreview = (module) =>
     render() {
       const source = this.props.entry.getIn(['data', 'body']) || '';
       const html = renderAsciiDoc(source, imagesDirForEntry(module, this.props.entry));
-      return h('div', {
-        className: 'doc-preview',
-        dangerouslySetInnerHTML: { __html: html || `<pre>${source}</pre>` },
-      });
+      if (html) {
+        return h('div', {
+          className: 'doc-preview',
+          dangerouslySetInnerHTML: { __html: html },
+        });
+      }
+      return h('div', { className: 'doc-preview' }, h('pre', null, source));
     },
   });
 
