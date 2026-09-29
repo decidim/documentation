@@ -7,4 +7,5 @@ services:
       - ../:/workspaces/documentation:cached
     ports:
       - "${DEVCONTAINER_APP_PORT:-1313}:1313"
+      - "8080:8080"
     command: sleep infinity

@@ -23,11 +23,15 @@
     "1313:1313"
   ],
   "forwardPorts": [
-    1313
+    1313,
+    8080
   ],
   "portsAttributes": {
     "1313": {
       "label": "Antora preview server"
+    },
+    "8080": {
+      "label": "Application server"
     }
   },
   "postCreateCommand": "npm install"

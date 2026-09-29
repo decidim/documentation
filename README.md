@@ -28,6 +28,9 @@ npm install
 # build the static site
 npm run build
 
+# Serve the generated website (the content manager runs at /admin/)
+npx serve build/site -l 8080
+
 # The generated website will be create under ```build/site/``` folder. Open ```index.html``` with any browser.
 xdg-open build/site/index.html
 ```
@@ -41,5 +44,6 @@ git clone https://github.com/decidim/documentation
 cd documentation
 bin/devcontainer up
 bin/devcontainer npm run build
+npx serve build/site -l 8080
 xdg-open build/site/index.html
 ```
