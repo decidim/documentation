@@ -2,3 +2,16 @@
 article.doc {
   max-width: clamp(55em,60%,90rem);
 }
+
+/* Inline roles produced by the AsciiDoc editor (e.g. [.underline]#text#). The
+   Antora site.css already styles these under `.doc`; the Decap preview and
+   other contexts need the rules here too. */
+.doc .underline,
+.underline {
+  text-decoration: underline;
+}
+
+.doc .line-through,
+.line-through {
+  text-decoration: line-through;
+}

@@ -43,6 +43,11 @@
   background: #e2e6ea;
 }
 
+.adoc-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
 .adoc-btn:active {
   background: #d3d7db;
 }

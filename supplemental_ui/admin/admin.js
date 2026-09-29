@@ -19,6 +19,10 @@ const ICONS = {
     'M8 3V12C8 14.2091 9.79086 16 12 16C14.2091 16 16 14.2091 16 12V3H18V12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12V3H8ZM4 20H20V22H4V20Z',
   'text-wrap':
     'M15 18H16.5C17.8807 18 19 16.8807 19 15.5C19 14.1193 17.8807 13 16.5 13H3V11H16.5C18.9853 11 21 13.0147 21 15.5C21 17.9853 18.9853 20 16.5 20H15V22L11 19L15 16V18ZM3 4H21V6H3V4ZM9 18V20H3V18H9Z',
+  'arrow-go-back':
+    'M5.82843 6.99998H18C19.1046 6.99998 20 7.89541 20 8.99998V18H18V8.99998H5.82843L8.70711 11.8787L7.29289 13.2929L3 8.99998L7.29289 4.70709L8.70711 6.12131L5.82843 6.99998Z',
+  'arrow-go-forward':
+    'M18.1716 6.99998H6C4.89543 6.99998 4 7.89541 4 8.99998V18H6V8.99998H18.1716L15.2929 11.8787L16.7071 13.2929L21 8.99998L16.7071 4.70709L15.2929 6.12131L18.1716 6.99998Z',
   'list-ordered':
     'M8 4H21V6H8V4ZM5 3V6H6V7H3V6H4V4H3V3H5ZM3 14V11.5H5V11H3V10H6V12.5H4V13H6V14H3ZM5 19.5H3V18.5H5V18H3V17H6V21H3V20H5V19.5ZM8 11H21V13H8V11ZM8 18H21V20H8V18Z',
   'list-unordered':
@@ -41,9 +45,11 @@ const ICONS = {
 };
 
 // Toolbar layout mirrors the Decidim rich text editor toolbar order:
-// heading | bold, italic, underline, hard break | ordered & bullet list |
-// link, erase styles | code block, blockquote | indent, outdent | video, image.
+// undo, redo | heading | bold, italic, underline, hard break | ordered &
+// bullet list | link, erase styles | code block, blockquote | indent,
+// outdent | video, image.
 const TOOLBAR_GROUPS = [
+  ['undo', 'redo'],
   ['heading'],
   ['bold', 'italic', 'underline', 'hardBreak'],
   ['orderedList', 'bulletList'],
@@ -54,6 +60,8 @@ const TOOLBAR_GROUPS = [
 ];
 
 const TOOLBAR_CONTROLS = {
+  undo: { icon: 'arrow-go-back', label: 'Undo' },
+  redo: { icon: 'arrow-go-forward', label: 'Redo' },
   heading: { type: 'select', label: 'Heading' },
   bold: { icon: 'bold', label: 'Bold' },
   italic: { icon: 'italic', label: 'Italic' },
@@ -73,6 +81,7 @@ const TOOLBAR_CONTROLS = {
 
 const HEADING_OPTIONS = [
   ['normal', 'Normal'],
+  ['1', 'Heading 1'],
   ['2', 'Heading 2'],
   ['3', 'Heading 3'],
   ['4', 'Heading 4'],
@@ -86,7 +95,7 @@ const HEADING_OPTIONS = [
 // resolved by Antora against the current module's assets/images.
 const AdocControl = createClass({
   getInitialState() {
-    return { selection: { start: 0, end: 0 }, lastCursor: 0 };
+    return { selection: { start: 0, end: 0 }, lastCursor: 0, undoStack: [], redoStack: [] };
   },
 
   value() {
@@ -129,42 +138,42 @@ const AdocControl = createClass({
   // Wrap the current selection (or place the cursor) in `prefix`/`suffix`.
   wrap(prefix, suffix) {
     const value = this.value();
-    const { start, end } = this.state.selection;
+    const el = this.textarea;
+    const start = el.selectionStart;
+    const end = el.selectionEnd;
     const hasSelection = end > start;
     const next =
       value.slice(0, start) + prefix + value.slice(start, end) + suffix + value.slice(end);
-    this.props.onChange(next);
     const selStart = start + prefix.length;
     const selEnd = selStart + (hasSelection ? end - start : 0);
-    this.setState({ lastCursor: selEnd });
-    this.restoreFocus(selStart, selEnd);
+    this.apply(next, selStart, selEnd);
   },
 
   insertAtCursor(text) {
     const value = this.value();
-    const at = Math.min(this.state.lastCursor, value.length);
+    const el = this.textarea;
+    const at = Math.min(el.selectionStart, value.length);
     const next = value.slice(0, at) + text + value.slice(at);
-    this.props.onChange(next);
     const cursor = at + text.length;
-    this.setState({ lastCursor: cursor });
-    this.restoreFocus(cursor, cursor);
+    this.apply(next, cursor, cursor);
   },
 
   insertLine(text) {
     const value = this.value();
-    const at = Math.min(this.state.lastCursor, value.length);
+    const el = this.textarea;
+    const at = Math.min(el.selectionStart, value.length);
     const lineStart = value.lastIndexOf('\n', at - 1) + 1;
     const next = value.slice(0, lineStart) + text + value.slice(lineStart);
-    this.props.onChange(next);
     const cursor = lineStart + text.length;
-    this.setState({ lastCursor: cursor });
-    this.restoreFocus(cursor, cursor);
+    this.apply(next, cursor, cursor);
   },
 
   componentDidUpdate() {
     const mediaPath = this.props.mediaPaths && this.props.mediaPaths.get(this.props.forID);
     if (mediaPath) {
-      this.insertAtCursor(`image::${basename(mediaPath)}[Alt text]`);
+      // Uploads go to the shared ROOT module folder, so the macro uses
+      // Antora's cross-module target form to resolve from any module.
+      this.insertAtCursor(`image::ROOT:${basename(mediaPath)}[Alt text]`);
       this.props.onRemoveInsertedMedia(this.props.forID);
     }
   },
@@ -204,7 +213,8 @@ const AdocControl = createClass({
   // Set (or clear) the AsciiDoc heading marker on the current line.
   setHeading(level) {
     const value = this.value();
-    const at = Math.min(this.state.lastCursor, value.length);
+    const el = this.textarea;
+    const at = Math.min(el.selectionStart, value.length);
     const lineStart = value.lastIndexOf('\n', at - 1) + 1;
     const rawEnd = value.indexOf('\n', at);
     const lineEnd = rawEnd === -1 ? value.length : rawEnd;
@@ -218,26 +228,48 @@ const AdocControl = createClass({
       nextLine = headingMatch ? `${prefix}${line.replace(/^=+\s+/, '')}` : `${prefix}${line}`;
     }
     if (nextLine === line) return;
-    this.props.onChange(value.slice(0, lineStart) + nextLine + value.slice(lineEnd));
+    const next = value.slice(0, lineStart) + nextLine + value.slice(lineEnd);
     const cursor = lineStart + nextLine.length;
-    this.setState({ lastCursor: cursor });
-    this.restoreFocus(cursor, cursor);
+    this.apply(next, cursor, cursor);
   },
 
-  // Strip common inline AsciiDoc markup from the selection.
+  // Strip common inline AsciiDoc markup from the selection. The selection may
+  // be empty (cursor inside a marked span) or only cover the visible text,
+  // so the span surrounding it is detected and unwrapped as a whole.
   eraseStyles() {
     const value = this.value();
-    const { start, end } = this.state.selection;
-    const selected = value.slice(start, end);
-    const cleaned = selected
-      .replace(/^\[\.underline\]#([\s\S]*?)#$/, '$1')
-      .replace(/^\[\.line-through\]#([\s\S]*?)#$/, '$1')
-      .replace(/^\*([\s\S]*?)\*$/, '$1')
-      .replace(/^_([\s\S]*?)_$/, '$1')
-      .replace(/^`([\s\S]*?)`$/, '$1');
-    if (cleaned === selected) return;
-    this.props.onChange(value.slice(0, start) + cleaned + value.slice(end));
-    this.restoreFocus(start, start + cleaned.length);
+    const el = this.textarea;
+    const start = el.selectionStart;
+    const end = el.selectionEnd;
+    // Longest prefixes first so `[.underline]#...#`/`[.line-through]#...#`
+    // win over the shorter `*`, `_` and backtick patterns.
+    const patterns = [
+      /\[\.underline\]#([\s\S]*?)#/,
+      /\[\.line-through\]#([\s\S]*?)#/,
+      /\*([\s\S]*?)\*/,
+      /_([\s\S]*?)_/,
+      /`([\s\S]*?)`/,
+    ];
+    for (const pattern of patterns) {
+      pattern.lastIndex = 0;
+      let match;
+      while ((match = pattern.exec(value)) !== null) {
+        const mStart = match.index;
+        const mEnd = mStart + match[0].length;
+        if (start < mStart || end > mEnd) {
+          pattern.lastIndex = mEnd;
+          continue;
+        }
+        const inner = match[1];
+        const before = match[0].indexOf(inner);
+        const after = match[0].length - before - inner.length;
+        const next = value.slice(0, mStart) + inner + value.slice(mEnd);
+        const selStart = Math.max(start - before, 0);
+        const selEnd = Math.max(end - after, selStart);
+        this.apply(next, selStart, selEnd);
+        return;
+      }
+    }
   },
 
   // Wrap the selection in an AsciiDoc listing block.
@@ -252,39 +284,54 @@ const AdocControl = createClass({
 
   wrapBlock(prefix, suffix, placeholder) {
     const value = this.value();
-    const { start, end } = this.state.selection;
+    const el = this.textarea;
+    const start = el.selectionStart;
+    const end = el.selectionEnd;
     const selected = value.slice(start, end) || placeholder;
     const block = `${prefix}${selected}${suffix}`;
     const next = value.slice(0, start) + block + value.slice(end);
-    this.props.onChange(next);
     const selStart = start + prefix.length;
     const selEnd = selStart + selected.length;
-    this.setState({ lastCursor: selEnd });
-    this.restoreFocus(selStart, selEnd);
+    this.apply(next, selStart, selEnd);
   },
 
-  // Add or remove one list marker level on the current line.
-  indentList(dir) {
+  // Indent or outdent the current line: change the nesting level of list
+  // markers (`*`, `.`) or, on any other line, add/remove a leading 2-space
+  // indentation so the buttons always give visible feedback.
+  indentLine(dir) {
     const value = this.value();
-    const at = Math.min(this.state.lastCursor, value.length);
+    const el = this.textarea;
+    const at = Math.min(el.selectionStart, value.length);
     const lineStart = value.lastIndexOf('\n', at - 1) + 1;
     const rawEnd = value.indexOf('\n', at);
     const lineEnd = rawEnd === -1 ? value.length : rawEnd;
     const line = value.slice(lineStart, lineEnd);
     const marker = line.match(/^(\*+|\.+)(\s|$)/);
-    if (!marker) return;
-    const run = marker[1];
-    const nextRun = dir > 0 ? `${run[0]}${run}` : run.slice(1);
-    if (nextRun === run) return;
-    const nextLine = `${nextRun}${line.slice(run.length)}`;
-    this.props.onChange(value.slice(0, lineStart) + nextLine + value.slice(lineEnd));
+    let nextLine;
+    if (marker) {
+      const run = marker[1];
+      const nextRun = dir > 0 ? `${run[0]}${run}` : run.slice(1);
+      if (nextRun === run) return;
+      nextLine = `${nextRun}${line.slice(run.length)}`;
+    } else if (dir > 0) {
+      nextLine = `  ${line}`;
+    } else {
+      if (!/^[ \t]/.test(line)) return;
+      nextLine = line.replace(/^( {1,2}|\t)/, '');
+    }
+    const next = value.slice(0, lineStart) + nextLine + value.slice(lineEnd);
     const cursor = lineStart + nextLine.length;
-    this.setState({ lastCursor: cursor });
-    this.restoreFocus(cursor, cursor);
+    this.apply(next, cursor, cursor);
   },
 
   runControl(name) {
     switch (name) {
+      case 'undo':
+        this.undo();
+        break;
+      case 'redo':
+        this.redo();
+        break;
       case 'bold':
         this.wrap('*', '*');
         break;
@@ -316,10 +363,10 @@ const AdocControl = createClass({
         this.blockquote();
         break;
       case 'indent':
-        this.indentList(1);
+        this.indentLine(1);
         break;
       case 'outdent':
-        this.indentList(-1);
+        this.indentLine(-1);
         break;
       case 'videoEmbed':
         this.insertVideo();
@@ -330,9 +377,67 @@ const AdocControl = createClass({
     }
   },
 
+  // Record the current value on the undo stack (deduplicating consecutive
+  // identical states, capped at 200 entries) and clear the redo stack, then
+  // apply `next` and restore the given selection.
+  apply(next, selStart, selEnd) {
+    const current = this.value();
+    const { undoStack } = this.state;
+    const nextUndo =
+      undoStack[undoStack.length - 1] === current ? undoStack : [...undoStack, current];
+    this.props.onChange(next);
+    this.setState({
+      undoStack: nextUndo.slice(-200),
+      redoStack: [],
+      selection: { start: selStart, end: selEnd },
+      lastCursor: selEnd,
+    });
+    this.restoreFocus(selStart, selEnd);
+  },
+
+  undo() {
+    const { undoStack, redoStack, lastCursor } = this.state;
+    if (!undoStack.length) return;
+    const current = this.value();
+    const previous = undoStack[undoStack.length - 1];
+    const cursor = Math.min(previous.length, lastCursor);
+    this.props.onChange(previous);
+    this.setState({
+      undoStack: undoStack.slice(0, -1),
+      redoStack: [...redoStack, current],
+      selection: { start: 0, end: 0 },
+      lastCursor: cursor,
+    });
+    this.restoreFocus(cursor, cursor);
+  },
+
+  redo() {
+    const { undoStack, redoStack, lastCursor } = this.state;
+    if (!redoStack.length) return;
+    const current = this.value();
+    const next = redoStack[redoStack.length - 1];
+    const cursor = Math.min(next.length, lastCursor);
+    this.props.onChange(next);
+    this.setState({
+      undoStack: [...undoStack, current],
+      redoStack: redoStack.slice(0, -1),
+      selection: { start: 0, end: 0 },
+      lastCursor: cursor,
+    });
+    this.restoreFocus(cursor, cursor);
+  },
+
   handleChange(e) {
-    this.setState({ lastCursor: e.target.selectionStart });
+    const current = this.value();
+    const { undoStack } = this.state;
+    const nextUndo =
+      undoStack[undoStack.length - 1] === current ? undoStack : [...undoStack, current];
     this.props.onChange(e.target.value);
+    this.setState({
+      undoStack: nextUndo.slice(-200),
+      redoStack: [],
+      lastCursor: e.target.selectionStart,
+    });
   },
 
   render() {
@@ -372,6 +477,9 @@ const AdocControl = createClass({
                   className: 'adoc-btn',
                   'aria-label': control.label,
                   title: control.label,
+                  disabled:
+                    (name === 'undo' && !this.state.undoStack.length) ||
+                    (name === 'redo' && !this.state.redoStack.length),
                   onMouseDown: (e) => e.preventDefault(),
                   onClick: () => this.runControl(name),
                 },
@@ -395,6 +503,19 @@ const AdocControl = createClass({
         onSelect: this.saveSelection,
         onClick: this.saveSelection,
         onKeyUp: this.saveSelection,
+        onKeyDown: (e) => {
+          const mod = e.ctrlKey || e.metaKey;
+          if (!mod) return;
+          const key = e.key.toLowerCase();
+          if (key === 'z') {
+            e.preventDefault();
+            if (e.shiftKey) this.redo();
+            else this.undo();
+          } else if (key === 'y') {
+            e.preventDefault();
+            this.redo();
+          }
+        },
         ref: (el) => {
           this.textarea = el;
         },
@@ -406,34 +527,63 @@ CMS.registerWidget('adoc', AdocControl);
 
 const processor = window.Asciidoctor ? window.Asciidoctor() : null;
 
-// Antora-only constructs the in-browser renderer cannot resolve, and the
-// contribute module's images are built to en/develop/contribute/_images.
-const IMAGES_DIR = '/en/develop/contribute/_images';
-const renderAsciiDoc = (source) => {
+// Antora-only constructs the in-browser renderer cannot resolve. Images are
+// resolved per page: the module's images are built to en/develop/<module>/
+// (and nested pages keep their subdirectory). ROOT-module images (the shared
+// media folder) are referenced with `image::ROOT:` and resolve to
+// en/develop/_images.
+const renderAsciiDoc = (source, imagesDir) => {
   if (!processor) return '';
   const previewable = source
     .replace(/^include::[^\n]*$/gm, '')
-    .replace(/xref:([^\[\]]+)\[([^\]]*)\]/g, (_, target, label) => label || target);
+    .replace(/xref:([^\[\]]+)\[([^\]]*)\]/g, (_, target, label) => label || target)
+    .replace(/image::ROOT:([^\[\]]+)/g, 'image::/en/develop/_images/$1');
   return processor.convert(previewable, {
     safe: 'safe',
-    attributes: { imagesdir: IMAGES_DIR, showtitle: true },
+    attributes: { imagesdir: imagesDir, showtitle: true },
   });
+};
+
+// Build the images dir for a page: strip the module `pages/` prefix and the
+// .adoc extension, keep any subdirectories, then append `_images`.
+const imagesDirForEntry = (module, entry) => {
+  const path = entry.get('path') || '';
+  const rel = path
+    .replace(new RegExp(`^docs/en/modules/${module}/pages/`, 'i'), '')
+    .replace(/\.adoc$/, '');
+  const dir = rel.includes('/') ? `${rel.slice(0, rel.lastIndexOf('/'))}/` : '';
+  // The ROOT module maps to the component root, so its images live at
+  // en/develop/_images rather than en/develop/root/_images.
+  const base = module === 'root' ? '/en/develop' : `/en/develop/${module}`;
+  return `${base}/${dir}_images`;
 };
 
 // Approximate, instant preview. For an exact Antora build use the "View
 // Preview" deploy preview link provided by the backend.
-const DocPreview = createClass({
-  render() {
-    const source = this.props.entry.getIn(['data', 'body']) || '';
-    const html = renderAsciiDoc(source);
-    return h('div', {
-      className: 'doc-preview',
-      dangerouslySetInnerHTML: { __html: html || `<pre>${source}</pre>` },
-    });
-  },
-});
+const makeDocPreview = (module) =>
+  createClass({
+    render() {
+      const source = this.props.entry.getIn(['data', 'body']) || '';
+      const html = renderAsciiDoc(source, imagesDirForEntry(module, this.props.entry));
+      return h('div', {
+        className: 'doc-preview',
+        dangerouslySetInnerHTML: { __html: html || `<pre>${source}</pre>` },
+      });
+    },
+  });
 
-CMS.registerPreviewTemplate('contribute', DocPreview);
+for (const collection of [
+  'root',
+  'admin',
+  'contribute',
+  'features',
+  'publications',
+  'releases',
+  'understand',
+  'whitepaper',
+]) {
+  CMS.registerPreviewTemplate(collection, makeDocPreview(collection));
+}
 CMS.registerPreviewStyle('/_/css/styles.css');
 CMS.registerPreviewStyle('/_/css/icons.css');
 
