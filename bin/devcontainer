@@ -28,6 +28,10 @@ use_local_config() {
         if command -v jq &> /dev/null; then
             echo "Merging devcontainer.local.json with devcontainer.json..." >&2
 
+            # Restore any backup left over from a previous interrupted run before
+            # copying the current configuration, so we don't back up a merged file
+            restore_devcontainer_config
+
             # Backup original
             cp "$DEVCONTAINER_JSON" "$DEVCONTAINER_BACKUP_JSON"
 
@@ -72,9 +76,11 @@ fi
 case "$1" in
     up)
         use_local_config
+        trap restore_devcontainer_config EXIT
         devcontainer up --workspace-folder=.
         status=$?
         restore_devcontainer_config
+        trap - EXIT
         exit "$status"
         ;;
     down)
@@ -92,9 +98,11 @@ case "$1" in
         ;;
     rebuild)
         use_local_config
+        trap restore_devcontainer_config EXIT
         devcontainer up --workspace-folder=. --remove-existing-container
         status=$?
         restore_devcontainer_config
+        trap - EXIT
         exit "$status"
         ;;
     rm)
