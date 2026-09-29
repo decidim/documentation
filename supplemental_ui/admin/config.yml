@@ -12,6 +12,10 @@ site_url: https://docs.decidim.org
 
 media_folder: docs/en/modules/ROOT/assets/images
 
+# Each collection stores a whole AsciiDoc file in `body` with no front
+# matter, so there is no title field. `identifier_field: body` stops Decap
+# from warning about a missing inferred title; entries are labelled by
+# filename via `summary`.
 collections:
   - name: root
     label: Home
@@ -21,6 +25,7 @@ collections:
     format: adoc
     create: false
     delete: false
+    identifier_field: body
     summary: "{{filename}}"
     preview_path: "en/develop/{{filename}}.html"
     fields:
@@ -35,6 +40,7 @@ collections:
     format: adoc
     create: false
     delete: false
+    identifier_field: body
     summary: "{{filename}}"
     nested:
       depth: 100
@@ -53,6 +59,7 @@ collections:
     format: adoc
     create: false
     delete: false
+    identifier_field: body
     summary: "{{filename}}"
     preview_path: "en/develop/contribute/{{filename}}.html"
     fields:
@@ -67,6 +74,7 @@ collections:
     format: adoc
     create: false
     delete: false
+    identifier_field: body
     summary: "{{filename}}"
     preview_path: "en/develop/features/{{filename}}.html"
     fields:
@@ -81,6 +89,7 @@ collections:
     format: adoc
     create: false
     delete: false
+    identifier_field: body
     summary: "{{filename}}"
     preview_path: "en/develop/publications/{{filename}}.html"
     fields:
@@ -95,6 +104,7 @@ collections:
     format: adoc
     create: false
     delete: false
+    identifier_field: body
     summary: "{{filename}}"
     preview_path: "en/develop/releases/{{filename}}.html"
     fields:
@@ -109,6 +119,7 @@ collections:
     format: adoc
     create: false
     delete: false
+    identifier_field: body
     summary: "{{filename}}"
     preview_path: "en/develop/understand/{{filename}}.html"
     fields:
@@ -123,6 +134,7 @@ collections:
     format: adoc
     create: false
     delete: false
+    identifier_field: body
     summary: "{{filename}}"
     preview_path: "en/develop/whitepaper/{{filename}}.html"
     fields:
