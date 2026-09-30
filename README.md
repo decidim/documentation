@@ -25,21 +25,28 @@ cd documentation
 # Install Antora and dependencies
 npm install
 
-# build the static site
+# Build the static site
 npm run build
 
-# The generated website will be create under ```build/site/``` folder. Open ```index.html``` with any browser.
-xdg-open build/site/index.html
+# Serve the generated website and start the Decap CMS local proxy. The content
+# manager runs at http://localhost:8080/admin; the proxy lets you save changes
+# straight to your local git worktree (no GitHub OAuth needed).
+npm run dev:admin
+
+# For ease of contributor experience, we recommend using the Decap UI
+xdg-open http://localhost:8080
+xdg-open http://localhost:8080/admin
 ```
 
-### Docker
+### Devcontainer
 
-You can check this locally and install with Docker.
+You can work locally using the development container.
 
 ```bash
 git clone https://github.com/decidim/documentation
 cd documentation
-./bin/dbuild
+bin/devcontainer up
+bin/devcontainer npm run build
+bin/devcontainer npm run dev:admin
 xdg-open build/site/index.html
 ```
-

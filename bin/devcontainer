@@ -1,0 +1,207 @@
+#!/usr/bin/env bash
+
+# Configuration
+CONTAINER_NAME="decidim-documentation-docs-app"
+SCRIPT_NAME=$(basename "$0")
+CONTAINERS_TO_STOP=("decidim-documentation-docs-app-1")
+DEVCONTAINER_DIR=".devcontainer"
+DEVCONTAINER_JSON="$DEVCONTAINER_DIR/devcontainer.json"
+DEVCONTAINER_LOCAL_JSON="$DEVCONTAINER_DIR/devcontainer.local.json"
+
+# Merge the optional local configuration over the base configuration into a
+# per-run temporary file and print its path. The devcontainer CLI's
+# --override-config replaces the workspace configuration, so it is given the
+# full merged result; relative paths inside it are still resolved against
+# .devcontainer/. A unique temporary file per run means concurrent runs never
+# share any state.
+merge_local_config() {
+    if ! command -v jq &> /dev/null; then
+        echo "Error: jq is required to apply $DEVCONTAINER_LOCAL_JSON." >&2
+        return 1
+    fi
+    local merged
+    if ! merged=$(mktemp "${TMPDIR:-/tmp}/devcontainer-merged.XXXXXX"); then
+        echo "Error: Could not create a temporary file for the merged configuration." >&2
+        return 1
+    fi
+    echo "Merging $DEVCONTAINER_LOCAL_JSON with $DEVCONTAINER_JSON..." >&2
+    if jq -s '.[0] * .[1]' "$DEVCONTAINER_JSON" "$DEVCONTAINER_LOCAL_JSON" > "$merged"; then
+        printf '%s\n' "$merged"
+        return 0
+    fi
+    rm -f "$merged"
+    echo "Error: Failed to merge $DEVCONTAINER_LOCAL_JSON." >&2
+    return 1
+}
+
+# Temporary merged configuration for the current run, if any.
+DEVCONTAINER_OVERRIDE_JSON=""
+cleanup_override() {
+    if [ -n "$DEVCONTAINER_OVERRIDE_JSON" ]; then
+        rm -f "$DEVCONTAINER_OVERRIDE_JSON"
+        DEVCONTAINER_OVERRIDE_JSON=""
+    fi
+}
+
+# Run `devcontainer up`, applying devcontainer.local.json via --override-config
+# when present. The tracked devcontainer.json is never modified, so an
+# interrupted run needs no cleanup beyond removing the temporary file.
+run_devcontainer_up() {
+    local args=(--workspace-folder=.)
+    if [ -f "$DEVCONTAINER_LOCAL_JSON" ]; then
+        if ! DEVCONTAINER_OVERRIDE_JSON=$(merge_local_config); then
+            exit 1
+        fi
+        args+=(--override-config "$DEVCONTAINER_OVERRIDE_JSON")
+        trap cleanup_override EXIT
+    fi
+    devcontainer up "${args[@]}" "$@"
+    local status=$?
+    cleanup_override
+    trap - EXIT
+    return "$status"
+}
+
+# Check if devcontainer CLI is installed, installing it when missing. Only the
+# commands that invoke the CLI need this, so it is not run for down, rm, or ps.
+ensure_devcontainer_cli() {
+    if ! command -v devcontainer &> /dev/null; then
+        echo "devcontainer CLI not found. Installing..."
+        npm install -g @devcontainers/cli
+
+        # Check if installation was successful
+        if ! command -v devcontainer &> /dev/null; then
+            echo "Error: Failed to install devcontainer CLI"
+            exit 1
+        fi
+        echo "devcontainer CLI installed successfully"
+    fi
+}
+
+# Handle commands that don't need container ID first
+case "$1" in
+    up)
+        ensure_devcontainer_cli
+        run_devcontainer_up
+        exit $?
+        ;;
+    down)
+        echo "Stopping containers..."
+        status=0
+        if ! container_list=$(docker ps -a --format "{{.Names}}"); then
+            echo "Error: Failed to list containers" >&2
+            exit 1
+        fi
+        for container in "${CONTAINERS_TO_STOP[@]}"; do
+            if printf '%s\n' "$container_list" | grep -q "^${container}$"; then
+                echo "Stopping $container..."
+                if ! docker stop "$container"; then
+                    echo "Error: Failed to stop $container" >&2
+                    status=1
+                fi
+            else
+                echo "Container $container not found, skipping..."
+            fi
+        done
+        exit $status
+        ;;
+    rebuild)
+        ensure_devcontainer_cli
+        run_devcontainer_up --remove-existing-container
+        exit $?
+        ;;
+    rm)
+        echo "Removing all containers and cleaning up..."
+        status=0
+        if ! container_list=$(docker ps -a --format "{{.Names}}"); then
+            echo "Error: Failed to list containers" >&2
+            exit 1
+        fi
+        for container in "${CONTAINERS_TO_STOP[@]}"; do
+            if printf '%s\n' "$container_list" | grep -q "^${container}$"; then
+                echo "Removing $container..."
+                if ! docker rm -f "$container"; then
+                    echo "Error: Failed to remove $container" >&2
+                    status=1
+                fi
+            else
+                echo "Container $container not found, skipping..."
+            fi
+        done
+        if [ "$status" -eq 0 ]; then
+            echo "Cleanup complete!"
+        fi
+        exit $status
+        ;;
+    ps)
+        echo "Checking container status..."
+        echo ""
+        found_any=false
+        for container in "${CONTAINERS_TO_STOP[@]}"; do
+            if docker ps -a --format "{{.Names}}" | grep -q "^${container}$"; then
+                found_any=true
+                status=$(docker ps -a --format "{{.Names}}\t{{.Status}}" | grep "^${container}\s" | cut -f2)
+                echo "  $container: $status"
+            fi
+        done
+        if [ "$found_any" = false ]; then
+            echo "  No containers found"
+        fi
+        exit 0
+        ;;
+    ""| help | --help | -h)
+        echo "Usage: $SCRIPT_NAME <command>"
+        echo ""
+        echo "Container Management:"
+        echo "  up              - Start the devcontainer"
+        echo "  down            - Stop all containers"
+        echo "  rebuild         - Rebuild the devcontainer"
+        echo "  rm              - Remove all containers and clean up"
+        echo "  ps              - Check container status"
+        echo ""
+        echo "Execute Commands:"
+        echo "  $SCRIPT_NAME <command>                 Execute any command in the container"
+        echo ""
+        echo "Examples:"
+        echo "  $SCRIPT_NAME npm install               - Run npm install"
+        echo "  $SCRIPT_NAME npm run build             - Build the documentation"
+        echo "  $SCRIPT_NAME npm run test              - Run tests"
+        exit 0
+        ;;
+esac
+
+# Ensure the devcontainer CLI is available before invoking it.
+ensure_devcontainer_cli
+
+# Get the container ID for decidim-documentation-docs-app
+container_id=$(docker ps --filter "name=$CONTAINER_NAME" --format "{{.ID}}" | head -n 1)
+
+# Check if container was found
+if [ -z "$container_id" ]; then
+    echo "Error: $CONTAINER_NAME container not found. Start it with '$SCRIPT_NAME up'"
+    exit 1
+fi
+
+# Apply the optional local configuration so exec runs in the same workspace
+# folder as up/rebuild.
+exec_args=(--container-id "$container_id" --workspace-folder=.)
+if [ -f "$DEVCONTAINER_LOCAL_JSON" ]; then
+    if ! DEVCONTAINER_OVERRIDE_JSON=$(merge_local_config); then
+        exit 1
+    fi
+    exec_args+=(--override-config "$DEVCONTAINER_OVERRIDE_JSON")
+    trap cleanup_override EXIT
+fi
+
+# Check if the command exists in ./bin directory
+if [ -f "./bin/$1" ] && [ -x "./bin/$1" ]; then
+    # If it's a script in bin/, prepend bin/ to the path
+    devcontainer exec "${exec_args[@]}" "bin/$@"
+else
+    # Otherwise execute the command as-is
+    devcontainer exec "${exec_args[@]}" "$@"
+fi
+status=$?
+cleanup_override
+trap - EXIT
+exit "$status"

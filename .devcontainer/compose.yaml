@@ -1,0 +1,12 @@
+name: "decidim-documentation"
+
+services:
+  docs-app:
+    image: mcr.microsoft.com/devcontainers/javascript-node:22-bookworm
+    volumes:
+      - ../:/workspaces/documentation:cached
+    ports:
+      - "${DEVCONTAINER_APP_PORT:-1313}:1313"
+      - "8080:8080"
+      - "8081:8081"
+    command: sleep infinity

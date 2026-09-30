@@ -5,7 +5,7 @@ on:
       - develop
   pull_request:
     paths:
-      - "*"
+      - "**"
 
 jobs:
   check:
