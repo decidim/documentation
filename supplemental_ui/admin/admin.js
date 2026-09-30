@@ -569,11 +569,31 @@ const processor = window.Asciidoctor ? window.Asciidoctor() : null;
 // (and nested pages keep their subdirectory). ROOT-module images (the shared
 // media folder) are referenced with `image::ROOT:` and resolve to
 // en/develop/_images.
-const renderAsciiDoc = (source, imagesDir) => {
+// Resolve an Antora xref target to the built HTML page so links are clickable
+// in the preview. Targets are `[module:]page.adoc[#fragment]`, where an omitted
+// module means the current page's module. The ROOT module maps to the component
+// root, while other modules get their own directory under en/develop.
+const resolveXref = (target, module) => {
+  let [dest, fragment] = target.split('#');
+  let mod = module;
+  const colon = dest.indexOf(':');
+  if (colon !== -1) {
+    mod = dest.slice(0, colon);
+    dest = dest.slice(colon + 1);
+  }
+  dest = dest.replace(/\.adoc$/, '');
+  const base = mod === 'root' || mod === 'ROOT' ? '/en/develop' : `/en/develop/${mod}`;
+  return `${base}/${dest}.html${fragment ? `#${fragment}` : ''}`;
+};
+
+const renderAsciiDoc = (source, imagesDir, module = 'root') => {
   if (!processor) return '';
   const previewable = source
     .replace(/^include::[^\n]*$/gm, '')
-    .replace(/xref:([^\[\]]+)\[([^\]]*)\]/g, (_, target, label) => label || target)
+    .replace(
+      /xref:([^\[\]]+)\[([^\]]*)\]/g,
+      (_, target, label) => `link:${resolveXref(target, module)}[${label || target}]`,
+    )
     .replace(/image::ROOT:([^\[\]]+)/g, 'image::/en/develop/_images/$1');
   return processor.convert(previewable, {
     safe: 'safe',
@@ -606,7 +626,7 @@ const makeDocPreview = (module) =>
     render() {
       const source = this.props.entry.getIn(['data', 'body']) || '';
       const html = sanitizeHtml(
-        renderAsciiDoc(source, imagesDirForEntry(module, this.props.entry)),
+        renderAsciiDoc(source, imagesDirForEntry(module, this.props.entry), module),
       );
       if (html) {
         return h('div', {
@@ -627,10 +647,12 @@ for (const collection of [
   'releases',
   'understand',
   'whitepaper',
-  'navigation',
 ]) {
   CMS.registerPreviewTemplate(collection, makeDocPreview(collection));
 }
+// A file collection's preview template is registered by the file name (`nav`),
+// not the collection name (`navigation`).
+CMS.registerPreviewTemplate('nav', makeDocPreview('root'));
 CMS.registerPreviewStyle('/_/css/styles.css');
 CMS.registerPreviewStyle('/_/css/icons.css');
 
