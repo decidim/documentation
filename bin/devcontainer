@@ -7,178 +7,59 @@ CONTAINERS_TO_STOP=("decidim-documentation-docs-app-1")
 DEVCONTAINER_DIR=".devcontainer"
 DEVCONTAINER_JSON="$DEVCONTAINER_DIR/devcontainer.json"
 DEVCONTAINER_LOCAL_JSON="$DEVCONTAINER_DIR/devcontainer.local.json"
-DEVCONTAINER_BACKUP_JSON="$DEVCONTAINER_DIR/devcontainer.json.backup"
-DEVCONTAINER_BACKUP_FLAG="$DEVCONTAINER_DIR/devcontainer.json.backup.managed"
-DEVCONTAINER_MERGE_HASH="$DEVCONTAINER_DIR/devcontainer.json.merge.hash"
-DEVCONTAINER_LOCK="$DEVCONTAINER_DIR/devcontainer.json.lock"
 
-# Hash a file's contents, using whichever tool is available.
-file_hash() {
-    if command -v sha256sum &> /dev/null; then
-        sha256sum "$1" | cut -d ' ' -f1
-    elif command -v shasum &> /dev/null; then
-        shasum -a 256 "$1" | cut -d ' ' -f1
-    elif command -v cksum &> /dev/null; then
-        cksum "$1"
+# Merge the optional local configuration over the base configuration into a
+# per-run temporary file and print its path. The devcontainer CLI's
+# --override-config replaces the workspace configuration, so it is given the
+# full merged result; relative paths inside it are still resolved against
+# .devcontainer/. A unique temporary file per run means concurrent runs never
+# share any state.
+merge_local_config() {
+    if ! command -v jq &> /dev/null; then
+        echo "Error: jq is required to apply $DEVCONTAINER_LOCAL_JSON." >&2
+        return 1
     fi
-}
-
-# Acquire an exclusive lock so concurrent `up`/`rebuild` runs cannot clobber
-# each other's backup, flag and hash files. Released by release_config_lock.
-# Falls back to a best-effort mkdir lock when flock is unavailable.
-CONFIG_LOCK_DIR=""
-CONFIG_LOCK_FD=""
-CONFIG_LOCK_HELD=0
-acquire_config_lock() {
-    if [ "$CONFIG_LOCK_HELD" = "1" ]; then
+    local merged
+    if ! merged=$(mktemp "${TMPDIR:-/tmp}/devcontainer-merged.XXXXXX"); then
+        echo "Error: Could not create a temporary file for the merged configuration." >&2
+        return 1
+    fi
+    echo "Merging $DEVCONTAINER_LOCAL_JSON with $DEVCONTAINER_JSON..." >&2
+    if jq -s '.[0] * .[1]' "$DEVCONTAINER_JSON" "$DEVCONTAINER_LOCAL_JSON" > "$merged"; then
+        printf '%s\n' "$merged"
         return 0
     fi
-    if command -v flock &> /dev/null; then
-        exec {CONFIG_LOCK_FD}> "$DEVCONTAINER_LOCK"
-        if ! flock -w 600 "$CONFIG_LOCK_FD"; then
-            echo "Error: Could not acquire the devcontainer configuration lock." >&2
-            return 1
-        fi
-        CONFIG_LOCK_HELD=1
-        return 0
-    fi
-    CONFIG_LOCK_DIR="${DEVCONTAINER_LOCK}.d"
-    local waited=0
-    while ! mkdir "$CONFIG_LOCK_DIR" 2> /dev/null; do
-        # A lock directory left behind by a killed process would otherwise block
-        # every later command for the full timeout. Reclaim it once its owner is
-        # no longer running.
-        local owner=""
-        [ -f "$CONFIG_LOCK_DIR/pid" ] && owner=$(cat "$CONFIG_LOCK_DIR/pid" 2> /dev/null)
-        if [ -n "$owner" ] && ! ps -p "$owner" > /dev/null 2>&1; then
-            rm -rf "$CONFIG_LOCK_DIR" 2> /dev/null || true
-            continue
-        fi
-        if [ "$waited" -ge 600 ]; then
-            echo "Error: Could not acquire the devcontainer configuration lock." >&2
-            return 1
-        fi
-        sleep 1
-        waited=$((waited + 1))
-    done
-    echo $$ > "$CONFIG_LOCK_DIR/pid"
-    CONFIG_LOCK_HELD=1
-    return 0
-}
-
-release_config_lock() {
-    if [ "$CONFIG_LOCK_HELD" != "1" ]; then
-        return 0
-    fi
-    if [ -n "$CONFIG_LOCK_FD" ]; then
-        flock -u "$CONFIG_LOCK_FD" 2> /dev/null || true
-        eval "exec ${CONFIG_LOCK_FD}>&-" 2> /dev/null || true
-        CONFIG_LOCK_FD=""
-    fi
-    if [ -n "$CONFIG_LOCK_DIR" ]; then
-        rm -rf "$CONFIG_LOCK_DIR" 2> /dev/null || true
-        CONFIG_LOCK_DIR=""
-    fi
-    CONFIG_LOCK_HELD=0
-}
-
-# Restore the original configuration from a backup left by an interrupted run
-# (or by the current run) and clear the companion state files.
-#
-# Only a backup this script created is used, and the original is only restored
-# when the current file still matches the merged output that run wrote, so a
-# configuration edited during the run is never discarded. Set FORCE_RESTORE=1
-# to skip the change check (used on the interruption trap to guarantee the
-# pre-run configuration is restored).
-recover_previous_config() {
-    if [ ! -f "$DEVCONTAINER_BACKUP_FLAG" ] || [ ! -f "$DEVCONTAINER_BACKUP_JSON" ]; then
-        # No usable backup; drop any stale companions.
-        rm -f "$DEVCONTAINER_BACKUP_JSON" "$DEVCONTAINER_BACKUP_FLAG" "$DEVCONTAINER_MERGE_HASH"
-        return 0
-    fi
-    if [ "${FORCE_RESTORE:-0}" != "1" ] \
-        && [ -f "$DEVCONTAINER_MERGE_HASH" ] \
-        && [ "$(file_hash "$DEVCONTAINER_JSON")" != "$(cat "$DEVCONTAINER_MERGE_HASH")" ]; then
-        echo "Warning: $DEVCONTAINER_JSON was edited since it was merged; keeping the current configuration." >&2
-        rm -f "$DEVCONTAINER_BACKUP_JSON" "$DEVCONTAINER_BACKUP_FLAG" "$DEVCONTAINER_MERGE_HASH"
-        return 0
-    fi
-    mv "$DEVCONTAINER_BACKUP_JSON" "$DEVCONTAINER_JSON"
-    rm -f "$DEVCONTAINER_BACKUP_FLAG" "$DEVCONTAINER_MERGE_HASH"
-}
-
-# Restore the original devcontainer config. Safe to call from any command:
-# the lock is acquired when not already held by the caller.
-restore_devcontainer_config() {
-    if [ "$CONFIG_LOCK_HELD" != "1" ]; then
-        if ! acquire_config_lock; then
-            return 1
-        fi
-    fi
-    recover_previous_config
-    # Release unconditionally: this is the terminal cleanup for the lock, which
-    # may have been acquired here or held across the enclosing command.
-    release_config_lock
-}
-
-# Function to use local config if it exists
-#
-# This allows having a file with local instructions for your personal developer environment at
-# .devcontainer/devcontainer.local.json
-# So, for instance, you can have
-#
-# {
-#   "postCreateCommand": ".devcontainer/devcontainer.local.postCreateCommand.bash"
-# }
-#
-# And there you can add your own packages, dotfiles, etc. Do not forget to also call `bin/setup`
-# at the end of your script.
-#
-use_local_config() {
-    if [ -f "$DEVCONTAINER_LOCAL_JSON" ]; then
-        # Check if jq is available
-        if command -v jq &> /dev/null; then
-            echo "Merging devcontainer.local.json with devcontainer.json..." >&2
-
-            # Serialize config mutation so concurrent runs cannot clobber each
-            # other's backup, flag and hash files.
-            if ! acquire_config_lock; then
-                return 1
-            fi
-
-            # Recover an interrupted run's original config before taking a new
-            # backup. Deleting it here would lose the only clean copy and cause
-            # the already-merged file to be backed up instead.
-            recover_previous_config
-
-            # Backup the current (original) configuration. The flag file marks
-            # this backup as owned by us, so restore only happens for backups we
-            # created.
-            cp "$DEVCONTAINER_JSON" "$DEVCONTAINER_BACKUP_JSON"
-            : > "$DEVCONTAINER_BACKUP_FLAG"
-
-            # Merge configs: base config with local overrides
-            # jq -s '.[0] * .[1]' merges two objects, with the second overriding the first
-            if jq -s '.[0] * .[1]' "$DEVCONTAINER_BACKUP_JSON" "$DEVCONTAINER_LOCAL_JSON" > "$DEVCONTAINER_JSON"; then
-                # Remember the merged result so a later restore can tell whether
-                # the developer edited the file while the command was running.
-                file_hash "$DEVCONTAINER_JSON" > "$DEVCONTAINER_MERGE_HASH"
-                # Keep the lock held for the rest of the enclosing command so
-                # concurrent up/rebuild runs cannot interleave their
-                # backup/merge/restore cycles. restore_devcontainer_config
-                # releases it when the command finishes.
-                return 0
-            else
-                echo "Error: Failed to merge JSON configs. Restoring backup..." >&2
-                restore_devcontainer_config
-                return 1
-            fi
-        else
-            echo "Warning: jq not found. Install jq to use devcontainer.local.json." >&2
-            return 1
-        fi
-    fi
+    rm -f "$merged"
+    echo "Error: Failed to merge $DEVCONTAINER_LOCAL_JSON." >&2
     return 1
+}
+
+# Temporary merged configuration for the current run, if any.
+DEVCONTAINER_OVERRIDE_JSON=""
+cleanup_override() {
+    if [ -n "$DEVCONTAINER_OVERRIDE_JSON" ]; then
+        rm -f "$DEVCONTAINER_OVERRIDE_JSON"
+        DEVCONTAINER_OVERRIDE_JSON=""
+    fi
+}
+
+# Run `devcontainer up`, applying devcontainer.local.json via --override-config
+# when present. The tracked devcontainer.json is never modified, so an
+# interrupted run needs no cleanup beyond removing the temporary file.
+run_devcontainer_up() {
+    local args=(--workspace-folder=.)
+    if [ -f "$DEVCONTAINER_LOCAL_JSON" ]; then
+        if ! DEVCONTAINER_OVERRIDE_JSON=$(merge_local_config); then
+            exit 1
+        fi
+        args+=(--override-config "$DEVCONTAINER_OVERRIDE_JSON")
+        trap cleanup_override EXIT
+    fi
+    devcontainer up "${args[@]}" "$@"
+    local status=$?
+    cleanup_override
+    trap - EXIT
+    return "$status"
 }
 
 # Check if devcontainer CLI is installed
@@ -197,19 +78,8 @@ fi
 # Handle commands that don't need container ID first
 case "$1" in
     up)
-        if use_local_config; then
-            :
-        elif [ -f "$DEVCONTAINER_LOCAL_JSON" ]; then
-            echo "Error: Failed to apply devcontainer.local.json." >&2
-            exit 1
-        fi
-        # On interruption, leave the configuration as it was before the run.
-        trap 'FORCE_RESTORE=1; restore_devcontainer_config' EXIT
-        devcontainer up --workspace-folder=.
-        status=$?
-        trap - EXIT
-        restore_devcontainer_config
-        exit "$status"
+        run_devcontainer_up
+        exit $?
         ;;
     down)
         echo "Stopping containers..."
@@ -221,23 +91,11 @@ case "$1" in
                 echo "Container $container not found, skipping..."
             fi
         done
-        restore_devcontainer_config
         exit 0
         ;;
     rebuild)
-        if use_local_config; then
-            :
-        elif [ -f "$DEVCONTAINER_LOCAL_JSON" ]; then
-            echo "Error: Failed to apply devcontainer.local.json." >&2
-            exit 1
-        fi
-        # On interruption, leave the configuration as it was before the run.
-        trap 'FORCE_RESTORE=1; restore_devcontainer_config' EXIT
-        devcontainer up --workspace-folder=. --remove-existing-container
-        status=$?
-        trap - EXIT
-        restore_devcontainer_config
-        exit "$status"
+        run_devcontainer_up --remove-existing-container
+        exit $?
         ;;
     rm)
         echo "Removing all containers and cleaning up..."
@@ -249,7 +107,6 @@ case "$1" in
                 echo "Container $container not found, skipping..."
             fi
         done
-        restore_devcontainer_config
         echo "Cleanup complete!"
         exit 0
         ;;
