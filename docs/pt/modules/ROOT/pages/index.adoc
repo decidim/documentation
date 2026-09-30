@@ -8,13 +8,6 @@ Decidim é um framework que permite a qualquer pessoa criar e configurar uma pla
 
 Você encontrou a documentação do Decidim. Saiba mais sobre o projeto em https://decidim.org[decidim.org].
 
-[NOTE]
-====
-Esta é a documentação para o ramo 'desenvolvimento'. You can see this same documentation site for other versions: xref:v0.32@ROOT:index.adoc[v0.32]
-====
-
-// * Read the xref:ROOT:getting-started.adoc[Getting Started guide]
-
 A documentação cobre xref:install:index.adoc[installing], xref:configure:index.adoc[configuring], e xref:admin:index.adoc[running] seu próprio site Decidim.
 
 Se você quiser fazer mudanças no código fonte, temos documentação para xref:develop:guide.adoc[developers] também.
