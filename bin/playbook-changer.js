@@ -47,6 +47,29 @@ function baseFromHead(headRef) {
   return baseRef;
 }
 
+// Detects whether the current GitHub Actions run is a pull request from a fork
+//
+// A fork head branch is not available in the upstream repository, so pointing
+// the documentation sources at it would leave them without content. In that
+// case the base reference is used instead.
+//
+// @returns {boolean}
+function isForkPullRequest() {
+  const eventPath = process.env.GITHUB_EVENT_PATH;
+
+  if (!eventPath) {
+    return false;
+  }
+
+  try {
+    const event = JSON.parse(fs.readFileSync(eventPath, "utf8"));
+    return event?.pull_request?.head?.repo?.fork === true;
+  } catch (error) {
+    console.error(`Could not read the GitHub event payload: ${error.message}`);
+    return false;
+  }
+}
+
 // Get metatada from the environment
 //
 // Gets the head reference and the base reference by checking out environment variables
@@ -68,6 +91,12 @@ async function getMetadataFromEnvironment() {
       baseRef = process.env.GITHUB_BASE_REF
     } else {
       baseRef = baseFromHead(headRef);
+    }
+    if (isForkPullRequest()) {
+      // The head branch lives in the fork, not in this repository, so keep the
+      // documentation sources on a branch that actually exists here.
+      console.log(`PULL REQUEST COMES FROM A FORK, USING ${baseRef} FOR DOCUMENTATION SOURCES`);
+      headRef = baseRef;
     }
   } else if (isNetlifyProduction) {
     // We're in production so we don't need to change anything
