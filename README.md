@@ -28,12 +28,12 @@ npm install
 # Build the static site
 npm run build
 
-# Serve the generated website and start the Decap CMS local proxy. The content
-# manager runs at http://localhost:8080/admin; the proxy lets you save changes
-# straight to your local git worktree (no GitHub OAuth needed).
+# Serve the generated website. The content manager (Sveltia CMS) runs at
+# http://localhost:8080/admin/index.html; use "Work with Local Repository" in a
+# Chromium-based browser to save changes straight to your local git worktree.
 npm run dev:admin
 
-# For ease of contributor experience, we recommend using the Decap UI
+# For ease of contributor experience, we recommend using the Sveltia UI
 xdg-open http://localhost:8080
 xdg-open http://localhost:8080/admin
 ```

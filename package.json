@@ -6,13 +6,11 @@
     "build": "antora antora-playbook.yml $@",
     "postbuild": "./bin/postbuild.js",
     "test": "./bin/test",
-    "dev:admin": "concurrently --kill-others --names proxy,site \"decap-server\" \"serve build/site -l 8080\""
+    "dev:admin": "serve build/site -l 8080"
   },
   "devDependencies": {
     "@antora/cli": "^3.1.10",
     "@antora/site-generator-default": "^3.1.10",
-    "concurrently": "^10.0.5",
-    "decap-server": "^3.11.3",
     "serve": "^14.2.6"
   },
   "dependencies": {

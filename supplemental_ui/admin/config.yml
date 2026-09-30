@@ -3,17 +3,13 @@ backend:
   repo: decidim/documentation
   branch: develop
 
-# Inert on non-local hosts; detected automatically when running the
-# admin locally against the Decap proxy server.
-local_backend: true
-
 publish_mode: editorial_workflow
 site_url: https://docs.decidim.org
 
 media_folder: docs/en/modules/ROOT/assets/images
 
 # Each collection stores a whole AsciiDoc file in `body` with no front
-# matter, so there is no title field. `identifier_field: body` stops Decap
+# matter, so there is no title field. `identifier_field: body` stops the CMS
 # from warning about a missing inferred title; entries are labelled by
 # filename via `summary`.
 collections:

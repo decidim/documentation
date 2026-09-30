@@ -1,8 +1,8 @@
 const { CMS, initCMS: init, h, createClass } = window;
 
-// Decap has no built-in AsciiDoc support, and Antora pages carry no front
-// matter. This custom formatter treats the whole file as one raw text body so
-// editing never injects or rewrites front matter.
+// Sveltia CMS has no built-in AsciiDoc support, and Antora pages carry no
+// front matter. This custom formatter treats the whole file as one raw text
+// body so editing never injects or rewrites front matter.
 CMS.registerCustomFormat('adoc', 'adoc', {
   fromFile: (text) => ({ body: text }),
   toFile: (value) => value.body,
@@ -89,10 +89,10 @@ const HEADING_OPTIONS = [
   ['6', 'Heading 6'],
 ];
 
-// Raw AsciiDoc editor (the markdown widget would mangle AsciiDoc via its
-// markdown parser) with a formatting toolbar backed by the media library.
-// Inserted images follow the repo convention: `image::<filename>[alt]`,
-// resolved by Antora against the current module's assets/images.
+// Raw AsciiDoc editor (the markdown field type would mangle AsciiDoc via its
+// parser) with a formatting toolbar backed by the media library. Inserted
+// images follow the repo convention: `image::<filename>[alt]`, resolved by
+// Antora against the current module's assets/images.
 const AdocControl = createClass({
   getInitialState() {
     return { selection: { start: 0, end: 0 }, lastCursor: 0, undoStack: [], redoStack: [] };
@@ -102,19 +102,40 @@ const AdocControl = createClass({
     return this.props.value || '';
   },
 
-  // Fill the remaining viewport height below the textarea so the editor
-  // adapts to the available screen size.
+  // Find the editor pane's scroll container. Sveltia renders fields in a
+  // scrollable content area rather than the page, so size against it instead
+  // of the window.
+  scrollParent() {
+    let node = this.textarea && this.textarea.parentElement;
+    while (node) {
+      const { overflowY } = window.getComputedStyle(node);
+      if (overflowY === 'auto' || overflowY === 'scroll' || overflowY === 'overlay') {
+        return node;
+      }
+      node = node.parentElement;
+    }
+    return document.documentElement;
+  },
+
+  // Fill the remaining height of the editor pane below the toolbar so the
+  // textarea scrolls internally instead of growing the pane (which would make
+  // the whole pane scroll on every keystroke).
   updateHeight() {
     const el = this.textarea;
     if (!el) return;
-    const top = el.getBoundingClientRect().top;
-    const available = window.innerHeight - top - 16;
-    el.style.height = `${Math.max(240, available)}px`;
+    const parent = this.scrollParent();
+    const offset = el.getBoundingClientRect().top - parent.getBoundingClientRect().top;
+    const available = parent.clientHeight - Math.max(0, offset) - 16;
+    el.style.height = `${Math.max(200, available)}px`;
   },
 
   componentDidMount() {
     this.updateHeight();
     window.addEventListener('resize', this.updateHeight);
+    if (window.ResizeObserver) {
+      this.resizeObserver = new ResizeObserver(() => this.updateHeight());
+      this.resizeObserver.observe(this.scrollParent());
+    }
   },
 
   saveSelection() {
@@ -168,54 +189,22 @@ const AdocControl = createClass({
     this.apply(next, cursor, cursor);
   },
 
-  // Decap tracks picked files in `mediaPaths`, keyed by a control id. The
-  // wrapper calls our `shouldComponentUpdate` with the wrapper's own props
-  // (which expose `uniqueFieldId`, not `forID`), so generate and reuse our
-  // own stable id for the media control, like the built-in file widget does.
-  mediaControlID() {
-    if (!this._mediaControlID) {
-      this._mediaControlID = `adoc-${Math.random().toString(36).slice(2)}${Date.now()}`;
-    }
-    return this._mediaControlID;
-  },
-
-  // Decap's Widget wrapper only re-renders custom controls when their value
-  // changes, unless the control provides its own shouldComponentUpdate. The
-  // media library reports a picked image through `mediaPaths` without touching
-  // the value, so opt into those updates too.
-  shouldComponentUpdate(nextProps) {
-    if (this.props.value !== nextProps.value) return true;
-    if (this.props.classNameWrapper !== nextProps.classNameWrapper) return true;
-    if (this.props.hasActiveStyle !== nextProps.hasActiveStyle) return true;
-    const mediaPath = nextProps.mediaPaths && nextProps.mediaPaths.get(this.mediaControlID());
-    return !!mediaPath;
-  },
-
-  componentDidUpdate() {
-    const mediaPath = this.props.mediaPaths && this.props.mediaPaths.get(this.mediaControlID());
-    if (mediaPath) {
-      // Uploads go to the shared ROOT module folder, so the macro uses
-      // Antora's cross-module target form to resolve from any module.
-      this.insertAtCursor(`image::ROOT:${basename(mediaPath)}[Alt text]`);
-      this.props.onRemoveInsertedMedia(this.mediaControlID());
-    }
-  },
-
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateHeight);
-    if (this.props.onRemoveMediaControl) {
-      this.props.onRemoveMediaControl(this.mediaControlID());
+    if (this.resizeObserver) {
+      this.resizeObserver.disconnect();
     }
   },
 
-  openMediaLibrary() {
+  // Open Sveltia's built-in file picker (existing file, upload, URL or stock
+  // photo). Uploads go to the shared ROOT module folder, so the macro uses
+  // Antora's cross-module target form to resolve from any module.
+  async insertImage() {
     this.saveSelection();
-    this.props.onOpenMediaLibrary({
-      controlID: this.mediaControlID(),
-      forImage: true,
-      allowMultiple: false,
-      field: this.props.field,
-    });
+    const picked = await this.props.pickFile({ kind: 'image', multiple: false });
+    if (picked) {
+      this.insertAtCursor(`image::ROOT:${basename(picked.value)}[Alt text]`);
+    }
   },
 
   insertLink() {
@@ -399,7 +388,7 @@ const AdocControl = createClass({
         this.insertVideo();
         break;
       case 'image':
-        this.openMediaLibrary();
+        this.insertImage();
         break;
     }
   },
@@ -623,11 +612,11 @@ for (const collection of [
 CMS.registerPreviewStyle('/_/css/styles.css');
 CMS.registerPreviewStyle('/_/css/icons.css');
 
-// Point Decap at config.yml using the directory computed in index.html, so it
-// works whether the admin is served as /admin, /admin/ or from a subpath.
+// Point Sveltia at config.yml using the directory computed in index.html, so
+// it works whether the admin is served as /admin, /admin/ or from a subpath.
 const configLink = document.createElement('link');
 configLink.rel = 'cms-config-url';
-configLink.type = 'text/yaml';
+configLink.type = 'application/yaml';
 configLink.href = `${window.ADMIN_DIR}config.yml`;
 document.head.appendChild(configLink);
 
