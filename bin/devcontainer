@@ -45,6 +45,15 @@ acquire_config_lock() {
     CONFIG_LOCK_DIR="${DEVCONTAINER_LOCK}.d"
     local waited=0
     while ! mkdir "$CONFIG_LOCK_DIR" 2> /dev/null; do
+        # A lock directory left behind by a killed process would otherwise block
+        # every later command for the full timeout. Reclaim it once its owner is
+        # no longer running.
+        local owner=""
+        [ -f "$CONFIG_LOCK_DIR/pid" ] && owner=$(cat "$CONFIG_LOCK_DIR/pid" 2> /dev/null)
+        if [ -n "$owner" ] && ! ps -p "$owner" > /dev/null 2>&1; then
+            rm -rf "$CONFIG_LOCK_DIR" 2> /dev/null || true
+            continue
+        fi
         if [ "$waited" -ge 600 ]; then
             echo "Error: Could not acquire the devcontainer configuration lock." >&2
             return 1
@@ -52,6 +61,7 @@ acquire_config_lock() {
         sleep 1
         waited=$((waited + 1))
     done
+    echo $$ > "$CONFIG_LOCK_DIR/pid"
     CONFIG_LOCK_HELD=1
     return 0
 }
@@ -66,7 +76,7 @@ release_config_lock() {
         CONFIG_LOCK_FD=""
     fi
     if [ -n "$CONFIG_LOCK_DIR" ]; then
-        rmdir "$CONFIG_LOCK_DIR" 2> /dev/null || true
+        rm -rf "$CONFIG_LOCK_DIR" 2> /dev/null || true
         CONFIG_LOCK_DIR=""
     fi
     CONFIG_LOCK_HELD=0
@@ -100,17 +110,15 @@ recover_previous_config() {
 # Restore the original devcontainer config. Safe to call from any command:
 # the lock is acquired when not already held by the caller.
 restore_devcontainer_config() {
-    local acquired=0
     if [ "$CONFIG_LOCK_HELD" != "1" ]; then
         if ! acquire_config_lock; then
             return 1
         fi
-        acquired=1
     fi
     recover_previous_config
-    if [ "$acquired" = "1" ]; then
-        release_config_lock
-    fi
+    # Release unconditionally: this is the terminal cleanup for the lock, which
+    # may have been acquired here or held across the enclosing command.
+    release_config_lock
 }
 
 # Function to use local config if it exists
@@ -155,12 +163,14 @@ use_local_config() {
                 # Remember the merged result so a later restore can tell whether
                 # the developer edited the file while the command was running.
                 file_hash "$DEVCONTAINER_JSON" > "$DEVCONTAINER_MERGE_HASH"
-                release_config_lock
+                # Keep the lock held for the rest of the enclosing command so
+                # concurrent up/rebuild runs cannot interleave their
+                # backup/merge/restore cycles. restore_devcontainer_config
+                # releases it when the command finishes.
                 return 0
             else
                 echo "Error: Failed to merge JSON configs. Restoring backup..." >&2
                 restore_devcontainer_config
-                release_config_lock
                 return 1
             fi
         else
