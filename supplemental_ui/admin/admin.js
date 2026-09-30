@@ -95,11 +95,28 @@ const HEADING_OPTIONS = [
 // Antora against the current module's assets/images.
 const AdocControl = createClass({
   getInitialState() {
-    return { selection: { start: 0, end: 0 }, lastCursor: 0, undoStack: [], redoStack: [] };
+    return {
+      value: this.props.value || '',
+      selection: { start: 0, end: 0 },
+      lastCursor: 0,
+      undoStack: [],
+      redoStack: [],
+    };
+  },
+
+  // The textarea value is owned by local state while editing. Sveltia updates the
+  // parent value asynchronously from a Svelte effect, so a controlled textarea
+  // would otherwise be restored to the stale parent value right after each
+  // keystroke, moving the caret to the end (and scrolling the editor to the
+  // bottom on Enter). External changes, such as revert or copy, are adopted here.
+  componentWillReceiveProps(nextProps) {
+    if ((nextProps.value || '') !== (this.props.value || '')) {
+      this.setState({ value: nextProps.value || '' });
+    }
   },
 
   value() {
-    return this.props.value || '';
+    return this.state.value || '';
   },
 
   // Find the editor pane's scroll container. Sveltia renders fields in a
@@ -403,6 +420,7 @@ const AdocControl = createClass({
       undoStack[undoStack.length - 1] === current ? undoStack : [...undoStack, current];
     this.props.onChange(next);
     this.setState({
+      value: next,
       undoStack: nextUndo.slice(-200),
       redoStack: [],
       selection: { start: selStart, end: selEnd },
@@ -419,6 +437,7 @@ const AdocControl = createClass({
     const cursor = Math.min(previous.length, lastCursor);
     this.props.onChange(previous);
     this.setState({
+      value: previous,
       undoStack: undoStack.slice(0, -1),
       redoStack: [...redoStack, current],
       selection: { start: 0, end: 0 },
@@ -435,6 +454,7 @@ const AdocControl = createClass({
     const cursor = Math.min(next.length, lastCursor);
     this.props.onChange(next);
     this.setState({
+      value: next,
       undoStack: [...undoStack, current],
       redoStack: redoStack.slice(0, -1),
       selection: { start: 0, end: 0 },
@@ -450,6 +470,7 @@ const AdocControl = createClass({
       undoStack[undoStack.length - 1] === current ? undoStack : [...undoStack, current];
     this.props.onChange(e.target.value);
     this.setState({
+      value: e.target.value,
       undoStack: nextUndo.slice(-200),
       redoStack: [],
       lastCursor: e.target.selectionStart,
@@ -514,7 +535,7 @@ const AdocControl = createClass({
       h('textarea', {
         id: this.props.forID,
         className: 'adoc-textarea',
-        value: this.props.value || '',
+        value: this.state.value || '',
         onChange: this.handleChange,
         onSelect: this.saveSelection,
         onClick: this.saveSelection,
