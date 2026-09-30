@@ -1,4 +1,3 @@
-
 * xref:install:index.adoc[Getting started]
 ** xref:install:manual.adoc[Manual Installation]
 ** xref:install:checklist.adoc[Checklist]
@@ -132,7 +131,6 @@
 **** xref:admin:components/proposals/answers.adoc[Answers]
 **** xref:admin:components/proposals/special_configurations.adoc[Specific proposals configurations]
 ***** xref:admin:components/proposals/special_configurations/amendments.adoc[Amendments]
-***** xref:admin:components/proposals/special_configurations/collaborative_drafts.adoc[Collaborative drafts]
 ***** xref:admin:components/proposals/special_configurations/participatory_texts.adoc[Participatory texts]
 *** xref:admin:components/sortitions.adoc[Sortitions]
 *** xref:admin:components/surveys.adoc[Surveys]
@@ -311,4 +309,3 @@
 *** xref:whitepaper:decidim-a-brief-overview.adoc[Decidim: a brief overview]
 
 * xref:releases:index.adoc[Release notes]
-
