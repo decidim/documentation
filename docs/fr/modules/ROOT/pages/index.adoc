@@ -8,13 +8,6 @@ Decidim est un framework qui permet à tout le monde de créer et de configurer 
 
 Vous avez trouvé la documentation de Decidim. En savoir plus sur le projet sur https://decidim.org[decidim.org].
 
-[NOTE]
-====
-Ceci est la documentation de la branche `develop`. You can see this same documentation site for other versions: xref:v0.32@ROOT:index.adoc[v0.32]
-====
-
-// * Read the xref:ROOT:getting-started.adoc[Getting Started guide]
-
 La documentation couvre xref:install:index.adoc[installing], xref:configure:index.adoc[configuring]et xref:admin:index.adoc[running] votre propre site Decidim.
 
 Si vous voulez apporter des modifications au code source, nous avons également de la documentation pour xref:develop:guide.adoc[developers].
