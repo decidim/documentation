@@ -108,9 +108,13 @@ function writeToFile(antoraPlaybookFile, metadata) {
     const isDevelopment = metadata.headRef === "HEAD";
 
     // Only modify inside documentation sources
+    const branchesPattern =
+      /^([ \t]*-[ \t]+url:[ \t]*&documentation[^\n]*\n(?:[ \t]+[^\n]*\n)*?[ \t]+branches:[ \t]*\[)([^\]]*)(\])/gm;
+
     result = result.replace(
-      /(- url: &documentation[^\n]*\n(?:\s+.*\n)*?\s+branches:\s*\[[^\]]*?),\s*develop(\s*\])/gm,
-      `$1, ${metadata.headRef}$2`
+      branchesPattern,
+      (match, before, branches, after) =>
+        before + branches.replace(/\bdevelop\b/, metadata.headRef) + after
     );
 
     if (isDevelopment) {
