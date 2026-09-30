@@ -8,13 +8,6 @@ Die Plattform ermöglicht es jeder Organisation (Stadtrat, Vereinigung, Universi
 
 Sie haben die Dokumentation für Decidim gefunden. Erfahren Sie mehr über das Projekt unter https://decidim.org[decidim.org].
 
-[NOTE]
-====
-Dies ist die Dokumentation für den `develop` Zweig. Sie können diese Dokumentationsseite auch in anderen Versionen ansehen: xref:v0.32@ROOT:index.adoc[v0.32]
-====
-
-// * Read the xref:ROOT:getting-started.adoc[Getting Started guide]
-
 Die Dokumentation umfasst xref:install:index.adoc[Installation], xref:configure:index.adoc[Konfiguration] und xref:admin:index.adoc[Betrieb] Ihrer eigenen Decidim-Website.
 
 Wenn Sie Änderungen am Quellcode vornehmen möchten, haben wir auch eine Dokumentation für xref:develop:guide.adoc[Entwickelnde] zu bieten.
