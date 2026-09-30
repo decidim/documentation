@@ -62,53 +62,76 @@ run_devcontainer_up() {
     return "$status"
 }
 
-# Check if devcontainer CLI is installed
-if ! command -v devcontainer &> /dev/null; then
-    echo "devcontainer CLI not found. Installing..."
-    npm install -g @devcontainers/cli
-
-    # Check if installation was successful
+# Check if devcontainer CLI is installed, installing it when missing. Only the
+# commands that invoke the CLI need this, so it is not run for down, rm, or ps.
+ensure_devcontainer_cli() {
     if ! command -v devcontainer &> /dev/null; then
-        echo "Error: Failed to install devcontainer CLI"
-        exit 1
+        echo "devcontainer CLI not found. Installing..."
+        npm install -g @devcontainers/cli
+
+        # Check if installation was successful
+        if ! command -v devcontainer &> /dev/null; then
+            echo "Error: Failed to install devcontainer CLI"
+            exit 1
+        fi
+        echo "devcontainer CLI installed successfully"
     fi
-    echo "devcontainer CLI installed successfully"
-fi
+}
 
 # Handle commands that don't need container ID first
 case "$1" in
     up)
+        ensure_devcontainer_cli
         run_devcontainer_up
         exit $?
         ;;
     down)
         echo "Stopping containers..."
+        status=0
+        if ! container_list=$(docker ps -a --format "{{.Names}}"); then
+            echo "Error: Failed to list containers" >&2
+            exit 1
+        fi
         for container in "${CONTAINERS_TO_STOP[@]}"; do
-            if docker ps -a --format "{{.Names}}" | grep -q "^${container}$"; then
+            if printf '%s\n' "$container_list" | grep -q "^${container}$"; then
                 echo "Stopping $container..."
-                docker stop "$container"
+                if ! docker stop "$container"; then
+                    echo "Error: Failed to stop $container" >&2
+                    status=1
+                fi
             else
                 echo "Container $container not found, skipping..."
             fi
         done
-        exit 0
+        exit $status
         ;;
     rebuild)
+        ensure_devcontainer_cli
         run_devcontainer_up --remove-existing-container
         exit $?
         ;;
     rm)
         echo "Removing all containers and cleaning up..."
+        status=0
+        if ! container_list=$(docker ps -a --format "{{.Names}}"); then
+            echo "Error: Failed to list containers" >&2
+            exit 1
+        fi
         for container in "${CONTAINERS_TO_STOP[@]}"; do
-            if docker ps -a --format "{{.Names}}" | grep -q "^${container}$"; then
+            if printf '%s\n' "$container_list" | grep -q "^${container}$"; then
                 echo "Removing $container..."
-                docker rm -f "$container"
+                if ! docker rm -f "$container"; then
+                    echo "Error: Failed to remove $container" >&2
+                    status=1
+                fi
             else
                 echo "Container $container not found, skipping..."
             fi
         done
-        echo "Cleanup complete!"
-        exit 0
+        if [ "$status" -eq 0 ]; then
+            echo "Cleanup complete!"
+        fi
+        exit $status
         ;;
     ps)
         echo "Checking container status..."
@@ -147,6 +170,9 @@ case "$1" in
         ;;
 esac
 
+# Ensure the devcontainer CLI is available before invoking it.
+ensure_devcontainer_cli
+
 # Get the container ID for decidim-documentation-docs-app
 container_id=$(docker ps --filter "name=$CONTAINER_NAME" --format "{{.ID}}" | head -n 1)
 
@@ -156,11 +182,26 @@ if [ -z "$container_id" ]; then
     exit 1
 fi
 
+# Apply the optional local configuration so exec runs in the same workspace
+# folder as up/rebuild.
+exec_args=(--container-id "$container_id" --workspace-folder=.)
+if [ -f "$DEVCONTAINER_LOCAL_JSON" ]; then
+    if ! DEVCONTAINER_OVERRIDE_JSON=$(merge_local_config); then
+        exit 1
+    fi
+    exec_args+=(--override-config "$DEVCONTAINER_OVERRIDE_JSON")
+    trap cleanup_override EXIT
+fi
+
 # Check if the command exists in ./bin directory
 if [ -f "./bin/$1" ] && [ -x "./bin/$1" ]; then
     # If it's a script in bin/, prepend bin/ to the path
-    devcontainer exec --container-id "$container_id" --workspace-folder=. "bin/$@"
+    devcontainer exec "${exec_args[@]}" "bin/$@"
 else
     # Otherwise execute the command as-is
-    devcontainer exec --container-id "$container_id" --workspace-folder=. "$@"
+    devcontainer exec "${exec_args[@]}" "$@"
 fi
+status=$?
+cleanup_override
+trap - EXIT
+exit "$status"
