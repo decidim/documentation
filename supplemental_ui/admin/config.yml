@@ -12,6 +12,12 @@ media_folder: docs/en/modules/ROOT/assets/images
 # matter, so there is no title field. `identifier_field: body` stops the CMS
 # from warning about a missing inferred title; entries are labelled by
 # filename via `summary`.
+#
+# The editable `slug` lets editors name a new page: the filename is the only
+# place the name is stored, so it has to be typed. It is only editable while
+# creating an entry, because renaming a saved page would break the links from
+# other pages and the navigation. `create`/`delete` let editors add and remove
+# pages; the Navigation collection below edits the matching nav.adoc.
 collections:
   - name: root
     label: Home
@@ -169,3 +175,19 @@ collections:
       - name: body
         label: AsciiDoc
         widget: adoc
+
+  # The site navigation lives in a single AsciiDoc file rather than a folder of
+  # entries. The custom `adoc` format keeps the whole file in `body`; the
+  # preview renders the nav tree like a normal page.
+  - name: navigation
+    label: Navigation
+    icon: menu
+    files:
+      - name: nav
+        label: Navigation menu
+        file: docs/en/modules/ROOT/nav.adoc
+        format: adoc
+        fields:
+          - name: body
+            label: Navigation (nav.adoc)
+            widget: adoc

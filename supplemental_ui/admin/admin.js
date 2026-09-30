@@ -627,6 +627,7 @@ for (const collection of [
   'releases',
   'understand',
   'whitepaper',
+  'navigation',
 ]) {
   CMS.registerPreviewTemplate(collection, makeDocPreview(collection));
 }
