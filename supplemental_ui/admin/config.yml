@@ -8,7 +8,7 @@ site_url: https://docs.decidim.org
 
 media_folder: docs/en/modules/ROOT/assets/images
 
-# Each collection stores a whole AsciiDoc file in `body` with no front
+# Each page collection stores a whole AsciiDoc file in `body` with no front
 # matter, so there is no title field. `identifier_field: body` stops the CMS
 # from warning about a missing inferred title; entries are labelled by
 # filename via `summary`.
@@ -19,10 +19,14 @@ collections:
     folder: docs/en/modules/ROOT/pages
     extension: adoc
     format: adoc
-    create: false
-    delete: false
+    create: true
+    delete: true
     identifier_field: body
     summary: "{{filename}}"
+    slug:
+      editable: [create]
+      hint: Filename of the new page, without the .adoc extension
+      pattern: ['^[a-z0-9][a-z0-9_-]*$', 'Use lowercase letters, numbers, hyphens or underscores']
     preview_path: "en/develop/{{filename}}.html"
     fields:
       - name: body
@@ -34,10 +38,14 @@ collections:
     folder: docs/en/modules/admin/pages
     extension: adoc
     format: adoc
-    create: false
-    delete: false
+    create: true
+    delete: true
     identifier_field: body
     summary: "{{filename}}"
+    slug:
+      editable: [create]
+      hint: Filename of the new page, without the .adoc extension
+      pattern: ['^[a-z0-9][a-z0-9_-]*$', 'Use lowercase letters, numbers, hyphens or underscores']
     nested:
       depth: 100
       summary: "{{filename}}"
@@ -53,10 +61,14 @@ collections:
     folder: docs/en/modules/contribute/pages
     extension: adoc
     format: adoc
-    create: false
-    delete: false
+    create: true
+    delete: true
     identifier_field: body
     summary: "{{filename}}"
+    slug:
+      editable: [create]
+      hint: Filename of the new page, without the .adoc extension
+      pattern: ['^[a-z0-9][a-z0-9_-]*$', 'Use lowercase letters, numbers, hyphens or underscores']
     preview_path: "en/develop/contribute/{{filename}}.html"
     fields:
       - name: body
@@ -68,10 +80,14 @@ collections:
     folder: docs/en/modules/features/pages
     extension: adoc
     format: adoc
-    create: false
-    delete: false
+    create: true
+    delete: true
     identifier_field: body
     summary: "{{filename}}"
+    slug:
+      editable: [create]
+      hint: Filename of the new page, without the .adoc extension
+      pattern: ['^[a-z0-9][a-z0-9_-]*$', 'Use lowercase letters, numbers, hyphens or underscores']
     preview_path: "en/develop/features/{{filename}}.html"
     fields:
       - name: body
@@ -83,10 +99,14 @@ collections:
     folder: docs/en/modules/publications/pages
     extension: adoc
     format: adoc
-    create: false
-    delete: false
+    create: true
+    delete: true
     identifier_field: body
     summary: "{{filename}}"
+    slug:
+      editable: [create]
+      hint: Filename of the new page, without the .adoc extension
+      pattern: ['^[a-z0-9][a-z0-9_-]*$', 'Use lowercase letters, numbers, hyphens or underscores']
     preview_path: "en/develop/publications/{{filename}}.html"
     fields:
       - name: body
@@ -98,10 +118,14 @@ collections:
     folder: docs/en/modules/releases/pages
     extension: adoc
     format: adoc
-    create: false
-    delete: false
+    create: true
+    delete: true
     identifier_field: body
     summary: "{{filename}}"
+    slug:
+      editable: [create]
+      hint: Filename of the new page, without the .adoc extension
+      pattern: ['^[a-z0-9][a-z0-9_-]*$', 'Use lowercase letters, numbers, hyphens or underscores']
     preview_path: "en/develop/releases/{{filename}}.html"
     fields:
       - name: body
@@ -113,10 +137,14 @@ collections:
     folder: docs/en/modules/understand/pages
     extension: adoc
     format: adoc
-    create: false
-    delete: false
+    create: true
+    delete: true
     identifier_field: body
     summary: "{{filename}}"
+    slug:
+      editable: [create]
+      hint: Filename of the new page, without the .adoc extension
+      pattern: ['^[a-z0-9][a-z0-9_-]*$', 'Use lowercase letters, numbers, hyphens or underscores']
     preview_path: "en/develop/understand/{{filename}}.html"
     fields:
       - name: body
@@ -128,10 +156,14 @@ collections:
     folder: docs/en/modules/whitepaper/pages
     extension: adoc
     format: adoc
-    create: false
-    delete: false
+    create: true
+    delete: true
     identifier_field: body
     summary: "{{filename}}"
+    slug:
+      editable: [create]
+      hint: Filename of the new page, without the .adoc extension
+      pattern: ['^[a-z0-9][a-z0-9_-]*$', 'Use lowercase letters, numbers, hyphens or underscores']
     preview_path: "en/develop/whitepaper/{{filename}}.html"
     fields:
       - name: body
