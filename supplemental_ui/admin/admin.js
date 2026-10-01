@@ -3,9 +3,40 @@ const { CMS, initCMS: init, h, createClass } = window;
 // Sveltia CMS has no built-in AsciiDoc support, and Antora pages carry no
 // front matter. This custom formatter treats the whole file as one raw text
 // body so editing never injects or rewrites front matter.
+const sharedImagePath = 'docs/en/modules/ROOT/assets/images';
+
+// Sveltia uploads a file only while its blob: URL is present in the value being saved. To keep the
+// editor and the committed AsciiDoc clean, the widget appends the blob references in a hidden
+// block past this sentinel. The block is never displayed, and the formatter and preview strip it.
+const UPLOAD_REF = '// sveltia-uploads:';
+const uploadBlockPattern = new RegExp(`\\n${UPLOAD_REF}\\n[\\s\\S]*$`);
+const uploadLinePattern = /^\/\/ image:(.+?) blob:(.+)$/;
+
+const stripUploadBlock = (text) => text.replace(uploadBlockPattern, '');
+
+const serializeUploadBlock = (refs) =>
+  refs.length
+    ? `\n${UPLOAD_REF}\n${refs
+        .map(({ fileName, blobUrl }) => `// image:${fileName} blob:${blobUrl}`)
+        .join('\n')}`
+    : '';
+
+const parseUploadBlock = (text) => {
+  const refs = [];
+  const block = text.match(uploadBlockPattern)?.[0] ?? '';
+
+  block.split('\n').forEach((line) => {
+    const match = line.match(uploadLinePattern);
+    if (match) refs.push({ fileName: match[1], blobUrl: match[2] });
+  });
+
+  return { body: stripUploadBlock(text), refs };
+};
+
 CMS.registerCustomFormat('adoc', 'adoc', {
   fromFile: (text) => ({ body: text }),
-  toFile: (value) => value.body,
+  // The upload-reference block only exists so Sveltia uploads new images; drop it when saving.
+  toFile: (value) => (typeof value?.body === 'string' ? stripUploadBlock(value.body) : ''),
 });
 
 const basename = (path) => String(path).split('/').pop().split('\\').pop();
@@ -95,8 +126,10 @@ const HEADING_OPTIONS = [
 // Antora against the current module's assets/images.
 const AdocControl = createClass({
   getInitialState() {
+    const { body, refs } = parseUploadBlock(this.props.value || '');
     return {
-      value: this.props.value || '',
+      value: body,
+      uploadRefs: refs,
       selection: { start: 0, end: 0 },
       lastCursor: 0,
       undoStack: [],
@@ -108,15 +141,27 @@ const AdocControl = createClass({
   // parent value asynchronously from a Svelte effect, so a controlled textarea
   // would otherwise be restored to the stale parent value right after each
   // keystroke, moving the caret to the end (and scrolling the editor to the
-  // bottom on Enter). External changes, such as revert or copy, are adopted here.
+  // bottom on Enter). External changes, such as revert or copy, are adopted here;
+  // the widget's own value, which ends with the hidden upload block, is ignored.
   componentWillReceiveProps(nextProps) {
-    if ((nextProps.value || '') !== (this.props.value || '')) {
-      this.setState({ value: nextProps.value || '' });
+    if ((nextProps.value || '') !== this.modelValue()) {
+      const { body, refs } = parseUploadBlock(nextProps.value || '');
+      this.setState({ value: body, uploadRefs: refs });
     }
   },
 
   value() {
     return this.state.value || '';
+  },
+
+  uploadRefs() {
+    return this.state.uploadRefs || [];
+  },
+
+  // The value handed to Sveltia: the visible body plus the hidden upload block
+  // that makes Sveltia upload newly picked images.
+  modelValue() {
+    return this.value() + serializeUploadBlock(this.uploadRefs());
   },
 
   // Find the editor pane's scroll container. Sveltia renders fields in a
@@ -187,13 +232,13 @@ const AdocControl = createClass({
     this.apply(next, selStart, selEnd);
   },
 
-  insertAtCursor(text) {
+  insertAtCursor(text, extraRefs = []) {
     const value = this.value();
     const el = this.textarea;
     const at = Math.min(el.selectionStart, value.length);
     const next = value.slice(0, at) + text + value.slice(at);
     const cursor = at + text.length;
-    this.apply(next, cursor, cursor);
+    this.apply(next, cursor, cursor, [...this.uploadRefs(), ...extraRefs]);
   },
 
   insertLine(text) {
@@ -214,14 +259,25 @@ const AdocControl = createClass({
   },
 
   // Open Sveltia's built-in file picker (existing file, upload, URL or stock
-  // photo). Uploads go to the shared ROOT module folder, so the macro uses
-  // Antora's cross-module target form to resolve from any module.
+  // photo). Every image is inserted with the canonical Antora
+  // `image::ROOT:<filename>[Alt text]` target, so the editor and the saved
+  // source stay consistent for existing and newly uploaded files alike.
+  //
+  // A fresh upload additionally registers a hidden upload reference. Sveltia
+  // only uploads files whose blob: URL appears in the saved value, so the
+  // reference is appended past a sentinel that the editor never displays and
+  // the `adoc` formatter strips before saving.
   async insertImage() {
     this.saveSelection();
     const picked = await this.props.pickFile({ kind: 'image', multiple: false });
-    if (picked) {
-      this.insertAtCursor(`image::ROOT:${basename(picked.value)}[Alt text]`);
-    }
+    if (!picked) return;
+
+    // A freshly uploaded file is returned with a blob: URL; an existing asset or
+    // external URL comes back as a public path. Only blob URLs need uploading.
+    const isUpload = typeof picked.value === 'string' && picked.value.startsWith('blob:');
+    const fileName = isUpload && picked.file ? picked.file.name : basename(picked.value);
+    const refs = isUpload ? [{ fileName, blobUrl: picked.value }] : [];
+    this.insertAtCursor(`image::ROOT:${fileName}[Alt text]`, refs);
   },
 
   insertLink() {
@@ -412,15 +468,18 @@ const AdocControl = createClass({
 
   // Record the current value on the undo stack (deduplicating consecutive
   // identical states, capped at 200 entries) and clear the redo stack, then
-  // apply `next` and restore the given selection.
-  apply(next, selStart, selEnd) {
+  // apply `next` and restore the given selection. Sveltia receives the visible
+  // body plus the hidden upload-reference block.
+  apply(next, selStart, selEnd, nextRefs) {
     const current = this.value();
     const { undoStack } = this.state;
     const nextUndo =
       undoStack[undoStack.length - 1] === current ? undoStack : [...undoStack, current];
-    this.props.onChange(next);
+    const refs = nextRefs ?? this.uploadRefs();
+    this.props.onChange(next + serializeUploadBlock(refs));
     this.setState({
       value: next,
+      uploadRefs: refs,
       undoStack: nextUndo.slice(-200),
       redoStack: [],
       selection: { start: selStart, end: selEnd },
@@ -435,7 +494,8 @@ const AdocControl = createClass({
     const current = this.value();
     const previous = undoStack[undoStack.length - 1];
     const cursor = Math.min(previous.length, lastCursor);
-    this.props.onChange(previous);
+    const refs = this.uploadRefs();
+    this.props.onChange(previous + serializeUploadBlock(refs));
     this.setState({
       value: previous,
       undoStack: undoStack.slice(0, -1),
@@ -452,7 +512,8 @@ const AdocControl = createClass({
     const current = this.value();
     const next = redoStack[redoStack.length - 1];
     const cursor = Math.min(next.length, lastCursor);
-    this.props.onChange(next);
+    const refs = this.uploadRefs();
+    this.props.onChange(next + serializeUploadBlock(refs));
     this.setState({
       value: next,
       undoStack: [...undoStack, current],
@@ -468,9 +529,10 @@ const AdocControl = createClass({
     const { undoStack } = this.state;
     const nextUndo =
       undoStack[undoStack.length - 1] === current ? undoStack : [...undoStack, current];
-    this.props.onChange(e.target.value);
+    const next = e.target.value;
+    this.props.onChange(next + serializeUploadBlock(this.uploadRefs()));
     this.setState({
-      value: e.target.value,
+      value: next,
       undoStack: nextUndo.slice(-200),
       redoStack: [],
       lastCursor: e.target.selectionStart,
@@ -586,9 +648,33 @@ const resolveXref = (target, module) => {
   return `${base}/${dest}.html${fragment ? `#${fragment}` : ''}`;
 };
 
-const renderAsciiDoc = (source, imagesDir, module = 'root') => {
+// Resolve a stored ROOT image path to a URL Sveltia can serve in the admin. This matters because
+// the site is edited through the editorial workflow: a freshly uploaded image lives on the draft
+// branch, but the hard-coded built path (`/en/develop/_images/...`) only exists after publishing.
+// The media API returns the draft asset, just like the built-in Image field preview does.
+const resolveRootImageUrl = (getAsset, fileName) => {
+  if (typeof getAsset !== 'function') return '';
+  const asset = getAsset(`/${sharedImagePath}/${fileName}`);
+  const url = asset?.url ?? (typeof asset?.get === 'function' ? asset.get('url') : '');
+  return typeof url === 'string' ? url : '';
+};
+
+const renderAsciiDoc = (source, imagesDir, module = 'root', refs = [], getAsset) => {
   if (!processor) return '';
-  const previewable = source
+  // Resolve a pending upload to its temporary blob URL and a committed one to the media URL
+  // Sveltia serves (so it previews even while the image is still on the draft branch).
+  const pending = new Map(
+    refs
+      .filter(({ blobUrl }) => blobUrl.startsWith('blob:'))
+      .map(({ fileName, blobUrl }) => [fileName, blobUrl]),
+  );
+  const body = stripUploadBlock(source).replace(
+    /image::ROOT:([^\[\]\n]+)\[/g,
+    (_, fileName) =>
+      `image::${pending.get(fileName) || resolveRootImageUrl(getAsset, fileName) || `ROOT:${fileName}`}[`,
+  );
+
+  const previewable = body
     .replace(/^include::[^\n]*$/gm, '')
     .replace(
       /xref:([^\[\]]+)\[([^\]]*)\]/g,
@@ -605,7 +691,13 @@ const renderAsciiDoc = (source, imagesDir, module = 'root') => {
 // converted markup is sanitized before it reaches dangerouslySetInnerHTML.
 const sanitizeHtml = (html) => {
   if (!html) return '';
-  if (window.DOMPurify) return window.DOMPurify.sanitize(html);
+  if (window.DOMPurify) {
+    // Allow same-origin blob: URLs so a just-picked image can preview before it is committed.
+    return window.DOMPurify.sanitize(html, {
+      ALLOWED_URI_REGEXP:
+        /^(?:(?:blob|https?|data|mailto|tel|callto|sms|cid|xmpp):|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i,
+    });
+  }
   return '';
 };
 
@@ -625,8 +717,15 @@ const makeDocPreview = (module) =>
   createClass({
     render() {
       const source = this.props.entry.getIn(['data', 'body']) || '';
+      const { refs } = parseUploadBlock(source);
       const html = sanitizeHtml(
-        renderAsciiDoc(source, imagesDirForEntry(module, this.props.entry), module),
+        renderAsciiDoc(
+          source,
+          imagesDirForEntry(module, this.props.entry),
+          module,
+          refs,
+          this.props.getAsset,
+        ),
       );
       if (html) {
         return h('div', {
@@ -634,7 +733,7 @@ const makeDocPreview = (module) =>
           dangerouslySetInnerHTML: { __html: html },
         });
       }
-      return h('div', { className: 'doc-preview' }, h('pre', null, source));
+      return h('div', { className: 'doc-preview' }, h('pre', null, stripUploadBlock(source)));
     },
   });
 
