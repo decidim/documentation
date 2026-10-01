@@ -1,16 +1,16 @@
 = Hilfe-Abschnitte
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-On each participatory space index and landing page, you can see a "Help" button on the right border of the page.
+Auf jeder Übersichtsseite und Landingpage eines partizipativen Raums sehen Sie eine Schaltfläche "Hilfe" am rechten Seitenrand.
 
 image::settings/help_sections_frontend_hide.png[Help sections: hide]
 
-By clicking on it, a visitor or a participant can see a pop up message to understand what the participatory space is about.
+Durch Klicken darauf können Besuchende oder Teilnehmende eine Popup-Nachricht sehen, die erklärt, worum es in dem partizipativen Raum geht.
 
 image::settings/help_sections_frontend.png[Help sections: frontend]
 
-Administrators can customize these *help sections* to adapt them to the instance specificity.
+Admins können diese *Hilfeabschnitte* anpassen, um sie an die Besonderheiten der Instanz anzupassen.
 
 image::settings/help_sections_backend.png[Help sections: backend]
 
@@ -18,6 +18,6 @@ image::settings/help_sections_backend.png[Help sections: backend]
 
 === Deaktivieren
 
-You can hide these information boxes by leaving the contents all empty for every language.
+Sie können diese Informationsboxen ausblenden, indem Sie die Inhalte für alle Sprachen leer lassen.
 
 image::settings/help_sections_disable_backend.png[Disable help section in administration]

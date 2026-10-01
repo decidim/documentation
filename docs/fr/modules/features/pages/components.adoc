@@ -46,7 +46,7 @@ Si l'approbation est un vote, il est possible de configurer à partir du panneau
 
 Il existe une *forme spéciale utilisée pour voter pour les budgets participatifs* qui permet aux participants de voter en « dépensant » un montant équivalent au budget en question parmi les projets proposés. Le nombre de votes est limité ici par le montant des dépenses cumulées des projets sélectionnés.
 
-== Résultats
+== Réalisations
 
 Le composant *résultats* est utilisé pour transformer les propositions en résultats et leur donner des réponses officielles.
 Il est possible de fusionner différentes propositions en un seul résultat ou de créer des résultats différents liés à la même proposition originale.
@@ -64,7 +64,7 @@ Le composant *sondages* peut être utilisé pour concevoir et publier des sondag
 * *Outil de configuration du sondage* : permet aux administrateurs de créer des questions et des réponses (ouverts, types de test, sélection multiple, etc.) et lancer l'enquête, ainsi que télécharger les réponses au format CSV.
 * *Interface de sondage pour les participants* : permet aux participants de répondre aux questions du sondage.
 
-== Sortitions
+== Tirages au sort
 
 Le composant *sortition* permet de sélectionner un certain nombre de propositions (par ex. les candidats pour un jury) avec des procédures aléatoires, mais reproductibles, qui garantissent des distributions non partiales et uniformes.
 
@@ -84,7 +84,7 @@ Le composant *newsletter* permet d'envoyer des e-mails à tous ceux qui sont ins
 
 Les participants seront automatiquement et directement en mesure de *se désabonner* par courriel lui-même en cliquant sur un lien dans celui-ci et il sera également possible de *suivre le nombre de visites* générées par la newsletter.
 
-== Réunions
+== Rencontres
 
 Le volet *réunion* offre aux organisations et aux participants la possibilité de :
 

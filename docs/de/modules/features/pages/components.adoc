@@ -10,124 +10,124 @@
 
 Vorschläge können von einem der folgenden *Ersteller* gemacht werden:
 
-* durch die *offizielle Organisation* die Plattform verwalten
-* von registrierten *einzelnen Teilnehmern*
-* von *Gruppe* registrierter Teilnehmer
+* durch die *offizielle Organisation*, die die Plattform verwaltet
+* von registrierten *einzelnen Teilnehmenden*
+* von einer *Gruppe* registrierter Teilnehmender
 * von einem *Meeting* im Ergebnis einer Diskussion oder einer kollektiven Beratung
 
 Sobald ein Vorschlag veröffentlicht wurde, kann er von seinen Autoren *moderiert*, *geändert* oder *zurückgezogen* werden.
 
-Vorschläge können *akzeptiert*, *abgelehnt* oder in einem *Bewertung* gehalten werden. Vorschläge können auch in eine neue Phase importiert werden, so dass sie in verschiedenen Stufen neu geschrieben oder ausgearbeitet werden können.
+Vorschläge können *akzeptiert*, *abgelehnt* oder in einem *Bewertungsstatus* gehalten werden. Vorschläge können auch in eine neue Phase importiert werden, so dass sie in verschiedenen Stufen neu geschrieben oder ausgearbeitet werden können.
 
 Weitere mit Vorschlägen verknüpfte Funktionen sind:
 
-* *Assistent zur Vorschlagserstellung*: Während ein Vorschlag erstellt wird, wird der Teilnehmer durch den Prozess begleitet , die in verschiedene Schritte unterteilt ist, mit kontextbezogener Hilfe und Vorschauen, bevor der Vorschlag veröffentlicht wird.
+* *Assistent zur Vorschlagserstellung*: Während ein Vorschlag erstellt wird, wird die teilnehmende Person durch den Prozess begleitet, der in verschiedene Schritte unterteilt ist, mit kontextbezogener Hilfe und Vorschauen, bevor der Vorschlag veröffentlicht wird.
 * *Änderung und Widerruf von Vorschlägen*: Der Autor eines Vorschlags kann ihn modifizieren und/oder zurückziehen, bevor die Supportphase eröffnet wird.
 * *Versionskontrolle*: Dies ermöglicht die Aufzeichnung aller Änderungen an einem Vorschlag sowie Code-Generierung zur Überprüfung der Integrität des Vorschlags.
 * *Ähnlichkeiten erkennen*: Dies erlaubt jedem, der einen neuen Vorschlag macht, ähnliche zu finden, die zuvor auf der Plattform gemacht wurden, und so Doppelungen zu vermeiden.
 * *Verbindungen zwischen Vorschlägen*: Vorschläge können über Links im Kommentarbereich miteinander verbunden werden damit verbundene Vorschläge als Karten anzeigen und Benachrichtigungen über das Bestehen einer neuen Verbindung geben.
-* *Befürwortung von Vorschlägen*: Teilnehmer und Kollektive können Vorschläge unterstützen und diese öffentliche Unterstützung wird im Vorschlag dargestellt. Die Anhänger der Befürworter werden darüber informiert, dass der folgende Vorschlag gebilligt wurde.
-* *Änderungsanträge*: Jeder Teilnehmer kann den Text eines Vorschlags bearbeiten und ein Untervorschlag wird im Änderungsmodus erstellt (wie Pull Request in Github). Dieser Untervorschlag kann Zustimmungen und Unterstützung sammeln. Außerdem kann der Verfasser des Vorschlags den Änderungsantrag (oder Untervorschlag) akzeptieren oder ablehnen. Wird ein Untervorschlag abgelehnt, kann der Autor ihn in einen offiziellen Vorschlag umwandeln.
+* *Befürwortung von Vorschlägen*: Teilnehmende und Kollektive können Vorschläge unterstützen und diese öffentliche Unterstützung wird im Vorschlag dargestellt. Die Anhänger der Befürworter werden darüber informiert, dass der folgende Vorschlag gebilligt wurde.
+* *Änderungsanträge*: Jede teilnehmende Person kann den Text eines Vorschlags bearbeiten und ein Untervorschlag wird im Änderungsmodus erstellt (wie Pull Request in Github). Dieser Untervorschlag kann Zustimmungen und Unterstützung sammeln. Außerdem kann der Verfasser des Vorschlags den Änderungsantrag (oder Untervorschlag) akzeptieren oder ablehnen. Wird ein Untervorschlag abgelehnt, kann der Autor ihn in einen offiziellen Vorschlag umwandeln.
 * *Gemeinsamer Entwurf für Vorschläge*: Decidim ermöglicht Zusammenarbeit und Mitgestaltung bei Vorschlägen. Es enthält die folgenden Funktionen:
 ** Erstellung von groben Entwürfen mit zahlreichen Autoren.
 ** Auflistung von gemeinschaftlichen Entwürfen
 ** Kommentare in Entwürfen
-** Um Hilfe bitten und die Hilfe anderer Mitarbeiter annehmen
+** Um Hilfe bitten und die Hilfe anderer Mitwirkender annehmen
 
-== Befürworter
+== Unterstützungen
 
 include::admin:partielle$development.adoc[]
 
-Die Teilnehmer können Vorschläge befürworten. Solche Zusagen können als Abstimmungen, Unterschriften oder andere Formate interpretiert werden, die eine positive Einigung im Einklang mit dem politischen Willen selbst zeigen.
-Die Teilnehmer können für jeden von ihnen gewünschten Vorschlag eine einzige Zustimmung abgeben. Die Anzahl der Bestätigungen kann für jeden Teilnehmer begrenzt werden.
+Die Teilnehmenden können Vorschläge befürworten. Solche Zusagen können als Abstimmungen, Unterschriften oder andere Formate interpretiert werden, die eine positive Einigung im Einklang mit dem politischen Willen selbst zeigen.
+Die Teilnehmenden können für jeden von ihnen gewünschten Vorschlag eine einzige Zustimmung abgeben. Die Anzahl der Bestätigungen kann für jede teilnehmende Person begrenzt werden.
 Es gibt keine Grenze für die Anzahl der Vorschläge, die unterstützt werden können.
 
-Wenn die Zustimmung eine Abstimmung ist, ist es möglich, die *Anzeigeeinstellungen für die Abstimmungsergebnis* im Administrationsbereich zu konfigurieren entweder während oder ausschließlich nach der Abstimmungsstunde.
+Wenn die Zustimmung eine Abstimmung ist, ist es möglich, im Administrationsbereich die *Anzeigeeinstellungen für die Abstimmungsergebnisse* zu konfigurieren, entweder während oder ausschliesslich nach dem Abstimmungszeitraum.
 
-Es gibt ein *spezielles Formular, das verwendet wird, um für partizipatorische Budgets zu stimmen*, das es den Teilnehmern erlaubt, mit "Ausgaben" einen Betrag auszugeben, der dem betreffenden Budget entspricht. Die Anzahl der Stimmen wird hier durch den kumulierten Ausgabenbetrag der ausgewählten Projekte begrenzt.
+Es gibt ein *spezielles Formular, das verwendet wird, um für partizipatorische Budgets zu stimmen*, das es den Teilnehmenden erlaubt, mit "Ausgaben" einen Betrag auszugeben, der dem betreffenden Budget entspricht. Die Anzahl der Stimmen wird hier durch den kumulierten Ausgabenbetrag der ausgewählten Projekte begrenzt.
 
 == Ergebnisse
 
-Die *Ergebnis* Komponente wird verwendet, um Vorschläge in Ergebnisse zu verwandeln und offizielle Antworten darauf zu geben.
+Die *Ergebnis*-Komponente wird verwendet, um Vorschläge in Ergebnisse zu verwandeln und offizielle Antworten darauf zu geben.
 Es ist möglich, verschiedene Vorschläge zu einem einzigen Ergebnis zusammenzuführen oder unterschiedliche Ergebnisse im Zusammenhang mit demselben ursprünglichen Vorschlag zu erzielen.
 
 Die Ergebnisse sammeln Informationen über die ursprünglichen Vorschläge(n) wie die Treffen, in denen sie erstellt, diskutiert und diskutiert wurden, und die Zustimmungen.
 
 == Debatten
 
-Diskussionen und Debatten können von Administratoren oder Teilnehmern über Fragen und spezielle Fragen eröffnet werden.
+Diskussionen und Debatten können von Admins oder Teilnehmenden über Fragen und spezielle Fragen eröffnet werden.
 
 == Umfragen
 
 Die *Umfrage* Komponente kann zur Gestaltung und Veröffentlichung von Umfragen sowie zur Anzeige und zum Download der Ergebnisse verwendet werden.
 
-* *Konfigurationswerkzeug*: Administratoren können Fragen und Antworten erstellen (offene Testtypen, Mehrfachauswahl usw.) und starten Sie die Umfrage und laden Sie die Antworten im CSV-Format herunter.
-* *Umfrageschnittstelle für Teilnehmer*: ermöglicht den Teilnehmern, auf Fragen der Umfrage zu antworten.
+* *Umfragekonfigurationswerkzeug*: Admins können Fragen und Antworten erstellen (offen, Testtypen, Mehrfachauswahl usw.) und starten Sie die Umfrage und laden Sie die Antworten im CSV-Format herunter.
+* *Umfrageschnittstelle für Teilnehmende*: ermöglicht den Teilnehmenden, auf Fragen der Umfrage zu antworten.
 
-== Sortierungen
+== Auslosungen
 
-Die *sortition* Komponente erlaubt die Auswahl einer Reihe von Vorschlägen (z. Eine Jury mit zufälligen, aber reproduzierbaren Verfahren, die eine unvoreingenommene und einheitliche Verteilung gewährleisten.
+Die *Auslosung*-Komponente erlaubt die Auswahl einer Reihe von Vorschlägen (z. B. Kandidierende für eine Jury) mit zufälligen, aber reproduzierbaren Verfahren, die eine unvoreingenommene und einheitliche Verteilung gewährleisten.
 
 == Informative Seiten
 
-Die *pages* Komponente wird verwendet, um informative Seiten mit Rich Textformatierung, eingebetteten Bildern und Videos zu erstellen.
+Die *Seiten* Komponente wird verwendet, um informative Seiten mit Rich Textformatierung, eingebetteten Bildern und Videos zu erstellen.
 
 == Blogs
 
-Die *blog* Komponente ermöglicht die Erstellung von Beiträgen oder Nachrichten, die mit einem partizipatorischen Raum verbunden sind, und sie chronologisch zu navigieren.
+Die *Blog*-Komponente ermöglicht die Erstellung von Beiträgen oder Nachrichten, die mit einem partizipatorischen Raum verbunden sind, und chronologisch durch sie zu navigieren.
 
 *Kommentare* zu Blogeinträgen werden wie die anderen Kommentare der Plattform behandelt, wie unten beschrieben.
 
 == Newsletter
 
-Die *newsletter* Komponente ermöglicht das Senden von E-Mails an alle registrierten Personen oder selektiver an diejenigen, die in einem bestimmten Raum teilnehmen, die gemäß den Nutzungsbedingungen zugestimmt haben, diese Information Newsletter E-Mail zu erhalten. Personalisierte E-Mails werden direkt an den Namen des Benutzers in der vom Benutzer gewählten Sprache verschickt.
+Die *Newsletter*-Komponente ermöglicht das Senden von E-Mails an alle registrierten Personen oder selektiver an diejenigen, die in einem bestimmten Raum teilnehmen, die gemäss den Nutzungsbedingungen zugestimmt haben, diese Informations-Newsletter-E-Mail zu erhalten. Personalisierte E-Mails werden direkt an den Namen der nutzenden Person in der von ihr gewählten Sprache verschickt.
 
-Die Teilnehmer können sich automatisch und direkt über die E-Mail selbst abmelden, indem sie auf einen Link in der E-Mail klicken und die Anzahl der Besuche* des Newsletters *verfolgen.
+Die Teilnehmenden können sich automatisch und direkt über die E-Mail selbst *abmelden*, indem sie auf einen darin enthaltenen Link klicken, und es wird auch möglich sein, *die Anzahl der Besuche* zu verfolgen, die durch den Newsletter generiert werden.
 
 == Meetings
 
-Die *Meeting* Komponente bietet Organisationen und Teilnehmern die Möglichkeit zu:
+Die *Veranstaltungs*-Komponente bietet Organisationen und Teilnehmenden die Möglichkeit zu:
 
 * Treffen einberufen, deren Struktur und Inhalt definieren
-* Das Meeting innerhalb eines Raumes *kategorisieren* .
-* *Vorschläge erstellen, die mit Meetings* verknüpft sind
+* Die Veranstaltung innerhalb eines Raumes *kategorisieren*.
+* *Vorschläge erstellen, die mit Veranstaltungen* verknüpft sind
 * *veröffentlichen* Minuten
-* *Fotos* des Meetings hochladen
+* *Fotos* der Veranstaltung hochladen
 
-Meetings im Zusammenhang mit einem Teilnehmerraum (ein bestimmter Prozess oder eine Assembly) können auf einer *Karte* angezeigt werden und nach Datum oder Kategorie* *bestellt werden. Außerdem können alle Meetings im *Kalendermodus*, mit der Möglichkeit, sie in einen Mobilfunkkalender oder andere Apps zu exportieren, angezeigt werden.
+Veranstaltungen im Zusammenhang mit einem partizipatorischen Raum (ein bestimmter Prozess oder eine Versammlung) können auf einer *Karte* angezeigt und *nach Datum oder Kategorie geordnet* werden. Ausserdem können alle Veranstaltungen im *Kalendermodus*, mit der Möglichkeit, sie in einen Mobilfunkkalender oder andere Apps zu exportieren, angezeigt werden.
 
-Einige der erweiterten Funktionen der Besprechungskomponente sind:
+Einige der erweiterten Funktionen der Veranstaltungskomponente sind:
 
 * *Registrierungs- und Anwesenheitssystem*:
-** Dies erlaubt die Verwaltung der *Art der Registrierung* (offen und automatisch, geschlossen und zugänglich nur für bestimmte Arten von Teilnehmern, etc. , um die **Anzahl der Plätze **für die Teilnehmer verfügbar zu machen, um einen Platz zu reservieren, um *manuelle Registrierungen* durchzuführen, *Einladungen* verschickt, um die *Bedingungen* zu definieren, die akzeptiert werden müssen, um an dem Meeting teilnehmen zu können (z. . Freigabe von Bildrechten) und *Registrierung der Anwesenheit* der Teilnehmer.
-** Es erlaubt den Teilnehmern *sich zu registrieren* für eine Besprechung, Anfrage *für eine Familienzusammenführung* (Spielraum, ) und um einen *Akkreditierungscode* für die Teilnahme an einem Meeting zu erhalten.
-** Die registrierten Teilnehmer, die an einem Meeting teilgenommen haben, haben *besonderen Zugang* um die Besprechung zu bewerten, Kommentare abzugeben, usw.
-** Teilnehmer oder Administratoren können *Benachrichtigungen* über Öffnungszeiten der Registrierung erhalten, die Anzahl der für die Registrierung verbleibenden Orte, die Erinnerung an die Sitzungen und die Veröffentlichung der Protokolle.
-* *Verwalten von Agenda*: ermöglicht die Festlegung der Dauer von Meetings, die Erstellung von Artikeln und Unterelementen, Titel, Inhalt und geschätzte Dauer. Teilnehmer können Tagesordnungspunkte vorschlagen.
-* System für *Entwurf, Veröffentlichung und Validierung von Sitzungsprotokollen* [WICHTIGER HINWEIS:Dies ist derzeit anders implementiert]:
+** Dies erlaubt die Verwaltung der *Art der Registrierung* (offen und automatisch, geschlossen und zugänglich nur für bestimmte Arten von Teilnehmenden usw.), die **Anzahl der verfügbaren Plätze** für Teilnehmende festzulegen, einen Platz zu reservieren, *manuelle Registrierungen* durchzuführen, *Einladungen* zu verschicken, die *Bedingungen* zu definieren, die akzeptiert werden müssen, um an der Veranstaltung teilnehmen zu können (z. B. Freigabe von Bildrechten), und *die Anwesenheit* der Teilnehmenden *zu registrieren*.
+** Es erlaubt den Teilnehmenden, sich für eine Veranstaltung *zu registrieren*, einen *Familienbetreuungsservice* anzufragen (Spielraum, Kinderbetreuungsraum) und einen *Akkreditierungscode* für die Teilnahme an einer Veranstaltung zu erhalten.
+** Die registrierten Teilnehmenden, die an einer Veranstaltung teilgenommen haben, haben *besonderen Zugang*, um die Veranstaltung zu bewerten, Kommentare abzugeben usw.
+** Teilnehmende oder Admins können *Benachrichtigungen* über Öffnungszeiten der Registrierung erhalten, die Anzahl der für die Registrierung verbleibenden Orte, die Erinnerung an die Veranstaltungen und die Veröffentlichung der Protokolle.
+* *Verwaltung von Tagesordnungen*: ermöglicht die Festlegung der Dauer von Veranstaltungen, die Erstellung von Punkten und Unterpunkten, Titel, Inhalt und geschätzter Dauer. Teilnehmende können Tagesordnungspunkte vorschlagen.
+* System für *Entwurf, Veröffentlichung und Validierung von Veranstaltungsprotokollen* [WICHTIGER HINWEIS:Dies ist derzeit anders implementiert]:
 ** Minuten können im Video-, Audio- oder Textformat hochgeladen werden.
 ** Minuten im Textmodus sind mit einem *kollaborativen Schreibtisch* in Decidim integriert.
-** Minuten gehen durch 4 *Stufen der Vorbereitung*: 1. Kollaboratives Schreiben während der Sitzung; 2. Vorbereitung des offiziellen Entwurfs der Protokolle; 3. Abänderungsentwürfe; 4. Veröffentlichung und endgültige Validierung des Protokolls.
+** Minuten gehen durch 4 *Stufen der Vorbereitung*: 1. Kollaboratives Schreiben während der Veranstaltung; 2. Vorbereitung des offiziellen Entwurfs der Protokolle; 3. Abänderungsentwürfe; 4. Veröffentlichung und endgültige Validierung des Protokolls.
 ** Protokolle können unter Verwendung der Kommentarkomponente *kommentiert* verwendet werden.
 ** *Begleitende Dokumente* können ebenfalls dem Protokoll hinzugefügt werden.
-* *Auto-Einberufung*: verifizierte Teilnehmer können Meetings direkt über die Plattform einberufen, mit Unterstützung einer bestimmten Anzahl anderer Teilnehmer, das Meeting wird öffentlich aktiviert sein und die Teilnehmer werden Zugang zum Administrationsbereich haben [WICHTIG: noch nicht implementiert]
-* *Meetings anzeigen und exportieren*: Meetings können im Kartenmodus angezeigt werden (für Räume oder generell auf der Plattform) oder im Kalendermodus, und kann in Agenda- und Kalender-Manager exportiert werden (im iCalendar-Format).
+* *Auto-Einberufung*: verifizierte Teilnehmende können Veranstaltungen direkt über die Plattform einberufen; mit Unterstützung einer bestimmten Anzahl anderer Teilnehmender wird die Veranstaltung öffentlich aktiviert, und die einberufenden Teilnehmenden erhalten Zugang zum Administrationsbereich. [WICHTIG: noch nicht implementiert]
+* *Veranstaltungen anzeigen und exportieren*: Veranstaltungen können im Kartenmodus angezeigt werden (für Räume oder generell auf der Plattform) oder im Kalendermodus, und können in Agenda- und Kalender-Manager exportiert werden (im iCalendar-Format).
 
 == Suchmaschine
 
-*Die Suchmaschine* ermöglicht den Teilnehmern die Durchsuchung aller indizierbaren Inhalte der Plattform sowohl allgemein als auch spezifisch, durch die Suche innerhalb eines bestimmten partizipatorischen Prozesses oder innerhalb seiner Komponenten (Vorschläge, Ergebnisse, usw.). , durch erweiterte Suche.
+*Die Suchmaschine* ermöglicht den Teilnehmenden die Durchsuchung aller indizierbaren Inhalte der Plattform, sowohl allgemein als auch spezifisch, durch die Suche innerhalb eines bestimmten Beteiligungsprozesses oder innerhalb seiner Komponenten (Vorschläge, Ergebnisse usw.) sowie durch erweiterte Suche.
 
 == Sekundäre Komponenten
 
-Es gibt andere Komponenten, die nur über die Grundkomponenten existieren, sind. Diese Komponenten sind:
+Es gibt andere Komponenten, die nur zusätzlich zu den Grundkomponenten existieren. Diese Komponenten sind:
 
 === Kommentare
 
-Die *Kommentar* Komponente ermöglicht es den Teilnehmern, an einem Beratungsprozess zu einem Thema oder Vorschlag teilzunehmen.
-Die Teilnehmer können auf sie antworten, bestätigen sie und erhalten Benachrichtigungen über Antworten.
+Die *Kommentar*-Komponente ermöglicht es den Teilnehmenden, an einem Beratungsprozess zu einem Thema oder Vorschlag teilzunehmen.
+Die Teilnehmenden können auf sie antworten, bestätigen sie und erhalten Benachrichtigungen über Antworten.
 Kommentare können in chronologischer Reihenfolge *eingestuft* werden oder durch die Anzahl der Ja-Stimmen belegt werden.
 
-=== Teilnehmende Texte
+=== Partizipative Texte
 
 Teilnehmende Texte sind als eine geordnete Sammlung von Vorschlägen definiert, die ein Dokument mit vollständigem Text bilden. Die Teilnahme am Text beruht auf der Interaktion mit den Vorschlägen, die ihn bilden. Diese Komponente erlaubt im Grunde drei Operationen:
 
@@ -137,17 +137,17 @@ Teilnehmende Texte sind als eine geordnete Sammlung von Vorschlägen definiert, 
 
 === Verantwortlichkeit
 
-Die *accountability* Komponente funktioniert wie ein in der Plattform eingebautes Projektmanagementsystem. . Sie bietet die Möglichkeit aus:
+Die *Rechenschaftspflicht*-Komponente funktioniert wie ein in die Plattform eingebautes Projektmanagementsystem. . Sie bietet folgende Möglichkeiten:
 
 * unterteilen der Ergebnisse in Projekte oder Unterprojekte
 * Festlegung und Anwendung des Fortschritts in der Implementierung (0% bis 100% implementiert)
-* zeigt den Umfang der Implementierung der Ergebnisse, sortiert nach Kategorien und Bereichen
+* zeigt den Umfang der Implementierung der Ergebnisse, sortiert nach Kategorien und Themen
 
 Ergebnisse, Projekte und Status können über ein CVS oder manuell über die Administrationsoberfläche aktualisiert werden.
 
 === Konferenzen
 
-Die *Konferenz* Komponente erlaubt es einer Organisation, einer Reihe vordefinierter Meetings (Chats, Workshops etc.) beizutreten in Verbindung mit einem partizipatorischen Raum.
+Die *Konferenz*-Komponente erlaubt es einer Organisation, einer Reihe vordefinierter Veranstaltungen (Chats, Workshops usw.) beizutreten in Verbindung mit einem partizipatorischen Raum.
 
 Konfigurationseinstellungen enthalten:
 
@@ -155,29 +155,29 @@ Konfigurationseinstellungen enthalten:
 * Die Möglichkeit, ein *interaktives und herunterladbares Programm* für die Veranstaltung zu generieren (wo es Gastredner gibt, B. Name, Position, Organisation, eine kleine Biographie und Links zu anderen Webseiten).
 * E-Mail *Einladungen*.
 * Registrierungssystem
-* *Automatisches Diplom und Zeugnisse der Anwesenheitserstellung* für diejenigen, die es beantragen, durch ein Support-Panel, dass ein Administrator überprüfen kann.
+* *Automatische Erstellung von Diplomen und Anwesenheitszertifikaten* für diejenigen, die es beantragen, durch ein Support-Panel, das ein Admin überprüfen kann.
 * Links zu den Veranstaltungen *Videos und Materialien* Plattformen im Programm und Dokumente.
 * Automatische Links zu digital-medialen Websites für die Veranstaltung.
-* Die Möglichkeit, Events durch *Social Networks* zu verfolgen (z.B. durch Einbindung eines Twitter-Feeds).
+* Die Möglichkeit, Events durch *soziale Netzwerke* zu verfolgen (z.B. durch Einbindung eines Twitter-Feeds).
 
-== Teilnehmerräume und Komponenten
+== Partizipatorische Räume und Komponenten
 
-*Teilnehmerräume* und *Komponenten* lassen sich auf unterschiedliche Weise kombinieren.
+*Partizipatorische Räume* und *Komponenten* lassen sich auf unterschiedliche Weise kombinieren.
 Zum Beispiel können die verschiedenen Phasen eines partizipatorischen Budgetierungsprozesses (partizipatorischer Raum) *Komponenten* wie folgt kombinieren:
 
-1. In einer frühen Phase können öffentliche *Meetings* für die Bürger geöffnet werden, um verschiedene nach Bezirken klassifizierte Bedürfnisse zu analysieren.
-1. Diese *Meetings* können wiederum zur Gestaltung einer *Umfrage führen* führen.
+1. In einer frühen Phase können öffentliche *Veranstaltungen* für die Bürger geöffnet werden, um verschiedene nach Bezirken klassifizierte Bedürfnisse zu analysieren.
+1. Diese *Veranstaltungen* können wiederum zur Gestaltung einer *Umfrage* führen.
 1. Die *Umfrage* Ergebnisse können dann verwendet werden, um eine Reihe von Kategorien für Projekte vorzuschlagen, die vorgeschlagen werden sollen.
-1. Die *Proposal* Komponente kann dann für die Teilnehmer aktiviert werden, um ihre Projekte als Lösungen für die ermittelten Bedürfnisse zu erstellen und zu veröffentlichen.
+1. Die *Vorschlags*-Komponente kann dann für die Teilnehmenden aktiviert werden, um ihre Projekte als Lösungen für die ermittelten Bedürfnisse zu erstellen und zu veröffentlichen.
 1. Diese *Vorschläge* können dann kommentiert werden, und nach zwei Wochen Beratungen kann *Abstimmung* aktiviert werden, um unter den Projekten mit einem Budget-Ausgabensystem zu wählen.
-1. Die Teilnehmer können dann zu einem öffentlichen *Meeting* eingeladen werden, um die Ergebnisse auszuwerten.
-1. Eine Prüfung *Befragung* kann nachträglich für diejenigen durchgeführt werden, die nicht an der *Besprechung* teilnehmen konnten.
-1. Schließlich kann die *Verantwortbarkeit* Komponente aktiviert werden, um den Ausführungsgrad der ausgewählten Projekte zu überwachen.
+1. Die Teilnehmenden können dann zu einer öffentlichen *Veranstaltung* eingeladen werden, um die Ergebnisse auszuwerten.
+1. Eine Bewertungs*umfrage* kann nachträglich für diejenigen durchgeführt werden, die nicht an der *Veranstaltung* teilnehmen konnten.
+1. Schliesslich kann die *Rechenschaftspflicht*-Komponente aktiviert werden, um den Ausführungsgrad der ausgewählten Projekte zu überwachen, und Personen können sie kommentieren.
 
 == Zeige Komponenten: Karten
 
 Komponentenartikel haben ihre individuelle Seite, werden aber auch als *Karten* auf der gesamten Plattform angezeigt.
 
 [#card-anatomy-fig]
-._Decidim's Vorschlag Karte anatomy._
+._Anatomie von Decidims Vorschlagskarte._
 image::card-anatomy.png[]

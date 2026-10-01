@@ -22,11 +22,11 @@ image::spaces/assemblies/assembly_members_list.png[Assembly members administrati
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Icona d'edició]
 |Edit
 |To edit this member fields.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Icona d'eliminació]
 |Delete
 |To delete this member.
 |===
@@ -69,11 +69,11 @@ For instance, if you have two members, "Member a" with weight "10" and "Member b
 
 |Designation date
 |Required
-|When this person or group was assigned as a member of this assembly. Expected format: dd/mm/yyyy.
+|When this person or group was assigned as a member of this assembly. Format esperat: dd/mm/aaaa.
 
 |Ceased date
 |Optional
-|When this person or group ceased to be a member of this assembly. Expected format: dd/mm/yyyy.
+|When this person or group ceased to be a member of this assembly. Format esperat: dd/mm/aaaa.
 
 |Gender
 |Optional
@@ -81,7 +81,7 @@ For instance, if you have two members, "Member a" with weight "10" and "Member b
 
 |Birthday
 |Optional
-|When was this person born. Expected format: dd/mm/yyyy.
+|When was this person born. Format esperat: dd/mm/aaaa.
 
 |Birthplace
 |Optional

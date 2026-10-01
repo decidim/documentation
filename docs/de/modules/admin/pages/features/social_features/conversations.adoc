@@ -1,61 +1,61 @@
 = Unterhaltungen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-With conversations, participants can send private messages to another participant, a group of participants, or to user groups.
-Only the participants who are in the conversation can see each message.
+Mit Unterhaltungen können Teilnehmende private Nachrichten an eine andere teilnehmende Person, eine Gruppe von Teilnehmenden oder an Benutzergruppen senden.
+Nur die Teilnehmenden, die sich in der Unterhaltung befinden, können jede Nachricht sehen.
 
-NOTE: It's not possible to delete a conversation nor to edit a message in a conversation.
+NOTE: Es ist nicht möglich, eine Unterhaltung zu löschen oder eine Nachricht in einer Unterhaltung zu bearbeiten.
 
-=== How to find it?
+=== Wie findet man sie?
 
-As a signed in participant, you can access your conversations from two places:
+Als angemeldete teilnehmende Person können Sie von zwei Stellen aus auf Ihre Unterhaltungen zugreifen:
 
-. Click in your avatar in the header, and then click in the "Conversations" menu item
-. Click in the "Conversations" link in the footer, in the "My account" section
+. Klicken Sie in der Kopfzeile auf Ihren Avatar und anschliessend auf den Menüpunkt "Unterhaltungen"
+. Klicken Sie in der Fusszeile im Abschnitt "Mein Konto" auf den Link "Unterhaltungen"
 
 image::features/conversations/conversations_dropdown.png[Frontend user menu dropdown]
 
-If there are notifications, the participant sees a small badge next to their avatar, and in the dropdown menu.
+Wenn es Benachrichtigungen gibt, sieht die teilnehmende Person ein kleines Abzeichen neben ihrem Avatar sowie im Dropdown-Menü.
 
 == Konfiguration
 
-=== Start a conversation
+=== Eine Unterhaltung starten
 
-A participant can start a conversation with any participant or group registered on the platform.
+Eine teilnehmende Person kann eine Unterhaltung mit jeder auf der Plattform registrierten teilnehmenden Person oder Gruppe starten.
 
 image::features/conversations/conversations.png[Conversations list]
 
-There are two ways to start a conversation.
+Es gibt zwei Möglichkeiten, eine Unterhaltung zu starten.
 
-==== From a participant profile
+==== Über das Profil einer teilnehmenden Person
 
-. Go to the profile of the participant with who you want to start a conversation
-. Click the "Message" button
-. Write your message
+. Gehen Sie zum Profil der teilnehmenden Person, mit der Sie eine Unterhaltung starten möchten
+. Klicken Sie auf die Schaltfläche "Nachricht"
+. Schreiben Sie Ihre Nachricht
 
-image:features/conversations/profile.png[Participant profile]
+image:features/conversations/profile.png[Profil einer teilnehmenden Person]
 
-image:features/conversations/start_a_conversation_form.png[Start a conversation form]
+image:features/conversations/start_a_conversation_form.png[Formular zum Starten einer Unterhaltung]
 
-==== From the conversation page
+==== Über die Unterhaltungsseite
 
 image::features/conversations/conversation.png[Example of a conversation]
 
-. Click in your avatar in the header
-. Click in "Conversations"
-. Click on the "New conversation" button
-. Search the participants or group that you want to start a conversation with
-. Write your message
+. Klicken Sie in der Kopfzeile auf Ihren Avatar
+. Klicken Sie auf "Unterhaltungen"
+. Klicken Sie auf die Schaltfläche "Neue Unterhaltung"
+. Suchen Sie nach den Teilnehmenden oder der Gruppe, mit denen Sie eine Unterhaltung starten möchten
+. Schreiben Sie Ihre Nachricht
 
-NOTE: You can start a conversation with several participants, with a limit of 9 participants.
+NOTE: Sie können eine Unterhaltung mit mehreren Teilnehmenden starten, mit einer Begrenzung auf 9 Teilnehmende.
 
 image::features/conversations/new_conversation_modal.png[New conversation modal]
 
-=== Group conversations
+=== Gruppenunterhaltungen
 
-Just like with participants, it is possible to have conversations with groups.
+Genau wie mit Teilnehmenden ist es auch möglich, Unterhaltungen mit Gruppen zu führen.
 
-NOTE: To know more about user groups, read the xref:admin:features/participant_actions/group_profile.adoc[Group creation] article.
+NOTE: Um mehr über Benutzergruppen zu erfahren, lesen Sie den Artikel xref:admin:features/participant_actions/group_profile.adoc[Gruppenerstellung].
 
 image::features/conversations/group_conversations.png[Group conversations list]

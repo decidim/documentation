@@ -1,231 +1,231 @@
-= Participatory process creation
+= Erstellung eines Beteiligungsprozesses
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Participatory processes allows administrators to configure components in articulation with different participatory phases.
-To start creating a process, when on the process list, click the "New process" button at the top right of the page.
+Beteiligungsprozesse ermöglichen es Admins, Komponenten in Verbindung mit verschiedenen Beteiligungsphasen zu konfigurieren.
+Um mit der Erstellung eines Prozesses zu beginnen, klicken Sie in der Prozessliste oben rechts auf der Seite auf die Schaltfläche "Neuer Prozess".
 
-The process creation form is divided into different sections that are detailed in the sections below.
+Das Formular zur Prozesserstellung ist in verschiedene Abschnitte unterteilt, die im Folgenden näher beschrieben werden.
 
-Once you created a process, in the secondary navigation panel, you can see all the process configuration available:
+Sobald Sie einen Prozess erstellt haben, sehen Sie im sekundären Navigationspanel alle verfügbaren Prozesskonfigurationen:
 
-* xref:admin:spaces/processes/process_creation.adoc[About this process]: here you can access and edit all the fields from the creation form.
-* xref:admin:spaces/processes/landing_page.adoc[Landing page]
-* xref:admin:spaces/processes/phases.adoc[Phases]
-* xref:admin:spaces/processes/components.adoc[Components]
-* xref:admin:spaces/processes/categories.adoc[Categories]
-* xref:admin:spaces/processes/attachments.adoc[Attachments]
-* xref:admin:spaces/processes/admins.adoc[admins]
-* xref:admin:spaces/processes/private_participants.adoc[Private Teilnehmer]
-* xref:admin:spaces/processes/moderations.adoc[Moderations]
+* xref:admin:spaces/processes/process_creation.adoc[Über diesen Prozess]: hier können Sie auf alle Felder des Erstellungsformulars zugreifen und sie bearbeiten.
+* xref:admin:spaces/processes/landing_page.adoc[Startseite]
+* xref:admin:spaces/processes/phases.adoc[Phasen]
+* xref:admin:spaces/processes/components.adoc[Komponenten]
+* xref:admin:spaces/processes/categories.adoc[Kategorien]
+* xref:admin:spaces/processes/attachments.adoc[Anhänge]
+* xref:admin:spaces/processes/admins.adoc[Prozess-Admins]
+* xref:admin:spaces/processes/private_participants.adoc[Private Teilnehmende]
+* xref:admin:spaces/processes/moderations.adoc[Moderationen]
 
 == Konfiguration
 
-=== General information
+=== Allgemeine Informationen
 
-This section allows to provide a general description about the process, mainly a title, URL, and description.
+Dieser Abschnitt ermöglicht es, eine allgemeine Beschreibung des Prozesses anzugeben, hauptsächlich einen Titel, eine URL und eine Beschreibung.
 
 image::spaces/processes/processes_new_form_general_info.png[New participatory process form general info section]
 
-.Neues Teilnahme-Prozess-Formular: Allgemeine Informationen
+.Neues Beteiligungsprozess-Formular: Allgemeine Informationen
 [cols="20h,10h,~,~"]
 |===
-|Feld |Typ |Beschreibung |Visibility
+|Feld |Typ |Beschreibung |Sichtbarkeit
 
 |Titel
 |Benötigt
-|Titel des partizipativen Prozesses. For instance, "Participatory Budgeting 2020"
-|Visible in the card of the process on the homepage, the processes index, the navigation, and the "Hero image and CTA" landing page block.
+|Titel des partizipativen Prozesses. Zum Beispiel "Partizipatives Budget 2020"
+|Sichtbar auf der Karte des Prozesses auf der Startseite, in der Prozessübersicht, in der Navigation und im Inhaltsblock "Banner-Bild und Handlungsaufforderung" der Startseite.
 
 |Untertitel
 |Benötigt
 |Untertitel. Zum Beispiel "Lassen Sie uns unsere Prioritäten gemeinsam festlegen"
-|Visible in the "Hero image and CTA" landing page block.
+|Sichtbar im Inhaltsblock "Banner-Bild und Handlungsaufforderung" der Startseite.
 
-|Bestellposition
+|Reihenfolge
 |Benötigt
-|Determines the order of the process when displayed in the processes index or homepage.
-|N/A
+|Bestimmt die Reihenfolge des Prozesses bei der Anzeige im Prozessverzeichnis oder auf der Startseite.
+|Nicht zutreffend
 
 |URL Slug
 |Benötigt
 |URL-Slugs werden verwendet, um die URLs zu generieren, die auf diesen Prozess verweisen. Akzeptiert nur Buchstaben, Zahlen und Bindestriche und muss
 mit einem Buchstaben beginnen.
-|Visible in the URL of the participatory process, for example https://example.org/processes/participatory-budget-2020.
+|Sichtbar in der URL des Beteiligungsprozesses, zum Beispiel https://example.org/processes/participatory-budget-2020.
 
 |Hashtag
 |Optional
-|Hashtag redirecting to the X social network.
-|Visible in the "Hero image and CTA" landing page block.
+|Hashtag, der auf das soziale Netzwerk X verweist.
+|Sichtbar im Inhaltsblock "Banner-Bild und Handlungsaufforderung" der Startseite.
 
 |Kurze Beschreibung
 |Benötigt
-|A short explanation of what's the participatory process about.
-|Visible in the "Main data" landing page block.
+|Eine kurze Erklärung, worum es beim Beteiligungsprozess geht.
+|Sichtbar im Inhaltsblock "Hauptdaten" der Startseite.
 
 |Beschreibung
 |Benötigt
-|A detailed explanation of what's the participatory process about.
-|Visible in the "Main data" landing page block.
+|Eine ausführliche Erklärung, worum es beim Beteiligungsprozess geht.
+|Sichtbar im Inhaltsblock "Hauptdaten" der Startseite.
 
 |Mitteilung
 |Optional
-|The text you enter here is shown to the user right below the process information.
-|Visible in the "Announcement" landing page block.
+|Der hier eingegebene Text wird den Nutzenden direkt unterhalb der Prozessinformationen angezeigt.
+|Sichtbar im Inhaltsblock "Mitteilung" der Startseite.
 |===
 
 === Dauer
 
-This section allows to provide information about the process start and end dates.
-It can be enabled on the landing page with the "Phase & duration" landing page block.
+Dieser Abschnitt ermöglicht es, Informationen zu den Start- und Enddaten der Konferenz anzugeben.
+Es kann auf der Startseite mit dem Startseiten-Block "Phase & Dauer" aktiviert werden.
 
 image::spaces/processes/processes_new_form_duration.png[New participatory process form duration section]
 
-.Neues Teilnahme-Prozess-Formular: Dauer
+.Neues Beteiligungsprozess-Formular: Dauer
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Startdatum
 |Optional
-|Wenn dieser Prozess beginnt. Sie haben ein Kalender-Widget zum Auswählen des Tages. Erwartetes Format: dd/mm/yyy
+|Wenn dieser Prozess beginnt. Sie haben ein Kalender-Widget zum Auswählen des Tages. Erwartetes Format: dd/mm/yyyy
 
 |Enddatum
 |Optional
-|Wenn dieser Prozess beginnt. Sie haben ein Kalender-Widget zum Auswählen des Tages. Erwartetes Format: dd/mm/yyy
+|Wenn dieser Prozess beginnt. Sie haben ein Kalender-Widget zum Auswählen des Tages. Erwartetes Format: dd/mm/yyyy
 |===
 
-=== Images
+=== Bilder
 
 image::spaces/processes/processes_new_form_images.png[New participatory process form images section]
 
-.Neues Teilnahme-Prozess-Formular: Bilder
+.Neues Beteiligungsprozess-Formular: Bilder
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Home-Bild
 |Optional
-|Image used in presentation cards of this process. Anleitung für Datei: Muss ein Bild oder ein Dokument sein.
-Für Bilder verwenden Sie vorzugsweise Landschaftsbilder, der Dienst bewirtschaftet das Bild. Maximum file size: 10 MB
+|Bild, das in Präsentationskarten dieses Prozesses verwendet wird. Anleitung für Datei: Muss ein Bild oder ein Dokument sein.
+Für Bilder verwenden Sie vorzugsweise Bilder im Querformat, der Dienst beschneidet das Bild. Maximale Dateigrösse: 10 MB
 |===
 
 === Metadaten
 
-This section allows to provide meta information about the process.
-It can be enabled on the landing page with the "Metadata" landing page block.
+Dieser Abschnitt ermöglicht es, Metainformationen zum Prozess anzugeben.
+Sie kann auf der Startseite über den Inhaltsblock "Metadaten" aktiviert werden.
 
 image::spaces/processes/processes_new_form_metadata.png[New participatory process form metadata section]
 
-.Neues partizipatorisches Prozessformular: Metadaten
+.Neues Beteiligungsprozess-Formular: Metadaten
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Promoter-Gruppe
 |Optional
-|If a specific group is at the origin of the process, like a city direction, an association committee, etc.
+|Falls eine bestimmte Gruppe am Ursprung des Prozesses steht, wie z. B. eine städtische Abteilung, ein Vereinsvorstand usw.
 
 |Organisationsbereich
 |Optional
-|The organization domain or category, if it's relevant.
+|Der Tätigkeitsbereich oder die Kategorie der Organisation, falls relevant.
 
-|Bereichsmetadaten
+|Themenmetadaten
 |Optional
-|Metadata on the process scope, if it's relevant.
+|Metadaten zum Geltungsbereich des Prozesses, falls relevant.
 
 |Wer beteiligt sich
 |Optional
-|Who are the authorized participants, who can participate to the process.
+|Wer die berechtigten Teilnehmenden sind, die am Prozess teilnehmen können.
 
 |Was beschlossen wird
 |Optional
-|The issue of the process, the object of what is decided.
+|Das Thema des Prozesses, also der Gegenstand der Entscheidung.
 
 |Wie wird es beschlossen
 |Optional
-|The decision making process.
+|Der Entscheidungsprozess.
 |===
 
-=== Filters
+=== Filter
 
-This section determines the filters available in the process, in the different components.
-Filters can then be enabled and configured in each components.
+Dieser Abschnitt bestimmt die im Prozess verfügbaren Filter in den verschiedenen Komponenten.
+Filter können anschliessend in jeder Komponente aktiviert und konfiguriert werden.
 
 image::spaces/processes/processes_new_form_filters.png[New participatory process form filters section]
 
-.Neues Teilnahme-Prozess-Formular: Filter
+.Neues Beteiligungsprozess-Formular: Filter
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
-|Bereiche aktiviert
+|Themen aktiviert
 |Optional
-|Aktivieren, wenn Sie die Bereichsfilterung in diesem Prozess verwenden möchten.
+|Aktivieren, wenn Sie die Themenfilterung in diesem Prozess verwenden möchten.
+
+|Thema
+|Optional
+|Zu welchem xref:admin:settings/scopes.adoc[Thema] dieser Prozess gehört.
+
+|Themenfilter-Tiefe
+|Optional
+|Die Tiefe des Themenfilters einschränken. Dies ist relevant, wenn Sie komplexe Beziehungen bei untergeordneten Themen haben (wie eine Matroschka).
+Wenn Sie zum Beispiel verschachtelte Themen Grossmutter -> Mutter -> Kind haben, können Sie mit dieser Einstellung das Thema Mutter auswählen,
+      sodass Teilnehmende nur zwischen den Unterthemen Kind filtern können. Dies wäre zum Beispiel der Fall, wenn Sie
+      Provinzen -> Städte -> Bezirke haben und der Prozess sich auf eine bestimmte Stadt bezieht.
 
 |Bereich
 |Optional
-|Which xref:admin:settings/scopes.adoc[Scope] does this process belongs to.
-
-|Reichweite Filtertiefe
-|Optional
-|Restrict the scope filter depth. This is relevant if you have complex relations in Scopes children (like a Russian Doll).
-For instance if you have Grandmother -> Mother -> Child nested scopes, this setting allows you to choose the Mother scope,
-so the participants can only filter between the Child sub-scopes. This would be the case for instance if you have
-Provinces -> Cities -> Districts, and the process is about a particular City.
-
-|Fläche
-|Optional
-|Which xref:admin:settings/areas.adoc[Area] does this process belongs to.
+|Zu welchem xref:admin:settings/areas.adoc[Bereich] dieser Prozess gehört.
 |===
 
-=== Visibility
+=== Sichtbarkeit
 
-This section allows administrators to configure the process placement in the different pages and its publicity or no.
+Dieser Abschnitt ermöglicht es Admins, die Platzierung des Prozesses auf den verschiedenen Seiten sowie dessen Öffentlichkeit zu konfigurieren.
 
 image::spaces/processes/processes_new_form_visibility.png[New participatory process form visibility section]
 
-.Neues partizipatorisches Prozessformular: Sichtbarkeit
+.Neues Beteiligungsprozess-Formular: Sichtbarkeit
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Prozessgruppe
 |Optional
-|Enables to group multiple processes together. Check xref:admin:spaces/processes/groups.adoc[Process Groups] to know more.
+|Ermöglicht das Gruppieren mehrerer Prozesse. Weitere Informationen finden Sie unter xref:admin:spaces/processes/groups.adoc[Prozessgruppen].
 
 |Privater Raum
 |Optional
-|Check this if the process should only be accessible by xref:admin:spaces/processes/private_participants.adoc[Private Participants].
+|Aktivieren Sie dies, wenn der Prozess nur für xref:admin:spaces/processes/private_participants.adoc[private Teilnehmende] zugänglich sein soll.
 
 |Beworben
 |Optional
-|Check if you want the process to have more visibility in the Process public list and the "Highlighted processes" content block
-in the xref:admin:settings/homepage.adoc[Homepage] configuration.
+|Aktivieren Sie dies, wenn der Prozess mehr Sichtbarkeit in der öffentlichen Prozessliste und im Inhaltsblock "Hervorgehobene Beteiligungsprozesse"
+      in der Konfiguration der xref:admin:settings/homepage.adoc[Startseite] haben soll.
 |===
 
-=== Verwandte Prozesse
+=== Ähnliche Prozesse
 
-This section allows to create relations between processes. It's different from processes groups.
-It can be enabled on the landing page with the "Related processes" landing page block.
+Dieser Abschnitt ermöglicht es, Beziehungen zwischen Prozessen herzustellen. Dies unterscheidet sich von Prozessgruppen.
+Es kann auf der Startseite mit dem Startseiten-Block "Ähnliche Prozesse" aktiviert werden.
 
 image::spaces/processes/processes_new_form_related_processes.png[New participatory process form Related processes section]
 
-.New participatory process form: Related processes
+.Formular für neuen Beteiligungsprozess: Ähnliche Prozesse
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
-|Verwandte Prozesse
+|Ähnliche Prozesse
 |Optional
 |Wählen Sie andere Beteiligungsprozesse, die mit diesem verwandt sind.
 |===
 
-=== Other
+=== Andere
 
-This section is empty, unless an administrator already created xref:admin:spaces/processes/types.adoc[Process Types].
-If so, you should be able to select a process type to categorize the process.
-Participants are then able to filter processes in the processes index with those types.
+Dieser Abschnitt ist leer, sofern nicht bereits ein Admin xref:admin:spaces/processes/types.adoc[Prozesstypen] erstellt hat.
+Falls doch, sollten Sie einen Prozesstyp auswählen können, um den Prozess zu kategorisieren.
+Teilnehmende können dann Prozesse im Prozessverzeichnis anhand dieser Typen filtern.
 
 image::spaces/processes/process_types_edit_process.png[Choose a process type when editing a process]
 
