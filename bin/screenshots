@@ -1,0 +1,76 @@
+#!/usr/bin/env bash
+#
+# Take the documentation screenshots defined in shots.yml using shot-scraper.
+#
+# The first run bootstraps a local Python virtualenv with shot-scraper and its
+# Chromium browser, and creates an authentication state for the Decidim Nightly
+# admin (see bin/screenshots-login.py). Everything is cached under .cache/ and
+# .auth/ (both gitignored).
+#
+# Usage:
+#   bin/screenshots                  Take every shot in shots.yml
+#   bin/screenshots -o out.png       Pass arguments through to `shot-scraper multi`
+#   bin/screenshots --refresh-auth   Force a new admin login before shooting
+#
+# The stored admin session is validated before shooting and refreshed
+# automatically when it has expired (Nightly invalidates sessions often).
+#
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+cd "$REPO_ROOT"
+
+VENV_DIR=".cache/screenshots-venv"
+SHOT_SCRAPER="$VENV_DIR/bin/shot-scraper"
+AUTH_FILE=".auth/nightly.json"
+CONFIG="shots.yml"
+
+refresh_auth=false
+if [[ "${1:-}" == "--refresh-auth" ]]; then
+  refresh_auth=true
+  shift
+fi
+
+ensure_shot_scraper() {
+  if [[ -x "$SHOT_SCRAPER" ]]; then
+    return
+  fi
+
+  echo "Setting up shot-scraper in $VENV_DIR ..." >&2
+  python3 -m venv "$VENV_DIR" 2>/dev/null || true
+  if [[ ! -x "$VENV_DIR/bin/pip" ]]; then
+    rm -rf "$VENV_DIR"
+    echo "Installing python3-venv ..." >&2
+    sudo apt-get update -qq
+    sudo apt-get install -y -qq python3-venv
+    python3 -m venv "$VENV_DIR"
+  fi
+
+  "$VENV_DIR/bin/pip" install --quiet --upgrade pip shot-scraper
+  "$SHOT_SCRAPER" install
+
+  # Chromium needs a set of system libraries that are not part of the browser
+  # bundle. Installing them requires root; skip silently when unavailable.
+  if command -v sudo >/dev/null 2>&1; then
+    sudo "$VENV_DIR/bin/playwright" install-deps chromium >/dev/null 2>&1 || true
+  fi
+}
+
+ensure_shot_scraper
+
+if ! $refresh_auth; then
+  if [[ ! -f "$AUTH_FILE" ]]; then
+    refresh_auth=true
+  elif ! "$VENV_DIR/bin/python" "$SCRIPT_DIR/screenshots-login.py" --check "$AUTH_FILE" >/dev/null 2>&1; then
+    echo "Stored admin session expired, signing in again ..." >&2
+    refresh_auth=true
+  fi
+fi
+
+if $refresh_auth; then
+  echo "Creating admin authentication state at $AUTH_FILE ..." >&2
+  "$VENV_DIR/bin/python" "$SCRIPT_DIR/screenshots-login.py" "$AUTH_FILE"
+fi
+
+exec "$SHOT_SCRAPER" multi "$CONFIG" --retina --fail-on-error -a "$AUTH_FILE" "$@"
