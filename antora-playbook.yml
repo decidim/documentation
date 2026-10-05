@@ -29,8 +29,7 @@ content:
       branches: [develop]
 ui:
   bundle:
-    url: https://github.com/decidim/documentation-antora-ui/releases/download/v0.4/ui-bundle.zip
-    snapshot: true
+    url: ./ui
   supplemental_files: ./supplemental_ui
 antora:
   extensions:
