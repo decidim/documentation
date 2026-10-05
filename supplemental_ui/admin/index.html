@@ -27,9 +27,21 @@
       css.rel = 'stylesheet';
       css.href = `${window.ADMIN_DIR}admin.css`;
       document.head.appendChild(css);
-      const js = document.createElement('script');
-      js.src = `${window.ADMIN_DIR}admin.js`;
-      document.body.appendChild(js);
+      const scripts = [
+        'upload-block.js',
+        'adoc-config.js',
+        'adoc-transforms.js',
+        'adoc-preview.js',
+        'adoc-control.js',
+        'admin.js',
+      ];
+      for (const file of scripts) {
+        const js = document.createElement('script');
+        js.src = `${window.ADMIN_DIR}${file}`;
+        // Keep dynamic scripts ordered so each module's dependencies exist.
+        js.async = false;
+        document.body.appendChild(js);
+      }
     </script>
   </body>
 </html>

@@ -4,3 +4,8 @@ static_files:
 - admin/config.yml
 - admin/admin.css
 - admin/admin.js
+- admin/adoc-config.js
+- admin/adoc-control.js
+- admin/adoc-preview.js
+- admin/adoc-transforms.js
+- admin/upload-block.js
