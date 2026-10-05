@@ -15,3 +15,9 @@ article.doc {
 .line-through {
   text-decoration: line-through;
 }
+
+/* Results are scoped to the current language book, so the component header
+   added by the lunr search UI is redundant. */
+.search-result-component-header {
+  display: none;
+}
