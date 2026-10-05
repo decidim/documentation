@@ -1,0 +1,36 @@
+#!/bin/env bash
+
+# Validates the AsciiDoc content without generating the website.
+#
+# Antora reports AsciiDoc errors and unresolved xrefs, includes and images while
+# it converts the documents, before any file is published. bin/validate-antora.js
+# stops the generator right after that step, so this script surfaces the same
+# messages that fail `npm run build` while leaving build/site untouched.
+#
+# --log-failure-level=warn makes Antora exit non-zero when it logs a warning or
+# an error, which keeps the "fail on any build output" behaviour of bin/test.
+
+logfile=$(mktemp)
+
+if ! npm run prebuild > /dev/null; then
+  echo "prebuild failed, aborting validation" >&2
+  rm -f "$logfile"
+  exit 1
+fi
+
+npx antora \
+  --extension ./bin/validate-antora.js \
+  --log-failure-level=warn \
+  antora-playbook.yml > "$logfile" 2>&1
+status=$?
+
+git restore antora-playbook.yml
+
+if [ "$status" -ne 0 ]; then
+  cat "$logfile"
+  rm -f "$logfile"
+  exit 1
+fi
+
+rm -f "$logfile"
+exit 0

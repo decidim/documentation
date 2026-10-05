@@ -25,6 +25,10 @@ cd documentation
 # Install Antora and dependencies
 npm install
 
+# Validate the AsciiDoc content (xrefs, includes, images, syntax) without
+# generating the website
+npm run lint
+
 # Build the static site
 npm run build
 
