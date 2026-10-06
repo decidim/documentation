@@ -12,7 +12,7 @@ exec('git restore antora-playbook.yml', (error, stdout, stderr) => {
     console.log(stdout);
 });
 
-const wellKnownDir = path.join(__dirname, 'build/site/.well-known');
+const wellKnownDir = path.join(__dirname, '../build/site/.well-known');
 const sourceFile = path.join(__dirname, '../.well-known/funding-manifest-urls');
 const destinationFile = path.join(wellKnownDir, 'funding-manifest-urls');
 
