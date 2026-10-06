@@ -5,6 +5,7 @@
     "prebuild": "./bin/prebuild.js",
     "build": "antora antora-playbook.yml $@",
     "postbuild": "./bin/postbuild.js",
+    "update:crowdin": "node bin/update-crowdin-map.js",
     "lint": "./bin/lint",
     "test": "./bin/test",
     "dev:admin": "serve build/site -l 8080"
