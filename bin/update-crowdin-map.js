@@ -103,15 +103,17 @@ async function listFiles() {
 // Builds the locale map from the project's target languages
 //
 // The site identifies locales by their two-letter code (the Antora component
-// names), while the Crowdin editor expects the full language identifier, such
-// as "es-ES" or "pt-BR".
+// names). The Crowdin editor expects a source-target pair, e.g. "en-de" or
+// "en-es", built from the project's source language and the target's
+// two-letter code.
 //
+// @param {string} source - The project's source language id, e.g. "en"
 // @param {Array<object>} targetLanguages - The project's target languages
-// @returns {object} A map of two-letter code to Crowdin language id
-function buildLocales(targetLanguages) {
+// @returns {object} A map of two-letter code to Crowdin editor language pair
+function buildLocales(source, targetLanguages) {
   return (targetLanguages || []).reduce((locales, language) => {
     const code = language.twoLettersCode || language.id;
-    if (!(code in locales)) locales[code] = language.id;
+    if (!(code in locales)) locales[code] = source ? `${source}-${code}` : language.id;
     return locales;
   }, {});
 }
@@ -243,7 +245,7 @@ function writeMap(map) {
 
   const projectResponse = await apiGet(`/projects/${PROJECT_ID}`);
   const project = projectResponse.data || {};
-  const locales = buildLocales(project.targetLanguages);
+  const locales = buildLocales(project.sourceLanguageId, project.targetLanguages);
 
   const allFiles = await listFiles();
   const branchFiles = allFiles.filter((file) => fileBranch(file.path) === BRANCH);

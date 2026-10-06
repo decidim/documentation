@@ -2,12 +2,12 @@
   "project": "decidim-documentation",
   "source": "en",
   "locales": {
-    "ro": "ro",
-    "fr": "fr",
-    "es": "es-ES",
-    "ca": "ca",
-    "de": "de",
-    "pt": "pt-BR"
+    "ro": "en-ro",
+    "fr": "en-fr",
+    "es": "en-es",
+    "ca": "en-ca",
+    "de": "en-de",
+    "pt": "en-pt"
   },
   "files": {
     "modules/admin/pages/components.adoc": 6628,
