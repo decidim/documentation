@@ -40,8 +40,15 @@ async function findExtractedUi (playbook) {
   const bundle = playbook.ui && playbook.ui.bundle
   if (bundle && bundle.url && bundle.url.includes('://')) return undefined
   const startDir = playbook.dir || process.cwd()
+  // A local bundle URL can point at a directory that also matches UI_RX (for
+  // example the repository's own `ui/`). Never delete the bundle itself: only
+  // the copy Antora extracts from it is a disposable side effect.
+  const bundlePath = bundle && bundle.url ? ospath.resolve(startDir, bundle.url) : undefined
   const entries = await fsp.readdir(startDir).catch(() => [])
-  return entries.filter((entry) => UI_RX.test(entry)).map((entry) => ospath.join(startDir, entry))
+  return entries
+    .filter((entry) => UI_RX.test(entry))
+    .map((entry) => ospath.join(startDir, entry))
+    .filter((entryPath) => entryPath !== bundlePath)
 }
 
 async function removeExtractedUi (paths) {
