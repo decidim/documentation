@@ -2,3 +2,5 @@ node_modules/
 build/
 .cache
 .devcontainer/devcontainer.local.json
+.env
+.auth/

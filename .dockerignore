@@ -5,3 +5,5 @@ tmp
 .cache
 .devcontainer
 docs
+.env
+.auth
