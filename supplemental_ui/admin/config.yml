@@ -2,6 +2,7 @@ backend:
   name: github
   repo: decidim/documentation
   branch: develop
+  base_url: https://auth.deploy.decidim.org
 
 publish_mode: editorial_workflow
 site_url: https://docs.decidim.org
