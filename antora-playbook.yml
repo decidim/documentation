@@ -34,6 +34,7 @@ ui:
 antora:
   extensions:
     - require: '@antora/lunr-extension'
+    - require: ./bin/cms-edit-url-extension.js
 asciidoc:
   attributes:
     kroki-fetch-diagram: true
