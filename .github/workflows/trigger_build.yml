@@ -6,10 +6,10 @@ jobs:
     name: Trigger build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
         with:
           token: ${{ secrets.WORKFLOW_PAT }}
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - uses: stefanzweifel/git-auto-commit-action@v7
         with:
           skip_dirty_check: true
           commit_message: "Trigger build"
