@@ -58,17 +58,9 @@ image::components/proposals/component_02.png[Add component form]
 |===
 |Campo |tipo |Descrição:
 
-|Âmbitos ativados
+|Select filters for the component
 |Opcional
-|Verifique se você quer ter filtragem de escopos neste componente.
-
-|Âmbitos ativados
-|Opcional
-|Check if you want to have Scopes filtering available in this component.
-
-|Escopo
-|Opcional
-|Which xref:admin:settings/scopes.adoc[Scope] does this component belongs to.
+|Select if you want to use filters in this component.
 
 |Vote limit per participant
 |Opcional
@@ -139,10 +131,6 @@ and the first image appears on the card.
 |Opcional
 |Whether you want to be able to set permissions for every proposals.
 
-|Rascunhos colaborativos ativados
-|Opcional
-|Check to enable xref:components/proposals/special_configurations/collaborative_drafts.adoc[collaborative drafts] in proposals.
-
 |Textos participativos ativados
 |Opcional
 |Check to enable xref:components/proposals/special_configurations/participatory_texts.adoc[participatory texts] in proposals.
@@ -187,13 +175,13 @@ image::components/proposals/component_03.png[Add component form]
 |===
 |Campo |tipo |Descrição:
 
-|Endossos ativados
+|Likes enabled
 |Opcional
 |To enable participants to show public support for these proposals, with a "Like" button.
 
-|Endossos bloqueados
+|Likes blocked
 |Opcional
-|Check for participants to be able to see the existing endorsements but not make any new one.
+|Check for participants to be able to see the existing likes but not make any new one.
 
 |Votes enabled
 |Opcional
@@ -236,14 +224,6 @@ are shown sorted by random, and if the votes are blocked, then they are sorted b
 |Anúncio
 |Opcional
 |A general announcement visible on the proposals list page for this phase.
-
-|Hashtags adicionadas a todas as propostas
-|Opcional
-|Automatically add hashtags to every proposal.
-
-|Hashtags sugeridas aos participantes para novas propostas
-|Opcional
-|Suggest hashtags to participants creating new proposals. Os usuários podem selecionar mais de uma hashtag.
 |===
 
 == Exemplos
