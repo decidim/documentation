@@ -14,7 +14,7 @@ window.Admin.UploadBlock = (() => {
   const serialize = (refs) =>
     refs.length
       ? `\n${UPLOAD_REF}\n${refs
-          .map(({ fileName, blobUrl }) => `// image:${fileName} blob:${blobUrl}`)
+          .map(({ target, blobUrl }) => `// image:${target} blob:${blobUrl}`)
           .join('\n')}`
       : '';
 
@@ -24,7 +24,7 @@ window.Admin.UploadBlock = (() => {
 
     block.split('\n').forEach((line) => {
       const match = line.match(uploadLinePattern);
-      if (match) refs.push({ fileName: match[1], blobUrl: match[2] });
+      if (match) refs.push({ target: match[1], blobUrl: match[2] });
     });
 
     return { body: strip(text), refs };

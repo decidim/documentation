@@ -149,10 +149,34 @@ window.Admin.AdocControl = (() => {
       this.commit(Transforms.insertLine(this.value(), this.textarea.selectionStart, text));
     },
 
+    // The Antora module whose images the field's media folder holds, so a picked
+    // image can be turned into the module-relative target Antora expects.
+    moduleMedia() {
+      const field = this.props.field;
+      const mediaFolder = (field?.get?.('media_folder') || '').replace(/\/+$/, '');
+      const publicFolder = (field?.get?.('public_folder') || mediaFolder).replace(/\/+$/, '');
+      const match = publicFolder.match(/\/modules\/([^/]+)\/assets\/images$/);
+      return { module: match ? match[1] : 'root' };
+    },
+
+    // Convert a picked asset's public path to the target Antora resolves against
+    // the module's assets/images. A path in another module is prefixed with that
+    // module (`ROOT:` or `<module>:`); anything else (e.g. an external URL) is
+    // used as is.
+    antoraImageTarget(value) {
+      const path = String(value);
+      const match = path.match(/\/modules\/([^/]+)\/assets\/images\/(.+)$/);
+      if (!match) return path;
+      const [, module, relative] = match;
+      const current = this.moduleMedia().module;
+      if (module.toLowerCase() === current.toLowerCase()) return relative;
+      return `${module}:${relative}`;
+    },
+
     // Open Sveltia's built-in file picker (existing file, upload, URL or stock
-    // photo). Every image is inserted with the canonical Antora
-    // `image::ROOT:<filename>[Alt text]` target, so the editor and the saved
-    // source stay consistent for existing and newly uploaded files alike.
+    // photo). Images are inserted with a module-relative Antora target such as
+    // `image::participants/foo.png[Alt text]`, so uploads stay in the current
+    // module's assets/images folder, consistent with the existing documentation.
     //
     // A fresh upload additionally registers a hidden upload reference. Sveltia
     // only uploads files whose blob: URL appears in the saved value, so the
@@ -162,17 +186,23 @@ window.Admin.AdocControl = (() => {
       this.saveSelection();
       const picked = await this.props.pickFile({ kind: 'image', multiple: false });
       if (!picked) return;
-      const { fileName, refs } = this.resolvePickedImage(picked);
-      this.insertAtCursor(`image::ROOT:${fileName}[Alt text]`, refs);
+      const { target, refs } = this.resolvePickedImage(picked);
+      this.insertAtCursor(`image::${target}[Alt text]`, refs);
     },
 
-    // A freshly uploaded file is returned with a blob: URL; an existing asset or
-    // external URL comes back as a public path. Only blob URLs need uploading.
+    // A freshly uploaded file is returned with a blob: URL and is stored at the
+    // module's images root, so it is referenced by file name. An existing asset
+    // or external URL comes back as a public path whose subfolder is preserved.
+    // Only blob URLs need uploading.
     resolvePickedImage(picked) {
       const isUpload = typeof picked.value === 'string' && picked.value.startsWith('blob:');
-      const fileName = isUpload && picked.file ? picked.file.name : basename(picked.value);
-      const refs = isUpload ? [{ fileName, blobUrl: picked.value }] : [];
-      return { fileName, refs };
+      const target = isUpload
+        ? picked.file
+          ? picked.file.name
+          : basename(picked.value)
+        : this.antoraImageTarget(picked.value);
+      const refs = isUpload ? [{ target, blobUrl: picked.value }] : [];
+      return { target, refs };
     },
 
     insertLink() {

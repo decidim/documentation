@@ -39,6 +39,8 @@ collections:
       - name: body
         label: AsciiDoc
         widget: adoc
+        media_folder: /docs/en/modules/ROOT/assets/images
+        public_folder: /docs/en/modules/ROOT/assets/images
   - name: admin
     label: Admin
     label_singular: Page
@@ -62,6 +64,8 @@ collections:
       - name: body
         label: AsciiDoc
         widget: adoc
+        media_folder: /docs/en/modules/admin/assets/images
+        public_folder: /docs/en/modules/admin/assets/images
   - name: contribute
     label: Contribute
     label_singular: Page
@@ -81,6 +85,8 @@ collections:
       - name: body
         label: AsciiDoc
         widget: adoc
+        media_folder: /docs/en/modules/contribute/assets/images
+        public_folder: /docs/en/modules/contribute/assets/images
   - name: features
     label: Features
     label_singular: Page
@@ -100,6 +106,8 @@ collections:
       - name: body
         label: AsciiDoc
         widget: adoc
+        media_folder: /docs/en/modules/features/assets/images
+        public_folder: /docs/en/modules/features/assets/images
   - name: publications
     label: Publications
     label_singular: Page
@@ -119,6 +127,8 @@ collections:
       - name: body
         label: AsciiDoc
         widget: adoc
+        media_folder: /docs/en/modules/publications/assets/images
+        public_folder: /docs/en/modules/publications/assets/images
   - name: releases
     label: Releases
     label_singular: Page
@@ -138,6 +148,8 @@ collections:
       - name: body
         label: AsciiDoc
         widget: adoc
+        media_folder: /docs/en/modules/releases/assets/images
+        public_folder: /docs/en/modules/releases/assets/images
   - name: understand
     label: Understand
     label_singular: Page
@@ -157,6 +169,8 @@ collections:
       - name: body
         label: AsciiDoc
         widget: adoc
+        media_folder: /docs/en/modules/understand/assets/images
+        public_folder: /docs/en/modules/understand/assets/images
   - name: whitepaper
     label: Whitepaper
     label_singular: Page
@@ -176,6 +190,8 @@ collections:
       - name: body
         label: AsciiDoc
         widget: adoc
+        media_folder: /docs/en/modules/whitepaper/assets/images
+        public_folder: /docs/en/modules/whitepaper/assets/images
 
   # The site navigation lives in a single AsciiDoc file rather than a folder of
   # entries. The custom `adoc` format keeps the whole file in `body`; the
