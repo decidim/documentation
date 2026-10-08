@@ -58,17 +58,9 @@ image::components/proposals/component_02.png[Add component form]
 |===
 |Feld |Typ |Beschreibung
 
-|Themen aktiviert
+|Select filters for the component
 |Optional
-|Aktivieren, wenn die Themenfilterung in dieser Komponente erfolgen soll.
-
-|Themen aktiviert
-|Optional
-|Aktivieren Sie dies, wenn Sie die Filterung nach Themen in dieser Komponente verfügbar haben möchten.
-
-|Thema
-|Optional
-|Zu welchem xref:admin:settings/scopes.adoc[Thema] diese Komponente gehört.
+|Select if you want to use filters in this component.
 
 |Abstimmungslimit pro teilnehmender Person
 |Optional
@@ -139,10 +131,6 @@ und das erste Bild erscheint auf der Karte.
 |Optional
 |Ob Sie in der Lage sein möchten, Berechtigungen für jeden Vorschlag festzulegen.
 
-|Gemeinschaftliche Entwürfe aktiviert
-|Optional
-|Aktivieren, um xref:components/proposals/special_configurations/collaborative_drafts.adoc[kollaborative Entwürfe] bei Vorschlägen zu aktivieren.
-
 |Partizipative Texte aktiviert
 |Optional
 |Aktivieren, um xref:components/proposals/special_configurations/participatory_texts.adoc[partizipative Texte] bei Vorschlägen zu aktivieren.
@@ -187,13 +175,13 @@ image::components/proposals/component_03.png[Add component form]
 |===
 |Feld |Typ |Beschreibung
 
-|Unterstützungen aktiviert
+|Likes enabled
 |Optional
 |Um Teilnehmenden zu ermöglichen, mit einer Schaltfläche "Gefällt mir" öffentlich Unterstützung für diese Vorschläge zu zeigen.
 
-|Unterstützungen blockiert
+|Likes blocked
 |Optional
-|Aktivieren Sie dies, damit Teilnehmende die bestehenden Unterstützungen sehen, aber keine neuen abgeben können.
+|Check for participants to be able to see the existing likes but not make any new one.
 
 |Abstimmung aktiviert
 |Optional
@@ -236,14 +224,6 @@ angezeigt werden, wenn die Abstimmung aktiviert ist, und nach den meisten Stimme
 |Mitteilung
 |Optional
 |Eine allgemeine Ankündigung, die auf der Vorschlagslisten-Seite für diese Phase sichtbar ist.
-
-|Hashtags zu allen Vorschlägen hinzugefügt
-|Optional
-|Fügt automatisch Hashtags zu jedem Vorschlag hinzu.
-
-|Den Teilnehmenden für neue Vorschläge vorgeschlagene Hashtags
-|Optional
-|Schlägt Teilnehmenden, die neue Vorschläge erstellen, Hashtags vor. Teilnehmende können mehrere Hashtags auswählen.
 |===
 
 == Beispiele
