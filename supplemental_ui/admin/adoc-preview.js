@@ -84,8 +84,11 @@ window.Admin.Preview = (() => {
     );
     const body = strip(source).replace(IMAGE_TARGET_PATTERN, (match, prefix, target) => {
       if (prefix && URI_SCHEME.test(prefix)) return match;
+      // Key the pending lookup by the target as written, so a bare upload never
+      // stands in for another module's prefixed reference of the same name.
+      const key = prefix ? `${prefix}:${target}` : target;
       const mod = prefix || module;
-      const url = pending.get(target) || resolveImageUrl(getAsset, moduleImageFolder(mod), target);
+      const url = pending.get(key) || resolveImageUrl(getAsset, moduleImageFolder(mod), target);
       return `image::${url || `${moduleImagesDir(mod)}/${target}`}[`;
     });
 
