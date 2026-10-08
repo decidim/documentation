@@ -1,0 +1,82 @@
+# Screenshots for the Decidim documentation, taken with shot-scraper.
+#
+# Regenerate them with:
+#
+#     bin/screenshots
+#
+# The script bootstraps shot-scraper, authenticates against the Decidim
+# Nightly admin and runs `shot-scraper multi shots.yml`. `output` paths are
+# relative to the repository root. Add one entry per image; all entries share
+# the same authenticated browser session.
+#
+# Component screenshots use the "citizenhousing" assembly rather than a
+# participatory process: assemblies have no phases, so the component form shows
+# a single "Default step settings" section instead of one per step.
+
+# Proposals component: the "specific configurations" (global settings).
+- output: docs/en/modules/admin/assets/images/components/proposals/component_specific_conf.png
+  url: https://nightly.decidim.org/admin/assemblies/citizenhousing/components/9/edit?locale=en
+  selectors:
+    - .participatory_texts_enabled_container
+    - .amendments_enabled_container
+  padding: 12
+  wait_for: document.querySelector(".participatory_texts_enabled_container")
+  javascript: |
+    // Remove the fixed action bar, then neutralize the sticky table header
+    // Decidim renders for the taxonomy filters, so neither overlaps the shot.
+    document.querySelectorAll(".item__edit-sticky").forEach(function (el) {
+      el.remove();
+    });
+    document.querySelectorAll("*").forEach(function (el) {
+      if (getComputedStyle(el).position === "sticky") el.style.position = "static";
+    });
+
+# "Add component" forms. These are generic (they do not depend on existing
+# content), so they are captured from the assembly admin. The
+# `.item_show__wrapper` includes the page title and the whole settings form.
+- output: docs/en/modules/admin/assets/images/components/accountability/component.png
+  url: https://nightly.decidim.org/admin/assemblies/citizenhousing/components/new?type=accountability&locale=en
+  selector: .item_show__wrapper
+  width: 1440
+  wait_for: document.querySelector("#new_component")
+  # Decidim renders a fixed action bar at the bottom of the viewport; remove it
+  # so it does not appear in the middle of the full-form screenshot.
+  javascript: &remove_action_bar |
+    document.querySelectorAll(".item__edit-sticky").forEach(function (el) {
+      el.remove();
+    });
+
+- output: docs/en/modules/admin/assets/images/components/blog/component.png
+  url: https://nightly.decidim.org/admin/assemblies/citizenhousing/components/new?type=blogs&locale=en
+  selector: .item_show__wrapper
+  width: 1440
+  wait_for: document.querySelector("#new_component")
+  javascript: *remove_action_bar
+
+- output: docs/en/modules/admin/assets/images/components/debates/component.png
+  url: https://nightly.decidim.org/admin/assemblies/citizenhousing/components/new?type=debates&locale=en
+  selector: .item_show__wrapper
+  width: 1440
+  wait_for: document.querySelector("#new_component")
+  javascript: *remove_action_bar
+
+- output: docs/en/modules/admin/assets/images/components/meetings/component.png
+  url: https://nightly.decidim.org/admin/assemblies/citizenhousing/components/new?type=meetings&locale=en
+  selector: .item_show__wrapper
+  width: 1440
+  wait_for: document.querySelector("#new_component")
+  javascript: *remove_action_bar
+
+- output: docs/en/modules/admin/assets/images/components/page/component.png
+  url: https://nightly.decidim.org/admin/assemblies/citizenhousing/components/new?type=pages&locale=en
+  selector: .item_show__wrapper
+  width: 1440
+  wait_for: document.querySelector("#new_component")
+  javascript: *remove_action_bar
+
+- output: docs/en/modules/admin/assets/images/components/surveys/component.png
+  url: https://nightly.decidim.org/admin/assemblies/citizenhousing/components/new?type=surveys&locale=en
+  selector: .item_show__wrapper
+  width: 1440
+  wait_for: document.querySelector("#new_component")
+  javascript: *remove_action_bar
