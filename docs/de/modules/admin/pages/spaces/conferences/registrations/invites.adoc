@@ -1,24 +1,24 @@
 = Einladungen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Administratoren können Teilnehmer zur Konferenz einladen.
-They can invite existing participants, with an account on the platform, as well as people without account.
-Inviting a participant sends an email to the account email address, encouraging the participant to register for the conference.
+Admins können Teilnehmende zur Konferenz einladen.
+Sie können bestehende Teilnehmende mit einem Konto auf der Plattform sowie Personen ohne Konto einladen.
+Das Einladen einer teilnehmenden Person sendet eine E-Mail an die E-Mail-Adresse des Kontos und ermutigt die Person, sich für die Konferenz anzumelden.
 
 == Konfiguration
 
-=== Manage invites
+=== Einladungen verwalten
 
-To access the invites configuration, click in the secondary navigation panel on the "Invites" item.
+Um auf die Konfiguration der Einladungen zuzugreifen, klicken Sie im sekundären Navigationspanel auf den Punkt "Einladungen".
 
 image::spaces/conferences/invites.png[Conferences user invites in backend]
 
-You can filter the invites and search by invitee name or email.
+Sie können die Einladungen filtern und nach Name oder E-Mail der eingeladenen Person suchen.
 
-=== Send an invite
+=== Eine Einladung senden
 
-To invite a participant, click the "Invite participant" button in the top right of the page.
+Um eine teilnehmende Person einzuladen, klicken Sie oben rechts auf der Seite auf die Schaltfläche "Teilnehmende einladen".
 
 image::spaces/conferences/invite_participant_form.png[Invite a participant form]
 
@@ -29,21 +29,21 @@ image::spaces/conferences/invite_participant_form.png[Invite a participant form]
 
 |Teilnehmertyp
 |Benötigt
-|Whether or not this invited person already has an account.
+|Ob diese eingeladene Person bereits über ein Konto verfügt oder nicht.
 
 |Name
-|Required if the invitee is not already a participant.
+|Erforderlich, wenn die eingeladene Person noch keine teilnehmende Person ist.
 |Name der eingeladenen Person.
 
 |E-Mail
-|Required if the invitee is not already a participant.
+|Erforderlich, wenn die eingeladene Person noch keine teilnehmende Person ist.
 |E-Mail der eingeladenen Person.
 
-|Benutzer
-|Erforderlich, wenn es ein existierender Teilnehmer ist.
-|Type at least three characters to search for a participant account.
+|Nutzende
+|Erforderlich, wenn es sich um eine bereits teilnehmende Person handelt.
+|Geben Sie mindestens drei Zeichen ein, um nach einem Teilnehmendenkonto zu suchen.
 
 |xref:admin:spaces/conferences/registrations/types.adoc[Registrierungstyp]
 |Benötigt
-|The xref:admin:spaces/conferences/registrations/types.adoc[registration type] this invitation covers.
+|Der xref:admin:spaces/conferences/registrations/types.adoc[Registrierungstyp], den diese Einladung abdeckt.
 |===

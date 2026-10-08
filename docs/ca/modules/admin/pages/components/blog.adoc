@@ -126,7 +126,7 @@ image:components/blog/new_post.png[New post form]
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Icona d'edició]
 |Edit
 |Edit this post.
 
@@ -134,11 +134,11 @@ image:components/blog/new_post.png[New post form]
 |Folder
 |For classifying attachments.
 
-|image:icons/action_attachments.png[Attachments icon]
-|Attachments
+|image:icons/action_attachments.png[Icona de fitxers adjunts]
+|Fitxers adjunts
 |Add documents related to the post.
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Icona de previsualització]
 |Preview
 |See how it's shown in the frontend to participants.
 
@@ -146,7 +146,7 @@ image:components/blog/new_post.png[New post form]
 |Permissions
 |Handle the authorizations needed to comment or endorse this specific blog post.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Icona d'eliminació]
 |Delete
 |Delete this post.
 |===

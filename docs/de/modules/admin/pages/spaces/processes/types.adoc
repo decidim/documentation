@@ -1,26 +1,26 @@
 = Prozessarten
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 In einigen Fällen ist es notwendig, partizipatorische Prozesse mit mehr als nur xref:spaces/processes/groups.adoc[Process Groups] zu organisieren.
-This is where process types can be useful, and add a layer of categorization.
-Participants are then able to filter processes by the process types you created.
+Hier können Prozesstypen nützlich sein und eine zusätzliche Kategorisierungsebene hinzufügen.
+Teilnehmende können Prozesse dann nach den von Ihnen erstellten Prozesstypen filtern.
 
-NOTE: Process types work similarly to xref:admin:spaces/assemblies.adoc#_assemblies_types[Assembly types].
+NOTE: Prozesstypen funktionieren ähnlich wie xref:admin:spaces/assemblies.adoc#_assemblies_types[Versammlungstypen].
 
 == Konfiguration
 
-=== Manage process types
+=== Prozesstypen verwalten
 
-To access the process types list, click the "Manage" button on the top right of the page, and click the "Process type" menu item.
+Um auf die Liste der Prozesstypen zuzugreifen, klicken Sie auf die Schaltfläche "Verwalten" oben rechts auf der Seite und dann auf den Menüpunkt "Prozesstyp".
 
 image::spaces/processes/process_types_list.png[Backend process types menu item]
 
-=== Create a process type
+=== Einen Prozesstyp erstellen
 
-Click the "New process type" button on the top right of the page.
+Klicken Sie auf die Schaltfläche "Neuer Prozesstyp" oben rechts auf der Seite.
 
-image:spaces/processes/process_types_form.png[Process type creation form]
+image:spaces/processes/process_types_form.png[Formular zur Erstellung eines Prozesstyps]
 
 .Neues partizipatorisches Prozesstyp-Formular: Allgemeine Informationen
 [cols="20h,10h,~"]
@@ -32,15 +32,15 @@ image:spaces/processes/process_types_form.png[Process type creation form]
 |Titel des partizipatorischen Prozesstyps.
 |===
 
-=== Add process type to a process
+=== Prozesstyp zu einem Prozess hinzufügen
 
-To relate processes to process types, in the edition page of a process, select the process type under the section labelled Other.
+Um Prozesse mit Prozesstypen zu verknüpfen, wählen Sie auf der Bearbeitungsseite eines Prozesses den Prozesstyp im mit Andere bezeichneten Abschnitt aus.
 
 image::spaces/processes/process_types_edit_process.png[Choose a process type when editing a process]
 
-=== Filter by process types
+=== Nach Prozesstypen filtern
 
-If there is at least one process type defined and related to a process, a filter is displayed at the left of the processes list
-in the participant interface, allowing filtering of Processes.
+Wenn mindestens ein Prozesstyp definiert und mit einem Prozess verknüpft ist, wird links neben der Prozessliste
+in der Teilnehmendenoberfläche ein Filter angezeigt, der das Filtern von Prozessen ermöglicht.
 
 image::spaces/processes/process_types_filter.png[Process types filter in the processes index]

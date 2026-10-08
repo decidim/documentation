@@ -1,39 +1,39 @@
-= Manage initiatives
+= Initiativen verwalten
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-When a participant creates an initiative, it doesn't only create a resource like a proposal, it creates a whole space,
-allowing administrators to manage in the administration:
+Wenn eine teilnehmende Person eine Initiative erstellt, wird nicht nur eine Ressource wie ein Vorschlag erstellt, sondern ein ganzer Raum,
+      den Admins in der Verwaltung verwalten können:
 
-* xref:admin:spaces/initiatives/admin_manage/committee.adoc[Committee members]
-* xref:admin:spaces/initiatives/admin_manage/components.adoc[Components]
-* xref:admin:spaces/initiatives/admin_manage/attachments.adoc[Attachments]
-* xref:admin:spaces/initiatives/admin_manage/moderations.adoc[Moderations]
-* xref:admin:spaces/initiatives/admin_manage/answer.adoc[Answer an initiative]
+* xref:admin:spaces/initiatives/admin_manage/committee.adoc[Ausschussmitglieder]
+* xref:admin:spaces/initiatives/admin_manage/components.adoc[Komponenten]
+* xref:admin:spaces/initiatives/admin_manage/attachments.adoc[Anhänge]
+* xref:admin:spaces/initiatives/admin_manage/moderations.adoc[Moderationen]
+* xref:admin:spaces/initiatives/admin_manage/answer.adoc[Eine Initiative beantworten]
 
-NOTE: If you didn't configure it, once an initiative is created, it gets the Meetings and Page component enabled by
-default. Ask your instance implementer to modify this parameter if you don't need it, or want other components enabled by default.
+NOTE: Wenn Sie dies nicht konfiguriert haben, werden bei der Erstellung einer Initiative standardmässig die Komponenten Veranstaltungen und Seite
+      aktiviert. Bitten Sie die für die Implementierung Ihrer Instanz zuständige Person, diesen Parameter anzupassen, wenn Sie ihn nicht benötigen oder standardmässig andere Komponenten aktiviert haben möchten.
 
 image::spaces/initiatives/initiative_admin_show.png[Admin initiative show page]
 
 == Konfiguration
 
-=== Manage initiatives
+=== Initiativen verwalten
 
-After the initiative was sent to technical validation by a participant, an administrator can view all the initiatives in the administration panel.
+Nachdem die Initiative von einer teilnehmenden Person zur technischen Validierung eingereicht wurde, kann ein Admin alle Initiativen im Verwaltungspanel einsehen.
 
 image::spaces/initiatives/initiative_admin_list.png[Admin initiatives list]
 
-You can find all the processes on this list with:
+Sie finden alle Initiativen in dieser Liste mit:
 
-* *ID*: identification number of the initiative.
-* *Initiatives*: title of the initiative.
-* *Signatures*: sum of online and in-person signatures.
-* *Created at*: date of creation of the initiative.
-* *Published at*: date of publication of the initiative.
+* *ID*: Identifikationsnummer der Initiative.
+* *Initiativen*: Titel der Initiative.
+* *Unterschriften*: Summe der Online- und Vor-Ort-Unterschriften.
+* *Erstellt am*: Erstellungsdatum der Initiative.
+* *Veröffentlicht am*: Veröffentlichungsdatum der Initiative.
 
-You can filter and sort this list by clicking the "Filter" button and the columns headers.
-You can also search for initiatives by their title in the search bar.
+Sie können diese Liste filtern und sortieren, indem Sie auf die Schaltfläche "Filter" und die Spaltenüberschriften klicken.
+Sie können auch in der Suchleiste nach Initiativen anhand ihres Titels suchen.
 
 image::spaces/initiatives/initiative_list_filters.png[Initiatives list filtered]
 
@@ -44,42 +44,42 @@ image::spaces/initiatives/initiative_list_filters.png[Initiatives list filtered]
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
-|To edit the initiative, its attachments, committee members, components, etc.
+|Um die Initiative, ihre Anhänge, Komiteemitglieder, Komponenten usw. zu bearbeiten.
 
-|image:icons/action_answer.png[Answer icon]
+|image:icons/action_answer.png[Symbol: Antworten]
 |Antwort
-|Allows to xref:admin:spaces/initiatives/admin_manage/answer.adoc[Answer an initiative].
+|Ermöglicht es, xref:admin:spaces/initiatives/admin_manage/answer.adoc[eine Initiative zu beantworten].
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
-|To see how the initiative looks in the frontend to participants.
+|Um zu sehen, wie die Initiative Teilnehmenden im Frontend angezeigt wird.
 
-|image:icons/action_permissions.png[Permissions icon]
+|image:icons/action_permissions.png[Symbol: Berechtigungen]
 |Berechtigungen
-|To edit permissions on this initiative.
+|Um die Berechtigungen dieser Initiative zu bearbeiten.
 |===
 
-=== Edit an initiative
+=== Eine Initiative bearbeiten
 
-When clicking the "Edit" button or the initiative title on the initiative list in administration, the administrator is
-redirected to the initiative edit form, and can see that the secondary navigation bar on the left also allows to manage
-the initiative committee members, its components, attachments and reported content.
+Beim Klicken auf die Schaltfläche "Bearbeiten" oder den Initiativentitel in der Initiativenliste der Verwaltung wird der Admin
+      zum Bearbeitungsformular der Initiative weitergeleitet und kann sehen, dass die sekundäre Navigationsleiste auf der linken Seite auch die Verwaltung
+      der Komiteemitglieder der Initiative, ihrer Komponenten, Anhänge und gemeldeten Inhalte ermöglicht.
 
 image::spaces/initiatives/initiative_edit_form_admin.png[Initiative edit form in administration]
 
-On the edition form, the administrator can review and modify the initiative's title, description, scope, area, etc.
-They can also send the initiative to technical validation.
+Im Bearbeitungsformular kann der Admin den Titel, die Beschreibung, das Thema, den Bereich usw. der Initiative prüfen und ändern.
+Er kann die Initiative auch zur technischen Validierung einreichen.
 
 === Initiative veröffentlichen
 
-Once an initiative is sent to technical validation, the administrator can decide to publish it or discard it.
-To publish an initiative in technical validation, go on the initiative edition page and click the "Publish" button.
+Sobald eine Initiative zur technischen Validierung eingereicht wurde, kann der Admin entscheiden, sie zu veröffentlichen oder zu verwerfen.
+Um eine Initiative in technischer Validierung zu veröffentlichen, gehen Sie zur Bearbeitungsseite der Initiative und klicken Sie auf die Schaltfläche "Veröffentlichen".
 
 === Signaturen exportieren
 
-After the initiative started to get signatures, administrators can export the signatures in the initiative edit form, in CSV or in .pdf.
+Nachdem die Initiative begonnen hat, Unterschriften zu sammeln, können Admins die Unterschriften im Bearbeitungsformular der Initiative im CSV- oder PDF-Format exportieren.
 
 image::spaces/initiatives/initiative_actions_export.png[Initiative actions with Export to PDF]
 

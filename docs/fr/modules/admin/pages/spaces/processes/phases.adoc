@@ -25,6 +25,10 @@ En cliquant sur le lien pour l'étape active, il est possible consulter la descr
 
 image::spaces/processes/process_phases.png[Process phases explanation]
 
+[NOTE]
+Phases can be automatically changed if the scheduled task `decidim_participatory_processes:change_active_step` is configured.
+If you want to manage them manually, then the implementer/operator of the installation needs to disable this scheduled task server-side.
+
 == Configuration
 
 === Gérer les étpaes
@@ -41,7 +45,7 @@ image::spaces/processes/process_phases_list.png[Phases of a participatory proces
 |Icône |Nom |Définition |Condition
 
 |image:icons/action_edit.png[Modifier l'icône]
-|Editer
+|Modifier
 |Modifier cette étape.
 |Toujours disponible
 
@@ -51,7 +55,7 @@ image::spaces/processes/process_phases_list.png[Phases of a participatory proces
 |Disponible uniquement pour les étapes inactives.
 
 |image:icons/action_delete.png[Supprimer l'icône]
-|Supprimez
+|Supprimer
 |Supprimer cette étape.
 |Toujours disponible
 |===

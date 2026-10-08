@@ -1,82 +1,82 @@
 = Komponenten
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-As explained in the xref:admin:index.adoc[introduction page], to understand how Decidim works, you need to distinguish between *spaces* and *components*.
-The participatory spaces are the channels that citizens can participate through when public decisions are being taken, whereas participatory components are
-mechanisms that enable interaction between users of the platform and the various participatory spaces.
+Wie auf der xref:admin:index.adoc[Einführungsseite] erklärt, müssen Sie, um zu verstehen, wie Decidim funktioniert, zwischen *Räumen* und *Komponenten* unterscheiden.
+Die partizipativen Räume sind die Kanäle, über die die Bevölkerung teilnehmen kann, wenn öffentliche Entscheidungen getroffen werden, während partizipative Komponenten
+Mechanismen sind, die die Interaktion zwischen Nutzenden der Plattform und den verschiedenen partizipativen Räumen ermöglichen.
 
-All components can be enabled in each space, for example you can enable three Proposals components in a same participatory process, or having all the
-components enabled in an assembly space.
+Alle Komponenten können in jedem Raum aktiviert werden; Sie können zum Beispiel drei Vorschläge-Komponenten in demselben Beteiligungsprozess aktivieren oder alle
+Komponenten in einem Versammlungsraum aktivieren.
 
-partielle$components_list.adoc[]
+include::partial$components_list.adoc[]
 
-=== How to find it?
+=== Wie findet man sie?
 
-To configure components, click the *Components* item in any participatory space.
+Um Komponenten zu konfigurieren, klicken Sie in einem beliebigen partizipativen Raum auf den Punkt *Komponenten*.
 
 image::spaces/components/components.png[Components of space]
 
-There, you are able to manage the already added components, configure them, add new ones, etc.
+Dort können Sie die bereits hinzugefügten Komponenten verwalten, konfigurieren, neue hinzufügen usw.
 
 == Konfiguration
 
-=== Manage components
+=== Komponenten verwalten
 
-You can find all the components on the list in the administration panel, with:
+Sie finden alle Komponenten in der Liste im Verwaltungspanel mit:
 
-* *Component name*: title of the component, given when creating or editing it.
-* *Component type*: type of the component.
-* *Component scope*: in a same space, components can have different scopes.
+* *Komponentenname*: Titel der Komponente, bei der Erstellung oder Bearbeitung vergeben.
+* *Komponententyp*: Typ der Komponente.
+* *Thema der Komponente*: Innerhalb desselben Raums können Komponenten unterschiedliche Themen haben.
 
-=== Create a component
+=== Eine Komponente erstellen
 
-To configure a new component, click the *Add component* from the upper right part of the screen and select the type of
-component you want.
+Um eine neue Komponente zu konfigurieren, klicken Sie oben rechts auf dem Bildschirm auf *Komponente hinzufügen* und wählen Sie den gewünschten
+Komponententyp aus.
 
 image::spaces/components/components_new_dropdown.png[Add a component in a space]
 
 === Aktionen
 
-.Components actions in component list
+.Anhangsaktionen in der Anhangsliste
 [cols="10h,20h,~"]
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Manage icon]
+|image:icons/action_edit.png[Symbol: Verwalten]
 |Verwalten
-|Um alle Ressourcen innerhalb einer Komponente zu verwalten. Zum Beispiel alle Vorschläge einer Vorschlagskomponente, die Meetings
-in einer Meeting Komponente, etc.
+|Um alle Ressourcen innerhalb einer Komponente zu verwalten. Zum Beispiel alle Vorschläge einer Vorschlagskomponente, die Veranstaltungen
+in einer Veranstaltungskomponente, etc.
 
-|image:icons/action_share.png[Share icon]
+|image:icons/action_share.png[Symbol: Teilen]
 |Teilen
-|Privat teilen, bevor diese Komponente veröffentlicht wird. Useful for getting reviews from other people of your organization.
+|Privat teilen, bevor diese Komponente veröffentlicht wird. Nützlich, um Rückmeldungen von anderen Personen Ihrer Organisation zu erhalten.
 
-|image:icons/action_configure.png[Configure icon]
+|image:icons/action_configure.png[Symbol: Konfigurieren]
 |Konfigurieren
-|To configure a component with specific rules, for instance, in the case of Meetings:
-are comments enabled, participants can create meetings or not, etc.
+|Um eine Komponente mit spezifischen Regeln zu konfigurieren, zum Beispiel bei Veranstaltungen:
+sind Kommentare aktiviert, können Teilnehmende Veranstaltungen erstellen oder nicht usw.
 
-|image:icons/action_publish.png[Publish icon]
+|image:icons/action_publish.png[Symbol: Veröffentlichen]
 |Veröffentlichen
-|Eine Komponente veröffentlichen. This means that the component is then visible to the public.
+|Eine Komponente veröffentlichen. Das bedeutet, dass die Komponente dann für die Öffentlichkeit sichtbar ist.
 
-|image:icons/action_unpublish.png[Unpublish icon]
+|image:icons/action_unpublish.png[Symbol: Veröffentlichung rückgängig machen]
 |Zurückziehen
-|Um eine Komponente zurückzuziehen. This means that the component is then invisible to the public.
+|Um eine Komponente zurückzuziehen. Das bedeutet, dass die Komponente dann für die Öffentlichkeit unsichtbar ist.
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Symbol: Vorschau]
 |Vorschau
-|To preview the space before it's published.
+|Um den Raum vor der Veröffentlichung als Vorschau anzusehen.
 
-|image:icons/action_permissions.png[Permissions icon]
+|image:icons/action_permissions.png[Symbol: Berechtigungen]
 |Berechtigungen
-|To configure which xref:customize:authorizations.adoc[Authorization] is necessary to make certain actions in
-this component. For instance, in the case of Proposals, which Verification is needed to create a new proposal or
-to give supports.
+|Um zu konfigurieren, welche xref:customize:authorizations.adoc[Berechtigung] erforderlich ist, um bestimmte Aktionen in
+dieser Komponente durchzuführen. Zum Beispiel im Fall von Vorschlägen, welche Verifizierung erforderlich ist, um einen neuen Vorschlag zu erstellen oder
+Unterstützung zu geben.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
-|Diese Komponente löschen. If there are content inside, most of the components don't let you delete them so it doesn't break
-relations with other resources. In diesen Fällen ist es empfehlenswert, die Komponente einfach zurückzuziehen.
+|Diese Komponente löschen. Wenn Inhalte vorhanden sind, lassen die meisten Komponenten das Löschen nicht zu, damit
+Beziehungen zu anderen Ressourcen nicht unterbrochen werden. In diesen Fällen ist es empfehlenswert, die Komponente einfach zurückzuziehen.
 |===

@@ -133,7 +133,7 @@ there isn't any time frame.
 |Required if the debate type is Finite
 |Expected format: dd/mm/yyyy hh:ii
 
-|Category
+|Categoria
 |Optional
 |Which category has the debate. Used for filtering in the debates list.
 
@@ -178,7 +178,7 @@ NOTE: When participants can create debates, administrators have less actions ava
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Icona d'edició]
 |Edit
 |Edit form for a debate.
 
@@ -186,15 +186,15 @@ NOTE: When participants can create debates, administrators have less actions ava
 |Close
 |Close form for a debate. For adding conclusions.
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Icona de previsualització]
 |Preview
-|To see how it's shown in the frontend to participants.
+|Per veure com es mostra a la interfície als participants.
 
 |image:icons/action_permissions.png[Permissions icon]
 |Permissions
 |To handle the authorizations needed to create or endorse debates.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Icona d'eliminació]
 |Delete
 |To delete this debate.
 |===

@@ -1,34 +1,34 @@
 = Fingerabdruck
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Although the platform should show the xref:admin:features/transparency/versions.adoc[Versions] for almost all of the contents, it'd still be possible
-for a system administrator to manipulate the content by editing the database directly.
+Obwohl die Plattform für fast alle Inhalte die xref:admin:features/transparency/versions.adoc[Versionen] anzeigen sollte, wäre es für einen System-Admin
+dennoch möglich, den Inhalt durch direktes Bearbeiten der Datenbank zu manipulieren.
 
-Als Eindämmung dieses Risikos zeigt die Plattform einen Fingerabdruck für einige wichtige Bereiche, zum Beispiel ein Vorschlagsorgan und einen Titel.
+Als Eindämmung dieses Risikos zeigt die Plattform einen Fingerabdruck für einige wichtige Bereiche, zum Beispiel den Text eines Vorschlags und einen Titel.
 
-Its goal is to provide a way to give an informal "receipt" to a participant so they can detect tampering. Ein Fingerabdruck ist
-eine gehackte Darstellung des Inhalts. Es ist nützlich sicherzustellen, dass der Inhalt nicht manipuliert wurde, da eine einzelne Änderung
-zu einem völlig anderen Wert führen würde. It's calculated using a *SHA256 hashing algorithm*. Um es selbst mit
-zu replizieren, können Sie einen http://www.md5calc.com/sha256[MD5 Taschenrechner online] verwenden und die Quelldaten kopieren.
+Ziel ist es, eine Möglichkeit zu bieten, einer teilnehmenden Person eine informelle "Quittung" auszustellen, damit sie Manipulationen erkennen kann. Ein Fingerabdruck ist
+eine gehashte Darstellung des Inhalts. Es ist nützlich sicherzustellen, dass der Inhalt nicht manipuliert wurde, da eine einzelne Änderung
+zu einem völlig anderen Wert führen würde. Er wird mit einem *SHA256-Hashing-Algorithmus* berechnet. Um dies
+selbst zu replizieren, können Sie einen http://www.md5calc.com/sha256[MD5-Rechner online] verwenden und die Quelldaten kopieren.
 
 == Konfiguration
 
 === Fingerabdruck überprüfen
 
-. Go to the content for which you want to verify the fingerprint
-. Click in the "Check fingerprint" link at the bottom of the page
-. Copy the source field value
-. Go to a http://www.md5calc.com/sha256[MD5 calculator online] and copy-paste the source data
-. Check that the fingerprints are the same
+. Gehen Sie zu dem Inhalt, für den Sie den Fingerabdruck überprüfen möchten
+. Klicken Sie auf den Link "Fingerabdruck überprüfen" am Ende der Seite
+. Kopieren Sie den Wert des Quellfelds
+. Gehen Sie zu einem http://www.md5calc.com/sha256[Online-MD5-Rechner] und fügen Sie die Quelldaten per Copy-Paste ein
+. Überprüfen Sie, ob die Fingerabdrücke übereinstimmen
 
-image:features/fingerprint/content.png[Check fingerprint link in page bottom]
+image:features/fingerprint/content.png[Link zum Überprüfen des Fingerabdrucks am Seitenende]
 
 image::features/fingerprint/modal.png[Check fingerprint modal]
 
 image:features/fingerprint/md5calc.png[MD5calc.com screenshot]
 
-It's also possible to verify the fingerprint with other tools, such as the sha256sum command line tool.
+Es ist auch möglich, den Fingerabdruck mit anderen Werkzeugen zu überprüfen, wie zum Beispiel dem Kommandozeilen-Tool sha256sum.
 
 [source,bash]
 ----

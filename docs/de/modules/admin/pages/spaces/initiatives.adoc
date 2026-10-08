@@ -1,77 +1,77 @@
 = Initiativen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-An initiative is a specific type of participatory space, which can be created by any participant, independently
-of other channels or spaces.
-It works through the collection of online and/or in-person signatures for the organization to carry out a specific action, like
-modify a regulation, initiate a project, change the name of a department or a street, etc.
+Eine Initiative ist eine spezifische Art von partizipativem Raum, der von jeder teilnehmenden Person unabhängig
+      von anderen Kanälen oder Räumen erstellt werden kann.
+Sie funktioniert durch das Sammeln von Online- und/oder Vor-Ort-Unterschriften, damit die Organisation eine bestimmte Massnahme umsetzt, wie
+      das Ändern einer Vorschrift, das Initiieren eines Projekts, das Ändern des Namens eines Departements oder einer Strasse usw.
 
-The promoters of an initiative can define its objectives, gather support, debate, disseminate it and define meeting
-venues where signatures can be collected from the attendees or debates open to other participants.
+Die Initiierenden einer Initiative können deren Ziele festlegen, Unterstützung sammeln, debattieren, sie verbreiten und Veranstaltungsorte
+      festlegen, an denen Unterschriften von den Anwesenden gesammelt oder Debatten für andere Teilnehmende geöffnet werden können.
 
-NOTE: A lot of the initiatives behaviour and settings is configurable in the initiative
-xref:admin:initiatives_initializer.adoc[initializer]. Ask the organization implementer if you have some doubts regarding your organization
-configuration.
+NOTE: Ein Grossteil des Verhaltens und der Einstellungen von Initiativen ist im
+      xref:admin:initiatives_initializer.adoc[Initiative-Initializer] konfigurierbar. Wenden Sie sich an die für Ihre Organisation zuständige entwickelnde Person, falls Sie Zweifel bezüglich der Konfiguration
+      Ihrer Organisation haben.
 
-Examples of initiatives types:
+Beispiele für Initiativentypen:
 
-* To add an item to an assembly agenda
-* Einen partizipativen Prozess durchführen
-* Neue Baugruppe erstellen
+* Um einen Punkt zur Traktandenliste einer Versammlung hinzuzufügen
+* Einen Beteiligungsprozess durchführen
+* Eine neue Versammlung erstellen
 * Eine Verordnung genehmigen oder ändern
-* To call for assemblies
+* Um zu Versammlungen aufzurufen
 
-Initiatives are to be distinguished from the other spaces because they can be used as a participatory tool promoted *by participants*.
-In other words, the initiatives are mechanisms for *semi-direct democracy* through which participants can promote a certain
-action of common interest by collecting a specific number of signatures.
+Initiativen unterscheiden sich von den anderen Räumen dadurch, dass sie als partizipatives Instrument genutzt werden können, das *von Teilnehmenden* vorangetrieben wird.
+Mit anderen Worten sind Initiativen Mechanismen der *semidirekten Demokratie*, durch die Teilnehmende eine bestimmte
+      Massnahme von gemeinsamem Interesse vorantreiben können, indem sie eine bestimmte Anzahl von Unterschriften sammeln.
 
-The role of the platform’s administrator, then, is somewhat different from that of the other participation spaces, as
-the organization has to enable the participants and offer them the necessary technical support and advice.
+Die Rolle des Admins der Plattform unterscheidet sich daher etwas von der in den anderen Beteiligungsräumen, da
+      die Organisation die Teilnehmenden befähigen und ihnen die notwendige technische Unterstützung und Beratung anbieten muss.
 
-In this documentation section, you can find how to configure and manage all of those items:
+In diesem Abschnitt der Dokumentation finden Sie Informationen dazu, wie Sie all diese Elemente konfigurieren und verwalten:
 
-* xref:admin:spaces/initiatives/types.adoc[Initiatives types]
-* xref:admin:spaces/initiatives/initiative_creation.adoc[Initiative creation]
-** xref:admin:spaces/initiatives/author_manage/committee.adoc[Promoter's committee]
-** xref:admin:spaces/initiatives/author_manage/manage.adoc[Author actions]
-* xref:admin:spaces/initiatives/manage.adoc[Initiative management]
-** xref:admin:spaces/initiatives/admin_manage/committee.adoc[Committee members]
-** xref:admin:spaces/initiatives/admin_manage/components.adoc[Components]
-** xref:admin:spaces/initiatives/admin_manage/attachments.adoc[Attachments]
-** xref:admin:spaces/initiatives/admin_manage/moderations.adoc[Moderations]
-** xref:admin:spaces/initiatives/admin_manage/answer.adoc[Answer an initiative]
-* xref:admin:spaces/initiatives/sign.adoc[Sign an initiative]
+* xref:admin:spaces/initiatives/types.adoc[Initiativentypen]
+* xref:admin:spaces/initiatives/initiative_creation.adoc[Initiative erstellen]
+** xref:admin:spaces/initiatives/author_manage/committee.adoc[Initiativkomitee]
+** xref:admin:spaces/initiatives/author_manage/manage.adoc[Aktionen der Urheberschaft]
+* xref:admin:spaces/initiatives/manage.adoc[Initiativenverwaltung]
+** xref:admin:spaces/initiatives/admin_manage/committee.adoc[Ausschussmitglieder]
+** xref:admin:spaces/initiatives/admin_manage/components.adoc[Komponenten]
+** xref:admin:spaces/initiatives/admin_manage/attachments.adoc[Anhänge]
+** xref:admin:spaces/initiatives/admin_manage/moderations.adoc[Moderationen]
+** xref:admin:spaces/initiatives/admin_manage/answer.adoc[Eine Initiative beantworten]
+* xref:admin:spaces/initiatives/sign.adoc[Eine Initiative unterzeichnen]
 
-=== How to find it?
+=== Wie findet man sie?
 
-To access the initiatives panel, go in the administration panel and click the "Initiatives" item in the administration
-navigation bar.
+Um auf das Initiativen-Panel zuzugreifen, gehen Sie zum Verwaltungspanel und klicken Sie in der Verwaltungs-
+      Navigationsleiste auf den Punkt "Initiativen".
 
 image::spaces/initiatives/initiatives_menu.png[Access Initiatives panel]
 
-There, you are able to start configuring initiatives space, by:
+Dort können Sie mit der Konfiguration des Initiativenraums beginnen, indem Sie:
 
-. Creating xref:admin:spaces/initiatives/types.adoc[Initiatives types] and initiative type scopes
-. Configuring authorizations if needed
-. Manage participants initiatives
+. xref:admin:spaces/initiatives/types.adoc[Initiativentypen] und Initiativentyp-Themen erstellen
+. Bei Bedarf Berechtigungen konfigurieren
+. Initiativen von Teilnehmenden verwalten
 
 image::spaces/initiatives/initiatives_list_empty.png[Initiatives panel without initiatives]
 
-NOTE: At first, the list is empty and participants can't create initiatives.
-To do the initial setup of the initiative space, read the xref:admin:spaces/initiatives/types.adoc[Initiatives types] article.
+NOTE: Zu Beginn ist die Liste leer, und Teilnehmende können keine Initiativen erstellen.
+Um die anfängliche Einrichtung des Initiativenraums vorzunehmen, lesen Sie den Artikel xref:admin:spaces/initiatives/types.adoc[Initiativentypen].
 
-=== Initiatives life-cycle
+=== Lebenszyklus von Initiativen
 
-Initiatives pass through different steps, and follow a specific life-cycle:
+Initiativen durchlaufen verschiedene Schritte und folgen einem bestimmten Lebenszyklus:
 
-* *Created*: The author created the initiative, it's only visible by author, promoter committee members and administrators.
-* *Technical validation*: The initiative is ready for review by an administrator.
-* *Published*: An administrator reviewed the initiative and published it.
-* *Expired*: If no administrator published it before a time configured in the initiative initializer.
-* *Discarded*: If the initiative didn't pass the review by an administrator.
-* *Rejected*: If the initiative didn't receive enough signatures in the signature collection period.
-* *Accepted*: If the initiative received enough signatures in the signature collection period.
+* *Erstellt*: Die Urheberschaft hat die Initiative erstellt, sie ist nur für die Urheberschaft, Mitglieder des Initiativkomitees und Admins sichtbar.
+* *Technische Validierung*: Die Initiative ist bereit zur Prüfung durch einen Admin.
+* *Veröffentlicht*: Ein Admin hat die Initiative geprüft und veröffentlicht.
+* *Abgelaufen*: Falls kein Admin sie vor einem im Initiative-Initializer konfigurierten Zeitpunkt veröffentlicht hat.
+* *Verworfen*: Falls die Initiative die Prüfung durch einen Admin nicht bestanden hat.
+* *Abgelehnt*: Falls die Initiative im Zeitraum der Unterschriftensammlung nicht genügend Unterschriften erhalten hat.
+* *Akzeptiert*: Falls die Initiative im Zeitraum der Unterschriftensammlung genügend Unterschriften erhalten hat.
 
 [plantuml]
 @startuml
@@ -97,39 +97,39 @@ sonst (ja)
 endif
 @enduml
 
-Finally, these are all the relevant settings in every moment in the initiatives life cycle:
+Schliesslich sind dies alle relevanten Einstellungen zu jedem Zeitpunkt im Lebenszyklus von Initiativen:
 
 [plantuml]
 @startuml
-(*) --> "Create a new initiative"
-if "Has only one type?" then
---> [Yes] "Fill initiative form"
-else
---> [No] "Select initiative type"
---> "Fill initiative form"
-Endif
-partition Created {
-  if "Is the User a UserGroup?" then
-  --> [Yes] "Send to Technical Validation"
-  else
-  --> [No] Collect the minimum number of committee members
-  --> "Send to Technical Validation"
-  Endif
-}
-partition Validating {
-  if "Has passed the maximum time for validation (60 days by default)?" then
-    --> [Yes] "Expired"
-  else
-    --> [No] if "Is accepted by an administrator?" then
-      --> [No] "Discarded"
+      (*) --> "Eine neue Initiative erstellen"
+      if "Gibt es nur einen Typ?" then
+      --> [Yes] "Initiativformular ausfüllen"
       else
-      --> [Yes] "Publish"
-      endIf
-  endIf
-}
-partition Published {
-  --> "Signature process"
-  if "Has passed the configured time window for validation (60 days by default)?"
+      --> [No] "Initiativtyp auswählen"
+      --> "Initiativformular ausfüllen"
+      Endif
+      partition Erstellt {
+        if "Ist die Person eine Benutzergruppe?" then
+        --> [Yes] "Zur technischen Validierung senden"
+        else
+        --> [No] Mindestanzahl an Mitgliedern des Initiativkomitees sammeln
+        --> "Zur technischen Validierung senden"
+        Endif
+      }
+      partition Prüfung {
+        if "Wurde die maximale Zeit für die Validierung überschritten (standardmässig 60 Tage)?" then
+          --> [Yes] "Abgelaufen"
+        else
+          --> [No] if "Wurde sie von einem Admin akzeptiert?" then
+            --> [No] "Verworfen"
+            else
+            --> [Yes] "Veröffentlichen"
+            endIf
+        endIf
+      }
+      partition Veröffentlicht {
+        --> "Unterschriftenprozess"
+        if "Wurde das konfigurierte Zeitfenster für die Validierung überschritten (standardmässig 60 Tage)?"
     --> [Yes] "Abgelaufen"
   else
     --> [No] PDF in die Unterschriften
@@ -146,6 +146,6 @@ partition Published {
 
 == Beispiele
 
-* https://www.decidim.barcelona/initiatives[Barcelona city citizens initiatives]
-* https://petitions.assemblee-nationale.fr/initiatives[French national assembly petitions platform]
-* https://dekamer.mijnopinie.belgium.be/initiatives[Belgium national assembly petitions platform]
+* https://www.decidim.barcelona/initiatives[Bürgerinitiativen der Stadt Barcelona]
+* https://petitions.assemblee-nationale.fr/initiatives[Petitionsplattform der französischen Nationalversammlung]
+* https://dekamer.mijnopinie.belgium.be/initiatives[Petitionsplattform der belgischen Nationalversammlung]
