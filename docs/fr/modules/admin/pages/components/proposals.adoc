@@ -57,17 +57,9 @@ image::components/proposals/component_02.png[Add component form]
 |===
 |Champ |Type |Description
 
-|Portées activées
+|Select filters for the component
 |Facultatif
-|Cochez cette case si vous voulez que le filtrage des secteurs dans cette fonctionnalité.
-
-|Portées activées
-|Facultatif
-|Cocher cette case pour que le filtrage des Secteurs soit disponible dans cette fonctionnalité.
-
-|Secteur
-|Facultatif
-|Cette fonctionnalité appartient à xref:admin:settings/scopes.adoc[Secteur].
+|Select if you want to use filters in this component.
 
 |Limite de votes par utilisateur·ice
 |Facultatif
@@ -137,10 +129,6 @@ et la première image apparaît sur la carte.
 |Facultatif
 |Pour définir les autorisations de chaque proposition.
 
-|Brouillons collaboratifs activés
-|Facultatif
-|Cocher cette case pour activer xref:components/proposs/special_configurations/collaborative_drafts.adoc[collaboratifs] dans les propositions.
-
 |Textes participatifs activés
 |Facultatif
 |Cocher cette case pour activer xref:components/proposs/special_configurations/participatory_texts.adoc[textes participatifs] dans les propositions.
@@ -185,13 +173,13 @@ image::components/proposals/component_03.png[Add component form]
 |===
 |Champ |Type |Description
 
-|Soutiens activés
+|Likes enabled
 |Facultatif
 |Pour permettre aux participant·e·x·s de manifester leur soutien public à ces propositions, avec un bouton "J'aime".
 
-|Soutiens bloqués
+|Likes blocked
 |Facultatif
-|Vérifier que les participant·e·x·s soient en mesure de voir les soutiens existants mais ne pas faire de soutien supplémentaire.
+|Check for participants to be able to see the existing likes but not make any new one.
 
 |Activer le module de vote simple
 |Facultatif
@@ -234,14 +222,6 @@ sont affichées de manière aléatoire, et si les votes sont bloqués, alors ils
 |Annonce
 |Facultatif
 |Une annonce générale visible sur la page de la liste des propositions pour cette étape.
-
-|Hashtags ajoutés à toutes les propositions
-|Facultatif
-|Ajouter automatiquement les hashtags à chaque proposition.
-
-|Hashtags suggérés aux participant·e·x·s pour de nouvelles propositions
-|Facultatif
-|Suggérer des hashtags aux participant·e·x·s en créant de nouvelles propositions. Les participant·e·x·s peuvent sélectionner plus d'un hashtag.
 |===
 
 == Exemples
