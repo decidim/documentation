@@ -45,6 +45,14 @@ window.Admin.Preview = (() => {
     return `docs/en/modules/${dir}/assets/images`;
   };
 
+  // Built images directory Antora publishes a module's images under, regardless
+  // of the page's subdirectory. The ROOT module maps to the component root, so
+  // its images live at en/develop/_images rather than en/develop/root/_images.
+  const moduleImagesDir = (module) => {
+    const base = module === 'root' || module === 'ROOT' ? '/en/develop' : `/en/develop/${module}`;
+    return `${base}/_images`;
+  };
+
   // Resolve a stored image path to a URL Sveltia can serve in the admin. This matters because the
   // site is edited through the editorial workflow: a freshly uploaded image lives on the draft
   // branch, but the hard-coded built path (`/en/develop/.../_images/...`) only exists after
@@ -56,37 +64,37 @@ window.Admin.Preview = (() => {
     return typeof url === 'string' ? url : '';
   };
 
+  // An image macro target, optionally prefixed with a module (`ROOT:` or
+  // `<module>:`). The lookahead keeps external URLs such as `https://` out, and
+  // a URI scheme that survives it (e.g. `data:`) is left as is below.
+  const IMAGE_TARGET_PATTERN = /image::(?:([A-Za-z][\w-]*):(?!\/\/))?([^:\n\[\]]+)\[/g;
+  const URI_SCHEME = /^(?:https?|data|blob|file|mailto|tel|sms|cid|xmpp|ftp)$/i;
+
   const renderAsciiDoc = (source, imagesDir, module = 'root', refs = [], getAsset) => {
     if (!processor) return '';
     // Resolve a pending upload to its temporary blob URL and a committed one to the media URL
-    // Sveltia serves (so it previews even while the image is still on the draft branch). Targets
-    // are module-relative; `ROOT:` is the legacy form kept for older drafts.
+    // Sveltia serves (so it previews even while the image is still on the draft branch). A
+    // module-prefixed target (`ROOT:` or `<module>:`) is resolved against that module; a bare
+    // target against the current module. Anything unresolved falls back to the built `_images`
+    // path Antora publishes the module's images under.
     const pending = new Map(
       refs
         .filter(({ blobUrl }) => blobUrl.startsWith('blob:'))
         .map(({ target, blobUrl }) => [target, blobUrl]),
     );
-    const mediaFolder = moduleImageFolder(module);
-    const rootFolder = moduleImageFolder('ROOT');
-    const body = strip(source)
-      .replace(
-        /image::([^:\n\[\]]+)\[/g,
-        (_, target) =>
-          `image::${pending.get(target) || resolveImageUrl(getAsset, mediaFolder, target) || target}[`,
-      )
-      .replace(
-        /image::ROOT:([^\[\]\n]+)\[/g,
-        (_, target) =>
-          `image::${pending.get(target) || resolveImageUrl(getAsset, rootFolder, target) || `ROOT:${target}`}[`,
-      );
+    const body = strip(source).replace(IMAGE_TARGET_PATTERN, (match, prefix, target) => {
+      if (prefix && URI_SCHEME.test(prefix)) return match;
+      const mod = prefix || module;
+      const url = pending.get(target) || resolveImageUrl(getAsset, moduleImageFolder(mod), target);
+      return `image::${url || `${moduleImagesDir(mod)}/${target}`}[`;
+    });
 
     const previewable = body
       .replace(/^include::[^\n]*$/gm, '')
       .replace(
         /xref:([^\[\]]+)\[([^\]]*)\]/g,
         (_, target, label) => `link:${resolveXref(target, module)}[${label || target}]`,
-      )
-      .replace(/image::ROOT:([^\[\]]+)/g, 'image::/en/develop/_images/$1');
+      );
     return processor.convert(previewable, {
       safe: 'safe',
       attributes: { imagesdir: imagesDir, showtitle: true },
@@ -107,16 +115,6 @@ window.Admin.Preview = (() => {
     return '';
   };
 
-  // Build the images dir for a page. Antora publishes a module's images under
-  // its module-level `_images` directory regardless of the page's subdirectory,
-  // so image macros such as `image::spaces/processes/foo.png` resolve from there.
-  const imagesDirForEntry = (module) => {
-    // The ROOT module maps to the component root, so its images live at
-    // en/develop/_images rather than en/develop/root/_images.
-    const base = module === 'root' ? '/en/develop' : `/en/develop/${module}`;
-    return `${base}/_images`;
-  };
-
   // Approximate, instant preview. For an exact Antora build use the "View
   // Preview" deploy preview link provided by the backend.
   const makeDocPreview = (module) =>
@@ -125,13 +123,7 @@ window.Admin.Preview = (() => {
         const source = this.props.entry.getIn(['data', 'body']) || '';
         const { refs } = parse(source);
         const html = sanitizeHtml(
-          renderAsciiDoc(
-            source,
-            imagesDirForEntry(module),
-            module,
-            refs,
-            this.props.getAsset,
-          ),
+          renderAsciiDoc(source, moduleImagesDir(module), module, refs, this.props.getAsset),
         );
         if (html) {
           return h('div', {
