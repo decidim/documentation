@@ -85,10 +85,14 @@ window.Admin.Preview = (() => {
     const body = strip(source).replace(IMAGE_TARGET_PATTERN, (match, prefix, target) => {
       if (prefix && URI_SCHEME.test(prefix)) return match;
       // Key the pending lookup by the target as written, so a bare upload never
-      // stands in for another module's prefixed reference of the same name.
+      // stands in for another module's prefixed reference of the same name. Older
+      // drafts used `ROOT:` in the macro while storing the pending reference under
+      // the bare name, so fall back to that form for the ROOT module.
       const key = prefix ? `${prefix}:${target}` : target;
+      const legacy = prefix && prefix.toUpperCase() === 'ROOT' ? pending.get(target) : undefined;
       const mod = prefix || module;
-      const url = pending.get(key) || resolveImageUrl(getAsset, moduleImageFolder(mod), target);
+      const url =
+        pending.get(key) || legacy || resolveImageUrl(getAsset, moduleImageFolder(mod), target);
       return `image::${url || `${moduleImagesDir(mod)}/${target}`}[`;
     });
 
