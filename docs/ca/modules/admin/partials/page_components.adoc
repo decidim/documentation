@@ -65,7 +65,7 @@ are comments enabled, participants can create meetings or not, etc.
 |Unpublish
 |To unpublish a component. This means that the component is then invisible to the public.
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Icona de previsualització]
 |Preview
 |To preview the space before it's published.
 
@@ -75,7 +75,7 @@ are comments enabled, participants can create meetings or not, etc.
 this component. For instance, in the case of Proposals, which Verification is needed to create a new proposal or
 to give supports.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Icona d'eliminació]
 |Delete
 |To delete this component. If there are content inside, most of the components don't let you delete them so it doesn't break
 relations with other resources. In those cases it's recommended to just unpublish the component.

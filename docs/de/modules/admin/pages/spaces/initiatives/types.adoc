@@ -1,72 +1,72 @@
-= Initiative types
+= Initiativentypen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Initiative types are the main framework for initiatives, as they allow administrators to define the different forms initiatives
-can take, as well as the specific rules and number of signatures needed for each type of initiatives.
+Initiativentypen bilden das grundlegende Rahmenwerk für Initiativen, da sie es Admins ermöglichen, die verschiedenen Formen festzulegen, die Initiativen
+annehmen können, sowie die spezifischen Regeln und die Anzahl der benötigten Unterschriften für jeden Initiativentyp.
 
-For example, your organization could allow participants to:
+Zum Beispiel könnte Ihre Organisation Teilnehmenden erlauben:
 
-* propose a new regulation
-* open a working group or a committee
-* modify an existing regulation
-* calls for an extraordinary general assembly
-* adding items to a city council agenda
+* eine neue Regelung vorzuschlagen
+* eine Arbeitsgruppe oder einen Ausschuss zu eröffnen
+* eine bestehende Regelung zu ändern
+* eine ausserordentliche Generalversammlung einzuberufen
+* Traktanden zur Tagesordnung eines Stadtrats hinzuzufügen
 
-In general, such mechanisms are specified in an internal regulation (like a municipal normative or state law), specifying
-the number of signatures required.
+Im Allgemeinen werden solche Mechanismen in einer internen Regelung festgelegt (z. B. einer Gemeindeverordnung oder einem kantonalen Gesetz), die
+die erforderliche Anzahl an Unterschriften bestimmt.
 
-You need to create at least *one initiative type* and *one initiative type scope* to enable participants to publish initiatives.
-If you create several initiative types, then participants can choose which type their initiative belongs to.
+Sie müssen mindestens *einen Initiativentyp* und *einen Geltungsbereich für den Initiativentyp* erstellen, damit Teilnehmende Initiativen veröffentlichen können.
+Wenn Sie mehrere Initiativentypen erstellen, können Teilnehmende auswählen, zu welchem Typ ihre Initiative gehört.
 
 == Konfiguration
 
-=== Create an initiative type
+=== Einen Initiativentyp erstellen
 
-To create an initiative type, click the "Manage" button in the top right of the page, then the "Initiative types" menu item.
+Um einen Initiativentyp zu erstellen, klicken Sie oben rechts auf der Seite auf die Schaltfläche "Verwalten" und anschliessend auf den Menüpunkt "Initiativentypen".
 
 image::spaces/initiatives/initiatives_menu_types.png[Access Initiatives types panel]
 
-Then, click the "New initiative type" button. You are redirected to the initiative type creation form.
+Klicken Sie dann auf die Schaltfläche "Neuer Initiativentyp". Sie werden zum Erstellungsformular für Initiativentypen weitergeleitet.
 
-==== General information
+==== Allgemeine Informationen
 
 image::spaces/initiatives/type_form_general.png[Initiative type form general information]
 
-.Admin-Formular für neue Initiative Typ: Allgemeine Informationen
+.Admin-Formular für neuen Initiativentyp: Allgemeine Informationen
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Titel
 |Benötigt
-|Titel der Art der Initiative.
+|Titel des Initiativentyps.
 
 |Beschreibung
 |Benötigt
-|Erläuterung dessen, was mit dieser Initiative getan werden kann.
+|Erläuterung dessen, was mit diesem Initiativentyp getan werden kann.
 
 |Bannerbild
 |Benötigt
-|Ein Bild für diese Initiative. HINWEIS: Im Moment wird dies nicht verwendet.
+|Ein Bild für diesen Initiativentyp. HINWEIS: Im Moment wird dies nicht verwendet.
 |===
 
-==== Options
+==== Optionen
 
 image::spaces/initiatives/type_form_options.png[Initiative type form options]
 
-.Admin-Formular für neue Initiative Typ: Optionen
+.Admin-Formular für neuen Initiativentyp: Optionen
 [cols="~,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Signaturtyp
 |Optional
-|Which kind of signature type is allowed. Optionen sind: Online, In-Person und Mixed. The Mixed option allows a participant to choose which signature type the initiative can collect.
+|Welche Art von Unterschrift zulässig ist. Optionen sind: Online, In-Person und Mixed. Mit der Option Gemischt kann eine teilnehmende Person auswählen, welche Unterschriftsart die Initiative erfassen kann.
 
 |Anhänge aktivieren
 |Optional
-|Wether it allows to upload attachments to initiatives of this type.
+|Ob das Hochladen von Anhängen zu Initiativen dieses Typs erlaubt ist.
 
 |Teilnehmer können ihre Online-Signaturen rückgängig machen
 |Optional
@@ -74,100 +74,100 @@ image::spaces/initiatives/type_form_options.png[Initiative type form options]
 
 |Autoren erlauben, das Ende der Unterschriftensammlung zu wählen
 |Optional
-|Can the authors of an initiative change the end of the signature collection period when creating their initiative?
+|Können die Urheber:innen einer Initiative das Ende der Sammelfrist für Unterschriften beim Erstellen ihrer Initiative ändern?
 
-|Enable authors to choose the xref:admin:settings/areas.adoc[area] for their initiative
+|Urheber:innen ermöglichen, den xref:admin:settings/areas.adoc[Bereich] für ihre Initiative auszuwählen
 |Optional
-|Allow authors and administrators to categorize initiatives thanks to organization xref:admin:settings/areas.adoc[Areas].
+|Urheber:innen und Admins erlauben, Initiativen anhand der Organisations-xref:admin:settings/areas.adoc[Bereiche] zu kategorisieren.
 
-|Unterschriftsbereich aktivieren
+|Unterschriften für untergeordnete Themen aktivieren
 |Optional
-|This configuration flag only support online votes. It enables sub-scopes and works with an authorization handler that associates a scope to the user.
-Make sure you select that authorization below in authorization settings. Damit es funktioniert, müssen Skizzen auf hierarchische Weise konfiguriert werden: 1 Elternteil - N Child.
+|Diese Konfigurationsoption unterstützt nur Online-Abstimmungen. Sie aktiviert Unterthemen und funktioniert mit einem Berechtigungshandler, der einer Person ein Thema zuordnet.
+Stellen Sie sicher, dass Sie diese Berechtigung weiter unten in den Berechtigungseinstellungen auswählen. Damit es funktioniert, müssen die Themen hierarchisch konfiguriert werden: 1 übergeordnet - N untergeordnet.
 
 |Ermöglicht nur die Erstellung globaler Initiativen
 |Optional
-|Markieren Sie dieses Flag, wenn Sie "Child scope signature" aktiviert haben und den globalen Geltungsbereich als Ihren Elternbereich konfiguriert haben. By enabling this, scope selection is skipped in the initiative creation wizard.
+|Markieren Sie dieses Flag, wenn Sie "Unterschriften für untergeordnete Themen" aktiviert haben und das globale Thema als Ihr übergeordnetes Thema konfiguriert haben. Wenn dies aktiviert ist, wird die Auswahl des Themas im Erstellungsassistenten für Initiativen übersprungen.
 
-|Werbeausschuss aktivieren
+|Initiativkomitee aktivieren
 |Optional
-|Whether this type only allow individual initiative or allow collective initiatives (multiple promoters, being multiple individuals or a user group).
+|Ob dieser Typ nur individuelle Initiativen zulässt oder auch kollektive Initiativen erlaubt (mehrere Urheber:innen, entweder mehrere Einzelpersonen oder eine Benutzergruppe).
 
 |Mindestanzahl der Ausschussmitglieder
 |Optional
-|When "Enable promoting committee" option is checked, defines the minimum number of promoter's committee member to send the initiative to technical validation.
+|Wenn die Option "Initiativkomitee aktivieren" angekreuzt ist, legt dies die Mindestanzahl an Mitgliedern des Initiativkomitees fest, die erforderlich sind, um die Initiative zur technischen Validierung einzureichen.
 
-|Enable comments
+|Kommentare aktivieren
 |Optional
-|Whether initiatives of this type can receive comments from participants.
+|Ob Initiativen dieses Typs Kommentare von Teilnehmenden erhalten können.
 
 |Personendaten des Teilnehmers auf Unterschrift sammeln
 |Optional
-|Fügt dem Signaturprozess einen Schritt hinzu. When a participant clicks on the signature button, they are redirected to a form asking for some personal data.
-This is then used with the PDF export action after the recollection period has ended.
+|Fügt dem Signaturprozess einen Schritt hinzu. Wenn eine teilnehmende Person auf die Unterschriften-Schaltfläche klickt, wird sie zu einem Formular weitergeleitet, das nach einigen persönlichen Daten fragt.
+Diese werden anschliessend für die PDF-Exportfunktion nach Ablauf der Sammelfrist verwendet.
 
 |Rechtliche Informationen über die Erhebung personenbezogener Daten
-|Required if previous flag is checked.
+|Erforderlich, wenn die vorherige Option aktiviert ist.
 |Datenschutzhinweise und Nutzungsbedingungen für die persönlichen Daten des Teilnehmers während des Unterzeichnungsprozesses.
 |===
 
-==== Authorization settings
+==== Berechtigungseinstellungen
 
 image::spaces/initiatives/type_form_authorizations.png[Initiative type form authorizations]
 
-.Admin-Formular für neuen Initiationstyp: Autorisierungseinstellungen
+.Admin-Formular für neuen Initiativentyp: Autorisierungseinstellungen
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Autorisierung, um die Dokumentennummer auf Unterschriften zu überprüfen
 |Optional
-|The type of authorization required to sign an initiative. Leave blank is no authorization is needed.
+|Die Art der Berechtigung, die zum Unterzeichnen einer Initiative erforderlich ist. Leer lassen, wenn keine Berechtigung erforderlich ist.
 |===
 
-Click the create button at the bottom of the form to save your initiative type.
-Only after this, you are able to create the initiative type scope needed for creating the first initiatives.
+Klicken Sie unten im Formular auf die Schaltfläche Erstellen, um Ihren Initiativentyp zu speichern.
+Erst danach können Sie den Geltungsbereich für den Initiativentyp erstellen, der für die Erstellung der ersten Initiativen benötigt wird.
 
-==== Create an initiative type scope
+==== Einen Geltungsbereich für einen Initiativentyp erstellen
 
-An initiative type must have associated scopes to allow participants to create initiatives.
-Indeed, they allow to associate a scope with a number of signatures, and therefore to have multiple signatures threshold for a same initiative type.
+Ein Initiativentyp muss über zugeordnete Geltungsbereiche verfügen, damit Teilnehmende Initiativen erstellen können.
+Damit lässt sich nämlich ein Geltungsbereich mit einer Anzahl an Unterschriften verknüpfen, sodass mehrere Unterschriftenschwellen für denselben Initiativentyp möglich sind.
 
-On the initiative type form, scroll down to find a new section called "Scopes for the initiative type" and a button.
+Scrollen Sie im Formular für den Initiativentyp nach unten, um einen neuen Abschnitt namens "Geltungsbereiche für den Initiativentyp" und eine Schaltfläche zu finden.
 
 image::spaces/initiatives/type_form_scopes.png[Initiative type form scopes]
 
-Click the "New initiative type scope" button to create one.
+Klicken Sie auf die Schaltfläche "Neuer Geltungsbereich für Initiativentyp", um einen zu erstellen.
 
 image::spaces/initiatives/admin_initiative_type_scope.png[New initiative type form]
 
-.Admin-Formular für neue Initiative Typ Anwendungsbereich
+.Admin-Formular für neuen Initiativentyp: Thema
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
-|Bereiche
+|Themen
 |Benötigt
-|Choose the scope related to this number if signatures. If you don't have any rule, keep Global scope.
+|Wählen Sie den Geltungsbereich aus, der zu dieser Anzahl an Unterschriften gehört. Wenn Sie keine spezifische Regel haben, behalten Sie den globalen Geltungsbereich bei.
 
 |Unterschriften erforderlich
 |Benötigt
-|Number of signatures the initiative need to have before the end collection date to be accepted.
+|Die Anzahl der Unterschriften, die die Initiative vor Ablauf der Sammelfrist erreichen muss, um angenommen zu werden.
 |===
 
-You can add multiple initiative type scopes if you have specific number of signatures for specific scopes.
-For example, it can be a percentage of different territories inhabitants.
+Sie können mehrere Themen für Initiativentypen hinzufügen, wenn Sie für bestimmte Themen eine spezifische Anzahl an Unterschriften benötigen.
+Dies kann zum Beispiel ein Prozentsatz der Einwohnerzahl unterschiedlicher Gebiete sein.
 
 image::spaces/initiatives/type_form_scopes_multiple.png[Initiative type form scopes with three scopes]
 
-=== Manage initiative types
+=== Initiativentypen verwalten
 
 image::spaces/initiatives/initiatives_types_list.png[Initiatives types list]
 
-Once you created one or multiple initiative types, you are able to manage them on the list in the administration panel, with:
+Sobald Sie einen oder mehrere Initiativentypen erstellt haben, können Sie sie in der Liste im Verwaltungspanel verwalten, mit:
 
-* *Initiative types*: title of the initiatives type.
-* *Created at*: date of creation of the initiative types.
+* *Initiativentypen*: Titel des Initiativentyps.
+* *Erstellt am*: Erstellungsdatum des Initiativentyps.
 
 === Aktionen
 
@@ -176,23 +176,23 @@ Once you created one or multiple initiative types, you are able to manage them o
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Configure initiatives type icon]
+|image:icons/action_edit.png[Symbol: Initiativentyp konfigurieren]
 |Konfigurieren
-|To edit the configuration and initiate type scopes for this type.
+|Um die Konfiguration und die Geltungsbereiche dieses Typs zu bearbeiten.
 
-|image:icons/action_permissions.png[Permissions icon]
+|image:icons/action_permissions.png[Symbol: Berechtigungen]
 |Berechtigungen
-|To edit the permissions for this initiative type.
+|Um die Berechtigungen für diesen Initiativentyp zu bearbeiten.
 
-|image:icons/action_delete.png[Delete initiatives type icon]
+|image:icons/action_delete.png[Symbol: Initiativentyp löschen]
 |Löschen
-|To delete the initiate type. Can only be done when no initiative is linked to this type.
+|Um den Initiativentyp zu löschen. Kann nur durchgeführt werden, wenn keine Initiative mit diesem Typ verknüpft ist.
 |===
 
 === Berechtigungen
 
-You can configure permissions for an initiative type by clicking the image:icons/action_permissions.png icon.
+Sie können die Berechtigungen für einen Initiativentyp konfigurieren, indem Sie auf das Symbol image:icons/action_permissions.png klicken.
 
 image::spaces/initiatives/initiatives_types_permissions.png[Initiatives types permissions edition]
 
-On this page, you can ask for specific xref:admin:participants/authorizations.adoc[Authorizations] in order for participants to be able to sign or create an initiative.
+Auf dieser Seite können Sie spezifische xref:admin:participants/authorizations.adoc[Berechtigungen] anfordern, damit Teilnehmende eine Initiative unterzeichnen oder erstellen können.

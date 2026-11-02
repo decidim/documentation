@@ -1,24 +1,24 @@
 = Benutzerregistrierung
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-After participants have registered, administrators can have access to their registration information.
-It allows the conference organizers to efficiently manage the participants to the conference, its tracks, etc.
+Nachdem Teilnehmende sich angemeldet haben, können Admins auf deren Anmeldeinformationen zugreifen.
+Dies ermöglicht es den Organisierenden der Konferenz, die Teilnehmenden der Konferenz, ihre Tracks usw. effizient zu verwalten.
 
-For example, it can follow this flow:
+Zum Beispiel kann folgender Ablauf gelten:
 
-. Ein Teilnehmer registriert sich zur Konferenz
-. They receive a pending registration notification
-. They receive a pending registration email
-. An administrator reviews and confirms the registration with the image:icons/action_activate.png[Confirm] button
-. The participant receives a confirmed registration notification
-. They receive a confirmed registration email with a calendar .ics file
+. Eine teilnehmende Person registriert sich für die Konferenz
+. Sie erhalten eine Benachrichtigung über eine ausstehende Anmeldung
+. Sie erhalten eine E-Mail über eine ausstehende Anmeldung
+. Ein Admin prüft und bestätigt die Anmeldung mit der Schaltfläche image:icons/action_activate.png[Bestätigen]
+. Die teilnehmende Person erhält eine Benachrichtigung über eine bestätigte Anmeldung
+. Sie erhält eine E-Mail über eine bestätigte Anmeldung mit einer Kalenderdatei im .ics-Format
 
 == Konfiguration
 
-=== Manage the registrations
+=== Die Anmeldungen verwalten
 
-To access the user registrations configuration, click in the secondary navigation panel on the "User registrations" item.
+Um auf die Konfiguration der Nutzendenanmeldungen zuzugreifen, klicken Sie im sekundären Navigationspanel auf den Punkt "Nutzendenanmeldungen".
 
 image::spaces/conferences/user_registrations.png[Conferences user registrations (backend)]
 
@@ -29,22 +29,22 @@ image::spaces/conferences/user_registrations.png[Conferences user registrations 
 |===
 |Icon |Name |Definition
 
-|image:icons/action_activate.png[Confirm registration icon]
-|Confirm
-|To confirm the user registration
+|image:icons/action_activate.png[Symbol: Anmeldung bestätigen]
+|Bestätigen
+|Um die Anmeldung der nutzenden Person zu bestätigen
 |===
 
 === Registrierung bestätigen
 
-Registration confirmations can be used before or after the conference.
-They can allow administrators to confirm participants that their registration was taken into account, or
-that they indeed attended the conference after it happened.
+Anmeldebestätigungen können vor oder nach der Konferenz verwendet werden.
+Sie ermöglichen es Admins, Teilnehmenden zu bestätigen, dass ihre Anmeldung berücksichtigt wurde, oder
+dass sie tatsächlich an der Konferenz teilgenommen haben, nachdem diese stattgefunden hat.
 
-Confirming registrations allow administrators to send a
-xref:admin:spaces/conferences/registrations/certificates.adoc[**Certificates of Attendance**] after the conference to
-all confirmed participants to the conference.
+Das Bestätigen von Anmeldungen ermöglicht es Admins, nach der Konferenz
+allen bestätigten Teilnehmenden der Konferenz ein
+xref:admin:spaces/conferences/registrations/certificates.adoc[**Teilnahmezertifikat**] zu senden.
 
 === Registrierungen exportieren
 
-It's possible to export the registrations in multiple formats: .CSV, .JSON, and .XSLX.
-The file with all the registered participants is directly downloaded on the administrator device.
+Es ist möglich, die Anmeldungen in mehreren Formaten zu exportieren: .CSV, .JSON und .XSLX.
+Die Datei mit allen angemeldeten Teilnehmenden wird direkt auf das Gerät des Admins heruntergeladen.

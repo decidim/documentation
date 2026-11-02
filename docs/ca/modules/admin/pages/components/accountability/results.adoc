@@ -1,129 +1,128 @@
-= Accountability management
+= Gestió del retiment de comptes
 
-== Understand the basics
+== Entendre els conceptes bàsics
 
-Results are the entities that constitute the accountability component. They can be linked to proposals, projects, meetings, and have
-statuses, and dates assigned.
+Els resultats són les entitats que constitueixen el component de retiment de comptes. Es poden vincular a propostes, projectes, reunions i se'ls poden assignar estats i dates.
 
-Administrators can also create sub-results, to detail the elements needed for a result implementation.
+Els administradors també poden crear sub-resultats per detallar els elements necessaris per a la implementació d'un resultat.
 
-== Configuration
+== Configuració
 
-=== Create a result
+=== Crear un resultat
 
-To start creating results, click the component title in the navigation bar or in the component list, or click the
-image:icons/action_edit.png[Manage component icon] icon on the components list.
+Per començar a crear resultats, feu clic al títol del component a la barra de navegació o a la llista de components, o feu clic a la
+image:icons/action_edit.png[Icona de gestió del component] de la llista de components.
 
 image::components/accountability/new_result_button.png[New result button]
 
-Then, click the "New result" button on the top right of the page.
+A continuació, feu clic al botó "Nou resultat" de la part superior dreta de la pàgina.
 
 image::components/accountability/new_result.png[New result form]
 
-.New result form
+.Formulari de nou resultat
 [cols="20h,10h,~"]
 |===
-|Field |Type |Description
+|Camp |Tipus |Descripció
 
-|Title
-|Required
-|Title of the result.
+|Títol
+|Obligatori
+|Títol del resultat.
 
-|Description
-|Optional
-|Description of the result.
+|Descripció
+|Opcional
+|Descripció del resultat.
 
-|Scope
-|Deprecated
-|Please use link:https://docs.decidim.org/en/develop/develop/taxonomies.html[taxonomies] instead.
+|Àmbit
+|Obsolet
+|Utilitzeu link:https://docs.decidim.org/en/develop/develop/taxonomies.html[taxonomies] en lloc seu.
 
-|Category
-|Optional
-|Allows categorizing the results on the Accountability landing page.
+|Categoria
+|Opcional
+|Permet categoritzar els resultats a la pàgina d'inici del retiment de comptes.
 
-|Start date
-|Optional
-|Expected format: dd/mm/yyyy.
+|Data d'inici
+|Opcional
+|Format esperat: dd/mm/aaaa.
 
-|End date
-|Optional
-|Expected format: dd/mm/yyyy.
+|Data de finalització
+|Opcional
+|Format esperat: dd/mm/aaaa.
 
-|Status
-|Optional
-|Allows to give a status to results.
+|Estat
+|Opcional
+|Permet assignar un estat als resultats.
 
-|Progress
-|Optional
-|Percentage of progression of the result.
+|Progrés
+|Opcional
+|Percentatge de progrés del resultat.
 
-|Proposals
-|Optional
-|Proposals that originated the result.
+|Propostes
+|Opcional
+|Propostes que han originat el resultat.
 
-|Included projects
-|Optional
-|Projects that originated the result.
+|Projectes inclosos
+|Opcional
+|Projectes que han originat el resultat.
 |===
 
-=== Manage results
+=== Gestionar els resultats
 
-On the results list in the administration panel, administrators can see:
+A la llista de resultats del panell d'administració, els administradors poden veure:
 
-* *ID*: Identification number for this result.
-* *Title*: Title of the result.
-* *Category*: Category of the result.
-* *Scope*: Scope of the result, if enabled in the participatory space.
-* *xref:admin:components/accountability/statuses.adoc[Status]*: Status of the result.
-* *Progress*: Result percentage progress.
-* *Created*: Creation date of the result.
+* *ID*: número d'identificació d'aquest resultat.
+* *Títol*: títol del resultat.
+* *Categoria*: categoria del resultat.
+* *Àmbit*: àmbit del resultat, si està habilitat a l'espai participatiu.
+* *xref:admin:components/accountability/statuses.adoc[Estat]*: estat del resultat.
+* *Progrés*: progrés percentual del resultat.
+* *Creat*: data de creació del resultat.
 
-You can filter and sort this list by clicking the "Filter" button and the columns headers.
-You can also search for results by their ID and title in the search bar.
+Podeu filtrar i ordenar aquesta llista fent clic al botó "Filtre" i a les capçaleres de les columnes.
+També podeu cercar resultats per ID i títol a la barra de cerca.
 
 image::components/accountability/results_list_filter.png[New result button]
 
-=== Actions
+=== Accions
 
-.Actions - Accountability
+.Accions - Retiment de comptes
 [cols="10h,20h,~"]
 |===
-|Icon |Name |Definition
+|Icona |Nom |Definició
 
-|image:icons/action_edit.png[Edit icon]
-|Edit
-|To edit a result.
+|image:icons/action_edit.png[Icona d'edició]
+|Edita
+|Per editar un resultat.
 
-|image:icons/action_plus.png[Plus icon]
-|Add Sub-Result
-|To quickly add a new sub-result
+|image:icons/action_plus.png[Icona de més]
+|Afegeix un sub-resultat
+|Per afegir ràpidament un sub-resultat nou
 
-|image:icons/action_folder.png[Folders icon]
-|Folders
-|For classifying Attachments.
+|image:icons/action_folder.png[Icona de carpetes]
+|Carpetes
+|Per classificar els fitxers adjunts.
 
-|image:icons/action_clock.png[Clock icon]
-|Milestone
-|Manage milestones of the result.
+|image:icons/action_clock.png[Icona de rellotge]
+|Fita
+|Gestiona les fites del resultat.
 
-|image:icons/action_folder.png[Folders icon]
-|Folders
-|For classifying Attachments.
+|image:icons/action_folder.png[Icona de carpetes]
+|Carpetes
+|Per classificar els fitxers adjunts.
 
-|image:icons/action_attachments.png[Attachments icon]
-|Attachments
-|To add documents and images related to the result.
+|image:icons/action_attachments.png[Icona de fitxers adjunts]
+|Fitxers adjunts
+|Per afegir documents i imatges relacionades amb el resultat.
 
-|image:icons/action_preview.png[Preview icon]
-|Preview
-|To see how it's shown in the frontend to participants.
+|image:icons/action_preview.png[Icona de previsualització]
+|Previsualització
+|Per veure com es mostra a la interfície als participants.
 
-|image:icons/action_permissions.png[Permissions icon]
-|Permissions
-|To handle the permissions of this result, depending on the verification a participant has. Allows an admin to configure
-who can *Comment* a result.
+|image:icons/action_permissions.png[Icona de permisos]
+|Permisos
+|Per gestionar els permisos d'aquest resultat, segons la verificació que tingui un participant. Permet a un administrador configurar
+qui pot *comentar* un resultat.
 
-|image:icons/action_delete.png[Delete icon]
-|Delete
-|Put the result in the deleted result list.
+|image:icons/action_delete.png[Icona d'eliminació]
+|Elimina
+|Posa el resultat a la llista de resultats eliminats.
 |===

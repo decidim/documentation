@@ -1,21 +1,21 @@
-= Lautsprecher
+= Vortragende
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-The speakers are the persons that are talking at the conference. They can be linked to meetings, so participants can
-see who is going to speak in each item of the program.
+Die Vortragenden sind die Personen, die auf der Konferenz sprechen. Sie können mit Veranstaltungen verknüpft werden, sodass Teilnehmende sehen können,
+wer bei jedem Programmpunkt sprechen wird.
 
 image::spaces/conferences/speakers_frontend.png[Conferences speakers frontend]
 
 == Konfiguration
 
-=== Manage speakers
+=== Vortragende verwalten
 
-To access the speakers configuration, click in the secondary navigation panel on the "Speakers" item.
+Um auf die Konfiguration der Vortragenden zuzugreifen, klicken Sie im sekundären Navigationspanel auf den Punkt "Vortragende".
 
-image:spaces/conferences/speakers.png[Konferenz-Lautsprecher]
+image:spaces/conferences/speakers.png[Konferenz-Vortragende]
 
-You can search speakers thanks to the search bar.
+Sie können mithilfe der Suchleiste nach Vortragenden suchen.
 
 === Aktionen
 
@@ -24,71 +24,71 @@ You can search speakers thanks to the search bar.
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit speaker icon]
+|image:icons/action_edit.png[Symbol: Vortragende bearbeiten]
 |Bearbeiten
-|To edit this speaker.
+|Um diese vortragende Person zu bearbeiten.
 
-|image:icons/action_activate.png[Publish speaker icon]
+|image:icons/action_activate.png[Symbol: Vortragende veröffentlichen]
 |Veröffentlichen
-|To publish this speaker (when not published)
+|Um diese vortragende Person zu veröffentlichen (wenn sie noch nicht veröffentlicht ist)
 
-|image:icons/action_unpublish.png[Unpublish speaker icon]
+|image:icons/action_unpublish.png[Symbol: Veröffentlichung von Vortragenden rückgängig machen]
 |Zurückziehen
-|To unpublish this speaker (when published)
+|Um die Veröffentlichung dieser vortragenden Person aufzuheben (wenn sie veröffentlicht ist)
 
-|image:icons/action_delete.png[Delete speaker icon]
+|image:icons/action_delete.png[Symbol: Vortragende löschen]
 |Löschen
-|To delete this speaker.
+|Um diese vortragende Person zu löschen.
 |===
 
-=== Neuen Lautsprecher erstellen
+=== Neue vortragende Person erstellen
 
-To create a new speaker, click the "New speaker" button in the top right of the page.
+Um eine neue vortragende Person zu erstellen, klicken Sie oben rechts auf der Seite auf die Schaltfläche "Neue vortragende Person".
 
 image::spaces/conferences/new_speaker.png[Conferences speakers]
 
-.Neues Konferenz-Lautsprecher-Formular
+.Neues Formular für Konferenzvortragende
 [cols="20h,~,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Teilnehmertyp
 |Benötigt
-|Wether this speaker is a non-participant or existing participant. Haben sie bereits ein Konto auf der Plattform erstellt?
+|Ob diese vortragende Person keine Teilnehmende oder eine bestehende teilnehmende Person ist. Haben sie bereits ein Konto auf der Plattform erstellt?
 
 |Voller Name
 |Erforderlich, wenn es nicht teilnimmt.
-|Name des Redners.
+|Name der vortragenden Person.
 
 |Benutzer oder Gruppe
-|Erforderlich, wenn es ein existierender Teilnehmer ist.
+|Erforderlich, wenn es sich um eine bereits teilnehmende Person handelt.
 |Geben Sie mindestens drei Zeichen für die Suche ein.
 
-|Verwandte Besprechungen
+|Verwandte Meetings
 |Optional
-|The meetings in which the speaker is speaking or facilitating.
+|Die Veranstaltungen, bei denen die vortragende Person spricht oder moderiert.
 
 |Position
 |Benötigt
-|Metadaten zum Anzeigen zusätzlicher Informationen über den Lautsprecher.
+|Metadaten zum Anzeigen zusätzlicher Informationen über die vortragende Person.
 
 |Zugehörigkeit
 |Benötigt
-|Metadaten zum Anzeigen zusätzlicher Informationen über den Lautsprecher.
+|Metadaten zum Anzeigen zusätzlicher Informationen über die vortragende Person.
 
 |Kurze Bio
 |Optional
-|Metadaten zum Anzeigen zusätzlicher Informationen über den Lautsprecher.
+|Metadaten zum Anzeigen zusätzlicher Informationen über die vortragende Person.
 
-|X handle
+|X-Profilname
 |Optional
-|Metadaten zum Anzeigen zusätzlicher Informationen über den Lautsprecher.
+|Metadaten zum Anzeigen zusätzlicher Informationen über die vortragende Person.
 
 |Persönliche URL
 |Optional
-|Metadaten zum Anzeigen zusätzlicher Informationen über den Lautsprecher.
+|Metadaten zum Anzeigen zusätzlicher Informationen über die vortragende Person.
 
 |Avatar
 |Optional
-|Avatar image for the speaker. Ignored if the speaker is an "Already registered" participant.
+|Avatarbild für die vortragende Person. Wird ignoriert, wenn es sich bei der vortragenden Person um eine "Bereits registrierte" teilnehmende Person handelt.
 |===

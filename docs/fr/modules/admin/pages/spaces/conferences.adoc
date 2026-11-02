@@ -14,19 +14,19 @@ NOTE: Vous voulez créer une conférence ? Consultez l'article xref:admin:spaces
 Dans cette section de documentation, vous pouvez trouver comment configurer et gérer tous ces éléments :
 
 * xref:admin:admin:espaces/conférences/conference_creation.adoc[Création de la conférence]
-* xref:admin:spaces/conferences/components.adoc[Components]
-* xref:admin:spaces/conferences/categories.adoc[Categories]
-* xref:admin:spaces/conferences/attachments.adoc[Attachments]
-* xref:admin:spaces/conferences/media_links.adoc[Media Links]
-* xref:admin:spaces/conferences/partners.adoc[Partners]
-* xref:admin:spaces/conferences/speakers.adoc[Speakers]
-* xref:admin:spaces/conferences/registrations.adoc[Registrations]
-** xref:admin:spaces/conferences/registrations/types.adoc[Registration Types]
-** xref:admin:spaces/conferences/registrations/users.adoc[User Registrations]
-** xref:admin:spaces/conferences/registrations/invites.adoc[Invites]
-** xref:admin:spaces/conferences/registrations/certificates.adoc[Certificate of Attendance]
-* xref:admin:spaces/conferences/admins.adoc[Conference admins]
-* xref:admin:spaces/conferences/moderations.adoc[Moderations]
+* xref:admin:spaces/conferences/components.adoc[Fonctionnalités]
+* xref:admin:spaces/conferences/categories.adoc[Catégories]
+* xref:admin:spaces/conferences/attachments.adoc[Pièces jointes]
+* xref:admin:spaces/conferences/media_links.adoc[Liens médias]
+* xref:admin:spaces/conferences/partners.adoc[Partenaires]
+* xref:admin:spaces/conferences/speakers.adoc[Conférencier·e·x·s]
+* xref:admin:spaces/conferences/registrations.adoc[Inscriptions]
+** xref:admin:spaces/conferences/registrations/types.adoc[Types d'inscriptions]
+** xref:admin:spaces/conferences/registrations/users.adoc[Inscriptions utilisateur·ice]
+** xref:admin:spaces/conferences/registrations/invites.adoc[Invitations]
+** xref:admin:spaces/conferences/registrations/certificates.adoc[Attestation de présence]
+* xref:admin:spaces/conferences/admins.adoc[Admins de conférence]
+* xref:admin:spaces/conferences/moderations.adoc[Modérations]
 
 === How to find it?
 

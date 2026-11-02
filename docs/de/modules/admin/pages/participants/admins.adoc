@@ -1,80 +1,80 @@
-= Administratoren
+= Admins
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Administrators are the persons managing the organization, creating the processes, managing the platform as a whole
-They can be of two types:
+Admins sind die Personen, die die Organisation verwalten, die Prozesse erstellen und die Plattform als Ganzes verwalten.
+      Es gibt zwei Arten:
 
-* Administrators: have access to all the platform configuration.
-* Participant managers: can only manage participants xref:admin:participants/impersonations.adoc[impersonations].
+* Admins: haben Zugriff auf die gesamte Plattformkonfiguration.
+* Teilnehmendenverwaltende: können nur xref:admin:participants/impersonations.adoc[Identitätsübernahmen] von Teilnehmenden verwalten.
 
-image:participants/admins.png[Admins list]
+image:participants/admins.png[Admin-Liste]
 
 == Konfiguration
 
-=== Invite an administrator
+=== Einen Admin einladen
 
-To invite an administrator, click the "New admin" button at the top right of the page.
-Sie können einen bereits registrierten oder nicht registrierten Teilnehmer einladen.
+Um einen Admin einzuladen, klicken Sie oben rechts auf der Seite auf die Schaltfläche "Neuer Admin".
+Sie können eine bereits registrierte oder nicht registrierte teilnehmende Person einladen.
 
-image:participants/admins_invite.png[Invite participant as administrator form]
+image:participants/admins_invite.png[Formular zum Einladen einer teilnehmenden Person als Admin]
 
-.New administrator form
+.Formular für neuen Admin
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Name
 |Benötigt
-|Name of the administrator. If they already have an account, it changes automatically for their username.
+|Name des Admins. Falls die Person bereits ein Konto hat, wird es automatisch für ihren Benutzernamen geändert.
 
 |E-Mail
 |Benötigt
-|Email of the participant to invite. If they don't have an account related to this email, they should receive an invitation
-email to create an account. Otherwise, they won't be notified.
+|E-Mail-Adresse der einzuladenden teilnehmenden Person. Falls sie kein Konto haben, das mit dieser E-Mail-Adresse verknüpft ist, sollten sie eine Einladungs-
+      E-Mail zur Kontoerstellung erhalten. Andernfalls werden sie nicht benachrichtigt.
 
 |Rolle
 |Benötigt
-|Administrator or Participant manager
+|Admin oder Teilnehmendenverwaltende
 |===
 
-If an administrator doesn't already have an account, but didn't register, you can also Resend the invitation.
+Wenn ein Admin noch kein Konto hat, sich aber nicht registriert hat, können Sie die Einladung auch erneut senden.
 
-=== Manage administrators
+=== Admins verwalten
 
-You can find all the administrators on the administrators list in the administration panel, with:
+Sie finden alle Admins in der Admin-Liste im Verwaltungspanel mit:
 
-* *Role*: type of administrator rights, can only be Administrator or Participant manager.
-* *Name*: name of the participant.
-* *Email*: email of the participant.
-* *Invitation sent at*: date and time of the email invitation.
-* *Invitation accepted at*: when they accepted the email invitation.
-* *Last log in date*: date of the administrator last connection.
-* *Creation date*: date of the participant account creation.
+* *Rolle*: Art der Admin-Rechte, kann nur Admin oder Teilnehmendenverwaltende sein.
+* *Name*: Name der teilnehmenden Person.
+* *E-Mail*: E-Mail-Adresse der teilnehmenden Person.
+* *Einladung versendet am*: Datum und Uhrzeit der Einladungs-E-Mail.
+* *Einladung akzeptiert am*: wann sie die Einladungs-E-Mail akzeptiert haben.
+* *Letztes Anmeldedatum*: Datum der letzten Anmeldung des Admins.
+* *Erstellungsdatum*: Erstellungsdatum des Kontos der teilnehmenden Person.
 
-You can filter and sort this list by clicking the "Filter" button and the columns headers.
-You can also search for administrators by email, name, or nickname in the search bar.
+Sie können diese Liste filtern und sortieren, indem Sie auf die Schaltfläche "Filter" und die Spaltenüberschriften klicken.
+Sie können auch in der Suchleiste nach Admins anhand ihrer E-Mail-Adresse, ihres Namens oder Spitznamens suchen.
 
 === Aktionen
 
 .Aktionen
 [cols="10h,20h,~,~"]
 |===
-|Icon |Name |Definition |Condition
+|Icon |Name |Definition |Bedingung
 
-|image:icons/action_resend.png[Resend invitation icon]
+|image:icons/action_resend.png[Symbol: Einladung erneut senden]
 |Einladung erneut senden
-|To resend an invitation email to the participant.
-|Available when the participant didn't accept the invitation.
+|Um der teilnehmenden Person erneut eine Einladungs-E-Mail zu senden.
+|Verfügbar, wenn die teilnehmende Person die Einladung nicht akzeptiert hat.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
-|To revoke the participant's administration access rights.
-|Available for all administrators, except for the first one.
+|Um die Admin-Zugriffsrechte der teilnehmenden Person zu widerrufen.
+|Verfügbar für alle Admins, ausser dem ersten.
 |===
 
-=== Revoke administrator permissions
+=== Admin-Berechtigungen widerrufen
 
-When an administrator doesn't need access anymore, you should revoke their rights by clicking the "Delete" button.
-You need to confirm the rights deletion to completely remove their rights.
-Revoking administrator permissions don't delete the participant account.
+Wenn ein Admin keinen Zugriff mehr benötigt, sollten Sie seine Rechte widerrufen, indem Sie auf die Schaltfläche "Löschen" klicken.
+Sie müssen die Löschung der Rechte bestätigen, um diese vollständig zu entfernen.
+Das Widerrufen der Admin-Berechtigungen löscht das Konto der teilnehmenden Person nicht.

@@ -26,6 +26,10 @@ When clicking on the link for the active phase, they can see the full descriptio
 
 image::spaces/processes/process_phases.png[Process phases explanation]
 
+[NOTE]
+Phases can be automatically changed if the scheduled task `decidim_participatory_processes:change_active_step` is configured.
+If you want to manage them manually, then the implementer/operator of the installation needs to disable this scheduled task server-side.
+
 == Configuration
 
 === Manage phases
@@ -41,7 +45,7 @@ image::spaces/processes/process_phases_list.png[Phases of a participatory proces
 |===
 |Icon |Name |Definition |Condition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Icona d'edició]
 |Edit
 |To edit this phase.
 |Always available
@@ -51,7 +55,7 @@ image::spaces/processes/process_phases_list.png[Phases of a participatory proces
 |To make this phase the active one.
 |Only available for inactive phases.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Icona d'eliminació]
 |Delete
 |To delete this phase.
 |Always available
@@ -76,21 +80,21 @@ image::spaces/processes/process_phases_new_form.png[Create a new participatory p
 |Optional
 |A long description explaining what's this phase for.
 
-|Start date
+|Data d'inici
 |Optional
 |The start date of this process phase. Expected format: dd/mm/yyyy
 
-|End date
+|Data de finalització
 |Optional
 |The end date of this process phase. Expected format: dd/mm/yyyy
 
 |Call to Action path
 |Optional
-|Deprecated
+|Obsolet
 
 |Call to Action text
 |Optional
-|Deprecated
+|Obsolet
 |===
 
 CAUTION: Configuring the CTA through the Phase of the participatory process is deprecated with the new design.

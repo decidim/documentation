@@ -7,12 +7,11 @@ Those specific configurations are more rarely used, and require a good knowledge
 
 == Configuración
 
-All three features can be enabled in the Global settings of the proposal component configuration form.
+These features can be enabled in the Global settings of the proposal component configuration form.
 
-image::components/proposals/component_specific_conf.png[Add component form - Specific configurations]
+image::ROOT:component_specific_conf.png[Alt text]
 
 In this section, you can learn how to configure and use the following features:
 
 * xref:admin:features/my_account/notifications_settings.adoc[Notifications settings]
-* xref:admin:components/proposals/collaborative_drafts.adoc[Collaborative drafts]
 * xref:admin:components/proposals/participatory_texts.adoc[Participatory texts]

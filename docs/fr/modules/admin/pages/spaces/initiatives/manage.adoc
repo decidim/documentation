@@ -5,10 +5,10 @@
 Lorsqu'unx participant·e·x crée une initiative, iel ne crée pas seulement une ressource, comme une proposition, iel crée un espace entier
 permettant aux administrateur·ices de gérer dans l'administration :
 
-* xref:admin:espace:initiatives/author_manage/commissione.adoc[Comité du promoteur]
-* xref:admin:espaces/initiatives/admin_manage/components.adoc[Components]
-* xref:admin:espaces/initiatives/admin_manage/attachments.adoc[Attachments]
-* xref:admin:espaces/initiatives/admin_manage/moderations.adoc[Moderations]
+* xref:admin:espace:initiatives/author_manage/commissione.adoc[Membres du comité]
+* xref:admin:espaces/initiatives/admin_manage/components.adoc[Fonctionnalités]
+* xref:admin:espaces/initiatives/admin_manage/attachments.adoc[Pièces jointes]
+* xref:admin:espaces/initiatives/admin_manage/moderations.adoc[Modérations]
 * xref:admin:espaces/initiatives/admin_manage/answer.adoc[Répondre à une initiative]
 
 NOTE: Si non configuré, une fois une initiative créée, les fonctionnalités Rencontres et Pages sont activées par défaut.
@@ -45,7 +45,7 @@ image::spaces/initiatives/initiative_list_filters.png[Initiatives list filtered]
 |Icône |Nom |Définition
 
 |image:icons/action_edit.png[Modifier l'icône]
-|Editer
+|Modifier
 |Pour modifier l'initiative, ses pièces jointes, les membres du comité, les fonctionnalités, etc.
 
 |image:icons/action_answer.png[Icône de réponse]

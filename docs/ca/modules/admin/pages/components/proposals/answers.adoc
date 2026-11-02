@@ -51,7 +51,7 @@ image::components/proposals/answers/proposal_answer.png[Proposal answer form]
 |Allows selecting a xref:admin:templates/proposal_answers.adoc[Proposal answers template], to quickly assign a status to the proposal
 and use the template answer associated.
 
-|Status
+|Estat
 |Required
 |By default, you can choose between: Not answered, Evaluating, Accepted, Rejected. You can edit and add statuses in the proposal
 management page.

@@ -101,22 +101,22 @@ image::spaces/assemblies/assemblies_new_form_duration.png[New assembly form dura
 
 |Date created
 |Optional
-|When this assembly was created. You have a calendar widget to choose the day. Expected format: dd/mm/yyyy.
+|When this assembly was created. You have a calendar widget to choose the day. Format esperat: dd/mm/aaaa.
 |Visible in the "Dates metadata" landing page block.
 
 |Included at
 |Optional
-|The date when this assembly was added to the instance. It does not necessarily have to be the same as the creation date. Expected format: dd/mm/yyyy.
+|The date when this assembly was added to the instance. It does not necessarily have to be the same as the creation date. Format esperat: dd/mm/aaaa.
 |Visible in the "Dates metadata" landing page block.
 
 |Duration
 |Optional
-|If the duration of this assembly is limited, select the end date. Otherwise, it appears as indefinite. Expected format: dd/mm/yyyy.
+|If the duration of this assembly is limited, select the end date. Otherwise, it appears as indefinite. Format esperat: dd/mm/aaaa.
 |Visible in the "Type and duration" landing page block.
 
 |Closing date
 |Optional
-|When this assembly closed. Expected format: dd/mm/yyyy.
+|When this assembly closed. Format esperat: dd/mm/aaaa.
 |Visible in the "Dates metadata" landing page block.
 
 |Closing date reason
@@ -140,7 +140,7 @@ image::spaces/assemblies/assemblies_new_form_images.png[New assembly form images
 For images, landscape images are preferred, as the service crops the image. Maximum file size: 10 MB
 
 |Banner image
-|Deprecated
+|Obsolet
 |Use link:https://docs.decidim.org/en/develop/admin/spaces/assemblies/landing_page.html#_hero_image_and_cta[Hero image and CTA] content block on the landing page instead.
 |===
 

@@ -67,7 +67,7 @@ Only a few services allow embedding (YouTube, Twitch, Jitsi, ...)
 |Required
 |On which day and time the meeting starts. Expected format: dd/mm/yyyy hh:mm.
 
-|Category
+|Categoria
 |Optional
 |Which category has the meeting. Used for filtering in the meetings list.
 
@@ -127,7 +127,7 @@ a place for children, deaf assistance, translations, etc. You can have multiple 
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Icona d'edició]
 |Edit
 |To edit a meeting.
 
@@ -135,12 +135,12 @@ a place for children, deaf assistance, translations, etc. You can have multiple 
 |Duplicate
 |Allows an administrator to duplicate quickly a meeting.
 
-|image:icons/action_folder.png[Folders icon]
-|Folders
-|For classifying Attachments.
+|image:icons/action_folder.png[Icona de carpetes]
+|Carpetes
+|Per classificar els fitxers adjunts.
 
-|image:icons/action_attachments.png[Attachments icon]
-|Attachments
+|image:icons/action_attachments.png[Icona de fitxers adjunts]
+|Fitxers adjunts
 |To add documents and images related to the meeting.
 
 |image:icons/action_registrations.png[Registrations icon]
@@ -167,16 +167,16 @@ a place for children, deaf assistance, translations, etc. You can have multiple 
 |Unpublish
 |To not show publicly the meeting.
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Icona de previsualització]
 |Preview
-|To see how it's shown in the frontend to participants.
+|Per veure com es mostra a la interfície als participants.
 
 |image:icons/action_permissions.png[Permissions icon]
 |Permissions
 |To handle the permissions of this meeting, depending on the verification a participant has. Allows an admin to configure
 who can *Join* a meeting.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Icona d'eliminació]
 |Delete
 |To delete this meeting.
 |===
@@ -244,7 +244,7 @@ open the meetings in a new tab. Only a few services allow embedding (YouTube, Tw
 |Required
 |On which day and time the meeting start. Expected format: dd/mm/yyyy hh:mm.
 
-|Category
+|Categoria
 |Optional
 |Which category has the meeting. Used for filtering in the meetings list.
 
@@ -280,9 +280,9 @@ After creating the meeting, participants can also edit and xref:components/meeti
 |===
 |Icon |Name |Definition
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Icona de previsualització]
 |Preview
-|To see how it's shown in the frontend to participants.
+|Per veure com es mostra a la interfície als participants.
 
 |image:icons/action_permissions.png[Permissions icon]
 |Permissions

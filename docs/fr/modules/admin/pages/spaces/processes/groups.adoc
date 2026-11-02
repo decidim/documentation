@@ -22,7 +22,7 @@ image::spaces/processes/processes_group_list.png[Participatory process groups li
 |Icône |Nom |Définition
 
 |image:icons/action_edit.png[Icône Modifier le groupe de concertation]
-|Editer
+|Modifier
 |Pour modifier la configuration et les fonctionnalités d'un groupe de concertation.
 
 |image:icons/action_preview.png[Icône Aperçu du groupe de concertation]
@@ -30,7 +30,7 @@ image::spaces/processes/processes_group_list.png[Participatory process groups li
 |Pour avoir un aperçu du groupe de concertation dans la page de destination.
 
 |image:icons/action_delete.png[Icône Supprimer le groupe de concertation]
-|Supprimez
+|Supprimer
 |Pour supprimer le groupe de concertation.
 |===
 
@@ -59,7 +59,7 @@ image::spaces/processes/processes_group_form_about.png[Participatory process gro
 |Une explication longue à propos du groupe de concertation.
 |Visible sur la carte de l'index des concertations et dans "titre et description" de la page de destination.
 
-|Processus connexes
+|Concertations connexes
 |Facultatif
 |La concertation à regrouper dans le groupe de concertation. Pour sélectionner plusieurs concertations, utiliser la touche *CTRL* ou *CMD*.
 |Visible dans les "Concertations" dans le bloc de la page d'accueil.
@@ -129,7 +129,7 @@ image::spaces/processes/processes_group_form_visibility.png[Participatory proces
 |===
 |Champ |Type |Description
 
-|Promu
+|Promotion
 |Facultatif
 |Cochez cette case si vous voulez que le processus ait plus de visibilité dans la liste publique Processus . C'est aussi visible dans le bloc de contenu "Concertations mises en avant" dans xref:admin:settings/homepage.adoc[page d'accueil].
 |===
@@ -183,7 +183,7 @@ Il est possible de configurer la façon dont les propositions sont listées, de 
 
 image::spaces/processes/processes_group_landing_proposals.png[Participatory process group landing page proposals block]
 
-==== Résultats
+==== Réalisations
 
 Le bloc de contenu des Réalisations permet d'afficher une sélection de réalisation à partir de différentes concertations.
 Il est possible de configurer la façon dont les réalisations sont listées, de la plus récente ou au hasard, en cliquant sur l'icône "Modifier" dans le bloc de contenu de la page d'accueil.
@@ -202,7 +202,7 @@ image::spaces/processes/processes_group_landing_events.png[Participatory process
 
 image::spaces/processes/processes_group_landing_stats.png[Participatory process group landing page statistics block]
 
-==== Processus participatifs
+==== Concertations
 
 Le bloc de contenu des concertations affiche une grille des concertations sur la page d'accueil.
 Il est possible de configurer l'affichage des processus actifs uniquement en cliquant sur l'icône « Modifier » dans le bloc de contenu de la page d'accueil.

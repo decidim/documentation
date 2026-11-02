@@ -1,27 +1,27 @@
-= Authentifizierung von Identitätsdokumenten
+= Autorisierung durch Identitätsdokumente
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-This authorization allows a participant to upload its identity documents into the platform, and get their account verified.
-These documents depend on the organization, they could be a driver's license, a passport, a national identity card,
-a club membership card, etc.
+Diese Berechtigung ermöglicht es einer teilnehmenden Person, ihre Identitätsdokumente auf die Plattform hochzuladen und ihr Konto verifizieren zu lassen.
+Diese Dokumente hängen von der Organisation ab, es könnte sich um einen Führerschein, einen Pass, eine nationale Identitätskarte,
+      einen Vereinsausweis usw. handeln.
 
-NOTE: If you don't want to collect any data, you should turn it off in the xref:configure:system.adoc[System panel].
+NOTE: Wenn Sie keine Daten sammeln möchten, sollten Sie dies im xref:configure:system.adoc[Systempanel] deaktivieren.
 
-These documents are reviewed by an administrator who can accept or reject them. It's possible to do this process
-in two ways:
+Diese Dokumente werden von einem Admin geprüft, der sie akzeptieren oder ablehnen kann. Dieser Prozess kann
+      auf zwei Arten durchgeführt werden:
 
-* *Online*: the participant is asked to upload the documents, and the administrator reviews these documents.
-* *Offline*: the participant is asked to fill in some data, and then they need to go to a physical place
-to show their documents face to face.
+* *Online*: Die teilnehmende Person wird gebeten, die Dokumente hochzuladen, und der Admin prüft diese Dokumente.
+* *Offline*: Die teilnehmende Person wird gebeten, einige Daten einzugeben, und muss dann persönlich an einen physischen Ort gehen,
+      um ihre Dokumente vorzuzeigen.
 
 == Konfiguration
 
-Click the "Config" button to configure the authorization.
+Klicken Sie auf die Schaltfläche "Konfigurieren", um die Berechtigung zu konfigurieren.
 
 image::participants/authorizations_id_document_configuration.png[ID document authorization configuration]
 
-.Berechtigungskonfiguration für ID-Dokumente
+.Autorisierungskonfiguration für ID-Dokumente
 [cols="20h,20h,~"]
 |===
 |Feld |Typ |Beschreibung
@@ -32,116 +32,114 @@ image::participants/authorizations_id_document_configuration.png[ID document aut
 
 |Anweisungen zur Offline-Verifizierung
 |Erforderlich (wenn offline ausgewählt ist)
-|Anleitungen, denen die Teilnehmer folgen müssen, um ihre Dokumente zu überprüfen, wenn die Offline-Überprüfung ausgewählt ist. Zum Beispiel,
+|Anleitungen, denen Teilnehmende folgen müssen, um ihre Dokumente zu überprüfen, wenn die Offline-Überprüfung ausgewählt ist. Zum Beispiel,
 müssen sie an einen bestimmten Ort gehen, um ihre Dokumente zu zeigen? Ist dieser Ort an einigen Tagen der Woche geöffnet? Ist es für bestimmte Stunden
 geöffnet?
 |===
 
-=== Online verification
+=== Online-Verifizierung
 
 Der Prozess ist:
 
-. Die Teilnehmer tragen ihren Dokumententyp und ihre Nummer ein und laden eine Kopie ihres Dokuments hoch.
-. Ein Administrator füllt die im hochgeladenen Bild enthaltenen Informationen aus.
-. Die Informationen sollten dem entsprechen, was der Benutzer ausgefüllt hat.
-. If the administrator can't see the information or they can't get it verified, they can reject the request and
-the user will be able to fix it.
+. Teilnehmende tragen ihren Dokumententyp und ihre Nummer ein und laden eine Kopie ihres Dokuments hoch.
+. Ein Admin füllt die im hochgeladenen Bild enthaltenen Informationen aus.
+. Die Informationen sollten dem entsprechen, was die teilnehmende Person ausgefüllt hat.
+. Wenn der Admin die Informationen nicht sehen kann oder sie nicht verifizieren kann, kann er die Anfrage ablehnen, und
+      die teilnehmende Person kann das Problem beheben.
 
-==== 1. Participant authorization creation
+==== 1. Erstellung der Teilnehmenden-Berechtigung
 
-Gehen Sie zum Autorisierungsbereich in seinem Profil oder klicken Sie auf die Schaltfläche "Aktion", wenn diese Erlaubnis angefordert wird,
-ein Teilnehmer kann das Formular zum Hochladen einer Kopie seines Dokuments sehen. Sie müssen auch ihren Dokumententyp und ihre Nummer eingeben.
+Indem eine teilnehmende Person zum Autorisierungsbereich in ihrem Profil geht oder auf die Schaltfläche "Aktion" klickt, falls diese Berechtigung angefordert wird, kann sie das Formular zum Hochladen einer Kopie ihres Dokuments sehen. Sie müssen auch ihren Dokumententyp und ihre Nummer eingeben.
 
 image::participants/authorizations_id_document_online.png[ID document authorization online form]
 
-NOTE: You can change the document types options by xref:customize:code.adoc[customizing or overriding the code].
+NOTE: Sie können die Optionen für die Dokumenttypen ändern, indem Sie xref:customize:code.adoc[den Code anpassen oder überschreiben].
 
-==== 2. Administrator document review
+==== 2. Dokumentenprüfung durch den Admin
 
-After this document is uploaded, an administrator can review it by going to the Identity documents section in the administration
-panel.
+Nachdem dieses Dokument hochgeladen wurde, kann ein Admin es prüfen, indem er im Verwaltungspanel
+      zum Abschnitt Identitätsdokumente geht.
 
 image::participants/authorizations_id_document_online_pending.png[ID document authorization pending online verification]
 
-After clicking on the verification id link or on the document, the administrator needs to review the image and fill in
-the document number in the field. This number needs to match with the one provided by the participant.
+Nach dem Klicken auf den Verifizierungs-ID-Link oder auf das Dokument muss der Admin das Bild prüfen und
+      die Dokumentennummer in das Feld eintragen. Diese Nummer muss mit der von der teilnehmenden Person angegebenen übereinstimmen.
 
-image:participants/authorizations_id_document_online_confirm.png[ID document authorization online confirmation form]
+image:participants/authorizations_id_document_online_confirm.png[Formular zur Online-Bestätigung der ID-Dokumenten-Berechtigung]
 
-==== 3. Administrator decision
+==== 3. Entscheidung des Admins
 
-There are two actions an administrator can do:
+Ein Admin kann zwei Aktionen durchführen:
 
-* Verify: the system checks if the document numbers entered by administrator and user are the same.
-* Reject: the participant have to edit their authorization if they want to get verified.
+* Verifizieren: Das System prüft, ob die vom Admin und von der teilnehmenden Person eingegebenen Dokumentennummern übereinstimmen.
+* Ablehnen: Die teilnehmende Person muss ihre Berechtigung bearbeiten, wenn sie verifiziert werden möchte.
 
-Wird die Anfrage abgelehnt, kann der Teilnehmer andere Bilder oder Dokumente angeben.
+Wird die Anfrage abgelehnt, kann die teilnehmende Person andere Bilder oder Dokumente angeben.
 
 image::participants/authorizations_id_document_online_rejected.png[ID document authorization rejected online verification]
 
-Once a participant is verified, their documents are deleted from the list.
+Sobald eine teilnehmende Person verifiziert ist, werden ihre Dokumente aus der Liste gelöscht.
 
-=== Offline verification
+=== Offline-Verifizierung
 
 Der Prozess ist:
 
-. Die Teilnehmer tragen ihren Dokumententyp und ihre Nummer ein.
-. Die Teilnehmer befolgen die ihnen zur Verfügung gestellten Anweisungen. Zum Beispiel, wenn sie an einen bestimmten Ort in einer
+. Teilnehmende tragen ihren Dokumententyp und ihre Nummer ein.
+. Teilnehmende befolgen die ihnen zur Verfügung gestellten Anweisungen. Zum Beispiel, wenn sie an einen bestimmten Ort in einer
 bestimmten Zeit gehen müssen, um ihre Dokumente anzuzeigen.
-. Ein Administrator besucht das "Offline-Überprüfung" Panel und füllt die in den physischen Dokumenten enthaltenen Informationen aus.
-. Die Informationen sollten dem entsprechen, was der Benutzer ausgefüllt hat.
-. If the administrator can't see the information or they can't get it verified, they can reject the request and
-the user is then able to fix it.
+. Ein Admin besucht das "Offline-Überprüfung" Panel und füllt die in den physischen Dokumenten enthaltenen Informationen aus.
+. Die Informationen sollten dem entsprechen, was die teilnehmende Person ausgefüllt hat.
+. Wenn der Admin die Informationen nicht sehen kann oder sie nicht verifizieren kann, kann er die Anfrage ablehnen, und
+      die teilnehmende Person kann es dann beheben.
 
-For this authorization to work, an administrator need to first configure it in the administration panel with the instructions explaining
-what the participant need to do to finish the verification process.
+Damit diese Berechtigung funktioniert, muss ein Admin sie zunächst im Verwaltungspanel konfigurieren, mit Anweisungen, die erklären,
+      was die teilnehmende Person tun muss, um den Verifizierungsprozess abzuschliessen.
 
-image:participants/authorizations_id_document_configuration_offline.png[ID document authorization configuration: offline instructions]
+image:participants/authorizations_id_document_configuration_offline.png[Konfiguration der ID-Dokumenten-Berechtigung: Offline-Anweisungen]
 
-==== 1. Participant authorization creation
+==== 1. Erstellung der Teilnehmenden-Berechtigung
 
-Gehen Sie zum Autorisierungsbereich in seinem Profil oder klicken Sie auf die Schaltfläche "Aktion", wenn diese Erlaubnis angefordert wird,
-ein Teilnehmer kann das Formular zum Ausfüllen seines Dokumenttyps und seiner Nummer sehen.
+Indem eine teilnehmende Person zum Autorisierungsbereich in ihrem Profil geht oder auf die Schaltfläche "Aktion" klickt, falls diese Berechtigung angefordert wird, kann sie das Formular zum Ausfüllen ihres Dokumenttyps und ihrer Nummer sehen.
 
-image:participants/authorizations_id_document_offline_request.png[ID document authorization offline form]
+image:participants/authorizations_id_document_offline_request.png[Offline-Formular der ID-Dokumenten-Berechtigung]
 
-==== 2. Administrator document review
+==== 2. Dokumentenprüfung durch den Admin
 
-In the administration panel, the administrator can review the request by clicking the "Offline verification" button.
+Im Verwaltungspanel kann der Admin die Anfrage prüfen, indem er auf die Schaltfläche "Offline-Verifizierung" klickt.
 
 image::participants/authorizations_id_document_offline_button.png[ID document authorization offline button in administration]
 
-Then they need to fill some data provided by the participant and review the document physically provided.
+Anschliessend müssen sie einige von der teilnehmenden Person angegebene Daten eintragen und das physisch vorgelegte Dokument prüfen.
 
 image::participants/authorizations_id_document_offline_confirm.png[ID document authorization offline confirmation form in administration]
 
-.ID Documents authorization offline form
+.Offline-Formular der ID-Dokumenten-Berechtigung
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
-|Teilnehmer-E-Mail
+|Teilnehmenden-E-Mail
 |Benötigt
-|E-Mail des registrierten Teilnehmers
+|E-Mail der registrierten teilnehmenden Person
 
 |Typ des Dokuments
 |Benötigt
-|Can be: ID or Passport
+|Kann sein: Ausweis oder Reisepass
 
 |Dokumentennummer
 |Benötigt
-|Dokumentennummer des Teilnehmers. Zum Beispiel "12345678Z"
+|Dokumentennummer der teilnehmenden Person. Zum Beispiel "12345678Z"
 |===
 
-==== 3. Administrator decision
+==== 3. Entscheidung des Admins
 
-In the cases where the verifications don't match (meaning that the email or the document number provided by the
-participant and the ones filled by the administrators aren't the same), then the participant needs to edit it within their
-user account.
+In den Fällen, in denen die Verifizierungen nicht übereinstimmen (das heisst, wenn die von der teilnehmenden Person angegebene E-Mail-Adresse oder Dokumentennummer
+      nicht mit der vom Admin eingegebenen übereinstimmt), muss die teilnehmende Person dies in ihrem
+      Benutzerkonto bearbeiten.
 
 === Beides
 
-Es ist auch möglich, diese beiden Überprüfungsmethoden zu aktivieren. In this case, the participant has to choose
-which kind of verification they want to do.
+Es ist auch möglich, diese beiden Überprüfungsmethoden zu aktivieren. In diesem Fall muss die teilnehmende Person auswählen,
+      welche Art der Verifizierung sie durchführen möchte.
 
 image::participants/authorizations_id_document_account_choose.png[Choose ID document verification kind]

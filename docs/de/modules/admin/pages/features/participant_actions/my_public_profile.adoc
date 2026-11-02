@@ -1,80 +1,80 @@
 = Mein öffentliches Profil
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Every participant has a public profile that shows details about them and their activity on the instance.
-This profile page is accessible to all participants and visitors.
+Jede teilnehmende Person hat ein öffentliches Profil, das Details zu ihr und ihrer Aktivität auf der Instanz anzeigt.
+Diese Profilseite ist für alle Teilnehmenden und Besuchenden zugänglich.
 
-=== How to find it?
+=== Wie findet man sie?
 
-To see a participant public profile, click directly in their avatar or their user name in the participant tool-tip.
+Um das öffentliche Profil einer teilnehmenden Person zu sehen, klicken Sie direkt auf ihren Avatar oder ihren Benutzernamen im Teilnehmenden-Tooltip.
 
 image::features/my_profile/profile_pop_up.png[Participant tool-tip]
 
-As a signed in participant, you can access your public profile from two places:
+Als angemeldete teilnehmende Person können Sie von zwei Stellen aus auf Ihr öffentliches Profil zugreifen:
 
-. Click in your avatar in the header, and then click in the "My public profile" menu item
-. Click in the "My public profile" link in the footer, in the "My account" section
+. Klicken Sie in der Kopfzeile auf Ihren Avatar und anschliessend auf den Menüpunkt "Mein öffentliches Profil"
+. Klicken Sie in der Fusszeile im Abschnitt "Mein Konto" auf den Link "Mein öffentliches Profil"
 
 image::features/my_profile/profile_dropdown.png[Frontend user menu dropdown]
 
-=== Profile tabs
+=== Profil-Tabs
 
-There, you'll find different tabs.
+Dort finden Sie verschiedene Tabs.
 
-NOTE: You might not see the Badges and the Groups tab if you didn't enable them in the
-xref:admin:settings/configuration.adoc[Configuration] panel.
+NOTE: Möglicherweise sehen Sie die Tabs Abzeichen und Gruppen nicht, wenn Sie sie nicht im
+      xref:admin:settings/configuration.adoc[Konfigurationspanel] aktiviert haben.
 
-==== Activity
+==== Aktivität
 
-This tab displays all the activity of the participant, starting with the most recent content.
+Dieser Tab zeigt die gesamte Aktivität der teilnehmenden Person an, beginnend mit den neuesten Inhalten.
 
 image::features/my_profile/profile_activity.png[Public profile activity tab]
 
 ==== Abzeichen
 
-Die Abzeichen des öffentlichen Profils zeigen, welche Abzeichen der*die Teilnehmer*in angesammelt hat und wie hoch ihr aktueller Stand für jedes Abzeichen ist.
+Die Abzeichen des öffentlichen Profils zeigen, welche Abzeichen die teilnehmende Person angesammelt hat und wie hoch ihr aktueller Stand für jedes Abzeichen ist.
 
-More information about badges is available on the xref:admin:features/social_features/badges.adoc[Badges feature page].
+Weitere Informationen zu Abzeichen finden Sie auf der Seite xref:admin:features/social_features/badges.adoc[Funktion Abzeichen].
 
 image::features/my_profile/profile_badges.png[Public profile badges tab]
 
 ==== Folgt
 
-Im Folgenden finden Sie eine Liste der Teilnehmer*innen und Gruppen, denen der*dem Teilnehmer*in derzeit folgt.
-By following another participant or a group on the platform, the participant receives notifications about the activity
-done by those participants or groups on the platform. Some participants may also require that they need to be following
-a participant before they can exchange private messages with each other.
+Im Folgenden finden Sie eine Liste der Teilnehmenden und Gruppen, denen die teilnehmende Person derzeit folgt.
+Indem sie einer anderen teilnehmenden Person oder einer Gruppe auf der Plattform folgt, erhält die teilnehmende Person Benachrichtigungen über die Aktivitäten,
+      die diese Teilnehmenden oder Gruppen auf der Plattform durchführen. Einige Teilnehmende benötigen möglicherweise auch, dass sie einer
+      teilnehmenden Person folgen müssen, bevor sie private Nachrichten miteinander austauschen können.
 
 image::features/my_profile/profile_follows.png[Public profile follows tab]
 
 ==== Follower
 
-The followers section contains a list of participants and groups that are following the participant.
+Der Abschnitt Follower enthält eine Liste von Teilnehmenden und Gruppen, die der teilnehmenden Person folgen.
 
 image::features/my_profile/profile_followers.png[Public profile followers tab]
 
 ==== Gruppen
 
-Der Abschnitt Gruppen enthält alle Gruppen, zu denen der*die Benutzer*in gehört.
+Der Abschnitt Gruppen enthält alle Gruppen, zu denen die teilnehmende Person gehört.
 
 image::features/my_profile/profile_groups.png[Public profile groups tab]
 
 == Konfiguration
 
-=== When on another participant profile
+=== Auf dem Profil einer anderen teilnehmenden Person
 
-Logged in participants can perform two actions from another participant public profile page:
+Angemeldete Teilnehmende können auf der öffentlichen Profilseite einer anderen teilnehmenden Person zwei Aktionen durchführen:
 
-. Send them a message
-. Follow them
-. Report them
+. Ihr eine Nachricht senden
+. Ihr folgen
+. Sie melden
 
-=== When on your own profile
+=== Auf dem eigenen Profil
 
-Logged in participants can perform two actions from their public profile page:
+Angemeldete Teilnehmende können auf ihrer öffentlichen Profilseite zwei Aktionen durchführen:
 
-. Edit their profile: When clicking this button, they're redirected to their xref:admin:features/participant_actions/my_account.adoc[account].
-. Create a group: When clicking this button, they're redirected to the xref:admin:features/participant_actions/group_profile.adoc[group creation form].
+. Ihr Profil bearbeiten: Beim Klicken auf diese Schaltfläche werden sie zu ihrem xref:admin:features/participant_actions/my_account.adoc[Konto] weitergeleitet.
+. Eine Gruppe erstellen: Beim Klicken auf diese Schaltfläche werden sie zum xref:admin:features/participant_actions/group_profile.adoc[Formular zur Gruppenerstellung] weitergeleitet.
 
-NOTE: The group creation option is only available when groups are enabled for the organization.
+NOTE: Die Option zur Gruppenerstellung ist nur verfügbar, wenn Gruppen für die Organisation aktiviert sind.

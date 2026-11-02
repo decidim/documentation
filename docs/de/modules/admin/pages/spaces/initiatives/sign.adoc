@@ -1,27 +1,27 @@
 = Unterzeichnen Sie eine Initiative
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Initiatives are meant to be signed, whether with online or in-person signatures. The goal of an initiative author is to promote its initiative
-and gather support for it.
+Initiativen sind dazu gedacht, unterschrieben zu werden, sei es mit Online- oder Präsenz-Unterschriften. Das Ziel der Urheberschaft einer Initiative ist es, ihre Initiative zu fördern
+und Unterstützung dafür zu sammeln.
 
 == Konfiguration
 
-=== Signature process
+=== Unterschriftenprozess
 
-Once the initiative is published by an administrator, it becomes visible in the initiatives listing page.
+Sobald die Initiative von einem Admin veröffentlicht wurde, wird sie auf der Auflistungsseite der Initiativen sichtbar.
 
 image::spaces/initiatives/initiatives_index_front_with_initiatives.png[Initiatives index in front with initiatives]
 
-The initiative page displays a "Sign" button and a signature counter, with the signature goal to reach and the current signature number.
+Die Initiativseite zeigt eine Schaltfläche "Unterschreiben" und einen Unterschriftenzähler mit dem zu erreichenden Unterschriftenziel und der aktuellen Anzahl an Unterschriften.
 
 image::spaces/initiatives/initiative_show_published.png[Initiative show after it was published]
 
-Authorized participants only have to click the "Sign" button for their signature to be taken into account.
+Autorisierte Teilnehmende müssen nur auf die Schaltfläche "Unterschreiben" klicken, damit ihre Unterschrift berücksichtigt wird.
 
-NOTE: Depending on the authorizations you ask for signing, the process may be different and include additional steps.
+NOTE: Je nach den Berechtigungen, die Sie für die Unterschrift verlangen, kann der Prozess unterschiedlich sein und zusätzliche Schritte umfassen.
 
-Once the participant clicked the button, the signature is incremented in the signature counter.
-If it's authorized for this initiative type, participants can also undo their signature by clicking the "Already signed" button.
+Sobald die teilnehmende Person auf die Schaltfläche geklickt hat, wird die Unterschrift im Unterschriftenzähler erhöht.
+Wenn dies für diesen Initiativtyp erlaubt ist, können Teilnehmende ihre Unterschrift auch rückgängig machen, indem sie auf die Schaltfläche "Bereits unterschrieben" klicken.
 
 image::spaces/initiatives/initiative_show_signed.png[Initiative show after it was signed]

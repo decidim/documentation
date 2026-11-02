@@ -1,40 +1,40 @@
-= Verifications conflicts
+= Verifizierungskonflikte
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-A verification conflict can happen when authorizations are enabled, and some participants create several accounts
-or get impersonated.
+Ein Verifizierungskonflikt kann auftreten, wenn Berechtigungen aktiviert sind und einige Teilnehmende mehrere Konten erstellen
+      oder deren Identität angenommen wird.
 
 Zum Beispiel:
 
-. A participant create an account, and get verified against an authorization.
-. Then they create another account and try to get verified again against the same authorization.
+. Eine teilnehmende Person erstellt ein Konto und wird gegen eine Berechtigung verifiziert.
+. Anschliessend erstellt sie ein weiteres Konto und versucht, sich erneut gegen dieselbe Berechtigung verifizieren zu lassen.
 
-This can also happens with impersonations:
+Dies kann auch bei Identitätsübernahmen auftreten:
 
-. A participant get xref:admin:participants/impersonations.adoc[impersonated] with their data, but don't enter an email
-. Then they create an account, and try to verify themselves with the same verification
+. Die Identität einer teilnehmenden Person wird mit ihren Daten xref:admin:participants/impersonations.adoc[angenommen], sie gibt jedoch keine E-Mail-Adresse ein
+. Anschliessend erstellt sie ein Konto und versucht, sich mit derselben Verifizierung zu verifizieren
 
-For security, try to be extra cautious in these cases, and make sure an administrator reviews these potential conflicts.
-It depends a lot on which kind of verifications you've enabled in your organization, so most of the time an organization
-don't see any conflicts appear in this panel.
+Aus Sicherheitsgründen sollten Sie in diesen Fällen besonders vorsichtig sein und sicherstellen, dass ein Admin diese potenziellen Konflikte prüft.
+Dies hängt stark davon ab, welche Art von Verifizierungen Sie in Ihrer Organisation aktiviert haben; daher sieht eine Organisation
+      meistens keine Konflikte in diesem Panel.
 
-image:participants/verifications_conflicts.png[Verification's conflicts panel]
+image:participants/verifications_conflicts.png[Panel für Verifizierungskonflikte]
 
-When there is a verification conflict, administrators receive an email notification.
+Wenn ein Verifizierungskonflikt vorliegt, erhalten Admins eine E-Mail-Benachrichtigung.
 
 == Konfiguration
 
-=== Manage verifications conflicts
+=== Verifizierungskonflikte verwalten
 
-In the verifications conflict panel, you can find all the conflicts, with:
+Im Panel für Verifizierungskonflikte finden Sie alle Konflikte mit:
 
-* *User*: name of the non managed participant who tried to get verified from their account.
-* *Managed user*: name of the impersonated user with the same verification data.
-* *Attempts*: number of time the user tried to get verified with their data.
-* *Solved*: if the verification conflict was solved or not.
+* *Teilnehmende Person*: Name der nicht verwalteten teilnehmenden Person, die versucht hat, sich über ihr Konto verifizieren zu lassen.
+* *Verwaltete teilnehmende Person*: Name der Person, deren Identität mit denselben Verifizierungsdaten angenommen wurde.
+* *Versuche*: Anzahl der Versuche der teilnehmenden Person, sich mit ihren Daten verifizieren zu lassen.
+* *Gelöst*: ob der Verifizierungskonflikt gelöst wurde oder nicht.
 
-You can search for conflicts by participant email, name, or nickname in the search bar.
+Sie können in der Suchleiste nach Konflikten anhand der E-Mail-Adresse, des Namens oder des Spitznamens der teilnehmenden Person suchen.
 
 === Aktionen
 
@@ -43,16 +43,16 @@ You can search for conflicts by participant email, name, or nickname in the sear
 |===
 |Icon |Name |Definition
 
-|image:icons/action_transfer_user.png[Transfer user]
+|image:icons/action_transfer_user.png[Symbol: Teilnehmende Person übertragen]
 |Benutzer übertragen
-|To solve the verification conflict.
+|Um den Verifizierungskonflikt zu lösen.
 |===
 
 === Benutzer übertragen
 
-The transfer user button allows to solve the conflict between both account.
+Die Schaltfläche zur Übertragung der teilnehmenden Person ermöglicht es, den Konflikt zwischen beiden Konten zu lösen.
 
-image:participants/verifications_conflicts_transfer_user.png[Transfer user form]
+image:participants/verifications_conflicts_transfer_user.png[Formular zur Übertragung der teilnehmenden Person]
 
 .Benutzer-Formular übertragen
 [cols="20h,10h,~"]
@@ -61,12 +61,12 @@ image:participants/verifications_conflicts_transfer_user.png[Transfer user form]
 
 |Grund
 |Benötigt
-|Why you want to transfer the user account
+|Warum Sie das Konto der teilnehmenden Person übertragen möchten
 
 |E-Mail
 |Benötigt
 |Die E-Mail des zu übertragenden Benutzers
 |===
 
-After the user is transferred, both accounts, the managed one and the new one, is merged into one, that takes the
-email address entered in the form, and the valid verification is transferred to this account.
+Nachdem die teilnehmende Person übertragen wurde, werden beide Konten – das verwaltete und das neue – zu einem einzigen zusammengeführt, das die
+      im Formular eingegebene E-Mail-Adresse übernimmt, und die gültige Verifizierung wird auf dieses Konto übertragen.

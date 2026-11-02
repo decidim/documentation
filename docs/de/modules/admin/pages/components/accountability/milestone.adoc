@@ -1,9 +1,9 @@
-= Project evolution
+= Projektentwicklung
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-For participants to be able to follow and monitor the evolution of the projects, administrators can create timeline entries by
-clicking the image:icons/action_clock.png[Project evolution icon].
+Damit Teilnehmende die Entwicklung der Projekte verfolgen und überwachen können, können Admins Einträge im Zeitverlauf erstellen, indem sie auf das
+image:icons/action_clock.png[Symbol: Projektentwicklung] klicken.
 
 image::components/accountability/results_entries.png[Result page with timeline entries]
 
@@ -11,26 +11,26 @@ image::components/accountability/results_entries.png[Result page with timeline e
 
 image::components/accountability/timeline_list.png[Timeline entries list]
 
-There, you can create and manage the different implementation phases for the result, and create new timeline entries.
+Dort können Sie die verschiedenen Umsetzungsphasen für das Ergebnis erstellen und verwalten sowie neue Einträge im Zeitverlauf erstellen.
 
 image::components/accountability/new_entry.png[New timeline entry form]
 
 
-.New entry form
+.Formular für neuen Eintrag
 |===
 |Feld |Typ |Beschreibung
 
 |Datum
 |Benötigt
-|Erwartetes Format: dd/mm/yyy
+|Erwartetes Format: dd/mm/yyyy
 
 |Titel
 |Benötigt
-|Title of the timeline entry.
+|Titel des Eintrags im Zeitverlauf.
 
 |Beschreibung
 |Optional
-|Description of the timeline entry.
+|Beschreibung des Eintrags im Zeitverlauf.
 |===
 
-The timeline entries are then available on the result page.
+Die Einträge im Zeitverlauf sind anschliessend auf der Ergebnisseite verfügbar.

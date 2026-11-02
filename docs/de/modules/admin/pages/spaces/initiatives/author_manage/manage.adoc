@@ -1,34 +1,34 @@
-= Manage initiative as an author
+= Initiative als Autorin oder Autor verwalten
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Initiatives have the peculiarity of being both manageable by administrators and their authors.
-Administrators have greater rights, but authors can also manage a certain number of configurations of their initiatives.
+Initiativen haben die Besonderheit, dass sie sowohl von Admins als auch von ihrer Autorin oder ihrem Autor verwaltet werden können.
+Admins haben mehr Rechte, aber auch die Autorin oder der Autor kann eine bestimmte Anzahl von Konfigurationen ihrer Initiativen verwalten.
 
 == Konfiguration
 
-=== Edit the initiative
+=== Die Initiative bearbeiten
 
-Once the initiative is created, the author can see the initiative page, but until the initiative is reviewed and accepted by an administrator, through the technical validation,
-it is not published and visible for all the participants.
+Sobald die Initiative erstellt wurde, kann die Autorin oder der Autor die Initiativseite sehen. Bis die Initiative jedoch durch die technische Validierung von einem Admin geprüft und akzeptiert wurde,
+ist sie nicht veröffentlicht und für alle Teilnehmenden sichtbar.
 
 image::spaces/initiatives/initiative_show.png[Initiative show]
 
-Once the initiative is created and before it's sent to technical validation, an author can edit and correct the initiative if it has any error.
+Sobald die Initiative erstellt wurde und bevor sie zur technischen Validierung gesendet wird, kann die Autorin oder der Autor die Initiative bearbeiten und Fehler korrigieren.
 
 image::spaces/initiatives/initiative_edit.png[Initiative edit]
 
-If the xref:admin:spaces/initiatives/author_manage/committee.adoc[Promoting committee] is enabled for the initiative type of this initiative, the author of an initiative can manage requests and committee members at the end of the edit form.
+Wenn das xref:admin:spaces/initiatives/author_manage/committee.adoc[Initiativkomitee] für den Initiativtyp dieser Initiative aktiviert ist, kann die Autorin oder der Autor der Initiative am Ende des Bearbeitungsformulars Anfragen und Mitglieder des Komitees verwalten.
 
-=== Send to technical validation
+=== Zur technischen Validierung senden
 
-Once all the conditions are right, if the initiative is ready and has enough committee members, the author can send the initiative to technical validation.
-When clicking on the "Send to technical validation" button, a modal is displayed to warn the author that they won't be able to edit it after this action.
+Sobald alle Voraussetzungen erfüllt sind, kann die Autorin oder der Autor die Initiative zur technischen Validierung senden, wenn sie bereit ist und genügend Mitglieder des Komitees hat.
+Beim Klicken auf die Schaltfläche "Zur technischen Validierung senden" wird ein Modal angezeigt, das die Autorin oder den Autor darauf hinweist, dass die Initiative nach dieser Aktion nicht mehr bearbeitet werden kann.
 
 image::spaces/initiatives/initiative_send_to_technical_validation.png[Send initiative to technical validation]
 
-=== Retrieve created initiatives
+=== Erstellte Initiativen wiederfinden
 
-Authors can also find their initiatives in the initiatives index by un-checking the "Open" status filter, and clicking on the "My initiatives" filter.
+Autorinnen und Autoren können ihre Initiativen auch in der Initiativenübersicht finden, indem sie den Statusfilter "Offen" deaktivieren und auf den Filter "Meine Initiativen" klicken.
 
 image::spaces/initiatives/initiative_filters_my_initiatives.png[Filters for my initiatives]
