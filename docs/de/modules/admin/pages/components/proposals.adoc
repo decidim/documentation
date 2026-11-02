@@ -58,9 +58,9 @@ image::components/proposals/component_02.png[Add component form]
 |===
 |Feld |Typ |Beschreibung
 
-|Select filters for the component
+|Filter für die Komponente auswählen
 |Optional
-|Select if you want to use filters in this component.
+|Aktivieren, wenn die Themenfilterung in dieser Komponente erfolgen soll.
 
 |Abstimmungslimit pro teilnehmender Person
 |Optional
@@ -175,13 +175,13 @@ image::components/proposals/component_03.png[Add component form]
 |===
 |Feld |Typ |Beschreibung
 
-|Likes enabled
+|Unterstützungsfunktion aktiviert
 |Optional
 |Um Teilnehmenden zu ermöglichen, mit einer Schaltfläche "Gefällt mir" öffentlich Unterstützung für diese Vorschläge zu zeigen.
 
-|Likes blocked
+|Unterstützungsfunktion gesperrt
 |Optional
-|Check for participants to be able to see the existing likes but not make any new one.
+|Aktivieren, damit Teilnehmende die bestehenden Stimmen sehen, aber keine neuen abgeben können.
 
 |Abstimmung aktiviert
 |Optional
