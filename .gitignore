@@ -1,6 +1,8 @@
 node_modules/
 build/
 .cache
+.auth/
+__pycache__/
 .devcontainer/devcontainer.local.json
 .env
 .auth/
