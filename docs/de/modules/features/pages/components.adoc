@@ -24,15 +24,9 @@ Weitere mit Vorschlägen verknüpfte Funktionen sind:
 * *Assistent zur Vorschlagserstellung*: Während ein Vorschlag erstellt wird, wird die teilnehmende Person durch den Prozess begleitet, der in verschiedene Schritte unterteilt ist, mit kontextbezogener Hilfe und Vorschauen, bevor der Vorschlag veröffentlicht wird.
 * *Änderung und Widerruf von Vorschlägen*: Der Autor eines Vorschlags kann ihn modifizieren und/oder zurückziehen, bevor die Supportphase eröffnet wird.
 * *Versionskontrolle*: Dies ermöglicht die Aufzeichnung aller Änderungen an einem Vorschlag sowie Code-Generierung zur Überprüfung der Integrität des Vorschlags.
-* *Ähnlichkeiten erkennen*: Dies erlaubt jedem, der einen neuen Vorschlag macht, ähnliche zu finden, die zuvor auf der Plattform gemacht wurden, und so Doppelungen zu vermeiden.
 * *Verbindungen zwischen Vorschlägen*: Vorschläge können über Links im Kommentarbereich miteinander verbunden werden damit verbundene Vorschläge als Karten anzeigen und Benachrichtigungen über das Bestehen einer neuen Verbindung geben.
 * *Befürwortung von Vorschlägen*: Teilnehmende und Kollektive können Vorschläge unterstützen und diese öffentliche Unterstützung wird im Vorschlag dargestellt. Die Anhänger der Befürworter werden darüber informiert, dass der folgende Vorschlag gebilligt wurde.
 * *Änderungsanträge*: Jede teilnehmende Person kann den Text eines Vorschlags bearbeiten und ein Untervorschlag wird im Änderungsmodus erstellt (wie Pull Request in Github). Dieser Untervorschlag kann Zustimmungen und Unterstützung sammeln. Außerdem kann der Verfasser des Vorschlags den Änderungsantrag (oder Untervorschlag) akzeptieren oder ablehnen. Wird ein Untervorschlag abgelehnt, kann der Autor ihn in einen offiziellen Vorschlag umwandeln.
-* *Gemeinsamer Entwurf für Vorschläge*: Decidim ermöglicht Zusammenarbeit und Mitgestaltung bei Vorschlägen. Es enthält die folgenden Funktionen:
-** Erstellung von groben Entwürfen mit zahlreichen Autoren.
-** Auflistung von gemeinschaftlichen Entwürfen
-** Kommentare in Entwürfen
-** Um Hilfe bitten und die Hilfe anderer Mitwirkender annehmen
 
 == Unterstützungen
 
