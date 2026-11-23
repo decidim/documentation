@@ -1,43 +1,43 @@
 = Antworten
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Proposals answers allow administrators or valuators to review a proposal and give it an official response, with associated statuses.
-It allows then to filter the proposals by their statuses, read the answer that was given, and import the accepted proposals in the
-xref:components/budgets.adoc[budgets] component.
+Antworten auf Vorschläge ermöglichen es Admins oder Bewertenden, einen Vorschlag zu prüfen und ihm eine offizielle Antwort mit zugehörigem Status zu geben.
+Dies ermöglicht es dann, die Vorschläge nach ihrem Status zu filtern, die gegebene Antwort zu lesen und die akzeptierten Vorschläge in die
+xref:components/budgets.adoc[Budgets]-Komponente zu importieren.
 
-NOTE: To learn more about valuators, refer to xref:admin:participants/admins.adoc#_valuators[Valuators administrators].
+NOTE: Um mehr über Bewertende zu erfahren, siehe xref:admin:participants/admins.adoc#_valuators[Bewertende].
 
 image::components/proposals/answers/proposal_answer_state_accepted.png[Proposal answer state: Accepted]
 
 == Konfiguration
 
-=== Answer a proposal
+=== Einen Vorschlag beantworten
 
-For answering a proposal, search for the proposal you want to answer and click in the image:icons/action_answers.png[Answer proposal icon]
-Answer icon.
+Um einen Vorschlag zu beantworten, suchen Sie den Vorschlag, den Sie beantworten möchten, und klicken Sie auf das image:icons/action_answers.png[Symbol: Vorschlag beantworten]
+Antworten-Symbol.
 
-You are then redirected on the answer page, that contains three sections:
+Sie werden dann auf die Antwortseite weitergeleitet, die drei Abschnitte enthält:
 
 ==== Metadaten
 
-This section displays the general information about the proposal, like its link, its author, the proposal description,
-how many votes, likes, or comments it received, etc.
+Dieser Abschnitt zeigt die allgemeinen Informationen zum Vorschlag an, wie seinen Link, seinen Autor bzw. seine Autorin, die Beschreibung des Vorschlags,
+die Anzahl der erhaltenen Stimmen, „Gefällt mir“-Angaben oder Kommentare usw.
 
 image::components/proposals/answers/proposal_answer_metadata.png[Proposal answer metadata form]
 
 ==== Private Notizen
 
-The Private notes section allows administrators or valuators to leave internal notes, not visible by the participants.
+Im Abschnitt Private Notizen können Admins oder Bewertende interne Notizen hinterlassen, die für Teilnehmende nicht sichtbar sind.
 
 image::components/proposals/answers/proposal_answer_notes.png[Proposal answer private notes form]
 
 ==== Antwort
 
-This section allows administrators or valuators to give an answer and a status to the proposal.
+In diesem Abschnitt können Admins oder Bewertende dem Vorschlag eine Antwort und einen Status zuweisen.
 
-NOTE: To create proposal answer template and quickly answer different proposals, see the
-xref:admin:templates/proposal_answers.adoc[Proposal answers] article.
+NOTE: Um eine Vorlage für Vorschlagsantworten zu erstellen und verschiedene Vorschläge schnell zu beantworten, siehe den Artikel
+xref:admin:templates/proposal_answers.adoc[Vorschlagsantworten].
 
 image::components/proposals/answers/proposal_answer.png[Proposal answer form]
 
@@ -46,48 +46,47 @@ image::components/proposals/answers/proposal_answer.png[Proposal answer form]
 |===
 |Feld |Typ |Beschreibung
 
-|Select a template answer
+|Eine Antwortvorlage auswählen
 |Optional
-|Allows selecting a xref:admin:templates/proposal_answers.adoc[Proposal answers template], to quickly assign a status to the proposal
-and use the template answer associated.
+|Ermöglicht die Auswahl einer xref:admin:templates/proposal_answers.adoc[Vorschlagsantwort-Vorlage], um dem Vorschlag schnell einen Status zuzuweisen
+und die zugehörige Antwortvorlage zu verwenden.
 
 |Status
 |Benötigt
-|By default, you can choose between: Not answered, Evaluating, Accepted, Rejected. You can edit and add statuses in the proposal
-management page.
+|Standardmässig können Sie zwischen: Unbeantwortet, In Bewertung, Akzeptiert, Abgelehnt wählen. Sie können Status auf der Verwaltungsseite für Vorschläge bearbeiten und hinzufügen.
 
 |Antwort
 |Optional
-|An explanation on why the proposal is accepted, rejected, evaluated, or else.
+|Eine Erklärung, warum der Vorschlag akzeptiert, abgelehnt, bewertet oder anders behandelt wurde.
 
 |Kosten
 |Benötigt
-|Required if "Enable costs on proposal answers" is enabled in the proposals component settings and if the status is accepted.
-A number that indicates the cost of the proposal.
+|Erforderlich, wenn "Kosten bei Vorschlagsantworten aktivieren" in den Einstellungen der Vorschläge-Komponente aktiviert ist und der Status akzeptiert lautet.
+Eine Zahl, die die Kosten des Vorschlags angibt.
 
 |Kostenbericht
 |Benötigt
-|Required if "Enable costs on proposal answers" is enabled in the proposals component settings and if the status is accepted.
+|Erforderlich, wenn "Kosten bei Vorschlagsantworten aktivieren" in den Einstellungen der Vorschläge-Komponente aktiviert ist und der Status akzeptiert lautet.
 
-|An explanation of the cost of the proposal.
+|Eine Erklärung zu den Kosten des Vorschlags.
 |Ausführungszeitraum
 |Benötigt
 |===
 
-=== Statuses
+=== Status
 
-If the proposals component setting "Publish proposal answers immediately" is checked, then the answer is visible to the public
-immediately after you clicked on the "Answer" button.
+Wenn die Einstellung "Vorschlagsantworten sofort veröffentlichen" der Vorschläge-Komponente aktiviert ist, ist die Antwort sofort nach dem Klicken auf die Schaltfläche "Antworten"
+öffentlich sichtbar.
 
-The statuses are visible on the proposals list, cards, and pages. New statuses can be created, and default ones can be edited or deleted.
+Die Status sind in der Vorschlagsliste, auf den Karten und den Seiten sichtbar. Neue Status können erstellt werden, und Standardstatus können bearbeitet oder gelöscht werden.
 
 image::components/proposals/answers/proposal_answer_state_accepted_card.png[Proposal card answer custom status]
 
-Statuses can be adapted to your organization needs by clicking the "Statuses" button in the administration proposal list.
+Status können an die Bedürfnisse Ihrer Organisation angepasst werden, indem Sie auf die Schaltfläche "Status" in der Verwaltungsliste der Vorschläge klicken.
 
 image::components/proposals/answers/proposal_statuses_back.png[Proposal statuses list]
 
-Click the "New status" button to start creating your custom statuses.
+Klicken Sie auf die Schaltfläche "Neuer Status", um mit der Erstellung Ihrer eigenen Status zu beginnen.
 
 .Antwort für Vorschlagsformular
 [cols="20h,10h,~"]
@@ -96,39 +95,39 @@ Click the "New status" button to start creating your custom statuses.
 
 |Titel
 |Benötigt
-|The status title, displayed on the proposal cards, lists and filters.
+|Der Statustitel, der auf den Vorschlagskarten, -listen und -filtern angezeigt wird.
 
-|Answer heading
+|Antwortüberschrift
 |Benötigt
-|The heading of the answer, that appears on the proposal page in the answer box.
+|Die Überschrift der Antwort, die auf der Vorschlagsseite im Antwortfeld erscheint.
 
-|Color
+|Farbe
 |Benötigt
-|The color of the status box and tag.
+|Die Farbe des Status-Felds und -Tags.
 |===
 
-A preview of the answer box and tag is displayed at the bottom of the form.
+Eine Vorschau des Antwortfelds und -Tags wird unten im Formular angezeigt.
 
 image::components/proposals/answers/proposal_status_form.png[Proposal new status form]
 
 === Veröffentlichung
 
-You can control when the answers are published by using the "Publish proposal answers immediately" checkbox in the proposal configuration.
-For enabling automatic publication, check this box.
+Sie können steuern, wann die Antworten veröffentlicht werden, indem Sie das Kontrollkästchen "Vorschlagsantworten sofort veröffentlichen" in der Vorschlagskonfiguration verwenden.
+Um die automatische Veröffentlichung zu aktivieren, aktivieren Sie dieses Kontrollkästchen.
 
-If you want to control when to publish the answers of a proposal or multiple proposals, follow these steps:
+Wenn Sie steuern möchten, wann die Antworten eines oder mehrerer Vorschläge veröffentlicht werden, gehen Sie wie folgt vor:
 
-. Don't tick the "Publish proposal answers immediately" checkbox in the proposal component configuration
-. Answer the proposals (answers are not published yet)
-. When you want to publish the answers, select the proposals
+. Deaktivieren Sie das Kontrollkästchen "Vorschlagsantworten sofort veröffentlichen" in der Konfiguration der Vorschläge-Komponente
+. Beantworten Sie die Vorschläge (die Antworten sind noch nicht veröffentlicht)
+. Wenn Sie die Antworten veröffentlichen möchten, wählen Sie die Vorschläge aus
 . Klicken Sie auf die Schaltfläche "Aktionen"
-. Click on the "Publish answers" option
+. Klicken Sie auf die Option "Antworten veröffentlichen"
 
 image::components/proposals/answers/proposal_answer_publish.png[Proposal answer publication: action]
 
-Then, click the "Publish" button.
+Klicken Sie anschliessend auf die Schaltfläche "Veröffentlichen".
 
 image::components/proposals/answers/proposal_answer_publish_button.png[Proposal answer publication: publish button]
 
-NOTE: If you have unchecked the "Publish proposal answers immediately" then answered the proposals, and then checked the option again,
-the answers aren't published automatically. You still need to publish the answers manually with the "Actions" button.
+NOTE: Wenn Sie das Kontrollkästchen "Vorschlagsantworten sofort veröffentlichen" deaktiviert, die Vorschläge dann beantwortet und die Option anschliessend wieder aktiviert haben,
+werden die Antworten nicht automatisch veröffentlicht. Sie müssen die Antworten weiterhin manuell über die Schaltfläche "Aktionen" veröffentlichen.

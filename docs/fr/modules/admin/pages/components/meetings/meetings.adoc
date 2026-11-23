@@ -141,19 +141,19 @@ Des *Services* pour une réunion peuvent être définis. Ce sont des méta-donn�
 |Ajouter des documents et des images liés à la réunion.
 
 |[Icône d'inscription]
-|xref:admin:components/meetings/registrations.adoc[Registrations]
+|xref:admin:components/meetings/registrations.adoc[Inscriptions]
 |Permet de définir qui peut s'inscrire à la réunion. Disponible uniquement si les inscriptions sont activées dans le formulaire de réunion.
 
 |[Icône de l'ordre du jour]
-|xref:admin:components/meetings/agenda.adoc[Agenda]
+|xref:admin:components/meetings/agenda.adoc[Ordre du jour]
 |Publier les sujets à discuter lors de la réunion.
 
 |[Icône de sondage]
-|xref:admin:components/meetings/polls.adoc[Polls]
+|xref:admin:components/meetings/polls.adoc[Sondages]
 |Gérer les sondages pour la réunion.
 
 |image:icons/action_close.png[Icône fermée]
-|xref:admin:components/meetings/close.adoc[Close]
+|xref:admin:components/meetings/close.adoc[Clôture]
 |Permet à unx administrateur·ice de clore la réunion avec les procès-verbaux de la discussion et d'ajouter des informations supplémentaires.
 
 |[Icône de publication]

@@ -1,115 +1,115 @@
-= Sortierungen
+= Auslosungen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-The Sortitions component allows to sort a number of proposals with random, yet reproducible, procedures that guarantees non-biased
-and uniform distributions.
+Die Komponente Auslosung ermöglicht es, eine Anzahl von Vorschlägen mit zufälligen, aber reproduzierbaren Verfahren auszulosen, die eine unverzerrte
+und gleichmässige Verteilung garantieren.
 
-For example, it can be useful for sorting candidates for a jury, or participatory budgeting proposals.
+Sie kann beispielsweise nützlich sein, um Kandidierende für eine Jury auszulosen oder Vorschläge für ein partizipatives Budget.
 
-To conduct a sortition, you need a dice or another random way to generate a number from 1 to 6, as well as witnesses.
+Um eine Auslosung durchzuführen, benötigen Sie einen Würfel oder eine andere zufällige Methode, um eine Zahl von 1 bis 6 zu erzeugen, sowie Zeugen.
 
 image::components/sortitions/example01.png[Example of a sortition]
 
 == Konfiguration
 
-To create a Sortitions component, first go in the xref:admin:spaces.adoc[participatory space] where you want to create it.
+Um eine Auslosungs-Komponente zu erstellen, gehen Sie zunächst zum xref:admin:spaces.adoc[partizipativen Raum], in dem Sie sie erstellen möchten.
 
 image::components/sortitions/component_sortitions.png[Add Sortitions component button]
 
-Then:
+Dann:
 
-. Click on the "Components" item in the secondary menu
-. Click the "Add component" button
-. Select "Sortitions"
-. Fill the component creation form
+. Klicken Sie im Sekundärmenü auf den Punkt "Komponenten"
+. Klicken Sie auf die Schaltfläche "Komponente hinzufügen"
+. Wählen Sie "Auslosung"
+. Füllen Sie das Formular zur Komponentenerstellung aus
 
-You can still update this form and the configuration after creating the component, by clicking the
-image:icons/action_configure.png[Configure icon] Configure icon in the components list.
+Sie können dieses Formular und die Konfiguration auch nach der Erstellung der Komponente noch aktualisieren, indem Sie in der Komponentenliste auf das
+image:icons/action_configure.png[Symbol: Konfigurieren] Konfigurieren-Symbol klicken.
 
 image::components/sortitions/component.png[Add component form]
 
-.Add component: Sortitions form
+.Komponente hinzufügen: Formular für Auslosung
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Name
 |Benötigt
-|Title of this component.
+|Titel dieser Komponente.
 
-|Bestellposition
+|Reihenfolge
 |Optional
-|The order of the component in relation with the other components. Eine niedrigere Zahl bedeutet eine höhere Priorität.
-For instance, if you have two components, "Component a" with weight "10" and "Component b" with weight "0"
-then "component b" is first when ordering.
+|Die Reihenfolge der Komponente im Verhältnis zu den anderen Komponenten. Eine niedrigere Zahl bedeutet eine höhere Priorität.
+Wenn Sie beispielsweise zwei Komponenten haben, "Komponente a" mit der Gewichtung "10" und "Komponente b" mit der Gewichtung "0",
+steht "Komponente b" bei der Sortierung an erster Stelle.
 |===
 
-.Add component: Sortitions form - Global settings
+.Komponente hinzufügen: Formular für Auslosung - Globale Einstellungen
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Kommentare aktiviert
 |Optional
-|Whether you want to have comments in the sortitions.
+|Ob Sie Kommentare bei den Auslosungen aktivieren möchten.
 
 |Maximale Länge der Kommentare
 |Optional
-|The characters limit that participants have when making comments. Lassen Sie 0 für den Standardwert.
+|Das Zeichenlimit, das Teilnehmenden beim Verfassen von Kommentaren zur Verfügung steht. Lassen Sie 0 für den Standardwert.
 |===
 
-=== Create a sortition
+=== Eine Auslosung erstellen
 
 image::components/sortitions/new_sortition_backend.png[New sortition backend form]
 
-.New sortition form
+.Formular für neue Auslosung
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Titel
 |Benötigt
-|The title of this sortition.
+|Der Titel dieser Auslosung.
 
-|Proposals set
+|Vorschlagsmenge
 |Benötigt
-|The proposal component to base the sortition on. Both components must be in the same space.
+|Die Vorschläge-Komponente, auf der die Auslosung basiert. Beide Komponenten müssen sich im selben Raum befinden.
 
-|Categories of the set of proposals in which you want to apply the draw
+|Kategorien der Vorschlagsmenge, auf die Sie die Auslosung anwenden möchten
 |Optional
-|If you have categories, can allow to do the sortition only inside one of the categories.
+|Falls Sie Kategorien haben, kann dies die Auslosung auf nur eine der Kategorien beschränken.
 
-|Number of proposals to be selected
+|Anzahl der auszuwählenden Vorschläge
 |Benötigt
-|Indicate the number of proposals you want to be selected by drawing lots of the group of proposals you have previously chosen.
+|Geben Sie an, wie viele Vorschläge aus der zuvor ausgewählten Vorschlagsgruppe per Losverfahren ausgewählt werden sollen.
 
-|Witnesses
+|Zeugen
 |Benötigt
-|The witnesses attending the draw and who can vouch for its authenticity.
+|Die Zeugen, die bei der Auslosung anwesend sind und deren Echtheit bestätigen können.
 
-|Sortition information
+|Informationen zur Auslosung
 |Benötigt
-|Explanation on why the sortition is done.
+|Erklärung, warum die Auslosung durchgeführt wird.
 
-|Result of die roll
+|Ergebnis des Würfelwurfs
 |Benötigt
-|Roll a 6-sided die, or look for another random way to generate a number from 1 to 6, and enter here the resulting
-number in front of some witnesses. This contributes to the quality and guarantees of the randomness of the result.
+|Werfen Sie einen sechsseitigen Würfel oder suchen Sie nach einer anderen zufälligen Methode, um eine Zahl von 1 bis 6 zu erzeugen, und geben Sie hier die resultierende
+Zahl im Beisein von Zeugen ein. Dies trägt zur Qualität und zu den Garantien der Zufälligkeit des Ergebnisses bei.
 |===
 
-=== Manage sortitions
+=== Auslosungen verwalten
 
-To start creating and managing sortitions, click in the component title in the navigation bar or in the component list, or click in the
-image:icons/action_edit.png[Manage component icon] Manage icon on the components list.
+Um mit der Erstellung und Verwaltung von Auslosungen zu beginnen, klicken Sie auf den Komponententitel in der Navigationsleiste oder in der Komponentenliste, oder klicken Sie auf das
+image:icons/action_edit.png[Symbol: Komponente verwalten] Verwalten-Symbol in der Komponentenliste.
 
 image::components/sortitions/manage_sortitions.png[Manage sortitions table]
 
-On the sortitions list in the administration panel, administrators can see:
+In der Auslosungsliste im Verwaltungspanel können Admins Folgendes sehen:
 
-* *Reference*: Reference of the sortition.
-* *Title*: Title of the sortition.
-* *Creation date*: Creation date of the sortition.
+* *Referenz*: Referenz der Auslosung.
+* *Titel*: Titel der Auslosung.
+* *Erstellungsdatum*: Erstellungsdatum der Auslosung.
 
 === Aktionen
 
@@ -118,19 +118,19 @@ On the sortitions list in the administration panel, administrators can see:
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
-|Edit form for a sortition.
+|Formular zum Bearbeiten einer Auslosung.
 
-|image:icons/action_preview.png[Preview icon]
-|Sortition details
-|To see the results of the sortition in the administration panel.
+|image:icons/action_preview.png[Symbol: Vorschau]
+|Details zur Auslosung
+|Um die Ergebnisse der Auslosung im Verwaltungspanel zu sehen.
 
-|image:icons/action_permissions.png[Permissions icon]
+|image:icons/action_permissions.png[Symbol: Berechtigungen]
 |Berechtigungen
-|To handle the authorizations needed to comment sortitions.
+|Um die Berechtigungen zu verwalten, die zum Kommentieren von Auslosungen erforderlich sind.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
 |Diese Debatte löschen.
 |===

@@ -120,13 +120,13 @@ image::spaces/conferences/conference_new_form_duration.png[New conference form d
 |===
 |Field |Type |Description
 
-|Start date
+|Data d'inici
 |Optional
-|When this conference starts. You have a calendar widget to choose the day. Expected format: dd/mm/yyyy.
+|When this conference starts. You have a calendar widget to choose the day. Format esperat: dd/mm/aaaa.
 
-|End date
+|Data de finalització
 |Optional
-|When this conference ends. You have a calendar widget to choose the day. Expected format: dd/mm/yyyy.
+|When this conference ends. You have a calendar widget to choose the day. Format esperat: dd/mm/aaaa.
 |===
 
 === Registrations

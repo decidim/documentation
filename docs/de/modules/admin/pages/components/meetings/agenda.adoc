@@ -1,10 +1,10 @@
-= Arbeitsplan
+= Tagesordnung
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Die Agenda-Funktion erlaubt es einem Administrator, den Zeitplan für ein Meeting festzulegen. It's possible to define agenda items and
-sub-items, with every one of the topics to be discussed in the meeting, along with a description and the duration
-of every item and sub-item.
+Die Tagesordnungsfunktion erlaubt es einem Admin, den Zeitplan für ein Meeting festzulegen. Es ist möglich, Tagesordnungspunkte und
+Unterpunkte zu definieren, mit jedem der in der Veranstaltung zu besprechenden Themen, zusammen mit einer Beschreibung und der Dauer
+jedes Punkts und Unterpunkts.
 
 image::components/meetings/agenda/agenda_frontend.png[Agenda in the frontend]
 
@@ -12,7 +12,7 @@ image::components/meetings/agenda/agenda_frontend.png[Agenda in the frontend]
 
 === Neues Agendaformular
 
-To define an agenda for a meeting, click the image:icons/action_agenda.png[Agenda icon] Agenda icon.
+Um eine Tagesordnung für eine Veranstaltung zu definieren, klicken Sie auf das image:icons/action_agenda.png[Symbol: Tagesordnung] Tagesordnung-Symbol.
 
 image:components/meetings/agenda/new_agenda_form.png[Neues Agenda-Formular im Backend]
 
@@ -27,7 +27,7 @@ image:components/meetings/agenda/new_agenda_form.png[Neues Agenda-Formular im Ba
 
 |Sichtbar
 |Optional
-|Check if you want the agenda to be visible to participants.
+|Aktivieren Sie dies, wenn die Tagesordnung für Teilnehmende sichtbar sein soll.
 
 |Tagesordnungspunkt
 |Benötigt
@@ -48,16 +48,16 @@ Es ist auch möglich, die Tagesordnungspunkte zu entfernen und zu bearbeiten.
 
 |Dauer
 |Benötigt
-|How many minutes the agenda item last.
+|Wie viele Minuten der Tagesordnungspunkt dauert.
 
 |Beschreibung
 |Optional
-|Title for the agenda item.
+|Titel für den Tagesordnungspunkt.
 
 |Tagesordnungspunkte
 |Optional
 |Liste der Agenda-Unterpunkte.
 |===
 
-Die einzige Einschränkung, die Tagesordnungspunkte und Unterpunkte haben, ist, dass sie die Dauer des Elternteils respektieren müssen. For instance,
-if there's an item that lasts 60 minutes, you can't create a sub-item that lasts 90 minutes.
+Die einzige Einschränkung, die Tagesordnungspunkte und Unterpunkte haben, ist, dass sie die Dauer des übergeordneten Punkts respektieren müssen. Zum Beispiel,
+wenn ein Punkt 60 Minuten dauert, können Sie keinen Unterpunkt erstellen, der 90 Minuten dauert.

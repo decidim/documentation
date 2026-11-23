@@ -136,19 +136,19 @@ image:components/skeleton/new_skeleton.png[New skeleton form]
 |===
 |Icon |Name |Definition
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Icona de previsualització]
 |Preview
-|To see how it's shown in the frontend to participants.
+|Per veure com es mostra a la interfície als participants.
 
 |image:icons/action_list.png[Manage projects icon]
 |xref:_manage_projects[Manage projects]
 |Allows you to manage the projects of a skeleton.
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Icona d'edició]
 |Edit
 |Edit form for a skeleton.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Icona d'eliminació]
 |Delete
 |To delete this skeleton. Only can be done when there aren't any projects.
 |===

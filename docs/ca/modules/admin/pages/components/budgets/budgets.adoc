@@ -69,7 +69,7 @@ You can also export all the projects of the component in different formats in CS
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Icona d'edició]
 |Edit
 |To edit the budget.
 
@@ -77,11 +77,11 @@ You can also export all the projects of the component in different formats in CS
 |xref:admin:components/budgets/projects.adoc[Manage projects]
 |Allows to manage the projects of a budget.
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Icona de previsualització]
 |Preview
 |To see the budget page in the user interface.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Icona d'eliminació]
 |Delete
 |To delete this budget. Can only be done when there aren't any projects.
 |===

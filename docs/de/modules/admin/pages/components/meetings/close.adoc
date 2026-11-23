@@ -1,24 +1,24 @@
-= Schließen
+= Schliessen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Once a meeting is over, the meeting author can close it. This allows to adds the meeting minutes, the notes
-that gives a summary on what was discussed during the meeting, the agreements reached, decisions made, etc.
+Sobald eine Veranstaltung beendet ist, kann die Autorin oder der Autor der Veranstaltung sie abschliessen. Dies ermöglicht das Hinzufügen des Veranstaltungsprotokolls, der Notizen,
+die eine Zusammenfassung dessen geben, was während der Veranstaltung besprochen wurde, der erzielten Vereinbarungen, getroffenen Entscheidungen usw.
 
-Dies ermöglicht die Transparenz des Treffens und dient auch als Aufzeichnung der verschiedenen Sitzungen.
+Dies ermöglicht die Transparenz des Meetings und dient auch als Aufzeichnung der verschiedenen Meetings.
 
-It's also possible to add other kind of metadata to the meeting, such as the organizations who attended, how many attendees
-and contributions there were, and what proposals were discussed.
+Es ist auch möglich, andere Arten von Metadaten zur Veranstaltung hinzuzufügen, wie zum Beispiel die teilnehmenden Organisationen, die Anzahl der Teilnehmenden
+und Beiträge sowie die besprochenen Vorschläge.
 
 image::components/meetings/close/frontend.png[Close report in the frontend]
 
 == Konfiguration
 
-=== Close a meeting
+=== Eine Veranstaltung abschliessen
 
 ==== Offizielle Meetings
 
-To close a meeting as an administrator, click the image:icons/action_close.png[Close button] "Close" icon.
+Um eine Veranstaltung als Admin abzuschliessen, klicken Sie auf das Symbol image:icons/action_close.png[Schaltfläche Abschliessen] "Abschliessen".
 
 image::components/meetings/close/form_backend.png[Close meeting form in the backend]
 
@@ -29,15 +29,15 @@ image::components/meetings/close/form_backend.png[Close meeting form in the back
 
 |Minuten
 |Benötigt
-|Beschreibung dessen, was in der Sitzung geschehen ist.
+|Beschreibung dessen, was im Meeting geschehen ist.
 
 |Liste der Organisationen, die teilgenommen haben
 |Optional
 |Metadaten, die in der Seitenleiste des Meetings angezeigt werden.
 
-|Anzahl der Teilnehmer
+|Anzahl der Teilnehmenden
 |Benötigt
-|Number of persons who attended the meeting. Muss eine Zahl sein.
+|Anzahl der Personen, die an der Veranstaltung teilgenommen haben. Muss eine Zahl sein.
 
 |Anzahl der Beiträge
 |Optional
@@ -45,56 +45,56 @@ image::components/meetings/close/form_backend.png[Close meeting form in the back
 
 |Vorschläge
 |Optional
-|Choose proposals from this participatory space that were discussed or elaborated in this meeting.
+|Wählen Sie Vorschläge aus diesem partizipativen Raum aus, die bei dieser Veranstaltung besprochen oder ausgearbeitet wurden.
 
 |Video-URL
 |Optional
-|Deprecated field.
+|Veraltetes Feld.
 
 |Audio-URL
 |Optional
-|Deprecated field.
+|Veraltetes Feld.
 
 |Ist sichtbar
 |Optional
-|Check if you want to publish the close report so it can be read by participants.
+|Aktivieren Sie dieses Kontrollkästchen, wenn Sie den Abschlussbericht veröffentlichen möchten, damit Teilnehmende ihn lesen können.
 |===
 
-==== Participants meetings
+==== Veranstaltungen für Teilnehmende
 
-So wie die Teilnehmer Meetings erstellen können, können sie auch ein Meeting schließen. They have fewer fields to fill than administrators.
+So wie die Teilnehmenden Meetings erstellen können, können sie auch ein Meeting schliessen. Sie müssen weniger Felder ausfüllen als Admins.
 
 image::components/meetings/close/button_frontend.png[Close meeting button in the frontend]
 
-Once the meeting has finished, the author of the meeting can see a "Close meeting" button. By clicking on it, they are redirected to
-the closing form.
+Sobald die Veranstaltung beendet ist, sieht die Autorin oder der Autor der Veranstaltung eine Schaltfläche "Veranstaltung abschliessen". Durch Klicken darauf werden sie zum
+Abschlussformular weitergeleitet.
 
 image::components/meetings/close/form_frontend.png[Close meeting form in the frontend]
 
-.Meeting Formular schließen (Frontend)
+.Meeting Formular schliessen (Frontend)
 [cols="20h,10h,~"]
 |===
 |Feld |Typ |Beschreibung
 
 |Minuten
 |Benötigt
-|Beschreibung dessen, was in der Sitzung geschehen ist.
+|Beschreibung dessen, was im Meeting geschehen ist.
 
-|Anzahl der Teilnehmer
+|Anzahl der Teilnehmenden
 |Benötigt
-|Number of persons who attended the meeting. Muss eine Zahl sein.
+|Anzahl der Personen, die an der Veranstaltung teilgenommen haben. Muss eine Zahl sein.
 
 |Vorschläge
 |Optional
-|Choose proposals from this participatory space that were discussed or elaborated in this meeting.
+|Wählen Sie Vorschläge aus diesem partizipativen Raum aus, die bei dieser Veranstaltung besprochen oder ausgearbeitet wurden.
 |===
 
-=== Related proposals
+=== Verknüpfte Vorschläge
 
-If you link a proposal to a meeting when closing it, the meeting also appears in the proposal page.
+Wenn Sie beim Abschliessen einen Vorschlag mit einer Veranstaltung verknüpfen, erscheint die Veranstaltung auch auf der Vorschlagsseite.
 
 image::components/meetings/close/related_meeting.png[Related meeting in a proposal]
 
-This allows participants to navigate quickly in a proposal journey.
+Dies ermöglicht es Teilnehmenden, sich schnell im Verlauf eines Vorschlags zurechtzufinden.
 
 image::components/meetings/close/related_proposal.png[Related proposal in a meeting]

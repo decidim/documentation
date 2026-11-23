@@ -54,7 +54,7 @@ The author of the proposal becomes the meeting.
 |If enabled, geocoding allow participant to locate their proposals on a specific location. Proposals with an address are then
 displayed on the map in the proposals list.
 
-|Category
+|Categoria
 |Optional
 |To which predefined category the proposal belongs. Used for filtering in the proposals list.
 
@@ -99,7 +99,7 @@ by default, but it can be changed with the setting "Maximum proposal body length
 |If enabled, geocoding allow participant to locate their proposals on a specific location. Proposals with an address are then
 displayed on the map in the proposals list.
 
-|Category
+|Categoria
 |Optional
 |To which predefined category the proposal belongs. Used for filtering in the proposals list.
 
@@ -138,7 +138,7 @@ On the proposals list in the administration panel, administrators can see:
 * *Valuators*: The number of valuators for this proposal.
 * *Status*: The status of the xref:admin:components/proposals/answers.adoc[answer] of this proposal.
 
-You can filter and sort this list by clicking the "Filter" button and the columns headers.
+Podeu filtrar i ordenar aquesta llista fent clic al botó "Filtre" i a les capçaleres de les columnes.
 You can also search for proposals by their title or ID in the search bar.
 
 === Actions
@@ -148,7 +148,7 @@ You can also search for proposals by their title or ID in the search bar.
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Icona d'edició]
 |Edit
 |Edit form, only for xref:_official_proposals[Official proposals].
 
@@ -156,9 +156,9 @@ You can also search for proposals by their title or ID in the search bar.
 |xref:components/proposals/answers.adoc[Answer the proposal]
 |Allows administrators and valuators to give an official answer to a proposal.
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Icona de previsualització]
 |Preview
-|To see how it's shown in the frontend to participants.
+|Per veure com es mostra a la interfície als participants.
 
 |image:icons/action_permissions.png[Permissions icon]
 |Permissions

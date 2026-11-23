@@ -1,33 +1,33 @@
-= Befürworter
+= Unterstützungen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Through endorsements, participants can publicly show their support of particular content, like a proposal, debate, etc.
+Durch Befürwortungen können Teilnehmende öffentlich ihre Unterstützung für bestimmte Inhalte zeigen, wie einen Vorschlag, eine Debatte usw.
 
-NOTE: Endorsements are also called "Likes" in the participant interface.
+NOTE: Befürwortungen werden in der Teilnehmendenoberfläche auch "Gefällt mir" genannt.
 
 image::features/endorsements/sidebar.png[Endorsement button in sidebar]
 
 == Konfiguration
 
-=== Enable endorsements
+=== Befürwortungen aktivieren
 
-Administrators can enable endorsements by phase (step) in a given participatory process, as well as define permissions with authorizations.
+Admins können Befürwortungen je Phase (Schritt) in einem bestimmten Beteiligungsprozess aktivieren sowie Berechtigungen mit Autorisierungen festlegen.
 
 image::features/endorsements/admin.png[Endorsement phase (step) settings]
 
-=== Endorse / like content
+=== Inhalt befürworten / mit Gefällt mir markieren
 
-To endorse content, click the "Like" button below the content.
+Um einen Inhalt zu befürworten, klicken Sie auf die Schaltfläche "Gefällt mir" unterhalb des Inhalts.
 
 image::features/endorsements/list.png[List of endorsements]
 
-When a participant belongs to a verified group, they can also endorse/like that group by selecting the identity.
+Wenn eine teilnehmende Person einer verifizierten Gruppe angehört, kann sie diese Gruppe auch befürworten/mit Gefällt mir markieren, indem sie die Identität auswählt.
 
 image::features/endorsements/modal.png[Select identity modal]
 
-Standardmäßig ist die Liste der Befürworter eingeklappt. To see all the endorsers, you need too click in the "+ x" icon.
+Standardmässig ist die Liste der Unterstützungen eingeklappt. Um alle Befürwortenden zu sehen, müssen Sie auf das Symbol "+ x" klicken.
 
-image:features/endorsements/full_list.png[Liste der unterstützten]
+image:features/endorsements/full_list.png[Vollständige Liste der Unterstützungen]
 
-Participants can also dislike the content if they change their mind.
+Teilnehmende können den Inhalt auch mit Gefällt mir nicht markieren, wenn sie ihre Meinung ändern.

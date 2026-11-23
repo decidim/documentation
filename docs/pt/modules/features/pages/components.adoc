@@ -24,15 +24,9 @@ Outros recursos associados às propostas incluem:
 * *Assistente de criação de proposta*: Enquanto uma proposta está sendo criada, o participante é acompanhado pelo processo, que é dividido em diferentes passos, com ajuda e pré-visualizações contextuais antes da publicação da proposta.
 * *Modificação e retirada das propostas*: o autor de uma proposta pode modificá-la e/ou retirá-la antes do início da fase de suporte.
 * *Controle de versão*: isso torna possível manter um registro de todas as alterações feitas a uma proposta, bem como a geração de códigos para verificar a integridade da proposta.
-* *Detectar similaridades*: isso permite que qualquer pessoa faça uma nova proposta para encontrar propostas semelhantes feitas anteriormente na plataforma, evitando duplicações.
 * *Conexões entre propostas*: as propostas feitas podem ser conectadas umas às outras usando links na seção de comentários, exibindo propostas relacionadas como cartões e fornecendo notificações sobre a existência de uma nova conexão.
 * *Endosso das propostas*: os participantes e coletivos podem endossar propostas e tal endosso público será mostrado na proposta. Os seguidores dos apoiadores serão notificados de que os seguintes apoiaram a proposta.
 * *Alterações*: qualquer participante pode editar o texto de uma proposta e uma subproposta será criada no Modo de Alteração (como pedido de Pull Request no Github). Esta sub-proposta pode reunir endossos e apoios. Além disso, o autor da proposta pode aceitar ou rejeitar a alteração (ou subproposta). Quando uma sub-proposta é rejeitada, o seu autor pode convertê-la em proposta oficial.
-* *Projecto colaborativo para propostas*: Decidim permite a colaboração e a co-criação sobre propostas. Ele incorpora os seguintes recursos:
-** Criando rascunhos ásperos com vários autores.
-** Listagem de rascunhos colaborativos
-** Comentários em rascunhos
-** Pedir ajuda e aceitar a ajuda de outros colaboradores
 
 == Endossos
 

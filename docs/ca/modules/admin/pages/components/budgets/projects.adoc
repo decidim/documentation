@@ -38,7 +38,7 @@ image::components/budgets/new_project.png[New project form]
 |Optional
 |The address of the project. It allows to display a pin on a map for participants to locate the project.
 
-|Category
+|Categoria
 |Optional
 |What Category is assigned to the project. Used for filtering in the budgets list.
 
@@ -65,7 +65,7 @@ On the projects list in the administration panel, administrators can see:
 * *Selected*: If the project is selected for implementation at the end of the process.
 * *Map*: Location of the project when it has an address.
 
-You can filter and sort this list by clicking the "Filter" button and the columns headers.
+Podeu filtrar i ordenar aquesta llista fent clic al botó "Filtre" i a les capçaleres de les columnes.
 You can also search for projects by their ID and title in the search bar.
 
 image::components/budgets/projects_list_filter.png[Projects list filter]
@@ -77,27 +77,27 @@ image::components/budgets/projects_list_filter.png[Projects list filter]
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Icona d'edició]
 |Edit
 |Edit form for a project.
 
-|image:icons/action_folder.png[Folders icon]
-|Folders
-|For classifying Attachments.
+|image:icons/action_folder.png[Icona de carpetes]
+|Carpetes
+|Per classificar els fitxers adjunts.
 
-|image:icons/action_attachments.png[Attachments icon]
-|Attachments
+|image:icons/action_attachments.png[Icona de fitxers adjunts]
+|Fitxers adjunts
 |To add documents and images related to the project.
 
-|image:icons/action_preview.png[Preview icon]
+|image:icons/action_preview.png[Icona de previsualització]
 |Preview
-|To see how it's shown in the frontend to participants.
+|Per veure com es mostra a la interfície als participants.
 
 |image:icons/action_permissions.png[Permissions icon]
 |Permissions
 |To handle the authorizations needed to vote or comment on this specific project.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Icona d'eliminació]
 |Delete
 |To delete this project.
 |===

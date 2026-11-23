@@ -52,7 +52,7 @@ You can find all the administrators on the administrators list in the administra
 * *Last log in date*: date of the administrator last connection.
 * *Creation date*: date of the participant account creation.
 
-You can filter and sort this list by clicking the "Filter" button and the columns headers.
+Podeu filtrar i ordenar aquesta llista fent clic al botó "Filtre" i a les capçaleres de les columnes.
 You can also search for administrators by email, name, or nickname in the search bar.
 
 === Actions
@@ -67,7 +67,7 @@ You can also search for administrators by email, name, or nickname in the search
 |To resend an invitation email to the participant.
 |Available when the participant didn't accept the invitation.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Icona d'eliminació]
 |Delete
 |To revoke the participant's administration access rights.
 |Available for all administrators, except for the first one.

@@ -1,14 +1,14 @@
 = Funktionen
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-Decidim is mainly organized around xref:admin:spaces.adoc[Spaces] and xref:admin:components.adoc[Components], but also offers
-a lot of other features, to enable administrators to keep the participants engaged, to encourage the collaboration and the
-participation on the platform, etc.
+Decidim ist hauptsächlich um xref:admin:spaces.adoc[Räume] und xref:admin:components.adoc[Komponenten] herum organisiert, bietet aber auch
+viele weitere Funktionen, damit Admins die Teilnehmenden engagiert halten und die Zusammenarbeit sowie die
+Beteiligung auf der Plattform fördern können usw.
 
-For the readability of this documentation, they are divided in four different sections:
+Zur besseren Lesbarkeit dieser Dokumentation sind sie in vier verschiedene Abschnitte unterteilt:
 
-. *xref:admin:features/search.adoc[Search engine]*
-. *xref:admin:features/social_features.adoc[Social features]*
-. *xref:admin:features/transparency_features.adoc[Transparency features]*
-. *xref:admin:features/participants_actions.adoc[Participant account and actions]*
+. *xref:admin:features/search.adoc[Suchmaschine]*
+. *xref:admin:features/social_features.adoc[Soziale Funktionen]*
+. *xref:admin:features/transparency_features.adoc[Transparenzfunktionen]*
+. *xref:admin:features/participants_actions.adoc[Konto und Aktionen von Teilnehmenden]*

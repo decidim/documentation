@@ -1,63 +1,63 @@
-= Code per Postbuchstabenautorisierung
+= Code per Brief-Autorisierung
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-This authorization allows a participant to request for a verification code to be sent to an address, to confirm that they
-live or work in this place. They then need to fill the received code in the platform.
+Diese Berechtigung ermöglicht es einer teilnehmenden Person, einen Verifizierungscode an eine Adresse senden zu lassen, um zu bestätigen, dass sie
+      an diesem Ort wohnt oder arbeitet. Anschliessend muss sie den erhaltenen Code auf der Plattform eingeben.
 
-NOTE: If you don't want to collect any data, you should turn it off in the xref:configure:system.adoc[System panel].
+NOTE: Wenn Sie keine Daten sammeln möchten, sollten Sie dies im xref:configure:system.adoc[Systempanel] deaktivieren.
 
 == Konfiguration
 
 Der Prozess ist:
 
-. Participant request a verification code to be sent to an address.
-. Ein Administrator sendet den Brief an seine Adresse mit dem Bestätigungscode.
-. Ein Administrator markiert den Buchstaben als gesendet.
-. Once you mark the letter as sent, the participant is able to introduce the code.
-. If this code matches, then they get verified.
+. Die teilnehmende Person beantragt, dass ein Verifizierungscode an eine Adresse gesendet wird.
+. Ein Admin sendet den Brief mit dem Bestätigungscode an die Adresse der teilnehmenden Person.
+. Ein Admin markiert den Brief als gesendet.
+. Sobald Sie den Brief als versendet markieren, kann die teilnehmende Person den Code eingeben.
+. Wenn dieser Code übereinstimmt, wird sie verifiziert.
 
-=== 1. Verification code request
+=== 1. Anfrage für Verifizierungscode
 
-By going to the authorization section in its profile, or by clicking on the action button if this permission is requested,
-a participant can see the form requesting their full address.
+Indem sie zum Berechtigungsbereich in ihrem Profil geht oder auf die Aktionsschaltfläche klickt, wenn diese Berechtigung angefordert wird,
+      sieht eine teilnehmende Person das Formular, in dem ihre vollständige Adresse abgefragt wird.
 
 image::participants/authorizations_code_postal_letter_request.png[Code by postal letter request by participant]
 
-If they try to edit it, they see this message:
+Wenn sie versucht, sie zu bearbeiten, sieht sie diese Meldung:
 
 image::participants/authorizations_code_postal_letter_edit.png[Edit the postal letter request]
 
-Das liegt daran, dass der Brief im Prozess der Versendung sein könnte. If this needs to be corrected, then the participant needs
-to contact a platform administrator.
+Das liegt daran, dass der Brief im Prozess der Versendung sein könnte. Falls dies korrigiert werden muss, muss die teilnehmende Person
+      einen Admin der Plattform kontaktieren.
 
-=== 2. Administrator review
+=== 2. Prüfung durch den Admin
 
-In the administration panel, the administrator can review the request by going to the "Code by postal letter" in the "Participants" section.
+Im Verwaltungspanel kann der Admin die Anfrage prüfen, indem er im Abschnitt "Teilnehmende" zu "Code per Post" geht.
 
 image::participants/authorizations_code_postal_letter_ongoing.png[Code by postal letter ongoing panel in administration]
 
-Here they can see the verification code and can send it to the participant by postal letter. After the code is sent they can mark it
-as such with the icon image:icons/action_verify.png[Mark as sent]. Es wird auch angezeigt, wann der Brief gesendet wurde.
+Hier kann er den Verifizierungscode einsehen und ihn der teilnehmenden Person per Post zusenden. Nachdem der Code versendet wurde, kann er dies mit dem Symbol
+      image:icons/action_verify.png[Als versendet markieren] entsprechend markieren. Es wird auch angezeigt, wann der Brief gesendet wurde.
 
-=== 3. Participant validate the code
+=== 3. Teilnehmende Person bestätigt den Code
 
-After the participant has received the code, they can go to their account settings and click in the "Code by postal letter"
-verification method.
+Nachdem die teilnehmende Person den Code erhalten hat, kann sie zu ihren Kontoeinstellungen gehen und auf die Verifizierungsmethode
+      "Code per Post" klicken.
 
 image::participants/authorizations_code_postal_letter_verify.png[Code by postal letter ongoing in the participant account]
 
-Then they can fill the form with the code they received.
+Anschliessend kann sie das Formular mit dem erhaltenen Code ausfüllen.
 
 image::participants/authorizations_code_postal_letter_confirm.png[Code by postal letter confirmation form]
 
-=== 4. Code match
+=== 4. Code stimmt überein
 
-If the verification code matches, then the participant sees the message "Congratulations. You've been successfully verified."
+Wenn der Verifizierungscode übereinstimmt, sieht die teilnehmende Person die Meldung "Herzlichen Glückwunsch. Sie wurden erfolgreich verifiziert."
 
-On the other hand, if the verification code doesn't match, then the participant see an error asking to double-check the code in
-the letter.
+Stimmt der Verifizierungscode hingegen nicht überein, sieht die teilnehmende Person eine Fehlermeldung, die sie auffordert, den Code im
+      Brief noch einmal zu überprüfen.
 
-After a participant is verified, as with other verifications, they can see it in their account settings.
+Nachdem eine teilnehmende Person verifiziert wurde, kann sie dies, wie bei anderen Verifizierungen, in ihren Kontoeinstellungen sehen.
 
 image::participants/authorizations_code_postal_letter_verified.png[Verified by code by postal letter]

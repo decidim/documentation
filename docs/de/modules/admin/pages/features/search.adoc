@@ -1,21 +1,21 @@
 = Suchmaschine
 
-== Understand the basics
+== Die Grundlagen verstehen
 
-*The search engine* allows participants to perform searches across all of the platform’s content that can be indexed,
-both generally and specifically, by searching within a specific participatory process or inside its components
-(proposals, results, etc.), through advanced searches.
+*Die Suchmaschine* ermöglicht es Teilnehmenden, Suchen über alle indexierbaren Inhalte der Plattform durchzuführen,
+sowohl allgemein als auch spezifisch, indem sie innerhalb eines bestimmten Beteiligungsprozesses oder dessen Komponenten
+(Vorschläge, Ergebnisse usw.) über erweiterte Suchen suchen.
 
-=== How to find it?
+=== Wie findet man sie?
 
-The search engine is accessible in the instance header, next to your platform logo.
+Die Suchmaschine ist in der Kopfzeile der Instanz neben dem Logo Ihrer Plattform zugänglich.
 
 image::features/search/search_input.png[Search input in frontend navigation bar]
 
-In the search bar, you can enter a word or just do an empty search to access the search results page.
+In der Suchleiste können Sie ein Wort eingeben oder einfach eine leere Suche durchführen, um zur Suchergebnisseite zu gelangen.
 
 image::features/search/search_page.png[Search results page example]
 
-The search engine searches for the entry in all the resources titles and descriptions.
+Die Suchmaschine sucht den eingegebenen Begriff in allen Titeln und Beschreibungen der Ressourcen.
 
-You can also filter the search by clicking the resources types in the left.
+Sie können die Suche auch filtern, indem Sie auf die Ressourcentypen auf der linken Seite klicken.

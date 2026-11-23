@@ -24,15 +24,9 @@ Otras características asociadas con propuestas incluyen:
 * *Asistente de creación de propuestas*: Mientras se crea una propuesta, el participante se acompaña a través del proceso, que se divide en diferentes pasos, con ayuda contextual y vistas previas antes de que se publique la propuesta.
 * *Modificación y retirada de propuestas*: el autor de una propuesta puede modificarla y/o retirarla antes de que se abra la fase de apoyo.
 * *Control de la versión*: esto permite guardar un registro de todos los cambios realizados en una propuesta, así como la generación de código para verificar la integridad de la propuesta.
-* *Detección de similaridades*: Esto permite a cualquiera que haga una nueva propuesta encontrar otras similares previamente hechas en la plataforma, evitando así duplicaciones.
 * *Conexiones entre propuestas*: las propuestas hechas pueden estar conectadas entre sí utilizando enlaces en la sección de comentarios, mostrar propuestas relacionadas como tarjetas y dar notificaciones sobre la existencia de una nueva conexión.
 * *Aprobación de propuestas*: los participantes y colectivos pueden aprobar propuestas y tal respaldo público se mostrará en la propuesta. Se notificará a los seguidores de los refrendadores que la propuesta fue aprobada a continuación.
 * *Cuidados*: cualquier participante puede editar el texto de una propuesta y una subpropuesta se creará en el Modo Enmienda (como Pull Request en Github). Esta subpropuesta puede obtener apoyos y apoyos. Además, el autor de la propuesta puede aceptar o rechazar la enmienda (o subpropuesta). Cuando se rechaza una subpropuesta, su autor puede convertirla en una propuesta oficial.
-* *Proyecto colaborativo para propuestas*: Decidim permite la colaboración y cocreación sobre propuestas. Incorpora las siguientes características:
-** Creación de borradores brutos con numerosos autores.
-** Lista de borradores colaborativos
-** Comentarios en borradores
-** Pedir ayuda y aceptar la ayuda de otros colaboradores
 
 == Respaldos
 

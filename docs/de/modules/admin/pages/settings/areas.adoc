@@ -1,11 +1,11 @@
-= Gebiete
+= Bereiche
 
-partielle$deprecated.adoc[]
+include::partial$deprecated.adoc[]
 
-Areas are all the sectors that an organization can have.
+Bereiche sind alle Sektoren, die eine Organisation haben kann.
 
-Areas are pretty similar to xref:admin:settings/scopes.adoc[scopes], meaning that they're a way of allowing a
-better navigation and filtering in the spaces and components.
+Bereiche sind den xref:admin:settings/scopes.adoc[Themen] recht ähnlich, das heisst, sie ermöglichen eine
+bessere Navigation und Filterung in den Räumen und Komponenten.
 
-You can read more information about the history of Areas in
-this https://github.com/decidim/decidim/issues/3540#issuecomment-427324532[GitHub comment].
+Weitere Informationen zur Geschichte der Bereiche finden Sie in
+diesem https://github.com/decidim/decidim/issues/3540#issuecomment-427324532[GitHub-Kommentar].

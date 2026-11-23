@@ -1,17 +1,17 @@
 = Partner
 
-== Understand the basics
+== Die Grundlagen verstehen
 
 Die Partner sind die Sponsoren oder Unterstützer einer Konferenz.
-If you add partners in the administration, then they are listed on the Conference landing page.
+Wenn Sie Partner in der Verwaltung hinzufügen, werden sie auf der Landingpage der Konferenz aufgelistet.
 
-image:spaces/conferences/partners_frontend.png[Conferences partners frontend]
+image:spaces/conferences/partners_frontend.png[Partner der Konferenz im Frontend]
 
 == Konfiguration
 
-=== Manage partners
+=== Partner verwalten
 
-To access the partners configuration, click in the secondary navigation panel on the "Partners" item.
+Um auf die Partnerkonfiguration zuzugreifen, klicken Sie im sekundären Navigationspanel auf den Punkt "Partner".
 
 image::spaces/conferences/partners.png[Conferences partners]
 
@@ -22,18 +22,18 @@ image::spaces/conferences/partners.png[Conferences partners]
 |===
 |Icon |Name |Definition
 
-|image:icons/action_edit.png[Edit icon]
+|image:icons/action_edit.png[Symbol: Bearbeiten]
 |Bearbeiten
-|To edit this link.
+|Um diesen Link zu bearbeiten.
 
-|image:icons/action_delete.png[Delete icon]
+|image:icons/action_delete.png[Symbol: Löschen]
 |Löschen
-|To delete this link.
+|Um diesen Link zu löschen.
 |===
 
 === Neuen Partner erstellen
 
-To create a new partner, click the "New partner" button in the top right of the page.
+Um einen neuen Partner zu erstellen, klicken Sie auf die Schaltfläche "Neuer Partner" oben rechts auf der Seite.
 
 image::spaces/conferences/new_partner.png[Conferences partners form]
 
@@ -44,21 +44,21 @@ image::spaces/conferences/new_partner.png[Conferences partners form]
 
 |Name
 |Benötigt
-|The name of the partner.
+|Der Name des Partners.
 
 |Partnertyp
 |Benötigt
-|Choose one of these options: Main promoter or Collaborator.
+|Wählen Sie eine dieser Optionen: Hauptförderer oder Mitwirkende.
 
-|Bestellposition
+|Reihenfolge
 |Optional
-|Which order it has in relation to the other partners. Eine niedrigere Zahl bedeutet eine höhere Priorität. For instance, if you have two partners, "Partner a" with weight "10" and "Partner b" with weight "0" then "Partner b" is first when ordering.
+|Welche Reihenfolge er im Verhältnis zu den anderen Partnern hat. Eine niedrigere Zahl bedeutet eine höhere Priorität. Wenn Sie zum Beispiel zwei Partner haben, "Partner a" mit der Gewichtung "10" und "Partner b" mit der Gewichtung "0", dann steht "Partner b" bei der Sortierung an erster Stelle.
 
 |Link
 |Optional
-|Link to the partner website, bio, social media, etc.
+|Link zur Website, Biografie oder den sozialen Medien des Partners usw.
 
 |Logo
 |Benötigt
-|Bildführung: Vorzugsweise ein Querformat ohne Text. Der Dienst erzeugt das Bild. Maximum file size: 5 MB
+|Bildführung: Vorzugsweise ein Querformat ohne Text. Der Dienst beschneidet das Bild. Maximale Dateigrösse: 5 MB
 |===
