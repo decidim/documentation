@@ -24,15 +24,9 @@ Les autres fonctionnalités associées aux propositions incluent :
 * *Assistant de création de propositions* : Lors de la création d'une proposition, le participant est accompagné par le processus, qui est divisée en différentes étapes, avec aide contextuelle et aperçus avant la publication de la proposition.
 * *Modification et retrait des propositions* : l’auteur d’une proposition peut la modifier et/ou la retirer avant l’ouverture de la phase de support.
 * *Contrôle de version* : cela permet de conserver un enregistrement de toutes les modifications apportées à une proposition, ainsi que la génération de codes pour vérifier l’intégrité de la proposition.
-* *Détection des similitudes* : Ceci permet à toute personne faisant une nouvelle proposition de trouver des similitudes similaires faites précédemment sur la plate-forme, évitant ainsi les doublons.
 * *Connexions entre les propositions* : les propositions peuvent être connectées les unes aux autres à l'aide de liens dans la section des commentaires, afficher les propositions connexes sous forme de cartes et donner des notifications sur l'existence d'une nouvelle connexion.
 * *Soutien des propositions* : les participants et les collectifs peuvent approuver les propositions et cet appui public sera affiché dans la proposition. Les personnes qui suivent les approbateurs seront avisées que la proposition a été approuvée par le suivant.
 * *Amendements* : tout participant peut modifier le texte d’une proposition et une sous-proposition sera créée en Mode Amendement (sous forme de Pull Request dans Github). Cette sous-proposition peut recueillir des approbations et des soutiens. En outre, l’auteur de la proposition peut accepter ou rejeter l’amendement (ou la sous-proposition). Lorsqu'une sous-proposition est rejetée, son auteur peut la convertir en proposition officielle.
-* *Ébauche collaborative de propositions* : Decidim permet la collaboration et la cocréation sur les propositions. Il intègre les fonctionnalités suivantes :
-** Création de brouillons bruts avec de nombreux auteurs.
-** Liste des brouillons collaboratifs
-** Commentaires dans les brouillons
-** Demander de l'aide et accepter l'aide d'autres collaborateurs
 
 == Soutiens
 
