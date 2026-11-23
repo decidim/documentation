@@ -23,15 +23,9 @@ Other features associated with proposals include:
 * *Proposal creation wizard*: While a proposal is being created, the participant is accompanied through the process, which is divided into different steps, with contextual help and previews before the proposal is published.
 * *Modification and withdrawal of proposals*: a proposal’s author can modify and/or withdraw it before the support stage opens.
 * *Version control*: this makes it possible to keep a record of all the changes made to a proposal, as well as code-generation to verify the proposal’s integrity.
-* *Detecting similarities*: This allows anyone making a new proposal to find similar ones previously made on the platform, thereby avoiding duplications.
 * *Connections between proposals*: proposals made can be connected to one another using links in the comments section, showing related proposals as cards and giving notifications on the existence of a new connection.
 * *Endorsement of proposals*: participants and collectives can endorse proposals and such public endorsement will be shown within the proposal. Followers of the endorsers will be notified that the followed endorsed the proposal.
 * *Amendments*: any participant can edit a proposal’s text and a sub-proposal will be created in Amendment Mode (as Pull Request in Github). This sub-proposal can gather endorsements and supports. Besides, the proposal’s author can accept or reject the amendment (or sub-proposal). Where a sub-proposal is rejected, its author can convert it into an official proposal.
-* *Collaborative draft for proposals*: Decidim permits collaboration and co-creation over proposals. It incorporates the following features:
-** Creating rough drafts with numerous authors.
-** Listing of collaborative drafts
-** Comments in drafts
-** Asking for help from and accepting the help of other collaborators
 
 == Endorsements
 
